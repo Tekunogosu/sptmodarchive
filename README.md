@@ -338,6 +338,12 @@ Things learned the hard way, worth knowing before changing anything.
 - **Rate limit is 300 requests/minute.** The scraper sleeps 1s per worker
   between requests, landing near 240/min with headroom for retries, and honours
   `Retry-After` when it still gets a 429.
+- **`repos.json` is written for small diffs**, because CI commits it twice a
+  day. Keys are sorted so a run that checks hosts in a different order does not
+  reshuffle the file, and freshness is recorded once at the top rather than per
+  repository. An earlier per-record `checked_at` rewrote all 1,346 entries on
+  every run, burying the few repositories that had actually moved. A run where
+  nothing changed now produces a two-line diff.
 - **Archived HTML can trip GitHub's secret scanning.** Mod descriptions embed
   images that GitHub itself serves from S3 via pre-signed URLs carrying
   `X-Amz-Credential=AKIA…`. That is GitHub's own access key *id* — an

@@ -181,7 +181,6 @@ def fetch_github(token, entries):
                             "url": release.get("url", ""),
                             "html": release.get("descriptionHTML", "")}
                            if release else None,
-                "checked_at": now_iso(),
             }
 
         print(f"  github {min(start + BATCH, len(entries))}/{len(entries)}",
@@ -209,7 +208,7 @@ def get_json(url, attempts=3):
 def missing_record(entry):
     return {"url": entry["url"], "host": entry["host"],
             "full_name": entry.get("full_name") or entry.get("path", ""),
-            "status": "not_found", "checked_at": now_iso()}
+            "status": "not_found"}
 
 
 def fetch_gitlab(entry):
@@ -234,7 +233,6 @@ def fetch_gitlab(entry):
                     "url": entry["url"],
                     "html": release.get("description_html", "")}
                    if release else None,
-        "checked_at": now_iso(),
     }
 
 
@@ -260,7 +258,6 @@ def fetch_gitea(entry):
                     "date": release.get("published_at", ""),
                     "url": release.get("html_url", ""), "html": ""}
                    if release else None,
-        "checked_at": now_iso(),
     }
 
 
@@ -280,19 +277,30 @@ def age_hours(stamp):
 
 
 def load_cache(path):
+    """Returns (repos, generated_at). Missing or corrupt reads as empty."""
     if not os.path.exists(path):
-        return {}
+        return {}, None
     with open(path) as f:
         try:
-            return json.load(f).get("repos", {})
+            data = json.load(f)
         except json.JSONDecodeError:
-            return {}
+            return {}, None
+    return data.get("repos", {}), data.get("generated_at")
 
 
 def save_cache(path, cache):
+    """Write the cache so that unchanged repos produce no diff.
+
+    Two things make that work, and both matter because this file is committed
+    twice a day by CI. Keys are sorted, so a run that happens to check hosts in
+    a different order does not reshuffle the file. And freshness is recorded
+    once at the top rather than per repo -- a per-record `checked_at` rewrote
+    all 1,346 entries on every run, which buried the handful of repositories
+    that had actually moved and made the file's history unreadable.
+    """
     with open(path, "w") as f:
         json.dump({"generated_at": now_iso(), "repo_count": len(cache),
-                   "repos": cache}, f, indent=1)
+                   "repos": cache}, f, indent=1, sort_keys=True)
 
 
 # --- main ----------------------------------------------------------------
@@ -338,10 +346,15 @@ def main():
         else:
             unparsed.append(url)
 
-    cache = load_cache(args.cache)
-    todo = [e for e in entries.values()
-            if age_hours((cache.get(e["url"]) or {}).get("checked_at"))
-            >= args.max_age]
+    cache, generated_at = load_cache(args.cache)
+
+    # Freshness is now a property of the whole file rather than of each repo.
+    # That is honest about what actually happens: every run re-checks every
+    # repo, so they were always the same age -- the per-record timestamps
+    # tracked nothing extra and rewrote the file on every run. A repo we have
+    # never seen is fetched regardless of how recent the file is.
+    stale = age_hours(generated_at) >= args.max_age
+    todo = [e for e in entries.values() if stale or e["url"] not in cache]
     fresh = len(entries) - len(todo)
     if args.limit:
         todo = todo[:args.limit]
