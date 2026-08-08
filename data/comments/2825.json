@@ -1,0 +1,410 @@
+{
+ "mod_id": 2825,
+ "slug": "prt-portable-radio-transmitter-functional-for-fika",
+ "fetched_at": "2026-08-08T22:42:12Z",
+ "reported_total": 13,
+ "pages": 2,
+ "count": 40,
+ "comments": [
+  {
+   "id": 166836,
+   "parent_id": null,
+   "author": "Qwertyalex",
+   "author_id": 53632,
+   "author_url": "https://forge.sp-tarkov.com/user/53632/qwertyalex",
+   "created_at": "2026-07-18T15:28:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yo, this seems pretty awesome if it does what I think it does. Looking through the source it looks like it allows long range voip radio comms like ACRE/TFAR from ARMA?</p>\n<p>I couldn\u2019t tell from the description if it\u2019s that, or if it\u2019s ambience that plays any of the voice lines you can do with the F1,F2,etc buttons over the radio.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 166837,
+   "parent_id": 166836,
+   "author": "_Suomi",
+   "author_id": 1274,
+   "author_url": "https://forge.sp-tarkov.com/user/1274/suomi",
+   "created_at": "2026-07-18T15:32:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yep, it\u2019s exactly that: real long-range VOIP radio comms, ACRE/TFAR-style, not canned F1/F2 voice lines.</p>\n<p>It hooks into the actual Dissonance voice chat (the same system EFT/Fika use for proximity VOIP) and opens a separate radio channel on top of it. Range is extended way past normal proximity chat, with per-radio signal degradation as distance increases (static, robotic/digital distortion, dropouts) every radio has its own distinct \u201cvoice\u201d/DSP character and max range, so a cheap Baofeng sounds and reaches very differently than something like the Harris AN/PRC-152.</p>\n<p>No pre-recorded lines involved anywhere - it\u2019s your actual live voice, same as normal proximity chat, just routed through the radio channel with distance-based effects applied in real time.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 166838,
+   "parent_id": 166836,
+   "author": "Qwertyalex",
+   "author_id": 53632,
+   "author_url": "https://forge.sp-tarkov.com/user/53632/qwertyalex",
+   "created_at": "2026-07-18T15:37:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>That\u2019s actually awesome, congrats on the mod!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 166843,
+   "parent_id": null,
+   "author": "operator_lucas",
+   "author_id": 105551,
+   "author_url": "https://forge.sp-tarkov.com/user/105551/operator-lucas",
+   "created_at": "2026-07-18T16:38:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for the mod, works well on headless Fika. One question: the item marks itself as SPEC, but we can\u2019t put it into SPEC slot. Is this intended?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 166846,
+   "parent_id": 166843,
+   "author": "_Suomi",
+   "author_id": 1274,
+   "author_url": "https://forge.sp-tarkov.com/user/1274/suomi",
+   "created_at": "2026-07-18T16:42:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks, glad it\u2019s working well on headless!</p>\n<p>That\u2019s intentional, not a bug \u2014 radios can\u2019t go in the SPEC slot (and can\u2019t be insured either) on purpose. The idea is to add a bit of stakes to holding onto them: if you lose your gear in a raid, you actually lose the radio too, rather than it being a free, risk-free item like insured SPEC slot gear usually is. Encourages actually protecting/keeping track of them instead of treating them as disposable.</p>\n<p>That said, I\u2019m open to revisiting this down the line \u2014 if enough people feel it\u2019s too punishing or doesn\u2019t fit how they play, I might look into some middle ground. Feedback on this specific point is welcome, feel free to weigh in.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 166848,
+   "parent_id": 166843,
+   "author": "_Suomi",
+   "author_id": 1274,
+   "author_url": "https://forge.sp-tarkov.com/user/1274/suomi",
+   "created_at": "2026-07-18T16:46:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It\u2019s marked as SPEC because functionally it\u2019s in the same category as the multitool, compass, and rangefinder \u2014 that\u2019s why it inherited that slot\u2019s item type/behavior.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 166850,
+   "parent_id": 166843,
+   "author": "operator_lucas",
+   "author_id": 105551,
+   "author_url": "https://forge.sp-tarkov.com/user/105551/operator-lucas",
+   "created_at": "2026-07-18T16:58:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Got it, thanks for reply. Perhaps a server toggle (on by default) would suffice. Just a little weird to me that it\u2019s marked as SPEC, but i can\u2019t put it into SPEC slot as i can do others, but i get the picture.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 166851,
+   "parent_id": null,
+   "author": "Dr.Bezdna",
+   "author_id": 41291,
+   "author_url": "https://forge.sp-tarkov.com/user/41291/drbezdna",
+   "created_at": "2026-07-18T17:08:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello, this mod is not working when raid started solo? I cant see the notifications about on/off radio and something same. Yeah its a stupid question but i just need to know. (I see the grey dot in right down)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 166854,
+   "parent_id": 166851,
+   "author": "makshepard",
+   "author_id": 117974,
+   "author_url": "https://forge.sp-tarkov.com/user/117974/makshepard",
+   "created_at": "2026-07-18T17:18:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello! The mod works if you launch a solo raid. There\u2019s an indicator in the bottom right corner, as has been noted, but a single gray dot means the radio is inactive.</p>\n<p>Put the radio in your rig, try turning it on (Ctrl + \u201cK\u201d or your VOIP keybind), and a notification should appear in the bottom right corner indicating that it\u2019s enabled.</p>\n<p>If that doesn\u2019t happen, here are some basic troubleshooting suggestions:</p>\n<ol>\n<li>Check that the Fika mod is installed (without it, the mod\u2019s functionality is not guaranteed).</li>\n<li>Verify that the PRT mod itself is installed correctly (sometimes the archive gets extracted improperly \u2014 it never hurts to double-check).</li>\n<li>In the game itself, check the PRT mod settings and make sure notifications are enabled (in the F12 settings overlay, under the PRT mod section, there is a specific option for this).</li>\n</ol>\n<p>If all of the above checks out, you have the radio with you in the raid, and the notifications still don\u2019t appear, then write back here again and we\u2019ll try to figure it out in more detail together.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 166855,
+   "parent_id": 166851,
+   "author": "Dr.Bezdna",
+   "author_id": 41291,
+   "author_url": "https://forge.sp-tarkov.com/user/41291/drbezdna",
+   "created_at": "2026-07-18T17:30:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>omg, i tried to enable it in a different order (K+ctrl). \ud83d\udc80\nThank you for so fast answer, good luck in dev.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 166857,
+   "parent_id": 166851,
+   "author": "makshepard",
+   "author_id": 117974,
+   "author_url": "https://forge.sp-tarkov.com/user/117974/makshepard",
+   "created_at": "2026-07-18T17:33:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Glad you\u2019re happy, and thank you! Enjoy!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 166858,
+   "parent_id": null,
+   "author": "Super_Lopez",
+   "author_id": 57052,
+   "author_url": "https://forge.sp-tarkov.com/user/57052/super-lopez",
+   "created_at": "2026-07-18T17:49:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Could you do this radios for collection in Spt alone?</p>\n<p>And for fika in working conditions whatever.</p>\n<p>Is nice have more items to put in the hall of fame.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 166859,
+   "parent_id": 166858,
+   "author": "makshepard",
+   "author_id": 117974,
+   "author_url": "https://forge.sp-tarkov.com/user/117974/makshepard",
+   "created_at": "2026-07-18T17:52:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>We didn\u2019t plan this initially, but it doesn\u2019t sound like anything complicated, so.. why not?</p>\n<p>I can\u2019t promise anything, but we\u2019ll give it a try in the near future.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 166860,
+   "parent_id": 166858,
+   "author": "Super_Lopez",
+   "author_id": 57052,
+   "author_url": "https://forge.sp-tarkov.com/user/57052/super-lopez",
+   "created_at": "2026-07-18T17:55:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for the answer and I desire you try with good vibes.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 166861,
+   "parent_id": 166858,
+   "author": "makshepard",
+   "author_id": 117974,
+   "author_url": "https://forge.sp-tarkov.com/user/117974/makshepard",
+   "created_at": "2026-07-18T17:56:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you very much!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 166875,
+   "parent_id": null,
+   "author": "dauntless",
+   "author_id": 40598,
+   "author_url": "https://forge.sp-tarkov.com/user/40598/dauntless",
+   "created_at": "2026-07-18T21:05:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Could you do a showcase video? I\u2019d like to see it in action.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 166880,
+   "parent_id": 166843,
+   "author": "egbog",
+   "author_id": 169,
+   "author_url": "https://forge.sp-tarkov.com/user/169/egbog",
+   "created_at": "2026-07-18T22:21:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Not all special items can go in the special slots, anyways. Repair kits for instance</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 166890,
+   "parent_id": 166875,
+   "author": "makshepard",
+   "author_id": 117974,
+   "author_url": "https://forge.sp-tarkov.com/user/117974/makshepard",
+   "created_at": "2026-07-19T00:06:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yes, and if we have enough time, then in the near future.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 166958,
+   "parent_id": null,
+   "author": ".mako30yuricon",
+   "author_id": 93835,
+   "author_url": "https://forge.sp-tarkov.com/user/93835/mako30yuricon",
+   "created_at": "2026-07-19T14:21:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>jeez this simply too good to be true, guy\u2019s a legend! got something curious about btw:)</p>\n<ol>\n<li>\n<p>haven\u2019t found where to change the language of bottom corner notification (still WIP perhaps?)</p>\n</li>\n<li>\n<p>any chance vanila quick voicelines be integrated in the future? yeh I gather you\u2019ve delievered us the one thing way better than that lol,still I do figure those quick trash talks could be more immersive elements, especially when used to communicate with ai teammates\u2013 I mean, since we\u2019ve witnessed the transition of gameplay track from pvp to pve to pvp, the only missing piece of in-game communication likely to be\u2026 a quick word with bots\u2026 through ptt! (nah I must be so mad so don\u2019t take this so seriously o7</p>\n</li>\n</ol>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 166964,
+   "parent_id": 166958,
+   "author": "_Suomi",
+   "author_id": 1274,
+   "author_url": "https://forge.sp-tarkov.com/user/1274/suomi",
+   "created_at": "2026-07-19T15:06:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Haha, appreciate it! Answering both:</p>\n<ol>\n<li>\n<p>There\u2019s no separate language toggle for it - the on-screen notification text (and the F12-menu-adjacent overlay) automatically follows whatever language your actual game client is set to (Settings \u2192 Language in EFT itself), not a config option in the mod. Good catch though - I hadn\u2019t accounted for anything besides English/Russian, so any other language was silently falling back to Russian, which obviously wasn\u2019t great. Just flipped that: now Russian only shows if you\u2019ve actually got Russian selected, everyone else defaults to English going forward.</p>\n</li>\n<li>\n<p>Ha, that\u2019s actually a fun idea - piping the vanilla quick-voiceline wheel (F1/F2/etc.) through the radio channel so it reaches AI teammates over PTT. Right now the mod only carries real live VOIP audio through the radio, nothing hooks into the quick-voiceline system at all. Not something planned for the near term (it\u2019s a genuinely different integration point - quick-lines are their own separate system from the Dissonance voice chat this mod taps into), but it\u2019s a neat idea for down the line. Thanks for tossing it out there, not mad at all o7</p>\n</li>\n</ol>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 166965,
+   "parent_id": 166958,
+   "author": "_Suomi",
+   "author_id": 1274,
+   "author_url": "https://forge.sp-tarkov.com/user/1274/suomi",
+   "created_at": "2026-07-19T15:07:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Also, for future versions - planning to add support for more languages beyond just EN/RU.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 166976,
+   "parent_id": 166958,
+   "author": ".mako30yuricon",
+   "author_id": 93835,
+   "author_url": "https://forge.sp-tarkov.com/user/93835/mako30yuricon",
+   "created_at": "2026-07-19T16:00:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>puzzle solved, thx again! so excited \u2019bout your future work; real wish u have a good one</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 166989,
+   "parent_id": 166851,
+   "author": "satgame",
+   "author_id": 118336,
+   "author_url": "https://forge.sp-tarkov.com/user/118336/satgame",
+   "created_at": "2026-07-19T17:11:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>~~I\u2019ve tried a few options and debugged this for a while and can\u2019t seem to get the mod to work.\nI have VOIP turned on in-game (pretty sure at least). I spawn into a solo raid, hosted over Fika, and I see the grey dot. Pressing K (\u2018talk on voice\u2019) does nothing; Ctrl + K does nothing, nor does Shift or Enter.</p>\n<p>I\u2019d love to get this mod working because it\u2019s the coolest immersive mod I\u2019ve seen yet for SPT.~~</p>\n<p>Figured it out: VOIP needs to be specifically enabled for FIKA (under F12 -&gt; Fika.Core -&gt; Allow VOIP: [Enabled]), before it allows you to use both regular VOIP (proximity transmit) as well as this mod\u2019s Radios.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 166990,
+   "parent_id": 166851,
+   "author": "makshepard",
+   "author_id": 117974,
+   "author_url": "https://forge.sp-tarkov.com/user/117974/makshepard",
+   "created_at": "2026-07-19T17:26:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>So, let\u2019s try to figure this out. As I understand it, there were no errors when starting the server.\nNor were there any when launching the game itself.</p>\n<p>I\u2019ll go through the basic troubleshooting steps \u2014 if you\u2019ve already done any of these, just skip that point:</p>\n<ul>\n<li>\n<p>In the F12 menu, check whether notifications are enabled (section 3. Radio \u2013 the \u201cShow Notifications\u201d option, as well as the entire section 4. Notifications) and the \u201cSound Volume\u201d parameter (section 2. Volume).</p>\n</li>\n<li>\n<p>The radio uses the keyboard keys on the right side, i.e. Right Ctrl and Right Shift.</p>\n</li>\n<li>\n<p>Is the radio in your rig? In the mod, radios only work when placed in a rig or pockets \u2013 their functionality is limited (essentially non\u2011functional) when in a backpack.</p>\n</li>\n</ul>\n<p>To clarify: are you getting no notifications at all when using the key combinations?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 167005,
+   "parent_id": 166851,
+   "author": "makshepard",
+   "author_id": 117974,
+   "author_url": "https://forge.sp-tarkov.com/user/117974/makshepard",
+   "created_at": "2026-07-19T18:46:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I saw your edits, we\u2019ll definitely mention that in the description. Many thanks!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 167250,
+   "parent_id": null,
+   "author": "MrBox15",
+   "author_id": 45873,
+   "author_url": "https://forge.sp-tarkov.com/user/45873/mrbox15",
+   "created_at": "2026-07-21T01:00:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This is sooo good, thank you!!! I was wondering if there Is a way to crank up the volume of the voices? I almost cant hear my buddy. My tarkov voip sound is at 100% and his mic gain is at 100% too. Would it be possible to crank it up via the bepinex menu?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 167339,
+   "parent_id": null,
+   "author": "KoomaSandosh",
+   "author_id": 118438,
+   "author_url": "https://forge.sp-tarkov.com/user/118438/koomasandosh",
+   "created_at": "2026-07-21T11:18:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>For some reason, this mod doesn\u2019t load the plugins when using ModSync. (<a href=\"https://github.com/Dildz/ModSync-for-SPT4.0\" target=\"_blank\" rel=\"noreferrer noopener\">https://github.com/Dildz/ModSync-for-SPT4.0</a>)</p>\n<p>Here\u2019s the error that pops up in the console:</p>\n<p>Corter-ModSync: error reading \u2018../BepInEx/plugins\\prt-fika\\prt-fika.log\u2019 (attempt 1/5): The process cannot access the file \u2018E:\\EFT SPTarkov\\BepInEx\\plugins\\prt-fika\\prt-fika.log\u2019 because it is being used by another process.. Retrying\u2026\nCorter-ModSync: error reading \u2018../BepInEx/plugins\\prt-fika\\prt-fika.log\u2019 (attempt 2/5): The process cannot access the file \u2018E:\\EFT SPTarkov\\BepInEx\\plugins\\prt-fika\\prt-fika.log\u2019 because it is being used by another process.. Retrying\u2026\nCorter-ModSync: error reading \u2018../BepInEx/plugins\\prt-fika\\prt-fika.log\u2019 (attempt 3/5): The process cannot access the file \u2018E:\\EFT SPTarkov\\BepInEx\\plugins\\prt-fika\\prt-fika.log\u2019 because it is being used by another process.. Retrying\u2026\nCorter-ModSync: error reading \u2018../BepInEx/plugins\\prt-fika\\prt-fika.log\u2019 (attempt 4/5): The process cannot access the file \u2018E:\\EFT SPTarkov\\BepInEx\\plugins\\prt-fika\\prt-fika.log\u2019 because it is being used by another process.. Retrying\u2026\nCorter-ModSync: error reading \u2018../BepInEx/plugins\\prt-fika\\prt-fika.log\u2019 (attempt 5/5): The process cannot access the file \u2018E:\\EFT SPTarkov\\BepInEx\\plugins\\prt-fika\\prt-fika.log\u2019 because it is being used by another process.. Retrying\u2026\nCorter-ModSync: error handling [GET /modsync/hashes]:\nSystem.IO.IOException: The process cannot access the file \u2018E:\\EFT SPTarkov\\BepInEx\\plugins\\prt-fika\\prt-fika.log\u2019 because it is being used by another process.\nat Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)\nat Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable<code>1 unixCreateMode) at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable</code>1 unixCreateMode)\nat System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)\nat ModSync.Utility.ImoHash.HashFile(String filename, Int64 sampleThreshold, Int32 sampleSize)\nat ModSync.Server.SyncUtil.BuildModFileAsync(String file)\nat ModSync.Server.SyncUtil.HashModFilesAsync(IEnumerable<code>1 syncPaths, Boolean isHeadless, Func</code>2 isActive)\nat ModSync.Server.ModSyncHttpListener.HandleHashesAsync(HttpContext context)\nat ModSync.Server.ModSyncHttpListener.Handle(MongoId sessionId, HttpContext context)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 167411,
+   "parent_id": 167250,
+   "author": "_Suomi",
+   "author_id": 1274,
+   "author_url": "https://forge.sp-tarkov.com/user/1274/suomi",
+   "created_at": "2026-07-21T18:40:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Unfortunately, there\u2019s currently no way to increase an ally\u2019s volume - you can only decrease it. But we promise to add this feature in a future update!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 167412,
+   "parent_id": 167339,
+   "author": "_Suomi",
+   "author_id": 1274,
+   "author_url": "https://forge.sp-tarkov.com/user/1274/suomi",
+   "created_at": "2026-07-21T18:44:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for the report! We\u2019ve tracked down the cause on our end and added it to our list of fixes - it\u2019ll definitely be sorted out in the next version. Thanks again for flagging this!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 167499,
+   "parent_id": null,
+   "author": "Ritzo",
+   "author_id": 58563,
+   "author_url": "https://forge.sp-tarkov.com/user/58563/ritzo",
+   "created_at": "2026-07-22T11:01:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Either im missing something, or im missing something.\nI got Fika, got this mod installed, the radios are at their vendors, but when i take one out in the field, no matter the keybinds, i see no ui popping up, no signal strength, no working chat, nothing. I assume it\u2019s because i\u2019m alone in the raid, but there should be at least some sort of indication, right?</p>\n<p>UPD: For some weird reason only the radios bought at the flea market were working, none of the radios available at the merchants would activate or show any ui elements</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 167575,
+   "parent_id": 167499,
+   "author": "_Suomi",
+   "author_id": 1274,
+   "author_url": "https://forge.sp-tarkov.com/user/1274/suomi",
+   "created_at": "2026-07-23T01:01:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello. That is strange, given that the radios were primarily tested using units from the sellers. We will certainly look into this. Thanks for the feedback!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 167726,
+   "parent_id": null,
+   "author": "robertiphone",
+   "author_id": 118711,
+   "author_url": "https://forge.sp-tarkov.com/user/118711/robertiphone",
+   "created_at": "2026-07-24T10:25:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2026-07-30 08:45:47]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 167761,
+   "parent_id": 167726,
+   "author": "makshepard",
+   "author_id": 117974,
+   "author_url": "https://forge.sp-tarkov.com/user/117974/makshepard",
+   "created_at": "2026-07-24T17:46:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello!\nI\u2019ll ask a few questions, both guiding and basic.</p>\n<ol>\n<li>\n<p>Is there another user who has also tried using radios on the server while not being the host?</p>\n</li>\n<li>\n<p>Is the mod installed on all participants? There is currently a known issue with the ModSync mod. Besides that, we might have forgotten to mention that the mod is required for everyone to have installed, not just the host.</p>\n</li>\n<li>\n<p>Also, try using radios bought from the flea market (we\u2019ve been told about this issue with trader radios before, and we\u2019re aware of it).</p>\n</li>\n</ol>\n<p>If you still can\u2019t find a solution, feel free to send us the log file (a .log file located in the mod\u2019s folder, if I remember correctly, inside the BepInEx folder).</p>\n<p>Just to clarify: if your friend\u2019s radios don\u2019t work at all, in any raid, even when he starts a raid on your server by himself, that seems more like an error related to the mod functioning in single-player mode. Also, make sure he doesn\u2019t get any errors when launching the game.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 167763,
+   "parent_id": null,
+   "author": "makshepard",
+   "author_id": 117974,
+   "author_url": "https://forge.sp-tarkov.com/user/117974/makshepard",
+   "created_at": "2026-07-24T17:56:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2026-08-05 04:26:34]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 167967,
+   "parent_id": null,
+   "author": "operator_lucas",
+   "author_id": 105551,
+   "author_url": "https://forge.sp-tarkov.com/user/105551/operator-lucas",
+   "created_at": "2026-07-25T18:37:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi. Can you add an optional toggle to turn off logs or turn it down a bit? When trying to troubleshoot other issues, this mod is a quite spammy in the Client logs (<a href=\"https://codepaste.sp-tarkov.com/?ef27c77a87fa5ce8#GGDLXzM5PdetXGjBWxZ7Qwjway2C7ErET4axnLmtpJwj\" target=\"_blank\" rel=\"noreferrer noopener\">https://codepaste.sp-tarkov.com/?ef27c77a87fa5ce8#GGDLXzM5PdetXGjBWxZ7Qwjway2C7ErET4axnLmtpJwj</a> for example when in the main menu, not in any raid).</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 167973,
+   "parent_id": 167967,
+   "author": "makshepard",
+   "author_id": 117974,
+   "author_url": "https://forge.sp-tarkov.com/user/117974/makshepard",
+   "created_at": "2026-07-25T18:48:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello! Yes, I think we could do that. As I mentioned earlier in the pinned message, unfortunately not in the near future.</p>\n<p>Thank you so much for letting us know about this!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 168802,
+   "parent_id": 167726,
+   "author": "_Suomi",
+   "author_id": 1274,
+   "author_url": "https://forge.sp-tarkov.com/user/1274/suomi",
+   "created_at": "2026-07-29T17:47:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello. If the issue is still occurring, could you please send a log after the problem manifests? We are unable to reproduce the issue on our end.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168900,
+   "parent_id": 167726,
+   "author": "robertiphone",
+   "author_id": 118711,
+   "author_url": "https://forge.sp-tarkov.com/user/118711/robertiphone",
+   "created_at": "2026-07-30T08:46:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Issue was resolved. It was because he had not properly set his file address within the spt launcher.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 170290,
+   "parent_id": null,
+   "author": "quesonuke",
+   "author_id": 38011,
+   "author_url": "https://forge.sp-tarkov.com/user/38011/quesonuke",
+   "created_at": "2026-08-05T03:53:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Maybe I missed it, but is there any option somewhere to enable radios in the special slots? Thanks! Sick mod.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 170295,
+   "parent_id": 170290,
+   "author": "makshepard",
+   "author_id": 117974,
+   "author_url": "https://forge.sp-tarkov.com/user/117974/makshepard",
+   "created_at": "2026-08-05T04:31:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello!\nNo, for now, within the current balance, radios cannot be placed in special slots, but this is not a final decision.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  }
+ ]
+}

@@ -1,0 +1,250 @@
+{
+ "mod_id": 1576,
+ "slug": "infmeds-update-by-wispsflame",
+ "fetched_at": "2026-08-08T22:03:04Z",
+ "reported_total": null,
+ "pages": 1,
+ "count": 24,
+ "comments": [
+  {
+   "id": 36761,
+   "parent_id": null,
+   "author": "Kaylightning",
+   "author_id": 56112,
+   "author_url": "https://forge.sp-tarkov.com/user/56112/kaylightning",
+   "created_at": "2024-07-19T17:11:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I would really like it if there was an option to multiply the price in addition to the uses\u2026 I would put 10 uses but they would be 10x more expensive too!</p>\n<p>Thanks for the mod!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 110609,
+   "parent_id": 36761,
+   "author": "WispsFlame",
+   "author_id": 48469,
+   "author_url": "https://forge.sp-tarkov.com/user/48469/wispsflame",
+   "created_at": "2024-07-19T17:18:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i just remake the mod to compatible the newer version</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 36769,
+   "parent_id": null,
+   "author": "Lemon-Ru",
+   "author_id": 58721,
+   "author_url": "https://forge.sp-tarkov.com/user/58721/lemon-ru",
+   "created_at": "2024-07-19T17:59:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>\u0410 \u0447\u0451 \u0437\u0430 \u043c\u043e\u0434 \u0447\u0442\u043e \u043e\u043d \u0434\u0435\u043b\u0430\u0435\u0442?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 110614,
+   "parent_id": 36769,
+   "author": "WispsFlame",
+   "author_id": 48469,
+   "author_url": "https://forge.sp-tarkov.com/user/48469/wispsflame",
+   "created_at": "2024-07-19T18:02:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>\u0418\u0441\u0445\u043e\u0434\u043d\u043e\u0435 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435 <a href=\"https://hub.sp-tarkov.com/files/file/1791-infmeds/?highlight=inf#overview\" target=\"_blank\" rel=\"noreferrer noopener\">InfMeds</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 110624,
+   "parent_id": 36761,
+   "author": "Kaylightning",
+   "author_id": 56112,
+   "author_url": "https://forge.sp-tarkov.com/user/56112/kaylightning",
+   "created_at": "2024-07-19T19:08:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This was not a charge, it was just a tip for future updates if you want to implement it.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 45183,
+   "parent_id": null,
+   "author": "Bubblefarts",
+   "author_id": 30786,
+   "author_url": "https://forge.sp-tarkov.com/user/30786/bubblefarts",
+   "created_at": "2024-12-18T01:51:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I don\u2019t know much SPT modding but I added a few things and fixed the logs.</p>\n<p>Added:</p>\n<ul>\n<li>Ability to multiply the number of uses/hp of items so that medkits have different hp values and so on</li>\n<li>Functionality with single use items, single use items have a value of 0 so multiplying by 0 is 0, so i fixed that</li>\n<li>Server console log now is more readable and shows the changes to items.</li>\n<li>Drug items are now also able to be multiplied</li>\n</ul>\n<p>Changes:</p>\n<ul>\n<li>Items are now multiplied instead of a set value</li>\n<li>Config now sets multipliers</li>\n</ul>\n<p>Tentative</p>\n<ul>\n<li>Make price also multiplicative</li>\n</ul>\n<p>\u201cuse strict\u201d; var __createBinding = (this &amp;&amp; this.__createBinding) || (Object.create ? (function (o, m, k, k2) { if (k2 === undefined) k2 = k; var desc = Object.getOwnPropertyDescriptor(m, k); if (!desc || (\u201cget\u201d in desc ? !m.__esModule : desc.writable || desc.configurable)) { desc = { enumerable: true, get: function () { return m[k]; } }; } Object.defineProperty(o, k2, desc); }) : (function (o, m, k, k2) { if (k2 === undefined) k2 = k; o[k2] = m[k]; })); var __setModuleDefault = (this &amp;&amp; this.__setModuleDefault) || (Object.create ? (function (o, v) { Object.defineProperty(o, \u201cdefault\u201d, { enumerable: true, value: v }); }) : function (o, v) { o[\u201cdefault\u201d] = v; }); var __importStar = (this &amp;&amp; this.__importStar) || function (mod) { if (mod &amp;&amp; mod.__esModule) return mod; var result = {}; if (mod != null) for (var k in mod) if (k !== \u201cdefault\u201d &amp;&amp; Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k); __setModuleDefault(result, mod); return result; }; Object.defineProperty(exports, \u201c__esModule\u201d, { value: true }); // Generic const BaseClasses_1 = require(\u201cC:/snapshot/project/obj/models/enums/BaseClasses\u201d); const LogTextColor_1 = require(\u201cC:/snapshot/project/obj/models/spt/logging/LogTextColor\u201d); const config = __importStar(require(\u201c../config/config.json\u201c)); class Mod { mod; constructor() { this.mod = \u201cWisps-InfMeds-1.0.3\u201d; } postDBLoad(container) { var stimMaxUses = 0; var medHp = 0; var medUsages = 0; var drugUsages = 0; const logger = container.resolve(\u201cWinstonLogger\u201d); const db = container.resolve(\u201cDatabaseServer\u201d); const tables = db.getTables(); const items = tables.templates.items; const locales = tables.locales.global; const random = Math.floor(Math.random() * 1000 + 1); // const random = 1000; if (random == 1000) logger.logWithColor(\u201c[ InfMeds ] its a 1 in 1000 chance to get this message and since you recieved it that means your special\u201c, LogTextColor_1.LogTextColor.MAGENTA); let loopedOverStims = 0; let loopedOverMedkits = 0; let loopedOverMedical = 0; let loopedOverDrugs = 0; logger.logWithColor(<code>\\[ InfMeds \\] IMPROVING YOUR HEALTHCARE...</code>, LogTextColor_1.LogTextColor.CYAN); for (const item in items) { const itemProps = items[item]._props; const itemId = items[item]._id; // STIMS CONFIG : SJ6s, Propitals etc if (config.changeStims) { if (items[item]._parent == BaseClasses_1.BaseClasses.STIMULATOR) { if (config.blacklisted_stims.includes(items[item]._id)) { logger.logWithColor(<code>\\[ InfMeds - Stims \\] ${locales\\[\"en\"\\]\\[</code>${itemId} ShortName<code>\\]} is blacklisted and will not get infinite uses</code>, LogTextColor_1.LogTextColor.GRAY); continue; } if (config.infStims) itemProps.MaxHpResource = 999; else if (!config.infStims) { if (itemProps.MaxHpResource == 0) itemProps.MaxHpResource = 1; itemProps.MaxHpResource = itemProps.MaxHpResource * config.stimUsesMultiplier; stimMaxUses = itemProps.MaxHpResource; } if (config.logItemsWithModifiedUses) logger.logWithColor(<code>\\[ InfMeds - Stims \\] ${locales\\[\"en\"\\]\\[</code>${itemId} ShortName<code>\\]} now has ${stimMaxUses} uses</code>, LogTextColor_1.LogTextColor.GRAY); loopedOverStims++; } } // MEDKIT CONFIG : Like Salewas etc if (config.changeMedkits) { if (items[item]._parent == BaseClasses_1.BaseClasses.MEDKIT) { if (config.blacklisted_medkits.includes(items[item]._id)) { logger.logWithColor(<code>\\[ InfMeds - Medkits \\] ${locales\\[\"en\"\\]\\[</code>${itemId} ShortName<code>\\]} is blacklisted and will not get infinite uses</code>, LogTextColor_1.LogTextColor.RED); continue; } if (config.infMedkits) itemProps.MaxHpResource = 9999; else if (!config.infMedkits) { if (itemProps.MaxHpResource == 0) itemProps.MaxHpResource = 1; itemProps.MaxHpResource = itemProps.MaxHpResource * config.medkitHpMultiplier; medHp = itemProps.MaxHpResource; } if (config.logItemsWithModifiedUses) logger.logWithColor(<code>\\[ InfMeds - Medkits \\] ${locales\\[\"en\"\\]\\[</code>${itemId} ShortName<code>\\]} now has ${medHp} hp</code>, LogTextColor_1.LogTextColor.GRAY); loopedOverMedkits++; } } // MEDs CONFIG : CMSs, Bandages etc if (config.changeMedical) { if (items[item]._parent == BaseClasses_1.BaseClasses.MEDICAL) { if (config.blacklisted_medkits.includes(items[item]._id)) { logger.logWithColor(<code>\\[ InfMeds - Medical \\] ${locales\\[\"en\"\\]\\[</code>${itemId} ShortName<code>\\]} is blacklisted and will not get infinite uses</code>, LogTextColor_1.LogTextColor.RED); continue; } if (config.infMedical) itemProps.MaxHpResource = 999; else if (!config.infMedical) { if (itemProps.MaxHpResource == 0) itemProps.MaxHpResource = 1; itemProps.MaxHpResource = itemProps.MaxHpResource * config.medicalUsesMultiplier; medUsages = itemProps.MaxHpResource; } if (config.logItemsWithModifiedUses) logger.logWithColor(<code>\\[ InfMeds - Medical \\] ${locales\\[\"en\"\\]\\[</code>${itemId} ShortName<code>\\]} now has ${medUsages} uses</code>, LogTextColor_1.LogTextColor.GRAY); loopedOverMedical++; } } // Drugs CONFIG : Analgin, Vaseline, etc if (config.changeDrugs) { if (items[item]._parent == BaseClasses_1.BaseClasses.DRUGS) { if (config.blacklisted_drugs.includes(items[item]._id)) { logger.logWithColor(<code>\\[ InfMeds - Medical \\] ${locales\\[\"en\"\\]\\[</code>${itemId} ShortName<code>\\]} is blacklisted and will not get infinite uses</code>, LogTextColor_1.LogTextColor.RED); continue; } if (config.infMedical) itemProps.MaxHpResource = 999; else if (!config.infMedical) { if (itemProps.MaxHpResource == 0) itemProps.MaxHpResource = 1; itemProps.MaxHpResource = itemProps.MaxHpResource * config.drugUsesMultiplier; drugUsages = itemProps.MaxHpResource; } if (config.logItemsWithModifiedUses) logger.logWithColor(<code>\\[ InfMeds - Drug \\] ${locales\\[\"en\"\\]\\[</code>${itemId} ShortName<code>\\]} now has ${drugUsages} uses</code>, LogTextColor_1.LogTextColor.GRAY); loopedOverDrugs++; } } } logger.logWithColor(<code>\\[ InfMeds \\] FOUND AND MODDED THESE ITEMS</code>, LogTextColor_1.LogTextColor.CYAN); logger.logWithColor(<code>\\[ InfMeds \\] Modified ${loopedOverStims} stims to have x${config.stimUsesMultiplier} uses.</code>, LogTextColor_1.LogTextColor.CYAN); logger.logWithColor(<code>\\[ InfMeds \\] Modified ${loopedOverMedkits} medkits to have x${config.medkitHpMultiplier} HP.</code>, LogTextColor_1.LogTextColor.CYAN); logger.logWithColor(<code>\\[ InfMeds \\] Modified ${loopedOverMedical} medical items to have x${config.medicalUsesMultiplier} uses.</code>, LogTextColor_1.LogTextColor.CYAN); logger.logWithColor(<code>\\[ InfMeds \\] Modified ${loopedOverDrugs} drug items to have x${config.drugUsesMultiplier} uses.</code>, LogTextColor_1.LogTextColor.CYAN); } } module.exports = { mod: new Mod() }; //# sourceMappingURL=mod.js.mapConfig.json</p>\n<p>{ \u201cchangeStims\u201d: true, \u201cchangeMedkits\u201d: true, \u201cchangeMedical\u201d: true, \u201cchangeDrugs\u201d: true, \u201cinfStims\u201d: false, \u201cinfMedkits\u201d: false, \u201cinfMedical\u201d: false, \u201cinfDrugs\u201d: false, \u201cstimUsesMultiplier\u201d: 10, \u201cmedkitHpMultiplier\u201d: 2, \u201cmedicalUsesMultiplier\u201d: 2, \u201cdrugUsesMultiplier\u201d: 2, \u201clogItemsWithModifiedUses\u201d: true, \u201cblacklisted_stims\u201d: [], \u201cblacklisted_medkits\u201d: [ \u201c5755356824597772cb798962\u201d ], \u201cblacklisted_medical\u201d: [], \u201cblacklisted_drugs\u201d: [] }Thank you for the great mod, these are just my edits and i figured people can use them if they want.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 122345,
+   "parent_id": 45183,
+   "author": "WispsFlame",
+   "author_id": 48469,
+   "author_url": "https://forge.sp-tarkov.com/user/48469/wispsflame",
+   "created_at": "2024-12-18T09:14:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Oh God Thanks for Improve this Mod</p>\n<p>Maybe One Day If They Comment they want<br />\nI will Update This Mod Make It Better</p>\n<p>thanks for the reply</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 46892,
+   "parent_id": null,
+   "author": "Noarch04",
+   "author_id": 71592,
+   "author_url": "https://forge.sp-tarkov.com/user/71592/noarch04",
+   "created_at": "2025-01-15T16:50:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>When I try to heal myself with stims or medkits, it does the animation and then gets stuck and won\u2019t pull out a weapon and I have to restart the game to fix it. Is there a way to fix this?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 124664,
+   "parent_id": 46892,
+   "author": "WispsFlame",
+   "author_id": 48469,
+   "author_url": "https://forge.sp-tarkov.com/user/48469/wispsflame",
+   "created_at": "2025-01-15T17:54:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i guess you install the \u201chandnotbusy\u201d this mod?<br />\nif that i guess right maybe it\u2019s that mod make you stuck<br />\ni was play that many time not get stuck for</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 124666,
+   "parent_id": 46892,
+   "author": "Noarch04",
+   "author_id": 71592,
+   "author_url": "https://forge.sp-tarkov.com/user/71592/noarch04",
+   "created_at": "2025-01-15T19:51:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I tried removing the mod. It turned out that it was the dad gamers mod and not inf meds. My mistake</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 124784,
+   "parent_id": 46892,
+   "author": "WispsFlame",
+   "author_id": 48469,
+   "author_url": "https://forge.sp-tarkov.com/user/48469/wispsflame",
+   "created_at": "2025-01-17T12:30:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Ha Ha it\u2019s fine glad you find the mod make you have troble</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 49507,
+   "parent_id": null,
+   "author": "IdiotTurdle",
+   "author_id": 74544,
+   "author_url": "https://forge.sp-tarkov.com/user/74544/idiotturdle",
+   "created_at": "2025-03-17T00:56:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Looks like this isn\u2019t working on the morphine injector for some reason. All other injectors are working just fine I believe</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 128260,
+   "parent_id": 49507,
+   "author": "WispsFlame",
+   "author_id": 48469,
+   "author_url": "https://forge.sp-tarkov.com/user/48469/wispsflame",
+   "created_at": "2025-03-17T13:05:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>morphine is kind of for single use pankiller so you maybe can change to use the Propital for the other choice</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 49552,
+   "parent_id": null,
+   "author": "Haltzman",
+   "author_id": 42278,
+   "author_url": "https://forge.sp-tarkov.com/user/42278/haltzman",
+   "created_at": "2025-03-17T16:54:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you for this mod</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 128286,
+   "parent_id": 49507,
+   "author": "IdiotTurdle",
+   "author_id": 74544,
+   "author_url": "https://forge.sp-tarkov.com/user/74544/idiotturdle",
+   "created_at": "2025-03-17T21:43:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I was actually able to adjust the Mod,Js file to get morphine to work. Probably silly considering morphine isn\u2019t super useful. But my tism forced me to try. Just added a new section based off of the other med types. and then adjusted the config file to only use morphine and not the other painkillers.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 51653,
+   "parent_id": null,
+   "author": "Cas",
+   "author_id": 78749,
+   "author_url": "https://forge.sp-tarkov.com/user/78749/cas",
+   "created_at": "2025-05-10T20:40:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The version 1.1.0 link is broken</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 131314,
+   "parent_id": 51653,
+   "author": "WispsFlame",
+   "author_id": 48469,
+   "author_url": "https://forge.sp-tarkov.com/user/48469/wispsflame",
+   "created_at": "2025-05-17T21:29:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>every new version i always remove the old version link so sorry :\u3125</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 140900,
+   "parent_id": null,
+   "author": "Mooshel",
+   "author_id": 87570,
+   "author_url": "https://forge.sp-tarkov.com/user/87570/mooshel",
+   "created_at": "2025-11-01T20:52:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>idk if i am doing something wrong but the mods not working</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 140905,
+   "parent_id": null,
+   "author": "ThatDesGuy",
+   "author_id": 38024,
+   "author_url": "https://forge.sp-tarkov.com/user/38024/thatdesguy",
+   "created_at": "2025-11-01T22:24:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I think you forgot to make a folder in /mods for the config folder and dll file.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 140916,
+   "parent_id": null,
+   "author": "IHateChoosing",
+   "author_id": 24180,
+   "author_url": "https://forge.sp-tarkov.com/user/24180/ihatechoosing",
+   "created_at": "2025-11-01T23:53:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Noticed 2 things</p>\n<p>1: Even when set to true, server says [WispsInfMeds] medkit Was Been Disabled On Inf!</p>\n<p>2: Multiply Stims does not work, stims remain single use. StimUses works though.</p>\n<p>Can anyone else confirm they have the same issue?</p>\n<p>Thanks for the mod!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 140925,
+   "parent_id": 140900,
+   "author": "WispsFlame",
+   "author_id": 48469,
+   "author_url": "https://forge.sp-tarkov.com/user/48469/wispsflame",
+   "created_at": "2025-11-02T01:33:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>oh! Really i\u2019ll check it out :\u3125</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 140926,
+   "parent_id": 140905,
+   "author": "WispsFlame",
+   "author_id": 48469,
+   "author_url": "https://forge.sp-tarkov.com/user/48469/wispsflame",
+   "created_at": "2025-11-02T01:34:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>oh shoot maybe in that time i\u2019m too tried :/ put in wrong file path\u2026..</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 140927,
+   "parent_id": 140916,
+   "author": "WispsFlame",
+   "author_id": 48469,
+   "author_url": "https://forge.sp-tarkov.com/user/48469/wispsflame",
+   "created_at": "2025-11-02T01:35:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>oh!? thanks for reply! i\u2019ll find check  it out!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 140966,
+   "parent_id": 140916,
+   "author": "WispsFlame",
+   "author_id": 48469,
+   "author_url": "https://forge.sp-tarkov.com/user/48469/wispsflame",
+   "created_at": "2025-11-02T06:37:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i just seen the you say first question\nthat thing you say \u201cmedkit was been disabled\u201d is the AI-2 medkit got disabled (I suck at it can\u2019t find how the hell to use the shortname :/)\nyou can go config to remove that blacklist to watch :D</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

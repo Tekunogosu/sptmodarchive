@@ -1,0 +1,590 @@
+{
+ "mod_id": 2204,
+ "slug": "deep-fried-headsets",
+ "fetched_at": "2026-08-08T22:07:10Z",
+ "reported_total": 31,
+ "pages": 4,
+ "count": 58,
+ "comments": [
+  {
+   "id": 53296,
+   "parent_id": null,
+   "author": "Txmo177",
+   "author_id": 44297,
+   "author_url": "https://forge.sp-tarkov.com/user/44297/txmo177",
+   "created_at": "2025-06-28T08:50:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>May i ask what exactly this mod is doing? cant remember how the headsets were way back because i had a big pause from EFT</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 132960,
+   "parent_id": 53296,
+   "author": "shenghanzhe",
+   "author_id": 80859,
+   "author_url": "https://forge.sp-tarkov.com/user/80859/shenghanzhe",
+   "created_at": "2025-06-28T09:12:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This mod boosts and tweaks all headsets in Escape from Tarkov to make them much more powerful.</p>\n<ul>\n<li>Greatly increases ambient noise reduction (quieter background sounds)</li>\n<li>Makes all headset audio much louder</li>\n<li>Boosts low, mid, and high frequencies</li>\n<li>Makes footsteps much more noticeable</li>\n<li>Slightly increases the distance at which you can hear sounds</li>\n</ul>\n<p>The goal is to make headsets feel much more effective and dramatic, so you can hear important sounds (like footsteps) more easily, like it was before in SPT 3.9</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 5
+  },
+  {
+   "id": 53307,
+   "parent_id": null,
+   "author": "Polarius",
+   "author_id": 16696,
+   "author_url": "https://forge.sp-tarkov.com/user/16696/polarius",
+   "created_at": "2025-06-28T16:18:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>it\u2019s so much more crunchier now i love it</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 132981,
+   "parent_id": 53296,
+   "author": "Txmo177",
+   "author_id": 44297,
+   "author_url": "https://forge.sp-tarkov.com/user/44297/txmo177",
+   "created_at": "2025-06-28T18:23:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you very much for explaining it, i will definetly download it and give it a try, what i immedietly noticed when starting my 3.11 playthrough is that the sounds got hella quiet, like uncomfortably quiet.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 53318,
+   "parent_id": null,
+   "author": "Tarkovnubie",
+   "author_id": 53565,
+   "author_url": "https://forge.sp-tarkov.com/user/53565/tarkovnubie",
+   "created_at": "2025-06-28T23:52:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Does it affect DeDistortionizer Port for 3.11?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 53328,
+   "parent_id": null,
+   "author": "PCG",
+   "author_id": 74416,
+   "author_url": "https://forge.sp-tarkov.com/user/74416/pcg",
+   "created_at": "2025-06-29T06:09:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>is it normal that i cant hear my gun\u2019s noise like before? i mean i enjoyed the noise of the unsuppressed deagle but now its just a *tick*. its also kinda inconsistent. sometimes i hear a tick, sometimes the original noise but much quieter and sometimes a shorter version of the original noise like it was cut. the inconsistency is more noticeable with full auto guns</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133007,
+   "parent_id": 53328,
+   "author": "shenghanzhe",
+   "author_id": 80859,
+   "author_url": "https://forge.sp-tarkov.com/user/80859/shenghanzhe",
+   "created_at": "2025-06-29T07:30:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>in the mods config folder (\\user\\mods\\shwngDeepFriedHeadsets\\config) there is config.jsonc. open that file and edit these values:</p>\n<p>\u201cCompressorGain\u201d: 1.6,</p>\n<p>\u201cCompressorThreshold\u201d: 1.2,<br />\nyou can try lowering them to 1.0.<br />\nAlso you can edit</p>\n<p>\u201cDryVolume\u201d: 0.7,<br />\nto around 1<br />\nif you want more gunshot volume you can decrease \u201cCompressorThreshold\u201d to around 0.75.<br />\nEdit:<br />\nAlso you can try lowering the</p>\n<p>\u201cEnvCommonCompressorSendLevel\u201d: 12, and</p>\n<p>\u201cEnvTechnicalCompressorSendLevel\u201d: 12<br />\nto around 3</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133008,
+   "parent_id": 53318,
+   "author": "shenghanzhe",
+   "author_id": 80859,
+   "author_url": "https://forge.sp-tarkov.com/user/80859/shenghanzhe",
+   "created_at": "2025-06-29T07:38:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>They should work fine together. However, it\u2019s best to load DeDistortionizer after this mod.</p>\n<p>DeDistortionizer sets distortion to 0.01 for specific headsets. This mod increases distortion by 20%, so if it runs after DeDistortionizer, the value becomes 0.012 (slightly higher, but still lower than the original BSG values).</p>\n<p>If this mod loads first (which is usually the case), DeDistortionizer will overwrite the distortion value to 0.01.<br />\nStill needs some testing though</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 53333,
+   "parent_id": null,
+   "author": "danut__",
+   "author_id": 80928,
+   "author_url": "https://forge.sp-tarkov.com/user/80928/danut",
+   "created_at": "2025-06-29T09:55:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>is there any possibility this works with 3.10?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 53334,
+   "parent_id": null,
+   "author": "shenghanzhe",
+   "author_id": 80859,
+   "author_url": "https://forge.sp-tarkov.com/user/80859/shenghanzhe",
+   "created_at": "2025-06-29T10:54:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2026-02-08 20:36:24]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133015,
+   "parent_id": 53333,
+   "author": "shenghanzhe",
+   "author_id": 80859,
+   "author_url": "https://forge.sp-tarkov.com/user/80859/shenghanzhe",
+   "created_at": "2025-06-29T10:54:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>pinned to the comments, not tested though</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133020,
+   "parent_id": 53328,
+   "author": "PCG",
+   "author_id": 74416,
+   "author_url": "https://forge.sp-tarkov.com/user/74416/pcg",
+   "created_at": "2025-06-29T11:35:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>its clearer now. thanks</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 133044,
+   "parent_id": 53333,
+   "author": "danut__",
+   "author_id": 80928,
+   "author_url": "https://forge.sp-tarkov.com/user/80928/danut",
+   "created_at": "2025-06-30T05:12:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>thx, gonna test and reply back</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 133099,
+   "parent_id": 53333,
+   "author": "danut__",
+   "author_id": 80928,
+   "author_url": "https://forge.sp-tarkov.com/user/80928/danut",
+   "created_at": "2025-07-01T03:50:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I can confirm, this version works as intended on 3.10 and I really feel the difference even with the default config. Thank you for this amazing mod and backwards compatibility, ur a legend.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 133104,
+   "parent_id": 53333,
+   "author": "shenghanzhe",
+   "author_id": 80859,
+   "author_url": "https://forge.sp-tarkov.com/user/80859/shenghanzhe",
+   "created_at": "2025-07-01T09:18:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>thanks bro</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 53478,
+   "parent_id": null,
+   "author": "hellchickens",
+   "author_id": 41253,
+   "author_url": "https://forge.sp-tarkov.com/user/41253/hellchickens",
+   "created_at": "2025-07-03T16:37:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Well, u have to add a note, that it\u2019s not usable for those who owns 5.1/7.1 headsets, sound becomes VERY awkward.</p>\n<p>For 2.0 stereo without any sound enhancements - fine</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133233,
+   "parent_id": 53478,
+   "author": "shenghanzhe",
+   "author_id": 80859,
+   "author_url": "https://forge.sp-tarkov.com/user/80859/shenghanzhe",
+   "created_at": "2025-07-03T20:14:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>thanks for the feedback</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 53494,
+   "parent_id": null,
+   "author": "Bankshaft820",
+   "author_id": 81111,
+   "author_url": "https://forge.sp-tarkov.com/user/81111/bankshaft820",
+   "created_at": "2025-07-04T09:59:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey, loving the mod! Is there a value I could tweak to lower the sound of my own footsteps just a bit? Thanks in advance!!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 53502,
+   "parent_id": null,
+   "author": "Kojimbo0_0",
+   "author_id": 77629,
+   "author_url": "https://forge.sp-tarkov.com/user/77629/kojimbo0-0",
+   "created_at": "2025-07-04T18:44:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Your mod is amazing all the headsets sound different now and with some config tweaks I can make them sound good</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 133257,
+   "parent_id": 53494,
+   "author": "shenghanzhe",
+   "author_id": 80859,
+   "author_url": "https://forge.sp-tarkov.com/user/80859/shenghanzhe",
+   "created_at": "2025-07-04T18:59:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>open the mod.ts file in src\\ folder with a text editor and ctrl+f to find:</p>\n<p>p.ClientPlayerCompressorSendLevel=cfg.PlayerCompressorSendLevel;</p>\n<p>replace the \u201ccfg.PlayerCompressorSendLevel;\u201d with \u201c6;\u201d</p>\n<p>so it looks like:</p>\n<p>p.ClientPlayerCompressorSendLevel=6;</p>\n<p>if you still find it too high try 3 or 0 but some gunshot sound effects get weirder by doing so</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133258,
+   "parent_id": 53502,
+   "author": "shenghanzhe",
+   "author_id": 80859,
+   "author_url": "https://forge.sp-tarkov.com/user/80859/shenghanzhe",
+   "created_at": "2025-07-04T19:01:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>That is great to hear because that was my goal with this mod that all headsets to have a different characteristic rather than from garbage to meta.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 53511,
+   "parent_id": null,
+   "author": "luttga",
+   "author_id": 81144,
+   "author_url": "https://forge.sp-tarkov.com/user/81144/luttga",
+   "created_at": "2025-07-05T04:31:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello, loving the mod . Just one question, how can i reduce the volume of searching containers?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133272,
+   "parent_id": 53494,
+   "author": "Bankshaft820",
+   "author_id": 81111,
+   "author_url": "https://forge.sp-tarkov.com/user/81111/bankshaft820",
+   "created_at": "2025-07-05T07:54:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey again. 6 sounds perfect!! Thanks so much for the reply!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 133274,
+   "parent_id": 53511,
+   "author": "shenghanzhe",
+   "author_id": 80859,
+   "author_url": "https://forge.sp-tarkov.com/user/80859/shenghanzhe",
+   "created_at": "2025-07-05T10:17:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>hi, i think it\u2019s affected by the client compressor send level so you can do this tweak:</p>\n<p>open the mod.ts file in src\\ folder with a text editor and ctrl+f to find:</p>\n<p>p.ClientPlayerCompressorSendLevel=cfg.PlayerCompressorSendLevel;</p>\n<p>replace the \u201ccfg.PlayerCompressorSendLevel;\u201d with \u201c6;\u201d</p>\n<p>so it looks like:</p>\n<p>p.ClientPlayerCompressorSendLevel=6;</p>\n<p>if you still find it too high try 3 or 0 but some gunshot sound effects get weirder by doing so</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 54073,
+   "parent_id": null,
+   "author": "Company2lostops",
+   "author_id": 33826,
+   "author_url": "https://forge.sp-tarkov.com/user/33826/company2lostops",
+   "created_at": "2025-07-21T11:07:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019ve noticed with this mod added I encounter deafening of my gun sounds when firing, not sure if it is a conflict or something else. Otherwise it sounds great lol.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 55377,
+   "parent_id": null,
+   "author": "TarkyBreeki",
+   "author_id": 77402,
+   "author_url": "https://forge.sp-tarkov.com/user/77402/tarkybreeki",
+   "created_at": "2025-08-25T16:44:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you so much for this mod! This completely fixed my audio problems with this game, what bothered me the most was the quiet sounds, especially weapons\u2026 I\u2019ve spent a lot of time messing around with the config.json trying several combinations with the settings. Now I\u2019ve finally reached a good result with louder gun sounds and ambient/player noises. If anyone is interested, I\u2019m sharing my config.json settings here, just replace everything with the following values:</p>\n<p>Feel free to share the results here and I hope this helps</p>\n<p>{ // Multiplier for ambient noise reduction. Higher = quieter background noise. // Default value is 1.5 // BSG value is 1 // Does not affect the volume of ambient sounds, only how much is reduced. \u201cAmbientVolume\u201d: 1.3, // How much of the ambient sound is sent to the compressor. // This affects how loud ambient sounds are in the mix. // Default value is -5 // BSG value is 0 \u201cAmbientCompressorSendLevelAdd\u201d: 0, // Multiplier for Distortion. 1.0 = no change, 1.2 = +20%. // Applies to all headsets // Default value is 0.75 // BSG value is 1.0 \u201cDistortionMultiplier\u201d: 0.2, // Total volume multiplier for all channels. // Default value is 2.0 // BSG value is 1.0 \u201cHeadphonesMixerVolume\u201d: 1.2, // Multiplier for audio compression gain. Higher = more pronounced sounds. // Default value is 1.75 // BSG value is 1.0 // I recommend 2 at max. \u201cCompressorGain\u201d: 1.0, // Multiplier for compression threshold. Higher = more compression. // Default value is 1.2 // BSG value is 1.0 // I recommend 1.4 at max. \u201cCompressorThreshold\u201d: 0.2, // Keep these \u2018Gain\u2019 values same with each other. // Default value is 1.5 // BSG value is 1.0 // Multiplier for low frequency EQ (bass). Higher = stronger lows. \u201cEQBandGain\u201d: 1.0, // Multiplier for highpass filter frequency. Lower = more bass. // Default value is 1 // BSG value is 1 \u201cHighpassFreq\u201d: 1, // Multiplier for dry volume (untreated sound). Higher = louder untreated sound. // This is the volume of the sound before any effects are applied. // Default value is 1 // BSG value is 1 \u201cDryVolume\u201d: 1, // Multiplier for how far you can hear sounds. Higher = hear farther. // This affects how far away you can hear sounds, making distant sounds more audible. // Dont make this too high, as it can cause distant sounds to be too loud. // Default value is 1.00015 // BSG value is 1.0 \u201cRolloffMultiplier\u201d: 1.00015, // Value for human compressor send level. Higher = louder human sounds. // This affects how loud human sounds are in the mix. // Default value is 16 // BSG value is 0 \u201cPlayerCompressorSendLevel\u201d: 10, // Value added to environmental sounds. Higher = louder environment. // This affects how loud environmental sounds are in the mix. // Default value is 0 // BSG value is 0 \u201cEnvCompressorSendLevel\u201d: 0, // This is the level at which effects returns (like reverb) are sent to the compressor. // Default value is 0 // BSG value is 0 \u201cEffectsReturnsCompressorSendLevel\u201d: 0, // This is the volume of the effects returns group, which includes reverb and other effects // Default value is 0 // BSG value is 0 \u201cEffectsReturnsGroupVolume\u201d: 0, // This is the level at which gun sounds are sent to the compressor. // This affects how loud gun sounds are in the mix. // Default value is 16 // BSG value is 0 \u201cGunsCompressorSendLevelAdd\u201d: 4 }</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 135742,
+   "parent_id": 55377,
+   "author": "shenghanzhe",
+   "author_id": 80859,
+   "author_url": "https://forge.sp-tarkov.com/user/80859/shenghanzhe",
+   "created_at": "2025-08-31T19:01:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>thanks for sharing ur config! i\u2019m testing another project of mine right now and when i finish some tests, i\u2019ll test ur config too and update this mod with this config (i\u2019m also planning to reduce the player sounds in the script)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135769,
+   "parent_id": 55377,
+   "author": "TarkyBreeki",
+   "author_id": 77402,
+   "author_url": "https://forge.sp-tarkov.com/user/77402/tarkybreeki",
+   "created_at": "2025-09-01T13:10:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019ve did some poking around on how the game handles audio comming from headsets, and found some pretty interesting stuff\u2026 I built a new mod for testing using yours as a base and managed to make gunshots stand out a lot more and also managed to increase overall audio volume for other stuff. Lemme know if you wanna talk about it, I\u2019ll send you my findings</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 143955,
+   "parent_id": null,
+   "author": "Flame39",
+   "author_id": 19569,
+   "author_url": "https://forge.sp-tarkov.com/user/19569/flame39",
+   "created_at": "2025-11-26T15:42:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>any gear change, including guns vests backpacks, will undo the mod\u2019s effect on headsets and return to as if not wearing a headset</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 143957,
+   "parent_id": 143955,
+   "author": "Flame39",
+   "author_id": 19569,
+   "author_url": "https://forge.sp-tarkov.com/user/19569/flame39",
+   "created_at": "2025-11-26T16:02:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>strange, it seems that this only happen in hideout but not in raid</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 144337,
+   "parent_id": null,
+   "author": "NomenIgnatum",
+   "author_id": 89021,
+   "author_url": "https://forge.sp-tarkov.com/user/89021/nomenignatum",
+   "created_at": "2025-11-29T19:18:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019d love to see an update to this. Phenomenal mod.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151665,
+   "parent_id": null,
+   "author": "BraveStarTG",
+   "author_id": 46315,
+   "author_url": "https://forge.sp-tarkov.com/user/46315/bravestartg",
+   "created_at": "2026-02-01T14:45:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Just a heads up. The file structure is missing the SPT folder in the zip file.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 151667,
+   "parent_id": null,
+   "author": "Kacpernap",
+   "author_id": 32322,
+   "author_url": "https://forge.sp-tarkov.com/user/32322/kacpernap",
+   "created_at": "2026-02-01T15:12:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i can hear the enemy\u2019s fear and its l o u d</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 151674,
+   "parent_id": 151665,
+   "author": "AaronIsntHere",
+   "author_id": 70469,
+   "author_url": "https://forge.sp-tarkov.com/user/70469/aaronisnthere",
+   "created_at": "2026-02-01T16:03:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>How do you fix this? as someone who is new to modding SPT / EFT</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151675,
+   "parent_id": 151665,
+   "author": "BraveStarTG",
+   "author_id": 46315,
+   "author_url": "https://forge.sp-tarkov.com/user/46315/bravestartg",
+   "created_at": "2026-02-01T16:09:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Just put the current folder (user) inside a folder named SPT, zip again and reupload the file. Not sure if that requires changing the version.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 151682,
+   "parent_id": null,
+   "author": "KiraQAQ",
+   "author_id": 104032,
+   "author_url": "https://forge.sp-tarkov.com/user/104032/kiraqaq",
+   "created_at": "2026-02-01T18:06:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Did you know that when I was searching for the 4.0.11 version of this mod during the day, you hadn\u2019t updated it yet? But when I suddenly saw the moment this mod was released at night (I found it in the list of the latest updated mods below), I was so excited</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 151698,
+   "parent_id": null,
+   "author": "LordKhaos",
+   "author_id": 92172,
+   "author_url": "https://forge.sp-tarkov.com/user/92172/lordkhaos",
+   "created_at": "2026-02-01T20:34:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Amazing mod! I used it previously and forgot how much of a difference it made gameplay-wise until I installed this new mod. Now my PMC has ears and can hear! Time to up the difficulty, up the SAIN settings, and remove the audio indicators I have been using because base Tarkov you cant hear S***.</p>\n<p>Thank you so much for updating this!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 151711,
+   "parent_id": null,
+   "author": "Tnx",
+   "author_id": 39254,
+   "author_url": "https://forge.sp-tarkov.com/user/39254/tnx",
+   "created_at": "2026-02-02T00:09:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Why are the explanations for each category gone with the 4.0 version/update?  Anyways, I had to download the older file to see what each value did.</p>\n<p>I had a question, you say \u201c  // Keep these \u2018Gain\u2019 values same with each other.\u201c  Which gain values?\nThese 3 down below?</p>\n<pre><code>\"EQBandGain\": 1.1,\n\"EQBandFrequency\": 1.0,\n\"EQBandQ\": 1.0,\n</code></pre>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 151721,
+   "parent_id": null,
+   "author": "bbq1437",
+   "author_id": 95599,
+   "author_url": "https://forge.sp-tarkov.com/user/95599/bbq1437",
+   "created_at": "2026-02-02T04:14:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This mod works really weird. After installing it, I thought the sound would improve slightly, but my ears started bleeding. Most of the sounds just broke. Yes, I can hear footsteps a little better, like they\u2019re stomping on my head, but the gunshot sounds are broken, the sound of breaking glass is broken, and there\u2019s no sound at all around me, there were no sounds left around me at all, and everything that was left became a super bass boost, which negates the whole point. Not what I expected to get</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 151732,
+   "parent_id": 151721,
+   "author": "shenghanzhe",
+   "author_id": 80859,
+   "author_url": "https://forge.sp-tarkov.com/user/80859/shenghanzhe",
+   "created_at": "2026-02-02T09:45:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>try lowerin CompressorGain and CompressorThreshold to around 1</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151733,
+   "parent_id": 151711,
+   "author": "shenghanzhe",
+   "author_id": 80859,
+   "author_url": "https://forge.sp-tarkov.com/user/80859/shenghanzhe",
+   "created_at": "2026-02-02T09:53:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>In the old version there were gain adjustments for each low, mid, and high frequency. I merged them into one adjustment so EQBandGain multiplies the gain of all 3 frequency bands together. It acts as a \u201cglobal gain multiplier\u201d for all frequencies. If a headset has:</p>\n<p>Band1Gain = 2.0 \u2192 becomes 2.0 \u00d7 1.75 = 3.5\nBand2Gain = 1.5 \u2192 becomes 1.5 \u00d7 1.75 = 2.625\nBand3Gain = 3.0 \u2192 becomes 3.0 \u00d7 1.75 = 5.25</p>\n<p>EQBandGain - multiplier for gain of all bands (makes them louder/quieter)\nEQBandFrequency - multiplier for center frequencies of all bands (shifts frequencies up/down)\nEQBandQ - multiplier for Q/bandwidth of all bands (narrower or wider bands)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151735,
+   "parent_id": null,
+   "author": "aisurunoyume",
+   "author_id": 76714,
+   "author_url": "https://forge.sp-tarkov.com/user/76714/aisurunoyume",
+   "created_at": "2026-02-02T10:36:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>After my first firefight, my ears started hurting \u2014 I was wearing Comtac II headphones.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 151753,
+   "parent_id": 143955,
+   "author": "mstasde89",
+   "author_id": 103014,
+   "author_url": "https://forge.sp-tarkov.com/user/103014/mstasde89",
+   "created_at": "2026-02-02T16:40:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It\u2019s not this mod that is doing that, I\u2019ve been experiencing exactly what you described and I don\u2019t use this mod. Try removing your headset and putting it back on, that\u2019s the best workaround I\u2019ve found. I\u2019m fairly certain it\u2019s the versions of EFT that are being used, there\u2019s a similar issue in the current version of Arena as well.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 152787,
+   "parent_id": null,
+   "author": "AphEX",
+   "author_id": 14979,
+   "author_url": "https://forge.sp-tarkov.com/user/14979/aphex",
+   "created_at": "2026-02-12T23:38:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Just some short clarifying questions:</p>\n<p>First, for the \u201cCOMPRESSOR_SEND_LEVELS\u201d config lines the readme says for the AmbientCompressorSendLevel that higher number means greater reduction. Does the same apply to the other lines?</p>\n<p>Second, is there a minimum and/or maximum value for these, and can decimals be used or does it have to be integers?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 153027,
+   "parent_id": 152787,
+   "author": "shenghanzhe",
+   "author_id": 80859,
+   "author_url": "https://forge.sp-tarkov.com/user/80859/shenghanzhe",
+   "created_at": "2026-02-15T09:19:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi<br />\nSorry for the late reply..<br />\nHigher number meaning more reduction doesn\u2019t apply unless it\u2019s stated so.<br />\nSome default values have a negative value, so by multiplying it by 2 we actually even more decrease it\u2019s value sent to the compressor.<br />\nThere are no minimum/maximum values. Decimals can be used and actually it\u2019s better to increase or decrease values by a decimal.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 153590,
+   "parent_id": null,
+   "author": "Peuchot",
+   "author_id": 50571,
+   "author_url": "https://forge.sp-tarkov.com/user/50571/peuchot",
+   "created_at": "2026-02-23T09:08:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I like the mod but voice lines are too loud for me which settings do I need to tweak to lower them ?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 153668,
+   "parent_id": 153590,
+   "author": "shenghanzhe",
+   "author_id": 80859,
+   "author_url": "https://forge.sp-tarkov.com/user/80859/shenghanzhe",
+   "created_at": "2026-02-24T19:28:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p><code>ClientPlayerCompressorSendLevelSet</code> (for players)<br />\n<code>PlayerCompressorSendLevel</code> (for bots)<br />\nbut they affect running, sprinting and all the other sounds too</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 154948,
+   "parent_id": null,
+   "author": ".xpire",
+   "author_id": 106028,
+   "author_url": "https://forge.sp-tarkov.com/user/106028/xpire",
+   "created_at": "2026-03-16T20:19:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Would it be possible to use this only for the increased overall volume of the game, without all the extra headset changes/enhancements added on top of it - and if so, what settings would I have to use?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 154955,
+   "parent_id": null,
+   "author": "kwebber321",
+   "author_id": 8418,
+   "author_url": "https://forge.sp-tarkov.com/user/8418/kwebber321",
+   "created_at": "2026-03-16T22:02:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This is great but damn i didn\u2019t know my feet were so loud.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 155644,
+   "parent_id": null,
+   "author": "88y8oy8yo",
+   "author_id": 90574,
+   "author_url": "https://forge.sp-tarkov.com/user/90574/88y8oy8yo",
+   "created_at": "2026-03-29T03:16:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>aah my ears</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 158082,
+   "parent_id": null,
+   "author": "Azrael112",
+   "author_id": 82251,
+   "author_url": "https://forge.sp-tarkov.com/user/82251/azrael112",
+   "created_at": "2026-04-26T15:53:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is there any way I can make this work with wtt content backport earplugs? If so can someone help me on how to add the earplugs to this mods db?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 158118,
+   "parent_id": null,
+   "author": "Kojimbo0_0",
+   "author_id": 77629,
+   "author_url": "https://forge.sp-tarkov.com/user/77629/kojimbo0-0",
+   "created_at": "2026-04-26T20:45:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2026-05-05 03:21:28]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 160317,
+   "parent_id": null,
+   "author": "Galaxy10FR",
+   "author_id": 113073,
+   "author_url": "https://forge.sp-tarkov.com/user/113073/galaxy10fr",
+   "created_at": "2026-05-20T02:55:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>anyone know how i could make the audio louder in the settings i dont really understand the settings</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 160949,
+   "parent_id": 158082,
+   "author": "shenghanzhe",
+   "author_id": 80859,
+   "author_url": "https://forge.sp-tarkov.com/user/80859/shenghanzhe",
+   "created_at": "2026-05-27T17:56:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>it should do itself automatically if it has headset definitions and loaded after that mod.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 161702,
+   "parent_id": 158082,
+   "author": "Azrael112",
+   "author_id": 82251,
+   "author_url": "https://forge.sp-tarkov.com/user/82251/azrael112",
+   "created_at": "2026-06-04T19:16:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Oh yes. I forgot the load order matters, ty so much.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 162109,
+   "parent_id": null,
+   "author": "Wolf_Vantage",
+   "author_id": 112269,
+   "author_url": "https://forge.sp-tarkov.com/user/112269/wolf-vantage",
+   "created_at": "2026-06-07T23:42:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Would it be possible to apply these settings to the game overall instead of just headphones? My only real gripe with EFT is that it\u2019s super quiet by default - something that plagues many games lately for some reason (you then launch Battlefield 4 or any older game) and it\u2019s twice as loud if not more, fully utilizing whatever headset/speakers you\u2019ve got.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 166835,
+   "parent_id": null,
+   "author": "DerKinGKTS",
+   "author_id": 69563,
+   "author_url": "https://forge.sp-tarkov.com/user/69563/derkingkts",
+   "created_at": "2026-07-18T15:20:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>After using this mod, all the sound from the original headphones became very blurry, especially the sound of me firing my gun. It sounded distorted and intermittent, which was very unpleasant.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 167204,
+   "parent_id": 166835,
+   "author": "Wolf_Vantage",
+   "author_id": 112269,
+   "author_url": "https://forge.sp-tarkov.com/user/112269/wolf-vantage",
+   "created_at": "2026-07-20T22:50:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>That sounds like something shouldn\u2019t be happening. I\u2019m using this mod for over a month and it\u2019s perfectly crispy.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

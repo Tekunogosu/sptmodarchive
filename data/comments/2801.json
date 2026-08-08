@@ -1,0 +1,340 @@
+{
+ "mod_id": 2801,
+ "slug": "fsr4-bridge",
+ "fetched_at": "2026-08-08T22:38:25Z",
+ "reported_total": 12,
+ "pages": 2,
+ "count": 33,
+ "comments": [
+  {
+   "id": 165484,
+   "parent_id": null,
+   "author": "Sentinowl",
+   "author_id": 27275,
+   "author_url": "https://forge.sp-tarkov.com/user/27275/sentinowl",
+   "created_at": "2026-07-05T23:16:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I managed to lose about 9 frames from this. Not sure why. Maybe on higher end systems it acts differently?</p>\n<p>7900XTX and 7800X3D with 32GB DDR5 RAM on Linux</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 165489,
+   "parent_id": 165484,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2026-07-05T23:56:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I think it\u2019s because FSR4 is just heavier to run especially on an RDNA3 card but I\u2019ll take a look at some things and see if I can make any improvements.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 165621,
+   "parent_id": 165484,
+   "author": "elektroherd",
+   "author_id": 101627,
+   "author_url": "https://forge.sp-tarkov.com/user/101627/elektroherd",
+   "created_at": "2026-07-07T13:19:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>After some uneducated research i guess FSR4 costs more FPS but gives better image quality.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 165659,
+   "parent_id": null,
+   "author": "Furisu",
+   "author_id": 25664,
+   "author_url": "https://forge.sp-tarkov.com/user/25664/furisu",
+   "created_at": "2026-07-07T21:26:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I might be losing some performance on my 7600XT but damn, it\u2019s night and day compared to Tarkov\u2019s FSR3.</p>\n<p>So much better.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 165668,
+   "parent_id": 165484,
+   "author": "Mayoringram",
+   "author_id": 668,
+   "author_url": "https://forge.sp-tarkov.com/user/668/mayoringram",
+   "created_at": "2026-07-07T23:12:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>FSR 3 in the game is actually FSR 2.2, they slapped in 3 but \u201c3\u201d just like DLSS 3 only added frame interpolation into the package, nothing more and since Tarkov is DX11, it wouldn\u2019t support FG in any way. Anyways, it\u2019d be slightly better if it were to be FSR 3.1 but still a hand optimized algorithm meanwhile XeSS SR (super resolution) and DLSS SR uses AI. That\u2019s why almost every card could use the upsclaing up until FSR 4.</p>\n<p>Now thing changed with FSR 4 where it also uses AI just like XeSS SR and DLSS SR. It took them a long ass time to enable for RDNA 3 due to lack of hardware. Simply put, it uses a less accurate algorithm just to work with \u201cINT8\u201d compared to \u201cFP8\u201d acceleration on RDNA 4 (9000 series). But I heard from around that some 9000 series users also started using INT8 version because it\u2019s even lighter for them. Anyway this is the base of it, that\u2019s why FSR up until now sucked ass, it required hand tuning everywhere, could do so little on it\u2019s own.</p>\n<p>Sorry for the long post but tried to keep it easy to understand.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 165679,
+   "parent_id": null,
+   "author": "CharlieKirk",
+   "author_id": 85064,
+   "author_url": "https://forge.sp-tarkov.com/user/85064/charliekirk",
+   "created_at": "2026-07-08T01:39:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i have a 7900xt/7700x 32gb ram. Worth using with my specs?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 165681,
+   "parent_id": 165484,
+   "author": "tenhian-rRrH9",
+   "author_id": 116923,
+   "author_url": "https://forge.sp-tarkov.com/user/116923/tenhian-rrrh9",
+   "created_at": "2026-07-08T02:24:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks @Mayoringram, that\u2019s a lot of useful info and easy to follow.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 165707,
+   "parent_id": null,
+   "author": "tenhian-rRrH9",
+   "author_id": 116923,
+   "author_url": "https://forge.sp-tarkov.com/user/116923/tenhian-rrrh9",
+   "created_at": "2026-07-08T10:00:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey matsix, just wanted to share some data from running this on an RX 7800 XT 16G (RDNA3). Been testing on Streets near the 4S area \u2014 pretty high load zone, offline no bots.</p>\n<p>Some PresentMon numbers from a few sessions:</p>\n<p>Quality mode (0.67\u00d7, 1707\u00d7960 \u2192 2560\u00d71440): FSR4 on vs off \u2014 84.6 vs 84.5 avg FPS. Virtually identical. The bridge overhead shows as ~0.4ms in the built-in debug log (0.13ms actual ffxDispatch, the rest is cross-API fence sync). GPU busy% went from 67% (in-game FSR) to 90% (FSR4 via bridge) \u2014 the private D3D12 queue keeps the GPU fed more consistently. Performance mode (0.5\u00d7) showed similar results. I also tried Native AA (0.99\u00d7): 71 fps with GPU pegged at 100%, which is expected since you\u2019re rendering 2.2\u00d7 the pixels.</p>\n<p>No crashes, no fallback to 3.1.x in any of my sessions. FSR4 4.1.1 stayed active throughout on RDNA3.</p>\n<p>On the visual side \u2014 the difference is night and day. The in-game \u201cFSR 3\u201d (which is really FSR 2.2 rebranded \u2014 the DLL has TryRenderFSR3 reusing FSR2Wrapper with no separate 3.x path) has that characteristic shimmer on chain-link fences, foliage, and distant objects that hand-tuned spatial/temporal filters can\u2019t fix. FSR4\u2019s ML model handles these properly. Things that used to look like paper cutouts now have actual detail.</p>\n<p>A couple of environment rendering quirks \u2014 terrain normal map pop on open maps like Shoreline, and tree&amp;bush shadows sometimes only partially rendered until you move closer. I\u2019m sure these are either Tarkov\u2019s or FSR4\u2019s characteristics, not the bridge.</p>\n<p>Architecturally the interesting thing is the paradigm shift: this takes a game stuck on FSR 2.2\u2019s hand-tuned pipeline and bridges it to an ML-based upscaler through a D3D11\u2192D3D12 interop layer \u2014 0.4ms overhead, no engine changes. The idea of using shared textures + a timeline fence to side-step the API mismatch is a neat solution to a problem that didn\u2019t have an obvious fix. Smart engineering within the constraints.</p>\n<p>Thanks for making this.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 165716,
+   "parent_id": null,
+   "author": "Balumbius",
+   "author_id": 66271,
+   "author_url": "https://forge.sp-tarkov.com/user/66271/balumbius",
+   "created_at": "2026-07-08T11:30:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I followed the instructions.\nI enabled FSR 3 in the game settings and opened the mod configuration in F12. When I disable FSR 4 in the config, the frame rate averages 120-130 FPS, but as soon as I enable FSR 4, the FPS drops to ~80.\nI think that\u2019s too much and clearly not worth it. Assuming I\u2019m doing everything correctly, of course.\nI conducted the test at customs in the center of the map.\nMy hardware:\n7800x3D, 9070 XT, 32GB\nAuthor, you say you also have a 9070 XT. What was your FPS with and without this mod?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 165720,
+   "parent_id": 165716,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2026-07-08T12:24:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m not sure how you\u2019re getting 120-130fps in the middle of customs. Maybe because of the x3d? You\u2019re either standing in the middle of customs with no bots and looking in a direction that isn\u2019t the middle of the map or the X3D really is that much better than my PC. Because even on an empty customs map, if I\u2019m in the middle I get like 80-90 fps without FSR4, I have a 7600x cpu. If I enable it, it doesn\u2019t drop at all because I\u2019m CPU limited.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 165729,
+   "parent_id": 165716,
+   "author": "Balumbius",
+   "author_id": 66271,
+   "author_url": "https://forge.sp-tarkov.com/user/66271/balumbius",
+   "created_at": "2026-07-08T13:58:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yes, my friend. It\u2019s the X3D processors that give EFT such a performance boost. Check out the 7800X3D and 9800X3D benchmarks for this game on YouTube, and you\u2019ll understand right away.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 165732,
+   "parent_id": 165716,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2026-07-08T14:37:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m well aware of how good the X3D processor is which is why I mentioned that. Just didn\u2019t expect it to be that big of a difference in that case. So you\u2019re probably likely seeing the 0.5ms overheard of the mod because it needs to do a lot more to convert from dx11 -&gt; dx12 -&gt; dx11. If you\u2019re GPU limited, you\u2019re going to see that drop no matter what.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 165786,
+   "parent_id": null,
+   "author": "turfish",
+   "author_id": 63286,
+   "author_url": "https://forge.sp-tarkov.com/user/63286/turfish",
+   "created_at": "2026-07-09T12:23:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>crazy work man, game is smooth as hell now</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 165791,
+   "parent_id": null,
+   "author": "HandGrade",
+   "author_id": 42831,
+   "author_url": "https://forge.sp-tarkov.com/user/42831/handgrade",
+   "created_at": "2026-07-09T13:45:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You need FSR4 to be implemented as it is. Currently mod hurts fps. I lose around 10-15 fps and game looks more badly than it is with FSR3</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 165810,
+   "parent_id": 165791,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2026-07-09T16:29:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>FSR4 can\u2019t be implemented without the way I\u2019m doing it here. I say in more than one place that this can hurt performance. Whether it looks worse or better than FSR3 is subjective. FSR4 is better at cleaning up certain artifacts. FSR3 is better at keeping a sharper image when standing still but it also suffers from noisy artifacts even when standing still.</p>\n<p>Also, you\u2019re not technically losing 10-15 fps. It\u2019s not a level graph sort of thing. You\u2019re increasing frame time which means it takes a bit longer to render a frame. If you run at a more CPU intensive area with a lot of bots and enable/disable FSR4 you likely won\u2019t see a change in fps.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 165824,
+   "parent_id": 165791,
+   "author": "HandGrade",
+   "author_id": 42831,
+   "author_url": "https://forge.sp-tarkov.com/user/42831/handgrade",
+   "created_at": "2026-07-09T18:20:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Nope, losing FPS sometimes tremendously on big maps. Will wait until further updates, thx for the mod.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 165831,
+   "parent_id": 165791,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2026-07-09T20:40:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It won\u2019t be updated anymore, it\u2019s as good as it\u2019s going to get. I tried doing as much as I could to get it running as good as it could. When I flick it on and off in an actual raid I see no performance difference in the middle of a map. If you want you can run optiscaler instead, see if you get better performance.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 165842,
+   "parent_id": 165791,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2026-07-10T00:22:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I might have actually just noticed a pretty big issue that was causing a lot more overhead. I\u2019m pretty much barely losing any FPS anymore on my PC even when I\u2019m not looking towards the middle of a big map. I\u2019ll get an update out tonight, just want to do more testing and make sure I didn\u2019t cause any big issues as a side effect.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 165850,
+   "parent_id": null,
+   "author": "turfish",
+   "author_id": 63286,
+   "author_url": "https://forge.sp-tarkov.com/user/63286/turfish",
+   "created_at": "2026-07-10T01:55:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2026-07-10 03:56:28]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 165859,
+   "parent_id": 165716,
+   "author": "Sentinowl",
+   "author_id": 27275,
+   "author_url": "https://forge.sp-tarkov.com/user/27275/sentinowl",
+   "created_at": "2026-07-10T06:16:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I have a 7800X3D and a 7900XTX and don\u2019t get close to those frames. Please post your settings.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 165865,
+   "parent_id": 165791,
+   "author": "HandGrade",
+   "author_id": 42831,
+   "author_url": "https://forge.sp-tarkov.com/user/42831/handgrade",
+   "created_at": "2026-07-10T09:04:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Nice</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 165935,
+   "parent_id": 165791,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2026-07-11T02:35:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Give the latest build a try and let me know if it\u2019s better. I think I fixed a pretty big mistake in my code.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 165936,
+   "parent_id": 165786,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2026-07-11T02:35:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you! Latest build should be smoother</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 165937,
+   "parent_id": 165716,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2026-07-11T02:36:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Give the latest build a try, I think I fixed a pretty big issue with it.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 165951,
+   "parent_id": null,
+   "author": "Drews1337",
+   "author_id": 6812,
+   "author_url": "https://forge.sp-tarkov.com/user/6812/drews1337",
+   "created_at": "2026-07-11T06:51:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>what a great job man, from 50-70 to 70-110 at customs on 9070(non xt)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 165984,
+   "parent_id": 165791,
+   "author": "HandGrade",
+   "author_id": 42831,
+   "author_url": "https://forge.sp-tarkov.com/user/42831/handgrade",
+   "created_at": "2026-07-11T14:30:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I have tried. It is amazing now. Game looks better, no FPS losage. I only lose FPS if I use upscaler (i lose around 5-6 fps which is critical for me, cuz I don\u2019t have strong PC). Nice job</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 166018,
+   "parent_id": null,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2026-07-11T20:54:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p><strong>NOTE: I\u2019ve noticed a bug when using scopes where your outer FOV starts jittering heavily. Going to look into this and will update once I have a solution</strong></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 166168,
+   "parent_id": null,
+   "author": "turfish",
+   "author_id": 63286,
+   "author_url": "https://forge.sp-tarkov.com/user/63286/turfish",
+   "created_at": "2026-07-13T12:01:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I dunno what happened with 1.0.2, but everything becomes super blurry for me now when I use this mod, for now i\u2019ve just gone back to using normal FSR3, i\u2019ll give the old version of the mod a shot aswell, see if it also happens.</p>\n<p>Im on Linux so it could very well be an oddity with the AMD Mesa drivers</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 166316,
+   "parent_id": 166168,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2026-07-14T19:13:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Haven\u2019t had any issues with it and I\u2019ve talked to other people where it seems to be fine. Unfortunately, I don\u2019t run linux so I can\u2019t do much to test myself.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 167161,
+   "parent_id": 166168,
+   "author": "starkeysuper64",
+   "author_id": 118429,
+   "author_url": "https://forge.sp-tarkov.com/user/118429/starkeysuper64",
+   "created_at": "2026-07-20T18:50:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I experienced the same issue also using this on Linux (Fedora) both with and without the use of Lossless Scaling frame generation. Increasing the FSR quality only mildly mitigated the issue.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 167183,
+   "parent_id": 166168,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2026-07-20T21:00:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Unfortunately, I won\u2019t be providing much support for linux due to the fact that I don\u2019t run it and it\u2019s also not officially supported by the SPT team either.</p>\n<p>I\u2019ll take a quick look and see if there\u2019s anything that stands out but it\u2019s unlikely I\u2019ll be able to do much here. There is another update coming soon to fix the issue with scopes that I have pinned.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168131,
+   "parent_id": null,
+   "author": "GruPRime",
+   "author_id": 117323,
+   "author_url": "https://forge.sp-tarkov.com/user/117323/gruprime",
+   "created_at": "2026-07-26T10:12:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Excuse me, thank you very much for making this mod in the first place!</p>\n<p>I\u2019m trying to decide between native, OptiScaler, your bridge, or Adrenalin ML. For some reason (and I swear I know how to mod games!), OptiScaler actually performs worse for me than just enabling Frame Generation\u2014it introduces more lag and lower FPS.</p>\n<p>That said, your bridge lets me select FSR4 straight in-game, which is amazing! I was wondering: what about upgrading FSR 3.0 to 3.1 first, and then using Adrenalin ML to get FSR4 (like I did with Space Marine 2)?</p>\n<p>This is more of a question for my own knowledge than a bug report. I\u2019m testing out your mod right now. Thank you again, matsix!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168299,
+   "parent_id": 168131,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2026-07-26T23:17:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You can switch to FSR 3.1 in the config menu, idk if it\u2019ll let you do what you\u2019re trying though</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

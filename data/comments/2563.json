@@ -1,0 +1,240 @@
+{
+ "mod_id": 2563,
+ "slug": "loadbundlefaster-crc32-patch",
+ "fetched_at": "2026-08-08T22:01:10Z",
+ "reported_total": 17,
+ "pages": 2,
+ "count": 23,
+ "comments": [
+  {
+   "id": 151075,
+   "parent_id": null,
+   "author": "pfaffo",
+   "author_id": 84683,
+   "author_url": "https://forge.sp-tarkov.com/user/84683/pfaffo",
+   "created_at": "2026-01-26T07:22:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>this is incredible. for anyone with a remote server (i\u2019m looking at you, fika enjoyers) using content backport or any mods that add a significant number of new weapons or other items, this mod is essential.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 3
+  },
+  {
+   "id": 151076,
+   "parent_id": null,
+   "author": "RetroLogic",
+   "author_id": 4853,
+   "author_url": "https://forge.sp-tarkov.com/user/4853/retrologic",
+   "created_at": "2026-01-26T07:27:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2026-01-26 07:53:22]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151077,
+   "parent_id": null,
+   "author": "LTDZ",
+   "author_id": 52842,
+   "author_url": "https://forge.sp-tarkov.com/user/52842/ltdz",
+   "created_at": "2026-01-26T07:36:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Genius! This really helps, thank you!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 151079,
+   "parent_id": 151075,
+   "author": "RetroLogic",
+   "author_id": 4853,
+   "author_url": "https://forge.sp-tarkov.com/user/4853/retrologic",
+   "created_at": "2026-01-26T07:53:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Should this be installed on both PC\u2019s \u2019? or just the Headless or player alone.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151081,
+   "parent_id": 151075,
+   "author": "pfaffo",
+   "author_id": 84683,
+   "author_url": "https://forge.sp-tarkov.com/user/84683/pfaffo",
+   "created_at": "2026-01-26T08:05:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>any clients that are not running on same system as the SPT backend service listening on port 6969</p>\n<p>officially supported headless deployment is to have it on same system as the SPT backend, so you would not install this plugin there.</p>\n<p>however, if your headless is on a different host, you can install this plugin on it and it should benefit with faster startup times.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151082,
+   "parent_id": 151075,
+   "author": "RetroLogic",
+   "author_id": 4853,
+   "author_url": "https://forge.sp-tarkov.com/user/4853/retrologic",
+   "created_at": "2026-01-26T08:18:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m on a 2 pc setup and only play by myself just use headless for performance, so I just install on Headless then? sorry this is confusing, haha. easiest way to ex[plain it to my brain is put it on the headless or player. Sorry I have an acquired brain injury and learn in a different way.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151083,
+   "parent_id": 151075,
+   "author": "s8ga",
+   "author_id": 75956,
+   "author_url": "https://forge.sp-tarkov.com/user/75956/s8ga",
+   "created_at": "2026-01-26T08:38:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>In your case, you should install this on your <strong>Headless client</strong>.</p>\n<p>This mod is primarily designed for situations where a client is connecting to an SPT Server that is <em>not</em> on the same machine.</p>\n<p>If I understand your setup correctly:</p>\n<ul>\n<li><strong>PC A:</strong> Runs the SPT Server + your main Game Client.</li>\n<li><strong>PC B:</strong> Runs the Headless client (which connects to PC A).\nIn this scenario, you definitely want to install the plugin on the <strong>Headless client</strong> on PC B.</li>\n</ul>\n<p><strong>To give you some context, here is my setup:</strong></p>\n<ul>\n<li><strong>PC C:</strong> Runs the SPT Server + Headless.</li>\n<li><strong>PC D:</strong> My main Game Client.\nBecause my Headless uses a Tailscale IP (which makes the plugin think it is on a different host), I install the mod on <strong>both</strong> my main Game Client and my Headless.</li>\n</ul>\n<p><strong>The \u201ceasy\u201d way to do it:</strong>\nIf you don\u2019t want to worry about the technical details, just <strong>install it on both machines (Headless + SPT client)</strong>. This plugin is very safe, doesn\u2019t conflict with other mods, and has great compatibility. It will automatically provide a speed boost whenever it\u2019s possible, and it won\u2019t cause any harm if it\u2019s not needed.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 151084,
+   "parent_id": 151075,
+   "author": "RetroLogic",
+   "author_id": 4853,
+   "author_url": "https://forge.sp-tarkov.com/user/4853/retrologic",
+   "created_at": "2026-01-26T08:42:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks you both for help and patience, appreciate your kindness.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 151085,
+   "parent_id": null,
+   "author": "avehulian",
+   "author_id": 88200,
+   "author_url": "https://forge.sp-tarkov.com/user/88200/avehulian",
+   "created_at": "2026-01-26T08:47:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151097,
+   "parent_id": null,
+   "author": "vietc0ng.",
+   "author_id": 91909,
+   "author_url": "https://forge.sp-tarkov.com/user/91909/vietc0ng",
+   "created_at": "2026-01-26T13:09:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i love uuu</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151103,
+   "parent_id": null,
+   "author": "thelpb",
+   "author_id": 21111,
+   "author_url": "https://forge.sp-tarkov.com/user/21111/thelpb",
+   "created_at": "2026-01-26T15:56:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>11/10 great idea. Appreciate your work!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151154,
+   "parent_id": null,
+   "author": "ALADEEN2004",
+   "author_id": 77226,
+   "author_url": "https://forge.sp-tarkov.com/user/77226/aladeen2004",
+   "created_at": "2026-01-26T23:59:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>does this works without fika?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151155,
+   "parent_id": null,
+   "author": "_roninjack",
+   "author_id": 86903,
+   "author_url": "https://forge.sp-tarkov.com/user/86903/roninjack",
+   "created_at": "2026-01-27T00:02:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>With literally over 9000 bundles to load, this mod is a godsend. You have my thanks!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151242,
+   "parent_id": null,
+   "author": "miLemon",
+   "author_id": 2360,
+   "author_url": "https://forge.sp-tarkov.com/user/2360/milemon",
+   "created_at": "2026-01-27T21:13:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>God Bless you</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151246,
+   "parent_id": null,
+   "author": "armareD",
+   "author_id": 100718,
+   "author_url": "https://forge.sp-tarkov.com/user/100718/armared",
+   "created_at": "2026-01-27T22:09:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you very much!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 152332,
+   "parent_id": null,
+   "author": "theycallmesalute",
+   "author_id": 48829,
+   "author_url": "https://forge.sp-tarkov.com/user/48829/theycallmesalute",
+   "created_at": "2026-02-08T18:23:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This is really impressive, huge thanks, especially for explanation!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 152478,
+   "parent_id": null,
+   "author": "Shirasagi",
+   "author_id": 91189,
+   "author_url": "https://forge.sp-tarkov.com/user/91189/shirasagi",
+   "created_at": "2026-02-10T02:52:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You are the true savior.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 152837,
+   "parent_id": null,
+   "author": "MiatWarp",
+   "author_id": 84850,
+   "author_url": "https://forge.sp-tarkov.com/user/84850/miatwarp",
+   "created_at": "2026-02-13T14:02:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Very nice idea! Amazing result! And thank you, I found more efficient way for my SPT3, in ShouldAcquire method I simply disabled crc32 check. We have bundle: load, We don\u2019t have bundle: download. So:</p>\n<pre><code>if (RequestHandler.IsLocal)\n    return false;\nif (VFS.Exists(GetBundleFilePath(bundle)))\n    return false;\nelse\n    return true;\n</code></pre>\n<p>Thank you SO MUCH for the idea! I started thinking about crc32 issue and now my friends have 5-15 seconds load time instead of 40-160+ seconds</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 158993,
+   "parent_id": null,
+   "author": "EatMyCup",
+   "author_id": 33918,
+   "author_url": "https://forge.sp-tarkov.com/user/33918/eatmycup",
+   "created_at": "2026-05-05T03:52:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>not sure what im doing wrong here, my friend is using this mod, and it made no difference, i am the one hosting the server if anyone asks</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 160257,
+   "parent_id": null,
+   "author": "CombCrab",
+   "author_id": 50575,
+   "author_url": "https://forge.sp-tarkov.com/user/50575/combcrab",
+   "created_at": "2026-05-19T03:44:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is it possible to install this on SPT 3.11.4? If not, would it be difficult to create a version for 3.11.4?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 160437,
+   "parent_id": null,
+   "author": "PapaCrawl",
+   "author_id": 112013,
+   "author_url": "https://forge.sp-tarkov.com/user/112013/papacrawl",
+   "created_at": "2026-05-21T11:51:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>My friend installed the plugins as client,connecting my headless server.He got every bundle in the mods move to the user/cache and got into the game several times without the plugin.Without the plugin,he has to wait for bundle(9000+) loading for a long time,around 10 minutes,it\u2019s normal,but with this plugin,he would stuck at loading screen with the game no response for about 10 minutes, but my game just skipped the bundle loading period,why?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 160438,
+   "parent_id": 160437,
+   "author": "PapaCrawl",
+   "author_id": 112013,
+   "author_url": "https://forge.sp-tarkov.com/user/112013/papacrawl",
+   "created_at": "2026-05-21T11:53:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The game stuck when the log reads:\n[Info   :s8_SPTLoadBundleEvenFaster] Init_Prefix: Starting parallel bundle validation\u2026\n[Info   :s8_SPTLoadBundleEvenFaster] ValidateBundlesStreamingAsync: Starting parallel bundle validation for 3109 bundles using Native PCLMULQDQ\n[Info   :s8_SPTLoadBundleEvenFaster] ValidateBundlesStreamingAsync: Max concurrent CRC tasks set to 12 based on CPU thread count.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 166440,
+   "parent_id": null,
+   "author": "sethicis",
+   "author_id": 114406,
+   "author_url": "https://forge.sp-tarkov.com/user/114406/sethicis",
+   "created_at": "2026-07-15T19:52:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I really wanted to enjoy the glory of this mod, but I don\u2019t think it works on Linux hosts running Proton.  I\u2019m getting an infinite load when I try to launch with this mod installed.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

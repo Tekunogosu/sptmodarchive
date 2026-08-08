@@ -1,0 +1,230 @@
+{
+ "mod_id": 2732,
+ "slug": "quest-filter-mod",
+ "fetched_at": "2026-08-08T22:39:48Z",
+ "reported_total": null,
+ "pages": 1,
+ "count": 22,
+ "comments": [
+  {
+   "id": 163630,
+   "parent_id": null,
+   "author": "Wrath_Jr",
+   "author_id": 71782,
+   "author_url": "https://forge.sp-tarkov.com/user/71782/wrath-jr",
+   "created_at": "2026-06-21T14:19:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Im interested in using your mod but I have a question</p>\n<p>Is it possible to use the quest generation functionality but without using the quest shuffle functionality ?\nLike all the vanilla quest remain the same, but the mod keeps adding more ?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 163638,
+   "parent_id": 163630,
+   "author": "cccpvs",
+   "author_id": 87648,
+   "author_url": "https://forge.sp-tarkov.com/user/87648/cccpvs",
+   "created_at": "2026-06-21T15:25:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi, yes you can try that. Here is an example config for <strong>Config.json</strong></p>\n<hr />\n<pre><code>\"TargetTraderIds\": [],\n\"QuestTypes\": [],\n\"RemoveStandartQuests\": false,\n\"RemoveStartConditionsQuest\": false,\n\"RemoveFinishConditionTypes\": [],\n\"GenerateRandomQuests\": {\n    \"enable\": true,\n    \"count\": 30\n},\n\"RandomQuests\": {\n    \"count\": 0,\n}\n</code></pre>\n<hr />\n<p>Do not use the number of quests on locations in RandomQuests.\nRandom quests will be created in addition to the standard ones.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 163641,
+   "parent_id": 163630,
+   "author": "Wrath_Jr",
+   "author_id": 71782,
+   "author_url": "https://forge.sp-tarkov.com/user/71782/wrath-jr",
+   "created_at": "2026-06-21T16:19:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Neat ! Can be added mid-run or needs a profile wipe?\nThanks bro</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 163642,
+   "parent_id": 163630,
+   "author": "cccpvs",
+   "author_id": 87648,
+   "author_url": "https://forge.sp-tarkov.com/user/87648/cccpvs",
+   "created_at": "2026-06-21T16:27:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You don\u2019t have to use a blank profile.</p>\n<p>But there is a possibility that <strong>something</strong> will go wrong.</p>\n<p><strong>Report</strong> any suspicions at this time.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 163643,
+   "parent_id": 163630,
+   "author": "Wrath_Jr",
+   "author_id": 71782,
+   "author_url": "https://forge.sp-tarkov.com/user/71782/wrath-jr",
+   "created_at": "2026-06-21T16:29:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Alrigth, thanks champ, I\u2019ll keep you posted</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 163673,
+   "parent_id": null,
+   "author": "RavenAtDawn",
+   "author_id": 83029,
+   "author_url": "https://forge.sp-tarkov.com/user/83029/ravenatdawn",
+   "created_at": "2026-06-21T21:58:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello,</p>\n<p>I was wondering if it is possible to randomize base quests requirements without altering the quests original rewards and progression?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 163770,
+   "parent_id": 163673,
+   "author": "cccpvs",
+   "author_id": 87648,
+   "author_url": "https://forge.sp-tarkov.com/user/87648/cccpvs",
+   "created_at": "2026-06-22T15:29:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello.\nInteresting idea. It might be possible to make something out of this.</p>\n<p>But you need to outline what it will look like.</p>\n<hr />\n<p>Standard quest -but the conditions are the same? or new others? Or enlarged standard ones?</p>\n<hr />\n<p>Let me know if you have an idea or a sketch.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 163925,
+   "parent_id": 163673,
+   "author": "RavenAtDawn",
+   "author_id": 83029,
+   "author_url": "https://forge.sp-tarkov.com/user/83029/ravenatdawn",
+   "created_at": "2026-06-23T18:23:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello again,</p>\n<p>The idea is not original a mod like this did exist for SPT 3.11+ basically the sketch was something like this:</p>\n<p>Polikhim Hobo (Base Prapor Quest)\nRequired for Collector\nNot Required For Lightkeeper</p>\n<p>Original Requirement: Eliminate Scavs On Customs (0/25)</p>\n<p>Rewards:\n+5900 XP\n0.02+ Rep For Prapor\n58850 Roubles\n3 F1 &amp; RGD-5 Hand Grenades\n1 Zarya Stun Grenade\n0.01+ Rep For Jaeger\nLeads to : Regulated Materials</p>\n<p>Mod Requirement: Find Five USB sticks on Customs (0/5)\nRequired for Collector\nNot Required For Lightkeeper</p>\n<p>Rewards:\n+5900 XP\n0.02+ Rep For Prapor\n58850 Roubles\n3 F1 &amp; RGD-5 Hand Grenades\n1 Zarya Stun Grenade\n0.01+ Rep For Jaeger\nLeads to : Regulated Materials</p>\n<p>So it would ONLY change the tasks objective and keep what the quest lead to and kept the original rewards. This way modded tasks did not intervene with Task path\u2019s such as Collector or unlockable content like MDR 7.62 for example.</p>\n<p>I think this mod can achieve this since it does seem to change original tasks to an extend and create new ones  almost instantly.</p>\n<p>Edit:</p>\n<p>\u201cOr enlarged standard ones?\u201d could be a nice option too. For example Polkhim Hobo could require you to use a shotgun instead of any weapon.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 163996,
+   "parent_id": 163673,
+   "author": "cccpvs",
+   "author_id": 87648,
+   "author_url": "https://forge.sp-tarkov.com/user/87648/cccpvs",
+   "created_at": "2026-06-24T16:18:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello. I roughly understood you.</p>\n<hr />\n<ol>\n<li>Add to the standard tasks, secondary tasks - find, reach, lay.</li>\n<li>Changing standard tasks or increasing values \u200b\u200bmay require the necessary implementation.</li>\n<li>Now you can weed out tedious tasks in standard quests, for example -kill,\nbut this is also in a limited form.</li>\n</ol>\n<hr />\n<p>In theory, at the first stage it is to add new tasks to the quest, and then change the logic.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 164143,
+   "parent_id": 163673,
+   "author": "RavenAtDawn",
+   "author_id": 83029,
+   "author_url": "https://forge.sp-tarkov.com/user/83029/ravenatdawn",
+   "created_at": "2026-06-25T20:42:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello, i see.</p>\n<p>In short this mod already has lines of code that creates random tasks,</p>\n<p>So to create random requirements for already existing tasks the mod could target the tasks ID\u2019s and start giving them random requirements.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 164224,
+   "parent_id": 163673,
+   "author": "cccpvs",
+   "author_id": 87648,
+   "author_url": "https://forge.sp-tarkov.com/user/87648/cccpvs",
+   "created_at": "2026-06-26T13:33:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I will soon try to implement something in this regard.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 164265,
+   "parent_id": 163673,
+   "author": "RavenAtDawn",
+   "author_id": 83029,
+   "author_url": "https://forge.sp-tarkov.com/user/83029/ravenatdawn",
+   "created_at": "2026-06-26T21:01:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Can\u2019t wait!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 164304,
+   "parent_id": null,
+   "author": "selyue",
+   "author_id": 59241,
+   "author_url": "https://forge.sp-tarkov.com/user/59241/selyue",
+   "created_at": "2026-06-27T01:45:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>102 link download is still 101</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 164376,
+   "parent_id": 164304,
+   "author": "cccpvs",
+   "author_id": 87648,
+   "author_url": "https://forge.sp-tarkov.com/user/87648/cccpvs",
+   "created_at": "2026-06-27T08:41:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for the note. Fixed now <strong>1.0.2</strong></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 165008,
+   "parent_id": null,
+   "author": "nightblindsniper",
+   "author_id": 24808,
+   "author_url": "https://forge.sp-tarkov.com/user/24808/nightblindsniper",
+   "created_at": "2026-07-02T16:35:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is there any way in the mod config to keep the random tasks you were working on between sessions?</p>\n<p>Or are they doomed to just get randomized every time you launch the server?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 165019,
+   "parent_id": 165008,
+   "author": "cccpvs",
+   "author_id": 87648,
+   "author_url": "https://forge.sp-tarkov.com/user/87648/cccpvs",
+   "created_at": "2026-07-02T18:30:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello. Unfortunately, for now, each created quest randomly only works for one SPT run.\nIt will not be possible to save - in memory at startup.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 167483,
+   "parent_id": null,
+   "author": "nagazaki_x",
+   "author_id": 88566,
+   "author_url": "https://forge.sp-tarkov.com/user/88566/nagazaki-x",
+   "created_at": "2026-07-22T05:36:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The mod it\u2019s cool, I like to see a way to change the original quests requerimentos like kill KILLA 10 times to a random objective and receive the same rewards as the original quest, like change all the original quests to random objectives but keep the game progression intact. Thanks</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 167527,
+   "parent_id": 167483,
+   "author": "cccpvs",
+   "author_id": 87648,
+   "author_url": "https://forge.sp-tarkov.com/user/87648/cccpvs",
+   "created_at": "2026-07-22T16:13:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you.</p>\n<p>Regarding the change, there is already a small development of the mod.</p>\n<p>You can use the <strong>\u201cModifyBaseQuest\u201d</strong> option and remove the standard quest conditions in <strong>\u201cRemoveFinishConditionTypes\u201d</strong></p>\n<p>But the work on single-player basic quests is very messy.</p>\n<p>Here it is very obvious that you need to change the conditions of the basic quests, selectively, which makes a lot of settings and filters.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 168947,
+   "parent_id": null,
+   "author": "GSCGabeast",
+   "author_id": 118358,
+   "author_url": "https://forge.sp-tarkov.com/user/118358/gscgabeast",
+   "created_at": "2026-07-30T15:38:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>how do you remove the original standard quest conditions and replace it with randomized quest objectives from your mod?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168970,
+   "parent_id": 168947,
+   "author": "cccpvs",
+   "author_id": 87648,
+   "author_url": "https://forge.sp-tarkov.com/user/87648/cccpvs",
+   "created_at": "2026-07-30T19:39:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>In the \u201cConfig.json\u201d file, use the following:</p>\n<ol>\n<li>\n<p>\u201cModifyBaseQuest\u201d = true</p>\n</li>\n<li>\n<p>\u201cRemoveFinishConditionTypes\u201d = [\u201cFindItem\u201d,\u201cGlobalVariableValue\u201d,\u201cHandoverItem\u201d,\u201cHideoutArea\u201d,\u201cLeaveItemAtLocation\u201d,\u201cPlaceBeacon\u201d,\u201cQuest\u201d,\u201cSellItemToTrader\u201d,\u201cSkill\u201d,\u201cTraderLoyalty\u201d,\u201cTraderStanding\u201d,\u201cVisitPlace\u201d,\u201cWeaponAssembly\u201d,\u201cCompletion\u201d,\u201cDiscover\u201d,\u201cElimination\u201d,\u201cExperience\u201d,\u201cExploration\u201d]</p>\n</li>\n</ol>\n<p>This mod removes all base quest conditions and adds new random tasks to the standard quest.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169242,
+   "parent_id": 168947,
+   "author": "GSCGabeast",
+   "author_id": 118358,
+   "author_url": "https://forge.sp-tarkov.com/user/118358/gscgabeast",
+   "created_at": "2026-08-01T02:10:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks so much on this! i am able to generate random quests. Altho after accepting the quest and restarting the game, the quests defaults back to the original quest condition. Is this a current limitation of the mod?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169364,
+   "parent_id": 168947,
+   "author": "cccpvs",
+   "author_id": 87648,
+   "author_url": "https://forge.sp-tarkov.com/user/87648/cccpvs",
+   "created_at": "2026-08-01T11:45:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey, you\u2019re right, after restarting SPT, buildings will be random.</p>\n<p>The mod doesn\u2019t save the conditions for basic quests after restarting.</p>\n<p>Every new launch brings new tasks.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

@@ -1,0 +1,410 @@
+{
+ "mod_id": 2851,
+ "slug": "spt-mod-manager",
+ "fetched_at": "2026-08-08T22:11:49Z",
+ "reported_total": 16,
+ "pages": 2,
+ "count": 40,
+ "comments": [
+  {
+   "id": 168453,
+   "parent_id": null,
+   "author": "Devraccoon Senior Moderator",
+   "author_id": 20914,
+   "author_url": "https://forge.sp-tarkov.com/user/20914/devraccoon",
+   "created_at": "2026-07-27T20:10:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>just a curious question\u2026 SPT handles load order itself automatically on runtime, meaning your feature of reordering mods\u2019 load order is completely redundant. was this a deliberate choice that you know doesn\u2019t work, or was this intended for pre-4.0?</p>\n<p>aside from the fact that reordering mods in the tool does not reflect the changes made in the UI itself, it feels like the whole feature of reordering mods is unnecessary as SPT no longer allows you to manually edit the load order of mods.</p>\n<p>edit: for anyone reading, this tool renames physical folders in your mods folder to digit prefixes, which may lead to your mods breaking on runtime. I wouldn\u2019t recommend using the reordering feature in this tool.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 168468,
+   "parent_id": null,
+   "author": "IZZY_1979",
+   "author_id": 79627,
+   "author_url": "https://forge.sp-tarkov.com/user/79627/izzy-1979",
+   "created_at": "2026-07-27T21:04:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2026-07-27 21:27:35]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168469,
+   "parent_id": 168453,
+   "author": "IZZY_1979",
+   "author_id": 79627,
+   "author_url": "https://forge.sp-tarkov.com/user/79627/izzy-1979",
+   "created_at": "2026-07-27T21:05:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2026-07-27 21:28:52]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168472,
+   "parent_id": 168453,
+   "author": "TioEmir",
+   "author_id": 117466,
+   "author_url": "https://forge.sp-tarkov.com/user/117466/tioemir",
+   "created_at": "2026-07-27T21:10:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I was using the documentation from the previous SPT version (3.11) while developing this, so some things ended up being outdated without me realizing it. I\u2019ll remove the load order feature and review the folder renaming part as well in the next update. Thanks for pointing this out, I\u2019ll make sure to fix these issues</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 168473,
+   "parent_id": 168453,
+   "author": "Devraccoon Senior Moderator",
+   "author_id": 20914,
+   "author_url": "https://forge.sp-tarkov.com/user/20914/devraccoon",
+   "created_at": "2026-07-27T21:12:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I tried it to see what it\u2019s about. disabling and enabling seems to function as intended. don\u2019t know if I want to try any of the other features since I know how vulnerable SPT is to automated managers.</p>\n<p>there\u2019s a reason why I wrote a mod installer that doesn\u2019t connect to the Internet</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 168474,
+   "parent_id": 168453,
+   "author": "TioEmir",
+   "author_id": 117466,
+   "author_url": "https://forge.sp-tarkov.com/user/117466/tioemir",
+   "created_at": "2026-07-27T21:17:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I actually saw your mod installer and I think the approach is pretty interesting and i understand why you chose to keep it offline, especially with how sensitive SPT installations can be</p>\n<p>I\u2019m trying to find a balance with the manager I\u2019m making: adding useful features while making sure it doesn\u2019t mess with users\u2019 installs. Feedback like this helps me rethink some parts of it, so thanks for taking the time to test it!!!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 168542,
+   "parent_id": null,
+   "author": "XVPhoenixVII",
+   "author_id": 41261,
+   "author_url": "https://forge.sp-tarkov.com/user/41261/xvphoenixvii",
+   "created_at": "2026-07-28T08:28:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>For whatever reason, it doesn\u2019t seem to want to select my SPT. It just has \u2018Select the SPT version\u2026\u2019 in the drop down for whatever reason</p>\n<p>Edit: for those who also encountered that issue, you have to close the application then reopen it to select your version</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 168591,
+   "parent_id": 168542,
+   "author": "TioEmir",
+   "author_id": 117466,
+   "author_url": "https://forge.sp-tarkov.com/user/117466/tioemir",
+   "created_at": "2026-07-28T14:37:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for reporting it!! I\u2019m already working on a few more fixes, and I\u2019ll include this one as well</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168724,
+   "parent_id": null,
+   "author": "Qingong",
+   "author_id": 119028,
+   "author_url": "https://forge.sp-tarkov.com/user/119028/qingong",
+   "created_at": "2026-07-29T06:25:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Before downloading this mod, I\u2019d like to know if it\u2019s compatible with SPT version 4.0.13?Thanks\uff01</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 168751,
+   "parent_id": 168724,
+   "author": "TioEmir",
+   "author_id": 117466,
+   "author_url": "https://forge.sp-tarkov.com/user/117466/tioemir",
+   "created_at": "2026-07-29T11:27:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It is fully compatible with and tested on SPT 4.0.13!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168752,
+   "parent_id": 168724,
+   "author": "Qingong",
+   "author_id": 119028,
+   "author_url": "https://forge.sp-tarkov.com/user/119028/qingong",
+   "created_at": "2026-07-29T11:28:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks! Because of you, me and my friends can share mod lists now!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 168756,
+   "parent_id": null,
+   "author": "VoidEco",
+   "author_id": 117806,
+   "author_url": "https://forge.sp-tarkov.com/user/117806/voideco",
+   "created_at": "2026-07-29T11:47:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks a lot \u2013 your work has made it so much easier for me to troubleshoot mod conflicts and weird errors. Really, thank you.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 168974,
+   "parent_id": null,
+   "author": ".joshmakestuff",
+   "author_id": 93150,
+   "author_url": "https://forge.sp-tarkov.com/user/93150/joshmakestuff",
+   "created_at": "2026-07-30T20:12:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>mod list export import, runs good, goated bro</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 169006,
+   "parent_id": null,
+   "author": "Niko Housley",
+   "author_id": 102543,
+   "author_url": "https://forge.sp-tarkov.com/user/102543/niko-housley",
+   "created_at": "2026-07-30T23:41:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I know it says it doesn\u2019t touch any core SPT files, but using the Mod Manager I have encountered the spt-core.dll error when trying to boot the game. Any thoughts on what might be causing this issue and how to fix?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 169010,
+   "parent_id": 169006,
+   "author": "TioEmir",
+   "author_id": 117466,
+   "author_url": "https://forge.sp-tarkov.com/user/117466/tioemir",
+   "created_at": "2026-07-31T00:16:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I took another look at my code, and I realized that, at the time, I was thinking, \u201cThis prevents the files from being deleted, but it doesn\u2019t protect against a mod overwriting those files during installation.\u201d I decided not to deal with that at the time to avoid mixing in more changes</p>\n<p>I\u2019ve now fixed what could have been causing this issue, and I\u2019ll be releasing an update soon. Could you also tell me which mods you\u2019re using?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 169012,
+   "parent_id": 169006,
+   "author": "Niko Housley",
+   "author_id": 102543,
+   "author_url": "https://forge.sp-tarkov.com/user/102543/niko-housley",
+   "created_at": "2026-07-31T00:48:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It would have to be one of the 42 client side mods (apologies for so many, that also might be the issue but I\u2019ve seen YTbers with 100+ mods run the game):</p>\n<ul>\n<li>Accessibility Indicators</li>\n<li>Arm Bands for All</li>\n<li>All Quests Checkmarks (this gets an error message in SPT Server .exe when I run that, but its in yellow not red)</li>\n<li>Amands Graphics/Sense</li>\n<li>Barter Items Stacks</li>\n<li>Boss Notifier</li>\n<li>Show me the money/quick sell</li>\n<li>Big Brain</li>\n<li>Quest Tracker</li>\n<li>Task List Fixes</li>\n<li>Waypoints</li>\n<li>Dragon Den Hitmarker</li>\n<li>Dynamic Maps</li>\n<li>Healing Autocancel</li>\n<li>Hollywood FX/Graphics</li>\n<li>JBOBYH</li>\n<li>Trader Scrolling</li>\n<li>Game Panel HUD</li>\n<li>KmyTarkovApi</li>\n<li>Menu Overhaul</li>\n<li>Pause</li>\n<li>Plant Time Modifier</li>\n<li>Questing Bots</li>\n<li>RaiRai Color Converter Api/Hidden Caches</li>\n<li>Reach Extender</li>\n<li>SAIN</li>\n<li>Looting Bots</li>\n<li>Tarkin (huir.dll)</li>\n<li>Flare Event Notifier</li>\n<li>Skipper</li>\n<li>Hideout Progress</li>\n<li>UI Fixes</li>\n<li>Use Items Anywhere</li>\n<li>Wishlist Extended</li>\n<li>WTT Client Common Lib/Head/Voice Selector (shows 2 in my list?)/PacknStrap</li>\n</ul>\n<p>I\u2019ve identified some of the mods I can likely get rid of to lessen the load so to speak, but nothing appears to be incompatible. Just one of those seems to be overwriting the spt-core.dll file and makes the game impossible to run. I can also DM or send you the .json list if that is easier for you to test yourself. That would include all of the server mods too, but as far as I can tell its specifically a client issue inside of the BepInEx folder and the error message SPT Launcher gives me is related to spt-core.dll. Appreciate any and all help, I am really new to SPT and mods but had the game running yesterday just fine with less mods. Added more this morning by drag/dropping from 7zip and ran into the overwrite, then still encountering the issue using your handy mod manager tool.</p>\n<p>Let me know if you want me to download the new version you posted a bit ago and try again OR if you want me to wait for you to respond with any other things I should do first before installing. I have a fresh SPT folder installed without any mods and the game loads fine. Waiting to do more. Again I really appreciate any and all help brother!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 169028,
+   "parent_id": null,
+   "author": ".joshmakestuff",
+   "author_id": 93150,
+   "author_url": "https://forge.sp-tarkov.com/user/93150/joshmakestuff",
+   "created_at": "2026-07-31T03:16:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>mod list import broken with new release. just imports and reports the mod diff and doesnt autodownload anything.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 169029,
+   "parent_id": 169028,
+   "author": "TioEmir",
+   "author_id": 117466,
+   "author_url": "https://forge.sp-tarkov.com/user/117466/tioemir",
+   "created_at": "2026-07-31T03:24:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I was working on improvements to the Mod Manager\u2019s mod import and export system. I tested it before the release, and it was working correctly, so I may have accidentally changed something afterward\u2026\u2026 Don\u2019t worry, I\u2019ll get this fixed ASAP!!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169091,
+   "parent_id": 169006,
+   "author": "TioEmir",
+   "author_id": 117466,
+   "author_url": "https://forge.sp-tarkov.com/user/117466/tioemir",
+   "created_at": "2026-07-31T15:21:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>the overwrite happened when you extracted the archives\nby hand with 7zip, before the Manager was involved. One of those mods ships its\nown copy of spt-core.dll, and extracting it over your install replaces the core\nwith an older version, the game then refuses to start. The Manager couldn\u2019t fix\nthat, because by then the core was already replaced. But good news, the 0.4.2 (posted a bit ago) refuses to write over SPT\u2019s core files during install, and tells you when a package contained them. So please do this:</p>\n<ol>\n<li>Keep your fresh SPT install</li>\n<li>Install 0.4.2</li>\n<li>Install your mods through the manager</li>\n</ol>\n<p>If a mod ships core files you\u2019ll see a message saying they were skipped, that tells us exactly which mod is the culprit, and the game should still start. If you hit it again after that, send me the message and I\u2019ll dig in. 42 client mods is nothing unusual, and this isn\u2019t a \u201ctoo many mods\u201d problem.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169114,
+   "parent_id": 169028,
+   "author": ".joshmakestuff",
+   "author_id": 93150,
+   "author_url": "https://forge.sp-tarkov.com/user/93150/joshmakestuff",
+   "created_at": "2026-07-31T17:15:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>did u manage to get this fixed</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 169120,
+   "parent_id": 169028,
+   "author": "TioEmir",
+   "author_id": 117466,
+   "author_url": "https://forge.sp-tarkov.com/user/117466/tioemir",
+   "created_at": "2026-07-31T17:33:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Fixed in 0.4.3, which I just released. The lookup was requesting a trimmed set of fields from Forge that didn\u2019t include each version\u2019s download URL. As a result, the app could find your mods but had nothing to download, which is why it only reported the differences without downloading anything.</p>\n<p>One thing worth noting: exports created before 0.4.2 don\u2019t include each mod\u2019s unique identifier, so restoring them falls back to matching by folder name. That works for most mods, but not all. Any mods that Forge can\u2019t match that way ( or that aren\u2019t available on Forge at all ) will still need to be installed manually, and the app will tell you which ones. If you export your mod list again using 0.4.3, future restores will use the mod identifiers for exact matching instead of relying on folder names.</p>\n<p>Thanks for reporting this, and sorry for the inconvenience!!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 3
+  },
+  {
+   "id": 169361,
+   "parent_id": null,
+   "author": "ghtjdoal",
+   "author_id": 87600,
+   "author_url": "https://forge.sp-tarkov.com/user/87600/ghtjdoal",
+   "created_at": "2026-08-01T11:32:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>When I disable MODs, I feel like it\u2019s ignoring \\BepInEx\\patchers.\nI noticed this when I disabled wedge.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 169603,
+   "parent_id": 169361,
+   "author": "TioEmir",
+   "author_id": 117466,
+   "author_url": "https://forge.sp-tarkov.com/user/117466/tioemir",
+   "created_at": "2026-08-02T01:23:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Fixed for the next release: enabling, disabling and removing a mod now carry its\npatcher files along, and the message tells you when that happens.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169642,
+   "parent_id": null,
+   "author": "drippin jimmy",
+   "author_id": 46426,
+   "author_url": "https://forge.sp-tarkov.com/user/46426/drippin-jimmy",
+   "created_at": "2026-08-02T04:41:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>How do I enable the \u201cOnly compatible with (select the SPT version)\u201d  button in the search forge mods feature? I want to filter for version-specific mods but I\u2019m not able to</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169663,
+   "parent_id": 169642,
+   "author": "ghtjdoal",
+   "author_id": 87600,
+   "author_url": "https://forge.sp-tarkov.com/user/87600/ghtjdoal",
+   "created_at": "2026-08-02T07:26:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You should see a drop-down menu labeled \u201cSelect the SPT.\u201d\nSelect 4.0.13.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169822,
+   "parent_id": null,
+   "author": "Jay Russell",
+   "author_id": 119374,
+   "author_url": "https://forge.sp-tarkov.com/user/119374/jay-russell",
+   "created_at": "2026-08-02T21:22:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello!  I just used your mod manager to install quite a few mods and now I am stuck in an infinite loading loop at the title screen.  If I look at what the server is doing, it keeps alternating between \u201c[Client Request]  /launcher/server/version\u201d and \u201c[Client Request]  /launcher/profile/info\u201d.  Any ideas?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 169833,
+   "parent_id": null,
+   "author": "MrKat",
+   "author_id": 81395,
+   "author_url": "https://forge.sp-tarkov.com/user/81395/mrkat",
+   "created_at": "2026-08-02T21:43:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The Browse Forge Mods page needs some more search filters other than just categories like</p>\n<p>A Don\u2019t show already installed mods Toggle filter.\n\u2013 This will let you see all the stuff you don\u2019t have installed so you don\u2019t have to slog through them all.</p>\n<p>A sort by Most Recently Updated filter.\n\u2013 This will let you see mods that aren\u2019t technically new but have been updated to the version you are on if they previously weren\u2019t, really good for seeing mods you have been waiting on an update for.</p>\n<p>A sort by Most Recently Published filter.\n\u2013This will let you see all the brand new mods at the top of the list that aren\u2019t updates and are whole new mods so this would sort the browsing mods page by Publishing Date.</p>\n<p>Love what you have done and as for the moment these 3 filters are the only thing I can think of that would would improve the use of it and really make it amazing.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 169844,
+   "parent_id": 169833,
+   "author": "TioEmir",
+   "author_id": 117466,
+   "author_url": "https://forge.sp-tarkov.com/user/117466/tioemir",
+   "created_at": "2026-08-02T22:35:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>These are good calls, and two of the three would be quick! Sorting by most\nrecently updated or published is a parameter on the same request the browser\nalready makes</p>\n<p>I\u2019m going to hold off for now\u2026.. though, and I want to be straight with you about\nwhy: the Forge is shutting down on August 12. Building out the browse screen\nmeans investing in something that stops working in about ten days, so I\u2019d rather\nput that time into the parts of the Manager that keep running without it!!\nReading each mod\u2019s version and author from the mod itself, checking whether a\nmod supports your SPT version, and conflict detection. Those all work offline</p>\n<p>To be clear, I\u2019m not going anywhere!! The Manager will keep being developed after\nthe Forge closes, and it tells you itself when a new version is out!! So you\u2019ll\nknow about updates without needing a site to check</p>\n<p>If the community stands up a replacement catalogue, your three filters are the\nfirst thing I\u2019ll add to it!! The ideas are good and they\u2019re written down</p>\n<p>Thanks for taking the time to write it out, and for the kind words!!!! \ud83d\ude01</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 169846,
+   "parent_id": 169822,
+   "author": "TioEmir",
+   "author_id": 117466,
+   "author_url": "https://forge.sp-tarkov.com/user/117466/tioemir",
+   "created_at": "2026-08-02T22:39:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>That polling loop just means the client never gets past the initial handshake, it doesn\u2019t say why on its own. Two files would tell us:</p>\n<p>1 - BepInEx/LogOutput.log ( in your SPT folder )</p>\n<p>2 - The server console output from startup, from the first line</p>\n<p>A few things worth checking meanwhile:</p>\n<ul>\n<li>Do any mods show as incompatible with your SPT version in the Manager?\n0.4.5 reads that from the mod itself and flags it in the list</li>\n<li>Did you install anything that isn\u2019t built for your SPT version? Mixing 4.0\nand 4.1 mods is the most common cause of this!!</li>\n<li>Does the game start if you disable all client mods? If yes, re-enable them\nin halves to narrow down which one it is</li>\n</ul>\n<p>Also worth knowing: which Manager version did you install them with? 0.4.2\nfixed a case where a mod package could overwrite SPT\u2019s own core files, and\n0.4.5 fixed disabling leaving a mod\u2019s prepatcher running</p>\n<p>Edit: One more thing worth checking\u2026 If the server console showed anything about your\nprofile being invalid over an unrecognised item, don\u2019t enable\nremoveModItemsFromProfile, that deletes those items from your profile\npermanently. Update the mod that added them instead.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169848,
+   "parent_id": 169822,
+   "author": "Jay Russell",
+   "author_id": 119374,
+   "author_url": "https://forge.sp-tarkov.com/user/119374/jay-russell",
+   "created_at": "2026-08-02T22:56:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you so much for the reply!  While I was waiting for your response, I manually disabled all of my mods and re-enabled them until I found the one(s) that were causing issues.  Turns out, it was just ONE mod that was the culprit!  Namely, Compatibility Highlighter by awnova.</p>\n<p>To answer your questions, I\u2019m using the latest version from Forge, which seems to be 0.4.4, not 0.4.5.  Also, neither that mod nor anything else showed as incompatible in the mod list, and there were no conflicts detected.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 169852,
+   "parent_id": 169822,
+   "author": "TioEmir",
+   "author_id": 117466,
+   "author_url": "https://forge.sp-tarkov.com/user/117466/tioemir",
+   "created_at": "2026-08-02T23:18:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yeah, 0.4.5 isn\u2019t out just yet \ud83d\ude05. It\u2019s still in testing and should be released soon!! ( and I\u2019ll be releasing it later today!!! ) That\u2019s the version that adds compatibility detection from each mod\u2019s own metadata and fixes the issue where disabling a mod could leave its prepatcher running</p>\n<p>It\u2019s a little later than I originally planned because I took a day off to recharge\u2026</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169854,
+   "parent_id": 169822,
+   "author": "Jay Russell",
+   "author_id": 119374,
+   "author_url": "https://forge.sp-tarkov.com/user/119374/jay-russell",
+   "created_at": "2026-08-02T23:35:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>No problem!  I appreciate all of your work on this very helpful mod.  Out of curiosity, though, how do I update your mod manager once you release a new version?  Is it automatically updated, or do I have to do something manually?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 169855,
+   "parent_id": 169822,
+   "author": "TioEmir",
+   "author_id": 117466,
+   "author_url": "https://forge.sp-tarkov.com/user/117466/tioemir",
+   "created_at": "2026-08-02T23:41:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The Mod Manager already notifies you when a new update is available!! Up until now, clicking the update button would take you to the SPT website. Starting with 0.4.5, it\u2019ll take you to my GitHub instead.</p>\n<p>That\u2019s how it\u2019ll work until a new API becomes available. And of course, as soon as the community has a replacement, I\u2019ll integrate it as quickly as possible!!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169914,
+   "parent_id": null,
+   "author": "Akihabara333",
+   "author_id": 119412,
+   "author_url": "https://forge.sp-tarkov.com/user/119412/akihabara333",
+   "created_at": "2026-08-03T11:17:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The manager is really well done! Will there be a Chinese language patch later? Looking forward to it!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 169955,
+   "parent_id": null,
+   "author": "alesco96",
+   "author_id": 119337,
+   "author_url": "https://forge.sp-tarkov.com/user/119337/alesco96",
+   "created_at": "2026-08-03T15:19:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m installing some mods but when I launch the server it says 0 mods loaded. Am i doing something wrong?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 169980,
+   "parent_id": 169955,
+   "author": "TioEmir",
+   "author_id": 117466,
+   "author_url": "https://forge.sp-tarkov.com/user/117466/tioemir",
+   "created_at": "2026-08-03T17:23:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>A couple of things come to mind, which mods are you trying to install? Some mods are client-only, so they won\u2019t show up as loaded by the server</p>\n<p>Also, did you select the correct SPT installation folder in the Manager? It should be pointing to the root of your SPT installation (the folder containing <code>SPT.Server.exe</code>, <code>EscapeFromTarkov.exe</code>, <code>BepInEx</code>,  <code>SPT ( folder )</code>)</p>\n<p>Let me know which mods you\u2019re using, and I can help narrow it down</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169982,
+   "parent_id": 169914,
+   "author": "TioEmir",
+   "author_id": 117466,
+   "author_url": "https://forge.sp-tarkov.com/user/117466/tioemir",
+   "created_at": "2026-08-03T17:27:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019d definitely like to support more languages in the future. I don\u2019t speak Chinese myself, so I have a few options in mind: making the translation system simple enough that the community can contribute language files, asking someone I trust to help with the translation, or using AI as a starting point and then having it reviewed by native speakers. In any case, I\u2019ve added it to my list for future updates. I\u2019d love to make the Manager more accessible to everyone.</p>\n<p>And thank you for the kind words, I really appreciate that!!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 169984,
+   "parent_id": 169955,
+   "author": "alesco96",
+   "author_id": 119337,
+   "author_url": "https://forge.sp-tarkov.com/user/119337/alesco96",
+   "created_at": "2026-08-03T17:38:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yeah, I\u2019m pointing to that folder, I\u2019m trying to use this modlist: <a href=\"https://forge.sp-tarkov.com/list/119230/annotated-in-spades-meinders-modlist-wip-casual-ish-spt-non-fika\" target=\"_blank\" rel=\"noreferrer noopener\">https://forge.sp-tarkov.com/list/119230/annotated-in-spades-meinders-modlist-wip-casual-ish-spt-non-fika</a></p>\n<p>I\u2019ve found that the installation is creating a user/mods folder in the root but there\u2019s already a folder for mods in SPT_Runtime/user/mods, and when i move the mods to that folder the server tries to load them (giving a lot of errors)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 170497,
+   "parent_id": null,
+   "author": "dauntlessbell",
+   "author_id": 71803,
+   "author_url": "https://forge.sp-tarkov.com/user/71803/dauntlessbell",
+   "created_at": "2026-08-06T06:56:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>so i got the mod and i opened the zip file then opened the exe file straight from the zip file without extracting it have i followed the directions right or do i need to extract it to the spt folder?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170650,
+   "parent_id": null,
+   "author": "fatrat",
+   "author_id": 20203,
+   "author_url": "https://forge.sp-tarkov.com/user/20203/fatrat",
+   "created_at": "2026-08-06T22:54:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Can a feature be added to allow choosing an SPT Forge alternative like Forge Alt/Sp-Modstash? I realize this would require some re-tooling to connect to the API of those sites (if they even have an API right now).</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

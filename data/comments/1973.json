@@ -1,0 +1,240 @@
+{
+ "mod_id": 1973,
+ "slug": "event-auto-profile-backup",
+ "fetched_at": "2026-08-08T22:16:53Z",
+ "reported_total": null,
+ "pages": 1,
+ "count": 23,
+ "comments": [
+  {
+   "id": 47175,
+   "parent_id": null,
+   "author": "ODT",
+   "author_id": 5975,
+   "author_url": "https://forge.sp-tarkov.com/user/5975/odt",
+   "created_at": "2025-01-20T21:09:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for updating it!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 52085,
+   "parent_id": null,
+   "author": "Spooks",
+   "author_id": 78157,
+   "author_url": "https://forge.sp-tarkov.com/user/78157/spooks",
+   "created_at": "2025-05-24T14:31:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This is awesome, thanks</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 52448,
+   "parent_id": null,
+   "author": "Strungerman",
+   "author_id": 40708,
+   "author_url": "https://forge.sp-tarkov.com/user/40708/strungerman",
+   "created_at": "2025-06-05T23:28:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Really great mod!! As a suggestion, i wonder if it is possible to save after a number of raids instead of after every one, since this creates too many backups and it makes it harder to know which one to restore. Thanks for the mod.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 54170,
+   "parent_id": null,
+   "author": "RootsNine",
+   "author_id": 68245,
+   "author_url": "https://forge.sp-tarkov.com/user/68245/rootsnine",
+   "created_at": "2025-07-23T19:06:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I am running FIKA in a Docker container with Docker in Rootless mode, and attempting to restore backups from this mod completely breaks the container. The server fails to load and spits out \u201cincorrect data check\u201d errors, even after the file which I was attempting to restore is removed. The only fix I have found is to completely destroy and recreate the container.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133954,
+   "parent_id": 54170,
+   "author": "FriedEngineer",
+   "author_id": 59225,
+   "author_url": "https://forge.sp-tarkov.com/user/59225/friedengineer",
+   "created_at": "2025-07-24T01:39:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m also running the SPT Server with Fika in a docker container (<a href=\"https://github.com/zhliau/fika-spt-server-docker\" target=\"_blank\" rel=\"noreferrer noopener\">https://github.com/zhliau/fika-spt-server-docker</a> on Debian 12 to be specific) and have never had issues restoring profiles. The only difference I can see is that I\u2019m not running it in rootless mode. Can you shoot me your server logs?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133955,
+   "parent_id": 54170,
+   "author": "RootsNine",
+   "author_id": 68245,
+   "author_url": "https://forge.sp-tarkov.com/user/68245/rootsnine",
+   "created_at": "2025-07-24T01:54:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The server itself wouldn\u2019t ever start, the only logs the container would actually get to before restarting was this</p>\n<p>Validating SPT version Validating Fika version Found server files, skipping init Fika install requested but Fika server mod dir already exists, skipping Fika installation Enabling profile backups Starting periodic command scheduler: cron. Checking running user/group: 0:1000 spt:x:1000: Changing permissions of server files to user+rwx, group+rwx, others+rx Error: incorrect data check at genericNodeError (node:internal/errors:983:15) at wrappedFn (node:internal/errors:537:14) at Zlib.zlibOnError [as onerror] (node:zlib:185:17) at processChunkSync (node:zlib:418:12) at zlibBufferSync (node:zlib:174:12) at syncBufferWrapper (node:zlib:769:14) at payloadFileSync (pkg/prelude/bootstrap.js:561:21) at Module._compile (pkg/prelude/bootstrap.js:1920:21) at Object..js (node:internal/modules/cjs/loader:1712:10) at Module.load (node:internal/modules/cjs/loader:1322:32) However, upon recreating the mounted volume and the container, placing the file into the ProfilesToRestore directory resulted in this error, and that error persisted after removing the file. This screamed permissions issue to me but everything was owned by the Rootless Docker user and group, 100999:100999<br />\nI am running this all on NixOS.<br />\nI\u2019m going to be honest, I\u2019m not sure who else to report this to if your mod is not at fault. This is literal weeks of me trying to solve this issue.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133956,
+   "parent_id": 54170,
+   "author": "FriedEngineer",
+   "author_id": 59225,
+   "author_url": "https://forge.sp-tarkov.com/user/59225/friedengineer",
+   "created_at": "2025-07-24T03:41:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I agree, it does seem like a permissions issue, especially since it occurs right after the permissions change. I can\u2019t think of why EventAutoProfileBackup would cause issues though as it uses SPT functions to interact with the file system.</p>\n<p>The only thing I can think to try is setting the CHANGE_PERMISSIONS env variable to false so the code that produces Changing permissions of server files to user+rwx, group+rwx, others+rx doesn\u2019t have the chance to run; I added it to the docker startup script last summer to handle other permissions issues but I never tried it in passwordless mode. If that doesn\u2019t work, also try setting TAKE_OWNERSHIP, but since the take_ownership runs before the change_permissions, I\u2019m less confident that\u2019s the issue. If it doesn\u2019t work with both of those set to false, I\u2019ll have to dig quite a bit deeper.</p>\n<p>Reference: <a href=\"https://github.com/zhliau/fika-spt-server-docker?tab=readme-ov-file#-environment-variables\" target=\"_blank\" rel=\"noreferrer noopener\">https://github.com/zhliau/fika-spt-server-docker?tab=readme-ov-file#-environment-variables</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133957,
+   "parent_id": 54170,
+   "author": "RootsNine",
+   "author_id": 68245,
+   "author_url": "https://forge.sp-tarkov.com/user/68245/rootsnine",
+   "created_at": "2025-07-24T03:43:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I tried that, setting both of those to false still resulted in the error.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133960,
+   "parent_id": 54170,
+   "author": "FriedEngineer",
+   "author_id": 59225,
+   "author_url": "https://forge.sp-tarkov.com/user/59225/friedengineer",
+   "created_at": "2025-07-24T05:20:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hmmm. Unfortunately I don\u2019t have any more ideas right now. I\u2019m certainly not upset at you reporting it here, even if it ends up not being EventAutoProfileBackup at fault. Since you\u2019ve reported that it only happens when using EventAutoProfileBackup to restore a profile backup, it is probably related. I\u2019ll have to set up a rootless environment and get into the weeds to figure out what\u2019s going on. If I\u2019m being honest, I probably won\u2019t have time to do that in the near future and maybe not even until I rewrite it for SPT 4.</p>\n<p>You can do a \u201cmanual\u201d restore by stopping the container, moving/copying the backup files to replace the profile file, and then starting the container again.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 133962,
+   "parent_id": 52448,
+   "author": "FriedEngineer",
+   "author_id": 59225,
+   "author_url": "https://forge.sp-tarkov.com/user/59225/friedengineer",
+   "created_at": "2025-07-24T05:30:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks! I thought I\u2019d replied to your comment weeks ago but it seems I did not. Sorry about that!</p>\n<p>I put the timestamp at the beginning of the file name and the event at the end so that by just sorting by name you can see the files in chronological order and easily pick out the last time a given even occurred.</p>\n<p>Implementing a system like what you\u2019ve described is certainly possible in theory but I\u2019d have to build out a system to keep track which would add a decent bit of complexity so I\u2019m hesitant to do so. Right now it\u2019s pretty simple as it just runs every time the events in the config file occur. The only obvious work-around that exists at the moment is to just disable some of the events in the config. For example if you only have it run a backup at game start then you\u2019d only get about one backup per gaming session.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 134283,
+   "parent_id": 52448,
+   "author": "Strungerman",
+   "author_id": 40708,
+   "author_url": "https://forge.sp-tarkov.com/user/40708/strungerman",
+   "created_at": "2025-07-31T11:33:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I didn\u2019t notice the timestamps on the names of the files, that helps a lot thanks</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 55478,
+   "parent_id": null,
+   "author": "sparrow8332",
+   "author_id": 74850,
+   "author_url": "https://forge.sp-tarkov.com/user/74850/sparrow8332",
+   "created_at": "2025-08-29T22:49:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Dose this save character inventory on exfil ?</p>\n<p>Looking for somthing to backup profile for when you exfil and its stuck and dosent go through back to main menu.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135685,
+   "parent_id": 55478,
+   "author": "FriedEngineer",
+   "author_id": 59225,
+   "author_url": "https://forge.sp-tarkov.com/user/59225/friedengineer",
+   "created_at": "2025-08-30T04:57:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The default config has \u201cOnRaidEnd\u201d, which is triggered right before you get to the post-death screen (ie where we see \u201chead, eyes\u201d). So if you get to that screen, even if something happens before you make it back to your stash then yes, your profile would be backed up. If not, then you have deeper issues, probably with a local mods or with the connection to your server, which you should absolutely troubleshoot but this mod will not be able to workaround.</p>\n<p>Background: When the exfil countdown completes it begins a handoff of the data from the client to the server. You know that the handoff is complete when you get to that first post-death screen. If that doesn\u2019t get to that screen (your game client will likely just have the spinning circle in the bottom corner) then the handoff failed and there is no profile data for this mod to save anyways as it would grab it from the server\u2019s memory.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 146445,
+   "parent_id": null,
+   "author": "FriedEngineer",
+   "author_id": 59225,
+   "author_url": "https://forge.sp-tarkov.com/user/59225/friedengineer",
+   "created_at": "2025-12-18T06:38:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>SPT 4.0 update released!</p>\n<p>Sorry it took so long. I had most of it written a decent while ago but only finally got around to testing it on both Windows and Linux docker (<a href=\"https://github.com/zhliau/fika-spt-server-docker\" target=\"_blank\" rel=\"noreferrer noopener\">https://github.com/zhliau/fika-spt-server-docker</a>).</p>\n<p>If you have any issues, please let me know! I have not been playing SPT 4.0 as I\u2019ve been playing PVE 1.0 for the storyline, so I haven\u2019t had the chance to exhaustively test it myself.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 146506,
+   "parent_id": 54170,
+   "author": "RootsNine",
+   "author_id": 68245,
+   "author_url": "https://forge.sp-tarkov.com/user/68245/rootsnine",
+   "created_at": "2025-12-18T21:44:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey super late reply to this, but the processor my server was running was one of the ones from Intel with the bad microcode and was slowly killing itself and the RAM attached to my system, which is what was causing these issues. Having used this on a proper working machine since your mod is fantastic and a great resource for SPT.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 146539,
+   "parent_id": 54170,
+   "author": "FriedEngineer",
+   "author_id": 59225,
+   "author_url": "https://forge.sp-tarkov.com/user/59225/friedengineer",
+   "created_at": "2025-12-19T05:46:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Wow. I would not have guessed bad CPU microcode as the root cause. Sorry you got the short straw on that! Glad it\u2019s working for you now!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 154483,
+   "parent_id": null,
+   "author": "BraveStarTG",
+   "author_id": 46315,
+   "author_url": "https://forge.sp-tarkov.com/user/46315/bravestartg",
+   "created_at": "2026-03-09T01:33:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I have a curious question. What is the point of saving on \u201cRaidStart\u201d if it doesn\u2019t actually save on raid start instead it\u2019s more like \u201cRaidEnd\u201d. The reason I say this is because I have closed the game a few times while in raid because the game crashes or I went to the wrong map by mistake but when I reload the game I lose all my gear as if I died (I don\u2019t want to add the mod that avoids this) but when I try to recover the \u201cRaidStart\u201d file it\u2019s basically the same as \u201cGameLaunch\u201d. In other words, \u201cRaidStart\u201d creates after you\u2019re in raid and not before thus if you F4 the game and lose everything it saves it that wat. I would like an event that saves after I go to the Trader screen, claim all the completed quests and set up before the next raid. Otherwise the alternative is the \u201cRaidEnd\u201d save which means I have to claim all the completed quests again. Or even better, an option to create a backup on the fly, like a key press.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 154489,
+   "parent_id": 154483,
+   "author": "FriedEngineer",
+   "author_id": 59225,
+   "author_url": "https://forge.sp-tarkov.com/user/59225/friedengineer",
+   "created_at": "2026-03-09T02:39:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The profile backed up when <code>RaidStart</code> is triggered should be exactly what your profile looked like when the raid started (specifically when the client calls the <code>/client/match/local/start</code> endpoint, which I believe happens right after the raid start countdown completes). Crashes and Alt-F4 during raid should have no bearing on that backup. If you Alt-F4 after hitting the Start Raid button but before the raid actually starts, then a file for the \u201cRaidStart\u201d event would not even be created. In fact, in that case you shouldn\u2019t even need to restore your profile at all because if you Alt-F4 at that point then your profile should be as if the raid never started anyways.</p>\n<p>Just want to clarify a few things so I can try to replicate this:</p>\n<blockquote>\n<p>I have closed the game a few times while in raid because the game crashes or I went to the wrong map by mistake but when I reload the game I lose all my gear as if I died (I don\u2019t want to add the mod that avoids this) but when I try to recover the <code>RaidStart</code> file it\u2019s basically the same as <code>GameLaunch</code>.</p>\n</blockquote>\n<ul>\n<li>When exactly did the game crash or exit (presumably from you hitting Alt-F4)? Were you already in raid?</li>\n<li>Which backup file did you copy to the <code>RestoredProfiles</code> folder?\n<ul>\n<li>A screenshot of all the backup files with the one you restored selected would be perfect. If you had issues with multiple files, feel free to select multiple of them.</li>\n</ul>\n</li>\n<li>Did you restart the server after copying the backup file to the <code>RestoredProfiles</code> folder?</li>\n</ul>\n<p>Can you also provide the version of SPT you\u2019re using and a list of all the mods you have installed so I can investigate any potential incompatibilities?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 154492,
+   "parent_id": 154483,
+   "author": "BraveStarTG",
+   "author_id": 46315,
+   "author_url": "https://forge.sp-tarkov.com/user/46315/bravestartg",
+   "created_at": "2026-03-09T03:12:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I will replicate the situation when I get a chance, upload the files (RaidStar and GameLaunch) to my GoogleDrive and share a link so you can see yourself. Maybe I\u2019m missing something.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 154630,
+   "parent_id": 154483,
+   "author": "BraveStarTG",
+   "author_id": 46315,
+   "author_url": "https://forge.sp-tarkov.com/user/46315/bravestartg",
+   "created_at": "2026-03-11T02:33:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>OK. It happened again. Here\u2019s a zip with the RaidEnd and RaidStart files from before and when the game crashed and the GameLaunch file I got after I used the RaidEnd file to restore my profile cause the RaidStart didn\u2019t work so you can see how they are different. I started the raid with the gear in the GameLaunch file and the game crashed about 1 minute into the raid after killing one PMC and fighting a second. It was a memory error. When I relaunched the game I ended up losing all my gear. I tried to recover my gear by restoring the RaidStart file but I ended up with the same profile as when I relaunched the game, with my gear missing. So I was forced to use the RaidEnd file to restore my profile to right after I ended and do everything I did before starting the next raid that crashed (complete an quests I had from the RaidEnd, move everything I brought out the raid and switch weapons and reload ammo and health items.</p>\n<p><a href=\"https://drive.google.com/file/d/1PHlkbHMo3RPVZgOD-kpE0pT8P_z5oIpF/view?usp=sharing\" target=\"_blank\" rel=\"noreferrer noopener\">https://drive.google.com/file/d/1PHlkbHMo3RPVZgOD-kpE0pT8P_z5oIpF/view?usp=sharing</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 154699,
+   "parent_id": 154483,
+   "author": "FriedEngineer",
+   "author_id": 59225,
+   "author_url": "https://forge.sp-tarkov.com/user/59225/friedengineer",
+   "created_at": "2026-03-12T03:17:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Do you have <a href=\"https://forge.sp-tarkov.com/mod/2032/nocheese\" target=\"_blank\" rel=\"noreferrer noopener\">https://forge.sp-tarkov.com/mod/2032/nocheese</a> installed? It\u2019s in the list of mods in your profile files.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 154710,
+   "parent_id": 154483,
+   "author": "BraveStarTG",
+   "author_id": 46315,
+   "author_url": "https://forge.sp-tarkov.com/user/46315/bravestartg",
+   "created_at": "2026-03-12T10:25:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Actually I did, until yesterday ironically enough. I noticed it was in the folder. I did not intend to install it but seem to accidentally. Makes sense that this might be causing this issue. I will verify. Thank you for pointing it out.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 167231,
+   "parent_id": null,
+   "author": "Wolf_Vantage",
+   "author_id": 112269,
+   "author_url": "https://forge.sp-tarkov.com/user/112269/wolf-vantage",
+   "created_at": "2026-07-20T23:14:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Great mod to have. It\u2019s a life saver especially if you mod a lot or the game crashes or otherwise decide to mess with your profile. Now you\u2019ve got backups made every step of the way so at worst you lose one raid\u2019s progress. Highly recommended!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  }
+ ]
+}

@@ -37,22 +37,46 @@ rendered from those files, so the data is usable on its own.
 
 ---
 
-## Daily use
+## Keeping it current
+
+Run these in order. `data/mods.json` is the spine — everything else reads it,
+so it goes first. The rest are independent of each other.
 
 ```bash
-python3 scrape/scrape_mods.py        # refresh mod listings from the Forge
-python3 scrape/scrape_comments.py    # archive comment threads
-python3 scrape/repo_status.py        # check the source repos (not the Forge)
-python3 build/build.py               # rebuild site/
+python3 scrape/scrape_mods.py                  # 1. mods, versions, deps   (~1 min)
+python3 scrape/fetch_images.py                 # 2. thumbnails for new mods (seconds)
+python3 scrape/scrape_comments.py --probe      # 3. check comments still work
+python3 scrape/scrape_comments.py --spt '4.'   #    new current-gen mods
+python3 scrape/repo_status.py                  # 4. repo activity          (~10 min)
+python3 build/build.py                         # 5. rebuild site/          (~3 s)
+git add -A && git commit -m "Refresh archive" && git push
 ```
 
-All four are safe to re-run and only fetch what changed. **After the Forge shuts
-down, drop the first two.** `repo_status.py` and `build.py` never contact
-sp-tarkov.com, so they keep working indefinitely — which is the point: the
-listings die, the repositories do not.
+Everything only fetches what changed, so a weekly run is roughly 15 minutes and
+mostly unattended.
 
-If the Forge returns nothing (i.e. it is gone), the scraper aborts *without
-writing*, so a dead site can never blank the archive.
+**Always `--probe` before a long comment run.** It exercises the whole Livewire
+handshake against one known mod in about ten seconds. If it fails, the Forge
+changed something and the parser needs fixing — don't start a multi-hour run.
+
+**Never run two scrapers against the Forge at once.** They compete for the same
+300 requests/minute and trigger 429s; sequential finishes sooner.
+
+**As shutdown approaches, invert the priorities.** Mod data takes a minute to
+re-pull at any time, but comments take hours and get exactly one chance.
+Finishing the pre-4.x comment pass matters more than fresh download counts.
+
+**After the Forge shuts down, drop steps 1–3.** `repo_status.py` and `build.py`
+never contact sp-tarkov.com, so they keep working indefinitely — which is the
+whole point: the listings die, the repositories do not.
+
+A dead Forge cannot corrupt the archive. If enumeration returns nothing, or
+returns only part of the catalogue, `scrape_mods.py` aborts *without writing*.
+Running it after shutdown refuses rather than blanking your data.
+
+Failures are never cached either. A mod that returns a 500 stays in the queue
+for next time instead of being recorded as having no comments — so re-running
+is always the correct response to errors.
 
 ---
 
@@ -103,14 +127,19 @@ same categories.
 
 ## The scripts
 
-Four files, each with one job, handing off through files on disk so any of them
-can be run alone.
+Six files, each with one job, handing off through files on disk so any of them
+can be run alone — and so a half-finished run is never lost.
 
 ```
-scrape_mods.py     ──→  data/mods.json      ──┐
-scrape_comments.py ──→  data/comments/*.json ─┼──→  build.py  ──→  site/
-community/*.json   ─────────────────────────  ┘
+scrape_mods.py     ──→  data/mods.json       ──┐
+scrape_comments.py ──→  data/comments/*.json  ─┤
+fetch_images.py    ──→  data/images/          ─┼──→  build.py  ──→  site/
+repo_status.py     ──→  data/repos.json       ─┤      (+ community.py
+community/*.json   ──────────────────────────  ┘        validates submissions)
 ```
+
+Only the first two ever contact the Forge. `repo_status.py` talks to the code
+hosts, and `build.py` talks to nothing at all.
 
 ### `scrape/scrape_mods.py`
 
@@ -137,7 +166,8 @@ Archives comment threads. **This is the fragile one** — see below.
 python3 scrape/scrape_comments.py --probe          # verify it still works
 python3 scrape/scrape_comments.py --spt '4.'       # current-gen mods first
 python3 scrape/scrape_comments.py                  # everything else
-python3 scrape/scrape_comments.py --fresh          # re-fetch mods already done
+python3 scrape/scrape_comments.py --max-age 30     # also refresh sets over 30 days old
+python3 scrape/scrape_comments.py --fresh          # re-fetch every mod from scratch
 ```
 
 Results are one file per mod, so an interrupted run keeps everything already
@@ -146,6 +176,40 @@ full pass — the cost is pagination, at ten comments per request.
 
 **Run `--probe` first.** It exercises the entire handshake against one
 known-good mod and tells you whether the parser still matches the site.
+
+**By default a mod is fetched only once.** That is what makes an interrupted
+run resumable, but on its own it also means an archived mod never picks up new
+comments. `--max-age DAYS` reopens that: thread sets older than the given age
+are refetched, so a maintenance run stays incremental. `--fresh` re-fetches
+everything and takes as long as the original pass — rarely what you want.
+
+### `scrape/fetch_images.py`
+
+Mirrors the images the Forge hosts, so they survive its shutdown.
+
+```bash
+python3 scrape/fetch_images.py              # thumbnails + avatars
+python3 scrape/fetch_images.py --embedded   # also images inside descriptions
+python3 scrape/fetch_images.py --no-resize  # keep originals instead of WebP
+```
+
+Only sp-tarkov hosts are mirrored, and the reason is simply which images are
+about to disappear. Mod thumbnails and author avatars live on
+`forge-static.sp-tarkov.com` and die with the Forge. The ~3,400 screenshots
+embedded in descriptions sit on imgur, ibb, and GitHub — roughly **3.4 GB**, on
+hosts with their own lifetimes — so they stay as external links by default.
+
+Thumbnails are re-encoded to 192px WebP: the site shows them at 48px in the
+list and 96px on a mod page, so this is a 2x retina copy and visually
+identical. **2,198 images come to 8 MB**, against 121 MB at original size.
+
+Files are content-addressed by URL hash, so re-running only fetches what is
+new, and two mods sharing an author's avatar share one file. Pillow is used
+here and *only* here — imported lazily, so neither `build.py` nor CI needs it.
+
+`--embedded` is mostly of historical interest now: 74 of the 81 Forge-hosted
+embedded images were already unreachable when this was written, because
+`hub.sp-tarkov.com` is gone. They are unrecoverable by anyone.
 
 ### `scrape/repo_status.py`
 
@@ -274,6 +338,15 @@ Things learned the hard way, worth knowing before changing anything.
 - **Rate limit is 300 requests/minute.** The scraper sleeps 1s per worker
   between requests, landing near 240/min with headroom for retries, and honours
   `Retry-After` when it still gets a 429.
+- **Archived HTML can trip GitHub's secret scanning.** Mod descriptions embed
+  images that GitHub itself serves from S3 via pre-signed URLs carrying
+  `X-Amz-Credential=AKIA…`. That is GitHub's own access key *id* — an
+  identifier, not a credential, and the signature expires within hours — but
+  push protection matches the shape and blocks the push. `scrub_signed_urls()`
+  strips the signing parameters on write, keeping the URL itself, so a
+  re-scrape can never reintroduce it. Note those parameters appear as `&amp;`
+  in this HTML, not `&`; a scrubber matching only the bare form silently does
+  nothing.
 
 ---
 
@@ -281,15 +354,25 @@ Things learned the hard way, worth knowing before changing anything.
 
 | Path | What it is |
 |---|---|
-| `site/` | **The thing you open.** Generated; safe to delete and rebuild |
+| `site/` | **The thing you open.** Generated; gitignored, rebuilt by CI |
 | `data/mods.json` | Every archived mod. The primary artifact |
 | `data/comments/<id>.json` | Archived comment threads, one file per mod |
-| `data/raw_mods.jsonl` | Per-mod fetch cache (delete to force a refetch) |
+| `data/images/` | Mirrored thumbnails and avatars (content-addressed) |
+| `data/images.json` | Image URL → local filename manifest |
+| `data/repos.json` | Source-repository activity |
+| `data/raw_mods.jsonl` | Per-mod fetch cache (gitignored; delete to refetch) |
 | `community/*.json` | Mods contributed by pull request |
 | `source_overrides.json` | Manual source-URL corrections |
 | `scrape/forge.py` | Shared API client and the Livewire session |
 | `build/sanitize.py` | HTML allowlist |
 | `build/templates.py` | Page rendering |
 
-Both caches are safe to delete; they only cost time to rebuild. `data/mods.json`
-and `data/comments/` are the archive itself — those are the ones to back up.
+`data/mods.json`, `data/comments/`, and `data/images/` **are** the archive —
+those are what to back up. Everything else either regenerates from them
+(`site/`) or only costs time to rebuild (`raw_mods.jsonl`, `repos.json`).
+
+`site/` is gitignored on purpose: it is 1,826 generated files that would churn
+on every build, and CI rebuilds and deploys it from the committed data. The
+trade-off is that a broken commit to `data/` takes the live site down until the
+next green run — pull requests are checked by the `validate` job, but direct
+pushes are not.

@@ -1,0 +1,560 @@
+{
+ "mod_id": 2842,
+ "slug": "dynamic-raid-events",
+ "fetched_at": "2026-08-08T22:17:36Z",
+ "reported_total": 21,
+ "pages": 3,
+ "count": 55,
+ "comments": [
+  {
+   "id": 167837,
+   "parent_id": null,
+   "author": "Chris9051",
+   "author_id": 105070,
+   "author_url": "https://forge.sp-tarkov.com/user/105070/chris9051",
+   "created_at": "2026-07-25T05:29:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi, it seems a very good mod, please can you tell me if this is compatible with ABPS.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 167878,
+   "parent_id": 167837,
+   "author": "HandGrade",
+   "author_id": 42831,
+   "author_url": "https://forge.sp-tarkov.com/user/42831/handgrade",
+   "created_at": "2026-07-25T09:46:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Same question about ABPS to author.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 167881,
+   "parent_id": null,
+   "author": "GGininder",
+   "author_id": 118359,
+   "author_url": "https://forge.sp-tarkov.com/user/118359/ggininder",
+   "created_at": "2026-07-25T10:04:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>So how exactly do these events work? compatible with Raid Overhaul?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 167890,
+   "parent_id": 167881,
+   "author": "Cobra",
+   "author_id": 118669,
+   "author_url": "https://forge.sp-tarkov.com/user/118669/cobra",
+   "created_at": "2026-07-25T12:11:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Raid Overhaul: Use with caution. That mod already changes raid behavior and includes its own random events you can cause over lapping and possible stacking on events and could create a problem within the server. however, ABPS Likely compatible, but again, use with caution both mods can influence bot and boss spawning. you might see larger than expected bot counts or overlapping boss.</p>\n<p>so how the mod works.</p>\n<p>Each event has its own settings that can modify the raid in different ways, such as:</p>\n<p>Changing boss spawn chances or locations (For example, on Factory the default boss is Tagilla. An event OR you Via .JSON can disable Tagilla for that raid and replace him with Reshala (or another configured boss)</p>\n<p>Increasing or decreasing AI difficulty (Easy,Medium,Hard,Nightmare)</p>\n<p>Adjusting bot spawn behavior</p>\n<p>Altering loot distribution</p>\n<p>Applying map specific effects (depending on the event) and what you have configured in the .json</p>\n<p>Need to kill Killa multiple times for a quest? Configure Killa to be the only boss that spawns on Factory, Need boss guard kills? Done set up an event that spawns bosses with their guards more frequently.\nOnce you\u2019ve completed your objective, simply switch back to your normal event configuration and continue enjoying randomized raid events.</p>\n<p>The mod isn\u2019t just about making raids more random it\u2019s also designed to let you tailor raids to your current objectives boss kills guard kills Need to eliminate 250 Raiders for a quest or personal challenge? Enable the Raider event and get ready but be careful it\u2019s an absolute nightmare. \ud83d\ude05</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 167891,
+   "parent_id": 167837,
+   "author": "Cobra",
+   "author_id": 118669,
+   "author_url": "https://forge.sp-tarkov.com/user/118669/cobra",
+   "created_at": "2026-07-25T12:14:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I answered this above. \ud83d\ude42 Take a look there, and if anything is still unclear, just let me know!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 167894,
+   "parent_id": null,
+   "author": "spt123123",
+   "author_id": 94676,
+   "author_url": "https://forge.sp-tarkov.com/user/94676/spt123123",
+   "created_at": "2026-07-25T12:26:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi devs, I have a question: How can I check which random raid events are active in my current match? Do I only find out by running into bosses or other special spawns, or is there another way to view this info beforehand?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 167902,
+   "parent_id": 167894,
+   "author": "Cobra",
+   "author_id": 118669,
+   "author_url": "https://forge.sp-tarkov.com/user/118669/cobra",
+   "created_at": "2026-07-25T12:51:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>So at the moment, the easiest way to see which event was selected is to watch the SPT Server console as the raid is starting. The selected event is logged there before you load into the raid.</p>\n<p>you will be looking for something like this after the raid starts</p>\n<p>[Dynamic Raid Events] Selected Event: Boss Convention\nor\n[Dynamic Raid Events] Selected Event: Raider Assault\nor\n[Dynamic Raid Events] Selected Event: Loot Surge\nor\n[Dynamic Raid Events] Selected Event: High Value Loot\nETC\u2026</p>\n<p>Optional Raid Briefings are in the works! At the start of each raid, you\u2019ll receive a briefing that announces the active raid event before you deploy.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 167905,
+   "parent_id": 167894,
+   "author": "spt123123",
+   "author_id": 94676,
+   "author_url": "https://forge.sp-tarkov.com/user/94676/spt123123",
+   "created_at": "2026-07-25T12:58:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Okay, thank you for your reply. I look forward to your masterpiece.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 167911,
+   "parent_id": 167881,
+   "author": "GGininder",
+   "author_id": 118359,
+   "author_url": "https://forge.sp-tarkov.com/user/118359/ggininder",
+   "created_at": "2026-07-25T13:53:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you for your reply.</p>\n<p>What about Cultist Invasion? Does it randomly add Cultists to different maps? Are they still restricted to their normal spawn times?</p>\n<p>Have you considered adding a description of what each event does by default to the mod page?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 167925,
+   "parent_id": null,
+   "author": "DedM0Roz",
+   "author_id": 26597,
+   "author_url": "https://forge.sp-tarkov.com/user/26597/dedm0roz",
+   "created_at": "2026-07-25T15:13:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello,my raids always in normal mode,but i put normal raid in config file to 0\u2026</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 167928,
+   "parent_id": null,
+   "author": "Super_Lopez",
+   "author_id": 57052,
+   "author_url": "https://forge.sp-tarkov.com/user/57052/super-lopez",
+   "created_at": "2026-07-25T15:36:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Nice idea I like cultist invasion because is really hard find that damn cultists!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 167936,
+   "parent_id": null,
+   "author": "Chef4121",
+   "author_id": 107731,
+   "author_url": "https://forge.sp-tarkov.com/user/107731/chef4121",
+   "created_at": "2026-07-25T16:13:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>One suggestion is having most if not all of these modifiers visable on the map. I actually was in the process and making a mod exactly like this and got the icon on the map selection screen working if you would like that, that\u2019s pretty much as far as I got though. It\u2019s very bare bones, simply showing the icon (similar to the skull icon of the boss) and changing every hour to \u201cselect\u201d the map which have events.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 167941,
+   "parent_id": 167925,
+   "author": "Cobra",
+   "author_id": 118669,
+   "author_url": "https://forge.sp-tarkov.com/user/118669/cobra",
+   "created_at": "2026-07-25T16:27:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello, Please compare your config.json with the included config.example.json and check for any missing commas, incorrect property names, or formatting errors.</p>\n<p>The mod includes safety fallbacks, so if the configuration cannot be read correctly, it will load the default values instead of crashing the server or causing the raid to hang. That may be why your raids are continuing to use the Normal Raid event.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 167942,
+   "parent_id": 167936,
+   "author": "Cobra",
+   "author_id": 118669,
+   "author_url": "https://forge.sp-tarkov.com/user/118669/cobra",
+   "created_at": "2026-07-25T16:31:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>That\u2019s a really interesting idea! I hadn\u2019t considered using the map selection screen like that. I already have a handful of ideas I want to bring to SPT, so I\u2019ll probably continue building out my current vision for the mod, but I really appreciate the suggestion. If you\u2019re willing to share what you\u2019ve already built or any details about how you got the map icon working, I\u2019d definitely be interested in taking a look.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 167943,
+   "parent_id": 167881,
+   "author": "Cobra",
+   "author_id": 118669,
+   "author_url": "https://forge.sp-tarkov.com/user/118669/cobra",
+   "created_at": "2026-07-25T16:34:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Cultist Invasion can add Cultists outside of their normal spawn conditions, making them much less predictable than in vanilla SPT. The goal is to create those \u201cwait\u2026 Cultists are HERE?\u201d moments and keep raids feeling fresh. As for the mod page, I completely agree. Right now it only lists the events, but I think it would be much better to include a short description of what each event does by default. I\u2019ll be adding that in an upcoming update so players have a better idea of what each event changes before they install the mod.\nI also have plans for optional Raid Briefings that will display the selected event before deployment for players who want to know what they\u2019re heading into.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 167944,
+   "parent_id": null,
+   "author": "Super_Lopez",
+   "author_id": 57052,
+   "author_url": "https://forge.sp-tarkov.com/user/57052/super-lopez",
+   "created_at": "2026-07-25T16:40:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This not work properly, I played a raid when I die the server wrote at least 20 lines with errors and never load again.</p>\n<p>Id quest item number\u2026. is not found \u2026.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 167951,
+   "parent_id": 167944,
+   "author": "Cobra",
+   "author_id": 118669,
+   "author_url": "https://forge.sp-tarkov.com/user/118669/cobra",
+   "created_at": "2026-07-25T17:25:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019ll need a little more information to narrow it down, because the mod is working normally in my current tests.</p>\n<p>Please send:</p>\n<p>The full server error lines, especially the missing item IDs\nYour SPT version\nYour Dynamic Raid Events version\nA list of the other server mods you have installed\nWhich raid event was selected when the issue happened</p>\n<p>Missing item ID errors are often caused by an item or equipment mod referencing content that is no longer present, so there may be a compatibility issue between mods. Dynamic Raid Events is still in beta, though, so I definitely want to investigate it properly.</p>\n<p>Please paste the complete error output instead of only the summary, and I\u2019ll take a look.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 167961,
+   "parent_id": 167944,
+   "author": "Super_Lopez",
+   "author_id": 57052,
+   "author_url": "https://forge.sp-tarkov.com/user/57052/super-lopez",
+   "created_at": "2026-07-25T18:05:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Sorry I can\u2019t send you this because I don\u2019t have records of that,</p>\n<p>I just simply erased this mod, and voila the game work right.</p>\n<p>I think this error was about the items in some events, missing in SPT but working in Normal Tarkov game.</p>\n<p>Almost all events unfortunately are been skipped immediately in SPT.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 167968,
+   "parent_id": null,
+   "author": "monkeys414",
+   "author_id": 107426,
+   "author_url": "https://forge.sp-tarkov.com/user/107426/monkeys414",
+   "created_at": "2026-07-25T18:38:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi, I\u2019ve got a small problem: the boss event triggers on the server, but once in the raid, only the map\u2019s designated boss spawns (e.g., Glukhar on Reserve). It\u2019s compatible with SVM?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 167981,
+   "parent_id": 167944,
+   "author": "Super_Lopez",
+   "author_id": 57052,
+   "author_url": "https://forge.sp-tarkov.com/user/57052/super-lopez",
+   "created_at": "2026-07-25T19:11:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>NO event was selected, Dinamic Raid Events: Said normal raid</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 167987,
+   "parent_id": 167944,
+   "author": "Cobra",
+   "author_id": 118669,
+   "author_url": "https://forge.sp-tarkov.com/user/118669/cobra",
+   "created_at": "2026-07-25T19:31:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for letting me know. Unfortunately I can\u2019t determine the cause without the server log or error messages. The event system is designed to skip an event if it detects invalid data rather than crash the raid. If you\u2019re willing to share your server log (SPT/logs/server-*.log) or the console output from the raid, I\u2019d be happy to investigate and fix it if it\u2019s a bug. If the issue is caused by another mod removing or replacing item templates, I\u2019ll see if I can add a compatibility fix in a future update.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 167990,
+   "parent_id": 167944,
+   "author": "Super_Lopez",
+   "author_id": 57052,
+   "author_url": "https://forge.sp-tarkov.com/user/57052/super-lopez",
+   "created_at": "2026-07-25T19:49:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Here it is the serverlog:\n<a href=\"https://codepaste.sp-tarkov.com/?8a6034752f6488b5#CnLc7i4hNS8VYHLw687mLnTQsdtuqiCwrBbGuF99DSrU\" target=\"_blank\" rel=\"noreferrer noopener\">https://codepaste.sp-tarkov.com/?8a6034752f6488b5#CnLc7i4hNS8VYHLw687mLnTQsdtuqiCwrBbGuF99DSrU</a></p>\n<p>You can watch the list [2026-07-25 16:36:26.839]  the weird item unknown crash the game and force me to erase this mod.</p>\n<p>\u201cQuest test key\u201d 5a043f2c86f7741aa57b5145 ID</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168012,
+   "parent_id": 167936,
+   "author": "Chef4121",
+   "author_id": 107731,
+   "author_url": "https://forge.sp-tarkov.com/user/107731/chef4121",
+   "created_at": "2026-07-25T21:33:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yeah for sure, if you want to add me on discord I think that could be better. \u201cchef4121\u201d is my ign on discord.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168013,
+   "parent_id": 167944,
+   "author": "Cobra",
+   "author_id": 118669,
+   "author_url": "https://forge.sp-tarkov.com/user/118669/cobra",
+   "created_at": "2026-07-25T21:37:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for taking the time to send the log. After reviewing it, I don\u2019t see any evidence that Dynamic Raid Events is causing the crash. Your server is running 71 server-side mods, and there isn\u2019t a stack trace pointing to Dynamic Raid Events as the source of the issue. Dynamic Raid Events does not create, modify, or interact with quests, quest rewards, quest items, or keys. The mod\u2019s purpose is simply to generate and manage dynamic raid events. Because of that, an error involving a \u201cQuest test key\u201d isn\u2019t something this mod would directly produce. Before I make any code changes, I need a reproducible issue on a minimal setup (SPT + Dynamic Raid Events only, or with the fewest additional mods possible). With a heavily modded installation, there are too many variables to determine which mod is responsible. If you can reproduce the issue on a clean install with only Dynamic Raid Events, or provide a stack trace that directly references Dynamic Raid Events, I\u2019ll be happy to investigate it further.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168027,
+   "parent_id": 167944,
+   "author": "Super_Lopez",
+   "author_id": 57052,
+   "author_url": "https://forge.sp-tarkov.com/user/57052/super-lopez",
+   "created_at": "2026-07-25T22:27:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I will reinstall this mod again in my profile like is right now, for more test.</p>\n<p>If this weird key appears again I won\u2019t take it anymore.</p>\n<p>Let\u2019s see what happens.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168067,
+   "parent_id": null,
+   "author": "VoidEco",
+   "author_id": 117806,
+   "author_url": "https://forge.sp-tarkov.com/user/117806/voideco",
+   "created_at": "2026-07-26T01:13:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Can this mod use things from other mods? For example, other mods that add more loot, as well as mods that add AI or factions, such as Blackdivision and Wedge\nJust curious \u2014 if this feels troublesome or offensive, please feel free to ignore this message.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168078,
+   "parent_id": 168067,
+   "author": "deathbysnoosnoo",
+   "author_id": 31653,
+   "author_url": "https://forge.sp-tarkov.com/user/31653/deathbysnoosnoo",
+   "created_at": "2026-07-26T02:05:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Would be cool to have vehicle convoys</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168079,
+   "parent_id": 168067,
+   "author": "Cobra",
+   "author_id": 118669,
+   "author_url": "https://forge.sp-tarkov.com/user/118669/cobra",
+   "created_at": "2026-07-26T02:13:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yes, I have plans for more loot, AI, factions, and other event content. My priority, though, is keeping Dynamic Raid Events as self-contained as possible. We don\u2019t want the mod to depend on other mods because if they break, change, or stop being updated, it can cause issues for our users too. I\u2019ll absolutely aim for compatibility with popular mods whenever possible, but i want Dynamic Raid Events to remain stable and fully functional on its own.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168080,
+   "parent_id": 168067,
+   "author": "VoidEco",
+   "author_id": 117806,
+   "author_url": "https://forge.sp-tarkov.com/user/117806/voideco",
+   "created_at": "2026-07-26T02:17:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you for your prompt reply. I fully understand, and I really look forward to your future updates.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168083,
+   "parent_id": 168067,
+   "author": "Cobra",
+   "author_id": 118669,
+   "author_url": "https://forge.sp-tarkov.com/user/118669/cobra",
+   "created_at": "2026-07-26T02:23:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m actively working on a major update that I think the community is going to love. Keep an eye on the changelog\u2026 there\u2019s a lot more coming soon. \ud83d\ude09</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 168363,
+   "parent_id": 168067,
+   "author": "sumved48",
+   "author_id": 116763,
+   "author_url": "https://forge.sp-tarkov.com/user/116763/sumved48",
+   "created_at": "2026-07-27T08:32:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Also please let us know if SVM is compatible or not. And any such mods.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 168405,
+   "parent_id": null,
+   "author": "aprilsand",
+   "author_id": 118710,
+   "author_url": "https://forge.sp-tarkov.com/user/118710/aprilsand",
+   "created_at": "2026-07-27T15:16:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019d like to know if this mod is compatible with SVM and ABPS, as I\u2019ve adjusted loot spawn rates and AI spawn rates in those mods. Also, I was wondering whether this random event will have a briefing popup to let me know what\u2019s happening when it triggers.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 168416,
+   "parent_id": null,
+   "author": "overmedikate",
+   "author_id": 118930,
+   "author_url": "https://forge.sp-tarkov.com/user/118930/overmedikate",
+   "created_at": "2026-07-27T16:51:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i couldn\u2019t find the force event IDs in the README.md, how do i force loot surge and high value loot? also are the multipliers on those events capped out at a certain value? I am curious what the range looks like or if it breaks and does nothing after being doubled.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168434,
+   "parent_id": 168405,
+   "author": "Cobra",
+   "author_id": 118669,
+   "author_url": "https://forge.sp-tarkov.com/user/118669/cobra",
+   "created_at": "2026-07-27T17:52:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>SVM It should generally be compatible, I have not tested with alot of mods out there but i have 25 mods on my server i test with so i get a general idea, but use caution if you are changing the same loot settings. Dynamic Raid Events can temporarily modify loot during certain events, so those event changes may stack with or override parts of your SVM setup for that raid. After the raid, the mod restores the values it changed.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168437,
+   "parent_id": 168416,
+   "author": "Cobra",
+   "author_id": 118669,
+   "author_url": "https://forge.sp-tarkov.com/user/118669/cobra",
+   "created_at": "2026-07-27T18:04:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Regarding the loot multipliers, they are not hard-capped by my mod. The event applies the configured multiplier to the game\u2019s existing loot values. The practical limit depends on what the game and other mods are already doing. Reasonable values (such as 1.5\u00d7 to 3\u00d7) should work well, but extremely high multipliers may result in excessive loot or diminishing returns depending on how the underlying loot system handles them.</p>\n<p>the current event ID\u2019s are  please use caution when using them tho\nnormal_raid\nraider_assault\nboss_hunt\nboss_convention\nloot_surge\nhigh_value_loot\ncultist_invasion</p>\n<p>Cultist Invasion had an issue in an earlier version, but that bug has been fixed in the latest update.\nbut the update has not be release yet as i am doing some tweaks for performance</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168442,
+   "parent_id": null,
+   "author": "aprilsand",
+   "author_id": 118710,
+   "author_url": "https://forge.sp-tarkov.com/user/118710/aprilsand",
+   "created_at": "2026-07-27T18:29:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Maybe the priority of this mod could be increased, similar to how the Wedge mod yields to the Lab Blackout mod. When a random event triggers, its priority should be higher than other mods \u2014 for example, SVM should yield to it during a loot-boost event.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 168465,
+   "parent_id": null,
+   "author": "operator_lucas",
+   "author_id": 105551,
+   "author_url": "https://forge.sp-tarkov.com/user/105551/operator-lucas",
+   "created_at": "2026-07-27T21:02:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello, it\u2019s seems like to me that the raid event changes everytime someone joins a hosted raid (on my case it\u2019s headless Fika). I got a rapid three messages about a raid in Interchange. Is this intended?\n<a href=\"https://codepaste.sp-tarkov.com/?0b8e1eb6e86d1d42#CQdfQ8ZSBfDUnDqLLwmHYEQc9TDWnvrKtnJfvP5n7Bwy\" target=\"_blank\" rel=\"noreferrer noopener\">https://codepaste.sp-tarkov.com/?0b8e1eb6e86d1d42#CQdfQ8ZSBfDUnDqLLwmHYEQc9TDWnvrKtnJfvP5n7Bwy</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168481,
+   "parent_id": 168465,
+   "author": "Cobra",
+   "author_id": 118669,
+   "author_url": "https://forge.sp-tarkov.com/user/118669/cobra",
+   "created_at": "2026-07-27T22:30:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The log shows that Fika calls the raid-start route separately for the headless client, host, and joining players. Dynamic Raid Events is currently selecting an event on each of those requests, which is why you received multiple messages and saw different events for the same raid.\nI\u2019ll update the mod soon (in the middle of a build/addon for it) but i will also apply a update so the host raid selects one event and that same event is reused for the headless client and all joining players. Thanks for reporting this and including the logit clearly identified the issue.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 168482,
+   "parent_id": 168465,
+   "author": "Cobra",
+   "author_id": 118669,
+   "author_url": "https://forge.sp-tarkov.com/user/118669/cobra",
+   "created_at": "2026-07-27T22:35:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>With Fika what is happening and that i overlooked (but will get fixed in the next update)\nThe  server starts the raid \u2192 Dynamic Raid Events rolls Cultist Invasion.\nThe host initializes \u2192 Dynamic Raid Events rolls Normal Raid.\nAnother player joins \u2192 Dynamic Raid Events rolls Cultist Invasion again.</p>\n<p>AGAIN it is still safe to run the mod (if u wish to) but what is happening is basically which event \u201cwins.\u201d\nThe last event selected overwrites the previous ones and that\u2019s the one used in the raid. (if that makes sense)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168517,
+   "parent_id": null,
+   "author": "Chris9051",
+   "author_id": 105070,
+   "author_url": "https://forge.sp-tarkov.com/user/105070/chris9051",
+   "created_at": "2026-07-28T04:10:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>[Dynamic Raid Events] Factory Night: Boss Convention\n[Dynamic Raid Events] Boss Convention skipped: the map contained no usable boss zones.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168550,
+   "parent_id": null,
+   "author": "aprilsand",
+   "author_id": 118710,
+   "author_url": "https://forge.sp-tarkov.com/user/118710/aprilsand",
+   "created_at": "2026-07-28T09:33:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I have an idea for a raid event called \u201cMinecraft\u201d. The effect is that the player\u2019s food/energy drain rate will be increased during the event, but when the food/energy level is above 75%, the player will gradually regenerate health.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168695,
+   "parent_id": null,
+   "author": "overmedikate",
+   "author_id": 118930,
+   "author_url": "https://forge.sp-tarkov.com/user/118930/overmedikate",
+   "created_at": "2026-07-29T03:18:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019ve done a lot of testing with the mod, throughly enjoy it. Is there a way to force multiple events at once? I want a labs run with a bunch of bosses and a bunch of loot that sounds really fun. If not possible with current version pls consider making it possible in future versions&lt;3</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168747,
+   "parent_id": null,
+   "author": "realibility",
+   "author_id": 117863,
+   "author_url": "https://forge.sp-tarkov.com/user/117863/realibility",
+   "created_at": "2026-07-29T09:42:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>IM LOOKING FORWARD FOR MORE EVENTS!!!!11!1!1!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 168754,
+   "parent_id": 168550,
+   "author": "VoidEco",
+   "author_id": 117806,
+   "author_url": "https://forge.sp-tarkov.com/user/117806/voideco",
+   "created_at": "2026-07-29T11:33:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This is very creative, but I think it replaces the original role of in-game medicine. Still, it works pretty well as an Easter egg event.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168755,
+   "parent_id": null,
+   "author": "VoidEco",
+   "author_id": 117806,
+   "author_url": "https://forge.sp-tarkov.com/user/117806/voideco",
+   "created_at": "2026-07-29T11:41:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I noticed that the cover art of your mod features the heavy armored Killa. Do you have any plans to add this boss in the future, or to separate it into a standalone mod?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168762,
+   "parent_id": 168755,
+   "author": "Cobra",
+   "author_id": 118669,
+   "author_url": "https://forge.sp-tarkov.com/user/118669/cobra",
+   "created_at": "2026-07-29T13:04:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Killa was mainly chosen for the cover art because he\u2019s one of the most recognizable bosses in Tarkov and fit the theme I was going for. That said, I have thought about adding him (and possibly other custom boss events) in a future update. It\u2019s definitely on my list of ideas, but my current focus is finishing and polishing the core features of Dynamic Raid Events first to make sure everything is stable. If I do expand into custom bosses or boss-focused events, Killa would definitely be a strong candidate. A standalone mod is also something I\u2019d consider if it ends up being large enough to warrant its own project</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 168763,
+   "parent_id": 168695,
+   "author": "Cobra",
+   "author_id": 118669,
+   "author_url": "https://forge.sp-tarkov.com/user/118669/cobra",
+   "created_at": "2026-07-29T13:08:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m really glad you\u2019re enjoying it, and thanks for taking the time to test it! :)At the moment, the mod is designed to run one event per raid, so combining multiple events (like boss convention + loot multiplier or Raiders + Bosses) isn\u2019t supported in the current version.  That said, a custom event builder or event stacking system is something I\u2019ve been thinking about for a future update. Being able to create your own \u201cchaos\u201d raids, boosted loot, rogues, raiders, or other combinations. I can\u2019t promise when it\u2019ll happen, but it\u2019s definitely an idea I\u2019ll be exploring as the mod continues to grow.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 168764,
+   "parent_id": 168747,
+   "author": "Cobra",
+   "author_id": 118669,
+   "author_url": "https://forge.sp-tarkov.com/user/118669/cobra",
+   "created_at": "2026-07-29T13:09:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Keep you eye out for the next update, There\u2019s gonna be some excited things coming.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 168773,
+   "parent_id": 168695,
+   "author": "overmedikate",
+   "author_id": 118930,
+   "author_url": "https://forge.sp-tarkov.com/user/118930/overmedikate",
+   "created_at": "2026-07-29T14:26:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yippee! Looking forward to the new update</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168790,
+   "parent_id": 168747,
+   "author": "realibility",
+   "author_id": 117863,
+   "author_url": "https://forge.sp-tarkov.com/user/117863/realibility",
+   "created_at": "2026-07-29T16:20:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i got molested by all the bosses in the woods btw :steamhappy:</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 168799,
+   "parent_id": 168067,
+   "author": "A_vi",
+   "author_id": 91441,
+   "author_url": "https://forge.sp-tarkov.com/user/91441/a-vi",
+   "created_at": "2026-07-29T17:07:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>appreciate this being the priority, the main thing keeping me from installing more mods is compatibility issues with certain framework mods</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168804,
+   "parent_id": 168747,
+   "author": "Cobra",
+   "author_id": 118669,
+   "author_url": "https://forge.sp-tarkov.com/user/118669/cobra",
+   "created_at": "2026-07-29T18:12:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>HAHA try it on Labs :P opps shhhhhh</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170174,
+   "parent_id": null,
+   "author": "Kill-DG",
+   "author_id": 119183,
+   "author_url": "https://forge.sp-tarkov.com/user/119183/kill-dg",
+   "created_at": "2026-08-04T15:03:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Some event ideas if they\u2019re possible</p>\n<p>[Scav Concentrate]\nall the scavs on event raid are in one area, building. bumping into the area/space causing you to counter a whole army of scavs you happen to bump into.</p>\n<p>[Angry BTR]\nthe BTR fires on everyone</p>\n<p>[Scav Mega Squad]\nhave 10/15/20 scavs patrol the map in open spaces/streets. seeing a huge group moving as one unit, kinda how the follow you around if you fire a green flare.</p>\n<p>[PMC Sweep]\nno scavs, just a larger number of PMC units fighting it out</p>\n<p>[Exploisve Scav Units]\nScavs load in with a 50/75% chance to have nade/rocket launcher.</p>\n<p>[Outbreak]\nzombies?</p>\n<p>[GEARED]\nall scavs/pmc have highest tier armor/guns/ammo</p>\n<p>[Get Handy/I Have a Shot/Marksman]\nall pmcs/scavs only have handguns / shotguns / sniper rifle</p>\n<p>[He Wont Die]\nhave one scav/pmc has 4x the health</p>\n<p>[Extreme Overwatch]\nall maps with top side snipers has their numbers increased 5x</p>\n<p>[Overloaded]\nall scavs/PMCS have 100 mag clips/drums.</p>\n<p>[Forced Exit]\nlike when BSG pushes out an update/patch and the server timer gets reduced to 10 minutes 5 or 10 minutes into the raid.</p>\n<p>[We Tried Peace]\nno one on the map is aggressive until someone takes damage/gets killed then the AI gets super aggressive.</p>\n<p>[Storms Coming]\nonly method i can think of effecting weather is rain sounds, if at the start of the raid rain sound starts at 10% and as the raid progressives the rain sound gets louder and louder. if able to have the rain sound be just as loud as gunshots it would really wash everything out like footsteps, call outs making it really hard to hear</p>\n<p>[Wrong Time]\nhave the time the raid starts push forward 12 hours, thinking you\u2019re coming in at dawn but its dusk.. expecting a night raid but its bright..</p>\n<p>[INCOMING]\nScavs/PMC have blue flares rather than nades and use them as they would nades.</p>\n<p>[Smokers Lobby]\nScavs throw a large number of smoke, every where.</p>\n<p>[Kollontay Effect]\nall scavs and PMCS cause the kollontay gun jamming effect</p>\n<p>[Matrix Glitch]\nall scavs/pmcs have the same outfit load out or single outfit for PMCS and another for Scavs</p>\n<p>[SHUT UP]\nPMCS and Scavs wont shut up, keep yelling the entire time.</p>\n<p>[No Safe Space]\nnumber of pmc/scav spawns is multiplied by 3</p>\n<p>[Limit Reached]\nas soon as you get 10 kills, the raid timer alerts that you have 5 minutes to get off map.</p>\n<p>[Leg Rippers]\nall foes only shoot at feet.</p>\n<p>[Instant Conflict]\nall spawns are near your spawn, so if you spawn in the mall/streets. everyone spawn is near there causing instant fire fights.</p>\n<p>[Full Access]\nall doors are open/unlocked.</p>\n<p>[Wrong Signal]\nincrease the spawn chance of red flares so there\u2019s all over the place but if you fire one, the whole map aggros on you like tagged and cursed.</p>\n<p>[Posers Everywhere] all scavs/pmc load in kitted as Killa</p>\n<p>[Fake Cult] everyone has the cultist outfit on</p>\n<p>\u2026hope some of these are helpful as i love this mod and the idea that each raid could be something completely different</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 3
+  },
+  {
+   "id": 170767,
+   "parent_id": null,
+   "author": "Danduschka",
+   "author_id": 119273,
+   "author_url": "https://forge.sp-tarkov.com/user/119273/danduschka",
+   "created_at": "2026-08-07T19:54:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>compatible with SAIN?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170974,
+   "parent_id": null,
+   "author": "SlipKangourou",
+   "author_id": 110014,
+   "author_url": "https://forge.sp-tarkov.com/user/110014/slipkangourou",
+   "created_at": "2026-08-08T18:51:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Do we get a notification for the event ?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

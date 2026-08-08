@@ -1,0 +1,280 @@
+{
+ "mod_id": 2560,
+ "slug": "keyhunter",
+ "fetched_at": "2026-08-08T22:01:38Z",
+ "reported_total": 11,
+ "pages": 2,
+ "count": 27,
+ "comments": [
+  {
+   "id": 151019,
+   "parent_id": null,
+   "author": "Gleneth",
+   "author_id": 26904,
+   "author_url": "https://forge.sp-tarkov.com/user/26904/gleneth",
+   "created_at": "2026-01-25T18:32:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Throws errors when trying to load in raid, signs out the user and just loads forever.</p>\n<p>Maybe a conflict with lots of loot (use to use the old versions of these together, so i was testing)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 151026,
+   "parent_id": 151019,
+   "author": "miXXed",
+   "author_id": 95306,
+   "author_url": "https://forge.sp-tarkov.com/user/95306/mixxed",
+   "created_at": "2026-01-25T19:50:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for the bug report! You were spot on. It was indeed a conflict with \u201cLots of Loot\u201d.</p>\n<p><strong>What happened:</strong>\nThe config contained some IDs that \u201cLots of Loot\u201d couldn\u2019t handle, causing the server to crash during raid loading and signing you out.</p>\n<p><strong>The fix:</strong>\nI\u2019ve removed all problematic IDs from the config. The mod now works flawlessly alongside \u201cLots of Loot\u201d!</p>\n<p><strong>Update v1.0.1 will be released shortly with the fix.</strong></p>\n<p>Thanks for your patience and for helping me identify this issue! If you encounter any other problems, feel free to let me know.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 151034,
+   "parent_id": 151019,
+   "author": "Gleneth",
+   "author_id": 26904,
+   "author_url": "https://forge.sp-tarkov.com/user/26904/gleneth",
+   "created_at": "2026-01-25T20:17:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Always, thanks! Testing now</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 151035,
+   "parent_id": 151019,
+   "author": "Gleneth",
+   "author_id": 26904,
+   "author_url": "https://forge.sp-tarkov.com/user/26904/gleneth",
+   "created_at": "2026-01-25T20:26:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Throws the same error. Maybe its a modified item?</p>\n<p>this is what it says before the crash</p>\n<p>[Lots of Loot Redux] HandleStaticLootLazyLoad finished, took 6ms\n[Lots of Loot Redux] 5979eee086f774311955e614 has no template?\n(Its the Golden Swag Door Key i believe {Trailer park portable cabin key x1})</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 151036,
+   "parent_id": null,
+   "author": "markopas",
+   "author_id": 10578,
+   "author_url": "https://forge.sp-tarkov.com/user/10578/markopas",
+   "created_at": "2026-01-25T20:29:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You should have mod folder in zip or spt/user/mods/keyhunter\nnow its only files and you have to create folder, gonna be problematic for some</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 151038,
+   "parent_id": 151019,
+   "author": "miXXed",
+   "author_id": 95306,
+   "author_url": "https://forge.sp-tarkov.com/user/95306/mixxed",
+   "created_at": "2026-01-25T20:56:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You\u2019re right - this is another ID that Lots of Loot Redux doesn\u2019t have a template for.\nI\u2019ve updated the config to remove it.</p>\n<p>Please re-download the v1.0.1 and replace the entire KeyHunter folder, then try again.\nLet me know if the issue persists.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151040,
+   "parent_id": 151019,
+   "author": "Gleneth",
+   "author_id": 26904,
+   "author_url": "https://forge.sp-tarkov.com/user/26904/gleneth",
+   "created_at": "2026-01-25T21:04:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>update is golden will let you know if anything else pops up</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 151041,
+   "parent_id": 151019,
+   "author": "miXXed",
+   "author_id": 95306,
+   "author_url": "https://forge.sp-tarkov.com/user/95306/mixxed",
+   "created_at": "2026-01-25T21:39:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Awesome, thanks for confirming!\nAppreciate you testing it</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 151043,
+   "parent_id": 151036,
+   "author": "miXXed",
+   "author_id": 95306,
+   "author_url": "https://forge.sp-tarkov.com/user/95306/mixxed",
+   "created_at": "2026-01-25T21:57:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Good catch, thanks for pointing that out!</p>\n<p>The archive now includes the correct folder structure.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151044,
+   "parent_id": null,
+   "author": "Mattdokn",
+   "author_id": 41131,
+   "author_url": "https://forge.sp-tarkov.com/user/41131/mattdokn",
+   "created_at": "2026-01-25T22:02:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>On Reserve there\u2019s also these keys to remove</p>\n<p>59c9392986f7742f6923add2</p>\n<p>5979eee086f774311955e614</p>\n<p>I think it\u2019d be best to try and load all the maps and make sure theres no other issues.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 151046,
+   "parent_id": 151044,
+   "author": "miXXed",
+   "author_id": 95306,
+   "author_url": "https://forge.sp-tarkov.com/user/95306/mixxed",
+   "created_at": "2026-01-25T22:48:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for checking!</p>\n<p>Those IDs are already removed in the latest version.\nPlease re-download the mod and replace the entire KeyHunter folder (DLL + config.json), then try again.</p>\n<p>Let me know if you still see any issues.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151047,
+   "parent_id": 151044,
+   "author": "Mattdokn",
+   "author_id": 41131,
+   "author_url": "https://forge.sp-tarkov.com/user/41131/mattdokn",
+   "created_at": "2026-01-25T22:55:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Ah gotcha, didnt realize you were updating the same version\nthank you!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 151109,
+   "parent_id": null,
+   "author": "Mattdokn",
+   "author_id": 41131,
+   "author_url": "https://forge.sp-tarkov.com/user/41131/mattdokn",
+   "created_at": "2026-01-26T16:52:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>How does the configurable spawn chance entry work? Raising it increases probability of keys?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 151121,
+   "parent_id": 151109,
+   "author": "miXXed",
+   "author_id": 95306,
+   "author_url": "https://forge.sp-tarkov.com/user/95306/mixxed",
+   "created_at": "2026-01-26T19:07:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Higher value = more keys, lower value = fewer keys.</p>\n<p>The current default (2500.0) is still being tuned and can result in multiple keys spawning at once, so feel free to adjust it to your preference. &lt;3</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151124,
+   "parent_id": 151109,
+   "author": "Mattdokn",
+   "author_id": 41131,
+   "author_url": "https://forge.sp-tarkov.com/user/41131/mattdokn",
+   "created_at": "2026-01-26T19:34:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you! I appreciate the mod, it\u2019s been really nice so far.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 151308,
+   "parent_id": null,
+   "author": "Damien720",
+   "author_id": 55427,
+   "author_url": "https://forge.sp-tarkov.com/user/55427/damien720",
+   "created_at": "2026-01-28T21:24:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>there a reason Rusted bloody key is not on the list?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 151318,
+   "parent_id": 151308,
+   "author": "miXXed",
+   "author_id": 95306,
+   "author_url": "https://forge.sp-tarkov.com/user/95306/mixxed",
+   "created_at": "2026-01-28T23:50:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Nope, no hidden logic there .. just human error .. x)\nLooks like the Rusted Bloody Key slipped past my tired eyes.</p>\n<p>Thanks for catching it, I\u2019ll add it in the next update! &lt;3</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 151728,
+   "parent_id": null,
+   "author": "firstname lastName",
+   "author_id": 53338,
+   "author_url": "https://forge.sp-tarkov.com/user/53338/firstname-lastname",
+   "created_at": "2026-02-02T07:38:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>As a KIL user this is interesting. The description says KeyHunter doesn\u2019t affect loot balance but what does that mean? For example If we set a value of 999999 would a duffel bag be full of 12 random keys? I felt like high values in KIL replaced whatever loot could have been inside a jacket/duffel/dead scav.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 151762,
+   "parent_id": 151728,
+   "author": "miXXed",
+   "author_id": 95306,
+   "author_url": "https://forge.sp-tarkov.com/user/95306/mixxed",
+   "created_at": "2026-02-02T19:43:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Good question, and that\u2019s a valid concern.</p>\n<p>KeyHunter does not remove or replace any existing vanilla loot entries. It only adds keys to the loot pool of the selected containers using Tarkov\u2019s relative probability system.</p>\n<p>However, very high values will strongly skew the loot roll in favor of keys. In that case, keys can dominate the container\u2019s rolls and effectively crowd out other items, which can feel like the original loot was replaced.</p>\n<p>So it\u2019s not a hard replacement done by the mod, but a result of how Tarkov\u2019s loot weighting works. This is why the default value is kept much lower and meant to be adjusted gradually.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 152122,
+   "parent_id": null,
+   "author": "NorvinskSila",
+   "author_id": 62991,
+   "author_url": "https://forge.sp-tarkov.com/user/62991/norvinsksila",
+   "created_at": "2026-02-07T01:50:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Didn\u2019t work properly for me. Doesn\u2019t matter the values of parameters, all the items in containers are keys. After deleting the mod - those containers remained empty. What causes this conflict, would be hard to deduct, because I\u2019ve collected a bundle of at least 35 mods.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 152169,
+   "parent_id": 152122,
+   "author": "miXXed",
+   "author_id": 95306,
+   "author_url": "https://forge.sp-tarkov.com/user/95306/mixxed",
+   "created_at": "2026-02-07T12:54:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey, thanks for the feedback! A few things to check:</p>\n<ol>\n<li>What\u2019s your <code>baseKeySpawnChance</code> set to in config.json? The default is 500 - higher values will make keys more dominant in containers.</li>\n<li>Are you running any other loot mods (like LotsOfLoot)? They can multiply the effect.</li>\n</ol>\n<p>If you can share your config.json and your full mod list, I can help narrow it down. Maybe in private chat?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 152448,
+   "parent_id": 151728,
+   "author": "firstname lastName",
+   "author_id": 53338,
+   "author_url": "https://forge.sp-tarkov.com/user/53338/firstname-lastname",
+   "created_at": "2026-02-09T20:27:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Very cool, thanks for the info!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 152709,
+   "parent_id": null,
+   "author": "thegiggitybyte",
+   "author_id": 53535,
+   "author_url": "https://forge.sp-tarkov.com/user/53535/thegiggitybyte",
+   "created_at": "2026-02-12T00:19:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Does this work properly with Fika?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 154474,
+   "parent_id": 152122,
+   "author": "NorvinskSila",
+   "author_id": 62991,
+   "author_url": "https://forge.sp-tarkov.com/user/62991/norvinsksila",
+   "created_at": "2026-03-08T22:46:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey mate! Apparently your message was buried under notifications to a ton of messages in treads I didn\u2019t participate. Seems like I\u2019m getting auto-subscribed to every mod discussion I was present in, receiving every new message from those pages. Sorry for discovering the answer this late. Unfortunately, I was rage-deleting SPT 4 every few days after trying some of the new patches. Weapon packs cross-compatibility issues are more important now, because the software doesn\u2019t know how to process new items in relation to vanila and other non-vanila ones and crashes in the beginning of the raid. baseKeySpawChance - I believe I was trying both default one and edited the value, nothing changed. LotsOfLoot could be a culprit, and I believe I tried tweaking it\u2019s values for a while to make your mod work, but not much understanding of a process was present besides what\u2019s written in descriptional lines. So, yeah\u2026 Installing SPT with my 10Mbps internet takes up to few days sometimes, I\u2019m not willing to go on that journey again for a while, but I\u2019ll let you know when I\u2019ll be ready to run some tests and provide some logs.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 158276,
+   "parent_id": null,
+   "author": "W_W",
+   "author_id": 49277,
+   "author_url": "https://forge.sp-tarkov.com/user/49277/w-w",
+   "created_at": "2026-04-28T04:16:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I haven\u2019t tried this mod yet but I wanted to check if you can leave this at default values with the exception of the bloodied key (which for me has achieved mythical levels of existence)?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 167578,
+   "parent_id": null,
+   "author": "Tabi",
+   "author_id": 14096,
+   "author_url": "https://forge.sp-tarkov.com/user/14096/tabi",
+   "created_at": "2026-07-23T01:28:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I keep finding placeholder keys like \u201ckey 5\u201d that just do nothing and are worth 65 roubles, weird</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170611,
+   "parent_id": null,
+   "author": "Super_Lopez",
+   "author_id": 57052,
+   "author_url": "https://forge.sp-tarkov.com/user/57052/super-lopez",
+   "created_at": "2026-08-06T18:32:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I have a problem I found weird keys when I finish the raid show problems all time with that keys.\nSpecially keys from Labyrinth and other weird keys unknown.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

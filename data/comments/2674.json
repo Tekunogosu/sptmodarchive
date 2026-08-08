@@ -1,0 +1,340 @@
+{
+ "mod_id": 2674,
+ "slug": "realisticfrag",
+ "fetched_at": "2026-08-08T22:36:21Z",
+ "reported_total": 18,
+ "pages": 2,
+ "count": 33,
+ "comments": [
+  {
+   "id": 158273,
+   "parent_id": null,
+   "author": "ssal_pt",
+   "author_id": 90209,
+   "author_url": "https://forge.sp-tarkov.com/user/90209/ssal-pt",
+   "created_at": "2026-04-28T02:56:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I found the mod description very interesting. I use ammo added by mods, and I have a question.</p>\n<p>Ammo added by mods is usually a clone of the base vanilla ammo. Does mod ammo follow the fragmentation pattern of the base vanilla ammo?</p>\n<p>For example, let\u2019s look at the Ammo_config.json for WTT - Content Backport. The 7.62x25mm TT M995 (68c15f77ed3d7df9220debd6) ammo is an itemTplToClone of the 7.62x25mm TT AKBS (5735fdcd2459776445391d61). Therefore, I am wondering if, when the Content Backport 7.62x25mm TT M995 hits something and fragments, it follows the fragmentation pattern of the vanilla 7.62x25mm TT AKBS.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 158275,
+   "parent_id": 158273,
+   "author": "EchoStarz",
+   "author_id": 34745,
+   "author_url": "https://forge.sp-tarkov.com/user/34745/echostarz",
+   "created_at": "2026-04-28T03:07:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The short answer is no, cloned ammo from other mods does not inherit RealisticFrag\u2019s behavior. The longer \u201cwhy\u201d matters, since it\u2019s two separate questions in one:</p>\n<p>Does RealisticFrag override the cloned ammo? RealisticFrag works by exact template-ID lookup. The 7.62\u00d725 AKBS entry (5735fdcd2459776445391d61) is in my config, so AKBS gets the modified frag chance and velocity gating. The WTT-Content-Backport M995 has its own unique template ID (68c15f77ed3d7df9220debd6), and that ID is not in my config, so neither the server-side override nor the client-side velocity gate runs for it. The same applies to any modded ammo cloned from a vanilla parent.</p>\n<p>Does the clone at least inherit the modified base values? Also no. When SPT clones an item via itemTplToClone, it deep-copies the source\u2019s _props at the moment the clone runs and registers the result as a fully independent template. RealisticFrag declares [Injectable(TypePriority = OnLoadOrder.PostDBModLoader + 1)], which makes it run one tick after the standard PostDBModLoader priority that cloning mods use, so cloning happens first against vanilla AKBS. Realisticfrag modifies the AKBS template afterward, and the clone keeps its original snapshot. Even if the order were reversed, the clone would only carry a frozen snapshot of whatever values existed at clone time; it wouldn\u2019t track later edits to the parent.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 3
+  },
+  {
+   "id": 158277,
+   "parent_id": null,
+   "author": "Nekofur",
+   "author_id": 101848,
+   "author_url": "https://forge.sp-tarkov.com/user/101848/nekofur",
+   "created_at": "2026-04-28T04:50:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>What is SPT Mods Installer.exe? I\u2019ve always installed mods by just extracting them directly\u2014didn\u2019t know you could use a tool for one-click installation like that!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 158292,
+   "parent_id": null,
+   "author": ".sladoledar",
+   "author_id": 109147,
+   "author_url": "https://forge.sp-tarkov.com/user/109147/sladoledar",
+   "created_at": "2026-04-28T09:41:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>What is fragmentation chance supposed to do anyway? I tried to search about this online, but the only information I got is that this value is not used in vanilla at all.\n<a href=\"https://x.com/Kleanisklean/status/1762311503057764804\" target=\"_blank\" rel=\"noreferrer noopener\">https://x.com/Kleanisklean/status/1762311503057764804</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 158293,
+   "parent_id": null,
+   "author": "archon001",
+   "author_id": 110089,
+   "author_url": "https://forge.sp-tarkov.com/user/110089/archon001",
+   "created_at": "2026-04-28T11:13:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Fire mod. Great stuff!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 158301,
+   "parent_id": null,
+   "author": "NRK.Z",
+   "author_id": 96373,
+   "author_url": "https://forge.sp-tarkov.com/user/96373/nrkz",
+   "created_at": "2026-04-28T12:43:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>now thats what i call a mod, thank you Echo for delivering a banger</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 158303,
+   "parent_id": null,
+   "author": "Sitaro19",
+   "author_id": 83710,
+   "author_url": "https://forge.sp-tarkov.com/user/83710/sitaro19",
+   "created_at": "2026-04-28T13:14:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>which version should I download?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 158305,
+   "parent_id": 158303,
+   "author": "EchoStarz",
+   "author_id": 34745,
+   "author_url": "https://forge.sp-tarkov.com/user/34745/echostarz",
+   "created_at": "2026-04-28T13:44:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Either work, there are no actual file changes between the two</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 158308,
+   "parent_id": 158292,
+   "author": "EchoStarz",
+   "author_id": 34745,
+   "author_url": "https://forge.sp-tarkov.com/user/34745/echostarz",
+   "created_at": "2026-04-28T14:06:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Mechanically, when a bullet \u201cfragments\u201d in EFT, it stops behaving like a single projectile that deals damage to one body part and instead breaks apart inside the target. The engine spawns several extra damage events across the body zones surrounding the hit, using the round\u2019s <code>MinFragmentsCount</code> and <code>MaxFragmentsCount</code> values to decide how many fragments. So a single torso shot from a fragmenting round can deal damage to the thorax, stomach, and an arm in one hit, rather than just punching a clean hole through the thorax. The wound channel is wider, more body parts get hit, and bleeding is more likely to land on multiple zones</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 158310,
+   "parent_id": 158277,
+   "author": "EchoStarz",
+   "author_id": 34745,
+   "author_url": "https://forge.sp-tarkov.com/user/34745/echostarz",
+   "created_at": "2026-04-28T14:15:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>big shoutout to them and their stuff that they make, its always been nice to have</p>\n<p><a href=\"https://forge.sp-tarkov.com/mod/1252/spt-mods-installer\" target=\"_blank\" rel=\"noreferrer noopener\">https://forge.sp-tarkov.com/mod/1252/spt-mods-installer</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 158312,
+   "parent_id": null,
+   "author": "EchoStarz",
+   "author_id": 34745,
+   "author_url": "https://forge.sp-tarkov.com/user/34745/echostarz",
+   "created_at": "2026-04-28T14:17:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>If you guys have any recs on changes or new mods i would love to hear them</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 158338,
+   "parent_id": null,
+   "author": "TeaCrab131",
+   "author_id": 29071,
+   "author_url": "https://forge.sp-tarkov.com/user/29071/teacrab131",
+   "created_at": "2026-04-28T20:34:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I thought Fontaine came out with a submodule of Realism just now.  :D</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 158352,
+   "parent_id": 158338,
+   "author": "EchoStarz",
+   "author_id": 34745,
+   "author_url": "https://forge.sp-tarkov.com/user/34745/echostarz",
+   "created_at": "2026-04-28T23:59:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I did have a bit of inspiration from them</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 158359,
+   "parent_id": null,
+   "author": "egbog",
+   "author_id": 169,
+   "author_url": "https://forge.sp-tarkov.com/user/169/egbog",
+   "created_at": "2026-04-29T02:52:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>What is the history on fragmentation? I remember seeing posts a few years back saying it was removed entirely, is this not the case?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 158396,
+   "parent_id": 158292,
+   "author": ".sladoledar",
+   "author_id": 109147,
+   "author_url": "https://forge.sp-tarkov.com/user/109147/sladoledar",
+   "created_at": "2026-04-29T09:48:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Interesting, thanks for explaining it.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 158419,
+   "parent_id": 158359,
+   "author": "EchoStarz",
+   "author_id": 34745,
+   "author_url": "https://forge.sp-tarkov.com/user/34745/echostarz",
+   "created_at": "2026-04-29T15:02:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It was never actually fully removed, BSG just nerfed it into the ground and also removed it for a good amount of the ammos.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 158499,
+   "parent_id": null,
+   "author": "Gaylord__Robinson",
+   "author_id": 38849,
+   "author_url": "https://forge.sp-tarkov.com/user/38849/gaylord-robinson",
+   "created_at": "2026-04-30T12:24:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>As someone who is real interested in all this stuff, and is trying to make their own project where I try to simulate ballistics accurately, could you please link your sources? I did read the description of the mod, but am struggling to find the tables you mentioned on the M4 Carbine forums.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 158501,
+   "parent_id": null,
+   "author": "Nekofur",
+   "author_id": 101848,
+   "author_url": "https://forge.sp-tarkov.com/user/101848/nekofur",
+   "created_at": "2026-04-30T12:29:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I used SPT Mods Installer.exe, but it displayed the following content. Why is that?<br />\nSPT4.0.13</p>\n<p>Mod RealisticFrag-1.0.0 contains unsupported filetypes.</p>\n<p>It will be skipped, please urge mod authors to pack their SPT mods\naccording to the Forge guidelines.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 158509,
+   "parent_id": 158499,
+   "author": "EchoStarz",
+   "author_id": 34745,
+   "author_url": "https://forge.sp-tarkov.com/user/34745/echostarz",
+   "created_at": "2026-04-30T13:49:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I used a combination of a bunch of different sources to cross-check my information to make sure none was skewed in one direction or the other, i used over 10 sources to try and assemble it accurately</p>\n<p><a href=\"https://m4carbine.net/\" target=\"_blank\" rel=\"noreferrer noopener\">https://m4carbine.net/</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 158875,
+   "parent_id": null,
+   "author": "Kojimbo0_0",
+   "author_id": 77629,
+   "author_url": "https://forge.sp-tarkov.com/user/77629/kojimbo0-0",
+   "created_at": "2026-05-03T06:49:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Does this change the damage rounds do? I want a faster TTK</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 158897,
+   "parent_id": 158875,
+   "author": "EchoStarz",
+   "author_id": 34745,
+   "author_url": "https://forge.sp-tarkov.com/user/34745/echostarz",
+   "created_at": "2026-05-03T14:23:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It gives the potential for each round to do more damage, so yes</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 160512,
+   "parent_id": null,
+   "author": "Destich",
+   "author_id": 33474,
+   "author_url": "https://forge.sp-tarkov.com/user/33474/destich",
+   "created_at": "2026-05-22T02:26:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Request for 4.0.11.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 160640,
+   "parent_id": null,
+   "author": "Totallynotzugg",
+   "author_id": 72039,
+   "author_url": "https://forge.sp-tarkov.com/user/72039/totallynotzugg",
+   "created_at": "2026-05-23T16:08:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey does this work with FIKA?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 161242,
+   "parent_id": 160640,
+   "author": "EchoStarz",
+   "author_id": 34745,
+   "author_url": "https://forge.sp-tarkov.com/user/34745/echostarz",
+   "created_at": "2026-06-01T04:18:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I believe it does from my experience</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 161581,
+   "parent_id": 158273,
+   "author": "Wrath_Jr",
+   "author_id": 71782,
+   "author_url": "https://forge.sp-tarkov.com/user/71782/wrath-jr",
+   "created_at": "2026-06-04T02:50:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>does that mean that using your mod with modded ammo mods would make the vanilla ammo superior ?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 162249,
+   "parent_id": null,
+   "author": "drollercandy",
+   "author_id": 87360,
+   "author_url": "https://forge.sp-tarkov.com/user/87360/drollercandy",
+   "created_at": "2026-06-09T19:28:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is there any planned compatibility for weapon packs that add ammo? like ecos WWII.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 162282,
+   "parent_id": 162249,
+   "author": "EchoStarz",
+   "author_id": 34745,
+   "author_url": "https://forge.sp-tarkov.com/user/34745/echostarz",
+   "created_at": "2026-06-10T03:42:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Unfortunately, I would have to go and find all of their ammos tags for every weapon ammo mod so i dont think i will sadly</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 162283,
+   "parent_id": 158273,
+   "author": "EchoStarz",
+   "author_id": 34745,
+   "author_url": "https://forge.sp-tarkov.com/user/34745/echostarz",
+   "created_at": "2026-06-10T03:42:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>that is a potential if the ammo is a fragmenting type, it would be up to the mod author to have their ammo fragment properly</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 162285,
+   "parent_id": 160512,
+   "author": "EchoStarz",
+   "author_id": 34745,
+   "author_url": "https://forge.sp-tarkov.com/user/34745/echostarz",
+   "created_at": "2026-06-10T03:44:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>sorry, i do not plan on doing that</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 162302,
+   "parent_id": 158273,
+   "author": "Wrath_Jr",
+   "author_id": 71782,
+   "author_url": "https://forge.sp-tarkov.com/user/71782/wrath-jr",
+   "created_at": "2026-06-10T08:39:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>gotcha thanks for the answer</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 164799,
+   "parent_id": null,
+   "author": "johnathanbelle",
+   "author_id": 114433,
+   "author_url": "https://forge.sp-tarkov.com/user/114433/johnathanbelle",
+   "created_at": "2026-07-01T04:10:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>does this mod change velocity of rounds? after installing i noticed that .50bmg flies a lot further than usual and did not need to be zeroed to an enemy\u2019s distance resulting in a lot of missed shots.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 167309,
+   "parent_id": null,
+   "author": "ferret5.56",
+   "author_id": 118501,
+   "author_url": "https://forge.sp-tarkov.com/user/118501/ferret556",
+   "created_at": "2026-07-21T07:03:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>What mod adds the m193 for 556?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170774,
+   "parent_id": null,
+   "author": "MercyCold",
+   "author_id": 118079,
+   "author_url": "https://forge.sp-tarkov.com/user/118079/mercycold",
+   "created_at": "2026-08-07T20:13:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>is it compatibel with the P.L.A.T.E mod or does it make issues?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

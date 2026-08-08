@@ -1,0 +1,180 @@
+{
+ "mod_id": 1765,
+ "slug": "the-cat-burglar",
+ "fetched_at": "2026-08-08T22:05:43Z",
+ "reported_total": null,
+ "pages": 1,
+ "count": 17,
+ "comments": [
+  {
+   "id": 42011,
+   "parent_id": null,
+   "author": "Darezi",
+   "author_id": 51804,
+   "author_url": "https://forge.sp-tarkov.com/user/51804/darezi",
+   "created_at": "2024-10-12T15:55:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m getting this error with this mod and when I delete it the error is gone.<br />\nThe game loads the mod and the trader is shown and the keys!</p>\n<p>ModLoader: Error when loading async mod: Unable to find trader: CatBurglar in database Error: Unable to find trader: CatBurglar in database at DatabaseService.getTrader (C:\\snapshot\\src\\services\\DatabaseService.ts:306:19) at TraderHelper.getHighestSellToTraderPrice (C:\\snapshot\\src\\helpers\\TraderHelper.ts:482:53) at Function.updatePrices (C:\\Games\\Escape from Tarkov\\user\\mods\\zzDrakiaXYZ-LiveFleaPrices\\src\\mod.ts:134:50) at Mod.postDBLoadAsync (C:\\Games\\Escape from Tarkov\\user\\mods\\zzDrakiaXYZ-LiveFleaPrices\\src\\mod.ts:46:24) at PostDBModLoader.executeModsAsync (C:\\snapshot\\src\\loaders\\PostDBModLoader.ts:51:60) at PostDBModLoader.onLoad (C:\\snapshot\\src\\loaders\\PostDBModLoader.ts:26:13) at App.load (C:\\snapshot\\src\\utils\\App.ts:51:13)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 118347,
+   "parent_id": 42011,
+   "author": "LeftHandedCat",
+   "author_id": 64759,
+   "author_url": "https://forge.sp-tarkov.com/user/64759/lefthandedcat",
+   "created_at": "2024-10-12T17:52:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This error occured because you have a custom load order that doesn\u2019t include this trader, so it is being loaded AFTER Drakia\u2019s Live Flea Prices mod. make sure if you do have an order.json that this mod is loaded BEFORE Live Flea Prices or it will fail to find my trader because it hasn\u2019t been loaded yet.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 42029,
+   "parent_id": null,
+   "author": "bepis69",
+   "author_id": 5192,
+   "author_url": "https://forge.sp-tarkov.com/user/5192/bepis69",
+   "created_at": "2024-10-12T23:54:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Was \u201cno flea playthrough\u201d an intentional pun because he\u2019s a cat?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 3
+  },
+  {
+   "id": 118358,
+   "parent_id": 42029,
+   "author": "LeftHandedCat",
+   "author_id": 64759,
+   "author_url": "https://forge.sp-tarkov.com/user/64759/lefthandedcat",
+   "created_at": "2024-10-13T00:50:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>it wasn\u2019t, but that is a delightful pun</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 118366,
+   "parent_id": 42011,
+   "author": "Darezi",
+   "author_id": 51804,
+   "author_url": "https://forge.sp-tarkov.com/user/51804/darezi",
+   "created_at": "2024-10-13T09:47:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thx, that helped!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 45252,
+   "parent_id": null,
+   "author": "LeftHandedCat",
+   "author_id": 64759,
+   "author_url": "https://forge.sp-tarkov.com/user/64759/lefthandedcat",
+   "created_at": "2024-12-18T23:39:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I have a beta version of this for 3.10 but due to a family emergency I am not at home and cannot test this, if you would like to test this please make a backup of your profile before installing it since traders uninstalling traders can cause issues with profile corruption, then please report back here or on github if it works or not so i can either fix it or publish it as an official release. Thanks! <a href=\"https://github.com/jonjetjon/cat-burglar-trader/releases/tag/v1.0.2\" target=\"_blank\" rel=\"noreferrer noopener\">https://github.com/jonjetjon/cat-burglar-trader/releases/tag/v1.0.2</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 123228,
+   "parent_id": 45252,
+   "author": "Sasuke_Kun",
+   "author_id": 36558,
+   "author_url": "https://forge.sp-tarkov.com/user/36558/sasuke-kun",
+   "created_at": "2024-12-30T16:54:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Works fine so far. Thank you !</p>\n<p>If i enccounter any issues. i will let you now here.</p>\n<p>God Bless ur fam \u2026..</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 123344,
+   "parent_id": 45252,
+   "author": "LeftHandedCat",
+   "author_id": 64759,
+   "author_url": "https://forge.sp-tarkov.com/user/64759/lefthandedcat",
+   "created_at": "2024-12-31T23:50:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>awesome! i really appreciate you taking the time to test that, i\u2019ll get the new version published to the main page. it\u2019s just hard to publish something that might not work since removing traders bricks profiles so i have to get it right the first time</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 47176,
+   "parent_id": null,
+   "author": "Wrath_Jr",
+   "author_id": 71782,
+   "author_url": "https://forge.sp-tarkov.com/user/71782/wrath-jr",
+   "created_at": "2025-01-20T21:10:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello, I love this mod and its functional aspect, however, could you help me to change the trader name? Is it possible? I have changed the picture, but I cant manage to change the name</p>\n<p>Would be awesome, thanks a lot</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 125581,
+   "parent_id": 47176,
+   "author": "LeftHandedCat",
+   "author_id": 64759,
+   "author_url": "https://forge.sp-tarkov.com/user/64759/lefthandedcat",
+   "created_at": "2025-01-27T18:17:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i would be wary of changing too much if your profile already has the trader saved in it, SPT profiles REALLY don\u2019t like having traders changed on them and it tends to corrupt things. However the information for the trader is all in /db/base.json</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 125642,
+   "parent_id": 47176,
+   "author": "Wrath_Jr",
+   "author_id": 71782,
+   "author_url": "https://forge.sp-tarkov.com/user/71782/wrath-jr",
+   "created_at": "2025-01-28T15:06:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yes, thanks for the advices, but I couldn\u2019t change the trader name, the avatar doesnt show up anymore if I do it, even if I change name on the avatar file</p>\n<p>I guess its too much of a struggle for the little change it does so it will remain with this name lol</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 125656,
+   "parent_id": 47176,
+   "author": "LeftHandedCat",
+   "author_id": 64759,
+   "author_url": "https://forge.sp-tarkov.com/user/64759/lefthandedcat",
+   "created_at": "2025-01-28T18:12:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>like i said spt <strong>REALLY</strong> doesn\u2019t like it when you make changes to traders that are already stored inside your profile, it tends to break <strong>EVERYTHING</strong> , this is why i had to wait to make changes until the release of 3.10 because any change I made would brick the trader or brick the profiles that were using the trader</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 150810,
+   "parent_id": null,
+   "author": "LeftHandedCat",
+   "author_id": 64759,
+   "author_url": "https://forge.sp-tarkov.com/user/64759/lefthandedcat",
+   "created_at": "2026-01-22T01:00:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This mod has finally been updated to support 4.0.11, I would recommend a backup of your profiles before installing since adding traders can be irreversible but there should be no issues.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 150825,
+   "parent_id": null,
+   "author": "Darezi",
+   "author_id": 51804,
+   "author_url": "https://forge.sp-tarkov.com/user/51804/darezi",
+   "created_at": "2026-01-22T09:27:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for the update</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 150826,
+   "parent_id": null,
+   "author": ".specshadow",
+   "author_id": 97031,
+   "author_url": "https://forge.sp-tarkov.com/user/97031/specshadow",
+   "created_at": "2026-01-22T09:33:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks, was looking for something like this - tried to add new keys to other traders, but didn\u2019t work despite simplicity of their respective config files\u2026</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 150965,
+   "parent_id": null,
+   "author": "Sasuke_Kun",
+   "author_id": 36558,
+   "author_url": "https://forge.sp-tarkov.com/user/36558/sasuke-kun",
+   "created_at": "2026-01-24T23:29:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>thanks for update boss</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151278,
+   "parent_id": null,
+   "author": "Gi3r0j",
+   "author_id": 89258,
+   "author_url": "https://forge.sp-tarkov.com/user/89258/gi3r0j",
+   "created_at": "2026-01-28T12:17:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi! Thanks for your work. Got question to u. Is it posible to change price of access Labrys Card ? I changed x in settings but this doesn\u2019t affect this single card</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

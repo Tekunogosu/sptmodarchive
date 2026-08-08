@@ -1,0 +1,84 @@
+name: Refresh repo status
+
+# Source repositories keep moving after the Forge is gone, so the "last commit"
+# data goes stale within a day. This re-checks every repo on a schedule and
+# republishes the site.
+#
+# It deliberately does NOT scrape the Forge. repo_status.py only talks to
+# GitHub, GitLab, and Codeberg, which is what makes it safe to run unattended:
+# there is no rate limit to be rude about on somebody else's dying server, and
+# nothing here breaks when the Forge disappears.
+on:
+  schedule:
+    - cron: "0 6,18 * * *"     # 06:00 and 18:00 UTC
+  workflow_dispatch:            # and on demand from the Actions tab
+
+# Build and deploy happen in this one workflow rather than by pushing and
+# letting build.yml pick it up: a push made with GITHUB_TOKEN does not trigger
+# other workflows, so relying on that would commit fresh data and never
+# publish it.
+permissions:
+  contents: write               # to commit the refreshed data back
+  pages: write
+  id-token: write
+
+# Pages allows one deployment at a time. Sharing this group with build.yml
+# means a scheduled run and a push cannot race each other.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Check source repositories
+        env:
+          # The built-in token reads public repository data fine, at
+          # 1,000 requests/hour -- far more than the ~30 GraphQL calls this
+          # needs. No personal access token has to be stored anywhere.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scrape/repo_status.py --max-age 0
+
+      - name: Commit refreshed data
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if git diff --quiet -- data/repos.json; then
+            echo "No repository changes since the last run."
+            exit 0
+          fi
+
+          git add data/repos.json
+          git commit -m "Refresh repo status [skip ci]"
+
+          # A maintainer may have pushed while this ran. Rebase onto them
+          # rather than clobbering; if that conflicts, drop this run's commit
+          # -- the data is regenerated from scratch every time anyway, so the
+          # next run fixes it. Never force-push a shared branch.
+          if ! git pull --rebase --autostash origin "${GITHUB_REF_NAME}"; then
+            git rebase --abort || true
+            echo "::warning::Rebase conflicted; skipping this commit."
+            git reset --hard "origin/${GITHUB_REF_NAME}"
+          fi
+
+          git push origin "HEAD:${GITHUB_REF_NAME}"
+
+      - name: Build the site
+        run: python3 build/build.py
+
+      - uses: actions/configure-pages@v6
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: site/
+      - id: deploy
+        uses: actions/deploy-pages@v5

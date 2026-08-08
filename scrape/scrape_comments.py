@@ -236,6 +236,32 @@ def probe(session):
     return 0 if ok else 1
 
 
+def needs_fetch(mod, fresh, max_age_days):
+    """Whether this mod's comments should be (re)fetched.
+
+    Skipping mods that already have a file is what makes an interrupted run
+    resumable, but taken alone it also means an archived mod never picks up
+    new comments. `max_age_days` reopens that: a thread set older than the
+    given age is refetched, so a maintenance run stays incremental instead of
+    being all-or-nothing.
+    """
+    path = os.path.join(COMMENTS_DIR, f"{mod['id']}.json")
+    if fresh or not os.path.exists(path):
+        return True
+    if max_age_days is None:
+        return False
+
+    try:
+        with open(path) as f:
+            fetched = json.load(f).get("fetched_at", "")
+        when = time.strptime(fetched, "%Y-%m-%dT%H:%M:%SZ")
+    except (json.JSONDecodeError, ValueError, OSError):
+        return True     # unreadable or undated: safest to fetch again
+
+    age_days = (time.time() - time.mktime(when) + time.timezone) / 86400
+    return age_days >= max_age_days
+
+
 def load_mods(spt_filter):
     path = os.path.join(DATA, "mods.json")
     if not os.path.exists(path):
@@ -259,6 +285,9 @@ def main():
     ap.add_argument("--spt", default="", help='only mods on an SPT line, e.g. "4."')
     ap.add_argument("--limit", type=int)
     ap.add_argument("--fresh", action="store_true", help="re-fetch mods already done")
+    ap.add_argument("--max-age", type=float, metavar="DAYS",
+                    help="also refetch thread sets older than DAYS "
+                         "(omit to only fetch mods never archived)")
     ap.add_argument("--delay", type=float, default=0.6,
                     help="seconds between requests")
     args = ap.parse_args()
@@ -273,9 +302,7 @@ def main():
     if args.limit:
         mods = mods[:args.limit]
 
-    todo = [m for m in mods
-            if args.fresh or not os.path.exists(
-                os.path.join(COMMENTS_DIR, f"{m['id']}.json"))]
+    todo = [m for m in mods if needs_fetch(m, args.fresh, args.max_age)]
     print(f"{len(mods)} mods in scope, {len(todo)} to fetch", file=sys.stderr)
 
     stats = {"comments": 0, "with": 0, "none": 0, "failed": 0}

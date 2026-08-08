@@ -1,0 +1,540 @@
+{
+ "mod_id": 2856,
+ "slug": "fieldkit-dev-toolkit-weapon-control-lootentity-browser-spawning-esp",
+ "fetched_at": "2026-08-08T22:16:57Z",
+ "reported_total": 16,
+ "pages": 2,
+ "count": 53,
+ "comments": [
+  {
+   "id": 168662,
+   "parent_id": null,
+   "author": "goflockyourself",
+   "author_id": 60764,
+   "author_url": "https://forge.sp-tarkov.com/user/60764/goflockyourself",
+   "created_at": "2026-07-28T23:06:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>fix your mod structure to fit with forge guidelines please</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168666,
+   "parent_id": 168662,
+   "author": "Hysocs",
+   "author_id": 118937,
+   "author_url": "https://forge.sp-tarkov.com/user/118937/hysocs",
+   "created_at": "2026-07-28T23:23:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>fixed</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168711,
+   "parent_id": null,
+   "author": "taskforceyyf",
+   "author_id": 112054,
+   "author_url": "https://forge.sp-tarkov.com/user/112054/taskforceyyf",
+   "created_at": "2026-07-29T04:52:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Any chance for the item ESP to make use of the in-game wishlist?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168728,
+   "parent_id": null,
+   "author": "ADV1",
+   "author_id": 52180,
+   "author_url": "https://forge.sp-tarkov.com/user/52180/adv1",
+   "created_at": "2026-07-29T07:42:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>nice! it reminds me anomaly gamma lol</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168729,
+   "parent_id": 168711,
+   "author": "Hysocs",
+   "author_id": 118937,
+   "author_url": "https://forge.sp-tarkov.com/user/118937/hysocs",
+   "created_at": "2026-07-29T07:43:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I will add tis, shouldn\u2019t be that hard to do</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168732,
+   "parent_id": 168728,
+   "author": "Hysocs",
+   "author_id": 118937,
+   "author_url": "https://forge.sp-tarkov.com/user/118937/hysocs",
+   "created_at": "2026-07-29T07:56:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Wish i knew what that was XD</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168733,
+   "parent_id": 168728,
+   "author": "ADV1",
+   "author_id": 52180,
+   "author_url": "https://forge.sp-tarkov.com/user/52180/adv1",
+   "created_at": "2026-07-29T07:59:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>when i play gamma i allways click click f7 debug menu and spawn tons of sht so yah \u201ccircle of life\u201d - make spt more like stalker game</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168734,
+   "parent_id": 168728,
+   "author": "Hysocs",
+   "author_id": 118937,
+   "author_url": "https://forge.sp-tarkov.com/user/118937/hysocs",
+   "created_at": "2026-07-29T08:05:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>If you can think of any useful debug features from other games or that let me know and I will consider adding them where possible. The main exception is aimbot related functionality. I do not plan to add anything that aims or assists with aiming unless there is a clear legitimate use for mod development.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168736,
+   "parent_id": 168728,
+   "author": "ADV1",
+   "author_id": 52180,
+   "author_url": "https://forge.sp-tarkov.com/user/52180/adv1",
+   "created_at": "2026-07-29T08:13:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>if u ask me for example - id say spawn feature for ingame models/assets but i didnt think its possible.. i dont know unity engine but i dont think some models are actually have physics or something - i think they just glued to the map in engine map builder thing like sdk..</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168737,
+   "parent_id": 168728,
+   "author": "Hysocs",
+   "author_id": 118937,
+   "author_url": "https://forge.sp-tarkov.com/user/118937/hysocs",
+   "created_at": "2026-07-29T08:17:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yeah from my quick testing I may be remembering this wrong but I think most of the models and assets are bundled together in large chunks rather than stored separately. SPT does decompile a lot of the game surprisingly well though so I may be able to pull a list of available assets and spawn them in. I will look into it because being able to place assets in game could be very useful for testing. That also reminded me to add an option for disabling AI movement.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 168738,
+   "parent_id": 168728,
+   "author": "ADV1",
+   "author_id": 52180,
+   "author_url": "https://forge.sp-tarkov.com/user/52180/adv1",
+   "created_at": "2026-07-29T08:17:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i just played a lot (A LOT) of gmod soo.. i really like world-building-kinda-stuff..</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168812,
+   "parent_id": null,
+   "author": "Snoops",
+   "author_id": 26650,
+   "author_url": "https://forge.sp-tarkov.com/user/26650/snoops",
+   "created_at": "2026-07-29T19:19:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Cool mod! Please could I suggest a couple of features?</p>\n<ul>\n<li>Spawn bots</li>\n<li>The ability to pause/unpause each bot similar to when you loot alive AI, so you can set up a scenario and then see how it plays out</li>\n<li>Summon extract train</li>\n</ul>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168813,
+   "parent_id": 168812,
+   "author": "Hysocs",
+   "author_id": 118937,
+   "author_url": "https://forge.sp-tarkov.com/user/118937/hysocs",
+   "created_at": "2026-07-29T19:20:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I was already planning to add the ability to pause bots, and I\u2019ll also look into allowing you to summon them. The extract train is a different matter, though, so I\u2019ll need to investigate that separately.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 168918,
+   "parent_id": null,
+   "author": "unsentblade",
+   "author_id": 117487,
+   "author_url": "https://forge.sp-tarkov.com/user/117487/unsentblade",
+   "created_at": "2026-07-30T12:47:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>is there anyway to save configs?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168919,
+   "parent_id": 168918,
+   "author": "Hysocs",
+   "author_id": 118937,
+   "author_url": "https://forge.sp-tarkov.com/user/118937/hysocs",
+   "created_at": "2026-07-30T13:00:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>There is no direct config system but the ui saves the previous settings if your restart your game, i could add configs if thats needed</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168924,
+   "parent_id": 168918,
+   "author": "unsentblade",
+   "author_id": 117487,
+   "author_url": "https://forge.sp-tarkov.com/user/117487/unsentblade",
+   "created_at": "2026-07-30T13:16:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>oh okay if the ui saves the previous settings its fine  no need for configs then and btw ty for that fast reply!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 168945,
+   "parent_id": null,
+   "author": "CafeinSquirrel",
+   "author_id": 82229,
+   "author_url": "https://forge.sp-tarkov.com/user/82229/cafeinsquirrel",
+   "created_at": "2026-07-30T15:23:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi, I\u2019m the guy who makes Tarkov NPC battle videos. Your mod is exactly what I\u2019ve been looking for, but I have a few suggestions.\nFirst, could you add an option to display bots HP as a percentage instead of a health bar? It becomes difficult to read when there are a lot of bots close to each other. It would also be great if the font could be changed to Bender, since it\u2019s Escape from Tarkov main font.\nAnother suggestion is about future bot spawn feature. I\u2019ve tried a lot of spawning mods from both this website and Discord, but I haven\u2019t found a single one that can properly register different bot types as part of the same squad when spawning them.\nFor example: If I spawn Reshala and his guards individually, the guards would not recognize him as their leader, follow him, and properly utilize SAIN\u2019s squad features/ friendly fire,\u2026 At the moment, most mods only support squads made up of the same bot type.\nFor example, if you spawn five Raiders at the same time, the game automatically assigns the first Raider as the squad leader. However, this system doesn\u2019t seem to work for spawning individual bot , such as bosses and their followers.\nAnother feature that would be incredibly helpful is a bot hostility editor, allowing users to configure relationships between different factions and bot types. That would save me a huge amount of time when setting up NPC battles and making videos. (i edited them manually in the server files)\nThanks again for your work.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168946,
+   "parent_id": 168945,
+   "author": "Hysocs",
+   "author_id": 118937,
+   "author_url": "https://forge.sp-tarkov.com/user/118937/hysocs",
+   "created_at": "2026-07-30T15:27:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m currently adding an AI spawn menu. Unlike client-only mods, this uses the server directly, so I should be able to have the server spawn AI naturally and establish their connections as normal. I can then capture that connection list and expose controls for editing them.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169045,
+   "parent_id": null,
+   "author": "parksy333",
+   "author_id": 116260,
+   "author_url": "https://forge.sp-tarkov.com/user/116260/parksy333",
+   "created_at": "2026-07-31T07:26:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Absolutely adore this mod, makes fixing my nonsense so much faster, haha. That, and it\u2019s just great fun to mess about, well done! Small issue that affects pretty much BepInEx UI widgets (for me and other 4K pariahs), do you think it would be possible to include some settings to expand the Menu window and fonts, or just have a multiplier for UI size? 4K Monitor, always my curse with UI in games, lol. Would be massively appreciated, but if it\u2019s not feasible then all good; I\u2019ll just keep squinting and giraffe necking like I do with all my other installed mod menus, ahah.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169046,
+   "parent_id": 168812,
+   "author": "parksy333",
+   "author_id": 116260,
+   "author_url": "https://forge.sp-tarkov.com/user/116260/parksy333",
+   "created_at": "2026-07-31T07:30:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>For the train part, maybe the <a href=\"https://forge.sp-tarkov.com/mod/551/custom-raid-times\" target=\"_blank\" rel=\"noreferrer noopener\">https://forge.sp-tarkov.com/mod/551/custom-raid-times</a> mod could be of help? It has a setting to auto-time the train to match custom stuff, not sure if that would help ya out or not.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169065,
+   "parent_id": 169045,
+   "author": "Hysocs",
+   "author_id": 118937,
+   "author_url": "https://forge.sp-tarkov.com/user/118937/hysocs",
+   "created_at": "2026-07-31T12:15:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I can easily add that next update, it should be as simple as just changing scale and allowing that via a setting. atleast i think it should be</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169614,
+   "parent_id": null,
+   "author": "parksy333",
+   "author_id": 116260,
+   "author_url": "https://forge.sp-tarkov.com/user/116260/parksy333",
+   "created_at": "2026-08-02T01:48:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I don\u2019t suppose you could make 4.0.13 version of FieldKit 1.2.0? Gonna be a while before everyone updates to 4.1 and this website is going dark on the 12th, so having everything in one place is soon no longer a thing..</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 169615,
+   "parent_id": 169614,
+   "author": "Hysocs",
+   "author_id": 118937,
+   "author_url": "https://forge.sp-tarkov.com/user/118937/hysocs",
+   "created_at": "2026-08-02T01:54:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I will see what i can do, tho if there is no place to post mods besides like github then i may drop support all together. i hope they like just rename the domain or something and dont screw us</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 169617,
+   "parent_id": 169614,
+   "author": "parksy333",
+   "author_id": 116260,
+   "author_url": "https://forge.sp-tarkov.com/user/116260/parksy333",
+   "created_at": "2026-08-02T02:09:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Dang, alright. Sounds a lot like they\u2019re just going to screw us instead of just changing the damn name.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 169618,
+   "parent_id": 169614,
+   "author": "Hysocs",
+   "author_id": 118937,
+   "author_url": "https://forge.sp-tarkov.com/user/118937/hysocs",
+   "created_at": "2026-08-02T02:13:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>yep, really sad honestly. i can atleast say i had a fun 1-2 weeks making mods for this. guess thats all it will give me</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 169667,
+   "parent_id": 169614,
+   "author": "parksy333",
+   "author_id": 116260,
+   "author_url": "https://forge.sp-tarkov.com/user/116260/parksy333",
+   "created_at": "2026-08-02T08:01:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m really hoping the WTT team or some of them can work something out. Already DL\u2019d basically all mods I wanted and created a separate install for 4.0.13 to use the new mods for WTT-CommonLib latest 4.x update, since my other profile had several mods that no longer exist. Then created another install folder for 4.1, lmao. I\u2019ve got an obscene number of mods backed up, pretty much only the crap I actually want. Ugh, this blows giant donkey dicks.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 170030,
+   "parent_id": 169614,
+   "author": "Kryptic-S01",
+   "author_id": 2685,
+   "author_url": "https://forge.sp-tarkov.com/user/2685/kryptic-s01",
+   "created_at": "2026-08-03T21:06:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>From what I read in the Discord without going into too much detail, Refringe (a leading SPT dev) posted a message to clear some things up for everyone as it seems private DM\u2019s were leaked out of context regarding the threat from BSG, which spooked Refringe enough into calling it quits. Altering/Changing the domain would simply not be enough to desway BSG\u2019s legal notice into SPT as it would require a vast amount of migration of sensitive information, plus he has real-world responsibilities to deal with and he doesn\u2019t want to be in the crosshairs, so to speak.</p>\n<p>We still have just over a week before this website is closed down for good, but there still could be a small chance of someone taking the helm of the project if we are that lucky, but don\u2019t hold your breathe on that.</p>\n<p>As someone who has supported SPT since the very beginning back in late 2020-early \u201821, I am deeply saddened about what\u2019s happening, but I am hopeful the project will continue just in a different place.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170043,
+   "parent_id": null,
+   "author": "CallMeAnt",
+   "author_id": 35338,
+   "author_url": "https://forge.sp-tarkov.com/user/35338/callmeant",
+   "created_at": "2026-08-03T22:40:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2026-08-04 17:43:35]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170052,
+   "parent_id": null,
+   "author": "Jeka 346",
+   "author_id": 3391,
+   "author_url": "https://forge.sp-tarkov.com/user/3391/jeka-346",
+   "created_at": "2026-08-03T23:30:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Please add AIMBOT functions to head, neck, and chest.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170059,
+   "parent_id": null,
+   "author": "onepunchman",
+   "author_id": 119422,
+   "author_url": "https://forge.sp-tarkov.com/user/119422/onepunchman",
+   "created_at": "2026-08-04T00:32:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Loving this mod :D thank you! any chance you can add bushwacker? &lt;3</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170067,
+   "parent_id": 169614,
+   "author": "parksy333",
+   "author_id": 116260,
+   "author_url": "https://forge.sp-tarkov.com/user/116260/parksy333",
+   "created_at": "2026-08-04T00:59:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yea I know all that, just feels absurd and unfair. Beend adding the git hub pages for all authors I can and joining discords where folks are planning to continue releasing mods for 3.0.13/4.1.x. Those are few and far between atm but I\u2019ll take what I can get</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170090,
+   "parent_id": 170059,
+   "author": "Hysocs",
+   "author_id": 118937,
+   "author_url": "https://forge.sp-tarkov.com/user/118937/hysocs",
+   "created_at": "2026-08-04T02:52:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>il add that next update</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170575,
+   "parent_id": null,
+   "author": "intrinsic",
+   "author_id": 119607,
+   "author_url": "https://forge.sp-tarkov.com/user/119607/intrinsic",
+   "created_at": "2026-08-06T16:15:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi! Using fieldkit 1.4.0. Tried installing on  SPT 4.1.1 &amp; 4.1.2 and getting this while starting up server:</p>\n<pre><code>Patching exception in method SPTarkov.Server.Core.Models.Eft.Weather.WeatherData SPTarkov.Server.Core.Controllers.WeatherController::Generate()\n   at HarmonyLib.PatchClassProcessor.ReportException(Exception exception, MethodBase original)\n   at HarmonyLib.PatchClassProcessor.Patch()\n   at HarmonyLib.Harmony.&lt;PatchAll&gt;b__11_0(Type type)\n   at HarmonyLib.CollectionExtensions.Do[T](IEnumerable`1 sequence, Action`1 action)\n   at HarmonyLib.Harmony.PatchAll(Assembly assembly)\n   at FieldKit.Server.FieldKitWeatherService..ctor()\n</code></pre>\n<p>Suggestions appreciated. Thanks for this mod BTW!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170592,
+   "parent_id": 170575,
+   "author": "Hysocs",
+   "author_id": 118937,
+   "author_url": "https://forge.sp-tarkov.com/user/118937/hysocs",
+   "created_at": "2026-08-06T17:18:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Are you using any other mods that control the weather or the sky? as its likely a mod conflict</p>\n<p>If you could provide more of the error message that would be useful</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170605,
+   "parent_id": 170575,
+   "author": "intrinsic",
+   "author_id": 119607,
+   "author_url": "https://forge.sp-tarkov.com/user/119607/intrinsic",
+   "created_at": "2026-08-06T18:18:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Only other server mod was <a href=\"https://forge.sp-tarkov.com/mod/2840/cobras-ammo-stack\" target=\"_blank\" rel=\"noreferrer noopener\">Cobra\u2019s Ammo Stack</a> mod but I\u2019ve disabled it. It was a clean Linux install of SPT 4.1.1 using <a href=\"https://github.com/MadByteDE/SPT-Linux-Guide/blob/main/scripts/spt-additions\" target=\"_blank\" rel=\"noreferrer noopener\">spt-additions</a> from <a href=\"https://github.com/MadByteDE/SPT-Linux-Guide\" target=\"_blank\" rel=\"noreferrer noopener\">this guide</a> later updated to 4.1.2.</p>\n<p>Both Win and Linux servers versions throw the same error. Full message:</p>\n<pre><code>intrinsic@workstation:/opt/escape-from-tarkov/drive_c/SPTarkov/SPT_Runtime$ ./SPT.Server.Linux \n\u0417\u0430\u0433\u0440\u0443\u0437\u0447\u0438\u043a \u043c\u043e\u0434\u043e\u0432: \u0437\u0430\u0433\u0440\u0443\u0436\u0430\u0435\u043c 1 \u043c\u043e\u0434(\u043e\u0432/\u0430)...\n\u041c\u043e\u0434 HysocsFieldKit \u0432\u0435\u0440\u0441\u0438\u0438 1.4.0 (GUID: com.hysocs.fieldkit | targets SPT: ~4.1.0) \u043e\u0442 Hysocs \u0437\u0430\u0433\u0440\u0443\u0436\u0435\u043d\n\u0418\u043c\u043f\u043e\u0440\u0442\u0438\u0440\u0443\u0435\u043c \u0431\u0430\u0437\u0443 \u0434\u0430\u043d\u043d\u044b\u0445...\n\u0418\u043c\u043f\u043e\u0440\u0442 \u0431\u0430\u0437\u044b \u0434\u0430\u043d\u043d\u044b\u0445 \u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d\n\u0421\u0435\u0440\u0432\u0435\u0440: \u0432\u044b\u043f\u043e\u043b\u043d\u044f\u0435\u043c \u043d\u0430\u0447\u0430\u043b\u044c\u043d\u044b\u0435 \u043a\u043e\u043b\u043b\u0431\u044d\u043a\u0438...\n\u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\u2502 SPT 4.1.2                                  \u2502\n\u2502 https://discord.sp-tarkov.com              \u2502\n\u2502                                            \u2502\n\u2502 \u0414\u0430\u043d\u043d\u044b\u0439 \u043f\u0440\u043e\u0435\u043a\u0442 \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f \u0431\u0435\u0441\u043f\u043b\u0430\u0442\u043d\u044b\u043c          \u2502\n\u2502 \u0415\u0441\u043b\u0438 \u0432\u044b \u0437\u0430\u043f\u043b\u0430\u0442\u0438\u043b\u0438 \u0434\u0435\u043d\u044c\u0433\u0438, \u0432\u0430\u0441 \u043e\u0431\u043c\u0430\u043d\u0443\u043b\u0438     \u2502\n\u2502 \u041a\u041e\u041c\u041c\u0415\u0420\u0427\u0415\u0421\u041a\u041e\u0415 \u0418\u0421\u041f\u041e\u041b\u042c\u0417\u041e\u0412\u0410\u041d\u0418\u0415 \u0417\u0410\u041f\u0420\u0415\u0429\u0415\u041d\u041e       \u2502\n\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\nThe server has unexpectedly stopped, reach out to the support channel in our Discord server. Include a screenshot of this message and the surrounding \nerror(s) above and below\nPatching exception in method SPTarkov.Server.Core.Models.Eft.Weather.WeatherData SPTarkov.Server.Core.Controllers.WeatherController::Generate()\n   at HarmonyLib.PatchClassProcessor.ReportException(Exception exception, MethodBase original)\n   at HarmonyLib.PatchClassProcessor.Patch()\n   at HarmonyLib.Harmony.&lt;PatchAll&gt;b__11_0(Type type)\n   at HarmonyLib.CollectionExtensions.Do[T](IEnumerable`1 sequence, Action`1 action)\n   at HarmonyLib.Harmony.PatchAll(Assembly assembly)\n   at FieldKit.Server.FieldKitWeatherService..ctor()\n   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Constructor(Object obj, IntPtr* args)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext \ncontext)\n   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, \nRuntimeResolverContext context)\n   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)\n   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, \nRuntimeResolverContext context)\n   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)\n   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitIEnumerable(IEnumerableCallSite enumerableCallSite, \nRuntimeResolverContext context)\n   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, \nRuntimeResolverContext context)\n   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)\n   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, \nRuntimeResolverContext context)\n   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)\n   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitIEnumerable(IEnumerableCallSite enumerableCallSite, \nRuntimeResolverContext context)\n   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, \nRuntimeResolverContext context)\n   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext \ncontext)\n   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, \nRuntimeResolverContext context)\n   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext \ncontext)\n   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitIEnumerable(IEnumerableCallSite enumerableCallSite, \nRuntimeResolverContext context)\n   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext \ncontext)\n   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)\n   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)\n   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope \nserviceProviderEngineScope)\n   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)\n   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)\n   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)\n   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)\n   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)\n   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)\n   at SPTarkov.Server.Program.StartServerAfterModLoading(SptEarlyLoggerFactory loggerFactory, IReadOnlyDictionary`2 configuration, IServiceProvider \nearlyServiceProvider, List`1 loadedMods, StartupCancellation startupCancellation)\n   at SPTarkov.Server.Program.StartServer(SptEarlyLoggerFactory loggerFactory, String[] args, StartupCancellation startupCancellation)\n   at SPTarkov.Server.Program.Main(String[] args)\nPress any key to exit...\n</code></pre>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170607,
+   "parent_id": 170575,
+   "author": "Hysocs",
+   "author_id": 118937,
+   "author_url": "https://forge.sp-tarkov.com/user/118937/hysocs",
+   "created_at": "2026-08-06T18:21:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I looked into the error, and it appears that either another mod is interfering with it or the EFT version you patched SPT into is somehow missing the required method.</p>\n<p>Did you use the SPT installer, or did you upgrade an existing installation to 4.1?</p>\n<p>i will check on the more full error log you provided now</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170618,
+   "parent_id": 170575,
+   "author": "Hysocs",
+   "author_id": 118937,
+   "author_url": "https://forge.sp-tarkov.com/user/118937/hysocs",
+   "created_at": "2026-08-06T19:11:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Can you send me the logs in\nSPT_Runtime/user/logs/</p>\n<p>other than that i dont think i can solve the issue as its likely a conflict with the way you are installing spt with the spt-additions</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170622,
+   "parent_id": 170575,
+   "author": "intrinsic",
+   "author_id": 119607,
+   "author_url": "https://forge.sp-tarkov.com/user/119607/intrinsic",
+   "created_at": "2026-08-06T19:35:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>There you go <a href=\"https://pastebin.com/knShzuXu\" target=\"_blank\" rel=\"noreferrer noopener\">https://pastebin.com/knShzuXu</a></p>\n<p>Just did clean install using official SPT Installer and it yields the same result. Looking through full log file I can see that the problem is probably related to Microsoft\u2019s dotnet debian distro package.\nProblem solved after <code>sudo mount /tmp/ -o remount,exec</code>.\nThank you for trying to help!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170624,
+   "parent_id": 170575,
+   "author": "Hysocs",
+   "author_id": 118937,
+   "author_url": "https://forge.sp-tarkov.com/user/118937/hysocs",
+   "created_at": "2026-08-06T19:39:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i was just about to tell you to do that, glad you fixed it. sorry that i wasnt better help XD</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 170692,
+   "parent_id": null,
+   "author": "malice",
+   "author_id": 119653,
+   "author_url": "https://forge.sp-tarkov.com/user/119653/malice",
+   "created_at": "2026-08-07T08:41:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>howdy, really looking forward to trying this mod. Having an issue getting it to work though. Was talking on the discord and posted up my BapInEx log and they said it looks like its throwing errors? It loads on the server fine but i cant get any of the hotkeys to work or the menu to come up. Tried uninstalling and reinstalling it today. Same thing..this is the LogOutput.log</p>\n<p><a href=\"https://codepaste.sp-tarkov.com/?0d52a66e0f21a262#F1m7tTVjsAQBMHuwDyJriYFsR7x8GHAQC8TE2j5RfwZ3\" target=\"_blank\" rel=\"noreferrer noopener\">https://codepaste.sp-tarkov.com/?0d52a66e0f21a262#F1m7tTVjsAQBMHuwDyJriYFsR7x8GHAQC8TE2j5RfwZ3</a></p>\n<p>No idea what im doing wrong. Any help would be appreciated</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170700,
+   "parent_id": 170692,
+   "author": "Hysocs",
+   "author_id": 118937,
+   "author_url": "https://forge.sp-tarkov.com/user/118937/hysocs",
+   "created_at": "2026-08-07T09:49:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I see nothing in the log that would mean its not working, open the f12 menu and see if it shows. you can rebind the menu bind inside of that menu if needed but its not made for full mod usage and see if that works</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170703,
+   "parent_id": 170692,
+   "author": "malice",
+   "author_id": 119653,
+   "author_url": "https://forge.sp-tarkov.com/user/119653/malice",
+   "created_at": "2026-08-07T09:59:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>no menu opens when i hit f12, or insert, tried f1 aswell</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170704,
+   "parent_id": 170692,
+   "author": "Hysocs",
+   "author_id": 118937,
+   "author_url": "https://forge.sp-tarkov.com/user/118937/hysocs",
+   "created_at": "2026-08-07T10:01:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>f12 is the native to spt as its BepInEx so if that isnt working then something may be wrong with your install</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170706,
+   "parent_id": 170692,
+   "author": "malice",
+   "author_id": 119653,
+   "author_url": "https://forge.sp-tarkov.com/user/119653/malice",
+   "created_at": "2026-08-07T10:02:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>alrighty..ill try a clean install and go again :D</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170708,
+   "parent_id": 170692,
+   "author": "malice",
+   "author_id": 119653,
+   "author_url": "https://forge.sp-tarkov.com/user/119653/malice",
+   "created_at": "2026-08-07T10:11:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Absolute legend thankyou</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170782,
+   "parent_id": null,
+   "author": "CloudTheReal",
+   "author_id": 119687,
+   "author_url": "https://forge.sp-tarkov.com/user/119687/cloudthereal",
+   "created_at": "2026-08-07T20:52:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>hey love this mod and everything about it but I\u2019m experiencing some issues. when i go to kill literally anything in the game, they freeze and don\u2019t die, take damage, or shoot back. Can i get any help? I\u2019m not very good when it comes to trouble shooting this but this is what Gemini said was the problem :/</p>\n<p>Heres the video:\n<a href=\"https://streamable.com/3b8ngc\" target=\"_blank\" rel=\"noreferrer noopener\">https://streamable.com/3b8ngc</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170794,
+   "parent_id": null,
+   "author": "imxcaliberx-cD1SE",
+   "author_id": 119694,
+   "author_url": "https://forge.sp-tarkov.com/user/119694/imxcaliberx-cd1se",
+   "created_at": "2026-08-07T22:09:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2026-08-07 22:43:16]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170805,
+   "parent_id": 170782,
+   "author": "Hysocs",
+   "author_id": 118937,
+   "author_url": "https://forge.sp-tarkov.com/user/118937/hysocs",
+   "created_at": "2026-08-07T22:54:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>If you are playing as a player scav this is a current spt bug, not related to the mod</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170812,
+   "parent_id": 170782,
+   "author": "CloudTheReal",
+   "author_id": 119687,
+   "author_url": "https://forge.sp-tarkov.com/user/119687/cloudthereal",
+   "created_at": "2026-08-07T23:33:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>so its just as a scav and not as a pmc?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170813,
+   "parent_id": 170782,
+   "author": "Hysocs",
+   "author_id": 118937,
+   "author_url": "https://forge.sp-tarkov.com/user/118937/hysocs",
+   "created_at": "2026-08-07T23:34:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>its a bug where negative carma doesnt apply when you are playing as a player scav making them glitch out. i suspect this is what you are experiencing</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170874,
+   "parent_id": 170782,
+   "author": "CloudTheReal",
+   "author_id": 119687,
+   "author_url": "https://forge.sp-tarkov.com/user/119687/cloudthereal",
+   "created_at": "2026-08-08T06:16:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>it is exactly why thanks for letting me know</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170987,
+   "parent_id": null,
+   "author": "imxcaliberx-cD1SE",
+   "author_id": 119694,
+   "author_url": "https://forge.sp-tarkov.com/user/119694/imxcaliberx-cd1se",
+   "created_at": "2026-08-08T19:26:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>love the mod but im having this thing where pmc and are boss\u2019s sometimes are disappearing after you kill them is there a fix for this?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170988,
+   "parent_id": 170987,
+   "author": "Hysocs",
+   "author_id": 118937,
+   "author_url": "https://forge.sp-tarkov.com/user/118937/hysocs",
+   "created_at": "2026-08-08T19:27:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>what exactly do you mean by disappearing?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

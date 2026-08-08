@@ -1,0 +1,120 @@
+{
+ "mod_id": 2844,
+ "slug": "ultimate-flea",
+ "fetched_at": "2026-08-08T22:38:37Z",
+ "reported_total": null,
+ "pages": 1,
+ "count": 11,
+ "comments": [
+  {
+   "id": 168726,
+   "parent_id": null,
+   "author": "remember0764",
+   "author_id": 112655,
+   "author_url": "https://forge.sp-tarkov.com/user/112655/remember0764",
+   "created_at": "2026-07-29T06:36:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Can the mod work together with the Live Flea Price?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168746,
+   "parent_id": 168726,
+   "author": "ZloyMolodoy",
+   "author_id": 114139,
+   "author_url": "https://forge.sp-tarkov.com/user/114139/zloymolodoy",
+   "created_at": "2026-07-29T09:29:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello.</p>\n<p>Not recommended to run both at the same time - they write to the same price table and will overwrite each other. UltimateFlea with <strong>\u201cpriceSource\u201d: \u201ctarkovdev\u201d</strong> already pulls live Tarkov.dev averages. If you only want prices without the economy simulation, set <strong>\u201cenableEconomy\u201d: false in mod.json.</strong> If you want PVE prices, set <strong>\u201cpvePrices\u201d: true in mod.json.</strong></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168879,
+   "parent_id": 168726,
+   "author": "remember0764",
+   "author_id": 112655,
+   "author_url": "https://forge.sp-tarkov.com/user/112655/remember0764",
+   "created_at": "2026-07-30T04:22:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>3q for ur reply</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 170556,
+   "parent_id": null,
+   "author": "AsianMuppet",
+   "author_id": 90024,
+   "author_url": "https://forge.sp-tarkov.com/user/90024/asianmuppet",
+   "created_at": "2026-08-06T14:15:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>so pretty much able to emulate the market locally? I\u2019m not sure how DrakiaXYZ mod works but incase it no longer works after forge is down use this as a replacement? As this one also pulls off .dev is it compulsory for it to operate? cheers and sorry if they\u2019re dumb questions</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170670,
+   "parent_id": null,
+   "author": "meppycola",
+   "author_id": 5465,
+   "author_url": "https://forge.sp-tarkov.com/user/5465/meppycola",
+   "created_at": "2026-08-07T03:57:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>would it be possible to disable blacklist entirely?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170701,
+   "parent_id": 170556,
+   "author": "ZloyMolodoy",
+   "author_id": 114139,
+   "author_url": "https://forge.sp-tarkov.com/user/114139/zloymolodoy",
+   "created_at": "2026-08-07T09:55:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>hello</p>\n<p>Yeah, you can run it fully local - set \u201cpriceSource\u201d: \u201clocal\u201d in mod.json. Prices come from local data, no internet needed.</p>\n<p>Tarkov.dev isn\u2019t required. In tarkovdev mode, prices from the site are saved after a successful fetch. If the site is down later, it uses those saved prices; if it never managed to download them before, it uses local prices instead.</p>\n<p>As a DrakiaXYZ replacement - yes, if you want flea pool control, pricing, and supply/demand sim. Not a 1:1 clone, but it covers local market emulation fine. Not dumb questions at all.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170702,
+   "parent_id": 170670,
+   "author": "ZloyMolodoy",
+   "author_id": 114139,
+   "author_url": "https://forge.sp-tarkov.com/user/114139/zloymolodoy",
+   "created_at": "2026-08-07T09:59:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi</p>\n<p>There are two different blacklists here:</p>\n<p>UltimateFlea\u2019s own rules (pool.json, blacklist mode) - items you remove from the flea.\nSPT / other-mod bans - items already blocked for live realism (or by mods like WTT). UltimateFlea only restores those if you explicitly list them in add / addCategories.\nIf you just want the mod to leave the pool alone - set \u201cenablePoolManager\u201d: false, or keep empty lists in pool.json. Nothing gets banned or unbanned.</p>\n<p>If you want to bring back SPT/mod-banned items - keep pool manager on and add them in add / addCategories. Turning pool manager off won\u2019t unban them.</p>\n<p>More details on the config options are in the mod description.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170705,
+   "parent_id": 170670,
+   "author": "ZloyMolodoy",
+   "author_id": 114139,
+   "author_url": "https://forge.sp-tarkov.com/user/114139/zloymolodoy",
+   "created_at": "2026-08-07T10:01:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>If you\u2019re specifically after unlocking items that SPT blacklists to stay closer to live Tarkov, I could add a setting for that - let me know if you\u2019d want it.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170707,
+   "parent_id": 170556,
+   "author": "ZloyMolodoy",
+   "author_id": 114139,
+   "author_url": "https://forge.sp-tarkov.com/user/114139/zloymolodoy",
+   "created_at": "2026-08-07T10:11:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hope that answers your question :)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170795,
+   "parent_id": 170556,
+   "author": "AsianMuppet",
+   "author_id": 90024,
+   "author_url": "https://forge.sp-tarkov.com/user/90024/asianmuppet",
+   "created_at": "2026-08-07T22:12:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you and great to hear, this sounds great for modded items on the flea as well which was the main attracting point. This\u2019ll solve that for me, Thanks for the mod!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 171005,
+   "parent_id": 170670,
+   "author": "meppycola",
+   "author_id": 5465,
+   "author_url": "https://forge.sp-tarkov.com/user/5465/meppycola",
+   "created_at": "2026-08-08T20:50:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>it seems what i want is just the \u201cenablepoolmanager\u201d i think i just didnt know what it did so i didnt think to touch it lol, thanks</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

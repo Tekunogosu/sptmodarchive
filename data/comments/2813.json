@@ -1,0 +1,190 @@
+{
+ "mod_id": 2813,
+ "slug": "dpx-melee-case",
+ "fetched_at": "2026-08-08T22:39:04Z",
+ "reported_total": null,
+ "pages": 1,
+ "count": 18,
+ "comments": [
+  {
+   "id": 166053,
+   "parent_id": null,
+   "author": "nestor0788",
+   "author_id": 111448,
+   "author_url": "https://forge.sp-tarkov.com/user/111448/nestor0788",
+   "created_at": "2026-07-12T08:24:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Ok, so\u2026 for some reason, this case pops up at Skier instead of Jaeger, and appears to be available for\u2026 a single Ruble? That, and equipment icon doesn\u2019t load (but it\u2019s 3d model under \u2018Inspect\u2019 loads up fine).</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 166055,
+   "parent_id": 166053,
+   "author": "DeePix",
+   "author_id": 63937,
+   "author_url": "https://forge.sp-tarkov.com/user/63937/deepix",
+   "created_at": "2026-07-12T08:41:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for the report!</p>\n<p>That was a leftover test config in the previous version. It has been fixed in v1.0.3.</p>\n<p>The case is now sold by Jaeger for 250,000\u20bd, with an alternative Jaeger barter trade. The icon loading was also cleaned up, so please update to v1.0.3 and overwrite the old files.</p>\n<p>If the icon still doesn\u2019t load after updating, let me know.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 166056,
+   "parent_id": null,
+   "author": "ViP3R_76",
+   "author_id": 59323,
+   "author_url": "https://forge.sp-tarkov.com/user/59323/vip3r-76",
+   "created_at": "2026-07-12T08:42:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>As a feature request, add an option to config to allow looting of melee weapons. If no other mod like SVM is used, this mod allows it. Else looting of melee\u00b4s is not possible ;)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 166057,
+   "parent_id": 166056,
+   "author": "DeePix",
+   "author_id": 63937,
+   "author_url": "https://forge.sp-tarkov.com/user/63937/deepix",
+   "created_at": "2026-07-12T08:46:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for the suggestion!</p>\n<p>I understand what you mean. Since the case is made for melee weapons, an optional config setting to allow melee weapon looting would make sense.</p>\n<p>I\u2019ll look into how SPT handles melee loot restrictions and see if I can add it as a disabled-by-default option, so it doesn\u2019t affect players who only want the storage case.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 166063,
+   "parent_id": 166056,
+   "author": "DeePix",
+   "author_id": 63937,
+   "author_url": "https://forge.sp-tarkov.com/user/63937/deepix",
+   "created_at": "2026-07-12T09:10:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks again for the suggestion!</p>\n<p>I added this in v1.0.4 as an optional config setting:</p>\n<p>enableMeleeWeaponLooting: false</p>\n<p>It is disabled by default. If enabled, the mod makes melee weapons lootable without touching SPT_Data.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 166069,
+   "parent_id": null,
+   "author": "Super_Lopez",
+   "author_id": 57052,
+   "author_url": "https://forge.sp-tarkov.com/user/57052/super-lopez",
+   "created_at": "2026-07-12T11:18:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Good job next step Special items box!</p>\n<p>\u201cSpecial container\u201d</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 166070,
+   "parent_id": 166053,
+   "author": "Super_Lopez",
+   "author_id": 57052,
+   "author_url": "https://forge.sp-tarkov.com/user/57052/super-lopez",
+   "created_at": "2026-07-12T12:04:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>In Version 1.0.4 the icon doesn\u2019t load properly.\nIf you enter in \u201cinspect\u201d you can see the box but icon not load.</p>\n<p>When you go to Jaeger to buy or change the box the icon is loading forever you see a circle turning but never show the box.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 166071,
+   "parent_id": 166053,
+   "author": "DeePix",
+   "author_id": 63937,
+   "author_url": "https://forge.sp-tarkov.com/user/63937/deepix",
+   "created_at": "2026-07-12T12:15:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for the report.</p>\n<p>I\u2019m aware there may still be an issue with the inventory/trader icon in v1.0.4. I\u2019ll look into it as soon as I get back to working on the mod.</p>\n<p>The 3D model loading in inspect view helps narrow it down, so it is most likely related to the icon loading/fix plugin rather than the bundle itself.</p>\n<p>I\u2019ll post an update once I have a fix.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 166184,
+   "parent_id": null,
+   "author": "Genuinetech",
+   "author_id": 23266,
+   "author_url": "https://forge.sp-tarkov.com/user/23266/genuinetech",
+   "created_at": "2026-07-13T16:10:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I Love it But, small issue.</p>\n<p>but the image for the case doesn\u2019t load.\nWhen you inspect the case you can see the 3d model of it, but moving around in the stash it\u2019s just always loading. so i put the addon on a fresh install spt 4.0.13 and it did the same thing ( Version 1.0.4 )</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 3
+  },
+  {
+   "id": 166185,
+   "parent_id": 166184,
+   "author": "DeePix",
+   "author_id": 63937,
+   "author_url": "https://forge.sp-tarkov.com/user/63937/deepix",
+   "created_at": "2026-07-13T16:13:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for letting me know! I\u2019ve taken note of it, and the next time I work on the mod, this will be the first thing I look into.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 166327,
+   "parent_id": 166184,
+   "author": "04mykl",
+   "author_id": 5999,
+   "author_url": "https://forge.sp-tarkov.com/user/5999/04mykl",
+   "created_at": "2026-07-14T21:34:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>seconding this issue, also the preview model appears to be slightly transparent</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 168285,
+   "parent_id": 166184,
+   "author": "Tabi",
+   "author_id": 14096,
+   "author_url": "https://forge.sp-tarkov.com/user/14096/tabi",
+   "created_at": "2026-07-26T21:32:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>third-ing this issue, also randomly flashes in the trading screen though idk if thats just me.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168563,
+   "parent_id": null,
+   "author": "Super_Lopez",
+   "author_id": 57052,
+   "author_url": "https://forge.sp-tarkov.com/user/57052/super-lopez",
+   "created_at": "2026-07-28T11:30:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks DeePix you build cool stuff.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 168564,
+   "parent_id": 168563,
+   "author": "DeePix",
+   "author_id": 63937,
+   "author_url": "https://forge.sp-tarkov.com/user/63937/deepix",
+   "created_at": "2026-07-28T11:34:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks, I really appreciate it! I\u2019m currently replacing the 3D model for the Electronics Case, and I\u2019ve also started working on a new Special Items Case ;) More DPX stuff is on the way!!!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168566,
+   "parent_id": 166184,
+   "author": "DeePix",
+   "author_id": 63937,
+   "author_url": "https://forge.sp-tarkov.com/user/63937/deepix",
+   "created_at": "2026-07-28T11:43:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It\u2019s fixed now. Thanks for reporting it!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168649,
+   "parent_id": null,
+   "author": "DemonHunter58",
+   "author_id": 11309,
+   "author_url": "https://forge.sp-tarkov.com/user/11309/demonhunter58",
+   "created_at": "2026-07-28T22:26:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>So the image is fixed, but it takes up more space than the actual container does.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168769,
+   "parent_id": null,
+   "author": "Shrinkov",
+   "author_id": 119039,
+   "author_url": "https://forge.sp-tarkov.com/user/119039/shrinkov",
+   "created_at": "2026-07-29T13:19:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The case does not highlight when I hover over it. Maybe it\u2019s because the background isn\u2019t transparent? Dragging the item also drags its background, rather than just the item like the others.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168952,
+   "parent_id": null,
+   "author": "bigbootytinka2_57446",
+   "author_id": 119091,
+   "author_url": "https://forge.sp-tarkov.com/user/119091/bigbootytinka2-57446",
+   "created_at": "2026-07-30T16:22:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>the case image is displayed way larger than what it fills in slots and when you inspect it the model is a big red error</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

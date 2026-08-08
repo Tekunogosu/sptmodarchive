@@ -1,0 +1,250 @@
+{
+ "mod_id": 2520,
+ "slug": "hideout-recipe-framework",
+ "fetched_at": "2026-08-08T22:39:42Z",
+ "reported_total": 11,
+ "pages": 2,
+ "count": 24,
+ "comments": [
+  {
+   "id": 147928,
+   "parent_id": null,
+   "author": "nagazaki_x",
+   "author_id": 88566,
+   "author_url": "https://forge.sp-tarkov.com/user/88566/nagazaki-x",
+   "created_at": "2025-12-29T22:47:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks, this is a very good \ud83e\udee1</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 147934,
+   "parent_id": null,
+   "author": "JadFamous",
+   "author_id": 45153,
+   "author_url": "https://forge.sp-tarkov.com/user/45153/jadfamous",
+   "created_at": "2025-12-29T23:28:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello,</p>\n<p>I tried using this mod, but I cannot get the cans to show up in my list. When I check into the example recipes, they do not show up.</p>\n<p>\u201cCHR_Recipie_01\u201d shows as being in area 8 - which is the nutrition unit.\n\u201cCHR-Recipie_02\u201d shows as being in area 10 - which is the workbench.</p>\n<p>Neither of these show in the Lavatory, and they do not show in the areas which the mod says they should be in. Not sure if something changed between testing and release.</p>\n<p>I am happy to share information to help troubleshoot if needed. I would love to have this working.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 147936,
+   "parent_id": 147934,
+   "author": "Arcus56",
+   "author_id": 1849,
+   "author_url": "https://forge.sp-tarkov.com/user/1849/arcus56",
+   "created_at": "2025-12-29T23:33:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2025-12-30 00:18:01]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 147941,
+   "parent_id": 147934,
+   "author": "Arcus56",
+   "author_id": 1849,
+   "author_url": "https://forge.sp-tarkov.com/user/1849/arcus56",
+   "created_at": "2025-12-30T00:18:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>In your server console, do you see any printouts similar to this?</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/9fJ1efu.png\" alt=\"Preview\" /></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 147951,
+   "parent_id": 147934,
+   "author": "nagazaki_x",
+   "author_id": 88566,
+   "author_url": "https://forge.sp-tarkov.com/user/88566/nagazaki-x",
+   "created_at": "2025-12-30T00:48:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>maybe you are doing something wrong i add some items and all work as expected, no bugs until now and no conflicts, im running 20 mods at the moment.</p>\n<p>exemple to craft a PSU\n{\n\u201c_id\u201d: \u201cPSU\u201d,\n\u201careaType\u201d: 10,\n\u201crequiredLevel\u201d: 3,\n\u201cproductionTime\u201d: 3555,\n\u201cendProduct\u201d: \u201c57347c2e24597744902c94a1\u201d,\n\u201ccount\u201d: 1,\n\u201cneedFuelForAllProductionTime\u201d: false,\n\u201cinputs\u201d: [\n{ \u201ctpl\u201d: \u201c5c06782b86f77426df5407d2\u201d, \u201ccount\u201d: 10 },\n{ \u201ctpl\u201d: \u201c590a3b0486f7743954552bdb\u201d, \u201ccount\u201d: 5 }\n],\n\u201ctools\u201d: [\n{ \u201ctpl\u201d: \u201c544fb5454bdc2df8738b456a\u201d, \u201ccount\u201d: 1 }\n]\n}</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 147956,
+   "parent_id": 147934,
+   "author": "Arcus56",
+   "author_id": 1849,
+   "author_url": "https://forge.sp-tarkov.com/user/1849/arcus56",
+   "created_at": "2025-12-30T01:15:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>What bug did you run into?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 147962,
+   "parent_id": null,
+   "author": "Actual_Timmy",
+   "author_id": 96072,
+   "author_url": "https://forge.sp-tarkov.com/user/96072/actual-timmy",
+   "created_at": "2025-12-30T01:48:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey there! Thank you so much for making this :)\nEven though I have no idea how to code, the instructions are nice and clear.\nThat being said, I ran into an issue when trying to create a recipe.\nWhen I load my server, I get this error:</p>\n<p>[HRF] Invalid JSON: C:\\SPT\\SPT\\user\\mods\\HideoutRecipeFramework\\Recipes\\CALOK-bRecipe.json :: \u2018{\u2019 is invalid after a value. Expected either \u2018,\u2019, \u2018}\u2019, or \u2018]\u2019. LineNumber: 13 | BytePositionInLine: 1.</p>\n<p>I googled to see how to interpret where the error is occurring in the code, but am still not really sure what the issue is.\nHere is the recipe that I\u2019m trying to make (I\u2019m adding spaces so that it formats a little better in the comment here, tho it\u2019s still not perfect :x  )</p>\n<p>{</p>\n<p>\u201c_id\u201d: \u201cCHR_Recipe_01\u201d,</p>\n<p>\u201careaType\u201d: 7,</p>\n<p>\u201crequiredLevel\u201d: 3,</p>\n<p>\u201cproductionTime\u201d: 5580,</p>\n<p>\u201cendProduct\u201d: \u201c5e8488fa988a8701445df1e4\u201d,</p>\n<p>\u201ccount\u201d: 2,</p>\n<p>\u201cneedFuelForAllProductionTime\u201d: true,</p>\n<p>\u201cinputs\u201d: [</p>\n<pre><code>{ \"tpl\": \"5c0e533786f7747fa23f4d47\", \"count\": 1 }\n</code></pre>\n<p>],</p>\n<p>\u201ctools\u201d: [</p>\n<pre><code>{\"tpl\": \"5d1b3f2d86f774253763b735\", \"count\": 1}\n\n{\"tpl\": \"5d1b31ce86f7742523398394\", \"count\": 1}\n</code></pre>\n<p>]</p>\n<p>}</p>\n<p>It\u2019s probably a noob mistake that I\u2019m missing. Thanks for any help!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 147964,
+   "parent_id": 147962,
+   "author": "Actual_Timmy",
+   "author_id": 96072,
+   "author_url": "https://forge.sp-tarkov.com/user/96072/actual-timmy",
+   "created_at": "2025-12-30T01:56:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I can\u2019t update my comment for some reason but I FIGURED IT OUT!</p>\n<p>I was missing a \u201c,\u201d after the first tool ID close-bracket. Oopsies!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 147967,
+   "parent_id": 147962,
+   "author": "Arcus56",
+   "author_id": 1849,
+   "author_url": "https://forge.sp-tarkov.com/user/1849/arcus56",
+   "created_at": "2025-12-30T02:15:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You\u2019re missing a comma after your first tool entry, fix &amp; example below.</p>\n<pre><code>{\n  \"_id\": \"CHR_Recipe_01\",\n  \"areaType\": 7,\n  \"requiredLevel\": 3,\n  \"productionTime\": 5580,\n  \"endProduct\": \"5e8488fa988a8701445df1e4\",\n  \"count\": 2,\n  \"needFuelForAllProductionTime\": true,\n  \"inputs\": [\n    { \"tpl\": \"5c0e533786f7747fa23f4d47\", \"count\": 1 }\n  ],\n  \"tools\": [\n    {\"tpl\": \"5d1b3f2d86f774253763b735\", \"count\": 1} &lt;------ Must have comma after first tool, or input option if we're going to use a second one. \n    {\"tpl\": \"5d1b31ce86f7742523398394\", \"count\": 1}\n  ]\n}\n</code></pre>\n<p>Fixed json with comma added, feel free to copy &amp; paste!</p>\n<pre><code>\n{\n  \"_id\": \"CHR_Recipe_01\",\n  \"areaType\": 7,\n  \"requiredLevel\": 3,\n  \"productionTime\": 5580,\n  \"endProduct\": \"5e8488fa988a8701445df1e4\",\n  \"count\": 2,\n  \"needFuelForAllProductionTime\": true,\n  \"inputs\": [\n    { \"tpl\": \"5c0e533786f7747fa23f4d47\", \"count\": 1 }\n  ],\n  \"tools\": [\n    {\"tpl\": \"5d1b3f2d86f774253763b735\", \"count\": 1},\n    {\"tpl\": \"5d1b31ce86f7742523398394\", \"count\": 1}\n  ]\n}\n</code></pre>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/y8DHkey.png\" alt=\"Hemostat craft\" /></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 147969,
+   "parent_id": 147962,
+   "author": "Arcus56",
+   "author_id": 1849,
+   "author_url": "https://forge.sp-tarkov.com/user/1849/arcus56",
+   "created_at": "2025-12-30T02:15:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Nice! haha</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 147975,
+   "parent_id": 147934,
+   "author": "nagazaki_x",
+   "author_id": 88566,
+   "author_url": "https://forge.sp-tarkov.com/user/88566/nagazaki-x",
+   "created_at": "2025-12-30T02:32:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>No bugs it\u2019s perfect bro thanks</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 147978,
+   "parent_id": 147962,
+   "author": "Actual_Timmy",
+   "author_id": 96072,
+   "author_url": "https://forge.sp-tarkov.com/user/96072/actual-timmy",
+   "created_at": "2025-12-30T03:05:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for replying regardless! This is a fun mod :) I like the idea of making as-realistic-as-possible recipes.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 147993,
+   "parent_id": null,
+   "author": "AUTsider",
+   "author_id": 44520,
+   "author_url": "https://forge.sp-tarkov.com/user/44520/autsider",
+   "created_at": "2025-12-30T05:15:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi, I think the Download is broken :( Leads me to a Git 404 error page. I tried to pull the source code branch, and use that, but its missing the mod assembly and also the recipies</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 148009,
+   "parent_id": 147993,
+   "author": "Arcus56",
+   "author_id": 1849,
+   "author_url": "https://forge.sp-tarkov.com/user/1849/arcus56",
+   "created_at": "2025-12-30T07:33:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Fixed, my mistake!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 148034,
+   "parent_id": 147934,
+   "author": "JadFamous",
+   "author_id": 45153,
+   "author_url": "https://forge.sp-tarkov.com/user/45153/jadfamous",
+   "created_at": "2025-12-30T10:42:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I was able to test it again and got it to work! Not sure what happened yesterday when I was trying it. I was able to add my own custom recipe and it worked!</p>\n<p>Awesome mod, thanks for sharing!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 148063,
+   "parent_id": 147993,
+   "author": "AUTsider",
+   "author_id": 44520,
+   "author_url": "https://forge.sp-tarkov.com/user/44520/autsider",
+   "created_at": "2025-12-30T14:09:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Perfect, Thanks!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 148070,
+   "parent_id": 147993,
+   "author": "AUTsider",
+   "author_id": 44520,
+   "author_url": "https://forge.sp-tarkov.com/user/44520/autsider",
+   "created_at": "2025-12-30T14:34:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>One more question, is there any way to make a recipe similar to the Super water, where a certain durability of the \u201cTool\u201d is used ?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 148993,
+   "parent_id": null,
+   "author": "nagazaki_x",
+   "author_id": 88566,
+   "author_url": "https://forge.sp-tarkov.com/user/88566/nagazaki-x",
+   "created_at": "2026-01-04T21:10:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The mod is perfect, but is there a possibility that the items needed for crafting have to be found in raid?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 148996,
+   "parent_id": null,
+   "author": "poutasse",
+   "author_id": 94761,
+   "author_url": "https://forge.sp-tarkov.com/user/94761/poutasse",
+   "created_at": "2026-01-04T21:29:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It\u2019s possible to change the recipe for building the station itself?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 149029,
+   "parent_id": null,
+   "author": "xpflash",
+   "author_id": 100462,
+   "author_url": "https://forge.sp-tarkov.com/user/100462/xpflash",
+   "created_at": "2026-01-05T01:47:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey dude I used your mod to create recipes for all the progression blocking keys in order to streamline no-flea runs in a somewhat balanced way. It works great! I know other no-flea runners would get value out of this so I\u2019d like to share it. I\u2019d like to know if you\u2019d wanna just add it on the side to your mod or if you\u2019d like for me to publish it separately. I\u2019ve just done the grunt work, nothing fancy so I don\u2019t particularly care who it gets attributed to as long as it\u2019s out there for people to use.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151765,
+   "parent_id": null,
+   "author": "jakov",
+   "author_id": 50864,
+   "author_url": "https://forge.sp-tarkov.com/user/50864/jakov",
+   "created_at": "2026-02-02T20:35:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>great mod, one little thing with description though, the example recipe is in nutrition unit. I thought I did something wrong when I searched the lavatory with no success</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 152471,
+   "parent_id": null,
+   "author": "nagazaki_x",
+   "author_id": 88566,
+   "author_url": "https://forge.sp-tarkov.com/user/88566/nagazaki-x",
+   "created_at": "2026-02-10T00:29:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Please add FIR option</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 153801,
+   "parent_id": null,
+   "author": "oachkatzel69",
+   "author_id": 105919,
+   "author_url": "https://forge.sp-tarkov.com/user/105919/oachkatzel69",
+   "created_at": "2026-02-27T09:26:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey i have a question, The config says that the recipes are loaded succesfully but they are not shown to craft. did i miss smth?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 157733,
+   "parent_id": null,
+   "author": "callmechanka",
+   "author_id": 42001,
+   "author_url": "https://forge.sp-tarkov.com/user/42001/callmechanka",
+   "created_at": "2026-04-21T18:39:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2026-04-21 19:21:30]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

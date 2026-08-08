@@ -1,0 +1,510 @@
+{
+ "mod_id": 2567,
+ "slug": "cloudsix-volumetric-clouds",
+ "fetched_at": "2026-08-08T21:59:35Z",
+ "reported_total": 24,
+ "pages": 3,
+ "count": 50,
+ "comments": [
+  {
+   "id": 151344,
+   "parent_id": null,
+   "author": "BigBoy69",
+   "author_id": 59204,
+   "author_url": "https://forge.sp-tarkov.com/user/59204/bigboy69",
+   "created_at": "2026-01-29T07:50:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>love it !!!!!!!!!!!!!!, visual mod always welcome</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 151373,
+   "parent_id": null,
+   "author": "Thousand00",
+   "author_id": 85655,
+   "author_url": "https://forge.sp-tarkov.com/user/85655/thousand00",
+   "created_at": "2026-01-29T14:03:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>After installing the mod, sometimes when I look up at the sky, it flashes black for a moment. I\u2019m not sure if this is a bug or if my computer just isn\u2019t powerful enough.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151375,
+   "parent_id": 151373,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2026-01-29T14:46:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>What you\u2019re probably seeing is Tarkov eye adaptation. I\u2019ll need more info on what you mean exactly, does it turn pitch black? or is it just a darker shade that fades? Where did it happen and at what time?</p>\n<p>Your PC definitely shouldn\u2019t have issues with it, it\u2019s just a scrolling 2D texture</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151376,
+   "parent_id": null,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2026-01-29T14:48:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>As mentioned in the description it\u2019s a scrolling 2d texture. Shouldn\u2019t perform any worse than Tarkov\u2019s clouds. Although, I can say I haven\u2019t really done any A and B testing.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151379,
+   "parent_id": 151373,
+   "author": "Thousand00",
+   "author_id": 85655,
+   "author_url": "https://forge.sp-tarkov.com/user/85655/thousand00",
+   "created_at": "2026-01-29T15:12:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>First of all, thank you for your efforts. The situation is this: after looking up at the sky, the screen will momentarily go completely black and then instantly return to normal; it\u2019s just a brief moment of the screen turning entirely black. Also, this doesn\u2019t happen every time, but only occurs when I look up at the sky after not having done so for a while.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151380,
+   "parent_id": null,
+   "author": "fallenq",
+   "author_id": 61525,
+   "author_url": "https://forge.sp-tarkov.com/user/61525/fallenq",
+   "created_at": "2026-01-29T15:17:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Does it work with hollywood graphics?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151381,
+   "parent_id": 151373,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2026-01-29T15:20:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Weird. I\u2019ll see if I can reproduce it. If you can figure out a way to consistently reproduce it, let me know, it\u2019ll be a big help.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151382,
+   "parent_id": 151380,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2026-01-29T15:21:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Should work fine, that mod doesn\u2019t touch clouds afaik</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 151385,
+   "parent_id": 151373,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2026-01-29T15:38:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Just pushed an update to adjust when the cloud command buffer is being drawn. It may or may not help.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151389,
+   "parent_id": 151373,
+   "author": "Thousand00",
+   "author_id": 85655,
+   "author_url": "https://forge.sp-tarkov.com/user/85655/thousand00",
+   "created_at": "2026-01-29T16:25:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Great, I just tried it and it\u2019s no problem at all</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151399,
+   "parent_id": 151373,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2026-01-29T17:09:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>So, I think I did actually just experience what you saw but it only happened near the beginning of the raid once and it was a quick flash, the rest of the raid seemed fine. Not exactly sure why that happens.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151403,
+   "parent_id": 151373,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2026-01-29T18:24:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Think I just figured out the actual cause of it, use latest build and let me know if it happens again.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151514,
+   "parent_id": null,
+   "author": "yurikus",
+   "author_id": 70300,
+   "author_url": "https://forge.sp-tarkov.com/user/70300/yurikus",
+   "created_at": "2026-01-30T22:50:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>FYI, similar version issue as with AO replacer: AssemblyVersion 1.7.0, release version 1.0.4, plugin version 1.0.3</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151522,
+   "parent_id": 151514,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2026-01-30T23:51:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I did notice the AO replacer earlier, going to fix that. Could\u2019ve sworn I set the correct version in the plugin for this one though, even shows in the source code\u2026 I\u2019ll rebuild and adjust the link</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 151525,
+   "parent_id": 151514,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2026-01-31T00:09:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Should be fixed on both now</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151526,
+   "parent_id": 151514,
+   "author": "yurikus",
+   "author_id": 70300,
+   "author_url": "https://forge.sp-tarkov.com/user/70300/yurikus",
+   "created_at": "2026-01-31T00:33:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>No dice on both accounts :) AssemblyVersion still 1.7.0, Forge links to the old archives, CloudSix still old plugin version, AO Replacer - new version, but Check Mods now ignores it</p>\n<p>Repro, create this directory structure and run CheckMods:</p>\n<pre><code>\u2500\u2500\u2500Build\n\u2502   \u2502   CheckMods-win-x64.exe\n\u2502   \u2502\n\u2502   \u251c\u2500\u2500\u2500BepInEx\n\u2502   \u2502   \u2514\u2500\u2500\u2500plugins\n\u2502   \u2502       \u251c\u2500\u2500\u2500AOReplacer\n\u2502   \u2502       \u2502   \u2502   SPTAOReplacer.dll\n\u2502   \u2502       \u2502   \u2502\n\u2502   \u2502       \u2502   \u2514\u2500\u2500\u2500Assets\n\u2502   \u2502       \u2502           amplifyao\n\u2502   \u2502       \u2502\n\u2502   \u2502       \u2514\u2500\u2500\u2500CloudSix\n\u2502   \u2502           \u2502   CloudSix.dll\n\u2502   \u2502           \u2502\n\u2502   \u2502           \u2514\u2500\u2500\u2500Assets\n\u2502   \u2502                   customclouds\n\u2502   \u2502\n\u2502   \u2514\u2500\u2500\u2500SPT\n\u2502       \u2502   SPTarkov.Server.Core.dll\n</code></pre>\n<p>EDIT: this only works for server mods as CheckMods needs something to scan client mods. I am burned out on diagnosing this now. To validate, put CheckMods into your SPT dir.</p>\n<p>EDIT 2:</p>\n<pre><code>Updates available:\nAO Replacer\n    1.0.0 -&gt; 1.0.1\n    Download: https://forge.sp-tarkov.com/mod/download/2569/ao-replacer/1.0.1\n```\nThis is with latest download from GH\n</code></pre>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151527,
+   "parent_id": 151514,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2026-01-31T00:55:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You didn\u2019t need to diagnose anything lol I know where the versions are and how to set them. It must have cached the old file. They should both be fixed now, make sure when it downloads, it pulls the zip that says \u201cfixed\u201d at the end.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 153156,
+   "parent_id": null,
+   "author": "rambo",
+   "author_id": 38302,
+   "author_url": "https://forge.sp-tarkov.com/user/38302/rambo",
+   "created_at": "2026-02-17T13:02:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>No images?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 153168,
+   "parent_id": 153156,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2026-02-17T17:10:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Just added a few, if you go into description, at the bottom</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 153254,
+   "parent_id": null,
+   "author": "halva",
+   "author_id": 98959,
+   "author_url": "https://forge.sp-tarkov.com/user/98959/halva",
+   "created_at": "2026-02-18T15:34:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>does it work on 4.0.10?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 153270,
+   "parent_id": 153254,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2026-02-18T20:46:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yes but update to 4.0.12, no reason not to.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 155664,
+   "parent_id": null,
+   "author": "Kojimbo0_0",
+   "author_id": 77629,
+   "author_url": "https://forge.sp-tarkov.com/user/77629/kojimbo0-0",
+   "created_at": "2026-03-29T07:21:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Mindblowingly good <a href=\"https://i.imgur.com/BZcLIEk.jpeg\" target=\"_blank\" rel=\"noreferrer noopener\">https://i.imgur.com/BZcLIEk.jpeg</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 155680,
+   "parent_id": null,
+   "author": "markopas",
+   "author_id": 10578,
+   "author_url": "https://forge.sp-tarkov.com/user/10578/markopas",
+   "created_at": "2026-03-29T11:06:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>does it affect performance in any way?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 155696,
+   "parent_id": 155680,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2026-03-29T13:29:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Read the description</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 155697,
+   "parent_id": 155664,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2026-03-29T13:31:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks! I really hope all the small issues I notice are just me being hyper critical on myself. Spent a ton of time on the look of the clouds. Probably spent as much time dialing in specific values for the shader to make them look right as I did on programming the shader itself.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 155721,
+   "parent_id": null,
+   "author": "BGSenTineL",
+   "author_id": 103600,
+   "author_url": "https://forge.sp-tarkov.com/user/103600/bgsentinel",
+   "created_at": "2026-03-29T17:12:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I cannot even believe how good the game looks with version 2.0.0 ! I was mind blown on a dusk raid on Shoreline.  Amazing mod ! Thank you !</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 155754,
+   "parent_id": null,
+   "author": "AmmoDing",
+   "author_id": 54326,
+   "author_url": "https://forge.sp-tarkov.com/user/54326/ammoding",
+   "created_at": "2026-03-29T21:31:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You are a wizard\u2026how? This looks fantastic, better than many AAA games. Well done! \ud83d\ude2e</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 4
+  },
+  {
+   "id": 155815,
+   "parent_id": 155754,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2026-03-31T01:07:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Just\u2026 a lot of over analyzing and being unhappy with results. Thank you! Comparing to AAA at all is mind boggling to me. Glad my tenacity paid off\u2026 lol</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 156282,
+   "parent_id": null,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2026-04-04T17:58:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>An update - Just want to put some info out there on the status of this mod, I am kinda obsessed with clouds atm\u2026 This mod has become a serious problem for me and I feel like I won\u2019t stop until the clouds are some of the best out there. (I have ridiculous expectations of myself)</p>\n<p>I have been working on this more since the day I released on here. A new update will be coming (hopefully) this weekend. Two of the big things I have listed for future updates will be coming - Much improved erosion and micro detail. I went through the hassle of making a whole noise generator in Unity that lets me preview the noise before generating it. So I was able to make a proper 3d noise map for the clouds so they are shaped better than ever. I also reviewed the paper from Guerrilla Games a lot closer and found some neat shader tricks that they showed direct code for (there\u2019s more than one paper on how they do their clouds). So pretty much everything will be improved about how the clouds look across the board. How sharp they are, how light transfers through them, how the cloud shadows are handled etc\u2026</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 4
+  },
+  {
+   "id": 157196,
+   "parent_id": null,
+   "author": ".chudcel",
+   "author_id": 90849,
+   "author_url": "https://forge.sp-tarkov.com/user/90849/chudcel",
+   "created_at": "2026-04-14T16:42:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>could you add chemtrails so I know when to expect clouds, cheers</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 4
+  },
+  {
+   "id": 157691,
+   "parent_id": null,
+   "author": "LuminVisual",
+   "author_id": 110594,
+   "author_url": "https://forge.sp-tarkov.com/user/110594/luminvisual",
+   "created_at": "2026-04-21T00:47:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Will this mod work pre-4.0?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 157753,
+   "parent_id": 157691,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2026-04-22T00:39:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I don\u2019t think so. I think there\u2019s a few methods that are called that will be different on older versions.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 158269,
+   "parent_id": null,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2026-04-28T00:52:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>One thing that I couldn\u2019t figure out a good value for and just set to something that I thought looked cool is ambient strength. The color might be a bit strong for some people, if you turn it down a bit it should mute the color a bit.</p>\n<p>Play with some other settings too. A lot of settings can have a big change on the look of the clouds. For example, if you want more wispiness where you have more finer detail, increase detail erosion between 15-20%. If you break the look of anything, just reset all the settings back.</p>\n<p>Keep in mind, the finer detail you add, the more noise you will see. You can increase primary steps to counter it. (enable advanced bepinex settings to increase primary steps further)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 158286,
+   "parent_id": null,
+   "author": "boba8828",
+   "author_id": 111174,
+   "author_url": "https://forge.sp-tarkov.com/user/111174/boba8828",
+   "created_at": "2026-04-28T08:28:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2026-04-28 09:30:58]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 158295,
+   "parent_id": null,
+   "author": "boba8828",
+   "author_id": 111174,
+   "author_url": "https://forge.sp-tarkov.com/user/111174/boba8828",
+   "created_at": "2026-04-28T11:47:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Looks very very good, good job</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 158441,
+   "parent_id": null,
+   "author": "redlaser42",
+   "author_id": 51899,
+   "author_url": "https://forge.sp-tarkov.com/user/51899/redlaser42",
+   "created_at": "2026-04-29T19:00:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Very impressive! Clouds any studio would be proud of.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 158873,
+   "parent_id": null,
+   "author": "TheEmptyWall",
+   "author_id": 37589,
+   "author_url": "https://forge.sp-tarkov.com/user/37589/theemptywall",
+   "created_at": "2026-05-03T05:54:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>this mod looks  beautiful, however i can\u2019t get it to work properly, the sky is empty even with rainy weather, sometimes with cloudy weather everything looks darker. Did i miss something?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 158876,
+   "parent_id": 158873,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2026-05-03T06:55:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The sky is just empty sometimes, even with rain. That\u2019s just how tarkov\u2019s cloudiness works, this mod reads the base cloudiness value from tarkov. For the darkness, that\u2019s normal, the clouds are blocking the sun. The clouds cast shadows on the ground.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 158917,
+   "parent_id": 158873,
+   "author": "TheEmptyWall",
+   "author_id": 37589,
+   "author_url": "https://forge.sp-tarkov.com/user/37589/theemptywall",
+   "created_at": "2026-05-03T21:00:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>oh ok then, ty</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 158919,
+   "parent_id": 158873,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2026-05-03T21:07:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019ll probably add a slider to adjust the strength of the shadows. You can try turning on eye adaptation, uncheck disable eye adaptation in f12. Might balance out the darkness to be a bit brighter during high coverage.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 158920,
+   "parent_id": null,
+   "author": "Clacker",
+   "author_id": 80738,
+   "author_url": "https://forge.sp-tarkov.com/user/80738/clacker",
+   "created_at": "2026-05-03T21:15:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I just want to say you\u2019re single-handedly bringing up Tarkovs graphics beautifully.\nI\u2019m looking forward to what you do to improve the sun and possibly the moon as well!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 3
+  },
+  {
+   "id": 159076,
+   "parent_id": 158873,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2026-05-05T20:07:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>There actually seems to be an issue sometimes where things get a lot darker than they should be. I\u2019m thinking that may be what you were experiencing. It\u2019ll be resolved in the next patch I\u2019m pushing out today.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 160047,
+   "parent_id": null,
+   "author": "goflockyourself",
+   "author_id": 60764,
+   "author_url": "https://forge.sp-tarkov.com/user/60764/goflockyourself",
+   "created_at": "2026-05-16T22:16:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>pros: mod is hot</p>\n<p>cons: pc is hot</p>\n<p>10/10 dont use with bad gpu</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 160119,
+   "parent_id": 160047,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2026-05-17T15:38:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yeah not a good idea to use this with low-end graphics card. By default, I have the clouds rendering at half res, but to help even more, you can lower the primary steps from 64 down to like 30-40, just keep in mind, the lower the steps, the more noise you will get. Some people might not be bothered by it if they aren\u2019t hyper focused on the clouds. You can lower the light steps a bit too, those are actually significantly more expensive but the shader is designed to work with 6 light steps set.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 160156,
+   "parent_id": 160047,
+   "author": "goflockyourself",
+   "author_id": 60764,
+   "author_url": "https://forge.sp-tarkov.com/user/60764/goflockyourself",
+   "created_at": "2026-05-18T00:47:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i usually dont mind a little bit of blur or like noise but i just really dont like how it looks with THIS mod. pretty sure its not anything you did but just my observation. happy modding! &lt;3</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 164737,
+   "parent_id": null,
+   "author": "DandyLionElmo",
+   "author_id": 100520,
+   "author_url": "https://forge.sp-tarkov.com/user/100520/dandylionelmo",
+   "created_at": "2026-06-30T14:55:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Have not seen any clouds at all, rain or shine and even snow. No clouds, does the mod have any incompatibility?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 166239,
+   "parent_id": null,
+   "author": "Lemonado",
+   "author_id": 114318,
+   "author_url": "https://forge.sp-tarkov.com/user/114318/lemonado",
+   "created_at": "2026-07-13T23:30:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Does clouds quality in menu setting affect anything?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 166315,
+   "parent_id": 166239,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2026-07-14T19:11:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It does not</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 166960,
+   "parent_id": null,
+   "author": "princealy1",
+   "author_id": 117952,
+   "author_url": "https://forge.sp-tarkov.com/user/117952/princealy1",
+   "created_at": "2026-07-19T14:41:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i don\u2019t know if im doing anything wrong but i did not see a singular cloud in 50 games</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 166966,
+   "parent_id": 166960,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2026-07-19T15:08:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Wait for next update that\u2019ll be coming soon. It\u2019s an improvement all around and addresses the lack of clouds too.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

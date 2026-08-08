@@ -1,0 +1,660 @@
+{
+ "mod_id": 179,
+ "slug": "balanced-meds",
+ "fetched_at": "2026-08-08T21:51:24Z",
+ "reported_total": 36,
+ "pages": 4,
+ "count": 65,
+ "comments": [
+  {
+   "id": 1687,
+   "parent_id": null,
+   "author": "Krane151",
+   "author_id": 6172,
+   "author_url": "https://forge.sp-tarkov.com/user/6172/krane151",
+   "created_at": "2021-09-24T17:10:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>works in 2.0.0 aki?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 59070,
+   "parent_id": 1687,
+   "author": "DeadW0Lf",
+   "author_id": 5571,
+   "author_url": "https://forge.sp-tarkov.com/user/5571/deadw0lf",
+   "created_at": "2021-10-03T14:17:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>sorry for late response.. not tested it with 2.0.0 yet. But I believe it should work.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 3226,
+   "parent_id": null,
+   "author": "Cladem",
+   "author_id": 132,
+   "author_url": "https://forge.sp-tarkov.com/user/132/cladem",
+   "created_at": "2022-01-01T00:19:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The mod loader says your mod is out of date and won\u2019t load. Idk how to upload pics here.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 3244,
+   "parent_id": null,
+   "author": "infinity007",
+   "author_id": 12844,
+   "author_url": "https://forge.sp-tarkov.com/user/12844/infinity007",
+   "created_at": "2022-01-02T06:41:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This mod does not load in SPT-AKI 2.1.2</p>\n<p>Server Log:</p>\n<p>[INFO] Importing database\u2026</p>\n<p>ModLoader: loading mods\u2026</p>\n<p>[ERROR] Mod DeadW0Lf-BalancedMeds is out of date and incompatible with the current version of AKI. Please download an updated mod version or contact the mod author</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 3246,
+   "parent_id": null,
+   "author": "phodell",
+   "author_id": 12467,
+   "author_url": "https://forge.sp-tarkov.com/user/12467/phodell",
+   "created_at": "2022-01-02T10:54:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>If you add the line of code \u201cakiVersion\u201d: \u201c2.1.2\u201d to the bottom of the package.json you can get both of DeadW0Lf\u2019s mods Balanced Meds and Useful Foods to work in 2.1.2 from the little bit of testing I have done. That server message to my limited experience is just a version error thrown message. Foods and Meds have their updated totals, items already in your inventory in general are/have the value they were currently at, but some updated to the new values.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 61396,
+   "parent_id": 3246,
+   "author": "Kedzie",
+   "author_id": 5154,
+   "author_url": "https://forge.sp-tarkov.com/user/5154/kedzie",
+   "created_at": "2022-01-09T01:35:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Doing so produces an error that that json is faulty.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 61400,
+   "parent_id": 3246,
+   "author": "DeadW0Lf",
+   "author_id": 5571,
+   "author_url": "https://forge.sp-tarkov.com/user/5571/deadw0lf",
+   "created_at": "2022-01-09T05:13:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>try this. replace everything in package.json file.</p>\n<p>{</p>\n<p>\u201cname\u201d: \u201cBalancedMeds\u201d,</p>\n<p>\u201cauthor\u201d: \u201cDeadW0Lf\u201d,</p>\n<p>\u201cversion\u201d: \u201c1.0.1\u201d,</p>\n<p>\u201clicense\u201d: \u201cNCSA\u201d,</p>\n<p>\u201cmain\u201d: \u201cpackage.js\u201d,</p>\n<p>\u201cakiVersion\u201d: \u201c2.1.2\u201d</p>\n<p>}</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 4394,
+   "parent_id": null,
+   "author": "Bloo",
+   "author_id": 11202,
+   "author_url": "https://forge.sp-tarkov.com/user/11202/bloo",
+   "created_at": "2022-02-18T02:24:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey there, the mod works but only half so? All the meds have their boosted values but only meds found as loose loot or in containers have their full resource amount. Any meds found on bots do not have their full modded resource even if the bot didn\u2019t use it.</p>\n<p>For example Salewas are supposed to have 600 resource with this mod but the one\u2019s found on Bots will have 400(the vanilla value)/600.</p>\n<p>I was just wondering if that was an install error on my part or something hard codded cause it kinda circumvents the mod as a whole\u2026 Thanks in advance for any help.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 63285,
+   "parent_id": 4394,
+   "author": "DeadW0Lf",
+   "author_id": 5571,
+   "author_url": "https://forge.sp-tarkov.com/user/5571/deadw0lf",
+   "created_at": "2022-02-26T20:32:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>No I don\u2019t think its an install error. May be those instances of meds are initialized differently in the runtime.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 65247,
+   "parent_id": 4394,
+   "author": "CAESAR1162",
+   "author_id": 18219,
+   "author_url": "https://forge.sp-tarkov.com/user/18219/caesar1162",
+   "created_at": "2022-05-19T04:23:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I got it too. The meds looted from enemies will have original value instead of max modded value (Salewas will be 400/600)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 65248,
+   "parent_id": 4394,
+   "author": "CAESAR1162",
+   "author_id": 18219,
+   "author_url": "https://forge.sp-tarkov.com/user/18219/caesar1162",
+   "created_at": "2022-05-19T04:57:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>But that kinda fine I guess, think of it as the enemies used a little bit of those med, thats why it\u2019s not full</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 6206,
+   "parent_id": null,
+   "author": "TensaCiszketsu",
+   "author_id": 15172,
+   "author_url": "https://forge.sp-tarkov.com/user/15172/tensaciszketsu",
+   "created_at": "2022-06-30T11:37:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi, I\u2019m trying to remove the health penalty from CMS and Surv12 in your config.json. Should I put -1 in healthPenaltyMin and healthPenaltyMax?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 65914,
+   "parent_id": 6206,
+   "author": "DeadW0Lf",
+   "author_id": 5571,
+   "author_url": "https://forge.sp-tarkov.com/user/5571/deadw0lf",
+   "created_at": "2022-06-30T16:48:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>try to put 0 may be.. I forgot actually.<br />\nmay be its %age based\u2026 then you need to use 100, as it will recover 100% health of the limb.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 65981,
+   "parent_id": 6206,
+   "author": "TensaCiszketsu",
+   "author_id": 15172,
+   "author_url": "https://forge.sp-tarkov.com/user/15172/tensaciszketsu",
+   "created_at": "2022-07-02T13:05:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019ve put 0 previously and my limbs had only 1/1 HP. I\u2019ll try putting 100 later and report back</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 65983,
+   "parent_id": 6206,
+   "author": "TensaCiszketsu",
+   "author_id": 15172,
+   "author_url": "https://forge.sp-tarkov.com/user/15172/tensaciszketsu",
+   "created_at": "2022-07-02T15:29:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>100 works</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 6795,
+   "parent_id": null,
+   "author": "walisbourne",
+   "author_id": 20099,
+   "author_url": "https://forge.sp-tarkov.com/user/20099/walisbourne",
+   "created_at": "2022-07-25T08:28:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>\u201chpResourceRate\u201d is how much it heals at a time per use?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66607,
+   "parent_id": 6795,
+   "author": "aleves",
+   "author_id": 10686,
+   "author_url": "https://forge.sp-tarkov.com/user/10686/aleves",
+   "created_at": "2022-07-25T16:26:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hm, mayhaps</p>\n<p>I haven\u2019t really had the time to try everything beside making sure that the mod works. I might take a look at it some time later, but feel free to experiment with it yourself as well and report back with what your findings were <em>(if want you to)</em>.</p>\n<p>Cheers!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 6822,
+   "parent_id": null,
+   "author": "papanoskill",
+   "author_id": 8430,
+   "author_url": "https://forge.sp-tarkov.com/user/8430/papanoskill",
+   "created_at": "2022-07-25T17:59:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Am i able to take use this to modify other injectors assuming so, just not sure how id go about findiing the specific changes they make, would like to just make say an sj6 last 30 mins with no downside or something.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66631,
+   "parent_id": 6795,
+   "author": "walisbourne",
+   "author_id": 20099,
+   "author_url": "https://forge.sp-tarkov.com/user/20099/walisbourne",
+   "created_at": "2022-07-26T01:16:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>time to make all body parts have 100k health and mess with it</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 66639,
+   "parent_id": 6795,
+   "author": "walisbourne",
+   "author_id": 20099,
+   "author_url": "https://forge.sp-tarkov.com/user/20099/walisbourne",
+   "created_at": "2022-07-26T03:35:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i do believe that that line does work, was healing over 1k each use</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 66689,
+   "parent_id": 6795,
+   "author": "aleves",
+   "author_id": 10686,
+   "author_url": "https://forge.sp-tarkov.com/user/10686/aleves",
+   "created_at": "2022-07-26T18:41:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Interesting! I will add this to the readme with the next release. I guess you set it to 1k then?</p>\n<p>Thank you!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66707,
+   "parent_id": 6795,
+   "author": "walisbourne",
+   "author_id": 20099,
+   "author_url": "https://forge.sp-tarkov.com/user/20099/walisbourne",
+   "created_at": "2022-07-26T22:00:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>yeah i did set it to 1k each use when i had my body parts health pretty high</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 66715,
+   "parent_id": 6822,
+   "author": "walisbourne",
+   "author_id": 20099,
+   "author_url": "https://forge.sp-tarkov.com/user/20099/walisbourne",
+   "created_at": "2022-07-26T23:52:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>no a lot of the injectors have a hard coded lines, can\u2019t mess with them just yet i believe</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66716,
+   "parent_id": 6822,
+   "author": "aleves",
+   "author_id": 10686,
+   "author_url": "https://forge.sp-tarkov.com/user/10686/aleves",
+   "created_at": "2022-07-26T23:54:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>No, not currently anyways (unless you have the know-how to add those manually yourself). No idea if DeadW0Lf planned on adding all the other injectors as well, but for the time being you could use a mod like <a href=\"https://hub.sp-tarkov.com/files/file/190-medical-attention/#overview\" target=\"_blank\" rel=\"noreferrer noopener\">Medical Attention</a>, if and when it gets updated for 3.1.* that is.</p>\n<p>No promises though, but I <em>might</em> try tolook into adding those myself if I find the motivation/time to do so later.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 6890,
+   "parent_id": null,
+   "author": "aleves",
+   "author_id": 10686,
+   "author_url": "https://forge.sp-tarkov.com/user/10686/aleves",
+   "created_at": "2022-07-27T00:02:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Adding new stuff to <strong>DeadW0Lf</strong> mods won\u2019t be a priority of mine as I\u2019m focusing on keeping their mods alive till they might come back someday and take control over the reins again.</p>\n<p>That said, I\u2019m still going to take suggestions in consideration whether I\u2019m willing to fulfill those or not. It will all depend on my mood/motivation/time.</p>\n<p>Cheers!<br />\naleves</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 7705,
+   "parent_id": null,
+   "author": "Evergreen",
+   "author_id": 21313,
+   "author_url": "https://forge.sp-tarkov.com/user/21313/evergreen",
+   "created_at": "2022-08-18T16:21:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Changed the use time of the grizzly to 3 seconds, but it still takes the default 5 seconds to use. Just a heads up.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 67764,
+   "parent_id": 7705,
+   "author": "aleves",
+   "author_id": 10686,
+   "author_url": "https://forge.sp-tarkov.com/user/10686/aleves",
+   "created_at": "2022-08-18T20:13:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hmm, no clue. It could be the animation when the character opens up the bag which takes 1-2 seconds before the \u201creal\u201d healing begins. My guess is that \u2018medUseTime\u2019 only affects the time when the healing actually begins with disregard to the animations before and after, but don\u2019t quote me on that.</p>\n<p>I\u2019ve tried lowering it to 1 second and it takes 2-4 seconds to heal, so it seems to do something, albeit not reliably perhaps.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 8797,
+   "parent_id": null,
+   "author": "Ding_Chavez",
+   "author_id": 8320,
+   "author_url": "https://forge.sp-tarkov.com/user/8320/ding-chavez",
+   "created_at": "2022-10-11T18:17:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I cannot run this and useful food and drink:</p>\n<p>The application had a critical error and failed to run</p>\n<p>Exception produced: Error: Cannot find module \u2018../../../../node_modules/tsyringe\u2019</p>\n<p>Require stack:</p>\n<p>- C:\\Games\\EscapeFromTarkov - Copia\\user\\mods\\zDeadW0lf-BalancedMeds\\src\\mod.js</p>\n<p>- C:\\snapshot\\project\\obj\\loaders\\PreAkiModLoader.js</p>\n<p>- C:\\snapshot\\project\\obj\\loaders\\PostAkiModLoader.js</p>\n<p>- C:\\snapshot\\project\\obj\\callbacks\\ModCallbacks.js</p>\n<p>- C:\\snapshot\\project\\obj\\di\\Container.js</p>\n<p>- C:\\snapshot\\project\\obj\\Program.js</p>\n<p>- C:\\snapshot\\project\\obj\\ide\\ReleaseEntry.js</p>\n<p>1) If you want to compile the package/file into executable, please pay attention to compilation warnings and specify a literal in \u2018require\u2019 call. 2) If you don\u2019t want to compile the package/file into executable and want to \u2018require\u2019 it from filesystem (likely plugin), specify an absolute path in \u2018require\u2019 call using process.cwd() or process.execPath.</p>\n<p>Stacktrace:</p>\n<p>Error: Cannot find module \u2018../../../../node_modules/tsyringe\u2019</p>\n<p>Require stack:</p>\n<p>- C:\\Games\\EscapeFromTarkov - Copia\\user\\mods\\zDeadW0lf-BalancedMeds\\src\\mod.js</p>\n<p>- C:\\snapshot\\project\\obj\\loaders\\PreAkiModLoader.js</p>\n<p>- C:\\snapshot\\project\\obj\\loaders\\PostAkiModLoader.js</p>\n<p>- C:\\snapshot\\project\\obj\\callbacks\\ModCallbacks.js</p>\n<p>- C:\\snapshot\\project\\obj\\di\\Container.js</p>\n<p>- C:\\snapshot\\project\\obj\\Program.js</p>\n<p>- C:\\snapshot\\project\\obj\\ide\\ReleaseEntry.js</p>\n<p>1) If you want to compile the package/file into executable, please pay attention to compilation warnings and specify a literal in \u2018require\u2019 call. 2) If you don\u2019t want to compile the package/file into executable and want to \u2018require\u2019 it from filesystem (likely plugin), specify an absolute path in \u2018require\u2019 call using process.cwd() or process.execPath.</p>\n<p>at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)</p>\n<p>at Function._resolveFilename (pkg/prelude/bootstrap.js:1955:46)</p>\n<p>at Function.Module._load (node:internal/modules/cjs/loader:778:27)</p>\n<p>at Module.require (node:internal/modules/cjs/loader:1005:19)</p>\n<p>at Module.require (pkg/prelude/bootstrap.js:1855:31)</p>\n<p>at require (node:internal/modules/cjs/helpers:102:18)</p>\n<p>at Object.&lt;anonymous&gt; (C:\\Games\\EscapeFromTarkov - Copia\\user\\mods\\zDeadW0lf-BalancedMeds\\src\\mod.js:3:20)</p>\n<p>at Module._compile (node:internal/modules/cjs/loader:1105:14)</p>\n<p>at Module._compile (pkg/prelude/bootstrap.js:1894:32)</p>\n<p>at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 69311,
+   "parent_id": 8797,
+   "author": "aleves",
+   "author_id": 10686,
+   "author_url": "https://forge.sp-tarkov.com/user/10686/aleves",
+   "created_at": "2022-10-12T17:16:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yeah, it can happen if you\u2019ve upgraded to 3.2.4 from an older version and overwritten the old files.</p>\n<p>Please remove/rename this folder and try again,<br />\n\u201cX:\\ \\SPT-folder\\user\\<strong>cache</strong>\u201d</p>\n<p>Cheers!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 69312,
+   "parent_id": 8797,
+   "author": "Ding_Chavez",
+   "author_id": 8320,
+   "author_url": "https://forge.sp-tarkov.com/user/8320/ding-chavez",
+   "created_at": "2022-10-12T18:24:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It worked! Thank you</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 9407,
+   "parent_id": null,
+   "author": "Valentin",
+   "author_id": 20838,
+   "author_url": "https://forge.sp-tarkov.com/user/20838/valentin",
+   "created_at": "2022-11-23T19:12:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It says its imcompatible with the current aki version when i execute the server (willpost this on a few other mods dont mark as spam. just letting you know)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 9880,
+   "parent_id": null,
+   "author": "aleves",
+   "author_id": 10686,
+   "author_url": "https://forge.sp-tarkov.com/user/10686/aleves",
+   "created_at": "2022-12-22T00:40:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <h3>If you get this message while starting the server,</h3>\n<p>Stacktrace: Error: Cannot find module \u2018../../../../node_modules/tsyringe\u2019 ###  then please try the following,<br />\n<strong>remove/rename this folder, \u201cX:\\ \\SPT-folder\\user\\cache\u201d, and try again.</strong></p>\n<p>Feel free to report back if this doesn\u2019t help though!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 10660,
+   "parent_id": null,
+   "author": "Younited",
+   "author_id": 21565,
+   "author_url": "https://forge.sp-tarkov.com/user/21565/younited",
+   "created_at": "2023-01-15T15:10:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Howdy. Can someone help to figure it out ? <a href=\"https://prnt.sc/Sq2A4mr_APRT\" target=\"_blank\" rel=\"noreferrer noopener\">https://prnt.sc/Sq2A4mr_APRT</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 77120,
+   "parent_id": 10660,
+   "author": "Toshi Wulf",
+   "author_id": 26530,
+   "author_url": "https://forge.sp-tarkov.com/user/26530/toshi-wulf",
+   "created_at": "2023-03-20T12:52:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Read the log. All usefull info is there. Just be patient.</p>\n<p>for short - there is something creating errros from Food and Drinks mod</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 17374,
+   "parent_id": null,
+   "author": "Medic427",
+   "author_id": 20962,
+   "author_url": "https://forge.sp-tarkov.com/user/20962/medic427",
+   "created_at": "2023-07-02T20:51:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>can we get an update for this?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 18686,
+   "parent_id": null,
+   "author": "Validoleech",
+   "author_id": 21286,
+   "author_url": "https://forge.sp-tarkov.com/user/21286/validoleech",
+   "created_at": "2023-08-05T13:35:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Update when?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 90635,
+   "parent_id": 18686,
+   "author": "VeiledFury",
+   "author_id": 22834,
+   "author_url": "https://forge.sp-tarkov.com/user/22834/veiledfury",
+   "created_at": "2023-10-22T17:41:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Does not seem to need one, works fine for me in 3.7.1</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 28615,
+   "parent_id": null,
+   "author": "VeiledFury",
+   "author_id": 22834,
+   "author_url": "https://forge.sp-tarkov.com/user/22834/veiledfury",
+   "created_at": "2024-04-05T18:20:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You need to change package.json to \u201cakiVersion\u201d: \u201c3.8.0\u201d, but it loads fine and changes made to meds seem to work fine. At first glance looks like this still works in 3.8</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 37413,
+   "parent_id": null,
+   "author": "javitecge",
+   "author_id": 16339,
+   "author_url": "https://forge.sp-tarkov.com/user/16339/javitecge",
+   "created_at": "2024-07-26T02:25:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi, when update to 3.9.x ?<br />\nThanks in advance for your work !!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 38235,
+   "parent_id": null,
+   "author": "Djanbolt",
+   "author_id": 11792,
+   "author_url": "https://forge.sp-tarkov.com/user/11792/djanbolt",
+   "created_at": "2024-08-03T23:05:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>someone update this gorgeous mod on SPT 3.9.4</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 46032,
+   "parent_id": null,
+   "author": "DeadW0Lf",
+   "author_id": 5571,
+   "author_url": "https://forge.sp-tarkov.com/user/5571/deadw0lf",
+   "created_at": "2025-01-01T10:44:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Updated to latest SPT Version 3.10.0</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 46171,
+   "parent_id": null,
+   "author": "Shturman",
+   "author_id": 24247,
+   "author_url": "https://forge.sp-tarkov.com/user/24247/shturman",
+   "created_at": "2025-01-03T14:16:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i can\u2019t change the increase number of uses for the cms kit it stay on 3/3 uses</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 123571,
+   "parent_id": 46171,
+   "author": "DeadW0Lf",
+   "author_id": 5571,
+   "author_url": "https://forge.sp-tarkov.com/user/5571/deadw0lf",
+   "created_at": "2025-01-03T18:42:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>make sure to edit MaxHpResource in config/medicals.json file. \u201c5d02778e86f774203e7dedbe\u201d: { \u201cmedUseTime\u201d: 14, \u201cMaxHpResource\u201d: 10, \u201chpResourceRate\u201d: 0, \u201ceffects_health\u201d: [], \u201ceffects_damage\u201d: { \u201cDestroyedPart\u201d: { \u201cdelay\u201d: 0, \u201cduration\u201d: 0, \u201cfadeOut\u201d: 0, \u201chealthPenaltyMin\u201d: 60, \u201chealthPenaltyMax\u201d: 75 } }, \u201cname\u201d: \u201cCMS_kit\u201d },</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 47963,
+   "parent_id": null,
+   "author": "kuroninji",
+   "author_id": 72007,
+   "author_url": "https://forge.sp-tarkov.com/user/72007/kuroninji",
+   "created_at": "2025-02-05T20:42:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>hey, trying to make edits to the config of CMS/Surv12</p>\n<p>healthPenaltyMin &amp; healthPenaltyMax</p>\n<p>is this based on the base max hp of the body part? which way would one modify the values of themto reduce the hp penalty of using the kit</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 126378,
+   "parent_id": 47963,
+   "author": "DeadW0Lf",
+   "author_id": 5571,
+   "author_url": "https://forge.sp-tarkov.com/user/5571/deadw0lf",
+   "created_at": "2025-02-07T19:49:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yes its based on the body part hp</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 49298,
+   "parent_id": null,
+   "author": "Cy_rpg",
+   "author_id": 51870,
+   "author_url": "https://forge.sp-tarkov.com/user/51870/cy-rpg",
+   "created_at": "2025-03-11T01:56:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Trimadol seems to be missed?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 50429,
+   "parent_id": null,
+   "author": "KLIN21",
+   "author_id": 76301,
+   "author_url": "https://forge.sp-tarkov.com/user/76301/klin21",
+   "created_at": "2025-04-07T11:30:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You have an error in your code.</p>\n<p>if (items[item]._parent == BaseClasses.STIMULATOR &amp;&amp; this.stimconfig[itemId]) { itemProps.medUseTime = this.stimconfig[itemId][\u2018medUseTime\u2019]; itemProps.MaxHpResource = this.stimconfig[itemId][\u201cMaxHpResource\u201d]; itemProps.hpResourceRate = this.stimconfig[itemId][\u201chpResourceRate\u201d]; if (itemProps.StimulatorBuffs) { this.replacestims(itemId, this.stimconfig[itemId][\u201ceffects_buffs\u201d]); }You have no operation for \u201ceffects_damage\u201d. So for example parameters lightbleeding and heavybleeding in stims config dont\u2019t work. Used for default.</p>\n<p>\u201c5c0e533786f7747fa23f4d47\u201d: { \u201cname\u201d: \u201cZagustin\u201d, \u201cmedUseTime\u201d: 2, \u201cMaxHpResource\u201d: 4, \u201chpResourceRate\u201d: 0, \u201ceffects_health\u201d: [], \u201ceffects_damage\u201d: { \u201cLightBleeding\u201d: { \u201cdelay\u201d: 0, \u201cduration\u201d: 300, \u201cfadeOut\u201d: 20 }, \u201cHeavyBleeding\u201d: { \u201cdelay\u201d: 0, \u201cduration\u201d: 300, \u201cfadeOut\u201d: 20I fixed that like this in mod.ts</p>\n<p>if (items[item]._parent == BaseClasses.STIMULATOR &amp;&amp; this.stimconfig[itemId]) { itemProps.medUseTime = this.stimconfig[itemId][\u2018medUseTime\u2019]; itemProps.MaxHpResource = this.stimconfig[itemId][\u201cMaxHpResource\u201d]; itemProps.hpResourceRate = this.stimconfig[itemId][\u201chpResourceRate\u201d]; if (itemProps.StimulatorBuffs) { this.replacestims(itemId, this.stimconfig[itemId][\u201ceffects_buffs\u201d]); } if (itemProps.effects_damage) { itemProps.effects_damage = this.stimconfig[itemId][\u201ceffects_damage\u201d]; } }</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 51234,
+   "parent_id": null,
+   "author": "JDCallie",
+   "author_id": 19888,
+   "author_url": "https://forge.sp-tarkov.com/user/19888/jdcallie",
+   "created_at": "2025-04-28T02:16:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Seems to work with 3.11.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 143858,
+   "parent_id": null,
+   "author": "DeadW0Lf",
+   "author_id": 5571,
+   "author_url": "https://forge.sp-tarkov.com/user/5571/deadw0lf",
+   "created_at": "2025-11-25T19:45:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Updated to latest SPT Version 4.0.6</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 143947,
+   "parent_id": null,
+   "author": "TEFTELKA",
+   "author_id": 58944,
+   "author_url": "https://forge.sp-tarkov.com/user/58944/teftelka",
+   "created_at": "2025-11-26T14:18:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>First of all - thank you for updating the mod. But it seems like quite a few injectors are missing, namely Trimadol, SJ12, Perfotoran and 2A2-(b-TG). Is it by desing or do you plan to add those too?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 143963,
+   "parent_id": 143947,
+   "author": "DeadW0Lf",
+   "author_id": 5571,
+   "author_url": "https://forge.sp-tarkov.com/user/5571/deadw0lf",
+   "created_at": "2025-11-26T17:29:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yes, I noticed this during testing. The mod was created quite a while ago, so some stimulators may be not present in the config list. I plan to update the list soon. For now, the buffs are using their default values, but in the next update I\u2019ll increase the buff values and add any missing stimulators.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 144537,
+   "parent_id": null,
+   "author": "NomenIgnatum",
+   "author_id": 89021,
+   "author_url": "https://forge.sp-tarkov.com/user/89021/nomenignatum",
+   "created_at": "2025-12-01T14:11:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>adding effects to medkits seems to not work. Added heavy bleeding to the car medpack and it didn\u2019t work.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 144734,
+   "parent_id": 144537,
+   "author": "DeadW0Lf",
+   "author_id": 5571,
+   "author_url": "https://forge.sp-tarkov.com/user/5571/deadw0lf",
+   "created_at": "2025-12-03T17:48:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You need to add similar to below json in the json config file for that particular Medkit.</p>\n<pre><code>\"HeavyBleeding\": {\n    \"delay\": 0,\n    \"duration\": 0,\n    \"fadeOut\": 0,\n    \"cost\": 50,\n   \"healthPenaltyMin\": 0,\n   \"healthPenaltyMax\": 0\n}\n</code></pre>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 146065,
+   "parent_id": null,
+   "author": "Et3rnus",
+   "author_id": 12479,
+   "author_url": "https://forge.sp-tarkov.com/user/12479/et3rnus",
+   "created_at": "2025-12-14T15:07:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Heyo!\nTrying to add stuff like Destoyed Part and Fracture to Salewa/AFAK, but it\u2019s not working.</p>\n<p>\u201cDestroyedPart\u201d: {\n\u201cdelay\u201d: 0,\n\u201cduration\u201d: 0,\n\u201cfadeOut\u201d: 0,\n\u201ccost\u201d: 100,\n\u201chealthPenaltyMin\u201d: 10,\n\u201chealthPenaltyMax\u201d: 25\n},</p>\n<p>\u201cFracture\u201d: {\n\u201cdelay\u201d: 0,\n\u201cduration\u201d: 0,\n\u201cfadeOut\u201d: 0,\n\u201ccost\u201d: 40\n}</p>\n<p>This is the lines I added for the Salewa and AFAK, no errors and game starts up all fine, but I can\u2019t actually restore fractures or Destroyed Parts.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 146484,
+   "parent_id": 146065,
+   "author": "DeadW0Lf",
+   "author_id": 5571,
+   "author_url": "https://forge.sp-tarkov.com/user/5571/deadw0lf",
+   "created_at": "2025-12-18T17:32:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>DestroyedPart is not handled in Medkits Items, It only available for Medicals.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 147804,
+   "parent_id": null,
+   "author": "Acouya",
+   "author_id": 22623,
+   "author_url": "https://forge.sp-tarkov.com/user/22623/acouya",
+   "created_at": "2025-12-29T11:07:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Seems like Obdolbos 2 was missed in the stims section.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 148306,
+   "parent_id": null,
+   "author": "Vekirion",
+   "author_id": 99646,
+   "author_url": "https://forge.sp-tarkov.com/user/99646/vekirion",
+   "created_at": "2025-12-31T19:35:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello!\nFirst of all happy new year c:</p>\n<p>I run into an issue, where the set costs for items to remove effects are not working properly.\nI have the settings set like this:\n\u201c60098ad7c2240c0fe85c570a\u201d: {\n\u201cname\u201d: \u201cAFAK_personal_tactical_first_aid_kit\u201d,\n\u201cmedUseTime\u201d: 2,\n\u201cMaxHpResource\u201d: 550,\n\u201chpResourceRate\u201d: 85,\n\u201ceffects_health\u201d: [],\n\u201ceffects_damage\u201d: {\n\u201cLightBleeding\u201d: {\n\u201cdelay\u201d: 0,\n\u201cduration\u201d: 0,\n\u201cfadeOut\u201d: 0,\n\u201ccost\u201d: 25,\n\u201chealthPenaltyMin\u201d: 0,\n\u201chealthPenaltyMax\u201d: 0\n},\n\u201cRadExposure\u201d: {\n\u201cdelay\u201d: 0,\n\u201cduration\u201d: 0,\n\u201cfadeOut\u201d: 0,\n\u201ccost\u201d: 0,\n\u201chealthPenaltyMin\u201d: 0,\n\u201chealthPenaltyMax\u201d: 0\n},\n\u201cHeavyBleeding\u201d: {\n\u201cdelay\u201d: 0,\n\u201cduration\u201d: 0,\n\u201cfadeOut\u201d: 0,\n\u201ccost\u201d: 50,\n\u201chealthPenaltyMin\u201d: 0,\n\u201chealthPenaltyMax\u201d: 0\n}\n}\n},</p>\n<p>But it still costs 170 of my AFAK resource to stop heavy bleeding.\nIt is so far the only part that doesn\u2019t work for me - changing max resources or removing effects works just fine.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 148388,
+   "parent_id": null,
+   "author": "Wite-Whrice",
+   "author_id": 72022,
+   "author_url": "https://forge.sp-tarkov.com/user/72022/wite-whrice",
+   "created_at": "2026-01-01T10:48:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you for this mod, I was using Medical Attention with 4.0 but changes to blacked-out limb max hp wasn\u2019t working, the comment on that mod is also disabled so that\u2019s something. A feature I\u2019d like if possible is being able to run/walk while healing or surgery. Right now I\u2019m using that feature from the BepInEx portion of Medical Attention, but I think it\u2019s a good feature to include in your mod as well. Thanks again.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 149032,
+   "parent_id": 148306,
+   "author": "lukehurst31",
+   "author_id": 75570,
+   "author_url": "https://forge.sp-tarkov.com/user/75570/lukehurst31",
+   "created_at": "2026-01-05T02:14:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Same for me</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 149887,
+   "parent_id": null,
+   "author": "BloodShadeWolf",
+   "author_id": 24553,
+   "author_url": "https://forge.sp-tarkov.com/user/24553/bloodshadewolf",
+   "created_at": "2026-01-12T08:20:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i cant change the config for the surv12 kit</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 155067,
+   "parent_id": null,
+   "author": "riceshakes",
+   "author_id": 70111,
+   "author_url": "https://forge.sp-tarkov.com/user/70111/riceshakes",
+   "created_at": "2026-03-19T00:48:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I like this version more than order health item mods! Feels better without feeling like cheating</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 157363,
+   "parent_id": null,
+   "author": "drippin jimmy",
+   "author_id": 46426,
+   "author_url": "https://forge.sp-tarkov.com/user/46426/drippin-jimmy",
+   "created_at": "2026-04-17T07:21:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>is it possible to add tigz\u2019s splint into the config files? is it something I can do myself lol</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 157365,
+   "parent_id": 157363,
+   "author": "DeadW0Lf",
+   "author_id": 5571,
+   "author_url": "https://forge.sp-tarkov.com/user/5571/deadw0lf",
+   "created_at": "2026-04-17T07:41:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yes you can add it, if you know the ID. I have cheked in tarkov item finder and it seems the ID for item is not available.\nIf you happen to find the ID just you need to add that into the JSON file (medicals.json).</p>\n<p>\u201c&lt;ITME ID&gt;\u201d: {\n\u201cmedUseTime\u201d: 3,\n\u201cMaxHpResource\u201d: 5,\n\u201chpResourceRate\u201d: 0,\n\u201ceffects_health\u201d: [],\n\u201ceffects_damage\u201d: {\n\u201cFracture\u201d: {\n\u201cdelay\u201d: 0,\n\u201cduration\u201d: 0,\n\u201cfadeOut\u201d: 0\n}\n},\n\u201cname\u201d: \u201cTigzresq splint\u201d\n},</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 157366,
+   "parent_id": 148306,
+   "author": "DeadW0Lf",
+   "author_id": 5571,
+   "author_url": "https://forge.sp-tarkov.com/user/5571/deadw0lf",
+   "created_at": "2026-04-17T07:49:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This may need to be checked further, as there could be several changes in the Tarkov codebase. I haven\u2019t verified all the features\u2014I only ported this mod from an older version to support v4.0 SPT.\nIf I get some time, I\u2019ll try to look into it. However, I haven\u2019t played Tarkov in a while and don\u2019t have any immediate plans to revisit it. Apologies for the inconvenience.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 162463,
+   "parent_id": null,
+   "author": "MonolithPreacher",
+   "author_id": 23458,
+   "author_url": "https://forge.sp-tarkov.com/user/23458/monolithpreacher",
+   "created_at": "2026-06-12T00:22:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey, I wonder if I can just use the stim changes instead of the whole made without rewriting everything.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

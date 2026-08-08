@@ -15,6 +15,12 @@ on:
 permissions:
   contents: read
 
+# Pages allows one deployment at a time. refresh.yml shares this group, so a
+# scheduled refresh and a push can never race to publish.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
 jobs:
   validate:
     runs-on: ubuntu-latest

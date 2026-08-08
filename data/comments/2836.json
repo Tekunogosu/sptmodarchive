@@ -1,0 +1,50 @@
+{
+ "mod_id": 2836,
+ "slug": "adjust-insurance-prices",
+ "fetched_at": "2026-08-08T22:42:43Z",
+ "reported_total": null,
+ "pages": 1,
+ "count": 4,
+ "comments": [
+  {
+   "id": 167389,
+   "parent_id": null,
+   "author": "Vinarator",
+   "author_id": 115595,
+   "author_url": "https://forge.sp-tarkov.com/user/115595/vinarator",
+   "created_at": "2026-07-21T16:22:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I love the mod preview image</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 167474,
+   "parent_id": 167389,
+   "author": "Xenyx",
+   "author_id": 116424,
+   "author_url": "https://forge.sp-tarkov.com/user/116424/xenyx",
+   "created_at": "2026-07-22T04:02:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Haha :D</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 169096,
+   "parent_id": null,
+   "author": "SptAkiModsEnjoyer",
+   "author_id": 119151,
+   "author_url": "https://forge.sp-tarkov.com/user/119151/sptakimodsenjoyer",
+   "created_at": "2026-07-31T15:40:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello and thanx for the mod.</p>\n<p>I\u2019m having an issue with helmet insurance prices. At 25x, they don\u2019t go above 30k, while the cowboy hat is priced at 82\u2013102k.</p>\n<p>Rigs and vests are also too cheap to insure until plates are added. Some rigs and plates don\u2019t allow plate changes, which makes them too cheap to insure. I think this may be related to why helmets aren\u2019t getting higher insurance costs \u2014 they don\u2019t swap armor the way other gear does.</p>\n<p>I\u2019d love to see this fixed, or at least have the option to use much higher pricing multipliers, like 250x, to better balance helmet insurance.</p>\n<p>Thanx again for your hard work.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169203,
+   "parent_id": 169096,
+   "author": "Xenyx",
+   "author_id": 116424,
+   "author_url": "https://forge.sp-tarkov.com/user/116424/xenyx",
+   "created_at": "2026-08-01T00:02:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi - this is something I\u2019d noticed too.</p>\n<p>It seems some gear has very low price values defined in <code>SPT\\SPT_Data\\database\\templates\\handbook.json</code>, which is where SPT\u2019s insurance price function gets the item\u2019s price from.</p>\n<p>For example: the MTEK Flux helmet is valued at only 1429 rubles, and after insurance price calculation with Prapor, it costs ~272 rubles to insure. This is definitely not right, as it\u2019s a relatively high-end helmet which Ragman LL4 sells for &gt;100k.</p>\n<p>So the core of the problem is <code>handbook.json</code> having bad price values for some items. With the way this mod currently functions (simply multiplying the final price provided by <code>GetRoublePriceToInsureItemWithTrader</code>), fixing the base prices in <code>handbook.json</code> is not really within the scope of what this mod does (though I might look into that).</p>\n<p>I will think over some ways I could possibly circumvent this (like pulling trader or flea price for some items instead). Or as you suggested: raising the multiplier ceiling. Though it\u2019s worth mentioning a major caveat to running a very high multiplier to fix poorly priced items would be correctly priced ones in the same category costing ridiculous amounts to insure. E.g. Tagilla\u2019s welding mask going from ~25k to 6.25 million with a 250x multiplier.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

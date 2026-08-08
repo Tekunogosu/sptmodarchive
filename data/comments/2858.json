@@ -1,0 +1,250 @@
+{
+ "mod_id": 2858,
+ "slug": "cinekit-freecam-cinematic-camera-point-path-editor-follower",
+ "fetched_at": "2026-08-08T22:41:52Z",
+ "reported_total": null,
+ "pages": 1,
+ "count": 24,
+ "comments": [
+  {
+   "id": 168953,
+   "parent_id": null,
+   "author": "segwsaefgseg",
+   "author_id": 86501,
+   "author_url": "https://forge.sp-tarkov.com/user/86501/segwsaefgseg",
+   "created_at": "2026-07-30T16:29:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is there a feature to record the match after the game ends? Like a Minecraft replay mode.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168954,
+   "parent_id": 168953,
+   "author": "Hysocs",
+   "author_id": 118937,
+   "author_url": "https://forge.sp-tarkov.com/user/118937/hysocs",
+   "created_at": "2026-07-30T16:31:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>There is not, and thats not really a viable thing to do with how unity works from a mod perspective</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 168955,
+   "parent_id": 168953,
+   "author": "segwsaefgseg",
+   "author_id": 86501,
+   "author_url": "https://forge.sp-tarkov.com/user/86501/segwsaefgseg",
+   "created_at": "2026-07-30T16:40:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>\ud83d\ude14\ud83d\ude14\ud83d\ude14</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168976,
+   "parent_id": null,
+   "author": "Levantiec",
+   "author_id": 119101,
+   "author_url": "https://forge.sp-tarkov.com/user/119101/levantiec",
+   "created_at": "2026-07-30T20:17:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi, is it possible to make your character visible when the camera is activated?\nSo that you can control your character while moving the camera, similar to the cinematic unity explorer functionality</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168977,
+   "parent_id": 168976,
+   "author": "Hysocs",
+   "author_id": 118937,
+   "author_url": "https://forge.sp-tarkov.com/user/118937/hysocs",
+   "created_at": "2026-07-30T20:18:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This is how it already currently functions</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168978,
+   "parent_id": 168976,
+   "author": "Levantiec",
+   "author_id": 119101,
+   "author_url": "https://forge.sp-tarkov.com/user/119101/levantiec",
+   "created_at": "2026-07-30T20:21:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hmm, it\u2019s strange, but my character becomes invisible as soon as I activate the free camera and use follow freecam</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168980,
+   "parent_id": 168976,
+   "author": "Hysocs",
+   "author_id": 118937,
+   "author_url": "https://forge.sp-tarkov.com/user/118937/hysocs",
+   "created_at": "2026-07-30T20:22:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>any chance you could send me a example of what you are doing as in no way should the freecam de render your character fully</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168982,
+   "parent_id": 168976,
+   "author": "Levantiec",
+   "author_id": 119101,
+   "author_url": "https://forge.sp-tarkov.com/user/119101/levantiec",
+   "created_at": "2026-07-30T20:35:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The installed free camera mods are terkoiz freecam, hollywood cam, and cinematic unity explorer, but they are all disabled when you use your mod\nAfter activating the free camera I have two problems with the settings:</p>\n<ol>\n<li>If the \u201cControl player from freecam\u201d setting is activated, the camera is fixed, the character is visible and can be controlled, but the size of the character\u2019s hands changes slightly (they become larger due to a collision error)</li>\n<li>When the \u201cplayer follows freecam\u201d setting is activated, the character is not visible at all, but the camera can still be controlled</li>\n</ol>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168983,
+   "parent_id": 168976,
+   "author": "Hysocs",
+   "author_id": 118937,
+   "author_url": "https://forge.sp-tarkov.com/user/118937/hysocs",
+   "created_at": "2026-07-30T20:37:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yes, this is intended behavior. <strong>Player Follows Freecam</strong> is a special mode that lets you use the freecam to move around the map while your character follows its position. You cannot see the character because the camera is positioned inside the player model.</p>\n<p>I may rename it, since <strong>Player Follows Freecam</strong> could sound like the character automatically follows the camera while remaining on the ground. <strong>Noclip</strong> is probably a clearer name because that is closer to how the mode works.</p>\n<p>There is usually no reason to leave it enabled unless you want to fly around while still being your character. In most cases, you would briefly enable it and then disable it again to teleport your character to the freecam\u2019s current position.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 168984,
+   "parent_id": 168976,
+   "author": "Levantiec",
+   "author_id": 119101,
+   "author_url": "https://forge.sp-tarkov.com/user/119101/levantiec",
+   "created_at": "2026-07-30T20:44:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is there any way to set up a scene where the character is visible and the camera is either facing them or following them?  For recording live action scenes.\nThere is a similar feature in CUE, but it has issues with texture rendering and smooth.\nHowever, your camera movement is very smooth.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168985,
+   "parent_id": 168976,
+   "author": "Hysocs",
+   "author_id": 118937,
+   "author_url": "https://forge.sp-tarkov.com/user/118937/hysocs",
+   "created_at": "2026-07-30T20:46:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You can setup point paths and direct a scene but there is no direct follow camera, i could likely add that as a feature</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168986,
+   "parent_id": 168976,
+   "author": "Levantiec",
+   "author_id": 119101,
+   "author_url": "https://forge.sp-tarkov.com/user/119101/levantiec",
+   "created_at": "2026-07-30T21:02:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>In any case, the mod is great, the camera path works much better and smoother than in CUE, and even the character controls work</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168996,
+   "parent_id": 168976,
+   "author": "Hysocs",
+   "author_id": 118937,
+   "author_url": "https://forge.sp-tarkov.com/user/118937/hysocs",
+   "created_at": "2026-07-30T22:09:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks, i just need to add some lighting and weather controls and a few other things and i think it will be much better off</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168999,
+   "parent_id": null,
+   "author": "ninjabeest",
+   "author_id": 113064,
+   "author_url": "https://forge.sp-tarkov.com/user/113064/ninjabeest",
+   "created_at": "2026-07-30T22:34:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>fika compat?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169000,
+   "parent_id": 168999,
+   "author": "Hysocs",
+   "author_id": 118937,
+   "author_url": "https://forge.sp-tarkov.com/user/118937/hysocs",
+   "created_at": "2026-07-30T22:36:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Untested, but everything is client sided</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169008,
+   "parent_id": 168976,
+   "author": "Hysocs",
+   "author_id": 118937,
+   "author_url": "https://forge.sp-tarkov.com/user/118937/hysocs",
+   "created_at": "2026-07-30T23:47:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I couldnt think of an amazing way to solve this issue, so i added anchor points to your local player, it lets you do stuff like this</p>\n<div class=\"youtube-lite\" data-video-id=\"iwNd_Z33Z6w\" data-embed-url=\"https://www.youtube-nocookie.com/embed/iwNd_Z33Z6w?autoplay=1\"><img src=\"https://i.ytimg.com/vi/iwNd_Z33Z6w/hqdefault.jpg\" alt=\"YouTube video thumbnail\" loading=\"lazy\" decoding=\"async\" /></div>\n<p>i will provide it next update</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169557,
+   "parent_id": null,
+   "author": "Levantiec",
+   "author_id": 119101,
+   "author_url": "https://forge.sp-tarkov.com/user/119101/levantiec",
+   "created_at": "2026-08-01T22:44:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Can you tell me if the mod is compatible with version 4.0.13? I don\u2019t want to update until the old mods are updated.\nApparently not, because after the update, I can\u2019t launch the game at all (infinite loading screen)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169558,
+   "parent_id": 169557,
+   "author": "Hysocs",
+   "author_id": 118937,
+   "author_url": "https://forge.sp-tarkov.com/user/118937/hysocs",
+   "created_at": "2026-08-01T22:46:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Newest version is not backwards compatible with 4.0.13 i will add that to the version logs</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169560,
+   "parent_id": 169557,
+   "author": "Levantiec",
+   "author_id": 119101,
+   "author_url": "https://forge.sp-tarkov.com/user/119101/levantiec",
+   "created_at": "2026-08-01T22:53:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Well, thanks SPT for the untimely update</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169561,
+   "parent_id": 169557,
+   "author": "Hysocs",
+   "author_id": 118937,
+   "author_url": "https://forge.sp-tarkov.com/user/118937/hysocs",
+   "created_at": "2026-08-01T22:58:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I jumped the gun on updating. Since im still new to SPT modding, I didn\u2019t realize how much changes between versions and ended up locking myself into the update. I\u2019ll handle future updates differently.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169578,
+   "parent_id": null,
+   "author": "Yoshion",
+   "author_id": 51526,
+   "author_url": "https://forge.sp-tarkov.com/user/51526/yoshion",
+   "created_at": "2026-08-01T23:58:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i haven tested this mod but doesn it work like. i go to raids and exfil, can i see my raid in 3d fly camera or do i need to be on that raid to fly camera</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169579,
+   "parent_id": 169578,
+   "author": "Hysocs",
+   "author_id": 118937,
+   "author_url": "https://forge.sp-tarkov.com/user/118937/hysocs",
+   "created_at": "2026-08-02T00:00:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Its a character freecam so your character needs to be alive for it to function.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169581,
+   "parent_id": 169578,
+   "author": "Yoshion",
+   "author_id": 51526,
+   "author_url": "https://forge.sp-tarkov.com/user/51526/yoshion",
+   "created_at": "2026-08-02T00:03:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>oo :C i would have like to see my raid how close i was of death, like that 2D raid reviever but with 3D because i dont understad that 2D reviver that much</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169677,
+   "parent_id": 169557,
+   "author": "Levantiec",
+   "author_id": 119101,
+   "author_url": "https://forge.sp-tarkov.com/user/119101/levantiec",
+   "created_at": "2026-08-02T09:02:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>is it possible to make a separate version for 4.0.13?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

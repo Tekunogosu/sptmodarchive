@@ -1,0 +1,120 @@
+{
+ "mod_id": 2615,
+ "slug": "updated-collector-quest-and-streamer-case-eft-10-backport",
+ "fetched_at": "2026-08-08T22:12:13Z",
+ "reported_total": null,
+ "pages": 1,
+ "count": 11,
+ "comments": [
+  {
+   "id": 154169,
+   "parent_id": null,
+   "author": "AlexLAN",
+   "author_id": 15890,
+   "author_url": "https://forge.sp-tarkov.com/user/15890/alexlan",
+   "created_at": "2026-03-05T07:28:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2026-03-05 07:33:49]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 154170,
+   "parent_id": null,
+   "author": "AlexLAN",
+   "author_id": 15890,
+   "author_url": "https://forge.sp-tarkov.com/user/15890/alexlan",
+   "created_at": "2026-03-05T07:45:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Critical exception, stopping server\u2026\nThe given key \u20186937f02dfd6488bb27024839\u2019 was not present in the dictionary.\nat System.Collections.Generic.Dictionary<code>2.get_Item(TKey key) at sgtlaggyQuestTweaks.Mod.OnLoad() at SPTarkov.Server.Core.Utils.App.InitializeAsync() at SPTarkov.Server.Services.SptServerStartupService.Startup() at SPTarkov.Server.Program.StartServer(String[] args) Logger queue caught exception: System.OperationCanceledException: The operation was canceled. at System.Threading.CancellationToken.ThrowOperationCanceledException() at System.Threading.CancellationToken.ThrowIfCancellationRequested() at System.Collections.Concurrent.BlockingCollection</code>1.TryTakeWithNoTimeValidation(T&amp; item, Int32 millisecondsTimeout, CancellationToken cancellationToken, CancellationTokenSource combinedTokenSource)\nat System.Collections.Concurrent.BlockingCollection`1.GetConsumingEnumerable(CancellationToken cancellationToken)+MoveNext()\nat SPTarkov.Server.Core.Utils.Logger.SptLoggerQueueManager.LoggerWorkerThread()</p>\n<p>The server has unexpectedly stopped, reach out to #mod-questions-4-0 in our Discord server. Include a screenshot of this message and the surrounding error(s) above and below\nSystem.Collections.Generic.KeyNotFoundException: The given key \u20186937f02dfd6488bb27024839\u2019 was not present in the dictionary.\nat System.Collections.Generic.Dictionary`2.get_Item(TKey key)\nat sgtlaggyQuestTweaks.Mod.OnLoad()\nat SPTarkov.Server.Core.Utils.App.InitializeAsync()\nat SPTarkov.Server.Services.SptServerStartupService.Startup()\nat SPTarkov.Server.Program.StartServer(String[] args)\nat SPTarkov.Server.Program.Main(String[] args)\nPress any key to exit\u2026</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 154171,
+   "parent_id": 154170,
+   "author": "garfieldmd.",
+   "author_id": 86026,
+   "author_url": "https://forge.sp-tarkov.com/user/86026/garfieldmd",
+   "created_at": "2026-03-05T07:48:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>you need download the WTT Backport first</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 154177,
+   "parent_id": 154170,
+   "author": "AlexLAN",
+   "author_id": 15890,
+   "author_url": "https://forge.sp-tarkov.com/user/15890/alexlan",
+   "created_at": "2026-03-05T14:17:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I already had the WTT Backport v1.01 mod. I updated to 1.04, same error.\nCritical exception, stopping server\u2026\nThe given key \u20186937f02dfd6488bb27024839\u2019 was not present in the dictionary.\nat System.Collections.Generic.Dictionary`2.get_Item(TKey key)\u2026</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 154197,
+   "parent_id": 154170,
+   "author": "garfieldmd.",
+   "author_id": 86026,
+   "author_url": "https://forge.sp-tarkov.com/user/86026/garfieldmd",
+   "created_at": "2026-03-05T16:33:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>hmmm so 6937f02dfd6488bb27024839 is the ID for Domontovich ushanka hat, did you have it in game?\nalso did you download the new Headwear_config_2.json from WTT backport github\u2026\nalso i am just a regular gamer so can\u2019t help you debugging, sorry</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 154199,
+   "parent_id": 154170,
+   "author": "AlexLAN",
+   "author_id": 15890,
+   "author_url": "https://forge.sp-tarkov.com/user/15890/alexlan",
+   "created_at": "2026-03-05T16:57:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yes, I found Domontovich\u2019s ushanka hat. But I didn\u2019t download the Headwear_config_2.json file; I couldn\u2019t find it on GitHub. If you don\u2019t mind, could you leave a link to the file? Thank you.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 154221,
+   "parent_id": 154170,
+   "author": "garfieldmd.",
+   "author_id": 86026,
+   "author_url": "https://forge.sp-tarkov.com/user/86026/garfieldmd",
+   "created_at": "2026-03-05T21:25:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i don\u2019t know if it is allowed to post links but here it is: <a href=\"https://github.com/WelcomeToTarkov/Tarkov-1.0-Backport/tree/main/WTT-ContentBackport/Resources/db/CustomItems\" target=\"_blank\" rel=\"noreferrer noopener\">https://github.com/WelcomeToTarkov/Tarkov-1.0-Backport/tree/main/WTT-ContentBackport/Resources/db/CustomItems</a>\nplease download all the new files (said updated 5 days ago or last month)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 160264,
+   "parent_id": null,
+   "author": "\u660e\u6708\u6e05\u98ce",
+   "author_id": 108425,
+   "author_url": "https://forge.sp-tarkov.com/user/108425/user-108425",
+   "created_at": "2026-05-19T11:01:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019ve installed the WTT Content Recap mod, but it doesn\u2019t seem to refresh items like the Soviet Fluffy Fracture Ring.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 161088,
+   "parent_id": null,
+   "author": "summigodd",
+   "author_id": 111295,
+   "author_url": "https://forge.sp-tarkov.com/user/111295/summigodd",
+   "created_at": "2026-05-30T03:27:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>is this incompatible with anything? I get a critical error saying blah blah blah isnt found in dictionary and it was working fine for me yesterday but i downloaded a few more mods rn. i just dont see why these would conflict with anything but then again i dont know much about modding and the coding side of things</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 162289,
+   "parent_id": 161088,
+   "author": "sgtlaggy",
+   "author_id": 50076,
+   "author_url": "https://forge.sp-tarkov.com/user/50076/sgtlaggy",
+   "created_at": "2026-06-10T05:05:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>If it\u2019s the same error posted below mentioning <code>sgtlaggyQuestTweaks</code> a couple lines below the red, I just updated that mod with a fix. If it mentions <code>StartCollectorEarly</code>, you should report it in that mod\u2019s comments.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 166591,
+   "parent_id": null,
+   "author": "avehulian",
+   "author_id": 88200,
+   "author_url": "https://forge.sp-tarkov.com/user/88200/avehulian",
+   "created_at": "2026-07-16T16:10:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2026-07-18 09:50:29]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

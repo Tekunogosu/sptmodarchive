@@ -1,0 +1,190 @@
+{
+ "mod_id": 2575,
+ "slug": "fair-equipment-restoration",
+ "fetched_at": "2026-08-08T22:40:32Z",
+ "reported_total": null,
+ "pages": 1,
+ "count": 18,
+ "comments": [
+  {
+   "id": 151982,
+   "parent_id": null,
+   "author": "Kacpernap",
+   "author_id": 32322,
+   "author_url": "https://forge.sp-tarkov.com/user/32322/kacpernap",
+   "created_at": "2026-02-05T14:11:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>good mod!</p>\n<p>also yeah, i can confirm that when using fika, the mod actually works (started up as bear, kept my normal stuff after dying but lost the can of peas i looted from the scav, ak74m and paca was damaged)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 151986,
+   "parent_id": 151982,
+   "author": "gorecreek",
+   "author_id": 104276,
+   "author_url": "https://forge.sp-tarkov.com/user/104276/gorecreek",
+   "created_at": "2026-02-05T14:25:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you! Good to know that at least the basics work with Fika. I\u2019ll keep the compatibility status unknown for now though and wait for more feedback, maybe will check something myself later.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151992,
+   "parent_id": null,
+   "author": "paul",
+   "author_id": 45463,
+   "author_url": "https://forge.sp-tarkov.com/user/45463/paul",
+   "created_at": "2026-02-05T14:46:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>isnt this just a rip -off of keepyourstartinggear? what the difference?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151993,
+   "parent_id": 151992,
+   "author": "gorecreek",
+   "author_id": 104276,
+   "author_url": "https://forge.sp-tarkov.com/user/104276/gorecreek",
+   "created_at": "2026-02-05T15:10:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Keep Starting Gear is similar but I do not intend to compete with it. It has something more like a save system, while this mod is a simple starting gear restore mod plus durability/lost items feature on top of it.</p>\n<p>Also, I was using Keep Starting Gear some time ago and had issues with it. I had a specific set of features that I wanted in mind and just decided to implement them myself.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 151995,
+   "parent_id": 151992,
+   "author": "gorecreek",
+   "author_id": 104276,
+   "author_url": "https://forge.sp-tarkov.com/user/104276/gorecreek",
+   "created_at": "2026-02-05T15:32:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The implementation is also different: KSG consists of a client mod that creates the \u201csaves\u201d on demand and a server mod that uses them to restore the inventory.</p>\n<p>This mod on the other hand is just serverside and restores the inventory based on the information available at the end of a raid.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151996,
+   "parent_id": null,
+   "author": "sonofmaw",
+   "author_id": 99179,
+   "author_url": "https://forge.sp-tarkov.com/user/99179/sonofmaw",
+   "created_at": "2026-02-05T15:41:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This is perfect. I\u2019d hacked a version of Keep Starting Gear to have this exact restoration behavior, so I\u2019m happy I can swap my abomination with a proper mod!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 152736,
+   "parent_id": null,
+   "author": "simakover",
+   "author_id": 104344,
+   "author_url": "https://forge.sp-tarkov.com/user/104344/simakover",
+   "created_at": "2026-02-12T11:50:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>found that mod interesting for me as easier raid setup but may be somebody advice mod for tighter gear progression? or point system like gearing in arena?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 154846,
+   "parent_id": null,
+   "author": "20fpsguy",
+   "author_id": 43600,
+   "author_url": "https://forge.sp-tarkov.com/user/43600/20fpsguy",
+   "created_at": "2026-03-14T23:39:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i encountered a issue i looted a helmet and dropped my old one in raid and my old one didn get restored after death</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 154924,
+   "parent_id": 154846,
+   "author": "gorecreek",
+   "author_id": 104276,
+   "author_url": "https://forge.sp-tarkov.com/user/104276/gorecreek",
+   "created_at": "2026-03-16T16:23:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello! If you did not change the default config, then this is expected. The items you consumed or dropped intentionally are not restored by default. Only items that you had equipped on death are.</p>\n<p>If you want all your items to return, consumed or dropped, change restoreLostItems to true.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 154926,
+   "parent_id": 154846,
+   "author": "20fpsguy",
+   "author_id": 43600,
+   "author_url": "https://forge.sp-tarkov.com/user/43600/20fpsguy",
+   "created_at": "2026-03-16T16:26:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>ooh ok i didn know that thats fair alright ty for the reply!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 154927,
+   "parent_id": 154846,
+   "author": "gorecreek",
+   "author_id": 104276,
+   "author_url": "https://forge.sp-tarkov.com/user/104276/gorecreek",
+   "created_at": "2026-03-16T16:48:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You are welcome. I\u2019ll make this behavior more clear in the desc</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 157675,
+   "parent_id": null,
+   "author": "TomBrown",
+   "author_id": 50415,
+   "author_url": "https://forge.sp-tarkov.com/user/50415/tombrown",
+   "created_at": "2026-04-20T19:20:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello,\nThis mod works, but I\u2019m getting an error.\nDo you know what\u2019s causing this?</p>\n<p><a href=\"https://imgur.com/a/error-sz5ob2D\" target=\"_blank\" rel=\"noreferrer noopener\">https://imgur.com/a/error-sz5ob2D</a></p>\n<p><a href=\"https://codepaste.sp-tarkov.com/?a90b3e66531ca924#74KGxcJXMxgiEk36BFd7PmrAYQdDjejPeZVaYFgoc1Kx\" target=\"_blank\" rel=\"noreferrer noopener\">https://codepaste.sp-tarkov.com/?a90b3e66531ca924#74KGxcJXMxgiEk36BFd7PmrAYQdDjejPeZVaYFgoc1Kx</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 159621,
+   "parent_id": 157675,
+   "author": "gorecreek",
+   "author_id": 104276,
+   "author_url": "https://forge.sp-tarkov.com/user/104276/gorecreek",
+   "created_at": "2026-05-11T07:19:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello, this looks like an issue with the mod but I need your server log. The log you posted is the game log that points to an exception on the server but I dont see any details here.</p>\n<p>If you still have that issue please report it on github or send me more details here or in dms</p>\n<p>Thanks</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 160625,
+   "parent_id": null,
+   "author": "Styil",
+   "author_id": 88639,
+   "author_url": "https://forge.sp-tarkov.com/user/88639/styil",
+   "created_at": "2026-05-23T13:48:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This is exactly what I was looking for. But sadly it doesn\u2019t work for me. I\u2019ll have to tinker with my mods and find out which one is conflicting. I\u2019m thinking that maybe is SAIN, Foldable Items or Lots of Loot REDUX. Those ones are the most \u201cgame changing\u201d and relevant to items and looting amongst the ones I have, besides FIKA.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 160718,
+   "parent_id": 160625,
+   "author": "gorecreek",
+   "author_id": 104276,
+   "author_url": "https://forge.sp-tarkov.com/user/104276/gorecreek",
+   "created_at": "2026-05-24T14:21:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>DMd you</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168051,
+   "parent_id": null,
+   "author": "Carbonflywheel",
+   "author_id": 17301,
+   "author_url": "https://forge.sp-tarkov.com/user/17301/carbonflywheel",
+   "created_at": "2026-07-26T00:55:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>One thing I noticed was after death, if you stick around and watch the bot that killed you, if he loots your corpse, you dont restore looted items. Lost a rifle and a few mags from a Scav. Not even mad, kinda cool side effect of the mod.</p>\n<p>Possible toggle in config? Great mod either way.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168252,
+   "parent_id": 168051,
+   "author": "gorecreek",
+   "author_id": 104276,
+   "author_url": "https://forge.sp-tarkov.com/user/104276/gorecreek",
+   "created_at": "2026-07-26T19:01:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2026-07-26 19:32:48]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168266,
+   "parent_id": 168051,
+   "author": "gorecreek",
+   "author_id": 104276,
+   "author_url": "https://forge.sp-tarkov.com/user/104276/gorecreek",
+   "created_at": "2026-07-26T19:32:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This mod\u2019s code is just a callback on raid end. If your inventory was modified before the raid finished, then the code will treat it as if you dropped the items yourself, because it wouldn\u2019t know how they were lost. Patching this would probably require a client mod that tracks items and it isn\u2019t really worth it imo.</p>\n<p>This is with FIKA, right? I don\u2019t know of any other mods that could cause this situation. Glad to know it works in other cases.</p>\n<p>Thanks for the feedback!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

@@ -1,0 +1,940 @@
+{
+ "mod_id": 1173,
+ "slug": "unda",
+ "fetched_at": "2026-08-08T21:56:08Z",
+ "reported_total": 44,
+ "pages": 5,
+ "count": 93,
+ "comments": [
+  {
+   "id": 24710,
+   "parent_id": null,
+   "author": "Sasuke_Kun",
+   "author_id": 36558,
+   "author_url": "https://forge.sp-tarkov.com/user/36558/sasuke-kun",
+   "created_at": "2023-11-30T14:24:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>What are the wave spawns for difficulty: as online ?</p>\n<p>and my 2nd queston: Does MaxPlayerGroup Size mean how many players can spawn in 1 raid ?</p>\n<p>Default ammount on SCAV is 5 and PMC 3.</p>\n<p>So does this mean there can only spawn 8 players on a raid ?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 93764,
+   "parent_id": 24710,
+   "author": "Barlog_M",
+   "author_id": 34614,
+   "author_url": "https://forge.sp-tarkov.com/user/34614/barlog-m",
+   "created_at": "2023-11-30T18:23:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>1. Mod ignores this raid setting. Scavs only be normal and hard. Marksmans always hard.</p>\n<p>2. MaxGroupSize is a maximal group size that selected randomly from 1 to MaxGroupSize. For example on Factory Day can be from 4 to 5 PMC bots and they can spawns like [3, 2] or [1, 1, 2], or [2, 2] or [1, 1, 1, 1, 1] etc.</p>\n<p>Same for scavs except group size in wave set like 0 to selectedByMod and then game decides what amount of scavs to spawn.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 93766,
+   "parent_id": 24710,
+   "author": "Sasuke_Kun",
+   "author_id": 36558,
+   "author_url": "https://forge.sp-tarkov.com/user/36558/sasuke-kun",
+   "created_at": "2023-11-30T20:45:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Alright thx for the detailed explanation. unfortunately i got an ingame error in the raid loading screen after loading the mod</p>\n<p>It says:</p>\n<p>\u201c An attempt was made to transition a task to a final state when it had already completed\u201c</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 93770,
+   "parent_id": 24710,
+   "author": "Barlog_M",
+   "author_id": 34614,
+   "author_url": "https://forge.sp-tarkov.com/user/34614/barlog-m",
+   "created_at": "2023-11-30T23:21:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It\u2019s weird. Mod do nothing with tasks and something like that. It\u2019s only changes bot waves. Could you please provide full error from server console?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 93772,
+   "parent_id": 24710,
+   "author": "Dietre",
+   "author_id": 15984,
+   "author_url": "https://forge.sp-tarkov.com/user/15984/dietre",
+   "created_at": "2023-12-01T00:31:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This is an error with the newer version of spt, its when you try and load Rogues as bosses into customs etc. I never had this issue making custom spawns in previous spt before 3.7.X</p>\n<p>You can load rogues as bosses into shoreline, no issue. Game doesnt like them on customs, and it can throw errors with raiders on some maps as bosses, they can load in on a random scav entry tho. Only shoreline seems to except crazyarenafighterevent bosses too, game wont load them on any other map.</p>\n<p>Not sure how to fix it, must be a setting that is blocking the unit type on certain maps that wasnt a thing before new spt.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 93774,
+   "parent_id": 24710,
+   "author": "Barlog_M",
+   "author_id": 34614,
+   "author_url": "https://forge.sp-tarkov.com/user/34614/barlog-m",
+   "created_at": "2023-12-01T02:10:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you for explanation. This mod does not load Rogues as bosses in to \u0421ustoms. But PMC can have Rogues brains. I checked - set with Andern for PMC only exUsesc\u2019s brain and load in to Customs and everything works without any errors.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 93781,
+   "parent_id": 24710,
+   "author": "Dietre",
+   "author_id": 15984,
+   "author_url": "https://forge.sp-tarkov.com/user/15984/dietre",
+   "created_at": "2023-12-01T03:21:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m not sure why that error comes up but its not related to your mod. I use to load 2-3 rogues on custom with a 20% and they would be at stronghold (they rip everything apart with the mounted guns) but since 3.7.x I cannot get rogues on customs what so ever. If I create their spawn as a boss, I get that error listed above. If I let them have a random wave spawn, they never spawn but the game will load up. Yet, rogues can be created as a boss spawn anywhere on the map for shoreline without any issues, but shoreline doesn\u2019t like raiders, again that error will pop up.</p>\n<p>I want to figure it out sooner or later, but at least you can be confident its not your mod, the poster must be using another mod and tried yours too or something.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 93784,
+   "parent_id": 24710,
+   "author": "Barlog_M",
+   "author_id": 34614,
+   "author_url": "https://forge.sp-tarkov.com/user/34614/barlog-m",
+   "created_at": "2023-12-01T03:37:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 93793,
+   "parent_id": 24710,
+   "author": "Sasuke_Kun",
+   "author_id": 36558,
+   "author_url": "https://forge.sp-tarkov.com/user/36558/sasuke-kun",
+   "created_at": "2023-12-01T15:45:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>hmmm strange. im not too deep into the mod and error stuff so i dont know how to fix this. anyway its not an server console error in my case, rather an ingame error during loading screen before spawning the model in. Would actually be interesting to know with which mod it correlates.</p>\n<p>atleast u know its not this mod. i dont have any mod which changes spawns of PMC`s or SCAVs.</p>\n<p>Maybe its SAIN or Waypoints idk.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 93857,
+   "parent_id": 24710,
+   "author": "Akai_Fusen",
+   "author_id": 36940,
+   "author_url": "https://forge.sp-tarkov.com/user/36940/akai-fusen",
+   "created_at": "2023-12-03T02:38:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I have this error too: \u201c An attempt was made to transition a task to a final state when it had already completed\u201c.</p>\n<p>Then how i can resolve ?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 93878,
+   "parent_id": 24710,
+   "author": "Barlog_M",
+   "author_id": 34614,
+   "author_url": "https://forge.sp-tarkov.com/user/34614/barlog-m",
+   "created_at": "2023-12-03T19:48:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Good news: i got same error. It connected with SAIN.</p>\n<p>Bad news: i don\u2019t know how to reproduce or fix it.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 93885,
+   "parent_id": 24710,
+   "author": "Barlog_M",
+   "author_id": 34614,
+   "author_url": "https://forge.sp-tarkov.com/user/34614/barlog-m",
+   "created_at": "2023-12-03T23:02:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Fixed in last version. Check it out.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 93918,
+   "parent_id": 24710,
+   "author": "Dietre",
+   "author_id": 15984,
+   "author_url": "https://forge.sp-tarkov.com/user/15984/dietre",
+   "created_at": "2023-12-04T15:42:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>If you have time can you tell me what causes it?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 25031,
+   "parent_id": null,
+   "author": "Lucious",
+   "author_id": 40206,
+   "author_url": "https://forge.sp-tarkov.com/user/40206/lucious",
+   "created_at": "2023-12-08T14:51:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi could I ask if the PMC spawn at PMC spawn locations (like live tarkov) or any generic bot spawn zone?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 25036,
+   "parent_id": null,
+   "author": "Guicapau",
+   "author_id": 40869,
+   "author_url": "https://forge.sp-tarkov.com/user/40869/guicapau",
+   "created_at": "2023-12-08T16:59:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello I\u2019m still getting the error on the latest version when i go to factory where it says \u201can attempt was made to transition to a task to a final state when it had already been completed\u201d</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 94160,
+   "parent_id": 25031,
+   "author": "Barlog_M",
+   "author_id": 34614,
+   "author_url": "https://forge.sp-tarkov.com/user/34614/barlog-m",
+   "created_at": "2023-12-09T06:00:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This mod can spawn any bots only in generic bot spawn zones. To spawn PMC in their live locations use SWAG+Donut.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 94161,
+   "parent_id": 25036,
+   "author": "Barlog_M",
+   "author_id": 34614,
+   "author_url": "https://forge.sp-tarkov.com/user/34614/barlog-m",
+   "created_at": "2023-12-09T06:03:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Sorry. I can do nothing about it. I contacted with SAIN developer, may be he can help.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 94165,
+   "parent_id": 25031,
+   "author": "Lucious",
+   "author_id": 40206,
+   "author_url": "https://forge.sp-tarkov.com/user/40206/lucious",
+   "created_at": "2023-12-09T11:45:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>my experience with SWAG+ donuts isnt the best. always had too many PMCs spawning next to me even with the initial pmcs only preset and way too little scavs. I actually really like your mod and its been the best experience ive had in SPT so far! PMC specific spawn locations would be nice tho haha</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 94171,
+   "parent_id": 25031,
+   "author": "Barlog_M",
+   "author_id": 34614,
+   "author_url": "https://forge.sp-tarkov.com/user/34614/barlog-m",
+   "created_at": "2023-12-09T15:52:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It\u2019s impossible for my mod because it\u2019s only server side. The game can only spawn bots in location with names. Players spawns does not have names becouse BSG don\u2019t spawn bots in this locations. SWAG+Donuts has client side part that allows to spawn at custom locations (and create this locations).</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 94246,
+   "parent_id": 25036,
+   "author": "Barlog_M",
+   "author_id": 34614,
+   "author_url": "https://forge.sp-tarkov.com/user/34614/barlog-m",
+   "created_at": "2023-12-11T02:42:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I hope in last version 1.0.5 i eventually fixed this problem. Check it out.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 94266,
+   "parent_id": 25036,
+   "author": "Guicapau",
+   "author_id": 40869,
+   "author_url": "https://forge.sp-tarkov.com/user/40869/guicapau",
+   "created_at": "2023-12-11T13:02:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i will try it out thank you!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 94267,
+   "parent_id": 25036,
+   "author": "Guicapau",
+   "author_id": 40869,
+   "author_url": "https://forge.sp-tarkov.com/user/40869/guicapau",
+   "created_at": "2023-12-11T13:52:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>it works perfectly! btw i want to turn off scavs and is the maxscavgroupsize the one that i can disable the scavs or not</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 94345,
+   "parent_id": 25036,
+   "author": "Barlog_M",
+   "author_id": 34614,
+   "author_url": "https://forge.sp-tarkov.com/user/34614/barlog-m",
+   "created_at": "2023-12-13T02:15:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I don\u2019t know. Try it. The mod does not suppose to do this. Best way to get only PMC is to use SWAG+Donut</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 25420,
+   "parent_id": null,
+   "author": "YinxuU",
+   "author_id": 39184,
+   "author_url": "https://forge.sp-tarkov.com/user/39184/yinxuu",
+   "created_at": "2023-12-19T14:40:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi. I\u2019m about to try this mod since I\u2019m not completely happy with either BetterSpawns or SWAG + Donuts. I want more vanilla feel. I noticed in the config it sets a bot spawn difficulty. Will SAIN override this so I can use the SAIN config?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 94650,
+   "parent_id": 25420,
+   "author": "Barlog_M",
+   "author_id": 34614,
+   "author_url": "https://forge.sp-tarkov.com/user/34614/barlog-m",
+   "created_at": "2023-12-19T22:33:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yes. SAIN will apply it\u2019s own difficulty.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 26253,
+   "parent_id": null,
+   "author": "Colkillervin",
+   "author_id": 31852,
+   "author_url": "https://forge.sp-tarkov.com/user/31852/colkillervin",
+   "created_at": "2024-01-12T10:00:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>for some reason the error an attempt was made to transition to a task to a final state when it had already been completed pops up when i load into factory after forcing the cultists to spawn onto the map. Also how do i increase the amount of pmc that spawn in as there are like 12 scavs and only one pmc and what are the valid difficulties for the pmcs in the config file?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 95802,
+   "parent_id": 26253,
+   "author": "Barlog_M",
+   "author_id": 34614,
+   "author_url": "https://forge.sp-tarkov.com/user/34614/barlog-m",
+   "created_at": "2024-01-12T19:52:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>1. The idea of this mod is to have one algorithm that makes game predictable in one way (PMC spawns in begginging of raid) and unpredictable in other (place where PMC and Scavs spawn is random every raid).</p>\n<p>If you want more control on spawns use big complex mod like SWAG+Donut, MOAR or BetterSpawnPlus.</p>\n<p>2. Some time game do strange things with spawn waves and spawns PMC or Scavs a bit latter. I don\u2019t know how to fix this. It\u2019s look like game limits amount of bosses on map, especially on Factory. And because PMC spawns as bosses then game spawn less PMC.</p>\n<p>3. You can check real amount of bots on map with this mod <a href=\"https://hub.sp-tarkov.com/files/file/1242-botdebug/\" target=\"_blank\" rel=\"noreferrer noopener\">BotDebug  </a></p>\n<p>4. Difficulty can be \u201ceasy\u201d, \u201cnormal\u201d, \u201chard\u201d and \u201cimpossible\u201d.</p>\n<p>I will check error with cultists.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 36393,
+   "parent_id": null,
+   "author": "unknownuser5678",
+   "author_id": 54838,
+   "author_url": "https://forge.sp-tarkov.com/user/54838/unknownuser5678",
+   "created_at": "2024-07-16T11:31:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Can we use this on bosses?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 36505,
+   "parent_id": null,
+   "author": "ForeskinJohn",
+   "author_id": 56783,
+   "author_url": "https://forge.sp-tarkov.com/user/56783/foreskinjohn",
+   "created_at": "2024-07-17T14:21:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>is there a reason that only swarms of scavs spawn on factory? no PMCs whatsoever?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 110372,
+   "parent_id": 36505,
+   "author": "Barlog_M",
+   "author_id": 34614,
+   "author_url": "https://forge.sp-tarkov.com/user/34614/barlog-m",
+   "created_at": "2024-07-18T02:38:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>PMC definitely spawns on Factory. Sometimes PMC just don\u2019t want to patrol until they hear or see something.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 110373,
+   "parent_id": 36393,
+   "author": "Barlog_M",
+   "author_id": 34614,
+   "author_url": "https://forge.sp-tarkov.com/user/34614/barlog-m",
+   "created_at": "2024-07-18T02:39:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This mod do nothing with bosses.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 36578,
+   "parent_id": null,
+   "author": "recul",
+   "author_id": 55162,
+   "author_url": "https://forge.sp-tarkov.com/user/55162/recul",
+   "created_at": "2024-07-18T03:40:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019ve used other mods but believe me, yours is simple and it\u2019s amazing to me</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 36646,
+   "parent_id": null,
+   "author": "Menac3",
+   "author_id": 54975,
+   "author_url": "https://forge.sp-tarkov.com/user/54975/menac3",
+   "created_at": "2024-07-18T18:48:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>only scavs spawn, can someone help me fix this? no matter which map, only scavs!<br />\nis it possibly because of ANDERN?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 110456,
+   "parent_id": 36505,
+   "author": "Menac3",
+   "author_id": 54975,
+   "author_url": "https://forge.sp-tarkov.com/user/54975/menac3",
+   "created_at": "2024-07-18T19:36:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>same issue, no matter which map, factory customs etc.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 110462,
+   "parent_id": 36646,
+   "author": "Menac3",
+   "author_id": 54975,
+   "author_url": "https://forge.sp-tarkov.com/user/54975/menac3",
+   "created_at": "2024-07-18T20:13:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>okay i may have found the bug, once you take out bosses ingame, no PMCs spawning only scavs, but how can i take out bosses if not ingame?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 110767,
+   "parent_id": 36505,
+   "author": "ForeskinJohn",
+   "author_id": 56783,
+   "author_url": "https://forge.sp-tarkov.com/user/56783/foreskinjohn",
+   "created_at": "2024-07-20T17:20:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i do do short raids on factory, it could just be that ive been missing them in the heat of battle and whatnot lol, i do love this spawner though, as it seems to always run really well for me</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 110815,
+   "parent_id": 36646,
+   "author": "elliottnally",
+   "author_id": 29825,
+   "author_url": "https://forge.sp-tarkov.com/user/29825/elliottnally",
+   "created_at": "2024-07-21T03:17:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I am getting a different issue, using 1.1.0 for 3.8.3 we are getting a lot of PMCs on reserve but no scavs, all default settings.</p>\n<p>Also can the dev explain Streets Quiet Raids a bit more? How is that setting being True different from it being False? I read the explanation on the Overview but still don\u2019t fully understand it.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 39437,
+   "parent_id": null,
+   "author": "muffintopzombie",
+   "author_id": 47532,
+   "author_url": "https://forge.sp-tarkov.com/user/47532/muffintopzombie",
+   "created_at": "2024-08-21T21:43:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>can confirm only respawns scavs. no PMC</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 40649,
+   "parent_id": null,
+   "author": "Unreal-Forever",
+   "author_id": 45005,
+   "author_url": "https://forge.sp-tarkov.com/user/45005/unreal-forever",
+   "created_at": "2024-09-08T12:57:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is there a way to configure the game or mod so that only USECs appear?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 42591,
+   "parent_id": null,
+   "author": "Nomand",
+   "author_id": 40795,
+   "author_url": "https://forge.sp-tarkov.com/user/40795/nomand",
+   "created_at": "2024-10-26T02:40:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is there a way to make each map have its own AI spawn?</p>\n<p>For example,if I select Factory, unda will automatically switch to the mode I set before: only refresh pmc once at the beginning of a battle.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 49491,
+   "parent_id": null,
+   "author": "Dsnyder",
+   "author_id": 28568,
+   "author_url": "https://forge.sp-tarkov.com/user/28568/dsnyder",
+   "created_at": "2025-03-16T19:56:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>might wanna fix the version tag so there isn\u2019t any confusion.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 49510,
+   "parent_id": null,
+   "author": "tomcruise123",
+   "author_id": 66860,
+   "author_url": "https://forge.sp-tarkov.com/user/66860/tomcruise123",
+   "created_at": "2025-03-17T02:41:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>How about 3.10?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 128250,
+   "parent_id": 49510,
+   "author": "Barlog_M",
+   "author_id": 34614,
+   "author_url": "https://forge.sp-tarkov.com/user/34614/barlog-m",
+   "created_at": "2025-03-17T08:33:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I don\u2019t have SP-Tarkov 3.10.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 49897,
+   "parent_id": null,
+   "author": "Fegeer",
+   "author_id": 40178,
+   "author_url": "https://forge.sp-tarkov.com/user/40178/fegeer",
+   "created_at": "2025-03-24T20:14:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks a lot for the mod! It is great to have at least a basic spawning system while Donuts is suspended indefinitely.</p>\n<p>Quick question, is it possible to tweak the number of waves or at least add an extra one? My raids have been surprisingly quiet after installing the mod\u2026</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 128800,
+   "parent_id": 49897,
+   "author": "Barlog_M",
+   "author_id": 34614,
+   "author_url": "https://forge.sp-tarkov.com/user/34614/barlog-m",
+   "created_at": "2025-03-27T04:51:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks! I fixed a huge bug, and it may have been the reason for the quiet raids - more PMCs kill Scavs faster.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 49981,
+   "parent_id": null,
+   "author": "PromiseV5",
+   "author_id": 4596,
+   "author_url": "https://forge.sp-tarkov.com/user/4596/promisev5",
+   "created_at": "2025-03-27T06:15:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you for your mod. I find it very interesting and believe it might help improve my FPS slightly. Additionally, I have a question regarding whether you have analyzed how quickly bots respond when targeted. As a sniper player, I\u2019ve noticed that when I aim at bots, they tend to run away immediately, regardless of whether they are facing me or not. Could you share any insights on this?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 128806,
+   "parent_id": 49981,
+   "author": "Barlog_M",
+   "author_id": 34614,
+   "author_url": "https://forge.sp-tarkov.com/user/34614/barlog-m",
+   "created_at": "2025-03-27T06:34:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You\u2019re welcome. No, I haven\u2019t noticed any such behavior. And this mod has nothing to do with that. It is only about bot waves.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 128828,
+   "parent_id": 49981,
+   "author": "Finem Belli",
+   "author_id": 69779,
+   "author_url": "https://forge.sp-tarkov.com/user/69779/finem-belli",
+   "created_at": "2025-03-27T15:06:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It\u2019s vanilla PVE bot behavior. When you aim at a bot they gain an insane distance of awareness which makes them basically have a 6th sense and spot you after you\u2019ve aiming at them for a few seconds.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 49997,
+   "parent_id": null,
+   "author": "7rrr",
+   "author_id": 69860,
+   "author_url": "https://forge.sp-tarkov.com/user/69860/7rrr",
+   "created_at": "2025-03-27T17:10:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>thanks for your great mod! could you please tell me how may i set max ai mount by using this mod? too much bots (nearly 20) in one raid i think im in warzone\ud83e\udd72</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 128851,
+   "parent_id": 49997,
+   "author": "aperolibear",
+   "author_id": 36179,
+   "author_url": "https://forge.sp-tarkov.com/user/36179/aperolibear",
+   "created_at": "2025-03-27T20:28:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I too am looking to change this. The readme makes references to values that are not in the config. Should we just add them?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 50012,
+   "parent_id": null,
+   "author": "Fegeer",
+   "author_id": 40178,
+   "author_url": "https://forge.sp-tarkov.com/user/40178/fegeer",
+   "created_at": "2025-03-27T21:31:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The latest update works great! Raids are now more lively and the action lasts longer. But on the bigger maps it still feels a bit quiet, the interval between bot waves seems a bit long\u2026 Is it possible to include an additional bot wave for bigger maps or as an optional feature? Thanks a lot for this wonderful mod</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 50043,
+   "parent_id": null,
+   "author": "Premises187",
+   "author_id": 10043,
+   "author_url": "https://forge.sp-tarkov.com/user/10043/premises187",
+   "created_at": "2025-03-28T17:40:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Any chance of adding a per map MinSpawnDistance check so Partizan doesn\u2019t spawn 75m away from you and instant drill you?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 129096,
+   "parent_id": 50043,
+   "author": "Barlog_M",
+   "author_id": 34614,
+   "author_url": "https://forge.sp-tarkov.com/user/34614/barlog-m",
+   "created_at": "2025-04-02T05:43:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m not sure it\u2019s possible in server mode. Unda is server only mod and just remade waves. Also it does nothing with bosses spawns. Only regular scavs, sniper scavs and PMC.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 129097,
+   "parent_id": 50012,
+   "author": "Barlog_M",
+   "author_id": 34614,
+   "author_url": "https://forge.sp-tarkov.com/user/34614/barlog-m",
+   "created_at": "2025-04-02T05:47:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you. You can try to increase option maxScavGroupSize.</p>\n<p>I think it\u2019s enought bot waves becouse in other way it\u2019s impossible to clear map and loot.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 50616,
+   "parent_id": null,
+   "author": "TheSaladGuy",
+   "author_id": 76282,
+   "author_url": "https://forge.sp-tarkov.com/user/76282/thesaladguy",
+   "created_at": "2025-04-12T07:57:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>So will this keep spawning bots if i put long raid times like 1-2 hours?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 50641,
+   "parent_id": null,
+   "author": "wolfmdfjx",
+   "author_id": 29185,
+   "author_url": "https://forge.sp-tarkov.com/user/29185/wolfmdfjx",
+   "created_at": "2025-04-12T21:15:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>is there a way to tweak/disable this for specific maps?</p>\n<p>it makes scav factory hell to playthrough</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 129676,
+   "parent_id": 50616,
+   "author": "Barlog_M",
+   "author_id": 34614,
+   "author_url": "https://forge.sp-tarkov.com/user/34614/barlog-m",
+   "created_at": "2025-04-12T23:13:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>No</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 129677,
+   "parent_id": 50641,
+   "author": "Barlog_M",
+   "author_id": 34614,
+   "author_url": "https://forge.sp-tarkov.com/user/34614/barlog-m",
+   "created_at": "2025-04-12T23:13:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>No</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 53180,
+   "parent_id": null,
+   "author": "HyperDelta",
+   "author_id": 80532,
+   "author_url": "https://forge.sp-tarkov.com/user/80532/hyperdelta",
+   "created_at": "2025-06-25T03:20:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>In my experience there are way to many scavs and they keep swarming me</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 138595,
+   "parent_id": null,
+   "author": "PureRussianVodka",
+   "author_id": 33431,
+   "author_url": "https://forge.sp-tarkov.com/user/33431/purerussianvodka",
+   "created_at": "2025-10-13T20:37:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>How does the boss spawing work with the new rotation mechanic for bosses?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 138617,
+   "parent_id": null,
+   "author": "Snife",
+   "author_id": 85591,
+   "author_url": "https://forge.sp-tarkov.com/user/85591/snife",
+   "created_at": "2025-10-14T05:26:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This turned my game into WW3. For 30 minutes i couldnt even heal. I dont recommend this mod until its fixed</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 4
+  },
+  {
+   "id": 138732,
+   "parent_id": 138617,
+   "author": "mil4me",
+   "author_id": 83176,
+   "author_url": "https://forge.sp-tarkov.com/user/83176/mil4me",
+   "created_at": "2025-10-15T07:13:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>lol</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 138737,
+   "parent_id": null,
+   "author": "aisurunoyume",
+   "author_id": 76714,
+   "author_url": "https://forge.sp-tarkov.com/user/76714/aisurunoyume",
+   "created_at": "2025-10-15T08:50:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>How can I limit the number of scav bots?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 138762,
+   "parent_id": 138617,
+   "author": "RealKushGod",
+   "author_id": 83953,
+   "author_url": "https://forge.sp-tarkov.com/user/83953/realkushgod",
+   "created_at": "2025-10-15T14:04:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>lmao</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 138862,
+   "parent_id": null,
+   "author": "Trout",
+   "author_id": 4798,
+   "author_url": "https://forge.sp-tarkov.com/user/4798/trout",
+   "created_at": "2025-10-16T10:49:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I guess I\u2019ll need to turn down the AI amount or wait until an AI limiter mod is available for 4.0 because this tanked my framerate from 110-120FPS all the way down to 30-40FPS. And that\u2019s on Woods.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 138896,
+   "parent_id": null,
+   "author": "Koirent",
+   "author_id": 47343,
+   "author_url": "https://forge.sp-tarkov.com/user/47343/koirent",
+   "created_at": "2025-10-16T16:29:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>So will this mod only spawn PMCs at the start of the raid?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 138935,
+   "parent_id": 138617,
+   "author": "lpig97",
+   "author_id": 44001,
+   "author_url": "https://forge.sp-tarkov.com/user/44001/lpig97",
+   "created_at": "2025-10-16T21:47:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m with you on that thought, it\u2019s a bit too much</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 138938,
+   "parent_id": 138617,
+   "author": "Koirent",
+   "author_id": 47343,
+   "author_url": "https://forge.sp-tarkov.com/user/47343/koirent",
+   "created_at": "2025-10-16T22:01:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>My game won\u2019t spawn later waves of PMC besides the first one. But it certainly doesn\u2019t hold back on the scavs, total warfare</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 139107,
+   "parent_id": null,
+   "author": "PureRussianVodka",
+   "author_id": 33431,
+   "author_url": "https://forge.sp-tarkov.com/user/33431/purerussianvodka",
+   "created_at": "2025-10-18T05:19:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>maps become unplayable, this mod instantly fills open slots with scavs.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 139123,
+   "parent_id": null,
+   "author": "turfish",
+   "author_id": 63286,
+   "author_url": "https://forge.sp-tarkov.com/user/63286/turfish",
+   "created_at": "2025-10-18T10:31:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I need to be frank, this mod is way too overtuned. Raids literally become a warzone as soon as you load in, its insane.</p>\n<p>And also, IDK if im just stupid but the description notes-</p>\n<p>\u201cIf option streetsQuietRaids set to true then for Streets max amount of bots does not change, max scav group size is 3 and amount of PMC always MinPlayers.\u201d</p>\n<p>I dunno if im blind or dumb, but this setting just, doesn\u2019t exist?</p>\n<p>The config would also benefit from comments, I understand you explained it in the mod page but still.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 3
+  },
+  {
+   "id": 139145,
+   "parent_id": null,
+   "author": "mcapozzi",
+   "author_id": 33224,
+   "author_url": "https://forge.sp-tarkov.com/user/33224/mcapozzi",
+   "created_at": "2025-10-18T15:39:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Holy Scavs Batman, love encountering 37 of them on Customs, but would like to see a PMC every now and then as well. I\u2019m gonna shelve this mod until someone can mod me a minigun to help clear out the hordes this generates.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 5
+  },
+  {
+   "id": 139386,
+   "parent_id": null,
+   "author": "FongFic",
+   "author_id": 81921,
+   "author_url": "https://forge.sp-tarkov.com/user/81921/fongfic",
+   "created_at": "2025-10-20T08:26:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi, can i adjust the config and number of bot or number of wave?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 139621,
+   "parent_id": null,
+   "author": "MagCer",
+   "author_id": 61097,
+   "author_url": "https://forge.sp-tarkov.com/user/61097/magcer",
+   "created_at": "2025-10-22T07:46:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Every time I give this mod a go I get rushed down like I\u2019m trying to attack Pripyat in Stalker. Last raid on reserve I had 3 PMCs spawn in within 30 meters of me, I could already hear them before I even loaded in.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 139791,
+   "parent_id": null,
+   "author": "punishedmann",
+   "author_id": 45810,
+   "author_url": "https://forge.sp-tarkov.com/user/45810/punishedmann",
+   "created_at": "2025-10-23T16:23:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Where can I configure more of this, I know there\u2019s a config but it doesn\u2019t have anything related to the one in description, if you have any idea to customize it please do tell</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 139871,
+   "parent_id": 139145,
+   "author": "RealKushGod",
+   "author_id": 83953,
+   "author_url": "https://forge.sp-tarkov.com/user/83953/realkushgod",
+   "created_at": "2025-10-24T06:14:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>lmao</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 140372,
+   "parent_id": null,
+   "author": "ADV1",
+   "author_id": 52180,
+   "author_url": "https://forge.sp-tarkov.com/user/52180/adv1",
+   "created_at": "2025-10-27T23:14:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>idk but i have 3.5 hours raid time and 1x accel - so issue is, mod spawn some scavs and some pmcs aaaand after they all gone - nothing. just empty raid. so how i can change something to make it actually work like MOAR (cuz readme says - UNDA can do all of it but better)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 140542,
+   "parent_id": 140372,
+   "author": "DedM0Roz",
+   "author_id": 26597,
+   "author_url": "https://forge.sp-tarkov.com/user/26597/dedm0roz",
+   "created_at": "2025-10-29T08:07:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi,same here,i think unda cant do this,its just spam on start of the map,and they all run to you,after this only default bots on map)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 140728,
+   "parent_id": null,
+   "author": "fxh3d",
+   "author_id": 78923,
+   "author_url": "https://forge.sp-tarkov.com/user/78923/fxh3d",
+   "created_at": "2025-10-30T22:53:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Had a issue while running this mod where i would spawn right next to groups of PMCs, sometimes next to bosses even</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 3
+  },
+  {
+   "id": 140756,
+   "parent_id": 140372,
+   "author": "ADV1",
+   "author_id": 52180,
+   "author_url": "https://forge.sp-tarkov.com/user/52180/adv1",
+   "created_at": "2025-10-31T05:29:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>ABPS is only fix ig</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 143587,
+   "parent_id": null,
+   "author": "RogueTech67",
+   "author_id": 9742,
+   "author_url": "https://forge.sp-tarkov.com/user/9742/roguetech67",
+   "created_at": "2025-11-23T03:13:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Just curious, I\u2019d like to ask why Scavs were removed from Labyrinth if they are in the EFT game (at least according to the wiki - <a href=\"https://escapefromtarkov.fandom.com/wiki/The_Labyrinth\" target=\"_blank\" rel=\"noreferrer noopener\">https://escapefromtarkov.fandom.com/wiki/The_Labyrinth</a>).  Thanks</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 144059,
+   "parent_id": null,
+   "author": "Flic",
+   "author_id": 92127,
+   "author_url": "https://forge.sp-tarkov.com/user/92127/flic",
+   "created_at": "2025-11-27T15:21:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2025-11-27 17:03:07]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 144061,
+   "parent_id": 138896,
+   "author": "Flic",
+   "author_id": 92127,
+   "author_url": "https://forge.sp-tarkov.com/user/92127/flic",
+   "created_at": "2025-11-27T15:35:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>yes</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 144071,
+   "parent_id": null,
+   "author": "asspkqq",
+   "author_id": 91341,
+   "author_url": "https://forge.sp-tarkov.com/user/91341/asspkqq",
+   "created_at": "2025-11-27T16:56:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This comment might be outdated because 2.0.2 makes the server unopenable for me so I used 2.0.0 on the github page.</p>\n<p>Unsure if these are normal (boss disabled):<br />\nInterchange turned into some sort of scav warzone, making me kill over 30 of them in one raid just on the second floor of the mall.<br />\nScav doesn\u2019t spawn in Reserve at all, nothing spawns after the initial batch of 4-6 PMCs. (the white knight hanger still spawns groups of three PMCs in front of my face).</p>\n<p>With boss enabled: Raiders still spawn in thin air in the bunkers of reserve, in the last 10 minutes.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 147275,
+   "parent_id": null,
+   "author": "silada",
+   "author_id": 81708,
+   "author_url": "https://forge.sp-tarkov.com/user/81708/silada",
+   "created_at": "2025-12-27T04:31:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You made a terrible design choice by bundling several mods with different scopes inside a mod that has very limited competition. It looks like you are trying to do a married sale, and push other features that even have mods that do the same and better, so in the end we get a lot of conflicts. You should always narrow down the scope of your mods, and instead of nesting 50 mods inside one, release 50 different mods, it improves user experience.</p>\n<p>I liked when your mod was simpler, even if it didn\u2019t work properly, at least its scope was narrow, so you could troubleshoot properly. This is not personal, just feedback. I came back to try your mod once again now that my game is more stable, and I\u2019ve found that I\u2019ll not be using it for the reasons above.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 160056,
+   "parent_id": 147275,
+   "author": "Phoenix428",
+   "author_id": 81522,
+   "author_url": "https://forge.sp-tarkov.com/user/81522/phoenix428",
+   "created_at": "2026-05-17T01:06:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>What do you mean by that they bundled several mods together in this one?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 160664,
+   "parent_id": null,
+   "author": "LittlePig",
+   "author_id": 76867,
+   "author_url": "https://forge.sp-tarkov.com/user/76867/littlepig",
+   "created_at": "2026-05-23T21:40:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2026-05-24 16:35:55]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 160921,
+   "parent_id": 147275,
+   "author": "Elmer Glue",
+   "author_id": 12091,
+   "author_url": "https://forge.sp-tarkov.com/user/12091/elmer-glue",
+   "created_at": "2026-05-27T00:43:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I think he meant to post that on the author\u2019s other mod, Andern.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 162160,
+   "parent_id": null,
+   "author": "OLEGUS503PzDivivzion",
+   "author_id": 49611,
+   "author_url": "https://forge.sp-tarkov.com/user/49611/olegus503pzdivivzion",
+   "created_at": "2026-06-08T17:36:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>\u041c\u043e\u0434 \u0441\u043e\u0432\u0435\u0440\u0448\u0435\u043d\u043d\u043e \u0431\u0435\u0441\u043f\u043e\u043b\u0435\u0437\u0435\u043d! \u0411\u043e\u0442\u044b \u0441\u043f\u0430\u0432\u043d\u044f\u0442\u0441\u044f \u0442\u043e\u043b\u044c\u043a\u043e \u0432 \u043d\u0430\u0447\u0430\u043b\u0435 \u0440\u0435\u0439\u0434\u0430, \u0430 \u043f\u043e\u0442\u043e\u043c \u043d\u0438\u0447\u0435\u0433\u043e \u043d\u0435 \u043f\u0440\u043e\u0438\u0441\u0445\u043e\u0434\u0438\u0442!!! \u041f\u0440\u043e\u0442\u043e \u043f\u0443\u0441\u0442\u0430\u044f \u043a\u0430\u0440\u0442\u0430!!!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 162645,
+   "parent_id": 162160,
+   "author": "tatmyshevsky",
+   "author_id": 115124,
+   "author_url": "https://forge.sp-tarkov.com/user/115124/tatmyshevsky",
+   "created_at": "2026-06-13T08:00:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>\u0410 \u0435\u0441\u0442\u044c \u043c\u043e\u0434\u044b \u043d\u0430 \u0441\u043f\u0430\u0432\u043d \u0434\u0438\u043a\u0438\u0445, \u0441\u0442\u043e\u0438\u0442 SAIN, \u0432 \u043b\u0435\u0441\u0443 \u0442\u043e\u043b\u044c\u043a\u043e \u0448\u0442\u0443\u0440\u043c\u0430\u043d \u0441\u043e \u0441\u0432\u043e\u0435\u0439 \u0441\u0432\u0438\u0442\u043e\u0439, \u0438 \u0427\u0412\u041a \u0440\u0430\u0437\u0431\u0440\u043e\u0441\u0430\u043d\u044b, \u0430 \u0434\u0438\u043a\u0438\u0445 \u0432\u043e\u043e\u0431\u0449\u0435 \u043d\u0435\u0442</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 162694,
+   "parent_id": null,
+   "author": "Vultify",
+   "author_id": 52241,
+   "author_url": "https://forge.sp-tarkov.com/user/52241/vultify",
+   "created_at": "2026-06-13T18:39:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This mod would be perfect if you could get PMCs to spawn on Labyrinth with it!! Keep it up</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 165708,
+   "parent_id": null,
+   "author": "Luminikan",
+   "author_id": 117709,
+   "author_url": "https://forge.sp-tarkov.com/user/117709/luminikan",
+   "created_at": "2026-07-08T10:17:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Description says: \u201cGame spawns PMC at real PMC spawns points.\u201d\nOften it mean they spawn 20m by you and not just one it may be two group of 2-3 PMCs. It was annoying and I delete mod. Then i noticed that my perfomance increase from 25-30 FPS after 10 min in raid to 45-60 all raid. Don\u2019t know where is the problem but it is.\nLaptop:\nRyzen 9 7845HX\nRTX 5070\n32x1 ddr5 5600</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168679,
+   "parent_id": null,
+   "author": "alecontt",
+   "author_id": 104926,
+   "author_url": "https://forge.sp-tarkov.com/user/104926/alecontt",
+   "created_at": "2026-07-29T00:29:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi, I have a problem, I usually spawn with one or more enemies nearby, and it\u2019s not an isolated case, it happens more often than I would like, I\u2019m not using any other mod that changes the spawns.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168680,
+   "parent_id": 165708,
+   "author": "alecontt",
+   "author_id": 104926,
+   "author_url": "https://forge.sp-tarkov.com/user/104926/alecontt",
+   "created_at": "2026-07-29T00:32:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Were you able to fix it?? I only use it to limit the reappearance of PMCs during the raid, since in normal SPT they keep reappearing during the raid. Do you know any other mod or setting to limit PMCs from showing up during the raid??</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

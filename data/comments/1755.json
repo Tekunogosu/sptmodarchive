@@ -1,0 +1,470 @@
+{
+ "mod_id": 1755,
+ "slug": "scavs-4-all",
+ "fetched_at": "2026-08-08T22:01:52Z",
+ "reported_total": 16,
+ "pages": 2,
+ "count": 46,
+ "comments": [
+  {
+   "id": 41714,
+   "parent_id": null,
+   "author": "Slothgang",
+   "author_id": 52969,
+   "author_url": "https://forge.sp-tarkov.com/user/52969/slothgang",
+   "created_at": "2024-10-01T18:55:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Oh this is cool, actually a huge QOL for spt.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 117880,
+   "parent_id": 41714,
+   "author": "LeftHandedCat",
+   "author_id": 64759,
+   "author_url": "https://forge.sp-tarkov.com/user/64759/lefthandedcat",
+   "created_at": "2024-10-01T20:22:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>we were getting very fed up because the more scavs you turn on the less fun SPT is, but the more PMCs you have the more quests like Long Road drag you down and waste time in your playthrough. especially when you have to work harder for pmc kills than scav kills to begin with LOL.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 118181,
+   "parent_id": 41714,
+   "author": "Slothgang",
+   "author_id": 52969,
+   "author_url": "https://forge.sp-tarkov.com/user/52969/slothgang",
+   "created_at": "2024-10-07T18:23:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yeah we ended up putting the other option on too, kinda nice not to worry at all who your killing. FYI it looks like when you set \u201cReplacePMCWithAll\u201d to true, \u201cHarderPMCWithAll\u201d is on regardless. Our PMC kill quests have double at the moment with these settings:</p>\n<p>{<br />\n\u201cReplacePMCWithAll\u201d: true,<br />\n\u201cHarderPMCWithAll\u201d: false,<br />\n\u201cdebug\u201d : true<br />\n}</p>\n<p>Also I have a feature request that may not be feasible. Would it be possible to have the quest objective text get dynamically replaced from \u201cscav\u201d to \u201cany target\u201d as seen in other Tarkov quests? That would be a nice QOL but no worries if not.</p>\n<p>Thanks again for the mod, it really reduces a lot of frustration in SPT.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 118312,
+   "parent_id": 41714,
+   "author": "LeftHandedCat",
+   "author_id": 64759,
+   "author_url": "https://forge.sp-tarkov.com/user/64759/lefthandedcat",
+   "created_at": "2024-10-11T00:12:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Just fixed the bug mentioned above, please download the newest version(1.0.4), thanks for letting me know! I am working on having it change the quest text(it probably won\u2019t be a find and replace since some of the quest text is worded interestingly, but will add something like (S4A) at the end so you know it worked).</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 118314,
+   "parent_id": 41714,
+   "author": "LeftHandedCat",
+   "author_id": 64759,
+   "author_url": "https://forge.sp-tarkov.com/user/64759/lefthandedcat",
+   "created_at": "2024-10-11T01:39:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>just released v1.0.5 which adds the text to the end of the quest condition, i didn\u2019t want to do find and replace not just because it might be inconsistent with the variety of text used in the conditions for the quest(wording might get very akward if i just replace the word \u201cscav\u201d with \u201cany target\u201d in certain ones) but also it might cause incompatibility with other languages</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 118318,
+   "parent_id": 41714,
+   "author": "Slothgang",
+   "author_id": 52969,
+   "author_url": "https://forge.sp-tarkov.com/user/52969/slothgang",
+   "created_at": "2024-10-11T09:17:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for these updates, will check it out later today. Sounds like a good compromise for the text stuff, glad you figured something out with it!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 118322,
+   "parent_id": 41714,
+   "author": "Slothgang",
+   "author_id": 52969,
+   "author_url": "https://forge.sp-tarkov.com/user/52969/slothgang",
+   "created_at": "2024-10-11T18:19:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Working well, I\u2019ve even changed the text in the .ts file to \u201c(any target)\u201d for personal preference.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 42230,
+   "parent_id": null,
+   "author": "KoenigH",
+   "author_id": 65694,
+   "author_url": "https://forge.sp-tarkov.com/user/65694/koenigh",
+   "created_at": "2024-10-19T02:01:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello LHC!</p>\n<p>Unfortunatly i cant get this mod working for me. In the Console the mod gets loaded and it displays all the Quests that have been replaced with any without any errors thrown. The mod loads last in load order. Unfortunatly when im ingame it still doesnt work and it doesnt display s4a after the quests name either. Any ideas or anything i could forward to you to have a look whats wrong on my end ?</p>\n<p>Best greetings.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 118704,
+   "parent_id": 42230,
+   "author": "LeftHandedCat",
+   "author_id": 64759,
+   "author_url": "https://forge.sp-tarkov.com/user/64759/lefthandedcat",
+   "created_at": "2024-10-20T09:15:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Interesting, I wonder what\u2019s causing it. Have you tested it to see if it\u2019s working just not changing the text yet? also could you please let me know what language your server is using and what language your client is using? could you also please try going into the settings button in the top right of the launcher and clicking \u201cclean temp files\u201d to see if that resolves the issue as well?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 118706,
+   "parent_id": 42230,
+   "author": "LeftHandedCat",
+   "author_id": 64759,
+   "author_url": "https://forge.sp-tarkov.com/user/64759/lefthandedcat",
+   "created_at": "2024-10-20T09:38:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i went ahead and uploaded my internal testing version(this just has an extra line in the config file for \u201cverboseDebug\u201d which dumps A LOT of info to the server console. If you\u2019re still having trouble could you go to <a href=\"https://github.com/jonjetjon/Scavs4All/releases/tag/release5\" target=\"_blank\" rel=\"noreferrer noopener\">https://github.com/jonjetjon/Scavs4All/releases/tag/release5</a> and grab the debugging version and run that instead and let me know if there are any errors or anything wrong in the console logs.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 118742,
+   "parent_id": 42230,
+   "author": "KoenigH",
+   "author_id": 65694,
+   "author_url": "https://forge.sp-tarkov.com/user/65694/koenigh",
+   "created_at": "2024-10-20T19:35:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for your quick reply! I tried all of the troubleshooting you suggested and changing the Server and Launcher to english did the trick!</p>\n<p>Thanks very much!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 118760,
+   "parent_id": 42230,
+   "author": "LeftHandedCat",
+   "author_id": 64759,
+   "author_url": "https://forge.sp-tarkov.com/user/64759/lefthandedcat",
+   "created_at": "2024-10-21T07:53:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i did have some trouble with this in testing, what\u2019s happening is it only changes the quest text in the \u201cgameLocale\u201d you have set in spt_data/server/configs/locale.json, by default it is set to \u201csystem\u201d which uses the computer\u2019s operating system language setting from the SERVER computer to determine which language the quest text is in, if you manually change the \u201cgameLocale\u201d to the language your client is running(e.g. \u201cen\u201d for english, \u201cfr\u201d for french, etc. there is an entire list in the locale.json of supported languages for the spt server) it should start working again in your desired language.</p>\n<p>The mod also functions 100% if you are using a different language than the selected \u201cgameLocale\u201d variable in locale.json, it just won\u2019t change the quest text in any language but the selected language. I made sure of this so that if you had a server where players play in multiple languages it would still work. Please let me know if you encounter any other problems.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 119089,
+   "parent_id": 42230,
+   "author": "LeftHandedCat",
+   "author_id": 64759,
+   "author_url": "https://forge.sp-tarkov.com/user/64759/lefthandedcat",
+   "created_at": "2024-10-27T02:40:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>By the way the newest version i just released(1.0.9) completely fixes this issue and you can have your client and server in completely different languages from your OS and each other with no issues. if you update to this version you should have your text changed in whatever your native language is.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 43815,
+   "parent_id": null,
+   "author": "kurgut",
+   "author_id": 52199,
+   "author_url": "https://forge.sp-tarkov.com/user/52199/kurgut",
+   "created_at": "2024-11-25T12:48:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi, thanks for you work on this !</p>\n<p>Would it be possible to include dayly quests ?</p>\n<p>thx : )</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 120528,
+   "parent_id": 43815,
+   "author": "LeftHandedCat",
+   "author_id": 64759,
+   "author_url": "https://forge.sp-tarkov.com/user/64759/lefthandedcat",
+   "created_at": "2024-11-26T04:27:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m not actually sure how daily quests are generated, but i could look into it</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 120533,
+   "parent_id": 43815,
+   "author": "LeftHandedCat",
+   "author_id": 64759,
+   "author_url": "https://forge.sp-tarkov.com/user/64759/lefthandedcat",
+   "created_at": "2024-11-26T07:56:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>this does seem possible, however i simply don\u2019t have time to add this feature right now. perhaps on my release of a 3.10 version i will since i should have more time around then</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 45021,
+   "parent_id": null,
+   "author": "Banana",
+   "author_id": 26284,
+   "author_url": "https://forge.sp-tarkov.com/user/26284/banana",
+   "created_at": "2024-12-14T21:33:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Any chance we get a 3.10 update for this? I miss having this QOL mod</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 122424,
+   "parent_id": 45021,
+   "author": "LeftHandedCat",
+   "author_id": 64759,
+   "author_url": "https://forge.sp-tarkov.com/user/64759/lefthandedcat",
+   "created_at": "2024-12-18T23:04:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i believe it should work with 3.10 as is, but due to a family emergency i haven\u2019t even had a chance to install 3.10 since I\u2019m not at home. if you\u2019d like to test this you\u2019ll just need to go into package.json and change the sptVersion from \u201c3.9.*\u201d to \u201c3.10.*\u201d, obviously make a backup of your save first just in case. If this does work for you leave a comment here and i\u2019ll make an update saying that it has unnoficial support and possibly post a 1.1.0 version with minor tweaks. Otherwise I will get to it as soon as i can</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 122426,
+   "parent_id": 45021,
+   "author": "LeftHandedCat",
+   "author_id": 64759,
+   "author_url": "https://forge.sp-tarkov.com/user/64759/lefthandedcat",
+   "created_at": "2024-12-18T23:34:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p><a href=\"https://github.com/jonjetjon/Scavs4All/releases/tag/release10\" target=\"_blank\" rel=\"noreferrer noopener\">https://github.com/jonjetjon/Scavs4All/releases/tag/release10</a></p>\n<p>I cannot test this at the moment but it should work with 3.10, if it does work please let me know and i\u2019ll publish it as an official update. I don\u2019t see any reason why it wouldn\u2019t since i developed scavs4all with 3.10 in mind.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 122431,
+   "parent_id": 45021,
+   "author": "Banana",
+   "author_id": 26284,
+   "author_url": "https://forge.sp-tarkov.com/user/26284/banana",
+   "created_at": "2024-12-19T04:00:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Oh man thank you for the response but I won\u2019t be able to test until at least this weekend. If anyone else can, please update us</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 45317,
+   "parent_id": null,
+   "author": "xlegendary",
+   "author_id": 39231,
+   "author_url": "https://forge.sp-tarkov.com/user/39231/xlegendary",
+   "created_at": "2024-12-20T02:49:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Changing the version from 3.9 to 3.10 to test. Will update shortly.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 122516,
+   "parent_id": 45317,
+   "author": "xlegendary",
+   "author_id": 39231,
+   "author_url": "https://forge.sp-tarkov.com/user/39231/xlegendary",
+   "created_at": "2024-12-20T05:02:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The mod works! All you gotta do is change it from 3.9 to 3.10. Thank you</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 122525,
+   "parent_id": 45317,
+   "author": "LeftHandedCat",
+   "author_id": 64759,
+   "author_url": "https://forge.sp-tarkov.com/user/64759/lefthandedcat",
+   "created_at": "2024-12-20T07:45:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i officially updated it, but all i did was change the version numbers. I programmed scavs4all with 3.10 in mind, sorry it took so long to get back to you guys</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 45337,
+   "parent_id": null,
+   "author": "Alex_Deyth",
+   "author_id": 21986,
+   "author_url": "https://forge.sp-tarkov.com/user/21986/alex-deyth",
+   "created_at": "2024-12-20T15:12:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello, thanks for the mod.</p>\n<p>It\u2019s seems it conflict with <a href=\"https://hub.sp-tarkov.com/files/file/1722-skills-extended/\" target=\"_blank\" rel=\"noreferrer noopener\">Skills Extended</a> and/or <a href=\"https://hub.sp-tarkov.com/files/file/2283-quests-extended/\" target=\"_blank\" rel=\"noreferrer noopener\">quests extended</a>, at least the objectives of the quest for lockpicking is affected by the HarderPMCMultiplier.<br />\nlockpick count doubled and suffix (S4A).</p>\n<p>Edit: loading Skills Extended AFTER S4A solve the conflict.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 45344,
+   "parent_id": null,
+   "author": "Slothgang",
+   "author_id": 52969,
+   "author_url": "https://forge.sp-tarkov.com/user/52969/slothgang",
+   "created_at": "2024-12-20T16:32:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hell yes, glad to see this one updated</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 122579,
+   "parent_id": 45337,
+   "author": "LeftHandedCat",
+   "author_id": 64759,
+   "author_url": "https://forge.sp-tarkov.com/user/64759/lefthandedcat",
+   "created_at": "2024-12-21T03:09:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>very interesting, i have never used skills extended and had 0 clue of this conflict, let me put it in the description so other people don\u2019t run into the same pitfall</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 123346,
+   "parent_id": 45344,
+   "author": "LeftHandedCat",
+   "author_id": 64759,
+   "author_url": "https://forge.sp-tarkov.com/user/64759/lefthandedcat",
+   "created_at": "2024-12-31T23:52:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>glad to see people enjoying something I made! I\u2019m still amazed I was the first person to make this seriously needed QOL mod</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 123804,
+   "parent_id": 45344,
+   "author": "Slothgang",
+   "author_id": 52969,
+   "author_url": "https://forge.sp-tarkov.com/user/52969/slothgang",
+   "created_at": "2025-01-05T23:09:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yeah it\u2019s great, defo more chill not worrying about what your shooting when playing with friends.</p>\n<p>Now if it could be made compatible with <a href=\"https://hub.sp-tarkov.com/files/file/2417-beta-quest-randomizer/\" target=\"_blank\" rel=\"noreferrer noopener\">Quest Randomizer</a> (or perhaps it would be easier to be integrated into it) that would be the dream. What do you reckon?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 126222,
+   "parent_id": 43815,
+   "author": "LeftHandedCat",
+   "author_id": 64759,
+   "author_url": "https://forge.sp-tarkov.com/user/64759/lefthandedcat",
+   "created_at": "2025-02-06T01:52:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>alright, sorry for the radio silence i have been VERY busy but I just looked into what it would take to have this work for daily quests and it\u2019s A LOT of work(probably would require a seperate mod) since repeatable quests are generated randomly and you would have to change the generation code serverside rather than just a database which is what this mod does. I will still look into it but it may be too much work for me at this time</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 126279,
+   "parent_id": 43815,
+   "author": "kurgut",
+   "author_id": 52199,
+   "author_url": "https://forge.sp-tarkov.com/user/52199/kurgut",
+   "created_at": "2025-02-06T17:20:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey ! No problem and thanks to have taken a look, this was indeed just a suggestion : ) ; )<br />\nCheers</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 50465,
+   "parent_id": null,
+   "author": "the_lame_ghost",
+   "author_id": 65601,
+   "author_url": "https://forge.sp-tarkov.com/user/65601/the-lame-ghost",
+   "created_at": "2025-04-08T08:50:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi ! Any way to have rogues, raiders and bosses count as pmcs, but not scavs ? Thank you for your mod, such an improvement !</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 50620,
+   "parent_id": null,
+   "author": "KANNN",
+   "author_id": 76028,
+   "author_url": "https://forge.sp-tarkov.com/user/76028/kannn",
+   "created_at": "2025-04-12T15:43:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you for this excellent mod!!!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 129901,
+   "parent_id": 50465,
+   "author": "LeftHandedCat",
+   "author_id": 64759,
+   "author_url": "https://forge.sp-tarkov.com/user/64759/lefthandedcat",
+   "created_at": "2025-04-17T00:36:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>unfortunately while this is probably possible it\u2019s outside of the scope of this mod(especially when it comes to compatibility with other modded quests. the way Scavs4All works is it goes through the entire database of quests and changes any that are scav kill conditions and replaces that with \u201cany target\u201d kill conditions, in order to make bosses count as pmc kills you\u2019d have to modify the way the game counts quest progress.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 130021,
+   "parent_id": 50465,
+   "author": "the_lame_ghost",
+   "author_id": 65601,
+   "author_url": "https://forge.sp-tarkov.com/user/65601/the-lame-ghost",
+   "created_at": "2025-04-19T06:20:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you for the explanation, and again for the mod !</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 140037,
+   "parent_id": null,
+   "author": "JohnsGrunge",
+   "author_id": 80035,
+   "author_url": "https://forge.sp-tarkov.com/user/80035/johnsgrunge",
+   "created_at": "2025-10-25T14:55:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Update for SPT 4.0.1. PLEASE!!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 145918,
+   "parent_id": null,
+   "author": "Sevla997",
+   "author_id": 69829,
+   "author_url": "https://forge.sp-tarkov.com/user/69829/sevla997",
+   "created_at": "2025-12-13T00:56:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You legend! Thank you for updating!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 150547,
+   "parent_id": 145918,
+   "author": "LeftHandedCat",
+   "author_id": 64759,
+   "author_url": "https://forge.sp-tarkov.com/user/64759/lefthandedcat",
+   "created_at": "2026-01-19T01:10:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>you can thank the guy who took over the codebase for me for the compatible version, the true legend here!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 151001,
+   "parent_id": null,
+   "author": "sam.tm.276",
+   "author_id": 101678,
+   "author_url": "https://forge.sp-tarkov.com/user/101678/samtm276",
+   "created_at": "2026-01-25T11:05:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi, the mod works great until I try to use a 1.5x multiplier and the server won\u2019t load. 1x, no scaling, and 2x all work so whole numbers work but my SPT server fails to initialize when i try 1.5 or even 2.0. it seems that the github acknowledges this but it sucks not having a 1.5 multiplier</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151061,
+   "parent_id": 151001,
+   "author": "LeftHandedCat",
+   "author_id": 64759,
+   "author_url": "https://forge.sp-tarkov.com/user/64759/lefthandedcat",
+   "created_at": "2026-01-26T04:11:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i actually didn\u2019t make the current version so i\u2019m not sure why that is, but i\u2019ll grab it from github and see if i can fix it soon-ish(pretty busy it might take a bit)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 151807,
+   "parent_id": null,
+   "author": "JackRippo27",
+   "author_id": 37501,
+   "author_url": "https://forge.sp-tarkov.com/user/37501/jackrippo27",
+   "created_at": "2026-02-03T13:34:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>not sure if I am doing anything wrong but this mod is not switch PMC kill missions to kill PMC and Scavs\nin the config file the option ReplacePMCWithAll is set to true but no PMC missions are changed</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 153158,
+   "parent_id": 151001,
+   "author": "CrocodileJonesy",
+   "author_id": 70754,
+   "author_url": "https://forge.sp-tarkov.com/user/70754/crocodilejonesy",
+   "created_at": "2026-02-17T14:18:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello, apologies for the late response. Thanks for letting me know about the issue, I found the issue and fixed it, uploading the new version soon :)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 153159,
+   "parent_id": 151807,
+   "author": "CrocodileJonesy",
+   "author_id": 70754,
+   "author_url": "https://forge.sp-tarkov.com/user/70754/crocodilejonesy",
+   "created_at": "2026-02-17T14:21:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>That\u2019s odd, I need more details as I cannot recreate the issue.\nIf you can open an issue on the github with more details, and submit the server log found in: /SPT/user/logs/spt/spt.log that would help greatly in trying to fix your issue, thanks</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 153165,
+   "parent_id": null,
+   "author": "JackRippo27",
+   "author_id": 37501,
+   "author_url": "https://forge.sp-tarkov.com/user/37501/jackrippo27",
+   "created_at": "2026-02-17T16:00:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>@CrocodileJonesy I created an issue as requested I hope you can find out why this happened for all I know it might even be due to mod conflict but even then at lest this can be a heads up in the future so good luck</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 155776,
+   "parent_id": 153165,
+   "author": "CrocodileJonesy",
+   "author_id": 70754,
+   "author_url": "https://forge.sp-tarkov.com/user/70754/crocodilejonesy",
+   "created_at": "2026-03-30T06:17:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello, apologies for not getting back sooner, for some reason notifications aren\u2019t working. Thanks for making an issue, I\u2019ll have a look when if I find anything I\u2019ll make a fix.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 163157,
+   "parent_id": null,
+   "author": "MadBrother",
+   "author_id": 56859,
+   "author_url": "https://forge.sp-tarkov.com/user/56859/madbrother",
+   "created_at": "2026-06-18T01:40:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi, great mod!</p>\n<p>I was wondering if you could make a config that if enabled will change scav kills to any kills if the quest location is specified like the quests \u201cLong Road\u201d or \u201cRite of Passage\u201d.</p>\n<p>The reason I ask this is that I found some of those quests tedious but I don\u2019t want to change the quests kills X scavs on Customs.</p>\n<p>Thanks</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 167809,
+   "parent_id": null,
+   "author": "kkrawdad",
+   "author_id": 51062,
+   "author_url": "https://forge.sp-tarkov.com/user/51062/kkrawdad",
+   "created_at": "2026-07-25T02:14:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Scavs4All: Error loading config file: The JSON value could not be converted to System.Int32. Path: $.ScalePmcMultiplier | LineNumber: 3 | BytePositionInLine: 27.\nScavs4All: Mod NOT loaded, please contact mod author with above error</p>\n<hr />\n<p>I got this error when setting the multiplier to 2.5.</p>\n<p>No error on the default value of 2 or when I set it to 3.</p>\n<hr />\n<p>Config file contents:</p>\n<p>{\n\u201cReplacePmcWithAll\u201d: true,\n\u201cScalePmcQuests\u201d: true,\n\u201cScalePmcMultiplier\u201d: 2.5,\n\u201cEnableDebug\u201d: false,\n\u201cEnableVerboseDebug\u201d: false\n}</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

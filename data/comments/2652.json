@@ -1,0 +1,50 @@
+{
+ "mod_id": 2652,
+ "slug": "fair-progression",
+ "fetched_at": "2026-08-08T22:38:18Z",
+ "reported_total": null,
+ "pages": 1,
+ "count": 4,
+ "comments": [
+  {
+   "id": 156053,
+   "parent_id": null,
+   "author": "dusher4",
+   "author_id": 39259,
+   "author_url": "https://forge.sp-tarkov.com/user/39259/dusher4",
+   "created_at": "2026-04-02T17:54:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I have been noticing, with lots of trader mods and every other mod on this website, that many quests rewards become multiplicative - as in, the reward says it will be 10k EXP and 10k RUB, the reward will instead be much, much much higher, especially later in the wipe. I have 0 clue at all why this happens.</p>\n<p>Am I correct in understanding that this mod fixes that issue? Or is that just a me thing</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 156055,
+   "parent_id": 156053,
+   "author": "Chazut",
+   "author_id": 53567,
+   "author_url": "https://forge.sp-tarkov.com/user/53567/chazut",
+   "created_at": "2026-04-02T18:03:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey! What you\u2019re describing sounds like a separate bug - if the reward says 10k but you get way more, something else is multiplying rewards at completion (idk what).</p>\n<p>FairProgression does something different: it rebalances the XP values at server startup so modded quests don\u2019t make you level too fast. What you see in the quest screen is what you get.</p>\n<p>But it could still help your case since the base XP values will be lower overall. Give it a try and check the server logs for the dashboard</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 156058,
+   "parent_id": 156053,
+   "author": "dusher4",
+   "author_id": 39259,
+   "author_url": "https://forge.sp-tarkov.com/user/39259/dusher4",
+   "created_at": "2026-04-02T18:12:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you for the quick and detailed reply, I will give this a go and see if it helps a bit, I can\u2019t figure out why it\u2019s happening so this is a lil bit of a fix for my problem for now! :)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 156059,
+   "parent_id": 156053,
+   "author": "Chazut",
+   "author_id": 53567,
+   "author_url": "https://forge.sp-tarkov.com/user/53567/chazut",
+   "created_at": "2026-04-02T18:15:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>One thing to note: quests estimated as endgame (past all traders LL4) are left untouched since they don\u2019t impact progression anymore. So if the issue is mostly with late-game quests, you might not see a difference there.</p>\n<p>You can set \u201cverbose\u201d: true in the config to see every modded quest with its bracket, difficulty score, and XP before/after in the server logs.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  }
+ ]
+}

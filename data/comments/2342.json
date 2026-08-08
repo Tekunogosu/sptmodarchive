@@ -1,0 +1,1220 @@
+{
+ "mod_id": 2342,
+ "slug": "untar-go-home",
+ "fetched_at": "2026-08-08T21:49:42Z",
+ "reported_total": 66,
+ "pages": 7,
+ "count": 121,
+ "comments": [
+  {
+   "id": 138134,
+   "parent_id": null,
+   "author": "TacticalToaster",
+   "author_id": 7768,
+   "author_url": "https://forge.sp-tarkov.com/user/7768/tacticaltoaster",
+   "created_at": "2025-10-08T02:33:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Some known things:</p>\n<ul>\n<li>Pocket, rig, and backpack loot doesn\u2019t make complete sense right now. This\u2019ll be addressed in follow versions.</li>\n<li>Whenever bots try to shoot ground/air to give a warning while using SAIN they\u2019ll sometimes aim directly at the player or just not shoot. I\u2019ll be looking into a fix for this.</li>\n<li>Loadouts are still WIP. I\u2019ll be making small patches to add more variety and sense to the loadouts.</li>\n</ul>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 138135,
+   "parent_id": 138134,
+   "author": "zega",
+   "author_id": 81544,
+   "author_url": "https://forge.sp-tarkov.com/user/81544/zega",
+   "created_at": "2025-10-08T02:45:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>any chance this might wrok with old spt versions like 3.9.8 or 3.10</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 138136,
+   "parent_id": null,
+   "author": "Wretched_K",
+   "author_id": 41608,
+   "author_url": "https://forge.sp-tarkov.com/user/41608/wretched-k",
+   "created_at": "2025-10-08T02:50:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Holy heck!\nI cannot WAIT for that ASPBP patch so I can use this!\nI have been hankering for new factions in Tarkov for so long and I\u2019m so glad someone finally added them!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 138137,
+   "parent_id": null,
+   "author": "GRIMMULK",
+   "author_id": 45453,
+   "author_url": "https://forge.sp-tarkov.com/user/45453/grimmulk",
+   "created_at": "2025-10-08T02:56:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This is going to go hard with realism!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 138138,
+   "parent_id": null,
+   "author": "Vultify",
+   "author_id": 52241,
+   "author_url": "https://forge.sp-tarkov.com/user/52241/vultify",
+   "created_at": "2025-10-08T02:58:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>couple of questions. How does this interact with spawning mods like moar or APBS when having bot caps since these don\u2019t replace existing bots. How does it interact with SAIN. And is there a conflict with mods like ALP or Acids bot loadout mod?</p>\n<p>Great mod, cant wait to try it, would like to know how these interactions work!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 138139,
+   "parent_id": 138138,
+   "author": "Vultify",
+   "author_id": 52241,
+   "author_url": "https://forge.sp-tarkov.com/user/52241/vultify",
+   "created_at": "2025-10-08T02:59:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>never mind I saw the pinned comment above about sain, so it seems to work ok with it as of now.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 138140,
+   "parent_id": null,
+   "author": "redlaser42",
+   "author_id": 51899,
+   "author_url": "https://forge.sp-tarkov.com/user/51899/redlaser42",
+   "created_at": "2025-10-08T03:08:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Super cool!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 138142,
+   "parent_id": 138136,
+   "author": "TacticalToaster",
+   "author_id": 7768,
+   "author_url": "https://forge.sp-tarkov.com/user/7768/tacticaltoaster",
+   "created_at": "2025-10-08T03:20:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I tested again and it works with ABPS so feel free to give it a try now! After doing some cleaning up of the code and generalizing it, I\u2019ll be working on RUAF next.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 138143,
+   "parent_id": 138138,
+   "author": "TacticalToaster",
+   "author_id": 7768,
+   "author_url": "https://forge.sp-tarkov.com/user/7768/tacticaltoaster",
+   "created_at": "2025-10-08T03:22:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>SAIN works with it and lets you config the bot settings of each UNTAR type just like you would the bosses or other types. I tested MOAR and APBS and both are working as of this moment. I\u2019m not entirely sure about how my bots interact with those mods\u2019 limit systems, but they use BSGs ignore bot cap variable so it\u2019s possible they ignore the limiter. At most two patrols can spawn in the raid and it\u2019s very unlikely it\u2019s at the same time so if performance is an issue you can modify the size of the patrols and how many can spawn in raids in the <code>config/main.json</code> file in the server mod!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 138147,
+   "parent_id": null,
+   "author": "quesonuke",
+   "author_id": 38011,
+   "author_url": "https://forge.sp-tarkov.com/user/38011/quesonuke",
+   "created_at": "2025-10-08T04:13:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This is very cool, thank you kind modder</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 138148,
+   "parent_id": null,
+   "author": "pfaffo",
+   "author_id": 84683,
+   "author_url": "https://forge.sp-tarkov.com/user/84683/pfaffo",
+   "created_at": "2025-10-08T04:29:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>anyone try this with fika yet?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 138149,
+   "parent_id": null,
+   "author": "Evoker78",
+   "author_id": 79208,
+   "author_url": "https://forge.sp-tarkov.com/user/79208/evoker78",
+   "created_at": "2025-10-08T05:15:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>hi, every time I try to load into a map I get this Error message</p>\n<p>Requested value \u201cbossuntarofficer\u201d was no found</p>\n<p>You know why?(and to help I use I use SAIN)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 138150,
+   "parent_id": 138149,
+   "author": "TacticalToaster",
+   "author_id": 7768,
+   "author_url": "https://forge.sp-tarkov.com/user/7768/tacticaltoaster",
+   "created_at": "2025-10-08T05:24:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is there a tacticaltoaster-untargohome folder in your BepInEx/plugins folder and a UNTARGHPrepatch.dll file in your BepInEx/patchers folder?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 138151,
+   "parent_id": 138149,
+   "author": "Evoker78",
+   "author_id": 79208,
+   "author_url": "https://forge.sp-tarkov.com/user/79208/evoker78",
+   "created_at": "2025-10-08T06:20:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>ah no, I\u2019ll try that</p>\n<p>thanks Man</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 138155,
+   "parent_id": 138134,
+   "author": "TheMutedBalaclava",
+   "author_id": 59242,
+   "author_url": "https://forge.sp-tarkov.com/user/59242/themutedbalaclava",
+   "created_at": "2025-10-08T08:47:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It is very probably not gonna happen. I would wish this and some other mods (weapon customizer \ud83d\udc40 ) would be ported to 3.9 SPT, but yeah, it wont happen.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 138156,
+   "parent_id": null,
+   "author": "NTFP",
+   "author_id": 63698,
+   "author_url": "https://forge.sp-tarkov.com/user/63698/ntfp",
+   "created_at": "2025-10-08T08:47:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Do you have any plans to make a Russian army NPC for the BEAR?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 138157,
+   "parent_id": null,
+   "author": "TheMutedBalaclava",
+   "author_id": 59242,
+   "author_url": "https://forge.sp-tarkov.com/user/59242/themutedbalaclava",
+   "created_at": "2025-10-08T08:58:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Peacekeeper being the most important Trader after this mod is installed (if there is a correlation between the trader and your \u201crelationship\u201d while in raid with UNTAR).</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 138163,
+   "parent_id": 138156,
+   "author": "TacticalToaster",
+   "author_id": 7768,
+   "author_url": "https://forge.sp-tarkov.com/user/7768/tacticaltoaster",
+   "created_at": "2025-10-08T11:42:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>RUAF is next on my list after I convert the custom bot code in this mod into a separate API helper mod to make things easier and organized.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 138164,
+   "parent_id": 138157,
+   "author": "TacticalToaster",
+   "author_id": 7768,
+   "author_url": "https://forge.sp-tarkov.com/user/7768/tacticaltoaster",
+   "created_at": "2025-10-08T11:43:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Atm there\u2019s no effect, but one of the updates I have planned will introduce connections to PK, alongside services you can purchase from PK that\u2019ll affect your interactions with UNTAR in raid.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 138181,
+   "parent_id": null,
+   "author": "bugs",
+   "author_id": 83032,
+   "author_url": "https://forge.sp-tarkov.com/user/83032/bugs",
+   "created_at": "2025-10-08T17:50:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>this is amazing, really excited to see what other factions can be added and how they\u2019ll work together\ni\u2019ve been personally tweaking my spt for a couple weeks turning it into stalker using Friendly PMCS and Realism bot layouts per tier to make separate factions ( tier 3 USEC are for exemple Scientists with scientist gear and can spawn with meds and chemical and toxic samples, tier 1 are regular Loner type scavengers that happen to be friendly, etc), my one and only trouble with playing this in the last 2 years of turning SPT into a more Stalker like experience is that there are no friendly factions to speak of except for the Goons but having the Goons friendly means everybody else is pretty much against you, I really love just travelling from map to map doing quests and not getting into much firefights but really more so meeting friendly npcs who are also on their way to do stuff and roaming around, makes the game feel so much more alive without that feeling of \u201ceverybody wants to kill you\u201d and makes firefights in buildings and woods even more intense and startling because you can never tell if its a friendly group or enemy. Thank you for this and excited to see more!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 138191,
+   "parent_id": 138134,
+   "author": "zega",
+   "author_id": 81544,
+   "author_url": "https://forge.sp-tarkov.com/user/81544/zega",
+   "created_at": "2025-10-08T22:39:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i do to performance has been awful</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 138193,
+   "parent_id": null,
+   "author": "Rbeezy",
+   "author_id": 85044,
+   "author_url": "https://forge.sp-tarkov.com/user/85044/rbeezy",
+   "created_at": "2025-10-08T23:40:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>love the mod, well done. Is there a way to disable scavs from becoming hostile towards you as a player scav if you engage with the UNTAR bots?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 138209,
+   "parent_id": null,
+   "author": "Vector7",
+   "author_id": 80420,
+   "author_url": "https://forge.sp-tarkov.com/user/80420/vector7",
+   "created_at": "2025-10-09T07:31:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I really love the idea!\nThank you for creating it :)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 138215,
+   "parent_id": 138157,
+   "author": "TheMutedBalaclava",
+   "author_id": 59242,
+   "author_url": "https://forge.sp-tarkov.com/user/59242/themutedbalaclava",
+   "created_at": "2025-10-09T11:14:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Had my first encounter yesterday with UNTAR, at Customs (RUAF exfill).\nCrazy good and crazy accurate. xD I had to lower their aiming and accuracy, ngl.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 138243,
+   "parent_id": 138193,
+   "author": "TacticalToaster",
+   "author_id": 7768,
+   "author_url": "https://forge.sp-tarkov.com/user/7768/tacticaltoaster",
+   "created_at": "2025-10-09T21:42:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019ll look into it and see what I can do to fix that. BSG handles \u201crevenge\u201d hostility a little weirdly so I might have to override some things to get it to work properly.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 138244,
+   "parent_id": 138134,
+   "author": "TacticalToaster",
+   "author_id": 7768,
+   "author_url": "https://forge.sp-tarkov.com/user/7768/tacticaltoaster",
+   "created_at": "2025-10-09T21:46:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>If I had more time and backup copies of those versions, I would, but unfortunately, I don\u2019t have either. I\u2019m going to be focusing on getting a 4.0.0 version ready alongside feature updates. If another developer wants to, though, I will gladly give them some assistance and link the port on this page.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 138250,
+   "parent_id": 138193,
+   "author": "Rbeezy",
+   "author_id": 85044,
+   "author_url": "https://forge.sp-tarkov.com/user/85044/rbeezy",
+   "created_at": "2025-10-10T00:33:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>gotcha, of course BSG and \u201cweirdly\u201d go hand in hand lol. appreciate it. again, love the mod, cant wait to see what comes next</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 138252,
+   "parent_id": null,
+   "author": "IRememberJeep",
+   "author_id": 59597,
+   "author_url": "https://forge.sp-tarkov.com/user/59597/irememberjeep",
+   "created_at": "2025-10-10T02:33:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This is such a good idea. Looking forward to trying this one out immediately.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 138271,
+   "parent_id": null,
+   "author": "adishee",
+   "author_id": 52987,
+   "author_url": "https://forge.sp-tarkov.com/user/52987/adishee",
+   "created_at": "2025-10-10T13:37:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This is SO, SO cool. I love seeing this kind of mod for SPT, another tool for us to try and create some sort of authentic environment instead of elaborate Quake II gameplay. Going to incorporate this mod into my playthrough and can\u2019t wait to see where it goes. Great work!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 138272,
+   "parent_id": 138181,
+   "author": "adishee",
+   "author_id": 52987,
+   "author_url": "https://forge.sp-tarkov.com/user/52987/adishee",
+   "created_at": "2025-10-10T13:39:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Dude, can you elaborate on how you did this?? Maybe release a mod?!?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 138304,
+   "parent_id": 138181,
+   "author": "bugs",
+   "author_id": 83032,
+   "author_url": "https://forge.sp-tarkov.com/user/83032/bugs",
+   "created_at": "2025-10-11T00:52:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i think Realism added its own way of modifying bot loadouts recently? i havent really messed with it because this method is how i do it and how im confident doing it but please do keep in mind this is a pretty ghetto way of doing things, it works well and does what u ask it to do, and maybe theres an easier way of doing it, but i have absolutely no idea what that better method is if it even exists and also im way too autistic to learn it another way\n\u2014 for starters i went to - \\user\\mods\\SPT-Realism\\db\\bots\\loadouts\\PMCs - and for now ill focus on usecLO.json . you wanna open it with whatever works, personally i use Notepad++ but all u really need to do is ctrl + F / search for things.\n\u2014 once in the usecLO.json youll find a couple lines called \u201cusecLO1\u201d \u201cusecLO2\u201d etc those are the loadouts per tier, and you modify the item IDs under those tiers, for item IDs i use the tarkov item id finder website which im pretty sure is glued to the SPT website too, be weary it seems some clothing IDs from the item finder site ( clothes are under \u201cbody\u201d and \u201cfeet\u201d in the jsons ) dont actually work ingame and youll end up with broken bots or scav with invisible pants or top etc. otherwise for modded items just go into the mod folder and look for a db folder with jsons and copy the item IDs from there to put under the matching categories in usecLO.json tiers\n\u2014heres an exemple adding  Openland Hexagon plate carriers to tier 3 USEC bots:\n\u2014find the artem_vests_json in the artem folder and search for \u201chexagon\u201d and find the item ID ( in this case its 66326bfd46817c660d015145 ) and copy that ID under \u201cTacticalVest\u201d under \u201cusecLO2\u201d in the useclo json\n\u2014now USEC bots should spawn with hexagon plate carriers, the 1 in \u201cxx-xx\u201d: 1, represents the weight i think? so how often that item will be spawned, so a weight of 10 while other items have a weight of 2 means that 10 weight item will spawn 5 times more often\n\u2014theres other things you can modify such as the chance of bots spawning with backpacks helmets etc, and if want those tier2 usec bots to be rarer than all other tiers simply change the tier 2 usec level range somewhere in spawn mods ( for me its all 20% spawn chance for all 5 tiers, givin me a taste of all the \u2018factions\u2019 )\n\u2014you can repeat this process with AS FAR AS IVE EXPERIMENTED all modded gear items and clothing items (couturier, artem, etc) and always remember to backup your files, and do keep in mind again this is im pretty sure a very ghetto frankenstein way of doing things, ive been doing it that way for a while and its always worked for me, hope this helps</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 138305,
+   "parent_id": 138181,
+   "author": "bugs",
+   "author_id": 83032,
+   "author_url": "https://forge.sp-tarkov.com/user/83032/bugs",
+   "created_at": "2025-10-11T00:59:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>huge fuckin wall of text \ud83d\udde3\ufe0f\ud83d\udde3\ufe0f</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 138343,
+   "parent_id": null,
+   "author": "adishee",
+   "author_id": 52987,
+   "author_url": "https://forge.sp-tarkov.com/user/52987/adishee",
+   "created_at": "2025-10-11T10:50:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>@ Toaster, just wondering if you\u2019ve seen below bugs\u2019s comments about how they pseudo-create factions using Realism tools. Perhaps the next faction to add could be scientists, perhaps allied with the Untar soldiers (or even individuals \u2018embedded\u2019 within their patrols)?</p>\n<p>Honestly the bots should just be a series of mods like these.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 138361,
+   "parent_id": 138343,
+   "author": "bugs",
+   "author_id": 83032,
+   "author_url": "https://forge.sp-tarkov.com/user/83032/bugs",
+   "created_at": "2025-10-11T16:25:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>idk if its doable but i feel like a scientist faction could be friendly to both usec and bear ideally, really like the scientists in stalker, only enemy to bosses and rogues. theres so much potential for factions or even subfactions like tha all black tacticool usec freaks from the tarkov series n shit, couturier adds uniforms from various countries so u could have an almost like idk german or czech presence or whatnot to keep the peace at the un roadblocks helping out the un and shit, really is a LOT of potential and this untargh mod is an excellent teaser for whats to come i think</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 138668,
+   "parent_id": null,
+   "author": "TacticalToaster",
+   "author_id": 7768,
+   "author_url": "https://forge.sp-tarkov.com/user/7768/tacticaltoaster",
+   "created_at": "2025-10-14T16:26:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>1K downloads, thank you all! I\u2019m working on getting version 2.0.0, which will be for SPT 4.0.0, finished and ready. This\u2019ll just be a pure port to 4.0.0 while I work on additional features and expanded loadouts.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 138676,
+   "parent_id": null,
+   "author": "AttilaDuran",
+   "author_id": 64137,
+   "author_url": "https://forge.sp-tarkov.com/user/64137/attiladuran",
+   "created_at": "2025-10-14T17:53:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I will pay you to make something for every other trader if it ist possible \ud83d\udc4c\u2764\ufe0f\nLove your work , if I could do I\u2019d , I would</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 138679,
+   "parent_id": 138343,
+   "author": "TacticalToaster",
+   "author_id": 7768,
+   "author_url": "https://forge.sp-tarkov.com/user/7768/tacticaltoaster",
+   "created_at": "2025-10-14T18:17:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The next faction mod I want to make is RUAF. I\u2019m trying to make some Tarkov lore-friendly factions first before I do more \u201cwhat if\u201d kinda stuff. I plan on making an API for developers to make factions and bots easier to add, so once that\u2019s out there\u2019ll be nothing stopping anyone with the know-how to do it themselves too!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 138757,
+   "parent_id": 138343,
+   "author": "adishee",
+   "author_id": 52987,
+   "author_url": "https://forge.sp-tarkov.com/user/52987/adishee",
+   "created_at": "2025-10-15T13:31:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m glad this came out on 3.11 because I\u2019ll be on that for a while. Would love an API to play with</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 138965,
+   "parent_id": null,
+   "author": "20fpsguy",
+   "author_id": 43600,
+   "author_url": "https://forge.sp-tarkov.com/user/43600/20fpsguy",
+   "created_at": "2025-10-17T02:33:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>thanks for updateing the mod to 4.0 but i belive i found a bug or something after installing the mod my game froze after starting it for a long moment and the bepinex console spammed a TON of\n\u201c[Info   : Unity Log]   can\u2019t find name\u201d stuff a HUGE list is it safe to ignore?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 138967,
+   "parent_id": 138965,
+   "author": "TacticalToaster",
+   "author_id": 7768,
+   "author_url": "https://forge.sp-tarkov.com/user/7768/tacticaltoaster",
+   "created_at": "2025-10-17T03:22:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Could you send me the logs? I\u2019ll send a dm here rq.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 138968,
+   "parent_id": 138965,
+   "author": "20fpsguy",
+   "author_id": 43600,
+   "author_url": "https://forge.sp-tarkov.com/user/43600/20fpsguy",
+   "created_at": "2025-10-17T03:26:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i restarted my game to see if it just was a strange bug and since it never happend again if i ever catch it happen again i can send you the log becuse my bepinex log is now clean with the game restart</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 138971,
+   "parent_id": 138965,
+   "author": "TacticalToaster",
+   "author_id": 7768,
+   "author_url": "https://forge.sp-tarkov.com/user/7768/tacticaltoaster",
+   "created_at": "2025-10-17T03:58:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Weird. I think something similar happened to me when I was first getting it to run on 4.0.0. My best guess is that the client creates default info for the custom bots when it detects there\u2019s nothing. I\u2019ll do more testing on my end and see if I can fix it so it\u2019s not an issue on fresh installs.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 138985,
+   "parent_id": null,
+   "author": "pfaffo",
+   "author_id": 84683,
+   "author_url": "https://forge.sp-tarkov.com/user/84683/pfaffo",
+   "created_at": "2025-10-17T06:58:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Has Waypoints been updated for 4.0? it\u2019s a prerequisite for this i thought\u2026</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 138989,
+   "parent_id": null,
+   "author": "GhostxFx",
+   "author_id": 64224,
+   "author_url": "https://forge.sp-tarkov.com/user/64224/ghostxfx",
+   "created_at": "2025-10-17T08:12:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I get stuck at loading screen with this mod installed, also it says UNTAR Go Home! requires BigBrain and Waypoint to run. But waypoint is not updated?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 138993,
+   "parent_id": 138965,
+   "author": "20fpsguy",
+   "author_id": 43600,
+   "author_url": "https://forge.sp-tarkov.com/user/43600/20fpsguy",
+   "created_at": "2025-10-17T09:23:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>alright also is BigBrain  and Waypoints  still a requrment becuse Waypoints hasnt updated yet</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 139001,
+   "parent_id": null,
+   "author": "habciak.",
+   "author_id": 85832,
+   "author_url": "https://forge.sp-tarkov.com/user/85832/habciak",
+   "created_at": "2025-10-17T11:08:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This might be dumb question but do I need waypoint for UNTAR mod if I\u2019m on SPT 4.0? From what I saw Waypoint hasn\u2019t been yet updated to SPT 4.0</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 139006,
+   "parent_id": 138965,
+   "author": "TacticalToaster",
+   "author_id": 7768,
+   "author_url": "https://forge.sp-tarkov.com/user/7768/tacticaltoaster",
+   "created_at": "2025-10-17T11:43:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Only BigBrain atm for 4.0.0.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 139007,
+   "parent_id": 138985,
+   "author": "TacticalToaster",
+   "author_id": 7768,
+   "author_url": "https://forge.sp-tarkov.com/user/7768/tacticaltoaster",
+   "created_at": "2025-10-17T11:44:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Waypoints is not needed for 2.0.0, just BigBrain. Once it\u2019s updated for 4.0 I do recommend it though.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 139009,
+   "parent_id": 138989,
+   "author": "TacticalToaster",
+   "author_id": 7768,
+   "author_url": "https://forge.sp-tarkov.com/user/7768/tacticaltoaster",
+   "created_at": "2025-10-17T11:46:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The loading screen is a known issue for the first time running after install. Eventually it loads and following boots of the game don\u2019t do it. I\u2019m looking into fixing this bug.</p>\n<p>Currently, Waypoints is not necessary for 2.0.0.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 139010,
+   "parent_id": 139001,
+   "author": "TacticalToaster",
+   "author_id": 7768,
+   "author_url": "https://forge.sp-tarkov.com/user/7768/tacticaltoaster",
+   "created_at": "2025-10-17T11:48:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>2.0.0 does not require Waypoints on 4.0.0 atm. Whenever it does get updated I recommend installing it as I may incorporate new behaviors and spawn areas that will benefit from the additional navigation data that waypoints adds. BSG expanded the names areas a while back but they still dont cover every part of the map.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 139011,
+   "parent_id": null,
+   "author": "TacticalToaster",
+   "author_id": 7768,
+   "author_url": "https://forge.sp-tarkov.com/user/7768/tacticaltoaster",
+   "created_at": "2025-10-17T11:53:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Waypoints is not necessary for 2.0.0. BigBrains is though!</p>\n<p>Known issue with 2.0.0\nStarting the game for the first time after installing freezes when booting for a good minute or two before continuing. Seems to be related to how the client gets info from the server with SPT 4.0.0 and a change I had to make to the bot settings to get it to work on the server with my custom types. I\u2019ll be looking into a proper fix for this, but for now just let your game load during the freeze and it should continue after a bit. This only happens the first time booting SPT after downloading the mod too.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 139027,
+   "parent_id": 139001,
+   "author": "habciak.",
+   "author_id": 85832,
+   "author_url": "https://forge.sp-tarkov.com/user/85832/habciak",
+   "created_at": "2025-10-17T12:49:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Okay, thank you!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 139029,
+   "parent_id": 138989,
+   "author": "GhostxFx",
+   "author_id": 64224,
+   "author_url": "https://forge.sp-tarkov.com/user/64224/ghostxfx",
+   "created_at": "2025-10-17T13:11:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>nice, i thought it was broken since i tried restarting game and server multiple times, but no luck. It seems to work now for some reason</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 139080,
+   "parent_id": null,
+   "author": "xantos12",
+   "author_id": 85503,
+   "author_url": "https://forge.sp-tarkov.com/user/85503/xantos12",
+   "created_at": "2025-10-17T23:22:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey can you make this work with FIKA? Cool mod!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 139100,
+   "parent_id": 139080,
+   "author": "TacticalToaster",
+   "author_id": 7768,
+   "author_url": "https://forge.sp-tarkov.com/user/7768/tacticaltoaster",
+   "created_at": "2025-10-18T03:51:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I do want to look into this. At the moment I\u2019m working on some bug fixes, then the next major feature update, which will include some new behavior for the bots alongside splitting the custom bot code into a separate API mod. It\u2019ll be easier for me to see what I need to do for FIKA support once I\u2019ve done that, so keep an eye out!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 139110,
+   "parent_id": null,
+   "author": "RayRobin",
+   "author_id": 85862,
+   "author_url": "https://forge.sp-tarkov.com/user/85862/rayrobin",
+   "created_at": "2025-10-18T05:34:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Would be cool if the Scavs where chill in the proximity of the UNTAR patrols and if you attacked them first the UNTAR would attack you, don\u2019t know if that\u2019s possible, but i think this would give the peacekeepers some more value</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 139130,
+   "parent_id": null,
+   "author": "Tarutarosu",
+   "author_id": 76145,
+   "author_url": "https://forge.sp-tarkov.com/user/76145/tarutarosu",
+   "created_at": "2025-10-18T11:38:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>New faction refers to PMC? Because I have enabled in config to always spawn and do not find them on the installed maps.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 139133,
+   "parent_id": null,
+   "author": "Razzmatazz146",
+   "author_id": 84847,
+   "author_url": "https://forge.sp-tarkov.com/user/84847/razzmatazz146",
+   "created_at": "2025-10-18T12:04:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Not completely sure if it\u2019s this mod 100%, but getting killed by a UNTAR bot caused errors on the server and I got stuck in a black screen instead of going to main menu. I can post the logs if needed on your github.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 139141,
+   "parent_id": 139130,
+   "author": "TacticalToaster",
+   "author_id": 7768,
+   "author_url": "https://forge.sp-tarkov.com/user/7768/tacticaltoaster",
+   "created_at": "2025-10-18T14:58:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>New faction is completely separate, with custom bot types that don\u2019t replace any others. They don\u2019t immediately spawn at the start of the raid even if you set the chance to 100% or spawnAlways in the config. They\u2019re set to spawn at a random time within the first 15-20 minutes by default unless you set spawnImmediately to true in the config under the debug section. If you did do this already, then let me know if the client part of the mod is installed properly alongside any logs you have and I\u2019ll see what might be causing the problem.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 139142,
+   "parent_id": 139133,
+   "author": "TacticalToaster",
+   "author_id": 7768,
+   "author_url": "https://forge.sp-tarkov.com/user/7768/tacticaltoaster",
+   "created_at": "2025-10-18T14:58:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yes please! Open an issue on the github and I\u2019ll take a look at it once I\u2019m off work.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 139188,
+   "parent_id": 139133,
+   "author": "Razzmatazz146",
+   "author_id": 84847,
+   "author_url": "https://forge.sp-tarkov.com/user/84847/razzmatazz146",
+   "created_at": "2025-10-18T20:24:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I zipped the logs and left them in the logs folder, but unfortunately SPT deletes anything regardless of format :\u2019)</p>\n<p>I\u2019ll try to recreate it once I can.</p>\n<p>EDIT: Nevermind I saved them elsewhere!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 140064,
+   "parent_id": null,
+   "author": "Tarutarosu",
+   "author_id": 76145,
+   "author_url": "https://forge.sp-tarkov.com/user/76145/tarutarosu",
+   "created_at": "2025-10-25T18:04:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Why are the UNTAR guys considered bosses? How can they be classified as SCAVs?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 140289,
+   "parent_id": null,
+   "author": "Guaperia",
+   "author_id": 79562,
+   "author_url": "https://forge.sp-tarkov.com/user/79562/guaperia",
+   "created_at": "2025-10-27T14:03:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2025-10-27 14:22:54]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 140295,
+   "parent_id": null,
+   "author": "adishee",
+   "author_id": 52987,
+   "author_url": "https://forge.sp-tarkov.com/user/52987/adishee",
+   "created_at": "2025-10-27T14:25:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Any chance to keep this 3.11-compatible? :( Since it is LTS :(</p>\n<p>:( I\u2019ve said it before and I\u2019ll say it again, we should still be on 3.9.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 140298,
+   "parent_id": null,
+   "author": "sircomradefox.",
+   "author_id": 87213,
+   "author_url": "https://forge.sp-tarkov.com/user/87213/sircomradefox",
+   "created_at": "2025-10-27T14:30:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>when loading into match i get the: the given key \u201cfolloweruntar\u201d was not present in directory</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 140307,
+   "parent_id": null,
+   "author": "DedM0Roz",
+   "author_id": 26597,
+   "author_url": "https://forge.sp-tarkov.com/user/26597/dedm0roz",
+   "created_at": "2025-10-27T15:31:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi,TY for the mod!),i have a question,is it possible to make it so that they are always hostile?(in config file)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 140325,
+   "parent_id": 140298,
+   "author": "TacticalToaster",
+   "author_id": 7768,
+   "author_url": "https://forge.sp-tarkov.com/user/7768/tacticaltoaster",
+   "created_at": "2025-10-27T17:35:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Make sure you have the prepatch installed in the BepInEx/patches folder. If it is installed then let me know if you have any other errors and how exactly you installed it.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 140326,
+   "parent_id": 140298,
+   "author": "TacticalToaster",
+   "author_id": 7768,
+   "author_url": "https://forge.sp-tarkov.com/user/7768/tacticaltoaster",
+   "created_at": "2025-10-27T17:36:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Btw if you\u2019re using the mod manager make sure you update it, the initial release didn\u2019t account for prepatchers iirc</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 140330,
+   "parent_id": 140295,
+   "author": "TacticalToaster",
+   "author_id": 7768,
+   "author_url": "https://forge.sp-tarkov.com/user/7768/tacticaltoaster",
+   "created_at": "2025-10-27T18:41:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Maintaining two versions is gonna be some work. After another update or two for 4.0.0 I might try and backport some of the features to the 3.11 version but it\u2019s not a guarantee. SPT is only keeping 3.11 in LTS so authors can port their mods to 4.0.0, and with the latest hotfixes they\u2019ve done more authors will be updating to 4.0.0 at a fairly even pace. Maintaining both versions will be diminishing returns in the long run but I\u2019ll see what I can fit in. There\u2019s also features in the new client I want to take advantage of so we\u2019ll see how it works out.</p>\n<p>For now, version 1.0.0 of the mod does still work with 3.11 and isn\u2019t missing much besides the checkpoints and PK integration if you do want to continue playing on 3.11.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 140331,
+   "parent_id": 140064,
+   "author": "TacticalToaster",
+   "author_id": 7768,
+   "author_url": "https://forge.sp-tarkov.com/user/7768/tacticaltoaster",
+   "created_at": "2025-10-27T18:42:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>What do you specifically mean by this? I have to use the boss spawn system to spawn them the way I want but I made sure to avoid putting them in any categories that would classify them as bosses in the stats. If they do affect things related to boss stats let me know and I\u2019ll try to make a fix!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 140332,
+   "parent_id": 140307,
+   "author": "TacticalToaster",
+   "author_id": 7768,
+   "author_url": "https://forge.sp-tarkov.com/user/7768/tacticaltoaster",
+   "created_at": "2025-10-27T18:43:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019ll look into including a config option that lets you change their base behavior towards different factions!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 140335,
+   "parent_id": 140295,
+   "author": "adishee",
+   "author_id": 52987,
+   "author_url": "https://forge.sp-tarkov.com/user/52987/adishee",
+   "created_at": "2025-10-27T19:16:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It\u2019s always the biggest problem for us Realism-only players.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 140379,
+   "parent_id": null,
+   "author": "Paze",
+   "author_id": 80706,
+   "author_url": "https://forge.sp-tarkov.com/user/80706/paze",
+   "created_at": "2025-10-28T00:14:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>it would be fun to see a more indept untar faction with specific platoons from different countries ussing their unique deployment weapons like the chinise with their qbz rifles or the polish with their wierd ak variant or some wierder stuff like if you added the russian armed forces you could try to use tarkovs 1.0 release assets and add a more indept faction system with them, adding new gears and weapons as the WTT team for your stand alone mod would be amazing and imagine stuff like mg3 and g3 from german peacekeepers or hk416 and g36 even and even famas from french units. You could add armbands with their flags in order to destinguish their faction and even add unique faces to specific untar divisions. Just brainstorming idk.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 140594,
+   "parent_id": null,
+   "author": "Serps",
+   "author_id": 63853,
+   "author_url": "https://forge.sp-tarkov.com/user/63853/serps",
+   "created_at": "2025-10-29T19:35:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This is AWESOME! Sweet idea, thank you.</p>\n<p>And yeah \u201cfriendly\u201d my a** !!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 140954,
+   "parent_id": 140064,
+   "author": "Pebbles",
+   "author_id": 75114,
+   "author_url": "https://forge.sp-tarkov.com/user/75114/pebbles",
+   "created_at": "2025-11-02T05:07:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I play with \u2018Enable Bosses\u2019 almost always unchecked, does this mean they wont spawn?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 141269,
+   "parent_id": null,
+   "author": "GorillaSoup",
+   "author_id": 29958,
+   "author_url": "https://forge.sp-tarkov.com/user/29958/gorillasoup",
+   "created_at": "2025-11-05T16:28:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Just popping in to say these guys are so much fun, and yeah ABPS will totally work with them. Or at least nothing breaks as far as I can tell. Been running the 3.11 version since you released it.</p>\n<p>UN guys are terrifying. Thanks for the hard work!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 141873,
+   "parent_id": null,
+   "author": "ThatOneGuy",
+   "author_id": 87164,
+   "author_url": "https://forge.sp-tarkov.com/user/87164/thatoneguy",
+   "created_at": "2025-11-09T09:18:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2025-11-09 09:24:32]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 142377,
+   "parent_id": null,
+   "author": "Truth_Holder",
+   "author_id": 89118,
+   "author_url": "https://forge.sp-tarkov.com/user/89118/truth-holder",
+   "created_at": "2025-11-12T21:22:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Love this in single player but so far in FiKa we get stuck at waiting for player to finish loading 50%</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 143141,
+   "parent_id": null,
+   "author": "BigBoy_Liam",
+   "author_id": 21833,
+   "author_url": "https://forge.sp-tarkov.com/user/21833/bigboy-liam",
+   "created_at": "2025-11-19T02:11:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is there a way to tweak it and make them much more friendly</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 143679,
+   "parent_id": null,
+   "author": "PenOkOh",
+   "author_id": 52018,
+   "author_url": "https://forge.sp-tarkov.com/user/52018/penokoh",
+   "created_at": "2025-11-23T20:18:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This was sick. Took a few seconds to realise it was UNTAR. Sadly I got a bit too close so I had to dispatch of them. I was at the buss on new gas and they were inside. That distance was enough to trigger them to turn hostile. I\u2019d probably increase that a little bit because you could accidentally walk too close to them and end up very not breathing anymore. Nonetheless, very nice and the loot was juicy.</p>\n<p>Edit: they spawn despite bot cap with ABPS I assume? Anyone know?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 144425,
+   "parent_id": null,
+   "author": "killahurts",
+   "author_id": 85147,
+   "author_url": "https://forge.sp-tarkov.com/user/85147/killahurts",
+   "created_at": "2025-11-30T14:00:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>\u201cruafRiflemanSenior\u201d was not found. This is the error I get when using this mod in customs. Havent tried other maps with it yet.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 144426,
+   "parent_id": 144425,
+   "author": "killahurts",
+   "author_id": 85147,
+   "author_url": "https://forge.sp-tarkov.com/user/85147/killahurts",
+   "created_at": "2025-11-30T14:09:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2025-11-30 15:20:29]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 144434,
+   "parent_id": 144425,
+   "author": "killahurts",
+   "author_id": 85147,
+   "author_url": "https://forge.sp-tarkov.com/user/85147/killahurts",
+   "created_at": "2025-11-30T15:21:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Nevermind, I updated all of the dependencies again and the issue went away. I must have had one of the dependencies out of date.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 144657,
+   "parent_id": null,
+   "author": "IKEAShark",
+   "author_id": 70163,
+   "author_url": "https://forge.sp-tarkov.com/user/70163/ikeashark",
+   "created_at": "2025-12-02T21:28:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey, buddy, great job! This is exactly what the original game lacks. We were promised that the game would feature military faction patrols like the UN and the Russian Armed Forces, but this is currently not available in the release version. However, you have managed to achieve this! It adds an extra layer of atmosphere and hardcore gameplay to the game, friend! Moreover, this is a fully lore-friendly modification, which I particularly appreciate. Additionally, I appreciate the distinction between the choice between PMCs.</p>\n<p>Listen, I have questions about creating new mods for factions, like the already created UNTAR and Russian Army patrols. In our game, according to the lore, there is a faction of Smugglers who belong to the \u201cSkier\u201d gang, and there are even a few places with their distinctive graffiti depicting a red star with an arrow. It would be nice to see a separate faction of the Wild.\nAnd, of course, the most interesting part. Have you thought about creating a mod to add the Black Division faction?</p>\n<p>I\u2019d love to hear your answer, friend!  May your future development efforts be successful!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 144659,
+   "parent_id": null,
+   "author": "PenOkOh",
+   "author_id": 52018,
+   "author_url": "https://forge.sp-tarkov.com/user/52018/penokoh",
+   "created_at": "2025-12-02T21:35:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Update since my last post. I did find them a bit too difficult. Which enemy type are they based of and can I make them easier?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 145116,
+   "parent_id": null,
+   "author": "Faldin",
+   "author_id": 94595,
+   "author_url": "https://forge.sp-tarkov.com/user/94595/faldin",
+   "created_at": "2025-12-06T01:22:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>when loading into Ground Zero it says: The given key \u2018followeruntar\u2019 was not present in the dictionary.\nI installed all dependencies and everything, did I do smth wrong?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 145273,
+   "parent_id": null,
+   "author": "acidphantasm",
+   "author_id": 48110,
+   "author_url": "https://forge.sp-tarkov.com/user/48110/acidphantasm",
+   "created_at": "2025-12-07T01:22:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Please ensure that your mod\u2019s code and distributed version matches the version on the Forge.</p>\n<p>You are distributing a build with the version set to 3.0.0 but the Forge is 3.0.1</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 145837,
+   "parent_id": null,
+   "author": "04mykl",
+   "author_id": 5999,
+   "author_url": "https://forge.sp-tarkov.com/user/5999/04mykl",
+   "created_at": "2025-12-12T00:16:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>w mod, makes northern roadblock interesting on woods</p>\n<p>wish peacekeeper integration wasnt broken though</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 146001,
+   "parent_id": null,
+   "author": "pica55",
+   "author_id": 89042,
+   "author_url": "https://forge.sp-tarkov.com/user/89042/pica55",
+   "created_at": "2025-12-13T22:08:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>if i want to add lets say a custom zone/location that already is in the game/bigbrain or wtt or more botsapi how can i know which zones exist for certain maps?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 146027,
+   "parent_id": null,
+   "author": "luke27262",
+   "author_id": 95539,
+   "author_url": "https://forge.sp-tarkov.com/user/95539/luke27262",
+   "created_at": "2025-12-14T04:28:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>should add a un beret for their commanding officer.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 146221,
+   "parent_id": null,
+   "author": "APerson",
+   "author_id": 46667,
+   "author_url": "https://forge.sp-tarkov.com/user/46667/aperson",
+   "created_at": "2025-12-16T06:35:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Does ABPS work with the 1.0.0 release for 3.11?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 149153,
+   "parent_id": null,
+   "author": "_orchard",
+   "author_id": 100635,
+   "author_url": "https://forge.sp-tarkov.com/user/100635/orchard",
+   "created_at": "2026-01-06T02:49:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I came across a patrol and without provocation they started shooting me, rushed me and killed me.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 149195,
+   "parent_id": null,
+   "author": "DandyLionElmo",
+   "author_id": 100520,
+   "author_url": "https://forge.sp-tarkov.com/user/100520/dandylionelmo",
+   "created_at": "2026-01-06T13:22:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>bossuntarlead not found sometimes what causes this?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 149196,
+   "parent_id": null,
+   "author": "lordxmackenzie",
+   "author_id": 90432,
+   "author_url": "https://forge.sp-tarkov.com/user/90432/lordxmackenzie",
+   "created_at": "2026-01-06T13:28:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>apparently if i remove this or RUAF my game refuses to open, never ending load screen</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 3
+  },
+  {
+   "id": 150624,
+   "parent_id": null,
+   "author": "_fedor",
+   "author_id": 102513,
+   "author_url": "https://forge.sp-tarkov.com/user/102513/fedor",
+   "created_at": "2026-01-19T23:41:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019ve already lost a ton of gear because these guys just suddenly show up in the same area where I am and start hunting me down and just killing me, as if I don\u2019t have enough other PMCs, bosses, and scavs around. It\u2019s a good idea, but I don\u2019t know. I haven\u2019t made any changes to the bot logic mods. These guys just end up acting like Goons, except apparently they start aggroing when you accidentally end up in the same area as them. Or rather, they just show up where you are, and that\u2019s your problem from now on.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 150688,
+   "parent_id": 150624,
+   "author": "Truth_Holder",
+   "author_id": 89118,
+   "author_url": "https://forge.sp-tarkov.com/user/89118/truth-holder",
+   "created_at": "2026-01-20T16:02:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>they have the same ai as the goons so when they see you and cant fight, they just push you, me personally i really like how they change my dynamic, especial with the nade bombardments, but best advice is to just friggin run, sorry about it</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151185,
+   "parent_id": null,
+   "author": "thatfolfy",
+   "author_id": 99450,
+   "author_url": "https://forge.sp-tarkov.com/user/99450/thatfolfy",
+   "created_at": "2026-01-27T10:17:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Luckily I haven\u2019t been getting any issues with the Blue Helmets so far. If anything, they might be a teensy bit too friendly, because I\u2019ve been getting almost up in their face without getting shot at. Was really fun and tense when I stumbled upon a patrol next to an exfil on Interchange, then started getting shot at by some unrelated Scavs or PMC from the other side. Ran past the UNTAR guys while they started engaging with the Scavs, praying that they don\u2019t open up on me since I haven\u2019t fired a single round near them (and waved at them a couple of times, but that\u2019s just muh immersion, I know it probably isn\u2019t implemented to do anything), and they didn\u2019t! Firing on them DOES obviously make them aggro, so it\u2019s not like the AI is broken, and I bet they would open up if I got just a meter or two closer in that scenario.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151190,
+   "parent_id": null,
+   "author": "Nomad_35",
+   "author_id": 102883,
+   "author_url": "https://forge.sp-tarkov.com/user/102883/nomad-35",
+   "created_at": "2026-01-27T11:03:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi! I really loved this mod but I had some feedback I wanted to share.\n-The amount of units each patrol is too high maybe there could be 2 types of patrols one with higher unit count but lower chance of spawning and one vice versa.\n-The amount of check-points could be boosted in some maps there are literal checkpoints that could be manned alongside existing ones or the existing ones could be moved in those locations.\n-Units have too many hand grenades especially if you come across a patrol with more than 3-4 unit. They each chug a grenade and it basically feels like getting hit by an AGS. This one could be a less of an issue if there were no massive \u201craid parties\u201d (patrols).</p>\n<p>I have exact same feedbcak for your \u201cRUAF Come Home!\u201d mod so I\u2019ll share it there as well but again all of these extra faction mods are amazing additions to the game and thanks for your work!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 151253,
+   "parent_id": null,
+   "author": "MoKoid",
+   "author_id": 103605,
+   "author_url": "https://forge.sp-tarkov.com/user/103605/mokoid",
+   "created_at": "2026-01-28T00:17:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Big fan of these npcs you\u2019ve put out, adds a lot more to the world which was kinda starting to feel stale with just scav, bear, scav, scav, scav usec, usec, guard, boss, etc. I\u2019m curious about the progress/integration of peacekeeper and what is in the mod and what isn\u2019t/is broke currently. mainly wanted to ask if you happen to know of a way to decrease or increase xp gain from killing UNTAR (or your other NPC Mods). with the three mods I thought a dynamic of having untar xp decreased, RUAF increased slightly, and BD increased to shy of boss tier xp gains would be neat but I can\u2019t seem to figure out if it\u2019s a value in any config. thanks in advance :)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151923,
+   "parent_id": null,
+   "author": "_orchard",
+   "author_id": 100635,
+   "author_url": "https://forge.sp-tarkov.com/user/100635/orchard",
+   "created_at": "2026-02-04T19:59:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i messed with the config and i dont know what i did but i end up with like 40-100 UNTAR spawning on Customs 100% of the time. Fun to run around with them all chasing me and shit especially with SAIN, but I die 100% of the times I engage them, usually lucky enough to take about 20-30 with me, using the drone kamikaze mod, LMG\u2019s, and rocket launchers.</p>\n<p>Anyway, that\u2019s getting old so I\u2019m just going to reinstall the config.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 153886,
+   "parent_id": null,
+   "author": "pibbles2478",
+   "author_id": 105595,
+   "author_url": "https://forge.sp-tarkov.com/user/105595/pibbles2478",
+   "created_at": "2026-02-28T17:41:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>While using this mod normal PMC and Scavs had a higher liklihood of just having pistols as their loadout and it was pretty immersion breaking. I tried changing power levels in SAIN to try and mitigate the issue to no avail. The mod is awesome and I hope this issue can be fixed in future updates. Thanks TacticalToaster for making a cool mod!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 153918,
+   "parent_id": 149196,
+   "author": "nobunaga72",
+   "author_id": 105901,
+   "author_url": "https://forge.sp-tarkov.com/user/105901/nobunaga72",
+   "created_at": "2026-03-01T10:35:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I imagine that you already find the solution but for others, you also have to remove the .dll files in BepInEx/patchers</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 156255,
+   "parent_id": 151923,
+   "author": "fishfrom0cean",
+   "author_id": 108226,
+   "author_url": "https://forge.sp-tarkov.com/user/108226/fishfrom0cean",
+   "created_at": "2026-04-04T14:10:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It seems that the UNTAR mission has decided to take a serious look at the stabilization situation in the Norvinsk region.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 157419,
+   "parent_id": null,
+   "author": "noDisPutin",
+   "author_id": 34692,
+   "author_url": "https://forge.sp-tarkov.com/user/34692/nodisputin",
+   "created_at": "2026-04-18T03:23:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Great mod. I like having a few squads turn up 30-60 mins into each raid (then RUAF 60-90 mins in.) I did feel a bit bad for capping three UNTAR guys to finish Peacekeeping Mission on Woods; not sure that\u2019s what Peacekeeper intended but hey a kill\u2019s a kill.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 159395,
+   "parent_id": null,
+   "author": "Chazut",
+   "author_id": 53567,
+   "author_url": "https://forge.sp-tarkov.com/user/53567/chazut",
+   "created_at": "2026-05-08T19:14:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello thanks for all your faction mods! It\u2019s awesome</p>\n<p>Question: If I accidentally kill a UNTAR squad, will they be hostile toward me in future raids? (If so, for how many raids? Until I die? Forever?) I\u2019m asking because this happened to me, and 8 raids later they attacked and killed me, and now I\u2019m afraid to go near them lol</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 163952,
+   "parent_id": null,
+   "author": "1Leggedgamer",
+   "author_id": 59428,
+   "author_url": "https://forge.sp-tarkov.com/user/59428/1leggedgamer",
+   "created_at": "2026-06-23T23:51:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Sorry to bug you but it would seem like the untar is not spawning for me and neither is RUFA I have all the dependencies installed and have sain call sign and  twitch names. please let me know if anyone has had this problem as well and what they did..</p>\n<p>thank you</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 164404,
+   "parent_id": null,
+   "author": "Zersetzung",
+   "author_id": 60693,
+   "author_url": "https://forge.sp-tarkov.com/user/60693/zersetzung",
+   "created_at": "2026-06-27T16:02:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I am getting an error sometimes when I try to load into a game where the game displays \u201cRequested value \u2018bossuntarlead\u2019 was not found.\u201d, and then it sends me back to the menu</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 164860,
+   "parent_id": 163952,
+   "author": "chfrchko5",
+   "author_id": 99865,
+   "author_url": "https://forge.sp-tarkov.com/user/99865/chfrchko5",
+   "created_at": "2026-07-01T16:37:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>are you using Dynamic Maps mod? because i\u2019m having the same issue i think, on the map the bots are spawned in, but they\u2019re essentially just stuck on one spot, they exist in the raid but only some of their body parts are visible, can kill them and everything but thats all, happens for both ruaf and untar, although the bloodhounds, which are part of ruaf, were walking normal in a few raids that i saw them in, nothing helped in troubleshooting so far</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 165073,
+   "parent_id": null,
+   "author": "chfrchko5",
+   "author_id": 99865,
+   "author_url": "https://forge.sp-tarkov.com/user/99865/chfrchko5",
+   "created_at": "2026-07-03T02:39:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>hey, thank you for your work. i have an issue with both RUAF and UNTAR bots at spawn. im using dynamic map and raid review to monitor the bot behavior. when starting a raid as a scav, on spawn, all bots work and move around as they should without any issues, however when starting a raid as a PMC, both ruaf and untar are stuck on the map as soon as i spawn. they\u2019re half invisible, not moving if i come close to them, and on map and raid review they\u2019re just there as static markers/points, other ai also just run by without attacking them. im using APBS and ORBIT</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 165141,
+   "parent_id": null,
+   "author": "spt123123",
+   "author_id": 94676,
+   "author_url": "https://forge.sp-tarkov.com/user/94676/spt123123",
+   "created_at": "2026-07-03T15:38:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m using SAIN, and I have UNTAR and RUAF installed. After I load into a raid, the BossNotifier mod notifies me that the boss has spawned and marks its location, yet I rush to the marked spot and find no trace of the boss whatsoever.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 165150,
+   "parent_id": 165141,
+   "author": "TacticalToaster",
+   "author_id": 7768,
+   "author_url": "https://forge.sp-tarkov.com/user/7768/tacticaltoaster",
+   "created_at": "2026-07-03T16:26:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>They don\u2019t spawn instantly unless it\u2019s a checkpoint, with checkpoints belonging to certain bot zones but not necessarily being in them. Check extracts that have RUAF or UNTAR in the name to find them at the start of a raid.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 165657,
+   "parent_id": null,
+   "author": "DemonHunter58",
+   "author_id": 11309,
+   "author_url": "https://forge.sp-tarkov.com/user/11309/demonhunter58",
+   "created_at": "2026-07-07T21:07:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Why does UNTAR try to kill me when I kill a PMC?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 165910,
+   "parent_id": null,
+   "author": "Ruggedgolem",
+   "author_id": 46827,
+   "author_url": "https://forge.sp-tarkov.com/user/46827/ruggedgolem",
+   "created_at": "2026-07-10T19:30:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Don\u2019t know if this has something to do with this mod or not, but for some reason whenever I get close to a checkpoint the UNTAR bots will just constantly be throwing nades at me\u2026. like infinite nades\u2026.. either until I die or leave.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 165953,
+   "parent_id": 165073,
+   "author": "jjkke567",
+   "author_id": 106160,
+   "author_url": "https://forge.sp-tarkov.com/user/106160/jjkke567",
+   "created_at": "2026-07-11T08:48:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019ve run into the same issue. What\u2019s more, the original Santa Claus model has this problem too.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 165974,
+   "parent_id": 165073,
+   "author": "TacticalToaster",
+   "author_id": 7768,
+   "author_url": "https://forge.sp-tarkov.com/user/7768/tacticaltoaster",
+   "created_at": "2026-07-11T13:21:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I got a feeling ORBIT might be causing problems, I don\u2019t think it was made with custom bots in mind. Could you try diaabling/uninstalling ORBIT temporarily and see if that changes things?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 165979,
+   "parent_id": 165073,
+   "author": "jjkke567",
+   "author_id": 106160,
+   "author_url": "https://forge.sp-tarkov.com/user/106160/jjkke567",
+   "created_at": "2026-07-11T13:37:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Same issue persists after removing both SAIN and ORBIT.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 166029,
+   "parent_id": 165073,
+   "author": "chfrchko5",
+   "author_id": 99865,
+   "author_url": "https://forge.sp-tarkov.com/user/99865/chfrchko5",
+   "created_at": "2026-07-12T00:27:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>im not entirely sure what was the issue, as after me writing that comment i saw that one of the bosses, reshala or partizan, got stuck in the same way as RUAF and UNTAR did, so it could\u2019ve just been me misconfiguring something or doing something wrong during mod installs. but i did try to remove all the AI affecting mods, specifically SAIN, APBS, ORBIT, one by one, trying to see if any of them were the culprit, but even with them removed i had the same issue.\nwhat helped tho was reinstalling the whole spt setup again. i did an install with i believe all of the same mods as on that first setup, maybe a few missing but none AI related, and it helped, every bot is behaving as expected</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 166030,
+   "parent_id": 165073,
+   "author": "chfrchko5",
+   "author_id": 99865,
+   "author_url": "https://forge.sp-tarkov.com/user/99865/chfrchko5",
+   "created_at": "2026-07-12T00:29:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>are you using apbs and pit fireteam? its probably totally unrelated but on my clean install i havent added a pit fireteam teammate and havent configured scav active/quiet spawn timings in apbs, idk if these could cause an issue, but im not trying to find that out lmao, i like my current setup so im gonna leave it as is</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 166431,
+   "parent_id": 163952,
+   "author": "SergeantRogers",
+   "author_id": 53609,
+   "author_url": "https://forge.sp-tarkov.com/user/53609/sergeantrogers",
+   "created_at": "2026-07-15T17:55:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I also have dynamic maps installed alongside this and it works perfectly fine.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 166793,
+   "parent_id": 165073,
+   "author": "LaCokaNostra",
+   "author_id": 72272,
+   "author_url": "https://forge.sp-tarkov.com/user/72272/lacokanostra",
+   "created_at": "2026-07-18T02:02:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I had the problem too, I had to remove the AI Limit mod to fix this issue</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170691,
+   "parent_id": null,
+   "author": "bibby_jimmy",
+   "author_id": 119594,
+   "author_url": "https://forge.sp-tarkov.com/user/119594/bibby-jimmy",
+   "created_at": "2026-08-07T08:06:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey i have this glitch that stops me from loading into any raid it goes the given key followeruntar was not present in the dictionary</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}
