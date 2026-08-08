@@ -317,11 +317,8 @@ def render_versions(versions, limit=40):
     more = (f'<p class="empty">{len(versions) - limit} older versions not shown.</p>'
             if len(versions) > limit else "")
     return f"""
-<section class="panel">
-  <h2>Versions ({len(versions)})</h2>
-  <div class="versions">{"".join(blocks)}</div>
-  {more}
-</section>"""
+    <div class="versions">{"".join(blocks)}</div>
+    {more}"""
 
 
 def render_comment(comment, replies, images=None):
@@ -370,10 +367,8 @@ def render_comments(comment_data, images=None):
   </div>""")
 
     return f"""
-<details class="comments" id="comments">
-  <summary>Comments <span class="count">({len(comments):,} including
-    {plural(len(top_level), 'thread')})</span></summary>
-  <div class="comments-body">
+    <p class="panel-note">{len(comments):,} comments across
+      {plural(len(top_level), 'thread')}, archived from the Forge.</p>
     <div class="comment-controls">
       <input type="search" id="comment-search" placeholder="Search comments…"
              autocomplete="off" aria-label="Search comments">
@@ -387,9 +382,54 @@ def render_comments(comment_data, images=None):
     <p class="empty" id="comment-status"></p>
     <div class="thread" id="comment-thread">
 {"".join(threads)}
-    </div>
-  </div>
-</details>"""
+    </div>"""
+
+
+def render_tabs(mod, description, comment_data, images):
+    """Description / Versions / Comments as tabs, or as stacked sections.
+
+    Which of those you get depends on whether tabs.js runs. The markup is the
+    same either way: a nav of in-page anchors followed by the panels. Without
+    the script the anchors are jump links and every panel is visible, which is
+    exactly the page this replaced. A tab whose content does not exist -- a mod
+    with no description, or one whose comments have not been scraped yet -- is
+    simply not emitted.
+    """
+    comments = (comment_data or {}).get("comments") or []
+    versions = mod["versions"]
+
+    sections = []
+    if description:
+        sections.append(("description", "Description", None,
+                         f'<div class="prose">{description}</div>'))
+    if versions:
+        sections.append(("versions", "Versions", len(versions),
+                         render_versions(versions)))
+    if comments:
+        sections.append(("comments", "Comments", len(comments),
+                         render_comments(comment_data, images)))
+
+    if not sections:
+        return ('<section class="panel"><p class="empty">No description, '
+                'versions, or comments were archived for this mod.</p></section>')
+
+    def tab_link(slug, label, count):
+        badge_html = f'<span class="tabcount">{count:,}</span>' if count else ""
+        return f'<a class="tab" href="#{slug}">{e(label)}{badge_html}</a>'
+
+    nav = "".join(tab_link(slug, label, count)
+                  for slug, label, count, _ in sections)
+
+    panels = "".join(
+        f'<section class="panel tabpanel" id="{slug}">'
+        f'<h2 class="panel-heading">{e(label)}</h2>{content}</section>'
+        for slug, label, _, content in sections)
+
+    return f"""
+<div class="tabs" id="mod-tabs">
+  <nav class="tablist" aria-label="Mod details">{nav}</nav>
+{panels}
+</div>"""
 
 
 def render_mod(mod, comment_data, known_ids, repos, images=None):
@@ -462,12 +502,8 @@ def render_mod(mod, comment_data, known_ids, repos, images=None):
 
 {render_dependencies(mod.get('all_dependencies') or mod['dependencies'], known_ids)}
 
-{f'<section class="panel"><h2>Description</h2><div class="prose">{description}</div></section>' if description else ''}
-
-{render_versions(mod['versions'])}
-
-{render_comments(comment_data, images)}
+{render_tabs(mod, description, comment_data, images)}
 """
     return page(f"{mod['name']} · SPT Mod Archive", body, depth=1,
-                scripts=("comments.js",),
+                scripts=("tabs.js", "comments.js"),
                 description=to_text(mod["teaser"] or mod["description_html"], 160))

@@ -255,6 +255,61 @@ input:focus, select:focus {
 .version .when { color: var(--faint); font-size: 12.5px; margin-left: auto; }
 .version .notes { margin-top: 6px; color: var(--muted); font-size: 13.5px; }
 
+/* --- tabs --------------------------------------------------------------- */
+
+.tablist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+.tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 15px;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid transparent;
+  border-bottom: 0;
+  border-radius: var(--radius) var(--radius) 0 0;
+  margin-bottom: -1px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.tab:hover { color: var(--text); text-decoration: none; }
+
+/* Selected state is driven by aria-selected, so the styling cannot drift out
+   of step with what assistive technology is told. */
+.tab[aria-selected="true"] {
+  color: var(--text);
+  background: var(--surface);
+  border-color: var(--line);
+  border-bottom: 1px solid var(--surface);
+}
+.tab:focus-visible { outline: 2px solid var(--accent-dim); outline-offset: -2px; }
+
+.tabcount {
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--faint);
+  background: var(--surface-2);
+  border-radius: 999px;
+  padding: 1px 7px;
+}
+.tab[aria-selected="true"] .tabcount { color: var(--accent); }
+
+.tabpanel:focus { outline: none; }
+
+/* Until tabs.js promotes them, the panels are ordinary stacked sections and
+   each needs its own heading. Once it has, the tab *is* the heading. */
+#mod-tabs[data-enhanced] .panel-heading { display: none; }
+
+.panel-note { margin: 0 0 12px; color: var(--muted); font-size: 13px; }
+
 /* --- comments ---------------------------------------------------------- */
 
 details.comments { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); }
