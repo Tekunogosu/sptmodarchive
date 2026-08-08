@@ -13,6 +13,7 @@ Two rules hold throughout:
     sorting, and search; they are never what makes content visible.
 """
 
+import re
 from html import escape
 
 from sanitize import clean_html, to_text
@@ -42,6 +43,29 @@ def spt_line(constraint):
 
 def fmt_date(stamp):
     return stamp[:10] if stamp else ""
+
+
+_IMG_SRC_RE = re.compile(r'(<img[^>]+src=")([^"]+)(")')
+
+
+def local_image(url, images, up=""):
+    """Rewrite a Forge image URL to its mirrored copy, if we have one.
+
+    Falls back to the original URL when the image was never mirrored, which
+    keeps third-party screenshots working while Forge-hosted ones stop
+    depending on a site that is going away.
+    """
+    name = images.get(url)
+    return f"{up}assets/img/{name}" if name else url
+
+
+def localize_images(html, images, up=""):
+    """Point every <img> in a fragment at its mirrored copy where one exists."""
+    if not images or "<img" not in html:
+        return html
+    return _IMG_SRC_RE.sub(
+        lambda m: m.group(1) + local_image(m.group(2), images, up) + m.group(3),
+        html)
 
 
 def to_epoch(stamp):
@@ -300,9 +324,9 @@ def render_versions(versions, limit=40):
 </section>"""
 
 
-def render_comment(comment, replies):
-    body = clean_html(comment["body_html"])
-    reply_html = "".join(render_comment(reply, []) for reply in replies)
+def render_comment(comment, replies, images=None):
+    body = localize_images(clean_html(comment["body_html"]), images or {}, "../")
+    reply_html = "".join(render_comment(reply, [], images) for reply in replies)
     likes = (f'<span class="likes">{plural(comment["likes"], "like")}</span>'
              if comment["likes"] else "")
 
@@ -319,8 +343,9 @@ def render_comment(comment, replies):
     {f'<div class="replies">{reply_html}</div>' if reply_html else ''}"""
 
 
-def render_comments(comment_data):
+def render_comments(comment_data, images=None):
     """The collapsible comment section: closed by default, sorted, searchable."""
+    images = images or {}
     comments = (comment_data or {}).get("comments") or []
     if not comments:
         return ""
@@ -341,7 +366,7 @@ def render_comments(comment_data):
         threads.append(f"""
   <div class="thread-item" data-time="{stamp}" data-likes="{comment['likes']}"
        data-replies="{len(replies)}">
-{render_comment(comment, replies)}
+{render_comment(comment, replies, images)}
   </div>""")
 
     return f"""
@@ -367,10 +392,13 @@ def render_comments(comment_data):
 </details>"""
 
 
-def render_mod(mod, comment_data, known_ids, repos):
+def render_mod(mod, comment_data, known_ids, repos, images=None):
     """One mod's page: everything the archive holds about it."""
     authors = ", ".join(a["name"] for a in mod["authors"]) or "Unknown"
-    description = clean_html(mod["description_html"])
+    images = images or {}
+    # Mod pages sit one directory deep, so mirrored images are ../assets/img/.
+    description = localize_images(clean_html(mod["description_html"]),
+                                  images, "../")
     category = mod.get("category") or {}
 
     flags = []
@@ -391,8 +419,8 @@ def render_mod(mod, comment_data, known_ids, repos):
         if mod["flags"].get(key):
             flags.append(badge(label, "warn"))
 
-    thumb = (f'<img src="{e(mod["thumbnail"])}" alt="" loading="lazy">'
-             if mod["thumbnail"] else "")
+    thumb = (f'<img src="{e(local_image(mod["thumbnail"], images, "../"))}" '
+             f'alt="" loading="lazy">' if mod["thumbnail"] else "")
 
     facts = [
         ("Downloads", f"{mod['downloads']:,}"),
@@ -438,7 +466,7 @@ def render_mod(mod, comment_data, known_ids, repos):
 
 {render_versions(mod['versions'])}
 
-{render_comments(comment_data)}
+{render_comments(comment_data, images)}
 """
     return page(f"{mod['name']} · SPT Mod Archive", body, depth=1,
                 scripts=("comments.js",),
