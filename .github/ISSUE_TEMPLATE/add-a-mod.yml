@@ -1,0 +1,115 @@
+name: Add a mod
+description: Get a mod listed in the archive without editing any files
+title: "[Mod] "
+labels: ["new mod"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Fill this in and a maintainer will add the mod for you.
+
+        If you are comfortable with a pull request, adding the file yourself is
+        faster — copy `community/_template.json`, see `community/README.md`.
+
+  - type: input
+    id: name
+    attributes:
+      label: Mod name
+      placeholder: My Cool Mod
+    validations:
+      required: true
+
+  - type: input
+    id: authors
+    attributes:
+      label: Author(s)
+      description: Comma-separated if there are several.
+      placeholder: YourName, ACollaborator
+    validations:
+      required: true
+
+  - type: textarea
+    id: teaser
+    attributes:
+      label: One-line summary
+      description: Shown in the mod list. One sentence.
+      placeholder: Adds configurable stash sorting with folding and stack merging.
+    validations:
+      required: true
+
+  - type: textarea
+    id: source_links
+    attributes:
+      label: Source repository links
+      description: >
+        One per line. If the mod has separate repositories (for example a
+        client and a server half, or one per SPT generation), list them all
+        and note which is which.
+      placeholder: |
+        https://github.com/you/my-cool-mod
+        https://github.com/you/my-cool-mod-server  (server)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - audio
+        - bots
+        - clothing
+        - equipment
+        - hideout
+        - items
+        - locales
+        - locations
+        - models
+        - other
+        - overhauls
+        - quests
+        - retextures
+        - scripting
+        - tools
+        - traders
+        - weapons
+    validations:
+      required: true
+
+  - type: dropdown
+    id: fika
+    attributes:
+      label: Fika (co-op) compatibility
+      description: Pick "unknown" if it has not been tested — that is a real answer.
+      options:
+        - unknown
+        - compatible
+        - incompatible
+    validations:
+      required: true
+
+  - type: input
+    id: spt
+    attributes:
+      label: SPT version
+      placeholder: ~4.1.0
+
+  - type: input
+    id: version
+    attributes:
+      label: Current mod version
+      placeholder: 1.0.0
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Longer description
+      description: Optional. Plain text or simple HTML.
+
+  - type: checkboxes
+    id: rights
+    attributes:
+      label: Confirmation
+      options:
+        - label: This mod is publicly available and I am not posting anyone else's files here.
+          required: true

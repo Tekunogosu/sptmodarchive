@@ -1,0 +1,1890 @@
+{
+ "mod_id": 2299,
+ "slug": "show-me-the-money-item-pricing",
+ "fetched_at": "2026-08-08T20:53:27Z",
+ "reported_total": 67,
+ "pages": 7,
+ "count": 188,
+ "comments": [
+  {
+   "id": 136261,
+   "parent_id": null,
+   "author": "Rana Hamza",
+   "author_id": 82969,
+   "author_url": "https://forge.sp-tarkov.com/user/82969/rana-hamza",
+   "created_at": "2025-09-09T16:17:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Nice, Mod. I was also missing Loot value with fika headless due to server overhead. Thanks for this amazing mod. Do you have also installed this mod on fika headless client too? to work in raid.<br />\nAgain Thank you for this beautiful mod.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 136361,
+   "parent_id": 136261,
+   "author": "goflockyourself",
+   "author_id": 60764,
+   "author_url": "https://forge.sp-tarkov.com/user/60764/goflockyourself",
+   "created_at": "2025-09-09T17:05:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i dont <em>think</em> it would be required to be on the headless, try it and see</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 136265,
+   "parent_id": null,
+   "author": "Hazode",
+   "author_id": 43969,
+   "author_url": "https://forge.sp-tarkov.com/user/43969/hazode",
+   "created_at": "2025-09-09T19:19:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I haven\u2019t had a chance to download and see for myself yet, but is this compatible with SVM, in that if I change the multiplier that traders use, will this mod know that and adjust the prices automatically?</p>\n<p>I\u2019ve set my SVM so that traders have their price markup a bit different, and have also set the Flea market to have 2 - 10 times higher prices (which tbh is a bit irrelevant in regards to this mod as I also set my sell chance to zero percent as a way to stop me just getting rich from the flea, but also stop me just buying everything from the flea instead of actually hunting for it)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 136367,
+   "parent_id": 136265,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-09-09T19:40:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I can\u2019t answer that question at the moment, but I will test it. Thank you for pointing that out. I will get back to you with my test results as soon as possible.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 136369,
+   "parent_id": 136261,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-09-09T20:19:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for the kind words, Rana_Hamza.</p>\n<p>I\u2019m not sure if I understand your question correctly, but I\u2019ll try to answer it to the best of my knowledge:</p>\n<p>My mod does not need to be installed on the Fika headless client. In fact, I would recommend NOT installing it on the headless client and adding it to the Exclusions.json file of Corter\u2019s ModSync, if you are using this plugin.</p>\n<p>If no price information is displayed in-raid, then something is wrong. Check the \u201cSPT/BepInEx/LogOutput.log\u201d log file. There you should find something like \u201c:</p>\n<p>SwiftXP.ShowMeTheMoney] Ragfair price table was queried!\u201d.</p>\n<p>If you can\u2019t find this line, the mod is maybe not installed correctly. If you can see both Trader and Flea Market prices in the character/stash screen, the mod should be working correctly \u2013 even in-raid. If the problem persists, you can send me your logs in the Mod Support Forum and I\u2019ll take a look to see if something is wrong when I have time. <a href=\"https://hub.sp-tarkov.com/faq-question/64-where-can-i-find-my-log-files/\" target=\"_blank\" rel=\"noreferrer noopener\">Please follow this link to the SPT FAQ to find your logs</a>. You can also use the SPT.Launcher =&gt; Settings &gt; Copy logs to clipboard.</p>\n<p>I have also updated my mod description based on your comment. Thank you.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 136372,
+   "parent_id": 136265,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-09-09T21:10:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m back. I\u2019m happy to report that the \u201cPrice Markup\u201d is being taken into account. I wasn\u2019t sure because my friends and I use the default setting there.</p>\n<p>I have also updated my mod description based on your comment. Thank you.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 136373,
+   "parent_id": 136265,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-09-09T21:23:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Oh, and I forgot: If you changed the \u201cPrice range\u201d in the \u201cFlea market\u201d settings =&gt; these changes are also taken into account by the mod.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 136268,
+   "parent_id": null,
+   "author": "ThatDesGuy",
+   "author_id": 38024,
+   "author_url": "https://forge.sp-tarkov.com/user/38024/thatdesguy",
+   "created_at": "2025-09-09T21:23:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>My favourite part of this mod is that when I hover over the damage report, it will tell me how much the AI spent to kill me in bullets</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 136374,
+   "parent_id": 136268,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-09-09T21:31:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Really? Nice catch!</p>\n<p>This is unintended behavior of the mod actually.</p>\n<p>I will \u201cfix\u201d this in a further version of the mod. Thanks for letting me know.</p>\n<p>Update: Hmmm, can\u2019t see it myself in the damage report. I got trolled?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 136375,
+   "parent_id": 136265,
+   "author": "Hazode",
+   "author_id": 43969,
+   "author_url": "https://forge.sp-tarkov.com/user/43969/hazode",
+   "created_at": "2025-09-09T21:36:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for the quick reply!! That\u2019s really good to know, thank you so much, gonna download right now!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 136378,
+   "parent_id": 136268,
+   "author": "ThatDesGuy",
+   "author_id": 38024,
+   "author_url": "https://forge.sp-tarkov.com/user/38024/thatdesguy",
+   "created_at": "2025-09-09T22:29:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019ve had to happen to me only once more after the first time, so it seems to be a very rare bug I guess since i died like 5 more times after posting my comment.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 136379,
+   "parent_id": 136268,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-09-09T22:37:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>OK, Thanks! I\u2019ll see if I can get a preventive bug fix implemented in a future version.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 136381,
+   "parent_id": 136265,
+   "author": "Hazode",
+   "author_id": 43969,
+   "author_url": "https://forge.sp-tarkov.com/user/43969/hazode",
+   "created_at": "2025-09-10T00:33:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019ve played around with it a bit, and I\u2019ve noticed a bug I think? or maybe it\u2019s just a limitation of the mod, idk. It works really well! I haven\u2019t been able to test if it works properly with modded traders, but that\u2019s mostly because I\u2019ve only done two or three raids and never found anything that only those traders buy and no vanilla traders.</p>\n<p>Anyway, the bug/limitation I found is that it seems like it\u2019s unable to convert different currencies into rubles, and that it\u2019s just going off the highest number, I think. For example if I had an item that Peacekeeper will buy for $173 (7,482 RU if you were to buy that amount of USD from Peacekeeper running my SVM settings), the tooltip will say that I\u2019m best of selling it to Mechanic for around 6,000 RU. It\u2019s not a big deal, I typically <strong>want</strong> rubles more than USD anyway, but figured I\u2019d let you know regardless.</p>\n<p>Thanks for uploading this, I wish I had this mod when I started my new profile recently, it would have been really helpful!</p>\n<p>EDIT: I don\u2019t know how to code nor create mods for SPT, but I think if it was something you want to fix, maybe have a \u201cthing\u201d (is variable the right word?) that looks at how much Peacekeeper is selling USD for and then multiplying that by the value that the mod is finding for an item that he buys. E.g., if Peacekeeper is selling 1 USD for 150 RU, and buying an item for 52 USD, multiply 52 by 150 so that the mod can work out who best to sell an item to. The tooltip could still display the USD amount just using the same method the mod already uses, except just have it replace the word/symbol for rubles with dollars. I have no idea if this is doable or would even work, like I said I have no idea how to do these things lol. And if this mod does work with modded traders (again haven\u2019t quite tested that properly yet), you may want to do the same thing for EUR? I use the couterier mod and he buys things for EUR</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 136383,
+   "parent_id": 136265,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-09-10T00:42:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>That\u2019s a very good point. I was afraid that such cases would arise with Peacekeeper. I don\u2019t have a quick fix for this right now, but I\u2019ll try to look into it. Currently, the mod only calculates in rubles. I really appreciate the feedback! I have also updated my mod description based on your comment until I\u2019m able to solve this problem.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 136384,
+   "parent_id": 136265,
+   "author": "Hazode",
+   "author_id": 43969,
+   "author_url": "https://forge.sp-tarkov.com/user/43969/hazode",
+   "created_at": "2025-09-10T00:52:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>No worries, happy to give feedback! I made an edit with how my uneducated ass thinks it can be fixed, but no doubt it\u2019s not quite as simple as that</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 136385,
+   "parent_id": 136265,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-09-10T00:59:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks! And it\u2019s probably time I check out modded traders. I\u2019m curious to see how well my mod works with it (or doesn\u2019t).</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 136411,
+   "parent_id": 136265,
+   "author": "Hazode",
+   "author_id": 43969,
+   "author_url": "https://forge.sp-tarkov.com/user/43969/hazode",
+   "created_at": "2025-09-10T16:58:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>If you\u2019ve not had chance to test it for yourself yet, I think your mod does indeed take modded traders into account. I noticed a tooltip that said Painter has the best price for the requisition coins that Raid Overhaul adds (although I actualy think after converting currencies and how I have y vanilla traders set up, Peacekeeper would still be the better option, but we already talked about that lol). So, it at least works for Painter and Requisition Office added my Raid Overhaul, so I assume it\u2019ll also work just the same for any modded trader added as well as items added by mods. Great job!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 136425,
+   "parent_id": 136265,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-09-10T19:41:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m glad to hear that.</p>\n<p>I\u2019m currently working on a solution for currency conversions. Offers in currencies other than rubles (or at least for EUR and USD) will (hopefully) be converted correctly and displayed in the tooltip in the future. I\u2019ve also installed Couturier and it looks pretty good so far. I hope to have the new version ready by tomorrow.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 136428,
+   "parent_id": 136265,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-09-10T21:28:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>New version is available. You earned a shout-out.</p>\n<p>Edit: You want to set the \u201cCurrency conversion method\u201d in the options to \u201cTraders\u201d which is basically the method you suggested to calculate the sale prices.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 136432,
+   "parent_id": 136265,
+   "author": "Hazode",
+   "author_id": 43969,
+   "author_url": "https://forge.sp-tarkov.com/user/43969/hazode",
+   "created_at": "2025-09-11T00:10:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for the shout out, just downloaded now ready for tomorrow</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 136338,
+   "parent_id": null,
+   "author": "Okumura",
+   "author_id": 59477,
+   "author_url": "https://forge.sp-tarkov.com/user/59477/okumura",
+   "created_at": "2025-09-11T16:43:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is there any way to add the quick-sell and color-coding options from lootvalue into this mod, or were those cut to save overhead? Being able to color-code the values of items was nice for my beginner group of friends (ROYGBIV, red=bad) and the quick-sell options felt intuitive and easier to use compared to some of the other quick-sell options (keybinds are funky, or it asks for sale)</p>\n<p>Either way, I\u2019m glad to have a performance-friendly alternative, even if it doesnt have the bells and whistles I deem necessary. Thanks for the hard work!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 136459,
+   "parent_id": 136338,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-09-11T19:30:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>First of all, thank you for your feedback and kind words!</p>\n<p>Before I go into detail about the two features, I should mention that I originally wrote the mod just for my friends and myself, and we never used the color-coding or quick-sell features of LootValue. I was a little afraid that it would become a topic when releasing the mod here on the Hub. But of course, I understand and am simply honored that people are considering my mod as an alternative to LootValue.</p>\n<p>Color-coding: I will take another look at it and may integrate something similar in future versions of my mod.</p>\n<p>Quick-sell: My friends often try to squeeze every last penny out of everything. So quick sell was out of the question for them \u2013 at least when it came to the flea market. It\u2019s a game in itself: how expensive can I price the item on the virtual flea market before it stops selling? But for a quick glance during a raid, they love the display in the tooltip. I\u2019m considering implementing a quick-sell via a separately installable companion-mod. But I\u2019m not sure yet when and how.</p>\n<p><em>(tldr)<br />\nColor-coding: May come in future versions<br />\nQuick-sell: Maybe comes as a companion-mod for this mod.</em></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 136467,
+   "parent_id": 136338,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-09-11T21:34:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I just had an idea for color coding\u2026 let\u2019s see how it works out. Working on it next.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 136468,
+   "parent_id": 136338,
+   "author": "Okumura",
+   "author_id": 59477,
+   "author_url": "https://forge.sp-tarkov.com/user/59477/okumura",
+   "created_at": "2025-09-11T22:55:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Honestly, if the quick sell *cant* sell to flea, I\u2019d have no issues with it personally. I just don\u2019t want to have to switch between 4-5 different traders just to sell my haul efficiently. (I also disable selling to the flea market, since in my experience it really inflates the players wallet)</p>\n<p>I\u2019m glad you\u2019ve released a mod you made for your own group and continued to bug-fix for it afterwards. You\u2019re certainly not obligated to hear some random guys request for more work but I\u2019m thankful you\u2019re taking a look into it. Cheering ya on mate!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 136713,
+   "parent_id": 136265,
+   "author": "Hazode",
+   "author_id": 43969,
+   "author_url": "https://forge.sp-tarkov.com/user/43969/hazode",
+   "created_at": "2025-09-12T11:16:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The currency conversion works like a dream, I don\u2019t even need to change any settings in the config, worked just fine using the handbook prices! The option to turn it off and on was great as well! Thanks for taking the suggestion my dude, great job!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 136715,
+   "parent_id": 136265,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-09-12T11:24:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Glad to hear that!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 136491,
+   "parent_id": null,
+   "author": "STK",
+   "author_id": 53722,
+   "author_url": "https://forge.sp-tarkov.com/user/53722/stk",
+   "created_at": "2025-09-12T21:12:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi<br />\nFor some reason I can not get this mod to work. I run a dedicated server and have installed both files on that.</p>\n<p>I have then installed the Bepinex files on my client. The CFG file got created as expected but I can not see any prices in the character screen when hovering over any item.</p>\n<p>I do use a few other mods UI Fixes ETC.</p>\n<p>I see this on the client log file a fair bit</p>\n<p>[Error :SwiftXP.SPT.ShowMeTheMoney] An unexpected error occured. Message: Object reference not set to an instance of an object</p>\n<p>Dedicated server shows the mod being loaded with no errors.<br />\nShould I load this mod at very top or bottom I have moved it above and below UIFixes but still the same issue.</p>\n<p>Thank you</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 136738,
+   "parent_id": 136491,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-09-12T21:54:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi. Can you post/attach the entire \u201cLogOutput.log\u201d in the mod support forum? Then I\u2019ll take a look at it.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 136499,
+   "parent_id": null,
+   "author": "LevyK",
+   "author_id": 84571,
+   "author_url": "https://forge.sp-tarkov.com/user/84571/levyk",
+   "created_at": "2025-09-13T04:21:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello, nice mod</p>\n<p>Would love to see an option to only display total values instead of per slot/total to declutter the tooltip.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 136750,
+   "parent_id": 136499,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-09-13T11:12:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi. Thank you for the feedback and kudos.</p>\n<p>I\u2019ll try to integration your request into a future Version.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 136769,
+   "parent_id": 136268,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-09-13T21:23:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I just had the bug in the health condition screen too. I\u2019m almost tempted not to fix it. It\u2019s too funny.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 136781,
+   "parent_id": 136499,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-09-14T12:03:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>A corresponding option now exists in version 1.5.0.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 136782,
+   "parent_id": 136338,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-09-14T12:04:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>There is no quick sell yet, but I have now added a color coding feature in Version 1.5.0. Thanks again for your feedback.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 136547,
+   "parent_id": null,
+   "author": "STK",
+   "author_id": 53722,
+   "author_url": "https://forge.sp-tarkov.com/user/53722/stk",
+   "created_at": "2025-09-14T13:15:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>wow I never expected a shout out thank you.</p>\n<p>But the real star is you mate truly.</p>\n<p>This programming stuff is wizardry to me I tell you it\u2019s all way above my head.</p>\n<p>I shall test this later tonight as not on main pc.</p>\n<p>Thank you</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 136562,
+   "parent_id": null,
+   "author": "Feep",
+   "author_id": 68275,
+   "author_url": "https://forge.sp-tarkov.com/user/68275/feep",
+   "created_at": "2025-09-15T01:33:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>thats what i was looking for especially after loot value started messing up my game! great config too, thanks!</p>\n<p>also just fyi, windows defender flagged your mod as a virus</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 136796,
+   "parent_id": 136562,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-09-15T06:42:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey, Thanks for the kudos!</p>\n<p>Annoying with the false positive, but I\u2019ll link to the Virus-Total result again here: <a href=\"https://www.virustotal.com/gui/file/c25779955deb49fde5f5f8913919c1dc39d0dd781fd6d01fd449a91e622d40e5?nocache=1\" target=\"_blank\" rel=\"noreferrer noopener\">https://www.virustotal.com/gui/file/c25779955deb49fde5f5f8913919c1dc39d0dd781fd6d01fd449a91e622d40e5?nocache=1</a></p>\n<p>Do you happen to still have the information from Defender about why the mod was detected? With that info I could do a submission to Microsoft.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 136812,
+   "parent_id": 136562,
+   "author": "Feep",
+   "author_id": 68275,
+   "author_url": "https://forge.sp-tarkov.com/user/68275/feep",
+   "created_at": "2025-09-15T19:06:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yeah honestly apologies, I should\u2019ve added in the original post I scanned it with virus total and googled what it detected and it was a generic false positive</p>\n<p>I really like your mod! Best config and button to update prices is smart instead of pulling it 100 times a minute</p>\n<p>Heres what defender said:</p>\n<p>Detected: Trojan:Script/Wacatac.B!ml</p>\n<p>Affected Items:</p>\n<p>swiftxp-showmethemoney-1.5.0.zip|<a href=\"https://release-assets.githubusercontent.com/github-production-release-asset/1053326896/244754ef-3ce1-424a-99e6-e50bd05a7ca0?sp=r&amp;sv=2018-11-09&amp;sr=b&amp;spr=https&amp;se=2025-09-15T02%3A16%3A33Z&amp;rscd=attachment%3B+filename%3Dswiftxp-showmethemoney-1.5.0.zip&amp;rsct=application%2Foctet-stream&amp;skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&amp;sktid=398a6654-997b-47e9-b12b-9515b896b4de&amp;skt=2025-09-15T01%3A16%3A19Z&amp;ske=2025-09-15T02%3A16%3A33Z&amp;sks=b&amp;skv=2018-11-09&amp;sig=Npc26pAouL2mH5%2Fx8ZMD%2FxPlzniggeBxDvUW5E8FxG4%3D&amp;jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc1Nzg5OTk0NCwibmJmIjoxNzU3ODk5NjQ0LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.7eDyvSx1fSMPW2C7Gq2bYehi6zWkg6Z7VuqaHPL94zo&amp;response-content-disposition=attachment%3B%20filename%3Dswiftxp-showmethemoney-1.5.0.zip&amp;response-content-type=application%2Foctet-stream%7Cpid:57356,ProcessStart:134023733703281716\" target=\"_blank\" rel=\"noreferrer noopener\">https://release-assets.githubusercontent.com/github-production-release-asset/1053326896/244754ef-3ce1-424a-99e6-e50bd05a7ca0?sp=r&amp;sv=2018-11-09&amp;sr=b&amp;spr=https&amp;se=2025-09-15T02%3A16%3A33Z&amp;rscd=attachment%3B+filename%3Dswiftxp-showmethemoney-1.5.0.zip&amp;rsct=application%2Foctet-stream&amp;skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&amp;sktid=398a6654-997b-47e9-b12b-9515b896b4de&amp;skt=2025-09-15T01%3A16%3A19Z&amp;ske=2025-09-15T02%3A16%3A33Z&amp;sks=b&amp;skv=2018-11-09&amp;sig=Npc26pAouL2mH5%2Fx8ZMD%2FxPlzniggeBxDvUW5E8FxG4%3D&amp;jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc1Nzg5OTk0NCwibmJmIjoxNzU3ODk5NjQ0LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.7eDyvSx1fSMPW2C7Gq2bYehi6zWkg6Z7VuqaHPL94zo&amp;response-content-disposition=attachment%3B%20filename%3Dswiftxp-showmethemoney-1.5.0.zip&amp;response-content-type=application%2Foctet-stream|pid:57356,ProcessStart:134023733703281716</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 136813,
+   "parent_id": 136562,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-09-15T19:42:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks again for the kudos!</p>\n<p>Regarding the false-positive: Unfortunate, seems like I can\u2019t really do something about it. But big thanks for the info. I continue to provide a virus-total result for every release and the source-code is always available on github.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 136585,
+   "parent_id": null,
+   "author": "Prometheus",
+   "author_id": 54216,
+   "author_url": "https://forge.sp-tarkov.com/user/54216/prometheus",
+   "created_at": "2025-09-15T22:24:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>So\u2026 if I\u2019m reading this right, this doesn\u2019t do runtime price checks, e.g. when raids are loaded or items are hovered over - and instead fetches prices in bulk when the client boots up? I strongly prefer that, since I run with the flea market neutered (almost nothing for purchase, and generally just sell to traders). So if it\u2019s all cached and just a clean display layer, or just disabling flea prices entirely (I see there\u2019s a checkbox for that), that\u2019s best case for my group.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 136816,
+   "parent_id": 136585,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-09-15T23:15:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yes, you understood correctly. I myself play without Flea-Market to make it harder for myself and have deactivated the display of Flea-Market prices in my mod while I play my main-char.</p>\n<p>Edit: The color coding is currently based on an analysis of flea market prices that I conducted. It may be that if you restrict the flea market, the color coding makes less sense. I will think about how to solve this. The thresholds are configurable, so you may need to adjust them on your SPT server.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 136817,
+   "parent_id": 136585,
+   "author": "Prometheus",
+   "author_id": 54216,
+   "author_url": "https://forge.sp-tarkov.com/user/54216/prometheus",
+   "created_at": "2025-09-15T23:46:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Awesome. I wonder if there\u2019s a way to get the cheapest item a trader is selling (or 0), and the most expensive item traders sell, and use that for the color grading when the market is disabled. Maybe it\u2019d be possible to scan through the full item DB on server load, particularly if this mod is late in the order (e.g. after mods that add items)? (Edit: or actually I guess load order doesn\u2019t matter if you use the hook system.)</p>\n<p>Maybe of note, I also use Geko\u2019s Better Progression, which changes when items show up for each loyalty level based on \u2018power\u2019: <a href=\"https://hub.sp-tarkov.com/files/file/2773-geko-s-better-progression/#tab_31a71fb207349838ec97a807230688be48f573a0\" target=\"_blank\" rel=\"noreferrer noopener\">https://hub.sp-tarkov.com/files/file/2773-geko-s-better-progression/#tab_31a71fb207349838ec97a807230688be48f573a0</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 136829,
+   "parent_id": 136585,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-09-16T10:00:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for the info. I\u2019ll have to take a closer look at that. Unfortunately, I think it could turn out to be quite a rabbit hole that you could spend a lot of time in.</p>\n<p>I just did a quick and therefore probably not very accurate price analysis (i.e., what would trader X offer in rubles if he were to buy item Y from the player) without flea market and with SPT standard settings, and the following values came out (all price-per-slot):</p>\n<p>Poor &lt; 75</p>\n<p>Common &lt; 1620</p>\n<p>Uncommon &lt; 4950</p>\n<p>Rare &lt; 11650</p>\n<p>Epic &lt; 28000 (Legendary therefore &gt;= 28000)</p>\n<p>The values appear to be quite low, but on the other hand, many items on the flea market are worth significantly more than at traders. I was unable to test the values because I did not have time to do so. So they could be complete non-sense.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 136850,
+   "parent_id": 136268,
+   "author": "ThatDesGuy",
+   "author_id": 38024,
+   "author_url": "https://forge.sp-tarkov.com/user/38024/thatdesguy",
+   "created_at": "2025-09-16T21:51:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Honestly, i think it\u2019s hilarious and should stay.</p>\n<p>Another bug I found is the SETTINGS button has a flea and therapist sell amount apparently</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 137416,
+   "parent_id": 136338,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-09-24T18:23:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>And another update: A quick-sell companion mod is now available <a href=\"https://hub.sp-tarkov.com/files/file/3038-show-me-the-money-quick-sell/\" target=\"_blank\" rel=\"noreferrer noopener\">here</a>.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 137414,
+   "parent_id": null,
+   "author": "thegodofmyopia",
+   "author_id": 84818,
+   "author_url": "https://forge.sp-tarkov.com/user/84818/thegodofmyopia",
+   "created_at": "2025-09-24T18:40:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yo dude, you have a mistake in your 1.5.2 and 1.5.3 package.json:</p>\n<p>\u201cversion\u201d: \u201c1.5.1\u201d,</p>\n<p>Replace please to actual version. Thanks!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 137908,
+   "parent_id": null,
+   "author": "lilithesuccubus",
+   "author_id": 85225,
+   "author_url": "https://forge.sp-tarkov.com/user/85225/lilithesuccubus",
+   "created_at": "2025-10-03T18:28:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi Hi ~ is/will there option to make even prices using different color (i prefer it more instead of colored names) like Loot Value have, but that mod start to be buggy and problematic, spammy for server side. Would be nicer to see actual prices in visible color instead of best seller only or names ^^\nThank you for respond!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 137912,
+   "parent_id": 137908,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-10-03T19:14:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>First of all, thank you for the feedback! :)</p>\n<p>To be honest, I didn\u2019t want to just copy the way LootValue does colour coding, in respect to IhanaMies, so I came up with the idea of colour-coding the names of the items. But I\u2019ll see what I can do. But it may take a while. I don\u2019t have much time for private projects, like the mod, at the moment.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 137987,
+   "parent_id": null,
+   "author": "acefinka",
+   "author_id": 85122,
+   "author_url": "https://forge.sp-tarkov.com/user/85122/acefinka",
+   "created_at": "2025-10-05T07:50:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Love your mod, by any chance you could make it so it shows the total value of a gun + its attachments? That\u2019d make it just so perfect\nLove the work, you got this</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 137994,
+   "parent_id": 137987,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-10-05T10:59:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi, thank you for the kind words. :)\nIt\u2019s been on the list for a while. I\u2019ll have to see when I can get around to implementing it.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 138183,
+   "parent_id": 137908,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-10-08T18:36:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi again. The color coding you wished for is available in version 1.7.0 now. Have fun!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 138185,
+   "parent_id": 137908,
+   "author": "lilithesuccubus",
+   "author_id": 85225,
+   "author_url": "https://forge.sp-tarkov.com/user/85225/lilithesuccubus",
+   "created_at": "2025-10-08T19:06:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Actually love it! :D Thank you for fast update. ^^</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 138219,
+   "parent_id": 137987,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-10-09T12:03:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I took another look at how LootValue implements this, and I\u2019m not satisfied with it myself because it changes the flea market value in such a way that, although a better value for the weapon may be displayed, you usually can\u2019t sell the weapon for the displayed value because it\u2019s often much too high. I have another idea and wanted to ask what you think of it. I display the value of the mods installed on the weapon in a separate line:</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/swiftxp-hub/spt-show-me-the-money/refs/heads/main/Assets/weapon-mods-preview.png\" alt=\"Preview Weapon-Mods\" /></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 138225,
+   "parent_id": 137987,
+   "author": "acefinka",
+   "author_id": 85122,
+   "author_url": "https://forge.sp-tarkov.com/user/85122/acefinka",
+   "created_at": "2025-10-09T17:24:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hell yeah that is even better, you\u2019re the goat dude, can\u2019t wait for the update</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 138226,
+   "parent_id": 137987,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-10-09T17:33:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Many thanks! &lt;3</p>\n<p>I\u2019m going on holiday for a few days on Sunday. I\u2019ll see if I can get it done by then. Otherwise, it will probably be the weekend after next.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 138227,
+   "parent_id": 137987,
+   "author": "acefinka",
+   "author_id": 85122,
+   "author_url": "https://forge.sp-tarkov.com/user/85122/acefinka",
+   "created_at": "2025-10-09T17:45:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Gotchu, you take care!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 138240,
+   "parent_id": 137908,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-10-09T20:33:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2025-10-09 21:12:12]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 138241,
+   "parent_id": 137987,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-10-09T21:12:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I found some time this evening after all. It\u2019s integrated into version 1.8.0. Enjoy!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 138242,
+   "parent_id": 137987,
+   "author": "acefinka",
+   "author_id": 85122,
+   "author_url": "https://forge.sp-tarkov.com/user/85122/acefinka",
+   "created_at": "2025-10-09T21:19:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Oh hell yeah you\u2019re the best man, enjoy your holiday!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 138246,
+   "parent_id": 137987,
+   "author": "Prometheus",
+   "author_id": 54216,
+   "author_url": "https://forge.sp-tarkov.com/user/54216/prometheus",
+   "created_at": "2025-10-09T22:23:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>So just to clarify, before this release, the price shown for weapons was its base price without mods; and with the new version, there are two lines, one for base price (same as before) and one for weapon mods independently? I feel like I\u2019d generally just prefer to know the total / combined price, with an option to show them as separate (for other folks I guess, since I\u2019d personally never use the mod-only price).</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 138247,
+   "parent_id": 137987,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-10-09T22:47:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yes, the base price of the weapon will continue to be shown as in older versions, followed by the total price for all mods (in the new line) without the base price of the weapon.</p>\n<p>I also tested adding the price of the mods to the base price of the weapon and also tested adding up only the price of all mods without the base price of the weapon for the flea-price (as LootValue does, for example), but this gives the false impression that you can sell the weapon for this price on the Flea Market, which was not the case in many of my tests as the price was much higher due to the mods. For example, I took two base AK-74N. One I sold for the base price (~40k). The other one I modded a little bit and tried to sell it for the price of installed mods (~280k). The modded AK-74N was not purchased for this price. I did more tests with the same result and that\u2019s why I\u2019ve now decided to go this route. Of course, it may be that I made a mistake during testing; I don\u2019t want to rule that out. Ultimately, I just want to make sure that the price shown is the price at which the item will actually sell for in the end. For the new line I thought to myself: Hey, you basically want to know if expensive mods are installed on the weapon. What\u2019s the easiest way to tell?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 138254,
+   "parent_id": null,
+   "author": "ancientmako",
+   "author_id": 85525,
+   "author_url": "https://forge.sp-tarkov.com/user/85525/ancientmako",
+   "created_at": "2025-10-10T07:05:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>nice mod!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 138309,
+   "parent_id": null,
+   "author": "LightoftheWorld",
+   "author_id": 21928,
+   "author_url": "https://forge.sp-tarkov.com/user/21928/lightoftheworld",
+   "created_at": "2025-10-11T02:24:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Absolutely love the mod. Noticed one tiny thing. It tries to show the sell price at the end of raid screen when hovering over damage you took in the medical screen. Super small thing, otherwise fantastic mod.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 138345,
+   "parent_id": 138309,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-10-11T10:57:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for your Feedback &lt;3</p>\n<p>The bug is known. I still don\u2019t know if I want to fix it. It became a running joke with my friends and me. :D</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 138373,
+   "parent_id": 138254,
+   "author": "ancientmako",
+   "author_id": 85525,
+   "author_url": "https://forge.sp-tarkov.com/user/85525/ancientmako",
+   "created_at": "2025-10-11T19:14:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>well, it has the same crash and ssl error like LootValue</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 138374,
+   "parent_id": 138254,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-10-11T19:23:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Do you have any logs I can look at? SSL errors are not necessarily related to the mod. For example, my friends and I also had regular SSL errors, and disabling IPv6 on our VServer, we use for SPT, solved this problem, at least for us.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 138741,
+   "parent_id": null,
+   "author": "lex_murden",
+   "author_id": 85364,
+   "author_url": "https://forge.sp-tarkov.com/user/85364/lex-murden",
+   "created_at": "2025-10-15T09:11:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2025-10-21 03:14:01]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 139209,
+   "parent_id": null,
+   "author": "lex_murden",
+   "author_id": 85364,
+   "author_url": "https://forge.sp-tarkov.com/user/85364/lex-murden",
+   "created_at": "2025-10-19T00:42:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2025-10-21 03:13:58]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 139214,
+   "parent_id": null,
+   "author": "0nepunchm4n",
+   "author_id": 85923,
+   "author_url": "https://forge.sp-tarkov.com/user/85923/0nepunchm4n",
+   "created_at": "2025-10-19T01:34:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>&lt;3 THANK YOU!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 139262,
+   "parent_id": null,
+   "author": "fengchin",
+   "author_id": 51860,
+   "author_url": "https://forge.sp-tarkov.com/user/51860/fengchin",
+   "created_at": "2025-10-19T14:10:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Would it be possible for me to share this mod and \u201cQuick-Sell\u201c on ODDBA? Since accessing this website can be quite difficult from China, and ODDBA is a platform authorized by SPT. Thank you so much!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 139263,
+   "parent_id": 139262,
+   "author": "fengchin",
+   "author_id": 51860,
+   "author_url": "https://forge.sp-tarkov.com/user/51860/fengchin",
+   "created_at": "2025-10-19T14:11:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Your mod is incredibly convenient!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 139275,
+   "parent_id": 139262,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-10-19T15:47:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi, basically OK for me as long as the mod continues to be offered free of charge to everyone. And I can\u2019t provide support.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 139463,
+   "parent_id": null,
+   "author": "turfish",
+   "author_id": 63286,
+   "author_url": "https://forge.sp-tarkov.com/user/63286/turfish",
+   "created_at": "2025-10-20T22:23:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p><del>Just letting you know, it doesnt seem to have support for the RShG Rocket Launcher, as in it doesn\u2019t show the price for it for traders!</del></p>\n<p>Otherwise, good mod, real good</p>\n<p>I have just realised that traders cant actually buy them, so that\u2019d be why it doesnt have a price. Sorry lol!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 139479,
+   "parent_id": 139262,
+   "author": "fengchin",
+   "author_id": 51860,
+   "author_url": "https://forge.sp-tarkov.com/user/51860/fengchin",
+   "created_at": "2025-10-21T05:34:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>That\u2019s for sure. Thank you for your contribution.(<em>^\u25bd^</em>)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 139756,
+   "parent_id": null,
+   "author": "lhj920119",
+   "author_id": 202,
+   "author_url": "https://forge.sp-tarkov.com/user/202/lhj920119",
+   "created_at": "2025-10-23T08:49:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It is recommended to change the price update method to occur after each raid ends, or to add a shortcut button for updating the flea market prices. After multiple raids, the flea market prices may change significantly, causing listed items to be unsellable.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 139809,
+   "parent_id": 139756,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-10-23T18:38:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Could you give me a specific example, an item I can look up? Have you installed Live Flea Prices by DrakiaXYZ?</p>\n<p>Basically, my mod already has a feature that updates flea market prices every 5 minutes (unless you\u2019re in a raid, in which case it will only update again after the raid).</p>\n<p>Items with high price fluctuations in the live flea market can sometimes lead to inaccurate price displays.</p>\n<p>Thanks for your feedback!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 139863,
+   "parent_id": 139756,
+   "author": "lhj920119",
+   "author_id": 202,
+   "author_url": "https://forge.sp-tarkov.com/user/202/lhj920119",
+   "created_at": "2025-10-24T04:57:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I saw your reply about market prices in Show Me The Money - Quick-Sell; it should be just as you said.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 139962,
+   "parent_id": null,
+   "author": "traxx2012",
+   "author_id": 86589,
+   "author_url": "https://forge.sp-tarkov.com/user/86589/traxx2012",
+   "created_at": "2025-10-24T20:05:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey, I noticed that the displayed prices are almost always higher than what\u2019s actually in my flea (sometimes significantly). For example, I tried selling some compensator for the 110k this mod showed, because there were no offers I could base my price off of. Later, there were offers - for 20k.\nI <em>had</em> Live Flea Prices installed, but removed it a while ago \u2026 so I don\u2019t think that\u2019s a likely cause for this.\nSince I don\u2019t see many mentions of something like that here, it\u2019s probably a skill issue on my end, but do you have any concrete idea where I could start searching for causes?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 139975,
+   "parent_id": 139962,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-10-24T22:23:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>That\u2019s unfortunate to hear. If there are no flea market offers available, the mod assumes the base price defined by SPT. However, there are currently some issues with the base price in versions 4.0.0 and 4.0.1, at least when the SPT server has just been started. But that doesn\u2019t really explain why the price displayed is so high and then later the flea market prices are significantly lower.</p>\n<p>I\u2019m currently ill\u2026 I\u2019ll have to think about it when I\u2019m feeling better, but right now I don\u2019t have any ideas. I\u2019m waiting for SPT 4.0.2 to be released, which fixes the base-price issue when the SPT server is started. I already have a new version of the mod ready for 4.0.2.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 139983,
+   "parent_id": 139962,
+   "author": "traxx2012",
+   "author_id": 86589,
+   "author_url": "https://forge.sp-tarkov.com/user/86589/traxx2012",
+   "created_at": "2025-10-25T01:02:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I had a quick look over the mod\u2019s code and while I have no idea about SPT modding, it <em>seems</em> to me like we\u2019re working off of the item\u2019s base price (I might be dead wrong, which would render the rest of this comment moot). Maybe a more accurate representation of potential profit could be achieved by using the current lowest offer price, combined with caching it for if there are no current sales and only falling back to the base price if no data is available at all (possibly indicated with a \u201c~\u201d to mark it as an estimate).\nI don\u2019t want to intrude on your project and again, it might just be a stupid config or mod conflict on my end, but those were a few things that came to mind.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 140226,
+   "parent_id": 139962,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-10-26T22:23:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Don\u2019t worry, I don\u2019t take it personally/don\u2019t mind you looking at my code. :) Try the new version 2.1.0 and see if it delivers better results for you. I\u2019m also working on a solution for items with high price fluctuations when using the LiveFleaPrices mod. But that will take some time, as I\u2019m still ill at the moment.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 140605,
+   "parent_id": 139962,
+   "author": "traxx2012",
+   "author_id": 86589,
+   "author_url": "https://forge.sp-tarkov.com/user/86589/traxx2012",
+   "created_at": "2025-10-29T20:15:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Sorry for the late reply; I didn\u2019t and can\u2019t update yet (but within the next days, hopefully), because I\u2019m using a custom-built sync-and-wrapper/launcher to make playing fika with my friends less of a hassle for them. That thing needs to be able to update SPT in order to use the new version of your mod, which includes updating fika, which should use their installer. However, that installer was built in a way that prohibited me from using it from within my launcher, so I first had to submit a pull request to their installer and wait for it to make it to release and <em>now</em> I can start building the update logic \ud83d\ude02\nSo yeah, I\u2019ll report back within the next days, hopefully.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 140640,
+   "parent_id": 139962,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-10-30T00:33:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>That sounds interesting. I\u2019m curious to see if you\u2019ll make it available on Forge. I\u2019d be interested.</p>\n<p>I just released version 2.2.0 to (hopefully) better display items with high price fluctuations.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 140645,
+   "parent_id": 139962,
+   "author": "traxx2012",
+   "author_id": 86589,
+   "author_url": "https://forge.sp-tarkov.com/user/86589/traxx2012",
+   "created_at": "2025-10-30T00:45:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Although I\u2019d like to, it\u2019s unlikely to happen. The most useful part of the sync is the automatic setting of the server IP for everyone\u2019s launcher. That <em>needs</em> some control server reachable via a static address, so at least some cheap vserver or RasPi behind DynDNS. Chances are, anyone who already has that ready would also use DynDNS or something similar to expose their host on a non-changing address (I can\u2019t expose my machine like that for not-very-common reasons).</p>\n<p>If I find a webservice that accepts POST requests and returns the same data on GET, while also providing at least basic authentication, I\u2019ll remodel this for the general public. Without such a service however, it would be almost as clunky to use as keeping everything aligned manually.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 140649,
+   "parent_id": null,
+   "author": "d3adgh0st99",
+   "author_id": 87584,
+   "author_url": "https://forge.sp-tarkov.com/user/87584/d3adgh0st99",
+   "created_at": "2025-10-30T01:46:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>That mod is awesome. I used LootValue beforehand, and switched into this most likely because the faster update and the better look. However it can be confusing. If flea market is locked behind a higher level and I can\u2019t access it just yet, the flea price is still shown and I think it would be better to hide it. I use SVM to lock the flea market above level 50 and LootValue showed only the trader price in that case.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 140651,
+   "parent_id": 140649,
+   "author": "traxx2012",
+   "author_id": 86589,
+   "author_url": "https://forge.sp-tarkov.com/user/86589/traxx2012",
+   "created_at": "2025-10-30T01:55:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I agree that hiding the flea price if the flea isn\u2019t unlocked would be a sensible config option to add, but I also wanna throw in that this can help make decisions about what to hang on to and what to sell. Doesn\u2019t change your point or make the possible option less useful, just a thought I had.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 140675,
+   "parent_id": 140649,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-10-30T11:23:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I will add such an option in the next version. And thank you for the nice words!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 140678,
+   "parent_id": 140649,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-10-30T14:01:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I released v2.3.0 with the corresponding changes. Have fun playing! :)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 140716,
+   "parent_id": 140649,
+   "author": "d3adgh0st99",
+   "author_id": 87584,
+   "author_url": "https://forge.sp-tarkov.com/user/87584/d3adgh0st99",
+   "created_at": "2025-10-30T21:02:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you &lt;3</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 141352,
+   "parent_id": null,
+   "author": "Akihane",
+   "author_id": 88396,
+   "author_url": "https://forge.sp-tarkov.com/user/88396/akihane",
+   "created_at": "2025-11-06T07:28:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>A small request: I would like to add a binding key to disable and enable the price display function at any time.The reason for this request is that in the post-death healing interface, when I hover my mouse over the fatal head wound, a bug occurs: it not only shows that a bullet hit my head, but also displays the price of the bullet (or perhaps head protection gear?), which is absurd.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 141397,
+   "parent_id": null,
+   "author": "bandedemongs",
+   "author_id": 87646,
+   "author_url": "https://forge.sp-tarkov.com/user/87646/bandedemongs",
+   "created_at": "2025-11-06T14:43:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It doesn\u2019t work with Fika\u2026 :(</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 141410,
+   "parent_id": 141397,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-11-06T16:40:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I can assure you that my mod works with FIKA. Please check again that the mod is installed correctly.\n<a href=\"https://wiki.sp-tarkov.com/en/Installing_Mods\" target=\"_blank\" rel=\"noreferrer noopener\">https://wiki.sp-tarkov.com/en/Installing_Mods</a> (this wiki article applies to SPT 4.0)</p>\n<p>You can also get support in the Fika Discord (<a href=\"https://www.project-fika.com/discord\" target=\"_blank\" rel=\"noreferrer noopener\">https://www.project-fika.com/discord</a>). Please do not ask for support in the SPT Discord if you have Fika installed.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 141411,
+   "parent_id": 141352,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-11-06T16:41:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I am aware of the bug, and it seems to occur more frequently than I thought. I think I know how to fix it and will try to do so in the next version.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 141452,
+   "parent_id": 141352,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-11-06T22:21:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I released version 2.4.0 with a potential fix for this bug. Have fun! :)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 141462,
+   "parent_id": null,
+   "author": "Drglord",
+   "author_id": 78097,
+   "author_url": "https://forge.sp-tarkov.com/user/78097/drglord",
+   "created_at": "2025-11-06T23:08:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I think you broke the flea market values for everything that goes into the scav junk box with your latest update</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 141463,
+   "parent_id": 141462,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-11-06T23:14:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Will investige immediately.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 141464,
+   "parent_id": 141462,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-11-06T23:18:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You\u2019re right. I am sorry. I removed 2.4.0 from the forge. And thanks for letting me know so fast!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 141465,
+   "parent_id": null,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-11-06T23:24:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2025-11-10 20:01:09]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 141510,
+   "parent_id": 141352,
+   "author": "Akihane",
+   "author_id": 88396,
+   "author_url": "https://forge.sp-tarkov.com/user/88396/akihane",
+   "created_at": "2025-11-07T07:25:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you for your contribution to the community. As I said, is it possible that my little shortcut request could be implemented?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 141560,
+   "parent_id": null,
+   "author": "Drglord",
+   "author_id": 78097,
+   "author_url": "https://forge.sp-tarkov.com/user/78097/drglord",
+   "created_at": "2025-11-07T14:28:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Also as you work on 2.4.0 It appears when i dissasemble a gun the price of the receiver and parts go up for reason. Selling whole gun was 400K after i dissasembled it the main part receiver and trigger were selling for 800K. Thanks for the all the work.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 141562,
+   "parent_id": 141560,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-11-07T14:36:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks. That\u2019s indeed strange. Seems like 2.4.0 really wasn\u2019t ready for release. :-/</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 141610,
+   "parent_id": 141560,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-11-07T19:48:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I need to clarify this: has the price of the weapon changed? Unfortunately, it is not unusual for individual parts to be so expensive, especially when using Live Flea Prices. The displayed price for the weapon, even if it no longer has any parts, is always the base price for the weapon, and the SPT flea market does not currently take the parts into account as far as I know (this will probably change with SPT 4.1.0).</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 141758,
+   "parent_id": null,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-11-08T19:45:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2025-11-10 20:01:05]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 142232,
+   "parent_id": 139962,
+   "author": "traxx2012",
+   "author_id": 86589,
+   "author_url": "https://forge.sp-tarkov.com/user/86589/traxx2012",
+   "created_at": "2025-11-11T16:18:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Sorry for the late update, I couldn\u2019t get into the game for a while.</p>\n<p>On the current version, I noticed some items being quite accurate (IFAK: displayed 69k, average est. 71k), but most items (by far) show quite around double of what\u2019s the actual price. It doesn\u2019t seem to really be <em>consistent</em>, in that it would always multiply the correct value by some constant amount, but it does seem to affect the vast majority of items.</p>\n<p>Some examples, randomly picked from stuff I had (format: SMTM Tooltip - actual min price - actual avgerage):</p>\n<ul>\n<li>RayBench 55.9k - 25.6k - 29.0k</li>\n<li>Wartech TV-109+TV-106: 72.9k - 34.3k - 37.9k</li>\n<li>AK MOE grip: 52k - 27k - 27k</li>\n<li>Wartech TV-110: 207k - 189k - 189k (only 1 existing offer)</li>\n</ul>\n<p>I\u2019m still kinda certain something in my specific setup broke SMTM, but I have no idea on what it could have been\u2026</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 142245,
+   "parent_id": 139962,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-11-11T17:36:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>That is indeed a bit strange. I double checked on my two test instances (one with live-flea-prices and one without) and the items (RayBench, AK MOE, etc.) look fine. Here are a few points that maybe can help you:</p>\n<ul>\n<li>Ensure that you use the latest SPT 4.0.4 version with SMTM 2.5.0. There was a hotfix released on 11/08/2025: <a href=\"https://github.com/sp-tarkov/build/releases/tag/4.0.4\" target=\"_blank\" rel=\"noreferrer noopener\">https://github.com/sp-tarkov/build/releases/tag/4.0.4</a></li>\n<li>When using Server Value Modifier - have a look at your preset. Maybe you changed something in the flea-market configuration that could explain it.</li>\n<li>Try reseting the config of SMTM. Quickest is to delete \\BepInEx\\config\\com.swiftxp.spt.showmethemoney.cfg.</li>\n</ul>\n<p>Otherwise, you can also post the list of your installed client- and server-mods here. Then I can see if I can observe the same effect on my test instances.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 142391,
+   "parent_id": null,
+   "author": "ace1101",
+   "author_id": 89129,
+   "author_url": "https://forge.sp-tarkov.com/user/89129/ace1101",
+   "created_at": "2025-11-12T23:50:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi! Just want to mention me and my friends really like this mod and enjoy how helpful it is for trying to sell items! That being said, recently I set up a FIKA Headless server and the tool only showed trader prices and not flea prices even if I manually changed the F12 menu config setting. I went against the rules and downloaded the SPT folder to my headless server and that got the flea market prices to start showing up again. I am also using this mod with the Live Flea Prices.</p>\n<p>In particular when I didn\u2019t have this downloaded to my headless server the client would make a request for the price which would go unhandled by the server. This may be due to some configuration I have or something but still wanted to mention it in case anyone else has a similar problem. Again, great mod and have really enjoyed it!</p>\n<p>Also, if you want me to delete this let me know.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 142394,
+   "parent_id": 142391,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-11-13T00:09:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>First of all, thank you for the feedback! :)</p>\n<p>I think/hope there\u2019s just a little confusion here regarding the names and terminology.</p>\n<p>There are basically three components which you can have with SPT/FIKA:</p>\n<ul>\n<li>The SPT server (required)</li>\n<li>The SPT client (required), which is basically an EFT-Instance with the SPT-Client-mod installed.</li>\n<li>A FIKA Headless client (optional)</li>\n</ul>\n<p>The SPT server and SPT client require the mod to be installed (along with the corresponding files) to show flea prices. The FIKA Headless Client, however, usually does not require the mod to be installed.</p>\n<p>I\u2019m guessing you mean an SPT server on which the FIKA mod is installed? If so, then yes \u2014 the server component of my mod must be installed.</p>\n<p>The FIKA Headless Client is typically an EFT instance that handles hosting a raid without graphical output.</p>\n<p>Now that it\u2019s working, I think you\u2019re fine. :)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 142520,
+   "parent_id": null,
+   "author": "Eddy7.62",
+   "author_id": 86673,
+   "author_url": "https://forge.sp-tarkov.com/user/86673/eddy762",
+   "created_at": "2025-11-13T20:10:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>cant use doors Fika+Show Me The Money</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 142525,
+   "parent_id": 142520,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-11-13T20:43:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It\u2019s not impossible, but I seriously doubt that my mod is the cause of this, as it doesn\u2019t interact with FIKA or the doors in any way. Please check your other installed mods and make sure they\u2019re updated. The FIKA Discord is also a great place to seek support.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 142727,
+   "parent_id": 142391,
+   "author": "ace1101",
+   "author_id": 89129,
+   "author_url": "https://forge.sp-tarkov.com/user/89129/ace1101",
+   "created_at": "2025-11-15T21:42:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I understand now! I forgot that BepInEx and the SPT/user/mods folders correspond to client and server respectively. In my head I was thinking of the server and headless client as one unit but I see the error of my way now. Thanks for the clarification!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 142729,
+   "parent_id": 142391,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-11-15T21:48:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You\u2019re welcome! :)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 143328,
+   "parent_id": null,
+   "author": "Farvatron",
+   "author_id": 18387,
+   "author_url": "https://forge.sp-tarkov.com/user/18387/farvatron",
+   "created_at": "2025-11-20T18:02:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>an interesting issue ive found is in SPT 4.0.4, when using 2.5.0 version of this mod in conjunction with the live flea prices 2.0.1 mod, the prices of some things get a little\u2026 wild. of course, disabling live flea prices returns everything to almost normal (still a bit on the pricey side, but reasonable and certainly not THIS expensive)</p>\n<p><a href=\"https://i.imgur.com/EoNGK6e.png\" target=\"_blank\" rel=\"noreferrer noopener\">https://i.imgur.com/EoNGK6e.png</a></p>\n<p>dont know if this is something worth looking into, or if i just go without live flea prices until the time i update SPT</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 143330,
+   "parent_id": 143328,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-11-20T18:25:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi, thanks for the feedback. The prices on the live flea market are currently crazy due to the wipe and the recent flea market changes on Tarkov 1.0. As you can see, the Can of Beef Stew (Small) is indeed around 1.6 million at the moment (whilst we are writing here):</p>\n<p><a href=\"https://tarkov.dev/item/can-of-beef-stew-small\" target=\"_blank\" rel=\"noreferrer noopener\">https://tarkov.dev/item/can-of-beef-stew-small</a></p>\n<p>I recommend playing without Live Flea Prices for now until things settle down a bit.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 143334,
+   "parent_id": 143328,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-11-20T18:38:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I want to add that the Live Flea Prices Mod uses the tarkov.dev API, which is why it shows the Can of Beef Stew at 1.6 million. Other sites, like tarkov-market.com, may display different prices because they update at different intervals or use different data points.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 143339,
+   "parent_id": 143328,
+   "author": "Farvatron",
+   "author_id": 18387,
+   "author_url": "https://forge.sp-tarkov.com/user/18387/farvatron",
+   "created_at": "2025-11-20T19:12:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>well that\u2019s surprising. i guess i was using an inaccurate source without realising it! had no idea things were that crazy on live. thanks for the reply, though! glad to know nothing actually broken xD</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 143620,
+   "parent_id": null,
+   "author": "spencerj",
+   "author_id": 91286,
+   "author_url": "https://forge.sp-tarkov.com/user/91286/spencerj",
+   "created_at": "2025-11-23T11:49:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>EDIT: Nevermind I just checked the addons tab!</p>\n<p>Thank you so much! This mod is a life saver. I suggest adding a keybind to auto-sell to the best vendor/auto list on flea. Thanks again!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 144662,
+   "parent_id": null,
+   "author": "bandedemongs",
+   "author_id": 87646,
+   "author_url": "https://forge.sp-tarkov.com/user/87646/bandedemongs",
+   "created_at": "2025-12-02T21:56:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2025-12-03 18:25:40]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 144814,
+   "parent_id": null,
+   "author": "sttyj6",
+   "author_id": 20224,
+   "author_url": "https://forge.sp-tarkov.com/user/20224/sttyj6",
+   "created_at": "2025-12-04T08:02:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello mod developer! Thank you so much for your mod. However, I\u2019ve encountered an issue: with version 2.5.3 of the mod, the in-game item prices displayed are significantly higher than those on the Flea Market. When I sell the items, I receive rubles based on the price shown by the mod, not the Flea Market price. But when I use version 2.2.0 of the mod, the item prices displayed are normal. Could you please explain what\u2019s causing this discrepancy?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 144828,
+   "parent_id": 144814,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-12-04T10:49:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi there!<br />\nIn version 2.2.0 of my mod, the flea market showed the average price of each item. Starting with 2.5.0 (and newer), the mod now displays the price that has a 100% chance of selling on the flea market (or at least close to 100%). On a standard SPT setup with default settings, experience shows that this \u201c100% price\u201d is usually just a bit higher than the average price. We\u2019re talking only a few percent difference usually.</p>\n<p>To help you out more effectively, I\u2019ll need some examples:</p>\n<ul>\n<li>Item name</li>\n<li>Displayed price</li>\n<li>Expected price</li>\n</ul>\n<p>(The more details, the better!)</p>\n<p>Also let me know:</p>\n<ul>\n<li>If you\u2019re running any mods that might affect flea market prices (e.g. Live Flea Prices Mod)</li>\n<li>Whether you\u2019ve changed any flea market settings e.g. via SVM (like the base sell chance).</li>\n</ul>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 144855,
+   "parent_id": 144814,
+   "author": "sttyj6",
+   "author_id": 20224,
+   "author_url": "https://forge.sp-tarkov.com/user/20224/sttyj6",
+   "created_at": "2025-12-04T14:38:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi there! Thank you so much for replying to my comment. After testing, it turns out exactly as you said\u2014I had SVM installed and enabled some flea market settings. Once I turned those settings off, the selling prices went back to normal. Thanks again for your mod and all the hard work you\u2019ve put in!\nWishing you all the best in everything you do!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 144890,
+   "parent_id": 144814,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-12-04T16:48:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Glad you tracked it down! Settings can really change how prices show up. Really appreciate your kind words. Thanks for that, and enjoy the game!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 144903,
+   "parent_id": null,
+   "author": "minsabin-sxet2",
+   "author_id": 93305,
+   "author_url": "https://forge.sp-tarkov.com/user/93305/minsabin-sxet2",
+   "created_at": "2025-12-04T18:38:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello, I\u2019m using this mode and edon well. Is there a possibility that there will be a null of money when using this mode edon? My profile is like that now, and I was wondering if this mode is a problem.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 144911,
+   "parent_id": 144903,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2025-12-04T19:41:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m sorry to hear that. Since the Quick-Sell Addon handles money transactions, I can\u2019t rule it out with absolute certainty, but the likelihood is very low. In fact, this would be the very first time I\u2019ve heard of such an issue in connection with the Quick-Sell Addon. At the moment, I can\u2019t think of any way to verify this. However, you might be able to recover your money using the Command Bots from SPT (that\u2019s what I would do right now):</p>\n<p><a href=\"https://wiki.sp-tarkov.com/SPT_and_Commando_Bots\" target=\"_blank\" rel=\"noreferrer noopener\">https://wiki.sp-tarkov.com/SPT_and_Commando_Bots</a></p>\n<p>spt give 5449016a4bdc2d6f028b456f the-amount-of-roubles-you-lost</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 144966,
+   "parent_id": 144903,
+   "author": "minsabin-sxet2",
+   "author_id": 93305,
+   "author_url": "https://forge.sp-tarkov.com/user/93305/minsabin-sxet2",
+   "created_at": "2025-12-05T03:02:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you for your reply. Maybe it\u2019s a problem in another mode. I thought it was the cause of a bug when selling it as Addon in this mode.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 145853,
+   "parent_id": null,
+   "author": "takasama",
+   "author_id": 45095,
+   "author_url": "https://forge.sp-tarkov.com/user/45095/takasama",
+   "created_at": "2025-12-12T04:53:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi swiftxp:) really likes ur mod. Is it possible to add item background colour?I tried ODT but always got small problems</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 146762,
+   "parent_id": null,
+   "author": "lex_murden",
+   "author_id": 85364,
+   "author_url": "https://forge.sp-tarkov.com/user/85364/lex-murden",
+   "created_at": "2025-12-22T03:00:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>do you think you might at some point implement background-coloring? \u201cODT\u2019s Item Info\u201d does that but it uses an opaque way of determining the item\u2019s value.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 146833,
+   "parent_id": null,
+   "author": "Foxxee",
+   "author_id": 32981,
+   "author_url": "https://forge.sp-tarkov.com/user/32981/foxxee",
+   "created_at": "2025-12-23T02:50:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m out of the loop but what happened to the quicksell addon to this?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 146972,
+   "parent_id": null,
+   "author": "Suntion",
+   "author_id": 85431,
+   "author_url": "https://forge.sp-tarkov.com/user/85431/suntion",
+   "created_at": "2025-12-25T05:20:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello, while implementing a quick purchase feature in my mod, I\u2019ve been frequently using your mod\u2019s quick sell function to sell the purchased items. However, I noticed that my funds are depleting too quickly\u2014my mod buys items at 300,000 per slot, but due to the low average market prices, selling them quickly results in severe losses.</p>\n<p>I then identified an issue:</p>\n<p>For example, a helmet equipped with a night vision device worth over 200,000 is being sold by your current mod based solely on the helmet\u2019s base market price of only ~7,000. As a result, the entire equipped item (valued at over 200,000) gets sold for just ~7,000.</p>\n<p>Could you please enhance your mod so that when an item has attached slots (i.e., additional modules or attachments), it handles the non-built-in-slot components separately\u2014ensuring their value is properly accounted for during quick sales?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 148998,
+   "parent_id": null,
+   "author": "ImABabyElephant",
+   "author_id": 75630,
+   "author_url": "https://forge.sp-tarkov.com/user/75630/imababyelephant",
+   "created_at": "2026-01-04T21:49:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Latest version is dropping the following error..  spt4.0.11 and latest fika.</p>\n<p>[Client Request] /client/game/bot/generate\nError handling request: /showMeTheMoney/getFleaPrices\n.NET number values such as positive and negative infinity cannot be written as valid JSON. To make it work when using \u2018JsonSerializer\u2019, consider specifying \u2018JsonNumberHandling.AllowNamedFloatingPointLiterals\u2019 (see <a href=\"https://learn.microsoft.com/dotnet/api/system.text.json.serialization.jsonnumberhandling\" target=\"_blank\" rel=\"noreferrer noopener\">https://learn.microsoft.com/dotnet/api/system.text.json.serialization.jsonnumberhandling</a>).\nat System.Text.Json.ThrowHelper.ThrowArgumentException_ValueNotSupported()\nat System.Text.Json.Serialization.JsonConverter<code>1.TryWrite(Utf8JsonWriter writer, T&amp; value, JsonSerializerOptions options, WriteStack&amp; state) at System.Text.Json.Serialization.Converters.DictionaryDefaultConverter</code>3.OnWriteResume(Utf8JsonWriter writer, TDictionary value, JsonSerializerOptions options, WriteStack&amp; state)\nat System.Text.Json.Serialization.JsonDictionaryConverter<code>3.OnTryWrite(Utf8JsonWriter writer, TDictionary dictionary, JsonSerializerOptions options, WriteStack&amp; state) at System.Text.Json.Serialization.JsonConverter</code>1.TryWrite(Utf8JsonWriter writer, T&amp; value, JsonSerializerOptions options, WriteStack&amp; state)\nat System.Text.Json.Serialization.JsonConverter<code>1.WriteCore(Utf8JsonWriter writer, T&amp; value, JsonSerializerOptions options, WriteStack&amp; state) at System.Text.Json.Serialization.Metadata.JsonTypeInfo</code>1.Serialize(Utf8JsonWriter writer, T&amp; rootValue, Object rootValueBoxed)\nat System.Text.Json.JsonSerializer.WriteString[TValue](TValue&amp; value, JsonTypeInfo<code>1 jsonTypeInfo) at SPTarkov.Server.Core.Utils.JsonUtil.Serialize[T](T obj, Boolean indented) at SwiftXP.SPT.ShowMeTheMoney.Server.ShowMeTheMoneyStaticRouter.GetFleaPrices() at SwiftXP.SPT.ShowMeTheMoney.Server.ShowMeTheMoneyStaticRouter.&lt;&gt;c.&lt;&lt;GetRoutes&gt;b__4_0&gt;d.MoveNext() --- End of stack trace from previous location --- at SPTarkov.Server.Core.DI.StaticRouter.HandleStatic(String url, String body, MongoId sessionId, String output) at SPTarkov.Server.Core.Routers.HttpRouter.HandleRoute(HttpRequest request, MongoId sessionID, ResponseWrapper wrapper, IEnumerable</code>1 routers, Boolean dynamic, String body)\nat SPTarkov.Server.Core.Routers.HttpRouter.GetResponse(HttpRequest req, MongoId sessionID, String body)\nat FikaServer.Overrides.Routers.GetResponseOverride.Postfix(ValueTask`1 __result, HttpRequest req)\nat SPTarkov.Server.Core.Servers.Http.SptHttpListener.GetResponse(MongoId sessionId, HttpContext context, String body)\nat SPTarkov.Server.Core.Servers.Http.SptHttpListener.Handle(MongoId sessionId, HttpContext context)\nat SPTarkov.Server.Core.Servers.HttpServer.HandleRequest(HttpContext context, RequestDelegate next)\nat SPTarkov.Server.Program.&lt;&gt;c.&lt;&lt;ConfigureWebApp&gt;b__3_0&gt;d.MoveNext()\n\u2014 End of stack trace from previous location \u2014\nat SPTarkov.Server.Services.NoGCRegionMiddleware.InvokeAsync(HttpContext context)\nat SPTarkov.Server.Logger.SptLoggerMiddleware.InvokeAsync(HttpContext context)\n[Client Request] /client/game/bot/generate</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 149000,
+   "parent_id": 148998,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2026-01-04T22:17:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi. I am on vacation right know. Will look into it when I return upcoming weekend.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 149165,
+   "parent_id": 148998,
+   "author": "poopcummers",
+   "author_id": 100645,
+   "author_url": "https://forge.sp-tarkov.com/user/100645/poopcummers",
+   "created_at": "2026-01-06T05:16:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>im getting the exact same error</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 149296,
+   "parent_id": null,
+   "author": "spencerj",
+   "author_id": 91286,
+   "author_url": "https://forge.sp-tarkov.com/user/91286/spencerj",
+   "created_at": "2026-01-07T03:42:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Mod appears incompatible with Advanced Flea Simulator mod. It bases sell chance off of offer location in flea market (eg cheapest offer is at top and expensive offers at bottom). Prices from SMTM &amp; QuickSell are usually more expensive than the most expensive flea offer leading to many expired offers.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 149320,
+   "parent_id": null,
+   "author": "spencerj",
+   "author_id": 91286,
+   "author_url": "https://forge.sp-tarkov.com/user/91286/spencerj",
+   "created_at": "2026-01-07T09:56:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Somehow I can sell an item for negative roubles! See the image: <a href=\"https://ibb.co/dsY9k6Tf\" target=\"_blank\" rel=\"noreferrer noopener\">https://ibb.co/dsY9k6Tf</a></p>\n<p>Although I do have \u201cinclude flea tax on\u201d, this item (worth about 1k roubles) contains another item inside itself which is worth 80k. So, the return should be ~81k minus a few thousand for tax. Instead it\u2019s just doing the 1k-tax to calculate.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 149422,
+   "parent_id": 148998,
+   "author": "zSnakebyte",
+   "author_id": 34228,
+   "author_url": "https://forge.sp-tarkov.com/user/34228/zsnakebyte",
+   "created_at": "2026-01-08T06:05:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>me too. It wasn\u2019t happening until i cleared my temp files if that\u2019s of any help. I am also not on fika</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 150120,
+   "parent_id": null,
+   "author": "DrParanoia",
+   "author_id": 87084,
+   "author_url": "https://forge.sp-tarkov.com/user/87084/drparanoia",
+   "created_at": "2026-01-14T11:53:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello! Is this mod compatible with \u201cMoreCheckmarks\u201d? It seems that \u201cMoreCheckmarks\u201d is overriding the tooltips, so the sell price information is not there :(.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 150121,
+   "parent_id": null,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2026-01-14T12:06:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m currently very busy. I\u2019ll try to continue working on this mod in the coming weeks. Right now, I don\u2019t have any time, but don\u2019t worry - the mod is not abandoned. :)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 150127,
+   "parent_id": 150121,
+   "author": "DrParanoia",
+   "author_id": 87084,
+   "author_url": "https://forge.sp-tarkov.com/user/87084/drparanoia",
+   "created_at": "2026-01-14T14:01:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Oh man, no pressure! Just pointing it out, thanks a lot for your contribution to the community! &lt;3</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 150193,
+   "parent_id": 150121,
+   "author": "DrParanoia",
+   "author_id": 87084,
+   "author_url": "https://forge.sp-tarkov.com/user/87084/drparanoia",
+   "created_at": "2026-01-14T23:13:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Wow\u2026I am really sorry, but turns out I am just an idiot :D I never actually copied the mod to BepInEx folder, only SPT\u2026</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 150335,
+   "parent_id": 150120,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2026-01-16T19:49:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello there. I saw your other comment about the missing \u2018BepInEx\u2019 directory. It\u2019s amazing how the universe starts making sense once the right folders actually exist. Glad to hear it\u2019s sorted. :)</p>\n<p>Just for the benefit of any other humans (or intelligent shades of the color blue) passing by: Yes, my mod is fully compatible with \u2018MoreCheckmarks\u2019. I\u2019ve just tested it with SPT 4.0.11 and MoreCheckmarks 2.1.0, and they are cooperating peacefully. Enjoy your game! :)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 150336,
+   "parent_id": 145853,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2026-01-16T19:52:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi. Thank you for the kind words; they are much appreciated.. I\u2019m currently pondering whether this is feasibly possible. I\u2019m aware that ODT alters item background colors in its own peculiar way (on the server side), and I\u2019m not entirely sure if I can convince my mod to do something quite like that, given that it reacts dynamically to the ever-shifting whims of Flea Market prices. I shall give it some thought.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 150337,
+   "parent_id": 146762,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2026-01-16T19:53:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi. I\u2019m currently pondering whether this is feasibly possible. I\u2019m aware that ODT alters item background colors in its own peculiar way (on the server side), and I\u2019m not entirely sure if I can convince my mod to do something quite like that, given that it reacts dynamically to the ever-shifting whims of Flea Market prices. I shall give it some thought.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 150339,
+   "parent_id": 146833,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2026-01-16T19:56:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It still exists. It has simply migrated to the \u2018Addon\u2019 tab. Here is a link to the addon: <a href=\"https://forge.sp-tarkov.com/addon/1/quick-sell\" target=\"_blank\" rel=\"noreferrer noopener\">https://forge.sp-tarkov.com/addon/1/quick-sell</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 150343,
+   "parent_id": 146972,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2026-01-16T20:01:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for pointing that out. I already had a nagging suspicion that helmets would cause trouble for my implementation. I shall investigate and try to convince them to behave more logically. Stay tuned.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 150345,
+   "parent_id": 148998,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2026-01-16T20:03:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for the heads-up. I shall attempt to replicate this. I haven\u2019t encountered any errors on a fresh SPT 4.0.11 installation, but I have yet to test it against the latest version of FIKA. I will do my level best to track down the glitch in the machinery.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 150346,
+   "parent_id": 149296,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2026-01-16T20:05:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for the heads-up. I will do my level best to track down the glitch in the machinery.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 150347,
+   "parent_id": 149320,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2026-01-16T20:05:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for the heads-up. I will do my level best to track down the glitch in the machinery.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 150352,
+   "parent_id": 148998,
+   "author": "zSnakebyte",
+   "author_id": 34228,
+   "author_url": "https://forge.sp-tarkov.com/user/34228/zsnakebyte",
+   "created_at": "2026-01-16T21:01:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey, I just wanted to let you know that I tried doing some trouble shooting of my own a few days ago. I documented some stuff in the spt discord, under mod questions 4.0. I hope some of that maybe help! I use the same username in discord btw.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 150488,
+   "parent_id": 148998,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2026-01-17T22:50:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2026-01-17 23:01:43]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 150514,
+   "parent_id": null,
+   "author": "TRN9799",
+   "author_id": 70100,
+   "author_url": "https://forge.sp-tarkov.com/user/70100/trn9799",
+   "created_at": "2026-01-18T10:06:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Error handling request: /showMeTheMoney/getFleaPrices\n.NET number values such as positive and negative infinity cannot be written as valid JSON. To make it work when using \u2018JsonSerializer\u2019, consider specifying \u2018JsonNumberHandling.AllowNamedFloatingPointLiterals\u2019 (see <a href=\"https://learn.microsoft.com/dotnet/api/system.text.json.serialization.jsonnumberhandling\" target=\"_blank\" rel=\"noreferrer noopener\">https://learn.microsoft.com/dotnet/api/system.text.json.serialization.jsonnumberhandling</a>).\nat System.Text.Json.ThrowHelper.ThrowArgumentException_ValueNotSupported()\nat System.Text.Json.Serialization.JsonConverter<code>1.TryWrite(Utf8JsonWriter writer, T&amp; value, JsonSerializerOptions options, WriteStack&amp; state) at System.Text.Json.Serialization.Converters.DictionaryDefaultConverter</code>3.OnWriteResume(Utf8JsonWriter writer, TDictionary value, JsonSerializerOptions options, WriteStack&amp; state)\nat System.Text.Json.Serialization.JsonDictionaryConverter<code>3.OnTryWrite(Utf8JsonWriter writer, TDictionary dictionary, JsonSerializerOptions options, WriteStack&amp; state) at System.Text.Json.Serialization.JsonConverter</code>1.TryWrite(Utf8JsonWriter writer, T&amp; value, JsonSerializerOptions options, WriteStack&amp; state)\nat System.Text.Json.Serialization.JsonConverter<code>1.WriteCore(Utf8JsonWriter writer, T&amp; value, JsonSerializerOptions options, WriteStack&amp; state) at System.Text.Json.Serialization.Metadata.JsonTypeInfo</code>1.Serialize(Utf8JsonWriter writer, T&amp; rootValue, Object rootValueBoxed)\nat System.Text.Json.JsonSerializer.WriteString[TValue](TValue&amp; value, JsonTypeInfo<code>1 jsonTypeInfo) at SPTarkov.Server.Core.Utils.JsonUtil.Serialize[T](T obj, Boolean indented) at SwiftXP.SPT.ShowMeTheMoney.Server.ShowMeTheMoneyStaticRouter.GetFleaPrices() at SwiftXP.SPT.ShowMeTheMoney.Server.ShowMeTheMoneyStaticRouter.&lt;&gt;c.&lt;&lt;GetRoutes&gt;b__4_0&gt;d.MoveNext() --- End of stack trace from previous location --- at SPTarkov.Server.Core.DI.StaticRouter.HandleStatic(String url, String body, MongoId sessionId, String output) at SPTarkov.Server.Core.Routers.HttpRouter.HandleRoute(HttpRequest request, MongoId sessionID, ResponseWrapper wrapper, IEnumerable</code>1 routers, Boolean dynamic, String body)\nat SPTarkov.Server.Core.Routers.HttpRouter.GetResponse(HttpRequest req, MongoId sessionID, String body)\nat SPTarkov.Server.Core.Servers.Http.SptHttpListener.GetResponse(MongoId sessionId, HttpContext context, String body)\nat SPTarkov.Server.Core.Servers.Http.SptHttpListener.Handle(MongoId sessionId, HttpContext context)\nat SPTarkov.Server.Core.Servers.HttpServer.HandleRequest(HttpContext context, RequestDelegate next)\nat SPTarkov.Server.Program.&lt;&gt;c.&lt;&lt;ConfigureWebApp&gt;b__3_0&gt;d.MoveNext()\n\u2014 End of stack trace from previous location \u2014\nat SPTarkov.Server.Services.NoGCRegionMiddleware.InvokeAsync(HttpContext context)\nat SPTarkov.Server.Logger.SptLoggerMiddleware.InvokeAsync(HttpContext context)</p>\n<p>I\u2019m getting this error on the SPT server. Is this okay?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 150548,
+   "parent_id": 150514,
+   "author": "Spatulalegs",
+   "author_id": 65675,
+   "author_url": "https://forge.sp-tarkov.com/user/65675/spatulalegs",
+   "created_at": "2026-01-19T01:26:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I have this error and I did make sure to install it all properly</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 150689,
+   "parent_id": 150514,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2026-01-20T16:17:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Please install v2.5.4, which I just released. Also, check if you have the \u2018Impractical Tactical\u2019 mod installed. It recently received a hotfix to address this issue (see the pinned comment in the mod\u2019s comment section): <a href=\"https://forge.sp-tarkov.com/mod/2495/impractical-tactical#comments-comment-150491\" target=\"_blank\" rel=\"noreferrer noopener\">https://forge.sp-tarkov.com/mod/2495/impractical-tactical#comments-comment-150491</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 150690,
+   "parent_id": 148998,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2026-01-20T16:17:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Please install v2.5.4, which I just released. Also, check if you have the \u2018Impractical Tactical\u2019 mod installed. It recently received a hotfix to address this issue (see the pinned comment in the mod\u2019s comment section): <a href=\"https://forge.sp-tarkov.com/mod/2495/impractical-tactical#comments-comment-150491\" target=\"_blank\" rel=\"noreferrer noopener\">https://forge.sp-tarkov.com/mod/2495/impractical-tactical#comments-comment-150491</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 150710,
+   "parent_id": 150514,
+   "author": "Spatulalegs",
+   "author_id": 65675,
+   "author_url": "https://forge.sp-tarkov.com/user/65675/spatulalegs",
+   "created_at": "2026-01-20T18:25:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>oh I do have that mod installed thanks :) I didn\u2019t even think about that haha I have so many custom item mods</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 150768,
+   "parent_id": null,
+   "author": "paul",
+   "author_id": 45463,
+   "author_url": "https://forge.sp-tarkov.com/user/45463/paul",
+   "created_at": "2026-01-21T14:48:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>a must have. good work. cheers</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 150769,
+   "parent_id": 150514,
+   "author": "paul",
+   "author_id": 45463,
+   "author_url": "https://forge.sp-tarkov.com/user/45463/paul",
+   "created_at": "2026-01-21T14:50:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>must be a mod you have. go one by one to find the mod. i have over 70mods installed and had zero issues with this mod. ran instantly. so its on your end most definitely</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151520,
+   "parent_id": null,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2026-01-30T23:29:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>If you need support, feel free to comment here or visit my support thread in the #mod-releases channel on the Fika Discord.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151751,
+   "parent_id": 146972,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2026-02-02T16:34:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi! I finally had a chance to look into this. The flea market simulation in SPT still has some gaps in certain areas. For example, an \u201cNVG strap\u201d on its own is worth ~112k on the flea market. However, if I attach an \u201cN-15\u201d night vision device (flea market value ~176k) to that strap, you cannot sell the combined unit for the total price of both parts on the flea market.</p>\n<p>In other words, if I try to sell the NVG strap with the N-15 attached for ~228k, SPT only sees the base item (the strap) and will set the sale probability for that high price to nearly 0%. Consequently, the NVG strap with night vision for ~228k simply won\u2019t sell. I also did some tests with some helmets and attachments.</p>\n<p>My mod mirrors this behavior and only displays the price at which the item is guaranteed (100% chance) to sell. I can\u2019t rule out that my mod might not perfectly replicate SPT\u2019s logic in every single case, but I always strive to reflect the current SPT integration. For weapons, for instance, SPT is now capable of factoring attachments into the flea market price, and my mod reflects that as well.</p>\n<p>I\u2019m considering adding a note to the tooltip to indicate whether the displayed flea market price refers only to the base item or to the item combination.</p>\n<p>Thanks again for your feedback!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 151786,
+   "parent_id": null,
+   "author": "SaShMaSh",
+   "author_id": 56624,
+   "author_url": "https://forge.sp-tarkov.com/user/56624/sashmash",
+   "created_at": "2026-02-03T07:44:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I have some trouble with version 2.7.0. The game don\u2019t started, but on previous version all OK.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151791,
+   "parent_id": null,
+   "author": "volg3n",
+   "author_id": 90540,
+   "author_url": "https://forge.sp-tarkov.com/user/90540/volg3n",
+   "created_at": "2026-02-03T08:35:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>2.7.0 is hanging on login screen without the addon version 2.3.0 installed ;)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151793,
+   "parent_id": 151786,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2026-02-03T09:04:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m sorry to hear that. Could you please share the contents of the following log files on Discord (preferably in my support thread on the Fika Discord) or via a service like pastes.io when this happens? (they might be too long for the comments here)</p>\n<ul>\n<li><strong>BepinEx:</strong> <code>[game folder]\\BepinEx\\LogOutput.log</code></li>\n<li><strong>Client:</strong> <code>[game folder]\\Logs\\log&lt;date&gt;&lt;version&gt;\\&lt;date&gt;_&lt;version&gt; traces.log</code></li>\n<li><strong>Server:</strong> <code>[game folder]\\SPT\\user\\logs\\spt\\spt[yyyymmdd].log</code></li>\n</ul>\n<p>Revert to version 2.6.0 if you want to get back into the raid as quickly as possible.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151794,
+   "parent_id": 151791,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2026-02-03T09:31:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I can\u2019t tell if you\u2019re teasing me with that ;) or if it\u2019s a real report! :D</p>\n<p><em>If you\u2019re joking:</em> You caught me. It\u2019s my latest marketing move: no addon, no service! ;)</p>\n<p><em>On a serious note:</em> That is definitely strange. Could you please share your logs with me when this happens? It\u2019s best to post them in my support thread on the Fika Discord or via pastes.io, as they might be too long for the comments here:</p>\n<ul>\n<li><strong>BepinEx:</strong> <code>[game folder]\\BepinEx\\LogOutput.log</code></li>\n<li><strong>Client:</strong> <code>[game folder]\\Logs\\log&lt;date&gt;&lt;version&gt;\\&lt;date&gt;_&lt;version&gt; traces.log</code></li>\n<li><strong>Server:</strong> <code>[game folder]\\SPT\\user\\logs\\spt\\spt[yyyymmdd].log</code></li>\n</ul>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151795,
+   "parent_id": null,
+   "author": "volg3n",
+   "author_id": 90540,
+   "author_url": "https://forge.sp-tarkov.com/user/90540/volg3n",
+   "created_at": "2026-02-03T09:49:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Sorry for the not too accurate comment, 2.7.0 works without the addon, but you mentioned in the update that 2.3.0 version required if you would like to use the addon. Everything is working fine ;)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 151798,
+   "parent_id": 151795,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2026-02-03T10:20:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Aaaaahhh. :D</p>\n<p>Thanks for the feedback! I see how the \u2018ATTENTION\u2019 block might have looked like a mandatory requirement for everyone. It was only meant as a compatibility warning for those who actually use the addon. I changed the text a bit to be (hopefully) less confusing. Happy playing!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151801,
+   "parent_id": null,
+   "author": "xyp2325442084",
+   "author_id": 100541,
+   "author_url": "https://forge.sp-tarkov.com/user/100541/xyp2325442084",
+   "created_at": "2026-02-03T11:39:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>4.11\u7248\u672c\u5ba2\u6237\u7aef\u7528\u4e0d\u4e862.6\u548c2.7\u66f4\u65b0\u7684\u7269\u54c1\u5b9a\u4ef7\uff0c\u4f46\u662f2.5.4\u7248\u672c\u53ef\u4ee5\u6b63\u5e38\u4f7f\u7528\n[Show Me The Money] Unknown route: /showMeTheMoney/getDynamicPriceTable\n[\u672a\u5904\u7406][/showMeTheMoney/getDynamicPriceTable]\n[\u5ba2\u6237\u7aef\u8bf7\u6c42] /showMeTheMoney/getDynamicPriceTable\n[Show Me The Money] Unknown route: /showMeTheMoney/getDynamicPriceTable\n[\u672a\u5904\u7406][/showMeTheMoney/getDynamicPriceTable]\n[\u5ba2\u6237\u7aef\u8bf7\u6c42] /showMeTheMoney/getDynamicPriceTable\n[Show Me The Money] Unknown route: /showMeTheMoney/getDynamicPriceTable\n[\u672a\u5904\u7406][/showMeTheMoney/getDynamicPriceTable]\n[\u5ba2\u6237\u7aef\u8bf7\u6c42] /showMeTheMoney/getDynamicPriceTable\n[Show Me The Money] Unknown route: /showMeTheM</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151804,
+   "parent_id": 151801,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2026-02-03T12:43:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi. The route \u201c/showMeTheMoney/getDynamicPriceTable\u201d hasn\u2019t actually been used by my mod for a while now. Did you upgrade from an old SPT version (3.11) to 4.11 or something? The most likely reason here is that mismatched versions are installed.</p>\n<p>Please check that the latest version of my mod is installed on both the client and the server and ensure that no old versions are still present. Refer to the \u201cSPT 4.x INSTALLATION\u201d section in the mod description to see which files should exist. If you find any additional DLLs containing \u201c<em>.showmethemoney.</em>\u201d other than the ones listed there, please remove them.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151878,
+   "parent_id": 151801,
+   "author": "xyp2325442084",
+   "author_id": 100541,
+   "author_url": "https://forge.sp-tarkov.com/user/100541/xyp2325442084",
+   "created_at": "2026-02-04T02:35:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>\u60a8\u597d\uff0c\u6211\u662f\u76f4\u63a5\u4e0b\u8f7d\u76844.11\u7248\u672c\u5ba2\u6237\u7aef\uff0c\u4e4b\u524d\u7684\u6ca1\u6709\u4e0b\u8f7d\u8fc7\uff0c\u6211\u5df2\u7ecf\u89e3\u51b3\u4e86\uff0c\u539f\u56e0\u662f\u548c\u7a81\u88ad\u663e\u793a\u6a21\u7ec4\u51b2\u7a81\uff0cquickprice\u6a21\u7ec4\u4e2d\u663e\u793a\u7684\u5b9e\u65f6\u8df3\u86a4\u5e02\u573a\u4e0e\u8be5\u6a21\u7ec4\u7684\u9759\u6001\u8df3\u86a4\u4ef7\u683c\u51b2\u7a81\uff0c\u51fa\u73b0\u7684\u5361\u987f\uff0c\u5df2\u7ecf\u89e3\u51b3\u4e86\uff0c\u8c22\u8c22</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 152058,
+   "parent_id": null,
+   "author": "Meinders",
+   "author_id": 103035,
+   "author_url": "https://forge.sp-tarkov.com/user/103035/meinders",
+   "created_at": "2026-02-06T06:21:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you for your work with this mod! I have some custom weapon mods and they all work pretty well with this mod, but for some reason, the Peacekeeper revolver shows the tooltip of selling for 16k, while it actually sells for 130k. Is there a way to add support for custom weapons like this on my end? Thank you!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 152061,
+   "parent_id": null,
+   "author": "d3adgh0st99",
+   "author_id": 87584,
+   "author_url": "https://forge.sp-tarkov.com/user/87584/d3adgh0st99",
+   "created_at": "2026-02-06T10:15:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I believe the mod uses a host based function to display the sell prices in-raid, because my friends cannot see them only me as their host. Outside raids they can see them though.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 152063,
+   "parent_id": 152058,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2026-02-06T10:32:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi. Thanks for the Feedback. Which mod added this revolver? The chances of you being able to add support locally yourself are slim (unless, of course, you create your own fork of my mod). If I know which mod it is, I can take a look at some point to see why it seems to be causing problems.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 152064,
+   "parent_id": 152061,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2026-02-06T10:43:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>My mod communicates directly with the SPT server, not with the raid host. Because of this, both you and your friends should be able to see the price tooltips even while in a raid.</p>\n<p>It is very unusual that they can see the prices in the menus but not during the actual raid. To help figure out what\u2019s going on, please ask your friends to check their logs for any errors that appear during the raid:</p>\n<ul>\n<li>BepinEx: [game folder]\\BepinEx\\LogOutput.log</li>\n<li>Client: [game folder]\\Logs\\log&lt;date&gt;_ traces.log</li>\n<li>Server: [game folder]\\SPT\\user\\logs\\spt\\spt[yyyymmdd].log</li>\n</ul>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 152066,
+   "parent_id": 152061,
+   "author": "d3adgh0st99",
+   "author_id": 87584,
+   "author_url": "https://forge.sp-tarkov.com/user/87584/d3adgh0st99",
+   "created_at": "2026-02-06T11:42:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for your quick reply. I might just check the modpack first to make sure I didn\u2019t miss any file.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 152713,
+   "parent_id": null,
+   "author": "Automatic",
+   "author_id": 104107,
+   "author_url": "https://forge.sp-tarkov.com/user/104107/automatic",
+   "created_at": "2026-02-12T02:18:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I cannot for the life of me get this mod to work. I think its because of ODT\u2019s Item Info - SPT 4.0. I really just want the price per slot option. Does it not work with the 4.0?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 152731,
+   "parent_id": 152713,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2026-02-12T09:19:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi. ODT\u2019s Item Info and my mod are indeed compatible. Please double-check that my mod is installed correctly (see <code>SPT 4.X INSTALLATION</code> in the mod description). Please ensure you do not use WinRAR or Windows (the built-in ZIP feature) to extract the files. 7-Zip is the recommended tool. If the issue persists, please check the following logs for errors. It\u2019s best to post them in my support thread on the Fika Discord or here in the comments (via pastes.io):</p>\n<ul>\n<li>BepInEx: [game folder]\\BepInEx\\LogOutput.log</li>\n<li>Client: [game folder]\\Logs\\log_<em>&lt;date&gt;</em>_traces.log</li>\n<li>Server: [game folder]\\user\\logs\\server.log</li>\n</ul>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 152774,
+   "parent_id": 152713,
+   "author": "Automatic",
+   "author_id": 104107,
+   "author_url": "https://forge.sp-tarkov.com/user/104107/automatic",
+   "created_at": "2026-02-12T20:26:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I would put the files in discord but for some reason when i click the link to join it asks for my username and password which Ive never seen discord do before.</p>\n<p><a href=\"https://codepaste.sp-tarkov.com/?505d0bef1ee06d8b#DWQqMfQ4rDTZYiirxKsDkSSV4o7pwPph9qNHGQauBBFF\" target=\"_blank\" rel=\"noreferrer noopener\">https://codepaste.sp-tarkov.com/?505d0bef1ee06d8b#DWQqMfQ4rDTZYiirxKsDkSSV4o7pwPph9qNHGQauBBFF</a></p>\n<p><a href=\"https://codepaste.sp-tarkov.com/?49a64ee13c2f507c#41TURHd8dBRwezqGyEacVNusvACRGw6MBt7QpBsxX8bd\" target=\"_blank\" rel=\"noreferrer noopener\">https://codepaste.sp-tarkov.com/?49a64ee13c2f507c#41TURHd8dBRwezqGyEacVNusvACRGw6MBt7QpBsxX8bd</a></p>\n<p><a href=\"https://codepaste.sp-tarkov.com/?b4b7bcf6ce09d8a7#GakKEfZKL8Hjk5BXtFuWSzpTHvugNY4sFYoWvdbUiQGU\" target=\"_blank\" rel=\"noreferrer noopener\">https://codepaste.sp-tarkov.com/?b4b7bcf6ce09d8a7#GakKEfZKL8Hjk5BXtFuWSzpTHvugNY4sFYoWvdbUiQGU</a></p>\n<p>looks like it loads fine, its enabled in f12 just nothing happens.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 152776,
+   "parent_id": 152713,
+   "author": "swiftxp",
+   "author_id": 84437,
+   "author_url": "https://forge.sp-tarkov.com/user/84437/swiftxp",
+   "created_at": "2026-02-12T20:43:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for the logs. This is actually a bit tricky right now. I can see that the client plugin is loading successfully, and the server logs show that the request for \u2018/showMeTheMoney/getFleaPrices\u2019 is appearing regularly. At this point, I can only recommend trying the 50/50 method: <a href=\"https://wiki.sp-tarkov.com/en/5050-method\" target=\"_blank\" rel=\"noreferrer noopener\">https://wiki.sp-tarkov.com/en/5050-method</a></p>\n<p>I\u2019ll see if I can find some time over the weekend to install the same mods you\u2019re using and test it myself. Currently, I suspect another mod might be preventing mine from modifying the item tooltip. I don\u2019t think it\u2019s ODT\u2019s Item Info. I just tested it, and it worked fine on my end.</p>\n<p>Sorry that I can\u2019t offer more help right now. Let\u2019s see what I can find out over the weekend.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 152778,
+   "parent_id": 152713,
+   "author": "Automatic",
+   "author_id": 104107,
+   "author_url": "https://forge.sp-tarkov.com/user/104107/automatic",
+   "created_at": "2026-02-12T20:51:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>No rush. If your bored and wanna take a look its appreciated but definitely dont feel obligated. Ill try removing some mods and see which one it is as well.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 153174,
+   "parent_id": null,
+   "author": "V1per",
+   "author_id": 100753,
+   "author_url": "https://forge.sp-tarkov.com/user/100753/v1per",
+   "created_at": "2026-02-17T18:39:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Why did I install this mod and see it loaded in the server logs, but it doesn\u2019t work in the game?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 154283,
+   "parent_id": null,
+   "author": "Evergreen",
+   "author_id": 21313,
+   "author_url": "https://forge.sp-tarkov.com/user/21313/evergreen",
+   "created_at": "2026-03-06T10:52:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Any way to increase the font size? For me even the normal sized font is too small.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 154335,
+   "parent_id": null,
+   "author": "Exodus5324",
+   "author_id": 99048,
+   "author_url": "https://forge.sp-tarkov.com/user/99048/exodus5324",
+   "created_at": "2026-03-07T01:41:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi, I seem to have found a bug. The trader(s) to ignore option only works for the current session. When I restart, the name is still in the text field, but anyone (vanilla or modded [using the VAFELZ ammo trader]) still shows up as the best trader until I go into the field and change any character (like adding or deleting a comma). If this turns out to be more complicated and others report that it is not replicable I\u2019ll send logs.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 154963,
+   "parent_id": null,
+   "author": "EGF",
+   "author_id": 106702,
+   "author_url": "https://forge.sp-tarkov.com/user/106702/egf",
+   "created_at": "2026-03-17T03:00:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>now I can\u2019t live without your mod\u2026I won\u2019t have headache trying resite every price of thousands craps .The quicksell  saves my hand from cramp for selling ervery item one by one(it cooperates well with UIFix).and way you talk is so intersting(\uff89\u2267\u2200\u2266)\uff89</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 155827,
+   "parent_id": null,
+   "author": "TheRealMarine",
+   "author_id": 52219,
+   "author_url": "https://forge.sp-tarkov.com/user/52219/therealmarine",
+   "created_at": "2026-03-31T09:22:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The mod makes no sense for me. I have no idea what price it shows. For example, F-1 Grenades are between 13k and 16k roubles, altough the mod shows a price of 31k roubles. Multiplicand setting is set to 1.0</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 160311,
+   "parent_id": null,
+   "author": "lunaticdanni1705",
+   "author_id": 1913,
+   "author_url": "https://forge.sp-tarkov.com/user/1913/lunaticdanni1705",
+   "created_at": "2026-05-20T01:24:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>performance become worst on specific map when ever i install this mod until i remove it from my mod list idk why</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 163605,
+   "parent_id": null,
+   "author": "AntinomyZeus",
+   "author_id": 114292,
+   "author_url": "https://forge.sp-tarkov.com/user/114292/antinomyzeus",
+   "created_at": "2026-06-21T10:14:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p><a href=\"https://codepaste.sp-tarkov.com/?893685f6d1fe7fe1#2fwVdRRRVMRyfwDDJ8xw5fvda217dykcdhzRAwfnSioH\" target=\"_blank\" rel=\"noreferrer noopener\">https://codepaste.sp-tarkov.com/?893685f6d1fe7fe1#2fwVdRRRVMRyfwDDJ8xw5fvda217dykcdhzRAwfnSioH</a>\nI don\u2019t know what happened.\nThis occured when I was stuck in the main menu without any items and just the loading circle bottom right corner stayed. I want to know if the mod causes the problem or the problem causes its spam.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 163876,
+   "parent_id": null,
+   "author": "just_baron",
+   "author_id": 116775,
+   "author_url": "https://forge.sp-tarkov.com/user/116775/just-baron",
+   "created_at": "2026-06-23T09:50:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>When i load the game, SPT console (not using FIKA) says in orange text:\n\u201c\u0422\u043e\u0440\u0433\u043e\u0432\u0435\u0446: 638f541a29ffd1183d187f57 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d, \u0441\u043e\u0437\u0434\u0430\u0435\u0442\u0441\u044f \u0432\u0440\u0435\u043c\u0435\u043d\u043d\u0430\u044f \u043f\u043e\u0437\u0438\u0446\u0438\u044f \u0441\u043e \u0441\u0442\u0430\u043d\u0434\u0430\u0440\u0442\u043d\u044b\u043c \u0432\u0440\u0435\u043c\u0435\u043d\u0435\u043c \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u044f: 3600\u201d\n\u201cTrader: 638f541a29ffd1183d187f57 not found, creating temporary position with standard update time: 3600\u201d\nThis is Lightkeeper trader. I haven\u2019t play so far and it\u2019s fresh profile install.</p>\n<p>I\u2019ve found that this mod causes this notification. I don\u2019t know if it\u2019s safe, but i don\u2019t want to risk running in issue with Lightkeeper later. What should i do?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 164023,
+   "parent_id": null,
+   "author": "ivancr28",
+   "author_id": 52375,
+   "author_url": "https://forge.sp-tarkov.com/user/52375/ivancr28",
+   "created_at": "2026-06-24T21:13:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi everyone, I have a problem: when I\u2019m modifying a weapon, it doesn\u2019t show me the price of each accessory when I hover over it, unlike in the inventory.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 165578,
+   "parent_id": null,
+   "author": "shales",
+   "author_id": 117655,
+   "author_url": "https://forge.sp-tarkov.com/user/117655/shales",
+   "created_at": "2026-07-07T04:28:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2026-07-07 13:15:50]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 166170,
+   "parent_id": null,
+   "author": "\u674e\u6b63",
+   "author_id": 86248,
+   "author_url": "https://forge.sp-tarkov.com/user/86248/user-86248",
+   "created_at": "2026-07-13T12:09:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>\u4f60\u597d\u6211\u662f\u4e00\u4f4d\u4e2d\u56fd\u7684\u670b\u53cb\u5f88\u611f\u8c22\u4f60\u7684 mod \u4f46\u662f\u6211\u53d1\u73b0\u9f20\u6807\u653e\u5728\u7269\u54c1\u663e\u793a\u7684\u4ef7\u683c\u548c\u8df3\u86a4\u7684\u7269\u54c1\u4ef7\u683c\u76f8\u5dee\u5f88\u5927\u4e5f\u53ef\u4ee5\u8bf4\u5b8c\u5168\u4e0d\u51c6\u786e\u4f46\u662f\u6211\u53c8\u4e0d\u77e5\u9053\u95ee\u9898\u5230\u5e95\u51fa\u5728\u54ea\u91cc</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 167221,
+   "parent_id": null,
+   "author": "Wolf_Vantage",
+   "author_id": 112269,
+   "author_url": "https://forge.sp-tarkov.com/user/112269/wolf-vantage",
+   "created_at": "2026-07-20T23:04:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This is how EFT should be by default. Must have mod!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 167952,
+   "parent_id": null,
+   "author": "Zack",
+   "author_id": 39709,
+   "author_url": "https://forge.sp-tarkov.com/user/39709/zack",
+   "created_at": "2026-07-25T17:31:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It seems like this is somewhat incompatible with the Vagabond mod. since traders are locked to certain extracts it only shows you the pricing of the trader from the last extract you took. and if you leave from somewhere that has no traders at all then no prices will show what-so-ever</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

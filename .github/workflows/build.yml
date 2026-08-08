@@ -1,0 +1,64 @@
+name: Validate and build
+
+# Pull requests only get the validation half: a contributor should find out
+# their submission is malformed in seconds, without waiting for a full build.
+# Pushes to the default branch rebuild and publish the site.
+on:
+  pull_request:
+    paths:
+      - "community/**"
+      - "build/**"
+  push:
+    branches: [omega]      # this repo's default branch
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate community submissions
+        run: python3 build/community.py
+
+      - name: Build the site
+        run: python3 build/build.py
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: site/
+          retention-days: 7
+
+  publish:
+    needs: validate
+    if: github.event_name == 'push' && github.ref == 'refs/heads/omega'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build the site
+        run: python3 build/build.py
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/
+      - id: deploy
+        uses: actions/deploy-pages@v4

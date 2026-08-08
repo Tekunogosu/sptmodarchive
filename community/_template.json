@@ -1,0 +1,36 @@
+{
+  "_comment": [
+    "Copy this file to <your-mod-slug>.json and fill it in.",
+    "The slug must be lowercase words separated by hyphens, and the filename",
+    "must match it: a mod called 'My Cool Mod' lives in my-cool-mod.json.",
+    "Fields marked optional can be deleted entirely rather than left blank.",
+    "Validate before opening a pull request:  python3 build/community.py",
+    "Any key starting with an underscore is ignored, including this one."
+  ],
+
+  "name": "My Cool Mod",
+  "slug": "my-cool-mod",
+  "authors": ["YourName", "ACollaborator"],
+  "teaser": "One sentence describing what the mod does. Shown in the mod list.",
+
+  "source_links": [
+    { "url": "https://github.com/you/my-cool-mod", "label": "" }
+  ],
+
+  "category": "weapons",
+  "fika": "unknown",
+  "spt_constraint": "~4.1.0",
+  "version": "1.0.0",
+
+  "_optional": "everything below this line can be removed",
+  "description_html": "<p>A longer description. Basic HTML only: p, ul, li, a, b, i, code, pre, h2, h3, img.</p>",
+  "download_url": "https://github.com/you/my-cool-mod/releases/latest",
+  "license": "MIT",
+  "guid": "com.yourname.mycoolmod",
+  "thumbnail": "https://raw.githubusercontent.com/you/my-cool-mod/main/icon.png",
+  "published_at": "2026-08-08",
+  "updated_at": "2026-08-08",
+  "dependencies": [
+    { "name": "WTT - CommonLib", "url": "https://github.com/GrooveypenguinX/WTT-CommonLib" }
+  ]
+}

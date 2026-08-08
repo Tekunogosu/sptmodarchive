@@ -1,0 +1,2090 @@
+{
+ "mod_id": 755,
+ "slug": "the-blacklist-flea-market-enhancements",
+ "fetched_at": "2026-08-08T20:52:00Z",
+ "reported_total": 91,
+ "pages": 10,
+ "count": 208,
+ "comments": [
+  {
+   "id": 11623,
+   "parent_id": null,
+   "author": "Sike223",
+   "author_id": 26317,
+   "author_url": "https://forge.sp-tarkov.com/user/26317/sike223",
+   "created_at": "2023-02-11T11:54:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>link broken</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 11626,
+   "parent_id": null,
+   "author": "Burzy",
+   "author_id": 23664,
+   "author_url": "https://forge.sp-tarkov.com/user/23664/burzy",
+   "created_at": "2023-02-11T12:40:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Will it work on 3.5.0?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73469,
+   "parent_id": 11626,
+   "author": "xBagelboy5913x",
+   "author_id": 26754,
+   "author_url": "https://forge.sp-tarkov.com/user/26754/xbagelboy5913x",
+   "created_at": "2023-02-11T13:27:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hhave you found out yet?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73471,
+   "parent_id": 11626,
+   "author": "Burzy",
+   "author_id": 23664,
+   "author_url": "https://forge.sp-tarkov.com/user/23664/burzy",
+   "created_at": "2023-02-11T13:28:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m going to test it right now</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73472,
+   "parent_id": 11626,
+   "author": "Burzy",
+   "author_id": 23664,
+   "author_url": "https://forge.sp-tarkov.com/user/23664/burzy",
+   "created_at": "2023-02-11T13:33:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Sorry, I won\u2019t test it. The link doesn\u2019t work</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 11634,
+   "parent_id": null,
+   "author": "BRSaura",
+   "author_id": 3148,
+   "author_url": "https://forge.sp-tarkov.com/user/3148/brsaura",
+   "created_at": "2023-02-11T16:06:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Aren\u2019t mods loaded by alphabetical order of the folders? A delay seems a bit pointless and will take extra seconds on your server startup, wich if you are testing things, can add up.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73481,
+   "parent_id": 11634,
+   "author": "RogueTech67",
+   "author_id": 9742,
+   "author_url": "https://forge.sp-tarkov.com/user/9742/roguetech67",
+   "created_at": "2023-02-11T16:14:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I was under the impression that was the case for mod loading order. It is referenced in numerous other mods, and some authors even name there mod folders \u201cz-whatever\u201d to address any loading order. Also, it does not appear the link to this mod is even available.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 11642,
+   "parent_id": null,
+   "author": "derp",
+   "author_id": 26818,
+   "author_url": "https://forge.sp-tarkov.com/user/26818/derp",
+   "created_at": "2023-02-11T21:21:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>how is people downloading this? the link is still broken for me</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73492,
+   "parent_id": 11642,
+   "author": "Burzy",
+   "author_id": 23664,
+   "author_url": "https://forge.sp-tarkov.com/user/23664/burzy",
+   "created_at": "2023-02-11T21:33:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>As I understand it. The download is counted if you just clicked on the download button.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73496,
+   "parent_id": 11634,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2023-02-11T22:56:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Correct, mods are loaded in alphabetical order. However, some mods like Lua\u2019s market price updater work \u2018asynchronously\u2019 so they load first but do their work (updating prices) later behind the scenes.</p>\n<p>The delay is the easiest way for me to make sure that this mod is compatible with mods like Lua\u2019s updater which are async.</p>\n<p>The 7s delay also does not slow down your launch time because you do not actually need to wait for my mod message to show up. You can launch your client as soon as it says your server is ready. My mod will finish loading while your client is still loading and the flea market prices will be updated fine.</p>\n<p>Sorry for the broken link, it should be fixed (fingerscrossed)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 73498,
+   "parent_id": 11626,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2023-02-11T22:57:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Sorry, I did not do any testing on 3.5.0 as Chomp has disabled mods for the latest 3.5.0 builds. Linked should be fixed, sorry about that.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 11652,
+   "parent_id": null,
+   "author": "Drill#0596",
+   "author_id": 11,
+   "author_url": "https://forge.sp-tarkov.com/user/11/drill0596",
+   "created_at": "2023-02-12T03:59:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>does this mod allow for the dev items to show up on flea?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73513,
+   "parent_id": 11652,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2023-02-12T04:31:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>No. It allows anything that appears in your Handbook (bottom right) that was blacklisted to come back to the flea.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 73536,
+   "parent_id": 11626,
+   "author": "Burzy",
+   "author_id": 23664,
+   "author_url": "https://forge.sp-tarkov.com/user/23664/burzy",
+   "created_at": "2023-02-12T10:16:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>So, I tested your mod and it works perfectly on 3.5.0. There are no errors when creating the server, there are no errors at the flea market, and you can enter the raid. Everything works as intended. Thank you</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73540,
+   "parent_id": 11626,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2023-02-12T11:19:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Oh cool, thanks for testing Burzy</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 11688,
+   "parent_id": null,
+   "author": "Djmeowzle",
+   "author_id": 2741,
+   "author_url": "https://forge.sp-tarkov.com/user/2741/djmeowzle",
+   "created_at": "2023-02-12T23:03:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is it possible for this to apply to all ammo, even in traders, or does it only work on flea items from \u201cplayers\u201d was trying to find a way to make ammo more expensive with realism changes.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73591,
+   "parent_id": 11688,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2023-02-12T23:13:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Right now, it only applies for blacklisted ammo on the flea market.</p>\n<p>I did have ideas to apply the logic for the rest of the ammo as well on the flea. May be a new feature in the future.</p>\n<p>To change the ammo prices for traders is also doable but I haven\u2019t looked too much into it before. Again, may be a feature in the future but no promises as I kind of want this mod for mostly flea market enhancements.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 11692,
+   "parent_id": null,
+   "author": "dizzygaming",
+   "author_id": 26340,
+   "author_url": "https://forge.sp-tarkov.com/user/26340/dizzygaming",
+   "created_at": "2023-02-12T23:41:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>can you update for 3.5.0 please</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73592,
+   "parent_id": 11692,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2023-02-12T23:41:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Noted, will check after work today. Though someone said below this may already work for 3.5.0</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 11707,
+   "parent_id": null,
+   "author": "dizzygaming",
+   "author_id": 26340,
+   "author_url": "https://forge.sp-tarkov.com/user/26340/dizzygaming",
+   "created_at": "2023-02-13T03:16:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>ok yeah no need for update it does work i just tried it, thanks !</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73609,
+   "parent_id": 11688,
+   "author": "Djmeowzle",
+   "author_id": 2741,
+   "author_url": "https://forge.sp-tarkov.com/user/2741/djmeowzle",
+   "created_at": "2023-02-13T03:22:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>understood, was just curious, cool mod none the less!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 11728,
+   "parent_id": null,
+   "author": "kookok",
+   "author_id": 26520,
+   "author_url": "https://forge.sp-tarkov.com/user/26520/kookok",
+   "created_at": "2023-02-13T09:10:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m new to modding this game, so I want to ask if this somehow allows NPCs (or the AI if it\u2019s more proper to call them that) to buy items you list there, and in the updated prices you list there? Also, are the blacklisted items also listable?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73636,
+   "parent_id": 11728,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2023-02-13T09:26:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey kookok, hope you like the modding community here!</p>\n<p>This mod doesn\u2019t change the behaviour of how offers are sold (yet). Without going into too much detail of how the flea market works behind the scenes in SPTarkov, when you create an offer, the game will basically roll a chance of it being bought every minute or so. The lower the price, the higher your chance.</p>\n<p>Yes, you can list the blacklisted items for sale if they were FIR, using the updated prices too.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 73637,
+   "parent_id": 11728,
+   "author": "kookok",
+   "author_id": 26520,
+   "author_url": "https://forge.sp-tarkov.com/user/26520/kookok",
+   "created_at": "2023-02-13T09:45:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Awesome. Thanks for answering my question and also giving a detailed explanation how the behind-the-scenes of flea market selling works. Sincerely appreciate it!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 11946,
+   "parent_id": null,
+   "author": "vandall",
+   "author_id": 25847,
+   "author_url": "https://forge.sp-tarkov.com/user/25847/vandall",
+   "created_at": "2023-02-15T18:51:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>\u043f\u043e\u0447\u0435\u043c\u0443 \u0442\u043e \u0442\u0432\u043e\u0438 \u043c\u043e\u0434\u044b \u0438\u0434\u0443\u0442 \u043d\u0430 \u0441\u0442\u0430\u0440\u044b\u0435 \u0432\u0435\u0440\u0441\u0438\u0438 \u0437\u0430 \u044d\u0442\u043e \u0442\u0435\u0431\u0435 \u043c\u0430\u043a\u0441\u0438\u043c\u0430\u043b\u044c\u043d\u044b\u0439 \u0440\u0435\u0441\u043f\u0435\u043a\u0442</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 12296,
+   "parent_id": null,
+   "author": "Limus",
+   "author_id": 27283,
+   "author_url": "https://forge.sp-tarkov.com/user/27283/limus",
+   "created_at": "2023-02-20T00:03:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>hey im having trouble getting items to update the prices in config specifically the miller bros sword.</p>\n<p>I made the correct entry in the config but its not updating in game.</p>\n<p>{</p>\n<p>\u201citemIdHint\u201d: \u201cm2 sword\u201d,</p>\n<p>\u201citemId\u201d: \u201c5bffdd7e0db834001b734a1a\u201d,</p>\n<p>\u201cfleaPriceOverride\u201d: 100000</p>\n<p>}</p>\n<p>any help would be appreciated</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 74674,
+   "parent_id": 12296,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2023-02-20T01:47:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I will try to check when I have time. However, with the 3.5.0 AKI update, flea price logic was tweaked so that if a trader is selling the same item (incl barter), it would use that price instead.</p>\n<p>I see on the wiki that Skier has a very pricey trade for it so it may be using that value instead. I have no way to override this behaviour in 3.5.0, however I have contacted the AKI devs and they have a fix out in the next 3.5.1 update.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 12498,
+   "parent_id": null,
+   "author": "Statue",
+   "author_id": 26878,
+   "author_url": "https://forge.sp-tarkov.com/user/26878/statue",
+   "created_at": "2023-02-24T06:29:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Does this mod (or any other mod for flea that is 3.5 compatible) have the flea (and/or non-flea traders) account for attachments on weapons you sell?</p>\n<p>Currently, to not throw most of the value of weapons away I have to disassemble them and sell piece by piece, which is a somewhat laborious process; it would be nice to streamline selling weapons I find by just having buyers recognize the weapon I\u2019m selling has sexy scopes and sights etc.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 75016,
+   "parent_id": 12498,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2023-02-24T07:17:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Unfortunately the flea market does not work like that with player made offers. When you sell to traders however, it will sum up the gun components.</p>\n<p>The current flea market system is also a bit borked. You are free to set the sale price for your kitted up gun quite high and it will eventually sell. You might pay a bigger tax though.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 12704,
+   "parent_id": null,
+   "author": "Jennacide",
+   "author_id": 9236,
+   "author_url": "https://forge.sp-tarkov.com/user/9236/jennacide",
+   "created_at": "2023-02-28T15:13:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Seems like the price modifier is not doing anything for me</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 75412,
+   "parent_id": 12704,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2023-03-01T08:35:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey there, which price multiplier are you having issues with? What item are you looking at?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 13606,
+   "parent_id": null,
+   "author": "HelaS",
+   "author_id": 10962,
+   "author_url": "https://forge.sp-tarkov.com/user/10962/helas",
+   "created_at": "2023-03-16T13:19:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello,<br />\nI just installed the game on the last upadte (spt-aki 3.5.3)</p>\n<p>I have created a presets weapon, and when i click on find parts in the flea there is still parts that i can not buy. But when i check the iteam independantly i can buy it from little maid mod traders.</p>\n<p>Any idea, how can i fix this \u201cunavailable part\u201d when doing presets ?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 77035,
+   "parent_id": 13606,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2023-03-19T01:49:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m not sure, can you tell me the item name or a screenshot of your preset? Any info would be helpful thanks.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 77142,
+   "parent_id": 13606,
+   "author": "HelaS",
+   "author_id": 10962,
+   "author_url": "https://forge.sp-tarkov.com/user/10962/helas",
+   "created_at": "2023-03-20T20:47:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello,<br />\nthank you for your answer.</p>\n<p>I did a post on the forum, sadly i did not get any solution. Here is the link :<br />\n<a href=\"https://hub.sp-tarkov.com/forum/thread/2943-creating-presets-weapon-issue/?postID=19966#post19966\" target=\"_blank\" rel=\"noreferrer noopener\">RE: Creating presets Weapon issue</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 77226,
+   "parent_id": 13606,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2023-03-22T09:21:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Sorry, I couldn\u2019t reproduce this issue, however I was using a higher level account with maxed out traders so a lot of the attachments were already available. Some like the red buffer tube could be bought off the flea.</p>\n<p>Most attachments in the game aren\u2019t blacklisted either, mostly just ammo, armour and guns.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 77227,
+   "parent_id": 13606,
+   "author": "HelaS",
+   "author_id": 10962,
+   "author_url": "https://forge.sp-tarkov.com/user/10962/helas",
+   "created_at": "2023-03-22T09:24:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey, Thank you for your answer. I tried few things but could not figure out why i can buy thru presets weapon/flea market.</p>\n<p>I also had all maxed trader via profile editor.</p>\n<p>Btw i saw that there is a new release of profile editor, i will do a fresh install the afternoon to see if i am lucky.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 77411,
+   "parent_id": 13606,
+   "author": "footlicker",
+   "author_id": 7454,
+   "author_url": "https://forge.sp-tarkov.com/user/7454/footlicker",
+   "created_at": "2023-03-25T07:03:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>try removing \u201cfunctional only\u201d from the options \u201cclick wrench icon\u201d</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 77428,
+   "parent_id": 13606,
+   "author": "HelaS",
+   "author_id": 10962,
+   "author_url": "https://forge.sp-tarkov.com/user/10962/helas",
+   "created_at": "2023-03-25T13:27:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i did try it, but it is not working</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 14005,
+   "parent_id": null,
+   "author": "Professor House",
+   "author_id": 4643,
+   "author_url": "https://forge.sp-tarkov.com/user/4643/professor-house",
+   "created_at": "2023-03-26T16:32:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is there a way to disable the price overrides? SVM allows for bots to sell blacklisted items on the Flea and has prices that update regularly. I just want this mod so that I can sell blacklisted items, because for some reason SVM doesn\u2019t do that yet and I don\u2019t wanna cause conflicts, haha.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 77537,
+   "parent_id": 14005,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2023-03-26T22:13:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Sorry there isnt. However it sounds like Chomp\u2019s Disable Blacklist would do exactly that. This mod\u2019s main purpose is to update the values of some blacklisted items to be balanced.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 79475,
+   "parent_id": 12704,
+   "author": "Thelior",
+   "author_id": 30642,
+   "author_url": "https://forge.sp-tarkov.com/user/30642/thelior",
+   "created_at": "2023-04-28T21:06:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I can\u2019t speak for Jennacide, but i tried playing with the config values today and also didn\u2019t notice a big difference in flea prices. (SPT 3.5.5)</p>\n<p>Even if i set the baseline value to 1 and completely disable your penetration based price modification the price seams to be in a normal range.</p>\n<p>private getUpdatedAmmoPrice(item: ITemplateItem) { /*const baselinePen = this.baselineBullet._props.PenetrationPower; const baselineDamage = this.baselineBullet._props.Damage; const penetrationMultiplier = item._props.PenetrationPower / baselinePen; const baseDamageMultiplier = item._props.Damage / baselineDamage; // Reduces the effect of the damage multiplier so high DMG rounds aren\u2019t super expensive. // Eg. let baseDamageMultiplier = 2 &amp; bulletDamageMultiplierRedutionFactor = 0.7. Instead of a 2x price when a bullet is 2x damage, we instead get: // 2 + (1 - 2) * 0.7 = 2 - 0.7 = 1.3x the price. const damageMultiplier = baseDamageMultiplier + (1 - baseDamageMultiplier) * advancedConfig.bulletDamageMultiplierRedutionFactor; return advancedConfig.baselineBulletPrice * penetrationMultiplier * damageMultiplier * config.blacklistedAmmoAdditionalPriceMultiplier;*/ return advancedConfig.baselineBulletPrice; } Log: [2023-04-28T23:00:46.381Z] debug: [The Blacklist]: Updated 59e690b686f7746c9f75e848 - patron_556x45_M995 flea price from 345 to 1The price for M995 on flea is between 768 and 1030 rubles.</p>\n<p>To test things further, i modified your code (quick and dirty) to change prices for all regular ammunition to a fixed value. I also modified the handbook price, as changing the handbook template was suggested on reddit for price modification.</p>\n<p>if (item._props.ammoType) { const newPrice = 10; handbookItem.Price = newPrice; prices[item._id] = newPrice; this.logger.success(<code>${this.modName}: Success! Updated ${item.\\_id} - ${item.\\_name}: HB ${handbookPrice}, P: ${originalPrice} - ${newPrice}</code>); return; } Log: [2023-04-28T23:00:46.417Z] succ: [The Blacklist]: Success! Updated 5e023e53d4353e3302577c4c - patron_762x51_bpz_fmj: HB 150, P: 527 - 10I get no errors but the prices stay in their \u201cnormal\u201d ranges (for 7,62x51 BPZ 77-585 rubles).</p>\n<p>I\u2019m quite new to SPT and therefore to modding SPT, so i don\u2019t know if you even can change the handbook price dynamically or only by editing the json file, but something seems to be off here.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 79504,
+   "parent_id": 12704,
+   "author": "Thelior",
+   "author_id": 30642,
+   "author_url": "https://forge.sp-tarkov.com/user/30642/thelior",
+   "created_at": "2023-04-29T10:56:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Did some further testing, which could answer some questions.</p>\n<p>The change of the flea price only works if:</p>\n<ol>\n<li>In case the ragfair price adjustment is enabled (default: false): The resulting price doesn\u2019t deviate too much in relation to the handbook price. (depending on the ragfair configuration variables)</li>\n<li>The price is still higher than the highest trader <strong>buying price</strong>. (which also depends on the handbook price)</li>\n<li>The item isn\u2019t a weapon preset. (has it\u2019s own calculation)</li>\n</ol>\n<p>To push a more drastic price change it is necessary to update the handbook price and regenerate the price lookup by calling the \u201chydrateLookup()\u201d function on the handbookHelper.</p>\n<p>However some ammo prices still don\u2019t get changed in my test. It seems that not all ammunition is found by looping over the handbook items.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 79523,
+   "parent_id": 12704,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2023-04-30T03:43:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thelior, I\u2019ll do some more testing I guess. Btw, the ammo prices are only updated for previously blacklisted ammo types. Low end ammo that isn\u2019t blacklisted won\u2019t have their price updated at all.</p>\n<p>Edit: I got a fresh copy of EFT and SPT 3.5.5 and the ammo price behaviours are working exactly as per my original design. M995 was around 3.5k by default and when I increase \u2018config.blacklistedAmmoAdditionalPriceMultiplier\u2019 to 5, M995 increased to around 18k as well.</p>\n<p>I don\u2019t know why your M995 is only around 1k for you Thelior. Please try the mod (fresh copy) by itself or let me know exactly which configs you\u2019re playing around with (because it might not do what you think it does) and your existing mod list as well.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 79537,
+   "parent_id": 12704,
+   "author": "Thelior",
+   "author_id": 30642,
+   "author_url": "https://forge.sp-tarkov.com/user/30642/thelior",
+   "created_at": "2023-04-30T14:30:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Platinum thank for your response.</p>\n<p>My intention is to lower the overall ammo price on flea as I prefer not to repack mags in raid, but that tends to get quite expensive if you get unlucky a few times in a row\u2026</p>\n<p>I did some more testing with a fresh copy of EFT, SPT 3.5.5 and your mod: the prices get calculated and used as intended.</p>\n<p>If I change the \u201cbaselineBulletPrice\u201d to a very low value, so that the calculated price is lower than the best price you would get selling to a trader, this trader price is used instead. (M995 = 842 Mechanic)</p>\n<p>You can change this behavior by setting the \u201cuseTraderPriceForOffersIfHigher\u201d ragfair config variable to false.</p>\n<p>By adding this part to the end of your handbookItem loop I can change the value for all bullets:</p>\n<p>if (item._props.ammoType) { prices[item._id] = this.getUpdatedPrice(item, prices); }What got me confused was, that for ammunition, which was already sold on the flea, the price wasn\u2019t affected.</p>\n<p>But my testing today shows both: offers with the adjusted price, but also offers in the normal price range.</p>\n<p>I guess these offers are created before the adjustment is made. When the game runs long enough, the they are replaced with the offers using the new value.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 79584,
+   "parent_id": 12704,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2023-05-01T22:36:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for the clarification Thelior. I understand your use case now.</p>\n<p>I had a feeling you were talking about the \u201cuseTraderPriceForOffersIfHigher\u201d config as I wasn\u2019t completely sure. This config value was actually added because of this mod after I talked to an AKI dev about the issue you\u2019re describing (but I was looking at the Zabralo armour instead)</p>\n<p>I think I will make 2 changes:</p>\n<p>- option to affect the ammo prices of all ammo types so the calculation is performed on all of them. Default false.</p>\n<p>- option to set config \u201cuseTraderPriceForOffersIfHigher\u201d to false by default when using this mod as I originally intended (but got lazy and didn\u2019t bother for a few months)</p>\n<p>This should allow you to basically reduce the blacklistedAmmoAdditionalPriceMultiplier to make your ammo cheaper.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 16959,
+   "parent_id": null,
+   "author": "Cane",
+   "author_id": 32650,
+   "author_url": "https://forge.sp-tarkov.com/user/32650/cane",
+   "created_at": "2023-06-22T04:22:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello, was wondering if there was a way to simply slap a modifier to all items sold on the flea market, blacklist or not? It\u2019s awesome that it has a way to modify specific items but I was hoping for an overall way to reduce everything price by half or at least 25%</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 82031,
+   "parent_id": 16959,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2023-06-22T23:02:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi, that is not a feature of this mod atm. Sounds like a reasonable feature to be included someday.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 17677,
+   "parent_id": null,
+   "author": "Kot",
+   "author_id": 33878,
+   "author_url": "https://forge.sp-tarkov.com/user/33878/kot",
+   "created_at": "2023-07-12T16:11:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi, thanks for the awesome mod, I personally have added about 2 dozens of custom prices for flea banned weapons and armors so I have won\u2019t have to see sr-25 for 25k on the flea anymore. Love it.</p>\n<p>One thing is there seems to be something in this mod that conflicts with The Broker <a href=\"https://hub.sp-tarkov.com/files/file/1104-the-broker/\" target=\"_blank\" rel=\"noreferrer noopener\">The Broker</a></p>\n<p>mainly about how both mods access the same flea price table but this mod is the one who writes into it</p>\n<p>The broker works with flea price updater without the blacklist but not with both.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 18454,
+   "parent_id": null,
+   "author": "That1Guy",
+   "author_id": 34762,
+   "author_url": "https://forge.sp-tarkov.com/user/34762/that1guy",
+   "created_at": "2023-08-01T06:44:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I keep getting \u201cMod (Platinum-TheBlacklist-1.2.0) is missing package.json\u201d I was told to contact the dev if this keeps happening after reinstalling it a few times. Anyone know a fix?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 84219,
+   "parent_id": 18454,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2023-08-01T06:49:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi, that\u2019s not supposed to happen. I just checked the download link and it does contain a package.json inside the mod. Can you show me a picture of your user/mods folder as well as user/mods/Platinum-TheBlacklist-1.2.0?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 18470,
+   "parent_id": null,
+   "author": "werefox56",
+   "author_id": 30227,
+   "author_url": "https://forge.sp-tarkov.com/user/30227/werefox56",
+   "created_at": "2023-08-01T14:16:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Are we going to have an update for SPT-AKI 3.6.0?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 84284,
+   "parent_id": 18470,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2023-08-01T23:12:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Does it not work with 3.6.0? Generally server mods are compatible for a few versions until they\u2019re not.</p>\n<p>Edit: uploaded new version that has also been updated for 3.6.0. Enjoy</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 84357,
+   "parent_id": 18454,
+   "author": "That1Guy",
+   "author_id": 34762,
+   "author_url": "https://forge.sp-tarkov.com/user/34762/that1guy",
+   "created_at": "2023-08-02T19:43:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>sure. can I have ur discord so I can send them?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 84390,
+   "parent_id": 18454,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2023-08-03T00:40:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I think it would be easier if you just upload the screenshots to imgur and post them here or PM me here</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 18588,
+   "parent_id": null,
+   "author": "banchijian",
+   "author_id": 32208,
+   "author_url": "https://forge.sp-tarkov.com/user/32208/banchijian",
+   "created_at": "2023-08-03T09:44:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>hi, does this mod affect the chance of selling? for example i got a slick and i want to sell it at the prices bots are selling, will my slick be sold or not?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 84412,
+   "parent_id": 18588,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2023-08-03T10:06:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>No it doesn\u2019t change the chance of sale atm</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 84414,
+   "parent_id": 18588,
+   "author": "banchijian",
+   "author_id": 32208,
+   "author_url": "https://forge.sp-tarkov.com/user/32208/banchijian",
+   "created_at": "2023-08-03T10:24:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>thank you for ur reply. so say i used svm to change sale etc, it wont conflict with this mod right?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 20522,
+   "parent_id": null,
+   "author": "Saddam-Hussein",
+   "author_id": 36641,
+   "author_url": "https://forge.sp-tarkov.com/user/36641/saddam-hussein",
+   "created_at": "2023-09-11T17:35:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>very good mod highly recomended, well done to the guys that made this possible</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 20843,
+   "parent_id": null,
+   "author": "Goflishe",
+   "author_id": 37281,
+   "author_url": "https://forge.sp-tarkov.com/user/37281/goflishe",
+   "created_at": "2023-09-20T06:15:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>AP SX not appearing</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 21562,
+   "parent_id": null,
+   "author": "Koroken",
+   "author_id": 38191,
+   "author_url": "https://forge.sp-tarkov.com/user/38191/koroken",
+   "created_at": "2023-10-09T23:27:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Gave this a try since other blacklists aren\u2019t up for 3.7.0 yet, I haven\u2019t done any editing myself, just went to check prices, full hexgrid ~375k, slick ~350, Mutant/RD 96k, .300 blk AP 2500, M855A1 1800, M995 3k+, 7.62x39 PP 1200+, BP 2600+, 338 AP 14k</p>\n<p>All of it has a very pre-FIR feel to it even before the blacklist, and doesn\u2019t leave gamebreaking ammo practically free, I dig it.</p>\n<p>(I\u2019m not using SVM or anything else that affects the market)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 21680,
+   "parent_id": null,
+   "author": "lil_nubby",
+   "author_id": 37999,
+   "author_url": "https://forge.sp-tarkov.com/user/37999/lil-nubby",
+   "created_at": "2023-10-11T05:38:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>What is the ID for T-7 thermals? I\u2019ve tried going into the config to blacklist them but \u201c5c110624d174af029e69734c\u201d and \u201c5d21f59b6dbe99052b54ef83\u201d dont do anything. I\u2019m sure doing it right because I\u2019ve blacklisted the rusty bloody key but I cant seem to get T-7 blacklisted</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 88996,
+   "parent_id": 21680,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2023-10-12T09:08:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I can reproduce the issue. 5c110624d174af029e69734c should be the correct ID but its not getting blacklisted. I\u2019m not sure why exactly, sorry but you may have to just ignore it for now until I can figure out why.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 21942,
+   "parent_id": null,
+   "author": "Lunnayaluna",
+   "author_id": 29460,
+   "author_url": "https://forge.sp-tarkov.com/user/29460/lunnayaluna",
+   "created_at": "2023-10-13T17:00:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>T-7 Thermals are almost less than 400k roubles for me on flea, idk if thats normal tho</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 89271,
+   "parent_id": 21942,
+   "author": "ICantAim",
+   "author_id": 15705,
+   "author_url": "https://forge.sp-tarkov.com/user/15705/icantaim",
+   "created_at": "2023-10-13T18:29:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Definitely not normal. The \u201ccheaper\u201d offers (in previous SPT version at least) are usually 14 million on flea, and around 530k on Fence.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 89273,
+   "parent_id": 21942,
+   "author": "Lunnayaluna",
+   "author_id": 29460,
+   "author_url": "https://forge.sp-tarkov.com/user/29460/lunnayaluna",
+   "created_at": "2023-10-13T18:43:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>alright good to know</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 89291,
+   "parent_id": 21942,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2023-10-13T20:34:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yeah something strange is happening with this item. See my earlier comments. The 400k is the trade price which the mod is backing up to</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 25259,
+   "parent_id": null,
+   "author": "HahaLongBoy",
+   "author_id": 42128,
+   "author_url": "https://forge.sp-tarkov.com/user/42128/hahalongboy",
+   "created_at": "2023-12-14T11:16:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>im looking for a flea market mod that changes the sell chance from the fake players on the flea, does this mod have the ability to change that modifier and if not would you consider adding it?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 94418,
+   "parent_id": 25259,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2023-12-14T11:19:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Do you mean the chance that your item will be sold? I was planning to add a config to this mod but I spoke with the developers of SPT and they will be updating the flea market system in the future so I probably won\u2019t be adding this to the mod. I recommend using SVM if you want that.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 25347,
+   "parent_id": null,
+   "author": "ElBorbah",
+   "author_id": 35696,
+   "author_url": "https://forge.sp-tarkov.com/user/35696/elborbah",
+   "created_at": "2023-12-16T23:41:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>this is still good for 3.7.4 correct?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 25558,
+   "parent_id": null,
+   "author": "Sleepy_Pandaz",
+   "author_id": 42058,
+   "author_url": "https://forge.sp-tarkov.com/user/42058/sleepy-pandaz",
+   "created_at": "2023-12-23T09:45:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I cant seem to get it working?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 25756,
+   "parent_id": null,
+   "author": "Jamjom",
+   "author_id": 7801,
+   "author_url": "https://forge.sp-tarkov.com/user/7801/jamjom",
+   "created_at": "2023-12-30T00:16:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Doesn\u2019t seem to work atm, I can\u2019t see any of the usual blacklisted items on flea market anymore.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 95093,
+   "parent_id": 25756,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2023-12-31T03:57:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi there, I just tested v1.3.1 of the mod against a clean install of SPT 3.7.6 and the mod works as normal. Please provide some extra information such as your SPT version, mod version and other mods used. Is there any specific item that\u2019s missing for you?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 95094,
+   "parent_id": 25558,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2023-12-31T03:57:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi there, I just tested v1.3.1 of the mod against a clean install of SPT 3.7.6 and the mod works as normal. Please provide some extra information such as your SPT version, mod version and other mods used. Is there any specific item that\u2019s missing for you?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 95108,
+   "parent_id": 25756,
+   "author": "Jamjom",
+   "author_id": 7801,
+   "author_url": "https://forge.sp-tarkov.com/user/7801/jamjom",
+   "created_at": "2023-12-31T14:44:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m using mod version 1.3.1 with SPT 3.7.5. All of the normally blacklisted items are not showing up. Same if I try with v1.3.0.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 26313,
+   "parent_id": null,
+   "author": "FacelessGreen",
+   "author_id": 8290,
+   "author_url": "https://forge.sp-tarkov.com/user/8290/facelessgreen",
+   "created_at": "2024-01-13T21:58:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is it possible to blacklist entire categories? I\u2019d love to create a config that blocks everything except Keys and Barter items, so I can progress through tasks and hideout at a reasonable pace, but blacklisting each and every item ID would genuinely drive me to the brink of insanity.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 95860,
+   "parent_id": 26313,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2024-01-13T22:14:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yes, in advancedConfigs.json, there is a section to exclude entire categories. The ids are from the bottom of <a href=\"https://hub.sp-tarkov.com/doc/entry/7-resources-item-properties-list/\" target=\"_blank\" rel=\"noreferrer noopener\">Resources: Item properties list</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 95861,
+   "parent_id": 26313,
+   "author": "FacelessGreen",
+   "author_id": 8290,
+   "author_url": "https://forge.sp-tarkov.com/user/8290/facelessgreen",
+   "created_at": "2024-01-13T22:19:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks, you\u2019re the best!</p>\n<p>I actually considered going by individual IDs tomorrow, so I guess you just saved me a Sunday. Cheers to you, mate.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 95862,
+   "parent_id": 26313,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2024-01-13T22:24:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>No problems, enjoy!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 95867,
+   "parent_id": 26313,
+   "author": "FacelessGreen",
+   "author_id": 8290,
+   "author_url": "https://forge.sp-tarkov.com/user/8290/facelessgreen",
+   "created_at": "2024-01-13T23:43:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I updated the list with all the categories I want blacklisted, but they still show up on the market. Do I need to wait for old offers to expire? I don\u2019t think I do because I compared the amount of Signal Jammer offers between the resets and it fluctuates.</p>\n<p>This is what the server spits out:</p>\n<p>[The Blacklist]: Success! Found 25 blacklisted &amp; 0 non-blacklisted items to update.</p>\n<p>[The Blacklist]: config.limitMaxPriceOfAttachments is enabled! Updated 481 flea prices of attachments.</p>\n<p>When I run it with the default file, it says it finds 92 items.</p>\n<p>This leads me to believe I messed up somewhere.</p>\n<p>This is how My advancedConfig.json looks like:</p>\n<p>{ \u201cstartDelayInSeconds\u201d: 6.9, \u201cbaselineBulletId\u201d: \u201c59e6906286f7746c9f75e847\u201d, \u201cbaselineBulletPrice\u201d: 1000, \u201cbulletDamageMultiplierRedutionFactor\u201d: 0.7, \u201cbaselineArmourId\u201d: \u201c5c0e655586f774045612eeb2\u201d, \u201cbaselineArmourWeight\u201d: 10, \u201cbaselineArmourPrice\u201d: 200000, \u201cpricePerArmourClassStep\u201d: 100000, \u201carmourWeightMultiplierReductionFactor\u201d: 0.7, \u201cenableDebug\u201d: false, \u201cexcludedCategories\u201d: [\u201c5b5f78b786f77447ed5636af\u201d, \u201c5b47574386f77428ca22b33c\u201d, \u201c5b5f701386f774093f2ecf0f\u201d, \u201c5b5f6fa186f77409407a7eb7\u201d, \u201c5b5f704686f77447ec5d76d7\u201d, \u201c5b5f6fd286f774093f2ecf0d\u201d, \u201c5b47574386f77428ca22b331\u201d, \u201c5b5f74cc86f77447ec5d770a\u201d, \u201c5b5f71c186f77409407a7ec0\u201d, \u201c5b5f71de86f774093f2ecf13\u201d, \u201c5b5f73ab86f774094242f195\u201d, \u201c5b5f73c486f77447ec5d7704\u201d, \u201c5b5f737886f774093e6cb4fb\u201d, \u201c5b5f724c86f774093f2ecf15\u201d, \u201c5b5f72f786f77447ec5d7702\u201d, \u201c5b5f731a86f774093e6cb4f9\u201d, \u201c5b5f740a86f77447ec5d7706\u201d, \u201c5b5f742686f774093e6cb4ff\u201d, \u201c5b5f744786f774094242f197\u201d, \u201c5b5f746686f77447ec5d7708\u201d, \u201c5b5f748386f774093e6cb501\u201d, \u201c5b5f749986f774094242f199\u201d, \u201c5b5f751486f77447ec5d770c\u201d, \u201c5b5f752e86f774093e6cb505\u201d, \u201c5b5f754a86f774094242f19b\u201d, \u201c5b5f755f86f77447ec5d770e\u201d, \u201c5b5f757486f774093e6cb507\u201d, \u201c5b5f75c686f774094242f19f\u201d, \u201c5b5f760586f774093e6cb509\u201d, \u201c5b5f75e486f77447ec5d7712\u201d, \u201c5b5f761f86f774094242f1a1\u201d, \u201c5b5f764186f77447ec5d7714\u201d, \u201c5b5f78e986f77447ed5636b1\u201d, \u201c5b5f78fc86f77409407a7f90\u201d, \u201c5b5f798886f77447ed5636b5\u201d, \u201c5b5f79d186f774093f2ed3c2\u201d, \u201c5b5f79a486f77409407a7f94\u201d, \u201c5b5f791486f774093f2ed3be\u201d, \u201c5b5f7a0886f77409407a7f96\u201d, \u201c5b5f792486f77447ed5636b3\u201d, \u201c5b5f796a86f774093f2ed3c0\u201d, \u201c5b5f794b86f77409407a7f92\u201d, \u201c5b5f7a2386f774093f2ed3c4\u201d, \u201c5b47574386f77428ca22b33c\u201d, \u201c5b47574386f77428ca22b33b\u201d, \u201c5b47574386f77428ca22b33a\u201d, \u201c5b47574386f77428ca22b339\u201d, \u201c5b47574386f77428ca22b338\u201d, \u201c5b47574386f77428ca22b337\u201d, \u201c5b47574386f77428ca22b341\u201d, \u201c5b4391a586f7745321235ab2\u201d, \u201c5b47574386f77428ca22b343\u201d], \u201cgunPriceFallback\u201d: 100000, \u201cuseTraderPriceForOffersIfHigher\u201d: true } I tried comparing it with the default file, but nothing really stands out to me.</p>\n<p>EDIT: I decided to delete two original IDs in the file, and now the server spit out 66 blacklisted items. In game, it also excluded the first two IDs listed alongside adding player offers to money items (I haven\u2019t found the other category). Maybe it can only read the first two values?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 96183,
+   "parent_id": 26313,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2024-01-20T04:50:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey Faceless, I did some digging and this is an issue with the excludedCategories setting. It does not in fact exclude a category from being shown on the blacklist. Instead, it keeps things on the blacklist if it already was on the blacklist.</p>\n<p>I\u2019ll need a lot more time to figure out how to implement your request. Sorry for the inconvenience but you\u2019ll probably just need to ignore those categories with your eyes for now</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 96191,
+   "parent_id": 26313,
+   "author": "FacelessGreen",
+   "author_id": 8290,
+   "author_url": "https://forge.sp-tarkov.com/user/8290/facelessgreen",
+   "created_at": "2024-01-20T10:16:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>No problem man. That\u2019s what I\u2019ve been doing now. I defaulted my flea filters to Trader only and If I need to buy something I make an individual decision whether it breaks my rules (so basically is it a barter/quest/hideout item). The Blacklist is still an amazing mod that will allow me to \u201cunlock\u201d the full flea market on level 50 like I intended to anyway, so thanks to you for this.</p>\n<p>Good luck with figuring out the category exclusions, and there was no real inconvenience, mate. You post this for free, and you\u2019ve already helped me more than it\u2019s expected of a mod author who creates amazing mods for the community, pro bono.</p>\n<p>Cheers and take care.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 28114,
+   "parent_id": null,
+   "author": "40snw",
+   "author_id": 47149,
+   "author_url": "https://forge.sp-tarkov.com/user/47149/40snw",
+   "created_at": "2024-03-31T21:00:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for the mod, I am having an issue though. No matter what I do in the configs I am not influencing the prices at all, can\u2019t make them higher or lower. I\u2019ve tried with armors and ammo, any idea what it could be ?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 98438,
+   "parent_id": 28114,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2024-03-31T22:43:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi, this is a known issue. I will release the fix when the official 3.8.0 SPT comes out</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 98445,
+   "parent_id": 28114,
+   "author": "40snw",
+   "author_id": 47149,
+   "author_url": "https://forge.sp-tarkov.com/user/47149/40snw",
+   "created_at": "2024-04-01T02:58:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Oh okay sorry to bother you then.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 28277,
+   "parent_id": null,
+   "author": "derpina",
+   "author_id": 46451,
+   "author_url": "https://forge.sp-tarkov.com/user/46451/derpina",
+   "created_at": "2024-04-03T12:07:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Does this balance well with Realism ammo changes?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 98643,
+   "parent_id": 28277,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2024-04-03T12:09:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I do specifically take into account balancing around realism. The ammo prices are adjusted around the M856A1 round, however I havent tested with Realism on SPT 3.8.0</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 98644,
+   "parent_id": 28277,
+   "author": "derpina",
+   "author_id": 46451,
+   "author_url": "https://forge.sp-tarkov.com/user/46451/derpina",
+   "created_at": "2024-04-03T12:22:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for the quick reply Platinum! I might do said testing myself, but I want to wait for one more test release at least, Realism 380 is still very WIP i think.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 28297,
+   "parent_id": null,
+   "author": "party rocker",
+   "author_id": 38732,
+   "author_url": "https://forge.sp-tarkov.com/user/38732/party-rocker",
+   "created_at": "2024-04-03T16:40:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>hi im here to say that if you enable the flea market changes in SVM this mod will not work, putting this here so other people looking for troubleshooting help have this to work off of</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 28308,
+   "parent_id": null,
+   "author": "segunn",
+   "author_id": 37435,
+   "author_url": "https://forge.sp-tarkov.com/user/37435/segunn",
+   "created_at": "2024-04-03T20:32:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Im kinda confused, why is everything so cheap now, before the update it was fine but now pbp gzh (just an example but every round is cheaper) its at 500 a round and a thicc item case is at 2M I know its adjustable but I didnt see anything of that in the changelog so im confused</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 98710,
+   "parent_id": 28297,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2024-04-03T21:44:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>That\u2019s not ideal. Maybe try updating the load order so this loads after SVM by adding a z to the front of the folder name. Or you can use the order.json file to list your mods in order where bottom of list gets higher priority I think.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 98711,
+   "parent_id": 28308,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2024-04-03T21:45:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>9mm PBP shouldnt be that cheap, maybe similar to the price of M856A1. Are you using SVM? It seems this mod wont be loaded if you enable blacklist modifications in SVM.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 98712,
+   "parent_id": 28297,
+   "author": "party rocker",
+   "author_id": 38732,
+   "author_url": "https://forge.sp-tarkov.com/user/38732/party-rocker",
+   "created_at": "2024-04-03T21:47:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i used load order editor to make sure svm loads first and that made it so that both of the mods worked perfectly together, thanks for the tip</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 98733,
+   "parent_id": 28308,
+   "author": "segunn",
+   "author_id": 37435,
+   "author_url": "https://forge.sp-tarkov.com/user/37435/segunn",
+   "created_at": "2024-04-03T23:39:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Nope not using any mods that effect prices (just using the usual donuts sain etc) but I just went back to the old version I was using in 3.7.6 seems to be just fine</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 98785,
+   "parent_id": 28308,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2024-04-04T06:04:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Are you playing SPT 3.8.0? Blacklist v2.0.0 is only designed with SPT 380 in mind. Blacklist v1 doesn\u2019t work on SPT 380, and you should be using the older version for 376</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 28583,
+   "parent_id": null,
+   "author": "Limus",
+   "author_id": 27283,
+   "author_url": "https://forge.sp-tarkov.com/user/27283/limus",
+   "created_at": "2024-04-05T14:56:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>does this mod enable non fir items to be sold on the flea market? i only have this and svm installed on my 3.7.1 and my 3.8 installs but on 3.8 i cant sell the non fir items on flea</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 99196,
+   "parent_id": 28583,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2024-04-06T03:53:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>No, that is not currently a feature. May be added in the future though.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 28828,
+   "parent_id": null,
+   "author": "puggy65",
+   "author_id": 42606,
+   "author_url": "https://forge.sp-tarkov.com/user/42606/puggy65",
+   "created_at": "2024-04-07T10:25:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i love the fact that i am probably the only other person to recognise the reference in the icon photo.</p>\n<p>raymond my beloved</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 100084,
+   "parent_id": 28828,
+   "author": "cxh",
+   "author_id": 37136,
+   "author_url": "https://forge.sp-tarkov.com/user/37136/cxh",
+   "created_at": "2024-04-11T23:56:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>right there with you brother, just got to season 9 last week</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 29943,
+   "parent_id": null,
+   "author": "sheard",
+   "author_id": 48223,
+   "author_url": "https://forge.sp-tarkov.com/user/48223/sheard",
+   "created_at": "2024-04-17T17:08:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>good mod, although im having an issue where it makes all the blacklisted helmets very cheap. for example altyn and rys-t sell for around 20k, same with other helmets. all the other blacklisted item categories have normal prices except helmets.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 101134,
+   "parent_id": 29943,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2024-04-17T22:27:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Ah, these will need to have their prices adjusted manually. Currently it\u2019s just their handbook price multiplied by 3 which ends up around 20k</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 30525,
+   "parent_id": null,
+   "author": "Eisenhower",
+   "author_id": 35676,
+   "author_url": "https://forge.sp-tarkov.com/user/35676/eisenhower",
+   "created_at": "2024-04-23T09:44:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>it should work with live flea price mod i think ?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 32017,
+   "parent_id": null,
+   "author": "dusher4",
+   "author_id": 39259,
+   "author_url": "https://forge.sp-tarkov.com/user/39259/dusher4",
+   "created_at": "2024-05-13T20:40:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is there any reason why T-7s can\u2019t be changed? They seem to be stuck at around 3-5 mil no matter what I do - I understand this has been a bug in the past. Same thing here, just that one item being weird?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 103995,
+   "parent_id": 32017,
+   "author": "osumunbro",
+   "author_id": 31863,
+   "author_url": "https://forge.sp-tarkov.com/user/31863/osumunbro",
+   "created_at": "2024-05-15T23:51:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>+1</p>\n<p>also noticed this with the flir. price does not change no matter what options are used (multiplier, price override, etc.)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 32398,
+   "parent_id": null,
+   "author": "CaptainKrunk",
+   "author_id": 50514,
+   "author_url": "https://forge.sp-tarkov.com/user/50514/captainkrunk",
+   "created_at": "2024-05-18T21:02:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Changed the weapon case sale price for flea in the config, but it still is 6mil on the flea. Everything else works. How can I go about fixing this? SVM is not overwriting this and only other mod is live flea prices which is loaded before this.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 104575,
+   "parent_id": 32398,
+   "author": "Hood",
+   "author_id": 52386,
+   "author_url": "https://forge.sp-tarkov.com/user/52386/hood",
+   "created_at": "2024-05-21T22:20:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey, if you still need a solution for this I found a workaround to fix this. I created some code to format the live flea prices and store them in the blacklist config. Now I can change the price of any item in the blacklist config. Except some of the bugged items like T-7s and flirs as they are bugged right now for some reason. Let me know and ill try to share the solution.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 32771,
+   "parent_id": null,
+   "author": "Hood",
+   "author_id": 52386,
+   "author_url": "https://forge.sp-tarkov.com/user/52386/hood",
+   "created_at": "2024-05-24T01:37:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>If u are using Live Flea Prices and The Blacklist and cant change prices of some items using the customItemConfigs in the Blacklist config.jsonc, Here is a solution for you. I wrote some code to store all the live flea prices inside of the Blacklist config</p>\n<p><a href=\"https://pastebin.com/qwZ4uygk\" target=\"_blank\" rel=\"noreferrer noopener\">Pastebin Link</a></p>\n<p>1. First make a copy of your current Blacklist config.jsonc just in case you already made changes you want to keep later. Then press the link above and hit the copy button. Open your config.jsonc delete everything then paste and save file.</p>\n<p>2. Be sure to delete the Live Flea Prices mod as this change wont work with it installed</p>\n<p>I suggest skimming the top of the customItemConfigs array as I changed prices of some helmets as I thought some of them were way too cheap. Customize to your liking. Items like T-7s and flirs are bugged at the moment and their prices cannot be changed so I personally set them to blacklisted in the config.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 104930,
+   "parent_id": 32771,
+   "author": "Pr0Zac",
+   "author_id": 51811,
+   "author_url": "https://forge.sp-tarkov.com/user/51811/pr0zac",
+   "created_at": "2024-05-25T17:46:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey man, is there anyway you can change that code so it just grabs from the SPT ragfair final price values?<br />\nWould be handy to create a config file for The Blacklist from the base SPT price database instead of Live Flea Prices database</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 104977,
+   "parent_id": 32771,
+   "author": "Hood",
+   "author_id": 52386,
+   "author_url": "https://forge.sp-tarkov.com/user/52386/hood",
+   "created_at": "2024-05-26T05:50:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p><a href=\"https://pastebin.com/tUueirc5\" target=\"_blank\" rel=\"noreferrer noopener\">Pastebin Link</a></p>\n<p>this new config stores every item and sets the price to their flea market price. If it has no flea market price it will use its handbook price. I hope this is what your looking for. I am still very new to SPT mods. At the top of customItemConfigs I still had to change a few helmet prices as they are extremely low.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 33001,
+   "parent_id": null,
+   "author": "armiqq",
+   "author_id": 50967,
+   "author_url": "https://forge.sp-tarkov.com/user/50967/armiqq",
+   "created_at": "2024-05-27T04:13:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>How do I get the mod to work with Realism on 3.8.3? It\u2019s like he doesn\u2019t see this mod</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 105114,
+   "parent_id": 33001,
+   "author": "armiqq",
+   "author_id": 50967,
+   "author_url": "https://forge.sp-tarkov.com/user/50967/armiqq",
+   "created_at": "2024-05-27T04:36:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Although everything worked on version 3.8.1. The mod loads in the console, there are no errors, but it still doesn\u2019t work. I tried to delete realism and leave only it - it still doesn\u2019t work</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 105206,
+   "parent_id": 33001,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2024-05-28T00:07:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>If you have Flea Market changes enabled for Realism, it\u2019ll create too many conflicts with this mod.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 105207,
+   "parent_id": 32771,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2024-05-28T00:10:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I may look at making this mod compatible with Live Flea Prices. It\u2019s a bit tricky since iirc, the values from live are retrieved after my mod is loaded. I tried to solve this by manually delaying my mod in the v1 version but it creates a lot of issues. I\u2019m tempted to say this mod isn\u2019t compatible with Live Flea Prices by default. Thanks for providing the workaround with the config.jsonc.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 105208,
+   "parent_id": 32398,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2024-05-28T00:11:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Sorry for late response, I thought I had tested the overrides. Which SPT and mod version are you using? I had someone complain the price override versions werent working but they were using an old SPT version.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 33072,
+   "parent_id": null,
+   "author": "NinjaKid225",
+   "author_id": 52825,
+   "author_url": "https://forge.sp-tarkov.com/user/52825/ninjakid225",
+   "created_at": "2024-05-28T03:44:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>How does one change the Flea Market Fee prices? I dunno how I did it but I somehow made using the Flea impossible with the fees. By which I mean I am messing around with changing values so I don\u2019t have to pay MUCH for what I think the items are worth and somehow I made it to where instead of paying like a 20 ruble fee, for 1 ruble I have to pay 300k fee</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 105228,
+   "parent_id": 33072,
+   "author": "Hood",
+   "author_id": 52386,
+   "author_url": "https://forge.sp-tarkov.com/user/52386/hood",
+   "created_at": "2024-05-28T04:51:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Easiest way I can think of is using the SVM mod and disabling the flea fee entirely.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 105244,
+   "parent_id": 33072,
+   "author": "NinjaKid225",
+   "author_id": 52825,
+   "author_url": "https://forge.sp-tarkov.com/user/52825/ninjakid225",
+   "created_at": "2024-05-28T06:10:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Well the issue is that particular mod is currently out of commission due to Google and Malwarebytes thinking that a file inside the mod is a Virus and won\u2019t allow me to bypass the block so i can download it like I initially planned</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 105263,
+   "parent_id": 32771,
+   "author": "Kot",
+   "author_id": 33878,
+   "author_url": "https://forge.sp-tarkov.com/user/33878/kot",
+   "created_at": "2024-05-28T11:11:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yes please, without this mod I kinda hate having to sell the blacklisted items for pennies cause their price in the pricebook is like 30k</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 33148,
+   "parent_id": null,
+   "author": "Gilmor",
+   "author_id": 52838,
+   "author_url": "https://forge.sp-tarkov.com/user/52838/gilmor",
+   "created_at": "2024-05-29T05:25:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Don<code>t know why, but the mod doesn</code>t work. I see in server console that it has found some blacklisted items to update, but non of the blicklisted items actually appear in the list. Neither weapons nor the armor plates<br />\nP.S. Don`t have any other mods which can influence the market.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 105506,
+   "parent_id": 32398,
+   "author": "Pr0Zac",
+   "author_id": 51811,
+   "author_url": "https://forge.sp-tarkov.com/user/51811/pr0zac",
+   "created_at": "2024-05-30T07:23:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey man, just tested this on SPT 3.8.3 with Blacklist 2.0, the ammo price modifier works (i have ammo price rebalancing feature enabled as well)</p>\n<p>the overall blacklist price modifier doesn\u2019t seem to work at all,</p>\n<p>and individual item price overrides work</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 105869,
+   "parent_id": 32398,
+   "author": "CaptainKrunk",
+   "author_id": 50514,
+   "author_url": "https://forge.sp-tarkov.com/user/50514/captainkrunk",
+   "created_at": "2024-06-02T18:49:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I seemed to have fixed it by making sure it was at the bottom, or last, in my load order.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 106043,
+   "parent_id": 33148,
+   "author": "Gilmor",
+   "author_id": 52838,
+   "author_url": "https://forge.sp-tarkov.com/user/52838/gilmor",
+   "created_at": "2024-06-04T07:21:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>UPD. I installed this mod again few days later and it started working. I don\u2019t know why. The only thing I did was change the load order, but I haven\u2019t had any mods that can impact flea market.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 106446,
+   "parent_id": 33148,
+   "author": "Goflishe",
+   "author_id": 37281,
+   "author_url": "https://forge.sp-tarkov.com/user/37281/goflishe",
+   "created_at": "2024-06-08T06:23:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>How do you change the load order? The mod isnt working for me right now.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 33880,
+   "parent_id": null,
+   "author": "ch_yaroslav",
+   "author_id": 52523,
+   "author_url": "https://forge.sp-tarkov.com/user/52523/ch-yaroslav",
+   "created_at": "2024-06-08T22:51:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Any ideas why ammo boxes are still on flea, even if it is disabled in advancedConfig?<br />\nEverything else works as intended</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 33895,
+   "parent_id": null,
+   "author": "Stuffysmurfy",
+   "author_id": 19615,
+   "author_url": "https://forge.sp-tarkov.com/user/19615/stuffysmurfy",
+   "created_at": "2024-06-09T01:30:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The mod doesn\u2019t seem to work on version 3.8.3</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 106528,
+   "parent_id": 33880,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2024-06-09T02:54:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Maybe its because many of them were unblacklisted in the main game. This may need to be revised when I have time in the future.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 106874,
+   "parent_id": 33148,
+   "author": "Gilmor",
+   "author_id": 52838,
+   "author_url": "https://forge.sp-tarkov.com/user/52838/gilmor",
+   "created_at": "2024-06-11T19:33:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            \n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 34259,
+   "parent_id": null,
+   "author": "XxCORVUSxX",
+   "author_id": 53721,
+   "author_url": "https://forge.sp-tarkov.com/user/53721/xxcorvusxx",
+   "created_at": "2024-06-14T12:02:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Good time of day. Please tell me if it is possible to remove offers for dollars and euros. Leave only rubles?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 107165,
+   "parent_id": 34259,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2024-06-14T12:04:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I thought they are excluded already. Maybe trying loading this as the last mod</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 34312,
+   "parent_id": null,
+   "author": "Erbalremedy",
+   "author_id": 53079,
+   "author_url": "https://forge.sp-tarkov.com/user/53079/erbalremedy",
+   "created_at": "2024-06-15T15:27:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Will this MOD be updated for 3.8.3?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 107851,
+   "parent_id": 34312,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2024-06-22T22:38:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Maybe when I have time to update my SPT</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 36527,
+   "parent_id": null,
+   "author": "The Techno",
+   "author_id": 52923,
+   "author_url": "https://forge.sp-tarkov.com/user/52923/the-techno",
+   "created_at": "2024-07-17T17:58:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Could functionality be added to flip it around so you can leave the blacklist active and unblacklist things and apply the rules to them?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 110297,
+   "parent_id": 36527,
+   "author": "The Techno",
+   "author_id": 52923,
+   "author_url": "https://forge.sp-tarkov.com/user/52923/the-techno",
+   "created_at": "2024-07-17T18:35:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I figured it out!</p>\n<p>In the advanced config file under excludedcategories you can exclude categories, but when you use itemfinder to get them you have to look under the item you want to ban and find the handbook section, then parent id and use that. It\u2019ll ban that class of item like helmets for the altyn for example.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 37228,
+   "parent_id": null,
+   "author": "CaptainKrunk",
+   "author_id": 50514,
+   "author_url": "https://forge.sp-tarkov.com/user/50514/captainkrunk",
+   "created_at": "2024-07-24T04:37:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Using Live Flea Prices as well as this mod, and am having an issue where despite using the dynamic price change for ammo, it never \u201csticks\u201d. When I first load up the server, ammo is changed, but it always reverts back to other prices. For example, Flechette ammo with the dynamic change is ~400r/round but then reverts back to ~4000-7000r/round.</p>\n<p>Any fixes to this?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 111249,
+   "parent_id": 37228,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2024-07-24T07:37:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Try loading this mod after live flea prices, maybe by adding some letter z in front of this mod\u2019s folder name.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 111264,
+   "parent_id": 37228,
+   "author": "CaptainKrunk",
+   "author_id": 50514,
+   "author_url": "https://forge.sp-tarkov.com/user/50514/captainkrunk",
+   "created_at": "2024-07-24T10:48:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I used load order editor to do that, it is currently dead last in my load order.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 37510,
+   "parent_id": null,
+   "author": "NinjaKid225",
+   "author_id": 52825,
+   "author_url": "https://forge.sp-tarkov.com/user/52825/ninjakid225",
+   "created_at": "2024-07-27T05:57:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I am having an odd issue with the price override feature of this mod. I have tested this on numerous items but the value never changes. I have set some items down to 10-200 rubles to test this but the item prices do not change on the flea. I have all the Price Multipliers set to how I want them but they really don\u2019t seem to stick. I am using the correct ID finder and ID tags (which I assume on the Item Finder site is the \u201c_id\u201d tag) so Im either doing something wrong or SPT 3.9 isn\u2019t liking whatever I am doing without letting me know in the Console. Is there any way I can have help figuring this out? Thank you!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 112536,
+   "parent_id": 37510,
+   "author": "NinjaKid225",
+   "author_id": 52825,
+   "author_url": "https://forge.sp-tarkov.com/user/52825/ninjakid225",
+   "created_at": "2024-08-02T16:40:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I figured this out. What you have to do (assuming anyone else runs into the same issue) is go to the <strong>Advanced Config</strong> file and set \u201cuseTraderPriceForOffersIfHigher\u201d to false. I don\u2019t really know how I missed this, but once you change this, the prices will stick with what you set them. I am dumb dumb</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 40451,
+   "parent_id": null,
+   "author": "Nena",
+   "author_id": 63138,
+   "author_url": "https://forge.sp-tarkov.com/user/63138/nena",
+   "created_at": "2024-09-05T13:20:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Any way to make this mod just change the blacklist status of ammo? The rest of the items would be preferred to stay on the list.</p>\n<p>Also for people trying to make this work with live flea prices, add this to your config/blacklist.json in the live flea prices folder:</p>\n<p><a href=\"https://pastebin.com/HU4kejQg\" target=\"_blank\" rel=\"noreferrer noopener\">https://pastebin.com/HU4kejQg</a></p>\n<p>This makes LFP skip ammo prices.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 40684,
+   "parent_id": null,
+   "author": "jyklio",
+   "author_id": 63439,
+   "author_url": "https://forge.sp-tarkov.com/user/63439/jyklio",
+   "created_at": "2024-09-08T19:52:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>For some reason blacklisted helmets always sell for very cheap and config settings don\u2019t change it. Airframes are 12k. Every other item category works fine. I\u2019ve tried with the use trader prices setting on and off. Even the sales price multiplier doesn\u2019t work for helmets, but does for everything else.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 41157,
+   "parent_id": null,
+   "author": "turkeyman556",
+   "author_id": 64099,
+   "author_url": "https://forge.sp-tarkov.com/user/64099/turkeyman556",
+   "created_at": "2024-09-18T16:12:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Would there be any way to have a price multiplier on a specific category?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 121972,
+   "parent_id": 40684,
+   "author": "Trixualz",
+   "author_id": 30118,
+   "author_url": "https://forge.sp-tarkov.com/user/30118/trixualz",
+   "created_at": "2024-12-13T15:26:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>did you find any fix i have the same issue</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 46627,
+   "parent_id": null,
+   "author": "mashdoopster",
+   "author_id": 62804,
+   "author_url": "https://forge.sp-tarkov.com/user/62804/mashdoopster",
+   "created_at": "2025-01-10T23:12:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I don\u2019t have this mod, but hoping this mod can help.</p>\n<p>Items like the G28 and Sr-25, which are normally locked in flea behind quests, are available at prices cheaper than the quest item price. Funny thing is, the MDR 7.62 is correctly locked in flea behind the quest.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 46724,
+   "parent_id": null,
+   "author": "CaptainKrunk",
+   "author_id": 50514,
+   "author_url": "https://forge.sp-tarkov.com/user/50514/captainkrunk",
+   "created_at": "2025-01-12T16:12:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Oddly, I cant seem to find a way to blacklist the locked Arena bodes, despite setting the full list as blacklisted in the config. Has anyone else tried to do this with success? You can list the boxes on the flea for any amount of money you want, and they will sell.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 46784,
+   "parent_id": null,
+   "author": "SensualScav",
+   "author_id": 14669,
+   "author_url": "https://forge.sp-tarkov.com/user/14669/sensualscav",
+   "created_at": "2025-01-13T12:08:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>would it be possible to blacklist entire item groups with this? for example all ammo at once with the groupID</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 48460,
+   "parent_id": null,
+   "author": "RickyRakka",
+   "author_id": 73435,
+   "author_url": "https://forge.sp-tarkov.com/user/73435/rickyrakka",
+   "created_at": "2025-02-13T23:57:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Mod can\u2019t be downloaded anymore migrated off of Gitea</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 48464,
+   "parent_id": null,
+   "author": "Hakaruma",
+   "author_id": 73437,
+   "author_url": "https://forge.sp-tarkov.com/user/73437/hakaruma",
+   "created_at": "2025-02-14T00:42:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>500 \u0412\u043d\u0443\u0442\u0440\u0435\u043d\u043d\u044f\u044f \u043e\u0448\u0438\u0431\u043a\u0430 \u0441\u0435\u0440\u0432\u0435\u0440\u0430</p>\n<p>\u0412\u0435\u0440\u0441\u0438\u044f Gitea: 1.23.1<br />\n\u041a \u0441\u043e\u0436\u0430\u043b\u0435\u043d\u0438\u044e \u043d\u0435 \u0441\u043a\u0430\u0447\u0430\u0442\u044c</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 49738,
+   "parent_id": null,
+   "author": "lilldizzy",
+   "author_id": 57484,
+   "author_url": "https://forge.sp-tarkov.com/user/57484/lilldizzy",
+   "created_at": "2025-03-21T11:08:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>have a problem<br />\n\u201c\u0412 \u043c\u043e\u0434\u0435 platinum-theblacklist package.json \u0441\u043e\u0434\u0435\u0440\u0436\u0438\u0442 \u043d\u0435\u0434\u043e\u043f\u0443\u0441\u0442\u0438\u043c\u0443\u044e \u0441\u0442\u0440\u043e\u043a\u0443 \u0432\u0435\u0440\u0441\u0438\u0438\u201d<br />\nIn mod \u201cplatinum-theblacklist\u201d file package.json contains an invalid version string</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 128520,
+   "parent_id": 49738,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2025-03-21T11:37:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Uploaded new zip which should contain fix.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 49739,
+   "parent_id": null,
+   "author": "loveUseless",
+   "author_id": 50179,
+   "author_url": "https://forge.sp-tarkov.com/user/50179/loveuseless",
+   "created_at": "2025-03-21T12:10:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Blacklist is still there. I thought it\u2019s conflict with greed, but after disabling it i still can\u2019t sell items like SNB. Can send you logs if you need them.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 128529,
+   "parent_id": 49739,
+   "author": "lilldizzy",
+   "author_id": 57484,
+   "author_url": "https://forge.sp-tarkov.com/user/57484/lilldizzy",
+   "created_at": "2025-03-21T13:31:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i have same problem, i can buy blacklisted item but can`t sell it</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 128546,
+   "parent_id": 49739,
+   "author": "Flizir",
+   "author_id": 63612,
+   "author_url": "https://forge.sp-tarkov.com/user/63612/flizir",
+   "created_at": "2025-03-21T17:32:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Do you guys know how to fix that?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 128550,
+   "parent_id": 49739,
+   "author": "loveUseless",
+   "author_id": 50179,
+   "author_url": "https://forge.sp-tarkov.com/user/50179/loveuseless",
+   "created_at": "2025-03-21T19:39:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Nope. prob need to wait for mod autor to look into it</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 128553,
+   "parent_id": 49739,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2025-03-21T20:29:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Damn, I dont have or want to install SPT anymore to troubleshoot this</p>\n<p>Edit: I have added this as an issue on Github for anyone to investigate as the mod is open source.</p>\n<p><a href=\"https://github.com/gndworks/spt-the-blacklist/issues/2\" target=\"_blank\" rel=\"noreferrer noopener\">https://github.com/gndworks/spt-the-blacklist/issues/2</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 3
+  },
+  {
+   "id": 128560,
+   "parent_id": 49739,
+   "author": "Flizir",
+   "author_id": 63612,
+   "author_url": "https://forge.sp-tarkov.com/user/63612/flizir",
+   "created_at": "2025-03-21T23:00:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>\ud83d\ude4f\ud83d\ude4f\ud83d\ude4f</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 128619,
+   "parent_id": 49739,
+   "author": "Zorax",
+   "author_id": 47980,
+   "author_url": "https://forge.sp-tarkov.com/user/47980/zorax",
+   "created_at": "2025-03-23T12:00:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Not sure If welcomed or even allowed here but I got it to work for me.</p>\n<p>Also I\u2019m to no means an expert here and also not sure if this is the right method, so use it at your own risk.</p>\n<p>In \u201cuser\\mods\\platinum-theblacklist\\src\\mod.ts\u201d at line 109 ( directly after this.blacklistedItemsUpdatedCount++; ) I added the following line:</p>\n<p>itemProps.CanSellOnRagfair=true;</p>\n<p>If the author of this mod wishes to, I will delete this comment.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 3
+  },
+  {
+   "id": 128656,
+   "parent_id": 49739,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2025-03-24T07:45:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>That makes sense, I wonder if I accidentally removed that line of code a long time ago or if it\u2019s some new change from SPT. I\u2019ll add that line to the code and update the mod.</p>\n<p>Edit: I have uploaded 2.0.4b containing change described by Zorax above. Thank you.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 50090,
+   "parent_id": null,
+   "author": "jax22",
+   "author_id": 75700,
+   "author_url": "https://forge.sp-tarkov.com/user/75700/jax22",
+   "created_at": "2025-03-30T02:06:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is there a way to change prices of modded items?</p>\n<p>I\u2019ve been trying to use the item id of modded items and the prices just arent applying. What else could I do?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 53432,
+   "parent_id": null,
+   "author": "ALADEEN2004",
+   "author_id": 77226,
+   "author_url": "https://forge.sp-tarkov.com/user/77226/aladeen2004",
+   "created_at": "2025-07-02T08:13:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is there a way to unlock those \u201cLOCKED\u201d flea items by config?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 53595,
+   "parent_id": null,
+   "author": "Osumunbro_",
+   "author_id": 81004,
+   "author_url": "https://forge.sp-tarkov.com/user/81004/osumunbro",
+   "created_at": "2025-07-07T21:17:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>im still unable to sell blacklisted items with 2.0.4b</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 53930,
+   "parent_id": null,
+   "author": "SuperBoy_1",
+   "author_id": 81784,
+   "author_url": "https://forge.sp-tarkov.com/user/81784/superboy-1",
+   "created_at": "2025-07-17T12:13:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I want to enable the Flea blacklist. I have tried changing the \u201cdisableBsgBlacklist\u201d: true \u201cin config.jsonc to false, but the item that should not appear in Flea still exists. Does anyone know how to solve this problem?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 54051,
+   "parent_id": null,
+   "author": "MikaNeon",
+   "author_id": 62936,
+   "author_url": "https://forge.sp-tarkov.com/user/62936/mikaneon",
+   "created_at": "2025-07-20T20:42:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi, I have a request!<br />\nCan you add an optin to blacklist ParentIDs?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133812,
+   "parent_id": 54051,
+   "author": "MikaNeon",
+   "author_id": 62936,
+   "author_url": "https://forge.sp-tarkov.com/user/62936/mikaneon",
+   "created_at": "2025-07-20T20:52:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Oh, I understand - it can block items one step deep.<br />\nBut I need an option to blacklist flea section entierly.<br />\nLike \u201ckey\u201d (all keys) or \u201cweapon\u201d (All weapons)</p>\n<p>There are other mod with this function (Flea limiter), but it doesn\u2019t work with this mod.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 134585,
+   "parent_id": 54051,
+   "author": "egbog",
+   "author_id": 169,
+   "author_url": "https://forge.sp-tarkov.com/user/169/egbog",
+   "created_at": "2025-08-07T03:21:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I added this functionality about a year ago; there\u2019s an example in the config for headwear. You must make sure you are using the correct id for the parent and just add \u201cblacklisted\u201d: true. Let me know if this isn\u2019t working because it should afaik</p>\n<p>example</p>\n<p>{ // All keys (mechanical, keycards etc) \u201citemId\u201d: \u201c543be5e94bdc2df1348b4568\u201d, \u201cblacklisted\u201d: true },</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 137299,
+   "parent_id": 54051,
+   "author": "extruter",
+   "author_id": 84696,
+   "author_url": "https://forge.sp-tarkov.com/user/84696/extruter",
+   "created_at": "2025-09-22T21:45:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>egbog, this is not working for me. I try to do add it</p>\n<p>{</p>\n<p>// All keys (mechanical, keycards etc)</p>\n<p>\u201citemId\u201d: \u201c543be5e94bdc2df1348b4568\u201d,</p>\n<p>\u201cblacklisted\u201d: true</p>\n<p>},</p>\n<p>or</p>\n<p>// Items that are blacklisted in these categories will remain blacklisted.</p>\n<p>\u201cexcludedCategories\u201d: [</p>\n<p>\u201c5b5f78b786f77447ed5636af\u201d, // Money, dont want people buying roubles with roubles</p>\n<p>\u201c5b47574386f77428ca22b345\u201d, // Special equipment, dont want people buying lightkeeper items</p>\n<p>\u201c543be5e94bdc2df1348b4568\u201d, //Try adding here</p>\n<p>\u201c5b47574386f77428ca22b33c\u201d // Ammo boxes, some ammo boxes are really cheap, some are very expensive. Just buy loose rounds instead.</p>\n<p>],</p>\n<p>But no luck. I can only block individual items</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 138525,
+   "parent_id": null,
+   "author": "Topist",
+   "author_id": 85656,
+   "author_url": "https://forge.sp-tarkov.com/user/85656/topist",
+   "created_at": "2025-10-13T09:20:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>can we have this on 4.0.0 plz?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 139192,
+   "parent_id": null,
+   "author": "PE3141592653",
+   "author_id": 23260,
+   "author_url": "https://forge.sp-tarkov.com/user/23260/pe3141592653",
+   "created_at": "2025-10-18T21:09:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I can\u2019t imagine how I would play the game without this mod. I hope we can see an update soon.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 139296,
+   "parent_id": 139192,
+   "author": "thegodcyborg-9QP1V",
+   "author_id": 85631,
+   "author_url": "https://forge.sp-tarkov.com/user/85631/thegodcyborg-9qp1v",
+   "created_at": "2025-10-19T18:34:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>That is what I\u2019m saying, running into Labyrinth with average ammo is really hard. These modders are really amazing and they are probably working hard on it since all of the updates.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 139914,
+   "parent_id": 139192,
+   "author": "ArchangelWTF",
+   "author_id": 52282,
+   "author_url": "https://forge.sp-tarkov.com/user/52282/archangelwtf",
+   "created_at": "2025-10-24T15:02:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I have updated it to 4.0</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 139916,
+   "parent_id": 138525,
+   "author": "ArchangelWTF",
+   "author_id": 52282,
+   "author_url": "https://forge.sp-tarkov.com/user/52282/archangelwtf",
+   "created_at": "2025-10-24T15:03:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Done! Feel free to try it out</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 139919,
+   "parent_id": 139192,
+   "author": "thegodcyborg-9QP1V",
+   "author_id": 85631,
+   "author_url": "https://forge.sp-tarkov.com/user/85631/thegodcyborg-9qp1v",
+   "created_at": "2025-10-24T15:45:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I hope to be as good as you one day at programming. I am a medically retired Marine going back to school to be a software engineer and I thank you for everything you do.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 139967,
+   "parent_id": null,
+   "author": "UltraSuperNova",
+   "author_id": 33267,
+   "author_url": "https://forge.sp-tarkov.com/user/33267/ultrasupernova",
+   "created_at": "2025-10-24T20:45:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>hello, not sure if you meant this but you might\u2019ve forgotten to blacklist USEC \u201cunheard edition\u201d dogtags from the flea</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 139968,
+   "parent_id": 139967,
+   "author": "UltraSuperNova",
+   "author_id": 33267,
+   "author_url": "https://forge.sp-tarkov.com/user/33267/ultrasupernova",
+   "created_at": "2025-10-24T20:52:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>specifically ID: \u201c6662ea05f6259762c56f3189\u201d</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 139978,
+   "parent_id": null,
+   "author": "garfieldmd.",
+   "author_id": 86026,
+   "author_url": "https://forge.sp-tarkov.com/user/86026/garfieldmd",
+   "created_at": "2025-10-24T23:04:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>yay! the softcore wipe is real!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 140602,
+   "parent_id": null,
+   "author": "Terminator",
+   "author_id": 87551,
+   "author_url": "https://forge.sp-tarkov.com/user/87551/terminator",
+   "created_at": "2025-10-29T20:07:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>wow! Thank U so much!!! :D I need this mod forever! :3</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 141176,
+   "parent_id": null,
+   "author": "avehulian",
+   "author_id": 88200,
+   "author_url": "https://forge.sp-tarkov.com/user/88200/avehulian",
+   "created_at": "2025-11-04T10:56:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>can you possibly add a config to disable flea categories?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 142953,
+   "parent_id": null,
+   "author": "fecaldisco",
+   "author_id": 89916,
+   "author_url": "https://forge.sp-tarkov.com/user/89916/fecaldisco",
+   "created_at": "2025-11-17T21:41:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Will this mod conflict with SVM? Server value modifier has a \u201cDisable BSG flea market blacklist\u201d toggle in its Flea Market section.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 143507,
+   "parent_id": null,
+   "author": "rSlade",
+   "author_id": 89669,
+   "author_url": "https://forge.sp-tarkov.com/user/89669/rslade",
+   "created_at": "2025-11-22T13:12:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey. Does anybody know if it is compatible with Live Flea Prices? I suppose not, but still</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 144230,
+   "parent_id": 142953,
+   "author": "ArchangelWTF",
+   "author_id": 52282,
+   "author_url": "https://forge.sp-tarkov.com/user/52282/archangelwtf",
+   "created_at": "2025-11-28T20:48:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It should be alright, I think SVM changes the same config option</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 144350,
+   "parent_id": null,
+   "author": "CottonCandy",
+   "author_id": 92887,
+   "author_url": "https://forge.sp-tarkov.com/user/92887/cottoncandy",
+   "created_at": "2025-11-29T22:49:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2025-12-07 14:02:04]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 145322,
+   "parent_id": null,
+   "author": "AlexTom",
+   "author_id": 92470,
+   "author_url": "https://forge.sp-tarkov.com/user/92470/alextom",
+   "created_at": "2025-12-07T13:33:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Excellent mod! However, I\u2019ve encountered a pricing conflict when using it together with \u201cLive Flea Prices.\u201d It appears to disrupt the intended balance between certain items\u2014for instance, M855A1 and M995 end up sharing the same price point when their values should be distinct. Removing \u201cLive Flea Prices\u201d resolved the issue. Is there a way to get both mods to work together harmoniously?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 145739,
+   "parent_id": null,
+   "author": "druidqwerty",
+   "author_id": 50818,
+   "author_url": "https://forge.sp-tarkov.com/user/50818/druidqwerty",
+   "created_at": "2025-12-10T22:37:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello! Anyway to add option FIR only for Flea? because SVM messing with this mod prices when enabling FIR only in SVM.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 145973,
+   "parent_id": 145739,
+   "author": "ArchangelWTF",
+   "author_id": 52282,
+   "author_url": "https://forge.sp-tarkov.com/user/52282/archangelwtf",
+   "created_at": "2025-12-13T19:04:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>In the next release there will be an option to enable FiR only selling for the flea.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 145977,
+   "parent_id": 145322,
+   "author": "ArchangelWTF",
+   "author_id": 52282,
+   "author_url": "https://forge.sp-tarkov.com/user/52282/archangelwtf",
+   "created_at": "2025-12-13T19:12:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I doubt it, both affect the flea pretty heavily</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 145978,
+   "parent_id": 139967,
+   "author": "ArchangelWTF",
+   "author_id": 52282,
+   "author_url": "https://forge.sp-tarkov.com/user/52282/archangelwtf",
+   "created_at": "2025-12-13T19:13:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I never got back to you, but thanks! That one will be added to the config in the next release.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 146978,
+   "parent_id": 145739,
+   "author": "druidqwerty",
+   "author_id": 50818,
+   "author_url": "https://forge.sp-tarkov.com/user/50818/druidqwerty",
+   "created_at": "2025-12-25T11:17:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 148811,
+   "parent_id": null,
+   "author": "Jamjom",
+   "author_id": 7801,
+   "author_url": "https://forge.sp-tarkov.com/user/7801/jamjom",
+   "created_at": "2026-01-03T22:54:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>For some reason, I can\u2019t list only 6.8 Hybrid ammo on the flea.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 149714,
+   "parent_id": null,
+   "author": "Mr.Monkey",
+   "author_id": 39177,
+   "author_url": "https://forge.sp-tarkov.com/user/39177/mrmonkey",
+   "created_at": "2026-01-10T22:01:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is it possible to add a custom blacklisting/whitelisting feature? That way we can make our own configs for certain playstyles like keys only, would be huge.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 150806,
+   "parent_id": null,
+   "author": "biggus",
+   "author_id": 100038,
+   "author_url": "https://forge.sp-tarkov.com/user/100038/biggus",
+   "created_at": "2026-01-21T23:05:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Can someone verify whether handbookPriceMultiplier in advancedConfig.jsonc only affects blacklisted items as described in the comment or if it\u2019s supposed to affect the handbook price of ALL items?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 150852,
+   "parent_id": 150806,
+   "author": "ArchangelWTF",
+   "author_id": 52282,
+   "author_url": "https://forge.sp-tarkov.com/user/52282/archangelwtf",
+   "created_at": "2026-01-22T19:07:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The handbook price multiplier is for all of the items in the handbook, if it doesn\u2019t have that it will look it up in the normal pricing and use BlacklistedItemPriceMultiplier</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 150855,
+   "parent_id": 150806,
+   "author": "biggus",
+   "author_id": 100038,
+   "author_url": "https://forge.sp-tarkov.com/user/100038/biggus",
+   "created_at": "2026-01-22T21:02:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>If you have the time to get around to it, might be worth updating the associated comment with your explanation if the multiplier isn\u2019t limited to previously blacklisted items. Thanks for the clarification.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151583,
+   "parent_id": null,
+   "author": "nnyjerry",
+   "author_id": 103923,
+   "author_url": "https://forge.sp-tarkov.com/user/103923/nnyjerry",
+   "created_at": "2026-01-31T18:38:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Item price is Zero: Lucky DEVELOPER junkbox| Check handbook data on backend.\nItem price is Zero: RShG-2 72.5mm rocket launcher| Check handbook data on backend.\nbro,how can i fix it?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 155092,
+   "parent_id": null,
+   "author": "Losingit9605",
+   "author_id": 107470,
+   "author_url": "https://forge.sp-tarkov.com/user/107470/losingit9605",
+   "created_at": "2026-03-19T18:43:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Stupid question, whose the guy on the thumbnail of the mod?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 155253,
+   "parent_id": 155092,
+   "author": "Heithwald",
+   "author_id": 37303,
+   "author_url": "https://forge.sp-tarkov.com/user/37303/heithwald",
+   "created_at": "2026-03-22T20:50:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>the main character from The Blacklist series</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 155275,
+   "parent_id": 155092,
+   "author": "Losingit9605",
+   "author_id": 107470,
+   "author_url": "https://forge.sp-tarkov.com/user/107470/losingit9605",
+   "created_at": "2026-03-23T02:58:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 155663,
+   "parent_id": null,
+   "author": "CaptainKrunk",
+   "author_id": 50514,
+   "author_url": "https://forge.sp-tarkov.com/user/50514/captainkrunk",
+   "created_at": "2026-03-29T07:10:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey dude, just reporting here in hopes of finding a fix.</p>\n<p>For the life of me, I cant seem to get flea pricing to work. Blacklisting items works perfectly. I directly copied a price edit config from the file and edited the itemID to the item I needed changed and no dice. Tried many different items and no price adjustments work for me.</p>\n<p>Life Flea Prices has been removed for testing and SVM does not (in my config) touch anything flea-related.</p>\n<p>If there\u2019s anything else I can do to test, let me know.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 155786,
+   "parent_id": 155663,
+   "author": "ArchangelWTF",
+   "author_id": 52282,
+   "author_url": "https://forge.sp-tarkov.com/user/52282/archangelwtf",
+   "created_at": "2026-03-30T11:17:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I can\u2019t reproduce this, see Fika\u2019s mod development channel for more details.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 156069,
+   "parent_id": null,
+   "author": "cb12312",
+   "author_id": 102670,
+   "author_url": "https://forge.sp-tarkov.com/user/102670/cb12312",
+   "created_at": "2026-04-02T19:07:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Not sure if I missed it but does this mod conflict with the Live Flea Prices mod?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 157816,
+   "parent_id": 155663,
+   "author": "jax22",
+   "author_id": 75700,
+   "author_url": "https://forge.sp-tarkov.com/user/75700/jax22",
+   "created_at": "2026-04-23T11:44:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m having the exact same issue, please let me know if a fix is found! This worked in 3.10 and 3.11 but im getting no luck for changing prices in 4.0.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 158080,
+   "parent_id": null,
+   "author": "MichalCZ",
+   "author_id": 107127,
+   "author_url": "https://forge.sp-tarkov.com/user/107127/michalcz",
+   "created_at": "2026-04-26T15:41:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you Raymond Reddington</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 158233,
+   "parent_id": null,
+   "author": "OverworkedNerd",
+   "author_id": 37126,
+   "author_url": "https://forge.sp-tarkov.com/user/37126/overworkednerd",
+   "created_at": "2026-04-27T20:32:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Can someone tell me if there is a way to remove the tiered blacklist? I have looked through all the configs and checked SVM but I can\u2019t seem to figure it out.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 162421,
+   "parent_id": 158233,
+   "author": "Onecucu",
+   "author_id": 78867,
+   "author_url": "https://forge.sp-tarkov.com/user/78867/onecucu",
+   "created_at": "2026-06-11T17:34:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>SVM-Flea Market-Disable tiered flea</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 164170,
+   "parent_id": null,
+   "author": "avehulian",
+   "author_id": 88200,
+   "author_url": "https://forge.sp-tarkov.com/user/88200/avehulian",
+   "created_at": "2026-06-26T01:44:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>hey just wanted to mention the disableBsgBlacklist to false is not working.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 164171,
+   "parent_id": 156069,
+   "author": "avehulian",
+   "author_id": 88200,
+   "author_url": "https://forge.sp-tarkov.com/user/88200/avehulian",
+   "created_at": "2026-06-26T01:45:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>nope it actually works with it quite well!\nthe ammo changes this mod does works nicely too!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 167280,
+   "parent_id": null,
+   "author": "drollercandy",
+   "author_id": 87360,
+   "author_url": "https://forge.sp-tarkov.com/user/87360/drollercandy",
+   "created_at": "2026-07-21T03:51:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey i cannot seem to get the blacklisted ammo pricing to work, everything just sits around 3k-4k roubles per round like m80 is 2600, but m80a1 and m61 are 3300</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 167281,
+   "parent_id": 167280,
+   "author": "drollercandy",
+   "author_id": 87360,
+   "author_url": "https://forge.sp-tarkov.com/user/87360/drollercandy",
+   "created_at": "2026-07-21T03:52:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I would ideally like realistic values, where m80 is like 2k-2.5k and m61 is like 6-8k, is there any guidance you can offer?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169684,
+   "parent_id": null,
+   "author": "deniedcannon134",
+   "author_id": 119212,
+   "author_url": "https://forge.sp-tarkov.com/user/119212/deniedcannon134",
+   "created_at": "2026-08-02T10:16:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m still on version 4.0.13 is there a reason why this doesn\u2019t work, even a little, still can only sell keys. I may just suck at reading but are there mods that this 100% wont work with?</p>\n<p>Edit: So I can by blacklisted Items but i can\u2019t sell anything other than keys, I\u2019ve already checked the Config and there isn\u2019t anything wrong there, so the only thing i can think is mod conflicts, is there a type of mod that blocks this one?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170755,
+   "parent_id": null,
+   "author": "galaxy",
+   "author_id": 119597,
+   "author_url": "https://forge.sp-tarkov.com/user/119597/galaxy",
+   "created_at": "2026-08-07T18:11:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>excuse me,i just cant sell the equipment found in game,and after removed this mod anything back to normal,can you fix it?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170857,
+   "parent_id": null,
+   "author": "txx3218",
+   "author_id": 119190,
+   "author_url": "https://forge.sp-tarkov.com/user/119190/txx3218",
+   "created_at": "2026-08-08T04:04:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The \u201cuse trader price if higher than handbook price\u201d feature does not appear to be functioning as intended. For instance, the 6SH118 backpack still uses the handbook price even though the trader sells it at a higher price</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

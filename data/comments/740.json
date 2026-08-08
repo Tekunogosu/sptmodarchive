@@ -1,0 +1,2190 @@
+{
+ "mod_id": 740,
+ "slug": "welcome-gifts",
+ "fetched_at": "2026-08-08T21:03:29Z",
+ "reported_total": 69,
+ "pages": 7,
+ "count": 218,
+ "comments": [
+  {
+   "id": 11197,
+   "parent_id": null,
+   "author": "Jiblet",
+   "author_id": 14219,
+   "author_url": "https://forge.sp-tarkov.com/user/14219/jiblet",
+   "created_at": "2023-01-30T17:45:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I get the following error stack:</p>\n<p>Error: ENOENT: no such file or directory, scandir \u2018user/mods/zzz-welcome-gifts-2023/database/\u2019 Error: ENOENT: no such file or directory, scandir \u2018user/mods/zzz-welcome-gifts-2023/database/\u2019 at Object.readdirSync (node:fs:1405:3) at Object.readdirSync (pkg/prelude/bootstrap.js:1309:35) at VFS.getFiles (C:\\snapshot\\project\\obj\\utils\\VFS.js) at DatabaseImporter.loadRecursive (C:\\snapshot\\project\\obj\\utils\\DatabaseImporter.js) at WelcomeGifts2023.postDBLoad (C:\\SPT AKI\\1 SPTARKOV\\user\\mods\\zzz_Lone_Simon-WelcomeGifts\\src\\mod.js:12:39) at PostDBModLoader.executeMods (C:\\snapshot\\project\\obj\\loaders\\PostDBModLoader.js) at PostDBModLoader.onLoad (C:\\snapshot\\project\\obj\\loaders\\PostDBModLoader.js) at App.load (C:\\snapshot\\project\\obj\\utils\\App.js) at processTicksAndRejections (node:internal/process/task_queues:96:5) at process.runNextTicks [as _tickCallback] (node:internal/process/task_queues:65:3)Looks like the call at line 12 screws the pooch:</p>\n<p>const mydb = databaseImporter.loadRecursive(<code>${modLoader.getModPath(\"zzz-welcome-gifts-2023\")}database/</code>);My full path to that mod is:</p>\n<p>C:\\SPT AKI\\1 SPTARKOV\\user\\mods\\zzz_Lone_Simon-WelcomeGifts</p>\n<p>Perhaps the call should be made relative, like the call to read config.json on line 4?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 72765,
+   "parent_id": 11197,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-01-30T23:30:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is already fixed, check again</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 11219,
+   "parent_id": null,
+   "author": "crazyoldman50",
+   "author_id": 7564,
+   "author_url": "https://forge.sp-tarkov.com/user/7564/crazyoldman50",
+   "created_at": "2023-01-31T15:35:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi how is it working</p>\n<p>it for 3.5.0BE? no mod server works only dll via BepInEx Thanks</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 72824,
+   "parent_id": 11219,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-02-01T02:59:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is for 3.4.x but is working in 3.5.0</p>\n<p>If you compile your own BE Server, you can enable the mods back</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 11247,
+   "parent_id": null,
+   "author": "NotBlibl",
+   "author_id": 25180,
+   "author_url": "https://forge.sp-tarkov.com/user/25180/notblibl",
+   "created_at": "2023-02-01T15:36:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Could you please consider adding the Airframe and the Panoramic NVGs bundle from the other book? Thanks for putting this back up. I appreciate the effort.</p>\n<p>I went and grabbed the email detailing the bundle, to save time if you decided to add it.</p>\n<ul>\n<li>Crye Precision Airframe helmet with Tan GPNVG 18</li>\n<li>2 adrenaline syringes</li>\n<li>5 RGD-5</li>\n<li>200 rounds of 9x19mm Luger CCI</li>\n</ul>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 72837,
+   "parent_id": 11247,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-02-01T16:01:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>That\u2019s from <em>Voice Behind</em> ???</p>\n<p>I was waiting to someone with the loadout to add it ! thanks !! I will add as soon I can</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 72838,
+   "parent_id": 11247,
+   "author": "NotBlibl",
+   "author_id": 25180,
+   "author_url": "https://forge.sp-tarkov.com/user/25180/notblibl",
+   "created_at": "2023-02-01T16:02:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I can detail all of the loadouts for you if you want to make sure they\u2019re live accurate</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 72839,
+   "parent_id": 11247,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-02-01T16:07:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Please, but to my dm</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 11285,
+   "parent_id": null,
+   "author": "CobraChickken",
+   "author_id": 26494,
+   "author_url": "https://forge.sp-tarkov.com/user/26494/cobrachickken",
+   "created_at": "2023-02-02T22:41:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi, I don\u2019t know if I\u2019m doing anything wrong here, but I put this mod is user/mods, but I still haven\u2019t seen anything pop up/didn\u2019t receive the item. Any advice?</p>\n<p>Thanks</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 72908,
+   "parent_id": 11285,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-02-03T00:51:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Did you wipe your profile?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 72910,
+   "parent_id": 11285,
+   "author": "CobraChickken",
+   "author_id": 26494,
+   "author_url": "https://forge.sp-tarkov.com/user/26494/cobrachickken",
+   "created_at": "2023-02-03T01:11:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Oooohhh is it only for fresh wipes? I must have read that wrong</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 72912,
+   "parent_id": 11285,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-02-03T01:31:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yeah</p>\n<p>Check the blue bar in description ..</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 72915,
+   "parent_id": 11285,
+   "author": "CobraChickken",
+   "author_id": 26494,
+   "author_url": "https://forge.sp-tarkov.com/user/26494/cobrachickken",
+   "created_at": "2023-02-03T02:39:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Gotcha. Thanks!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 11299,
+   "parent_id": null,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-02-03T07:32:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <h3>Bug/issues reports:</h3>\n<p><strong>Please follow the next format to report any issue</strong></p>\n<p>[list][*]AKI-Version: [*]Mod-Version: [*]Issue description: [spoiler=Error log here]-[/spoiler] [spoiler=Client Mods used here]-[/spoiler] [spoiler=Server Mods used here]-[/spoiler] [/list]</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 72978,
+   "parent_id": 11219,
+   "author": "hughz001",
+   "author_id": 25719,
+   "author_url": "https://forge.sp-tarkov.com/user/25719/hughz001",
+   "created_at": "2023-02-04T04:57:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>any chance of pointing me to learning how to compile my own to do this im new and have no idea but would like to learn</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 11367,
+   "parent_id": null,
+   "author": "Jed16338",
+   "author_id": 25680,
+   "author_url": "https://forge.sp-tarkov.com/user/25680/jed16338",
+   "created_at": "2023-02-04T21:57:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey there, firstly let me said great work on the mod so far! Next i wanted to report a small bug i noticed the e Bundle with the P90 and FN 5.7 does not give me the 5.7 Pistol. I tried it on a second new profile to be sure before coming to you with the problem. Not a major issue or anything but i wanted to be sure you were made aware. Thanks again for the great mod! [UPDATE]: My apologies for not clarifying the version. I am on 3.4.1 with the AUG installed</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73079,
+   "parent_id": 11367,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-02-05T01:45:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Aki version:<br />\nIf is 3.4.1 do u have Aug installed?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 11393,
+   "parent_id": null,
+   "author": "Extr3m0s",
+   "author_id": 26558,
+   "author_url": "https://forge.sp-tarkov.com/user/26558/extr3m0s",
+   "created_at": "2023-02-05T11:31:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>First of all, thank you for the great work!</p>\n<p>Unfortunately I have the bug that I can\u2019t sell the things and the boxes disappear after a raid. Only after I restarted the game do they reappear.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 73094,
+   "parent_id": 11393,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-02-05T13:20:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The boxes are not moded, only not are FIR\u2026 you should be able to sell them\u2026i\u2019ll check anyway.</p>\n<p>About the second issue, is a aki issue from \u2026 idk\u2026. 1.5 \u2026</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73096,
+   "parent_id": 11393,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-02-05T14:02:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>What do you can\u2019t sell??</p>\n<p>Prapor view <a href=\"https://i.imgur.com/pJ1zhGK.png\" target=\"_blank\" rel=\"noreferrer noopener\">pJ1zhGK.png (652\u00d7762) (imgur.com)</a><br />\ntherapist <a href=\"https://i.imgur.com/mAMoWHO.png\" target=\"_blank\" rel=\"noreferrer noopener\">mAMoWHO.png (690\u00d7808) (imgur.com)</a><br />\nskier <a href=\"https://i.imgur.com/rOfQZPL.png\" target=\"_blank\" rel=\"noreferrer noopener\">rOfQZPL.png (663\u00d7779) (imgur.com)</a><br />\npeackeeper <a href=\"https://i.imgur.com/9fAOqwX.png\" target=\"_blank\" rel=\"noreferrer noopener\">9fAOqwX.png (692\u00d7786) (imgur.com)</a><br />\nmechanic <a href=\"https://i.imgur.com/XvsQKzO.png\" target=\"_blank\" rel=\"noreferrer noopener\">XvsQKzO.png (683\u00d7793) (imgur.com)</a><br />\nragman <a href=\"https://i.imgur.com/DeHBYKH.png\" target=\"_blank\" rel=\"noreferrer noopener\">DeHBYKH.png (688\u00d7745) (imgur.com)</a><br />\nfence <a href=\"https://i.imgur.com/Jam2JTK.png\" target=\"_blank\" rel=\"noreferrer noopener\">Jam2JTK.png (648\u00d7776) (imgur.com)</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73097,
+   "parent_id": 11393,
+   "author": "Extr3m0s",
+   "author_id": 26558,
+   "author_url": "https://forge.sp-tarkov.com/user/26558/extr3m0s",
+   "created_at": "2023-02-05T14:23:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I can\u2019t sell everything I get from the gifts. The prices are displayed, but I can\u2019t put anything in the table.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73217,
+   "parent_id": 11393,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-02-07T06:45:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Confirmed. I will check what\u2019s wrong.</p>\n<p>In other versions you can sell it before?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73236,
+   "parent_id": 11393,
+   "author": "Extr3m0s",
+   "author_id": 26558,
+   "author_url": "https://forge.sp-tarkov.com/user/26558/extr3m0s",
+   "created_at": "2023-02-07T15:55:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Unfortunately I haven\u2019t played any other versions. Because I just recently found the mod.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73289,
+   "parent_id": 11393,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-02-08T07:51:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I found the reason\u2026 is a bug from original mod.</p>\n<p>I can fix it? yes, but not for today or tomorrow. I will upload the fix this week anyway.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73307,
+   "parent_id": 11393,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-02-08T12:55:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>\u201cMiracles \u201c</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73311,
+   "parent_id": 11393,
+   "author": "DouglasBubbletrouser",
+   "author_id": 26032,
+   "author_url": "https://forge.sp-tarkov.com/user/26032/douglasbubbletrouser",
+   "created_at": "2023-02-08T15:04:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>My extremely clunky way of dealing with the sell issue is this;</p>\n<p>Bringing gifted items in a raid not needing to be used, for me I just threw them in a huge bag and left them instead trying to spook scavs from load noices not relanted in any way to gift items. As soon as I extracted they could be sold like normally.</p>\n<p>Anyway great mod and thanks for your work!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73325,
+   "parent_id": 11219,
+   "author": "Thbbccfgv",
+   "author_id": 26721,
+   "author_url": "https://forge.sp-tarkov.com/user/26721/thbbccfgv",
+   "created_at": "2023-02-08T18:50:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>How do I download 3.5.0 BE</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73337,
+   "parent_id": 11219,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-02-08T23:10:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>SPT-AKI Discord</p>\n<p>Dev-core</p>\n<p>Take in count the staff will not give you any type of support with that version.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 11571,
+   "parent_id": null,
+   "author": "PSYCHOSOCIAL",
+   "author_id": 21502,
+   "author_url": "https://forge.sp-tarkov.com/user/21502/psychosocial",
+   "created_at": "2023-02-10T07:55:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I confirm the words of Extr3m0s.The fact that items are allocated for sale to one or another merchant is true, but they are not transferred to the trading table from the cache.In order for items to become tradable, they must first be taken out to the raid, survive, and only then can the items be transferred to the trading table.I have version 0.13.0.2.21734 SPT-AKI 3.5.0.<br />\nP.S\u2026 I saw such a problem in the SPT-AKI Profile Editor when I added a weapon assembly to the stash, this added weapon (and all modules from it) also did not move to the trading table from the stash.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 73414,
+   "parent_id": 11571,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-02-10T09:39:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>That bug is fixed in last version \ud83e\udd14</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 11587,
+   "parent_id": null,
+   "author": "xBagelboy5913x",
+   "author_id": 26754,
+   "author_url": "https://forge.sp-tarkov.com/user/26754/xbagelboy5913x",
+   "created_at": "2023-02-10T16:48:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I assume I did something wrong. I installed this mod the same way I do every time. However there is so gifts appearing at all. In my stash or in the inbox</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73428,
+   "parent_id": 11587,
+   "author": "DouglasBubbletrouser",
+   "author_id": 26032,
+   "author_url": "https://forge.sp-tarkov.com/user/26032/douglasbubbletrouser",
+   "created_at": "2023-02-10T19:12:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Did you make a new profile?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 73430,
+   "parent_id": 11587,
+   "author": "xBagelboy5913x",
+   "author_id": 26754,
+   "author_url": "https://forge.sp-tarkov.com/user/26754/xbagelboy5913x",
+   "created_at": "2023-02-10T19:30:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Ahh no i didnt. I cant believe I read over that. It was right in front of me haha</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 11738,
+   "parent_id": null,
+   "author": "Stevenshm123",
+   "author_id": 15270,
+   "author_url": "https://forge.sp-tarkov.com/user/15270/stevenshm123",
+   "created_at": "2023-02-13T15:18:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I have tried with new install and new profile but i can\u2019t get the mod to work on 3.5.0?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73657,
+   "parent_id": 11738,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-02-13T15:54:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>accept any mission, and you will receive it</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73658,
+   "parent_id": 11738,
+   "author": "Stevenshm123",
+   "author_id": 15270,
+   "author_url": "https://forge.sp-tarkov.com/user/15270/stevenshm123",
+   "created_at": "2023-02-13T15:59:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Ok and thanks for the quick response and the mod!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 11789,
+   "parent_id": null,
+   "author": "Kryptic-S01",
+   "author_id": 2685,
+   "author_url": "https://forge.sp-tarkov.com/user/2685/kryptic-s01",
+   "created_at": "2023-02-14T00:38:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I believe I have discovered a bug or confliction with another mod and I will describe as best as I can:</p>\n<p>*screenshot of red writing in console = <a href=\"https://prnt.sc/iCKZ8cniFC6c\" target=\"_blank\" rel=\"noreferrer noopener\">https://prnt.sc/iCKZ8cniFC6c</a></p>\n<p>Description - after accepting the offer from Peacekeeper for the starting gifts, I tried moving things around and tidying the stash up but I get a red error text in the console (screenshot provided) = <a href=\"https://prnt.sc/iCKZ8cniFC6c\" target=\"_blank\" rel=\"noreferrer noopener\">https://prnt.sc/iCKZ8cniFC6c</a> I believe it is the Item case(s)that is causing the game to not respond and therefore having to restart the game completely. I will do more testing of my own in the meantime and as the title suggests it could be a conflict with another mod and unrelated to this mod! [*]AKI-Version: 3.5.0 [Mods] = <a href=\"https://prnt.sc/vdFvdXBFgOQs\" target=\"_blank\" rel=\"noreferrer noopener\">https://prnt.sc/vdFvdXBFgOQs</a> BepInEx - plugins = <a href=\"https://prnt.sc/Ydg4xeaDi4c7\" target=\"_blank\" rel=\"noreferrer noopener\">https://prnt.sc/Ydg4xeaDi4c7</a> - config = <a href=\"https://prnt.sc/HrUCnLcQCDfu\" target=\"_blank\" rel=\"noreferrer noopener\">https://prnt.sc/HrUCnLcQCDfu</a> *sorry if my layout for bug/issues reporting is wrong I\u2019m not good with coding*</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73713,
+   "parent_id": 11789,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-02-14T00:45:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>are you using the order.json ? this need to be in the last part</p>\n<p>I have all items in my inventory and is working fine<br />\nthe new code generate random _id\u2019s to avoid issues so, is strange</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73714,
+   "parent_id": 11789,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-02-14T00:47:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>check the logs, you can use the internal spt pastebin</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73731,
+   "parent_id": 11789,
+   "author": "Kryptic-S01",
+   "author_id": 2685,
+   "author_url": "https://forge.sp-tarkov.com/user/2685/kryptic-s01",
+   "created_at": "2023-02-14T03:00:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I know the order.json sits inside the mods folder but I don\u2019t know what is does or what to do with it so I just left it.</p>\n<p>Yeah I was assuming this mod would be working fine so it\u2019s an issue on my side, could the order.json be the issue then?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 11802,
+   "parent_id": null,
+   "author": "kookok",
+   "author_id": 26520,
+   "author_url": "https://forge.sp-tarkov.com/user/26520/kookok",
+   "created_at": "2023-02-14T04:01:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m getting these errors, I\u2019m not sure what could be causing them. I don\u2019t see any other mods in the error thrown back so I can\u2019t figure out if it\u2019s a conflict.</p>\n<p>TypeError: databaseImporter.loadRecursive is not a function TypeError: databaseImporter.loadRecursive is not a function at WelcomeGifts2023.postDBLoad (C:\\Program Files (x86)\\Gemus\\SP Tarkov\\user\\mods\\zzz-LoneSimon-WelcomeGifts\\src\\mod.js:24:33) at PostDBModLoader.executeMods (C:\\snapshot\\project\\obj\\loaders\\PostDBModLoader.js) at PostDBModLoader.onLoad (C:\\snapshot\\project\\obj\\loaders\\PostDBModLoader.js) at App.load (C:\\snapshot\\project\\obj\\utils\\App.js) TypeError: databaseImporter.loadRecursive is not a function TypeError: databaseImporter.loadRecursive is not a function at WelcomeGifts2023.postDBLoad (C:\\Program Files (x86)\\Gemus\\SP Tarkov\\user\\mods\\zzz-LoneSimon-WelcomeGifts\\src\\mod.js:24:33) at PostDBModLoader.executeMods (C:\\snapshot\\project\\obj\\loaders\\PostDBModLoader.js) at PostDBModLoader.onLoad (C:\\snapshot\\project\\obj\\loaders\\PostDBModLoader.js) at App.load (C:\\snapshot\\project\\obj\\utils\\App.js)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73765,
+   "parent_id": 11802,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-02-14T13:11:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <ul>\n<li>AKI-Version:</li>\n<li>Mod version:</li>\n</ul>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73777,
+   "parent_id": 11802,
+   "author": "kookok",
+   "author_id": 26520,
+   "author_url": "https://forge.sp-tarkov.com/user/26520/kookok",
+   "created_at": "2023-02-14T16:29:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Ah sorry. It\u2019s both at the latest version. AKI is 3.5.0, mod version is at 1.3.0</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73778,
+   "parent_id": 11802,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-02-14T16:54:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Download it again, your error is from 1.2.0</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73780,
+   "parent_id": 11789,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-02-14T16:57:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>send me your profile.json</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73815,
+   "parent_id": 11789,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-02-14T22:27:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>My server didn\u2019t crash \ud83d\udc40</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73825,
+   "parent_id": 11789,
+   "author": "Kryptic-S01",
+   "author_id": 2685,
+   "author_url": "https://forge.sp-tarkov.com/user/2685/kryptic-s01",
+   "created_at": "2023-02-14T23:36:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I don\u2019t know then dude I\u2019m really confused I ended up selling the Item cases just so it didn\u2019t give me the error message and crash my game. It mainly happens when I try putting an ammo case or one of the helmets you get with the NVG\u2019s inside the Items\u2019 case, can you try to replicate this and see if it happens?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73829,
+   "parent_id": 11789,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-02-14T23:45:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Id did it, otherwise I will not have the enought space for all items xD</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73830,
+   "parent_id": 11789,
+   "author": "Kryptic-S01",
+   "author_id": 2685,
+   "author_url": "https://forge.sp-tarkov.com/user/2685/kryptic-s01",
+   "created_at": "2023-02-14T23:51:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Oh you did hahaha xD my bad man</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73835,
+   "parent_id": 11789,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-02-15T00:11:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p><img loading=\"lazy\" decoding=\"async\" src=\"https://dev.sp-tarkov.com/ShadowXtrex/Otherfiles/raw/branch/master/img_repo/Captura%20de%20pantalla%202023-02-14%20211042.png\" alt=\"Captura%20de%20pantalla%202023-02-14%20211042.png\" /></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 11875,
+   "parent_id": null,
+   "author": "Naomarius",
+   "author_id": 27009,
+   "author_url": "https://forge.sp-tarkov.com/user/27009/naomarius",
+   "created_at": "2023-02-15T04:06:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I seem to not be getting the items at all. No messages show up. No errors in server log and seems to load and run fine.</p>\n<p>Tried making a couple new profiles to no luck.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73860,
+   "parent_id": 11875,
+   "author": "Naomarius",
+   "author_id": 27009,
+   "author_url": "https://forge.sp-tarkov.com/user/27009/naomarius",
+   "created_at": "2023-02-15T04:15:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Ok so I didn\u2019t notice but some missing files are in the latest 1.3.0</p>\n<p>After using 1.2.0 and copying w/e 1.3.0 had over it, then accepting a trader\u2019s quest for the first time I got the messages.</p>\n<p>I hope this helps.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73872,
+   "parent_id": 11802,
+   "author": "kookok",
+   "author_id": 26520,
+   "author_url": "https://forge.sp-tarkov.com/user/26520/kookok",
+   "created_at": "2023-02-15T07:35:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I sincerely apologize and want to thank you for sticking with me. It looks like I indeed mistakenly installed the older version. I had 2 copies of it on my downloads folder then intended to delete the older one, but it looks like I instead deleted the newer version and installed the older one mistakenly.</p>\n<p>Thanks again, also for the work on this mod!!!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 73884,
+   "parent_id": 11875,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-02-15T10:38:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Naomarius that\u2019s why in the 3rd change I writed</p>\n<ul>\n<li>Not compatible with earlier versions</li>\n</ul>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 11908,
+   "parent_id": null,
+   "author": "Hakontyr",
+   "author_id": 25893,
+   "author_url": "https://forge.sp-tarkov.com/user/25893/hakontyr",
+   "created_at": "2023-02-15T12:55:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I can\u2019t download the mod from the link</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73908,
+   "parent_id": 11908,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-02-15T13:28:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>the link is working, what error you have?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73979,
+   "parent_id": 11875,
+   "author": "Naomarius",
+   "author_id": 27009,
+   "author_url": "https://forge.sp-tarkov.com/user/27009/naomarius",
+   "created_at": "2023-02-15T19:19:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I assume then just have to accept a trader quest for the first time then to get the messages. I thought they\u2019d be there at start.</p>\n<p>Seems like now after trying a few times with new profiles it takes a min to show up. Not sure why just seems to.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 12062,
+   "parent_id": null,
+   "author": "BTRaiderMarines",
+   "author_id": 12003,
+   "author_url": "https://forge.sp-tarkov.com/user/12003/btraidermarines",
+   "created_at": "2023-02-17T00:54:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I get this error anytime i try and do anything with the GPNVG\u2019s that came in the mod. Only other mods installed are Kobra AOI and Revingly MICC. This error gives me a backend error every time.</p>\n<p>TypeError: Cannot set properties of undefined (setting \u2018Togglable\u2019)</p>\n<p>TypeError: Cannot set properties of undefined (setting \u2018Togglable\u2019)</p>\n<p>at InventoryController.toggleItem (C:\\snapshot\\project\\obj\\controllers\\InventoryController.js)</p>\n<p>at InventoryCallbacks.toggleItem (C:\\snapshot\\project\\obj\\callbacks\\InventoryCallbacks.js)</p>\n<p>at InventoryItemEventRouter.handleItemEvent (C:\\snapshot\\project\\obj\\routers\\item_events\\InventoryItemEventRouter.js)</p>\n<p>at ItemEventRouter.handleEvents (C:\\snapshot\\project\\obj\\routers\\ItemEventRouter.js)</p>\n<p>at ItemEventCallbacks.handleEvents (C:\\snapshot\\project\\obj\\callbacks\\ItemEventCallbacks.js)</p>\n<p>at RouteAction.action (C:\\snapshot\\project\\obj\\routers\\static\\ItemEventStaticRouter.js)</p>\n<p>at ItemEventStaticRouter.handleStatic (C:\\snapshot\\project\\obj\\di\\Router.js)</p>\n<p>at HttpRouter.handleRoute (C:\\snapshot\\project\\obj\\routers\\HttpRouter.js)</p>\n<p>at HttpRouter.getResponse (C:\\snapshot\\project\\obj\\routers\\HttpRouter.js)</p>\n<p>at AkiHttpListener.getResponse (C:\\snapshot\\project\\obj\\servers\\http\\AkiHttpListener.js)</p>\n<p>TypeError: Cannot set properties of undefined (setting \u2018Togglable\u2019)</p>\n<p>TypeError: Cannot set properties of undefined (setting \u2018Togglable\u2019)</p>\n<p>at InventoryController.toggleItem (C:\\snapshot\\project\\obj\\controllers\\InventoryController.js)</p>\n<p>at InventoryCallbacks.toggleItem (C:\\snapshot\\project\\obj\\callbacks\\InventoryCallbacks.js)</p>\n<p>at InventoryItemEventRouter.handleItemEvent (C:\\snapshot\\project\\obj\\routers\\item_events\\InventoryItemEventRouter.js)</p>\n<p>at ItemEventRouter.handleEvents (C:\\snapshot\\project\\obj\\routers\\ItemEventRouter.js)</p>\n<p>at ItemEventCallbacks.handleEvents (C:\\snapshot\\project\\obj\\callbacks\\ItemEventCallbacks.js)</p>\n<p>at RouteAction.action (C:\\snapshot\\project\\obj\\routers\\static\\ItemEventStaticRouter.js)</p>\n<p>at ItemEventStaticRouter.handleStatic (C:\\snapshot\\project\\obj\\di\\Router.js)</p>\n<p>at HttpRouter.handleRoute (C:\\snapshot\\project\\obj\\routers\\HttpRouter.js)</p>\n<p>at HttpRouter.getResponse (C:\\snapshot\\project\\obj\\routers\\HttpRouter.js)</p>\n<p>at AkiHttpListener.getResponse (C:\\snapshot\\project\\obj\\servers\\http\\AkiHttpListener.js)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 74287,
+   "parent_id": 12062,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-02-17T11:00:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <ul>\n<li>What do you do with the nvg?</li>\n<li>From what gift?</li>\n<li>Happen with both?</li>\n</ul>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 12120,
+   "parent_id": null,
+   "author": "ErDanese",
+   "author_id": 10103,
+   "author_url": "https://forge.sp-tarkov.com/user/10103/erdanese",
+   "created_at": "2023-02-17T14:41:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for the mod! I did install it and not only work, but i keep getting the whole package even if i deleted the stuff that i didn\u2019t want! (i\u2019m playing an kind of HC playthrough and i only wanted a few items).</p>\n<p>I also deleted the plugin files but i still getting them all back after a game restart.</p>\n<p>I tried also to go into the game server database files and modify peacekeeper \u201csuccess\u201d items (i don\u2019t know if i made a mistake at this point) but still getting them. Is there anywhere i can edit to stop getting all the stuff?</p>\n<p>thanks!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 74404,
+   "parent_id": 12120,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-02-17T20:26:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The mod add these message to your profile.json. If you delete the mod you will still have the inbox msg added to your profile.</p>\n<p>Righnow I\u2019m checking for a way to enable/disable some gifts</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 74406,
+   "parent_id": 12120,
+   "author": "ErDanese",
+   "author_id": 10103,
+   "author_url": "https://forge.sp-tarkov.com/user/10103/erdanese",
+   "created_at": "2023-02-17T20:39:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>So i can delete from the profile the pending messages and not getting the gifts right?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 74407,
+   "parent_id": 12120,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-02-17T20:40:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>yes</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 74657,
+   "parent_id": 12062,
+   "author": "Mortarion",
+   "author_id": 25503,
+   "author_url": "https://forge.sp-tarkov.com/user/25503/mortarion",
+   "created_at": "2023-02-19T22:39:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>GPNVG from 2021 New Year\u2019s Present Pack is bugged.<br />\nThis error happens if you fold it down.<br />\nTested it on clean profile with and without mods.<br />\nAnother GPNVG, which comes with Ebook-2 Gift Pack and mounted on helmet, works fine and dont cause this error.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 74677,
+   "parent_id": 12062,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-02-20T02:17:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I don\u2019t have that error</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://dev.sp-tarkov.com/ShadowXtrex/Otherfiles/raw/branch/master/img_repo/Captura%20de%20pantalla%202023-02-19%20231541.png\" alt=\"Captura%20de%20pantalla%202023-02-19%20231541.png\" /></p>\n<p>video: <a href=\"https://dev.sp-tarkov.com/ShadowXtrex/Otherfiles/src/branch/master/img_repo/GPNVG.mp4\" target=\"_blank\" rel=\"noreferrer noopener\">ShadowXtrex/Otherfiles - img_repo/GPNVG.mp4 at master - Otherfiles - SPT-AKI Development zone (sp-tarkov.com)</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 12315,
+   "parent_id": null,
+   "author": "Kryptic-S01",
+   "author_id": 2685,
+   "author_url": "https://forge.sp-tarkov.com/user/2685/kryptic-s01",
+   "created_at": "2023-02-20T13:05:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>On version 3.5.0 you detail that we would have to add something to the bottom of mods\\order.json but I\u2019m not entirely sure what I should put there, currently there is nothing inside my order.json file.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 74705,
+   "parent_id": 12315,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-02-20T14:38:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>the foldername of the mods. For example, modcores or mod which modify internal items like \u2026 reticles or balanced meds to the top, and mods adding new items to the bottom</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 74706,
+   "parent_id": 12315,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-02-20T14:39:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>For example, this is my order.json file</p>\n<p>{ \u201corder\u201d: [ \u201cFaupi-MunitionsExpert 1.7.0\u201d, \u201cHideoutArchitect\u201d, \u201cAlterExtracts-2.0.0\u201d, \u201cLua-FleaMarketPriceUpdater\u201d, \u201cColorCodedKeys\u201d, \u201cPMCsHaveEOD\u201d, \u201cBetterLights\u201d, \u201cSamSWAT-BetterOKP7\u201d, \u201cSBNV\u201d, \u201cLua-ExamineAllItems\u201d, \u201czSamSWAT-HolosunHS507C\u201d, \u201cRevingly-LPARedux-4.0.0\u201d, \u201czzz-alt-krechet-reticle-3.4.1-V1.0\u201d, \u201cShadowXtrex-BodyBlessings 3.5.0\u201d, \u201cShadowXtrex-SystemTrader 3.5.0\u201d, \u201cLone_Simon-WelcomeGifts.2023 3.5.0\u201d, \u201cLone_Simon-WelcomeGifts.2019-22 3.5.0\u201d ] }</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 12351,
+   "parent_id": null,
+   "author": "BLTrashman",
+   "author_id": 27341,
+   "author_url": "https://forge.sp-tarkov.com/user/27341/bltrashman",
+   "created_at": "2023-02-21T01:46:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Updated to the 3.5.0 made sure that the order.json file was right and still no message when starting a new account. Not sure what to do from there</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 74760,
+   "parent_id": 12351,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-02-21T02:51:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Move anything in your stash, or accept any mission, back to menu and done</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 74858,
+   "parent_id": 12062,
+   "author": "BTRaiderMarines",
+   "author_id": 12003,
+   "author_url": "https://forge.sp-tarkov.com/user/12003/btraidermarines",
+   "created_at": "2023-02-21T23:59:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>What Mortarion said. I wasnt sure which gift they came from since i added the mod and got all gifts at once.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 12656,
+   "parent_id": null,
+   "author": "Zandy Andy",
+   "author_id": 24126,
+   "author_url": "https://forge.sp-tarkov.com/user/24126/zandy-andy",
+   "created_at": "2023-02-27T11:50:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The MP7A1 in the 2023 Lunar Year gift package starts at 65/90 durability. Has anyone else noticed this? It may be a problem on my end, but I am not certain.</p>\n<p>I\u2019ve checked every other weapon on all the gifts, and they are all at 100/100 durability except for the MP7.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 75301,
+   "parent_id": 12656,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-02-27T15:19:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Let me check it.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 75302,
+   "parent_id": 12656,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-02-27T15:26:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Download it again</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 75309,
+   "parent_id": 12656,
+   "author": "Zandy Andy",
+   "author_id": 24126,
+   "author_url": "https://forge.sp-tarkov.com/user/24126/zandy-andy",
+   "created_at": "2023-02-27T16:39:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Cool. Thanks for the update!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 12803,
+   "parent_id": null,
+   "author": "Axesome",
+   "author_id": 27829,
+   "author_url": "https://forge.sp-tarkov.com/user/27829/axesome",
+   "created_at": "2023-03-02T18:27:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hmmm doesn\u2019t work for me\u2026 New profile, accepted a task, moved items in stash etc, still didnt get anything. Mod is in order.json</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 75549,
+   "parent_id": 12803,
+   "author": "Axesome",
+   "author_id": 27829,
+   "author_url": "https://forge.sp-tarkov.com/user/27829/axesome",
+   "created_at": "2023-03-02T19:11:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I was able to fix it by installing JustNUCore. It also worked on an already existing profile</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 75787,
+   "parent_id": 12803,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-03-06T11:29:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Weeird</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 13486,
+   "parent_id": null,
+   "author": "volgommtt",
+   "author_id": 28334,
+   "author_url": "https://forge.sp-tarkov.com/user/28334/volgommtt",
+   "created_at": "2023-03-13T19:12:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>\u0421\u043f\u0430\u0441\u0438\u0431\u043e \u0437\u0430 \u043c\u043e\u0434! \u0423\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u043b \u0440\u0430\u0437 \u0432\u0441\u0451 \u043f\u043e\u043b\u0443\u0447\u0438\u043b, \u0438 \u0443\u0434\u0430\u043b\u0438\u043b \u043c\u043e\u0434, \u0447\u0442\u043e \u0431\u044b \u043d\u0435 \u0433\u0440\u0443\u0437\u0438\u043b \u0437\u0430\u0433\u0440\u0443\u0437\u0447\u0438\u043a. \u0422\u043e\u0432\u0430\u0440 \u0432\u0435\u0441\u044c \u043e\u0441\u0442\u0430\u043b\u0441\u044f \u0432 \u0441\u0445\u0440\u043e\u043d\u0435.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 13499,
+   "parent_id": null,
+   "author": "Yozora",
+   "author_id": 28710,
+   "author_url": "https://forge.sp-tarkov.com/user/28710/yozora",
+   "created_at": "2023-03-13T22:58:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I am not getting the gifs at all. I made a new proifle. Moved stuff to my stash and vise versa, and accepted a mission.</p>\n<p>Any idea what the issue is?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 76675,
+   "parent_id": 13499,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-03-14T00:04:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>What mods are you using?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 76691,
+   "parent_id": 12062,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-03-14T09:53:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>1 month later</p>\n<p>issue found and fixed</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 76714,
+   "parent_id": 13499,
+   "author": "Yozora",
+   "author_id": 28710,
+   "author_url": "https://forge.sp-tarkov.com/user/28710/yozora",
+   "created_at": "2023-03-14T16:49:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Only Amanda graphics. I\u2019m a bit new to modding this game so everything is a bit over my head at times.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 76754,
+   "parent_id": 13499,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-03-15T08:14:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>this is a weird execution</p>\n<p>Try the solution of Axesome (Install justnu core and move something)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 13605,
+   "parent_id": null,
+   "author": "diab_low",
+   "author_id": 26562,
+   "author_url": "https://forge.sp-tarkov.com/user/26562/diab-low",
+   "created_at": "2023-03-16T12:34:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I recieved the gifts fine.</p>\n<p>When I try to move stuff around in the stash I get this error and the items freeze and I cant move any more items</p>\n<p>TypeError: Cannot set properties of undefined (setting \u2018Togglable\u2019) TypeError: Cannot set properties of undefined (setting \u2018Togglable\u2019) at InventoryController.toggleItem (C:\\snapshot\\project\\obj\\controllers\\InventoryController.js) at InventoryCallbacks.toggleItem (C:\\snapshot\\project\\obj\\callbacks\\InventoryCallbacks.js) at InventoryItemEventRouter.handleItemEvent (C:\\snapshot\\project\\obj\\routers\\item_events\\InventoryItemEventRouter.js) at ItemEventRouter.handleEvents (C:\\snapshot\\project\\obj\\routers\\ItemEventRouter.js) at ItemEventCallbacks.handleEvents (C:\\snapshot\\project\\obj\\callbacks\\ItemEventCallbacks.js) at RouteAction.action (C:\\snapshot\\project\\obj\\routers\\static\\ItemEventStaticRouter.js) at ItemEventStaticRouter.handleStatic (C:\\snapshot\\project\\obj\\di\\Router.js) at HttpRouter.handleRoute (C:\\snapshot\\project\\obj\\routers\\HttpRouter.js) at HttpRouter.getResponse (C:\\snapshot\\project\\obj\\routers\\HttpRouter.js) at AkiHttpListener.getResponse (C:\\snapshot\\project\\obj\\servers\\http\\AkiHttpListener.js) TypeError: Cannot set properties of undefined (setting \u2018Togglable\u2019) TypeError: Cannot set properties of undefined (setting \u2018Togglable\u2019) at InventoryController.toggleItem (C:\\snapshot\\project\\obj\\controllers\\InventoryController.js) at InventoryCallbacks.toggleItem (C:\\snapshot\\project\\obj\\callbacks\\InventoryCallbacks.js) at InventoryItemEventRouter.handleItemEvent (C:\\snapshot\\project\\obj\\routers\\item_events\\InventoryItemEventRouter.js) at ItemEventRouter.handleEvents (C:\\snapshot\\project\\obj\\routers\\ItemEventRouter.js) at ItemEventCallbacks.handleEvents (C:\\snapshot\\project\\obj\\callbacks\\ItemEventCallbacks.js) at RouteAction.action (C:\\snapshot\\project\\obj\\routers\\static\\ItemEventStaticRouter.js) at ItemEventStaticRouter.handleStatic (C:\\snapshot\\project\\obj\\di\\Router.js) at HttpRouter.handleRoute (C:\\snapshot\\project\\obj\\routers\\HttpRouter.js) at HttpRouter.getResponse (C:\\snapshot\\project\\obj\\routers\\HttpRouter.js) at AkiHttpListener.getResponse (C:\\snapshot\\project\\obj\\servers\\http\\AkiHttpListener.js)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 76891,
+   "parent_id": 13605,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-03-16T19:14:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>did you receive all items?<br />\ntry to identify the GPNVG from voice behind and 2021 gift. one of these is working weird</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 76898,
+   "parent_id": 13605,
+   "author": "diab_low",
+   "author_id": 26562,
+   "author_url": "https://forge.sp-tarkov.com/user/26562/diab-low",
+   "created_at": "2023-03-16T20:26:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>yeah I did receive the GPNVG and all the 2021 gifts</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 76930,
+   "parent_id": 13605,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-03-17T04:19:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>let alone the gpnvg, back to main menu and check if fails yet</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 77200,
+   "parent_id": 13605,
+   "author": "Naomarius",
+   "author_id": 27009,
+   "author_url": "https://forge.sp-tarkov.com/user/27009/naomarius",
+   "created_at": "2023-03-22T00:25:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m getting this same error with any Fast MT with the same NVGs. Exit the game and reload and take them off.</p>\n<p>I sold and bought another pair of same NVGs and it\u2019s fine. Seems like it\u2019s just that one that came with the Fast MT gift that is causing the error.</p>\n<p>Looks like it\u2019s not set the same as for the Cry Helmet mod might need some missing configuration for that item to add the togglable field to it like the Cry helmet. What I noticed when I looked at the json that might be causing the problem. NVG should be togglable but it was ommited so when added the game toggles it but fails finding the field on that specific item. Luckily it doesn\u2019t affect all GPNVGs just the one given from the mod.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 77282,
+   "parent_id": 13605,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-03-23T10:03:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I will check for a fix as soon I can</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 13967,
+   "parent_id": null,
+   "author": "RainbowGirl",
+   "author_id": 20399,
+   "author_url": "https://forge.sp-tarkov.com/user/20399/rainbowgirl",
+   "created_at": "2023-03-25T17:43:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Love this mod, using this with SPT realism comes in very handy! Thank you!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 14217,
+   "parent_id": null,
+   "author": "Cougarinou",
+   "author_id": 18481,
+   "author_url": "https://forge.sp-tarkov.com/user/18481/cougarinou",
+   "created_at": "2023-04-01T08:22:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>First thanks for you mod !</p>\n<p>Next, could you explain to me how do you add a weapon preset ?</p>\n<p>Cause I try to modify your file to add my own package but the weapon can\u2019t be moved to my character because it freeze the weapon with a loading cricle\u2026 Everything else is fine</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 77833,
+   "parent_id": 14217,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-04-01T09:37:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Create the preset with your profile, and save it with a name \u2026</p>\n<p>open your profile.json and search that name. There is the preset</p>\n<p>you need only id, tpl, parent (in mods)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 77834,
+   "parent_id": 13967,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-04-01T09:38:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>is working now? \ud83d\ude2e</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 77837,
+   "parent_id": 14217,
+   "author": "Cougarinou",
+   "author_id": 18481,
+   "author_url": "https://forge.sp-tarkov.com/user/18481/cougarinou",
+   "created_at": "2023-04-01T11:04:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Well strange because it\u2019s the method I used I will check again then thanks for the reply</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 77873,
+   "parent_id": 13967,
+   "author": "RainbowGirl",
+   "author_id": 20399,
+   "author_url": "https://forge.sp-tarkov.com/user/20399/rainbowgirl",
+   "created_at": "2023-04-02T04:12:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It\u2019s worked for me yes. Had to spend almost an hour to fit it in my little stash lol</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 77879,
+   "parent_id": 13967,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-04-02T07:08:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>That\u2019s why I added my custom gift xD</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 77937,
+   "parent_id": 14217,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-04-03T13:41:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>which one are you trying to add?</p>\n<p>add the code here and I will check if something\u2019s wrong</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 77939,
+   "parent_id": 14217,
+   "author": "Cougarinou",
+   "author_id": 18481,
+   "author_url": "https://forge.sp-tarkov.com/user/18481/cougarinou",
+   "created_at": "2023-04-03T14:16:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yep thanks I will do it as soon as I can but I got some IRL stuff to handle before but thanks for you help !</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 14378,
+   "parent_id": null,
+   "author": "\u13b6\u5344\u3116\u4e02\u3112",
+   "author_id": 29716,
+   "author_url": "https://forge.sp-tarkov.com/user/29716/user-29716",
+   "created_at": "2023-04-05T13:58:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>So I follow the exact installation process, but when I run the server it says 0 mods installed. I unzipped everything in the main SPT folder, and it created the mods folder. I\u2019m running on AKI 3.5.4 and I did wipe the profile. What am I doing wrong?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 78069,
+   "parent_id": 14378,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-04-05T17:06:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>did you move anything in your stash or accept a mission?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 14964,
+   "parent_id": null,
+   "author": "DarkEsteves",
+   "author_id": 30073,
+   "author_url": "https://forge.sp-tarkov.com/user/30073/darkesteves",
+   "created_at": "2023-04-20T12:26:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Everithing its working just fine \u2026but one question\u2026can i use that more than one time ?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 78997,
+   "parent_id": 14964,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-04-20T19:45:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>No, only 1 time per profile wiped</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 79001,
+   "parent_id": 14964,
+   "author": "DarkEsteves",
+   "author_id": 30073,
+   "author_url": "https://forge.sp-tarkov.com/user/30073/darkesteves",
+   "created_at": "2023-04-20T19:55:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>ok thanks</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 15109,
+   "parent_id": null,
+   "author": "Guyzzers",
+   "author_id": 16944,
+   "author_url": "https://forge.sp-tarkov.com/user/16944/guyzzers",
+   "created_at": "2023-04-23T21:48:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Vanilla file doesn\u2019t have a main.json and using the one from default gives all the gifts</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 79229,
+   "parent_id": 15109,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-04-24T09:54:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Download it again</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 17978,
+   "parent_id": null,
+   "author": "crazyoldman50",
+   "author_id": 7564,
+   "author_url": "https://forge.sp-tarkov.com/user/7564/crazyoldman50",
+   "created_at": "2023-07-18T08:27:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for the mod. Is there a way to integrate the starting content of USEC and BEAR. Depending on what I start with. Start USEC and add BEAR content or vice versa. Just an idea</p>\n<p>Thank you best regards</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 83425,
+   "parent_id": 17978,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-07-18T10:06:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I had that idea, but at the moment I don\u2019t know how to create custom profiles \ud83d\udc40</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 83544,
+   "parent_id": 17978,
+   "author": "Tombstone",
+   "author_id": 33978,
+   "author_url": "https://forge.sp-tarkov.com/user/33978/tombstone",
+   "created_at": "2023-07-20T04:19:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I would love custom profiles. or even one that starts around level 25 or so</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 84194,
+   "parent_id": 17978,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-07-31T16:43:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Tombstone okay now I know how to</p>\n<p>Do u want a lv 25 profile with all skills at level 25, with the gifts already added? give me 24h \ud83d\udc40</p>\n<p>I can make you a profile like 1/2 ets \ud83d\udc40</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 84261,
+   "parent_id": 17978,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-08-01T18:43:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Tombstone <a href=\"https://hub.sp-tarkov.com/files/file/1354-newprofiles/\" target=\"_blank\" rel=\"noreferrer noopener\">NewProfiles</a> try sof option A</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 18579,
+   "parent_id": null,
+   "author": "Tombstone",
+   "author_id": 33978,
+   "author_url": "https://forge.sp-tarkov.com/user/33978/tombstone",
+   "created_at": "2023-08-03T04:05:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The MDR Kill tube is bugged and starts blinking when i try to equip it</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 84402,
+   "parent_id": 18579,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-08-03T06:38:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Fixed thanks you</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 18651,
+   "parent_id": null,
+   "author": "DeLunaticAngel",
+   "author_id": 16279,
+   "author_url": "https://forge.sp-tarkov.com/user/16279/delunaticangel",
+   "created_at": "2023-08-04T14:24:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>were some things taken off? The Christmas MK17 isnt in the thing anymore, along with the RD and some others.</p>\n<p>Edit: All the kits from 2022 and lower do not appear in the system to give to me. Confused if this is only me or what.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 84557,
+   "parent_id": 18651,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-08-05T06:54:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The gifts appear 1 time per profile wiped.</p>\n<p>If you don\u2019t want to wipe with the 2023-2019 db, you can add it to your profije.json, the file are in the download site</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 84581,
+   "parent_id": 18651,
+   "author": "DeLunaticAngel",
+   "author_id": 16279,
+   "author_url": "https://forge.sp-tarkov.com/user/16279/delunaticangel",
+   "created_at": "2023-08-05T15:21:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Excuse my stupidity, but how do I do that- Like, add that to my profile or smth\u2026?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 18696,
+   "parent_id": null,
+   "author": "Brave_Damage",
+   "author_id": 35030,
+   "author_url": "https://forge.sp-tarkov.com/user/35030/brave-damage",
+   "created_at": "2023-08-05T16:15:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I got some of the gifts but not them all. How do I get the rest? Be gentle, I have no clue what to do\u2026</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 84589,
+   "parent_id": 18696,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-08-05T18:11:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I can be gentle, yeah, but in the download page I write the instructions \ud83d\udc40</p>\n<p>* Vanilla preset AKA 2023 is the default preset now.* Custom dev gift from default preset is not available anymore.<br />\n<em>* The other presets are in _Optional folder. To install the preset enter to the preset folder and copy and replace the content in the root mod folder</em>If you want the older gifts you need to follow the 3rd * instructions<br />\nFor example _Optional/2019-2023/ copy the content and paste it in the mod root folder, and replace all (if the system don\u2019t ask you that you didn\u2019t paste it in the root folder</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 84590,
+   "parent_id": 18651,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-08-05T18:12:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>check dm</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 84647,
+   "parent_id": 18696,
+   "author": "Brave_Damage",
+   "author_id": 35030,
+   "author_url": "https://forge.sp-tarkov.com/user/35030/brave-damage",
+   "created_at": "2023-08-06T14:42:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Sorry mate, can\u2019t get it to work, no worries</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 84664,
+   "parent_id": 18651,
+   "author": "DeLunaticAngel",
+   "author_id": 16279,
+   "author_url": "https://forge.sp-tarkov.com/user/16279/delunaticangel",
+   "created_at": "2023-08-06T20:38:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>yep, looking</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 18775,
+   "parent_id": null,
+   "author": "Ih8Cheetas",
+   "author_id": 34280,
+   "author_url": "https://forge.sp-tarkov.com/user/34280/ih8cheetas",
+   "created_at": "2023-08-07T11:16:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>FYI the links to the download info under section \u201cContent\u201d just 404 error</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 84698,
+   "parent_id": 18775,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-08-07T11:25:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>\ud83d\udc40 Thank you I will fix that, but these are not the download links</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 84699,
+   "parent_id": 18775,
+   "author": "Ih8Cheetas",
+   "author_id": 34280,
+   "author_url": "https://forge.sp-tarkov.com/user/34280/ih8cheetas",
+   "created_at": "2023-08-07T11:26:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>luckily ill still figured it out by myself</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 19117,
+   "parent_id": null,
+   "author": "Medic427",
+   "author_id": 20962,
+   "author_url": "https://forge.sp-tarkov.com/user/20962/medic427",
+   "created_at": "2023-08-13T03:04:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Getting error when trying to load with this mod:</p>\n<p>The application had a critical error and failed to run</p>\n<p>Exception produced: SyntaxError: C:\\Users\\Admin\\Desktop\\SPT 3.6.1\\user\\mods\\ShadowXtrex-WelcomeGifts-v360.1.2\\db\\gifts_db.json: Unexpected token &lt; in JSON at position 35827</p>\n<p>Stacktrace:</p>\n<p>SyntaxError: C:\\Users\\Admin\\Desktop\\SPT 3.6.1\\user\\mods\\ShadowXtrex-WelcomeGifts-v360.1.2\\db\\gifts_db.json: Unexpected token &lt; in JSON at position 35827</p>\n<p>at parse (&lt;anonymous&gt;)</p>\n<p>at Object.Module._extensions..json (node:internal/modules/cjs/loader:1173:22)</p>\n<p>at Module.load (node:internal/modules/cjs/loader:981:32)</p>\n<p>at Function.Module._load (node:internal/modules/cjs/loader:822:12)</p>\n<p>at Module.require (node:internal/modules/cjs/loader:1005:19)</p>\n<p>at Module.require (pkg/prelude/bootstrap.js:1851:31)</p>\n<p>at require (node:internal/modules/cjs/helpers:102:18)</p>\n<p>at Object.&lt;anonymous&gt; (C:\\Users\\Admin\\Desktop\\SPT 3.6.1\\user\\mods\\ShadowXtrex-WelcomeGifts-v360.1.2\\src\\gifts.js:10:41)</p>\n<p>at Module._compile (node:internal/modules/cjs/loader:1105:14)</p>\n<p>at Module._compile (pkg/prelude/bootstrap.js:1890:32)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 19834,
+   "parent_id": null,
+   "author": "Redmatch",
+   "author_id": 27842,
+   "author_url": "https://forge.sp-tarkov.com/user/27842/redmatch",
+   "created_at": "2023-08-26T01:27:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>ok i feel kinda stupid.</p>\n<ul>\n<li>wdym by wiping? like i need to create a new profile?</li>\n<li>is there no other ways? can i not keep my progress and still get the welcome gifts?</li>\n</ul>\n<p>i dont know much about coding but i found on your github page that youve mentioned deleting old gift messages and adding the new dialogs into the profile.json. can i just do that and get the rewards without wiping?</p>\n\n<p>edit: so i edited profile.json but i fucked up, as in i recieved the some of the gifts but all the messages from all other traders disappeared lol. i hope it would fix itself when i interact with them<br />\nedit 2: after i tried to add advanced end wipe gifts, it started giving me an error :<br />\n\u201cCritical error receiving profile data. Close the game and contact us at forum<br />\nIn response to <a href=\"https://127.0.0.1:6969/client/game/profile/list:\" target=\"_blank\" rel=\"noreferrer noopener\">https://127.0.0.1:6969/client/game/profile/list:</a> An item with the same key has already been added. Key: 8a324f699c473906c9476ff2\u201d</p>\n\n<p>its all good. had to create a fresh profile as old one was cursed. for some reason tho, even after adding the extra content, i couldnt get 2-3 ones out of all 24:</p>\n<ul>\n<li>the very first gift from 2018,</li>\n<li>both appreciation packages from 2020 (one with cash one with loot),</li>\n</ul>\n<p>the rest were added without any issues</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 21310,
+   "parent_id": null,
+   "author": "Pastor180",
+   "author_id": 11694,
+   "author_url": "https://forge.sp-tarkov.com/user/11694/pastor180",
+   "created_at": "2023-10-03T21:53:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It would be nice to be able to add the possibility of receiving each gift on a specific date. Not all at once but for example a gift every week. Is this something feasible?</p>\n<p>Anyway thanks for your work.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 88381,
+   "parent_id": 21310,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-10-04T09:01:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>In that case you maybe want to use</p>\n<p>\ud83d\udc40</p>\n<p>The future of the mod will be not in the actual way anyway</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 88383,
+   "parent_id": 21310,
+   "author": "Pastor180",
+   "author_id": 11694,
+   "author_url": "https://forge.sp-tarkov.com/user/11694/pastor180",
+   "created_at": "2023-10-04T10:23:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I already use that mod\u2026.</p>\n<p>The idea was to stagger the gifts so as not to clog up the stash in one go. Now I collect one gift a week for example.</p>\n<p>it was just an idea</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 21442,
+   "parent_id": null,
+   "author": "MyDailyNightmare",
+   "author_id": 37979,
+   "author_url": "https://forge.sp-tarkov.com/user/37979/mydailynightmare",
+   "created_at": "2023-10-08T13:13:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>K, so I am having issues trying to figure out how to get all of the gifts. First thing, I am not the sharpest tool in the shed, so telling me to copy and paste something to \u201cthe root folder\u201d is of no help. Exactly which folder is the root folder? Can\u2019t find any folder names that say \u201croot\u201d or \u201croot folder\u201d</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 88564,
+   "parent_id": 21442,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-10-08T20:46:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>your spt-aki folder</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 21814,
+   "parent_id": null,
+   "author": "sdsf93",
+   "author_id": 38171,
+   "author_url": "https://forge.sp-tarkov.com/user/38171/sdsf93",
+   "created_at": "2023-10-12T14:56:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>So\u2026 when do the gifts come in?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 89031,
+   "parent_id": 21814,
+   "author": "sdsf93",
+   "author_id": 38171,
+   "author_url": "https://forge.sp-tarkov.com/user/38171/sdsf93",
+   "created_at": "2023-10-12T15:08:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>So to anyone here who is smarter than me, it\u2019s in all the Trader tasks tab :\u2019)</p>\n<p>*goes and buries self in hole*</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 21824,
+   "parent_id": null,
+   "author": "jfc517",
+   "author_id": 2111,
+   "author_url": "https://forge.sp-tarkov.com/user/2111/jfc517",
+   "created_at": "2023-10-12T16:36:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Well done on this massive rework. Congrats!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 21832,
+   "parent_id": null,
+   "author": "Shibby",
+   "author_id": 12375,
+   "author_url": "https://forge.sp-tarkov.com/user/12375/shibby",
+   "created_at": "2023-10-12T17:59:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Great!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 21908,
+   "parent_id": null,
+   "author": "Xerezora",
+   "author_id": 21396,
+   "author_url": "https://forge.sp-tarkov.com/user/21396/xerezora",
+   "created_at": "2023-10-13T10:24:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>After youve opened the page where you can check all your quests, this page somehow stays on your screen when you open an inventory/stash/dead bodies etc. Does anybody know the solution for this problem?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 89254,
+   "parent_id": 21908,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-10-13T16:28:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>screenshot of the problem?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 89255,
+   "parent_id": 21908,
+   "author": "Xerezora",
+   "author_id": 21396,
+   "author_url": "https://forge.sp-tarkov.com/user/21396/xerezora",
+   "created_at": "2023-10-13T16:32:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p><a href=\"https://cdn.discordapp.com/attachments/758431739391246346/1162427497904881745/image.png?ex=653be5f8&amp;is=652970f8&amp;hm=45550b9e2927b2911fbabc93f3480782280d3c2c49d267b1884ccc10dff7d394&amp;\" target=\"_blank\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://cdn.discordapp.com/attachments/758431739391246346/1162427497904881745/image.png?ex=653be5f8&amp;is=652970f8&amp;hm=45550b9e2927b2911fbabc93f3480782280d3c2c49d267b1884ccc10dff7d394&amp;\" alt=\"image.png?ex=653be5f8&amp;is=652970f8&amp;hm=45550b9e2927b2911fbabc93f3480782280d3c2c49d267b1884ccc10dff7d394&amp;\" /></a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 89256,
+   "parent_id": 21908,
+   "author": "Xerezora",
+   "author_id": 21396,
+   "author_url": "https://forge.sp-tarkov.com/user/21396/xerezora",
+   "created_at": "2023-10-13T16:34:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>if you have troubles with russian words, ill help you to translate them</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 89258,
+   "parent_id": 21908,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-10-13T16:46:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>That\u2019s not an issue of this mod<br />\nCheck this <a href=\"https://hub.sp-tarkov.com/forum/thread/3845-unable-to-click-on-certain-traders/\" target=\"_blank\" rel=\"noreferrer noopener\">Unable to click on certain traders.</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 89259,
+   "parent_id": 21908,
+   "author": "Xerezora",
+   "author_id": 21396,
+   "author_url": "https://forge.sp-tarkov.com/user/21396/xerezora",
+   "created_at": "2023-10-13T16:47:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>thanks for your help</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 21977,
+   "parent_id": null,
+   "author": "TASbot",
+   "author_id": 34706,
+   "author_url": "https://forge.sp-tarkov.com/user/34706/tasbot",
+   "created_at": "2023-10-14T06:19:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>These are cool but is there any way we can make a fairer version? Like locking them behind level rewards? I just don\u2019t want the gifts off the bat how can I make it to where I get the gifts by reaching certain levels in the game?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 89352,
+   "parent_id": 21908,
+   "author": "kiggins",
+   "author_id": 38063,
+   "author_url": "https://forge.sp-tarkov.com/user/38063/kiggins",
+   "created_at": "2023-10-14T07:47:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>ShadowXtrex</p>\n<p>I have the same problem, ands its only with your mod.</p>\n<p>There is a Quest showing up in the questscreeen (see screenshot above), everytime you take a gift quest.</p>\n<p>And after that, the questscreen dosent disappaer and stay in front of the inventory/skill etc screens.</p>\n<p>I dont even get the gift from the quest.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 89358,
+   "parent_id": 21908,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-10-14T09:03:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Check support thread please</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 22684,
+   "parent_id": null,
+   "author": "darkbubbletea",
+   "author_id": 37331,
+   "author_url": "https://forge.sp-tarkov.com/user/37331/darkbubbletea",
+   "created_at": "2023-10-22T02:01:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Can i receive the gifts a second time ?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 90563,
+   "parent_id": 22684,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-10-22T04:11:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>From the mod? no<br />\nbut if you want more stuff, you can check the \u201ccheat codes\u201d inside<br />\n/aki_data/server/configs/gifts.json<br />\nand talk to spt in the chat inside the game</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 91395,
+   "parent_id": 21814,
+   "author": "Blacksquirrel420",
+   "author_id": 36585,
+   "author_url": "https://forge.sp-tarkov.com/user/36585/blacksquirrel420",
+   "created_at": "2023-10-29T02:44:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i came here looking for the answer to that problem</p>\n<p>* joins you in the hole *</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 25438,
+   "parent_id": null,
+   "author": "Kratos1413",
+   "author_id": 37269,
+   "author_url": "https://forge.sp-tarkov.com/user/37269/kratos1413",
+   "created_at": "2023-12-19T21:12:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>can you explain like im dumb on how to install the mod cause i have tryed a bunch of things and nothing works and when i put the file in the mods it says its missing json package</p>\n<p>plz help thank you</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 94677,
+   "parent_id": 25438,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-12-20T16:20:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>copy user folder from 7z to spt folder.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/wMIskD3.gif\" alt=\"wMIskD3.gif\" /></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 94793,
+   "parent_id": 25438,
+   "author": "Kratos1413",
+   "author_id": 37269,
+   "author_url": "https://forge.sp-tarkov.com/user/37269/kratos1413",
+   "created_at": "2023-12-23T02:20:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i tryed moving the user thing but nothing happened and im still confused how you got to that point with out the mod file being downloaded cause when i go to download it it sends me to note pad with a bunch of code so i the compressed it and put it in the mod folder but it still does not have the json thing and sorry for being a pain im new to this stuff</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 94798,
+   "parent_id": 25438,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-12-23T07:44:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Oh, you didn\u2019t read the how to install tab in the description \u2026.</p>\n<p>You need WinRAR or 7-Zip to uncrompress it</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 25771,
+   "parent_id": null,
+   "author": "Ziii",
+   "author_id": 14378,
+   "author_url": "https://forge.sp-tarkov.com/user/14378/ziii",
+   "created_at": "2023-12-30T16:18:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>May i ask for update to newer Virtual quest?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 95073,
+   "parent_id": 25771,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-12-30T21:35:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Done</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 95107,
+   "parent_id": 25771,
+   "author": "Ziii",
+   "author_id": 14378,
+   "author_url": "https://forge.sp-tarkov.com/user/14378/ziii",
+   "created_at": "2023-12-31T13:55:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you very much!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 25981,
+   "parent_id": null,
+   "author": "LiteGem",
+   "author_id": 43283,
+   "author_url": "https://forge.sp-tarkov.com/user/43283/litegem",
+   "created_at": "2024-01-06T05:51:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Can not get it to work, have done instructions and i am unable to find where to get the gifts - i checked the mailbox thingy but they are not there. How do in receive the gifts?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 95410,
+   "parent_id": 25981,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2024-01-06T06:04:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Quests..</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 95412,
+   "parent_id": 25981,
+   "author": "LiteGem",
+   "author_id": 43283,
+   "author_url": "https://forge.sp-tarkov.com/user/43283/litegem",
+   "created_at": "2024-01-06T06:25:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I was blind- i didnt see the accept/complete button - im new to this game lol</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 26169,
+   "parent_id": null,
+   "author": "Neolix",
+   "author_id": 41027,
+   "author_url": "https://forge.sp-tarkov.com/user/41027/neolix",
+   "created_at": "2024-01-10T12:01:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m so confused with the installation\u2026 I extract it to my mods folder but it keeps failing to load that it\u2019s missing package.json</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 95710,
+   "parent_id": 26169,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2024-01-10T17:00:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You are confused because you didn\u2019t read.</p>\n<p>The mod have a dependency, you need to install it before</p>\n<p>and after, follow the button on the top msg \u201cHow Install\u201d</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 95724,
+   "parent_id": 26169,
+   "author": "Angler",
+   "author_id": 31570,
+   "author_url": "https://forge.sp-tarkov.com/user/31570/angler",
+   "created_at": "2024-01-10T20:47:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Neolix Pretty sure you have to download Virtual\u2019s Custom Quest Loader.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 95738,
+   "parent_id": 26169,
+   "author": "Neolix",
+   "author_id": 41027,
+   "author_url": "https://forge.sp-tarkov.com/user/41027/neolix",
+   "created_at": "2024-01-11T05:19:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>To be fair it doesn\u2019t say anywhere I need the Virtual\u2019s Custom Quest Loader other than on the gif on installation page, but yes, I was missing that mod, thanks and sorry</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 95742,
+   "parent_id": 26169,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2024-01-11T06:26:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Neolix you\u2019re wrong, in the changelog of the mod I say it.</p>\n<p>This mod require to use the latest version of <a href=\"https://hub.sp-tarkov.com/files/file/885\" target=\"_blank\" rel=\"noreferrer noopener\">VCQL</a>.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/VLHvhnC.png\" alt=\"VLHvhnC.png\" /></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 95746,
+   "parent_id": 26169,
+   "author": "Neolix",
+   "author_id": 41027,
+   "author_url": "https://forge.sp-tarkov.com/user/41027/neolix",
+   "created_at": "2024-01-11T08:13:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Ohh my bad sorry</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 26859,
+   "parent_id": null,
+   "author": "Shermuel",
+   "author_id": 29519,
+   "author_url": "https://forge.sp-tarkov.com/user/29519/shermuel",
+   "created_at": "2024-01-30T21:34:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I don\u2019t remember if you had these on the previous iteration of this mod or if it\u2019s ever been mentioned but the EFT website has an old article dating from early 2017 about the Emissary and Sherpa gift \u201cpackages\u201d being given to forum volunteers.</p>\n<p>Pretty funny little forum anecdote that I found from the Chinese Tarkov community about the Emissaries and Sherpas killing off the folks they\u2019re supposed to help.</p>\n<p><a href=\"https://www.escapefromtarkov.com/news/id/63\" target=\"_blank\" rel=\"noreferrer noopener\">https://www.escapefromtarkov.com/news/id/63</a></p>\n<p>Link to article in regards to the two gifts and two accompanying images.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 96687,
+   "parent_id": 26859,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2024-01-31T21:22:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I know about these 2 packs, but I need the assort of the exact content to add it, or if someone of they accept the gift in a video to view the exact content</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 27067,
+   "parent_id": null,
+   "author": "WoBra",
+   "author_id": 21591,
+   "author_url": "https://forge.sp-tarkov.com/user/21591/wobra",
+   "created_at": "2024-02-08T00:48:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi, I have a problem. When I go to the missions tab and then back to the menu, I see the missions and the stash in the background. I can\u2019t do anything in the stash anymore. There is also a mission \u201cFactory cleaning II\u201d when I click on it, it freezes as well! Is this due to the Virtuals Quest loader and can I fix it?</p>\n<p><a href=\"https://ibb.co/hF3Z2Qq\" target=\"_blank\" rel=\"noreferrer noopener\">My Stash</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 96906,
+   "parent_id": 27067,
+   "author": "WoBra",
+   "author_id": 21591,
+   "author_url": "https://forge.sp-tarkov.com/user/21591/wobra",
+   "created_at": "2024-02-08T01:17:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p><a href=\"https://hub.sp-tarkov.com/forum/thread/3845-unable-to-click-on-certain-traders/\" target=\"_blank\" rel=\"noreferrer noopener\">Unable to click on certain traders.</a> is not working!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 96914,
+   "parent_id": 26169,
+   "author": "schlinks",
+   "author_id": 29309,
+   "author_url": "https://forge.sp-tarkov.com/user/29309/schlinks",
+   "created_at": "2024-02-08T04:10:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Might wanna put that in the description and install tab, because without reading this I wouldn\u2019t have know either. The gif hardly explains anything and checking the versions tab isn\u2019t everyone\u2019s go to for install instructions.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 96917,
+   "parent_id": 27067,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2024-02-08T06:02:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>First, go to <a href=\"https://hub.sp-tarkov.com/forum/thread/2698-welcome-gifts-2/\" target=\"_blank\" rel=\"noreferrer noopener\">Support Thread</a> to post this. I will not give support in comments.</p>\n<p>2nd, I need more info, I need the logs.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 96918,
+   "parent_id": 26169,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2024-02-08T08:24:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Might wanna put that in the description and install tab, because without reading this I wouldn\u2019t have know either. The gif hardly explains anything and checking the versions tab isn\u2019t everyone\u2019s go to for install instructions.</p>\n<p>Done.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 27075,
+   "parent_id": null,
+   "author": "Krilzlocc",
+   "author_id": 37865,
+   "author_url": "https://forge.sp-tarkov.com/user/37865/krilzlocc",
+   "created_at": "2024-02-08T14:37:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Does this mod has it\u2019s own quest?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 27283,
+   "parent_id": null,
+   "author": "Vovanskiy",
+   "author_id": 24344,
+   "author_url": "https://forge.sp-tarkov.com/user/24344/vovanskiy",
+   "created_at": "2024-02-19T13:15:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello, I can\u2019t download the mod. When I click on the link it says page not found<br />\n(Google Translate)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 97236,
+   "parent_id": 27283,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2024-02-19T21:11:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Only, why, i\u2019m not ruski \ud83d\udc40</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 97237,
+   "parent_id": 27075,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2024-02-19T21:12:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Do you mean like other quests? \ud83d\udc40</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 97238,
+   "parent_id": 27283,
+   "author": "Vovanskiy",
+   "author_id": 24344,
+   "author_url": "https://forge.sp-tarkov.com/user/24344/vovanskiy",
+   "created_at": "2024-02-19T21:20:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Sorry, I can\u2019t download the mod. When I click on the link it says page not found</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 97241,
+   "parent_id": 27283,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2024-02-19T21:23:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>O-o \u2026. oh no</p>\n<p>Fixed, thanks</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 97249,
+   "parent_id": 27283,
+   "author": "Vovanskiy",
+   "author_id": 24344,
+   "author_url": "https://forge.sp-tarkov.com/user/24344/vovanskiy",
+   "created_at": "2024-02-20T00:25:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I currently have Version 376.1.3 installed. If I update to the latest Version 376.1.4. Will I lose something or is it better to start a new game?</p>\n<p>Please advise on installation. First put WelcomeGifts2_Main and then on top WelcomeGifts2_ExperimentalStuff ?</p>\n<p>Thanks in advance</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 97262,
+   "parent_id": 27283,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2024-02-20T10:30:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The difference between 376.1.3 and 376.1.4 is simply a gift, in the latter the lunar year was added. On the other hand, the system is made to not lose objects between one update and another.</p>\n<p>Regarding _Main and _Experimental\u2026 You do not need other mods for Main, and Experimental requires the use of Mod <a href=\"https://hub.sp-tarkov.com/files/file/1683\" target=\"_blank\" rel=\"noreferrer noopener\">14.0 CONTENT PREVIEW - GUNS, GEAR,AMMO AND ATTACHMENTS ADDED</a></p>\n<p>The 2023 Christmas gift is the only one that is separate, due to its content.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 97607,
+   "parent_id": 22684,
+   "author": "uzzy1986",
+   "author_id": 46164,
+   "author_url": "https://forge.sp-tarkov.com/user/46164/uzzy1986",
+   "created_at": "2024-03-03T14:36:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i think you actually can</p>\n<p>by using SPT-AKI Profile Editor and on quest section change their status from success to available for start again</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 28139,
+   "parent_id": null,
+   "author": "J-mac",
+   "author_id": 41437,
+   "author_url": "https://forge.sp-tarkov.com/user/41437/j-mac",
+   "created_at": "2024-04-02T00:43:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>If I may ask, even with the .gif showing you. Do I drop this in under user &gt; mods?</p>\n<p>Or the Bepix &gt; Plugins?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 98465,
+   "parent_id": 28139,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2024-04-02T00:52:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This is a server mod not client mod.</p>\n<p>You need the dependency as I said in description/versions tabs</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 98466,
+   "parent_id": 28139,
+   "author": "J-mac",
+   "author_id": 41437,
+   "author_url": "https://forge.sp-tarkov.com/user/41437/j-mac",
+   "created_at": "2024-04-02T00:56:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Completely fair, I missed that tab thing, I\u2019m not used to the tab system that has different tabs of information.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 28784,
+   "parent_id": null,
+   "author": "RogueRGU",
+   "author_id": 41329,
+   "author_url": "https://forge.sp-tarkov.com/user/41329/roguergu",
+   "created_at": "2024-04-07T01:38:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m still new to pc in general let alone this stuff. how do i access the gifts in game? I\u2019ve got the files in the right place but not understanding how to access these??</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 99357,
+   "parent_id": 28784,
+   "author": "RogueRGU",
+   "author_id": 41329,
+   "author_url": "https://forge.sp-tarkov.com/user/41329/roguergu",
+   "created_at": "2024-04-07T01:43:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>DISREGARD thx.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 29952,
+   "parent_id": null,
+   "author": "Apoloon",
+   "author_id": 24270,
+   "author_url": "https://forge.sp-tarkov.com/user/24270/apoloon",
+   "created_at": "2024-04-17T19:08:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is there any way to delete some quests from traders?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 101149,
+   "parent_id": 29952,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2024-04-18T02:05:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>In this case you can limit the year of the quests.</p>\n<p>In case of, you can edit the quest file and delete the entire {} from the json</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 33784,
+   "parent_id": null,
+   "author": "ManWithACat",
+   "author_id": 52114,
+   "author_url": "https://forge.sp-tarkov.com/user/52114/manwithacat",
+   "created_at": "2024-06-07T13:12:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Aki Server says he doesn`t have package.json</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 106388,
+   "parent_id": 33784,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2024-06-07T16:22:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>As I said in the pinned post and in the overview and \u201chow to install\u201d you need virtual custom quest loader o VCQL to use it</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 33868,
+   "parent_id": null,
+   "author": "Fenah35",
+   "author_id": 4971,
+   "author_url": "https://forge.sp-tarkov.com/user/4971/fenah35",
+   "created_at": "2024-06-08T17:50:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m constantly looking for mod updates. The guy made the mod and is literally releasing a version to teach the installation. Thanks for your efforts</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 34210,
+   "parent_id": null,
+   "author": "RoboticThrone96",
+   "author_id": 53673,
+   "author_url": "https://forge.sp-tarkov.com/user/53673/roboticthrone96",
+   "created_at": "2024-06-13T19:47:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>doesnt work. nothing shows up in my inventory. how to install just shows you dragging a random user folder and dropping it on top of another random file. kinda useless to have a how to that doesnt explain anything</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 107153,
+   "parent_id": 34210,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2024-06-14T10:12:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>are missions \u2026</p>\n<p>It\u2019s the same procedure indicated in the gif of the pinned post\u2026</p>\n<p>and inside the download is a little guide too</p>\n<p>Is not my issue.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 35334,
+   "parent_id": null,
+   "author": "Speed_Weed",
+   "author_id": 52479,
+   "author_url": "https://forge.sp-tarkov.com/user/52479/speed-weed",
+   "created_at": "2024-07-01T19:59:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Nice for cheesing Zero to Hero runs 10/10</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 109872,
+   "parent_id": 25981,
+   "author": "Goburt",
+   "author_id": 57909,
+   "author_url": "https://forge.sp-tarkov.com/user/57909/goburt",
+   "created_at": "2024-07-15T00:20:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>what do you mean quests</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 38485,
+   "parent_id": null,
+   "author": "helsingtvdz",
+   "author_id": 60441,
+   "author_url": "https://forge.sp-tarkov.com/user/60441/helsingtvdz",
+   "created_at": "2024-08-06T22:53:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>is there a way to use the quest second time ? XDDDDDDDD</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 38510,
+   "parent_id": null,
+   "author": "Vovanskiy",
+   "author_id": 24344,
+   "author_url": "https://forge.sp-tarkov.com/user/24344/vovanskiy",
+   "created_at": "2024-08-07T08:03:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>ShadowXtrex Hello. There are many years in the archive from 2018 to 2024. To get all the gifts, install everything in order or just one year?</p>\n<p>Thanks in advance</p>\n<p>(Google translation)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 113107,
+   "parent_id": 38510,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2024-08-07T08:05:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You are right,</p>\n<p>To install all years, install all folders content</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 113108,
+   "parent_id": 38485,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2024-08-07T08:05:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>wich one \ud83d\udc40</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 113111,
+   "parent_id": 38485,
+   "author": "helsingtvdz",
+   "author_id": 60441,
+   "author_url": "https://forge.sp-tarkov.com/user/60441/helsingtvdz",
+   "created_at": "2024-08-07T08:34:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I don\u2019t have one in mind but if one day I want to double the gift and do it a second time is there a way ?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 113113,
+   "parent_id": 38510,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2024-08-07T08:53:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>the ETS gift with ebook gifts are duplicated every year, that\u2019s correct</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 113114,
+   "parent_id": 38485,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2024-08-07T08:54:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>in SPT/SPT_Data/Server/configs/gifts.json are some of them if you require to repeat it</p>\n<p>Other way is use the ProfileEditor and delete the quests from your complete quests list</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 113130,
+   "parent_id": 38485,
+   "author": "helsingtvdz",
+   "author_id": 60441,
+   "author_url": "https://forge.sp-tarkov.com/user/60441/helsingtvdz",
+   "created_at": "2024-08-07T10:42:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>thank you so much</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 113133,
+   "parent_id": 38485,
+   "author": "helsingtvdz",
+   "author_id": 60441,
+   "author_url": "https://forge.sp-tarkov.com/user/60441/helsingtvdz",
+   "created_at": "2024-08-07T10:56:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>its worked like a charm thank youuuu</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 39755,
+   "parent_id": null,
+   "author": "ZestyBoy",
+   "author_id": 62357,
+   "author_url": "https://forge.sp-tarkov.com/user/62357/zestyboy",
+   "created_at": "2024-08-26T17:20:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello fellas, so the quest are visible and i accepted them they auto completed but i didnt receive the items . would i have to play a raid first on customs before receiving them?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 115141,
+   "parent_id": 39755,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2024-08-26T23:47:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>1\u00ba Accept<br />\n2\u00ba wait autocomplete<br />\n3\u00ba Press complete</p>\n<p>if that is not happening, report it as a bug in support thread or my thread of mods in spt discord</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 115223,
+   "parent_id": 39755,
+   "author": "ZestyBoy",
+   "author_id": 62357,
+   "author_url": "https://forge.sp-tarkov.com/user/62357/zestyboy",
+   "created_at": "2024-08-27T16:24:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i uninstalled it and reinstalled it and it seemed to have fixed the issue</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 44115,
+   "parent_id": null,
+   "author": "Maverick",
+   "author_id": 45418,
+   "author_url": "https://forge.sp-tarkov.com/user/45418/maverick",
+   "created_at": "2024-11-29T22:35:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Wish you good luck in your future projects!!!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 44128,
+   "parent_id": null,
+   "author": "Djanbolt",
+   "author_id": 11792,
+   "author_url": "https://forge.sp-tarkov.com/user/11792/djanbolt",
+   "created_at": "2024-11-30T00:04:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Dear ShadowXtrex, the link from Russia does not open, please post alternative ones</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 120920,
+   "parent_id": 44128,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2024-11-30T06:46:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>There do you have issues with cloudflare?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 44149,
+   "parent_id": null,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2024-11-30T11:19:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2026-02-13 12:31:41]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 45783,
+   "parent_id": null,
+   "author": "Kn1gHtFuRy",
+   "author_id": 69497,
+   "author_url": "https://forge.sp-tarkov.com/user/69497/kn1ghtfury",
+   "created_at": "2024-12-28T05:53:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I am unable to download this - getting \u2018access denied\u2019 error.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 123038,
+   "parent_id": 45783,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2024-12-28T06:22:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>not my issue, try with f5 before download again</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 123046,
+   "parent_id": 44128,
+   "author": "Vovanskiy",
+   "author_id": 24344,
+   "author_url": "https://forge.sp-tarkov.com/user/24344/vovanskiy",
+   "created_at": "2024-12-28T08:54:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>\u0412\u0441\u0435 \u043e\u0442\u043a\u0440\u044b\u0432\u0430\u0435\u0442\u0441\u044f \u0438\u0437 \u0420\u0424. \u041e\u0442\u043a\u043b\u044e\u0447\u0438 \u0432\u0441\u0435 \u0431\u043b\u043e\u043a\u0438\u0440\u0430\u0442\u043e\u0440\u044b \u0438 VPN.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 152829,
+   "parent_id": null,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2026-02-13T12:31:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p><strong>Last Release</strong>: v4.0.0 for SPT 4.0.12 - Require WTT-CommonLib.</p>\n<p><strong>Release</strong>: 12-02-2026.</p>\n<p><strong>Flags</strong>: Fika Incompatible (Not tested. I don\u2019t have plans to make it compatible atm. Try as your own risk).</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/34vXXDj.gif\" alt=\"How to install\" /></p>\n<p>If you need help or have found a bug, send a message to the <a href=\"https://discord.com/channels/875684761291599922/1259669284766879817\" target=\"_blank\" rel=\"noreferrer noopener\">ShadowXtrex Mods Thread</a>.\nRemember to attach your logs if it is due to a issue.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 153445,
+   "parent_id": null,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2026-02-21T17:10:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>v4.0.1 will come with:</p>\n<ul>\n<li>B BDAY 2025</li>\n<li>ONEMILLIONPLUS code</li>\n<li>ju20fu2620idfh88</li>\n<li>xmass gift</li>\n<li>lunar year gift</li>\n<li>INEEDSPACE code</li>\n<li>Survey reward</li>\n</ul>\n<p>Other codes will appear in readme but will be not included (no time)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 156433,
+   "parent_id": null,
+   "author": "igor de oliveira mar\u00e7al",
+   "author_id": 109171,
+   "author_url": "https://forge.sp-tarkov.com/user/109171/igor-de-oliveira-marcal",
+   "created_at": "2026-04-06T22:20:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi, can you tell me when the 4.0.13 update will be available, please?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 165277,
+   "parent_id": 156433,
+   "author": "Super_Lopez",
+   "author_id": 57052,
+   "author_url": "https://forge.sp-tarkov.com/user/57052/super-lopez",
+   "created_at": "2026-07-04T13:01:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You can used this in 4.0.13 you have to enter WelcomeGifts.deps.json\nand change the number in all WTT-ServerCommonLib lines to version 2.0.20 inside the file.</p>\n<p>Save and you can have all the gifts.\nEnjoy</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 165278,
+   "parent_id": 153445,
+   "author": "Super_Lopez",
+   "author_id": 57052,
+   "author_url": "https://forge.sp-tarkov.com/user/57052/super-lopez",
+   "created_at": "2026-07-04T13:14:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>unfortunately 4.0.1 never arrived</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170717,
+   "parent_id": null,
+   "author": "TRex284",
+   "author_id": 52491,
+   "author_url": "https://forge.sp-tarkov.com/user/52491/trex284",
+   "created_at": "2026-08-07T11:51:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello, is an update planned for 4.1.2 ?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

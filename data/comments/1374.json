@@ -1,0 +1,480 @@
+{
+ "mod_id": 1374,
+ "slug": "player-encumbrance-bar",
+ "fetched_at": "2026-08-08T20:55:41Z",
+ "reported_total": 21,
+ "pages": 3,
+ "count": 47,
+ "comments": [
+  {
+   "id": 30967,
+   "parent_id": null,
+   "author": "mpstark",
+   "author_id": 47478,
+   "author_url": "https://forge.sp-tarkov.com/user/47478/mpstark",
+   "created_at": "2024-05-01T06:05:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Please do not use the support thread. Either <a href=\"https://github.com/mpstark/SPT-PlayerEncumbranceBar/issues\" target=\"_blank\" rel=\"noreferrer noopener\">file an issue on GitHub</a>, leave a comment in the comments section here, or ping me (mpstark) in the official SPT Discord.</p>\n<p>Just like any other client mod: if you\u2019re running into a problem, make sure that you <em><strong>check if an exception has happened</strong></em>, those will most likely show up in the ~-console. If you see one there, be sure to grab both the BepinEx log (located at spt-dir/BepinEx/LogOutput.log) and the client log (located at spt-dir/Logs/log&lt;date&gt;&lt;version&gt;/&lt;date&gt;_&lt;version&gt; traces.log). These logs contain much more information that I can use to narrow down the issue.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 30969,
+   "parent_id": null,
+   "author": "HandGrade",
+   "author_id": 42831,
+   "author_url": "https://forge.sp-tarkov.com/user/42831/handgrade",
+   "created_at": "2024-05-01T08:29:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Mod looks ridicolously needed in Vanilla Tarkov. thx for the mod!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 30976,
+   "parent_id": null,
+   "author": "Remdieze",
+   "author_id": 24603,
+   "author_url": "https://forge.sp-tarkov.com/user/24603/remdieze",
+   "created_at": "2024-05-01T10:32:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>work on 3.7.6 ?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 102425,
+   "parent_id": 30976,
+   "author": "mpstark",
+   "author_id": 47478,
+   "author_url": "https://forge.sp-tarkov.com/user/47478/mpstark",
+   "created_at": "2024-05-01T18:55:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>No, 3.8.0 only for now \u2013 will not be supporting backporting to older versions of SPT</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 31028,
+   "parent_id": null,
+   "author": "Audixas",
+   "author_id": 3245,
+   "author_url": "https://forge.sp-tarkov.com/user/3245/audixas",
+   "created_at": "2024-05-02T04:36:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m guessing it\u2019s incompatible with Realism\u2019s changes to the weight system?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 102463,
+   "parent_id": 31028,
+   "author": "mpstark",
+   "author_id": 47478,
+   "author_url": "https://forge.sp-tarkov.com/user/47478/mpstark",
+   "created_at": "2024-05-02T05:32:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I don\u2019t run with Realism and haven\u2019t tested it, so I do not know. I don\u2019t see any particular reason that it would be incompatible \u2013 the breakpoints might not be correct I suppose? It should work as well as the default weight indicator, since he doesn\u2019t seem to be patching that.</p>\n<p>It\u2019s not trivial for me to test Realism right now, since it doesn\u2019t run in client debug mode, and I don\u2019t want to tear apart my actual install that I\u2019m using for my actual SPT playthrough to do it.</p>\n<p>If you\u2019ve seen evidence that it doesn\u2019t work with Realism, let me know. I may be able to add a Realism compatibility patch in the future.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 31036,
+   "parent_id": null,
+   "author": "PureRussianVodka",
+   "author_id": 33431,
+   "author_url": "https://forge.sp-tarkov.com/user/33431/purerussianvodka",
+   "created_at": "2024-05-02T05:54:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>life saver honestly for all the rats who try to get out with as much loot as possible, while still recovering stamina when walking. Cheers for the mod!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 102539,
+   "parent_id": 31028,
+   "author": "Fontaine",
+   "author_id": 6053,
+   "author_url": "https://forge.sp-tarkov.com/user/6053/fontaine",
+   "created_at": "2024-05-02T22:48:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>it works, nice mod!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 3
+  },
+  {
+   "id": 102565,
+   "parent_id": 31028,
+   "author": "Audixas",
+   "author_id": 3245,
+   "author_url": "https://forge.sp-tarkov.com/user/3245/audixas",
+   "created_at": "2024-05-03T04:36:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hell yeah, good to know.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 102870,
+   "parent_id": 30976,
+   "author": "mpstark",
+   "author_id": 47478,
+   "author_url": "https://forge.sp-tarkov.com/user/47478/mpstark",
+   "created_at": "2024-05-06T07:06:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It might now work with 3.7.6 with 1.0.3, but no support will be given.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 31410,
+   "parent_id": null,
+   "author": "NinjaNick",
+   "author_id": 51043,
+   "author_url": "https://forge.sp-tarkov.com/user/51043/ninjanick",
+   "created_at": "2024-05-06T18:18:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>hey after updating to the newest version i cant seem to see the bar at all im unsure if its loading or not. theres no exceptions and i cant seem to find it in either log</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 102916,
+   "parent_id": 31410,
+   "author": "mpstark",
+   "author_id": 47478,
+   "author_url": "https://forge.sp-tarkov.com/user/47478/mpstark",
+   "created_at": "2024-05-06T18:56:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Check &lt;spt-folder&gt;\\BepInEx\\LogOutput.log for the word \u201cPlayerEncumbranceBar\u201d, you should see [Info : BepInEx] Loading [PlayerEncumbranceBar 1.0.3] if it is loading.</p>\n<p>If it isn\u2019t there, it\u2019s not loading and you\u2019ll need to diagnose why. Make sure that the &lt;spt-folder&gt;\\BepInEx\\plugins folder has a folder named PlayerEncumbranceBar and make sure that it has two files, a .dll and a .png.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 102919,
+   "parent_id": 31410,
+   "author": "NinjaNick",
+   "author_id": 51043,
+   "author_url": "https://forge.sp-tarkov.com/user/51043/ninjanick",
+   "created_at": "2024-05-06T20:13:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>the files are indeed in the correct place and all files are presence but their is no loading of the mod nor mention of it</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 31447,
+   "parent_id": null,
+   "author": "bERys",
+   "author_id": 48854,
+   "author_url": "https://forge.sp-tarkov.com/user/48854/berys",
+   "created_at": "2024-05-07T05:58:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you for making this mod! I am a Chinese player and I want to ask may I repost your mod to our website? Of course I will indicate the source and your name</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 102974,
+   "parent_id": 31410,
+   "author": "mpstark",
+   "author_id": 47478,
+   "author_url": "https://forge.sp-tarkov.com/user/47478/mpstark",
+   "created_at": "2024-05-07T07:14:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Try reverting to 1.0.2 by replacing just the .dll file in place and let me know if that makes it load. If it doesn\u2019t, this is some sort of mod loading issue rather than an issue with this mod and you might want to get help in the discord #general-support.</p>\n<p>Might want to check simple stuff like if you have multiple SPT installs, making sure that you\u2019re installing the mod into the correct place.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 102987,
+   "parent_id": 31447,
+   "author": "mpstark",
+   "author_id": 47478,
+   "author_url": "https://forge.sp-tarkov.com/user/47478/mpstark",
+   "created_at": "2024-05-07T14:09:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Go ahead, that\u2019s fine.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 102990,
+   "parent_id": 31410,
+   "author": "NinjaNick",
+   "author_id": 51043,
+   "author_url": "https://forge.sp-tarkov.com/user/51043/ninjanick",
+   "created_at": "2024-05-07T14:31:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>found the problem it was my bad when i had switched files the launcher was reading the old files for mod info for some reason some modes still read from the current folder and some didnt. i truly apologize for any time taken for this failure on my end.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 103042,
+   "parent_id": 31447,
+   "author": "bERys",
+   "author_id": 48854,
+   "author_url": "https://forge.sp-tarkov.com/user/48854/berys",
+   "created_at": "2024-05-08T01:20:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you again!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 34686,
+   "parent_id": null,
+   "author": "AmmoDing",
+   "author_id": 54326,
+   "author_url": "https://forge.sp-tarkov.com/user/54326/ammoding",
+   "created_at": "2024-06-21T09:59:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>As a proud loot goblin, this mod is great to know exactly how much I can carry without becoming too heavy to regain stamina. Thanks for making this mod!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 39513,
+   "parent_id": null,
+   "author": "SlaveToTheGames",
+   "author_id": 35506,
+   "author_url": "https://forge.sp-tarkov.com/user/35506/slavetothegames",
+   "created_at": "2024-08-23T06:50:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Any thoughts on a stamina bar below the weight one in the inventory?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 44746,
+   "parent_id": null,
+   "author": "xlegendary",
+   "author_id": 39231,
+   "author_url": "https://forge.sp-tarkov.com/user/39231/xlegendary",
+   "created_at": "2024-12-10T20:02:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>On what screen am I supposed to see this bar in? It is installed correctly but during the raid there isnt a bar added.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 44748,
+   "parent_id": null,
+   "author": "Apyeks",
+   "author_id": 69006,
+   "author_url": "https://forge.sp-tarkov.com/user/69006/apyeks",
+   "created_at": "2024-12-10T20:34:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This is great. Thank you.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 46118,
+   "parent_id": null,
+   "author": "S_gamez",
+   "author_id": 22060,
+   "author_url": "https://forge.sp-tarkov.com/user/22060/s-gamez",
+   "created_at": "2025-01-02T18:43:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Any chance in having a compatibility patch for <a href=\"https://hub.sp-tarkov.com/files/file/2581-mod-my-weight-limits/#overview\" target=\"_blank\" rel=\"noreferrer noopener\">Mod My Weight Limits</a>? I noticed even after game restart that the weight value is changing, and working fine. but the bar don\u2019t update.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 54209,
+   "parent_id": null,
+   "author": "blix900",
+   "author_id": 70297,
+   "author_url": "https://forge.sp-tarkov.com/user/70297/blix900",
+   "created_at": "2025-07-24T16:08:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Looks like the repository for this mod was deleted.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 4
+  },
+  {
+   "id": 134015,
+   "parent_id": 46118,
+   "author": "Vercinaigh",
+   "author_id": 82058,
+   "author_url": "https://forge.sp-tarkov.com/user/82058/vercinaigh",
+   "created_at": "2025-07-25T03:37:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This would be fantastic.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 134432,
+   "parent_id": 54209,
+   "author": "Lacyway",
+   "author_id": 47969,
+   "author_url": "https://forge.sp-tarkov.com/user/47969/lacyway",
+   "created_at": "2025-08-03T12:57:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019ll add it back when I return from my trip. I was cleaning old repos and forgot I was maintaining this.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 3
+  },
+  {
+   "id": 134570,
+   "parent_id": 54209,
+   "author": "Lacyway",
+   "author_id": 47969,
+   "author_url": "https://forge.sp-tarkov.com/user/47969/lacyway",
+   "created_at": "2025-08-06T20:34:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Should be back on Friday.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 4
+  },
+  {
+   "id": 134729,
+   "parent_id": 54209,
+   "author": "Lacyway",
+   "author_id": 47969,
+   "author_url": "https://forge.sp-tarkov.com/user/47969/lacyway",
+   "created_at": "2025-08-08T19:53:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It\u2019s back!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 139368,
+   "parent_id": null,
+   "author": "alcatraz7525",
+   "author_id": 85767,
+   "author_url": "https://forge.sp-tarkov.com/user/85767/alcatraz7525",
+   "created_at": "2025-10-20T04:46:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Waaaaaaahhh I was missing thiiiiisss!! Thanks!!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 139398,
+   "parent_id": null,
+   "author": "lpig97",
+   "author_id": 44001,
+   "author_url": "https://forge.sp-tarkov.com/user/44001/lpig97",
+   "created_at": "2025-10-20T12:25:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>If i drop the SPT folder in to the game\u2019s folder it will creat a BepInEx on the Spt folder of the game, is this intended?\nOr is the content of the SPT from the mod going to its correct BepInEx folder?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 139403,
+   "parent_id": 139398,
+   "author": "alcatraz7525",
+   "author_id": 85767,
+   "author_url": "https://forge.sp-tarkov.com/user/85767/alcatraz7525",
+   "created_at": "2025-10-20T12:52:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello there, into the ZIP I only see a BepInEx folder, mmm\u2026 \ud83e\udd14 did you extracted to the MAIN STP folder? O u placed it into the STP/SPT folder?\nPic:\n<a href=\"https://gyazo.com/5bce33ca88863a07d1bbbc1e5277cad6\" target=\"_blank\" rel=\"noreferrer noopener\">https://gyazo.com/5bce33ca88863a07d1bbbc1e5277cad6</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 139442,
+   "parent_id": 139398,
+   "author": "lpig97",
+   "author_id": 44001,
+   "author_url": "https://forge.sp-tarkov.com/user/44001/lpig97",
+   "created_at": "2025-10-20T17:58:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Mine is like this\nPic: <a href=\"https://imgur.com/a/2IABhyv\" target=\"_blank\" rel=\"noreferrer noopener\">https://imgur.com/a/2IABhyv</a>\nI\u2019m just asking because of the changes with 4.0, some things have change but yea i will put the folder in its correct spot</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 139449,
+   "parent_id": 139398,
+   "author": "alcatraz7525",
+   "author_id": 85767,
+   "author_url": "https://forge.sp-tarkov.com/user/85767/alcatraz7525",
+   "created_at": "2025-10-20T19:19:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Then you should unZip in your root folder (I think is your hard drive directly). U have to see only one BepInEx folder. So you SPT folder looks like this:\nDiskDrive root:\n<a href=\"https://gyazo.com/0daaa66dc4e892cc502304958d73d59a\" target=\"_blank\" rel=\"noreferrer noopener\">https://gyazo.com/0daaa66dc4e892cc502304958d73d59a</a></p>\n<p>Main SPT folder:\n<a href=\"https://gyazo.com/ad5229b6b7e75ecdfa674a5562af5773\" target=\"_blank\" rel=\"noreferrer noopener\">https://gyazo.com/ad5229b6b7e75ecdfa674a5562af5773</a></p>\n<p>And your SPT folder INSIDE main SPT:\n<a href=\"https://gyazo.com/a46d20fe5294916498047238503b0bb5\" target=\"_blank\" rel=\"noreferrer noopener\">https://gyazo.com/a46d20fe5294916498047238503b0bb5</a></p>\n<p>I think is a bit easier to see than speak it. If your ZIP has a SPT, and immidietly inside the BepInEx folder, it means that SPT is the MAIN folder. Anyway, make it looks like these pictures xD.\nTell us about it</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 139472,
+   "parent_id": null,
+   "author": "Horszak442",
+   "author_id": 49742,
+   "author_url": "https://forge.sp-tarkov.com/user/49742/horszak442",
+   "created_at": "2025-10-21T02:02:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It doesn\u2019t work for me, I don\u2019t know why</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 139487,
+   "parent_id": 139472,
+   "author": "alcatraz7525",
+   "author_id": 85767,
+   "author_url": "https://forge.sp-tarkov.com/user/85767/alcatraz7525",
+   "created_at": "2025-10-21T06:53:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Which version o SPT are you playing?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 139503,
+   "parent_id": 139398,
+   "author": "lpig97",
+   "author_id": 44001,
+   "author_url": "https://forge.sp-tarkov.com/user/44001/lpig97",
+   "created_at": "2025-10-21T10:46:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Its a Windows problem with the zip files, it happen with other mods too, not just this one\nIts working now, thank you for your time Alcatraz</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 139504,
+   "parent_id": 139472,
+   "author": "Horszak442",
+   "author_id": 49742,
+   "author_url": "https://forge.sp-tarkov.com/user/49742/horszak442",
+   "created_at": "2025-10-21T11:18:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>4.0.1. I\u2019ll try again later on a clean SPT with no mods. Maybe it conflicts with some mod.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 139533,
+   "parent_id": 139398,
+   "author": "alcatraz7525",
+   "author_id": 85767,
+   "author_url": "https://forge.sp-tarkov.com/user/85767/alcatraz7525",
+   "created_at": "2025-10-21T16:47:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Glad to hear you got it \ud83e\udd1d\ud83c\udffb\nWell, I learned this the hard way\u2026 (About 6 reinstallations \ud83d\ude2d) So if I can avoid it for somebody.. \ud83d\ude06\nHave fun in Tarkov!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 139534,
+   "parent_id": 139472,
+   "author": "alcatraz7525",
+   "author_id": 85767,
+   "author_url": "https://forge.sp-tarkov.com/user/85767/alcatraz7525",
+   "created_at": "2025-10-21T16:49:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>\ud83e\udd14 mine was \u201cplug&amp;play\u201d. Dide you modified any . json file to custom SPT? I broke some things that way and though mods were the guilted \ud83e\udd23</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 139572,
+   "parent_id": 139472,
+   "author": "Horszak442",
+   "author_id": 49742,
+   "author_url": "https://forge.sp-tarkov.com/user/49742/horszak442",
+   "created_at": "2025-10-21T19:50:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>My mistake, I thought it would be visible on the main screen when you\u2019re in a raid. And that\u2019s when you look in your backpack. So you don\u2019t have to click on health. I had a similar one in version 3.11 Game Panel HUD 3.3.0. It was on the main screen, so I expected the same from this mod. Hence my mistake. The mod works, sorry.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 139593,
+   "parent_id": 139472,
+   "author": "alcatraz7525",
+   "author_id": 85767,
+   "author_url": "https://forge.sp-tarkov.com/user/85767/alcatraz7525",
+   "created_at": "2025-10-21T22:17:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Nice is working now!! Enjoy this mod this guy brought us !!\ud83d\ude0b</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 139664,
+   "parent_id": null,
+   "author": "OldManJohnson",
+   "author_id": 7346,
+   "author_url": "https://forge.sp-tarkov.com/user/7346/oldmanjohnson",
+   "created_at": "2025-10-22T15:53:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This mod is great. Helps me determine how much to carry or to loot!!!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 139677,
+   "parent_id": null,
+   "author": "20fpsguy",
+   "author_id": 43600,
+   "author_url": "https://forge.sp-tarkov.com/user/43600/20fpsguy",
+   "created_at": "2025-10-22T17:15:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>hello the mod just stoped working for me i was in my stash and i noticed its bugged i turned off Display Breakpoint text and and back on and now its gone it load fine i can see the setting still but the bar is fully gone i restarted my game and server twice still gone and no error in console</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 139834,
+   "parent_id": null,
+   "author": "alcatraz7525",
+   "author_id": 85767,
+   "author_url": "https://forge.sp-tarkov.com/user/85767/alcatraz7525",
+   "created_at": "2025-10-23T22:08:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Helo there buddy, I\u2019m affraid despite the bar is shown in the Character window, it doesn\u2019t update \ud83d\ude05 II leave pic  <a href=\"https://gyazo.com/6b8ad2bd29dfb69b690d2e625251abcc\" target=\"_blank\" rel=\"noreferrer noopener\">https://gyazo.com/6b8ad2bd29dfb69b690d2e625251abcc</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 139970,
+   "parent_id": 139834,
+   "author": "alcatraz7525",
+   "author_id": 85767,
+   "author_url": "https://forge.sp-tarkov.com/user/85767/alcatraz7525",
+   "created_at": "2025-10-24T21:16:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Ok, looks like the fisrt version for 4.0.0 is still working fine guys</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 144115,
+   "parent_id": null,
+   "author": "FallegaHQ",
+   "author_id": 69214,
+   "author_url": "https://forge.sp-tarkov.com/user/69214/fallegahq",
+   "created_at": "2025-11-27T23:51:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>why are people removing the old versions of the mods?\nI have an old installation of EFT+SPT and I wanted to add mods that I discovered later. After trying so many versions, I deleted them all and kept only my 3.10.5 (3.9 was better but 3.10 had more mods)\ncan you please bring back version <code>1.1.2</code>?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 167197,
+   "parent_id": null,
+   "author": "Wolf_Vantage",
+   "author_id": 112269,
+   "author_url": "https://forge.sp-tarkov.com/user/112269/wolf-vantage",
+   "created_at": "2026-07-20T22:41:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Another mod that should be part of the game by default. Great work.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}
