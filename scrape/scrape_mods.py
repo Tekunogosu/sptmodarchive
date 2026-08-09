@@ -68,8 +68,10 @@ def fetch_one(fetcher, mod):
     versions, versions_ok = fetch_versions(fetcher, mod["id"])
     if not (detail_ok and versions_ok):
         return None
-    return {"id": mod["id"], "stamp": mod.get("updated_at"),
-            "detail": detail, "versions": versions}
+    # Scrubbed on the way in, so what lands in the committed cache is already
+    # safe to push even if the run never reaches compaction.
+    return scrub_record({"id": mod["id"], "stamp": mod.get("updated_at"),
+                         "detail": detail, "versions": versions})
 
 
 # --- shaping -------------------------------------------------------------
@@ -212,6 +214,69 @@ def load_cache(path):
     return cache
 
 
+def scrub_record(value):
+    """Apply scrub_signed_urls() to every string in a nested payload.
+
+    The cache holds the API's raw responses, which is the point of keeping it
+    -- but "raw" cannot include AWS pre-signed parameters now that the file is
+    committed. GitHub serves images from S3 with `X-Amz-Credential=AKIA...`,
+    and push protection matches that shape and rejects the push.
+
+    build_record() already scrubs the two description fields on their way into
+    mods.json. This covers every field of the payload, including the ones the
+    archive does not otherwise keep.
+
+    Scrubbing the serialised line instead would be shorter and wrong: inside
+    JSON, a signed URL in an HTML attribute ends at \\", and the trailing
+    backslash falls inside the pattern's character class -- so it would eat the
+    escape and leave the file unparseable.
+    """
+    if isinstance(value, str):
+        return scrub_signed_urls(value)
+    if isinstance(value, list):
+        return [scrub_record(v) for v in value]
+    if isinstance(value, dict):
+        return {k: scrub_record(v) for k, v in value.items()}
+    return value
+
+
+def compact_cache(path):
+    """Rewrite the cache as one line per mod, sorted by id.
+
+    Records are *appended* during a run, which is what makes an interrupted run
+    resumable -- but it also means a refetched mod leaves its old record behind
+    forever. That is invisible while the file is a local scratch file, and
+    unacceptable once it is committed: the file would grow without bound and
+    every duplicate would be dead weight in the repository.
+
+    Compacting afterwards gets both. The run keeps appending as it goes, and
+    the finished file is stable, deduplicated, and diffs one line per mod that
+    actually changed -- the same reason repos.json is written with sorted keys.
+
+    It re-reads from disk rather than taking the in-memory cache, so that
+    --fresh, --limit and --spt (which only ever hold a subset in memory) cannot
+    drop the records they were not asked about. The replace is atomic, so an
+    interrupted compaction leaves the original intact.
+    """
+    cache = load_cache(path)
+    if not cache:
+        return 0
+
+    def key(record):
+        value = record.get("id")
+        return (0, value, "") if isinstance(value, int) else (1, 0, str(value))
+
+    # Scrubbed here as well as at fetch time, so records written before this
+    # was added -- or by a run that died before compacting -- are healed rather
+    # than sitting in the file waiting to block a push.
+    temp = f"{path}.tmp"
+    with open(temp, "w") as f:
+        for record in sorted(cache.values(), key=key):
+            f.write(json.dumps(scrub_record(record)) + "\n")
+    os.replace(temp, path)
+    return len(cache)
+
+
 def gather(fetcher, mods, cache_path, workers, fresh):
     """Fetch per-mod payloads, reusing cache entries for unchanged mods."""
     cache = {} if fresh else load_cache(cache_path)
@@ -311,15 +376,21 @@ def main():
         mods = mods[:args.limit]
 
     print(f"\nPer-mod detail and versions for {len(mods)} mods...", file=sys.stderr)
-    cache = gather(fetcher, mods, os.path.join(DATA, "raw_mods.jsonl"),
-                   args.workers, args.fresh)
+    cache_path = os.path.join(DATA, "raw_mods.jsonl")
+    cache = gather(fetcher, mods, cache_path, args.workers, args.fresh)
+    compact_cache(cache_path)
 
     overrides = load_overrides(os.path.join(HERE, "source_overrides.json"))
     if overrides:
         print(f"Applying {len(overrides)} source override(s)", file=sys.stderr)
 
     records = [build_record(m, cache.get(str(m["id"])), overrides) for m in mods]
-    records.sort(key=lambda r: -r["downloads"])
+    # Sorted by id, which never changes, so the file diffs small. Ordering by
+    # downloads instead moves a mod's whole record every time two of them swap
+    # rank -- turning a handful of changed counters into thousands of changed
+    # lines, on a file CI commits every couple of hours. build.py sorts by
+    # downloads at render time, so nothing on the site depends on this order.
+    records.sort(key=lambda r: r["id"])
 
     categories = {}
     for r in records:

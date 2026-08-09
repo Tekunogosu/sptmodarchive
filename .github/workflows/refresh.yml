@@ -1,16 +1,21 @@
-name: Refresh repo status
+name: Refresh archive
 
-# Source repositories keep moving after the Forge is gone, so the "last commit"
-# data goes stale within a day. This re-checks every repo on a schedule and
-# republishes the site.
+# Two halves of the archive go stale on different clocks, so one scheduled run
+# does both, in the order their data depends on:
 #
-# It deliberately does NOT scrape the Forge. repo_status.py only talks to
-# GitHub, GitLab, and Codeberg, which is what makes it safe to run unattended:
-# there is no rate limit to be rude about on somebody else's dying server, and
-# nothing here breaks when the Forge disappears.
+#   scrape_mods.py   the Forge listings, which exist only until it shuts down
+#   repo_status.py   the source repositories, which outlive it
+#
+# Mods go first because data/mods.json is the spine: repo_status.py reads every
+# source link out of it, so a mod added this run has its repository checked in
+# the same run rather than hours later.
+#
+# AFTER THE FORGE SHUTS DOWN: delete the "Scrape the Forge" step, and drop
+# data/mods.json and data/raw_mods.jsonl from the commit step. Nothing below
+# them touches sp-tarkov.com, so the rest keeps running indefinitely.
 on:
   schedule:
-    - cron: "0 6,18 * * *"     # 06:00 and 18:00 UTC
+    - cron: "0 */2 * * *"       # every two hours
   workflow_dispatch:            # and on demand from the Actions tab
 
 # Build and deploy happen in this one workflow rather than by pushing and
@@ -31,6 +36,9 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    # A scrape that hangs should lose its run, not sit on a runner for six
+    # hours while the next scheduled run queues up behind it.
+    timeout-minutes: 45
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
@@ -39,6 +47,19 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
+
+      # The per-mod fetch cache (data/raw_mods.jsonl) is committed, so the
+      # checkout above already restored it: this run refetches only the mods
+      # whose updated_at moved, rather than all ~1,800 of them. That is what
+      # makes a two-hourly schedule defensible against a dying server.
+      - name: Scrape the Forge
+        # Never fatal. scrape_mods.py aborts without writing when enumeration
+        # comes back empty or short, so the worst case is that this run
+        # publishes the mod data already in the repo. That is also exactly what
+        # every run looks like once the Forge is gone, and it must not stop the
+        # repository status below from refreshing.
+        continue-on-error: true
+        run: python3 scrape/scrape_mods.py
 
       - name: Check source repositories
         env:
@@ -53,13 +74,14 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          if git diff --quiet -- data/repos.json; then
-            echo "No repository changes since the last run."
+          git add data/mods.json data/raw_mods.jsonl data/repos.json
+
+          if git diff --cached --quiet; then
+            echo "Nothing changed since the last run."
             exit 0
           fi
 
-          git add data/repos.json
-          git commit -m "Refresh repo status [skip ci]"
+          git commit -m "Refresh archive [skip ci]"
 
           # A maintainer may have pushed while this ran. Rebase onto them
           # rather than clobbering; if that conflicts, drop this run's commit

@@ -292,7 +292,7 @@ def save_cache(path, cache):
     """Write the cache so that unchanged repos produce no diff.
 
     Two things make that work, and both matter because this file is committed
-    twice a day by CI. Keys are sorted, so a run that happens to check hosts in
+    every two hours by CI. Keys are sorted, so a run that checks hosts in
     a different order does not reshuffle the file. And freshness is recorded
     once at the top rather than per repo -- a per-record `checked_at` rewrote
     all 1,346 entries on every run, which buried the handful of repositories

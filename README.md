@@ -47,6 +47,11 @@ usable on its own.
 
 ## Keeping it current
 
+**Steps 1 and 5 now run themselves.** The `Refresh archive` workflow scrapes
+mods and re-checks every source repository every two hours, commits both files,
+and republishes the site — see [Automation](#automation) below. What is left to
+run by hand is the part no schedule should own: comments, lists, and images.
+
 Run these in order. `data/mods.json` is the spine — everything else reads it,
 so it goes first. The rest are independent of each other.
 
@@ -92,6 +97,63 @@ Running it after shutdown refuses rather than blanking your data.
 Failures are never cached either. A mod that returns a 500 stays in the queue
 for next time instead of being recorded as having no comments — so re-running
 is always the correct response to errors.
+
+---
+
+## Automation
+
+Two workflows. `build.yml` validates pull requests and publishes on push;
+`refresh.yml` is the scheduled one, running **every two hours**:
+
+```
+scrape_mods.py  →  repo_status.py  →  commit  →  build.py  →  deploy to Pages
+```
+
+Mods first, because `repo_status.py` reads every source link out of
+`data/mods.json` — so a mod added this run has its repository checked in the
+same run rather than hours later. Both scrapes, the commit, and the deploy live
+in one workflow on purpose: a push made with `GITHUB_TOKEN` does not trigger
+other workflows, so committing data and expecting `build.yml` to notice would
+publish nothing.
+
+**Nothing here needs a personal access token.** `repo_status.py` runs on the
+built-in `GITHUB_TOKEN`, which reads public repository data at 1,000
+requests/hour — against roughly 26 GraphQL calls and 21 REST calls per run. The
+`.github-sptmods` file is only for running it locally.
+
+**The fetch cache is what makes two-hourly polite**, and it is committed for
+exactly that reason. `data/raw_mods.jsonl` holds one raw payload per mod keyed
+by `updated_at`, so a run refetches only what changed; without it every run
+would be ~3,600 requests against a dying server, twelve times a day. Committing
+it means the checkout restores it, with no Actions cache to expire or evict —
+and it stops being "cheap to rebuild" the moment the Forge goes offline.
+
+**It is compacted on every run** to one line per mod, sorted by id. Records are
+*appended* as they arrive, which is what makes an interrupted run resumable,
+but a refetched mod would otherwise leave its old record behind forever. The
+compaction runs after the fetching, so both properties hold: crash-safe during
+the run, and a clean line-per-mod diff at the end. In practice a run that
+changes 20 mods adds roughly 40 KB to the repository.
+
+**A failed scrape is not a failed run.** The scrape step is
+`continue-on-error`, because `scrape_mods.py` aborts without writing rather
+than truncating the archive — so the worst case is a run that republishes the
+mod data already committed. That is also what every run will look like after
+the shutdown, and it must not stop the repository status from refreshing.
+
+**When the Forge goes offline**, delete the *Scrape the Forge* step and the two
+cache steps around it from `refresh.yml`, and drop `data/mods.json` from the
+commit step. Everything below them keeps working untouched. Two hours is also
+far more often than dead repositories need checking — `0 6,18 * * *` is a
+reasonable cadence to fall back to.
+
+**`mods.json` is written sorted by id** so these commits stay small. Ordering
+it by downloads instead moved a mod's entire record every time two of them
+swapped rank, which turned a handful of changed counters into thousands of
+changed lines on a file CI now commits twelve times a day. `build.py` sorts by
+downloads at render time, so nothing on the site depends on the file's order —
+the only visible difference is that `--limit N` on the scrapers now means "the
+N lowest ids" rather than "the N most downloaded".
 
 ---
 
@@ -211,7 +273,9 @@ Three passes: enumerate mods (50/page), then per mod fetch the detail endpoint
 (the only source of the full description) and the versions endpoint (the only
 source of dependencies and the complete version history). Per-mod results cache
 in `data/raw_mods.jsonl` keyed by `updated_at`, so re-runs only refetch mods
-that changed. Cold run ~25 minutes; warm run under a minute.
+that changed. Cold run ~25 minutes; warm run under a minute. That cache is
+committed, and compacted to one sorted line per mod at the end of every run —
+see [Automation](#automation).
 
 ### `scrape/scrape_comments.py`
 
@@ -428,8 +492,8 @@ Things learned the hard way, worth knowing before changing anything.
   supporting 4.0.13 and 4.1.0 belongs to both, so per-version counts cannot be
   added: 704 mods support some 4.x and 1,409 some 3.x, overlapping by 287 —
   which is exactly the 1,826 total.
-- **`repos.json` is written for small diffs**, because CI commits it twice a
-  day. Keys are sorted so a run that checks hosts in a different order does not
+- **`repos.json` is written for small diffs**, because CI commits it every two
+  hours. Keys are sorted so a run that checks hosts in a different order does not
   reshuffle the file, and freshness is recorded once at the top rather than per
   repository. An earlier per-record `checked_at` rewrote all 1,346 entries on
   every run, burying the few repositories that had actually moved. A run where
@@ -457,7 +521,7 @@ Things learned the hard way, worth knowing before changing anything.
 | `data/images.json` | Image URL → local filename manifest |
 | `data/lists.json` | Archived curated mod lists |
 | `data/repos.json` | Source-repository activity |
-| `data/raw_mods.jsonl` | Per-mod fetch cache (gitignored; delete to refetch) |
+| `data/raw_mods.jsonl` | Per-mod fetch cache: the raw API payloads (delete to refetch) |
 | `community/*.json` | Mods contributed by pull request |
 | `source_overrides.json` | Manual source-URL corrections |
 | `scrape/forge.py` | Shared API client and the Livewire session |
@@ -465,9 +529,14 @@ Things learned the hard way, worth knowing before changing anything.
 | `build/templates.py` | Page rendering |
 
 `data/mods.json`, `data/comments/`, `data/lists.json` and `data/images/`
-**are** the archive —
-those are what to back up. Everything else either regenerates from them
-(`site/`) or only costs time to rebuild (`raw_mods.jsonl`, `repos.json`).
+**are** the archive — those are what to back up. `site/` regenerates from them,
+and `repos.json` only costs time to rebuild.
+
+`raw_mods.jsonl` is the exception among the caches: it is only cheap to rebuild
+while the Forge is up. After that it is the raw payloads behind `mods.json` —
+every field the Forge served, including the ones `build_record()` does not
+keep — and unrecoverable by anyone. It is committed for that reason as much as
+for CI's.
 
 `site/` is gitignored on purpose: it is 1,826 generated files that would churn
 on every build, and CI rebuilds and deploys it from the committed data. The

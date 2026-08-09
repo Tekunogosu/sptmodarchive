@@ -1,6 +1,11 @@
 # Caches: safe to delete, cost only time to rebuild.
-data/raw_mods.jsonl
 data/*.log
+
+# data/raw_mods.jsonl is deliberately NOT ignored. It is the per-mod fetch
+# cache, and committing it is what lets CI scrape every two hours without
+# refetching all ~1,800 mods each run. scrape_mods.py compacts it to one line
+# per mod, sorted by id, so a commit changes only the mods that changed.
+# It also stops being "cheap to rebuild" the moment the Forge shuts down.
 __pycache__/
 *.pyc
 
