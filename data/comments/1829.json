@@ -1,0 +1,160 @@
+{
+ "mod_id": 1829,
+ "slug": "configurable-stim-uses",
+ "fetched_at": "2026-08-09T07:44:39Z",
+ "reported_total": null,
+ "pages": 1,
+ "count": 15,
+ "comments": [
+  {
+   "id": 43215,
+   "parent_id": null,
+   "author": "RogueTech67",
+   "author_id": 9742,
+   "author_url": "https://forge.sp-tarkov.com/user/9742/roguetech67",
+   "created_at": "2024-11-08T17:36:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>GeneralGoon, Great mod. Does this effect ALL (22) of the \u201cMedical - \u201cinjectors\u201d and/or the (24) of the \u201cstimulants\u201d? Thanks</p>\n<p><a href=\"https://escapefromtarkov.fandom.com/wiki/Medical#Injectors_and_stimulants\" target=\"_blank\" rel=\"noreferrer noopener\">https://escapefromtarkov.fandom.com/wiki/Medical#Injectors_and_stimulants</a></p>\n<p><a href=\"https://escapefromtarkov.fandom.com/wiki/Category:Stimulants\" target=\"_blank\" rel=\"noreferrer noopener\">https://escapefromtarkov.fandom.com/wiki/Category:Stimulants</a></p>\n<p>Also, TYPO???</p>\n<p><strong>Overview</strong></p>\n<p><strong>Usage</strong></p>\n<p>To blacklist a category from the flea:</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 43222,
+   "parent_id": null,
+   "author": "freestyle",
+   "author_id": 39178,
+   "author_url": "https://forge.sp-tarkov.com/user/39178/freestyle",
+   "created_at": "2024-11-08T20:38:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Great mod! Can you add duration modding?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 119871,
+   "parent_id": 43215,
+   "author": "GeneralGoon",
+   "author_id": 59721,
+   "author_url": "https://forge.sp-tarkov.com/user/59721/generalgoon",
+   "created_at": "2024-11-08T22:17:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It should effect all. I had to manually change the max uses of morphine but the rest seemed changed.</p>\n<p>It recursively changes all \u201cstimulators\u201d. Then specifically changes morphine.</p>\n<p>and thank you for pointing out the typo lol</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 119872,
+   "parent_id": 43222,
+   "author": "GeneralGoon",
+   "author_id": 59721,
+   "author_url": "https://forge.sp-tarkov.com/user/59721/generalgoon",
+   "created_at": "2024-11-08T22:18:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>If I decide to, it would be a separate mod.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 119893,
+   "parent_id": 43215,
+   "author": "Local Crew",
+   "author_id": 19649,
+   "author_url": "https://forge.sp-tarkov.com/user/19649/local-crew",
+   "created_at": "2024-11-09T09:46:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This is because morphine\u2019s parent class is Drugs, whereas all other stimulants are Stimulator, apparently this is because morphine was added before all stimulants and is in the class of painkillers.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 119894,
+   "parent_id": 43215,
+   "author": "Local Crew",
+   "author_id": 19649,
+   "author_url": "https://forge.sp-tarkov.com/user/19649/local-crew",
+   "created_at": "2024-11-09T09:55:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>And also SJ15 is apparently a new stimulant, which has not yet appeared in SPT, so on the wiki there are 24 of them, in the game so far 23, and the class of Stimulator at the moment refers to only 22</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 43244,
+   "parent_id": null,
+   "author": "Twist68",
+   "author_id": 60258,
+   "author_url": "https://forge.sp-tarkov.com/user/60258/twist68",
+   "created_at": "2024-11-09T09:59:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I can now stop saving Stims for a better occasion. Thanks</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 119895,
+   "parent_id": 43222,
+   "author": "Local Crew",
+   "author_id": 19649,
+   "author_url": "https://forge.sp-tarkov.com/user/19649/local-crew",
+   "created_at": "2024-11-09T10:16:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>add <strong>\u201cuseTime\u201d: 0.1</strong> to the config.json<br />\nadd <strong>item._props.medUseTime = this.modConfig.useTime;</strong> after line <strong>24</strong> in <strong>mod.ts</strong> it will change the time to use all stimulants by one tenth of a second</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 119896,
+   "parent_id": 43222,
+   "author": "GeneralGoon",
+   "author_id": 59721,
+   "author_url": "https://forge.sp-tarkov.com/user/59721/generalgoon",
+   "created_at": "2024-11-09T15:56:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I think he meant effect duration</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 120003,
+   "parent_id": 43222,
+   "author": "TalkBigDoSmall",
+   "author_id": 66767,
+   "author_url": "https://forge.sp-tarkov.com/user/66767/talkbigdosmall",
+   "created_at": "2024-11-11T20:29:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>yes sir if have stim effect duration all time in raid is good.. btw great mod</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 120046,
+   "parent_id": 43222,
+   "author": "MrHighLife",
+   "author_id": 27612,
+   "author_url": "https://forge.sp-tarkov.com/user/27612/mrhighlife",
+   "created_at": "2024-11-13T02:08:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>change usetime with Effectduration should work the same way</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 120200,
+   "parent_id": 43222,
+   "author": "TalkBigDoSmall",
+   "author_id": 66767,
+   "author_url": "https://forge.sp-tarkov.com/user/66767/talkbigdosmall",
+   "created_at": "2024-11-16T06:15:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>how to do that sir?i\u2019m srry for asking</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 44719,
+   "parent_id": null,
+   "author": "PulledP0rk",
+   "author_id": 51411,
+   "author_url": "https://forge.sp-tarkov.com/user/51411/pulledp0rk",
+   "created_at": "2024-12-10T10:06:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is there a way to config specific use numbers per stim? Having an ETG-C as one and a morphine as 3 for example</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 121766,
+   "parent_id": 44719,
+   "author": "GeneralGoon",
+   "author_id": 59721,
+   "author_url": "https://forge.sp-tarkov.com/user/59721/generalgoon",
+   "created_at": "2024-12-10T19:59:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I can add exclusions to the config if that\u2019ll help</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 121768,
+   "parent_id": 44719,
+   "author": "PulledP0rk",
+   "author_id": 51411,
+   "author_url": "https://forge.sp-tarkov.com/user/51411/pulledp0rk",
+   "created_at": "2024-12-10T20:31:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>That would be amazing!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

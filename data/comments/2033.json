@@ -1,0 +1,130 @@
+{
+ "mod_id": 2033,
+ "slug": "always-spawn-containers",
+ "fetched_at": "2026-08-09T07:26:00Z",
+ "reported_total": null,
+ "pages": 1,
+ "count": 12,
+ "comments": [
+  {
+   "id": 49480,
+   "parent_id": null,
+   "author": "Delusor",
+   "author_id": 70779,
+   "author_url": "https://forge.sp-tarkov.com/user/70779/delusor",
+   "created_at": "2025-03-16T10:20:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I am getting the following message in the SPT server terminal window:</p>\n<p>Mod FiveF-alwaysSpawnContainers package.json main property points to non-existing file</p>\n<p>I don\u2019t <em>seem</em> to have any issues from it, but it is in bright red text in the window, so I assume it\u2019s pretty important somehow.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 128182,
+   "parent_id": 49480,
+   "author": "FiveF",
+   "author_id": 35354,
+   "author_url": "https://forge.sp-tarkov.com/user/35354/fivef",
+   "created_at": "2025-03-16T10:44:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yes. Fixed. Redownload</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 51023,
+   "parent_id": null,
+   "author": "Alex3kgg",
+   "author_id": 77580,
+   "author_url": "https://forge.sp-tarkov.com/user/77580/alex3kgg",
+   "created_at": "2025-04-22T14:14:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>In 3.11.3 ver spt.<br />\ni dont see some locked cases from smugglers event.<br />\nthis mod return this?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 130200,
+   "parent_id": 51023,
+   "author": "FiveF",
+   "author_id": 35354,
+   "author_url": "https://forge.sp-tarkov.com/user/35354/fivef",
+   "created_at": "2025-04-22T14:50:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This mod make that <a href=\"https://escapefromtarkov.fandom.com/wiki/Looting#Loot_Containers\" target=\"_blank\" rel=\"noreferrer noopener\">these</a> containers always spawn on the map (without Airdrop crate). All Containers that have had their chances of spawning during loot generation changed are listed in a spoiler on the mod Overview page.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 51419,
+   "parent_id": null,
+   "author": "Hampter360",
+   "author_id": 78369,
+   "author_url": "https://forge.sp-tarkov.com/user/78369/hampter360",
+   "created_at": "2025-05-03T17:39:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I dont know if its intentional or not but if i turn on always spawning loose loot, the loose loot are always the exact same items even tho other items could aslo spawn there. Is there any way to change that?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 130718,
+   "parent_id": 51419,
+   "author": "FiveF",
+   "author_id": 35354,
+   "author_url": "https://forge.sp-tarkov.com/user/35354/fivef",
+   "created_at": "2025-05-03T18:01:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>In some places, only one spawn item is defined, which has a very low chance of appearing. <code>Always spawning loose loot</code> make it spawn every time. Example: pendrive pin in pc block.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 130719,
+   "parent_id": 51419,
+   "author": "Hampter360",
+   "author_id": 78369,
+   "author_url": "https://forge.sp-tarkov.com/user/78369/hampter360",
+   "created_at": "2025-05-03T18:09:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>yea but for example in the residential unit on labs it always spawned the same things in like 6 raids, always the same gun under the bed, always 2 lions, 1 horse, 1 vase, 3 skulls, 1 veritas and whatever</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 130721,
+   "parent_id": 51419,
+   "author": "FiveF",
+   "author_id": 35354,
+   "author_url": "https://forge.sp-tarkov.com/user/35354/fivef",
+   "created_at": "2025-05-03T19:10:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I tested and see this problem. The reason for this unplanned behavior is changing <code>IsAlwaysSpawn</code> to true.</p>\n<p>I generally don\u2019t use it anymore in my new version (not published yet), because it didn\u2019t do much + i added new feature - spawnMultipler. I will update it in the next few days. I have already done everything but I have to export it to this mod.</p>\n<p>To fix it, edit the <code>alwaysSpawnContainers.ts</code> file to this:</p>\n<p>//import { DependencyContainer } from \u201ctsyringe\u201d; import { DependencyContainer } from \u201c@spt/models/external/tsyringe\u201d; import { ILogger } from \u201c@spt/models/spt/utils/ILogger\u201d; import { IPostDBLoadMod } from \u201c@spt/models/external/IPostDBLoadMod\u201d; import { DatabaseServer } from \u201c@spt/servers/DatabaseServer\u201d; import { ConfigServer } from \u201c@spt/servers/ConfigServer\u201d; import { IDatabaseTables } from \u201c@spt/models/spt/server/IDatabaseTables\u201d; //jsonc thing - 1/2 import path from \u201cnode:path\u201d; import { jsonc } from \u201cjsonc\u201d; import { FileSystemSync } from \u201c@spt/utils/FileSystemSync\u201d; class alwaysSpawnContainers implements IPostDBLoadMod { public postDBLoad(container: DependencyContainer): void { const databaseServer = container.resolve&lt;DatabaseServer&gt;(\u201cDatabaseServer\u201d); const configServer = container.resolve&lt;ConfigServer&gt;(\u201cConfigServer\u201d); const logger = container.resolve&lt;ILogger&gt;(\u201cWinstonLogger\u201d); //jsonc thing - 2/2 const fileSystem = container.resolve&lt;FileSystemSync&gt;(\u201cFileSystemSync\u201d); const modConfigJsonC = jsonc.parse(fileSystem.read(path.resolve(__dirname, \u201c../config/config.jsonc\u201d))); const tables: IDatabaseTables = databaseServer.getTables(); const locationsData = tables.locations; let changeCount_containers = 0; let changeCount_containersAS = 0; let changeCount_looseLootItems = 0; let changeCount_looseLootItemsAS = 0; if (modConfigJsonC.enableMod) { for (const key in locationsData) { const location = locationsData[key]; //containers if (modConfigJsonC.alwaysSpawn_containers) { if (location?.staticContainers?.staticContainers) { location.staticContainers.staticContainers.forEach(container =&gt; { if (container.probability !== undefined &amp;&amp; container.probability !== 1) { let v1a = container.template.Id; let v1b = container.probability; container.probability = 1; changeCount_containers++ /* if (modConfigJsonC.logging) { logger.info(<code>${v1a} set from ${v1b} to ${container.probability}</code>); } */ } }); } } //items if (modConfigJsonC.alwaysSpawn_looseLootItems) { if (location?.looseLoot?.spawnpoints) { location.looseLoot.spawnpoints.forEach(spawnPoint =&gt; { if (spawnPoint.probability !== undefined &amp;&amp; spawnPoint.probability !== 1) { spawnPoint.probability = 1; changeCount_looseLootItems++ } }); } } } //logging if (modConfigJsonC.logging) { logger.info(<code>Always Spawn Containers logging:</code>); logger.info(<code>-Changes count for Static Containers: \\\\t\\\\t\\\\t ${changeCount\\_containers}</code>); logger.info(<code>-Changes count for Static Containers IsAlwaysSpawn: \\\\t ${changeCount\\_containersAS}</code>); logger.info(<code>-Changes count for Loose Loot Items: \\\\t\\\\t\\\\t ${changeCount\\_looseLootItems}</code>); logger.info(<code>-Changes count for Loose Loot Items IsAlwaysSpawn: \\\\t ${changeCount\\_looseLootItemsAS}</code>); } } } } export const mod = new alwaysSpawnContainers();</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 130722,
+   "parent_id": 51419,
+   "author": "Hampter360",
+   "author_id": 78369,
+   "author_url": "https://forge.sp-tarkov.com/user/78369/hampter360",
+   "created_at": "2025-05-03T19:14:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>thank u</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 54280,
+   "parent_id": null,
+   "author": "Bevs",
+   "author_id": 82093,
+   "author_url": "https://forge.sp-tarkov.com/user/82093/bevs",
+   "created_at": "2025-07-26T15:54:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Are the \u201c_id\u201ds in the containers function random or do they correspond to something in-game?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 134104,
+   "parent_id": 54280,
+   "author": "FiveF",
+   "author_id": 35354,
+   "author_url": "https://forge.sp-tarkov.com/user/35354/fivef",
+   "created_at": "2025-07-26T19:12:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Correspond to id od containers in game in SPTarkov311\\SPT_Data\\Server\\database\\locations[mapName].staticContainers.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 134105,
+   "parent_id": 54280,
+   "author": "Bevs",
+   "author_id": 82093,
+   "author_url": "https://forge.sp-tarkov.com/user/82093/bevs",
+   "created_at": "2025-07-26T19:28:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I apologize I asked this question under the wrong mod. Thank you for the help though</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

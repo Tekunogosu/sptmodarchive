@@ -1,0 +1,280 @@
+{
+ "mod_id": 1886,
+ "slug": "weaselmedtweaks",
+ "fetched_at": "2026-08-09T08:02:58Z",
+ "reported_total": 12,
+ "pages": 2,
+ "count": 27,
+ "comments": [
+  {
+   "id": 44893,
+   "parent_id": null,
+   "author": "Lorebot",
+   "author_id": 66290,
+   "author_url": "https://forge.sp-tarkov.com/user/66290/lorebot",
+   "created_at": "2024-12-13T12:29:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>is this mod configurable at all? I like the idea of the heal over time on medkits, but I\u2019d rather that they retain their ability to stop bleeding at the additional cost.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 44895,
+   "parent_id": null,
+   "author": "Sneaky_Weasel",
+   "author_id": 44945,
+   "author_url": "https://forge.sp-tarkov.com/user/44945/sneaky-weasel",
+   "created_at": "2024-12-13T12:41:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi Lorebot. Good news: the bleed/fracture stops are still in there\u2026 I copy-pasted some info from previous mod and forgot to take that out.</p>\n<p>There\u2019s no additional cost at the moment but you can certainly configure that. Jump into the medkits config file, you\u2019ll see LightBleeding etc under each relevant kit. Just add a cost in the field (they\u2019re all zero at the moment.)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 121968,
+   "parent_id": 44895,
+   "author": "Lorebot",
+   "author_id": 66290,
+   "author_url": "https://forge.sp-tarkov.com/user/66290/lorebot",
+   "created_at": "2024-12-13T13:39:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019ll go take a look! Thanks for the quick reply</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 44976,
+   "parent_id": null,
+   "author": "selyue",
+   "author_id": 59241,
+   "author_url": "https://forge.sp-tarkov.com/user/59241/selyue",
+   "created_at": "2024-12-14T11:22:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi boss ! may I have a mega link please.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 122044,
+   "parent_id": 44976,
+   "author": "Sneaky_Weasel",
+   "author_id": 44945,
+   "author_url": "https://forge.sp-tarkov.com/user/44945/sneaky-weasel",
+   "created_at": "2024-12-14T12:44:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p><a href=\"https://mega.nz/file/KQcwgJAA#Gp8DKP59U0WyKIrMvSkAcOmeX_BbzFz6pxqanuIJHXM\" target=\"_blank\" rel=\"noreferrer noopener\">https://mega.nz/file/KQcwgJAA#Gp8DKP59U0WyKIrMvSkAcOmeX_BbzFz6pxqanuIJHXM</a> sorry about that!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 44983,
+   "parent_id": null,
+   "author": "Lorebot",
+   "author_id": 66290,
+   "author_url": "https://forge.sp-tarkov.com/user/66290/lorebot",
+   "created_at": "2024-12-14T12:58:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m wondering how this mod would interact with <a href=\"https://hub.sp-tarkov.com/files/file/1779-healing-autocancel\" target=\"_blank\" rel=\"noreferrer noopener\">Healing Autocancel</a> and <a href=\"https://hub.sp-tarkov.com/files/file/2546-continuous-healing/#overview\" target=\"_blank\" rel=\"noreferrer noopener\">Continuous Healing</a> since I found all 3 mods around the same time and the other two just made themselves compatible with each other.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 45013,
+   "parent_id": null,
+   "author": "Benzo",
+   "author_id": 32603,
+   "author_url": "https://forge.sp-tarkov.com/user/32603/benzo",
+   "created_at": "2024-12-14T20:05:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Not sure if thats intentional, but the CMS didnt heal any blackened body parts.<br />\nIs that intentional or a bug?<br />\nTo be fair i did increase my PMCs max health for all limbs on ServerValueModifier (yes im a casual sue me)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 122118,
+   "parent_id": 44983,
+   "author": "Sneaky_Weasel",
+   "author_id": 44945,
+   "author_url": "https://forge.sp-tarkov.com/user/44945/sneaky-weasel",
+   "created_at": "2024-12-15T03:09:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Good question Lorebot. I\u2019m not expert on those but from having a quick look, it seems they are based on the vanilla (instant) heal behaviour\u2026 if you have 300 damage distributed across multiple zones, and fire up a new Salewa with 400, those mods will automatically bring all zones back up to 100% then jump out of the animation.</p>\n<p>This mod totally removes the instant heal behaviour, animations just run their course and then a few seconds later the over-time effect kicks in. That effect is actually managed the same as a stim, e.g. Propital, and automatically applies to all damaged parts. As there\u2019s no instant heal I expect there would be no trigger for those other mods.</p>\n<p>Those other two look really great for a more automated instant heal procedure, mine is kinda the opposite because all healing is over-time. I don\u2019t think they\u2019d be incompatible, just aimed in opposite directions.</p>\n<p>If you find anything incompatible or weird please let me know, as mentioned I\u2019m just starting to work out how modding this game works but happy to look into stuff.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 122119,
+   "parent_id": 45013,
+   "author": "Sneaky_Weasel",
+   "author_id": 44945,
+   "author_url": "https://forge.sp-tarkov.com/user/44945/sneaky-weasel",
+   "created_at": "2024-12-15T03:18:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks Irgend. CMS is supposed to do some healing (which is shared across all damaged zones, same as medkits and identical to vanilla Propital vanilla.) It\u2019s not a huge amount though, 2 hitpoints per second x 30sec (so only 60 points total, distributed) then 0.25 per second for another four and a half minutes (so 75 more points slower healing.) I\u2019d guess if you\u2019ve ramped up the total this amount may not have been very noticable.</p>\n<p>Feel free to mess with the medbuffs.json file in the config folder. The bit dealing with CMS healing is as follows:</p>\n<p>\u201cBuffs_CMS\u201d: [</p>\n<p>{</p>\n<p>\u201cBuffType\u201d: \u201cHealthRate\u201d,</p>\n<p>\u201cChance\u201d: 1, &lt;- for fun you could reduce this, means you\u2019d get no heals sometimes haha</p>\n<p>\u201cDelay\u201d: 10, &lt;- delay before heal effect starts\u2026 I figure meds take a bit to kick in</p>\n<p>\u201cDuration\u201d: 30, &lt;- initial faster heal duration in seconds</p>\n<p>\u201cValue\u201d: 2, &lt;- this is the per-second heal rate, maybe ramp it up to suit your setup?</p>\n<p>\u201cAbsoluteValue\u201d: true,</p>\n<p>\u201cSkillName\u201d: \u201c\u201d</p>\n<p>},</p>\n<p>{</p>\n<p>\u201cBuffType\u201d: \u201cHealthRate\u201d,</p>\n<p>\u201cChance\u201d: 1,</p>\n<p>\u201cDelay\u201d: 40, &lt;- this is when the secondary slower heal kicks in</p>\n<p>\u201cDuration\u201d: 270,</p>\n<p>\u201cValue\u201d: 0.25,</p>\n<p>\u201cAbsoluteValue\u201d: true,</p>\n<p>\u201cSkillName\u201d: \u201c\u201d</p>\n<p>},</p>\n<p>Also: never any judgement (let alone legal action haha) on your playstyle! I have a dev player with the magic balaclava for \u201ctesting\u201d - or for gigachad blasting when I get frustrated with my zero-to-hero deaths You play your way!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 122149,
+   "parent_id": 45013,
+   "author": "Benzo",
+   "author_id": 32603,
+   "author_url": "https://forge.sp-tarkov.com/user/32603/benzo",
+   "created_at": "2024-12-15T13:24:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for the response<br />\nBut i already tinkered with the config, but my limbs stay blacked.<br />\nI will just do a fresh install and check if it still persists</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 122203,
+   "parent_id": 45013,
+   "author": "Ded'oK",
+   "author_id": 40913,
+   "author_url": "https://forge.sp-tarkov.com/user/40913/dedok",
+   "created_at": "2024-12-16T11:45:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I confirm - the blackness does not disappear.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 122221,
+   "parent_id": 45013,
+   "author": "Benzo",
+   "author_id": 32603,
+   "author_url": "https://forge.sp-tarkov.com/user/32603/benzo",
+   "created_at": "2024-12-16T18:44:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>And reinstalling did not help. So it seems like an issue with the mod itself</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 45127,
+   "parent_id": null,
+   "author": "Heisenburger",
+   "author_id": 69676,
+   "author_url": "https://forge.sp-tarkov.com/user/69676/heisenburger",
+   "created_at": "2024-12-17T02:46:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>does this mod affect the Ai, do they also only heal over time and experience debuffs and what not</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 45131,
+   "parent_id": null,
+   "author": "Murders_Inc828",
+   "author_id": 34141,
+   "author_url": "https://forge.sp-tarkov.com/user/34141/murders-inc828",
+   "created_at": "2024-12-17T05:38:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi, I\u2019ve been waiting for this mod since Fontaine is going to take a break which he btotally deserves.</p>\n<p>Seems I cant cure blacked out limbs. Havent been playing SPT for fe months but I remember RM allows your o cure necrosis.</p>\n<p>Is there any way to cure necrosis with this mod?</p>\n<p>Thx in advance</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 45151,
+   "parent_id": null,
+   "author": "Pawken",
+   "author_id": 69542,
+   "author_url": "https://forge.sp-tarkov.com/user/69542/pawken",
+   "created_at": "2024-12-17T13:40:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello i love this mod its so scary now to get shot. I have a question its easy way to make CMS \u201cheal\u201d Blacked out limbs ? This feature i miss so much</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 45164,
+   "parent_id": null,
+   "author": "Pawken",
+   "author_id": 69542,
+   "author_url": "https://forge.sp-tarkov.com/user/69542/pawken",
+   "created_at": "2024-12-17T18:55:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>So i spend some time testing and i think is something wrong with code itself.</p>\n<p>For now i just restore for CMS and SV12 old parameters.(There is no buff/debuff effect sadly but only for this two)</p>\n<p>To make this you need to find file \u201cothermeds\u201d it is here =&gt; user\\mods\\WeaselMedTweaks\\config</p>\n<p>And remove all below line 172, after that place two bracket.</p>\n<p>Last lines should looks like this :</p>\n<p>\u201cStimulatorBuffs\u201d: \u201cBuffs_GoldenStarBalm\u201d<br />\n}<br />\n}</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 45168,
+   "parent_id": null,
+   "author": "Dietre",
+   "author_id": 15984,
+   "author_url": "https://forge.sp-tarkov.com/user/15984/dietre",
+   "created_at": "2024-12-17T20:55:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019ve been working on something similar for my own personal mod, blend of regular healing and realism style.</p>\n<p>The serv kits don\u2019t take kindly to having buffs, they seem to cancel the black limb fix effects. I created my own \u201cbuffssergery\u201d under globals and gave the kits some nasty side effects and it seems to cancel the black out fix right before it finishes.</p>\n<p>you can add a remove light bleed and heavy bleed under its config in ITEMS, it needs a value to remove the bleeds, so if you want to remove light bleed and heavy and blacked limb it takes 3 uses off the kit.</p>\n<p>I created morphine and adrenalin to fix black out limbs, I also made splints heal fractures but it reduces the limb total health like a black out. Now you have to think, fix it and get reduced hp or deal with it on pain meds.</p>\n<p>I am on the fence with what to do about serv kits. I like the fact that the animation heals heavy bleeds as your stapling yourself back up to close it and you need injections to get your arm or leg back in action. but i\u2019m not sure.</p>\n<p>In mine you need something to stop a heavy bleed, then use a selewa or ifak to get passive healing , propital still is better for longer and faster use, selewa ifak afak do not remove heavy bleeds. Grizzly can. Car is only for healing but can only do 20 points per use.</p>\n<p>If i find a work around for the serv kits to get negative buffs (mine had reduce strength, stamina and stress resistance for a few mins after using it) AND allow it to fix black limbs, ill post the work around.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 122296,
+   "parent_id": 45151,
+   "author": "Dietre",
+   "author_id": 15984,
+   "author_url": "https://forge.sp-tarkov.com/user/15984/dietre",
+   "created_at": "2024-12-17T20:57:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>you have to remove any stimulator buffs assigned to it. for some reason it will cancel out the destroyed limb function.</p>\n<p>oddly tho, you can make a stim like morphine, fix a black limb like a serv kit.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 122298,
+   "parent_id": 45013,
+   "author": "Benzo",
+   "author_id": 32603,
+   "author_url": "https://forge.sp-tarkov.com/user/32603/benzo",
+   "created_at": "2024-12-17T21:15:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Wait so you are telling me that CMS and Surv12 dont heal blacked limbs but morphine does?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 122321,
+   "parent_id": 45168,
+   "author": "Sneaky_Weasel",
+   "author_id": 44945,
+   "author_url": "https://forge.sp-tarkov.com/user/44945/sneaky-weasel",
+   "created_at": "2024-12-18T03:06:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks so much for the detailed comment Dietre. No doubt there\u2019s a way to make blackout fix happen client-side but I\u2019m not at that level yet. I think I will likely just leave CMS and Surv12 as vanilla with no side-effects as the limited HP regen still interfaces pretty well with the other HoT items.</p>\n<p>I was also using customfirstaidkits in my 3.9.8 playthrough, with realism med changes and my own tweak to cheese to make it HoT very slowly. I\u2019m thinking about doing a variant of mine where CAR, Salewa and Grizzly kits are similarly portable med containers, with cheese/IFAK/AFAK increasingly strong HoT, and again CMS &amp; Surv12 left vanilla for just blackout repairs.</p>\n<p>Good luck with your work! and yeah thanks in advance for sharing</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 122322,
+   "parent_id": 45151,
+   "author": "Sneaky_Weasel",
+   "author_id": 44945,
+   "author_url": "https://forge.sp-tarkov.com/user/44945/sneaky-weasel",
+   "created_at": "2024-12-18T03:09:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Ha Dietre read this after replying to your other one\u2026 I\u2019ve converted food and drink items into medical items, in order to get regen-over-time effects (and multi-use) so I might mess around with turning surgical kits into stims (!) and see if it works.</p>\n<p>Thanks also Pawken for taking time to comment. Pity the things with different parent and proto items are handled so differently, it would be good for just one parent. Of course they\u2019re optimised for vanilla setup so not criticising.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 122323,
+   "parent_id": 45127,
+   "author": "Sneaky_Weasel",
+   "author_id": 44945,
+   "author_url": "https://forge.sp-tarkov.com/user/44945/sneaky-weasel",
+   "created_at": "2024-12-18T03:12:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Good question! Beyond my tiny brain to answer sorry, if anyone knows whether AI actually deploy kits or just have separate healing code I\u2019d love to know. I cannot imagine debuffs would really apply as they\u2019re primarily visual but over-time vs insta-heal maybe. If I had to guess I\u2019d say it\u2019s more efficient to just give them instant heals, though.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 122324,
+   "parent_id": 45131,
+   "author": "Sneaky_Weasel",
+   "author_id": 44945,
+   "author_url": "https://forge.sp-tarkov.com/user/44945/sneaky-weasel",
+   "created_at": "2024-12-18T03:13:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Working on it Murders Long-winded info above in comments but TL;DR as soon as we add any over-time effects (even debuffs) the blacked-out zone fix doesn\u2019t work. We\u2019ll keep chipping away!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 122329,
+   "parent_id": 45168,
+   "author": "Dietre",
+   "author_id": 15984,
+   "author_url": "https://forge.sp-tarkov.com/user/15984/dietre",
+   "created_at": "2024-12-18T04:45:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I went with making cms and surv kits heal heavy bleeds and destroyed arms, servs can do fractures. morphine can restore blacked limbs. I went with cms reducing overall hp up to like 35% and surv kits are close to retaining full hp. They reduce a heap of energy on use as their draw back. morphine takes a big hit off hp but the flip side is pain meds last longer and you get the arm back asap type thing.</p>\n<p>cheese is a instant heal but only 5hp and adds a 20sec pain med. (as your sticking yourself with a needle)</p>\n<p>selewa (5 uses) give HoT at 0.45 for X-amount of time, I-fak(7) is same but .55 and lasts a bit longer. both give a hand tremor and reduces strength/stamina for a bit and lows hydrations oT.</p>\n<p>grizzly is the holy grail. removes all blood loss for 45 secs, adds a bit heal oT but saps your strength, stamina and gives the tunnel effect for min, as big amount of uses.</p>\n<p>Vasline cures light bleeds and give a small bit of pain relief</p>\n<p>goldstar is now a BUFF. gives increased attention, stress resistance, perception</p>\n<p>augmenten buffs metabolism to help against the side effects of meds</p>\n<p>I am working on creating vitimins into a buff with uses too.</p>\n<p>Afak I left as is right now because I am not sure if raiders would heal without it.</p>\n<p>I am working on making the heavy bleed tools work properly with negitive effects of pain, tremors and saps your strength. however atm, you can use it but it will get the neg effects but not heal the heavybleed, i think i need to change the parent but i just started that portion.</p>\n<p>regular one from therapist would give some bad effects, the CAT version from Peacekeeper would be less but still some and the injector would be the best to use other than the grizzly or zugustin.</p>\n<p>I am glad your working on the mod for others to use. I like to just make my own, but nice someone had the same idea and to share ideas for it.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 45204,
+   "parent_id": null,
+   "author": "Pawken",
+   "author_id": 69542,
+   "author_url": "https://forge.sp-tarkov.com/user/69542/pawken",
+   "created_at": "2024-12-18T10:55:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello, As i notice Grizzly not cure Heavy bleeding, idk its my fault or other have the same problem</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 122353,
+   "parent_id": 45204,
+   "author": "Sneaky_Weasel",
+   "author_id": 44945,
+   "author_url": "https://forge.sp-tarkov.com/user/44945/sneaky-weasel",
+   "created_at": "2024-12-18T11:04:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks Pawken. I did some work on this today because there were some issues especially with surgical kits. Check out the new unified mod I just uploaded, it has medical and food changes and I think addresses all the issues - grizzly should definitely heal heavy bleeds. You can configure food and meds separately and also turn CAR/Salewa/Grizzly kits into bags, if you\u2019re like me and prefer carrying individual fixes for light, heavy and fractures.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 45205,
+   "parent_id": null,
+   "author": "Sneaky_Weasel",
+   "author_id": 44945,
+   "author_url": "https://forge.sp-tarkov.com/user/44945/sneaky-weasel",
+   "created_at": "2024-12-18T11:10:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi all. I\u2019ve tidied up code, restored the vanilla ability of surgical kits, and given an option to convert some items into bags to carry meds. Seeing as I also had a similar mod for food &amp; drinks I\u2019ve released this as an All-In-One. You can enable different components via config file, if you don\u2019t like food changes for example. It\u2019s over at <a href=\"https://hub.sp-tarkov.com/files/file/2559-sneaky-weasel-s-all-in-one-meds-food/\" target=\"_blank\" rel=\"noreferrer noopener\">Sneaky Weasel\u2019s All-In-One Meds &amp; Food</a></p>\n<p>If possible I recommend changing to that one as it\u2019s easier for me to fix issues in one place Thanks so much for your feedback and your patience.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

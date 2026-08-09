@@ -1,0 +1,2310 @@
+{
+ "mod_id": 97,
+ "slug": "joshj5hawks-super-items",
+ "fetched_at": "2026-08-09T06:54:13Z",
+ "reported_total": 112,
+ "pages": 12,
+ "count": 230,
+ "comments": [
+  {
+   "id": 2,
+   "parent_id": null,
+   "author": "Prizm",
+   "author_id": 3253,
+   "author_url": "https://forge.sp-tarkov.com/user/3253/prizm",
+   "created_at": "2021-03-15T15:36:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Might as well make super mags for all of the weapons in game</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 78,
+   "parent_id": null,
+   "author": "pikor666",
+   "author_id": 1743,
+   "author_url": "https://forge.sp-tarkov.com/user/1743/pikor666",
+   "created_at": "2021-03-27T12:36:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>awesome man , thanks a lot</p>\n<p>pik</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 88,
+   "parent_id": null,
+   "author": "TeoTitawin",
+   "author_id": 3626,
+   "author_url": "https://forge.sp-tarkov.com/user/3626/teotitawin",
+   "created_at": "2021-03-29T05:57:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>DON\u2019T STOP I LIKE IT</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 149,
+   "parent_id": null,
+   "author": "Archon_Valec",
+   "author_id": 3709,
+   "author_url": "https://forge.sp-tarkov.com/user/3709/archon-valec",
+   "created_at": "2021-04-10T09:49:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Any chance this is going to get updated for the latest B1?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 851,
+   "parent_id": null,
+   "author": "StarMix",
+   "author_id": 239,
+   "author_url": "https://forge.sp-tarkov.com/user/239/starmix",
+   "created_at": "2021-07-01T15:26:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>update this mod pls=)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 57037,
+   "parent_id": 851,
+   "author": "Lua",
+   "author_id": 5778,
+   "author_url": "https://forge.sp-tarkov.com/user/5778/lua",
+   "created_at": "2021-07-01T16:22:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Here is the fix, however didn\u2019t test items in-game by myself</p>\n<p>// superitems.js // license: NCSA // copyright: JoshJ5Hawk // website: <a href=\"https://www.guilded.gg/senkospub\" target=\"_blank\" rel=\"noreferrer noopener\">https://www.guilded.gg/senkospub</a> // name: SuperItems // description: Making a few rediculous Items // version: 0.0.5 // author/(s): // - JoshJ5Hawk with help from DigitalBarrito and others on Guilded \u201cuse strict\u201d; class SuperItems { constructor() { ModLoader.onLoad[\u201cJoshJ5Hawk-SuperItems\u201d] = this.load.bind(this); Logger.info(<code>Loading: SuperItems</code>); } load() { const modPath = ModLoader.getModPath(\u201cJoshJ5Hawk-SuperItems\u201d); const db = JsonUtil.deserialize(VFS.readFile(<code>${modPath}/db.json</code>)); // Add Items for (const itemKey in db.items) { const path = db.items[itemKey]; const item = JsonUtil.deserialize(VFS.readFile(<code>${modPath}/${path}</code>)); DatabaseServer.tables.templates.items[item._id] = item; } // Add Handbook Entry for (const itemKey in db.templates.handbook) { const path = db.templates.handbook[itemKey]; const item = JsonUtil.deserialize(VFS.readFile(<code>${modPath}/${path}</code>)); DatabaseServer.tables.templates.handbook.Items.push(item) } // Add locales for (const langKey in db.locales.en.templates) { const path = db.locales.en.templates[langKey]; const lang = JsonUtil.deserialize(VFS.readFile(<code>${modPath}/${path}</code>)); DatabaseServer.tables.locales.global.en.templates[langKey] = lang; } //Add Items to Traders for (const itemKey in db.assort.ragfair.items) { const path = db.assort.ragfair.items[itemKey]; const item = JsonUtil.deserialize(VFS.readFile(<code>${modPath}/${path}</code>)); DatabaseServer.tables.traders.ragfair.assort.items.push(item); } for (const itemKey in db.assort.ragfair.loyal_level_items) { const path = db.assort.ragfair.loyal_level_items[itemKey]; const item = JsonUtil.deserialize(VFS.readFile(<code>${modPath}/${path}</code>)); DatabaseServer.tables.traders.ragfair.assort.loyal_level_items[itemKey] = item; } for (const itemKey in db.assort.ragfair.barter_scheme) { const path = db.assort.ragfair.barter_scheme[itemKey]; const item = JsonUtil.deserialize(VFS.readFile(<code>${modPath}/${path}</code>)); DatabaseServer.tables.traders.ragfair.assort.barter_scheme[itemKey] = item; } } } module.exports.Mod = SuperItems;</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 57041,
+   "parent_id": 851,
+   "author": "StarMix",
+   "author_id": 239,
+   "author_url": "https://forge.sp-tarkov.com/user/239/starmix",
+   "created_at": "2021-07-01T19:58:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>this fix works ty=)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 60103,
+   "parent_id": 851,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2021-11-06T05:23:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for the update Lua! I\u2019ve clearly been away for a while lol</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 60104,
+   "parent_id": 2,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2021-11-06T05:23:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m back, don\u2019t tempt me</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 2542,
+   "parent_id": null,
+   "author": "Audixas",
+   "author_id": 3245,
+   "author_url": "https://forge.sp-tarkov.com/user/3245/audixas",
+   "created_at": "2021-11-06T21:28:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Looks like I can\u2019t put any items in the Super Junkbox, making it completely useless.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 60129,
+   "parent_id": 2542,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2021-11-06T22:50:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Uh oh, I guess I only tested that it was in the game, not fully functional lol. I\u2019ll look into it this evening and update</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 60135,
+   "parent_id": 2542,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2021-11-07T02:33:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Should be fixed</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 60140,
+   "parent_id": 2542,
+   "author": "Audixas",
+   "author_id": 3245,
+   "author_url": "https://forge.sp-tarkov.com/user/3245/audixas",
+   "created_at": "2021-11-07T08:51:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Nice, thanks!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 60143,
+   "parent_id": 2542,
+   "author": "Audixas",
+   "author_id": 3245,
+   "author_url": "https://forge.sp-tarkov.com/user/3245/audixas",
+   "created_at": "2021-11-07T12:27:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Nope, looks like it wasn\u2019t fixed. Now it takes up 4x4 slots and still doesn\u2019t take any items.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 60144,
+   "parent_id": 2542,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2021-11-07T12:45:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>That\u2019s interesting, works for me?</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/oo3jgL5.jpeg\" alt=\"oo3jgL5.jpeg\" /></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 2553,
+   "parent_id": null,
+   "author": "dolphin2ii",
+   "author_id": 3207,
+   "author_url": "https://forge.sp-tarkov.com/user/3207/dolphin2ii",
+   "created_at": "2021-11-07T22:30:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Will there be a 2.x update?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 60166,
+   "parent_id": 2553,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2021-11-08T14:55:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Working on it! Looking at getting a \u201cSuper\u201d version of Documents Case, Dogtag Case, and Grenade Case right now. Hoping to get a \u201cSuper\u201d variant of each of the vanilla cases, just for fun lol</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 60169,
+   "parent_id": 2553,
+   "author": "dolphin2ii",
+   "author_id": 3207,
+   "author_url": "https://forge.sp-tarkov.com/user/3207/dolphin2ii",
+   "created_at": "2021-11-08T22:43:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Cool!<br />\nThanks!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 2562,
+   "parent_id": null,
+   "author": "tezlipoca",
+   "author_id": 9027,
+   "author_url": "https://forge.sp-tarkov.com/user/9027/tezlipoca",
+   "created_at": "2021-11-09T03:22:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The Ammo Case will not accept ammunition.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 60177,
+   "parent_id": 2562,
+   "author": "tezlipoca",
+   "author_id": 9027,
+   "author_url": "https://forge.sp-tarkov.com/user/9027/tezlipoca",
+   "created_at": "2021-11-09T13:51:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The Super Scav case also appears to not accept any items in the current release</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 60178,
+   "parent_id": 2562,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2021-11-09T20:28:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>That is very interesting. The scav case works perfectly for me</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/PHRkjxN.jpeg\" alt=\"PHRkjxN.jpeg\" /></p>\n<p>In Fact, so does the ammo case.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/fzVBan4.jpeg\" alt=\"fzVBan4.jpeg\" /></p>\n<p>Let me do some diggin\u2019</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 60179,
+   "parent_id": 2562,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2021-11-09T20:53:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I fixed it! I did not setup my filters correctly. For now, any case can take any item. I might add them back if demand rises, but for now it\u2019ll be possible to shove anything into anything lol</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 60180,
+   "parent_id": 2562,
+   "author": "tezlipoca",
+   "author_id": 9027,
+   "author_url": "https://forge.sp-tarkov.com/user/9027/tezlipoca",
+   "created_at": "2021-11-09T23:08:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Now nothing works with the newest update. I\u2019ve just\u2026 got the best luck with this stuff<br />\nAlso, for what it\u2019s worth, I prefer the filters on. I don\u2019t really see the point in having anything more than a bunch of super med cases to stuff everything into if they\u2019re not present.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 60186,
+   "parent_id": 2562,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2021-11-10T00:52:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>okay now THAT is weird lol. I\u2019ll dig into it for the next version (which will probably be later tonight, when I add SICC Pouch, THICC Items case and THICC Weapons case!)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 2571,
+   "parent_id": null,
+   "author": "SpitInMyThroat",
+   "author_id": 10905,
+   "author_url": "https://forge.sp-tarkov.com/user/10905/spitinmythroat",
+   "created_at": "2021-11-10T06:15:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>How do I acquire your fabulous Super items after installation?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 60193,
+   "parent_id": 2562,
+   "author": "SpitInMyThroat",
+   "author_id": 10905,
+   "author_url": "https://forge.sp-tarkov.com/user/10905/spitinmythroat",
+   "created_at": "2021-11-10T19:18:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>do you just drop the folder into the mods folder?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 2579,
+   "parent_id": null,
+   "author": "SpitInMyThroat",
+   "author_id": 10905,
+   "author_url": "https://forge.sp-tarkov.com/user/10905/spitinmythroat",
+   "created_at": "2021-11-10T19:45:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m getting parse errors in superitems.js</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 60204,
+   "parent_id": 2579,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2021-11-11T01:36:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>That is so strange\u2026 As for acuireing them, they should all be in the flea. I\u2019ll see if I can figure out why it\u2019s not workin\u2019 for you (what SPT Version are you running? I believe 2.0 + is required as that\u2019s what version I updated the mod for)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 60206,
+   "parent_id": 2579,
+   "author": "antiriad1974",
+   "author_id": 9622,
+   "author_url": "https://forge.sp-tarkov.com/user/9622/antiriad1974",
+   "created_at": "2021-11-11T09:49:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I also have this issue - can\u2019t find the items for sale anywhere. SPT version 2.0.1</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 2613,
+   "parent_id": null,
+   "author": "empty",
+   "author_id": 10955,
+   "author_url": "https://forge.sp-tarkov.com/user/10955/empty",
+   "created_at": "2021-11-14T15:31:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>it wont let me put nades in nade case and meds in meds ?</p>\n<p>only my super kappa works</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 2617,
+   "parent_id": null,
+   "author": "DualSoul1423",
+   "author_id": 3430,
+   "author_url": "https://forge.sp-tarkov.com/user/3430/dualsoul1423",
+   "created_at": "2021-11-15T05:55:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I bought the SuperKeyTool and it doesn\u2019t take keys. Not sure about the others. But it seems whatever you did to \u201cfix\u201d containers did not work. Real shame. I hope for an update soon.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 60295,
+   "parent_id": 2617,
+   "author": "LeDique",
+   "author_id": 11288,
+   "author_url": "https://forge.sp-tarkov.com/user/11288/ledique",
+   "created_at": "2021-11-16T04:31:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>so far, the only item which I have seen that actually works with the current version of SPT is the Super Kappa (or whatever the name of the case is). But the SuperKeytool, DocCase and Backpack aren\u2019t working for sure</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 3082,
+   "parent_id": null,
+   "author": "redman147",
+   "author_id": 7442,
+   "author_url": "https://forge.sp-tarkov.com/user/7442/redman147",
+   "created_at": "2021-12-18T01:05:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019ve downloaded the latest and this is the error I get currently. I already have Ereshkigals current CoreMod in the mods folder. Never seen anything like this before.</p>\n<p>[ERROR] Trace:</p>\n<p>Error: ENOENT: no such file or directory, open \u2018user/mods/JoshJ5Hawk-SuperItems//db.json\u2019</p>\n<p>at Object.openSync (fs.js:476:3)</p>\n<p>at Object.readFileSync (fs.js:377:35)</p>\n<p>at Object.readFileSync (D:\\SPT-AKI\\Server.exe:239:55)</p>\n<p>at Function.readFile (D:\\SPT-AKI\\obj\\bundle.js:27942:15)</p>\n<p>at SuperItems.load (D:\\SPT-AKI\\user\\mods\\JoshJ5Hawk-SuperItems-main\\src\\superitems.js:27:45)</p>\n<p>at Function.executeMods (D:\\SPT-AKI\\obj\\bundle.js:26082:28)</p>\n<p>at Function.load (D:\\SPT-AKI\\obj\\bundle.js:25971:15)</p>\n<p>at Object.load [as aki-mods] (D:\\SPT-AKI\\obj\\bundle.js:16417:15)</p>\n<p>at Function.load (D:\\SPT-AKI\\obj\\bundle.js:27461:27)</p>\n<p>at Function.main (D:\\SPT-AKI\\obj\\bundle.js:15143:9) {</p>\n<p>errno: -4058,</p>\n<p>syscall: \u2018open\u2019,</p>\n<p>code: \u2018ENOENT\u2019,</p>\n<p>path: \u2018user/mods/JoshJ5Hawk-SuperItems//db.json\u2019</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 61000,
+   "parent_id": 3082,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2021-12-18T01:33:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I just can\u2019t seem to get it right lol. I\u2019ll be home in an hour or so to try and fix it! That is very strange lol</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 61001,
+   "parent_id": 3082,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2021-12-18T02:10:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Okay it should be fixed now! I tried to get clever and use githubs \u201cdownload zip\u201d link to streamline things, but that appends the \u201c-main\u201d part so it messed with the mod path. Redownloading should work!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 61002,
+   "parent_id": 3082,
+   "author": "redman147",
+   "author_id": 7442,
+   "author_url": "https://forge.sp-tarkov.com/user/7442/redman147",
+   "created_at": "2021-12-18T04:24:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Perfection. Everything works as intended. WOOT WOOT</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 3100,
+   "parent_id": null,
+   "author": "redman147",
+   "author_id": 7442,
+   "author_url": "https://forge.sp-tarkov.com/user/7442/redman147",
+   "created_at": "2021-12-19T21:42:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Just ran into another issue. Not sure if it\u2019s another mod interfering, but the Super Pilgrim won\u2019t let me put anything into it. I mean anything. Gonna do a bit of searching around and removing mods to see if the issue is with a mod that tampers with container filters.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 3101,
+   "parent_id": null,
+   "author": "KidCat",
+   "author_id": 12352,
+   "author_url": "https://forge.sp-tarkov.com/user/12352/kidcat",
+   "created_at": "2021-12-19T21:47:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Run into problem where I cannot put docs case or keytool into secure container, in gamma</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 61042,
+   "parent_id": 3100,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2021-12-20T02:04:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Digging into it now!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 61043,
+   "parent_id": 3101,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2021-12-20T02:05:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I think that might be a vanilla functionality? Nothing should be changed with the gamma container? Looking into it now!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 61044,
+   "parent_id": 3101,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2021-12-20T02:15:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Confirmed, even the vanilla key tool or anything that is a \u201cPort. Container\u201d is not allowed into the standard secure containers</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 61045,
+   "parent_id": 3100,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2021-12-20T02:22:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Should be fixed</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 61053,
+   "parent_id": 3100,
+   "author": "redman147",
+   "author_id": 7442,
+   "author_url": "https://forge.sp-tarkov.com/user/7442/redman147",
+   "created_at": "2021-12-20T15:52:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Woot woot</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 3114,
+   "parent_id": null,
+   "author": "Yuutai",
+   "author_id": 12346,
+   "author_url": "https://forge.sp-tarkov.com/user/12346/yuutai",
+   "created_at": "2021-12-21T05:54:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello, I would like to ask you about your mod for the game. This is definitely a good thing and will help those who like to collect a lot of things. But I\u2019m wondering why would make these good containers readily available? Tarkov is a game about realism and complexity, why did you decide to make them so cheap (70 thousand) isn\u2019t it better to make 20 million or 100 million ?! I also wanted to know a very important question about the gameplay. You have a cheat backpack with 600 slots, and a kappa (protected container) also with 600 slots. Undoubtedly, with such equipment we will be able to take out \u201call Tarkov\u2019s booty\u201d, but will we have enough strength and weight of the character for this ?! how to deal with this limitation? And if there is no way to overcome this threshold, why do we need such large containers in the raid ???</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 61081,
+   "parent_id": 3114,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2021-12-21T14:15:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Honestly, I just like looting stuff so I wanted containers to carry everything lol. Yes that steps away from the idea of EFT in general but it\u2019s how I like to play and I thought others might like to play that way too.</p>\n<p>As for the weight issue, I use the All-in-One mod to remove weight because as I mentioned, I just like looting things lol</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 3119,
+   "parent_id": null,
+   "author": "TheHelmsman",
+   "author_id": 12445,
+   "author_url": "https://forge.sp-tarkov.com/user/12445/thehelmsman",
+   "created_at": "2021-12-21T16:15:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>For the 600 slot containers (kappa/pilgrim) they are longer than the screen, and can\u2019t be scrolled, so I can\u2019t see most of the items I put in there. Is this a bug or am I doing something wrong?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 61096,
+   "parent_id": 3119,
+   "author": "Yuutai",
+   "author_id": 12346,
+   "author_url": "https://forge.sp-tarkov.com/user/12346/yuutai",
+   "created_at": "2021-12-21T19:53:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The inventory of these items can be scrolled when they are equipped. Try to put them on yourself and you will see a slider and be able to pull out any things. If you just click twice with the mouse button, then in such a window you will not be able to do anything. So just equip them and enjoy.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 3182,
+   "parent_id": null,
+   "author": "Jamiesaan",
+   "author_id": 7973,
+   "author_url": "https://forge.sp-tarkov.com/user/7973/jamiesaan",
+   "created_at": "2021-12-28T09:11:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>why cant i put docs case and dogtags case in alpha container kind of defeats the purpose</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 3209,
+   "parent_id": null,
+   "author": "Demigods",
+   "author_id": 9449,
+   "author_url": "https://forge.sp-tarkov.com/user/9449/demigods",
+   "created_at": "2021-12-30T20:21:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>wanted to say thank you for the amazing mod, I freaking love it to death!! I hope in the future you\u2019ll make the other cases super as well XD</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 3730,
+   "parent_id": null,
+   "author": "Elicit",
+   "author_id": 10326,
+   "author_url": "https://forge.sp-tarkov.com/user/10326/elicit",
+   "created_at": "2022-01-29T16:19:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This is a amazing mod, but could you add a super money case. Thanks</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 3800,
+   "parent_id": null,
+   "author": "Vinyl Migraine",
+   "author_id": 10255,
+   "author_url": "https://forge.sp-tarkov.com/user/10255/vinyl-migraine",
+   "created_at": "2022-02-01T11:20:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Can\u2019t wait for 2.2.0 update, also super foodcase and money case like someone else asked for would be great.</p>\n<p>Keep up the great work</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 63116,
+   "parent_id": 3182,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2022-02-18T01:42:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Sorry for the late reply, blew the motherboard in my computer so I haven\u2019t been able to get on lately lol.</p>\n<p>I\u2019ll have to check the blacklist of items on the case here but I thought that\u2019s the way the vanilla case\u2019s acted?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 5259,
+   "parent_id": null,
+   "author": "Elicit",
+   "author_id": 10326,
+   "author_url": "https://forge.sp-tarkov.com/user/10326/elicit",
+   "created_at": "2022-04-13T01:28:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You should add super armor like mmac or killa armor</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 5691,
+   "parent_id": null,
+   "author": "HANAVI",
+   "author_id": 18618,
+   "author_url": "https://forge.sp-tarkov.com/user/18618/hanavi",
+   "created_at": "2022-05-22T13:33:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>how to change item name&amp;short name?<br />\ni need to change name T.T</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 6769,
+   "parent_id": null,
+   "author": "redman147",
+   "author_id": 7442,
+   "author_url": "https://forge.sp-tarkov.com/user/7442/redman147",
+   "created_at": "2022-07-24T08:33:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>For those wondering, this mod doesn\u2019t require Ereshkigal\u2019s Coremod anymore. Also, this is a standalone trader, so the items won\u2019t be in Therapist level 2. Description hasn\u2019t been updated to reflect this, so I thought I\u2019d let people know</p>\n<p>This is for those who didn\u2019t read the changelog in the download section hehe</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 6770,
+   "parent_id": null,
+   "author": "MadTitan",
+   "author_id": 11377,
+   "author_url": "https://forge.sp-tarkov.com/user/11377/madtitan",
+   "created_at": "2022-07-24T10:09:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Nice one dude thanks for updating works a treat \ud83d\udc4d\ud83c\udffb</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 66544,
+   "parent_id": 6769,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2022-07-24T11:05:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>yeaaaaa that\u2019s what I get for uploading RIGHT before I head to bed lol</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 6778,
+   "parent_id": null,
+   "author": "Durzo002",
+   "author_id": 15724,
+   "author_url": "https://forge.sp-tarkov.com/user/15724/durzo002",
+   "created_at": "2022-07-24T17:20:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Would be fun if bots would carry those cases as loot lol</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66562,
+   "parent_id": 6778,
+   "author": "Durzo002",
+   "author_id": 15724,
+   "author_url": "https://forge.sp-tarkov.com/user/15724/durzo002",
+   "created_at": "2022-07-24T17:21:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>oh, and super item cases would be awesome!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66563,
+   "parent_id": 6778,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2022-07-24T18:11:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m not sure how to add my items to the botbloot pools to be honest, especially with all the bot loot modification mods around lol.</p>\n<p>And I am planning in doing the items Case and such</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 6785,
+   "parent_id": null,
+   "author": "Vix_Sparda",
+   "author_id": 15541,
+   "author_url": "https://forge.sp-tarkov.com/user/15541/vix-sparda",
+   "created_at": "2022-07-25T01:58:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Super weapon case? o.o</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 6788,
+   "parent_id": null,
+   "author": "Halolong",
+   "author_id": 20379,
+   "author_url": "https://forge.sp-tarkov.com/user/20379/halolong",
+   "created_at": "2022-07-25T02:23:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>my favorite part is the description of these items, especially in the preview picture for the Super Doc case being holding all the bullets.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 66576,
+   "parent_id": 6785,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2022-07-25T02:44:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Coming Soontm!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66583,
+   "parent_id": 6785,
+   "author": "Vix_Sparda",
+   "author_id": 15541,
+   "author_url": "https://forge.sp-tarkov.com/user/15541/vix-sparda",
+   "created_at": "2022-07-25T03:45:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>sweet o.o and it seems to conflict with the profile editor as well.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66584,
+   "parent_id": 6785,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2022-07-25T04:02:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Really? It shouldn\u2019t. Was profile editor updated to 3.1.0 yet?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 6792,
+   "parent_id": null,
+   "author": "Durzo002",
+   "author_id": 15724,
+   "author_url": "https://forge.sp-tarkov.com/user/15724/durzo002",
+   "created_at": "2022-07-25T04:12:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>super Rigs! Lel</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66585,
+   "parent_id": 6785,
+   "author": "Vix_Sparda",
+   "author_id": 15541,
+   "author_url": "https://forge.sp-tarkov.com/user/15541/vix-sparda",
+   "created_at": "2022-07-25T04:25:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i\u2026dont beleive so. o.o love super kappa but cant edit money the stash if items from your mod are in it. super kappa makes me laugh is it..possible to make it wider than longer though?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66586,
+   "parent_id": 6785,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2022-07-25T04:30:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>that\u2019s very strange that it won\u2019t let you edit those. Give that another show when you get a chance!</p>\n<p>As for making it wider, I *might* be able to squeeze one more column but I\u2019m limited in the actual space of the GUI</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66587,
+   "parent_id": 6785,
+   "author": "Vix_Sparda",
+   "author_id": 15541,
+   "author_url": "https://forge.sp-tarkov.com/user/15541/vix-sparda",
+   "created_at": "2022-07-25T04:35:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>really? well thats alright then o.o thanks for considering my idea though</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66595,
+   "parent_id": 6792,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2022-07-25T12:27:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>hmmmmm.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 6818,
+   "parent_id": null,
+   "author": "barney01",
+   "author_id": 20967,
+   "author_url": "https://forge.sp-tarkov.com/user/20967/barney01",
+   "created_at": "2022-07-25T17:18:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Getting an error message</p>\n<p><em>ModLoader: Loading mods\u2026</em></p>\n<p><em>(node:12584) UnhandledPromiseRejctionWarning: Error: ENOENT: no such file or directory, sandir \u201cuser/mods/Josh25Hawk+SuperItems/db/\u201d</em></p>\n<p><em>at Object.readdieSync (fs.js:1021:3)</em></p>\n<p><em>at Object.readdieSync (D:\\BSG SINGLEPLAYER\\Aki.Server.exe:185:50)</em></p>\n<p><em>at VFS.getFiles (D:\\BSG SINGLEPLAYER\\obj\\bundle.js:17579:57)</em></p>\n<p><em>at DatabaseImporter.loadRecursive (D:\\BSG SINGLEPLAYER\\user\\mods\\zzzzJosh25Hawk-SuperItems\\src\\superitems.js:45:33)</em></p>\n<p><em>at SuperItems.preAkiLoad (D:BSG SINGLEPLAYER\\user\\mods\\zzzzJosh25Hawk-SuperItems\\src\\superitems.js:45:33)</em></p>\n<p><em>at PreAkiModLoader1.importClass (D:\\BSG SINGLEPLAYER\\obj\\bundle.js:12731:41)</em></p>\n<p><em>at PreAkiModLoader1.executeMods (D:\\BSG SINGLEPLAYER\\obj\\bundle.js:12826:73)</em></p>\n<p><em>at PreAkiModLoader1.load (D:\\BSG SINGLEPLAYER\\obj\\bundle.js:12709:14</em></p>\n<p><em>at processTicksAndRejections (internal/process/task_queues.js:93:5</em></p>\n<p><em>(Use <code>Aki.Server --trace-warnings ...</code> to show where the warning was created)</em></p>\n<p><em>(Taken from a screenshot in Adobe Premire because the server application would close before I could get a screenshot or copy it)</em></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66611,
+   "parent_id": 6818,
+   "author": "barney01",
+   "author_id": 20967,
+   "author_url": "https://forge.sp-tarkov.com/user/20967/barney01",
+   "created_at": "2022-07-25T17:33:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Other mods are not conflicting with it, running mod in last order, first order, by itself, error still comes up.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66615,
+   "parent_id": 6818,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2022-07-25T19:21:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>that looks like a typo on my part, ill have it fixed in a bit!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66619,
+   "parent_id": 6818,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2022-07-25T19:46:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Interesting, I can\u2019t seem to replicate this error. It *might* be because you\u2019ve changed the folder name? Try resetting it to JoshJ5Hawk-SuperItems and let me know if that works, I\u2019ll see if I can get that fixed in my code that it pulls the folder name instead of being hard coded.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66621,
+   "parent_id": 6818,
+   "author": "barney01",
+   "author_id": 20967,
+   "author_url": "https://forge.sp-tarkov.com/user/20967/barney01",
+   "created_at": "2022-07-25T20:45:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019ll try that.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66622,
+   "parent_id": 6818,
+   "author": "barney01",
+   "author_id": 20967,
+   "author_url": "https://forge.sp-tarkov.com/user/20967/barney01",
+   "created_at": "2022-07-25T20:48:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Works now, thanks for that!<br />\nIt\u2019s likely that I had changed the name and that something in your code, (probably the mod loader thing) could not find the file due to me changing the name.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 6837,
+   "parent_id": null,
+   "author": "Goyle",
+   "author_id": 20986,
+   "author_url": "https://forge.sp-tarkov.com/user/20986/goyle",
+   "created_at": "2022-07-26T00:53:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I have discovered upon attempting to run 3.1.1 that it causes the server to crash on startup. not sure what the reason is as there wasnt any logs to be found, but i spent the better part of an hour throwing mods left and right to see what caused it to no avail.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66630,
+   "parent_id": 6837,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2022-07-26T01:05:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yea it\u2019s not updated for 3.1.1 yet and not all 3.1.0 mods work with 3.1.1. Doing my best to get a fix out!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 6855,
+   "parent_id": null,
+   "author": "Raganash",
+   "author_id": 20996,
+   "author_url": "https://forge.sp-tarkov.com/user/20996/raganash",
+   "created_at": "2022-07-26T07:23:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>So I was wondering if you could add a super armor, like the the Bandana or Protection? Also maybe some OP Stims to go along with the Super Ifak?Thanks, and Great mod</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 6874,
+   "parent_id": null,
+   "author": "derchiller0815",
+   "author_id": 18916,
+   "author_url": "https://forge.sp-tarkov.com/user/18916/derchiller0815",
+   "created_at": "2022-07-26T18:03:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Currently getting an error when trying to load into a raid with the super kappa + super keytool + super dogtag case and trying to insure my regular gear (not even the super items themselves, just weapons and armor).</p>\n<p>TypeError: Cannot read property \u2018_props\u2019 of undefined</p>\n<p>TypeError: Cannot read property \u2018_props\u2019 of undefined</p>\n<p>at InsuranceService.getItemPrice (C:\\SPT\\SPT12.12.30\\obj\\bundle.js:15505:26)</p>\n<p>at InsuranceService.getPremium (C:\\SPT\\SPT12.12.30\\obj\\bundle.js:15625:28)</p>\n<p>at InsuranceController.cost (C:\\SPT\\SPT12.12.30\\obj\\bundle.js:3801:113)</p>\n<p>at InsuranceCallbacks.getInsuranceCost (C:\\SPT\\SPT12.12.30\\obj\\bundle.js:1572:67)</p>\n<p>at $de60112e0288ef4d$export$1dd35d19c79daa7c.action (C:\\SPT\\SPT12.12.30\\obj\\bundle.js:14352:48)</p>\n<p>at InsuranceStaticRouter.handleStatic (C:\\SPT\\SPT12.12.30\\obj\\bundle.js:13009:61)</p>\n<p>at Proxy.handleRoute (C:\\SPT\\SPT12.12.30\\obj\\bundle.js:13304:41)</p>\n<p>at Proxy.getResponse (C:\\SPT\\SPT12.12.30\\obj\\bundle.js:13294:30)</p>\n<p>at HttpServer.sendResponse (C:\\SPT\\SPT12.12.30\\obj\\bundle.js:14874:38)</p>\n<p>at Inflate.cb (C:\\SPT\\SPT12.12.30\\obj\\bundle.js:14899:22)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66702,
+   "parent_id": 6874,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2022-07-26T19:42:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thats\u2026. New. Uhm. Let me investigate lol</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66703,
+   "parent_id": 6874,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2022-07-26T19:44:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>That\u2019s very strange, I don\u2019t seem to be able to reproduce that issue. I loaded up into a raid with those items and even insured them. Are you on STP 3.1.1?<br />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/QoyQX6v.png\" alt=\"QoyQX6v.png\" /></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 6883,
+   "parent_id": null,
+   "author": "SamovarXXI",
+   "author_id": 20689,
+   "author_url": "https://forge.sp-tarkov.com/user/20689/samovarxxi",
+   "created_at": "2022-07-26T20:18:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>can you add a red balaclava of ultimate protection?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 6893,
+   "parent_id": null,
+   "author": "Deimos_is_Smoking",
+   "author_id": 12698,
+   "author_url": "https://forge.sp-tarkov.com/user/12698/deimos-is-smoking",
+   "created_at": "2022-07-27T01:44:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Can you add a 40mm round that is basically a small nuke? like it makes 2000 shrapnel and some other op stuff?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 6894,
+   "parent_id": null,
+   "author": "airproud98",
+   "author_id": 20738,
+   "author_url": "https://forge.sp-tarkov.com/user/20738/airproud98",
+   "created_at": "2022-07-27T02:06:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello love your work and the continues updates. Thank you</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66725,
+   "parent_id": 6893,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2022-07-27T02:21:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I like where your head is at. Gimmie a few.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66726,
+   "parent_id": 6883,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2022-07-27T02:21:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Super Bandana has been added</p>\n<p>Watch out for grenades though, they\u2019ll still mess you up lol</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 6900,
+   "parent_id": null,
+   "author": "sshamrockk",
+   "author_id": 21041,
+   "author_url": "https://forge.sp-tarkov.com/user/21041/sshamrockk",
+   "created_at": "2022-07-27T04:12:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I cant seem to equip the super bandana.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 6901,
+   "parent_id": null,
+   "author": "Demigods",
+   "author_id": 9449,
+   "author_url": "https://forge.sp-tarkov.com/user/9449/demigods",
+   "created_at": "2022-07-27T04:13:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I am getting this error when loading up the server.</p>\n<p>[AmmoStats]: WARNING! Error with item \u201c\u201csuperakbs\u201d\u201d, skipping entry!k</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66732,
+   "parent_id": 6900,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2022-07-27T04:13:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Known issue I just noticed it myself. Will work on something soon. For now check out the A18</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 66733,
+   "parent_id": 6901,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2022-07-27T04:15:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>That\u2019s probably to do with the ammo stats mod, I wouldn\u2019t worry *too* much about it, it just means that my ammo isn\u2019t playing nice with it but it *should* still work</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 66734,
+   "parent_id": 6901,
+   "author": "Demigods",
+   "author_id": 9449,
+   "author_url": "https://forge.sp-tarkov.com/user/9449/demigods",
+   "created_at": "2022-07-27T04:19:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Oh dang my bad, I did not see that. I just happen to seen \u201csuperakbs\u201d first and was like damnit cause i know you\u2019ve been updating the mod none stop Hehe.. Thank you still for replying back.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66735,
+   "parent_id": 6901,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2022-07-27T04:22:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You bet! Thanks for pointing it out with the full error, otherwise I might have gone crazy trying to fix it lol</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66737,
+   "parent_id": 6901,
+   "author": "Demigods",
+   "author_id": 9449,
+   "author_url": "https://forge.sp-tarkov.com/user/9449/demigods",
+   "created_at": "2022-07-27T04:35:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>hahaha that would have been SUPER bad then i woulda had to get you pizza for staying up all night trying to figure out the error out when it wasn\u2019t even your mod :p</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 6902,
+   "parent_id": null,
+   "author": "redman147",
+   "author_id": 7442,
+   "author_url": "https://forge.sp-tarkov.com/user/7442/redman147",
+   "created_at": "2022-07-27T05:48:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is there any way to modify the ammo to prevent durability burn?</p>\n<p>Also .45 ACP doesn\u2019t work in .45 ACP vector. Was this only intended for pistol use?</p>\n<p>Tested the 45 ACP RIP round and it only works in the 1911 45 ACP pistol and almost any and all 9x19 pistols and SMGs. xD</p>\n<p>Doesn\u2019t work in Glock 18C, Vector 9x19 or .45 ACP.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66738,
+   "parent_id": 6902,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2022-07-27T06:25:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I should be able to do the durability burn tomorrow!</p>\n<p>And yea it was initially only for the 1911. Honesty it\u2019d be aajor pain the the ass to add it to all of them cuz i have to do a bunch of filtering on guns and mags lol but if there is a specific weapon you want it for, let me know!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 6905,
+   "parent_id": null,
+   "author": "tmdgusql",
+   "author_id": 21047,
+   "author_url": "https://forge.sp-tarkov.com/user/21047/tmdgusql",
+   "created_at": "2022-07-27T06:39:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The mod works well but it makes m4a1 and rgd-5 disappear in the flea market\u2026</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66740,
+   "parent_id": 6902,
+   "author": "redman147",
+   "author_id": 7442,
+   "author_url": "https://forge.sp-tarkov.com/user/7442/redman147",
+   "created_at": "2022-07-27T06:58:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>If it\u2019s not too much trouble the Vector + RIP = Orgasmic</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66746,
+   "parent_id": 6883,
+   "author": "SamovarXXI",
+   "author_id": 20689,
+   "author_url": "https://forge.sp-tarkov.com/user/20689/samovarxxi",
+   "created_at": "2022-07-27T08:31:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Cool, thanks) I can\u2019t really use the T-7, but okay</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 6912,
+   "parent_id": null,
+   "author": "hansoncook15",
+   "author_id": 12066,
+   "author_url": "https://forge.sp-tarkov.com/user/12066/hansoncook15",
+   "created_at": "2022-07-27T08:54:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Think you could add in an explosive shotgun shell?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 6918,
+   "parent_id": null,
+   "author": "SamovarXXI",
+   "author_id": 20689,
+   "author_url": "https://forge.sp-tarkov.com/user/20689/samovarxxi",
+   "created_at": "2022-07-27T12:44:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>what slot to wear a bandana in? no one is right for her</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66759,
+   "parent_id": 6874,
+   "author": "Dan_Does",
+   "author_id": 20551,
+   "author_url": "https://forge.sp-tarkov.com/user/20551/dan-does",
+   "created_at": "2022-07-27T13:49:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I get an error also when trying to insure.</p>\n<p>Fresh install of 3.1.1 and no other mods installed.</p>\n<p><a href=\"https://imgur.com/a/DLMpT6s\" target=\"_blank\" rel=\"noreferrer noopener\">Error message screenshot</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 6922,
+   "parent_id": null,
+   "author": "Medic427",
+   "author_id": 20962,
+   "author_url": "https://forge.sp-tarkov.com/user/20962/medic427",
+   "created_at": "2022-07-27T14:55:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I had an issue where this mod makes me unable to insure my gear.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66760,
+   "parent_id": 6922,
+   "author": "Medic427",
+   "author_id": 20962,
+   "author_url": "https://forge.sp-tarkov.com/user/20962/medic427",
+   "created_at": "2022-07-27T14:57:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I am not loading into the raid with any of the super gear, just having it in my stash causes the issue. It happened with the 3.1.0 as well, and this is the only mod that I have that is the same. Love the mod, just hate not being able to insure my stuff X</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66763,
+   "parent_id": 6874,
+   "author": "derchiller0815",
+   "author_id": 18916,
+   "author_url": "https://forge.sp-tarkov.com/user/18916/derchiller0815",
+   "created_at": "2022-07-27T17:05:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>JoshJ5Hawk Yes I\u2019m in 3.1.1 and just tried a clean install, still wouldn\u2019t work and threw the same error in the server console</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66764,
+   "parent_id": 6874,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2022-07-27T17:15:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>that isbso strange\u2026 I\u2019ll try again to see if I can get it to error out on me when I get a chance tonight. Sorry about that!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 6924,
+   "parent_id": null,
+   "author": "TemptedMouse#6969",
+   "author_id": 339,
+   "author_url": "https://forge.sp-tarkov.com/user/339/temptedmouse6969",
+   "created_at": "2022-07-27T17:19:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello,</p>\n<p>I tried the Mod download link and the Link is not usable. its a 404 error once I get to Dropbox. I will try again later, but anyone else experiencing this or have a fix let me know thank you.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66766,
+   "parent_id": 6924,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2022-07-27T17:22:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I just got an email from Dropbox about being over my traffic limit lol. I should have it fixed in a while</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66767,
+   "parent_id": 6924,
+   "author": "TemptedMouse#6969",
+   "author_id": 339,
+   "author_url": "https://forge.sp-tarkov.com/user/339/temptedmouse6969",
+   "created_at": "2022-07-27T17:26:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I appreciate the response, I\u2019m in no rush I will try later on</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 6925,
+   "parent_id": null,
+   "author": "Banana Mag User",
+   "author_id": 20819,
+   "author_url": "https://forge.sp-tarkov.com/user/20819/banana-mag-user",
+   "created_at": "2022-07-27T17:34:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Link working now everyone.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66780,
+   "parent_id": 6874,
+   "author": "Robopants",
+   "author_id": 8104,
+   "author_url": "https://forge.sp-tarkov.com/user/8104/robopants",
+   "created_at": "2022-07-27T21:42:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m also occasionally stumbling into this issue. I\u2019ve had it happen where I couldn\u2019t insure before readying for a raid right after launching the game. Other times I can insure pre- raid after having already played one. I can still insure items while in the stash, but this no longer works after encountering the bug where I cant insure pre- raid. It doesn\u2019t matter what items I try to insure.</p>\n<p>Other than that it\u2019s a fun mod, nice work!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 6950,
+   "parent_id": null,
+   "author": "Goyle",
+   "author_id": 20986,
+   "author_url": "https://forge.sp-tarkov.com/user/20986/goyle",
+   "created_at": "2022-07-27T23:48:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Just an fyi in case you didnt already know, using this in conjunction with gear changes on FAIT will cause an error. it works without gear changes enabled. ive done several different things to prevent the error, none of which have worked.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66786,
+   "parent_id": 6950,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2022-07-27T23:51:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Interesting\u2026 I\u2019ll have to try loading up with FAIT and see what happens</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66787,
+   "parent_id": 6950,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2022-07-28T00:21:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m working with Fin right now to see if we can come up with a solution</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66790,
+   "parent_id": 6950,
+   "author": "Goyle",
+   "author_id": 20986,
+   "author_url": "https://forge.sp-tarkov.com/user/20986/goyle",
+   "created_at": "2022-07-28T01:31:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>many thanks</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66795,
+   "parent_id": 6902,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2022-07-28T04:36:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey boss, I\u2019ve added it to the Vector .45</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 6957,
+   "parent_id": null,
+   "author": "Demigods",
+   "author_id": 9449,
+   "author_url": "https://forge.sp-tarkov.com/user/9449/demigods",
+   "created_at": "2022-07-28T04:51:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Damn man, calm down.. lol you are like updating like crazy and stuff.. I dont want you to get overwhelmed and/or exhausted. Keep up the great amazing work though XD</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66806,
+   "parent_id": 6902,
+   "author": "redman147",
+   "author_id": 7442,
+   "author_url": "https://forge.sp-tarkov.com/user/7442/redman147",
+   "created_at": "2022-07-28T10:35:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>YEEEEEEEEEEEEET</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 6967,
+   "parent_id": null,
+   "author": "Trissssss",
+   "author_id": 20780,
+   "author_url": "https://forge.sp-tarkov.com/user/20780/trissssss",
+   "created_at": "2022-07-28T13:29:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi. Is there any way to modify the Bandana\u2019s protected zones? And possibly the price of the items</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66812,
+   "parent_id": 6967,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2022-07-28T13:54:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I have (I think) all of the available protected zones on the bandana already (unless you\u2019re wanting less, I could clone and tweak a new one for you)</p>\n<p>Prices are going to be configurable in the update I hope to push out tonight!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66813,
+   "parent_id": 6967,
+   "author": "Trissssss",
+   "author_id": 20780,
+   "author_url": "https://forge.sp-tarkov.com/user/20780/trissssss",
+   "created_at": "2022-07-28T13:57:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yes, I\u2019d like less, but you can just tell me what file I need to modify to change it (if possible), no need to make a new one</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 6969,
+   "parent_id": null,
+   "author": "SamovarXXI",
+   "author_id": 20689,
+   "author_url": "https://forge.sp-tarkov.com/user/20689/samovarxxi",
+   "created_at": "2022-07-28T14:24:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>strange\u2026 the birdeye killed me in the face while wearing a bandana, is that normal?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66814,
+   "parent_id": 6969,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2022-07-28T15:23:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>strange indeed\u2026 I\u2019ll investigate tonight!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66815,
+   "parent_id": 6967,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2022-07-28T15:24:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>if you pop into my mod/db/templates/items.json you should see superbandana near the bottom, poke around in there</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66817,
+   "parent_id": 6967,
+   "author": "Trissssss",
+   "author_id": 20780,
+   "author_url": "https://forge.sp-tarkov.com/user/20780/trissssss",
+   "created_at": "2022-07-28T15:36:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019ll do so when I\u2019m home. Thanks!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 6971,
+   "parent_id": null,
+   "author": "Durzo002",
+   "author_id": 15724,
+   "author_url": "https://forge.sp-tarkov.com/user/15724/durzo002",
+   "created_at": "2022-07-28T16:43:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Could you maybe make a version for 3.0.0 with all the new items if its not too much work?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66820,
+   "parent_id": 6971,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2022-07-28T16:49:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>unfortunately there are enough differences in the 3.0.0 and 3.1.1 code for my mod that it be very tedious and unrealistic to manage them both. Sorry!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66821,
+   "parent_id": 6971,
+   "author": "Durzo002",
+   "author_id": 15724,
+   "author_url": "https://forge.sp-tarkov.com/user/15724/durzo002",
+   "created_at": "2022-07-28T17:00:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>No Problem! So i will wait untill all my mods are updated</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 6972,
+   "parent_id": null,
+   "author": "NaCl223",
+   "author_id": 13017,
+   "author_url": "https://forge.sp-tarkov.com/user/13017/nacl223",
+   "created_at": "2022-07-28T17:17:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>you best be adding the other calibers</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66825,
+   "parent_id": 6972,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2022-07-28T19:08:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I plan to! I need to come up with a way to make it simpler to do since I have to add it to each weapon AND each magazine the weapon uses for it to function properly lol</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 6994,
+   "parent_id": null,
+   "author": "mtymtymty",
+   "author_id": 9373,
+   "author_url": "https://forge.sp-tarkov.com/user/9373/mtymtymty",
+   "created_at": "2022-07-29T01:16:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Could you make the bandana as a face cover? Being a headgear prevents the use of NVG</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66844,
+   "parent_id": 6994,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2022-07-29T02:18:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>oooh, good point! I\u2019ll see what I can do.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 6995,
+   "parent_id": null,
+   "author": "Snowblind808",
+   "author_id": 10358,
+   "author_url": "https://forge.sp-tarkov.com/user/10358/snowblind808",
+   "created_at": "2022-07-29T03:54:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The super TT ammo dosent work with the Gold TT pistol, idk why it just says it an incompatible round when i try to use it</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66846,
+   "parent_id": 6995,
+   "author": "MrDerppy",
+   "author_id": 15883,
+   "author_url": "https://forge.sp-tarkov.com/user/15883/mrderppy",
+   "created_at": "2022-07-29T04:11:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>and super .45 also don\u2019t work on M45, USP45,and ump45, kind of unpractical\u2026.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66847,
+   "parent_id": 6995,
+   "author": "Snowblind808",
+   "author_id": 10358,
+   "author_url": "https://forge.sp-tarkov.com/user/10358/snowblind808",
+   "created_at": "2022-07-29T04:40:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>probably because he coded it so that the round can only be used in certain weapons, and they are trying to fix that from what ive seen, just reporting my findings to them</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66852,
+   "parent_id": 6995,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2022-07-29T06:51:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yeppp I\u2019ll get them added tomorrow! To be honest, I\u2019m terrible at knowing exactly what ammo works in what weapon so I\u2019m kinda just adding it as people request lol</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66853,
+   "parent_id": 6995,
+   "author": "Snowblind808",
+   "author_id": 10358,
+   "author_url": "https://forge.sp-tarkov.com/user/10358/snowblind808",
+   "created_at": "2022-07-29T06:59:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>ah, well thank you for working on this a lot, its a really great mod, and you got more right there, and ill be sure to report anything that i find with it!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 7003,
+   "parent_id": null,
+   "author": "Snowblind808",
+   "author_id": 10358,
+   "author_url": "https://forge.sp-tarkov.com/user/10358/snowblind808",
+   "created_at": "2022-07-29T08:49:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>its also saying the super TT is the wrong ammo type for the PPsh, which the PPsh uses TT ammo</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 7007,
+   "parent_id": null,
+   "author": "bandiKOtik",
+   "author_id": 13753,
+   "author_url": "https://forge.sp-tarkov.com/user/13753/bandikotik",
+   "created_at": "2022-07-29T13:06:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>as a variant, you can add new mags (30 or 60, no care) to the main calibers like 5.45, 5.56, 7.62, etc., which will be increased to 1000 bullets or more, and add a buffed grenade that will deal damage at a long distance, but will not kill the player who wearing armor from this mod. btw I luv your mod</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 7008,
+   "parent_id": null,
+   "author": "Goyle",
+   "author_id": 20986,
+   "author_url": "https://forge.sp-tarkov.com/user/20986/goyle",
+   "created_at": "2022-07-29T13:49:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i just had a bloody brilliant idea! why not make a 40mm grenade that has a ridiculous radius and stupidly high shrapnel count with around 5 damage per shrapnel, but 80-100% chance of bleeding? thatd be insane, just hoping if it becomes a thing i dont suddenly bleed out randomly because big pipe proving how he earned the name. just make it compatible with the single shot GL only i guess?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66862,
+   "parent_id": 7008,
+   "author": "Goyle",
+   "author_id": 20986,
+   "author_url": "https://forge.sp-tarkov.com/user/20986/goyle",
+   "created_at": "2022-07-29T13:50:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>like, 20 meter radius, with around 500 to 1000 shrapnel would be ideal, lest you accidentally nuke yourself lmao</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66863,
+   "parent_id": 7008,
+   "author": "Goyle",
+   "author_id": 20986,
+   "author_url": "https://forge.sp-tarkov.com/user/20986/goyle",
+   "created_at": "2022-07-29T14:15:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>you can take your time adding this. its not necessarily an important matter, i just thought its be funny as hell. on a side note though, a 9x18 with the APB or kedr would be awesome, just with a guaranteed bleed and double or triple normal damage for Blood god reasons</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 7012,
+   "parent_id": null,
+   "author": "Rage50AE",
+   "author_id": 8539,
+   "author_url": "https://forge.sp-tarkov.com/user/8539/rage50ae",
+   "created_at": "2022-07-29T15:12:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey awesome mod, is there any chance you could do a version of the Death Knight\u2019s mask with just full head protection and stay in the Face Cover slot? Also make it so there\u2019s a Super version and a class 5 or 6 version or allow it to be customizable? Apologies if this is a pain to do lol.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 7026,
+   "parent_id": null,
+   "author": "gangsterhotline",
+   "author_id": 20204,
+   "author_url": "https://forge.sp-tarkov.com/user/20204/gangsterhotline",
+   "created_at": "2022-07-29T22:02:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Howdy,</p>\n<p>Not sure if this has been seen by or reported by anyone yet, but I don\u2019t have any item inventory images loading. The items all work fine/as intended but they are blank in the trader\u2019s and my inventory. Screen with example attached.</p>\n<p>I can try and send log stuff if needed too. Appreciate any help and nice work on the mod!</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/NyR4yxy/2022-07-27-06-01-7-6-2-0-0-6-0-0-0-8-0-0-0-6-0.png\" alt=\"2022-07-27-06-01-7-6-2-0-0-6-0-0-0-8-0-0-0-6-0.png\" /></p>\n<p><a href=\"https://ibb.co/mcpxcJc\" target=\"_blank\" rel=\"noreferrer noopener\">https://ibb.co/mcpxcJc</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66883,
+   "parent_id": 7026,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2022-07-30T00:32:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>couple things to try. Give a middle click to examine. Probs won\u2019t solve it but the other option is in the launcher. Click options in the top right, then click clear temp files. Let me know if that works or not!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66890,
+   "parent_id": 7012,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2022-07-30T05:08:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>If you\u2019re cool with it being the same texture, I could pull that off pretty quick actually. I think lol. Configurable is a little more difficult, but I could just make it with armorclass 6</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 7035,
+   "parent_id": null,
+   "author": "Snowblind808",
+   "author_id": 10358,
+   "author_url": "https://forge.sp-tarkov.com/user/10358/snowblind808",
+   "created_at": "2022-07-30T05:53:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i know this is very quick after the update came out, but i was playing and i noticed with the new Boom buckshot that it dosent work with the MTs-225-12 aka the revolver shotgun, im not sure why this is but it may be because the revolver doesn\u2019t count as a magazine since its displayed as multiple chambers, and the gun its self dosent have a chamber for the round to be in, and so maybe thats why i because it dosent fall under the categories you set, just my idea anyways</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66892,
+   "parent_id": 7012,
+   "author": "Rage50AE",
+   "author_id": 8539,
+   "author_url": "https://forge.sp-tarkov.com/user/8539/rage50ae",
+   "created_at": "2022-07-30T06:35:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yeah i\u2019m cool with that, that would be awesome lol</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66894,
+   "parent_id": 7035,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2022-07-30T06:39:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You have found the ONE weapon I didn\u2019t account for with the shotguns lol. I\u2019ll take a look at it tomorrow.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66895,
+   "parent_id": 7035,
+   "author": "Snowblind808",
+   "author_id": 10358,
+   "author_url": "https://forge.sp-tarkov.com/user/10358/snowblind808",
+   "created_at": "2022-07-30T06:50:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>well, i kinda tested the each ammo with each weapon just to make sure everything was correct lmao, i just really enjoy this mod</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 7041,
+   "parent_id": null,
+   "author": "airproud98",
+   "author_id": 20738,
+   "author_url": "https://forge.sp-tarkov.com/user/20738/airproud98",
+   "created_at": "2022-07-30T11:47:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you for your work dear boi</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 7043,
+   "parent_id": null,
+   "author": "Coitus_Ergo_Sum",
+   "author_id": 10213,
+   "author_url": "https://forge.sp-tarkov.com/user/10213/coitus-ergo-sum",
+   "created_at": "2022-07-30T14:33:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Heya! Love the mod! With the addition of the Boom Buckshot, I could finally do a TF2 Scout run with the double barrel shotgun and not die instantly.</p>\n<p>However, there seems to be an issue, where I can only load 1 shell of Boom Buckshot into the double barrel, and that\u2019s it. Can\u2019t add another shell into the second barrel. Not sure what the issue is, or if it\u2019s just something on my end, but I wanted to let you know that it\u2019s an issue I found.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66903,
+   "parent_id": 7043,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2022-07-30T15:21:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for the heads up! I\u2019ll take a peep tonight and see what I can find</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 7046,
+   "parent_id": null,
+   "author": "Dan_Does",
+   "author_id": 20551,
+   "author_url": "https://forge.sp-tarkov.com/user/20551/dan-does",
+   "created_at": "2022-07-30T17:11:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I love the Boom shotgun shells but holy lag every time I shoot one hah.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 7048,
+   "parent_id": null,
+   "author": "Goyle",
+   "author_id": 20986,
+   "author_url": "https://forge.sp-tarkov.com/user/20986/goyle",
+   "created_at": "2022-07-30T17:43:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>so uhhhh. just shot at a scav, missed, and apparently yoinked reshala from big red? akbs be wild</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66904,
+   "parent_id": 7046,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2022-07-30T18:05:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yeaa I\u2019m going to have to tweak that one a bit lol</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66911,
+   "parent_id": 7026,
+   "author": "gangsterhotline",
+   "author_id": 20204,
+   "author_url": "https://forge.sp-tarkov.com/user/20204/gangsterhotline",
+   "created_at": "2022-07-30T21:58:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yeah examining the items does not make the graphic appear, but it does successfully identify them all and they are all completely usable. Just can\u2019t see them in my inventory :P.</p>\n<p>I will give your suggestion a shot about temp file purging. I also just fresh installed Tarkov and AKI so that might have done it too.</p>\n<p>Appreciate your reply thanks dude!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66915,
+   "parent_id": 7046,
+   "author": "walisbourne",
+   "author_id": 20099,
+   "author_url": "https://forge.sp-tarkov.com/user/20099/walisbourne",
+   "created_at": "2022-07-31T00:27:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i was going to try and mess with it myself but i can\u2019t find it anywhere in your item json</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66916,
+   "parent_id": 7046,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2022-07-31T00:32:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>that\u2019s because it\u2019s actually not lol, I created that one a little differently (it\u2019ll be how I do my Ammo in the future). Pop into the superitems.ts and you should see the boomshot properties that you can tweak</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 7059,
+   "parent_id": null,
+   "author": "Snowblind808",
+   "author_id": 10358,
+   "author_url": "https://forge.sp-tarkov.com/user/10358/snowblind808",
+   "created_at": "2022-07-31T04:22:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>cant wait for the super ammo mod, i really enjoy them!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 7065,
+   "parent_id": null,
+   "author": "Trissssss",
+   "author_id": 20780,
+   "author_url": "https://forge.sp-tarkov.com/user/20780/trissssss",
+   "created_at": "2022-07-31T09:16:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello Josh. Is there a way to make some items invisible when equipped? (I don\u2019t really like the look of the bandanas lol) I\u2019ve looked into the options where you showed me the other day, but there\u2019s a bunch of things I don\u2019t understand</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 7070,
+   "parent_id": null,
+   "author": "MacrossMX#7167",
+   "author_id": 57,
+   "author_url": "https://forge.sp-tarkov.com/user/57/macrossmx7167",
+   "created_at": "2022-07-31T11:04:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You should also add super goggles that gives 100% protection from flashbangs.</p>\n<p>Other than that, nice job with the mod.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 7078,
+   "parent_id": null,
+   "author": "SamovarXXI",
+   "author_id": 20689,
+   "author_url": "https://forge.sp-tarkov.com/user/20689/samovarxxi",
+   "created_at": "2022-07-31T14:30:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>it\u2019s a shame \u2026 somehow I deleted all the available explosive ammunition, reinstalled the mod and the game broke, I had to create a new profile \u2026 what could I have done wrong?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 66941,
+   "parent_id": 7078,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2022-07-31T15:31:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>if you had any Ammo left in a weapon it may have caused that (did for me, lol) you could open your profile in profile editor and delete anything with s red elimination point next to it under the dash</p>\n<p>Stash tab. That\u2019s what d for me lol</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 7112,
+   "parent_id": null,
+   "author": "SamovarXXI",
+   "author_id": 20689,
+   "author_url": "https://forge.sp-tarkov.com/user/20689/samovarxxi",
+   "created_at": "2022-08-01T14:17:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>can you add an orange half mask in which the Scav go? paired with a bandana would be nice</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 67036,
+   "parent_id": 7012,
+   "author": "Rage50AE",
+   "author_id": 8539,
+   "author_url": "https://forge.sp-tarkov.com/user/8539/rage50ae",
+   "created_at": "2022-08-02T19:06:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey man, are you still planning on doing the Death Knight mask? Sorry for asking I know you have been busy with your SuperAmmo mod, but figured I would ask.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 7177,
+   "parent_id": null,
+   "author": "Orion_Frostburn",
+   "author_id": 7626,
+   "author_url": "https://forge.sp-tarkov.com/user/7626/orion-frostburn",
+   "created_at": "2022-08-02T22:07:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i\u2019m not seeing any of the stims.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 7179,
+   "parent_id": null,
+   "author": "TemptedMouse#6969",
+   "author_id": 339,
+   "author_url": "https://forge.sp-tarkov.com/user/339/temptedmouse6969",
+   "created_at": "2022-08-02T22:26:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Lost all of my money, Somehow did not even have money in anything from this mod, and anything that was in the containers from this mod when logging back in is gone. And still have the insurance issues.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 7622,
+   "parent_id": null,
+   "author": "Goyle",
+   "author_id": 20986,
+   "author_url": "https://forge.sp-tarkov.com/user/20986/goyle",
+   "created_at": "2022-08-15T20:08:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>ngl, the regen stim combined with a mod that increases your base health is nice, as you can survive against the Pipe without getting yeeted to the main menu if he has a GL</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 67624,
+   "parent_id": 7622,
+   "author": "Goyle",
+   "author_id": 20986,
+   "author_url": "https://forge.sp-tarkov.com/user/20986/goyle",
+   "created_at": "2022-08-15T20:08:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>your armor will take a beating tho.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 7769,
+   "parent_id": null,
+   "author": "MarroW",
+   "author_id": 21531,
+   "author_url": "https://forge.sp-tarkov.com/user/21531/marrow",
+   "created_at": "2022-08-20T11:25:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi, maybe a stupid question, but when i open the Super Pilgrim bag, and it is in my stash, the window shows bigger than my screen, can i scroll or do anything about that?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 67999,
+   "parent_id": 7769,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2022-08-25T01:34:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>There really isn\u2019t anything I can do about that unfortunately. You\u2019ll have to toss it to the backpack slot for it to play nice lol</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 7992,
+   "parent_id": null,
+   "author": "Brontanius",
+   "author_id": 15505,
+   "author_url": "https://forge.sp-tarkov.com/user/15505/brontanius",
+   "created_at": "2022-08-28T12:27:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Clich\u00e9 but 3.2.1 when?</p>\n<p>All memes aside, love the mod and the ammo one both for the absurd loot goblin levels and the lag bullets.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 68179,
+   "parent_id": 7992,
+   "author": "Brontanius",
+   "author_id": 15505,
+   "author_url": "https://forge.sp-tarkov.com/user/15505/brontanius",
+   "created_at": "2022-08-29T22:09:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Now 3.2.2</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 8078,
+   "parent_id": null,
+   "author": "Demigods",
+   "author_id": 9449,
+   "author_url": "https://forge.sp-tarkov.com/user/9449/demigods",
+   "created_at": "2022-08-31T03:36:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hai I keep getting an Item Template Error..</p>\n<p>Screenshot of message: <a href=\"https://gyazo.com/97d6ff9e0893451b1887b36a09b50258\" target=\"_blank\" rel=\"noreferrer noopener\">https://gyazo.com/97d6ff9e0893451b1887b36a09b50258</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 68234,
+   "parent_id": 8078,
+   "author": "Jasper64RUS",
+   "author_id": 6136,
+   "author_url": "https://forge.sp-tarkov.com/user/6136/jasper64rus",
+   "created_at": "2022-08-31T10:15:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>same error</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 68243,
+   "parent_id": 8078,
+   "author": "Kycok_Ov4arku",
+   "author_id": 2278,
+   "author_url": "https://forge.sp-tarkov.com/user/2278/kycok-ov4arku",
+   "created_at": "2022-08-31T16:13:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i having same issue do u know how to solve it ?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 68277,
+   "parent_id": 8078,
+   "author": "Jasper64RUS",
+   "author_id": 6136,
+   "author_url": "https://forge.sp-tarkov.com/user/6136/jasper64rus",
+   "created_at": "2022-09-01T10:49:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Put the previous version - it works</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 8140,
+   "parent_id": null,
+   "author": "Medic427",
+   "author_id": 20962,
+   "author_url": "https://forge.sp-tarkov.com/user/20962/medic427",
+   "created_at": "2022-09-01T20:53:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Getting an error for the super pilgrim</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 8149,
+   "parent_id": null,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2022-09-02T00:35:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Workin\u2019 on the fix now y\u2019all!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 8150,
+   "parent_id": null,
+   "author": "llife",
+   "author_id": 22151,
+   "author_url": "https://forge.sp-tarkov.com/user/22151/llife",
+   "created_at": "2022-09-02T00:50:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>is that the only change? only ask as i fixed it myself and wondering if i need to still update</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 8173,
+   "parent_id": null,
+   "author": "llife",
+   "author_id": 22151,
+   "author_url": "https://forge.sp-tarkov.com/user/22151/llife",
+   "created_at": "2022-09-02T22:32:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>ok, so currently you can-not repair either of the bandana\u2019s as the armor material is helmet which is not an armor material.</p>\n<p>to fix: simply change ArmorMaterial to one of the armor Materials found in globals. or match the armormaterial from a18 also included in mod<br />\n<a href=\"https://cdn.discordapp.com/attachments/809576745321758721/1015388390373457920/unknown.png\" target=\"_blank\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://cdn.discordapp.com/attachments/809576745321758721/1015388390373457920/unknown.png\" alt=\"unknown.png\" /></a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 8629,
+   "parent_id": null,
+   "author": "saltyshark135",
+   "author_id": 22754,
+   "author_url": "https://forge.sp-tarkov.com/user/22754/saltyshark135",
+   "created_at": "2022-09-28T22:32:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I seem to have placed 4 ammo cases inside of a super pilgrim, they are at the very top and i cant put the bag on my pmc to get them out, i also cant reach them if i open the bag. How would i fix this.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 8843,
+   "parent_id": null,
+   "author": "FishGaming",
+   "author_id": 22848,
+   "author_url": "https://forge.sp-tarkov.com/user/22848/fishgaming",
+   "created_at": "2022-10-15T03:36:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Please update this mod for the newer versions!!! I loved this mod because I adjusted it to be a very late game vendor that once I achieved his unlock loyalty 4 status I was able to play with reduced weight and a huge amount of storage space. It was nice to have that at the end of my runs to work towards. Please update!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 8849,
+   "parent_id": null,
+   "author": "FishGaming",
+   "author_id": 22848,
+   "author_url": "https://forge.sp-tarkov.com/user/22848/fishgaming",
+   "created_at": "2022-10-15T16:35:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Anyone else that is using this mod regularly, can anyone please tell me how to remove the spawn chances of the items. I have set the in the src folder.json file to have the three med items to 0 for spawning and I have set the items.json file spawnchance for all items to 0 and they still keep spawning.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 9927,
+   "parent_id": null,
+   "author": "West",
+   "author_id": 21073,
+   "author_url": "https://forge.sp-tarkov.com/user/21073/west",
+   "created_at": "2022-12-23T14:02:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Waking up to this update is the best pre Christmas present ever, thank you!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 9977,
+   "parent_id": null,
+   "author": "daddyjay04",
+   "author_id": 16901,
+   "author_url": "https://forge.sp-tarkov.com/user/16901/daddyjay04",
+   "created_at": "2022-12-24T17:00:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>How do I install?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 10080,
+   "parent_id": null,
+   "author": "js2195",
+   "author_id": 2728,
+   "author_url": "https://forge.sp-tarkov.com/user/2728/js2195",
+   "created_at": "2022-12-28T23:38:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>idk why but all the item names are broken in game</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 10144,
+   "parent_id": null,
+   "author": "N1Tr0n",
+   "author_id": 11559,
+   "author_url": "https://forge.sp-tarkov.com/user/11559/n1tr0n",
+   "created_at": "2022-12-31T06:07:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello, you can make some kind of weapon attachment that will increase ergonomics and remove recoil, universal for most weapons in the game, for example, the Shift grip</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 71296,
+   "parent_id": 10080,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2022-12-31T12:24:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yepp that\u2019ll be fixed here soon! Just haven\u2019t had a chance to get around to it.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 10452,
+   "parent_id": null,
+   "author": "Gintaras",
+   "author_id": 22566,
+   "author_url": "https://forge.sp-tarkov.com/user/22566/gintaras",
+   "created_at": "2023-01-08T09:57:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello, I wanted to ask in your mod where the Super Stim and Super Skill Stim values are registered. I searched in the mod files but did not find such a description of these stimulants.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 11770,
+   "parent_id": null,
+   "author": "Medic427",
+   "author_id": 20962,
+   "author_url": "https://forge.sp-tarkov.com/user/20962/medic427",
+   "created_at": "2023-02-13T21:32:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Will this mod work with 3.5.0?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73898,
+   "parent_id": 11770,
+   "author": "starkiller149",
+   "author_id": 8694,
+   "author_url": "https://forge.sp-tarkov.com/user/8694/starkiller149",
+   "created_at": "2023-02-15T12:05:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>test it. Nope. Broken for now</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 12322,
+   "parent_id": null,
+   "author": "Enginenilla",
+   "author_id": 26564,
+   "author_url": "https://forge.sp-tarkov.com/user/26564/enginenilla",
+   "created_at": "2023-02-20T16:41:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>how do i scroll down to view all the contents of supper kappa or super pilgrim?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 74722,
+   "parent_id": 12322,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2023-02-20T18:58:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You have to equip it, I haven\u2019t found a way to be able to add a scroll to the backpack itself.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 74801,
+   "parent_id": 11770,
+   "author": "ItsRandy_TTV",
+   "author_id": 27197,
+   "author_url": "https://forge.sp-tarkov.com/user/27197/itsrandy-ttv",
+   "created_at": "2023-02-21T14:39:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Works fine for me</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 12377,
+   "parent_id": null,
+   "author": "ItsRandy_TTV",
+   "author_id": 27197,
+   "author_url": "https://forge.sp-tarkov.com/user/27197/itsrandy-ttv",
+   "created_at": "2023-02-21T14:41:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey got a question is there a way that i can make it that the ai pmc\u2019s have a small chance of wearing this gear.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 12397,
+   "parent_id": null,
+   "author": "leo65q",
+   "author_id": 27380,
+   "author_url": "https://forge.sp-tarkov.com/user/27380/leo65q",
+   "created_at": "2023-02-21T20:02:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>guys help please</p>\n<p><a href=\"https://hub.sp-tarkov.com/attachment/4361-pasted-from-clipboard-png/\" target=\"_blank\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://hub.sp-tarkov.com/attachment/4361-pasted-from-clipboard-png/?thumbnail=1\" alt=\"?thumbnail=1\" /></a></p>\n<p>Error: Attempted to resolve unregistered dependency token: \u201cImporterUtil\u201d</p>\n<p>Error: Attempted to resolve unregistered dependency token: \u201cImporterUtil\u201d</p>\n<p>at InternalDependencyContainer.resolve (C:\\snapshot\\project\\node_modules\\tsyringe\\dist\\cjs\\dependency-container.js:105:19)</p>\n<p>at SuperItems.postDBLoad (D:\\Games\\Escape from Tarkov\\user\\mods\\JoshJ5Hawk-SuperItems\\src\\superitems.js:47:40)</p>\n<p>at PostDBModLoader.executeMods (C:\\snapshot\\project\\obj\\loaders\\PostDBModLoader.js)</p>\n<p>at PostDBModLoader.onLoad (C:\\snapshot\\project\\obj\\loaders\\PostDBModLoader.js)</p>\n<p>at App.load (C:\\snapshot\\project\\obj\\utils\\App.js)</p>\n<p>at processTicksAndRejections (node:internal/process/task_queues:96:5)</p>\n<p>at process.runNextTicks [as _tickCallback] (node:internal/process/task_queues:65:3)</p>\n<p>at Function.runMain (pkg/prelude/bootstrap.js:1984:13)</p>\n<p>at node:internal/main/run_main_module:17:47</p>\n<p>Error: Attempted to resolve unregistered dependency token: \u201cImporterUtil\u201d</p>\n<p>Error: Attempted to resolve unregistered dependency token: \u201cImporterUtil\u201d</p>\n<p>at InternalDependencyContainer.resolve (C:\\snapshot\\project\\node_modules\\tsyringe\\dist\\cjs\\dependency-container.js:105:19)</p>\n<p>at SuperItems.postDBLoad (D:\\Games\\Escape from Tarkov\\user\\mods\\JoshJ5Hawk-SuperItems\\src\\superitems.js:47:40)</p>\n<p>at PostDBModLoader.executeMods (C:\\snapshot\\project\\obj\\loaders\\PostDBModLoader.js)</p>\n<p>at PostDBModLoader.onLoad (C:\\snapshot\\project\\obj\\loaders\\PostDBModLoader.js)</p>\n<p>at App.load (C:\\snapshot\\project\\obj\\utils\\App.js)</p>\n<p>at processTicksAndRejections (node:internal/process/task_queues:96:5)</p>\n<p>at process.runNextTicks [as _tickCallback] (node:internal/process/task_queues:65:3)</p>\n<p>at Function.runMain (pkg/prelude/bootstrap.js:1984:13)</p>\n<p>at node:internal/main/run_main_module:17:47</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 74829,
+   "parent_id": 11770,
+   "author": "Medic427",
+   "author_id": 20962,
+   "author_url": "https://forge.sp-tarkov.com/user/20962/medic427",
+   "created_at": "2023-02-21T21:13:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Because it got updated, Randy. Thanks though.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 12872,
+   "parent_id": null,
+   "author": "MrHighLife",
+   "author_id": 27612,
+   "author_url": "https://forge.sp-tarkov.com/user/27612/mrhighlife",
+   "created_at": "2023-03-04T12:05:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>what about a super beard that does the same as the Bandanna?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 77369,
+   "parent_id": 12377,
+   "author": "Junko Space Mommy",
+   "author_id": 11920,
+   "author_url": "https://forge.sp-tarkov.com/user/11920/junko-space-mommy",
+   "created_at": "2023-03-24T06:28:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Use Finn\u2019s AI Tweaks. Tho if they wear the plate carrier your kinda fucked. lmao</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 13906,
+   "parent_id": null,
+   "author": "Junko Space Mommy",
+   "author_id": 11920,
+   "author_url": "https://forge.sp-tarkov.com/user/11920/junko-space-mommy",
+   "created_at": "2023-03-24T06:28:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Question, if I used Finn\u2019s AI Tweaks, would the AI spawn with these items? like the plate carrier?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 14600,
+   "parent_id": null,
+   "author": "Mandalorian",
+   "author_id": 14926,
+   "author_url": "https://forge.sp-tarkov.com/user/14926/mandalorian",
+   "created_at": "2023-04-11T13:12:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi i have a question is there any chance you can make some other rigs like the one you have done like npp kiass bagariy / osprey mk4a (P) or osprey mk4a (A) thank you</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 15373,
+   "parent_id": null,
+   "author": "intelanalyst78",
+   "author_id": 30753,
+   "author_url": "https://forge.sp-tarkov.com/user/30753/intelanalyst78",
+   "created_at": "2023-05-02T20:15:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I have my other containers somehow lost in the SUPER PILGRIM. I\u2019m not able to scroll either. Is there a way to get this stuff back.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 79608,
+   "parent_id": 15373,
+   "author": "intelanalyst78",
+   "author_id": 30753,
+   "author_url": "https://forge.sp-tarkov.com/user/30753/intelanalyst78",
+   "created_at": "2023-05-02T20:16:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Disregard\u2026equipping worked.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 79890,
+   "parent_id": 12377,
+   "author": "ItsRandy_TTV",
+   "author_id": 27197,
+   "author_url": "https://forge.sp-tarkov.com/user/27197/itsrandy-ttv",
+   "created_at": "2023-05-11T15:54:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>does this still work as the fin ai tweak is outdated?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 15598,
+   "parent_id": null,
+   "author": "ItsRandy_TTV",
+   "author_id": 27197,
+   "author_url": "https://forge.sp-tarkov.com/user/27197/itsrandy-ttv",
+   "created_at": "2023-05-11T19:05:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey Josh does it work in 3.5.5 if not could u perhabs update if u have time this was the mod i used to use alot and can\u2019t wait to use it again but i\u2019m scarred it might corrupt my save if it doesnt work in 3.5.5</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 79938,
+   "parent_id": 12377,
+   "author": "Junko Space Mommy",
+   "author_id": 11920,
+   "author_url": "https://forge.sp-tarkov.com/user/11920/junko-space-mommy",
+   "created_at": "2023-05-12T18:46:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>it does.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 79940,
+   "parent_id": 12377,
+   "author": "ItsRandy_TTV",
+   "author_id": 27197,
+   "author_url": "https://forge.sp-tarkov.com/user/27197/itsrandy-ttv",
+   "created_at": "2023-05-12T19:07:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>how exactly? i just get error codes</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 15631,
+   "parent_id": null,
+   "author": "ItsRandy_TTV",
+   "author_id": 27197,
+   "author_url": "https://forge.sp-tarkov.com/user/27197/itsrandy-ttv",
+   "created_at": "2023-05-12T19:36:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Attempted to parse file: user/mods/JoshJ5Hawk-SuperItems/db/templates/items/items.json. Error: Unsupported issue: Expected \u201c[\u201d, \u201cfalse\u201d, \u201cnull\u201d, \u201ctrue\u201d, \u201c{\u201d, number, or string but \u201c]\u201d found. (please open an issue at the repo)</p>\n<p>Error: Attempted to parse file: user/mods/JoshJ5Hawk-SuperItems/db/templates/items/items.json. Error: Unsupported issue: Expected \u201c[\u201d, \u201cfalse\u201d, \u201cnull\u201d, \u201ctrue\u201d, \u201c{\u201d, number, or string but \u201c]\u201d found. (please open an issue at the repo)</p>\n<p>Error: Attempted to parse file: user/mods/JoshJ5Hawk-SuperItems/db/templates/items/items.json. Error: Unsupported issue: Expected \u201c[\u201d, \u201cfalse\u201d, \u201cnull\u201d, \u201ctrue\u201d, \u201c{\u201d, number, or string but \u201c]\u201d found. (please open an issue at the repo)</p>\n<p>at JsonUtil.deserializeWithCacheCheck (C:\\snapshot\\project\\obj\\utils\\JsonUtil.js)</p>\n<p>at ImporterUtil.loadRecursive (C:\\snapshot\\project\\obj\\utils\\ImporterUtil.js)</p>\n<p>at ImporterUtil.loadRecursive (C:\\snapshot\\project\\obj\\utils\\ImporterUtil.js)</p>\n<p>at ImporterUtil.loadRecursive (C:\\snapshot\\project\\obj\\utils\\ImporterUtil.js)</p>\n<p>at SuperItems.postDBLoad (C:\\Program Files (x86)\\Games\\SP EFT\\user\\mods\\JoshJ5Hawk-SuperItems\\src\\superitems.js:52:29)</p>\n<p>at PostDBModLoader.executeMods (C:\\snapshot\\project\\obj\\loaders\\PostDBModLoader.js)</p>\n<p>at PostDBModLoader.onLoad (C:\\snapshot\\project\\obj\\loaders\\PostDBModLoader.js)</p>\n<p>at App.load (C:\\snapshot\\project\\obj\\utils\\App.js)</p>\n<p>Error: Attempted to parse file: user/mods/JoshJ5Hawk-SuperItems/db/templates/items/items.json. Error: Unsupported issue: Expected \u201c[\u201d, \u201cfalse\u201d, \u201cnull\u201d, \u201ctrue\u201d, \u201c{\u201d, number, or string but \u201c]\u201d found. (please open an issue at the repo)</p>\n<p>Error: Attempted to parse file: user/mods/JoshJ5Hawk-SuperItems/db/templates/items/items.json. Error: Unsupported issue: Expected \u201c[\u201d, \u201cfalse\u201d, \u201cnull\u201d, \u201ctrue\u201d, \u201c{\u201d, number, or string but \u201c]\u201d found. (please open an issue at the repo)</p>\n<p>at JsonUtil.deserializeWithCacheCheck (C:\\snapshot\\project\\obj\\utils\\JsonUtil.js)</p>\n<p>at ImporterUtil.loadRecursive (C:\\snapshot\\project\\obj\\utils\\ImporterUtil.js)</p>\n<p>at ImporterUtil.loadRecursive (C:\\snapshot\\project\\obj\\utils\\ImporterUtil.js)</p>\n<p>at ImporterUtil.loadRecursive (C:\\snapshot\\project\\obj\\utils\\ImporterUtil.js)</p>\n<p>at SuperItems.postDBLoad (C:\\Program Files (x86)\\Games\\SP EFT\\user\\mods\\JoshJ5Hawk-SuperItems\\src\\superitems.js:52:29)</p>\n<p>at PostDBModLoader.executeMods (C:\\snapshot\\project\\obj\\loaders\\PostDBModLoader.js)</p>\n<p>at PostDBModLoader.onLoad (C:\\snapshot\\project\\obj\\loaders\\PostDBModLoader.js)</p>\n<p>at App.load (C:\\snapshot\\project\\obj\\utils\\App.js)</p>\n<p>getting this error anyway to fix?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 79944,
+   "parent_id": 15631,
+   "author": "ItsRandy_TTV",
+   "author_id": 27197,
+   "author_url": "https://forge.sp-tarkov.com/user/27197/itsrandy-ttv",
+   "created_at": "2023-05-12T19:53:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>nevermind some changes i made in config f*cked it up</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 16135,
+   "parent_id": null,
+   "author": "thhiep17",
+   "author_id": 31639,
+   "author_url": "https://forge.sp-tarkov.com/user/31639/thhiep17",
+   "created_at": "2023-05-28T15:20:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi Josh, could you please make a version for 3.5.2 if you have time. Thank a lot</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 18425,
+   "parent_id": null,
+   "author": "PD2Cloaker",
+   "author_id": 25829,
+   "author_url": "https://forge.sp-tarkov.com/user/25829/pd2cloaker",
+   "created_at": "2023-07-31T15:32:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>still updating?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 19544,
+   "parent_id": null,
+   "author": "onangelswings",
+   "author_id": 10237,
+   "author_url": "https://forge.sp-tarkov.com/user/10237/onangelswings",
+   "created_at": "2023-08-20T22:50:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Eventually when you do update this, any chance of super mags, as other magazine mods are not compatible with your super ammo mod, so just wondered if you would add in super mags</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 19737,
+   "parent_id": null,
+   "author": "Boerseun",
+   "author_id": 21625,
+   "author_url": "https://forge.sp-tarkov.com/user/21625/boerseun",
+   "created_at": "2023-08-24T16:09:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Update?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 21259,
+   "parent_id": null,
+   "author": "NastyInc",
+   "author_id": 35862,
+   "author_url": "https://forge.sp-tarkov.com/user/35862/nastyinc",
+   "created_at": "2023-10-02T07:59:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>How can i edit a .bundle file?</p>\n<p>6x100 Kappa is nice, but not useful if i cant scroll to the top. Thanks for any advice.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 88310,
+   "parent_id": 21259,
+   "author": "JoshJ5Hawk",
+   "author_id": 3149,
+   "author_url": "https://forge.sp-tarkov.com/user/3149/joshj5hawk",
+   "created_at": "2023-10-02T09:03:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You can scroll to the top you just have to have it equipped.</p>\n<p>As for editing bundles, that\u2019s a huge pain that I barely understand so I\u2019m not the best one to teach it lol</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 21624,
+   "parent_id": null,
+   "author": "darkbubbletea",
+   "author_id": 37331,
+   "author_url": "https://forge.sp-tarkov.com/user/37331/darkbubbletea",
+   "created_at": "2023-10-10T13:55:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is this worked on 3.7.0 ?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 21945,
+   "parent_id": null,
+   "author": "Sounger",
+   "author_id": 8922,
+   "author_url": "https://forge.sp-tarkov.com/user/8922/sounger",
+   "created_at": "2023-10-13T17:33:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello, how can I turn off \u201cbluriness\u201d?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 22028,
+   "parent_id": null,
+   "author": "cptn_usopp",
+   "author_id": 27399,
+   "author_url": "https://forge.sp-tarkov.com/user/27399/cptn-usopp",
+   "created_at": "2023-10-14T19:45:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i have a problem with the super skill stim, because it increases mag drill skill to above the max it borks the whole mag load/unload system and cant refill mags midgame, was just wondering if you\u2019re able to somehow make it so we can change these stats in the f12 menu cause i went into the .json file and i had no idea what i was looking at and thank you for any help you can give</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 23079,
+   "parent_id": null,
+   "author": "SniperElekHUN",
+   "author_id": 34771,
+   "author_url": "https://forge.sp-tarkov.com/user/34771/sniperelekhun",
+   "created_at": "2023-10-26T20:35:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Its a great mod, but i have issue due the 1x1 cases. (super med case)<br />\nI prefer 2x1 or 2x2.<br />\nIts just me, propobly<br />\nCan i mod your mod my self?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 25918,
+   "parent_id": null,
+   "author": "Vukz",
+   "author_id": 43131,
+   "author_url": "https://forge.sp-tarkov.com/user/43131/vukz",
+   "created_at": "2024-01-03T15:13:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I feel like im the only one having trouble with this mod do i have to code the mod or do i drag and drop this is making me stressed out on the verge of punching my screen\u2026\u2026</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 95259,
+   "parent_id": 15631,
+   "author": "Vukz",
+   "author_id": 43131,
+   "author_url": "https://forge.sp-tarkov.com/user/43131/vukz",
+   "created_at": "2024-01-03T15:14:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>bro do you have vscodium installed and node.js? or did you drag and drop files im very confused</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 26628,
+   "parent_id": null,
+   "author": "PD2Cloaker",
+   "author_id": 25829,
+   "author_url": "https://forge.sp-tarkov.com/user/25829/pd2cloaker",
+   "created_at": "2024-01-22T18:22:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i have one question, why not make the super a18 have 2 horizontal and 4 vertical?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 97102,
+   "parent_id": 25918,
+   "author": "marksman",
+   "author_id": 44752,
+   "author_url": "https://forge.sp-tarkov.com/user/44752/marksman",
+   "created_at": "2024-02-14T21:06:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>uhh</p>\n<p>explain</p>\n<p>like you can drag and drop it into your mods folder found in ur mods folder and ex. would be</p>\n<p>\u201cgames\\users\\mods\u201d hope this helps</p>\n<p>your spt game folder name might be different.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 28834,
+   "parent_id": null,
+   "author": "rocky",
+   "author_id": 33087,
+   "author_url": "https://forge.sp-tarkov.com/user/33087/rocky",
+   "created_at": "2024-04-07T12:25:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Can you please update this to the current version\u2026 thank you</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 29134,
+   "parent_id": null,
+   "author": "cadsarm",
+   "author_id": 44864,
+   "author_url": "https://forge.sp-tarkov.com/user/44864/cadsarm",
+   "created_at": "2024-04-09T21:13:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>update</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 29241,
+   "parent_id": null,
+   "author": "WoodyPiker",
+   "author_id": 47886,
+   "author_url": "https://forge.sp-tarkov.com/user/47886/woodypiker",
+   "created_at": "2024-04-11T00:24:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>\u041d\u0443 \u043a\u043e\u0433\u0434\u0430 \u0436\u0435 \u0432\u044b \u043e\u0431\u043d\u043e\u0432\u0438\u0442\u0435 \u044d\u0442\u0443 \u0432\u0435\u0440\u0441\u0438\u044e \u043c\u043e\u0434\u0430 \u0434\u043e 3.8.0 \ud83d\ude14\ud83d\ude14\ud83d\ude14</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 39500,
+   "parent_id": null,
+   "author": "schlinks",
+   "author_id": 29309,
+   "author_url": "https://forge.sp-tarkov.com/user/29309/schlinks",
+   "created_at": "2024-08-23T02:59:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Would love it if you came back bro! Love the mods!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 41034,
+   "parent_id": null,
+   "author": "Theonewhoknocks",
+   "author_id": 42893,
+   "author_url": "https://forge.sp-tarkov.com/user/42893/theonewhoknocks",
+   "created_at": "2024-09-15T12:22:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Omg i need this for 3.9! Sure hope he updates one day</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

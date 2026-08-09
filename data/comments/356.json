@@ -1,0 +1,460 @@
+{
+ "mod_id": 356,
+ "slug": "weapon-properties-modification",
+ "fetched_at": "2026-08-09T07:31:34Z",
+ "reported_total": 19,
+ "pages": 2,
+ "count": 45,
+ "comments": [
+  {
+   "id": 4032,
+   "parent_id": null,
+   "author": "Sanote",
+   "author_id": 6317,
+   "author_url": "https://forge.sp-tarkov.com/user/6317/sanote",
+   "created_at": "2022-02-06T03:31:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Man, I wanted this for so much time ago. Ty</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 4143,
+   "parent_id": null,
+   "author": "TweakBox",
+   "author_id": 10971,
+   "author_url": "https://forge.sp-tarkov.com/user/10971/tweakbox",
+   "created_at": "2022-02-08T20:13:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is there a way to change zoom counts from 2 to 3 (e.g. 1x-4x-8x)? I managed to add zoom levels by editing Zooms, AimSensitiviy, ModesCount, and SightModesCount but in-game, it doesn\u2019t zoom anymore.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 62700,
+   "parent_id": 4143,
+   "author": "Chief",
+   "author_id": 13996,
+   "author_url": "https://forge.sp-tarkov.com/user/13996/chief",
+   "created_at": "2022-02-09T02:14:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Those are properties of optics, not of weapons. Did you apply these fields to an optic or a weapon, as no optics are included in the config file.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 62704,
+   "parent_id": 4143,
+   "author": "Chief",
+   "author_id": 13996,
+   "author_url": "https://forge.sp-tarkov.com/user/13996/chief",
+   "created_at": "2022-02-09T02:50:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>And after digging through some files, each optic has a ScopePrefabCache script attached to it which details every mode of the optic as an OpticSight script which references the files and scripts necessary to make that mode work which I don\u2019t know where to find. So it seems that adding additional modes to an optic is impossible in a mod of this scope/type.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 62757,
+   "parent_id": 4143,
+   "author": "TweakBox",
+   "author_id": 10971,
+   "author_url": "https://forge.sp-tarkov.com/user/10971/tweakbox",
+   "created_at": "2022-02-09T16:54:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Damn, I was thinking of adding intermediary zoom level for the high-powered scopes. Thanks for your time anyways</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 4610,
+   "parent_id": null,
+   "author": "cjk1000000",
+   "author_id": 7742,
+   "author_url": "https://forge.sp-tarkov.com/user/7742/cjk1000000",
+   "created_at": "2022-03-02T11:13:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m a little confused. How can I make a semi-only gun Full Auto? Or is this even possible?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 63484,
+   "parent_id": 4610,
+   "author": "Chief",
+   "author_id": 13996,
+   "author_url": "https://forge.sp-tarkov.com/user/13996/chief",
+   "created_at": "2022-03-03T22:03:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>If you wanted to make a semi-auto gun full auto, you would have to modify the weapFireType property, if you want to do this using my mod follow the steps below:<br />\n1. Go into the config for the weapon you want to add full auto to and add the fields fireModes and useFireModes like so:</p>\n<p>\u201cfireModes\u201d: [\u201csingle\u201d, \u201cfullauto\u201d],</p>\n<p>\u201cuseFireModes\u201d: 1</p>\n<p>2. Create a function in the WeaponPropMod.js file like so:</p>\n<p>function changeFireMode (configWeapon) { if (configWeapon.useFireModes === 1) { itemDB[configWeapon.id]._props.weapFireType = configWeapon.fireModes; } } 3. Add the function you just created to the main loop with all the other functions:</p>\n<p>for (let caliber in config) { for (let weapon in config[caliber]) { try { changeErgo(config[caliber][weapon]); changeCamRecoil(config[caliber][weapon]); changeRecoil(config[caliber][weapon]); changeFireMode(config[caliber][weapon]); } catch(err) { continue; // Ignore any and all errors and move on } } }This should allow you to select between semi and full auto for any weapon in the game that you apply the fireModes and useFireModes fields to. It is also possible to add burst fire to this by adding \u201cburst\u201d into the fireModes list. The order the firemodes appear in the list affect the default firing mode for the weapon. It is also possible to modify the number of rounds in a burst by changing the BurstShotsCount property of a weapon but if you really want to do that theres enough information here for you to do that.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 4688,
+   "parent_id": null,
+   "author": "Raasky",
+   "author_id": 8382,
+   "author_url": "https://forge.sp-tarkov.com/user/8382/raasky",
+   "created_at": "2022-03-05T14:12:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>What about modding weapon accuracy? Wanted to increase base accuracy for dmr rifles, cause 2 MOA for scar-h is weird</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 63620,
+   "parent_id": 4688,
+   "author": "Chief",
+   "author_id": 13996,
+   "author_url": "https://forge.sp-tarkov.com/user/13996/chief",
+   "created_at": "2022-03-07T17:43:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I am assuming the property that affects accuracy is the CenterOfImpact property of both the weapon and the barrel it is using (if it has different length barrels). Though I feel 2 MOA for a battle rifle is pretty decent. If you wanted to change the MOA I think you would have to find the id of the barrel and mess around with both values to get it to the MOA you would want.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 4815,
+   "parent_id": null,
+   "author": "MikeCoxlong",
+   "author_id": 9351,
+   "author_url": "https://forge.sp-tarkov.com/user/9351/mikecoxlong",
+   "created_at": "2022-03-12T07:10:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>is it possible to make it something like one option for all weapons, e.g using 1 ergo value or all weapons, could you also add a velocity multiplier for the weapons, thank you</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 4817,
+   "parent_id": null,
+   "author": "TealDidNothingWrong",
+   "author_id": 13657,
+   "author_url": "https://forge.sp-tarkov.com/user/13657/tealdidnothingwrong",
+   "created_at": "2022-03-12T11:08:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>is there a way to adjust fire rate of weapons with this mod ?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 63881,
+   "parent_id": 4817,
+   "author": "Chief",
+   "author_id": 13996,
+   "author_url": "https://forge.sp-tarkov.com/user/13996/chief",
+   "created_at": "2022-03-13T05:25:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Rate of fire is controlled by the bFirerate property. So yes it is possible to adjust rate of fire.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 63882,
+   "parent_id": 4815,
+   "author": "Chief",
+   "author_id": 13996,
+   "author_url": "https://forge.sp-tarkov.com/user/13996/chief",
+   "created_at": "2022-03-13T05:26:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It is possible, but what I normally do is open VSCode which allows for multiple line selection, select the property I wish to change which in turn selects it for every single weapon, then adjust the value.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 63883,
+   "parent_id": 4815,
+   "author": "Chief",
+   "author_id": 13996,
+   "author_url": "https://forge.sp-tarkov.com/user/13996/chief",
+   "created_at": "2022-03-13T05:34:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Velocity is a property of the ammunition you are using and the barrel length of the weapon, which I guess I could make a mod that does something similar to this mod but for ammo.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 63885,
+   "parent_id": 4817,
+   "author": "Wolfosito",
+   "author_id": 2219,
+   "author_url": "https://forge.sp-tarkov.com/user/2219/wolfosito",
+   "created_at": "2022-03-13T09:16:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019ve been trying to use the bFirerate property but i can\u2019t get it to work</p>\n<p>\u201cAKS74U\u201d: { \u201cid\u201d: \u201c57dc2fa62459775949412633\u201d, \u201cergo\u201d: 100, \u201cuseErgo\u201d: 0, \u201ccamSnap\u201d: 0.3, \u201ccamRecoil\u201d: 0, \u201cuseCam\u201d: 0, \u201crecVertical\u201d: 0.7, \u201crecHorizontal\u201d: 1.2, \u201cuseRec\u201d: 1, \u201cbFirerate\u201d: 1.13 },It\u2019s currently 1.13, as it should be 113% of the vanilla firerate. I also tried just typing the rpm.<br />\nBut in game it\u2019s still 650</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 63933,
+   "parent_id": 4817,
+   "author": "Chief",
+   "author_id": 13996,
+   "author_url": "https://forge.sp-tarkov.com/user/13996/chief",
+   "created_at": "2022-03-14T19:59:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Did you add anything to the WeaponPropMod.js file to actually use that value?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 63934,
+   "parent_id": 4817,
+   "author": "Chief",
+   "author_id": 13996,
+   "author_url": "https://forge.sp-tarkov.com/user/13996/chief",
+   "created_at": "2022-03-14T20:00:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>And it would only be a multiplier if you set it to be so in the WeaponPropMod.js file.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 64677,
+   "parent_id": 4610,
+   "author": "KDA_Mysitc",
+   "author_id": 14865,
+   "author_url": "https://forge.sp-tarkov.com/user/14865/kda-mysitc",
+   "created_at": "2022-04-13T19:50:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>can you do an update with all guns already done?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 6391,
+   "parent_id": null,
+   "author": "cjk1000000",
+   "author_id": 7742,
+   "author_url": "https://forge.sp-tarkov.com/user/7742/cjk1000000",
+   "created_at": "2022-07-06T16:22:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Please update this for 3.0! This was one of my crucial mods!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 6823,
+   "parent_id": null,
+   "author": "dnl-1992",
+   "author_id": 20971,
+   "author_url": "https://forge.sp-tarkov.com/user/20971/dnl-1992",
+   "created_at": "2022-07-25T18:34:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello, I need this mod for 3.0.0. I have an error in the modifications of the mechanic\u2019s mission and I would like to be able to lower the recoil of the shotgun. Thanks</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 7793,
+   "parent_id": null,
+   "author": "TripLovely",
+   "author_id": 16985,
+   "author_url": "https://forge.sp-tarkov.com/user/16985/triplovely",
+   "created_at": "2022-08-20T23:00:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Quick question.. what makes this different from me simply going into the files myself and changing it that way? I made the VPO136 into a 9x18 weapon shooting at 1500rpm the other day. Could I do that just as easily with this?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 7809,
+   "parent_id": null,
+   "author": "JJBeanson",
+   "author_id": 7412,
+   "author_url": "https://forge.sp-tarkov.com/user/7412/jjbeanson",
+   "created_at": "2022-08-21T15:23:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>CONFLICT: Fershte\u2019s Balance Patch. SPECIFIC ISSUE: mp7a1 recoilsum</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 67917,
+   "parent_id": 7809,
+   "author": "Chief",
+   "author_id": 13996,
+   "author_url": "https://forge.sp-tarkov.com/user/13996/chief",
+   "created_at": "2022-08-22T15:01:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Fershte\u2019s Balance Patch modifies the properties of weapon attachments (handguards, muzzle breaks, optics, etc), while my mod modifies the properties of the weapons themselves. This means using both will make weapons have marginally decreased recoil and increased ergonomics. I am assuming the issue with the mp7 is that it is a laser beam and practically stands still during sustained fire. This is less of a conflict and more of an overtuning of the weapons. You do not need both mods as they do similar things.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 67918,
+   "parent_id": 7793,
+   "author": "Chief",
+   "author_id": 13996,
+   "author_url": "https://forge.sp-tarkov.com/user/13996/chief",
+   "created_at": "2022-08-22T15:09:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This mod does not support caliber switching, as it requires editing magazine filters to allow the new calibers magazines to fit among other possibilities as I have not tried it myself to see what I would need to do. Are you sure what you did actually worked without additional mods? What my mod does currently is allows you to change the inherit properties of weapons (recoil, camera recoil, ergonomics, fire rate, etc) and not aspects fundamental to the weapon, such as what attachments can be put on it and magazines it can use.</p>\n<p>So in short, my mod cannot do what you did yourself, though it would be interesting to see if it is possible to do what you talked about.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 67939,
+   "parent_id": 7793,
+   "author": "TripLovely",
+   "author_id": 16985,
+   "author_url": "https://forge.sp-tarkov.com/user/16985/triplovely",
+   "created_at": "2022-08-23T04:48:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yeah all I did was go to the mags that fit the weapon i chose and add the new ammo IDs to \u201ccartridges\u201d. Then i went to the actual weapon and put all the new ammo IDs under \u201cpatron_in_weapon\u201d right under the gun\u2019s attributes (like fire rate n stuff). The \u201cpatron_in_weapon\u201d is just what ammos are allowed in the chamber (i believe). Anyway, i have a full auto 1500rpm 9x18 Vepr136, so it definitely worked (without using mods).</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 67959,
+   "parent_id": 7793,
+   "author": "Chief",
+   "author_id": 13996,
+   "author_url": "https://forge.sp-tarkov.com/user/13996/chief",
+   "created_at": "2022-08-24T02:39:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>So you manually edited the files in the Aki_Data folder? What I was thinking was you change a weapons usable magazines to ones of a different caliber, so your vepr136 will take kedr mags or makarov mags instead of ak mags if you wanted to use 9x18 for example. Thats what I tried at least and it works perfectly, it just makes weapons look a little wonky with the odd magazines.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 67964,
+   "parent_id": 7793,
+   "author": "TripLovely",
+   "author_id": 16985,
+   "author_url": "https://forge.sp-tarkov.com/user/16985/triplovely",
+   "created_at": "2022-08-24T06:17:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I didnt want the weapons to look weird so i did it the way I explained lol.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 11873,
+   "parent_id": null,
+   "author": "Cheems",
+   "author_id": 5566,
+   "author_url": "https://forge.sp-tarkov.com/user/5566/cheems",
+   "created_at": "2023-02-15T03:37:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>plz bring this gem of a mod back!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 74535,
+   "parent_id": 11873,
+   "author": "Chief",
+   "author_id": 13996,
+   "author_url": "https://forge.sp-tarkov.com/user/13996/chief",
+   "created_at": "2023-02-18T21:39:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>sure</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 12226,
+   "parent_id": null,
+   "author": "Djmeowzle",
+   "author_id": 2741,
+   "author_url": "https://forge.sp-tarkov.com/user/2741/djmeowzle",
+   "created_at": "2023-02-18T23:18:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>is it possible to remove all options besides fire modes and just be able to set some guns to full and semi? or do i need all the changes?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 74574,
+   "parent_id": 12226,
+   "author": "Chief",
+   "author_id": 13996,
+   "author_url": "https://forge.sp-tarkov.com/user/13996/chief",
+   "created_at": "2023-02-19T06:44:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yes, and there are two ways to do it. The first way is to use a text editor with multi-line selection (such as VSCode) and open up the config file. You would then change all the useErgo/Cam/Rec/FireRate options to false for every weapon, and the useFireMode option to true for the weapons you want to change. Then you would add single, fullauto, burst inside of the fireMode brackets: \u201cfireMode\u201d: [\u201csingle\u201d, \u201cfullauto\u201d] of those weapons. The order of the modes matter.</p>\n<p>The other way does not require a fancy text editor or any knowledge on how to use one. You can open up mod.ts using open with and selecting notepad or notepad++ and delete or comment out (using // to comment out lines) everything in the try statement except</p>\n<p>if (configWeapon.useFireMode) { itemDB[configWeapon.id]._props.weapFireType = configWeapon.fireMode; countFireMode++; } Then you would go to the config and find the weapons you want the fire mode to be different, and then set useFireMode to true and do the same thing as in option 1 for the fireMode brackets.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 12244,
+   "parent_id": null,
+   "author": "WrenchTheRoo",
+   "author_id": 27251,
+   "author_url": "https://forge.sp-tarkov.com/user/27251/wrenchtheroo",
+   "created_at": "2023-02-19T08:10:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i tried to modify the STM-9 to be able to fire full auto but when i load aki server there is an error wich i dont understand what it means. did change the usfiremode : true and firemode : semi, fullauto</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 74641,
+   "parent_id": 12244,
+   "author": "Chief",
+   "author_id": 13996,
+   "author_url": "https://forge.sp-tarkov.com/user/13996/chief",
+   "created_at": "2023-02-19T20:18:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thats my bad. There are 3 valid universal (except for revolvers/bolt actions/shotguns) fire modes, \u201csingle\u201d, \u201cfullauto\u201d, and \u201cburst\u201d. For them to work they must be in quotes inside of the fireMode brackets. For example: \u201cfireMode\u201d: [\u201csingle\u201d, \u201cfullauto\u201d].</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 74647,
+   "parent_id": 12244,
+   "author": "WrenchTheRoo",
+   "author_id": 27251,
+   "author_url": "https://forge.sp-tarkov.com/user/27251/wrenchtheroo",
+   "created_at": "2023-02-19T21:14:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>ooooh i see, thank you!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 12328,
+   "parent_id": null,
+   "author": "Godzi",
+   "author_id": 8857,
+   "author_url": "https://forge.sp-tarkov.com/user/8857/godzi",
+   "created_at": "2023-02-20T17:24:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>having a global setting to alter the recoils, fire modes, and cam affects as 1 would be a nice addition. over all it\u2019s a nice mod as is and thankyou for bringing it out.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 74738,
+   "parent_id": 12328,
+   "author": "Chief",
+   "author_id": 13996,
+   "author_url": "https://forge.sp-tarkov.com/user/13996/chief",
+   "created_at": "2023-02-20T22:01:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The recoil and cam affects would work, but having a global fire mode changer would most likely break pump shotguns/bolt actions/revolvers. I will do this for those features.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 74745,
+   "parent_id": 12328,
+   "author": "Godzi",
+   "author_id": 8857,
+   "author_url": "https://forge.sp-tarkov.com/user/8857/godzi",
+   "created_at": "2023-02-20T22:51:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>honestly didn\u2019t expect this to become anything. ty for the rapid update and using the idea.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 15565,
+   "parent_id": null,
+   "author": "ReaperNZ1",
+   "author_id": 23358,
+   "author_url": "https://forge.sp-tarkov.com/user/23358/reapernz1",
+   "created_at": "2023-05-10T17:42:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Could you update already please? Or someone reupload this.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 15875,
+   "parent_id": null,
+   "author": "ZaBanOff",
+   "author_id": 6471,
+   "author_url": "https://forge.sp-tarkov.com/user/6471/zabanoff",
+   "created_at": "2023-05-21T01:43:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>PPSh goes BRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 15961,
+   "parent_id": null,
+   "author": "MusicManiac",
+   "author_id": 31382,
+   "author_url": "https://forge.sp-tarkov.com/user/31382/musicmaniac",
+   "created_at": "2023-05-23T20:48:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Great stuff!</p>\n<p>For people who want a bit of ergo boost but not to flat value, you can make ergo boost %-based, in src/mod.js in 1st if bracket replace = with *= and then you can use % base increase on all guns, So if you set it to 1.2 it will give 20% ergo boost to all guns.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 81418,
+   "parent_id": 15961,
+   "author": "MusicManiac",
+   "author_id": 31382,
+   "author_url": "https://forge.sp-tarkov.com/user/31382/musicmaniac",
+   "created_at": "2023-06-10T19:51:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>// Ergonomics if (this.config.GlobalProperties.useGlobalErgo) itemDB[configWeapon.id]._props.Ergonomics *= this.config.GlobalProperties.globalErgo;</p>\n<p>and in config instead of ergo being 100 make it 1.2 for 20% increase (for example)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 16591,
+   "parent_id": null,
+   "author": "MusicManiac",
+   "author_id": 31382,
+   "author_url": "https://forge.sp-tarkov.com/user/31382/musicmaniac",
+   "created_at": "2023-06-10T19:52:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>On a side note, would it be possible for you to make similar mod that loops thought all silencers and adjusts their stats? Namely durability burn rate adjustment would be a godsend. Sorry if it\u2019s a bit rude to ask in comments, have a nice one!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 81439,
+   "parent_id": 16591,
+   "author": "Chief",
+   "author_id": 13996,
+   "author_url": "https://forge.sp-tarkov.com/user/13996/chief",
+   "created_at": "2023-06-11T06:00:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p><a href=\"https://hub.sp-tarkov.com/files/file/1240-silencer-properties-modification/\" target=\"_blank\" rel=\"noreferrer noopener\">Done</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 81452,
+   "parent_id": 16591,
+   "author": "MusicManiac",
+   "author_id": 31382,
+   "author_url": "https://forge.sp-tarkov.com/user/31382/musicmaniac",
+   "created_at": "2023-06-11T11:35:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You\u2019re a true MVP, homie, thanks</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 29837,
+   "parent_id": null,
+   "author": "RogueTech67",
+   "author_id": 9742,
+   "author_url": "https://forge.sp-tarkov.com/user/9742/roguetech67",
+   "created_at": "2024-04-16T17:23:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Be aware, if you choose to use the GlobalProperties, appears the default Horizontal Recoil reduction is at 45% and not 15% as is with all the individual weapons. Obviously you can change that.</p>\n<p>\u201cGlobalProperties\u201d: {</p>\n<p>\u201cenableGlobalProperties\u201d: false,</p>\n<p>\u201cuseGlobalErgo\u201d: true,</p>\n<p>\u201cglobalErgo\u201d: 100,</p>\n<p>\u201cuseGlobalVerticalRecoil\u201d: true,</p>\n<p>\u201cglobalVerticalRecoil\u201d: 0.45,</p>\n<p>\u201cuseGlobalHorizontalRecoil\u201d: true,</p>\n<p>\u201cglobalHorizontalRecoil\u201d: 0.45,</p>\n<p>\u201cuseGlobalCamera\u201d: true,</p>\n<p>\u201cglobalCameraSnap\u201d: 0.2,</p>\n<p>\u201cglobalCameraRecoil\u201d: 0.2</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

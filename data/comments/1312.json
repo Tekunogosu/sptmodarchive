@@ -1,0 +1,130 @@
+{
+ "mod_id": 1312,
+ "slug": "custom-trader-avatars",
+ "fetched_at": "2026-08-09T07:33:29Z",
+ "reported_total": null,
+ "pages": 1,
+ "count": 12,
+ "comments": [
+  {
+   "id": 29679,
+   "parent_id": null,
+   "author": "S_gamez",
+   "author_id": 22060,
+   "author_url": "https://forge.sp-tarkov.com/user/22060/s-gamez",
+   "created_at": "2024-04-15T04:01:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Have any example images ?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 100671,
+   "parent_id": 29679,
+   "author": "PreyToLive",
+   "author_id": 21318,
+   "author_url": "https://forge.sp-tarkov.com/user/21318/preytolive",
+   "created_at": "2024-04-15T06:15:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yes, the trader avatars that come with the mod can be found in the \u2018res/traders\u2019 directory of the mod.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 29717,
+   "parent_id": null,
+   "author": "rambo",
+   "author_id": 38302,
+   "author_url": "https://forge.sp-tarkov.com/user/38302/rambo",
+   "created_at": "2024-04-15T13:02:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>add some previews</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 100816,
+   "parent_id": 29717,
+   "author": "PreyToLive",
+   "author_id": 21318,
+   "author_url": "https://forge.sp-tarkov.com/user/21318/preytolive",
+   "created_at": "2024-04-16T02:59:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I added previews to the overview page.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 31449,
+   "parent_id": null,
+   "author": "sad",
+   "author_id": 36967,
+   "author_url": "https://forge.sp-tarkov.com/user/36967/sad",
+   "created_at": "2024-05-07T06:40:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i like what you did with pictures</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 34586,
+   "parent_id": null,
+   "author": "Jewels",
+   "author_id": 13594,
+   "author_url": "https://forge.sp-tarkov.com/user/13594/jewels",
+   "created_at": "2024-06-20T05:10:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I really like these! Mind sharing how you made them?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 34920,
+   "parent_id": null,
+   "author": "GearSmith",
+   "author_id": 54727,
+   "author_url": "https://forge.sp-tarkov.com/user/54727/gearsmith",
+   "created_at": "2024-06-24T16:12:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I had an issue with this mod loading on 3.8.3 and narrowed it down to the modPath in CTAMain. I changed ln:35 to not split and pop __dirname. I have the changes committed locally, and want to push them to your branch. I\u2019m not sure how you have contributors setup; will it require a review or not? see change below.</p>\n<p>constmodPath=path.basename(path.dirname(__dirname)); &lt;- this allows to grab the path one level up since we are in src folder.</p>\n<p>I am Gear-Smith on github.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 36327,
+   "parent_id": null,
+   "author": "Ladamire",
+   "author_id": 58023,
+   "author_url": "https://forge.sp-tarkov.com/user/58023/ladamire",
+   "created_at": "2024-07-15T15:40:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I had a question about getting this mod loaded. For the name of the folder that we are using do we need to make a new folder with the pictures we want to use from your samples or do we need to add the entire file path to the folder? I couldn\u2019t get the mod to load with the file names or the file path. Thank you</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 110036,
+   "parent_id": 36327,
+   "author": "PreyToLive",
+   "author_id": 21318,
+   "author_url": "https://forge.sp-tarkov.com/user/21318/preytolive",
+   "created_at": "2024-07-16T02:26:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <ol>\n<li>In the \u201cres/traders\u201d folder create a new folder.</li>\n<li>Put all your custom trader avatars in this new folder.</li>\n<li>Open the config file and where it says \u201ctraderFolderToUse\u201d type the name of the folder you just created. It must match the name of the folder exactly. Leave out the file extension (for example, .png or .jpg), this is not needed.</li>\n<li>Now, where it says \u201ctraderFolders\u201d, create a new object with the traders names (copy-paste an existing object such as \u201cdefaultAvatars: {}\u201d. Also name this new object to be the exact name of the folder you created.</li>\n<li>Now, for each trader name key in this new object, type the exact name of the avatar file into the value that you want to be associated with that trader. Leave out extensions, as they are not needed</li>\n<li>If you have modded traders then you need to add another key to the object and also add the file-name value. The key should be exactly what the mod author named the trader in their mod.</li>\n</ol>\n<p>That should be all you need to do. Let me know if you still need help with it. (Oh and don\u2019t copy-paste code from the example since the formatting is all screwed up.)</p>\n<p>{<br />\n\u201cmod\u201d: \u201cPreyToLive-CustomTraderAvatars-v1.0.1\u201d,<br />\n\u201cinfo\u201d: \u201cClean temp files in the SPT launcher settings after making any changes.\u201d,</p>\n<p>\u201cmodEnabled\u201d: true,<br />\n\u201cconsoleLogs\u201d: false,<br />\n\u201ctraderFolderToUse\u201d: \u201ctypeYourNewFolderNameHere\u201d,</p>\n<p>\u201ctraderFolders\u201d: {</p>\n<p>\u201ctypeYourNewFolderNameHere\u201d: {<br />\n\u201cbtr\u201d: \u201ctypeNameOfAvatarFileHere\u201d,<br />\n\u201cfence\u201d: \u201ctypeNameOfAvatarFileHere\u201d,<br />\n\u201cjaeger\u201d: \u201ctypeNameOfAvatarFileHere\u201d<br />\n\u201clightkeeper\u201d: \u201ctypeNameOfAvatarFileHere\u201d,<br />\n\u201cmechanic\u201d: \u201ctypeNameOfAvatarFileHere\u201d,<br />\n\u201cpeacekeeper\u201d: \u201ctypeNameOfAvatarFileHere\u201d,<br />\n\u201cprapor\u201d: \u201ctypeNameOfAvatarFileHere\u201d,<br />\n\u201cragman\u201d: \u201ctypeNameOfAvatarFileHere\u201d,<br />\n\u201cref\u201d: \u201ctypeNameOfAvatarFileHere\u201d,<br />\n\u201cskier\u201d: \u201ctypeNameOfAvatarFileHere\u201d,<br />\n\u201ctherapist\u201d: \u201ctypeNameOfAvatarFileHere\u201d,</p>\n<p>\u201ctypeNameOfModdedTraderHere\u201d: \u201ctypeNameOfAvatarFileHere\u201d</p>\n<p>}<br />\n\u201ccustomAvatars1\u201d: {<br />\n\u201cbtr\u201d: \u201cbtr\u201d,<br />\n\u201cfence\u201d: \u201cfence\u201d,<br />\n\u201cjaeger\u201d: \u201cjaeger\u201d,<br />\n\u201clightkeeper\u201d: \u201clightkeeper\u201d,<br />\n\u201cmechanic\u201d: \u201cmechanic\u201d,<br />\n\u201cpeacekeeper\u201d: \u201cpeacekeeper\u201d,<br />\n\u201cprapor\u201d: \u201cprapor\u201d,<br />\n\u201cragman\u201d: \u201cragman\u201d,<br />\n\u201cref\u201d: \u201cref\u201d,<br />\n\u201cskier\u201d: \u201cskier\u201d,<br />\n\u201ctherapist\u201d: \u201ctherapist\u201d<br />\n},<br />\n\u201ccustomAvatars2\u201d: {<br />\n\u201cbtr\u201d: \u201cbtr\u201d,<br />\n\u201cfence\u201d: \u201cfence\u201d,<br />\n\u201cjaeger\u201d: \u201cjaeger\u201d,<br />\n\u201clightkeeper\u201d: \u201clightkeeper\u201d,<br />\n\u201cmechanic\u201d: \u201cmechanic\u201d,<br />\n\u201cpeacekeeper\u201d: \u201cpeacekeeper\u201d,<br />\n\u201cprapor\u201d: \u201cprapor\u201d,<br />\n\u201cragman\u201d: \u201cragman\u201d,<br />\n\u201cref\u201d: \u201cref\u201d,<br />\n\u201cskier\u201d: \u201cskier\u201d,<br />\n\u201ctherapist\u201d: \u201ctherapist\u201d<br />\n},<br />\n\u201cdefaultAvatars\u201d: {<br />\n\u201cbtr\u201d: \u201cbtr\u201d,<br />\n\u201cfence\u201d: \u201cfence\u201d,<br />\n\u201cjaeger\u201d: \u201cjaeger\u201d,<br />\n\u201clightkeeper\u201d: \u201clightkeeper\u201d,<br />\n\u201cmechanic\u201d: \u201cmechanic\u201d,<br />\n\u201cpeacekeeper\u201d: \u201cpeacekeeper\u201d,<br />\n\u201cprapor\u201d: \u201cprapor\u201d,<br />\n\u201cragman\u201d: \u201cragman\u201d,<br />\n\u201cref\u201d: \u201cref\u201d,<br />\n\u201cskier\u201d: \u201cskier\u201d,<br />\n\u201ctherapist\u201d: \u201ctherapist\u201d<br />\n}<br />\n}<br />\n}</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 47302,
+   "parent_id": null,
+   "author": "lomac",
+   "author_id": 57801,
+   "author_url": "https://forge.sp-tarkov.com/user/57801/lomac",
+   "created_at": "2025-01-23T20:51:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>yung photo of prapor does it for me</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 48726,
+   "parent_id": null,
+   "author": "SEALs",
+   "author_id": 44857,
+   "author_url": "https://forge.sp-tarkov.com/user/44857/seals",
+   "created_at": "2025-02-20T02:09:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I deleted the mod but the avatars are still there</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 159517,
+   "parent_id": null,
+   "author": "consumer of mayonase",
+   "author_id": 108652,
+   "author_url": "https://forge.sp-tarkov.com/user/108652/consumer-of-mayonase",
+   "created_at": "2026-05-10T14:30:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>any chance of this mod being updated?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

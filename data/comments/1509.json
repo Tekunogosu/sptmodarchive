@@ -1,0 +1,120 @@
+{
+ "mod_id": 1509,
+ "slug": "siulsc-guns-realism-compatibility-patch",
+ "fetched_at": "2026-08-09T07:48:26Z",
+ "reported_total": null,
+ "pages": 1,
+ "count": 11,
+ "comments": [
+  {
+   "id": 35100,
+   "parent_id": null,
+   "author": "McDewgle",
+   "author_id": 31240,
+   "author_url": "https://forge.sp-tarkov.com/user/31240/mcdewgle",
+   "created_at": "2024-06-27T16:15:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You might want to add to the instructions that you must remove the \u201cSPT-Realism\u201d incompatibility from line 12 of the AR-54 package.json to clear the errors in server terminal.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 108314,
+   "parent_id": 35100,
+   "author": "Therkelsen",
+   "author_id": 49207,
+   "author_url": "https://forge.sp-tarkov.com/user/49207/therkelsen",
+   "created_at": "2024-06-27T16:34:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Good point, I\u2019ll add it when I get home</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 35105,
+   "parent_id": null,
+   "author": "MadTitan",
+   "author_id": 11377,
+   "author_url": "https://forge.sp-tarkov.com/user/11377/madtitan",
+   "created_at": "2024-06-27T17:11:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Worked perfectly after I read the other comment and deleted that line, guns got a great feel to it, would you be able to add a larger capacity mag like a 40 rounder. Thanks for the upload though</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 108330,
+   "parent_id": 35105,
+   "author": "Therkelsen",
+   "author_id": 49207,
+   "author_url": "https://forge.sp-tarkov.com/user/49207/therkelsen",
+   "created_at": "2024-06-27T18:56:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>That\u2019s great!</p>\n<p>I\u2019m not the author of the original mod, but if I recall correctly, you can just edit the capacity in the compat file</p>\n<p>I can show you how in a bit.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 108334,
+   "parent_id": 35105,
+   "author": "Therkelsen",
+   "author_id": 49207,
+   "author_url": "https://forge.sp-tarkov.com/user/49207/therkelsen",
+   "created_at": "2024-06-27T19:15:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>1. Open \u201c\\user\\mods\\AR-54\\database\\siul_items.json\u201d</p>\n<p>2. Edit the \u201c_max_count\u201d: 20, number to whatever capacity you want:</p>\n<p>\u201cCartridges\u201d: [ { \u201c_name\u201d: \u201ccartridges\u201d, \u201c_id\u201d: \u201cSIULAR54patron\u201d, \u201c_parent\u201d: \u201cMAG_AR-54_SIUL\u201d, \u201c_max_count\u201d: 20, \u201c_props\u201d: { \u201cfilters\u201d: [ { \u201cFilter\u201d: [ \u201c5e023d34e8a400319a28ed44\u201d, \u201c5e023d48186a883be655e551\u201d, \u201c5e023cf8186a883be655e54f\u201d, \u201c59e77a2386f7742ee578960a\u201d, \u201c5887431f2459777e1612938f\u201d, \u201c560d61e84bdc2da74d8b4571\u201d, \u201c64b8f7b5389d7ffd620ccba2\u201d, \u201c64b8f7968532cf95ee0a0dbf\u201d, \u201c64b8f7c241772715af0f9c3d\u201d ] } ] }, \u201c_proto\u201d: \u201c5448c1d04bdc2dff2f8b4569\u201d } ], 3. If you want the name and tooltip to change too, change it at the bottom of the file too:</p>\n<p>\u201clocales\u201d: { \u201cen\u201d: { \u201cName\u201d: \u201cAR-54 7.62x54mmR KAC 20-round steel magazine\u201d, \u201cShortName\u201d: \u201cKAC 54R\u201d, \u201cDescription\u201d: \u201cA 20-round double-stack steel magazine for 7.62x54mmR cartridges. Manufactured by Knight\u2019s Armament Company.\u201d } }</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 108335,
+   "parent_id": 35105,
+   "author": "MadTitan",
+   "author_id": 11377,
+   "author_url": "https://forge.sp-tarkov.com/user/11377/madtitan",
+   "created_at": "2024-06-27T19:20:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks dude</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 35143,
+   "parent_id": null,
+   "author": "MarshRebel",
+   "author_id": 29362,
+   "author_url": "https://forge.sp-tarkov.com/user/29362/marshrebel",
+   "created_at": "2024-06-28T04:39:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I dont know what I did not do right but I can\u2019t get this mod to work. Could you possibly update the file so us non-coders can get it to work. Thanks!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 108367,
+   "parent_id": 35143,
+   "author": "Therkelsen",
+   "author_id": 49207,
+   "author_url": "https://forge.sp-tarkov.com/user/49207/therkelsen",
+   "created_at": "2024-06-28T04:44:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>If you\u2019ve done this:</p>\n<p>1. Remove the Realism incompatibility line from \u201c\\user\\mods\\AR-54\\package.json\u201d, then save.</p>\n<p>\u201cincompatibilities\u201d: [ \u201cSPT-Realism\u201d ], 2. Download the latest release.</p>\n<p>3. Drop the provided user folder into your SPT folder.</p>\n<p>And it isn\u2019t working, you may want to also clear cache / temp files.</p>\n<p>1. In \\user\\cache, delete:</p>\n<p>bundleHashCache.json</p>\n<p>jsonCache.json</p>\n<p>modCache.json</p>\n<p>But do NOT delete the folder named bundles.</p>\n<p>2. In the SPT launcher, clear temp files:</p>\n<p>Open launcher</p>\n<p>Click settings</p>\n<p>Click clean temp files</p>\n<p>Then it should work, otherwise just leave another comment</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 35164,
+   "parent_id": null,
+   "author": "Strahhe",
+   "author_id": 22182,
+   "author_url": "https://forge.sp-tarkov.com/user/22182/strahhe",
+   "created_at": "2024-06-28T16:01:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for the patch. While building a preset for this, I noticed that the final build weighs 7.8kg! So I checked the stock preset, and compared with the default SR-25, and rechecked values in the json files.</p>\n<p>I think the weight value in AR-54\\AR-54.json is overtuned: \u201cWeight\u201d: 4.88,, considering it should only be the lower receiver. For comparison, the lower receiver for the SR-25 the weapon is cloned from is only \u201cWeight\u201d: 0.51, based on MarksmanRifleTemplates.json from Realism.</p>\n<p>The original mod also lists the same weight as the SR-25 for the lower receiver, in AR-54\\database\\siul_items.json.</p>\n<p>I of course changed this for personal use but I thought you might want to review and update that again, thanks for the patch!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 108422,
+   "parent_id": 35164,
+   "author": "Therkelsen",
+   "author_id": 49207,
+   "author_url": "https://forge.sp-tarkov.com/user/49207/therkelsen",
+   "created_at": "2024-06-28T18:16:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Ah yeah brainfart! I totally figured it was the entire weapon lol.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 108449,
+   "parent_id": 35164,
+   "author": "Therkelsen",
+   "author_id": 49207,
+   "author_url": "https://forge.sp-tarkov.com/user/49207/therkelsen",
+   "created_at": "2024-06-29T01:51:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Fixed it on both my compat mods, good catch my guy!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  }
+ ]
+}

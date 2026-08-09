@@ -1,0 +1,570 @@
+{
+ "mod_id": 1166,
+ "slug": "transfer-loot-into-a-container-automatically",
+ "fetched_at": "2026-08-09T07:30:28Z",
+ "reported_total": 25,
+ "pages": 3,
+ "count": 56,
+ "comments": [
+  {
+   "id": 24327,
+   "parent_id": null,
+   "author": "Klee",
+   "author_id": 6301,
+   "author_url": "https://forge.sp-tarkov.com/user/6301/klee",
+   "created_at": "2023-11-19T22:14:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This is a great idea. Some questions tho.</p>\n<p>If I mark multiple containers as such (is this even possible?) which gets priority?</p>\n<p>What are your plans for continued development, if any?</p>\n<p>From the way you write it, I take it that picking up loose loot isn\u2019t hoovered into the marked case?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 24331,
+   "parent_id": null,
+   "author": "gangsterhotline",
+   "author_id": 20204,
+   "author_url": "https://forge.sp-tarkov.com/user/20204/gangsterhotline",
+   "created_at": "2023-11-19T23:29:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Man I was really hoping something along this avenue would be possible eventually, this sounds like a great start. Was the tag system added by BSG just to like label and color code your containers for physical organization and no logical workings behind it?</p>\n<p>One of the mods on here for key storage (adds keyrings) has a cool workaround to make the keyrings only accept storing certain keys by adding them like a weapons addon system. Quite creative indeed haha.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 24336,
+   "parent_id": null,
+   "author": "Danersx",
+   "author_id": 6454,
+   "author_url": "https://forge.sp-tarkov.com/user/6454/danersx",
+   "created_at": "2023-11-20T02:29:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Very cool idea. Would be possible to disallow certain containers to be used? For example, I don\u2019t want the loot to be put in a chest rig (mags and ammo go there automatically) unless manually.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 93187,
+   "parent_id": 24327,
+   "author": "CactusPie",
+   "author_id": 29315,
+   "author_url": "https://forge.sp-tarkov.com/user/29315/cactuspie",
+   "created_at": "2023-11-20T06:11:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>If I mark multiple containers as such (is this even possible?) which gets priority?</p>\n<p>Definitely possible, but I\u2019m not sure which one would get priority to be honest. The game would either go with the one that\u2019s placed earlier in the inventory, or some arbitrary hidden value. I considered adding some priority to the containers, but decided it\u2019s gonna be very rare for anyone to have to matching containers in their inventory. It shouldn\u2019t be much of an issue, and I\u2019d like to keep this mod simple.</p>\n<p>From the way you write it, I take it that picking up loose loot isn\u2019t hoovered into the marked case?</p>\n<p>Nope. For now it\u2019s only for Ctrl+click in the loot screen. If I implement it it, guess I\u2019ll have to rename the mod</p>\n<p>What are your plans for continued development, if any?</p>\n<p>I have some minor improvements in mind, like what you and gangster hotline mentioned, but we\u2019ll see. Can\u2019t promise I\u2019ll have the time and motivation to implement these</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 93188,
+   "parent_id": 24331,
+   "author": "CactusPie",
+   "author_id": 29315,
+   "author_url": "https://forge.sp-tarkov.com/user/29315/cactuspie",
+   "created_at": "2023-11-20T06:13:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Oh, I\u2019ll probably keep it using tags for now. I want to keep the mod simple, but the idea you posted is kinda genius</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 93189,
+   "parent_id": 24336,
+   "author": "CactusPie",
+   "author_id": 29315,
+   "author_url": "https://forge.sp-tarkov.com/user/29315/cactuspie",
+   "created_at": "2023-11-20T06:15:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yes, this is something that annoys me too. I\u2019ll take a look when I have a moment, but no promises!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 93199,
+   "parent_id": 24327,
+   "author": "CactusPie",
+   "author_id": 29315,
+   "author_url": "https://forge.sp-tarkov.com/user/29315/cactuspie",
+   "created_at": "2023-11-20T12:52:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Just an update - I\u2019ve added support for loose loot as well</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 24346,
+   "parent_id": null,
+   "author": "SlaveToTheGames",
+   "author_id": 35506,
+   "author_url": "https://forge.sp-tarkov.com/user/35506/slavetothegames",
+   "created_at": "2023-11-20T12:59:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Do you plan on extending this to other tags such as:</p>\n<p>@Meds</p>\n<p>@Food</p>\n<p>@Drink</p>\n<p>Collector</p>\n<p>@Ammo</p>\n<p>@Armor</p>\n<p>@Weapons</p>\n<p>Etc..?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 93200,
+   "parent_id": 24346,
+   "author": "CactusPie",
+   "author_id": 29315,
+   "author_url": "https://forge.sp-tarkov.com/user/29315/cactuspie",
+   "created_at": "2023-11-20T13:02:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It will transfer all items to a container marked with the @loot tag. You can use an ammo box, if you prefer and tag it so it will automatically get all your ammo.</p>\n<p>Unless you want a more granular approach, specifying what type of items should be automatically deposited, in which case I have no plans for that at the moment.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 93201,
+   "parent_id": 24346,
+   "author": "SlaveToTheGames",
+   "author_id": 35506,
+   "author_url": "https://forge.sp-tarkov.com/user/35506/slavetothegames",
+   "created_at": "2023-11-20T13:05:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yeah, I definitely meant a more granular approach. In my mind I picture multiple cases having these tags based off the type of case. So say I had a mix off items from what I stated above in my backpack/on character. I would then just hit the key bind plus click and they would go to the correct cases/containers. Meds to meds, drink to drink, etc.</p>\n<p>But yeah, no worries if you have no plans right now.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 24348,
+   "parent_id": null,
+   "author": "erawa4",
+   "author_id": 40865,
+   "author_url": "https://forge.sp-tarkov.com/user/40865/erawa4",
+   "created_at": "2023-11-20T13:59:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Really helpful.So many times picking items but still have to open bag and put them into right case really annoying me.Now I can focus on raid.Much thanks to your work\uff1a\uff09</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 93204,
+   "parent_id": 24336,
+   "author": "CactusPie",
+   "author_id": 29315,
+   "author_url": "https://forge.sp-tarkov.com/user/29315/cactuspie",
+   "created_at": "2023-11-20T14:11:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>FYI, I made a separate mod for this<br />\n<a href=\"https://hub.sp-tarkov.com/files/file/1635-custom-inventory-container-priority/\" target=\"_blank\" rel=\"noreferrer noopener\">Custom inventory container priority</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 93209,
+   "parent_id": 24336,
+   "author": "Danersx",
+   "author_id": 6454,
+   "author_url": "https://forge.sp-tarkov.com/user/6454/danersx",
+   "created_at": "2023-11-20T15:58:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Very cool, thanks. Although the images you have added in CUSTOM INVENTORY CONTAINER PRIORITY don\u2019t work.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 93218,
+   "parent_id": 24336,
+   "author": "CactusPie",
+   "author_id": 29315,
+   "author_url": "https://forge.sp-tarkov.com/user/29315/cactuspie",
+   "created_at": "2023-11-20T18:24:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Ah, shit. Thanks for letting me know!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 24361,
+   "parent_id": null,
+   "author": "FenrisWolf",
+   "author_id": 26993,
+   "author_url": "https://forge.sp-tarkov.com/user/26993/fenriswolf",
+   "created_at": "2023-11-20T19:10:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Does this work recursively? For those of us who enjoy loot goblin/hoarding.</p>\n<p>IE. Automatically putting items into a container inside of a bag</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 93221,
+   "parent_id": 24361,
+   "author": "CactusPie",
+   "author_id": 29315,
+   "author_url": "https://forge.sp-tarkov.com/user/29315/cactuspie",
+   "created_at": "2023-11-20T19:22:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I think it should, as long as you tag the specific container (or containers) you want the loot to end up in. The order in which they will get filled will be kinda unpredictable though</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 93238,
+   "parent_id": 24346,
+   "author": "Brin",
+   "author_id": 4701,
+   "author_url": "https://forge.sp-tarkov.com/user/4701/brin",
+   "created_at": "2023-11-21T04:09:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>In terms of granularity, I\u2019d love something for in-raid that worked based on the tag structure of <a href=\"https://hub.sp-tarkov.com/files/file/1152-inventory-organizing-features/\" target=\"_blank\" rel=\"noreferrer noopener\">Inventory Organizing Features</a>.</p>\n<p>I\u2019d love to be able to just use the same tags as that mod to be able to ctrl+click stuff from bodies/containers right into the exact loot containers I want it to go in.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 93242,
+   "parent_id": 24346,
+   "author": "Lord Khaos",
+   "author_id": 156,
+   "author_url": "https://forge.sp-tarkov.com/user/156/lord-khaos",
+   "created_at": "2023-11-21T07:36:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I was wondering this as well.</p>\n<p>First of all thank you for all these awesome QoL mods, we greatly appreciate it.</p>\n<p>Like the others said, if a certain @tag can used to automatically put certain categories of items with the ctrl+click.</p>\n<p>Say for example a keytool in your secure container that uses at @key tag, so any found keys will automatically go into it until full.</p>\n<p>But again thank you so much for this mod and your others!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 93251,
+   "parent_id": 24346,
+   "author": "CactusPie",
+   "author_id": 29315,
+   "author_url": "https://forge.sp-tarkov.com/user/29315/cactuspie",
+   "created_at": "2023-11-21T13:51:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yes, I agree this would be useful, I use <a href=\"https://hub.sp-tarkov.com/files/file/1152-inventory-organizing-features/\" target=\"_blank\" rel=\"noreferrer noopener\">Inventory Organizing Features</a> too. However, I\u2019m currently working on some other things and as such, I don\u2019t have the time to implement any kind of complex tagging system. In the first place I intended this mod to be very simple and straightforward, but if someone is willing to implement something like that I would welcome a pull request though!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 24418,
+   "parent_id": null,
+   "author": "erawa4",
+   "author_id": 40865,
+   "author_url": "https://forge.sp-tarkov.com/user/40865/erawa4",
+   "created_at": "2023-11-22T14:07:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I am using v1.2.0 and I meet a question that when I take pmc\u2018s dog tag it will get into junkbox instead of tag bag.I wonder if there is a way to avoid that. (Money not into wallet as well)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 93294,
+   "parent_id": 24418,
+   "author": "CactusPie",
+   "author_id": 29315,
+   "author_url": "https://forge.sp-tarkov.com/user/29315/cactuspie",
+   "created_at": "2023-11-22T14:41:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You carry an entire junkbox with you? Well, for now if there are multiple containers you tagged with loot tag, it will deposit your loot into the first matching container. Since the junk box can contain dog tags they might end up in there.</p>\n<p>I\u2019m not planning to add tagging based on an item category for now, but I might at least add some form of ordering of the containers soon.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 24457,
+   "parent_id": null,
+   "author": "Gala1221",
+   "author_id": 40388,
+   "author_url": "https://forge.sp-tarkov.com/user/40388/gala1221",
+   "created_at": "2023-11-23T08:08:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Using 1.3.0 and noticed a strange thing happening.</p>\n<p>So I am able to have 2 containers in my backpack. With loot and loot1 on the containers, after the first one fills, the second one seems to be ignored and everything else is just being tossed into my backpack instead. Is this intended?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 93339,
+   "parent_id": 24457,
+   "author": "CactusPie",
+   "author_id": 29315,
+   "author_url": "https://forge.sp-tarkov.com/user/29315/cactuspie",
+   "created_at": "2023-11-23T10:53:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Nope! Fixed now</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 93340,
+   "parent_id": 24457,
+   "author": "Gala1221",
+   "author_id": 40388,
+   "author_url": "https://forge.sp-tarkov.com/user/40388/gala1221",
+   "created_at": "2023-11-23T11:01:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 24529,
+   "parent_id": null,
+   "author": "Alsaher",
+   "author_id": 16637,
+   "author_url": "https://forge.sp-tarkov.com/user/16637/alsaher",
+   "created_at": "2023-11-25T19:27:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>work on stash or just in raid ?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 24539,
+   "parent_id": null,
+   "author": "Claus1978",
+   "author_id": 14541,
+   "author_url": "https://forge.sp-tarkov.com/user/14541/claus1978",
+   "created_at": "2023-11-25T23:03:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This mod is a godsend!, damn i was tired of things landing in my vest and having to transfer it during raid.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 93493,
+   "parent_id": 24529,
+   "author": "CactusPie",
+   "author_id": 29315,
+   "author_url": "https://forge.sp-tarkov.com/user/29315/cactuspie",
+   "created_at": "2023-11-26T08:27:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Nope, only in raid for now</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 24846,
+   "parent_id": null,
+   "author": "SaltiestSaltySaltPie",
+   "author_id": 27249,
+   "author_url": "https://forge.sp-tarkov.com/user/27249/saltiestsaltysaltpie",
+   "created_at": "2023-12-04T04:39:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>HAVE TO LOGIN TO SAY THANK YOU! this combine with autosell is gonna make this game sooooooo funn now!!! well atleast for a hoarder like me</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 24867,
+   "parent_id": null,
+   "author": "SaltiestSaltySaltPie",
+   "author_id": 27249,
+   "author_url": "https://forge.sp-tarkov.com/user/27249/saltiestsaltysaltpie",
+   "created_at": "2023-12-04T19:04:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Oh, tested and works nice with SPT. But not working with SIT, for those who wonder.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 95918,
+   "parent_id": 24867,
+   "author": "ligma929130",
+   "author_id": 24239,
+   "author_url": "https://forge.sp-tarkov.com/user/24239/ligma929130",
+   "created_at": "2024-01-14T20:40:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>What is SIT</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 95921,
+   "parent_id": 24867,
+   "author": "Arhon",
+   "author_id": 36042,
+   "author_url": "https://forge.sp-tarkov.com/user/36042/arhon",
+   "created_at": "2024-01-14T21:44:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <h3>SIT Coop mod</h3>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 96106,
+   "parent_id": 24867,
+   "author": "Shturman",
+   "author_id": 24247,
+   "author_url": "https://forge.sp-tarkov.com/user/24247/shturman",
+   "created_at": "2024-01-18T21:31:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>wer u can download the coop mod ?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 26504,
+   "parent_id": null,
+   "author": "GeaRetteX",
+   "author_id": 33055,
+   "author_url": "https://forge.sp-tarkov.com/user/33055/gearettex",
+   "created_at": "2024-01-19T13:26:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Big fan, does it work on 3.7.6? or only on .4?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 96141,
+   "parent_id": 26504,
+   "author": "CactusPie",
+   "author_id": 29315,
+   "author_url": "https://forge.sp-tarkov.com/user/29315/cactuspie",
+   "created_at": "2024-01-19T13:37:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m on 3.7.6 now and it works. Should work on any 3.7.* version</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 96144,
+   "parent_id": 26504,
+   "author": "GeaRetteX",
+   "author_id": 33055,
+   "author_url": "https://forge.sp-tarkov.com/user/33055/gearettex",
+   "created_at": "2024-01-19T14:05:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>sweet! thanks for the answer!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 26713,
+   "parent_id": null,
+   "author": "DewardianDev",
+   "author_id": 23805,
+   "author_url": "https://forge.sp-tarkov.com/user/23805/dewardiandev",
+   "created_at": "2024-01-25T15:59:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>How has this flown under the radar\u2026 so good!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 26854,
+   "parent_id": null,
+   "author": "Hypno88",
+   "author_id": 34438,
+   "author_url": "https://forge.sp-tarkov.com/user/34438/hypno88",
+   "created_at": "2024-01-30T15:00:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>So idk if im having an issue with this mod or maybe something else but I have noticed that when Ctrl+LMB items into my inventory when I Ctrl+LMB on ammo and its the same ammo as the ammo in any gun in my inventory (On my PMC or in my bag) there\u2019s a chance the ammo gets stacked with ammo in the guns mag, which then causes the magazine to overfill, like 54/30. If I try to unload that mag in raid it breaks all ammo loading/unloading until I exit the raid. And if I dont touch it and exit the raid all the ammo in that mag just gets deleted</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 96765,
+   "parent_id": 26854,
+   "author": "kilper",
+   "author_id": 30665,
+   "author_url": "https://forge.sp-tarkov.com/user/30665/kilper",
+   "created_at": "2024-02-03T13:04:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I confirm. The same thing happens when you move ammo from a container or a corpse.</p>\n<p>If there are a lot of bullets, nothing will happen. but if there are &lt;20 of them (as I understood), they will be \u201cplaced\u201d in the weapon</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 96823,
+   "parent_id": 26854,
+   "author": "Foxxee",
+   "author_id": 32981,
+   "author_url": "https://forge.sp-tarkov.com/user/32981/foxxee",
+   "created_at": "2024-02-05T05:44:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Same here. I hate losing my ammo from this bug so sadly I\u2019m just not going to run this until it\u2019s fixed.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 96829,
+   "parent_id": 26854,
+   "author": "Hypno88",
+   "author_id": 34438,
+   "author_url": "https://forge.sp-tarkov.com/user/34438/hypno88",
+   "created_at": "2024-02-05T11:46:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>So in the BepInEx menu I unchecked the box Merge stacks for non-loot containers and after playing for a couple days I have not seen it happen again! Hopefully that helps anyone running into the same thing</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 27168,
+   "parent_id": null,
+   "author": "MURDER46",
+   "author_id": 40884,
+   "author_url": "https://forge.sp-tarkov.com/user/40884/murder46",
+   "created_at": "2024-02-14T00:45:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Came here to say this mod is awesome. For those playing with bigger inventories and weight limits, this pairs amazing with <a href=\"https://hub.sp-tarkov.com/user/23286-nightingale/\" target=\"_blank\" rel=\"noreferrer noopener\">Nightingale</a>\u2019s INVENTORY ORGANIZING FEATURES.</p>\n<p>This allows you to have container priority and organizing/tagging features. I can sort my entire raid in less than a dozen clicks.</p>\n<p>Amazing work, thank you for all that you do and for being a valued member of this awesome community.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 98417,
+   "parent_id": 26854,
+   "author": "SlaveToTheGames",
+   "author_id": 35506,
+   "author_url": "https://forge.sp-tarkov.com/user/35506/slavetothegames",
+   "created_at": "2024-03-30T19:11:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Same here! Checking the fix now <a href=\"https://hub.sp-tarkov.com/user/37676-midnight88/\" target=\"_blank\" rel=\"noreferrer noopener\">Midnight88</a> mentioned.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 28969,
+   "parent_id": null,
+   "author": "BigBro",
+   "author_id": 33307,
+   "author_url": "https://forge.sp-tarkov.com/user/33307/bigbro",
+   "created_at": "2024-04-08T10:10:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>does it work with 3.8.0?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 99694,
+   "parent_id": 28969,
+   "author": "Hypno88",
+   "author_id": 34438,
+   "author_url": "https://forge.sp-tarkov.com/user/34438/hypno88",
+   "created_at": "2024-04-09T10:48:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I tried it and it doesn\u2019t seem to be working. Most likely gonna need an update from the creator</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 29309,
+   "parent_id": null,
+   "author": "dikpill",
+   "author_id": 42365,
+   "author_url": "https://forge.sp-tarkov.com/user/42365/dikpill",
+   "created_at": "2024-04-11T17:15:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Please come back to us, ye Gods of Singularity Tarkovsky. Cactus, Samswat, where art thou? Gondor calls for aid.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 30599,
+   "parent_id": null,
+   "author": "archmagetony",
+   "author_id": 34957,
+   "author_url": "https://forge.sp-tarkov.com/user/34957/archmagetony",
+   "created_at": "2024-04-24T07:35:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello,sorry I can\u2019t speak English very well,so I use google translate.</p>\n<p>I try to update this mod for 3.8.0 release-29197.Its basic functions work fine.But it still having issues about function \u2018Merge stacks for non-loot containers\u2019,I don\u2019t have the ability to fix it.More about this issues can see <a href=\"https://hub.sp-tarkov.com/files/file/1633-transfer-loot-into-a-container-automatically/#comments/comment35011\" target=\"_blank\" rel=\"noreferrer noopener\">this comment</a>.</p>\n<p>Also I have <a href=\"https://github.com/CactusPie/SPT-ContainerQuickLoot/pull/1\" target=\"_blank\" rel=\"noreferrer noopener\">pull requests</a> for you in github,or could I upload it myself and give you all the credit.</p>\n<p><a href=\"https://github.com/ArchmageTony/SPT-ContainerQuickLoot/tree/aki-380-release-29197\" target=\"_blank\" rel=\"noreferrer noopener\">Here is new source code.</a></p>\n<p>Thank you.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 31309,
+   "parent_id": null,
+   "author": "Pain160710",
+   "author_id": 10999,
+   "author_url": "https://forge.sp-tarkov.com/user/10999/pain160710",
+   "created_at": "2024-05-05T09:48:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi, could you please update this amazing mod to work with the latest version 3.8.0?</p>\n<p>Thanks a lot for your hard work and stay safe.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 32491,
+   "parent_id": null,
+   "author": "MIDOGamer2024",
+   "author_id": 46334,
+   "author_url": "https://forge.sp-tarkov.com/user/46334/midogamer2024",
+   "created_at": "2024-05-20T03:49:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p><strong>I love this mod please update 3.8.3</strong></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 33160,
+   "parent_id": null,
+   "author": "GHOZT",
+   "author_id": 52897,
+   "author_url": "https://forge.sp-tarkov.com/user/52897/ghozt",
+   "created_at": "2024-05-29T10:10:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>any other mod that simillar to this for 3.8.3 guys??</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 106245,
+   "parent_id": 33160,
+   "author": "whereiswaldo",
+   "author_id": 51885,
+   "author_url": "https://forge.sp-tarkov.com/user/51885/whereiswaldo",
+   "created_at": "2024-06-06T06:54:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This one here:</p>\n<p>Install this one:</p>\n<p>This is the updated one of this one - check here for explanation.</p>\n<p>in a nutshell: Works with tags and a button to sort it into containers.</p>\n<p>eg: Tag ammo box with text \u201c@o\u201d to auto put fitting things in the container.</p>\n<p>or get crazy (like me) and make rules for each container.</p>\n<p>eg:</p>\n<p>tag ammo box for nato rounds only: \u201cNATO - @sl @o n:5.56;\u201d<br />\ntag ammo box for ak small rounds only: \u201cAK - @sl @o n:5.45;\u201d</p>\n<p>ammo box tag for pistol rounds: \u201cPistol - @sl @o n:9x19|n:9x18|n:5.7\u201d</p>\n<p>Items case for headstuff only: \u201cHeadstuff - @sl @o headgear|headsets\u201d<br />\nmedicine case for healing stuff (excluding pills, injectors etc) : \u201cHeal - @sl @o !pills|!injectors|n:!vaseline</p>\n<p>\u2026</p>\n<p>etc.</p>\n<p>Quick guide:<br />\n@o - organize - make it fetch fitting stuff in when button is clicked<br />\n@sl - sort lock - when standard sort button is pressed container will be fix and not be sorted around with the rest of the stuff</p>\n<p>@o blabla; - only auto transfer stuff in the container of that blabla category<br />\n@o n:blabla - organize only in stuff with blabla in the item name<br />\n@o !pills - sort in everything BUT NOT stuff of category \u201cpills\u201d</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 106246,
+   "parent_id": 32491,
+   "author": "whereiswaldo",
+   "author_id": 51885,
+   "author_url": "https://forge.sp-tarkov.com/user/51885/whereiswaldo",
+   "created_at": "2024-06-06T06:55:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>see comment above</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 107135,
+   "parent_id": 31309,
+   "author": "whereiswaldo",
+   "author_id": 51885,
+   "author_url": "https://forge.sp-tarkov.com/user/51885/whereiswaldo",
+   "created_at": "2024-06-14T05:01:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>see my comment above</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 107136,
+   "parent_id": 29309,
+   "author": "whereiswaldo",
+   "author_id": 51885,
+   "author_url": "https://forge.sp-tarkov.com/user/51885/whereiswaldo",
+   "created_at": "2024-06-14T05:02:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>see my comment above - Gondor\u2019s calls have been answered.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 39558,
+   "parent_id": null,
+   "author": "homeless",
+   "author_id": 47415,
+   "author_url": "https://forge.sp-tarkov.com/user/47415/homeless",
+   "created_at": "2024-08-23T22:24:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>is anyone else going to continue this mod as it seams like cactus has move on to other things. im using IOF but that dosnt have the loot feature</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 40240,
+   "parent_id": null,
+   "author": "bepis69",
+   "author_id": 5192,
+   "author_url": "https://forge.sp-tarkov.com/user/5192/bepis69",
+   "created_at": "2024-09-01T18:32:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Added support for 3.9: <a href=\"https://hub.sp-tarkov.com/files/file/2326-cactuspie-s-transfer-loot-into-container-automatically-reupload/#overview\" target=\"_blank\" rel=\"noreferrer noopener\">CactusPie\u2019s Transfer Loot into Container Automatically (Reupload)</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 52162,
+   "parent_id": null,
+   "author": "Adizera",
+   "author_id": 22198,
+   "author_url": "https://forge.sp-tarkov.com/user/22198/adizera",
+   "created_at": "2025-05-27T00:57:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>CactusPie, hello, thanks for the mod man, helps me a lot because I use bigger backpacks and the dogtags and keys that I found I would need to scroll all the way down to put them into the secure container.</p>\n<p>One suggestion:<br />\nloot for all<br />\nkey for key-only container<br />\nDogtag \u2026.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

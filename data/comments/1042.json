@@ -1,0 +1,850 @@
+{
+ "mod_id": 1042,
+ "slug": "algorithmic-barter-randomizer",
+ "fetched_at": "2026-08-09T07:37:48Z",
+ "reported_total": 34,
+ "pages": 4,
+ "count": 84,
+ "comments": [
+  {
+   "id": 20436,
+   "parent_id": null,
+   "author": "Foxxee",
+   "author_id": 32981,
+   "author_url": "https://forge.sp-tarkov.com/user/32981/foxxee",
+   "created_at": "2023-09-09T08:39:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Holy heck yes! Now we just need a updated loot randomizer to complete this!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 20446,
+   "parent_id": null,
+   "author": "harmony",
+   "author_id": 30878,
+   "author_url": "https://forge.sp-tarkov.com/user/30878/harmony",
+   "created_at": "2023-09-09T15:28:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I think there\u2019s a small typo in config/description with DisableFlee, shouldn\u2019t it be DisableFlea?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 87144,
+   "parent_id": 20446,
+   "author": "DewardianDev",
+   "author_id": 23805,
+   "author_url": "https://forge.sp-tarkov.com/user/23805/dewardiandev",
+   "created_at": "2023-09-09T15:32:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Lol yes\u2026</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 87150,
+   "parent_id": 20446,
+   "author": "harmony",
+   "author_id": 30878,
+   "author_url": "https://forge.sp-tarkov.com/user/30878/harmony",
+   "created_at": "2023-09-09T16:32:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Also a cool suggestion in my opinion - Make an option to use randomized seed every time server starts (although that could be abused in some or another way)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 87156,
+   "parent_id": 20446,
+   "author": "DewardianDev",
+   "author_id": 23805,
+   "author_url": "https://forge.sp-tarkov.com/user/23805/dewardiandev",
+   "created_at": "2023-09-09T19:12:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019ll add that. It will likely just be setting the seed to false or 0.</p>\n<p>Very easy to do.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 20465,
+   "parent_id": null,
+   "author": "Heliax",
+   "author_id": 26060,
+   "author_url": "https://forge.sp-tarkov.com/user/26060/heliax",
+   "created_at": "2023-09-10T02:26:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Can you add a setting where each trader will trade for things relating to them</p>\n<p>Example:</p>\n<p>Prapor - more russian themed items</p>\n<p>Therapist - Medical items + food</p>\n<p>Skier- whatever the fuck skier does</p>\n<p>peacekeeper - god blessed american goods</p>\n<p>mechanic - weapon stuff</p>\n<p>ragman - cloth materials / armor repair kits</p>\n<p>jeager - food / drinks / whatever else idk</p>\n<p>also are all the trades equivalent in value to the item in roubles?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 87184,
+   "parent_id": 20465,
+   "author": "DewardianDev",
+   "author_id": 23805,
+   "author_url": "https://forge.sp-tarkov.com/user/23805/dewardiandev",
+   "created_at": "2023-09-10T04:07:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>No.</p>\n<p>More or less, balance is being worked on and it is random.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 20468,
+   "parent_id": null,
+   "author": "DewardianDev",
+   "author_id": 23805,
+   "author_url": "https://forge.sp-tarkov.com/user/23805/dewardiandev",
+   "created_at": "2023-09-10T04:37:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Okay so I think I need to work on balance a bit.<br />\nChanges incoming.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 87192,
+   "parent_id": 20446,
+   "author": "Carinis",
+   "author_id": 14411,
+   "author_url": "https://forge.sp-tarkov.com/user/14411/carinis",
+   "created_at": "2023-09-10T05:03:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>please have an option not to have it change also as i don\u2019t want to keep having to remember different stuff every session</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 87205,
+   "parent_id": 20468,
+   "author": "DewardianDev",
+   "author_id": 23805,
+   "author_url": "https://forge.sp-tarkov.com/user/23805/dewardiandev",
+   "created_at": "2023-09-10T07:46:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Got it!!</p>\n<p>There were a number of things not being handled that needed a balance:</p>\n<p>- Some items aren\u2019t available on flea.. meaning they are actually worth a lot more than they are listed for in the db.</p>\n<p>- Cash items converted to trades were using the same algorithm as the original trade items, when in reality, those original trades are meant to limit the availability and feasibility of those items.. in practice this means that in hardcore mode there needs to be two tiers of barter difficulty for it to be fair.</p>\n<p>This has now been handled and I\u2019m much happier with the new balance changes.</p>\n<p>Release tomorrow.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 87207,
+   "parent_id": 20446,
+   "author": "harmony",
+   "author_id": 30878,
+   "author_url": "https://forge.sp-tarkov.com/user/30878/harmony",
+   "created_at": "2023-09-10T08:04:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m sure it will be off by default so don\u2019t worry</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 20491,
+   "parent_id": null,
+   "author": "DewardianDev",
+   "author_id": 23805,
+   "author_url": "https://forge.sp-tarkov.com/user/23805/dewardiandev",
+   "created_at": "2023-09-10T20:42:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <h3><a href=\"https://hub.sp-tarkov.com/files/download/7341/\" target=\"_blank\" rel=\"noreferrer noopener\"><strong>Version 1.0.1</strong></a></h3>\n<ul>\n<li>\n<p>Major Update:</p>\n<ul>\n<li>Balance completely rewritten.</li>\n<li>Should see much more \u201cfair\u201d barters in general.</li>\n</ul>\n<p>Leave feedback in the comments!</p>\n<p>Have fun!</p>\n</li>\n</ul>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 87258,
+   "parent_id": 20491,
+   "author": "DewardianDev",
+   "author_id": 23805,
+   "author_url": "https://forge.sp-tarkov.com/user/23805/dewardiandev",
+   "created_at": "2023-09-10T20:50:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Ughh.. just realized the bullet cases/weapons aren\u2019t being handled correctly.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 20492,
+   "parent_id": null,
+   "author": "flarespt",
+   "author_id": 30792,
+   "author_url": "https://forge.sp-tarkov.com/user/30792/flarespt",
+   "created_at": "2023-09-10T20:53:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Any chance we get something to randomize the hideout upgrade items?</p>\n<p>few notes after a start on hardcore medium</p>\n<p>-It\u2019s not converting prices well on the modded trader Priscilu, his fully kitted guns are bartering for things like a single hose or beef stew when they normally cost 100-500k</p>\n<p>-feel like it needs some kind of rarity check or price multiplier based on rarity tier, kappa items aren\u2019t that expensive but there\u2019s near zero chance of me ever finding 3 stuffed bears. also things like SG-C10, M-2 swords.</p>\n<p>still fun.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 87260,
+   "parent_id": 20492,
+   "author": "DewardianDev",
+   "author_id": 23805,
+   "author_url": "https://forge.sp-tarkov.com/user/23805/dewardiandev",
+   "created_at": "2023-09-10T21:07:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Working on balancing weapons/ammoboxes now. That should help things.<br />\nI may scrap melee/med trades.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 87261,
+   "parent_id": 20492,
+   "author": "DewardianDev",
+   "author_id": 23805,
+   "author_url": "https://forge.sp-tarkov.com/user/23805/dewardiandev",
+   "created_at": "2023-09-10T21:12:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey! Since I have, going to push up another version quick, try it out and give me some feedback.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 20505,
+   "parent_id": null,
+   "author": "DewardianDev",
+   "author_id": 23805,
+   "author_url": "https://forge.sp-tarkov.com/user/23805/dewardiandev",
+   "created_at": "2023-09-11T05:31:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>still not happy with the balance.</p>\n<p>Working on some changes</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 20529,
+   "parent_id": null,
+   "author": "Agoelia",
+   "author_id": 7683,
+   "author_url": "https://forge.sp-tarkov.com/user/7683/agoelia",
+   "created_at": "2023-09-11T20:24:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey ummm<br />\nDownloaded latest version. Open up Therapist and look at the barters. I can exchange 1 Car Medikit for\u2026. 1 Car Medikit?<br />\nWould be funny if it wasn\u2019t that I can exchange a 1/220 condition medikit for a perfectly new one!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 87310,
+   "parent_id": 20529,
+   "author": "DewardianDev",
+   "author_id": 23805,
+   "author_url": "https://forge.sp-tarkov.com/user/23805/dewardiandev",
+   "created_at": "2023-09-11T20:30:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yeah, I\u2019ve fixed the like for like trading already.</p>\n<p>I\u2019m working on a new balance algorithm.</p>\n<p>The fundamental problem is that the prices on the flea for items is linked to trades/quests in game. So when you change all of the trades, those values are no longer correct.</p>\n<p>This makes appraising bartered items values incredibly complex.<br />\nI\u2019m attempting to graph the rarity of items chance of loot against its value now in some meaningful way.</p>\n<p>TLDR: getting alternate items for trades isn\u2019t hard. Pricing the value of items and their barters is.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 20541,
+   "parent_id": null,
+   "author": "Mysticrawler",
+   "author_id": 36937,
+   "author_url": "https://forge.sp-tarkov.com/user/36937/mysticrawler",
+   "created_at": "2023-09-12T10:39:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I Don\u2019t know why, but the hardcore mode doesn\u2019t work for me. I put true on enableHardcore, I get a message that changed 600 cash items, but in game only change old barter items.</p>\n<p>Am i doing something wrong? i\u2019m new to modding sp-tarkov.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 87348,
+   "parent_id": 20541,
+   "author": "DewardianDev",
+   "author_id": 23805,
+   "author_url": "https://forge.sp-tarkov.com/user/23805/dewardiandev",
+   "created_at": "2023-09-12T20:20:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Three things:</p>\n<ul>\n<li>Look at the install instructions around load order.</li>\n<li>Make sure your \u201ccashItemCutoff\u201d: 10000, &lt;&lt; Isn\u2019t too high</li>\n<li>I am pushing an update tonight dramatically improving this mod.</li>\n</ul>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 20557,
+   "parent_id": null,
+   "author": "DewardianDev",
+   "author_id": 23805,
+   "author_url": "https://forge.sp-tarkov.com/user/23805/dewardiandev",
+   "created_at": "2023-09-12T22:02:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <h3><a href=\"https://hub.sp-tarkov.com/files/download/7353/\" target=\"_blank\" rel=\"noreferrer noopener\"><strong>Version 1.1.0</strong></a></h3>\n<p><strong>Complete rewrite:</strong></p>\n<ul>\n<li>Completely rewrote the mod, balance feels much closer to live barters.</li>\n</ul>\n<p>NOTE:  <strong>Hardcore mode</strong> may present trades that when combined are unbalanced, this is a known side effect of the random nature of this mod.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 20570,
+   "parent_id": null,
+   "author": "DewardianDev",
+   "author_id": 23805,
+   "author_url": "https://forge.sp-tarkov.com/user/23805/dewardiandev",
+   "created_at": "2023-09-13T04:28:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <h3><a href=\"https://hub.sp-tarkov.com/files/download/7358/\" target=\"_blank\" rel=\"noreferrer noopener\"><strong>Version 1.1.1</strong></a></h3>\n<p>Config change:</p>\n<ul>\n<li>Fixed a bug with cash barters and custom items.</li>\n<li>\u201cDifficulty\u201d has been replaced by two new values:<br />\n\u201cbarterCostMultiplier\u201d: 0.7,<br />\n\u201ccashBarterCostMultiplier\u201d: 0.5,</li>\n</ul>\n<p>These values multiply the base items (to be traded for\u2019s) prices to figure the rough cost of the total barter items.</p>\n<p>For example, if the item costs 100, and the multiplier is 0.5, the traded item value would be 50.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 20608,
+   "parent_id": null,
+   "author": "Carinis",
+   "author_id": 14411,
+   "author_url": "https://forge.sp-tarkov.com/user/14411/carinis",
+   "created_at": "2023-09-14T10:26:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>TypeError: Cannot read properties of undefined (reading \u2018_props\u2019)</p>\n<p>TypeError: Cannot read properties of undefined (reading \u2018_props\u2019)</p>\n<p>at getPrice (D:\\SPT-AKI 3.6.1\\user\\mods\\zzzzzDewardianDev-AlgorithmicBarterRandomizer\\src\\BarterChanger\\BarterChanger.js:57:24)</p>\n<p>at D:\\SPT-AKI 3.6.1\\user\\mods\\zzzzzDewardianDev-AlgorithmicBarterRandomizer\\src\\BarterChanger\\BarterChanger.js:152:70</p>\n<p>at Array.forEach (&lt;anonymous&gt;)</p>\n<p>at D:\\SPT-AKI 3.6.1\\user\\mods\\zzzzzDewardianDev-AlgorithmicBarterRandomizer\\src\\BarterChanger\\BarterChanger.js:146:30</p>\n<p>at Array.forEach (&lt;anonymous&gt;)</p>\n<p>at BarterChanger (D:\\SPT-AKI 3.6.1\\user\\mods\\zzzzzDewardianDev-AlgorithmicBarterRandomizer\\src\\BarterChanger\\BarterChanger.js:114:26)</p>\n<p>at AlgorithmicBarterRandomizer.postAkiLoad (D:\\SPT-AKI 3.6.1\\user\\mods\\zzzzzDewardianDev-AlgorithmicBarterRandomizer\\src\\mod.js:10:61)</p>\n<p>at PostAkiModLoader.executeMods (C:\\snapshot\\project\\obj\\loaders\\PostAkiModLoader.js)</p>\n<p>at PostAkiModLoader.load (C:\\snapshot\\project\\obj\\loaders\\PostAkiModLoader.js)</p>\n<p>at ModCallbacks.onLoad (C:\\snapshot\\project\\obj\\callbacks\\ModCallbacks.js)</p>\n<p>TypeError: Cannot read properties of undefined (reading \u2018_props\u2019)</p>\n<p>TypeError: Cannot read properties of undefined (reading \u2018_props\u2019)</p>\n<p>at getPrice (D:\\SPT-AKI 3.6.1\\user\\mods\\zzzzzDewardianDev-AlgorithmicBarterRandomizer\\src\\BarterChanger\\BarterChanger.js:57:24)</p>\n<p>at D:\\SPT-AKI 3.6.1\\user\\mods\\zzzzzDewardianDev-AlgorithmicBarterRandomizer\\src\\BarterChanger\\BarterChanger.js:152:70</p>\n<p>at Array.forEach (&lt;anonymous&gt;)</p>\n<p>at D:\\SPT-AKI 3.6.1\\user\\mods\\zzzzzDewardianDev-AlgorithmicBarterRandomizer\\src\\BarterChanger\\BarterChanger.js:146:30</p>\n<p>at Array.forEach (&lt;anonymous&gt;)</p>\n<p>at BarterChanger (D:\\SPT-AKI 3.6.1\\user\\mods\\zzzzzDewardianDev-AlgorithmicBarterRandomizer\\src\\BarterChanger\\BarterChanger.js:114:26)</p>\n<p>at AlgorithmicBarterRandomizer.postAkiLoad (D:\\SPT-AKI 3.6.1\\user\\mods\\zzzzzDewardianDev-AlgorithmicBarterRandomizer\\src\\mod.js:10:61)</p>\n<p>at PostAkiModLoader.executeMods (C:\\snapshot\\project\\obj\\loaders\\PostAkiModLoader.js)</p>\n<p>at PostAkiModLoader.load (C:\\snapshot\\project\\obj\\loaders\\PostAkiModLoader.js)</p>\n<p>at ModCallbacks.onLoad (C:\\snapshot\\project\\obj\\callbacks\\ModCallbacks.js)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 87397,
+   "parent_id": 20608,
+   "author": "Carinis",
+   "author_id": 14411,
+   "author_url": "https://forge.sp-tarkov.com/user/14411/carinis",
+   "created_at": "2023-09-14T10:27:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>getting the above error when loading the server, i have made sure that this mod is after your level progression mod</p>\n<p>i have tried to reinstall with no changes to the config but it still errors<br />\ni took this mod out and no issues loading server</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 87401,
+   "parent_id": 20608,
+   "author": "DewardianDev",
+   "author_id": 23805,
+   "author_url": "https://forge.sp-tarkov.com/user/23805/dewardiandev",
+   "created_at": "2023-09-14T12:27:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Use the load order.json, not zzzzzzz.</p>\n<p>But this is likely a bad custom item.</p>\n<p>I\u2019ll take a look</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 87402,
+   "parent_id": 20608,
+   "author": "Carinis",
+   "author_id": 14411,
+   "author_url": "https://forge.sp-tarkov.com/user/14411/carinis",
+   "created_at": "2023-09-14T13:23:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>thanks, i have not added any custom traders in the config for this mod, and i removed the mod that added the items from current live version (like Armor and guns etc) but still got the error</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 87403,
+   "parent_id": 20608,
+   "author": "DewardianDev",
+   "author_id": 23805,
+   "author_url": "https://forge.sp-tarkov.com/user/23805/dewardiandev",
+   "created_at": "2023-09-14T15:01:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>What\u2019s your mod list?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 87404,
+   "parent_id": 20608,
+   "author": "DewardianDev",
+   "author_id": 23805,
+   "author_url": "https://forge.sp-tarkov.com/user/23805/dewardiandev",
+   "created_at": "2023-09-14T15:03:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I use the new content mods/sain/swag and have no issues.</p>\n<p>OH!.. I bet you have a custom trader..</p>\n<p>I didn\u2019t test extensively with them yet.</p>\n<p>I\u2019ll test with priscillu.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 87419,
+   "parent_id": 20608,
+   "author": "Carinis",
+   "author_id": 14411,
+   "author_url": "https://forge.sp-tarkov.com/user/14411/carinis",
+   "created_at": "2023-09-14T19:21:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i can provide mod list later this evening, but I have not added/activated any custom traders in your config file</p>\n<p>Thanks for looking in to this</p>\n<p>\u201corder\u201d: [</p>\n<p>\u201caaMFACSHOP\u201d,</p>\n<p>ACOG4Life-OpticRework</p>\n<p>ATLAS-GEAR</p>\n<p>BOOBS</p>\n<p>Carl-STAR15</p>\n<p>Chomp-DisableFleaBlacklist</p>\n<p>CivicMagLoader</p>\n<p>CivicMagTape</p>\n<p>ColetteBlackpaw-drip</p>\n<p>Dirtbikercj-ExpandedTaskText-1.2.1</p>\n<p>Fin-EerieSilence</p>\n<p>Fontaine-FOV-Fix</p>\n<p>Gamenator_Crazyguns</p>\n<p>gunsmith</p>\n<p>Kiki-RemoveTediousQuestConditions</p>\n<p>M G28BLK</p>\n<p>MC-AK12</p>\n<p>MC-SVT40</p>\n<p>MoreCheckmarksBackend</p>\n<p>SamSWAT-BetterOKP7</p>\n<p>SamSWAT-EOTechVuduOverhaul</p>\n<p>ServerValueModifier</p>\n<p>shredder-MoreHideoutCrafts</p>\n<p>Skwizzy-NoDiscardLimit</p>\n<p>SpecialSlots</p>\n<p>SWAG</p>\n<p>Traveler</p>\n<p>y1305 items preview</p>\n<p>yzzz RailAdjustmentSystem</p>\n<p>yzzz SightsAdjustmentSystem</p>\n<p>yzzz TubeAdjustmentSystem</p>\n<p>zSolarint-SAIN-ServerMod</p>\n<p>zzDrakiaXYZ-Waypoints</p>\n<p>zzzRevingly-NLE-5.0.0</p>\n<p>DewardianDev-AlgorithmicLevelProgression</p>\n<p>]</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 87439,
+   "parent_id": 20608,
+   "author": "DewardianDev",
+   "author_id": 23805,
+   "author_url": "https://forge.sp-tarkov.com/user/23805/dewardiandev",
+   "created_at": "2023-09-15T01:13:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You need to add this mod to the above list obviously. Make sure it\u2019s after Level progression.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 20639,
+   "parent_id": null,
+   "author": "DewardianDev",
+   "author_id": 23805,
+   "author_url": "https://forge.sp-tarkov.com/user/23805/dewardiandev",
+   "created_at": "2023-09-15T01:29:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <h3><a href=\"https://hub.sp-tarkov.com/files/download/7373/\" target=\"_blank\" rel=\"noreferrer noopener\"><strong>Version 1.1.2</strong></a></h3>\n<p>Compatibility Optimization:</p>\n<ul>\n<li>Should help with compatibility with mods that implement items incorrectly with the DB.</li>\n</ul>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 87440,
+   "parent_id": 20608,
+   "author": "DewardianDev",
+   "author_id": 23805,
+   "author_url": "https://forge.sp-tarkov.com/user/23805/dewardiandev",
+   "created_at": "2023-09-15T01:31:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>With all those XXXSystem mods, you may want to add both my mods before those.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 87442,
+   "parent_id": 20608,
+   "author": "Carinis",
+   "author_id": 14411,
+   "author_url": "https://forge.sp-tarkov.com/user/14411/carinis",
+   "created_at": "2023-09-15T02:39:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>tried you latest version and it works great thanks</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 20685,
+   "parent_id": null,
+   "author": "Wienerslinky",
+   "author_id": 33397,
+   "author_url": "https://forge.sp-tarkov.com/user/33397/wienerslinky",
+   "created_at": "2023-09-16T08:47:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>any option to also make it so ammo/mags require barters? im doing a hardcore playthrough and its quite fun to be forced to use whatever you can salvage instead of just buying a kit</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 87500,
+   "parent_id": 20685,
+   "author": "DewardianDev",
+   "author_id": 23805,
+   "author_url": "https://forge.sp-tarkov.com/user/23805/dewardiandev",
+   "created_at": "2023-09-16T14:48:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I would need to add something like BOOBs (bullet box mod) to accomplish that.</p>\n<p>I can look into it but magazines for example I can easily switch on.</p>\n<p>Maybe I\u2019ll add a config option for those</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 20878,
+   "parent_id": null,
+   "author": "Harash",
+   "author_id": 37316,
+   "author_url": "https://forge.sp-tarkov.com/user/37316/harash",
+   "created_at": "2023-09-21T00:05:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Would it be possible to randomize barters after each raid?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 87757,
+   "parent_id": 20878,
+   "author": "DewardianDev",
+   "author_id": 23805,
+   "author_url": "https://forge.sp-tarkov.com/user/23805/dewardiandev",
+   "created_at": "2023-09-21T01:19:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This is likely coming in the next update.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 20936,
+   "parent_id": null,
+   "author": "DewardianDev",
+   "author_id": 23805,
+   "author_url": "https://forge.sp-tarkov.com/user/23805/dewardiandev",
+   "created_at": "2023-09-23T05:30:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <h3><a href=\"https://hub.sp-tarkov.com/files/download/7427/\" target=\"_blank\" rel=\"noreferrer noopener\"><strong>Version 1.2.0</strong></a></h3>\n<p><strong>Major update</strong></p>\n<ul>\n<li>The algorithm now runs on game start, and after raids.</li>\n<li>You can set the barters to randomize after every raid by setting:<br />\n\u201cseed\u201d: 0,</li>\n<li>Added a new setting to hardcoreSettings that makes it so you can turn on/off magazine barters for cash barters:<br />\n\u201cexcludeMagBarters\u201d: true</li>\n</ul>\n<p>That\u2019s all for now, have fun!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 87844,
+   "parent_id": 20878,
+   "author": "DewardianDev",
+   "author_id": 23805,
+   "author_url": "https://forge.sp-tarkov.com/user/23805/dewardiandev",
+   "created_at": "2023-09-23T05:31:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Done</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 87845,
+   "parent_id": 20685,
+   "author": "DewardianDev",
+   "author_id": 23805,
+   "author_url": "https://forge.sp-tarkov.com/user/23805/dewardiandev",
+   "created_at": "2023-09-23T05:31:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Added magazines</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 87893,
+   "parent_id": 20936,
+   "author": "HackDiesel",
+   "author_id": 37123,
+   "author_url": "https://forge.sp-tarkov.com/user/37123/hackdiesel",
+   "created_at": "2023-09-24T04:05:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The randomized barter option after every raid works flawlessly.. fantastic update, appreciate you getting the kinks worked out.</p>\n<p>EDIT: They still seem to reset when trader inventory restocks, but that doesn\u2019t bother me personally.. it\u2019s predictable so you know what to expect and when to expect it. The rest of the time.. it\u2019s a surprise!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 87927,
+   "parent_id": 20936,
+   "author": "DewardianDev",
+   "author_id": 23805,
+   "author_url": "https://forge.sp-tarkov.com/user/23805/dewardiandev",
+   "created_at": "2023-09-24T20:04:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019ll look into this hmmm</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 21088,
+   "parent_id": null,
+   "author": "Nikkiel",
+   "author_id": 37563,
+   "author_url": "https://forge.sp-tarkov.com/user/37563/nikkiel",
+   "created_at": "2023-09-27T11:48:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I encountered a problem today, \u201creduceTraderLoyaltySpendRequirement\u201d just stopped working after I installed MoreCheckmarks mod, I play on hardcore and had most tradest on lvl 2 already. Now the money spent requirements went back to normal values. I deleted all files from the Checmarks mods but SpentRequirements are still basic. What do I do?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 88086,
+   "parent_id": 21088,
+   "author": "DewardianDev",
+   "author_id": 23805,
+   "author_url": "https://forge.sp-tarkov.com/user/23805/dewardiandev",
+   "created_at": "2023-09-27T14:50:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The checkmarks mod shouldn\u2019t alter those values, did you change the load order? Or SVM values?</p>\n<p>That seems very strange indeed.</p>\n<p>You could try loading the game once without my mod and then turn it back on and see if that helps.</p>\n<p>(Turn it on and off again\u2026 Lol)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 88113,
+   "parent_id": 21088,
+   "author": "Nikkiel",
+   "author_id": 37563,
+   "author_url": "https://forge.sp-tarkov.com/user/37563/nikkiel",
+   "created_at": "2023-09-27T22:15:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Tried turning it on and off with and without the mod files, nothing changes, my load order is empty, and it worked fine until now, could that be it?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 88115,
+   "parent_id": 21088,
+   "author": "Nikkiel",
+   "author_id": 37563,
+   "author_url": "https://forge.sp-tarkov.com/user/37563/nikkiel",
+   "created_at": "2023-09-27T22:31:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Ok, I fixed the order so that it fits the description on the mod page. Still nothing, weird</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 88117,
+   "parent_id": 21088,
+   "author": "Nikkiel",
+   "author_id": 37563,
+   "author_url": "https://forge.sp-tarkov.com/user/37563/nikkiel",
+   "created_at": "2023-09-27T23:09:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is there a way to lower the required \u201cspent\u201d values by hand? If yes then I\u2019d like to try that</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 88163,
+   "parent_id": 21088,
+   "author": "DewardianDev",
+   "author_id": 23805,
+   "author_url": "https://forge.sp-tarkov.com/user/23805/dewardiandev",
+   "created_at": "2023-09-28T21:21:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You might be able to do that with SVM.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 21222,
+   "parent_id": null,
+   "author": "Frosst",
+   "author_id": 33096,
+   "author_url": "https://forge.sp-tarkov.com/user/33096/frosst",
+   "created_at": "2023-09-30T19:27:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Any way to make this work with LPA? I\u2019ve gotten it to work with every other custom trader mod I have minus LPA, when I add it to the list of custom traders to include I get</p>\n<p>TypeError: Cannot read properties of undefined (reading \u2018itemsCost\u2019)</p>\n<p>TypeError: Cannot read properties of undefined (reading \u2018itemsCost\u2019)</p>\n<p>at C:\\Users\\Niall\\Desktop\\spt\\user\\mods\\DewardianDev-AlgorithmicBarterRandomizer\\src\\BarterChanger\\GlobalValues.js:153:44</p>\n<p>at Array.forEach (&lt;anonymous&gt;)</p>\n<p>at C:\\Users\\Niall\\Desktop\\spt\\user\\mods\\DewardianDev-AlgorithmicBarterRandomizer\\src\\BarterChanger\\GlobalValues.js:147:34</p>\n<p>at Array.forEach (&lt;anonymous&gt;)</p>\n<p>at Function.updateBarters (C:\\Users\\Niall\\Desktop\\spt\\user\\mods\\DewardianDev-AlgorithmicBarterRandomizer\\src\\BarterChanger\\GlobalValues.js:115:30)</p>\n<p>at Object.action (C:\\Users\\Niall\\Desktop\\spt\\user\\mods\\DewardianDev-AlgorithmicBarterRandomizer\\src\\BarterChanger\\BarterChanger.js:10:45)</p>\n<p>at StaticRouterMod.handleStatic (C:\\snapshot\\project\\obj\\di\\Router.js)</p>\n<p>at HttpRouter.handleRoute (C:\\snapshot\\project\\obj\\routers\\HttpRouter.js)</p>\n<p>at HttpRouter.getResponse (C:\\snapshot\\project\\obj\\routers\\HttpRouter.js)</p>\n<p>at AkiHttpListener.getResponse (C:\\snapshot\\project\\obj\\servers\\http\\AkiHttpListener.js)</p>\n<p>TypeError: Cannot read properties of undefined (reading \u2018itemsCost\u2019)</p>\n<p>TypeError: Cannot read properties of undefined (reading \u2018itemsCost\u2019)</p>\n<p>at C:\\Users\\Niall\\Desktop\\spt\\user\\mods\\DewardianDev-AlgorithmicBarterRandomizer\\src\\BarterChanger\\GlobalValues.js:153:44</p>\n<p>at Array.forEach (&lt;anonymous&gt;)</p>\n<p>at C:\\Users\\Niall\\Desktop\\spt\\user\\mods\\DewardianDev-AlgorithmicBarterRandomizer\\src\\BarterChanger\\GlobalValues.js:147:34</p>\n<p>at Array.forEach (&lt;anonymous&gt;)</p>\n<p>at Function.updateBarters (C:\\Users\\Niall\\Desktop\\spt\\user\\mods\\DewardianDev-AlgorithmicBarterRandomizer\\src\\BarterChanger\\GlobalValues.js:115:30)</p>\n<p>at Object.action (C:\\Users\\Niall\\Desktop\\spt\\user\\mods\\DewardianDev-AlgorithmicBarterRandomizer\\src\\BarterChanger\\BarterChanger.js:10:45)</p>\n<p>at StaticRouterMod.handleStatic (C:\\snapshot\\project\\obj\\di\\Router.js)</p>\n<p>at HttpRouter.handleRoute (C:\\snapshot\\project\\obj\\routers\\HttpRouter.js)</p>\n<p>at HttpRouter.getResponse (C:\\snapshot\\project\\obj\\routers\\HttpRouter.js)</p>\n<p>at AkiHttpListener.getResponse (C:\\snapshot\\project\\obj\\servers\\http\\AkiHttpListener.js)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 88258,
+   "parent_id": 21222,
+   "author": "DewardianDev",
+   "author_id": 23805,
+   "author_url": "https://forge.sp-tarkov.com/user/23805/dewardiandev",
+   "created_at": "2023-09-30T19:41:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>That\u2019s an error due to incorrectly set costs in the db, ie an issue caused by there mod. Nothing I can do from this side.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 88751,
+   "parent_id": 21088,
+   "author": "Spartak",
+   "author_id": 26708,
+   "author_url": "https://forge.sp-tarkov.com/user/26708/spartak",
+   "created_at": "2023-10-10T14:36:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I have been having this same problem with \u201creduceTraderLoyaltySpendRequirement\u201d. It also seems to include the traders resetting to default in terms of what they are willing to buy and at what price. The traders still offer barters. It seems like the hardcore options other than disabled flea market failing to take effect.</p>\n<p>I think it can be corrected by exiting the game, logging in to a different profile from the launcher then exiting and logging back in to the profile you\u2019d like to be playing.</p>\n<p>Things that don\u2019t seem to have an effect: starting/stopping the mod between server restarts, disabling/enabling hardcore settings, restarting the server and client repeatedly.</p>\n<p>It seems to happen once each day and correcting it will work for the day.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 88834,
+   "parent_id": 21088,
+   "author": "DewardianDev",
+   "author_id": 23805,
+   "author_url": "https://forge.sp-tarkov.com/user/23805/dewardiandev",
+   "created_at": "2023-10-11T01:28:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I may have to add that component to a hook then. hmm thanks for the feedback.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 21829,
+   "parent_id": null,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2023-10-12T17:36:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I was hopeful this would work in 3.7.0, but it did not, unfortunately. Just letting people know.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 89051,
+   "parent_id": 21829,
+   "author": "DewardianDev",
+   "author_id": 23805,
+   "author_url": "https://forge.sp-tarkov.com/user/23805/dewardiandev",
+   "created_at": "2023-10-12T18:50:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yup, I am aware.<br />\nWorking on getting my other mods up, this is last on the list of importance.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 89394,
+   "parent_id": 21829,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2023-10-14T16:21:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>imho, one of the coolest mods on the site. Should be top prio. Nah mate, take your time. Love your mods.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 22206,
+   "parent_id": null,
+   "author": "DewardianDev",
+   "author_id": 23805,
+   "author_url": "https://forge.sp-tarkov.com/user/23805/dewardiandev",
+   "created_at": "2023-10-16T03:03:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <h3><a href=\"https://hub.sp-tarkov.com/files/download/7890/\" target=\"_blank\" rel=\"noreferrer noopener\">Version 1.3.0</a></h3>\n<p>Minor Update</p>\n<ul>\n<li>Updated to 3.7.0/3.7.1 (previous versions were broken)</li>\n<li>Fixed an issue with setting certain trader values on hardcore not staying after raid end.</li>\n</ul>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 22223,
+   "parent_id": null,
+   "author": "Posti",
+   "author_id": 38455,
+   "author_url": "https://forge.sp-tarkov.com/user/38455/posti",
+   "created_at": "2023-10-16T07:05:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Just wanted to say thanks for the mod - amazing for a scavenger no fleamarket playthrough!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 89758,
+   "parent_id": 22206,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2023-10-16T09:50:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The best news I could ever wake up to. Amazing!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 22246,
+   "parent_id": null,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2023-10-16T12:57:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I noticed that if traders refresh through time, they will sell everything for regular cash again. It will fix itself if you do a quick run. A fix I made for myself is just making the traders never refresh from time, which is fine since each raid randomizes their barters anyway.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 22264,
+   "parent_id": null,
+   "author": "Sasuke_Kun",
+   "author_id": 36558,
+   "author_url": "https://forge.sp-tarkov.com/user/36558/sasuke-kun",
+   "created_at": "2023-10-16T16:46:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>sorry for this strange question but is the debug/cashitem, setting relevant/important to turn on ? i dont really understand the reason of it.</p>\n<p>btw i dont use hardcore.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 89832,
+   "parent_id": 22264,
+   "author": "DewardianDev",
+   "author_id": 23805,
+   "author_url": "https://forge.sp-tarkov.com/user/23805/dewardiandev",
+   "created_at": "2023-10-16T17:51:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>no, you can ignore those if not using hardcore.</p>\n<p>The only setting you may change if not using hardcore:</p>\n<p>seed,<br />\nbarterCostMultiplier,</p>\n<p>Read the documentation on the overview for what those do.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 89890,
+   "parent_id": 22246,
+   "author": "DewardianDev",
+   "author_id": 23805,
+   "author_url": "https://forge.sp-tarkov.com/user/23805/dewardiandev",
+   "created_at": "2023-10-16T21:21:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for the callout, I\u2019ll look into it</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 22344,
+   "parent_id": null,
+   "author": "Bandetto",
+   "author_id": 35852,
+   "author_url": "https://forge.sp-tarkov.com/user/35852/bandetto",
+   "created_at": "2023-10-17T13:05:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Noticed that with lower trader money requirements it will give peacekeeper 2 100k dollars (which is a lot more than it should be, oops!)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 89967,
+   "parent_id": 22344,
+   "author": "DewardianDev",
+   "author_id": 23805,
+   "author_url": "https://forge.sp-tarkov.com/user/23805/dewardiandev",
+   "created_at": "2023-10-17T13:22:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Oh lol. Derp, will fix</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 89995,
+   "parent_id": 22344,
+   "author": "DewardianDev",
+   "author_id": 23805,
+   "author_url": "https://forge.sp-tarkov.com/user/23805/dewardiandev",
+   "created_at": "2023-10-17T16:10:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Also going to look at the refresh mechanism and see if I can tie into that.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 22558,
+   "parent_id": null,
+   "author": "Foxxee",
+   "author_id": 32981,
+   "author_url": "https://forge.sp-tarkov.com/user/32981/foxxee",
+   "created_at": "2023-10-20T02:29:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Just a notice to others using Realism this mod it seems to be incompatible with the realism\u2019s trader changes as it resets to the original barters after restocking.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 90345,
+   "parent_id": 22558,
+   "author": "DewardianDev",
+   "author_id": 23805,
+   "author_url": "https://forge.sp-tarkov.com/user/23805/dewardiandev",
+   "created_at": "2023-10-20T03:52:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Not related to realism it\u2019s a know issue I\u2019m addressing</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 90425,
+   "parent_id": 22558,
+   "author": "Foxxee",
+   "author_id": 32981,
+   "author_url": "https://forge.sp-tarkov.com/user/32981/foxxee",
+   "created_at": "2023-10-21T00:14:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Great! Thank you so much for trying to fix it!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 22646,
+   "parent_id": null,
+   "author": "QDkivish",
+   "author_id": 32248,
+   "author_url": "https://forge.sp-tarkov.com/user/32248/qdkivish",
+   "created_at": "2023-10-21T13:07:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Some containers are not randomized using seed 0. Is this intended?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 90492,
+   "parent_id": 22344,
+   "author": "Bandetto",
+   "author_id": 35852,
+   "author_url": "https://forge.sp-tarkov.com/user/35852/bandetto",
+   "created_at": "2023-10-21T15:29:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Just noticed that Dollars and Euros are turned into barters, not sure if this is intentional behaviour but on this seed a D battery = 1 Dollar. Bit difficult to gather alternative currency unless you grab it in raid instead.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 90538,
+   "parent_id": 22344,
+   "author": "DewardianDev",
+   "author_id": 23805,
+   "author_url": "https://forge.sp-tarkov.com/user/23805/dewardiandev",
+   "created_at": "2023-10-21T23:27:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Oh, that\u2019s not supposed to happen.</p>\n<p>Ugh.. this mod needs some love</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 91019,
+   "parent_id": 22646,
+   "author": "DewardianDev",
+   "author_id": 23805,
+   "author_url": "https://forge.sp-tarkov.com/user/23805/dewardiandev",
+   "created_at": "2023-10-25T17:33:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The most expensive trades may have less chance (per seed) of being different.<br />\nThis is known.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 22994,
+   "parent_id": null,
+   "author": "DewardianDev",
+   "author_id": 23805,
+   "author_url": "https://forge.sp-tarkov.com/user/23805/dewardiandev",
+   "created_at": "2023-10-25T17:34:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>So I need to update this mod a bit, it\u2019s not in a good place right now.<br />\nIf you want to use it feel free, but I have to add the code to the refresh trader hook and just can\u2019t be bothered at the moment.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 23179,
+   "parent_id": null,
+   "author": "DewardianDev",
+   "author_id": 23805,
+   "author_url": "https://forge.sp-tarkov.com/user/23805/dewardiandev",
+   "created_at": "2023-10-28T06:28:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <h3><a href=\"https://hub.sp-tarkov.com/files/download/8071/\" target=\"_blank\" rel=\"noreferrer noopener\"><strong>Version 1.4.0</strong></a></h3>\n<p><strong>Major Update</strong></p>\n<ul>\n<li><strong>Removed Hardcore mode It\u2019s broken right now and I don\u2019t have time to fix it.</strong></li>\n<li>Updated barters to be updated when traders reset and after each raid.</li>\n</ul>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 23637,
+   "parent_id": null,
+   "author": "lElwoodBluesl",
+   "author_id": 35192,
+   "author_url": "https://forge.sp-tarkov.com/user/35192/lelwoodbluesl",
+   "created_at": "2023-11-05T04:28:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Exactly the mod I was looking for. Unlike QDkivish my question is the total opposite of his<br />\nI\u2019m personally not a big fan of the random item assignment. In my case (with default seed settings, i.e. 2023), I get a certain item assignment. After the first raid a lot of barters then have newly assigned items. As long as I keep the SPT server running it will stay like this. Once I restart the server, I get again the initial assignment.<br />\nThat behavior ends up in initially e.g. 1x Firesteel for an M4A1 at Peacekeeper, after the reassignment it\u2019s 1x Meldonin injector.<br />\nI\u2019m currently using 1.3.0 (last version with hardcore mode). I guess when you deactivated the hc mode in latest 1.4.0 (because of being broken) it was most likely because much cheaper items are assigned for an expensive barter - and not because of that random assignment I explained above. Please correct me if I\u2019m wrong.</p>\n<p>You wrote that you\u2019re currently busy with other stuff. So my question would be, could you please tell me, what I need to adjust/comment out (in the code) so I deactivate that randomizer? The behavior I\u2019m looking for is always the same barters - no matter of raid-to-raid or server restart.</p>\n<p>I tried to use the version before the randomizer was integrated, i.e. 1.1.2 (which according to the package.json should work with 3.x.x), but if I use it with 3.7.1 I get a loading error at the server window.</p>\n<p>Would be great if you can give me a hint, what I need to adjust. Thanks a lot in advance.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 94083,
+   "parent_id": 23637,
+   "author": "Neeners",
+   "author_id": 28022,
+   "author_url": "https://forge.sp-tarkov.com/user/28022/neeners",
+   "created_at": "2023-12-07T17:43:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hiya, I\u2019m looking for the same behaviour! Have you been able to make any progress on this?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 94095,
+   "parent_id": 23637,
+   "author": "lElwoodBluesl",
+   "author_id": 35192,
+   "author_url": "https://forge.sp-tarkov.com/user/35192/lelwoodbluesl",
+   "created_at": "2023-12-07T19:28:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yeah, I adjusted parts of the mod. Now I have always constant items, even after server restart. Furthermore I found an awesome seed number so the super high tier items (like e.g. THICC Item container) still require rare spawn things like e.g. ledx.</p>\n<p>If you\u2019re at the Discord channel, search and pm me via the name IBlackMambaI so I can show you what I adjusted.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 25842,
+   "parent_id": null,
+   "author": "AIGUWFG",
+   "author_id": 25006,
+   "author_url": "https://forge.sp-tarkov.com/user/25006/aiguwfg",
+   "created_at": "2024-01-01T12:54:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi, nice mod, could you please add seed randomization on first launch?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 26580,
+   "parent_id": null,
+   "author": "LeGourmet",
+   "author_id": 27430,
+   "author_url": "https://forge.sp-tarkov.com/user/27430/legourmet",
+   "created_at": "2024-01-21T17:33:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi, does this work for 3.7.6 or need an update ?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 37105,
+   "parent_id": null,
+   "author": "S13NDR_M4N",
+   "author_id": 50652,
+   "author_url": "https://forge.sp-tarkov.com/user/50652/s13ndr-m4n",
+   "created_at": "2024-07-22T17:49:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>1. Does this turn all offers into barters? or have an option to do so?</p>\n<p>2. Is it compatible with Deadleaves\u2019 \u201cBarter economy\u201d which does do that</p>\n<p>2A. - if so, load this or BE first?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 48323,
+   "parent_id": null,
+   "author": "DewardianDev",
+   "author_id": 23805,
+   "author_url": "https://forge.sp-tarkov.com/user/23805/dewardiandev",
+   "created_at": "2025-02-10T17:31:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This is being worked on and functioning well for 3.10.</p>\n<p>Just need to make it configurable.</p>\n<p>Release soon.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 130742,
+   "parent_id": 48323,
+   "author": "Foxxee",
+   "author_id": 32981,
+   "author_url": "https://forge.sp-tarkov.com/user/32981/foxxee",
+   "created_at": "2025-05-04T04:02:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Great! I can\u2019t wait for it</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 52903,
+   "parent_id": null,
+   "author": "DewardianDev",
+   "author_id": 23805,
+   "author_url": "https://forge.sp-tarkov.com/user/23805/dewardiandev",
+   "created_at": "2025-06-16T22:36:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I may bring this back, but have too much work atm.</p>\n<p>My apologies folks!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

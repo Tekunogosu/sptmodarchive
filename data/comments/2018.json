@@ -1,0 +1,100 @@
+{
+ "mod_id": 2018,
+ "slug": "airdrop-config-options",
+ "fetched_at": "2026-08-09T07:50:33Z",
+ "reported_total": null,
+ "pages": 1,
+ "count": 9,
+ "comments": [
+  {
+   "id": 49076,
+   "parent_id": null,
+   "author": "UnknownTrouble",
+   "author_id": 14851,
+   "author_url": "https://forge.sp-tarkov.com/user/14851/unknowntrouble",
+   "created_at": "2025-03-03T01:22:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I cant seem to enable the chances of airdrop weight option without it causing an error that prevents the game from loading to the start menu. any ideas what I can do to prevent that?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 127675,
+   "parent_id": 49076,
+   "author": "RagingBeardo",
+   "author_id": 19435,
+   "author_url": "https://forge.sp-tarkov.com/user/19435/ragingbeardo",
+   "created_at": "2025-03-03T13:10:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I would need more information other than that it doesn\u2019t work. Do you see any errors? Did you change the default values, if you did what are the values? I just tested it again with defaults and it does boot up for me.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 49230,
+   "parent_id": null,
+   "author": "Arlensauce",
+   "author_id": 39048,
+   "author_url": "https://forge.sp-tarkov.com/user/39048/arlensauce",
+   "created_at": "2025-03-08T21:50:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i changed the drop chance per map to all 90% and i get the issue where i get a fail to start at menu and error code</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 127908,
+   "parent_id": 49230,
+   "author": "RagingBeardo",
+   "author_id": 19435,
+   "author_url": "https://forge.sp-tarkov.com/user/19435/ragingbeardo",
+   "created_at": "2025-03-09T07:51:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>posted an update that should hopefully fix the problem</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 127909,
+   "parent_id": 49230,
+   "author": "Arlensauce",
+   "author_id": 39048,
+   "author_url": "https://forge.sp-tarkov.com/user/39048/arlensauce",
+   "created_at": "2025-03-09T08:02:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>cool, ill try it out</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 127911,
+   "parent_id": 49230,
+   "author": "Arlensauce",
+   "author_id": 39048,
+   "author_url": "https://forge.sp-tarkov.com/user/39048/arlensauce",
+   "created_at": "2025-03-09T08:30:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>no issues loading in anymore, thanks</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 49624,
+   "parent_id": null,
+   "author": "sumyungguy",
+   "author_id": 41604,
+   "author_url": "https://forge.sp-tarkov.com/user/41604/sumyungguy",
+   "created_at": "2025-03-18T21:58:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>do you know of a way to change the value that controls the hight that the smoke travels into the air? i looked and couldnt find it in the spt code. not sure if im just in the wrong place maybe bsg put that value in a different part and not with the carepackage totals?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 153756,
+   "parent_id": 49076,
+   "author": "_niceguy",
+   "author_id": 105225,
+   "author_url": "https://forge.sp-tarkov.com/user/105225/niceguy",
+   "created_at": "2026-02-26T15:39:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>{\n\u201cdebugLogsEnabled\u201d: true,\n\u201ctoggle\u201d: {\n\u201cairDropTimingEnabled\u201d: true,\n\u201cairDropTypeWeightingEnabled\u201d: false,\n\u201cairDropPercentChanceByLocationEnabled\u201d: true,\n\u201cairDropLootConfigEnabled\u201d: false,\n\u201creplaceLists\u201d: false\n},\n\u201cairdropTiming\u201d: {\n\u201cplaneAirdropStartMin\u201d: 007,\n\u201cplaneAirdropStartMax\u201d: 900\n},\n\u201cairdropTypeWeighting\u201d: {\n\u201cmixed\u201d: 5,\n\u201cweaponArmor\u201d: 4,\n\u201cfoodMedical\u201d: 1,\n\u201cbarter\u201d: 1\n},\n\u201cairdropPercentChanceByLocation\u201d: {\n\u201ccustoms\u201d: 99,\n\u201cinterchange\u201d: 99,\n\u201cwoods\u201d: 99,\n\u201cshoreline\u201d: 99,\n\u201creserve\u201d: 99,\n\u201cstreets\u201d: 99,\n\u201clighthouse\u201d: 99\n},</p>\n<p>error:</p>\n<pre><code>\"t'bugLogsEnabled\": true,in JSON at position 333 while parsing '{\n\"t'bugLogsEnabled\": true,in JSON at position 333 while parsing '{\nat C:\\snapshot\\project\\node_modules\\parse-json\\index.js:26:19\nat Function.parse (C:\\snapshot\\project\\node_modules\\jsonc\\lib\\jsonc.js:176:16)\nat Mod.postDBLoad (E:\\RANDOM BULL\\GAMES\\Escape.From.Tarkov.v0.15.5.1.33420-P2P\\user\\mods\\ragingbeardo-airdropconfig\\src\\mod.ts:26:32)\nat PostDBModLoader.executeModsAsync (C:\\snapshot\\src\\loaders\\PostDBModLoader.ts:63:45)\nat PostDBModLoader.onLoad (C:\\snapshot\\src\\loaders\\PostDBModLoader.ts:26:24)\nat App.load (C:\\snapshot\\src\\utils\\App.ts:53:26)\n\"t'bugLogsEnabled\": true,in JSON at position 333 while parsing '{\n\"t'bugLogsEnabled\": true,in JSON at position 333 while parsing '{\nat C:\\snapshot\\project\\node_modules\\parse-json\\index.js:26:19\nat Function.parse (C:\\snapshot\\project\\node_modules\\jsonc\\lib\\jsonc.js:176:16)\nat Mod.postDBLoad (E:\\RANDOM BULL\\GAMES\\Escape.From.Tarkov.v0.15.5.1.33420-P2P\\user\\mods\\ragingbeardo-airdropconfig\\src\\mod.ts:26:32)\nat PostDBModLoader.executeModsAsync (C:\\snapshot\\src\\loaders\\PostDBModLoader.ts:63:45)\nat PostDBModLoader.onLoad (C:\\snapshot\\src\\loaders\\PostDBModLoader.ts:26:24)\nat App.load (C:\\snapshot\\src\\utils\\App.ts:53:26)\n</code></pre>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 153758,
+   "parent_id": 49076,
+   "author": "RagingBeardo",
+   "author_id": 19435,
+   "author_url": "https://forge.sp-tarkov.com/user/19435/ragingbeardo",
+   "created_at": "2026-02-26T16:07:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Just a heads up, I haven\u2019t touched this in a long time and don\u2019t have spt installed so I won\u2019t be able to provide support.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

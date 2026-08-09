@@ -1,0 +1,130 @@
+{
+ "mod_id": 2467,
+ "slug": "first-aid",
+ "fetched_at": "2026-08-09T08:03:28Z",
+ "reported_total": null,
+ "pages": 1,
+ "count": 12,
+ "comments": [
+  {
+   "id": 143799,
+   "parent_id": null,
+   "author": "Zekiel",
+   "author_id": 85846,
+   "author_url": "https://forge.sp-tarkov.com/user/85846/zekiel",
+   "created_at": "2025-11-25T08:48:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is this save compatible?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 143804,
+   "parent_id": 143799,
+   "author": "Speenks",
+   "author_id": 73061,
+   "author_url": "https://forge.sp-tarkov.com/user/73061/speenks",
+   "created_at": "2025-11-25T09:23:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>What do you mean? \ud83d\ude05 Like a save game? Or a revival mod?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 143805,
+   "parent_id": 143799,
+   "author": "Zekiel",
+   "author_id": 85846,
+   "author_url": "https://forge.sp-tarkov.com/user/85846/zekiel",
+   "created_at": "2025-11-25T09:24:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i mean is it safe to add on existing profiles sorry</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 143811,
+   "parent_id": 143799,
+   "author": "Speenks",
+   "author_id": 73061,
+   "author_url": "https://forge.sp-tarkov.com/user/73061/speenks",
+   "created_at": "2025-11-25T10:19:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Oh yes. At most, it might change some of the resource values of existing medical items, so you may see oddities such as 1/2 use bandages, or 3/2 use caloks.</p>\n<p>All of the custom items are brand new IDs, so they won\u2019t harm anything on an existing profile. If you obtain some of these items and then remove the mod without deleting the custom items, that\u2019s where you could encounter issues.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 143863,
+   "parent_id": null,
+   "author": "0017setsuna",
+   "author_id": 91781,
+   "author_url": "https://forge.sp-tarkov.com/user/91781/0017setsuna",
+   "created_at": "2025-11-25T21:13:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi, trying to get this mod to run but I\u2019m getting this error:</p>\n<p>TypeError: Cannot set properties of undefined (setting \u2018value\u2019)\nTypeError: Cannot set properties of undefined (setting \u2018value\u2019)\nat CustomFirstAidKits.postDBLoad (D:\\SPT 3.11 Final\\user\\mods\\Speenks-kyoukopan-FirstAid\\src\\mod.ts:195:51)\nat PostDBModLoader.executeModsAsync (C:\\snapshot\\project\\obj\\loaders\\PostDBModLoader.js)\nat PostDBModLoader.onLoad (C:\\snapshot\\project\\obj\\loaders\\PostDBModLoader.js)\nat App.load (C:\\snapshot\\project\\obj\\utils\\App.js)\nTypeError: Cannot set properties of undefined (setting \u2018value\u2019)\nTypeError: Cannot set properties of undefined (setting \u2018value\u2019)\nat CustomFirstAidKits.postDBLoad (D:\\SPT 3.11 Final\\user\\mods\\Speenks-kyoukopan-FirstAid\\src\\mod.ts:195:51)\nat PostDBModLoader.executeModsAsync (C:\\snapshot\\project\\obj\\loaders\\PostDBModLoader.js)\nat PostDBModLoader.onLoad (C:\\snapshot\\project\\obj\\loaders\\PostDBModLoader.js)\nat App.load (C:\\snapshot\\project\\obj\\utils\\App.js)</p>\n<p>Any clue what could cause this?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 143866,
+   "parent_id": 143863,
+   "author": "0017setsuna",
+   "author_id": 91781,
+   "author_url": "https://forge.sp-tarkov.com/user/91781/0017setsuna",
+   "created_at": "2025-11-25T21:36:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I tried troubleshooting this myself and for some reason this mod is incompatible with Realism, I\u2019ll see if I can figure out why and let you know.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 143867,
+   "parent_id": 143863,
+   "author": "0017setsuna",
+   "author_id": 91781,
+   "author_url": "https://forge.sp-tarkov.com/user/91781/0017setsuna",
+   "created_at": "2025-11-25T21:46:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Okay, I managed to fix the issue by loading this mod before Realism, I think the medical changes are clashing. Will leave this here for anyone else with the same issue.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 143868,
+   "parent_id": 143863,
+   "author": "Speenks",
+   "author_id": 73061,
+   "author_url": "https://forge.sp-tarkov.com/user/73061/speenks",
+   "created_at": "2025-11-25T22:02:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Oh, sorry, I should probably add that this is more or less an <em>alternative</em> to any other medical system and therefore incompatible \ud83d\ude05 I\u2019m happy that you were able to arrive at a solution, and if it works best for you, you should keep it that way.  However, the intended configuration is to just choose one or the other.  Even though I believe the original mod was designed for both, I do not personally use Realism\u2019s medical changes, as much as I want the hazard zones- they are unfortunately incompatible with Fika.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 144021,
+   "parent_id": null,
+   "author": "fxh3d",
+   "author_id": 78923,
+   "author_url": "https://forge.sp-tarkov.com/user/78923/fxh3d",
+   "created_at": "2025-11-27T01:46:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is a 4.0 version planned?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 144134,
+   "parent_id": 144021,
+   "author": "Speenks",
+   "author_id": 73061,
+   "author_url": "https://forge.sp-tarkov.com/user/73061/speenks",
+   "created_at": "2025-11-28T02:54:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I can\u2019t promise anything friend; I\u2019ve been working on these mods since 3.9 and just now started my 3.11 playthrough using them.  If I do end up updating them, it will be a total rewrite because I\u2019ve learned better ways of doing things and of course there is the fact that 4.0 is written in an entirely different language.  I hope you can still find some enjoyment out of them in their outdated form\u2013I certainly am \ud83d\ude42</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 154865,
+   "parent_id": 143863,
+   "author": "Alecu",
+   "author_id": 67504,
+   "author_url": "https://forge.sp-tarkov.com/user/67504/alecu",
+   "created_at": "2026-03-15T12:52:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>does it work ingame? i did what you said and the error at boot dissapeared but now trying to open therapist trading window gives this error\nError\nJSON parsing error in response to <a href=\"https://127.0.0.1:6969/client/trading/api/getTrad\" target=\"_blank\" rel=\"noreferrer noopener\">https://127.0.0.1:6969/client/trading/api/getTrad</a> erAssort/54cb57776803fa99248b456e at line 1, position 19650: Error converting value (null) to type \u2018System.Int32\u2019. Path \u201868be81cf939572cbf00d9c51\u2019, line 1, position 19650.\nOK</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 154873,
+   "parent_id": 143863,
+   "author": "Speenks",
+   "author_id": 73061,
+   "author_url": "https://forge.sp-tarkov.com/user/73061/speenks",
+   "created_at": "2026-03-15T17:36:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m using it in my current playthrough, so yes \ud83d\ude42\nThis error usually sprouts from a trader trying to push an item that doesn\u2019t exist into their assort (trader inventory).  As this mod includes everything that it pushes to each respective trader, it shouldn\u2019t be causing this issue if installed correctly.  Perhaps a mod conflict?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  }
+ ]
+}

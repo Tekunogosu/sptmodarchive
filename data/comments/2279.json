@@ -1,0 +1,150 @@
+{
+ "mod_id": 2279,
+ "slug": "trader-assort-extender",
+ "fetched_at": "2026-08-09T08:02:40Z",
+ "reported_total": null,
+ "pages": 1,
+ "count": 14,
+ "comments": [
+  {
+   "id": 135811,
+   "parent_id": null,
+   "author": "Ha7an",
+   "author_id": 69513,
+   "author_url": "https://forge.sp-tarkov.com/user/69513/ha7an",
+   "created_at": "2025-09-03T10:04:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Would you be able to make a mod, where items from moddded traders get placed to the proper standard trader?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135818,
+   "parent_id": null,
+   "author": "MSGScooteroll3k",
+   "author_id": 58441,
+   "author_url": "https://forge.sp-tarkov.com/user/58441/msgscooteroll3k",
+   "created_at": "2025-09-03T15:27:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>what am I exactly pasting in the \u201cremove\u201d config to remove items? not very clear\u2026</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135823,
+   "parent_id": 135811,
+   "author": "Dsnyder",
+   "author_id": 28568,
+   "author_url": "https://forge.sp-tarkov.com/user/28568/dsnyder",
+   "created_at": "2025-09-03T16:04:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>What would be the point of this?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135828,
+   "parent_id": 135818,
+   "author": "GoatBoy",
+   "author_id": 9529,
+   "author_url": "https://forge.sp-tarkov.com/user/9529/goatboy",
+   "created_at": "2025-09-03T19:22:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>My bad I should of clarified, I recommend using <a href=\"https://hub.sp-tarkov.com/files/file/2112-debug-tooltip/#overview\" target=\"_blank\" rel=\"noreferrer noopener\">Debug Tooltip</a> by Tyfon, as you can copy the TPL directly from the trader\u2019s inventory, otherwise you would have to find the assort.json for each trader that you want to mod, you would use the TPL to create a list in the remove.json, ex.</p>\n<p>[<br />\n\u201cTPL_1\u201d,<br />\n\u201cTPL_2\u201d,<br />\n\u201cTPL_3\u201d,<br />\n\u201cTPL_4\u201d,<br />\n\u201cTPL_5\u201d<br />\n]</p>\n<p>Also note that if you want to remove an item, that has multiple listings from the same trader, for example Analgin Painkillers from Therapist is listed for roubles and a barter, both listings would be gone, you would have to add both back, if you wanted them at a different price or trader level, a small inconvenience but I don\u2019t currently know of a work around</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 135829,
+   "parent_id": 135811,
+   "author": "GoatBoy",
+   "author_id": 9529,
+   "author_url": "https://forge.sp-tarkov.com/user/9529/goatboy",
+   "created_at": "2025-09-03T19:23:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This unfortunately is probably the better route to go, as it would be hard to determine what item goes to what trader, it\u2019s more work, but it is a lot more personalized this way, I made this for this exact reason actually haha</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135836,
+   "parent_id": 135818,
+   "author": "MSGScooteroll3k",
+   "author_id": 58441,
+   "author_url": "https://forge.sp-tarkov.com/user/58441/msgscooteroll3k",
+   "created_at": "2025-09-03T22:57:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>ah okii, thanks!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 135962,
+   "parent_id": null,
+   "author": "Tedratox",
+   "author_id": 84289,
+   "author_url": "https://forge.sp-tarkov.com/user/84289/tedratox",
+   "created_at": "2025-09-06T01:57:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>how can i add all secure container in a trader?<br />\ni try to add id\u2019s item in \u201citems\u201d but don\u2019t work</p>\n<p>{</p>\n<p>\u201citems\u201d: [],</p>\n<p>\u201cbarter_scheme\u201d: {},</p>\n<p>\u201cloyal_level_items\u201d: {}</p>\n<p>}</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 136075,
+   "parent_id": 135962,
+   "author": "GoatBoy",
+   "author_id": 9529,
+   "author_url": "https://forge.sp-tarkov.com/user/9529/goatboy",
+   "created_at": "2025-09-06T03:04:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>the formatting is the exact same as any trader\u2019s assort.json is structured, also don\u2019t forget that you have to add commas where it is appropriate when adding additional entries, here is one example of a kappa container for 500,000 roubles, a max of 3 that you can buy per reset, and it is at trader level 1:</p>\n<p>{ \u201citems\u201d: [ { \u201c_id\u201d: \u201c68bba427970c87d64a2f69bc\u201d, \u201c_tpl\u201d: \u201c5c093ca986f7740a1867ab12\u201d, \u201cparentId\u201d: \u201chideout\u201d, \u201cslotId\u201d: \u201chideout\u201d, \u201cupd\u201d: { \u201cStackObjectsCount\u201d: 9999999, \u201cUnlimitedCount\u201d: true, \u201cBuyRestrictionMax\u201d: 3, \u201cBuyRestrictionCurrent\u201d: 0 } } ], \u201cbarter_scheme\u201d: { \u201c68bba427970c87d64a2f69bc\u201d: [ [ { \u201c_tpl\u201d: \u201c5449016a4bdc2d6f028b456f\u201d, \u201ccount\u201d: 500000 } ] ] }, \u201cloyal_level_items\u201d: { \u201c68bba427970c87d64a2f69bc\u201d: 1 } }</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 136101,
+   "parent_id": 135962,
+   "author": "GoatBoy",
+   "author_id": 9529,
+   "author_url": "https://forge.sp-tarkov.com/user/9529/goatboy",
+   "created_at": "2025-09-06T18:01:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I forgot to mention as well, it is important that when you add a new item, you need to use a mongo24 object ID for the ID field, it is unique for each entry, so do not re use any for other entries, in the example above, the mongo ID is \u201c_id\u201d: \u201c68bba427970c87d64a2f69bc\u201d it is used as an identifier when you are setting it\u2019s barter and loyalty values further down in the assort.json</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 136342,
+   "parent_id": null,
+   "author": "FallegaHQ",
+   "author_id": 69214,
+   "author_url": "https://forge.sp-tarkov.com/user/69214/fallegahq",
+   "created_at": "2025-09-11T17:52:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>hey</p>\n<p>I have released this mod</p>\n<p><a href=\"https://hub.sp-tarkov.com/files/file/3017-mod-configurator/\" target=\"_blank\" rel=\"noreferrer noopener\">Mod Configurator</a></p>\n<p>If you want to support my mod, please let me know and I will help you with the setup if you need/want</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 137933,
+   "parent_id": null,
+   "author": "Luma",
+   "author_id": 80430,
+   "author_url": "https://forge.sp-tarkov.com/user/80430/luma",
+   "created_at": "2025-10-04T04:24:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>we couldn\u2019t figure out how to use this mod. we tried using the tpl and item id of propital and it kept saying it couldn\u2019t convert the value we put in to a gclass1319 when we opened therapist ingame</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 137998,
+   "parent_id": 137933,
+   "author": "GoatBoy",
+   "author_id": 9529,
+   "author_url": "https://forge.sp-tarkov.com/user/9529/goatboy",
+   "created_at": "2025-10-05T12:02:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>My bad, I am planning on rebuilding this mod within the next week to make it more seamless and fix some issues that I have noticed, if you are adding an item, you need to use a mongo24 object ID for the ID field, it is unique for each entry, so do not re use any for other entries, it is used as an identifier when you are setting it\u2019s barter and loyalty values further down in the assort.json, sorry for any confusion</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 142901,
+   "parent_id": null,
+   "author": "Benzo",
+   "author_id": 32603,
+   "author_url": "https://forge.sp-tarkov.com/user/32603/benzo",
+   "created_at": "2025-11-17T13:34:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2025-11-17 13:52:05]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 142905,
+   "parent_id": 142901,
+   "author": "Benzo",
+   "author_id": 32603,
+   "author_url": "https://forge.sp-tarkov.com/user/32603/benzo",
+   "created_at": "2025-11-17T13:44:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2025-11-17 13:52:39]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

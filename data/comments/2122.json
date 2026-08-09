@@ -1,0 +1,270 @@
+{
+ "mod_id": 2122,
+ "slug": "wtt-fusion-hub",
+ "fetched_at": "2026-08-09T07:44:35Z",
+ "reported_total": 12,
+ "pages": 2,
+ "count": 26,
+ "comments": [
+  {
+   "id": 51380,
+   "parent_id": null,
+   "author": "QDkivish",
+   "author_id": 32248,
+   "author_url": "https://forge.sp-tarkov.com/user/32248/qdkivish",
+   "created_at": "2025-05-02T09:47:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Just a thought</p>\n<p>Is it possible to have a backup side/offset iron sight? Like have 2 offset side rails allowing to mount rear/front sight.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 130657,
+   "parent_id": 51380,
+   "author": "Qwertyalex",
+   "author_id": 53632,
+   "author_url": "https://forge.sp-tarkov.com/user/53632/qwertyalex",
+   "created_at": "2025-05-02T10:10:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>AFAIK they don\u2019t do a rear sight, and the only other model I have is a ring-mount for a flashlight that I still need to get added for the full set. It\u2019d definitely be interesting to see added at some point though since atm we only have canted optics.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 130658,
+   "parent_id": 51380,
+   "author": "Devraccoon Senior Moderator",
+   "author_id": 20914,
+   "author_url": "https://forge.sp-tarkov.com/user/20914/devraccoon",
+   "created_at": "2025-05-02T12:41:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Lol that was my first thought when I was reading the modpage. \u201cwoah canted irons are coming??\u201d</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 130664,
+   "parent_id": 51380,
+   "author": "Qwertyalex",
+   "author_id": 53632,
+   "author_url": "https://forge.sp-tarkov.com/user/53632/qwertyalex",
+   "created_at": "2025-05-02T14:21:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I do have a theory on how it *might* work if I can do it without client-coding, but need to test it at some point. So many ideas, so little time to do them lol</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 130666,
+   "parent_id": 51380,
+   "author": "FDE",
+   "author_id": 14309,
+   "author_url": "https://forge.sp-tarkov.com/user/14309/fde",
+   "created_at": "2025-05-02T14:45:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019ve tried to do that back on SPT version 2.X-something with other mods</p>\n<p>The result I got is that they (either BSG or the author) modeled iron sight vs red dot sight different, for example, if you add red dot to a canted sight, your POV will follows the canted sight, meaning your gun will go from straight 90o to 45o because you\u2019re aiming with the canted sight</p>\n<p>If you were to add irons to the canted sight, BSG will treat it as a normal iron sight, so rather than canting your gun, your gun will stay straight at 90o, you will still aim through the irons, but you\u2019ll be aiming with 45o sights instead lol</p>\n<p>Now, idk if that\u2019s the result of BSG, or the mod author, so please go ahead and try to implement it yourself and see if it\u2019ll end up with the same result!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 130673,
+   "parent_id": 51380,
+   "author": "Qwertyalex",
+   "author_id": 53632,
+   "author_url": "https://forge.sp-tarkov.com/user/53632/qwertyalex",
+   "created_at": "2025-05-02T20:34:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>That\u2019s really useful info to know for testing out, thanks. It might be due to the camera-view bone (would need to look up the proper name). Hopefully BSG got it working easily but ye, it might need a fair amount of work to get it to work.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 51424,
+   "parent_id": null,
+   "author": "Corritus",
+   "author_id": 66016,
+   "author_url": "https://forge.sp-tarkov.com/user/66016/corritus",
+   "created_at": "2025-05-03T21:21:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The application had a critical error and failed to run</p>\n<p>Exception produced: Error</p>\n<p>Stacktrace:</p>\n<p>Error: Attempted to resolve unregistered dependency token: \u201cVFS\u201d</p>\n<p>at InternalDependencyContainer.resolve (C:\\snapshot\\project\\node_modules\\tsyringe\\dist\\cjs\\dependency-container.js:105:19)</p>\n<p>at WTTInstanceManager.preSptLoad (C:\\SPT\\3.11.3\\user\\mods\\WTT - Fusion Mounts\\src\\WTTInstanceManager.ts:79:30)</p>\n<p>at FusionMount.preSptLoad (C:\\SPT\\3.11.3\\user\\mods\\WTT - Fusion Mounts\\src\\mod.ts:36:30)</p>\n<p>at PreSptModLoader.executeModsAsync (C:\\snapshot\\project\\obj\\loaders\\PreSptModLoader.js)</p>\n<p>at PreSptModLoader.load (C:\\snapshot\\project\\obj\\loaders\\PreSptModLoader.js)</p>\n<p>at Program.start (C:\\snapshot\\project\\obj\\Program.js)</p>\n<p>I\u2019m having this issue with the mod. When I don\u2019t run it it doesn\u2019t reproduce the issue. Hopefully a fix soon?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 51428,
+   "parent_id": null,
+   "author": "tempandspam",
+   "author_id": 22056,
+   "author_url": "https://forge.sp-tarkov.com/user/22056/tempandspam",
+   "created_at": "2025-05-04T00:07:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is the light wing adapter able to go on either side?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 130738,
+   "parent_id": 51424,
+   "author": "Qwertyalex",
+   "author_id": 53632,
+   "author_url": "https://forge.sp-tarkov.com/user/53632/qwertyalex",
+   "created_at": "2025-05-04T02:55:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Are you using the 3.10 version on 3.11? The version specifically for 3.11 should have all the VFS stuff removed since that was part of the 3.11 changes.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 130739,
+   "parent_id": 51428,
+   "author": "Qwertyalex",
+   "author_id": 53632,
+   "author_url": "https://forge.sp-tarkov.com/user/53632/qwertyalex",
+   "created_at": "2025-05-04T02:56:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>There\u2019s a forward and a back wing currently, but if you mean can it go on the right-hand side of the gun instead of the left, that\u2019s actually something I\u2019m currently working on, but that needs a client mod to make it so that you can use the left-hand wings on the right hand side, rather than an entirely new item.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 51523,
+   "parent_id": null,
+   "author": "hellchickens",
+   "author_id": 41253,
+   "author_url": "https://forge.sp-tarkov.com/user/41253/hellchickens",
+   "created_at": "2025-05-06T20:33:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Sup bro, sorry for offtopic, though where can I find elder WTT mods, especially Rexana ones (and others missing here). It was perfect and I suppose is needed to be updated to live. Or maybe there are updated versions elsewhere?</p>\n<p>Or maybe some short instructions how to correctly update things from 3.9/3.10 to current scheme? I\u2019ve already fixed VFS code to actual but still struggling with purple model xD</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 51561,
+   "parent_id": null,
+   "author": "Sakaiyuki",
+   "author_id": 66116,
+   "author_url": "https://forge.sp-tarkov.com/user/66116/sakaiyuki",
+   "created_at": "2025-05-08T06:52:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>How can I get the fusion hub\uff08the item\uff09\uff1f</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 51578,
+   "parent_id": null,
+   "author": "CMDR_Tank",
+   "author_id": 32626,
+   "author_url": "https://forge.sp-tarkov.com/user/32626/cmdr-tank",
+   "created_at": "2025-05-08T22:47:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>hi and thank you for your work brother<br />\ni wanna ask if there is something wrong with the unity fusion hun item because i cant find it in flea market.</p>\n<p>i play 3.10</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 131131,
+   "parent_id": 51424,
+   "author": "lopez2300",
+   "author_id": 69520,
+   "author_url": "https://forge.sp-tarkov.com/user/69520/lopez2300",
+   "created_at": "2025-05-13T14:00:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi</p>\n<p>I have the same error. I\u2019m using 3.11 version on SPT 3.11..3</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 131561,
+   "parent_id": 51523,
+   "author": "Murasame_chan",
+   "author_id": 71396,
+   "author_url": "https://forge.sp-tarkov.com/user/71396/murasame-chan",
+   "created_at": "2025-05-23T14:35:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Same bro ,i m working on updated WTT weapons , but purple models are annoying</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 52060,
+   "parent_id": null,
+   "author": "Murasame_chan",
+   "author_id": 71396,
+   "author_url": "https://forge.sp-tarkov.com/user/71396/murasame-chan",
+   "created_at": "2025-05-23T16:37:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Great mod. I\u2019m wondering how to port old WTT mods? Are there any instructions/tutorials about updating things from 3.9/3.10 to 3.11?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 131577,
+   "parent_id": 52060,
+   "author": "Qwertyalex",
+   "author_id": 53632,
+   "author_url": "https://forge.sp-tarkov.com/user/53632/qwertyalex",
+   "created_at": "2025-05-24T08:12:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>We\u2019re working on remastering and updating all of the old mods since we\u2019ve learnt some new tricks, so they\u2019ll be going up when we\u2019ve finished remastering them all. The purple models are since the Unity change broke all the old bundles, so you\u2019d have to update the bundles as well, not just the code.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 131578,
+   "parent_id": 52060,
+   "author": "Murasame_chan",
+   "author_id": 71396,
+   "author_url": "https://forge.sp-tarkov.com/user/71396/murasame-chan",
+   "created_at": "2025-05-24T12:03:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Glad to hear that</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 52320,
+   "parent_id": null,
+   "author": "Badbell45",
+   "author_id": 36809,
+   "author_url": "https://forge.sp-tarkov.com/user/36809/badbell45",
+   "created_at": "2025-06-01T14:38:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>So I am having an issue with finding the actual equipment in the game. If I go to flea it isnt there at all, however it will pop up as an option for the builder. Am I doing something wrong or is this a bug?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 133224,
+   "parent_id": 52320,
+   "author": "TweakBox",
+   "author_id": 10971,
+   "author_url": "https://forge.sp-tarkov.com/user/10971/tweakbox",
+   "created_at": "2025-07-03T17:02:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>experiencing the same issue, definitely a bug</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 53859,
+   "parent_id": null,
+   "author": "Saggi",
+   "author_id": 64193,
+   "author_url": "https://forge.sp-tarkov.com/user/64193/saggi",
+   "created_at": "2025-07-15T01:18:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>What gun is that that in the third image?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133569,
+   "parent_id": 53859,
+   "author": "Qwertyalex",
+   "author_id": 53632,
+   "author_url": "https://forge.sp-tarkov.com/user/53632/qwertyalex",
+   "created_at": "2025-07-15T01:41:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The Scorpion Evo from WTT.</p>\n<p><a href=\"https://hub.sp-tarkov.com/files/file/1901-wtt-cz-scorpion-evo-3/\" target=\"_blank\" rel=\"noreferrer noopener\">WTT- CZ Scorpion Evo 3</a></p>\n<p>I still play on 3.10 so most of my screenshots will be from there, though the 3.11 release is coming soontm</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 133606,
+   "parent_id": 53859,
+   "author": "Saggi",
+   "author_id": 64193,
+   "author_url": "https://forge.sp-tarkov.com/user/64193/saggi",
+   "created_at": "2025-07-15T20:23:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Sweet lol, it looks awesome so imma have to grab that when its updated for sure!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 54825,
+   "parent_id": null,
+   "author": "THEREDSMOKE",
+   "author_id": 17052,
+   "author_url": "https://forge.sp-tarkov.com/user/17052/theredsmoke",
+   "created_at": "2025-08-08T23:58:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>it would be amazing to have canted iron sights with something like this, if noone wants to do it please just tell me how to do it ive been reading the documentation and i dont understand anything</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 136477,
+   "parent_id": null,
+   "author": "LY_HS_9901",
+   "author_id": 84531,
+   "author_url": "https://forge.sp-tarkov.com/user/84531/ly-hs-9901",
+   "created_at": "2025-09-12T07:54:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>well, I have very interested at this mod. But I have the same problem like other guys in comment that can\u2019t find only the Fusion Hub attachment in flea market or trader\uff0cbut the others can be found. Is it a bug or something like that\uff1f\uff08I playing 3.11.3 and I am not English user so my english is not that great\uff09</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168233,
+   "parent_id": null,
+   "author": "probablyEukyre",
+   "author_id": 58981,
+   "author_url": "https://forge.sp-tarkov.com/user/58981/probablyeukyre",
+   "created_at": "2026-07-26T18:15:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>when new version (alex asked me to post this idk why)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

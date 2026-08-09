@@ -1,0 +1,50 @@
+{
+ "mod_id": 2118,
+ "slug": "no-pistol-zombies",
+ "fetched_at": "2026-08-09T08:03:25Z",
+ "reported_total": null,
+ "pages": 1,
+ "count": 4,
+ "comments": [
+  {
+   "id": 51481,
+   "parent_id": null,
+   "author": "TheSaladGuy",
+   "author_id": 76282,
+   "author_url": "https://forge.sp-tarkov.com/user/76282/thesaladguy",
+   "created_at": "2025-05-05T21:21:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Doesn\u2019t work at all though.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 52056,
+   "parent_id": null,
+   "author": "DarthKiller454",
+   "author_id": 68410,
+   "author_url": "https://forge.sp-tarkov.com/user/68410/darthkiller454",
+   "created_at": "2025-05-23T14:40:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>If it helps you at all, the zombie using pistol behaviour is COMPLETELY controlled by their DIFFICULTY.<br />\nSo removing the high difficulty or whatever it was called, makes them only slow/fast (medium is fast) (easy is slow)<br />\nwith that in mind and your adaptability you might figure out how to turn it into a working mod.<br />\nI only managed to figure that out by directly altering the files. Since I don\u2019t do any Tarkov Scripting. Good luck!</p>\n<p>Edit: you have to mostly modify whatever controls the spawns, which is inside the HalloweenZombies Event and the specific templates of each map which also adds Spawns for them so they appear on the map during raids (each location has like a setting for Halloween aswell)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 131566,
+   "parent_id": 52056,
+   "author": "BBBBilly",
+   "author_id": 50194,
+   "author_url": "https://forge.sp-tarkov.com/user/50194/bbbbilly",
+   "created_at": "2025-05-23T17:41:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I tried to modify the files, but there was an error and they didn\u2019t move. When I completed this mod, the number of zombie guns did decrease, but I couldn\u2019t remove or write 0, otherwise they would freeze again.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 131833,
+   "parent_id": 52056,
+   "author": "DarthKiller454",
+   "author_id": 68410,
+   "author_url": "https://forge.sp-tarkov.com/user/68410/darthkiller454",
+   "created_at": "2025-05-31T20:09:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Don\u2019t modify their gear. Trust me on this. If you go into the spt settings seasonalevents and the<br />\nLocation/mapname/ and then search for infected (you can change their difficulties) but idk how to make that modular and non-invasive</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

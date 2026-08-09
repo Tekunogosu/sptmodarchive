@@ -1,0 +1,290 @@
+{
+ "mod_id": 2464,
+ "slug": "black-market",
+ "fetched_at": "2026-08-09T08:04:32Z",
+ "reported_total": null,
+ "pages": 1,
+ "count": 28,
+ "comments": [
+  {
+   "id": 143803,
+   "parent_id": null,
+   "author": "Speenks",
+   "author_id": 73061,
+   "author_url": "https://forge.sp-tarkov.com/user/73061/speenks",
+   "created_at": "2025-11-25T09:19:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Walkthrough coming soon guys!  If you\u2019re in dire need to know about the location of some of the quests zones <em>right now</em>, <a href=\"https://forge.sp-tarkov.com/mod/456/game-panel-hud\" target=\"_blank\" rel=\"noreferrer noopener\">Game Panel HUD</a> and I believe <a href=\"https://forge.sp-tarkov.com/mod/1431/dynamic-maps\" target=\"_blank\" rel=\"noreferrer noopener\">Dynamic Maps</a> should show the locations.  For Networking - Signal, just know that you need to place the Signal Repeaters <strong>on top</strong> of the locations shown.  It is mentioned that they need to be out of reach.  A modest degree of parkour is required.</p>\n<p>Looks like some conditions are not progressing on the current version of QE. Going to do some testing to recommend an archived version.  Sorry about the inconvenience in the meantime :(</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 143837,
+   "parent_id": null,
+   "author": "0017setsuna",
+   "author_id": 91781,
+   "author_url": "https://forge.sp-tarkov.com/user/91781/0017setsuna",
+   "created_at": "2025-11-25T17:18:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I was looking at ODT-softcore just now and this implements a good portion of what I was looking at from there. Great work!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 143871,
+   "parent_id": 143803,
+   "author": "Speenks",
+   "author_id": 73061,
+   "author_url": "https://forge.sp-tarkov.com/user/73061/speenks",
+   "created_at": "2025-11-25T22:32:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>After some testing, it appears that Quests Extended version 3.3.0 is the ideal version to pair with for the time being.  If you have an issue where some of the quest conditions are not counting, consider downgrading your Quests Extended version to 3.3.0.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 144169,
+   "parent_id": null,
+   "author": "Zekiel",
+   "author_id": 85846,
+   "author_url": "https://forge.sp-tarkov.com/user/85846/zekiel",
+   "created_at": "2025-11-28T14:05:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i have a bug where all of a sudden all player simulated flea market deals are gone</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 144180,
+   "parent_id": 144169,
+   "author": "Zekiel",
+   "author_id": 85846,
+   "author_url": "https://forge.sp-tarkov.com/user/85846/zekiel",
+   "created_at": "2025-11-28T15:05:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I already finished the required quest but it showed up again for some reason</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 144234,
+   "parent_id": 144169,
+   "author": "Speenks",
+   "author_id": 73061,
+   "author_url": "https://forge.sp-tarkov.com/user/73061/speenks",
+   "created_at": "2025-11-28T21:02:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hmm.  Odd.  Well if this continues to be an issue or anyone else has this issue, I can recommend restarting your server.  The routes that handle these checks are done at server start iirc, at the very least the Fence assort is</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 144402,
+   "parent_id": 144169,
+   "author": "Zekiel",
+   "author_id": 85846,
+   "author_url": "https://forge.sp-tarkov.com/user/85846/zekiel",
+   "created_at": "2025-11-30T08:10:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Well i got it working by restarting the server but another problem showed up at the fence market it just wouldnt load for me sometimes it loads sometimes it doesnt its kinda random this is my 2nd restart of the server and i cant see anything at the fence it just loops on loading</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 144404,
+   "parent_id": 144169,
+   "author": "Speenks",
+   "author_id": 73061,
+   "author_url": "https://forge.sp-tarkov.com/user/73061/speenks",
+   "created_at": "2025-11-30T08:21:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Can you verify that</p>\n<blockquote>\n<p>\u201c<em>*SPT 3.11</em>\\user\\mods\\Speenks-BlackMarket\\src\\utils\\queststatus.json\u201d</p>\n</blockquote>\n<p>is marked \u201ctrue\u201d?</p>\n<p>I can\u2019t think of anything else that would be causing issues unless it\u2019s throwing some kind of error</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 144412,
+   "parent_id": 144169,
+   "author": "Zekiel",
+   "author_id": 85846,
+   "author_url": "https://forge.sp-tarkov.com/user/85846/zekiel",
+   "created_at": "2025-11-30T10:01:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>yep its marked as  true it must be some incompatibility with another mod</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 144413,
+   "parent_id": 144169,
+   "author": "Speenks",
+   "author_id": 73061,
+   "author_url": "https://forge.sp-tarkov.com/user/73061/speenks",
+   "created_at": "2025-11-30T10:11:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Oh! If you are using Realism, make sure hardcore Fence is disabled.  Could also be SVM</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 144414,
+   "parent_id": 144169,
+   "author": "Zekiel",
+   "author_id": 85846,
+   "author_url": "https://forge.sp-tarkov.com/user/85846/zekiel",
+   "created_at": "2025-11-30T10:32:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>hmm i am using realism yes but i have them disabled for a long time already and i checked my SVM i havent enabled any trader changes as well</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 144415,
+   "parent_id": 144169,
+   "author": "Zekiel",
+   "author_id": 85846,
+   "author_url": "https://forge.sp-tarkov.com/user/85846/zekiel",
+   "created_at": "2025-11-30T10:37:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>the only setting i enabled for trader changes is add custom items, randomize traders, randomize prices, trader buy prices, insurance changes</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 144418,
+   "parent_id": 144169,
+   "author": "Zekiel",
+   "author_id": 85846,
+   "author_url": "https://forge.sp-tarkov.com/user/85846/zekiel",
+   "created_at": "2025-11-30T10:59:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>restarted for the 3rd time and got the fence working it might have something to do with items that are corrupted or something that im not aware of</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 144499,
+   "parent_id": 144169,
+   "author": "Speenks",
+   "author_id": 73061,
+   "author_url": "https://forge.sp-tarkov.com/user/73061/speenks",
+   "created_at": "2025-12-01T02:54:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I can see how that may create an issue.  The good news is that this version of Fence only pulls items from a whitelist that you have agency over.  In my experience, it does not matter if there are items included on the whitelist that are not in your game files, however, if there is a corrupted item, you may be able to narrow it down by partitioning the whitelist over rounds of testing</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 145681,
+   "parent_id": null,
+   "author": "Zekiel",
+   "author_id": 85846,
+   "author_url": "https://forge.sp-tarkov.com/user/85846/zekiel",
+   "created_at": "2025-12-10T11:55:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>How do i revert being able to barter items with the dogtags that are found in loot containers instead of real pmcs? i was able to do that without the mod before i disabled the blacklist already btw</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 145712,
+   "parent_id": 145681,
+   "author": "Speenks",
+   "author_id": 73061,
+   "author_url": "https://forge.sp-tarkov.com/user/73061/speenks",
+   "created_at": "2025-12-10T17:19:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This mod doesn\u2019t affect in-raid loot or other traders besides Fence.  Are you using PriceTag?  That has a configurable barter section.</p>\n<p>I\u2019m curious about the container based dogtags, as none of my mods affect loot other than cash (PayDay).  Are you using AllTheLoot or something similar?  The game doesn\u2019t discriminate where dogtags came from other than the found in raid checkmark, so the only way to fix this is to remove dogtags from container loot</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 145715,
+   "parent_id": 145681,
+   "author": "Zekiel",
+   "author_id": 85846,
+   "author_url": "https://forge.sp-tarkov.com/user/85846/zekiel",
+   "created_at": "2025-12-10T17:35:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I use AllTheLoot yes, without the blackmarket mod i was able to  buy randomly generated offers from flea that uses those dog tags that are found in container but when i added it now i cant find generated offers that sells those things same goes to other items that can usually be bought with random items such as ammo boxes i was always able to find Random generated offers with some ammo boxes that i dont use in exchange for another item :v, sorry if i complain alot i just wanna know if i can still enable that feature where i could use every item in exchange for barter in randomly generated flea deals</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 145720,
+   "parent_id": 145681,
+   "author": "Speenks",
+   "author_id": 73061,
+   "author_url": "https://forge.sp-tarkov.com/user/73061/speenks",
+   "created_at": "2025-12-10T18:27:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Well, after some testing, it appears you are correct\u2013I managed to break barter offers on the flea market \ud83d\ude05 I don\u2019t personally configure this way, so it went overlooked.  Unfortunately, it would require a possibly significant rework of the randomized offer system to include barters.. I will add it to the to-do for 4.0 since I am rewriting it from the ground up anyway.  No need to apologize!  I appreciate the feedback and bug hunting \ud83c\udfaf</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 145721,
+   "parent_id": 145681,
+   "author": "Zekiel",
+   "author_id": 85846,
+   "author_url": "https://forge.sp-tarkov.com/user/85846/zekiel",
+   "created_at": "2025-12-10T18:28:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>thank you!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 147903,
+   "parent_id": null,
+   "author": "danut__",
+   "author_id": 80928,
+   "author_url": "https://forge.sp-tarkov.com/user/80928/danut",
+   "created_at": "2025-12-29T20:22:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>How exactly does the quest track distance moved while in a certain stance? Currently im doing the \u201cWeasel\u201d quest where i have to move 300 (meters i assume) while crouched and another 200 at low movement speed (i assume). Ive tried moving crouched and at low speed but it doesnt add any progress even after extracting. I do run a bunch of other mods but they dont have anything (to my knowledge) that should cause errors. The other requirements work fine ( search contrainers, loot items and kill PMCs with suppressed pistols).</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 147905,
+   "parent_id": 147903,
+   "author": "danut__",
+   "author_id": 80928,
+   "author_url": "https://forge.sp-tarkov.com/user/80928/danut",
+   "created_at": "2025-12-29T20:25:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2025-12-29 20:54:25]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 147966,
+   "parent_id": 147903,
+   "author": "Speenks",
+   "author_id": 73061,
+   "author_url": "https://forge.sp-tarkov.com/user/73061/speenks",
+   "created_at": "2025-12-30T02:09:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The \u2018move for x distance\u2019 conditions were actually a recurring issue when I was working with Light to get QE updated.  It seemed every other build would fix one thing and then break the movement conditions.  We tracked it down to a mismatch between QE looking for the \u201cmain\u201d player\u2019s movement and Fika not having a \u201cmain\u201d player.  With versions 3.3.0 and higher, it \u201cworks\u201d, but for some reason, is inconsistent.  For example, it works 99% of the time on my dev profile, but on my actual playthrough with my partner, we could only get it to track like 5% of the time.</p>\n<p>I\u2019m still doing my actual playthrough to test the experience of the mod outside of a dev environment before releasing a minor/balancing update, but in the meantime you have 3 options:</p>\n<ol>\n<li>\n<p>You could keep playing and maybe get that lucky 5% trigger (not recommended, and sorry you are experiencing this)</p>\n</li>\n<li>\n<p>If you are savvy, you can add the parentId: <strong>687043be1536e1df14033147</strong></p>\n</li>\n</ol>\n<p>to the first two conditions:  <strong>687043be1536e1df14033143</strong>  and  <strong>687043be1536e1df14033144</strong></p>\n<p>in the BlackMarket_Weasel.json to mark the condition as optional.</p>\n<ol start=\"3\">\n<li>You can use <a href=\"https://forge.sp-tarkov.com/mod/1343/skipper#versions\" target=\"_blank\" rel=\"noreferrer noopener\">Skipper</a> to bypass the condition.  Make sure you get the version for 3.11.</li>\n</ol>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 148013,
+   "parent_id": 147903,
+   "author": "danut__",
+   "author_id": 80928,
+   "author_url": "https://forge.sp-tarkov.com/user/80928/danut",
+   "created_at": "2025-12-30T08:56:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>In my case, i used the Skipper mod. No big problem although it is something to keep in mind. (As an alternative i think its easier to make the requirement reaching Covert movement skill lvl 1 or something like that as i assume its way simpler to detect)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 148041,
+   "parent_id": 147903,
+   "author": "danut__",
+   "author_id": 80928,
+   "author_url": "https://forge.sp-tarkov.com/user/80928/danut",
+   "created_at": "2025-12-30T12:00:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Seems like Weasel aint the only one with this problem, Asset 1 and 2 dont detect either, ive checked everything, all versions are correct.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 148090,
+   "parent_id": 147903,
+   "author": "Speenks",
+   "author_id": 73061,
+   "author_url": "https://forge.sp-tarkov.com/user/73061/speenks",
+   "created_at": "2025-12-30T16:27:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Those ones worked as expected for my partner and I.  Do all of your players have QE?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 148248,
+   "parent_id": 147903,
+   "author": "danut__",
+   "author_id": 80928,
+   "author_url": "https://forge.sp-tarkov.com/user/80928/danut",
+   "created_at": "2025-12-31T09:02:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I dont really understand your question, i dont use FIKA multiplayer. (Im also not really that experienced with spt mods)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 148277,
+   "parent_id": null,
+   "author": "danut__",
+   "author_id": 80928,
+   "author_url": "https://forge.sp-tarkov.com/user/80928/danut",
+   "created_at": "2025-12-31T15:04:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Idk man, ive done a clean build of spt and still not working correctly. I think the problem is with Quests Extended as everything works besides the new conditions.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 148330,
+   "parent_id": 148277,
+   "author": "Speenks",
+   "author_id": 73061,
+   "author_url": "https://forge.sp-tarkov.com/user/73061/speenks",
+   "created_at": "2025-12-31T22:29:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <div class=\"youtube-lite\" data-video-id=\"3a2Z14wVepY\" data-embed-url=\"https://www.youtube-nocookie.com/embed/3a2Z14wVepY?autoplay=1\"><img src=\"https://i.ytimg.com/vi/3a2Z14wVepY/hqdefault.jpg\" alt=\"YouTube video thumbnail\" loading=\"lazy\" decoding=\"async\" /></div>\n<p>I\u2019m not sure what would be causing any of the non-movement related conditions to not increment. They work 100% of the time for my partner and I.  It could be the <em>lack</em> of Fika, but Light doesn\u2019t use Fika either so the development was more or less done in parallel with and without Fika.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

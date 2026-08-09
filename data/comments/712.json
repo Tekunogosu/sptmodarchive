@@ -1,0 +1,530 @@
+{
+ "mod_id": 712,
+ "slug": "eyes-of-a-trader-view-loot-value",
+ "fetched_at": "2026-08-09T06:55:54Z",
+ "reported_total": 23,
+ "pages": 3,
+ "count": 52,
+ "comments": [
+  {
+   "id": 10662,
+   "parent_id": null,
+   "author": "DeltaFrost22",
+   "author_id": 4168,
+   "author_url": "https://forge.sp-tarkov.com/user/4168/deltafrost22",
+   "created_at": "2023-01-15T16:20:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Does this work with the flea market price updater?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 10673,
+   "parent_id": null,
+   "author": "Hovelly",
+   "author_id": 23504,
+   "author_url": "https://forge.sp-tarkov.com/user/23504/hovelly",
+   "created_at": "2023-01-15T21:21:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>tried it with 3.50<br />\nWorks with no problems</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 72015,
+   "parent_id": 10662,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2023-01-15T21:22:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I believe it should but make sure this mod is loaded after any flea market adjuster mods by making sure my mod is alphabetically after the other mod.</p>\n<p>I haven\u2019t tested it myself so let me know if there are any issues.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 10674,
+   "parent_id": null,
+   "author": "Djmeowzle",
+   "author_id": 2741,
+   "author_url": "https://forge.sp-tarkov.com/user/2741/djmeowzle",
+   "created_at": "2023-01-15T23:11:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is there a way to JUST have description prices and not the colors?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 72019,
+   "parent_id": 10674,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2023-01-15T23:22:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I can add that after work today. Check for an update tomorrow if you\u2019re keen. Otherwise you can probably just delete the colour entries for now in config.json.</p>\n<p>So have the backgroundColours: []</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 10675,
+   "parent_id": null,
+   "author": "HyperNeonX",
+   "author_id": 19869,
+   "author_url": "https://forge.sp-tarkov.com/user/19869/hyperneonx",
+   "created_at": "2023-01-16T00:08:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Do I need to tweak any config to show a more accurate value? Im using lua flea market price updater and i have an labs yellow keycard, the price shows an approximate value of 34.6k but the maximum value on the market is 22 million, any way to tweak this?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 72020,
+   "parent_id": 10675,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2023-01-16T01:11:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I haven\u2019t done any testing with Lua\u2019s market updater but I think it should match at least the AVG cost if this mod is loaded after Lua\u2019s mod.</p>\n<p>You can play around with the fleaValueMultiplier in the config to get closer to your number but I don\u2019t think the Max value is the best metric as it might not sell on the flea unless you have updated that with a mod too.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 72021,
+   "parent_id": 10675,
+   "author": "HyperNeonX",
+   "author_id": 19869,
+   "author_url": "https://forge.sp-tarkov.com/user/19869/hyperneonx",
+   "created_at": "2023-01-16T01:30:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Changing the fleaValueMultiplier seems to not any effect, but yea it at least it shows the avg value of the market, still such a cool mod</p>\n<p>EDIT: Nevermind It does changes a little bit the value, but still dont know how much should i add, because i obviously i dont want to add 1000000 or something like that lol</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 72022,
+   "parent_id": 10674,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2023-01-16T01:43:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I have updated the mod, please try version 1.1.0 and set <em><strong>useCustomBackgroundColours</strong></em> to false in config.json. Enjoy</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 72023,
+   "parent_id": 10675,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2023-01-16T01:48:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Using a bit of maths, if you want the flea price of that lab card from 34.6k (default 0.77 mult, actually suppose to be close to the lowest flea value) to read as 22 mil, you\u2019ll need to set the fleaValueMultiplier to 489. Obviously this would mess up the values for other items.</p>\n<p>I\u2019ll investigate compability with Lua\u2019s mod after work today.</p>\n<p>Edit: the multiplier system is quite simple in this mod. Most items have a \u2018handbook\u2019 price and a flea price.</p>\n<p>For the trader value, I simply multiply the \u2018handbook\u2019 price by 0.55 by default as the traders have a big markup.</p>\n<p>For the flea price, I simply multiply whatever value the flea market returns by 0.77 which is around the lowest flea price and the fee.</p>\n<p>If you want to learn some maths, here is how I got 489:</p>\n<p>0.77 * x = 34.6k where x is the raw flea price.</p>\n<p>x solves for around 45k</p>\n<p>now 45k * m = 22000k where m is the new multiplier</p>\n<p>m solves for 489.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 72025,
+   "parent_id": 10674,
+   "author": "Djmeowzle",
+   "author_id": 2741,
+   "author_url": "https://forge.sp-tarkov.com/user/2741/djmeowzle",
+   "created_at": "2023-01-16T02:17:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>ilysm</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 10679,
+   "parent_id": null,
+   "author": "notAlig",
+   "author_id": 806,
+   "author_url": "https://forge.sp-tarkov.com/user/806/notalig",
+   "created_at": "2023-01-16T02:58:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>What does the \u201cupdateVioletItemBackground\u201d option do in the config?</p>\n<p>I\u2019ve been curious ever since I gave this mod a download, but haven\u2019t really noticed what it does in-game, though I could very easily be missing something obvious lmao.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 72026,
+   "parent_id": 10679,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2023-01-16T03:04:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Oh haha, by default it\u2019s false but if you set it to true, it will update the background colours of existing violet items. Since a lot of them are already quite valuable, they may not change but some might.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 72027,
+   "parent_id": 10679,
+   "author": "notAlig",
+   "author_id": 806,
+   "author_url": "https://forge.sp-tarkov.com/user/806/notalig",
+   "created_at": "2023-01-16T03:20:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Ah, gotcha. Thanks for taking the time to explain.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 72029,
+   "parent_id": 10675,
+   "author": "HyperNeonX",
+   "author_id": 19869,
+   "author_url": "https://forge.sp-tarkov.com/user/19869/hyperneonx",
+   "created_at": "2023-01-16T10:26:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I really appreciate the time you took for the maths, now I really find it more useful, I like to see how value is an item on the market most of the times even if prices varies a lot and are not 100% accurate, I just wanted a more close aproach to a high price, also lua\u2019s mod takes price data from tarkov.dev in case you wanna know</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 72030,
+   "parent_id": 10675,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2023-01-16T11:16:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey, I uploaded a new version 1.2.0 which should make this mod compatible with Lua\u2019s flea market updater. I tested it a bit and it seems the new Flea Price will be close to Lua\u2019s lowest flea price minus the fee (which is my intention).</p>\n<p>See if the new values are better for you. If you don\u2019t see any changes, you may need to increase the new config <em><strong>delayStartInSeconds</strong></em> to a higher number like 10.</p>\n<p>Edit: if the mod works now for you and you want the Flea price to be closer to the Max flea value, try setting the fleaPriceMultiplier to maybe 1.3 or just play around with that number.</p>\n<p>Yep, the code of Lua\u2019s mod basically grabs the prices from tarkov.dev, overwrites the flea price and since my mod loads later now, it should grab these updated prices too.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 72031,
+   "parent_id": 10675,
+   "author": "HyperNeonX",
+   "author_id": 19869,
+   "author_url": "https://forge.sp-tarkov.com/user/19869/hyperneonx",
+   "created_at": "2023-01-16T11:34:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thats really great, thanks for the update</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 10718,
+   "parent_id": null,
+   "author": "Morfius",
+   "author_id": 25522,
+   "author_url": "https://forge.sp-tarkov.com/user/25522/morfius",
+   "created_at": "2023-01-17T15:27:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Can i exclude items like keys or are they excluded? I am using the mod \u201cbetter keys\u201d and i dont know what color is displayed now. I am pretty new to tarkov so yea i might be clueless, sorry for that</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 10720,
+   "parent_id": null,
+   "author": "ligma929130",
+   "author_id": 24239,
+   "author_url": "https://forge.sp-tarkov.com/user/24239/ligma929130",
+   "created_at": "2023-01-17T20:11:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Does SPT_AKI traders price them the same as the live Tarkov?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 72068,
+   "parent_id": 10720,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2023-01-17T20:36:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Probably similar</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 72069,
+   "parent_id": 10718,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2023-01-17T20:37:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey Morfius, try the latest version 1.2.0. I recently made a change to make Keys compatible with Better Keys (I also use that mod) so the colours aren\u2019t overriden.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 72070,
+   "parent_id": 10718,
+   "author": "Morfius",
+   "author_id": 25522,
+   "author_url": "https://forge.sp-tarkov.com/user/25522/morfius",
+   "created_at": "2023-01-17T20:42:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Oh wow, i missed 2 versions already? Jesus xD Thank you, i will update!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 72083,
+   "parent_id": 10720,
+   "author": "sackstonhail420",
+   "author_id": 21100,
+   "author_url": "https://forge.sp-tarkov.com/user/21100/sackstonhail420",
+   "created_at": "2023-01-18T08:54:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>trader prices are the same as live; flea prices are not. unless you use <a href=\"https://hub.sp-tarkov.com/files/file/353-lua-s-flea-market-price-updater/\" target=\"_blank\" rel=\"noreferrer noopener\">flea price updater</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 10862,
+   "parent_id": null,
+   "author": "vandall",
+   "author_id": 25847,
+   "author_url": "https://forge.sp-tarkov.com/user/25847/vandall",
+   "created_at": "2023-01-23T11:11:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>\u0443 \u043c\u0435\u043d\u044f 3.4 \u0430\u043a\u0438 \u0438 \u0443\u043c\u0435\u043d\u044f \u0437\u0430\u0440\u0430\u0431\u043e\u0442\u0430\u043b\u043e \u043f\u043e\u044d\u0442\u043e\u043c\u0443 \u043f\u043b\u044e\u0441 \u0440\u0435\u0441\u043f\u0435\u043a\u0442 \u0435\u043c\u0443</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 10935,
+   "parent_id": null,
+   "author": "Sysharp",
+   "author_id": 15442,
+   "author_url": "https://forge.sp-tarkov.com/user/15442/sysharp",
+   "created_at": "2023-01-25T01:29:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The trader value is off when using SPT Realism That mod changes traders and this mod doesn\u2019t seem to take it\u2019s altered imput \u2026</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73459,
+   "parent_id": 10935,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2023-02-11T11:33:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Sorry, just had time to double check. The prices look okay to me.</p>\n<p>The SPT Realism mod creates a very big price range with some items and traders. The trader price in the description sits somewhere in the middle. For example morphine injector is listed at 13.9k. Prapor buys it for 12.6k and therapist buys it for 15.9k.</p>\n<p>You might not see the exact same numbers due to the Charisma skill but I think this mod works ok with the SPT Realism trader changes</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 12414,
+   "parent_id": null,
+   "author": "sackstonhail420",
+   "author_id": 21100,
+   "author_url": "https://forge.sp-tarkov.com/user/21100/sackstonhail420",
+   "created_at": "2023-02-22T01:34:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>looks like the mod is still changing the background color of certain items (most notably backpacks) even when i have \u201cuseCustomBackgroundColours\u201d: false,</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 74868,
+   "parent_id": 12414,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2023-02-22T01:48:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Change <em>forceCustomBackgroundColours</em> to false in categories.json for backpacks.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 74876,
+   "parent_id": 12414,
+   "author": "sackstonhail420",
+   "author_id": 21100,
+   "author_url": "https://forge.sp-tarkov.com/user/21100/sackstonhail420",
+   "created_at": "2023-02-22T02:06:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>ah mb missed that config line</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 74962,
+   "parent_id": 12414,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2023-02-23T08:33:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>No probs, I know my mod description page isn\u2019t the best organised</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 13935,
+   "parent_id": null,
+   "author": "footlicker",
+   "author_id": 7454,
+   "author_url": "https://forge.sp-tarkov.com/user/7454/footlicker",
+   "created_at": "2023-03-25T02:06:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>is possible to add a \u201cBanned\u201d preposition in the description in place of trader price for banned flea items?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 77401,
+   "parent_id": 13935,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2023-03-25T02:09:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I think it\u2019s possible and a great suggestion. I\u2019ll keep it in mind for the next build whenever that is</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 14099,
+   "parent_id": null,
+   "author": "Helldiver",
+   "author_id": 28987,
+   "author_url": "https://forge.sp-tarkov.com/user/28987/helldiver",
+   "created_at": "2023-03-29T03:07:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This looks awesome!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 14774,
+   "parent_id": null,
+   "author": "deveagle",
+   "author_id": 24038,
+   "author_url": "https://forge.sp-tarkov.com/user/24038/deveagle",
+   "created_at": "2023-04-16T04:57:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hy. One question. How to modify the config or .ts file? Not instead of 4.35k, I want to see: 4350. instead of 4k, 4000. etc.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 78727,
+   "parent_id": 14774,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2023-04-17T01:49:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi, there is no json config to change what you\u2019re after. If you\u2019re familiar with coding, you can change the mod.ts file and do whatever you want. I believe it gets transpiled to mod.js after your change.</p>\n<p>I didn\u2019t do what you\u2019re asking originally because the value is supposed to be a rough estimate. The traders don\u2019t actually sell for exactly the displayed amount. However, there\u2019s a mod called ODT Item Info that has a more accurate price version which you may like.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 15636,
+   "parent_id": null,
+   "author": "B3N1v93",
+   "author_id": 30990,
+   "author_url": "https://forge.sp-tarkov.com/user/30990/b3n1v93",
+   "created_at": "2023-05-12T21:07:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>quick question\u2026 how often does the mod update the prices? I guess it only updates prices once at start?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 79967,
+   "parent_id": 15636,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2023-05-13T10:29:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Correct</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 17294,
+   "parent_id": null,
+   "author": "FINDarkside",
+   "author_id": 33441,
+   "author_url": "https://forge.sp-tarkov.com/user/33441/findarkside",
+   "created_at": "2023-07-01T10:56:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Would be cool if there was some fast way (without opening the item dialog) to see if the price is based on flea or trader price. That way it\u2019d be really fast to sort out the items you\u2019re going to sell on the flea. It would be especially useful when combined with the already existing fleaToTraderValueThresholdRatio setting.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 82526,
+   "parent_id": 17294,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2023-07-02T00:41:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>That\u2019s a good idea. Maybe I\u2019ll add an asterisk or some symbol to the short form name.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 18469,
+   "parent_id": null,
+   "author": "werefox56",
+   "author_id": 30227,
+   "author_url": "https://forge.sp-tarkov.com/user/30227/werefox56",
+   "created_at": "2023-08-01T14:15:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>any update for SPT-AKI 3.6.0?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 84285,
+   "parent_id": 18469,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2023-08-01T23:13:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Does it not work with 3.6.0? Generally server mods are compatible for a few versions until they\u2019re not.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 21231,
+   "parent_id": null,
+   "author": "Hacker228",
+   "author_id": 37691,
+   "author_url": "https://forge.sp-tarkov.com/user/37691/hacker228",
+   "created_at": "2023-10-01T05:24:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>For version 3.7.0: change the line getDynamicOfferPrice to getDynamicOfferPriceForOffer in the mod.ts file for the mod to work</p>\n<p>Screenshot <a href=\"https://imgur.com/a/Dxlf1vk\" target=\"_blank\" rel=\"noreferrer noopener\">https://imgur.com/a/Dxlf1vk</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 88607,
+   "parent_id": 21231,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2023-10-09T09:19:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Uploaded v1.3.1 to fix this issue. Thanks for helping!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 22891,
+   "parent_id": null,
+   "author": "Ozhound",
+   "author_id": 39457,
+   "author_url": "https://forge.sp-tarkov.com/user/39457/ozhound",
+   "created_at": "2023-10-24T05:46:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>May i make a suggestion?</p>\n<p>Why not have the default colour scheme the same as most RPGs use to indicated loot rarity?</p>\n<p>i.e.</p>\n<ul>\n<li>Grey &lt; White &lt; Green &lt; Blue &lt; Purple &lt; Yellow &lt; Orange</li>\n</ul>\n<p>TIA</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 91056,
+   "parent_id": 22891,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2023-10-26T01:50:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The colour scheme used by default is similar to a mod I used before (can\u2019t remember the name). However this mod allows you to freely configure the colours so you can change it to whatever you want</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 23118,
+   "parent_id": null,
+   "author": "crazybmanp",
+   "author_id": 39616,
+   "author_url": "https://forge.sp-tarkov.com/user/39616/crazybmanp",
+   "created_at": "2023-10-27T10:22:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It would be cool if the mod didn\u2019t display ragfair price colors if the item isn\u2019t marked found in raid.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 24779,
+   "parent_id": null,
+   "author": "Geniuswas",
+   "author_id": 27843,
+   "author_url": "https://forge.sp-tarkov.com/user/27843/geniuswas",
+   "created_at": "2023-12-02T09:17:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is there a way for this mod to also affect modded items on new traders? For instance Painter, Artem.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 93830,
+   "parent_id": 24779,
+   "author": "Platinum",
+   "author_id": 24114,
+   "author_url": "https://forge.sp-tarkov.com/user/24114/platinum",
+   "created_at": "2023-12-02T09:42:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Not at the moment I don\u2019t think. Will need to investigate when I have time, I don\u2019t normally play with custom traders however.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 27634,
+   "parent_id": null,
+   "author": "daking4life.jk",
+   "author_id": 46132,
+   "author_url": "https://forge.sp-tarkov.com/user/46132/daking4lifejk",
+   "created_at": "2024-03-06T13:53:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Great mod , wondering if you could add a setting to make it use the flea price only if item is Found in raid?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 29126,
+   "parent_id": null,
+   "author": "grunklekev",
+   "author_id": 27717,
+   "author_url": "https://forge.sp-tarkov.com/user/27717/grunklekev",
+   "created_at": "2024-04-09T20:24:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This still seems to work in 3.8.0 - all you need to do is go into the package.json file and change the \u201cakiVersion\u201d field to \u201c3.8.*\u201d</p>\n<p>Hope this helps for people interested in using it before the official update.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 33057,
+   "parent_id": null,
+   "author": "samsonsin",
+   "author_id": 52816,
+   "author_url": "https://forge.sp-tarkov.com/user/52816/samsonsin",
+   "created_at": "2024-05-28T00:04:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Would like to suggest the introduction of a special colour for Flea Banned items, Dark red or something perhaps?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 120166,
+   "parent_id": 29126,
+   "author": "thealtmasterttv",
+   "author_id": 64546,
+   "author_url": "https://forge.sp-tarkov.com/user/64546/thealtmasterttv",
+   "created_at": "2024-11-15T20:10:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>does this work for 3.9??</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

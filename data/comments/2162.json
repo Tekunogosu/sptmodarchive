@@ -1,0 +1,180 @@
+{
+ "mod_id": 2162,
+ "slug": "skill-multiplier",
+ "fetched_at": "2026-08-09T07:07:58Z",
+ "reported_total": null,
+ "pages": 1,
+ "count": 17,
+ "comments": [
+  {
+   "id": 52188,
+   "parent_id": null,
+   "author": "DiaboIo",
+   "author_id": 51454,
+   "author_url": "https://forge.sp-tarkov.com/user/51454/diaboio",
+   "created_at": "2025-05-27T17:43:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>the mod dont work. something is missing. it didnt even get loaded at the server start.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 131721,
+   "parent_id": 52188,
+   "author": "HornyDemon",
+   "author_id": 79588,
+   "author_url": "https://forge.sp-tarkov.com/user/79588/hornydemon",
+   "created_at": "2025-05-28T06:46:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>it works</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 131722,
+   "parent_id": 52188,
+   "author": "DiaboIo",
+   "author_id": 51454,
+   "author_url": "https://forge.sp-tarkov.com/user/51454/diaboio",
+   "created_at": "2025-05-28T08:20:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>no it doesnt. ive tried it several times. every other mod works fine. this is not.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 131724,
+   "parent_id": 52188,
+   "author": "Dazzuh",
+   "author_id": 61596,
+   "author_url": "https://forge.sp-tarkov.com/user/61596/dazzuh",
+   "created_at": "2025-05-28T09:22:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>this isn\u2019t a server mod. it\u2019s a client mod. it goes inside bepinex/plugins, it doesn\u2019t get loaded by the server at all. then you configure it by pressing f12 while you\u2019re on the main menu (or in-raid)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 131726,
+   "parent_id": 52188,
+   "author": "DiaboIo",
+   "author_id": 51454,
+   "author_url": "https://forge.sp-tarkov.com/user/51454/diaboio",
+   "created_at": "2025-05-28T10:52:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i dont have it in the F12 menu. i installed it several times. every other mod works fine.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 131728,
+   "parent_id": 52188,
+   "author": "DiaboIo",
+   "author_id": 51454,
+   "author_url": "https://forge.sp-tarkov.com/user/51454/diaboio",
+   "created_at": "2025-05-28T11:07:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Ok sry guys. it was my fault. the mod works fine. i switch SPT to another drive and the launcher was set to the old path. So i changed that and now it works fine.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 52224,
+   "parent_id": null,
+   "author": "Xkoder",
+   "author_id": 79645,
+   "author_url": "https://forge.sp-tarkov.com/user/79645/xkoder",
+   "created_at": "2025-05-29T14:36:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Cool mod.<br />\nCan I ask you to modify the<br />\n__instance.float_3 = 1.0f; // Effectiveness<br />\nto have something like:<br />\n__instance.float_3 = 10.0f; // Effectiveness</p>\n<p>or let players set thier own limit or something similar?<br />\n__instance.float_3 = SkillMultiplier.Configuration.EffectivenessMultiplier.Value;</p>\n<p>As for 1.0f leveling hideout management, crafting, armors and few others skills are still too slow for me.<br />\nThanks in advance</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 131762,
+   "parent_id": 52224,
+   "author": "Dazzuh",
+   "author_id": 61596,
+   "author_url": "https://forge.sp-tarkov.com/user/61596/dazzuh",
+   "created_at": "2025-05-29T18:27:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The \u201cEffectiveness\u201d is the games default calculation for Fatigue, your skill gain is multiplied by effectiveness based on whether you have fresh fatigue points (1.5x) no fresh, no fatigue (1.0x) or fatigue (some negatve multiplier I don\u2019t remember)</p>\n<p>the code you\u2019re referencing just permanently sets it to \u201c1\u201d, meaning fatigue is effectively disabled. if I set it to 10x it would be like setting a permanent 10x global multiplier. changing the global multiplier in config would have the same effect.</p>\n<p>All of the skills you mentioned being too slow <em>should</em> have options in f12 however I\u2019m unsure if those skills are even managed by the methods I\u2019m patching as they were never called when I crafted an item in my hideout, so they might not work at all. they might be handled serverside, i\u2019d need to investigate further.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 131766,
+   "parent_id": 52224,
+   "author": "Dazzuh",
+   "author_id": 61596,
+   "author_url": "https://forge.sp-tarkov.com/user/61596/dazzuh",
+   "created_at": "2025-05-29T19:18:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Took a look at the server, server does indeed handle both \u201cHideout management\u201d and \u201cCrafting\u201d skills. I\u2019d need to make a server component for this mod to make those work.</p>\n<p>as for every other skill - as far as i\u2019m aware - should already work. if your issue is that 100x is too low of a limit I could raise the max/min limit for the sliders, however with the current options, with a 100x global multiplier and a 100x multiplier on a skill, they multiply to become a 10000x multiplier, which seems like more than enough for any skill?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 131791,
+   "parent_id": 52224,
+   "author": "Xkoder",
+   "author_id": 79645,
+   "author_url": "https://forge.sp-tarkov.com/user/79645/xkoder",
+   "created_at": "2025-05-30T20:45:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for update<br />\nIt works well with the new options expect of the few skills that you mentioned, the new settings are just enough.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 52267,
+   "parent_id": null,
+   "author": "Nomand",
+   "author_id": 40795,
+   "author_url": "https://forge.sp-tarkov.com/user/40795/nomand",
+   "created_at": "2025-05-31T02:48:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is there a plan to adapt 3.10.x?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 131813,
+   "parent_id": 52267,
+   "author": "Dazzuh",
+   "author_id": 61596,
+   "author_url": "https://forge.sp-tarkov.com/user/61596/dazzuh",
+   "created_at": "2025-05-31T10:55:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I don\u2019t have a 3.10.x installation to test it on so, not currently.</p>\n<p>I\u2019m not sure what differences are between 3.11.x and 3.10.x, there\u2019s a (albeit small) chance the mod already works on 3.10, you\u2019re welcome to try it out and let me know how it goes.</p>\n<p>You should however make sure you have a backup of your profile beforehand</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 53533,
+   "parent_id": null,
+   "author": "OldSnake",
+   "author_id": 58619,
+   "author_url": "https://forge.sp-tarkov.com/user/58619/oldsnake",
+   "created_at": "2025-07-05T17:43:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Tried this on 3.10.5 but doesnt load the skills in bepinex menu. Wish there was an alternative</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133296,
+   "parent_id": 53533,
+   "author": "OldSnake",
+   "author_id": 58619,
+   "author_url": "https://forge.sp-tarkov.com/user/58619/oldsnake",
+   "created_at": "2025-07-06T01:00:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>EXCEPTION: System.MissingMethodException: void GClass835.ExecuteForEach&lt;!0&gt;(System.Collections.Generic.IEnumerable<code>1&amp;lt;!!0&amp;gt;,System.Action</code>1&lt;!!0&gt;)</p>\n<p>at SkillMultiplier.Patches.MenuScreenPatch.Postfix () [0x00011] in &lt;b3d27691051b4cf6b165e452c63dcbb4&gt;:0</p>\n<p>at (wrapper dynamic-method) EFT.UI.MenuScreen.DMD&lt;EFT.UI.MenuScreen::Show&gt;(EFT.UI.MenuScreen,EFT.Profile,MatchmakerPlayerControllerClass,ESessionMode)</p>\n<p>at (wrapper dynamic-method) EFT.UI.MenuScreen.DMD&lt;EFT.UI.MenuScreen::Show&gt;(EFT.UI.MenuScreen,EFT.UI.MenuScreen/GClass3517)</p>\n<p>at UserInterfaceClass+GClass3502`2[T,U,V].DisplayScreen () [0x00000] in &lt;be9862b1593e41e48ad89bd48723d349&gt;:0</p>\n<p>at UserInterfaceClass+GClass3502`2[T,U,V].ShowScreenAsPrevious () [0x00031] in &lt;be9862b1593e41e48ad89bd48723d349&gt;:0</p>\n<p>at UserInterfaceClass+GClass3502`2[T,U,V].GInterface456&lt;!0&gt;.ShowScreenAsPrevious () [0x00000] in &lt;be9862b1593e41e48ad89bd48723d349&gt;:0</p>\n<p>at UserInterfaceClass+GClass3502`2[T,U,V].method_5 (EFT.UI.Screens.EScreenOrder order) [0x00023] in &lt;be9862b1593e41e48ad89bd48723d349&gt;:0</p>\n<p>at UserInterfaceClass+GClass3502`2+Struct1108[T,U,V].MoveNext () [0x0018c] in &lt;be9862b1593e41e48ad89bd48723d349&gt;:0</p>\n<p>2025-07-05 20:47:08.459 -04:00|0.15.5.1.33420|Error|Default|</p>\n<p>EXCEPTION: System.MissingMethodException: void GClass835.ExecuteForEach&lt;!0&gt;(System.Collections.Generic.IEnumerable<code>1&amp;lt;!!0&amp;gt;,System.Action</code>1&lt;!!0&gt;)</p>\n<p>at SkillMultiplier.Patches.MenuScreenPatch.Postfix () [0x00011] in &lt;b3d27691051b4cf6b165e452c63dcbb4&gt;:0</p>\n<p>at (wrapper dynamic-method) EFT.UI.MenuScreen.DMD&lt;EFT.UI.MenuScreen::Show&gt;(EFT.UI.MenuScreen,EFT.Profile,MatchmakerPlayerControllerClass,ESessionMode)</p>\n<p>at (wrapper dynamic-method) EFT.UI.MenuScreen.DMD&lt;EFT.UI.MenuScreen::Show&gt;(EFT.UI.MenuScreen,EFT.UI.MenuScreen/GClass3517)</p>\n<p>at UserInterfaceClass+GClass3502`2[T,U,V].DisplayScreen () [0x00000] in &lt;be9862b1593e41e48ad89bd48723d349&gt;:0</p>\n<p>at UserInterfaceClass+GClass3502`2[T,U,V].ShowScreenAsPrevious () [0x00031] in &lt;be9862b1593e41e48ad89bd48723d349&gt;:0</p>\n<p>at UserInterfaceClass+GClass3502`2[T,U,V].GInterface456&lt;!0&gt;.ShowScreenAsPrevious () [0x00000] in &lt;be9862b1593e41e48ad89bd48723d349&gt;:0</p>\n<p>at UserInterfaceClass+GClass3502`2[T,U,V].method_5 (EFT.UI.Screens.EScreenOrder order) [0x00023] in &lt;be9862b1593e41e48ad89bd48723d349&gt;:0</p>\n<p>at UserInterfaceClass+GClass3502`2+Struct1108[T,U,V].MoveNext () [0x0018c] in &lt;be9862b1593e41e48ad89bd48723d349&gt;:0</p>\n<p>2025-07-05 20:47:10.452 -04:00|0.15.5.1.33420|Info|backend|\u2014&gt; Request HTTPS, id [38]: URL: <a href=\"http://192.168.1.253:6969/client/checkVersion\" target=\"_blank\" rel=\"noreferrer noopener\">http://192.168.1.253:6969/client/checkVersion</a>, crc: .</p>\n<p>2025-07-05 20:47:10.452 -04:00|0.15.5.1.33420|Info|backend|\u2014&gt; Request HTTPS, id [39]: URL: <a href=\"http://192.168.1.253:6969/client/items/prices/4e7ef752240141bca059b2ea\" target=\"_blank\" rel=\"noreferrer noopener\">http://192.168.1.253:6969/client/items/prices/4e7ef752240141bca059b2ea</a>, crc: .</p>\n<p>2025-07-05 20:47:10.525 -04:00|0.15.5.1.33420|Info|backend|&lt;\u2014 Response HTTPS, id [38]: URL: <a href=\"http://192.168.1.253:6969/client/checkVersion\" target=\"_blank\" rel=\"noreferrer noopener\">http://192.168.1.253:6969/client/checkVersion</a>, crc: , responseText: .</p>\n<p>2025-07-05 20:47:10.557 -04:00|0.15.5.1.33420|Info|backend|&lt;\u2014 Response HTTPS, id [39]: URL: <a href=\"http://192.168.1.253:6969/client/items/prices/4e7ef752240141bca059b2ea\" target=\"_blank\" rel=\"noreferrer noopener\">http://192.168.1.253:6969/client/items/prices/4e7ef752240141bca059b2ea</a>, crc: , responseText: .</p>\n<p>2025-07-05 20:47:10.564 -04:00|0.15.5.1.33420|Info|backend|\u2014&gt; Request HTTPS, id [40]: URL: <a href=\"http://192.168.1.253:6969/client/trading/api/getTraderAssort/4e7ef752240141bca059b2ea\" target=\"_blank\" rel=\"noreferrer noopener\">http://192.168.1.253:6969/client/trading/api/getTraderAssort/4e7ef752240141bca059b2ea</a>, crc: .</p>\n<p>2025-07-05 20:47:10.626 -04:00|0.15.5.1.33420|Info|backend|&lt;\u2014 Response HTTPS, id [40]: URL: <a href=\"http://192.168.1.253:6969/client/trading/api/getTraderAssort/4e7ef752240141bca059b2ea\" target=\"_blank\" rel=\"noreferrer noopener\">http://192.168.1.253:6969/client/trading/api/getTraderAssort/4e7ef752240141bca059b2ea</a>, crc: , responseText: .</p>\n<p>2025-07-05 20:49:13.834 -04:00|0.15.5.1.33420|Error|Default|</p>\n<p>EXCEPTION: System.MissingMethodException: void GClass835.ExecuteForEach&lt;!0&gt;(System.Collections.Generic.IEnumerable<code>1&amp;lt;!!0&amp;gt;,System.Action</code>1&lt;!!0&gt;)</p>\n<p>at SkillMultiplier.Patches.MenuScreenPatch.Postfix () [0x00011] in &lt;b3d27691051b4cf6b165e452c63dcbb4&gt;:0</p>\n<p>at (wrapper dynamic-method) EFT.UI.MenuScreen.DMD&lt;EFT.UI.MenuScreen::Show&gt;(EFT.UI.MenuScreen,EFT.Profile,MatchmakerPlayerControllerClass,ESessionMode)</p>\n<p>at (wrapper dynamic-method) EFT.UI.MenuScreen.DMD&lt;EFT.UI.MenuScreen::Show&gt;(EFT.UI.MenuScreen,EFT.UI.MenuScreen/GClass3517)</p>\n<p>at UserInterfaceClass+GClass3502`2[T,U,V].DisplayScreen () [0x00000] in &lt;be9862b1593e41e48ad89bd48723d349&gt;:0</p>\n<p>at UserInterfaceClass+GClass3502`2[T,U,V].ShowScreenAsPrevious () [0x00031] in &lt;be9862b1593e41e48ad89bd48723d349&gt;:0</p>\n<p>at UserInterfaceClass+GClass3502`2[T,U,V].GInterface456&lt;!0&gt;.ShowScreenAsPrevious () [0x00000] in &lt;be9862b1593e41e48ad89bd48723d349&gt;:0</p>\n<p>at UserInterfaceClass+GClass3502`2[T,U,V].method_5 (EFT.UI.Screens.EScreenOrder order) [0x00023] in &lt;be9862b1593e41e48ad89bd48723d349&gt;:0</p>\n<p>at UserInterfaceClass+GClass3502`2+Struct1108[T,U,V].MoveNext () [0x0018c] in &lt;be9862b1593e41e48ad89bd48723d349&gt;:0</p>\n<p>2025-07-05 20:49:19.074 -04:00|0.15.5.1.33420|Info|backend|\u2014&gt; Request HTTPS, id [41]: URL: <a href=\"http://192.168.1.253:6969/client/match/group/invite/send\" target=\"_blank\" rel=\"noreferrer noopener\">http://192.168.1.253:6969/client/match/group/invite/send</a>, crc: .</p>\n<p>2025-07-05 20:49:19.124 -04:00|0.15.5.1.33420|Info|backend|&lt;\u2014 Response HTTPS, id [41]: URL: <a href=\"http://192.168.1.253:6969/client/match/group/invite/send\" target=\"_blank\" rel=\"noreferrer noopener\">http://192.168.1.253:6969/client/match/group/invite/send</a>, crc: , responseText: .</p>\n<p>2025-07-05 20:49:27.002 -04:00|0.15.5.1.33420|Debug|application|TRACE-GamePrepare 2</p>\n<p>2025-07-05 20:49:27.627 -04:00|0.15.5.1.33420|Debug|application|Heap pre-allocation - disabled</p>\n<p>2025-07-05 20:49:28.151 -04:00|0.15.5.1.33420|Debug|application|totalMemoryBeforeCleanUp 1124.098</p>\n<p>2025-07-05 20:49:28.151 -04:00|0.15.5.1.33420|Debug|application|GC::Collect</p>\n<p>2025-07-05 20:49:28.549 -04:00|0.15.5.1.33420|Debug|application|GC::Collect Aggressive</p>\n<p>2025-07-05 20:49:29.309 -04:00|0.15.5.1.33420|Debug|application|collectedMemoryGB 0.0390625</p>\n<p>2025-07-05 20:49:29.501 -04:00|0.15.5.1.33420|Debug|application|GC mode switched to Disabled</p>\n<p>2025-07-05 20:49:29.827 -04:00|0.15.5.1.33420|Error|Default|Already registered object - Turnable.NetId:1424399346 patron_lamp_hideout (2)</p>\n<p>2025-07-05 20:49:29.827 -04:00|0.15.5.1.33420|Error|Default|Already registered object - Turnable.NetId:-1707768434 lamp_ceiling_rezerv (2)</p>\n<p>2025-07-05 20:49:59.441 -04:00|0.15.5.1.33420|Info|backend|\u2014&gt; Request HTTPS, id [42]: URL: <a href=\"http://192.168.1.253:6969/client/trading/api/getTraderAssort/4e7ef752240141bca059b2ea\" target=\"_blank\" rel=\"noreferrer noopener\">http://192.168.1.253:6969/client/trading/api/getTraderAssort/4e7ef752240141bca059b2ea</a>, crc: .</p>\n<p>2025-07-05 20:49:59.508 -04:00|0.15.5.1.33420|Info|backend|&lt;\u2014 Response HTTPS, id [42]: URL: <a href=\"http://192.168.1.253:6969/client/trading/api/getTraderAssort/4e7ef752240141bca059b2ea\" target=\"_blank\" rel=\"noreferrer noopener\">http://192.168.1.253:6969/client/trading/api/getTraderAssort/4e7ef752240141bca059b2ea</a>, crc: , responseText: .</p>\n<p>Log of relevant errors on 3.10.5 also causes a weird UI bug where main menu stays present. Interestingly the XP multiplier part of the mod seems to actually work on 3.10.5 but the UI bug makes the mod overall unusable</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 53913,
+   "parent_id": null,
+   "author": "SikeSky",
+   "author_id": 81424,
+   "author_url": "https://forge.sp-tarkov.com/user/81424/sikesky",
+   "created_at": "2025-07-16T19:56:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This looks really cool. I\u2019ve been using SVM to alleviate some of the skill fatigue BS until now; do you know if this mod conflicts with or overrides SVM\u2019s changes?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 143161,
+   "parent_id": null,
+   "author": "FuturoCtd",
+   "author_id": 89363,
+   "author_url": "https://forge.sp-tarkov.com/user/89363/futuroctd",
+   "created_at": "2025-11-19T06:18:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I wonder if you will fit 4.0\uff1fCause i really like this mod\uff0c improving the skills were really torturing.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 153571,
+   "parent_id": null,
+   "author": "Drekthul",
+   "author_id": 105834,
+   "author_url": "https://forge.sp-tarkov.com/user/105834/drekthul",
+   "created_at": "2026-02-22T22:43:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It\u2019s been asked before, albeit a few months back. Is there any plans to bring this mod up to date with the current game version?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

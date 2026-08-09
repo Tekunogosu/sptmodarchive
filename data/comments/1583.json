@@ -1,0 +1,230 @@
+{
+ "mod_id": 1583,
+ "slug": "player-level-boss-spawn-chance",
+ "fetched_at": "2026-08-09T07:23:32Z",
+ "reported_total": null,
+ "pages": 1,
+ "count": 22,
+ "comments": [
+  {
+   "id": 37243,
+   "parent_id": null,
+   "author": "Fontaine",
+   "author_id": 6053,
+   "author_url": "https://forge.sp-tarkov.com/user/6053/fontaine",
+   "created_at": "2024-07-24T09:16:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Just note this will conflict with Realism\u2019s \u201cBoss Changes\u201d option since it does the same thing</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 37328,
+   "parent_id": null,
+   "author": "IAs",
+   "author_id": 39055,
+   "author_url": "https://forge.sp-tarkov.com/user/39055/ias",
+   "created_at": "2024-07-25T09:08:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>so whta does the advancedConfig.json file do?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 37362,
+   "parent_id": null,
+   "author": "Zona",
+   "author_id": 59474,
+   "author_url": "https://forge.sp-tarkov.com/user/59474/zona",
+   "created_at": "2024-07-25T17:59:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello, I got this error</p>\n<p>How can I fix it?</p>\n<p><strong>The application had a critical error and failed to run</strong></p>\n<p><strong>Exception produced: SyntaxError</strong></p>\n<p><strong>Stacktrace:</strong></p>\n<p><strong>SyntaxError: G:\\EFT SERVER\\user\\mods\\crustyselenium-playerlevelequalsbossspawnchance\\config\\config.json: Unexpected token \u2018}\u2019, \u2026\u201cltiplier\u201d:}</strong></p>\n<p><strong>\u201c\u2026 is not valid JSON</strong></p>\n<p><strong>at parse (&lt;anonymous&gt;)</strong></p>\n<p><strong>at Object.Module._extensions..json (node:internal/modules/cjs/loader:1453:39)</strong></p>\n<p><strong>at Module.load (node:internal/modules/cjs/loader:1207:32)</strong></p>\n<p><strong>at Function.Module._load (node:internal/modules/cjs/loader:1023:12)</strong></p>\n<p><strong>at Module.require (node:internal/modules/cjs/loader:1235:19)</strong></p>\n<p><strong>at Module.require (pkg/prelude/bootstrap.js:1851:31)</strong></p>\n<p><strong>at require (node:internal/modules/helpers:176:18)</strong></p>\n<p><strong>at Mod.&lt;instance_members_initializer&gt; (G:\\EFT SERVER\\user\\mods\\crustyselenium-playerlevelequalsbossspawnchance\\src\\mod.ts:21:25)</strong></p>\n<p><strong>at new Mod (G:\\EFT SERVER\\user\\mods\\crustyselenium-playerlevelequalsbossspawnchance\\src\\mod.ts:13:1)</strong></p>\n<p><strong>at Object.&lt;anonymous&gt; (G:\\EFT SERVER\\user\\mods\\crustyselenium-playerlevelequalsbossspawnchance\\src\\mod.ts:191:20)</strong></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 111467,
+   "parent_id": 37328,
+   "author": "crustyselenium_",
+   "author_id": 51054,
+   "author_url": "https://forge.sp-tarkov.com/user/51054/crustyselenium",
+   "created_at": "2024-07-25T23:33:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Nothing right now, it does include the default vanilla spawn chances in there if you want to compare.</p>\n<p>I have an update planned that will allow users to have more complicated algorithms to determine spawn chance. For now it just does nothing.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 111468,
+   "parent_id": 37362,
+   "author": "crustyselenium_",
+   "author_id": 51054,
+   "author_url": "https://forge.sp-tarkov.com/user/51054/crustyselenium",
+   "created_at": "2024-07-25T23:37:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You modified the config in a way that made it unreadable for the mod.</p>\n<p>An easy fix to to reinstall the mod.</p>\n<p>Make sure that each \u201cmultiplier\u201d value in the json file actually has a numerical value. If you don\u2019t want to modify a specific boss spawn chance, delete the whole line of that boss.</p>\n<p>What specifically are you trying to change in the config?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 37638,
+   "parent_id": null,
+   "author": "Sorter",
+   "author_id": 50638,
+   "author_url": "https://forge.sp-tarkov.com/user/50638/sorter",
+   "created_at": "2024-07-28T19:45:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>has anyone tested this with SWAG yet?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 111975,
+   "parent_id": 37638,
+   "author": "crustyselenium_",
+   "author_id": 51054,
+   "author_url": "https://forge.sp-tarkov.com/user/51054/crustyselenium",
+   "created_at": "2024-07-29T17:21:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019ve done a very small amount of testing, and found that it WORKS. BUT sometimes swagnuts will prevent the bosses from spawning, even if the chances are at 100%.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 112000,
+   "parent_id": 37638,
+   "author": "Sorter",
+   "author_id": 50638,
+   "author_url": "https://forge.sp-tarkov.com/user/50638/sorter",
+   "created_at": "2024-07-29T20:41:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>hmm\u2026are you saying the spawn chance in swag was set to 100 or in this mod? I ask because to me it would make sense that they do not spawn 100% if this mod is taking precedence over SWAG.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 112045,
+   "parent_id": 37638,
+   "author": "crustyselenium_",
+   "author_id": 51054,
+   "author_url": "https://forge.sp-tarkov.com/user/51054/crustyselenium",
+   "created_at": "2024-07-30T00:24:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It mostly depends on load order, SWAG will take precedence on all bosses if it loads after this one, and this one will take precedence for the vanilla bosses if it\u2019s loaded after.</p>\n<p>I\u2019m looking into an update that will make this compatible with SWAG. But you could just alter spawn chances w/SWAG itself, so I don\u2019t really have it as a priority.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 112047,
+   "parent_id": 37638,
+   "author": "crustyselenium_",
+   "author_id": 51054,
+   "author_url": "https://forge.sp-tarkov.com/user/51054/crustyselenium",
+   "created_at": "2024-07-30T00:31:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>For now though, I\u2019ll make this officially incompatible with swagnuts, and will disable itself w/a red note in console if found running with it.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 112048,
+   "parent_id": 37638,
+   "author": "Sorter",
+   "author_id": 50638,
+   "author_url": "https://forge.sp-tarkov.com/user/50638/sorter",
+   "created_at": "2024-07-30T00:59:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>damn, well thanks for the replies and looking into it. Was hoping I could add your mod and get the best of both worlds. I really like the idea of boss spawn chance increasing with progression (its a convenience for the lazy).</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 41578,
+   "parent_id": null,
+   "author": "374ShotsFired",
+   "author_id": 63123,
+   "author_url": "https://forge.sp-tarkov.com/user/63123/374shotsfired",
+   "created_at": "2024-09-28T07:42:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is there any way to configure this so that the Goons will spawn in on Factory? I cant seem to find them for the Tourists Quest</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 117688,
+   "parent_id": 41578,
+   "author": "crustyselenium_",
+   "author_id": 51054,
+   "author_url": "https://forge.sp-tarkov.com/user/51054/crustyselenium",
+   "created_at": "2024-09-29T01:22:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This mod only uses vanilla spawns from the SPT database files, which sadly doesn\u2019t include events other than the peacekeeper/skier and bloodhounds spawns.</p>\n<p>For the 3.10 update I plan on implementing a rudimentary system to allow addings bosses to any map through the configs, but that\u2019s going to be a while from now.</p>\n<p>If you have some json prowess you could add a boss spawn possibility to the spt location file and in the mod config, and it\u2019ll work. But modifying SPT_Data files is frowned upon unless you really know what you\u2019re doing.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 48793,
+   "parent_id": null,
+   "author": "Dar'Zhar",
+   "author_id": 64077,
+   "author_url": "https://forge.sp-tarkov.com/user/64077/darzhar",
+   "created_at": "2025-02-21T22:11:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is this confirmed working with Moar+Bagels?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 52619,
+   "parent_id": null,
+   "author": "Benzo",
+   "author_id": 32603,
+   "author_url": "https://forge.sp-tarkov.com/user/32603/benzo",
+   "created_at": "2025-06-09T23:04:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>can i also set spawnchance multiplier to 0?<br />\nI just want to get rid of Partizan xD</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 132215,
+   "parent_id": 52619,
+   "author": "crustyselenium_",
+   "author_id": 51054,
+   "author_url": "https://forge.sp-tarkov.com/user/51054/crustyselenium",
+   "created_at": "2025-06-10T22:52:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>yup.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 132224,
+   "parent_id": 52619,
+   "author": "Benzo",
+   "author_id": 32603,
+   "author_url": "https://forge.sp-tarkov.com/user/32603/benzo",
+   "created_at": "2025-06-11T01:36:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>MASHALLAH</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 53465,
+   "parent_id": null,
+   "author": "echOo.",
+   "author_id": 67813,
+   "author_url": "https://forge.sp-tarkov.com/user/67813/echoo",
+   "created_at": "2025-07-03T10:23:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I see here below that you said it sort of work with SWAG. My question is: what\u2019s with this text in SERVER:</p>\n<p>\u201c[Lvl=Boss] INCOMPATIBLE MOD DETECTED: SWAG. DISABLING [Lvl=Boss] FUNCTION\u201d</p>\n<p>does it mean it disables itself? The mod? If so, how to make it NOT do that? And at least TRY to work with SWAG - for start for testing.</p>\n<p>Anyway, the idea of the mod is great Btw. I still play on 3.10 - dont know if that is relevant\u2026</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133220,
+   "parent_id": 53465,
+   "author": "crustyselenium_",
+   "author_id": 51054,
+   "author_url": "https://forge.sp-tarkov.com/user/51054/crustyselenium",
+   "created_at": "2025-07-03T15:29:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>That check disables the functionality of this mod. If you really want you can open the /src/mod.ts file and delete the check in the preSptLoad() function. Don\u2019t go looking for any support with a modified and unsupported version of my mod though.</p>\n<p>SWAG disables the vanilla boss spawning system, which is what my mod is changing the spawn chances of, so I added the check in prevent any major conflicts/game or profile issues.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 133239,
+   "parent_id": 53465,
+   "author": "echOo.",
+   "author_id": 67813,
+   "author_url": "https://forge.sp-tarkov.com/user/67813/echoo",
+   "created_at": "2025-07-04T01:27:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I see. So you did that and that\u2019s when \u201c[\u2026]it WORKS. BUT[\u2026]\u201d, I assume?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133247,
+   "parent_id": 53465,
+   "author": "crustyselenium_",
+   "author_id": 51054,
+   "author_url": "https://forge.sp-tarkov.com/user/51054/crustyselenium",
+   "created_at": "2025-07-04T14:52:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The mod still runs, but boss spawning is overwritten by SWAG. So the mod does nothing.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133249,
+   "parent_id": 53465,
+   "author": "echOo.",
+   "author_id": 67813,
+   "author_url": "https://forge.sp-tarkov.com/user/67813/echoo",
+   "created_at": "2025-07-04T15:21:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Oh, I see Sorry, I was confused with \u201cI\u2019ve done a very small amount of testing, and found that it WORKS. BUT sometimes swagnuts will prevent the bosses from spawning, even if the chances are at 100%.\u201d - sounded like \u201cit works\u201d but now I see it doesn\u2019t. Thank you for your time</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

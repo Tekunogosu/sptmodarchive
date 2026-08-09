@@ -1,0 +1,30 @@
+{
+ "mod_id": 2465,
+ "slug": "price-tag-payday",
+ "fetched_at": "2026-08-09T08:03:49Z",
+ "reported_total": null,
+ "pages": 1,
+ "count": 2,
+ "comments": [
+  {
+   "id": 143794,
+   "parent_id": null,
+   "author": "booger",
+   "author_id": 76067,
+   "author_url": "https://forge.sp-tarkov.com/user/76067/booger",
+   "created_at": "2025-11-25T05:33:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>How does this mod interact with traders added by other mods?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 143797,
+   "parent_id": 143794,
+   "author": "Speenks",
+   "author_id": 73061,
+   "author_url": "https://forge.sp-tarkov.com/user/73061/speenks",
+   "created_at": "2025-11-25T07:36:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi there! While there is no direct support for custom traders, it would depend on how such a trader creates their offers. If pricing is hard-coded, then my mod will have no effect by default. However, if the trader sets their prices by drawing from the handbook or some other SPT cache, then this mod should ensure pricing consistent with other avenues of obtainment.</p>\n<p>Good news if you are handy though\u2013if you open the mod.ts and find lines 202-212, you should find the vanilla trader IDs (203-211) as well as the array (212) used in my processing function. You can add any custom traders in the style of lines 203-211 and then make sure to include the variable name into the array with a comma as the delimiter.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://cdn.discordapp.com/attachments/336226931085279233/1442777499665825823/image.png?ex=6926aac1&amp;is=69255941&amp;hm=9091c197a3a13fdcebf127e239f9fb8c8294bddb013f390e681d38080567dcd3&amp;\" alt=\"example\" /></p>\n<p>It should look something like this:</p>\n<p>/*\u2026other trader IDs\u2026*/</p>\n<p><strong>const TRADER_NAME_HERE: string = \u201cTRADER_ID_HERE\u201d;</strong></p>\n<p>const ALL_TRADER_IDS: string[] = [ID_PRAPOR, ID_THERAPIST, ID_SKIER, ID_PEACEKEEPER, ID_MECHANIC, ID_RAGMAN, ID_JAEGER, <strong>TRADER_NAME_HERE</strong>]; //Excludes Fence and Ref</p>\n<p>I may include a config option in the future to simplify it, but the least I can do for now is offer the tools to DIY.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  }
+ ]
+}

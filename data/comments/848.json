@@ -1,0 +1,240 @@
+{
+ "mod_id": 848,
+ "slug": "luas-auto-profile-backup-updated",
+ "fetched_at": "2026-08-09T07:34:33Z",
+ "reported_total": 13,
+ "pages": 2,
+ "count": 23,
+ "comments": [
+  {
+   "id": 14825,
+   "parent_id": null,
+   "author": "Jehree Senior Moderator",
+   "author_id": 29457,
+   "author_url": "https://forge.sp-tarkov.com/user/29457/jehree",
+   "created_at": "2023-04-17T14:19:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey Props. Just a heads up, trying to load a profile with your updated version of this mod throws these errors. In this test no other mods were installed.</p>\n<p>TypeError: Cannot read properties of undefined (reading \u2018exists\u2019)</p>\n<p>TypeError: Cannot read properties of undefined (reading \u2018exists\u2019)</p>\n<p>at Mod.onEvent (C:\\SP Tarkov\\SPT-AKI-3.5.5 BACKUP\\user\\mods\\AutoProfileBackup-1.1.0\\src\\mod.js:78:23)</p>\n<p>at Object.action (C:\\SP Tarkov\\SPT-AKI-3.5.5 BACKUP\\user\\mods\\AutoProfileBackup-1.1.0\\src\\mod.js:22:30)</p>\n<p>at StaticRouterMod.handleStatic (C:\\snapshot\\project\\obj\\di\\Router.js)</p>\n<p>at HttpRouter.handleRoute (C:\\snapshot\\project\\obj\\routers\\HttpRouter.js)</p>\n<p>at HttpRouter.getResponse (C:\\snapshot\\project\\obj\\routers\\HttpRouter.js)</p>\n<p>at AkiHttpListener.getResponse (C:\\snapshot\\project\\obj\\servers\\http\\AkiHttpListener.js)</p>\n<p>at IncomingMessage.&lt;anonymous&gt; (C:\\snapshot\\project\\obj\\servers\\http\\AkiHttpListener.js)</p>\n<p>at IncomingMessage.emit (node:events:527:28)</p>\n<p>at IncomingMessage.Readable.read (node:internal/streams/readable:527:10)</p>\n<p>at flow (node:internal/streams/readable:1011:34)</p>\n<p>TypeError: Cannot read properties of undefined (reading \u2018exists\u2019)</p>\n<p>TypeError: Cannot read properties of undefined (reading \u2018exists\u2019)</p>\n<p>at Mod.onEvent (C:\\SP Tarkov\\SPT-AKI-3.5.5 BACKUP\\user\\mods\\AutoProfileBackup-1.1.0\\src\\mod.js:78:23)</p>\n<p>at Object.action (C:\\SP Tarkov\\SPT-AKI-3.5.5 BACKUP\\user\\mods\\AutoProfileBackup-1.1.0\\src\\mod.js:22:30)</p>\n<p>at StaticRouterMod.handleStatic (C:\\snapshot\\project\\obj\\di\\Router.js)</p>\n<p>at HttpRouter.handleRoute (C:\\snapshot\\project\\obj\\routers\\HttpRouter.js)</p>\n<p>at HttpRouter.getResponse (C:\\snapshot\\project\\obj\\routers\\HttpRouter.js)</p>\n<p>at AkiHttpListener.getResponse (C:\\snapshot\\project\\obj\\servers\\http\\AkiHttpListener.js)</p>\n<p>at IncomingMessage.&lt;anonymous&gt; (C:\\snapshot\\project\\obj\\servers\\http\\AkiHttpListener.js)</p>\n<p>at IncomingMessage.emit (node:events:527:28)</p>\n<p>at IncomingMessage.Readable.read (node:internal/streams/readable:527:10)</p>\n<p>at flow (node:internal/streams/readable:1011:34)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 78754,
+   "parent_id": 14825,
+   "author": "Jehree Senior Moderator",
+   "author_id": 29457,
+   "author_url": "https://forge.sp-tarkov.com/user/29457/jehree",
+   "created_at": "2023-04-17T14:21:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Looks like this was happening because the mod was disabled in the config. Enabled is set to false by default in your download. Seems to be working now that I set that to true</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 15260,
+   "parent_id": null,
+   "author": "smeglordx",
+   "author_id": 30547,
+   "author_url": "https://forge.sp-tarkov.com/user/30547/smeglordx",
+   "created_at": "2023-04-28T18:21:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>im not sure i understand how this works.. so if i need to rollback and copy over the backup, how come i dont need to rename it? the filename is completely different?</p>\n<p>edit: alright i undersrtand now after trying it out lol, nvm.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 21906,
+   "parent_id": null,
+   "author": "nyrus",
+   "author_id": 23555,
+   "author_url": "https://forge.sp-tarkov.com/user/23555/nyrus",
+   "created_at": "2023-10-13T10:01:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Still works well with 3.7.0! \\o/</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 23182,
+   "parent_id": null,
+   "author": "nyrus",
+   "author_id": 23555,
+   "author_url": "https://forge.sp-tarkov.com/user/23555/nyrus",
+   "created_at": "2023-10-28T08:44:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>And it works with 3.7.1 as well!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 26801,
+   "parent_id": null,
+   "author": "ColinShark",
+   "author_id": 27232,
+   "author_url": "https://forge.sp-tarkov.com/user/27232/colinshark",
+   "created_at": "2024-01-28T11:47:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I wanted to try this mod out, but I\u2019m getting an ENOENT error:</p>\n<p>Error: ENOENT: no such file or directory, copyfile \u2018undefined/ba9c76fd0503c37cfab6ac04.json\u2019 -&gt; \u2018undefined/AutoBackup/undefined/ba9c76fd0503c37cfab6ac04/onGameStart-2024-01-28T114449849Z.json\u2019The full traceback is pointing to lines 56:34 and 212:18 in the mod.ts file</p>\n<p>[Client Request] /client/game/start Error: ENOENT: no such file or directory, copyfile \u2018undefined/ba9c76fd0503c37cfab6ac04.json\u2019 -&gt; \u2018undefined/AutoBackup/undefined/ba9c76fd0503c37cfab6ac04/onGameStart-2024-01-28T114449849Z.json\u2019 Error: ENOENT: no such file or directory, copyfile \u2018undefined/ba9c76fd0503c37cfab6ac04.json\u2019 -&gt; \u2018undefined/AutoBackup/undefined/ba9c76fd0503c37cfab6ac04/onGameStart-2024-01-28T114449849Z.json\u2019 at Object.copyFileSync (node:fs:2894:3) at Object.copyFileSync (pkg/prelude/bootstrap.js:1167:16) at VFS.copyFile (C:\\snapshot\\project\\src\\utils\\VFS.ts:75:12) at Mod.onEvent (C:\\SPTarkov\\spt372\\user\\mods\\lua-autoprofilebackup-1.3.0\\src\\mod.ts:212:18) at Object.action (C:\\SPTarkov\\spt372\\user\\mods\\lua-autoprofilebackup-1.3.0\\src\\mod.ts:56:34) at StaticRouterMod.handleStatic (C:\\snapshot\\project\\src\\di\\Router.ts:50:63) at HttpRouter.handleRoute (C:\\snapshot\\project\\src\\routers\\HttpRouter.ts:79:62) at HttpRouter.getResponse (C:\\snapshot\\project\\src\\routers\\HttpRouter.ts:44:30) at AkiHttpListener.getResponse (C:\\snapshot\\project\\src\\servers\\http\\AkiHttpListener.ts:150:38) at IncomingMessage.&lt;anonymous&gt; (C:\\snapshot\\project\\src\\servers\\http\\AkiHttpListener.ts:75:43) Error: ENOENT: no such file or directory, copyfile \u2018undefined/ba9c76fd0503c37cfab6ac04.json\u2019 -&gt; \u2018undefined/AutoBackup/undefined/ba9c76fd0503c37cfab6ac04/onGameStart-2024-01-28T114449849Z.json\u2019 Error: ENOENT: no such file or directory, copyfile \u2018undefined/ba9c76fd0503c37cfab6ac04.json\u2019 -&gt; \u2018undefined/AutoBackup/undefined/ba9c76fd0503c37cfab6ac04/onGameStart-2024-01-28T114449849Z.json\u2019 at Object.copyFileSync (node:fs:2894:3) at Object.copyFileSync (pkg/prelude/bootstrap.js:1167:16) at VFS.copyFile (C:\\snapshot\\project\\src\\utils\\VFS.ts:75:12) at Mod.onEvent (C:\\SPTarkov\\spt372\\user\\mods\\lua-autoprofilebackup-1.3.0\\src\\mod.ts:212:18) at Object.action (C:\\SPTarkov\\spt372\\user\\mods\\lua-autoprofilebackup-1.3.0\\src\\mod.ts:56:34) at StaticRouterMod.handleStatic (C:\\snapshot\\project\\src\\di\\Router.ts:50:63) at HttpRouter.handleRoute (C:\\snapshot\\project\\src\\routers\\HttpRouter.ts:79:62) at HttpRouter.getResponse (C:\\snapshot\\project\\src\\routers\\HttpRouter.ts:44:30) at AkiHttpListener.getResponse (C:\\snapshot\\project\\src\\servers\\http\\AkiHttpListener.ts:150:38) at IncomingMessage.&lt;anonymous&gt; (C:\\snapshot\\project\\src\\servers\\http\\AkiHttpListener.ts:75:43)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 96623,
+   "parent_id": 26801,
+   "author": "S_gamez",
+   "author_id": 22060,
+   "author_url": "https://forge.sp-tarkov.com/user/22060/s-gamez",
+   "created_at": "2024-01-30T03:15:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>U on 3.7.6 ?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 96674,
+   "parent_id": 26801,
+   "author": "ColinShark",
+   "author_id": 27232,
+   "author_url": "https://forge.sp-tarkov.com/user/27232/colinshark",
+   "created_at": "2024-01-31T14:24:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yes</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 28043,
+   "parent_id": null,
+   "author": "ArrKayCee",
+   "author_id": 46720,
+   "author_url": "https://forge.sp-tarkov.com/user/46720/arrkaycee",
+   "created_at": "2024-03-27T22:51:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Not sure if intentional but the config file is named config.jsonc and doesn\u2019t work without editing the file extension.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 98329,
+   "parent_id": 28043,
+   "author": "ArrKayCee",
+   "author_id": 46720,
+   "author_url": "https://forge.sp-tarkov.com/user/46720/arrkaycee",
+   "created_at": "2024-03-27T22:55:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>wait wtf why does it work when its .jsonc?? oh well, I was wrong, my bad.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 30076,
+   "parent_id": null,
+   "author": "osumunbro",
+   "author_id": 31863,
+   "author_url": "https://forge.sp-tarkov.com/user/31863/osumunbro",
+   "created_at": "2024-04-19T03:09:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>for those that also want to create a backup when the game is closed:</p>\n<p>add to config:</p>\n<p>\u201cOnLogout\u201d: true</p>\n<p>add to mod.ts:</p>\n<p>if (this.modConfig?.AutoBackup?.OnLogout) { staticRouterModService.registerStaticRouter( <code>${this.modName}-/client/game/logout</code>, [ { url: \u201c/client/game/logout\u201d, action: ( url: string, info: string, sessionID: string, output: string ): string =&gt; { this.onEvent(\u201conLogout\u201d, sessionID); return output; } } ], \u201caki\u201d ); }</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 101301,
+   "parent_id": 28043,
+   "author": "osumunbro",
+   "author_id": 31863,
+   "author_url": "https://forge.sp-tarkov.com/user/31863/osumunbro",
+   "created_at": "2024-04-19T03:10:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>jsonc is json with comments</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 104548,
+   "parent_id": 30076,
+   "author": "unknownbomj",
+   "author_id": 42490,
+   "author_url": "https://forge.sp-tarkov.com/user/42490/unknownbomj",
+   "created_at": "2024-05-21T13:57:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>\u041d\u0435 \u0440\u0430\u0431\u043e\u0442\u0430\u0435\u0442, \u0432\u0441\u0435 \u0441\u0434\u0435\u043b\u0430\u043b \u043a\u0430\u043a \u0442\u044b \u043d\u0430\u043f\u0438\u0441\u0430\u043b.</p>\n<p>The application had a critical error and failed to run Exception produced: JSONError Stacktrace: JSONError: Expected \u2018,\u2019 or \u2018}\u2019 after property value in JSON at position 178 while parsing \u2018{ \u201cEnabled\u201d: true,\u201cBackupSavedLog\u201d\u2019 at C:\\snapshot\\project\\node_modules\\parse-json\\index.js:26:19 at Function.parse (C:\\snapshot\\project\\node_modules\\jsonc\\lib\\jsonc.js:176:16) at Mod.preAkiLoad (E:\\Games\\Battlestate Games\\SPT\\user\\mods\\lua-autoprofilebackup-1.4.0\\src\\mod.ts:42:32) at PreAkiModLoader.executeModsAsync (C:\\snapshot\\src\\loaders\\PreAkiModLoader.ts:419:53) at PreAkiModLoader.load (C:\\snapshot\\src\\loaders\\PreAkiModLoader.ts:59:24) at processTicksAndRejections (node:internal/process/task_queues:95:5) at process.runNextTicks [as _tickCallback] (node:internal/process/task_queues:64:3) at Function.runMain (pkg/prelude/bootstrap.js:1984:13) at node:internal/main/run_main_module:28:49 at Program.start (C:\\snapshot\\src\\Program.ts:30:13)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 104945,
+   "parent_id": 30076,
+   "author": "osumunbro",
+   "author_id": 31863,
+   "author_url": "https://forge.sp-tarkov.com/user/31863/osumunbro",
+   "created_at": "2024-05-25T22:01:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Sorry, I forgot to include the closing bracket on the if block. I edited the original comment if you want to copy it again, or you can just add the bracket yourself.</p>\n<p><a href=\"https://gyazo.com/5449140e6aa309129d719812afdad027\" target=\"_blank\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.gyazo.com/5449140e6aa309129d719812afdad027.png\" alt=\"5449140e6aa309129d719812afdad027.png\" /></a></p>\n<p><a href=\"https://gyazo.com/5449140e6aa309129d719812afdad027\" target=\"_blank\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.gyazo.com/e3c8f95ffc3f9b68ad0827833f658b45.png\" alt=\"e3c8f95ffc3f9b68ad0827833f658b45.png\" />  </a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 36055,
+   "parent_id": null,
+   "author": "GMAK3R",
+   "author_id": 41856,
+   "author_url": "https://forge.sp-tarkov.com/user/41856/gmak3r",
+   "created_at": "2024-07-12T17:54:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>now make it</p>\n<h1>(UPDATED-UPDATED)</h1>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 37082,
+   "parent_id": null,
+   "author": "LightoftheWorld",
+   "author_id": 21928,
+   "author_url": "https://forge.sp-tarkov.com/user/21928/lightoftheworld",
+   "created_at": "2024-07-22T14:46:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Oh, might be useful! I won\u2019t accidentally delete my level 52 permanently</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 38443,
+   "parent_id": null,
+   "author": "FriedEngineer",
+   "author_id": 59225,
+   "author_url": "https://forge.sp-tarkov.com/user/59225/friedengineer",
+   "created_at": "2024-08-06T07:41:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This does not work out of the box when running it in a Linux docker container. based on the error message, it cannot determine where the profiles directory is</p>\n<p>Error: ENOENT: no such file or directory, copyfile \u2018undefined/profiles/668f65da0000eaf2b81f2ac8.json\u2019 -&gt; \u2018undefined/profiles/AutoBackup/3.9.5/668f65da0000eaf2b81f2ac8/onGameStart-2024-08-06T071448146Z.json\u2019 at Object.copyFileSync (node:fs:3029:11) at Object.copyFileSync (pkg/prelude/bootstrap.js:1167:16) at VFS.copyFile (/snapshot/src/utils/VFS.ts:66:12) at Mod.onEvent (/app/user/mods/lua-autoprofilebackup-1.5.0/src/mod.ts:224:18) at Object.action (/app/user/mods/lua-autoprofilebackup-1.5.0/src/mod.ts:58:34) at StaticRouterMod.handleStatic (/snapshot/src/di/Router.ts:41:63) at HttpRouter.handleRoute (/snapshot/src/routers/HttpRouter.ts:61:68) at processTicksAndRejections (node:internal/process/task_queues:95:5) at HttpRouter.getResponse (/snapshot/src/routers/HttpRouter.ts:34:25) at HttpRouter.result.getResponse (/app/user/mods/fika-server/src/overrides/routers/HttpRouter.ts:25:37) After some quick tinkering, the crux of it seems to be on <a href=\"https://github.com/dvize/SPT-TypeScript/blob/938d89b6f21f015bc4bb3afeed2730ab3c115452/Lua-AutoProfileBackup/src/mod.ts#L165\" target=\"_blank\" rel=\"noreferrer noopener\">mod.ts Line 165</a> where it tries to get it from the %SPT% variable, which I assume does not exist here. If change that line and hard-code the path to my profiles directory, making it this.profilePath = <code>/app/user/profiles</code>;, it works just file (note: that is the profile path for my installation, it may not be for yours!). I\u2019m not sure where %SPT% would have been set so I\u2019m not sure where to look at the moment. An easy way to address this could be to just have a path override option in the config file (so it defaults to use the %SPT% prefix but will take whatever you specify, if you specify something). If you\u2019re amenable to that, I can try to put together a PR.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 113093,
+   "parent_id": 38443,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2024-08-07T04:57:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i\u2019ll consider it for the next update. thats simple enough</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 39255,
+   "parent_id": null,
+   "author": "unknownbomj",
+   "author_id": 42490,
+   "author_url": "https://forge.sp-tarkov.com/user/42490/unknownbomj",
+   "created_at": "2024-08-18T12:12:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>not working 3.9.6</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 42026,
+   "parent_id": null,
+   "author": "CXM",
+   "author_id": 44403,
+   "author_url": "https://forge.sp-tarkov.com/user/44403/cxm",
+   "created_at": "2024-10-12T21:27:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Not working on 3.9.8</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 118424,
+   "parent_id": 42026,
+   "author": "Strungerman",
+   "author_id": 40708,
+   "author_url": "https://forge.sp-tarkov.com/user/40708/strungerman",
+   "created_at": "2024-10-14T18:02:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It works on my end. Maybe you have it disabled? it\u2019s disabled by default</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 45134,
+   "parent_id": null,
+   "author": "FriedEngineer",
+   "author_id": 59225,
+   "author_url": "https://forge.sp-tarkov.com/user/59225/friedengineer",
+   "created_at": "2024-12-17T06:37:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>In my testing this mod just works on 3.10 after updating the <code>sptVersion</code> in the <code>package.json</code>.</p>\n<p>I\u2019ve also got a fix for it working on Linux and a change to the file naming scheme (putting the date first so it can be easily sorted instead of sorting by the event)</p>\n<p>Props based on some of your other comments, it looks like you\u2019re taking a break. I can open a PR to make this/these changes or would you prefer I fully take it over? (move it to my own repo and release it myself). I\u2019m open to whatever, just want to be the least invasive to you and I don\u2019t want to step on your toes</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 122459,
+   "parent_id": 45134,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2024-12-19T16:51:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Feel free to make your own repo and release it on hub.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  }
+ ]
+}

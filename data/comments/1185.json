@@ -1,0 +1,390 @@
+{
+ "mod_id": 1185,
+ "slug": "ram-cleaner-fix",
+ "fetched_at": "2026-08-09T07:08:29Z",
+ "reported_total": 21,
+ "pages": 3,
+ "count": 38,
+ "comments": [
+  {
+   "id": 25138,
+   "parent_id": null,
+   "author": "bsfurr",
+   "author_id": 28325,
+   "author_url": "https://forge.sp-tarkov.com/user/28325/bsfurr",
+   "created_at": "2023-12-11T21:27:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Sorry for my ignorance, but how would one know if they needed this? I do experience stuttering on Streets, but everything else seems to run find (currently have 16GB Ram). I\u2019m a bit new to this and I\u2019ve heard a bit about memory leaks. Is there something I should be mindful of, to decide whether I would need a Ram Cleaner mod?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 25139,
+   "parent_id": null,
+   "author": "hooddizzle",
+   "author_id": 42050,
+   "author_url": "https://forge.sp-tarkov.com/user/42050/hooddizzle",
+   "created_at": "2023-12-11T21:31:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>hi im fairly new to modding how do i install this? i only ever had to just drag bepix files and user files</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 94285,
+   "parent_id": 25138,
+   "author": "CactusPie",
+   "author_id": 29315,
+   "author_url": "https://forge.sp-tarkov.com/user/29315/cactuspie",
+   "created_at": "2023-12-11T21:34:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019ve just noticed that during one raid on Shoreline the game was using 30 GB of RAM. Then when I entered menu the memory usage suddenly dropped. People on the internet reported the same issue. I suppose you don\u2019t really need the mod if you have 64GB of RAM or more, or if you\u2019re fine with manually opening the menu every now or then.</p>\n<p>The stuttering you experience may or may not be related to high RAM usage. If something in your system uses too much RAM, the excessive data is saved to the paging file, which is on your SSD/HDD, but since that is a lot slower than RAM it might cause some stuttering. You can try enabling the RAM cleaner (with or without this mod) and see if it helps you.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 94287,
+   "parent_id": 25139,
+   "author": "CactusPie",
+   "author_id": 29315,
+   "author_url": "https://forge.sp-tarkov.com/user/29315/cactuspie",
+   "created_at": "2023-12-11T21:36:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Just copy CactusPie.RamCleanerInterval.dll into BepInEx\\plugins directory in SPT</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 94289,
+   "parent_id": 25139,
+   "author": "hooddizzle",
+   "author_id": 42050,
+   "author_url": "https://forge.sp-tarkov.com/user/42050/hooddizzle",
+   "created_at": "2023-12-11T21:38:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>thank you very much, this mod is gonna reduce my crashes heavily i been having an issue with the ram just not being cleaned</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 25141,
+   "parent_id": null,
+   "author": "Devraccoon Senior Moderator",
+   "author_id": 20914,
+   "author_url": "https://forge.sp-tarkov.com/user/20914/devraccoon",
+   "created_at": "2023-12-11T21:55:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>this is why people say modders fix the games the devs break\u2026 another excellent mod I will be recommending to any player with memory issues.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 25142,
+   "parent_id": null,
+   "author": "Vixtuana",
+   "author_id": 23983,
+   "author_url": "https://forge.sp-tarkov.com/user/23983/vixtuana",
+   "created_at": "2023-12-11T22:04:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I never realized how much RAM tarkov used before this mod, holy shit. What the actual fuck BSG?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 25143,
+   "parent_id": null,
+   "author": "podad",
+   "author_id": 32318,
+   "author_url": "https://forge.sp-tarkov.com/user/32318/podad",
+   "created_at": "2023-12-11T22:55:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Goated - thank you!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 25146,
+   "parent_id": null,
+   "author": "Panz3r_",
+   "author_id": 41873,
+   "author_url": "https://forge.sp-tarkov.com/user/41873/panz3r",
+   "created_at": "2023-12-12T01:09:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Chrome is blocking the download for some reason<br />\n<a href=\"https://imgur.com/a/CK9JxNj\" target=\"_blank\" rel=\"noreferrer noopener\">screenshot</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 94318,
+   "parent_id": 25146,
+   "author": "CactusPie",
+   "author_id": 29315,
+   "author_url": "https://forge.sp-tarkov.com/user/29315/cactuspie",
+   "created_at": "2023-12-12T06:08:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yeah, it\u2019s because it\u2019s a .dll file. Maybe I should repackage it as .zip. Thanks for letting me know.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 25167,
+   "parent_id": null,
+   "author": "MorphineSPT",
+   "author_id": 30739,
+   "author_url": "https://forge.sp-tarkov.com/user/30739/morphinespt",
+   "created_at": "2023-12-12T14:35:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Sorry to deviate a little but since you\u2019re certainly more into it than me, what do you think of this tool to replace the RAM cleaner built in Tarkov ?</p>\n<p>&lt;<a href=\"https://www.wagnardsoft.com/content/Intelligent-standby-list-cleaner-ISLC-v1030-Released\" target=\"_blank\" rel=\"noreferrer noopener\">https://www.wagnardsoft.com/content/Intelligent-standby-list-cleaner-ISLC-v1030-Released</a>&gt;</p>\n<p>I\u2019m using it since a streamer advised how to configure it properly but I\u2019m just curious if it\u2019s better or not than EfT one. It definitely helps on street. It was also advised on the 2022 EfT optimisation guide (reddit).</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 94339,
+   "parent_id": 25167,
+   "author": "CactusPie",
+   "author_id": 29315,
+   "author_url": "https://forge.sp-tarkov.com/user/29315/cactuspie",
+   "created_at": "2023-12-12T20:17:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>To be honest - no idea. You need to test it yourself and see if will help you with the memory usage</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 25186,
+   "parent_id": null,
+   "author": "FishGaming",
+   "author_id": 22848,
+   "author_url": "https://forge.sp-tarkov.com/user/22848/fishgaming",
+   "created_at": "2023-12-13T02:29:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you so much!!! THis was a must have for SIT. I was getting crashing while playing and now it just drops it back to a nice 45% usage with tons of mods running!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 25219,
+   "parent_id": null,
+   "author": "SaintMellec",
+   "author_id": 28175,
+   "author_url": "https://forge.sp-tarkov.com/user/28175/saintmellec",
+   "created_at": "2023-12-13T20:07:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This is beautiful and so are you.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 25230,
+   "parent_id": null,
+   "author": "Jhonny",
+   "author_id": 37824,
+   "author_url": "https://forge.sp-tarkov.com/user/37824/jhonny",
+   "created_at": "2023-12-14T07:47:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Where can I see that the ram is cleaned?</p>\n<p>because in task manager didn\u2019t have different</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 94439,
+   "parent_id": 25167,
+   "author": "deveagle",
+   "author_id": 24038,
+   "author_url": "https://forge.sp-tarkov.com/user/24038/deveagle",
+   "created_at": "2023-12-14T18:15:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>What streamer video is saying? Please paste the link or something. I try it use this software, but not configure correctly. Thanks!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 25292,
+   "parent_id": null,
+   "author": "TheKoolster101",
+   "author_id": 41626,
+   "author_url": "https://forge.sp-tarkov.com/user/41626/thekoolster101",
+   "created_at": "2023-12-15T16:00:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I had constant stutters before this on more cluttered maps like interchange and streets. This gives me about 63 frames and stable on streets. What an improvement. Well done.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 94472,
+   "parent_id": 25230,
+   "author": "JohnnyBhoy",
+   "author_id": 7748,
+   "author_url": "https://forge.sp-tarkov.com/user/7748/johnnybhoy",
+   "created_at": "2023-12-15T21:21:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>If you use MSI Afterburner, it can monitor your ram usage. You\u2019ll see in the graph where the ram usage peaks and drops off/gets cleaned (every 15 min in my case).</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 94494,
+   "parent_id": 25167,
+   "author": "MorphineSPT",
+   "author_id": 30739,
+   "author_url": "https://forge.sp-tarkov.com/user/30739/morphinespt",
+   "created_at": "2023-12-16T10:27:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Rengawr / ISLC</p>\n<p>This: <a href=\"https://www.youtube.com/watch?v=\" target=\"_blank\" rel=\"noreferrer noopener\">https://www.youtube.com/watch?v=</a>_htu-eTRf0M</p>\n<p>I\u2019m using it since a while, it seems to work, especially on street. I still restart game+server every 4-5hrs, I\u2019ve noticed SPT is malfunctioning after a while (a looong while). Not an issue at all for playing.</p>\n<p>I was curious if built-in RAM cleaner was similar.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 94505,
+   "parent_id": 25167,
+   "author": "deveagle",
+   "author_id": 24038,
+   "author_url": "https://forge.sp-tarkov.com/user/24038/deveagle",
+   "created_at": "2023-12-16T15:08:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks a lot this video!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 94531,
+   "parent_id": 25292,
+   "author": "ligma929130",
+   "author_id": 24239,
+   "author_url": "https://forge.sp-tarkov.com/user/24239/ligma929130",
+   "created_at": "2023-12-17T05:24:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>for me lag mostly just comes from too many bots consuming CPU with AI</p>\n<p>100 ram cleaning won\u2019t raise FPS if I don\u2019t despawn bots over the limit</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 94597,
+   "parent_id": 25292,
+   "author": "TheKoolster101",
+   "author_id": 41626,
+   "author_url": "https://forge.sp-tarkov.com/user/41626/thekoolster101",
+   "created_at": "2023-12-19T00:15:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I don\u2019t increase bot limits. So I don\u2019t have that issue.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 25413,
+   "parent_id": null,
+   "author": "Cynco",
+   "author_id": 41342,
+   "author_url": "https://forge.sp-tarkov.com/user/41342/cynco",
+   "created_at": "2023-12-19T11:17:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Does the mod have full functionality if the automatic ram cleaner built into the game is turned off?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 94640,
+   "parent_id": 25413,
+   "author": "CactusPie",
+   "author_id": 29315,
+   "author_url": "https://forge.sp-tarkov.com/user/29315/cactuspie",
+   "created_at": "2023-12-19T19:27:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yup. It works even when you have ram cleaner turned off. You need to enable/disable it separately via the F12 menu</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 25506,
+   "parent_id": null,
+   "author": "Ahr1man",
+   "author_id": 13370,
+   "author_url": "https://forge.sp-tarkov.com/user/13370/ahr1man",
+   "created_at": "2023-12-21T18:51:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Well, it is working but game keeps crashes after pc ran out on \u201cvirtual\u201d pagefile memory, is there any way to make cleaner cleans pagefile allocation to tarkov?</p>\n<p><a href=\"https://fastpic.org/fullview/122/2023/1221/_ed64a31c3c73416032be38e384a39d5e.png\" target=\"_blank\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://fastpic.org/fullview/122/2023/1221/_ed64a31c3c73416032be38e384a39d5e.png\" alt=\"_ed64a31c3c73416032be38e384a39d5e.png\" /></a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 25652,
+   "parent_id": null,
+   "author": "Bandetto",
+   "author_id": 35852,
+   "author_url": "https://forge.sp-tarkov.com/user/35852/bandetto",
+   "created_at": "2023-12-26T19:46:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Just in the case that you are not sure how to add this to your game, this .dll goes in the Bepinex &gt; Plugins folder.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 25893,
+   "parent_id": null,
+   "author": "Icamic",
+   "author_id": 43069,
+   "author_url": "https://forge.sp-tarkov.com/user/43069/icamic",
+   "created_at": "2024-01-02T17:38:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I added the dll file into the plugins folder but it doesnt show up in the settings menu when i press F12. Im using 3.4.6, maybe thats the problem?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 95347,
+   "parent_id": 25893,
+   "author": "Shibdib",
+   "author_id": 41848,
+   "author_url": "https://forge.sp-tarkov.com/user/41848/shibdib",
+   "created_at": "2024-01-04T21:14:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yes using an ancient version of the AKI will do that</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 96761,
+   "parent_id": 25506,
+   "author": "Flame",
+   "author_id": 31757,
+   "author_url": "https://forge.sp-tarkov.com/user/31757/flame",
+   "created_at": "2024-02-03T03:47:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You can increase pagefile size in NVIDIA control panel, if you have AMD I\u2019m sure there is a way to also do it</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 27147,
+   "parent_id": null,
+   "author": "Fontaine",
+   "author_id": 6053,
+   "author_url": "https://forge.sp-tarkov.com/user/6053/fontaine",
+   "created_at": "2024-02-12T16:20:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I have a suggestion: instead of running it per interval or manually, make it run on inventory open. I think the stutter would be less jarring and less likely to get you killed in a firefight. The method is in Player class, SetInventoryOpen(). It takes a bool argument that you can check so it only runs once (either on open or close).</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 27170,
+   "parent_id": null,
+   "author": "moskqito",
+   "author_id": 43931,
+   "author_url": "https://forge.sp-tarkov.com/user/43931/moskqito",
+   "created_at": "2024-02-14T03:22:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Installed this and after a few raids none of the item\u2019s icons load, also all the textures keep cycling between high (my setting) to the lowest most pixelated quality. it\u2019s a ram cleaner but now it feels like i\u2019m constantly running out of ram</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 29125,
+   "parent_id": null,
+   "author": "GoochGoo",
+   "author_id": 38748,
+   "author_url": "https://forge.sp-tarkov.com/user/38748/goochgoo",
+   "created_at": "2024-04-09T20:05:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Any plans on a 3.8 update?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 32744,
+   "parent_id": null,
+   "author": "fahrraddieb",
+   "author_id": 52098,
+   "author_url": "https://forge.sp-tarkov.com/user/52098/fahrraddieb",
+   "created_at": "2024-05-23T18:09:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello,</p>\n<p>i upgraded from 16gb to 64gb RAM.</p>\n<p>Should i still use this mod or its better now to turn it off ?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 105903,
+   "parent_id": 32744,
+   "author": "Malatang",
+   "author_id": 52687,
+   "author_url": "https://forge.sp-tarkov.com/user/52687/malatang",
+   "created_at": "2024-06-02T22:39:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I have 64g ram and EFT still managed to crash my game by simply exhaust my resources according to Windows Event Viewer. It\u2019s a must for EFT.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 105963,
+   "parent_id": 32744,
+   "author": "fahrraddieb",
+   "author_id": 52098,
+   "author_url": "https://forge.sp-tarkov.com/user/52098/fahrraddieb",
+   "created_at": "2024-06-03T17:04:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>yap found out overall game runs way better with cleaner</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 109724,
+   "parent_id": 29125,
+   "author": "beefyonyt",
+   "author_id": 36782,
+   "author_url": "https://forge.sp-tarkov.com/user/36782/beefyonyt",
+   "created_at": "2024-07-13T20:07:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>DevRacoon updated it <a href=\"https://hub.sp-tarkov.com/files/file/1827-ram-cleaner-fix/#versions\" target=\"_blank\" rel=\"noreferrer noopener\">https://hub.sp-tarkov.com/files/file/1827-ram-cleaner-fix/#versions</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 53566,
+   "parent_id": null,
+   "author": "ANDORLES",
+   "author_id": 20454,
+   "author_url": "https://forge.sp-tarkov.com/user/20454/andorles",
+   "created_at": "2025-07-06T16:26:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>GJ\uff0cTHX</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 155267,
+   "parent_id": null,
+   "author": "juicearth999",
+   "author_id": 64125,
+   "author_url": "https://forge.sp-tarkov.com/user/64125/juicearth999",
+   "created_at": "2026-03-23T00:44:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>update pls</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

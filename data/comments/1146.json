@@ -1,0 +1,110 @@
+{
+ "mod_id": 1146,
+ "slug": "unity-bundle-cab-id-changer",
+ "fetched_at": "2026-08-09T08:02:55Z",
+ "reported_total": null,
+ "pages": 1,
+ "count": 10,
+ "comments": [
+  {
+   "id": 23613,
+   "parent_id": null,
+   "author": "Pettan",
+   "author_id": 26581,
+   "author_url": "https://forge.sp-tarkov.com/user/26581/pettan",
+   "created_at": "2023-11-04T17:45:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Finally instead of trying to guess if bundlehelper actually recognizes the dependency (and actually changed them) and change them you can have an alternative that works differently.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 23627,
+   "parent_id": null,
+   "author": "SiulSC",
+   "author_id": 25721,
+   "author_url": "https://forge.sp-tarkov.com/user/25721/siulsc",
+   "created_at": "2023-11-05T00:25:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>nice and thanks</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 24341,
+   "parent_id": null,
+   "author": "Deleted",
+   "author_id": 29676,
+   "author_url": "https://forge.sp-tarkov.com/user/29676/deleted",
+   "created_at": "2023-11-20T11:07:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>niceeee. I can be even lazier now. Would be even better if dependencies were possible</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 35446,
+   "parent_id": null,
+   "author": "TeejayMerks",
+   "author_id": 50783,
+   "author_url": "https://forge.sp-tarkov.com/user/50783/teejaymerks",
+   "created_at": "2024-07-04T05:27:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/7kxSpFM/image-2024-07-04-002517855.png\" alt=\"image-2024-07-04-002517855.png\" /></p>\n<p>This keeps popping up when I drag the .bundle file on the CAB_ID_Changer. Have you seen this before and is there a fix? PS: it still does what it is supposed to do just keep getting this message.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 108847,
+   "parent_id": 35446,
+   "author": "RaiRaiTheRaichu Staff",
+   "author_id": 3576,
+   "author_url": "https://forge.sp-tarkov.com/user/3576/rairaitheraichu",
+   "created_at": "2024-07-04T06:26:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>hi,</p>\n<p>are you using the compiled .exe binary or the .py script?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 108893,
+   "parent_id": 35446,
+   "author": "TeejayMerks",
+   "author_id": 50783,
+   "author_url": "https://forge.sp-tarkov.com/user/50783/teejaymerks",
+   "created_at": "2024-07-04T18:51:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I am using the compiled exe.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 108894,
+   "parent_id": 35446,
+   "author": "TeejayMerks",
+   "author_id": 50783,
+   "author_url": "https://forge.sp-tarkov.com/user/50783/teejaymerks",
+   "created_at": "2024-07-04T18:53:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It\u2019s weird, it does still change the cab id but throws this error.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 108895,
+   "parent_id": 35446,
+   "author": "TeejayMerks",
+   "author_id": 50783,
+   "author_url": "https://forge.sp-tarkov.com/user/50783/teejaymerks",
+   "created_at": "2024-07-04T19:02:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>after doing further research it seems that input() at the end of the script is not needed.</p>\n<p>The error being encountered, RuntimeError: input(): lost sys.stdin, suggests that the script is being executed in an environment where standard input (stdin) is not available. This commonly happens when running a Python script as a standalone executable using tools like PyInstaller.</p>\n<p>To resolve this issue, you can remove or modify the input() call at the end of the script, as it is not necessary for the functionality of the script. Instead, you can log the completion message to the console.</p>\n<p>import os import sys import hashlib import argparse def process_bundle(file_path): if not file_path.endswith(\u201c.bundle\u201c): raise argparse.ArgumentTypeError(f\u201cFile {file_path} must be a valid Unity bundle.\u201c) try: with open(file_path, \u201crb\u201d) as file: file_hash = hashlib.md5() chunk = file.read(8196) while chunk: file_hash.update(chunk) chunk = file.read(8196) new_hash = file_hash.hexdigest() # Create a backup backup_path = file_path + \u201c.old\u201d os.rename(file_path, backup_path) with open(backup_path, \u201crb\u201d) as file: print(f\u201cChanging CAB-ID of {file_path}\u201c) output_path = file_path with open(output_path, \u201cwb\u201d) as output: chunk = file.read(8196) index_of_hash = chunk.find(b\u201cCAB\u201c) if index_of_hash == -1: print(f\u201cError: Unable to find CAB-ID in bundle header for {file_path}. Bundle may be invalid or corrupt.\u201c) return old_hash = chunk[index_of_hash + 4:index_of_hash + 36] print(f\u201cOld CAB-ID is {str(old_hash.decode())}\\nReplacing with: {new_hash}\u201c) chunk = chunk.replace(old_hash, bytes(new_hash, \u2018utf-8\u2019)) output.write(chunk) while chunk := file.read(8196): chunk = chunk.replace(old_hash, bytes(new_hash, \u2018utf-8\u2019)) output.write(chunk) print(f\u201cCAB-ID successfully changed for {file_path}\u201c) except Exception as e: print(f\u201cFailed to process {file_path}: {e}\u201c) def main(): for arg in sys.argv: if arg == sys.argv[0]: continue process_bundle(arg) print(\u201cOperation complete.\u201d) try: input(\u201cPress ENTER to close.\u201d) except RuntimeError: print(\u201cStandard input not available. Script will exit automatically.\u201d) if __name__ == \u201c__main__\u201d: main() This version of the script changes the call to input() at the end and instead prints the completion message directly to the console. I created a new CAB_ID_CHANGER.exe with the updated script and this resolves the error I was encountering.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 108923,
+   "parent_id": 35446,
+   "author": "RaiRaiTheRaichu Staff",
+   "author_id": 3576,
+   "author_url": "https://forge.sp-tarkov.com/user/3576/rairaitheraichu",
+   "created_at": "2024-07-05T05:23:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>yes, it\u2019s an issue with how i used pyinstaller to compile the .exe, i missed an argument to pass compiling it as a CLI program, which throws that error.</p>\n<p>it\u2019s not necessary, as you saw, i just preferred having it so people are aware immediately that it worked as intended.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 108924,
+   "parent_id": 35446,
+   "author": "TeejayMerks",
+   "author_id": 50783,
+   "author_url": "https://forge.sp-tarkov.com/user/50783/teejaymerks",
+   "created_at": "2024-07-05T05:29:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i see, that\u2019s cool. anyway thanks for the great tool.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

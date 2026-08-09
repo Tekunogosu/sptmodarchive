@@ -1,0 +1,120 @@
+{
+ "mod_id": 2309,
+ "slug": "zzzmassivesoft-mechanic-fix",
+ "fetched_at": "2026-08-09T07:51:21Z",
+ "reported_total": null,
+ "pages": 1,
+ "count": 11,
+ "comments": [
+  {
+   "id": 136527,
+   "parent_id": null,
+   "author": "yexi",
+   "author_id": 84456,
+   "author_url": "https://forge.sp-tarkov.com/user/84456/yexi",
+   "created_at": "2025-09-13T22:34:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Awesome</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 136537,
+   "parent_id": null,
+   "author": "huiCy",
+   "author_id": 83477,
+   "author_url": "https://forge.sp-tarkov.com/user/83477/huicy",
+   "created_at": "2025-09-14T08:04:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            \n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 136541,
+   "parent_id": null,
+   "author": "noidontwanna",
+   "author_id": 76562,
+   "author_url": "https://forge.sp-tarkov.com/user/76562/noidontwanna",
+   "created_at": "2025-09-14T09:49:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Mod will not load with SPT 3.11.4, because version checking is too strict.</p>\n<p>You need to update sptVersion line in package.json like this:</p>\n<p>\u201csptVersion\u201d: \u201c~3.11\u201d</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 136550,
+   "parent_id": null,
+   "author": "Kojimbo0_0",
+   "author_id": 77629,
+   "author_url": "https://forge.sp-tarkov.com/user/77629/kojimbo0-0",
+   "created_at": "2025-09-14T15:49:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Works great</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 136789,
+   "parent_id": 136541,
+   "author": "HaaWkk",
+   "author_id": 84524,
+   "author_url": "https://forge.sp-tarkov.com/user/84524/haawkk",
+   "created_at": "2025-09-14T22:59:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for the heads up, I have addresed this in the new version</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 136643,
+   "parent_id": null,
+   "author": "Massivesoft",
+   "author_id": 15672,
+   "author_url": "https://forge.sp-tarkov.com/user/15672/massivesoft",
+   "created_at": "2025-09-18T09:54:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Really? Guess I need to check my codes\u2026\u2026. Some information would be helpful.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 137008,
+   "parent_id": 136643,
+   "author": "HaaWkk",
+   "author_id": 84524,
+   "author_url": "https://forge.sp-tarkov.com/user/84524/haawkk",
+   "created_at": "2025-09-20T00:00:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey Massivesoft<br />\nI\u2019m no modder, just a player that hacked together a quick fix with GPT because a friend and I kept getting this error when clicking on <strong>Mechanic</strong>:</p>\n<p>JSON parsing error \u2026 getTraderAssort/5a7c2eca46aef81a7ca2145d Error converting value {null} to type \u2018System.Int32\u2019 Path \u201834B64B19519564B556000000\u2019, line 1, position 177037 From what I\u2019ve been told, the issue comes from <strong>Mechanic\u2019s assort having null values where integers are expected</strong>. Example:</p>\n<ul>\n<li>StackObjectsCount sometimes ends up null</li>\n<li>barter scheme count comes through as null</li>\n<li>loyalty levels missing or null</li>\n<li>or an item gets added without matching entries in barter_scheme / loyal_level_items</li>\n</ul>\n<p>That\u2019s why the JSON parser chokes when the game tries to load his trader.</p>\n<p>The \u201cfix\u201d I used was basically a <strong>sanitizer</strong> that runs through Mechanic\u2019s assort and:</p>\n<ul>\n<li>replaces null stock with 1</li>\n<li>replaces missing/invalid barter count with 1000 roubles</li>\n<li>forces loyalty to at least 1</li>\n<li>makes sure every item has matching barter_scheme and loyal_level_items entries</li>\n</ul>\n<p>After doing that pass, the error disappeared and Mechanic opened normally.</p>\n<p>Hope this is helpful, and let me know if you need anything else.</p>\n<p>Cheers</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 137015,
+   "parent_id": 136643,
+   "author": "Massivesoft",
+   "author_id": 15672,
+   "author_url": "https://forge.sp-tarkov.com/user/15672/massivesoft",
+   "created_at": "2025-09-20T02:29:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I see. It seems that 16.5 inch 5.56 barrel of X95 is the one that causing problems. It\u2019s trader assort is code generate using price of AR-15 5.56 406MM barrel registered in handbook. If something interupts that process it does has a possibility to yield a null assort. But the code worked well on my end, at least on SPT 3.8.0. I can\u2019t determine the real cause. Maybe your solution is the best we can have now.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 137106,
+   "parent_id": null,
+   "author": "Razzmatazz146",
+   "author_id": 84847,
+   "author_url": "https://forge.sp-tarkov.com/user/84847/razzmatazz146",
+   "created_at": "2025-09-21T20:36:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Not sure if it\u2019s this mod, but when I have it activated, it does fix Mechanic, but all guns are missing half their parts at the trader. Not a single complete gun.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 137440,
+   "parent_id": 137106,
+   "author": "HaaWkk",
+   "author_id": 84524,
+   "author_url": "https://forge.sp-tarkov.com/user/84524/haawkk",
+   "created_at": "2025-09-25T02:05:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>*EDIT</p>\n<p>Are you using Realism? After more testing, I found that a Realism setting which randomises trader stock is what causes my mod to break most guns at the traders. I\u2019m working on a proper fix, but in the meantime just disable that option in your Realism config and everything should work fine.</p>\n<p>Hi Razz</p>\n<p>I just tested with a clean 3.11 install + only MassiveSoft + this fix. Mechanic loads fine and guns are complete. If you\u2019re seeing stripped weapons, it might be another mod conflict or leftover config in your install.</p>\n<p>Please try testing with only MassiveSoft + this fix and see if the issue still happens.</p>\n<p>Cheers</p>\n<p>HaaWkk</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 139424,
+   "parent_id": null,
+   "author": "Cipher Cobalt",
+   "author_id": 85256,
+   "author_url": "https://forge.sp-tarkov.com/user/85256/cipher-cobalt",
+   "created_at": "2025-10-20T15:02:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I have an issue with Mechanic has no guns or goods\u2026will this mod fix this ?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

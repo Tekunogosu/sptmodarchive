@@ -1,0 +1,400 @@
+{
+ "mod_id": 241,
+ "slug": "choose-the-weather",
+ "fetched_at": "2026-08-09T07:01:13Z",
+ "reported_total": 20,
+ "pages": 2,
+ "count": 39,
+ "comments": [
+  {
+   "id": 1815,
+   "parent_id": null,
+   "author": "RobbyB",
+   "author_id": 4613,
+   "author_url": "https://forge.sp-tarkov.com/user/4613/robbyb",
+   "created_at": "2021-09-28T08:53:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Awesome</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 1820,
+   "parent_id": null,
+   "author": "krijen",
+   "author_id": 9827,
+   "author_url": "https://forge.sp-tarkov.com/user/9827/krijen",
+   "created_at": "2021-09-28T15:02:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>so i selected sunny and its raining, mod has loaded fine, this is the config</p>\n<p>{</p>\n<p>\u201cweatherTypes\u201d: [</p>\n<p>\u201csunny\u201d,</p>\n<p>\u201ccloudy\u201d,</p>\n<p>\u201cstormy\u201d,</p>\n<p>\u201ccustom\u201d</p>\n<p>],</p>\n<p>\u201crandom\u201d: false,</p>\n<p>\u201cacceleration\u201d: 5,</p>\n<p>\u201cweather\u201d: \u201csunny\u201d,</p>\n<p>\u201coverrides\u201d: {</p>\n<p>\u201cfog\u201d: 0.001</p>\n<p>}</p>\n<p>}</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 58782,
+   "parent_id": 1820,
+   "author": "krijen",
+   "author_id": 9827,
+   "author_url": "https://forge.sp-tarkov.com/user/9827/krijen",
+   "created_at": "2021-09-28T15:05:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>maybe compatebility</p>\n<p><a href=\"https://gyazo.com/972a350eca3033e4fce280812edadaaf\" target=\"_blank\" rel=\"noreferrer noopener\">https://gyazo.com/972a350eca3033e4fce280812edadaaf</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 58784,
+   "parent_id": 1820,
+   "author": "Revingly",
+   "author_id": 4725,
+   "author_url": "https://forge.sp-tarkov.com/user/4725/revingly",
+   "created_at": "2021-09-28T15:40:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Some people report that this mod doesnt affect the weather in their game.</p>\n<p>If it doesn\u2019t work for you from the first time then it probably wont work. Sorry</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 58847,
+   "parent_id": 1820,
+   "author": "Zeke",
+   "author_id": 8558,
+   "author_url": "https://forge.sp-tarkov.com/user/8558/zeke",
+   "created_at": "2021-09-29T12:41:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>could you try loading this mod last? by putting \u201cZ\u201d infront of the folder name?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 2322,
+   "parent_id": null,
+   "author": "Fenah35",
+   "author_id": 4971,
+   "author_url": "https://forge.sp-tarkov.com/user/4971/fenah35",
+   "created_at": "2021-10-23T16:04:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey man, ty for mod. Time 12/12 not reset. Start with 12 pm and 12 am but It stays the same as when I exit the raid and continues to progress.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 60075,
+   "parent_id": 2322,
+   "author": "neuro",
+   "author_id": 11130,
+   "author_url": "https://forge.sp-tarkov.com/user/11130/neuro",
+   "created_at": "2021-11-05T12:09:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>this is because Revingly added a constant raid starting time in this mod, but never mentioned it anywhere</p>\n<p>you can change the raid starting time on the <em>line 22</em></p>\n<p>in the file <em><strong>user\\mods\\Revingly-ChooseTheWeather\\src\\mod.js</strong></em></p>\n<p>you can change it, for example, to 17 hours:</p>\n<p>const timestamp = new Date().setHours(17,0,10);</p>\n<p>by default, it is <em>12,0,10</em> - 12 hours</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 60077,
+   "parent_id": 2322,
+   "author": "Revingly",
+   "author_id": 4725,
+   "author_url": "https://forge.sp-tarkov.com/user/4725/revingly",
+   "created_at": "2021-11-05T12:23:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>hmmm</p>\n<p>So you dont want the time to be always 12PM and 12AM?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 2521,
+   "parent_id": null,
+   "author": "metalcan",
+   "author_id": 9318,
+   "author_url": "https://forge.sp-tarkov.com/user/9318/metalcan",
+   "created_at": "2021-11-05T13:26:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Being able to make it always rain, in fact, makes me moist</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 3
+  },
+  {
+   "id": 60081,
+   "parent_id": 2322,
+   "author": "Fenah35",
+   "author_id": 4971,
+   "author_url": "https://forge.sp-tarkov.com/user/4971/fenah35",
+   "created_at": "2021-11-05T15:09:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yes</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 2578,
+   "parent_id": null,
+   "author": "Giubryz",
+   "author_id": 4146,
+   "author_url": "https://forge.sp-tarkov.com/user/4146/giubryz",
+   "created_at": "2021-11-10T18:32:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Probably i\u2019m just dumb, but the mod works as inteded, 12AM/PM start is fine, weather is fine.</p>\n<p>What i\u2019m supposed to do if don\u2019t want fog at all, even if it\u2019s stormy?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 3446,
+   "parent_id": null,
+   "author": "Tarkoccp",
+   "author_id": 13485,
+   "author_url": "https://forge.sp-tarkov.com/user/13485/tarkoccp",
+   "created_at": "2022-01-14T08:43:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is there any way to make this work on 2.2.0? The time works fine but the fog and weather keeps changing</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 61625,
+   "parent_id": 3446,
+   "author": "Revingly",
+   "author_id": 4725,
+   "author_url": "https://forge.sp-tarkov.com/user/4725/revingly",
+   "created_at": "2022-01-14T12:31:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>There is another mod that can change the weather and time from SamSwat.</p>\n<p>Take a look at that because I\u2019m not sure how to fix the fog issue</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 3766,
+   "parent_id": null,
+   "author": "SIKET19",
+   "author_id": 14087,
+   "author_url": "https://forge.sp-tarkov.com/user/14087/siket19",
+   "created_at": "2022-01-31T22:35:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi.</p>\n<p>I downloaded this mod today but i have some issues. After a while in game if i get into a raid 12:00 its pitch dark also my timer is stuck on 12:00 +/- 1 hour. The other thing is that its also mostly rainy.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 62129,
+   "parent_id": 3766,
+   "author": "Revingly",
+   "author_id": 4725,
+   "author_url": "https://forge.sp-tarkov.com/user/4725/revingly",
+   "created_at": "2022-02-01T02:06:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The timer always reset to 12:00/24:00 after each raid =&gt; you can disable that in the config.json</p>\n<p>----------</p>\n<p>As for the rainy weather I can\u2019t really help because I don\u2019t know the cause but you can try this mod for the weather <a href=\"https://hub.sp-tarkov.com/files/file/319-cwx-weatherpatcher/#overview\" target=\"_blank\" rel=\"noreferrer noopener\">CWX WEATHERPATCHER</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 5771,
+   "parent_id": null,
+   "author": "hansoncook15",
+   "author_id": 12066,
+   "author_url": "https://forge.sp-tarkov.com/user/12066/hansoncook15",
+   "created_at": "2022-06-03T11:53:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>What happens if you use this in Factory? Anything cool?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 65392,
+   "parent_id": 5771,
+   "author": "Revingly",
+   "author_id": 4725,
+   "author_url": "https://forge.sp-tarkov.com/user/4725/revingly",
+   "created_at": "2022-06-03T12:13:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Factory is the exception.</p>\n<p>Nothing cool happens there, unless you consider getting hammered to death by Tagilla is cool</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 8775,
+   "parent_id": null,
+   "author": "canok07",
+   "author_id": 9403,
+   "author_url": "https://forge.sp-tarkov.com/user/9403/canok07",
+   "created_at": "2022-10-10T07:48:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Waiting for 3.2.4</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 9558,
+   "parent_id": null,
+   "author": "VeiledFury",
+   "author_id": 22834,
+   "author_url": "https://forge.sp-tarkov.com/user/22834/veiledfury",
+   "created_at": "2022-12-01T15:15:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Do the bots actually react different in different weather (like visual ranges), or is this purely \u201ccosmetic\u201d and player-affecting?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 70412,
+   "parent_id": 9558,
+   "author": "Revingly",
+   "author_id": 4725,
+   "author_url": "https://forge.sp-tarkov.com/user/4725/revingly",
+   "created_at": "2022-12-02T11:24:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This is supposed to be just a cosmetic.</p>\n<p>I\u2019m not sure if the bots are affected or not, but supposedly they should have good vision on a sunny day and bad vision on stormy day</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 70416,
+   "parent_id": 9558,
+   "author": "VeiledFury",
+   "author_id": 22834,
+   "author_url": "https://forge.sp-tarkov.com/user/22834/veiledfury",
+   "created_at": "2022-12-02T15:36:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Roger that, cheers. I\u2019ll test it and see what happens. \ud83d\ude05</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 10395,
+   "parent_id": null,
+   "author": "Tremeslay",
+   "author_id": 24567,
+   "author_url": "https://forge.sp-tarkov.com/user/24567/tremeslay",
+   "created_at": "2023-01-06T19:39:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This is great. Can you add a setting for the time too? For example, I want to play always at 1 PM. So I have good visibility. It could be great if you can add something for this.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 71604,
+   "parent_id": 10395,
+   "author": "Revingly",
+   "author_id": 4725,
+   "author_url": "https://forge.sp-tarkov.com/user/4725/revingly",
+   "created_at": "2023-01-07T04:57:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>There is a setting for that in this mod, I think right now I set the time to always to 12am, 12pm for both timers.</p>\n<p>I\u2019ll make customizable if that\u2019s what you\u2019re asking</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 71615,
+   "parent_id": 10395,
+   "author": "Tremeslay",
+   "author_id": 24567,
+   "author_url": "https://forge.sp-tarkov.com/user/24567/tremeslay",
+   "created_at": "2023-01-07T13:08:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I didn\u2019t even realise that. Is it starting the raids always on 12 AM/PM by default with that setting?</p>\n<p>Edit: Also I want to ask; I can\u2019t get rid of the wind noise. Is it something default by game? I was using another weather tool and setting wind to 0. But wasn\u2019t working while using that tool neither while using yours too.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 11936,
+   "parent_id": null,
+   "author": "DevilishKing",
+   "author_id": 25689,
+   "author_url": "https://forge.sp-tarkov.com/user/25689/devilishking",
+   "created_at": "2023-02-15T17:06:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It doesn\u2019t seems to work for me . In the config I have it set as \u201csunny\u201d but it doesn\u2019t start the day as sunny \u2026. The raid time works tho . It always starts at 12 and i don\u2019t know what to do . I wish I had a menu to select my weather in-raid . I am using 3.5.0</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 12641,
+   "parent_id": null,
+   "author": "Garris",
+   "author_id": 24924,
+   "author_url": "https://forge.sp-tarkov.com/user/24924/garris",
+   "created_at": "2023-02-26T21:05:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The weather during installation is clear and sunny.</p>\n<p>But after a couple of sessions, I choose the daytime, the night starts for me. Day starts at night. Fixed by restarting the game.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 75280,
+   "parent_id": 11936,
+   "author": "Revingly",
+   "author_id": 4725,
+   "author_url": "https://forge.sp-tarkov.com/user/4725/revingly",
+   "created_at": "2023-02-27T11:28:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Unfortunately, this is a bug that seems to happens to some people and I have no idea what cause it.</p>\n<p>If you have other mods you are using with this mod please tell me so I can check again</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 75313,
+   "parent_id": 11936,
+   "author": "DevilishKing",
+   "author_id": 25689,
+   "author_url": "https://forge.sp-tarkov.com/user/25689/devilishking",
+   "created_at": "2023-02-27T17:35:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>CWS - Masterkey</p>\n<p>Drewgamer-FactionIdentifierArmbands</p>\n<p>Faupi-MunitionsExpert</p>\n<p>Platinum-EyesOfATrader</p>\n<p>Platinum-TheBlacklist</p>\n<p>Refringe-CustomCameraRecoil</p>\n<p>Revingly-BiggerKeytool</p>\n<p>Revingly-ChooseTheWeather</p>\n<p>ServerValueModifier</p>\n<p>This is my mods list</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 14224,
+   "parent_id": null,
+   "author": "dnepmo",
+   "author_id": 29511,
+   "author_url": "https://forge.sp-tarkov.com/user/29511/dnepmo",
+   "created_at": "2023-04-01T12:16:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Perfect mod, exactly what I needed. I had chatGPT generate me a few new random weather templates. added much needed variety to the raids. Thankyou</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 14671,
+   "parent_id": null,
+   "author": "Helldiver",
+   "author_id": 28987,
+   "author_url": "https://forge.sp-tarkov.com/user/28987/helldiver",
+   "created_at": "2023-04-12T22:38:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I hope this gets updated to 3.5.5 I\u2019m not really sure why these mods don\u2019t work with the new version other than they changed some gclass variables but I\u2019m unsure of how to get this to work again any chance this will be updated? Random weather is a HUGE must for me.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 89097,
+   "parent_id": 12641,
+   "author": "chacalize",
+   "author_id": 28287,
+   "author_url": "https://forge.sp-tarkov.com/user/28287/chacalize",
+   "created_at": "2023-10-12T23:47:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Did it fixed the weather not starting sunny too? Or just day/night fix?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 89595,
+   "parent_id": 12641,
+   "author": "Garris",
+   "author_id": 24924,
+   "author_url": "https://forge.sp-tarkov.com/user/24924/garris",
+   "created_at": "2023-10-15T16:17:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The weather is clear, but starting in the daytime, the map will show night.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 23771,
+   "parent_id": null,
+   "author": "Phanturax",
+   "author_id": 40151,
+   "author_url": "https://forge.sp-tarkov.com/user/40151/phanturax",
+   "created_at": "2023-11-07T23:00:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I noticed that every time after going to Factory the mod stops working as it should</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 92308,
+   "parent_id": 23771,
+   "author": "Revingly",
+   "author_id": 4725,
+   "author_url": "https://forge.sp-tarkov.com/user/4725/revingly",
+   "created_at": "2023-11-08T01:15:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Explain pls!</p>\n<p>Also, Factory is different than the rest of the maps</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 23778,
+   "parent_id": null,
+   "author": "ynot01",
+   "author_id": 40189,
+   "author_url": "https://forge.sp-tarkov.com/user/40189/ynot01",
+   "created_at": "2023-11-08T02:27:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Does not seem to work, I set it so the only weatherType is \u201cstormy\u201d and weather is \u201cstormy\u201d and overrides has \u201crain\u201d: 4 but it\u2019s still not raining</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 92537,
+   "parent_id": 23771,
+   "author": "Phanturax",
+   "author_id": 40151,
+   "author_url": "https://forge.sp-tarkov.com/user/40151/phanturax",
+   "created_at": "2023-11-11T03:12:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I go to factory then all my raids even if i choose daytime begins in the night</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 24072,
+   "parent_id": null,
+   "author": "Kel",
+   "author_id": 38726,
+   "author_url": "https://forge.sp-tarkov.com/user/38726/kel",
+   "created_at": "2023-11-13T17:21:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This mod seems to mess with the time of the game. Ive been testing my raids with it and you can load into your FIRST raid at day time and its fine but the next raid is night time even if you select to go in at a day time selection. it seems to just swap the timeframe around after the first raid. upon restarting the client it resets for the first raid after restart and the next raid is night time. No idea why or if its been reported before but I figured id post here to be sure.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 27910,
+   "parent_id": null,
+   "author": "bremg",
+   "author_id": 46402,
+   "author_url": "https://forge.sp-tarkov.com/user/46402/bremg",
+   "created_at": "2024-03-21T14:20:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This one makes forever rain..</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 153419,
+   "parent_id": null,
+   "author": "_niceguy",
+   "author_id": 105225,
+   "author_url": "https://forge.sp-tarkov.com/user/105225/niceguy",
+   "created_at": "2026-02-21T10:42:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>ayo dude can you update this to 3.10</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

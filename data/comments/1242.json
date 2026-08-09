@@ -1,0 +1,150 @@
+{
+ "mod_id": 1242,
+ "slug": "arys-custom-asset-importer",
+ "fetched_at": "2026-08-09T07:01:33Z",
+ "reported_total": null,
+ "pages": 1,
+ "count": 14,
+ "comments": [
+  {
+   "id": 27016,
+   "parent_id": null,
+   "author": "SiulSC",
+   "author_id": 25721,
+   "author_url": "https://forge.sp-tarkov.com/user/25721/siulsc",
+   "created_at": "2024-02-06T15:09:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>what exactly is the purpose of this? I just wanna know if it\u2019s useful for me. Does this involve using the SDK?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 96861,
+   "parent_id": 27016,
+   "author": "Arys",
+   "author_id": 13652,
+   "author_url": "https://forge.sp-tarkov.com/user/13652/arys",
+   "created_at": "2024-02-06T20:18:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This client mod was made so mod creators would not need to worry about writing a client mod to load in their custom bundles.</p>\n<p>At present this client mod only supports adding custom effects.</p>\n<p>You will have to make your own custom effects in the EFT-SDK and export it as a bundle, then place it within my mod\u2019s \u201cassets/effects/\u201d directory. The full instructions are on my GitHub repo.</p>\n<p>If you take a look at the latest version of Choccy\u2019s RPG-7, you can see that it does not contain a client mod, but simply adds a custom bundle to be loaded by my mod.</p>\n<p>His server mod which adds the RPG-7 to the DatabaseServer only needed to change the RPG warhead\u2019s \u201cExplosionType\u201d property to his own custom effect name for the new effect to work ingame.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 96862,
+   "parent_id": 27016,
+   "author": "SiulSC",
+   "author_id": 25721,
+   "author_url": "https://forge.sp-tarkov.com/user/25721/siulsc",
+   "created_at": "2024-02-06T20:35:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>ok. You\u2019re saying this is different from loading bundles using a server mod right? Like stuff like custom particles. Pretty cool</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 27259,
+   "parent_id": null,
+   "author": "isdks",
+   "author_id": 33371,
+   "author_url": "https://forge.sp-tarkov.com/user/33371/isdks",
+   "created_at": "2024-02-18T14:09:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>will this be useful for retexture ?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 97221,
+   "parent_id": 27259,
+   "author": "Arys",
+   "author_id": 13652,
+   "author_url": "https://forge.sp-tarkov.com/user/13652/arys",
+   "created_at": "2024-02-19T04:30:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>No, you should use EFT-SDK + Unity Editor for that</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 27325,
+   "parent_id": null,
+   "author": "therealtruekeo",
+   "author_id": 45699,
+   "author_url": "https://forge.sp-tarkov.com/user/45699/therealtruekeo",
+   "created_at": "2024-02-20T22:04:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>how do i make this work , does this mod make the rpg have an actual explosion or what?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 97292,
+   "parent_id": 27325,
+   "author": "Arys",
+   "author_id": 13652,
+   "author_url": "https://forge.sp-tarkov.com/user/13652/arys",
+   "created_at": "2024-02-20T22:44:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>All you need to do is install this like any other client mod.</p>\n<p>If you installed it correctly, Choccy\u2019s RPG-7 will actually show the new bigger explosion he made.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 37625,
+   "parent_id": null,
+   "author": "FastDust",
+   "author_id": 30356,
+   "author_url": "https://forge.sp-tarkov.com/user/30356/fastdust",
+   "created_at": "2024-07-28T16:42:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I had a problem in my mod pack that grenades didn\u2019t explode. After disabling plugins one by one, I found out that this plugin makes it. After removing, grenades again exploding.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 114003,
+   "parent_id": 37625,
+   "author": "GlizzySnackums",
+   "author_id": 61328,
+   "author_url": "https://forge.sp-tarkov.com/user/61328/glizzysnackums",
+   "created_at": "2024-08-14T07:34:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Also having this issue. Also noticed that mods using this aren\u2019t working in the latest spt version. Unless I\u2019ve managed to install the mod wrong.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 39618,
+   "parent_id": null,
+   "author": "RandyRandom",
+   "author_id": 62185,
+   "author_url": "https://forge.sp-tarkov.com/user/62185/randyrandom",
+   "created_at": "2024-08-24T15:10:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>On the newest version 3.9, this mod causes explosions to not work such as grenades not exploding.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 115035,
+   "parent_id": 39618,
+   "author": "eperv",
+   "author_id": 55388,
+   "author_url": "https://forge.sp-tarkov.com/user/55388/eperv",
+   "created_at": "2024-08-25T20:25:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>had the same problem, just reinstalling arys worked for me</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 118060,
+   "parent_id": 39618,
+   "author": "maredit",
+   "author_id": 48208,
+   "author_url": "https://forge.sp-tarkov.com/user/48208/maredit",
+   "created_at": "2024-10-05T10:13:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>sp eft manager causes this error, due to incorrect installation of the mod</p>\n<p>spent a lot of time to understand this, going through 150 mods</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 41951,
+   "parent_id": null,
+   "author": "GoldenIcon",
+   "author_id": 65162,
+   "author_url": "https://forge.sp-tarkov.com/user/65162/goldenicon",
+   "created_at": "2024-10-09T09:17:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It should be noted;</p>\n<p>If you use a machine to act as a server for SPT that is different than your gaming machine, you will need this on the server and the client machine.</p>\n<p>SOOO many frustrating hours trying to resolve why custom items added by trader mods were not working\u2026.</p>\n<p>Happy modding/hunting folks.</p>\n<p>Arys, you beautiful nerd, thank you for mod!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 50618,
+   "parent_id": null,
+   "author": "spiderb0y",
+   "author_id": 2744,
+   "author_url": "https://forge.sp-tarkov.com/user/2744/spiderb0y",
+   "created_at": "2025-04-12T09:28:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This mod ocassionally causes the explosions to have no texture or audio, like the asset import failed..</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

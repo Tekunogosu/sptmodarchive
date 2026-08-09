@@ -1,0 +1,330 @@
+{
+ "mod_id": 1209,
+ "slug": "health-per-level-reboot",
+ "fetched_at": "2026-08-09T07:12:17Z",
+ "reported_total": 14,
+ "pages": 2,
+ "count": 32,
+ "comments": [
+  {
+   "id": 25989,
+   "parent_id": null,
+   "author": "ZsveK",
+   "author_id": 42318,
+   "author_url": "https://forge.sp-tarkov.com/user/42318/zsvek",
+   "created_at": "2024-01-06T09:55:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>will this only increase my health? or the health of every pmc in game?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 95425,
+   "parent_id": 25989,
+   "author": "MNSTR",
+   "author_id": 42161,
+   "author_url": "https://forge.sp-tarkov.com/user/42161/mnstr",
+   "created_at": "2024-01-06T10:09:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Currently only the player health</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 25990,
+   "parent_id": null,
+   "author": "HandGrade",
+   "author_id": 42831,
+   "author_url": "https://forge.sp-tarkov.com/user/42831/handgrade",
+   "created_at": "2024-01-06T10:28:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Just downloaded it right now (my character level is 16) to check if the mod is retroactive (SPT-AKI version is 3.7.5). Checked and\u2026 nah, it\u2019s not retroactive sadly</p>\n<p>Also, I advanced one level up, and nothing happened\u2026 lol? That\u2019s kinda strange, I don\u2019t have any mods that change HP at all</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 95428,
+   "parent_id": 25990,
+   "author": "MNSTR",
+   "author_id": 42161,
+   "author_url": "https://forge.sp-tarkov.com/user/42161/mnstr",
+   "created_at": "2024-01-06T10:30:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I will test and get back to you, it should be retroactive</p>\n<p>Are you sure you unzipped the folder into your user/mods?</p>\n<p>It should be this</p>\n<p>..\\user\\mods\\HealthPerLevel-mainREBOOT</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 95429,
+   "parent_id": 25990,
+   "author": "HandGrade",
+   "author_id": 42831,
+   "author_url": "https://forge.sp-tarkov.com/user/42831/handgrade",
+   "created_at": "2024-01-06T10:38:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Uh, I just looked at my server SPT-AKI, and it says smth like that:</p>\n<p>In the mod HealthPerlevel-mainREBOOT package.json has unacceptable line of code of the version</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 95431,
+   "parent_id": 25990,
+   "author": "MNSTR",
+   "author_id": 42161,
+   "author_url": "https://forge.sp-tarkov.com/user/42161/mnstr",
+   "created_at": "2024-01-06T10:47:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Alright unfortunately I can\u2019t fix it tonight so I will have to tomorrow</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 95433,
+   "parent_id": 25990,
+   "author": "HandGrade",
+   "author_id": 42831,
+   "author_url": "https://forge.sp-tarkov.com/user/42831/handgrade",
+   "created_at": "2024-01-06T10:57:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I wrote you in conversations on how to fix it. I will also post it here so people can do the same by themselves</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 25992,
+   "parent_id": null,
+   "author": "HandGrade",
+   "author_id": 42831,
+   "author_url": "https://forge.sp-tarkov.com/user/42831/handgrade",
+   "created_at": "2024-01-06T10:59:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>UNTIL UPDATE BY THE AUTHOR:</p>\n<p>So, this mod will not work on any version, because there is an error in the line of the SPT-AKI version. How to fix this? Simple: open the mod you downloaded here and find config.json.</p>\n<p>Now, this is how it MUST look like to work properly:</p>\n<p>{ \u201cname\u201d: \u201cHealthPerLevel\u201d, \u201cversion\u201d: \u201c1.1.0\u201d, \u201cmain\u201d: \u201csrc/HealthPerLevel.js\u201d, \u201clicense\u201d: \u201cCC BY-NC-SA 4.0\u201d, \u201cauthor\u201d: \u201cCapataina, MNSTR\u201d, \u201cakiVersion\u201d: \u201c^3.7.x\u201d, \u201cscripts\u201d: { \u201csetup\u201d: \u201cnpm i\u201d, \u201cbuild\u201d: \u201cnode ./packageBuild.ts\u201d }, \u201cdevDependencies\u201d: { \u201c@types/node\u201d: \u201c20.10.6\u201d, \u201c@typescript-eslint/eslint-plugin\u201d: \u201c6.17.0\u201d, \u201c@typescript-eslint/parser\u201d: \u201c6.17.0\u201d, \u201carchiver\u201d: \u201c^6.0.1\u201d, \u201ceslint\u201d: \u201c8.56.0\u201d, \u201cfs-extra\u201d: \u201c^11.2.0\u201d, \u201cignore\u201d: \u201c^5.3\u201d, \u201cos\u201d: \u201c^0.1.2\u201d, \u201ctsyringe\u201d: \u201c4.8.0\u201d, \u201ctypescript\u201d: \u201c5.3.3\u201d, \u201cwinston\u201d: \u201c3.11.0\u201d } }</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 95450,
+   "parent_id": 25992,
+   "author": "MNSTR",
+   "author_id": 42161,
+   "author_url": "https://forge.sp-tarkov.com/user/42161/mnstr",
+   "created_at": "2024-01-06T16:10:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Updated, let me know if anyone has any issues. In testing the previous version worked so I am confused how it was broken; regardless happy gaming!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 26001,
+   "parent_id": null,
+   "author": "OldManJohnson",
+   "author_id": 7346,
+   "author_url": "https://forge.sp-tarkov.com/user/7346/oldmanjohnson",
+   "created_at": "2024-01-06T16:38:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This is a cool mod idea.</p>\n<p>Just installed it to try it out.<br />\n---<br />\nEDIT : Mod works just fine, but I think it needs adjusting. I know there are settings in config, but only for how much per level .. not when or at what level. In the early game, this is fine. But in the 30+ level area, where I installed the mod, you\u2019re bringing in so many meds/heals that you can\u2019t really loot. 1-2 IFAKS no longer cut it and you if you\u2019re looting, it\u2019s to find as many meds as possible. I may have almost 1k HP, but if I can\u2019t heal, I\u2019m avoiding big fights as if I\u2019m lvl 1 because I can\u2019t heal/repair very much.</p>\n<p>Suggestion : decrease the amount per level or change how often it increases.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 95475,
+   "parent_id": 26001,
+   "author": "MNSTR",
+   "author_id": 42161,
+   "author_url": "https://forge.sp-tarkov.com/user/42161/mnstr",
+   "created_at": "2024-01-06T23:51:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Good idea, I will look into it some when I get the chance. Once I do I will add config options for at what level does it stop giving more health or something along those lines.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 95659,
+   "parent_id": 26001,
+   "author": "MNSTR",
+   "author_id": 42161,
+   "author_url": "https://forge.sp-tarkov.com/user/42161/mnstr",
+   "created_at": "2024-01-10T01:15:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Added config for how many levels you need to increase before health goes up; let me know if you have any issues</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 95673,
+   "parent_id": 26001,
+   "author": "OldManJohnson",
+   "author_id": 7346,
+   "author_url": "https://forge.sp-tarkov.com/user/7346/oldmanjohnson",
+   "created_at": "2024-01-10T07:49:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Will do.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 26483,
+   "parent_id": null,
+   "author": "SphynxRose",
+   "author_id": 32071,
+   "author_url": "https://forge.sp-tarkov.com/user/32071/sphynxrose",
+   "created_at": "2024-01-18T23:17:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is this compatible with Realism? If not is there a way to make it compatible?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 96123,
+   "parent_id": 26483,
+   "author": "MNSTR",
+   "author_id": 42161,
+   "author_url": "https://forge.sp-tarkov.com/user/42161/mnstr",
+   "created_at": "2024-01-19T03:18:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I have not tested with Realism but if you disable health changes in Realism I don\u2019t see any reason it should interfere. If you <em>are</em> using the health changes with Realism this mod will likely not work.</p>\n<p>Either way whichever mod loads last in the load order will take precedence over the other(s).</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 28333,
+   "parent_id": null,
+   "author": "GoodBurger64",
+   "author_id": 47429,
+   "author_url": "https://forge.sp-tarkov.com/user/47429/goodburger64",
+   "created_at": "2024-04-03T23:18:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey love the mod. Wanted to mention it seems like the Config by default lowers Stomach health to 35 instead of the default 70. Not sure if this was intentional but I have just been manually updating the config when I need to.</p>\n<p>Also was curious if you ever intend to split the config so you can adjust Scav and PMC health individually. Scav runs I usually just run around being an idiot so it would be fun to mess with their health more independentally.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 98730,
+   "parent_id": 28333,
+   "author": "MNSTR",
+   "author_id": 42161,
+   "author_url": "https://forge.sp-tarkov.com/user/42161/mnstr",
+   "created_at": "2024-04-03T23:23:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Funny thing you mention the config because I actually just updated the page about 5 seconds ago to address that. I won\u2019t push out an update since it\u2019s so minor but it will be included in the next update.</p>\n<p>As for scav health yeah I was planning on working on that soonish once I actually get around to developing again.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 98731,
+   "parent_id": 28333,
+   "author": "GoodBurger64",
+   "author_id": 47429,
+   "author_url": "https://forge.sp-tarkov.com/user/47429/goodburger64",
+   "created_at": "2024-04-03T23:35:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019d love to give you a hand. I don\u2019t work directly in Dev myself anymore but I know a decent bit.</p>\n<p>With your permission I would love to crack open the source and see if I can make something happen. Could send it your way if I manage to get something working and you can use it or scrap it.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 98732,
+   "parent_id": 28333,
+   "author": "MNSTR",
+   "author_id": 42161,
+   "author_url": "https://forge.sp-tarkov.com/user/42161/mnstr",
+   "created_at": "2024-04-03T23:39:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Feel free, the source is all open in the mod itself since it\u2019s server side. Just take a look at the .ts file and you can see everything that goes on under the hood.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 98735,
+   "parent_id": 28333,
+   "author": "MNSTR",
+   "author_id": 42161,
+   "author_url": "https://forge.sp-tarkov.com/user/42161/mnstr",
+   "created_at": "2024-04-03T23:56:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Actually looking at the code again I can probably split the config into scav and PMC in about 15 minutes; I\u2019ll try to get an update out before I go to bed.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 29338,
+   "parent_id": null,
+   "author": "SenOS",
+   "author_id": 48113,
+   "author_url": "https://forge.sp-tarkov.com/user/48113/senos",
+   "created_at": "2024-04-11T22:22:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey, when I go to download the version before the 3.8.0 update it says the file is in the owner\u2019s trash on the google drive link, any chance this could be fixed/reuploaded as I\u2019m (and some others may be) still playing on 3.7.6?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 31358,
+   "parent_id": null,
+   "author": "arxerisdam",
+   "author_id": 47226,
+   "author_url": "https://forge.sp-tarkov.com/user/47226/arxerisdam",
+   "created_at": "2024-05-06T02:50:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>amazing mod! 1 question is possible to mod the energy and hidration stats too?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 31606,
+   "parent_id": null,
+   "author": "kiester kid",
+   "author_id": 14630,
+   "author_url": "https://forge.sp-tarkov.com/user/14630/kiester-kid",
+   "created_at": "2024-05-09T08:26:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Very much enjoying the mod! I\u2019d like to second the request for energy and hydration as well, if it\u2019s possible.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 31932,
+   "parent_id": null,
+   "author": "bERys",
+   "author_id": 48854,
+   "author_url": "https://forge.sp-tarkov.com/user/48854/berys",
+   "created_at": "2024-05-13T00:04:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you for making this mod! I am a Chinese player and I want to ask may I repost your mod to our website? Of course I will indicate the source and your name</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 32110,
+   "parent_id": null,
+   "author": "Vulpix",
+   "author_id": 51836,
+   "author_url": "https://forge.sp-tarkov.com/user/51836/vulpix",
+   "created_at": "2024-05-14T22:31:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Does this only affect player PMC/Scav health. Or will it affect AI PMCs too (I am new to SPT AKI so I don\u2019t know how player and bot health is handled)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 105155,
+   "parent_id": 32110,
+   "author": "Shadalm",
+   "author_id": 52519,
+   "author_url": "https://forge.sp-tarkov.com/user/52519/shadalm",
+   "created_at": "2024-05-27T16:31:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>only player obv, it is said at the end of the desc.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 33127,
+   "parent_id": null,
+   "author": "Tykazz",
+   "author_id": 52857,
+   "author_url": "https://forge.sp-tarkov.com/user/52857/tykazz",
+   "created_at": "2024-05-28T19:01:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello it work with version 3.8.3 ?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 105938,
+   "parent_id": 33127,
+   "author": "Elite9111",
+   "author_id": 53164,
+   "author_url": "https://forge.sp-tarkov.com/user/53164/elite9111",
+   "created_at": "2024-06-03T10:14:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Not for me. It causes a game breaking error. I get a NULL on maximum health line.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 106709,
+   "parent_id": 33127,
+   "author": "GoodBurger64",
+   "author_id": 47429,
+   "author_url": "https://forge.sp-tarkov.com/user/47429/goodburger64",
+   "created_at": "2024-06-10T19:26:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It is working just fine for me. Do you have any other mods that adjust health or how meds are applied?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 37810,
+   "parent_id": null,
+   "author": "Darkylino",
+   "author_id": 59992,
+   "author_url": "https://forge.sp-tarkov.com/user/59992/darkylino",
+   "created_at": "2024-07-30T12:43:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>up to 3.9.x?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 3
+  },
+  {
+   "id": 39495,
+   "parent_id": null,
+   "author": "killertyphoons",
+   "author_id": 50548,
+   "author_url": "https://forge.sp-tarkov.com/user/50548/killertyphoons",
+   "created_at": "2024-08-23T00:30:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is this mod still being updated?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 114789,
+   "parent_id": 39495,
+   "author": "arxerisdam",
+   "author_id": 47226,
+   "author_url": "https://forge.sp-tarkov.com/user/47226/arxerisdam",
+   "created_at": "2024-08-23T14:08:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Apparently, no.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

@@ -1,0 +1,240 @@
+{
+ "mod_id": 209,
+ "slug": "kiki-camerarecoilremover",
+ "fetched_at": "2026-08-09T07:06:57Z",
+ "reported_total": null,
+ "pages": 1,
+ "count": 23,
+ "comments": [
+  {
+   "id": 1249,
+   "parent_id": null,
+   "author": "Kryptic-S01",
+   "author_id": 2685,
+   "author_url": "https://forge.sp-tarkov.com/user/2685/kryptic-s01",
+   "created_at": "2021-08-19T19:18:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I need some advice with the config, a tad confused on how to customise it \u2013</p>\n<p>I always use the EOD unless I want to play the Hardcore way then I would use Standard, nevertheless how do you configure this correctly? What are the min/max values for the parameters?</p>\n<p>\u201cChangeAll\u201d : false,</p>\n<p>\u201c566abbc34bdc2d92178b4576\u201d : {</p>\n<p>\u201cname\u201d : \u201cStandard\u201d,</p>\n<p>\u201csize\u201d : 28</p>\n<p>},</p>\n<p>\u201c5811ce572459770cba1a34ea\u201d : {</p>\n<p>\u201cname\u201d : \u201cLeftBehind\u201d,</p>\n<p>\u201csize\u201d : 38</p>\n<p>},</p>\n<p>\u201c5811ce662459770f6f490f32\u201d : {</p>\n<p>\u201cname\u201d : \u201cPrepareForEscape\u201d,</p>\n<p>\u201csize\u201d : 48</p>\n<p>},</p>\n<p>\u201c5811ce772459770e9e5f9532\u201d : {</p>\n<p>\u201cname\u201d : \u201cEdgeOfDarkness\u201d,</p>\n<p>\u201csize\u201d : 68</p>\n<p>}</p>\n<p>------------------------------------------------------------------------------------------------------------------------------------------------------------</p>\n<p>const items = DatabaseServer.tables.templates.items</p>\n<p>const weaponClass =[</p>\n<p>\u201cpistol\u201d,</p>\n<p>\u201csmg\u201d,</p>\n<p>\u201cshotgun\u201d,</p>\n<p>\u201cassaultRifle\u201d,</p>\n<p>\u201cassaultCarbine\u201d,</p>\n<p>\u201cmachinegun\u201d,</p>\n<p>\u201cmarksmanRifle\u201d,</p>\n<p>\u201csniperRifle\u201d</p>\n<p>]</p>\n<p>var hitCounter = 0 &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; <strong>do you change this value??</strong></p>\n<p>class CameraRecoilRemover{</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 57799,
+   "parent_id": 1249,
+   "author": "kikirio",
+   "author_id": 591,
+   "author_url": "https://forge.sp-tarkov.com/user/591/kikirio",
+   "created_at": "2021-08-19T19:32:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hmm maybe I made a fuck up hang on let me double check (that is the wrong config and yeah I left a debug counter in there, it just counts each item the recoil is being set on)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 57800,
+   "parent_id": 1249,
+   "author": "Kryptic-S01",
+   "author_id": 2685,
+   "author_url": "https://forge.sp-tarkov.com/user/2685/kryptic-s01",
+   "created_at": "2021-08-19T19:36:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>No problem bud. I like the idea of this mod and hopefully this will improve it going forward</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 57801,
+   "parent_id": 1249,
+   "author": "kikirio",
+   "author_id": 591,
+   "author_url": "https://forge.sp-tarkov.com/user/591/kikirio",
+   "created_at": "2021-08-19T19:40:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Cheers should be sorted now.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 57802,
+   "parent_id": 1249,
+   "author": "Kryptic-S01",
+   "author_id": 2685,
+   "author_url": "https://forge.sp-tarkov.com/user/2685/kryptic-s01",
+   "created_at": "2021-08-19T19:43:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Fantastic! Keep up the good work</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 1251,
+   "parent_id": null,
+   "author": "Kryptic-S01",
+   "author_id": 2685,
+   "author_url": "https://forge.sp-tarkov.com/user/2685/kryptic-s01",
+   "created_at": "2021-08-19T20:07:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>After downloading 1.0.2 I get a syntax error trace in the local server</p>\n<p><a href=\"https://prnt.sc/1qcitw3\" target=\"_blank\" rel=\"noreferrer noopener\">https://prnt.sc/1qcitw3</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 57803,
+   "parent_id": 1251,
+   "author": "kikirio",
+   "author_id": 591,
+   "author_url": "https://forge.sp-tarkov.com/user/591/kikirio",
+   "created_at": "2021-08-19T20:17:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>well shit my bad I will get on that what a mess</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 57804,
+   "parent_id": 1251,
+   "author": "Kryptic-S01",
+   "author_id": 2685,
+   "author_url": "https://forge.sp-tarkov.com/user/2685/kryptic-s01",
+   "created_at": "2021-08-19T20:19:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Don\u2019t worry about it bud we will get this mod working</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 57805,
+   "parent_id": 1251,
+   "author": "kikirio",
+   "author_id": 591,
+   "author_url": "https://forge.sp-tarkov.com/user/591/kikirio",
+   "created_at": "2021-08-19T20:27:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Haha cheers for the bug reports, it should all be groovy now<br />\nOr</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 57806,
+   "parent_id": 1251,
+   "author": "Kryptic-S01",
+   "author_id": 2685,
+   "author_url": "https://forge.sp-tarkov.com/user/2685/kryptic-s01",
+   "created_at": "2021-08-19T20:29:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Installing it now I\u2019ll get back to you</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 57807,
+   "parent_id": 1251,
+   "author": "Argurios",
+   "author_id": 7826,
+   "author_url": "https://forge.sp-tarkov.com/user/7826/argurios",
+   "created_at": "2021-08-19T20:54:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Had the trace error too but working fine now =)</p>\n<p>Good work once again Kiki !</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 57808,
+   "parent_id": 1251,
+   "author": "Kryptic-S01",
+   "author_id": 2685,
+   "author_url": "https://forge.sp-tarkov.com/user/2685/kryptic-s01",
+   "created_at": "2021-08-19T21:39:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Whatever you have done Kiki it has worked</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 1288,
+   "parent_id": null,
+   "author": "DrMartimus",
+   "author_id": 1135,
+   "author_url": "https://forge.sp-tarkov.com/user/1135/drmartimus",
+   "created_at": "2021-08-25T20:54:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Quick config question: Lets say I want to cut camera recoil in half. Do I set the config to 50, or 0.5?</p>\n<p>Thanks!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 57885,
+   "parent_id": 1288,
+   "author": "kikirio",
+   "author_id": 591,
+   "author_url": "https://forge.sp-tarkov.com/user/591/kikirio",
+   "created_at": "2021-08-25T21:06:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Ah so no it isn\u2019t a multiplier, it is a hard value. So for instance a mosin has a value of 0.4 a glock 17 is 0.018.<br />\nI probably should of explained that better,gives a smooth experience across all guns.<br />\nmaybe a multiplier would be better? or perhaps the option of both?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 57889,
+   "parent_id": 1288,
+   "author": "DrMartimus",
+   "author_id": 1135,
+   "author_url": "https://forge.sp-tarkov.com/user/1135/drmartimus",
+   "created_at": "2021-08-26T01:54:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Ahh, interesting. So if I set it to one value it will be more intense than usual with some guns and less for others. Multiplier might be cool if it isn\u2019t too much work. Idk, I\u2019m modding illiterate</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 10997,
+   "parent_id": null,
+   "author": "piken",
+   "author_id": 26024,
+   "author_url": "https://forge.sp-tarkov.com/user/26024/piken",
+   "created_at": "2023-01-26T19:09:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>hey sorry to ask this silly question, do you think your mod can work on spt 3.5.0 ?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 12977,
+   "parent_id": null,
+   "author": "Skush",
+   "author_id": 7550,
+   "author_url": "https://forge.sp-tarkov.com/user/7550/skush",
+   "created_at": "2023-03-06T17:27:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Would love to get a multiplier so I can just tone it down quite a bit instead of removing it completely or having it equal for all guns</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 75822,
+   "parent_id": 12977,
+   "author": "kikirio",
+   "author_id": 591,
+   "author_url": "https://forge.sp-tarkov.com/user/591/kikirio",
+   "created_at": "2023-03-06T17:28:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>it is a multiplier</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 75826,
+   "parent_id": 12977,
+   "author": "Skush",
+   "author_id": 7550,
+   "author_url": "https://forge.sp-tarkov.com/user/7550/skush",
+   "created_at": "2023-03-06T18:42:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Okay, wasn\u2019t able to make that out thanks, glad to hear it</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 18668,
+   "parent_id": null,
+   "author": "3eyez",
+   "author_id": 34772,
+   "author_url": "https://forge.sp-tarkov.com/user/34772/3eyez",
+   "created_at": "2023-08-05T00:55:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Does this mod work for 3.5.8?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 19932,
+   "parent_id": null,
+   "author": "Surfingnet",
+   "author_id": 22237,
+   "author_url": "https://forge.sp-tarkov.com/user/22237/surfingnet",
+   "created_at": "2023-08-28T00:47:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Will it be updated to 3.6.X ?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 86430,
+   "parent_id": 19932,
+   "author": "kikirio",
+   "author_id": 591,
+   "author_url": "https://forge.sp-tarkov.com/user/591/kikirio",
+   "created_at": "2023-08-28T01:14:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>should still work as intended, Let me know if not.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 27688,
+   "parent_id": null,
+   "author": "okjmin",
+   "author_id": 7772,
+   "author_url": "https://forge.sp-tarkov.com/user/7772/okjmin",
+   "created_at": "2024-03-09T03:08:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey, I just read that you changed it into a multiplier in the config, is it percentage or just number?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

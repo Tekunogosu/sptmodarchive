@@ -1,0 +1,160 @@
+{
+ "mod_id": 1699,
+ "slug": "trader-assort-relocator",
+ "fetched_at": "2026-08-09T08:00:55Z",
+ "reported_total": null,
+ "pages": 1,
+ "count": 15,
+ "comments": [
+  {
+   "id": 40098,
+   "parent_id": null,
+   "author": "S13NDR_M4N",
+   "author_id": 50652,
+   "author_url": "https://forge.sp-tarkov.com/user/50652/s13ndr-m4n",
+   "created_at": "2024-08-31T01:25:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I have a custom set of Assort files and have been looking for a way to add them to the vanilla traders INSTEAD of the vanilla traders base inventories</p>\n<p>These assorts largely move higher caliber guns up the leveling tree to level 3 and 4 traders-</p>\n<p>Basically creating a Hardcore lite experience</p>\n<p>Would you be interested in collaborating with me to bring that to life as an independent mod or one that uses this as a dependency?</p>\n<p>Thanks for making this!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 115558,
+   "parent_id": 40098,
+   "author": "Spring",
+   "author_id": 31264,
+   "author_url": "https://forge.sp-tarkov.com/user/31264/spring",
+   "created_at": "2024-08-31T01:33:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p><a href=\"https://hub.sp-tarkov.com/doc/entry/51-modding-in-spt-3-x-x/\" target=\"_blank\" rel=\"noreferrer noopener\">Modding in SPT 3.x.x</a></p>\n<p>Example 13 is what you need.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 115559,
+   "parent_id": 40098,
+   "author": "S13NDR_M4N",
+   "author_id": 50652,
+   "author_url": "https://forge.sp-tarkov.com/user/50652/s13ndr-m4n",
+   "created_at": "2024-08-31T01:48:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Awesome thanks</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 40491,
+   "parent_id": null,
+   "author": "stonecold913",
+   "author_id": 51680,
+   "author_url": "https://forge.sp-tarkov.com/user/51680/stonecold913",
+   "created_at": "2024-09-06T01:05:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>how do you know what trader the items will be sent to?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 116190,
+   "parent_id": 40491,
+   "author": "Spring",
+   "author_id": 31264,
+   "author_url": "https://forge.sp-tarkov.com/user/31264/spring",
+   "created_at": "2024-09-06T21:27:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It distributes based on what type of item it is:</p>\n<ul>\n<li>Prapor gets Special Equipments</li>\n<li>Therapist gets Cases, Regular Containers, Meds, Provisions, Keys and Keycards</li>\n<li>Skier gets Searchable Items (Like custom lootboxes)</li>\n<li>Peacekeeper gets Info Items, Currencies and Secure Containers</li>\n<li>Mechanic gets Weapons, Mods, Ammo, Grenades and Melees</li>\n<li>Ragman gets Gear (Anything you can wear) and Gear Components</li>\n<li>Jaeger gets Barter Items</li>\n</ul>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 41429,
+   "parent_id": null,
+   "author": "oneole",
+   "author_id": 64399,
+   "author_url": "https://forge.sp-tarkov.com/user/64399/oneole",
+   "created_at": "2024-09-24T17:58:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello! Thank you for creating the mod! I encountered some issues while using it, and I\u2019ve uploaded the log file to Pastebin. Could you please take a look? The problem should start from line 569. I really appreciate it!</p>\n<p><a href=\"https://pastebin.com/S8zhCes5\" target=\"_blank\" rel=\"noreferrer noopener\">https://pastebin.com/S8zhCes5</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 117620,
+   "parent_id": 41429,
+   "author": "Spring",
+   "author_id": 31264,
+   "author_url": "https://forge.sp-tarkov.com/user/31264/spring",
+   "created_at": "2024-09-27T16:25:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Regarding this error, it happens because the item doesnt have a parentId associated with its entry on the item tables.</p>\n<p>Most likely caused by a malformed entry on the database or another mod conflict, this mod heavily relies on the parentId so there isnt much i can do to \u201cfix it\u201d.</p>\n<p>You could try adding either \u2018Artem\u2019 or \u2018ArtemTrader\u2019 to the ignore list on the config file and see if it works for the other traders that you have installed.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 117635,
+   "parent_id": 41429,
+   "author": "oneole",
+   "author_id": 64399,
+   "author_url": "https://forge.sp-tarkov.com/user/64399/oneole",
+   "created_at": "2024-09-27T22:59:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>got it. thank you so much!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 42223,
+   "parent_id": null,
+   "author": "Tahque",
+   "author_id": 50092,
+   "author_url": "https://forge.sp-tarkov.com/user/50092/tahque",
+   "created_at": "2024-10-18T16:00:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>How can i solve this problem?;</p>\n<p>TypeError: Cannot read properties of undefined (reading \u2018_parent\u2019)</p>\n<p>TypeError: Cannot read properties of undefined (reading \u2018_parent\u2019)</p>\n<p>at Mod.postDBLoad (C:\\SPT\\user\\mods\\zSpring-TraderAssortRelocator\\src\\mod.ts:178:67)</p>\n<p>at PostDBModLoader.executeModsAsync (C:\\snapshot\\src\\loaders\\PostDBModLoader.ts:63:45)</p>\n<p>at PostDBModLoader.onLoad (C:\\snapshot\\src\\loaders\\PostDBModLoader.ts:26:24)</p>\n<p>at App.load (C:\\snapshot\\src\\utils\\App.ts:51:26)</p>\n<p>TypeError: Cannot read properties of undefined (reading \u2018_parent\u2019)</p>\n<p>TypeError: Cannot read properties of undefined (reading \u2018_parent\u2019)</p>\n<p>at Mod.postDBLoad (C:\\SPT\\user\\mods\\zSpring-TraderAssortRelocator\\src\\mod.ts:178:67)</p>\n<p>at PostDBModLoader.executeModsAsync (C:\\snapshot\\src\\loaders\\PostDBModLoader.ts:63:45)</p>\n<p>at PostDBModLoader.onLoad (C:\\snapshot\\src\\loaders\\PostDBModLoader.ts:26:24)</p>\n<p>at App.load (C:\\snapshot\\src\\utils\\App.ts:51:26)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 119008,
+   "parent_id": 42223,
+   "author": "Spring",
+   "author_id": 31264,
+   "author_url": "https://forge.sp-tarkov.com/user/31264/spring",
+   "created_at": "2024-10-25T18:42:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Regarding this error, it happens because the item doesnt have a parentId associated with its entry on the item tables.</p>\n<p>Most likely caused by a malformed entry on the database or another mod conflict, this mod heavily relies on the parentId so there isnt much i can do to \u201cfix it\u201d.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 42964,
+   "parent_id": null,
+   "author": "TheGoldenaxe001",
+   "author_id": 26392,
+   "author_url": "https://forge.sp-tarkov.com/user/26392/thegoldenaxe001",
+   "created_at": "2024-11-01T23:22:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>For things like magtape and the color cores, do we need to install Painter?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 119563,
+   "parent_id": 42964,
+   "author": "Spring",
+   "author_id": 31264,
+   "author_url": "https://forge.sp-tarkov.com/user/31264/spring",
+   "created_at": "2024-11-02T14:59:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This mod doesnt add new items, it just reallocates custom traders to vanilla traders.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 119572,
+   "parent_id": 42964,
+   "author": "TheGoldenaxe001",
+   "author_id": 26392,
+   "author_url": "https://forge.sp-tarkov.com/user/26392/thegoldenaxe001",
+   "created_at": "2024-11-02T18:55:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I understood that and I played around and found out. I didn\u2019t know if the trader had to be installed along side dependent mods or if the mod handled the items still. Thank you for your response</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 119661,
+   "parent_id": 42964,
+   "author": "Spring",
+   "author_id": 31264,
+   "author_url": "https://forge.sp-tarkov.com/user/31264/spring",
+   "created_at": "2024-11-04T16:09:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This mod by itself doesn\u2019t do anything, it\u2019s intended use is to reduce the amount of custom traders by reallocating their offers into the vanilla traders.</p>\n<p>If you want to keep some traders for a specific reason like them having a good questline or such, you can add them to the ignore list.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 48479,
+   "parent_id": null,
+   "author": "Ha7an",
+   "author_id": 69513,
+   "author_url": "https://forge.sp-tarkov.com/user/69513/ha7an",
+   "created_at": "2025-02-14T06:54:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I need an update of this mod? What is your situation like rn?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

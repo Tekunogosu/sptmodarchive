@@ -1,0 +1,1050 @@
+{
+ "mod_id": 210,
+ "slug": "kiki-healthmultiplier",
+ "fetched_at": "2026-08-09T07:04:21Z",
+ "reported_total": 40,
+ "pages": 4,
+ "count": 104,
+ "comments": [
+  {
+   "id": 1417,
+   "parent_id": null,
+   "author": "BRSaura",
+   "author_id": 3148,
+   "author_url": "https://forge.sp-tarkov.com/user/3148/brsaura",
+   "created_at": "2021-09-09T15:37:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>What happened to changing the health values of each limb in the profile file? in aki 1.5 for some reason they reset each time the profile loads again, and it never happens in the next versions. Is that part of the reason this only works on new profiles?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 58104,
+   "parent_id": 1417,
+   "author": "kikirio",
+   "author_id": 591,
+   "author_url": "https://forge.sp-tarkov.com/user/591/kikirio",
+   "created_at": "2021-09-09T15:47:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yeah I think it is setting the profile default, not 100% on it tbh. I think there will be a way to get it to work on current profiles, I need to do some fiddling to figure it out.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 58105,
+   "parent_id": 1417,
+   "author": "BRSaura",
+   "author_id": 3148,
+   "author_url": "https://forge.sp-tarkov.com/user/3148/brsaura",
+   "created_at": "2021-09-09T16:04:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Looks like it, it happens on loading, after it prints [idnumber][127.0.0.1] /player/health/sync so it looks like it grabs it from a default one</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 58106,
+   "parent_id": 1417,
+   "author": "BRSaura",
+   "author_id": 3148,
+   "author_url": "https://forge.sp-tarkov.com/user/3148/brsaura",
+   "created_at": "2021-09-09T16:13:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Ok, looks like I got it, the server grabs the values from globals.json in the \u201cPlayerHealthFactors\u201d section, because they are applied everytime the game is loaded you can change them here directly and they will apply the next time the profile loads, even if the profile is already created</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 58107,
+   "parent_id": 1417,
+   "author": "kikirio",
+   "author_id": 591,
+   "author_url": "https://forge.sp-tarkov.com/user/591/kikirio",
+   "created_at": "2021-09-09T16:25:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Ooh juicy info, ta I will have a fiddle.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 58182,
+   "parent_id": 1417,
+   "author": "BRSaura",
+   "author_id": 3148,
+   "author_url": "https://forge.sp-tarkov.com/user/3148/brsaura",
+   "created_at": "2021-09-12T14:49:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019ve been fiddling a bit more with some mods and it looks like Fin AI has something to do with this.</p>\n<p>From his readme.txt in the mod:</p>\n<p>Player health:</p>\n<p>-If you want to modify the player\u2019s default health, any modifications made need to be made inside of Aki_Data\\Server\\database\\globals.json, inside the PlayerHealthFactors section. Specifically, you need to change the \u2018Maximum\u2019 values. If this is *not* done, any changes made to the player\u2019s profile file will be reset by this mod upon starting the game.</p>\n<p>-This is done because of COD_mode. Without forcibly setting the player\u2019s health via an external reference upon beginning the game, if the player\u2019s game were to crash while using COD_mode their health would be permanently increased.</p>\n<p>-I know this is likely to cause issues with some other mods, and I\u2019ll see if I can come up with a better way of handling COD_mode, but for now this is just going to add another step to modifying player HP values.</p>\n<p>-COD_mode: Enabling this sets the HP of all your bodyparts to 200, and gives you a special injector that will reduce all non-headshot damage taken by 50% and heal you for 25 HP per second for 24 IRL hours.</p>\n<p>-COD mode cannot be applied to newly-created characters. Once you\u2019ve made your character (Picked a name, face, voice and faction), you need to exit the game and restart the server for everything to work properly.</p>\n<p>Even if you have this disabled it will still check and reset everytime.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 1551,
+   "parent_id": null,
+   "author": "rienguyen",
+   "author_id": 9189,
+   "author_url": "https://forge.sp-tarkov.com/user/9189/rienguyen",
+   "created_at": "2021-09-20T23:05:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It\u2019s doesn\u2019t works with 1.5.1 the HP still the same. I set my player HP to 5.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 58382,
+   "parent_id": 1551,
+   "author": "kikirio",
+   "author_id": 591,
+   "author_url": "https://forge.sp-tarkov.com/user/591/kikirio",
+   "created_at": "2021-09-21T06:40:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>At present it will only work for the player with a NEW profile (as explained in the readme)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 58395,
+   "parent_id": 1551,
+   "author": "rienguyen",
+   "author_id": 9189,
+   "author_url": "https://forge.sp-tarkov.com/user/9189/rienguyen",
+   "created_at": "2021-09-21T10:45:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>So you mean I install this mod, then start with a brand new profile?</p>\n<p>If I start a new profile first then install this mod, then it\u2019s not gonna works?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 58398,
+   "parent_id": 1551,
+   "author": "kikirio",
+   "author_id": 591,
+   "author_url": "https://forge.sp-tarkov.com/user/591/kikirio",
+   "created_at": "2021-09-21T10:58:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>for players, yes. I intend to rewrite that soon (there are a couple of option to explore in comments below):)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 58400,
+   "parent_id": 1551,
+   "author": "rienguyen",
+   "author_id": 9189,
+   "author_url": "https://forge.sp-tarkov.com/user/9189/rienguyen",
+   "created_at": "2021-09-21T11:27:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It\u2019s WORKS!!! THANK YOU!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 58433,
+   "parent_id": 1417,
+   "author": "selendius",
+   "author_id": 5653,
+   "author_url": "https://forge.sp-tarkov.com/user/5653/selendius",
+   "created_at": "2021-09-22T11:50:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Great info BRSaura</p>\n<p>been confused when i do modification to the health point of limb but it revert to original value again and again</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 1684,
+   "parent_id": null,
+   "author": "HolySurvivor",
+   "author_id": 9563,
+   "author_url": "https://forge.sp-tarkov.com/user/9563/holysurvivor",
+   "created_at": "2021-09-24T16:24:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is it possible for you to add config options for each individual body part? Would love to be able to do that.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 58541,
+   "parent_id": 1684,
+   "author": "kikirio",
+   "author_id": 591,
+   "author_url": "https://forge.sp-tarkov.com/user/591/kikirio",
+   "created_at": "2021-09-24T16:40:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yeah for sure, I have an idea for that.<br />\nI will add it to the todo list, won\u2019t be done instantly</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 58628,
+   "parent_id": 1684,
+   "author": "HolySurvivor",
+   "author_id": 9563,
+   "author_url": "https://forge.sp-tarkov.com/user/9563/holysurvivor",
+   "created_at": "2021-09-25T23:34:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Nice. Looking forward to that</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 59819,
+   "parent_id": 1684,
+   "author": "Coitus_Ergo_Sum",
+   "author_id": 10213,
+   "author_url": "https://forge.sp-tarkov.com/user/10213/coitus-ergo-sum",
+   "created_at": "2021-10-28T23:29:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>your prayers have been answered</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 2440,
+   "parent_id": null,
+   "author": "Vidarrn",
+   "author_id": 11017,
+   "author_url": "https://forge.sp-tarkov.com/user/11017/vidarrn",
+   "created_at": "2021-11-01T06:04:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019ve been trying to figure out how to get the wound effects to stay with the extra health, do you have any ideas on how to get that?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 59917,
+   "parent_id": 2440,
+   "author": "kikirio",
+   "author_id": 591,
+   "author_url": "https://forge.sp-tarkov.com/user/591/kikirio",
+   "created_at": "2021-11-01T10:15:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Sorry I am not grasping what you mean, would you mind explaining in more detail?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 59949,
+   "parent_id": 2440,
+   "author": "Vidarrn",
+   "author_id": 11017,
+   "author_url": "https://forge.sp-tarkov.com/user/11017/vidarrn",
+   "created_at": "2021-11-02T04:37:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>all of my attempts to raise health levels while maintaining wound effects(I.E light/heavy bleeds, fractures etc) haven\u2019t worked at all, so no matter how much damage i take i never have those trigger.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 59959,
+   "parent_id": 2440,
+   "author": "kikirio",
+   "author_id": 591,
+   "author_url": "https://forge.sp-tarkov.com/user/591/kikirio",
+   "created_at": "2021-11-02T08:44:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I see, interesting, I will have to do some digging.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 2469,
+   "parent_id": null,
+   "author": "Aetherion",
+   "author_id": 9616,
+   "author_url": "https://forge.sp-tarkov.com/user/9616/aetherion",
+   "created_at": "2021-11-02T12:31:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>What\u2019s the maximum health number for each body parts? Will it be a problem to heal a lot of those amounts? Will it increase therapist heal fee after raid?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 59963,
+   "parent_id": 2469,
+   "author": "kikirio",
+   "author_id": 591,
+   "author_url": "https://forge.sp-tarkov.com/user/591/kikirio",
+   "created_at": "2021-11-02T13:22:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I have not tested for a maximum, but was running 200 each with no issues. Healing items are standard, so you would have to use more to heal. I think therapist healing is based on % (in which case no change) but I may be wrong there.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 59999,
+   "parent_id": 2440,
+   "author": "Vidarrn",
+   "author_id": 11017,
+   "author_url": "https://forge.sp-tarkov.com/user/11017/vidarrn",
+   "created_at": "2021-11-03T06:22:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i\u2019ve found the code for the damage effects in the global.json file and i tried adjusting some of the limits with no luck</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 60159,
+   "parent_id": 2440,
+   "author": "Vidarrn",
+   "author_id": 11017,
+   "author_url": "https://forge.sp-tarkov.com/user/11017/vidarrn",
+   "created_at": "2021-11-08T05:15:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>So i tried the mod again and i\u2019ve noticed when you use the modifier instead of the individual life pools you can still achieve wound effects if you still with 3.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 2655,
+   "parent_id": null,
+   "author": "bogdan_na_masse",
+   "author_id": 2353,
+   "author_url": "https://forge.sp-tarkov.com/user/2353/bogdan-na-masse",
+   "created_at": "2021-11-16T10:07:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi Kiki, will we get an update to AKI 2.1.0?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 60313,
+   "parent_id": 2655,
+   "author": "kikirio",
+   "author_id": 591,
+   "author_url": "https://forge.sp-tarkov.com/user/591/kikirio",
+   "created_at": "2021-11-16T10:54:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yes</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 2749,
+   "parent_id": null,
+   "author": "Mesamune",
+   "author_id": 8996,
+   "author_url": "https://forge.sp-tarkov.com/user/8996/mesamune",
+   "created_at": "2021-11-20T02:10:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>[ERROR] Trace:</p>\n<p>TypeError: Cannot read property \u2018BodyParts\u2019 of undefined</p>\n<p>at Object.runOnGameStart [as healthmultiplier] (C:\\Users\\Jokeskywalker\\Desktop\\SPTAKI\\user\\mods\\Kiki-HealthMultiplier1.1.0\\src\\HealthMultiplier.js:13:37)</p>\n<p>at Function.getResponse (C:\\Users\\Jokeskywalker\\Desktop\\SPTAKI\\obj\\bundle.js:56224:57)</p>\n<p>at Function.sendResponse (C:\\Users\\Jokeskywalker\\Desktop\\SPTAKI\\obj\\bundle.js:56463:29)</p>\n<p>at Inflate.cb (C:\\Users\\Jokeskywalker\\Desktop\\SPTAKI\\obj\\bundle.js:56498:22)</p>\n<p>at Inflate.zlibBufferOnEnd (zlib.js:153:10)</p>\n<p>at Inflate.emit (events.js:315:20)</p>\n<p>at endReadableNT (internal/streams/readable.js:1327:12)</p>\n<p>at processTicksAndRejections (internal/process/task_queues.js:80:21)</p>\n<p>consistently throwing this error?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 60441,
+   "parent_id": 2749,
+   "author": "Mesamune",
+   "author_id": 8996,
+   "author_url": "https://forge.sp-tarkov.com/user/8996/mesamune",
+   "created_at": "2021-11-20T02:10:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>config is as follows:</p>\n<p>{</p>\n<p>\u201cAI\u201d : {</p>\n<p>\u201cenabled\u201d : true,</p>\n<p>\u201chealthMultiplier\u201d : 1</p>\n<p>},</p>\n<p>\u201cPlayer\u201d : {</p>\n<p>\u201cenabled\u201d : true,</p>\n<p>\u201cbodyPartMode\u201d :{</p>\n<p>\u201cenabled\u201d : true,</p>\n<p>\u201cHead\u201d : 9999,</p>\n<p>\u201cChest\u201d : 9999,</p>\n<p>\u201cStomach\u201d : 9999,</p>\n<p>\u201cLeftArm\u201d : 9999,</p>\n<p>\u201cRightArm\u201d : 9999,</p>\n<p>\u201cLeftLeg\u201d : 9999,</p>\n<p>\u201cRightLeg\u201d : 999</p>\n<p>},</p>\n<p>\u201cIf BodyPartMode.Enabled is false\u201d : \u201cthen\u201d,</p>\n<p>\u201chealthMultiplier\u201d : 100</p>\n<p>}</p>\n<p>}</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 60483,
+   "parent_id": 2749,
+   "author": "kikirio",
+   "author_id": 591,
+   "author_url": "https://forge.sp-tarkov.com/user/591/kikirio",
+   "created_at": "2021-11-21T17:15:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>which version of AKI you running?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 2827,
+   "parent_id": null,
+   "author": "vronair",
+   "author_id": 10920,
+   "author_url": "https://forge.sp-tarkov.com/user/10920/vronair",
+   "created_at": "2021-11-24T13:12:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>concentrate waiting</p>\n<p>thanks in advance</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 60593,
+   "parent_id": 2749,
+   "author": "kikirio",
+   "author_id": 591,
+   "author_url": "https://forge.sp-tarkov.com/user/591/kikirio",
+   "created_at": "2021-11-25T20:58:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I see I hit the nail on the head there eh new version is out now.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 60607,
+   "parent_id": 2749,
+   "author": "Skush",
+   "author_id": 7550,
+   "author_url": "https://forge.sp-tarkov.com/user/7550/skush",
+   "created_at": "2021-11-26T14:56:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I am using the new 1.1.1 Version on a fresh install and still have an error when starting the game. Game starts normally without the mod installed.</p>\n<p>I tried it with the body-part mode and with the multiplier, error with both</p>\n<p>[ERROR] Trace:</p>\n<p>TypeError: Cannot read property \u2018BodyParts\u2019 of undefined</p>\n<p>at Object.runOnGameStart [as healthmultiplier] (C:\\Games\\SPT-AKI\\user\\mods\\Kiki-HealthMultiplier1.1.1\\src\\HealthMultiplier.js:13:37)</p>\n<p>at Function.getResponse (C:\\Games\\SPT-AKI\\obj\\bundle.js:26266:57)</p>\n<p>at Function.sendResponse (C:\\Games\\SPT-AKI\\obj\\bundle.js:26504:29)</p>\n<p>at Inflate.cb (C:\\Games\\SPT-AKI\\obj\\bundle.js:26539:22)</p>\n<p>at Inflate.zlibBufferOnEnd (zlib.js:153:10)</p>\n<p>at Inflate.emit (events.js:315:20)</p>\n<p>at endReadableNT (internal/streams/readable.js:1327:12)</p>\n<p>at processTicksAndRejections (internal/process/task_queues.js:80:21)</p>\n<p>[278e48e23cff6c2714621257][127.0.0.1] /launcher/profile/info</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 60619,
+   "parent_id": 2749,
+   "author": "kikirio",
+   "author_id": 591,
+   "author_url": "https://forge.sp-tarkov.com/user/591/kikirio",
+   "created_at": "2021-11-27T17:14:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Odd as it was tested (somewhat thoroughly) and not released blindly 0.o<br />\nExpect an update in a day or two to add new features anyway.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 60709,
+   "parent_id": 2749,
+   "author": "Mesamune",
+   "author_id": 8996,
+   "author_url": "https://forge.sp-tarkov.com/user/8996/mesamune",
+   "created_at": "2021-12-03T02:30:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I am terribly sorry for no response (i forgot about this)</p>\n<p>I got it to work and double my health, but was never able to make myself unkillable</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 3062,
+   "parent_id": null,
+   "author": "Jason",
+   "author_id": 4953,
+   "author_url": "https://forge.sp-tarkov.com/user/4953/jason",
+   "created_at": "2021-12-15T17:09:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>good</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 3081,
+   "parent_id": null,
+   "author": "UncleFrank",
+   "author_id": 12297,
+   "author_url": "https://forge.sp-tarkov.com/user/12297/unclefrank",
+   "created_at": "2021-12-18T00:02:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello, can\u2019t seem to get this mod to work. Using SPT-AKI 2.1.2 version with only this mod enabled, fresh install and this error just keeps popping up.</p>\n<p>[ERROR] Trace:</p>\n<p>TypeError: Cannot read property \u2018BodyParts\u2019 of undefined</p>\n<p>at Object.runOnGameStart [as healthmultiplier] (C:\\Games\\Battlestate Games\\SPTARKOV\\user\\mods\\Kiki-HealthMultiplier2.0.1\\src\\HealthMultiplier.js:13:37)</p>\n<p>at Function.getResponse (C:\\Games\\Battlestate Games\\SPTARKOV\\obj\\bundle.js:26266:57)</p>\n<p>at Function.sendResponse (C:\\Games\\Battlestate Games\\SPTARKOV\\obj\\bundle.js:26504:29)</p>\n<p>at Inflate.cb (C:\\Games\\Battlestate Games\\SPTARKOV\\obj\\bundle.js:26539:22)</p>\n<p>at Inflate.zlibBufferOnEnd (zlib.js:153:10)</p>\n<p>at Inflate.emit (events.js:315:20)</p>\n<p>at endReadableNT (internal/streams/readable.js:1327:12)</p>\n<p>at processTicksAndRejections (internal/process/task_queues.js:80:21)</p>\n<p>{</p>\n<p>\u201cAllEqualToPlayer\u201d : false,</p>\n<p>\u201cAI\u201d : {</p>\n<p>\u201cenabled\u201d : true,</p>\n<p>\u201cbodyPartMode\u201d :{</p>\n<p>\u201cenabled\u201d : false,</p>\n<p>\u201cHead\u201d : 35,</p>\n<p>\u201cChest\u201d : 85,</p>\n<p>\u201cStomach\u201d : 70,</p>\n<p>\u201cLeftArm\u201d : 60,</p>\n<p>\u201cRightArm\u201d : 60,</p>\n<p>\u201cLeftLeg\u201d : 65,</p>\n<p>\u201cRightLeg\u201d : 65</p>\n<p>},</p>\n<p>\u201cIf BodyPartMode.Enabled is false\u201d : \u201cthen\u201d,</p>\n<p>\u201chealthMultiplier\u201d : 0.5</p>\n<p>},</p>\n<p>\u201cBoss\u201d : {</p>\n<p>\u201cenabled\u201d : true,</p>\n<p>\u201cbodyPartMode\u201d :{</p>\n<p>\u201cenabled\u201d : false,</p>\n<p>\u201cHead\u201d : 35,</p>\n<p>\u201cChest\u201d : 85,</p>\n<p>\u201cStomach\u201d : 70,</p>\n<p>\u201cLeftArm\u201d : 60,</p>\n<p>\u201cRightArm\u201d : 60,</p>\n<p>\u201cLeftLeg\u201d : 65,</p>\n<p>\u201cRightLeg\u201d : 65</p>\n<p>},</p>\n<p>\u201cif bodyPartMode.enabled is false\u201d : \u201cthen\u201d,</p>\n<p>\u201chealthMultiplier\u201d : 0.5</p>\n<p>},</p>\n<p>\u201cPlayer\u201d : {</p>\n<p>\u201cenabled\u201d : true,</p>\n<p>\u201cbodyPartMode\u201d :{</p>\n<p>\u201cenabled\u201d : false,</p>\n<p>\u201cHead\u201d : 35,</p>\n<p>\u201cChest\u201d : 85,</p>\n<p>\u201cStomach\u201d : 70,</p>\n<p>\u201cLeftArm\u201d : 60,</p>\n<p>\u201cRightArm\u201d : 60,</p>\n<p>\u201cLeftLeg\u201d : 65,</p>\n<p>\u201cRightLeg\u201d : 65</p>\n<p>},</p>\n<p>\u201cif bodyPartMode.enabled is false\u201d : \u201cthen\u201d,</p>\n<p>\u201chealthMultiplier\u201d : 2</p>\n<p>}</p>\n<p>}</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 61004,
+   "parent_id": 3081,
+   "author": "UncleFrank",
+   "author_id": 12297,
+   "author_url": "https://forge.sp-tarkov.com/user/12297/unclefrank",
+   "created_at": "2021-12-18T11:47:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Could be that it\u2019s supposed to work for 2.1.1? You put a 2.1.2 tag in the description.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 61008,
+   "parent_id": 3081,
+   "author": "kikirio",
+   "author_id": 591,
+   "author_url": "https://forge.sp-tarkov.com/user/591/kikirio",
+   "created_at": "2021-12-18T15:59:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Perhaps, I didn\u2019t test for this minor update and presumed it worked ^^, thanks for letting me know, I will look into it shortly and get a fix pushed (presuming I can replicate)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 61018,
+   "parent_id": 3081,
+   "author": "UncleFrank",
+   "author_id": 12297,
+   "author_url": "https://forge.sp-tarkov.com/user/12297/unclefrank",
+   "created_at": "2021-12-19T00:38:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Sweet, thanks for answering, i can\u2019t play without this mod, and modifying global config doesn\u2019t work anymore</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 61029,
+   "parent_id": 3081,
+   "author": "kikirio",
+   "author_id": 591,
+   "author_url": "https://forge.sp-tarkov.com/user/591/kikirio",
+   "created_at": "2021-12-19T17:58:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Days off from tomorrow, this is third on my list, but I expect I will get to it</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 61046,
+   "parent_id": 3081,
+   "author": "UncleFrank",
+   "author_id": 12297,
+   "author_url": "https://forge.sp-tarkov.com/user/12297/unclefrank",
+   "created_at": "2021-12-20T04:12:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>No problem, take your time</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 61056,
+   "parent_id": 3081,
+   "author": "kikirio",
+   "author_id": 591,
+   "author_url": "https://forge.sp-tarkov.com/user/591/kikirio",
+   "created_at": "2021-12-20T16:42:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yo so I cannot replicate, using 2.1.2 and your config gives no errors and has expected results ingame o.0<br />\nAre you using the latest version of the mod?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 61057,
+   "parent_id": 3081,
+   "author": "kikirio",
+   "author_id": 591,
+   "author_url": "https://forge.sp-tarkov.com/user/591/kikirio",
+   "created_at": "2021-12-20T16:55:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Ahha I may of found the issue, it\u2019s with fresh profile creation I will come up with a way round that shortly.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 61058,
+   "parent_id": 3081,
+   "author": "kikirio",
+   "author_id": 591,
+   "author_url": "https://forge.sp-tarkov.com/user/591/kikirio",
+   "created_at": "2021-12-20T17:46:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>OK should be fixed with the new update. Enjoy and thanks for the help.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 61085,
+   "parent_id": 3081,
+   "author": "UncleFrank",
+   "author_id": 12297,
+   "author_url": "https://forge.sp-tarkov.com/user/12297/unclefrank",
+   "created_at": "2021-12-21T16:32:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Haha no problems, thanks for fixing it quickly!!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 3456,
+   "parent_id": null,
+   "author": "BlitzFromBehind",
+   "author_id": 12718,
+   "author_url": "https://forge.sp-tarkov.com/user/12718/blitzfrombehind",
+   "created_at": "2022-01-14T21:41:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Does this affect the \u201cplayer\u201d ai\u2019s as well when changing player health?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 61642,
+   "parent_id": 3456,
+   "author": "kikirio",
+   "author_id": 591,
+   "author_url": "https://forge.sp-tarkov.com/user/591/kikirio",
+   "created_at": "2022-01-14T21:46:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>No they fall under regular AI as far as this mod is concerned, So it\u2019s player, bosses, and all other AI.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 61767,
+   "parent_id": 3456,
+   "author": "BlitzFromBehind",
+   "author_id": 12718,
+   "author_url": "https://forge.sp-tarkov.com/user/12718/blitzfrombehind",
+   "created_at": "2022-01-18T16:03:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Aight just making sure. Had a oddly tanky PMC after I downloaded. means that it was a random fluke or my aim just sucked on that occasion.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 3567,
+   "parent_id": null,
+   "author": "UncleFrank",
+   "author_id": 12297,
+   "author_url": "https://forge.sp-tarkov.com/user/12297/unclefrank",
+   "created_at": "2022-01-18T17:03:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Reminds me, if it\u2019s possible to configure player Scav HP values separately? Currently when we modify Scav HP it also changes for player Scav. I doubt this is doable but i just had a thought.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 61773,
+   "parent_id": 3567,
+   "author": "kikirio",
+   "author_id": 591,
+   "author_url": "https://forge.sp-tarkov.com/user/591/kikirio",
+   "created_at": "2022-01-18T17:06:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It might be doable, but if it is I don\u2019t know how. I will ponder on it, and update if I think of a solution.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 61862,
+   "parent_id": 3567,
+   "author": "UncleFrank",
+   "author_id": 12297,
+   "author_url": "https://forge.sp-tarkov.com/user/12297/unclefrank",
+   "created_at": "2022-01-21T17:20:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks, let me know how it goes</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 61897,
+   "parent_id": 3567,
+   "author": "Vidarrn",
+   "author_id": 11017,
+   "author_url": "https://forge.sp-tarkov.com/user/11017/vidarrn",
+   "created_at": "2022-01-22T21:42:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>you can achieve this by changing it in your profile .json file</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 61898,
+   "parent_id": 3567,
+   "author": "kikirio",
+   "author_id": 591,
+   "author_url": "https://forge.sp-tarkov.com/user/591/kikirio",
+   "created_at": "2022-01-22T21:46:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hmm now that may warrant a fiddle, should be quite easy to implement a solution if that\u2019s the case.</p>\n<p>Cheers.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 3820,
+   "parent_id": null,
+   "author": "GhostSignals",
+   "author_id": 4189,
+   "author_url": "https://forge.sp-tarkov.com/user/4189/ghostsignals",
+   "created_at": "2022-02-01T20:17:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Crossing my fingers and hoping you figure it out!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 62310,
+   "parent_id": 3820,
+   "author": "JohnnyBhoy",
+   "author_id": 7748,
+   "author_url": "https://forge.sp-tarkov.com/user/7748/johnnybhoy",
+   "created_at": "2022-02-03T17:32:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This health mod plus your Amour and Bullets mod is a great combo. I\u2019m using a 0.5 health multi for player and AI and it seems work well so far. Much less TTK and feels way more realistic.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 4594,
+   "parent_id": null,
+   "author": "JohnnyBhoy",
+   "author_id": 7748,
+   "author_url": "https://forge.sp-tarkov.com/user/7748/johnnybhoy",
+   "created_at": "2022-03-01T23:33:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Appreciate the update. So I take it there will be no issues updating from 2.0.4 to 2.1.0 on an existing profile?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 63425,
+   "parent_id": 4594,
+   "author": "kikirio",
+   "author_id": 591,
+   "author_url": "https://forge.sp-tarkov.com/user/591/kikirio",
+   "created_at": "2022-03-02T17:54:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I can\u2019t foresee any issues at all, however it is always good practice to backup your profile before hand, just in case.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 63426,
+   "parent_id": 3567,
+   "author": "kikirio",
+   "author_id": 591,
+   "author_url": "https://forge.sp-tarkov.com/user/591/kikirio",
+   "created_at": "2022-03-02T17:55:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>PLayer scav values now get updated too</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 63548,
+   "parent_id": 3567,
+   "author": "UncleFrank",
+   "author_id": 12297,
+   "author_url": "https://forge.sp-tarkov.com/user/12297/unclefrank",
+   "created_at": "2022-03-05T12:14:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Wow, awesome work! Thanks alot!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 4956,
+   "parent_id": null,
+   "author": "Sempra7",
+   "author_id": 8590,
+   "author_url": "https://forge.sp-tarkov.com/user/8590/sempra7",
+   "created_at": "2022-03-20T23:00:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>does this work with 2.3 or will this be updated to work with 2.3?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 5582,
+   "parent_id": null,
+   "author": "R3X",
+   "author_id": 17383,
+   "author_url": "https://forge.sp-tarkov.com/user/17383/r3x",
+   "created_at": "2022-05-09T22:35:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>just installed this mod i tried putting 1500 on all body parts for the player but nothing is happening how does this mod work</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 65154,
+   "parent_id": 5582,
+   "author": "kikirio",
+   "author_id": 591,
+   "author_url": "https://forge.sp-tarkov.com/user/591/kikirio",
+   "created_at": "2022-05-10T00:17:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Please read the readme / description. If there is anything unclear then let me know.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 5634,
+   "parent_id": null,
+   "author": "Dragoncrusher",
+   "author_id": 12037,
+   "author_url": "https://forge.sp-tarkov.com/user/12037/dragoncrusher",
+   "created_at": "2022-05-15T00:54:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I got the</p>\n<p>Mod Config is missing package.jason</p>\n<p>[Error] Invalid mod encountered</p>\n<p>your mod is the only mod i have and need, i had no issue with the previous version but when i updated it just now. that pop out</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 65211,
+   "parent_id": 5634,
+   "author": "Dragoncrusher",
+   "author_id": 12037,
+   "author_url": "https://forge.sp-tarkov.com/user/12037/dragoncrusher",
+   "created_at": "2022-05-15T00:56:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Nvm got it to work, thanks</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 6275,
+   "parent_id": null,
+   "author": "mutaco",
+   "author_id": 12460,
+   "author_url": "https://forge.sp-tarkov.com/user/12460/mutaco",
+   "created_at": "2022-07-02T11:43:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Qualquer chance de atualizar para 3.0</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 6542,
+   "parent_id": null,
+   "author": "ilorow",
+   "author_id": 13128,
+   "author_url": "https://forge.sp-tarkov.com/user/13128/ilorow",
+   "created_at": "2022-07-14T13:49:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Please update this mod.<br />\nThanks.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 8830,
+   "parent_id": null,
+   "author": "BlitzFromBehind",
+   "author_id": 12718,
+   "author_url": "https://forge.sp-tarkov.com/user/12718/blitzfrombehind",
+   "created_at": "2022-10-13T17:41:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Critical error on server start.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 69332,
+   "parent_id": 8830,
+   "author": "kikirio",
+   "author_id": 591,
+   "author_url": "https://forge.sp-tarkov.com/user/591/kikirio",
+   "created_at": "2022-10-13T17:55:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Oh no so there is. Hmm I don\u2019t know what happened there. Thanks for letting me know, I will push a fix asap.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 69333,
+   "parent_id": 8830,
+   "author": "kikirio",
+   "author_id": 591,
+   "author_url": "https://forge.sp-tarkov.com/user/591/kikirio",
+   "created_at": "2022-10-13T17:59:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I see the issue, somehow I pushed the old config. fix inbound.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 69334,
+   "parent_id": 8830,
+   "author": "kikirio",
+   "author_id": 591,
+   "author_url": "https://forge.sp-tarkov.com/user/591/kikirio",
+   "created_at": "2022-10-13T18:11:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>And done, cheers.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 69349,
+   "parent_id": 8830,
+   "author": "BlitzFromBehind",
+   "author_id": 12718,
+   "author_url": "https://forge.sp-tarkov.com/user/12718/blitzfrombehind",
+   "created_at": "2022-10-14T13:42:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for fixing it! Glad you got the issue sorted with the pure minimum info i provided.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 9195,
+   "parent_id": null,
+   "author": "nanana333wa",
+   "author_id": 23477,
+   "author_url": "https://forge.sp-tarkov.com/user/23477/nanana333wa",
+   "created_at": "2022-11-09T12:10:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I think <code>/raid/profile/save</code> or something like that would work better, since the second scav play doesn\u2019t increase health.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 9627,
+   "parent_id": null,
+   "author": "mad_mike333",
+   "author_id": 3111,
+   "author_url": "https://forge.sp-tarkov.com/user/3111/mad-mike333",
+   "created_at": "2022-12-07T14:53:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello, I\u2019m on AKI 3.2.5 &amp; using mod v2.2.3 &amp; it doesn\u2019t appear to be working.</p>\n<p>I\u2019m trying to adjust the health values via the bodyPartMode but I\u2019m not seeing those changes even after loading a new SPT profile.</p>\n<p>Here are the changes I\u2019ve made in the config.json file.</p>\n<p>\u201cAllEqualToPlayer\u201d: false, \u201cPlayer\u201d: { \u201cenabled\u201d: true, \u201cbodyPartMode\u201d: { \u201cenabled\u201d: true, \u201cHead\u201d: 50, \u201cChest\u201d: 100, \u201cStomach\u201d: 80, \u201cLeftArm\u201d: 70, \u201cRightArm\u201d: 70, \u201cLeftLeg\u201d: 70, \u201cRightLeg\u201d: 70 }, \u201cif bodyPartMode.enabled is false\u201d: \u201cthen\u201d, \u201chealthMultiplier\u201d: 1 },One thing I did notice is that I\u2019m using KMC Server Value Modifier, which also does have a section to do this (which I also tried but it also didnt work), which I thought could be conflicting with this mod. However I temporarily moved SVM out of my mods folder &amp; tried again by loading a new profile &amp; restarted a few times, but I\u2019m still stuck with the default health values. There aren\u2019t any server error messages &amp; it appears to load perfectly fine.</p>\n<p>Do my changes to config.json look ok for what I\u2019m trying to do? Or did I fudge something up?</p>\n<p>Any help is appriciated! Thanks!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 70537,
+   "parent_id": 9627,
+   "author": "kikirio",
+   "author_id": 591,
+   "author_url": "https://forge.sp-tarkov.com/user/591/kikirio",
+   "created_at": "2022-12-08T02:30:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>If I run those setting with the latest version of the mod and AKI 3.3.0 then everything works as expected. All I can suggest is that you update everything.<br />\nI have neither the means, or inclination to bug test old builds I am afraid.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 70548,
+   "parent_id": 9627,
+   "author": "mad_mike333",
+   "author_id": 3111,
+   "author_url": "https://forge.sp-tarkov.com/user/3111/mad-mike333",
+   "created_at": "2022-12-08T20:28:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>No worries, thanks for getting back to me anyways. Was just wanting to double check I didnt mess up to be honest. Thank you for your time and making some great mods for us to use anyway!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 70565,
+   "parent_id": 9627,
+   "author": "mad_mike333",
+   "author_id": 3111,
+   "author_url": "https://forge.sp-tarkov.com/user/3111/mad-mike333",
+   "created_at": "2022-12-09T18:35:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey just wanted to post an update as I managed to fix my issue!</p>\n<p>TL:DR - SPT-Realism was the reason the health was not changing &amp; the fix was as simple as making SPT-Realism be first in my load order so that KMC Server Value Modifier would overwrite whatever values SPT-Realism were changing to then allow me to set my custom health values.</p>\n<p>The fix:</p>\n<p>All I did was rename \u201cSPT-Realism\u201d to \u201c01 SPT-Realism\u201d &amp; \u201cServerValueModifier\u201d to \u201c02 ServerValueModifier\u201d (In the end im using another mod to achieve what this mod is doing but do the same thing with kiki\u2019s mod if you are using that &amp; have the same issue.)</p>\n<p>So now my user/mods folder looks like this:</p>\n<p>01 SPT Realism Mod 02 Server Value Modifier 03 Fershte\u2019s Balance Patch 11 Faupi-MunitionsExpert 1.6.6 11 KcY-SeeItemValue 1.4.8 11 Kiki-RemoveTediousQuestConditions 11 Kiki-ZaryaKiller 11 Lua-AutoProfileBackup 97 Lua-SpawnRework 99 zFin-AITweaks HideoutArchitect</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 10163,
+   "parent_id": null,
+   "author": "RogueTech67",
+   "author_id": 9742,
+   "author_url": "https://forge.sp-tarkov.com/user/9742/roguetech67",
+   "created_at": "2022-12-31T17:01:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Author has most of their mods updated to SPT-AKI 3.4.0. Hopefully this one will be done as well.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 71589,
+   "parent_id": 9195,
+   "author": "kikirio",
+   "author_id": 591,
+   "author_url": "https://forge.sp-tarkov.com/user/591/kikirio",
+   "created_at": "2023-01-06T17:24:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Finally sorted</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 10401,
+   "parent_id": null,
+   "author": "js2195",
+   "author_id": 2728,
+   "author_url": "https://forge.sp-tarkov.com/user/2728/js2195",
+   "created_at": "2023-01-06T20:25:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for the update! now to play head eyes only mode where everyone has a million health on every body part except the head.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 10986,
+   "parent_id": null,
+   "author": "Deliveryserivce",
+   "author_id": 26028,
+   "author_url": "https://forge.sp-tarkov.com/user/26028/deliveryserivce",
+   "created_at": "2023-01-26T12:06:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey, excellent mod. I\u2019ve had a lot of fun putting my health and the AI\u2019s health to 5000 and just blasting lmao.<br />\nHowever, when I put the health back down to default levels in the config the health of my PMC is the default amount but the max is still 5000. So it would be 39/5000. Which would be fine, but when you die you get auto-healed to 1500 which is annoying. So what am I doing wrong?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 72446,
+   "parent_id": 10986,
+   "author": "kikirio",
+   "author_id": 591,
+   "author_url": "https://forge.sp-tarkov.com/user/591/kikirio",
+   "created_at": "2023-01-26T14:55:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Nice one mate, turns out there was a bug, and the initial health values were not being restored as expected.<br />\nThis has now been fixed, and you should just need to logout of the game to have the original values applied.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 72485,
+   "parent_id": 10986,
+   "author": "Deliveryserivce",
+   "author_id": 26028,
+   "author_url": "https://forge.sp-tarkov.com/user/26028/deliveryserivce",
+   "created_at": "2023-01-27T08:12:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 11165,
+   "parent_id": null,
+   "author": "Abdul",
+   "author_id": 25937,
+   "author_url": "https://forge.sp-tarkov.com/user/25937/abdul",
+   "created_at": "2023-01-29T23:45:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I wonder I just set up everything and started my very first SPT run but my health is still the same as vanilla version despite increased health numbers.</p>\n<p>Is something wrong with this?<br />\n\u201c</p>\n<p>{</p>\n<p>\u201cAllEqualToPlayer\u201d: true,</p>\n<p>\u201cPlayer\u201d:</p>\n<p>{</p>\n<p>\u201cenabled\u201d: true,</p>\n<p>\u201cbodyPartMode\u201d:</p>\n<p>{</p>\n<p>\u201cenabled\u201d: true,</p>\n<p>\u201cHead\u201d: 40,</p>\n<p>\u201cChest\u201d: 140,</p>\n<p>\u201cStomach\u201d: 120,</p>\n<p>\u201cLeftArm\u201d: 100,</p>\n<p>\u201cRightArm\u201d: 100,</p>\n<p>\u201cLeftLeg\u201d: 100,</p>\n<p>\u201cRightLeg\u201d: 100</p>\n<p>},\u201c</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73394,
+   "parent_id": 11165,
+   "author": "fermetamoule",
+   "author_id": 999,
+   "author_url": "https://forge.sp-tarkov.com/user/999/fermetamoule",
+   "created_at": "2023-02-09T20:49:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I think you need a profil already created.<br />\nIf you put the mod and create a profil, it\u2019s not working.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73395,
+   "parent_id": 11165,
+   "author": "kikirio",
+   "author_id": 591,
+   "author_url": "https://forge.sp-tarkov.com/user/591/kikirio",
+   "created_at": "2023-02-09T21:12:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You just need to re-launch the game if that is the case. There is a message printed on the console to say so too. (and at the bottom of the readme)</p>\n<p>Does this not fix the problem?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 16413,
+   "parent_id": null,
+   "author": "SaltyFries",
+   "author_id": 25035,
+   "author_url": "https://forge.sp-tarkov.com/user/25035/saltyfries",
+   "created_at": "2023-06-04T20:57:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Dosent seem to work with 3.5.7</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 81186,
+   "parent_id": 16413,
+   "author": "kikirio",
+   "author_id": 591,
+   "author_url": "https://forge.sp-tarkov.com/user/591/kikirio",
+   "created_at": "2023-06-04T23:01:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>sadface. will try to remember to look into this tomorrow.<br />\nAny errors, logs etc?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 81190,
+   "parent_id": 16413,
+   "author": "SaltyFries",
+   "author_id": 25035,
+   "author_url": "https://forge.sp-tarkov.com/user/25035/saltyfries",
+   "created_at": "2023-06-04T23:40:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>yea says something like about bodypartmode i even tested it without anything else and a fresh install</p>\n<p>(btw i love ur mod)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 81191,
+   "parent_id": 16413,
+   "author": "SaltyFries",
+   "author_id": 25035,
+   "author_url": "https://forge.sp-tarkov.com/user/25035/saltyfries",
+   "created_at": "2023-06-05T00:02:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>TypeError: Cannot read properties of undefined (reading \u2018bodyPartMode\u2019)</p>\n<p>TypeError: Cannot read properties of undefined (reading \u2018bodyPartMode\u2019)</p>\n<p>at HealthMultiplier.setBotHealth (C:\\Users\\PMB2202008\\Music\\SP Tarkov\\3.5.7\\user\\mods\\Kiki-HealthMultiplier\\src\\HealthMultiplier.js:151:31)</p>\n<p>at HealthMultiplier.postDBLoad (C:\\Users\\PMB2202008\\Music\\SP Tarkov\\3.5.7\\user\\mods\\Kiki-HealthMultiplier\\src\\HealthMultiplier.js:40:26)</p>\n<p>at PostDBModLoader.executeMods (C:\\snapshot\\project\\obj\\loaders\\PostDBModLoader.js)</p>\n<p>at PostDBModLoader.onLoad (C:\\snapshot\\project\\obj\\loaders\\PostDBModLoader.js)</p>\n<p>at App.load (C:\\snapshot\\project\\obj\\utils\\App.js)</p>\n<p>TypeError: Cannot read properties of undefined (reading \u2018bodyPartMode\u2019)</p>\n<p>TypeError: Cannot read properties of undefined (reading \u2018bodyPartMode\u2019)</p>\n<p>at HealthMultiplier.setBotHealth (C:\\Users\\PMB2202008\\Music\\SP Tarkov\\3.5.7\\user\\mods\\Kiki-HealthMultiplier\\src\\HealthMultiplier.js:151:31)</p>\n<p>at HealthMultiplier.postDBLoad (C:\\Users\\PMB2202008\\Music\\SP Tarkov\\3.5.7\\user\\mods\\Kiki-HealthMultiplier\\src\\HealthMultiplier.js:40:26)</p>\n<p>at PostDBModLoader.executeMods (C:\\snapshot\\project\\obj\\loaders\\PostDBModLoader.js)</p>\n<p>at PostDBModLoader.onLoad (C:\\snapshot\\project\\obj\\loaders\\PostDBModLoader.js)</p>\n<p>happens without even editing config</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 16445,
+   "parent_id": null,
+   "author": "ZackZeed",
+   "author_id": 31939,
+   "author_url": "https://forge.sp-tarkov.com/user/31939/zackzeed",
+   "created_at": "2023-06-05T16:57:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Not sure why it isn\u2019t working for others but it is for me.<br />\nI\u2019m on version 3.5.7.<br />\nLittle side note, in the config, if \u201cAllEqualToPlayer\u201d is set to false, it gives me an error message.</p>\n<p>Edit: I\u2019m running several mods in a specific order so if more info is needed I can provide that.<br />\nI have SVM loaded before this mod and I have a different Hp amount but all the AI have the Hp amount I set in Healthmultiplier so it works exactly as I wanted it to =)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 81233,
+   "parent_id": 16413,
+   "author": "trex0113",
+   "author_id": 26806,
+   "author_url": "https://forge.sp-tarkov.com/user/26806/trex0113",
+   "created_at": "2023-06-05T21:03:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>don\u2019t work for me too on 3.5.7. I get the same Error Code</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 16610,
+   "parent_id": null,
+   "author": "trex0113",
+   "author_id": 26806,
+   "author_url": "https://forge.sp-tarkov.com/user/26806/trex0113",
+   "created_at": "2023-06-11T14:43:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>any news about a fix for 3.5.7?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 16872,
+   "parent_id": null,
+   "author": "xktrom",
+   "author_id": 22044,
+   "author_url": "https://forge.sp-tarkov.com/user/22044/xktrom",
+   "created_at": "2023-06-19T18:25:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for your work, it\u2019s the only mod that helps me to achieve immunity in the head area, there\u2019s a bandana mod but for some reason it doesn\u2019t quite work, I always get a headshot and instant death, with this one mod is just putting a ridiculous amount of life in the head and fixed the problem, I am looking forward to its update.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 17685,
+   "parent_id": null,
+   "author": "MoxoPixel",
+   "author_id": 29835,
+   "author_url": "https://forge.sp-tarkov.com/user/29835/moxopixel",
+   "created_at": "2023-07-12T22:01:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Please update for 3.5.8</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 19169,
+   "parent_id": null,
+   "author": "jackrippergame",
+   "author_id": 20957,
+   "author_url": "https://forge.sp-tarkov.com/user/20957/jackrippergame",
+   "created_at": "2023-08-14T00:39:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>excuse me, Is it possible to add a setting that increases HP by multiplying the level up?</p>\n<p>For example, if it is Lv20, add n*20 to HP, etc.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 19238,
+   "parent_id": null,
+   "author": "Cosm1c Gam3r",
+   "author_id": 23825,
+   "author_url": "https://forge.sp-tarkov.com/user/23825/cosm1c-gam3r",
+   "created_at": "2023-08-15T13:35:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I cannot download version 2.3.1 Link is dead.<br />\nBut I can download 2.3.0 but it is with this bug that was fixed in 2.3.1</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 20598,
+   "parent_id": null,
+   "author": "Agoelia",
+   "author_id": 7683,
+   "author_url": "https://forge.sp-tarkov.com/user/7683/agoelia",
+   "created_at": "2023-09-13T21:26:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Here is there an updated version of this mod somewhere?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 20602,
+   "parent_id": null,
+   "author": "\u041e\u0441\u0442\u0440\u043e\u0432\u0441\u044c\u043a\u0438\u0439",
+   "author_id": 32201,
+   "author_url": "https://forge.sp-tarkov.com/user/32201/ostrovskii",
+   "created_at": "2023-09-14T02:30:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Mod does not seem to work anymore, version 3.6.1<br />\nGet this error running the base config with edits only to player and bodypartmode set to true with edits to the values:</p>\n<p>[2023-09-14T02:22:05.023Z] error: TypeError: Cannot read properties of undefined (reading \u2018bodyPartMode\u2019) [2023-09-14T02:22:05.023Z] error: TypeError: Cannot read properties of undefined (reading \u2018bodyPartMode\u2019) at HealthMultiplier.setBotHealth (C:\\Users\\REDACTED\\Desktop\\SPT 3.6.1\\user\\mods\\Kiki-HealthMultiplier\\src\\HealthMultiplier.js:151:31) at HealthMultiplier.postDBLoad (C:\\Users\\REDACTED\\Desktop\\SPT 3.6.1\\user\\mods\\Kiki-HealthMultiplier\\src\\HealthMultiplier.js:40:26) at PostDBModLoader.executeMods (C:\\snapshot\\project\\obj\\loaders\\PostDBModLoader.js) at PostDBModLoader.onLoad (C:\\snapshot\\project\\obj\\loaders\\PostDBModLoader.js) at App.load (C:\\snapshot\\project\\obj\\utils\\App.js) [2023-09-14T02:22:05.023Z] error: TypeError: Cannot read properties of undefined (reading \u2018bodyPartMode\u2019) at HealthMultiplier.setBotHealth (C:\\Users\\REDACTED\\Desktop\\SPT 3.6.1\\user\\mods\\Kiki-HealthMultiplier\\src\\HealthMultiplier.js:151:31) at HealthMultiplier.postDBLoad (C:\\Users\\REDACTED\\Desktop\\SPT 3.6.1\\user\\mods\\Kiki-HealthMultiplier\\src\\HealthMultiplier.js:40:26) at PostDBModLoader.executeMods (C:\\snapshot\\project\\obj\\loaders\\PostDBModLoader.js) at PostDBModLoader.onLoad (C:\\snapshot\\project\\obj\\loaders\\PostDBModLoader.js) at App.load (C:\\snapshot\\project\\obj\\utils\\App.js)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 21749,
+   "parent_id": null,
+   "author": "nameless\u2665",
+   "author_id": 37025,
+   "author_url": "https://forge.sp-tarkov.com/user/37025/nameless",
+   "created_at": "2023-10-11T20:41:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you for the update!!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 29851,
+   "parent_id": null,
+   "author": "iszlev",
+   "author_id": 36939,
+   "author_url": "https://forge.sp-tarkov.com/user/36939/iszlev",
+   "created_at": "2024-04-16T20:12:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>possibility for an update for 3.8?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 30894,
+   "parent_id": null,
+   "author": "Alexander_9876",
+   "author_id": 27480,
+   "author_url": "https://forge.sp-tarkov.com/user/27480/alexander-9876",
+   "created_at": "2024-04-30T07:33:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>One of nust have mod for me, Is there any plans to update to 3.8.0?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 31578,
+   "parent_id": null,
+   "author": "NnWinter",
+   "author_id": 51279,
+   "author_url": "https://forge.sp-tarkov.com/user/51279/nnwinter",
+   "created_at": "2024-05-09T00:14:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>One of nust have mod for me, Is there any plans to update to 3.8.0?</p>\n<p>same.<br />\nstucked in 3.7.3 and enduring the low fps</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 103131,
+   "parent_id": 30894,
+   "author": "NnWinter",
+   "author_id": 51279,
+   "author_url": "https://forge.sp-tarkov.com/user/51279/nnwinter",
+   "created_at": "2024-05-09T00:40:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p><strong>good news bad news</strong>:</p>\n<p>I just found out you can change player health but not the bots with a simple modification</p>\n<p>to do so:<br />\n1. open <em>Kiki-HealthMultiplier/src/healthMultiplier.ts</em> with a text edito (Notepad for me)</p>\n<p>2. find function <em>public postDBLoad(container: DependencyContainer):void</em></p>\n<p>3. you will see something like <em>for (let eachBot in botTypes){ \u2026\u2026 }</em></p>\n<p>4. delete these lines of code (this will allow this work in 3.8.0 and 3.8.1)</p>\n<p>to be specific, the text to be deleted is :</p>\n<p>for (let eachBot in botTypes){</p>\n<p>let type = this.findBotType(eachBot, botTypes)</p>\n<p>if(type !== \u201cIgnore\u201d){</p>\n<p>for (let eachHPSet in botTypes[eachBot].health.BodyParts){</p>\n<p>let thisBot = botTypes[eachBot].health.BodyParts[eachHPSet]</p>\n<p>if (this.config.AllEqualToPlayer == true){</p>\n<p>this.setBotHealthToPlayers(thisBot, playerHealth)</p>\n<p>}</p>\n<p>else{</p>\n<p>let configOption = type === \u201cBoss\u201d ? this.config.Boss[this.bossDictionary[eachBot]] : this.config[type]</p>\n<p>this.setBotHealth(thisBot, configOption)</p>\n<p>}</p>\n<p>}</p>\n<p>}</p>\n<p>}</p>\n<p>or line 44 to line 65 in windows notepad.</p>\n<p>the result should look like:</p>\n<p>public postDBLoad(container: DependencyContainer):void</p>\n<p>{</p>\n<p>this.container = container</p>\n<p>this.logger = this.container.resolve&lt;ILogger&gt;(\u201cWinstonLogger\u201d)</p>\n<p>const botTypes = this.container.resolve&lt;DatabaseServer&gt;(\u201cDatabaseServer\u201d).getTables().bots.types</p>\n<p>const globals = this.container.resolve&lt;DatabaseServer&gt;(\u201cDatabaseServer\u201d).getTables().globals</p>\n<p>const playerHealth = globals.config.Health.ProfileHealthSettings.BodyPartsSettings</p>\n<p>this.GPlayerHealth = playerHealth</p>\n<p>}</p>\n<p>---------------------------------</p>\n<p>I was reading the error log and found it only reported errors when reading bot health but not the player part (lines were executed)</p>\n<p>This will bypass the bot health modification and make the game playable</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 48045,
+   "parent_id": null,
+   "author": "aPizzaChegou",
+   "author_id": 7977,
+   "author_url": "https://forge.sp-tarkov.com/user/7977/apizzachegou",
+   "created_at": "2025-02-06T23:13:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i can\u2019t live without this mod\u2026.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  }
+ ]
+}

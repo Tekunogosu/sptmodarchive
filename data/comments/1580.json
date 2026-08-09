@@ -1,0 +1,760 @@
+{
+ "mod_id": 1580,
+ "slug": "yet-another-keep-your-equipment-mod",
+ "fetched_at": "2026-08-09T07:02:17Z",
+ "reported_total": 36,
+ "pages": 4,
+ "count": 75,
+ "comments": [
+  {
+   "id": 37097,
+   "parent_id": null,
+   "author": "RogueTech67",
+   "author_id": 9742,
+   "author_url": "https://forge.sp-tarkov.com/user/9742/roguetech67",
+   "created_at": "2024-07-22T16:14:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Likly. First off, of the half a dozen mods currently attempting this, you seemed to have nailed it. Tested with SPT 3.9.3 and no other mods. This mod successfully allowed upon death to either 1) restore condition as if the raid never happened, or 2) keep condition as if you \u201cSURVIVED\u201d. The FIR status option worked along with the vitality option. I did not test the useSacredAmulet. Thank you so much for getting one of theses mods working under 3.9x.</p>\n<p>TEST RESULTS:</p>\n<p>- keepItemsFoundInRaid false Should items found in raid be saved, you will be set back to the equipment you had before the raid if this is disabled.</p>\n<p>- retainFoundInRaidStatus true Should items found in raid, retain that status on death.</p>\n<p>- useSacredAmulet true Should the Sacred Amulet be used on death.</p>\n<p>- saveVitality false Should health, status effects, energy, hydration, etc be saved. You will be set back to normal health upon death if disabled</p>\n<p>***************************************************************************</p>\n<p>{</p>\n<p>\u201cactive\u201d: true,</p>\n<p>\u201ckeepItemsFoundInRaid\u201d: false,</p>\n<p>\u201cretainFoundInRaidStatus\u201d: true,</p>\n<p>\u201cuseSacredAmulet\u201d: true,</p>\n<p>\u201csaveVitality\u201d: false</p>\n<p>}</p>\n<p>KILLED:</p>\n<p>- All gear amount/condition restored to before the raid</p>\n<p>- FIR Status Kept: N/A</p>\n<p>- Health and metabolism fully restored: Yes</p>\n<p>- EXP, Skills, and Stats: All kept</p>\n<p>- Summary: Like pressing (Alt-[F4]) but with EXP, Skills, and Stats all kept</p>\n<p>***************************************************************************</p>\n<p>{</p>\n<p>\u201cactive\u201d: true,</p>\n<p>\u201ckeepItemsFoundInRaid\u201d: true,</p>\n<p>\u201cretainFoundInRaidStatus\u201d: true,</p>\n<p>\u201cuseSacredAmulet\u201d: true,</p>\n<p>\u201csaveVitality\u201d: false</p>\n<p>}</p>\n<p>KILLED:</p>\n<p>- All gear amount/condition remains as if \u201cSURVIVED\u201d</p>\n<p>- FIR Status Kept: Yes</p>\n<p>- Health and metabolism fully restored: Yes</p>\n<p>- EXP, Skills, and Stats: All kept</p>\n<p>- Summary: Like \u201cSURVIVED\u201d</p>\n<p>***************************************************************************</p>\n<p>{</p>\n<p>\u201cactive\u201d: true,</p>\n<p>\u201ckeepItemsFoundInRaid\u201d: true,</p>\n<p>\u201cretainFoundInRaidStatus\u201d: false,</p>\n<p>\u201cuseSacredAmulet\u201d: true,</p>\n<p>\u201csaveVitality\u201d: true</p>\n<p>}</p>\n<p>KILLED:</p>\n<p>- All gear amount/condition remains as if \u201cSURVIVED\u201d</p>\n<p>- FIR Status Kept: No</p>\n<p>- Health and metabolism fully restored: No</p>\n<p>- EXP, Skills, and Stats: All kept</p>\n<p>- Summary: Like \u201cSURVIVED\u201d</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 37100,
+   "parent_id": null,
+   "author": "Nomand",
+   "author_id": 40795,
+   "author_url": "https://forge.sp-tarkov.com/user/40795/nomand",
+   "created_at": "2024-07-22T16:35:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I just want to keep the bullet I had when I started raid</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 111013,
+   "parent_id": 37100,
+   "author": "RogueTech67",
+   "author_id": 9742,
+   "author_url": "https://forge.sp-tarkov.com/user/9742/roguetech67",
+   "created_at": "2024-07-22T18:45:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Then just don\u2019t shoot.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 37112,
+   "parent_id": null,
+   "author": "xm855n",
+   "author_id": 44112,
+   "author_url": "https://forge.sp-tarkov.com/user/44112/xm855n",
+   "created_at": "2024-07-22T19:07:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>thank you Likly!</p>\n<p>does the \u201ckeepitemsfoundinraid\u201d affect the secure container? if i have this to false do the items in the secure container stay?</p>\n<p>if it doesnt is this something that can be added? cuz if initial kit can be set back to as if raid never happened, secure container items would be saved, but not items in picked up in raid and put into the inventory, to me, that is the perfect \u201ckeep items\u201d mod</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 111018,
+   "parent_id": 37112,
+   "author": "RogueTech67",
+   "author_id": 9742,
+   "author_url": "https://forge.sp-tarkov.com/user/9742/roguetech67",
+   "created_at": "2024-07-22T19:23:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You can look at the test results I posted earlier</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 111020,
+   "parent_id": 37112,
+   "author": "xm855n",
+   "author_id": 44112,
+   "author_url": "https://forge.sp-tarkov.com/user/44112/xm855n",
+   "created_at": "2024-07-22T19:32:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>yes i did, but nothing with the mod description, or your test results you shared, mentions the secure container. i was wondering does having \u201ckeepitemsfoundinraid\u201d affect whats put into the secure container?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 37117,
+   "parent_id": null,
+   "author": "Mace",
+   "author_id": 35029,
+   "author_url": "https://forge.sp-tarkov.com/user/35029/mace",
+   "created_at": "2024-07-22T20:17:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you for this one!!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 111048,
+   "parent_id": 37112,
+   "author": "RogueTech67",
+   "author_id": 9742,
+   "author_url": "https://forge.sp-tarkov.com/user/9742/roguetech67",
+   "created_at": "2024-07-22T22:01:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>UPON DEATH</p>\n<p>\u201ckeepItemsFoundInRaid\u201d: false, puts your all the gear back EXACTLY the way it was before the raid started. If you had things in the secure container, they will be there after death. It does NOT retain any items you put in there while in raid. It only differs from pressing (Alt-[F4]) after death in that you do get/keep EXP, Skills, and Stats.</p>\n<p>\u201ckeepItemsFoundInRaid\u201d: true, leaves you with all the gear as if you survived/extracted. Then the \u201cretainFoundInRaidStatus\u201d: true/false, determines the FIR status of the items (including what is in the secure case).</p>\n<p>Try the settings, I did.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 111049,
+   "parent_id": 37097,
+   "author": "Likly",
+   "author_id": 59109,
+   "author_url": "https://forge.sp-tarkov.com/user/59109/likly",
+   "created_at": "2024-07-22T22:07:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you for the kind words and the testing, they are both much appreciated.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 111050,
+   "parent_id": 37112,
+   "author": "Likly",
+   "author_id": 59109,
+   "author_url": "https://forge.sp-tarkov.com/user/59109/likly",
+   "created_at": "2024-07-22T22:09:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Now that you mention it, I definitely forgot about the secure container, I\u2019ll look into that now.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 111055,
+   "parent_id": 37112,
+   "author": "xm855n",
+   "author_id": 44112,
+   "author_url": "https://forge.sp-tarkov.com/user/44112/xm855n",
+   "created_at": "2024-07-22T23:12:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>@Likly thank you!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 111057,
+   "parent_id": 37112,
+   "author": "Likly",
+   "author_id": 59109,
+   "author_url": "https://forge.sp-tarkov.com/user/59109/likly",
+   "created_at": "2024-07-22T23:39:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>That took a little longer than anticipated, but I uploaded a new version. Let me know if it doesn\u2019t work or if there are any other issues.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 111071,
+   "parent_id": 37112,
+   "author": "RogueTech67",
+   "author_id": 9742,
+   "author_url": "https://forge.sp-tarkov.com/user/9742/roguetech67",
+   "created_at": "2024-07-23T01:15:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Likly, the addition of \u201ckeepItemsInSecureContainer\u201d is working perfectly with \u201ckeepItemsFoundInRaid\u201d: false. Now upon death, your character and gear is restored to \u201cbefore raid\u201d status, and you can keep in addition any items added to the secure container. The \u201cretainFoundInRaidStatus\u201d for the items put in it is also working. There is nothing \u201cnot working\u201d with this mod, and of the 6 attempts to this point to implement these features, you my friend have succeeded. Great job.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 111072,
+   "parent_id": 37097,
+   "author": "RogueTech67",
+   "author_id": 9742,
+   "author_url": "https://forge.sp-tarkov.com/user/9742/roguetech67",
+   "created_at": "2024-07-23T01:33:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>No, thank you</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 37139,
+   "parent_id": null,
+   "author": "ligma929130",
+   "author_id": 24239,
+   "author_url": "https://forge.sp-tarkov.com/user/24239/ligma929130",
+   "created_at": "2024-07-23T02:36:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019ve been looking for an update of \u201cno save on death\u201d mod where the game simply just forgets about the raid where you die. Items and quest progress aside, the game won\u2019t record stats for KIA or MIA. Could you please add that feature?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 111090,
+   "parent_id": 37139,
+   "author": "Likly",
+   "author_id": 59109,
+   "author_url": "https://forge.sp-tarkov.com/user/59109/likly",
+   "created_at": "2024-07-23T04:13:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I was actually looking into this earlier, it doesn\u2019t seem like it would be too difficult to do and I most likely will add it, but it probably won\u2019t be until tomorrow.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 111122,
+   "parent_id": 37139,
+   "author": "schiz",
+   "author_id": 7177,
+   "author_url": "https://forge.sp-tarkov.com/user/7177/schiz",
+   "created_at": "2024-07-23T09:16:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>yes please, grounghog day untill raid survival, Ihope you can do it.</p>\n<p>Glory to the modders</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 37188,
+   "parent_id": null,
+   "author": "blacksurgeon",
+   "author_id": 21815,
+   "author_url": "https://forge.sp-tarkov.com/user/21815/blacksurgeon",
+   "created_at": "2024-07-23T14:55:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>A mate of mine had an issue with the keytool and the Mod <a href=\"https://hub.sp-tarkov.com/files/file/1166-gilded-key-storage/\" target=\"_blank\" rel=\"noreferrer noopener\">Gilded Key Storage</a>.</p>\n<p>Both Items were in the secure container but after death the keys inside were lost.</p>\n<p>Following config was active with the latest version (1.0.1)</p>\n<p>we play on spt 3.9.3 with fika-server 2.2.3 / fika-mod 0.9.8964.35784</p>\n<p>Thank you for the mod!</p>\n<p>{ \u201cactive\u201d: true, \u201ckeepItemsFoundInRaid\u201d: true, \u201ckeepItemsInSecureContainer\u201d: true, \u201cretainFoundInRaidStatus\u201d: true, \u201cuseSacredAmulet\u201d: false, \u201csaveVitality\u201d: true }</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 111182,
+   "parent_id": 37188,
+   "author": "DavidBaz",
+   "author_id": 45866,
+   "author_url": "https://forge.sp-tarkov.com/user/45866/davidbaz",
+   "created_at": "2024-07-23T17:50:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Same issue here. Lost all the items in my SICC case and my Injectors case. It seems to only affect cases inside the secure container. The rest of my stuff was ok.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 111222,
+   "parent_id": 37188,
+   "author": "Likly",
+   "author_id": 59109,
+   "author_url": "https://forge.sp-tarkov.com/user/59109/likly",
+   "created_at": "2024-07-24T00:22:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I think I know the issue, it should be fixed in next update.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 111241,
+   "parent_id": 37188,
+   "author": "Likly",
+   "author_id": 59109,
+   "author_url": "https://forge.sp-tarkov.com/user/59109/likly",
+   "created_at": "2024-07-24T06:27:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Sorry for the long delay, should hopefully be fixed now.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 111242,
+   "parent_id": 37139,
+   "author": "Likly",
+   "author_id": 59109,
+   "author_url": "https://forge.sp-tarkov.com/user/59109/likly",
+   "created_at": "2024-07-24T06:29:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Implementation of this has been started, there are now some options in the config relating to stats, however, I would recommend to leave them untouched for now as little to no testing has been done yet.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 37238,
+   "parent_id": null,
+   "author": "Hazeorkirill",
+   "author_id": 59326,
+   "author_url": "https://forge.sp-tarkov.com/user/59326/hazeorkirill",
+   "created_at": "2024-07-24T07:32:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Can you add an option that resets your account to exact state it was before the raid after you die in raid?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 37273,
+   "parent_id": null,
+   "author": "mnwa",
+   "author_id": 59081,
+   "author_url": "https://forge.sp-tarkov.com/user/59081/mnwa",
+   "created_at": "2024-07-24T15:36:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>conflicts with realism im pretty sure, i get errors in the server console related to being unable to read body parts or some such and infinite loading screens if im using both mods.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 111401,
+   "parent_id": 37188,
+   "author": "blacksurgeon",
+   "author_id": 21815,
+   "author_url": "https://forge.sp-tarkov.com/user/21815/blacksurgeon",
+   "created_at": "2024-07-25T10:59:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>No worries!</p>\n<p>It works now.</p>\n<p>Thank you!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 112385,
+   "parent_id": 37139,
+   "author": "ligma929130",
+   "author_id": 24239,
+   "author_url": "https://forge.sp-tarkov.com/user/24239/ligma929130",
+   "created_at": "2024-08-01T11:21:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>{ \u201cactive\u201d: true, \u201ckeepItemsFoundInRaid\u201d: false, \u201ckeepItemsInSecureContainer\u201d: true, \u201cretainFoundInRaidStatus\u201d: true, \u201cuseSacredAmulet\u201d: true, \u201csaveVitality\u201d: false, \u201cprofileSaving\u201d: { \u201clevel\u201d: false, \u201cexperience\u201d: false, \u201cskills\u201d: false, \u201cencyclopedia\u201d: false, \u201cquestProgress\u201d: false, \u201csurvivorClass\u201d: false } }</p>\n<p>tried the newest mod with that config,</p>\n<p>when I died the game still recorded my KIA count</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 112405,
+   "parent_id": 37139,
+   "author": "Likly",
+   "author_id": 59109,
+   "author_url": "https://forge.sp-tarkov.com/user/59109/likly",
+   "created_at": "2024-08-01T16:00:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I just added a \u201cstats\u201d option, if you disable it, your kia/mia/awol counters shouldn\u2019t be saved.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 112406,
+   "parent_id": 37238,
+   "author": "Likly",
+   "author_id": 59109,
+   "author_url": "https://forge.sp-tarkov.com/user/59109/likly",
+   "created_at": "2024-08-01T16:05:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Sorry for the very late reply, I just updated the mod, if you use this config, it\u2019ll hopefully be what your looking for.</p>\n<p>{ \u201cactive\u201d: true, \u201ckeepItemsFoundInRaid\u201d: false, \u201ckeepItemsInSecureContainer\u201d: false, \u201cretainFoundInRaidStatus\u201d: true, \u201cuseSacredAmulet\u201d: false, \u201csaveVitality\u201d: false, \u201cprofileSaving\u201d: { \u201clevel\u201d: false, \u201cexperience\u201d: false, \u201cskills\u201d: false, \u201cencyclopedia\u201d: false, \u201cquestProgress\u201d: false, \u201csurvivorClass\u201d: false, \u201cstats\u201d: false } }</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 38070,
+   "parent_id": null,
+   "author": "RogueTech67",
+   "author_id": 9742,
+   "author_url": "https://forge.sp-tarkov.com/user/9742/roguetech67",
+   "created_at": "2024-08-01T20:22:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>With the release of v1.0.3, we now have a \u201ctrue\u201d alternative to using [Alt][F4] As if the raid never happened. Bonus, you can choose to also keep your secure container items and the FIR status to boot! A true replacement for [Never Lose Equipments] that is currently only for SPT 3.8.x.</p>\n<p>EDIT:</p>\n<p>Likly, Any chance of possibly adding another feature? [Lua\u2019s Magic Save] and [Lua\u2019s MagicSave patched for 3.5] used an item (i.e. an arm band) to determine what type of scenario you want. For example wearing a red armband would make it <strong>\u201cDo Not Save\u201d and a green armband would make it an \u201cAlways Survived\u201d. This allowed you to not have to restart the server to change/pick the selected configuration you wanted to run the raid with. Would be nice to have the config.json to have options for if you take a particular item into raid, that would determine the different set of config options to use upon death. Thanks for the consideration.</strong></p>\n<p><strong>Example: [Lua\u2019s MagicSave patched for 3.5] CONFIG.JSON</strong></p>\n<p>{</p>\n<p>\u201cEnabled\u201d: true,</p>\n<p>\u201cUseExtraSpecialSlot\u201d: false,</p>\n<p>\u201cUseInventorySlots\u201d: true,</p>\n<p>\u201cRemoveNoSaveItemAfterUse\u201d: false,</p>\n<p>\u201cRemoveAlwaysSurvivedItemAfterUse\u201d: true,</p>\n<p>\u201cMagicItemsId\u201d:</p>\n<p>{</p>\n<p>\u201cNoSave\u201d: \u201c5b3f3ade86f7746b6b790d8e\u201d,</p>\n<p>\u201cAlwaysSurvived\u201d: \u201c5b3f3b0186f774021a2afef7\u201d</p>\n<p>}</p>\n<p>}</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 112442,
+   "parent_id": 37238,
+   "author": "RogueTech67",
+   "author_id": 9742,
+   "author_url": "https://forge.sp-tarkov.com/user/9742/roguetech67",
+   "created_at": "2024-08-01T20:22:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It is. works perfectly. Thanks Likly</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 112443,
+   "parent_id": 37139,
+   "author": "RogueTech67",
+   "author_id": 9742,
+   "author_url": "https://forge.sp-tarkov.com/user/9742/roguetech67",
+   "created_at": "2024-08-01T20:24:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>They are not, and it works perfectly as an alternative to having to [Alt][F4]. Thanks</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 112482,
+   "parent_id": 37139,
+   "author": "ligma929130",
+   "author_id": 24239,
+   "author_url": "https://forge.sp-tarkov.com/user/24239/ligma929130",
+   "created_at": "2024-08-02T05:59:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>disabled everything except</p>\n<p>\u201cactive\u201d: true,</p>\n<p>works as i intended, thanks</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 38154,
+   "parent_id": null,
+   "author": "dement",
+   "author_id": 60310,
+   "author_url": "https://forge.sp-tarkov.com/user/60310/dement",
+   "created_at": "2024-08-02T22:19:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>New to SPT, is there any future for this mod to be integrated into the ingame F12 mod menu so I can emulate the offline practice runs of live EFT but decide which raids I want to be like so on the go? Alternatively, do I need to quit and restart the game each time I edit the .json for it to apply?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 112677,
+   "parent_id": 38154,
+   "author": "RogueTech67",
+   "author_id": 9742,
+   "author_url": "https://forge.sp-tarkov.com/user/9742/roguetech67",
+   "created_at": "2024-08-03T21:34:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I asked the author the same question for an added feature. Currently it is a server mod, so yes you need \u201cto quit and restart the game each time I edit the .json for it to apply\u201d.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 112717,
+   "parent_id": 38154,
+   "author": "dement",
+   "author_id": 60310,
+   "author_url": "https://forge.sp-tarkov.com/user/60310/dement",
+   "created_at": "2024-08-04T10:42:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Oh, thank you\u2026 yea i noticed the hard way that it is in fact, a server mod after not restarting the server after making a change\u2026 good thing I didn\u2019t lose anything though I only didn\u2019t get to clear my inventory as I wanted</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 38465,
+   "parent_id": null,
+   "author": "TangoMike13",
+   "author_id": 41641,
+   "author_url": "https://forge.sp-tarkov.com/user/41641/tangomike13",
+   "created_at": "2024-08-06T16:01:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi, Likly! Thank you for the mod. Just wondering, whether the setting \u201cprofieSaving\u201d is identical to that of Revingly\u2019s \u201cbackupProfileBeforeSave\u201d.</p>\n<p>The issue is that that setting of Revingly is useful when the game crashes for some reason during the raid and it makes sure that everything made just before entering the raid is saved (changes to items in stash, tasks, hideout, etc.).</p>\n<p>Thank you in advance!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 113288,
+   "parent_id": 37139,
+   "author": "ligma929130",
+   "author_id": 24239,
+   "author_url": "https://forge.sp-tarkov.com/user/24239/ligma929130",
+   "created_at": "2024-08-08T16:31:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>just FYI, dying in a Scav raid still leaves +1 to KIA stat</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 39548,
+   "parent_id": null,
+   "author": "Ave_Lunam",
+   "author_id": 62105,
+   "author_url": "https://forge.sp-tarkov.com/user/62105/ave-lunam",
+   "created_at": "2024-08-23T18:50:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is \u201ckeep items found in raid\u201d being disabled supposed to reset you to what you had before the raid even on successful extract? If it is supposed to work like that could we get an option to only reset your gear if you die instead of extracting? basically I was expecting it to work like \u201crestore initial kit\u201d from NLE and am a bit confused.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 39974,
+   "parent_id": null,
+   "author": "Yogro",
+   "author_id": 62660,
+   "author_url": "https://forge.sp-tarkov.com/user/62660/yogro",
+   "created_at": "2024-08-29T13:16:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>So\u2026 this doesn\u2019t work as I expected. \u201cKeep items found in raid\u201d being disables removes the items in your inventory if you extract succesfully, and enabling it means you\u2019ll keep all the items even if you die. I\u2019m not sure if it\u2019s possible to ONLY keep the items we started the raid with in case we die but also be able to loot and extract normally, but that\u2019s the functionality I\u2019m looking for in a mod like this.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 40024,
+   "parent_id": null,
+   "author": "meppycola",
+   "author_id": 5465,
+   "author_url": "https://forge.sp-tarkov.com/user/5465/meppycola",
+   "created_at": "2024-08-30T04:51:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>run throughs still count as deaths, is there any way to change that?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 40152,
+   "parent_id": null,
+   "author": "Ritsuka125",
+   "author_id": 60512,
+   "author_url": "https://forge.sp-tarkov.com/user/60512/ritsuka125",
+   "created_at": "2024-08-31T15:20:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>compatible with FIKA?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 40241,
+   "parent_id": null,
+   "author": "ergo33protocol",
+   "author_id": 62204,
+   "author_url": "https://forge.sp-tarkov.com/user/62204/ergo33protocol",
+   "created_at": "2024-09-01T18:36:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>do you know how i can make it so that i lose everything i found in the raid (i know this is a feature) + some equipment while keeping others? more specificailly was wondering if you can use lostondeath.json from the base game with this mod somehow</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 40698,
+   "parent_id": null,
+   "author": "Hunter358",
+   "author_id": 17216,
+   "author_url": "https://forge.sp-tarkov.com/user/17216/hunter358",
+   "created_at": "2024-09-09T01:06:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey, not sure if I\u2019m blind or stupid, but does this have a feature like NLE by Revingly where if you die, you start with the kit you took into the raid?</p>\n<p>Sorry if this a stupid question, but I would just like to know.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 40945,
+   "parent_id": null,
+   "author": "Acoustic",
+   "author_id": 63754,
+   "author_url": "https://forge.sp-tarkov.com/user/63754/acoustic",
+   "created_at": "2024-09-13T16:44:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Doesn\u2019t work sadly. All equipped items lost when dying in raid.</p>\n<p>You just have to reboot the server, my bad..</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 41580,
+   "parent_id": null,
+   "author": "w4rlock",
+   "author_id": 64387,
+   "author_url": "https://forge.sp-tarkov.com/user/64387/w4rlock",
+   "created_at": "2024-09-28T09:33:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>hello Likly. having a small trouble</p>\n<p>what should i do? can you help me please?</p>\n<p>Error: Cannot find module \u2018C:/snapshot/project/obj/services/TraderServicesService\u2019 Require stack: - E:\\Games\\Escape From Tarkov\\user\\mods\\likly-yetanotherkeepequipmentmod\\src\\keep.js - E:\\Games\\Escape From Tarkov\\user\\mods\\likly-yetanotherkeepequipmentmod\\src\\mod.js - C:\\snapshot\\project\\obj\\loaders\\PreSptModLoader.js - C:\\snapshot\\project\\obj\\controllers\\GameController.js - C:\\snapshot\\project\\obj\\callbacks\\GameCallbacks.js - C:\\snapshot\\project\\obj\\di\\Container.js - C:\\snapshot\\project\\obj\\Program.js - C:\\snapshot\\project\\obj\\ide\\ReleaseEntry.js 1) If you want to compile the package/file into executable, please pay attention to compilation warnings and specify a literal in \u2018require\u2019 call. 2) If you don\u2019t want to compile the package/file into executable and want to \u2018require\u2019 it from filesystem (likely plugin), specify an absolute path in \u2018require\u2019 call using process.cwd() or process.execPath. at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1144:15) at Function._resolveFilename (pkg/prelude/bootstrap.js:1955:46) at Function.Module._load (node:internal/modules/cjs/loader:985:27) at Module.require (node:internal/modules/cjs/loader:1235:19) at Module.require (pkg/prelude/bootstrap.js:1851:31) at require (node:internal/modules/helpers:176:18) at Object.&lt;anonymous&gt; (E:\\Games\\Escape From Tarkov\\user\\mods\\likly-yetanotherkeepequipmentmod\\src\\keep.ts:20:1) at Module._compile (node:internal/modules/cjs/loader:1376:14) at Module._compile (pkg/prelude/bootstrap.js:1894:32) at Object.Module._extensions..js (node:internal/modules/cjs/loader:1435:10)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 43521,
+   "parent_id": null,
+   "author": "schiz",
+   "author_id": 7177,
+   "author_url": "https://forge.sp-tarkov.com/user/7177/schiz",
+   "created_at": "2024-11-16T03:29:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>why hadn\u2019t I found this earlier?</p>\n<p>I been reloading profile backups on death everytime.</p>\n<p>Seems like if you set config properly this works just like \u201cNo Save On Death\u201d I compared screenshot of \u201cOverall\u201d tab and seems to work how I want it to.</p>\n<p>Thanks for share.</p>\n<p>Glory to the Modders</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 43956,
+   "parent_id": null,
+   "author": "Lorebot",
+   "author_id": 66290,
+   "author_url": "https://forge.sp-tarkov.com/user/66290/lorebot",
+   "created_at": "2024-11-28T04:40:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I hope this gets updated soon cause SPT 3.10 won\u2019t even try to load outdated mods and it\u2019s just painful to play without this.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 4
+  },
+  {
+   "id": 44417,
+   "parent_id": null,
+   "author": "Lorebot",
+   "author_id": 66290,
+   "author_url": "https://forge.sp-tarkov.com/user/66290/lorebot",
+   "created_at": "2024-12-05T13:18:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you so much for the update to 3.10!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 44703,
+   "parent_id": null,
+   "author": "Haltzman",
+   "author_id": 42278,
+   "author_url": "https://forge.sp-tarkov.com/user/42278/haltzman",
+   "created_at": "2024-12-10T05:18:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you for update it to 3.10!</p>\n<p>However, it seems that this mod will stop mission item from spawning again after a raid when you obtained it and died, i don\u2019t know if this is the issues or other, i found it during the bronze watch quest.</p>\n<p>Thanks again!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 44718,
+   "parent_id": null,
+   "author": "Shodan",
+   "author_id": 53776,
+   "author_url": "https://forge.sp-tarkov.com/user/53776/shodan",
+   "created_at": "2024-12-10T09:40:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Mod is not working for me.</p>\n<p>clean 3.10.2 install and only mod installled, all mod settings on default.</p>\n<p>When killed in raid everything except armband and melee is lost.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 121717,
+   "parent_id": 44703,
+   "author": "Likly",
+   "author_id": 59109,
+   "author_url": "https://forge.sp-tarkov.com/user/59109/likly",
+   "created_at": "2024-12-10T13:00:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for letting me know, I\u2019ll look into it. When you get a chance can you send the config you used?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 121718,
+   "parent_id": 44718,
+   "author": "Likly",
+   "author_id": 59109,
+   "author_url": "https://forge.sp-tarkov.com/user/59109/likly",
+   "created_at": "2024-12-10T13:01:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for letting me know, I\u2019ll look into it.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 121720,
+   "parent_id": 44703,
+   "author": "Likly",
+   "author_id": 59109,
+   "author_url": "https://forge.sp-tarkov.com/user/59109/likly",
+   "created_at": "2024-12-10T13:20:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Okay, this was an oversight on my part, I can confirm this is an issue with default settings, I\u2019m going to start working on a fix.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 121722,
+   "parent_id": 44703,
+   "author": "Haltzman",
+   "author_id": 42278,
+   "author_url": "https://forge.sp-tarkov.com/user/42278/haltzman",
+   "created_at": "2024-12-10T13:27:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you for replying this fast !</p>\n<p>And thank you so much for updating the mod.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 121744,
+   "parent_id": 44703,
+   "author": "Haltzman",
+   "author_id": 42278,
+   "author_url": "https://forge.sp-tarkov.com/user/42278/haltzman",
+   "created_at": "2024-12-10T16:13:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you for the update!</p>\n<p>Does that mean I will be able to restore the quest item after death?(without enable keep quest item)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 121745,
+   "parent_id": 44703,
+   "author": "Likly",
+   "author_id": 59109,
+   "author_url": "https://forge.sp-tarkov.com/user/59109/likly",
+   "created_at": "2024-12-10T16:21:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I <em>think</em> you should be able to go into a raid with nothing, die, and that should fix the quest conditions as long as you have the \u201ckeepQuestItems\u201d set to false, but admittedly I didn\u2019t test how to fix already broken quest conditions, so I\u2019m curious to know if that works.</p>\n<p>I\u2019ll probably test it myself in a few minutes.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 44843,
+   "parent_id": null,
+   "author": "KS_RUnner",
+   "author_id": 15733,
+   "author_url": "https://forge.sp-tarkov.com/user/15733/ks-runner",
+   "created_at": "2024-12-12T14:24:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The injection case disappears with its contents after death. The rest is saved.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 44849,
+   "parent_id": null,
+   "author": "murdershyguu",
+   "author_id": 50258,
+   "author_url": "https://forge.sp-tarkov.com/user/50258/murdershyguu",
+   "created_at": "2024-12-12T17:01:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>unfortunately I\u2019m losing everything if I die. I\u2019m fairly certain it\u2019s in the right place</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 122164,
+   "parent_id": 44718,
+   "author": "RogueTech67",
+   "author_id": 9742,
+   "author_url": "https://forge.sp-tarkov.com/user/9742/roguetech67",
+   "created_at": "2024-12-15T17:40:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This is just not true for me. Clean SPT 33420, clean SPT 3.10.2, and ONLY default mod [Yet Another\u2026.] config.json options. Upon death, all starting gear restored to original condition, lost Secure Case items (and FIR), gained EXP, statistics, and skills. Have not yet tested all the config options, but I will be doing so\u2026..</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 122165,
+   "parent_id": 44849,
+   "author": "RogueTech67",
+   "author_id": 9742,
+   "author_url": "https://forge.sp-tarkov.com/user/9742/roguetech67",
+   "created_at": "2024-12-15T17:40:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This is just not true for me. Clean SPT 33420, clean SPT 3.10.2, and ONLY default mod [Yet Another\u2026.] config.json options. Upon death, all starting gear restored to original condition, lost Secure Case items (and FIR), gained EXP, statistics, and skills. Have not yet tested all the config options, but I will be doing so\u2026..</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 122401,
+   "parent_id": 44703,
+   "author": "FlamerOfGod",
+   "author_id": 50578,
+   "author_url": "https://forge.sp-tarkov.com/user/50578/flamerofgod",
+   "created_at": "2024-12-18T18:59:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I have the same problem, but with the protected case 0031, on the instructions of the ensign, I died and the item is not in the quest inventory and it does not appear again, sorry for my English,I tried following your advice and nothing changed.\u201ckeepQuestItems\u201d <strong>installed false</strong></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 45717,
+   "parent_id": null,
+   "author": "Sarge",
+   "author_id": 49868,
+   "author_url": "https://forge.sp-tarkov.com/user/49868/sarge",
+   "created_at": "2024-12-27T02:23:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Figured I\u2019d mention it, I noticed the mod doesn\u2019t work with Fika, I have to exact copies of servers, one with Fika. Works great with my SPT server w/o Fika, but for some reason with Fika it doesn\u2019t work. Even with the mods installed on the client system. As my Fika server is on another PC.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 48618,
+   "parent_id": null,
+   "author": "myraowo",
+   "author_id": 73587,
+   "author_url": "https://forge.sp-tarkov.com/user/73587/myraowo",
+   "created_at": "2025-02-17T15:49:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>any way to make it so i can keep the items found in raid on my secure container but not inventory? \u201ckeepItemsFoundInRaid\u201d is false and so is \u201ckeepItemsInSecureContainer\u201d, but my secure container still reverts back to how it was before the raid started</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 48709,
+   "parent_id": null,
+   "author": "Skytte",
+   "author_id": 35143,
+   "author_url": "https://forge.sp-tarkov.com/user/35143/skytte",
+   "created_at": "2025-02-19T16:45:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I was having trouble getting quest progress to not save. For anyone else that is having this issue, I believe I was able to fix it with very minor edits to keep.ts and keep.js (I assume both are used but there is a lot of shared logic between these two files so idk if the edit might only be required on one of these files but I haven\u2019t broken anything that I\u2019m aware of).</p>\n<p>Anyway, there is a line in both files near the bottom (line 192 in the js file, line 188 in the ts file) that needs to be changed from</p>\n<p>if(this.config.profileSaving.questProgress || !this.config.keepQuestItems) {</p>\n<p>to</p>\n<p>if(this.config.profileSaving.questProgress) {</p>\n<p>I\u2019m not sure why these are both being checked in the same line when all other things are considered separately, and I have yet to test what happens to quest items when you die with them, but will update my findings.</p>\n<p>Edit: Quest items are being retained on survival and not on death with these changes and the following config:</p>\n<p>{ \u201cactive\u201d: true, \u201ckeepItemsFoundInRaid\u201d: false, \u201ckeepItemsInSecureContainer\u201d: false, \u201cretainFoundInRaidStatus\u201d: true, \u201csaveVitality\u201d: false, \u201ckeepQuestItems\u201d: false, \u201ckillerMessages\u201d: false, \u201cvictimMessages\u201d: false, \u201cprofileSaving\u201d: { \u201clevel\u201d: false, \u201cexperience\u201d: false, \u201cskills\u201d: false, \u201cencyclopedia\u201d: false, \u201cquestProgress\u201d: false, \u201csurvivorClass\u201d: false, \u201cstats\u201d: true } }</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 127169,
+   "parent_id": 48618,
+   "author": "Skytte",
+   "author_id": 35143,
+   "author_url": "https://forge.sp-tarkov.com/user/35143/skytte",
+   "created_at": "2025-02-19T16:49:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>keepItemsInSecureContainer should be true for this, I believe</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 48997,
+   "parent_id": null,
+   "author": "meppycola",
+   "author_id": 5465,
+   "author_url": "https://forge.sp-tarkov.com/user/5465/meppycola",
+   "created_at": "2025-02-27T03:52:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>does anyone else know if this does or doesn\u2019t work with fika?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 127792,
+   "parent_id": 48997,
+   "author": "20fpsguy",
+   "author_id": 43600,
+   "author_url": "https://forge.sp-tarkov.com/user/43600/20fpsguy",
+   "created_at": "2025-03-05T20:12:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>with the latest version no its a bit broken u still lose your stuff</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 49450,
+   "parent_id": null,
+   "author": "shocked",
+   "author_id": 53370,
+   "author_url": "https://forge.sp-tarkov.com/user/53370/shocked",
+   "created_at": "2025-03-15T20:18:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>if someone either updates this or another mod similar to this is made let me know</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 51215,
+   "parent_id": null,
+   "author": "Bayraktar",
+   "author_id": 31659,
+   "author_url": "https://forge.sp-tarkov.com/user/31659/bayraktar",
+   "created_at": "2025-04-27T12:37:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m tired of doing the same loadout again after I died, has anyone done the same thing</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 52402,
+   "parent_id": null,
+   "author": "callmechanka",
+   "author_id": 42001,
+   "author_url": "https://forge.sp-tarkov.com/user/42001/callmechanka",
+   "created_at": "2025-06-04T13:35:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i hope it will get updated to 3.11</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 53904,
+   "parent_id": null,
+   "author": "goflockyourself",
+   "author_id": 60764,
+   "author_url": "https://forge.sp-tarkov.com/user/60764/goflockyourself",
+   "created_at": "2025-07-16T16:02:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>dont beg for updates, heres two alternatives:</p>\n<p><a href=\"https://hub.sp-tarkov.com/files/file/2850-no-save-on-death-respawned\" target=\"_blank\" rel=\"noreferrer noopener\">No Save On Death - Respawned</a><br />\n<a href=\"https://hub.sp-tarkov.com/files/file/2657-configurable-end-raid-status/\" target=\"_blank\" rel=\"noreferrer noopener\">Configurable End Raid Status</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 134454,
+   "parent_id": 53904,
+   "author": "Bighunkypotato",
+   "author_id": 47695,
+   "author_url": "https://forge.sp-tarkov.com/user/47695/bighunkypotato",
+   "created_at": "2025-08-04T05:05:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>These alternatives are not valid replacements.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 134467,
+   "parent_id": 53904,
+   "author": "goflockyourself",
+   "author_id": 60764,
+   "author_url": "https://forge.sp-tarkov.com/user/60764/goflockyourself",
+   "created_at": "2025-08-04T14:53:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>both of them work fine, dont know what youre on about<br />\none of them is literally recommended as an alternative by McDewgle himself (a helper in the SPT discord server that is just known for knowing his shit)</p>\n<p>if youre on the \u201cBUT ITS NOT THE EXACT 100% SAME WAHHHH\u201d side of things, ya, thats just how it is. this is the closest youll get before someone else ports it</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 54694,
+   "parent_id": null,
+   "author": "Taumaturgo",
+   "author_id": 82682,
+   "author_url": "https://forge.sp-tarkov.com/user/82682/taumaturgo",
+   "created_at": "2025-08-07T21:59:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I love that mod</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 164759,
+   "parent_id": null,
+   "author": "crhistian gunsmith",
+   "author_id": 59456,
+   "author_url": "https://forge.sp-tarkov.com/user/59456/crhistian-gunsmith",
+   "created_at": "2026-06-30T19:45:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>no work more in spt updates? :,(</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

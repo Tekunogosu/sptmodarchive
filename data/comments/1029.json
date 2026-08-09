@@ -1,0 +1,2350 @@
+{
+ "mod_id": 1029,
+ "slug": "techhappys-web-minimap",
+ "fetched_at": "2026-08-09T06:40:58Z",
+ "reported_total": 116,
+ "pages": 12,
+ "count": 234,
+ "comments": [
+  {
+   "id": 19814,
+   "parent_id": null,
+   "author": "Rageinthemist",
+   "author_id": 35874,
+   "author_url": "https://forge.sp-tarkov.com/user/35874/rageinthemist",
+   "created_at": "2023-08-25T18:00:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You\u2019re a god damn hero. I\u2019ve been looking for a map mod like this, thank you so much.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 86275,
+   "parent_id": 19814,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2023-08-25T18:04:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Wow, thanks for your kind words! This was my first public project and I am glad it\u2019s useful.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 19816,
+   "parent_id": null,
+   "author": "flacopol",
+   "author_id": 31867,
+   "author_url": "https://forge.sp-tarkov.com/user/31867/flacopol",
+   "created_at": "2023-08-25T18:11:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>thanks mate brilliant implementation and upgrade from cactus , both heroes to me =) , always afraid of loose cactus on each stp-aki release</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 19820,
+   "parent_id": null,
+   "author": "StarVox",
+   "author_id": 34299,
+   "author_url": "https://forge.sp-tarkov.com/user/34299/starvox",
+   "created_at": "2023-08-25T20:51:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Works perfectly for me so far. Super useful, many thanks!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 19822,
+   "parent_id": null,
+   "author": "Cleetus McYeetus",
+   "author_id": 35825,
+   "author_url": "https://forge.sp-tarkov.com/user/35825/cleetus-mcyeetus",
+   "created_at": "2023-08-25T21:00:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Oh hell yeah this is some good stuff. No more getting lost because my brain is smoother than glass.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 19823,
+   "parent_id": null,
+   "author": "RivviN",
+   "author_id": 20210,
+   "author_url": "https://forge.sp-tarkov.com/user/20210/rivvin",
+   "created_at": "2023-08-25T21:23:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Please, keep this mod updated and don\u2019t just disappear after a month, this is amazing, thank you for your commitment.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 19827,
+   "parent_id": null,
+   "author": "lElwoodBluesl",
+   "author_id": 35192,
+   "author_url": "https://forge.sp-tarkov.com/user/35192/lelwoodbluesl",
+   "created_at": "2023-08-25T21:40:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks a lot for the mod. One question I already had back with CactusPies\u2019 mod, but never asked.</p>\n<p>I assume the mod uses the player positions\u2019 x,y coordinates retrieved from the game to place/planar project the marker on the map.</p>\n<p>Isn\u2019t it possible to also retrieve the z (height) coordinate and simply transform that to different mini map coordinates, i.e. if you have a z value of 0, place the marker as it\u2019s done now, if you have a z value of e.g. &gt;10, that means e.g. next height level, instead of drawing the marker at the same position as with z=0, transform it to the part of the map which shows that location.</p>\n<p>E.g. for Interchange it could look like this (assuming height values in meters):</p>\n<p>z=0 -&gt; normal marker position, ground level, i.e. parking garage</p>\n<p>z&gt;=10 -&gt; 1st level</p>\n<p>z&gt;=20 -&gt; 2nd level</p>\n<p>I know Interchange is an easy example, compared to Reserve. But couldn\u2019t it be at least an option to toggle for specific maps?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 19828,
+   "parent_id": null,
+   "author": "HeavyComponent",
+   "author_id": 35937,
+   "author_url": "https://forge.sp-tarkov.com/user/35937/heavycomponent",
+   "created_at": "2023-08-25T21:52:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Exactly what I was looking for. Even though it\u2019s not your EXACT location but def. good enough.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 86285,
+   "parent_id": 19827,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2023-08-25T21:52:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I have Interchange and Labs already moving the player marker to the relevant floor on the map based on the elevation. I don\u2019t have Reserve done yet but it is planned. A toggle sounds like a good idea for that feature in case someone doesn\u2019t like it moving around. Oh, I don\u2019t have the parking garage mapped to a dedicated section but that is an easy fix. I thought it would be better without one so that you can easily see which part of the store you will climb into but it might be better to see the garage layout.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 86286,
+   "parent_id": 19828,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2023-08-25T21:53:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I am currently fixing some calibration issues noticed by a tester. Turns out that in my development I completely messed up Customs and I am working on the fix.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 19829,
+   "parent_id": null,
+   "author": "SgToubib",
+   "author_id": 32663,
+   "author_url": "https://forge.sp-tarkov.com/user/32663/sgtoubib",
+   "created_at": "2023-08-25T22:15:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you !</p>\n<p>Enough of Mapgenie, Glory to Minimap 2.0 !</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 19831,
+   "parent_id": null,
+   "author": "BlackDragon",
+   "author_id": 35687,
+   "author_url": "https://forge.sp-tarkov.com/user/35687/blackdragon",
+   "created_at": "2023-08-25T23:18:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Great mod man, been enjoying it a lot. Not sure what the problem is thought but I am unable to use it on my phone? only can use it on my pc\u2019s browser as of now. I think I was doing it right when I was tryin it on my phone but im not sure. I would type in the link and instead of localhost I used my pc\u2019s IPv4. Didn\u2019t end up working sadly. If I did something wrong please let me know, I would love to get it working on my phone as well so I dont have to keep tabbing out.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 19832,
+   "parent_id": null,
+   "author": "Remi",
+   "author_id": 34581,
+   "author_url": "https://forge.sp-tarkov.com/user/34581/remi",
+   "created_at": "2023-08-25T23:40:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>When I click on the link, it says page not found.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 86290,
+   "parent_id": 19832,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2023-08-25T23:43:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The localhost link? The game must be running with the mod installed for it to connect.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 86291,
+   "parent_id": 19831,
+   "author": "0sleepNick",
+   "author_id": 27021,
+   "author_url": "https://forge.sp-tarkov.com/user/27021/0sleepnick",
+   "created_at": "2023-08-26T00:03:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I also used my IPv4 with the port of what the mod gave out (8080), and it worked out fine for mobile. If you\u2019re not connected to the same network as the PC with your mobile phone, you won\u2019t connect.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 86292,
+   "parent_id": 19831,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2023-08-26T00:05:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hmm, well it could be a few things causing the connection issue. Is your phone on the same wifi and not just cellular? You can also try temporarily disabling the PC\u2019s firewall and if that works, manually allow the port (default of 8080) through the firewall along with the application if needed. Off the top of my head, it could also be a phone network security issue. If I remember correctly, my iPhone has security settings for accessing the local network.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 19833,
+   "parent_id": null,
+   "author": "BelgianWaffle",
+   "author_id": 24096,
+   "author_url": "https://forge.sp-tarkov.com/user/24096/belgianwaffle",
+   "created_at": "2023-08-26T00:27:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Amazing mod, thanks for your job.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 19843,
+   "parent_id": null,
+   "author": "Heliax",
+   "author_id": 26060,
+   "author_url": "https://forge.sp-tarkov.com/user/26060/heliax",
+   "created_at": "2023-08-26T06:36:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>you\u2019re the goat man</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 86302,
+   "parent_id": 19828,
+   "author": "Slipperkov",
+   "author_id": 33956,
+   "author_url": "https://forge.sp-tarkov.com/user/33956/slipperkov",
+   "created_at": "2023-08-26T10:57:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>As it\u2019s the first version there\u2019s going to be a few small things that need fixes.</p>\n<p>Tech his working hard on it and has some people to try out maps etc.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 86305,
+   "parent_id": 19828,
+   "author": "HeavyComponent",
+   "author_id": 35937,
+   "author_url": "https://forge.sp-tarkov.com/user/35937/heavycomponent",
+   "created_at": "2023-08-26T13:05:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>TechHappy thank you for the reply about the status.</p>\n<p>Slipperkov Yes, thank you for the obvious. I\u2019m sure he\u2019s working hard on it. It was just some feedback.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 86307,
+   "parent_id": 19832,
+   "author": "rocky",
+   "author_id": 33087,
+   "author_url": "https://forge.sp-tarkov.com/user/33087/rocky",
+   "created_at": "2023-08-26T13:28:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>still wont connect</p>\n<p>even with game running</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 86308,
+   "parent_id": 19832,
+   "author": "Remi",
+   "author_id": 34581,
+   "author_url": "https://forge.sp-tarkov.com/user/34581/remi",
+   "created_at": "2023-08-26T13:30:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I was able to connect, but I can\u2019t log in from my mobile device</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 19860,
+   "parent_id": null,
+   "author": "deveagle",
+   "author_id": 24038,
+   "author_url": "https://forge.sp-tarkov.com/user/24038/deveagle",
+   "created_at": "2023-08-26T15:41:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Why not put the pictures? Oh, and thanks this mod, try it.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 19881,
+   "parent_id": null,
+   "author": "Brin",
+   "author_id": 4701,
+   "author_url": "https://forge.sp-tarkov.com/user/4701/brin",
+   "created_at": "2023-08-26T23:09:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Just an FYI: The woods map your mod uses is missing at least one cache.</p>\n<p>There are two barrel caches in the rock formation southeast from USEC camp (across the road &amp; power lines), and the map your mod uses is missing the northern one.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 86356,
+   "parent_id": 19881,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2023-08-27T01:13:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you for the heads up. I have it fixed for the next version.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 19894,
+   "parent_id": null,
+   "author": "KaikouOAO",
+   "author_id": 1364,
+   "author_url": "https://forge.sp-tarkov.com/user/1364/kaikouoao",
+   "created_at": "2023-08-27T06:49:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>THANKSSSSSSSSSSS!!!!!!!!!!!!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 19895,
+   "parent_id": null,
+   "author": "0sleepNick",
+   "author_id": 27021,
+   "author_url": "https://forge.sp-tarkov.com/user/27021/0sleepnick",
+   "created_at": "2023-08-27T06:59:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Could you increase the delay limit in the next update? I\u2019d love to have the experience that data flow is slow, as a way to have an extra challenge.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 86366,
+   "parent_id": 19895,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2023-08-27T08:21:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I just released an update and increased the max interval to 30 seconds among other things. Let me know if that is still too short.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 19898,
+   "parent_id": null,
+   "author": "Remi",
+   "author_id": 34581,
+   "author_url": "https://forge.sp-tarkov.com/user/34581/remi",
+   "created_at": "2023-08-27T09:09:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>has anyone managed to open it on the phone?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 19899,
+   "parent_id": null,
+   "author": "whiterobber",
+   "author_id": 36222,
+   "author_url": "https://forge.sp-tarkov.com/user/36222/whiterobber",
+   "created_at": "2023-08-27T09:20:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello</p>\n<p>There are some problems with the mod</p>\n<p>I copied the BepInEx folder to the root of the game<br />\nThe mod on F12 is detected but when I go to the link <a href=\"http://localhost:8080/index.html\" target=\"_blank\" rel=\"noreferrer noopener\">http://localhost:8080/index.html</a> nothing is loaded I tried to change the port to another one, but it also does not work</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 86369,
+   "parent_id": 19899,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2023-08-27T09:46:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I just re-installed it and it is working on my end. If you check the BepInEx/LogOutput.log, does it show any errors?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 86370,
+   "parent_id": 19898,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2023-08-27T09:48:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>We sorted it out over Discord. Turns out they were putting in their public IP address instead of the PC\u2019s local network address.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 86371,
+   "parent_id": 19899,
+   "author": "whiterobber",
+   "author_id": 36222,
+   "author_url": "https://forge.sp-tarkov.com/user/36222/whiterobber",
+   "created_at": "2023-08-27T10:06:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>These are the errors I found in the file:<br />\n[Error :TechHappy.MinimapSender] Exception System.NullReferenceException occured. Message: . StackTrace: at (wrapper managed-to-native) UnityEngine.Transform.get_position_Injected(UnityEngine.Transform,UnityEngine.Vector3&amp;)</p>\n<p>at UnityEngine.Transform.get_position () [0x00000] in &lt;85d1d3e7744a4a47b5f51883bf40bba2&gt;:0</p>\n<p>at EFT.BifacialTransform.get_position () [0x00023] in &lt;8a5b326544954fa79c970c303424f3af&gt;:0</p>\n<p>at EFT.Player.get_Position () [0x00006] in &lt;8a5b326544954fa79c970c303424f3af&gt;:0</p>\n<p>at TechHappy.MinimapSender.MinimapSenderBroadcastService.SendData () [0x0001d] in &lt;55edfa3a5981429bbcc0425585841a75&gt;:0</p>\n<p>at TechHappy.MinimapSender.MinimapSenderBroadcastService.&lt;.ctor&gt;b__2_0 (System.Object sender, System.Timers.ElapsedEventArgs args) [0x00002] in &lt;55edfa3a5981429bbcc0425585841a75&gt;:0</p>\n<p>[Error :TechHappy.MinimapSender] Exception System.NullReferenceException occured. Message: . StackTrace: at (wrapper managed-to-native) UnityEngine.Transform.get_position_Injected(UnityEngine.Transform,UnityEngine.Vector3&amp;)</p>\n<p>at UnityEngine.Transform.get_position () [0x00000] in &lt;85d1d3e7744a4a47b5f51883bf40bba2&gt;:0</p>\n<p>at EFT.BifacialTransform.get_position () [0x00023] in &lt;8a5b326544954fa79c970c303424f3af&gt;:0</p>\n<p>at EFT.Player.get_Position () [0x00006] in &lt;8a5b326544954fa79c970c303424f3af&gt;:0</p>\n<p>at TechHappy.MinimapSender.MinimapSenderBroadcastService.SendData () [0x0001d] in &lt;55edfa3a5981429bbcc0425585841a75&gt;:0</p>\n<p>at TechHappy.MinimapSender.MinimapSenderBroadcastService.&lt;.ctor&gt;b__2_0 (System.Object sender, System.Timers.ElapsedEventArgs args) [0x00002] in &lt;55edfa3a5981429bbcc0425585841a75&gt;:0</p>\n<p>[Error :TechHappy.MinimapSender] Exception System.NullReferenceException occured. Message: . StackTrace: at (wrapper managed-to-native) UnityEngine.Transform.get_position_Injected(UnityEngine.Transform,UnityEngine.Vector3&amp;)</p>\n<p>at UnityEngine.Transform.get_position () [0x00000] in &lt;85d1d3e7744a4a47b5f51883bf40bba2&gt;:0</p>\n<p>at EFT.BifacialTransform.get_position () [0x00023] in &lt;8a5b326544954fa79c970c303424f3af&gt;:0</p>\n<p>at EFT.Player.get_Position () [0x00006] in &lt;8a5b326544954fa79c970c303424f3af&gt;:0</p>\n<p>at TechHappy.MinimapSender.MinimapSenderBroadcastService.SendData () [0x0001d] in &lt;55edfa3a5981429bbcc0425585841a75&gt;:0</p>\n<p>at TechHappy.MinimapSender.MinimapSenderBroadcastService.&lt;.ctor&gt;b__2_0 (System.Object sender, System.Timers.ElapsedEventArgs args) [0x00002] in &lt;55edfa3a5981429bbcc0425585841a75&gt;:0</p>\n<p>[Error :TechHappy.MinimapSender] Exception System.NullReferenceException occured. Message: . StackTrace: at (wrapper managed-to-native) UnityEngine.Transform.get_position_Injected(UnityEngine.Transform,UnityEngine.Vector3&amp;)</p>\n<p>at UnityEngine.Transform.get_position () [0x00000] in &lt;85d1d3e7744a4a47b5f51883bf40bba2&gt;:0</p>\n<p>at EFT.BifacialTransform.get_position () [0x00023] in &lt;8a5b326544954fa79c970c303424f3af&gt;:0</p>\n<p>at EFT.Player.get_Position () [0x00006] in &lt;8a5b326544954fa79c970c303424f3af&gt;:0</p>\n<p>at TechHappy.MinimapSender.MinimapSenderBroadcastService.SendData () [0x0001d] in &lt;55edfa3a5981429bbcc0425585841a75&gt;:0</p>\n<p>at TechHappy.MinimapSender.MinimapSenderBroadcastService.&lt;.ctor&gt;b__2_0 (System.Object sender, System.Timers.ElapsedEventArgs args) [0x00002] in &lt;55edfa3a5981429bbcc0425585841a75&gt;:0</p>\n<p>[Error :TechHappy.MinimapSender] Exception System.NullReferenceException occured. Message: . StackTrace: at (wrapper managed-to-native) UnityEngine.Transform.get_position_Injected(UnityEngine.Transform,UnityEngine.Vector3&amp;)</p>\n<p>at UnityEngine.Transform.get_position () [0x00000] in &lt;85d1d3e7744a4a47b5f51883bf40bba2&gt;:0</p>\n<p>at EFT.BifacialTransform.get_position () [0x00023] in &lt;8a5b326544954fa79c970c303424f3af&gt;:0</p>\n<p>at EFT.Player.get_Position () [0x00006] in &lt;8a5b326544954fa79c970c303424f3af&gt;:0</p>\n<p>at TechHappy.MinimapSender.MinimapSenderBroadcastService.SendData () [0x0001d] in &lt;55edfa3a5981429bbcc0425585841a75&gt;:0</p>\n<p>at TechHappy.MinimapSender.MinimapSenderBroadcastService.&lt;.ctor&gt;b__2_0 (System.Object sender, System.Timers.ElapsedEventArgs args) [0x00002] in &lt;55edfa3a5981429bbcc0425585841a75&gt;:0</p>\n<p>[Error :TechHappy.MinimapSender] Exception System.NullReferenceException occured. Message: . StackTrace: at (wrapper managed-to-native) UnityEngine.Transform.get_position_Injected(UnityEngine.Transform,UnityEngine.Vector3&amp;)</p>\n<p>at UnityEngine.Transform.get_position () [0x00000] in &lt;85d1d3e7744a4a47b5f51883bf40bba2&gt;:0</p>\n<p>at EFT.BifacialTransform.get_position () [0x00023] in &lt;8a5b326544954fa79c970c303424f3af&gt;:0</p>\n<p>at EFT.Player.get_Position () [0x00006] in &lt;8a5b326544954fa79c970c303424f3af&gt;:0</p>\n<p>at TechHappy.MinimapSender.MinimapSenderBroadcastService.SendData () [0x0001d] in &lt;55edfa3a5981429bbcc0425585841a75&gt;:0</p>\n<p>at TechHappy.MinimapSender.MinimapSenderBroadcastService.&lt;.ctor&gt;b__2_0 (System.Object sender, System.Timers.ElapsedEventArgs args) [0x00002] in &lt;55edfa3a5981429bbcc0425585841a75&gt;:0</p>\n<p>[Error :TechHappy.MinimapSender] Exception System.NullReferenceException occured. Message: . StackTrace: at (wrapper managed-to-native) UnityEngine.Transform.get_position_Injected(UnityEngine.Transform,UnityEngine.Vector3&amp;)</p>\n<p>at UnityEngine.Transform.get_position () [0x00000] in &lt;85d1d3e7744a4a47b5f51883bf40bba2&gt;:0</p>\n<p>at EFT.BifacialTransform.get_position () [0x00023] in &lt;8a5b326544954fa79c970c303424f3af&gt;:0</p>\n<p>at EFT.Player.get_Position () [0x00006] in &lt;8a5b326544954fa79c970c303424f3af&gt;:0</p>\n<p>at TechHappy.MinimapSender.MinimapSenderBroadcastService.SendData () [0x0001d] in &lt;55edfa3a5981429bbcc0425585841a75&gt;:0</p>\n<p>at TechHappy.MinimapSender.MinimapSenderBroadcastService.&lt;.ctor&gt;b__2_0 (System.Object sender, System.Timers.ElapsedEventArgs args) [0x00002] in &lt;55edfa3a5981429bbcc0425585841a75&gt;:0</p>\n<p>[Error :TechHappy.MinimapSender] Exception System.NullReferenceException occured. Message: . StackTrace: at (wrapper managed-to-native) UnityEngine.Transform.get_position_Injected(UnityEngine.Transform,UnityEngine.Vector3&amp;)</p>\n<p>at UnityEngine.Transform.get_position () [0x00000] in &lt;85d1d3e7744a4a47b5f51883bf40bba2&gt;:0</p>\n<p>at EFT.BifacialTransform.get_position () [0x00023] in &lt;8a5b326544954fa79c970c303424f3af&gt;:0</p>\n<p>at EFT.Player.get_Position () [0x00006] in &lt;8a5b326544954fa79c970c303424f3af&gt;:0</p>\n<p>at TechHappy.MinimapSender.MinimapSenderBroadcastService.SendData () [0x0001d] in &lt;55edfa3a5981429bbcc0425585841a75&gt;:0</p>\n<p>at TechHappy.MinimapSender.MinimapSenderBroadcastService.&lt;.ctor&gt;b__2_0 (System.Object sender, System.Timers.ElapsedEventArgs args) [0x00002] in &lt;55edfa3a5981429bbcc0425585841a75&gt;:0</p>\n<p>[Error :TechHappy.MinimapSender] Exception System.NullReferenceException occured. Message: . StackTrace: at (wrapper managed-to-native) UnityEngine.Transform.get_position_Injected(UnityEngine.Transform,UnityEngine.Vector3&amp;)</p>\n<p>at UnityEngine.Transform.get_position () [0x00000] in &lt;85d1d3e7744a4a47b5f51883bf40bba2&gt;:0</p>\n<p>at EFT.BifacialTransform.get_position () [0x00023] in &lt;8a5b326544954fa79c970c303424f3af&gt;:0</p>\n<p>at EFT.Player.get_Position () [0x00006] in &lt;8a5b326544954fa79c970c303424f3af&gt;:0</p>\n<p>at TechHappy.MinimapSender.MinimapSenderBroadcastService.SendData () [0x0001d] in &lt;55edfa3a5981429bbcc0425585841a75&gt;:0</p>\n<p>at TechHappy.MinimapSender.MinimapSenderBroadcastService.&lt;.ctor&gt;b__2_0 (System.Object sender, System.Timers.ElapsedEventArgs args) [0x00002] in &lt;55edfa3a5981429bbcc0425585841a75&gt;:0</p>\n<p>[Error :TechHappy.MinimapSender] Exception System.NullReferenceException occured. Message: . StackTrace: at (wrapper managed-to-native) UnityEngine.Transform.get_position_Injected(UnityEngine.Transform,UnityEngine.Vector3&amp;)</p>\n<p>at UnityEngine.Transform.get_position () [0x00000] in &lt;85d1d3e7744a4a47b5f51883bf40bba2&gt;:0</p>\n<p>at EFT.BifacialTransform.get_position () [0x00023] in &lt;8a5b326544954fa79c970c303424f3af&gt;:0</p>\n<p>at EFT.Player.get_Position () [0x00006] in &lt;8a5b326544954fa79c970c303424f3af&gt;:0</p>\n<p>at TechHappy.MinimapSender.MinimapSenderBroadcastService.SendData () [0x0001d] in &lt;55edfa3a5981429bbcc0425585841a75&gt;:0</p>\n<p>at TechHappy.MinimapSender.MinimapSenderBroadcastService.&lt;.ctor&gt;b__2_0 (System.Object sender, System.Timers.ElapsedEventArgs args) [0x00002] in &lt;55edfa3a5981429bbcc0425585841a75&gt;:0</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 86372,
+   "parent_id": 19899,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2023-08-27T10:11:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>That error looks familiar to one I encountered in my development. Are you using version 1.0.1 of my mod? If so, can you try 1.0.0 and see if it works? I changed something in this last version that might cause that.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 86373,
+   "parent_id": 19899,
+   "author": "whiterobber",
+   "author_id": 36222,
+   "author_url": "https://forge.sp-tarkov.com/user/36222/whiterobber",
+   "created_at": "2023-08-27T10:16:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Downloaded 1.0.1, I\u2019ll try 1.0.0</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 86374,
+   "parent_id": 19899,
+   "author": "whiterobber",
+   "author_id": 36222,
+   "author_url": "https://forge.sp-tarkov.com/user/36222/whiterobber",
+   "created_at": "2023-08-27T10:24:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>1.0.0 version works great<br />\nThanks a lot!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 86375,
+   "parent_id": 19899,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2023-08-27T10:27:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I am glad 1.0.0 is working for you! I will have to test 1.0.1 some more on a different machine to see what\u2019s up.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 19906,
+   "parent_id": null,
+   "author": "KangarooCabs",
+   "author_id": 36231,
+   "author_url": "https://forge.sp-tarkov.com/user/36231/kangaroocabs",
+   "created_at": "2023-08-27T12:51:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I seem to be running into issues with the mod. It does boot up properly in logs and is visible in f12 without problems, and the webpage updates to the \u2018Enter a raid\u2019 Photo when the game boots, but when entering any raid, it doesn\u2019t do anything at all, just sits at the same photo to start a raid. I\u2019ve tried rebooting the site during a raid and notice logs showing it disconnects then reconnects, but nothing changes on the webpage.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 86379,
+   "parent_id": 19906,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2023-08-27T12:58:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Can you check the browser\u2019s developer console with F12 and look at the Console section? Are there any errors or messages in there?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 86381,
+   "parent_id": 19906,
+   "author": "KangarooCabs",
+   "author_id": 36231,
+   "author_url": "https://forge.sp-tarkov.com/user/36231/kangaroocabs",
+   "created_at": "2023-08-27T13:19:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>seems to be spitting out 3, all pretty much the same thing as this one:</p>\n<p>DevTools failed to load source map: Could not load content for chrome-extension://bmnlcjabgnpnenekpadlanbbkooimhnj/browser-polyfill.js.map: System error: net::ERR_BLOCKED_BY_CLIENT</p>\n<p>Guess it doesn\u2019t like the Opera browser or some setting that is blocking it.<br />\n(EDIT: tested on other browsers, no error pop ups, but still nothing. Got Deprecated Feature Used on each one though)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 86382,
+   "parent_id": 19906,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2023-08-27T13:27:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Someone else had the same issue and it seemed to be randomly fixed by messing with it but I never learned why. Are you able to try connecting to the page using a mobile device or another PC? Also, can you try the earlier version of the mod if that doesn\u2019t work?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 86383,
+   "parent_id": 19906,
+   "author": "KangarooCabs",
+   "author_id": 36231,
+   "author_url": "https://forge.sp-tarkov.com/user/36231/kangaroocabs",
+   "created_at": "2023-08-27T13:54:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Well I couldn\u2019t figure out the mobile side and this PC is the only one I have, so I tried using the older version, but I\u2019ve encountered the same issue.<br />\n(Opera is producing the errors and other browsers outright don\u2019t connect anymore with 1.0.0)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 86385,
+   "parent_id": 19906,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2023-08-27T14:07:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I am trying to replicate the issue on my end but haven\u2019t been able to. In the browser\u2019s console, is there a line that says \u201cinit() called\u201d at the top? One more thing to try is to temporarily disable the firewall and relaunch EFT.</p>\n<p>Edit: If you want, we can do this over Discord</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 86387,
+   "parent_id": 19906,
+   "author": "KangarooCabs",
+   "author_id": 36231,
+   "author_url": "https://forge.sp-tarkov.com/user/36231/kangaroocabs",
+   "created_at": "2023-08-27T14:20:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I am getting that line in the console, yes. And disabling the firewall didn\u2019t fix it.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 86388,
+   "parent_id": 19906,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2023-08-27T14:24:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Can I help you over Discord for easier support? My handle is TechHappy</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 19946,
+   "parent_id": null,
+   "author": "Taker59380",
+   "author_id": 35794,
+   "author_url": "https://forge.sp-tarkov.com/user/35794/taker59380",
+   "created_at": "2023-08-28T08:37:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>excellent !!!!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 19949,
+   "parent_id": null,
+   "author": "deveagle",
+   "author_id": 24038,
+   "author_url": "https://forge.sp-tarkov.com/user/24038/deveagle",
+   "created_at": "2023-08-28T09:46:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Awsome!!! Love it!</p>\n<p>Next update: how to drawing the map or how to put pictogram. Please if you know how to, pleeeaaassseee making it.</p>\n<p>If not, this mod is awsome without any update</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 86580,
+   "parent_id": 19831,
+   "author": "BlackDragon",
+   "author_id": 35687,
+   "author_url": "https://forge.sp-tarkov.com/user/35687/blackdragon",
+   "created_at": "2023-08-29T17:01:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Tried all of that. My phone keeps saying <a href=\"http://MYPRIVATEIPV4:8080/index.html\" target=\"_blank\" rel=\"noreferrer noopener\">http://MYPRIVATEIPV4:8080/index.html</a> is unreachable<br />\nERR_ADDRESS_UNREACHABLE</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 20062,
+   "parent_id": null,
+   "author": "Tchiang",
+   "author_id": 14647,
+   "author_url": "https://forge.sp-tarkov.com/user/14647/tchiang",
+   "created_at": "2023-08-30T08:50:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>thx a alot dude ! for new player this is perfect !</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 20091,
+   "parent_id": null,
+   "author": "Accxpt",
+   "author_id": 445,
+   "author_url": "https://forge.sp-tarkov.com/user/445/accxpt",
+   "created_at": "2023-08-30T23:01:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Does this show quest locations by chance?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 20156,
+   "parent_id": null,
+   "author": "Red-Diaoul",
+   "author_id": 16583,
+   "author_url": "https://forge.sp-tarkov.com/user/16583/red-diaoul",
+   "created_at": "2023-09-01T15:25:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey, I\u2019m not use to post but thank you very much for this mod, it really helps me to understand maps !</p>\n<p>Some other things I would love is the quest item locations and also an option to display bots position. (it would help me to understand better the spawn location for sure)</p>\n<p>Thank you again for your work man !</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 86823,
+   "parent_id": 20156,
+   "author": "SpectralVoid",
+   "author_id": 11495,
+   "author_url": "https://forge.sp-tarkov.com/user/11495/spectralvoid",
+   "created_at": "2023-09-03T08:21:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>there are a couple mods for that already existing but it\u2019s not really nice to just say the names on other modders pages unless they don\u2019t mind. Just check 3.6.1 mods and you\u2019ll eventually find both.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 20370,
+   "parent_id": null,
+   "author": "Tchiang",
+   "author_id": 14647,
+   "author_url": "https://forge.sp-tarkov.com/user/14647/tchiang",
+   "created_at": "2023-09-07T17:24:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello ! I would like to say that your mod is really useful and helps me evolve a lot in the game! I would like to know if it would be possible to add some features? for example, putting quest points and items to add to a wishlist? that would be really excellent. Thank you so much !!! hoping for new updates soon\u2026</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 87046,
+   "parent_id": 20370,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2023-09-07T17:38:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I just finished work on airdrops and quests but it still needs testing before release. The quest markers will be for quests that have a specific location on a map instead of for general ones like \u201cKill 10 Scavs on Customs with your eyes closed\u201d.</p>\n<p>I don\u2019t think displaying loot on the map would work too well but I will keep it in mind.</p>\n<p>Thank you for the suggestions!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 87074,
+   "parent_id": 20370,
+   "author": "Tchiang",
+   "author_id": 14647,
+   "author_url": "https://forge.sp-tarkov.com/user/14647/tchiang",
+   "created_at": "2023-09-07T23:38:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>When I talk about \u201cloot\u201d I\u2019m talking about loot that is on the wish list</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 20392,
+   "parent_id": null,
+   "author": "schiz",
+   "author_id": 7177,
+   "author_url": "https://forge.sp-tarkov.com/user/7177/schiz",
+   "created_at": "2023-09-08T08:46:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>is getting better and better, well done sir\u2026.. or madam.</p>\n<p>thx for the share as always.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 20473,
+   "parent_id": null,
+   "author": "deveagle",
+   "author_id": 24038,
+   "author_url": "https://forge.sp-tarkov.com/user/24038/deveagle",
+   "created_at": "2023-09-10T09:51:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you the quest marker!</p>\n<p>in the future, would there be a development where I can put a marker anywhere?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 21258,
+   "parent_id": null,
+   "author": "Crembels",
+   "author_id": 31574,
+   "author_url": "https://forge.sp-tarkov.com/user/31574/crembels",
+   "created_at": "2023-10-02T06:50:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Great mod! Love your work on it so far.</p>\n<p>In future versions will the the accuracy of the positioning be refined further? or have some kind of feature where we can \u201ccalibrate\u201d it ourselves? Customs and woods to a lesser extent I have noticed the map location relative to specific landmarks to be a good bit off, but be accurate in other areas.</p>\n<p>Will there be a possibility for quest markers to automatically remove themselves when the associated quest subsection has been completed? Eg. placing a marker on 1 of the 3 Tigr vehciles for Tigr Safari, then extracting, will stop that checkmark from appearing in subsequent raids?</p>\n<p>Continue the great work so far though! felt great to close down the dozen or so map tabs i had permanently open in Chrome</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 21341,
+   "parent_id": null,
+   "author": "DizzilyHQ",
+   "author_id": 3500,
+   "author_url": "https://forge.sp-tarkov.com/user/3500/dizzilyhq",
+   "created_at": "2023-10-04T23:24:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I really love the mod, Its so much easier to learn new maps and its also nice for Quests, i would just love it if the map would show the Questname if i hover over the item to learn what i do where and not just do it.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 21343,
+   "parent_id": null,
+   "author": "JustPlaing3",
+   "author_id": 33946,
+   "author_url": "https://forge.sp-tarkov.com/user/33946/justplaing3",
+   "created_at": "2023-10-05T01:08:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It works great although I can\u2019t seem to connect on the mobile browser, how do I do it? it doesn\u2019t work to me.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 88481,
+   "parent_id": 21343,
+   "author": "FunFap",
+   "author_id": 35585,
+   "author_url": "https://forge.sp-tarkov.com/user/35585/funfap",
+   "created_at": "2023-10-06T15:29:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Open console at your PC</p>\n<p>Type ipconfig</p>\n<p>Copy IpAddress(mostly 192.168.0.XXX)</p>\n<p>Open 192.168.0.XXX:8080 at mobile</p>\n<p>Works only if share network</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 88490,
+   "parent_id": 21343,
+   "author": "JustPlaing3",
+   "author_id": 33946,
+   "author_url": "https://forge.sp-tarkov.com/user/33946/justplaing3",
+   "created_at": "2023-10-06T20:34:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks bro it finally work, I can finally see the map on my mobile :D.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 21598,
+   "parent_id": null,
+   "author": "deveagle",
+   "author_id": 24038,
+   "author_url": "https://forge.sp-tarkov.com/user/24038/deveagle",
+   "created_at": "2023-10-10T05:39:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Working with 3.7.0! Simple way, copy paste, enable the connection if question (firewall etc.)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 21634,
+   "parent_id": null,
+   "author": "dawidseksi",
+   "author_id": 38321,
+   "author_url": "https://forge.sp-tarkov.com/user/38321/dawidseksi",
+   "created_at": "2023-10-10T16:17:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Great mod, could you add the v4.8 map version of streets?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 88838,
+   "parent_id": 21634,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2023-10-11T03:10:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I just pushed a new version with the updated Streets of Tarkov map.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 88841,
+   "parent_id": 21341,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2023-10-11T03:15:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The map\u2019s quest markers show the quest name and info of the step when the marker is <em>clicked</em> on. Is that the info you are thinking of?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 88843,
+   "parent_id": 21258,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2023-10-11T03:19:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Customs has been a problem and I am working on a new map that aligns with in-game coordinates. It will be a bit until it is ready but it should solve the calibration issue.</p>\n<p>Woods could use some editing of the map image so that stuff like caches are correct. Besides caches, were there any major spots that are incorrect?</p>\n<p>As for the removal of quest markers for completed steps, I will look into that. Thank you for the suggestion.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 88863,
+   "parent_id": 21634,
+   "author": "myname-jepp",
+   "author_id": 38422,
+   "author_url": "https://forge.sp-tarkov.com/user/38422/myname-jepp",
+   "created_at": "2023-10-11T04:46:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Legend mate!!!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 21699,
+   "parent_id": null,
+   "author": "OfflineTarkov",
+   "author_id": 2000,
+   "author_url": "https://forge.sp-tarkov.com/user/2000/offlinetarkov",
+   "created_at": "2023-10-11T11:42:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I actually don\u2019t need a map apart from maybe Streets (whilst I\u2019m learning it) but wow. Great work on getting this working.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 21723,
+   "parent_id": null,
+   "author": "nate",
+   "author_id": 14364,
+   "author_url": "https://forge.sp-tarkov.com/user/14364/nate",
+   "created_at": "2023-10-11T16:09:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>great mod!!! what if it could have a radar tho lik of when someone shoots type of thing like cpd</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 21773,
+   "parent_id": null,
+   "author": "Alsaher",
+   "author_id": 16637,
+   "author_url": "https://forge.sp-tarkov.com/user/16637/alsaher",
+   "created_at": "2023-10-12T01:42:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>, is there anyway for the map to move along the position mark when it is zoomed ?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 88988,
+   "parent_id": 21773,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2023-10-12T02:10:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>To have the view follow the player marker when zoomed in, press the \ud83e\uddedbutton on the top left of the map. I will make some changes to the UI to make it more clear what it does instead of just being an emoji.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 89002,
+   "parent_id": 21773,
+   "author": "Alsaher",
+   "author_id": 16637,
+   "author_url": "https://forge.sp-tarkov.com/user/16637/alsaher",
+   "created_at": "2023-10-12T11:18:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>tk u</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 21844,
+   "parent_id": null,
+   "author": "Preddie",
+   "author_id": 37871,
+   "author_url": "https://forge.sp-tarkov.com/user/37871/preddie",
+   "created_at": "2023-10-12T20:27:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Tnx, very happy with this mod!!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 21880,
+   "parent_id": null,
+   "author": "FunFap",
+   "author_id": 35585,
+   "author_url": "https://forge.sp-tarkov.com/user/35585/funfap",
+   "created_at": "2023-10-13T05:36:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Sup.</p>\n<p>\u0421an you add tracking bosses?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 21891,
+   "parent_id": null,
+   "author": "schiz",
+   "author_id": 7177,
+   "author_url": "https://forge.sp-tarkov.com/user/7177/schiz",
+   "created_at": "2023-10-13T07:04:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>sounds like great improvements to something that is already great.</p>\n<p>Thanks a lot, more and more helpful with each update</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 22302,
+   "parent_id": null,
+   "author": "Demigods",
+   "author_id": 9449,
+   "author_url": "https://forge.sp-tarkov.com/user/9449/demigods",
+   "created_at": "2023-10-16T23:54:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I think I\u2019m doing something wrong and not sure what it is.. I have the menu showing up ingame when pressing F12 but I cannot get the website map to work.. It just says im not in rain when i am</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 22309,
+   "parent_id": null,
+   "author": "IAs",
+   "author_id": 39055,
+   "author_url": "https://forge.sp-tarkov.com/user/39055/ias",
+   "created_at": "2023-10-17T01:13:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>fantastic mod works perfect on 3.7.0 but cant show any map or position on 3.7.1</p>\n<p>any suggestion?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 22359,
+   "parent_id": null,
+   "author": "Insane",
+   "author_id": 38607,
+   "author_url": "https://forge.sp-tarkov.com/user/38607/insane",
+   "created_at": "2023-10-17T17:59:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>update please it was a great tool for me as I am a begginer in this game, thanks..</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 90160,
+   "parent_id": 22359,
+   "author": "Skabio",
+   "author_id": 38511,
+   "author_url": "https://forge.sp-tarkov.com/user/38511/skabio",
+   "created_at": "2023-10-18T23:08:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I have it in 3.7.1 and it works fine for me</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 90168,
+   "parent_id": 22359,
+   "author": "Insane",
+   "author_id": 38607,
+   "author_url": "https://forge.sp-tarkov.com/user/38607/insane",
+   "created_at": "2023-10-19T00:05:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It wasn\u2019t working for me but now it work\u2019s after reinstalling it, thank you :))</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 90173,
+   "parent_id": 22309,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2023-10-19T01:55:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hmm, I am not sure what could be causing the issue that you and Demigods below are having. How did you install the mod? Did you copy the profile / mods from a previous installation into your 3.7.1 install? I think that could cause issues. Also, do you have any other mods installed? I installed a fresh copy of 3.7.1 and my mod is working in my testing.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 90199,
+   "parent_id": 22309,
+   "author": "IAs",
+   "author_id": 39055,
+   "author_url": "https://forge.sp-tarkov.com/user/39055/ias",
+   "created_at": "2023-10-19T06:29:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>thanks for your reply!</p>\n<p>well maybe the old profile caused it that i didnt realise it</p>\n<p>i\u2019ll try it again</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 90216,
+   "parent_id": 22309,
+   "author": "IAs",
+   "author_id": 39055,
+   "author_url": "https://forge.sp-tarkov.com/user/39055/ias",
+   "created_at": "2023-10-19T10:59:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i have to tell you a strange thing</p>\n<p>it turns out that another out-of-date mod pops an error but makes your mod stucked</p>\n<p>weird</p>\n<p>anyway, thanks for your kind!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 22496,
+   "parent_id": null,
+   "author": "RLRihards",
+   "author_id": 37090,
+   "author_url": "https://forge.sp-tarkov.com/user/37090/rlrihards",
+   "created_at": "2023-10-19T13:16:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>QR code thing doesn\u2019t even load in.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 23124,
+   "parent_id": null,
+   "author": "adambianchi",
+   "author_id": 39620,
+   "author_url": "https://forge.sp-tarkov.com/user/39620/adambianchi",
+   "created_at": "2023-10-27T12:55:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey, love the mod! As a player who only really knows Woods and Customs, this has been great help. However, after loading into Streets, the map doesn\u2019t seem to work. It just shows up as a blank green field. I\u2019m not running any other mods.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 23350,
+   "parent_id": null,
+   "author": "DanDani",
+   "author_id": 39792,
+   "author_url": "https://forge.sp-tarkov.com/user/39792/dandani",
+   "created_at": "2023-10-30T19:43:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019ve been using this mod for a while, but after deleting SPT and downloading the 3.7.1 version, this mod stopped working, kinda. I can see the F12 menu ingame and go to the website, however a map does not load in when in a raid. I\u2019ve checked the console on both Chrome and Firefox, and it says something with \u201cinit() called\u201d in the console. I\u2019ve read on a previous post that it had to do with something which prevented it from working. I did not however see a fix or something, so any updates on that?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 91567,
+   "parent_id": 23350,
+   "author": "DanDani",
+   "author_id": 39792,
+   "author_url": "https://forge.sp-tarkov.com/user/39792/dandani",
+   "created_at": "2023-10-30T20:20:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It has been fixed now, the issue was an out of date mod (3.7.0 mod). Deleting this fixed it.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 23511,
+   "parent_id": null,
+   "author": "bluecat0531",
+   "author_id": 39592,
+   "author_url": "https://forge.sp-tarkov.com/user/39592/bluecat0531",
+   "created_at": "2023-11-02T23:06:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Would it be possible to eventually add in other POI\u2019s either known or custom ones? For example adding symbols that denote a boss\u2019s general possible spawn area or loactions of locked doors?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 23586,
+   "parent_id": null,
+   "author": "lovemetende",
+   "author_id": 40021,
+   "author_url": "https://forge.sp-tarkov.com/user/40021/lovemetende",
+   "created_at": "2023-11-04T09:33:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I don\u2019t know why, but the mod doesn\u2019t seem to work for me. I\u2019ve follow the instuctions, but the browser part isn\u2019t working. I mean, the localhost window is empty and appears to load forever. I have given it about 5 minutes, but nothing happens. Everything on spt is up to date, I don\u2019t really know what to do</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 92061,
+   "parent_id": 23586,
+   "author": "lovemetende",
+   "author_id": 40021,
+   "author_url": "https://forge.sp-tarkov.com/user/40021/lovemetende",
+   "created_at": "2023-11-05T10:07:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019ve managed to make it work somehow, but now it\u2019s not displaying the map KEK</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 24198,
+   "parent_id": null,
+   "author": "CactusPie",
+   "author_id": 29315,
+   "author_url": "https://forge.sp-tarkov.com/user/29315/cactuspie",
+   "created_at": "2023-11-16T20:02:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Coming back to SPT after a break, just tried it. Works pretty well, thanks for this! I\u2019m glad my old Minimap came in handy</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 3
+  },
+  {
+   "id": 24282,
+   "parent_id": null,
+   "author": "GaGiG iZiaeV",
+   "author_id": 27147,
+   "author_url": "https://forge.sp-tarkov.com/user/27147/gagig-iziaev",
+   "created_at": "2023-11-18T20:37:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>\u044d\u0442\u043e \u043b\u0443\u0447\u0448\u0438\u0439 \u043c\u043e\u0434 \u0434\u043b\u044f \u0447\u0435\u043b\u043e\u0432\u0435\u043a\u0430 \u0441 \u0442\u043e\u043f\u043e\u0433\u0440\u0430\u0444\u0438\u0447\u0435\u0441\u043a\u0438\u043c \u043a\u0440\u0435\u0442\u0438\u043d\u0438\u0437\u043c\u043e\u043c ( \u0434\u043b\u044f \u0442\u0430\u043a\u043e\u0433\u043e \u043a\u0430\u043a \u044f) \u043e\u0447\u0435\u043d\u044c \u0436\u0430\u043b\u044c \u0447\u0442\u043e \u0412\u044b \u0431\u043e\u043b\u044c\u0448\u0435 \u043d\u0435 \u0441\u043c\u043e\u0436\u0435\u0442\u0435 \u043f\u043e\u0434\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0442\u044c \u043c\u043e\u0434((( \u043d\u0430\u0434\u0435\u044e\u0441\u044c \u0447\u0442\u043e \u043a\u0442\u043e-\u0442\u043e \u043f\u0440\u0438\u043c\u0435\u0442 \u0443 \u0412\u0430\u0441 \u044d\u0441\u0442\u0430\u0444\u0435\u0442\u0443. \u041f\u043e\u0437\u0432\u043e\u043b\u044c\u0442\u0435 \u0432\u044b\u0440\u0430\u0437\u0438\u0442\u044c \u0412\u0430\u043c \u043e\u0433\u0440\u043e\u043c\u043d\u0443\u044e \u0431\u043b\u0430\u0433\u043e\u0434\u0430\u0440\u043d\u043e\u0441\u0442\u044c \u043e\u0442 \u043c\u0435\u043d\u044f \u043b\u0438\u0447\u043d\u043e \u0438 \u043c\u043d\u0435 \u043f\u043e\u0434\u043e\u0431\u043d\u044b\u0445 \u0440\u0435\u0431\u044f\u0442.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 93107,
+   "parent_id": 23586,
+   "author": "GaGiG iZiaeV",
+   "author_id": 27147,
+   "author_url": "https://forge.sp-tarkov.com/user/27147/gagig-iziaev",
+   "created_at": "2023-11-18T20:41:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>\u0441 \u0442\u0435\u043b\u0435\u0444\u043e\u043d\u0430 \u0441\u043c\u043e\u0442\u0440\u0438\u0442\u0435 \u043a\u0430\u0440\u0442\u0443? \u044f \u0441 \u0430\u0439\u0444\u043e\u043d\u0430 \u043d\u0435 \u0432\u0438\u0436\u0443 \u043a\u0430\u0440\u0442\u0443, \u0430 \u0441 \u043a\u043e\u043c\u043f\u0430 \u0432\u0441\u0451 \u0440\u0430\u0431\u043e\u0442\u0430\u0435\u0442. \u043c\u043e\u0439 \u0434\u0440\u0443\u0433 \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0435\u0442 \u0442\u0435\u043b\u0435\u0444\u043e\u043d \u043d\u0430 \u0430\u043d\u0434\u0440\u043e\u0438\u0434 \u0438 \u0443 \u043d\u0435\u0433\u043e \u0432\u0441\u0451 \u0440\u0430\u0431\u043e\u0442\u0430\u0435\u0442, \u0432\u043e\u0437\u043c\u043e\u0436\u043d\u043e \u0434\u0435\u043b\u043e \u0432 \u044f\u0431\u043b\u043e\u043a\u0435?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 93136,
+   "parent_id": 23586,
+   "author": "lovemetende",
+   "author_id": 40021,
+   "author_url": "https://forge.sp-tarkov.com/user/40021/lovemetende",
+   "created_at": "2023-11-19T11:43:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>\u041d\u0435\u0442, \u044f \u043f\u043e\u043b\u044c\u0437\u0443\u044e\u0441\u044c \u043a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440\u043e\u043c. \u041d\u0430 \u0442\u0435\u043b\u0435\u0444\u043e\u043d\u0435 \u043d\u0435 \u043f\u0440\u043e\u0431\u043e\u0432\u0430\u043b, \u0438\u0437\u0432\u0438\u043d\u0438\u0442\u0435, \u043d\u0438\u0447\u0435\u043c \u043f\u043e\u043c\u043e\u0447\u044c \u043d\u0435 \u043c\u043e\u0433\u0443.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 24597,
+   "parent_id": null,
+   "author": "schiz",
+   "author_id": 7177,
+   "author_url": "https://forge.sp-tarkov.com/user/7177/schiz",
+   "created_at": "2023-11-27T08:00:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>live updates?? awesome.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 24605,
+   "parent_id": null,
+   "author": "F4R0",
+   "author_id": 10843,
+   "author_url": "https://forge.sp-tarkov.com/user/10843/f4r0",
+   "created_at": "2023-11-27T14:45:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you for this awesome mod.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 24629,
+   "parent_id": null,
+   "author": "Danersx",
+   "author_id": 6454,
+   "author_url": "https://forge.sp-tarkov.com/user/6454/danersx",
+   "created_at": "2023-11-28T02:05:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Awesome mod. Despite +500 hours in Tarkov I am still often directionally challenged and have a hard time navigating some maps. With your mod doing various playthroughs and progressing through quests is much faster.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 24649,
+   "parent_id": null,
+   "author": "deveagle",
+   "author_id": 24038,
+   "author_url": "https://forge.sp-tarkov.com/user/24038/deveagle",
+   "created_at": "2023-11-28T18:56:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Really incompatible <a href=\"https://hub.sp-tarkov.com/files/file/964-boop-s-quest-zone-api/\" target=\"_blank\" rel=\"noreferrer noopener\">Boop\u2019s Quest Zone API</a>?</p>\n<p>I use other mod, with this mods. No issue\u2026</p>\n<p>What is the incompatible effect?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 24665,
+   "parent_id": null,
+   "author": "Enemycombatant",
+   "author_id": 39778,
+   "author_url": "https://forge.sp-tarkov.com/user/39778/enemycombatant",
+   "created_at": "2023-11-29T02:21:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Awesome mod. On the screen that says (ENTER A RAID) Having the ability to change that to dark mode would be a nice addition.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 24686,
+   "parent_id": null,
+   "author": "Pandoriun",
+   "author_id": 37394,
+   "author_url": "https://forge.sp-tarkov.com/user/37394/pandoriun",
+   "created_at": "2023-11-29T19:59:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Anyone able to use it in 3.7.3? on my PC it shows the enter raid screen.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 24719,
+   "parent_id": null,
+   "author": "ligma929130",
+   "author_id": 24239,
+   "author_url": "https://forge.sp-tarkov.com/user/24239/ligma929130",
+   "created_at": "2023-11-30T18:41:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This is just incredible.</p>\n<p>I wasn\u2019t using this because it\u2019s an external \u201cweb\u201d mod, but it\u2019s more useful than I dreamed of.</p>\n<p>Anyone who\u2019s hesitating because of similar reason as me,</p>\n<p>JUST TRY IT</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 24812,
+   "parent_id": null,
+   "author": "ligma929130",
+   "author_id": 24239,
+   "author_url": "https://forge.sp-tarkov.com/user/24239/ligma929130",
+   "created_at": "2023-12-03T04:10:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Just a feedback<br />\nFor \u201cThe Door\u201d quest in Streets of Tarkov,</p>\n<p>this mod only shows a marker for visiting the location, and not for installing two Wi-Fi cameras</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 25298,
+   "parent_id": null,
+   "author": "Cynco",
+   "author_id": 41342,
+   "author_url": "https://forge.sp-tarkov.com/user/41342/cynco",
+   "created_at": "2023-12-15T19:51:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Do you plan to incorporate an option to be able to see bots on the minimap?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 25578,
+   "parent_id": null,
+   "author": "JimboK",
+   "author_id": 30751,
+   "author_url": "https://forge.sp-tarkov.com/user/30751/jimbok",
+   "created_at": "2023-12-23T18:19:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Never really bothered with searching for the hidden stashes and cache\u2019s on certian maps because they are just so damn hard to find. But with this mod? O\u2026M\u2026G! This mod is amazing. It\u2019s like I\u2019ve been working in the dark and someone just flipped on the light switch. Thank you so much.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 25600,
+   "parent_id": null,
+   "author": "gurul1fe",
+   "author_id": 35364,
+   "author_url": "https://forge.sp-tarkov.com/user/35364/gurul1fe",
+   "created_at": "2023-12-24T06:06:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>3.7.5 work?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 25828,
+   "parent_id": null,
+   "author": "wazka93",
+   "author_id": 40589,
+   "author_url": "https://forge.sp-tarkov.com/user/40589/wazka93",
+   "created_at": "2023-12-31T23:56:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Its still works in 3.7.6</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 95123,
+   "parent_id": 25600,
+   "author": "wazka93",
+   "author_id": 40589,
+   "author_url": "https://forge.sp-tarkov.com/user/40589/wazka93",
+   "created_at": "2023-12-31T23:56:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yes. it does, even in 3.7.6</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 26153,
+   "parent_id": null,
+   "author": "MrHighLife",
+   "author_id": 27612,
+   "author_url": "https://forge.sp-tarkov.com/user/27612/mrhighlife",
+   "created_at": "2024-01-10T03:24:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>does this work with the Traveler mod?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 27098,
+   "parent_id": null,
+   "author": "AlforAlice",
+   "author_id": 45246,
+   "author_url": "https://forge.sp-tarkov.com/user/45246/alforalice",
+   "created_at": "2024-02-09T19:50:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi! I\u2019m using 3.7.6 SPT and whenever i try to open up the minimap on my second monitor it keeps saying to enter a raid, i\u2019ve tried to re-install it too as another commenter mentioned how they got it fixed but that sadly aint been to any luck for me</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 96949,
+   "parent_id": 27098,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2024-02-10T15:17:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hmm, I am not sure what could be causing that issue. You said that you are using it on another monitor (instead of a mobile device, which my mod is best for). If you don\u2019t need the mobile device support, I recommend <a href=\"https://hub.sp-tarkov.com/files/file/1120-cactuspie-s-minimap\" target=\"_blank\" rel=\"noreferrer noopener\">CactusPie\u2019s minimap mod</a>. Their mod inspired me to make mine.</p>\n<p>If you would like to diagnose the issue, could you upload a log file?</p>\n<p>The log file named \u201cLogOutput.log\u201d located in the BepInEx folder will be most helpful. Could you upload the file to <a href=\"https://codepaste.sp-tarkov.com\" target=\"_blank\" rel=\"noreferrer noopener\">https://codepaste.sp-tarkov.com</a> and link it?</p>\n<p>There are also a couple mods that can cause issues. One example is \u201cBoopsQuestZoneAPI\u201d.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 96950,
+   "parent_id": 27098,
+   "author": "AlforAlice",
+   "author_id": 45246,
+   "author_url": "https://forge.sp-tarkov.com/user/45246/alforalice",
+   "created_at": "2024-02-10T15:32:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019M SOO SORRY BUT I JUST FOUND WHAT IT WAS AS YOU REPLIED \ud83d\ude2d<br />\nI was using the patched version of BoopsQuestZoneAPI from Cactuspie\u2019s minimap and after uninstalling it and quickly loading into a raid it loads up the map, again a million apologies for the inconvenience</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 96951,
+   "parent_id": 27098,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2024-02-10T16:04:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I am glad it is working now! I will have to figure out why the patched version of BoopsQuestZoneAPI is also incompatible\u2026.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 96952,
+   "parent_id": 27098,
+   "author": "AlforAlice",
+   "author_id": 45246,
+   "author_url": "https://forge.sp-tarkov.com/user/45246/alforalice",
+   "created_at": "2024-02-10T16:20:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Should I still send you the log output?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 96955,
+   "parent_id": 27098,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2024-02-10T17:53:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yes please. I just tried my mod with the patched Boops mod and the map loaded correctly. If possible, can you re-install the mod that caused issues, run the game, and send the log that was generated? I need the log from when it isn\u2019t working. Thanks</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 96959,
+   "parent_id": 27098,
+   "author": "AlforAlice",
+   "author_id": 45246,
+   "author_url": "https://forge.sp-tarkov.com/user/45246/alforalice",
+   "created_at": "2024-02-10T19:12:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Sorry was a tad bit busy ^^\u201c<br />\ndownloaded and ran the game as asked<br />\n<a href=\"https://codepaste.sp-tarkov.com/?39d4180cb0b6dc1f#97ihsFRvRnFVCkgpy7LJDRmkC8Uj2v76QEeKkGgLmG2z\" target=\"_blank\" rel=\"noreferrer noopener\">https://codepaste.sp-tarkov.com/?39d4180cb0b6dc1f#97ihsFRvRnFVCkgpy7LJDRmkC8Uj2v76QEeKkGgLmG2z</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 97230,
+   "parent_id": 27098,
+   "author": "CaptainHugg",
+   "author_id": 38022,
+   "author_url": "https://forge.sp-tarkov.com/user/38022/captainhugg",
+   "created_at": "2024-02-19T15:12:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Any updates on this? Been having the same issue. Cheers and thank you!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 97307,
+   "parent_id": 27098,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2024-02-21T04:55:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Sorry for the lack of update. I just did additional testing and was able to replicate the issue, but it may not be exactly what you are experiencing, of course. I found that after installing Boop\u2019s Quest Zone API and then CactusPie\u2019s fixed DLL for Boop\u2019s mod, there were issues until I deleted the old \u201cBoopsQuestZoneAPI.dll\u201d in BepInEx/plugins. Based on AlforAlice\u2019s log file, it looks like that is what happened.</p>\n<p>Hope this helps! If you are still having issues, could you upload a log file and link it?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 27360,
+   "parent_id": null,
+   "author": "cqgamer",
+   "author_id": 38833,
+   "author_url": "https://forge.sp-tarkov.com/user/38833/cqgamer",
+   "created_at": "2024-02-22T08:43:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Are you planning on adding compatibility for scav runs if possible? Scav streets runs can be a pain in the ass and this would help a lot.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 27382,
+   "parent_id": null,
+   "author": "sefsgsdfwwwrq",
+   "author_id": 34575,
+   "author_url": "https://forge.sp-tarkov.com/user/34575/sefsgsdfwwwrq",
+   "created_at": "2024-02-23T11:04:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello, I have a question. What I need to do to make webmap work on browser from the phone? Like local host (some services like hamachi or radmin) or else?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 97377,
+   "parent_id": 27098,
+   "author": "CaptainHugg",
+   "author_id": 38022,
+   "author_url": "https://forge.sp-tarkov.com/user/38022/captainhugg",
+   "created_at": "2024-02-23T16:56:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>TechHappy: Thank you so much! Replacing the original BoopsQuestZoneAPI.dll with <a href=\"https://cactuspie.com/files/SPT/QuestZoneAPI.dll\" target=\"_blank\" rel=\"noreferrer noopener\">CatusPie\u2019s fixed version</a> totally did the trick!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 97385,
+   "parent_id": 27360,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2024-02-23T19:48:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I haven\u2019t experienced any issues going in as a scav. The web map is really helpful for me on Streets. Are you running into any problems?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 97386,
+   "parent_id": 27382,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2024-02-23T20:01:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>No need for any other tools like Hamachi. The devices just need to be on the same network. The easy way to view the map on a mobile device is to open the browser map using the computer, pressing the \u201cQR Code\u201d button, and scanning that QR code using the mobile device camera. If you want to open the map directly from the phone without scanning the code, you will need to type into the address bar the computer\u2019s local IP address followed by the configured port (default 8080) and then \u201c/index.html\u201d.</p>\n<p>The URL that I use for example is: \u201chttp://192.16.1.103:8080/index.html\u201d</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 97405,
+   "parent_id": 27382,
+   "author": "sefsgsdfwwwrq",
+   "author_id": 34575,
+   "author_url": "https://forge.sp-tarkov.com/user/34575/sefsgsdfwwwrq",
+   "created_at": "2024-02-24T09:24:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>didn\u2019t work, I\u2019ve tested different IPs (The one that the website tells me, and I\u2019ve used both connections, 5G and 4G (cuz my router supports both), and still it didn\u2019t work). I\u2019ve solved this by using second laptop with radmin opened.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 97407,
+   "parent_id": 27382,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2024-02-24T10:07:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I am glad that you got it to work. I do want to say though that the IP address that websites give you is your router\u2019s public IP, not your computer\u2019s IP on the network. You can\u2019t connect using the public IP. To find the computer\u2019s IP, use the \u201cipconfig\u201d command in a Windows Command Prompt.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 97453,
+   "parent_id": 27360,
+   "author": "cqgamer",
+   "author_id": 38833,
+   "author_url": "https://forge.sp-tarkov.com/user/38833/cqgamer",
+   "created_at": "2024-02-26T03:37:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It was still showing me the go into a raid screen. To be fair I only tried it on streets as a scav so that may have been the issue but it is still something to take note of. I can test it again on other maps as a scav to see if it works there.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 27816,
+   "parent_id": null,
+   "author": "DaveMLG",
+   "author_id": 46558,
+   "author_url": "https://forge.sp-tarkov.com/user/46558/davemlg",
+   "created_at": "2024-03-15T13:26:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Cool mod but doesn\u2019t work on my phone, I get connection timed out error because the website apparently doesn\u2019t exist. Wish I had a second monitor, all-tabing all the time sucks heh</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 27933,
+   "parent_id": null,
+   "author": "ankh33",
+   "author_id": 46824,
+   "author_url": "https://forge.sp-tarkov.com/user/46824/ankh33",
+   "created_at": "2024-03-22T21:44:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thankyou for your ceation but it doesnt work on my phone and PC, i copy the BepInEx folder to where i install C:\\Battlestate Games\\Escape from Tarkov. I also use CMD to double check my ip but when i visit <a href=\"http://localhost:8080/index.html\" target=\"_blank\" rel=\"noreferrer noopener\">http://localhost:8080/index.html</a> its no respond on the other hand when i push F12 in game its nothing happen, please help @0@</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 28154,
+   "parent_id": null,
+   "author": "0sleepNick",
+   "author_id": 27021,
+   "author_url": "https://forge.sp-tarkov.com/user/27021/0sleepnick",
+   "created_at": "2024-04-02T04:13:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>welcome back, king</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 28173,
+   "parent_id": null,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2024-04-02T08:57:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey. I love this mod. But i\u2019ve run into some things I\u2019ve not encountered before.<br />\nLast time I used this mod was 3.7.3 and it worked great.</p>\n<p>It still works great, but I can only connect through localhost. Before I could connect both on Lan (192.168.50.69) and through my zero-tier vlan. Did anything change?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 98529,
+   "parent_id": 28173,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2024-04-02T15:40:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Nothing <em>should</em> have changed regarding connecting. One thing that comes to mind is that when creating another copy of SPT for the 3.8.0 update, a new firewall popup for that EXE would appear. I am not sure how important accepting that popup is, but maybe check for a firewall exception for the 3.8.0 game EXE?</p>\n<p>Also, if you try scanning the localhost\u2019s map QR code (top left button) using a phone or tablet, does that work? It is strange that it worked for the last version but not now\u2026.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 28331,
+   "parent_id": null,
+   "author": "BraveStarTG",
+   "author_id": 46315,
+   "author_url": "https://forge.sp-tarkov.com/user/46315/bravestartg",
+   "created_at": "2024-04-03T23:13:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Love this mod but was wondering if there\u2019s any way for it to include being able to see bots on the map like the CACTUSPIE\u2019S MINIMAP does (which is sadly not updated)</p>\n<p>Thank you</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 98761,
+   "parent_id": 28331,
+   "author": "hao33620",
+   "author_id": 47029,
+   "author_url": "https://forge.sp-tarkov.com/user/47029/hao33620",
+   "created_at": "2024-04-04T02:34:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>\u597d\u4e3b\u610f\u3002</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 28410,
+   "parent_id": null,
+   "author": "RufusSwink",
+   "author_id": 34610,
+   "author_url": "https://forge.sp-tarkov.com/user/34610/rufusswink",
+   "created_at": "2024-04-04T15:18:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It just says Enter Raid but never actually does anything no matter what map I load into.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 98855,
+   "parent_id": 28173,
+   "author": "bqb456456",
+   "author_id": 31369,
+   "author_url": "https://forge.sp-tarkov.com/user/31369/bqb456456",
+   "created_at": "2024-04-04T16:48:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>yeah 100% your firewall issue. I had same problem, let spt EFT.exe in firewall and it now works</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 28454,
+   "parent_id": null,
+   "author": "JetPilot",
+   "author_id": 47454,
+   "author_url": "https://forge.sp-tarkov.com/user/47454/jetpilot",
+   "created_at": "2024-04-04T19:48:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Love this mod! Says it is updated to 3.8 but shoreline map is still the old version. Is there a way I can update it to new map with expanded area?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 28556,
+   "parent_id": null,
+   "author": "hvkim",
+   "author_id": 47599,
+   "author_url": "https://forge.sp-tarkov.com/user/47599/hvkim",
+   "created_at": "2024-04-05T11:29:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>this is not working for me. I have tried reinstall both 1.0.7 and 1.0.6 .</p>\n<p>It says:</p>\n<h1>This site can\u2019t be reached</h1>\n<p><strong>localhost</strong> refused to connect.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 99167,
+   "parent_id": 28454,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2024-04-06T00:53:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Woops! I missed that map expansion. I will update the mod with it when I can.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 99168,
+   "parent_id": 28410,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2024-04-06T00:58:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Could you upload your LogOutput.log file found in the BepInEx folder to this page and link it? <a href=\"https://codepaste.sp-tarkov.com\" target=\"_blank\" rel=\"noreferrer noopener\">https://codepaste.sp-tarkov.com</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 99170,
+   "parent_id": 28331,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2024-04-06T00:59:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Bot tracking is planned, but it may take a little bit.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 99172,
+   "parent_id": 28556,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2024-04-06T01:03:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Could you upload your LogOutput.log file found in the BepInEx folder to this page and link it? <a href=\"https://codepaste.sp-tarkov.com/\" target=\"_blank\" rel=\"noreferrer noopener\">https://codepaste.sp-tarkov.com</a></p>\n<p>If my mod shows up in your in-game F12 menu, can you click the Open Map button and see if that works?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 28668,
+   "parent_id": null,
+   "author": "BraveStarTG",
+   "author_id": 46315,
+   "author_url": "https://forge.sp-tarkov.com/user/46315/bravestartg",
+   "created_at": "2024-04-06T02:25:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you for updating the Shoreline map. Is there a reason the Factory map isn\u2019t available?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 99189,
+   "parent_id": 28668,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2024-04-06T02:59:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I tried adding the Factory map when I first made the mod, but I couldn\u2019t find an image that was to scale. I will change the map handling for Factory for this next version to show just a static map again, and I may create a scale map image in the future.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 3
+  },
+  {
+   "id": 28704,
+   "parent_id": null,
+   "author": "TheFly",
+   "author_id": 47717,
+   "author_url": "https://forge.sp-tarkov.com/user/47717/thefly",
+   "created_at": "2024-04-06T12:22:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Good map mod! thank you for your mod, I noticed the shoreline map was updated, but streets_of_tarkov map is the old version\uff0ccan you get the map from wiki and update it to new version\uff0cplease.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 28712,
+   "parent_id": null,
+   "author": "MtNak",
+   "author_id": 44365,
+   "author_url": "https://forge.sp-tarkov.com/user/44365/mtnak",
+   "created_at": "2024-04-06T13:27:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you so much for the update and your work! This mod is one of the most useful ones</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 28715,
+   "parent_id": null,
+   "author": "5m00v3r",
+   "author_id": 46925,
+   "author_url": "https://forge.sp-tarkov.com/user/46925/5m00v3r",
+   "created_at": "2024-04-06T13:39:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You are killing me</p>\n<p>for the last 30 minutes, I tried to update to 108\u2026 there is non it\u2019s called 108 here and on your GitHub but even when I download the file with the name: <a href=\"https://github.com/NNThomasL/SPTarkovWebMinimap/releases/download/v1.0.8/TechHappy-WebMinimap-1-0-8.zip\" target=\"_blank\" rel=\"noreferrer noopener\">TechHappy-WebMinimap-1-0-8.zip</a></p>\n<p>It changes the name to <a href=\"https://objects.githubusercontent.com/github-production-release-asset-2e65be/682115567/608d9a27-f2f2-447e-a423-c6e24e87908c&amp;actor_id=0&amp;key_id=0&amp;repo_id=682115567&amp;response-content-disposition=attachment%3B%20filename%3DTechHappy-WebMinimap-1-0-8.zip&amp;response-content-type=application%2Foctet-stream\" target=\"_blank\" rel=\"noreferrer noopener\">TechHappy-WebMinimap-1-0-7-Shoreline.zip</a></p>\n<p>If on purpose, I love it. If not\u2026 what the heck</p>\n<p>So to conclude it: There is no 108, it\u2019s an 107 Shorelineedition?</p>\n<p>In F12 it just says 107 as before.</p>\n<p>Anyway, you got me there, and I am laughing right now, just to be clear. I like a good prank, mister</p>\n<p>Thanks for your awesome work</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 99254,
+   "parent_id": 28704,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2024-04-06T15:45:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Sorry about that! I just updated the mod. I haven\u2019t played in a while, and I incorrectly assumed that Ground Zero was the only map change / addition. Next time I will read the change logs\u2026</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 99256,
+   "parent_id": 28715,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2024-04-06T15:50:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Haha, yeah, sorry about the confusion. It was a bit of a mess trying to figure out how I would update the mod, so I kept changing things, and it ended up like that. I just pushed a new update that fixed Streets, and I managed to change the version number this time.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 28738,
+   "parent_id": null,
+   "author": "Dzsamesz",
+   "author_id": 47571,
+   "author_url": "https://forge.sp-tarkov.com/user/47571/dzsamesz",
+   "created_at": "2024-04-06T17:50:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>doesnt work for me :\\</p>\n<p>browser says \u201center a raid\u201d and doesnt load the map. tried to refresh page, load another map, but it doesnt work :\\</p>\n<p>my other mods:<br />\n-AmandsGraphics<br />\n-ConfigutartionManager</p>\n<p>-RaiRai HiddenCaches</p>\n<p>-StayInTarkov</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 99308,
+   "parent_id": 28738,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2024-04-06T20:58:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I just tested the AmandsGraphics and RaiRai HiddenCaches mods, and they don\u2019t seem to conflict. I strongly suspect that StayInTarkov is the issue and due to how it functions, I am afraid I cannot support it. Sorry about that.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 99313,
+   "parent_id": 28738,
+   "author": "Dzsamesz",
+   "author_id": 47571,
+   "author_url": "https://forge.sp-tarkov.com/user/47571/dzsamesz",
+   "created_at": "2024-04-06T21:36:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i\u2019m sorry to hear that, because this mod is in the StayInTarkov launcher :\\</p>\n<p>Thanks for your response, i will use this mod for my single player then</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 99427,
+   "parent_id": 28704,
+   "author": "TheFly",
+   "author_id": 47717,
+   "author_url": "https://forge.sp-tarkov.com/user/47717/thefly",
+   "created_at": "2024-04-07T12:22:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you, I originally wanted to update the map myself, but CactusPie\u2019s Minimap has not been updated to 3.8.0, so I asked for your help.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 28851,
+   "parent_id": null,
+   "author": "Doc8Ball",
+   "author_id": 13109,
+   "author_url": "https://forge.sp-tarkov.com/user/13109/doc8ball",
+   "created_at": "2024-04-07T15:20:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Went to download the new version and keep getting a trojan warning. False Positive I\u2019m assuming but its never happened before? Getting this from MS Defender</p>\n<p>Detected: Trojan:Script/Wacatac.B!ml<br />\nDetails: This program is dangerous and executes commands from an attacker.</p>\n<p>and the second time i tried to DL it I got this</p>\n<p>Detected: Trojan:Script/Wacatac.H!ml<br />\nDetails: This program is dangerous and executes commands from an attacker.</p>\n<p>What weirds me out is the Type changed on the detection from B!ml to H!ml.<br />\nAny insight would be great. Love this mod. Makes learning the maps so nice.</p>\n<p>Again I\u2019m sure its a False Positive but i just wanted to make sure.<br />\nThanks for the great work and keeping this updated!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 28855,
+   "parent_id": null,
+   "author": "Nemesis-",
+   "author_id": 47818,
+   "author_url": "https://forge.sp-tarkov.com/user/47818/nemesis",
+   "created_at": "2024-04-07T15:34:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Firstly, absolutely awesome mod!! Thankyou for this! As someone relatively new to Tarkov, this mod has been a god send getting my quests done, It took me 3-4 weeks on 3.7.6 to get where I am now on 3.8, which has taken a few days due to this mod!</p>\n<p>With that in mind, I\u2019m curious if there is any plans to add the bot locations to the map? as currently using a different mod which sometimes creates fps issues on my rig, RTX 3070FTW &amp; 5700, not-sure which it could be bottling.</p>\n<p>Thanks for reading &amp; hope it\u2019s something that\u2019s considered</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 28862,
+   "parent_id": null,
+   "author": "disgusdad",
+   "author_id": 29672,
+   "author_url": "https://forge.sp-tarkov.com/user/29672/disgusdad",
+   "created_at": "2024-04-07T17:07:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for the mod, always used Catauspie\u2019s map before and it worked on LAN via config. I can\u2019t reach the PC running this minimap on my local network, can the LAN address be declared in the config file? Or perhaps is it binding to the wrong network adapter?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 28882,
+   "parent_id": null,
+   "author": "Vieshpac",
+   "author_id": 47837,
+   "author_url": "https://forge.sp-tarkov.com/user/47837/vieshpac",
+   "created_at": "2024-04-07T20:40:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Can\u2019t make it work. After pressing to enable map in f12 menu, localhost:8080/index.html opens up and loads forever.<br />\nMods DoorBreacher<br />\nDrakiaXYZ - livefleaprices<br />\nMorecheckmarksnackend<br />\nSVM<br />\nAmandsGraphics</p>\n<p>EDIT: MANAGED to make it work by \u201callowing threat\u201d on windows AV</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 99469,
+   "parent_id": 28851,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2024-04-07T20:49:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>That is very strange. I submitted the zip file to VirusTotal, and it came back with 0 detections. I then tried downloading the same exact zip from GitHub, and it gave me a warning as well. I have not had this issue in the past and don\u2019t quite know where to go with it. I will do some research and try to figure it out. Thank you for checking, and I am sorry it isn\u2019t acting right.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 99483,
+   "parent_id": 28851,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2024-04-07T23:39:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I have already been planning on rewriting the mod, and a side effect of that is that it will hopefully fix this false detection. In the meantime, if you want the changes that are in 1.0.8 and 1.0.9, you can replace the files in the www folder of my mod with <a href=\"https://github.com/NNThomasL/SPTarkovWebMinimap/releases/download/v1.0.9/www.zip\" target=\"_blank\" rel=\"noreferrer noopener\">these</a> updated files. Again, sorry for the trouble and I hope a rewrite will fix this in the future.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 99485,
+   "parent_id": 28882,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2024-04-07T23:42:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you for getting back and letting me know how you fixed it. Due to how this mod creates a web page and talks to the game, Windows Defender can get concerned.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 28976,
+   "parent_id": null,
+   "author": "Commander Kyou",
+   "author_id": 17513,
+   "author_url": "https://forge.sp-tarkov.com/user/17513/commander-kyou",
+   "created_at": "2024-04-08T12:39:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>First off, I love your mod, it is very useful for saving time looking at where quest items are, but I always wondered, does the mod cause any performance loss? Since I am without my desktop currently, I am having to use my laptop meaning every frame for me counts.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 29196,
+   "parent_id": null,
+   "author": "SmoothMcD",
+   "author_id": 48025,
+   "author_url": "https://forge.sp-tarkov.com/user/48025/smoothmcd",
+   "created_at": "2024-04-10T14:19:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey, this mod is awesome!</p>\n<p>Are there any plans to add the floor tracking that interchange uses to some of the other maps where multi-level buildings are complicated?</p>\n<p>Specifically I\u2019m thinking reserve, and the health resort on shoreline. Most of the buildings in other maps are too simple for that to be important (Dorms for example)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 29248,
+   "parent_id": null,
+   "author": "Roguemidknight",
+   "author_id": 47874,
+   "author_url": "https://forge.sp-tarkov.com/user/47874/roguemidknight",
+   "created_at": "2024-04-11T02:49:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey for some reason the minimap wont load properly its only showing a green screen and thats all im getting any reason why it just started today. and im unsure why that is. could use the help never had issues before hand!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 29265,
+   "parent_id": null,
+   "author": "UmbraInDominus",
+   "author_id": 5151,
+   "author_url": "https://forge.sp-tarkov.com/user/5151/umbraindominus",
+   "created_at": "2024-04-11T07:45:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi, I just want to make sure this mod is actually ok, cause both windows defender and my anti-virus flagged it as a Trojan virus and it would be one thing if it was just windows but my anti-virus is saying the same thing.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 100060,
+   "parent_id": 28882,
+   "author": "mattybrown33",
+   "author_id": 26957,
+   "author_url": "https://forge.sp-tarkov.com/user/26957/mattybrown33",
+   "created_at": "2024-04-11T19:53:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i\u2019m getting the same issue. how did you allow the treat on windows av?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 29330,
+   "parent_id": null,
+   "author": "nnmmooaauuooaoa",
+   "author_id": 47648,
+   "author_url": "https://forge.sp-tarkov.com/user/47648/nnmmooaauuooaoa",
+   "created_at": "2024-04-11T20:50:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey! if you die and lose progress on the quest colleagues - part 1 - quest markers wont reappear on the map.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 100126,
+   "parent_id": 29265,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2024-04-12T04:16:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The last two versions are (were?) falsely flagged as malware. I tested it again tonight and the mod zip file was fine for all the machines I tested with, so it might have been fixed? If anyone is still effected, can you let me know? I submitted the mod once more to VirusTotal and there were zero positives.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 100128,
+   "parent_id": 29248,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2024-04-12T04:23:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>If you go into the game and hit F12, does my mod show up in the list of mods? I have an idea, but I am not sure yet. Also, can you upload the LogOutput.log file found in the BepInEx folder to this site and share the link? <a href=\"https://codepaste.sp-tarkov.com\" target=\"_blank\" rel=\"noreferrer noopener\">https://codepaste.sp-tarkov.com</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 100129,
+   "parent_id": 29196,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2024-04-12T04:27:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Floor tracking on those maps is planned, but it will take a bit. I know Shoreline especially would be very helpful.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 100130,
+   "parent_id": 28976,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2024-04-12T04:31:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I don\u2019t *think* it should cause any performance losses. I am developing using a strong machine, so it is hard to tell, but as long as you don\u2019t set the refresh interval in the F12 menu to something really low, it should be good.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 100196,
+   "parent_id": 28976,
+   "author": "Commander Kyou",
+   "author_id": 17513,
+   "author_url": "https://forge.sp-tarkov.com/user/17513/commander-kyou",
+   "created_at": "2024-04-12T14:14:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for the response. Keep up the great work.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 29427,
+   "parent_id": null,
+   "author": "RivviN",
+   "author_id": 20210,
+   "author_url": "https://forge.sp-tarkov.com/user/20210/rivvin",
+   "created_at": "2024-04-12T16:41:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Mod is awesome, but I can\u2019t figure out how to make it work on mobile.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 100259,
+   "parent_id": 28882,
+   "author": "Vieshpac",
+   "author_id": 47837,
+   "author_url": "https://forge.sp-tarkov.com/user/47837/vieshpac",
+   "created_at": "2024-04-12T19:25:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Go to Virus &amp; threat protection then to allowed threats and you should find something there I don\u2019t remember exactly</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 100288,
+   "parent_id": 29248,
+   "author": "SnackBoy00",
+   "author_id": 42985,
+   "author_url": "https://forge.sp-tarkov.com/user/42985/snackboy00",
+   "created_at": "2024-04-12T23:02:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey I\u2019m having the same issue. IT does show in the f12 menu but when I click the open map tick it just opens to an infinitely loading green screen on my browser.</p>\n<p>Here is my uploaded log file</p>\n<p><a href=\"https://codepaste.sp-tarkov.com/?cb59baed5215ecd3#HmJyGqmGkNQBWjTtueHfmZjndZeYHF4yUhCk6YRuRTtp\" target=\"_blank\" rel=\"noreferrer noopener\">https://codepaste.sp-tarkov.com/?cb59baed5215ecd3#HmJyGqmGkNQBWjTtueHfmZjndZeYHF4yUhCk6YRuRTtp</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 100318,
+   "parent_id": 29248,
+   "author": "omegatheawesome",
+   "author_id": 39599,
+   "author_url": "https://forge.sp-tarkov.com/user/39599/omegatheawesome",
+   "created_at": "2024-04-13T02:32:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>My mod was working fine when I first downloaded it, however after downloading the acogforlyfe optic fix and backdoor bandit mods I noticed I got this issue as well. Here is my log:</p>\n<p><a href=\"https://codepaste.sp-tarkov.com/?46845c9f1b16abfe#EEWhym8234Sm17AVTFpiKToG1VUPvEetgUDahtsacMkD\" target=\"_blank\" rel=\"noreferrer noopener\">https://codepaste.sp-tarkov.com/?46845c9f1b16abfe#EEWhym8234Sm17AVTFpiKToG1VUPvEetgUDahtsacMkD</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 100439,
+   "parent_id": 29265,
+   "author": "UmbraInDominus",
+   "author_id": 5151,
+   "author_url": "https://forge.sp-tarkov.com/user/5151/umbraindominus",
+   "created_at": "2024-04-13T23:06:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Alright, I just wanted to make sure lol, thanks.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 100451,
+   "parent_id": 29248,
+   "author": "omegatheawesome",
+   "author_id": 39599,
+   "author_url": "https://forge.sp-tarkov.com/user/39599/omegatheawesome",
+   "created_at": "2024-04-14T00:38:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I tried removing mods one by one, it was the FOV fix that was conflicting with this mod:</p>\n<p><a href=\"https://hub.sp-tarkov.com/files/file/942-fontaine-s-fov-fix-variable-optics/\" target=\"_blank\" rel=\"noreferrer noopener\">Fontaine\u2019s FOV Fix &amp; Variable Optics</a> - when I uninstalled this mod it started working again, and it is working with every other mod I\u2019ve been using but this one.</p>\n<p>EDIT: changing the port fixed the issue for me</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 29576,
+   "parent_id": null,
+   "author": "gorilladonut",
+   "author_id": 48247,
+   "author_url": "https://forge.sp-tarkov.com/user/48247/gorilladonut",
+   "created_at": "2024-04-14T02:38:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Cool mod but is there a way to turn off the player arrow. I like to keep it hard and I don\u2019t like knowing where I am. I want to learn my way around the map without it. Is there a way to just turn the player off?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 100658,
+   "parent_id": 29248,
+   "author": "Roguemidknight",
+   "author_id": 47874,
+   "author_url": "https://forge.sp-tarkov.com/user/47874/roguemidknight",
+   "created_at": "2024-04-15T05:11:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>TechHappy Its fixed now i dont remember what i did but from what im aware of i had to redownload something?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 30055,
+   "parent_id": null,
+   "author": "Peebles",
+   "author_id": 48568,
+   "author_url": "https://forge.sp-tarkov.com/user/48568/peebles",
+   "created_at": "2024-04-18T23:44:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Very helpful, could the player marker changing floors be added to the other maps?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 30328,
+   "parent_id": null,
+   "author": "Cully",
+   "author_id": 48719,
+   "author_url": "https://forge.sp-tarkov.com/user/48719/cully",
+   "created_at": "2024-04-21T08:06:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>HI there , i cannot get this to work, ive tried for many hours no joy.</p>\n<p>I hit F12 ingame then click techHappy.WebMinimap and click disabled , the browser window opens up on my second monitor but all i see is a green window telling me to \u201cENTER A RAID\u201d.</p>\n<p>I have tried countless times but nothing, i do have gamepanel hud instaled, could there be a conflict?</p>\n<p>I would appreciate some help here, SPT has transformed a game i never play to a potentially great experience if i knew where i was in the game</p>\n<p>Thanks for the mod, id live to get it working.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 101741,
+   "parent_id": 30328,
+   "author": "Cully",
+   "author_id": 48719,
+   "author_url": "https://forge.sp-tarkov.com/user/48719/cully",
+   "created_at": "2024-04-22T12:36:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Just to say i done a complete reinstall and its working fine, now, its a fantastic mod thanks a lot</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 30708,
+   "parent_id": null,
+   "author": "alycheborne",
+   "author_id": 28129,
+   "author_url": "https://forge.sp-tarkov.com/user/28129/alycheborne",
+   "created_at": "2024-04-27T06:53:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is there plans to add ground Zero to the maps I am coming back fresh from a few wipes and completely lost on that map and currently stuck on some quests</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 102184,
+   "parent_id": 30328,
+   "author": "Sermax666",
+   "author_id": 49893,
+   "author_url": "https://forge.sp-tarkov.com/user/49893/sermax666",
+   "created_at": "2024-04-29T08:30:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi! I have the exact same problem. Could you please tell me exactly what you did to make the mod work? I\u2019ve already tried reinstalling it several times, but no result</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 31096,
+   "parent_id": null,
+   "author": "Puggaard",
+   "author_id": 13417,
+   "author_url": "https://forge.sp-tarkov.com/user/13417/puggaard",
+   "created_at": "2024-05-02T22:04:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Just a suggestion: Would it be possible to write on the building and zone names, similar to how mapgenie does it? It would be an awesome addition to this mod, as it would synergize really well with other mods such as BossNotifier and HeliCrashes, as those sends out notifications with a zone name.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 102538,
+   "parent_id": 30328,
+   "author": "Day3Giggz",
+   "author_id": 49967,
+   "author_url": "https://forge.sp-tarkov.com/user/49967/day3giggz",
+   "created_at": "2024-05-02T22:22:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I am having the same issue as well, I have tried everything I could think of and still not working</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 31157,
+   "parent_id": null,
+   "author": "BraveStarTG",
+   "author_id": 46315,
+   "author_url": "https://forge.sp-tarkov.com/user/46315/bravestartg",
+   "created_at": "2024-05-03T14:46:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is there a reason why opening the map couldn\u2019t be set to a assigned key as opposed to clicking a checkbox? It would be so much easier. Just wondering. Thank you.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 31260,
+   "parent_id": null,
+   "author": "AngelDevoid",
+   "author_id": 50800,
+   "author_url": "https://forge.sp-tarkov.com/user/50800/angeldevoid",
+   "created_at": "2024-05-04T23:18:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>[Error :TechHappy.WebMinimap] Exception System.IO.FileNotFoundException occured. Message: Could not load file or assembly \u2018aki-custom, Version=3.8.0.0, Culture=neutral, PublicKeyToken=null\u2019 or one of its dependencies.. StackTrace: at Aki.Reflection.Patching.ModulePatch.Enable () [0x00000] in &lt;f030ec95a5204134b924a592800a60ac&gt;:0</p>\n<p>Any help would be much appreciated , thanks</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 31263,
+   "parent_id": null,
+   "author": "KiefUrban",
+   "author_id": 50804,
+   "author_url": "https://forge.sp-tarkov.com/user/50804/kiefurban",
+   "created_at": "2024-05-04T23:47:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello, not sure if there is any other way to tell you this but i find out that the mod \u201c<a href=\"https://hub.sp-tarkov.com/files/file/590-cwx-masterkey/?highlight=masterkey\" target=\"_blank\" rel=\"noreferrer noopener\">CWX MasterKey</a>\u201d causes the mini map to not work. I assume it is the masterkey because the mini map was installed first and once the masterkey was added after then it decided to stop working. When i deleted masterkey , the mini map worked again. Not sure if this is how i go about things like this but figured i would say something.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 102880,
+   "parent_id": 30328,
+   "author": "Sermax666",
+   "author_id": 49893,
+   "author_url": "https://forge.sp-tarkov.com/user/49893/sermax666",
+   "created_at": "2024-05-06T10:16:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Dya3Giggz</p>\n<p>What build are you using? Pure SPT-AKI or SIT?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 31632,
+   "parent_id": null,
+   "author": "Noise",
+   "author_id": 34803,
+   "author_url": "https://forge.sp-tarkov.com/user/34803/noise",
+   "created_at": "2024-05-09T14:31:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>hi, thx for work, in pc work perfect, but on my iphone i can\u2019t load link. can help me pls?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 31756,
+   "parent_id": null,
+   "author": "Mike_Echo",
+   "author_id": 29739,
+   "author_url": "https://forge.sp-tarkov.com/user/29739/mike-echo",
+   "created_at": "2024-05-10T19:08:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>..sadly cant get it to work -.-</p>\n<p>mod is viewable ingame with F12 menu</p>\n<p>when opening browser on <a href=\"http://localhost:8080/index.html\" target=\"_blank\" rel=\"noreferrer noopener\">http://localhost:8080/index.html</a> it only shows \u201cEnter Raid\u201d</p>\n<p>im using fresh installed latest SIT with SPT-Aki -no other mods- on my own, local.</p>\n<p>i\u00b4ve unzipped your whole folder in SIT\\Game\\BepInEx\\, so it became an own folder in \\BepInEx\\plugins\\TechHappy-MinimapSender</p>\n<p>when i klick inside F12 menu on Open Map, it stays \u201cdisabled\u201d but a new browser window starts, each time i enter F12</p>\n<p><a href=\"https://codepaste.sp-tarkov.com/?32a9add0f9f7f31c#HW5utcrZ1Z3nmKeBQWnUu3yScjGegtLgSFhwtESPTRSc\" target=\"_blank\" rel=\"noreferrer noopener\">LogOutput</a></p>\n<p>any help available?</p>\n<p>thanks in advance</p>\n<p>p.s. posted it also on GitHub</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 31971,
+   "parent_id": null,
+   "author": "Reyson",
+   "author_id": 49463,
+   "author_url": "https://forge.sp-tarkov.com/user/49463/reyson",
+   "created_at": "2024-05-13T10:18:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>old version better</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 31973,
+   "parent_id": null,
+   "author": "Keepo",
+   "author_id": 51692,
+   "author_url": "https://forge.sp-tarkov.com/user/51692/keepo",
+   "created_at": "2024-05-13T10:19:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The old version worked fine but the new version sticks on \u201cEnter Raid\u201d</p>\n<p>Using the IP from F12 and firewall is allowed, any ideas?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 103664,
+   "parent_id": 31971,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2024-05-13T10:31:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>That is disappointing to hear. Where could it be improved? I know I changed the UI but I was pretty unhappy with my code (still is rough but I think a bit better now).</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 31976,
+   "parent_id": null,
+   "author": "Rooknee",
+   "author_id": 50148,
+   "author_url": "https://forge.sp-tarkov.com/user/50148/rooknee",
+   "created_at": "2024-05-13T10:38:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Can\u2019t get new version to work, stays on enter a raid screen</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 103670,
+   "parent_id": 31971,
+   "author": "Reyson",
+   "author_id": 49463,
+   "author_url": "https://forge.sp-tarkov.com/user/49463/reyson",
+   "created_at": "2024-05-13T10:40:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>1. During a raid, SCAV - writes enter the raid</p>\n<p>2.When using multiple physical\\virtual network connections, the f12 menu shows the ip in random order =&gt; QR does not work. Listening to the ip address does not help.</p>\n<p>3. The user interface has become significantly worse compared to the old version.</p>\n<p>4. The non-switchable (completely remove) button for showing bots on the map is terrible.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 103671,
+   "parent_id": 31971,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2024-05-13T10:44:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I really appreciate the feedback. I should have tested it much better using other people and their setups. I have taken down the latest version and will try to figure something out.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 103672,
+   "parent_id": 31973,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2024-05-13T10:47:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I recommend that you remove the latest version and go back to the working one. The 2.0.1 version wasn\u2019t tested enough and while it \u201cworked on my machine\u201d it has issues.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 103673,
+   "parent_id": 31976,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2024-05-13T10:48:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Sorry about that! I recommend you remove the 2.0.1 version and go back.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 31979,
+   "parent_id": null,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2024-05-13T11:02:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The latest version (2.0.1) is available on my <a href=\"https://github.com/NNThomasL/SPTarkovWebMinimap\" target=\"_blank\" rel=\"noreferrer noopener\">GitHub</a>. While it works for me, it doesn\u2019t seem to work for many others. I bit off more than I can chew with this mod and I will happily accept pull requests.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 31980,
+   "parent_id": null,
+   "author": "FPS",
+   "author_id": 42373,
+   "author_url": "https://forge.sp-tarkov.com/user/42373/fps",
+   "created_at": "2024-05-13T11:06:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The new version no longer works with older browsers. I have an old Android 4.1 tablet that I use for maps. The previous version of the map worked in the old Opera browser. I installed the latest Dolphin Browser, the latest version, but it also cannot open the map. Just a gray background, even without the inscription enter a raid. There is no \u201cInput server address\u201d window. I understand that my device is very outdated, even with the new browser, and I just want you to know that this is happening.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 103677,
+   "parent_id": 31980,
+   "author": "TechHappy",
+   "author_id": 36126,
+   "author_url": "https://forge.sp-tarkov.com/user/36126/techhappy",
+   "created_at": "2024-05-13T11:11:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I removed the latest update (2.0.1). It caused a lot of problems and I am sorry it didn\u2019t work out.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 103678,
+   "parent_id": 31973,
+   "author": "Keepo",
+   "author_id": 51692,
+   "author_url": "https://forge.sp-tarkov.com/user/51692/keepo",
+   "created_at": "2024-05-13T11:18:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It\u2019s all good man, it was a good effort with a good goal. I\u2019ll check out the git you linked above later and have a look</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 103679,
+   "parent_id": 31971,
+   "author": "Reyson",
+   "author_id": 49463,
+   "author_url": "https://forge.sp-tarkov.com/user/49463/reyson",
+   "created_at": "2024-05-13T11:27:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>But <a href=\"https://hub.sp-tarkov.com/files/download/9263/\" target=\"_blank\" rel=\"noreferrer noopener\">Version 1.0.9</a> very very cool)! tnx</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 103680,
+   "parent_id": 31979,
+   "author": "Reyson",
+   "author_id": 49463,
+   "author_url": "https://forge.sp-tarkov.com/user/49463/reyson",
+   "created_at": "2024-05-13T11:28:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            \n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 103683,
+   "parent_id": 31976,
+   "author": "Rooknee",
+   "author_id": 50148,
+   "author_url": "https://forge.sp-tarkov.com/user/50148/rooknee",
+   "created_at": "2024-05-13T11:44:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 31988,
+   "parent_id": null,
+   "author": "HandGrade",
+   "author_id": 42831,
+   "author_url": "https://forge.sp-tarkov.com/user/42831/handgrade",
+   "created_at": "2024-05-13T12:40:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The character is not shown up in Factory (neither day or night)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 103729,
+   "parent_id": 31979,
+   "author": "PotatoAim",
+   "author_id": 42894,
+   "author_url": "https://forge.sp-tarkov.com/user/42894/potatoaim",
+   "created_at": "2024-05-13T17:15:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>v2.0.1 is working fine for me (Edge browser, desktop).</p>\n\n<p>One suggestion would be to modify the bot.png icons to have a slight outline. That way when they are stacked on top of each other in a group, it\u2019s a little easier to indicate how many there are.</p>\n\n<p>Overall, nice work!</p>\n<p>EDIT: Ok, v2.0.1 has stopped working on all raids now. It only worked for the very first raid. Guess I spoke too soon.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 103763,
+   "parent_id": 31979,
+   "author": "Ori",
+   "author_id": 28533,
+   "author_url": "https://forge.sp-tarkov.com/user/28533/ori",
+   "created_at": "2024-05-13T21:56:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Works fine for me.<br />\nBrowser: OperaGX</p>\n<p>Playing on a Fika server, not hosted by me. The IPV4 Address I use, is the one RadminVPN gave me.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 103811,
+   "parent_id": 31988,
+   "author": "troy-d",
+   "author_id": 51206,
+   "author_url": "https://forge.sp-tarkov.com/user/51206/troy-d",
+   "created_at": "2024-05-14T04:38:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The author did not set the player location reminder in the factory. The author has already mentioned it in the article.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 103812,
+   "parent_id": 31979,
+   "author": "troy-d",
+   "author_id": 51206,
+   "author_url": "https://forge.sp-tarkov.com/user/51206/troy-d",
+   "created_at": "2024-05-14T04:40:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>\u8fd9\u662f\u4e00\u4e2a\u5f88\u68d2\u7684\u6a21\u7ec4\uff0c\u4f46\u6211\u60f3\u77e5\u9053\u5982\u4f55\u5728\u624b\u673a\u4e0a\u6253\u5f00\u5730\u56fe\u7684\u7f51\u9875\u3002\u5f53\u6211\u70b9\u51fb\u4e8c\u7ef4\u7801\u65f6\uff0c\u4ec0\u4e48\u4e5f\u6ca1\u53d1\u751f\u3002</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 103846,
+   "parent_id": 31988,
+   "author": "HandGrade",
+   "author_id": 42831,
+   "author_url": "https://forge.sp-tarkov.com/user/42831/handgrade",
+   "created_at": "2024-05-14T14:05:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Waitin\u2019 for the fix then.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 104018,
+   "parent_id": 31756,
+   "author": "Sermax666",
+   "author_id": 49893,
+   "author_url": "https://forge.sp-tarkov.com/user/49893/sermax666",
+   "created_at": "2024-05-16T05:41:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It didn\u2019t work for me on the SIT build either. If you play online with friends use pure \u201cspt aki\u201d with multiplayer modification from \u201cFika\u201d.</p>\n<p>On it works most of the current mods</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 32412,
+   "parent_id": null,
+   "author": "AFAK_IFAK_NOFAKS",
+   "author_id": 51936,
+   "author_url": "https://forge.sp-tarkov.com/user/51936/afak-ifak-nofaks",
+   "created_at": "2024-05-18T23:42:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for making this, one of my fave mods</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 104565,
+   "parent_id": 31632,
+   "author": "HDJohnny",
+   "author_id": 13604,
+   "author_url": "https://forge.sp-tarkov.com/user/13604/hdjohnny",
+   "created_at": "2024-05-21T19:49:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Check your Firewall</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 32670,
+   "parent_id": null,
+   "author": "VTM",
+   "author_id": 27210,
+   "author_url": "https://forge.sp-tarkov.com/user/27210/vtm",
+   "created_at": "2024-05-22T15:12:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Does this work with Project Fika?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 104858,
+   "parent_id": 32670,
+   "author": "El_Mouse",
+   "author_id": 43896,
+   "author_url": "https://forge.sp-tarkov.com/user/43896/el-mouse",
+   "created_at": "2024-05-24T18:26:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It does, working for my friends and myself (host).<br />\nFIKA: Port-Forwarded<br />\nBrowser: Chrome<br />\nHas been working on 3.8.0 through 3.8.3</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 104924,
+   "parent_id": 32670,
+   "author": "VTM",
+   "author_id": 27210,
+   "author_url": "https://forge.sp-tarkov.com/user/27210/vtm",
+   "created_at": "2024-05-25T16:03:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Great, thank you!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 33755,
+   "parent_id": null,
+   "author": "acolyte",
+   "author_id": 50434,
+   "author_url": "https://forge.sp-tarkov.com/user/50434/acolyte",
+   "created_at": "2024-06-07T06:23:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Question, I noticed that on Interchange the player marker dynamically moved to the right section based on which floor of the mall you were on. But on Reserve, this doesn\u2019t happen. Is that something which can be done? It would be really nice to be able to see specifically where in the bunker you are instead of seeing where on the main map you would be if you were on ground level.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 34269,
+   "parent_id": null,
+   "author": "FunFap",
+   "author_id": 35585,
+   "author_url": "https://forge.sp-tarkov.com/user/35585/funfap",
+   "created_at": "2024-06-14T15:23:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Any updates with bot markers?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 34412,
+   "parent_id": null,
+   "author": "moon11yy",
+   "author_id": 46544,
+   "author_url": "https://forge.sp-tarkov.com/user/46544/moon11yy",
+   "created_at": "2024-06-17T12:41:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>is it possible to expand the map like portrait in height?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 34451,
+   "parent_id": null,
+   "author": "Kirosana",
+   "author_id": 29446,
+   "author_url": "https://forge.sp-tarkov.com/user/29446/kirosana",
+   "created_at": "2024-06-18T03:13:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Air drops aren\u2019t showing. Do we have to something else other than just enabling it in the settings ?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 107486,
+   "parent_id": 31979,
+   "author": "GreyFerret",
+   "author_id": 37726,
+   "author_url": "https://forge.sp-tarkov.com/user/37726/greyferret",
+   "created_at": "2024-06-18T16:48:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I can confirm that your map works perfectly for me and my friends, however, it breaks down from certain tasks. We are guessing that some <em><strong>daily</strong></em> tasks break the maps because the maps were fixed after task expired.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 35990,
+   "parent_id": null,
+   "author": "flacopol",
+   "author_id": 31867,
+   "author_url": "https://forge.sp-tarkov.com/user/31867/flacopol",
+   "created_at": "2024-07-11T22:16:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>my energy for 3.9.0 the mod to use ins spt \u2026 thanks mate \u0f3c \u3064 \u25d5_\u25d5 \u0f3d\u3064</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 110437,
+   "parent_id": 35990,
+   "author": "DavidWongstein",
+   "author_id": 58542,
+   "author_url": "https://forge.sp-tarkov.com/user/58542/davidwongstein",
+   "created_at": "2024-07-18T16:11:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Same here!! I\u2019m checking daily</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 110461,
+   "parent_id": 35990,
+   "author": "flacopol",
+   "author_id": 31867,
+   "author_url": "https://forge.sp-tarkov.com/user/31867/flacopol",
+   "created_at": "2024-07-18T20:08:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>yea is a beautiful mod</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 36728,
+   "parent_id": null,
+   "author": "pacoz",
+   "author_id": 57959,
+   "author_url": "https://forge.sp-tarkov.com/user/57959/pacoz",
+   "created_at": "2024-07-19T12:37:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>g\u00fcncellenecek mi acaba?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 37294,
+   "parent_id": null,
+   "author": "Rickie420",
+   "author_id": 52466,
+   "author_url": "https://forge.sp-tarkov.com/user/52466/rickie420",
+   "created_at": "2024-07-24T19:26:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I really miss this plugin so much</p>\n<p>i should not have updated my mpt to 3.9.2</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 3
+  },
+  {
+   "id": 115364,
+   "parent_id": 37294,
+   "author": "Dukhat",
+   "author_id": 53466,
+   "author_url": "https://forge.sp-tarkov.com/user/53466/dukhat",
+   "created_at": "2024-08-29T00:36:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This one is way better: <a href=\"https://hub.sp-tarkov.com/files/file/1981-dynamic-maps/\" target=\"_blank\" rel=\"noreferrer noopener\">Dynamic Maps</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 115759,
+   "parent_id": 37294,
+   "author": "Rickie420",
+   "author_id": 52466,
+   "author_url": "https://forge.sp-tarkov.com/user/52466/rickie420",
+   "created_at": "2024-09-02T02:41:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>yeah but i liked the this one since i use more then one monitor</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 44027,
+   "parent_id": null,
+   "author": "Legit_Delirium",
+   "author_id": 68090,
+   "author_url": "https://forge.sp-tarkov.com/user/68090/legit-delirium",
+   "created_at": "2024-11-28T21:07:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Are there any plans to revive this mod for 3.10? I much prefer having my map on another monitor than in game like dynamic mod</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 45950,
+   "parent_id": null,
+   "author": "kingspade09",
+   "author_id": 70356,
+   "author_url": "https://forge.sp-tarkov.com/user/70356/kingspade09",
+   "created_at": "2024-12-31T03:07:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>What version is the github version working on please?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 54040,
+   "parent_id": null,
+   "author": "NIBEL59",
+   "author_id": 81864,
+   "author_url": "https://forge.sp-tarkov.com/user/81864/nibel59",
+   "created_at": "2025-07-20T14:05:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>\u00e8 per Tarkow normale o SPT? perch\u00e9 non trovo la versione avvia il server e avvia il launcher\u2026.</p>\n<p>ios it for tarkov original or SPT version the possibility to see me on themap ?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 153304,
+   "parent_id": null,
+   "author": "iderpsi",
+   "author_id": 105521,
+   "author_url": "https://forge.sp-tarkov.com/user/105521/iderpsi",
+   "created_at": "2026-02-19T12:17:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>will this be updated to work on 4.0.12?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

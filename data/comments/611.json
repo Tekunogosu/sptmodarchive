@@ -1,0 +1,710 @@
+{
+ "mod_id": 611,
+ "slug": "low-budget-bullet-time",
+ "fetched_at": "2026-08-09T07:21:35Z",
+ "reported_total": 36,
+ "pages": 4,
+ "count": 70,
+ "comments": [
+  {
+   "id": 8722,
+   "parent_id": null,
+   "author": "lhj920119",
+   "author_id": 202,
+   "author_url": "https://forge.sp-tarkov.com/user/202/lhj920119",
+   "created_at": "2022-10-06T13:04:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It is hoped that bullet time can be entered in a non-stopped state. Thank you!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 8731,
+   "parent_id": null,
+   "author": "Deathclaw99",
+   "author_id": 22935,
+   "author_url": "https://forge.sp-tarkov.com/user/22935/deathclaw99",
+   "created_at": "2022-10-07T15:25:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Good day. I like the concept of this mod, but I think I noticed a bug. For whatever reason, aiming doesn\u2019t line up during slow mo. When I aim at the enemy with a scope, the bullets do not travel normally.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 69186,
+   "parent_id": 8731,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2022-10-07T16:34:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019ll check. did you use fov mods at all?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 69187,
+   "parent_id": 8731,
+   "author": "Deathclaw99",
+   "author_id": 22935,
+   "author_url": "https://forge.sp-tarkov.com/user/22935/deathclaw99",
+   "created_at": "2022-10-07T17:27:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Nope, got no FOV Mods installed whatsoever. Mods I got ingame are this, SVM, a weather mod and the ammo info mod. I noticed the aim being off using an SKS with a PSO Scope and Ironsights on a 5.45 AK.</p>\n<p>EDIT: The problem I noticed with my shooting was that the bullets are always quite a bit lower then without slow mo active.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 69190,
+   "parent_id": 8731,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2022-10-07T22:07:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Can you try again with no camera recoil for me?</p>\n<p>Use <a href=\"https://hub.sp-tarkov.com/files/file/778-custom-camera-recoil/#overview\" target=\"_blank\" rel=\"noreferrer noopener\">Custom Camera Recoil</a></p>\n<p>and -100% camera recoil reduction in config.</p>\n<p>Then test again.</p>\n<p>I am thinking that maybe because its so slow now that you are noticing the aiming is wierd\u2026to be fair i don\u2019t think i can fix it because its physics that i don\u2019t have direct control over .</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 69191,
+   "parent_id": 8731,
+   "author": "Deathclaw99",
+   "author_id": 22935,
+   "author_url": "https://forge.sp-tarkov.com/user/22935/deathclaw99",
+   "created_at": "2022-10-07T23:28:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yep, tried it again with no recoil, and on the BelOMO PSO-1 4x24 scope on an SKS shooting at the first blank target in the shooting range, all my bullets hit at the first small arrow beneath where you aim, instead of on the point. This is with max Aim Stamina and holding my breath.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 69254,
+   "parent_id": 8731,
+   "author": "Deathclaw99",
+   "author_id": 22935,
+   "author_url": "https://forge.sp-tarkov.com/user/22935/deathclaw99",
+   "created_at": "2022-10-10T17:28:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>So, with me playing with the mod for the past 2 days, I think I noticed what the problem is. If you are in Slow-Mo, and use any scope which forcibly zooms your camera into the scope(So any sniper scope basically), the camera isn\u2019t line up correctly to the barrel anymore. You can easily see this for yourself using the VPO Sniper and any SpecterDR Scope.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 69255,
+   "parent_id": 8731,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2022-10-10T18:22:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Can you try using <a href=\"https://hub.sp-tarkov.com/files/file/831-notgreg-s-scope-tweaks/?highlight=scope\" target=\"_blank\" rel=\"noreferrer noopener\">Notgreg\u2019s scope tweaks</a> and see if that changes anything for you? I saw that there were some camera related fixes in his code. If that isn\u2019t it, i\u2019ll have to deep dive into this.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 69259,
+   "parent_id": 8731,
+   "author": "Deathclaw99",
+   "author_id": 22935,
+   "author_url": "https://forge.sp-tarkov.com/user/22935/deathclaw99",
+   "created_at": "2022-10-10T19:12:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Tried out the Scope Mod, still have the same problem that the crosshair on the spectre on a VPO doesn\u2019t line up with where bullets hit. Now they hit the same target as on the SKS Post slightly to the left and down.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 69263,
+   "parent_id": 8731,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2022-10-10T22:01:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019ve noticed that it more accurately hits the laser than it does the crosshair in the specterDR scope. I wouldn\u2019t say thats a fault of the slow mo though as this happens outside of it as well.</p>\n<p>(unless i\u2019m not getting what you are saying then)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 69268,
+   "parent_id": 8731,
+   "author": "Deathclaw99",
+   "author_id": 22935,
+   "author_url": "https://forge.sp-tarkov.com/user/22935/deathclaw99",
+   "created_at": "2022-10-10T23:24:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The Problem I have is that whenever I turn on slow-mo, the shots do not hit where you aim at even if you set up the shot correctly beforehand. Both the Barrel and Lasers on the Gun you slow-mo on which has a zoomed in scope, the camera messes up and makes the shots not land correctly anymore.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 69368,
+   "parent_id": 8731,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2022-10-16T01:50:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Can you try this version out? Its difficult because i have to update the speed it refreshes for the recoil. I feel like my change has made it have less recoil in slo-mo but i guess thats fine.</p>\n<p><a href=\"https://github.com/dvize/SPT-BulletTime/releases/download/v1.2.0/BulletTimeTest.zip\" target=\"_blank\" rel=\"noreferrer noopener\">https://github.com/dvize/SPT-BulletTime/releases/download/v1.2.0/BulletTimeTest.zip</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 69428,
+   "parent_id": 8731,
+   "author": "Deathclaw99",
+   "author_id": 22935,
+   "author_url": "https://forge.sp-tarkov.com/user/22935/deathclaw99",
+   "created_at": "2022-10-19T21:05:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yep, just now tried out the new version, and that fixes Slow-Mo messing with the camera while zoomed in. It works perfectly now, thanks so much for the fixes and the mod</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 9225,
+   "parent_id": null,
+   "author": "Clanf",
+   "author_id": 10061,
+   "author_url": "https://forge.sp-tarkov.com/user/10061/clanf",
+   "created_at": "2022-11-12T14:02:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>really great mod, shame about movement restriction for toggling bullet time, makes using it a bit clunky</p>\n<p>is it hotkey conflict? like movement keys act as modifier for a mod hotkey, so it\u2019s no longer register properly? cuz i don\u2019t think movement itself should matter, it\u2019s just changing game\u2019s timescale</p>\n<p>don\u2019t know much about unity, but i think simple Input.GetKeyDown should work just fine, no?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 69949,
+   "parent_id": 9225,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2022-11-12T15:57:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yeah, i haven\u2019t found a way around it. Its a restriction within the game so that physics don\u2019t go wonky i guess.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 69960,
+   "parent_id": 9225,
+   "author": "Clanf",
+   "author_id": 10061,
+   "author_url": "https://forge.sp-tarkov.com/user/10061/clanf",
+   "created_at": "2022-11-13T09:04:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>yeah, looked at BepInEx.Configuration.KeyboardShortcut, it specifically state about key combos</p>\n<p>i guess dirty crutch could be to allow having multiple binds (five in total) so user can also cover combos with movement keys and then have something like this for Update script</p>\n<p>Plugin.KeyBulletTime.Value.IsUp() || Plugin.KeyBulletTime2.Value.IsUp() || Plugin.KeyBulletTime3.Value.IsUp()and so on, but not sure how whole thing will work</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 11064,
+   "parent_id": null,
+   "author": "Local Crew",
+   "author_id": 19649,
+   "author_url": "https://forge.sp-tarkov.com/user/19649/local-crew",
+   "created_at": "2023-01-28T14:43:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>time dilation is not turned off outside the raid, need to fix</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 11463,
+   "parent_id": null,
+   "author": "PSYCHOSOCIAL",
+   "author_id": 21502,
+   "author_url": "https://forge.sp-tarkov.com/user/21502/psychosocial",
+   "created_at": "2023-02-07T12:33:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>A very useful mod, especially against Bosses with retinue, it\u2019s a pity that it does not work on version 0.13.0.2.21734 SPT-AKI 3.5.0. You can update your mod to the latest version.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 12099,
+   "parent_id": null,
+   "author": "RogueTech67",
+   "author_id": 9742,
+   "author_url": "https://forge.sp-tarkov.com/user/9742/roguetech67",
+   "created_at": "2023-02-17T10:02:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>02/17/2023 - 4:30am EST - Props. First off, I love your mods, and have been using a few of them for months. Just saw this Bullet Time one, and played/tested it for 4 hours with SPT-AKI v3.4.1 and v3.5.0 always using a clean/new User profile and NO other mods at all. It could not be a cleaner test. Short version, I found very apparent issues with both versions. I\u2019m exhausted right now and just \u201cSTARTED\u201d this summary, and will finish it later this morning. Wanted to get my thoughts down now while they are fresh in my mind. Thanks</p>\n<p>v1.3.0 (For SPT-AKI 3.4.1):</p>\n<p>1) The [Cooldown Period] value (default 120) is NOT functioning as intended. With the values set as below, first time you press the button (Mouse4), it lasts for 5 seconds. However, you can IMMEDIATELY press and activate it again???. It is NOT using the Cooldown value as a \u201ccooldown\u201d time. What it is actually doing is acting as the \u201cnext\u201d [How Long Lasts] time. So after the immediate second press, it now lasts for 20 seconds instead of 5. Now after it ends, wait 10 seconds before activating it again. This time now it will last for 10 seconds (i.e. 20 - 10). So if you have the [Cooldown] set to say 120, you really see the issue. First time you use it, it lasts 5 seconds. Then you can incorrectly activate it immediately, and now it is going to last 120 seconds.</p>\n<p>EASY Test:</p>\n<p>- Cooldown : 20</p>\n<p>- How Long BT lasts: 5</p>\n<p>_______________________________________________________________________________</p>\n<p>v1.4.0 (For SPT-AKI 3.5.0):</p>\n<p>1) There are no sound files included in the .zip, and copying the ones from v1.3.0 (3.4.1) does not work. Thus there are no sounds for entering and exiting this mod now.</p>\n<p>2) The Configuration Menu (F12) with the options has changed from the previous version, and the [Overview] text still references the old version and has not been updated.</p>\n<p>3) There is an odd issue with the new [BT Stamina Burn Rate Per Second] value (default 140) and how it effects whether you can toggle the mod back off once activated. At 140, the stamina depletes rather quickly like in 1-2 seconds. If you do not press the (Mouse4) button again real fast BEFORE the stamina is completely drained (i.e. past red and gone), then as it starts refilling, pressing the (Mouse4) button does not deactivate it. So to see this, set the [Burn Rate] 5, or 10, or 20. Activating BT will not even drain stamina at all. So I found you need to set the [Burn rate] to about 65 to have the stamina drain take about 3-4 seconds. Now you can test. If you press the button quickly, you can deactivate it, and the stamina will start rebuilding. You can keep doing this on/off as long as you do not let the stamina COMPLETELY drain. Once that happens, as it is building up pressing the button will not toggle it. You have to actually press the button twice in a row really quickly, and before the stamina completely drains. I know I\u2019m rambling, but if you set the [Burn Rate] between 60-70, and just start testing it, you should see what is going on.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 74344,
+   "parent_id": 12099,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2023-02-17T16:08:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for taking the time to test. I will reupload with the sound files (whoops). I was mad and just uploaded whatever i had.</p>\n<p>I\u2019ll take another look. I think i had a stamina/energy mod somewhere. I was pretty sure no one even used this mod lol.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 74415,
+   "parent_id": 12099,
+   "author": "RogueTech67",
+   "author_id": 9742,
+   "author_url": "https://forge.sp-tarkov.com/user/9742/roguetech67",
+   "created_at": "2023-02-17T21:26:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Sounds good. Thanks so much for addressing this. I will test it out soon.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 13539,
+   "parent_id": null,
+   "author": "ligma929130",
+   "author_id": 24239,
+   "author_url": "https://forge.sp-tarkov.com/user/24239/ligma929130",
+   "created_at": "2023-03-14T21:38:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Does the slow-mo affect the projectile? I tried lowering the dilation but bullet seems to hit immediately no matter what</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 77395,
+   "parent_id": 13539,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2023-03-24T21:51:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>it should?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 14967,
+   "parent_id": null,
+   "author": "PSYCHOSOCIAL",
+   "author_id": 21502,
+   "author_url": "https://forge.sp-tarkov.com/user/21502/psychosocial",
+   "created_at": "2023-04-20T14:08:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Your mod does not work on the latest version. Are you planning to update the mod for SPT-AKI 3.5.5 version?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 78973,
+   "parent_id": 14967,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2023-04-20T14:09:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>give me a few\u2026 was caught up with my other mods</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 78981,
+   "parent_id": 13539,
+   "author": "footlicker",
+   "author_id": 7454,
+   "author_url": "https://forge.sp-tarkov.com/user/7454/footlicker",
+   "created_at": "2023-04-20T15:52:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>if make a tracer mod where all bullet tracers to easier see ?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 79004,
+   "parent_id": 14967,
+   "author": "PSYCHOSOCIAL",
+   "author_id": 21502,
+   "author_url": "https://forge.sp-tarkov.com/user/21502/psychosocial",
+   "created_at": "2023-04-20T20:15:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you for your work and for your good mods, I use almost all the mods of your development, this mod generally saves and helps with boss fights.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 15006,
+   "parent_id": null,
+   "author": "Soulblade",
+   "author_id": 3995,
+   "author_url": "https://forge.sp-tarkov.com/user/3995/soulblade",
+   "created_at": "2023-04-21T08:35:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>FYI: Your new version (1.5.0) does not contain sound files. There is only dll file.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 79056,
+   "parent_id": 15006,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2023-04-21T14:10:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>oh crap lol. thanks</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 15122,
+   "parent_id": null,
+   "author": "footlicker",
+   "author_id": 7454,
+   "author_url": "https://forge.sp-tarkov.com/user/7454/footlicker",
+   "created_at": "2023-04-24T12:12:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>if possible to make it like hold breath like holding the key to active then releasing key deactivate?</p>\n<p>Thank you this mod</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 15406,
+   "parent_id": null,
+   "author": "Stolas",
+   "author_id": 26764,
+   "author_url": "https://forge.sp-tarkov.com/user/26764/stolas",
+   "created_at": "2023-05-04T13:05:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>May I get a definition on \u201cfunky jumping\u201d when time is slowed down? How funky can a jump get?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 16237,
+   "parent_id": null,
+   "author": "I dont know JS and Csharp",
+   "author_id": 21916,
+   "author_url": "https://forge.sp-tarkov.com/user/21916/i-dont-know-js-and-csharp",
+   "created_at": "2023-05-31T10:54:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p><a href=\"https://drive.google.com/file/d/1W7oYL-LOBAky9LSQ3pdaPLw-VNB1Wzgp/view?usp=sharing\" target=\"_blank\" rel=\"noreferrer noopener\">Here</a>\u2019s (mostly) working version for 3.5.6. And <a href=\"https://www.virustotal.com/gui/file/6862b05395a14db0edb4a3a922dff665c042b064520ed4bc982d329b98b92498\" target=\"_blank\" rel=\"noreferrer noopener\">here</a>\u2019s VirusTotal, just in case.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 81122,
+   "parent_id": 16237,
+   "author": "RogueTech67",
+   "author_id": 9742,
+   "author_url": "https://forge.sp-tarkov.com/user/9742/roguetech67",
+   "created_at": "2023-06-03T18:31:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>@I dont know JS and Csharp, Thanks for updating it to SPT-AKI 3.5.6. Until Props get time to update it for SPT-AKI 3.5.7, are you going update yours? Thanks in advance,</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 81142,
+   "parent_id": 16237,
+   "author": "RogueTech67",
+   "author_id": 9742,
+   "author_url": "https://forge.sp-tarkov.com/user/9742/roguetech67",
+   "created_at": "2023-06-04T01:48:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks Props!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 20405,
+   "parent_id": null,
+   "author": "Amber",
+   "author_id": 32548,
+   "author_url": "https://forge.sp-tarkov.com/user/32548/amber",
+   "created_at": "2023-09-08T17:52:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I installed everything according to the instructions, but the server still does not see this mod. SPT VERSION 3.6.1</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 87113,
+   "parent_id": 20405,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2023-09-08T18:32:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>if you installed correctly, you will have bullettime folder in your :</p>\n<p>X:/;&lt;sptInstall&gt;/bepinex/plugins folder</p>\n<p>you can check your bepinex/log file to see if dvize.bullettime loaded as well</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 21704,
+   "parent_id": null,
+   "author": "Framboisenerds",
+   "author_id": 38465,
+   "author_url": "https://forge.sp-tarkov.com/user/38465/framboisenerds",
+   "created_at": "2023-10-11T13:00:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m playing with version 3.7.0 and it didnt work, Are you gonna update to 3.7.0 ? because i feel need to use this mod</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 22743,
+   "parent_id": null,
+   "author": "Sewox",
+   "author_id": 31537,
+   "author_url": "https://forge.sp-tarkov.com/user/31537/sewox",
+   "created_at": "2023-10-22T17:05:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Will this work on spt 3.7.1?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 90636,
+   "parent_id": 22743,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2023-10-22T17:41:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>no because of the version checker</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 90641,
+   "parent_id": 22743,
+   "author": "Sewox",
+   "author_id": 31537,
+   "author_url": "https://forge.sp-tarkov.com/user/31537/sewox",
+   "created_at": "2023-10-22T17:49:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>will it be on that version soon?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 23330,
+   "parent_id": null,
+   "author": "luciano656",
+   "author_id": 22724,
+   "author_url": "https://forge.sp-tarkov.com/user/22724/luciano656",
+   "created_at": "2023-10-30T13:42:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>3.7.1 update please, por favor, Thanks !, Gracias !</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 23514,
+   "parent_id": null,
+   "author": "Goldbeine",
+   "author_id": 39958,
+   "author_url": "https://forge.sp-tarkov.com/user/39958/goldbeine",
+   "created_at": "2023-11-03T00:23:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>3.7.1 Update. Literaly unplayable due to severe case of <em>Wheredabulletscomefrome</em> disease.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 24717,
+   "parent_id": null,
+   "author": "jermski",
+   "author_id": 10541,
+   "author_url": "https://forge.sp-tarkov.com/user/10541/jermski",
+   "created_at": "2023-11-30T18:12:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>if i knew how to update i would! This mod is so fun</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 25097,
+   "parent_id": null,
+   "author": "CookieChee",
+   "author_id": 32506,
+   "author_url": "https://forge.sp-tarkov.com/user/32506/cookiechee",
+   "created_at": "2023-12-10T08:05:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>this is one of my favorite mods, I hope its updated soon!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 94338,
+   "parent_id": 25097,
+   "author": "CookieChee",
+   "author_id": 32506,
+   "author_url": "https://forge.sp-tarkov.com/user/32506/cookiechee",
+   "created_at": "2023-12-12T19:16:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>holy shit, thank you</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 25465,
+   "parent_id": null,
+   "author": "PSYCHOSOCIAL",
+   "author_id": 21502,
+   "author_url": "https://forge.sp-tarkov.com/user/21502/psychosocial",
+   "created_at": "2023-12-20T17:39:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I apologize, it looks like I didn\u2019t install the latest version of your plugin, so nothing worked.<br />\nI downloaded it again and it worked!!!!<br />\nThanks for the plugin and wasted time because of my mistake.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 27994,
+   "parent_id": null,
+   "author": "Flo110",
+   "author_id": 46923,
+   "author_url": "https://forge.sp-tarkov.com/user/46923/flo110",
+   "created_at": "2024-03-25T08:50:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This mod makes Scav runs so much fun, thanks for making this.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 28245,
+   "parent_id": null,
+   "author": "RogueTech67",
+   "author_id": 9742,
+   "author_url": "https://forge.sp-tarkov.com/user/9742/roguetech67",
+   "created_at": "2024-04-03T02:12:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>@<a href=\"https://hub.sp-tarkov.com/user/18746-props/\" target=\"_blank\" rel=\"noreferrer noopener\">Props</a>, Thanks for the update. Love the mod. Just letting you know the Versions shows as 1.6.3 for the 3.8.0 update, but the file downloaded was [dvize.BulletTimeV1.7.0.zip]</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 98608,
+   "parent_id": 28245,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2024-04-03T05:16:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank, fixed.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 98610,
+   "parent_id": 28245,
+   "author": "RogueTech67",
+   "author_id": 9742,
+   "author_url": "https://forge.sp-tarkov.com/user/9742/roguetech67",
+   "created_at": "2024-04-03T05:22:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You\u2019re welcome sir</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 30178,
+   "parent_id": null,
+   "author": "bf312344",
+   "author_id": 45382,
+   "author_url": "https://forge.sp-tarkov.com/user/45382/bf312344",
+   "created_at": "2024-04-19T22:15:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Nothing budget in this mod, quality work. Thanks</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 32100,
+   "parent_id": null,
+   "author": "DeadJokerZ",
+   "author_id": 32719,
+   "author_url": "https://forge.sp-tarkov.com/user/32719/deadjokerz",
+   "created_at": "2024-05-14T19:12:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Does this mod mess up bots aim? Im been observing bots, thay have high chance to recoil up to the skies when in slow mode.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 32117,
+   "parent_id": null,
+   "author": "RogueTech67",
+   "author_id": 9742,
+   "author_url": "https://forge.sp-tarkov.com/user/9742/roguetech67",
+   "created_at": "2024-05-15T00:17:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Tested v1.7.0 (3.8.0) with 3.8.1 and 3.8.3 and it appears to work just fine.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 103895,
+   "parent_id": 32100,
+   "author": "RogueTech67",
+   "author_id": 9742,
+   "author_url": "https://forge.sp-tarkov.com/user/9742/roguetech67",
+   "created_at": "2024-05-15T00:20:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019ve been using this since 3.5.0 and I have not experienced the bots having issues aiming. Used a \u201cinfinite health\u201d mod and let them shoot away at me, and did not notice anything. They hit me just fine.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 32653,
+   "parent_id": null,
+   "author": "SadNuggetMan",
+   "author_id": 52411,
+   "author_url": "https://forge.sp-tarkov.com/user/52411/sadnuggetman",
+   "created_at": "2024-05-22T06:58:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>it would be so cool if you could make it so you aren\u2019t slow in the slow mo but everything around you is, I wanna be quicksilver in tarkov god dammit</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 36077,
+   "parent_id": null,
+   "author": "Bora",
+   "author_id": 53655,
+   "author_url": "https://forge.sp-tarkov.com/user/53655/bora",
+   "created_at": "2024-07-13T04:22:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hope this updated in 3.9.0! I really enjoyed this mod, especially when I do sniper mission</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 110072,
+   "parent_id": 36077,
+   "author": "Bora",
+   "author_id": 53655,
+   "author_url": "https://forge.sp-tarkov.com/user/53655/bora",
+   "created_at": "2024-07-16T10:12:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>it updated!! ultra happy</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 36394,
+   "parent_id": null,
+   "author": "fietiephieya",
+   "author_id": 56804,
+   "author_url": "https://forge.sp-tarkov.com/user/56804/fietiephieya",
+   "created_at": "2024-07-16T11:49:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This mod is so silly in the context of such a \u201cserious\u201d game but it\u2019s so much fun!</p>\n<p>Getting F.E.A.R. and Max Payne vibes. Or The Specialists, if anyone remembers that from the days of Half-Life modding\u2026</p>\n<p>Thank you for taking the time to make and publish this!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 36413,
+   "parent_id": null,
+   "author": "Natty111",
+   "author_id": 58232,
+   "author_url": "https://forge.sp-tarkov.com/user/58232/natty111",
+   "created_at": "2024-07-16T17:18:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Im sorry if Im just dumb but how do you know what button to press to activate bullet time</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 36421,
+   "parent_id": null,
+   "author": "bepis69",
+   "author_id": 5192,
+   "author_url": "https://forge.sp-tarkov.com/user/5192/bepis69",
+   "created_at": "2024-07-16T19:10:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Adding this as a temporary stim effect to something like obdolbos would be rad as fuck</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 3
+  },
+  {
+   "id": 110186,
+   "parent_id": 36413,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2024-07-17T02:22:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>you can reset it in the f12 menu, but by default its mouse 4 so a side mouse button</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 37270,
+   "parent_id": null,
+   "author": "BigBoy69",
+   "author_id": 59204,
+   "author_url": "https://forge.sp-tarkov.com/user/59204/bigboy69",
+   "created_at": "2024-07-24T14:39:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It will be cool as hell, if \u201cBullet Time\u201d auto activate when health got too low, like safe net for not so hardcore player. and more blance gameplay option</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 113173,
+   "parent_id": 37270,
+   "author": "YukoVR",
+   "author_id": 33236,
+   "author_url": "https://forge.sp-tarkov.com/user/33236/yukovr",
+   "created_at": "2024-08-07T17:00:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Very good idea</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 114245,
+   "parent_id": 36421,
+   "author": "Earzentail",
+   "author_id": 61586,
+   "author_url": "https://forge.sp-tarkov.com/user/61586/earzentail",
+   "created_at": "2024-08-17T11:42:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>YESSS!!! Like Jet in Fallout, that would be so cool!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 39211,
+   "parent_id": null,
+   "author": "Earzentail",
+   "author_id": 61586,
+   "author_url": "https://forge.sp-tarkov.com/user/61586/earzentail",
+   "created_at": "2024-08-17T11:46:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m gonna bind the time slow to the same button as some high-end stim and roleplay like that, gonna be fun. Thanks to the author!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 41044,
+   "parent_id": null,
+   "author": "ColinShark",
+   "author_id": 27232,
+   "author_url": "https://forge.sp-tarkov.com/user/27232/colinshark",
+   "created_at": "2024-09-15T19:15:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I just died while the bulletcam was still active and *everything* in the game is extremely slow now lmao</p>\n<p>Animations and transitions (eg accessing hideout stations) is in slow-motion still. Maybe an auto-disable would be nice on raid end haha</p>\n<p>Edit: Getting into a new Raid allows me to toggle the bulletcam again</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 44174,
+   "parent_id": null,
+   "author": "tioobitotv",
+   "author_id": 58769,
+   "author_url": "https://forge.sp-tarkov.com/user/58769/tioobitotv",
+   "created_at": "2024-11-30T19:05:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The best mod</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 44296,
+   "parent_id": null,
+   "author": "akoo",
+   "author_id": 68806,
+   "author_url": "https://forge.sp-tarkov.com/user/68806/akoo",
+   "created_at": "2024-12-02T22:33:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>best mod for spt but needs to update for 3.10</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 44319,
+   "parent_id": null,
+   "author": "Clanf",
+   "author_id": 10061,
+   "author_url": "https://forge.sp-tarkov.com/user/10061/clanf",
+   "created_at": "2024-12-03T09:19:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>yeah unfortunately errors on 3.10, hope Props still around to update, it\u2019s amazing mod</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 125574,
+   "parent_id": 44319,
+   "author": "RogueTech67",
+   "author_id": 9742,
+   "author_url": "https://forge.sp-tarkov.com/user/9742/roguetech67",
+   "created_at": "2025-01-27T17:26:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You\u2019re in luck. I asked \u201cflir\u201d if he might update it for 3.10.x, and he did.</p>\n<p>Low Budget Bullet Time NG</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  }
+ ]
+}

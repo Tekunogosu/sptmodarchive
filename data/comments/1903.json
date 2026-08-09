@@ -1,0 +1,160 @@
+{
+ "mod_id": 1903,
+ "slug": "one-euro-for-skier",
+ "fetched_at": "2026-08-09T07:55:43Z",
+ "reported_total": null,
+ "pages": 1,
+ "count": 15,
+ "comments": [
+  {
+   "id": 45289,
+   "parent_id": null,
+   "author": "USECTy",
+   "author_id": 42899,
+   "author_url": "https://forge.sp-tarkov.com/user/42899/usecty",
+   "created_at": "2024-12-19T17:32:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Love the idea, but there is definitely a balancing issue. 28k euro\u2019s for a M32 Headset is crazy.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 122468,
+   "parent_id": 45289,
+   "author": "UnderdomeRiot",
+   "author_id": 51115,
+   "author_url": "https://forge.sp-tarkov.com/user/51115/underdomeriot",
+   "created_at": "2024-12-19T18:18:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I checked the price, maybe it\u2019s something wrong in your end.</p>\n<p>It cost to me 168\u20ac. Its balanced.</p>\n<p>Maybe another mod is restarting or editing the price?<br />\nSend to you a MP with the demostration.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 122489,
+   "parent_id": 45289,
+   "author": "USECTy",
+   "author_id": 42899,
+   "author_url": "https://forge.sp-tarkov.com/user/42899/usecty",
+   "created_at": "2024-12-19T22:29:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Ok, I\u2019ll do some digging and see if there is a conflict somewhere.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 122877,
+   "parent_id": 45289,
+   "author": "bepis69",
+   "author_id": 5192,
+   "author_url": "https://forge.sp-tarkov.com/user/5192/bepis69",
+   "created_at": "2024-12-25T05:56:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>the default divisor in the code needs to be changed to 168. It\u2019s set to 1 rn so if it fails to fetch the conversion rate dynamically, the roubles get converted to euros 1:1 hence the absurd prices.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 122889,
+   "parent_id": 45289,
+   "author": "UnderdomeRiot",
+   "author_id": 51115,
+   "author_url": "https://forge.sp-tarkov.com/user/51115/underdomeriot",
+   "created_at": "2024-12-25T10:39:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It shouldn\u2019t fail to get the price dynamically, but maybe you\u2019re right, I\u2019ll make the change and upload a new version with the improvement. Thanks for the idea.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 122918,
+   "parent_id": 45289,
+   "author": "bepis69",
+   "author_id": 5192,
+   "author_url": "https://forge.sp-tarkov.com/user/5192/bepis69",
+   "created_at": "2024-12-26T00:46:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>May also want to exempt skier\u2019s euro conversion barter.</p>\n<p>Edit: looks like it\u2019s in the code but the Euro item ID was given instead of the euro barter ID</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 45769,
+   "parent_id": null,
+   "author": "zelchia",
+   "author_id": 70116,
+   "author_url": "https://forge.sp-tarkov.com/user/70116/zelchia",
+   "created_at": "2024-12-28T00:13:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>is it possible to blacklist a item? when im trying to buy euro its using euro instead rubles, making impossible to convert</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 123160,
+   "parent_id": 45289,
+   "author": "jan_kileto",
+   "author_id": 68635,
+   "author_url": "https://forge.sp-tarkov.com/user/68635/jan-kileto",
+   "created_at": "2024-12-29T21:55:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Could you let the more technically-challenged know what the item id is for the euro barter so I can edit it in the mod code and fix this for myself?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 123181,
+   "parent_id": 45769,
+   "author": "UnderdomeRiot",
+   "author_id": 51115,
+   "author_url": "https://forge.sp-tarkov.com/user/51115/underdomeriot",
+   "created_at": "2024-12-30T09:14:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You\u2019re sure? The euros are obviously ignored in the conversion, perhaps you should move the mod in the mod list\u2026 up or down. I still recommend as low as possible. It works correctly for me.</p>\n<p>EDIT: Added a screenshot in main page.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 123183,
+   "parent_id": 45289,
+   "author": "UnderdomeRiot",
+   "author_id": 51115,
+   "author_url": "https://forge.sp-tarkov.com/user/51115/underdomeriot",
+   "created_at": "2024-12-30T09:16:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>What exactly is happening to you? Send me a PM with screenshots so I can see it.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 123201,
+   "parent_id": 45769,
+   "author": "zelchia",
+   "author_id": 70116,
+   "author_url": "https://forge.sp-tarkov.com/user/70116/zelchia",
+   "created_at": "2024-12-30T13:50:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>had to put it in the bottom of my load order, it\u2019s working now. thanks!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 123202,
+   "parent_id": 45769,
+   "author": "UnderdomeRiot",
+   "author_id": 51115,
+   "author_url": "https://forge.sp-tarkov.com/user/51115/underdomeriot",
+   "created_at": "2024-12-30T13:53:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi Zelchia. Glad it works again for you.</p>\n<p>Anyways, I\u2019m working on a new version that might fix the problem.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 49898,
+   "parent_id": null,
+   "author": "bushtail",
+   "author_id": 33775,
+   "author_url": "https://forge.sp-tarkov.com/user/33775/bushtail",
+   "created_at": "2025-03-24T20:20:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You okay with someone else updating this mod and creating a PR?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 51427,
+   "parent_id": null,
+   "author": "Trenchf00t",
+   "author_id": 59370,
+   "author_url": "https://forge.sp-tarkov.com/user/59370/trenchf00t",
+   "created_at": "2025-05-03T23:56:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>FYI all I had to do to get this to work seems to have been to change the version to 3.11 inside the package.json file.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133192,
+   "parent_id": 51427,
+   "author": "Trenchf00t",
+   "author_id": 59370,
+   "author_url": "https://forge.sp-tarkov.com/user/59370/trenchf00t",
+   "created_at": "2025-07-02T23:29:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This is not totally true for anybody who might read this. His trade for euros doesn\u2019t work out of the box without finding the new barter id.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

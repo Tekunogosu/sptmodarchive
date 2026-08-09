@@ -1,0 +1,830 @@
+{
+ "mod_id": 2218,
+ "slug": "progressive-map-access",
+ "fetched_at": "2026-08-09T07:44:13Z",
+ "reported_total": 24,
+ "pages": 3,
+ "count": 82,
+ "comments": [
+  {
+   "id": 53884,
+   "parent_id": null,
+   "author": "Trenchf00t",
+   "author_id": 59370,
+   "author_url": "https://forge.sp-tarkov.com/user/59370/trenchf00t",
+   "created_at": "2025-07-16T04:20:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>My Bad</p>\n<p>While working on my mod list for my install I noticed what a few people have reported, mainly that maps don\u2019t unlock. I have hopefully fixed it. Part of the fix may require a more elaborate solution, but I\u2019ll wait and see if people still have problems.</p>\n<p>The mod still requires that the UI language of the location selection screen is in english.</p>\n<p>I didn\u2019t put a ton of thought into what quests should unlock which maps. I had considered making some maps only unlock once you have completed your first quest on them, like shoreline only unlocking once you\u2019ve finished Fishing Gear, so that it would require you to transit to the map. Would be an interesting hardcore style of change.</p>\n<p>But at any rate, I would be interested in knowing what other people set their maps unlock to.</p>\n<p>If you want a more \u2018Hardcore\u2019 base experience without having to modify the config yourself I now have an optional download that requires you to complete a mission of each map before you actually unlock it for free access.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 53886,
+   "parent_id": null,
+   "author": "gr8czrsghst",
+   "author_id": 44452,
+   "author_url": "https://forge.sp-tarkov.com/user/44452/gr8czrsghst",
+   "created_at": "2025-07-16T05:23:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>When I saw the \u201cHardcore Wipe\u201d map system, I was excited for someone talented to create this mod! Thanks tons, Trench!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133608,
+   "parent_id": 53886,
+   "author": "Trenchf00t",
+   "author_id": 59370,
+   "author_url": "https://forge.sp-tarkov.com/user/59370/trenchf00t",
+   "created_at": "2025-07-16T05:29:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>No problem. Enjoy it and let me know if there are any major issues.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 53888,
+   "parent_id": null,
+   "author": "MOSSY",
+   "author_id": 21760,
+   "author_url": "https://forge.sp-tarkov.com/user/21760/mossy",
+   "created_at": "2025-07-16T06:05:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>First of all thanks for making this mod, great idea. I really like the idea of a Hardcore preset where you have to transit to complete the first quest of each map before unlock. Of course users can make their own custom config but unless you already have the quests memorized obviously some time in the wiki would be necessary and lets be real, we already spend too much time either modding or in the stash rather than in raids.<br />\nIf you get round to it, it would be a must have for any hardcore playthrough!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 53889,
+   "parent_id": null,
+   "author": "probablyEukyre",
+   "author_id": 58981,
+   "author_url": "https://forge.sp-tarkov.com/user/58981/probablyeukyre",
+   "created_at": "2025-07-16T06:21:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>spt continues to outdo nikita buyanov in the big 25</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 5
+  },
+  {
+   "id": 53894,
+   "parent_id": null,
+   "author": "Nail",
+   "author_id": 66974,
+   "author_url": "https://forge.sp-tarkov.com/user/66974/nail",
+   "created_at": "2025-07-16T11:12:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I think it won\u2019t work with FIKA because the transits are disabled by default even if it is enabled in fika.jsonc. I mean for me the transits don\u2019t work.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133612,
+   "parent_id": 53894,
+   "author": "Trenchf00t",
+   "author_id": 59370,
+   "author_url": "https://forge.sp-tarkov.com/user/59370/trenchf00t",
+   "created_at": "2025-07-16T12:52:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I think transits might work if you have a headless. Im not sure. But the locking of map access should still work, just wouldn\u2019t want to rely on transits to complete quests on locked maps.</p>\n<p>Edit: I just checked the fika discord and yes, transits only work if you use a headless. But like I stated the locking of maps should still work either way, just need to keep that in mind when configuring how maps are unlocked.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 133613,
+   "parent_id": 53889,
+   "author": "Trenchf00t",
+   "author_id": 59370,
+   "author_url": "https://forge.sp-tarkov.com/user/59370/trenchf00t",
+   "created_at": "2025-07-16T12:55:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I like how it took the modding community a full two days to make a better \u2018hardcore\u2019 map access then what they had at the start of the wipe. If I could figure out how to track player extracts with the server I would make it more dynamic with only unlocking maps next to recently extracted maps. Or at least add the option.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133614,
+   "parent_id": 53888,
+   "author": "Trenchf00t",
+   "author_id": 59370,
+   "author_url": "https://forge.sp-tarkov.com/user/59370/trenchf00t",
+   "created_at": "2025-07-16T13:03:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I could look into creating a config that by default requires the player to complete a quest on the map prior to it unlocking. Could be fun.</p>\n<p>Edit: Just looking at the map if all maps unlocked in that fashion you would have to transit from Ground zero, into streets, then interchange, just to get to customs, which is where most of the early game quests take place. Would be a heck of a run. But in the spirit of hardcore, I\u2019ll create an optional file that is setup in that way.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133615,
+   "parent_id": 53888,
+   "author": "Trenchf00t",
+   "author_id": 59370,
+   "author_url": "https://forge.sp-tarkov.com/user/59370/trenchf00t",
+   "created_at": "2025-07-16T13:50:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Alright Mossy, I just added a hardcore config optional download. Hope you enjoy.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 53900,
+   "parent_id": null,
+   "author": "boatjesus",
+   "author_id": 81683,
+   "author_url": "https://forge.sp-tarkov.com/user/81683/boatjesus",
+   "created_at": "2025-07-16T15:00:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I was looking for a mod just like this, well done. This might be outside the scope of this mod, but would there be a way to temporarily unlock a map, specifically if you just extracted from it?</p>\n<p>For example, I only have the first 3 maps unlocked but I transit all the way to Shoreline, then extract. I\u2019d like to be able to redeploy to Shoreline on the next raid after extracting, without unlocking the map permanently</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133621,
+   "parent_id": 53900,
+   "author": "Trenchf00t",
+   "author_id": 59370,
+   "author_url": "https://forge.sp-tarkov.com/user/59370/trenchf00t",
+   "created_at": "2025-07-16T15:14:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I might look into that. When I started the project I didn\u2019t see an easy way to track which maps the player has extracted from.</p>\n<p>I might put some time into that.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133622,
+   "parent_id": 53889,
+   "author": "adudewithbadaim",
+   "author_id": 12187,
+   "author_url": "https://forge.sp-tarkov.com/user/12187/adudewithbadaim",
+   "created_at": "2025-07-16T15:26:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>its been way longer than that. Trap released Path to Tarkov years ago and thats the best map access implementation yet.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133623,
+   "parent_id": 53889,
+   "author": "Trenchf00t",
+   "author_id": 59370,
+   "author_url": "https://forge.sp-tarkov.com/user/59370/trenchf00t",
+   "created_at": "2025-07-16T15:29:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019ve never used Path to Tarkov. I\u2019ve heard of it.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133624,
+   "parent_id": 53888,
+   "author": "MOSSY",
+   "author_id": 21760,
+   "author_url": "https://forge.sp-tarkov.com/user/21760/mossy",
+   "created_at": "2025-07-16T15:47:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Bro crazy stuff, thanks so much, lets see how it goes!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133627,
+   "parent_id": 53900,
+   "author": "Trenchf00t",
+   "author_id": 59370,
+   "author_url": "https://forge.sp-tarkov.com/user/59370/trenchf00t",
+   "created_at": "2025-07-16T16:55:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Taking a look at this now and it looks possible. I might be able to have something out later tonight with this feature.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 53906,
+   "parent_id": null,
+   "author": "Noods",
+   "author_id": 33974,
+   "author_url": "https://forge.sp-tarkov.com/user/33974/noods",
+   "created_at": "2025-07-16T17:10:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Honestly, this is a great idea! Especially love the hardcore config because it adds that extra challenge and tension, plus the reward actually feels like you\u2019re making significant progress. I\u2019ve never used transits in SPT and I don\u2019t even know if they function correctly, but if they do then I\u2019d love to try this mod next time I start over. Good work!</p>\n<p>By the way are the maps locked for scavving as well?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133630,
+   "parent_id": 53906,
+   "author": "Trenchf00t",
+   "author_id": 59370,
+   "author_url": "https://forge.sp-tarkov.com/user/59370/trenchf00t",
+   "created_at": "2025-07-16T17:32:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m not sure. Probably, sense I set the map lock status before you actually pick between your scav or pmc. So until I check I\u2019m going to say yes. Might look into a way to open maps for scavs, or maybe a random collection of them. But that might not be doable with the current implementation of the mod.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 53912,
+   "parent_id": null,
+   "author": "ssorbq",
+   "author_id": 60477,
+   "author_url": "https://forge.sp-tarkov.com/user/60477/ssorbq",
+   "created_at": "2025-07-16T19:13:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you very much for your mod! I was able to make myself a challenge, only one available location is Customs. Oh, I think I\u2019m going to be very tired\u2026</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133637,
+   "parent_id": 53884,
+   "author": "ThreeJackdaws",
+   "author_id": 20075,
+   "author_url": "https://forge.sp-tarkov.com/user/20075/threejackdaws",
+   "created_at": "2025-07-16T20:33:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Sounds like a good idea to me. I\u2019m looking to start over, and maps locked behind specific quests and forced transit for the initial unlock sounds great.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133640,
+   "parent_id": 53884,
+   "author": "Trenchf00t",
+   "author_id": 59370,
+   "author_url": "https://forge.sp-tarkov.com/user/59370/trenchf00t",
+   "created_at": "2025-07-16T20:54:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Glad you like the idea. Gives some more depth to progress I think.</p>\n<p>I\u2019m working on an update that will track your last successful extract and will unlock that map until you either die or extract from another map.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133643,
+   "parent_id": 53884,
+   "author": "bsfurr",
+   "author_id": 28325,
+   "author_url": "https://forge.sp-tarkov.com/user/28325/bsfurr",
+   "created_at": "2025-07-16T21:46:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You say you didn\u2019t put a lot of thought into it, but that\u2019s probably more than BSG</p>\n<p>Fantastic mod! I usually avoid transits, but forcing them a bit early game (non-hardcore version) is a great idea imo. It would introduce the player to the concept of transiting, while offering map access as a sort of reward. I\u2019m on board, sir!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 53918,
+   "parent_id": null,
+   "author": "TheFlame",
+   "author_id": 71710,
+   "author_url": "https://forge.sp-tarkov.com/user/71710/theflame",
+   "created_at": "2025-07-16T23:21:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Question: Can I install it after the wipe has started or do I need to reset the wipe to 0?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133657,
+   "parent_id": 53918,
+   "author": "Trenchf00t",
+   "author_id": 59370,
+   "author_url": "https://forge.sp-tarkov.com/user/59370/trenchf00t",
+   "created_at": "2025-07-17T02:44:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It shouldn\u2019t be a problem to install it mid playthrough. The mod will create the necessary files for itself when you load the game. But without customizing the map unlock requirements it might not do much.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 53924,
+   "parent_id": null,
+   "author": "windersvista",
+   "author_id": 34843,
+   "author_url": "https://forge.sp-tarkov.com/user/34843/windersvista",
+   "created_at": "2025-07-17T03:52:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>new version just only Source code?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133659,
+   "parent_id": 53900,
+   "author": "Trenchf00t",
+   "author_id": 59370,
+   "author_url": "https://forge.sp-tarkov.com/user/59370/trenchf00t",
+   "created_at": "2025-07-17T03:57:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I have now added this feature to the mod. It works just like the rest of the location unlocking and the the player will have access to the saved location until they either die or extract from another map.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133660,
+   "parent_id": 53884,
+   "author": "Trenchf00t",
+   "author_id": 59370,
+   "author_url": "https://forge.sp-tarkov.com/user/59370/trenchf00t",
+   "created_at": "2025-07-17T04:13:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I can\u2019t help but agree. Until I started making this mod, I don\u2019t think I have actually used a transit in SPT once. But now its actually kind of exciting sense instead of just being this tacked on thing, its actually useful to gain access to maps and quests.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 133661,
+   "parent_id": 53924,
+   "author": "Trenchf00t",
+   "author_id": 59370,
+   "author_url": "https://forge.sp-tarkov.com/user/59370/trenchf00t",
+   "created_at": "2025-07-17T04:14:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I got it fixed, probably just after you downloaded it. Thanks for the heads up, though.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133662,
+   "parent_id": 53900,
+   "author": "boatjesus",
+   "author_id": 81683,
+   "author_url": "https://forge.sp-tarkov.com/user/81683/boatjesus",
+   "created_at": "2025-07-17T04:57:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>wow awesome, so fast too! you\u2019re a great mod author \ud83d\udc4d</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 133666,
+   "parent_id": 53900,
+   "author": "boatjesus",
+   "author_id": 81683,
+   "author_url": "https://forge.sp-tarkov.com/user/81683/boatjesus",
+   "created_at": "2025-07-17T07:02:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>ok it seems it doesnt actually work, at least in my brief test after extracting from woods it remained unavailable</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133676,
+   "parent_id": 53900,
+   "author": "Trenchf00t",
+   "author_id": 59370,
+   "author_url": "https://forge.sp-tarkov.com/user/59370/trenchf00t",
+   "created_at": "2025-07-17T12:35:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thats strange, could you go into your SPT mod folder and inside of the Progressive Map Access folder find the db folder. This is where all profiles are stored, find your characters folder, if you have more than one and open up \u2018lastRaidResults.json\u2019 and see what it says.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133678,
+   "parent_id": 53924,
+   "author": "windersvista",
+   "author_id": 34843,
+   "author_url": "https://forge.sp-tarkov.com/user/34843/windersvista",
+   "created_at": "2025-07-17T13:17:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>THX! you do the good job! \uff1a\u7231\uff1a</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 53961,
+   "parent_id": null,
+   "author": "Fegeer",
+   "author_id": 40178,
+   "author_url": "https://forge.sp-tarkov.com/user/40178/fegeer",
+   "created_at": "2025-07-18T07:36:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>As a concept, I would love a version of this mod that permanently blocks map selection, forcing you always to use transits. And the only map available for selection would be the one you died in or extracted from.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133714,
+   "parent_id": 53961,
+   "author": "Trenchf00t",
+   "author_id": 59370,
+   "author_url": "https://forge.sp-tarkov.com/user/59370/trenchf00t",
+   "created_at": "2025-07-18T12:59:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Well you could pretty much get that by setting the quest that unlocks any map to be a very late game one. Say completing collector. Then the maps would remain locked pretty much the whole time. That would just require you setting it in the config.</p>\n<p>As for the the maps available being the one you extracted from that is an option already, but right now when you die the mod resets that.</p>\n<p>So its pretty close already to what you are asking for.</p>\n<p>Edit:</p>\n<p>I am tempted to create an option to only allow you to reenter the last map you were on, death or no. Could be an extreme hardcore option.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 133718,
+   "parent_id": 53961,
+   "author": "Fegeer",
+   "author_id": 40178,
+   "author_url": "https://forge.sp-tarkov.com/user/40178/fegeer",
+   "created_at": "2025-07-18T13:43:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>That would be neat! Thanks!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 53974,
+   "parent_id": null,
+   "author": "SHAYAN1281",
+   "author_id": 60664,
+   "author_url": "https://forge.sp-tarkov.com/user/60664/shayan1281",
+   "created_at": "2025-07-18T18:05:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Labs is available although it is set to be locked in the config file. Any idea about why that might happen? (Locked by default is on and quest requirements are also checked to be one that I haven\u2019t reached yet.)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133737,
+   "parent_id": 53974,
+   "author": "Trenchf00t",
+   "author_id": 59370,
+   "author_url": "https://forge.sp-tarkov.com/user/59370/trenchf00t",
+   "created_at": "2025-07-18T21:04:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>What was the last map you extracted from?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 53998,
+   "parent_id": null,
+   "author": "fermetamoule",
+   "author_id": 999,
+   "author_url": "https://forge.sp-tarkov.com/user/999/fermetamoule",
+   "created_at": "2025-07-19T10:37:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The problem is that there\u2019s nothing specific about the maps. They contain practically the same loot\u2026</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133761,
+   "parent_id": 53974,
+   "author": "SHAYAN1281",
+   "author_id": 60664,
+   "author_url": "https://forge.sp-tarkov.com/user/60664/shayan1281",
+   "created_at": "2025-07-19T12:43:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I believe it was ground zeros but then I checked and I had MOAR running so that might\u2019ve conflicted with it too. Right now I\u2019m waiting for the major update so the incompatibility hopefully would be gone. Thanks for responding and this amazing mod!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133767,
+   "parent_id": 53998,
+   "author": "Trenchf00t",
+   "author_id": 59370,
+   "author_url": "https://forge.sp-tarkov.com/user/59370/trenchf00t",
+   "created_at": "2025-07-19T14:02:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m not sure exactly what your getting at? This mod doesn\u2019t touch loot.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 54021,
+   "parent_id": null,
+   "author": "fxh3d",
+   "author_id": 78923,
+   "author_url": "https://forge.sp-tarkov.com/user/78923/fxh3d",
+   "created_at": "2025-07-20T01:48:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Only reason i haven\u2019t used this mod yet is that i am too comfortable with \u201cAlgorithmic Quest Progression\u201d mod which moves some quests around and i am not sure if it would work with it or if i should spend some time adjusting the quest Ids to match the mods.</p>\n<p>Do you know if they work together well?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133785,
+   "parent_id": 54021,
+   "author": "Trenchf00t",
+   "author_id": 59370,
+   "author_url": "https://forge.sp-tarkov.com/user/59370/trenchf00t",
+   "created_at": "2025-07-20T02:52:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You would need to spend some time adjusting which quests were required for which maps.</p>\n<p>Also. You could just have a few maps unlocked and use transits to access adjacent maps</p>\n<p>It would be up to you</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 54062,
+   "parent_id": null,
+   "author": "LordeDoCerol",
+   "author_id": 75933,
+   "author_url": "https://forge.sp-tarkov.com/user/75933/lordedocerol",
+   "created_at": "2025-07-21T03:12:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>thx man, i was just gonna report the problem of the maps not unlocking, and you just released a update</p>\n<p>you\u2019re the boss man</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133823,
+   "parent_id": 53884,
+   "author": "LordeDoCerol",
+   "author_id": 75933,
+   "author_url": "https://forge.sp-tarkov.com/user/75933/lordedocerol",
+   "created_at": "2025-07-21T03:15:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>that\u2019s a really cool idea, although i gotta say that i would prefer for it to be maybe a config on f12 menu, if possible</p>\n<p>i\u2019m playing on a weak cpu, and transits most time force it too much and makes the game crash</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133824,
+   "parent_id": 54062,
+   "author": "Trenchf00t",
+   "author_id": 59370,
+   "author_url": "https://forge.sp-tarkov.com/user/59370/trenchf00t",
+   "created_at": "2025-07-21T03:18:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>No problem, I\u2019ve been working on this update off and on this weekend because it was originally reported on Friday to me. For me, the mod was much more responsive for me with the new update.</p>\n<p>Let me know if anything comes up.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133825,
+   "parent_id": 53884,
+   "author": "Trenchf00t",
+   "author_id": 59370,
+   "author_url": "https://forge.sp-tarkov.com/user/59370/trenchf00t",
+   "created_at": "2025-07-21T03:34:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Its entirely optional. I don\u2019t intend to make any of this mandatory. And its part of the reason I made the hardcore config. I\u2019m still deciding if I want to add a mode that only considers your last map played instead of progression, as per a request lower down in the comments.</p>\n<p>But that will always be mandatory.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 54078,
+   "parent_id": null,
+   "author": "zzb",
+   "author_id": 74117,
+   "author_url": "https://forge.sp-tarkov.com/user/74117/zzb",
+   "created_at": "2025-07-21T12:39:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I deleted the module, but my Merchant is still not unlocked, and the newly added tasks are not deleted. What should I do?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133846,
+   "parent_id": 54078,
+   "author": "Trenchf00t",
+   "author_id": 59370,
+   "author_url": "https://forge.sp-tarkov.com/user/59370/trenchf00t",
+   "created_at": "2025-07-21T12:48:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yeah, I don\u2019t lock any merchants and I don\u2019t add any tasks, so you will have to look at your other mods.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 54088,
+   "parent_id": null,
+   "author": "Simon.rily",
+   "author_id": 70364,
+   "author_url": "https://forge.sp-tarkov.com/user/70364/simonrily",
+   "created_at": "2025-07-21T18:09:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>\u200e\u200f\u200e \u2026\u200e\u200f\u200e \u2026Hello, good time. Don\u2019t be tired. I have a question??! Is it possible to open the map terminal?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133862,
+   "parent_id": 54088,
+   "author": "Trenchf00t",
+   "author_id": 59370,
+   "author_url": "https://forge.sp-tarkov.com/user/59370/trenchf00t",
+   "created_at": "2025-07-21T18:16:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Possibly, I haven\u2019t mapped it out in the mod and I don\u2019t know if spt even has assets for that map in its files.</p>\n<p>So I don\u2019t know.</p>\n<p>Edit: Just looked at the base file in the spt server files and it doesn\u2019t even link to a bsg scene in the assembly. So I\u2019m going with no for the time being.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 54090,
+   "parent_id": null,
+   "author": "ThreeJackdaws",
+   "author_id": 20075,
+   "author_url": "https://forge.sp-tarkov.com/user/20075/threejackdaws",
+   "created_at": "2025-07-21T19:44:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Just updated to the latest version and all maps are locked.</p>\n<p>EDIT:</p>\n<p>Rolled back to 1.1 and Ground Zero is accessible again. Anyone else had this?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133865,
+   "parent_id": 54090,
+   "author": "Trenchf00t",
+   "author_id": 59370,
+   "author_url": "https://forge.sp-tarkov.com/user/59370/trenchf00t",
+   "created_at": "2025-07-21T20:04:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yes, they are all locked by default now. The maps are unlocked via how your config is setup and your quest progress. The default config has ground zero unlocked.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133866,
+   "parent_id": 54090,
+   "author": "Trenchf00t",
+   "author_id": 59370,
+   "author_url": "https://forge.sp-tarkov.com/user/59370/trenchf00t",
+   "created_at": "2025-07-21T20:20:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is there any way you could send me your profile from the latest version. The client portion handles unlocks on the latest and I would like to see it.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133867,
+   "parent_id": 54090,
+   "author": "ThreeJackdaws",
+   "author_id": 20075,
+   "author_url": "https://forge.sp-tarkov.com/user/20075/threejackdaws",
+   "created_at": "2025-07-21T20:21:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I know all are locked by default, which is fine. But what I mean is, even Ground Zero was locked. Literally all maps locked to can\u2019t enter any raids at all.</p>\n<p>This is on a fresh profile, fika headless setup</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133868,
+   "parent_id": 54090,
+   "author": "Trenchf00t",
+   "author_id": 59370,
+   "author_url": "https://forge.sp-tarkov.com/user/59370/trenchf00t",
+   "created_at": "2025-07-21T20:22:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>That helps a lot. I had not tested it in the setup. I\u2019ll do some testing on my headless.</p>\n<p>Thank you</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133869,
+   "parent_id": 54090,
+   "author": "Trenchf00t",
+   "author_id": 59370,
+   "author_url": "https://forge.sp-tarkov.com/user/59370/trenchf00t",
+   "created_at": "2025-07-21T20:23:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>FYI in the most up to date version unlocking is handled by the client so it might need to be on both the headless and the client.</p>\n<p>Funny I was thinking about this setup earlier today when messing with mine.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133870,
+   "parent_id": 54090,
+   "author": "ThreeJackdaws",
+   "author_id": 20075,
+   "author_url": "https://forge.sp-tarkov.com/user/20075/threejackdaws",
+   "created_at": "2025-07-21T20:33:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Okay, can confirm installing on the client as well unlocks GZ as intended.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133871,
+   "parent_id": 54090,
+   "author": "Trenchf00t",
+   "author_id": 59370,
+   "author_url": "https://forge.sp-tarkov.com/user/59370/trenchf00t",
+   "created_at": "2025-07-21T20:43:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Awesome. Sounds good. Let me know if the headless has any issues connecting to raids. Because I haven\u2019t added any logic to not lock maps for headless clients.</p>\n<p>If it does. A work around should be to just set all maps unlocked in the headless profile the mod probably will create</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 54224,
+   "parent_id": null,
+   "author": "fingerinthecave",
+   "author_id": 66117,
+   "author_url": "https://forge.sp-tarkov.com/user/66117/fingerinthecave",
+   "created_at": "2025-07-25T04:24:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>My locations are not unlocking when meeting reqs until i reboot the server. i initially had a problem with ground zero being locked but fixed it the same way. idk if this is something you\u2019ve had to fix before</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 134019,
+   "parent_id": 54224,
+   "author": "Trenchf00t",
+   "author_id": 59370,
+   "author_url": "https://forge.sp-tarkov.com/user/59370/trenchf00t",
+   "created_at": "2025-07-25T04:39:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Did you install the client mod? Because it sounds like you didn\u2019t install the client mod.</p>\n<p>Edit: Just realized it could be due to not using the English localizations of the game UI. If that is the case it would case that behavior as well.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 54239,
+   "parent_id": null,
+   "author": "Angry Noob",
+   "author_id": 11832,
+   "author_url": "https://forge.sp-tarkov.com/user/11832/angry-noob",
+   "created_at": "2025-07-25T13:47:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This mod only works when the player\u2019s language is set to \u2018English\u2019. If \u2018Simplified Chinese\u2019 is selected, it will cause an error and fail to unlock the map correctly</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 134055,
+   "parent_id": 54239,
+   "author": "Trenchf00t",
+   "author_id": 59370,
+   "author_url": "https://forge.sp-tarkov.com/user/59370/trenchf00t",
+   "created_at": "2025-07-25T15:34:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for letting me know. I\u2019ll put something in the description about it currently only working with English version of the game.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 134060,
+   "parent_id": 54224,
+   "author": "fingerinthecave",
+   "author_id": 66117,
+   "author_url": "https://forge.sp-tarkov.com/user/66117/fingerinthecave",
+   "created_at": "2025-07-25T21:36:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>yeah i have both the bepinex plugin and user mod installs, i\u2019m not sure about the whole localization thing. i should be using the english locales</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 134065,
+   "parent_id": 54224,
+   "author": "Trenchf00t",
+   "author_id": 59370,
+   "author_url": "https://forge.sp-tarkov.com/user/59370/trenchf00t",
+   "created_at": "2025-07-25T22:27:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Are you on the latest version of the mod?</p>\n<p>Also if you would, check the server console while navigating between the main menu and the location selection screen and see if you see any instances of</p>\n<p>/ProgressiveMapAccess/CheckQuestProgress/<br />\n/ProgressiveMapAccess/UserProfile/</p>\n<p>/ProgressiveMapAccess/UserRaidStatus/</p>\n<p>Let me know.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 134068,
+   "parent_id": 54224,
+   "author": "fingerinthecave",
+   "author_id": 66117,
+   "author_url": "https://forge.sp-tarkov.com/user/66117/fingerinthecave",
+   "created_at": "2025-07-25T23:00:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i downloaded this like 2 days ago so I should be up to date. i do see lines saying \u2018sending users quest progress\u2019 and then my user profile code after each of those lines you listed</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 134070,
+   "parent_id": 54224,
+   "author": "Trenchf00t",
+   "author_id": 59370,
+   "author_url": "https://forge.sp-tarkov.com/user/59370/trenchf00t",
+   "created_at": "2025-07-25T23:35:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>What other mods are you running? It would also be easier to possibly troubleshoot this if you came to my thread in the spt discord when you had a chance.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 134073,
+   "parent_id": 54239,
+   "author": "Angry Noob",
+   "author_id": 11832,
+   "author_url": "https://forge.sp-tarkov.com/user/11832/angry-noob",
+   "created_at": "2025-07-26T01:40:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Here\u2019s a quick fix: When choosing the map, switch the language to English first. After hitting \u201cNext,\u201d just switch it back and it\u2019ll work fine</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 134075,
+   "parent_id": 54239,
+   "author": "Trenchf00t",
+   "author_id": 59370,
+   "author_url": "https://forge.sp-tarkov.com/user/59370/trenchf00t",
+   "created_at": "2025-07-26T01:42:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thats a good suggestion. Thanks for the tip.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 54311,
+   "parent_id": null,
+   "author": "Ojax",
+   "author_id": 82168,
+   "author_url": "https://forge.sp-tarkov.com/user/82168/ojax",
+   "created_at": "2025-07-27T13:20:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for the update, adjacent extracts working nicely now.</p>\n<p>A suggestion - making car extracts unlock the whole map for the next raid. Would be a nice relief for hardcore type playthroughs, if it is at all within the scope of this mod\u2026.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 134132,
+   "parent_id": 54311,
+   "author": "Trenchf00t",
+   "author_id": 59370,
+   "author_url": "https://forge.sp-tarkov.com/user/59370/trenchf00t",
+   "created_at": "2025-07-27T13:36:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thats an interesting idea.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 54405,
+   "parent_id": null,
+   "author": "ThreeJackdaws",
+   "author_id": 20075,
+   "author_url": "https://forge.sp-tarkov.com/user/20075/threejackdaws",
+   "created_at": "2025-07-30T16:51:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I just noticed theres been an update for path to tarkov for 3.11 which got me thinking.</p>\n<p>Is there a chance you could add an option in the config to lock traders behind specific locations? Or better still (but I doubt it) this be used alongside PTT?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 134248,
+   "parent_id": 54405,
+   "author": "Trenchf00t",
+   "author_id": 59370,
+   "author_url": "https://forge.sp-tarkov.com/user/59370/trenchf00t",
+   "created_at": "2025-07-30T17:01:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I saw someone ask over there if they could be used together. And the reply they got was probably, I think. I don\u2019t really know much about path to tarkov so I\u2019m not really sure of the benefit of using them together.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 134249,
+   "parent_id": 54405,
+   "author": "Trenchf00t",
+   "author_id": 59370,
+   "author_url": "https://forge.sp-tarkov.com/user/59370/trenchf00t",
+   "created_at": "2025-07-30T17:04:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p><a href=\"https://hub.sp-tarkov.com/files/file/2937-trap-s-path-to-tarkov-3-11-update/#comments/comment68412\" target=\"_blank\" rel=\"noreferrer noopener\">This</a> was the comment I mentioned.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 134305,
+   "parent_id": 53998,
+   "author": "fermetamoule",
+   "author_id": 999,
+   "author_url": "https://forge.sp-tarkov.com/user/999/fermetamoule",
+   "created_at": "2025-07-31T20:30:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u201cm talk about the game, not specially your mod</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 134307,
+   "parent_id": 53998,
+   "author": "Trenchf00t",
+   "author_id": 59370,
+   "author_url": "https://forge.sp-tarkov.com/user/59370/trenchf00t",
+   "created_at": "2025-07-31T22:16:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Ah fair.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 54991,
+   "parent_id": null,
+   "author": "TheGoldenaxe001",
+   "author_id": 26392,
+   "author_url": "https://forge.sp-tarkov.com/user/26392/thegoldenaxe001",
+   "created_at": "2025-08-14T04:16:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Would it be possible to add a setting to enable the extract timer? Makes it more planned and risky like before to extract and fixes extracting during the Raid Overhaul blackout event. Could do a transition timer setting too</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135068,
+   "parent_id": 54991,
+   "author": "Trenchf00t",
+   "author_id": 59370,
+   "author_url": "https://forge.sp-tarkov.com/user/59370/trenchf00t",
+   "created_at": "2025-08-14T22:53:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m not sure what your asking for. Are you asking for me to add a setting that allows modifying the extract timer? And is there an issue with compatibility with raid overhauls blackout event? I use both mods together with that event active and I\u2019ve never had an issue.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135069,
+   "parent_id": 54991,
+   "author": "TheGoldenaxe001",
+   "author_id": 26392,
+   "author_url": "https://forge.sp-tarkov.com/user/26392/thegoldenaxe001",
+   "created_at": "2025-08-14T22:55:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>When using this mod, the extracts activate instantly and dont start the timer. I just press confirm and extract with no wait. I\u2019ve also found that I guess bypasses the blackout event blocking the exfils</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135070,
+   "parent_id": 54991,
+   "author": "Trenchf00t",
+   "author_id": 59370,
+   "author_url": "https://forge.sp-tarkov.com/user/59370/trenchf00t",
+   "created_at": "2025-08-14T23:17:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I don\u2019t make any adjustments to extracts at all. And I use this mod with raid overhaul so I can confirm this as well. Its going to have to be another mod you have active that is making those changes.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135071,
+   "parent_id": 54991,
+   "author": "TheGoldenaxe001",
+   "author_id": 26392,
+   "author_url": "https://forge.sp-tarkov.com/user/26392/thegoldenaxe001",
+   "created_at": "2025-08-14T23:28:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m very dumb lol. It\u2019s Trap\u2019s Path to Tarkov that removed the extract timer</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135111,
+   "parent_id": 54991,
+   "author": "Trenchf00t",
+   "author_id": 59370,
+   "author_url": "https://forge.sp-tarkov.com/user/59370/trenchf00t",
+   "created_at": "2025-08-15T23:25:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Glad you figured it out.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 136024,
+   "parent_id": null,
+   "author": "SimplyKitten",
+   "author_id": 29105,
+   "author_url": "https://forge.sp-tarkov.com/user/29105/simplykitten",
+   "created_at": "2025-09-08T00:54:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>For anyone who experiences issues with this patch from the most recent (1.5) update of this mod, such as selecting a map. Do a clean install. I had this issue and doing this fixed it.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

@@ -1,0 +1,90 @@
+{
+ "mod_id": 900,
+ "slug": "time-in-raid-tracker",
+ "fetched_at": "2026-08-09T07:53:13Z",
+ "reported_total": null,
+ "pages": 1,
+ "count": 8,
+ "comments": [
+  {
+   "id": 17146,
+   "parent_id": null,
+   "author": "lopas123",
+   "author_id": 33266,
+   "author_url": "https://forge.sp-tarkov.com/user/33266/lopas123",
+   "created_at": "2023-06-27T15:42:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Great mod, even works on 3.5.8 with no changes, hopefully you will be able to get the UI part working in the future.</p>\n<p>It appears the mod tracks the time for all accounts combined. So if you have more than one account all of their time will be added up. Checked through your code and can see that if we wanted to do it per account can just edit mod.js file (if you ran the mod before) and add the following to \u2026.registerStaticRouter -&gt; Action (anywhere between action and filePath).</p>\n<p>const profile = container.resolve(\u201cProfileHelper\u201d).getPmcProfile(sessionId);then change</p>\n<p>const filePath = path.join(process.cwd(), \u201cuser\u201d, \u201cmods\u201d, \u201cplebeianrat-TimeInRaidTracker-1.0.0\u201d, \u201ctime-tracker.txt\u201d);with the following:</p>\n<p>const filePath = path.join(process.cwd(), \u201cuser\u201d, \u201cmods\u201d, \u201cplebeianrat-TimeInRaidTracker-1.0.0\u201d, <code>${sessionId}-${profileName}-time-tracker.txt</code>);</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 82442,
+   "parent_id": 17146,
+   "author": "plebeian_rat",
+   "author_id": 31263,
+   "author_url": "https://forge.sp-tarkov.com/user/31263/plebeian-rat",
+   "created_at": "2023-06-30T16:46:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>ah excellent point, thank you. I will try this out</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 82449,
+   "parent_id": 17146,
+   "author": "plebeian_rat",
+   "author_id": 31263,
+   "author_url": "https://forge.sp-tarkov.com/user/31263/plebeian-rat",
+   "created_at": "2023-06-30T21:11:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i appreciate the help, great catch. i have updated the code with your changes (minus the sessionID in the file name)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 17289,
+   "parent_id": null,
+   "author": "deveagle",
+   "author_id": 24038,
+   "author_url": "https://forge.sp-tarkov.com/user/24038/deveagle",
+   "created_at": "2023-07-01T07:50:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Can\u2019t you ask the maker of the radar mod how he solved it so that it appears on the screen? Perhaps with this mod solution, this could also be solved so that the information can be placed on the screen.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 19404,
+   "parent_id": null,
+   "author": "lopas123",
+   "author_id": 33266,
+   "author_url": "https://forge.sp-tarkov.com/user/33266/lopas123",
+   "created_at": "2023-08-17T23:30:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Believe with 3.6.1 the game now tracks the time in raid on the UI finally. But it seems to me quite broken (sometimes barely registers time, spent 30 min in PMC raid, but the profile thinks I only spent 2 minutes), this is where think your mod can in a way fix it. (unless somehow this mod breaks the functionality and the time tracking becomes incorrect, which I really doubt).</p>\n<p>Found that by using this we can always replace the profile time with yours, which is more accurate. After it logs/ writes the changes to txt file (and we see in console that it was successful) would then add the following code:</p>\n<p>var raidTimeSeconds = Math.floor(totalTimePlayedInMilliseconds / 1000); profile.Stats.TotalInGameTime = raidTimeSeconds;</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 89960,
+   "parent_id": 19404,
+   "author": "Colkillervin",
+   "author_id": 31852,
+   "author_url": "https://forge.sp-tarkov.com/user/31852/colkillervin",
+   "created_at": "2023-10-17T10:26:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>where do you put this code?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 93261,
+   "parent_id": 19404,
+   "author": "plebeian_rat",
+   "author_id": 31263,
+   "author_url": "https://forge.sp-tarkov.com/user/31263/plebeian-rat",
+   "created_at": "2023-11-21T17:54:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for the suggestion! I implemented it and added a new release. there is a bug where using this method, it only refreshes the UI after client restart, so it isn\u2019t perfect but it does basically work.</p>\n<p>also FYI lopas123 , in JS/TS, you generally want to use let or const for variables rather than var as vars get hoisted to the top of the file, meaning they break scope and become global variables basically.</p>\n<p>Colkillervin the code is in this repo here: <a href=\"https://github.com/ezra-sg/SPT-TimeInRaidTracker\" target=\"_blank\" rel=\"noreferrer noopener\">https://github.com/ezra-sg/SPT-TimeInRaidTracker</a> specifically, the changes were added in src/mod.ts at line 106</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 24391,
+   "parent_id": null,
+   "author": "vampucio",
+   "author_id": 37340,
+   "author_url": "https://forge.sp-tarkov.com/user/37340/vampucio",
+   "created_at": "2023-11-21T18:09:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>this is good for the live game. so every (i have 20000 quintillion hours in raid) it become i have 200 hours in raid and every others in menu and loading screen XD</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  }
+ ]
+}

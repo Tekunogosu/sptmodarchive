@@ -1,0 +1,120 @@
+{
+ "mod_id": 1458,
+ "slug": "inertia-update",
+ "fetched_at": "2026-08-09T07:34:06Z",
+ "reported_total": null,
+ "pages": 1,
+ "count": 11,
+ "comments": [
+  {
+   "id": 33570,
+   "parent_id": null,
+   "author": "carfromsky",
+   "author_id": 39927,
+   "author_url": "https://forge.sp-tarkov.com/user/39927/carfromsky",
+   "created_at": "2024-06-04T13:36:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for the mod, but is there a way to make those changes without this plugin, by editing config file? I just have this little autistic thing to use as less mods as possible, but edit things directly in the config file (like skills xp gain)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 33571,
+   "parent_id": null,
+   "author": "RogueTech67",
+   "author_id": 9742,
+   "author_url": "https://forge.sp-tarkov.com/user/9742/roguetech67",
+   "created_at": "2024-06-04T14:05:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>@<a href=\"https://hub.sp-tarkov.com/user/54336-isaacsin/\" target=\"_blank\" rel=\"noreferrer noopener\">IsaacSin</a>, great mod until we get 3.9.0. Great job.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 106073,
+   "parent_id": 33570,
+   "author": "IsaacSin",
+   "author_id": 51094,
+   "author_url": "https://forge.sp-tarkov.com/user/51094/isaacsin",
+   "created_at": "2024-06-04T15:25:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Compared to using mods, editing the database files directly has no benefits and can only cause conflicts and other difficult to diagnose issues. You won\u2019t get any support from me or most others about how to do it or resolve issues you encounter. If you insist on doing it, you\u2019re on your own.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 33578,
+   "parent_id": null,
+   "author": "poppduder",
+   "author_id": 51979,
+   "author_url": "https://forge.sp-tarkov.com/user/51979/poppduder",
+   "created_at": "2024-06-04T17:22:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you! Going back and forth from live was bugging me.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 33595,
+   "parent_id": null,
+   "author": "keeboz",
+   "author_id": 52391,
+   "author_url": "https://forge.sp-tarkov.com/user/52391/keeboz",
+   "created_at": "2024-06-05T00:34:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>this feels like im playing cod</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 33619,
+   "parent_id": null,
+   "author": "ILoveSPT",
+   "author_id": 36130,
+   "author_url": "https://forge.sp-tarkov.com/user/36130/ilovespt",
+   "created_at": "2024-06-05T08:57:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>If you find a folder named src</p>\n<p>and find a file named mod, and go there, then you need to edit the file.<br />\nReplace the parameters in the config called \u201cmod\u201d with these:</p>\n<p>if (this.config.ChangeInertia) {</p>\n<p>inertia.InertiaLimits.y = -10;</p>\n<p>inertia.MoveTimeRange.x = -0.100;</p>\n<p>inertia.MoveTimeRange.y = -0.10;</p>\n<p>inertia.WalkInertia.x = -0.1000;</p>\n<p>inertia.WalkInertia.y = -0.10;</p>\n<p>}</p>\n<p>if (this.config.ChangeOverweight) {</p>\n<p>stamina.BaseOverweightLimits.y = 0;</p>\n<p>stamina.SprintOverweightLimits.y = 0;</p>\n<p>stamina.WalkOverweightLimits.y = -10;</p>\n<p>stamina.WalkSpeedOverweightLimits.y = -10;</p>\n<p>}</p>\n<p>if (this.config.ChangeStamina) {</p>\n<p>stamina.Capacity = 115;</p>\n<p>stamina.HandsCapacity = 100;</p>\n<p>And you can STRAFE!</p>\n<p>Thanks for the mod!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 106156,
+   "parent_id": 33619,
+   "author": "ILoveSPT",
+   "author_id": 36130,
+   "author_url": "https://forge.sp-tarkov.com/user/36130/ilovespt",
+   "created_at": "2024-06-05T08:59:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Now all that remains is to add a mod for fast leans and then you will get inertia as in versions 12.9-12.11.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 33918,
+   "parent_id": null,
+   "author": "Biboran",
+   "author_id": 53479,
+   "author_url": "https://forge.sp-tarkov.com/user/53479/biboran",
+   "created_at": "2024-06-09T14:48:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>How do I completely remove inertia in the config?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 106584,
+   "parent_id": 33918,
+   "author": "IsaacSin",
+   "author_id": 51094,
+   "author_url": "https://forge.sp-tarkov.com/user/51094/isaacsin",
+   "created_at": "2024-06-09T16:10:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This isn\u2019t the mod for that. Go take a look at <a href=\"https://hub.sp-tarkov.com/files/file/1903-fuinertia-redux/\" target=\"_blank\" rel=\"noreferrer noopener\">FUInertia</a>.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 107066,
+   "parent_id": 33570,
+   "author": "Radicon111",
+   "author_id": 30936,
+   "author_url": "https://forge.sp-tarkov.com/user/30936/radicon111",
+   "created_at": "2024-06-13T07:04:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Head over to FUInertia (original <a href=\"https://hub.sp-tarkov.com/files/file/843-fu-inertia/#comments\" target=\"_blank\" rel=\"noreferrer noopener\">https://hub.sp-tarkov.com/files/file/843-fu-inertia/#comments</a>) and in the comments there I have put a modified Inertia section for globals.json which makes a huge difference and IMO feel better than either FUInertia or this one.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 113055,
+   "parent_id": 33619,
+   "author": "jman_soup",
+   "author_id": 57245,
+   "author_url": "https://forge.sp-tarkov.com/user/57245/jman-soup",
+   "created_at": "2024-08-06T20:10:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hold on, I am confused, are you saying we take the file called \u201cmod\u201d from this mod in the src folder and then replace it with this, or can it just be any mod? If we do have to use this mod, do you know how to make it so its 3.9 compatible?</p>\n<p>Edit: Found another thing on FUInertia that almost entirely removes inertia from the game without a mod.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

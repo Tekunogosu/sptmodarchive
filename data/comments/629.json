@@ -1,0 +1,1090 @@
+{
+ "mod_id": 629,
+ "slug": "virtuals-custom-quests",
+ "fetched_at": "2026-08-09T07:01:48Z",
+ "reported_total": 36,
+ "pages": 4,
+ "count": 108,
+ "comments": [
+  {
+   "id": 9049,
+   "parent_id": null,
+   "author": "StalinsJosef",
+   "author_id": 16695,
+   "author_url": "https://forge.sp-tarkov.com/user/16695/stalinsjosef",
+   "created_at": "2022-10-30T08:13:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Good morning from Germany. (=</p>\n<p>I downloaded your quest line.</p>\n<p>The Log is telling me this.</p>\n<p><a href=\"https://abload.de/image.php?img=errortuctd.jpg\" target=\"_blank\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://abload.de/img/errortuctd.jpg\" alt=\"errortuctd.jpg\" /></a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 69648,
+   "parent_id": 9049,
+   "author": "Virtual",
+   "author_id": 23289,
+   "author_url": "https://forge.sp-tarkov.com/user/23289/virtual",
+   "created_at": "2022-10-30T09:05:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Ah, thank you, all fixed. Just the wrong format for the quest. I\u2019ve updated the file otherwise if you want to quick-fix yourself just head into the VCQ_PACK_1.json file and search for VCQ_13. Just beneath that is:</p>\n<p>\u201caccepted_items\u201d: {</p>\n<p>\u201citem\u201d: \u201c5c12613b86f7743bbe2c3f76\u201d</p>\n<p>},</p>\n<p>Replace with:</p>\n<p>\u201caccepted_items\u201d: [</p>\n<p>\u201c5c12613b86f7743bbe2c3f76\u201d</p>\n<p>],</p>\n<p>Thanks for letting me know</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 69649,
+   "parent_id": 9049,
+   "author": "StalinsJosef",
+   "author_id": 16695,
+   "author_url": "https://forge.sp-tarkov.com/user/16695/stalinsjosef",
+   "created_at": "2022-10-30T12:14:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I did what you told me. It works fine.</p>\n<p>Thx</p>\n<p>PS: I know how valuable bugfixing is. I\u00b4m modding myself but not Tarkov, im modding Farming Simulator.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 9064,
+   "parent_id": null,
+   "author": "FelixG",
+   "author_id": 4864,
+   "author_url": "https://forge.sp-tarkov.com/user/4864/felixg",
+   "created_at": "2022-10-31T09:32:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Cardiac Arrest quest seems to be broken. Can\u2019t hand in the Tarcola\u2019s despite em being found in raid.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 69658,
+   "parent_id": 9064,
+   "author": "Virtual",
+   "author_id": 23289,
+   "author_url": "https://forge.sp-tarkov.com/user/23289/virtual",
+   "created_at": "2022-10-31T09:49:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Well considering that the ID is just \u2018Drink\u2019, I can see why we have a problem lol. I\u2019ve updated the file otherwise if you want to fix it just head into VCQ_PACK_1 and search for Cardiac Arrest. In \u201cAccepted_items\u201d beneath it replace that ID with 57514643245977207f2c2d09 and you should be good. Thanks for letting me know.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 9079,
+   "parent_id": null,
+   "author": "23hijk",
+   "author_id": 23233,
+   "author_url": "https://forge.sp-tarkov.com/user/23233/23hijk",
+   "created_at": "2022-11-01T14:19:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>your mod is so excellent!!</p>\n<p>can i translate it into Chinese and share it in the Chinese community ?i will Label the original author</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 69678,
+   "parent_id": 9079,
+   "author": "Virtual",
+   "author_id": 23289,
+   "author_url": "https://forge.sp-tarkov.com/user/23289/virtual",
+   "created_at": "2022-11-01T14:25:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Sure man! As long as the original License stays with it you can do whatever you like.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 9080,
+   "parent_id": null,
+   "author": "Fatalnightshade",
+   "author_id": 23372,
+   "author_url": "https://forge.sp-tarkov.com/user/23372/fatalnightshade",
+   "created_at": "2022-11-01T15:39:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I seem to be unable to place the Item required for \u201cold Friends\u201d no promt to place it appears in raid when i am at the correct location and idk what is causing the problem</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 69679,
+   "parent_id": 9080,
+   "author": "Vikingen",
+   "author_id": 20248,
+   "author_url": "https://forge.sp-tarkov.com/user/20248/vikingen",
+   "created_at": "2022-11-01T19:03:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Its the other bunker, Z-016.<br />\nAuthor should probably update the text</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 69688,
+   "parent_id": 9080,
+   "author": "Virtual",
+   "author_id": 23289,
+   "author_url": "https://forge.sp-tarkov.com/user/23289/virtual",
+   "created_at": "2022-11-02T02:11:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hmm, that\u2019s odd. The Zone ID is ZB-014. Unless Trap has accidentally swapped them around. Can you confirm that it places in ZB-016?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 69689,
+   "parent_id": 9080,
+   "author": "Fatalnightshade",
+   "author_id": 23372,
+   "author_url": "https://forge.sp-tarkov.com/user/23372/fatalnightshade",
+   "created_at": "2022-11-02T02:34:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>can confirm its ZB-016 as I just completed the quest and placed it there so it\u2019s up to you now Virtual which numbers get changed? otherwise cool idea for quests enjoying them so far</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 69690,
+   "parent_id": 9080,
+   "author": "Virtual",
+   "author_id": 23289,
+   "author_url": "https://forge.sp-tarkov.com/user/23289/virtual",
+   "created_at": "2022-11-02T03:06:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>That\u2019s interesting, thanks for letting me know I\u2019ll change it now. And thanks for the feedback</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 9097,
+   "parent_id": null,
+   "author": "adudewithbadaim",
+   "author_id": 12187,
+   "author_url": "https://forge.sp-tarkov.com/user/12187/adudewithbadaim",
+   "created_at": "2022-11-03T00:18:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you for taking the time to make these! They are great and youre right about pack 1 blending seamlessly.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 69707,
+   "parent_id": 9097,
+   "author": "Virtual",
+   "author_id": 23289,
+   "author_url": "https://forge.sp-tarkov.com/user/23289/virtual",
+   "created_at": "2022-11-03T04:02:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for the kind words . I\u2019m working on a separate mod for quests atm so that I can use everything available to me. Means alot more features can be included in the quests so stay tuned!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 9135,
+   "parent_id": null,
+   "author": "Blacky",
+   "author_id": 22812,
+   "author_url": "https://forge.sp-tarkov.com/user/22812/blacky",
+   "created_at": "2022-11-06T17:29:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Would this work with 3.2.2?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 69811,
+   "parent_id": 9135,
+   "author": "Virtual",
+   "author_id": 23289,
+   "author_url": "https://forge.sp-tarkov.com/user/23289/virtual",
+   "created_at": "2022-11-07T12:40:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Traps Custom Quests works with 3.2.5 and is 3.2.0, so I\u2019d assume so, yes.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 9156,
+   "parent_id": null,
+   "author": "AverageOdd",
+   "author_id": 22886,
+   "author_url": "https://forge.sp-tarkov.com/user/22886/averageodd",
+   "created_at": "2022-11-07T21:47:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Just so you are aware, the quest close and personal: part 2 does not specify whether the player is to use a 9mm or a .45 vector. I obviously found out I was using the wrong one but it would be a good touch to change it to specify. great mod btw. much thanks for the time you put into it! thx.</p>\n<p>edit: I have now tried both vectors and neither work however I do have some mods that may be conflicting. ill see if I can resolve it by deleting them.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 69844,
+   "parent_id": 9156,
+   "author": "Virtual",
+   "author_id": 23289,
+   "author_url": "https://forge.sp-tarkov.com/user/23289/virtual",
+   "created_at": "2022-11-08T11:24:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The issue for this one isn\u2019t the guns, it\u2019s because the location is set to Customs instead of Interchange. I\u2019ve updated the file and you can just replace if you\u2019d like, or you can just hotfix it by searching for the Close and Personal part 2 quest in VCQ_MASTERY_1 and changing the location from \u2018customs\u2019 to \u2018interchange\u2019. Thanks for the heads up, hope this didn\u2019t cause too much of a headache lol.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 69857,
+   "parent_id": 9156,
+   "author": "AverageOdd",
+   "author_id": 22886,
+   "author_url": "https://forge.sp-tarkov.com/user/22886/averageodd",
+   "created_at": "2022-11-08T18:25:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey good to hear. Not a problem at all! Thanks for the mod!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 9201,
+   "parent_id": null,
+   "author": "StalinsJosef",
+   "author_id": 16695,
+   "author_url": "https://forge.sp-tarkov.com/user/16695/stalinsjosef",
+   "created_at": "2022-11-10T09:52:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Me again.</p>\n<p>I have Old Friends from Jaeger. There is no Dialogue to place the Intelligence folder.<br />\nIt doesn\u00b4t work when i place the folder in one of the 4 crates.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 69936,
+   "parent_id": 9201,
+   "author": "Virtual",
+   "author_id": 23289,
+   "author_url": "https://forge.sp-tarkov.com/user/23289/virtual",
+   "created_at": "2022-11-11T06:25:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The Zone ID\u2019s that I used were backwards, so I believe although it says ZB-014 it\u2019s actually ZB-016, so hopefully that one works.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 69942,
+   "parent_id": 9201,
+   "author": "StalinsJosef",
+   "author_id": 16695,
+   "author_url": "https://forge.sp-tarkov.com/user/16695/stalinsjosef",
+   "created_at": "2022-11-12T09:50:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The bug was sitting in front of the screen. I had the Version in use where i fixed the Tar Cola Quest. Sorry for the false alert. =)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 9462,
+   "parent_id": null,
+   "author": "ReLOAD07",
+   "author_id": 23389,
+   "author_url": "https://forge.sp-tarkov.com/user/23389/reload07",
+   "created_at": "2022-11-27T09:14:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>is there a way to rename these quests so i know which are vanilla or modded?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 70257,
+   "parent_id": 9462,
+   "author": "Virtual",
+   "author_id": 23289,
+   "author_url": "https://forge.sp-tarkov.com/user/23289/virtual",
+   "created_at": "2022-11-27T12:08:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>In the respective JSON files there is a \u201cname\u201d value for each quest. You can change this value to whatever you like and add something like [Mod] to the front of the name if you want to.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 70261,
+   "parent_id": 9462,
+   "author": "trap",
+   "author_id": 15099,
+   "author_url": "https://forge.sp-tarkov.com/user/15099/trap",
+   "created_at": "2022-11-27T13:59:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>That\u2019s a pretty good feature idea for Custom Quests mod. i.e. the ability to autoprefix quest names</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 70269,
+   "parent_id": 9462,
+   "author": "trap",
+   "author_id": 15099,
+   "author_url": "https://forge.sp-tarkov.com/user/15099/trap",
+   "created_at": "2022-11-27T17:35:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p><a href=\"https://hub.sp-tarkov.com/files/file/588-custom-quests/#versions\" target=\"_blank\" rel=\"noreferrer noopener\">Custom Quests 3.1.0</a> is out!</p>\n<p>Now you can differentiate custom quests from vanilla quests thanks to the new default_quest_name_prefix option in config/config.json file</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 9690,
+   "parent_id": null,
+   "author": "Fenah35",
+   "author_id": 4971,
+   "author_url": "https://forge.sp-tarkov.com/user/4971/fenah35",
+   "created_at": "2022-12-11T16:36:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I use your\u2019s quests with Trap\u2019s mod. Will it have an effect on the profile when we switch to it? I don\u2019t think it will pass until I update the quests, but if we\u2019re sure it\u2019s okay, things might change.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 70648,
+   "parent_id": 9690,
+   "author": "Virtual",
+   "author_id": 23289,
+   "author_url": "https://forge.sp-tarkov.com/user/23289/virtual",
+   "created_at": "2022-12-12T03:43:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Its the exact same content, so as long as you remove it from Trap\u2019s so they arent both loaded it will be fine. However you dont need to update to this for 3.3.0 as I haven\u2019t changed or added any of the quests.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 70652,
+   "parent_id": 9690,
+   "author": "Kryptic-S01",
+   "author_id": 2685,
+   "author_url": "https://forge.sp-tarkov.com/user/2685/kryptic-s01",
+   "created_at": "2022-12-12T09:28:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Virtual are you planning on adding more quests in the future? I would love to see more added as I\u2019m not far from finishing them</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 70653,
+   "parent_id": 9690,
+   "author": "Virtual",
+   "author_id": 23289,
+   "author_url": "https://forge.sp-tarkov.com/user/23289/virtual",
+   "created_at": "2022-12-12T10:34:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I do plan on a load more however, I spent a significant amount of time making the loader since Trap\u2019s mod only had so many features and I wanted a large variety of quests (in saying that I also wanted custom images). I\u2019m looking at a quick balance update for the rewards and then will be onto new quests, releasing them 20 at a time hopefully.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 9731,
+   "parent_id": null,
+   "author": "crosswayne",
+   "author_id": 24113,
+   "author_url": "https://forge.sp-tarkov.com/user/24113/crosswayne",
+   "created_at": "2022-12-13T07:53:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>quest \u201csend \u2019em back\u201d eliminate 10 raiders on the laboratory didn\u2019t worked, i\u2019ve kill more than 10 and the quest didnt increase even single kill.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 70690,
+   "parent_id": 9731,
+   "author": "Virtual",
+   "author_id": 23289,
+   "author_url": "https://forge.sp-tarkov.com/user/23289/virtual",
+   "created_at": "2022-12-13T09:45:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Ah, thank you. Thought I fixed this but apparently not. Download has been updated.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 70695,
+   "parent_id": 9731,
+   "author": "crosswayne",
+   "author_id": 24113,
+   "author_url": "https://forge.sp-tarkov.com/user/24113/crosswayne",
+   "created_at": "2022-12-13T12:38:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>quest \u201cespionage: part 2\u201d survive and extract didnt worked, tried to extract 2 times but still didnt count as extract</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 70720,
+   "parent_id": 9731,
+   "author": "crosswayne",
+   "author_id": 24113,
+   "author_url": "https://forge.sp-tarkov.com/user/24113/crosswayne",
+   "created_at": "2022-12-14T05:51:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>quest \u201celimination conditioning\u201d kill player with DVL-10 on interchange didnt worked. been tried with both version of DVL, not a single kill registered.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 70721,
+   "parent_id": 9731,
+   "author": "Virtual",
+   "author_id": 23289,
+   "author_url": "https://forge.sp-tarkov.com/user/23289/virtual",
+   "created_at": "2022-12-14T07:08:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you very much. All those quests were set to one session only and that sounds like a nightmare.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 70722,
+   "parent_id": 9731,
+   "author": "crosswayne",
+   "author_id": 24113,
+   "author_url": "https://forge.sp-tarkov.com/user/24113/crosswayne",
+   "created_at": "2022-12-14T07:15:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>ah ok, thank you for your help. And i\u2019ll report here if there\u2019s another quest bug / troubleshoot.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 70750,
+   "parent_id": 9731,
+   "author": "crosswayne",
+   "author_id": 24113,
+   "author_url": "https://forge.sp-tarkov.com/user/24113/crosswayne",
+   "created_at": "2022-12-15T09:15:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>quest \u201cexceptional marksman: part 4\u201d quest location &amp; description different.<br />\nquest location is on reserve, but the description is on labs.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 70767,
+   "parent_id": 9731,
+   "author": "Virtual",
+   "author_id": 23289,
+   "author_url": "https://forge.sp-tarkov.com/user/23289/virtual",
+   "created_at": "2022-12-16T08:23:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Damn, you are flying through these. I\u2019ve updated the file, keep \u2019em coming.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 70856,
+   "parent_id": 9731,
+   "author": "crosswayne",
+   "author_id": 24113,
+   "author_url": "https://forge.sp-tarkov.com/user/24113/crosswayne",
+   "created_at": "2022-12-20T13:47:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>thats all.<br />\nthanks for the attention mate, hope u can add more quest</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 10323,
+   "parent_id": null,
+   "author": "WoBra",
+   "author_id": 21591,
+   "author_url": "https://forge.sp-tarkov.com/user/21591/wobra",
+   "created_at": "2023-01-04T16:42:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi, with me are instead of the mission names eg only \u201cVQC_12 name\u201d have I done something wrong?</p>\n<p>Trap\u2019s Custom Quests mod is installed.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 71511,
+   "parent_id": 10323,
+   "author": "WoBra",
+   "author_id": 21591,
+   "author_url": "https://forge.sp-tarkov.com/user/21591/wobra",
+   "created_at": "2023-01-05T00:57:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi, I have now found out that it is due to the non-existent language file.</p>\n<p>I have therefore translated the language file to German. If you want to add this file to the mod then I\u2019ll send you the gladly, if more are planned I can also translate them. Otherwise I use the for me. Will the aucuh not upload or send further without permission.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 71518,
+   "parent_id": 10323,
+   "author": "Virtual",
+   "author_id": 23289,
+   "author_url": "https://forge.sp-tarkov.com/user/23289/virtual",
+   "created_at": "2023-01-05T04:18:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Traps is only required for version 1.0 of this mod. Did you download the correct one? And yeah, I\u2019ve only got English and Russian translations as of the latest version but you can just copy the locale from \u2018en\u2019 to another language if you can understand both.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 71535,
+   "parent_id": 10323,
+   "author": "WoBra",
+   "author_id": 21591,
+   "author_url": "https://forge.sp-tarkov.com/user/21591/wobra",
+   "created_at": "2023-01-05T14:18:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I have only installed VCQL and this one. It was only because of the language.</p>\n<p>As I said, if you want to use the German translation I send you. I have translated all the quests in German. Also everything works.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 71609,
+   "parent_id": 10323,
+   "author": "Virtual",
+   "author_id": 23289,
+   "author_url": "https://forge.sp-tarkov.com/user/23289/virtual",
+   "created_at": "2023-01-07T09:18:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019d be more than happy to add the German translation to the mod. Feel free to send it through</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 10976,
+   "parent_id": null,
+   "author": "BlindBoomer",
+   "author_id": 26011,
+   "author_url": "https://forge.sp-tarkov.com/user/26011/blindboomer",
+   "created_at": "2023-01-26T06:55:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Sorry to trouble anyone, but when I try and install \u201cVQC 2.2.3 the server tells me that the mod is missing package.json</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 72433,
+   "parent_id": 10976,
+   "author": "Virtual",
+   "author_id": 23289,
+   "author_url": "https://forge.sp-tarkov.com/user/23289/virtual",
+   "created_at": "2023-01-26T07:10:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Then you have installed it wrong. Move the file \u2018user\u2019 inside of the mod files into your SPT folder. Also you need VCQL installed prior for this to work. It is not a standalone mod.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 72434,
+   "parent_id": 10976,
+   "author": "BlindBoomer",
+   "author_id": 26011,
+   "author_url": "https://forge.sp-tarkov.com/user/26011/blindboomer",
+   "created_at": "2023-01-26T07:12:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            \n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 11284,
+   "parent_id": null,
+   "author": "CobraChickken",
+   "author_id": 26494,
+   "author_url": "https://forge.sp-tarkov.com/user/26494/cobrachickken",
+   "created_at": "2023-02-02T22:32:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi, I seem to have an issue with having both these and the Goblin Kings quest to show up. I\u2019ve got VCQL in (I believe) the correct spot, and extracted both the quest pack and the Goblin King mod into the correct spots, but I still can\u2019t see the quests. The server launcher will also give me an error saying the .json doesn\u2019t exist. Any advice?</p>\n<p>Thanks</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 72911,
+   "parent_id": 11284,
+   "author": "CobraChickken",
+   "author_id": 26494,
+   "author_url": "https://forge.sp-tarkov.com/user/26494/cobrachickken",
+   "created_at": "2023-02-03T01:18:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Specifically, I get the following error in the server launcher:</p>\n<p>\u201cMod Virtual\u2019s Custom Quest Loader package.json main property points to non-existing file\u201d</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73089,
+   "parent_id": 11284,
+   "author": "Virtual",
+   "author_id": 23289,
+   "author_url": "https://forge.sp-tarkov.com/user/23289/virtual",
+   "created_at": "2023-02-05T12:24:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This definitely sounds like an installation issue. I\u2019d probably reinstall both (shouldn\u2019t hurt your game) and ensure you put everything where it should be. VCQL should be installed first into the mods folder and the relevant Goblin King files into it (is just a few jsons). I would grab a new download because I\u2019m not sure how the package has any issues since I have tested all current uploads.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73149,
+   "parent_id": 11284,
+   "author": "CobraChickken",
+   "author_id": 26494,
+   "author_url": "https://forge.sp-tarkov.com/user/26494/cobrachickken",
+   "created_at": "2023-02-06T11:14:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I figured it out\u2026\u2026im just an idiot and there was an extra root folder, so the server launcher wasnt picking up the correct location. I got it working though, thanks for the reply, and awesome mod!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 12531,
+   "parent_id": null,
+   "author": "ameano_acid",
+   "author_id": 27500,
+   "author_url": "https://forge.sp-tarkov.com/user/27500/ameano-acid",
+   "created_at": "2023-02-24T19:31:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey! Espionage Part 2 does not complete when entering the room. I have been through every room in both dorms buildings and don\u2019t complete the subtask. I had this issue with GoblinKing mod, but was able to fix it by moving a BepInEx plugin into the proper folder. Any suggestions? All the kill tasks and turn in tasks work just fine.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 75088,
+   "parent_id": 12531,
+   "author": "ameano_acid",
+   "author_id": 27500,
+   "author_url": "https://forge.sp-tarkov.com/user/27500/ameano-acid",
+   "created_at": "2023-02-25T01:04:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The kill PMCs using an SVD on labs doesn\u2019t seem to be counting kills either.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 12990,
+   "parent_id": null,
+   "author": "ReLOAD07",
+   "author_id": 23389,
+   "author_url": "https://forge.sp-tarkov.com/user/23389/reload07",
+   "created_at": "2023-03-07T03:23:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Espionage Part 2 gives 0.30 Peacekeeper REP, is this intentional?</p>\n<p>for context normal tasks gives like 0.02 - 0.05 rep</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 14262,
+   "parent_id": null,
+   "author": "IronRonin",
+   "author_id": 29266,
+   "author_url": "https://forge.sp-tarkov.com/user/29266/ironronin",
+   "created_at": "2023-04-02T20:34:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Kill PMCs on Labs with the SVD is not counting kills. Is there a detail for this task missing? Specific attachment or something?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 78112,
+   "parent_id": 14262,
+   "author": "tip",
+   "author_id": 29683,
+   "author_url": "https://forge.sp-tarkov.com/user/29683/tip",
+   "created_at": "2023-04-06T15:32:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This is a bug in the quest definition. You have to adjust an entry in <em><strong>mods\\Virtual\u2019s Custom Quest Loader\\database\\quests\\VCQM.json</strong></em>.</p>\n<p>On line 1131 \u201claboratory\u201d must be written with a small L, then the quest will work.</p>\n<p>\u201cVCQM_9\u201d: { \u201cQuestName\u201d: \u201cExceptional Marksman: Part 4\u201d, \u201c_id\u201d: \u201cVCQM_9\u201d, \u201ccanShowNotificationsInGame\u201d: true, \u201cchangeQuestMessageText\u201d: \u201cVCQM_9 changeQuestMessageText\u201d, \u201cconditions\u201d: { \u201cAvailableForFinish\u201d: [ { \u201c_parent\u201d: \u201cCounterCreator\u201d, \u201c_props\u201d: { \u201ccounter\u201d: { \u201cid\u201d: \u201cVCQM_9_AFF_0_0\u201d, \u201cconditions\u201d: [ { \u201c_parent\u201d: \u201cKills\u201d, \u201c_props\u201d: { \u201ctarget\u201d: \u201cAnyPmc\u201d, \u201ccompareMethod\u201d: \u201c&gt;=\u201d, \u201cvalue\u201d: \u201c1\u201d, \u201cid\u201d: \u201cVCQM_9_AFF_0_1\u201d, \u201cweapon\u201d: [ \u201c5c46fbd72e2216398b5a8c9c\u201d ] } }, { \u201c_parent\u201d: \u201cLocation\u201d, \u201c_props\u201d: { \u201ctarget\u201d: [ \u201cLaboratory\u201d // must be \u201claboratory\u201d with an lowercase L ], \u201cid\u201d: \u201cVCQM_9_AFF_0_2\u201d } } ] }, \u201cid\u201d: \u201cVCQM_9_AFF_0\u201d, \u201cindex\u201d: 0, \u201cparentId\u201d: \u201c\u201d, \u201coneSessionOnly\u201d: false, \u201cdynamicLocale\u201d: false, \u201ctype\u201d: \u201cElimination\u201d, \u201cdoNotResetIfCounterCompleted\u201d: false, \u201cvalue\u201d: \u201c10\u201d, \u201cvisibilityConditions\u201d: [] }, \u201cdynamicLocale\u201d: false } ]</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 15152,
+   "parent_id": null,
+   "author": "HiddenCirno",
+   "author_id": 21463,
+   "author_url": "https://forge.sp-tarkov.com/user/21463/hiddencirno",
+   "created_at": "2023-04-25T07:53:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>can i make a translate files for chinese? this mod is excellent but it\u2019s just english\u2026.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 79307,
+   "parent_id": 15152,
+   "author": "HiddenCirno",
+   "author_id": 21463,
+   "author_url": "https://forge.sp-tarkov.com/user/21463/hiddencirno",
+   "created_at": "2023-04-25T08:05:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Ah and can I republish it on the oddba forum ?</p>\n<p>if you dont mind\u2026.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 79503,
+   "parent_id": 15152,
+   "author": "Virtual",
+   "author_id": 23289,
+   "author_url": "https://forge.sp-tarkov.com/user/23289/virtual",
+   "created_at": "2023-04-29T10:41:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Sorry for the late reply. This pack is actually already translated on oddba. In saying that though, you can do what you like, I don\u2019t mind :).</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 79525,
+   "parent_id": 15152,
+   "author": "HiddenCirno",
+   "author_id": 21463,
+   "author_url": "https://forge.sp-tarkov.com/user/21463/hiddencirno",
+   "created_at": "2023-04-30T06:37:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>oh ok thank you</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 15512,
+   "parent_id": null,
+   "author": "NxstyKxng",
+   "author_id": 30827,
+   "author_url": "https://forge.sp-tarkov.com/user/30827/nxstykxng",
+   "created_at": "2023-05-08T21:13:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>espionage part 2 isnt progressing when standing in the room with the safe at dorms</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 79795,
+   "parent_id": 15512,
+   "author": "NxstyKxng",
+   "author_id": 30827,
+   "author_url": "https://forge.sp-tarkov.com/user/30827/nxstykxng",
+   "created_at": "2023-05-08T21:14:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>aaand just as i wrote this im stuck in the room and cant get out since the door now doesnt open again</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 15923,
+   "parent_id": null,
+   "author": "ZaBanOff",
+   "author_id": 6471,
+   "author_url": "https://forge.sp-tarkov.com/user/6471/zabanoff",
+   "created_at": "2023-05-23T01:55:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Have you used a translator to translate into Russian?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 80427,
+   "parent_id": 15923,
+   "author": "Virtual",
+   "author_id": 23289,
+   "author_url": "https://forge.sp-tarkov.com/user/23289/virtual",
+   "created_at": "2023-05-23T05:19:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I have absolutely no idea how they were translated. The file was given to me by <a href=\"https://hub.sp-tarkov.com/user/15022-djanbolt/\" target=\"_blank\" rel=\"noreferrer noopener\">djanbolt</a>. Is there an issue with the Russian locales?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 80429,
+   "parent_id": 15923,
+   "author": "ZaBanOff",
+   "author_id": 6471,
+   "author_url": "https://forge.sp-tarkov.com/user/6471/zabanoff",
+   "created_at": "2023-05-23T05:59:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>yes. looks like um..cringe. why did the skier speak differently it\u2019s like he\u2019s 50 years old and he doesn\u2019t understand anything about smuggling</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 80430,
+   "parent_id": 15923,
+   "author": "ZaBanOff",
+   "author_id": 6471,
+   "author_url": "https://forge.sp-tarkov.com/user/6471/zabanoff",
+   "created_at": "2023-05-23T06:01:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>maybe i can translate it normaly? but i can understand how</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 80431,
+   "parent_id": 15923,
+   "author": "Virtual",
+   "author_id": 23289,
+   "author_url": "https://forge.sp-tarkov.com/user/23289/virtual",
+   "created_at": "2023-05-23T06:09:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Haha, fair enough. I had a quick look and they translate back over okay, obviously I can\u2019t check them in Russian because I don\u2019t speak it. I\u2019m gonna be honest and say that this is probably just my shitty description writing. Probably \u2018cringe\u2019 from the start.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 80432,
+   "parent_id": 15923,
+   "author": "Virtual",
+   "author_id": 23289,
+   "author_url": "https://forge.sp-tarkov.com/user/23289/virtual",
+   "created_at": "2023-05-23T06:10:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Basically, you just take the English variant of the locales file that is given in the download and change the right side text of each value into the Russian one.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 80433,
+   "parent_id": 15923,
+   "author": "ZaBanOff",
+   "author_id": 6471,
+   "author_url": "https://forge.sp-tarkov.com/user/6471/zabanoff",
+   "created_at": "2023-05-23T06:14:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>ok i try it</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 16013,
+   "parent_id": null,
+   "author": "electriclaz",
+   "author_id": 18021,
+   "author_url": "https://forge.sp-tarkov.com/user/18021/electriclaz",
+   "created_at": "2023-05-25T08:10:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi, Love the mod but I think I\u2019m getting a task tab bug from it, also a quest called \u201cFactory Cleaning II\u201d has shown up as active, as soon as I remove the mod the game is behaving normally again. <a href=\"https://hub.sp-tarkov.com/forum/thread/3192-modded-task-tab-bug/\" target=\"_blank\" rel=\"noreferrer noopener\">[MODDED] Task Tab Bug</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 16047,
+   "parent_id": null,
+   "author": "notjasonlee",
+   "author_id": 9989,
+   "author_url": "https://forge.sp-tarkov.com/user/9989/notjasonlee",
+   "created_at": "2023-05-26T00:32:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is anybody else having issues with the task tab staying open and blocking the screen in AND out of raid?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 80578,
+   "parent_id": 16047,
+   "author": "CarlC",
+   "author_id": 31035,
+   "author_url": "https://forge.sp-tarkov.com/user/31035/carlc",
+   "created_at": "2023-05-26T09:46:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>same issue with a factory cleaning 2 keep active</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 80629,
+   "parent_id": 16047,
+   "author": "Virtual",
+   "author_id": 23289,
+   "author_url": "https://forge.sp-tarkov.com/user/23289/virtual",
+   "created_at": "2023-05-27T04:50:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>We\u2019ve hopefully identified the quest that was doing this. Thank you for reporting. The latest version should fix this issue.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 16101,
+   "parent_id": null,
+   "author": "AlexLAN",
+   "author_id": 15890,
+   "author_url": "https://forge.sp-tarkov.com/user/15890/alexlan",
+   "created_at": "2023-05-27T12:46:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Exceptional Shooter: Part 4</p>\n<p>I kill all the raiders and PMCs from the SIDS, but the quest does not count.</p>\n<p>UPD: I replaced PMCs with Raiders - it doesn\u2019t work either</p>\n<p>((</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 80643,
+   "parent_id": 16101,
+   "author": "Virtual",
+   "author_id": 23289,
+   "author_url": "https://forge.sp-tarkov.com/user/23289/virtual",
+   "created_at": "2023-05-27T12:50:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Ah yeah. Another bad capitalization. If you open the VCQM json and find</p>\n<p>{<br />\n\u201c_parent\u201d: \u201cLocation\u201d,<br />\n\u201c_props\u201d: {<br />\n\u201ctarget\u201d: [<br />\n\u201cLaboratory\u201d<br />\n],<br />\n\u201cid\u201d: \u201cVCQM_9_AFF_0_2\u201d<br />\n}<br />\n}</p>\n<p>within VCQM_9, you can change \u201cLaboratory\u201d to \u201claboratory\u201d.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 80645,
+   "parent_id": 16101,
+   "author": "AlexLAN",
+   "author_id": 15890,
+   "author_url": "https://forge.sp-tarkov.com/user/15890/alexlan",
+   "created_at": "2023-05-27T13:38:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Just checked (returned to the beginning through the Profile Editor), it works.</p>\n<p>Thank you very much!!!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 80649,
+   "parent_id": 16047,
+   "author": "notjasonlee",
+   "author_id": 9989,
+   "author_url": "https://forge.sp-tarkov.com/user/9989/notjasonlee",
+   "created_at": "2023-05-27T15:10:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you, that fixed it for me!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 16493,
+   "parent_id": null,
+   "author": "CarlC",
+   "author_id": 31035,
+   "author_url": "https://forge.sp-tarkov.com/user/31035/carlc",
+   "created_at": "2023-06-07T12:39:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>There is no localisation for VCQ_10. I personally believe it should be Espionage Part 2.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 81316,
+   "parent_id": 16493,
+   "author": "Virtual",
+   "author_id": 23289,
+   "author_url": "https://forge.sp-tarkov.com/user/23289/virtual",
+   "created_at": "2023-06-08T07:52:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Whoops, uploaded the wrong file by the looks of it. Thank you. Upload is fixed.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 16645,
+   "parent_id": null,
+   "author": "Prismic320",
+   "author_id": 32067,
+   "author_url": "https://forge.sp-tarkov.com/user/32067/prismic320",
+   "created_at": "2023-06-12T07:33:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi, I just installed the Custom quests and loader and when launching i get this. Pretend i know nothing lmao</p>\n<p>TypeError: Cannot read properties of undefined (reading \u2018length\u2019)</p>\n<p>at C:\\Users\\austi\\OneDrive\\Desktop\\spt\\user\\mods\\Virtual\u2019s Custom Quest Loader\\src\\mod.js:73:27</p>\n<p>at FSReqCallback.oncomplete (node:fs:188:23)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 17355,
+   "parent_id": null,
+   "author": "nueriskin",
+   "author_id": 33487,
+   "author_url": "https://forge.sp-tarkov.com/user/33487/nueriskin",
+   "created_at": "2023-07-02T11:48:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey, Espionage 2 still seems to be bugged, no error messages shown on the server level, just can\u2019t complete the quest.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 82570,
+   "parent_id": 17355,
+   "author": "nueriskin",
+   "author_id": 33487,
+   "author_url": "https://forge.sp-tarkov.com/user/33487/nueriskin",
+   "created_at": "2023-07-02T16:23:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Nevermind, after starting a new profile, the quest worked. Sorry for the false report.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 17556,
+   "parent_id": null,
+   "author": "mutaco",
+   "author_id": 12460,
+   "author_url": "https://forge.sp-tarkov.com/user/12460/mutaco",
+   "created_at": "2023-07-08T03:30:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Espionage part 2, I didn\u2019t find anything in the room or in the safe, as complete</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 17635,
+   "parent_id": null,
+   "author": "Company2lostops",
+   "author_id": 33826,
+   "author_url": "https://forge.sp-tarkov.com/user/33826/company2lostops",
+   "created_at": "2023-07-11T04:40:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Mod (Virtual\u2019s Custom Quest Loader) is missing package.json</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 82959,
+   "parent_id": 17635,
+   "author": "Virtual",
+   "author_id": 23289,
+   "author_url": "https://forge.sp-tarkov.com/user/23289/virtual",
+   "created_at": "2023-07-11T10:44:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Just double checked the download folder and she\u2019s still in there, I\u2019d just reinstall and make sure to follow the install procedure.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 82960,
+   "parent_id": 17556,
+   "author": "Virtual",
+   "author_id": 23289,
+   "author_url": "https://forge.sp-tarkov.com/user/23289/virtual",
+   "created_at": "2023-07-11T10:45:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It\u2019s a visit place task, nothing to find, just need to walk into the room.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 83029,
+   "parent_id": 17635,
+   "author": "Company2lostops",
+   "author_id": 33826,
+   "author_url": "https://forge.sp-tarkov.com/user/33826/company2lostops",
+   "created_at": "2023-07-13T00:30:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Might be because I am on 3.5.8 lol</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 83167,
+   "parent_id": 17556,
+   "author": "mutaco",
+   "author_id": 12460,
+   "author_url": "https://forge.sp-tarkov.com/user/12460/mutaco",
+   "created_at": "2023-07-15T01:26:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019ve been to the room several times and it doesn\u2019t complete the mission, is there anything I\u2019m not doing?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 18735,
+   "parent_id": null,
+   "author": "rook2234",
+   "author_id": 21315,
+   "author_url": "https://forge.sp-tarkov.com/user/21315/rook2234",
+   "created_at": "2023-08-06T14:58:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Pls, update the mod to 3.6.0! Because, not supported\u2026</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 19761,
+   "parent_id": null,
+   "author": "Tabi",
+   "author_id": 14096,
+   "author_url": "https://forge.sp-tarkov.com/user/14096/tabi",
+   "created_at": "2023-08-24T21:20:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>no, it is in fact not shipped with package.json. triple checked.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 86186,
+   "parent_id": 19761,
+   "author": "Tabi",
+   "author_id": 14096,
+   "author_url": "https://forge.sp-tarkov.com/user/14096/tabi",
+   "created_at": "2023-08-24T21:24:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>but mod still works regardless, I unno man it is what it is.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 86230,
+   "parent_id": 19761,
+   "author": "Virtual",
+   "author_id": 23289,
+   "author_url": "https://forge.sp-tarkov.com/user/23289/virtual",
+   "created_at": "2023-08-25T07:39:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>?? If you are referring to THIS mod, no it does not come with a package because it is not a server mod itself. It is loaded INTO VCQL and doesn\u2019t require one. If VCQL doesn\u2019t have a package then let me know, or if it came downloaded from another mod I can\u2019t help that unfortunately.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 86231,
+   "parent_id": 19761,
+   "author": "Virtual",
+   "author_id": 23289,
+   "author_url": "https://forge.sp-tarkov.com/user/23289/virtual",
+   "created_at": "2023-08-25T07:40:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The person who commented below about that issue was referring to VCQL and was on an outdated version.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 86272,
+   "parent_id": 19761,
+   "author": "Tabi",
+   "author_id": 14096,
+   "author_url": "https://forge.sp-tarkov.com/user/14096/tabi",
+   "created_at": "2023-08-25T16:59:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>ah, well thats probably why people are having problems with this. Add a link to VCL so they actually see it lol (and most people dont know what a random abbreviation means)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 86297,
+   "parent_id": 19761,
+   "author": "Virtual",
+   "author_id": 23289,
+   "author_url": "https://forge.sp-tarkov.com/user/23289/virtual",
+   "created_at": "2023-08-26T04:03:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Wow I really didn\u2019t link it. Classic. I\u2019m surprised you\u2019re the first one to tell me lol. Thanks for letting me know.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 20571,
+   "parent_id": null,
+   "author": "Dremmy",
+   "author_id": 31279,
+   "author_url": "https://forge.sp-tarkov.com/user/31279/dremmy",
+   "created_at": "2023-09-13T05:10:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i need a tutorial adding quests for modded traders , how to find modded trader id</p>\n<p>@-@</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 20996,
+   "parent_id": null,
+   "author": "DizzilyHQ",
+   "author_id": 3500,
+   "author_url": "https://forge.sp-tarkov.com/user/3500/dizzilyhq",
+   "created_at": "2023-09-25T00:47:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey i really love the Quest additions. Would be nice if there would be more handover x of x items quests found in raid, i enjoy those the most ngl. Mabye there is a chance to work on a few?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 88465,
+   "parent_id": 20571,
+   "author": "Virtual",
+   "author_id": 23289,
+   "author_url": "https://forge.sp-tarkov.com/user/23289/virtual",
+   "created_at": "2023-10-06T08:18:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>If you haven\u2019t already gotten an answer to this, you would need to ask in the discord. I don\u2019t really touch adding quests to modded traders, just to vanilla ones. It COULD be as easy as setting the traderid to theirs, which would typically be in a base.json file - <a href=\"https://dev.sp-tarkov.com/chomp/ModExamples/src/branch/master/TypeScript/13AddTrader/db/base.json\" target=\"_blank\" rel=\"noreferrer noopener\">\u201c_id\u201c: \u201ccat\u201d</a>. But there may also be some other quest stuff I\u2019ve seen that the modded trader would need to initialize for quest support.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 88466,
+   "parent_id": 20996,
+   "author": "Virtual",
+   "author_id": 23289,
+   "author_url": "https://forge.sp-tarkov.com/user/23289/virtual",
+   "created_at": "2023-10-06T08:19:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Haha, you are probably one of the very few people who like those quests. We shall see what happens</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 88467,
+   "parent_id": 20571,
+   "author": "Dremmy",
+   "author_id": 31279,
+   "author_url": "https://forge.sp-tarkov.com/user/31279/dremmy",
+   "created_at": "2023-10-06T08:25:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you, i will try this out</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 22100,
+   "parent_id": null,
+   "author": "vampucio",
+   "author_id": 37340,
+   "author_url": "https://forge.sp-tarkov.com/user/37340/vampucio",
+   "created_at": "2023-10-15T08:22:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>99% it works on 3.7.1</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 96734,
+   "parent_id": 20996,
+   "author": "Steino",
+   "author_id": 44437,
+   "author_url": "https://forge.sp-tarkov.com/user/44437/steino",
+   "created_at": "2024-02-02T11:37:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>To chime in on this:<br />\nI also enjoy search/scavenge quests. If they are some unusual items you usually disregard, even better.</p>\n<p>and btw great mod</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 30228,
+   "parent_id": null,
+   "author": "Oddjob",
+   "author_id": 4522,
+   "author_url": "https://forge.sp-tarkov.com/user/4522/oddjob",
+   "created_at": "2024-04-20T06:03:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>any chance these might get updated for 3.8.0?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 101515,
+   "parent_id": 30228,
+   "author": "Virtual",
+   "author_id": 23289,
+   "author_url": "https://forge.sp-tarkov.com/user/23289/virtual",
+   "created_at": "2024-04-20T15:35:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Eventually I\u2019ll sort these out for 380</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 3
+  },
+  {
+   "id": 101560,
+   "parent_id": 30228,
+   "author": "Oddjob",
+   "author_id": 4522,
+   "author_url": "https://forge.sp-tarkov.com/user/4522/oddjob",
+   "created_at": "2024-04-21T00:31:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>thanks for the reply. i shall wait patiently</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 32770,
+   "parent_id": null,
+   "author": "itsFenzi",
+   "author_id": 52528,
+   "author_url": "https://forge.sp-tarkov.com/user/52528/itsfenzi",
+   "created_at": "2024-05-24T01:23:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Quest Cardiac Arrest returns the error message<br />\n\u201cQuest Handover Error: condition not found or incorrect value. qid , condition.\u201d<br />\nwhen turning in the tarcola cans</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 110480,
+   "parent_id": 20996,
+   "author": "TheNoLifeNoob",
+   "author_id": 34626,
+   "author_url": "https://forge.sp-tarkov.com/user/34626/thenolifenoob",
+   "created_at": "2024-07-18T22:57:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Make that 2 that like those types of quests lol</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 49887,
+   "parent_id": null,
+   "author": "Colobos9mm",
+   "author_id": 26490,
+   "author_url": "https://forge.sp-tarkov.com/user/26490/colobos9mm",
+   "created_at": "2025-03-24T16:15:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i\u2019ve updated them for 3.11 if you want a copy to update the mod</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

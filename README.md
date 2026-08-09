@@ -32,8 +32,16 @@ mods that nothing else preserves. For each one:
 - author notices: contains ads, AI content, cheat warnings, profile binding
 - **the comment threads**, with authors, timestamps, likes, and reply nesting
 
-Everything lands in `data/mods.json` and `data/comments/*.json`. The site is
-rendered from those files, so the data is usable on its own.
+Plus the Forge's **user-curated mod lists** — 199 of them, each a set of mods
+somebody ran together on a stated SPT version. That curation exists nowhere
+else: no repository records which mods work as a pack.
+
+And the images: mod thumbnails and author avatars are mirrored locally, because
+they live on `forge-static.sp-tarkov.com` and die with the site.
+
+Everything lands in `data/mods.json`, `data/comments/*.json`, `data/lists.json`
+and `data/images/`. The site is rendered from those files, so the data is
+usable on its own.
 
 ---
 
@@ -47,12 +55,13 @@ python3 scrape/scrape_mods.py                  # 1. mods, versions, deps   (~1 m
 python3 scrape/fetch_images.py                 # 2. thumbnails for new mods (seconds)
 python3 scrape/scrape_comments.py --probe      # 3. check comments still work
 python3 scrape/scrape_comments.py --spt '4.'   #    new current-gen mods
-python3 scrape/repo_status.py                  # 4. repo activity          (~10 min)
-python3 build/build.py                         # 5. preview locally        (~3 s)
+python3 scrape/scrape_lists.py                 # 4. curated mod lists      (~3 min)
+python3 scrape/repo_status.py                  # 5. repo activity          (~10 min)
+python3 build/build.py                         # 6. preview locally        (~3 s)
 git add -A && git commit -m "Refresh archive" && git push
 ```
 
-**Step 5 is optional.** Pushing is what publishes: CI rebuilds `site/` from the
+**Step 6 is optional.** Pushing is what publishes: CI rebuilds `site/` from the
 committed data and deploys it to Pages, and `site/` is gitignored precisely so
 the generated output never has to be committed. Run `build.py` locally when you
 want to see a change before it goes live (`python3 -m http.server -d site 8000`),
@@ -72,7 +81,7 @@ changed something and the parser needs fixing — don't start a multi-hour run.
 re-pull at any time, but comments take hours and get exactly one chance.
 Finishing the pre-4.x comment pass matters more than fresh download counts.
 
-**After the Forge shuts down, drop steps 1–3.** `repo_status.py` and `build.py`
+**After the Forge shuts down, drop steps 1–4.** `repo_status.py` and `build.py`
 never contact sp-tarkov.com, so they keep working indefinitely — which is the
 whole point: the listings die, the repositories do not.
 
@@ -92,27 +101,66 @@ is always the correct response to errors.
 
 ```
 site/index.html              the catalogue — search, filter, sort
-site/mod/<id>-<slug>.html    one page per mod
+site/mod/<id>-<slug>.html    one page per mod            (1,826)
+site/lists.html              index of curated mod lists
+site/list/<id>-<slug>.html   one page per list             (199)
 site/all-mods.html           plain list, works without JavaScript
-site/assets/                 one stylesheet, two small scripts
+site/sitemap.xml             every page, with real last-modified dates
+site/robots.txt              points crawlers at the sitemap
+site/assets/                 one stylesheet, five small scripts, mirrored images
 ```
 
-There is no framework and no dependency of any kind — everything is plain
-Python and vanilla JavaScript. Host it on GitHub Pages, or open the files
-directly off disk; both work identically.
+No framework and no dependency of any kind — plain Python and vanilla
+JavaScript. Host it on GitHub Pages, or open the files off disk.
 
 **The index** carries the whole catalogue inline, so filtering is instant and
-works offline. You can search across mod names, authors, dependencies, GUIDs,
-categories, and repo URLs — typing `CommonLib` finds every mod that needs it.
-Filter by category, SPT line, Fika compatibility, whether a mod has
-dependencies or comments; sort by downloads, update date, name, comment count,
-or Fika-first. Filters are reflected in the URL, so any view can be linked.
+works offline. Search covers mod names, authors, dependencies, GUIDs,
+categories, repository names and URLs — typing `CommonLib` finds every mod that
+needs it. Filter by category, Fika compatibility, dependencies, comments,
+collection membership, and by **exact SPT version**: a panel of checkboxes
+grouped by major line, defaulting to 4.x, with a whole-generation toggle per
+group. Sort by downloads, release date, name, comments, stars, Fika-first or
+collection-first. Filter state is remembered in the browser and reflected in
+the URL, so a link shows the sender's view while your own saved state survives
+a reload. Clicking any tag or author name filters by it.
 
-**Each mod page** carries everything above, with dependencies linked to their
-own pages, and the comments in a collapsible section — collapsed by default,
-newest first, with sorting (newest, oldest, most liked, most replies) and a
-search box that filters whole threads and highlights matches. Replies stay
+**Each mod page** splits into tabs — Description, Dependencies, Versions,
+Comments — with the key facts and every source repository side by side above
+them. Dependencies are cards showing thumbnail, name and teaser, each addable
+on its own. Comments are sorted (newest, oldest, most liked, most replies) and
+searchable, filtering whole threads and highlighting matches, with replies
 attached to the comment they answer.
+
+**List pages** show a curated pack with each mod resolved to a working link,
+and an *Add all to collection* button that toggles the whole set at once.
+
+---
+
+## Collections
+
+A collection is a set of mods you have marked, kept in the browser's
+localStorage. There is no account and no server, which has consequences worth
+stating plainly:
+
+- clearing site data clears the collection; a share link is the only backup
+- `file://` and the published site are separate origins and do not share one
+- nothing is transmitted anywhere unless you copy a share link yourself
+
+Mark mods from the index, a mod page, a list page, or `all-mods.html`. Adding a
+mod also adds the dependencies its current version needs, shown indented under
+it in the drawer. The drawer (top right) lists what you have, links each mod to
+its releases page, and copies either every source URL or a share link.
+
+**Share links** encode the mod ids into the URL itself, choosing whichever of
+three encodings is shortest: a delta-varint list for small collections, a
+bitset for large ones, and the *complement* for nearly-complete ones — which is
+why "every mod in the archive" is about five characters. In practice: 5 mods
+≈ 14 characters, 100 ≈ 138, and the worst case (around 500 mods) ≈ 485.
+
+Ids are encoded, never list positions — positions shift whenever the catalogue
+changes and would silently corrupt every link ever shared. Opening a link with
+an empty collection imports it silently; otherwise it asks whether to merge or
+replace, so a link can never destroy somebody's list.
 
 ---
 
@@ -133,18 +181,19 @@ same categories.
 
 ## The scripts
 
-Six files, each with one job, handing off through files on disk so any of them
-can be run alone — and so a half-finished run is never lost.
+Seven files, each with one job, handing off through files on disk so any of
+them can be run alone — and so a half-finished run is never lost.
 
 ```
 scrape_mods.py     ──→  data/mods.json       ──┐
 scrape_comments.py ──→  data/comments/*.json  ─┤
 fetch_images.py    ──→  data/images/          ─┼──→  build.py  ──→  site/
 repo_status.py     ──→  data/repos.json       ─┤      (+ community.py
-community/*.json   ──────────────────────────  ┘        validates submissions)
+scrape_lists.py    ──→  data/lists.json       ─┤        validates submissions)
+community/*.json   ──────────────────────────  ┘
 ```
 
-Only the first two ever contact the Forge. `repo_status.py` talks to the code
+Only the first three ever contact the Forge. `repo_status.py` talks to the code
 hosts, and `build.py` talks to nothing at all.
 
 ### `scrape/scrape_mods.py`
@@ -217,6 +266,23 @@ here and *only* here — imported lazily, so neither `build.py` nor CI needs it.
 embedded images were already unreachable when this was written, because
 `hub.sp-tarkov.com` is gone. They are unrecoverable by anyone.
 
+### `scrape/scrape_lists.py`
+
+Archives the Forge's curated mod lists into `data/lists.json`.
+
+```bash
+python3 scrape/scrape_lists.py            # every list
+python3 scrape/scrape_lists.py --limit 5  # small test run
+```
+
+No API and no Livewire handshake needed: the list pages server-render their
+mods, so this is ordinary HTML scraping — the index at `/lists`, then one
+request per list. About three minutes for all 199.
+
+Aborts without writing if enumeration comes back short, and keeps the previous
+record for any single list whose fetch fails, so a partial run never shrinks
+the archive.
+
 ### `scrape/repo_status.py`
 
 Checks when each source repository was last updated. **Never contacts the
@@ -242,9 +308,14 @@ Needs a GitHub token — see below.
 Renders `site/`. Never touches the network.
 
 ```bash
-python3 build/build.py               # full build
-python3 build/build.py --limit 30    # quick build while iterating
+python3 build/build.py                          # full build
+python3 build/build.py --limit 30               # quick build while iterating
+python3 build/build.py --base-url https://…     # serving from somewhere else
 ```
+
+`--base-url` only affects `sitemap.xml`, which must carry absolute URLs. It
+defaults to the GitHub Pages address, so change it if the site moves to a
+custom domain.
 
 ### `build/community.py`
 
@@ -344,6 +415,19 @@ Things learned the hard way, worth knowing before changing anything.
 - **Rate limit is 300 requests/minute.** The scraper sleeps 1s per worker
   between requests, landing near 240/min with headroom for retries, and honours
   `Retry-After` when it still gets a 429.
+- **`updated_at` is a database timestamp, not a mod update.** The Forge
+  bulk-touches rows during migrations: 1,510 of 1,826 mods share just three
+  such days, and the Forge's own pages display that date too. Anywhere the
+  archive says when a mod last changed, it uses the newest version's publish
+  date instead. The raw field is still kept in `mods.json`.
+- **SPT constraints are ranges, not versions.** `~4.0 <4.1.0`, `>=3.8.0 <3.9`,
+  `4.0.x`, `4.1.` and a bare `*` all occur. Only the first version in the
+  string names the line a mod targets; splitting on "." lets the upper bound
+  bleed in and produces labels like "4.0 <4". `spt_label()` normalises them.
+- **Version and category counts are of distinct mods, never sums.** A mod
+  supporting 4.0.13 and 4.1.0 belongs to both, so per-version counts cannot be
+  added: 704 mods support some 4.x and 1,409 some 3.x, overlapping by 287 —
+  which is exactly the 1,826 total.
 - **`repos.json` is written for small diffs**, because CI commits it twice a
   day. Keys are sorted so a run that checks hosts in a different order does not
   reshuffle the file, and freshness is recorded once at the top rather than per
@@ -371,6 +455,7 @@ Things learned the hard way, worth knowing before changing anything.
 | `data/comments/<id>.json` | Archived comment threads, one file per mod |
 | `data/images/` | Mirrored thumbnails and avatars (content-addressed) |
 | `data/images.json` | Image URL → local filename manifest |
+| `data/lists.json` | Archived curated mod lists |
 | `data/repos.json` | Source-repository activity |
 | `data/raw_mods.jsonl` | Per-mod fetch cache (gitignored; delete to refetch) |
 | `community/*.json` | Mods contributed by pull request |
@@ -379,7 +464,8 @@ Things learned the hard way, worth knowing before changing anything.
 | `build/sanitize.py` | HTML allowlist |
 | `build/templates.py` | Page rendering |
 
-`data/mods.json`, `data/comments/`, and `data/images/` **are** the archive —
+`data/mods.json`, `data/comments/`, `data/lists.json` and `data/images/`
+**are** the archive —
 those are what to back up. Everything else either regenerates from them
 (`site/`) or only costs time to rebuild (`raw_mods.jsonl`, `repos.json`).
 

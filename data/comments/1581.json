@@ -1,0 +1,430 @@
+{
+ "mod_id": 1581,
+ "slug": "spt-server-monitor",
+ "fetched_at": "2026-08-09T07:43:32Z",
+ "reported_total": null,
+ "pages": 1,
+ "count": 42,
+ "comments": [
+  {
+   "id": 37093,
+   "parent_id": null,
+   "author": "DizzilyHQ",
+   "author_id": 3500,
+   "author_url": "https://forge.sp-tarkov.com/user/3500/dizzilyhq",
+   "created_at": "2024-07-22T15:21:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>do i just put</p>\n<p>[string]$TimeZoneId=\u201cCentral European Time\u201d</p>\n<p>in timezone id? if im CET?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 110983,
+   "parent_id": 37093,
+   "author": "Revin",
+   "author_id": 53057,
+   "author_url": "https://forge.sp-tarkov.com/user/53057/revin",
+   "created_at": "2024-07-22T15:25:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yes.</p>\n<p>You can also run \u201cGet-TimeZone\u201d in PowerShell which will list what time zone you are in. For example \u201cId\u201d will display your time zone the way in should be entered.</p>\n<p>PS C:\\Users\\UserName&gt; get-timezone</p>\n<p>Id : Eastern Standard Time</p>\n<p>DisplayName : (UTC-05:00) Eastern Time (US &amp; Canada)</p>\n<p>StandardName : Eastern Standard Time</p>\n<p>DaylightName : Eastern Daylight Time</p>\n<p>BaseUtcOffset : -05:00:00</p>\n<p>SupportsDaylightSavingTime : True</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 110986,
+   "parent_id": 37093,
+   "author": "DizzilyHQ",
+   "author_id": 3500,
+   "author_url": "https://forge.sp-tarkov.com/user/3500/dizzilyhq",
+   "created_at": "2024-07-22T15:41:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>perfect, also if i put the \u201cSet-ExecutionPolicy Unrestricted\u201d command in powershell it asks if i want to set it to all, i did all and only one or smth<br />\nif i then check for status with \u201cGet-ExecutionPolicy\u201d<br />\nit still says: unrestricted<br />\nif i try to start the script then it just closes with no message nothing.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 110987,
+   "parent_id": 37093,
+   "author": "Revin",
+   "author_id": 53057,
+   "author_url": "https://forge.sp-tarkov.com/user/53057/revin",
+   "created_at": "2024-07-22T15:45:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Re-run the execution policy command and instead of \u201cunrestricted\u201d do \u201cremotesigned\u201d then type \u201cy\u201d then enter.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 110988,
+   "parent_id": 37093,
+   "author": "Revin",
+   "author_id": 53057,
+   "author_url": "https://forge.sp-tarkov.com/user/53057/revin",
+   "created_at": "2024-07-22T15:48:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>PS C:\\Windows\\system32&gt; Set-ExecutionPolicy remotesigned</p>\n<p>Execution Policy Change</p>\n<p>The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic at https:/go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy?</p>\n<p>[Y] Yes [A] Yes to All [N] No [L] No to All [S] Suspend [?] Help (default is \u201cN\u201d): y</p>\n<p>PS C:\\Windows\\system32&gt; get-executionpolicy</p>\n<p>RemoteSigned</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 110991,
+   "parent_id": 37093,
+   "author": "DizzilyHQ",
+   "author_id": 3500,
+   "author_url": "https://forge.sp-tarkov.com/user/3500/dizzilyhq",
+   "created_at": "2024-07-22T15:56:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>did all that if i run the script (rightclick run with powershell) it still shows powershell for 1 sec then closes the application</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 110995,
+   "parent_id": 37093,
+   "author": "Revin",
+   "author_id": 53057,
+   "author_url": "https://forge.sp-tarkov.com/user/53057/revin",
+   "created_at": "2024-07-22T16:04:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Okay, this is my bad.</p>\n<p>Set the execution policy to Unrestricted. A command line will appear. Press \u201cR\u201d then Enter.</p>\n<p>This should fix your problem. I apologize.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 110997,
+   "parent_id": 37093,
+   "author": "Schrader",
+   "author_id": 31944,
+   "author_url": "https://forge.sp-tarkov.com/user/31944/schrader",
+   "created_at": "2024-07-22T16:23:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Why dont you always take the current timezone of the running system? Makes it easier for non-tech user and tech user can change it themself.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 110998,
+   "parent_id": 37093,
+   "author": "DizzilyHQ",
+   "author_id": 3500,
+   "author_url": "https://forge.sp-tarkov.com/user/3500/dizzilyhq",
+   "created_at": "2024-07-22T16:41:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>pfprapapfaeprafffpffff<br />\nalready too complicated.<br />\nlike the idea but implementation is inadequate.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 111086,
+   "parent_id": 37093,
+   "author": "Revin",
+   "author_id": 53057,
+   "author_url": "https://forge.sp-tarkov.com/user/53057/revin",
+   "created_at": "2024-07-23T03:15:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Appreciate the feedback</p>\n<p>This is still a work in progress, but soon I hope to write a full-fledged program for SPT only. This is my first time, since college, writing scripts and programming so it is going to take me some time.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 37148,
+   "parent_id": null,
+   "author": "Dragonslayer10",
+   "author_id": 50822,
+   "author_url": "https://forge.sp-tarkov.com/user/50822/dragonslayer10",
+   "created_at": "2024-07-23T05:26:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>If I wanted to change the server restart to 5:30am instead of 12am would I just change this line?</p>\n<p>if ($currentTime.Hour -eq 0 -and $currentTime.Minute -eq 0</p>\n<p>to</p>\n<p>if ($currentTime.Hour -eq 5 -and $currentTime.Minute -eq 30</p>\n<p>Thank you for this script!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 111097,
+   "parent_id": 37148,
+   "author": "Revin",
+   "author_id": 53057,
+   "author_url": "https://forge.sp-tarkov.com/user/53057/revin",
+   "created_at": "2024-07-23T05:53:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You are correct!</p>\n<p>And no problem at all! My end goal is to make this a program that you can run instead of relying on a script. I cannot wait to get that going!</p>\n<p>Enjoy, my friend.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 111099,
+   "parent_id": 37148,
+   "author": "Dragonslayer10",
+   "author_id": 50822,
+   "author_url": "https://forge.sp-tarkov.com/user/50822/dragonslayer10",
+   "created_at": "2024-07-23T05:59:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for the quick reply, I figured I could just set it to 10 minutes from now to test and it worked.</p>\n<p>A program would be fantastic, windows doesn\u2019t play nice by setting it to auto open with powershell lol.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 111100,
+   "parent_id": 37148,
+   "author": "Revin",
+   "author_id": 53057,
+   "author_url": "https://forge.sp-tarkov.com/user/53057/revin",
+   "created_at": "2024-07-23T06:01:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>No it does not lol. Took me a minute to get this script to run like it should. But give me a month or two and a program will be released specifically for SPT. Just have to refresh my C++ :[ lol</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 111102,
+   "parent_id": 37148,
+   "author": "Dragonslayer10",
+   "author_id": 50822,
+   "author_url": "https://forge.sp-tarkov.com/user/50822/dragonslayer10",
+   "created_at": "2024-07-23T06:04:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>If you need any help testing, or anything like that, I\u2019m usually free after midnight (EST), and on and off during the afternoon. =)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 111103,
+   "parent_id": 37148,
+   "author": "Revin",
+   "author_id": 53057,
+   "author_url": "https://forge.sp-tarkov.com/user/53057/revin",
+   "created_at": "2024-07-23T06:05:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I will actually be keeping you in mind then! Always open for people to test. Appreciate it! =D</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 111116,
+   "parent_id": 37093,
+   "author": "DizzilyHQ",
+   "author_id": 3500,
+   "author_url": "https://forge.sp-tarkov.com/user/3500/dizzilyhq",
+   "created_at": "2024-07-23T08:20:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>ye as said the idea is giga.</p>\n<p>but how you have to handle all atm is just a mess.</p>\n<p>im not a programmer but can say i know stuff about pc and all.</p>\n<p>its just too complicated atm</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 111117,
+   "parent_id": 37093,
+   "author": "Revin",
+   "author_id": 53057,
+   "author_url": "https://forge.sp-tarkov.com/user/53057/revin",
+   "created_at": "2024-07-23T08:30:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Not exactly. All you have to do is place in the install location of SPT, change two lines, set execution policy, then run.</p>\n<p>Simple =)</p>\n<p>But! I respect your opinion and I happy to let you know that I am working on creating a program specifically for SPT that circumvents all of the steps needed.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 37203,
+   "parent_id": null,
+   "author": "douchbagat",
+   "author_id": 32290,
+   "author_url": "https://forge.sp-tarkov.com/user/32290/douchbagat",
+   "created_at": "2024-07-23T18:53:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>perhaps you should make video on how to do this\u2026 I followed the steps and whenever I ran the script with powershell as administrator it starts up for 1 second and then closes. I tried using the advice given on one of the comments and still to no avail.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 111232,
+   "parent_id": 37203,
+   "author": "Revin",
+   "author_id": 53057,
+   "author_url": "https://forge.sp-tarkov.com/user/53057/revin",
+   "created_at": "2024-07-24T03:31:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Unfortunately, making a video for SPT would result in me getting a copyright takedown as Nikita is a big weirdo when it comes to modding his game.</p>\n<p>But, from the sounds of it you probably didn\u2019t set the execution policy correctly.</p>\n<p>1. Open PowerShell as administrator</p>\n<p>2. Type \u201cGet-ExecutionPolicy\u201d</p>\n<p>3. If it says \u201cUnrestricted\u201d you are fine and its another issue. If not go to 4.</p>\n<p>4. Type \u201cSet-ExecutionPolicy Unrestricted\u201d<br />\n5. Repeat step 2</p>\n<p>6. Rerun script</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 111263,
+   "parent_id": 37203,
+   "author": "DizzilyHQ",
+   "author_id": 3500,
+   "author_url": "https://forge.sp-tarkov.com/user/3500/dizzilyhq",
+   "created_at": "2024-07-24T10:47:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>having the same issue after done everything correct.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 111296,
+   "parent_id": 37203,
+   "author": "Revin",
+   "author_id": 53057,
+   "author_url": "https://forge.sp-tarkov.com/user/53057/revin",
+   "created_at": "2024-07-24T14:11:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Have you both opened the script, added the file path to line 7, and set execution policy EXACTLY how I have explained it?</p>\n<p>Example:</p>\n<p>[string]$ProgramPath=\u201cR:\\SPT 3.9\\SPT.Server.exe\u201d,</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 111325,
+   "parent_id": 37203,
+   "author": "DizzilyHQ",
+   "author_id": 3500,
+   "author_url": "https://forge.sp-tarkov.com/user/3500/dizzilyhq",
+   "created_at": "2024-07-24T19:24:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>thank you for your effort.<br />\nyes i did</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 111344,
+   "parent_id": 37203,
+   "author": "Revin",
+   "author_id": 53057,
+   "author_url": "https://forge.sp-tarkov.com/user/53057/revin",
+   "created_at": "2024-07-24T21:31:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I just corrected this issue this morning with another user on Discord. Have you corrected the Time Zone? That was his problem.</p>\n<p>Open PowerShell as Administrator<br />\nType \u201cGet-TimeZone\u201d<br />\nThe \u201cId\u201d output is what you add on line 9.</p>\n<p>For example:</p>\n<p>Id : \u201cEastern Standard Time\u201d</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 111520,
+   "parent_id": 37203,
+   "author": "douchbagat",
+   "author_id": 32290,
+   "author_url": "https://forge.sp-tarkov.com/user/32290/douchbagat",
+   "created_at": "2024-07-26T05:42:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you for the help Revin, it seems I\u2019m not so experienced with files and such. I did the pathing wrong, and basing it on what you had on your comment. It works now, I did everything else correctly but the pathing.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 111574,
+   "parent_id": 37203,
+   "author": "Revin",
+   "author_id": 53057,
+   "author_url": "https://forge.sp-tarkov.com/user/53057/revin",
+   "created_at": "2024-07-26T11:36:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>All good, fam! Glad you got it to work! Experience comes with practice. One day you will be just as savvy =)</p>\n<p>Have a wonderful day!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 38196,
+   "parent_id": null,
+   "author": "Hamburger Helper",
+   "author_id": 41516,
+   "author_url": "https://forge.sp-tarkov.com/user/41516/hamburger-helper",
+   "created_at": "2024-08-03T12:59:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey there. I really like this plugin, and was wondering if you could give me some tips: I\u2019ve got it working great normally, but I have been attempting to get it to run through task scheduler via powershell, and have had zero success. It simply will not run for me via task scheduler, but it works fine normally opening it with powershell.</p>\n<p>Any tips?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 112628,
+   "parent_id": 38196,
+   "author": "Revin",
+   "author_id": 53057,
+   "author_url": "https://forge.sp-tarkov.com/user/53057/revin",
+   "created_at": "2024-08-03T14:49:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This script will automatically restart the server at a given time and on a given time zone. You can configure the time zone and time. Have you done that?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 112662,
+   "parent_id": 38196,
+   "author": "Hamburger Helper",
+   "author_id": 41516,
+   "author_url": "https://forge.sp-tarkov.com/user/41516/hamburger-helper",
+   "created_at": "2024-08-03T19:06:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I did do that, and set it for 5am; my goal was to use task scheduler to restart the server PC every day, and then have task scheduler start the script via powershell so its mostly hands off for me.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 112929,
+   "parent_id": 38196,
+   "author": "Revin",
+   "author_id": 53057,
+   "author_url": "https://forge.sp-tarkov.com/user/53057/revin",
+   "created_at": "2024-08-05T23:24:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Unfortunately, Task Scheduler does not like SPT at all thus the reasoning for this Powershell script.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 112940,
+   "parent_id": 38196,
+   "author": "Hamburger Helper",
+   "author_id": 41516,
+   "author_url": "https://forge.sp-tarkov.com/user/41516/hamburger-helper",
+   "created_at": "2024-08-06T00:19:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Ahhh I gotcha. That doesn\u2019t surprise me much either\u2026I\u2019ll try to find a workaround.</p>\n<p>Thanks for the help.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 39859,
+   "parent_id": null,
+   "author": "January_0001",
+   "author_id": 18490,
+   "author_url": "https://forge.sp-tarkov.com/user/18490/january-0001",
+   "created_at": "2024-08-27T20:44:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hiya!</p>\n<p>I\u2019m hosting my own server and am going to be using this as a failsafe for when it crashes.</p>\n<p>Just to make sure, the final result of the launch should only be the Powershell window with the process ID and the server console from SPT.server right? Nothing else should be up?</p>\n<p>Update: if no connection attempt is made to the SPT server for an hour or so, the server will freeze and does not accept any connection attempts unless restarted.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 40064,
+   "parent_id": null,
+   "author": "seven_N_A",
+   "author_id": 60152,
+   "author_url": "https://forge.sp-tarkov.com/user/60152/seven-n-a",
+   "created_at": "2024-08-30T17:00:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Just a heads up. I had an issue where powershell would instantly close after running. I had to unblock the file to get it working. If this is an issue you might have, you should be getting a terminal output letting you know to unblock the file, together with a security input.</p>\n<p><a href=\"https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/unblock-file?view=powershell-7.4\" target=\"_blank\" rel=\"noreferrer noopener\">MS page to the unblockfile cmdlet.</a> Just do Example 1 with the path to where the file is located on your PC. (Powershell has cyclic autocomplete when pressing tab btw to save you a few secs)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 40093,
+   "parent_id": null,
+   "author": "Cosm1c Gam3r",
+   "author_id": 23825,
+   "author_url": "https://forge.sp-tarkov.com/user/23825/cosm1c-gam3r",
+   "created_at": "2024-08-31T00:13:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>- Relaunches the server if the server has crashed</p>\n<p>Is it the same if I.. lets say close server window by accident? Will it restart server instantly?<br />\nWill game while in raid or in hideout crash when server window is closed manually?<br />\nI am curious how this works.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 115887,
+   "parent_id": 40093,
+   "author": "Revin",
+   "author_id": 53057,
+   "author_url": "https://forge.sp-tarkov.com/user/53057/revin",
+   "created_at": "2024-09-03T23:32:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>So, if you keep the PowerShell window open and just accidentally close the SPT server then yes, the server will restart. Give it a few seconds, however. Also, if it crashes in raid the raid may freeze for a few seconds before the server restarts but after it restarts you should be fine to extract. I would close the game and relaunch though as the client would need to sync up to the server side.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 115888,
+   "parent_id": 39859,
+   "author": "Revin",
+   "author_id": 53057,
+   "author_url": "https://forge.sp-tarkov.com/user/53057/revin",
+   "created_at": "2024-09-03T23:33:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yep! That is it</p>\n<p>Also, as far as the freezing, that has nothing to do with my script. That could be a mod issue my friend.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 115889,
+   "parent_id": 40064,
+   "author": "Revin",
+   "author_id": 53057,
+   "author_url": "https://forge.sp-tarkov.com/user/53057/revin",
+   "created_at": "2024-09-03T23:33:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>May I interest you in the instructions that are on my GitHub?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 115898,
+   "parent_id": 40093,
+   "author": "Cosm1c Gam3r",
+   "author_id": 23825,
+   "author_url": "https://forge.sp-tarkov.com/user/23825/cosm1c-gam3r",
+   "created_at": "2024-09-04T01:28:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>So it means that without your mod when server is crashed/closed and I do not notice that and will continue to play then game will crash without server running?</p>\n<p>And with your mod present, server will restart after crash and game will not crash?<br />\nSorry to bother you with such simple question but I really like to know what stuff does in plain description</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 116795,
+   "parent_id": 40093,
+   "author": "Revin",
+   "author_id": 53057,
+   "author_url": "https://forge.sp-tarkov.com/user/53057/revin",
+   "created_at": "2024-09-13T15:43:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Alright, so\u2026</p>\n<p>If you are playing in a raid and the server crashes then the game will basically freeze or just crash. It behaves differently and not always the same. This is because the server will not automatically restart. For some reason that is just not an option, so I made it an option.</p>\n<p>With my script, however, you can run it which will start the server then once the server crashes it will be brought back up automatically. No need to go back to desktop to relaunch it.</p>\n<p>Keep in mind that you will need to close both the PowerShell and server windows (in the order) if you want to shut the server down for a bit.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 51587,
+   "parent_id": null,
+   "author": "Revin",
+   "author_id": 53057,
+   "author_url": "https://forge.sp-tarkov.com/user/53057/revin",
+   "created_at": "2025-05-09T04:10:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Forgot to update the tag. Apologies all.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 52123,
+   "parent_id": null,
+   "author": "Thalo",
+   "author_id": 79444,
+   "author_url": "https://forge.sp-tarkov.com/user/79444/thalo",
+   "created_at": "2025-05-25T16:17:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Turns out to get it to work for me was adding this line</p>\n<p>$startInfo.WorkingDirectory = \u201cF:\\SPT SERVER\u201d so it Became</p>\n<p>function Start-Program { $process = Get-Process -Name $ProgramName -ErrorAction SilentlyContinue if (-not $process) { Write-Output \u201cStarting $ProgramName with high priority\u2026\u201d $startInfo = New-Object System.Diagnostics.ProcessStartInfo $startInfo.FileName = $ProgramPath $startInfo.Arguments = \u201c\u201d $startInfo.UseShellExecute = $true $startInfo.CreateNoWindow = $false $startInfo.WorkingDirectory = \u201cYOUR_SERVER_LOCATION\u201d # &lt;- ADD THIS LINE $process = [System.Diagnostics.Process]::Start($startInfo) Start-Sleep -Seconds 5 if ($process) { $process.PriorityClass = [System.Diagnostics.ProcessPriorityClass]::High Write-Output \u201c$ProgramName started and set to high priority.\u201d } else { Write-Output \u201cFailed to start $ProgramName.\u201d } } else { Write-Output \u201c$ProgramName is already running.\u201d } return $process } Added line 10</p>\n<p>Otherwise great script</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 138454,
+   "parent_id": null,
+   "author": "lilithesuccubus",
+   "author_id": 85225,
+   "author_url": "https://forge.sp-tarkov.com/user/85225/lilithesuccubus",
+   "created_at": "2025-10-12T18:45:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>this is kinda nice but \u2026 never saw my SPT crash\u2026 what is crashing randomly is FIKA Headless\u2026 something for this would be hella cool to have &lt;3</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

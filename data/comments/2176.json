@@ -1,0 +1,60 @@
+{
+ "mod_id": 2176,
+ "slug": "onitrader",
+ "fetched_at": "2026-08-09T07:51:43Z",
+ "reported_total": null,
+ "pages": 1,
+ "count": 5,
+ "comments": [
+  {
+   "id": 52612,
+   "parent_id": null,
+   "author": "cypher_",
+   "author_id": 34774,
+   "author_url": "https://forge.sp-tarkov.com/user/34774/cypher",
+   "created_at": "2025-06-09T20:51:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>this is going to be a pain to progress through</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 132162,
+   "parent_id": 52612,
+   "author": "harmony",
+   "author_id": 30878,
+   "author_url": "https://forge.sp-tarkov.com/user/30878/harmony",
+   "created_at": "2025-06-09T20:54:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Worth it</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 53693,
+   "parent_id": null,
+   "author": "Jessejameszjr",
+   "author_id": 46714,
+   "author_url": "https://forge.sp-tarkov.com/user/46714/jessejameszjr",
+   "created_at": "2025-07-10T12:47:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello! I would like to be able to sell my keycards to oni and make the sell price a bit higher than therapist, how could I add that?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133483,
+   "parent_id": 53693,
+   "author": "LycorisOni Senior Moderator",
+   "author_id": 63875,
+   "author_url": "https://forge.sp-tarkov.com/user/63875/lycorisoni",
+   "created_at": "2025-07-12T12:24:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You don\u2019t. I don\u2019t have configs for a reason.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133775,
+   "parent_id": 53693,
+   "author": "elrichzann",
+   "author_id": 29730,
+   "author_url": "https://forge.sp-tarkov.com/user/29730/elrichzann",
+   "created_at": "2025-07-19T18:31:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p><strong>Just remember, after editing the files you lose any right to complain about the mod not working as intended, you\u2019re essentially \u201cVoiding\u201d your warranty for support for this mod. Hence why he probably said you can\u2019t do it.</strong> <em>Either that or he desperately wants you to experience this mod the way he intended</em></p>\n<p>Go into the mod files, find Oni/db/base.json and make a backup. Next open it using a code editor (I use Visual Studio, some use Notepad++) and add the ID of the category you want her to be able to buy here. (It\u2019s basically at the top of the code)</p>\n<p>\u201citems_buy\u201d: {<br />\n\u201ccategory\u201d: [<br />\n\u201c57864a3d24597754843f8721\u201d</p>\n<p>Add a comma after the \u201cnumber\u201d like so and add new quotes for the category you\u2019re adding.</p>\n<p>\u201citems_buy\u201d: {<br />\n\u201ccategory\u201d: [<br />\n\u201c57864a3d24597754843f8721\u201d,</p>\n<p>\u201cINSERT CATEGORY ID HERE\u201d</p>\n<p>Use <a href=\"https://db.sp-tarkov.com/search\" target=\"_blank\" rel=\"noreferrer noopener\">https://db.sp-tarkov.com/search</a> to find the ID of the category. For example, I use the key, weapon, and equipment categories, so my file looks like this:</p>\n<p>\u201citems_buy\u201d: {<br />\n\u201ccategory\u201d: [<br />\n\u201c57864a3d24597754843f8721\u201d,<br />\n\u201c543be5e94bdc2df1348b4568\u201d,<br />\n\u201c5422acb9af1c889c16000029\u201d,<br />\n\u201c543be5f84bdc2dd4348b456a\u201d</p>\n<p>Save and load up the game. I\u2019ve already tested this, and it works.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

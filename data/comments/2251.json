@@ -1,0 +1,1040 @@
+{
+ "mod_id": 2251,
+ "slug": "autocompatibility-framework",
+ "fetched_at": "2026-08-09T07:23:11Z",
+ "reported_total": 33,
+ "pages": 4,
+ "count": 103,
+ "comments": [
+  {
+   "id": 54983,
+   "parent_id": null,
+   "author": "Solid-Rhoads",
+   "author_id": 50691,
+   "author_url": "https://forge.sp-tarkov.com/user/50691/solid-rhoads",
+   "created_at": "2025-08-13T22:32:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Edit: to save space in comments, I\u2019m just gonna say, see the known issues and support section of the overview for details on support (but also don\u2019t be afraid to comment something).</p>\n<p>Edit 2: Added a FAQ\u2019s section to the overview to answer a couple questions that I\u2019ve heard several times already.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 54984,
+   "parent_id": null,
+   "author": "probablyEukyre",
+   "author_id": 58981,
+   "author_url": "https://forge.sp-tarkov.com/user/58981/probablyeukyre",
+   "created_at": "2025-08-13T22:39:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I was just talking about wanting a mod like this, you must\u2019ve read my mind!</p>\n<p>Good stuff!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 135036,
+   "parent_id": 54984,
+   "author": "Solid-Rhoads",
+   "author_id": 50691,
+   "author_url": "https://forge.sp-tarkov.com/user/50691/solid-rhoads",
+   "created_at": "2025-08-13T22:51:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks! The idea has been mulling around in my head since the SPT 3.8 days honestly; Just couldn\u2019t think of how to execute on it until now.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 54985,
+   "parent_id": null,
+   "author": "Trenchf00t",
+   "author_id": 59370,
+   "author_url": "https://forge.sp-tarkov.com/user/59370/trenchf00t",
+   "created_at": "2025-08-13T22:58:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I legit had a dream about a mod like this last night. Glad to see someone putting one out.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 54992,
+   "parent_id": null,
+   "author": "Halo1625",
+   "author_id": 82918,
+   "author_url": "https://forge.sp-tarkov.com/user/82918/halo1625",
+   "created_at": "2025-08-14T04:20:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Awesome!!! Needed this.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 54993,
+   "parent_id": null,
+   "author": "GRIMMULK",
+   "author_id": 45453,
+   "author_url": "https://forge.sp-tarkov.com/user/45453/grimmulk",
+   "created_at": "2025-08-14T04:22:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>YOURE AMAZING I LOVE YOU PLEASE DONT CUT YOUR NAILS TOMORROW</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 3
+  },
+  {
+   "id": 55004,
+   "parent_id": null,
+   "author": "Exxtrasneaky",
+   "author_id": 83289,
+   "author_url": "https://forge.sp-tarkov.com/user/83289/exxtrasneaky",
+   "created_at": "2025-08-14T16:29:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey! I know there\u2019s a way to manually whitelist items so I\u2019ll do that myself, just wanted to bring something to your attention. I was using Echoes of Tarkov - Requisitions and Painter, and I noticed that after installing this mod, I couldn\u2019t use Canted Aim from EoT with any of Painter\u2019s painted LPVO\u2019s. I need to test and I\u2019m reasonably sure that I was able to before, but would it be possible for this mod to look at things and go \u201chey, that\u2019s not supposed to be there\u201d and then blacklist them?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135063,
+   "parent_id": 55004,
+   "author": "Solid-Rhoads",
+   "author_id": 50691,
+   "author_url": "https://forge.sp-tarkov.com/user/50691/solid-rhoads",
+   "created_at": "2025-08-14T18:26:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>So this mod should never be taking things out of filters, only adding them. What I think probably happened is that its pulling a conflict id from the base item, maybe. That canted aim is cloned from the Walther MRS sight for some reason; And that implementation for canted aiming is a bit jank as the author themselves states, so it seems to be just be a weird instance of inheriting a conflicting item.</p>\n<p>I just tested it and the best fix in this case is actually to just add the canted aim\u2019s ID \u201c686a5a6247c881f613196f91\u201d to the \u201cVoidConflicts\u201d: field in the config.</p>\n<p>So: \u201cVoidConflicts\u201d: [\u201c686a5a6247c881f613196f91\u201d]</p>\n<p>That should fix it.</p>\n<p>Edit: the optics were showing up red and the game dialogue was telling you there is a conflict correct? Because if they\u2019re not appearing AT ALL that something else entirely.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135067,
+   "parent_id": 55004,
+   "author": "Exxtrasneaky",
+   "author_id": 83289,
+   "author_url": "https://forge.sp-tarkov.com/user/83289/exxtrasneaky",
+   "created_at": "2025-08-14T20:59:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yes they were just showing as red and the game was saying there is a conflict. I\u2019ll add that. You\u2019re awesome!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 55177,
+   "parent_id": null,
+   "author": "greer0",
+   "author_id": 83025,
+   "author_url": "https://forge.sp-tarkov.com/user/83025/greer0",
+   "created_at": "2025-08-19T18:56:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>An instant must-have mod. Amazing work</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 55211,
+   "parent_id": null,
+   "author": "hellchickens",
+   "author_id": 41253,
+   "author_url": "https://forge.sp-tarkov.com/user/41253/hellchickens",
+   "created_at": "2025-08-21T00:39:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>mmmhm, I suppose u\u2019ve been too strict with isProprietary, now ammo of same caliber group isn\u2019t shared in that caliber group. U have weapon X and Y same caliber, both from different mods and X can\u2019t use ammo from Y and vice versa. So chambers and mags props are not updated and adding those 2 weapons IDs with chambers, mags and ammo IDs into whitelist doing literally nothing, those IDs stay glued to proprietary</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135300,
+   "parent_id": 55211,
+   "author": "Solid-Rhoads",
+   "author_id": 50691,
+   "author_url": "https://forge.sp-tarkov.com/user/50691/solid-rhoads",
+   "created_at": "2025-08-21T00:54:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Can you give me an example with two weapon mods, their guns, and ammo(s) in question? I\u2019ll definitely take a look into it at some point.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135303,
+   "parent_id": 55211,
+   "author": "Solid-Rhoads",
+   "author_id": 50691,
+   "author_url": "https://forge.sp-tarkov.com/user/50691/solid-rhoads",
+   "created_at": "2025-08-21T02:55:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Whoops, nope, nothing to do with isProprietary. I immediately saw some mistakes in my code on scrutinizing that section; At some point I messed up some naming for some props like \u201cammoCartridge\u201d instead of just \u201cCartridge\u201d for magazine filters. It shouldn\u2019t be too hard for me to go in and fix that section, just might be a minute before I can swing back around to it.</p>\n<p>So its not that they\u2019re being flagged as proprietary, its that modded ammo\u2019s aren\u2019t being propagated to modded mags properly right now at all (that\u2019s why whitelist did nothing). Thanks for the report. Should be fixed in the next update.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135332,
+   "parent_id": 55211,
+   "author": "hellchickens",
+   "author_id": 41253,
+   "author_url": "https://forge.sp-tarkov.com/user/41253/hellchickens",
+   "created_at": "2025-08-21T20:24:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>just for proper checks get <a href=\"https://hub.sp-tarkov.com/files/file/2670-walther-wa-2000-sniper-rifle/#overview\" target=\"_blank\" rel=\"noreferrer noopener\">Walther WA 2000 Sniper Rifle</a> (though it\u2019s needed to fix \u201cCaliber762x67mmB\u201d to \u201cCaliber762x67B\u201d) and MSR from WTT-armory. As it\u2019s same caliber it should work.</p>\n<p>Thanks for attention, just don\u2019t forget also to push new props for \u201cpatron_in_weapon\u201d</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135333,
+   "parent_id": 55211,
+   "author": "Solid-Rhoads",
+   "author_id": 50691,
+   "author_url": "https://forge.sp-tarkov.com/user/50691/solid-rhoads",
+   "created_at": "2025-08-21T20:32:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Oh, yeah, in an instance like that, where the mod authors have created the same ammo but named it differently, I\u2019m gonna need to either manual add or create some sort of workaround, because as far as the game logic is concerned, those are two separate caliber\u2019s, even though our human brains know they are the same.</p>\n<p>I sort of anticipated this sort of issue, but hadn\u2019t created a contingency for it yet. I may just have to include a literal compatibility patch for those handful of instances.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135338,
+   "parent_id": 55211,
+   "author": "hellchickens",
+   "author_id": 41253,
+   "author_url": "https://forge.sp-tarkov.com/user/41253/hellchickens",
+   "created_at": "2025-08-21T21:17:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>hah, let\u2019s leave it on mods author karma xD I suppose really that\u2019s not the job of ur mod to \u201cguess\u201d which caliber is same to other one. If it will pick literally same calibers and work with it in proper way - that\u2019s enough, I guess</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 55269,
+   "parent_id": null,
+   "author": "hellchickens",
+   "author_id": 41253,
+   "author_url": "https://forge.sp-tarkov.com/user/41253/hellchickens",
+   "created_at": "2025-08-22T14:33:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>sup once more, also wanna notice a thing, that AK Custom Guns CG101 AR-type pistol grip adapter (648ae3e356c6310a830fc291) is missing tons of AR pistol grips and I really idk how to fix it without manual adding that whole bunch of shit</p>\n<p>Fo CG101 I have 14 new grips, though for any AR-15 there are 39\u2026.</p>\n<p>The only idea I have that modders were not accurate enough to pick as clone parent those grips that are present in CG101 compat list</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135375,
+   "parent_id": 55269,
+   "author": "Solid-Rhoads",
+   "author_id": 50691,
+   "author_url": "https://forge.sp-tarkov.com/user/50691/solid-rhoads",
+   "created_at": "2025-08-22T17:04:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yeah, that CG101 is a vanilla item. This mod is only really intended to create compatibilities between modded items without touching vanilla ones, because theoretically the mod authors already have their new items being added to the filters of vanilla items (the entire vanilla database loads first, then all other mods that use postDBLoad, then this mod (assuming load order is correct)); So its odd that they aren\u2019t there to begin with. This mod should never be removing ID\u2019s from filters, especially on vanilla items, only adding them to modded items.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135385,
+   "parent_id": 55211,
+   "author": "Solid-Rhoads",
+   "author_id": 50691,
+   "author_url": "https://forge.sp-tarkov.com/user/50691/solid-rhoads",
+   "created_at": "2025-08-22T22:56:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>As of v1.2.0 modded ammo\u2019s should now be properly added to modded magazines\u2019 cartridge filters that handle the same caliber(s). I experimented with making an ammo normalization method, but it kept failing to work as I expected or kept breaking things, so for now I included manualAdd entries for the Choccy/WTT .300 WinMag discrepancy by default in the new config.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 55286,
+   "parent_id": null,
+   "author": "mil4me",
+   "author_id": 83176,
+   "author_url": "https://forge.sp-tarkov.com/user/83176/mil4me",
+   "created_at": "2025-08-23T03:09:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello</p>\n<p>when i am updating i got this error</p>\n<p>Pass 1: ManualAdd targetItemId 6787c587daf18caae2c47bda not found in database</p>\n<p>Pass 1: ManualAdd targetItemId 6787c587daf18caae2c47bda not found in database</p>\n<p>Pass 1: ManualAdd targetItemId 6787c587daf18caae2c47bda not found in database</p>\n<p>Pass 1: ManualAdd targetItemId 6787c58e17cf7aa9a28cfaca not found in database</p>\n<p>Pass 1: ManualAdd targetItemId 6787c58e17cf7aa9a28cfaca not found in database</p>\n<p>Pass 1: ManualAdd targetItemId 6787c58e17cf7aa9a28cfaca not found in database</p>\n<p>Pass 1: ManualAdd targetItemId 6794f4e3a671046f746df8f5 not found in database</p>\n<p>Pass 1: ManualAdd targetItemId 6794f4e3a671046f746df8f5 not found in database</p>\n<p>Pass 1: ManualAdd targetItemId 6794f4e3a671046f746df8f5 not found in database</p>\n<p>Pass 1: ManualAdd targetItemId 6794f4eaa532303999ea952c not found in database</p>\n<p>Pass 1: ManualAdd targetItemId 6794f4eaa532303999ea952c not found in database</p>\n<p>Pass 1: ManualAdd targetItemId 6794f4eaa532303999ea952c not found in database</p>\n<p>Pass 1: ManualAdd attachmentId 6787af9b370beb59900b84da not found in database</p>\n<p>Pass 1: ManualAdd attachmentId 6798b890fa41a7cc25a09157 not found in database</p>\n<p>Pass 1: ManualAdd attachmentId 6798b895f3d82ede6df718d2 not found in database</p>\n<p>Pass 1: ManualAdd attachmentId 6798b89bdf2a24b0c315daac not found in database</p>\n<p>Pass 1: ManualAdd attachmentId 6787af9b370beb59900b84da not found in database</p>\n<p>Pass 1: ManualAdd attachmentId 6798b890fa41a7cc25a09157 not found in database</p>\n<p>Pass 1: ManualAdd attachmentId 6798b895f3d82ede6df718d2 not found in database</p>\n<p>Pass 1: ManualAdd attachmentId 6798b89bdf2a24b0c315daac not found in database</p>\n<p>Pass 1: ManualAdd attachmentId 6787af9b370beb59900b84da not found in database</p>\n<p>Pass 1: ManualAdd attachmentId 6798b890fa41a7cc25a09157 not found in database</p>\n<p>Pass 1: ManualAdd attachmentId 6798b895f3d82ede6df718d2 not found in database</p>\n<p>Pass 1: ManualAdd attachmentId 6798b89bdf2a24b0c315daac not found in database</p>\n<p>Pass 1: ManualAdd attachmentId 6787af9b370beb59900b84da not found in database</p>\n<p>Pass 1: ManualAdd attachmentId 6798b890fa41a7cc25a09157 not found in database</p>\n<p>Pass 1: ManualAdd attachmentId 6798b895f3d82ede6df718d2 not found in database</p>\n<p>Pass 1: ManualAdd attachmentId 6798b89bdf2a24b0c315daac not found in database</p>\n<p>Pass 1: ManualAdd attachmentId 6787af9b370beb59900b84da not found in database</p>\n<p>Pass 1: ManualAdd attachmentId 6798b890fa41a7cc25a09157 not found in database</p>\n<p>Pass 1: ManualAdd attachmentId 6798b895f3d82ede6df718d2 not found in database</p>\n<p>Pass 1: ManualAdd attachmentId 6798b89bdf2a24b0c315daac not found in database</p>\n<p>Do u know what is that? ty</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135395,
+   "parent_id": 55286,
+   "author": "Solid-Rhoads",
+   "author_id": 50691,
+   "author_url": "https://forge.sp-tarkov.com/user/50691/solid-rhoads",
+   "created_at": "2025-08-23T03:57:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Oh, I may have left manualAdd warnings outside of verbose logging. I was using them for debugging. But it\u2019s just because you don\u2019t have one of the mods that I included in the default manualAdd config. It\u2019s not a problem. I\u2019ll adjust that in a hot fix as soon as I can so it doesn\u2019t spam the logs/terminal for people who don\u2019t have one or both of those mods.</p>\n<p>Edit: fixed in v1.2.1</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135397,
+   "parent_id": 55286,
+   "author": "mil4me",
+   "author_id": 83176,
+   "author_url": "https://forge.sp-tarkov.com/user/83176/mil4me",
+   "created_at": "2025-08-23T05:37:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>wow</p>\n<p>thank you so much for a fast reply i was not sure what i did wrong lol new to all this mods</p>\n<p>ty again and God bless</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 55287,
+   "parent_id": null,
+   "author": "Otto_Reed",
+   "author_id": 59317,
+   "author_url": "https://forge.sp-tarkov.com/user/59317/otto-reed",
+   "created_at": "2025-08-23T05:38:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It\u2019s nice to see such a creative mod, but in any case, there is nothing perfect, and it\u2019s time for us to talk about it.</p>\n<p>1: 7.62*39 caliber, WTT added a 7.62 magazine to the acr rifle, which can be recognized normally and compatible with all AK series\u2014\u2014 even they should not be compatible.</p>\n<p>But the 6L50 (also from WTT),and the 7.62*39 PMAG D-60 magazine(from Echoes of Tarkov) is not compatible with anything new, you know, the MK47 really needs a 50-round magazine</p>\n<p>2: I noticed that the M16 12-inch handguard added by Echoes of Tarkov is no longer compatible with the M4A1 gas block, which seems to be a situation mentioned in other reviews and can be fixed, but worth mentioning.</p>\n<p>3: It\u2019s not a bug, but if you have some plans for ammunition caliber next, how about WTT\u2019s Barrett and Eukyre\u2019s AK-50 backport?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135398,
+   "parent_id": 55287,
+   "author": "Otto_Reed",
+   "author_id": 59317,
+   "author_url": "https://forge.sp-tarkov.com/user/59317/otto-reed",
+   "created_at": "2025-08-23T05:50:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Oops, when I upgraded from 1.1 to 1.2, the M16 is finally compatible with the M4A1 gas block , but other gas blocks from Echoes of Tarkov, such as FSB series and c7 was still don\u2019t work.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135399,
+   "parent_id": 55287,
+   "author": "Solid-Rhoads",
+   "author_id": 50691,
+   "author_url": "https://forge.sp-tarkov.com/user/50691/solid-rhoads",
+   "created_at": "2025-08-23T06:12:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>To address each point:</p>\n<p>1. Yeah that WTT ACR Magazine is cloned from an AK P-Mag, even though it is an AR style mag. Mod authors sometimes do this because the caliber/cartridges are already correct for their new mag. But sometimes this gets weighted a little too heavily when this mod is computing compatibility, and it ends up being pushed to places it shouldn\u2019t. For now we can blacklist it so it doesn\u2019t get pushed to any new slots/filters. Just add \u201c67a01e4ea2b82626b73d10a5\u201d to the blacklist in the config. In the future I\u2019m going to refine the way the mod handles references to the original items from which modded items were cloned.</p>\n<p>2. This is because of the inheritance of conflicts. To reduce cursed builds the mod has items inherit certain conflicts, but this can be disabled or individual items can be voided from inheriting conflicts. If you\u2019re seeing a lot of incompatible items go into the config and set \u201cinheritBaseConflicts\u201d and \u201cinheritCloneConflicts\u201d both to false. If you are only seeing a few items that are incompatible and you know how to find their ID\u2019s add their ID\u2019s to</p>\n<p>\u201cVoidConflicts\u201d: [] . In your follow up comment you mentioned the M16 handguard became compatible again, that\u2019s actually because I have \u201cinheritBaseConflicts\u201d set to false by default as of v1.2.0. I plan to refine this function to be more discerning in the future, or potentially supplant it with something else\u2026 maybe even just outright remove it, because it seems to be causing more people confusion than actually preventing cursed guns from showing up.</p>\n<p>3. Eukyre is part of the WTT team and if they do release the Barrett again, it should have compatibility out of the box even without this mod. That said, their caliber naming should be consistent, so any potentially missing compats should be filled in by this mod.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 55298,
+   "parent_id": null,
+   "author": "ALADEEN2004",
+   "author_id": 77226,
+   "author_url": "https://forge.sp-tarkov.com/user/77226/aladeen2004",
+   "created_at": "2025-08-23T12:47:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I like to report a Bug Report. Because i don\u2019t know if this happens to everyone or it\u2019s just me. I think i\u2019m stuck in Handbook in EFT since i can\u2019t move to Trader i tried everything but didn\u2019t work, still stuck in Handbook probably a bug or something. But i\u2019m still trying to find the Problem. Sorry my Grammar is bad English isn\u2019t my first language.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135405,
+   "parent_id": 55287,
+   "author": "hellchickens",
+   "author_id": 41253,
+   "author_url": "https://forge.sp-tarkov.com/user/41253/hellchickens",
+   "created_at": "2025-08-23T14:00:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Lol, Barrett was done by Rexana and it has same caliber naming as AK-50\u2026 So if u managed to manually update Barrett (in correct way ofc) to 3.11 it shall start working with ammo from AK-50 backport and expansion from 1.2.0 of that mod.</p>\n<p>Welp, the only thing needs to be checked if mags become cross compatible (as all .50 bmg Barrett mags are cross compatible between gun models)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135412,
+   "parent_id": 55269,
+   "author": "hellchickens",
+   "author_id": 41253,
+   "author_url": "https://forge.sp-tarkov.com/user/41253/hellchickens",
+   "created_at": "2025-08-23T15:11:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>maybe u can start handling arrays for targetItemId?</p>\n<p>feels like it will be much cleaner than to write down same attachmentID for dozens times</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135413,
+   "parent_id": 55287,
+   "author": "hellchickens",
+   "author_id": 41253,
+   "author_url": "https://forge.sp-tarkov.com/user/41253/hellchickens",
+   "created_at": "2025-08-23T16:12:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>ah I was incorrect as in original Rexana archive there is caliber set as 50BMG so it won\u2019t be picked up authomatically without manual edits</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135429,
+   "parent_id": 55298,
+   "author": "hellchickens",
+   "author_id": 41253,
+   "author_url": "https://forge.sp-tarkov.com/user/41253/hellchickens",
+   "created_at": "2025-08-23T21:16:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Well, carefully check other mods, as that one doing literally nothing with handbook, trader screen and flea.</p>\n<p>Ur problem is common when mod(s) are broken and have missing/incorrect props. Look carefully on server log, in 99% of cases there shall be error like TypeError: Cannot read properties of undefined (reading \u2018_props\u2019)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 55321,
+   "parent_id": null,
+   "author": "hellchickens",
+   "author_id": 41253,
+   "author_url": "https://forge.sp-tarkov.com/user/41253/hellchickens",
+   "created_at": "2025-08-23T23:41:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Well, I\u2019d better start new thread here. So, We have AK-50 mod, it has 4 ammo types in caliber:<br />\n686e90abd63bee9a05dcf5db HP<br />\n686e926498b323bfbbe1fc7c m21 tracer<br />\n686e93d861bcbeca0b805201 m33 HP<br />\n686e959752397d5b3485ad75 m903 slap</p>\n<p>also we do have 6 additional ammo types of same caliber from epics bmg expansion mod:<br />\n687daf1f7353335188000001 m1 incendiary<br />\n687daf1f7353335188000002 m2 ap<br />\n687daf1f7353335188000003 m8 api<br />\n687daf1f7353335188000004 m20 apit<br />\n687daf1f7353335188000005 m48 tracer<br />\n687daf1f7353335188000006 mk211 raufoss</p>\n<p>and we have Barrett M107 mod with SAME caliber, i\u2019ve cleaned it to only 1 ammo object (as in original mod there also was mk211 raufoss)<br />\n66c01f72d8e7493c154a39c5 M1022 LRSA</p>\n<p>in result what do we have<br />\n686e90abd63bee9a05dcf5db HP - added to nowhere<br />\n686e926498b323bfbbe1fc7c m21 tracer - added to AXMC (mags, chambers, all barrels), m107 chambers BUT missing m107 mag<br />\n686e93d861bcbeca0b805201 m33 HP - added to nowhere<br />\n686e959752397d5b3485ad75 m903 slap - added to nowhere<br />\n687daf1f7353335188000001 m1 incendiary - added to AXMC (mags, chambers, all barrels), m107 chambers BUT missing m107 mag<br />\n687daf1f7353335188000002 m2 ap - added to AXMC (mags, chambers, all barrels), m107 chambers BUT missing m107 mag<br />\n687daf1f7353335188000003 m8 api - added to AXMC (mags, chambers, all barrels), m107 chambers BUT missing m107 mag<br />\n687daf1f7353335188000004 m20 apit - added to AXMC (mags, chambers, all barrels), m107 chambers BUT missing m107 mag<br />\n687daf1f7353335188000005 m48 tracer - added to AXMC (mags, chambers, all barrels), m107 chambers BUT missing m107 mag<br />\n687daf1f7353335188000006 mk211 raufoss - added to AXMC (mags, chambers, all barrels), m107 chambers BUT missing m107 mag<br />\n66c01f72d8e7493c154a39c5 M1022 LRSA - added to nowhere</p>\n<p>686e926498b323bfbbe1fc7c m21 tracer is touched in epic edits, changed bundle, mass and penetration</p>\n<p>so I have wery big number of questions, like how it was added to .338 and why it ignores m107 mag. Mags are also not cross compatible.<br />\nThat makes me sick af. Whitelisting also does literally nothing</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135433,
+   "parent_id": 55321,
+   "author": "hellchickens",
+   "author_id": 41253,
+   "author_url": "https://forge.sp-tarkov.com/user/41253/hellchickens",
+   "created_at": "2025-08-23T23:53:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Added modded attachment c556f40e464c7f09d4c757fc (.338 Norma Magnum NMK BT) to 5fc22d7c187fea44d52eda44 (SWORD International Mk-18 .338 LM marksman rifle) slot patron_in_weapon</p>\n<p>also super win xD it added Caliber86x63 to Caliber86x70 gun and mags.</p>\n<p>[2025-08-23T23:36:10.890Z] info: Pass 1: Added modded ammo 5943d9c186f7745a13413ac9 (Shrapnel) to 5448bd6b4bdc2dfc2f8b4569 (Makarov PM 9x18PM pistol) chamber slot patron_in_weapon [2025-08-23T23:36:10.890Z] info: Pass 1: Added modded ammo 5996f6cb86f774678763a6ca (RGD-5 Shrapnel) to 5448bd6b4bdc2dfc2f8b4569 (Makarov PM 9x18PM pistol) chamber slot patron_in_weapon [2025-08-23T23:36:10.890Z] info: Pass 1: Added modded ammo 5996f6d686f77467977ba6cc (MON-50 Shrapnel) to 5448bd6b4bdc2dfc2f8b4569 (Makarov PM 9x18PM pistol) chamber slot patron_in_weapon [2025-08-23T23:36:10.890Z] info: Pass 1: Added modded ammo 5996f6fc86f7745e585b4de3 (M67 Shrapnel) to 5448bd6b4bdc2dfc2f8b4569 (Makarov PM 9x18PM pistol) chamber slot patron_in_weapon [2025-08-23T23:36:10.890Z] info: Pass 1: Added modded ammo 63b35f281745dd52341e5da7 (F1 Shrapnel) to 5448bd6b4bdc2dfc2f8b4569 (Makarov PM 9x18PM pistol) chamber slot patron_in_weapon [2025-08-23T23:36:10.890Z] info: Pass 1: Added modded ammo 66ec2aa6daf127599c0c31f1 (O-832DU Shrapnel) to 5448bd6b4bdc2dfc2f8b4569 (Makarov PM 9x18PM pistol) chamber slot patron_in_weapon [2025-08-23T23:36:10.890Z] info: Pass 1: Added modded ammo 67654a6759116d347b0bfb86 (V40 shrapnel) to 5448bd6b4bdc2dfc2f8b4569 (Makarov PM 9x18PM pistol) chamber slot patron_in_weapon ???????????????????????? even have no idea why does it touch shrapnel and adds it to dozens of guns</p>\n<p>suppose has to be in default blacklist</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135434,
+   "parent_id": 55321,
+   "author": "hellchickens",
+   "author_id": 41253,
+   "author_url": "https://forge.sp-tarkov.com/user/41253/hellchickens",
+   "created_at": "2025-08-23T23:57:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>[2025-08-23T23:54:03.232Z] info: Pass 1: Added modded attachment 683246a74073e586d112af9f (6.5x48mm Creedmoor Norma Match) to 588892092459774ac91d4b11 (Lobaev Arms DVL-10 7.62x51 bolt-action sniper rifle) slot patron_in_weapon [2025-08-23T23:54:03.232Z] info: Pass 1: Added modded attachment 68325a63730b17c69ee176eb (6.5x48mm Creedmoor HPBT Match) to 588892092459774ac91d4b11 (Lobaev Arms DVL-10 7.62x51 bolt-action sniper rifle) slot patron_in_weapon [2025-08-23T23:54:03.232Z] info: Pass 1: Added modded attachment 6833baea86387d71b68abd6f (6.5x48mm Creedmoor Hornady ELD-X) to 588892092459774ac91d4b11 (Lobaev Arms DVL-10 7.62x51 bolt-action sniper rifle) slot patron_in_weapon [2025-08-23T23:54:03.232Z] info: Pass 1: Added modded attachment 6833bae4baa31474639bea7d (6.5x48mm Creedmoor Norma AP) to 588892092459774ac91d4b11 (Lobaev Arms DVL-10 7.62x51 bolt-action sniper rifle) slot patron_in_weapon [2025-08-23T23:54:03.232Z] info: Pass 1: Added modded attachment 6833ba38a1c9ff155c04e56f (6.5x48mm Creedmoor Terminal Ascent) to 588892092459774ac91d4b11 (Lobaev Arms DVL-10 7.62x51 bolt-action sniper rifle) slot patron_in_weapon [2025-08-23T23:54:03.232Z] info: Pass 1: Added modded attachment 6833b8cb54aa764b2deefdfe (6.5x48mm Creedmoor SIG Venari SP) to 588892092459774ac91d4b11 (Lobaev Arms DVL-10 7.62x51 bolt-action sniper rifle) slot patron_in_weapon [2025-08-23T23:54:03.232Z] info: Pass 1: Added modded attachment 6834e6f28f5570aec23ca0c2 (6.5x48mm Creedmoor C-HP) to 588892092459774ac91d4b11 (Lobaev Arms DVL-10 7.62x51 bolt-action sniper rifle) slot patron_in_weapon [2025-08-23T23:54:03.233Z] info: Pass 1: Added modded attachment 683246a74073e586d112af9f (6.5x48mm Creedmoor Norma Match) to 588892092459774ac91d4b11 (Lobaev Arms DVL-10 7.62x51 bolt-action sniper rifle) slot patron_in_weapon [2025-08-23T23:54:03.233Z] info: Pass 1: Added modded attachment 68325a63730b17c69ee176eb (6.5x48mm Creedmoor HPBT Match) to 588892092459774ac91d4b11 (Lobaev Arms DVL-10 7.62x51 bolt-action sniper rifle) slot patron_in_weapon [2025-08-23T23:54:03.233Z] info: Pass 1: Added modded attachment 6833baea86387d71b68abd6f (6.5x48mm Creedmoor Hornady ELD-X) to 588892092459774ac91d4b11 (Lobaev Arms DVL-10 7.62x51 bolt-action sniper rifle) slot patron_in_weapon [2025-08-23T23:54:03.233Z] info: Pass 1: Added modded attachment 6833bae4baa31474639bea7d (6.5x48mm Creedmoor Norma AP) to 588892092459774ac91d4b11 (Lobaev Arms DVL-10 7.62x51 bolt-action sniper rifle) slot patron_in_weapon [2025-08-23T23:54:03.233Z] info: Pass 1: Added modded attachment 6833ba38a1c9ff155c04e56f (6.5x48mm Creedmoor Terminal Ascent) to 588892092459774ac91d4b11 (Lobaev Arms DVL-10 7.62x51 bolt-action sniper rifle) slot patron_in_weapon [2025-08-23T23:54:03.233Z] info: Pass 1: Added modded attachment 6833b8cb54aa764b2deefdfe (6.5x48mm Creedmoor SIG Venari SP) to 588892092459774ac91d4b11 (Lobaev Arms DVL-10 7.62x51 bolt-action sniper rifle) slot patron_in_weapon [2025-08-23T23:54:03.233Z] info: Pass 1: Added modded attachment 6834e6f28f5570aec23ca0c2 (6.5x48mm Creedmoor C-HP) to 588892092459774ac91d4b11 (Lobaev Arms DVL-10 7.62x51 bolt-action sniper rifle) slot patron_in_weapon</p>\n<p>Caliber6.5x48 to Caliber762x51, literally added to every 762x51 gun</p>\n<p>Creedmoore is from Echoes Of Tarkov, it is all cloned from 7.62x51 M61 ammo</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135435,
+   "parent_id": 55321,
+   "author": "hellchickens",
+   "author_id": 41253,
+   "author_url": "https://forge.sp-tarkov.com/user/41253/hellchickens",
+   "created_at": "2025-08-24T00:02:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>[2025-08-23T23:54:03.250Z] info: Pass 1: Added modded attachment 687daf1f7353335188000006 (.50 BMG Mk211 Raufoss) to 5fc22d7c187fea44d52eda44 (SWORD International Mk-18 .338 LM marksman rifle) slot patron_in_weapon [2025-08-23T23:54:03.250Z] info: Pass 1: Added modded attachment 683d1ba7b5a2063de35a8c39 (8.6 Blackout AP-Subsonic) to 5fc22d7c187fea44d52eda44 (SWORD International Mk-18 .338 LM marksman rifle) slot patron_in_weapon [2025-08-23T23:54:03.251Z] info: Pass 1: Added modded attachment 683d1e142cee4317689e75e4 (8.6 Blackout Copper Solid) to 5fc22d7c187fea44d52eda44 (SWORD International Mk-18 .338 LM marksman rifle) slot patron_in_weapon [2025-08-23T23:54:03.251Z] info: Pass 1: Added modded attachment 683d1ec4f7164f4f77ea7a85 (8.6 Blackout REX Subsonic) to 5fc22d7c187fea44d52eda44 (SWORD International Mk-18 .338 LM marksman rifle) slot patron_in_weapon [2025-08-23T23:54:03.251Z] info: Pass 1: Added modded attachment 683d1ba7b5a2063de35a8c39 (8.6 Blackout AP-Subsonic) to 5fc22d7c187fea44d52eda44 (SWORD International Mk-18 .338 LM marksman rifle) slot patron_in_weapon [2025-08-23T23:54:03.251Z] info: Pass 1: Added modded attachment 683d1e142cee4317689e75e4 (8.6 Blackout Copper Solid) to 5fc22d7c187fea44d52eda44 (SWORD International Mk-18 .338 LM marksman rifle) slot patron_in_weapon [2025-08-23T23:54:03.251Z] info: Pass 1: Added modded attachment 683d1ec4f7164f4f77ea7a85 (8.6 Blackout REX Subsonic) to 5fc22d7c187fea44d52eda44 (SWORD International Mk-18 .338 LM marksman rifle) slot patron_in_weapon</p>\n<p>Caliber86x43 to Caliber86x70 and to tons of Caliber762x51 guns</p>\n<p>8.6 Blackout is from Echoes Of Tarkov, cloned from .338 LM Tac-X and used in SR-25 clone</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135436,
+   "parent_id": 55321,
+   "author": "hellchickens",
+   "author_id": 41253,
+   "author_url": "https://forge.sp-tarkov.com/user/41253/hellchickens",
+   "created_at": "2025-08-24T00:03:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>So in sum ammo logic is kinda broken now</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135439,
+   "parent_id": 55321,
+   "author": "hellchickens",
+   "author_id": 41253,
+   "author_url": "https://forge.sp-tarkov.com/user/41253/hellchickens",
+   "created_at": "2025-08-24T00:32:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Suppose the logic for ammo shall be somewhat like the next:</p>\n<p>1) Pick all unique existing caliber records from \u201cammoCaliber\u201d props</p>\n<p>2) foreach caliber create array of ammo objects</p>\n<p>3) foreach chambers extract existing caliber(s) from already present objects, compare array with same caliber(s) array from step 2, add missing</p>\n<p>4) foreach mag extract existing caliber(s) from already present cartridge(s), fill with arrays of present caliber(s) from step 2</p>\n<p>5) check barrel and receiver conflicts, if there are present ammo objects - define which caliber and fill with other objects of same caliber array from step 2 ( because mod author LOVE that game around 556NATO and .300 BLK barrels and receivers\u2026)</p>\n<p>for fixing equal calibers with different names add in config new option like \u201cammoConsiderEqual\u201d: [ {\u201cCaliber762x67B\u201d:\u201cCaliber762x67mmB\u201d}]</p>\n<p>Also I suggest just even not to try \u201cguessing\u201d compatible calibers, if it has literally different record. If somebody needs it - they have to add it manually in that field just to avoid any wrong \u201cguessing\u201d by algo.</p>\n<p>To be clear, I see that hard porno around ammo and really blame BSG because they didn\u2019t do any kind of framework here and continue maintaining that json spaghetti of props and conflicts, when things could be solved in convenient ways.</p>\n<p>God bless me that I didn\u2019t went to work in BSG when they invited me as there would appear dead bodies.. A lot of them\u2026</p>\n<p><em>Seems it\u2019s time for me to start digging js\u2026</em></p>\n<p><em>Anyways, fk it, time for Stardew Valley</em></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 55330,
+   "parent_id": null,
+   "author": "Otto_Reed",
+   "author_id": 59317,
+   "author_url": "https://forge.sp-tarkov.com/user/59317/otto-reed",
+   "created_at": "2025-08-24T03:08:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Okay, I tried adding it manually, but it didn\u2019t always work, compatibility between mods is easy, like this one.</p>\n<p>{\u201cattachmentId\u201d: \u201c6862b3757fa915587fb36148\u201d, \u201ctargetItemId\u201d: \u201c618428466ef05c2ce828f21d\u201d}</p>\n<p>(6l50 with grau762 from massivesoft guns)</p>\n<p>When I tried to make the mod\u2019s items compatible with the vanilla items, it didn\u2019t work.</p>\n<p>{\u201cattachmentId\u201d: \u201c6657be3d8876d16a5866f413\u201d, \u201ctargetItemId\u201d: \u201c6410733d5dd49d77bd078481\u201d}</p>\n<p>{\u201cattachmentId\u201d: \u201c6862b3757fa915587fb36148\u201d, \u201ctargetItemId\u201d: \u201c606587252535c57a13424d00\u201d}</p>\n<p>(svd 25 magazine from wtt with avt40 / 6l50 with mk47)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135448,
+   "parent_id": 55321,
+   "author": "Solid-Rhoads",
+   "author_id": 50691,
+   "author_url": "https://forge.sp-tarkov.com/user/50691/solid-rhoads",
+   "created_at": "2025-08-24T04:08:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yeah, that\u2019s odd. Some wires might\u2019ve gotten crossed when I refactored on the 1.2.0 update (I let copilot handle the majority of the refactor because I was short on time). Honestly I haven\u2019t had the time to test extensively for any of the releases so far (like more than an hour of in-game time). I\u2019m hoping to get some time this coming week to really sit down, debug, and probably rewrite some sections entirely. Then spend more time in-game scrutinizing a little bit of everything.<br />\nAnd your steps for the logic re:ammo is in essence how it works now, minus step 5 which I haven\u2019t implemented yet. But the things being pushed to filters that shouldn\u2019t is probably because I included ammo in my baseitem checks (the item from which the modded item is cloned) which would be a mistake on my part because, unlike literally everything else, ammo has a strict classification in its caliber.</p>\n<p>But I don\u2019t have the code in front of me right now to check. Like I said, this week, HOPEFULLY, I can put in the time and get things sorted for a more stable release.<br />\nThis mod was really just supposed to be something for me and a small group of friends, but now given the response I feel as though I should give it some more attention and get it running clean. Just need to carve out the time to do so.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135449,
+   "parent_id": 55269,
+   "author": "Solid-Rhoads",
+   "author_id": 50691,
+   "author_url": "https://forge.sp-tarkov.com/user/50691/solid-rhoads",
+   "created_at": "2025-08-24T04:11:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>lol, manualAdd in general was meant to handle a few edge cases that needed extra attention, so its already exceeded the expectation for the number of entries. I\u2019m gonna work on refining the actual compatibility processing first and then only if its still necessary (which hopefully it wont be), I\u2019ll alter the manualAdd method to handle arrays.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135450,
+   "parent_id": 55321,
+   "author": "hellchickens",
+   "author_id": 41253,
+   "author_url": "https://forge.sp-tarkov.com/user/41253/hellchickens",
+   "created_at": "2025-08-24T04:15:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks bro, just ur mod shall be CORE for SPT, big work.</p>\n<p>Ping me please when next RC will be ready, I\u2019ll help u with testing</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135451,
+   "parent_id": 55321,
+   "author": "Solid-Rhoads",
+   "author_id": 50691,
+   "author_url": "https://forge.sp-tarkov.com/user/50691/solid-rhoads",
+   "created_at": "2025-08-24T04:49:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019d appreciate that, thanks.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 55334,
+   "parent_id": null,
+   "author": "apache1334",
+   "author_id": 25573,
+   "author_url": "https://forge.sp-tarkov.com/user/25573/apache1334",
+   "created_at": "2025-08-24T08:09:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>When manually adding items do I need to specify the item slot the attachment is supposed to go in (Scope, Front Sight, etc) or will the mod figure that out on it\u2019s own? I know you said you don\u2019t want to touch vanilla items but I\u2019m trying to Add the TA51 to the Corvus rail for the AUG. I own an AUG and the Corvus rail is actually pre drilled for direct fitment of the ACOG but I don\u2019t want to worry about clipping issues so here I am.</p>\n<p>Edit: I\u2019m smarter than that apologies. Added the lines and saved but it appears nothing has changed through a server and game restart.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135480,
+   "parent_id": 55298,
+   "author": "Solid-Rhoads",
+   "author_id": 50691,
+   "author_url": "https://forge.sp-tarkov.com/user/50691/solid-rhoads",
+   "created_at": "2025-08-24T19:41:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Pretty much what hellchickens said; This mod doesn\u2019t touch handbook id\u2019s. But getting stuck in the handbook is common for outdated mods or mods that have broken _props or mismatched id\u2019s. So check your modlist, especially mods that add items (make sure they are current to SPT 3.11, and so on).</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 55356,
+   "parent_id": null,
+   "author": "Finnley Kepler",
+   "author_id": 31979,
+   "author_url": "https://forge.sp-tarkov.com/user/31979/finnley-kepler",
+   "created_at": "2025-08-24T23:33:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Where\u2019s the stock in the wages of sin M4 screenshot from? I downloaded Epic\u2019s AIO and TGC, etc, can\u2019t find where that stock is.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135493,
+   "parent_id": 55356,
+   "author": "Solid-Rhoads",
+   "author_id": 50691,
+   "author_url": "https://forge.sp-tarkov.com/user/50691/solid-rhoads",
+   "created_at": "2025-08-25T00:15:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Actually I\u2019m 99% sure that\u2019s also from WTT Armory</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 55358,
+   "parent_id": null,
+   "author": "Kojimbo0_0",
+   "author_id": 77629,
+   "author_url": "https://forge.sp-tarkov.com/user/77629/kojimbo0-0",
+   "created_at": "2025-08-25T02:03:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Great mod, but has some problems with other mods. It caused the \u2018An <em>attempt was made to transition</em> a task to a final state when it had already been completed\u2019 causing the game to brick itself.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135499,
+   "parent_id": 55358,
+   "author": "Solid-Rhoads",
+   "author_id": 50691,
+   "author_url": "https://forge.sp-tarkov.com/user/50691/solid-rhoads",
+   "created_at": "2025-08-25T02:44:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Its VERY unlikely this mod is the source of that. It only affects item filters and nothing else. That type of error would be the result of messing with your profile, adding or removing a patcher/pre-patcher, or another type of mod having its own conflict, like a custom trader, mod with custom bosses or enemies, task randomization, quest progression, etc.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 55419,
+   "parent_id": null,
+   "author": "NCHPANTHER",
+   "author_id": 18132,
+   "author_url": "https://forge.sp-tarkov.com/user/18132/nchpanther",
+   "created_at": "2025-08-27T18:15:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This is incredible. It works really well with the mods I have. I\u2019m blown away.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 135622,
+   "parent_id": 55321,
+   "author": "Solid-Rhoads",
+   "author_id": 50691,
+   "author_url": "https://forge.sp-tarkov.com/user/50691/solid-rhoads",
+   "created_at": "2025-08-28T23:24:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I just HAVE to say, because you mentioned it in this string of messages: While working on the next update, I found out why shrapnel was getting pushed to chambers and cartridges\u2026 It apparently has the _prop \u201cCaliber:9x18\u201d\u2026 lmao\u2026 I\u2019m discovering more EFT curse in the process of refining this mod than I ever thought existed.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135624,
+   "parent_id": 55334,
+   "author": "Solid-Rhoads",
+   "author_id": 50691,
+   "author_url": "https://forge.sp-tarkov.com/user/50691/solid-rhoads",
+   "created_at": "2025-08-29T00:30:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey, the new update should fix most issues with the manualAdd function and it now supports targeting vanilla items (as long as the target has the appropriate slot, it should work). Just double check your formatting and make sure your ID\u2019s are correct.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135625,
+   "parent_id": 55330,
+   "author": "Solid-Rhoads",
+   "author_id": 50691,
+   "author_url": "https://forge.sp-tarkov.com/user/50691/solid-rhoads",
+   "created_at": "2025-08-29T01:05:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey, so you can see the above comment to apache for details on the new update and manualAdd. I actually tested your exact implementation. It works now, but a couple of your ID\u2019s weren\u2019t correct. Last version of manual add was a little broken so it probably wouldn\u2019t have worked anyway. But here\u2019s what you\u2019d want with the new updates formatting:</p>\n<p>\u201cManualAdd\u201d: [ { \u201cattachmentIds\u201d:\u201c6862b3757fa915587fb36148\u201d, \u201ctargetItemIds\u201d: [ \u201c5dbcb66f4827cd761fb3797a\u201d, \u201c606587252535c57a13424cfd\u201d ] }, { \u201cattachmentIds\u201d: \u201c6657be3d8876d16a5866f413\u201d, \u201ctargetItemIds\u201d: \u201c6410733d5dd49d77bd07847e\u201d } ] The first entry adds the 6l50 to both the GRAU and the MK47, then the second entry adds the 25 round SVD mag to the AVT40. Fair warning though, SVD 25 Round mag with the AVT40 is cursed lol. Sorta floats just below the magwell.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 55452,
+   "parent_id": null,
+   "author": "vihu05",
+   "author_id": 53020,
+   "author_url": "https://forge.sp-tarkov.com/user/53020/vihu05",
+   "created_at": "2025-08-29T02:26:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Why cant I use any single mag from <a href=\"https://hub.sp-tarkov.com/files/file/713-olympus/\" target=\"_blank\" rel=\"noreferrer noopener\">Olympus</a> in any single <a href=\"https://hub.sp-tarkov.com/files/file/2952-wtt-armory/\" target=\"_blank\" rel=\"noreferrer noopener\">WTT- Armory</a> gun??? Like, literally any single mag.</p>\n<p>There\u2019s also a weird bug with some calibers, for example I cant load 9x19PARA from <a href=\"https://hub.sp-tarkov.com/files/file/2970-uh-me-meta-ammo/\" target=\"_blank\" rel=\"noreferrer noopener\"><strong>UH-ME: META AMMO</strong></a> (for example) into the IWI Tavor x95 (from <a href=\"https://hub.sp-tarkov.com/files/file/2952-wtt-armory/\" target=\"_blank\" rel=\"noreferrer noopener\">WTT- Armory</a>) which uses 9x19PARA, but its kinda crazy because it only happens in a certain mag for that specific weapon, the deafult mag (which is non vanilla) allows the ammo to be loaded, but then the gun doesnt allow that ammo to be loaded.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135629,
+   "parent_id": 55452,
+   "author": "Solid-Rhoads",
+   "author_id": 50691,
+   "author_url": "https://forge.sp-tarkov.com/user/50691/solid-rhoads",
+   "created_at": "2025-08-29T05:56:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I have a pretty good idea why both those instances aren\u2019t creating compats. I\u2019ll probably get a chance to look into it tomorrow though.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 135640,
+   "parent_id": 55330,
+   "author": "Otto_Reed",
+   "author_id": 59317,
+   "author_url": "https://forge.sp-tarkov.com/user/59317/otto-reed",
+   "created_at": "2025-08-29T13:44:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>OOPs, I thought it should be the magazine slot, but it should be the gun itself.</p>\n<p>Anyway, the location wrong is easy to fix, thanks for Tyfon</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135663,
+   "parent_id": 55321,
+   "author": "hellchickens",
+   "author_id": 41253,
+   "author_url": "https://forge.sp-tarkov.com/user/41253/hellchickens",
+   "created_at": "2025-08-29T19:10:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Unity game developers are often do same cursed shit lmao. Sometimes it looks like that if they starting to do anything in the right approach - God of gamedev comes to them to punish and revert to the way of shitdev xD</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135668,
+   "parent_id": 55452,
+   "author": "Solid-Rhoads",
+   "author_id": 50691,
+   "author_url": "https://forge.sp-tarkov.com/user/50691/solid-rhoads",
+   "created_at": "2025-08-29T20:32:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>RE Olympus: So I\u2019m putting together a patch that should make the Olympus stuff compatible; There was an oversight on my part for modded items that use vanilla assets (models).</p>\n<p>RE MetaAmmo: BUT the Meta Ammo instance with the 9mm IWI Tavor is so friggin weird\u2026 Why the meta ammo for 9x19PARA is being excluded from the filters of the chamber of that Tavor makes no sense to me. There\u2019s something not matching up and I haven\u2019t found it yet.</p>\n<p>If you look, all the other meta ammo is being correctly added to chambers of other modded weapons even from the WTT mod. But there is some sorta disconnect with that 9mm Tavor\u2026 and we can\u2019t even force it with manualAdd because I looked at the script for Meta Ammo and they have it generating a new id at runtime for each ammo This works great for their mod because it can dynamically generate its meta ammo, but it makes the methods of my mod kind of ineffective for remedying that bug.</p>\n<p><strong>TLDR</strong>: Patch coming for Olympus. However, RE: MetaAmmo, I have a better solution for you anyway: <strong>Use <a href=\"https://hub.sp-tarkov.com/files/file/1082-loe-load-order-editor/\" target=\"_blank\" rel=\"noreferrer noopener\">Load Order Editor</a> to have UHSpartan-MetaAmmo-3.11 load AFTER WTT Armory and any other weapon/ammo mods you have</strong>. <strong>This will not only fix the bug with the Tavor, but will allow the script for MetaAmmo to generate meta ammos for the caliber\u2019s added by other mods, including those added by WTT like .300 winmag and .338 norma, etc</strong> (a process handled by MetaAmmo, and entirely outside the scope of my mod anyway). Just keep in mind once you use load order editor, any new mods you add will end up at the end of your load order (regardless of their name) until you adjust again with LOE.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 135676,
+   "parent_id": 55452,
+   "author": "Solid-Rhoads",
+   "author_id": 50691,
+   "author_url": "https://forge.sp-tarkov.com/user/50691/solid-rhoads",
+   "created_at": "2025-08-30T00:13:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Okay, 1.3.1 adds support for the lions share of Olympus mags. Seems to be a few outliers that I can look at later. Check the 1.3.1 change log as there are a couple parts that pertain to mods like Olympus; chiefly that parsing 200ish magazines takes while lol, but it will cache their data after the first parse. Just be sure to delete your existing cache folder before you run the updated mod.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 55487,
+   "parent_id": null,
+   "author": "DemonHunter58",
+   "author_id": 11309,
+   "author_url": "https://forge.sp-tarkov.com/user/11309/demonhunter58",
+   "created_at": "2025-08-30T00:27:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Dumb question but, which one is the cache folder in SRC?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135680,
+   "parent_id": 55487,
+   "author": "Solid-Rhoads",
+   "author_id": 50691,
+   "author_url": "https://forge.sp-tarkov.com/user/50691/solid-rhoads",
+   "created_at": "2025-08-30T00:40:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The one called \u201ccache\u201d lol</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/cGPyAIM.png\" alt=\"cGPyAIM.png\" /></p>\n<p>It generates on first run with file parsing enabled, so if you disabled modFileParsing in the config, or you haven\u2019t run version 1.3.0 or 1.3.1 at all yet, then it wouldn\u2019t be there.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135686,
+   "parent_id": 55487,
+   "author": "DemonHunter58",
+   "author_id": 11309,
+   "author_url": "https://forge.sp-tarkov.com/user/11309/demonhunter58",
+   "created_at": "2025-08-30T04:58:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Didn\u2019t run it then, I remember downloading but I think my buddy called me to play DayZ.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 55502,
+   "parent_id": null,
+   "author": "Vercinaigh",
+   "author_id": 82058,
+   "author_url": "https://forge.sp-tarkov.com/user/82058/vercinaigh",
+   "created_at": "2025-08-30T11:00:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This mod prevent server start up on my Linux machine. It might be due to the special character but am unsure, can send a error print out if needed.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135692,
+   "parent_id": 55452,
+   "author": "vihu05",
+   "author_id": 53020,
+   "author_url": "https://forge.sp-tarkov.com/user/53020/vihu05",
+   "created_at": "2025-08-30T12:45:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Pretty nice ty so much, working like a charm</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 135694,
+   "parent_id": 55502,
+   "author": "Solid-Rhoads",
+   "author_id": 50691,
+   "author_url": "https://forge.sp-tarkov.com/user/50691/solid-rhoads",
+   "created_at": "2025-08-30T13:13:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I anticipated that Linux might have an issue with that. Think I mentioned it in the installation tab. But yeah, try changing the name of the folder first (change the special character to an \u201ca\u201d) and see if that fixes it. If so, then just create an order.json file so it loads last.</p>\n<p>If that doesn\u2019t fix it then it may be an issue with pathing related to caching, but at that point I\u2019d say just create a GitHub issue and send me your logs.</p>\n<p>Unfortunately the only Linux machine I have access to test on right now is a Raspberry Pi, but I did have an SPT server instance running inside a docker container at one point, and I may still have it. I\u2019ll let you know if I can test and resolve it on my own.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135695,
+   "parent_id": 55487,
+   "author": "Solid-Rhoads",
+   "author_id": 50691,
+   "author_url": "https://forge.sp-tarkov.com/user/50691/solid-rhoads",
+   "created_at": "2025-08-30T13:32:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Understandable. You know how hard I been fighting the urge to drop everything and just spend a week setting up a new Deer Isle server?\u2026 lmao</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135696,
+   "parent_id": 55452,
+   "author": "Solid-Rhoads",
+   "author_id": 50691,
+   "author_url": "https://forge.sp-tarkov.com/user/50691/solid-rhoads",
+   "created_at": "2025-08-30T13:33:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Glad to hear it</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135703,
+   "parent_id": 55487,
+   "author": "DemonHunter58",
+   "author_id": 11309,
+   "author_url": "https://forge.sp-tarkov.com/user/11309/demonhunter58",
+   "created_at": "2025-08-30T15:45:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Lol, I personally am not a fan of deers isle.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135710,
+   "parent_id": 55487,
+   "author": "Solid-Rhoads",
+   "author_id": 50691,
+   "author_url": "https://forge.sp-tarkov.com/user/50691/solid-rhoads",
+   "created_at": "2025-08-30T18:20:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>See I started setting up a server for it, configuring tons of mods, and then DayZ updated, it broke all the maps and John McLane (the dev for deer isle) decided to take the map down until it was fixed. So I never got to try it in earnest\u2026 That was like, idk, a year ago, maybe more. Anyway\u2026 lol</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135718,
+   "parent_id": 55502,
+   "author": "Vercinaigh",
+   "author_id": 82058,
+   "author_url": "https://forge.sp-tarkov.com/user/82058/vercinaigh",
+   "created_at": "2025-08-30T23:44:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Will give it a go tonight, if not I\u2019ll throw the error up on github for you. I am pretty sure the later is more the issue the more i think about it as I\u2019ve had this mod for awhile, since it\u2019s always been that way I do think it\u2019s worked before.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135719,
+   "parent_id": 55502,
+   "author": "Solid-Rhoads",
+   "author_id": 50691,
+   "author_url": "https://forge.sp-tarkov.com/user/50691/solid-rhoads",
+   "created_at": "2025-08-30T23:55:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yeah, let me know. I looked at the paths and they should be cross-compatible with linux. It could be a case sensitive thing too\u2026 I had to tweak a few mods ts files when I was hosting on linux. I\u2019m assuming you\u2019re using a docker container too. Oh, another thing to check, if it is related to the caching function, is to make sure your spt.server executable has write privileges to the directories in question, since its being commanded by a script to create a directory and a file.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135721,
+   "parent_id": 55502,
+   "author": "eVu",
+   "author_id": 83989,
+   "author_url": "https://forge.sp-tarkov.com/user/83989/evu",
+   "created_at": "2025-08-31T02:32:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Ran into the same issue as Vercinaigh.</p>\n<p>Look to have been a filename casing issue.</p>\n<p>In errors when trying to import a resource within the following file:<br />\n<strong>..user\\mods\\\u03a9utocompatframework\\src\\mod.ts</strong></p>\n<p>It\u2019s trying to find:<br />\n<strong>\u201c./references/vanillaitems.json\u201c;</strong></p>\n<p>File it tries to find on linux:<br />\n<strong>..user\\mods\\\u03a9utocompatframework\\src\\references\\vanillaitems.json</strong><br />\nFile that actually exists<br />\n<strong>..user\\mods\\\u03a9utocompatframework\\src\\references\\vanillaItems.json</strong></p>\n<p>Changing the case <strong>fixed</strong> the issue and allowed the server to load. Left the main mod folder name untouched, special character isn\u2019t causing an issue for me on Linux Via Docker.</p>\n<p>Hope this helps anyone else who may be running into the issue.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135722,
+   "parent_id": 55502,
+   "author": "Solid-Rhoads",
+   "author_id": 50691,
+   "author_url": "https://forge.sp-tarkov.com/user/50691/solid-rhoads",
+   "created_at": "2025-08-31T03:11:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yeah case sensitivity is one of the things I suspected. I\u2019ll make a note of it so in the next update that file name is consistent and won\u2019t cause an issue on Linux for other folks. Thanks for the find.</p>\n<p>Edit: yeah I found it. The actual code itself is consistent with the existing file name being \u201cvanillaItems.json\u201d the discrepancy is just in my import statement in mod.ts where I wrote import vanillaItems from \u201c./references/vanillaitems.json\u201d;, instead of import vanillaItems from \u201c./references/vanillaItems.json\u201d; \u2026 So in the next update it will all be \u201cvanillaItems\u201d with the uppercase I. But for now changing the file name to lower case will fix it and bring it in line with the import.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135726,
+   "parent_id": 55502,
+   "author": "Vercinaigh",
+   "author_id": 82058,
+   "author_url": "https://forge.sp-tarkov.com/user/82058/vercinaigh",
+   "created_at": "2025-08-31T08:09:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Awesome thanks!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135737,
+   "parent_id": 55487,
+   "author": "DemonHunter58",
+   "author_id": 11309,
+   "author_url": "https://forge.sp-tarkov.com/user/11309/demonhunter58",
+   "created_at": "2025-08-31T17:15:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>RIP</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 55539,
+   "parent_id": null,
+   "author": "hellchickens",
+   "author_id": 41253,
+   "author_url": "https://forge.sp-tarkov.com/user/41253/hellchickens",
+   "created_at": "2025-08-31T20:12:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>ps, bro, looks like things went missing, so repeat here once more:</p>\n<p>Can u please add option to write log output to dedicated file, not into whole server output? That log auto archive function of server makes me mad af when I do testing xD</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135745,
+   "parent_id": 55539,
+   "author": "Solid-Rhoads",
+   "author_id": 50691,
+   "author_url": "https://forge.sp-tarkov.com/user/50691/solid-rhoads",
+   "created_at": "2025-08-31T20:15:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Oh, I must\u2019ve missed when you requested the log split, yeah I can do that. What do you mean by \u201cthings went missing\u201d though?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135746,
+   "parent_id": 55539,
+   "author": "hellchickens",
+   "author_id": 41253,
+   "author_url": "https://forge.sp-tarkov.com/user/41253/hellchickens",
+   "created_at": "2025-08-31T20:18:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>things went missing</p>\n<p>literally about log split request))))))))))))))) looks like I\u2019ve wrote it somewhere deep inside long messages</p>\n<p>How mod itself works I\u2019m testing right now, so have nothing to blame for now</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135747,
+   "parent_id": 55539,
+   "author": "Solid-Rhoads",
+   "author_id": 50691,
+   "author_url": "https://forge.sp-tarkov.com/user/50691/solid-rhoads",
+   "created_at": "2025-08-31T20:24:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>OHHHHHH, you scared me lol. I thought maybe I accidentally packed the wrong build in that little Linux update and broke everything. Yeah, I\u2019ll make a note and look at making that adjustment to logging at some point in the near future.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 55541,
+   "parent_id": null,
+   "author": "hellchickens",
+   "author_id": 41253,
+   "author_url": "https://forge.sp-tarkov.com/user/41253/hellchickens",
+   "created_at": "2025-08-31T21:02:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Added modded ammo 66c01f72d8e7493c154a39c5 (.50 BMG M1022 long-range sniper) to deee28079e76d537f532021c (Surgeon Rifles 1581 XL action .338 LM bolt-action sniper rifle) chamber slot patron_in_weapon Added modded ammo 66c01f72d8e7493c154a39c5 (.50 BMG M1022 long-range sniper) to f1b1a0db4986e718711a8e80 (MDT AICS style 3.715 inch 5-round magazine) cartridge slot cartridges Added modded ammo 66c01f72d8e7493c154a39c5 (.50 BMG M1022 long-range sniper) to 05d4400c84ab3eb0e7722625 (MDT AICS style 3.715 inch 10-round magazine) cartridge slot cartridges \u2014\u2014\u2014\u2014 in .308 mag? srsly?</p>\n<p>why? It wasn\u2019t even clone parent</p>\n<p>and still not added to same caliber AK-50 and it\u2019s bundled M82 mag. Ammo from AK-50 mod:</p>\n<p>686e90abd63bee9a05dcf5db HP</p>\n<p>686e93d861bcbeca0b805201 m33 HP</p>\n<p>686e959752397d5b3485ad75 m903 slap</p>\n<p>not even processed (really ZERO records in logs), ammo from bmg expansion mod added as well as one ammo object from AK-50 mod (as it was modified in expansion mod) to M107 chamber and all of them are not added to M107 mag</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135749,
+   "parent_id": 55541,
+   "author": "hellchickens",
+   "author_id": 41253,
+   "author_url": "https://forge.sp-tarkov.com/user/41253/hellchickens",
+   "created_at": "2025-08-31T21:13:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Added modded ammo 68561ab84857b945e0ce85e9 (.338 Lapua Magnum RIP) to 66c01f675cc8f74d1ceaa066 (Barrett M107 magazine) cartridge slot cartridges Added modded ammo 6859749fb61f50b920ae5a2a (.338 Lapua Magnum Raufoss) to 66c01f675cc8f74d1ceaa066 (Barrett M107 magazine) cartridge slot cartridges</p>\n<p>feels like there is some mess, like setting wrong IDs for exact loop cycle, like processed ID updated too late or updated too early xD</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135750,
+   "parent_id": 55541,
+   "author": "Solid-Rhoads",
+   "author_id": 50691,
+   "author_url": "https://forge.sp-tarkov.com/user/50691/solid-rhoads",
+   "created_at": "2025-08-31T21:34:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>That\u2019s really weird, because I can\u2019t replicate that in my current version. It sounds like the issue that was fixed in version 1.3.0+. I have a clean install for a testing environment set up, only weapon and gear mods (including WTT Armory, AK-50, 50bmg expansion) + autocompatibility, and the MDT AICS style 3.715 inch 5-round magazine only accepts .338LM and .338 Norma as it should, as revealed via linked search. Same goes for the inverse. No 338 ammo showing in the M82 mag for the AK-50, and the ammo from 50bmg expansion is there.</p>\n<p>I would totally uninstall the mod, reinstall making sure its the current version, and check your load order.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 55543,
+   "parent_id": null,
+   "author": "Vercinaigh",
+   "author_id": 82058,
+   "author_url": "https://forge.sp-tarkov.com/user/82058/vercinaigh",
+   "created_at": "2025-09-01T01:52:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Works brilliant on my Linux box now, thanks!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 135756,
+   "parent_id": 55541,
+   "author": "hellchickens",
+   "author_id": 41253,
+   "author_url": "https://forge.sp-tarkov.com/user/41253/hellchickens",
+   "created_at": "2025-09-01T02:35:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>That logs are after I did reinstall. Clean 1.3.2, mod last in order xD</p>\n<p>I too have 0 idea how 3 ammo object were just ignored. Idk, I\u2019ve sent u in pm barrett mod, try with it, maybe it breaks smth. As I have no free space now to do super-duper-clean spt install to check it.</p>\n<p>Also tried with caching disabled, still the same</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135758,
+   "parent_id": 55541,
+   "author": "Solid-Rhoads",
+   "author_id": 50691,
+   "author_url": "https://forge.sp-tarkov.com/user/50691/solid-rhoads",
+   "created_at": "2025-09-01T03:23:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I haven\u2019t looked in game, but I don\u2019t think that mod is correctly reassigning the caliber for the ammo. On the cloned ammo is says: \u201cammoCaliber\u201d: \u201cCaliber127x99\u201d should be \u201cCaliber\u201d: \u201cCaliber127x99\u201d for ammo. Its trying to overwrite a prop that doesn\u2019t exist on the original. So in game the round is probably still a .338 lapua magnum round, in terms of caliber.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135778,
+   "parent_id": 55541,
+   "author": "hellchickens",
+   "author_id": 41253,
+   "author_url": "https://forge.sp-tarkov.com/user/41253/hellchickens",
+   "created_at": "2025-09-01T21:10:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>hmmm, gonna take a look into, thanks</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135780,
+   "parent_id": 55541,
+   "author": "hellchickens",
+   "author_id": 41253,
+   "author_url": "https://forge.sp-tarkov.com/user/41253/hellchickens",
+   "created_at": "2025-09-01T21:50:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>yep, u are right, that\u2019s the problem for 66c01f72d8e7493c154a39c5 (.50 BMG M1022 long-range sniper) in M107 mod, now it is suitable everywhere it should be.</p>\n<p>Though</p>\n<p>686e90abd63bee9a05dcf5db HP</p>\n<p>686e93d861bcbeca0b805201 m33 HP</p>\n<p>686e959752397d5b3485ad75 m903 slap</p>\n<p>are still the same, not even a record in logs. Feels like it wasn\u2019t correctly added to chambers and cartridges. Gonna manually add it to \u201cEdits\u201d and check if it starts to work\u2026..</p>\n<p>Aaaaaand it didn\u2019t help, still ur mod have 0 records for those 3 IDs. Fun part that 1.2.0 at least \u201csaw\u201d it and wrote in log</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135781,
+   "parent_id": 55541,
+   "author": "hellchickens",
+   "author_id": 41253,
+   "author_url": "https://forge.sp-tarkov.com/user/41253/hellchickens",
+   "created_at": "2025-09-01T22:03:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>also it\u2019s weird looking xDDDDD</p>\n<p><a href=\"https://drive.google.com/file/d/1otC5F9VKps1RMNGyF7nYtL_hCAY2DtfN/view?usp=sharing\" target=\"_blank\" rel=\"noreferrer noopener\">https://drive.google.com/file/d/1otC5F9VKps1RMNGyF7nYtL_hCAY2DtfN/view?usp=sharing</a></p>\n<p>the fun part here is that if compatibility done on _props level and left \u201cammoCaliber\u201d in M107 for ammo in mods itself - things look like it should be, but now\u2026. can\u2019t stop laughing xDD</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135783,
+   "parent_id": 55541,
+   "author": "Solid-Rhoads",
+   "author_id": 50691,
+   "author_url": "https://forge.sp-tarkov.com/user/50691/solid-rhoads",
+   "created_at": "2025-09-02T00:26:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It IS \u201cammoCaliber\u201d for weapons, and just \u201cCaliber\u201d for ammo\u2026 Welcome to the sanatorium.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135784,
+   "parent_id": 55541,
+   "author": "hellchickens",
+   "author_id": 41253,
+   "author_url": "https://forge.sp-tarkov.com/user/41253/hellchickens",
+   "created_at": "2025-09-02T01:38:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>yeah, i\u2019ve changed for m107 and it went working\u2026 Other staff stood the same, though stopped touching .338</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 136031,
+   "parent_id": null,
+   "author": "Deftoner976",
+   "author_id": 78449,
+   "author_url": "https://forge.sp-tarkov.com/user/78449/deftoner976",
+   "created_at": "2025-09-08T04:07:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This mod dont do anything for me, am I supposed to change something in the settings file?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 136214,
+   "parent_id": 136031,
+   "author": "Solid-Rhoads",
+   "author_id": 50691,
+   "author_url": "https://forge.sp-tarkov.com/user/50691/solid-rhoads",
+   "created_at": "2025-09-08T21:39:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You shouldn\u2019t need to alter anything. Check the terminal during server boot, you should see a message from ACF that says something like:</p>\n<p>AutoCompatibility Framework: Beginning Calculations\u2026 Cache found: Loaded X entries from cache Delete cache folder from user/mods/autocompatframework/src if you update or add new weapon, attachment, or ammo mods to allow the cache to regenerate. AutoCompatFramework Summary: - Added X ammo to chambers - Added X ammo to cartridges - Added X attachments to slots - Added X base conflicts - Added X cloned conflicts - Voided X conflicts - Added X manual additions AutoCompatFramework: Mod Cross-compatibility applied successfully.Where X is the value for each of the entries. If there is nothing, or very little being applied then ACF is either loading too early or you just don\u2019t have any (or many) compatibilities to be applied. This may just be because you are only using a small number of modded weapon and attachment mods and/or they already have some level of compatibility. Depends on the situation.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 136231,
+   "parent_id": null,
+   "author": "tempandspam",
+   "author_id": 22056,
+   "author_url": "https://forge.sp-tarkov.com/user/22056/tempandspam",
+   "created_at": "2025-09-09T03:21:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Sorry if this has been asked/mentioned anywhere, a lot of it is like rocket science to me.</p>\n<p>I have a mod that isn\u2019t listed on this site that I want to make compatible with other mods that are on this site, how would I go about making this work?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 136376,
+   "parent_id": 136231,
+   "author": "Solid-Rhoads",
+   "author_id": 50691,
+   "author_url": "https://forge.sp-tarkov.com/user/50691/solid-rhoads",
+   "created_at": "2025-09-09T22:04:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>There\u2019s no official support provided here or on the SPT discord for mods not listed on the SPT mod Hub or Forge.</p>\n<p>If it is a certain mod that alters the way SPT handles connected clients, they have their own discord that you can go to for more guidance on creating compatibility, but be forewarned, its generally viewed as NOT a simple task.</p>\n<p>If it is a different mod, the same still applies, and official support is not provided here, and I can\u2019t provide much more guidance beyond that without more details. Generally speaking; Check if the mod author has info on compatibility provided anywhere, see if they have a discord or other public space for communication and discussion, and if all else fails make a polite inquiry with the unlisted mod\u2019s author(s) themselves.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 136820,
+   "parent_id": 136031,
+   "author": "Deftoner976",
+   "author_id": 78449,
+   "author_url": "https://forge.sp-tarkov.com/user/78449/deftoner976",
+   "created_at": "2025-09-16T02:03:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yeah\u2026 I dont see that.<br />\nI use SPT 3.11.3 with FIka.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 136880,
+   "parent_id": 136031,
+   "author": "Solid-Rhoads",
+   "author_id": 50691,
+   "author_url": "https://forge.sp-tarkov.com/user/50691/solid-rhoads",
+   "created_at": "2025-09-18T01:57:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Oh, if you\u2019re not seeing that in the terminal at all during server boot then there\u2019s two possible scenarios; The most likely scenario is that the mod isn\u2019t installed in the right place. The second possibility is that at some point you disabled the mod functionality in the config using the first config option.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 137455,
+   "parent_id": null,
+   "author": "skYman",
+   "author_id": 85002,
+   "author_url": "https://forge.sp-tarkov.com/user/85002/skyman",
+   "created_at": "2025-09-25T09:09:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Just wanted to let you know that I am using 1.3.2 on a heavily modded headless setup with all known (to me at least) supported content mods and ABPS + APBS and it works beautifully in combination. There is an extreme variety in bot-loadouts and so far there have been no issues that have not been taken care of by fallback logic.</p>\n<p>At least that is what I could gather from the console / logs. I am 20 raids into this playthrough and it\u2019s the best SPT-experience I have had in years. Big Ups!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 137889,
+   "parent_id": null,
+   "author": "Blitz#5673",
+   "author_id": 241,
+   "author_url": "https://forge.sp-tarkov.com/user/241/blitz5673",
+   "created_at": "2025-10-03T08:54:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2025-10-05 21:37:29]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 137895,
+   "parent_id": 137889,
+   "author": "Blitz#5673",
+   "author_id": 241,
+   "author_url": "https://forge.sp-tarkov.com/user/241/blitz5673",
+   "created_at": "2025-10-03T09:51:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2025-10-05 21:37:26]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 138030,
+   "parent_id": null,
+   "author": "Blitz#5673",
+   "author_id": 241,
+   "author_url": "https://forge.sp-tarkov.com/user/241/blitz5673",
+   "created_at": "2025-10-05T21:45:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m trying to add a few things manually but having little luck. I\u2019m not sure if my formatting is wrong because there are no changes in game. I\u2019m trying to make the two gooseneck adapters from EOT interchangeable with all carry handle uppers, and trying to get the vanilla M4A1 FSP to be compatible with the Daniel Defense rails + 20\u201c M16 barrel from Epic\u2019s AIO. These are the lines I wrote out:</p>\n<p>\u201cManualAdd\u201d: [{ \u201cattachmentIds\u201d: \u201c672e2e75ea372126f4fcb874\u201d, \u201ctargetItemIds\u201d: [\u201c684489fe2cc79fb0b0fd98af\u201d, \u201c684488b1c9ead5b831d49ac8\u201d] }],\n\u201cManualAdd\u201d: [{ \u201cattachmentIds\u201d: \u201c5ae30e795acfc408fb139a0b\u201d, \u201ctargetItemIds\u201d: [\u201c59126f13e8bf4e9db57a14d5\u201d, \u201cb9acede708b1c97d3c895862\u201d, \u201c6581a57dfb78e9f0f816c845\u201d] }],</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 140893,
+   "parent_id": null,
+   "author": "HLvL7",
+   "author_id": 55673,
+   "author_url": "https://forge.sp-tarkov.com/user/55673/hlvl7",
+   "created_at": "2025-11-01T19:56:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yo, had the idea of trying to add more offset optic mounts to the vanilla SCAR recievers mount slot so that the MPR45 gets some company, but didn\u2019t get any results, no errors though and the ManualAdds gets registered on server start-up so I\u2019m guessing that the SCAR uppers are not the ids that should be used. You got any idea on how to add stuff to that slot?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 140894,
+   "parent_id": 140893,
+   "author": "HLvL7",
+   "author_id": 55673,
+   "author_url": "https://forge.sp-tarkov.com/user/55673/hlvl7",
+   "created_at": "2025-11-01T19:58:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Or is it some vanilla tomfoolery and it\u2019s not worth fighting with?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 149100,
+   "parent_id": null,
+   "author": "FrostbitBait",
+   "author_id": 56878,
+   "author_url": "https://forge.sp-tarkov.com/user/56878/frostbitbait",
+   "created_at": "2026-01-05T16:03:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey, I typically dislike making these type of comments, but I wanted to ask if there would be a 4.0 compatible release coming out for this mod? I only ask as you mentioned support for this mod would be fairly limited as it was mainly for personal use. Cheers!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 155182,
+   "parent_id": null,
+   "author": "Kojimbo0_0",
+   "author_id": 77629,
+   "author_url": "https://forge.sp-tarkov.com/user/77629/kojimbo0-0",
+   "created_at": "2026-03-21T21:49:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This mod was good for gun modding</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168103,
+   "parent_id": null,
+   "author": "greer0",
+   "author_id": 83025,
+   "author_url": "https://forge.sp-tarkov.com/user/83025/greer0",
+   "created_at": "2026-07-26T05:30:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>God, I miss this mod.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

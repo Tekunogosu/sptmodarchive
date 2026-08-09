@@ -1,0 +1,310 @@
+{
+ "mod_id": 1879,
+ "slug": "configurable-meds",
+ "fetched_at": "2026-08-09T07:26:57Z",
+ "reported_total": null,
+ "pages": 1,
+ "count": 30,
+ "comments": [
+  {
+   "id": 44761,
+   "parent_id": null,
+   "author": "WolfStreak43",
+   "author_id": 69082,
+   "author_url": "https://forge.sp-tarkov.com/user/69082/wolfstreak43",
+   "created_at": "2024-12-11T01:14:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you so much for making this, I had been waiting for this to switch to 3.10. Was using Medical attention before with the sped up healing times disabled and just the increase to med usages/stims. Much appreciated, Fantastic work.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 121783,
+   "parent_id": 44761,
+   "author": "Super",
+   "author_id": 57864,
+   "author_url": "https://forge.sp-tarkov.com/user/57864/super",
+   "created_at": "2024-12-11T01:15:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Glad you liked, thank you!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 121784,
+   "parent_id": 44761,
+   "author": "WolfStreak43",
+   "author_id": 69082,
+   "author_url": "https://forge.sp-tarkov.com/user/69082/wolfstreak43",
+   "created_at": "2024-12-11T01:19:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Absolutely!</p>\n<p>Medical attention is updated it seems, But I prefer your version as it gives exactly what I want, Ready made, no file edits needed.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 44766,
+   "parent_id": null,
+   "author": "WolfStreak43",
+   "author_id": 69082,
+   "author_url": "https://forge.sp-tarkov.com/user/69082/wolfstreak43",
+   "created_at": "2024-12-11T02:14:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I don\u2019t know if it is a Bug or not, But I did notice that Morphine, and Augment are still only 1 use instead of 2</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 121795,
+   "parent_id": 44766,
+   "author": "WolfStreak43",
+   "author_id": 69082,
+   "author_url": "https://forge.sp-tarkov.com/user/69082/wolfstreak43",
+   "created_at": "2024-12-11T02:15:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Vaseline is also the default 6</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 121807,
+   "parent_id": 44766,
+   "author": "Super",
+   "author_id": 57864,
+   "author_url": "https://forge.sp-tarkov.com/user/57864/super",
+   "created_at": "2024-12-11T05:52:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for reporting, I\u2019ll check it out as soon as I have some time, proly tomorrow.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 121808,
+   "parent_id": 44766,
+   "author": "Super",
+   "author_id": 57864,
+   "author_url": "https://forge.sp-tarkov.com/user/57864/super",
+   "created_at": "2024-12-11T06:01:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Ok, I found out why it\u2019s not working, these items are in a different \u201ccategory\u201d now, morphine/augment/vaseline are on the \u201cdrugs\u201d category\u2026 I\u2019ll check to see if any other item is in the drugs category too..</p>\n<p>Again, thanks for reporting that!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 122652,
+   "parent_id": 44766,
+   "author": "Bubblefarts",
+   "author_id": 30786,
+   "author_url": "https://forge.sp-tarkov.com/user/30786/bubblefarts",
+   "created_at": "2024-12-22T02:49:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Might want to split drugs up from medical and so something like</p>\n<p>//Drugs if (items[item]._parent == baseClasses.DRUGS &amp;&amp; items[item]._id != \u201c544fb3f34bdc2d03748b456a\u201d) { const drugUses = config.drug_uses[itemNameLocal]; itemProps.MaxHpResource = drugUses; if (config.debug_log_changed_items) logger.log(<code>${this.modLabel} (Medical \\[Uses\\]) Modified -&amp;gt; ${itemNameLocal} N\u00ba uses set to -&amp;gt; ${drugUses}.</code>, color.MAGENTA); drugsChanged++;Declare</p>\n<p>let drugChanges = 0;And add them to the config. You could also just log their names to the console if you\u2019re unsure of what items are baseClass.DRUGS</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 122724,
+   "parent_id": 44766,
+   "author": "Super",
+   "author_id": 57864,
+   "author_url": "https://forge.sp-tarkov.com/user/57864/super",
+   "created_at": "2024-12-22T22:48:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I thought about doing that but since there\u2019s only 1 injector in the drugs class I decided to keep it simple and just add the drugs baseClass to the medical changes and filter the morphine, and yeah I knew that you could log all the items using the baseClass, thats what I did to find out what I needed to change ; but thanks for the feedback/heads-up, I might consider changing it in a future update</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 48888,
+   "parent_id": null,
+   "author": "Stonewall",
+   "author_id": 1352,
+   "author_url": "https://forge.sp-tarkov.com/user/1352/stonewall",
+   "created_at": "2025-02-23T14:19:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I know for me whenever I put this mod back in that there is no HP for medkits, surgerykits, etc.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 50029,
+   "parent_id": null,
+   "author": "SPTisBettrThanLive",
+   "author_id": 48241,
+   "author_url": "https://forge.sp-tarkov.com/user/48241/sptisbettrthanlive",
+   "created_at": "2025-03-28T06:38:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Finally, a med mod, thank you!!!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 50030,
+   "parent_id": null,
+   "author": "MOTAN",
+   "author_id": 54052,
+   "author_url": "https://forge.sp-tarkov.com/user/54052/motan",
+   "created_at": "2025-03-28T07:03:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi, can you please also configure the time required to use the meds?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 128918,
+   "parent_id": 50030,
+   "author": "Super",
+   "author_id": 57864,
+   "author_url": "https://forge.sp-tarkov.com/user/57864/super",
+   "created_at": "2025-03-29T00:46:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi, uhmmm, I\u2019ll take a look at that and include it in the list of possible features for a next release, thanks for the suggestion!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 128980,
+   "parent_id": 50030,
+   "author": "MOTAN",
+   "author_id": 54052,
+   "author_url": "https://forge.sp-tarkov.com/user/54052/motan",
+   "created_at": "2025-03-30T08:51:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 50158,
+   "parent_id": null,
+   "author": "Zodaxa",
+   "author_id": 73003,
+   "author_url": "https://forge.sp-tarkov.com/user/73003/zodaxa",
+   "created_at": "2025-04-01T08:03:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>added config for how much hp resource is used for the heal, such as heavy bleads from salewa would also be cool, aside from that this mod is exactly what I need, just tweak the numbers to what I like and gg</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 129123,
+   "parent_id": 50158,
+   "author": "Super",
+   "author_id": 57864,
+   "author_url": "https://forge.sp-tarkov.com/user/57864/super",
+   "created_at": "2025-04-02T20:21:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019ll take a look at that and include it in the list of features for a next release, thanks for the suggestion! And I\u2019m glad you liked, I\u2019ll let u know as soon as the next release is ready</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 129243,
+   "parent_id": 50158,
+   "author": "Super",
+   "author_id": 57864,
+   "author_url": "https://forge.sp-tarkov.com/user/57864/super",
+   "created_at": "2025-04-04T18:50:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Zodaxa new version out with requested features, let me know if you find any bug and/or problem!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 129244,
+   "parent_id": 50030,
+   "author": "Super",
+   "author_id": 57864,
+   "author_url": "https://forge.sp-tarkov.com/user/57864/super",
+   "created_at": "2025-04-04T18:51:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>MOTAN new version out with requested features, let me know if you find any bug and/or problem!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 129527,
+   "parent_id": 50158,
+   "author": "Zodaxa",
+   "author_id": 73003,
+   "author_url": "https://forge.sp-tarkov.com/user/73003/zodaxa",
+   "created_at": "2025-04-09T22:34:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>HYPED, I like to standardize the light and heavies across most medkits using configs like this, makes my consistent ocd brain happy</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 53731,
+   "parent_id": null,
+   "author": "Ih8Cheetas",
+   "author_id": 34280,
+   "author_url": "https://forge.sp-tarkov.com/user/34280/ih8cheetas",
+   "created_at": "2025-07-11T16:43:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>For use time, is higher number faster or slower within the config?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133704,
+   "parent_id": 53731,
+   "author": "Super",
+   "author_id": 57864,
+   "author_url": "https://forge.sp-tarkov.com/user/57864/super",
+   "created_at": "2025-07-18T05:26:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>lower number = faster use, its the \u201ctime to use\u201d in seconds, the lower the number the faster the animation will be, same for the opposite.. but be careful if the number is too low or too high it might break the healing animation.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 133739,
+   "parent_id": 53731,
+   "author": "Ih8Cheetas",
+   "author_id": 34280,
+   "author_url": "https://forge.sp-tarkov.com/user/34280/ih8cheetas",
+   "created_at": "2025-07-18T22:06:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>is there a way to include surv kits and CMS to the timetable? Reducing those would be handy</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 53989,
+   "parent_id": null,
+   "author": "swafromsteam",
+   "author_id": 28974,
+   "author_url": "https://forge.sp-tarkov.com/user/28974/swafromsteam",
+   "created_at": "2025-07-19T04:47:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is there a way to have it so the Calok-B can only heal heavy bleeds on limbs? I\u2019d love a feature like that, it would give the medkits more of a use.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 134021,
+   "parent_id": 53731,
+   "author": "Super",
+   "author_id": 57864,
+   "author_url": "https://forge.sp-tarkov.com/user/57864/super",
+   "created_at": "2025-07-25T04:53:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019ll take a look into it and see if I can implement it in a next release!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 134022,
+   "parent_id": 53989,
+   "author": "Super",
+   "author_id": 57864,
+   "author_url": "https://forge.sp-tarkov.com/user/57864/super",
+   "created_at": "2025-07-25T04:53:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019ll take a look into it and see if I can implement it in a next release!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 134089,
+   "parent_id": 53989,
+   "author": "swafromsteam",
+   "author_id": 28974,
+   "author_url": "https://forge.sp-tarkov.com/user/28974/swafromsteam",
+   "created_at": "2025-07-26T10:27:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Great, thanks!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 54554,
+   "parent_id": null,
+   "author": "DONCHE32",
+   "author_id": 82734,
+   "author_url": "https://forge.sp-tarkov.com/user/82734/donche32",
+   "created_at": "2025-08-03T17:01:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m trying to: make AFAK and IFAK unable to stop bleeding (by hopefully changing the StopBleedingHP &gt; Total HP) but keep everything else unchanged.</p>\n<p>But as I deleted the other codes in the config.jasonc, SPT.Server cannot start up normally saying something like Aseptic Bandages cannot be found. Would anyone such as the kind author happen to know a way around?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 134964,
+   "parent_id": 54554,
+   "author": "Super",
+   "author_id": 57864,
+   "author_url": "https://forge.sp-tarkov.com/user/57864/super",
+   "created_at": "2025-08-12T00:40:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi, currently there\u2019s no such \u201cdirect\u201d configuration for that in my mod, but you might be able to work around that by setting the values for heavy_bleed_cost and/or light_bleed_cost as something higher than the base HP for the medkit itself like:</p>\n<p>\u201cAFAK tactical individual first aid kit\u201d: { \u201ctotal_hp\u201d: 500, \u201cheavy_bleed_cost\u201d: 600, \u201clight_bleed_cost\u201d : 600 } that way you won\u2019t be able to use it to stop the bleedings cause the game will see that the medkit doesn\u2019t have the HP necessary for that and will only do the normal healing.</p>\n<p>let me know if that works or not and ty for downloading/using my mod!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 136331,
+   "parent_id": null,
+   "author": "FallegaHQ",
+   "author_id": 69214,
+   "author_url": "https://forge.sp-tarkov.com/user/69214/fallegahq",
+   "created_at": "2025-09-11T15:12:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>hey</p>\n<p>I have released this mod<br />\n<a href=\"https://hub.sp-tarkov.com/files/file/3017-mod-configurator/\" target=\"_blank\" rel=\"noreferrer noopener\">Mod Configurator</a><br />\nand I already have created the required file for your mod to be configurable in my GUI mod</p>\n<p>If you want to support my mod, please let me know and I will share the file with you</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 137000,
+   "parent_id": 136331,
+   "author": "Super",
+   "author_id": 57864,
+   "author_url": "https://forge.sp-tarkov.com/user/57864/super",
+   "created_at": "2025-09-19T21:35:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Sure, Id love to take a look, can you share it thru github or something like that?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

@@ -1,0 +1,1550 @@
+{
+ "mod_id": 1149,
+ "slug": "leaves-loot-fuckery",
+ "fetched_at": "2026-08-09T07:07:27Z",
+ "reported_total": 49,
+ "pages": 5,
+ "count": 154,
+ "comments": [
+  {
+   "id": 23759,
+   "parent_id": null,
+   "author": "AlexLAN",
+   "author_id": 15890,
+   "author_url": "https://forge.sp-tarkov.com/user/15890/alexlan",
+   "created_at": "2023-11-07T15:27:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>How difficult everything is, in such mods for loot. If only there was a loot switch for Labeled rooms: 0 - no changes, 1 - a lot, etc. Many would be happy, including me =))</p>\n<p>And there are some zones, such as Kiba, if you increase the free loot 2-3 times from the vanilla values, there are still no weapons there. And if you unscrew the values to crazy - and there are a lot of guns and simple loot, it does not work out in a balanced way.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 23761,
+   "parent_id": null,
+   "author": "carfromsky",
+   "author_id": 39927,
+   "author_url": "https://forge.sp-tarkov.com/user/39927/carfromsky",
+   "created_at": "2023-11-07T16:30:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi, Autor, i just did a couple of test runs with fly mode to check the loose loot spawn on the Reserv map, and found out that no weapons as loose loot didn\u2019t spawn, not even once. I check the spawn points from Tarkov.help map.</p>\n<p>And now just i thought i need to go ask about it on a forum here, you add this mod, maybe it can clear things up about it.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 92272,
+   "parent_id": 23761,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2023-11-07T16:36:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Honestly, that\u2019s my experience too. I think there might be something wrong in AKI that makes them not spawn. They still seem to be spawning in marked room however. But apart from that, I haven\u2019t seen any either.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 92273,
+   "parent_id": 23761,
+   "author": "carfromsky",
+   "author_id": 39927,
+   "author_url": "https://forge.sp-tarkov.com/user/39927/carfromsky",
+   "created_at": "2023-11-07T16:42:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Oh thanks, so im not alone, have you by any chance check the way aki decide where and waht kind of loose loot to spawn? Because digging through the server config files brings me nothing.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 92274,
+   "parent_id": 23759,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2023-11-07T16:47:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m not entirely sure what you\u2019re asking. Perhaps elaborate a bit.</p>\n<p>If you\u2019re asking to make it simpler, it\u2019s not actually that complex. Just leave the config.json as is. And then in the loot.json increase the number on things you feel like you get too few of. Say to 2. And for things you find to many of, decrease it to say 0.5.</p>\n<p>1 is effectively no change.</p>\n<p>2 is double.</p>\n<p>0.5 is half</p>\n<p>For example, I feel like I dont get enough repair kits. so I increase the multi for repair kits to 2. Like this</p>\n<p>\u201c616eb7aea207f41933308f46\u201d: { \u201cmulti\u201d:2, \u201c//Repair Kits\u201d:false }That is all. It\u2019s very simple if you don\u2019t want to do loot simulations.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 92275,
+   "parent_id": 23761,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2023-11-07T16:52:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I have a fairly decent understanding on how loose loot works. You know, seeing as I made this mod.</p>\n<p>As for why weapons dont spawn, I haven\u2019t dug into it too much. You might want to take a peek into \\Aki_Data\\Server\\database\\locations\\rezervbase\\looseLoot.json and look for weapons.</p>\n<p>You can find IDs to weapons here <a href=\"https://db.sp-tarkov.com/search\" target=\"_blank\" rel=\"noreferrer noopener\">https://db.sp-tarkov.com/search</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 92277,
+   "parent_id": 23761,
+   "author": "carfromsky",
+   "author_id": 39927,
+   "author_url": "https://forge.sp-tarkov.com/user/39927/carfromsky",
+   "created_at": "2023-11-07T16:58:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Oh thanks man, i try to figure it out myself, but its just so immersion breaking bug that i cant beelive its not patched yet. I started to affraid its probably not fixable</p>\n<p>I mean going into the literal nest of the AK rifles (RU millitary base) and not having all sorts of AK\u2019s in armory room (like RB-ORB3 key room) is just heartbreaking. (sorry for my english grammar, its bad)</p>\n<p>edit: And why the HELL is looseLoot.json is in single line? Notepad++ is seem like struggling with it a lot</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 92281,
+   "parent_id": 23761,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2023-11-07T17:20:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Here\u2019s a prettified json of rezervbase. Though text editors still really struggle with it.</p>\n<p><a href=\"https://dev.sp-tarkov.com/attachments/bf09e3e1-a971-4491-bd44-f470d66c88b1\" target=\"_blank\" rel=\"noreferrer noopener\">https://dev.sp-tarkov.com/attachments/bf09e3e1-a971-4491-bd44-f470d66c88b1  </a></p>\n<p>EDIT: from a quick look, some of the weapons (looked at an AKS-74u) have insanely low spawn chance. like 0.02%. Doing some statistics run, I got a single AKS-74u in 10 runs on reserve. Increasing it to 25 times more weapons yielded about 25 of them. (2.5 per run avg). It seems their rate might just be insanely low.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 92282,
+   "parent_id": 23761,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2023-11-07T17:34:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Setting all the weapon multipliers in my mod to 50 makes the weapons spawn again. is it a good number? no idea. Feel free to experiment and post the results.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 92285,
+   "parent_id": 23761,
+   "author": "carfromsky",
+   "author_id": 39927,
+   "author_url": "https://forge.sp-tarkov.com/user/39927/carfromsky",
+   "created_at": "2023-11-07T17:45:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I also saw that first AKSu from the beggining of \u201cspawnpoints\u201d tab, your edit is really appretiated, how do you do that? I assume that it will work just as original looseLoot, but with proper lines adjustment to make it readable, right?</p>\n<p>It follow up by the \u201cGunrackSpawn 1(Clone)4642694\u201d with same super low chance, guess its really the problem, i will look to it deeper later.</p>\n<p>Thank you man, your help is greatly appreciated.</p>\n<p>edit: WOW, did you just set //Revolvers, //AssaultRifles\u2026 and so on on all weapon categories to \u201cmulti\u201d :50, right?</p>\n<p>Then your mod is allrealy fixing everything indeed, just some test run tweaks and that\u2019s it!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 92286,
+   "parent_id": 23761,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2023-11-07T17:51:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yeah, though some spawns are from what I can tell STUPIDLY rare. With a chance of 0.0005. Meaning even a 50 times multiplier is isn\u2019t gonna cut it. Not sure what to do about it. Might legit make a different mod to fix weapon spawns in particular.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 92289,
+   "parent_id": 23761,
+   "author": "Shmetus",
+   "author_id": 40092,
+   "author_url": "https://forge.sp-tarkov.com/user/40092/shmetus",
+   "created_at": "2023-11-07T18:14:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Youre doing gods work here brother lol</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 23768,
+   "parent_id": null,
+   "author": "boolean",
+   "author_id": 38887,
+   "author_url": "https://forge.sp-tarkov.com/user/38887/boolean",
+   "created_at": "2023-11-07T20:54:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>FINALY somebody did it!!!!!!!!!!!!</p>\n<p>You are superman bro!!!</p>\n<p>Awesome mod!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 92322,
+   "parent_id": 23761,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2023-11-08T07:14:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Here\u2019s a mod I made to fix the stupid weapon spawn rates. Enjoy!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 23789,
+   "parent_id": null,
+   "author": "TanTeGe",
+   "author_id": 470,
+   "author_url": "https://forge.sp-tarkov.com/user/470/tantege",
+   "created_at": "2023-11-08T07:57:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>very good</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 23803,
+   "parent_id": null,
+   "author": "FlyHamster",
+   "author_id": 40209,
+   "author_url": "https://forge.sp-tarkov.com/user/40209/flyhamster",
+   "created_at": "2023-11-08T12:17:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Really like the abillity to generate loot dump, love your mods for detailed explanation on how to use config.</p>\n<p>Looks like SPT never spawns things like money on bots or decent (not same 6-7 trash ones) keys in filing cabinets or jackets, got any plans on adding functionality for altering spawn in containers/bodies?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 92340,
+   "parent_id": 23803,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2023-11-08T12:23:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Not impossible. But right now I need a bit of a break from modding.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 23806,
+   "parent_id": null,
+   "author": "Fegeer",
+   "author_id": 40178,
+   "author_url": "https://forge.sp-tarkov.com/user/40178/fegeer",
+   "created_at": "2023-11-08T14:13:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is it possible to add new weapons/items from other mods (basically, custom IDs) into loot lists using your mod? Thanks</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 23807,
+   "parent_id": null,
+   "author": "carfromsky",
+   "author_id": 39927,
+   "author_url": "https://forge.sp-tarkov.com/user/39927/carfromsky",
+   "created_at": "2023-11-08T15:08:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>DeadLeaves, aki-server is wrote that both of your loot mods is incopatible with the current version of aki.</p>\n<p>Probably just nothing, but caught my eyes.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 92352,
+   "parent_id": 23807,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2023-11-08T15:29:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Just the package.json that needs updating. shouldnt affect anything. But thanks for letting me know.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 23937,
+   "parent_id": null,
+   "author": "Surviv0r1969",
+   "author_id": 16900,
+   "author_url": "https://forge.sp-tarkov.com/user/16900/surviv0r1969",
+   "created_at": "2023-11-10T23:32:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>do you need to change the map name for each time map you play on next?</p>\n<p>\u201cmapToGenerate\u201d: \u201cshoreline\u201d,</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 92526,
+   "parent_id": 23937,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2023-11-11T00:28:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>No, that\u2019s only for dumping data. For playing, you only need \u201ceditProbabilities\u201d: true</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 92527,
+   "parent_id": 23937,
+   "author": "Surviv0r1969",
+   "author_id": 16900,
+   "author_url": "https://forge.sp-tarkov.com/user/16900/surviv0r1969",
+   "created_at": "2023-11-11T01:27:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>thanks m8</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 24352,
+   "parent_id": null,
+   "author": "Surviv0r1969",
+   "author_id": 16900,
+   "author_url": "https://forge.sp-tarkov.com/user/16900/surviv0r1969",
+   "created_at": "2023-11-20T16:36:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>edit loot json or loot default m8?</p>\n<p>also do i have to change the false to true for ones i want edited?</p>\n<p>\u201c57864a3d24597754843f8721\u201d: { \u201cmulti\u201d:1.0, \u201c//Jewelry\u201d: false },</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 93232,
+   "parent_id": 24352,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2023-11-21T00:58:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>default is just a backup. You edit the loot.json</p>\n<p>All the \u201c//name\u201d: false are just comments. The only two values that matter are the ID (the long string of random numbers and letters) and the multi.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 24512,
+   "parent_id": null,
+   "author": "Seriy500",
+   "author_id": 22955,
+   "author_url": "https://forge.sp-tarkov.com/user/22955/seriy500",
+   "created_at": "2023-11-25T08:04:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Getting a lot messages like this in server console</p>\n<p>[LootFuckery] Found item without matching parent: 7.62x51_TCWSP_BOOBS_ammobox - Parent: AmmoBox -ID: 543be5cb4bdc2deb348b4568</p>\n<p>[LootFuckery] Found item without matching parent: 7.62x51_M62_BOOBS_ammobox - Parent: AmmoBox -ID: 543be5cb4bdc2deb348b4568</p>\n<p>[LootFuckery] Found item without matching parent: 7.62x51_BCPFMJ_BOOBS_ammobox - Parent: AmmoBox -ID: 543be5cb4bdc2deb348b4568</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 93430,
+   "parent_id": 24512,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2023-11-25T15:54:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is this with the default loot.json? Sounds like the json file might have broken.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 24543,
+   "parent_id": null,
+   "author": "MooseEFT",
+   "author_id": 41193,
+   "author_url": "https://forge.sp-tarkov.com/user/41193/mooseeft",
+   "created_at": "2023-11-25T23:39:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Just get SVM this mod makes loot more complicated for no reason.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 93465,
+   "parent_id": 24543,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2023-11-25T23:51:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You\u2019re absolutely correct. Why didn\u2019t I think of that.</p>\n<p>Pack your bags everyone, we\u2019re shutting down this mod right here and now.\u2019</p>\n<p>Mine does however have a cute catgirl picture. Did you consider that?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 93477,
+   "parent_id": 24543,
+   "author": "MooseEFT",
+   "author_id": 41193,
+   "author_url": "https://forge.sp-tarkov.com/user/41193/mooseeft",
+   "created_at": "2023-11-26T04:40:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Just ease of use\u2026 didn\u2019t mean to sound like an ass. It just is a seamless mod that works perfectly for loot already.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 24601,
+   "parent_id": null,
+   "author": "GolumbeckL",
+   "author_id": 41285,
+   "author_url": "https://forge.sp-tarkov.com/user/41285/golumbeckl",
+   "created_at": "2023-11-27T12:43:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I get a error message that the package.json is missing. i am on the newest version of the mod. Anything i could have done wrong or that i can to to help you fix the issue?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 93563,
+   "parent_id": 24601,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2023-11-27T15:42:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>sounds like you didn\u2019t install the mod correctly.</p>\n<p>Make sure it looks something like this</p>\n<p>SPT/user/mods/Leaves Lootfuckery/package.json</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 93573,
+   "parent_id": 24601,
+   "author": "GolumbeckL",
+   "author_id": 41285,
+   "author_url": "https://forge.sp-tarkov.com/user/41285/golumbeckl",
+   "created_at": "2023-11-27T18:27:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>That is exactly what it lookes like accept that the folder the mod is in has a slightly changed name to change the order in which it and others get loaded as recomended in one of your modpages somewhere</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 93575,
+   "parent_id": 24601,
+   "author": "GolumbeckL",
+   "author_id": 41285,
+   "author_url": "https://forge.sp-tarkov.com/user/41285/golumbeckl",
+   "created_at": "2023-11-27T18:29:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i think i figured it out. The mod seems to create a folder where it dumps data and that, for me atleast, gets placed in a different folder because i changed the name. and that then causes the game to be confused.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 93654,
+   "parent_id": 24512,
+   "author": "Seriy500",
+   "author_id": 22955,
+   "author_url": "https://forge.sp-tarkov.com/user/22955/seriy500",
+   "created_at": "2023-11-28T16:38:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Used this settings <a href=\"https://hub.sp-tarkov.com/files/file/1604-livelike-settings-for-lootfuckery-relooted-l-e-w-d-s-svm/\" target=\"_blank\" rel=\"noreferrer noopener\">LiveLike settings for LootFuckery + ReLooted + L.E.W.D.S. + SVM</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 93688,
+   "parent_id": 24512,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2023-11-28T21:02:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I cannot replicate, I have checked the files involved. It might be a faulty installation. Make sure your load order is correct.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 94145,
+   "parent_id": 24512,
+   "author": "FlipFlop",
+   "author_id": 8172,
+   "author_url": "https://forge.sp-tarkov.com/user/8172/flipflop",
+   "created_at": "2023-12-08T16:53:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>ever found a fix for this? i have the same issue when using the LiveLike settings</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 25084,
+   "parent_id": null,
+   "author": "Whiskey",
+   "author_id": 36720,
+   "author_url": "https://forge.sp-tarkov.com/user/36720/whiskey",
+   "created_at": "2023-12-09T22:48:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>can u change loot quality</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 94232,
+   "parent_id": 25084,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2023-12-10T18:59:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You can change the rarity of individual items or categories. Idk what you even mean though.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 25207,
+   "parent_id": null,
+   "author": "Exame43",
+   "author_id": 35220,
+   "author_url": "https://forge.sp-tarkov.com/user/35220/exame43",
+   "created_at": "2023-12-13T12:24:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi,</p>\n<p>Trying to make it to not spawn weapons at all (want a different gameplay)<br />\nDoes not want to work. i have set it like this: \u201c5447bed64bdc2d97278b4568\u201d: { \u201cmulti\u201d:0.1, \u201c//Machine Guns\u201d: false },</p>\n<p>Any hints on what i should do?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 94401,
+   "parent_id": 25207,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2023-12-14T00:50:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>try setting it to 0? I havent actually tried going all the way to 0</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 94736,
+   "parent_id": 25207,
+   "author": "Exame43",
+   "author_id": 35220,
+   "author_url": "https://forge.sp-tarkov.com/user/35220/exame43",
+   "created_at": "2023-12-21T19:52:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Did not work, but thanks for the answer!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 27315,
+   "parent_id": null,
+   "author": "cheekybreeky",
+   "author_id": 44280,
+   "author_url": "https://forge.sp-tarkov.com/user/44280/cheekybreeky",
+   "created_at": "2024-02-20T16:55:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi ! I\u2019m not good with coding/programming. I\u2019ve downloaded the mod, but unsure how to get it to work. Doesn\u2019t seem to be any examples as with other mods.</p>\n<p>I understand the changing the multiplier bit, but do I just save the file and run the game, and it should work automatically or what ?</p>\n<p>Can I use the BepinEx F12 menu to make changes, or enable/disable the mod etc ?</p>\n<p>Sorry, this is very unclear with the given instructions on the main page</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 32206,
+   "parent_id": null,
+   "author": "dj346",
+   "author_id": 51486,
+   "author_url": "https://forge.sp-tarkov.com/user/51486/dj346",
+   "created_at": "2024-05-16T09:52:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I found a bug with global items, I made a pr on your github.</p>\n<p>Edit: Theres also a problem with the release folder name. Its all lowercase \u201cleaves-lootfuckery\u201d, when it looks like it should be \u201cLeaves-LootFuckery\u201d, this shouldnt cause any problems on windows, but it creates two folders when running the loot generator on linux systems.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 104181,
+   "parent_id": 32206,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2024-05-17T21:15:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Merged. Thanks! Also fixed the package.json to follow specification</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 32373,
+   "parent_id": null,
+   "author": "FOXSTAR",
+   "author_id": 52105,
+   "author_url": "https://forge.sp-tarkov.com/user/52105/foxstar",
+   "created_at": "2024-05-18T12:15:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Do u think ur mod could run with -&gt; PityLoot \u2026 do u think they r compatible?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 104281,
+   "parent_id": 32373,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2024-05-18T17:54:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I don\u2019t know. try it out and let us know.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 104286,
+   "parent_id": 32373,
+   "author": "FOXSTAR",
+   "author_id": 52105,
+   "author_url": "https://forge.sp-tarkov.com/user/52105/foxstar",
+   "created_at": "2024-05-18T19:06:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It seem its working \u2026 i still got my needed Questitems and ur mod spawns tons of lose loot + stuff in rusted bloody key room etc.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 104675,
+   "parent_id": 24543,
+   "author": "SPTarky",
+   "author_id": 15947,
+   "author_url": "https://forge.sp-tarkov.com/user/15947/sptarky",
+   "created_at": "2024-05-23T00:12:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>\u201cPerfectly\u201d No it doesn\u2019t. Its not even close to LIVE. SVM spawns endless amounts of the same 60% of items and does not allow you to tweak the rare items. Do not post things that are not true.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 32690,
+   "parent_id": null,
+   "author": "SPTarky",
+   "author_id": 15947,
+   "author_url": "https://forge.sp-tarkov.com/user/15947/sptarky",
+   "created_at": "2024-05-23T00:23:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi DeadLeaves</p>\n<p>using this on the current version 3.83, and i\u2019ve spent about an hour getting my head around the configs &amp; etc and just need your input to use this mod spawning things as they should at long last</p>\n<p>In your loot.jsonc, in the map specific section I\u2019ve noticed you\u2019ve put Ledx in Labs, but not in any other maps.</p>\n<p>I believe LEDx\u2019s are supposed to spawn in interchange, Streets and Shoreline</p>\n<p>Another example is on reserve there is no multiplier for phased array AESA.</p>\n<p>I don\u2019t see other items such as BTC in the multipliers either.</p>\n<p>Is there a deliberate reason why it is set up like this? Are these other items controlled elsewhere or would this spawn too many of them? Or is this just a time constraints problem that it just takes too long to do an individual tweak of the super rare items down to a map level?</p>\n<p>Some lines are not in the config are defribulators, T7\u2019s thermals, intelligence folders, and GPU\u2019s, Bitcoin &amp; more. is this just due to the time constaints or are there other factors at play here?</p>\n<p>So With this in mind.. can i copy and paste for example \u201c5c0530ee86f774697952d952\u201d: { \u201cmulti\u201d: 1.9 } //Ledx into the other maps that are meant to have LEDx\u2019s for example, and this will increase their spawn chances too?</p>\n<p>Thanks for your mod and your time.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 32718,
+   "parent_id": null,
+   "author": "B00MER",
+   "author_id": 52486,
+   "author_url": "https://forge.sp-tarkov.com/user/52486/b00mer",
+   "created_at": "2024-05-23T09:46:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Great mod, thanks for this. Was wondering if there\u2019s a way to use this mod to insert keycards into marked room loot pools like in live right now?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 104765,
+   "parent_id": 32690,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2024-05-23T18:36:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>If they\u2019re not specific, they\u2019ll be adjusted by the category.</p>\n<p>So an item will first check map specfic item, then global specfic item, then map specfic category, then global category</p>\n<p>So ledx interchange first</p>\n<p>and if that doesnt exist global ledx adjustments</p>\n<p>and if that doesnt exist interchange eletronics</p>\n<p>and if that doesnt exist global eletronics.</p>\n<p>All the adjustments that are there by default are just what I like to run, (and balanced around my ReLooted mod.) You can add and remove categories and items anywhere, Just make sure to leave all global categories as a last fallback multiplier. If an item has no mutliplier it will complain in the server console.</p>\n<p>So as for your question in the end, Yes you can copy that to any map. (though if there is no spawn point for said item, it wont make them magically appear) It only adjusts existing spawn points.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 105400,
+   "parent_id": 32690,
+   "author": "SPTarky",
+   "author_id": 15947,
+   "author_url": "https://forge.sp-tarkov.com/user/15947/sptarky",
+   "created_at": "2024-05-29T13:25:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you so much, i did get it working. When i get around to it i will post this on the subreddit.</p>\n<p>To anybody who is looking for the same thing as myself, I wanted to basically guarantee ( as at least one example) that i always get a handful of graphics cards and at least 1 Ledx (somewhere) on every Interchange run.</p>\n<p>To do this i edited the loot.jsonc and scrolled down to interchange.</p>\n<p>I copied and pasted * \u201c5c0530ee86f774697952d952\u201d: { \u201cmulti\u201d: 12 }, //Ledx *</p>\n<p>under the line that was already there.</p>\n<p>If you are getting errors, the \u201c,\u201d after the } is very important. the last line for that map does not have this comma, the rest of them do.</p>\n<p>In theory like this you can almost make certain every time you go into shoreline or interchange, that there is almost always at least 1 for you to find. that was all the intention was.</p>\n<p>Just now i went into the pharmacy closet and there was a Ledx inside, 2 spawned in the whole map, no idea where the other one was, never found it.</p>\n<p>This is closer to live - and the beauty was i was able to do this without overfilling the general loot, i left it low.</p>\n<p>In theory I can share a config file that makes sure every couple of raids, there is a ledx, a bitcoin, and a graphics card and defribulators etc on every map that is supposed to spawn them in live, IE interchange, customs, shoreline. This is about as close to live as can get.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 105885,
+   "parent_id": 32718,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2024-06-02T20:07:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Unfortunately outside the scope of this mod. This mode adjusts what is already there.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 33717,
+   "parent_id": null,
+   "author": "mikey",
+   "author_id": 51077,
+   "author_url": "https://forge.sp-tarkov.com/user/51077/mikey",
+   "created_at": "2024-06-06T21:31:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Awesome mod, thank you so much for your hard work!</p>\n<p>Just to clarify, if I am using the \u201c<a href=\"https://hub.sp-tarkov.com/files/file/697-lots-of-loot/\" target=\"_blank\" rel=\"noreferrer noopener\">lots of loot</a>\u201d mod to modify overall loot spawns, this mod shouldn\u2019t supersede those multipliers, right? Does it matter what the load order is, currently I have your \u201crelooted mod\u201d load first, this mod load second and then \u201clots of loot\u201d third?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 106499,
+   "parent_id": 33717,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2024-06-08T20:48:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Im not sure what lots of loot does behind the scenes, but you setup should work</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 106585,
+   "parent_id": 33717,
+   "author": "mikey",
+   "author_id": 51077,
+   "author_url": "https://forge.sp-tarkov.com/user/51077/mikey",
+   "created_at": "2024-06-09T16:36:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>thank you!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 34181,
+   "parent_id": null,
+   "author": "jnich89",
+   "author_id": 53481,
+   "author_url": "https://forge.sp-tarkov.com/user/53481/jnich89",
+   "created_at": "2024-06-13T01:40:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m getting this message when loading the game. I\u2019m assuming that something is wrong. The launcher says it has loaded the mod though. Any thoughts?</p>\n<p><a href=\"https://1drv.ms/i/s!AsIbLrE1VDpagY8y_HcRntJ_SB7isg?e=D5t7DE\" target=\"_blank\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://1drv.ms/i/s!AsIbLrE1VDpagY8y_HcRntJ_SB7isg?e=D5t7DE\" alt=\"s!AsIbLrE1VDpagY8y_HcRntJ_SB7isg?e=D5t7DE\" /></a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 107566,
+   "parent_id": 34181,
+   "author": "vihu05",
+   "author_id": 53020,
+   "author_url": "https://forge.sp-tarkov.com/user/53020/vihu05",
+   "created_at": "2024-06-19T19:47:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Having the same problem, did u installed IsaacSin\u2019s \u201cLoot Update\u201d mod?. Error disappears if you delete it (in my case), however having to delete one of the two mods sucks</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 34559,
+   "parent_id": null,
+   "author": "vihu05",
+   "author_id": 53020,
+   "author_url": "https://forge.sp-tarkov.com/user/53020/vihu05",
+   "created_at": "2024-06-19T20:58:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Isnt there any way to make this mod work with IsaacSin\u2019s \u201cLoot Update\u201d mod?. Yours gives a much better control over containers and IsaacSin\u2019s makes loose loot feel great. Would be great to make both mods work together ; )</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 107774,
+   "parent_id": 34559,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2024-06-22T00:18:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Mine doesnt touch containers lmao. But from a glance they should work together.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 107810,
+   "parent_id": 34181,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2024-06-22T10:09:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Uploading a fix to this today. Technically not my mod doing something wrong, but just puts in a safeguard against bad data.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 34766,
+   "parent_id": null,
+   "author": "Fegeer",
+   "author_id": 40178,
+   "author_url": "https://forge.sp-tarkov.com/user/40178/fegeer",
+   "created_at": "2024-06-22T12:36:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you so much for the mod! Quick questions:</p>\n<ul>\n<li>Does it take into account items from the handbook or traders? Will it spawn items from custom traders and mods adding new items like WTT?</li>\n<li>Load order: should it be loaded before or after SVM and <strong>Leaves Relooted?</strong></li>\n</ul>\n<p><strong>Thanks!</strong></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 107814,
+   "parent_id": 34559,
+   "author": "vihu05",
+   "author_id": 53020,
+   "author_url": "https://forge.sp-tarkov.com/user/53020/vihu05",
+   "created_at": "2024-06-22T13:36:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Game is braking again, but now I\u2019ve seen that error is due to a non existing item with this id: \u201c66507eabf5ddb0818b085b68\u201d. It corresponds to \u201c2A2-(b-TG) stimulant injector\u201d and its named in Loot Update\u2019s mod files so I will assume its the other guy\u2019s mod fault.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 107816,
+   "parent_id": 34559,
+   "author": "CrowDz",
+   "author_id": 43947,
+   "author_url": "https://forge.sp-tarkov.com/user/43947/crowdz",
+   "created_at": "2024-06-22T14:30:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i have the same thing but i think is all good.</p>\n<p><a href=\"https://i.imgur.com/5eN0L3y.png\" target=\"_blank\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/5eN0L3y.png\" alt=\"5eN0L3y.png\" /></a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 107817,
+   "parent_id": 34559,
+   "author": "vihu05",
+   "author_id": 53020,
+   "author_url": "https://forge.sp-tarkov.com/user/53020/vihu05",
+   "created_at": "2024-06-22T14:41:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Looks like it has to do stuff with the 3.9.0 items that don\u2019t exist in 3.8.3.He prevents them from trying to spawn, but if you iterate through every item on the loot table you\u2019ll still find them and then stuff will break when you try to do things with them because they don\u2019t exist in the item database, as you can see in the <a href=\"https://ibb.co/zJsfzv2\" target=\"_blank\" rel=\"noreferrer noopener\">console log</a>. (Keeps breaking)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 107819,
+   "parent_id": 34559,
+   "author": "CrowDz",
+   "author_id": 43947,
+   "author_url": "https://forge.sp-tarkov.com/user/43947/crowdz",
+   "created_at": "2024-06-22T15:15:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>loot update blacklist 66507eabf5ddb0818b085b68 in mod.ts.</p>\n<p>This one maybe load the data from what loot update injected but mod.ts dont have blacklist.</p>\n<p>im just guess</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 107845,
+   "parent_id": 34559,
+   "author": "vihu05",
+   "author_id": 53020,
+   "author_url": "https://forge.sp-tarkov.com/user/53020/vihu05",
+   "created_at": "2024-06-22T21:23:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I don\u2019t know if Im fully understanding what you try to say. If you\u2019re saying to remove blacklist from mod.ts file, you will get an error. If you delete any of the items\u2019 ids named in the file, you will also get an error. For some reason isaac\u2019s loot update mod prevents those items from spawning (but they\u2019re not even in 3.8.2 version LOL), and for some reason I dont know, it conflicts with this mod.</p>\n<p>Incomprehensible mod developers\u2019 stuff xD</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 107864,
+   "parent_id": 34559,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2024-06-23T00:59:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>latest patch i released earlier today should fix said issue.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 107865,
+   "parent_id": 34766,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2024-06-23T01:00:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>1. It only adjusts the spawns that are there, it does not inject anything new nor change what can actually appear. Just the likelyhood of stuff.</p>\n<p>2. After relooted and svm</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 34837,
+   "parent_id": null,
+   "author": "sovveira",
+   "author_id": 11207,
+   "author_url": "https://forge.sp-tarkov.com/user/11207/sovveira",
+   "created_at": "2024-06-23T11:35:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>On the latest update still get the issue with id 66507eabf5ddb0818b085b68.</p>\n<p><a href=\"https://i.imgur.com/y0YavFN.png\" target=\"_blank\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/y0YavFN.png\" alt=\"y0YavFN.png\" /></a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 107938,
+   "parent_id": 34559,
+   "author": "vihu05",
+   "author_id": 53020,
+   "author_url": "https://forge.sp-tarkov.com/user/53020/vihu05",
+   "created_at": "2024-06-23T17:16:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Keeps breaking the same way</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 34878,
+   "parent_id": null,
+   "author": "Fnoslayer",
+   "author_id": 32865,
+   "author_url": "https://forge.sp-tarkov.com/user/32865/fnoslayer",
+   "created_at": "2024-06-23T20:36:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>are there any made configs for this</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 108144,
+   "parent_id": 34559,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2024-06-25T22:41:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hmm. Ill have to take a look, but unless its a breaking issue directly with my mod, I\u2019m sort of keeping them on bare minimum life support until 3.9.0</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 108146,
+   "parent_id": 34878,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2024-06-25T22:42:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The default one is balanced with my relooted mod in mind, and provides (in my opinion) a quite good experience.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 108290,
+   "parent_id": 34837,
+   "author": "sovveira",
+   "author_id": 11207,
+   "author_url": "https://forge.sp-tarkov.com/user/11207/sovveira",
+   "created_at": "2024-06-27T12:34:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>for some reason i was not able to sell any item on the flea market as they would just expire until i deleted this mod and everything magically started working flawlessly</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 35145,
+   "parent_id": null,
+   "author": "Menac3",
+   "author_id": 54975,
+   "author_url": "https://forge.sp-tarkov.com/user/54975/menac3",
+   "created_at": "2024-06-28T06:45:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>hi guys, is there now a way to use loot update and loot fuckery together?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 108741,
+   "parent_id": 35145,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2024-07-02T22:02:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yes, use the update I just released. I can only confirm that this stops the errors, but I dont see why it wouldn\u2019t be compatible.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 108742,
+   "parent_id": 34837,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2024-07-02T22:03:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The first issue is now fixed. As for the second issue, I can\u2019t fathom how this mod could be causing it. I doubt this mod causes it.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 108743,
+   "parent_id": 34559,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2024-07-02T22:03:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Fixed the issue.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 108744,
+   "parent_id": 34559,
+   "author": "CrowDz",
+   "author_id": 43947,
+   "author_url": "https://forge.sp-tarkov.com/user/43947/crowdz",
+   "created_at": "2024-07-02T22:21:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>thanks</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 108793,
+   "parent_id": 34559,
+   "author": "vihu05",
+   "author_id": 53020,
+   "author_url": "https://forge.sp-tarkov.com/user/53020/vihu05",
+   "created_at": "2024-07-03T16:41:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Still cant get it to work, there are even more error lines in the console. I can log in and enter the game , but progress is not saved and FM doesnt work. (As before)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 108827,
+   "parent_id": 34559,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2024-07-03T23:51:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The error lines in the console are harmless (if you mean the ones that my mod spews out, you can hide them in the config). I don\u2019t know what you mean by progress, but I don\u2019t touch flea market.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 35509,
+   "parent_id": null,
+   "author": "ReLOAD07",
+   "author_id": 23389,
+   "author_url": "https://forge.sp-tarkov.com/user/23389/reload07",
+   "created_at": "2024-07-05T08:14:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>hi, with your mod on i got 3 red keycards and 1 blue keycard in a single shoreline raid, seems unintended lol.</p>\n<p>i\u2019m also using the loot update mod, if that helps with identifying the problem.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 108942,
+   "parent_id": 34559,
+   "author": "vihu05",
+   "author_id": 53020,
+   "author_url": "https://forge.sp-tarkov.com/user/53020/vihu05",
+   "created_at": "2024-07-05T20:05:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>What I mean by progress is all the loot gathered in matches, all the missions accomplished in matches, all the skills acquired in matches, etc. (I dont know if it also affects hideout).</p>\n<p>And its reasonable to think your mod doesnt touch flea, but \u201cLoot Update\u201d isnt supposed to touch either.</p>\n<p>I tryed to remove other mods to see if its due to any of them, but it isnt.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 108950,
+   "parent_id": 35509,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2024-07-05T23:24:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The default config is intended to be used with re-looted. You want to adjust settings to a point where it feels good for the settings you have. This mod has tools to dump loot data to help configure settings.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 108951,
+   "parent_id": 34559,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2024-07-05T23:46:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I just did a run on a fresh account, with only loot fuckery. Flea market works fine, I can buy and sell things. I can also do runs perfeclty fine and extract with loot, progress quests etc. The issue is not with this mod. There is something wrong with your setup or modlist. but the cause is not this mod.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 108954,
+   "parent_id": 35509,
+   "author": "ReLOAD07",
+   "author_id": 23389,
+   "author_url": "https://forge.sp-tarkov.com/user/23389/reload07",
+   "created_at": "2024-07-06T02:26:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>ok i\u2019ll try that, one more question, does relooted add keycard spawns to marked rooms?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 108956,
+   "parent_id": 35509,
+   "author": "ReLOAD07",
+   "author_id": 23389,
+   "author_url": "https://forge.sp-tarkov.com/user/23389/reload07",
+   "created_at": "2024-07-06T03:07:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i set the multi for red and blue to 0.001 in loot fuckery and it still has and avg spawn of 3 for red and 2 for blue.</p>\n<p>i\u2019m stumped lol</p>\n<p>update : i forgot to say this only occurs when using ReLooted and LootUpdate simultaneously.</p>\n<p>it works normally with relooted only (no loot update)</p>\n<p>update 2 : something very wrong\u2019s going on, i have keycard multipliers set to 0.00000001 on shoreline and its still spawn avg of 3 red 2 blue on shoreline</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 108981,
+   "parent_id": 34559,
+   "author": "vihu05",
+   "author_id": 53020,
+   "author_url": "https://forge.sp-tarkov.com/user/53020/vihu05",
+   "created_at": "2024-07-06T15:02:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yes, thats what ive been saying all this time. The issue comes when you combine your mod with IsaacSin\u2019s \u201cLoot Update\u201d mod, if you have just one of them you dont have any error</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 108990,
+   "parent_id": 35145,
+   "author": "Menac3",
+   "author_id": 54975,
+   "author_url": "https://forge.sp-tarkov.com/user/54975/menac3",
+   "created_at": "2024-07-06T17:29:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>ouu yess nicce, TY you brother\u2026.it works</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 108999,
+   "parent_id": 35509,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2024-07-06T18:38:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I would not use relooted and lootupdate at the same time.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 35713,
+   "parent_id": null,
+   "author": "Blacksheep25",
+   "author_id": 53865,
+   "author_url": "https://forge.sp-tarkov.com/user/53865/blacksheep25",
+   "created_at": "2024-07-09T00:50:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>May I ask the reason for no longer updating relooted? I did take a quick look over the mod.ts and see that you left a comment about map specific loot multiplication no longer existing anymore</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 109222,
+   "parent_id": 35713,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2024-07-09T12:36:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>There is starting to be simply too many items and things that doesnt exist in the loot pool from those old 3.6.1 dumps. Along with many maps being reworked to the point that it would only apply to like customs and interchange.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 35790,
+   "parent_id": null,
+   "author": "Menac3",
+   "author_id": 54975,
+   "author_url": "https://forge.sp-tarkov.com/user/54975/menac3",
+   "created_at": "2024-07-09T20:47:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hej guys</p>\n<p>Got an issue, SPT 3.9.0 - Loot\u2026. 1.4.0</p>\n<p>[LootFuckery] Current Generation Count: 4</p>\n<p>Unable to pick a cartridge for caliber: Caliber68x51 as staticAmmoDist has no data. No fallback value provided</p>\n<p>A total of 1046 static items spawned</p>\n<p>is there a way to fix it??</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 35793,
+   "parent_id": null,
+   "author": "DizzilyHQ",
+   "author_id": 3500,
+   "author_url": "https://forge.sp-tarkov.com/user/3500/dizzilyhq",
+   "created_at": "2024-07-09T20:58:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi leaves love the mod. sad to hear you dont update relooted.<br />\nI just installed it on my new 3.9 installation and it gives me that red text here:</p>\n<p><a href=\"https://i.imgur.com/NzpxrXp.png\" target=\"_blank\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/NzpxrXp.png\" alt=\"NzpxrXp.png\" /></a></p>\n<p>does not change anything ingame but just wanted to know what this is cause or if its something you fix or whatever it is</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 36171,
+   "parent_id": null,
+   "author": "ETERN3L",
+   "author_id": 57216,
+   "author_url": "https://forge.sp-tarkov.com/user/57216/etern3l",
+   "created_at": "2024-07-14T03:08:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>so i got a question. i downloaded this mod a few days ago and started using it. i went on shoreline today and red keycard always spawned in W222 and blue was always in the ambulance and W104. after i deleted the mod it still persisted. does this mod overwrite something or is this being caused by something else. if its the mod how would i go about stopping it?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 109750,
+   "parent_id": 35793,
+   "author": "Menac3",
+   "author_id": 54975,
+   "author_url": "https://forge.sp-tarkov.com/user/54975/menac3",
+   "created_at": "2024-07-14T03:39:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>hej,</p>\n<p>I have the same error, have you been able to solve the problem in the meantime?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 110108,
+   "parent_id": 35793,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2024-07-16T16:20:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Pretty sure that is part of the regular game. You just dont usually notice since it appears for a split second when you actually load into a game. loot fuckery just does a simulated loot dump by default to ensure things work. I\u2019m also 99% sure it\u2019s harmless</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 110109,
+   "parent_id": 35790,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2024-07-16T16:21:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Pretty sure that is part of the regular game. You just dont usually notice since it appears for a split second when you actually load into a game. loot fuckery just does a simulated loot dump by default to ensure things work. I\u2019m also 99% sure it\u2019s harmless</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 110111,
+   "parent_id": 36171,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2024-07-16T16:24:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This mod SHOULDN\u2019T touch anything if you leave it at default settings. But I also havent done much testing in 3.9.0 as I\u2019m not playing myself this patch.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 37358,
+   "parent_id": null,
+   "author": "TASbot",
+   "author_id": 34706,
+   "author_url": "https://forge.sp-tarkov.com/user/34706/tasbot",
+   "created_at": "2024-07-25T17:41:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>So would you not recommend using this mod anymore?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 111490,
+   "parent_id": 37358,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2024-07-26T01:01:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I absolutely do recommend using it. You just need to calibrate it yourself. It\u2019s not an \u201cinstall and forget mod\u201d, you need to set it up, adjust, compare, and fine tune.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 38156,
+   "parent_id": null,
+   "author": "Radicon111",
+   "author_id": 30936,
+   "author_url": "https://forge.sp-tarkov.com/user/30936/radicon111",
+   "created_at": "2024-08-02T22:50:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m gonna be blunt here - what we NEED please from someone is simply an increase in loot in containers, occurrence of fixed loose stuff and increase in random loose stuff - even just a basic WORKING Global Loot Multiplier!!!. Bakashi Pityloot sorts out shortages of specific / special stuff FANTASTICALLY and Keysinloot fixes lack of keys.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 38668,
+   "parent_id": null,
+   "author": "BiosTheo",
+   "author_id": 12355,
+   "author_url": "https://forge.sp-tarkov.com/user/12355/biostheo",
+   "created_at": "2024-08-09T02:01:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Something I\u2019m noticing regardless of playing with the settings for the red keycard spawns on Shoreline: It ALWAYS spawns in 222.</p>\n<p>It seems that since only the Red keycard can spawn there it always spawns.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 113342,
+   "parent_id": 38668,
+   "author": "BiosTheo",
+   "author_id": 12355,
+   "author_url": "https://forge.sp-tarkov.com/user/12355/biostheo",
+   "created_at": "2024-08-09T02:04:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Okay I figured it out for everyone having this issue: Do NOT modify the base loot value of the map.</p>\n<p>If you modify the total amount of loot then the map will attempt to spawn that amount, which means if it runs out of slots by the time it gets to keycard spawns it will ALWAYS fill those slots because its trying to reach that capacity.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 38672,
+   "parent_id": null,
+   "author": "Bhaal",
+   "author_id": 59306,
+   "author_url": "https://forge.sp-tarkov.com/user/59306/bhaal",
+   "created_at": "2024-08-09T02:48:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is there any way to make other guns spawn inside weapon testing on labs? only M4\u2019s spawn inside it for some reason</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 113544,
+   "parent_id": 38672,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2024-08-10T16:08:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This mod does not inject spawn points, only adjust existing ones. sorry.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 114435,
+   "parent_id": 38668,
+   "author": "hi_skittles",
+   "author_id": 52467,
+   "author_url": "https://forge.sp-tarkov.com/user/52467/hi-skittles",
+   "created_at": "2024-08-20T01:31:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>how do you even modify said spawn for red? is this because the only card that <em>can</em> spawn on shoreline the red one? so if I only modify the keycard section to say, 50x, this problem <em>shouldn\u2019t</em> happen, right? or am i wrong in saying this.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 114450,
+   "parent_id": 38668,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2024-08-20T06:23:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>blue also spawn on shoreline, but you can adjust individual items in the config. Just add their ID to the individual item section in the config.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 115041,
+   "parent_id": 38668,
+   "author": "Shturman",
+   "author_id": 24247,
+   "author_url": "https://forge.sp-tarkov.com/user/24247/shturman",
+   "created_at": "2024-08-25T21:15:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>how can i change it because on woods spawns the purple keycard always on all 3 spots i want them to spawn very rare and not every raid</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 115050,
+   "parent_id": 35509,
+   "author": "Shturman",
+   "author_id": 24247,
+   "author_url": "https://forge.sp-tarkov.com/user/24247/shturman",
+   "created_at": "2024-08-25T23:12:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>So which of the two should I use so that the keycards no longer appear so fot ? because with me they are there every raid and that\u2019s really OP .I would like to know how to make them less frequent since they are also extremely valuable</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 115051,
+   "parent_id": 35509,
+   "author": "Shturman",
+   "author_id": 24247,
+   "author_url": "https://forge.sp-tarkov.com/user/24247/shturman",
+   "created_at": "2024-08-25T23:14:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It would then also be an advantage which line should I change and in which file so that I don\u2019t find every RAID these keycards, I would be happy if they are super rare and I then find one</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 39742,
+   "parent_id": null,
+   "author": "Shturman",
+   "author_id": 24247,
+   "author_url": "https://forge.sp-tarkov.com/user/24247/shturman",
+   "created_at": "2024-08-26T13:21:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>hey can soemone help me ? how can you make keycard spawns very low, because I find them in every raid in their places and that\u2019s pretty OP because they are also very valuable and actually they should be extremely rare.I also want to be happy if I find one vll at the 100th raid xD would be really cool if someone could help me and tell me which lines I have to change and which file, I have all things on 3.75 except keycards on 0.01 and still they all spawn on their places every time, no matter on which map</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 115109,
+   "parent_id": 39742,
+   "author": "Shturman",
+   "author_id": 24247,
+   "author_url": "https://forge.sp-tarkov.com/user/24247/shturman",
+   "created_at": "2024-08-26T18:03:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Or are the keycards already set to very rarely with the normal standard settings ?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 115180,
+   "parent_id": 35509,
+   "author": "ReLOAD07",
+   "author_id": 23389,
+   "author_url": "https://forge.sp-tarkov.com/user/23389/reload07",
+   "created_at": "2024-08-27T05:50:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>you on 3.8.3? if so, i was using only lootupdate and it was working pretty well for me (i mainly chose it because it added keycards to marked)</p>\n<p>but if you\u2019re on 3.9, theres no mod that adds any spawn rn atm</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 115427,
+   "parent_id": 38156,
+   "author": "Shturman",
+   "author_id": 24247,
+   "author_url": "https://forge.sp-tarkov.com/user/24247/shturman",
+   "created_at": "2024-08-29T15:38:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>you can change it with svm</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 40005,
+   "parent_id": null,
+   "author": "1inchapincha",
+   "author_id": 62493,
+   "author_url": "https://forge.sp-tarkov.com/user/62493/1inchapincha",
+   "created_at": "2024-08-29T20:42:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey does this mod affect the hive key? I cant seem to find it at all. If so how do i make it 100% spawn rate?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 40820,
+   "parent_id": null,
+   "author": "Jenny",
+   "author_id": 62355,
+   "author_url": "https://forge.sp-tarkov.com/user/62355/jenny",
+   "created_at": "2024-09-11T11:31:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>[LootFuckery] Found point item that doesn\u2019t exist, or doesn\u2019t have a relativeProbability entry, 910 this is usually due to a mod doing something wrong. But it shouldn\u2019t be breaking anything.</p>\n<p>[LootFuckery] Found point item that doesn\u2019t exist, or doesn\u2019t have a relativeProbability entry, 883 this is usually due to a mod doing</p>\n<p>something wrong. But it shouldn\u2019t be breaking anything.</p>\n<p>and more\u2026\u2026.can i fix it this?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 41682,
+   "parent_id": null,
+   "author": "TKsTurtle",
+   "author_id": 63854,
+   "author_url": "https://forge.sp-tarkov.com/user/63854/tksturtle",
+   "created_at": "2024-09-30T23:55:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Sorry but am I correct in thinking the \u201cloot - relooted.jsonc\u201d file is not used, but there as it\u2019s the config you use? If we want to use it we rename it to just \u201cloot.jsonc\u201d correct?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 118219,
+   "parent_id": 41682,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2024-10-08T10:00:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You are correct. Though I used it together with my relooted mod, that isn\u2019t updated to 3.9 due to too many changes to maps to the point that it didnt do anything anymore. So in the next version of loot fuckery, that config will be gone. Perhaps replaced with settings I feel are good, but no plans for that right now.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 118237,
+   "parent_id": 41682,
+   "author": "TKsTurtle",
+   "author_id": 63854,
+   "author_url": "https://forge.sp-tarkov.com/user/63854/tksturtle",
+   "created_at": "2024-10-08T22:45:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Okay sounds good, so I shouldn\u2019t use that config? haha</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 118269,
+   "parent_id": 41682,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2024-10-10T00:03:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I would avoid that yes.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 118270,
+   "parent_id": 41682,
+   "author": "TKsTurtle",
+   "author_id": 63854,
+   "author_url": "https://forge.sp-tarkov.com/user/63854/tksturtle",
+   "created_at": "2024-10-10T00:18:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019ve been running it, maybe that\u2019s why I haven\u2019t been finding much haha\u2026 Ill download the default cfg\u2026 You don\u2019t have any recommended settings eh?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 118310,
+   "parent_id": 41682,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2024-10-10T22:09:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Was this 3.8 I\u2019d have a lot of recommendations. but I haven\u2019t played 3.9 at all. I\u2019d recommend using the dumping tool (built into loot fuckery) and adjusting thereafter. If you find there are to many of x thing or category on a specific map</p>\n<p>Just make sure the sample size is large enough.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 118331,
+   "parent_id": 41682,
+   "author": "TKsTurtle",
+   "author_id": 63854,
+   "author_url": "https://forge.sp-tarkov.com/user/63854/tksturtle",
+   "created_at": "2024-10-12T02:30:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Okay, will try that</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 118680,
+   "parent_id": 40820,
+   "author": "RANK",
+   "author_id": 53674,
+   "author_url": "https://forge.sp-tarkov.com/user/53674/rank",
+   "created_at": "2024-10-20T00:12:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>have you found out anything about this \u201cissue\u201d ?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 118732,
+   "parent_id": 40820,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2024-10-20T18:16:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Just like it says. Some other mod is breakign something most likely. I haven\u2019t personally tested this on other than 3.9.0, but it should work fine on later versions. Unless no loot spawns, this shouldn\u2019t really affect anything.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 43153,
+   "parent_id": null,
+   "author": "swafromsteam",
+   "author_id": 28974,
+   "author_url": "https://forge.sp-tarkov.com/user/28974/swafromsteam",
+   "created_at": "2024-11-07T04:55:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Absolutely fantastic mod! I can finally make reserve feel like a military base with ammunition spawning more frequently and make labs feel like a lab with stimulants. I do have one question however, would it be possible to \u201cbuff\u201d locked rooms? I doubt it\u2019s possible since your just adjusting the entire map\u2019s loot not a specific area. But damn it\u2019d be sick to have the armory keys on reserve actually be useful. Spawn high tier mods, ammo, etc. Thanks.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 119800,
+   "parent_id": 43153,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2024-11-07T05:59:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Unfortunatley not. I have been considering doing a project where I map out different maps\u2019s locations for fine tuning. But it would be an incredibly tedious pocess. If anyone has any ideas or would like to do it for me, lmk.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 119832,
+   "parent_id": 43153,
+   "author": "swafromsteam",
+   "author_id": 28974,
+   "author_url": "https://forge.sp-tarkov.com/user/28974/swafromsteam",
+   "created_at": "2024-11-08T03:10:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Ah okay, thanks for your reply!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 120020,
+   "parent_id": 39742,
+   "author": "swafromsteam",
+   "author_id": 28974,
+   "author_url": "https://forge.sp-tarkov.com/user/28974/swafromsteam",
+   "created_at": "2024-11-12T02:11:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Super late reply but I believe 1.0 is the default chance, not sure though, I could be very wrong. I just set my keycards to be 0.1 or 0.2 depending on what keycard it is.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 44202,
+   "parent_id": null,
+   "author": "SwimUp",
+   "author_id": 47594,
+   "author_url": "https://forge.sp-tarkov.com/user/47594/swimup",
+   "created_at": "2024-12-01T07:40:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Does this work with AllTheLoot?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 121003,
+   "parent_id": 44202,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2024-12-01T10:55:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is there even an up-to-date version of alltheloot? But either way it should in theory work.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 44438,
+   "parent_id": null,
+   "author": "blueavlo",
+   "author_id": 69022,
+   "author_url": "https://forge.sp-tarkov.com/user/69022/blueavlo",
+   "created_at": "2024-12-06T00:11:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The download is getting flagged as containing a virus?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 121479,
+   "parent_id": 44438,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2024-12-08T00:28:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Its a false positive. The source is in the mod, or you can look at the github yourself.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 121544,
+   "parent_id": 44438,
+   "author": "blueavlo",
+   "author_id": 69022,
+   "author_url": "https://forge.sp-tarkov.com/user/69022/blueavlo",
+   "created_at": "2024-12-08T16:27:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I believe you, but chrome won\u2019t even let me download it.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 48563,
+   "parent_id": null,
+   "author": "Invader",
+   "author_id": 58035,
+   "author_url": "https://forge.sp-tarkov.com/user/58035/invader",
+   "created_at": "2025-02-16T09:13:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I read the description there are four configs should i just delete the others and use the one i want to use?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 127070,
+   "parent_id": 48563,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2025-02-17T18:51:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You don\u2019t need to delete anything. It will only load config.jsonc and loot.jsonc if you want to use any of the other, you have to delete the default loot.jsonc and rename them. But if you just wanna install and go, there is no need to delete or rename anything</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 49801,
+   "parent_id": null,
+   "author": "Shturman",
+   "author_id": 24247,
+   "author_url": "https://forge.sp-tarkov.com/user/24247/shturman",
+   "created_at": "2025-03-22T20:15:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>How can I set it so that more items spawn for me, for me spawn few weapons or weapon attachments and money, although I have set it to 100.0 in the config</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 128621,
+   "parent_id": 49801,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2025-03-23T14:06:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It will not create new spawn points, it works with what it there. However, there is also a total spawn limit on the maps. Increase the per-map loot multiplier if you want more loot. Though keep in mind that that will also increase all types of loot. I highly recommend doing loot dumps in to verify that you\u2019re moving the loot in a direction that you want.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 128966,
+   "parent_id": 49801,
+   "author": "Shturman",
+   "author_id": 24247,
+   "author_url": "https://forge.sp-tarkov.com/user/24247/shturman",
+   "created_at": "2025-03-30T02:02:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I meant how can I make money or other items spawn more often since I have already set them to 100.0 and sometimes these items still don\u2019t appear</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 129041,
+   "parent_id": 49801,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2025-04-01T03:36:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Due to the nature of how SPT has implemented loot, you can\u2019t really set a single item to 100% spawn rate without breaking other spawns. Increasing the chance for one type (lets use money as an example), will make this mod increase the spawn points probability by a relative amount to the money\u2019s spawn chance WITHIN that point. Say a point has 5 different items with the same weight, and a point chance of 10%.</p>\n<p>Point: 10% \u2014 Money: 20w Bitcoin: 20w Chainlet: 20w Horse Statue: 20w Gold Chain: 20w If you then double the chance for money. Itll look like this</p>\n<p>Point: 12% \u2014 Money: 40w Bitcoin: 20w Chainlet: 20w Horse Statue: 20w Gold Chain: 20w You\u2019ve doubled the odds of money being selected, but the point only increased by 12 percentage units.</p>\n<p>So if you MASSIVELY increase money, youll also increase the point, but you also basically make the other spawns never happen either. So I don\u2019t recommend to go that hard with anything. AND you\u2019ll also make OTHER spawn points less likely to happen as well, since there is a fixed amount of spawn points per raid. And making one MORE likely, will make all other points LESS likely.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 51893,
+   "parent_id": null,
+   "author": "sunliang0901",
+   "author_id": 48374,
+   "author_url": "https://forge.sp-tarkov.com/user/48374/sunliang0901",
+   "created_at": "2025-05-18T11:42:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>\u4f60\u597d\uff0c\u4f60\u7684\u8fd9\u4e2aMOD\u53ef\u4ee5\u8c03\u6574\u73b0\u6709\u5730\u56fe\u7269\u8d44\u7684\u500d\u7387\u4e48\uff0c\u53ef\u4ee5\u8ba9\u7269\u8d44\u66f4\u4e30\u5bcc\u4e00\u70b9\u5c31\u884c</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 131444,
+   "parent_id": 51893,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2025-05-20T12:16:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yes, It can adjust the abundance/quantity of loose loot on the map.</p>\n<p>Adjust the totalLootMultiplier in the loot.jsonc file inside the config folder</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 52378,
+   "parent_id": null,
+   "author": "MechaPhantasm",
+   "author_id": 50021,
+   "author_url": "https://forge.sp-tarkov.com/user/50021/mechaphantasm",
+   "created_at": "2025-06-03T12:09:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>So, this is a small issue that people just using the default config wont notice, but for anyone tweaking the config file, the \u201cloot - noadjust.jsonc\u201d and \u201cloot - relooted.jsonc\u201d example files don\u2019t have the new flier and Hideout area container categories added. This will cause the fliers not to spawn in game. Luckily, it\u2019s not hard to add them back yourself. Just crack open your loot config file and under the globalCategories section add these two lines:</p>\n<p>\u201c6759673c76e93d8eb20b2080\u201d: { \u201cmulti\u201d: 1.00 }, //Fliers<br />\n\u201c63da6da4784a55176c018dba\u201d: { \u201cmulti\u201d: 1.00 } //Hideout Area Container ???</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 54001,
+   "parent_id": null,
+   "author": "swafromsteam",
+   "author_id": 28974,
+   "author_url": "https://forge.sp-tarkov.com/user/28974/swafromsteam",
+   "created_at": "2025-07-19T12:25:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey,</p>\n<p>I\u2019ve been using the mod consistently for the past couple of months. I\u2019m really enjoying it, finding keys in-raid is much easier and pairs very well with my hardcore playthrough.</p>\n<p>There is one thing that seems to be an issue. The med camp on woods has an absurd amount of Salewa\u2019s, Ifak\u2019s &amp; Afak\u2019s. In my config, the only thing I have tuned up on woods is the M4A1 spawn, to 5.00x. No global change either, everything is 1.00x. I do have some maps, like Labs &amp; Shoreline with a 3.00x on medkits.</p>\n<p>Is this is issue with the mod? Or is it just SPT, also, is there a way to \u201cfix\u201d this?</p>\n<p>Thanks.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 54332,
+   "parent_id": null,
+   "author": "Hardiel",
+   "author_id": 63954,
+   "author_url": "https://forge.sp-tarkov.com/user/63954/hardiel",
+   "created_at": "2025-07-28T07:21:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>In a config there are //\u201cdataDumpRealRuns\u201d: false, //Dumps data before each run DISABLED FOR NOW<br />\nDoes it mean it won\u2019t work if I enable it or it is just disabled by default?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 134166,
+   "parent_id": 54332,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2025-07-28T14:23:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I had to disable that feature due to changes on how the server generates loot. So, its not working, but I might bring it back in the future.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 134167,
+   "parent_id": 54001,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2025-07-28T14:24:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thats very strange, I havent ran into that myself. Then again, I havent played 3.11 at all. Might be an issue with 3.11</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 134169,
+   "parent_id": 54001,
+   "author": "swafromsteam",
+   "author_id": 28974,
+   "author_url": "https://forge.sp-tarkov.com/user/28974/swafromsteam",
+   "created_at": "2025-07-28T15:41:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Well, I\u2019m not on 3.11, still rocking 3.9. But I\u2019m not sure what\u2019s causing it either, maybe there is a way to purposefully lower the amount of meds? For example, could something like this work?<br />\n\u201c544fb45d4bdc2dee738b4568\u201d: { \u201cmulti\u201d: 0.10 }</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 134172,
+   "parent_id": 54001,
+   "author": "DeadLeaves",
+   "author_id": 9836,
+   "author_url": "https://forge.sp-tarkov.com/user/9836/deadleaves",
+   "created_at": "2025-07-28T16:50:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yeah, setting specific items on a specific map should do the trick. Might make scav base a bit barren tho.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 134178,
+   "parent_id": 54001,
+   "author": "swafromsteam",
+   "author_id": 28974,
+   "author_url": "https://forge.sp-tarkov.com/user/28974/swafromsteam",
+   "created_at": "2025-07-28T19:24:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yea it might, but it\u2019d be better than finding 10 medkits lol. It\u2019s a little too much for my hardcore run. Thanks for your help.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 54936,
+   "parent_id": null,
+   "author": "Gleneth",
+   "author_id": 26904,
+   "author_url": "https://forge.sp-tarkov.com/user/26904/gleneth",
+   "created_at": "2025-08-11T18:41:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>github is down =[</p>\n<p>NVM you</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

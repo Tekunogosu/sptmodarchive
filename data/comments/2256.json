@@ -1,0 +1,60 @@
+{
+ "mod_id": 2256,
+ "slug": "scav-grenade-reducer",
+ "fetched_at": "2026-08-09T07:58:58Z",
+ "reported_total": null,
+ "pages": 1,
+ "count": 5,
+ "comments": [
+  {
+   "id": 55157,
+   "parent_id": null,
+   "author": "RogueTech67",
+   "author_id": 9742,
+   "author_url": "https://forge.sp-tarkov.com/user/9742/roguetech67",
+   "created_at": "2025-08-19T00:27:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>So this mod simply reduces the number of grenades that the game Scavs have on them? If so, since there is no config, by what percentage did you reduce them? Thanks</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 55168,
+   "parent_id": null,
+   "author": "hiddenyak",
+   "author_id": 51770,
+   "author_url": "https://forge.sp-tarkov.com/user/51770/hiddenyak",
+   "created_at": "2025-08-19T16:29:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Can you explain what the change to grenade weightings actually does?</p>\n<p>The value for field 0 goes from 13 -&gt; 30 and the value for field 1 goes from 6 -&gt; 2. How does this affect a scav\u2019s chance to have grenades?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135270,
+   "parent_id": 55168,
+   "author": "PhantomInTime",
+   "author_id": 10514,
+   "author_url": "https://forge.sp-tarkov.com/user/10514/phantomintime",
+   "created_at": "2025-08-19T19:12:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>So each key in the key -&gt; value pairing refers to the weighted chance of having that amount of grenades in their inventory when they spawn. So the 30 for \u201c0\u201d just weighs it extremely heavily in the direction that scavs will have no grenades on them at spawn. 2 in \u201c1\u201d gives a very slight chance that they\u2019ll have 1 grenade in their inventory and then 1 in \u201c2\u201d refers to the absolutely lowest chance they\u2019ll have 2 grenades in their inventory. \u201c3\u201d - \u201c5\u201d are all 0\u2019s as I personally have never seen any scavs have more than 2 grenades on them in my hundreds of hours in PvE.</p>\n<p>Kinda stream of consciousness reply. Let me know if that makes sense.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 135271,
+   "parent_id": 55157,
+   "author": "PhantomInTime",
+   "author_id": 10514,
+   "author_url": "https://forge.sp-tarkov.com/user/10514/phantomintime",
+   "created_at": "2025-08-19T19:13:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>More it adjusts the weighted chance of how many they\u2019ll have on them. The reply to the comment after this one explains it in more detail.</p>\n<p>Valens actually contributed a config integration which will come in an update a bit later so you\u2019ll be able to play around with these values yourself! I am a big fan of letting people make their own choices with these things.</p>\n<p>Edit: Oh, I apologize, missed the last part. Base SPT uses the following values</p>\n<p>\u201c0\u201d: 13, \u201c1\u201d: 6, \u201c2\u201d: 2, \u201c3\u201d: 1, \u201c4\u201d: 0, \u201c5\u201d: 0I use these values instead</p>\n<p>\u201c0\u201d: 30, \u201c1\u201d: 2, \u201c2\u201d: 1, \u201c3\u201d: 0, \u201c4\u201d: 0, \u201c5\u201d: 0</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 135273,
+   "parent_id": 55168,
+   "author": "hiddenyak",
+   "author_id": 51770,
+   "author_url": "https://forge.sp-tarkov.com/user/51770/hiddenyak",
+   "created_at": "2025-08-19T19:53:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you sir this has been very informative.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

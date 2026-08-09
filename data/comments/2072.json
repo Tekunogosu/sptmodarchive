@@ -1,0 +1,100 @@
+{
+ "mod_id": 2072,
+ "slug": "ammo-stats-on-name",
+ "fetched_at": "2026-08-09T07:34:41Z",
+ "reported_total": null,
+ "pages": 1,
+ "count": 9,
+ "comments": [
+  {
+   "id": 50110,
+   "parent_id": null,
+   "author": "Shturman",
+   "author_id": 24247,
+   "author_url": "https://forge.sp-tarkov.com/user/24247/shturman",
+   "created_at": "2025-03-30T19:17:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>thx for this mod</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 51211,
+   "parent_id": null,
+   "author": "impact83",
+   "author_id": 31760,
+   "author_url": "https://forge.sp-tarkov.com/user/31760/impact83",
+   "created_at": "2025-04-27T09:46:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Something like this would be nice for FIKA. Thx for this QoL mod</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 51359,
+   "parent_id": null,
+   "author": "Flaxes",
+   "author_id": 78236,
+   "author_url": "https://forge.sp-tarkov.com/user/78236/flaxes",
+   "created_at": "2025-05-01T13:40:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>thx for this mod<br />\ncan you please apply multi-lang fix to it?<br />\nfor now - only one language is modified bullet\u2019s name</p>\n<p>working code for multi-language support</p>\n<p>(if some players on FIKA have different languages)</p>\n<p>(sorry for js instead of ts)</p>\n<p>class Mod { locales; postDBLoad(container) { const databaseServer = container.resolve(\u201cDatabaseServer\u201d); // const localeService = container.resolve(\u201cLocaleService\u201d); const tables = databaseServer.getTables(); this.locales = tables.locales.global; const logger = container.resolve(\u201cWinstonLogger\u201d); const itemHelper = container.resolve(\u201cItemHelper\u201d); const items = Object.values(tables.templates.items); const rounds = items.filter((x) =&gt; itemHelper.isOfBaseclass(x._id, BaseClasses_1.BaseClasses.AMMO)); for (const ammo of rounds) { let textToAdd = \u201c\u201d; const itemId = ammo._id; const props = ammo._props; if (props.ProjectileCount &gt; 1) { textToAdd = <code> (${props.Damage}x${props.ProjectileCount}/${props.PenetrationPower})</code>; } else { textToAdd = <code> (${props.Damage}/${props.PenetrationPower})</code>; } this.addToName(itemId, textToAdd); } logger.info(\u201c[Ammo Stats] Sucessfully added DMG and PEN to ammo names.\u201c); } addToName(itemId, addToName, localeArg) { if (!localeArg) { for (const locale in this.locales) { this.addToName(itemId, addToName, locale); } return; } const itemIdName = <code>${itemId} Name</code>; const originalName = this.locales[localeArg][itemIdName] || this.locales[\u201cen\u201d][itemIdName]; this.locales[localeArg][itemIdName] = originalName + addToName; } }</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 51613,
+   "parent_id": null,
+   "author": "LHQAQLH",
+   "author_id": 78534,
+   "author_url": "https://forge.sp-tarkov.com/user/78534/lhqaqlh",
+   "created_at": "2025-05-09T17:01:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            \n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 131023,
+   "parent_id": 51211,
+   "author": "Kweet",
+   "author_id": 41479,
+   "author_url": "https://forge.sp-tarkov.com/user/41479/kweet",
+   "created_at": "2025-05-11T02:09:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey mate, where do I get Fika now-a-days?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 51664,
+   "parent_id": null,
+   "author": "Kweet",
+   "author_id": 41479,
+   "author_url": "https://forge.sp-tarkov.com/user/41479/kweet",
+   "created_at": "2025-05-11T02:09:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This will work for 3.10.x just have to change .json version.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 131037,
+   "parent_id": 51211,
+   "author": "impact83",
+   "author_id": 31760,
+   "author_url": "https://forge.sp-tarkov.com/user/31760/impact83",
+   "created_at": "2025-05-11T09:49:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>no link, but just google \u201cproject fika github\u201d</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 131338,
+   "parent_id": 51211,
+   "author": "Kweet",
+   "author_id": 41479,
+   "author_url": "https://forge.sp-tarkov.com/user/41479/kweet",
+   "created_at": "2025-05-18T13:20:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Alright thanks&lt;3</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 146644,
+   "parent_id": null,
+   "author": "mwhutchi",
+   "author_id": 88951,
+   "author_url": "https://forge.sp-tarkov.com/user/88951/mwhutchi",
+   "created_at": "2025-12-20T14:39:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I never ask this, but what kind of work would it take to make this work in 4.0? Sometimes changing version in the JSON works, but after doing that, it says it is missing assemblies. I really think this mod is necessary, especially if you have ammo mods as well</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

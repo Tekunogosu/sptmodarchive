@@ -1,0 +1,1510 @@
+{
+ "mod_id": 752,
+ "slug": "props-automated-selling",
+ "fetched_at": "2026-08-09T07:16:51Z",
+ "reported_total": 51,
+ "pages": 6,
+ "count": 150,
+ "comments": [
+  {
+   "id": 11565,
+   "parent_id": null,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2023-02-10T04:16:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I know i forgot to remove that line about adding tagging ability (tried something and it didn\u2019t work). It will only remove restrictions in containers if enabled in config.</p>\n<p>Feel free to comment below about issues.</p>\n<p>future plans</p>\n<p>- add option to omit specific objects\u2026 or maybe type of objects like keys</p>\n<p>- add option to toggle selling by book price vs ragfair price.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 11578,
+   "parent_id": null,
+   "author": "RiZZa4uSkO",
+   "author_id": 21203,
+   "author_url": "https://forge.sp-tarkov.com/user/21203/rizza4usko",
+   "created_at": "2023-02-10T11:14:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Great idea, but dont working for me. Probably i dont understand something, can you make some examples ?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73417,
+   "parent_id": 11578,
+   "author": "Isa",
+   "author_id": 18626,
+   "author_url": "https://forge.sp-tarkov.com/user/18626/isa",
+   "created_at": "2023-02-10T14:32:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>you have to right-click and tag the container you want and use that tag in the config.json under Labels. for example i add tag on to T H I C C container as roublesell and also in the config.json change \u201ccase roubles\u201d to \u201croublesell\u201d and then carry that container into raid after the end of the raid all the items in the container will be sell.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 11582,
+   "parent_id": null,
+   "author": "Loganxfi",
+   "author_id": 4557,
+   "author_url": "https://forge.sp-tarkov.com/user/4557/loganxfi",
+   "created_at": "2023-02-10T15:14:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>\u0412\u0435\u0440\u0441\u0438\u044f \u0441\u0435\u0440\u0432\u0435\u0440\u0430 3.4.1. \u041c\u043e\u0434 \u043d\u0435 \u0440\u0430\u0431\u043e\u0442\u0430\u0435\u0442, \u043d\u0438 \u043e\u0434\u0438\u043d \u043a\u0435\u0439\u0441 \u043d\u0435 \u043f\u0440\u043e\u0434\u0430\u0435\u0442\u0441\u044f \u0430\u0432\u0442\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438. \u041d\u0430\u043f\u0438\u0448\u0438\u0442\u0435 \u043f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430 \u043f\u043e\u0434\u0440\u043e\u0431\u043d\u0443\u044e \u0438\u043d\u0441\u0442\u0440\u0443\u043a\u0446\u0438\u044e \u043f\u043e \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0435 \u0432\u0430\u0448\u0435\u0433\u043e \u043c\u043e\u0434\u0430! <img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/mX9qtqZ/Escape-From-Tarkov-Screenshot-2023-02-10-22-08-27-58.png\" alt=\"Escape-From-Tarkov-Screenshot-2023-02-10-22-08-27-58.png\" /></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73420,
+   "parent_id": 11582,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2023-02-10T16:51:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>if you had not changed anything from original install, you could have named a docs case as \u2018case roubles\u2019, put something in it, and then run a raid, and it should have sold all the items in the docs case at the raid end screen.</p>\n<p>I\u2019m not sure if there\u2019s issues with other languages, but there shouldn\u2019t be? maybe y ou try renaming to russian characters in the config for case roubles, put the same name as the tag for a docs case in-game - then run raid.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 11588,
+   "parent_id": null,
+   "author": "RogueTech67",
+   "author_id": 9742,
+   "author_url": "https://forge.sp-tarkov.com/user/9742/roguetech67",
+   "created_at": "2023-02-10T18:41:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Another great mod my friend. I see you have \u201cakiVersion\u201d: \u201c3.5.*\u201d, in the package.json file. Might want to consider this [ \u201cakiVersion\u201d: \u201c 3.4.* | | 3.5.*\u201c, ] if it actually is compatible with both 3.4.1 and the upcoming 3.5.0. I know it\u2019s just a warning message, but if it doesn\u2019t have to be there\u2026. Thanks</p>\n<p>\u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510</p>\n<p>\u2502 SPT-AKI 3.4.1 \u2502</p>\n<p>\u2502 <a href=\"https://discord.sp-tarkov.com\" target=\"_blank\" rel=\"noreferrer noopener\">https://discord.sp-tarkov.com</a> \u2502</p>\n<p>\u2502 \u2502</p>\n<p>\u2502 This work is free of charge \u2502</p>\n<p>\u2502 Commercial use is prohibited \u2502</p>\n<p>\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518</p>\n<p>ModLoader: loading 1 mods\u2026</p>\n<p>Mod Props-Props Automated Selling is not compatible with the current version of AKI. You may encounter issues - no support will be provided!</p>\n<p>Mod: Props Automated Selling version: 1.0.0 by: Props loaded</p>\n<p>Server: executing startup callbacks\u2026</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73427,
+   "parent_id": 11588,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2023-02-10T18:44:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yeah i started developing it in 3.5.0 and then had to reinstall to 3.4.1 to get to the bugs. It should be compatible with both as of now. Thanks.</p>\n<p>Another thing i forgot lol.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 11590,
+   "parent_id": null,
+   "author": "doctharock",
+   "author_id": 8986,
+   "author_url": "https://forge.sp-tarkov.com/user/8986/doctharock",
+   "created_at": "2023-02-10T21:01:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I recall someone asking for this on reddit and offering to pay for it. I hope that happened! Thanks Props!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 11593,
+   "parent_id": null,
+   "author": "DouglasBubbletrouser",
+   "author_id": 26032,
+   "author_url": "https://forge.sp-tarkov.com/user/26032/douglasbubbletrouser",
+   "created_at": "2023-02-10T22:21:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Any plans if the option of selling to traders instead? Would make leveling LL less tedious I imagine</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 73440,
+   "parent_id": 11565,
+   "author": "ShadowXtrex",
+   "author_id": 13380,
+   "author_url": "https://forge.sp-tarkov.com/user/13380/shadowxtrex",
+   "created_at": "2023-02-11T01:01:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>to the packaje.json replace this</p>\n<p>\u201cakiVersion\u201d: \u201c3.5.*\u201d,</p>\n<p>with</p>\n<p>\u201cakiVersion\u201d: \u201c3.4.x || 3.5.0\u201d,</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 11616,
+   "parent_id": null,
+   "author": "selendius",
+   "author_id": 5653,
+   "author_url": "https://forge.sp-tarkov.com/user/5653/selendius",
+   "created_at": "2023-02-11T07:11:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i found that the mod are not compatible with other mod that modify flea market (such as Softcore), only got 1 rubles on container after raid XD</p>\n<p>other than that, it\u2019s working perfectly!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 11645,
+   "parent_id": null,
+   "author": "PageMan",
+   "author_id": 25753,
+   "author_url": "https://forge.sp-tarkov.com/user/25753/pageman",
+   "created_at": "2023-02-11T22:10:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I started using this mod but came into this error. It sold a few items before this but then stopped hard with this error.</p>\n<p>TypeError: Cannot read properties of undefined (reading \u2018toLowerCase\u2019)</p>\n<p>TypeError: Cannot read properties of undefined (reading \u2018toLowerCase\u2019)</p>\n<p>at PAutoSell.exchangeItems (F:\\games\\SPTARKOV 3.4.1\\user\\mods\\Props-AutomatedSelling\\src\\PAutoSell.js:135:22)</p>\n<p>at Object.action (F:\\games\\SPTARKOV 3.4.1\\user\\mods\\Props-AutomatedSelling\\src\\PAutoSell.js:40:26)</p>\n<p>at StaticRouterMod.handleStatic (C:\\snapshot\\project\\obj\\di\\Router.js)</p>\n<p>at HttpRouter.handleRoute (C:\\snapshot\\project\\obj\\routers\\HttpRouter.js)</p>\n<p>at HttpRouter.getResponse (C:\\snapshot\\project\\obj\\routers\\HttpRouter.js)</p>\n<p>at AkiHttpListener.getResponse (C:\\snapshot\\project\\obj\\servers\\http\\AkiHttpListener.js)</p>\n<p>at IncomingMessage.&lt;anonymous&gt; (C:\\snapshot\\project\\obj\\servers\\http\\AkiHttpListener.js)</p>\n<p>at IncomingMessage.emit (node:events:527:28)</p>\n<p>at endReadableNT (node:internal/streams/readable:1345:12)</p>\n<p>at processTicksAndRejections (node:internal/process/task_queues:83:21)</p>\n<p>TypeError: Cannot read properties of undefined (reading \u2018toLowerCase\u2019)</p>\n<p>TypeError: Cannot read properties of undefined (reading \u2018toLowerCase\u2019)</p>\n<p>at PAutoSell.exchangeItems (F:\\games\\SPTARKOV 3.4.1\\user\\mods\\Props-AutomatedSelling\\src\\PAutoSell.js:135:22)</p>\n<p>at Object.action (F:\\games\\SPTARKOV 3.4.1\\user\\mods\\Props-AutomatedSelling\\src\\PAutoSell.js:40:26)</p>\n<p>at StaticRouterMod.handleStatic (C:\\snapshot\\project\\obj\\di\\Router.js)</p>\n<p>at HttpRouter.handleRoute (C:\\snapshot\\project\\obj\\routers\\HttpRouter.js)</p>\n<p>at HttpRouter.getResponse (C:\\snapshot\\project\\obj\\routers\\HttpRouter.js)</p>\n<p>at AkiHttpListener.getResponse (C:\\snapshot\\project\\obj\\servers\\http\\AkiHttpListener.js)</p>\n<p>at IncomingMessage.&lt;anonymous&gt; (C:\\snapshot\\project\\obj\\servers\\http\\AkiHttpListener.js)</p>\n<p>at IncomingMessage.emit (node:events:527:28)</p>\n<p>at endReadableNT (node:internal/streams/readable:1345:12)</p>\n<p>at processTicksAndRejections (node:internal/process/task_queues:83:21)</p>\n<p>I don\u2019t use the bigger secure cases because I use SVM for that. I placed everything in dogtag cases with an exact copy of the name in the config file. I have multiple dogtag cases with the one for roubles. Does this mod handle multiple cases with the same name or?</p>\n<p>Any help wound be wonderful, great mod idea btw.</p>\n<p>EDIT: I made my own specific labels for every single container that I want it to sell from, but it doesn\u2019t seem to make a difference.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73504,
+   "parent_id": 11593,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2023-02-12T02:37:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i\u2019ll look into it. how would you choose how to Level which trader though? I mean yeah you could write name in config..</p>\n<p>1. would you like a trader also associated to a container?</p>\n<p>2. all trades goto one trader that you put in config?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73505,
+   "parent_id": 11616,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2023-02-12T02:38:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>how does softcore change the flea?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73506,
+   "parent_id": 11645,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2023-02-12T02:39:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Not with the same name.. i didn\u2019t think you would use the same name.</p>\n<p>please make unique name</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 11651,
+   "parent_id": null,
+   "author": "Reckless3",
+   "author_id": 22697,
+   "author_url": "https://forge.sp-tarkov.com/user/22697/reckless3",
+   "created_at": "2023-02-12T02:59:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello i tried to play with the mod but i keep having a Blackscreen when i extract and a lot of red messages in console.</p>\n<p><a href=\"https://imgur.com/a/iyTg3wW\" target=\"_blank\" rel=\"noreferrer noopener\">My Config</a></p>\n<p>[Server Errors</p>\n<p>](<a href=\"https://imgur.com/a/pIT8OxT\" target=\"_blank\" rel=\"noreferrer noopener\">https://imgur.com/a/pIT8OxT</a>)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73509,
+   "parent_id": 11651,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2023-02-12T03:06:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i made a typo, it should be \u2018roubles\u2019 in the currency . fk</p>\n<p>red message is still fine because it defaults to roubles even if the currency isn\u2019t spelled right.</p>\n<p>The problem is why your raid freezes.</p>\n<p>What is your version SPT and what other mods you have?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73510,
+   "parent_id": 11616,
+   "author": "selendius",
+   "author_id": 5653,
+   "author_url": "https://forge.sp-tarkov.com/user/5653/selendius",
+   "created_at": "2023-02-12T03:24:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>from what i understand, softcore restrict what you can and can\u2019t buy/sell from ragfair market</p>\n<p>while your mod return the price of items based on ragfair market also</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73511,
+   "parent_id": 11616,
+   "author": "rockahorse",
+   "author_id": 22399,
+   "author_url": "https://forge.sp-tarkov.com/user/22399/rockahorse",
+   "created_at": "2023-02-12T04:03:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>aaaah so it\u2019s softcore that\u2019s the cause.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73512,
+   "parent_id": 11593,
+   "author": "DouglasBubbletrouser",
+   "author_id": 26032,
+   "author_url": "https://forge.sp-tarkov.com/user/26032/douglasbubbletrouser",
+   "created_at": "2023-02-12T04:08:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>My knowledge bout codding is limited af, and amounted to basic level stuff like \u201cif X print call douglas a fatty borderline retard\u201d or some shit like that. So I have zero grasp what can or cant easily be done.</p>\n<p>What I would find neat was if maybe there was 2 small containers that could be configed separately if needed. So items in one perhaps only sells to Peacekeeper or whoever, while items in other sells to idk Prapor. Or one doing what the mod does already and cont2 sells to whoever specified in config.</p>\n<p>Or perhaps like the 1st option you had. One cont per trader is a better idea? As I really have no clue what can be done as a mod even.</p>\n<p>Anyways I appreciate you even asking And thank you for being one of the many awesome people who makes mod the whole community have access to</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73514,
+   "parent_id": 11645,
+   "author": "PageMan",
+   "author_id": 25753,
+   "author_url": "https://forge.sp-tarkov.com/user/25753/pageman",
+   "created_at": "2023-02-12T04:57:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>So I have run a number of test raids, and it seems that even if I specify a unique name I can\u2019t have more than 1 container that handles the same currency. Is this correct?</p>\n<p>I am just curious If it did something wrong. Is there is a way to have a number of containers that handle the same currency?</p>\n<p>I renamed it to different label like \u201ccase roubles1\u201d and went all the way up to \u201ccase roubles30\u201d since the base name case label seemed to work fine. Maybe it doesn\u2019t like numbers but I will try letters soon.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73515,
+   "parent_id": 11645,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2023-02-12T05:05:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>should be able to have as many containers are you want with roubles.</p>\n<p>case 1</p>\n<p>case 2</p>\n<p>case 3</p>\n<p>roubles</p>\n<p>roubles</p>\n<p>roubles</p>\n<p>should work</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73516,
+   "parent_id": 11593,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2023-02-12T06:08:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I could make it more than one container per trader.. I will look into it.</p>\n<p>I wanted to see how you would use it so i\u2019ll probably go with what you said.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 73517,
+   "parent_id": 11645,
+   "author": "PageMan",
+   "author_id": 25753,
+   "author_url": "https://forge.sp-tarkov.com/user/25753/pageman",
+   "created_at": "2023-02-12T06:34:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>you were right, I didn\u2019t fill in the currency section with roubles for all of them. Completely my fault.</p>\n<p>Thanks for the help awesome mod btw such a great quality of life mod for hoarders like me lol.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 73528,
+   "parent_id": 11651,
+   "author": "Reckless3",
+   "author_id": 22697,
+   "author_url": "https://forge.sp-tarkov.com/user/22697/reckless3",
+   "created_at": "2023-02-12T08:36:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Currently i run the 3.4.1 Version of SPT</p>\n<p>My Mods: <a href=\"https://imgur.com/a/1FZfFMj\" target=\"_blank\" rel=\"noreferrer noopener\">https://imgur.com/a/1FZfFMj<br />\n</a>My Plugins: <a href=\"https://imgur.com/a/cj9Rbz7\" target=\"_blank\" rel=\"noreferrer noopener\">https://imgur.com/a/cj9Rbz7</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73571,
+   "parent_id": 11651,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2023-02-12T17:28:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I think your plugins are fine but i bet its something related to either your loot mods or valen.</p>\n<p>Try moving that mod out of the mods folder temporarily and see if it fixes it.</p>\n<p>Don\u2019t really have any other ideas though</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 11704,
+   "parent_id": null,
+   "author": "Expunge",
+   "author_id": 26867,
+   "author_url": "https://forge.sp-tarkov.com/user/26867/expunge",
+   "created_at": "2023-02-13T02:32:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This is a great mod! Would love to see support for selling items to specific traders so you can level money spent with the traders as you would normally. Also, what\u2019s the preferred method for using this mod in the first place? Carrying containers into raid seems a bit clunky but so does selling the items after the next raid if you keep the containers in your stash. Would it be possible to sell with another trigger?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 73614,
+   "parent_id": 11704,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2023-02-13T04:47:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i am looking at specific traders\u2026 not sure if i should still follow the rules of not selling the items if the trader usually blocks that category. point of this mod was to sell loot quickly. hmm.</p>\n<p>yeah so carrying containers into raid is clunky. expectation is that you are probably using a container size mod and a weight reduction mod together.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 11722,
+   "parent_id": null,
+   "author": "queenlovesjh",
+   "author_id": 15316,
+   "author_url": "https://forge.sp-tarkov.com/user/15316/queenlovesjh",
+   "created_at": "2023-02-13T08:07:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello, I set the RemoveContainerRestriction option to false, but still all containers are unconstrained.</p>\n<p>\u201cInfo2\u201d: \u201cTrue if you don\u2019t want regular container restrictions\u201d,<br />\n\u201cRemoveContainerRestriction\u201d: \u201cfalse\u201d</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73634,
+   "parent_id": 11722,
+   "author": "Gleneth",
+   "author_id": 26904,
+   "author_url": "https://forge.sp-tarkov.com/user/26904/gleneth",
+   "created_at": "2023-02-13T08:23:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi Queen,</p>\n<p>it means set it to true if you do not want container restrictions.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 73679,
+   "parent_id": 11722,
+   "author": "queenlovesjh",
+   "author_id": 15316,
+   "author_url": "https://forge.sp-tarkov.com/user/15316/queenlovesjh",
+   "created_at": "2023-02-13T19:27:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you for answer. But I set it to false because I want container restriction but still all containers are not filtering.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73681,
+   "parent_id": 11722,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2023-02-13T19:45:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>go edit the pautosell.ts and see if changing it to this text fixes it : if (config.RemoveContainerRestriction == true)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73684,
+   "parent_id": 11722,
+   "author": "queenlovesjh",
+   "author_id": 15316,
+   "author_url": "https://forge.sp-tarkov.com/user/15316/queenlovesjh",
+   "created_at": "2023-02-13T19:56:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you.</p>\n<p>I commented out the part (myItem._props.Grids[0]._props.filters = [];) and it worked fine. I\u2019ll try to fix it as you said.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 11795,
+   "parent_id": null,
+   "author": "Greev",
+   "author_id": 20949,
+   "author_url": "https://forge.sp-tarkov.com/user/20949/greev",
+   "created_at": "2023-02-14T01:40:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>First of all, I love you. Second, using trader values rather than flea market values would probably be much more balanced. I can easily make 2m rubles or more per raid with this, and that\u2019s not even grabbing everything.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 73733,
+   "parent_id": 11795,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2023-02-14T03:03:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yeah i definitely felt the same way. I just wanted a quick way to not have to wait for flea, but i\u2019ll make it an option to still use flea.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73736,
+   "parent_id": 11704,
+   "author": "Expunge",
+   "author_id": 26867,
+   "author_url": "https://forge.sp-tarkov.com/user/26867/expunge",
+   "created_at": "2023-02-14T03:25:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>If I was you, I would probably be leaning towards using a \u201cdump\u201d container in the stash that you could trigger by some method other than leaving a raid. Maybe by visiting the trader specifically? Forgive me if I sound like a layman here - I\u2019m an extremely casual programmer, but aren\u2019t item purchase categories included in the trader definition? You could do it with a loop and some if and/or case statements:</p>\n<p>while (!case.empty) { findBuyer(item) { for (traders) { if item.category = traders.categories // configurable trader order here? Say attachments to skier, gun parts to mechanic, etc return trader } else return fencelol } sellItem (item, findBuyer(item)) }</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 11829,
+   "parent_id": null,
+   "author": "BalgaDeez",
+   "author_id": 11169,
+   "author_url": "https://forge.sp-tarkov.com/user/11169/balgadeez",
+   "created_at": "2023-02-14T17:25:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Never knew how attached I was to clicking each item for the most profit to their respected traders!<br />\nNow I can become unattached from the stash and trader menus and attach these BP rounds to a scavs loot filled body.<br />\nThank you so much!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 11884,
+   "parent_id": null,
+   "author": "LazyAmerican",
+   "author_id": 4589,
+   "author_url": "https://forge.sp-tarkov.com/user/4589/lazyamerican",
+   "created_at": "2023-02-15T07:09:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m a total noob\u2026some examples of the structure we\u2019re supposed to use to add tag names would be appreciated. Do I replace case with what type of case it is\u2026or whatever tagged name I gave \u201ccase\u201d?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 73931,
+   "parent_id": 11884,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2023-02-15T15:10:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Whatever tagged name you gave the case.. You thinking too much into it.</p>\n<p>You could name the case \u201cdoritos\u201d in my config and goto in-game and tag it doritos.</p>\n<p>the currency follows the order of the labels in the config.</p>\n<p>1st label, 1st currency in the list.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 12037,
+   "parent_id": null,
+   "author": "master-shiff",
+   "author_id": 3037,
+   "author_url": "https://forge.sp-tarkov.com/user/3037/master-shiff",
+   "created_at": "2023-02-16T17:58:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i think i don\u2019t understand something here,</p>\n<p>is it a special container or it is any container i want as long as i change its tag to what is in the config?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 74178,
+   "parent_id": 12037,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2023-02-16T20:55:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>any container as long as you can change its tag in-game (not using boops mod)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 12069,
+   "parent_id": null,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2023-02-17T01:45:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>As always, please leave bug reports for the latest version 1.1.0.</p>\n<p>or suggestions or whatever.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://media1.giphy.com/media/cnCLz2pfYQ45W/giphy.gif?ct=g\" alt=\"giphy.gif?ct=g\" /></p>\n<p>Note: Yes it will sell the item even though by default the traders ignore certain categories. I said fk all that noise and just let it sell.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 12135,
+   "parent_id": null,
+   "author": "LCP",
+   "author_id": 26921,
+   "author_url": "https://forge.sp-tarkov.com/user/26921/lcp",
+   "created_at": "2023-02-17T18:06:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>not sure how do it do with the traders name, if i have roubles as \u201c$\u201d and i want to sell to prapor do i do it as \u201c$ prapor\u201d or something else?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 74366,
+   "parent_id": 12135,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2023-02-17T18:13:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>eh what</p>\n<p>no, prapor just needs to be in the trader name spot in the same position.</p>\n<p>so if your tag is first, the currency is first, then prapors name should be first in the trader name spot.</p>\n<p>post your config as is so i understand</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 74367,
+   "parent_id": 12135,
+   "author": "LCP",
+   "author_id": 26921,
+   "author_url": "https://forge.sp-tarkov.com/user/26921/lcp",
+   "created_at": "2023-02-17T18:21:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p><img loading=\"lazy\" decoding=\"async\" src=\"https://media.discordapp.net/attachments/368869130838867976/1076206433135239258/image.png?width=1157&amp;height=447\" alt=\"image.png?width=1157&amp;height=447\" />can you give me an example when i name my container? like : [tradername] [cuurrency]<br />\ncus i still didn\u2019t understand</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 74371,
+   "parent_id": 12135,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2023-02-17T18:34:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You have too many trader\u2019s right now. You can only have one trader to one currency and label.</p>\n<p>For example your ! label.. (i assume you tagged your container ! in-game)</p>\n<p>it will sell everything and give you the money in rubles.</p>\n<p>because it is the first label, and the first currency is roubles. The first trader is prapor, so it will use prapor to sell too.</p>\n<p>For your @ label, it is in 2nd position in the labels list so it will use the 2nd currency (in the currency list) and the 2nd position in the trader list. You have peacekeeper, so it will make all sales to peacekeeper for that container.</p>\n<p>Labels is your container name tag in-game.. i would use something like \u2018Sell Prapor\u2019 or something</p>\n<p>for the first one</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 74376,
+   "parent_id": 12135,
+   "author": "LCP",
+   "author_id": 26921,
+   "author_url": "https://forge.sp-tarkov.com/user/26921/lcp",
+   "created_at": "2023-02-17T18:49:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>so for my understanding, if i want prapor accept 3 different currancy i have to do is like:</p>\n<p><strong>\u201cLabels\u201d: [</strong></p>\n<p><strong>\u201c!\u201c,</strong></p>\n<p><strong>\u201c!\u201c,</strong></p>\n<p><strong>\u201c!\u201c</strong></p>\n<p><strong>],</strong></p>\n<p><strong>\u201cCurrency\u201d: [</strong></p>\n<p><strong>\u201croubles\u201d,</strong></p>\n<p><strong>\u201ceuros\u201d,</strong></p>\n<p><strong>\u201cdollars\u201d</strong></p>\n<p><strong>],</strong></p>\n<p><strong>\u201cTrader\u201d: [</strong></p>\n<p><strong>\u201cprapor\u201d,</strong></p>\n<p><strong>\u201cprapor\u201d,</strong></p>\n<p><strong>\u201cprapor\u201d,</strong></p>\n<p><strong>]</strong></p>\n<p>etc, etc</p>\n<p>or\u2026.it just doesn\u2019t work like that</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 74379,
+   "parent_id": 12135,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2023-02-17T19:01:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>doesn\u2019t work like that.. you going to need 3 containers for prapor then.</p>\n<p>each needs a unique label name. the currency and trader section you have is fine though.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 74384,
+   "parent_id": 12069,
+   "author": "Expunge",
+   "author_id": 26867,
+   "author_url": "https://forge.sp-tarkov.com/user/26867/expunge",
+   "created_at": "2023-02-17T19:12:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This is great man. Thanks for working on this.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 74444,
+   "parent_id": 12069,
+   "author": "Expunge",
+   "author_id": 26867,
+   "author_url": "https://forge.sp-tarkov.com/user/26867/expunge",
+   "created_at": "2023-02-18T01:03:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey, I seem to be having an error with my Ragman container that causes the game to lock up. Here\u2019s a screenshot of the server console:</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.postimg.cc/WzjZXwLX/Screenshot-20230217-033119.png\" alt=\"Screenshot-20230217-033119.png\" /></p>\n<p>Looks like everything else seems to be functioning fine.</p>\n<p>Here\u2019s my config file, everything seems to be in order:</p>\n<p>{ \u201cContainers\u201d: { \u201cInfo\u201d: \u201cName these labels to what your tagged containers in-game are. label 1 uses currency 1 below.. etc\u201d, \u201cLabels\u201d: [ \u201cPrapor\u201d, \u201cTherpist\u201d, \u201cFence\u201d, \u201cSkier\u201d, \u201cPeacekeeper\u201d, \u201cMechanic\u201d, \u201cRagman\u201d, \u201cJaegar\u201d, \u201cRUB\u201d, \u201cUSD\u201d ], \u201cInfo1\u201d: \u201cUse only euros, roubles, dollars (exact letters) in the order you want the labeled containers to return money.. eg. dollarStuff container returns items in dollars.\u201d, \u201cCurrency\u201d: [ \u201croubles\u201d, \u201croubles\u201d, \u201croubles\u201d, \u201croubles\u201d, \u201cdollars\u201d, \u201croubles\u201d, \u201croubles\u201d, \u201croubles\u201d, \u201croubles\u201d, \u201cdollars\u201d ], \u201cInfo2\u201d: \u201cOnly enter a trader id if you want to use that trader to sell\u2026 otherwise it will use ragfair.\u201d, \u201cInfo3\u201d: \u201cvalid values are the nicknames all in lowercase- prapor, peacekeeper, lighthousekeeper, mechanic, ragman\u201d, \u201cTrader\u201d: [ \u201cprapor\u201d, \u201ctherapist\u201d, \u201cfence\u201d, \u201cskier\u201d, \u201cpeacekeeper\u201d, \u201cmechanic\u201d, \u201cragman\u201d, \u201cjaegar\u201d, \u201c\u201d, \u201c\u201d ] }, \u201cInfo2\u201d: \u201cTrue if you don\u2019t want regular container restrictions\u201d, \u201cRemoveContainerRestriction\u201d: false, \u201cIgnoreFollowingItemTPLInContainers\u201d: [ \u201c5449016a4bdc2d6f028b456f\u201d, \u201c5696686a4bdc2da3298b456a\u201d, \u201c569668774bdc2da2298b4568\u201d ] }</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 74448,
+   "parent_id": 12069,
+   "author": "Expunge",
+   "author_id": 26867,
+   "author_url": "https://forge.sp-tarkov.com/user/26867/expunge",
+   "created_at": "2023-02-18T01:24:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I tried replacing \u201cragman\u201d in the Trader section with \u201c\u201d and it looks like I\u2019m receiving the same error. I also removed the item and tried another and I get the same error but pointing to that item instead.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 74450,
+   "parent_id": 12069,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2023-02-18T01:41:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hmm.. wierd.</p>\n<p>Try replacing \u201cragman\u201d in the trader section with either</p>\n<p>null - no quotations or</p>\n<p>&lt;blank space&gt; ,</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 74459,
+   "parent_id": 12069,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2023-02-18T03:16:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It doesn\u2019t necessarily find the containers in the order that you labeled</p>\n<p>Thats based on the whims of the system. I haven\u2019t tested with a lot of containers (only 3) so I might need to investigate why you had dollars in skier instead of peacekeeper\u2026 unless you miscounted.</p>\n<p>Give me a log record if you can if that happens again</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 74461,
+   "parent_id": 12069,
+   "author": "Expunge",
+   "author_id": 26867,
+   "author_url": "https://forge.sp-tarkov.com/user/26867/expunge",
+   "created_at": "2023-02-18T03:46:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I made some progress. First thing I found is that you\u2019ll have all kinds of weird behavior if you name the traders wrong in your config (It\u2019s Jaeger, not Jaegar, evidently)</p>\n<p>It is still mixing up the first two traders. The army bandage was in the container marked \u201cTherapist\u201d and the splint was in \u201cPrapor\u201d. Everything else seems to have worked fine.</p>\n<p>Had a look at what actually popped up in the bags and it actually looks correct. Even though the log says it\u2019s finding the Army bandage in Prapor\u2019s container and selling it to him, it appears that it\u2019s actually being sold to Therapist.</p>\n<p>I\u2019ve probably messed something else up, but this seems close enough to me. Only racked up 16 run throughs</p>\n<p>PAutoSell: Trying to Sell Item: Army bandage , ID: 86ae5a09fea3d3df0b002933 PAutoSell: Trader Found for Container: Prapor PAutoSell: Package price for item(s): Army bandage is 2049 PAutoSell: moneyTotal: 2049 PAutoSell: Replacing Currency: roubles , Total: 2049 PAutoSell: Adding Item to Player Inventory: Roubles with money count of 2049 PAutoSell: Adding Item to Player Inventory: Roubles with money count of 2049 and itemid of d289375f7d7a9362c4253a42 PAutoSell: Converting to Trader Currency is RUB PAutoSell: Adding 2049 to Prapor new salesSum (1123514) Profile changes saved PAutoSell: Trying to Sell Item: Immobilizing splint , ID: ae639c72d2497d6d3b64f41d PAutoSell: Trader Found for Container: Therapist PAutoSell: Package price for item(s): Immobilizing splint is 2968 PAutoSell: moneyTotal: 2968 PAutoSell: Replacing Currency: roubles , Total: 2968 PAutoSell: Adding Item to Player Inventory: Roubles with money count of 2968 PAutoSell: Adding Item to Player Inventory: Roubles with money count of 2968 and itemid of 1c71a79ce013d95f5611a62d PAutoSell: Converting to Trader Currency is RUB PAutoSell: Adding 2968 to Therapist new salesSum (2264430) Profile changes saved</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 74467,
+   "parent_id": 12069,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2023-02-18T05:56:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Ok so only the logging is broken</p>\n<p>Well that and trader names that don\u2019t exist.. i guess i need to make it default to ragfair in those cases it don\u2019t match.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 12203,
+   "parent_id": null,
+   "author": "Reckless3",
+   "author_id": 22697,
+   "author_url": "https://forge.sp-tarkov.com/user/22697/reckless3",
+   "created_at": "2023-02-18T16:57:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello i keep getting the problem</p>\n<p>TypeError: Cannot read properties of undefined (reading \u2018toLowerCase\u2019)</p>\n<p>TypeError: Cannot read properties of undefined (reading \u2018toLowerCase\u2019)</p>\n<p>at PAutoSell.exchangeItems (C:\\spt 3.5\\user\\mods\\Props-AutomatedSelling\\src\\PAutoSell.js:166:22)</p>\n<p>at Object.action (C:\\spt 3.5\\user\\mods\\Props-AutomatedSelling\\src\\PAutoSell.js:55:26)</p>\n<p>at StaticRouterMod.handleStatic (C:\\snapshot\\project\\obj\\di\\Router.js)</p>\n<p>at HttpRouter.handleRoute (C:\\snapshot\\project\\obj\\routers\\HttpRouter.js)</p>\n<p>at HttpRouter.getResponse (C:\\snapshot\\project\\obj\\routers\\HttpRouter.js)</p>\n<p>at AkiHttpListener.getResponse (C:\\snapshot\\project\\obj\\servers\\http\\AkiHttpListener.js)</p>\n<p>at IncomingMessage.&lt;anonymous&gt; (C:\\snapshot\\project\\obj\\servers\\http\\AkiHttpListener.js)</p>\n<p>at IncomingMessage.emit (node:events:527:28)</p>\n<p>at endReadableNT (node:internal/streams/readable:1345:12)</p>\n<p>at processTicksAndRejections (node:internal/process/task_queues:83:21)</p>\n<p>TypeError: Cannot read properties of undefined (reading \u2018toLowerCase\u2019)</p>\n<p>TypeError: Cannot read properties of undefined (reading \u2018toLowerCase\u2019)</p>\n<p>at PAutoSell.exchangeItems (C:\\spt 3.5\\user\\mods\\Props-AutomatedSelling\\src\\PAutoSell.js:166:22)</p>\n<p>at Object.action (C:\\spt 3.5\\user\\mods\\Props-AutomatedSelling\\src\\PAutoSell.js:55:26)</p>\n<p>at StaticRouterMod.handleStatic (C:\\snapshot\\project\\obj\\di\\Router.js)</p>\n<p>at HttpRouter.handleRoute (C:\\snapshot\\project\\obj\\routers\\HttpRouter.js)</p>\n<p>at HttpRouter.getResponse (C:\\snapshot\\project\\obj\\routers\\HttpRouter.js)</p>\n<p>at AkiHttpListener.getResponse (C:\\snapshot\\project\\obj\\servers\\http\\AkiHttpListener.js)</p>\n<p>at IncomingMessage.&lt;anonymous&gt; (C:\\snapshot\\project\\obj\\servers\\http\\AkiHttpListener.js)</p>\n<p>at IncomingMessage.emit (node:events:527:28)</p>\n<p>at endReadableNT (node:internal/streams/readable:1345:12)</p>\n<p>at processTicksAndRejections (node:internal/process/task_queues:83:21)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 74506,
+   "parent_id": 12203,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2023-02-18T18:02:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You have an error on this lline currency.toLowerCase();</p>\n<p>Something must be wrong where you set the currency for your container in your config.</p>\n<p>Please show me your config.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 74508,
+   "parent_id": 12203,
+   "author": "Reckless3",
+   "author_id": 22697,
+   "author_url": "https://forge.sp-tarkov.com/user/22697/reckless3",
+   "created_at": "2023-02-18T18:58:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>{</p>\n<p>\u201cContainers\u201d: {</p>\n<p>\u201cInfo\u201d: \u201cName these labels to what your tagged containers in-game are. label 1 uses currency 1 below.. etc\u201d,</p>\n<p>\u201cLabels\u201d: [</p>\n<p>\u201c1\u201d,</p>\n<p>\u201c2\u201d,</p>\n<p>\u201c3\u201d</p>\n<p>],</p>\n<p>\u201cInfo1\u201d: \u201cUse only euros, roubles, dollars (exact letters) in the order you want the labeled containers to return money.. eg. dollarStuff container returns items in dollars.\u201d,</p>\n<p>\u201cCurrency\u201d: [</p>\n<p>\u201croubles\u201d,</p>\n<p>\u201ceuros\u201d,</p>\n<p>\u201cdollars\u201d</p>\n<p>],</p>\n<p>\u201cInfo2\u201d: \u201cOnly enter a trader id if you want to use that trader to sell\u2026 otherwise it will use ragfair.\u201d,</p>\n<p>\u201cInfo3\u201d: \u201cvalid values are the nicknames all in lowercase- prapor, peacekeeper, lighthousekeeper, mechanic, ragman\u201d,</p>\n<p>\u201cTrader\u201d: [</p>\n<p>\u201cmechanic\u201d,</p>\n<p>\u201ctherapist\u201d</p>\n<p>]</p>\n<p>},</p>\n<p>\u201cInfo2\u201d: \u201cTrue if you don\u2019t want regular container restrictions\u201d,</p>\n<p>\u201cRemoveContainerRestriction\u201d: true,</p>\n<p>\u201cIgnoreFollowingItemTPLInContainers\u201d: [</p>\n<p>\u201c5449016a4bdc2d6f028b456f\u201d,</p>\n<p>\u201c5696686a4bdc2da3298b456a\u201d,</p>\n<p>\u201c569668774bdc2da2298b4568\u201d</p>\n<p>]</p>\n<p>}</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 74511,
+   "parent_id": 12203,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2023-02-18T19:33:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Maybe it doesn\u2019t like that you didn\u2019t set a trader for the 3rd value.</p>\n<p>can you put it like this:</p>\n<p>\u201cTrader\u201d: [</p>\n<p>\u201cmechanic\u201d,</p>\n<p>\u201ctherapist\u201d,</p>\n<p>null</p>\n<p>]</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 74516,
+   "parent_id": 12203,
+   "author": "Reckless3",
+   "author_id": 22697,
+   "author_url": "https://forge.sp-tarkov.com/user/22697/reckless3",
+   "created_at": "2023-02-18T19:45:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello i found the Problem its doing it because i use a custom Secure Container\u2026</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 74519,
+   "parent_id": 12203,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2023-02-18T20:02:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>oh .. what you mean custom?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 74538,
+   "parent_id": 12203,
+   "author": "Reckless3",
+   "author_id": 22697,
+   "author_url": "https://forge.sp-tarkov.com/user/22697/reckless3",
+   "created_at": "2023-02-18T22:48:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i think its from a mod its called \u201cAbuela\u00b4s pouch\u201d not sure what mod it is or if its an mod</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 74575,
+   "parent_id": 12069,
+   "author": "Expunge",
+   "author_id": 26867,
+   "author_url": "https://forge.sp-tarkov.com/user/26867/expunge",
+   "created_at": "2023-02-19T06:50:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Okay, I think I found a root cause. Earlier you mentioned replacing a trader name with</p>\n<p>null - no quotations or &lt;blank space&gt; , I thought this meant I would be abe to essentially pick ragfair as the trader. So I had two entries at the end of the list defined like so:</p>\n<p>\u201cLabels:\u201d [ \u201cFleaRUB\u201d, \u201cFleaUSD\u201d ] \u201cCurrency\u201d: [ \u201crubles\u201d, \u201cdollars\u201d ] \u201cTrader\u201d: [ \u201c \u201c, \u201c \u201c ] OR \u201cTrader\u201d: [ null, null ]Either:</p>\n<p>- Sell total wasn\u2019t working, and the last currency on the list was being applied to the current trader. EG: Jaegar, 8th trader on the list was selling items for USD, despite the fact that the 8th position was defined as roubles.</p>\n<p>- Errors out an crashes the game.</p>\n<p>How would you go about setting the default to ragfair in these situations? (Or the flea price?) If there is, I\u2019m missing it.</p>\n<p>I\u2019ve read through this code so many times that I think I might take a crack at reverse engineering it lol</p>\n<p>Thanks again for the support.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 74636,
+   "parent_id": 12069,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2023-02-19T19:48:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Ok let me take a look at it again. Sorry for the inconvenience.</p>\n<p>Its supposed to use the ragfair price method if no trader is detected.</p>\n<p>I\u2019m wondering if it does that but at the end where it totals, i assumed the trader was there and thats why its causing an error.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 12386,
+   "parent_id": null,
+   "author": "4rM4g3dD0n",
+   "author_id": 27372,
+   "author_url": "https://forge.sp-tarkov.com/user/27372/4rm4g3dd0n",
+   "created_at": "2023-02-21T17:43:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you very much for this great mod, this is awesome, and saves a lot of time ! =)</p>\n<p>One thing, looks like there\u2019s something not quite right about ammo prices.</p>\n<p>if you got a pack of 30 shots, of ammunition, and then let it sell it, the price for a 30 ammo stack</p>\n<p>is taken for 1 cartridge. For example, i got a stack of 30 rounds which cost\u00b4s 1338 RUB (for the whole stack),</p>\n<p>the mod gives me 40140 RUB instead of 1338 RUB. Dunno if its supposed to be like that, but i dont think so.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 74838,
+   "parent_id": 12069,
+   "author": "DouglasBubbletrouser",
+   "author_id": 26032,
+   "author_url": "https://forge.sp-tarkov.com/user/26032/douglasbubbletrouser",
+   "created_at": "2023-02-21T21:40:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Looks sweet! Thank you for adding the LL feature</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 74846,
+   "parent_id": 12386,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2023-02-21T22:23:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i\u2019m pretty sure it multiplied the price by 30. Hmm.</p>\n<p>maybe i need to add something in to not multiply price by quantity.</p>\n<p>anything else you can stack that you notice this for?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 75050,
+   "parent_id": 12386,
+   "author": "4rM4g3dD0n",
+   "author_id": 27372,
+   "author_url": "https://forge.sp-tarkov.com/user/27372/4rm4g3dd0n",
+   "created_at": "2023-02-24T16:21:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey, sry for the late response.</p>\n<p>No, only for the ammunition so far.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 75357,
+   "parent_id": 12386,
+   "author": "Expunge",
+   "author_id": 26867,
+   "author_url": "https://forge.sp-tarkov.com/user/26867/expunge",
+   "created_at": "2023-02-28T05:10:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yeah, mechanic seems to think a stack of 9x19 green tracer is worth 6mil lol. Based on the code, looks like he\u2019s finding the price of a stack and selling each individual bullet for the entire stack cost. Really gets out of control when you mod max bullet stack size</p>\n<p>Looks like sellItem. Commented out what appears to be the incorrect line.</p>\n<p>sellItem(item: Item, items: Item[], itemsModList, sessionId: string, actualElement) { //get the price of the item let price = PAutoSell.getPrice(item._tpl, items, item, sessionId, actualElement); //get the stack of the item if it exists otherwise set it to 1 let stack = item.upd ? item.upd.StackObjectsCount ? item.upd.StackObjectsCount : 1 : 1; //remove the item from the pmcInventory PAutoSell.removeItemFromPlayerInventory(items, item, itemsModList); // add price * stack to moneyTotal // moneyTotal += price * stack; moneyTotal += price; Logger.info(<code>PAutoSell: moneyTotal: ${moneyTotal}</code>); }</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 75384,
+   "parent_id": 12386,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2023-02-28T15:09:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Already fixed in the next version, but the next version is for 3.5.1.</p>\n<p>You guys can copy what expunge did and comment out that MoneyTotal line with stack in it.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 75638,
+   "parent_id": 12386,
+   "author": "4rM4g3dD0n",
+   "author_id": 27372,
+   "author_url": "https://forge.sp-tarkov.com/user/27372/4rm4g3dd0n",
+   "created_at": "2023-03-04T06:24:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you guys !</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 13387,
+   "parent_id": null,
+   "author": "Mailman",
+   "author_id": 25351,
+   "author_url": "https://forge.sp-tarkov.com/user/25351/mailman",
+   "created_at": "2023-03-12T11:28:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Can you only use the vanilla tarkov containers? I have a mod that has a really large container and tried it but didnt work.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 76492,
+   "parent_id": 13387,
+   "author": "Mailman",
+   "author_id": 25351,
+   "author_url": "https://forge.sp-tarkov.com/user/25351/mailman",
+   "created_at": "2023-03-12T11:40:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Nevermind im stupid. labeled the case as roubles not case roubles. gotta learn to read still. Once i saw that number tho, damn! great mod and keeps me going into raids more not having to wait for the flea market stuff to sell</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 14071,
+   "parent_id": null,
+   "author": "Breadnaught",
+   "author_id": 29062,
+   "author_url": "https://forge.sp-tarkov.com/user/29062/breadnaught",
+   "created_at": "2023-03-28T07:49:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello, how do I rerestrict all my containers? I didn\u2019t realize the config setting would open up all of them. I set it to false, but they are still all unrestricted</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 77618,
+   "parent_id": 14071,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2023-03-28T15:06:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>it should be restricted again if you set to false.</p>\n<p>just take the items out?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 77629,
+   "parent_id": 14071,
+   "author": "Breadnaught",
+   "author_id": 29062,
+   "author_url": "https://forge.sp-tarkov.com/user/29062/breadnaught",
+   "created_at": "2023-03-28T18:17:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Nah I didn\u2019t put any items in yet lol everything is now unrestricted</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 77630,
+   "parent_id": 14071,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2023-03-28T18:29:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>show me how you wrote false in config</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://cdn.discordapp.com/attachments/290974517524824064/1090341759797694565/image.png\" alt=\"image.png\" /></p>\n<p>seems to work fine when i tested it. make sure you remember the comma at the end.</p>\n<p>It looks like i wrote the opposite of the setting lol. it should do what you want with false though.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 77634,
+   "parent_id": 14071,
+   "author": "Breadnaught",
+   "author_id": 29062,
+   "author_url": "https://forge.sp-tarkov.com/user/29062/breadnaught",
+   "created_at": "2023-03-28T18:53:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Not sure how you got the embedded image in here but here\u2019s how mine looks</p>\n<p>\u201cInfo2\u201d: \u201cTrue if you don\u2019t want regular container restrictions\u201d,</p>\n<p>\u201cRemoveContainerRestriction\u201d: false,</p>\n<p>\u201cIgnoreFollowingItemTPLInContainers\u201d: [</p>\n<p>\u201c5449016a4bdc2d6f028b456f\u201d,</p>\n<p>\u201c5696686a4bdc2da3298b456a\u201d,</p>\n<p>\u201c569668774bdc2da2298b4568\u201d</p>\n<p>]</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 77635,
+   "parent_id": 14071,
+   "author": "Breadnaught",
+   "author_id": 29062,
+   "author_url": "https://forge.sp-tarkov.com/user/29062/breadnaught",
+   "created_at": "2023-03-28T19:02:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I think I found a workaround. I\u2019ve deleted the auto selling mod and containers are back to normal. I\u2019ll just run the reinstall with the false already in place.</p>\n<p>EDIT: worked. I\u2019ll just use SVM to unrestrict the docs case for selling. Thanks!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 14131,
+   "parent_id": null,
+   "author": "Breadnaught",
+   "author_id": 29062,
+   "author_url": "https://forge.sp-tarkov.com/user/29062/breadnaught",
+   "created_at": "2023-03-29T22:08:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Apologies for spamming up your page, but I\u2019d like you to take a look at this new mod and see if we can incorporate it into yours <a href=\"https://hub.sp-tarkov.com/files/file/1104-the-broker/#overview\" target=\"_blank\" rel=\"noreferrer noopener\">The Broker - New Trader</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 77716,
+   "parent_id": 14131,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2023-03-30T02:45:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Next version i can add support for your broker as an option if thats what you are asking so he can be picked to be automatically sold to.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 14342,
+   "parent_id": null,
+   "author": "RiZZa4uSkO",
+   "author_id": 21203,
+   "author_url": "https://forge.sp-tarkov.com/user/21203/rizza4usko",
+   "created_at": "2023-04-04T15:05:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi, i have idea ) Can you make a version of your mod with instant selling ? I mean dont need to wait raid end, just drop something in container and it selling instantly ) Its not realistic, but funn ) Or, developing this idea, you can add in game some containers with instant selling, 1x1, 1x2, 1x3\u2026 size, every next cost more money and maby need some trader level.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 78452,
+   "parent_id": 14342,
+   "author": "S_gamez",
+   "author_id": 22060,
+   "author_url": "https://forge.sp-tarkov.com/user/22060/s-gamez",
+   "created_at": "2023-04-11T22:01:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This would be so Awesome to have along with Immersive raids since that mod makes raid INF length and be able to sell in raid would made it just Awesome QOL.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 16372,
+   "parent_id": null,
+   "author": "SaltyFries",
+   "author_id": 25035,
+   "author_url": "https://forge.sp-tarkov.com/user/25035/saltyfries",
+   "created_at": "2023-06-03T21:49:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>If i put a rig in the container and the rig has items in it will i also get the money of those items</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 81134,
+   "parent_id": 16372,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2023-06-03T21:56:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yes</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 16546,
+   "parent_id": null,
+   "author": "S_gamez",
+   "author_id": 22060,
+   "author_url": "https://forge.sp-tarkov.com/user/22060/s-gamez",
+   "created_at": "2023-06-09T13:16:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Compatibility with Broker? To make it Better for Ease of use.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 81355,
+   "parent_id": 16546,
+   "author": "S_gamez",
+   "author_id": 22060,
+   "author_url": "https://forge.sp-tarkov.com/user/22060/s-gamez",
+   "created_at": "2023-06-09T13:28:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Other question: how to tag inventory depending on the setups like if u want a trader Would it be \u201cprapor\u201d &amp; \u201ccase roubles\u201d or only one of them? Would order of them also have some to say on it</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 81360,
+   "parent_id": 16546,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2023-06-09T16:30:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>No compatibility yet with broker.</p>\n<p>Order matters and you would need both the trader name and the label name of the case.</p>\n<p>if you put prapor first and then the case label 2nd in the list .. how would i know you wanted to use that case?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 81384,
+   "parent_id": 16546,
+   "author": "S_gamez",
+   "author_id": 22060,
+   "author_url": "https://forge.sp-tarkov.com/user/22060/s-gamez",
+   "created_at": "2023-06-10T02:40:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>So it then would be tagged \u201ccase roubles prapor\u201d?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 81386,
+   "parent_id": 16546,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2023-06-10T03:18:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>no, you tag the case whatever name you want.</p>\n<p>Just make sure the config file with the names of the container has your tag in it.</p>\n<p>Its position in that list should match with the list of traders in the config positioning.</p>\n<p>Look in this example below. the label is case roubles (1st position in its list) so thats what you tag in game on y our container. The currency in the 1st position is roubles so your money will be given in roubles. The trader in the first position is prapor so the case roubles will sell to prapor.</p>\n<p>Ignore BrokerTraderSupport since i didn\u2019t get it to work yet.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/tgcRxqK.png\" alt=\"tgcRxqK.png\" /></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 19471,
+   "parent_id": null,
+   "author": "Murders_Inc828",
+   "author_id": 34141,
+   "author_url": "https://forge.sp-tarkov.com/user/34141/murders-inc828",
+   "created_at": "2023-08-19T04:00:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Does this work with SPT.3.6.1?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 85704,
+   "parent_id": 19471,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2023-08-19T06:49:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It probably still does. I will update it officially sometime..</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 19750,
+   "parent_id": null,
+   "author": "Gr_Falcon",
+   "author_id": 35832,
+   "author_url": "https://forge.sp-tarkov.com/user/35832/gr-falcon",
+   "created_at": "2023-08-24T18:17:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I need Help.I want to make a Item Case my Autoseller.What can i do?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 86165,
+   "parent_id": 19750,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2023-08-24T18:32:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>add a label to your item case then add that label to the automated selling config.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 86174,
+   "parent_id": 19750,
+   "author": "Gr_Falcon",
+   "author_id": 35832,
+   "author_url": "https://forge.sp-tarkov.com/user/35832/gr-falcon",
+   "created_at": "2023-08-24T19:35:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>{</p>\n<p>\u201cPriceMultiplier\u201d: 1.0,</p>\n<p>\u201cContainers\u201d: {</p>\n<p>\u201cInfo\u201d: \u201cName these labels to what your tagged containers in-game are. label 1 uses currency 1 below.. etc\u201d,</p>\n<p>\u201cLabels\u201d: [</p>\n<p>\u201cAutoSeller\u201d</p>\n<p>],</p>\n<p>\u201cInfo1\u201d: \u201cUse only euros, roubles, dollars (exact letters) in the order you want the labeled containers to return money.. eg. dollarStuff container returns items in dollars.\u201d,</p>\n<p>\u201cCurrency\u201d: [</p>\n<p>\u201croubles\u201d</p>\n<p>],</p>\n<p>\u201cInfo2\u201d: \u201cOnly enter a trader id if you want to use that trader to sell\u2026 otherwise it will use ragfair.\u201d,</p>\n<p>\u201cInfo3\u201d: \u201cvalid values are the nicknames all in lowercase- prapor, peacekeeper, lighthousekeeper, mechanic, ragman\u201d,</p>\n<p>\u201cTrader\u201d: [</p>\n<p>\u201cprapor\u201d,</p>\n<p>\u201ctherapist\u201d,</p>\n<p>\u201cpeacekeeper\u201d</p>\n<p>]</p>\n<p>},</p>\n<p>\u201cInfo2\u201d: \u201cTrue if you don\u2019t want regular container restrictions\u201d,</p>\n<p>\u201cRemoveContainerRestriction\u201d: true,</p>\n<p>\u201cIgnoreFollowingItemTPLInContainers\u201d: [</p>\n<p>\u201c5449016a4bdc2d6f028b456f\u201d,</p>\n<p>\u201c5696686a4bdc2da3298b456a\u201d,</p>\n<p>\u201c569668774bdc2da2298b4568\u201d</p>\n<p>]</p>\n<p>}</p>\n<p>I Tagged the item case AutoSeller and changed that config .Is that right?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 86175,
+   "parent_id": 19750,
+   "author": "Gr_Falcon",
+   "author_id": 35832,
+   "author_url": "https://forge.sp-tarkov.com/user/35832/gr-falcon",
+   "created_at": "2023-08-24T19:36:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Also check the corrency .I am a noob .I dont really know what im doing</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 86219,
+   "parent_id": 19750,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2023-08-25T05:49:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>so you can only have it sell to one trader per container. so it will only sell to prapor.</p>\n<p>you will need to add another label (and another label in-game) and another line for currency and that would sell to therapist.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 21247,
+   "parent_id": null,
+   "author": "Helldiver",
+   "author_id": 28987,
+   "author_url": "https://forge.sp-tarkov.com/user/28987/helldiver",
+   "created_at": "2023-10-01T21:40:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>If you ever update this can you make it compatible with <a href=\"https://hub.sp-tarkov.com/files/file/1152-inventory-organizing-features/\" target=\"_blank\" rel=\"noreferrer noopener\">Inventory Organizing Features</a></p>\n<p>Doesn\u2019t appear to work with this.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 21686,
+   "parent_id": null,
+   "author": "playwars",
+   "author_id": 38439,
+   "author_url": "https://forge.sp-tarkov.com/user/38439/playwars",
+   "created_at": "2023-10-11T08:19:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Anyone knows if this still works in 3.7 ?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 22247,
+   "parent_id": null,
+   "author": "playwars",
+   "author_id": 38439,
+   "author_url": "https://forge.sp-tarkov.com/user/38439/playwars",
+   "created_at": "2023-10-16T13:01:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Tested it, the mod does not work and crashes your game at raid end. None of the items are sold either upon restart. Tested on 3.7.0, but I doubt it will work any better on 3.7.1.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 22273,
+   "parent_id": null,
+   "author": "playwars",
+   "author_id": 38439,
+   "author_url": "https://forge.sp-tarkov.com/user/38439/playwars",
+   "created_at": "2023-10-16T17:58:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Alright, managed to fix the mod, for anyone interested :</p>\n<p>Go into the mod\u2019s folder, then src. Open PAutoSell with notepad or your editor of choice. Go to line 271 and delete traderHelper.lvlUp(mytrader._id, sessionId); it should fix the crash issue and everything seems to work fine afterwards. I recommend doing so before installing the mod, as once the game is launched a javascript file is created and I assume the same operation would have to be done to it as well.</p>\n<p>Most likely deleting this line does something detrimental to the system (my guess being deleting it would prevent traders from leveling up if you had crossed a threshold thanks to selling enough gear to someone), but the primary function of the mod, the autosell, appears to function absolutely fine otherwise. Also the mod seems to attribute all sales to prapor, even if it uses the flea prices, so you\u2019ll probably never need to buy or sell stuff to him again to level him up.</p>\n<p>Enjoy !</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 90171,
+   "parent_id": 22273,
+   "author": "S_gamez",
+   "author_id": 22060,
+   "author_url": "https://forge.sp-tarkov.com/user/22060/s-gamez",
+   "created_at": "2023-10-19T01:18:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Was coming to ask if there will be published an update? still this fix can be an option.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 23760,
+   "parent_id": null,
+   "author": "Valens",
+   "author_id": 6563,
+   "author_url": "https://forge.sp-tarkov.com/user/6563/valens",
+   "created_at": "2023-11-07T16:06:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>On line 271 of PAutoSell.TS in Props-AutomatedSelling/src change the following.</p>\n<p>traderHelper.lvlUp(mytrader._id, sessionId);</p>\n<p>to</p>\n<p>traderHelper.lvlUp(mytrader._id, pmcData);</p>\n<p>to fix for 3.7.1 until Props can get the PR I\u2019ve committed merged and a new version released.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 4
+  },
+  {
+   "id": 25382,
+   "parent_id": null,
+   "author": "kami0099",
+   "author_id": 35072,
+   "author_url": "https://forge.sp-tarkov.com/user/35072/kami0099",
+   "created_at": "2023-12-18T13:20:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Just installed the yesterday update, the items does get selled \u201ci hope so?\u201d but idk where does the money goes, it doesnt appears in my stash anywhere, the is no error on console logs, where did I do wrong?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 94576,
+   "parent_id": 25382,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2023-12-18T14:52:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>it goes into the container you tagged and sold from</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 94603,
+   "parent_id": 25382,
+   "author": "kami0099",
+   "author_id": 35072,
+   "author_url": "https://forge.sp-tarkov.com/user/35072/kami0099",
+   "created_at": "2023-12-19T07:32:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>it doesnt thou? The container after I return to raid is allways empty.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 94604,
+   "parent_id": 25382,
+   "author": "kami0099",
+   "author_id": 35072,
+   "author_url": "https://forge.sp-tarkov.com/user/35072/kami0099",
+   "created_at": "2023-12-19T07:34:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Maybe conflicting with softcore from svm mod? I will try it out\u2026</p>\n<p>Edit: Nope, it still doesnt work, it doesnt sells the money (if i put it in manually) but the money of the sells isnt inside the case after the raid</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 25410,
+   "parent_id": null,
+   "author": "codeyanko",
+   "author_id": 35018,
+   "author_url": "https://forge.sp-tarkov.com/user/35018/codeyanko",
+   "created_at": "2023-12-19T09:40:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Allot of times I get black screen after raid end with the following errors. I think it might be trying to sell to one of the extra traders I have. And then it gets confused for some reason. I will try to make it sell items only to the broker trader. Not sure how exactly to do it but will try</p>\n<p>edit 1</p>\n<p>ok I figured it out. It freezes only when there is ammo packs in the container. And I suspect it didn\u2019t like the ammo in mags too.</p>\n<p>edit 2</p>\n<p>ehh it doesnt add money though. It says it does in the console, but the money are not there on raid end\u2026</p>\n<p>TypeError: Cannot read properties of undefined (reading \u2018nickname\u2019)</p>\n<p>TypeError: Cannot read properties of undefined (reading \u2018nickname\u2019)</p>\n<p>at Function.FindAvailableTrader (C:\\Users\\PC_Big\\Desktop\\SPT\\user\\mods\\props-propsautomatedselling-1.4.0\\src\\PAutoSell.ts:258:70)</p>\n<p>at PAutoSell.exchangeItems (C:\\Users\\PC_Big\\Desktop\\SPT\\user\\mods\\props-propsautomatedselling-1.4.0\\src\\PAutoSell.ts:193:27)</p>\n<p>at Object.action (C:\\Users\\PC_Big\\Desktop\\SPT\\user\\mods\\props-propsautomatedselling-1.4.0\\src\\PAutoSell.ts:102:10)</p>\n<p>at StaticRouterMod.handleStatic (C:\\snapshot\\project\\src\\di\\Router.ts:50:63)</p>\n<p>at HttpRouter.handleRoute (C:\\snapshot\\project\\src\\routers\\HttpRouter.ts:79:62)</p>\n<p>at HttpRouter.getResponse (C:\\snapshot\\project\\src\\routers\\HttpRouter.ts:44:30)</p>\n<p>at AkiHttpListener.getResponse (C:\\snapshot\\project\\src\\servers\\http\\AkiHttpListener.ts:150:38)</p>\n<p>at IncomingMessage.&lt;anonymous&gt; (C:\\snapshot\\project\\src\\servers\\http\\AkiHttpListener.ts:75:43)</p>\n<p>at IncomingMessage.emit (node:events:513:28)</p>\n<p>at endReadableNT (node:internal/streams/readable:1359:12)</p>\n<p>TypeError: Cannot read properties of undefined (reading \u2018nickname\u2019)</p>\n<p>TypeError: Cannot read properties of undefined (reading \u2018nickname\u2019)</p>\n<p>at Function.FindAvailableTrader (C:\\Users\\PC_Big\\Desktop\\SPT\\user\\mods\\props-propsautomatedselling-1.4.0\\src\\PAutoSell.ts:258:70)</p>\n<p>at PAutoSell.exchangeItems (C:\\Users\\PC_Big\\Desktop\\SPT\\user\\mods\\props-propsautomatedselling-1.4.0\\src\\PAutoSell.ts:193:27)</p>\n<p>at Object.action (C:\\Users\\PC_Big\\Desktop\\SPT\\user\\mods\\props-propsautomatedselling-1.4.0\\src\\PAutoSell.ts:102:10)</p>\n<p>at StaticRouterMod.handleStatic (C:\\snapshot\\project\\src\\di\\Router.ts:50:63)</p>\n<p>at HttpRouter.handleRoute (C:\\snapshot\\project\\src\\routers\\HttpRouter.ts:79:62)</p>\n<p>at HttpRouter.getResponse (C:\\snapshot\\project\\src\\routers\\HttpRouter.ts:44:30)</p>\n<p>at AkiHttpListener.getResponse (C:\\snapshot\\project\\src\\servers\\http\\AkiHttpListener.ts:150:38)</p>\n<p>at IncomingMessage.&lt;anonymous&gt; (C:\\snapshot\\project\\src\\servers\\http\\AkiHttpListener.ts:75:43)</p>\n<p>at IncomingMessage.emit (node:events:513:28)</p>\n<p>at endReadableNT (node:internal/streams/readable:1359:12)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 94618,
+   "parent_id": 25382,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2023-12-19T14:52:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Do you have any other mods that run at raid end or like something that saves your inventory from losing gear?</p>\n<p>you may need to load this before the other mod in load order.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 94619,
+   "parent_id": 25410,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2023-12-19T14:53:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You can\u2019t make it sell to broker trader, it will only sell to the default traders.</p>\n<p>It won\u2019t add money if there is an error like this.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 94624,
+   "parent_id": 25382,
+   "author": "kami0099",
+   "author_id": 35072,
+   "author_url": "https://forge.sp-tarkov.com/user/35072/kami0099",
+   "created_at": "2023-12-19T16:37:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It doesnt works too, loaded in the load order first.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 94658,
+   "parent_id": 25410,
+   "author": "codeyanko",
+   "author_id": 35018,
+   "author_url": "https://forge.sp-tarkov.com/user/35018/codeyanko",
+   "created_at": "2023-12-20T01:20:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>After I removed the ammo, there were no errors. In the console it said it was putting money in the container or smth like that. But when I checked the container was empty. I saw someone bellow having the same issue too.</p>\n<p>There are probably 2 bugs here. One with ammo boxes (or also ammo in mags). And the other one is money not being spawned in the container.</p>\n<p>Will check more when I have time.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 94717,
+   "parent_id": 25382,
+   "author": "Vanderwhales",
+   "author_id": 40084,
+   "author_url": "https://forge.sp-tarkov.com/user/40084/vanderwhales",
+   "created_at": "2023-12-21T14:00:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I can confirm after testing with realism mod, that money does not appear anywhere in the stash. I did not have this problem in 3.6.1. Thank you.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 94723,
+   "parent_id": 25382,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2023-12-21T14:51:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>its supposed to be in the container you had tagged in the automatic selling config.</p>\n<p>please show me your log error and your mod list.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 94767,
+   "parent_id": 25382,
+   "author": "kami0099",
+   "author_id": 35072,
+   "author_url": "https://forge.sp-tarkov.com/user/35072/kami0099",
+   "created_at": "2023-12-22T14:25:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>In my case, no realism mod, i had no error, but the money just doesnt appers</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 25866,
+   "parent_id": null,
+   "author": "S_gamez",
+   "author_id": 22060,
+   "author_url": "https://forge.sp-tarkov.com/user/22060/s-gamez",
+   "created_at": "2024-01-02T03:07:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Had This crash. but could be related to me having 0 Value money stacks that spawned after every raid. Then i put items in and the error happened. and yea i do have the broker still not trying to sell to him on purpose.</p>\n<p><a href=\"https://cdn.discordapp.com/attachments/697564089907675217/1191575206318325910/image.png\" target=\"_blank\" rel=\"noreferrer noopener\">https://cdn.discordapp.com/attachments/697564089907675217/1191575206318325910/image.png</a></p>\n<p>Also look like the same error person below got. Tho this is my first of ~50 raids with no issue having the broker trader. Have only modified the config so if the config allowed specifying trader there then yea that could be why but if u made that not a thing i haven\u2019t done any code modifying compared to the other person reporting.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 95202,
+   "parent_id": 25410,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2024-01-02T18:08:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Was this custom or modded ammo by chance?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 95494,
+   "parent_id": 25410,
+   "author": "codeyanko",
+   "author_id": 35018,
+   "author_url": "https://forge.sp-tarkov.com/user/35018/codeyanko",
+   "created_at": "2024-01-07T11:27:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Most probably un-moded ammo. The only modded one I have is the one for the shoot locked doors. Sry that I cant give more info on this. The game kept crashing on raid ends so I uninstalled the mod.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 26090,
+   "parent_id": null,
+   "author": "Caffeinated",
+   "author_id": 43446,
+   "author_url": "https://forge.sp-tarkov.com/user/43446/caffeinated",
+   "created_at": "2024-01-08T19:55:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p><em><strong>Thank you for your work and the mod.</strong></em></p>\n<p>I am having an issue where the items are sold from the container; however, the money is not present in the container after the selling of the items like I\u2019m used to.</p>\n<p>In the spoiler you\u2019ll find all the things I thought relevant to find a solution to this problem.<br />\nIf any other information is needed please let me know, thanks in advance.</p>\n<p><a href=\"https://ibb.co/3BHsDrV\" target=\"_blank\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/GcjJKxG/Screenshot-2024-01-08-144114.png\" alt=\"Screenshot-2024-01-08-144114.png\" /></a></p>\n<p><a href=\"https://imgbb.com/\" target=\"_blank\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/rv7x97f/Screenshot-2024-01-08-144136.png\" alt=\"Screenshot-2024-01-08-144136.png\" /></a></p>\n<p><a href=\"https://ibb.co/vP4xx6j\" target=\"_blank\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/bB5ggMK/Screenshot-2024-01-08-145153.png\" alt=\"Screenshot-2024-01-08-145153.png\" /></a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 95670,
+   "parent_id": 26090,
+   "author": "Caffeinated",
+   "author_id": 43446,
+   "author_url": "https://forge.sp-tarkov.com/user/43446/caffeinated",
+   "created_at": "2024-01-10T05:52:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019ve got a friend of mine who is experiencing the same thing. I can get his logs, mods, etc if that would be of any use as well.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 26198,
+   "parent_id": null,
+   "author": "Battomori",
+   "author_id": 43579,
+   "author_url": "https://forge.sp-tarkov.com/user/43579/battomori",
+   "created_at": "2024-01-11T00:45:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p><em>Thank you this wonderful mod.</em></p>\n<p>However, with the recent update the items you put in the named container with the specified currency does not work properly currently. I have Rub. selected as my currency in the file as well as the name of my container. The first thing I noticed was when items sold after a raid it gave me USD instead of Rub. About 2 raids later it stopped working entirely. Items would disappear in named container, but no currency would be present. I tracked my currency after another raid or 2 of gathering items and dumping them into the container. But again the items disappear without being replaced with the desired currency.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 26611,
+   "parent_id": null,
+   "author": "North",
+   "author_id": 44131,
+   "author_url": "https://forge.sp-tarkov.com/user/44131/north",
+   "created_at": "2024-01-22T03:46:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>mods i am using <a href=\"https://ibb.co/WFrmmTn\" target=\"_blank\" rel=\"noreferrer noopener\">https://ibb.co/WFrmmTn</a></p>\n<p>mod list order <a href=\"https://ibb.co/89t1kzr\" target=\"_blank\" rel=\"noreferrer noopener\">https://ibb.co/89t1kzr</a></p>\n<p>cases i am using <a href=\"https://ibb.co/xgZ60mj\" target=\"_blank\" rel=\"noreferrer noopener\">https://ibb.co/xgZ60mj</a></p>\n<p>what i just noticed is that if i sell something to a trader it wont give me the money</p>\n<p>Trying to find out what mod is doing that</p>\n<p>UPDATE: Made a new profile same mods now when i sell i get money but if i do the auto sell case it sells but it does not give the money</p>\n<p>so this is what went down but no money in T H I C C item case</p>\n<p>PAutoSell: Finding Trader for Item: TT 7.62x25 tt-105 8-round magazine</p>\n<p>PAutoSell: Checking item against Trader: Mechanic</p>\n<p>PAutoSell: Trader Mechanic Found for Item: TT 7.62x25 tt-105 8-round magazine</p>\n<p>PAutoSell: Checking item against Trader: Ragman</p>\n<p>PAutoSell: Checking item against Trader: Jaeger</p>\n<p>PAutoSell: Checking item against Trader: Prapor</p>\n<p>PAutoSell: Trader Prapor Found for Item: TT 7.62x25 tt-105 8-round magazine</p>\n<p>PAutoSell: Checking item against Trader: Therapist</p>\n<p>PAutoSell: Checking item against Trader: caretaker</p>\n<p>PAutoSell: Checking item against Trader: Peacekeeper</p>\n<p>PAutoSell: Trader Peacekeeper Found for Item: TT 7.62x25 tt-105 8-round magazine</p>\n<p>PAutoSell: Checking item against Trader: Skier</p>\n<p>PAutoSell: Trader Skier Found for Item: TT 7.62x25 tt-105 8-round magazine</p>\n<p>PAutoSell: Final Trader Found for Item: Mechanic</p>\n<p>PAutoSell: Trader Price for child item(s): TT 7.62x25 tt-105 8-round magazine is 1388</p>\n<p>PAutoSell: Finding Trader for Item: TT 7.62x25 tt-105 8-round magazine</p>\n<p>PAutoSell: Checking item against Trader: Mechanic</p>\n<p>PAutoSell: Trader Mechanic Found for Item: TT 7.62x25 tt-105 8-round magazine</p>\n<p>PAutoSell: Checking item against Trader: Ragman</p>\n<p>PAutoSell: Checking item against Trader: Jaeger</p>\n<p>PAutoSell: Checking item against Trader: Prapor</p>\n<p>PAutoSell: Trader Prapor Found for Item: TT 7.62x25 tt-105 8-round magazine</p>\n<p>PAutoSell: Checking item against Trader: Therapist</p>\n<p>PAutoSell: Checking item against Trader: caretaker</p>\n<p>PAutoSell: Checking item against Trader: Peacekeeper</p>\n<p>PAutoSell: Trader Peacekeeper Found for Item: TT 7.62x25 tt-105 8-round magazine</p>\n<p>PAutoSell: Checking item against Trader: Skier</p>\n<p>PAutoSell: Trader Skier Found for Item: TT 7.62x25 tt-105 8-round magazine</p>\n<p>PAutoSell: Final Trader Found for Item: Peacekeeper</p>\n<p>PAutoSell: Trader Price for child item(s): TT 7.62x25 tt-105 8-round magazine is 1388</p>\n<p>PAutoSell: Finding Trader for Item: TT 7.62x25 tt-105 8-round magazine</p>\n<p>PAutoSell: Checking item against Trader: Mechanic</p>\n<p>PAutoSell: Trader Mechanic Found for Item: TT 7.62x25 tt-105 8-round magazine</p>\n<p>PAutoSell: Checking item against Trader: Ragman</p>\n<p>PAutoSell: Checking item against Trader: Jaeger</p>\n<p>PAutoSell: Checking item against Trader: Prapor</p>\n<p>PAutoSell: Trader Prapor Found for Item: TT 7.62x25 tt-105 8-round magazine</p>\n<p>PAutoSell: Checking item against Trader: Therapist</p>\n<p>PAutoSell: Checking item against Trader: caretaker</p>\n<p>PAutoSell: Checking item against Trader: Peacekeeper</p>\n<p>PAutoSell: Trader Peacekeeper Found for Item: TT 7.62x25 tt-105 8-round magazine</p>\n<p>PAutoSell: Checking item against Trader: Skier</p>\n<p>PAutoSell: Trader Skier Found for Item: TT 7.62x25 tt-105 8-round magazine</p>\n<p>PAutoSell: Final Trader Found for Item: Skier</p>\n<p>PAutoSell: Trader Price for child item(s): TT 7.62x25 tt-105 8-round magazine is 1388</p>\n<p>PAutoSell: Finding Trader for Item: Can of beef stew (Large)</p>\n<p>PAutoSell: Checking item against Trader: Mechanic</p>\n<p>PAutoSell: Checking item against Trader: Ragman</p>\n<p>PAutoSell: Checking item against Trader: Jaeger</p>\n<p>PAutoSell: Trader Jaeger Found for Item: Can of beef stew (Large)</p>\n<p>PAutoSell: Checking item against Trader: Prapor</p>\n<p>PAutoSell: Checking item against Trader: Therapist</p>\n<p>PAutoSell: Trader Therapist Found for Item: Can of beef stew (Large)</p>\n<p>PAutoSell: Checking item against Trader: caretaker</p>\n<p>PAutoSell: Checking item against Trader: Peacekeeper</p>\n<p>PAutoSell: Checking item against Trader: Skier</p>\n<p>PAutoSell: Final Trader Found for Item: Therapist</p>\n<p>PAutoSell: Using Ragfair Price for child item since NaN: Can of beef stew (Large) is 33953</p>\n<p>PAutoSell: Trader Mechanic has 1388 to process</p>\n<p>PAutoSell: Trader Ragman has 0 to process</p>\n<p>PAutoSell: Trader Jaeger has 0 to process</p>\n<p>PAutoSell: Trader Prapor has 0 to process</p>\n<p>PAutoSell: Trader Therapist has 33953 to process</p>\n<p>PAutoSell: Trader caretaker has 0 to process</p>\n<p>PAutoSell: Trader Peacekeeper has 1388 to process</p>\n<p>PAutoSell: Trader Skier has 1388 to process</p>\n<p>PAutoSell: Adding Item to Player Inventory: Roubles with money count of 38117</p>\n<p>PAutoSell: Adding Item to Player Inventory: Roubles with money count of 38117 and itemid of 25c10e4977d2c59d44d94fe6</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 96303,
+   "parent_id": 26611,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2024-01-23T01:00:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i don\u2019t think that itemid 25c10e4977d2c59d44d94fe6s is valid which is why no money is displaying. It should be the item of roubles. hmm</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 96307,
+   "parent_id": 26611,
+   "author": "North",
+   "author_id": 44131,
+   "author_url": "https://forge.sp-tarkov.com/user/44131/north",
+   "created_at": "2024-01-23T06:15:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>yeah I don\u2019t know why it does that every time I try it it says a different itemid</p>\n<p>If you need more info from me let me know how to get it for you and I will</p>\n<p>Or if you want me to try something</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 26965,
+   "parent_id": null,
+   "author": "S_gamez",
+   "author_id": 22060,
+   "author_url": "https://forge.sp-tarkov.com/user/22060/s-gamez",
+   "created_at": "2024-02-04T06:18:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>PAutoSell: Finding Trader for Item: WARTECH TV-109 + TV-106 chest rig</p>\n<p>PAutoSell: Checking item against Trader: Mechanic</p>\n<p>PAutoSell: Checking item against Trader: Ragman</p>\n<p>PAutoSell: Trader Ragman Found for Item: WARTECH TV-109 + TV-106 chest rig</p>\n<p>PAutoSell: Checking item against Trader: Jaeger</p>\n<p>PAutoSell: Trader Jaeger Found for Item: WARTECH TV-109 + TV-106 chest rig</p>\n<p>PAutoSell: Checking item against Trader: Prapor</p>\n<p>PAutoSell: Checking item against Trader: Therapist</p>\n<p>PAutoSell: Checking item against Trader: caretaker</p>\n<p>PAutoSell: Checking item against Trader: Peacekeeper</p>\n<p>PAutoSell: Checking item against Trader: Skier</p>\n<p>PAutoSell: Trader Skier Found for Item: WARTECH TV-109 + TV-106 chest rig</p>\n<p>PAutoSell: Final Trader Found for Item: Jaeger</p>\n<p>PAutoSell: Trader Price for child item(s): 7.62x39mm PS gzh - (4) is 142</p>\n<p>PAutoSell: Trader Price for child item(s): SKS 7.62x39 ProMag SKS-A5 20-round magazine is 8584</p>\n<p>PAutoSell: Using Ragfair Price for child item since NaN: Pack of Russian Army pineapple juice is 21341</p>\n<p>PAutoSell: Trader Price for child item(s): Slickers chocolate bar is 3456</p>\n<p>PAutoSell: Trader Price for child item(s): WARTECH TV-109 + TV-106 chest rig is 10673</p>\n<p>PAutoSell: Finding Trader for Item: Spiritus Systems Bank Robber chest rig</p>\n<p>PAutoSell: Checking item against Trader: Mechanic</p>\n<p>PAutoSell: Checking item against Trader: Ragman</p>\n<p>PAutoSell: Trader Ragman Found for Item: Spiritus Systems Bank Robber chest rig</p>\n<p>PAutoSell: Checking item against Trader: Jaeger</p>\n<p>PAutoSell: Trader Jaeger Found for Item: Spiritus Systems Bank Robber chest rig</p>\n<p>PAutoSell: Checking item against Trader: Prapor</p>\n<p>PAutoSell: Checking item against Trader: Therapist</p>\n<p>PAutoSell: Checking item against Trader: caretaker</p>\n<p>PAutoSell: Checking item against Trader: Peacekeeper</p>\n<p>PAutoSell: Checking item against Trader: Skier</p>\n<p>PAutoSell: Trader Skier Found for Item: Spiritus Systems Bank Robber chest rig</p>\n<p>PAutoSell: Final Trader Found for Item: Jaeger</p>\n<p>PAutoSell: Trader Price for child item(s): 9x19mm Luger CCI - (1) is 447</p>\n<p>PAutoSell: Trader Price for child item(s): MP-443 \u201cGrach\u201d 9x19 18-round magazine is 1842</p>\n<p>PAutoSell: Using Ragfair Price for child item since NaN: Pack of oat flakes is 32613</p>\n<p>PAutoSell: Trader Price for child item(s): MP-443 \u201cGrach\u201d 9x19 18-round magazine is 1842</p>\n<p>PAutoSell: Trader Price for child item(s): 9x19mm Luger CCI - (1) is 447</p>\n<p>PAutoSell: Trader Price for child item(s): MP-443 \u201cGrach\u201d 9x19 18-round magazine is 1842</p>\n<p>PAutoSell: Trader Price for child item(s): MP-443 \u201cGrach\u201d polymer pistol grip is 844</p>\n<p>PAutoSell: Trader Price for child item(s): 9x19mm Luger CCI - (1) is 447</p>\n<p>PAutoSell: Trader Price for child item(s): Yarygin MP-443 \u201cGrach\u201d 9x19 pistol is 12524</p>\n<p>PAutoSell: Trader Price for child item(s): TT 7.62x25 121mm homespun threaded barrel is 2407</p>\n<p>PAutoSell: Trader Price for child item(s): TT PM-Laser TT-206 side grips with laser sight is 3909</p>\n<p>PAutoSell: Trader Price for child item(s): 7.62x25mm TT P gl - (1) is 62</p>\n<p>PAutoSell: Trader Price for child item(s): TT 7.62x25 tt-105 8-round magazine is 1388</p>\n<p>PAutoSell: Trader Price for child item(s): TT DLP Tactical Precision LAM-module is 5152</p>\n<p>PAutoSell: Trader Price for child item(s): 7.62x25mm TT P gl - (1) is 62</p>\n<p>PAutoSell: Trader Price for child item(s): TT-33 7.62x25 TT pistol is 7400</p>\n<p>PAutoSell: Trader Price for child item(s): Spiritus Systems Bank Robber chest rig is 10013</p>\n<p>PAutoSell: Finding Trader for Item: 12/70 RIP ammo pack (5 pcs)</p>\n<p>PAutoSell: Checking item against Trader: Mechanic</p>\n<p>PAutoSell: Checking item against Trader: Ragman</p>\n<p>PAutoSell: Checking item against Trader: Jaeger</p>\n<p>PAutoSell: Checking item against Trader: Prapor</p>\n<p>PAutoSell: Checking item against Trader: Therapist</p>\n<p>PAutoSell: Checking item against Trader: caretaker</p>\n<p>PAutoSell: Checking item against Trader: Peacekeeper</p>\n<p>PAutoSell: Checking item against Trader: Skier</p>\n<p>Error:</p>\n<p>TypeError: Cannot read properties of undefined (reading \u2018nickname\u2019)</p>\n<p>TypeError: Cannot read properties of undefined (reading \u2018nickname\u2019)</p>\n<p>at Function.FindAvailableTrader (D:\\SPTarkov\\AKI 3.7.5\\user\\mods\\props-propsautomatedselling-1.4.0\\src\\PAutoSell.ts:258:70)</p>\n<p>at PAutoSell.exchangeItems (D:\\SPTarkov\\AKI 3.7.5\\user\\mods\\props-propsautomatedselling-1.4.0\\src\\PAutoSell.ts:193:27)</p>\n<p>at Object.action (D:\\SPTarkov\\AKI 3.7.5\\user\\mods\\props-propsautomatedselling-1.4.0\\src\\PAutoSell.ts:102:10)</p>\n<p>at StaticRouterMod.handleStatic (C:\\snapshot\\project\\src\\di\\Router.ts:50:63)</p>\n<p>at HttpRouter.handleRoute (C:\\snapshot\\project\\src\\routers\\HttpRouter.ts:79:62)</p>\n<p>at HttpRouter.getResponse (C:\\snapshot\\project\\src\\routers\\HttpRouter.ts:44:30)</p>\n<p>at AkiHttpListener.getResponse (C:\\snapshot\\project\\src\\servers\\http\\AkiHttpListener.ts:150:38)</p>\n<p>at IncomingMessage.&lt;anonymous&gt; (C:\\snapshot\\project\\src\\servers\\http\\AkiHttpListener.ts:75:43)</p>\n<p>at IncomingMessage.emit (node:events:513:28)</p>\n<p>at endReadableNT (node:internal/streams/readable:1359:12)</p>\n<p>TypeError: Cannot read properties of undefined (reading \u2018nickname\u2019)</p>\n<p>TypeError: Cannot read properties of undefined (reading \u2018nickname\u2019)</p>\n<p>at Function.FindAvailableTrader (D:\\SPTarkov\\AKI 3.7.5\\user\\mods\\props-propsautomatedselling-1.4.0\\src\\PAutoSell.ts:258:70)</p>\n<p>at PAutoSell.exchangeItems (D:\\SPTarkov\\AKI 3.7.5\\user\\mods\\props-propsautomatedselling-1.4.0\\src\\PAutoSell.ts:193:27)</p>\n<p>at Object.action (D:\\SPTarkov\\AKI 3.7.5\\user\\mods\\props-propsautomatedselling-1.4.0\\src\\PAutoSell.ts:102:10)</p>\n<p>at StaticRouterMod.handleStatic (C:\\snapshot\\project\\src\\di\\Router.ts:50:63)</p>\n<p>at HttpRouter.handleRoute (C:\\snapshot\\project\\src\\routers\\HttpRouter.ts:79:62)</p>\n<p>at HttpRouter.getResponse (C:\\snapshot\\project\\src\\routers\\HttpRouter.ts:44:30)</p>\n<p>at AkiHttpListener.getResponse (C:\\snapshot\\project\\src\\servers\\http\\AkiHttpListener.ts:150:38)</p>\n<p>at IncomingMessage.&lt;anonymous&gt; (C:\\snapshot\\project\\src\\servers\\http\\AkiHttpListener.ts:75:43)</p>\n<p>at IncomingMessage.emit (node:events:513:28)</p>\n<p>at endReadableNT (node:internal/streams/readable:1359:12)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 27717,
+   "parent_id": null,
+   "author": "Speaker4TheDead",
+   "author_id": 46397,
+   "author_url": "https://forge.sp-tarkov.com/user/46397/speaker4thedead",
+   "created_at": "2024-03-10T06:53:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Also running into the issue of no cash being in the container after selling. No errors in the logs like the others. Any way to resolve this?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 97858,
+   "parent_id": 27717,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2024-03-10T09:24:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I probably need to fix something :). i\u2019m lazy tho</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 28102,
+   "parent_id": null,
+   "author": "archmagetony",
+   "author_id": 34957,
+   "author_url": "https://forge.sp-tarkov.com/user/34957/archmagetony",
+   "created_at": "2024-03-31T07:09:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>ammo pack cann\u2019t sell,will cause error \u2018TypeError: Cannot read properties of undefined (reading \u2018nickname\u2019)\u2019</p>\n<p>because no trader can sell.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 98436,
+   "parent_id": 28102,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2024-03-31T20:35:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>are you using mods? which ammo pack</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 98446,
+   "parent_id": 28102,
+   "author": "archmagetony",
+   "author_id": 34957,
+   "author_url": "https://forge.sp-tarkov.com/user/34957/archmagetony",
+   "created_at": "2024-04-01T03:35:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello,sorry I can\u2019t speak English very well,so I use google translate.</p>\n<p>ammo pack:7.62x39mm PS gzh ammo pack (20 pcs)</p>\n<p>I tried running this mod in a clean game(only two mod) for test,I think all ammo pack will cause error.Because only trader \u2018fence\u2019 can sell ammo pack in game 3.7.6.But he was commented in the \u2018PAutoSell.ts\u2019 line 63 .I have not tested whether it runs normally after uncommenting.</p>\n<p>Here is log:<a href=\"https://mega.nz/file/TvwxnKyQ#GAEyuqRTLlkEAdgcYB8f4D0lRBLNRRE0sAYAGQyW3Qc\" target=\"_blank\" rel=\"noreferrer noopener\">server log</a></p>\n<p>error in line 485</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 30186,
+   "parent_id": null,
+   "author": "Hypno88",
+   "author_id": 34438,
+   "author_url": "https://forge.sp-tarkov.com/user/34438/hypno88",
+   "created_at": "2024-04-19T23:10:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Good mod but unfortunately it doesn\u2019t play well with Inventory Organizing Features. Unless you change remove container restriction to false its going to put every case into another case into another case\u2026.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 101441,
+   "parent_id": 30186,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2024-04-20T01:37:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i mean, you could set it to false in the config. But yes, then that will limit you to what you can store in a \u2018loot\u2019 bag. Thats unfortunate that it puts every case into another case. maybe you should use the strict labels for inventory organizing features so when you auto sort, they are locked in place and only take a certain tag like ammo</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 101445,
+   "parent_id": 28102,
+   "author": "archmagetony",
+   "author_id": 34957,
+   "author_url": "https://forge.sp-tarkov.com/user/34957/archmagetony",
+   "created_at": "2024-04-20T02:47:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The new version works great, thank you so much!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 30265,
+   "parent_id": null,
+   "author": "darkness",
+   "author_id": 46068,
+   "author_url": "https://forge.sp-tarkov.com/user/46068/darkness",
+   "created_at": "2024-04-20T13:30:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>will this also sell stuff to the flea if it makes a big enough profit compared to selling to a trader?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 101522,
+   "parent_id": 30265,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2024-04-20T16:21:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>eh, i guess i could make the option of it giving flea prices in a later update. for now though, it only sells at highest trader price. a lot of people complained it was making too much money which is why a price multiplier option is included as well</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 30671,
+   "parent_id": null,
+   "author": "Loganxfi",
+   "author_id": 4557,
+   "author_url": "https://forge.sp-tarkov.com/user/4557/loganxfi",
+   "created_at": "2024-04-25T07:57:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello! Your mod is very useful and I would like to use it. But after installing your mod, the latest version is 1.5.0 for server 3.8.0. The system of cases and containers has broken in the game, which is why now any item can be placed in any case or container. I don\u2019t like this malfunction, since the purpose of each container is lost.</p>\n<p><a href=\"https://i.ibb.co/N3qtSjv/Escape-From-Tarkov-Screenshot-2024-04-25-13-12-10-11.png\" target=\"_blank\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/N3qtSjv/Escape-From-Tarkov-Screenshot-2024-04-25-13-12-10-11.png\" alt=\"Escape-From-Tarkov-Screenshot-2024-04-25-13-12-10-11.png\" /></a><a href=\"https://i.ibb.co/cxFyG94/Escape-From-Tarkov-Screenshot-2024-04-25-13-12-48-84.png\" target=\"_blank\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/cxFyG94/Escape-From-Tarkov-Screenshot-2024-04-25-13-12-48-84.png\" alt=\"Escape-From-Tarkov-Screenshot-2024-04-25-13-12-48-84.png\" /></a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 102057,
+   "parent_id": 30671,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2024-04-25T14:02:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>There is a setting you need to set in the config.jsonc file. Set RemoveContainerRestriction to false.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 30853,
+   "parent_id": null,
+   "author": "SaltiestSaltySaltPie",
+   "author_id": 27249,
+   "author_url": "https://forge.sp-tarkov.com/user/27249/saltiestsaltysaltpie",
+   "created_at": "2024-04-30T00:16:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>[Client Request] /raid/profile/save PAutoSell: Found container with label tag: @autosell Selling item LBT-2670 Slim Field Med Pack (Black) to trader Ragman for 12000 RUB (12000 RUB total) Updated sales sum for trader Ragman: 10509772 RUB Selling item LBT-2670 Slim Field Med Pack (Black) to trader Priscilu for 12000 RUB (12000 RUB total) Updated sales sum for trader Priscilu: 13106996 RUB Selling item LBT-2670 Slim Field Med Pack (Black) to trader Jaeger for 12000 RUB (12000 RUB total) Updated sales sum for trader Jaeger: 359854 RUB PAutoSell: Total Roubles earned: 36000 and sent to stash [Client Request] /client/match/offline/end</p>\n<p>I have a dogtag case with 3 slim backpacks full with loot.<br />\nit seem like somehow the mod doesn\u2019t calculate all items contained in each backpack.<br />\nIs this intentional or did I miss a config?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 102271,
+   "parent_id": 30853,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2024-04-30T03:50:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Looks like an issue on my end. thanks for report.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 30888,
+   "parent_id": null,
+   "author": "archmagetony",
+   "author_id": 34957,
+   "author_url": "https://forge.sp-tarkov.com/user/34957/archmagetony",
+   "created_at": "2024-04-30T06:23:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>In 1.5.3 have issue about sell weapon.Weapon mods placed on weapons will not be counted.Also bullets included in the magazine are not counted.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 35322,
+   "parent_id": null,
+   "author": "N0KE5",
+   "author_id": 55189,
+   "author_url": "https://forge.sp-tarkov.com/user/55189/n0ke5",
+   "created_at": "2024-07-01T16:02:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>it wont let me launch the game and I get this error on my aki server what do I do</p>\n<p>The application had a critical error and failed to run</p>\n<p>Exception produced: JSONError</p>\n<p>Stacktrace:</p>\n<p>\u2019 \u201cPriceMultiplier\u201d: 1.0,after property value in JSON at position 485 while parsing \u2019{</p>\n<p>at C:\\snapshot\\project\\node_modules\\parse-json\\index.js:26:19</p>\n<p>at Function.parse (C:\\snapshot\\project\\node_modules\\jsonc\\lib\\jsonc.js:176:16)</p>\n<p>at PAutoSell.loadConfig (D:\\SPT\\user\\mods\\propsautomatedselling-1.5.5\\src\\PAutoSell.ts:127:22)</p>\n<p>at PAutoSell.preAkiLoad (D:\\SPT\\user\\mods\\propsautomatedselling-1.5.5\\src\\PAutoSell.ts:70:25)</p>\n<p>at PreAkiModLoader.executeModsAsync (C:\\snapshot\\src\\loaders\\PreAkiModLoader.ts:419:53)</p>\n<p>at PreAkiModLoader.load (C:\\snapshot\\src\\loaders\\PreAkiModLoader.ts:59:24)</p>\n<p>at processTicksAndRejections (node:internal/process/task_queues:95:5)</p>\n<p>at process.runNextTicks [as _tickCallback] (node:internal/process/task_queues:64:3)</p>\n<p>at Function.runMain (pkg/prelude/bootstrap.js:1984:13)</p>\n<p>at node:internal/main/run_main_module:28:49</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 108686,
+   "parent_id": 35322,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2024-07-02T04:34:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>sounds like you edited the config file and probably forgot a comma //price multiplier for all items. 1.0 is default. 0.5 is half price, 2.0 is double price. \u201cPriceMultiplier\u201d: 1.0, \u201cContainers\u201d: { //Name these labels to what your tagged containers in-game are. The first custom label (junk items) means we will consider an item with the tag \u201cjunk items\u201d as a container. //Change this as needed to match your containers. You can add as many as you want. \u201cLabels\u201d: [ \u201cjunk items\u201d, \u201cdog tags\u201d, \u201cshit ammo\u201d ] },</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 108734,
+   "parent_id": 35322,
+   "author": "N0KE5",
+   "author_id": 55189,
+   "author_url": "https://forge.sp-tarkov.com/user/55189/n0ke5",
+   "created_at": "2024-07-02T17:33:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>thank you it got fixed great mod btw</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 36328,
+   "parent_id": null,
+   "author": "CwHedgehog",
+   "author_id": 50064,
+   "author_url": "https://forge.sp-tarkov.com/user/50064/cwhedgehog",
+   "created_at": "2024-07-15T16:02:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>\u2765(^_-)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 39167,
+   "parent_id": null,
+   "author": "1077605358",
+   "author_id": 52887,
+   "author_url": "https://forge.sp-tarkov.com/user/52887/1077605358",
+   "created_at": "2024-08-16T13:45:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is there a way to make mods available for sale at the price of the flea market\uff1f 0w0</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 114179,
+   "parent_id": 39167,
+   "author": "Props",
+   "author_id": 15516,
+   "author_url": "https://forge.sp-tarkov.com/user/15516/props",
+   "created_at": "2024-08-16T14:55:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>it was that way in the past but people complained it was way too much money</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 114181,
+   "parent_id": 39167,
+   "author": "1077605358",
+   "author_id": 52887,
+   "author_url": "https://forge.sp-tarkov.com/user/52887/1077605358",
+   "created_at": "2024-08-16T15:10:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hopefully this feature will come back as an option in the future TwT</p>\n<p>Super awesome mod!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 41230,
+   "parent_id": null,
+   "author": "IvanTheThicc",
+   "author_id": 39240,
+   "author_url": "https://forge.sp-tarkov.com/user/39240/ivanthethicc",
+   "created_at": "2024-09-20T02:23:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is there a way I can change this to use flea market prices?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 45284,
+   "parent_id": null,
+   "author": "FLIGHT_S4L",
+   "author_id": 36392,
+   "author_url": "https://forge.sp-tarkov.com/user/36392/flight-s4l",
+   "created_at": "2024-12-19T16:27:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>anyone get this working for 3.10 yet?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 127008,
+   "parent_id": 45284,
+   "author": "S_gamez",
+   "author_id": 22060,
+   "author_url": "https://forge.sp-tarkov.com/user/22060/s-gamez",
+   "created_at": "2025-02-16T13:40:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>not as far i know have asked around a bit but so far nothing\u2026 Sadly.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

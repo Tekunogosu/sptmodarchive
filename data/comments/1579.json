@@ -1,0 +1,80 @@
+{
+ "mod_id": 1579,
+ "slug": "robinxbs-average-custom-trader-prices",
+ "fetched_at": "2026-08-09T08:00:45Z",
+ "reported_total": null,
+ "pages": 1,
+ "count": 7,
+ "comments": [
+  {
+   "id": 36998,
+   "parent_id": null,
+   "author": "DizzilyHQ",
+   "author_id": 3500,
+   "author_url": "https://forge.sp-tarkov.com/user/3500/dizzilyhq",
+   "created_at": "2024-07-21T19:52:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>tyvm for this needed mod!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 37052,
+   "parent_id": null,
+   "author": "MSGScooteroll3k",
+   "author_id": 58441,
+   "author_url": "https://forge.sp-tarkov.com/user/58441/msgscooteroll3k",
+   "created_at": "2024-07-22T06:41:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello, great mod idea! But I\u2019m running into some issues, and found some things I\u2019d thought I\u2019d point out-</p>\n<p>1- The README.md file is just a blank document. Nothing written.</p>\n<p>2- Maybe write out a guide on how to properly add the discounts to traders? Because I messed around with what I was given (the name and discount, since I\u2019m still a newbie at json editing/programming, and don\u2019t want to add or remove anything to break the json), As well as put the mod below SVM (which I did manually by putting \u201csz\u201d in the beginning of the name) and the console says-</p>\n<p>Changed trader (Trader Name Here) with discount 95%: LL1 - 0 | LL2 - 0 | LL3 - 0 | LL4 - 0</p>\n<p>I\u2019m sure there\u2019s something I may have missed, or messed up. But it\u2019s not exactly clear on what I missed or messed up.</p>\n<p>(To be fair, my eyesight isn\u2019t that great. So I tend to miss or not properly process some things )</p>\n<p>3- in the config file, the ID for the Scorpion trader isn\u2019t \u201cscorpion\u201d, but it\u2019s instead \u201c6688d464bc40c867f60e7d7e\u201d.</p>\n<p>I love the idea for the mod, and could be very helpful in making it so people don\u2019t spend a ton of money on custom gear and weapons. meanwhile the default traders are selling items for almost free, and being able to change prices very quickly on a whim. (or being too worried about breaking something in their trader\u2019s code). But I wish I knew how to work it properly hahaha.</p>\n<p>Again. Love the mod idea. It\u2019ll definitely come in handy for people!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 110944,
+   "parent_id": 37052,
+   "author": "Archon",
+   "author_id": 28316,
+   "author_url": "https://forge.sp-tarkov.com/user/28316/archon",
+   "created_at": "2024-07-22T09:38:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The readme.md is empty, because it\u2019s just a default file for how it\u2019s distributed (SPT\u2019s git), so that\u2019s \u201cintended\u201d.</p>\n<p>The json you put the name of the trader in, normally scorpion or lotus or legs or whatever it is. Usually this can be seen from the mod\u2019s mod.ts file or similar. I have no idea why it\u2019s giving you \u201cChanged trader (Trader Name Here) with discount 95%: LL1 - 0 | LL2 - 0 | LL3 - 0 | LL4 - 0\u201d.</p>\n<p>Additionally, what you\u2019re discounting is the trader\u2019s <em>buy</em> price. It might seem counterintuitive because it\u2019s kind of a double negative, but discounting the buy price means the trader will <em>buy your items for less</em>. Essentially the mod is meant to do the opposite of what you\u2019re trying to have it do; balance modded traders buy prices (which usually buy a bunch of stuff, for better prices than vanilla traders).</p>\n<p>If you still want to use the mod, despite this misunderstanding, send me the link to the traders you want to use in it, as well as how much less the traders should buy your stuff for than the average vanilla trader, in percent.</p>\n<p>May or may not work with negative numbers to make their buy prices better than vanilla, haven\u2019t tested.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 110979,
+   "parent_id": 37052,
+   "author": "MSGScooteroll3k",
+   "author_id": 58441,
+   "author_url": "https://forge.sp-tarkov.com/user/58441/msgscooteroll3k",
+   "created_at": "2024-07-22T15:17:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Ooohhh I understand now. Sorry I must of read it wrong and thought it was going to discount the prices lol.</p>\n<p>Still a great and useful mod for some hardcore run profiles though!</p>\n<p>I know it\u2019s a dumb question, but since I haven\u2019t ever used it yet, can it work with FIKA?</p>\n<p>Asking because when my best friend gets a PC and gets Tarkov (hopefully, haven\u2019t gotten any updates yet), I\u2019m thinking about setting up a hell of a hardcore/realistic game. Since he used to be part of the Royal Marines, and he wants to get into Tarkov (of course I still have to update him on everything, explain SPT, and explain FIKA lol).</p>\n<p>And if custom traders can be used in FIKA (again, probably a dumb question. But I never used it so idk lol), I might figure out how this mod works at some point and have it balance the custom traders.</p>\n<p>Also asking about the traders because I know Artem has some clothing and gear with the United Kingdom flags on it. And he wants to cosplay as a Royal Marine lol.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 111023,
+   "parent_id": 37052,
+   "author": "Archon",
+   "author_id": 28316,
+   "author_url": "https://forge.sp-tarkov.com/user/28316/archon",
+   "created_at": "2024-07-22T19:56:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>you\u2019re better off asking such questions on the project-fika discord (google it). You can also find people hosting servers there, which you can use for inspiration on what mods to get and such. 99% of server mods work completely perfectly.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 111032,
+   "parent_id": 37052,
+   "author": "MSGScooteroll3k",
+   "author_id": 58441,
+   "author_url": "https://forge.sp-tarkov.com/user/58441/msgscooteroll3k",
+   "created_at": "2024-07-22T20:47:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Oohhh okay Gotcha, I appreciate it</p>\n<p>Since it won\u2019t be for a good while, I\u2019ll probably wait on joining the FIKA Discord (so I\u2019m not lurking around for probably months lol). For now I\u2019ll just take what a friend of mine says with a grain of salt. Until that time comes, of course.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 114667,
+   "parent_id": 37052,
+   "author": "SIC",
+   "author_id": 53356,
+   "author_url": "https://forge.sp-tarkov.com/user/53356/sic",
+   "created_at": "2024-08-22T14:36:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi,</p>\n<p>regarding the TraderID this was a valid concern from MSG\u2026 because I would not know how this should work ootb with Scorpion anymore for 3.9.<br />\nThe traderID for Scorpion WAS \u201cScorpion\u201d, also not \u201cscorpion\u201d until 3.9, and is now indeed \u201c6688d464bc40c867f60e7d7e\u201d, while for Lotus it is still \u201clotus\u201d.<br />\nFor people who cannot read your code you should really clarify what you expect as name, you wrote TraderID, but use the wrong TraderID for Scorpion actually yourself then, and if you use the name instead you should state that please.</p>\n<p>Thanks and cheers!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

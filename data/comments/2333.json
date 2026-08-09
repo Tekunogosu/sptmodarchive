@@ -1,0 +1,60 @@
+{
+ "mod_id": 2333,
+ "slug": "pharmacist",
+ "fetched_at": "2026-08-09T08:01:27Z",
+ "reported_total": null,
+ "pages": 1,
+ "count": 5,
+ "comments": [
+  {
+   "id": 137969,
+   "parent_id": null,
+   "author": "hellchickens",
+   "author_id": 41253,
+   "author_url": "https://forge.sp-tarkov.com/user/41253/hellchickens",
+   "created_at": "2025-10-04T20:07:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Sup bro, good mod, though there is a little logic hole: there is no multiplier for barter. As it was 5 juice boxes for propital - so it is regardless chosen multiplier.\nFor craft is the same, though I suppose it\u2019s kinda ok\u2026</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 137972,
+   "parent_id": 137969,
+   "author": "Bubblefarts",
+   "author_id": 30786,
+   "author_url": "https://forge.sp-tarkov.com/user/30786/bubblefarts",
+   "created_at": "2025-10-04T21:19:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I ran out of time and left barters and crafts untouched. Maybe for an update I\u2019ll look into it,</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 138069,
+   "parent_id": null,
+   "author": "hellchickens",
+   "author_id": 41253,
+   "author_url": "https://forge.sp-tarkov.com/user/41253/hellchickens",
+   "created_at": "2025-10-06T16:21:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Fun point: Morphine injector is a \u201cdrug\u201d and \u201csyringe\u201d, so it has x10 as syringe and then x2 as drug. Also same for glucose injector from Consumables galore mod (which is drug and syringe too). So I suppose you need to check that each ID isn\u2019t processed more than one time or smth like that. At least for syringes.\nAlso would be nice if u add option for different multiplier for prices per category, disjointed from uses</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 138070,
+   "parent_id": 138069,
+   "author": "hellchickens",
+   "author_id": 41253,
+   "author_url": "https://forge.sp-tarkov.com/user/41253/hellchickens",
+   "created_at": "2025-10-06T16:28:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>\u201cblacklisted_drugs\u201d: [\n\u201c544fb3f34bdc2d03748b456a\u201d,\n\u201c683288d79ddbff8c2519a49e\u201d\n],\nisn\u2019t working as expected from category blacklist as it doing global blacklist and that 2 syringes are not processed in any category and have default stats</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 138071,
+   "parent_id": 138069,
+   "author": "Bubblefarts",
+   "author_id": 30786,
+   "author_url": "https://forge.sp-tarkov.com/user/30786/bubblefarts",
+   "created_at": "2025-10-06T16:54:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I made a special case for morphine and it should only consider the stim multiplier. Next update I\u2019ll try to add a check for any other drug and arbitrary assing only one category. And I\u2019ll double-check the blacklist so that they work as intended.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

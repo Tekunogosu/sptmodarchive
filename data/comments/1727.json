@@ -1,0 +1,260 @@
+{
+ "mod_id": 1727,
+ "slug": "wtt-m700-long-action-realism-compatibility-patch",
+ "fetched_at": "2026-08-09T07:52:22Z",
+ "reported_total": null,
+ "pages": 1,
+ "count": 25,
+ "comments": [
+  {
+   "id": 40758,
+   "parent_id": null,
+   "author": "Baconism",
+   "author_id": 23743,
+   "author_url": "https://forge.sp-tarkov.com/user/23743/baconism",
+   "created_at": "2024-09-09T23:05:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Great compatibility patch, but you did happen to miss something. The 338 Norma ammo has default Penetration power which is too low for Realism, 39 for 300gr and 48 for 250gr, should be upped in your patch to offset the armor changes in realism. Haven\u2019t noticed any other issues besides that though, so overall well done</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 116483,
+   "parent_id": 40758,
+   "author": "Nicholas",
+   "author_id": 33315,
+   "author_url": "https://forge.sp-tarkov.com/user/33315/nicholas",
+   "created_at": "2024-09-09T23:43:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Oh , yeah , you\u2019re right, imma fix this soon !</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 116484,
+   "parent_id": 40758,
+   "author": "ThunderChild",
+   "author_id": 63381,
+   "author_url": "https://forge.sp-tarkov.com/user/63381/thunderchild",
+   "created_at": "2024-09-10T00:00:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Could you explain a bit more about the damage values/logic so my personal M107 patch isn\u2019t wrong?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 116485,
+   "parent_id": 40758,
+   "author": "Nicholas",
+   "author_id": 33315,
+   "author_url": "https://forge.sp-tarkov.com/user/33315/nicholas",
+   "created_at": "2024-09-10T00:12:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You basically have to add those strings :</p>\n<p>\u201cDamage\u201d: x,</p>\n<p>\u201cPenetrationPower\u201d: x</p>\n<p>on the ammo part and transform the default pen value from scale 6 to scale 10 , you can ask ChatGPT to transform the value for you if u want , imma give u an example here :</p>\n<p>39 ( scale 6 ) \u2014&gt; 65 ( scale 10 )<br />\n48 \u2014&gt; 80<br />\nscale 6 is the maximum armor level in vanilla tarkov<br />\nscale 10 is maximum armor level in realism</p>\n<p>That\u2019s the logic i\u2019m going to use to fix this ( That\u2019s something i assumed , i think it\u2019s a logical solution , although , i\u2019m unexperienced on this so don\u2019t relay 100% on my advice )</p>\n<p>EDIT : I just noticed that u asked for damage , not pen , mb , anyway , for the damage , I used the same value it was reported in the vanilla mod , I\u2019ve added the damage string just to be sure but it will work anyway even without \u201cforcing\u201d it with the added string , it will keep the vanilla damage that the mod author decided the ammo to have</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 116487,
+   "parent_id": 40758,
+   "author": "Nicholas",
+   "author_id": 33315,
+   "author_url": "https://forge.sp-tarkov.com/user/33315/nicholas",
+   "created_at": "2024-09-10T00:46:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p><strong>Update out!</strong> Thank your for the report !</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 40767,
+   "parent_id": null,
+   "author": "basherboy",
+   "author_id": 60772,
+   "author_url": "https://forge.sp-tarkov.com/user/60772/basherboy",
+   "created_at": "2024-09-10T02:46:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Good patch. One thing I noticed was the velocities for the barrels didn\u2019t seem to have a change when getting shorter. From a test I read, the velocity fall off from a 14in barrel should be about -17% (assuming 26in to be the baseline). I was in the process of writing my own patch for this gun when I saw this one, so I thought I might mention that</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 40770,
+   "parent_id": null,
+   "author": "TheMutedBalaclava",
+   "author_id": 59242,
+   "author_url": "https://forge.sp-tarkov.com/user/59242/themutedbalaclava",
+   "created_at": "2024-09-10T05:44:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It\u2019s great you have a patch right after publishing! Devoted sniper community inside SPT, helping you make a great compat.patch! \ud83d\udcaa\ud83c\udffd</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 116513,
+   "parent_id": 40767,
+   "author": "Nicholas",
+   "author_id": 33315,
+   "author_url": "https://forge.sp-tarkov.com/user/33315/nicholas",
+   "created_at": "2024-09-10T07:04:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>All right , I\u2019ll put this in my notes and i\u2019ll update it tonight after work, if you think I should change something else , feel free to tell me so I\u2019ll add it before tonight , all this advices are giving me some good lessons and exp , those will make me do less mistakes in future , thanks a lot !</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 116537,
+   "parent_id": 40767,
+   "author": "basherboy",
+   "author_id": 60772,
+   "author_url": "https://forge.sp-tarkov.com/user/60772/basherboy",
+   "created_at": "2024-09-10T15:50:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>That will be the biggest adjustment. My stats are a little different than yours in some places. Theres a fair amount of personal decision on the balance of things though. Id be happy to send you my patch that I finished last night for my personal use so that you can compare. Took some of your numbers on some parts.</p>\n<p>For the barrel lengths, I used 26in as the baseline as that is a good performing barrel overall for .338. So that velocity is 0. These numbers are from a test someone did chopping the barrel down to get the velocities. Accuracies were adjusted slightly too based on the SD of each barrel length. The default values from the base mod are fine, I just wiggled them slightly. Ill omit them here.</p>\n<p>Velocities:</p>\n<p>28in: +1.5</p>\n<p>26in (and timberwolf): 0</p>\n<p>24in: -1.5</p>\n<p>22in: -3.8</p>\n<p>20in: -6.9</p>\n<p>18in: -10.4</p>\n<p>16in: -13</p>\n<p>14in: -17</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 40781,
+   "parent_id": null,
+   "author": "Mace",
+   "author_id": 35029,
+   "author_url": "https://forge.sp-tarkov.com/user/35029/mace",
+   "created_at": "2024-09-10T16:38:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you for sharing this!!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 116539,
+   "parent_id": 40767,
+   "author": "Nicholas",
+   "author_id": 33315,
+   "author_url": "https://forge.sp-tarkov.com/user/33315/nicholas",
+   "created_at": "2024-09-10T16:55:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I will definitely use these ones! I don\u2019t know how to thank you for that , I know that this took a lot of your time and effort and not everyone would share part of their work so the best I can do is to follow those instructions letter by letter ;</p>\n<p>Imma apply those once I get home ( around 4 hours ) , thank you for real , you\u2019re a legend</p>\n<p>Edit : If you want , you can send me the file on discord , I\u2019m nicholas90 there , add me and send it in dm so I\u2019ll take a look at it once I get home</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 116542,
+   "parent_id": 40770,
+   "author": "Nicholas",
+   "author_id": 33315,
+   "author_url": "https://forge.sp-tarkov.com/user/33315/nicholas",
+   "created_at": "2024-09-10T17:07:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank your for the support comment , appreciate it !</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 40853,
+   "parent_id": null,
+   "author": "EpicRangeTime",
+   "author_id": 36153,
+   "author_url": "https://forge.sp-tarkov.com/user/36153/epicrangetime",
+   "created_at": "2024-09-12T04:47:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Quick tidbit on the master category, although I don\u2019t know jack about realism patches so I\u2019m sorry if I\u2019m looking at it wrong, but I do have base game mastery set to the AXMC just because of the similarity in platforms despite it not being based off of it for animations sake. Do what you want, but the AXMC would probably be a better match for its mastery. Not sure what mastery effects in realism.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 116673,
+   "parent_id": 40853,
+   "author": "Nicholas",
+   "author_id": 33315,
+   "author_url": "https://forge.sp-tarkov.com/user/33315/nicholas",
+   "created_at": "2024-09-12T12:57:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Before publishing the last update I tried ( for test purpose ) to set the dvl as master category , but for some reason it was giving some reference errors on the console when was using it , then basher gently advised me that the SV98 was working , so I used it , imma try to see if AXMC will work and if it will , I\u2019ll use this one and release a new update , ty for the heads up! Love your mods!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 116688,
+   "parent_id": 40853,
+   "author": "Nicholas",
+   "author_id": 33315,
+   "author_url": "https://forge.sp-tarkov.com/user/33315/nicholas",
+   "created_at": "2024-09-12T14:49:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey Epic , apparently AXMC won\u2019t make it work as mastery category , i\u2019ve tried many , mdr ,m4 , m1a ,p226 and many others are working;</p>\n<p><strong>For some reason if i try with AXMC , DVL-10 ( or DVL ) , M700 , Mosin , T-5000 or VPO-215 this error shows up :</strong></p>\n<p><em>Error processing files in directory D:\\Games\\SPT 3.9.5\\user\\mods\\SPT-Realism\\db\\put_new_stuff_here: TypeError: Cannot read properties of undefined (reading \u2018Templates\u2019)</em></p>\n<p>They only <strong>Bolt-action</strong> that seems to work is SV98 for some reason , i\u2019ve also tried with all combinations of names ( case sensitives cases like axmc - Axmc - AMXC etc..), idk what to do tbh , that\u2019s also my first mod so i lack of experience</p>\n<p>If you have some advice , feel free to tell me</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 116812,
+   "parent_id": 40853,
+   "author": "EpicRangeTime",
+   "author_id": 36153,
+   "author_url": "https://forge.sp-tarkov.com/user/36153/epicrangetime",
+   "created_at": "2024-09-13T19:04:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Alrighty, thank you for testing it.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 116860,
+   "parent_id": 40853,
+   "author": "Nicholas",
+   "author_id": 33315,
+   "author_url": "https://forge.sp-tarkov.com/user/33315/nicholas",
+   "created_at": "2024-09-14T13:23:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey Epic, a quick update regarding what we were talking about the other day. I discovered that the \u201cSV98\u201d is actually the master category for all bolt-action rifles. So, even though I say \u201cSV98,\u201d it\u2019s actually just an ID that encompasses all other bolt-action weapons.</p>\n<p>I\u2019ll update the post from the last update to clear up this misunderstanding.</p>\n<p>If you\u2019d like, to make things clearer, you can check the list of master categories in Realism yourself;</p>\n<p>Here\u2019s the file path: D:\\Games\\SPT 3.9.5\\user\\mods\\SPT-Realism\\db\\items\\mastering.json</p>\n<p>Thanks again to <a href=\"https://hub.sp-tarkov.com/user/64018-basherboy/\" target=\"_blank\" rel=\"noreferrer noopener\">basherboy</a> for the advice and clarification.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 116896,
+   "parent_id": 40853,
+   "author": "EpicRangeTime",
+   "author_id": 36153,
+   "author_url": "https://forge.sp-tarkov.com/user/36153/epicrangetime",
+   "created_at": "2024-09-15T01:52:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Cool, thanks for the info!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 41086,
+   "parent_id": null,
+   "author": "Blitz#5673",
+   "author_id": 241,
+   "author_url": "https://forge.sp-tarkov.com/user/241/blitz5673",
+   "created_at": "2024-09-17T04:45:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Can you tone down the heat in the next patch? The gun jams up really quickly. Thanks!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 117036,
+   "parent_id": 41086,
+   "author": "Nicholas",
+   "author_id": 33315,
+   "author_url": "https://forge.sp-tarkov.com/user/33315/nicholas",
+   "created_at": "2024-09-18T00:39:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>If I don\u2019t remember wrong , it was a number close to 0 already , I\u2019ll check it tomorrow</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 117061,
+   "parent_id": 41086,
+   "author": "Nicholas",
+   "author_id": 33315,
+   "author_url": "https://forge.sp-tarkov.com/user/33315/nicholas",
+   "created_at": "2024-09-18T10:28:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019ve lowered up the Heat factor of both gun, that should be slightly better (They were numbers &lt;1)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 117180,
+   "parent_id": 41086,
+   "author": "Blitz#5673",
+   "author_id": 241,
+   "author_url": "https://forge.sp-tarkov.com/user/241/blitz5673",
+   "created_at": "2024-09-19T19:39:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I finally had a day off of work to test the update, still seems to have issues with the bolt getting jammed after around 7 rounds fired. It might just be an intrinsic problem with the M700 mod, but I\u2019m not sure. A full reinstall of all mods still yields the same results.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 117211,
+   "parent_id": 41086,
+   "author": "Nicholas",
+   "author_id": 33315,
+   "author_url": "https://forge.sp-tarkov.com/user/33315/nicholas",
+   "created_at": "2024-09-20T09:27:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yeah , I guess it might also be a problem between realism and the mod itselfs , tbh I\u2019ve setted the value to the lowest possible ( 0,27 ) compared to other patches/guns in realism where the value goes way higher ( &gt;0,80 )</p>\n<p>Btw , just so I know , does it happen after you shot all the 7 shots in a row , or even after a long time between the shots ?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 117231,
+   "parent_id": 41086,
+   "author": "Blitz#5673",
+   "author_id": 241,
+   "author_url": "https://forge.sp-tarkov.com/user/241/blitz5673",
+   "created_at": "2024-09-20T17:11:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Okay, so I went ahead and did some timed shooting with 15 second 30 second and 1 minute intervals and the results were all the same with either the 7th or 8th round getting a \u201cBolt Jammed\u201d.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 42059,
+   "parent_id": null,
+   "author": "Blitz#5673",
+   "author_id": 241,
+   "author_url": "https://forge.sp-tarkov.com/user/241/blitz5673",
+   "created_at": "2024-10-14T00:21:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I think I figured out what might be the cause of the gun jamming after 7-8 shots. The ammo still has the Heat: Extreme stat when inspecting it.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}

@@ -1,0 +1,140 @@
+{
+ "mod_id": 1478,
+ "slug": "ika-spt-launcher",
+ "fetched_at": "2026-08-09T07:48:10Z",
+ "reported_total": null,
+ "pages": 1,
+ "count": 13,
+ "comments": [
+  {
+   "id": 33973,
+   "parent_id": null,
+   "author": "ManWithACat",
+   "author_id": 52114,
+   "author_url": "https://forge.sp-tarkov.com/user/52114/manwithacat",
+   "created_at": "2024-06-10T08:50:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Any comment if its work?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 106670,
+   "parent_id": 33973,
+   "author": "Millen4ick",
+   "author_id": 53322,
+   "author_url": "https://forge.sp-tarkov.com/user/53322/millen4ick",
+   "created_at": "2024-06-10T10:30:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Doesn\u2019t work for me.</p>\n<p>edit.<br />\nah, it is required .NET runtime 8.0</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 106682,
+   "parent_id": 33973,
+   "author": "Ikaras",
+   "author_id": 52770,
+   "author_url": "https://forge.sp-tarkov.com/user/52770/ikaras",
+   "created_at": "2024-06-10T14:39:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I will upload a standalone version that does not require to install .NET 8. Downside is it will make the file bigger as it will have the dependencies into the exe itself.</p>\n<p>Edit: you should be able to see both Lightweight and Standalone in a zip when you download it now. Lightweight is the normal one, which requires .NET 8.0. Standalone however, with a bigger size, should run without it.</p>\n<p>Let me know if that works for you.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 33990,
+   "parent_id": null,
+   "author": "Ikaras",
+   "author_id": 52770,
+   "author_url": "https://forge.sp-tarkov.com/user/52770/ikaras",
+   "created_at": "2024-06-10T15:17:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It was a long night, but I have updated the Description to be more accurate and included a picture for you to see how it looks like. I made this because I wanted to code, and I wanted to make one of these that is actually one and done type of deal. After I got it running, I had to make it better and share it for those that could be <em>interrested</em>! Thank you for using it, whoever you are \u2764\ufe0f</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 106687,
+   "parent_id": 33973,
+   "author": "Millen4ick",
+   "author_id": 53322,
+   "author_url": "https://forge.sp-tarkov.com/user/53322/millen4ick",
+   "created_at": "2024-06-10T15:43:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thx. Yep its works for me now. but i think 60mb its too much for thing what you can do with a few strings batch code</p>\n<p>:Main tasklist | find /i \u201cAki.Server\u201d &gt;nul 2&gt;&amp;1 if errorlevel 1 ( cls echo. echo Starting up AKI Server\u2026 start Aki.Server.exe timeout /T 10 /Nobreak &gt;nul 2&gt;&amp;1 goto Main ) else ( goto AKILauncher ) :AKILauncher tasklist | find /i \u201cAki.Launcher\u201d &gt;nul 2&gt;&amp;1 if errorlevel 1 ( cls echo. echo Starting up AKI Launcher\u2026 start Aki.Launcher.exe timeout /T 2 /Nobreak &gt;nul 2&gt;&amp;1 exit ) else ( exit )</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 106690,
+   "parent_id": 33973,
+   "author": "Ikaras",
+   "author_id": 52770,
+   "author_url": "https://forge.sp-tarkov.com/user/52770/ikaras",
+   "created_at": "2024-06-10T16:10:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yes, the Lightweight does only use less than 1MB because it does not have the .NET 8.0 runtime bundled into it. .NET Runtime is usually needed for many things now, some SPT mods actually requires it to run their config or tools. I started by doing a batch file too, which I have found to be much more harder to iterate upon than having my C# experience guide the flow of it. Plus, a batch file can be scary to people not knowing much about programming which is understandable. It is ultimately up to you to see if you want that runtime for future usage, or use a larger, yet standalone product. It also depends if you want to use the versatility of a product or if you are fine with another solution that fits your need more. For me, I wanted to use more apps along and decided that 5 clicks to open everything was too much. So I\u2019ve spent hours to fix an issue that I might, or might not ever see a return on my time invested lol\u2026 But it was fun \ud83d\ude0a</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 34020,
+   "parent_id": null,
+   "author": "NilCOCl2",
+   "author_id": 52568,
+   "author_url": "https://forge.sp-tarkov.com/user/52568/nilcocl2",
+   "created_at": "2024-06-10T19:52:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Great idea, but for regular users who don\u2019t like to edit files manually, it would be worth making some sort of configurator (a window with an interface that lists the added applications and an \u201cadd\u201d button or something like that). It would be a lot easier that way, I think. Of course, it\u2019s easier for some people to just create a Batch file, but for those who don\u2019t want to mess around with it and want a handy launcher that can run everything they need to play with a simple double-click, this is a good option.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 106714,
+   "parent_id": 34020,
+   "author": "NilCOCl2",
+   "author_id": 52568,
+   "author_url": "https://forge.sp-tarkov.com/user/52568/nilcocl2",
+   "created_at": "2024-06-10T19:59:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Also, it would be convenient to observe the logs that the application (server or RPC client) outputs, where errors or other debugging information may appear. The output of information, of course, can be made a customization, if someone doesn\u2019t need it.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 34025,
+   "parent_id": null,
+   "author": "Ikaras",
+   "author_id": 52770,
+   "author_url": "https://forge.sp-tarkov.com/user/52770/ikaras",
+   "created_at": "2024-06-10T21:05:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I am currently still working on the application to make it better. Of course, bugs can be a thing. If you have any issues, feel free to drop them in the comments. If you have any scenarios that could be covered by this tool, you can let me know and I will see if it would be a good fit for the app. Meanwhile, here\u2019s what on the board.</p>\n<ul>\n<li>Easy Installer/Uninstaller with runtime handling (No more Lightweight/Standalone to choose from or manual runtime install).</li>\n<li>Better configuration file management (better creation, new optional GUI, version proofing and no more manual edits).</li>\n<li>Changing how the app looks for SPT/dissociating from SPT files so that those without a aki.server.exe in their SPT folder could still use the tool, should they choose so.</li>\n<li>By the same veins of the point above, those with FIKA that connects to remote servers and do not have aki.server.exe will not receive an error on launch.</li>\n<li>General system stability improvements to enhance the user\u2019s experience. Nintendo be cool plz</li>\n</ul>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 34274,
+   "parent_id": null,
+   "author": "Ikaras",
+   "author_id": 52770,
+   "author_url": "https://forge.sp-tarkov.com/user/52770/ikaras",
+   "created_at": "2024-06-14T17:04:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <h3><strong>VERSION 1.1.0 RELEASED!</strong></h3>\n<p>Many improvements and added a new configuration editor to make the whole experience even easier! You can check the versions for the change log. If you have any issues or wish for a feature that could be useful, let me know below. GLHF!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 34284,
+   "parent_id": null,
+   "author": "jbs4bmx",
+   "author_id": 354,
+   "author_url": "https://forge.sp-tarkov.com/user/354/jbs4bmx",
+   "created_at": "2024-06-14T20:16:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You should take a look at the one I made for myself. You may be able to implement some of the things from mine into yours.<br />\n<a href=\"https://github.com/jbs4bmx/tarkyStuffs/tree/main/scripts/StartAKI\" target=\"_blank\" rel=\"noreferrer noopener\">https://github.com/jbs4bmx/tarkyStuffs/tree/main/scripts/StartAKI</a></p>\n<p>Great job on this. It looks really nice and the config editor is an excellent idea.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 35583,
+   "parent_id": null,
+   "author": "Ikaras",
+   "author_id": 52770,
+   "author_url": "https://forge.sp-tarkov.com/user/52770/ikaras",
+   "created_at": "2024-07-06T22:00:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <h3><strong>VERSION 1.1.1 RELEASED!</strong></h3>\n<p><strong>UPDATE FROM 1.1.0 OR BELOW</strong>: The Ika-SPT-Launcher is made to seamlessly use any Ika-SPT-Launcher.config.json configuration file, even if it is an older version. You can copy your older Ika-SPT-Launcher.config.json file along with the new launcher and configuration editor executables into your SPT 3.9.0 folder without any issue. You should not have to do anything else than run the launcher as you usually do.</p>\n<p>The 3.9.0 Server first run (where it instantiates its database and stuff) seem to not like being launched by Ika-SPT-Launcher. Make sure that you at least run the SPT.Server.exe for the first time by itself and let it finish its installation. After the first launch, you can use the Ika-SPT-Launcher as usual.</p>\n<p>Due to the change in the naming of the launcher and server from SPT (aki.x.exe =&gt; spt.x.exe) I have made modifications to the app to:</p>\n<p>- Assume 3.9.0 to new install (or if the configuration file for the application is not yet created)</p>\n<p>- Automatically change the server path and launcher path in the Ika-SPT-Launcher.config.json to reflect the new names if the user is running on SPT 3.9. Otherwise, it is business as usual! NOTE: The path itself will not be changed, only the exe name.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 35584,
+   "parent_id": null,
+   "author": "Ikaras",
+   "author_id": 52770,
+   "author_url": "https://forge.sp-tarkov.com/user/52770/ikaras",
+   "created_at": "2024-07-06T22:19:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Sorry! It seems like the publish did some weird shenanigans for the Ika-SPT-Launcher.exe for 1.1.1. If you have an issue using it, please download it again using the same link, I have updated the zip in the github.</p>\n<p>(This is for the 15 people that downloaded it like 20 minutes after release! Sorry again!)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  }
+ ]
+}
