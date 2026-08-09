@@ -27,6 +27,15 @@
     '<path d="M12 7.3c0 2.5-2.4 3.2-5.2 3.5" stroke="currentColor"' +
     ' stroke-width="1.4" fill="none"/></svg>';
 
+  // Same glyph as the collection drawer's download link, so the shape means
+  // the same thing wherever it appears.
+  var DOWNLOAD_ICON =
+    '<svg class="dlicon" viewBox="0 0 16 16" width="12" height="12"'
+    + ' aria-hidden="true" focusable="false" fill="none" stroke="currentColor"'
+    + ' stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">'
+    + '<path d="M8 2v7.5"/><path d="M4.75 6.5 8 9.75l3.25-3.25"/>'
+    + '<path d="M3 12.75h10"/></svg>';
+
   function hostName(host) {
     if (host.indexOf("github") !== -1) return "GitHub";
     if (host.indexOf("gitlab") !== -1) return "GitLab";
@@ -292,12 +301,17 @@
       (mod.teaser ? '<p class="teaser">' + esc(mod.teaser) + "</p>" : "") +
       "</div>" +
       '<div class="stats">' +
-      '<div class="statnums"><b>' + mod.downloads.toLocaleString() + "</b>downloads" +
-      (mod.comments ? "<br>" + mod.comments + " comments" : "") + "</div>" +
-      mark +
+      '<div class="statnums">' +
+      '<span class="dlcount" title="' + esc(mod.downloads.toLocaleString()) +
+      ' downloads"><b>' + mod.downloads.toLocaleString() + "</b>" +
+      DOWNLOAD_ICON + "</span>" +
+      (mod.comments ? '<span>' + mod.comments + " comments</span>" : "") +
       "</div>" +
-      '<div class="modfoot"><div class="badges">' + badges(mod) + "</div>" +
-      stars + "</div></article>";
+      "</div>" +
+      '<div class="modfoot">' + stars +
+      (stars ? '<span class="footdivider" aria-hidden="true"></span>' : "") +
+      '<div class="badges">' + badges(mod) + "</div>" +
+      mark + "</div></article>";
   }
 
   function resetList() {

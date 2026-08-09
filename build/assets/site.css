@@ -243,7 +243,11 @@ input:focus, select:focus {
   font-size: 12.5px;
   white-space: nowrap;
 }
-.statnums b { display: block; color: var(--text); font-size: 14px; font-weight: 600; }
+.statnums { display: flex; flex-direction: column; align-items: flex-end; gap: 2px; }
+.dlcount { display: inline-flex; align-items: center; gap: 5px; }
+.dlcount b { color: var(--text); font-size: 14px; font-weight: 600; }
+/* The icon replaces the word "downloads", so it sits quieter than the number. */
+.dlicon { color: var(--faint); flex: none; }
 
 /* Stars sit at the bottom of the rail and link straight to the repository. */
 .stars {
@@ -343,8 +347,19 @@ input:focus, select:focus {
   align-items: center;
   margin-top: 2px;
 }
+/* Bottom row: stars, a divider, then tags, with the collection button pushed
+   to the far corner. The divider marks the stars as a repository stat rather
+   than another filter tag. */
+.footdivider {
+  flex: none;
+  width: 1px;
+  align-self: stretch;
+  min-height: 18px;
+  background: var(--line);
+  margin: 0 2px;
+}
 .modfoot .badges { flex: 1; }
-.modfoot .stars { margin-left: auto; }
+.modfoot .mark { margin-left: auto; }
 .badge {
   display: inline-flex;
   align-items: center;
