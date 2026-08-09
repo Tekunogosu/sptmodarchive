@@ -196,6 +196,19 @@ attached to the comment they answer.
 **List pages** show a curated pack with each mod resolved to a working link,
 and an *Add all to collection* button that toggles the whole set at once.
 
+**Links between mods stay inside the archive.** Descriptions, version notes and
+comments are full of links to other mods — on the Forge, and, in older text, on
+the Hub that preceded it. Every one of those would be a dead end. Where the
+archive holds the mod being linked to, `build/archive_links.py` rewrites the
+link to its page here, fragment included, so `…/mod/902/bigbrain#versions`
+lands on the Versions tab. Both id schemes are understood, since a mod that
+predates the migration is linked by its Hub id in old comments; download URLs
+resolve to the mod's page, which carries the repository the file lived in.
+Around 3,400 links come home this way. Links naming a mod that was never
+archived are left pointing at the dead site — that still records where the mod
+used to live. Each mod page keeps one deliberate outbound link to its original
+Forge page, as provenance.
+
 ---
 
 ## Collections
@@ -450,6 +463,12 @@ Things learned the hard way, worth knowing before changing anything.
 - **Dependencies exist only on `/mod/{id}/versions`**, and are declared *per
   version* — a mod may have gained or dropped one over time, so the archive
   keeps both the latest version's dependencies and the union across all of them.
+- **`mods.sp-tarkov.com` file ids are not Hub file ids.** The site before the
+  Hub numbered its files from 1 in its own sequence, so
+  `mods.sp-tarkov.com/files/file/93-…` and `hub.sp-tarkov.com/files/file/93-…`
+  are unrelated mods. `archive_links.py` rewrites Hub links and deliberately
+  leaves the fifteen `mods.` ones alone: a link nobody can follow beats a link
+  that confidently goes somewhere wrong.
 - **A dropped request looks exactly like an empty result.** This is the single
   biggest hazard in the whole project: a rate-limited run will happily record
   hundreds of mods as having no versions and no dependencies. Every fetch here
@@ -526,6 +545,7 @@ Things learned the hard way, worth knowing before changing anything.
 | `source_overrides.json` | Manual source-URL corrections |
 | `scrape/forge.py` | Shared API client and the Livewire session |
 | `build/sanitize.py` | HTML allowlist |
+| `build/archive_links.py` | Forge/Hub links rewritten to archive pages |
 | `build/templates.py` | Page rendering |
 
 `data/mods.json`, `data/comments/`, `data/lists.json` and `data/images/`

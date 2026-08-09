@@ -18,6 +18,7 @@ import re
 import urllib.parse
 from html import escape
 
+from archive_links import localize_links
 from sanitize import clean_html, to_text
 
 
@@ -669,7 +670,7 @@ def render_versions(versions, limit=40):
         return ""
     blocks = []
     for version in versions[:limit]:
-        notes = clean_html(version["description"])
+        notes = localize_links(clean_html(version["description"]), "../")
         fika_text, fika_kind = FIKA_LABEL.get(version["fika"],
                                               FIKA_LABEL["unknown"])
         blocks.append(f"""
@@ -692,7 +693,9 @@ def render_versions(versions, limit=40):
 
 
 def render_comment(comment, replies, images=None):
-    body = localize_images(clean_html(comment["body_html"]), images or {}, "../")
+    body = localize_links(
+        localize_images(clean_html(comment["body_html"]), images or {}, "../"),
+        "../")
     reply_html = "".join(render_comment(reply, [], images) for reply in replies)
     likes = (f'<span class="likes">{plural(comment["likes"], "like")}</span>'
              if comment["likes"] else "")
@@ -827,8 +830,9 @@ def render_mod(mod, comment_data, known_ids, repos, images=None,
         f'{e(a["name"])}</a>' for a in mod["authors"]) or "Unknown"
     images = images or {}
     # Mod pages sit one directory deep, so mirrored images are ../assets/img/.
-    description = localize_images(clean_html(mod["description_html"]),
-                                  images, "../")
+    description = localize_links(
+        localize_images(clean_html(mod["description_html"]), images, "../"),
+        "../")
     category = mod.get("category") or {}
 
     flags = []

@@ -24,6 +24,7 @@ import sys
 import time
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import archive_links                                  # noqa: E402
 import community                                      # noqa: E402
 import templates                                      # noqa: E402
 from sanitize import to_text                          # noqa: E402
@@ -292,6 +293,7 @@ def build(limit=None, base_url=BASE_URL):
     threads = load_comments()
     repos = load_repos()
     images = load_images()
+    mod_lists = load_lists()
     if images:
         print(f"  {len(images)} mirrored images", file=sys.stderr)
     if repos:
@@ -308,6 +310,11 @@ def build(limit=None, base_url=BASE_URL):
 
     # Dependency links resolve to archive pages where the target was archived,
     # and fall back to the (soon dead) Forge URL where it was not.
+    # Links written by mod authors and commenters point at the Forge and at
+    # the Hub before it. Wherever they name something we archived, they are
+    # rewritten to point here instead -- see build/archive_links.py.
+    archive_links.set_link_map(mods, mod_lists, href_for, templates.list_href)
+
     known_ids = {mod["id"]: href_for(mod) for mod in mods}
     lookup = {mod["id"]: {"id": mod["id"], "name": mod["name"],
                           "href": "mod/" + href_for(mod),
@@ -343,7 +350,6 @@ def build(limit=None, base_url=BASE_URL):
 
     # Mod lists: curated modpacks, each rendered with its mods resolved
     # against the archive so every entry is a working link.
-    mod_lists = load_lists()
     if mod_lists:
         for entry in mod_lists:
             write(os.path.join(SITE, "list", templates.list_href(entry)),

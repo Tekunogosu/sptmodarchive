@@ -39,6 +39,10 @@ ALLOWED_ATTRS = {
 
 SAFE_SCHEMES = {"http", "https", "mailto", ""}
 
+# Stamped on every link. Named because archive_links.py strips it back off the
+# links it redirects into the archive, which are not outbound at all.
+OUTBOUND_ATTRS = ' target="_blank" rel="noopener noreferrer nofollow"'
+
 
 def safe_url(value):
     """Reject anything that could execute, including `javascript:` in disguise."""
@@ -118,7 +122,7 @@ class Sanitizer(HTMLParser):
         if tag == "a":
             # Outbound links from an archive should not leak referrers or
             # hand the opener window to the destination.
-            parts.append(' target="_blank" rel="noopener noreferrer nofollow"')
+            parts.append(OUTBOUND_ATTRS)
         if tag == "img":
             parts.append(' loading="lazy"')
         return "".join(parts)
