@@ -45,7 +45,8 @@
     list: document.getElementById("modlist"),
     count: document.getElementById("count"),
     copy: document.getElementById("copy-sources"),
-    sentinel: document.getElementById("sentinel")
+    sentinel: document.getElementById("sentinel"),
+    scroller: document.getElementById("listscroll")
   };
 
   var visible = [];      // current filtered+sorted set
@@ -90,6 +91,7 @@
     sortVisible(els.sort.value);
     resetList();
     updateCount();
+    if (els.scroller) els.scroller.scrollTop = 0;
   }
 
   // --- sorting ---------------------------------------------------------
@@ -318,17 +320,17 @@
     if (!control) return;
     control.value = tag.getAttribute("data-value");
     onChange();
-    window.scrollTo({ top: 0, behavior: "smooth" });
+
   });
 
   if (window.IntersectionObserver) {
     new IntersectionObserver(function (entries) {
       if (entries[0].isIntersecting) renderMore();
-    }, { rootMargin: "600px" }).observe(els.sentinel);
+    }, { root: els.scroller, rootMargin: "600px" }).observe(els.sentinel);
   } else {
-    window.addEventListener("scroll", function () {
-      if (window.innerHeight + window.scrollY >=
-          document.body.offsetHeight - 600) renderMore();
+    els.scroller.addEventListener("scroll", function () {
+      if (els.scroller.scrollTop + els.scroller.clientHeight >=
+          els.scroller.scrollHeight - 600) renderMore();
     });
   }
 

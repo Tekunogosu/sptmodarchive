@@ -640,6 +640,36 @@
     showImportModal(resolved);
   }
 
+  // --- back to top ------------------------------------------------------
+
+  /* Scrolls whichever element is actually scrolling: the index gives the mod
+   * list its own overflow so the filters stay put, while every other page
+   * scrolls the window. */
+  function scroller() { return document.getElementById("listscroll"); }
+
+  var toTop = document.createElement("button");
+  toTop.type = "button";
+  toTop.className = "to-top";
+  toTop.setAttribute("aria-label", "Back to top");
+  toTop.innerHTML = "↑";
+  document.body.appendChild(toTop);
+
+  toTop.addEventListener("click", function () {
+    var box = scroller();
+    if (box) box.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  function updateToTop() {
+    var box = scroller();
+    var offset = box ? box.scrollTop : window.scrollY;
+    toTop.classList.toggle("show", offset > 400);
+  }
+
+  (scroller() || window).addEventListener("scroll", updateToTop);
+  if (scroller()) window.addEventListener("scroll", updateToTop);
+  updateToTop();
+
   // --- start ------------------------------------------------------------
 
   Collection.onChange(function () {

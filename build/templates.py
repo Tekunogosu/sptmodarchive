@@ -207,8 +207,10 @@ def render_index(index_json, categories, spt_lines, stats):
   <button type="button" class="linkbtn" id="copy-sources">Copy source URLs</button>
 </div>
 
-<div class="modlist" id="modlist"></div>
-<div id="sentinel"></div>
+<div class="listscroll" id="listscroll">
+  <div class="modlist" id="modlist"></div>
+  <div id="sentinel"></div>
+</div>
 
 <noscript>
   <p class="empty">Searching and filtering need JavaScript, but every mod has its

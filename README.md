@@ -48,9 +48,15 @@ python3 scrape/fetch_images.py                 # 2. thumbnails for new mods (sec
 python3 scrape/scrape_comments.py --probe      # 3. check comments still work
 python3 scrape/scrape_comments.py --spt '4.'   #    new current-gen mods
 python3 scrape/repo_status.py                  # 4. repo activity          (~10 min)
-python3 build/build.py                         # 5. rebuild site/          (~3 s)
+python3 build/build.py                         # 5. preview locally        (~3 s)
 git add -A && git commit -m "Refresh archive" && git push
 ```
+
+**Step 5 is optional.** Pushing is what publishes: CI rebuilds `site/` from the
+committed data and deploys it to Pages, and `site/` is gitignored precisely so
+the generated output never has to be committed. Run `build.py` locally when you
+want to see a change before it goes live (`python3 -m http.server -d site 8000`),
+or to browse the archive offline — not to publish it.
 
 Everything only fetches what changed, so a weekly run is roughly 15 minutes and
 mostly unattended.

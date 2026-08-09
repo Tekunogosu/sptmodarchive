@@ -178,6 +178,39 @@ input:focus, select:focus {
   .stats { grid-column: 2; align-items: flex-start; text-align: left; }
 }
 
+/* The list scrolls inside itself so search and filters stay on screen.
+   On phones that costs more than it gives, so the page scrolls normally. */
+.listscroll {
+  overflow-y: auto;
+  max-height: calc(100vh - 200px);
+  padding-right: 4px;
+  overscroll-behavior: contain;
+}
+@media (max-width: 560px) {
+  .listscroll { overflow-y: visible; max-height: none; padding-right: 0; }
+}
+
+.to-top {
+  position: fixed;
+  left: 18px;
+  bottom: 18px;
+  z-index: 50;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--line);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.18s, visibility 0.18s;
+}
+.to-top.show { opacity: 1; visibility: visible; }
+.to-top:hover { color: var(--accent); border-color: var(--accent-dim); }
+
 /* --- badges ------------------------------------------------------------ */
 
 .badges { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 6px; }
