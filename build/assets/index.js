@@ -228,16 +228,20 @@
       ' title="Filter by this">' + esc(text) + "</button>";
   }
 
+  // Order is fixed and matches every other badge row in the archive: the two
+  // questions that decide whether a mod is usable at all -- which SPT, and
+  // whether it survives Fika -- come first, in that order, so the eye finds
+  // them in the same place on every tile. Description and warnings follow.
   function badges(mod) {
     var out = "";
+    if (mod.spt_latest) {
+      out += tagBadge("spt", mod.spt_latest, "spt", "SPT " + mod.spt_latest);
+    }
     if (mod.fika) {
       out += tagBadge("fika", "yes", "fika", "Fika ✓");
     }
     if (mod.category_title) {
       out += tagBadge("category", mod.category, "cat", mod.category_title);
-    }
-    if (mod.spt_latest) {
-      out += tagBadge("spt", mod.spt_latest, "spt", "SPT " + mod.spt_latest);
     }
     if (mod.dep_count) {
       out += '<span class="badge">' + mod.dep_count + " dep" +
@@ -295,7 +299,9 @@
       ' data-sources="' + esc((mod.source_urls || []).join(" ")) + '"' +
       depsAttr(mod) +
       ' aria-pressed="false">' +
-      '<span class="mark-label">Add to collection</span></button>';
+      '<span class="mark-label">' +
+      '<span class="lbl-state">Add to collection</span>' +
+      '<span class="lbl-hover">Remove</span></span></button>';
 
     var count = (mod.stars || 0).toLocaleString();
     var stars = mod.repo_url

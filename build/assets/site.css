@@ -13,6 +13,10 @@
   --fika: #4da3ff;
   --ok: #5cb87a;
   --warn: #d97a4a;
+  /* Distinct from --warn on purpose: orange qualifies a mod ("contains ads"),
+     red rules it out ("Fika not supported"). Kept apart enough to survive the
+     two sitting in the same badge row. */
+  --bad: #e0625c;
   --radius: 8px;
   --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
 }
@@ -31,6 +35,7 @@
     --fika: #1667c4;
     --ok: #2f7d4a;
     --warn: #b4551f;
+    --bad: #b3302b;
   }
 }
 
@@ -377,13 +382,24 @@ input:focus, select:focus {
   letter-spacing: 0.02em;
   white-space: nowrap;
 }
-.badge.spt { font-family: var(--mono); }
+/* Badge colour is a fixed language, not decoration, so a colour means the same
+   thing wherever it appears: bronze is the SPT version and blue is Fika, the
+   two facts that decide whether a mod is usable; red is an outright no, orange
+   qualifies, green marks a community submission. Everything descriptive --
+   category, dependency count
+   -- stays neutral, which is what keeps the two that matter legible in a row
+   of six. */
+.badge.spt {
+  font-family: var(--mono);
+  color: var(--accent);
+  border-color: color-mix(in srgb, var(--accent) 40%, transparent);
+}
 button.badge { font: inherit; font-size: 11.5px; font-weight: 600; cursor: pointer; }
 button.badge:hover { border-color: var(--faint); filter: brightness(1.25); }
 .stars.muted { color: var(--faint); opacity: 0.7; }
 .badge.fika { color: var(--fika); border-color: color-mix(in srgb, var(--fika) 45%, transparent); }
-.badge.cat { color: var(--accent); border-color: color-mix(in srgb, var(--accent) 40%, transparent); }
 .badge.warn { color: var(--warn); border-color: color-mix(in srgb, var(--warn) 45%, transparent); }
+.badge.bad { color: var(--bad); border-color: color-mix(in srgb, var(--bad) 45%, transparent); }
 .badge.community { color: var(--ok); border-color: color-mix(in srgb, var(--ok) 45%, transparent); }
 
 /* --- mod page ---------------------------------------------------------- */
@@ -476,6 +492,7 @@ button.badge:hover { border-color: var(--faint); filter: brightness(1.25); }
    browser defaults. Scoped to .splitcols: other panels keep the small
    uppercase heading style. */
 .splitcols .panel > h2,
+.factshead h2,
 .sourcehead h2 {
   margin: 0;
   font-size: 22px;
@@ -485,6 +502,18 @@ button.badge:hover { border-color: var(--faint); filter: brightness(1.25); }
   letter-spacing: normal;
 }
 .splitcols .panel > h2 { margin-bottom: 12px; }
+
+/* The SPT version heads the Details panel, pinned to the far edge so it reads
+   as the panel's headline fact rather than as another tag. Yellow because it
+   is the one thing on the page that decides whether a mod is usable at all. */
+.factshead {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.factshead h2 { margin-bottom: 0; }
+.factshead .badge { margin-left: auto; }
 
 /* Heading and its download link on one row, the link sitting next to the word
    rather than pushed to the panel's far edge. */
@@ -611,9 +640,19 @@ button.badge:hover { border-color: var(--faint); filter: brightness(1.25); }
 }
 .mark.marked:hover::before { content: "×"; }
 
+/* Only a marked button reserves room for both labels, by stacking them in one
+   grid cell: it is the one that swaps text on hover, and a button that resizes
+   under the cursor shoves whatever sits beside it. "Remove" is the shorter of
+   the two, so this costs nothing today -- it holds the width at whichever
+   label is longer, whatever either is later reworded to. An unmarked button
+   never shows the hover label and stays the width of "Add to collection". */
 .mark .lbl-hover { display: none; }
-.mark.marked:hover .lbl-state { display: none; }
-.mark.marked:hover .lbl-hover { display: inline; }
+.mark.marked .mark-label { display: inline-grid; grid-template-areas: "label"; }
+.mark.marked .mark-label > span { grid-area: label; }
+/* Hidden with visibility, not display, so it still reserves the width. */
+.mark.marked .lbl-hover { display: block; visibility: hidden; }
+.mark.marked:hover .lbl-state { visibility: hidden; }
+.mark.marked:hover .lbl-hover { visibility: visible; }
 .mark:not(.marked).mark-wide::before { content: "+"; }
 .mark.mark-wide {
   width: auto;

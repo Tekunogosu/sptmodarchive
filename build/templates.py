@@ -200,7 +200,13 @@ def mark_button(mod_id, name, href, sources, label=False, deps=()):
     """
     # Wrapped so the "+" can be swapped for the checkmark without the button
     # changing width -- the tick is drawn by CSS, the plus is simply hidden.
-    inner = ('<span class="mark-label">Add to collection</span>' if label
+    # Both labels are always present: collection.js writes the resting one,
+    # and CSS shows the other on hover, so what a click will do is stated in
+    # words as well as by the × and the colour change.
+    inner = ('<span class="mark-label">'
+             '<span class="lbl-state">Add to collection</span>'
+             '<span class="lbl-hover">Remove</span>'
+             '</span>' if label
              else '<span class="mark-plus">+</span>')
     # Dependencies travel with the button so they can be added alongside the
     # mod without any lookup -- a mod page has no access to the catalogue.
@@ -583,6 +589,10 @@ def render_source_links(links, repos):
 def render_facts_and_source(mod, repos, facts_html):
     """Key numbers and repositories side by side, to halve the page height."""
     releases = releases_url(mod["source_links"], repos)
+    # "Which SPT does this run on" is the first question asked of any mod, so
+    # it heads the panel at the far edge rather than queuing with the tags.
+    spt = (badge(f"SPT {spt_label(mod['spt_constraint'])}", "spt")
+           if mod["spt_constraint"] else "")
     forge_link = (f'<p class="forgelink"><a href="{e(mod["forge_url"])}" '
                   f'target="_blank" rel="noopener noreferrer">Original Forge '
                   f'page</a> <span class="label">offline after shutdown</span></p>'
@@ -590,7 +600,10 @@ def render_facts_and_source(mod, repos, facts_html):
     return f"""
 <div class="splitcols">
   <section class="panel">
-    <h2>Details</h2>
+    <div class="factshead">
+      <h2>Details</h2>
+      {spt}
+    </div>
     <div class="facts">{facts_html}</div>
   </section>
   <section class="panel">
@@ -658,11 +671,31 @@ def render_dependencies(mod, lookup):
 
 
 FIKA_LABEL = {
-    "compatible": ("Fika compatible", "fika"),
-    "incompatible": ("Not Fika compatible", "warn"),
+    "compatible": ("Fika compatible ✓", "fika"),
+    "incompatible": ("Fika not supported ✗", "bad"),
     "partial": ("Partial Fika support", "warn"),
     "unknown": ("Fika support unknown", ""),
 }
+
+
+def fika_state(mod):
+    """One of FIKA_LABEL's keys for the mod as a whole.
+
+    Two fields disagree about what "Fika" means. The mod carries a plain
+    boolean the author ticked once, which cannot say "no" -- only "yes" or
+    "nothing said" -- while each version carries a real three-state answer.
+    Neither alone is enough: the boolean cannot express the 25 mods declared
+    incompatible, and the latest version says nothing for the 21 mods whose
+    author ticked the box but never marked a version.
+
+    So the latest version wins wherever it is explicit, and the mod's flag
+    fills the silence. One mod, LootNET, is flagged compatible while its
+    latest version declares otherwise; the version is newer and more specific,
+    and a wrong "yes" here costs more than a wrong "unknown".
+    """
+    if mod.get("fika_latest") in ("compatible", "incompatible", "partial"):
+        return mod["fika_latest"]
+    return "compatible" if mod["fika"] else "unknown"
 
 
 def render_versions(versions, limit=40):
@@ -836,14 +869,11 @@ def render_mod(mod, comment_data, known_ids, repos, images=None,
     category = mod.get("category") or {}
 
     flags = []
-    if mod["fika"]:
-        flags.append(badge("Fika compatible ✓", "fika"))
-    else:
-        flags.append(badge("Fika: not marked compatible", ""))
+    flags.append(badge(*FIKA_LABEL[fika_state(mod)]))
     if category.get("title"):
         flags.append(badge(category["title"], "cat"))
-    if mod["spt_constraint"]:
-        flags.append(badge(f"SPT {spt_label(mod['spt_constraint'])}", "spt"))
+    # The SPT version is not here with the other tags: it heads the Details
+    # panel, where the facts it belongs with are.
     if mod["origin"] == "community":
         flags.append(badge("Community submission", "community"))
     for key, label in (("contains_ads", "Contains ads"),
@@ -856,10 +886,11 @@ def render_mod(mod, comment_data, known_ids, repos, images=None,
     thumb = (f'<img src="{e(local_image(mod["thumbnail"], images, "../"))}" '
              f'alt="" loading="lazy">' if mod["thumbnail"] else "")
 
+    # No SPT row: the version heads the panel these facts sit in, and stating
+    # it twice inside one panel reads as two different facts at a glance.
     facts = [
         ("Downloads", f"{mod['downloads']:,}"),
         ("Latest version", mod["latest_version"] or "—"),
-        ("SPT", spt_label(mod["spt_constraint"]) or "—"),
         ("Latest release", fmt_date(last_release(mod)) or "—"),
         ("Published", fmt_date(mod["published_at"]) or "—"),
         ("License", (mod["license"].get("name") or "—")),

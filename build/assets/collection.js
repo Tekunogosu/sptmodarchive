@@ -577,7 +577,10 @@
       var marked = Collection.has(numericIfPossible(button.getAttribute("data-id")));
       button.classList.toggle("marked", marked);
       button.setAttribute("aria-pressed", marked ? "true" : "false");
-      var label = button.querySelector(".mark-label");
+      // The resting label only. Its hover twin is fixed text, and writing to
+      // .mark-label instead would delete both spans on the first sync.
+      var label = button.querySelector(".lbl-state") ||
+        button.querySelector(".mark-label");
       if (label) label.textContent = marked ? "In collection" : "Add to collection";
     });
   }
