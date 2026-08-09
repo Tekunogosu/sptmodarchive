@@ -135,8 +135,8 @@ def best_repo(mod, repos):
 def index_entry(mod, comment_count, images=None, repos=None):
     category = mod.get("category") or {}
     repo_url, stars = best_repo(mod, repos or {})
-    lines = sorted({templates.spt_line(c) for c in mod["all_spt_constraints"]}
-                   - {""})
+    versions = sorted({templates.spt_label(c) for c in mod["all_spt_constraints"]}
+                      - {""})
     return {
         "id": mod["id"],
         "name": mod["name"],
@@ -149,10 +149,10 @@ def index_entry(mod, comment_count, images=None, repos=None):
         "category_title": category.get("title", ""),
         "fika": bool(mod["fika"]),
         "downloads": mod["downloads"],
-        "updated": mod["updated_at"][:10],
+        "updated": templates.last_release(mod)[:10],
         "published": mod["published_at"][:10],
-        "spt_lines": lines,
-        "spt_latest": mod["spt_constraint"],
+        "spt": versions,
+        "spt_latest": templates.spt_label(mod["spt_constraint"]),
         "dep_count": len(mod.get("all_dependencies") or []),
         "comments": comment_count,
         "sources": len(mod["source_links"]),
@@ -168,8 +168,8 @@ def index_entry(mod, comment_count, images=None, repos=None):
 
 
 def facets(mods):
-    """Category and SPT-line filter options, with counts, ordered usefully."""
-    categories, lines = {}, {}
+    """Filter options: categories, and SPT versions grouped by major line."""
+    categories, versions = {}, {}
     for mod in mods:
         category = mod.get("category") or {}
         if category.get("slug"):
@@ -177,16 +177,28 @@ def facets(mods):
                 category["slug"],
                 {"slug": category["slug"], "title": category["title"], "count": 0})
             entry["count"] += 1
-        for constraint in mod["all_spt_constraints"]:
-            line = templates.spt_line(constraint)
-            if line:
-                lines[line] = lines.get(line, 0) + 1
+        # Count distinct *mods*, not constraint strings. A mod can declare
+        # several constraints that normalise to the same version, and several
+        # versions within one major -- summing occurrences double-counts it.
+        for label in {templates.spt_label(c) for c in mod["all_spt_constraints"]}:
+            if label:
+                versions.setdefault(label, set()).add(mod["id"])
 
-    def version_key(line):
-        return [int(p) if p.isdigit() else 0 for p in line.split(".")]
+    def key(version):
+        return [int(p) if p.isdigit() else 0 for p in version.split(".")]
 
-    return (sorted(categories.values(), key=lambda c: -c["count"]),
-            sorted(lines.items(), key=lambda kv: version_key(kv[0]), reverse=True))
+    majors = {}
+    for version, mod_ids in versions.items():
+        majors.setdefault(version.split(".")[0], []).append((version, mod_ids))
+
+    spt_facets = []
+    for major in sorted(majors, key=lambda m: -key(m)[0]):
+        rows = sorted(majors[major], key=lambda vc: key(vc[0]), reverse=True)
+        distinct = set().union(*(ids for _, ids in rows))
+        spt_facets.append((major, len(distinct),
+                           [(v, len(ids)) for v, ids in rows]))
+
+    return sorted(categories.values(), key=lambda c: -c["count"]), spt_facets
 
 
 # --- writing -------------------------------------------------------------
@@ -216,6 +228,8 @@ def build(limit=None):
     mods.sort(key=lambda m: -m["downloads"])
     if limit:
         mods = mods[:limit]
+
+    templates.set_archive_total(len(mods))
 
     threads = load_comments()
     repos = load_repos()

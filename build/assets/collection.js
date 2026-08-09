@@ -20,7 +20,6 @@
   "use strict";
 
   var STORE_KEY = "spt-archive-collection";
-  var OPEN_KEY = "spt-archive-collection-open";
   var VERSION = "1";
 
   // Path back to the site root, so links work from any directory depth.
@@ -349,40 +348,67 @@
 
   // --- flyout -----------------------------------------------------------
 
-  function buildFlyout() {
-    var aside = document.createElement("aside");
-    aside.className = "collection-flyout";
-    aside.id = "collection-flyout";
-    aside.innerHTML =
-      '<button class="collection-tab" type="button" aria-expanded="false"' +
-      ' aria-controls="collection-body">' +
-      '<span class="collection-tab-label">Collection</span>' +
-      '<span class="collection-count">0</span></button>' +
-      '<div class="collection-body" id="collection-body">' +
+  /* A drawer rather than a floating panel: nothing overlaps the page while
+   * you browse, and being full-height means the list never has to compete for
+   * room with wherever the opener happens to sit. */
+  function buildDrawer() {
+    var wrap = document.createElement("div");
+    wrap.innerHTML =
+      '<div class="drawer-backdrop" id="collection-backdrop" hidden></div>' +
+      '<aside class="collection-drawer" id="collection-drawer" hidden' +
+      '       aria-label="Your collection">' +
+      '  <div class="drawer-head">' +
+      '    <h2>Collection <span class="collection-count">0</span></h2>' +
+      '    <button type="button" class="drawer-close" data-close' +
+      '            aria-label="Close collection">×</button>' +
+      '  </div>' +
       '  <div class="collection-head">' +
       '    <button type="button" class="linkbtn" data-copy="sources">Copy source URLs</button>' +
       '    <button type="button" class="linkbtn" data-copy="share">Copy share link</button>' +
       '    <button type="button" class="linkbtn danger" data-clear>Clear</button>' +
       '  </div>' +
       '  <ul class="collection-list"></ul>' +
-      '</div>';
-    document.body.appendChild(aside);
-    return aside;
+      "</aside>";
+    while (wrap.firstChild) document.body.appendChild(wrap.firstChild);
   }
 
-  var flyout = buildFlyout();
-  var tab = flyout.querySelector(".collection-tab");
+  buildDrawer();
+  var flyout = document.getElementById("collection-drawer");
+  var backdrop = document.getElementById("collection-backdrop");
   var list = flyout.querySelector(".collection-list");
   var countBadge = flyout.querySelector(".collection-count");
 
+  // The opener lives in the masthead, rendered by the build.
+  var opener = document.getElementById("collection-open");
+  var openerCount = document.getElementById("collection-open-count");
+
   function setOpen(open) {
-    flyout.classList.toggle("open", open);
-    tab.setAttribute("aria-expanded", open ? "true" : "false");
-    try { localStorage.setItem(OPEN_KEY, open ? "1" : "0"); } catch (e) { /* no-op */ }
+    flyout.toggleAttribute("hidden", !open);
+    backdrop.toggleAttribute("hidden", !open);
+    // A frame later so the transition has a start state to animate from.
+    requestAnimationFrame(function () {
+      flyout.classList.toggle("open", open);
+      backdrop.classList.toggle("open", open);
+    });
+    if (opener) opener.setAttribute("aria-expanded", open ? "true" : "false");
+    if (open) {
+      var close = flyout.querySelector("[data-close]");
+      if (close) close.focus();
+    } else if (opener) {
+      opener.focus();
+    }
   }
 
-  tab.addEventListener("click", function () {
-    setOpen(!flyout.classList.contains("open"));
+  if (opener) {
+    opener.addEventListener("click", function () {
+      setOpen(flyout.hasAttribute("hidden"));
+    });
+  }
+
+  backdrop.addEventListener("click", function () { setOpen(false); });
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape" && !flyout.hasAttribute("hidden")) setOpen(false);
   });
 
   flyout.addEventListener("click", function (event) {
@@ -396,6 +422,8 @@
       copy(text, copyButton, kind === "share" ? "Link copied" : "Copied");
       return;
     }
+
+    if (event.target.closest("[data-close]")) { setOpen(false); return; }
 
     if (event.target.closest("[data-clear]")) {
       if (Collection.count() &&
@@ -416,7 +444,8 @@
   function renderFlyout() {
     var all = Collection.all();
     countBadge.textContent = all.length;
-    flyout.classList.toggle("empty", all.length === 0);
+    if (openerCount) openerCount.textContent = all.length;
+    if (opener) opener.classList.toggle("empty", all.length === 0);
 
     if (!all.length) {
       list.innerHTML = '<li class="collection-empty">No mods marked yet. ' +
@@ -449,11 +478,54 @@
     }).join("");
   }
 
+  /* Download glyph: arrow into a tray. Drawn here rather than shipped as
+   * an image so it inherits colour, needs no extra request, and stays
+   * crisp at any zoom. */
+  var DOWNLOAD_ICON =
+    '<svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"'
+    + ' focusable="false" fill="none" stroke="currentColor"'
+    + ' stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">'
+    + '<path d="M8 2v7.5"/><path d="M4.75 6.5 8 9.75l3.25-3.25"/>'
+    + '<path d="M3 12.75h10"/></svg>';
+
+  /* Source URLs point at a repository, sometimes deep inside one
+   * (/tree/<branch>, trailing .git). Reduce to owner/repo and append the
+   * host's releases path, which is where a download actually lives. */
+  function releasesUrl(sources) {
+    var list = sources || [];
+    for (var i = 0; i < list.length; i++) {
+      var parsed;
+      try { parsed = new URL(list[i]); } catch (e) { continue; }
+
+      var host = parsed.hostname.replace(/^www\./, "");
+      var parts = parsed.pathname.split("/").filter(Boolean);
+      if (parts.length < 2) continue;
+
+      var base = parsed.origin + "/" + parts[0] + "/" +
+                 parts[1].replace(/\.git$/, "");
+      if (host === "gitlab.com") return base + "/-/releases";
+      if (host === "github.com" || host === "codeberg.org" ||
+          host === "gitea.com") {
+        return base + "/releases";
+      }
+    }
+    return "";
+  }
+
   function item(entry, isDependency) {
     var href = UP + (entry.href || "");
+    var releases = releasesUrl(entry.sources);
+    var download = releases
+      ? '<a class="dl" href="' + escapeAttr(releases) + '" target="_blank"' +
+        ' rel="noopener noreferrer" title="Downloads / releases for ' +
+        escapeAttr(entry.name || "") + '" aria-label="Downloads for ' +
+        escapeAttr(entry.name || "") + '">' + DOWNLOAD_ICON + '</a>'
+      : '<span class="dl empty" aria-hidden="true">' + DOWNLOAD_ICON + '</span>';
+
     return '<li' + (isDependency ? ' class="dependency"' : "") + '>' +
       (isDependency ? '<span class="dep-mark" title="Required by the mod above"' +
         ' aria-hidden="true">└</span>' : "") +
+      download +
       '<a href="' + escapeAttr(href) + '">' +
       escapeText(entry.name || String(entry.id)) + "</a>" +
       '<button type="button" class="collection-remove" data-remove="' +
@@ -679,10 +751,6 @@
 
   renderFlyout();
   syncButtons();
-
-  var wasOpen = false;
-  try { wasOpen = localStorage.getItem(OPEN_KEY) === "1"; } catch (e) { /* no-op */ }
-  if (wasOpen) setOpen(true);
 
   // Deferred scripts run in document order, all before DOMContentLoaded. This
   // file loads first so index.js can use the API above immediately -- which

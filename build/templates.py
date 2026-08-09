@@ -15,9 +15,19 @@ Two rules hold throughout:
 
 import json
 import re
+import urllib.parse
 from html import escape
 
 from sanitize import clean_html, to_text
+
+
+ARCHIVE_TOTAL = 0
+
+
+def set_archive_total(n):
+    """Recorded once per build so every page can show it."""
+    global ARCHIVE_TOTAL
+    ARCHIVE_TOTAL = n
 
 
 def e(value):
@@ -36,10 +46,52 @@ def mod_href(mod):
 
 
 def spt_line(constraint):
-    """The SPT minor line a constraint belongs to, e.g. "~4.0.1" -> "4.0"."""
-    digits = constraint.lstrip("^~>=< ")
-    parts = [p for p in digits.split(".") if p and p[0].isdigit()]
-    return ".".join(parts[:2]) if len(parts) >= 2 else (parts[0] if parts else "")
+    """The SPT minor line a constraint targets, e.g. "~4.0 <4.1.0" -> "4.0".
+
+    Constraints are ranges, not versions: "~4.0 <4.1.0", ">=3.8.0 <3.9". Only
+    the first version in the string names the line the mod is built for, so it
+    is matched directly. Splitting on "." instead lets the upper bound bleed
+    into the label and produces nonsense like "4.0 <4".
+    """
+    match = re.search(r"(\d+)(?:\.(\d+))?", constraint or "")
+    if not match:
+        return ""
+    major, minor = match.group(1), match.group(2)
+    return f"{major}.{minor}" if minor is not None else major
+
+
+def last_release(mod):
+    """When the mod itself last changed, i.e. its newest version's date.
+
+    Not `updated_at`: that is the Forge's row-modified timestamp, and bulk
+    database migrations set it on thousands of mods at once. 83% of the
+    archive shares just three such days, so displaying or sorting by it says
+    more about the Forge's maintenance schedule than about the mod.
+    """
+    dates = [v["published_at"] for v in mod.get("versions") or []
+             if v.get("published_at")]
+    return max(dates) if dates else (mod.get("published_at") or "")
+
+
+def spt_label(constraint):
+    """A constraint as something readable on a badge.
+
+    Exact-looking constraints keep their precision ("~4.0.0" -> "4.0.0"), while
+    ranges collapse to the line they target ("~4.0 <4.1.0" -> "4.0"). Printing
+    the raw range instead truncates to things like "4.0 <4", which reads as a
+    typo rather than as an upper bound.
+    """
+    text = (constraint or "").strip()
+    if not text:
+        return ""
+    if " " not in text and "<" not in text and ">" not in text:
+        text = text.lstrip("^~= ")
+    else:
+        text = spt_line(text)
+    # Real data contains "4.1.", "4.1.*" and a bare "*"; normalise so the
+    # filter does not offer three spellings of the same version.
+    text = re.sub(r"\.[x*]$", "", text.strip())
+    return text.rstrip(".*").strip()
 
 
 def fmt_date(stamp):
@@ -110,8 +162,20 @@ def page(title, body, *, depth=0, description="", scripts=()):
 <body>
 <header class="masthead">
   <div class="wrap">
-    <h1><a href="{up}index.html">SPT Mod Archive</a></h1>
-    <p class="tagline">A community archive of the SPT Forge mod listings.</p>
+    <div class="masthead-row">
+      <div>
+        <h1><a href="{up}index.html">SPT Mod Archive</a></h1>
+        <p class="tagline">A community archive of the SPT Forge mod listings.</p>
+      </div>
+      <div class="masthead-side">
+        <span class="archived"><strong>{ARCHIVE_TOTAL:,}</strong> mods archived</span>
+        <button type="button" id="collection-open" class="collection-open empty"
+                aria-expanded="false" aria-controls="collection-drawer">
+          Collection <span id="collection-open-count"
+                           class="collection-count">0</span>
+        </button>
+      </div>
+    </div>
   </div>
 </header>
 <main class="wrap">
@@ -159,14 +223,22 @@ def option_list(options, placeholder):
     return "\n      ".join(out)
 
 
-def render_index(index_json, categories, spt_lines, stats):
+def render_index(index_json, categories, spt_facets, stats):
     """The catalogue page. The mod data ships inline so it works offline."""
     category_options = option_list(
         [(c["slug"], f'{c["title"]} ({c["count"]})') for c in categories],
         "All categories")
-    spt_options = option_list(
-        [(line, f"SPT {line} ({count})") for line, count in spt_lines],
-        "Any SPT version")
+    spt_groups = "".join(
+        f"""<details class="sptgroup"{' open' if major == '4' else ''}>
+      <summary><label class="anymajor"><input type="checkbox" name="sptmajor"
+        value="{e(major)}"> Any {e(major)}.x</label>
+        <span class="tabcount">{total:,}</span></summary>
+      <div class="sptversions">{"".join(
+          f'<label><input type="checkbox" name="sptv" value="{e(v)}">'
+          f'<span>{e(v)}</span><span class="n">{n:,}</span></label>'
+          for v, n in versions)}</div>
+    </details>"""
+        for major, total, versions in spt_facets)
 
     body = f"""
 <form class="controls" onsubmit="return false">
@@ -175,9 +247,18 @@ def render_index(index_json, categories, spt_lines, stats):
   <select id="category" aria-label="Category">
       {category_options}
   </select>
-  <select id="spt" aria-label="SPT version">
-      {spt_options}
-  </select>
+  <div class="sptfilter" id="sptfilter">
+    <button type="button" id="spt-summary" class="sptsummary"
+            aria-expanded="false" aria-controls="spt-panel">Any SPT version</button>
+    <div class="sptpanel" id="spt-panel" hidden>
+      <div class="sptactions">
+        <button type="button" class="linkbtn" data-spt="all">All</button>
+        <button type="button" class="linkbtn" data-spt="none">None</button>
+        <button type="button" class="linkbtn" data-spt="4">Only 4.x</button>
+      </div>
+      {spt_groups}
+    </div>
+  </div>
   <select id="fika" aria-label="Fika compatibility">
     <option value="">Fika: any</option>
     <option value="yes">Fika compatible</option>
@@ -203,8 +284,14 @@ def render_index(index_json, categories, spt_lines, stats):
 </form>
 
 <div class="resultbar">
-  <span id="count">{stats['mod_count']:,} mods</span>
-  <button type="button" class="linkbtn" id="copy-sources">Copy source URLs</button>
+  <span class="counts">
+    <span id="count">Showing {stats['mod_count']:,} mods</span>
+    <span id="fika-count" class="subcount"></span>
+  </span>
+  <span class="resultactions">
+    <button type="button" class="linkbtn" id="reset-filters">Reset filters</button>
+    <button type="button" class="linkbtn" id="copy-sources">Copy source URLs</button>
+  </span>
 </div>
 
 <div class="listscroll" id="listscroll">
@@ -339,7 +426,7 @@ def render_versions(versions, limit=40):
   <div class="version">
     <div class="vhead">
       <span class="num">{e(version['version'] or '—')}</span>
-      {badge('SPT ' + version['spt_constraint'], 'spt') if version['spt_constraint'] else ''}
+      {badge('SPT ' + spt_label(version['spt_constraint']), 'spt') if version['spt_constraint'] else ''}
       {badge(fika_text, fika_kind)}
       <span class="when">{e(fmt_date(version['published_at']))} ·
         {version['downloads']:,} downloads</span>
@@ -479,7 +566,11 @@ def render_tabs(mod, description, comment_data, images):
 def render_mod(mod, comment_data, known_ids, repos, images=None,
                href="", lookup=None):
     """One mod's page: everything the archive holds about it."""
-    authors = ", ".join(a["name"] for a in mod["authors"]) or "Unknown"
+    # Author names link back to the index as a pre-filled search, which is
+    # the same filtering the tiles do, just across a page boundary.
+    authors = ", ".join(
+        f'<a href="../index.html?q={urllib.parse.quote(a["name"])}">'
+        f'{e(a["name"])}</a>' for a in mod["authors"]) or "Unknown"
     images = images or {}
     # Mod pages sit one directory deep, so mirrored images are ../assets/img/.
     description = localize_images(clean_html(mod["description_html"]),
@@ -494,7 +585,7 @@ def render_mod(mod, comment_data, known_ids, repos, images=None,
     if category.get("title"):
         flags.append(badge(category["title"], "cat"))
     if mod["spt_constraint"]:
-        flags.append(badge(f"SPT {mod['spt_constraint']}", "spt"))
+        flags.append(badge(f"SPT {spt_label(mod['spt_constraint'])}", "spt"))
     if mod["origin"] == "community":
         flags.append(badge("Community submission", "community"))
     for key, label in (("contains_ads", "Contains ads"),
@@ -510,8 +601,8 @@ def render_mod(mod, comment_data, known_ids, repos, images=None,
     facts = [
         ("Downloads", f"{mod['downloads']:,}"),
         ("Latest version", mod["latest_version"] or "—"),
-        ("SPT", mod["spt_constraint"] or "—"),
-        ("Updated", fmt_date(mod["updated_at"]) or "—"),
+        ("SPT", spt_label(mod["spt_constraint"]) or "—"),
+        ("Latest release", fmt_date(last_release(mod)) or "—"),
         ("Published", fmt_date(mod["published_at"]) or "—"),
         ("License", (mod["license"].get("name") or "—")),
     ]
@@ -536,7 +627,7 @@ def render_mod(mod, comment_data, known_ids, repos, images=None,
                    [l['url'] for l in mod['source_links']], label=True,
                    deps=dependency_entries(mod, lookup))}
     </div>
-    <div class="byline">by {e(authors)}</div>
+    <div class="byline">by {authors}</div>
     <div class="badges">{"".join(flags)}</div>
     {f'<p class="teaser">{e(mod["teaser"])}</p>' if mod["teaser"] else ''}
   </div>

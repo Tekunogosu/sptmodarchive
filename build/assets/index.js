@@ -38,12 +38,15 @@
   var els = {
     search: document.getElementById("q"),
     category: document.getElementById("category"),
-    spt: document.getElementById("spt"),
+    sptPanel: document.getElementById("spt-panel"),
+    sptSummary: document.getElementById("spt-summary"),
+    reset: document.getElementById("reset-filters"),
     fika: document.getElementById("fika"),
     show: document.getElementById("show"),
     sort: document.getElementById("sort"),
     list: document.getElementById("modlist"),
     count: document.getElementById("count"),
+    fikaCount: document.getElementById("fika-count"),
     copy: document.getElementById("copy-sources"),
     sentinel: document.getElementById("sentinel"),
     scroller: document.getElementById("listscroll")
@@ -67,7 +70,7 @@
     return {
       terms: els.search.value.toLowerCase().split(/\s+/).filter(Boolean),
       category: els.category.value,
-      spt: els.spt.value,
+      spt: checkedVersions(),
       fika: els.fika.value,
       show: els.show.value
     };
@@ -78,7 +81,7 @@
 
     visible = MODS.filter(function (mod) {
       if (f.category && mod.category !== f.category) return false;
-      if (f.spt && mod.spt_lines.indexOf(f.spt) === -1) return false;
+      if (f.spt.length && !mod.spt.some(inSet(f.spt))) return false;
       if (f.fika === "yes" && !mod.fika) return false;
       if (f.fika === "no" && mod.fika) return false;
       if (f.show === "deps" && !mod.dep_count) return false;
@@ -118,6 +121,80 @@
 
   function cmpText(a, b) { return a < b ? -1 : a > b ? 1 : 0; }
 
+  function inSet(list) {
+    var set = {};
+    list.forEach(function (v) { set[v] = true; });
+    return function (v) { return set[v] === true; };
+  }
+
+  // --- SPT version checkboxes ------------------------------------------
+
+  var FILTER_KEY = "spt-archive-filters";
+
+  function sptBoxes() {
+    return Array.prototype.slice.call(
+      els.sptPanel.querySelectorAll('input[name="sptv"]'));
+  }
+
+  function checkedVersions() {
+    return sptBoxes().filter(function (b) { return b.checked; })
+                     .map(function (b) { return b.value; });
+  }
+
+  function setVersions(list) {
+    var wanted = inSet(list);
+    sptBoxes().forEach(function (b) { b.checked = wanted(b.value); });
+    updateSptSummary();
+  }
+
+  function majorBoxes() {
+    return Array.prototype.slice.call(
+      els.sptPanel.querySelectorAll('input[name="sptmajor"]'));
+  }
+
+  function boxesFor(major) {
+    return sptBoxes().filter(function (b) {
+      return b.value.split(".")[0] === major;
+    });
+  }
+
+  /* The group headers are the friendly path: one click takes a whole
+   * generation. They reflect their children rather than being a separate
+   * filter, so "Any 4.x" is indeterminate when only some 4.x are picked. */
+  function syncMajorBoxes() {
+    majorBoxes().forEach(function (box) {
+      var kids = boxesFor(box.value);
+      var on = kids.filter(function (b) { return b.checked; }).length;
+      box.checked = on === kids.length && kids.length > 0;
+      box.indeterminate = on > 0 && on < kids.length;
+    });
+  }
+
+  /* Default to the current generation: 4.x is what almost everyone is playing,
+   * and showing every SPT version ever released buries it. */
+  function defaultVersions() {
+    return sptBoxes().filter(function (b) { return b.value.indexOf("4") === 0; })
+                     .map(function (b) { return b.value; });
+  }
+
+  function updateSptSummary() {
+    var picked = checkedVersions();
+    var total = sptBoxes().length;
+    var text;
+    if (!picked.length || picked.length === total) {
+      text = "Any SPT version";
+    } else if (picked.length <= 3) {
+      text = "SPT " + picked.join(", ");
+    } else {
+      var majors = {};
+      picked.forEach(function (v) { majors[v.split(".")[0]] = true; });
+      text = "SPT " + Object.keys(majors).sort().reverse().join(", ") +
+        ".x (" + picked.length + ")";
+    }
+    els.sptSummary.textContent = text;
+    syncMajorBoxes();
+  }
+
   function inCollection(mod) {
     return window.Collection ? window.Collection.has(mod.id) : false;
   }
@@ -151,8 +228,7 @@
       out += tagBadge("category", mod.category, "cat", mod.category_title);
     }
     if (mod.spt_latest) {
-      var line = mod.spt_lines[mod.spt_lines.length - 1] || "";
-      out += tagBadge("spt", line, "spt", "SPT " + mod.spt_latest);
+      out += tagBadge("spt", mod.spt_latest, "spt", "SPT " + mod.spt_latest);
     }
     if (mod.dep_count) {
       out += '<span class="badge">' + mod.dep_count + " dep" +
@@ -172,6 +248,16 @@
                       sources: dep.source_urls || [] };
     }).filter(Boolean);
     return deps.length ? ' data-deps="' + esc(JSON.stringify(deps)) + '"' : "";
+  }
+
+  // Authors reuse the badge click handler: the search box already matches on
+  // author name, so filtering by one is just a pre-filled search.
+  function authorLinks(authors) {
+    return String(authors).split(", ").map(function (name) {
+      return '<button type="button" class="authorlink tagfilter"' +
+        ' data-control="search" data-value="' + esc(name) + '"' +
+        ' title="Show mods by this author">' + esc(name) + "</button>";
+    }).join(", ");
   }
 
   function row(mod) {
@@ -202,14 +288,16 @@
       thumb +
       '<div class="modmain"><h2 class="title"><a href="' + esc(mod.href) + '">' +
         esc(mod.name) + "</a></h2>" +
-      '<div class="byline">' + esc(mod.authors) + "</div>" +
+      '<div class="byline">' + authorLinks(mod.authors) + "</div>" +
       (mod.teaser ? '<p class="teaser">' + esc(mod.teaser) + "</p>" : "") +
-      '<div class="badges">' + badges(mod) + "</div></div>" +
+      "</div>" +
       '<div class="stats">' +
       '<div class="statnums"><b>' + mod.downloads.toLocaleString() + "</b>downloads" +
       (mod.comments ? "<br>" + mod.comments + " comments" : "") + "</div>" +
-      mark + stars +
-      "</div></article>";
+      mark +
+      "</div>" +
+      '<div class="modfoot"><div class="badges">' + badges(mod) + "</div>" +
+      stars + "</div></article>";
   }
 
   function resetList() {
@@ -229,12 +317,13 @@
   }
 
   function updateCount() {
-    var n = visible.length;
     var fika = 0;
     for (var i = 0; i < visible.length; i++) if (visible[i].fika) fika++;
-    els.count.textContent = n.toLocaleString() + " of " +
-      MODS.length.toLocaleString() + " mods · " + fika.toLocaleString() +
-      " Fika-compatible";
+    els.count.textContent = "Showing " + visible.length.toLocaleString() +
+      (visible.length === 1 ? " mod" : " mods");
+    els.fikaCount.textContent = fika
+      ? fika.toLocaleString() + " Fika compatible"
+      : "";
   }
 
   // --- copy source URLs ------------------------------------------------
@@ -274,21 +363,14 @@
 
   // --- URL state -------------------------------------------------------
 
-  function readUrlState() {
-    var params = new URLSearchParams(location.search);
-    if (params.get("q")) els.search.value = params.get("q");
-    if (params.get("category")) els.category.value = params.get("category");
-    if (params.get("spt")) els.spt.value = params.get("spt");
-    if (params.get("fika")) els.fika.value = params.get("fika");
-    if (params.get("show")) els.show.value = params.get("show");
-    if (params.get("sort")) els.sort.value = params.get("sort");
-  }
-
   function writeUrlState() {
     var params = new URLSearchParams();
     if (els.search.value) params.set("q", els.search.value);
     if (els.category.value) params.set("category", els.category.value);
-    if (els.spt.value) params.set("spt", els.spt.value);
+    var spt = checkedVersions();
+    if (spt.length && spt.length !== sptBoxes().length) {
+      params.set("spt", spt.join(","));
+    }
     if (els.fika.value) params.set("fika", els.fika.value);
     if (els.show.value) params.set("show", els.show.value);
     if (els.sort.value !== "downloads") params.set("sort", els.sort.value);
@@ -301,6 +383,37 @@
   function onChange() {
     applyFilter();
     writeUrlState();
+    saveFilters();
+  }
+
+  function saveFilters() {
+    try {
+      localStorage.setItem(FILTER_KEY, JSON.stringify({
+        q: els.search.value, category: els.category.value,
+        fika: els.fika.value, show: els.show.value, sort: els.sort.value,
+        spt: checkedVersions()
+      }));
+    } catch (e) { /* storage unavailable: filters just will not persist */ }
+  }
+
+  /* Priority: an explicit URL wins, then whatever the reader last used, then
+   * the 4.x default. A shared link must show what the sender saw. */
+  function restoreFilters() {
+    var params = new URLSearchParams(location.search);
+    var saved = {};
+    try { saved = JSON.parse(localStorage.getItem(FILTER_KEY) || "{}") || {}; }
+    catch (e) { saved = {}; }
+
+    els.search.value = params.get("q") || saved.q || "";
+    els.category.value = params.get("category") || saved.category || "";
+    els.fika.value = params.get("fika") || saved.fika || "";
+    els.show.value = params.get("show") || saved.show || "";
+    els.sort.value = params.get("sort") || saved.sort || "downloads";
+
+    var spt = params.get("spt") ? params.get("spt").split(",")
+            : Array.isArray(saved.spt) ? saved.spt
+            : defaultVersions();
+    setVersions(spt);
   }
 
   var debounce;
@@ -308,17 +421,69 @@
     clearTimeout(debounce);
     debounce = setTimeout(onChange, 120);
   });
-  [els.category, els.spt, els.fika, els.show, els.sort].forEach(function (el) {
+  [els.category, els.fika, els.show, els.sort].forEach(function (el) {
     el.addEventListener("change", onChange);
   });
+  els.sptSummary.addEventListener("click", function () {
+    var open = els.sptPanel.hasAttribute("hidden");
+    els.sptPanel.toggleAttribute("hidden", !open);
+    els.sptSummary.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+
+  document.addEventListener("click", function (event) {
+    if (!els.sptPanel.hasAttribute("hidden") &&
+        !event.target.closest("#sptfilter")) {
+      els.sptPanel.setAttribute("hidden", "");
+      els.sptSummary.setAttribute("aria-expanded", "false");
+    }
+  });
+
+  els.sptPanel.addEventListener("change", function (event) {
+    if (event.target.name === "sptmajor") {
+      var on = event.target.checked;
+      boxesFor(event.target.value).forEach(function (b) { b.checked = on; });
+    } else if (event.target.name !== "sptv") {
+      return;
+    }
+    updateSptSummary();
+    onChange();
+  });
+
+  els.sptPanel.addEventListener("click", function (event) {
+    var action = event.target.closest("[data-spt]");
+    if (!action) return;
+    var which = action.getAttribute("data-spt");
+    setVersions(which === "all" ? sptBoxes().map(function (b) { return b.value; })
+              : which === "none" ? []
+              : defaultVersions());
+    onChange();
+  });
+
+  els.reset.addEventListener("click", function () {
+    els.search.value = "";
+    els.category.value = "";
+    els.fika.value = "";
+    els.show.value = "";
+    els.sort.value = "downloads";
+    setVersions(defaultVersions());
+    try { localStorage.removeItem(FILTER_KEY); } catch (e) { /* no-op */ }
+    onChange();
+  });
+
   els.copy.addEventListener("click", copySources);
 
   els.list.addEventListener("click", function (event) {
     var tag = event.target.closest(".tagfilter");
     if (!tag) return;
-    var control = els[tag.getAttribute("data-control")];
-    if (!control) return;
-    control.value = tag.getAttribute("data-value");
+    var name = tag.getAttribute("data-control");
+    var value = tag.getAttribute("data-value");
+    if (name === "spt") {
+      setVersions([value]);
+    } else {
+      var control = els[name];
+      if (!control) return;
+      control.value = value;
+    }
     onChange();
 
   });
@@ -344,6 +509,6 @@
     });
   }
 
-  readUrlState();
+  restoreFilters();
   applyFilter();
 })();

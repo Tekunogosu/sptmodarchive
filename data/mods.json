@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-09T00:33:38Z",
+ "generated_at": "2026-08-09T02:56:31Z",
  "source": "https://forge.sp-tarkov.com",
  "filter": "all",
  "mod_count": 1826,
@@ -74019,6 +74019,344 @@
    "origin": "forge"
   },
   {
+   "id": 2843,
+   "hub_id": null,
+   "guid": "com.vultify.blackout",
+   "name": "Blackout",
+   "slug": "blackout",
+   "teaser": "Recreates the live EFT Blackout event on Labs. The power dies, the facility goes dark. Real darkness, extract lockdown, keypad code doors.",
+   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Description</div>\n<div class=\"tab-content\"><p>Recreates the live EFT \u201cBlackout\u201d event on Labs. Seconds into the raid the generators die, the lights go out, and you run the facility on emergency power while the Wedge and his Black Division hold the floors.</p>\n<p>Configure event roll chance in the config.json</p>\n<h3>The blackout</h3>\n<ul>\n<li>Darkness Done in my own image. BSGs version and settings for darkness were unobtainable (by me at least)</li>\n<li>The live event\u2019s power-cut sound and intercom announcement through the map\u2019s own PA speakers</li>\n<li>Amber emergency floods at the real event positions, keycard LEDs stay lit like live keeps them</li>\n<li>Extract lockdown: only the two gates are live, and one press of the Arsenal Storage Room switch opens both</li>\n<li>Keycard doors take a fresh 4-digit code each raid instead of swipes, written on the admin office whiteboard in the event\u2019s own marker digits</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Recommended</div>\n<div class=\"tab-content\"><p>-WTT Black Divsion: Set <code>LabsStartchance</code> to 100 and <code>LabsGateChance</code> to 100</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Install Instructions</div>\n<div class=\"tab-content\"><ol>\n<li>Extract the archive</li>\n<li>Drop the <code>BepInEx</code> and <code>SPT</code> folders into your SPT root directory</li>\n<li>Requires WTT-CommonLib, WTT-ContentBackport, and MoreBotsAPI (client + server halves). SAIN recommended.</li>\n<li>Load into Labs</li>\n</ol></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Known Limitations / Bugs</div>\n<div class=\"tab-content\"><ul>\n<li>Some issues with fika headless maybe. Test it out of if there\u2019s issues then report them to my discord thread.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Support</div>\n<div class=\"tab-content\"><p>Found a bug or have a question? Leave a comment here, or reach out in my thread on the SPT Discord: <a target=\"_blank\" class=\"external-link\" href=\"https://discord.com/channels/875684761291599922/1521972310595338260\" rel=\"noreferrer noopener\">https://discord.com/channels/875684761291599922/1521972310595338260</a></p></div></div></div>\n",
+   "thumbnail": "https://forge-static.sp-tarkov.com/mods/TUbFUbxJ2fMDesjdhv96XyJvUvXlGEoLpy4tF64F.png",
+   "forge_url": "https://forge.sp-tarkov.com/mod/2843/blackout",
+   "downloads": 10355,
+   "favourites": 52,
+   "featured": false,
+   "fika": true,
+   "fika_latest": "compatible",
+   "category": {
+    "id": 8,
+    "title": "Locations",
+    "slug": "locations"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 52241,
+     "name": "Vultify",
+     "avatar": "https://forge-static.sp-tarkov.com/profile-photos/4457233962ecb2b7d1e522ec0ad81c03210096ee_128w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/Vultify/Blackout",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 14573,
+     "version": "4.0.0",
+     "description": "<h2>Blackout 4.0.0 \u2014 the SPT 4.1 release</h2>\n<p>Same event, now on <strong>SPT 4.1.x</strong>. On 4.0.13? Stay on <strong>3.1.1</strong> - this version will not run there.</p>\n<p><strong>Requires WTT-CommonLib 3.0.0 or newer</strong></p>\n<h3>Changed</h3>\n<ul>\n<li>Rebuilt the Light cutting from the ground up, should be a little closer to live than it was before.</li>\n</ul>\n<p><strong>Install:</strong> extract the zip into your SPT root. Client lands in <code>BepInEx/plugins/Blackout/</code>, server in <code>SPT_Runtime/user/mods/Blackout/</code>.</p>\n",
+     "spt_constraint": "4.1.0",
+     "fika": "compatible",
+     "downloads": 146,
+     "size": 6088057,
+     "link": "https://forge.sp-tarkov.com/mod/download/2843/blackout/4.0.0",
+     "published_at": "2026-08-09T00:43:00.000000Z",
+     "dependencies": [
+      {
+       "id": 2310,
+       "name": "WTT - CommonLib",
+       "slug": "wtt-commonlib",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2310/wtt-commonlib"
+      }
+     ]
+    },
+    {
+     "id": 14509,
+     "version": "3.1.1",
+     "description": "<p>For SPT <strong>4.0.13</strong> LAST last update before 4.1.x</p>\n<h2>Fixed</h2>\n<p>-Fika Headless: raid lights cut properly now</p>\n",
+     "spt_constraint": "4.0.13",
+     "fika": "compatible",
+     "downloads": 933,
+     "size": 6086487,
+     "link": "https://forge.sp-tarkov.com/mod/download/2843/blackout/3.1.1",
+     "published_at": "2026-08-07T03:21:00.000000Z",
+     "dependencies": [
+      {
+       "id": 2310,
+       "name": "WTT - CommonLib",
+       "slug": "wtt-commonlib",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2310/wtt-commonlib"
+      }
+     ]
+    },
+    {
+     "id": 14490,
+     "version": "3.1.0",
+     "description": "<p>For SPT <strong>4.0.13</strong>. This is the final version for 4.0.x</p>\n<h2>Changed</h2>\n<p><strong>The Fika addon is now part of this download.</strong> <code>BlackoutFika.dll</code> sits in <code>BepInEx/plugins/Blackout/</code> and Blackout loads it itself once it sees Fika installed.</p>\n<p><strong>delete</strong> <code>BepInEx/plugins/BlackoutFika/BlackoutFika.dll</code></p>\n<p><strong>The event key is now the Admin\u2019s Key</strong> (short name \u201cAdmin\u201d). The old name was wrong. Same key, same item, same single use \u2014 only the name and description changed, so anything already sitting in your stash still works.</p>\n",
+     "spt_constraint": "4.0.13",
+     "fika": "compatible",
+     "downloads": 727,
+     "size": 6086402,
+     "link": "https://forge.sp-tarkov.com/mod/download/2843/blackout/3.1.0",
+     "published_at": "2026-08-06T00:06:00.000000Z",
+     "dependencies": [
+      {
+       "id": 2310,
+       "name": "WTT - CommonLib",
+       "slug": "wtt-commonlib",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2310/wtt-commonlib"
+      }
+     ]
+    },
+    {
+     "id": 14387,
+     "version": "3.0.0",
+     "description": "<p><strong>Still SPT 4.0.13.</strong> This is not the 4.1 port \u2014 it removes the Wedge so Blackout stops colliding with WTT\u2019s Black Division mod, which added him recently.</p>\n<h2>Delete the old version before installing</h2>\n<ul>\n<li><code>SPT/user/mods/Blackout/</code></li>\n<li><code>BepInEx/plugins/Blackout/</code> (<code>Blackout.dll</code> and <code>blackout_sounds.bundle</code>)</li>\n<li><code>BepInEx/patchers/BlackoutPrepatch.dll</code></li>\n</ul>\n<h3>Removed</h3>\n<ul>\n<li><strong>The Wedge and his Black Division guards.</strong> Black Division adds the Wedge/followers itself now. Install Black Division alongside Blackout if you want him holding the floors \u2014 the event works with or without it.</li>\n<li><strong>Two dependencies, with them.</strong> WTT-ContentBackport and MoreBotsAPI were only ever there for Wedge\u2019s gear and his bot type. Neither is required now. The prepatcher is gone too, so there is nothing to install in <code>BepInEx/patchers/</code> any more.</li>\n</ul>\n<h3>Changed</h3>\n<ul>\n<li>The <strong>arsenal storage room key</strong> now spawns on the map instead of being carried by the Wedge. finding where it spawns is up to you :D</li>\n<li>Raid setup polls four times a second instead of running every frame \u2014 the old path ran two <code>GameObject.Find</code> calls plus a reflection walk every frame for the whole Labs load.</li>\n</ul>\n<h3>Install</h3>\n<p>Extract into your SPT root folder. It contains <code>BepInEx</code> and <code>SPT</code> folders.</p>\n<p>Your <code>config.json</code> is untouched by the update and keeps your <code>blackoutChance</code>.</p>\n<p>WTT-ContentBackport and MoreBotsAPI can be uninstalled if nothing else on your setup uses them \u2014 Blackout no longer touches either.</p>\n<h3>Fika</h3>\n<p>The <strong>Blackout Fika addon is unaffected</strong> \u2014 no update needed. Co-op raids sync exactly as before; the addon only ever talked to the lights, the admin switch and the keycard doors, none of which changed.</p>\n",
+     "spt_constraint": "4.0.13",
+     "fika": "compatible",
+     "downloads": 1632,
+     "size": 6079220,
+     "link": "https://forge.sp-tarkov.com/mod/download/2843/blackout/3.0.0",
+     "published_at": "2026-08-02T16:56:00.000000Z",
+     "dependencies": [
+      {
+       "id": 2310,
+       "name": "WTT - CommonLib",
+       "slug": "wtt-commonlib",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2310/wtt-commonlib"
+      }
+     ]
+    },
+    {
+     "id": 14289,
+     "version": "2.1.1",
+     "description": "<h2>Fixed</h2>\n<p><strong>The server room racks no longer disappear when the lights cut.</strong> Labs\u2019 light scene holds solid props as well as light fixtures.</p>\n<h2>Changed</h2>\n<p><code>blackoutChance</code> is re-read before every roll instead of only when the server starts, so editing <code>config.json</code> no longer needs a server restart. One thing to know about the timing: the roll for your next raid is made when your current one ends, so an edit while you are in a raid applies to the very next one, and an edit made in the menu applies to the one after that.</p>\n<h2>Install</h2>\n<p>Extract and drop the <code>BepInEx</code> and <code>SPT</code> folders into your SPT root. The archive layout has not changed, so install straight over the top of 2.1.0 without deleting anything first.</p>\n<h2>Co-op</h2>\n<p>The <strong>Blackout Fika</strong> addon is unchanged and does not need updating. It requires Blackout 2.1.0 or newer, so 2.1.1 covers it.</p>\n",
+     "spt_constraint": "4.0.13",
+     "fika": "compatible",
+     "downloads": 2261,
+     "size": 6142596,
+     "link": "https://forge.sp-tarkov.com/mod/download/2843/blackout/2.1.1",
+     "published_at": "2026-07-30T00:29:00.000000Z",
+     "dependencies": [
+      {
+       "id": 2310,
+       "name": "WTT - CommonLib",
+       "slug": "wtt-commonlib",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2310/wtt-commonlib"
+      },
+      {
+       "id": 2426,
+       "name": "MoreBotsAPI",
+       "slug": "morebotsapi",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2426/morebotsapi"
+      },
+      {
+       "id": 2512,
+       "name": "WTT - Content Backport",
+       "slug": "wtt-content-backport",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2512/wtt-content-backport"
+      }
+     ]
+    },
+    {
+     "id": 14279,
+     "version": "2.1.0",
+     "description": "<h2>Fika co-op support</h2>\n<p>Blackout now runs the same for everyone in a Fika raid. The lights cut for the whole group at once, the admin office switch opens the gates for every player instead of only the one who pulled it, and a keycard door someone else opens with the emergency code is open for you too.</p>\n<h3>Which downloads do I need?</h3>\n<p><strong>Playing with Fika:</strong> this version <strong>plus</strong> the separate <strong>Blackout Fika</strong> addon, under the Addons tab on this page. Both are needed. The addon is a single file and there is nothing to configure. It requires Blackout 2.1.0 or newer, so update the mod first.</p>\n<p><strong>Playing solo:</strong> just this version, and you are done. Everything above sits inactive without the addon, so nothing about your raids changes. It is worth updating anyway, since it is what makes co-op possible if you ever want to run the event with friends later.</p>\n<h2>Also in this version</h2>\n<ul>\n<li>The emergency code is rolled by the server instead of by each player, so everyone in a raid reads the same four digits off the same whiteboard</li>\n<li>The server log is down to two lines instead of six. A clean start is quiet now, and each raid gets one line saying whether it rolled a blackout</li>\n<li>The F12 menu is gone. <code>blackoutChance</code> in <code>config.json</code> already did the same job, and setting it to 0 switches the event off entirely</li>\n</ul>\n<h2>Install</h2>\n<p>Extract and drop the <code>BepInEx</code> and <code>SPT</code> folders into your SPT root. The archive layout has not changed since 2.0.0, so you can install straight over the top without deleting anything first.</p>\n<h2>Requirements</h2>\n<ul>\n<li>SPT 4.0.x</li>\n<li>WTT-CommonLib 2.0.22 or newer, both halves</li>\n<li>WTT-ContentBackport 1.1.0 or newer, both halves</li>\n<li>MoreBotsAPI, both halves</li>\n<li>Fika only if you want co-op, and only with the addon</li>\n</ul>\n",
+     "spt_constraint": "4.0.13",
+     "fika": "compatible",
+     "downloads": 989,
+     "size": 6142535,
+     "link": "https://forge.sp-tarkov.com/mod/download/2843/blackout/2.1.0",
+     "published_at": "2026-07-28T23:39:00.000000Z",
+     "dependencies": [
+      {
+       "id": 2310,
+       "name": "WTT - CommonLib",
+       "slug": "wtt-commonlib",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2310/wtt-commonlib"
+      },
+      {
+       "id": 2426,
+       "name": "MoreBotsAPI",
+       "slug": "morebotsapi",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2426/morebotsapi"
+      },
+      {
+       "id": 2512,
+       "name": "WTT - Content Backport",
+       "slug": "wtt-content-backport",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2512/wtt-content-backport"
+      }
+     ]
+    },
+    {
+     "id": 14227,
+     "version": "2.0.0",
+     "description": "<h2>Dependencies changed</h2>\n<ul>\n<li><strong>WTT-ContentBackport 1.1.0 or newer</strong> (both halves, server and client)</li>\n<li><strong>WTT-CommonLib 2.0.22 or newer</strong> (both halves)</li>\n</ul>\n<p>Content Backport 1.1.0 backported the same live items Blackout was shipping: the MP7 ARS adapter and FX-KPOS stock, the SF3P flash hider, the ComTac VI, the EXFIL helmets and the Wedge cover, the LV-119, and Wedge\u2019s face, clothing and voicelines. Two mods adding the same things meant duplicate items in the handbook and a stack of errors on every server start. Blackout now points at theirs, so there is one copy of everything and it stays in sync with whatever they ship.</p>\n<h2>Removed</h2>\n<ul>\n<li>Every asset bundle. The download went from about 61 MB to under 6 MB</li>\n<li>Wedge\u2019s gear items, his clothing, his head and his voice, all of which Content Backport provides now</li>\n<li>The custom black Team Wendy helmet that only existed to hold the helmet cover. Content Backport adds the cover slot to the normal black one, so it earns its keep no more</li>\n</ul>\n<h2>Updating from 1.1.0 or older</h2>\n<p><strong>Delete both of these folders before you extract:</strong></p>\n<ul>\n<li><code>BepInEx/plugins/Blackout</code></li>\n<li><code>SPT/user/mods/Blackout</code></li>\n</ul>\n<p>Then drop the <code>BepInEx</code> and <code>SPT</code> folders into your SPT root as usual.</p>\n<p>This matters more than it normally would. 2.0.0 ships no bundles at all, so installing over the top leaves roughly 60 MB of old bundle files behind, and those now fight with Content Backport\u2019s copies of the same assets. Deleting first is the whole fix.</p>\n<p>Fresh installs can ignore all of that and just extract.</p>\n",
+     "spt_constraint": "4.0.13",
+     "fika": "incompatible",
+     "downloads": 2401,
+     "size": 6142661,
+     "link": "https://forge.sp-tarkov.com/mod/download/2843/blackout/2.0.0",
+     "published_at": "2026-07-25T22:36:00.000000Z",
+     "dependencies": [
+      {
+       "id": 2310,
+       "name": "WTT - CommonLib",
+       "slug": "wtt-commonlib",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2310/wtt-commonlib"
+      },
+      {
+       "id": 2426,
+       "name": "MoreBotsAPI",
+       "slug": "morebotsapi",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2426/morebotsapi"
+      },
+      {
+       "id": 2512,
+       "name": "WTT - Content Backport",
+       "slug": "wtt-content-backport",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2512/wtt-content-backport"
+      }
+     ]
+    },
+    {
+     "id": 14225,
+     "version": "1.1.0",
+     "description": "<h2>Added</h2>\n<ul>\n<li>The blackout is a per raid roll now instead of firing on every Labs run, so you never know which one goes dark until the lights cut. 25% by default. Set <code>blackoutChance</code> in <code>SPT/user/mods/Blackout/config.json</code> to change it, or put it to 100 if you want the old behaviour back</li>\n</ul>\n<h2>Changed</h2>\n<ul>\n<li>The LV-119\u2019s soft armor inserts are built in and can no longer be left out, the same as every other armor in the game</li>\n</ul>\n<h2>Fixed</h2>\n<ul>\n<li>The Wedge\u2019s armor was spawning with their plates but no soft armor, so he was taking full damage anywhere the plates didn\u2019t cover. He gets his inserts now</li>\n<li>The vehicles at the hangar and parking gates were disappearing the moment the lights went out, collision and all, so you could walk straight through where a car was parked. They stay put now, and they still stop bullets</li>\n</ul>\n<h2>Updating</h2>\n<p>Extract and drop the <code>BepInEx</code> and <code>SPT</code> folders into your SPT root, straight over the top of 1.0.0. Nothing was renamed or moved, so there is nothing to delete first. The only new file is <code>config.json</code>.</p>\n",
+     "spt_constraint": "4.0.13",
+     "fika": "unknown",
+     "downloads": 305,
+     "size": 63806249,
+     "link": "https://forge.sp-tarkov.com/mod/download/2843/blackout/1.1.0",
+     "published_at": "2026-07-25T20:35:00.000000Z",
+     "dependencies": [
+      {
+       "id": 2310,
+       "name": "WTT - CommonLib",
+       "slug": "wtt-commonlib",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2310/wtt-commonlib"
+      },
+      {
+       "id": 2426,
+       "name": "MoreBotsAPI",
+       "slug": "morebotsapi",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2426/morebotsapi"
+      },
+      {
+       "id": 2512,
+       "name": "WTT - Content Backport",
+       "slug": "wtt-content-backport",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2512/wtt-content-backport"
+      }
+     ]
+    },
+    {
+     "id": 14218,
+     "version": "1.0.0",
+     "description": "<p>-Initial Release</p>\n",
+     "spt_constraint": "4.0.13",
+     "fika": "unknown",
+     "downloads": 961,
+     "size": 63804273,
+     "link": "https://forge.sp-tarkov.com/mod/download/2843/blackout/1.0.0",
+     "published_at": "2026-07-25T06:35:00.000000Z",
+     "dependencies": [
+      {
+       "id": 2426,
+       "name": "MoreBotsAPI",
+       "slug": "morebotsapi",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2426/morebotsapi"
+      },
+      {
+       "id": 2512,
+       "name": "WTT - Content Backport",
+       "slug": "wtt-content-backport",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2512/wtt-content-backport"
+      },
+      {
+       "id": 2310,
+       "name": "WTT - CommonLib",
+       "slug": "wtt-commonlib",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2310/wtt-commonlib"
+      }
+     ]
+    }
+   ],
+   "latest_version": "4.0.0",
+   "spt_constraint": "4.1.0",
+   "all_spt_constraints": [
+    "4.0.13",
+    "4.1.0"
+   ],
+   "dependencies": [
+    {
+     "id": 2310,
+     "name": "WTT - CommonLib",
+     "slug": "wtt-commonlib",
+     "constraint": "",
+     "url": "https://forge.sp-tarkov.com/mod/2310/wtt-commonlib"
+    }
+   ],
+   "all_dependencies": [
+    {
+     "id": 2310,
+     "name": "WTT - CommonLib",
+     "slug": "wtt-commonlib",
+     "constraint": "",
+     "url": "https://forge.sp-tarkov.com/mod/2310/wtt-commonlib"
+    },
+    {
+     "id": 2426,
+     "name": "MoreBotsAPI",
+     "slug": "morebotsapi",
+     "constraint": "",
+     "url": "https://forge.sp-tarkov.com/mod/2426/morebotsapi"
+    },
+    {
+     "id": 2512,
+     "name": "WTT - Content Backport",
+     "slug": "wtt-content-backport",
+     "constraint": "",
+     "url": "https://forge.sp-tarkov.com/mod/2512/wtt-content-backport"
+    }
+   ],
+   "published_at": "2026-07-25T06:36:00.000000Z",
+   "updated_at": "2026-08-09T00:47:05.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": true,
+    "ai_disclosure": "<p>Ai was used to make the mod picture.</p>\n",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge"
+  },
+  {
    "id": 2000,
    "hub_id": 2680,
    "guid": null,
@@ -74423,323 +74761,6 @@
     "contains_ai_content": false,
     "ai_disclosure": "",
     "cheat_notice": true,
-    "profile_binding_notice": false
-   },
-   "origin": "forge"
-  },
-  {
-   "id": 2843,
-   "hub_id": null,
-   "guid": "com.vultify.blackout",
-   "name": "Blackout",
-   "slug": "blackout",
-   "teaser": "Recreates the live EFT Blackout event on Labs. The power dies, the facility goes dark. Real darkness, extract lockdown, keypad code doors.",
-   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Description</div>\n<div class=\"tab-content\"><p>Recreates the live EFT \u201cBlackout\u201d event on Labs. Seconds into the raid the generators die, the lights go out, and you run the facility on emergency power while the Wedge and his Black Division hold the floors.</p>\n<p>Configure event roll chance in the config.json</p>\n<h3>The blackout</h3>\n<ul>\n<li>Darkness Done in my own image. BSGs version and settings for darkness were unobtainable (by me at least)</li>\n<li>The live event\u2019s power-cut sound and intercom announcement through the map\u2019s own PA speakers</li>\n<li>Amber emergency floods at the real event positions, keycard LEDs stay lit like live keeps them</li>\n<li>Extract lockdown: only the two gates are live, and one press of the Arsenal Storage Room switch opens both</li>\n<li>Keycard doors take a fresh 4-digit code each raid instead of swipes, written on the admin office whiteboard in the event\u2019s own marker digits</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Recommended</div>\n<div class=\"tab-content\"><p>-WTT Black Divsion: Set <code>LabsStartchance</code> to 100 and <code>LabsGateChance</code> to 100</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Install Instructions</div>\n<div class=\"tab-content\"><ol>\n<li>Extract the archive</li>\n<li>Drop the <code>BepInEx</code> and <code>SPT</code> folders into your SPT root directory</li>\n<li>Requires WTT-CommonLib, WTT-ContentBackport, and MoreBotsAPI (client + server halves). SAIN recommended.</li>\n<li>Load into Labs</li>\n</ol></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Known Limitations / Bugs</div>\n<div class=\"tab-content\"><ul>\n<li>Some issues with fika headless maybe. Test it out of if there\u2019s issues then report them to my discord thread.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Support</div>\n<div class=\"tab-content\"><p>Found a bug or have a question? Leave a comment here, or reach out in my thread on the SPT Discord: <a target=\"_blank\" class=\"external-link\" href=\"https://discord.com/channels/875684761291599922/1521972310595338260\" rel=\"noreferrer noopener\">https://discord.com/channels/875684761291599922/1521972310595338260</a></p></div></div></div>\n",
-   "thumbnail": "https://forge-static.sp-tarkov.com/mods/TUbFUbxJ2fMDesjdhv96XyJvUvXlGEoLpy4tF64F.png",
-   "forge_url": "https://forge.sp-tarkov.com/mod/2843/blackout",
-   "downloads": 10135,
-   "favourites": 52,
-   "featured": false,
-   "fika": true,
-   "fika_latest": "compatible",
-   "category": {
-    "id": 8,
-    "title": "Locations",
-    "slug": "locations"
-   },
-   "license": {
-    "name": "MIT License",
-    "link": "https://choosealicense.com/licenses/mit/"
-   },
-   "authors": [
-    {
-     "id": 52241,
-     "name": "Vultify",
-     "avatar": "https://forge-static.sp-tarkov.com/profile-photos/4457233962ecb2b7d1e522ec0ad81c03210096ee_128w.webp"
-    }
-   ],
-   "source_links": [
-    {
-     "url": "https://github.com/Vultify/Blackout",
-     "label": ""
-    }
-   ],
-   "versions": [
-    {
-     "id": 14509,
-     "version": "3.1.1",
-     "description": "<p>For SPT <strong>4.0.13</strong> LAST last update before 4.1.x</p>\n<h2>Fixed</h2>\n<p>-Fika Headless: raid lights cut properly now</p>\n",
-     "spt_constraint": "4.0.13",
-     "fika": "compatible",
-     "downloads": 861,
-     "size": 6086487,
-     "link": "https://forge.sp-tarkov.com/mod/download/2843/blackout/3.1.1",
-     "published_at": "2026-08-07T03:21:00.000000Z",
-     "dependencies": [
-      {
-       "id": 2310,
-       "name": "WTT - CommonLib",
-       "slug": "wtt-commonlib",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2310/wtt-commonlib"
-      }
-     ]
-    },
-    {
-     "id": 14490,
-     "version": "3.1.0",
-     "description": "<p>For SPT <strong>4.0.13</strong>. This is the final version for 4.0.x</p>\n<h2>Changed</h2>\n<p><strong>The Fika addon is now part of this download.</strong> <code>BlackoutFika.dll</code> sits in <code>BepInEx/plugins/Blackout/</code> and Blackout loads it itself once it sees Fika installed.</p>\n<p><strong>delete</strong> <code>BepInEx/plugins/BlackoutFika/BlackoutFika.dll</code></p>\n<p><strong>The event key is now the Admin\u2019s Key</strong> (short name \u201cAdmin\u201d). The old name was wrong. Same key, same item, same single use \u2014 only the name and description changed, so anything already sitting in your stash still works.</p>\n",
-     "spt_constraint": "4.0.13",
-     "fika": "compatible",
-     "downloads": 726,
-     "size": 6086402,
-     "link": "https://forge.sp-tarkov.com/mod/download/2843/blackout/3.1.0",
-     "published_at": "2026-08-06T00:06:00.000000Z",
-     "dependencies": [
-      {
-       "id": 2310,
-       "name": "WTT - CommonLib",
-       "slug": "wtt-commonlib",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2310/wtt-commonlib"
-      }
-     ]
-    },
-    {
-     "id": 14387,
-     "version": "3.0.0",
-     "description": "<p><strong>Still SPT 4.0.13.</strong> This is not the 4.1 port \u2014 it removes the Wedge so Blackout stops colliding with WTT\u2019s Black Division mod, which added him recently.</p>\n<h2>Delete the old version before installing</h2>\n<ul>\n<li><code>SPT/user/mods/Blackout/</code></li>\n<li><code>BepInEx/plugins/Blackout/</code> (<code>Blackout.dll</code> and <code>blackout_sounds.bundle</code>)</li>\n<li><code>BepInEx/patchers/BlackoutPrepatch.dll</code></li>\n</ul>\n<h3>Removed</h3>\n<ul>\n<li><strong>The Wedge and his Black Division guards.</strong> Black Division adds the Wedge/followers itself now. Install Black Division alongside Blackout if you want him holding the floors \u2014 the event works with or without it.</li>\n<li><strong>Two dependencies, with them.</strong> WTT-ContentBackport and MoreBotsAPI were only ever there for Wedge\u2019s gear and his bot type. Neither is required now. The prepatcher is gone too, so there is nothing to install in <code>BepInEx/patchers/</code> any more.</li>\n</ul>\n<h3>Changed</h3>\n<ul>\n<li>The <strong>arsenal storage room key</strong> now spawns on the map instead of being carried by the Wedge. finding where it spawns is up to you :D</li>\n<li>Raid setup polls four times a second instead of running every frame \u2014 the old path ran two <code>GameObject.Find</code> calls plus a reflection walk every frame for the whole Labs load.</li>\n</ul>\n<h3>Install</h3>\n<p>Extract into your SPT root folder. It contains <code>BepInEx</code> and <code>SPT</code> folders.</p>\n<p>Your <code>config.json</code> is untouched by the update and keeps your <code>blackoutChance</code>.</p>\n<p>WTT-ContentBackport and MoreBotsAPI can be uninstalled if nothing else on your setup uses them \u2014 Blackout no longer touches either.</p>\n<h3>Fika</h3>\n<p>The <strong>Blackout Fika addon is unaffected</strong> \u2014 no update needed. Co-op raids sync exactly as before; the addon only ever talked to the lights, the admin switch and the keycard doors, none of which changed.</p>\n",
-     "spt_constraint": "4.0.13",
-     "fika": "compatible",
-     "downloads": 1631,
-     "size": 6079220,
-     "link": "https://forge.sp-tarkov.com/mod/download/2843/blackout/3.0.0",
-     "published_at": "2026-08-02T16:56:00.000000Z",
-     "dependencies": [
-      {
-       "id": 2310,
-       "name": "WTT - CommonLib",
-       "slug": "wtt-commonlib",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2310/wtt-commonlib"
-      }
-     ]
-    },
-    {
-     "id": 14289,
-     "version": "2.1.1",
-     "description": "<h2>Fixed</h2>\n<p><strong>The server room racks no longer disappear when the lights cut.</strong> Labs\u2019 light scene holds solid props as well as light fixtures.</p>\n<h2>Changed</h2>\n<p><code>blackoutChance</code> is re-read before every roll instead of only when the server starts, so editing <code>config.json</code> no longer needs a server restart. One thing to know about the timing: the roll for your next raid is made when your current one ends, so an edit while you are in a raid applies to the very next one, and an edit made in the menu applies to the one after that.</p>\n<h2>Install</h2>\n<p>Extract and drop the <code>BepInEx</code> and <code>SPT</code> folders into your SPT root. The archive layout has not changed, so install straight over the top of 2.1.0 without deleting anything first.</p>\n<h2>Co-op</h2>\n<p>The <strong>Blackout Fika</strong> addon is unchanged and does not need updating. It requires Blackout 2.1.0 or newer, so 2.1.1 covers it.</p>\n",
-     "spt_constraint": "4.0.13",
-     "fika": "compatible",
-     "downloads": 2261,
-     "size": 6142596,
-     "link": "https://forge.sp-tarkov.com/mod/download/2843/blackout/2.1.1",
-     "published_at": "2026-07-30T00:29:00.000000Z",
-     "dependencies": [
-      {
-       "id": 2310,
-       "name": "WTT - CommonLib",
-       "slug": "wtt-commonlib",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2310/wtt-commonlib"
-      },
-      {
-       "id": 2426,
-       "name": "MoreBotsAPI",
-       "slug": "morebotsapi",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2426/morebotsapi"
-      },
-      {
-       "id": 2512,
-       "name": "WTT - Content Backport",
-       "slug": "wtt-content-backport",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2512/wtt-content-backport"
-      }
-     ]
-    },
-    {
-     "id": 14279,
-     "version": "2.1.0",
-     "description": "<h2>Fika co-op support</h2>\n<p>Blackout now runs the same for everyone in a Fika raid. The lights cut for the whole group at once, the admin office switch opens the gates for every player instead of only the one who pulled it, and a keycard door someone else opens with the emergency code is open for you too.</p>\n<h3>Which downloads do I need?</h3>\n<p><strong>Playing with Fika:</strong> this version <strong>plus</strong> the separate <strong>Blackout Fika</strong> addon, under the Addons tab on this page. Both are needed. The addon is a single file and there is nothing to configure. It requires Blackout 2.1.0 or newer, so update the mod first.</p>\n<p><strong>Playing solo:</strong> just this version, and you are done. Everything above sits inactive without the addon, so nothing about your raids changes. It is worth updating anyway, since it is what makes co-op possible if you ever want to run the event with friends later.</p>\n<h2>Also in this version</h2>\n<ul>\n<li>The emergency code is rolled by the server instead of by each player, so everyone in a raid reads the same four digits off the same whiteboard</li>\n<li>The server log is down to two lines instead of six. A clean start is quiet now, and each raid gets one line saying whether it rolled a blackout</li>\n<li>The F12 menu is gone. <code>blackoutChance</code> in <code>config.json</code> already did the same job, and setting it to 0 switches the event off entirely</li>\n</ul>\n<h2>Install</h2>\n<p>Extract and drop the <code>BepInEx</code> and <code>SPT</code> folders into your SPT root. The archive layout has not changed since 2.0.0, so you can install straight over the top without deleting anything first.</p>\n<h2>Requirements</h2>\n<ul>\n<li>SPT 4.0.x</li>\n<li>WTT-CommonLib 2.0.22 or newer, both halves</li>\n<li>WTT-ContentBackport 1.1.0 or newer, both halves</li>\n<li>MoreBotsAPI, both halves</li>\n<li>Fika only if you want co-op, and only with the addon</li>\n</ul>\n",
-     "spt_constraint": "4.0.13",
-     "fika": "compatible",
-     "downloads": 989,
-     "size": 6142535,
-     "link": "https://forge.sp-tarkov.com/mod/download/2843/blackout/2.1.0",
-     "published_at": "2026-07-28T23:39:00.000000Z",
-     "dependencies": [
-      {
-       "id": 2310,
-       "name": "WTT - CommonLib",
-       "slug": "wtt-commonlib",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2310/wtt-commonlib"
-      },
-      {
-       "id": 2426,
-       "name": "MoreBotsAPI",
-       "slug": "morebotsapi",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2426/morebotsapi"
-      },
-      {
-       "id": 2512,
-       "name": "WTT - Content Backport",
-       "slug": "wtt-content-backport",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2512/wtt-content-backport"
-      }
-     ]
-    },
-    {
-     "id": 14227,
-     "version": "2.0.0",
-     "description": "<h2>Dependencies changed</h2>\n<ul>\n<li><strong>WTT-ContentBackport 1.1.0 or newer</strong> (both halves, server and client)</li>\n<li><strong>WTT-CommonLib 2.0.22 or newer</strong> (both halves)</li>\n</ul>\n<p>Content Backport 1.1.0 backported the same live items Blackout was shipping: the MP7 ARS adapter and FX-KPOS stock, the SF3P flash hider, the ComTac VI, the EXFIL helmets and the Wedge cover, the LV-119, and Wedge\u2019s face, clothing and voicelines. Two mods adding the same things meant duplicate items in the handbook and a stack of errors on every server start. Blackout now points at theirs, so there is one copy of everything and it stays in sync with whatever they ship.</p>\n<h2>Removed</h2>\n<ul>\n<li>Every asset bundle. The download went from about 61 MB to under 6 MB</li>\n<li>Wedge\u2019s gear items, his clothing, his head and his voice, all of which Content Backport provides now</li>\n<li>The custom black Team Wendy helmet that only existed to hold the helmet cover. Content Backport adds the cover slot to the normal black one, so it earns its keep no more</li>\n</ul>\n<h2>Updating from 1.1.0 or older</h2>\n<p><strong>Delete both of these folders before you extract:</strong></p>\n<ul>\n<li><code>BepInEx/plugins/Blackout</code></li>\n<li><code>SPT/user/mods/Blackout</code></li>\n</ul>\n<p>Then drop the <code>BepInEx</code> and <code>SPT</code> folders into your SPT root as usual.</p>\n<p>This matters more than it normally would. 2.0.0 ships no bundles at all, so installing over the top leaves roughly 60 MB of old bundle files behind, and those now fight with Content Backport\u2019s copies of the same assets. Deleting first is the whole fix.</p>\n<p>Fresh installs can ignore all of that and just extract.</p>\n",
-     "spt_constraint": "4.0.13",
-     "fika": "incompatible",
-     "downloads": 2401,
-     "size": 6142661,
-     "link": "https://forge.sp-tarkov.com/mod/download/2843/blackout/2.0.0",
-     "published_at": "2026-07-25T22:36:00.000000Z",
-     "dependencies": [
-      {
-       "id": 2310,
-       "name": "WTT - CommonLib",
-       "slug": "wtt-commonlib",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2310/wtt-commonlib"
-      },
-      {
-       "id": 2426,
-       "name": "MoreBotsAPI",
-       "slug": "morebotsapi",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2426/morebotsapi"
-      },
-      {
-       "id": 2512,
-       "name": "WTT - Content Backport",
-       "slug": "wtt-content-backport",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2512/wtt-content-backport"
-      }
-     ]
-    },
-    {
-     "id": 14225,
-     "version": "1.1.0",
-     "description": "<h2>Added</h2>\n<ul>\n<li>The blackout is a per raid roll now instead of firing on every Labs run, so you never know which one goes dark until the lights cut. 25% by default. Set <code>blackoutChance</code> in <code>SPT/user/mods/Blackout/config.json</code> to change it, or put it to 100 if you want the old behaviour back</li>\n</ul>\n<h2>Changed</h2>\n<ul>\n<li>The LV-119\u2019s soft armor inserts are built in and can no longer be left out, the same as every other armor in the game</li>\n</ul>\n<h2>Fixed</h2>\n<ul>\n<li>The Wedge\u2019s armor was spawning with their plates but no soft armor, so he was taking full damage anywhere the plates didn\u2019t cover. He gets his inserts now</li>\n<li>The vehicles at the hangar and parking gates were disappearing the moment the lights went out, collision and all, so you could walk straight through where a car was parked. They stay put now, and they still stop bullets</li>\n</ul>\n<h2>Updating</h2>\n<p>Extract and drop the <code>BepInEx</code> and <code>SPT</code> folders into your SPT root, straight over the top of 1.0.0. Nothing was renamed or moved, so there is nothing to delete first. The only new file is <code>config.json</code>.</p>\n",
-     "spt_constraint": "4.0.13",
-     "fika": "unknown",
-     "downloads": 305,
-     "size": 63806249,
-     "link": "https://forge.sp-tarkov.com/mod/download/2843/blackout/1.1.0",
-     "published_at": "2026-07-25T20:35:00.000000Z",
-     "dependencies": [
-      {
-       "id": 2310,
-       "name": "WTT - CommonLib",
-       "slug": "wtt-commonlib",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2310/wtt-commonlib"
-      },
-      {
-       "id": 2426,
-       "name": "MoreBotsAPI",
-       "slug": "morebotsapi",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2426/morebotsapi"
-      },
-      {
-       "id": 2512,
-       "name": "WTT - Content Backport",
-       "slug": "wtt-content-backport",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2512/wtt-content-backport"
-      }
-     ]
-    },
-    {
-     "id": 14218,
-     "version": "1.0.0",
-     "description": "<p>-Initial Release</p>\n",
-     "spt_constraint": "4.0.13",
-     "fika": "unknown",
-     "downloads": 961,
-     "size": 63804273,
-     "link": "https://forge.sp-tarkov.com/mod/download/2843/blackout/1.0.0",
-     "published_at": "2026-07-25T06:35:00.000000Z",
-     "dependencies": [
-      {
-       "id": 2426,
-       "name": "MoreBotsAPI",
-       "slug": "morebotsapi",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2426/morebotsapi"
-      },
-      {
-       "id": 2512,
-       "name": "WTT - Content Backport",
-       "slug": "wtt-content-backport",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2512/wtt-content-backport"
-      },
-      {
-       "id": 2310,
-       "name": "WTT - CommonLib",
-       "slug": "wtt-commonlib",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2310/wtt-commonlib"
-      }
-     ]
-    }
-   ],
-   "latest_version": "3.1.1",
-   "spt_constraint": "4.0.13",
-   "all_spt_constraints": [
-    "4.0.13"
-   ],
-   "dependencies": [
-    {
-     "id": 2310,
-     "name": "WTT - CommonLib",
-     "slug": "wtt-commonlib",
-     "constraint": "",
-     "url": "https://forge.sp-tarkov.com/mod/2310/wtt-commonlib"
-    }
-   ],
-   "all_dependencies": [
-    {
-     "id": 2310,
-     "name": "WTT - CommonLib",
-     "slug": "wtt-commonlib",
-     "constraint": "",
-     "url": "https://forge.sp-tarkov.com/mod/2310/wtt-commonlib"
-    },
-    {
-     "id": 2426,
-     "name": "MoreBotsAPI",
-     "slug": "morebotsapi",
-     "constraint": "",
-     "url": "https://forge.sp-tarkov.com/mod/2426/morebotsapi"
-    },
-    {
-     "id": 2512,
-     "name": "WTT - Content Backport",
-     "slug": "wtt-content-backport",
-     "constraint": "",
-     "url": "https://forge.sp-tarkov.com/mod/2512/wtt-content-backport"
-    }
-   ],
-   "published_at": "2026-07-25T06:36:00.000000Z",
-   "updated_at": "2026-08-07T06:02:14.000000Z",
-   "flags": {
-    "contains_ads": false,
-    "contains_ai_content": true,
-    "ai_disclosure": "<p>Ai was used to make the mod picture.</p>\n",
-    "cheat_notice": false,
     "profile_binding_notice": false
    },
    "origin": "forge"
@@ -83169,6 +83190,112 @@
    "origin": "forge"
   },
   {
+   "id": 2657,
+   "hub_id": null,
+   "guid": "com.acidphantasm.cultistcircleimprovements",
+   "name": "Cultist Circle Improvements",
+   "slug": "cultist-circle-improvements",
+   "teaser": "Fine tune your Cultist Circle, change all the values and timers. Add new direct reward crafts! Also comes with a web config, which at this point is probably expected from me. Oof.",
+   "description_html": "<p>BONUS</p>\n<ul>\n<li>This mod also adds nearly all of the new Cultist Circle crafts, many of them also require WTT\u2019s Content Backport.</li>\n</ul>\n<p>Go get it.</p>\n<hr />\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">INSTALLATION</div>\n<div class=\"tab-content\"><p>Installation</p>\n<ol>\n<li>Download Cultist Circle Improvements</li>\n<li>Open the downloaded 7z file in 7-zip</li>\n<li>Select the SPT folder in the 7z file in 7-zip</li>\n<li>Drag the SPT folder from 7-zip into your root SPT folder</li>\n</ol>\n<p>Demonstration Video (yoink):</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/34vXXDj.gif\" alt=\"34vXXDj.gif\" /></p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">UNINSTALLATION</div>\n<div class=\"tab-content\"><ol>\n<li>Delete <code>/ROOTSPT/SPT/user/mods/acidphantasm-cultistcircleimprovements</code></li>\n<li>Done</li>\n</ol></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">CONFIG</div>\n<div class=\"tab-content\"><p>Configuration</p>\n<p>To edit the configuration run your server after installing and go to:</p>\n<ul>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://127.0.0.1:6969/cci/\" rel=\"noreferrer noopener\">https://127.0.0.1:6969/cci/</a></li>\n</ul>\n<p>All configs can be updated and edited while the server is running.</p>\n<p><strong>If you are using Fika then put the appropriate IP and port instead.</strong></p></div></div></div>\n<p>If you enjoy my work - you can <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/acidphantasm\" rel=\"noreferrer noopener\">buy me a coffee</a>~</p>\n",
+   "thumbnail": "https://forge-static.sp-tarkov.com/mods/lMwkyPstHL9BZ7OB4e7UycUYQtGuoSzgW1LvRo2f.png",
+   "forge_url": "https://forge.sp-tarkov.com/mod/2657/cultist-circle-improvements",
+   "downloads": 8203,
+   "favourites": 44,
+   "featured": false,
+   "fika": true,
+   "fika_latest": "compatible",
+   "category": {
+    "id": 6,
+    "title": "Hideout",
+    "slug": "hideout"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 48110,
+     "name": "acidphantasm",
+     "avatar": "https://forge-static.sp-tarkov.com/profile-photos/539f89fb275187ce761506de5f60c3a09690ee32_128w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/acidphantasm/cultistcircleimprovements-csharp",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 14574,
+     "version": "1.1.0",
+     "description": "<h3><strong>This version will only work for SPT 4.1.x</strong></h3>\n<p>New Features</p>\n<ul>\n<li>Update to 4.1</li>\n</ul>\n<p>Changes</p>\n<ul>\n<li>Removed the extra custom crafts (they are vanilla now)</li>\n<li>Updated vanilla crafts</li>\n</ul>\n",
+     "spt_constraint": "~4.1",
+     "fika": "compatible",
+     "downloads": 16,
+     "size": 122337,
+     "link": "https://forge.sp-tarkov.com/mod/download/2657/cultist-circle-improvements/1.1.0",
+     "published_at": "2026-08-09T02:37:00.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 13448,
+     "version": "1.0.2",
+     "description": "<h3><strong>This version will only work for SPT 4.0.10+</strong></h3>\n<p>New Features</p>\n<ul>\n<li>Added Duck Pate recipe (WTT-Content Backport only)</li>\n<li>Added Duck Figurine recipe (WTT-Content Backport only)</li>\n</ul>\n",
+     "spt_constraint": "~4.0.10",
+     "fika": "compatible",
+     "downloads": 6800,
+     "size": 121735,
+     "link": "https://forge.sp-tarkov.com/mod/download/2657/cultist-circle-improvements/1.0.2",
+     "published_at": "2026-04-17T04:04:00.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 13380,
+     "version": "1.0.1",
+     "description": "<h3><strong>This version will only work for SPT 4.0.10+</strong></h3>\n<p>New Features</p>\n<ul>\n<li>WebConfig editor for adjusting craft time &amp; repeatability for vanilla crafts</li>\n<li>WebConfig editor for adjusting craft time &amp; repeatability for Content Backport crafts</li>\n</ul>\n<p>Bugs Squashed</p>\n<ul>\n<li>Fixed folder case that didn\u2019t fix properly before for Linux users</li>\n</ul>\n",
+     "spt_constraint": "~4.0.10",
+     "fika": "compatible",
+     "downloads": 1010,
+     "size": 121693,
+     "link": "https://forge.sp-tarkov.com/mod/download/2657/cultist-circle-improvements/1.0.1",
+     "published_at": "2026-04-06T01:06:00.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 13375,
+     "version": "1.0.0",
+     "description": "<h3><strong>This version will only work for SPT 4.0.10+</strong></h3>\n<p>Initial Release</p>\n",
+     "spt_constraint": "~4.0.10",
+     "fika": "compatible",
+     "downloads": 377,
+     "size": 118135,
+     "link": "https://forge.sp-tarkov.com/mod/download/2657/cultist-circle-improvements/1.0.0",
+     "published_at": "2026-04-05T05:15:00.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "1.1.0",
+   "spt_constraint": "~4.1",
+   "all_spt_constraints": [
+    "~4.0.10",
+    "~4.1"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-04-05T05:12:00.000000Z",
+   "updated_at": "2026-08-09T02:39:03.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge"
+  },
+  {
    "id": 1096,
    "hub_id": 1517,
    "guid": null,
@@ -83386,99 +83513,6 @@
    "all_dependencies": [],
    "published_at": "2025-05-20T11:04:21.000000Z",
    "updated_at": "2026-07-07T16:59:08.000000Z",
-   "flags": {
-    "contains_ads": false,
-    "contains_ai_content": false,
-    "ai_disclosure": "",
-    "cheat_notice": false,
-    "profile_binding_notice": false
-   },
-   "origin": "forge"
-  },
-  {
-   "id": 2657,
-   "hub_id": null,
-   "guid": "com.acidphantasm.cultistcircleimprovements",
-   "name": "Cultist Circle Improvements",
-   "slug": "cultist-circle-improvements",
-   "teaser": "Fine tune your Cultist Circle, change all the values and timers. Add new direct reward crafts! Also comes with a web config, which at this point is probably expected from me. Oof.",
-   "description_html": "<p>BONUS</p>\n<ul>\n<li>This mod also adds nearly all of the new Cultist Circle crafts, many of them also require WTT\u2019s Content Backport.</li>\n</ul>\n<p>Go get it.</p>\n<hr />\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">INSTALLATION</div>\n<div class=\"tab-content\"><p>Installation</p>\n<ol>\n<li>Download Cultist Circle Improvements</li>\n<li>Open the downloaded 7z file in 7-zip</li>\n<li>Select the SPT folder in the 7z file in 7-zip</li>\n<li>Drag the SPT folder from 7-zip into your root SPT folder</li>\n</ol>\n<p>Demonstration Video (yoink):</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/34vXXDj.gif\" alt=\"34vXXDj.gif\" /></p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">UNINSTALLATION</div>\n<div class=\"tab-content\"><ol>\n<li>Delete <code>/ROOTSPT/SPT/user/mods/acidphantasm-cultistcircleimprovements</code></li>\n<li>Done</li>\n</ol></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">CONFIG</div>\n<div class=\"tab-content\"><p>Configuration</p>\n<p>To edit the configuration run your server after installing and go to:</p>\n<ul>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://127.0.0.1:6969/cci/\" rel=\"noreferrer noopener\">https://127.0.0.1:6969/cci/</a></li>\n</ul>\n<p>All configs can be updated and edited while the server is running.</p>\n<p><strong>If you are using Fika then put the appropriate IP and port instead.</strong></p></div></div></div>\n<p>If you enjoy my work - you can <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/acidphantasm\" rel=\"noreferrer noopener\">buy me a coffee</a>~</p>\n",
-   "thumbnail": "https://forge-static.sp-tarkov.com/mods/lMwkyPstHL9BZ7OB4e7UycUYQtGuoSzgW1LvRo2f.png",
-   "forge_url": "https://forge.sp-tarkov.com/mod/2657/cultist-circle-improvements",
-   "downloads": 8164,
-   "favourites": 44,
-   "featured": false,
-   "fika": true,
-   "fika_latest": "compatible",
-   "category": {
-    "id": 6,
-    "title": "Hideout",
-    "slug": "hideout"
-   },
-   "license": {
-    "name": "MIT License",
-    "link": "https://choosealicense.com/licenses/mit/"
-   },
-   "authors": [
-    {
-     "id": 48110,
-     "name": "acidphantasm",
-     "avatar": "https://forge-static.sp-tarkov.com/profile-photos/539f89fb275187ce761506de5f60c3a09690ee32_128w.webp"
-    }
-   ],
-   "source_links": [
-    {
-     "url": "https://github.com/acidphantasm/cultistcircleimprovements-csharp",
-     "label": ""
-    }
-   ],
-   "versions": [
-    {
-     "id": 13448,
-     "version": "1.0.2",
-     "description": "<h3><strong>This version will only work for SPT 4.0.10+</strong></h3>\n<p>New Features</p>\n<ul>\n<li>Added Duck Pate recipe (WTT-Content Backport only)</li>\n<li>Added Duck Figurine recipe (WTT-Content Backport only)</li>\n</ul>\n",
-     "spt_constraint": "~4.0.10",
-     "fika": "compatible",
-     "downloads": 6778,
-     "size": 121735,
-     "link": "https://forge.sp-tarkov.com/mod/download/2657/cultist-circle-improvements/1.0.2",
-     "published_at": "2026-04-17T04:04:00.000000Z",
-     "dependencies": []
-    },
-    {
-     "id": 13380,
-     "version": "1.0.1",
-     "description": "<h3><strong>This version will only work for SPT 4.0.10+</strong></h3>\n<p>New Features</p>\n<ul>\n<li>WebConfig editor for adjusting craft time &amp; repeatability for vanilla crafts</li>\n<li>WebConfig editor for adjusting craft time &amp; repeatability for Content Backport crafts</li>\n</ul>\n<p>Bugs Squashed</p>\n<ul>\n<li>Fixed folder case that didn\u2019t fix properly before for Linux users</li>\n</ul>\n",
-     "spt_constraint": "~4.0.10",
-     "fika": "compatible",
-     "downloads": 1009,
-     "size": 121693,
-     "link": "https://forge.sp-tarkov.com/mod/download/2657/cultist-circle-improvements/1.0.1",
-     "published_at": "2026-04-06T01:06:00.000000Z",
-     "dependencies": []
-    },
-    {
-     "id": 13375,
-     "version": "1.0.0",
-     "description": "<h3><strong>This version will only work for SPT 4.0.10+</strong></h3>\n<p>Initial Release</p>\n",
-     "spt_constraint": "~4.0.10",
-     "fika": "compatible",
-     "downloads": 377,
-     "size": 118135,
-     "link": "https://forge.sp-tarkov.com/mod/download/2657/cultist-circle-improvements/1.0.0",
-     "published_at": "2026-04-05T05:15:00.000000Z",
-     "dependencies": []
-    }
-   ],
-   "latest_version": "1.0.2",
-   "spt_constraint": "~4.0.10",
-   "all_spt_constraints": [
-    "~4.0.10"
-   ],
-   "dependencies": [],
-   "all_dependencies": [],
-   "published_at": "2026-04-05T05:12:00.000000Z",
-   "updated_at": "2026-07-28T08:22:31.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -94183,6 +94217,173 @@
    "origin": "forge"
   },
   {
+   "id": 2851,
+   "hub_id": null,
+   "guid": "com.nevek20.sptmodmanager",
+   "name": "SPT Mod Manager",
+   "slug": "spt-mod-manager",
+   "teaser": "Open-source mod manager for SPT featuring easy installation, management and Forge integration.",
+   "description_html": "<h2>SPT Mod Manager</h2>\n<p>A Vortex/MO2-style mod manager built specifically for Single Player Tarkov. It came out of a real pain point: I got tired of having to hunt down files one by one just to uninstall a mod that was causing conflicts, so I decided to build a tool that would solve that for good.</p>\n<h3>What it does</h3>\n<ul>\n<li>Installs <code>.zip</code>, <code>.7z</code>, and <code>.rar</code> mods with automatic structure detection (Server, Client, or Hybrid)</li>\n<li>Enable/disable mods without deleting anything</li>\n<li>Rename, uninstall, and reinstall mods (reinstall works if you still have the original archive)</li>\n<li>Export and import mod lists</li>\n<li>Conflict detection by name (still basic, but improving)</li>\n<li>Forge integration: browse and install mods directly from the app, view mod info, download the right version, and check for updates</li>\n<li>Bilingual UI (PT-BR and EN)</li>\n</ul>\n<h3>Installation</h3>\n<p>Download the <code>.zip</code>, run the <code>.exe</code>. It installs everything automatically and creates a desktop shortcut.</p>\n<h3>Current limitations</h3>\n<ul>\n<li>Only tested with compressed archives (no folder-based installs yet)</li>\n<li>Doesn\u2019t modify any SPT core files (only copies/organizes)</li>\n<li>Fully tested and supported only on the latest SPT version (older versions should work, but without guarantees)</li>\n<li>Windows only for now (Linux/macOS support planned, but i need to refine the Mod Manager first)</li>\n</ul>\n<p>Personal project, not affiliated with the SPT team or Battlestate Games.</p>\n",
+   "thumbnail": "https://forge-static.sp-tarkov.com/mods/vrJPEuHFoXvwoCAoMn5Zzo9JM3ekLGPqfjOjeZ4a.png",
+   "forge_url": "https://forge.sp-tarkov.com/mod/2851/spt-mod-manager",
+   "downloads": 6421,
+   "favourites": 23,
+   "featured": false,
+   "fika": true,
+   "fika_latest": "compatible",
+   "category": {
+    "id": 17,
+    "title": "Other",
+    "slug": "other"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 117466,
+     "name": "TioEmir",
+     "avatar": "https://forge-static.sp-tarkov.com/profile-photos/fPjDjjdxZLnsV2U53bPIJ0YDguFdUNcCRBU8nTp5_128w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/Nevek20/SPT_Mod_Manager",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 14460,
+     "version": "0.4.5",
+     "description": "<p>Release 0.4.5</p>\n<ul>\n<li>Multi-part mods now actually switch together \u2014 0.4.4 showed the \u201c2-part package\u201d chip but the parts were never linked. Mods you already have are detected automatically, so there\u2019s nothing to reinstall.</li>\n<li>The SPT version check announced in 0.4.4 wasn\u2019t actually running. It works now: the Manager reads which SPT version a mod was built for, straight from the mod, and flags mismatches.</li>\n<li>Fixed disabling a mod leaving its prepatcher (BepInEx/patchers) running, and removing one when its patcher is a folder rather than a single file.</li>\n<li>Fixed showing \u201cupdate available\u201d for a version you already have, even when Forge is out of date about what you\u2019re running.</li>\n<li>Fixed leftover duplicate rows for a mod\u2019s loose files.</li>\n</ul>\n",
+     "spt_constraint": "4.1.0",
+     "fika": "compatible",
+     "downloads": 2667,
+     "size": 121841065,
+     "link": "https://forge.sp-tarkov.com/mod/download/2851/spt-mod-manager/0.4.5",
+     "published_at": "2026-08-04T03:01:00.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 14366,
+     "version": "0.4.4",
+     "description": "<p>Release 0.4.4</p>\n<ul>\n<li>Fixed disabling a mod leaving its prepatcher (BepInEx/patchers) still running.</li>\n<li>A mod\u2019s server and client halves are now handled as one package \u2014 disabling one switches both, and a chip on the row explains it.</li>\n<li>Update checking finds far more of your mods, and no longer gives up partway through a large install while calling the rest \u201cnot found\u201d.</li>\n<li>Conflict checking works on SPT 4.0 again \u2014 it was looking for data that 4.0 mods no longer ship, so it found nothing.</li>\n<li>New: checks whether a mod supports your SPT version, read from the mod itself, no internet needed.</li>\n</ul>\n<p>Package grouping applies to mods installed through the app from now on.</p>\n",
+     "spt_constraint": "4.1.0",
+     "fika": "compatible",
+     "downloads": 1623,
+     "size": 121838786,
+     "link": "https://forge.sp-tarkov.com/mod/download/2851/spt-mod-manager/0.4.4",
+     "published_at": "2026-08-02T01:40:00.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 14310,
+     "version": "0.4.3",
+     "description": "<p>Hotfix 0.4.3</p>\n<ul>\n<li>Fixed importing a mod list showing the differences but never downloading anything.</li>\n<li>Fixed some mods appearing twice, with a blank second entry. These clear up on their own.</li>\n</ul>\n",
+     "spt_constraint": "4",
+     "fika": "compatible",
+     "downloads": 724,
+     "size": 121833832,
+     "link": "https://forge.sp-tarkov.com/mod/download/2851/spt-mod-manager/0.4.3",
+     "published_at": "2026-07-31T15:53:00.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 14304,
+     "version": "0.4.2",
+     "description": "<p>Release 0.4.2</p>\n<ul>\n<li>Fixed installing certain mods overwriting SPT\u2019s core files, which left the game unable to start.</li>\n<li>Update checks are much faster after the first one, and you can now update straight from the app.</li>\n<li>Mods that ship a DLL plus a data folder no longer appear twice, and more mods now show their version and author.</li>\n<li>Restoring an imported mod list now works on large lists.</li>\n<li>Fixed reporting an update to the version you already have.</li>\n</ul>\n<p>Listing fixes apply to mods installed from now on \u2014 reinstalling a mod through the app cleans up its existing entry.</p>\n",
+     "spt_constraint": "4",
+     "fika": "compatible",
+     "downloads": 533,
+     "size": 121833112,
+     "link": "https://forge.sp-tarkov.com/mod/download/2851/spt-mod-manager/0.4.2",
+     "published_at": "2026-07-31T00:25:00.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 14293,
+     "version": "0.4.1",
+     "description": "<p>Hotfix 0.4.1</p>\n<ul>\n<li>Fixed mods that ship their server files inside an SPT/ folder being installed to the wrong place, where SPT can\u2019t load them.</li>\n<li>Fixed a mod\u2019s loose files (configs and similar) showing as a separate \u201cOrphan\u201d entry \u2014 they now belong to the mod and are removed with it.</li>\n<li>Same fix now covers packages that install both a server and a client part.</li>\n</ul>\n<p>Applies to mods installed from now on. Reinstall a mod through the app to clean up its existing entries.</p>\n",
+     "spt_constraint": "4",
+     "fika": "compatible",
+     "downloads": 230,
+     "size": 175284689,
+     "link": "https://forge.sp-tarkov.com/mod/download/2851/spt-mod-manager/0.4.1",
+     "published_at": "2026-07-30T01:20:00.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 14287,
+     "version": "0.4.0",
+     "description": "<p>Release 0.4.0</p>\n<ul>\n<li>Mods now show their name, author and version - SPT 4.0 moved this data inside the mod\u2019s DLL, and the manager now reads it from there.</li>\n<li>Update checking now finds mods reliably (matched by GUID) and no longer gets stuck.</li>\n<li>Fixed some mods showing nonsense as the author.</li>\n<li>Fixed multi-GB content mods failing to download or extract.</li>\n<li>The manager now tells you when a new version is released.</li>\n</ul>\n<p>Mods listed as Manual were installed outside the app, so they rely only on what their DLL exposes. Reinstalling them through the app fills in the missing author and version.</p>\n",
+     "spt_constraint": "4",
+     "fika": "compatible",
+     "downloads": 59,
+     "size": 175283249,
+     "link": "https://forge.sp-tarkov.com/mod/download/2851/spt-mod-manager/0.4.0",
+     "published_at": "2026-07-29T23:54:00.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 14276,
+     "version": "0.3.2",
+     "description": "<p>Hotfix 0.3.2</p>\n<ul>\n<li>Fixed the SPT Version dropdown getting stuck on the placeholder after selecting an SPT installation for the first time.</li>\n</ul>\n",
+     "spt_constraint": "4",
+     "fika": "compatible",
+     "downloads": 232,
+     "size": 175284226,
+     "link": "https://forge.sp-tarkov.com/mod/download/2851/spt-mod-manager/0.3.2",
+     "published_at": "2026-07-28T21:02:00.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 14259,
+     "version": "0.3.1",
+     "description": "<h2>Hotfix 0.3.1</h2>\n<ul>\n<li>Removed the server mod load order feature, SPT 4.x manages mod loading order internally, making manual reordering obsolete.</li>\n</ul>\n<p>Thanks to everyone who reported issues and provided feedback!</p>\n",
+     "spt_constraint": "4",
+     "fika": "compatible",
+     "downloads": 260,
+     "size": 175294265,
+     "link": "https://forge.sp-tarkov.com/mod/download/2851/spt-mod-manager/0.3.1",
+     "published_at": "2026-07-27T22:06:00.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 14258,
+     "version": "0.3.0",
+     "description": "<h2>v0.3.0</h2>\n<ul>\n<li>Importing a modlist now auto-downloads and installs any missing mods directly from Forge</li>\n<li>Fixed an issue where mods were being installed into the wrong SPT folder structure</li>\n</ul>\n",
+     "spt_constraint": "4.",
+     "fika": "unknown",
+     "downloads": 93,
+     "size": 175296154,
+     "link": "https://forge.sp-tarkov.com/mod/download/2851/spt-mod-manager/0.3.0",
+     "published_at": "2026-07-27T19:38:00.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "0.4.5",
+   "spt_constraint": "4.1.0",
+   "all_spt_constraints": [
+    "4",
+    "4.",
+    "4.1.0"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-07-27T19:03:00.000000Z",
+   "updated_at": "2026-08-09T01:18:29.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": true,
+    "ai_disclosure": "<p>AI tools were used extensively throughout this project\u2019s development, including analyzing code and debugging portions of the codebase, and helping structure parts of the application. The overall design, feature decisions, and testing were done by me, with AI acting as a coding assistant throughout the process.</p>\n",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge"
+  },
+  {
    "id": 1871,
    "hub_id": 2531,
    "guid": null,
@@ -94383,173 +94584,6 @@
     "contains_ads": false,
     "contains_ai_content": false,
     "ai_disclosure": "",
-    "cheat_notice": false,
-    "profile_binding_notice": false
-   },
-   "origin": "forge"
-  },
-  {
-   "id": 2851,
-   "hub_id": null,
-   "guid": "com.nevek20.sptmodmanager",
-   "name": "SPT Mod Manager",
-   "slug": "spt-mod-manager",
-   "teaser": "Open-source mod manager for SPT featuring easy installation, management and Forge integration.",
-   "description_html": "<h2>SPT Mod Manager</h2>\n<p>A Vortex/MO2-style mod manager built specifically for Single Player Tarkov. It came out of a real pain point: I got tired of having to hunt down files one by one just to uninstall a mod that was causing conflicts, so I decided to build a tool that would solve that for good.</p>\n<h3>What it does</h3>\n<ul>\n<li>Installs <code>.zip</code>, <code>.7z</code>, and <code>.rar</code> mods with automatic structure detection (Server, Client, or Hybrid)</li>\n<li>Enable/disable mods without deleting anything</li>\n<li>Rename, uninstall, and reinstall mods (reinstall works if you still have the original archive)</li>\n<li>Export and import mod lists</li>\n<li>Conflict detection by name (still basic, but improving)</li>\n<li>Forge integration: browse and install mods directly from the app, view mod info, download the right version, and check for updates</li>\n<li>Bilingual UI (PT-BR and EN)</li>\n</ul>\n<h3>Installation</h3>\n<p>Download the <code>.zip</code>, run the <code>.exe</code>. It installs everything automatically and creates a desktop shortcut.</p>\n<h3>Current limitations</h3>\n<ul>\n<li>Only tested with compressed archives (no folder-based installs yet)</li>\n<li>Doesn\u2019t modify any SPT core files (only copies/organizes)</li>\n<li>Fully tested and supported only on the latest SPT version (older versions should work, but without guarantees)</li>\n<li>Windows only for now (Linux/macOS support planned, but i need to refine the Mod Manager first)</li>\n</ul>\n<p>Personal project, not affiliated with the SPT team or Battlestate Games.</p>\n",
-   "thumbnail": "https://forge-static.sp-tarkov.com/mods/vrJPEuHFoXvwoCAoMn5Zzo9JM3ekLGPqfjOjeZ4a.png",
-   "forge_url": "https://forge.sp-tarkov.com/mod/2851/spt-mod-manager",
-   "downloads": 6319,
-   "favourites": 23,
-   "featured": false,
-   "fika": true,
-   "fika_latest": "compatible",
-   "category": {
-    "id": 17,
-    "title": "Other",
-    "slug": "other"
-   },
-   "license": {
-    "name": "MIT License",
-    "link": "https://choosealicense.com/licenses/mit/"
-   },
-   "authors": [
-    {
-     "id": 117466,
-     "name": "TioEmir",
-     "avatar": "https://forge-static.sp-tarkov.com/profile-photos/fPjDjjdxZLnsV2U53bPIJ0YDguFdUNcCRBU8nTp5_128w.webp"
-    }
-   ],
-   "source_links": [
-    {
-     "url": "https://github.com/Nevek20/SPT_Mod_Manager",
-     "label": ""
-    }
-   ],
-   "versions": [
-    {
-     "id": 14460,
-     "version": "0.4.5",
-     "description": "<p>Release 0.4.5</p>\n<ul>\n<li>Multi-part mods now actually switch together \u2014 0.4.4 showed the \u201c2-part package\u201d chip but the parts were never linked. Mods you already have are detected automatically, so there\u2019s nothing to reinstall.</li>\n<li>The SPT version check announced in 0.4.4 wasn\u2019t actually running. It works now: the Manager reads which SPT version a mod was built for, straight from the mod, and flags mismatches.</li>\n<li>Fixed disabling a mod leaving its prepatcher (BepInEx/patchers) running, and removing one when its patcher is a folder rather than a single file.</li>\n<li>Fixed showing \u201cupdate available\u201d for a version you already have, even when Forge is out of date about what you\u2019re running.</li>\n<li>Fixed leftover duplicate rows for a mod\u2019s loose files.</li>\n</ul>\n",
-     "spt_constraint": "4.1.0",
-     "fika": "compatible",
-     "downloads": 2583,
-     "size": 121841065,
-     "link": "https://forge.sp-tarkov.com/mod/download/2851/spt-mod-manager/0.4.5",
-     "published_at": "2026-08-04T03:01:00.000000Z",
-     "dependencies": []
-    },
-    {
-     "id": 14366,
-     "version": "0.4.4",
-     "description": "<p>Release 0.4.4</p>\n<ul>\n<li>Fixed disabling a mod leaving its prepatcher (BepInEx/patchers) still running.</li>\n<li>A mod\u2019s server and client halves are now handled as one package \u2014 disabling one switches both, and a chip on the row explains it.</li>\n<li>Update checking finds far more of your mods, and no longer gives up partway through a large install while calling the rest \u201cnot found\u201d.</li>\n<li>Conflict checking works on SPT 4.0 again \u2014 it was looking for data that 4.0 mods no longer ship, so it found nothing.</li>\n<li>New: checks whether a mod supports your SPT version, read from the mod itself, no internet needed.</li>\n</ul>\n<p>Package grouping applies to mods installed through the app from now on.</p>\n",
-     "spt_constraint": "4.1.0",
-     "fika": "compatible",
-     "downloads": 1623,
-     "size": 121838786,
-     "link": "https://forge.sp-tarkov.com/mod/download/2851/spt-mod-manager/0.4.4",
-     "published_at": "2026-08-02T01:40:00.000000Z",
-     "dependencies": []
-    },
-    {
-     "id": 14310,
-     "version": "0.4.3",
-     "description": "<p>Hotfix 0.4.3</p>\n<ul>\n<li>Fixed importing a mod list showing the differences but never downloading anything.</li>\n<li>Fixed some mods appearing twice, with a blank second entry. These clear up on their own.</li>\n</ul>\n",
-     "spt_constraint": "4",
-     "fika": "compatible",
-     "downloads": 712,
-     "size": 121833832,
-     "link": "https://forge.sp-tarkov.com/mod/download/2851/spt-mod-manager/0.4.3",
-     "published_at": "2026-07-31T15:53:00.000000Z",
-     "dependencies": []
-    },
-    {
-     "id": 14304,
-     "version": "0.4.2",
-     "description": "<p>Release 0.4.2</p>\n<ul>\n<li>Fixed installing certain mods overwriting SPT\u2019s core files, which left the game unable to start.</li>\n<li>Update checks are much faster after the first one, and you can now update straight from the app.</li>\n<li>Mods that ship a DLL plus a data folder no longer appear twice, and more mods now show their version and author.</li>\n<li>Restoring an imported mod list now works on large lists.</li>\n<li>Fixed reporting an update to the version you already have.</li>\n</ul>\n<p>Listing fixes apply to mods installed from now on \u2014 reinstalling a mod through the app cleans up its existing entry.</p>\n",
-     "spt_constraint": "4",
-     "fika": "compatible",
-     "downloads": 532,
-     "size": 121833112,
-     "link": "https://forge.sp-tarkov.com/mod/download/2851/spt-mod-manager/0.4.2",
-     "published_at": "2026-07-31T00:25:00.000000Z",
-     "dependencies": []
-    },
-    {
-     "id": 14293,
-     "version": "0.4.1",
-     "description": "<p>Hotfix 0.4.1</p>\n<ul>\n<li>Fixed mods that ship their server files inside an SPT/ folder being installed to the wrong place, where SPT can\u2019t load them.</li>\n<li>Fixed a mod\u2019s loose files (configs and similar) showing as a separate \u201cOrphan\u201d entry \u2014 they now belong to the mod and are removed with it.</li>\n<li>Same fix now covers packages that install both a server and a client part.</li>\n</ul>\n<p>Applies to mods installed from now on. Reinstall a mod through the app to clean up its existing entries.</p>\n",
-     "spt_constraint": "4",
-     "fika": "compatible",
-     "downloads": 229,
-     "size": 175284689,
-     "link": "https://forge.sp-tarkov.com/mod/download/2851/spt-mod-manager/0.4.1",
-     "published_at": "2026-07-30T01:20:00.000000Z",
-     "dependencies": []
-    },
-    {
-     "id": 14287,
-     "version": "0.4.0",
-     "description": "<p>Release 0.4.0</p>\n<ul>\n<li>Mods now show their name, author and version - SPT 4.0 moved this data inside the mod\u2019s DLL, and the manager now reads it from there.</li>\n<li>Update checking now finds mods reliably (matched by GUID) and no longer gets stuck.</li>\n<li>Fixed some mods showing nonsense as the author.</li>\n<li>Fixed multi-GB content mods failing to download or extract.</li>\n<li>The manager now tells you when a new version is released.</li>\n</ul>\n<p>Mods listed as Manual were installed outside the app, so they rely only on what their DLL exposes. Reinstalling them through the app fills in the missing author and version.</p>\n",
-     "spt_constraint": "4",
-     "fika": "compatible",
-     "downloads": 58,
-     "size": 175283249,
-     "link": "https://forge.sp-tarkov.com/mod/download/2851/spt-mod-manager/0.4.0",
-     "published_at": "2026-07-29T23:54:00.000000Z",
-     "dependencies": []
-    },
-    {
-     "id": 14276,
-     "version": "0.3.2",
-     "description": "<p>Hotfix 0.3.2</p>\n<ul>\n<li>Fixed the SPT Version dropdown getting stuck on the placeholder after selecting an SPT installation for the first time.</li>\n</ul>\n",
-     "spt_constraint": "4",
-     "fika": "compatible",
-     "downloads": 231,
-     "size": 175284226,
-     "link": "https://forge.sp-tarkov.com/mod/download/2851/spt-mod-manager/0.3.2",
-     "published_at": "2026-07-28T21:02:00.000000Z",
-     "dependencies": []
-    },
-    {
-     "id": 14259,
-     "version": "0.3.1",
-     "description": "<h2>Hotfix 0.3.1</h2>\n<ul>\n<li>Removed the server mod load order feature, SPT 4.x manages mod loading order internally, making manual reordering obsolete.</li>\n</ul>\n<p>Thanks to everyone who reported issues and provided feedback!</p>\n",
-     "spt_constraint": "4",
-     "fika": "compatible",
-     "downloads": 259,
-     "size": 175294265,
-     "link": "https://forge.sp-tarkov.com/mod/download/2851/spt-mod-manager/0.3.1",
-     "published_at": "2026-07-27T22:06:00.000000Z",
-     "dependencies": []
-    },
-    {
-     "id": 14258,
-     "version": "0.3.0",
-     "description": "<h2>v0.3.0</h2>\n<ul>\n<li>Importing a modlist now auto-downloads and installs any missing mods directly from Forge</li>\n<li>Fixed an issue where mods were being installed into the wrong SPT folder structure</li>\n</ul>\n",
-     "spt_constraint": "4.",
-     "fika": "unknown",
-     "downloads": 92,
-     "size": 175296154,
-     "link": "https://forge.sp-tarkov.com/mod/download/2851/spt-mod-manager/0.3.0",
-     "published_at": "2026-07-27T19:38:00.000000Z",
-     "dependencies": []
-    }
-   ],
-   "latest_version": "0.4.5",
-   "spt_constraint": "4.1.0",
-   "all_spt_constraints": [
-    "4",
-    "4.",
-    "4.1.0"
-   ],
-   "dependencies": [],
-   "all_dependencies": [],
-   "published_at": "2026-07-27T19:03:00.000000Z",
-   "updated_at": "2026-08-05T03:18:06.000000Z",
-   "flags": {
-    "contains_ads": false,
-    "contains_ai_content": true,
-    "ai_disclosure": "<p>AI tools were used extensively throughout this project\u2019s development, including analyzing code and debugging portions of the codebase, and helping structure parts of the application. The overall design, feature decisions, and testing were done by me, with AI acting as a coding assistant throughout the process.</p>\n",
     "cheat_notice": false,
     "profile_binding_notice": false
    },
@@ -114925,6 +114959,93 @@
    "origin": "forge"
   },
   {
+   "id": 1779,
+   "hub_id": 2416,
+   "guid": null,
+   "name": "RCTA - Lara Croft [CODMW3]",
+   "slug": "rcta-lara-croft-codmw3",
+   "teaser": "Lara Croft X Call of Duty Collaboration operator from Cod MW3",
+   "description_html": "<h3><strong>RCTA - Lara Croft [CODMW3]</strong></h3>\n<h3><a target=\"_blank\" class=\"external-link\" href=\"https://i.postimg.cc/V61B5Ysd/Untitledvideo-Madewith-Clipchamp-ezgif-com-optimize.gif\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.postimg.cc/V61B5Ysd/Untitledvideo-Madewith-Clipchamp-ezgif-com-optimize.gif\" alt=\"Untitledvideo-Madewith-Clipchamp-ezgif-com-optimize.gif\" /></a></h3>\n<p><strong>Mod Description</strong></p>\n<ul>\n<li>Don\u2019t be weird. If you\u2019re confusing why I keep including an \u201cempty\u201d version or weird top versions it\u2019s so you can equip gear without clipping. I know I\u2019m kind of spoiling you guys by uploading so many so quickly but HOLY shit I\u2019m poor so I might slow down soon so I can get some moneys, I still like doing this stuff tho. it my favorite.</li>\n</ul>\n<p><strong>Mod Includes</strong></p>\n<ul>\n<li><strong>RCTA Lara Croft A [Top] (BEAR/USEC) (RAGMAN)</strong></li>\n<li><strong>RCTA Lara Croft B [Top] (BEAR/USEC) (RAGMAN)</strong></li>\n<li><strong>RCTA Lara Croft [Bottom] (BEAR/USEC) (RAGMAN)</strong></li>\n<li><strong>RCTA Lara Croft [Head] (BEAR/USEC) (RAGMAN)</strong></li>\n<li><strong>RCTA Lara Croft Empty [Head] (BEAR/USEC) (RAGMAN)</strong></li>\n</ul>\n<p><strong>Support</strong></p>\n<ul>\n<li>Check out my other work on my <a target=\"_blank\" class=\"external-link\" href=\"https://www.patreon.com/TRAPPUSSY\" rel=\"noreferrer noopener\">https://www.patreon.com/TRAPPUSSY</a></li>\n<li>Donate or maybe look into commissions on my <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/trappucci\" rel=\"noreferrer noopener\">https://ko-fi.com/trappucci</a></li>\n</ul>\n<p><strong>Credits</strong></p>\n<ul>\n<li>Infinity Ward, Sledgehammer Games</li>\n<li>GrooveypenguinX for framework</li>\n</ul>\n<p><strong>Media</strong></p>\n",
+   "thumbnail": "https://forge-static.sp-tarkov.com/mods/2416.png",
+   "forge_url": "https://forge.sp-tarkov.com/mod/1779/rcta-lara-croft-codmw3",
+   "downloads": 3982,
+   "favourites": 1,
+   "featured": false,
+   "fika": false,
+   "fika_latest": "unknown",
+   "category": {
+    "id": 14,
+    "title": "Clothing",
+    "slug": "clothing"
+   },
+   "license": {
+    "name": "Creative Commons BY-NC-ND 4.0",
+    "link": "https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode"
+   },
+   "authors": [
+    {
+     "id": 62485,
+     "name": "WUVGAWORE",
+     "avatar": "https://forge-static.sp-tarkov.com/profile-photos/7f1563ee210219f20aa5856121fd12fa45d24fa9_128w.webp"
+    },
+    {
+     "id": 2059,
+     "name": "Hj",
+     "avatar": "https://forge-static.sp-tarkov.com/profile-photos/R7T9Uom9mp9FnxyIGz44xarnoLa15G4Bvi68xk82_256w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/hjal-dev/RCTA-Clothing-Mods",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 437,
+     "version": "1.0.3",
+     "description": "<p>3.11x Version<br />\nUpdated by <a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/user/5202-hjal/\" rel=\"noreferrer noopener\">Hj</a></p>\n",
+     "spt_constraint": "~3.11.0",
+     "fika": "unknown",
+     "downloads": 1671,
+     "size": null,
+     "link": "https://forge.sp-tarkov.com/mod/download/1779/rcta-lara-croft-codmw3/1.0.3",
+     "published_at": "2025-06-10T18:43:20.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 1998,
+     "version": "1.0.2",
+     "description": "\n<p>3.10 version</p>\n<p>THANK YOU <a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/user/31440-itsreapergirl/\" rel=\"noreferrer noopener\">ItsReaperGirl</a> FOR UPDATING IT</p>\n",
+     "spt_constraint": "~3.10.0",
+     "fika": "unknown",
+     "downloads": 1347,
+     "size": null,
+     "link": "https://forge.sp-tarkov.com/mod/download/1779/rcta-lara-croft-codmw3/1.0.2",
+     "published_at": "2024-12-15T20:43:37.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "1.0.3",
+   "spt_constraint": "~3.11.0",
+   "all_spt_constraints": [
+    "~3.10.0",
+    "~3.11.0"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2024-10-20T18:14:00.000000Z",
+   "updated_at": "2026-08-09T00:40:44.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
+    "cheat_notice": false,
+    "profile_binding_notice": true
+   },
+   "origin": "forge"
+  },
+  {
    "id": 1268,
    "hub_id": 1773,
    "guid": null,
@@ -115001,84 +115122,6 @@
    "all_dependencies": [],
    "published_at": "2024-04-02T04:56:37.000000Z",
    "updated_at": "2026-07-13T18:05:59.000000Z",
-   "flags": {
-    "contains_ads": false,
-    "contains_ai_content": false,
-    "ai_disclosure": "",
-    "cheat_notice": false,
-    "profile_binding_notice": false
-   },
-   "origin": "forge"
-  },
-  {
-   "id": 1779,
-   "hub_id": 2416,
-   "guid": null,
-   "name": "RCTA - Lara Croft [CODMW3]",
-   "slug": "rcta-lara-croft-codmw3",
-   "teaser": "Lara Croft X Call of Duty Collaboration operator from Cod MW3",
-   "description_html": "<h3><strong>RCTA - Lara Croft [CODMW3]</strong></h3>\n<h3><a target=\"_blank\" class=\"external-link\" href=\"https://i.postimg.cc/V61B5Ysd/Untitledvideo-Madewith-Clipchamp-ezgif-com-optimize.gif\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.postimg.cc/V61B5Ysd/Untitledvideo-Madewith-Clipchamp-ezgif-com-optimize.gif\" alt=\"Untitledvideo-Madewith-Clipchamp-ezgif-com-optimize.gif\" /></a></h3>\n<p><strong>Mod Description</strong></p>\n<ul>\n<li>Don\u2019t be weird. If you\u2019re confusing why I keep including an \u201cempty\u201d version or weird top versions it\u2019s so you can equip gear without clipping. I know I\u2019m kind of spoiling you guys by uploading so many so quickly but HOLY shit I\u2019m poor so I might slow down soon so I can get some moneys, I still like doing this stuff tho. it my favorite.</li>\n</ul>\n<p><strong>Mod Includes</strong></p>\n<ul>\n<li><strong>RCTA Lara Croft A [Top] (BEAR/USEC) (RAGMAN)</strong></li>\n<li><strong>RCTA Lara Croft B [Top] (BEAR/USEC) (RAGMAN)</strong></li>\n<li><strong>RCTA Lara Croft [Bottom] (BEAR/USEC) (RAGMAN)</strong></li>\n<li><strong>RCTA Lara Croft [Head] (BEAR/USEC) (RAGMAN)</strong></li>\n<li><strong>RCTA Lara Croft Empty [Head] (BEAR/USEC) (RAGMAN)</strong></li>\n</ul>\n<p><strong>Support</strong></p>\n<ul>\n<li>Check out my other work on my <a target=\"_blank\" class=\"external-link\" href=\"https://www.patreon.com/TRAPPUSSY\" rel=\"noreferrer noopener\">https://www.patreon.com/TRAPPUSSY</a></li>\n<li>Donate or maybe look into commissions on my <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/trappucci\" rel=\"noreferrer noopener\">https://ko-fi.com/trappucci</a></li>\n</ul>\n<p><strong>Credits</strong></p>\n<ul>\n<li>Infinity Ward, Sledgehammer Games</li>\n<li>GrooveypenguinX for framework</li>\n</ul>\n<p><strong>Media</strong></p>\n",
-   "thumbnail": "https://forge-static.sp-tarkov.com/mods/2416.png",
-   "forge_url": "https://forge.sp-tarkov.com/mod/1779/rcta-lara-croft-codmw3",
-   "downloads": 3973,
-   "favourites": 1,
-   "featured": false,
-   "fika": false,
-   "fika_latest": "unknown",
-   "category": null,
-   "license": {
-    "name": "Creative Commons BY-NC-ND 4.0",
-    "link": "https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode"
-   },
-   "authors": [
-    {
-     "id": 62485,
-     "name": "WUVGAWORE",
-     "avatar": "https://forge-static.sp-tarkov.com/profile-photos/7f1563ee210219f20aa5856121fd12fa45d24fa9_128w.webp"
-    },
-    {
-     "id": 2059,
-     "name": "Hj",
-     "avatar": "https://forge-static.sp-tarkov.com/profile-photos/R7T9Uom9mp9FnxyIGz44xarnoLa15G4Bvi68xk82_256w.webp"
-    }
-   ],
-   "source_links": [],
-   "versions": [
-    {
-     "id": 437,
-     "version": "1.0.3",
-     "description": "<p>3.11x Version<br />\nUpdated by <a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/user/5202-hjal/\" rel=\"noreferrer noopener\">Hj</a></p>\n",
-     "spt_constraint": "~3.11.0",
-     "fika": "unknown",
-     "downloads": 1664,
-     "size": null,
-     "link": "https://forge.sp-tarkov.com/mod/download/1779/rcta-lara-croft-codmw3/1.0.3",
-     "published_at": "2025-06-10T18:43:20.000000Z",
-     "dependencies": []
-    },
-    {
-     "id": 1998,
-     "version": "1.0.2",
-     "description": "\n<p>3.10 version</p>\n<p>THANK YOU <a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/user/31440-itsreapergirl/\" rel=\"noreferrer noopener\">ItsReaperGirl</a> FOR UPDATING IT</p>\n",
-     "spt_constraint": "~3.10.0",
-     "fika": "unknown",
-     "downloads": 1346,
-     "size": null,
-     "link": "https://forge.sp-tarkov.com/mod/download/1779/rcta-lara-croft-codmw3/1.0.2",
-     "published_at": "2024-12-15T20:43:37.000000Z",
-     "dependencies": []
-    }
-   ],
-   "latest_version": "1.0.3",
-   "spt_constraint": "~3.11.0",
-   "all_spt_constraints": [
-    "~3.10.0",
-    "~3.11.0"
-   ],
-   "dependencies": [],
-   "all_dependencies": [],
-   "published_at": "2024-10-20T18:14:28.000000Z",
-   "updated_at": "2026-07-13T18:00:52.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -128387,6 +128430,80 @@
    "origin": "forge"
   },
   {
+   "id": 1819,
+   "hub_id": 2464,
+   "guid": null,
+   "name": "LOG - Lots of Gloves",
+   "slug": "log-lots-of-gloves",
+   "teaser": "67 new gloves to pick out from a bunch of different games, no top, just hand.",
+   "description_html": "<h3><strong>LOG - Lots of Gloves</strong></h3>\n<h3><a target=\"_blank\" class=\"external-link\" href=\"https://i.postimg.cc/5txQSwMD/output-onlinegiftools-1.gif\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.postimg.cc/5txQSwMD/output-onlinegiftools-1.gif\" alt=\"output-onlinegiftools-1.gif\" /></a></h3>\n<p><strong>Mod Description</strong></p>\n<ul>\n<li>I honestly care more about my first person view than third person character so, in light of that. Here are a bunch of hands that I ported.</li>\n<li>Just so you know, the gif doesn\u2019t show all of the hands.</li>\n<li><strong>version 1:</strong> places the gloves in the ragman top menu with a placeholder top</li>\n<li><strong>version 2:</strong> removes them from the top menu but shoots a large white error as it still tries to place them in a trader, this is done to prevent confusion and force the use of SkinService Menu</li>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://i.imgur.com/3INhXRl.png\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/3INhXRl.png\" alt=\"3INhXRl.png\" /></a></li>\n</ul>\n<p><strong>Mod Includes</strong></p>\n<ul>\n<li>LOG alyx_vr [HANDS] (SKIN SERVICE)</li>\n<li>LOG adam_smasher [HANDS] (SKIN SERVICE)</li>\n<li>LOG none_technical [HANDS] (SKIN SERVICE)</li>\n<li>LOG western_milsim_v4 [HANDS] (SKIN SERVICE)</li>\n<li>LOG us_rangers_sleeve [HANDS] (SKIN SERVICE) - A little broken</li>\n<li>LOG technician_base [HANDS] (SKIN SERVICE)</li>\n<li>LOG western_otel_full [HANDS] (SKIN SERVICE)</li>\n<li>LOG western_morete_sleeve [HANDS] (SKIN SERVICE)</li>\n<li>LOG western_ghost_classic_out [HANDS] (SKIN SERVICE)</li>\n<li>LOG western_fireteam_west [HANDS] (SKIN SERVICE)</li>\n<li>LOG western_fireteam_west_full [HANDS] (SKIN SERVICE)</li>\n<li>LOG western_frostbite [HANDS] (SKIN SERVICE)</li>\n<li>LOG riot_sleeve [HANDS] (SKIN SERVICE)</li>\n<li>LOG tf141_glove [HANDS] (SKIN SERVICE)</li>\n<li>LOG tf141_favela_sleeve [HANDS] (SKIN SERVICE)</li>\n<li>LOG suit [HANDS] (SKIN SERVICE) - Broken watch :C sorry guys</li>\n<li>LOG sas_urban [HANDS] (SKIN SERVICE)</li>\n<li>LOG price_iw9 [HANDS] (SKIN SERVICE)</li>\n<li>LOG milsim_pak_ssg [HANDS] (SKIN SERVICE)</li>\n<li>LOG gs_jungle [HANDS] (SKIN SERVICE)</li>\n<li>LOG fed_army_arctic [HANDS] (SKIN SERVICE)</li>\n<li>LOG eastern [HANDS] (SKIN SERVICE)</li>\n<li>LOG eastern_2 [HANDS] (SKIN SERVICE)</li>\n<li>LOG eastern_geist [HANDS] (SKIN SERVICE)</li>\n<li>LOG eastern_fingerless [HANDS] (SKIN SERVICE)</li>\n<li>LOG eastern_azur [HANDS] (SKIN SERVICE)</li>\n<li>LOG arctic_wind_sleeve [HANDS] (SKIN SERVICE)</li>\n<li>LOG alex_woodland [HANDS] (SKIN SERVICE) - Missing Watch Textures</li>\n<li>LOG morete_sleeves_full [HANDS] (SKIN SERVICE)</li>\n<li>LOG marines_sleeve [HANDS] (SKIN SERVICE)</li>\n<li>LOG compacted_kilgore [HANDS] (SKIN SERVICE)</li>\n<li>LOG compacted_horangi [HANDS] (SKIN SERVICE)</li>\n<li>LOG soldierfront [HANDS] (SKIN SERVICE)</li>\n<li>LOG ghost_oakley [HANDS] (SKIN SERVICE)a</li>\n<li>LOG veler [HANDS] (SKIN SERVICE)</li>\n<li>LOG ratnik [HANDS] (SKIN SERVICE)</li>\n<li>LOG tactical_fingerless [HANDS] (SKIN SERVICE)</li>\n<li>LOG swat_fingerless [HANDS] (SKIN SERVICE)</li>\n<li>LOG stalker_fingerless [HANDS] (SKIN SERVICE)</li>\n<li>LOG ru_alpha [HANDS] (SKIN SERVICE)</li>\n<li>LOG ratnik_mechanix [HANDS] (SKIN SERVICE)</li>\n<li>LOG novice_sleeve [HANDS] (SKIN SERVICE)</li>\n<li>LOG metro_svitex [HANDS] (SKIN SERVICE)</li>\n<li>LOG dolg_tactical [HANDS] (SKIN SERVICE)</li>\n<li>LOG dolg_bandit [HANDS] (SKIN SERVICE)</li>\n<li>LOG clearly [HANDS] (SKIN SERVICE)</li>\n<li>LOG bandit_ginger [HANDS] (SKIN SERVICE)</li>\n<li>LOG bandit_black [HANDS] (SKIN SERVICE)</li>\n<li>LOG hazard_gloves [HANDS] (SKIN SERVICE)</li>\n<li>LOG hazmat_green [HANDS] (SKIN SERVICE)</li>\n<li>LOG fed_gloves [HANDS] (SKIN SERVICE)</li>\n<li>LOG western_ghost [HANDS] (SKIN SERVICE)</li>\n<li>LOG msc_desert_camo [HANDS] (SKIN SERVICE)</li>\n<li>LOG msc_urban_camo [HANDS] (SKIN SERVICE)</li>\n<li>LOG sas_woodland_camo [HANDS] (SKIN SERVICE)</li>\n<li>LOG sas_ct_camo [HANDS] (SKIN SERVICE)</li>\n<li>LOG sas_ct_camo_wet [HANDS] (SKIN SERVICE)</li>\n<li>LOG fed_basic_urban [HANDS] (SKIN SERVICE)</li>\n<li>LOG fed_army_urban [HANDS] (SKIN SERVICE)</li>\n<li>LOG elite_emp_urban [HANDS] (SKIN SERVICE)</li>\n<li>LOG devgru_urban [HANDS] (SKIN SERVICE)</li>\n<li>LOG arab_opfor_glove [HANDS] (SKIN SERVICE)</li>\n</ul>\n<p><strong>Known Issues</strong></p>\n<ul>\n<li>I will say, I\u2019m using a different material so I can get my emissive parts to work so you\u2019ll notice that in-shadow the character will seem quite dark.</li>\n<li>I noticed one of them has a white watch but I already deleted the files and can\u2019t find the (im lazy anyways moving on)</li>\n<li>Minor clipping here and there, the first 34 hands are the best imo.</li>\n<li>LOG alex_woodland hands no watch textures</li>\n</ul>\n<p><strong>Dependencies</strong></p>\n<ul>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/781-skin-service/\" rel=\"noreferrer noopener\">Skin Service</a> - You can go through Ragman and select the top but it\u2019s better to just go in-game and use this menu you select the hand you like</li>\n</ul>\n<p><strong>Usage</strong></p>\n<ul>\n<li>Open the Skin Service Menu (might have to rebind) then select hands and scroll until you see the suffix \u201cLOG\u201d, select, hit apply.</li>\n</ul>\n<p><strong>Commissions &amp; Donations</strong></p>\n<ul>\n<li>Look into commissions or donate on my Ko-Fi. Send a message <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/trappucci\" rel=\"noreferrer noopener\">https://ko-fi.com/trappucci</a></li>\n<li>Check out my other work on my <a target=\"_blank\" class=\"external-link\" href=\"https://www.patreon.com/TRAPPUSSY\" rel=\"noreferrer noopener\">https://www.patreon.com/TRAPPUSSY</a></li>\n</ul>\n<p><strong>Credits</strong></p>\n<ul>\n<li>GSC Game World, THQ, Plaion, Deep Silver, 4A Games, Raven Software, Infinity Ward, Activision, Valve, CD Projekt RED, CD Projekt</li>\n<li>GrooveypenguinX for framework</li>\n</ul>\n<p><strong>Media</strong></p>\n<p><strong>v Slower Gif v<br />\n<a target=\"_blank\" class=\"external-link\" href=\"https://i.postimg.cc/0QV2cPjG/output-onlinegiftools-2.gif\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.postimg.cc/0QV2cPjG/output-onlinegiftools-2.gif\" alt=\"output-onlinegiftools-2.gif\" /></a></strong></p>\n",
+   "thumbnail": "https://forge-static.sp-tarkov.com/mods/2464.png",
+   "forge_url": "https://forge.sp-tarkov.com/mod/1819/log-lots-of-gloves",
+   "downloads": 3010,
+   "favourites": 0,
+   "featured": false,
+   "fika": false,
+   "fika_latest": "unknown",
+   "category": {
+    "id": 14,
+    "title": "Clothing",
+    "slug": "clothing"
+   },
+   "license": {
+    "name": "Creative Commons BY-NC-ND 4.0",
+    "link": "https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode"
+   },
+   "authors": [
+    {
+     "id": 62485,
+     "name": "WUVGAWORE",
+     "avatar": "https://forge-static.sp-tarkov.com/profile-photos/7f1563ee210219f20aa5856121fd12fa45d24fa9_128w.webp"
+    },
+    {
+     "id": 2059,
+     "name": "Hj",
+     "avatar": "https://forge-static.sp-tarkov.com/profile-photos/R7T9Uom9mp9FnxyIGz44xarnoLa15G4Bvi68xk82_256w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/trappuss/RCTA-Random-Clothes-to-Adorn-",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 2471,
+     "version": "1.0.2",
+     "description": "<p>WARNING</p>\n<p>if you bought and equipped the tops, keep in mind that this update REMOVES them from Ragman and that could \u201ccorrupt\u201d your profile.</p>\n<p>I removed them from Ragman to prevent confusion and from flood ragman with almost 67 broken tops lol. Technically you can just buy the top and equip the glove you want like that instead of using Skin Service Menu but I think it\u2019s less confusing to just use the menu. <strong>if you prefer using the top to pick the glove you want, use the previous version. Not this one.</strong></p>\n",
+     "spt_constraint": "~3.9.0",
+     "fika": "unknown",
+     "downloads": 2476,
+     "size": null,
+     "link": "https://forge.sp-tarkov.com/mod/download/1819/log-lots-of-gloves/1.0.2",
+     "published_at": "2024-11-04T20:46:35.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "1.0.2",
+   "spt_constraint": "~3.9.0",
+   "all_spt_constraints": [
+    "~3.9.0"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2024-11-04T02:09:00.000000Z",
+   "updated_at": "2026-08-09T00:48:31.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
+    "cheat_notice": false,
+    "profile_binding_notice": true
+   },
+   "origin": "forge"
+  },
+  {
    "id": 2339,
    "hub_id": null,
    "guid": "com.acidphantasm.previewsizer",
@@ -128497,71 +128614,6 @@
    "all_dependencies": [],
    "published_at": "2025-10-05T10:04:00.000000Z",
    "updated_at": "2026-08-06T06:02:14.000000Z",
-   "flags": {
-    "contains_ads": false,
-    "contains_ai_content": false,
-    "ai_disclosure": "",
-    "cheat_notice": false,
-    "profile_binding_notice": false
-   },
-   "origin": "forge"
-  },
-  {
-   "id": 1819,
-   "hub_id": 2464,
-   "guid": null,
-   "name": "LOG - Lots of Gloves",
-   "slug": "log-lots-of-gloves",
-   "teaser": "67 new gloves to pick out from a bunch of different games, no top, just hand.",
-   "description_html": "<h3><strong>LOG - Lots of Gloves</strong></h3>\n<h3><a target=\"_blank\" class=\"external-link\" href=\"https://i.postimg.cc/5txQSwMD/output-onlinegiftools-1.gif\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.postimg.cc/5txQSwMD/output-onlinegiftools-1.gif\" alt=\"output-onlinegiftools-1.gif\" /></a></h3>\n<p><strong>Mod Description</strong></p>\n<ul>\n<li>I honestly care more about my first person view than third person character so, in light of that. Here are a bunch of hands that I ported.</li>\n<li>Just so you know, the gif doesn\u2019t show all of the hands.</li>\n<li><strong>version 1:</strong> places the gloves in the ragman top menu with a placeholder top</li>\n<li><strong>version 2:</strong> removes them from the top menu but shoots a large white error as it still tries to place them in a trader, this is done to prevent confusion and force the use of SkinService Menu</li>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://i.imgur.com/3INhXRl.png\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/3INhXRl.png\" alt=\"3INhXRl.png\" /></a></li>\n</ul>\n<p><strong>Mod Includes</strong></p>\n<ul>\n<li>LOG alyx_vr [HANDS] (SKIN SERVICE)</li>\n<li>LOG adam_smasher [HANDS] (SKIN SERVICE)</li>\n<li>LOG none_technical [HANDS] (SKIN SERVICE)</li>\n<li>LOG western_milsim_v4 [HANDS] (SKIN SERVICE)</li>\n<li>LOG us_rangers_sleeve [HANDS] (SKIN SERVICE) - A little broken</li>\n<li>LOG technician_base [HANDS] (SKIN SERVICE)</li>\n<li>LOG western_otel_full [HANDS] (SKIN SERVICE)</li>\n<li>LOG western_morete_sleeve [HANDS] (SKIN SERVICE)</li>\n<li>LOG western_ghost_classic_out [HANDS] (SKIN SERVICE)</li>\n<li>LOG western_fireteam_west [HANDS] (SKIN SERVICE)</li>\n<li>LOG western_fireteam_west_full [HANDS] (SKIN SERVICE)</li>\n<li>LOG western_frostbite [HANDS] (SKIN SERVICE)</li>\n<li>LOG riot_sleeve [HANDS] (SKIN SERVICE)</li>\n<li>LOG tf141_glove [HANDS] (SKIN SERVICE)</li>\n<li>LOG tf141_favela_sleeve [HANDS] (SKIN SERVICE)</li>\n<li>LOG suit [HANDS] (SKIN SERVICE) - Broken watch :C sorry guys</li>\n<li>LOG sas_urban [HANDS] (SKIN SERVICE)</li>\n<li>LOG price_iw9 [HANDS] (SKIN SERVICE)</li>\n<li>LOG milsim_pak_ssg [HANDS] (SKIN SERVICE)</li>\n<li>LOG gs_jungle [HANDS] (SKIN SERVICE)</li>\n<li>LOG fed_army_arctic [HANDS] (SKIN SERVICE)</li>\n<li>LOG eastern [HANDS] (SKIN SERVICE)</li>\n<li>LOG eastern_2 [HANDS] (SKIN SERVICE)</li>\n<li>LOG eastern_geist [HANDS] (SKIN SERVICE)</li>\n<li>LOG eastern_fingerless [HANDS] (SKIN SERVICE)</li>\n<li>LOG eastern_azur [HANDS] (SKIN SERVICE)</li>\n<li>LOG arctic_wind_sleeve [HANDS] (SKIN SERVICE)</li>\n<li>LOG alex_woodland [HANDS] (SKIN SERVICE) - Missing Watch Textures</li>\n<li>LOG morete_sleeves_full [HANDS] (SKIN SERVICE)</li>\n<li>LOG marines_sleeve [HANDS] (SKIN SERVICE)</li>\n<li>LOG compacted_kilgore [HANDS] (SKIN SERVICE)</li>\n<li>LOG compacted_horangi [HANDS] (SKIN SERVICE)</li>\n<li>LOG soldierfront [HANDS] (SKIN SERVICE)</li>\n<li>LOG ghost_oakley [HANDS] (SKIN SERVICE)a</li>\n<li>LOG veler [HANDS] (SKIN SERVICE)</li>\n<li>LOG ratnik [HANDS] (SKIN SERVICE)</li>\n<li>LOG tactical_fingerless [HANDS] (SKIN SERVICE)</li>\n<li>LOG swat_fingerless [HANDS] (SKIN SERVICE)</li>\n<li>LOG stalker_fingerless [HANDS] (SKIN SERVICE)</li>\n<li>LOG ru_alpha [HANDS] (SKIN SERVICE)</li>\n<li>LOG ratnik_mechanix [HANDS] (SKIN SERVICE)</li>\n<li>LOG novice_sleeve [HANDS] (SKIN SERVICE)</li>\n<li>LOG metro_svitex [HANDS] (SKIN SERVICE)</li>\n<li>LOG dolg_tactical [HANDS] (SKIN SERVICE)</li>\n<li>LOG dolg_bandit [HANDS] (SKIN SERVICE)</li>\n<li>LOG clearly [HANDS] (SKIN SERVICE)</li>\n<li>LOG bandit_ginger [HANDS] (SKIN SERVICE)</li>\n<li>LOG bandit_black [HANDS] (SKIN SERVICE)</li>\n<li>LOG hazard_gloves [HANDS] (SKIN SERVICE)</li>\n<li>LOG hazmat_green [HANDS] (SKIN SERVICE)</li>\n<li>LOG fed_gloves [HANDS] (SKIN SERVICE)</li>\n<li>LOG western_ghost [HANDS] (SKIN SERVICE)</li>\n<li>LOG msc_desert_camo [HANDS] (SKIN SERVICE)</li>\n<li>LOG msc_urban_camo [HANDS] (SKIN SERVICE)</li>\n<li>LOG sas_woodland_camo [HANDS] (SKIN SERVICE)</li>\n<li>LOG sas_ct_camo [HANDS] (SKIN SERVICE)</li>\n<li>LOG sas_ct_camo_wet [HANDS] (SKIN SERVICE)</li>\n<li>LOG fed_basic_urban [HANDS] (SKIN SERVICE)</li>\n<li>LOG fed_army_urban [HANDS] (SKIN SERVICE)</li>\n<li>LOG elite_emp_urban [HANDS] (SKIN SERVICE)</li>\n<li>LOG devgru_urban [HANDS] (SKIN SERVICE)</li>\n<li>LOG arab_opfor_glove [HANDS] (SKIN SERVICE)</li>\n</ul>\n<p><strong>Known Issues</strong></p>\n<ul>\n<li>I will say, I\u2019m using a different material so I can get my emissive parts to work so you\u2019ll notice that in-shadow the character will seem quite dark.</li>\n<li>I noticed one of them has a white watch but I already deleted the files and can\u2019t find the (im lazy anyways moving on)</li>\n<li>Minor clipping here and there, the first 34 hands are the best imo.</li>\n<li>LOG alex_woodland hands no watch textures</li>\n</ul>\n<p><strong>Dependencies</strong></p>\n<ul>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/781-skin-service/\" rel=\"noreferrer noopener\">Skin Service</a> - You can go through Ragman and select the top but it\u2019s better to just go in-game and use this menu you select the hand you like</li>\n</ul>\n<p><strong>Usage</strong></p>\n<ul>\n<li>Open the Skin Service Menu (might have to rebind) then select hands and scroll until you see the suffix \u201cLOG\u201d, select, hit apply.</li>\n</ul>\n<p><strong>Commissions &amp; Donations</strong></p>\n<ul>\n<li>Look into commissions or donate on my Ko-Fi. Send a message <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/trappucci\" rel=\"noreferrer noopener\">https://ko-fi.com/trappucci</a></li>\n<li>Check out my other work on my <a target=\"_blank\" class=\"external-link\" href=\"https://www.patreon.com/TRAPPUSSY\" rel=\"noreferrer noopener\">https://www.patreon.com/TRAPPUSSY</a></li>\n</ul>\n<p><strong>Credits</strong></p>\n<ul>\n<li>GSC Game World, THQ, Plaion, Deep Silver, 4A Games, Raven Software, Infinity Ward, Activision, Valve, CD Projekt RED, CD Projekt</li>\n<li>GrooveypenguinX for framework</li>\n</ul>\n<p><strong>Media</strong></p>\n<p><strong>v Slower Gif v<br />\n<a target=\"_blank\" class=\"external-link\" href=\"https://i.postimg.cc/0QV2cPjG/output-onlinegiftools-2.gif\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.postimg.cc/0QV2cPjG/output-onlinegiftools-2.gif\" alt=\"output-onlinegiftools-2.gif\" /></a></strong></p>\n",
-   "thumbnail": "https://forge-static.sp-tarkov.com/mods/2464.png",
-   "forge_url": "https://forge.sp-tarkov.com/mod/1819/log-lots-of-gloves",
-   "downloads": 3006,
-   "favourites": 0,
-   "featured": false,
-   "fika": false,
-   "fika_latest": "unknown",
-   "category": null,
-   "license": {
-    "name": "Creative Commons BY-NC-ND 4.0",
-    "link": "https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode"
-   },
-   "authors": [
-    {
-     "id": 62485,
-     "name": "WUVGAWORE",
-     "avatar": "https://forge-static.sp-tarkov.com/profile-photos/7f1563ee210219f20aa5856121fd12fa45d24fa9_128w.webp"
-    },
-    {
-     "id": 2059,
-     "name": "Hj",
-     "avatar": "https://forge-static.sp-tarkov.com/profile-photos/R7T9Uom9mp9FnxyIGz44xarnoLa15G4Bvi68xk82_256w.webp"
-    }
-   ],
-   "source_links": [],
-   "versions": [
-    {
-     "id": 2471,
-     "version": "1.0.2",
-     "description": "<p>WARNING</p>\n<p>if you bought and equipped the tops, keep in mind that this update REMOVES them from Ragman and that could \u201ccorrupt\u201d your profile.</p>\n<p>I removed them from Ragman to prevent confusion and from flood ragman with almost 67 broken tops lol. Technically you can just buy the top and equip the glove you want like that instead of using Skin Service Menu but I think it\u2019s less confusing to just use the menu. <strong>if you prefer using the top to pick the glove you want, use the previous version. Not this one.</strong></p>\n",
-     "spt_constraint": "~3.9.0",
-     "fika": "unknown",
-     "downloads": 2473,
-     "size": null,
-     "link": "https://forge.sp-tarkov.com/mod/download/1819/log-lots-of-gloves/1.0.2",
-     "published_at": "2024-11-04T20:46:35.000000Z",
-     "dependencies": []
-    }
-   ],
-   "latest_version": "1.0.2",
-   "spt_constraint": "~3.9.0",
-   "all_spt_constraints": [
-    "~3.9.0"
-   ],
-   "dependencies": [],
-   "all_dependencies": [],
-   "published_at": "2024-11-04T02:09:00.000000Z",
-   "updated_at": "2026-07-07T16:59:02.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -170800,6 +170852,144 @@
    "origin": "forge"
   },
   {
+   "id": 2825,
+   "hub_id": null,
+   "guid": "com.suomi.makshepard.smprt",
+   "name": "PRT - Portable Radio Transmitter (functional for Fika)",
+   "slug": "prt-portable-radio-transmitter-functional-for-fika",
+   "teaser": "Realistic portable radio communications for EFT + FIKA with the ability to talk during a raid.",
+   "description_html": "<p><strong>The mod can work without the pre\u2011installed Fika Project mod. In that case, the radio interaction functionality is unavailable. Radios act as additional items that also spawn in locations and can be bought from traders. In addition, they can be placed in the Hall of Fame.</strong></p>\n<hr />\n<blockquote>\n<p><strong>DO NOT FORGET TO ENABLE VOIP IN THE ESCAPE FROM TARKOV SETTINGS AND IN THE F12 FIKA SETTINGS MENU, OTHERWISE THE MOD WILL NOT WORK</strong></p>\n</blockquote>\n<h2>Features</h2>\n<ul>\n<li>A dozen or so radios, each with its own range, sound quality, and transmission character;</li>\n<li>Currently, radios are available for purchase and barter from traders at various loyalty levels;</li>\n<li>On\u2011screen status indicators in raid (radio on/off, transmit state, channel busy, half-duplex/duplex mode, signal strength) with customisation options;</li>\n<li>A dedicated notification overlay with simple configuration options;</li>\n</ul>\n<hr />\n<h2>Requirements</h2>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/2326/project-fika\" rel=\"noreferrer noopener\">Project Fika</a></p>\n<hr />\n<h2>Installation</h2>\n<ol>\n<li>Open the downloaded archive with 7zip (recommended)</li>\n<li>Locate the mod folder inside the 7zip archive</li>\n<li>Drag the selected folders into your SPT folder</li>\n</ol>\n<p><strong>Installation demonstration</strong> (<em>many thanks to DrakiaXYZ for the demo</em>):</p>\n<h2><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/34vXXDj.gif\" alt=\"Demonstration\" /></h2>\n<h2>Controls</h2>\n<p>The radio uses key combinations, and each of them includes the VOIP key. By default this is the \u201cK\u201d key. If you have a different one, use the key you assigned \u2013 the combinations below are based on the original:</p>\n<p><code>Right Ctrl + K</code> \u2014 turn the radio on/off;</p>\n<p><code>Right Shift + K</code> \u2014 switch to another radio (if you have several in valid slots);</p>\n<p><code>Enter + K</code> \u2014 toggle Half\u2011Duplex/Duplex* mode (while the radio is on);</p>\n<blockquote>\n<h5><em>Half\u2011Duplex is a transmission mode in which devices can exchange information in both directions, but only one at a time, not simultaneously</em></h5>\n<h5><em>Duplex is a radio mode in which the device can both transmit and receive signals at the same time. Not all radios in the game support this mode (it will be indicated in the description).</em></h5>\n</blockquote>\n<hr />\n<h2>Settings</h2>\n<p><strong>DO NOT FORGET TO ENABLE VOIP IN THE ESCAPE FROM TARKOV SETTINGS AND IN THE F12 FIKA SETTINGS MENU, OTHERWISE THE MOD WILL NOT WORK</strong></p>\n<p><strong>Enabling VOIP in FIKA settings</strong></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/K5lRuJF.png\" alt=\"AllowVOIP_inSettingsFIKA\" /></p>\n<p>The mod settings are located in\u2011game in the F12 menu under Suomi-PRT <em>.</em>.* (see image below):</p>\n<h2><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/n4a0WBA.png\" alt=\"SettingsPRT\" /></h2>\n<h2>Known Issues</h2>\n<ul>\n<li><strong>When broadcasting inside buildings, sound quality degrades significantly due to the audio engine\u2019s behaviour</strong> (currently unfixable);</li>\n<li>When switching a radio from an invalid slot to a valid one (<em>e.g. from backpack to rig</em>), it does not get selected automatically (we are working on this);</li>\n<li>While in raid, if you open the menu with the ESC key, the radio indicators remain visible (currently unfixable);</li>\n</ul>\n<blockquote>\n<p>If you encounter any errors, please write in the comments or on Discord with a description of the issue and attach the logs: <code>\\BepInEx\\plugins\\prt-fika\\prt-fika.log</code></p>\n</blockquote>\n<hr />\n<h2>Credits</h2>\n<ul>\n<li><em>Suomi</em> handled the engine\u2011side work: sourcing and adapting 3D radio models, bundling them into Unity AssetBundles, reverse\u2011engineering EFT\u2019s internal classes/APIs with dnSpy, finding and organising sound assets, extensive in\u2011game testing across multiple sessions, and designing the on\u2011screen status indicator system (layout, behaviour, style);</li>\n<li><em>makshepard</em> provided guides, reference material, design feedback, and testing throughout development;</li>\n<li><strong>Developed with the help of AI</strong>.</li>\n</ul>\n",
+   "thumbnail": "https://forge-static.sp-tarkov.com/mods/8O1zU2NqgKXrV4J0AMorzchJxAai9VZY0IGL2oQ5.png",
+   "forge_url": "https://forge.sp-tarkov.com/mod/2825/prt-portable-radio-transmitter-functional-for-fika",
+   "downloads": 599,
+   "favourites": 6,
+   "featured": false,
+   "fika": true,
+   "fika_latest": "compatible",
+   "category": {
+    "id": 12,
+    "title": "Audio",
+    "slug": "audio"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 1274,
+     "name": "_Suomi",
+     "avatar": "https://forge-static.sp-tarkov.com/profile-photos/gKk5SaLCMX8A71mmKtsb8yfKmglyeeYKC5zX2R4i_128w.webp"
+    },
+    {
+     "id": 117974,
+     "name": "makshepard",
+     "avatar": "https://forge-static.sp-tarkov.com/profile-photos/TBGyiqxmGvddSv5sftoFSvdkLs9OXXmZyMFkYhdh_256w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/Cyomu/Suomi-PRT-sourceCode",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 14572,
+     "version": "1.0.0",
+     "description": "<h2>S&amp;M-PRT v1.0.0</h2>\n<p>Built for <strong>SPT 4.0.13</strong> \u00b7 requires <a target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/2326/project-fika\" rel=\"noreferrer noopener\">Project Fika</a></p>\n<blockquote>\n<p>This release targets SPT <strong>4.0.13</strong> only. A build for 4.1.x will follow later.</p>\n</blockquote>\n<h3>Added</h3>\n<ul>\n<li><strong>Optional battery support.</strong> With <a target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/2513/batteries-not-included\" rel=\"noreferrer noopener\">Batteries Not Included</a> installed, every radio now takes real AA or CR123A cells \u2014 1 or 2 slots depending on the model, each with its own runtime. Charge is shown on the inventory icon and on screen, the radio warns you when it runs low, and shuts down when flat. Without that mod nothing changes: radios are always powered, exactly as before.</li>\n<li><strong>Raid Recordings (F9).</strong> Optionally record radio traffic during a raid and listen back afterwards in a built-in browser \u2014 playback controls, waveform or spectrogram view, filtering, and auto-cleanup. Off by default; enable it in F12.</li>\n<li>Radios can now be carried in the <strong>special slots</strong>, alongside the compass, multitool and paracord.</li>\n<li><strong>Notification overlay is now fully configurable</strong> \u2014 style (full panel or minimal stripe, each with a compact variant), BEAR/USEC colour theme, opacity and scale.</li>\n<li>Separate <strong>UI scale sliders</strong> for the status indicators and the notifications (0.5x\u20133x), which never overlap each other regardless of the values.</li>\n<li><strong>Interface language override.</strong> Notifications and the recordings browser follow your game language automatically, or can be pinned to one of the 8 supported languages.</li>\n<li><strong>Indicators fade out while the channel is quiet</strong> and come back on activity, to cut down on screen clutter. Optional.</li>\n<li>A short <strong>frequency-dial sweep</strong> plays on screen when you switch between radios. Purely cosmetic.</li>\n<li><strong>Radio traffic is jammed on Labyrinth</strong> \u2014 heavy interference there drowns out every radio, regardless of tier. Can be turned off.</li>\n<li>You can now increase the receive volume above 100%.</li>\n</ul>\n<h3>Changed</h3>\n<ul>\n<li>The F12 menu was reorganised from five sections into eight clearly separated ones. <strong>Note for existing users:</strong> indicator and colour settings moved sections and will reset to their defaults once.</li>\n<li>Far less log noise by default; detailed logging now lives behind the new Verbose Logging toggle.</li>\n</ul>\n<h3>Fixed</h3>\n<ul>\n<li>A radio could stay switched on after you selected a different one.</li>\n</ul>\n<h3>Verification</h3>\n<p>Both DLLs were scanned before release: <a target=\"_blank\" class=\"external-link\" href=\"https://www.virustotal.com/gui/file/38ccfc469308f7c57656ab33cf098717cfa6824b0eff0e2e9722624065d47379\" rel=\"noreferrer noopener\">Client.dll</a> \u2014 clean, <a target=\"_blank\" class=\"external-link\" href=\"https://www.virustotal.com/gui/file/9fa858428c52bf6fd1d0c44b50d281ebaf0f68300da61c1ce1a2a0c5650467f6\" rel=\"noreferrer noopener\">Server.dll</a> \u2014 1 / 71.</p>\n<p>That single detection (MaxSecure, <code>...susgen</code> \u2014 <em>suspicious generic</em>) is a false positive: it is a heuristic that fires on small unsigned .NET assemblies, which is every SPT server mod. The full source is public at <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Cyomu/Suomi-PRT-sourceCode\" rel=\"noreferrer noopener\">Suomi-PRT-sourceCode</a>, and the file hashes are in <a href=\"VIRUSTOTAL.md\"><code>VIRUSTOTAL.md</code></a>.</p>\n",
+     "spt_constraint": "4.0.13",
+     "fika": "compatible",
+     "downloads": 25,
+     "size": 39792506,
+     "link": "https://forge.sp-tarkov.com/mod/download/2825/prt-portable-radio-transmitter-functional-for-fika/1.0.0",
+     "published_at": "2026-08-09T00:18:00.000000Z",
+     "dependencies": [
+      {
+       "id": 2326,
+       "name": "Project Fika",
+       "slug": "project-fika",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2326/project-fika"
+      }
+     ]
+    },
+    {
+     "id": 14155,
+     "version": "0.9.7",
+     "description": "<h2>What\u2019s New in v0.9.7</h2>\n<h3>Radios in the world</h3>\n<p>Radios can now be found as loot while exploring \u2014 not just bought from traders. Civilian radios (Baofeng, Kenwood TH-21BT, T460, Yaesu, DP4800, DP4601e, TRC-83, Alinco, Kenwood ProTalk XLS) spawn on Factory, Customs, Woods, Lighthouse, Shoreline, Interchange, Streets, and Ground Zero. Military radios (Azart, XTS5000, Harris, MTH800) spawn on Lighthouse, Reserve, Ground Zero, and Labs. Rarer radios are rarer to find, matching their trader price tier.</p>\n<h3>Works without Fika too</h3>\n<p>If Project Fika isn\u2019t installed, radios automatically become collectible-only items (no voice functionality, since the client hard-depends on Fika) and can be displayed in the Hall of Fame instead. With Fika installed, everything works as normal. (Testing and feedback are needed.)</p>\n<h3>Full localization (8 languages)</h3>\n<p>Item names, descriptions, and on-screen notifications are now localized into Russian, English, German, Spanish, French, Polish, Italian, and Czech \u2014 auto-detected from your game\u2019s language.</p>\n<h3>Fixed: Duplex mode terminology</h3>\n<p>The switchable mode on some radios was mislabeled \u201cSimplex\u201d \u2014 corrected to \u201cDuplex\u201d everywhere (item descriptions, on-screen notification, F12 menu) across all languages.</p>\n<h3>Fixed: Indicators showing over the in-raid settings menu</h3>\n<p>The on-screen status indicators no longer stay visible when you open the in-raid settings menu.</p>\n<h3>Misc</h3>\n<ul>\n<li>Startup banner simplified (removed a few internal debug-style lines)</li>\n<li>Internal code cleanup</li>\n</ul>\n",
+     "spt_constraint": "4.0.13",
+     "fika": "compatible",
+     "downloads": 412,
+     "size": 39467818,
+     "link": "https://forge.sp-tarkov.com/mod/download/2825/prt-portable-radio-transmitter-functional-for-fika/0.9.7",
+     "published_at": "2026-07-19T21:10:00.000000Z",
+     "dependencies": [
+      {
+       "id": 2326,
+       "name": "Project Fika",
+       "slug": "project-fika",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2326/project-fika"
+      }
+     ]
+    },
+    {
+     "id": 14132,
+     "version": "0.9.6",
+     "description": "<p>Pre-release version</p>\n",
+     "spt_constraint": "4.0.13",
+     "fika": "compatible",
+     "downloads": 162,
+     "size": 39442784,
+     "link": "https://forge.sp-tarkov.com/mod/download/2825/prt-portable-radio-transmitter-functional-for-fika/0.9.6",
+     "published_at": "2026-07-18T15:00:00.000000Z",
+     "dependencies": [
+      {
+       "id": 2326,
+       "name": "Project Fika",
+       "slug": "project-fika",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2326/project-fika"
+      }
+     ]
+    }
+   ],
+   "latest_version": "1.0.0",
+   "spt_constraint": "4.0.13",
+   "all_spt_constraints": [
+    "4.0.13"
+   ],
+   "dependencies": [
+    {
+     "id": 2326,
+     "name": "Project Fika",
+     "slug": "project-fika",
+     "constraint": "",
+     "url": "https://forge.sp-tarkov.com/mod/2326/project-fika"
+    }
+   ],
+   "all_dependencies": [
+    {
+     "id": 2326,
+     "name": "Project Fika",
+     "slug": "project-fika",
+     "constraint": "",
+     "url": "https://forge.sp-tarkov.com/mod/2326/project-fika"
+    }
+   ],
+   "published_at": "2026-07-18T15:00:00.000000Z",
+   "updated_at": "2026-08-09T01:41:38.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": true,
+    "ai_disclosure": "<p>This project was developed with AI assistance for most of the C# code. The author has practically no prior C# experience \u2014 this was their first real hands-on project with the language, so AI help with writing and explaining the code was necessary.</p>\n<p>AI was used as an implementation tool under the author\u2019s direction and testing \u2014 not as an autonomous replacement for their own engineering and QA work.</p>\n",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge"
+  },
+  {
    "id": 1870,
    "hub_id": 2529,
    "guid": null,
@@ -171129,144 +171319,6 @@
     "contains_ads": false,
     "contains_ai_content": false,
     "ai_disclosure": "",
-    "cheat_notice": false,
-    "profile_binding_notice": false
-   },
-   "origin": "forge"
-  },
-  {
-   "id": 2825,
-   "hub_id": null,
-   "guid": "com.suomi.makshepard.smprt",
-   "name": "PRT - Portable Radio Transmitter (functional for Fika)",
-   "slug": "prt-portable-radio-transmitter-functional-for-fika",
-   "teaser": "Realistic portable radio communications for EFT + FIKA with the ability to talk during a raid.",
-   "description_html": "<p><strong>The mod can work without the pre\u2011installed Fika Project mod. In that case, the radio interaction functionality is unavailable. Radios act as additional items that also spawn in locations and can be bought from traders. In addition, they can be placed in the Hall of Fame.</strong></p>\n<hr />\n<blockquote>\n<p><strong>DO NOT FORGET TO ENABLE VOIP IN THE ESCAPE FROM TARKOV SETTINGS AND IN THE F12 FIKA SETTINGS MENU, OTHERWISE THE MOD WILL NOT WORK</strong></p>\n</blockquote>\n\n<h2>Features</h2>\n<ul>\n<li>A dozen or so radios, each with its own range, sound quality, and transmission character;</li>\n<li>Currently, radios are available for purchase and barter from traders at various loyalty levels;</li>\n<li>On\u2011screen status indicators in raid (radio on/off, transmit state, channel busy, half-duplex/duplex mode, signal strength) with customisation options;</li>\n<li>A dedicated notification overlay with simple configuration options;</li>\n</ul>\n<hr />\n\n<h2>Requirements</h2>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/2326/project-fika\" rel=\"noreferrer noopener\">Project Fika</a></p>\n<hr />\n<h2>Installation</h2>\n<ol>\n<li>Open the downloaded archive with 7zip (recommended)</li>\n<li>Locate the mod folder inside the 7zip archive</li>\n<li>Drag the selected folders into your SPT folder</li>\n</ol>\n<p><strong>Installation demonstration</strong> (<em>many thanks to DrakiaXYZ for the demo</em>):</p>\n<h2><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/34vXXDj.gif\" alt=\"Demonstration\" /></h2>\n\n<h2>Controls</h2>\n<p>The radio uses key combinations, and each of them includes the VOIP key. By default this is the \u201cK\u201d key. If you have a different one, use the key you assigned \u2013 the combinations below are based on the original:</p>\n<p><code>Right Ctrl + K</code> \u2014 turn the radio on/off;</p>\n<p><code>Right Shift + K</code> \u2014 switch to another radio (if you have several in valid slots);</p>\n<p><code>Enter + K</code> \u2014 toggle Half\u2011Duplex/Duplex* mode (while the radio is on);</p>\n<blockquote>\n<h5><em>Half\u2011Duplex is a transmission mode in which devices can exchange information in both directions, but only one at a time, not simultaneously</em></h5>\n<h5><em>Duplex is a radio mode in which the device can both transmit and receive signals at the same time. Not all radios in the game support this mode (it will be indicated in the description).</em></h5>\n</blockquote>\n<hr />\n<h2>Settings</h2>\n<p><strong>DO NOT FORGET TO ENABLE VOIP IN THE ESCAPE FROM TARKOV SETTINGS AND IN THE F12 FIKA SETTINGS MENU, OTHERWISE THE MOD WILL NOT WORK</strong></p>\n<p><strong>Enabling VOIP in FIKA settings</strong></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/K5lRuJF.png\" alt=\"AllowVOIP_inSettingsFIKA\" /></p>\n<p>The mod settings are located in\u2011game in the F12 menu under Suomi-PRT <em>.</em>.* (see image below):</p>\n<h2><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/n4a0WBA.png\" alt=\"SettingsPRT\" /></h2>\n\n<h2>Known Issues</h2>\n<ul>\n<li><strong>When broadcasting inside buildings, sound quality degrades significantly due to the audio engine\u2019s behaviour</strong> (currently unfixable);</li>\n<li>When switching a radio from an invalid slot to a valid one (<em>e.g. from backpack to rig</em>), it does not get selected automatically (we are working on this);</li>\n<li>While in raid, if you open the menu with the ESC key, the radio indicators remain visible (currently unfixable);</li>\n</ul>\n<blockquote>\n<p>If you encounter any errors, please write in the comments or on Discord with a description of the issue and attach the logs: <code>\\BepInEx\\plugins\\prt-fika\\prt-fika.log</code></p>\n</blockquote>\n<hr />\n\n<h2>Credits</h2>\n<ul>\n<li><em>Suomi</em> handled the engine\u2011side work: sourcing and adapting 3D radio models, bundling them into Unity AssetBundles, reverse\u2011engineering EFT\u2019s internal classes/APIs with dnSpy, finding and organising sound assets, extensive in\u2011game testing across multiple sessions, and designing the on\u2011screen status indicator system (layout, behaviour, style);</li>\n<li><em>makshepard</em> provided guides, reference material, design feedback, and testing throughout development;</li>\n<li><strong>Developed with the help of AI</strong>.</li>\n</ul>\n\n",
-   "thumbnail": "https://forge-static.sp-tarkov.com/mods/8O1zU2NqgKXrV4J0AMorzchJxAai9VZY0IGL2oQ5.png",
-   "forge_url": "https://forge.sp-tarkov.com/mod/2825/prt-portable-radio-transmitter-functional-for-fika",
-   "downloads": 576,
-   "favourites": 6,
-   "featured": false,
-   "fika": true,
-   "fika_latest": "compatible",
-   "category": {
-    "id": 12,
-    "title": "Audio",
-    "slug": "audio"
-   },
-   "license": {
-    "name": "MIT License",
-    "link": "https://choosealicense.com/licenses/mit/"
-   },
-   "authors": [
-    {
-     "id": 1274,
-     "name": "_Suomi",
-     "avatar": "https://forge-static.sp-tarkov.com/profile-photos/gKk5SaLCMX8A71mmKtsb8yfKmglyeeYKC5zX2R4i_128w.webp"
-    },
-    {
-     "id": 117974,
-     "name": "makshepard",
-     "avatar": "https://forge-static.sp-tarkov.com/profile-photos/TBGyiqxmGvddSv5sftoFSvdkLs9OXXmZyMFkYhdh_256w.webp"
-    }
-   ],
-   "source_links": [
-    {
-     "url": "https://github.com/Cyomu/Suomi-PRT-sourceCode",
-     "label": ""
-    }
-   ],
-   "versions": [
-    {
-     "id": 14572,
-     "version": "1.0.0",
-     "description": "<h2>S&amp;M-PRT v1.0.0</h2>\n<p>Built for <strong>SPT 4.0.13</strong> \u00b7 requires <a target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/2326/project-fika\" rel=\"noreferrer noopener\">Project Fika</a></p>\n<blockquote>\n<p>This release targets SPT <strong>4.0.13</strong> only. A build for 4.1.x will follow later.</p>\n</blockquote>\n<h3>Added</h3>\n<ul>\n<li><strong>Optional battery support.</strong> With <a target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/2513/batteries-not-included\" rel=\"noreferrer noopener\">Batteries Not Included</a> installed, every radio now takes real AA or CR123A cells \u2014 1 or 2 slots depending on the model, each with its own runtime. Charge is shown on the inventory icon and on screen, the radio warns you when it runs low, and shuts down when flat. Without that mod nothing changes: radios are always powered, exactly as before.</li>\n<li><strong>Raid Recordings (F9).</strong> Optionally record radio traffic during a raid and listen back afterwards in a built-in browser \u2014 playback controls, waveform or spectrogram view, filtering, and auto-cleanup. Off by default; enable it in F12.</li>\n<li>Radios can now be carried in the <strong>special slots</strong>, alongside the compass, multitool and paracord.</li>\n<li><strong>Notification overlay is now fully configurable</strong> \u2014 style (full panel or minimal stripe, each with a compact variant), BEAR/USEC colour theme, opacity and scale.</li>\n<li>Separate <strong>UI scale sliders</strong> for the status indicators and the notifications (0.5x\u20133x), which never overlap each other regardless of the values.</li>\n<li><strong>Interface language override.</strong> Notifications and the recordings browser follow your game language automatically, or can be pinned to one of the 8 supported languages.</li>\n<li><strong>Indicators fade out while the channel is quiet</strong> and come back on activity, to cut down on screen clutter. Optional.</li>\n<li>A short <strong>frequency-dial sweep</strong> plays on screen when you switch between radios. Purely cosmetic.</li>\n<li><strong>Radio traffic is jammed on Labyrinth</strong> \u2014 heavy interference there drowns out every radio, regardless of tier. Can be turned off.</li>\n<li>You can now increase the receive volume above 100%.</li>\n</ul>\n<h3>Changed</h3>\n<ul>\n<li>The F12 menu was reorganised from five sections into eight clearly separated ones. <strong>Note for existing users:</strong> indicator and colour settings moved sections and will reset to their defaults once.</li>\n<li>Far less log noise by default; detailed logging now lives behind the new Verbose Logging toggle.</li>\n</ul>\n<h3>Fixed</h3>\n<ul>\n<li>A radio could stay switched on after you selected a different one.</li>\n</ul>\n<h3>Verification</h3>\n<p>Both DLLs were scanned before release: <a target=\"_blank\" class=\"external-link\" href=\"https://www.virustotal.com/gui/file/38ccfc469308f7c57656ab33cf098717cfa6824b0eff0e2e9722624065d47379\" rel=\"noreferrer noopener\">Client.dll</a> \u2014 clean, <a target=\"_blank\" class=\"external-link\" href=\"https://www.virustotal.com/gui/file/9fa858428c52bf6fd1d0c44b50d281ebaf0f68300da61c1ce1a2a0c5650467f6\" rel=\"noreferrer noopener\">Server.dll</a> \u2014 1 / 71.</p>\n<p>That single detection (MaxSecure, <code>...susgen</code> \u2014 <em>suspicious generic</em>) is a false positive: it is a heuristic that fires on small unsigned .NET assemblies, which is every SPT server mod. The full source is public at <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Cyomu/Suomi-PRT-sourceCode\" rel=\"noreferrer noopener\">Suomi-PRT-sourceCode</a>, and the file hashes are in <a href=\"VIRUSTOTAL.md\"><code>VIRUSTOTAL.md</code></a>.</p>\n",
-     "spt_constraint": "4.0.13",
-     "fika": "compatible",
-     "downloads": 2,
-     "size": 39792506,
-     "link": "https://forge.sp-tarkov.com/mod/download/2825/prt-portable-radio-transmitter-functional-for-fika/1.0.0",
-     "published_at": "2026-08-09T00:18:00.000000Z",
-     "dependencies": [
-      {
-       "id": 2326,
-       "name": "Project Fika",
-       "slug": "project-fika",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2326/project-fika"
-      }
-     ]
-    },
-    {
-     "id": 14155,
-     "version": "0.9.7",
-     "description": "<h2>What\u2019s New in v0.9.7</h2>\n<h3>Radios in the world</h3>\n<p>Radios can now be found as loot while exploring \u2014 not just bought from traders. Civilian radios (Baofeng, Kenwood TH-21BT, T460, Yaesu, DP4800, DP4601e, TRC-83, Alinco, Kenwood ProTalk XLS) spawn on Factory, Customs, Woods, Lighthouse, Shoreline, Interchange, Streets, and Ground Zero. Military radios (Azart, XTS5000, Harris, MTH800) spawn on Lighthouse, Reserve, Ground Zero, and Labs. Rarer radios are rarer to find, matching their trader price tier.</p>\n<h3>Works without Fika too</h3>\n<p>If Project Fika isn\u2019t installed, radios automatically become collectible-only items (no voice functionality, since the client hard-depends on Fika) and can be displayed in the Hall of Fame instead. With Fika installed, everything works as normal. (Testing and feedback are needed.)</p>\n<h3>Full localization (8 languages)</h3>\n<p>Item names, descriptions, and on-screen notifications are now localized into Russian, English, German, Spanish, French, Polish, Italian, and Czech \u2014 auto-detected from your game\u2019s language.</p>\n<h3>Fixed: Duplex mode terminology</h3>\n<p>The switchable mode on some radios was mislabeled \u201cSimplex\u201d \u2014 corrected to \u201cDuplex\u201d everywhere (item descriptions, on-screen notification, F12 menu) across all languages.</p>\n<h3>Fixed: Indicators showing over the in-raid settings menu</h3>\n<p>The on-screen status indicators no longer stay visible when you open the in-raid settings menu.</p>\n<h3>Misc</h3>\n<ul>\n<li>Startup banner simplified (removed a few internal debug-style lines)</li>\n<li>Internal code cleanup</li>\n</ul>\n",
-     "spt_constraint": "4.0.13",
-     "fika": "compatible",
-     "downloads": 412,
-     "size": 39467818,
-     "link": "https://forge.sp-tarkov.com/mod/download/2825/prt-portable-radio-transmitter-functional-for-fika/0.9.7",
-     "published_at": "2026-07-19T21:10:00.000000Z",
-     "dependencies": [
-      {
-       "id": 2326,
-       "name": "Project Fika",
-       "slug": "project-fika",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2326/project-fika"
-      }
-     ]
-    },
-    {
-     "id": 14132,
-     "version": "0.9.6",
-     "description": "<p>Pre-release version</p>\n",
-     "spt_constraint": "4.0.13",
-     "fika": "compatible",
-     "downloads": 162,
-     "size": 39442784,
-     "link": "https://forge.sp-tarkov.com/mod/download/2825/prt-portable-radio-transmitter-functional-for-fika/0.9.6",
-     "published_at": "2026-07-18T15:00:00.000000Z",
-     "dependencies": [
-      {
-       "id": 2326,
-       "name": "Project Fika",
-       "slug": "project-fika",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2326/project-fika"
-      }
-     ]
-    }
-   ],
-   "latest_version": "1.0.0",
-   "spt_constraint": "4.0.13",
-   "all_spt_constraints": [
-    "4.0.13"
-   ],
-   "dependencies": [
-    {
-     "id": 2326,
-     "name": "Project Fika",
-     "slug": "project-fika",
-     "constraint": "",
-     "url": "https://forge.sp-tarkov.com/mod/2326/project-fika"
-    }
-   ],
-   "all_dependencies": [
-    {
-     "id": 2326,
-     "name": "Project Fika",
-     "slug": "project-fika",
-     "constraint": "",
-     "url": "https://forge.sp-tarkov.com/mod/2326/project-fika"
-    }
-   ],
-   "published_at": "2026-07-18T15:00:00.000000Z",
-   "updated_at": "2026-08-09T00:20:36.000000Z",
-   "flags": {
-    "contains_ads": false,
-    "contains_ai_content": true,
-    "ai_disclosure": "<p>This project was developed with AI assistance for most of the C# code. The author has practically no prior C# experience \u2014 this was their first real hands-on project with the language, so AI help with writing and explaining the code was necessary.</p>\n<p>AI was used as an implementation tool under the author\u2019s direction and testing \u2014 not as an autonomous replacement for their own engineering and QA work.</p>\n",
     "cheat_notice": false,
     "profile_binding_notice": false
    },

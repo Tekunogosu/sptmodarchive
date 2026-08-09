@@ -58,6 +58,18 @@ a:hover { text-decoration: underline; }
 .masthead .wrap { padding-top: 20px; padding-bottom: 20px; }
 .masthead h1 { margin: 0 0 4px; font-size: 21px; letter-spacing: -0.01em; }
 .masthead h1 a { color: var(--text); }
+.masthead-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.archived { color: var(--muted); font-size: 13px; white-space: nowrap; }
+.archived strong { color: var(--accent); font-size: 15px; }
+.counts { display: flex; flex-direction: column; gap: 2px; }
+#count { color: var(--text); font-weight: 600; }
+.subcount { color: var(--faint); font-size: 12px; }
 .tagline { margin: 0; color: var(--muted); font-size: 13.5px; }
 .tagline strong { color: var(--text); font-weight: 600; }
 
@@ -110,6 +122,71 @@ input:focus, select:focus {
 }
 .linkbtn:hover { color: var(--text); border-color: var(--faint); }
 
+.resultactions { display: flex; gap: 8px; }
+
+/* --- SPT version filter -------------------------------------------------- */
+
+.sptfilter { position: relative; }
+.sptsummary {
+  width: 100%;
+  padding: 9px 11px;
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  font: inherit;
+  font-size: 14px;
+  text-align: left;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.sptsummary:hover { border-color: var(--faint); }
+
+.sptpanel {
+  position: absolute;
+  z-index: 30;
+  top: calc(100% + 4px);
+  left: 0;
+  min-width: 240px;
+  max-height: 60vh;
+  overflow-y: auto;
+  padding: 10px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.4);
+}
+.sptactions { display: flex; gap: 6px; margin-bottom: 8px; }
+.sptactions .linkbtn { flex: 1; font-size: 12px; padding: 4px 6px; }
+
+.sptgroup { border-top: 1px solid var(--line); padding-top: 6px; margin-top: 6px; }
+.sptgroup:first-of-type { border-top: 0; margin-top: 0; }
+.sptgroup > summary {
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 4px 2px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.anymajor { display: flex; gap: 7px; align-items: center; cursor: pointer; }
+.sptgroup > summary::-webkit-details-marker { display: none; }
+.sptversions { display: flex; flex-direction: column; padding: 4px 2px 8px; }
+.sptversions label {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 3px 4px;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.sptversions label:hover { background: var(--surface-2); }
+.sptversions .n { margin-left: auto; color: var(--faint); font-size: 11.5px; }
+
 /* --- mod list ---------------------------------------------------------- */
 
 .modlist { display: flex; flex-direction: column; gap: 8px; }
@@ -144,12 +221,21 @@ input:focus, select:focus {
 }
 .mod .byline { color: var(--faint); font-size: 12.5px; }
 .mod .byline a { color: var(--muted); }
+.authorlink {
+  background: none;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  color: var(--muted);
+  cursor: pointer;
+}
+.authorlink:hover { color: var(--accent); text-decoration: underline; }
 
 .stats {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 7px;
+  gap: 6px;
   text-align: right;
   color: var(--muted);
   font-size: 12.5px;
@@ -213,7 +299,19 @@ input:focus, select:focus {
 
 /* --- badges ------------------------------------------------------------ */
 
-.badges { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 6px; }
+.badges { display: flex; flex-wrap: wrap; gap: 5px; }
+
+/* Tags and the star pill share the tile's bottom row, tags left, stars right. */
+.modfoot {
+  grid-column: 2 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-top: 2px;
+}
+.modfoot .badges { flex: 1; }
+.modfoot .stars { margin-left: auto; }
 .badge {
   display: inline-flex;
   align-items: center;
@@ -361,68 +459,101 @@ button.badge:hover { border-color: var(--faint); filter: brightness(1.25); }
 .modhead-title h1 { min-width: 0; word-break: break-word; }
 .modhead-title .mark { flex: none; }
 
-/* --- collection: flyout --------------------------------------------------- */
+/* --- collection: drawer -------------------------------------------------- */
 
-.collection-flyout {
-  position: fixed;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  z-index: 40;
-  display: flex;
-  align-items: flex-start;
-  max-height: 80vh;
-}
-
-.collection-tab {
-  flex: none;
-  align-self: center;
+/* The opener lives in the header, so nothing floats over the page while you
+   browse. The header sticks so it stays reachable. */
+.masthead { position: sticky; top: 0; z-index: 35; }
+.masthead-side {
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
+  gap: 7px;
+}
+
+.collection-open {
+  display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 14px 7px;
-  background: var(--surface);
+  gap: 7px;
+  padding: 7px 13px;
+  background: var(--surface-2);
   color: var(--text);
   border: 1px solid var(--line);
-  border-right: 0;
-  border-radius: var(--radius) 0 0 var(--radius);
+  border-radius: var(--radius);
   font: inherit;
-  font-size: 12px;
-  font-weight: 700;
+  font-size: 13px;
+  font-weight: 600;
   cursor: pointer;
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
+  white-space: nowrap;
 }
-.collection-tab:hover { color: var(--accent); }
+.collection-open:hover { border-color: var(--accent-dim); color: var(--accent); }
 .collection-count {
-  writing-mode: horizontal-tb;
   background: var(--accent);
   color: #14171c;
   border-radius: 999px;
-  padding: 1px 6px;
-  font-size: 11px;
+  padding: 1px 7px;
+  font-size: 11.5px;
+  font-weight: 700;
 }
-.collection-flyout.empty .collection-count { background: var(--faint); }
+.collection-open.empty .collection-count { background: var(--faint); }
 
-.collection-body {
-  width: 0;
-  overflow: hidden;
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: var(--radius) 0 0 var(--radius);
-  transition: width 0.18s ease;
+.drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 44;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.drawer-backdrop.open { opacity: 1; }
+
+.collection-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 45;
+  width: min(380px, 92vw);
   display: flex;
   flex-direction: column;
-  max-height: 80vh;
+  background: var(--surface);
+  border-left: 1px solid var(--line);
+  box-shadow: -18px 0 50px rgba(0, 0, 0, 0.4);
+  transform: translateX(100%);
+  transition: transform 0.2s ease;
 }
-.collection-flyout.open .collection-body { width: min(320px, 88vw); }
+.collection-drawer.open { transform: none; }
+
+.drawer-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 16px 18px 12px;
+}
+.drawer-head h2 {
+  margin: 0;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.drawer-close {
+  background: none;
+  border: 0;
+  color: var(--muted);
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 4px;
+}
+.drawer-close:hover { color: var(--text); }
 
 .collection-head {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
-  padding: 12px;
+  padding: 0 18px 14px;
   border-bottom: 1px solid var(--line);
 }
 .collection-head .linkbtn { font-size: 12px; padding: 4px 8px; }
@@ -431,8 +562,9 @@ button.badge:hover { border-color: var(--faint); filter: brightness(1.25); }
 .collection-list {
   list-style: none;
   margin: 0;
-  padding: 8px 12px 12px;
+  padding: 10px 18px 18px;
   overflow-y: auto;
+  flex: 1;
   font-size: 13.5px;
 }
 .collection-list li {
@@ -457,7 +589,33 @@ button.badge:hover { border-color: var(--faint); filter: brightness(1.25); }
   padding-top: 8px;
 }
 .dep-mark { flex: none; color: var(--faint); font-size: 11px; }
-.collection-list a { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+
+/* Download shortcut, left of the name. A disabled placeholder keeps names
+   aligned when a mod has no repository we can build a releases URL for. */
+.dl {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  line-height: 1;
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.7;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+a.dl:hover { opacity: 1; transform: translateY(1px); text-decoration: none; }
+.dl.empty { opacity: 0.18; }
+
+/* White reads as an icon on the dark theme; on light it would vanish. */
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) .dl { color: var(--text); }
+}
+
+@media (prefers-reduced-motion: reduce) { .dl { transition: none; } }
+
+.collection-list li > a:not(.dl) { flex: 1; min-width: 0; overflow-wrap: anywhere; }
 .collection-remove {
   flex: none;
   background: none;
@@ -471,9 +629,8 @@ button.badge:hover { border-color: var(--faint); filter: brightness(1.25); }
 .collection-remove:hover { color: var(--warn); }
 .collection-empty { display: block; color: var(--faint); border: 0; }
 
-@media (max-width: 560px) {
-  .collection-flyout { top: auto; bottom: 0; transform: none; max-height: 70vh; }
-  .collection-tab { border-radius: var(--radius) 0 0 0; }
+@media (prefers-reduced-motion: reduce) {
+  .collection-drawer, .drawer-backdrop { transition: none; }
 }
 
 /* --- collection: toasts --------------------------------------------------- */
