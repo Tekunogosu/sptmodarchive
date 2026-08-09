@@ -486,24 +486,73 @@ DOWNLOAD_ICON = (
     '<path d="M3 12.75h10"/></svg>')
 
 
-def releases_url(links):
-    """The releases page of the first repository we can name.
+def sources_by_recency(links, repos):
+    """Source links newest-first, so the living repository leads.
 
-    Source URLs often point into a repository rather than at it, so reduce to
-    owner/repo before appending the host's releases path.
+    A mod that ships a client and a server half -- or that somebody picked up
+    after the original author stopped -- lists several repositories, and the
+    Forge lists them in the order they were added, which is usually the order
+    they were abandoned in. Left that way the page leads with the dead one and
+    so does the download link beside it: 54 of the 79 multi-repo mods in the
+    archive named a stale repository first, several of them pointing at an
+    original last touched two years before the fork that replaced it.
+
+    Recency is the newer of the last commit and the latest release, because
+    either is evidence of a maintainer. Repositories that did not resolve sort
+    last: a dead link is still worth showing as a record of where a mod lived,
+    but it should never be the first thing offered. Ties keep the Forge's own
+    order, which is also what keeps a source_overrides.json correction ahead of
+    the link it was written to replace.
     """
+    def key(link):
+        status = repos.get(link["url"]) or {}
+        if status.get("status") != "ok":
+            return (0, "")
+        return (1, max((status.get("release") or {}).get("date") or "",
+                       (status.get("commit") or {}).get("date") or ""))
+
+    return sorted(links, key=key, reverse=True)
+
+
+def releases_page(url):
+    """A repository URL reduced to its host's releases page, or "".
+
+    Source URLs often point into a repository rather than at it -- /tree/<ref>,
+    a deep subpath, a trailing .git -- so this reduces to owner/repo first.
+    """
+    parts = [p for p in url.split("//")[-1].split("/")[1:] if p]
+    if len(parts) < 2:
+        return ""
+    host = url.split("//")[-1].split("/")[0].lower().removeprefix("www.")
+    base = "/".join(url.split("/")[:3] + [parts[0], parts[1].removesuffix(".git")])
+    if host == "gitlab.com":
+        return base + "/-/releases"
+    if host in ("github.com", "codeberg.org", "gitea.com"):
+        return base + "/releases"
+    return ""
+
+
+def releases_url(links, repos=None):
+    """Where the download button goes.
+
+    `links` arrives newest-first from sources_by_recency(), so the first one we
+    can name is almost always the answer. The exception is a repository that
+    has never cut a release: its releases page is an empty shelf, so it is
+    passed over while another link has one. That splits from the displayed
+    order for exactly one mod in the archive today, and in that mod it is the
+    difference between a download and a blank page.
+    """
+    repos = repos or {}
+    fallback = ""
     for link in links:
         url = link.get("url", "")
-        parts = [p for p in url.split("//")[-1].split("/")[1:] if p]
-        if len(parts) < 2:
+        page = releases_page(url)
+        if not page:
             continue
-        host = url.split("//")[-1].split("/")[0].lower().removeprefix("www.")
-        base = "/".join(url.split("/")[:3] + [parts[0], parts[1].removesuffix(".git")])
-        if host == "gitlab.com":
-            return base + "/-/releases"
-        if host in ("github.com", "codeberg.org", "gitea.com"):
-            return base + "/releases"
-    return ""
+        fallback = fallback or page
+        if ((repos.get(url) or {}).get("release") or {}).get("tag"):
+            return page
+    return fallback
 
 
 def render_source_links(links, repos):
@@ -532,7 +581,7 @@ def render_source_links(links, repos):
 
 def render_facts_and_source(mod, repos, facts_html):
     """Key numbers and repositories side by side, to halve the page height."""
-    releases = releases_url(mod["source_links"])
+    releases = releases_url(mod["source_links"], repos)
     forge_link = (f'<p class="forgelink"><a href="{e(mod["forge_url"])}" '
                   f'target="_blank" rel="noopener noreferrer">Original Forge '
                   f'page</a> <span class="label">offline after shutdown</span></p>'

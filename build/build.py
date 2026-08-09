@@ -134,19 +134,24 @@ def search_blob(mod, repos=None):
 
 
 def best_repo(mod, repos):
-    """The mod's most-starred repository, and its star count.
+    """The mod's newest live repository, and its star count.
 
-    Mods can list several repositories; the busiest one is the fair headline
-    number, and it is also the link a reader most likely wants.
+    The tile shows one repository, and the star count is also a link, so the
+    number and the destination have to describe the same place. Picking the
+    most-starred one made the number flattering and the link wrong: on 51 tiles
+    it pointed at an original that had been collecting stars for years while
+    the fork beside it was the one still shipping. SAIN was the worst of them,
+    offering 146 stars on a repository that had been superseded.
+
+    source_links arrives newest-first from sources_by_recency(), so the first
+    one that resolves is the repository still being worked on -- and the same
+    one the download button goes to.
     """
-    best, stars = "", 0
     for link in mod["source_links"]:
         record = repos.get(link["url"]) or {}
-        if record.get("status") != "ok":
-            continue
-        if record.get("stars", 0) >= stars or not best:
-            best, stars = link["url"], record.get("stars", 0)
-    return best, stars
+        if record.get("status") == "ok":
+            return link["url"], record.get("stars", 0)
+    return "", 0
 
 
 def index_entry(mod, comment_count, images=None, repos=None):
@@ -292,6 +297,14 @@ def build(limit=None, base_url=BASE_URL):
     if repos:
         print(f"  {len(repos)} repositories checked", file=sys.stderr)
     print(f"  {len(threads)} mods have archived comments", file=sys.stderr)
+
+    # Source links are rendered on the mod page, reduced to a download link
+    # beside it, copied into the index tiles and carried into the collection
+    # drawer. Ordering them once here rather than at each use is what keeps
+    # those four agreeing with each other -- newest repository first.
+    for mod in mods:
+        mod["source_links"] = templates.sources_by_recency(mod["source_links"],
+                                                           repos)
 
     # Dependency links resolve to archive pages where the target was archived,
     # and fall back to the (soon dead) Forge URL where it was not.
