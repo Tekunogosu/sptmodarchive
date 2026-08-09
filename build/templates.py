@@ -13,6 +13,7 @@ Two rules hold throughout:
     sorting, and search; they are never what makes content visible.
 """
 
+import json
 import re
 from html import escape
 
@@ -88,11 +89,15 @@ def to_epoch(stamp):
 def page(title, body, *, depth=0, description="", scripts=()):
     """Full document. `depth` is how many directories deep the page sits."""
     up = "../" * depth
+
+    # Every page carries the collection UI, so the flyout follows you around
+    # the site. ids.js is the id universe the share-link encoder needs.
+    all_scripts = ("ids.js", "collection.js") + tuple(scripts)
     script_tags = "\n".join(
-        f'  <script src="{up}assets/{e(s)}" defer></script>' for s in scripts)
+        f'  <script src="{up}assets/{e(s)}" defer></script>' for s in all_scripts)
 
     return f"""<!doctype html>
-<html lang="en">
+<html lang="en" data-up="{up}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -120,6 +125,25 @@ def page(title, body, *, depth=0, description="", scripts=()):
 </body>
 </html>
 """
+
+
+def mark_button(mod_id, name, href, sources, label=False, deps=()):
+    """A collection toggle. Carries the whole entry so no lookup is needed.
+
+    The button is inert until collection.js binds it, which is why it renders
+    as a plain <button> rather than something that looks interactive on a page
+    where scripting failed.
+    """
+    inner = ('<span class="mark-label">Add to collection</span>' if label
+             else "+")
+    # Dependencies travel with the button so they can be added alongside the
+    # mod without any lookup -- a mod page has no access to the catalogue.
+    dep_attr = (f' data-deps="{e(json.dumps(list(deps), separators=(",", ":")))}"'
+                if deps else "")
+    return (f'<button type="button" class="mark{" mark-wide" if label else ""}" '
+            f'data-mark data-id="{e(mod_id)}" data-name="{e(name)}" '
+            f'data-href="{e(href)}" data-sources="{e(" ".join(sources))}"'
+            f'{dep_attr} aria-pressed="false">{inner}</button>')
 
 
 def badge(text, kind=""):
@@ -154,13 +178,17 @@ def render_index(index_json, categories, spt_lines, stats):
   <select id="spt" aria-label="SPT version">
       {spt_options}
   </select>
+  <select id="fika" aria-label="Fika compatibility">
+    <option value="">Fika: any</option>
+    <option value="yes">Fika compatible</option>
+    <option value="no">Not Fika compatible</option>
+  </select>
   <select id="show" aria-label="Show">
     <option value="">All mods</option>
-    <option value="fika">Fika compatible</option>
-    <option value="nofika">Not Fika compatible</option>
     <option value="deps">Has dependencies</option>
     <option value="comments">Has comments</option>
     <option value="nosource">No source link</option>
+    <option value="collection">In my collection</option>
   </select>
   <select id="sort" aria-label="Sort by">
     <option value="downloads">Most downloaded</option>
@@ -168,7 +196,9 @@ def render_index(index_json, categories, spt_lines, stats):
     <option value="published">Newest</option>
     <option value="name">Name A–Z</option>
     <option value="comments">Most comments</option>
+    <option value="stars">Most stars</option>
     <option value="fika">Fika first</option>
+    <option value="collection">Collection first</option>
   </select>
 </form>
 
@@ -198,7 +228,8 @@ def render_all_mods(mods):
     # `href` already carries the mod/ prefix, since the index links from the
     # site root too. Adding it again here is what broke these links once.
     rows = "\n".join(
-        f'<li><a href="{e(mod["href"])}">{e(mod["name"])}</a> '
+        f'<li>{mark_button(mod["id"], mod["name"], mod["href"], mod["source_urls"], label=True)}'
+        f'<a href="{e(mod["href"])}">{e(mod["name"])}</a> '
         f'<span class="byline">{e(mod["authors"])}</span></li>'
         for mod in mods)
     body = f"""
@@ -385,6 +416,17 @@ def render_comments(comment_data, images=None):
     </div>"""
 
 
+def dependency_entries(mod, lookup):
+    """Collection entries for a mod's dependencies, where we archived them."""
+    entries, seen = [], set()
+    for dep in mod.get("all_dependencies") or []:
+        entry = (lookup or {}).get(dep.get("id"))
+        if entry and entry["id"] not in seen:
+            seen.add(entry["id"])
+            entries.append(entry)
+    return entries
+
+
 def render_tabs(mod, description, comment_data, images):
     """Description / Versions / Comments as tabs, or as stacked sections.
 
@@ -432,7 +474,8 @@ def render_tabs(mod, description, comment_data, images):
 </div>"""
 
 
-def render_mod(mod, comment_data, known_ids, repos, images=None):
+def render_mod(mod, comment_data, known_ids, repos, images=None,
+               href="", lookup=None):
     """One mod's page: everything the archive holds about it."""
     authors = ", ".join(a["name"] for a in mod["authors"]) or "Unknown"
     images = images or {}
@@ -484,8 +527,13 @@ def render_mod(mod, comment_data, known_ids, repos, images=None):
 
 <div class="modhead">
   {thumb}
-  <div>
-    <h1>{e(mod['name'])}</h1>
+  <div class="modhead-main">
+    <div class="modhead-title">
+      <h1>{e(mod['name'])}</h1>
+      {mark_button(mod['id'], mod['name'], href,
+                   [l['url'] for l in mod['source_links']], label=True,
+                   deps=dependency_entries(mod, lookup))}
+    </div>
     <div class="byline">by {e(authors)}</div>
     <div class="badges">{"".join(flags)}</div>
     {f'<p class="teaser">{e(mod["teaser"])}</p>' if mod["teaser"] else ''}

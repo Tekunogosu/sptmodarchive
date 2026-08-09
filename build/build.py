@@ -95,7 +95,7 @@ def href_for(mod):
 
 # --- the client-side index ----------------------------------------------
 
-def search_blob(mod):
+def search_blob(mod, repos=None):
     """One lowercase haystack per mod, so filtering is a substring test.
 
     Everything a person might type goes in: names, authors, the teaser, the
@@ -108,15 +108,37 @@ def search_blob(mod):
     if mod.get("category"):
         parts.append(mod["category"]["title"])
     parts += mod["all_spt_constraints"]
-    parts += [link["url"] for link in mod["source_links"]]
+    for link in mod["source_links"]:
+        parts.append(link["url"])
+        record = (repos or {}).get(link["url"]) or {}
+        if record.get("full_name"):
+            parts.append(record["full_name"])
     return " ".join(p for p in parts if p).lower()
 
 
-def index_entry(mod, comment_count, images=None):
+def best_repo(mod, repos):
+    """The mod's most-starred repository, and its star count.
+
+    Mods can list several repositories; the busiest one is the fair headline
+    number, and it is also the link a reader most likely wants.
+    """
+    best, stars = "", 0
+    for link in mod["source_links"]:
+        record = repos.get(link["url"]) or {}
+        if record.get("status") != "ok":
+            continue
+        if record.get("stars", 0) >= stars or not best:
+            best, stars = link["url"], record.get("stars", 0)
+    return best, stars
+
+
+def index_entry(mod, comment_count, images=None, repos=None):
     category = mod.get("category") or {}
+    repo_url, stars = best_repo(mod, repos or {})
     lines = sorted({templates.spt_line(c) for c in mod["all_spt_constraints"]}
                    - {""})
     return {
+        "id": mod["id"],
         "name": mod["name"],
         "href": "mod/" + href_for(mod),
         "authors": ", ".join(a["name"] for a in mod["authors"]) or "Unknown",
@@ -136,7 +158,12 @@ def index_entry(mod, comment_count, images=None):
         "sources": len(mod["source_links"]),
         "source_urls": [link["url"] for link in mod["source_links"]],
         "origin": mod["origin"],
-        "search": search_blob(mod),
+        "stars": stars,
+        "repo_url": repo_url,
+        "repo_host": (repo_url.split("/")[2] if repo_url.startswith("http") else ""),
+        "deps": [d["id"] for d in (mod.get("all_dependencies") or [])
+                 if d.get("id")],
+        "search": search_blob(mod, repos or {}),
     }
 
 
@@ -202,15 +229,21 @@ def build(limit=None):
     # Dependency links resolve to archive pages where the target was archived,
     # and fall back to the (soon dead) Forge URL where it was not.
     known_ids = {mod["id"]: href_for(mod) for mod in mods}
+    lookup = {mod["id"]: {"id": mod["id"], "name": mod["name"],
+                          "href": "mod/" + href_for(mod),
+                          "sources": [l["url"] for l in mod["source_links"]]}
+              for mod in mods}
 
     os.makedirs(os.path.join(SITE, "mod"), exist_ok=True)
     for mod in mods:
         page = templates.render_mod(mod, threads.get(mod["id"]), known_ids,
-                                    repos, images)
+                                    repos, images,
+                                    href="mod/" + href_for(mod),
+                                    lookup=lookup)
         write(os.path.join(SITE, "mod", href_for(mod)), page)
 
     entries = [index_entry(mod, len(threads.get(mod["id"], {}).get("comments", [])),
-                           images)
+                           images, repos)
                for mod in mods]
     categories, spt_lines = facets(mods)
 
@@ -240,6 +273,14 @@ def build(limit=None):
                 shutil.copy2(src, dst)
                 copied += 1
         print(f"  copied {copied} image(s) into site/assets/img", file=sys.stderr)
+
+    # Share links encode ids; the bitset and complement schemes need to know
+    # every id that exists. Emitted as its own cached file so mod pages carry
+    # it without embedding the whole catalogue.
+    numeric_ids = sorted(m["id"] for m in mods if isinstance(m["id"], int))
+    write(os.path.join(assets_out, "ids.js"),
+          "window.ARCHIVE_IDS=" + json.dumps(numeric_ids, separators=(",", ":"))
+          + ";\n")
 
     total_comments = sum(len(t["comments"]) for t in threads.values())
     size = os.path.getsize(os.path.join(SITE, "index.html")) / 1e6
