@@ -84,6 +84,18 @@ def load_lists():
             return []
 
 
+def load_addons():
+    """Archived Forge addons. Absent until scrape_addons.py runs."""
+    path = os.path.join(DATA, "addons.json")
+    if not os.path.exists(path):
+        return []
+    with open(path) as f:
+        try:
+            return json.load(f).get("addons", [])
+        except json.JSONDecodeError:
+            return []
+
+
 def load_comments():
     """Archived threads, keyed by mod id. Missing files simply mean not scraped."""
     directory = os.path.join(DATA, "comments")
@@ -101,6 +113,101 @@ def load_comments():
         except (json.JSONDecodeError, KeyError):
             print(f"  skipping unreadable {name}", file=sys.stderr)
     return threads
+
+
+def addon_index_entry(addon, parent, images):
+    """One addon as the catalogue page reads it, mirroring index_entry()."""
+    return {
+        "id": addon["id"],
+        "name": addon["name"],
+        "href": "addon/" + templates.addon_href(addon),
+        "authors": ", ".join(a["name"] for a in addon["authors"]) or "Unknown",
+        "author_links": [[a["id"], a["name"], templates.author_href(a)]
+                         for a in addon["authors"] if a.get("id")],
+        "teaser": to_text(addon["teaser"]),
+        "thumbnail": templates.local_image(addon["thumbnail"], images or {}),
+        "downloads": addon["downloads"],
+        "updated": (addon["versions"][0]["published_at"][:10]
+                    if addon["versions"] else addon["updated_at"][:10]),
+        "published": addon["published_at"][:10],
+        "version": addon["latest_version"],
+        "mod_constraint": addon["mod_constraint"],
+        "versions": len(addon["versions"]),
+        "detached": addon["detached"],
+        "parent_name": parent["name"] if parent else "",
+        "parent_href": parent["href"] if parent else "",
+        "parent_id": addon["mod_id"] if parent else "",
+        "source_urls": [l["url"] for l in addon["source_links"]],
+        "search": " ".join(filter(None, [
+            addon["name"], addon["teaser"],
+            " ".join(a["name"] for a in addon["authors"]),
+            parent["name"] if parent else ""])).lower(),
+    }
+
+
+def collect_authors(mods, addons, mod_lists, images):
+    """Everyone who published something, with what they published.
+
+    Keyed by Forge user id, which is the only stable identifier -- names are
+    displayed but are neither unique nor fixed. A person reachable only as a
+    list owner still gets a page, because a curated list is authorship too.
+    """
+    authors = {}
+
+    def slot(person):
+        if not person.get("id"):
+            return None            # nothing to key or link on
+        entry = authors.setdefault(person["id"], {
+            "id": person["id"], "name": person.get("name") or "Unknown",
+            "avatar": person.get("avatar") or "",
+            "forge_url": f"https://forge.sp-tarkov.com/user/{person['id']}",
+            "mods": [], "addons": [], "lists": [],
+        })
+        # First non-empty avatar wins: the same person carries one per record
+        # and some are blank.
+        if not entry["avatar"] and person.get("avatar"):
+            entry["avatar"] = person["avatar"]
+        return entry
+
+    for mod in mods:
+        for person in mod["authors"]:
+            entry = slot(person)
+            if entry is not None:
+                entry["mods"].append({
+                    "name": mod["name"], "href": "mod/" + href_for(mod),
+                    "mark_id": mod["id"],
+                    "thumb": templates.local_image(mod["thumbnail"], images),
+                    "teaser": to_text(mod["teaser"]),
+                    "downloads": mod["downloads"],
+                    "sources": [l["url"] for l in mod["source_links"]]})
+
+    for addon in addons:
+        for person in addon["authors"]:
+            entry = slot(person)
+            if entry is not None:
+                entry["addons"].append({
+                    "name": addon["name"],
+                    "href": "addon/" + templates.addon_href(addon),
+                    "mark_id": f"a{addon['id']}",
+                    "parent": addon["mod_id"],
+                    "thumb": templates.local_image(addon["thumbnail"], images),
+                    "teaser": to_text(addon["teaser"]),
+                    "downloads": addon["downloads"],
+                    "sources": [l["url"] for l in addon["source_links"]]})
+
+    for entry in mod_lists:
+        person = entry.get("owner") or {}
+        slot_entry = slot(person)
+        if slot_entry is not None:
+            slot_entry["lists"].append({
+                "title": entry["title"], "href": templates.list_href(entry),
+                "mod_count": entry["mod_count"],
+                "spt_version": entry.get("spt_version", "")})
+
+    for entry in authors.values():
+        entry["mods"].sort(key=lambda m: -m["downloads"])
+        entry["addons"].sort(key=lambda a: -a["downloads"])
+    return authors
 
 
 def href_for(mod):
@@ -165,6 +272,10 @@ def index_entry(mod, comment_count, images=None, repos=None):
         "name": mod["name"],
         "href": "mod/" + href_for(mod),
         "authors": ", ".join(a["name"] for a in mod["authors"]) or "Unknown",
+        # id and name per author, so a tile can link to the author's page
+        # rather than pre-filling a search that other filters can empty out.
+        "author_links": [[a["id"], a["name"], templates.author_href(a)]
+                         for a in mod["authors"] if a.get("id")],
         "teaser": to_text(mod["teaser"]),
         # The index lives at the site root, so no "../" prefix here.
         "thumbnail": templates.local_image(mod["thumbnail"], images or {}),
@@ -288,7 +399,8 @@ def build(limit=None, base_url=BASE_URL):
     if limit:
         mods = mods[:limit]
 
-    templates.set_archive_total(len(mods))
+    addons = load_addons()
+    templates.set_archive_totals(len(mods), len(addons))
 
     threads = load_comments()
     repos = load_repos()
@@ -308,12 +420,24 @@ def build(limit=None, base_url=BASE_URL):
         mod["source_links"] = templates.sources_by_recency(mod["source_links"],
                                                            repos)
 
+    # Built before the link map, which needs to know who has a page here.
+    authors = collect_authors(mods, addons, mod_lists, images)
+
     # Dependency links resolve to archive pages where the target was archived,
     # and fall back to the (soon dead) Forge URL where it was not.
     # Links written by mod authors and commenters point at the Forge and at
     # the Hub before it. Wherever they name something we archived, they are
     # rewritten to point here instead -- see build/archive_links.py.
-    archive_links.set_link_map(mods, mod_lists, href_for, templates.list_href)
+    archive_links.set_link_map(mods, mod_lists, href_for, templates.list_href,
+                               addons, templates.addon_href,
+                               authors.values(), templates.author_href)
+
+    # Addons hang off their parent mod, so they are grouped by it once and
+    # handed to whichever page needs them. Ordered by downloads, like
+    # everything else the archive lists.
+    addons_by_mod = {}
+    for addon in sorted(addons, key=lambda a: -a["downloads"]):
+        addons_by_mod.setdefault(str(addon["mod_id"]), []).append(addon)
 
     known_ids = {mod["id"]: href_for(mod) for mod in mods}
     lookup = {mod["id"]: {"id": mod["id"], "name": mod["name"],
@@ -328,13 +452,31 @@ def build(limit=None, base_url=BASE_URL):
 
     os.makedirs(os.path.join(SITE, "mod"), exist_ok=True)
     for mod in mods:
+        mod_addons = [
+            {"name": a["name"], "href": "addon/" + templates.addon_href(a),
+             # Prefixed so the collection cannot confuse addon 102 with mod
+             # 102 -- the two are separate id sequences that overlap.
+             "mark_id": f"a{a['id']}",
+             "thumb": templates.local_image(a["thumbnail"], images),
+             "teaser": to_text(a["teaser"]), "detached": a["detached"],
+             "mod_constraint": a["mod_constraint"],
+             "sources": [l["url"] for l in a["source_links"]]}
+            for a in addons_by_mod.get(str(mod["id"]), [])]
         page = templates.render_mod(mod, threads.get(mod["id"]), known_ids,
                                     repos, images,
                                     href="mod/" + href_for(mod),
-                                    lookup=lookup)
+                                    lookup=lookup, addons=mod_addons)
         write(os.path.join(SITE, "mod", href_for(mod)), page)
         sitemap_pages.append(("mod/" + href_for(mod),
                               templates.last_release(mod)))
+
+    os.makedirs(os.path.join(SITE, "user"), exist_ok=True)
+    for author in authors.values():
+        href = templates.author_href(author)
+        write(os.path.join(SITE, "user", href),
+              templates.render_author(author, images))
+        sitemap_pages.append(("user/" + href, ""))
+    print(f"  {len(authors)} author pages", file=sys.stderr)
 
     entries = [index_entry(mod, len(threads.get(mod["id"], {}).get("comments", [])),
                            images, repos)
@@ -344,9 +486,41 @@ def build(limit=None, base_url=BASE_URL):
     index_json = json.dumps(entries, separators=(",", ":"), ensure_ascii=False)
     stats = {"mod_count": len(mods), "generated_at": archive.get("generated_at", "")}
 
+    # Just enough to name an addon and link to it: the index resolves shared
+    # collections, and a share link may carry addons.
+    addon_lookup = json.dumps(
+        [{"id": a["id"], "name": a["name"],
+          "href": "addon/" + templates.addon_href(a), "parent": a["mod_id"]}
+         for a in addons], separators=(",", ":"), ensure_ascii=False)
+
     write(os.path.join(SITE, "index.html"),
-          templates.render_index(index_json, categories, spt_lines, stats))
+          templates.render_index(index_json, categories, spt_lines, stats,
+                                 addon_lookup))
     write(os.path.join(SITE, "all-mods.html"), templates.render_all_mods(entries))
+
+    # Addons: a second catalogue with its own page per addon. Each one names
+    # the mod it extends, so it is rendered with that mod resolved against the
+    # archive -- and left saying so plainly when the parent was never listed.
+    if addons:
+        os.makedirs(os.path.join(SITE, "addon"), exist_ok=True)
+        addon_entries = []
+        for addon in sorted(addons, key=lambda a: -a["downloads"]):
+            parent = lookup.get(addon["mod_id"])
+            href = templates.addon_href(addon)
+            write(os.path.join(SITE, "addon", href),
+                  templates.render_addon(addon, parent, images, repos))
+            sitemap_pages.append(("addon/" + href, addon["updated_at"][:10]))
+            addon_entries.append(addon_index_entry(addon, parent, images))
+
+        addons_json = json.dumps(addon_entries, separators=(",", ":"),
+                                 ensure_ascii=False)
+        write(os.path.join(SITE, "addons.html"),
+              templates.render_addons_index(addons_json,
+                                            {"addon_count": len(addons)}))
+        write(os.path.join(SITE, "all-addons.html"),
+              templates.render_all_addons(addon_entries))
+        print(f"  {len(addons)} addons across "
+              f"{len({str(a['mod_id']) for a in addons})} mods", file=sys.stderr)
 
     # Mod lists: curated modpacks, each rendered with its mods resolved
     # against the archive so every entry is a working link.
@@ -389,6 +563,8 @@ def build(limit=None, base_url=BASE_URL):
 
     sitemap_pages = ([("index.html", ""), ("all-mods.html", "")]
                      + ([("lists.html", "")] if mod_lists else [])
+                     + ([("addons.html", ""), ("all-addons.html", "")]
+                        if addons else [])
                      + sitemap_pages)
     listed = write_sitemap_and_robots(base_url, sitemap_pages)
     print(f"  sitemap: {listed} pages", file=sys.stderr)

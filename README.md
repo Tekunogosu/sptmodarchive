@@ -36,12 +36,23 @@ Plus the Forge's **user-curated mod lists** — 199 of them, each a set of mods
 somebody ran together on a stated SPT version. That curation exists nowhere
 else: no repository records which mods work as a pack.
 
+And the **addons** — 80 of them across 40 parent mods, the Forge's second
+content type. An addon is a file published *against* one mod, most often the
+Fika-sync shim that makes somebody else's mod work in co-op. They appear in no
+mod endpoint, they are nobody's repository, and mod descriptions already link
+to 37 of them. Each keeps its description, its full version history, the mod
+version each release was built for, and **its source repository and license,
+which exist only in the page HTML** — the addon API exposes neither, and the
+repository is the part that survives the shutdown. One is *detached* — the
+Forge's word for an addon whose parent mod was taken down, which outlives what
+it extends.
+
 And the images: mod thumbnails and author avatars are mirrored locally, because
 they live on `forge-static.sp-tarkov.com` and die with the site.
 
-Everything lands in `data/mods.json`, `data/comments/*.json`, `data/lists.json`
-and `data/images/`. The site is rendered from those files, so the data is
-usable on its own.
+Everything lands in `data/mods.json`, `data/comments/*.json`, `data/lists.json`,
+`data/addons.json` and `data/images/`. The site is rendered from those files, so
+the data is usable on its own.
 
 ---
 
@@ -57,16 +68,20 @@ so it goes first. The rest are independent of each other.
 
 ```bash
 python3 scrape/scrape_mods.py                  # 1. mods, versions, deps   (~1 min)
-python3 scrape/fetch_images.py                 # 2. thumbnails for new mods (seconds)
-python3 scrape/scrape_comments.py --probe      # 3. check comments still work
+python3 scrape/scrape_addons.py                # 2. addons                 (~1 min)
+python3 scrape/fetch_images.py                 # 3. thumbnails for new mods (seconds)
+python3 scrape/scrape_comments.py --probe      # 4. check comments still work
 python3 scrape/scrape_comments.py --spt '4.'   #    new current-gen mods
-python3 scrape/scrape_lists.py                 # 4. curated mod lists      (~3 min)
-python3 scrape/repo_status.py                  # 5. repo activity          (~10 min)
-python3 build/build.py                         # 6. preview locally        (~3 s)
+python3 scrape/scrape_lists.py                 # 5. curated mod lists      (~3 min)
+python3 scrape/repo_status.py                  # 6. repo activity, mods + addons
+python3 build/build.py                         # 7. preview locally        (~3 s)
 git add -A && git commit -m "Refresh archive" && git push
 ```
 
-**Step 6 is optional.** Pushing is what publishes: CI rebuilds `site/` from the
+Addons go after mods and before images, because `fetch_images.py` mirrors
+addon thumbnails too and wants `addons.json` on disk when it runs.
+
+**Step 7 is optional.** Pushing is what publishes: CI rebuilds `site/` from the
 committed data and deploys it to Pages, and `site/` is gitignored precisely so
 the generated output never has to be committed. Run `build.py` locally when you
 want to see a change before it goes live (`python3 -m http.server -d site 8000`),
@@ -106,15 +121,22 @@ Two workflows. `build.yml` validates pull requests and publishes on push;
 `refresh.yml` is the scheduled one, running **every two hours**:
 
 ```
-scrape_mods.py  →  repo_status.py  →  commit  →  build.py  →  deploy to Pages
+scrape_mods.py  →  scrape_addons.py  →  fetch_images.py  →  repo_status.py
+     →  commit  →  build.py  →  deploy to Pages
 ```
 
-Mods first, because `repo_status.py` reads every source link out of
-`data/mods.json` — so a mod added this run has its repository checked in the
-same run rather than hours later. Both scrapes, the commit, and the deploy live
-in one workflow on purpose: a push made with `GITHUB_TOKEN` does not trigger
-other workflows, so committing data and expecting `build.yml` to notice would
-publish nothing.
+Mods first, because everything after reads `data/mods.json` — addons attach to
+the mods in it, `fetch_images.py` mirrors the thumbnails of both, and
+`repo_status.py` reads every source link out of it, so a mod added this run has
+its repository checked in the same run rather than hours later. All four, the
+commit, and the deploy live in one workflow on purpose: a push made with
+`GITHUB_TOKEN` does not trigger other workflows, so committing data and
+expecting `build.yml` to notice would publish nothing.
+
+**Images are fetched on the schedule too**, which is why the workflow installs
+Pillow. Only missing files are downloaded, so a normal run picks up the few
+thumbnails belonging to mods and addons added since the last one — and those
+files, unlike everything else here, cannot be re-fetched after the shutdown.
 
 **Nothing here needs a personal access token.** `repo_status.py` runs on the
 built-in `GITHUB_TOKEN`, which reads public repository data at 1,000
@@ -135,15 +157,17 @@ compaction runs after the fetching, so both properties hold: crash-safe during
 the run, and a clean line-per-mod diff at the end. In practice a run that
 changes 20 mods adds roughly 40 KB to the repository.
 
-**A failed scrape is not a failed run.** The scrape step is
-`continue-on-error`, because `scrape_mods.py` aborts without writing rather
-than truncating the archive — so the worst case is a run that republishes the
-mod data already committed. That is also what every run will look like after
-the shutdown, and it must not stop the repository status from refreshing.
+**A failed scrape is not a failed run.** All three Forge-facing steps are
+`continue-on-error`, because `scrape_mods.py` and `scrape_addons.py` abort
+without writing rather than truncating the archive — so the worst case is a run
+that republishes the data already committed. That is also what every run will
+look like after the shutdown, and it must not stop the repository status from
+refreshing.
 
-**When the Forge goes offline**, delete the *Scrape the Forge* step and the two
-cache steps around it from `refresh.yml`, and drop `data/mods.json` from the
-commit step. Everything below them keeps working untouched. Two hours is also
+**When the Forge goes offline**, delete the *Scrape the Forge*, *Scrape addons*
+and *Mirror new images* steps from `refresh.yml`, and drop `data/mods.json`,
+`data/addons.json` and `data/images` from the commit step. `repo_status.py` is
+the one step that never touches sp-tarkov.com, and it keeps working untouched. Two hours is also
 far more often than dead repositories need checking — `0 6,18 * * *` is a
 reasonable cadence to fall back to.
 
@@ -164,9 +188,13 @@ N lowest ids" rather than "the N most downloaded".
 ```
 site/index.html              the catalogue — search, filter, sort
 site/mod/<id>-<slug>.html    one page per mod            (1,826)
+site/addons.html             the addon catalogue — search, sort
+site/addon/<id>-<slug>.html  one page per addon             (80)
+site/user/<id>-<slug>.html   one page per author            (888)
 site/lists.html              index of curated mod lists
 site/list/<id>-<slug>.html   one page per list             (199)
 site/all-mods.html           plain list, works without JavaScript
+site/all-addons.html         the same, for addons
 site/sitemap.xml             every page, with real last-modified dates
 site/robots.txt              points crawlers at the sitemap
 site/assets/                 one stylesheet, five small scripts, mirrored images
@@ -186,15 +214,45 @@ collection-first. Filter state is remembered in the browser and reflected in
 the URL, so a link shows the sender's view while your own saved state survives
 a reload. Clicking any tag or author name filters by it.
 
-**Each mod page** splits into tabs — Description, Dependencies, Versions,
-Comments — with the key facts and every source repository side by side above
-them. Dependencies are cards showing thumbnail, name and teaser, each addable
+**Each mod page** splits into tabs — Description, Addons, Dependencies,
+Versions, Comments — with the key facts and every source repository side by
+side above them. The facts include the mod's **GUID**, the identifier a config
+file or another mod's dependency list names it by, monospaced and given its own
+row because it is meant to be copied verbatim. Only 741 of 1,827 mods declare
+one; the Forge shows "Not Available" for the rest, and so does this. Dependencies are cards showing thumbnail, name and teaser, each addable
 on its own. Comments are sorted (newest, oldest, most liked, most replies) and
 searchable, filtering whole threads and highlighting matches, with replies
 attached to the comment they answer.
 
 **List pages** show a curated pack with each mod resolved to a working link,
 and an *Add all to collection* button that toggles the whole set at once.
+
+**Author pages** collect everything one person published — mods, addons and
+curated lists, as tabs. Every byline on the site links to one, replacing the
+old behaviour where clicking a name pre-filled the index's search box: that
+left the reader's other filters standing, so an author whose work is all 3.x
+returned an empty list under the default 4.x filter and read as a broken link.
+A page of their own cannot be filtered out from under them.
+
+They are keyed by Forge user id, the only stable identifier — names are neither
+unique nor fixed — and exist for the 888 people who published something. A
+commenter who published nothing has no page, so links to them stay pointed at
+the Forge. `archive_links.py` rewrites `/user/{id}` links the same way it
+rewrites mod links: 108 inside mod descriptions now resolve here, and the 12
+naming unarchived people are left alone.
+
+The tab strip is the structure to build on: the Forge profile also carries a
+wall and an activity feed, and those become two more entries in the same list
+without the page changing shape.
+
+**The addon catalogue** is the mod index with less to filter on: an addon has
+no SPT constraint, no category and no Fika status, only the mod version it was
+built for. So it carries search, sort and a detached filter, and shares the
+tile layout so the two read as one site. A `[Addons]` switch sits beside
+*Showing N mods* on the index, and reads `[Mods]` on the way back. Each addon
+page carries its description, its version history, and a link to the mod it
+extends; a mod with addons grows an **Addons** tab right after Description,
+laid out like its dependencies.
 
 **Links between mods stay inside the archive.** Descriptions, version notes and
 comments are full of links to other mods — on the Forge, and, in older text, on
@@ -298,6 +356,8 @@ Archives comment threads. **This is the fragile one** — see below.
 python3 scrape/scrape_comments.py --probe          # verify it still works
 python3 scrape/scrape_comments.py --spt '4.'       # current-gen mods first
 python3 scrape/scrape_comments.py                  # everything else
+python3 scrape/scrape_comments.py --retry-partial  # finish mods that came up short
+python3 scrape/scrape_comments.py --retry-empty    # re-check mods with none recorded
 python3 scrape/scrape_comments.py --max-age 30     # also refresh sets over 30 days old
 python3 scrape/scrape_comments.py --fresh          # re-fetch every mod from scratch
 ```
@@ -314,6 +374,28 @@ run resumable, but on its own it also means an archived mod never picks up new
 comments. `--max-age DAYS` reopens that: thread sets older than the given age
 are refetched, so a maintenance run stays incremental. `--fresh` re-fetches
 everything and takes as long as the original pass — rarely what you want.
+
+**One broken page no longer costs the whole mod.** `gotoPage` takes an absolute
+page number, so a page that will not load is stepped over and the walk carries
+on, recording `complete: false` and the pages it missed. UI Fixes is the case
+that proved this necessary: 48 pages of comments, of which page 47 answers HTTP
+500 every single time, so an all-or-nothing walk threw away the 1,367 comments
+the other pages had already returned — on every run, forever. Skipping ahead
+was verified to work (jumping straight from page 3 to 46 succeeds), so those
+two pages are broken on the server and their ~18 comments are unreachable by
+anyone. Five failures in a row still abandons the mod: that is the server
+refusing us rather than one page being broken.
+
+**`--retry-partial`** resumes those. **`--retry-empty`** re-checks mods
+recorded with no comments, since zero is the one result indistinguishable from
+a silent failure; a second empty read is stored as `empty_confirmed` rather
+than re-asked forever. A stored record is never replaced by a thinner one, so
+resuming can only ever add comments.
+
+**Not every empty is a failure.** 31 mods have no comment component on the page
+at all, because their authors disabled comments — SAIN and Waypoints among
+them, despite 1.2M downloads each. That is recorded as `no_comment_section` and
+was verified against the live site rather than assumed.
 
 ### `scrape/fetch_images.py`
 
@@ -337,11 +419,43 @@ identical. **2,198 images come to 8 MB**, against 121 MB at original size.
 
 Files are content-addressed by URL hash, so re-running only fetches what is
 new, and two mods sharing an author's avatar share one file. Pillow is used
-here and *only* here — imported lazily, so neither `build.py` nor CI needs it.
+here and *only* here, imported lazily — so `build.py` never needs it, and CI
+installs it for this one step of the refresh workflow.
 
 `--embedded` is mostly of historical interest now: 74 of the 81 Forge-hosted
 embedded images were already unreachable when this was written, because
 `hub.sp-tarkov.com` is gone. They are unrecoverable by anyone.
+
+### `scrape/scrape_addons.py`
+
+Archives every addon into `data/addons.json`.
+
+```bash
+python3 scrape/scrape_addons.py           # everything (~80 addons, ~1 min)
+python3 scrape/scrape_addons.py --limit 5 # small test run
+```
+
+Three endpoints, the same shape as the mod scraper: `/api/v0/addons` enumerates
+(and `include=versions` inlines the first few), `/api/v0/addon/{id}` adds the
+full description, `/api/v0/addon/{id}/versions` the complete history. The last
+one earns its request — the inline list caps at 10 and one addon has 19.
+
+**Plus the addon's own page**, because the API exposes neither the source
+repository nor the license and the pages show both. It is plain server-rendered
+markup, so this is a page fetch, not the Livewire handshake comments need. The
+parser anchors on the `<h3>` headings rather than the surrounding classes,
+which are Tailwind utilities and change with any restyle — and the run prints
+`With source` and `With license` counts, because a parser that quietly starts
+returning nothing is the failure mode scraping markup actually has.
+
+**There is no raw cache here**, unlike `scrape_mods.py`. The whole catalogue is
+two enumeration requests and two per addon, under three minutes cold, so a
+cache would add a file, a staleness rule and a compaction step to save a run
+short enough to do from scratch every time.
+
+Note that `/api/v0/addons` is served while `/api/v0/user/{id}` is not — the
+user endpoints return a Cloudflare 403, which is why profiles would have to be
+scraped through the browser path and addons did not.
 
 ### `scrape/scrape_lists.py`
 
@@ -377,6 +491,14 @@ answered from one URL. GitHub goes through GraphQL at 50 repos per request;
 GitLab, Codeberg, and Gitea use their own REST APIs and need no auth. Results
 land in `data/repos.json` and appear on each mod page as last commit, latest
 release, stars, and whether the author archived the repo.
+
+**Addon repositories are checked too**, so run this after
+`scrape_addons.py`. It reads `data/addons.json` when the file exists and
+treats its `source_links` identically — 85 URLs, 12 of them shared with the
+mod the addon extends, which is why results are keyed by URL rather than by
+what points at them. Three are not repositories at all (a Proton Drive link
+and two sound-asset pages); those stay plain links with no status, which is
+the honest answer rather than a fabricated one.
 
 Needs a GitHub token — see below.
 
@@ -539,6 +661,7 @@ Things learned the hard way, worth knowing before changing anything.
 | `data/images/` | Mirrored thumbnails and avatars (content-addressed) |
 | `data/images.json` | Image URL → local filename manifest |
 | `data/lists.json` | Archived curated mod lists |
+| `data/addons.json` | Archived addons: versions, descriptions, source repos |
 | `data/repos.json` | Source-repository activity |
 | `data/raw_mods.jsonl` | Per-mod fetch cache: the raw API payloads (delete to refetch) |
 | `community/*.json` | Mods contributed by pull request |
@@ -548,8 +671,8 @@ Things learned the hard way, worth knowing before changing anything.
 | `build/archive_links.py` | Forge/Hub links rewritten to archive pages |
 | `build/templates.py` | Page rendering |
 
-`data/mods.json`, `data/comments/`, `data/lists.json` and `data/images/`
-**are** the archive — those are what to back up. `site/` regenerates from them,
+`data/mods.json`, `data/comments/`, `data/lists.json`, `data/addons.json` and
+`data/images/` **are** the archive — those are what to back up. `site/` regenerates from them,
 and `repos.json` only costs time to rebuild.
 
 `raw_mods.jsonl` is the exception among the caches: it is only cheap to rebuild

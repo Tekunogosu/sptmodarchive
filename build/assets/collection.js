@@ -44,6 +44,19 @@
     return entry && (typeof entry.id === "number" || typeof entry.id === "string");
   }
 
+  /* Addons are keyed "a<id>" rather than by their bare number, because addon
+   * and mod ids are separate sequences that collide -- addon 102 and mod 102
+   * are unrelated things, and a collection holding both must tell them apart.
+   * Everything downstream compares ids as strings, so the prefix costs
+   * nothing; only the share encoder, which packs numbers, has to unwrap it. */
+  function isAddon(id) {
+    return typeof id === "string" && /^a\d+$/.test(id);
+  }
+
+  function addonNumber(id) {
+    return Number(String(id).slice(1));
+  }
+
   function save() {
     try {
       localStorage.setItem(STORE_KEY, JSON.stringify(entries));
@@ -145,11 +158,24 @@
    * smallest as a delta list; dense ones as a bitset; and a nearly-complete
    * collection is smallest expressed as what it *excludes*, which is why
    * "everything" encodes to a handful of characters. */
+  /* Addons ride along as a second delta-encoded block after a "." -- outside
+   * base64url's alphabet, so it cannot appear in either half. Kept separate
+   * rather than merged into one id space because the mod block has three
+   * competing encodings chosen by size, and addons are too few to benefit:
+   * 80 of them delta-encode to a few bytes whatever the collection holds. */
+  function encodeAddons() {
+    var ids = entries.filter(function (e) { return isAddon(e.id); })
+                     .map(function (e) { return addonNumber(e.id); })
+                     .sort(function (a, b) { return a - b; });
+    return ids.length ? "." + toBase64(deltas(ids)) : "";
+  }
+
   function encode() {
     var ids = entries.map(function (e) { return e.id; })
                      .filter(function (id) { return typeof id === "number"; })
                      .sort(function (a, b) { return a - b; });
-    if (!ids.length) return "";
+    var addonPart = encodeAddons();
+    if (!ids.length) return addonPart ? VERSION + "a" + addonPart : "";
 
     var all = universe();
     var candidates = [{ tag: "a", text: toBase64(deltas(ids)) }];
@@ -165,27 +191,44 @@
     }
 
     candidates.sort(function (x, y) { return x.text.length - y.text.length; });
-    return VERSION + candidates[0].tag + candidates[0].text;
+    return VERSION + candidates[0].tag + candidates[0].text + addonPart;
   }
 
+  /* Returns {mods, addons}. Older links carry no "." and simply decode to no
+   * addons, so every share URL issued before this existed still resolves. */
   function decode(payload) {
     if (!payload || payload.charAt(0) !== VERSION) return null;
     var tag = payload.charAt(1);
+    var split = payload.indexOf(".");
+    var modText = split === -1 ? payload.slice(2) : payload.slice(2, split);
+    var addonText = split === -1 ? "" : payload.slice(split + 1);
+
+    var addons = [];
+    if (addonText) {
+      try {
+        addons = undeltas(fromBase64(addonText));
+      } catch (e) {
+        addons = [];      // a damaged addon block must not lose the mods
+      }
+    }
+
     var bytes;
     try {
-      bytes = fromBase64(payload.slice(2));
+      bytes = modText ? fromBase64(modText) : [];
     } catch (e) {
       return null;
     }
 
-    if (tag === "a") return undeltas(bytes);
-    if (tag === "c") return fromBitset(bytes);
-    if (tag === "b") {
+    var mods = null;
+    if (tag === "a") mods = undeltas(bytes);
+    else if (tag === "c") mods = fromBitset(bytes);
+    else if (tag === "b") {
       var excluded = {};
       undeltas(bytes).forEach(function (id) { excluded[id] = true; });
-      return universe().filter(function (id) { return !excluded[id]; });
+      mods = universe().filter(function (id) { return !excluded[id]; });
     }
-    return null;
+    if (mods === null) return null;
+    return { mods: mods, addons: addons };
   }
 
   // --- public API -------------------------------------------------------
@@ -460,21 +503,30 @@
     var present = {};
     all.forEach(function (entry) { present[String(entry.id)] = true; });
 
+    // Two ways of belonging under a mod: `via` is a dependency it dragged in,
+    // `parent` is an addon written for it. They nest identically, and both
+    // fall back to the top level when the mod they hang off is not here.
+    function under(entry) {
+      return entry.via || entry.parent;
+    }
+
     var children = {};
     all.forEach(function (entry) {
-      if (entry.via && present[String(entry.via)]) {
-        (children[String(entry.via)] = children[String(entry.via)] || []).push(entry);
+      var owner = under(entry);
+      if (owner && present[String(owner)]) {
+        (children[String(owner)] = children[String(owner)] || []).push(entry);
       }
     });
 
     var top = all.filter(function (entry) {
-      return !(entry.via && present[String(entry.via)]);
+      var owner = under(entry);
+      return !(owner && present[String(owner)]);
     });
 
     list.innerHTML = top.map(function (entry) {
       return item(entry, false) +
-        (children[String(entry.id)] || []).map(function (dep) {
-          return item(dep, true);
+        (children[String(entry.id)] || []).map(function (child) {
+          return item(child, true);
         }).join("");
     }).join("");
   }
@@ -513,7 +565,8 @@
     return "";
   }
 
-  function item(entry, isDependency) {
+  function item(entry, isNested) {
+    var addon = isAddon(entry.id);
     var href = UP + (entry.href || "");
     var releases = releasesUrl(entry.sources);
     var download = releases
@@ -523,9 +576,10 @@
         escapeAttr(entry.name || "") + '">' + DOWNLOAD_ICON + '</a>'
       : '<span class="dl empty" aria-hidden="true">' + DOWNLOAD_ICON + '</span>';
 
-    return '<li' + (isDependency ? ' class="dependency"' : "") + '>' +
-      (isDependency ? '<span class="dep-mark" title="Required by the mod above"' +
-        ' aria-hidden="true">└</span>' : "") +
+    return '<li' + (isNested ? ' class="dependency"' : "") + '>' +
+      (isNested ? '<span class="dep-mark" title="' +
+        (addon ? "An addon for the mod above" : "Required by the mod above") +
+        '" aria-hidden="true">└</span>' : "") +
       download +
       '<a href="' + escapeAttr(href) + '">' +
       escapeText(entry.name || String(entry.id)) + "</a>" +
@@ -559,12 +613,18 @@
 
   function entryFrom(button) {
     var sources = button.getAttribute("data-sources");
-    return {
+    var parent = button.getAttribute("data-parent");
+    var entry = {
       id: numericIfPossible(button.getAttribute("data-id")),
       name: button.getAttribute("data-name") || "",
       href: button.getAttribute("data-href") || "",
       sources: sources ? sources.split(" ").filter(Boolean) : []
     };
+    // Only addons carry a parent, and it is structural rather than
+    // provenance: it says where the row belongs, so unlike `via` it is never
+    // cleared by adding the thing deliberately.
+    if (parent) entry.parent = numericIfPossible(parent);
+    return entry;
   }
 
   function numericIfPossible(value) {
@@ -607,7 +667,23 @@
 
   // --- importing a shared link -----------------------------------------
 
-  function resolve(ids) {
+  /* The addon lookup the index page carries, read from the DOM rather than
+   * from a global so it does not depend on index.js having run first. */
+  var addonCatalogue = null;
+
+  function addons() {
+    if (addonCatalogue === null) {
+      var node = document.getElementById("addon-lookup");
+      try {
+        addonCatalogue = node ? JSON.parse(node.textContent) : [];
+      } catch (e) {
+        addonCatalogue = [];
+      }
+    }
+    return addonCatalogue;
+  }
+
+  function resolve(decoded) {
     // Only the index carries the catalogue, so only it can turn ids into
     // names and links. Elsewhere a shared link is simply not offered.
     var catalogue = window.MOD_INDEX;
@@ -617,11 +693,23 @@
     catalogue.forEach(function (mod) { byId[String(mod.id)] = mod; });
 
     var found = [], missing = 0;
-    ids.forEach(function (id) {
+    decoded.mods.forEach(function (id) {
       var mod = byId[String(id)];
       if (!mod) { missing++; return; }
       found.push({ id: mod.id, name: mod.name, href: mod.href,
                    sources: mod.source_urls || [] });
+    });
+
+    var byAddonId = {};
+    addons().forEach(function (a) { byAddonId[String(a.id)] = a; });
+
+    decoded.addons.forEach(function (id) {
+      var addon = byAddonId[String(id)];
+      if (!addon) { missing++; return; }
+      // `parent` travels with the addon so a shared collection nests exactly
+      // as the sender's did, whether or not the parent mod came along.
+      found.push({ id: "a" + addon.id, name: addon.name, href: addon.href,
+                   sources: [], parent: addon.parent });
     });
     return { found: found, missing: missing };
   }
@@ -697,10 +785,10 @@
     var payload = new URLSearchParams(location.search).get("pack");
     if (!payload) return;
 
-    var ids = decode(payload);
-    if (!ids || !ids.length) return;
+    var decoded = decode(payload);
+    if (!decoded || !(decoded.mods.length || decoded.addons.length)) return;
 
-    var resolved = resolve(ids);
+    var resolved = resolve(decoded);
     if (!resolved || !resolved.found.length) return;
 
     // Nothing to lose and nothing to decide: just take the shared collection

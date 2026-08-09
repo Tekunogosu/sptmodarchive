@@ -4,6 +4,8 @@
     python3 scrape/scrape_comments.py --probe        # check the handshake works
     python3 scrape/scrape_comments.py --spt '>=4.0.13'   # current-gen mods first
     python3 scrape/scrape_comments.py                # everything else
+    python3 scrape/scrape_comments.py --retry-partial    # finish short reads
+    python3 scrape/scrape_comments.py --retry-empty  # re-check mods with none
     python3 scrape/scrape_comments.py --fresh        # re-fetch mods already done
 
 Comments live in a Livewire component that the mod page loads lazily, so there
@@ -24,7 +26,20 @@ a mod whose fetch fails is left absent from the cache so a later run retries it
 very different in truth.
 
 Results are one file per mod in data/comments/, so an interrupted run keeps
-everything it already collected.
+everything it already collected. A mod that already has a file is skipped,
+which is what makes a run resumable -- so the flags above exist to reopen the
+two cases where a stored file is not the last word:
+
+  --retry-partial   the walk did not reach the last page. One page that will
+                    not load no longer costs the whole mod: the walk steps
+                    over it, keeps everything else, and records `complete:
+                    false` with the pages it missed.
+  --retry-empty     the mod was recorded as having no comments. Zero is the
+                    one result indistinguishable from a silent failure, so it
+                    is worth asking twice -- and a second empty read is stored
+                    as `empty_confirmed` rather than being re-asked forever.
+
+A record is never replaced by a thinner one, so resuming can only ever add.
 """
 
 import argparse
@@ -46,6 +61,10 @@ COMMENTS_DIR = os.path.join(DATA, "comments")
 COMPONENT = "mod.show.comments-tab"
 PAGER_COMPONENT = "comment-component"       # nested; owns gotoPage
 PROBE_MOD = (1538, "ref-spt-friendly-quests")   # known to have paged comments
+
+# How many pages may fail before the walk gives up on a mod. One broken page
+# is a broken page; five in a row is the server telling us to stop.
+MAX_PAGE_FAILURES = 5
 
 _TAG_RE = re.compile(r"<[^>]+>")
 _DIV_RE = re.compile(r"<div\b|</div>", re.I)
@@ -175,15 +194,48 @@ def fetch_mod_comments(session, mod_id, slug, max_pages=200):
     # Paging is owned by a *nested* component, not the tab we just loaded --
     # calling gotoPage on the outer snapshot 500s. Its snapshot only exists
     # inside the HTML the lazy load returned.
+    #
+    # Without it there is no way past page one, but page one is already in
+    # hand: return it as an incomplete record rather than raising, because a
+    # tenth of a thread set beats none of it.
+    pager_missing = False
     if last_page > 1:
         snapshot, _ = parse_component(html, PAGER_COMPONENT)
-        if not snapshot:
-            raise RuntimeError(f"{PAGER_COMPONENT} snapshot not found; "
-                               f"cannot page past 1 of {last_page}")
+        pager_missing = not snapshot
 
-    for page in range(2, min(last_page, max_pages) + 1):
-        effects, snapshot = session.call(
-            snapshot, "gotoPage", [page, "commentPage"], path)
+    # A single page that will not load must not cost the whole mod. UI Fixes
+    # is the case that proved it: 48 pages, of which page 47 answers 500 every
+    # time, so an all-or-nothing walk threw away the 1,367 comments the other
+    # 47 pages had already returned, on every run, forever.
+    #
+    # gotoPage takes an absolute page number, so the last good snapshot can be
+    # reused to step over a bad page and carry on. The gap is recorded rather
+    # than papered over, because a comment we never fetched and a comment that
+    # does not exist have to stay distinguishable.
+    pages_wanted = range(2, min(last_page, max_pages) + 1)
+    missing_pages = list(pages_wanted) if pager_missing else []
+    session_expired = False
+
+    for page in [] if pager_missing else pages_wanted:
+        try:
+            effects, next_snapshot = session.call(
+                snapshot, "gotoPage", [page, "commentPage"], path)
+        except SessionExpired:
+            # The session is gone, so nothing further will work -- but what is
+            # already collected is real and gets kept. The next mod's page
+            # fetch re-establishes the cookie and CSRF token.
+            session_expired = True
+            missing_pages.extend(range(page, pages_wanted.stop))
+            break
+        except Exception:
+            missing_pages.append(page)
+            # Several failures in a row mean the server is refusing us rather
+            # than one page being broken, and hammering it will not help.
+            if len(missing_pages) >= MAX_PAGE_FAILURES:
+                missing_pages.extend(range(page + 1, pages_wanted.stop))
+                break
+            continue
+        snapshot = next_snapshot
         comments.extend(parse_comments(effects.get("html", "")))
 
     # De-duplicate defensively: a shifting paginator can repeat a comment.
@@ -193,6 +245,13 @@ def fetch_mod_comments(session, mod_id, slug, max_pages=200):
             seen.add(c["id"])
             unique.append(c)
 
+    # The Forge's "N results" counts top-level comments only; replies are
+    # nested inside them. Comparing like with like is what makes `complete`
+    # mean something -- it catches a short read even when every page returned
+    # HTTP 200, which is the failure a page-error count cannot see.
+    top_level = sum(1 for c in unique if c["parent_id"] is None)
+    complete = not missing_pages and (total == 0 or top_level >= total)
+
     return {
         "mod_id": mod_id,
         "slug": slug,
@@ -200,6 +259,10 @@ def fetch_mod_comments(session, mod_id, slug, max_pages=200):
         "reported_total": total,
         "pages": last_page,
         "count": len(unique),
+        "top_level": top_level,
+        "complete": complete,
+        "missing_pages": missing_pages,
+        "session_expired": session_expired,
         "comments": sorted(unique, key=lambda c: c["created_at"]),
     }
 
@@ -236,27 +299,51 @@ def probe(session):
     return 0 if ok else 1
 
 
-def needs_fetch(mod, fresh, max_age_days):
+def load_record(mod_id):
+    """A mod's stored thread set, or None if absent or unreadable."""
+    path = os.path.join(COMMENTS_DIR, f"{mod_id}.json")
+    if not os.path.exists(path):
+        return None
+    try:
+        with open(path) as f:
+            return json.load(f)
+    except (json.JSONDecodeError, OSError):
+        return None
+
+
+def needs_fetch(mod, fresh, max_age_days, retry_empty=False,
+                retry_partial=False):
     """Whether this mod's comments should be (re)fetched.
 
     Skipping mods that already have a file is what makes an interrupted run
     resumable, but taken alone it also means an archived mod never picks up
-    new comments. `max_age_days` reopens that: a thread set older than the
-    given age is refetched, so a maintenance run stays incremental instead of
-    being all-or-nothing.
+    new comments. Three things reopen it:
+
+      max_age_days   a thread set older than this is refetched, so a
+                     maintenance run stays incremental
+      retry_empty    mods recorded as having no comments are looked at again.
+                     Zero is the one result that is indistinguishable from a
+                     silent parse failure, so it is worth re-testing -- and a
+                     second empty read is recorded as confirmation rather than
+                     re-asked forever
+      retry_partial  mods whose walk did not reach the end are resumed, which
+                     is how a mod with one broken page eventually fills in
     """
-    path = os.path.join(COMMENTS_DIR, f"{mod['id']}.json")
-    if fresh or not os.path.exists(path):
+    record = load_record(mod["id"])
+    if fresh or record is None:
+        return True
+    if retry_empty and not record.get("count"):
+        # Two independent empty reads is enough; a third adds no information.
+        return record.get("empty_checks", 0) < 2
+    if retry_partial and not record.get("complete", True):
         return True
     if max_age_days is None:
         return False
 
     try:
-        with open(path) as f:
-            fetched = json.load(f).get("fetched_at", "")
-        when = time.strptime(fetched, "%Y-%m-%dT%H:%M:%SZ")
-    except (json.JSONDecodeError, ValueError, OSError):
-        return True     # unreadable or undated: safest to fetch again
+        when = time.strptime(record.get("fetched_at", ""), "%Y-%m-%dT%H:%M:%SZ")
+    except ValueError:
+        return True     # undated: safest to fetch again
 
     age_days = (time.time() - time.mktime(when) + time.timezone) / 86400
     return age_days >= max_age_days
@@ -288,6 +375,11 @@ def main():
     ap.add_argument("--max-age", type=float, metavar="DAYS",
                     help="also refetch thread sets older than DAYS "
                          "(omit to only fetch mods never archived)")
+    ap.add_argument("--retry-empty", action="store_true",
+                    help="re-check mods recorded as having no comments, and "
+                         "mark the ones that genuinely have none")
+    ap.add_argument("--retry-partial", action="store_true",
+                    help="resume mods whose comment walk did not finish")
     ap.add_argument("--delay", type=float, default=0.6,
                     help="seconds between requests")
     args = ap.parse_args()
@@ -302,10 +394,13 @@ def main():
     if args.limit:
         mods = mods[:args.limit]
 
-    todo = [m for m in mods if needs_fetch(m, args.fresh, args.max_age)]
+    todo = [m for m in mods
+            if needs_fetch(m, args.fresh, args.max_age, args.retry_empty,
+                           args.retry_partial)]
     print(f"{len(mods)} mods in scope, {len(todo)} to fetch", file=sys.stderr)
 
-    stats = {"comments": 0, "with": 0, "none": 0, "failed": 0}
+    stats = {"comments": 0, "with": 0, "none": 0, "failed": 0,
+             "partial": 0, "confirmed_empty": 0}
     started = time.time()
 
     for n, mod in enumerate(todo, 1):
@@ -317,8 +412,10 @@ def main():
                       "fetched_at": time.strftime("%Y-%m-%dT%H:%M:%SZ",
                                                   time.gmtime())}
         except SessionExpired:
-            # The next mod page re-establishes cookies and CSRF, so this mod
-            # is simply left for a later run rather than cached as empty.
+            # Only reachable while opening the mod page or lazy-loading the
+            # tab -- an expiry part-way through the pages is kept as a partial
+            # record instead. Nothing has been collected here, so there is
+            # nothing to save; the next mod page re-establishes the session.
             print(f"  [{n}] session expired on {mod['id']}; will retry next run",
                   file=sys.stderr)
             stats["failed"] += 1
@@ -329,11 +426,40 @@ def main():
             stats["failed"] += 1
             continue
 
+        previous = load_record(mod["id"]) or {}
+
+        # A re-check that comes back empty again is evidence, not a repeat of
+        # the same unknown: count the looks so "no comments" can eventually be
+        # stated as a finding rather than an absence of data.
+        if not result["count"]:
+            result["empty_checks"] = previous.get("empty_checks", 0) + 1
+            if result["empty_checks"] >= 2 and not result["reported_total"]:
+                result["empty_confirmed"] = True
+                stats["confirmed_empty"] += 1
+
+        # Never trade a fuller record for a thinner one. A resumed walk that
+        # goes wrong earlier than last time would otherwise delete comments we
+        # already hold, which is the one outcome worse than not resuming.
+        if previous.get("count", 0) > result["count"]:
+            print(f"  [{n}] mod {mod['id']}: kept {previous['count']} archived "
+                  f"comments over {result['count']} from this run",
+                  file=sys.stderr)
+            result["comments"] = previous["comments"]
+            result["count"] = previous["count"]
+            result["complete"] = previous.get("complete", False)
+            result["missing_pages"] = previous.get("missing_pages", [])
+
         with open(os.path.join(COMMENTS_DIR, f"{mod['id']}.json"), "w") as f:
             json.dump(result, f, indent=1)
 
         stats["comments"] += result["count"]
         stats["with" if result["count"] else "none"] += 1
+        if not result.get("complete", True):
+            stats["partial"] += 1
+            print(f"  [{n}] mod {mod['id']}: {result['count']} comments, "
+                  f"incomplete (missing pages {result['missing_pages']}; "
+                  f"reported {result['reported_total']} top-level)",
+                  file=sys.stderr)
 
         if n % 25 == 0 or n == len(todo):
             rate = n / max(time.time() - started, 1)
@@ -343,7 +469,12 @@ def main():
 
     print(f"\nMods with comments: {stats['with']}", file=sys.stderr)
     print(f"Mods without:       {stats['none']}", file=sys.stderr)
+    if stats["confirmed_empty"]:
+        print(f"  confirmed empty:  {stats['confirmed_empty']}", file=sys.stderr)
     print(f"Comments archived:  {stats['comments']}", file=sys.stderr)
+    if stats["partial"]:
+        print(f"Incomplete:         {stats['partial']} "
+              f"(re-run with --retry-partial)", file=sys.stderr)
     if stats["failed"]:
         print(f"Failed (retry later): {stats['failed']}", file=sys.stderr)
     print(f"Done in {(time.time() - started) / 60:.1f}m", file=sys.stderr)

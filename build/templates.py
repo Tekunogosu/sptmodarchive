@@ -23,12 +23,14 @@ from sanitize import clean_html, to_text
 
 
 ARCHIVE_TOTAL = 0
+ARCHIVE_ADDON_TOTAL = 0
 
 
-def set_archive_total(n):
-    """Recorded once per build so every page can show it."""
-    global ARCHIVE_TOTAL
-    ARCHIVE_TOTAL = n
+def set_archive_totals(mods, addons=0):
+    """Recorded once per build so every page can show them."""
+    global ARCHIVE_TOTAL, ARCHIVE_ADDON_TOTAL
+    ARCHIVE_TOTAL = mods
+    ARCHIVE_ADDON_TOTAL = addons
 
 
 def e(value):
@@ -169,7 +171,7 @@ def page(title, body, *, depth=0, description="", scripts=()):
         <p class="tagline">A community archive of the SPT Forge mod listings.</p>
       </div>
       <div class="masthead-side">
-        <span class="archived"><strong>{ARCHIVE_TOTAL:,}</strong> mods archived</span>
+        <span class="archived"><strong>{ARCHIVE_TOTAL:,}</strong> mods, <strong>{ARCHIVE_ADDON_TOTAL:,}</strong> addons archived</span>
         <span class="masthead-actions">
           <a class="textlink" href="{up}lists.html">Mod lists</a>
           <button type="button" id="collection-open" class="collection-open is-empty" aria-expanded="false" aria-controls="collection-drawer"><span>Collection</span><span id="collection-open-count" class="collection-count">0</span></button>
@@ -191,7 +193,7 @@ def page(title, body, *, depth=0, description="", scripts=()):
 """
 
 
-def mark_button(mod_id, name, href, sources, label=False, deps=()):
+def mark_button(mod_id, name, href, sources, label=False, deps=(), parent=None):
     """A collection toggle. Carries the whole entry so no lookup is needed.
 
     The button is inert until collection.js binds it, which is why it renders
@@ -212,7 +214,11 @@ def mark_button(mod_id, name, href, sources, label=False, deps=()):
     # mod without any lookup -- a mod page has no access to the catalogue.
     dep_attr = (f' data-deps="{e(json.dumps(list(deps), separators=(",", ":")))}"'
                 if deps else "")
-    return (f'<button type="button" class="mark{" mark-wide" if label else ""}" '
+    # Addons pass the mod they extend, so the collection can file them under
+    # it exactly as it files a mod's dependencies.
+    parent_attr = f' data-parent="{e(parent)}"' if parent else ""
+    return (f'<button type="button" class="mark{" mark-wide" if label else ""}"'
+            f'{parent_attr} '
             f'data-mark data-id="{e(mod_id)}" data-name="{e(name)}" '
             f'data-href="{e(href)}" data-sources="{e(" ".join(sources))}"'
             f'{dep_attr} aria-pressed="false">{inner}</button>')
@@ -231,7 +237,7 @@ def option_list(options, placeholder):
     return "\n      ".join(out)
 
 
-def render_index(index_json, categories, spt_facets, stats):
+def render_index(index_json, categories, spt_facets, stats, addon_lookup="[]"):
     """The catalogue page. The mod data ships inline so it works offline."""
     category_options = option_list(
         [(c["slug"], f'{c["title"]} ({c["count"]})') for c in categories],
@@ -292,9 +298,12 @@ def render_index(index_json, categories, spt_facets, stats):
 </form>
 
 <div class="resultbar">
-  <span class="counts">
-    <span id="count">Showing {stats['mod_count']:,} mods</span>
-    <span id="fika-count" class="subcount"></span>
+  <span class="countgroup">
+    <span class="counts">
+      <span id="count">Showing {stats['mod_count']:,} mods</span>
+      <span id="fika-count" class="subcount"></span>
+    </span>
+    <a class="switchbtn" href="addons.html">Addons</a>
   </span>
   <span class="resultactions">
     <button type="button" class="linkbtn" id="reset-filters">Reset filters</button>
@@ -313,11 +322,368 @@ def render_index(index_json, categories, spt_facets, stats):
 </noscript>
 
 <script id="mod-index" type="application/json">{index_json}</script>
+<!-- Names and links for addons, so a shared collection containing them can be
+     rebuilt here. Share links always land on the index, and this is the only
+     page that would otherwise have no idea what addon 42 is. -->
+<script id="addon-lookup" type="application/json">{addon_lookup}</script>
 """
     return page("SPT Mod Archive", body, depth=0, scripts=("index.js",),
                 description=(f"An archive of {stats['mod_count']:,} Single Player "
                              "Tarkov mods from the SPT Forge, including Fika "
                              "compatibility, dependencies, and comments."))
+
+
+# --- addons --------------------------------------------------------------
+
+# --- authors -------------------------------------------------------------
+
+def author_href(author):
+    slug = "".join(c if (c.isalnum() or c in "-_") else "-"
+                   for c in (author.get("name") or "user")).strip("-").lower()
+    return f"{author['id']}-{slug or 'user'}.html"
+
+
+def author_link(author, up="../"):
+    """An author's name, linked to their page here rather than to a search.
+
+    Clicking a name used to pre-fill the index's search box, which quietly
+    collided with whatever filters the reader already had set -- an author
+    with only 3.x mods returned nothing at all under the default 4.x filter,
+    and looked like a broken link. A page of their own cannot be filtered out
+    from under them.
+    """
+    if not author.get("id"):
+        return e(author.get("name") or "Unknown")
+    return (f'<a href="{up}user/{e(author_href(author))}">'
+            f'{e(author["name"])}</a>')
+
+
+def author_links(authors, up="../"):
+    return ", ".join(author_link(a, up) for a in authors) or "Unknown"
+
+
+def render_author(author, images=None, lookup=None):
+    """Everything the archive holds by one person.
+
+    Mods, addons and curated lists as tabs, in the same card the rest of the
+    site uses for "here is a thing you might install". The tab strip is the
+    point of the structure: the Forge profile also carries a wall and an
+    activity feed, and those become two more entries in this list without the
+    page changing shape.
+    """
+    images = images or {}
+    avatar = (f'<img src="{e(local_image(author["avatar"], images, "../"))}" '
+              f'alt="" loading="lazy">' if author.get("avatar") else "")
+
+    sections = []
+    if author["mods"]:
+        sections.append(("mods", "Mods", len(author["mods"]),
+                         render_cards(author["mods"])))
+    if author["addons"]:
+        sections.append(("addons", "Addons", len(author["addons"]),
+                         render_cards(author["addons"])))
+    if author["lists"]:
+        rows = "".join(
+            f'<li class="depcard"><span class="depthumb"></span>'
+            f'<div class="depmain"><a class="depname" '
+            f'href="../list/{e(entry["href"])}">{e(entry["title"])}</a>'
+            f'<p class="teaser">{entry["mod_count"]} mods'
+            f'{" · SPT " + e(entry["spt_version"]) if entry["spt_version"] else ""}'
+            f'</p></div></li>' for entry in author["lists"])
+        sections.append(("lists", "Mod lists", len(author["lists"]),
+                         f'<ul class="deplist">{rows}</ul>'))
+
+    counts = []
+    if author["mods"]:
+        counts.append(plural(len(author["mods"]), "mod"))
+    if author["addons"]:
+        counts.append(plural(len(author["addons"]), "addon"))
+    if author["lists"]:
+        counts.append(plural(len(author["lists"]), "mod list"))
+    downloads = sum(m.get("downloads") or 0 for m in author["mods"])
+
+    facts = [("Downloads", f"{downloads:,}")] if downloads else []
+
+    body = f"""
+<p class="crumbs"><a href="../index.html">← Back to the archive</a></p>
+
+<div class="modhead">
+  {avatar}
+  <div class="modhead-main">
+    <div class="modhead-title">
+      <h1>{e(author['name'])}</h1>
+    </div>
+    <div class="bylinerow">
+      <div class="byline">{e(" · ".join(counts)) or "Nothing archived"}</div>
+      <div class="badges">{badge("Author", "cat")}</div>
+    </div>
+    {f'<p class="teaser">{e(f"{downloads:,}")} downloads across their mods</p>'
+     if downloads else ''}
+  </div>
+</div>
+
+{render_section_tabs(sections,
+                     "Nothing by this author is archived yet.")}
+
+<section class="panel">
+  <h2>Profile</h2>
+  <p class="forgelink"><a href="{e(author['forge_url'])}" target="_blank"
+  rel="noopener noreferrer">Original Forge profile</a>
+  <span class="label">offline after shutdown</span></p>
+</section>
+"""
+    return page(f"{author['name']} · SPT Mod Archive", body, depth=1,
+                scripts=("tabs.js",),
+                description=(f"{author['name']} on the SPT Mod Archive: "
+                             f"{', '.join(counts) or 'no archived work'}."))
+
+
+def render_cards(items):
+    """Mods or addons as the archive's standard card, each addable."""
+    rows = []
+    for item in items:
+        thumb = (f'<img class="depthumb" src="../{e(item["thumb"])}" alt=""'
+                 f' loading="lazy">' if item.get("thumb")
+                 else '<span class="depthumb"></span>')
+        teaser = (f'<p class="teaser">{e(item["teaser"])}</p>'
+                  if item.get("teaser") else "")
+        rows.append(f"""
+    <li class="depcard">
+      {thumb}
+      <div class="depmain">
+        <a class="depname" href="../{e(item['href'])}">{e(item['name'])}</a>
+        {teaser}
+      </div>
+      {mark_button(item['mark_id'], item['name'], item['href'],
+                   item.get('sources') or (), parent=item.get('parent'))}
+    </li>""")
+    return f'<ul class="deplist">{"".join(rows)}</ul>'
+
+
+def facts_html(facts):
+    """`(label, value)` pairs as the key/value grid both page types use.
+
+    Each cell carries a class from its label, so a single fact can be styled
+    without the grid needing to know what it holds -- the GUID is the reason
+    that exists.
+    """
+    return "".join(
+        f'<div class="fact fact-{e(label.lower().replace(" ", "-"))}">'
+        f'<div class="k">{e(label)}</div>'
+        f'<div class="v">{e(value)}</div></div>' for label, value in facts)
+
+
+def addon_href(addon):
+    slug = "".join(c if (c.isalnum() or c in "-_") else "-"
+                   for c in (addon.get("slug") or "addon")).strip("-").lower()
+    return f"{addon['id']}-{slug or 'addon'}.html"
+
+
+def render_addons_index(addons_json, stats):
+    """The addon catalogue, built like the mod one but with less to filter on.
+
+    An addon has no SPT constraint, no category and no Fika status -- it
+    targets one release of one mod, and that is its whole compatibility story.
+    So this page carries search, sort and the detached filter rather than the
+    mod index's panel of facets, and shares its markup, stylesheet and tile
+    layout so the two read as the same catalogue.
+    """
+    body = f"""
+<form class="controls controls-narrow" onsubmit="return false">
+  <input type="search" id="q" placeholder="Search addons, authors, parent mods…"
+         autocomplete="off" spellcheck="false" aria-label="Search addons">
+  <select id="show" aria-label="Show">
+    <option value="">All addons</option>
+    <option value="detached">Detached from parent</option>
+  </select>
+  <select id="sort" aria-label="Sort by">
+    <option value="downloads">Most downloaded</option>
+    <option value="updated">Recently updated</option>
+    <option value="published">Newest</option>
+    <option value="name">Name A–Z</option>
+    <option value="parent">Parent mod A–Z</option>
+  </select>
+</form>
+
+<div class="resultbar">
+  <span class="countgroup">
+    <span class="counts">
+      <span id="count">Showing {stats['addon_count']:,} addons</span>
+    </span>
+    <a class="switchbtn" href="index.html">Mods</a>
+  </span>
+  <span class="resultactions">
+    <button type="button" class="linkbtn" id="reset-filters">Reset filters</button>
+  </span>
+</div>
+
+<div class="listscroll" id="listscroll">
+  <div class="modlist" id="addonlist"></div>
+  <div id="sentinel"></div>
+</div>
+
+<noscript>
+  <p class="empty">Searching and sorting need JavaScript, but every addon has
+  its own page — see <a href="all-addons.html">the full addon list</a>.</p>
+</noscript>
+
+<script id="addon-index" type="application/json">{addons_json}</script>
+"""
+    return page("Addons · SPT Mod Archive", body, depth=0,
+                scripts=("addons.js",),
+                description=(f"An archive of {stats['addon_count']:,} addons "
+                             "from the SPT Forge, each paired with the mod it "
+                             "extends."))
+
+
+def render_all_addons(addons):
+    """A plain list of every addon, so the archive works without JavaScript."""
+    rows = "\n".join(
+        f'<li><a href="{e(addon["href"])}">{e(addon["name"])}</a> '
+        f'<span class="byline">{e(addon["authors"])}</span></li>'
+        for addon in addons)
+    body = f"""
+<p class="crumbs"><a href="addons.html">← Back to the addons</a></p>
+<div class="panel">
+  <h2>All addons ({len(addons):,})</h2>
+  <ul class="linklist">
+{rows}
+  </ul>
+</div>
+"""
+    return page("All addons · SPT Mod Archive", body, depth=0,
+                description="Every addon in the SPT Mod Archive, as a plain list.")
+
+
+def render_addon_versions(versions, limit=40):
+    """An addon's releases. The constraint names a mod version, not an SPT one."""
+    if not versions:
+        return ""
+    blocks = []
+    for version in versions[:limit]:
+        constraint = (badge(f"for mod {version['mod_constraint']}", "spt")
+                      if version["mod_constraint"] else "")
+        notes = localize_links(clean_html(version["description"]), "../")
+        blocks.append(f"""
+  <div class="version">
+    <div class="vhead">
+      <span class="num">{e(version['version'] or '—')}</span>
+      {constraint}
+      <span class="when">{e(fmt_date(version['published_at']))} ·
+        {version['downloads']:,} downloads</span>
+    </div>
+    {f'<div class="notes prose">{notes}</div>' if notes else ''}
+  </div>""")
+
+    more = (f'<p class="empty">{len(versions) - limit} older versions not shown.</p>'
+            if len(versions) > limit else "")
+    return f"""
+    <div class="versions">{"".join(blocks)}</div>
+    {more}"""
+
+
+def render_addon(addon, parent, images=None, repos=None):
+    """One addon's page: what it is, what it extends, and every release.
+
+    Deliberately simpler than a mod page. An addon has no repository, no
+    dependencies and no comments -- the Forge never gave it any -- so the
+    page is its description, its versions, and a way back to its parent mod.
+    """
+    images = images or {}
+    authors = author_links(addon["authors"])
+    description = localize_links(
+        localize_images(clean_html(addon["description_html"]), images, "../"),
+        "../")
+
+    # Compatibility first, same order the mod pages and tiles use: for an
+    # addon the parent-version constraint is what the SPT badge is for a mod.
+    flags = []
+    if addon["mod_constraint"]:
+        flags.append(badge(f"for mod {addon['mod_constraint']}", "spt"))
+    flags.append(badge("Addon", "cat"))
+    # "Detached" is the Forge's own word for an addon whose parent mod is gone.
+    # It is the one state that makes an addon unusable, so it is flagged red.
+    if addon["detached"]:
+        flags.append(badge("Detached from parent ✗", "bad"))
+    for key, label in (("contains_ads", "Contains ads"),
+                       ("contains_ai_content", "Contains AI content")):
+        if addon["flags"].get(key):
+            flags.append(badge(label, "warn"))
+
+    thumb = (f'<img src="{e(local_image(addon["thumbnail"], images, "../"))}" '
+             f'alt="" loading="lazy">' if addon["thumbnail"] else "")
+
+    if parent:
+        parent_html = (
+            f'<p class="addonparent">Extends '
+            f'<a href="../{e(parent["href"])}">{e(parent["name"])}</a></p>')
+    else:
+        parent_html = ('<p class="addonparent">The mod this addon extends is '
+                       'not in the archive.</p>')
+
+    facts = [
+        ("Downloads", f"{addon['downloads']:,}"),
+        ("Latest version", addon["latest_version"] or "—"),
+        ("Latest release", fmt_date(addon["versions"][0]["published_at"])
+         if addon["versions"] else "—"),
+        ("Published", fmt_date(addon["published_at"]) or "—"),
+        ("License", addon["license"].get("name") or "—"),
+    ]
+    fact_html = facts_html(facts)
+
+    sections = []
+    if description:
+        sections.append(("description", "Description", None,
+                         f'<div class="prose">{description}</div>'))
+    if addon["versions"]:
+        sections.append(("versions", "Versions", len(addon["versions"]),
+                         render_addon_versions(addon["versions"])))
+
+    body = f"""
+<p class="crumbs"><a href="../addons.html">← Back to the addons</a></p>
+
+<div class="modhead">
+  {thumb}
+  <div class="modhead-main">
+    <div class="modhead-title">
+      <h1>{e(addon['name'])}</h1>
+      {mark_button(f"a{addon['id']}", addon['name'],
+                   "addon/" + addon_href(addon),
+                   [l["url"] for l in addon["source_links"]], label=True,
+                   parent=addon['mod_id'] if parent else None)}
+    </div>
+    <div class="bylinerow">
+      <div class="byline">by {authors}</div>
+      <div class="badges">{"".join(flags)}</div>
+    </div>
+    {f'<p class="teaser">{e(addon["teaser"])}</p>' if addon["teaser"] else ''}
+    {parent_html}
+  </div>
+</div>
+
+<div class="splitcols">
+  <section class="panel">
+    <div class="factshead">
+      <h2>Details</h2>
+      {badge(f"for mod {addon['mod_constraint']}", "spt") if addon['mod_constraint'] else ''}
+    </div>
+    <div class="facts">{fact_html}</div>
+  </section>
+  <section class="panel">
+    <h2>Source</h2>
+    {render_source_links(addon['source_links'], repos or {})}
+    <p class="forgelink"><a href="{e(addon['forge_url'])}" target="_blank"
+    rel="noopener noreferrer">Original Forge page</a>
+    <span class="label">offline after shutdown</span></p>
+  </section>
+</div>
+
+{render_section_tabs(sections)}
+"""
+    return page(f"{addon['name']} · SPT Mod Archive", body, depth=1,
+                scripts=("tabs.js",),
+                description=to_text(addon["teaser"]
+                                    or addon["description_html"], 160))
 
 
 def render_all_mods(mods):
@@ -391,12 +757,23 @@ def render_list(entry, lookup):
         if not mod:
             missing += 1
             continue
-        thumb = (f'<img class="listthumb" src="../{e(mod["thumb"])}" alt=""'
+        # Same card as a mod's dependencies and addons. A list is the third
+        # place the archive says "here is a set of mods to install", and there
+        # is no reason for it to look like a different kind of thing.
+        thumb = (f'<img class="depthumb" src="../{e(mod["thumb"])}" alt=""'
                  f' loading="lazy">' if mod.get("thumb") else
-                 '<span class="listthumb"></span>')
+                 '<span class="depthumb"></span>')
+        teaser = (f'<p class="teaser">{e(mod["teaser"])}</p>'
+                  if mod.get("teaser") else "")
         rows.append(f"""
-  <li>{mark_button(mod['id'], mod['name'], mod['href'], mod['sources'])}
-    {thumb}<a href="../{e(mod['href'])}">{e(mod['name'])}</a></li>""")
+  <li class="depcard">
+    {thumb}
+    <div class="depmain">
+      <a class="depname" href="../{e(mod['href'])}">{e(mod['name'])}</a>
+      {teaser}
+    </div>
+    {mark_button(mod['id'], mod['name'], mod['href'], mod['sources'])}
+  </li>""")
 
     note = (f'<p class="panel-note">{missing} mod(s) in this list are no longer '
             f'in the archive.</p>' if missing else "")
@@ -413,7 +790,7 @@ def render_list(entry, lookup):
       <button type="button" class="mark mark-wide" id="import-list">
         <span class="mark-label">Add all to collection</span></button>
     </div>
-    <div class="byline">by {e(entry['owner']['name'] or 'unknown')}</div>
+    <div class="byline">by {author_link(entry['owner'])}</div>
     <div class="badges">{spt}{badge(plural(len(rows), 'mod'))}</div>
   </div>
 </div>
@@ -421,7 +798,7 @@ def render_list(entry, lookup):
 <section class="panel">
   <h2>Mods in this list</h2>
   {note}
-  <ul class="linklist listmods">{"".join(rows)}</ul>
+  <ul class="deplist listmods">{"".join(rows)}</ul>
 </section>
 
 <section class="panel">
@@ -802,7 +1179,45 @@ def dependency_entries(mod, lookup):
     return entries
 
 
-def render_tabs(mod, description, comment_data, images, lookup=None):
+def render_addon_cards(addons, parent_id=None):
+    """A mod's addons as cards, laid out exactly like its dependencies.
+
+    Same shape as render_dependencies deliberately: both answer "what else do
+    I install alongside this", and giving them one look means a reader learns
+    the card once. Each is addable on its own, and files itself under the mod
+    it extends in the collection drawer.
+    """
+    if not addons:
+        return ""
+
+    rows = []
+    for addon in addons:
+        thumb = (f'<img class="depthumb" src="../{e(addon["thumb"])}" alt=""'
+                 f' loading="lazy">' if addon.get("thumb")
+                 else '<span class="depthumb"></span>')
+        teaser = (f'<p class="teaser">{e(addon["teaser"])}</p>'
+                  if addon.get("teaser") else "")
+        note = (badge("Detached ✗", "bad") if addon.get("detached")
+                else (badge(f"for {addon['mod_constraint']}", "spt")
+                      if addon.get("mod_constraint") else ""))
+        rows.append(f"""
+    <li class="depcard">
+      {thumb}
+      <div class="depmain">
+        <a class="depname" href="../{e(addon['href'])}">{e(addon['name'])}</a>
+        {teaser}
+      </div>
+      <div class="depside">
+        {note}
+        {mark_button(addon['mark_id'], addon['name'], addon['href'],
+                     addon.get('sources') or (), parent=parent_id)}
+      </div>
+    </li>""")
+    return f'<ul class="deplist">{"".join(rows)}</ul>'
+
+
+def render_tabs(mod, description, comment_data, images, lookup=None,
+                addons=()):
     """Description / Versions / Comments as tabs, or as stacked sections.
 
     Which of those you get depends on whether tabs.js runs. The markup is the
@@ -819,6 +1234,12 @@ def render_tabs(mod, description, comment_data, images, lookup=None):
     if description:
         sections.append(("description", "Description", None,
                          f'<div class="prose">{description}</div>'))
+    # Directly after Description: an addon is something you install *for this
+    # mod*, so it belongs beside the mod's own text rather than behind its
+    # version history.
+    if addons:
+        sections.append(("addons", "Addons", len(addons),
+                         render_addon_cards(addons, mod["id"])))
     dependencies = render_dependencies(mod, lookup)
     if dependencies:
         sections.append(("dependencies", "Dependencies",
@@ -833,6 +1254,19 @@ def render_tabs(mod, description, comment_data, images, lookup=None):
     if not sections:
         return ('<section class="panel"><p class="empty">No description, '
                 'versions, or comments were archived for this mod.</p></section>')
+    return render_section_tabs(sections)
+
+
+def render_section_tabs(sections, empty=""):
+    """`(slug, label, count, content)` rows as a tab strip over panels.
+
+    Shared by mod and addon pages so both get the same markup, and so tabs.js
+    -- which finds the strip by id and the panels by class -- keeps working on
+    both without knowing which kind of page it is on.
+    """
+    if not sections:
+        return (f'<section class="panel"><p class="empty">{e(empty)}</p></section>'
+                if empty else "")
 
     def tab_link(slug, label, count):
         badge_html = f'<span class="tabcount">{count:,}</span>' if count else ""
@@ -854,13 +1288,9 @@ def render_tabs(mod, description, comment_data, images, lookup=None):
 
 
 def render_mod(mod, comment_data, known_ids, repos, images=None,
-               href="", lookup=None):
+               href="", lookup=None, addons=()):
     """One mod's page: everything the archive holds about it."""
-    # Author names link back to the index as a pre-filled search, which is
-    # the same filtering the tiles do, just across a page boundary.
-    authors = ", ".join(
-        f'<a href="../index.html?q={urllib.parse.quote(a["name"])}">'
-        f'{e(a["name"])}</a>' for a in mod["authors"]) or "Unknown"
+    authors = author_links(mod["authors"])
     images = images or {}
     # Mod pages sit one directory deep, so mirrored images are ../assets/img/.
     description = localize_links(
@@ -894,11 +1324,13 @@ def render_mod(mod, comment_data, known_ids, repos, images=None,
         ("Latest release", fmt_date(last_release(mod)) or "—"),
         ("Published", fmt_date(mod["published_at"]) or "—"),
         ("License", (mod["license"].get("name") or "—")),
+        # The mod's own identifier, which is what a config file, a load-order
+        # error or another mod's dependency list actually names it by -- so it
+        # is the one fact here you might need to copy verbatim. The Forge
+        # itself shows "Not Available" for the 1,086 mods that declare none.
+        ("GUID", mod.get("guid") or "Not available"),
     ]
-    fact_html = "".join(
-        f'<div class="fact">'
-        f'<div class="k">{e(k)}</div>'
-        f'<div class="v">{e(v)}</div></div>' for k, v in facts)
+    fact_html = facts_html(facts)
 
     body = f"""
 <p class="crumbs"><a href="../index.html">← Back to the archive</a></p>
@@ -922,7 +1354,7 @@ def render_mod(mod, comment_data, known_ids, repos, images=None,
 
 {render_facts_and_source(mod, repos, fact_html)}
 
-{render_tabs(mod, description, comment_data, images, lookup)}
+{render_tabs(mod, description, comment_data, images, lookup, addons)}
 """
     return page(f"{mod['name']} · SPT Mod Archive", body, depth=1,
                 scripts=("tabs.js", "comments.js"),

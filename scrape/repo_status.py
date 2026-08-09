@@ -5,10 +5,11 @@
     python3 scrape/repo_status.py --max-age 0    # force a full re-check
     python3 scrape/repo_status.py --limit 20     # small test run
 
-Reads data/mods.json and talks **only to the code hosts** -- never to the
-Forge -- so this keeps working indefinitely after forge.sp-tarkov.com goes
-offline. That is the point of it: the Forge listing is what disappears, while
-the repositories are what the archive ultimately exists to point at.
+Reads data/mods.json and data/addons.json, and talks **only to the code
+hosts** -- never to the Forge -- so this keeps working indefinitely after
+forge.sp-tarkov.com goes offline. That is the point of it: the Forge listing is
+what disappears, while the repositories are what the archive ultimately exists
+to point at.
 
 Every source link is checked, not just the first. Mods that ship a separate
 client and server repo, or one repo per SPT generation, have more than one, and
@@ -305,12 +306,19 @@ def save_cache(path, cache):
 
 # --- main ----------------------------------------------------------------
 
-def source_urls(mods):
-    """Every distinct source URL in the archive, with the mods that use it."""
+def source_urls(records):
+    """Every distinct source URL in the archive, with what uses it.
+
+    Mods and addons are both accepted: an addon record carries the same
+    `source_links` field, and its repository outlives the Forge for exactly
+    the same reason a mod's does. Several addons live in the repository of the
+    mod they extend, so the same URL legitimately appears under both -- which
+    is why this keys by URL and collects the names against it.
+    """
     urls = {}
-    for mod in mods:
-        for link in mod["source_links"]:
-            urls.setdefault(link["url"], []).append(mod["name"])
+    for record in records:
+        for link in record["source_links"]:
+            urls.setdefault(link["url"], []).append(record["name"])
     return urls
 
 
@@ -319,6 +327,7 @@ def main():
         description=__doc__,
         formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--mods", default=os.path.join(DATA, "mods.json"))
+    ap.add_argument("--addons", default=os.path.join(DATA, "addons.json"))
     ap.add_argument("--cache", default=os.path.join(DATA, "repos.json"))
     ap.add_argument("--token-file")
     ap.add_argument("--max-age", type=float, default=12.0,
@@ -336,10 +345,18 @@ def main():
     if not os.path.exists(args.mods):
         sys.exit(f"{args.mods} not found — run scrape/scrape_mods.py first")
     with open(args.mods) as f:
-        mods = json.load(f)["mods"]
+        records = json.load(f)["mods"]
+
+    # Optional: the archive predates addons, and scrape_addons.py may simply
+    # not have been run. Their repositories are checked the same way.
+    if os.path.exists(args.addons):
+        with open(args.addons) as f:
+            addons = json.load(f)["addons"]
+        print(f"{len(addons)} addons included", file=sys.stderr)
+        records = records + addons
 
     entries, unparsed = {}, []
-    for url in source_urls(mods):
+    for url in source_urls(records):
         info = parse_repo(url)
         if info:
             entries[url] = info
@@ -359,7 +376,7 @@ def main():
     if args.limit:
         todo = todo[:args.limit]
 
-    print(f"{len(entries)} repos across {len(mods)} mods; "
+    print(f"{len(entries)} repos across {len(records)} mods and addons; "
           f"{fresh} cached, {len(entries) - fresh} stale", file=sys.stderr)
     if unparsed:
         print(f"{len(unparsed)} URL(s) name no repo, e.g. {unparsed[0]}",

@@ -87,6 +87,11 @@ a:hover { text-decoration: underline; }
   gap: 10px;
   margin-bottom: 14px;
 }
+/* The addon catalogue filters on three things rather than six, because an
+   addon has no SPT version, category or Fika status to filter by. Same row,
+   same search-box proportion, just fewer columns -- stretching three controls
+   across six tracks would leave each one absurdly wide. */
+.controls-narrow { grid-template-columns: minmax(220px, 2fr) repeat(2, minmax(120px, 1fr)); }
 @media (max-width: 900px) { .controls { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 560px) { .controls { grid-template-columns: 1fr; } }
 
@@ -127,6 +132,34 @@ input:focus, select:focus {
   cursor: pointer;
 }
 .linkbtn:hover { color: var(--text); border-color: var(--faint); }
+
+/* The switch between the two catalogues. Deliberately not a .linkbtn: those
+   act on the list in front of you (reset it, copy from it) and are muted
+   because they are secondary. This one leaves the page entirely, so it is
+   filled and tinted -- next to two grey outlines it was invisible, which is
+   the one thing a navigation control cannot be.
+   A link rather than a button, so it stays middle-clickable and copyable;
+   the first two declarations are what an <a> needs to sit level beside them. */
+.switchbtn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 12px;
+  border-radius: var(--radius);
+  border: 1px solid color-mix(in srgb, var(--accent) 55%, transparent);
+  background: color-mix(in srgb, var(--accent) 16%, transparent);
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.switchbtn:hover {
+  background: color-mix(in srgb, var(--accent) 26%, transparent);
+  border-color: var(--accent);
+}
+
+/* Holds the counts and the switch on one line, so the switch reads as part of
+   "Showing N mods" rather than as another action over on the right. */
+.countgroup { display: flex; align-items: center; gap: 14px; }
 
 .resultactions { display: flex; gap: 12px; align-items: center; }
 .masthead-actions { display: flex; gap: 12px; align-items: center; }
@@ -230,6 +263,8 @@ input:focus, select:focus {
 }
 .mod .byline { color: var(--faint); font-size: 12.5px; }
 .mod .byline a { color: var(--faint); }
+/* Was a button that pre-filled the search; now a link to the author's page,
+   so it needs its underline suppressed until hover to sit inside a byline. */
 .authorlink {
   background: none;
   border: 0;
@@ -237,6 +272,7 @@ input:focus, select:focus {
   font: inherit;
   color: var(--faint);
   cursor: pointer;
+  text-decoration: none;
 }
 .authorlink:hover { color: var(--accent); text-decoration: underline; }
 
@@ -431,6 +467,16 @@ button.badge:hover { border-color: var(--faint); filter: brightness(1.25); }
 .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 14px; }
 .fact .k { color: var(--faint); font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.05em; }
 .fact .v { font-size: 15px; font-weight: 600; margin-top: 2px; word-break: break-word; }
+/* A GUID is an identifier to be copied verbatim, not a number to be read, so
+   it is monospaced -- and given the whole row, because the longest is 62
+   characters and wraps to three lines in a half-panel column. */
+.fact-guid { grid-column: 1 / -1; }
+.fact-guid .v {
+  font-family: var(--mono);
+  font-size: 12.5px;
+  font-weight: 500;
+  user-select: all;
+}
 
 .linklist { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
 .linklist li { display: flex; flex-wrap: wrap; gap: 8px; align-items: baseline; }
@@ -568,6 +614,10 @@ button.badge:hover { border-color: var(--faint); filter: brightness(1.25); }
   border-radius: var(--radius);
 }
 .depcard:hover { border-color: var(--faint); }
+/* An addon card carries a badge as well as its toggle, and .depcard is a
+   three-column grid -- a fourth child would wrap onto a row of its own. They
+   share the last column instead, so every card keeps the same skeleton. */
+.depside { display: flex; align-items: center; gap: 10px; }
 .depthumb {
   width: 40px; height: 40px;
   border-radius: 6px;

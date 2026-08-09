@@ -3,16 +3,21 @@ name: Refresh archive
 # Two halves of the archive go stale on different clocks, so one scheduled run
 # does both, in the order their data depends on:
 #
-#   scrape_mods.py   the Forge listings, which exist only until it shuts down
-#   repo_status.py   the source repositories, which outlive it
+#   scrape_mods.py    the Forge listings, which exist only until it shuts down
+#   scrape_addons.py  the addons published against those mods
+#   fetch_images.py   thumbnails for whatever the two above just added
+#   repo_status.py    the source repositories, which outlive it
 #
-# Mods go first because data/mods.json is the spine: repo_status.py reads every
-# source link out of it, so a mod added this run has its repository checked in
-# the same run rather than hours later.
+# Mods go first because data/mods.json is the spine: everything after reads it.
+# Addons follow, then images, which mirror the thumbnails of both and so need
+# each file already written. repo_status.py reads every source link out of
+# mods.json, so a mod added this run has its repository checked in the same run
+# rather than hours later.
 #
-# AFTER THE FORGE SHUTS DOWN: delete the "Scrape the Forge" step, and drop
-# data/mods.json and data/raw_mods.jsonl from the commit step. Nothing below
-# them touches sp-tarkov.com, so the rest keeps running indefinitely.
+# AFTER THE FORGE SHUTS DOWN: delete the "Scrape the Forge", "Scrape addons"
+# and "Mirror new images" steps, and drop data/mods.json, data/raw_mods.jsonl,
+# data/addons.json and data/images from the commit step. Only repo_status.py
+# avoids sp-tarkov.com entirely, so it is the one that keeps running forever.
 on:
   schedule:
     - cron: "0 */2 * * *"       # every two hours
@@ -61,6 +66,28 @@ jobs:
         continue-on-error: true
         run: python3 scrape/scrape_mods.py
 
+      # Same reasoning as above: aborts without writing rather than truncating,
+      # so a dead Forge republishes the addons already in the repo. There is no
+      # fetch cache here -- the whole catalogue is ~160 requests -- so this is
+      # a full re-scrape every run, at about a minute.
+      - name: Scrape addons
+        continue-on-error: true
+        run: python3 scrape/scrape_addons.py
+
+      # Pillow is needed only by this step, which is why it is installed here
+      # rather than in build.yml: nothing else in the project imports it, and
+      # fetch_images.py imports it lazily so the other steps do not care.
+      - name: Install image tooling
+        run: pip install --disable-pip-version-check --quiet Pillow
+
+      # Only downloads what the manifest does not already have, so a normal run
+      # fetches the handful of thumbnails belonging to mods and addons added
+      # since the last one. These images live on forge-static.sp-tarkov.com and
+      # are the part of the archive that cannot be re-fetched later.
+      - name: Mirror new images
+        continue-on-error: true
+        run: python3 scrape/fetch_images.py
+
       - name: Check source repositories
         env:
           # The built-in token reads public repository data fine, at
@@ -74,7 +101,8 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add data/mods.json data/raw_mods.jsonl data/repos.json
+          git add data/mods.json data/raw_mods.jsonl data/repos.json \
+                  data/addons.json data/images.json data/images
 
           if git diff --cached --quiet; then
             echo "Nothing changed since the last run."

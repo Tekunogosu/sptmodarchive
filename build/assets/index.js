@@ -265,11 +265,17 @@
 
   // Authors reuse the badge click handler: the search box already matches on
   // author name, so filtering by one is just a pre-filled search.
-  function authorLinks(authors) {
-    return String(authors).split(", ").map(function (name) {
-      return '<button type="button" class="authorlink tagfilter"' +
-        ' data-control="search" data-value="' + esc(name) + '"' +
-        ' title="Show mods by this author">' + esc(name) + "</button>";
+  /* Links to the author's own page, not a pre-filled search. Filling the
+   * search box left every other filter standing, so clicking someone whose
+   * work is all 3.x returned an empty list under the default 4.x filter and
+   * read as a broken link. Authors the archive has no id for stay plain text
+   * -- there is no page to send them to. */
+  function authorLinks(mod) {
+    var links = mod.author_links || [];
+    if (!links.length) return esc(mod.authors);
+    return links.map(function (author) {
+      return '<a class="authorlink" href="user/' + esc(author[2]) +
+        '" title="Everything by this author">' + esc(author[1]) + "</a>";
     }).join(", ");
   }
 
@@ -315,7 +321,7 @@
       thumb +
       '<div class="modmain"><h2 class="title"><a href="' + esc(mod.href) + '">' +
         esc(mod.name) + "</a></h2>" +
-      '<div class="byline">' + authorLinks(mod.authors) + "</div>" +
+      '<div class="byline">' + authorLinks(mod) + "</div>" +
       (mod.teaser ? '<p class="teaser">' + esc(mod.teaser) + "</p>" : "") +
       "</div>" +
       '<div class="stats">' +

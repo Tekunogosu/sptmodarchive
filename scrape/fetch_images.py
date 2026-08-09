@@ -133,10 +133,15 @@ def is_forge_hosted(url):
     return urllib.parse.urlparse(url).netloc in FORGE_HOSTS
 
 
-def gather_urls(mods, include_embedded):
-    """Every Forge-hosted image URL, mapped to the size it should be stored at."""
+def gather_urls(records, include_embedded):
+    """Every Forge-hosted image URL, mapped to the size it should be stored at.
+
+    Mods and addons are both accepted, because an addon record carries the
+    same `thumbnail` and `authors[].avatar` fields and its images sit on the
+    same host that is going away.
+    """
     wanted = {}
-    for mod in mods:
+    for mod in records:
         thumb = mod.get("thumbnail")
         if thumb and is_forge_hosted(thumb):
             wanted[thumb] = THUMB_PX
@@ -185,11 +190,21 @@ def main():
     if not os.path.exists(path):
         sys.exit("data/mods.json not found -- run scrape/scrape_mods.py first")
     with open(path) as f:
-        mods = json.load(f)["mods"]
+        records = json.load(f)["mods"]
+
+    # Addons are optional: the archive predates them, and scrape_addons.py may
+    # simply not have been run yet. Their thumbnails live on the same dying
+    # host, so they are mirrored alongside rather than by a second script.
+    addons_path = os.path.join(DATA, "addons.json")
+    if os.path.exists(addons_path):
+        with open(addons_path) as f:
+            addons = json.load(f)["addons"]
+        print(f"{len(addons)} addons included", file=sys.stderr)
+        records = records + addons
 
     os.makedirs(IMAGES, exist_ok=True)
     manifest = {} if args.fresh else load_manifest()
-    wanted = gather_urls(mods, args.embedded)
+    wanted = gather_urls(records, args.embedded)
 
     todo = [(url, px) for url, px in wanted.items()
             if args.fresh or url not in manifest

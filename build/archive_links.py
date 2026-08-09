@@ -48,7 +48,8 @@ FRAGMENTS = {
 }
 
 
-def build_map(mods, mod_lists, mod_href, list_href):
+def build_map(mods, mod_lists, mod_href, list_href, addons=(), addon_href=None,
+              authors=(), author_href=None):
     """Every archived page, keyed by each URL that used to lead to it.
 
     `mod_href` and `list_href` are the same functions build.py names the files
@@ -68,12 +69,20 @@ def build_map(mods, mod_lists, mod_href, list_href):
             links[("hub", str(mod["hub_id"]))] = href
     for entry in mod_lists:
         links[("list", str(entry["id"]))] = "list/" + list_href(entry)
+    for addon in addons:
+        links[("addon", str(addon["id"]))] = "addon/" + addon_href(addon)
+    # Only authors get a /user/ page, so a link to a commenter who published
+    # nothing stays pointed at the Forge -- there is nothing here to show.
+    for author in authors:
+        links[("user", str(author["id"]))] = "user/" + author_href(author)
     return links
 
 
-def set_link_map(mods, mod_lists, mod_href, list_href):
+def set_link_map(mods, mod_lists, mod_href, list_href,
+                 addons=(), addon_href=None, authors=(), author_href=None):
     global LINKS
-    LINKS = build_map(mods, mod_lists, mod_href, list_href)
+    LINKS = build_map(mods, mod_lists, mod_href, list_href, addons, addon_href,
+                      authors, author_href)
 
 
 def _key(url):
@@ -98,8 +107,9 @@ def _key(url):
         host = "forge.sp-tarkov.com"
 
     if host in FORGE_HOSTS:
-        # /mod/{id}/{slug}, /mod/download/{id}/{slug}/{version}, /list/{id}/…
-        if segments[:1] == ["mod"] or segments[:1] == ["list"]:
+        # /mod/{id}/{slug}, /mod/download/{id}/{slug}/{version}, /list/{id}/…,
+        # /user/{id}/{slug}, and the same two shapes for /addon/.
+        if segments[:1] in (["mod"], ["list"], ["addon"], ["user"]):
             rest = segments[2:] if segments[1:2] == ["download"] else segments[1:]
             if rest and rest[0].isdigit():
                 return (segments[0], rest[0])
