@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-09T02:56:31Z",
+ "generated_at": "2026-08-09T05:37:20Z",
  "source": "https://forge.sp-tarkov.com",
  "filter": "all",
  "mod_count": 1826,
@@ -27976,6 +27976,250 @@
    "origin": "forge"
   },
   {
+   "id": 814,
+   "hub_id": 1099,
+   "guid": "com.danw.latetotheparty",
+   "name": "Late to the Party",
+   "slug": "late-to-the-party",
+   "teaser": "Make your SPT experience closer to live Tarkov with loot disappearing, doors opening, switches being turned on, and car extracts leaving throughout the raid. Bosses will also be less likely to spawn during Scav raids.",
+   "description_html": "<h2>Mod Compatibility</h2>\n<p><strong>REQUIRES:</strong></p>\n<ul>\n<li><strong><a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/1119-waypoints-expanded-bot-patrols-and-navmesh/\" rel=\"noreferrer noopener\">Waypoints</a> (1.8.2 or later)</strong></li>\n<li>If you use <a target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/2326/project-fika\" rel=\"noreferrer noopener\">Fika</a>, an additional plugin is required: <a target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/addon/102/late-to-the-party-fika-sync-add-on\" rel=\"noreferrer noopener\">Late to the Party - Fika Sync Add-on</a></li>\n</ul>\n<p><strong>Partially compatible with:</strong></p>\n<ul>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/2593-lockable-doors/\" rel=\"noreferrer noopener\">Lockable Doors</a> (loot may despawn behind doors you lock during the raid)</li>\n</ul>\n<p>If you use both <a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/1534-questing-bots/\" rel=\"noreferrer noopener\">Questing Bots</a> and <a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/1096-looting-bots/\" rel=\"noreferrer noopener\">Looting Bots</a>, setting <code>only\\_make\\_changes\\_just\\_after\\_spawning.enabled=true</code> in <em>config.json</em> is highly recommended. This change is also recommended if you use <a target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/2706/orbit\" rel=\"noreferrer noopener\">ORBIT</a>.</p>\n<h2>Mod Overview</h2>\n<p>This mod makes the the following changes to your SPT experience:</p>\n<ul>\n<li>Loot (including on dead bots) will be gradually removed throughout the raid to simulate other players taking it.</li>\n<li>Doors will randomly open and close throughout the raid to simulate players moving through the map (thanks to help from <a target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/user/27605/drakiaxyz\" rel=\"noreferrer noopener\">DrakiaXYZ</a>!). If you\u2019re lucky, locked doors may be opened for you\u2026</li>\n<li>Switches will be toggled throughout the raid to simulate players turning on power switches, using extracts, etc.</li>\n<li>The car extract may leave at some point during the raid</li>\n<li>If you spawn into the map late as a Scav, bosses are less likely to spawn.</li>\n</ul>\n<h2>Mod Configuration Options</h2>\n<p>This mod is highly customizable by modifying the <em>config.json</em> file. Please see descriptions of all configuration options here: <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/dwesterwick/SPTLateToTheParty\" rel=\"noreferrer noopener\">Late to the Party Github Repo</a></p>\n<p>If you\u2019re using this mod along with <a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/876-immersive-raids/\" rel=\"noreferrer noopener\">Kobrakon\u2019s Immersive Raids</a> or similar mods that significantly increase raid times, please change the following in <em>config.json</em>:</p>\n<ul>\n<li><code>destroy\\_loot\\_during\\_raid.max\\_time\\_without\\_destroying\\_any\\_loot</code> to any value you want. This is the frequency (in seconds) at which an item is removed from the map. If this value is small and you stay in the raid for a long time, you\u2019ll eventually have no more loot on the map.</li>\n</ul>\n<h2>Known Issues</h2>\n<ul>\n<li>Any locked door on the map is equally likely to be opened, including those locked with rare keys and those nobody ever really opens/closes in live Tarkov.</li>\n<li>Some doors and switches will be toggled in an illogical (or impossible) order, especially in the starting areas on Labyrinth.</li>\n<li>If <code>destroy\\_loot\\_during\\_raid.check\\_loot\\_accessibility.enabled=false</code>, loot can be despawned behind locked doors or in locked containers. If <code>destroy\\_loot\\_during\\_raid.check\\_loot\\_accessibility.enabled=true</code>, some loot is falsely considered inaccessible and will never be despawned.</li>\n<li>If you approach the car extract without taking it and this mod instructs it to leave later in the raid, you\u2019ll see the countdown timer when you check your extracts.</li>\n</ul>\n",
+   "thumbnail": "https://forge-static.sp-tarkov.com/mods/1099.jpg",
+   "forge_url": "https://forge.sp-tarkov.com/mod/814/late-to-the-party",
+   "downloads": 45023,
+   "favourites": 4,
+   "featured": false,
+   "fika": true,
+   "fika_latest": "compatible",
+   "category": {
+    "id": 17,
+    "title": "Other",
+    "slug": "other"
+   },
+   "license": {
+    "name": "Creative Commons BY-NC-SA 4.0",
+    "link": "http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode"
+   },
+   "authors": [
+    {
+     "id": 27632,
+     "name": "DanW",
+     "avatar": "https://ui-avatars.com/api/?name=D&color=7F9CF5&background=EBF4FF"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/dwesterwick/SPTLateToTheParty",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 14575,
+     "version": "3.0.0",
+     "description": "<p><strong>If you use <a target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/2326/project-fika\" rel=\"noreferrer noopener\">Fika</a>, you must also install <a target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/addon/download/102/late-to-the-party-fika-sync-add-on/3.0.0\" rel=\"noreferrer noopener\">Late to the Party - Fika Sync Add-on</a></strong></p>\n<p><strong>Changes from the 2.9.2 Release:</strong></p>\n<ul>\n<li>Rewrote the server code for SPT 4.0</li>\n<li>Moved client code to new .NET Standard 2.1 projects</li>\n<li>Updated required version of <a target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/827/waypoints-expanded-navmesh\" rel=\"noreferrer noopener\">Waypoints</a> to 1.8.2</li>\n<li>Use multi-threading when creating loot-ranking data, and only regenerate it if <code>destroy_loot_during_raid.loot_ranking.always_regenerate</code> is <code>true</code> or a new item was added to the SPT database since the loot-ranking data was last generated.</li>\n<li>Allow locked switches to be toggled if they have a key ID</li>\n<li>Separated <code>open_doors_during_raid.exclusion_radius</code> into <code>open_doors_during_raid.exclusion_radius_humans</code> and <code>open_doors_during_raid.exclusion_radius_sain_bots</code>. This is needed to prevent doors from opening too close to bots using <a target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement\" rel=\"noreferrer noopener\">SAIN</a> or they will investigate the noise.</li>\n<li>Set <code>InteractingPlayer</code> when opening doors to prevent <a target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement\" rel=\"noreferrer noopener\">SAIN</a> error spam, and reset it to <code>null</code> after the door opens</li>\n<li>Implemented external mod detection code from <a target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/1109/questing-bots\" rel=\"noreferrer noopener\">Questing Bots</a></li>\n<li>Use the semantic-version range for the server to set the required SPT version in the client</li>\n<li><strong>Bug fix for only the main player\u2019s exclusion radius being used for loot destruction, not all players when using Fika</strong></li>\n</ul>\n<p><em>config.json</em> files from previous releases are not compatible.</p>\n",
+     "spt_constraint": "~4.0.0",
+     "fika": "compatible",
+     "downloads": 33,
+     "size": 80069,
+     "link": "https://forge.sp-tarkov.com/mod/download/814/late-to-the-party/3.0.0",
+     "published_at": "2026-08-09T03:18:00.000000Z",
+     "dependencies": [
+      {
+       "id": 827,
+       "name": "Waypoints - Expanded Navmesh",
+       "slug": "waypoints-expanded-navmesh",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/827/waypoints-expanded-navmesh"
+      }
+     ]
+    },
+    {
+     "id": 354,
+     "version": "2.9.2",
+     "description": "<ul>\n<li>Bug fix for infinite exceptions when trying to find compatible attachments for weapons/mods that have invalid template ID\u2019s (added by other mods)</li>\n</ul>\n<p><em>config.json</em> files from the 2.3.1 through 2.9.1 releases are compatible, but several options no longer do anything and toggle_switches_during_raid.exclusion_radius will be too high</p>\n",
+     "spt_constraint": "~3.11.0",
+     "fika": "unknown",
+     "downloads": 4661,
+     "size": null,
+     "link": "https://forge.sp-tarkov.com/mod/download/814/late-to-the-party/2.9.2",
+     "published_at": "2025-06-25T14:52:12.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 768,
+     "version": "2.9.0",
+     "description": "<p>This version includes a new version of the LateToThePartyFikaSync plugin, available <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/dwesterwick/SPTLateToTheParty/releases/download/2.9.0/DanW-LateToThePartyFikaSync.zip\" rel=\"noreferrer noopener\">here</a></p>\n<ul>\n<li><strong>Updated for SPT 3.11.x</strong></li>\n<li><strong>Increased minimum required version of SPT to 3.11.2</strong></li>\n<li><strong>Increased required version of <a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/1119-waypoints-expanded-bot-patrols-and-navmesh/\" rel=\"noreferrer noopener\">Waypoints</a> from 1.6.2 to 1.7.0</strong></li>\n<li>Set the InteractingPlayer of WorldInteractiveObjects to null before toggling them</li>\n<li>If the loot-ranking data is invalid, save the server response to a log file</li>\n<li>Only show the warning message about sounds being suppressed during initial raid setup when debug.enabled=true</li>\n<li>Removed LookRankingDataReader program from being included in builds</li>\n<li>Imported helper class from <a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/1534-questing-bots/\" rel=\"noreferrer noopener\">Questing Bots</a> for resolving unmapped client types</li>\n<li>Fixed NRE when toggling a WorldInteractiveObject if InteractingPlayer=null for it</li>\n<li>Minor refactoring</li>\n</ul>\n<p><em>config.json</em> files from the 2.3.1 through 2.8.3 releases are compatible, but several options no longer do anything and toggle_switches_during_raid.exclusion_radius will be too high.</p>\n",
+     "spt_constraint": "3.11.2",
+     "fika": "unknown",
+     "downloads": 484,
+     "size": null,
+     "link": "https://forge.sp-tarkov.com/mod/download/814/late-to-the-party/2.9.0",
+     "published_at": "2025-04-19T16:09:15.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 1773,
+     "version": "2.7.0",
+     "description": "<ul>\n<li><strong>Updated for SPT 3.10</strong></li>\n<li><strong>Added requirement for <a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/1119-waypoints-expanded-bot-patrols-and-navmesh/\" rel=\"noreferrer noopener\">Waypoints</a> 1.6.0 and removed redundant features that perform similar functions</strong></li>\n<li><strong>Made Fika incompatible</strong>. There is currently no way to synchronize door, switch, etc. states between clients.</li>\n<li>If <a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/2593-lockable-doors/\" rel=\"noreferrer noopener\">Lockable Doors</a> is loaded, show a warning message in the main menu, game console, and server console when the game first loads about known limitations</li>\n<li>Added SPT version check (currently set to allow all SPT 3.10.x versions)</li>\n<li>Reduced toggle_switches_during_raid.exclusion_radius from 150 to 75 or many switches on Labs would never be activated</li>\n<li>Removed trader-stock-adjustment feature because it doesn\u2019t look like BSG will be restoring trader stock limits</li>\n<li>Removed the bot-conversion-chance adjustment feature because there are now plenty of spawn mods that do a better job</li>\n<li>Removed logging buffer and crash detection because this hasn\u2019t been needed in a long time</li>\n<li>Removed most debug options and transferred them into a separate mod</li>\n<li>Do not try to directly despawn items that are locked in their parent items (i.e. soft armor inserts)</li>\n<li>Do not force doors near loot to open if something is already interacting with it</li>\n<li>Do not force doors near loot to open if open_doors_during_raid.enabled=false</li>\n<li>Ignore and show warning messages for items with invalid templates</li>\n<li>Removed warning message when checking for VEX\u2019s if there are no alive players in the map</li>\n<li>Made all Unity methods protected instead of private because the recent Visual Studio update is dumb and forces them to be faded out</li>\n<li>Began refactoring (but much more is still needed)</li>\n<li>Removed manifest from WinForms app (LootRankingDataReader) to reduce VirusTotal false positives</li>\n</ul>\n<p><em>config.json</em> files from the 2.3.1 through 2.6.1 releases are compatible, but several options no longer do anything and toggle_switches_during_raid.exclusion_radius will be too high.</p>\n",
+     "spt_constraint": "~3.10.0",
+     "fika": "unknown",
+     "downloads": 1398,
+     "size": null,
+     "link": "https://forge.sp-tarkov.com/mod/download/814/late-to-the-party/2.7.0",
+     "published_at": "2025-01-03T04:05:23.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 3655,
+     "version": "2.6.0",
+     "description": "<ul>\n<li>Updated to SPT 3.9.0</li>\n</ul>\n<p><em>config.json</em> files from the 2.3.1 through 2.5.1 releases are compatible, but you\u2019ll receive warning messages in the server console about trader-inventory changes being disabled.</p>\n",
+     "spt_constraint": "3.9.0",
+     "fika": "unknown",
+     "downloads": 4281,
+     "size": null,
+     "link": "https://forge.sp-tarkov.com/mod/download/814/late-to-the-party/2.6.0",
+     "published_at": "2024-07-08T17:21:22.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 3733,
+     "version": "2.5.1",
+     "description": "<p><strong>Because the file structure has changed with this release, files from all previous versions of this mod must be removed before installing this version!</strong></p>\n<ul>\n<li><strong>Allow the server and client to run on different machines.</strong> To accomplish this, the following changes were made:\n<ul>\n<li>Moved the client DLL into its own folder (\u201cDanW-LateToTheParty\u201d)</li>\n<li>Log files will now be stored within the new client directory for this mod</li>\n<li>Added server and client checks for an older client DLL still remaining in the \u201cBepInEx\\plugins\u201d directory. If so, show an error when the server or game starts and disable this mod.</li>\n<li>If a \u201clog\u201d directory from older versions of the server files still exist, write warning messages in the server console, but still allow the mod to function</li>\n</ul>\n</li>\n<li>Removed the LateToTheParty endpoint for writing error messages to the server console and will now use the SPT one</li>\n<li>If the map cannot be determined when loot is ready to be destroyed (namely when using Fika), write error messages to the game console and server console and then disable the loot-destruction system</li>\n<li><strong>Bug fix for not being able to disable the loot-ranking system</strong></li>\n<li>Bug fix for allowing SPT 3.9.0</li>\n</ul>\n<p><em>config.json</em> files from the 2.3.1 through 2.5.0 releases are compatible, but you\u2019ll receive warning messages in the server console about trader-inventory changes being disabled.</p>\n",
+     "spt_constraint": "3.9.0",
+     "fika": "unknown",
+     "downloads": 350,
+     "size": null,
+     "link": "https://forge.sp-tarkov.com/mod/download/814/late-to-the-party/2.5.1",
+     "published_at": "2024-07-07T00:44:50.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 4842,
+     "version": "2.4.0",
+     "description": "<ul>\n<li><strong>Updated for SPT-AKI 3.8.0</strong></li>\n<li><strong>Disabled changes to trader inventories.</strong> This will require significant updates to work with the SPT-AKI 3.8.0+ server code.</li>\n<li>Stop using trader enums in the server code</li>\n</ul>\n<p><em>config.json</em> files from the 2.3.1 release are compatible, but you\u2019ll receive warning messages in the server console about trader-inventory changes being disabled.</p>\n",
+     "spt_constraint": "3.8.0",
+     "fika": "unknown",
+     "downloads": 1486,
+     "size": null,
+     "link": "https://forge.sp-tarkov.com/mod/download/814/late-to-the-party/2.4.0",
+     "published_at": "2024-04-04T03:19:23.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 5077,
+     "version": "2.3.1",
+     "description": "<p><strong>Only compatible with SPT-AKI 3.7.4 - 3.7.6</strong></p>\n<ul>\n<li>Added config option to disable trader stock changes for Fence. Fence changes are enabled by default because he still sells unrealistically nice stuff in SPT-AKI 3.7.6.</li>\n<li>Bug fix for constant NRE\u2019s when in the Hideout</li>\n<li>Updated server code per Lint recommendations</li>\n</ul>\n<p><strong>The config.json file from previous releases is NOT compatible.</strong></p>\n",
+     "spt_constraint": "3.7.6",
+     "fika": "unknown",
+     "downloads": 2556,
+     "size": null,
+     "link": "https://forge.sp-tarkov.com/mod/download/814/late-to-the-party/2.3.1",
+     "published_at": "2024-02-12T02:24:32.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 5286,
+     "version": "2.3.0",
+     "description": "<p><strong>Only compatible with SPT-AKI 3.7.4 - 3.7.6</strong></p>\n<ul>\n<li><strong>Added system to turn on switches (i.e. power switches) throughout the raid:</strong>\n<ul>\n<li>A random number of switches will be toggled at random points throughout the raid (configurable). Only switches that players can toggle are eligible.</li>\n<li>Switches that control extract points (i.e. elevator buttons in Labs) will not be allowed to turn on until a certain amount of time has elapsed in the raid, before adjustments are made for Scav runs (600s by default)</li>\n<li>Switches will not be allowed to be turned on if you\u2019re within a certain distance from them (150m by default)</li>\n<li>Just like the systems that open doors and despawn loot, switches that are \u201cmissed\u201d when spawning in late as a Scav will be toggled immediately after you spawn. Audio will be disabled for these switches so it\u2019s less obvious what has changed on the map.</li>\n<li>If a switch is only available to turn on after another one is turned on, that one will be toggled first. If this occurs after the initial switches have been turned on for Scav raids, the first switch won\u2019t be toggled until some time after the prerequisite switch is. The delay is proportional to the distance between the two switches.</li>\n<li>When spawning in late as a Scav, initial switches must be toggled before initial doors are opened (which then allows initial loot to be despawned). This ensures doors that require power will be eligible to be opened (if the power switch is turned on).</li>\n</ul>\n</li>\n<li>Added the factor destroy_loot_during_raid.players_with_loot_factor_for_maps_without_pscavs (0.3 by default) to apply to <strong>fraction_of_players_full_of_loot</strong> for maps that do not allow player Scavs to spawn. This means that (by default) significantly less loot will be despawned throughout Labs raids.</li>\n<li>Reduced only_make_changes_just_after_spawning.time_limit from 30 to 5 seconds because it doesn\u2019t really need to be any longer than that.</li>\n</ul>\n<p><strong>The config.json file from previous releases is NOT compatible.</strong></p>\n<p><strong>NOTE: This release uses the previous code (for SPT-AKI 3.6.1) to change Fence\u2019s inventory, so that will need to be revised now that SPT-AKI 3.7.0+ has fixed some of the issues LTTP addressed back in the 1.2.0 release.</strong></p>\n",
+     "spt_constraint": "3.7.6",
+     "fika": "unknown",
+     "downloads": 3021,
+     "size": null,
+     "link": "https://forge.sp-tarkov.com/mod/download/814/late-to-the-party/2.3.0",
+     "published_at": "2024-01-02T00:12:40.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 5294,
+     "version": "2.2.0",
+     "description": "<p><strong>Only compatible with SPT-AKI 3.7.4 - 3.7.6</strong></p>\n<ul>\n<li><strong>Improved car-extract behavior:</strong>\n<ul>\n<li>The car will now leave at some point during the raid instead of having the chances of it being available reduced based on the time you spawn in.</li>\n<li>Just like in live Tarkov, the car extract will appear in green font after it has been activated (even if you haven\u2019t approached it yet), and it will appear in red font after it leaves.</li>\n<li>The car will not be allowed to leave if you\u2019re within a certain distance of it (150m by default). If the car extract has already been activated, it will be deactivated if you get too close to it so you don\u2019t get a free ride. After this happens, it won\u2019t be allowed to be activated again for a certain amount of time (120s by default).</li>\n</ul>\n</li>\n<li>Added car-extract departures to systems that can be disabled by <strong>only_make_changes_just_after_spawning</strong></li>\n<li>Changed default value of <strong>only_make_changes_just_after_spawning.affected_systems.opening_locked_doors</strong> to <strong>true</strong> because bots can now unlock doors in <a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/1534-questing-bots/\" rel=\"noreferrer noopener\">Questing Bots</a>.</li>\n</ul>\n<p><strong>The config.json file from previous releases is NOT compatible.</strong></p>\n<p><strong>NOTE: This release uses the previous code (for SPT-AKI 3.6.1) to change Fence\u2019s inventory, so that will need to be revised now that SPT-AKI 3.7.0+ has fixed some of the issues LTTP addressed back in the 1.2.0 release.</strong></p>\n",
+     "spt_constraint": "3.7.6",
+     "fika": "unknown",
+     "downloads": 306,
+     "size": null,
+     "link": "https://forge.sp-tarkov.com/mod/download/814/late-to-the-party/2.2.0",
+     "published_at": "2023-12-31T03:37:49.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 5309,
+     "version": "2.1.0",
+     "description": "<p><strong>Only compatible with SPT-AKI 3.7.4 - 3.7.6</strong></p>\n<ul>\n<li>Allow keycard doors and car trunks to be unlocked, opened, and closed throughout the raid (and at the beginning of Scav raids)</li>\n<li>If loot is in a trunk, open the trunk before destroying it. If the trunk is locked, do not destroy it.</li>\n<li>Bug fix for constant exceptions if destroy_loot_during_raid.loot_ranking.enabled=false&lt;br&gt;</li>\n</ul>\n<p>&lt;br&gt;</p>\n<p><em>config.json</em> files from the 2.0.0 release are compatible, but destroy_loot_during_raid.nearby_interactive_object_search_distance will always be 0.75, and destroy_loot_during_raid.only_search_for_nearby_trunks will always be true.</p>\n<p><strong>NOTE: This release uses the previous code (for SPT-AKI 3.6.1) to change Fence\u2019s inventory, so that will need to be revised now that SPT-AKI 3.7.0+ has fixed some of the issues LTTP addressed back in the 1.2.0 release.</strong></p>\n",
+     "spt_constraint": "3.7.6",
+     "fika": "unknown",
+     "downloads": 331,
+     "size": null,
+     "link": "https://forge.sp-tarkov.com/mod/download/814/late-to-the-party/2.1.0",
+     "published_at": "2023-12-28T01:52:15.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 5429,
+     "version": "2.0.0",
+     "description": "<p><strong>Only compatible with SPT-AKI 3.7.4 - 3.7.6</strong></p>\n<ul>\n<li><strong>Updated required version of SPT-AKI to 3.7.4</strong></li>\n<li>The following <strong>changes for Scav raids are now managed by base SPT</strong>:\n<ul>\n<li>Spawning into raids late</li>\n<li>Reducing the minimum time needed to stay in the raid to get a \u201cSurvived\u201d status</li>\n<li>Updating train times</li>\n<li>Removing missed bot waves</li>\n<li>If destroy_loot_during_raid.enabled=false, reducing starting loot.</li>\n<li>Client-side raid-time calculations</li>\n</ul>\n</li>\n<li>Added an option to force you to spawn late 100% of the time as a Scav (enabled by default)</li>\n<li>Caching original escape times is now done slightly later as you load into the raid</li>\n<li>Removed all code for features now managed by base SPT</li>\n<li>Removed enums from server code because they cause issues with development SPT builds</li>\n<li>Fixed incorrect type name Preset to correct name IPreset in server code</li>\n<li>Bug fix for the mod trying to store null items as loot picked-up or dropped by bots</li>\n</ul>\n<p><strong>The following changes for Scav raids can still be done by Late to the Party:</strong></p>\n<ul>\n<li>Initial setup with doors opened and loot removed (in a more realistic manner than base SPT)</li>\n<li>Reduced vehicle extract chances</li>\n<li>Reduced boss spawn rates</li>\n<li>PMC-conversion chances change over the course of the raid (disabled by default)</li>\n</ul>\n<p><strong>The config.json file from previous releases is NOT compatible.</strong></p>\n<p><strong>NOTE: This release uses the previous code (for SPT-AKI 3.6.1) to change Fence\u2019s inventory, so that will need to be revised now that SPT-AKI 3.7.0+ has fixed some of the issues LTTP addressed back in the 1.2.0 release.</strong></p>\n",
+     "spt_constraint": "3.7.6",
+     "fika": "unknown",
+     "downloads": 1035,
+     "size": null,
+     "link": "https://forge.sp-tarkov.com/mod/download/814/late-to-the-party/2.0.0",
+     "published_at": "2023-12-07T03:00:06.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 5885,
+     "version": "1.3.5",
+     "description": "<ul>\n<li>Updated for SPT-AKI 3.7.1</li>\n<li>Bug fix for not being able to enter a raid after leaving one while it was loading</li>\n</ul>\n<p><em>config.json</em> files from the 1.3.1 through 1.3.4 releases are fully compatible. <em>config.json</em> files from the 1.2.2 and 1.3.0 releases are compatible, but <strong>destroy_loot_during_raid.exclusion_radius_bots</strong> will always be 10m.</p>\n<p><strong>NOTE: This release uses the previous code (for SPT-AKI 3.6.1) to change Fence\u2019s inventory, so that will need to be revised now that SPT-AKI 3.7.0+ has fixed some of the issues LTTP addressed back in the 1.2.0 release.</strong></p>\n",
+     "spt_constraint": "3.7.1",
+     "fika": "unknown",
+     "downloads": 1928,
+     "size": null,
+     "link": "https://forge.sp-tarkov.com/mod/download/814/late-to-the-party/1.3.5",
+     "published_at": "2023-10-15T03:40:30.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "3.0.0",
+   "spt_constraint": "~4.0.0",
+   "all_spt_constraints": [
+    "3.11.2",
+    "3.7.1",
+    "3.7.6",
+    "3.8.0",
+    "3.9.0",
+    "~3.10.0",
+    "~3.11.0",
+    "~4.0.0"
+   ],
+   "dependencies": [
+    {
+     "id": 827,
+     "name": "Waypoints - Expanded Navmesh",
+     "slug": "waypoints-expanded-navmesh",
+     "constraint": "",
+     "url": "https://forge.sp-tarkov.com/mod/827/waypoints-expanded-navmesh"
+    }
+   ],
+   "all_dependencies": [
+    {
+     "id": 827,
+     "name": "Waypoints - Expanded Navmesh",
+     "slug": "waypoints-expanded-navmesh",
+     "constraint": "",
+     "url": "https://forge.sp-tarkov.com/mod/827/waypoints-expanded-navmesh"
+    }
+   ],
+   "published_at": "2023-03-27T02:30:00.000000Z",
+   "updated_at": "2026-08-09T03:29:47.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge"
+  },
+  {
    "id": 820,
    "hub_id": 1107,
    "guid": "xyz.drakia.doorrandomizer",
@@ -28113,209 +28357,6 @@
    "all_dependencies": [],
    "published_at": "2023-03-30T17:30:00.000000Z",
    "updated_at": "2026-08-03T06:02:26.000000Z",
-   "flags": {
-    "contains_ads": false,
-    "contains_ai_content": false,
-    "ai_disclosure": "",
-    "cheat_notice": false,
-    "profile_binding_notice": false
-   },
-   "origin": "forge"
-  },
-  {
-   "id": 814,
-   "hub_id": 1099,
-   "guid": null,
-   "name": "Late to the Party",
-   "slug": "late-to-the-party",
-   "teaser": "Make your SPT experience closer to live Tarkov with loot disappearing, doors opening, switches being turned on, and car extracts leaving throughout the raid. Bosses will also be less likely to spawn during Scav raids.",
-   "description_html": "<p><strong>REQUIRES: <a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/1119-waypoints-expanded-bot-patrols-and-navmesh/\" rel=\"noreferrer noopener\">Waypoints</a> (1.7.0 or later)</strong></p>\n<p>If you use <strong>Fika</strong>, an additional plugin is required: <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/dwesterwick/SPTLateToTheParty/releases/download/2.9.0/DanW-LateToThePartyFikaSync.zip\" rel=\"noreferrer noopener\">LateToThePartyFikaSync</a></p>\n<p>Partially compatible with: <a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/2593-lockable-doors/\" rel=\"noreferrer noopener\">Lockable Doors</a> (loot may despawn behind doors you lock during the raid)</p>\n<p>If you use both <a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/1534-questing-bots/\" rel=\"noreferrer noopener\">Questing Bots</a> and <a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/1096-looting-bots/\" rel=\"noreferrer noopener\">Looting Bots</a>, setting <strong>only_make_changes_just_after_spawning.enabled=true</strong> in <em>config.json</em> is highly recommended.</p>\n<p>This mod makes the the following changes to your SPT experience:</p>\n<ul>\n<li>Loot (including on dead bots) will be gradually removed throughout the raid to simulate other players taking it.</li>\n<li>Doors will randomly open and close throughout the raid to simulate players moving through the map (thanks to help from DrakiaXYZ!). If you\u2019re lucky, locked doors may be opened for you\u2026</li>\n<li>Switches will be toggled throughout the raid to simulate players turning on power switches, using extracts, etc.</li>\n<li>The car extract may leave at some point during the raid</li>\n<li>If you spawn into the map late as a Scav, bosses are less likely to spawn.</li>\n</ul>\n<p>This mod is highly customizable by modifying the <em>config.json</em> file. Here are the settings you can change:</p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Scav Raid Adjustments</div>\n<div class=\"tab-content\"><ul>\n<li>scav_raid_adjustments.always_spawn_late: If there should be a 100% chance that you spawn into the raid late as a Scav for all maps.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Loot Despawning</div>\n<div class=\"tab-content\"><ul>\n<li><strong>destroy_loot_during_raid.enabled</strong>: If the mod is allowed to remove loot throughout the raid. If you spawn into the raid late, loot will be immediately removed from the map until it reaches the target amount for the fraction of time remaining in the raid. This is <strong>true</strong> by default.</li>\n<li><strong>destroy_loot_during_raid.exclusion_radius</strong>: The radius (in meters) from you within which loot is not allowed to be despawned. By default, this is set to 40 meters.</li>\n<li><strong>destroy_loot_during_raid.exclusion_radius_bots</strong>: The radius (in meters) from any bot within which loot is not allowed to be despawned. By default, this is set to 25 meters.</li>\n<li><strong>destroy_loot_during_raid.nearby_interactive_object_search_distance</strong>: The maximum distance (in meters) to search for nearby interactive objects that may be blocking access to the loot item. By default, this is set to <strong>0.75</strong> meters.</li>\n<li><strong>destroy_loot_during_raid.only_search_for_nearby_trunks</strong>: If this is <strong>true</strong>, only trunks will be considered when searching for nearby interactive objects that may be blocking access to the loot item. If this is <strong>false</strong>, all interactive objects (doors, keycard doors, and trunks) will be considered.</li>\n<li><strong>destroy_loot_during_raid.avg_slots_per_player</strong>: The typical number of total \u201cslots\u201d worth of loot with which a player will extract. This does not include the starting items for the player. This is <strong>60</strong> by default.</li>\n<li><strong>destroy_loot_during_raid.players_with_loot_factor_for_maps_without_pscavs</strong>: If the map does not allow player Scavs to spawn, this factor will be applied to <strong>fraction_of_players_full_of_loot</strong> to reduce the amount of loot that can be destroyed throughout the raid. This is <strong>0.3</strong> by default.</li>\n<li><strong>destroy_loot_during_raid.min_loot_age</strong>: Loot must be on the map (either loose or in a container) for at least this long (in seconds) before it\u2019s allowed to be despawned. This does not apply to loot initially generated on the map. This prevents loot on bots from being destroyed too quickly after they\u2019re killed, and it prevents items you drop from being despawned to quickly (if the mod settings allow this to happen).</li>\n<li><strong>destroy_loot_during_raid.destruction_event_limits.rate</strong>: The maximum rate at which items are allowed to be despawned (in items/s). This is ignored when initially despawning loot at the beginning of Scav raids.</li>\n<li><strong>destroy_loot_during_raid.destruction_event_limits.items</strong>: The maximum number of individual items that can be despawned at the same time. Child items (i.e. weapon attachments) count as separate individual items. This is <strong>30</strong> by default.</li>\n<li><strong>destroy_loot_during_raid.destruction_event_limits.slots</strong>: The maximum number of slots containing items that can be despawned at the same time. For example, a hand drill is 6 slots. This is <strong>50</strong> by default.</li>\n<li><strong>destroy_loot_during_raid.map_traversal_speed_mps</strong>: The rate at which a typical player traverses the map (in m/s). This should not be the maximum speed a player can run in an open area because not all players are rushing Resort, Dorms, etc. at the beginning of every raid. Increase this value to despawn loot in map hot-spots (i.e. Resort) earlier in the raid. With the default setting, you have 2-3 min to get to Resort before loot can despawn there.</li>\n<li><strong>destroy_loot_during_raid.min_distance_traveled_for_update</strong>: The distance you need to travel (in meters) before the mod decides if loot should be despawned (from the last time loot was despawned). This shouldn\u2019t be changed in most cases.</li>\n<li><strong>destroy_loot_during_raid.min_time_before_update_ms</strong>: The minimum time that must elapse (in milliseconds) after loot was despawned before the mod is allowed to despawn loot again. If you\u2019re having performance issues, try increasing this.</li>\n<li><strong>destroy_loot_during_raid.max_time_before_update_ms</strong>: The maximum time that elapses (in milliseconds) after loot was despawned before the mod checks if loot should be despawned again.</li>\n<li><strong>destroy_loot_during_raid.max_calc_time_per_frame_ms</strong>: The maximum amount of time (in milliseconds) the mod is allowed to run loot-despawning procedures per frame. By default this is set to 5ms, and delays of &lt;15ms are basically imperceptible.</li>\n<li><strong>destroy_loot_during_raid.max_time_without_destroying_any_loot</strong>: The maximum time (in seconds) after loot was despawned before the mod forces at least one piece of loot to despawn. This is included for compatibility with Kobrakon\u2019s Immersive Raids mod. By default, this is set to 60 seconds.</li>\n<li><strong>destroy_loot_during_raid.ignore_items_dropped_by_player.enabled</strong>: If items dropped by the player should not be allowed to be despawned. This allows you to effectively \u201chide\u201d items and return for them later. This is <strong>true</strong> by default.</li>\n<li><strong>destroy_loot_during_raid.ignore_items_dropped_by_player.only_items_brought_into_raid</strong>: If items dropped by the player should not be allowed to be despawned only if they\u2019re not FIR. Items in your Scav character\u2019s starting inventory are not marked as FIR, just like your PMC\u2019s. This is <strong>false</strong> by default.</li>\n<li><strong>destroy_loot_during_raid.ignore_items_on_dead_bots.enabled</strong>: If the mod should not be allowed to despawn items on dead bots. This is <strong>true</strong> by default.</li>\n<li><strong>destroy_loot_during_raid.ignore_items_on_dead_bots.only_if_you_killed_them</strong>: If the mod should not be allowed to despawn items on dead bots only if you killed the bot. If you did not kill the bot, items in its inventory are still eligible for despawning. This is <strong>true</strong> by default.</li>\n<li><strong>destroy_loot_during_raid.excluded_parents</strong>: Items that are children of these parent-item ID\u2019s will not be allowed to despawn. <strong>Entries in this array should NOT be removed, or the mod may not work properly.</strong></li>\n<li><strong>loot_multipliers</strong>: [time_remaining_factor, reduction_factor] pairs describing the fraction of the initial loot pool that should be remaining on the map based on the fraction of time remaining in the raid. A value of \u201c1\u201d means match the original loot amount.</li>\n<li><strong>fraction_of_players_full_of_loot</strong>: [time_remaining_factor, players_full_of_loot_fraction] pairs describing the fraction of the maximum players allowed on the map who will be full of loot based on the fraction of time remaining in the raid. A value of \u201c1\u201d in the second column means that the entire starting (full) lobby of players will have looted <strong>destroy_loot_during_raid.avg_slots_per_player</strong> slots worth of loot by that time. This value can be greater than one to include player Scavs.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Loot Ranking</div>\n<div class=\"tab-content\"><p>The loot-ranking system uses the following logic to determine the \u201cvalue\u201d of each item:</p>\n<ul>\n<li>\n<p>Quest items and items of type \u201cNode\u201d are excluded from the loot-ranking data because the mod will never despawn them.</p>\n</li>\n<li>\n<p>The cost of each item is the maximum value for it found in <em>handbook.json</em> and <em>prices.json</em>.</p>\n</li>\n<li>\n<p>To determine the cost-per-slot of an item, its cost (determined above) is divided by its size. Items that can be directly equipped (rigs, backpacks, weapons, etc.) are treated as having a size of 1.</p>\n</li>\n<li>\n<p>If the item is a weapon, the mod first tries finding the most desirable version of it (in terms of size and weight) available from traders. If no traders sell it, the mod will then find the most desirable preset for the weapon. If there are no presets for the weapon (as may be the case for mod-generated weapons), one with the cheapest and fewest parts possible will be generated.</p>\n</li>\n<li>\n<p>When the mod determines the size of a weapon, it\u2019s folded if possible.</p>\n</li>\n<li>\n<p><strong>destroy_loot_during_raid.loot_ranking.enabled</strong>: If loot should be ranked and destroyed in order of its calculated \u201cvalue\u201d (which is more complicated than simply cost).</p>\n</li>\n<li>\n<p><strong>destroy_loot_during_raid.loot_ranking.randomness</strong>: The amount of \u201crandomness\u201d (defined as a percentage of the total loot-value range in the map) to apply when destroying ranked loot. A value of 0 is like playing in a lobby full of cheaters, and loot will be despawned exactly in order of its calculated value. A value of 100 means that the worst loot in the map has a small chance of despawning first, and vice versa. A value of &gt;&gt;100 is like playing in a lobby full of noobs who have no idea what to pick up (in which case you might as well simply disable loot ranking). This is <strong>200%</strong> by default.</p>\n</li>\n<li>\n<p><strong>destroy_loot_during_raid.loot_ranking.top_value_retain_count</strong>: The number of highest-value items (after applying <strong>destroy_loot_during_raid.loot_ranking.randomness</strong>) that will be prevented from being despawned each time loot is despawned. This ensures you always have a small chance of finding high-value items regardless of how late you spawn into the raid. This is <strong>5</strong> by default.</p>\n</li>\n<li>\n<p><strong>destroy_loot_during_raid.loot_ranking.alwaysRegenerate</strong>: If the loot-ranking data is forced to generate every time the game starts. If you tend to check out new mods that may adjust item values, add new items, etc., you should make this <strong>true</strong> to ensure the loot-ranking data is valid for your specific SPT configuration. If you tend to install a few mods and stick with them, it should be safe to leave this at <strong>false</strong>. If any of the following loot-ranking parameters are changed, the loot-ranking data will be forced to regenerate.</p>\n</li>\n<li>\n<p><strong>destroy_loot_during_raid.loot_ranking.child_item_limits.count:</strong> The maximum number of items and child items allowed to be despawned at one time. This is to prevent full backpacks from being despawned instantly.</p>\n</li>\n<li>\n<p><strong>destroy_loot_during_raid.loot_ranking.child_item_limits.total_weight:</strong> The maximum combined weight of an item and its child items above which they will not be allowed to despawn. This is to prevent full backpacks from being despawned instantly. If the item has no child items, this limit is ignored.</p>\n</li>\n<li>\n<p><strong>destroy_loot_during_raid.loot_ranking.weighting.default_inventory_id</strong>: The ID of the default inventory for the player, which is needed to see what items are allowed to be equipped. <strong>This should NOT be changed, or the mod may not work properly.</strong></p>\n</li>\n<li>\n<p><strong>destroy_loot_during_raid.loot_ranking.weighting.cost_per_slot</strong>: How much the calculated loot-ranking value of each item should be affected by its cost-per-slot. If the item can be directly equipped (backpacks, weapons, helmets, etc.), it\u2019s treated as occupying a single slot. Otherwise, the mod takes the price of the item (the maximum found in <em>handbook.json</em> and <em>prices.json</em>) and divides that by its size (<em>length</em> * <em>width</em>) to determine its cost-per-slot.</p>\n</li>\n<li>\n<p><strong>destroy_loot_during_raid.loot_ranking.weighting.weight</strong>: How much the calculated loot-ranking value of each item should be affected by its weight.</p>\n</li>\n<li>\n<p><strong>destroy_loot_during_raid.loot_ranking.weighting.size</strong>: How much the calculated loot-ranking value of each item should be affected by its size (<em>length</em> * <em>width</em>).</p>\n</li>\n<li>\n<p><strong>destroy_loot_during_raid.loot_ranking.weighting.gridSize</strong>: How much the calculated loot-ranking value of each item should be affected by the number of grid slots it has (for rigs, backpacks, etc.).</p>\n</li>\n<li>\n<p><strong>destroy_loot_during_raid.loot_ranking.weighting.max_dim</strong>: How much the calculated loot-ranking value of each item should be affected by its maximum dimension (either <em>length</em> or <em>width</em>).</p>\n</li>\n<li>\n<p><strong>destroy_loot_during_raid.loot_ranking.weighting.armor_class</strong>: How much the calculated loot-ranking value of each item should be affected by its armor class (which is 0 if not applicable).</p>\n</li>\n<li>\n<p><strong>destroy_loot_during_raid.loot_ranking.weighting.parents.xxx.name</strong>: If <strong>xxx</strong> is a parent of the item, its calculated loot-ranking value has an additional value applied to it. For each entry in the <strong>parents</strong> dictionary, <strong>name</strong> simply exists for readability. You can make this whatever you want to help you remember what the ID (key) for the dictionary is.</p>\n</li>\n<li>\n<p><strong>destroy_loot_during_raid.loot_ranking.weighting.parents.xxx.weighting</strong>: If <strong>xxx</strong> is a parent of the item, its calculated loot-ranking value is adjusted by this value.</p>\n</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Loot Accessibility Checking</div>\n<div class=\"tab-content\"><p>The mod uses the following process to determine which loot is accessible:</p>\n<ol>\n<li>If the loot was previously determined to be accessible, it will always be considered accessible for the rest of the raid.</li>\n<li>If the loot is in a locked container, it\u2019s considered inaccessible.</li>\n<li>If <strong>destroy_loot_during_raid.check_loot_accessibility.enabled=false</strong>, all other loot is considered accessible, and none of the other conditions below are checked.</li>\n<li>If the loot appeared on the map after the raid started, assume it\u2019s<br />\naccessible. That means it was dropped by the player, is on a dead bot, or is in an airdrop.</li>\n<li>If the loot is more than <strong>destroy_loot_during_raid.check_loot_accessibility.exclusion_radius</strong> meters from any locked/inaccessible doors, it\u2019s considered accessible.</li>\n<li>If the accessibility of the loot is still unknown, the mod finds the nearest location on the map from the following:\n<ul>\n<li>Spawn points (both Scav and PMC)</li>\n<li>Human players</li>\n<li>Alive bots</li>\n</ul>\n</li>\n<li>If the loot is within <strong>destroy_loot_during_raid.check_loot_accessibility.max_path_search_distance</strong> meters of any of the locations above, the mod checks if the one nearest to the loot item is within <strong>destroy_loot_during_raid.check_loot_accessibility.navmesh_search_max_distance_player</strong> meters from the NavMesh. If either check fails, the mod assumes the loot is inaccessible.</li>\n<li>The mod checks if the loot is within <strong>destroy_loot_during_raid.check_loot_accessibility.navmesh_search_max_distance_loot</strong> meters from the NavMesh. If not, the mod assumes the loot is inaccessible.</li>\n<li>The mod tries finding a path via the NavMesh from the selected location in the list above to the loot. If it fails to find a complete path, the mod assumes the loot is inaccessible.</li>\n<li>If a complete path is found, the mod checks if obstacles exist between the end of the path and the loot item via raytracing. Obstacles that have a height below <strong>destroy_loot_during_raid.check_loot_accessibility.navmesh_obstacle_min_height</strong> meters or have an overall (bounds) volume below <strong>destroy_loot_during_raid.check_loot_accessibility.navmesh_obstacle_min_volume</strong> cubic meters are ignored. Foliage and bots are also ignored. If there are any remaining obstacles detected via raytracing that aren\u2019t ignored, the mod assumes the loot is inaccessible.</li>\n<li>If all checks above pass, the loot is considered accessible.</li>\n</ol>\n<ul>\n<li><strong>destroy_loot_during_raid.check_loot_accessibility.enabled</strong>: Check the accessibility of loot to determine if it\u2019s allowed to be despawned. If this is <strong>false</strong>, all loot will be considered accessible unless it\u2019s in a locked container. See the description below about how accessibility is determined. <strong>If you\u2019re having performance issues, try disabling this.</strong></li>\n<li><strong>destroy_loot_during_raid.check_loot_accessibility.exclusion_radius</strong>: All loot that is at least this distance (in meters) away from locked or inaccessible doors will automatically be assumed to be accessible. The larger this radius is, the more false negatives are likely to occur when determining loot accessibility, and the more computation time will be required. However, a setting that is too small will result in false positives if the loot is positioned within a locked room but far from the door. This is <strong>25</strong> by default and should work for larger locked rooms like the KIBA store in Interchange.</li>\n<li><strong>destroy_loot_during_raid.check_loot_accessibility.max_path_search_distance</strong>: Do not check accessibility for loot that is within the <strong>destroy_loot_during_raid.check_loot_accessibility.exclusion_radius</strong> of a locked door but more than this distance (in meters) from you, a bot, or a spawn point. If this value is small, the accessibility of some loot will never be checked by the mod unless you or a bot walk near it, so it will never be eligible for despawning. If this value is large, most (if not all) loot will be checked, but it may be computationally expensive.</li>\n<li><strong>destroy_loot_during_raid.check_loot_accessibility.navmesh_search_max_distance_player</strong>: If the mod needs to check if loot is accessible from a location on the map (spawn point, player position, etc.), that location must be within this distance (in meters) from the NavMesh. If this value is small, the accessibility of some loot will never be checked by the mod, so it will never be eligible for despawning. If this value is large, there may be a small performance impact. This is <strong>10</strong> by default.</li>\n<li><strong>destroy_loot_during_raid.check_loot_accessibility.navmesh_search_max_distance_loot</strong>: If the mod needs to check if loot is accessible, it must be within this distance (in meters) from the NavMesh. If this value is small, the mod will not be able to calculate a NavMesh path to it, so it will never be eligible for despawning. If this value is large, the mod will be more likely to try and access the loot through floors and ceilings (thanks to a Unity quirk), and there may be a performance impact. This is <strong>2</strong> by default, and values much larger than this are not recommended.</li>\n<li><strong>destroy_loot_during_raid.check_loot_accessibility.navmesh_height_offset_complete</strong>: When a complete NavMesh path is found to access loot, the points in the path will then be offset to be this distance (in meters) higher. This is done to make the path easier to see when <strong>debug.loot_path_visualization.enabled=true</strong>, and it reduces the number of obstacles that may exist between the final NavMesh point and the loot item. This is <strong>1.25</strong> by default, which is approximately shoulder-level.</li>\n<li><strong>destroy_loot_during_raid.check_loot_accessibility.navmesh_height_offset_incomplete</strong>: When a valid NavMesh path cannot found to access loot, the points in the path will then be offset to be this distance (in meters) higher. This is <strong>1</strong> by default, and it\u2019s done to make the path easier to see when <strong>debug.loot_path_visualization.enabled=true</strong>.</li>\n<li><strong>destroy_loot_during_raid.check_loot_accessibility.navmesh_obstacle_min_height</strong>: Obstacles that are less than this value in height (in meters) will be ignored when checking the accessibility of loot. Obstacles are detected via raycasting from the last NavMesh point in a complete path to the loot item. This is <strong>0.9</strong> by default.</li>\n<li><strong>destroy_loot_during_raid.check_loot_accessibility.navmesh_obstacle_min_volume</strong>: Obstacles that have an overall volume below this value (in cubic meters) will be ignored when checking the accessibility of loot. The volume is determine by the overall bounds of the object, which can be visualized via <strong>debug.loot_path_visualization.enabled=true</strong>, not the actual volume of the object mesh. Obstacles are detected via raycasting from the last NavMesh point in a complete path to the loot item. This is <strong>2</strong> by default. Values below 1 are not recommended because some loot in filing cabinets will be considered inaccessible by the mod.</li>\n<li><strong>destroy_loot_during_raid.check_loot_accessibility.max_calc_time_per_frame_ms</strong>: The maximum amount of time (in milliseconds) the mod is allowed to toggle NavMesh obstacles (namely for locked doors) per frame. By default this is set to 4ms, and delays of &lt;15ms are basically imperceptible.</li>\n<li><strong>destroy_loot_during_raid.check_loot_accessibility.door_obstacle_update_time</strong>: How frequently (in seconds) the mod checks if any NavMesh obstacles (namely for doors) should be toggled. This is <strong>2</strong> by default.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Opening/Closing/Unlocking Doors</div>\n<div class=\"tab-content\"><ul>\n<li><strong>open_doors_during_raid.enabled</strong>: If the mod can open/close doors throughout the raid. This is <strong>true</strong> by default.</li>\n<li><strong>open_doors_during_raid.can_open_locked_doors</strong>: If the mod is allowed to open locked doors. This is <strong>true</strong> by default.</li>\n<li><strong>open_doors_during_raid.can_breach_doors</strong>: If the mod is allowed to open doors that can only be breached. This is <strong>true</strong> by default.</li>\n<li><strong>open_doors_during_raid.exclusion_radius</strong>: The radius (in meters) from you within which doors are not allowed to be opened/closed. By default, this is set to 40 meters.</li>\n<li><strong>open_doors_during_raid.min_raid_ET</strong>: The minimum time (in seconds) that must elapse in the raid (not necessarily from the time you spawn into the raid, namely as a Scav) before the mod is allowed to begin opening/closing doors. By default, this is set to 180 seconds.</li>\n<li><strong>open_doors_during_raid.min_raid_time_remaining</strong>: The minimum time (in seconds) that must be remaining in the raid for the mod to be allowed to open/close doors. By default, this is 300 seconds.</li>\n<li><strong>open_doors_during_raid.time_between_door_events</strong>: The time (in seconds) that must elapse after the mod opens/closes doors before it\u2019s allowed to open/close doors again. By default, this is 60 seconds.</li>\n<li><strong>open_doors_during_raid.percentage_of_doors_per_event</strong>: The percentage of eligible doors on the map that should be opened or closed per event. By default, this is 3%.</li>\n<li><strong>open_doors_during_raid.chance_of_unlocking_doors</strong>: The chance (in percent) that the mod will be able to unlock a door when trying to open it. By default, this is set to 50%.</li>\n<li><strong>open_doors_during_raid.chance_of_closing_doors</strong>: The chance (in percent) that the mod will close a door instead of opening a door. By default, this is set to 15%.</li>\n<li><strong>open_doors_during_raid.max_calc_time_per_frame_ms</strong>: The maximum amount of time (in milliseconds) the mod is allowed to run door-event procedures per frame. By default this is set to 3ms, and delays of &lt;15ms are basically imperceptible.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Turning On Switches</div>\n<div class=\"tab-content\"><ul>\n<li><strong>toggle_switches_during_raid.enabled</strong>: If the mod can turn on switches throughout the raid. This is <strong>true</strong> by default.</li>\n<li><strong>toggle_switches_during_raid.time_between_events_ms</strong>: The mod will check for switches to toggle at regular intervals of this many milliseconds throughout the raid (<strong>3000</strong> ms by default).</li>\n<li><strong>toggle_switches_during_raid.exclusion_radius</strong>: Switches will not be allowed to be toggled if they\u2019re within this distance (in meters) of you. This is <strong>75</strong> m by default.</li>\n<li><strong>toggle_switches_during_raid.min_raid_ET_for_exfil_switches</strong>: If a switch controls the ability for players to use extraction points (i.e. the power switch on Customs or elevator buttons on Labs), it will not be allowed to be toggled until this many seconds has elapsed since the beginning of the raid (before its shortened for Scav runs). This is <strong>600</strong> s by default.</li>\n<li><strong>toggle_switches_during_raid.delay_after_pressing_prereq_switch_s_per_m</strong>: After switches have been initially toggled for Scav raids, the mod will not toggle any switches if prerequisite switches must be toggled before them (i.e. the elevator power switches on Labs). In this case, the mod won\u2019t attempt to toggle the switch until a certain amount of time has elapsed after the prerequisite switch is toggled. This delay is calculated using this parameter (in seconds/meter) and the distance between the switches. The purpose of this delay is to simulate the time needed for a player to toggle the prerequisite switch and then travel to the first switch. This is <strong>1</strong> s/m by default.</li>\n<li><strong>toggle_switches_during_raid.raid_fraction_when_toggling.min/max</strong>: The minimum and maximum fractions of the overall raid time (before they\u2019re reduced for Scav runs) that switches are allowed to be toggled.</li>\n<li><strong>toggle_switches_during_raid.fraction_of_switches_to_toggle.min/max</strong>: The minimum and maximum fractions of switches that will be toggled throughout the raid. These values are fractions of the total number of switches on the map that can be toggled by players.</li>\n<li><strong>toggle_switches_during_raid.max_calc_time_per_frame_ms</strong>: The maximum amount of time (in milliseconds) the mod is allowed to run switch-toggling procedures per frame. By default this is set to <strong>3ms</strong>, and delays of &lt;15ms are basically imperceptible.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Bot Spawning</div>\n<div class=\"tab-content\"><ul>\n<li><strong>adjust_bot_spawn_chances.enabled</strong>: If the mod is allowed to change bot spawn-chance settings. This is <strong>true</strong> by default.</li>\n<li><strong>adjust_bot_spawn_chances.adjust_bosses</strong>: If the mod is allowed to reduce boss spawn chances based on the time you spawn into the raid. This is <strong>true</strong> by default.</li>\n<li><strong>adjust_bot_spawn_chances.excluded_bosses</strong>: The names of bot types that should not be included when changing boss spawn chances. <strong>Entries in this array should NOT be removed, or the mod may not work properly.</strong></li>\n<li><strong>boss_spawn_chance_multipliers</strong>: [time_remaining_factor, reduction_factor] pairs describing how the boss-spawn chances should change based on the fraction of time remaining in the raid. A value of \u201c1\u201d means match the original setting.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-8\" class=\"tab-panel\"><div class=\"tab-title\">VEX Departures</div>\n<div class=\"tab-content\"><ul>\n<li><strong>car_extract_departures.enabled</strong>: If the mod is allowed to make the car extract leave at some point during the raid.</li>\n<li><strong>car_extract_departures.countdown_time</strong>: The countdown-timer length (in seconds) before the car extract leaves. By default, this is <strong>60</strong> s, which is the same as base EFT.</li>\n<li><strong>car_extract_departures.delay_after_countdown_reset</strong>: If the countdown timer is reset because you come too close to the car, the car won\u2019t be allowed to leave again for this many seconds (<strong>120</strong> s by default). This is to prevent the car extract from constantly cycling between enabled and disabled if you keep getting too close and then far enough away from it.</li>\n<li><strong>car_extract_departures.exclusion_radius</strong>: The car extract will only be allowed to depart if you\u2019re more than this distance (in meters) away from it (<strong>150</strong> m by default). This minimizes the chances of you seeing it leave without a bot leaving with it.</li>\n<li><strong>car_extract_departures.exclusion_radius_hysteresis</strong>: If the car extract has been activated by this mod, it will be deactivated if you come within this distance (as a fraction of <strong>car_extract_departures.exclusion_radius</strong>) of it. This is to prevent the car from leaving by itself when you\u2019re near it, and it prevents you from possibly getting a free ride. This is <strong>0.9</strong> by default.</li>\n<li><strong>car_extract_departures.chance_of_leaving</strong>: The chance (in percent) that the car will leave at some point during the raid.</li>\n<li><strong>car_extract_departures.raid_fraction_when_leaving.min/max</strong>: The minimum and maximum fractions of the overall raid length (before it\u2019s shortened for Scav raids) between which the car may leave. For example, if min=0.25 and max=0.75, the car will be allowed to leave between 10 and 30 minutes remaining in a 40-min Customs raid. If you spawn into the raid as a Scav later than the time randomly selected for the car to depart, it will depart immediately.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-9\" class=\"tab-panel\"><div class=\"tab-title\">Only Make Changes Just after Spawning</div>\n<div class=\"tab-content\"><ul>\n<li><strong>only_make_changes_just_after_spawning.enabled</strong>: Only allow changes to be made to <strong>only_make_changes_just_after_spawning.affected_systems</strong> for <strong>only_make_changes_just_after_spawning.time_limit</strong> seconds after you spawn into the raid. **This is highly recommend if you use <a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/1534-questing-bots/\" rel=\"noreferrer noopener\">Questing Bots</a> and <a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/1096-looting-bots/\" rel=\"noreferrer noopener\">Looting Bots</a>.**If you\u2019re having performance issues, try enabling this.</li>\n<li><strong>only_make_changes_just_after_spawning.time_limit</strong>: The number of seconds that changes are allowed to be made by <strong>only_make_changes_just_after_spawning.affected_systems</strong> after you spawn into the raid.</li>\n<li><strong>only_make_changes_just_after_spawning.affected_systems.loot_destruction</strong>: If loot destruction should only occur for <strong>only_make_changes_just_after_spawning.time_limit</strong> seconds after you spawn into the raid.</li>\n<li><strong>only_make_changes_just_after_spawning.affected_systems.opening_unlocked_doors</strong>: If unlocked doors should only be opened for <strong>only_make_changes_just_after_spawning.time_limit</strong> seconds after you spawn into the raid.</li>\n<li><strong>only_make_changes_just_after_spawning.affected_systems.opening_locked_doors</strong>: If locked doors should only be opened for <strong>only_make_changes_just_after_spawning.time_limit</strong> seconds after you spawn into the raid.</li>\n<li><strong>only_make_changes_just_after_spawning.affected_systems.closing_doors</strong>: If doors should only be closed for <strong>only_make_changes_just_after_spawning.time_limit</strong> seconds after you spawn into the raid.</li>\n<li><strong>only_make_changes_just_after_spawning.affected_systems.car_departures</strong>: If car extracts are allowed to depart after <strong>only_make_changes_just_after_spawning.time_limit</strong> seconds after you spawn into the raid.</li>\n<li><strong>only_make_changes_just_after_spawning.affected_systems.toggling_switches</strong>: If switches are allowed to be toggled after <strong>only_make_changes_just_after_spawning.time_limit</strong> seconds after you spawn into the raid.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-10\" class=\"tab-panel\"><div class=\"tab-title\">Debugging Options</div>\n<div class=\"tab-content\"><ul>\n<li><strong>debug.enabled</strong>: Enable debug mode.</li>\n<li><strong>debug.loot_path_visualization.enabled</strong>: Enable visualization of loot items and NavMesh pathing to them to view which ones the mod thinks are accessible. Most visuals require <strong>destroy_loot_during_raid.check_loot_accessibility.enabled=true</strong>.</li>\n<li><strong>debug.loot_path_visualization.points_per_circle</strong>: The number of points to use for drawing a circle. This is <strong>10</strong> by default. Considering this is only used for debugging, higher values might result in rounder-looking circles, but there isn\u2019t much benefit.</li>\n<li><strong>debug.loot_path_visualization.outline_loot</strong>: Draw a spherical outline around loot items and loot containers that are not empty. The center of the sphere should be in the center of loose loot, but it will be somewhere around the perimeter of loot containers (and varies by the type of container). The color of the outline will change based on the loot\u2019s accessibility as determined by the mod. Green = accessible, Red = inaccessible, White = undetermined (cannot find a valid NavMesh path to the loot).</li>\n<li><strong>debug.loot_path_visualization.loot_outline_radius</strong>: The radius (in meters) for the circles used in <strong>debug.loot_path_visualization.outline_loot</strong>.</li>\n<li><strong>debug.loot_path_visualization.only_outline_loot_with_pathing</strong>: Only draw outlines for loot that requires the mod to determine its accessibility by finding a NavMesh path to it. Many items will be excluded because their accessibility is automatically determined from other parameters.</li>\n<li><strong>debug.loot_path_visualization.draw_incomplete_paths</strong>: Draw failed paths created when the mod tried to find a valid NavMesh path to the loot. The line color will be white.</li>\n<li><strong>debug.loot_path_visualization.draw_complete_paths</strong>: Draw NavMesh paths that successfully reached the loot. The line color will be blue.</li>\n<li><strong>debug.loot_path_visualization.outline_obstacles</strong>: Draw boundaries around the obstacles detected between the final point in completed NavMesh paths and the loot item (determined via raytracing). If the outline color is magenta, the obstacle was ignored. If the outline color is red, the mod thinks that obstacle is making the loot inaccessible.</li>\n<li><strong>debug.loot_path_visualization.only_outline_filtered_obstacles</strong>: Only draw boundaries around obstacles for <strong>debug.loot_path_visualization.outline_obstacles</strong> if they caused the mod to consider the loot inaccessible. The outline color will be red.</li>\n<li><strong>debug.loot_path_visualization.show_obstacle_collision_points</strong>: Draw a spherical outline at each point where a collision with an obstacle was detected between the final point in completed NavMesh paths and the loot item (determined via raytracing). Collisions with obstacles that are ignored will not be drawn. The outline color of each point will be red.</li>\n<li><strong>debug.loot_path_visualization.collision_point_radius</strong>: The radius (in meters) for the circles used in <strong>debug.loot_path_visualization.show_obstacle_collision_points</strong>.</li>\n<li><strong>debug.loot_path_visualization.show_door_obstacles</strong>: Draw an ellipsoidal outline around doors that should block NavMesh pathing either because they\u2019re locked or something is currently interacting with them. Outlines are updated every <strong>destroy_loot_during_raid.check_loot_accessibility.door_obstacle_update_time</strong> seconds. The outline color will be yellow.</li>\n<li><strong>debug.loot_path_visualization.door_obstacle_min_radius</strong>: Ensures the radii for ellipsoids drawn for <strong>debug.loot_path_visualization.show_door_obstacles</strong> are at least this value (in meters). Otherwise, the outlines may be hard to see.</li>\n</ul></div></div></div>\n<p>If you\u2019re using this mod along with <a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/876-immersive-raids/\" rel=\"noreferrer noopener\">Kobrakon\u2019s Immersive Raids</a> mod, please change the following in <em>config.json</em>:</p>\n<ul>\n<li><strong>destroy_loot_during_raid.max_time_without_destroying_any_loot</strong> to any value you want. This is the frequency (in seconds) at which an item is removed from the map. If this value is small and you stay in the raid for a long time, you\u2019ll eventually have no more loot on the map.</li>\n</ul>\n<p><strong>Known issues:</strong></p>\n<ul>\n<li>Any locked door on the map is equally likely to be opened, including those locked with rare keys and those nobody ever really opens/closes in live Tarkov.</li>\n<li>Some items have no price defined in <em>handbook.json</em> or <em>prices.json</em>, which makes the mod rank them as being extremely undesirable (i.e. the AXMC .338 rifle). This will hopefully be fixed as the data dumps available to the SPT developers improve.</li>\n<li>If <strong>destroy_loot_during_raid.check_loot_accessibility.enabled=false</strong>, loot can be despawned behind locked doors or in locked containers. If <strong>destroy_loot_during_raid.check_loot_accessibility.enabled=true</strong>, some loot is falsely considered inaccessible and will never be despawned.</li>\n<li>If you approach the car extract without taking it and this mod instructs it to leave later in the raid, you\u2019ll see the countdown timer when you check your extracts.</li>\n</ul>\n",
-   "thumbnail": "https://forge-static.sp-tarkov.com/mods/1099.jpg",
-   "forge_url": "https://forge.sp-tarkov.com/mod/814/late-to-the-party",
-   "downloads": 44958,
-   "favourites": 3,
-   "featured": false,
-   "fika": false,
-   "fika_latest": "unknown",
-   "category": null,
-   "license": {
-    "name": "MIT License",
-    "link": "https://choosealicense.com/licenses/mit/"
-   },
-   "authors": [
-    {
-     "id": 27632,
-     "name": "DanW",
-     "avatar": "https://ui-avatars.com/api/?name=D&color=7F9CF5&background=EBF4FF"
-    }
-   ],
-   "source_links": [
-    {
-     "url": "https://github.com/dwesterwick/SPTLateToTheParty",
-     "label": ""
-    }
-   ],
-   "versions": [
-    {
-     "id": 354,
-     "version": "2.9.2",
-     "description": "<ul>\n<li>Bug fix for infinite exceptions when trying to find compatible attachments for weapons/mods that have invalid template ID\u2019s (added by other mods)</li>\n</ul>\n<p><em>config.json</em> files from the 2.3.1 through 2.9.1 releases are compatible, but several options no longer do anything and toggle_switches_during_raid.exclusion_radius will be too high</p>\n",
-     "spt_constraint": "~3.11.0",
-     "fika": "unknown",
-     "downloads": 4657,
-     "size": null,
-     "link": "https://forge.sp-tarkov.com/mod/download/814/late-to-the-party/2.9.2",
-     "published_at": "2025-06-25T14:52:12.000000Z",
-     "dependencies": []
-    },
-    {
-     "id": 768,
-     "version": "2.9.0",
-     "description": "<p>This version includes a new version of the LateToThePartyFikaSync plugin, available <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/dwesterwick/SPTLateToTheParty/releases/download/2.9.0/DanW-LateToThePartyFikaSync.zip\" rel=\"noreferrer noopener\">here</a></p>\n<ul>\n<li><strong>Updated for SPT 3.11.x</strong></li>\n<li><strong>Increased minimum required version of SPT to 3.11.2</strong></li>\n<li><strong>Increased required version of <a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/1119-waypoints-expanded-bot-patrols-and-navmesh/\" rel=\"noreferrer noopener\">Waypoints</a> from 1.6.2 to 1.7.0</strong></li>\n<li>Set the InteractingPlayer of WorldInteractiveObjects to null before toggling them</li>\n<li>If the loot-ranking data is invalid, save the server response to a log file</li>\n<li>Only show the warning message about sounds being suppressed during initial raid setup when debug.enabled=true</li>\n<li>Removed LookRankingDataReader program from being included in builds</li>\n<li>Imported helper class from <a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/1534-questing-bots/\" rel=\"noreferrer noopener\">Questing Bots</a> for resolving unmapped client types</li>\n<li>Fixed NRE when toggling a WorldInteractiveObject if InteractingPlayer=null for it</li>\n<li>Minor refactoring</li>\n</ul>\n<p><em>config.json</em> files from the 2.3.1 through 2.8.3 releases are compatible, but several options no longer do anything and toggle_switches_during_raid.exclusion_radius will be too high.</p>\n",
-     "spt_constraint": "3.11.2",
-     "fika": "unknown",
-     "downloads": 483,
-     "size": null,
-     "link": "https://forge.sp-tarkov.com/mod/download/814/late-to-the-party/2.9.0",
-     "published_at": "2025-04-19T16:09:15.000000Z",
-     "dependencies": []
-    },
-    {
-     "id": 1773,
-     "version": "2.7.0",
-     "description": "<ul>\n<li><strong>Updated for SPT 3.10</strong></li>\n<li><strong>Added requirement for <a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/1119-waypoints-expanded-bot-patrols-and-navmesh/\" rel=\"noreferrer noopener\">Waypoints</a> 1.6.0 and removed redundant features that perform similar functions</strong></li>\n<li><strong>Made Fika incompatible</strong>. There is currently no way to synchronize door, switch, etc. states between clients.</li>\n<li>If <a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/2593-lockable-doors/\" rel=\"noreferrer noopener\">Lockable Doors</a> is loaded, show a warning message in the main menu, game console, and server console when the game first loads about known limitations</li>\n<li>Added SPT version check (currently set to allow all SPT 3.10.x versions)</li>\n<li>Reduced toggle_switches_during_raid.exclusion_radius from 150 to 75 or many switches on Labs would never be activated</li>\n<li>Removed trader-stock-adjustment feature because it doesn\u2019t look like BSG will be restoring trader stock limits</li>\n<li>Removed the bot-conversion-chance adjustment feature because there are now plenty of spawn mods that do a better job</li>\n<li>Removed logging buffer and crash detection because this hasn\u2019t been needed in a long time</li>\n<li>Removed most debug options and transferred them into a separate mod</li>\n<li>Do not try to directly despawn items that are locked in their parent items (i.e. soft armor inserts)</li>\n<li>Do not force doors near loot to open if something is already interacting with it</li>\n<li>Do not force doors near loot to open if open_doors_during_raid.enabled=false</li>\n<li>Ignore and show warning messages for items with invalid templates</li>\n<li>Removed warning message when checking for VEX\u2019s if there are no alive players in the map</li>\n<li>Made all Unity methods protected instead of private because the recent Visual Studio update is dumb and forces them to be faded out</li>\n<li>Began refactoring (but much more is still needed)</li>\n<li>Removed manifest from WinForms app (LootRankingDataReader) to reduce VirusTotal false positives</li>\n</ul>\n<p><em>config.json</em> files from the 2.3.1 through 2.6.1 releases are compatible, but several options no longer do anything and toggle_switches_during_raid.exclusion_radius will be too high.</p>\n",
-     "spt_constraint": "~3.10.0",
-     "fika": "unknown",
-     "downloads": 1396,
-     "size": null,
-     "link": "https://forge.sp-tarkov.com/mod/download/814/late-to-the-party/2.7.0",
-     "published_at": "2025-01-03T04:05:23.000000Z",
-     "dependencies": []
-    },
-    {
-     "id": 3655,
-     "version": "2.6.0",
-     "description": "<ul>\n<li>Updated to SPT 3.9.0</li>\n</ul>\n<p><em>config.json</em> files from the 2.3.1 through 2.5.1 releases are compatible, but you\u2019ll receive warning messages in the server console about trader-inventory changes being disabled.</p>\n",
-     "spt_constraint": "3.9.0",
-     "fika": "unknown",
-     "downloads": 4279,
-     "size": null,
-     "link": "https://forge.sp-tarkov.com/mod/download/814/late-to-the-party/2.6.0",
-     "published_at": "2024-07-08T17:21:22.000000Z",
-     "dependencies": []
-    },
-    {
-     "id": 3733,
-     "version": "2.5.1",
-     "description": "<p><strong>Because the file structure has changed with this release, files from all previous versions of this mod must be removed before installing this version!</strong></p>\n<ul>\n<li><strong>Allow the server and client to run on different machines.</strong> To accomplish this, the following changes were made:\n<ul>\n<li>Moved the client DLL into its own folder (\u201cDanW-LateToTheParty\u201d)</li>\n<li>Log files will now be stored within the new client directory for this mod</li>\n<li>Added server and client checks for an older client DLL still remaining in the \u201cBepInEx\\plugins\u201d directory. If so, show an error when the server or game starts and disable this mod.</li>\n<li>If a \u201clog\u201d directory from older versions of the server files still exist, write warning messages in the server console, but still allow the mod to function</li>\n</ul>\n</li>\n<li>Removed the LateToTheParty endpoint for writing error messages to the server console and will now use the SPT one</li>\n<li>If the map cannot be determined when loot is ready to be destroyed (namely when using Fika), write error messages to the game console and server console and then disable the loot-destruction system</li>\n<li><strong>Bug fix for not being able to disable the loot-ranking system</strong></li>\n<li>Bug fix for allowing SPT 3.9.0</li>\n</ul>\n<p><em>config.json</em> files from the 2.3.1 through 2.5.0 releases are compatible, but you\u2019ll receive warning messages in the server console about trader-inventory changes being disabled.</p>\n",
-     "spt_constraint": "3.9.0",
-     "fika": "unknown",
-     "downloads": 347,
-     "size": null,
-     "link": "https://forge.sp-tarkov.com/mod/download/814/late-to-the-party/2.5.1",
-     "published_at": "2024-07-07T00:44:50.000000Z",
-     "dependencies": []
-    },
-    {
-     "id": 4842,
-     "version": "2.4.0",
-     "description": "<ul>\n<li><strong>Updated for SPT-AKI 3.8.0</strong></li>\n<li><strong>Disabled changes to trader inventories.</strong> This will require significant updates to work with the SPT-AKI 3.8.0+ server code.</li>\n<li>Stop using trader enums in the server code</li>\n</ul>\n<p><em>config.json</em> files from the 2.3.1 release are compatible, but you\u2019ll receive warning messages in the server console about trader-inventory changes being disabled.</p>\n",
-     "spt_constraint": "3.8.0",
-     "fika": "unknown",
-     "downloads": 1484,
-     "size": null,
-     "link": "https://forge.sp-tarkov.com/mod/download/814/late-to-the-party/2.4.0",
-     "published_at": "2024-04-04T03:19:23.000000Z",
-     "dependencies": []
-    },
-    {
-     "id": 5077,
-     "version": "2.3.1",
-     "description": "<p><strong>Only compatible with SPT-AKI 3.7.4 - 3.7.6</strong></p>\n<ul>\n<li>Added config option to disable trader stock changes for Fence. Fence changes are enabled by default because he still sells unrealistically nice stuff in SPT-AKI 3.7.6.</li>\n<li>Bug fix for constant NRE\u2019s when in the Hideout</li>\n<li>Updated server code per Lint recommendations</li>\n</ul>\n<p><strong>The config.json file from previous releases is NOT compatible.</strong></p>\n",
-     "spt_constraint": "3.7.6",
-     "fika": "unknown",
-     "downloads": 2549,
-     "size": null,
-     "link": "https://forge.sp-tarkov.com/mod/download/814/late-to-the-party/2.3.1",
-     "published_at": "2024-02-12T02:24:32.000000Z",
-     "dependencies": []
-    },
-    {
-     "id": 5286,
-     "version": "2.3.0",
-     "description": "<p><strong>Only compatible with SPT-AKI 3.7.4 - 3.7.6</strong></p>\n<ul>\n<li><strong>Added system to turn on switches (i.e. power switches) throughout the raid:</strong>\n<ul>\n<li>A random number of switches will be toggled at random points throughout the raid (configurable). Only switches that players can toggle are eligible.</li>\n<li>Switches that control extract points (i.e. elevator buttons in Labs) will not be allowed to turn on until a certain amount of time has elapsed in the raid, before adjustments are made for Scav runs (600s by default)</li>\n<li>Switches will not be allowed to be turned on if you\u2019re within a certain distance from them (150m by default)</li>\n<li>Just like the systems that open doors and despawn loot, switches that are \u201cmissed\u201d when spawning in late as a Scav will be toggled immediately after you spawn. Audio will be disabled for these switches so it\u2019s less obvious what has changed on the map.</li>\n<li>If a switch is only available to turn on after another one is turned on, that one will be toggled first. If this occurs after the initial switches have been turned on for Scav raids, the first switch won\u2019t be toggled until some time after the prerequisite switch is. The delay is proportional to the distance between the two switches.</li>\n<li>When spawning in late as a Scav, initial switches must be toggled before initial doors are opened (which then allows initial loot to be despawned). This ensures doors that require power will be eligible to be opened (if the power switch is turned on).</li>\n</ul>\n</li>\n<li>Added the factor destroy_loot_during_raid.players_with_loot_factor_for_maps_without_pscavs (0.3 by default) to apply to <strong>fraction_of_players_full_of_loot</strong> for maps that do not allow player Scavs to spawn. This means that (by default) significantly less loot will be despawned throughout Labs raids.</li>\n<li>Reduced only_make_changes_just_after_spawning.time_limit from 30 to 5 seconds because it doesn\u2019t really need to be any longer than that.</li>\n</ul>\n<p><strong>The config.json file from previous releases is NOT compatible.</strong></p>\n<p><strong>NOTE: This release uses the previous code (for SPT-AKI 3.6.1) to change Fence\u2019s inventory, so that will need to be revised now that SPT-AKI 3.7.0+ has fixed some of the issues LTTP addressed back in the 1.2.0 release.</strong></p>\n",
-     "spt_constraint": "3.7.6",
-     "fika": "unknown",
-     "downloads": 3019,
-     "size": null,
-     "link": "https://forge.sp-tarkov.com/mod/download/814/late-to-the-party/2.3.0",
-     "published_at": "2024-01-02T00:12:40.000000Z",
-     "dependencies": []
-    },
-    {
-     "id": 5294,
-     "version": "2.2.0",
-     "description": "<p><strong>Only compatible with SPT-AKI 3.7.4 - 3.7.6</strong></p>\n<ul>\n<li><strong>Improved car-extract behavior:</strong>\n<ul>\n<li>The car will now leave at some point during the raid instead of having the chances of it being available reduced based on the time you spawn in.</li>\n<li>Just like in live Tarkov, the car extract will appear in green font after it has been activated (even if you haven\u2019t approached it yet), and it will appear in red font after it leaves.</li>\n<li>The car will not be allowed to leave if you\u2019re within a certain distance of it (150m by default). If the car extract has already been activated, it will be deactivated if you get too close to it so you don\u2019t get a free ride. After this happens, it won\u2019t be allowed to be activated again for a certain amount of time (120s by default).</li>\n</ul>\n</li>\n<li>Added car-extract departures to systems that can be disabled by <strong>only_make_changes_just_after_spawning</strong></li>\n<li>Changed default value of <strong>only_make_changes_just_after_spawning.affected_systems.opening_locked_doors</strong> to <strong>true</strong> because bots can now unlock doors in <a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/1534-questing-bots/\" rel=\"noreferrer noopener\">Questing Bots</a>.</li>\n</ul>\n<p><strong>The config.json file from previous releases is NOT compatible.</strong></p>\n<p><strong>NOTE: This release uses the previous code (for SPT-AKI 3.6.1) to change Fence\u2019s inventory, so that will need to be revised now that SPT-AKI 3.7.0+ has fixed some of the issues LTTP addressed back in the 1.2.0 release.</strong></p>\n",
-     "spt_constraint": "3.7.6",
-     "fika": "unknown",
-     "downloads": 304,
-     "size": null,
-     "link": "https://forge.sp-tarkov.com/mod/download/814/late-to-the-party/2.2.0",
-     "published_at": "2023-12-31T03:37:49.000000Z",
-     "dependencies": []
-    },
-    {
-     "id": 5309,
-     "version": "2.1.0",
-     "description": "<p><strong>Only compatible with SPT-AKI 3.7.4 - 3.7.6</strong></p>\n<ul>\n<li>Allow keycard doors and car trunks to be unlocked, opened, and closed throughout the raid (and at the beginning of Scav raids)</li>\n<li>If loot is in a trunk, open the trunk before destroying it. If the trunk is locked, do not destroy it.</li>\n<li>Bug fix for constant exceptions if destroy_loot_during_raid.loot_ranking.enabled=false&lt;br&gt;</li>\n</ul>\n<p>&lt;br&gt;</p>\n<p><em>config.json</em> files from the 2.0.0 release are compatible, but destroy_loot_during_raid.nearby_interactive_object_search_distance will always be 0.75, and destroy_loot_during_raid.only_search_for_nearby_trunks will always be true.</p>\n<p><strong>NOTE: This release uses the previous code (for SPT-AKI 3.6.1) to change Fence\u2019s inventory, so that will need to be revised now that SPT-AKI 3.7.0+ has fixed some of the issues LTTP addressed back in the 1.2.0 release.</strong></p>\n",
-     "spt_constraint": "3.7.6",
-     "fika": "unknown",
-     "downloads": 329,
-     "size": null,
-     "link": "https://forge.sp-tarkov.com/mod/download/814/late-to-the-party/2.1.0",
-     "published_at": "2023-12-28T01:52:15.000000Z",
-     "dependencies": []
-    },
-    {
-     "id": 5429,
-     "version": "2.0.0",
-     "description": "<p><strong>Only compatible with SPT-AKI 3.7.4 - 3.7.6</strong></p>\n<ul>\n<li><strong>Updated required version of SPT-AKI to 3.7.4</strong></li>\n<li>The following <strong>changes for Scav raids are now managed by base SPT</strong>:\n<ul>\n<li>Spawning into raids late</li>\n<li>Reducing the minimum time needed to stay in the raid to get a \u201cSurvived\u201d status</li>\n<li>Updating train times</li>\n<li>Removing missed bot waves</li>\n<li>If destroy_loot_during_raid.enabled=false, reducing starting loot.</li>\n<li>Client-side raid-time calculations</li>\n</ul>\n</li>\n<li>Added an option to force you to spawn late 100% of the time as a Scav (enabled by default)</li>\n<li>Caching original escape times is now done slightly later as you load into the raid</li>\n<li>Removed all code for features now managed by base SPT</li>\n<li>Removed enums from server code because they cause issues with development SPT builds</li>\n<li>Fixed incorrect type name Preset to correct name IPreset in server code</li>\n<li>Bug fix for the mod trying to store null items as loot picked-up or dropped by bots</li>\n</ul>\n<p><strong>The following changes for Scav raids can still be done by Late to the Party:</strong></p>\n<ul>\n<li>Initial setup with doors opened and loot removed (in a more realistic manner than base SPT)</li>\n<li>Reduced vehicle extract chances</li>\n<li>Reduced boss spawn rates</li>\n<li>PMC-conversion chances change over the course of the raid (disabled by default)</li>\n</ul>\n<p><strong>The config.json file from previous releases is NOT compatible.</strong></p>\n<p><strong>NOTE: This release uses the previous code (for SPT-AKI 3.6.1) to change Fence\u2019s inventory, so that will need to be revised now that SPT-AKI 3.7.0+ has fixed some of the issues LTTP addressed back in the 1.2.0 release.</strong></p>\n",
-     "spt_constraint": "3.7.6",
-     "fika": "unknown",
-     "downloads": 1033,
-     "size": null,
-     "link": "https://forge.sp-tarkov.com/mod/download/814/late-to-the-party/2.0.0",
-     "published_at": "2023-12-07T03:00:06.000000Z",
-     "dependencies": []
-    },
-    {
-     "id": 5885,
-     "version": "1.3.5",
-     "description": "<ul>\n<li>Updated for SPT-AKI 3.7.1</li>\n<li>Bug fix for not being able to enter a raid after leaving one while it was loading</li>\n</ul>\n<p><em>config.json</em> files from the 1.3.1 through 1.3.4 releases are fully compatible. <em>config.json</em> files from the 1.2.2 and 1.3.0 releases are compatible, but <strong>destroy_loot_during_raid.exclusion_radius_bots</strong> will always be 10m.</p>\n<p><strong>NOTE: This release uses the previous code (for SPT-AKI 3.6.1) to change Fence\u2019s inventory, so that will need to be revised now that SPT-AKI 3.7.0+ has fixed some of the issues LTTP addressed back in the 1.2.0 release.</strong></p>\n",
-     "spt_constraint": "3.7.1",
-     "fika": "unknown",
-     "downloads": 1926,
-     "size": null,
-     "link": "https://forge.sp-tarkov.com/mod/download/814/late-to-the-party/1.3.5",
-     "published_at": "2023-10-15T03:40:30.000000Z",
-     "dependencies": []
-    }
-   ],
-   "latest_version": "2.9.2",
-   "spt_constraint": "~3.11.0",
-   "all_spt_constraints": [
-    "3.11.2",
-    "3.7.1",
-    "3.7.6",
-    "3.8.0",
-    "3.9.0",
-    "~3.10.0",
-    "~3.11.0"
-   ],
-   "dependencies": [],
-   "all_dependencies": [],
-   "published_at": "2023-03-27T02:30:16.000000Z",
-   "updated_at": "2026-07-13T18:08:16.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -52957,6 +52998,535 @@
    "origin": "forge"
   },
   {
+   "id": 2866,
+   "hub_id": null,
+   "guid": "com.manimal.icebreaker",
+   "name": "MANIMAL'S ICEBREAKER BACKPORT[BETA]",
+   "slug": "manimals-icebreaker-backportbeta",
+   "teaser": "A mod that backports the entire Icebreaker map and some of its related quests to SPT 4.0.13.",
+   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">The Mod</div>\n<div class=\"tab-content\"><p>After a month of blood, sweat, and tears, I am finally releasing this.</p>\n<p>This mod backports the ENTIRE Icebreaker map from 1.0 start to finish, including loot, enemies, the transit, and the quests to unlock it. I have painstakingly recreated the map, as well as added some personal details that I thought would make the experience more immersive/enjoyable.</p>\n<p>If you like my work and wish to support me, you can do so here: <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/manimal1920\" rel=\"noreferrer noopener\">https://ko-fi.com/manimal1920</a>)</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/peEDhkP.jpeg\" alt=\"alt text\" /></p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">GALLERY:</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/QxQNoUi.jpeg\" alt=\"alt text\" />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/yJ1xOdc.jpeg\" alt=\"alt text\" />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/0jIVjcN.jpeg\" alt=\"alt text\" /></p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">DISCLAIMER AND WARNINGS:</div>\n<div class=\"tab-content\"><ul>\n<li>THIS MOD IS A FANMADE RECREATION BASED HEAVILY ON THE OFFICIAL CONTENT. I HAVE ENSURED IT IS AS CLOSE AS I AM WILLING/ABLE, BUT DO NOT EXPECT IT TO MATCH EXACTLY WITH RETAIL.</li>\n<li>THIS MOD IS CURRENTLY IN A PUBLIC BETA STATE, WHICH MEANS IT WILL CONTAIN MINOR BUGS AND/OR GAMEPLAY ISSUES. DESPITE THIS, THE MOD HAS BEEN REPEATEDLY AND THOROUGHLY TESTED BOTH ONLINE AND OFFLINE, AND I AM CONFIDENT IT WILL FUNCTION FROM START TO FINISH IN A FULLY PLAYABLE STATE.</li>\n<li>PLEASE ENSURE ANY AND ALL FEEDBACK IS CONSTRUCTIVE AND REPRESENTS YOUR PROBLEM CLEARLY. IF NOT, I WILL IGNORE IT.</li>\n<li>THIS PROJECT COULD NOT HAVE BEEN COMPLETED WITHOUT THE HELP AND RESOURCES OF BOTH THE WTT  AND SPT COMMUNITIES. THANK YOU ALL VERY MUCH.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Installation</div>\n<div class=\"tab-content\"><ul>\n<li>\n<p>Ensure that you have SPT 4.0.13 or higher installed.</p>\n</li>\n<li>\n<p>Ensure you have all of the dependencies listed installed at their most recent versions.</p>\n</li>\n</ul>\n<p><strong>IF USING FIKA:</strong></p>\n<ul>\n<li>Ensure that you have the ICEBREAKER FIKA SYNC addon installed. INSTALL IT EVERYWHERE. Client, server, headless, etc.</li>\n</ul>\n<p>Move the zipped files to your SPT installation as shown in the GIF below.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://imgur.com/34vXXDj.gif\" alt=\"alt text\" /></p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Where to find me</div>\n<div class=\"tab-content\"><ul>\n<li>Here <a target=\"_blank\" class=\"external-link\" href=\"https://discord.com/channels/478334515488751617/1496355574579859556\" rel=\"noreferrer noopener\">(WTT Discord Channel)</a></li>\n<li>And here <a target=\"_blank\" class=\"external-link\" href=\"https://discord.gg/z8g9VC2W2c\" rel=\"noreferrer noopener\">(My EVIL Discord Server\u2026.)</a></li>\n</ul></div></div></div>\n",
+   "thumbnail": "https://forge-static.sp-tarkov.com/mods/L4Zw8DewaTC3S12nA9PrYql4TYkISvE4G1gpdKjy.png",
+   "forge_url": "https://forge.sp-tarkov.com/mod/2866/manimals-icebreaker-backportbeta",
+   "downloads": 18701,
+   "favourites": 70,
+   "featured": false,
+   "fika": true,
+   "fika_latest": "compatible",
+   "category": {
+    "id": 8,
+    "title": "Locations",
+    "slug": "locations"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 119111,
+     "name": "Manimal1920",
+     "avatar": "https://forge-static.sp-tarkov.com/profile-photos/N1lqEBjRXp5l2Xe0jzeGapZilpqLRpnpbEaTFU1h_128w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/danauraborealis/ManimalIcebreaker",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 14578,
+     "version": "0.2.3",
+     "description": "<ul>\n<li>made wedge only spawn with euros</li>\n<li>potential fix for hollywood fx battle blur</li>\n<li>lod culling radius for fps increase</li>\n<li>fixed stutters introduced in 0.2.2</li>\n<li>another potential fix for bots not spawning with abps</li>\n<li>diagnostic logging for fps and stutters</li>\n</ul>\n",
+     "spt_constraint": "~4.0.13",
+     "fika": "compatible",
+     "downloads": 108,
+     "size": 1677612954,
+     "link": "https://forge.sp-tarkov.com/mod/download/2866/manimals-icebreaker-backportbeta/0.2.3",
+     "published_at": "2026-08-09T04:48:00.000000Z",
+     "dependencies": [
+      {
+       "id": 902,
+       "name": "BigBrain",
+       "slug": "bigbrain",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/902/bigbrain"
+      },
+      {
+       "id": 2310,
+       "name": "WTT - CommonLib",
+       "slug": "wtt-commonlib",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2310/wtt-commonlib"
+      },
+      {
+       "id": 2426,
+       "name": "MoreBotsAPI",
+       "slug": "morebotsapi",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2426/morebotsapi"
+      },
+      {
+       "id": 2511,
+       "name": "WTT - Black Division [REDACTED] Home",
+       "slug": "wtt-black-division-redacted-home",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2511/wtt-black-division-redacted-home"
+      },
+      {
+       "id": 2512,
+       "name": "WTT - Content Backport",
+       "slug": "wtt-content-backport",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2512/wtt-content-backport"
+      },
+      {
+       "id": 2649,
+       "name": "Climbable Ladders",
+       "slug": "climbable-ladders",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2649/climbable-ladders"
+      },
+      {
+       "id": 2864,
+       "name": "Manimal's CS Gas",
+       "slug": "manimals-cs-gas",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2864/manimals-cs-gas"
+      }
+     ]
+    },
+    {
+     "id": 14530,
+     "version": "0.2.2",
+     "description": "<ul>\n<li>added crap load of new quests and barters</li>\n<li>fixed motion blur bug with amands graphics</li>\n<li>raised raid time limit to 45 minutes</li>\n<li>check for if fika core is installed but not in use</li>\n<li>add another fix for ultimate bloom to get rid of void bug</li>\n<li>swap BD engine room behavior back to vanilla and fix hold layer</li>\n<li>increased spawn chance for c-3 keycard.</li>\n<li>cleaned up ieapi compatibility bloat, opting to disable it entirely for IB to fix heli</li>\n</ul>\n",
+     "spt_constraint": "~4.0.13",
+     "fika": "unknown",
+     "downloads": 2413,
+     "size": 1677601451,
+     "link": "https://forge.sp-tarkov.com/mod/download/2866/manimals-icebreaker-backportbeta/0.2.2",
+     "published_at": "2026-08-08T00:55:00.000000Z",
+     "dependencies": [
+      {
+       "id": 902,
+       "name": "BigBrain",
+       "slug": "bigbrain",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/902/bigbrain"
+      },
+      {
+       "id": 2310,
+       "name": "WTT - CommonLib",
+       "slug": "wtt-commonlib",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2310/wtt-commonlib"
+      },
+      {
+       "id": 2426,
+       "name": "MoreBotsAPI",
+       "slug": "morebotsapi",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2426/morebotsapi"
+      },
+      {
+       "id": 2511,
+       "name": "WTT - Black Division [REDACTED] Home",
+       "slug": "wtt-black-division-redacted-home",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2511/wtt-black-division-redacted-home"
+      },
+      {
+       "id": 2512,
+       "name": "WTT - Content Backport",
+       "slug": "wtt-content-backport",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2512/wtt-content-backport"
+      },
+      {
+       "id": 2649,
+       "name": "Climbable Ladders",
+       "slug": "climbable-ladders",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2649/climbable-ladders"
+      },
+      {
+       "id": 2864,
+       "name": "Manimal's CS Gas",
+       "slug": "manimals-cs-gas",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2864/manimals-cs-gas"
+      }
+     ]
+    },
+    {
+     "id": 14486,
+     "version": "0.2.1",
+     "description": "<ul>\n<li>fix transit for fika once and for all</li>\n<li>fix insane amount of rogues spawning for no reason. should now be consistent</li>\n<li>cleaned up now unnecessary crew culler (didnt work anyway)</li>\n<li>fixed BD engine room patrol, hide and assault layers</li>\n<li>updated loose loot standard deviation</li>\n</ul>\n",
+     "spt_constraint": "~4.0.13",
+     "fika": "unknown",
+     "downloads": 4907,
+     "size": 1677225756,
+     "link": "https://forge.sp-tarkov.com/mod/download/2866/manimals-icebreaker-backportbeta/0.2.1",
+     "published_at": "2026-08-05T18:46:00.000000Z",
+     "dependencies": [
+      {
+       "id": 902,
+       "name": "BigBrain",
+       "slug": "bigbrain",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/902/bigbrain"
+      },
+      {
+       "id": 2310,
+       "name": "WTT - CommonLib",
+       "slug": "wtt-commonlib",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2310/wtt-commonlib"
+      },
+      {
+       "id": 2426,
+       "name": "MoreBotsAPI",
+       "slug": "morebotsapi",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2426/morebotsapi"
+      },
+      {
+       "id": 2511,
+       "name": "WTT - Black Division [REDACTED] Home",
+       "slug": "wtt-black-division-redacted-home",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2511/wtt-black-division-redacted-home"
+      },
+      {
+       "id": 2512,
+       "name": "WTT - Content Backport",
+       "slug": "wtt-content-backport",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2512/wtt-content-backport"
+      },
+      {
+       "id": 2649,
+       "name": "Climbable Ladders",
+       "slug": "climbable-ladders",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2649/climbable-ladders"
+      },
+      {
+       "id": 2864,
+       "name": "Manimal's CS Gas",
+       "slug": "manimals-cs-gas",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2864/manimals-cs-gas"
+      }
+     ]
+    },
+    {
+     "id": 14458,
+     "version": "0.2.0",
+     "description": "<ul>\n<li>\n<p>UPDATE TO THE LATEST VERSION OF MANIMAL CS GAS</p>\n</li>\n<li>\n<p>UPDATE TO THE LATEST VERSION OF ICEBREAKER FIKA SYNC</p>\n</li>\n<li>\n<p>patch for mods that look up a database of locations to get rid of suburbs errors</p>\n</li>\n<li>\n<p>fix for transit bug, removed patches referencing unused and undeployed culling data file</p>\n</li>\n<li>\n<p>fix to the custom camera, allowing effects mods compatibility</p>\n</li>\n<li>\n<p>changed shader rebind to only affect our assets</p>\n</li>\n<li>\n<p>updated loot tables and loot positions to be closer to live</p>\n</li>\n<li>\n<p>added the c-3 keycard as a rare spawn on rogues and added loot to the room</p>\n</li>\n<li>\n<p>replaced bot patches with bigbrain layers for custom behaviors</p>\n</li>\n<li>\n<p>adjusted count of rogues so that it scales with amount of players in raid</p>\n</li>\n<li>\n<p>added sz-1 explosive charge spawn on black division operatives</p>\n</li>\n<li>\n<p>added keypad codes and sticky notes to fika sync addon</p>\n</li>\n</ul>\n",
+     "spt_constraint": "~4.0.13",
+     "fika": "compatible",
+     "downloads": 4063,
+     "size": 1677223942,
+     "link": "https://forge.sp-tarkov.com/mod/download/2866/manimals-icebreaker-backportbeta/0.2.0",
+     "published_at": "2026-08-04T01:13:00.000000Z",
+     "dependencies": [
+      {
+       "id": 902,
+       "name": "BigBrain",
+       "slug": "bigbrain",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/902/bigbrain"
+      },
+      {
+       "id": 2310,
+       "name": "WTT - CommonLib",
+       "slug": "wtt-commonlib",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2310/wtt-commonlib"
+      },
+      {
+       "id": 2426,
+       "name": "MoreBotsAPI",
+       "slug": "morebotsapi",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2426/morebotsapi"
+      },
+      {
+       "id": 2511,
+       "name": "WTT - Black Division [REDACTED] Home",
+       "slug": "wtt-black-division-redacted-home",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2511/wtt-black-division-redacted-home"
+      },
+      {
+       "id": 2512,
+       "name": "WTT - Content Backport",
+       "slug": "wtt-content-backport",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2512/wtt-content-backport"
+      },
+      {
+       "id": 2649,
+       "name": "Climbable Ladders",
+       "slug": "climbable-ladders",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2649/climbable-ladders"
+      },
+      {
+       "id": 2864,
+       "name": "Manimal's CS Gas",
+       "slug": "manimals-cs-gas",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2864/manimals-cs-gas"
+      }
+     ]
+    },
+    {
+     "id": 14334,
+     "version": "0.1.1",
+     "description": "<ul>\n<li>Updated the unlock conditions and objectives for Boreas quest part 1 to be more clear and straightforward</li>\n<li>Removed unused custom parent service.</li>\n</ul>\n",
+     "spt_constraint": "~4.0.13",
+     "fika": "compatible",
+     "downloads": 4583,
+     "size": 1673112737,
+     "link": "https://forge.sp-tarkov.com/mod/download/2866/manimals-icebreaker-backportbeta/0.1.1",
+     "published_at": "2026-08-01T20:03:00.000000Z",
+     "dependencies": [
+      {
+       "id": 902,
+       "name": "BigBrain",
+       "slug": "bigbrain",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/902/bigbrain"
+      },
+      {
+       "id": 2310,
+       "name": "WTT - CommonLib",
+       "slug": "wtt-commonlib",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2310/wtt-commonlib"
+      },
+      {
+       "id": 2426,
+       "name": "MoreBotsAPI",
+       "slug": "morebotsapi",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2426/morebotsapi"
+      },
+      {
+       "id": 2511,
+       "name": "WTT - Black Division [REDACTED] Home",
+       "slug": "wtt-black-division-redacted-home",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2511/wtt-black-division-redacted-home"
+      },
+      {
+       "id": 2512,
+       "name": "WTT - Content Backport",
+       "slug": "wtt-content-backport",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2512/wtt-content-backport"
+      },
+      {
+       "id": 2649,
+       "name": "Climbable Ladders",
+       "slug": "climbable-ladders",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2649/climbable-ladders"
+      },
+      {
+       "id": 2864,
+       "name": "Manimal's CS Gas",
+       "slug": "manimals-cs-gas",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2864/manimals-cs-gas"
+      }
+     ]
+    },
+    {
+     "id": 14324,
+     "version": "0.1.0",
+     "description": "<ul>\n<li>Initial Beta Release</li>\n</ul>\n",
+     "spt_constraint": "~4.0.13",
+     "fika": "compatible",
+     "downloads": 2627,
+     "size": 1673113061,
+     "link": "https://forge.sp-tarkov.com/mod/download/2866/manimals-icebreaker-backportbeta/0.1.0",
+     "published_at": "2026-08-01T08:29:00.000000Z",
+     "dependencies": [
+      {
+       "id": 902,
+       "name": "BigBrain",
+       "slug": "bigbrain",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/902/bigbrain"
+      },
+      {
+       "id": 2310,
+       "name": "WTT - CommonLib",
+       "slug": "wtt-commonlib",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2310/wtt-commonlib"
+      },
+      {
+       "id": 2426,
+       "name": "MoreBotsAPI",
+       "slug": "morebotsapi",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2426/morebotsapi"
+      },
+      {
+       "id": 2511,
+       "name": "WTT - Black Division [REDACTED] Home",
+       "slug": "wtt-black-division-redacted-home",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2511/wtt-black-division-redacted-home"
+      },
+      {
+       "id": 2512,
+       "name": "WTT - Content Backport",
+       "slug": "wtt-content-backport",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2512/wtt-content-backport"
+      },
+      {
+       "id": 2649,
+       "name": "Climbable Ladders",
+       "slug": "climbable-ladders",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2649/climbable-ladders"
+      },
+      {
+       "id": 2864,
+       "name": "Manimal's CS Gas",
+       "slug": "manimals-cs-gas",
+       "constraint": "",
+       "url": "https://forge.sp-tarkov.com/mod/2864/manimals-cs-gas"
+      }
+     ]
+    }
+   ],
+   "latest_version": "0.2.3",
+   "spt_constraint": "~4.0.13",
+   "all_spt_constraints": [
+    "~4.0.13"
+   ],
+   "dependencies": [
+    {
+     "id": 902,
+     "name": "BigBrain",
+     "slug": "bigbrain",
+     "constraint": "",
+     "url": "https://forge.sp-tarkov.com/mod/902/bigbrain"
+    },
+    {
+     "id": 2310,
+     "name": "WTT - CommonLib",
+     "slug": "wtt-commonlib",
+     "constraint": "",
+     "url": "https://forge.sp-tarkov.com/mod/2310/wtt-commonlib"
+    },
+    {
+     "id": 2426,
+     "name": "MoreBotsAPI",
+     "slug": "morebotsapi",
+     "constraint": "",
+     "url": "https://forge.sp-tarkov.com/mod/2426/morebotsapi"
+    },
+    {
+     "id": 2511,
+     "name": "WTT - Black Division [REDACTED] Home",
+     "slug": "wtt-black-division-redacted-home",
+     "constraint": "",
+     "url": "https://forge.sp-tarkov.com/mod/2511/wtt-black-division-redacted-home"
+    },
+    {
+     "id": 2512,
+     "name": "WTT - Content Backport",
+     "slug": "wtt-content-backport",
+     "constraint": "",
+     "url": "https://forge.sp-tarkov.com/mod/2512/wtt-content-backport"
+    },
+    {
+     "id": 2649,
+     "name": "Climbable Ladders",
+     "slug": "climbable-ladders",
+     "constraint": "",
+     "url": "https://forge.sp-tarkov.com/mod/2649/climbable-ladders"
+    },
+    {
+     "id": 2864,
+     "name": "Manimal's CS Gas",
+     "slug": "manimals-cs-gas",
+     "constraint": "",
+     "url": "https://forge.sp-tarkov.com/mod/2864/manimals-cs-gas"
+    }
+   ],
+   "all_dependencies": [
+    {
+     "id": 902,
+     "name": "BigBrain",
+     "slug": "bigbrain",
+     "constraint": "",
+     "url": "https://forge.sp-tarkov.com/mod/902/bigbrain"
+    },
+    {
+     "id": 2310,
+     "name": "WTT - CommonLib",
+     "slug": "wtt-commonlib",
+     "constraint": "",
+     "url": "https://forge.sp-tarkov.com/mod/2310/wtt-commonlib"
+    },
+    {
+     "id": 2426,
+     "name": "MoreBotsAPI",
+     "slug": "morebotsapi",
+     "constraint": "",
+     "url": "https://forge.sp-tarkov.com/mod/2426/morebotsapi"
+    },
+    {
+     "id": 2511,
+     "name": "WTT - Black Division [REDACTED] Home",
+     "slug": "wtt-black-division-redacted-home",
+     "constraint": "",
+     "url": "https://forge.sp-tarkov.com/mod/2511/wtt-black-division-redacted-home"
+    },
+    {
+     "id": 2512,
+     "name": "WTT - Content Backport",
+     "slug": "wtt-content-backport",
+     "constraint": "",
+     "url": "https://forge.sp-tarkov.com/mod/2512/wtt-content-backport"
+    },
+    {
+     "id": 2649,
+     "name": "Climbable Ladders",
+     "slug": "climbable-ladders",
+     "constraint": "",
+     "url": "https://forge.sp-tarkov.com/mod/2649/climbable-ladders"
+    },
+    {
+     "id": 2864,
+     "name": "Manimal's CS Gas",
+     "slug": "manimals-cs-gas",
+     "constraint": "",
+     "url": "https://forge.sp-tarkov.com/mod/2864/manimals-cs-gas"
+    }
+   ],
+   "published_at": "2026-08-01T08:36:00.000000Z",
+   "updated_at": "2026-08-09T04:54:53.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": true,
+    "ai_disclosure": "<p>AI was used to assist in coding for this mod, and extracting necessary data. AI was also used to generate the mod\u2019s Icon.</p>\n",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge"
+  },
+  {
    "id": 1297,
    "hub_id": 1809,
    "guid": null,
@@ -53783,473 +54353,6 @@
     "contains_ads": false,
     "contains_ai_content": false,
     "ai_disclosure": "",
-    "cheat_notice": false,
-    "profile_binding_notice": false
-   },
-   "origin": "forge"
-  },
-  {
-   "id": 2866,
-   "hub_id": null,
-   "guid": "com.manimal.icebreaker",
-   "name": "MANIMAL'S ICEBREAKER BACKPORT[BETA]",
-   "slug": "manimals-icebreaker-backportbeta",
-   "teaser": "A mod that backports the entire Icebreaker map and some of its related quests to SPT 4.0.13.",
-   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">The Mod</div>\n<div class=\"tab-content\"><p>After a month of blood, sweat, and tears, I am finally releasing this.</p>\n<p>This mod backports the ENTIRE Icebreaker map from 1.0 start to finish, including loot, enemies, the transit, and the quests to unlock it. I have painstakingly recreated the map, as well as added some personal details that I thought would make the experience more immersive/enjoyable.</p>\n<p>If you like my work and wish to support me, you can do so here: <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/manimal1920\" rel=\"noreferrer noopener\">https://ko-fi.com/manimal1920</a>)</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/peEDhkP.jpeg\" alt=\"alt text\" /></p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">GALLERY:</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/QxQNoUi.jpeg\" alt=\"alt text\" />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/yJ1xOdc.jpeg\" alt=\"alt text\" />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/0jIVjcN.jpeg\" alt=\"alt text\" /></p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">DISCLAIMER AND WARNINGS:</div>\n<div class=\"tab-content\"><ul>\n<li>THIS MOD IS A FANMADE RECREATION BASED HEAVILY ON THE OFFICIAL CONTENT. I HAVE ENSURED IT IS AS CLOSE AS I AM WILLING/ABLE, BUT DO NOT EXPECT IT TO MATCH EXACTLY WITH RETAIL.</li>\n<li>THIS MOD IS CURRENTLY IN A PUBLIC BETA STATE, WHICH MEANS IT WILL CONTAIN MINOR BUGS AND/OR GAMEPLAY ISSUES. DESPITE THIS, THE MOD HAS BEEN REPEATEDLY AND THOROUGHLY TESTED BOTH ONLINE AND OFFLINE, AND I AM CONFIDENT IT WILL FUNCTION FROM START TO FINISH IN A FULLY PLAYABLE STATE.</li>\n<li>PLEASE ENSURE ANY AND ALL FEEDBACK IS CONSTRUCTIVE AND REPRESENTS YOUR PROBLEM CLEARLY. IF NOT, I WILL IGNORE IT.</li>\n<li>THIS PROJECT COULD NOT HAVE BEEN COMPLETED WITHOUT THE HELP AND RESOURCES OF BOTH THE WTT  AND SPT COMMUNITIES. THANK YOU ALL VERY MUCH.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Installation</div>\n<div class=\"tab-content\"><ul>\n<li>\n<p>Ensure that you have SPT 4.0.13 or higher installed.</p>\n</li>\n<li>\n<p>Ensure you have all of the dependencies listed installed at their most recent versions.</p>\n</li>\n</ul>\n<p><strong>IF USING FIKA:</strong></p>\n<ul>\n<li>Ensure that you have the ICEBREAKER FIKA SYNC addon installed. INSTALL IT EVERYWHERE. Client, server, headless, etc.</li>\n</ul>\n<p>Move the zipped files to your SPT installation as shown in the GIF below.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://imgur.com/34vXXDj.gif\" alt=\"alt text\" /></p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Where to find me</div>\n<div class=\"tab-content\"><ul>\n<li>Here <a target=\"_blank\" class=\"external-link\" href=\"https://discord.com/channels/478334515488751617/1496355574579859556\" rel=\"noreferrer noopener\">(WTT Discord Channel)</a></li>\n<li>And here <a target=\"_blank\" class=\"external-link\" href=\"https://discord.gg/z8g9VC2W2c\" rel=\"noreferrer noopener\">(My EVIL Discord Server\u2026.)</a></li>\n</ul></div></div></div>\n",
-   "thumbnail": "https://forge-static.sp-tarkov.com/mods/L4Zw8DewaTC3S12nA9PrYql4TYkISvE4G1gpdKjy.png",
-   "forge_url": "https://forge.sp-tarkov.com/mod/2866/manimals-icebreaker-backportbeta",
-   "downloads": 18228,
-   "favourites": 67,
-   "featured": false,
-   "fika": true,
-   "fika_latest": "unknown",
-   "category": {
-    "id": 8,
-    "title": "Locations",
-    "slug": "locations"
-   },
-   "license": {
-    "name": "MIT License",
-    "link": "https://choosealicense.com/licenses/mit/"
-   },
-   "authors": [
-    {
-     "id": 119111,
-     "name": "Manimal1920",
-     "avatar": "https://forge-static.sp-tarkov.com/profile-photos/N1lqEBjRXp5l2Xe0jzeGapZilpqLRpnpbEaTFU1h_128w.webp"
-    }
-   ],
-   "source_links": [
-    {
-     "url": "https://github.com/danauraborealis/ManimalIcebreaker",
-     "label": ""
-    }
-   ],
-   "versions": [
-    {
-     "id": 14530,
-     "version": "0.2.2",
-     "description": "<ul>\n<li>added crap load of new quests and barters</li>\n<li>fixed motion blur bug with amands graphics</li>\n<li>raised raid time limit to 45 minutes</li>\n<li>check for if fika core is installed but not in use</li>\n<li>add another fix for ultimate bloom to get rid of void bug</li>\n<li>swap BD engine room behavior back to vanilla and fix hold layer</li>\n<li>increased spawn chance for c-3 keycard.</li>\n<li>cleaned up ieapi compatibility bloat, opting to disable it entirely for IB to fix heli</li>\n</ul>\n",
-     "spt_constraint": "~4.0.13",
-     "fika": "unknown",
-     "downloads": 2063,
-     "size": 1677601451,
-     "link": "https://forge.sp-tarkov.com/mod/download/2866/manimals-icebreaker-backportbeta/0.2.2",
-     "published_at": "2026-08-08T00:55:00.000000Z",
-     "dependencies": [
-      {
-       "id": 902,
-       "name": "BigBrain",
-       "slug": "bigbrain",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/902/bigbrain"
-      },
-      {
-       "id": 2310,
-       "name": "WTT - CommonLib",
-       "slug": "wtt-commonlib",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2310/wtt-commonlib"
-      },
-      {
-       "id": 2426,
-       "name": "MoreBotsAPI",
-       "slug": "morebotsapi",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2426/morebotsapi"
-      },
-      {
-       "id": 2511,
-       "name": "WTT - Black Division [REDACTED] Home",
-       "slug": "wtt-black-division-redacted-home",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2511/wtt-black-division-redacted-home"
-      },
-      {
-       "id": 2512,
-       "name": "WTT - Content Backport",
-       "slug": "wtt-content-backport",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2512/wtt-content-backport"
-      },
-      {
-       "id": 2649,
-       "name": "Climbable Ladders",
-       "slug": "climbable-ladders",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2649/climbable-ladders"
-      },
-      {
-       "id": 2864,
-       "name": "Manimal's CS Gas",
-       "slug": "manimals-cs-gas",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2864/manimals-cs-gas"
-      }
-     ]
-    },
-    {
-     "id": 14486,
-     "version": "0.2.1",
-     "description": "<ul>\n<li>fix transit for fika once and for all</li>\n<li>fix insane amount of rogues spawning for no reason. should now be consistent</li>\n<li>cleaned up now unnecessary crew culler (didnt work anyway)</li>\n<li>fixed BD engine room patrol, hide and assault layers</li>\n<li>updated loose loot standard deviation</li>\n</ul>\n",
-     "spt_constraint": "~4.0.13",
-     "fika": "unknown",
-     "downloads": 4901,
-     "size": 1677225756,
-     "link": "https://forge.sp-tarkov.com/mod/download/2866/manimals-icebreaker-backportbeta/0.2.1",
-     "published_at": "2026-08-05T18:46:00.000000Z",
-     "dependencies": [
-      {
-       "id": 902,
-       "name": "BigBrain",
-       "slug": "bigbrain",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/902/bigbrain"
-      },
-      {
-       "id": 2310,
-       "name": "WTT - CommonLib",
-       "slug": "wtt-commonlib",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2310/wtt-commonlib"
-      },
-      {
-       "id": 2426,
-       "name": "MoreBotsAPI",
-       "slug": "morebotsapi",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2426/morebotsapi"
-      },
-      {
-       "id": 2511,
-       "name": "WTT - Black Division [REDACTED] Home",
-       "slug": "wtt-black-division-redacted-home",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2511/wtt-black-division-redacted-home"
-      },
-      {
-       "id": 2512,
-       "name": "WTT - Content Backport",
-       "slug": "wtt-content-backport",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2512/wtt-content-backport"
-      },
-      {
-       "id": 2649,
-       "name": "Climbable Ladders",
-       "slug": "climbable-ladders",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2649/climbable-ladders"
-      },
-      {
-       "id": 2864,
-       "name": "Manimal's CS Gas",
-       "slug": "manimals-cs-gas",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2864/manimals-cs-gas"
-      }
-     ]
-    },
-    {
-     "id": 14458,
-     "version": "0.2.0",
-     "description": "<ul>\n<li>\n<p>UPDATE TO THE LATEST VERSION OF MANIMAL CS GAS</p>\n</li>\n<li>\n<p>UPDATE TO THE LATEST VERSION OF ICEBREAKER FIKA SYNC</p>\n</li>\n<li>\n<p>patch for mods that look up a database of locations to get rid of suburbs errors</p>\n</li>\n<li>\n<p>fix for transit bug, removed patches referencing unused and undeployed culling data file</p>\n</li>\n<li>\n<p>fix to the custom camera, allowing effects mods compatibility</p>\n</li>\n<li>\n<p>changed shader rebind to only affect our assets</p>\n</li>\n<li>\n<p>updated loot tables and loot positions to be closer to live</p>\n</li>\n<li>\n<p>added the c-3 keycard as a rare spawn on rogues and added loot to the room</p>\n</li>\n<li>\n<p>replaced bot patches with bigbrain layers for custom behaviors</p>\n</li>\n<li>\n<p>adjusted count of rogues so that it scales with amount of players in raid</p>\n</li>\n<li>\n<p>added sz-1 explosive charge spawn on black division operatives</p>\n</li>\n<li>\n<p>added keypad codes and sticky notes to fika sync addon</p>\n</li>\n</ul>\n",
-     "spt_constraint": "~4.0.13",
-     "fika": "compatible",
-     "downloads": 4062,
-     "size": 1677223942,
-     "link": "https://forge.sp-tarkov.com/mod/download/2866/manimals-icebreaker-backportbeta/0.2.0",
-     "published_at": "2026-08-04T01:13:00.000000Z",
-     "dependencies": [
-      {
-       "id": 902,
-       "name": "BigBrain",
-       "slug": "bigbrain",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/902/bigbrain"
-      },
-      {
-       "id": 2310,
-       "name": "WTT - CommonLib",
-       "slug": "wtt-commonlib",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2310/wtt-commonlib"
-      },
-      {
-       "id": 2426,
-       "name": "MoreBotsAPI",
-       "slug": "morebotsapi",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2426/morebotsapi"
-      },
-      {
-       "id": 2511,
-       "name": "WTT - Black Division [REDACTED] Home",
-       "slug": "wtt-black-division-redacted-home",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2511/wtt-black-division-redacted-home"
-      },
-      {
-       "id": 2512,
-       "name": "WTT - Content Backport",
-       "slug": "wtt-content-backport",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2512/wtt-content-backport"
-      },
-      {
-       "id": 2649,
-       "name": "Climbable Ladders",
-       "slug": "climbable-ladders",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2649/climbable-ladders"
-      },
-      {
-       "id": 2864,
-       "name": "Manimal's CS Gas",
-       "slug": "manimals-cs-gas",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2864/manimals-cs-gas"
-      }
-     ]
-    },
-    {
-     "id": 14334,
-     "version": "0.1.1",
-     "description": "<ul>\n<li>Updated the unlock conditions and objectives for Boreas quest part 1 to be more clear and straightforward</li>\n<li>Removed unused custom parent service.</li>\n</ul>\n",
-     "spt_constraint": "~4.0.13",
-     "fika": "compatible",
-     "downloads": 4577,
-     "size": 1673112737,
-     "link": "https://forge.sp-tarkov.com/mod/download/2866/manimals-icebreaker-backportbeta/0.1.1",
-     "published_at": "2026-08-01T20:03:00.000000Z",
-     "dependencies": [
-      {
-       "id": 902,
-       "name": "BigBrain",
-       "slug": "bigbrain",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/902/bigbrain"
-      },
-      {
-       "id": 2310,
-       "name": "WTT - CommonLib",
-       "slug": "wtt-commonlib",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2310/wtt-commonlib"
-      },
-      {
-       "id": 2426,
-       "name": "MoreBotsAPI",
-       "slug": "morebotsapi",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2426/morebotsapi"
-      },
-      {
-       "id": 2511,
-       "name": "WTT - Black Division [REDACTED] Home",
-       "slug": "wtt-black-division-redacted-home",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2511/wtt-black-division-redacted-home"
-      },
-      {
-       "id": 2512,
-       "name": "WTT - Content Backport",
-       "slug": "wtt-content-backport",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2512/wtt-content-backport"
-      },
-      {
-       "id": 2649,
-       "name": "Climbable Ladders",
-       "slug": "climbable-ladders",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2649/climbable-ladders"
-      },
-      {
-       "id": 2864,
-       "name": "Manimal's CS Gas",
-       "slug": "manimals-cs-gas",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2864/manimals-cs-gas"
-      }
-     ]
-    },
-    {
-     "id": 14324,
-     "version": "0.1.0",
-     "description": "<ul>\n<li>Initial Beta Release</li>\n</ul>\n",
-     "spt_constraint": "~4.0.13",
-     "fika": "compatible",
-     "downloads": 2625,
-     "size": 1673113061,
-     "link": "https://forge.sp-tarkov.com/mod/download/2866/manimals-icebreaker-backportbeta/0.1.0",
-     "published_at": "2026-08-01T08:29:00.000000Z",
-     "dependencies": [
-      {
-       "id": 902,
-       "name": "BigBrain",
-       "slug": "bigbrain",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/902/bigbrain"
-      },
-      {
-       "id": 2310,
-       "name": "WTT - CommonLib",
-       "slug": "wtt-commonlib",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2310/wtt-commonlib"
-      },
-      {
-       "id": 2426,
-       "name": "MoreBotsAPI",
-       "slug": "morebotsapi",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2426/morebotsapi"
-      },
-      {
-       "id": 2511,
-       "name": "WTT - Black Division [REDACTED] Home",
-       "slug": "wtt-black-division-redacted-home",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2511/wtt-black-division-redacted-home"
-      },
-      {
-       "id": 2512,
-       "name": "WTT - Content Backport",
-       "slug": "wtt-content-backport",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2512/wtt-content-backport"
-      },
-      {
-       "id": 2649,
-       "name": "Climbable Ladders",
-       "slug": "climbable-ladders",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2649/climbable-ladders"
-      },
-      {
-       "id": 2864,
-       "name": "Manimal's CS Gas",
-       "slug": "manimals-cs-gas",
-       "constraint": "",
-       "url": "https://forge.sp-tarkov.com/mod/2864/manimals-cs-gas"
-      }
-     ]
-    }
-   ],
-   "latest_version": "0.2.2",
-   "spt_constraint": "~4.0.13",
-   "all_spt_constraints": [
-    "~4.0.13"
-   ],
-   "dependencies": [
-    {
-     "id": 902,
-     "name": "BigBrain",
-     "slug": "bigbrain",
-     "constraint": "",
-     "url": "https://forge.sp-tarkov.com/mod/902/bigbrain"
-    },
-    {
-     "id": 2310,
-     "name": "WTT - CommonLib",
-     "slug": "wtt-commonlib",
-     "constraint": "",
-     "url": "https://forge.sp-tarkov.com/mod/2310/wtt-commonlib"
-    },
-    {
-     "id": 2426,
-     "name": "MoreBotsAPI",
-     "slug": "morebotsapi",
-     "constraint": "",
-     "url": "https://forge.sp-tarkov.com/mod/2426/morebotsapi"
-    },
-    {
-     "id": 2511,
-     "name": "WTT - Black Division [REDACTED] Home",
-     "slug": "wtt-black-division-redacted-home",
-     "constraint": "",
-     "url": "https://forge.sp-tarkov.com/mod/2511/wtt-black-division-redacted-home"
-    },
-    {
-     "id": 2512,
-     "name": "WTT - Content Backport",
-     "slug": "wtt-content-backport",
-     "constraint": "",
-     "url": "https://forge.sp-tarkov.com/mod/2512/wtt-content-backport"
-    },
-    {
-     "id": 2649,
-     "name": "Climbable Ladders",
-     "slug": "climbable-ladders",
-     "constraint": "",
-     "url": "https://forge.sp-tarkov.com/mod/2649/climbable-ladders"
-    },
-    {
-     "id": 2864,
-     "name": "Manimal's CS Gas",
-     "slug": "manimals-cs-gas",
-     "constraint": "",
-     "url": "https://forge.sp-tarkov.com/mod/2864/manimals-cs-gas"
-    }
-   ],
-   "all_dependencies": [
-    {
-     "id": 902,
-     "name": "BigBrain",
-     "slug": "bigbrain",
-     "constraint": "",
-     "url": "https://forge.sp-tarkov.com/mod/902/bigbrain"
-    },
-    {
-     "id": 2310,
-     "name": "WTT - CommonLib",
-     "slug": "wtt-commonlib",
-     "constraint": "",
-     "url": "https://forge.sp-tarkov.com/mod/2310/wtt-commonlib"
-    },
-    {
-     "id": 2426,
-     "name": "MoreBotsAPI",
-     "slug": "morebotsapi",
-     "constraint": "",
-     "url": "https://forge.sp-tarkov.com/mod/2426/morebotsapi"
-    },
-    {
-     "id": 2511,
-     "name": "WTT - Black Division [REDACTED] Home",
-     "slug": "wtt-black-division-redacted-home",
-     "constraint": "",
-     "url": "https://forge.sp-tarkov.com/mod/2511/wtt-black-division-redacted-home"
-    },
-    {
-     "id": 2512,
-     "name": "WTT - Content Backport",
-     "slug": "wtt-content-backport",
-     "constraint": "",
-     "url": "https://forge.sp-tarkov.com/mod/2512/wtt-content-backport"
-    },
-    {
-     "id": 2649,
-     "name": "Climbable Ladders",
-     "slug": "climbable-ladders",
-     "constraint": "",
-     "url": "https://forge.sp-tarkov.com/mod/2649/climbable-ladders"
-    },
-    {
-     "id": 2864,
-     "name": "Manimal's CS Gas",
-     "slug": "manimals-cs-gas",
-     "constraint": "",
-     "url": "https://forge.sp-tarkov.com/mod/2864/manimals-cs-gas"
-    }
-   ],
-   "published_at": "2026-08-01T08:36:00.000000Z",
-   "updated_at": "2026-08-08T06:02:11.000000Z",
-   "flags": {
-    "contains_ads": false,
-    "contains_ai_content": true,
-    "ai_disclosure": "<p>AI was used to assist in coding for this mod, and extracting necessary data. AI was also used to generate the mod\u2019s Icon.</p>\n",
     "cheat_notice": false,
     "profile_binding_notice": false
    },
@@ -70646,6 +70749,168 @@
    "origin": "forge"
   },
   {
+   "id": 1474,
+   "hub_id": 2032,
+   "guid": "com.acidphantasm.disabletraitorscavs",
+   "name": "Disable Traitor Scavs",
+   "slug": "disable-traitor-scavs",
+   "teaser": "Disables Traitor Scavs. You can also, alternatively, adjust the chance they do spawn instead of disabling them. Stop getting shot in the back!",
+   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">INSTALLATION</div>\n<div class=\"tab-content\"><p>Installation</p>\n<ol>\n<li>Download DisableTraitorScavs</li>\n<li>Open the downloaded 7z file in 7-zip</li>\n<li>Select the SPT folder in the 7z file in 7-zip</li>\n<li>Drag the SPT folder from 7-zip into your root SPT folder</li>\n</ol>\n<p>Demonstration Video (yoink):</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/34vXXDj.gif\" alt=\"wMIskD3.gif\" /></p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">UNINSTALLATION</div>\n<div class=\"tab-content\"><ol>\n<li>Delete <code>/ROOTSPT/SPT/user/mods/acidphantasm-disabletraitorscavs</code></li>\n<li>Done</li>\n</ol></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">CONFIG</div>\n<div class=\"tab-content\"><p>Config settings (\\config\\config.jsonc)</p>\n<ul>\n<li><strong>disableTraitorScavs</strong>\n<ul>\n<li><strong>Default: true</strong></li>\n<li><em>Change this to enable/disable traitor scavs</em></li>\n</ul>\n</li>\n<li><strong>traitorScavChance</strong>\n<ul>\n<li><strong>Default: 15</strong></li>\n<li><em>Percentage chance to spawn a traitor scav if above setting is false.</em></li>\n</ul>\n</li>\n</ul></div></div></div>\n<p>If you enjoy my work - you can <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/acidphantasm\" rel=\"noreferrer noopener\">buy me a coffee</a>~</p>\n",
+   "thumbnail": "https://forge-static.sp-tarkov.com/mods/2032.png",
+   "forge_url": "https://forge.sp-tarkov.com/mod/1474/disable-traitor-scavs",
+   "downloads": 10769,
+   "favourites": 19,
+   "featured": false,
+   "fika": true,
+   "fika_latest": "compatible",
+   "category": {
+    "id": 17,
+    "title": "Other",
+    "slug": "other"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 48110,
+     "name": "acidphantasm",
+     "avatar": "https://forge-static.sp-tarkov.com/profile-photos/539f89fb275187ce761506de5f60c3a09690ee32_128w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/acidphantasm/acidphantasm-disabletraitorscavs",
+     "label": "3.11"
+    },
+    {
+     "url": "https://github.com/acidphantasm/disabletraitorscavs-csharp",
+     "label": "4.0"
+    }
+   ],
+   "versions": [
+    {
+     "id": 14577,
+     "version": "2.1.0",
+     "description": "<h3><strong>This version will only work for SPT 4.1.x</strong></h3>\n<p>4.1 Update\nAdded config to SIC</p>\n",
+     "spt_constraint": "~4.1",
+     "fika": "compatible",
+     "downloads": 35,
+     "size": 7699,
+     "link": "https://forge.sp-tarkov.com/mod/download/1474/disable-traitor-scavs/2.1.0",
+     "published_at": "2026-08-09T03:57:00.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 11786,
+     "version": "2.0.0",
+     "description": "<h3><strong>This version will only work for SPT 4.0.x</strong></h3>\n<p>No functionality change</p>\n",
+     "spt_constraint": "~4.0.0",
+     "fika": "compatible",
+     "downloads": 3823,
+     "size": 4343,
+     "link": "https://forge.sp-tarkov.com/mod/download/1474/disable-traitor-scavs/2.0.0",
+     "published_at": "2025-10-11T21:50:00.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 1216,
+     "version": "1.3.0",
+     "description": "<h3><strong>This version will only work for SPT 3.11.x</strong></h3>\n<p>3.11 Update</p>\n<p>Changes</p>\n<ul>\n<li>Replaced VFS with FileSystemSync</li>\n<li>Removed some logging</li>\n</ul>\n",
+     "spt_constraint": "~3.11.0",
+     "fika": "unknown",
+     "downloads": 2285,
+     "size": null,
+     "link": "https://forge.sp-tarkov.com/mod/download/1474/disable-traitor-scavs/1.3.0",
+     "published_at": "2025-03-15T20:26:14.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 2370,
+     "version": "1.2.0",
+     "description": "<p><strong>This version will only work for SPT 3.10.x</strong></p>\n<p>3.10 Update</p>\n",
+     "spt_constraint": "~3.10.0",
+     "fika": "unknown",
+     "downloads": 1529,
+     "size": null,
+     "link": "https://forge.sp-tarkov.com/mod/download/1474/disable-traitor-scavs/1.2.0",
+     "published_at": "2024-11-26T15:05:54.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 3757,
+     "version": "1.1.0",
+     "description": "<h3><strong>This version will only work for SPT 3.9.X</strong></h3>\n<p>Updated to 3.9.0</p>\n",
+     "spt_constraint": "3.9.0",
+     "fika": "unknown",
+     "downloads": 1924,
+     "size": null,
+     "link": "https://forge.sp-tarkov.com/mod/download/1474/disable-traitor-scavs/1.1.0",
+     "published_at": "2024-07-06T19:54:25.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 3946,
+     "version": "1.0.2",
+     "description": "<h3><strong>This version will only work for SPT 3.8.X</strong></h3>\n<p>Added an additional check for mod being overwritten</p>\n",
+     "spt_constraint": "~3.8.0",
+     "fika": "unknown",
+     "downloads": 749,
+     "size": null,
+     "link": "https://forge.sp-tarkov.com/mod/download/1474/disable-traitor-scavs/1.0.2",
+     "published_at": "2024-06-10T05:57:34.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 3956,
+     "version": "1.0.1",
+     "description": "<h3><strong>This version will only work for SPT 3.8.X</strong></h3>\n<p>Added check to see if mod was being overwritten and throw console error if it is</p>\n",
+     "spt_constraint": "~3.8.0",
+     "fika": "unknown",
+     "downloads": 192,
+     "size": null,
+     "link": "https://forge.sp-tarkov.com/mod/download/1474/disable-traitor-scavs/1.0.1",
+     "published_at": "2024-06-09T20:20:19.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 3965,
+     "version": "1.0.0",
+     "description": "<h3><strong>This version will only work for SPT 3.8.X</strong></h3>\n<p>Initial Release</p>\n",
+     "spt_constraint": "~3.8.0",
+     "fika": "unknown",
+     "downloads": 232,
+     "size": null,
+     "link": "https://forge.sp-tarkov.com/mod/download/1474/disable-traitor-scavs/1.0.0",
+     "published_at": "2024-06-08T23:28:04.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "2.1.0",
+   "spt_constraint": "~4.1",
+   "all_spt_constraints": [
+    "3.9.0",
+    "~3.10.0",
+    "~3.11.0",
+    "~3.8.0",
+    "~4.0.0",
+    "~4.1"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2024-06-08T23:28:00.000000Z",
+   "updated_at": "2026-08-09T03:58:04.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge"
+  },
+  {
    "id": 2737,
    "hub_id": null,
    "guid": "com.spy.jsoc-swr",
@@ -70980,155 +71245,6 @@
    "all_dependencies": [],
    "published_at": "2024-05-12T04:38:32.000000Z",
    "updated_at": "2026-07-13T18:05:25.000000Z",
-   "flags": {
-    "contains_ads": false,
-    "contains_ai_content": false,
-    "ai_disclosure": "",
-    "cheat_notice": false,
-    "profile_binding_notice": false
-   },
-   "origin": "forge"
-  },
-  {
-   "id": 1474,
-   "hub_id": 2032,
-   "guid": "com.acidphantasm.disabletraitorscavs",
-   "name": "Disable Traitor Scavs",
-   "slug": "disable-traitor-scavs",
-   "teaser": "Disables Traitor Scavs. You can also, alternatively, adjust the chance they do spawn instead of disabling them. Stop getting shot in the back!",
-   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">INSTALLATION</div>\n<div class=\"tab-content\"><p>Installation</p>\n<ol>\n<li>Download DisableTraitorScavs</li>\n<li>Open the downloaded 7z file in 7-zip</li>\n<li>Select the SPT folder in the 7z file in 7-zip</li>\n<li>Drag the SPT folder from 7-zip into your root SPT folder</li>\n</ol>\n<p>Demonstration Video (yoink):</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/34vXXDj.gif\" alt=\"wMIskD3.gif\" /></p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">UNINSTALLATION</div>\n<div class=\"tab-content\"><ol>\n<li>Delete <code>/ROOTSPT/SPT/user/mods/acidphantasm-disabletraitorscavs</code></li>\n<li>Done</li>\n</ol></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">CONFIG</div>\n<div class=\"tab-content\"><p>Config settings (\\config\\config.jsonc)</p>\n<ul>\n<li><strong>disableTraitorScavs</strong>\n<ul>\n<li><strong>Default: true</strong></li>\n<li><em>Change this to enable/disable traitor scavs</em></li>\n</ul>\n</li>\n<li><strong>traitorScavChance</strong>\n<ul>\n<li><strong>Default: 15</strong></li>\n<li><em>Percentage chance to spawn a traitor scav if above setting is false.</em></li>\n</ul>\n</li>\n</ul></div></div></div>\n<p>If you enjoy my work - you can <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/acidphantasm\" rel=\"noreferrer noopener\">buy me a coffee</a>~</p>\n",
-   "thumbnail": "https://forge-static.sp-tarkov.com/mods/2032.png",
-   "forge_url": "https://forge.sp-tarkov.com/mod/1474/disable-traitor-scavs",
-   "downloads": 10708,
-   "favourites": 19,
-   "featured": false,
-   "fika": true,
-   "fika_latest": "compatible",
-   "category": {
-    "id": 17,
-    "title": "Other",
-    "slug": "other"
-   },
-   "license": {
-    "name": "MIT License",
-    "link": "https://choosealicense.com/licenses/mit/"
-   },
-   "authors": [
-    {
-     "id": 48110,
-     "name": "acidphantasm",
-     "avatar": "https://forge-static.sp-tarkov.com/profile-photos/539f89fb275187ce761506de5f60c3a09690ee32_128w.webp"
-    }
-   ],
-   "source_links": [
-    {
-     "url": "https://github.com/acidphantasm/acidphantasm-disabletraitorscavs",
-     "label": "3.11"
-    },
-    {
-     "url": "https://github.com/acidphantasm/disabletraitorscavs-csharp",
-     "label": "4.0"
-    }
-   ],
-   "versions": [
-    {
-     "id": 11786,
-     "version": "2.0.0",
-     "description": "<h3><strong>This version will only work for SPT 4.0.x</strong></h3>\n<p>No functionality change</p>\n",
-     "spt_constraint": "~4.0.0",
-     "fika": "compatible",
-     "downloads": 3811,
-     "size": 4343,
-     "link": "https://forge.sp-tarkov.com/mod/download/1474/disable-traitor-scavs/2.0.0",
-     "published_at": "2025-10-11T21:50:00.000000Z",
-     "dependencies": []
-    },
-    {
-     "id": 1216,
-     "version": "1.3.0",
-     "description": "<h3><strong>This version will only work for SPT 3.11.x</strong></h3>\n<p>3.11 Update</p>\n<p>Changes</p>\n<ul>\n<li>Replaced VFS with FileSystemSync</li>\n<li>Removed some logging</li>\n</ul>\n",
-     "spt_constraint": "~3.11.0",
-     "fika": "unknown",
-     "downloads": 2282,
-     "size": null,
-     "link": "https://forge.sp-tarkov.com/mod/download/1474/disable-traitor-scavs/1.3.0",
-     "published_at": "2025-03-15T20:26:14.000000Z",
-     "dependencies": []
-    },
-    {
-     "id": 2370,
-     "version": "1.2.0",
-     "description": "<p><strong>This version will only work for SPT 3.10.x</strong></p>\n<p>3.10 Update</p>\n",
-     "spt_constraint": "~3.10.0",
-     "fika": "unknown",
-     "downloads": 1527,
-     "size": null,
-     "link": "https://forge.sp-tarkov.com/mod/download/1474/disable-traitor-scavs/1.2.0",
-     "published_at": "2024-11-26T15:05:54.000000Z",
-     "dependencies": []
-    },
-    {
-     "id": 3757,
-     "version": "1.1.0",
-     "description": "<h3><strong>This version will only work for SPT 3.9.X</strong></h3>\n<p>Updated to 3.9.0</p>\n",
-     "spt_constraint": "3.9.0",
-     "fika": "unknown",
-     "downloads": 1922,
-     "size": null,
-     "link": "https://forge.sp-tarkov.com/mod/download/1474/disable-traitor-scavs/1.1.0",
-     "published_at": "2024-07-06T19:54:25.000000Z",
-     "dependencies": []
-    },
-    {
-     "id": 3946,
-     "version": "1.0.2",
-     "description": "<h3><strong>This version will only work for SPT 3.8.X</strong></h3>\n<p>Added an additional check for mod being overwritten</p>\n",
-     "spt_constraint": "~3.8.0",
-     "fika": "unknown",
-     "downloads": 746,
-     "size": null,
-     "link": "https://forge.sp-tarkov.com/mod/download/1474/disable-traitor-scavs/1.0.2",
-     "published_at": "2024-06-10T05:57:34.000000Z",
-     "dependencies": []
-    },
-    {
-     "id": 3956,
-     "version": "1.0.1",
-     "description": "<h3><strong>This version will only work for SPT 3.8.X</strong></h3>\n<p>Added check to see if mod was being overwritten and throw console error if it is</p>\n",
-     "spt_constraint": "~3.8.0",
-     "fika": "unknown",
-     "downloads": 190,
-     "size": null,
-     "link": "https://forge.sp-tarkov.com/mod/download/1474/disable-traitor-scavs/1.0.1",
-     "published_at": "2024-06-09T20:20:19.000000Z",
-     "dependencies": []
-    },
-    {
-     "id": 3965,
-     "version": "1.0.0",
-     "description": "<h3><strong>This version will only work for SPT 3.8.X</strong></h3>\n<p>Initial Release</p>\n",
-     "spt_constraint": "~3.8.0",
-     "fika": "unknown",
-     "downloads": 230,
-     "size": null,
-     "link": "https://forge.sp-tarkov.com/mod/download/1474/disable-traitor-scavs/1.0.0",
-     "published_at": "2024-06-08T23:28:04.000000Z",
-     "dependencies": []
-    }
-   ],
-   "latest_version": "2.0.0",
-   "spt_constraint": "~4.0.0",
-   "all_spt_constraints": [
-    "3.9.0",
-    "~3.10.0",
-    "~3.11.0",
-    "~3.8.0",
-    "~4.0.0"
-   ],
-   "dependencies": [],
-   "all_dependencies": [],
-   "published_at": "2024-06-08T23:28:00.000000Z",
-   "updated_at": "2026-07-28T06:02:40.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -93962,6 +94078,185 @@
    "origin": "forge"
   },
   {
+   "id": 2851,
+   "hub_id": null,
+   "guid": "com.nevek20.sptmodmanager",
+   "name": "SPT Mod Manager",
+   "slug": "spt-mod-manager",
+   "teaser": "Open-source mod manager for SPT featuring easy installation, management and Forge integration.",
+   "description_html": "<h2>SPT Mod Manager</h2>\n<p>A Vortex/MO2-style mod manager built specifically for Single Player Tarkov. It came out of a real pain point: I got tired of having to hunt down files one by one just to uninstall a mod that was causing conflicts, so I decided to build a tool that would solve that for good.</p>\n<h3>What it does</h3>\n<ul>\n<li>Installs <code>.zip</code>, <code>.7z</code>, and <code>.rar</code> mods with automatic structure detection (Server, Client, or Hybrid)</li>\n<li>Enable/disable mods without deleting anything</li>\n<li>Rename, uninstall, and reinstall mods (reinstall works if you still have the original archive)</li>\n<li>Export and import mod lists</li>\n<li>Conflict detection by name (still basic, but improving)</li>\n<li>Forge integration: browse and install mods directly from the app, view mod info, download the right version, and check for updates</li>\n<li>Bilingual UI (PT-BR and EN)</li>\n</ul>\n<h3>Installation</h3>\n<p>Download the <code>.zip</code>, run the <code>.exe</code>. It installs everything automatically and creates a desktop shortcut.</p>\n<h3>Current limitations</h3>\n<ul>\n<li>Only tested with compressed archives (no folder-based installs yet)</li>\n<li>Doesn\u2019t modify any SPT core files (only copies/organizes)</li>\n<li>Fully tested and supported only on the latest SPT version (older versions should work, but without guarantees)</li>\n<li>Windows only for now (Linux/macOS support planned, but i need to refine the Mod Manager first)</li>\n</ul>\n<p>Personal project, not affiliated with the SPT team or Battlestate Games.</p>\n",
+   "thumbnail": "https://forge-static.sp-tarkov.com/mods/vrJPEuHFoXvwoCAoMn5Zzo9JM3ekLGPqfjOjeZ4a.png",
+   "forge_url": "https://forge.sp-tarkov.com/mod/2851/spt-mod-manager",
+   "downloads": 6480,
+   "favourites": 23,
+   "featured": false,
+   "fika": true,
+   "fika_latest": "compatible",
+   "category": {
+    "id": 17,
+    "title": "Other",
+    "slug": "other"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 117466,
+     "name": "TioEmir",
+     "avatar": "https://forge-static.sp-tarkov.com/profile-photos/fPjDjjdxZLnsV2U53bPIJ0YDguFdUNcCRBU8nTp5_128w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/Nevek20/SPT_Mod_Manager",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 14579,
+     "version": "0.4.6",
+     "description": "<p><strong>Release 0.4.6</strong></p>\n<p>A focused fix for SPT 4.1. If you\u2019re on 4.0 or earlier, nothing changes for you.</p>\n<ul>\n<li>Fixed mods installing to the wrong folder on SPT 4.1, 4.1 renamed the server folder from <code>SPT</code> to <code>SPT_Runtime</code>, and the Manager was picking the wrong one, creating a stray <code>user/mods</code> in your game root. It now identifies the server folder by the server executable itself.</li>\n<li>Fixed the Manager confirming its own mistake, a wrong install creates <code>user/mods</code> in the game root, which the old detection then read as proof it had guessed right. If you hit this, the saved path corrects itself next time you open the app.</li>\n<li>Fixed client mods breaking when you select the <code>SPT_Runtime</code> folder directly, the Manager treated it as your game folder too, so client mods went to <code>SPT_Runtime/BepInEx/plugins</code>, where the game never looks. It now recognises the parent folder as your installation.</li>\n</ul>\n<p><strong>If you were affected:</strong> open the Manager once and the saved path fixes itself. Mods already installed to the wrong place stay there, reinstall those through the Manager and they\u2019ll land correctly. A leftover <code>user/mods</code> in your game root is safe to delete afterwards.</p>\n",
+     "spt_constraint": "4.1.0",
+     "fika": "compatible",
+     "downloads": 8,
+     "size": 121841873,
+     "link": "https://forge.sp-tarkov.com/mod/download/2851/spt-mod-manager/0.4.6",
+     "published_at": "2026-08-09T05:23:00.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 14460,
+     "version": "0.4.5",
+     "description": "<p>Release 0.4.5</p>\n<ul>\n<li>Multi-part mods now actually switch together \u2014 0.4.4 showed the \u201c2-part package\u201d chip but the parts were never linked. Mods you already have are detected automatically, so there\u2019s nothing to reinstall.</li>\n<li>The SPT version check announced in 0.4.4 wasn\u2019t actually running. It works now: the Manager reads which SPT version a mod was built for, straight from the mod, and flags mismatches.</li>\n<li>Fixed disabling a mod leaving its prepatcher (BepInEx/patchers) running, and removing one when its patcher is a folder rather than a single file.</li>\n<li>Fixed showing \u201cupdate available\u201d for a version you already have, even when Forge is out of date about what you\u2019re running.</li>\n<li>Fixed leftover duplicate rows for a mod\u2019s loose files.</li>\n</ul>\n",
+     "spt_constraint": "4.1.0",
+     "fika": "compatible",
+     "downloads": 2705,
+     "size": 121841065,
+     "link": "https://forge.sp-tarkov.com/mod/download/2851/spt-mod-manager/0.4.5",
+     "published_at": "2026-08-04T03:01:00.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 14366,
+     "version": "0.4.4",
+     "description": "<p>Release 0.4.4</p>\n<ul>\n<li>Fixed disabling a mod leaving its prepatcher (BepInEx/patchers) still running.</li>\n<li>A mod\u2019s server and client halves are now handled as one package \u2014 disabling one switches both, and a chip on the row explains it.</li>\n<li>Update checking finds far more of your mods, and no longer gives up partway through a large install while calling the rest \u201cnot found\u201d.</li>\n<li>Conflict checking works on SPT 4.0 again \u2014 it was looking for data that 4.0 mods no longer ship, so it found nothing.</li>\n<li>New: checks whether a mod supports your SPT version, read from the mod itself, no internet needed.</li>\n</ul>\n<p>Package grouping applies to mods installed through the app from now on.</p>\n",
+     "spt_constraint": "4.1.0",
+     "fika": "compatible",
+     "downloads": 1624,
+     "size": 121838786,
+     "link": "https://forge.sp-tarkov.com/mod/download/2851/spt-mod-manager/0.4.4",
+     "published_at": "2026-08-02T01:40:00.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 14310,
+     "version": "0.4.3",
+     "description": "<p>Hotfix 0.4.3</p>\n<ul>\n<li>Fixed importing a mod list showing the differences but never downloading anything.</li>\n<li>Fixed some mods appearing twice, with a blank second entry. These clear up on their own.</li>\n</ul>\n",
+     "spt_constraint": "4",
+     "fika": "compatible",
+     "downloads": 731,
+     "size": 121833832,
+     "link": "https://forge.sp-tarkov.com/mod/download/2851/spt-mod-manager/0.4.3",
+     "published_at": "2026-07-31T15:53:00.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 14304,
+     "version": "0.4.2",
+     "description": "<p>Release 0.4.2</p>\n<ul>\n<li>Fixed installing certain mods overwriting SPT\u2019s core files, which left the game unable to start.</li>\n<li>Update checks are much faster after the first one, and you can now update straight from the app.</li>\n<li>Mods that ship a DLL plus a data folder no longer appear twice, and more mods now show their version and author.</li>\n<li>Restoring an imported mod list now works on large lists.</li>\n<li>Fixed reporting an update to the version you already have.</li>\n</ul>\n<p>Listing fixes apply to mods installed from now on \u2014 reinstalling a mod through the app cleans up its existing entry.</p>\n",
+     "spt_constraint": "4",
+     "fika": "compatible",
+     "downloads": 533,
+     "size": 121833112,
+     "link": "https://forge.sp-tarkov.com/mod/download/2851/spt-mod-manager/0.4.2",
+     "published_at": "2026-07-31T00:25:00.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 14293,
+     "version": "0.4.1",
+     "description": "<p>Hotfix 0.4.1</p>\n<ul>\n<li>Fixed mods that ship their server files inside an SPT/ folder being installed to the wrong place, where SPT can\u2019t load them.</li>\n<li>Fixed a mod\u2019s loose files (configs and similar) showing as a separate \u201cOrphan\u201d entry \u2014 they now belong to the mod and are removed with it.</li>\n<li>Same fix now covers packages that install both a server and a client part.</li>\n</ul>\n<p>Applies to mods installed from now on. Reinstall a mod through the app to clean up its existing entries.</p>\n",
+     "spt_constraint": "4",
+     "fika": "compatible",
+     "downloads": 231,
+     "size": 175284689,
+     "link": "https://forge.sp-tarkov.com/mod/download/2851/spt-mod-manager/0.4.1",
+     "published_at": "2026-07-30T01:20:00.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 14287,
+     "version": "0.4.0",
+     "description": "<p>Release 0.4.0</p>\n<ul>\n<li>Mods now show their name, author and version - SPT 4.0 moved this data inside the mod\u2019s DLL, and the manager now reads it from there.</li>\n<li>Update checking now finds mods reliably (matched by GUID) and no longer gets stuck.</li>\n<li>Fixed some mods showing nonsense as the author.</li>\n<li>Fixed multi-GB content mods failing to download or extract.</li>\n<li>The manager now tells you when a new version is released.</li>\n</ul>\n<p>Mods listed as Manual were installed outside the app, so they rely only on what their DLL exposes. Reinstalling them through the app fills in the missing author and version.</p>\n",
+     "spt_constraint": "4",
+     "fika": "compatible",
+     "downloads": 60,
+     "size": 175283249,
+     "link": "https://forge.sp-tarkov.com/mod/download/2851/spt-mod-manager/0.4.0",
+     "published_at": "2026-07-29T23:54:00.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 14276,
+     "version": "0.3.2",
+     "description": "<p>Hotfix 0.3.2</p>\n<ul>\n<li>Fixed the SPT Version dropdown getting stuck on the placeholder after selecting an SPT installation for the first time.</li>\n</ul>\n",
+     "spt_constraint": "4",
+     "fika": "compatible",
+     "downloads": 233,
+     "size": 175284226,
+     "link": "https://forge.sp-tarkov.com/mod/download/2851/spt-mod-manager/0.3.2",
+     "published_at": "2026-07-28T21:02:00.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 14259,
+     "version": "0.3.1",
+     "description": "<h2>Hotfix 0.3.1</h2>\n<ul>\n<li>Removed the server mod load order feature, SPT 4.x manages mod loading order internally, making manual reordering obsolete.</li>\n</ul>\n<p>Thanks to everyone who reported issues and provided feedback!</p>\n",
+     "spt_constraint": "4",
+     "fika": "compatible",
+     "downloads": 261,
+     "size": 175294265,
+     "link": "https://forge.sp-tarkov.com/mod/download/2851/spt-mod-manager/0.3.1",
+     "published_at": "2026-07-27T22:06:00.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 14258,
+     "version": "0.3.0",
+     "description": "<h2>v0.3.0</h2>\n<ul>\n<li>Importing a modlist now auto-downloads and installs any missing mods directly from Forge</li>\n<li>Fixed an issue where mods were being installed into the wrong SPT folder structure</li>\n</ul>\n",
+     "spt_constraint": "4.",
+     "fika": "unknown",
+     "downloads": 94,
+     "size": 175296154,
+     "link": "https://forge.sp-tarkov.com/mod/download/2851/spt-mod-manager/0.3.0",
+     "published_at": "2026-07-27T19:38:00.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "0.4.6",
+   "spt_constraint": "4.1.0",
+   "all_spt_constraints": [
+    "4",
+    "4.",
+    "4.1.0"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-07-27T19:03:00.000000Z",
+   "updated_at": "2026-08-09T05:27:02.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": true,
+    "ai_disclosure": "<p>AI tools were used extensively throughout this project\u2019s development, including analyzing code and debugging portions of the codebase, and helping structure parts of the application. The overall design, feature decisions, and testing were done by me, with AI acting as a coding assistant throughout the process.</p>\n",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge"
+  },
+  {
    "id": 1480,
    "hub_id": 2038,
    "guid": null,
@@ -94211,173 +94506,6 @@
     "contains_ads": false,
     "contains_ai_content": false,
     "ai_disclosure": "",
-    "cheat_notice": false,
-    "profile_binding_notice": false
-   },
-   "origin": "forge"
-  },
-  {
-   "id": 2851,
-   "hub_id": null,
-   "guid": "com.nevek20.sptmodmanager",
-   "name": "SPT Mod Manager",
-   "slug": "spt-mod-manager",
-   "teaser": "Open-source mod manager for SPT featuring easy installation, management and Forge integration.",
-   "description_html": "<h2>SPT Mod Manager</h2>\n<p>A Vortex/MO2-style mod manager built specifically for Single Player Tarkov. It came out of a real pain point: I got tired of having to hunt down files one by one just to uninstall a mod that was causing conflicts, so I decided to build a tool that would solve that for good.</p>\n<h3>What it does</h3>\n<ul>\n<li>Installs <code>.zip</code>, <code>.7z</code>, and <code>.rar</code> mods with automatic structure detection (Server, Client, or Hybrid)</li>\n<li>Enable/disable mods without deleting anything</li>\n<li>Rename, uninstall, and reinstall mods (reinstall works if you still have the original archive)</li>\n<li>Export and import mod lists</li>\n<li>Conflict detection by name (still basic, but improving)</li>\n<li>Forge integration: browse and install mods directly from the app, view mod info, download the right version, and check for updates</li>\n<li>Bilingual UI (PT-BR and EN)</li>\n</ul>\n<h3>Installation</h3>\n<p>Download the <code>.zip</code>, run the <code>.exe</code>. It installs everything automatically and creates a desktop shortcut.</p>\n<h3>Current limitations</h3>\n<ul>\n<li>Only tested with compressed archives (no folder-based installs yet)</li>\n<li>Doesn\u2019t modify any SPT core files (only copies/organizes)</li>\n<li>Fully tested and supported only on the latest SPT version (older versions should work, but without guarantees)</li>\n<li>Windows only for now (Linux/macOS support planned, but i need to refine the Mod Manager first)</li>\n</ul>\n<p>Personal project, not affiliated with the SPT team or Battlestate Games.</p>\n",
-   "thumbnail": "https://forge-static.sp-tarkov.com/mods/vrJPEuHFoXvwoCAoMn5Zzo9JM3ekLGPqfjOjeZ4a.png",
-   "forge_url": "https://forge.sp-tarkov.com/mod/2851/spt-mod-manager",
-   "downloads": 6421,
-   "favourites": 23,
-   "featured": false,
-   "fika": true,
-   "fika_latest": "compatible",
-   "category": {
-    "id": 17,
-    "title": "Other",
-    "slug": "other"
-   },
-   "license": {
-    "name": "MIT License",
-    "link": "https://choosealicense.com/licenses/mit/"
-   },
-   "authors": [
-    {
-     "id": 117466,
-     "name": "TioEmir",
-     "avatar": "https://forge-static.sp-tarkov.com/profile-photos/fPjDjjdxZLnsV2U53bPIJ0YDguFdUNcCRBU8nTp5_128w.webp"
-    }
-   ],
-   "source_links": [
-    {
-     "url": "https://github.com/Nevek20/SPT_Mod_Manager",
-     "label": ""
-    }
-   ],
-   "versions": [
-    {
-     "id": 14460,
-     "version": "0.4.5",
-     "description": "<p>Release 0.4.5</p>\n<ul>\n<li>Multi-part mods now actually switch together \u2014 0.4.4 showed the \u201c2-part package\u201d chip but the parts were never linked. Mods you already have are detected automatically, so there\u2019s nothing to reinstall.</li>\n<li>The SPT version check announced in 0.4.4 wasn\u2019t actually running. It works now: the Manager reads which SPT version a mod was built for, straight from the mod, and flags mismatches.</li>\n<li>Fixed disabling a mod leaving its prepatcher (BepInEx/patchers) running, and removing one when its patcher is a folder rather than a single file.</li>\n<li>Fixed showing \u201cupdate available\u201d for a version you already have, even when Forge is out of date about what you\u2019re running.</li>\n<li>Fixed leftover duplicate rows for a mod\u2019s loose files.</li>\n</ul>\n",
-     "spt_constraint": "4.1.0",
-     "fika": "compatible",
-     "downloads": 2667,
-     "size": 121841065,
-     "link": "https://forge.sp-tarkov.com/mod/download/2851/spt-mod-manager/0.4.5",
-     "published_at": "2026-08-04T03:01:00.000000Z",
-     "dependencies": []
-    },
-    {
-     "id": 14366,
-     "version": "0.4.4",
-     "description": "<p>Release 0.4.4</p>\n<ul>\n<li>Fixed disabling a mod leaving its prepatcher (BepInEx/patchers) still running.</li>\n<li>A mod\u2019s server and client halves are now handled as one package \u2014 disabling one switches both, and a chip on the row explains it.</li>\n<li>Update checking finds far more of your mods, and no longer gives up partway through a large install while calling the rest \u201cnot found\u201d.</li>\n<li>Conflict checking works on SPT 4.0 again \u2014 it was looking for data that 4.0 mods no longer ship, so it found nothing.</li>\n<li>New: checks whether a mod supports your SPT version, read from the mod itself, no internet needed.</li>\n</ul>\n<p>Package grouping applies to mods installed through the app from now on.</p>\n",
-     "spt_constraint": "4.1.0",
-     "fika": "compatible",
-     "downloads": 1623,
-     "size": 121838786,
-     "link": "https://forge.sp-tarkov.com/mod/download/2851/spt-mod-manager/0.4.4",
-     "published_at": "2026-08-02T01:40:00.000000Z",
-     "dependencies": []
-    },
-    {
-     "id": 14310,
-     "version": "0.4.3",
-     "description": "<p>Hotfix 0.4.3</p>\n<ul>\n<li>Fixed importing a mod list showing the differences but never downloading anything.</li>\n<li>Fixed some mods appearing twice, with a blank second entry. These clear up on their own.</li>\n</ul>\n",
-     "spt_constraint": "4",
-     "fika": "compatible",
-     "downloads": 724,
-     "size": 121833832,
-     "link": "https://forge.sp-tarkov.com/mod/download/2851/spt-mod-manager/0.4.3",
-     "published_at": "2026-07-31T15:53:00.000000Z",
-     "dependencies": []
-    },
-    {
-     "id": 14304,
-     "version": "0.4.2",
-     "description": "<p>Release 0.4.2</p>\n<ul>\n<li>Fixed installing certain mods overwriting SPT\u2019s core files, which left the game unable to start.</li>\n<li>Update checks are much faster after the first one, and you can now update straight from the app.</li>\n<li>Mods that ship a DLL plus a data folder no longer appear twice, and more mods now show their version and author.</li>\n<li>Restoring an imported mod list now works on large lists.</li>\n<li>Fixed reporting an update to the version you already have.</li>\n</ul>\n<p>Listing fixes apply to mods installed from now on \u2014 reinstalling a mod through the app cleans up its existing entry.</p>\n",
-     "spt_constraint": "4",
-     "fika": "compatible",
-     "downloads": 533,
-     "size": 121833112,
-     "link": "https://forge.sp-tarkov.com/mod/download/2851/spt-mod-manager/0.4.2",
-     "published_at": "2026-07-31T00:25:00.000000Z",
-     "dependencies": []
-    },
-    {
-     "id": 14293,
-     "version": "0.4.1",
-     "description": "<p>Hotfix 0.4.1</p>\n<ul>\n<li>Fixed mods that ship their server files inside an SPT/ folder being installed to the wrong place, where SPT can\u2019t load them.</li>\n<li>Fixed a mod\u2019s loose files (configs and similar) showing as a separate \u201cOrphan\u201d entry \u2014 they now belong to the mod and are removed with it.</li>\n<li>Same fix now covers packages that install both a server and a client part.</li>\n</ul>\n<p>Applies to mods installed from now on. Reinstall a mod through the app to clean up its existing entries.</p>\n",
-     "spt_constraint": "4",
-     "fika": "compatible",
-     "downloads": 230,
-     "size": 175284689,
-     "link": "https://forge.sp-tarkov.com/mod/download/2851/spt-mod-manager/0.4.1",
-     "published_at": "2026-07-30T01:20:00.000000Z",
-     "dependencies": []
-    },
-    {
-     "id": 14287,
-     "version": "0.4.0",
-     "description": "<p>Release 0.4.0</p>\n<ul>\n<li>Mods now show their name, author and version - SPT 4.0 moved this data inside the mod\u2019s DLL, and the manager now reads it from there.</li>\n<li>Update checking now finds mods reliably (matched by GUID) and no longer gets stuck.</li>\n<li>Fixed some mods showing nonsense as the author.</li>\n<li>Fixed multi-GB content mods failing to download or extract.</li>\n<li>The manager now tells you when a new version is released.</li>\n</ul>\n<p>Mods listed as Manual were installed outside the app, so they rely only on what their DLL exposes. Reinstalling them through the app fills in the missing author and version.</p>\n",
-     "spt_constraint": "4",
-     "fika": "compatible",
-     "downloads": 59,
-     "size": 175283249,
-     "link": "https://forge.sp-tarkov.com/mod/download/2851/spt-mod-manager/0.4.0",
-     "published_at": "2026-07-29T23:54:00.000000Z",
-     "dependencies": []
-    },
-    {
-     "id": 14276,
-     "version": "0.3.2",
-     "description": "<p>Hotfix 0.3.2</p>\n<ul>\n<li>Fixed the SPT Version dropdown getting stuck on the placeholder after selecting an SPT installation for the first time.</li>\n</ul>\n",
-     "spt_constraint": "4",
-     "fika": "compatible",
-     "downloads": 232,
-     "size": 175284226,
-     "link": "https://forge.sp-tarkov.com/mod/download/2851/spt-mod-manager/0.3.2",
-     "published_at": "2026-07-28T21:02:00.000000Z",
-     "dependencies": []
-    },
-    {
-     "id": 14259,
-     "version": "0.3.1",
-     "description": "<h2>Hotfix 0.3.1</h2>\n<ul>\n<li>Removed the server mod load order feature, SPT 4.x manages mod loading order internally, making manual reordering obsolete.</li>\n</ul>\n<p>Thanks to everyone who reported issues and provided feedback!</p>\n",
-     "spt_constraint": "4",
-     "fika": "compatible",
-     "downloads": 260,
-     "size": 175294265,
-     "link": "https://forge.sp-tarkov.com/mod/download/2851/spt-mod-manager/0.3.1",
-     "published_at": "2026-07-27T22:06:00.000000Z",
-     "dependencies": []
-    },
-    {
-     "id": 14258,
-     "version": "0.3.0",
-     "description": "<h2>v0.3.0</h2>\n<ul>\n<li>Importing a modlist now auto-downloads and installs any missing mods directly from Forge</li>\n<li>Fixed an issue where mods were being installed into the wrong SPT folder structure</li>\n</ul>\n",
-     "spt_constraint": "4.",
-     "fika": "unknown",
-     "downloads": 93,
-     "size": 175296154,
-     "link": "https://forge.sp-tarkov.com/mod/download/2851/spt-mod-manager/0.3.0",
-     "published_at": "2026-07-27T19:38:00.000000Z",
-     "dependencies": []
-    }
-   ],
-   "latest_version": "0.4.5",
-   "spt_constraint": "4.1.0",
-   "all_spt_constraints": [
-    "4",
-    "4.",
-    "4.1.0"
-   ],
-   "dependencies": [],
-   "all_dependencies": [],
-   "published_at": "2026-07-27T19:03:00.000000Z",
-   "updated_at": "2026-08-09T01:18:29.000000Z",
-   "flags": {
-    "contains_ads": false,
-    "contains_ai_content": true,
-    "ai_disclosure": "<p>AI tools were used extensively throughout this project\u2019s development, including analyzing code and debugging portions of the codebase, and helping structure parts of the application. The overall design, feature decisions, and testing were done by me, with AI acting as a coding assistant throughout the process.</p>\n",
     "cheat_notice": false,
     "profile_binding_notice": false
    },
@@ -125295,6 +125423,100 @@
    "origin": "forge"
   },
   {
+   "id": 2519,
+   "hub_id": null,
+   "guid": "com.acidphantasm.armbandsforall",
+   "name": "Armbands For All",
+   "slug": "armbands-for-all",
+   "teaser": "Nothing against people with no arms, but all bots have arms...why not armbands?",
+   "description_html": "<p>Mod Features</p>\n<ul>\n<li>Allows all bots to have an armband slot</li>\n</ul>\n<p>This mod does not change the behaviour of the slot, nor any armbands. Nor does it actually ADD any armbands to bots.</p>\n<hr />\n<p>If you actually want bots to have armbands, might I suggest using <a target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/1594/apbs-acids-progressive-bot-system\" rel=\"noreferrer noopener\">APBS</a>.</p>\n<p>By default, it can put armbands on scavs, rogues, raiders, and boss guards.</p>\n<hr />\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">INSTALLATION</div>\n<div class=\"tab-content\"><ol>\n<li>Download Armbands for All</li>\n<li>Open the downloaded zip file in 7-zip</li>\n<li>Select the BepInEx folders in the zip file in 7-zip</li>\n<li>Drag the BepInEx folders from 7-zip into your SPT folder</li>\n</ol>\n<p>Demonstration Video (yoink):</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/mZ1aLrW.gif\" alt=\"mZ1aLrW.gif\" /></p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">UNINSTALLATION</div>\n<div class=\"tab-content\"><ol>\n<li>Delete <code>/ROOTSPT/Bepinex/plugins/acidphantasm-armbandsforall</code></li>\n<li>Done</li>\n</ol></div></div></div>\n<p>If you enjoy my work - you can <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/acidphantasm\" rel=\"noreferrer noopener\">buy me a coffee</a>~</p>\n",
+   "thumbnail": "https://forge-static.sp-tarkov.com/mods/nih4uFx9Wv9RldbmsCiFiGEUYq9aRR1CjdY3rWan.png",
+   "forge_url": "https://forge.sp-tarkov.com/mod/2519/armbands-for-all",
+   "downloads": 3188,
+   "favourites": 19,
+   "featured": false,
+   "fika": false,
+   "fika_latest": "unknown",
+   "category": {
+    "id": 5,
+    "title": "Bots",
+    "slug": "bots"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 48110,
+     "name": "acidphantasm",
+     "avatar": "https://forge-static.sp-tarkov.com/profile-photos/539f89fb275187ce761506de5f60c3a09690ee32_128w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/acidphantasm/armbandsforall/",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 14576,
+     "version": "1.1.0",
+     "description": "<h3><strong>This version will only work for SPT 4.1.x</strong></h3>\n<p>4.1 Update</p>\n<p>New Features</p>\n<ul>\n<li>Armbands are actually lootable now from non-pmcs (still must use a mod like APBS to get them to have them)</li>\n</ul>\n",
+     "spt_constraint": "~4.1",
+     "fika": "unknown",
+     "downloads": 28,
+     "size": 6540,
+     "link": "https://forge.sp-tarkov.com/mod/download/2519/armbands-for-all/1.1.0",
+     "published_at": "2026-08-09T03:26:00.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 12704,
+     "version": "1.0.1",
+     "description": "<h3><strong>This version will only work for SPT 4.0.x</strong></h3>\n<p>Fixed up transpiler patch (my first one ever) just to be more robust - Thanks Drakia!</p>\n",
+     "spt_constraint": "~4.0.0",
+     "fika": "unknown",
+     "downloads": 3103,
+     "size": 6448,
+     "link": "https://forge.sp-tarkov.com/mod/download/2519/armbands-for-all/1.0.1",
+     "published_at": "2025-12-29T07:22:00.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 12703,
+     "version": "1.0.0",
+     "description": "<h3><strong>This version will only work for SPT 4.0.x</strong></h3>\n<p>Initial Release</p>\n<p>Fika compatibility is unknown, if you test it and it works AND LET ME KNOW, I\u2019ll update the mod page.</p>\n",
+     "spt_constraint": "~4.0.0",
+     "fika": "unknown",
+     "downloads": 57,
+     "size": 6419,
+     "link": "https://forge.sp-tarkov.com/mod/download/2519/armbands-for-all/1.0.0",
+     "published_at": "2025-12-29T06:34:00.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "1.1.0",
+   "spt_constraint": "~4.1",
+   "all_spt_constraints": [
+    "~4.0.0",
+    "~4.1"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2025-12-29T06:32:00.000000Z",
+   "updated_at": "2026-08-09T03:30:05.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge"
+  },
+  {
    "id": 481,
    "hub_id": 683,
    "guid": null,
@@ -126292,87 +126514,6 @@
    "all_dependencies": [],
    "published_at": "2023-10-15T07:13:54.000000Z",
    "updated_at": "2026-07-07T16:58:51.000000Z",
-   "flags": {
-    "contains_ads": false,
-    "contains_ai_content": false,
-    "ai_disclosure": "",
-    "cheat_notice": false,
-    "profile_binding_notice": false
-   },
-   "origin": "forge"
-  },
-  {
-   "id": 2519,
-   "hub_id": null,
-   "guid": "com.acidphantasm.armbandsforall",
-   "name": "Armbands For All",
-   "slug": "armbands-for-all",
-   "teaser": "Nothing against people with no arms, but all bots have arms...why not armbands?",
-   "description_html": "<p>Mod Features</p>\n<ul>\n<li>Allows all bots to have an armband slot</li>\n</ul>\n<p>This mod does not change the behaviour of the slot, nor any armbands. Nor does it actually ADD any armbands to bots.</p>\n<hr />\n<p>If you actually want bots to have armbands, might I suggest using <a target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/1594/apbs-acids-progressive-bot-system\" rel=\"noreferrer noopener\">APBS</a>.</p>\n<p>By default, it can put armbands on scavs, rogues, raiders, and boss guards.</p>\n<hr />\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">INSTALLATION</div>\n<div class=\"tab-content\"><ol>\n<li>Download Armbands for All</li>\n<li>Open the downloaded zip file in 7-zip</li>\n<li>Select the BepInEx folders in the zip file in 7-zip</li>\n<li>Drag the BepInEx folders from 7-zip into your SPT folder</li>\n</ol>\n<p>Demonstration Video (yoink):</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/mZ1aLrW.gif\" alt=\"mZ1aLrW.gif\" /></p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">UNINSTALLATION</div>\n<div class=\"tab-content\"><ol>\n<li>Delete <code>/ROOTSPT/Bepinex/plugins/acidphantasm-armbandsforall</code></li>\n<li>Done</li>\n</ol></div></div></div>\n<p>If you enjoy my work - you can <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/acidphantasm\" rel=\"noreferrer noopener\">buy me a coffee</a>~</p>\n",
-   "thumbnail": "https://forge-static.sp-tarkov.com/mods/nih4uFx9Wv9RldbmsCiFiGEUYq9aRR1CjdY3rWan.png",
-   "forge_url": "https://forge.sp-tarkov.com/mod/2519/armbands-for-all",
-   "downloads": 3145,
-   "favourites": 18,
-   "featured": false,
-   "fika": false,
-   "fika_latest": "unknown",
-   "category": {
-    "id": 5,
-    "title": "Bots",
-    "slug": "bots"
-   },
-   "license": {
-    "name": "MIT License",
-    "link": "https://choosealicense.com/licenses/mit/"
-   },
-   "authors": [
-    {
-     "id": 48110,
-     "name": "acidphantasm",
-     "avatar": "https://forge-static.sp-tarkov.com/profile-photos/539f89fb275187ce761506de5f60c3a09690ee32_128w.webp"
-    }
-   ],
-   "source_links": [
-    {
-     "url": "https://github.com/acidphantasm/armbandsforall/",
-     "label": ""
-    }
-   ],
-   "versions": [
-    {
-     "id": 12704,
-     "version": "1.0.1",
-     "description": "<h3><strong>This version will only work for SPT 4.0.x</strong></h3>\n<p>Fixed up transpiler patch (my first one ever) just to be more robust - Thanks Drakia!</p>\n",
-     "spt_constraint": "~4.0.0",
-     "fika": "unknown",
-     "downloads": 3089,
-     "size": 6448,
-     "link": "https://forge.sp-tarkov.com/mod/download/2519/armbands-for-all/1.0.1",
-     "published_at": "2025-12-29T07:22:00.000000Z",
-     "dependencies": []
-    },
-    {
-     "id": 12703,
-     "version": "1.0.0",
-     "description": "<h3><strong>This version will only work for SPT 4.0.x</strong></h3>\n<p>Initial Release</p>\n<p>Fika compatibility is unknown, if you test it and it works AND LET ME KNOW, I\u2019ll update the mod page.</p>\n",
-     "spt_constraint": "~4.0.0",
-     "fika": "unknown",
-     "downloads": 56,
-     "size": 6419,
-     "link": "https://forge.sp-tarkov.com/mod/download/2519/armbands-for-all/1.0.0",
-     "published_at": "2025-12-29T06:34:00.000000Z",
-     "dependencies": []
-    }
-   ],
-   "latest_version": "1.0.1",
-   "spt_constraint": "~4.0.0",
-   "all_spt_constraints": [
-    "~4.0.0"
-   ],
-   "dependencies": [],
-   "all_dependencies": [],
-   "published_at": "2025-12-29T06:32:00.000000Z",
-   "updated_at": "2026-07-28T07:19:05.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,

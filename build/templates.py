@@ -478,6 +478,34 @@ def repo_host_label(url):
             "codeberg.org": "Codeberg", "gitea.com": "Gitea"}.get(host, host)
 
 
+DOWNLOAD_ICON = (
+    '<svg viewBox="0 0 16 16" width="22" height="22" aria-hidden="true"'
+    ' focusable="false" fill="none" stroke="currentColor" stroke-width="1.5"'
+    ' stroke-linecap="round" stroke-linejoin="round">'
+    '<path d="M8 2v7.5"/><path d="M4.75 6.5 8 9.75l3.25-3.25"/>'
+    '<path d="M3 12.75h10"/></svg>')
+
+
+def releases_url(links):
+    """The releases page of the first repository we can name.
+
+    Source URLs often point into a repository rather than at it, so reduce to
+    owner/repo before appending the host's releases path.
+    """
+    for link in links:
+        url = link.get("url", "")
+        parts = [p for p in url.split("//")[-1].split("/")[1:] if p]
+        if len(parts) < 2:
+            continue
+        host = url.split("//")[-1].split("/")[0].lower().removeprefix("www.")
+        base = "/".join(url.split("/")[:3] + [parts[0], parts[1].removesuffix(".git")])
+        if host == "gitlab.com":
+            return base + "/-/releases"
+        if host in ("github.com", "codeberg.org", "gitea.com"):
+            return base + "/releases"
+    return ""
+
+
 def render_source_links(links, repos):
     """One row per repository: what it is, then how it is doing."""
     if not links:
@@ -504,6 +532,7 @@ def render_source_links(links, repos):
 
 def render_facts_and_source(mod, repos, facts_html):
     """Key numbers and repositories side by side, to halve the page height."""
+    releases = releases_url(mod["source_links"])
     forge_link = (f'<p class="forgelink"><a href="{e(mod["forge_url"])}" '
                   f'target="_blank" rel="noopener noreferrer">Original Forge '
                   f'page</a> <span class="label">offline after shutdown</span></p>'
@@ -515,7 +544,12 @@ def render_facts_and_source(mod, repos, facts_html):
     <div class="facts">{facts_html}</div>
   </section>
   <section class="panel">
-    <h2>Source</h2>
+    <div class="sourcehead">
+      <h2>Source</h2>
+      {f'<a class="sourcedl" href="{e(releases)}" target="_blank" '
+       f'rel="noopener noreferrer" title="Downloads / releases" '
+       f'aria-label="Downloads and releases">{DOWNLOAD_ICON}</a>' if releases else ''}
+    </div>
     {render_source_links(mod['source_links'], repos)}
     {forge_link}
   </section>

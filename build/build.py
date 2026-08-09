@@ -33,6 +33,11 @@ DATA = os.path.join(HERE, "data")
 SITE = os.path.join(HERE, "site")
 ASSETS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "assets")
 
+# Absolute URLs are required in a sitemap, and a static build has no way to
+# know where it will be served from -- so this is the one place the deployment
+# URL is written down. Override with --base-url when hosting elsewhere.
+BASE_URL = "https://tekunogosu.github.io/sptmodarchive"
+
 
 # --- loading -------------------------------------------------------------
 
@@ -154,7 +159,7 @@ def index_entry(mod, comment_count, images=None, repos=None):
         "name": mod["name"],
         "href": "mod/" + href_for(mod),
         "authors": ", ".join(a["name"] for a in mod["authors"]) or "Unknown",
-        "teaser": to_text(mod["teaser"], 180),
+        "teaser": to_text(mod["teaser"]),
         # The index lives at the site root, so no "../" prefix here.
         "thumbnail": templates.local_image(mod["thumbnail"], images or {}),
         "category": category.get("slug", ""),
@@ -165,6 +170,7 @@ def index_entry(mod, comment_count, images=None, repos=None):
         "published": mod["published_at"][:10],
         "spt": versions,
         "spt_latest": templates.spt_label(mod["spt_constraint"]),
+        "version": mod["latest_version"],
         "dep_count": len(mod["dependencies"]),
         "comments": comment_count,
         "sources": len(mod["source_links"]),
@@ -212,6 +218,42 @@ def facets(mods):
     return sorted(categories.values(), key=lambda c: -c["count"]), spt_facets
 
 
+# --- crawler files -------------------------------------------------------
+
+def write_sitemap_and_robots(base_url, pages):
+    """A sitemap of every page, and a robots.txt pointing crawlers at it.
+
+    `pages` is (path relative to site root, last-modified date or ""). Only
+    real pages are listed -- assets and images are reachable from them and add
+    nothing to a crawler's picture of the archive.
+    """
+    base = base_url.rstrip("/")
+    today = time.strftime("%Y-%m-%d")
+
+    entries = []
+    for path, lastmod in pages:
+        loc = f"{base}/{path}".replace("&", "&amp;")
+        stamp = (lastmod or today)[:10]
+        # The index changes with every scrape; a mod page only when that mod
+        # does, which is what makes crawling the archive cheap to repeat.
+        priority = "1.0" if path == "index.html" else "0.6"
+        entries.append(
+            f"  <url><loc>{loc}</loc><lastmod>{stamp}</lastmod>"
+            f"<priority>{priority}</priority></url>")
+
+    write(os.path.join(SITE, "sitemap.xml"),
+          '<?xml version="1.0" encoding="UTF-8"?>\n'
+          '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+          + "\n".join(entries) + "\n</urlset>\n")
+
+    write(os.path.join(SITE, "robots.txt"),
+          "# SPT Mod Archive — everything here is public and crawlable.\n"
+          "User-agent: *\n"
+          "Allow: /\n\n"
+          f"Sitemap: {base}/sitemap.xml\n")
+    return len(entries)
+
+
 # --- writing -------------------------------------------------------------
 
 def write(path, content):
@@ -220,7 +262,7 @@ def write(path, content):
         f.write(content)
 
 
-def build(limit=None):
+def build(limit=None, base_url=BASE_URL):
     started = time.time()
     archive = load_mods()
     mods = archive["mods"]
@@ -262,6 +304,8 @@ def build(limit=None):
                           "sources": [l["url"] for l in mod["source_links"]]}
               for mod in mods}
 
+    sitemap_pages = []
+
     os.makedirs(os.path.join(SITE, "mod"), exist_ok=True)
     for mod in mods:
         page = templates.render_mod(mod, threads.get(mod["id"]), known_ids,
@@ -269,6 +313,8 @@ def build(limit=None):
                                     href="mod/" + href_for(mod),
                                     lookup=lookup)
         write(os.path.join(SITE, "mod", href_for(mod)), page)
+        sitemap_pages.append(("mod/" + href_for(mod),
+                              templates.last_release(mod)))
 
     entries = [index_entry(mod, len(threads.get(mod["id"], {}).get("comments", [])),
                            images, repos)
@@ -289,6 +335,8 @@ def build(limit=None):
         for entry in mod_lists:
             write(os.path.join(SITE, "list", templates.list_href(entry)),
                   templates.render_list(entry, lookup))
+            sitemap_pages.append(("list/" + templates.list_href(entry),
+                                  entry.get("updated_at", "")))
         write(os.path.join(SITE, "lists.html"), templates.render_lists(mod_lists))
         print(f"  {len(mod_lists)} mod lists", file=sys.stderr)
 
@@ -320,6 +368,12 @@ def build(limit=None):
           "window.ARCHIVE_IDS=" + json.dumps(numeric_ids, separators=(",", ":"))
           + ";\n")
 
+    sitemap_pages = ([("index.html", ""), ("all-mods.html", "")]
+                     + ([("lists.html", "")] if mod_lists else [])
+                     + sitemap_pages)
+    listed = write_sitemap_and_robots(base_url, sitemap_pages)
+    print(f"  sitemap: {listed} pages", file=sys.stderr)
+
     total_comments = sum(len(t["comments"]) for t in threads.values())
     size = os.path.getsize(os.path.join(SITE, "index.html")) / 1e6
 
@@ -337,8 +391,10 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--limit", type=int, help="only build the top N mods")
+    ap.add_argument("--base-url", default=BASE_URL,
+                    help="absolute URL the site is served from")
     args = ap.parse_args()
-    return build(args.limit)
+    return build(args.limit, args.base_url)
 
 
 if __name__ == "__main__":

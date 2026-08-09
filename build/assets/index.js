@@ -269,6 +269,18 @@
     }).join(", ");
   }
 
+  /* Version and release date, from the newest version's publish date. The
+   * Forge's own "updated" field is a database timestamp -- bulk migrations set
+   * it on thousands of mods at once -- so it is not what gets shown here. */
+  function releaseLine(mod) {
+    var bits = [];
+    if (mod.version) bits.push("v" + esc(mod.version));
+    if (mod.updated) bits.push(esc(mod.updated));
+    return bits.length
+      ? '<span class="release">' + bits.join(" · ") + "</span>"
+      : "";
+  }
+
   function row(mod) {
     var thumb = mod.thumbnail
       ? '<img class="thumb" src="' + esc(mod.thumbnail) + '" alt="" loading="lazy">'
@@ -306,6 +318,7 @@
       ' downloads"><b>' + mod.downloads.toLocaleString() + "</b>" +
       DOWNLOAD_ICON + "</span>" +
       (mod.comments ? '<span>' + mod.comments + " comments</span>" : "") +
+      releaseLine(mod) +
       "</div>" +
       "</div>" +
       '<div class="modfoot">' + stars +
