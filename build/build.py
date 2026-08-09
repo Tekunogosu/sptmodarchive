@@ -66,6 +66,18 @@ def load_images():
         return json.load(f).get("images", {})
 
 
+def load_lists():
+    """Archived Forge mod lists. Absent until scrape_lists.py runs."""
+    path = os.path.join(DATA, "lists.json")
+    if not os.path.exists(path):
+        return []
+    with open(path) as f:
+        try:
+            return json.load(f).get("lists", [])
+        except json.JSONDecodeError:
+            return []
+
+
 def load_comments():
     """Archived threads, keyed by mod id. Missing files simply mean not scraped."""
     directory = os.path.join(DATA, "comments")
@@ -153,7 +165,7 @@ def index_entry(mod, comment_count, images=None, repos=None):
         "published": mod["published_at"][:10],
         "spt": versions,
         "spt_latest": templates.spt_label(mod["spt_constraint"]),
-        "dep_count": len(mod.get("all_dependencies") or []),
+        "dep_count": len(mod["dependencies"]),
         "comments": comment_count,
         "sources": len(mod["source_links"]),
         "source_urls": [link["url"] for link in mod["source_links"]],
@@ -161,8 +173,7 @@ def index_entry(mod, comment_count, images=None, repos=None):
         "stars": stars,
         "repo_url": repo_url,
         "repo_host": (repo_url.split("/")[2] if repo_url.startswith("http") else ""),
-        "deps": [d["id"] for d in (mod.get("all_dependencies") or [])
-                 if d.get("id")],
+        "deps": [d["id"] for d in mod["dependencies"] if d.get("id")],
         "search": search_blob(mod, repos or {}),
     }
 
@@ -245,6 +256,9 @@ def build(limit=None):
     known_ids = {mod["id"]: href_for(mod) for mod in mods}
     lookup = {mod["id"]: {"id": mod["id"], "name": mod["name"],
                           "href": "mod/" + href_for(mod),
+                          # Root-relative; pages one level deep prefix "../".
+                          "thumb": templates.local_image(mod["thumbnail"], images),
+                          "teaser": mod["teaser"],
                           "sources": [l["url"] for l in mod["source_links"]]}
               for mod in mods}
 
@@ -267,6 +281,16 @@ def build(limit=None):
     write(os.path.join(SITE, "index.html"),
           templates.render_index(index_json, categories, spt_lines, stats))
     write(os.path.join(SITE, "all-mods.html"), templates.render_all_mods(entries))
+
+    # Mod lists: curated modpacks, each rendered with its mods resolved
+    # against the archive so every entry is a working link.
+    mod_lists = load_lists()
+    if mod_lists:
+        for entry in mod_lists:
+            write(os.path.join(SITE, "list", templates.list_href(entry)),
+                  templates.render_list(entry, lookup))
+        write(os.path.join(SITE, "lists.html"), templates.render_lists(mod_lists))
+        print(f"  {len(mod_lists)} mod lists", file=sys.stderr)
 
     assets_out = os.path.join(SITE, "assets")
     os.makedirs(assets_out, exist_ok=True)

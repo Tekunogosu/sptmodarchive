@@ -319,8 +319,9 @@
   function updateCount() {
     var fika = 0;
     for (var i = 0; i < visible.length; i++) if (visible[i].fika) fika++;
-    els.count.textContent = "Showing " + visible.length.toLocaleString() +
-      (visible.length === 1 ? " mod" : " mods");
+    els.count.innerHTML = 'Showing <span class="num">' +
+      visible.length.toLocaleString() + "</span> " +
+      (visible.length === 1 ? "mod" : "mods");
     els.fikaCount.textContent = fika
       ? fika.toLocaleString() + " Fika compatible"
       : "";

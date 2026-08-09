@@ -68,7 +68,8 @@ a:hover { text-decoration: underline; }
 .archived { color: var(--muted); font-size: 13px; white-space: nowrap; }
 .archived strong { color: var(--accent); font-size: 15px; }
 .counts { display: flex; flex-direction: column; gap: 2px; }
-#count { color: var(--text); font-weight: 600; }
+#count { color: var(--muted); font-weight: 600; }
+#count .num, .listcard .statnums b { color: var(--accent); }
 .subcount { color: var(--faint); font-size: 12px; }
 .tagline { margin: 0; color: var(--muted); font-size: 13.5px; }
 .tagline strong { color: var(--text); font-weight: 600; }
@@ -122,7 +123,8 @@ input:focus, select:focus {
 }
 .linkbtn:hover { color: var(--text); border-color: var(--faint); }
 
-.resultactions { display: flex; gap: 8px; }
+.resultactions { display: flex; gap: 12px; align-items: center; }
+.masthead-actions { display: flex; gap: 12px; align-items: center; }
 
 /* --- SPT version filter -------------------------------------------------- */
 
@@ -297,6 +299,37 @@ input:focus, select:focus {
 .to-top.show { opacity: 1; visibility: visible; }
 .to-top:hover { color: var(--accent); border-color: var(--accent-dim); }
 
+.listcard {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 14px;
+  align-items: center;
+  padding: 12px 14px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+.listcard:hover { border-color: var(--faint); }
+.listcard .badges { margin-top: 6px; }
+.linklist.listmods li { align-items: center; gap: 10px; }
+.listthumb {
+  flex: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 5px;
+  object-fit: cover;
+  background: var(--surface-2);
+  display: inline-block;
+}
+.textlink {
+  align-self: center;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.textlink:hover { text-decoration: underline; }
+
 /* --- badges ------------------------------------------------------------ */
 
 .badges { display: flex; flex-wrap: wrap; gap: 5px; }
@@ -398,6 +431,101 @@ button.badge:hover { border-color: var(--faint); filter: brightness(1.25); }
 .prose th, .prose td { border: 1px solid var(--line); padding: 6px 9px; text-align: left; }
 .prose h1, .prose h2, .prose h3 { font-size: 17px; margin: 18px 0 8px; }
 
+/* Details and Source share a row: both are short, and stacking them was the
+   single biggest contributor to mod-page height. */
+.splitcols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  align-items: start;
+}
+@media (max-width: 720px) { .splitcols { grid-template-columns: 1fr; } }
+/* The panels lose their own margin, so the row supplies the gap to whatever
+   follows it -- without this the tabs below sat flush against them. */
+.splitcols { margin-bottom: 16px; }
+
+/* Tags sit at the end of the author line, where there is full page width for
+   them -- inside a half-width panel a mod with several flags wrapped badly. */
+.bylinerow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+.bylinerow .badges { margin-left: auto; justify-content: flex-end; }
+/* Pinned explicitly so Details and Source match and neither depends on
+   browser defaults. Scoped to .splitcols: other panels keep the small
+   uppercase heading style. */
+.splitcols .panel > h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text);
+  text-transform: none;
+  letter-spacing: normal;
+}
+.splitcols .panel > h2 { margin-bottom: 12px; }
+.splitcols .panel { margin-bottom: 0; }
+/* Two fixed columns rather than auto-fit: in a half-width panel auto-fit made
+   three ~110px cells, which left License squeezed into the last one. Two
+   columns pair it with Published on the same row at roughly double the width. */
+.splitcols .facts { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 18px; }
+
+.sourcelist { list-style: none; margin: 0; padding: 0; }
+.sourcerow { padding: 7px 0; border-top: 1px solid var(--line); }
+.sourcerow:first-child { border-top: 0; padding-top: 0; }
+.sourcetop {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  align-items: baseline;
+}
+.sourcetop a { font-weight: 600; overflow-wrap: anywhere; }
+.host {
+  font-size: 11px;
+  color: var(--faint);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 1px 7px;
+}
+.sourcemeta { margin-top: 3px; }
+.sourcemeta .label { border: 0; padding: 0; color: var(--faint); font-size: 12px; }
+.forgelink { margin: 12px 0 0; font-size: 13px; }
+
+/* Dependency cards: enough to judge a mod without leaving the tab. */
+.deplist { list-style: none; margin: 0; padding: 0; display: flex;
+           flex-direction: column; gap: 10px; }
+.depcard {
+  display: grid;
+  grid-template-columns: 40px 1fr auto;
+  gap: 12px;
+  align-items: center;
+  padding: 10px 12px;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+.depcard:hover { border-color: var(--faint); }
+.depthumb {
+  width: 40px; height: 40px;
+  border-radius: 6px;
+  object-fit: cover;
+  background: var(--surface);
+  display: inline-block;
+}
+.depmain { min-width: 0; }
+.depname { font-weight: 600; font-size: 14.5px; }
+.depcard .teaser {
+  margin: 2px 0 0;
+  color: var(--muted);
+  font-size: 12.5px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
 /* --- versions ---------------------------------------------------------- */
 
 .versions { display: flex; flex-direction: column; gap: 10px; }
@@ -412,11 +540,14 @@ button.badge:hover { border-color: var(--faint); filter: brightness(1.25); }
 
 .mark {
   display: inline-flex;
+  align-self: center;
+  flex: none;
   align-items: center;
   justify-content: center;
   gap: 6px;
   min-width: 28px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   padding: 0 7px;
   background: var(--surface-2);
   color: var(--muted);
@@ -438,10 +569,25 @@ button.badge:hover { border-color: var(--faint); filter: brightness(1.25); }
 }
 /* The glyph is the state: + to add, ✓ once it is in the collection. */
 .mark.marked::before { content: "✓"; }
+.mark.marked .mark-plus { display: none; }
+
+/* Hovering a marked button previews what clicking will do: remove it. */
+.mark.marked:hover {
+  background: color-mix(in srgb, var(--warn) 20%, transparent);
+  border-color: color-mix(in srgb, var(--warn) 55%, transparent);
+  color: var(--warn);
+}
+.mark.marked:hover::before { content: "×"; }
+
+.mark .lbl-hover { display: none; }
+.mark.marked:hover .lbl-state { display: none; }
+.mark.marked:hover .lbl-hover { display: inline; }
 .mark:not(.marked).mark-wide::before { content: "+"; }
 .mark.mark-wide {
-  height: auto;
-  min-height: 26px;
+  width: auto;
+  /* Fixed rather than auto: as a flex item, "auto" lets the button stretch to
+     whatever its container is, which made it balloon when the label changed. */
+  height: 28px;
   padding: 4px 10px;
   font-size: 12.5px;
   font-weight: 600;
@@ -474,8 +620,13 @@ button.badge:hover { border-color: var(--faint); filter: brightness(1.25); }
 .collection-open {
   display: inline-flex;
   align-items: center;
+  /* Explicit height and line-height: the button holds a text label and a
+     pill badge with different natural line boxes, and letting it size to
+     content made it grow to fit both stacked. */
+  height: 32px;
+  line-height: 1;
   gap: 7px;
-  padding: 7px 13px;
+  padding: 0 13px;
   background: var(--surface-2);
   color: var(--text);
   border: 1px solid var(--line);
@@ -488,6 +639,9 @@ button.badge:hover { border-color: var(--faint); filter: brightness(1.25); }
 }
 .collection-open:hover { border-color: var(--accent-dim); color: var(--accent); }
 .collection-count {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
   background: var(--accent);
   color: #14171c;
   border-radius: 999px;
@@ -495,7 +649,7 @@ button.badge:hover { border-color: var(--faint); filter: brightness(1.25); }
   font-size: 11.5px;
   font-weight: 700;
 }
-.collection-open.empty .collection-count { background: var(--faint); }
+.collection-open.is-empty .collection-count { background: var(--faint); }
 
 .drawer-backdrop {
   position: fixed;
@@ -627,7 +781,14 @@ a.dl:hover { opacity: 1; transform: translateY(1px); text-decoration: none; }
   padding: 0 2px;
 }
 .collection-remove:hover { color: var(--warn); }
-.collection-empty { display: block; color: var(--faint); border: 0; }
+.collection-list li.collection-empty {
+  display: block;
+  color: var(--faint);
+  border: 0;
+  padding: 14px 0;
+  line-height: 1.5;
+}
+.collection-list li.collection-empty strong { color: var(--muted); }
 
 @media (prefers-reduced-motion: reduce) {
   .collection-drawer, .drawer-backdrop { transition: none; }
@@ -704,12 +865,30 @@ a.dl:hover { opacity: 1; transform: translateY(1px); text-decoration: none; }
 
 /* --- tabs --------------------------------------------------------------- */
 
+.tabs {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
 .tablist {
   display: flex;
   flex-wrap: wrap;
-  gap: 4px;
-  margin-bottom: 14px;
+  gap: 2px;
+  padding: 0 8px;
+  background: var(--surface-2);
   border-bottom: 1px solid var(--line);
+}
+
+/* Inside the shell the panels are plain content: the shell already draws the
+   border, so a panel of its own would double it. */
+.tabs .tabpanel {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  margin: 0;
 }
 
 .tab {
@@ -731,6 +910,8 @@ a.dl:hover { opacity: 1; transform: translateY(1px); text-decoration: none; }
 
 /* Selected state is driven by aria-selected, so the styling cannot drift out
    of step with what assistive technology is told. */
+/* The selected tab shares the panel's background and hides the divider
+   beneath it, so it reads as continuous with the content. */
 .tab[aria-selected="true"] {
   color: var(--text);
   background: var(--surface);

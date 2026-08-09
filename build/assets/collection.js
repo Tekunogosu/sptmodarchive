@@ -445,11 +445,12 @@
     var all = Collection.all();
     countBadge.textContent = all.length;
     if (openerCount) openerCount.textContent = all.length;
-    if (opener) opener.classList.toggle("empty", all.length === 0);
+    if (opener) opener.classList.toggle("is-empty", all.length === 0);
 
     if (!all.length) {
-      list.innerHTML = '<li class="collection-empty">No mods marked yet. ' +
-        'Use the <strong>+</strong> button on any mod to add it.</li>';
+      list.innerHTML = '<li class="collection-empty">Nothing here yet. ' +
+        'Use <strong>Add to collection</strong> on any mod, or open a mod ' +
+        'list and add the whole thing at once.</li>';
       return;
     }
 

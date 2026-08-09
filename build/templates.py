@@ -169,11 +169,10 @@ def page(title, body, *, depth=0, description="", scripts=()):
       </div>
       <div class="masthead-side">
         <span class="archived"><strong>{ARCHIVE_TOTAL:,}</strong> mods archived</span>
-        <button type="button" id="collection-open" class="collection-open empty"
-                aria-expanded="false" aria-controls="collection-drawer">
-          Collection <span id="collection-open-count"
-                           class="collection-count">0</span>
-        </button>
+        <span class="masthead-actions">
+          <a class="textlink" href="{up}lists.html">Mod lists</a>
+          <button type="button" id="collection-open" class="collection-open is-empty" aria-expanded="false" aria-controls="collection-drawer"><span>Collection</span><span id="collection-open-count" class="collection-count">0</span></button>
+        </span>
       </div>
     </div>
   </div>
@@ -198,8 +197,10 @@ def mark_button(mod_id, name, href, sources, label=False, deps=()):
     as a plain <button> rather than something that looks interactive on a page
     where scripting failed.
     """
+    # Wrapped so the "+" can be swapped for the checkmark without the button
+    # changing width -- the tick is drawn by CSS, the plus is simply hidden.
     inner = ('<span class="mark-label">Add to collection</span>' if label
-             else "+")
+             else '<span class="mark-plus">+</span>')
     # Dependencies travel with the button so they can be added alongside the
     # mod without any lookup -- a mod page has no access to the catalogue.
     dep_attr = (f' data-deps="{e(json.dumps(list(deps), separators=(",", ":")))}"'
@@ -334,6 +335,100 @@ def render_all_mods(mods):
                 description="Every mod in the SPT Mod Archive, as a plain list.")
 
 
+# --- mod lists -----------------------------------------------------------
+
+def list_href(entry):
+    slug = "".join(c if (c.isalnum() or c in "-_") else "-"
+                   for c in (entry.get("slug") or "list")).strip("-").lower()
+    return f"{entry['id']}-{slug or 'list'}.html"
+
+
+def render_lists(lists):
+    """Index of every archived mod list."""
+    rows = []
+    for entry in lists:
+        spt = (badge(f"SPT {entry['spt_version']}", "spt")
+               if entry["spt_version"] else "")
+        rows.append(f"""
+  <article class="listcard">
+    <div>
+      <h2 class="title"><a href="list/{e(list_href(entry))}">{e(entry['title'])}</a></h2>
+      <div class="byline">by {e(entry['owner']['name'] or 'unknown')}</div>
+      <div class="badges">{spt}
+        {badge(plural(entry['mod_count'], 'mod'))}</div>
+    </div>
+    <div class="stats"><div class="statnums">
+      <b>{entry['mod_count']}</b>mods</div></div>
+  </article>""")
+
+    body = f"""
+<p class="crumbs"><a href="index.html">← Back to the archive</a></p>
+<div class="panel">
+  <h2>Mod lists ({len(lists)})</h2>
+  <p class="panel-note">Modpacks curated by Forge users: sets of mods someone
+  ran together on a given SPT version. Open one to add the whole list to your
+  collection.</p>
+</div>
+<div class="modlist">{"".join(rows)}</div>
+"""
+    return page("Mod lists · SPT Mod Archive", body, depth=0,
+                description=f"{len(lists)} curated SPT mod lists archived from "
+                            "the Forge.")
+
+
+def render_list(entry, lookup):
+    """One archived list: its mods, linked, and importable as a collection."""
+    rows, missing = [], 0
+    for mod_id in entry["mod_ids"]:
+        mod = (lookup or {}).get(mod_id)
+        if not mod:
+            missing += 1
+            continue
+        thumb = (f'<img class="listthumb" src="../{e(mod["thumb"])}" alt=""'
+                 f' loading="lazy">' if mod.get("thumb") else
+                 '<span class="listthumb"></span>')
+        rows.append(f"""
+  <li>{mark_button(mod['id'], mod['name'], mod['href'], mod['sources'])}
+    {thumb}<a href="../{e(mod['href'])}">{e(mod['name'])}</a></li>""")
+
+    note = (f'<p class="panel-note">{missing} mod(s) in this list are no longer '
+            f'in the archive.</p>' if missing else "")
+    spt = (badge(f"SPT {entry['spt_version']}", "spt")
+           if entry["spt_version"] else "")
+
+    body = f"""
+<p class="crumbs"><a href="../lists.html">← All mod lists</a></p>
+
+<div class="modhead">
+  <div class="modhead-main">
+    <div class="modhead-title">
+      <h1>{e(entry['title'])}</h1>
+      <button type="button" class="mark mark-wide" id="import-list">
+        <span class="mark-label">Add all to collection</span></button>
+    </div>
+    <div class="byline">by {e(entry['owner']['name'] or 'unknown')}</div>
+    <div class="badges">{spt}{badge(plural(len(rows), 'mod'))}</div>
+  </div>
+</div>
+
+<section class="panel">
+  <h2>Mods in this list</h2>
+  {note}
+  <ul class="linklist listmods">{"".join(rows)}</ul>
+</section>
+
+<section class="panel">
+  <h2>Source</h2>
+  <p><a href="{e(entry['forge_url'])}" target="_blank" rel="noopener noreferrer">
+  Original list on the Forge</a>
+  <span class="label">offline once the Forge shuts down</span></p>
+</section>
+"""
+    return page(f"{entry['title']} · SPT Mod Archive", body, depth=1,
+                scripts=("importlist.js",),
+                description=to_text(entry["description"], 160))
+
+
 # --- mod page ------------------------------------------------------------
 
 def repo_note(status):
@@ -369,41 +464,113 @@ def repo_note(status):
     return f'<span class="label">{e(" · ".join(bits))}</span>' if bits else ""
 
 
+def repo_name(url, status):
+    """"owner/repo" rather than a full URL: shorter and easier to scan."""
+    if status and status.get("full_name"):
+        return status["full_name"]
+    parts = [p for p in url.split("//")[-1].split("/")[1:] if p]
+    return "/".join(parts[:2]).removesuffix(".git") if len(parts) >= 2 else url
+
+
+def repo_host_label(url):
+    host = url.split("//")[-1].split("/")[0].lower().removeprefix("www.")
+    return {"github.com": "GitHub", "gitlab.com": "GitLab",
+            "codeberg.org": "Codeberg", "gitea.com": "Gitea"}.get(host, host)
+
+
 def render_source_links(links, repos):
+    """One row per repository: what it is, then how it is doing."""
     if not links:
-        return '<p class="empty">No source repository was listed for this mod.</p>'
-    items = []
+        return '<p class="empty">No source repository was listed.</p>'
+
+    rows = []
     for link in links:
-        label = (f'<span class="label">{e(link["label"])}</span>'
-                 if link.get("label") else "")
-        items.append(
-            f'<li>{label}<a href="{e(link["url"])}" target="_blank" '
-            f'rel="noopener noreferrer">{e(link["url"])}</a>'
-            f'{repo_note(repos.get(link["url"]))}</li>')
-    return f'<ul class="linklist">{"".join(items)}</ul>'
+        status = repos.get(link["url"]) or {}
+        tag = (f'<span class="label">{e(link["label"])}</span>'
+               if link.get("label") else "")
+        note = repo_note(status)
+        rows.append(f"""
+    <li class="sourcerow">
+      <div class="sourcetop">
+        <a href="{e(link['url'])}" target="_blank" rel="noopener noreferrer">
+          {e(repo_name(link['url'], status))}</a>
+        <span class="host">{e(repo_host_label(link['url']))}</span>
+        {tag}
+      </div>
+      {f'<div class="sourcemeta">{note}</div>' if note else ''}
+    </li>""")
+    return f'<ul class="sourcelist">{"".join(rows)}</ul>'
 
 
-def render_dependencies(deps, known_ids):
-    """Dependencies, linked to their own archive page when we have one."""
+def render_facts_and_source(mod, repos, facts_html):
+    """Key numbers and repositories side by side, to halve the page height."""
+    forge_link = (f'<p class="forgelink"><a href="{e(mod["forge_url"])}" '
+                  f'target="_blank" rel="noopener noreferrer">Original Forge '
+                  f'page</a> <span class="label">offline after shutdown</span></p>'
+                  if mod["forge_url"] else "")
+    return f"""
+<div class="splitcols">
+  <section class="panel">
+    <h2>Details</h2>
+    <div class="facts">{facts_html}</div>
+  </section>
+  <section class="panel">
+    <h2>Source</h2>
+    {render_source_links(mod['source_links'], repos)}
+    {forge_link}
+  </section>
+</div>"""
+
+
+def render_dependencies(mod, lookup):
+    """A mod's dependencies as cards: what they are, not just their names.
+
+    Anything the archive holds gets its thumbnail, teaser and a collection
+    button, so the tab answers "what am I about to install" without a detour
+    through each mod's own page. Dependencies we never archived still get a
+    row, pointing at the Forge while it lasts.
+    """
+    # The latest version's dependencies, not the union across all versions:
+    # this answers "what do I need to install today", and a mod that dropped a
+    # dependency years ago should not still demand it.
+    deps = mod["dependencies"]
     if not deps:
         return ""
-    items = []
+
+    rows = []
     for dep in deps:
-        name = e(dep["name"] or f"Mod {dep['id']}")
-        if dep["id"] in known_ids:
-            target = known_ids[dep["id"]]
-            items.append(f'<li><a href="{e(target)}">{name}</a></li>')
-        elif dep.get("url"):
-            items.append(f'<li><a href="{e(dep["url"])}" target="_blank" '
-                         f'rel="noopener noreferrer">{name}</a> '
-                         f'<span class="label">not archived</span></li>')
+        entry = (lookup or {}).get(dep.get("id"))
+        if entry:
+            thumb = (f'<img class="depthumb" src="../{e(entry["thumb"])}" alt=""'
+                     f' loading="lazy">' if entry.get("thumb")
+                     else '<span class="depthumb"></span>')
+            teaser = (f'<p class="teaser">{e(entry["teaser"])}</p>'
+                      if entry.get("teaser") else "")
+            rows.append(f"""
+    <li class="depcard">
+      {thumb}
+      <div class="depmain">
+        <a class="depname" href="../{e(entry['href'])}">{e(entry['name'])}</a>
+        {teaser}
+      </div>
+      {mark_button(entry['id'], entry['name'], entry['href'], entry['sources'])}
+    </li>""")
         else:
-            items.append(f"<li>{name}</li>")
-    return f"""
-<section class="panel">
-  <h2>Requires</h2>
-  <ul class="linklist">{"".join(items)}</ul>
-</section>"""
+            name = e(dep.get("name") or f"Mod {dep.get('id')}")
+            link = (f'<a href="{e(dep["url"])}" target="_blank" '
+                    f'rel="noopener noreferrer">{name}</a>' if dep.get("url")
+                    else name)
+            rows.append(f"""
+    <li class="depcard">
+      <span class="depthumb"></span>
+      <div class="depmain">
+        <span class="depname">{link}</span>
+        <p class="teaser">Not in the archive — this mod was never listed, or
+        was removed before it could be captured.</p>
+      </div>
+    </li>""")
+
+    return f'<ul class="deplist">{"".join(rows)}</ul>'
 
 
 FIKA_LABEL = {
@@ -508,7 +675,7 @@ def render_comments(comment_data, images=None):
 def dependency_entries(mod, lookup):
     """Collection entries for a mod's dependencies, where we archived them."""
     entries, seen = [], set()
-    for dep in mod.get("all_dependencies") or []:
+    for dep in mod["dependencies"]:
         entry = (lookup or {}).get(dep.get("id"))
         if entry and entry["id"] not in seen:
             seen.add(entry["id"])
@@ -516,7 +683,7 @@ def dependency_entries(mod, lookup):
     return entries
 
 
-def render_tabs(mod, description, comment_data, images):
+def render_tabs(mod, description, comment_data, images, lookup=None):
     """Description / Versions / Comments as tabs, or as stacked sections.
 
     Which of those you get depends on whether tabs.js runs. The markup is the
@@ -533,6 +700,10 @@ def render_tabs(mod, description, comment_data, images):
     if description:
         sections.append(("description", "Description", None,
                          f'<div class="prose">{description}</div>'))
+    dependencies = render_dependencies(mod, lookup)
+    if dependencies:
+        sections.append(("dependencies", "Dependencies",
+                         len(mod["dependencies"]), dependencies))
     if versions:
         sections.append(("versions", "Versions", len(versions),
                          render_versions(versions)))
@@ -607,13 +778,9 @@ def render_mod(mod, comment_data, known_ids, repos, images=None,
         ("License", (mod["license"].get("name") or "—")),
     ]
     fact_html = "".join(
-        f'<div class="fact"><div class="k">{e(k)}</div>'
+        f'<div class="fact">'
+        f'<div class="k">{e(k)}</div>'
         f'<div class="v">{e(v)}</div></div>' for k, v in facts)
-
-    forge_link = (f'<p><a href="{e(mod["forge_url"])}" target="_blank" '
-                  f'rel="noopener noreferrer">Original Forge page</a> '
-                  f'<span class="label">offline once the Forge shuts down</span></p>'
-                  if mod["forge_url"] else "")
 
     body = f"""
 <p class="crumbs"><a href="../index.html">← Back to the archive</a></p>
@@ -627,23 +794,17 @@ def render_mod(mod, comment_data, known_ids, repos, images=None,
                    [l['url'] for l in mod['source_links']], label=True,
                    deps=dependency_entries(mod, lookup))}
     </div>
-    <div class="byline">by {authors}</div>
-    <div class="badges">{"".join(flags)}</div>
+    <div class="bylinerow">
+      <div class="byline">by {authors}</div>
+      <div class="badges">{"".join(flags)}</div>
+    </div>
     {f'<p class="teaser">{e(mod["teaser"])}</p>' if mod["teaser"] else ''}
   </div>
 </div>
 
-<section class="panel"><div class="facts">{fact_html}</div></section>
+{render_facts_and_source(mod, repos, fact_html)}
 
-<section class="panel">
-  <h2>Source</h2>
-  {render_source_links(mod['source_links'], repos)}
-  {forge_link}
-</section>
-
-{render_dependencies(mod.get('all_dependencies') or mod['dependencies'], known_ids)}
-
-{render_tabs(mod, description, comment_data, images)}
+{render_tabs(mod, description, comment_data, images, lookup)}
 """
     return page(f"{mod['name']} · SPT Mod Archive", body, depth=1,
                 scripts=("tabs.js", "comments.js"),
