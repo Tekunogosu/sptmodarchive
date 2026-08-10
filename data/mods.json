@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-08-10T21:40:22Z",
+ "generated_at": "2026-08-10T22:36:16Z",
  "source": "https://forge.sp-tarkov.com",
  "filter": "all",
- "mod_count": 1831,
+ "mod_count": 1832,
  "categories": [
   {
    "id": 12,
@@ -179121,7 +179121,7 @@
    "description_html": "<p>The purpose for this mod?\nuhh\u2026I dont know you tell me</p>\n<h2>Features</h2>\n<ul>\n<li>Thorax can take damage normally but cannot fall below 1 HP.</li>\n<li>Bleeding can damage the thorax down to 1 HP.</li>\n<li>Bleeding can damage the head down to 1 HP.</li>\n<li>Arms, legs, and stomach can still be blacked normally by bleeding.</li>\n<li>Direct headshots remain lethal.</li>\n<li>Limb/stomach overdamage cannot kill through transferred head damage.</li>\n<li>Limb/stomach overdamage can still damage the thorax down to 1 HP.</li>\n<li>Separate configuration options for:\n<ul>\n<li>Player</li>\n<li>PMC bots</li>\n<li>Bosses</li>\n</ul>\n</li>\n</ul>\n",
    "thumbnail": "https://forge-static.sp-tarkov.com/mods/nLob9NAg7mwj1aWhUFp8CO6RXyghd764o1cLiW5i.png",
    "forge_url": "https://forge.sp-tarkov.com/mod/2896/thorax-survival",
-   "downloads": 16,
+   "downloads": 90,
    "favourites": 0,
    "featured": false,
    "fika": false,
@@ -179153,24 +179153,93 @@
      "id": 14634,
      "version": "1.0.0",
      "description": "<p>The first version of this mod\nand probably the last</p>\n",
-     "spt_constraint": "4.1.2",
+     "spt_constraint": "~4.1",
      "fika": "unknown",
-     "downloads": 16,
+     "downloads": 90,
      "size": 6795,
      "link": "https://forge.sp-tarkov.com/mod/download/2896/thorax-survival/1.0.0",
-     "published_at": "2026-08-10T18:32:12.000000Z",
+     "published_at": "2026-08-10T18:32:00.000000Z",
      "dependencies": []
     }
    ],
    "latest_version": "1.0.0",
-   "spt_constraint": "4.1.2",
+   "spt_constraint": "~4.1",
    "all_spt_constraints": [
-    "4.1.2"
+    "~4.1"
    ],
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-08-10T18:09:23.000000Z",
-   "updated_at": "2026-08-10T18:33:03.000000Z",
+   "updated_at": "2026-08-10T22:09:05.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge"
+  },
+  {
+   "id": 2897,
+   "hub_id": null,
+   "guid": "com.benux.hitmarkers",
+   "name": "Simple Hit Markers",
+   "slug": "simple-hit-markers",
+   "teaser": "Customizable hit markers for SPT 4.1.2 with normal, armor/ricochet, and kill indicators.",
+   "description_html": "<p>A lightweight customizable hit marker system for SPT.</p>\n<p>Hit markers are displayed at the actual point where your bullet hits the target rather than being permanently locked to the center of the screen.</p>\n<h2>Features</h2>\n<ul>\n<li>Normal damage hit markers</li>\n<li>Armor / ricochet hit markers</li>\n<li>Kill hit markers</li>\n<li>Marker positioning at the actual impact point</li>\n<li>Individual scale setting for every marker type</li>\n<li>Individual RGB customization</li>\n<li>Live color previews in the F12 menu</li>\n<li>PMC support</li>\n<li>Player Scav support</li>\n<li>No server mod required</li>\n</ul>\n<h2>Marker Types</h2>\n<p><strong>Normal Hit</strong>\nAppears when an enemy takes normal damage.</p>\n<p><strong>Armor Hit</strong>\nAppears when armor interacts with the shot or the projectile ricochets.</p>\n<p><strong>Kill</strong>\nAppears when the target is killed.</p>\n<h2>Configuration</h2>\n<p>Press <strong>F12</strong> in-game.</p>\n<p>Each marker has its own:</p>\n<ul>\n<li>Scale</li>\n<li>Color</li>\n<li>R / B / G controls</li>\n</ul>\n<p>Changes can be made from the configuration menu.</p>\n<h2>Installation</h2>\n<ol>\n<li>Download the archive.</li>\n<li>Extract it.</li>\n<li>Merge the <code>BepInEx</code> folder.</li>\n<li>Launch SPT.</li>\n</ol>\n<p>The DLL should end up at:</p>\n<p><code>BepInEx/plugins/SimpleHitMarkers/HitMarkers.Client</code></p>\n<h2>Uninstallation</h2>\n<p>Delete:</p>\n<p><code>BepInEx/plugins/SimpleHitMarkers/</code></p>\n<h2>Compatibility</h2>\n<p>Tested on <strong>SPT 4.1.2</strong>.</p>\n<p>Fika compatibility has not been tested.</p>\n",
+   "thumbnail": "https://forge-static.sp-tarkov.com/mods/P5d4oXHCFnfnErxYeTO7pZYK2j9zbnzxgwTMzHJQ.png",
+   "forge_url": "https://forge.sp-tarkov.com/mod/2897/simple-hit-markers",
+   "downloads": 67,
+   "favourites": 0,
+   "featured": false,
+   "fika": false,
+   "fika_latest": "unknown",
+   "category": {
+    "id": 13,
+    "title": "Weapons",
+    "slug": "weapons"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 119850,
+     "name": "BensBurnedWaffles",
+     "avatar": "https://forge-static.sp-tarkov.com/profile-photos/nI2CLDaJJLiw5HD4XHyttLWML75sHmy9I3ckWh5T_256w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/benux33/SimpleHitmarker",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 14637,
+     "version": "1.0.0",
+     "description": "<p>First realease that includes:</p>\n<ul>\n<li>Normal hit markers</li>\n<li>Armor / ricochet hit markers</li>\n<li>Kill hit markers</li>\n<li>World-space impact positioning</li>\n<li>Individual marker scaling</li>\n<li>Individual RGB color customization</li>\n<li>Live color preview in the F12 menu</li>\n<li>PMC support</li>\n<li>Player Scav support</li>\n</ul>\n",
+     "spt_constraint": "~4.1",
+     "fika": "unknown",
+     "downloads": 67,
+     "size": 7864,
+     "link": "https://forge.sp-tarkov.com/mod/download/2897/simple-hit-markers/1.0.0",
+     "published_at": "2026-08-10T22:07:26.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "1.0.0",
+   "spt_constraint": "~4.1",
+   "all_spt_constraints": [
+    "~4.1"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-08-10T22:07:00.000000Z",
+   "updated_at": "2026-08-10T22:23:17.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
