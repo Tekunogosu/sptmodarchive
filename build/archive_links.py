@@ -52,10 +52,11 @@ def build_map(mods, mod_lists, mod_href, list_href, addons=(), addon_href=None,
               authors=(), author_href=None):
     """Every archived page, keyed by each URL that used to lead to it.
 
-    `mod_href` and `list_href` are the same functions build.py names the files
-    with, passed in rather than reimplemented: a rewritten link that disagrees
-    with the filename by one character is a 404, and only worse than the dead
-    Forge link it replaced.
+    Each `*_href` returns a target relative to the site root, complete -- not a
+    filename this function then guesses a directory for. build.py passes the
+    same functions it links with everywhere else, because a rewritten link that
+    disagrees with the real one by a character is a 404, and only worse than
+    the dead Forge link it replaced.
 
     A mod is reachable by two ids -- the Forge's, and, for anything predating
     the migration, the Hub id it carried before. Both are recorded, because old
@@ -63,18 +64,18 @@ def build_map(mods, mod_lists, mod_href, list_href, addons=(), addon_href=None,
     """
     links = {}
     for mod in mods:
-        href = "mod/" + mod_href(mod)
+        href = mod_href(mod)
         links[("mod", str(mod["id"]))] = href
         if mod.get("hub_id"):
             links[("hub", str(mod["hub_id"]))] = href
     for entry in mod_lists:
-        links[("list", str(entry["id"]))] = "list/" + list_href(entry)
+        links[("list", str(entry["id"]))] = list_href(entry)
     for addon in addons:
-        links[("addon", str(addon["id"]))] = "addon/" + addon_href(addon)
+        links[("addon", str(addon["id"]))] = addon_href(addon)
     # Only authors get a /user/ page, so a link to a commenter who published
     # nothing stays pointed at the Forge -- there is nothing here to show.
     for author in authors:
-        links[("user", str(author["id"]))] = "user/" + author_href(author)
+        links[("user", str(author["id"]))] = author_href(author)
     return links
 
 

@@ -667,20 +667,11 @@
 
   // --- importing a shared link -----------------------------------------
 
-  /* The addon lookup the index page carries, read from the DOM rather than
-   * from a global so it does not depend on index.js having run first. */
-  var addonCatalogue = null;
-
+  /* Names and links for addons, so a shared collection containing them can be
+   * rebuilt. Only the index loads this -- share links always land there, and
+   * it is the one page that would otherwise have no idea what addon 42 is. */
   function addons() {
-    if (addonCatalogue === null) {
-      var node = document.getElementById("addon-lookup");
-      try {
-        addonCatalogue = node ? JSON.parse(node.textContent) : [];
-      } catch (e) {
-        addonCatalogue = [];
-      }
-    }
-    return addonCatalogue;
+    return window.ADDON_LOOKUP || [];
   }
 
   function resolve(decoded) {
@@ -844,9 +835,15 @@
   renderFlyout();
   syncButtons();
 
-  // Deferred scripts run in document order, all before DOMContentLoaded. This
-  // file loads first so index.js can use the API above immediately -- which
-  // means the catalogue it publishes does not exist yet, and resolving a
-  // shared link has to wait for it.
-  document.addEventListener("DOMContentLoaded", handleSharedLink);
+  // Detail pages build their mark buttons after this file has run, so they
+  // start life unstyled and claiming "Add to collection" regardless of what
+  // is actually in it. Nothing has *changed* at that point, so onChange never
+  // fires -- the page has to say it has drawn something.
+  document.addEventListener("archive:rendered", syncButtons);
+
+  // Resolving a shared link needs the catalogue, which the index now fetches
+  // rather than carrying inline. DOMContentLoaded is too early: it fires while
+  // that request is still in flight, and resolve() would find nothing and
+  // silently drop the import.
+  document.addEventListener("archive:catalogue", handleSharedLink);
 })();

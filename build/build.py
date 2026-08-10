@@ -10,10 +10,19 @@ Inputs, all optional except the first:
     data/comments/*.json  one archived comment thread set per mod
     community/*.json      mods contributed by pull request after the shutdown
 
-Output is a plain static site: an index carrying the whole catalogue inline,
-one page per mod, and a no-JavaScript fallback list. Nothing fetches anything
-at runtime, so it works from file://, from GitHub Pages, or from a USB stick
-long after every service involved has gone away.
+Output is a static site of seven HTML shells plus a tree of JSON under
+site/data/, which the scripts in site/assets/ turn into pages. It is still a
+plain static site -- nothing here needs a runtime, a database or a build step
+at request time -- but it does need to be *served*, because a browser will not
+fetch JSON from file://. To read a built copy locally:
+
+    python3 -m http.server -d site 8080
+
+The build this replaced wrote about 3,000 HTML files and 110 MB, most of it
+the same masthead 3,000 times and every mod's entire comment history inlined
+into its page whether or not anyone opened it. Every URL that build published
+still resolves: site/mod/, addon/, list/ and user/ are now redirect stubs
+carrying the page's real title and description.
 """
 
 import argparse
@@ -24,10 +33,12 @@ import sys
 import time
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import archive_links                                  # noqa: E402
-import community                                      # noqa: E402
-import templates                                      # noqa: E402
-from sanitize import to_text                          # noqa: E402
+import archive_links                                   # noqa: E402
+import community                                       # noqa: E402
+import emit                                            # noqa: E402
+import shell                                           # noqa: E402
+import templates                                       # noqa: E402
+from sanitize import to_text                           # noqa: E402
 
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(HERE, "data")
@@ -38,6 +49,49 @@ ASSETS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "assets")
 # know where it will be served from -- so this is the one place the deployment
 # URL is written down. Override with --base-url when hosting elsewhere.
 BASE_URL = "https://tekunogosu.github.io/sptmodarchive"
+
+
+# --- where things live ---------------------------------------------------
+#
+# Each record has one address, and it is the address it has always had:
+# /mod/1109-questing-bots.html. Those URLs are in the sitemap, in search
+# results and in other people's forum posts, so they stay -- what changed is
+# that the file at that path is now 700 bytes of real title, description and
+# teaser that fills itself in from data/, rather than 45 KB of rendered HTML.
+#
+# An earlier draft of this rewrite served every mod from one `m.html?id=N`
+# shell and left redirect stubs behind at these paths. It worked, but it meant
+# 1,830 URLs whose served HTML was byte-identical -- same generic <title>, same
+# generic description -- with the real metadata sitting on stubs marked
+# noindex. For an archive whose whole job is to still be findable once the
+# Forge is gone, that is the wrong way round.
+#
+# Everything below is relative to the site root. Pages one directory deep
+# prefix it with `../`, from <html data-up> -- see url() in assets/render.js.
+
+def mod_href(mod):
+    """The mod's filename. Community submissions have no Forge id to use."""
+    slug = "".join(c if (c.isalnum() or c in "-_") else "-"
+                   for c in (mod.get("slug") or "mod")).strip("-").lower()
+    if mod["origin"] == "community":
+        return f"c-{slug}.html"
+    return f"{mod['id']}-{slug or 'mod'}.html"
+
+
+def mod_url(mod):
+    return "mod/" + mod_href(mod)
+
+
+def addon_url(addon):
+    return "addon/" + templates.addon_href(addon)
+
+
+def list_url(entry):
+    return "list/" + templates.list_href(entry)
+
+
+def user_url(author):
+    return "user/" + templates.author_href(author)
 
 
 # --- loading -------------------------------------------------------------
@@ -120,9 +174,9 @@ def addon_index_entry(addon, parent, images):
     return {
         "id": addon["id"],
         "name": addon["name"],
-        "href": "addon/" + templates.addon_href(addon),
+        "href": addon_url(addon),
         "authors": ", ".join(a["name"] for a in addon["authors"]) or "Unknown",
-        "author_links": [[a["id"], a["name"], templates.author_href(a)]
+        "author_links": [[a["id"], a["name"], user_url(a)]
                          for a in addon["authors"] if a.get("id")],
         "teaser": to_text(addon["teaser"]),
         "thumbnail": templates.local_image(addon["thumbnail"], images or {}),
@@ -181,7 +235,7 @@ def collect_authors(mods, addons, mod_lists, images):
             entry = slot(person)
             if entry is not None:
                 entry["mods"].append({
-                    "name": mod["name"], "href": "mod/" + href_for(mod),
+                    "name": mod["name"], "href": mod_url(mod),
                     "mark_id": mod["id"],
                     "thumb": templates.local_image(mod["thumbnail"], images),
                     "teaser": to_text(mod["teaser"]),
@@ -194,7 +248,7 @@ def collect_authors(mods, addons, mod_lists, images):
             if entry is not None:
                 entry["addons"].append({
                     "name": addon["name"],
-                    "href": "addon/" + templates.addon_href(addon),
+                    "href": addon_url(addon),
                     "mark_id": f"a{addon['id']}",
                     "parent": addon["mod_id"],
                     "thumb": templates.local_image(addon["thumbnail"], images),
@@ -207,7 +261,7 @@ def collect_authors(mods, addons, mod_lists, images):
         slot_entry = slot(person)
         if slot_entry is not None:
             slot_entry["lists"].append({
-                "title": entry["title"], "href": templates.list_href(entry),
+                "title": entry["title"], "href": list_url(entry),
                 "mod_count": entry["mod_count"],
                 "spt_version": entry.get("spt_version", "")})
 
@@ -215,14 +269,6 @@ def collect_authors(mods, addons, mod_lists, images):
         entry["mods"].sort(key=lambda m: -m["downloads"])
         entry["addons"].sort(key=lambda a: -a["downloads"])
     return authors
-
-
-def href_for(mod):
-    slug = "".join(c if (c.isalnum() or c in "-_") else "-"
-                   for c in (mod.get("slug") or "mod")).strip("-").lower()
-    if mod["origin"] == "community":
-        return f"c-{slug}.html"
-    return f"{mod['id']}-{slug or 'mod'}.html"
 
 
 # --- the client-side index ----------------------------------------------
@@ -277,14 +323,13 @@ def index_entry(mod, comment_count, images=None, repos=None):
     return {
         "id": mod["id"],
         "name": mod["name"],
-        "href": "mod/" + href_for(mod),
+        "href": mod_url(mod),
         "authors": ", ".join(a["name"] for a in mod["authors"]) or "Unknown",
         # id and name per author, so a tile can link to the author's page
         # rather than pre-filling a search that other filters can empty out.
-        "author_links": [[a["id"], a["name"], templates.author_href(a)]
+        "author_links": [[a["id"], a["name"], user_url(a)]
                          for a in mod["authors"] if a.get("id")],
         "teaser": to_text(mod["teaser"]),
-        # The index lives at the site root, so no "../" prefix here.
         "thumbnail": templates.local_image(mod["thumbnail"], images or {}),
         "category": category.get("slug", ""),
         "category_title": category.get("title", ""),
@@ -336,8 +381,8 @@ def facets(mods):
     for major in sorted(majors, key=lambda m: -key(m)[0]):
         rows = sorted(majors[major], key=lambda vc: key(vc[0]), reverse=True)
         distinct = set().union(*(ids for _, ids in rows))
-        spt_facets.append((major, len(distinct),
-                           [(v, len(ids)) for v, ids in rows]))
+        spt_facets.append({"major": major, "count": len(distinct),
+                           "versions": [[v, len(ids)] for v, ids in rows]})
 
     return sorted(categories.values(), key=lambda c: -c["count"]), spt_facets
 
@@ -347,9 +392,10 @@ def facets(mods):
 def write_sitemap_and_robots(base_url, pages):
     """A sitemap of every page, and a robots.txt pointing crawlers at it.
 
-    `pages` is (path relative to site root, last-modified date or ""). Only
-    real pages are listed -- assets and images are reachable from them and add
-    nothing to a crawler's picture of the archive.
+    `pages` is (path relative to site root, last-modified date or ""). These
+    are the pages themselves -- `mod/1109-questing-bots.html` -- which is the
+    same URL this archive has always published for that mod. Assets and images
+    are reachable from them and add nothing to a crawler's picture.
     """
     base = base_url.rstrip("/")
     today = time.strftime("%Y-%m-%d")
@@ -442,9 +488,9 @@ def build(limit=None, base_url=BASE_URL):
     # Links written by mod authors and commenters point at the Forge and at
     # the Hub before it. Wherever they name something we archived, they are
     # rewritten to point here instead -- see build/archive_links.py.
-    archive_links.set_link_map(mods, mod_lists, href_for, templates.list_href,
-                               addons, templates.addon_href,
-                               authors.values(), templates.author_href)
+    archive_links.set_link_map(mods, mod_lists, mod_url, list_url,
+                               addons, addon_url,
+                               authors.values(), user_url)
 
     # Addons hang off their parent mod, so they are grouped by it once and
     # handed to whichever page needs them. Ordered by downloads, like
@@ -453,21 +499,26 @@ def build(limit=None, base_url=BASE_URL):
     for addon in sorted(addons, key=lambda a: -a["downloads"]):
         addons_by_mod.setdefault(str(addon["mod_id"]), []).append(addon)
 
-    known_ids = {mod["id"]: href_for(mod) for mod in mods}
     lookup = {mod["id"]: {"id": mod["id"], "name": mod["name"],
-                          "href": "mod/" + href_for(mod),
-                          # Root-relative; pages one level deep prefix "../".
+                          "href": mod_url(mod),
                           "thumb": templates.local_image(mod["thumbnail"], images),
-                          "teaser": mod["teaser"],
+                          "teaser": to_text(mod["teaser"]),
                           "sources": [l["url"] for l in mod["source_links"]]}
               for mod in mods}
 
+    data_dir = os.path.join(SITE, "data")
     sitemap_pages = []
+    written = {"bytes": 0, "files": 0}
 
-    os.makedirs(os.path.join(SITE, "mod"), exist_ok=True)
+    def emit_json(relative, payload):
+        written["bytes"] += emit.write_json(os.path.join(data_dir, relative), payload)
+        written["files"] += 1
+
+    # --- per-mod detail, and the comments beside it ----------------------
+
     for mod in mods:
         mod_addons = [
-            {"name": a["name"], "href": "addon/" + templates.addon_href(a),
+            {"name": a["name"], "href": addon_url(a),
              # Prefixed so the collection cannot confuse addon 102 with mod
              # 102 -- the two are separate id sequences that overlap.
              "mark_id": f"a{a['id']}",
@@ -476,76 +527,91 @@ def build(limit=None, base_url=BASE_URL):
              "mod_constraint": a["mod_constraint"],
              "sources": [l["url"] for l in a["source_links"]]}
             for a in addons_by_mod.get(str(mod["id"]), [])]
-        page = templates.render_mod(mod, threads.get(mod["id"]), known_ids,
-                                    repos, images,
-                                    href="mod/" + href_for(mod),
-                                    lookup=lookup, addons=mod_addons)
-        write(os.path.join(SITE, "mod", href_for(mod)), page)
-        sitemap_pages.append(("mod/" + href_for(mod),
-                              templates.last_release(mod)))
+        thread = threads.get(mod["id"])
+        emit_json(f"mod/{mod['id']}.json",
+                  emit.mod_detail(mod, repos, images, lookup, mod_addons,
+                                  len((thread or {}).get("comments") or []),
+                                  mod_url(mod)))
+        if thread:
+            emit_json(f"comment/{mod['id']}.json", emit.comment_thread(thread, images))
+        sitemap_pages.append((mod_url(mod), templates.last_release(mod)))
 
-    os.makedirs(os.path.join(SITE, "user"), exist_ok=True)
+    # --- authors ---------------------------------------------------------
+
     for author in authors.values():
-        href = templates.author_href(author)
-        write(os.path.join(SITE, "user", href),
-              templates.render_author(author, images))
-        sitemap_pages.append(("user/" + href, ""))
+        emit_json(f"user/{author['id']}.json", emit.author_detail(author, images))
+        sitemap_pages.append((user_url(author), ""))
     print(f"  {len(authors)} author pages", file=sys.stderr)
 
-    entries = [index_entry(mod, len(threads.get(mod["id"], {}).get("comments", [])),
+    # --- the catalogue ---------------------------------------------------
+
+    entries = [index_entry(mod, len((threads.get(mod["id"]) or {}).get("comments") or []),
                            images, repos)
                for mod in mods]
     categories, spt_lines = facets(mods)
 
-    index_json = json.dumps(entries, separators=(",", ":"), ensure_ascii=False)
-    stats = {"mod_count": len(mods), "generated_at": archive.get("generated_at", "")}
+    emit_json("index.json", entries)
+    emit_json("facets.json", {"categories": categories, "spt": spt_lines,
+                              "mod_count": len(mods),
+                              "generated_at": archive.get("generated_at", "")})
 
-    # Just enough to name an addon and link to it: the index resolves shared
-    # collections, and a share link may carry addons.
-    addon_lookup = json.dumps(
-        [{"id": a["id"], "name": a["name"],
-          "href": "addon/" + templates.addon_href(a), "parent": a["mod_id"]}
-         for a in addons], separators=(",", ":"), ensure_ascii=False)
+    # --- addons ----------------------------------------------------------
 
-    write(os.path.join(SITE, "index.html"),
-          templates.render_index(index_json, categories, spt_lines, stats,
-                                 addon_lookup))
-    write(os.path.join(SITE, "all-mods.html"), templates.render_all_mods(entries))
-
-    # Addons: a second catalogue with its own page per addon. Each one names
-    # the mod it extends, so it is rendered with that mod resolved against the
-    # archive -- and left saying so plainly when the parent was never listed.
     if addons:
-        os.makedirs(os.path.join(SITE, "addon"), exist_ok=True)
         addon_entries = []
         for addon in sorted(addons, key=lambda a: -a["downloads"]):
             parent = lookup.get(addon["mod_id"])
-            href = templates.addon_href(addon)
-            write(os.path.join(SITE, "addon", href),
-                  templates.render_addon(addon, parent, images, repos))
-            sitemap_pages.append(("addon/" + href, addon["updated_at"][:10]))
+            emit_json(f"addon/{addon['id']}.json",
+                      emit.addon_detail(addon, parent, repos, images,
+                                        addon_url(addon)))
+            sitemap_pages.append((addon_url(addon), addon["updated_at"][:10]))
             addon_entries.append(addon_index_entry(addon, parent, images))
 
-        addons_json = json.dumps(addon_entries, separators=(",", ":"),
-                                 ensure_ascii=False)
-        write(os.path.join(SITE, "addons.html"),
-              templates.render_addons_index(addons_json,
-                                            {"addon_count": len(addons)}))
-        write(os.path.join(SITE, "all-addons.html"),
-              templates.render_all_addons(addon_entries))
+        emit_json("addons.json", addon_entries)
+        # Just enough to name an addon and link to it: the index resolves
+        # shared collections, and a share link may carry addons.
+        emit_json("addon-lookup.json",
+                  [{"id": a["id"], "name": a["name"], "href": addon_url(a),
+                    "parent": a["mod_id"]} for a in addons])
         print(f"  {len(addons)} addons across "
               f"{len({str(a['mod_id']) for a in addons})} mods", file=sys.stderr)
 
-    # Mod lists: curated modpacks, each rendered with its mods resolved
-    # against the archive so every entry is a working link.
+    # --- mod lists -------------------------------------------------------
+
     if mod_lists:
         for entry in mod_lists:
-            write(os.path.join(SITE, "list", templates.list_href(entry)),
-                  templates.render_list(entry, lookup))
-            sitemap_pages.append(("list/" + templates.list_href(entry),
-                                  entry.get("updated_at", "")))
-        write(os.path.join(SITE, "lists.html"), templates.render_lists(mod_lists))
+            emit_json(f"list/{entry['id']}.json", emit.list_detail(entry, lookup))
+            sitemap_pages.append((list_url(entry), entry.get("updated_at", "")))
+        emit_json("lists.json",
+                  [{"id": e["id"], "title": e["title"],
+                    "owner": (e.get("owner") or {}).get("name") or "unknown",
+                    "mod_count": e["mod_count"],
+                    "spt": e.get("spt_version", "")} for e in mod_lists])
         print(f"  {len(mod_lists)} mod lists", file=sys.stderr)
+
+    # --- the pages themselves --------------------------------------------
+
+    write(os.path.join(SITE, "index.html"), shell.render_index_shell())
+    write(os.path.join(SITE, "lists.html"), shell.render_lists_shell())
+    if addons:
+        write(os.path.join(SITE, "addons.html"), shell.render_addons_shell())
+
+    # Plain listings, still rendered here: they are the one part of the site
+    # that has to work with scripting off, and they are cheap.
+    write(os.path.join(SITE, "all-mods.html"), templates.render_all_mods(entries))
+    if addons:
+        write(os.path.join(SITE, "all-addons.html"),
+              templates.render_all_addons(addon_entries))
+
+    # One page per record, at the URL that record has always had.
+    pages = shell.write_detail_pages(
+        lambda relative, html: write(os.path.join(SITE, relative), html),
+        mods, addons, mod_lists, authors.values(), mod_href,
+        {"mod": mod_url, "addon": addon_url,
+         "list": list_url, "user": user_url})
+    print(f"  {pages} record pages", file=sys.stderr)
+
+    # --- assets ----------------------------------------------------------
 
     assets_out = os.path.join(SITE, "assets")
     os.makedirs(assets_out, exist_ok=True)
@@ -568,8 +634,8 @@ def build(limit=None, base_url=BASE_URL):
         print(f"  copied {copied} image(s) into site/assets/img", file=sys.stderr)
 
     # Share links encode ids; the bitset and complement schemes need to know
-    # every id that exists. Emitted as its own cached file so mod pages carry
-    # it without embedding the whole catalogue.
+    # every id that exists. Emitted as its own cached file so pages carry it
+    # without embedding the whole catalogue.
     numeric_ids = sorted(m["id"] for m in mods if isinstance(m["id"], int))
     write(os.path.join(assets_out, "ids.js"),
           "window.ARCHIVE_IDS=" + json.dumps(numeric_ids, separators=(",", ":"))
@@ -584,15 +650,20 @@ def build(limit=None, base_url=BASE_URL):
     print(f"  sitemap: {listed} pages", file=sys.stderr)
 
     total_comments = sum(len(t["comments"]) for t in threads.values())
-    size = os.path.getsize(os.path.join(SITE, "index.html")) / 1e6
+    index_size = os.path.getsize(os.path.join(SITE, "index.html")) / 1e3
+    catalogue = os.path.getsize(os.path.join(data_dir, "index.json")) / 1e6
 
     print(f"\nMods:         {len(mods):,} ({len(contributed)} community)",
           file=sys.stderr)
     print(f"Fika:         {sum(1 for m in mods if m['fika']):,}", file=sys.stderr)
     print(f"Categories:   {len(categories)}", file=sys.stderr)
     print(f"Comments:     {total_comments:,}", file=sys.stderr)
-    print(f"index.html:   {size:.1f} MB", file=sys.stderr)
+    print(f"index.html:   {index_size:.1f} kB", file=sys.stderr)
+    print(f"index.json:   {catalogue:.1f} MB", file=sys.stderr)
+    print(f"data/:        {written['files']:,} files, "
+          f"{written['bytes'] / 1e6:.1f} MB", file=sys.stderr)
     print(f"\nBuilt site/ in {time.time() - started:.1f}s", file=sys.stderr)
+    print("Serve it with: python3 -m http.server -d site 8080", file=sys.stderr)
     return 1 if errors else 0
 
 

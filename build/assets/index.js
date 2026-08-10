@@ -1,20 +1,21 @@
 /* Index page: filter, sort, and render the mod list.
  *
- * The whole catalogue is embedded in the page as JSON, so everything here is
- * synchronous and works from file:// with no server and no network. The only
- * concession to size is that rows are rendered in batches as you scroll --
- * building ~1,800 rows plus thumbnails up front is what makes a page like
- * this feel slow.
+ * The catalogue arrives as data/index.json -- about 1.6 MB, and the reason
+ * index.html is 8 KB rather than the 1.7 MB it used to be. Everything after
+ * that first fetch is synchronous, and rows are still rendered in batches as
+ * you scroll, because building ~1,800 rows plus thumbnails up front is what
+ * makes a page like this feel slow.
+ *
+ * The filter controls are built here too. They used to be baked into the HTML
+ * by the build, which meant every category and SPT version was a reason to
+ * re-render the page; now they come from data/facets.json alongside the
+ * catalogue itself.
  */
 (function () {
   "use strict";
 
-  var MODS = JSON.parse(document.getElementById("mod-index").textContent);
-  // The importer in collection.js needs this to turn shared ids into names.
-  window.MOD_INDEX = MODS;
-
+  var MODS = [];
   var BY_ID = {};
-  MODS.forEach(function (mod) { BY_ID[mod.id] = mod; });
 
   // A simple branch mark, drawn here rather than pulled from anywhere: it
   // reads as "source repository" and suits GitLab and Codeberg links too.
@@ -553,6 +554,59 @@
     });
   }
 
-  restoreFilters();
-  applyFilter();
+  /* The filter panel, built from the facet counts rather than baked into the
+   * HTML. Has to happen before restoreFilters(), which sets checkboxes that
+   * do not exist until now. */
+  function buildFacets(facets) {
+    els.category.insertAdjacentHTML("beforeend", facets.categories.map(function (c) {
+      return '<option value="' + esc(c.slug) + '">' + esc(c.title) +
+        " (" + c.count + ")</option>";
+    }).join(""));
+
+    document.getElementById("spt-groups").innerHTML =
+      facets.spt.map(function (group) {
+        var versions = group.versions.map(function (v) {
+          return '<label><input type="checkbox" name="sptv" value="' + esc(v[0]) +
+            '"><span>' + esc(v[0]) + '</span><span class="n">' +
+            v[1].toLocaleString("en-US") + "</span></label>";
+        }).join("");
+        return '<details class="sptgroup"' + (group.major === "4" ? " open" : "") +
+          '><summary><label class="anymajor"><input type="checkbox" name="sptmajor"' +
+          ' value="' + esc(group.major) + '"> Any ' + esc(group.major) +
+          '.x</label><span class="tabcount">' + group.count.toLocaleString("en-US") +
+          "</span></summary>" +
+          '<div class="sptversions">' + versions + "</div></details>";
+      }).join("");
+  }
+
+  function esc(value) {
+    return String(value === null || value === undefined ? "" : value)
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;").replace(/'/g, "&#x27;");
+  }
+
+  Promise.all([
+    window.R.getJSON("data/index.json"),
+    window.R.getJSON("data/facets.json"),
+    // A share link may carry addons, and this is the only page that can name
+    // them. Missing is survivable -- an archive with no addons never emits it
+    // -- so it resolves to an empty list rather than failing the whole load.
+    window.R.getJSON("data/addon-lookup.json").catch(function () { return []; })
+  ]).then(function (loaded) {
+    MODS = loaded[0];
+    // The importer in collection.js needs these to turn shared ids into names.
+    window.MOD_INDEX = MODS;
+    window.ADDON_LOOKUP = loaded[2];
+    MODS.forEach(function (mod) { BY_ID[mod.id] = mod; });
+
+    buildFacets(loaded[1]);
+    restoreFilters();
+    applyFilter();
+    document.dispatchEvent(new CustomEvent("archive:catalogue"));
+  }).catch(function (error) {
+    console.error(error);
+    els.count.textContent = "The catalogue could not be loaded. " +
+      "If you are opening this from a folder rather than a web server, " +
+      "see the README — it needs to be served over HTTP.";
+  });
 })();

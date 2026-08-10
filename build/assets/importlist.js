@@ -11,6 +11,9 @@
 (function () {
   "use strict";
 
+  /* Called by list.js once the list has been rendered, since none of the
+   * markup this drives exists until then. */
+  window.initImportList = function initImportList() {
   var button = document.getElementById("import-list");
   if (!button || !window.Collection) return;
 
@@ -65,4 +68,5 @@
 
   window.Collection.onChange(sync);
   sync();
+  };
 })();

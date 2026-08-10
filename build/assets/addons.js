@@ -10,9 +10,8 @@
 (function () {
   "use strict";
 
-  var node = document.getElementById("addon-index");
-  if (!node) return;
-  var ADDONS = JSON.parse(node.textContent);
+  if (document.body.dataset.page !== "addons") return;
+  var ADDONS = [];
 
   var BATCH = 60;
 
@@ -227,6 +226,14 @@
     onChange();
   });
 
-  restoreFilters();
-  applyFilter();
+  window.R.getJSON("data/addons.json").then(function (loaded) {
+    ADDONS = loaded;
+    restoreFilters();
+    applyFilter();
+  }).catch(function (error) {
+    console.error(error);
+    els.count.textContent = "The addon catalogue could not be loaded. " +
+      "If you are opening this from a folder rather than a web server, " +
+      "see the README — it needs to be served over HTTP.";
+  });
 })();

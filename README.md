@@ -10,7 +10,15 @@ and everything wrapped around it — which mod needs which, whether something
 works in Fika co-op, and the years of comments where the actual troubleshooting
 happened — disappears completely. This archives all of it.
 
-**Open `site/index.html` in a browser.** No server, no internet, no build step.
+**Serve `site/` and open it in a browser:**
+
+```
+python3 -m http.server -d site 8080     # then visit http://localhost:8080
+```
+
+No internet and no build step — but it does need to be *served*, because the
+pages fetch their data as JSON and browsers refuse those requests over
+`file://`. Any static server will do, which is also all GitHub Pages is.
 
 ---
 
@@ -184,28 +192,53 @@ N lowest ids" rather than "the N most downloaded".
 
 ## The site
 
-`build/build.py` renders a static site into `site/`:
+`build/build.py` renders a static site into `site/`: a page per record, and a
+tree of JSON that the scripts in `site/assets/` turn into the rest of each one.
 
 ```
 site/index.html              the catalogue — search, filter, sort
-site/mod/<id>-<slug>.html    one page per mod            (1,826)
 site/addons.html             the addon catalogue — search, sort
-site/addon/<id>-<slug>.html  one page per addon             (80)
-site/user/<id>-<slug>.html   one page per author            (888)
 site/lists.html              index of curated mod lists
+site/mod/<id>-<slug>.html    one page per mod            (1,830)
+site/addon/<id>-<slug>.html  one page per addon             (80)
+site/user/<id>-<slug>.html   one page per author           (889)
 site/list/<id>-<slug>.html   one page per list             (199)
 site/all-mods.html           plain list, works without JavaScript
 site/all-addons.html         the same, for addons
+site/data/index.json         the catalogue          (1.7 MB)
+site/data/facets.json        categories and SPT versions, with counts
+site/data/mod/<id>.json      one mod's detail       (1,830 files, 11 MB)
+site/data/comment/<id>.json  one mod's comments     (1,702 files, 32 MB)
+site/data/user|list|addon/   the same, per record
 site/sitemap.xml             every page, with real last-modified dates
 site/robots.txt              points crawlers at the sitemap
-site/assets/                 one stylesheet, five small scripts, mirrored images
+site/assets/                 one stylesheet, a dozen small scripts, images
 ```
 
 No framework and no dependency of any kind — plain Python and vanilla
-JavaScript. Host it on GitHub Pages, or open the files off disk.
+JavaScript. Host it on GitHub Pages, or on any static file server.
 
-**The index** carries the whole catalogue inline, so filtering is instant and
-works offline. Search covers mod names, authors, dependencies, GUIDs,
+**The URLs have not changed.** `site/mod/1109-questing-bots.html` is still that
+mod's page, still in the sitemap, still what a search result or a forum link
+points at. What changed is what is inside it: about 2.5 KB carrying the mod's
+real title, description, heading and teaser, which then fills in the rest —
+versions, dependencies, repositories — from `data/`. It used to be 45 KB of
+rendered HTML with every comment the mod ever received baked in.
+
+That 2.5 KB matters more than its size. It is what a crawler, a link preview or
+a browser with scripting off can read without executing anything, and it is
+per-URL. Serving all 1,830 mods from one shared `m.html?id=N` shell would have
+been simpler and smaller, but every one of those URLs would have answered with
+the same generic title — which, for an archive whose whole job is to still be
+findable once the Forge is gone, is the wrong trade.
+
+**The whole site is 59 MB, down from 110 MB**, and a mod page costs about 6 KB
+of JSON instead of 45 KB of HTML — with its comments fetched only if you open
+that tab. Comments are 32 MB of the total and were previously downloaded in
+full every time anyone opened any mod.
+
+**The index** loads the whole catalogue as one file, so filtering after that is
+instant. Search covers mod names, authors, dependencies, GUIDs,
 categories, repository names and URLs — typing `CommonLib` finds every mod that
 needs it. Filter by category, Fika compatibility, dependencies, comments,
 collection membership, and by **exact SPT version**: a panel of checkboxes
@@ -282,7 +315,8 @@ localStorage. There is no account and no server, which has consequences worth
 stating plainly:
 
 - clearing site data clears the collection; a share link is the only backup
-- `file://` and the published site are separate origins and do not share one
+- a locally served copy and the published site are separate origins and do not
+  share one
 - nothing is transmitted anywhere unless you copy a share link yourself
 
 Mark mods from the index, a mod page, a list page, or `all-mods.html`. Adding a
@@ -696,7 +730,10 @@ Things learned the hard way, worth knowing before changing anything.
 | `scrape/forge.py` | Shared API client and the Livewire session |
 | `build/sanitize.py` | HTML allowlist |
 | `build/archive_links.py` | Forge/Hub links rewritten to archive pages |
-| `build/templates.py` | Page rendering |
+| `build/templates.py` | The masthead, the plain listings, and every rendering decision the data carries |
+| `build/emit.py` | The archive as JSON: what the browser actually loads |
+| `build/shell.py` | Every HTML page: the three catalogues, and one per record |
+| `build/assets/render.js` | The markup, ported from `templates.py` |
 
 `data/mods.json`, `data/comments/`, `data/lists.json`, `data/addons.json` and
 `data/images/` **are** the archive — those are what to back up. `site/` regenerates from them,
@@ -708,7 +745,7 @@ every field the Forge served, including the ones `build_record()` does not
 keep — and unrecoverable by anyone. It is committed for that reason as much as
 for CI's.
 
-`site/` is gitignored on purpose: it is 1,826 generated files that would churn
+`site/` is gitignored on purpose: it is thousands of generated files that would churn
 on every build, and CI rebuilds and deploys it from the committed data. The
 trade-off is that a broken commit to `data/` takes the live site down until the
 next green run — pull requests are checked by the `validate` job, but direct
