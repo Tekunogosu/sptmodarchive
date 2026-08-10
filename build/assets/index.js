@@ -28,9 +28,10 @@
     ' stroke-width="1.4" fill="none"/></svg>';
 
   // Same glyph as the collection drawer's download link, so the shape means
-  // the same thing wherever it appears.
+  // the same thing wherever it appears. Sized to the download number it sits
+  // beside (.dlcount b, 14px), so the pair reads as one figure.
   var DOWNLOAD_ICON =
-    '<svg class="dlicon" viewBox="0 0 16 16" width="12" height="12"'
+    '<svg class="dlicon" viewBox="0 0 16 16" width="14" height="14"'
     + ' aria-hidden="true" focusable="false" fill="none" stroke="currentColor"'
     + ' stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">'
     + '<path d="M8 2v7.5"/><path d="M4.75 6.5 8 9.75l3.25-3.25"/>'

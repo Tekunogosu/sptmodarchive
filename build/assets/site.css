@@ -753,9 +753,19 @@ button.badge:hover { border-color: var(--faint); filter: brightness(1.25); }
    edge of the row. Smaller than the Source panel's copy of the same icon:
    there is one per version, and at 22px a long history reads as a column of
    arrows rather than a version list. */
-.vdl { display: inline-flex; align-items: center; line-height: 1; color: var(--faint); }
+/* The one thing in a version header you can act on, so it carries the accent
+   at rest rather than earning it on hover -- faint read as decoration and the
+   button went unnoticed. Hover then nudges it down, the same acknowledgement
+   the collection drawer's download link gives (.dl). */
+.vdl {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+  color: var(--accent);
+  transition: transform 0.15s ease, filter 0.15s ease;
+}
 .vdl svg { width: 16px; height: 16px; }
-.vdl:hover { color: var(--accent); }
+.vdl:hover { filter: brightness(1.15); transform: translateY(1px); }
 /* The repository's account of the same release, set apart from the Forge's so
    the two are never read as one text. Its own rule rather than a border on
    .notes, because a version can carry both, either, or neither. */
