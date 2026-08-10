@@ -292,9 +292,12 @@
   }
 
   function row(mod) {
+    // The initial stands in for a missing image, matching the mod page. An
+    // empty square reads as an image that failed to load; a letter does not.
     var thumb = mod.thumbnail
       ? '<img class="thumb" src="' + esc(mod.thumbnail) + '" alt="" loading="lazy">'
-      : '<div class="thumb"></div>';
+      : '<div class="thumb thumb-empty" aria-hidden="true">' +
+        esc((mod.name || "?").charAt(0).toUpperCase()) + "</div>";
 
     // Labelled rather than a bare "+": on a tile full of numbers, an unlabelled
     // icon reads as decoration and nobody discovers what it does.

@@ -135,7 +135,8 @@
     var thumb = addon.thumbnail
       ? '<img class="thumb" src="' + esc(addon.thumbnail) +
         '" alt="" loading="lazy">'
-      : '<div class="thumb"></div>';
+      : '<div class="thumb thumb-empty" aria-hidden="true">' +
+        esc((addon.name || "?").charAt(0).toUpperCase()) + "</div>";
 
     // The parent mod is the addon's most useful second link: an addon is
     // meaningless without knowing what it extends.

@@ -615,7 +615,9 @@ def render_addon(addon, parent, images=None, repos=None):
             flags.append(badge(label, "warn"))
 
     thumb = (f'<img src="{e(local_image(addon["thumbnail"], images, "../"))}" '
-             f'alt="" loading="lazy">' if addon["thumbnail"] else "")
+             f'alt="" loading="lazy">' if addon["thumbnail"]
+             else f'<div class="headthumb-empty" aria-hidden="true">'
+                  f'{e((addon["name"] or "?")[:1].upper())}</div>')
 
     if parent:
         parent_html = (
@@ -1489,8 +1491,15 @@ def render_mod(mod, comment_data, known_ids, repos, images=None,
         if mod["flags"].get(key):
             flags.append(badge(label, "warn"))
 
+    # A mod with no thumbnail still gets the block, so its title starts in the
+    # same place as every other mod's. The Forge fills this slot with the SPT
+    # logo, which this archive will not do -- it states plainly that it is
+    # unaffiliated, and 129 pages of someone else's branding would say
+    # otherwise. The mod's own initial reads as deliberate instead of broken.
     thumb = (f'<img src="{e(local_image(mod["thumbnail"], images, "../"))}" '
-             f'alt="" loading="lazy">' if mod["thumbnail"] else "")
+             f'alt="" loading="lazy">' if mod["thumbnail"]
+             else f'<div class="headthumb-empty" aria-hidden="true">'
+                  f'{e((mod["name"] or "?")[:1].upper())}</div>')
 
     # No SPT row: the version heads the panel these facts sit in, and stating
     # it twice inside one panel reads as two different facts at a glance.

@@ -249,6 +249,20 @@ input:focus, select:focus {
   object-fit: cover;
   background: var(--surface-2);
 }
+/* Stands in for a missing image on a tile, as .headthumb-empty does on the
+   page itself -- same idea, sized for 48px instead of 96px. */
+.mod .thumb-empty {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  color: var(--faint);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+  user-select: none;
+}
 .mod .title { margin: 0 0 2px; font-size: 15.5px; font-weight: 600; }
 .mod .teaser {
   margin: 3px 0 0;
@@ -443,7 +457,28 @@ button.badge:hover { border-color: var(--faint); filter: brightness(1.25); }
 .crumbs { margin: 0 0 16px; font-size: 13px; color: var(--faint); }
 
 .modhead { display: flex; gap: 18px; align-items: flex-start; margin-bottom: 22px; }
-.modhead img { width: 96px; height: 96px; border-radius: 10px; object-fit: cover; background: var(--surface-2); }
+.modhead img, .headthumb-empty {
+  width: 96px;
+  height: 96px;
+  border-radius: 10px;
+  object-fit: cover;
+  background: var(--surface-2);
+}
+/* Same footprint as the image, so the 129 mods without a thumbnail start
+   their title where every other mod's title starts. The initial makes an
+   empty slot read as intentional rather than as a failed image. */
+.headthumb-empty {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  color: var(--faint);
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1;
+  user-select: none;
+}
 .modhead h1 { margin: 0 0 4px; font-size: 26px; letter-spacing: -0.015em; }
 .modhead .teaser { margin: 6px 0 0; color: var(--muted); }
 @media (max-width: 560px) { .modhead { flex-direction: column; } }
