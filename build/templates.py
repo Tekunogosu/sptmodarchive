@@ -905,6 +905,41 @@ def sources_by_recency(links, repos):
     return sorted(links, key=key, reverse=True)
 
 
+def dedupe_sources(links, repos):
+    """Drop source links that render as a row identical to one already shown.
+
+    The Forge lets an author list a repository several times over -- once at
+    its root and once per branch or subfolder that matters to them. A source
+    row shows only the repository and its label, so links that reduce to the
+    same repository *and* carry the same label come out as the same row
+    repeated: anOrangeDoggo's SAIN Presets listed its root plus two /tree/dev
+    paths, all unlabelled, and printed three identical lines.
+
+    Links whose labels differ are left alone even when the repository matches,
+    because the label is what distinguishes them -- several mods keep a 3.11
+    branch beside a 4.0 one, and both rows are worth having.
+
+    Of a collapsed group the shallowest URL wins, which is the repository root
+    wherever one was listed; the group stays where its first member sat, so a
+    recency ordering applied beforehand survives.
+    """
+    def identity(link):
+        url = link["url"]
+        status = repos.get(url) or {}
+        host = url.split("//")[-1].split("/")[0].lower().removeprefix("www.")
+        repo = status.get("full_name") or repo_name(url, None)
+        return (host, repo.casefold(), link.get("label", "").strip().casefold())
+
+    groups = {}
+    for link in links:
+        groups.setdefault(identity(link), []).append(link)
+
+    def depth(link):
+        return len([p for p in link["url"].split("//")[-1].split("/") if p])
+
+    return [min(group, key=depth) for group in groups.values()]
+
+
 def releases_page(url):
     """A repository URL reduced to its host's releases page, or "".
 

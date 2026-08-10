@@ -424,8 +424,15 @@ def build(limit=None, base_url=BASE_URL):
     # drawer. Ordering them once here rather than at each use is what keeps
     # those four agreeing with each other -- newest repository first.
     for mod in mods:
-        mod["source_links"] = templates.sources_by_recency(mod["source_links"],
-                                                           repos)
+        mod["source_links"] = templates.dedupe_sources(
+            templates.sources_by_recency(mod["source_links"], repos), repos)
+
+    # Addons keep the Forge's own order -- they rarely list more than one
+    # repository -- but they inherit the same habit of listing one repository
+    # several times, so they get the same collapse.
+    for addon in addons:
+        addon["source_links"] = templates.dedupe_sources(addon["source_links"],
+                                                         repos)
 
     # Built before the link map, which needs to know who has a page here.
     authors = collect_authors(mods, addons, mod_lists, images)
