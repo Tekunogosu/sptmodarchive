@@ -20,7 +20,7 @@ name: Refresh archive
 # avoids sp-tarkov.com entirely, so it is the one that keeps running forever.
 on:
   schedule:
-    - cron: "0 */2 * * *"       # every two hours
+    - cron: "0 * * * *"         # hourly, with the shutdown approaching
   workflow_dispatch:            # and on demand from the Actions tab
 
 # Build and deploy happen in this one workflow rather than by pushing and
@@ -56,7 +56,7 @@ jobs:
       # The per-mod fetch cache (data/raw_mods.jsonl) is committed, so the
       # checkout above already restored it: this run refetches only the mods
       # whose updated_at moved, rather than all ~1,800 of them. That is what
-      # makes a two-hourly schedule defensible against a dying server.
+      # makes an hourly schedule defensible against a dying server.
       - name: Scrape the Forge
         # Never fatal. scrape_mods.py aborts without writing when enumeration
         # comes back empty or short, so the worst case is that this run

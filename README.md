@@ -59,7 +59,7 @@ the data is usable on its own.
 ## Keeping it current
 
 **Steps 1 and 5 now run themselves.** The `Refresh archive` workflow scrapes
-mods and re-checks every source repository every two hours, commits both files,
+mods and re-checks every source repository every hour, commits both files,
 and republishes the site — see [Automation](#automation) below. What is left to
 run by hand is the part no schedule should own: comments, lists, and images.
 
@@ -118,7 +118,7 @@ is always the correct response to errors.
 ## Automation
 
 Two workflows. `build.yml` validates pull requests and publishes on push;
-`refresh.yml` is the scheduled one, running **every two hours**:
+`refresh.yml` is the scheduled one, running **every hour**:
 
 ```
 scrape_mods.py  →  scrape_addons.py  →  fetch_images.py  →  repo_status.py
@@ -143,11 +143,12 @@ built-in `GITHUB_TOKEN`, which reads public repository data at 1,000
 requests/hour — against roughly 26 GraphQL calls and 21 REST calls per run. The
 `.github-sptmods` file is only for running it locally.
 
-**The fetch cache is what makes two-hourly polite**, and it is committed for
-exactly that reason. `data/raw_mods.jsonl` holds one raw payload per mod keyed
-by `updated_at`, so a run refetches only what changed; without it every run
-would be ~3,600 requests against a dying server, twelve times a day. Committing
-it means the checkout restores it, with no Actions cache to expire or evict —
+**The fetch cache is what makes an hourly schedule polite**, and it is committed
+for exactly that reason. `data/raw_mods.jsonl` holds one raw payload per mod
+keyed by `updated_at`, so a run refetches only what changed; without it every
+run would be ~3,600 requests against a dying server, twenty-four times a day.
+Committing it means the checkout restores it, with no Actions cache to expire
+or evict —
 and it stops being "cheap to rebuild" the moment the Forge goes offline.
 
 **It is compacted on every run** to one line per mod, sorted by id. Records are
@@ -174,7 +175,7 @@ reasonable cadence to fall back to.
 **`mods.json` is written sorted by id** so these commits stay small. Ordering
 it by downloads instead moved a mod's entire record every time two of them
 swapped rank, which turned a handful of changed counters into thousands of
-changed lines on a file CI now commits twelve times a day. `build.py` sorts by
+changed lines on a file CI now commits twenty-four times a day. `build.py` sorts by
 downloads at render time, so nothing on the site depends on the file's order —
 the only visible difference is that `--limit N` on the scrapers now means "the
 N lowest ids" rather than "the N most downloaded".
@@ -507,7 +508,7 @@ scraping fixes.
 
 Only the tag and its date are stored. A release page URL is derivable from the
 repository and the tag, so keeping 40 URLs for each of 1,400 repositories would
-add megabytes to a file CI commits twelve times a day. **Assets are the
+add megabytes to a file CI commits twenty-four times a day. **Assets are the
 exception** — fetched for the latest release only, because their filenames are
 derivable from nothing and the latest is the one a reader wants to install.
 That is the direct download in the Source panel: 1,122 mods reach an actual
@@ -659,8 +660,8 @@ Things learned the hard way, worth knowing before changing anything.
   supporting 4.0.13 and 4.1.0 belongs to both, so per-version counts cannot be
   added: 704 mods support some 4.x and 1,409 some 3.x, overlapping by 287 —
   which is exactly the 1,826 total.
-- **`repos.json` is written for small diffs**, because CI commits it every two
-  hours. Keys are sorted so a run that checks hosts in a different order does not
+- **`repos.json` is written for small diffs**, because CI commits it every
+  hour. Keys are sorted so a run that checks hosts in a different order does not
   reshuffle the file, and freshness is recorded once at the top rather than per
   repository. An earlier per-record `checked_at` rewrote all 1,346 entries on
   every run, burying the few repositories that had actually moved. A run where
