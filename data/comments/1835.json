@@ -1,0 +1,2346 @@
+{
+ "mod_id": 1835,
+ "slug": "socom-armory-new-quests-story-line",
+ "fetched_at": "2026-08-09T23:28:25Z",
+ "reported_total": 90,
+ "pages": 9,
+ "count": 233,
+ "top_level": 80,
+ "complete": false,
+ "missing_pages": [
+  9
+ ],
+ "session_expired": false,
+ "comments": [
+  {
+   "id": 50600,
+   "parent_id": null,
+   "author": "OG75",
+   "author_id": 59510,
+   "author_url": "https://forge.sp-tarkov.com/user/59510/og75",
+   "created_at": "2025-04-11T20:38:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Nice mod though I have a question, is there a way you could fix the insurance part of the mod because when I insure my stuff through SOCOM and then get killed, my stuff doesn\u2019t return?!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 129623,
+   "parent_id": 50600,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2025-04-11T21:15:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for reporting this. I usually insure through Prapor so I never tested it but I\u2019ll do some checking into this.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 51183,
+   "parent_id": null,
+   "author": "May I have another",
+   "author_id": 56751,
+   "author_url": "https://forge.sp-tarkov.com/user/56751/may-i-have-another",
+   "created_at": "2025-04-26T10:03:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I love your mod, thanks for all the great work! I\u2019m upgrading to 3.10 SPT, and I can only find 3.9 and 3.11 versions. Am I looking in the wrong place or is there no 3.10 version? Thanks!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 130402,
+   "parent_id": 51183,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2025-04-26T16:28:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I just updated the trader and added a Version 1.0.1 which would have been the 3.10 I never shared.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 130422,
+   "parent_id": 51183,
+   "author": "May I have another",
+   "author_id": 56751,
+   "author_url": "https://forge.sp-tarkov.com/user/56751/may-i-have-another",
+   "created_at": "2025-04-26T23:12:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks man!!! You rule!!!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 130424,
+   "parent_id": 51183,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2025-04-26T23:33:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Lol no problem.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 51663,
+   "parent_id": null,
+   "author": "Takeo45",
+   "author_id": 6015,
+   "author_url": "https://forge.sp-tarkov.com/user/6015/takeo45",
+   "created_at": "2025-05-11T02:09:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>FYI, I do believe that this mod and Geko\u2019s progression mod do not like each other. Since I do not see the sig spear or any of the assault rifles in the shop. In addition, although I can find the ARs in the flea market, the weapons are greyed out and say that it requires one to have level 4 reputation with the SOCOM vendor.</p>\n<p>EDIT: Found a way to blacklist the SOCOM trader from Geko. So, as long as you make sure to blacklist this mod\u2019s trader in the configs for Geko\u2019s progression mod, this mod will work just fine.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 131767,
+   "parent_id": 51663,
+   "author": "ImABabyElephant",
+   "author_id": 75630,
+   "author_url": "https://forge.sp-tarkov.com/user/75630/imababyelephant",
+   "created_at": "2025-05-29T19:55:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>could you elaborate on what you changed here? ELI5 because i really have no idea.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 131799,
+   "parent_id": 51663,
+   "author": "Takeo45",
+   "author_id": 6015,
+   "author_url": "https://forge.sp-tarkov.com/user/6015/takeo45",
+   "created_at": "2025-05-31T00:40:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>First find this line</p>\n<p>//Traders that will not be affected by the rebalancing module</p>\n<p>\u201cexcludeTraders\u201d: [</p>\n<p>Then add \u201c6748adca5c70634464b214a7\u201d, //SOCOM Armory right under the line denoting fence.</p>\n<p>Should look like this</p>\n<p>\u201cexcludeTraders\u201d: [</p>\n<p>\u201c579dc571d53a0658a154fbec\u201d, //Fence</p>\n<p>\u201c6748adca5c70634464b214a7\u201d, //SOCOM Armory</p>\n<p>],</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 52969,
+   "parent_id": null,
+   "author": "thebeirdo",
+   "author_id": 80162,
+   "author_url": "https://forge.sp-tarkov.com/user/80162/thebeirdo",
+   "created_at": "2025-06-18T21:39:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m not sure if it is intended but the economy of this seems to be broken. I can buy an ammo case for $40 but the sale value is $390, as an example. Grenade case is $70 to purchase but $1400 to sell.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 53164,
+   "parent_id": null,
+   "author": "Awap0iq",
+   "author_id": 80756,
+   "author_url": "https://forge.sp-tarkov.com/user/80756/awap0iq",
+   "created_at": "2025-06-24T17:28:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Perfect ! Everythings are perfect about SOCOM\u2019S mod, i want the hardcore version of him with tasks and rep grind !</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 132836,
+   "parent_id": 52969,
+   "author": "Awap0iq",
+   "author_id": 80756,
+   "author_url": "https://forge.sp-tarkov.com/user/80756/awap0iq",
+   "created_at": "2025-06-24T17:29:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yes it is broken but at least it\u2019s the soft core versio, we need the hard core one</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 134864,
+   "parent_id": 53164,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2025-08-10T03:19:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you! There is already a hardcore preset included in the \u201cdb\u201d folder, you just have to swap it out.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 134865,
+   "parent_id": 52969,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2025-08-10T03:19:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>There is already a hardcore preset included in the \u201cdb\u201d folder, you just have to swap it out.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 139333,
+   "parent_id": null,
+   "author": "radiomanned",
+   "author_id": 86025,
+   "author_url": "https://forge.sp-tarkov.com/user/86025/radiomanned",
+   "created_at": "2025-10-19T23:14:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hi! Absolutely love the mod so far. Although (I downloaded it within the hour) I am unable to insure and must altf4 whenever I do. Although atp point with a 308 50-rounder being $25 who cares about insurance.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 139334,
+   "parent_id": null,
+   "author": "jguz1990",
+   "author_id": 79736,
+   "author_url": "https://forge.sp-tarkov.com/user/79736/jguz1990",
+   "created_at": "2025-10-19T23:14:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It seems the current version of the SOCOM mod is causing the game to softlock when using Insurance (the option hangs and never loads).</p>\n<p>After testing, I found that the issue is due to a missing \u201cinsurance\u201d section in the mod\u2019s base.json file.</p>\n<p>Adding the following snippet between \u201cgridHeight\u201d and \u201cisAvailableInPVE\u201d fixes the problem:</p>\n<p>\u201cgridHeight\u201d: 150,\n\u201cinsurance\u201d: {\n\u201cavailability\u201d: false,\n\u201cexcluded_category\u201d: [],\n\u201cmax_return_hour\u201d: 0,\n\u201cmax_storage_time\u201d: 99,\n\u201cmin_payment\u201d: 0,\n\u201cmin_return_hour\u201d: 0\n},\n\u201cisAvailableInPVE\u201d: true,</p>\n<p>\u2705 Result: Game no longer softlocks when accessing Insurance.\n\ud83d\udee0\ufe0f File: base.json\n\ud83d\udccd Location: Between gridHeight and isAvailableInPVE</p>\n<p>Posting this so others can patch it locally until an update officially resolves it.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 3
+  },
+  {
+   "id": 139335,
+   "parent_id": 139333,
+   "author": "jguz1990",
+   "author_id": 79736,
+   "author_url": "https://forge.sp-tarkov.com/user/79736/jguz1990",
+   "created_at": "2025-10-19T23:15:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>check out my comment above</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 139343,
+   "parent_id": 139333,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2025-10-20T00:28:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I figured out the bug and this has been patched. You can re-download it. My apologies for the inconvinience.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 139344,
+   "parent_id": 139334,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2025-10-20T00:29:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I figured out the bug and this has been patched. You can re-download it. My apologies for the inconvinience.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 139345,
+   "parent_id": 139334,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2025-10-20T00:29:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2025-11-30 06:58:24]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 139390,
+   "parent_id": 52969,
+   "author": "VeiledFury",
+   "author_id": 22834,
+   "author_url": "https://forge.sp-tarkov.com/user/22834/veiledfury",
+   "created_at": "2025-10-20T11:34:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The prices are hard-coded in the assort.json files, so there\u2019s no easy way to have this trader use the default prices for items, right?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 139391,
+   "parent_id": 52969,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2025-10-20T11:50:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yes, after version 3.10 you could no longer leave the price field blank and default to the in-game prices. Every line had to have it\u2019s own entry which stinks I agree. On 3.10, you could leave the price blank then manipulate the discount field for the trader and adjust everything, it was slick.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 139392,
+   "parent_id": 52969,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2025-10-20T11:54:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Srispt was able to use AI to make the hardcore preset. I attempted to have AI edit my assort.json but it\u2019s so many lines it crashed out ChatGPT. I\u2019m not sure what AI engine Srispt used but that might be an option.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 139427,
+   "parent_id": 52969,
+   "author": "VeiledFury",
+   "author_id": 22834,
+   "author_url": "https://forge.sp-tarkov.com/user/22834/veiledfury",
+   "created_at": "2025-10-20T15:27:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Ah I was afraid of that, cheers for the info!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 139428,
+   "parent_id": 52969,
+   "author": "VeiledFury",
+   "author_id": 22834,
+   "author_url": "https://forge.sp-tarkov.com/user/22834/veiledfury",
+   "created_at": "2025-10-20T15:27:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Eh, probably would take me longer to make the AI understand which price goes where than doing it by hand. :D</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 144472,
+   "parent_id": null,
+   "author": "Hitmanic",
+   "author_id": 90617,
+   "author_url": "https://forge.sp-tarkov.com/user/90617/hitmanic",
+   "created_at": "2025-11-30T21:14:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Sweet, been waiting so patiently. Thank you so much.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 144538,
+   "parent_id": 144472,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2025-12-01T14:30:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It was actually done almost a month ago but it got hung up in the approval process. SPT is getting super picky on mods now so it was a steep learning curve. I suppose it\u2019s a good thing but it took a fair bit to figure it out.</p>\n<p>I have some cool changes in the making including some custom items and items with buffed stats.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 144658,
+   "parent_id": null,
+   "author": "Riggzly",
+   "author_id": 64150,
+   "author_url": "https://forge.sp-tarkov.com/user/64150/riggzly",
+   "created_at": "2025-12-02T21:33:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Sorry to ask something silly but this mod was on the forge a few weeks ago but just recently you posted the mod on Sunday it says, was the version on here before the same version? Or maybe I\u2019m wrong.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 144663,
+   "parent_id": 144658,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2025-12-02T22:15:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It\u2019s slightly different. I had to modify the meta data for the SPT Devs in order to be compliant with their new standards. I might have added a few new items as well but I don\u2019t recall for sure.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 144665,
+   "parent_id": 144658,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2025-12-02T22:16:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>There\u2019s also a new version hitting soon with some new items and custom parts if you would prefer to wait.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 144686,
+   "parent_id": null,
+   "author": "ChaiemMaas",
+   "author_id": 93844,
+   "author_url": "https://forge.sp-tarkov.com/user/93844/chaiemmaas",
+   "created_at": "2025-12-03T04:20:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2025-12-03 04:41:46]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 145390,
+   "parent_id": null,
+   "author": "hal_vid",
+   "author_id": 37585,
+   "author_url": "https://forge.sp-tarkov.com/user/37585/hal-vid",
+   "created_at": "2025-12-08T00:01:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey man, is there a preset or something that we can do to increase these prices cuz with this mod and Epic\u2019s AIO you can easily have 100 ergo 12 vert recoil AR that costs less then 500k rubles that is very broken.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 145394,
+   "parent_id": 145390,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2025-12-08T00:56:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yes, I believe we spoke on Discord. Anyone else that wants this functionality DM me on Discord. I have a utility that easily increases or decreases the prices I\u2019m happy to share.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 145398,
+   "parent_id": null,
+   "author": "DoubleD23",
+   "author_id": 42723,
+   "author_url": "https://forge.sp-tarkov.com/user/42723/doubled23",
+   "created_at": "2025-12-08T02:04:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I have the 2.0 version downloaded, but when I try to update the new version, it breaks my game and tries to load both versions.  Any insight on what I am doing wrong? Thank you for your work!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 145399,
+   "parent_id": 145398,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2025-12-08T02:17:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Can you send me some screenshots on Discord (MT_Patriot1776) so I understand fully what you are seeing? You will need to remove the old SOCOM before installing the new version.</p>\n<p>Also,</p>\n<p>The new version requires WTT-CommonLib version 2.0.6 or higher. I think the latest is 2.0.7. <a href=\"https://forge.sp-tarkov.com/mod/2310/wtt-commonlib\" target=\"_blank\" rel=\"noreferrer noopener\">https://forge.sp-tarkov.com/mod/2310/wtt-commonlib</a></p>\n<p>Also make sure you have EpicsAIO <a href=\"https://forge.sp-tarkov.com/mod/1263/epics-all-in-one\" target=\"_blank\" rel=\"noreferrer noopener\">https://forge.sp-tarkov.com/mod/1263/epics-all-in-one</a></p>\n<p>Lastly navigate to [Your-SPT-Directory]/SPT/SPT_DATA/configs/ and edit the \u201ccore.json\u201d.</p>\n<p>Change these two values to true then restart your server:\n\u201cremoveModItemsFromProfile\u201d: true,\n\u201cremoveInvalidTradersFromProfile\u201d: true,</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 145501,
+   "parent_id": null,
+   "author": "SaladTosser",
+   "author_id": 90159,
+   "author_url": "https://forge.sp-tarkov.com/user/90159/saladtosser",
+   "created_at": "2025-12-08T22:47:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>cool mod i just wish everything wasnt so damn cheep and stuff was lv locked</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 145502,
+   "parent_id": 145501,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2025-12-08T23:00:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I made this little utility for you to quickly increase prices. <a href=\"https://forge.sp-tarkov.com/mod/2488/spt-tarkovtraderutility\" target=\"_blank\" rel=\"noreferrer noopener\">https://forge.sp-tarkov.com/mod/2488/spt-tarkovtraderutility</a></p>\n<p>DM me on Discord if the instructions don\u2019t make sense.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 145529,
+   "parent_id": null,
+   "author": "jdmedmdsm4life",
+   "author_id": 95485,
+   "author_url": "https://forge.sp-tarkov.com/user/95485/jdmedmdsm4life",
+   "created_at": "2025-12-09T03:50:10+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Ran into an issue with this mod. i have all the dependencies you listed and was able to launch my game. i ended up needing to change a few things with a different mod that uses the greed app and i went to launch my server again and it wont load my profile. it says \u201cfailed to load profile with IDXXXXXXXX the profile will be marked as invalid. SPTarkov.Server.Core.exceptions.Items.InvalidModdedItemException: Item:693784e24553b919b073304c found in profile that does not exist in items db. You will experience errors, this can be due to using an items mod and removing mod without deleting modded items from your inventory. DO NOT USE THIS PROFILE. it goes on to tell me to remove mod items from inventory in core.json. any fix for this?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 145534,
+   "parent_id": 145529,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2025-12-09T05:06:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yes. Go to your SPT directory. Then navigate to \u201cSPT\\SP_Data\\configs\\core.json\u201d</p>\n<p>Edit the core.json with notepad and find these three lines and set them to \u201ctrue\u201d.</p>\n<pre><code>\"removeModItemsFromProfile\": true,\n\n\"removeInvalidTradersFromProfile\": true,\n\n\"fixProfileBreakingInventoryItemIssues\": true,\n</code></pre>\n<p>Then save the base.json and restart the server.</p>\n<p>Hit me up on Discord if that doesn\u2019t work. MT_Patriot1776</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 145536,
+   "parent_id": 145529,
+   "author": "jdmedmdsm4life",
+   "author_id": 95485,
+   "author_url": "https://forge.sp-tarkov.com/user/95485/jdmedmdsm4life",
+   "created_at": "2025-12-09T05:17:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Id like to apologize. I have health issues and miss alot of things when I\u2019m reading and missed a previous comment where you mentioned to do that. I followed those instructions and fixed it. Even tested closing my server twice to make sure and everythings working now. Thank you for getting back so quick with this. Awesome mod by the way I\u2019ve been looking for Daniel defense style m4s in this game and glad I found this mod.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 145538,
+   "parent_id": 145529,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2025-12-09T05:29:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>No need to apologize, it\u2019s no problem at all. I\u2019m very glad you are enjoying it. As you can tell I\u2019m a Daniel Defense fanboy.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 145609,
+   "parent_id": null,
+   "author": "xxjxs",
+   "author_id": 95041,
+   "author_url": "https://forge.sp-tarkov.com/user/95041/xxjxs",
+   "created_at": "2025-12-09T18:24:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>My trader level is only 1,which is really bad.Could this be because I didn,t download the Epic,s All One mod?\nAlso is sale 2.5 times more expensive,and it also shows that I have to spend 2.5k and reach level 17 to upgrade favorability to level 2.I need help !!!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 145610,
+   "parent_id": 145529,
+   "author": "jdmedmdsm4life",
+   "author_id": 95485,
+   "author_url": "https://forge.sp-tarkov.com/user/95485/jdmedmdsm4life",
+   "created_at": "2025-12-09T18:33:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It\u2019s definitely nice to have it in game now! Also may have missed this aswell but I cant seem to get tasks from either trader and badger is locked not sure how to get both of them to give me tasks</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 145613,
+   "parent_id": 145609,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2025-12-09T18:57:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>EpicsAIO is required. You wlll also need WTT-CommonLib</p>\n<p>The sell price is 50-70% less than the live (retail) version.</p>\n<p>The favorability does nothing right now. It\u2019s planned to be coupled with tasks in a future update.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 146131,
+   "parent_id": null,
+   "author": "dana-wrath",
+   "author_id": 34826,
+   "author_url": "https://forge.sp-tarkov.com/user/34826/dana-wrath",
+   "created_at": "2025-12-15T08:12:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>a really cool mod, useful for roleplaying as a western SPECWAR asset :) just a suggestion; a similar mod but with spetsnaz theming and selling russkiy guns and gear? if not, i understand, thank you for your work!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 3
+  },
+  {
+   "id": 146165,
+   "parent_id": null,
+   "author": "fafnirtalos",
+   "author_id": 96796,
+   "author_url": "https://forge.sp-tarkov.com/user/96796/fafnirtalos",
+   "created_at": "2025-12-15T17:50:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey we\u2019re looking to increase the pricing on the trader, I found a comment you left in 2024 but it seems SPT has changed a decent chunk since then, if you could please let me know where in the files to look to increase the prices that would be awesome!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 146712,
+   "parent_id": null,
+   "author": "CASSIUS",
+   "author_id": 97309,
+   "author_url": "https://forge.sp-tarkov.com/user/97309/cassius",
+   "created_at": "2025-12-21T10:25:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>theres always a problem on this mod that ive been encountering its the magazine it says its not place something but it ruins the profile</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 146739,
+   "parent_id": 146712,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2025-12-21T16:47:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019d love to help you but this doesn\u2019t tell me anything. Send me screenshots on Discord please.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 146748,
+   "parent_id": 146131,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2025-12-21T21:15:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>If I can make some time I think this is a good idea. Thank you for the suggestion.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 146770,
+   "parent_id": 146712,
+   "author": "CASSIUS",
+   "author_id": 97309,
+   "author_url": "https://forge.sp-tarkov.com/user/97309/cassius",
+   "created_at": "2025-12-22T06:56:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>well its doing good now i think its just an error the mod need to adjust</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 146850,
+   "parent_id": null,
+   "author": "xmboostedanimal",
+   "author_id": 97177,
+   "author_url": "https://forge.sp-tarkov.com/user/97177/xmboostedanimal",
+   "created_at": "2025-12-23T15:11:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>When doing a Version Update from 2.0.0 to 2.0.1 the file name was changed so it tries to load the file called SOCOM and SOCOM-2.0.1</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 147725,
+   "parent_id": null,
+   "author": "HenSeaaa",
+   "author_id": 98855,
+   "author_url": "https://forge.sp-tarkov.com/user/98855/henseaaa",
+   "created_at": "2025-12-29T00:53:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Getting this error:</p>\n<p><a href=\"https://codepaste.sp-tarkov.com/?22b3f1ba34390e73#AWwDYfTxfcpZkGZnHbtRwneqY4trPX3tWRW3mnYjjQdV\" target=\"_blank\" rel=\"noreferrer noopener\">https://codepaste.sp-tarkov.com/?22b3f1ba34390e73#AWwDYfTxfcpZkGZnHbtRwneqY4trPX3tWRW3mnYjjQdV</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 148393,
+   "parent_id": null,
+   "author": "adxnai_.",
+   "author_id": 99280,
+   "author_url": "https://forge.sp-tarkov.com/user/99280/adxnai",
+   "created_at": "2026-01-01T11:55:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It spawns wayyyy too much items from your mod to the point where when I look through weapons boxes all I find are AR15 handguards of various lengths and types. Went thru all of USEC camp on woods + the big barn south north of Northern UN extract on that same map and I literally just found items from your mod.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 148419,
+   "parent_id": 148393,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-01-01T16:19:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>First off, all those items aren\u2019t even from my mod, they are from EpicsAIO. Second, neither mod has any control over how much crap is spawned in your raid. You either have your spawn multiplier cranked up or you are using the better loot mod.</p>\n<p>Lastly, if you don\u2019t like it freaking uninstall it.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 148435,
+   "parent_id": 145501,
+   "author": "NogginHead",
+   "author_id": 30371,
+   "author_url": "https://forge.sp-tarkov.com/user/30371/nogginhead",
+   "created_at": "2026-01-01T17:34:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>+1 to asking for a way to make stuff more expensive. I tried your link but the mod is not found. I\u2019m willing to edit it myself if you could point me in the right direction :)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 148514,
+   "parent_id": null,
+   "author": "SevDen",
+   "author_id": 53739,
+   "author_url": "https://forge.sp-tarkov.com/user/53739/sevden",
+   "created_at": "2026-01-02T07:03:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2026-01-02 12:19:33]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 148532,
+   "parent_id": 148393,
+   "author": "adxnai_.",
+   "author_id": 99280,
+   "author_url": "https://forge.sp-tarkov.com/user/99280/adxnai",
+   "created_at": "2026-01-02T12:51:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Woweeee you woke up on the wrong side of the bed</p>\n<p>Daily reminder that EpicsAIO is a required dependency for your freaking mod. I ended up leaving that same comment on EpicsAIO page and I\u2019ll let yall figure it out.</p>\n<p>I ended up modifying the spawnrate of all items tied to SOCOM and Epics to 0 so that they would only be found at traders or on flea.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 148678,
+   "parent_id": null,
+   "author": "Pilot1973.25",
+   "author_id": 68071,
+   "author_url": "https://forge.sp-tarkov.com/user/68071/pilot197325",
+   "created_at": "2026-01-03T05:34:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m having an issue with the Daniel Defense DDM4 V7, when i shoot the gun glitches my character. is has weird single shot audio, no full auto and cant reload and cant move.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 148684,
+   "parent_id": 148678,
+   "author": "Pilot1973.25",
+   "author_id": 68071,
+   "author_url": "https://forge.sp-tarkov.com/user/68071/pilot197325",
+   "created_at": "2026-01-03T05:59:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Specifically the DDM4 V7 PRO</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 148816,
+   "parent_id": null,
+   "author": "072",
+   "author_id": 99365,
+   "author_url": "https://forge.sp-tarkov.com/user/99365/072",
+   "created_at": "2026-01-03T23:30:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2026-01-03 23:40:12]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 148817,
+   "parent_id": 148816,
+   "author": "072",
+   "author_id": 99365,
+   "author_url": "https://forge.sp-tarkov.com/user/99365/072",
+   "created_at": "2026-01-03T23:33:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2026-01-03 23:40:15]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 150285,
+   "parent_id": null,
+   "author": "Spatulalegs",
+   "author_id": 65675,
+   "author_url": "https://forge.sp-tarkov.com/user/65675/spatulalegs",
+   "created_at": "2026-01-16T02:43:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2026-02-01 14:32:32]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 150287,
+   "parent_id": 150285,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-01-16T02:51:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I am really sorry that inconvinienced you. Would you like a refund?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 150288,
+   "parent_id": 150285,
+   "author": "Spatulalegs",
+   "author_id": 65675,
+   "author_url": "https://forge.sp-tarkov.com/user/65675/spatulalegs",
+   "created_at": "2026-01-16T03:09:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2026-02-01 14:32:36]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 150289,
+   "parent_id": 150285,
+   "author": "Spatulalegs",
+   "author_id": 65675,
+   "author_url": "https://forge.sp-tarkov.com/user/65675/spatulalegs",
+   "created_at": "2026-01-16T03:10:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2026-02-01 14:32:39]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 151612,
+   "parent_id": null,
+   "author": "moe1499",
+   "author_id": 103124,
+   "author_url": "https://forge.sp-tarkov.com/user/103124/moe1499",
+   "created_at": "2026-01-31T23:20:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>When I go to gun builder, some of the new modded parts are showing as the Doge meme in a little box\u2026 I\u2019m very new to modding and SPT in general. Can you advise how to fix?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 151866,
+   "parent_id": 151612,
+   "author": "Takeo45",
+   "author_id": 6015,
+   "author_url": "https://forge.sp-tarkov.com/user/6015/takeo45",
+   "created_at": "2026-02-03T23:04:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Make sure you have downloaded the required dependencies</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 152028,
+   "parent_id": 151612,
+   "author": "mstasde89",
+   "author_id": 103014,
+   "author_url": "https://forge.sp-tarkov.com/user/103014/mstasde89",
+   "created_at": "2026-02-05T20:50:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I think Epic\u2019s All in One is the mod doing that</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 152335,
+   "parent_id": null,
+   "author": "GabboMassa07",
+   "author_id": 101789,
+   "author_url": "https://forge.sp-tarkov.com/user/101789/gabbomassa07",
+   "created_at": "2026-02-08T18:51:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>some items like m4s and stuf just get stuck with a loading wheel and if i try to open its info i get a big error tag over the gun model, i have all the dependencies downloaded on their last version, am i missing something?</p>\n<p>gives me this error in console:\nItem 6964ea3a5e4c1218314elb2f still not found in base cache after regeneration Item 69669ea64847b58fd5393f71 still not found in base cache after regeneration\nItem\n680fce2ec7b9b222270f074c still not found in\nbase cache after regeneration\nItem\n680fd1dae5044e670a092e16 still not found in\nbase cache after regeneration\nItem 68154651f849fb4e7d816738 still\nnot found in\nbase cache after regeneration\nItem 6815465859b8c6ff13f94026 still\nnot found in base cache after regeneration</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 152416,
+   "parent_id": null,
+   "author": ".h0ppin",
+   "author_id": 103759,
+   "author_url": "https://forge.sp-tarkov.com/user/103759/h0ppin",
+   "created_at": "2026-02-09T13:00:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello, great mod! Saw a few comments about a trader utility to raise the prices but I could not find it :\\ is there a place in the config files to edit the prices? I tried a few things but none seemed to work</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 152780,
+   "parent_id": 152335,
+   "author": "mstasde89",
+   "author_id": 103014,
+   "author_url": "https://forge.sp-tarkov.com/user/103014/mstasde89",
+   "created_at": "2026-02-12T21:16:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I get the same errors for items 680fce2ec7b9b222270f074c, 680fd1dae5044e670a092e16, 68154651f849fb4e7d816738, and 6815465859b8c6ff13f94026 during each launch, and I don\u2019t have this mod currently installed. It\u2019s coming from something else or a conflict between 2 different mods.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 152797,
+   "parent_id": 152416,
+   "author": "mikedis36",
+   "author_id": 57040,
+   "author_url": "https://forge.sp-tarkov.com/user/57040/mikedis36",
+   "created_at": "2026-02-13T03:03:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>following for same reason, some of the prices just kinda take a bit of the punishment out of the game</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 152812,
+   "parent_id": 152335,
+   "author": "GabboMassa07",
+   "author_id": 101789,
+   "author_url": "https://forge.sp-tarkov.com/user/101789/gabbomassa07",
+   "created_at": "2026-02-13T09:08:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i found the issue, its content bacport</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 154161,
+   "parent_id": null,
+   "author": "sourpatchcx",
+   "author_id": 106275,
+   "author_url": "https://forge.sp-tarkov.com/user/106275/sourpatchcx",
+   "created_at": "2026-03-05T01:13:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>nice mod dude! is there a way to disable the ammo barter for this trader? it makes it too easy to have good ammo right from the start.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 154162,
+   "parent_id": 154161,
+   "author": "sourpatchcx",
+   "author_id": 106275,
+   "author_url": "https://forge.sp-tarkov.com/user/106275/sourpatchcx",
+   "created_at": "2026-03-05T01:31:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>same with the armor^</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 157140,
+   "parent_id": null,
+   "author": "JimboK",
+   "author_id": 30751,
+   "author_url": "https://forge.sp-tarkov.com/user/30751/jimbok",
+   "created_at": "2026-04-14T02:48:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>CommonLib is now at version 2.0.18</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 163053,
+   "parent_id": 148393,
+   "author": "mrvaiza",
+   "author_id": 114369,
+   "author_url": "https://forge.sp-tarkov.com/user/114369/mrvaiza",
+   "created_at": "2026-06-16T21:07:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>if you dont want people coming to the page to ask questions you should probably turn off comments</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 163532,
+   "parent_id": null,
+   "author": "notlewis_2",
+   "author_id": 111715,
+   "author_url": "https://forge.sp-tarkov.com/user/111715/notlewis-2",
+   "created_at": "2026-06-20T17:35:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey - using this mod with Epic\u2019s AIO is creating asset errors with some Daniel Defense handguards. That one was just updated recently.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 4
+  },
+  {
+   "id": 163598,
+   "parent_id": null,
+   "author": "MoonWoman",
+   "author_id": 21410,
+   "author_url": "https://forge.sp-tarkov.com/user/21410/moonwoman",
+   "created_at": "2026-06-21T07:13:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Socom armory is not Compatible with the new version of Epics AIO, many handguards show an red ERROR. Just wanted to let you know :)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 4
+  },
+  {
+   "id": 164010,
+   "parent_id": 163598,
+   "author": "angel.22222",
+   "author_id": 87420,
+   "author_url": "https://forge.sp-tarkov.com/user/87420/angel22222",
+   "created_at": "2026-06-24T18:45:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I don\u2019t think we will get a fix sadly. been 6 months since his last version</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 164038,
+   "parent_id": 163598,
+   "author": "scorpio130386",
+   "author_id": 111422,
+   "author_url": "https://forge.sp-tarkov.com/user/111422/scorpio130386",
+   "created_at": "2026-06-24T23:29:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i hope he\u2019s still active here.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 164109,
+   "parent_id": null,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-06-25T15:19:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2026-06-25 15:20:58]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 164111,
+   "parent_id": null,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-06-25T15:21:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>My apologies everyone I went back to PVP at the 1.0 release and I don\u2019t have time for work, family, and both Tarkov and SPT, I can only do one or the other. I\u2019ve been watching SPT and waiting for it to support game v1.0.</p>\n<p>With that being said, I\u2019ll take a look at it as soon as I can. I am not a developer by any means once SPT went away from the old .json days and went to the new C# process I really struggle. I\u2019ll give it a shot!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 164133,
+   "parent_id": null,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-06-25T18:54:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Okay everyone I think I figured it out. I was able to get the WTT-CommonLib updated and recompiled. Epic changed all of the Daniel Defense item numbers so I\u2019ll have to get those edited and I see he added some new items so I\u2019ll try to add those as well.</p>\n<p>I\u2019ll try my best to have a patch out by Saturday June 27th at the latest.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 6
+  },
+  {
+   "id": 164141,
+   "parent_id": 164133,
+   "author": "scorpio130386",
+   "author_id": 111422,
+   "author_url": "https://forge.sp-tarkov.com/user/111422/scorpio130386",
+   "created_at": "2026-06-25T20:21:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you so much for your work and the fix.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 3
+  },
+  {
+   "id": 164145,
+   "parent_id": 164111,
+   "author": "Arira",
+   "author_id": 51562,
+   "author_url": "https://forge.sp-tarkov.com/user/51562/arira",
+   "created_at": "2026-06-25T21:07:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Proposed a PR on the repo.</p>\n<p>So far testing stuff out.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 164150,
+   "parent_id": 164111,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-06-25T22:00:57+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Wow thank you that\u2019s pretty cool I didn\u2019t even know Github would do all that. I\u2019m not sure what to do with it unless it\u2019s just markup suggestions? Sorry I\u2019m very very basic with this stuff. It might take a Discord conversation for me to understand what you did on there. My Discord is mt_patriot1776</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 164241,
+   "parent_id": 163598,
+   "author": "gyaruwolf",
+   "author_id": 95497,
+   "author_url": "https://forge.sp-tarkov.com/user/95497/gyaruwolf",
+   "created_at": "2026-06-26T16:03:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>is this why i keep seeing a Doge cube?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 164284,
+   "parent_id": 163598,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-06-26T23:38:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yes. Patch dropping tomorrow hopefully.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 164387,
+   "parent_id": 164133,
+   "author": "kinet1c.",
+   "author_id": 101111,
+   "author_url": "https://forge.sp-tarkov.com/user/101111/kinet1c",
+   "created_at": "2026-06-27T11:31:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 164453,
+   "parent_id": 163598,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-06-28T01:47:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Mod has been updated thank you for your patience.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 164454,
+   "parent_id": 163532,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-06-28T01:47:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Should be fixed now. Thanks for letting me know.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 164455,
+   "parent_id": 157140,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-06-28T01:48:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I recompiled the latest version with CommonLib 2.0.20, should be fixed now.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 164456,
+   "parent_id": 154161,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-06-28T01:48:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yes, you can modify the assort.json and remove any items you don\u2019t want.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 164458,
+   "parent_id": null,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-06-28T01:49:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Mod has been updated to be compatible with the latest WTT-CommonLib and Epics All In One.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 8
+  },
+  {
+   "id": 164477,
+   "parent_id": 164458,
+   "author": "kinet1c.",
+   "author_id": 101111,
+   "author_url": "https://forge.sp-tarkov.com/user/101111/kinet1c",
+   "created_at": "2026-06-28T08:02:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The goat.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 3
+  },
+  {
+   "id": 164520,
+   "parent_id": 163598,
+   "author": "MoonWoman",
+   "author_id": 21410,
+   "author_url": "https://forge.sp-tarkov.com/user/21410/moonwoman",
+   "created_at": "2026-06-28T16:39:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You are the best, thank you so much :)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 164705,
+   "parent_id": null,
+   "author": "66thMarauder",
+   "author_id": 53913,
+   "author_url": "https://forge.sp-tarkov.com/user/53913/66thmarauder",
+   "created_at": "2026-06-30T05:37:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>are you able to add the ulachs from arena to the mod by any chance?\nthe main reason im asking is because for some reason i really fucking love them and would reinstall spt just to fuck around with them. it seems like spt battlepass or arena import mods arent on any other modders scope. and you sir, could be my only hope.</p>\n<p>thank you for your time</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 164721,
+   "parent_id": 164705,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-06-30T12:40:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Unfortunately, I don\u2019t have the knowledge to import assets from the live game to SPT.</p>\n<p>Try the WTT - Content Backport.  <a href=\"https://forge.sp-tarkov.com/mod/2512/wtt-content-backport\" target=\"_blank\" rel=\"noreferrer noopener\">https://forge.sp-tarkov.com/mod/2512/wtt-content-backport</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 164750,
+   "parent_id": null,
+   "author": "sesame077",
+   "author_id": 117283,
+   "author_url": "https://forge.sp-tarkov.com/user/117283/sesame077",
+   "created_at": "2026-06-30T17:26:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Getting an error when installing the new update (2.0.2). It doesnt try to overwrite the old folder \u2018SOCOM-2.0.1\u2019. When I drag and drop the updated one, the folder is just named \u2018SOCOM\u2019. Not sure if it\u2019s just a simple naming issue but my server doesn\u2019t recognize it and conflicts with both installed and if only \u2018SOCOM\u2019 is installed. So deleting the old folder doesnt seem to fix it either :/</p>\n<p>Thank you for the update and appreciate your time!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 164768,
+   "parent_id": 164750,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-06-30T21:13:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Delete all SOCOM folders under the \u201cmods\u201d folder. Then place in the new version.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 165161,
+   "parent_id": null,
+   "author": "gotothedrive",
+   "author_id": 104586,
+   "author_url": "https://forge.sp-tarkov.com/user/104586/gotothedrive",
+   "created_at": "2026-07-03T18:40:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2026-07-03 18:58:42]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 166058,
+   "parent_id": null,
+   "author": "Zaxx",
+   "author_id": 43626,
+   "author_url": "https://forge.sp-tarkov.com/user/43626/zaxx",
+   "created_at": "2026-07-12T08:47:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thx for your mod bro !\nAny possibility to increase items price to buy ?\nI ve try to modify discount in base but nothing change.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 166091,
+   "parent_id": 166058,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-07-12T16:32:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hit me up on Discord. I have a little price updater utility .exe I made that can save you a buttload of time. I can do it for you or I\u2019m happy to share the utility with you.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 166092,
+   "parent_id": 166058,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-07-12T16:32:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>mt_patriot1776 on Discord.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 166600,
+   "parent_id": null,
+   "author": "johnathanbelle",
+   "author_id": 114433,
+   "author_url": "https://forge.sp-tarkov.com/user/114433/johnathanbelle",
+   "created_at": "2026-07-16T17:15:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>it would be cool if you added sights for the m203 ubgl, idek if that\u2019s possible but it would be pretty sick</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 166794,
+   "parent_id": 166600,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-07-18T03:23:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I don\u2019t know much about creating custom assets. I know how to use custom bundle files other modders have made. I would probably ask EPIC or Eco. Both of those guys would know how to do it.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 166797,
+   "parent_id": 166600,
+   "author": "johnathanbelle",
+   "author_id": 114433,
+   "author_url": "https://forge.sp-tarkov.com/user/114433/johnathanbelle",
+   "created_at": "2026-07-18T03:43:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>understandable, im guessing that may be the reason why the bipods dont work?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 166852,
+   "parent_id": 166600,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-07-18T17:13:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m not following your question. I just created a trader that sells base game items and items from other modders. A trader has no impact on whether an item such as a bipod works or not. Maybe I\u2019m not understanding the question.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 166853,
+   "parent_id": 166600,
+   "author": "johnathanbelle",
+   "author_id": 114433,
+   "author_url": "https://forge.sp-tarkov.com/user/114433/johnathanbelle",
+   "created_at": "2026-07-18T17:15:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Oh then I misunderstood the mod lol I thought you added in those bipods, that the trader sells. My apologies</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 166856,
+   "parent_id": null,
+   "author": "unsentblade",
+   "author_id": 117487,
+   "author_url": "https://forge.sp-tarkov.com/user/117487/unsentblade",
+   "created_at": "2026-07-18T17:31:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>is there any way to make the items in the trader shop more expensive?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 167674,
+   "parent_id": 166856,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-07-23T21:36:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yes there sure is. Navigate to [SPT Game Save Location]\\SPT\\user\\mods\\SOCOM\\db\\TraderSOCOM\\assort.json</p>\n<p>Edit the assort.json file with any notepad editor.</p>\n<p>The section that contains the pricing is the   \u201cbarter_scheme\u201d: { section and change the number under \u201ccount\u201d</p>\n<p>For example, If I wanted to make a Cold Fear Mask $50.00, I would make the entry look like this \u201ccount\u201d: 50\u201c</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 167676,
+   "parent_id": null,
+   "author": "switchlane123ger",
+   "author_id": 96120,
+   "author_url": "https://forge.sp-tarkov.com/user/96120/switchlane123ger",
+   "created_at": "2026-07-23T22:01:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Love your Work and Mod !</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 167681,
+   "parent_id": null,
+   "author": "CharlieKirk",
+   "author_id": 85064,
+   "author_url": "https://forge.sp-tarkov.com/user/85064/charliekirk",
+   "created_at": "2026-07-24T00:17:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>FRT FTW!!!!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 167692,
+   "parent_id": null,
+   "author": "_generalhavoc",
+   "author_id": 116096,
+   "author_url": "https://forge.sp-tarkov.com/user/116096/generalhavoc",
+   "created_at": "2026-07-24T02:04:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is it intended for SOCOM to have nothing for sale level 1?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 167696,
+   "parent_id": null,
+   "author": "Nayutaa",
+   "author_id": 103115,
+   "author_url": "https://forge.sp-tarkov.com/user/103115/nayutaa",
+   "created_at": "2026-07-24T03:06:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>excited for the new quest/story line, congrats on the update!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 167705,
+   "parent_id": 167692,
+   "author": "_generalhavoc",
+   "author_id": 116096,
+   "author_url": "https://forge.sp-tarkov.com/user/116096/generalhavoc",
+   "created_at": "2026-07-24T04:00:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It appears that you must finish the first two quests to gain access to SOCOM\u2019s stuff. Much less op now lol.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 167708,
+   "parent_id": null,
+   "author": "spedy7",
+   "author_id": 109681,
+   "author_url": "https://forge.sp-tarkov.com/user/109681/spedy7",
+   "created_at": "2026-07-24T04:31:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Not sure what it pertains to but got a fatal error starting the server with 691a2a1829cbc4e14845148c not present:\n<a href=\"https://codepaste.sp-tarkov.com/?73d465fd17252de2#C7b2qKq3DfkQqzkYULDWSmBum85cM3DqozwYp9HjQMD6\" target=\"_blank\" rel=\"noreferrer noopener\">https://codepaste.sp-tarkov.com/?73d465fd17252de2#C7b2qKq3DfkQqzkYULDWSmBum85cM3DqozwYp9HjQMD6</a></p>\n<p>Removing SOCOM (unfortunately) fixes the issue.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 167741,
+   "parent_id": 167708,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-07-24T15:03:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Message me on Discord if you don\u2019t mind mt_patriot1776</p>\n<p>I think I found the issue causing the critical stop error. I had a reference to an old custom cartridge from an old version of SalcosArmory in the DD magazines that is incompatible with SplitMagazineCases. I have a different version for you to test if you are willing before I upload it.</p>\n<p>The four errors at the top of your log are from a different mod, only the last critical error was from SOCOM.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 167742,
+   "parent_id": 167696,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-07-24T15:11:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>No problem and thank you! Appreciate the kind words.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 167743,
+   "parent_id": 167692,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-07-24T15:13:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You have to reach level 10 and complete the first mission to get very basic trades. Then each mission gives you more unlocks and more rep :)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 167744,
+   "parent_id": 167676,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-07-24T15:13:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you switchlane! And thanks for catching that first bug for me early ;)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 167811,
+   "parent_id": null,
+   "author": "CharlieKirk",
+   "author_id": 85064,
+   "author_url": "https://forge.sp-tarkov.com/user/85064/charliekirk",
+   "created_at": "2026-07-25T02:28:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>did you do the DDM4 PDW preset yet?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 167817,
+   "parent_id": 167811,
+   "author": "CharlieKirk",
+   "author_id": 85064,
+   "author_url": "https://forge.sp-tarkov.com/user/85064/charliekirk",
+   "created_at": "2026-07-25T02:59:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>also you changed the file name so it does not replace previous files</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 167818,
+   "parent_id": 167708,
+   "author": "spedy7",
+   "author_id": 109681,
+   "author_url": "https://forge.sp-tarkov.com/user/109681/spedy7",
+   "created_at": "2026-07-25T03:01:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Wasn\u2019t sure if those 4 errors prior pertained to this mod, but glad you found it! Couldn\u2019t trace that item ID anywhere. Sent a DM on Discord, happy to help and make sure it\u2019s compatible.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 167860,
+   "parent_id": null,
+   "author": "doggirlxanax",
+   "author_id": 101949,
+   "author_url": "https://forge.sp-tarkov.com/user/101949/doggirlxanax",
+   "created_at": "2026-07-25T08:20:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>bug found</p>\n<p>capitalization mismatch for base.json [in folder \u201cBase.json\u201d] as well as assort.json [in folder \u201cAssort.json]\u201d. throws a critical error that kills server. fix is to change capitalization to lowercase.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 167872,
+   "parent_id": null,
+   "author": "robertiphone",
+   "author_id": 118711,
+   "author_url": "https://forge.sp-tarkov.com/user/118711/robertiphone",
+   "created_at": "2026-07-25T09:02:34+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Are there any images of the optics added? It would be nice to see their scope reticles.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 167938,
+   "parent_id": 167860,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-07-25T16:23:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you for reporting this. This has been patched and you can re-download if you want.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 167939,
+   "parent_id": 167872,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-07-25T16:23:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>They aren\u2019t my optics they belong to Epic\u2019s All in One.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 167940,
+   "parent_id": 167811,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-07-25T16:23:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you for reporting this. This has been patched and you can re-download if you want.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 167950,
+   "parent_id": 167811,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-07-25T17:17:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I thought about it but then changed my mind since US SOCOM wouldn\u2019t use a civilian pistol for anything. Also the PDW uses a 7\u201c barrel and a 7-8\u201c handguard and none of those assets exist anywhere in SPT as of yet.</p>\n<p>You can come close:</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/MT-Patriot1776/SPT-SOCOM/refs/heads/main/SOCOM_images/DDM4%20300%20BLK%20PDW.png\" alt=\"Screenshot 1\" /></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 167982,
+   "parent_id": 167860,
+   "author": "doggirlxanax",
+   "author_id": 101949,
+   "author_url": "https://forge.sp-tarkov.com/user/101949/doggirlxanax",
+   "created_at": "2026-07-25T19:12:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Ofcourse. Anytime. Thank you for being kind and for fixing so quick!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168017,
+   "parent_id": 167811,
+   "author": "CharlieKirk",
+   "author_id": 85064,
+   "author_url": "https://forge.sp-tarkov.com/user/85064/charliekirk",
+   "created_at": "2026-07-25T21:51:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i have the gun IRL and its not easy to replicate lol especially the muzzle device plus i believe some other attachment mod groups may make it easier too. I will have to look. Just gotta level the trader up now to get there. I appreciate all your hard work!!!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168075,
+   "parent_id": null,
+   "author": "ratedred.",
+   "author_id": 118838,
+   "author_url": "https://forge.sp-tarkov.com/user/118838/ratedred",
+   "created_at": "2026-07-26T01:45:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey I am having trouble even starting the first quest. Says I have to give 4 waters and 4 MRE\u2019s. I am able to turn the water in but not the MRE so I cant even unlock the trader.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168090,
+   "parent_id": 168075,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-07-26T03:00:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Are they found in raid?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168094,
+   "parent_id": 168075,
+   "author": "ratedred.",
+   "author_id": 118838,
+   "author_url": "https://forge.sp-tarkov.com/user/118838/ratedred",
+   "created_at": "2026-07-26T03:29:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I have it so when I buy items off traders they become FIR. It worked when I bought the waters from therapist but when I bought the MRE\u2019s from Flee Market, i couldn\u2019t turn them in. It could be that it was from the flee and not a trader. I\u2019ll get back to you on that tomorrow. I appreciate the quick response man. Hope I can get it working because DD is my favorite AR brand.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168096,
+   "parent_id": 168075,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-07-26T03:53:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Did you buy Iskras or MRE\u2019s?</p>\n<p>Send me a screenshot if you don\u2019t mind on Discord. MT_Patriot1776</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168099,
+   "parent_id": 168075,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-07-26T04:28:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I just created a new profile and tested again. It\u2019s working for me. Maybe try finding one from a raid and see if it can be handed in?</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/MT-Patriot1776/SPT-SOCOM/refs/heads/main/SOCOM_images/MREs.png\" alt=\"Screenshot 1\" /></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168114,
+   "parent_id": null,
+   "author": "peakashell",
+   "author_id": 111187,
+   "author_url": "https://forge.sp-tarkov.com/user/111187/peakashell",
+   "created_at": "2026-07-26T07:26:37+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hey! I\u2019m having a problem where the SOCOM mod is throwing an error in the server launcher. According to the launcher, the mod by EpicRangeTime isn\u2019t installed\u2014even though it actually is in the mods folder\u2014and I do have the latest version. If you need more information about the error, I can provide screenshots if necessary.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168119,
+   "parent_id": null,
+   "author": "Darezi",
+   "author_id": 51804,
+   "author_url": "https://forge.sp-tarkov.com/user/51804/darezi",
+   "created_at": "2026-07-26T08:42:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Getting this error after latest update:</p>\n<p>Mod: Salco-SALCO\u2019s ARMORY requires: com.wtt.contentbackport version: ~1.0.7. Current installed version is: 1.1.0\nErrors were found with mods, NO MODS WILL BE LOADED</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 168120,
+   "parent_id": null,
+   "author": "ItsupikiOokami",
+   "author_id": 117956,
+   "author_url": "https://forge.sp-tarkov.com/user/117956/itsupikiookami",
+   "created_at": "2026-07-26T08:52:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Good afternoon. I installed the mod, but the new items didn\u2019t appear. Before installing, I deleted the old version and installed the new one</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168147,
+   "parent_id": 168075,
+   "author": "ratedred.",
+   "author_id": 118838,
+   "author_url": "https://forge.sp-tarkov.com/user/118838/ratedred",
+   "created_at": "2026-07-26T12:53:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yeah ill definitely try that. Im at work atm but when I get home ill try find one in raid. If I have an issue after that ill send another message. Thanks man!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168168,
+   "parent_id": null,
+   "author": "shales",
+   "author_id": 117655,
+   "author_url": "https://forge.sp-tarkov.com/user/117655/shales",
+   "created_at": "2026-07-26T15:18:07+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>new update is saying it needs backport 1.0.7 and cannot use the new one. also not apart of the required dependencies neither that it relies on backport.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168172,
+   "parent_id": 168168,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-07-26T15:25:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Update your WTT-Backport mod and update your WTT-CommonLIb</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168173,
+   "parent_id": 168120,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-07-26T15:26:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <ol>\n<li>Need screenshots</li>\n<li>Did you install all the dependencies (latest versions)?</li>\n<li>Are you level 10 yet and did you complete the quest to unlock the trader?</li>\n</ol>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168175,
+   "parent_id": 168119,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-07-26T15:27:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2026-07-26 15:29:36]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168176,
+   "parent_id": 168114,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-07-26T15:28:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <ol>\n<li>Make sure it\u2019s Epic\u2019s All in One, not one of his other smaller bolt-on packs</li>\n<li>Send me screenshots please</li>\n<li>Make sure it\u2019s installed correctly SPT/user/mods/Epics\u2026\u2026</li>\n<li>Make sure you have WTT-CommonLib 2.0.23</li>\n</ol>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168179,
+   "parent_id": 168119,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-07-26T15:29:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Salco needs to update his armory to include WTT-CommonLib 2.0.23. You will have to remove Salco until he updates.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 168181,
+   "parent_id": 168168,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-07-26T15:31:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It doesn\u2019t rely on backport. Backport needs to be updated to work with WTT-CommonLib 2.0.23</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168184,
+   "parent_id": 168168,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-07-26T15:42:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>SOCOM loads just fine with no WTT-Backport</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/MT-Patriot1776/SPT-SOCOM/refs/heads/SOCOM_3.0.3/SOCOM_images/SOCOM-No-WTT-Backport.png\" alt=\"Screenshot 1\" /></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168194,
+   "parent_id": 168120,
+   "author": "ItsupikiOokami",
+   "author_id": 117956,
+   "author_url": "https://forge.sp-tarkov.com/user/117956/itsupikiookami",
+   "created_at": "2026-07-26T16:22:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>All the necessary mods are installed.\nThe first quest for MRE and water has been completed. Unfortunately, there is not enough level to fully unlock the merchant\u2019s inventory, but new weapons and modules have not appeared in the builds. And I can\u2019t find a way to attach a screenshot.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168195,
+   "parent_id": 168120,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-07-26T16:27:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <ul>\n<li>What game edition did you select? I\u2019ll test and see if I can replicate the issue.</li>\n<li>What is your current rep with SOCOM after completing mission (quest) 1?</li>\n<li>What level is your character?</li>\n</ul>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168197,
+   "parent_id": 168120,
+   "author": "ItsupikiOokami",
+   "author_id": 117956,
+   "author_url": "https://forge.sp-tarkov.com/user/117956/itsupikiookami",
+   "created_at": "2026-07-26T16:31:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m playing the Unheard edition. Character level 15, merchant level 1, reputation 0.23</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168198,
+   "parent_id": 168120,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-07-26T16:39:48+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Go to the SOCOM Trader tab. On the top left to the right of SHOWCASE, click the \u201cREFRESH STORE\u201d button and let me know if items begin to appear.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168202,
+   "parent_id": 168120,
+   "author": "ItsupikiOokami",
+   "author_id": 117956,
+   "author_url": "https://forge.sp-tarkov.com/user/117956/itsupikiookami",
+   "created_at": "2026-07-26T16:44:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Nothing has changed.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168204,
+   "parent_id": 168120,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-07-26T16:48:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m unable to replicate the issue. Hit me up on Discord if you don\u2019t mind so we can do a screen share. mt_patriot1776</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168206,
+   "parent_id": 168120,
+   "author": "ItsupikiOokami",
+   "author_id": 117956,
+   "author_url": "https://forge.sp-tarkov.com/user/117956/itsupikiookami",
+   "created_at": "2026-07-26T16:53:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I sent a request. My nickname is Itsupiki Ookami. However, there is a problem: English is not my native language.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 168209,
+   "parent_id": 168168,
+   "author": "shales",
+   "author_id": 117655,
+   "author_url": "https://forge.sp-tarkov.com/user/117655/shales",
+   "created_at": "2026-07-26T16:58:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>hmm thats weird that it said that then, couldve not just transferred files correctly, ill try again</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168216,
+   "parent_id": 168168,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-07-26T17:29:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I was just thinking. I wonder if it\u2019s an item you had in your character profile that was changed, removed, etc. from the backport mod?</p>\n<p>If you want some help troubleshooting we can use Codepaste or Discord:</p>\n<p><a href=\"https://codepaste.sp-tarkov.com/\" target=\"_blank\" rel=\"noreferrer noopener\">https://codepaste.sp-tarkov.com/</a></p>\n<p>mt_patriot1776 on Discord.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168219,
+   "parent_id": 168120,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-07-26T17:33:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Got it, thanks! I\u2019m glad we figured it out :)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168238,
+   "parent_id": null,
+   "author": "switchlane123ger",
+   "author_id": 96120,
+   "author_url": "https://forge.sp-tarkov.com/user/96120/switchlane123ger",
+   "created_at": "2026-07-26T18:29:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>sadly dont work without Epic all in one because it didnt update to the new CommonlLib Version</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168255,
+   "parent_id": 168238,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-07-26T19:06:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It does work with the current version of Epic. You may have a few items that are invalid in your inventory but you can tell your core.json config to auto fix those broken items.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168261,
+   "parent_id": 168238,
+   "author": "switchlane123ger",
+   "author_id": 96120,
+   "author_url": "https://forge.sp-tarkov.com/user/96120/switchlane123ger",
+   "created_at": "2026-07-26T19:13:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>than im asbolut lost i updated common lip and backport.\ndownloaded Blackout nemesis system updated ui fixes and downloaded ultimate flea and now i got endless loading screen server log says no problems everything seems to run fine</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168276,
+   "parent_id": 168238,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-07-26T20:09:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>A lot of mods rely on CommonLib and Backport. This usually happens after they update; it takes a while for everyone to get their project updated. YOu might have to remove some mods until ppl get updated.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168283,
+   "parent_id": 168119,
+   "author": "Darezi",
+   "author_id": 51804,
+   "author_url": "https://forge.sp-tarkov.com/user/51804/darezi",
+   "created_at": "2026-07-26T21:18:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>My bad man. I didn\u2019t even see that I wrote to you instead of Salco :D. I Just saw armory and jumped in to complain :) :) :)    Sorry..</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 168415,
+   "parent_id": 168119,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-07-27T16:39:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>No worries, I understand.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168450,
+   "parent_id": null,
+   "author": "northdh_",
+   "author_id": 118941,
+   "author_url": "https://forge.sp-tarkov.com/user/118941/northdh",
+   "created_at": "2026-07-27T19:50:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Have updated the dependency mods and reinstalled SOCOM as described (full deletion + fresh install). For some reason, despite the trader being at level 2 (with reputation + money spent), there aren\u2019t any quests available, meaning progression is effectively locked out. Tried again on a Fresh SPT dev profile (trader maxed), there were no completed quests in the toggle, or any new quests to start. The Services tab is also greyed out on both profiles (current and freshly created).</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168456,
+   "parent_id": 168450,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-07-27T20:22:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>What level is your character and what is your current rep.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168459,
+   "parent_id": null,
+   "author": "hellsreaper222",
+   "author_id": 118945,
+   "author_url": "https://forge.sp-tarkov.com/user/118945/hellsreaper222",
+   "created_at": "2026-07-27T20:40:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i have a question at what level do you unlock Socom now since the mod updated it locked is there a prequest now to unlock him</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168475,
+   "parent_id": 168459,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-07-27T21:29:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Level 10 for the first quest to show up. First quest completion unlocks level 1 with SOCOM&gt;</p>\n<p>You can use Task Skipper if you want to go straight to lvl 4 without having to do the missions.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168512,
+   "parent_id": 168450,
+   "author": "northdh_",
+   "author_id": 118941,
+   "author_url": "https://forge.sp-tarkov.com/user/118941/northdh",
+   "created_at": "2026-07-28T03:47:46+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Character is level 65, most traders are maxed (Peacekeeper at 3). SOCOM trader is level 2, with 0 rep somehow. No quests available, or shown as locked / completed.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168553,
+   "parent_id": null,
+   "author": "asdasd100210",
+   "author_id": 76180,
+   "author_url": "https://forge.sp-tarkov.com/user/76180/asdasd100210",
+   "created_at": "2026-07-28T09:52:14+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It seems like my game is bugged, I can\u2019t sell anything from guns to attachments for SOCOM</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168579,
+   "parent_id": 168553,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-07-28T13:18:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I need more information I can\u2019t help you troubleshoot if I don\u2019t have a clue what you are talking about.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168585,
+   "parent_id": null,
+   "author": "solo76",
+   "author_id": 99548,
+   "author_url": "https://forge.sp-tarkov.com/user/99548/solo76",
+   "created_at": "2026-07-28T14:01:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019ve finished all the tasks, but the trader is still only Level 2. Is there any way to fix this?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168587,
+   "parent_id": 168553,
+   "author": "asdasd100210",
+   "author_id": 76180,
+   "author_url": "https://forge.sp-tarkov.com/user/76180/asdasd100210",
+   "created_at": "2026-07-28T14:23:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Sorry for my bad English, but I just installed your mod. To level up the SOCOM trader, I need to complete quests and spend a certain amount of money, right? But I can\u2019t figure out how to spend the money needed to level him up. The SOCOM trader won\u2019t let me sell anything to him, even though I can buy items and ammo from him. I deleted the old mod and installed the new one, but it still doesn\u2019t work.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168593,
+   "parent_id": null,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-07-28T14:44:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2026-07-28 14:46:17]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168594,
+   "parent_id": null,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-07-28T14:45:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2026-07-28 14:45:46]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168595,
+   "parent_id": null,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-07-28T14:46:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2026-07-28 14:50:06]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168596,
+   "parent_id": null,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-07-28T14:49:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <h2>SOCOM Loyalty Requirements</h2>\n<p>LL1: Level 10 | Must complete 1st Quest to unlock Trader</p>\n<p>LL2: Level 17 | Rep 0.29 | $25,000 Spent</p>\n<p>LL3: Level 27 | Rep 0.35 | $50,000 Spent</p>\n<p>LL4: Level 37 | Rep 0.44 | $100,000 Spent</p>\n<h3>NOTE:</h3>\n<h5>SOCOM NO LONGER BUYS ITEMS TO REDUCE META!</h5>\n<p>You must meet ALL requirements to unlock each Loyalty Level. Higher Loyalty = Better buy prices, cheaper insurance, and lower repair costs. Selling prices remain the same.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168689,
+   "parent_id": null,
+   "author": "hdyzxzyxzg",
+   "author_id": 106721,
+   "author_url": "https://forge.sp-tarkov.com/user/106721/hdyzxzyxzg",
+   "created_at": "2026-07-29T01:52:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I found that some attachments show an red ERROR.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 168731,
+   "parent_id": null,
+   "author": "tomy",
+   "author_id": 118449,
+   "author_url": "https://forge.sp-tarkov.com/user/118449/tomy",
+   "created_at": "2026-07-29T07:49:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2026-07-29 09:04:09]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168784,
+   "parent_id": 168075,
+   "author": "ratedred.",
+   "author_id": 118838,
+   "author_url": "https://forge.sp-tarkov.com/user/118838/ratedred",
+   "created_at": "2026-07-29T15:15:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I got it to work man. I appreciate the replies man. Great mod! God bless you</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168818,
+   "parent_id": null,
+   "author": "kemalata",
+   "author_id": 98564,
+   "author_url": "https://forge.sp-tarkov.com/user/98564/kemalata",
+   "created_at": "2026-07-29T20:07:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>hey \u0131 have problem \u0131 just update my socom to new version and now trader is stuck at level 1 and it sell nothing \u0131 cant buy anything</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168867,
+   "parent_id": 168689,
+   "author": "andrew_Will",
+   "author_id": 64040,
+   "author_url": "https://forge.sp-tarkov.com/user/64040/andrew-will",
+   "created_at": "2026-07-30T03:09:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Does it happen to be daniel defense handguards?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168870,
+   "parent_id": 168689,
+   "author": "hdyzxzyxzg",
+   "author_id": 106721,
+   "author_url": "https://forge.sp-tarkov.com/user/106721/hdyzxzyxzg",
+   "created_at": "2026-07-30T03:15:31+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yes\uff0cmost daniel defense handguards are normal\uff0cjust few will be replaced by an ERROR.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168874,
+   "parent_id": null,
+   "author": "bullocket132",
+   "author_id": 63135,
+   "author_url": "https://forge.sp-tarkov.com/user/63135/bullocket132",
+   "created_at": "2026-07-30T03:45:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>im having issues with attachment stacking and error parts. foregrips stacked on gl attachments, double suppressors on guard and scav weapon drops. DD mag and DD X mag are not loading and giving error</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168993,
+   "parent_id": null,
+   "author": "felys",
+   "author_id": 119108,
+   "author_url": "https://forge.sp-tarkov.com/user/119108/felys",
+   "created_at": "2026-07-30T21:58:40+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>SOCOM Armory 3.0.3 \u2014 Bug: \u201cAIAXMC338LM\u201d trader offer references non-existent (wrong) item IDs</p>\n<p>On server startup, SPT logs 4 warnings because items cannot be added to the item cache (they don\u2019t exist in the item database):</p>\n<p>Could not add 6917d89b54f5f109c106c1ee to cache, it does not exist in the item database!\nCould not add 6917d89b54f5f109c106c1ef to cache, it does not exist in the item database!\nCould not add 6917d89b54f5f109c106c1f2 to cache, it does not exist in the item database!\nCould not add 6917d89b54f5f109c106c1f4 to cache, it does not exist in the item database!\nItem: 6917d89b54f5f109c106c1ee lacks properties, cannot ascertain quality level, assuming 100%\nItem: 6917d89b54f5f109c106c1ef lacks properties, cannot ascertain quality level, assuming 100%\nItem: 6917d89b54f5f109c106c1f2 lacks properties, cannot ascertain quality level, assuming 100%\nItem: 6917d89b54f5f109c106c1f4 lacks properties, cannot ascertain quality level, assuming 100%\nEnvironment: SPT 4.0.13 (ASP.NET Core, SPT.Server.exe) / EFT client 0.16.9 / SOCOM Armory 3.0.3 (requires EpicsAIO / \u201cEAIO\u201d as prerequisite).</p>\n<p>Root cause: The phantom items come from ONE bundled offer in user/mods/SOCOM/db/TraderSOCOM/assort.json:</p>\n<p>_comment: AIAXMC338LM, offer _id: 6a65597f07cbba7f545fffd4\n_tpl (weapon body) 6917d89b54f5f109c106c1ee\nchild mod_barrel 6917d89b54f5f109c106c1ef\nchild mod_stock 6917d89b54f5f109c106c1f2\nchild mod_handguard 6917d89b54f5f109c106c1f4\nThese four 6917d89b54f5f109c106c1xx IDs exist in NO database:</p>\n<p>Not in base-game item templates (SPT_Data/database/templates/items.json). The base game DOES ship the AI AXMC .338 LM weapon \u2014 real _tpl is 627e14b21713922ded6f2c15 (weapon_accuracy_inernational_axmc_86x70).\nNot added by EpicsAIO (SOCOM\u2019s prerequisite). EAIO adds AXMC barrels under db/CustomItems/AXMC_Barrels.json with IDs 8d5a67fd685ff05e7253b4f7 / 013114b6d9dc19eda4d0cad3 / a3a94608ed92771a766c6244 \u2014 a completely different ID range.\nNot in SOCOM\u2019s own db/CustomItems/.\nSo these 6917\u2026 IDs look like a copy-paste from a different mod\u2019s ID scheme. The author clearly knew the correct IDs, because two sibling offers in the SAME assort.json work fine:</p>\n<p>AIAXMC338LM2 \u2192 _tpl 627e14b21713922ded6f2c15 (real base-game AXMC weapon) \u2014 resolves OK\nAIAXMC338LM10round \u2192 _tpl 628120fd5631d45211793c9f (real 10-round magazine) \u2014 resolves OK\nOnly AIAXMC338LM is stale.</p>\n<p>I re-downloaded a fresh SOCOM 3.0.3 and confirmed the same issue (same 4 6917\u2026 IDs, still no such templates anywhere), so it\u2019s a packaging bug in the release, not a corrupted download.</p>\n<p>Impact: Server still starts and runs (cosmetic warnings only). The AIAXMC338LM offer is a phantom and can\u2019t be purchased/loaded, but the AI AXMC .338 LM is still fully purchasable via the two working sibling offers, and all other SOCOM weapons are unaffected.</p>\n<p>Suggested fix:</p>\n<p>Point the offer at real IDs \u2014 replace the four 6917d89b54f5f109c106c1xx _tpl values in AIAXMC338LM with the actual AXMC item IDs (weapon body 627e14b21713922ded6f2c15; EAIO barrel 8d5a67fd\u2026/013114b6\u2026/a3a94608\u2026; base-game stock/handguard); OR\nRemove the orphan AIAXMC338LM offer block (offer _id 6a65597f07cbba7f545fffd4 + its 3 child items) from assort.json, since the weapon is already covered by the two working sibling offers.\nWorkaround I used: Deleted the phantom AIAXMC338LM offer block from assort.json. Verification: 0 unresolved _tpl remain across the whole SOCOM assort, and the two working AIAXMC offers are intact. Startup warnings are gone and the trader works normally.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 168995,
+   "parent_id": 168553,
+   "author": "felys",
+   "author_id": 119108,
+   "author_url": "https://forge.sp-tarkov.com/user/119108/felys",
+   "created_at": "2026-07-30T22:01:03+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Most of the time, I remember that the upgradeable merchant\u2019s required purchase count is increased by buying stuff. In the original version, merchants would level up by buying the items they sold.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169030,
+   "parent_id": null,
+   "author": "hdyzxzyxzg",
+   "author_id": 106721,
+   "author_url": "https://forge.sp-tarkov.com/user/106721/hdyzxzyxzg",
+   "created_at": "2026-07-31T04:29:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Another bug report, when I install the version 3.x, levels of AIPMC will be abnormal (almost under 10).That situation never happen on version 2.x.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169068,
+   "parent_id": 169030,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-07-31T13:35:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>SOCOM has zero effect on bot spawns.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169069,
+   "parent_id": 168874,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-07-31T13:35:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Sounds like a mod conflict, possible WTT-CommonLib outdated on a different mod. Please provide a list of your active mods</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169070,
+   "parent_id": 168993,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-07-31T13:36:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019ll take a look at this. Looks like I might have mistakenly used a part from another mod outside of Epic\u2019s.</p>\n<p>Thank you for providing this information unlike all the other idiots telling me \u201cyour mod is broke\u201d with zero explanation.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169071,
+   "parent_id": 168874,
+   "author": "bullocket132",
+   "author_id": 63135,
+   "author_url": "https://forge.sp-tarkov.com/user/63135/bullocket132",
+   "created_at": "2026-07-31T13:49:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I reinstalled your mod and that fixed the errors.</p>\n<p>but the attachment stacking is only affecting DD attachments</p>\n<p>here is my list\n\u251c\u2500\u2500 ABPS - Acid\u2019s Bot Placement System v2.0.19\n\u251c\u2500\u2500 Add Secret Exfil Notes to Caches v2.0.0\n\u251c\u2500\u2500 Amands\u2019 Sense - Updated v3.0.1\n\u251c\u2500\u2500 Amands\u2019s Graphics v1.0.0\n\u251c\u2500\u2500 APBS - Acid\u2019s Progressive Bot System v2.2.1\n\u251c\u2500\u2500 Auto Ranging  v1.0.0\n\u251c\u2500\u2500 Better Thermal &amp; Night Vision v1.3.2\n\u251c\u2500\u2500 BigBrain v1.4.0\n\u251c\u2500\u2500 Blackout v2.0.0\n\u251c\u2500\u2500 Bosses Have Lega Medals v2.0.1\n\u251c\u2500\u2500 BrightLasers v2.0.0\n\u251c\u2500\u2500 Canted Aiming v1.2.0\n\u251c\u2500\u2500 Color Converter API v1.1.0\n\u251c\u2500\u2500 Continuous Healing v1.4.0\n\u251c\u2500\u2500 Dragon Den - Hitmarker v1.0.2\n\u251c\u2500\u2500 Dynamic Maps v1.1.3\n\u251c\u2500\u2500 Enable Labyrinth v1.0.2\n\u251c\u2500\u2500 Epic\u2019s All in One v4.0.8\n\u251c\u2500\u2500 Expanded Task Text v2.0.3\n\u251c\u2500\u2500 Fair Bot Health v1.0.2\n\u251c\u2500\u2500 Healing Autocancel v1.0.0\n\u251c\u2500\u2500 HollywoodFX v2.0.0\n\u251c\u2500\u2500 I Can Run Forever v1.0.0\n\u251c\u2500\u2500 Janky-HollywoodGraphics v2.0.0\n\u251c\u2500\u2500 Kaeno-TraderScrolling v4.0.0\n\u251c\u2500\u2500 Key Tips v1.0.0\n\u251c\u2500\u2500 LMSP - Let Me Switch Plates v1.0.0\n\u251c\u2500\u2500 LootNET v1.0.8\n\u251c\u2500\u2500 Lots of Loot Redux v4.1.2\n\u251c\u2500\u2500 Medical Attention v4.0.3\n\u251c\u2500\u2500 MoreBotsAPI v2.0.1\n\u251c\u2500\u2500 MoreCheckmarks v2.2.0\n\u251c\u2500\u2500 NerfBotGrenades v1.2.0\n\u251c\u2500\u2500 No Barrel Shadow v1.1.0\n\u251c\u2500\u2500 ODT\u2019s Item Info - SPT 4.0 v2.0.14\n\u251c\u2500\u2500 Old Tarkov Movement (No Inertia) v1.1.2\n\u251c\u2500\u2500 ORBIT v1.2.1\n\u251c\u2500\u2500 Penalties Removed v1.3.1\n\u251c\u2500\u2500 Raiders Vs Rogues v1.5.0\n\u251c\u2500\u2500 Ref - SPT Friendly Quests v2.0.3\n\u251c\u2500\u2500 SAIN - Solarint\u2019s AI Modifications - Full AI Combat System Replacement v4.4.3\n\u251c\u2500\u2500 Saria Shop v1.8.0\n\u251c\u2500\u2500 Server Value Modifier [SVM] v2.1.2\n\u251c\u2500\u2500 SOCOM Armory + New Quests &amp; Story Line v3.0.3\n\u251c\u2500\u2500 The Trader Priscilu v6.4.0\n\u251c\u2500\u2500 UI Fixes v5.3.11\n\u251c\u2500\u2500 VCO - Viewmodel Camera Offset v1.1.4\n\u251c\u2500\u2500 VEILSIGHT v1.0.1\n\u251c\u2500\u2500 Waypoints - Expanded Navmesh v1.8.2\n\u251c\u2500\u2500 WTT - Black Division [REDACTED] Home v1.1.3\n\u251c\u2500\u2500 WTT - CommonLib v2.0.23\n\u251c\u2500\u2500 WTT - Content Backport v1.1.0\n\u251c\u2500\u2500 WTT- Armory v2.0.5\n\u2514\u2500\u2500 WTT- Artem v3.0.0</p>\n<p>i have photos i can provide but idk how to post them here</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169072,
+   "parent_id": 168874,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-07-31T13:54:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Send the photos on Discord if you don\u2019t mind. mt_patriot1776</p>\n<p>Thank you for the information.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169073,
+   "parent_id": 169030,
+   "author": "hdyzxzyxzg",
+   "author_id": 106721,
+   "author_url": "https://forge.sp-tarkov.com/user/106721/hdyzxzyxzg",
+   "created_at": "2026-07-31T14:14:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Theoretically, it ought to work this way. However, my tests show that versions 3.0.x do affect the levels of AIPMC, while versions 2.0.x function normally. This is truly incomprehensible.May be it conflicts with other mods such as APBS\uff1f</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169130,
+   "parent_id": 169030,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-07-31T18:00:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019ve literally been troubleshooting this all day and I\u2019ve come up empty. I did change the mod load order as a test but I will need you to test it in your environment and see if it makes any impact if you are willing. Hit me up on Discord (mt_patriot1776) and I can give you a pre-release version of 3.0.4</p>\n<h2>Troubleshooting:</h2>\n<ul>\n<li>APBS patches BotLevelGenerator.GenerateBotLevel.</li>\n<li>It reads BotGenerationDetails.PlayerLevel, supplied by SPT for the raid.</li>\n<li>It calculates bot levels relative to that value using TierData.json.</li>\n<li>SOCOM never writes to BotGenerationDetails, APBS\u2019s RaidInformation, player Info.Level, experience, or prestige.\nThe default APBS ranges themselves readily produce PMCs below level 10:</li>\n<li>Player levels 1\u201310: bot range is effectively level 1 through player level +5.</li>\n<li>Player levels 11\u201320: lower bound is player level \u221210.</li>\n<li>Player levels 21\u201330: lower bound is player level \u221215.</li>\n<li>Higher tiers use even larger downward deviations.</li>\n<li>If the player is prestiged and enablePrestigeAnyLevel is enabled, APBS explicitly changes the permitted range to levels 1\u201379.\nTherefore, \u201calmost all under 10\u201d can be normal APBS output depending on the player level, prestige state, tier configuration, and sample size.\nThe only shared profile boundary is SOCOMTraderUnlockSync.cs.</li>\n</ul>\n<p>It:</p>\n<ul>\n<li>\n<p>Reads PmcData.Info.Level.</p>\n</li>\n<li>\n<p>Initializes SOCOM trader information.</p>\n</li>\n<li>\n<p>Updates SOCOM trader standing and loyalty.</p>\n</li>\n<li>\n<p>Never assigns Info.Level, experience, or prestige.</p>\n</li>\n<li>\n<p>SOCOM 2.x versions call LevelUp for the SOCOM trader directly. That change only narrows loyalty calculation to SOCOM. It does not change the player\u2019s character level and does not feed APBS a different level.</p>\n</li>\n<li>\n<p>One further interaction exists, but it concerns equipment rather than levels: APBS imports modded items at PostSptModLoader + 69. SOCOM registers its custom items earlier at PostDBModLoader + 3, so APBS can import SOCOM equipment into its bot pools. This can change what PMCs carry, but not their generated level.</p>\n</li>\n</ul>\n<h2>Conclusion:</h2>\n<p>The claimed SOCOM \u2192 APBS level conflict is not supported by either project\u2019s code. The most useful verification is to enable APBS debug logging and compare:</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169131,
+   "parent_id": 168993,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-07-31T18:01:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I think I\u2019ve fixed the issue in 3.0.4. If you would be so kind as to test the pre-release of 3.0.4 for me I would be sincerely grateful. mt_patriot1776 on Discord.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169161,
+   "parent_id": null,
+   "author": "mikedis36",
+   "author_id": 57040,
+   "author_url": "https://forge.sp-tarkov.com/user/57040/mikedis36",
+   "created_at": "2026-07-31T20:27:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2026-07-31 20:34:13]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169257,
+   "parent_id": 169030,
+   "author": "hdyzxzyxzg",
+   "author_id": 106721,
+   "author_url": "https://forge.sp-tarkov.com/user/106721/hdyzxzyxzg",
+   "created_at": "2026-08-01T03:46:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you for your reply, and I apologize for imposing extra workload on you.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 169273,
+   "parent_id": null,
+   "author": "_generalhavoc",
+   "author_id": 116096,
+   "author_url": "https://forge.sp-tarkov.com/user/116096/generalhavoc",
+   "created_at": "2026-08-01T05:22:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Gotta say, not being able to sell anything to socom really sucks. I don\u2019t need any of his tier one stuff, lol.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169416,
+   "parent_id": null,
+   "author": "aprilsand",
+   "author_id": 118710,
+   "author_url": "https://forge.sp-tarkov.com/user/118710/aprilsand",
+   "created_at": "2026-08-01T14:08:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m quite surprised that the AR-15 Daniel Defense RIS II 12.25 handguard (Coyote Brown) in the game shows up as a giant error. They say it\u2019s because this mod incorrectly used epicsAIO</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169469,
+   "parent_id": 169273,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-08-01T16:50:25+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Delete the mod then, I didn\u2019t make SOCOM a Tier 1 buyer.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169470,
+   "parent_id": 169416,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-08-01T16:51:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <span class=\"italic text-gray-400\">\n                    [deleted at 2026-08-01 21:43:19]\n                </span>\n            <!--[if ENDBLOCK]><![endif]-->        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169472,
+   "parent_id": 169030,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-08-01T16:54:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>No worries, thanks for giving me useful info and helping me patch it.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169475,
+   "parent_id": 169273,
+   "author": "_generalhavoc",
+   "author_id": 116096,
+   "author_url": "https://forge.sp-tarkov.com/user/116096/generalhavoc",
+   "created_at": "2026-08-01T17:03:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Apologies for trying to be humorous. Won\u2019t happen again.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169479,
+   "parent_id": 169273,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-08-01T17:13:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Lol I\u2019ve had so many Karen\u2019s bitching about everything here lately honestly I can\u2019t even tell anymore. That is funny now that I get it :)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169481,
+   "parent_id": 169273,
+   "author": "_generalhavoc",
+   "author_id": 116096,
+   "author_url": "https://forge.sp-tarkov.com/user/116096/generalhavoc",
+   "created_at": "2026-08-01T17:16:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Now instead of selling a bunch of stuff to socom, I can now just buy a bunch of stuff and sell it to other traders to recoup the dollars. Just an extra step early game to get to t2 inventory lol.</p>\n<p>I am a modder myself for a different game. Big changes will always be chum for the neverchangers.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169482,
+   "parent_id": 169273,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-08-01T17:22:42+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>That makes sense. I\u2019m old so I prefer dad gamer mode but I had a bunch of people like over 80% telling me they wanted things more hardcore and it was too easy to glitch money. I\u2019m guessing these were people on servers trying to keep the honor system with their buddies. The lates version of 2.x.x still works with SPT 4.0.13. I can update it to the latest commonLib if it helps for people that don\u2019t want the hardcore changes.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169491,
+   "parent_id": 169273,
+   "author": "_generalhavoc",
+   "author_id": 116096,
+   "author_url": "https://forge.sp-tarkov.com/user/116096/generalhavoc",
+   "created_at": "2026-08-01T17:30:27+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It was very easy to glitch money. I definitely was not purchase/selling multiple thicc cases to get $100k in 10 minutes. Never happened.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 169498,
+   "parent_id": 169273,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-08-01T17:42:33+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Lol! I can neither confirm nor deny my involvement in that situation.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169508,
+   "parent_id": 168993,
+   "author": "felys",
+   "author_id": 119108,
+   "author_url": "https://forge.sp-tarkov.com/user/119108/felys",
+   "created_at": "2026-08-01T18:21:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for reaching out! I\u2019m currently testing the new community Icebreaker mod. From what I\u2019ve picked up in the community, it seems to clash with quite a few mods, so I\u2019ve been trying \u2014 though with not much confidence \u2014 to get them to coexist. Before the official 3.0.4 update lands, I\u2019ll definitely give the pre-release a proper test whenever I get the chance. Really appreciate the work you\u2019re putting into the fixes!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169567,
+   "parent_id": null,
+   "author": "usmcrousey",
+   "author_id": 119277,
+   "author_url": "https://forge.sp-tarkov.com/user/119277/usmcrousey",
+   "created_at": "2026-08-01T23:29:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Downloaded this mod, and I am noticing that the trader is locked. (newer player level 7), if i am reading this correctly, do I need to be level 10 for the trader to be unlocked? Thank you for your time.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169571,
+   "parent_id": 169567,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-08-01T23:42:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Correct, level 10 starts the trader unlocks.</p>\n<p>In the new version coming out I\u2019ll have three modes for players to pick from, Hardcore, Medium, or Dad Gamer Mode. Hardcore will be as is now, level 10 + quests. Medium will be player level based only no quests. Dad gamer mode will be immediate unlock no quests no player level requirements. Once you pick one it will be permanent.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169674,
+   "parent_id": null,
+   "author": "moosen9699",
+   "author_id": 119056,
+   "author_url": "https://forge.sp-tarkov.com/user/119056/moosen9699",
+   "created_at": "2026-08-02T08:44:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Awesome mod to incentivize a grind for individuals/groups to refine their ARs. Everybody loves the DD5 308 and the rest of the armory. Not a single issue has been found, no errors, no trader issues. Would love to see more quests to extend the trickle of goods into the trader inventory (even if they are just simple hunt/place item/scout location/gather item quests).</p>\n<p>If you plan on expanding further, I\u2019d love to see a SOCOM variant of the M249 from WTT - Armory as an Addon maybe. Or MP7, SPEAR, MP9 would be amazing to see as well. Or even a breakdown on how others could add to your list of SOCOM items via item IDs in the CustomItems section. I\u2019m smooth brain and am assuming that I would need the (OG item) M249s ID to copy\u2026 and that\u2019s about all I got. Regardless\u2026</p>\n<p>Thank you for bringing more fun to me and my group with this mod. You are bringing entertainment and dopamine to more people than you know.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 169940,
+   "parent_id": 169030,
+   "author": "harukari",
+   "author_id": 119425,
+   "author_url": "https://forge.sp-tarkov.com/user/119425/harukari",
+   "created_at": "2026-08-03T14:24:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This issue still persists for me in 3.0.4</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169958,
+   "parent_id": 169030,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-08-03T15:52:38+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Can you give me a list of your installed mods so I can try to replicate the issue.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169974,
+   "parent_id": null,
+   "author": "phillip",
+   "author_id": 119365,
+   "author_url": "https://forge.sp-tarkov.com/user/119365/phillip",
+   "created_at": "2026-08-03T17:00:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>is any one else getting dog box instead of the item</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 169992,
+   "parent_id": 169974,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-08-03T17:54:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <ul>\n<li>What version of SPT / SOCOM</li>\n<li>What item(s) are doing that</li>\n<li>What mods do you have installed</li>\n</ul>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170010,
+   "parent_id": 169974,
+   "author": "phillip",
+   "author_id": 119365,
+   "author_url": "https://forge.sp-tarkov.com/user/119365/phillip",
+   "created_at": "2026-08-03T19:19:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>hi heres my list</p>\n<p>SPT 4.1.0</p>\n<p>TheQuartermaster-1.4.2\nItemGen-1.5.1\nFieldKit-1.3.0\nacidphantasm-simpleworkoutqte\nredactor_mod\nCoolerStims-v2.0.0\nDynamicMaps-1.2.0\nSOCOM_4.0.0\nAmandsGraphics-1.8.0\nLacyPvETweaks (1)\nWTT-CommonLib-v3.0.3\nDrakiaXYZ-BigBrain-1.5.0\nPeacemaker-2.1.0\nLacyPvETweaks</p>\n<p>its to helmets and weapons</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170038,
+   "parent_id": 169974,
+   "author": "phillip",
+   "author_id": 119365,
+   "author_url": "https://forge.sp-tarkov.com/user/119365/phillip",
+   "created_at": "2026-08-03T21:37:30+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i think i fixed it i deleted and started again but i put your mod in first</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170073,
+   "parent_id": null,
+   "author": "Operator0",
+   "author_id": 76164,
+   "author_url": "https://forge.sp-tarkov.com/user/76164/operator0",
+   "created_at": "2026-08-04T01:29:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>After using many \u201cweapon or trader mods\u201d i keep coming back and installing SOCOM, never an error message and everything always works great! just wanted to reach out after using this for months and say Thanks!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 170078,
+   "parent_id": 170073,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-08-04T01:41:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you I really really appreciate the feedback. I keep getting bug reports and I have gone in circles trying to replicate them because I genuinely want to patch any mod conflicts. I don\u2019t know if they are legit or if some people are just being Karen\u2019s.</p>\n<p>I do appreciate you giving me positive feedback, many thanks friend :)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 170081,
+   "parent_id": 169674,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-08-04T01:43:01+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thank you very much for the kind words Moonsen. I love your ideas. Honestly didn\u2019t even know he had an M249 definitely adding that when he updates to 4.1.0!</p>\n<p>The Spear and MP7 are already part of SOCOM. Do you mean creating SOCOM enhanced Spear and MP7?</p>\n<p>Thanks again for the kind words :)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 170085,
+   "parent_id": 169674,
+   "author": "moosen9699",
+   "author_id": 119056,
+   "author_url": "https://forge.sp-tarkov.com/user/119056/moosen9699",
+   "created_at": "2026-08-04T01:53:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yes, enhanced variants are always welcome. Is there a chance that if you decided to put the work in that they could also come to 4.0.13?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170230,
+   "parent_id": null,
+   "author": "IHateChoosing",
+   "author_id": 24180,
+   "author_url": "https://forge.sp-tarkov.com/user/24180/ihatechoosing",
+   "created_at": "2026-08-04T20:39:00+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>not sure if intentional, but the enhanced bcm gunfighter mod 3 (FDE and black) do not fit on the MDR handguards.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170370,
+   "parent_id": 170230,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-08-05T15:41:55+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Something happened in the WTT-CommonLib 2.0.23 release. After that release the Trijicon SRO sites quit mounting to the RMR mounts on a lot of EPIC and ECO custom items. I reported it to them but no one responded. I had to go in and add the specific mounting TPLs to the config manually. I was hoping the issue would be resolved but if not I\u2019ll have to go in and add them all manually which is fine. I just need time to get it done.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 170449,
+   "parent_id": 170230,
+   "author": "IHateChoosing",
+   "author_id": 24180,
+   "author_url": "https://forge.sp-tarkov.com/user/24180/ihatechoosing",
+   "created_at": "2026-08-05T23:25:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>also noticed there\u2019s two of each daniel defense soundguard for 556 and 762 - one of each with way better stats compared to the other. not sure if intentional or not. might be related to the same issue?\nWould prefer me to continue posting such things here or move it to the git?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170450,
+   "parent_id": 170230,
+   "author": "MT_Militia",
+   "author_id": 10683,
+   "author_url": "https://forge.sp-tarkov.com/user/10683/mt-militia",
+   "created_at": "2026-08-05T23:26:26+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>No that\u2019s not intentional. I\u2019ll have to patch that.</p>\n<p>In here or on Discord is just fine. mt_patriot1776 on Discord if you prefer that.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 170585,
+   "parent_id": null,
+   "author": "TacoMan",
+   "author_id": 115097,
+   "author_url": "https://forge.sp-tarkov.com/user/115097/tacoman",
+   "created_at": "2026-08-06T16:55:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Just tried these out and these guns are CAG af. Amazing work! They do feel over-spec\u2019ed but I suppose this is par for the course for SOCOM and the extra-premium Daniel Defense pricing :D</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170671,
+   "parent_id": null,
+   "author": "usmcrousey",
+   "author_id": 119277,
+   "author_url": "https://forge.sp-tarkov.com/user/119277/usmcrousey",
+   "created_at": "2026-08-07T04:11:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Having trouble completing the first task. I am unclear what to do with the supplies. Intuitively went to customs but could not find where to drop them. Probably overthinking it, any help is appreciated.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170672,
+   "parent_id": 170671,
+   "author": "usmcrousey",
+   "author_id": 119277,
+   "author_url": "https://forge.sp-tarkov.com/user/119277/usmcrousey",
+   "created_at": "2026-08-07T04:15:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Amazing work by the way!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170715,
+   "parent_id": 170671,
+   "author": "IHateChoosing",
+   "author_id": 24180,
+   "author_url": "https://forge.sp-tarkov.com/user/24180/ihatechoosing",
+   "created_at": "2026-08-07T11:45:52+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The first task is the one with MRE and Water right? You just hand them to the trader at the task screen.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 170720,
+   "parent_id": 170671,
+   "author": "usmcrousey",
+   "author_id": 119277,
+   "author_url": "https://forge.sp-tarkov.com/user/119277/usmcrousey",
+   "created_at": "2026-08-07T12:17:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Jesus christ, I cannot believe I fucked that up \ud83d\ude02\ud83d\ude02\ud83d\ude02</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  }
+ ]
+}

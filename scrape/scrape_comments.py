@@ -249,8 +249,12 @@ def fetch_mod_comments(session, mod_id, slug, max_pages=200):
     # nested inside them. Comparing like with like is what makes `complete`
     # mean something -- it catches a short read even when every page returned
     # HTTP 200, which is the failure a page-error count cannot see.
+    # `total` is None whenever the page shows no "of N results" line, which is
+    # what a single-page thread set looks like -- so it means "no figure to
+    # check against", not "zero comments". Treating it as a number is what
+    # made this raise TypeError and lose the mod entirely.
     top_level = sum(1 for c in unique if c["parent_id"] is None)
-    complete = not missing_pages and (total == 0 or top_level >= total)
+    complete = not missing_pages and (not total or top_level >= total)
 
     return {
         "mod_id": mod_id,

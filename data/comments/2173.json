@@ -1,0 +1,676 @@
+{
+ "mod_id": 2173,
+ "slug": "vram-cleaner",
+ "fetched_at": "2026-08-09T23:41:28Z",
+ "reported_total": 23,
+ "pages": 3,
+ "count": 66,
+ "top_level": 20,
+ "complete": false,
+ "missing_pages": [
+  3
+ ],
+ "session_expired": false,
+ "comments": [
+  {
+   "id": 52521,
+   "parent_id": null,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2025-06-07T20:25:43+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p><strong>Just to give an idea on how this can help, if you\u2019re like me and you were ripped off by Nvidia with their low VRAM graphics card models like the 3080 10GB model\u2026 This can help quite a bit with avoiding VRAM maxing out and reducing VRAM induced stutters.</strong></p>\n<p><strong>It is especially helpful in the SPTVR mod I am also working on. In flatscreen tarkov I usually get around 8GB VRAM usage, using this reduces it down to 6-7. In SPTVR I end up capping it out often at 9.7GB and it starts spilling over to RAM causing stutters and just overall bad performance. With this mod, it goes from 9.7GB to 7-8GB.</strong></p>\n<p><strong>I have no idea what it\u2019s clearing out and I also have no idea why this is NEVER ran in BSG\u2019s code. (EDIT: took a closer look and it looks like BSG does run it occasionally but it seems like only after a raid) From what I can tell when searching about the method I\u2019m running in here, it is common practice in Unity games to run this when loading new scenes.</strong></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 52530,
+   "parent_id": null,
+   "author": "quesonuke",
+   "author_id": 38011,
+   "author_url": "https://forge.sp-tarkov.com/user/38011/quesonuke",
+   "created_at": "2025-06-08T03:46:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>N O I C E</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 52532,
+   "parent_id": null,
+   "author": "Euphoria",
+   "author_id": 79718,
+   "author_url": "https://forge.sp-tarkov.com/user/79718/euphoria",
+   "created_at": "2025-06-08T05:21:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Does this happen to be back-compatible with SPT 3.10.5? If not, can I request for one?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 52533,
+   "parent_id": null,
+   "author": "OldManJohnson",
+   "author_id": 7346,
+   "author_url": "https://forge.sp-tarkov.com/user/7346/oldmanjohnson",
+   "created_at": "2025-06-08T05:21:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Is this the same \u201cthing\u201d as the Ram Cleaner Fix, or that one cleaning the PC\u2019s RAM and yours cleans the GPU\u2019s RAM?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 5
+  },
+  {
+   "id": 132087,
+   "parent_id": 52533,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2025-06-08T06:32:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>The title says VRAM, the description says VRAM, the pinned comment says VRAM, 3 comments below I say it\u2019s different than ram cleaner, idk how much clearer I can be</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 5
+  },
+  {
+   "id": 132088,
+   "parent_id": 52532,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2025-06-08T06:39:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Wouldn\u2019t hurt to throw it in there and try, won\u2019t break anything. If it doesn\u2019t work just remove it and sorry I won\u2019t make a version for 3.10 if it doesn\u2019t.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 52535,
+   "parent_id": null,
+   "author": "mip01",
+   "author_id": 69538,
+   "author_url": "https://forge.sp-tarkov.com/user/69538/mip01",
+   "created_at": "2025-06-08T07:31:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>this thing is literal life saver and seems working pretty good also i have a lot of mods that contains new textures for now there is no problems i will report if i have any problems</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 132090,
+   "parent_id": 52532,
+   "author": "Euphoria",
+   "author_id": 79718,
+   "author_url": "https://forge.sp-tarkov.com/user/79718/euphoria",
+   "created_at": "2025-06-08T09:16:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Gotcha! I did and there seems to be no error so far for both the headless and server, but I have no way to test it for myself if it does actually work. This does not have an F12 config, right?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 52542,
+   "parent_id": null,
+   "author": "THE_NP",
+   "author_id": 80091,
+   "author_url": "https://forge.sp-tarkov.com/user/80091/the-np",
+   "created_at": "2025-06-08T10:16:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Will this mod remove the need to turn off Low texture Streety : )</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 132093,
+   "parent_id": 52542,
+   "author": "penguin99",
+   "author_id": 79176,
+   "author_url": "https://forge.sp-tarkov.com/user/79176/penguin99",
+   "created_at": "2025-06-08T11:21:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>download declutter mod.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 132096,
+   "parent_id": 52533,
+   "author": "OldManJohnson",
+   "author_id": 7346,
+   "author_url": "https://forge.sp-tarkov.com/user/7346/oldmanjohnson",
+   "created_at": "2025-06-08T15:16:08+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I read the descriptions and a few comments they both say \u201cthis mod does what BSG should have done\u201d, which is why I asked because the wording of both mods is similar in some areas, but I must have skipped over relevant terms.</p>\n<p>However, no need to be snarky about it.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 132100,
+   "parent_id": 52533,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2025-06-08T16:21:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I mean, that\u2019s literally not said anywhere so that just tells me again that you didn\u2019t read anything. I wouldn\u2019t have been snarky if it wasn\u2019t blatantly obvious what this does and if I didn\u2019t give the exact answer to your question a few comments below yours.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 132103,
+   "parent_id": 52532,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2025-06-08T16:32:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Idk if you mean that you have it installed on headless but it shouldn\u2019t be installed on the headless client, only your own client.</p>\n<p>One way you can tell if it\u2019s working is if you notice the game freeze for a second or two right after raid start countdown. Another way is by enabling console logging then restarting the game, after countdown finishes, you should see a warning log that says \u201cUnused Assets have been unloaded - VRAM Usage cleaned\u201d If it says that then it definitely should be working.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 132104,
+   "parent_id": 52542,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2025-06-08T16:42:56+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p><em>Maybe</em> it could help with running it at medium textures. It could possibly help with running at high if you have a card with 12GB of VRAM. I\u2019ve tested high on my 3080 and was still maxing out at 9.7GB</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 132105,
+   "parent_id": 52542,
+   "author": "Mayoringram",
+   "author_id": 668,
+   "author_url": "https://forge.sp-tarkov.com/user/668/mayoringram",
+   "created_at": "2025-06-08T17:39:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Are you sure that the \u201cusage\u201d of VRAM, not \u201callocated\u201d? I\u2019ve seen Tarkov allocating all my 16gb vram, same as ARMA 3. You can easily check the usage by app with Rivatuner.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 132106,
+   "parent_id": 52542,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2025-06-08T18:08:32+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m not sure what you mean but all this mod does is clear assets that are not being used anywhere during gameplay like textures, audio, and meshes. So if tarkov is allocating VRAM, it\u2019s still allocating it.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 132128,
+   "parent_id": 52533,
+   "author": "OldManJohnson",
+   "author_id": 7346,
+   "author_url": "https://forge.sp-tarkov.com/user/7346/oldmanjohnson",
+   "created_at": "2025-06-09T03:47:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p><a href=\"https://imgur.com/a/8AbwrFF\" target=\"_blank\" rel=\"noreferrer noopener\">https://imgur.com/a/8AbwrFF</a></p>\n<p>Descriptions or comments from both mods saying, or at least heavily implying, that BSG should have been doing what both mods do from the start.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 52590,
+   "parent_id": null,
+   "author": "Wojciech",
+   "author_id": 62085,
+   "author_url": "https://forge.sp-tarkov.com/user/62085/wojciech",
+   "created_at": "2025-06-09T12:09:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Hello, I come with a problem that when I installed the spt mod (I also use the fika mod), when I play it freezes, when I\u2019m in a raid it freezes all the time, I repeat it and it wasn\u2019t like that before that it freezes, I have a weak computer but it wasn\u2019t like that if I didn\u2019t install spt fika, what should I do in such a situation? \ud83d\ude15</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 132146,
+   "parent_id": 52590,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2025-06-09T13:29:39+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019ve only heard this happen for people when they install this mod on the headless client too. It should only be installed on your own client.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 132148,
+   "parent_id": 52590,
+   "author": "Wojciech",
+   "author_id": 62085,
+   "author_url": "https://forge.sp-tarkov.com/user/62085/wojciech",
+   "created_at": "2025-06-09T14:12:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Well, I have the mod installed on my own client so I don\u2019t know what\u2019s going on\u2026</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 132151,
+   "parent_id": 52590,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2025-06-09T16:12:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This is the first time I\u2019m hearing of this issue happening on Fika. This mod only runs something right at the start of the raid, so if this is happening mid raid, I\u2019m not sure what\u2019s going on. If you can send over your logs that would be helpful. Also, are the freezes hard freezes or does it freeze for a few seconds then come back?</p>\n<p>What other mods do you have installed?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 132155,
+   "parent_id": 52533,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2025-06-09T16:36:58+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Okay well, that\u2019s not what was said. If you think that\u2019s what\u2019s \u201cimplied\u201d then that\u2019s your own interpretation. However, you said we both \u201csay\u201d that and neither of us did say that. Not to mention, \u201cONLY\u201d and \u201cNEVER\u201d are two <em>very</em> different words. I work on these mods for free and share what I\u2019m working on with people.</p>\n<p>The absolute least I expect from people is to do a bit of reading into what they\u2019re downloading. Idk why you\u2019re trying so hard to prove your point here because nothing you\u2019re saying makes sense. Just read more when you download mods before asking questions. Like I said in the first reply, even the title says VRAM so why you\u2019re questioning whether this is for video card memory or normal memory is beyond me. Hell, even the picture for the mod has a graphics card in it, not a RAM stick.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 132157,
+   "parent_id": 52533,
+   "author": "OldManJohnson",
+   "author_id": 7346,
+   "author_url": "https://forge.sp-tarkov.com/user/7346/oldmanjohnson",
+   "created_at": "2025-06-09T18:41:05+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>You said you never said anything about BSG or that they don\u2019t do what the mods do, but I showed you a screen capture of you saying BSG doesn\u2019t do what your mod does.</p>\n<p>That\u2019s being in complete denial of your own statements so you can be a jerk to someone who asked a question. Doesn\u2019t matter what they read or didn\u2019t read, being a jerk because you think you\u2019re owed something is peak narcissism.</p>\n<p>You could have everything in flashing lights and someone will STILL ask a question you think is obviously answered.</p>\n<p>Yes. SPT and the mod makers are doing this out of fun or love of Tarkov and wanting to make it fun in their own way, but thinking you\u2019re owed something as a result is how arrogant game devs lose interest and go under. Remember the epic failure that was \u201cDon\u2019t you guys have phones?\u201d in response to the legend that asked \u201cIs this ever going to be on PC or is this strictly mobile?\u201d regarding a Diablo phone game?</p>\n<p>When I asked is your mod the same as this other one, or is theirs PC RAM and yours GPU RAM?</p>\n<p>I knew, from the start, yours was about the VRAM. I was asking if it was the same as the other mod because the other mod doesn\u2019t specifically say PC RAM. Just RAM. There are plenty of mods that have interesting claims, but horrible descriptions of what the mod actually does.</p>\n<p>If you want to go the \u201cI at least expect \u2026.. \u201c route, players \u201cexpect\u201d mods to have clear descriptions. I\u2019ve seen mod makers get really bent out of shape over someone wanting more details in a mod\u2019s description that\u2019s barely more than a repeat of the mod\u2019s name.</p>\n<p>All I asked was is your mod the same as this other one because what the mods do, on the surface, is the same thing. Clean RAM. I asked if your mod was the same as another one. You getting salty over the wording is why we\u2019re arguing like this.</p>\n<p>Could I have worded my question better? Yes.<br />\nCould you have had a less snarky and salty response? Also yes.</p>\n<p>And with that, I am leaving this conversation because I can see we are getting nowhere.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 132160,
+   "parent_id": 52533,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2025-06-09T20:26:29+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Wtf is your problem, I\u2019m acting like I\u2019M owed something? Where??? Holy shit\u2026 You\u2019re acting like <em>you\u2019re</em> owed a deep dive explanation as to what this mod does when it\u2019s written out clear as day and 2000+ others have downloaded it without questioning its intentions except for one that was already answered RIGHT BELOW your question.</p>\n<p>You\u2019re also misquoting me once again, I never said I didn\u2019t say anything about BSG. I said I didn\u2019t say \u201cthis mod does what BSG should have done\u201d because I didn\u2019t and neither did Devraccoon. You know why I didn\u2019t say that? Because like I said, I have NO IDEA why it\u2019s not ran, maybe they have a reason that we have yet to see.</p>\n<p>And yeah, we\u2019re getting no where because you decided to reply by misquoting me and another developer and making ridiculous claims all because you failed to read and was called out on it. You want more specifics on what EXACTLY each mod does and what\u2019s different? Look at the damn source code of both mods and figure it out yourself, asshole. If <em>you</em> know the difference between RAM and VRAM, why do you think mod developers don\u2019t know the difference? If the other mod did anything with VRAM, they would\u2019ve said it. RAM != VRAM. If the other mod was doing the same thing as this, I would\u2019ve never even uploaded it.</p>\n<p>This conversation isn\u2019t happening because I got \u201csalty over wording\u201d (wtf?) You misquoted me, you ass. This is happening because you failed to read descriptions, failed to read comments right below yours, and think modders don\u2019t know what they\u2019re talking about. You said you read a few comments but you clearly didn\u2019t because your question was already answered only a few comments below.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 132193,
+   "parent_id": 52542,
+   "author": "Mayoringram",
+   "author_id": 668,
+   "author_url": "https://forge.sp-tarkov.com/user/668/mayoringram",
+   "created_at": "2025-06-10T15:50:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p><a href=\"https://i.imgur.com/Ii6pjyX.png\" target=\"_blank\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/Ii6pjyX.png\" alt=\"Ii6pjyX.png\" /></a>What I mean is this basically, you have the game reserving a chunk of your vram and then actually utilizing it. As you can see, Total VRAM is 10gigs, The reserved is 9.2 which is the max after Windows also using it in the background and then the actual usage which is between 4.9 and 5.2. Tarkov will just reserving almost whole your VRAM just to be safe but that doesn\u2019t mean it\u2019s gonna use it all.</p>\n<p>Apps like RTSS, nvidia or amd overlay will show the reserved by default, you can edit your RTSS overlay to make it show the actual usage. Or, just use the in game FPS 2 or whatever that brings out this statistics.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 132205,
+   "parent_id": 52542,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2025-06-10T18:23:21+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I see what you mean now, tbh I\u2019m not entirely sure what\u2019s going on here but I know there\u2019s people that have found this mod helpful in VRAM limited situations. All I know is that all this mod does is unload unused assets and as a result gives you a drop in VRAM usage from what you can see in the task manager. It doesn\u2019t touch any allocation Tarkov is doing. I know it has significantly helped with the SPTVR mod.</p>\n<p>Just for reference, here\u2019s a picture of before and after, now is this <em>actually</em> making a difference? Not sure, maybe it\u2019s a bigger help in SPTVR because that needs every bit of VRAM it can get and handles rendering a bit different than flatscreen.</p>\n<p><a href=\"https://imgur.com/8AEVDYR\" target=\"_blank\" rel=\"noreferrer noopener\">https://imgur.com/8AEVDYR</a> (this is flatscreen on customs standing in the same spot)</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 132217,
+   "parent_id": 52542,
+   "author": "Mayoringram",
+   "author_id": 668,
+   "author_url": "https://forge.sp-tarkov.com/user/668/mayoringram",
+   "created_at": "2025-06-11T00:24:35+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Didn\u2019t wanna sound disrespectful and all, just my rule of thumb is if it ain\u2019t broke, no need to fix it and since this is Tarkov, anything can start creating problems when trying to fix something. Surely an admirable job you did for people that need it, I don\u2019t have much info on VR about VRAM usage but must be demanding surely. Just wanted to inform you all on a basic general info about checking actually how much VRAM applications use so users can actually see if the problem is VRAM leaking or CPU-RAM related as things can get at hair pulling stage trying to point out especially stuttering or even crashing problems.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 132218,
+   "parent_id": 52542,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2025-06-11T00:38:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>All good, I appreciate the info, I really wasn\u2019t sure if releasing this as a separate mod was the best thing to do instead of just keeping it part of the VR mod but figured it was easy enough and thought it was actually doing something on flatscreen too. If it\u2019s not, maybe it\u2019s just placebo but if people are happy then</p>\n<p>I personally haven\u2019t run into any issues with it so far so I guess it doesn\u2019t hurt. If anyone brings up any significant issues I\u2019ll probably just remove it from here to avoid mobs of people in the discord asking for support.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 132351,
+   "parent_id": 52590,
+   "author": "Wojciech",
+   "author_id": 62085,
+   "author_url": "https://forge.sp-tarkov.com/user/62085/wojciech",
+   "created_at": "2025-06-13T13:52:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Sorry I didn\u2019t answer but I had some things on my mind so that\u2019s what I have (spt tarkov with fika) and the freezing lasts a few seconds and then comes back exactly like that on the streets of Tarkov I have more freezing and it lasts a few seconds and comes back on other maps yes I don\u2019t have more but yes I have freezing yes I have mods but I have so many of them that I don\u2019t know how to show them and since you write about logs please provide them: <a href=\"https://drive.google.com/file/d/1xXx9BPX1hSGV8dRkkqX-l4f1DW0D_UQn/view\" target=\"_blank\" rel=\"noreferrer noopener\">logi</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 132366,
+   "parent_id": 52590,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2025-06-13T16:27:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>If you have any UI mods, that could be what\u2019s causing it. Something might be triggering the preloaderUI to run the ShowRaidStartInfo method randomly throughout the raid which would cause this VRAMCleaner to run also every time it does. I\u2019ll put out a small update to make it check if the cleaner already ran during a raid and skip if it has.</p>\n<p>Also, that log file you sent is set to private. Let me just get this update out and then you can try it again, I have a feeling that\u2019s what\u2019s happening.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 132369,
+   "parent_id": 52590,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2025-06-13T18:06:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I just added a new build, give it a try and see if you still have the same issue. There\u2019s a check now to make sure the cleanup only runs once at the start of the raid even if another mod is regularly calling the same method I\u2019m using to run the cleanup.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 132371,
+   "parent_id": 52590,
+   "author": "Wojciech",
+   "author_id": 62085,
+   "author_url": "https://forge.sp-tarkov.com/user/62085/wojciech",
+   "created_at": "2025-06-13T18:33:02+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Well, please, my logs again about it: <a href=\"https://drive.google.com/file/d/1xXx9BPX1hSGV8dRkkqX-l4f1DW0D_UQn/view\" target=\"_blank\" rel=\"noreferrer noopener\">Logi</a></p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 132374,
+   "parent_id": 52590,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2025-06-13T18:52:45+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I would suggest removing the ram cleaner fix, not my mod, the other ram cleaner. That mod runs BSG\u2019s ram cleaner on an interval and can cause stutters and freezes occasionally. It looks like my mod is only running once at the start of each of your raids so it shouldn\u2019t be causing any freezing mid raid. If you still have freezing issues It\u2019d be best to ask the support channel in the SPT discord.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 52810,
+   "parent_id": null,
+   "author": "Mugnum",
+   "author_id": 74789,
+   "author_url": "https://forge.sp-tarkov.com/user/74789/mugnum",
+   "created_at": "2025-06-14T03:17:12+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Does garbage collector actually clear VRAM?</p>\n<p>I\u2019m experiencing screen freezing with LS Frame Generation due to VRAM exhaustion and was hoping this mod would remedy this, but it didn\u2019t help much unfortunately.</p>\n<p>Also would be nice to have an option to limit video memory allocation and leave some headroom, kinda like how recent COD games have a memory target (85%, 90%, 95%). Not sure where to even begin with about making such a mod.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 132393,
+   "parent_id": 52590,
+   "author": "Mugnum",
+   "author_id": 74789,
+   "author_url": "https://forge.sp-tarkov.com/user/74789/mugnum",
+   "created_at": "2025-06-14T03:27:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Do you use Lossless Scaling by chance?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 132394,
+   "parent_id": 52810,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2025-06-14T03:31:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Garbage collection is just done before the method that is ran here that actually seems to \u201cclear\u201d vram usage. The method that is actually doing the work is Resources.unloadunusedassets();. Which to my knowledge looks through the scene and clears out textures, mesh\u2019s, and audio that is not being used for anything. But yeah, I wouldn\u2019t know how to actually adjust Tarkov\u2019s vram allocation, never looked into it and it\u2019s probably not a good idea to mess with it.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 52812,
+   "parent_id": null,
+   "author": "Tweek9690",
+   "author_id": 73828,
+   "author_url": "https://forge.sp-tarkov.com/user/73828/tweek9690",
+   "created_at": "2025-06-14T04:25:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>v1.0.1 didnt get flagged as malware but 1.0.2 did whats up with that?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 132396,
+   "parent_id": 52533,
+   "author": "Tweek9690",
+   "author_id": 73828,
+   "author_url": "https://forge.sp-tarkov.com/user/73828/tweek9690",
+   "created_at": "2025-06-14T04:34:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>your both right in your own way it says vram but you did say like bsg should have done so stop fighting its ok to both be right and wrong</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 132400,
+   "parent_id": 52590,
+   "author": "Wojciech",
+   "author_id": 62085,
+   "author_url": "https://forge.sp-tarkov.com/user/62085/wojciech",
+   "created_at": "2025-06-14T07:01:36+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <h3><a href=\"https://hub.sp-tarkov.com/user/66222-matsix/\" target=\"_blank\" rel=\"noreferrer noopener\">matsix </a> Ok, I will remove this other ram cleaner and as you suggested on the technical support channel on Discord SPT I will ask again, thank you for your help!</h3>\n<p><a href=\"https://hub.sp-tarkov.com/user/78052-mugnum/\" target=\"_blank\" rel=\"noreferrer noopener\">Mugnum </a> I don\u2019t use Lossless Scaling</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 52815,
+   "parent_id": null,
+   "author": "DiaboIo",
+   "author_id": 51454,
+   "author_url": "https://forge.sp-tarkov.com/user/51454/diaboio",
+   "created_at": "2025-06-14T07:04:17+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Your mod definitely works. Im hosting a FIKA server for me and 3 friends and your mod was the only way to getting off my stutters. I use a 3070TI and a 7800X3D with 32GB ram.</p>\n<p>so thx for your mod. literally game changer.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 132417,
+   "parent_id": 52812,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2025-06-14T14:53:19+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It\u2019s probably the same false positive that happens with many mods. No idea what triggers it but there\u2019s no big difference in the code other than a check to see if the cleaner ran already. You can check the source code on github, it\u2019s <em>very</em> simple and should be pretty easy for anyone to see it\u2019s not malicious.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 132430,
+   "parent_id": 52812,
+   "author": "Tweek9690",
+   "author_id": 73828,
+   "author_url": "https://forge.sp-tarkov.com/user/73828/tweek9690",
+   "created_at": "2025-06-15T00:47:20+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>all good just thought id let you know</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 132736,
+   "parent_id": 52533,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2025-06-22T03:29:18+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I didn\u2019t though\u2026 No where. lmao\u2026</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 53229,
+   "parent_id": null,
+   "author": "walshy7",
+   "author_id": 40683,
+   "author_url": "https://forge.sp-tarkov.com/user/40683/walshy7",
+   "created_at": "2025-06-26T10:31:51+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>is it possible that this mod can increase power usage? i was having a problem where my circuit would trip and it only stopped when i deleted this mod. To be clear this wouldn\u2019t be the mods fault, more that I\u2019m playing on a 3050 laptop w/ 4gb vram in case any others encounter tripped circuits and cant work out why.</p>\n<p>edit: i was having a separate issue where my game would freeze mid raid and seemed to be a vram max out issue and this mod definitely helped stop that so it works, just in my case for some reason the power would trip the circuit</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 132920,
+   "parent_id": 53229,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2025-06-26T23:18:22+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>No idea how this would increase power usage. The method that is ran here is also ran after a raid by BSG so the game already runs this at other times in the game without the mod, this mod just makes it run at the start of the raid. So it\u2019d make little sense for it to cause that.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 133228,
+   "parent_id": 53229,
+   "author": "walshy7",
+   "author_id": 40683,
+   "author_url": "https://forge.sp-tarkov.com/user/40683/walshy7",
+   "created_at": "2025-07-03T17:47:24+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>yeah makes sense, just a very strange coincidence indeed i deleted it and havent tripped the breaker since. Anyway great mod it works without this strange coincidence i would 100% be using it</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 53559,
+   "parent_id": null,
+   "author": "NRS",
+   "author_id": 79522,
+   "author_url": "https://forge.sp-tarkov.com/user/79522/nrs",
+   "created_at": "2025-07-06T12:48:06+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>gread work. It frees up 1GB to 3GB of my graphics card memory.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 53708,
+   "parent_id": null,
+   "author": "Charlomako",
+   "author_id": 62073,
+   "author_url": "https://forge.sp-tarkov.com/user/62073/charlomako",
+   "created_at": "2025-07-11T02:16:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Thanks for this mod, I want to test if it save the nvlddmkm.sys crashing bug for 50xx gpu.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 54084,
+   "parent_id": null,
+   "author": "aeyasera",
+   "author_id": 79322,
+   "author_url": "https://forge.sp-tarkov.com/user/79322/aeyasera",
+   "created_at": "2025-07-21T17:09:41+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>i have a 3070 and tarkov was maxing my vram every raid<br />\nthis mod saved me and i have way better fps now, thank you so much</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 55383,
+   "parent_id": null,
+   "author": "DarkEsteves",
+   "author_id": 30073,
+   "author_url": "https://forge.sp-tarkov.com/user/30073/darkesteves",
+   "created_at": "2025-08-25T20:39:11+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>is no options in f12 menu ?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 135654,
+   "parent_id": 55383,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2025-08-29T16:42:59+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>No need for any options. It just does one thing and there\u2019s nothing that can be configured with it.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 2
+  },
+  {
+   "id": 135671,
+   "parent_id": 55383,
+   "author": "DarkEsteves",
+   "author_id": 30073,
+   "author_url": "https://forge.sp-tarkov.com/user/30073/darkesteves",
+   "created_at": "2025-08-29T21:03:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>ha ok thanks</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 140115,
+   "parent_id": null,
+   "author": "Hidd",
+   "author_id": 86226,
+   "author_url": "https://forge.sp-tarkov.com/user/86226/hidd",
+   "created_at": "2025-10-25T23:36:28+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Applied it to game for SPT 4.0.1 and it kinda works? VRAM usage when loading Customs drops from 9.7GB to 8GB, but also deletes whole first wave of bots that were supposed to spawn (except boss and boss followers).\nWish there was version updated to newest, because VRAM related stutters can sometimes be more than just annoying when it happens in CQB</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 140117,
+   "parent_id": 140115,
+   "author": "Hidd",
+   "author_id": 86226,
+   "author_url": "https://forge.sp-tarkov.com/user/86226/hidd",
+   "created_at": "2025-10-26T00:15:13+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Okay I removed the dll and the lack of bots persists\u2026 Perhaps something else caused it, despite not occuring before using this mod and not adding any other mod at the same time.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 140204,
+   "parent_id": 140115,
+   "author": "Kryptic-S01",
+   "author_id": 2685,
+   "author_url": "https://forge.sp-tarkov.com/user/2685/kryptic-s01",
+   "created_at": "2025-10-26T19:37:15+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>have you got any other mods installed? If so and it involves changing the ai or bots, that could be the issue.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 140217,
+   "parent_id": 140115,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2025-10-26T21:17:53+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yeah, this mod definitely wouldn\u2019t cause any issues with bot spawns.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 140219,
+   "parent_id": 140115,
+   "author": "Hidd",
+   "author_id": 86226,
+   "author_url": "https://forge.sp-tarkov.com/user/86226/hidd",
+   "created_at": "2025-10-26T21:25:23+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Yes, SAIN. But I had it running with it for over a dozen of raids and there was plenty of bots, then after I added VRAM mod the initial wave is gone. And removing VRAM mod doesn\u2019t solve it. I\u2019ll redownload SAIN, perhaps some default config got affected by VRAM mod somehow.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 140401,
+   "parent_id": 140115,
+   "author": "Bighunkypotato",
+   "author_id": 47695,
+   "author_url": "https://forge.sp-tarkov.com/user/47695/bighunkypotato",
+   "created_at": "2025-10-28T07:03:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>I\u2019m also encountering this problem. No sniper bots or first wave are spawned anymore.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 140997,
+   "parent_id": 140115,
+   "author": "Hidd",
+   "author_id": 86226,
+   "author_url": "https://forge.sp-tarkov.com/user/86226/hidd",
+   "created_at": "2025-11-02T14:21:16+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>Updated the mod dll (though acording to author  nothing major was changed) and SPT to 4.0.3 and bots spawn as they should, even zombies. Perhaps it was something to do with SPT itself</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 144628,
+   "parent_id": null,
+   "author": "ZigmondWarden",
+   "author_id": 64980,
+   "author_url": "https://forge.sp-tarkov.com/user/64980/zigmondwarden",
+   "created_at": "2025-12-02T14:12:09+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>this crashes the game</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  },
+  {
+   "id": 146140,
+   "parent_id": null,
+   "author": "M.R.Gosling",
+   "author_id": 94776,
+   "author_url": "https://forge.sp-tarkov.com/user/94776/mrgosling",
+   "created_at": "2025-12-15T10:38:49+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>will it work in 4.0.4?</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 146169,
+   "parent_id": 146140,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2025-12-15T18:21:47+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>It will work in all versions of 4.0</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 146170,
+   "parent_id": 144628,
+   "author": "matsix",
+   "author_id": 62969,
+   "author_url": "https://forge.sp-tarkov.com/user/62969/matsix",
+   "created_at": "2025-12-15T18:22:04+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>No it doesn\u2019t</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 3
+  },
+  {
+   "id": 146175,
+   "parent_id": 146140,
+   "author": "M.R.Gosling",
+   "author_id": 94776,
+   "author_url": "https://forge.sp-tarkov.com/user/94776/mrgosling",
+   "created_at": "2025-12-15T19:05:44+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>thanks</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 157012,
+   "parent_id": null,
+   "author": "Smackie",
+   "author_id": 105523,
+   "author_url": "https://forge.sp-tarkov.com/user/105523/smackie",
+   "created_at": "2026-04-12T12:07:54+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>worked like a damn charm, you\u2019re a wizard!</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 0
+  },
+  {
+   "id": 159915,
+   "parent_id": null,
+   "author": "Jimmybrite",
+   "author_id": 21770,
+   "author_url": "https://forge.sp-tarkov.com/user/21770/jimmybrite",
+   "created_at": "2026-05-15T02:27:50+00:00",
+   "body_html": "<!--[if BLOCK]><![endif]-->            <p>This mod is a must if you\u2019re running SPT on Linux with an Nvidia card. If I don\u2019t use this mod my Vram maxes out on my 3070 and it\u2019s a stutter mess.</p>\n\n        <!--[if ENDBLOCK]><![endif]-->",
+   "likes": 1
+  }
+ ]
+}
