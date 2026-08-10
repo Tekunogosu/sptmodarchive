@@ -216,7 +216,12 @@ a reload. Clicking any tag or author name filters by it.
 
 **Each mod page** splits into tabs — Description, Addons, Dependencies,
 Versions, Comments — with the key facts and every source repository side by
-side above them. The facts include the mod's **GUID**, the identifier a config
+side above them. **Each version links to the release that shipped it**, matched
+by version number against the repository's tags, and the Source panel's
+download goes to the latest release's actual file rather than a listing page.
+Both point at the repository rather than at the Forge, so they keep working
+after the shutdown — the groundwork for falling back to repository data
+entirely. The facts include the mod's **GUID**, the identifier a config
 file or another mod's dependency list names it by, monospaced and given its own
 row because it is meant to be copied verbatim. Only 741 of 1,827 mods declare
 one; the Forge shows "Not Available" for the rest, and so does this. Dependencies are cards showing thumbnail, name and teaser, each addable
@@ -491,6 +496,27 @@ answered from one URL. GitHub goes through GraphQL at 50 repos per request;
 GitLab, Codeberg, and Gitea use their own REST APIs and need no auth. Results
 land in `data/repos.json` and appear on each mod page as last commit, latest
 release, stars, and whether the author archived the repo.
+
+**Every release tag is recorded, not just the latest.** That is what lets a
+mod page link each of its versions to the release that shipped it — the
+Forge's own per-version download dies with the site, while the tag on the
+repository does not. **6,664 tags across 1,210 repositories**, and 73% of
+archived versions resolve to one. The rest were never tagged upstream: the
+author shipped to the Forge without cutting a release, which no amount of
+scraping fixes.
+
+Only the tag and its date are stored. A release page URL is derivable from the
+repository and the tag, so keeping 40 URLs for each of 1,400 repositories would
+add megabytes to a file CI commits twelve times a day. **Assets are the
+exception** — fetched for the latest release only, because their filenames are
+derivable from nothing and the latest is the one a reader wants to install.
+That is the direct download in the Source panel: 1,122 mods reach an actual
+file, 147 fall back to a releases page, 43 have neither.
+
+The cap is 40 releases per repository, which only 18 of them reach — the mean
+is 5. It was 20 at first, and raising it recovered 177 version links for about
+40 KB, because the repositories that hit a cap are exactly the long-lived mods
+whose old versions are hardest to find anywhere else.
 
 **Addon repositories are checked too**, so run this after
 `scrape_addons.py`. It reads `data/addons.json` when the file exists and

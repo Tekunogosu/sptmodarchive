@@ -160,7 +160,14 @@ def collect_authors(mods, addons, mod_lists, images):
         entry = authors.setdefault(person["id"], {
             "id": person["id"], "name": person.get("name") or "Unknown",
             "avatar": person.get("avatar") or "",
-            "forge_url": f"https://forge.sp-tarkov.com/user/{person['id']}",
+            # The Forge 404s on a bare /user/{id} and needs a slug after it --
+            # but any slug will do, since it redirects to the real one. So
+            # this reuses the archive's own slug rather than trying to
+            # reproduce the Forge's, which differs for about 8% of names
+            # (underscores become hyphens, dots vanish, and display names
+            # carrying a moderator title are not slugged with it).
+            "forge_url": (f"https://forge.sp-tarkov.com/user/{person['id']}"
+                          f"/{templates.author_slug(person)}"),
             "mods": [], "addons": [], "lists": [],
         })
         # First non-empty avatar wins: the same person carries one per record

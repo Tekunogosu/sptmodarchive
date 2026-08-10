@@ -337,10 +337,14 @@ def render_index(index_json, categories, spt_facets, stats, addon_lookup="[]"):
 
 # --- authors -------------------------------------------------------------
 
+def author_slug(author):
+    return ("".join(c if (c.isalnum() or c in "-_") else "-"
+                    for c in (author.get("name") or "user"))
+            .strip("-").lower() or "user")
+
+
 def author_href(author):
-    slug = "".join(c if (c.isalnum() or c in "-_") else "-"
-                   for c in (author.get("name") or "user")).strip("-").lower()
-    return f"{author['id']}-{slug or 'user'}.html"
+    return f"{author['id']}-{author_slug(author)}.html"
 
 
 def author_link(author, up="../"):
@@ -840,8 +844,9 @@ def repo_note(status):
     release = status.get("release") or {}
     if release.get("tag"):
         bits.append(f'latest release {release["tag"]}')
-    if status.get("stars"):
-        bits.append(f'{status["stars"]:,}★')
+    # Stars are not here: they head the panel beside the download, next to the
+    # repository that download comes from. Keeping a count in both places
+    # invites them to describe different repositories on a multi-repo mod.
     if status.get("archived"):
         bits.append("archived by its author")
 
@@ -916,6 +921,92 @@ def releases_page(url):
     return ""
 
 
+_VERSION_CORE_RE = re.compile(r"\d+(?:\.\d+)*")
+
+
+def version_key(text):
+    """The numeric core of a version string, for comparing across schemes.
+
+    The Forge records "1.5.0" while the tag that shipped it might be "v1.5.0",
+    "SPT-1.5.0" or "1.5.0-beta". Matching on the digits is what makes those
+    the same release; anything stricter fails on most repositories, and
+    anything looser starts matching unrelated versions to each other.
+    """
+    match = _VERSION_CORE_RE.search(text or "")
+    return match.group(0) if match else ""
+
+
+def release_page_url(record, tag):
+    """A release's own page, built from the repository and the tag.
+
+    Derived rather than stored: repo_status.py keeps only tags, because
+    holding 20 URLs for each of 1,400 repositories would add megabytes to a
+    file CI commits twelve times a day, and every host spells this the same
+    way given the two pieces.
+    """
+    host = record.get("host", "")
+    full_name = record.get("full_name", "")
+    if not (host and full_name and tag):
+        return ""
+    quoted = urllib.parse.quote(tag, safe="")
+    if host == "gitlab.com":
+        return f"https://{host}/{full_name}/-/releases/{quoted}"
+    return f"https://{host}/{full_name}/releases/tag/{quoted}"
+
+
+def release_index(mod, repos=None):
+    """Version number -> {url, notes} for the release that shipped it.
+
+    Built across every repository the mod lists, newest-first, so a mod split
+    over a client and a server repo resolves a version from whichever one
+    tagged it. First match wins, which keeps the maintained fork ahead of the
+    original it replaced.
+
+    `notes` is the repository's own release text, and today only the latest
+    release carries any -- repo_status.py stores one body per repository. That
+    is the release a reader is most likely to be installing, and the Versions
+    tab is where its text belongs: when the Forge listing is gone, that tab
+    still answers "what changed in this version" from the repository instead.
+    """
+    index = {}
+    for link in mod["source_links"]:
+        record = (repos or {}).get(link["url"]) or {}
+        if record.get("status") != "ok":
+            continue
+        latest = record.get("release") or {}
+        for release in record.get("releases") or []:
+            key = version_key(release.get("tag"))
+            if not key or key in index:
+                continue
+            url = release_page_url(record, release["tag"])
+            if not url:
+                continue
+            is_latest = release["tag"] == latest.get("tag")
+            index[key] = {"url": url,
+                          "host_label": repo_host_label(record["url"]),
+                          "notes": latest.get("html", "") if is_latest else ""}
+    return index
+
+
+def latest_download(links, repos=None):
+    """The newest release's actual file, when the host names one.
+
+    A releases page is a landing spot; this is the download itself. Only the
+    latest release carries assets in repos.json, which is the one a reader
+    installing today wants -- older versions still resolve to their release
+    page, where their files are.
+    """
+    for link in links:
+        record = (repos or {}).get(link.get("url", "")) or {}
+        assets = ((record.get("release") or {}).get("assets")) or []
+        # A release often ships a source zip alongside the built mod; the
+        # named asset is the one an author uploaded on purpose.
+        for asset in assets:
+            if asset.get("url"):
+                return asset["url"], asset.get("name", "")
+    return "", ""
+
+
 def releases_url(links, repos=None):
     """Where the download button goes.
 
@@ -966,6 +1057,24 @@ def render_source_links(links, repos):
 def render_facts_and_source(mod, repos, facts_html):
     """Key numbers and repositories side by side, to halve the page height."""
     releases = releases_url(mod["source_links"], repos)
+    # The download goes to the actual file where the host names one, and to
+    # the releases page otherwise. Both beat the Forge's own download, which
+    # stops existing on shutdown day.
+    asset_url, asset_name = latest_download(mod["source_links"], repos)
+    download_url = asset_url or releases
+    download_title = (f"Download {asset_name}" if asset_name
+                      else "Downloads / releases")
+
+    # The star count sits beside the download because both describe the same
+    # repository -- the first one that resolves, which is the one the download
+    # comes from and the one the page leads with.
+    primary = next((r for r in ((repos or {}).get(l["url"]) or {}
+                                for l in mod["source_links"])
+                    if r.get("status") == "ok"), {})
+    stars = (f'<a class="stars" href="{e(primary["url"])}" target="_blank"'
+             f' rel="noopener noreferrer"'
+             f' title="{primary["stars"]:,} stars on {e(repo_host_label(primary["url"]))}">'
+             f'★ {primary["stars"]:,}</a>' if primary.get("stars") else "")
     # "Which SPT does this run on" is the first question asked of any mod, so
     # it heads the panel at the far edge rather than queuing with the tags.
     spt = (badge(f"SPT {spt_label(mod['spt_constraint'])}", "spt")
@@ -986,9 +1095,11 @@ def render_facts_and_source(mod, repos, facts_html):
   <section class="panel">
     <div class="sourcehead">
       <h2>Source</h2>
-      {f'<a class="sourcedl" href="{e(releases)}" target="_blank" '
-       f'rel="noopener noreferrer" title="Downloads / releases" '
-       f'aria-label="Downloads and releases">{DOWNLOAD_ICON}</a>' if releases else ''}
+      {stars}
+      {f'<a class="sourcedl" href="{e(download_url)}" target="_blank" '
+       f'rel="noopener noreferrer" title="{e(download_title)}" '
+       f'aria-label="{e(download_title)}">{DOWNLOAD_ICON}</a>'
+       if download_url else ''}
     </div>
     {render_source_links(mod['source_links'], repos)}
     {forge_link}
@@ -1075,14 +1186,78 @@ def fika_state(mod):
     return "compatible" if mod["fika"] else "unknown"
 
 
-def render_versions(versions, limit=40):
+def version_notes(uid, forge_notes, repo_notes, host_label):
+    """One version's release text, from each source that has one.
+
+    Two accounts of the same release, written for different audiences and
+    disagreeing often enough to be worth telling apart -- so they get a tab
+    each rather than being stacked. Only the sources that exist are offered:
+    a mod with no repository text shows the Forge's alone, and once the Forge
+    is gone its tab simply stops being emitted, leaving the repository's.
+
+    The switch is radio inputs and labels, not script. There is one of these
+    per version -- forty on a long page -- and tabs.js drives a single strip
+    by id, so this has to work on its own. `uid` namespaces the radio group so
+    that switching one version does not switch every other version with it.
+    """
+    if not (forge_notes or repo_notes):
+        return ""
+
+    def panel(kind, html):
+        return f'<div class="vpanel p-{kind}"><div class="notes prose">{html}</div></div>'
+
+    if not (forge_notes and repo_notes):
+        # A single source needs no switch, but does need saying which it is,
+        # because the two are not interchangeable.
+        kind, html = ("forge", forge_notes) if forge_notes else ("repo", repo_notes)
+        label = "The Forge" if kind == "forge" else host_label
+        return (f'<div class="vsources one">'
+                f'<div class="vtabs"><span class="vtab-static">{e(label)}</span></div>'
+                f'{panel(kind, html)}</div>')
+
+    group = f"v{e(uid)}"
+    return f"""
+    <div class="vsources">
+      <input class="vin vin-forge" type="radio" name="{group}" id="{group}f" checked>
+      <input class="vin vin-repo" type="radio" name="{group}" id="{group}r">
+      <div class="vtabs">
+        <label class="vtab lab-forge" for="{group}f">The Forge</label>
+        <label class="vtab lab-repo" for="{group}r">{e(host_label)}</label>
+      </div>
+      <div class="vpanels">
+        {panel("forge", forge_notes)}
+        {panel("repo", repo_notes)}
+      </div>
+    </div>"""
+
+
+def render_versions(versions, limit=40, releases=None):
+    """A mod's version history, each linked to the release that shipped it.
+
+    The Forge's own download for a version dies with the site, so where a
+    repository tagged the same version number the block links there instead --
+    which is the version's actual file, and outlives the listing.
+    """
     if not versions:
         return ""
+    releases = releases or {}
     blocks = []
     for version in versions[:limit]:
         notes = localize_links(clean_html(version["description"]), "../")
         fika_text, fika_kind = FIKA_LABEL.get(version["fika"],
                                               FIKA_LABEL["unknown"])
+        release = releases.get(version_key(version["version"])) or {}
+        download = (
+            f'<a class="vdl" href="{e(release["url"])}" target="_blank"'
+            f' rel="noopener noreferrer"'
+            f' title="Download {e(version["version"])} from the repository"'
+            f' aria-label="Download {e(version["version"])}">{DOWNLOAD_ICON}</a>'
+            if release.get("url") else "")
+
+        repo_notes = clean_html(release.get("notes", ""))
+        body = version_notes(version.get("id") or version["version"],
+                             notes, repo_notes,
+                             release.get("host_label") or "Repository")
         blocks.append(f"""
   <div class="version">
     <div class="vhead">
@@ -1091,8 +1266,9 @@ def render_versions(versions, limit=40):
       {badge(fika_text, fika_kind)}
       <span class="when">{e(fmt_date(version['published_at']))} ·
         {version['downloads']:,} downloads</span>
+      {download}
     </div>
-    {f'<div class="notes prose">{notes}</div>' if notes else ''}
+    {body}
   </div>""")
 
     more = (f'<p class="empty">{len(versions) - limit} older versions not shown.</p>'
@@ -1217,7 +1393,7 @@ def render_addon_cards(addons, parent_id=None):
 
 
 def render_tabs(mod, description, comment_data, images, lookup=None,
-                addons=()):
+                addons=(), releases=None):
     """Description / Versions / Comments as tabs, or as stacked sections.
 
     Which of those you get depends on whether tabs.js runs. The markup is the
@@ -1246,7 +1422,7 @@ def render_tabs(mod, description, comment_data, images, lookup=None,
                          len(mod["dependencies"]), dependencies))
     if versions:
         sections.append(("versions", "Versions", len(versions),
-                         render_versions(versions)))
+                         render_versions(versions, releases=releases)))
     if comments:
         sections.append(("comments", "Comments", len(comments),
                          render_comments(comment_data, images)))
@@ -1354,7 +1530,8 @@ def render_mod(mod, comment_data, known_ids, repos, images=None,
 
 {render_facts_and_source(mod, repos, fact_html)}
 
-{render_tabs(mod, description, comment_data, images, lookup, addons)}
+{render_tabs(mod, description, comment_data, images, lookup, addons,
+             release_index(mod, repos))}
 """
     return page(f"{mod['name']} · SPT Mod Archive", body, depth=1,
                 scripts=("tabs.js", "comments.js"),

@@ -570,7 +570,10 @@ button.badge:hover { border-color: var(--faint); filter: brightness(1.25); }
   gap: 10px;
   margin-bottom: 12px;
 }
-.sourcehead h2 { margin-bottom: 0; }
+/* The heading takes the free space so the star count and the download sit
+   together at the right edge -- they describe the same repository, and
+   space-between alone would have stranded the stars in the middle. */
+.sourcehead h2 { margin-bottom: 0; margin-right: auto; }
 .sourcedl { display: inline-flex; align-items: center; line-height: 1; color: var(--muted); }
 .sourcedl:hover { color: var(--accent); }
 .splitcols .panel { margin-bottom: 0; }
@@ -639,13 +642,91 @@ button.badge:hover { border-color: var(--faint); filter: brightness(1.25); }
 
 /* --- versions ---------------------------------------------------------- */
 
-.versions { display: flex; flex-direction: column; gap: 10px; }
-.version { border-top: 1px solid var(--line); padding-top: 10px; }
-.version:first-child { border-top: 0; padding-top: 0; }
-.version .vhead { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
-.version .num { font-family: var(--mono); font-weight: 700; }
+/* Each version is a card rather than a rule-separated paragraph. With release
+   notes from two sources under it, a hairline border was not enough to say
+   where one version ended and the next began. */
+.versions { display: flex; flex-direction: column; gap: 12px; }
+.version {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  overflow: hidden;
+}
+.version .vhead {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  padding: 9px 12px;
+  background: var(--surface-2);
+  border-bottom: 1px solid var(--line);
+}
+.version .num {
+  font-family: var(--mono);
+  font-weight: 700;
+  font-size: 15.5px;
+  color: var(--text);
+}
 .version .when { color: var(--faint); font-size: 12.5px; margin-left: auto; }
-.version .notes { margin-top: 6px; color: var(--muted); font-size: 13.5px; }
+.version .notes { color: var(--muted); font-size: 13.5px; }
+
+/* --- per-version source tabs -------------------------------------------- */
+
+/* Radio inputs, not script: there is one of these per version and tabs.js
+   owns a single strip, so the switch has to stand on its own. The inputs are
+   hidden from sight but not from the keyboard, so tabbing still reaches them
+   and the labels still toggle. */
+.vsources .vin {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+.vtabs {
+  display: flex;
+  gap: 2px;
+  padding: 6px 12px 0;
+  border-bottom: 1px solid var(--line);
+}
+.vtab, .vtab-static {
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--faint);
+  border: 1px solid transparent;
+  border-bottom: 0;
+  border-radius: 6px 6px 0 0;
+  cursor: pointer;
+}
+.vtab-static { cursor: default; }
+.vtab:hover { color: var(--text); }
+.vsources.one .vtabs { padding-bottom: 0; }
+.vpanel { display: none; padding: 10px 12px; }
+/* Keyed by class rather than by id, so one rule serves every version on the
+   page instead of one rule per version. */
+.vin-forge:checked ~ .vpanels .p-forge,
+.vin-repo:checked ~ .vpanels .p-repo { display: block; }
+.vsources.one .vpanel { display: block; }
+.vin-forge:checked ~ .vtabs .lab-forge,
+.vin-repo:checked ~ .vtabs .lab-repo {
+  color: var(--text);
+  background: var(--surface);
+  border-color: var(--line);
+}
+.vin:focus-visible ~ .vtabs .vtab { outline: 2px solid var(--accent-dim); outline-offset: 1px; }
+/* Sits after .when, which takes the free space, so the glyph lands at the far
+   edge of the row. Smaller than the Source panel's copy of the same icon:
+   there is one per version, and at 22px a long history reads as a column of
+   arrows rather than a version list. */
+.vdl { display: inline-flex; align-items: center; line-height: 1; color: var(--faint); }
+.vdl svg { width: 16px; height: 16px; }
+.vdl:hover { color: var(--accent); }
+/* The repository's account of the same release, set apart from the Forge's so
+   the two are never read as one text. Its own rule rather than a border on
+   .notes, because a version can carry both, either, or neither. */
+.reponotes { margin-top: 8px; padding-left: 10px; border-left: 2px solid var(--line); }
+.reponotes .label { display: inline-block; margin-bottom: 2px; }
+.reponotes .notes { margin-top: 2px; }
 
 /* --- collection: mark toggles ------------------------------------------- */
 

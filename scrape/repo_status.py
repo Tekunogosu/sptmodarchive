@@ -96,11 +96,24 @@ def parse_repo(url):
 
 # --- GitHub (GraphQL) ----------------------------------------------------
 
+# Two things are asked of releases, and they cost very differently.
+#
+# Every tag is wanted, so a mod version can be linked to the release that
+# shipped it -- but only the tag and its date are stored, because a release
+# page URL is derivable from the repository and the tag, and storing 20 URLs
+# per repository would add megabytes to a file CI commits twelve times a day.
+#
+# Assets are fetched for the latest release alone. Their filenames are not
+# derivable from anything, and the latest is the one a reader actually wants
+# to download.
 REPO_FIELDS = """
     nameWithOwner isArchived stargazerCount pushedAt url
     defaultBranchRef { name target { ... on Commit {
         oid committedDate messageHeadline url } } }
-    latestRelease { tagName publishedAt url descriptionHTML }"""
+    latestRelease { tagName publishedAt url descriptionHTML
+        releaseAssets(first: 5) { nodes { name downloadUrl size } } }
+    releases(first: 40, orderBy: {field: CREATED_AT, direction: DESC}) {
+        nodes { tagName publishedAt } }"""
 
 PINNED_FIELD = """
     pinned: ref(qualifiedName: %s) { name target { ... on Commit {
@@ -180,8 +193,20 @@ def fetch_github(token, entries):
                 "release": {"tag": release.get("tagName", ""),
                             "date": release.get("publishedAt", ""),
                             "url": release.get("url", ""),
-                            "html": release.get("descriptionHTML", "")}
+                            "html": release.get("descriptionHTML", ""),
+                            "assets": [
+                                {"name": a.get("name", ""),
+                                 "url": a.get("downloadUrl", ""),
+                                 "size": a.get("size") or 0}
+                                for a in (release.get("releaseAssets") or {})
+                                          .get("nodes") or []
+                                if a.get("downloadUrl")]}
                            if release else None,
+                "releases": [
+                    {"tag": r.get("tagName", ""),
+                     "date": r.get("publishedAt", "")}
+                    for r in (node.get("releases") or {}).get("nodes") or []
+                    if r.get("tagName")],
             }
 
         print(f"  github {min(start + BATCH, len(entries))}/{len(entries)}",
@@ -220,8 +245,11 @@ def fetch_gitlab(entry):
         return missing_record(entry)
 
     commit = commits[0] if commits else {}
-    releases = get_json(f"{base}/releases?per_page=1") or []
+    # Same 20 as GitHub, so a mod's older versions can be linked whichever
+    # host it lives on.
+    releases = get_json(f"{base}/releases?per_page=40") or []
     release = releases[0] if releases else {}
+    links = ((release.get("assets") or {}).get("links") or []) if release else []
     return {
         "url": entry["url"], "host": entry["host"], "full_name": entry["path"],
         "status": "ok", "archived": False, "stars": 0, "branch": "",
@@ -232,8 +260,14 @@ def fetch_gitlab(entry):
         "release": {"tag": release.get("tag_name", ""),
                     "date": release.get("released_at", ""),
                     "url": entry["url"],
-                    "html": release.get("description_html", "")}
+                    "html": release.get("description_html", ""),
+                    "assets": [{"name": l.get("name", ""),
+                                "url": l.get("url", ""), "size": 0}
+                               for l in links if l.get("url")]}
                    if release else None,
+        "releases": [{"tag": r.get("tag_name", ""),
+                      "date": r.get("released_at", "")}
+                     for r in releases if r.get("tag_name")],
     }
 
 
@@ -245,7 +279,7 @@ def fetch_gitea(entry):
 
     commit = commits[0] if commits else {}
     info = commit.get("commit", {}) if commit else {}
-    releases = get_json(f"{base}/releases?limit=1") or []
+    releases = get_json(f"{base}/releases?limit=40") or []
     release = releases[0] if releases else {}
     return {
         "url": entry["url"], "host": entry["host"],
@@ -257,8 +291,16 @@ def fetch_gitea(entry):
                    "url": commit.get("html_url", "")} if commit else None,
         "release": {"tag": release.get("tag_name", ""),
                     "date": release.get("published_at", ""),
-                    "url": release.get("html_url", ""), "html": ""}
+                    "url": release.get("html_url", ""), "html": "",
+                    "assets": [{"name": a.get("name", ""),
+                                "url": a.get("browser_download_url", ""),
+                                "size": a.get("size") or 0}
+                               for a in release.get("assets") or []
+                               if a.get("browser_download_url")]}
                    if release else None,
+        "releases": [{"tag": r.get("tag_name", ""),
+                      "date": r.get("published_at", "")}
+                     for r in releases if r.get("tag_name")],
     }
 
 
