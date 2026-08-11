@@ -135,9 +135,10 @@ the data is usable on its own.
 ## Keeping it current
 
 **Steps 1 and 5 now run themselves.** The `Refresh archive` workflow scrapes
-mods and re-checks every source repository every hour, commits both files,
-and republishes the site — see [Automation](#automation) below. What is left to
-run by hand is the part no schedule should own: comments, lists, and images.
+mods and re-checks every source repository every three hours, commits both
+files, and republishes the site — see [Automation](#automation) below. What is
+left to run by hand is the part no schedule should own: comments, lists, and
+images.
 
 Run these in order. `data/mods.json` is the spine — everything else reads it,
 so it goes first. The rest are independent of each other.
@@ -208,7 +209,7 @@ is always the correct response to errors.
 ## Automation
 
 Two workflows. `build.yml` validates pull requests and publishes on push;
-`refresh.yml` is the scheduled one, running **every hour**:
+`refresh.yml` is the scheduled one, running **every three hours**:
 
 ```
 scrape_mods.py  →  scrape_addons.py  →  fetch_images.py  →  repo_status.py
@@ -234,11 +235,12 @@ built-in `GITHUB_TOKEN`, which reads public repository data at 1,000
 requests/hour — against roughly 26 GraphQL calls and 21 REST calls per run. The
 `.github-sptmods` file is only for running it locally.
 
-**The fetch cache is what makes an hourly schedule polite**, and it is committed
-for exactly that reason. `data/raw_mods.jsonl` holds one raw payload per mod
-keyed by `updated_at`, so a run refetches only what changed; without it every
-run would be ~3,600 requests, twenty-four times a day. Committing it means the
-checkout restores it, with no Actions cache to expire or evict — and it stops
+**The fetch cache is what makes a repeating schedule polite**, and it is
+committed for exactly that reason. `data/raw_mods.jsonl` holds one raw payload
+per mod keyed by `updated_at`, so a run refetches only what changed; without it
+every run would be ~3,600 requests, eight times a day — and twenty-four times a
+day back when this ran hourly. Committing it means the checkout restores it,
+with no Actions cache to expire or evict — and it stops
 being "cheap to rebuild" the moment a listing site goes offline. It holds the
 raw payloads behind `mods.json`, including fields the archive does not keep, so
 it is worth more than its size suggests.
@@ -267,7 +269,7 @@ reasonable cadence to fall back to.
 **`mods.json` is written sorted by id** so these commits stay small. Ordering
 it by downloads instead moved a mod's entire record every time two of them
 swapped rank, which turned a handful of changed counters into thousands of
-changed lines on a file CI now commits twenty-four times a day. `build.py` sorts by
+changed lines on a file CI commits eight times a day. `build.py` sorts by
 downloads at render time, so nothing on the site depends on the file's order —
 the only visible difference is that `--limit N` on the scrapers now means "the
 N lowest ids" rather than "the N most downloaded".
@@ -661,7 +663,7 @@ scraping fixes.
 
 Only the tag and its date are stored. A release page URL is derivable from the
 repository and the tag, so keeping 40 URLs for each of 1,400 repositories would
-add megabytes to a file CI commits twenty-four times a day. **Assets are the
+add megabytes to a file CI commits eight times a day. **Assets are the
 exception** — their filenames are derivable from nothing. The latest release
 gives up its assets in full, URL and size included, because it is the one a
 reader is most likely to install: that is the direct download in the Source

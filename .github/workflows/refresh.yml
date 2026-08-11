@@ -26,20 +26,26 @@ name: Refresh archive
 # the one that keeps producing new information indefinitely.
 on:
   schedule:
-    # Hourly.
+    # Every three hours.
+    #
+    # It was hourly while forge.sp-tarkov.com was going dark, when the question
+    # each run answered was "is it still there, and what has it lost since the
+    # last one". sp-mod.com is not dying, so that urgency is gone: eight runs a
+    # day still catch a new mod the morning it appears, and ask a third as much
+    # of somebody else's server to do it.
     #
     # Read this as the earliest a run may start, not when it will. schedule: is
     # best-effort and minute 0 is the most contended slot on GitHub's scheduler:
-    # on the previous two-hourly cron every run landed 32-52 minutes late and
-    # the 00:00 UTC slot was dropped entirely. Expect the same here -- roughly
-    # hourly with drift, and an occasional hour missed outright.
+    # on the earlier two-hourly cron every run landed 32-52 minutes late and the
+    # 00:00 UTC slot was dropped entirely. Expect the same here -- roughly
+    # three-hourly with drift, and an occasional slot missed outright.
     #
     # That is survivable only because the run is idempotent. Each one rebuilds
-    # from the committed fetch cache and republishes, so a skipped hour costs
+    # from the committed fetch cache and republishes, so a skipped slot costs
     # nothing a later run does not recover. If a refresh ever has to land at a
     # specific time, it needs a trigger off GitHub's scheduler -- a
     # workflow_dispatch POST from somewhere with its own clock.
-    - cron: "0 * * * *"
+    - cron: "0 */3 * * *"
   workflow_dispatch:            # and on demand from the Actions tab
 
 # Build and deploy happen in this one workflow rather than by pushing and
@@ -75,7 +81,8 @@ jobs:
       # The per-mod fetch cache (data/raw_mods.jsonl) is committed, so the
       # checkout above already restored it: this run refetches only the mods
       # whose updated_at moved, rather than all ~1,800 of them. That is what
-      # makes an hourly schedule defensible against a dying server.
+      # keeps a run cheap enough to repeat all day against somebody else's
+      # server -- and made it defensible at all when it ran hourly.
       - name: Scrape the mod site
         # Never fatal. scrape_mods.py aborts without writing when enumeration
         # comes back empty or short, so the worst case is that this run

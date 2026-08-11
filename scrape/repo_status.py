@@ -101,7 +101,7 @@ def parse_repo(url):
 # Every tag is wanted, so a mod version can be linked to the release that
 # shipped it -- but only the tag and its date are stored, because a release
 # page URL is derivable from the repository and the tag, and storing 40 URLs
-# per repository would add megabytes to a file CI commits twelve times a day.
+# per repository would add megabytes to a file CI commits eight times a day.
 #
 # Assets are fetched in full for the latest release: their size and download
 # URL, because that is the release a reader is most likely to install.

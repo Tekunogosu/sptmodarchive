@@ -435,7 +435,7 @@ def release_page_url(record, tag):
 
     Derived rather than stored: repo_status.py keeps only tags, because
     holding 20 URLs for each of 1,400 repositories would add megabytes to a
-    file CI commits twelve times a day, and every host spells this the same
+    file CI commits eight times a day, and every host spells this the same
     way given the two pieces.
     """
     host = record.get("host", "")
@@ -454,7 +454,7 @@ def asset_url(record, tag, name):
     repo_status.py stores filenames rather than URLs for the releases it can
     reach, for the same reason `release_page_url` derives its page -- 6,700
     release rows carrying a full URL each is most of a megabyte in a file CI
-    commits twelve times a day, and GitHub, Codeberg and Gitea all build this
+    commits eight times a day, and GitHub, Codeberg and Gitea all build this
     path identically.
 
     GitLab's asset links point wherever the author put them, so nothing can be
