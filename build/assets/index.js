@@ -322,7 +322,9 @@
         REPO_ICON + "★ " + count + "</a>"
       : '<span class="stars muted">' + REPO_ICON + "★ " + count + "</span>";
 
-    return '<article class="mod">' +
+    // The id is on the tile itself, not just on its collection button: coming
+    // back from a mod page has to find the row again to mark it.
+    return '<article class="mod" data-id="' + esc(mod.id) + '">' +
       thumb +
       '<div class="modmain"><h2 class="title"><a href="' + esc(mod.href) + '">' +
         esc(mod.name) + "</a></h2>" +
@@ -405,6 +407,96 @@
     try { document.execCommand("copy"); done(); } catch (e) { /* nothing to do */ }
     document.body.removeChild(area);
   }
+
+  // --- where you were --------------------------------------------------
+
+  /* Opening a mod and coming back should land you where you left, not at the
+   * top of a list you had scrolled a thousand rows into. The filters already
+   * survive the trip (localStorage, below); the position in the list did not.
+   *
+   * sessionStorage rather than localStorage because this is about one journey
+   * out and back, not a preference: a tab opened tomorrow should start at the
+   * top. The saved position carries the filter signature it was taken under,
+   * so it is discarded the moment it would point somewhere else -- a different
+   * search, sort or SPT set is a different list, and row 900 of it is not the
+   * row you were looking at.
+   *
+   * `rendered` is saved alongside the offset because rows arrive in batches:
+   * the scroll container is only as tall as what has been rendered, so the
+   * batches have to be replayed before the offset means anything.
+   */
+  var RETURN_KEY = "spt-archive-return";
+
+  /* The tile you left through, remembered so it can be marked on the way back.
+   * Only the title link counts: an author link or a badge filter also leaves
+   * the tile, but neither means "I went and read this one". */
+  var opened = null;
+
+  els.list.addEventListener("click", function (event) {
+    var link = event.target.closest(".title a");
+    var article = link && link.closest("article.mod");
+    if (article) opened = article.getAttribute("data-id");
+  });
+
+  function filterSignature() {
+    var f = currentFilter();
+    return [f.terms.join(" "), f.category, f.spt.join(","), f.fika, f.show,
+            els.sort.value].join("|");
+  }
+
+  function saveReturnPosition() {
+    if (!els.scroller || (!els.scroller.scrollTop && !opened)) return;
+    try {
+      sessionStorage.setItem(RETURN_KEY, JSON.stringify({
+        top: els.scroller.scrollTop,
+        rendered: rendered,
+        opened: opened,
+        sig: filterSignature()
+      }));
+    } catch (e) { /* storage unavailable: you just land at the top */ }
+  }
+
+  function takeReturnPosition() {
+    var saved;
+    try {
+      saved = JSON.parse(sessionStorage.getItem(RETURN_KEY) || "null");
+      sessionStorage.removeItem(RETURN_KEY);
+    } catch (e) { return null; }
+    if (!saved || saved.sig !== filterSignature()) return null;
+    return saved;
+  }
+
+  /* Read once on arrival and consumed there: a position that has been used is
+   * spent, so scrolling back to the top and reloading does not drag you back
+   * down again. */
+  function restoreReturnPosition() {
+    var saved = takeReturnPosition();
+    if (!saved) return;
+    while (rendered < saved.rendered && rendered < visible.length) renderMore();
+    els.scroller.scrollTop = saved.top;
+    // Thumbnails and badges settle a frame later, which can shorten the
+    // container just after the offset is set. One correction is enough.
+    requestAnimationFrame(function () { els.scroller.scrollTop = saved.top; });
+    // Carried forward as well as drawn, so a second trip out that opens
+    // nothing -- following the addons link, say -- still comes back to the
+    // last mod actually read rather than to an unmarked list.
+    opened = saved.opened || null;
+    markOpened(opened);
+  }
+
+  /* The tile you last opened, marked where it sits. Deliberately quiet: this
+   * is a place-keeper for the eye while you work down a list, not a status,
+   * and it has to survive sitting next to badges that do mean something. */
+  function markOpened(id) {
+    if (!id) return;
+    // Ids are numbers today, but community records may not be, and an id is
+    // pasted into a selector here.
+    var safe = window.CSS && CSS.escape ? CSS.escape(id) : id;
+    var tile = els.list.querySelector('article.mod[data-id="' + safe + '"]');
+    if (tile) tile.classList.add("lastopened");
+  }
+
+  window.addEventListener("pagehide", saveReturnPosition);
 
   // --- URL state -------------------------------------------------------
 
@@ -602,6 +694,7 @@
     buildFacets(loaded[1]);
     restoreFilters();
     applyFilter();
+    restoreReturnPosition();
     document.dispatchEvent(new CustomEvent("archive:catalogue"));
   }).catch(function (error) {
     console.error(error);

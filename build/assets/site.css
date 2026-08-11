@@ -243,6 +243,18 @@ input:focus, select:focus {
 }
 .mod:hover { border-color: var(--faint); }
 
+/* The mod you came back from, so your place is visible and not just scrolled
+   to. An inset rule rather than a real left border, because a border would be
+   1px of layout and shunt the tile's contents sideways against its neighbours.
+   Quiet on purpose: it marks where you were, it does not claim anything about
+   the mod, so it stays below the badges in the tile's reading order. */
+.mod.lastopened {
+  border-color: color-mix(in srgb, var(--accent) 45%, var(--line));
+  background: color-mix(in srgb, var(--accent) 7%, var(--surface));
+  box-shadow: inset 3px 0 0 var(--accent-dim);
+}
+.mod.lastopened:hover { border-color: var(--accent-dim); }
+
 .mod .thumb {
   width: 48px; height: 48px;
   border-radius: 6px;
