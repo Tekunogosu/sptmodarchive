@@ -29,9 +29,18 @@ import urllib.error
 import urllib.request
 from html import unescape
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from forge import (archived_author_id, load_archive,         # noqa: E402
+                   merge_with_archive)
+
+# See forge.merge_with_archive(). A list is a title, an owner and a set of mod
+# ids; any of those emptying across every list at once is the page having
+# changed shape, not 199 people clearing their modpacks on the same day.
+DEFENDED = ("title", "mod_ids", "owner")
+
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(HERE, "data")
-BASE = "https://forge.sp-tarkov.com"
+BASE = "https://sp-mod.com"
 UA = ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36")
 
@@ -213,6 +222,25 @@ def main():
             lists.append(record)
         if n % 25 == 0 or n == len(found):
             print(f"  {n}/{len(found)}", file=sys.stderr)
+
+    # The Forge's 199 curated lists did not come across to sp-mod.com, which
+    # started its own from scratch. They exist nowhere else, so they are kept
+    # and marked rather than dropped for being absent from the live site.
+    archived = load_archive(path, "lists")
+    if archived:
+        lists, _ = merge_with_archive(lists, archived, DEFENDED, noun="list")
+
+    # Stamped for the same reason mod authors are: an owner who also wrote
+    # mods has to come out as one person, not as "31818" beside "31818-arch".
+    #
+    # Only the carried-over lists, though. Those owner ids are the Forge's, and
+    # sp-mod.com renumbered its users -- but a list scraped from sp-mod.com
+    # today names a live sp-mod user, and stamping that one would invent an
+    # archive-only person who is standing right there.
+    for entry in lists:
+        owner = entry.get("owner") or {}
+        if entry.get("delisted") and owner.get("id") is not None:
+            owner["id"] = archived_author_id(owner["id"])
 
     out = {
         "generated_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),

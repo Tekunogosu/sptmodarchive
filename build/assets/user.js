@@ -48,16 +48,18 @@
       '<div class="bylinerow">' +
       '<div class="byline">' + R.esc(counts.join(" · ") || "Nothing archived") +
       "</div>" +
-      '<div class="badges">' + R.badge("Author", "cat") + "</div></div>" +
+      '<div class="badges">' + R.badge("Author", "cat") +
+      // Their account has not been reclaimed on sp-mod.com since the move, so
+      // everything below is what the Forge recorded. Said plainly, because the
+      // alternative is a page that looks current and is not.
+      (author.archived
+        ? R.badge("Archived profile — not yet reclaimed", "warn") : "") +
+      "</div></div>" +
       (author.downloads
         ? '<p class="teaser">' + R.num(author.downloads) +
           " downloads across their mods</p>" : "") +
       "</div></div>" +
-      R.sectionTabs(sections, "Nothing by this author is archived yet.") +
-      '<section class="panel"><h2>Profile</h2>' +
-      '<p class="forgelink"><a href="' + R.esc(author.forge_url) + '" target="_blank"' +
-      ' rel="noopener noreferrer">Original Forge profile</a>' +
-      ' <span class="label">offline after shutdown</span></p></section>';
+      R.sectionTabs(sections, "Nothing by this author is archived yet.");
   }
 
   document.addEventListener("archive:rendered", function (event) {

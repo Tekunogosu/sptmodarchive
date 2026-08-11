@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Shared plumbing for talking to the Forge.
+"""Shared plumbing for talking to the mod site.
 
 Two very different channels live here:
 
@@ -18,7 +18,9 @@ that returns empty data is indistinguishable from a mod with no data.
 """
 
 import json
+import os
 import re
+import sys
 import time
 import urllib.error
 import urllib.parse
@@ -26,8 +28,13 @@ import urllib.request
 from html import unescape
 from http.cookiejar import CookieJar
 
-BASE = "https://forge.sp-tarkov.com"
+BASE = "https://sp-mod.com"
 
+# The site moved from forge.sp-tarkov.com to sp-mod.com, which runs the same
+# software: the /api/v0/* routes, their parameters and their field names are
+# unchanged, so everything below works against it as written. What did not
+# come across is authorship -- see merge_with_archive() in scrape_mods.py.
+#
 # The API is happy with an honest identifier. The Livewire endpoint sits
 # behind Cloudflare and is only served to something that looks like a browser.
 API_UA = "Mozilla/5.0 (SPT mod archive; personal archival script)"
@@ -71,7 +78,7 @@ class Fetcher:
                     if attempt == attempts - 1:
                         self.failures.append((url, f"HTTP {e.code} (gave up)"))
                         return None, False
-                    # The Forge allows 300 requests/minute and says so in
+                    # The site allows 300 requests/minute and says so in
                     # Retry-After when we exceed it. Honour that rather than
                     # guessing, then back off geometrically for plain 5xx.
                     wait = e.headers.get("Retry-After") if e.headers else None
@@ -268,3 +275,194 @@ def parse_component(page_html, name):
     lazy = _LAZY_RE.search(tag)
     return (unescape(snap.group(1)) if snap else None,
             lazy.group(1) if lazy else None)
+
+
+# --- folding a scrape into the archive -----------------------------------
+#
+# The site this reads is not the site the archive was built from. It moved
+# from forge.sp-tarkov.com to sp-mod.com, which runs the same software and
+# kept the same ids, but does not serve everything the Forge did. So a scrape
+# is merged into the archive rather than replacing it.
+
+def load_archive(path, collection):
+    """Whatever `path` already holds, keyed by id. Empty on a first run."""
+    if not os.path.exists(path):
+        return {}
+    try:
+        with open(path) as f:
+            return {r["id"]: r for r in json.load(f).get(collection) or []}
+    except (json.JSONDecodeError, KeyError, TypeError, AttributeError):
+        print(f"  existing {os.path.basename(path)} is unreadable; "
+              f"treating this as a first run", file=sys.stderr)
+        return {}
+
+
+# Above this share of the overlap, a field emptying out is read as an API
+# change rather than as data. Deliberately well under half: when sp-mod.com
+# replaced the Forge it stopped serving `owner` on *every* mod at once, and a
+# scraper that wrote that through would have blanked 1,830 authors and taken
+# all 889 author pages with them.
+WHOLESALE = 0.25
+
+
+def merge_with_archive(records, archived, defended, noun="record"):
+    """Fold a fresh scrape into what the archive already holds.
+
+    Two rules, and both exist because the listing is no longer the archive's
+    only source of truth about itself.
+
+    A field that has emptied out across a quarter of the catalogue at once is
+    not news about the mods, it is news about the API -- so the archived value
+    is kept and the run says so loudly. Anything below that threshold is real
+    and is written through, because one author really can delete their
+    description.
+
+    A record the site no longer lists is kept and marked `delisted`. An archive
+    outliving the listing is the entire point, so a mod dropping off the site
+    is when its record here starts mattering, not when to discard it.
+
+    Returns (records, defended_fields).
+    """
+    if not archived:
+        for record in records:
+            record["delisted"] = False
+        return records, {}
+
+    overlap = [r for r in records if r["id"] in archived]
+    emptied, had = {}, {}
+    for record in overlap:
+        old = archived[record["id"]]
+        for field in defended:
+            if not old.get(field):
+                continue
+            # Counted against the records that *had* the field, never against
+            # the whole catalogue. Only 169 mods ever declared a dependency, so
+            # when sp-mod.com stopped serving them it emptied 161 records --
+            # 95% of the mods that had any, but under 9% of the catalogue. A
+            # threshold measured against the catalogue sails straight past
+            # that, which is exactly how the first run after the move deleted
+            # every dependency in the archive.
+            had[field] = had.get(field, 0) + 1
+            if not record.get(field):
+                emptied[field] = emptied.get(field, 0) + 1
+
+    wholesale = {f: n for f, n in emptied.items()
+                 if had.get(f) and n / had[f] >= WHOLESALE}
+    for field, count in sorted(wholesale.items()):
+        print(f"  !! {field} came back empty on {count} of the {had[field]} "
+              f"{noun}s that had it ({count / had[field]:.0%}).\n"
+              f"     Reading that as an API change, not as data: keeping the "
+              f"archived values.", file=sys.stderr)
+        for record in overlap:
+            old = archived[record["id"]]
+            if old.get(field) and not record.get(field):
+                record[field] = old[field]
+
+    for field, count in sorted(emptied.items()):
+        if field not in wholesale:
+            print(f"  {field} emptied on {count} {noun}(s) -- recorded as-is",
+                  file=sys.stderr)
+
+    seen = {r["id"] for r in records}
+    for record in records:
+        record["delisted"] = False
+
+    gone = []
+    for record_id, old in archived.items():
+        if record_id in seen:
+            continue
+        old["delisted"] = True
+        gone.append(old)
+    if gone:
+        print(f"  {len(gone)} archived {noun}(s) are no longer listed on the "
+              f"site; keeping them", file=sys.stderr)
+
+    return records + gone, wholesale
+
+
+# --- authorship across the migration -------------------------------------
+#
+# sp-mod.com took over the Forge's catalogue but not its accounts: users have
+# to reclaim theirs, and until someone does, their mods come back with
+# `owner: null`. So authorship arrives gradually, one reclaimed account at a
+# time, and every refresh has to answer the same question per author: is this
+# person here now, or do we still only have what the Forge told us?
+#
+# The two id spaces are the reason this needs care. Forge user 27632 is DanW;
+# sp-mod.com user 27632, if it ever exists, is somebody else entirely. Keeping
+# an archived author under a bare numeric id would eventually merge two
+# different people. So an author the live site has not confirmed is stamped
+# "27632-arch", which cannot collide with anything sp-mod.com issues, and the
+# stamp comes off the moment the account is reclaimed.
+
+ARCH_SUFFIX = "-arch"
+
+
+def archived_author_id(author_id):
+    """Mark an id as the archive's own. Idempotent -- runs re-stamp freely."""
+    if author_id in (None, ""):
+        return None
+    text = str(author_id)
+    return text if text.endswith(ARCH_SUFFIX) else text + ARCH_SUFFIX
+
+
+def is_archived_author(author):
+    return str((author or {}).get("id") or "").endswith(ARCH_SUFFIX)
+
+
+def _key(name):
+    return (name or "").strip().casefold()
+
+
+def reconcile_authors(live, archived):
+    """One mod's authors, folding what the site says into what we hold.
+
+    Name is the join, because it is the only thing the two eras share -- the
+    ids do not, which is the whole problem. So:
+
+      - An archived author whose name comes back from the site has reclaimed
+        their account. The live record wins outright: the "-arch" stamp goes,
+        and the id becomes whatever sp-mod.com issued, same or different.
+      - An archived author the site still has not named is kept, stamped
+        "-arch", and appended after the live ones.
+
+    Reconciling per author rather than per mod matters for the mods with more
+    than one: a lead author reclaiming their account should not delete the
+    collaborator who has not got round to it yet.
+
+    A reclaimed author who arrives without an avatar inherits the mirrored one,
+    since the archive already holds that file and the alternative is a page
+    that briefly loses its picture.
+
+    Returns (authors, reclaimed_count).
+    """
+    live = [a for a in (live or []) if (a or {}).get("name")]
+    archived = [a for a in (archived or []) if (a or {}).get("name")]
+
+    if not archived:
+        return live, 0
+    if not live:
+        return ([dict(a, id=archived_author_id(a.get("id"))) for a in archived],
+                0)
+
+    was = {_key(a["name"]): a for a in archived}
+    out, reclaimed = [], 0
+    for author in live:
+        author = dict(author)
+        previous = was.get(_key(author["name"]))
+        if previous:
+            # Only a *newly* reclaimed account counts. Once the archived entry
+            # has been replaced by a live one, later runs match that live entry
+            # instead, and counting those would report the same reclaim every
+            # hour forever.
+            if is_archived_author(previous):
+                reclaimed += 1
+            if not author.get("avatar") and previous.get("avatar"):
+                author["avatar"] = previous["avatar"]
+        out.append(author)
+
+    named = {_key(a["name"]) for a in live}
+    for author in archived:
+        if _key(author["name"]) not in named:
+            out.append(dict(author, id=archived_author_id(author.get("id"))))
+    return out, reclaimed

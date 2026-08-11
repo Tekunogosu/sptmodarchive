@@ -34,9 +34,12 @@
       '<ul class="deplist listmods">' +
       entry.mods.map(R.card).join("") + "</ul></section>" +
       '<section class="panel"><h2>Source</h2>' +
-      '<p><a href="' + R.esc(entry.forge_url) + '" target="_blank"' +
-      ' rel="noopener noreferrer">Original list on the Forge</a>' +
-      ' <span class="label">offline once the Forge shuts down</span></p></section>';
+      (entry.delisted
+        ? '<p><span class="label">Archived from the original SPT Forge — this ' +
+          'list is not on sp-mod.com</span></p>'
+        : '<p><a href="' + R.esc(entry.forge_url) + '" target="_blank"' +
+          ' rel="noopener noreferrer">View on sp-mod.com</a></p>') +
+      "</section>";
   }
 
   document.addEventListener("archive:rendered", function (event) {

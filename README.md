@@ -1,14 +1,80 @@
 # SPT Mod Archive
 
-A community archive of the Single Player Tarkov mod listings from
-[forge.sp-tarkov.com](https://forge.sp-tarkov.com), built because the Forge is
-shutting down.
+A community archive of the Single Player Tarkov mod listings, built when
+forge.sp-tarkov.com announced it was shutting down — and still running against
+its successor, [sp-mod.com](https://sp-mod.com).
 
-The Forge is where mods were *listed*; the repositories are where they *live*.
-Once the listings are gone the code still exists but becomes very hard to find,
-and everything wrapped around it — which mod needs which, whether something
-works in Fika co-op, and the years of comments where the actual troubleshooting
-happened — disappears completely. This archives all of it.
+The listing site is where mods are *listed*; the repositories are where they
+*live*. When a listing goes, the code still exists but becomes very hard to
+find, and everything wrapped around it — which mod needs which, whether
+something works in Fika co-op, and the years of comments where the actual
+troubleshooting happened — disappears completely. This archives all of it, and
+keeps pulling as the live site changes.
+
+**The Forge is gone.** `forge.sp-tarkov.com` now redirects away, and every
+scraper here reads `sp-mod.com` instead. It runs the same software and kept the
+same mod, addon and list ids, so the archive carried across intact. Two things
+did not come with it, and the archive is now their only copy:
+
+- **Authorship**, for now. sp-mod.com took the catalogue but not the accounts:
+  users reclaim theirs one at a time, so a mod comes back with `owner: null`
+  until its author does. See *Authorship across the migration* below.
+- **The 199 curated mod lists.** The new site started its own from scratch.
+
+Anything the live site no longer lists is kept and labelled *Archive only*
+rather than dropped.
+
+### Authorship across the migration
+
+Authorship arrives gradually, so every refresh reconciles it per author rather
+than trusting either side wholesale — `forge.reconcile_authors()`:
+
+- An author the live site names **wins outright**. Their id becomes whatever
+  sp-mod.com issued, whether or not it matches the Forge's.
+- An author it does not name yet is **kept from the archive**, with their id
+  stamped `-arch`: `27632` becomes `27632-arch`.
+
+The stamp is not decoration. The two sites have separate user id spaces — Forge
+user 27632 is DanW, and sp-mod.com user 27632, if it ever exists, is somebody
+else. Left as a bare number, an archived author would eventually be merged with
+a live stranger who happened to draw the same id. `-arch` cannot collide with
+anything sp-mod.com issues, and it comes off the moment the account is
+reclaimed.
+
+**Name is the join**, because the ids deliberately do not match. Matching per
+author rather than per mod is what lets a lead author reclaim their account
+without deleting a collaborator who has not yet. A reclaimed author who arrives
+without an avatar inherits the mirrored one, so their page does not briefly
+lose its picture.
+
+Links written against the old site still work: `/user/27632/danw` in a
+description or a comment resolves to the archived author's page, since the bare
+number is registered as an alias. If a live sp-mod user ever holds that number,
+they win it — a link carrying an sp-mod id was written against sp-mod.
+
+Each run reports where the migration has got to:
+
+```
+authorship: 143 mod(s) named by the site, 1682 still archive-only
+12 author(s) reclaimed since the last run
+```
+
+An author page shows **Archived profile — not yet reclaimed** while it is in
+that state.
+
+**Author URLs are keyed on the name, not the id** — `user/danw.html`, not
+`user/27632-danw.html`. The id was only ever there for uniqueness, and it is
+the one part of an author that will not hold still during the migration: a URL
+built on it moves when the archive stamps `-arch`, and again when the account
+comes back with a new number. Names move far less often, and 891 of 892 are
+unshared. The exception is two distinct live accounts both called ArchangelWTF,
+so a collision appends the id — the live account keeps the bare name. Every
+numeric author URL the archive published before this gets a redirect stub.
+
+sp-mod.com hands authorship back a mod at a time rather than an account at a
+time, so a partly-reclaimed author is briefly live on some mods and `-arch` on
+others. `build.fold_reclaimed()` merges those into one page on the name, since
+one person should not have two.
 
 **Serve `site/` and open it in a browser:**
 
@@ -732,7 +798,7 @@ Things learned the hard way, worth knowing before changing anything.
 | `build/archive_links.py` | Forge/Hub links rewritten to archive pages |
 | `build/templates.py` | The masthead, the plain listings, and every rendering decision the data carries |
 | `build/emit.py` | The archive as JSON: what the browser actually loads |
-| `build/shell.py` | Every HTML page: the three catalogues, and one per record |
+| `build/shell.py` | Every HTML page: the three catalogues, one per record, and the author URL aliases |
 | `build/assets/render.js` | The markup, ported from `templates.py` |
 
 `data/mods.json`, `data/comments/`, `data/lists.json`, `data/addons.json` and

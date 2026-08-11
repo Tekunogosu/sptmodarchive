@@ -80,6 +80,28 @@ def prose(html, images):
                                                     images or {}, UP), UP)
 
 
+_OLD_SITE = "https://forge.sp-tarkov.com/"
+_LIVE_SITE = "https://sp-mod.com/"
+
+
+def live_url(url):
+    """A stored listing URL, pointed at the site that is actually up.
+
+    `forge_url` holds whatever `detail_url` the API reported when the record
+    was last scraped, so every record captured before the move still names
+    forge.sp-tarkov.com -- which now 301s to a landing page. Rewriting it here
+    rather than waiting for a re-scrape means the link works on the next build
+    instead of the next scrape, and it is safe because sp-mod.com kept the
+    Forge's mod, addon and list ids intact.
+
+    Not applied to user URLs: those ids *were* renumbered. See collect_authors
+    in build.py, which no longer emits one.
+    """
+    if url.startswith(_OLD_SITE):
+        return _LIVE_SITE + url[len(_OLD_SITE):]
+    return url
+
+
 def card(entry):
     """The archive's standard "here is a thing you might install" card.
 
@@ -120,6 +142,8 @@ def mod_detail(mod, repos, images, lookup, addons, comment_count, href):
         badges.append([category["title"], "cat"])
     if mod["origin"] == "community":
         badges.append(["Community submission", "community"])
+    if mod.get("delisted"):
+        badges.append(["Archive only — no longer listed", "warn"])
     for key, label in (("contains_ads", "Contains ads"),
                        ("contains_ai_content", "Contains AI content"),
                        ("cheat_notice", "Cheat notice"),
@@ -159,7 +183,11 @@ def mod_detail(mod, repos, images, lookup, addons, comment_count, href):
             ["License", mod["license"].get("name") or "—"],
             ["GUID", mod.get("guid") or "Not available"],
         ],
-        "forge_url": mod["forge_url"] or "",
+        "forge_url": live_url(mod["forge_url"] or ""),
+        # True once the live site stops listing it. The record is still here --
+        # that is the point of an archive -- but the page says so rather than
+        # offering a link that 404s.
+        "delisted": bool(mod.get("delisted")),
         "sources": source_rows(mod["source_links"], repos),
         "mark": mark(mod["id"], mod["name"], href,
                      [l["url"] for l in mod["source_links"]],
@@ -330,6 +358,8 @@ def addon_detail(addon, parent, repos, images, href):
     badges.append(["Addon", "cat"])
     if addon["detached"]:
         badges.append(["Detached from parent ✗", "bad"])
+    if addon.get("delisted"):
+        badges.append(["Archive only — no longer listed", "warn"])
     for key, label in (("contains_ads", "Contains ads"),
                        ("contains_ai_content", "Contains AI content")):
         if addon["flags"].get(key):
@@ -358,7 +388,8 @@ def addon_detail(addon, parent, repos, images, href):
             ["Published", templates.fmt_date(addon["published_at"]) or "—"],
             ["License", addon["license"].get("name") or "—"],
         ],
-        "forge_url": addon["forge_url"] or "",
+        "forge_url": live_url(addon["forge_url"] or ""),
+        "delisted": bool(addon.get("delisted")),
         "sources": source_rows(addon["source_links"], repos),
         "mark": mark(f"a{addon['id']}", addon["name"], href,
                      [l["url"] for l in addon["source_links"]],
@@ -402,9 +433,9 @@ def author_detail(author, images):
     return {
         "id": author["id"],
         "name": author["name"],
+        "archived": bool(author.get("archived")),
         "avatar": (templates.local_image(author["avatar"], images)
                    if author.get("avatar") else ""),
-        "forge_url": author["forge_url"],
         "downloads": downloads,
         "mods": [person_card(m) for m in author["mods"]],
         "addons": [person_card(a) for a in author["addons"]],
@@ -438,7 +469,8 @@ def list_detail(entry, lookup):
                    "href": "user/" + templates.author_href(owner)}
                   if owner.get("id")
                   else {"name": owner.get("name") or "unknown"}),
-        "forge_url": entry.get("forge_url", ""),
+        "forge_url": live_url(entry.get("forge_url", "")),
+        "delisted": bool(entry.get("delisted")),
         "missing": missing,
         "mods": cards,
     }

@@ -43,7 +43,10 @@ UA = "Mozilla/5.0 (SPT mod archive; personal archival script)"
 
 # The hosts that go away when the Forge does. Everything else is somebody
 # else's infrastructure with its own lifetime.
-FORGE_HOSTS = {"forge-static.sp-tarkov.com", "hub.sp-tarkov.com"}
+# Both eras of the site, because the archive holds images from both:
+# forge-static served the Forge, files.sp-mod.com serves its successor.
+FORGE_HOSTS = {"files.sp-mod.com",
+               "forge-static.sp-tarkov.com", "hub.sp-tarkov.com"}
 
 THUMB_PX = 192          # 2x the largest on-page size (96px on a mod page)
 AVATAR_PX = 96          # avatars render at 40px at most

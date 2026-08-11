@@ -5,8 +5,9 @@ mods -- "install [BigBrain] first", "this conflicts with [SAIN]", years of
 comments answering questions with a link. They point at three sites that are
 all going away:
 
-    https://forge.sp-tarkov.com/mod/902/bigbrain          the Forge
-    https://hub.sp-tarkov.com/files/file/1219-bigbrain/   the Hub before it
+    https://sp-mod.com/mod/902/bigbrain                   the site today
+    https://forge.sp-tarkov.com/mod/902/bigbrain          the Forge before it
+    https://hub.sp-tarkov.com/files/file/1219-bigbrain/   the Hub before that
     https://forge.sp-tarkov.com/list/119138/spt-modlist   a curated list
 
 Every one of them is a dead end on the day this archive starts to matter, even
@@ -34,7 +35,12 @@ from sanitize import OUTBOUND_ATTRS
 # threaded, the same way ARCHIVE_TOTAL is in templates.py.
 LINKS = {}
 
-FORGE_HOSTS = {"forge.sp-tarkov.com"}
+# Both eras. sp-mod.com replaced forge.sp-tarkov.com and kept the same URL
+# shapes *and the same mod ids*, so a link written against either one resolves
+# to the same archived page -- which is why this is one set rather than a
+# migration. (Verified: of the 1,830 mods present on both, every one kept its
+# id.) The old host still appears in thousands of descriptions and comments.
+FORGE_HOSTS = {"sp-mod.com", "forge.sp-tarkov.com"}
 HUB_HOSTS = {"hub.sp-tarkov.com"}
 
 # Where a Forge/Hub fragment lands on our page. Both sites had the same three
@@ -74,8 +80,29 @@ def build_map(mods, mod_lists, mod_href, list_href, addons=(), addon_href=None,
         links[("addon", str(addon["id"]))] = addon_href(addon)
     # Only authors get a /user/ page, so a link to a commenter who published
     # nothing stays pointed at the Forge -- there is nothing here to show.
+    #
+    # Archive-only authors are keyed "27632-arch", but every /user/ link ever
+    # written in a description or a comment says plain "27632" -- those were
+    # all authored on the Forge, whose ids these are. So the bare number is
+    # registered as an alias.
+    #
+    # Live authors are recorded second and therefore win the alias, which is
+    # the right way round: sp-mod.com issued their id, so a link carrying it
+    # was written against sp-mod.com and means them. The collision is possible
+    # rather than common -- the new site's ids start low and the Forge's run to
+    # six figures -- and the alternative is leaving thousands of old links dead
+    # to protect against it.
+    aliases, primary = {}, {}
     for author in authors:
-        links[("user", str(author["id"]))] = author_href(author)
+        key = str(author["id"])
+        primary[key] = author_href(author)
+        stem = key[:-len("-arch")] if key.endswith("-arch") else key
+        if stem != key:
+            aliases.setdefault(stem, author_href(author))
+    for stem, href in aliases.items():
+        links.setdefault(("user", stem), href)
+    for key, href in primary.items():
+        links[("user", key)] = href
     return links
 
 
@@ -102,8 +129,9 @@ def _key(url):
     host = host[4:] if host.startswith("www.") else host
     segments = [s for s in parts.path.split("/") if s]
 
-    # A scheme-less, host-less "/mod/1298/name" can only have meant the Forge:
-    # the Hub kept its mods under /files/.
+    # A scheme-less, host-less "/mod/1298/name" can only have meant the Forge
+    # or its successor: the Hub kept its mods under /files/. Either way the id
+    # is the same, so naming one of them here is enough.
     if not host and segments and segments[0] == "mod":
         host = "forge.sp-tarkov.com"
 

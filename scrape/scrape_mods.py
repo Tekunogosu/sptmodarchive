@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Archive every mod on the Forge into data/mods.json.
+"""Archive every mod on sp-mod.com into data/mods.json.
 
     python3 scrape/scrape_mods.py               # everything (~1,800 mods)
     python3 scrape/scrape_mods.py --spt '4.*'   # only mods matching a filter
@@ -18,9 +18,11 @@ Three passes, because no single endpoint carries everything:
 Per-mod results are cached in data/raw_mods.jsonl keyed by the mod's
 updated_at, so a re-run only refetches mods that actually changed.
 
-If enumeration comes back empty -- which is what a dead Forge looks like --
-the run aborts without writing, so a failed scrape can never blank an
-existing archive.
+If enumeration comes back empty -- which is what a dead site looks like -- the
+run aborts without writing, so a failed scrape can never blank an existing
+archive. A run that *succeeds* is folded into the archive rather than replacing
+it: the site moved from forge.sp-tarkov.com to sp-mod.com, and the successor
+does not serve everything the Forge did. See merge_with_archive().
 """
 
 import argparse
@@ -31,7 +33,28 @@ import time
 from concurrent.futures import ThreadPoolExecutor
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from forge import BASE, PAGE_SIZE, Fetcher, scrub_signed_urls  # noqa: E402
+from forge import (BASE, PAGE_SIZE, Fetcher, is_archived_author,  # noqa: E402
+                   load_archive, merge_with_archive, reconcile_authors,
+                   scrub_signed_urls)
+
+# Fields worth defending against a wholesale emptying -- see
+# forge.merge_with_archive(). Each is something one mod can genuinely lose;
+# none of them is something a thousand mods lose on the same day.
+#
+# `authors` is deliberately absent: it is empty on almost every mod right now,
+# because sp-mod.com is mid-migration and accounts are reclaimed one at a time.
+# Defending it wholesale would freeze authorship at what the Forge said and
+# never notice anyone coming back, so it gets reconcile_authors() instead --
+# per author, every run. See merge_authors() below.
+DEFENDED = ("description_html", "teaser", "source_links", "versions",
+            "category", "license", "guid", "thumbnail",
+            # sp-mod.com serves neither of these yet: /versions accepts
+            # include=dependencies and returns [] for every mod, and
+            # favourites_count comes back 0 across the board. Both are
+            # migration gaps like authorship, and both are only *held* by a
+            # minority of mods -- which is precisely why the guard counts
+            # against the mods that had them rather than against all 1,839.
+            "dependencies", "all_dependencies", "favourites")
 
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(HERE, "data")
@@ -324,6 +347,50 @@ def load_overrides(path):
         return {k: v for k, v in json.load(f).items() if not k.startswith("_")}
 
 
+def merge_authors(records, archived):
+    """Fold each mod's authorship into what the archive already holds.
+
+    Runs before merge_with_archive() so that by the time the generic guard
+    looks at these records, `authors` is already correct and never trips it.
+
+    The counts printed here are the migration's progress bar: "still archive
+    only" is how many mods are waiting on somebody to reclaim an account, and
+    it should fall over the coming weeks. If it ever jumps back up, the site
+    has stopped serving owners again and that is worth seeing.
+    """
+    reclaimed = live = archive_only = 0
+    listed = {r["id"] for r in records}
+
+    for record in records:
+        old = archived.get(record["id"])
+        if old:
+            record["authors"], gained = reconcile_authors(
+                record["authors"], old.get("authors") or [])
+            reclaimed += gained
+        # Counted for every record, including mods the site has only just
+        # added -- they have no archived authorship to reconcile, but they do
+        # have a state worth reporting.
+        if any(not is_archived_author(a) for a in record["authors"]):
+            live += 1
+        elif record["authors"]:
+            archive_only += 1
+
+    # A mod the site no longer lists cannot have its authorship confirmed by
+    # anyone, so its authors are archive-only by definition. They never reach
+    # the loop above -- merge_with_archive() carries those records over whole
+    # -- and without this they would keep bare numeric ids and read as live.
+    for mod_id, old in archived.items():
+        if mod_id not in listed and old.get("authors"):
+            old["authors"], _ = reconcile_authors([], old["authors"])
+            archive_only += 1
+
+    print(f"  authorship: {live} mod(s) named by the site, "
+          f"{archive_only} still archive-only", file=sys.stderr)
+    if reclaimed:
+        print(f"  {reclaimed} author(s) reclaimed since the last run",
+              file=sys.stderr)
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -385,6 +452,21 @@ def main():
         print(f"Applying {len(overrides)} source override(s)", file=sys.stderr)
 
     records = [build_record(m, cache.get(str(m["id"])), overrides) for m in mods]
+
+    # Never a straight overwrite. The site this reads is the Forge's successor
+    # and does not serve everything the Forge did, so a fresh scrape is folded
+    # into the archive rather than replacing it -- see merge_with_archive().
+    archived = load_archive(os.path.join(DATA, "mods.json"), "mods")
+    if archived and not args.limit:
+        merge_authors(records, archived)
+        records, defended = merge_with_archive(records, archived, DEFENDED,
+                                               noun="mod")
+    elif archived:
+        # --limit is for iterating on the scraper, and covers a fraction of the
+        # catalogue. Merging that against the full archive would mark every mod
+        # outside the slice as delisted.
+        print("  --limit set: skipping the archive merge, not writing mods.json",
+              file=sys.stderr)
     # Sorted by id, which never changes, so the file diffs small. Ordering by
     # downloads instead moves a mod's whole record every time two of them swap
     # rank -- turning a handful of changed counters into thousands of changed
@@ -406,6 +488,10 @@ def main():
         "mods": records,
     }
     path = os.path.join(DATA, "mods.json")
+    if args.limit and archived:
+        print(f"\nDry run: {len(records)} mod(s) built, mods.json left alone.",
+              file=sys.stderr)
+        return 0
     with open(path, "w") as f:
         json.dump(out, f, indent=1)
 

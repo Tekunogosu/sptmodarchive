@@ -46,6 +46,14 @@ from html import unescape
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from forge import BASE, Fetcher, LivewireSession, scrub_signed_urls  # noqa: E402
+from forge import (is_archived_author, load_archive,          # noqa: E402
+                   merge_with_archive, reconcile_authors)
+
+# See forge.merge_with_archive(). `authors` is absent for the same reason it is
+# in scrape_mods: sp-mod.com serves `owner: null` on addons too, so authorship
+# is reconciled per author rather than defended wholesale.
+DEFENDED = ("description_html", "teaser", "versions",
+            "source_links", "license", "thumbnail")
 
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(HERE, "data")
@@ -294,6 +302,35 @@ def main():
         return 1
 
     records = [build_record(a, fetched.get(str(a["id"]))) for a in addons]
+
+    # Folded into the archive rather than replacing it, exactly as mods are:
+    # an addon the site stops listing is kept and marked, and a field that
+    # empties out across the whole catalogue is read as an API change.
+    archived = load_archive(os.path.join(DATA, "addons.json"), "addons")
+    if archived and not args.limit:
+        # Same stamping as mods, and it has to be the same: an author with a
+        # mod and an addon is one person, and if only one of the two carried
+        # the "-arch" mark they would come out as two author pages.
+        live = 0
+        for record in records:
+            old = archived.get(record["id"])
+            if old:
+                record["authors"], _ = reconcile_authors(
+                    record["authors"], old.get("authors") or [])
+            if any(not is_archived_author(a) for a in record["authors"]):
+                live += 1
+        for addon_id, old in archived.items():
+            if addon_id not in {r["id"] for r in records} and old.get("authors"):
+                old["authors"], _ = reconcile_authors([], old["authors"])
+        print(f"  authorship: {live} addon(s) named by the site, "
+              f"{len(records) - live} still archive-only", file=sys.stderr)
+
+        records, _ = merge_with_archive(records, archived, DEFENDED,
+                                        noun="addon")
+    elif archived:
+        print("  --limit set: skipping the archive merge, not writing "
+              "addons.json", file=sys.stderr)
+
     # Sorted by id for the same reason mods.json is: the file is committed and
     # re-scraped often, and id is the one key that never moves.
     records.sort(key=lambda r: r["id"])
@@ -305,6 +342,10 @@ def main():
         "addons": records,
     }
     path = os.path.join(DATA, "addons.json")
+    if args.limit and archived:
+        print(f"\nDry run: {len(records)} addon(s) built, addons.json left "
+              f"alone.", file=sys.stderr)
+        return 0
     with open(path, "w") as f:
         json.dump(out, f, indent=1)
 

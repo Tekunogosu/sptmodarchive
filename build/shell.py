@@ -270,3 +270,37 @@ def write_detail_pages(write, mods, addons, mod_lists, authors,
         written += 1
 
     return written
+
+
+MOVED = """<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Moved · SPT Mod Archive</title>
+<link rel="canonical" href="{target}">
+<meta name="robots" content="noindex,follow">
+<meta http-equiv="refresh" content="0; url={relative}">
+<script>location.replace({js})</script>
+</head>
+<body><p>This page has moved to <a href="{relative}">{relative}</a>.</p></body>
+</html>
+"""
+
+
+def moved_page(filename):
+    """A page that used to be here, pointing at its neighbour.
+
+    Only author pages need these. Their URLs used to carry a user id, which the
+    move to sp-mod.com made unstable -- so they are keyed on the name instead,
+    and every numeric URL the archive published before that keeps working.
+
+    `filename` is a sibling in the same directory, which is what both of these
+    always are.
+
+    `noindex,follow` so search engines list the real page rather than the stub,
+    and three redirects for the same reasons the record pages have them: the
+    script is instant, the meta refresh covers scripting being off, and the
+    visible link covers everything else.
+    """
+    return MOVED.format(target=e(filename), relative=e(filename),
+                        js=json.dumps(filename))

@@ -214,14 +214,17 @@ def collect_authors(mods, addons, mod_lists, images):
         entry = authors.setdefault(person["id"], {
             "id": person["id"], "name": person.get("name") or "Unknown",
             "avatar": person.get("avatar") or "",
-            # The Forge 404s on a bare /user/{id} and needs a slug after it --
-            # but any slug will do, since it redirects to the real one. So
-            # this reuses the archive's own slug rather than trying to
-            # reproduce the Forge's, which differs for about 8% of names
-            # (underscores become hyphens, dots vanish, and display names
-            # carrying a moderator title are not slugged with it).
-            "forge_url": (f"https://forge.sp-tarkov.com/user/{person['id']}"
-                          f"/{templates.author_slug(person)}"),
+            # Archive-only until sp-mod.com names them: their account has not
+            # been reclaimed since the move. The id carries the "-arch" stamp
+            # that keeps them from colliding with a live user of the same
+            # number, and the page says so rather than implying they are gone.
+            "archived": templates.is_archived_author(person),
+            # No profile link. These ids are the Forge's, and sp-mod.com
+            # renumbered its users when it took over -- /user/27632 is a 404
+            # there, not DanW. The successor's API serves no authorship at all
+            # (see forge.merge_with_archive), so there is nothing to map them
+            # onto either. An author page is what the archive knows about a
+            # person; it no longer claims to know where they are now.
             "mods": [], "addons": [], "lists": [],
         })
         # First non-empty avatar wins: the same person carries one per record
@@ -265,10 +268,123 @@ def collect_authors(mods, addons, mod_lists, images):
                 "mod_count": entry["mod_count"],
                 "spt_version": entry.get("spt_version", "")})
 
+    authors, remap = fold_reclaimed(authors)
+    # Everything downstream -- author links on a mod page, the byline on a
+    # tile, a list's owner -- reads these ids straight off the records, so the
+    # fold has to reach them too or they link to a page that no longer exists.
+    if remap:
+        for record in list(mods) + list(addons):
+            for person in record["authors"]:
+                if person.get("id") in remap:
+                    person["id"] = remap[person["id"]]
+        for entry in mod_lists:
+            owner = entry.get("owner") or {}
+            if owner.get("id") in remap:
+                owner["id"] = remap[owner["id"]]
+
     for entry in authors.values():
         entry["mods"].sort(key=lambda m: -m["downloads"])
         entry["addons"].sort(key=lambda a: -a["downloads"])
     return authors
+
+
+def author_hrefs(authors):
+    """A filename per author, and the old numeric URLs that should still work.
+
+    `danw.html`, not `27632-danw.html`. The id was only ever in the URL to make
+    it unique, and it is the one part of an author that does not hold still:
+    sp-mod.com renumbered every user, gives accounts back one at a time, and
+    issues a new id when it does. A URL built on it moves twice per author
+    during the migration, for no reader-visible gain.
+
+    Names are very nearly unique -- 891 of 892 are unshared. The exception is
+    two distinct live accounts both called ArchangelWTF (ids 6 and 52282), and
+    they cannot share a page, so a collision falls back to appending the id.
+    Sorted so the outcome does not depend on dictionary order, and so the
+    lowest id keeps the bare name rather than the winner changing each build.
+
+    Returns (hrefs, aliases): hrefs maps author id -> filename, aliases maps
+    the numeric filename the archive used to publish -> the filename now.
+    """
+    by_slug = {}
+    for entry in authors.values():
+        by_slug.setdefault(templates.author_slug(entry), []).append(entry)
+
+    def rank(entry):
+        """Who keeps the bare name: a live account over an archive-only one,
+        then the lower id. Sorted numerically -- comparing these as strings
+        puts "52282" before "6" and hands the name to the wrong account."""
+        stem = str(entry["id"])
+        archived = stem.endswith(templates.ARCH_SUFFIX)
+        if archived:
+            stem = stem[:-len(templates.ARCH_SUFFIX)]
+        return (archived, int(stem) if stem.isdigit() else float("inf"), stem)
+
+    hrefs, aliases = {}, {}
+    for slug, group in by_slug.items():
+        group.sort(key=rank)
+        for index, entry in enumerate(group):
+            hrefs[entry["id"]] = (f"{slug}.html" if index == 0
+                                  else f"{slug}-{entry['id']}.html")
+
+    # Every author page this archive has ever published was "<id>-<slug>.html"
+    # with a Forge id in front. Those URLs are in the wild, so each one gets a
+    # stub pointing at wherever that person lives now. An archive-only author
+    # still carries their Forge id in the "-arch" stamp; a reclaimed one had it
+    # folded away, and fold_reclaimed() hands back the mapping.
+    for entry in authors.values():
+        stem = str(entry["id"])
+        if stem.endswith(templates.ARCH_SUFFIX):
+            stem = stem[:-len(templates.ARCH_SUFFIX)]
+        old = f"{stem}-{templates.author_slug(entry)}.html"
+        if old != hrefs[entry["id"]]:
+            aliases[old] = hrefs[entry["id"]]
+    return hrefs, aliases
+
+
+def fold_reclaimed(authors):
+    """One person, one page -- even mid-reclaim.
+
+    sp-mod.com hands back authorship a mod at a time, not an account at a time,
+    so a person who has reclaimed some of their work appears twice: live on the
+    mods the site now names them on, and "-arch" on the ones it does not yet.
+    chomp, nader and 58 others were in exactly that state on the first run
+    after the move, each with two author pages splitting their own mods
+    between them.
+
+    The name is what says they are the same person, and once it has come back
+    anywhere it has come back -- so the archived half is folded into the live
+    one and the "-arch" id disappears. Their remaining unclaimed mods are
+    listed under the live identity, which is the one that will still be right
+    when the migration finishes.
+
+    Folding here rather than in the scrapers is deliberate: this is the only
+    place that sees mods, addons and lists together, and a reclaim on a mod has
+    to settle the same person's addons too.
+
+    Returns (authors, remap), where remap sends every folded-away id to the one
+    that survived it.
+    """
+    live = {}
+    for entry in authors.values():
+        if not templates.is_archived_author(entry):
+            live.setdefault((entry["name"] or "").strip().casefold(), entry)
+
+    folded, remap = {}, {}
+    for key, entry in authors.items():
+        if not templates.is_archived_author(entry):
+            folded[key] = entry
+            continue
+        target = live.get((entry["name"] or "").strip().casefold())
+        if target is None:
+            folded[key] = entry
+            continue
+        for field in ("mods", "addons", "lists"):
+            target[field].extend(entry[field])
+        if not target["avatar"] and entry["avatar"]:
+            target["avatar"] = entry["avatar"]
+        remap[entry["id"]] = target["id"]
+    return folded, remap
 
 
 # --- the client-side index ----------------------------------------------
@@ -483,6 +599,11 @@ def build(limit=None, base_url=BASE_URL):
     # Built before the link map, which needs to know who has a page here.
     authors = collect_authors(mods, addons, mod_lists, images)
 
+    # And before anything renders a link to one: author URLs are keyed on the
+    # name, and templates.author_href() reads this mapping.
+    href_map, author_aliases = author_hrefs(authors)
+    templates.set_author_hrefs(href_map)
+
     # Dependency links resolve to archive pages where the target was archived,
     # and fall back to the (soon dead) Forge URL where it was not.
     # Links written by mod authors and commenters point at the Forge and at
@@ -610,6 +731,12 @@ def build(limit=None, base_url=BASE_URL):
         {"mod": mod_url, "addon": addon_url,
          "list": list_url, "user": user_url})
     print(f"  {pages} record pages", file=sys.stderr)
+
+    if author_aliases:
+        for old, new in author_aliases.items():
+            write(os.path.join(SITE, "user", old),
+                  shell.moved_page(new))
+        print(f"  {len(author_aliases)} author URL alias(es)", file=sys.stderr)
 
     # --- assets ----------------------------------------------------------
 

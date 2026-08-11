@@ -177,9 +177,9 @@ def page(title, body, *, depth=0, description="", scripts=()):
 {body}
 </main>
 <footer class="site wrap">
-  <p>Archived from forge.sp-tarkov.com. Mod descriptions and comments remain the
-  work of their authors. This archive is unofficial and not affiliated with the
-  SPT team.</p>
+  <p>Archived from sp-mod.com, and from forge.sp-tarkov.com before it. Mod
+  descriptions and comments remain the work of their authors. This archive is
+  unofficial and not affiliated with the SPT team.</p>
 </footer>
 </body>
 </html>
@@ -219,14 +219,49 @@ def mark_button(mod_id, name, href, sources, label=False, deps=(), parent=None):
 
 # --- names and filenames -------------------------------------------------
 
+# Matches scrape/forge.py's ARCH_SUFFIX. An author carrying it is one the
+# archive knows about but sp-mod.com has not named yet -- see
+# forge.reconcile_authors() for how the stamp is applied and removed.
+ARCH_SUFFIX = "-arch"
+
+
+def is_archived_author(author):
+    return str((author or {}).get("id") or "").endswith(ARCH_SUFFIX)
+
+
 def author_slug(author):
     return ("".join(c if (c.isalnum() or c in "-_") else "-"
                     for c in (author.get("name") or "user"))
             .strip("-").lower() or "user")
 
 
+# Filled in once per build by set_author_hrefs(). Author URLs are keyed on the
+# name rather than the id, so they do not move when the id does -- see
+# build.author_hrefs() for why that matters and how collisions are settled.
+AUTHOR_HREFS = {}
+
+
+def set_author_hrefs(mapping):
+    global AUTHOR_HREFS
+    AUTHOR_HREFS = mapping
+
+
 def author_href(author):
-    return f"{author['id']}-{author_slug(author)}.html"
+    """Where an author's page lives, keyed on who they are, not on their id.
+
+    An id is not a stable name for a person here. sp-mod.com renumbered its
+    users, hands accounts back one at a time, and issues a fresh id when it
+    does -- so a URL carrying the id moves twice during the migration: once
+    when the archive stamps "-arch", and again when the account is reclaimed.
+    The name moves far less often, and 891 of 892 authors have one nobody else
+    shares.
+
+    The fallback matters: this is called for people who never reached
+    collect_authors -- a dependency's author, a commenter -- and it has to
+    produce the same string the mapping would.
+    """
+    known = AUTHOR_HREFS.get(author.get("id"))
+    return known if known else f"{author_slug(author)}.html"
 
 
 def addon_href(addon):

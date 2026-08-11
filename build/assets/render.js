@@ -216,11 +216,17 @@
         ' rel="noopener noreferrer" title="' + esc(record.download.title) + '"' +
         ' aria-label="' + esc(record.download.title) + '">' + DOWNLOAD_ICON + "</a>"
       : "";
-    var forge = record.forge_url
-      ? '<p class="forgelink"><a href="' + esc(record.forge_url) + '" target="_blank"' +
-        ' rel="noopener noreferrer">Original Forge page</a>' +
-        ' <span class="label">offline after shutdown</span></p>'
-      : "";
+    /* Where this is listed now. A delisted record has no live page to offer,
+     * so it says that instead of linking somewhere that 404s -- the archive
+     * holding something the site no longer does is the whole point, not an
+     * error to apologise for. */
+    var forge = record.delisted
+      ? '<p class="forgelink"><span class="label">No longer listed on ' +
+        'sp-mod.com — kept from the original Forge archive</span></p>'
+      : (record.forge_url
+        ? '<p class="forgelink"><a href="' + esc(record.forge_url) + '" target="_blank"' +
+          ' rel="noopener noreferrer">View on sp-mod.com</a></p>'
+        : "");
     return '<div class="splitcols">' +
       '<section class="panel"><div class="factshead"><h2>Details</h2>' +
       (record.spt ? badge(record.spt, "spt") : "") + "</div>" +
