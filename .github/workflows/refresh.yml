@@ -3,10 +3,10 @@ name: Refresh archive
 # Two halves of the archive go stale on different clocks, so one scheduled run
 # does both, in the order their data depends on:
 #
-#   scrape_mods.py    the Forge listings, which exist only until it shuts down
+#   scrape_mods.py    the sp-mod.com listings, which last as long as it does
 #   scrape_addons.py  the addons published against those mods
 #   fetch_images.py   thumbnails for whatever the two above just added
-#   repo_status.py    the source repositories, which outlive it
+#   repo_status.py    the source repositories, which outlive any listing site
 #
 # Mods go first because data/mods.json is the spine: everything after reads it.
 # Addons follow, then images, which mirror the thumbnails of both and so need
@@ -14,13 +14,19 @@ name: Refresh archive
 # mods.json, so a mod added this run has its repository checked in the same run
 # rather than hours later.
 #
-# AFTER THE FORGE SHUTS DOWN: delete the "Scrape the Forge", "Scrape addons"
-# and "Mirror new images" steps, and drop data/mods.json, data/raw_mods.jsonl,
-# data/addons.json and data/images from the commit step. Only repo_status.py
-# avoids sp-tarkov.com entirely, so it is the one that keeps running forever.
+# THE SITE HAS MOVED ONCE ALREADY. forge.sp-tarkov.com shut down and
+# sp-mod.com took over its catalogue, keeping the same API and the same mod
+# ids -- so this workflow needed only a new hostname. What did not come across
+# was authorship and the curated lists, which is why every scrape is *merged*
+# into the archive rather than written over it. See forge.merge_with_archive().
+#
+# IF THIS SITE GOES TOO: the scrapers abort without writing when enumeration
+# comes back empty, so these steps become no-ops rather than hazards and can be
+# left in place. Only repo_status.py contacts no listing site at all, so it is
+# the one that keeps producing new information indefinitely.
 on:
   schedule:
-    # Hourly, with the shutdown approaching.
+    # Hourly.
     #
     # Read this as the earliest a run may start, not when it will. schedule: is
     # best-effort and minute 0 is the most contended slot on GitHub's scheduler:
@@ -70,17 +76,17 @@ jobs:
       # checkout above already restored it: this run refetches only the mods
       # whose updated_at moved, rather than all ~1,800 of them. That is what
       # makes an hourly schedule defensible against a dying server.
-      - name: Scrape the Forge
+      - name: Scrape the mod site
         # Never fatal. scrape_mods.py aborts without writing when enumeration
         # comes back empty or short, so the worst case is that this run
         # publishes the mod data already in the repo. That is also exactly what
-        # every run looks like once the Forge is gone, and it must not stop the
-        # repository status below from refreshing.
+        # every run looked like while forge.sp-tarkov.com was going dark, and it
+        # must not stop the repository status below from refreshing.
         continue-on-error: true
         run: python3 scrape/scrape_mods.py
 
       # Same reasoning as above: aborts without writing rather than truncating,
-      # so a dead Forge republishes the addons already in the repo. There is no
+      # so a dead site republishes the addons already in the repo. There is no
       # fetch cache here -- the whole catalogue is ~160 requests -- so this is
       # a full re-scrape every run, at about a minute.
       - name: Scrape addons
@@ -95,7 +101,7 @@ jobs:
 
       # Only downloads what the manifest does not already have, so a normal run
       # fetches the handful of thumbnails belonging to mods and addons added
-      # since the last one. These images live on forge-static.sp-tarkov.com and
+      # since the last one. These images live on the listing site's own host and
       # are the part of the archive that cannot be re-fetched later.
       - name: Mirror new images
         continue-on-error: true
@@ -126,8 +132,12 @@ jobs:
 
           # A maintainer may have pushed while this ran. Rebase onto them
           # rather than clobbering; if that conflicts, drop this run's commit
-          # -- the data is regenerated from scratch every time anyway, so the
-          # next run fixes it. Never force-push a shared branch.
+          # and let the next one redo it. That is safe, but no longer because
+          # the data is regenerated from scratch -- it is not, it is merged
+          # into whatever is committed. It is safe because the next run reads
+          # the committed archive as its baseline and folds a fresh scrape into
+          # that, so a dropped commit costs one hour of freshness and nothing
+          # else. Never force-push a shared branch.
           if ! git pull --rebase --autostash origin "${GITHUB_REF_NAME}"; then
             git rebase --abort || true
             echo "::warning::Rebase conflicted; skipping this commit."

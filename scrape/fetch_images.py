@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Mirror the images the Forge hosts, so they survive its shutdown.
+"""Mirror the images the mod site hosts, so they survive it.
 
     python3 scrape/fetch_images.py              # thumbnails + avatars
     python3 scrape/fetch_images.py --embedded   # also images inside descriptions
@@ -8,7 +8,7 @@
 
 Only images on sp-tarkov hosts are mirrored by default, and the reason is
 simply which ones are about to disappear. Mod thumbnails and author avatars
-live on forge-static.sp-tarkov.com and die with the Forge; the thousands of
+live on the listing site's own host and die with it; the thousands of
 screenshots embedded in mod descriptions sit on imgur, ibb, and GitHub, which
 have their own lifetimes and come to ~3.4 GB. Those are available behind
 --embedded for anyone who wants them, but they do not belong in a git repo by

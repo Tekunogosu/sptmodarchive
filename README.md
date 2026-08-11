@@ -106,9 +106,10 @@ mods that nothing else preserves. For each one:
 - author notices: contains ads, AI content, cheat warnings, profile binding
 - **the comment threads**, with authors, timestamps, likes, and reply nesting
 
-Plus the Forge's **user-curated mod lists** — 199 of them, each a set of mods
-somebody ran together on a stated SPT version. That curation exists nowhere
-else: no repository records which mods work as a pack.
+Plus the **user-curated mod lists** — 199 captured from the Forge, each a set
+of mods somebody ran together on a stated SPT version. That curation exists
+nowhere else: no repository records which mods work as a pack, and sp-mod.com
+started its own from scratch, so these 199 survive only here.
 
 And the **addons** — 80 of them across 40 parent mods, the Forge's second
 content type. An addon is a file published *against* one mod, most often the
@@ -117,12 +118,13 @@ mod endpoint, they are nobody's repository, and mod descriptions already link
 to 37 of them. Each keeps its description, its full version history, the mod
 version each release was built for, and **its source repository and license,
 which exist only in the page HTML** — the addon API exposes neither, and the
-repository is the part that survives the shutdown. One is *detached* — the
+repository is the part that outlives any listing site. One is *detached* — the
 Forge's word for an addon whose parent mod was taken down, which outlives what
 it extends.
 
 And the images: mod thumbnails and author avatars are mirrored locally, because
-they live on `forge-static.sp-tarkov.com` and die with the site.
+they live on the listing site's own host — `files.sp-mod.com` now,
+`forge-static.sp-tarkov.com` before it — and die with it.
 
 Everything lands in `data/mods.json`, `data/comments/*.json`, `data/lists.json`,
 `data/addons.json` and `data/images/`. The site is rendered from those files, so
@@ -168,20 +170,34 @@ mostly unattended.
 handshake against one known mod in about ten seconds. If it fails, the Forge
 changed something and the parser needs fixing — don't start a multi-hour run.
 
-**Never run two scrapers against the Forge at once.** They compete for the same
-300 requests/minute and trigger 429s; sequential finishes sooner.
+**Never run two scrapers at once.** They compete for the same 300
+requests/minute and trigger 429s; sequential finishes sooner.
 
-**As shutdown approaches, invert the priorities.** Mod data takes a minute to
-re-pull at any time, but comments take hours and get exactly one chance.
-Finishing the pre-4.x comment pass matters more than fresh download counts.
-
-**After the Forge shuts down, drop steps 1–4.** `repo_status.py` and `build.py`
-never contact sp-tarkov.com, so they keep working indefinitely — which is the
-whole point: the listings die, the repositories do not.
-
-A dead Forge cannot corrupt the archive. If enumeration returns nothing, or
+**A dead site cannot corrupt the archive.** If enumeration returns nothing, or
 returns only part of the catalogue, `scrape_mods.py` aborts *without writing*.
-Running it after shutdown refuses rather than blanking your data.
+That is what saved the archive when forge.sp-tarkov.com went dark: runs against
+it simply refused rather than blanking the data.
+
+**A live site cannot quietly hollow it out either.** A successful run is merged
+into the archive, not written over it — `forge.merge_with_archive()`. A field
+that comes back empty on a quarter of the records that had it is read as an API
+change and the archived values are kept, loudly:
+
+```
+!! all_dependencies came back empty on 161 of the 169 mods that had it (95%).
+   Reading that as an API change, not as data: keeping the archived values.
+```
+
+That threshold counts against *the records that had the field*, not against the
+catalogue. Measured the other way it misses exactly this case: only 169 mods
+ever declared a dependency, so losing every one of them is under 9% of 1,840 —
+which is how the first run after the move to sp-mod.com deleted every
+dependency in the archive before the guard was fixed.
+
+Anything the live site no longer lists is kept and marked `delisted`, and shows
+an *Archive only — no longer listed* badge. `repo_status.py` and `build.py`
+never contact a listing site at all, so they keep working whatever happens to
+one.
 
 Failures are never cached either. A mod that returns a 500 stays in the queue
 for next time instead of being recorded as having no comments — so re-running
@@ -210,7 +226,8 @@ expecting `build.yml` to notice would publish nothing.
 **Images are fetched on the schedule too**, which is why the workflow installs
 Pillow. Only missing files are downloaded, so a normal run picks up the few
 thumbnails belonging to mods and addons added since the last one — and those
-files, unlike everything else here, cannot be re-fetched after the shutdown.
+files, unlike everything else here, cannot be re-fetched once the site hosting
+them goes.
 
 **Nothing here needs a personal access token.** `repo_status.py` runs on the
 built-in `GITHUB_TOKEN`, which reads public repository data at 1,000
@@ -220,10 +237,11 @@ requests/hour — against roughly 26 GraphQL calls and 21 REST calls per run. Th
 **The fetch cache is what makes an hourly schedule polite**, and it is committed
 for exactly that reason. `data/raw_mods.jsonl` holds one raw payload per mod
 keyed by `updated_at`, so a run refetches only what changed; without it every
-run would be ~3,600 requests against a dying server, twenty-four times a day.
-Committing it means the checkout restores it, with no Actions cache to expire
-or evict —
-and it stops being "cheap to rebuild" the moment the Forge goes offline.
+run would be ~3,600 requests, twenty-four times a day. Committing it means the
+checkout restores it, with no Actions cache to expire or evict — and it stops
+being "cheap to rebuild" the moment a listing site goes offline. It holds the
+raw payloads behind `mods.json`, including fields the archive does not keep, so
+it is worth more than its size suggests.
 
 **It is compacted on every run** to one line per mod, sorted by id. Records are
 *appended* as they arrive, which is what makes an interrupted run resumable,
@@ -232,17 +250,17 @@ compaction runs after the fetching, so both properties hold: crash-safe during
 the run, and a clean line-per-mod diff at the end. In practice a run that
 changes 20 mods adds roughly 40 KB to the repository.
 
-**A failed scrape is not a failed run.** All three Forge-facing steps are
+**A failed scrape is not a failed run.** All three site-facing steps are
 `continue-on-error`, because `scrape_mods.py` and `scrape_addons.py` abort
 without writing rather than truncating the archive — so the worst case is a run
-that republishes the data already committed. That is also what every run will
-look like after the shutdown, and it must not stop the repository status from
-refreshing.
+that republishes the data already committed. That is exactly what every run
+looked like while forge.sp-tarkov.com was going dark, and it must not stop the
+repository status from refreshing.
 
-**When the Forge goes offline**, delete the *Scrape the Forge*, *Scrape addons*
-and *Mirror new images* steps from `refresh.yml`, and drop `data/mods.json`,
-`data/addons.json` and `data/images` from the commit step. `repo_status.py` is
-the one step that never touches sp-tarkov.com, and it keeps working untouched. Two hours is also
+**If the site goes down again**, nothing needs deleting: those steps become
+no-ops rather than hazards, because a scrape that cannot enumerate refuses to
+write. `repo_status.py` is the one step that contacts no listing site at all,
+and it keeps working untouched. Two hours is also
 far more often than dead repositories need checking — `0 6,18 * * *` is a
 reasonable cadence to fall back to.
 
@@ -265,17 +283,18 @@ tree of JSON that the scripts in `site/assets/` turn into the rest of each one.
 site/index.html              the catalogue — search, filter, sort
 site/addons.html             the addon catalogue — search, sort
 site/lists.html              index of curated mod lists
-site/mod/<id>-<slug>.html    one page per mod            (1,830)
+site/mod/<id>-<slug>.html    one page per mod            (1,840)
 site/addon/<id>-<slug>.html  one page per addon             (80)
-site/user/<id>-<slug>.html   one page per author           (889)
-site/list/<id>-<slug>.html   one page per list             (199)
+site/user/<slug>.html        one page per author           (892)
+site/list/<id>-<slug>.html   one page per list             (200)
 site/all-mods.html           plain list, works without JavaScript
 site/all-addons.html         the same, for addons
 site/data/index.json         the catalogue          (1.7 MB)
 site/data/facets.json        categories and SPT versions, with counts
-site/data/mod/<id>.json      one mod's detail       (1,830 files, 11 MB)
-site/data/comment/<id>.json  one mod's comments     (1,702 files, 32 MB)
+site/data/mod/<id>.json      one mod's detail       (1,840 files, 11 MB)
+site/data/comment/<id>.json  one mod's comments     (1,702 files, 33 MB)
 site/data/user|list|addon/   the same, per record
+site/user/<id>-<slug>.html   redirect stubs for the old id-based author URLs
 site/sitemap.xml             every page, with real last-modified dates
 site/robots.txt              points crawlers at the sitemap
 site/assets/                 one stylesheet, a dozen small scripts, images
@@ -293,14 +312,14 @@ rendered HTML with every comment the mod ever received baked in.
 
 That 2.5 KB matters more than its size. It is what a crawler, a link preview or
 a browser with scripting off can read without executing anything, and it is
-per-URL. Serving all 1,830 mods from one shared `m.html?id=N` shell would have
+per-URL. Serving all 1,840 mods from one shared `m.html?id=N` shell would have
 been simpler and smaller, but every one of those URLs would have answered with
 the same generic title — which, for an archive whose whole job is to still be
 findable once the Forge is gone, is the wrong trade.
 
-**The whole site is 59 MB, down from 110 MB**, and a mod page costs about 6 KB
+**The whole site is 69 MB, down from 110 MB**, and a mod page costs about 6 KB
 of JSON instead of 45 KB of HTML — with its comments fetched only if you open
-that tab. Comments are 32 MB of the total and were previously downloaded in
+that tab. Comments are 33 MB of the total and were previously downloaded in
 full every time anyone opened any mod.
 
 **The index** loads the whole catalogue as one file, so filtering after that is
@@ -319,12 +338,12 @@ Versions, Comments — with the key facts and every source repository side by
 side above them. **Each version links to the release that shipped it**, matched
 by version number against the repository's tags, and the Source panel's
 download goes to the latest release's actual file rather than a listing page.
-Both point at the repository rather than at the Forge, so they keep working
-after the shutdown — the groundwork for falling back to repository data
-entirely. The facts include the mod's **GUID**, the identifier a config
+Both point at the repository rather than at the listing site, so they keep
+working when a listing goes — the groundwork for falling back to repository
+data entirely. The facts include the mod's **GUID**, the identifier a config
 file or another mod's dependency list names it by, monospaced and given its own
-row because it is meant to be copied verbatim. Only 741 of 1,827 mods declare
-one; the Forge shows "Not Available" for the rest, and so does this. Dependencies are cards showing thumbnail, name and teaser, each addable
+row because it is meant to be copied verbatim. Only 750 of 1,840 mods declare
+one; the listing site shows "Not Available" for the rest, and so does this. Dependencies are cards showing thumbnail, name and teaser, each addable
 on its own. Comments are sorted (newest, oldest, most liked, most replies) and
 searchable, filtering whole threads and highlighting matches, with replies
 attached to the comment they answer.
@@ -505,7 +524,7 @@ was verified against the live site rather than assumed.
 
 ### `scrape/fetch_images.py`
 
-Mirrors the images the Forge hosts, so they survive its shutdown.
+Mirrors the images the mod site hosts, so they survive it.
 
 ```bash
 python3 scrape/fetch_images.py              # thumbnails + avatars
@@ -513,9 +532,10 @@ python3 scrape/fetch_images.py --embedded   # also images inside descriptions
 python3 scrape/fetch_images.py --no-resize  # keep originals instead of WebP
 ```
 
-Only sp-tarkov hosts are mirrored, and the reason is simply which images are
-about to disappear. Mod thumbnails and author avatars live on
-`forge-static.sp-tarkov.com` and die with the Forge. The ~3,400 screenshots
+Only the listing site's own hosts are mirrored, and the reason is simply which
+images are about to disappear. Mod thumbnails and author avatars live on
+`files.sp-mod.com` (and `forge-static.sp-tarkov.com` before it) and die with
+whichever site is serving them. The ~3,400 screenshots
 embedded in descriptions sit on imgur, ibb, and GitHub — roughly **3.4 GB**, on
 hosts with their own lifetimes — so they stay as external links by default.
 
@@ -599,9 +619,9 @@ land in `data/repos.json` and appear on each mod page as last commit, latest
 release, stars, and whether the author archived the repo.
 
 **Every release tag is recorded, not just the latest.** That is what lets a
-mod page link each of its versions to the release that shipped it — the
-Forge's own per-version download dies with the site, while the tag on the
-repository does not. **6,664 tags across 1,210 repositories**, and 73% of
+mod page link each of its versions to the release that shipped it — a listing
+site's own per-version download dies with it, while the tag on the repository
+does not. **6,664 tags across 1,210 repositories**, and 73% of
 archived versions resolve to one. The rest were never tagged upstream: the
 author shipped to the Forge without cutting a release, which no amount of
 scraping fixes.
@@ -747,19 +767,21 @@ Things learned the hard way, worth knowing before changing anything.
 - **Rate limit is 300 requests/minute.** The scraper sleeps 1s per worker
   between requests, landing near 240/min with headroom for retries, and honours
   `Retry-After` when it still gets a 429.
-- **`updated_at` is a database timestamp, not a mod update.** The Forge
-  bulk-touches rows during migrations: 1,510 of 1,826 mods share just three
-  such days, and the Forge's own pages display that date too. Anywhere the
-  archive says when a mod last changed, it uses the newest version's publish
-  date instead. The raw field is still kept in `mods.json`.
+- **`updated_at` is a database timestamp, not a mod update.** These sites
+  bulk-touch rows during migrations, and the move to sp-mod.com is the clearest
+  case yet: **1,688 of 1,840 mods now share a single `updated_at`**, the day the
+  catalogue was imported, and 1,771 share just three such days. The listing
+  pages display that date too. Anywhere the archive says when a mod last
+  changed, it uses the newest version's publish date instead. The raw field is
+  still kept in `mods.json`.
 - **SPT constraints are ranges, not versions.** `~4.0 <4.1.0`, `>=3.8.0 <3.9`,
   `4.0.x`, `4.1.` and a bare `*` all occur. Only the first version in the
   string names the line a mod targets; splitting on "." lets the upper bound
   bleed in and produces labels like "4.0 <4". `spt_label()` normalises them.
 - **Version and category counts are of distinct mods, never sums.** A mod
   supporting 4.0.13 and 4.1.0 belongs to both, so per-version counts cannot be
-  added: 704 mods support some 4.x and 1,409 some 3.x, overlapping by 287 —
-  which is exactly the 1,826 total.
+  added: 715 mods support some 4.x and 1,415 some 3.x, overlapping by 290 —
+  which is exactly the 1,840 total.
 - **`repos.json` is written for small diffs**, because CI commits it every
   hour. Keys are sorted so a run that checks hosts in a different order does not
   reshuffle the file, and freshness is recorded once at the top rather than per

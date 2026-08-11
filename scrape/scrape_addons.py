@@ -8,7 +8,7 @@ Addons are the Forge's second content type: a file published *against* a
 particular mod, most often the Fika-sync shim that makes someone else's mod
 work in co-op. They are listed nowhere in the mod API, they have their own
 pages, and nothing else preserves them -- mod descriptions already link to
-37 of them, and every one of those links dies with the site.
+37 of them, and every one of those links dies with whichever site is hosting.
 
 Three endpoints, the same shape as the mod scraper:
 

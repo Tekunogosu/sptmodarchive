@@ -117,7 +117,7 @@ def _key(url):
     """Which archived page a URL is asking for, or None if it isn't ours.
 
     Download URLs resolve to the mod's page rather than being left alone: the
-    file behind them dies with the site, and the page carries the repository
+    file behind them dies with whichever site served it, and the page carries the repository
     the mod actually lives in, which is the closest thing to the download that
     will still exist.
     """

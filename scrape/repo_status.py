@@ -7,7 +7,7 @@
 
 Reads data/mods.json and data/addons.json, and talks **only to the code
 hosts** -- never to the Forge -- so this keeps working indefinitely after
-forge.sp-tarkov.com goes offline. That is the point of it: the Forge listing is
+the listing site goes offline. That is the point of it: the listing is
 what disappears, while the repositories are what the archive ultimately exists
 to point at.
 

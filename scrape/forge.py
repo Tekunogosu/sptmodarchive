@@ -12,7 +12,7 @@ Two very different channels live here:
                 so reading them means impersonating the browser handshake.
                 See scrape_comments.py for what that costs us.
 
-Both retry on the failure modes the Forge actually exhibits (429s and 5xx
+Both retry on the failure modes the site actually exhibits (429s and 5xx
 under load) and count what they could not recover, because a dropped request
 that returns empty data is indistinguishable from a mod with no data.
 """
@@ -136,7 +136,7 @@ class LivewireSession:
     interface, so every piece is discovered from the page rather than assumed:
 
       - the update endpoint carries a build hash (/livewire-<hash>/update)
-        that changes when the Forge redeploys
+        that changes when the site redeploys
       - the CSRF token must match the session cookie issued by the same fetch
       - the component snapshot embeds a signed checksum, so it cannot be
         synthesised, only replayed

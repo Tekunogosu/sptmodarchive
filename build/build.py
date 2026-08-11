@@ -8,21 +8,23 @@ Inputs, all optional except the first:
 
     data/mods.json        scraped mod records
     data/comments/*.json  one archived comment thread set per mod
-    community/*.json      mods contributed by pull request after the shutdown
+    community/*.json      mods contributed by pull request
 
-Output is a static site of seven HTML shells plus a tree of JSON under
-site/data/, which the scripts in site/assets/ turn into pages. It is still a
-plain static site -- nothing here needs a runtime, a database or a build step
-at request time -- but it does need to be *served*, because a browser will not
-fetch JSON from file://. To read a built copy locally:
+Output is a static site: three catalogue pages at the root, one small page per
+mod, addon, list and author at the URL that record has always had, and a tree
+of JSON under site/data/ that the scripts in site/assets/ turn into the rest of
+each page. Nothing here needs a runtime, a database or a build step at request
+time -- but it does need to be *served*, because a browser will not fetch JSON
+from file://. To read a built copy locally:
 
     python3 -m http.server -d site 8080
 
-The build this replaced wrote about 3,000 HTML files and 110 MB, most of it
-the same masthead 3,000 times and every mod's entire comment history inlined
-into its page whether or not anyone opened it. Every URL that build published
-still resolves: site/mod/, addon/, list/ and user/ are now redirect stubs
-carrying the page's real title and description.
+The build this replaced wrote the same pages at the same URLs, but each carried
+a full copy of the masthead and every comment the mod had ever received,
+whether or not anyone opened them: 110 MB against 69 MB, and 45 KB per mod page
+against about 2.5 KB. No URL changed, apart from author pages -- those are now
+keyed on the name rather than a user id that the move to sp-mod.com made
+unstable, and every id-based URL gets a redirect stub.
 """
 
 import argparse
@@ -117,7 +119,8 @@ def load_images():
     """URL -> local filename, for images mirrored off the Forge.
 
     Absent until fetch_images.py runs, in which case pages simply keep
-    pointing at the original URLs -- correct today, broken after shutdown.
+    pointing at the original URLs -- correct today, broken the moment the site
+    hosting them goes.
     """
     path = os.path.join(DATA, "images.json")
     if not os.path.exists(path):
