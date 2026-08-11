@@ -338,8 +338,11 @@ def version_blocks(versions, releases, images, limit=40):
         if repo_notes:
             block["repo_notes"] = repo_notes
             block["repo_label"] = release.get("host_label") or "Repository"
-        if release.get("url"):
-            block["download"] = release["url"]
+        # The file where the host names one, its release page otherwise. This
+        # is what the version's download icon points at and what gets pinned
+        # into a collection, so the two always mean the same thing.
+        if release.get("asset") or release.get("url"):
+            block["download"] = release.get("asset") or release["url"]
         blocks.append(block)
     return blocks
 

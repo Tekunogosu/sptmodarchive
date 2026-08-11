@@ -336,7 +336,9 @@ a reload. Clicking any tag or author name filters by it.
 **Each mod page** splits into tabs — Description, Addons, Dependencies,
 Versions, Comments — with the key facts and every source repository side by
 side above them. **Each version links to the release that shipped it**, matched
-by version number against the repository's tags, and the Source panel's
+by version number against the repository's tags — to the release's own file
+where the archive has recorded it, to its page otherwise — and carries a `+`
+that adds the mod to your collection pinned to that release. The Source panel's
 download goes to the latest release's actual file rather than a listing page.
 Both point at the repository rather than at the listing site, so they keep
 working when a listing goes — the groundwork for falling back to repository
@@ -406,8 +408,34 @@ stating plainly:
 
 Mark mods from the index, a mod page, a list page, or `all-mods.html`. Adding a
 mod also adds the dependencies its current version needs, shown indented under
-it in the drawer. The drawer (top right) lists what you have, links each mod to
-its releases page, and copies either every source URL or a share link.
+it in the drawer. The drawer (top right) lists what you have, links each row to
+its file, and copies either every download URL or a share link.
+
+**Pinning a version.** The `+` beside each release in a mod's Versions tab adds
+that mod at that release. A pin is a property of the one row a mod already has,
+not a second row — a mod cannot be in a collection twice, and "1.4.2 and also
+1.5.0" is not an install list, it is a conflict. So exactly one of a mod's
+version buttons is lit at a time: pressing another moves the pin, pressing the
+lit one removes the mod, because that button is how it got there.
+
+What a pin changes is which release the row means. **Every row shows its
+version** — accented where it was pinned, faint where the row is simply
+following the latest. Same shape, because both answer "which version";
+different weight, because only one of them is a decision. A pinned 1.4.2 stays
+1.4.2; a floating one is today's answer and will change without asking.
+
+That difference is also why the two are stored differently. An unpinned row
+means "whatever ships today", so its version *and* its download are read fresh
+from `data/latest.json` — 1,920 records, fetched once when the drawer opens and
+never on page load. A pin means one release, whose file never changes again, so
+it is stored on the entry. A pin never falls through to the newest release —
+not every archived version could be matched to a tag upstream, and handing over
+today's file for a row that says 1.2.0 would be the wrong build. Those rows get
+the release page instead.
+
+**Copy download URLs** hands you that list, one line per row: the file itself
+wherever the archive knows it, a releases page where it does not. `Copy source
+URLs` on the index is a different button and still copies repositories.
 
 **Share links** encode the mod ids into the URL itself, choosing whichever of
 three encodings is shortest: a delta-varint list for small collections, a
@@ -419,6 +447,11 @@ Ids are encoded, never list positions — positions shift whenever the catalogue
 changes and would silently corrupt every link ever shared. Opening a link with
 an empty collection imports it silently; otherwise it asks whether to merge or
 replace, so a link can never destroy somebody's list.
+
+A share link carries ids and nothing else, so **pinned versions do not travel**:
+a shared collection arrives at whatever ships today. Encoding them would mean a
+third block in the payload holding a version string per mod, which is variable
+length where everything in there today is a packed integer.
 
 ---
 
@@ -629,10 +662,26 @@ scraping fixes.
 Only the tag and its date are stored. A release page URL is derivable from the
 repository and the tag, so keeping 40 URLs for each of 1,400 repositories would
 add megabytes to a file CI commits twenty-four times a day. **Assets are the
-exception** — fetched for the latest release only, because their filenames are
-derivable from nothing and the latest is the one a reader wants to install.
-That is the direct download in the Source panel: 1,122 mods reach an actual
-file, 147 fall back to a releases page, 43 have neither.
+exception** — their filenames are derivable from nothing. The latest release
+gives up its assets in full, URL and size included, because it is the one a
+reader is most likely to install: that is the direct download in the Source
+panel, where 1,122 mods reach an actual file, 147 fall back to a releases page
+and 43 have neither.
+
+**The five newest releases also give up their asset filenames**, which is what
+lets a collection pin an older version to a file rather than to a landing page.
+Names alone — every host here builds the URL as
+`<repo>/releases/download/<tag>/<name>`, so `templates.asset_url()` rebuilds
+it, and 6,700 stored URLs become 6,700 stored names. GitLab is the exception
+and stores whole URLs, because its asset links point wherever the author put
+them.
+
+Five per run, but not five forever: `carry_release_files()` merges each run
+into what the last one learned, so coverage grows with every release cut rather
+than sliding forward and forgetting. A fresh read always wins over the cache,
+since a release's assets can be replaced after publication. If the accumulated
+set ever outgrows its usefulness, trimming it is a pass over `data/repos.json`
+and nothing else — no re-scrape.
 
 The cap is 40 releases per repository, which only 18 of them reach — the mean
 is 5. It was 20 at first, and raising it recovered 177 version links for about

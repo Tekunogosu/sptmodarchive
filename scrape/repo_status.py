@@ -96,16 +96,24 @@ def parse_repo(url):
 
 # --- GitHub (GraphQL) ----------------------------------------------------
 
-# Two things are asked of releases, and they cost very differently.
+# Three things are asked of releases, and they cost very differently.
 #
 # Every tag is wanted, so a mod version can be linked to the release that
 # shipped it -- but only the tag and its date are stored, because a release
-# page URL is derivable from the repository and the tag, and storing 20 URLs
+# page URL is derivable from the repository and the tag, and storing 40 URLs
 # per repository would add megabytes to a file CI commits twelve times a day.
 #
-# Assets are fetched for the latest release alone. Their filenames are not
-# derivable from anything, and the latest is the one a reader actually wants
-# to download.
+# Assets are fetched in full for the latest release: their size and download
+# URL, because that is the release a reader is most likely to install.
+#
+# The five newest releases additionally give up their asset *filenames*, which
+# is what lets a collection pin an older version to a file rather than to a
+# landing page. Names alone, because on every host here the download URL is
+# `<repo>/releases/download/<tag>/<name>` -- see templates.asset_url(). Five,
+# because a name is ~26 bytes and 40 of them per repository is the megabyte
+# the paragraph above is about. They accumulate: `carry_release_files()` keeps
+# what earlier runs learned, so the covered set grows with every release cut
+# rather than being capped at five forever.
 REPO_FIELDS = """
     nameWithOwner isArchived stargazerCount pushedAt url
     defaultBranchRef { name target { ... on Commit {
@@ -113,11 +121,62 @@ REPO_FIELDS = """
     latestRelease { tagName publishedAt url descriptionHTML
         releaseAssets(first: 5) { nodes { name downloadUrl size } } }
     releases(first: 40, orderBy: {field: CREATED_AT, direction: DESC}) {
-        nodes { tagName publishedAt } }"""
+        nodes { tagName publishedAt } }
+    recent: releases(first: 5, orderBy: {field: CREATED_AT, direction: DESC}) {
+        nodes { tagName releaseAssets(first: 3) { nodes { name } } } }"""
 
 PINNED_FIELD = """
     pinned: ref(qualifiedName: %s) { name target { ... on Commit {
         oid committedDate messageHeadline url } } }"""
+
+
+def with_files(releases, by_tag):
+    """Attach asset filenames to the release rows we have them for.
+
+    `by_tag` covers the newest few releases only, so most rows come back
+    untouched. A row with no files is not given an empty list -- an absent key
+    is a byte cheaper across thousands of rows, and reads correctly as "not
+    known" rather than "this release shipped nothing".
+
+    GitLab is the exception and stores whole URLs here, because its asset links
+    are arbitrary rather than built from the tag. templates.asset_url() tells
+    the two apart by looking for a scheme.
+    """
+    for release in releases:
+        files = by_tag.get(release["tag"]) or []
+        if files:
+            release["files"] = files
+    return releases
+
+
+def carry_release_files(old, new):
+    """Keep the filenames earlier runs learned, for releases now out of reach.
+
+    Only the five newest releases are asked for their assets, so a repository
+    that has cut ten releases since the archive started would otherwise know
+    the files for the newest five and have silently forgotten the rest. Every
+    run merges what it already had, which is what makes five-at-a-time add up
+    to full coverage over time.
+
+    The new fetch always wins where both have an answer: a release's assets can
+    be replaced after publication, and the fresh read is the true one.
+    """
+    if not (old and new) or new.get("status") != "ok":
+        return new
+    known = {release.get("tag"): release.get("files")
+             for release in old.get("releases") or []
+             if release.get("files")}
+    if not known:
+        return new
+    for release in new.get("releases") or []:
+        if "files" not in release and known.get(release.get("tag")):
+            release["files"] = known[release["tag"]]
+    return new
+
+
+def store(cache, url, record):
+    """One way into the cache, so nothing lands there unmerged."""
+    cache[url] = carry_release_files(cache.get(url), record)
 
 
 def build_query(entries):
@@ -202,11 +261,16 @@ def fetch_github(token, entries):
                                           .get("nodes") or []
                                 if a.get("downloadUrl")]}
                            if release else None,
-                "releases": [
-                    {"tag": r.get("tagName", ""),
-                     "date": r.get("publishedAt", "")}
-                    for r in (node.get("releases") or {}).get("nodes") or []
-                    if r.get("tagName")],
+                "releases": with_files(
+                    [{"tag": r.get("tagName", ""),
+                      "date": r.get("publishedAt", "")}
+                     for r in (node.get("releases") or {}).get("nodes") or []
+                     if r.get("tagName")],
+                    {r.get("tagName", ""):
+                        [a.get("name", "") for a
+                         in (r.get("releaseAssets") or {}).get("nodes") or []
+                         if a.get("name")]
+                     for r in (node.get("recent") or {}).get("nodes") or []}),
             }
 
         print(f"  github {min(start + BATCH, len(entries))}/{len(entries)}",
@@ -265,9 +329,15 @@ def fetch_gitlab(entry):
                                 "url": l.get("url", ""), "size": 0}
                                for l in links if l.get("url")]}
                    if release else None,
-        "releases": [{"tag": r.get("tag_name", ""),
-                      "date": r.get("released_at", "")}
-                     for r in releases if r.get("tag_name")],
+        # Whole URLs, not names: a GitLab release links assets wherever the
+        # author pointed them, so there is nothing to rebuild them from.
+        "releases": with_files(
+            [{"tag": r.get("tag_name", ""), "date": r.get("released_at", "")}
+             for r in releases if r.get("tag_name")],
+            {r.get("tag_name", ""):
+                [l.get("url", "") for l
+                 in ((r.get("assets") or {}).get("links") or []) if l.get("url")]
+             for r in releases[:5]}),
     }
 
 
@@ -298,9 +368,12 @@ def fetch_gitea(entry):
                                for a in release.get("assets") or []
                                if a.get("browser_download_url")]}
                    if release else None,
-        "releases": [{"tag": r.get("tag_name", ""),
-                      "date": r.get("published_at", "")}
-                     for r in releases if r.get("tag_name")],
+        "releases": with_files(
+            [{"tag": r.get("tag_name", ""), "date": r.get("published_at", "")}
+             for r in releases if r.get("tag_name")],
+            {r.get("tag_name", ""):
+                [a.get("name", "") for a in r.get("assets") or [] if a.get("name")]
+             for r in releases[:5]}),
     }
 
 
@@ -433,23 +506,26 @@ def main():
     other = [e for e in todo if id(e) not in handled]
 
     for entry in dead:
-        cache[entry["url"]] = {**missing_record(entry), "status": "host_gone"}
+        store(cache, entry["url"],
+              {**missing_record(entry), "status": "host_gone"})
     for entry in not_forge:
-        cache[entry["url"]] = {**missing_record(entry), "status": "not_a_repo"}
+        store(cache, entry["url"],
+              {**missing_record(entry), "status": "not_a_repo"})
     if dead:
         print(f"  {len(dead)} link(s) on hosts that no longer exist",
               file=sys.stderr)
 
     if github:
-        cache.update(fetch_github(token, github))
+        for url, record in fetch_github(token, github).items():
+            store(cache, url, record)
         # Persist before the slow serial hosts: losing a completed GitHub pass
         # to a timeout further down would mean redoing all of it.
         save_cache(args.cache, cache)
 
     for entry in gitlab:
-        cache[entry["url"]] = fetch_gitlab(entry)
+        store(cache, entry["url"], fetch_gitlab(entry))
     for entry in gitea:
-        cache[entry["url"]] = fetch_gitea(entry)
+        store(cache, entry["url"], fetch_gitea(entry))
     for entry in other:
         print(f"  skipped unsupported host: {entry['host']}", file=sys.stderr)
 

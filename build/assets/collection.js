@@ -287,6 +287,46 @@
       return this.has(entry.id);
     },
 
+    /* Pin a mod to one of its releases. A collection is a "what do I install"
+     * list, and installing means installing a particular version -- so a pin
+     * is a property of the one row a mod already has here, not a second row.
+     * A mod cannot be in a collection twice, and "1.4.2 and also 1.5.0" is not
+     * an install list, it is a conflict.
+     *
+     * `entry.download` is stored rather than resolved later, which is the
+     * opposite of what an unpinned row does -- and for the same reason. An
+     * unpinned row means "whatever ships today", so its file is looked up
+     * fresh; a pin means "this release", whose file never changes again.
+     *
+     * Pressing the pinned version again removes the mod, because that button
+     * is how it got here. Pressing a different version moves the pin.
+     */
+    pin: function (entry, deps) {
+      var at = indexOf(entry.id);
+      if (at === -1) {
+        this.addWithDeps(entry, deps);
+        return "added";
+      }
+      if (entries[at].version === entry.version) {
+        this.remove(entry.id);
+        return "removed";
+      }
+      entries[at].version = entry.version;
+      entries[at].download = entry.download;
+      // Picking a version is as deliberate as adding the mod outright, so it
+      // promotes a row that arrived as somebody else's dependency.
+      entries[at].via = null;
+      save();
+      return "pinned";
+    },
+
+    /* Which release a row is pinned to, or "" for "whatever ships today".
+     * The version buttons read this to decide which one of them is pressed. */
+    pinnedVersion: function (id) {
+      var at = indexOf(id);
+      return at === -1 ? "" : (entries[at].version || "");
+    },
+
     replaceAll: function (list) {
       entries = list.filter(valid);
       save();
@@ -305,16 +345,6 @@
         ? UP + "index.html"                       // opened from file://
         : new URL(UP + "index.html", location.href).href;
       return base + "?pack=" + payload;
-    },
-
-    sourceUrls: function () {
-      var urls = [];
-      entries.forEach(function (entry) {
-        (entry.sources || []).forEach(function (url) {
-          if (urls.indexOf(url) === -1) urls.push(url);
-        });
-      });
-      return urls;
     },
 
     decode: decode,
@@ -406,7 +436,7 @@
       '            aria-label="Close collection">×</button>' +
       '  </div>' +
       '  <div class="collection-head">' +
-      '    <button type="button" class="linkbtn" data-copy="sources">Copy source URLs</button>' +
+      '    <button type="button" class="linkbtn" data-copy="downloads">Copy download URLs</button>' +
       '    <button type="button" class="linkbtn" data-copy="share">Copy share link</button>' +
       '    <button type="button" class="linkbtn danger" data-clear>Clear</button>' +
       '  </div>' +
@@ -426,6 +456,10 @@
   var openerCount = document.getElementById("collection-open-count");
 
   function setOpen(open) {
+    // Opening the drawer is the only signal that a copy might be coming, and
+    // it has to land before the click: writing to the clipboard after an await
+    // loses the user gesture in some browsers.
+    if (open) loadLatest();
     flyout.toggleAttribute("hidden", !open);
     backdrop.toggleAttribute("hidden", !open);
     // A frame later so the transition has a start state to animate from.
@@ -460,7 +494,7 @@
       var kind = copyButton.getAttribute("data-copy");
       var text = kind === "share"
         ? Collection.shareUrl()
-        : Collection.sourceUrls().join("\n");
+        : downloadUrls().join("\n");
       if (!text) return;
       copy(text, copyButton, kind === "share" ? "Link copied" : "Copied");
       return;
@@ -544,6 +578,87 @@
   /* Source URLs point at a repository, sometimes deep inside one
    * (/tree/<branch>, trailing .git). Reduce to owner/repo and append the
    * host's releases path, which is where a download actually lives. */
+  /* data/latest.json is id -> {version, url} for the newest release of every
+   * record, built by build.latest_releases() from the same repository data the
+   * download button on a mod page uses, so the two never disagree.
+   *
+   * Fetched when the drawer opens rather than at page load: every page on the
+   * site carries this script, and this is ~190 KB that only matters if you are
+   * looking at a collection. Fetched at all, rather than stored on the entry
+   * beside `sources`, because both halves of it move: an unpinned row means
+   * "whatever ships today", and a version and file remembered from whenever
+   * the mod was marked would quietly describe last spring's build.
+   */
+  var latest = null;
+  var latestRequested = false;
+
+  function loadLatest() {
+    if (latestRequested) return;
+    latestRequested = true;
+    fetch(UP + "data/latest.json", { credentials: "omit" })
+      .then(function (response) { return response.ok ? response.json() : null; })
+      .then(function (map) {
+        latest = map || null;
+        // The rows are already on screen by now, showing no version and a
+        // fallback link. Redraw so they say which release they mean.
+        if (latest) renderFlyout();
+      })
+      .catch(function () {
+        /* Opened from file://, or built before this file existed. The releases
+         * page derived from the source URL is still a real answer, so there is
+         * nothing to report and nothing to retry. */
+      });
+  }
+
+  /* Where one row's file is. Three answers in order of how specific they are:
+   * the release you pinned, the newest release as of the last build, and --
+   * for a record the map has never heard of -- the releases page derived from
+   * its source URL. The last one is why a mod added since the last build still
+   * contributes a link instead of dropping out of a list you are about to
+   * install from.
+   *
+   * The drawer's download icon and its copy button both come through here, so
+   * what you click and what you copy cannot disagree. */
+  function latestFor(entry) {
+    return (latest && latest[String(entry.id)]) || null;
+  }
+
+  function fileFor(entry) {
+    // A pin never falls through to the newest release. Not every archived
+    // version could be matched to a tag in its repository, and handing over
+    // today's file for a row that says 1.2.0 would be a different build than
+    // the one asked for -- the releases page is the honest answer there.
+    if (entry.version) return entry.download || releasesUrl(entry.sources);
+    var now = latestFor(entry);
+    return (now && now.url) || releasesUrl(entry.sources);
+  }
+
+  /* Which release a row means, and whether that was a choice. Every row has an
+   * answer to the first question -- an unpinned row is not "no version", it is
+   * this mod as it ships today -- and the drawer says so, because "BigBrain"
+   * and "BigBrain 1.5.0" are not equally useful things to read in a list you
+   * are about to install from.
+   *
+   * The two are told apart rather than merged: a pin is frozen and a floating
+   * row is not, so a collection where every row looked alike would hide the
+   * one difference that decides what you actually get. */
+  function releaseOf(entry) {
+    if (entry.version) return { version: entry.version, pinned: true };
+    var now = latestFor(entry);
+    return now && now.version
+      ? { version: now.version, pinned: false }
+      : null;
+  }
+
+  function downloadUrls() {
+    var urls = [];
+    Collection.all().forEach(function (entry) {
+      var url = fileFor(entry);
+      if (url && urls.indexOf(url) === -1) urls.push(url);
+    });
+    return urls;
+  }
+
   function releasesUrl(sources) {
     var list = sources || [];
     for (var i = 0; i < list.length; i++) {
@@ -568,13 +683,29 @@
   function item(entry, isNested) {
     var addon = isAddon(entry.id);
     var href = UP + (entry.href || "");
-    var releases = releasesUrl(entry.sources);
-    var download = releases
-      ? '<a class="dl" href="' + escapeAttr(releases) + '" target="_blank"' +
-        ' rel="noopener noreferrer" title="Downloads / releases for ' +
-        escapeAttr(entry.name || "") + '" aria-label="Downloads for ' +
-        escapeAttr(entry.name || "") + '">' + DOWNLOAD_ICON + '</a>'
+    var file = fileFor(entry);
+    var release = releaseOf(entry);
+    var what = entry.version
+      ? "version " + (entry.version || "") + " of " + (entry.name || "")
+      : "the latest " + (entry.name || "");
+    var download = file
+      ? '<a class="dl" href="' + escapeAttr(file) + '" target="_blank"' +
+        ' rel="noopener noreferrer" title="Download ' + escapeAttr(what) +
+        '" aria-label="Download ' + escapeAttr(what) + '">' +
+        DOWNLOAD_ICON + '</a>'
       : '<span class="dl empty" aria-hidden="true">' + DOWNLOAD_ICON + '</span>';
+
+    // The version reads as part of the name, because that is what the row
+    // means: not "this mod", but "this mod at 1.4.2". The title is where the
+    // two kinds differ in words as well as in colour -- one is a decision you
+    // made, the other is a fact that can change under you.
+    var pin = release
+      ? ' <span class="pin' + (release.pinned ? "" : " floating") + '" title="' +
+        (release.pinned
+          ? "Pinned to " + escapeAttr(release.version)
+          : "Latest release — this row follows it") +
+        '">v' + escapeText(release.version) + "</span>"
+      : "";
 
     return '<li' + (isNested ? ' class="dependency"' : "") + '>' +
       (isNested ? '<span class="dep-mark" title="' +
@@ -582,7 +713,7 @@
         '" aria-hidden="true">└</span>' : "") +
       download +
       '<a href="' + escapeAttr(href) + '">' +
-      escapeText(entry.name || String(entry.id)) + "</a>" +
+      escapeText(entry.name || String(entry.id)) + "</a>" + pin +
       '<button type="button" class="collection-remove" data-remove="' +
       escapeAttr(String(entry.id)) + '" aria-label="Remove ' +
       escapeAttr(entry.name || "") + '">×</button></li>';
@@ -624,6 +755,13 @@
     // provenance: it says where the row belongs, so unlike `via` it is never
     // cleared by adding the thing deliberately.
     if (parent) entry.parent = numericIfPossible(parent);
+    // Set only by the buttons in a Versions tab. Its absence is what "the
+    // latest release" is stored as, so it must stay absent here.
+    var version = button.getAttribute("data-version");
+    if (version) {
+      entry.version = version;
+      entry.download = button.getAttribute("data-download") || "";
+    }
     return entry;
   }
 
@@ -634,7 +772,14 @@
   function syncButtons() {
     var buttons = document.querySelectorAll("[data-mark]");
     Array.prototype.forEach.call(buttons, function (button) {
-      var marked = Collection.has(numericIfPossible(button.getAttribute("data-id")));
+      var id = numericIfPossible(button.getAttribute("data-id"));
+      var version = button.getAttribute("data-version");
+      // A version button is pressed only when its own release is the pinned
+      // one, so exactly one of a mod's versions can be lit at a time. A plain
+      // button asks the simpler question: is this mod here at all.
+      var marked = version
+        ? Collection.pinnedVersion(id) === version
+        : Collection.has(id);
       button.classList.toggle("marked", marked);
       button.setAttribute("aria-pressed", marked ? "true" : "false");
       // The resting label only. Its hover twin is fixed text, and writing to
@@ -650,13 +795,24 @@
     if (!button) return;
     event.preventDefault();
 
+    var entry = entryFrom(button);
     var deps = depsFrom(button);
-    var wasIn = Collection.has(entryFrom(button).id);
-    Collection.toggle(entryFrom(button), deps);
+    var wasIn = Collection.has(entry.id);
+
+    if (entry.version) {
+      // Moving a pin is the one collection change with no visible mark of its
+      // own: the button that lit up is not the one you pressed last time, and
+      // on a page of forty versions that is easy to miss.
+      if (Collection.pin(entry, deps) === "pinned") {
+        toast("Pinned to " + entry.version);
+      }
+    } else {
+      Collection.toggle(entry, deps);
+    }
 
     if (!wasIn && deps.length) {
       var pulled = Collection.all().filter(function (row) {
-        return row.via === entryFrom(button).id;
+        return row.via === entry.id;
       }).length;
       if (pulled) {
         toast("Added with " + pulled + " dependenc" +

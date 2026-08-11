@@ -29,7 +29,7 @@
     }
     if (mod.versions && mod.versions.length) {
       sections.push(["versions", "Versions", mod.version_count,
-                     R.versions(mod.versions, mod.versions_hidden)]);
+                     R.versions(mod.versions, mod.versions_hidden, mod.mark)]);
     }
     // The panel is emitted empty and filled on first open. It has to exist up
     // front so the tab strip counts it and so a #comments link still lands

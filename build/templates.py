@@ -448,6 +448,29 @@ def release_page_url(record, tag):
     return f"https://{host}/{full_name}/releases/tag/{quoted}"
 
 
+def asset_url(record, tag, name):
+    """A release asset's URL: derived where the host spells it predictably.
+
+    repo_status.py stores filenames rather than URLs for the releases it can
+    reach, for the same reason `release_page_url` derives its page -- 6,700
+    release rows carrying a full URL each is most of a megabyte in a file CI
+    commits twelve times a day, and GitHub, Codeberg and Gitea all build this
+    path identically.
+
+    GitLab's asset links point wherever the author put them, so nothing can be
+    rebuilt from a tag: those are stored whole, and arrive here already a URL.
+    """
+    if name.startswith("http"):
+        return name
+    host = record.get("host", "")
+    full_name = record.get("full_name", "")
+    if not (host and full_name and tag and name):
+        return ""
+    return (f"https://{host}/{full_name}/releases/download/"
+            f"{urllib.parse.quote(tag, safe='')}/"
+            f"{urllib.parse.quote(name, safe='')}")
+
+
 def release_index(mod, repos=None):
     """Version number -> {url, notes} for the release that shipped it.
 
@@ -476,10 +499,30 @@ def release_index(mod, repos=None):
             if not url:
                 continue
             is_latest = release["tag"] == latest.get("tag")
+            # The file itself, where it is known. The latest release carries
+            # real asset URLs from the API; older ones carry filenames, for as
+            # many releases back as the scraper has accumulated. A release with
+            # neither keeps its page, which is where its files are.
+            files = release.get("files") or []
+            asset = ((first_asset(record)[0] if is_latest else "") or
+                     (asset_url(record, release["tag"], files[0]) if files else ""))
             index[key] = {"url": url,
                           "host_label": repo_host_label(record["url"]),
-                          "notes": latest.get("html", "") if is_latest else ""}
+                          "notes": latest.get("html", "") if is_latest else "",
+                          "asset": asset}
     return index
+
+
+def first_asset(record):
+    """One repository's newest release file: (url, name), or ("", "").
+
+    A release often ships a source zip alongside the built mod; the named
+    asset is the one an author uploaded on purpose, and it comes first.
+    """
+    for asset in ((record.get("release") or {}).get("assets")) or []:
+        if asset.get("url"):
+            return asset["url"], asset.get("name", "")
+    return "", ""
 
 
 def latest_download(links, repos=None):
@@ -491,13 +534,9 @@ def latest_download(links, repos=None):
     page, where their files are.
     """
     for link in links:
-        record = (repos or {}).get(link.get("url", "")) or {}
-        assets = ((record.get("release") or {}).get("assets")) or []
-        # A release often ships a source zip alongside the built mod; the
-        # named asset is the one an author uploaded on purpose.
-        for asset in assets:
-            if asset.get("url"):
-                return asset["url"], asset.get("name", "")
+        url, name = first_asset((repos or {}).get(link.get("url", "")) or {})
+        if url:
+            return url, name
     return "", ""
 
 

@@ -65,13 +65,25 @@
 
   /* A collection toggle, carrying its whole entry so collection.js never has
    * to look anything up. Inert until that script binds it. */
+  /* `entry.version` makes this a pin rather than a plain add: same mod, but
+   * the collection remembers which release you picked and hands you that
+   * file. The version and its download travel on the button because the
+   * collection has to survive on a page that never loads the catalogue. */
   function mark(entry, wide) {
     if (!entry) return "";
     var inner = wide
       ? '<span class="mark-label"><span class="lbl-state">Add to collection</span>' +
         '<span class="lbl-hover">Remove</span></span>'
       : '<span class="mark-plus">+</span>';
-    return '<button type="button" class="mark' + (wide ? " mark-wide" : "") + '"' +
+    return '<button type="button" class="mark' + (wide ? " mark-wide" : "") +
+      (entry.version ? " mark-version" : "") + '"' +
+      (entry.version
+        ? ' data-version="' + esc(entry.version) + '"' +
+          ' data-download="' + esc(entry.download || "") + '"' +
+          ' title="Add this version to your collection"' +
+          ' aria-label="Add version ' + esc(entry.version) +
+          ' to your collection"'
+        : "") +
       (entry.parent ? ' data-parent="' + esc(entry.parent) + '"' : "") +
       ' data-mark data-id="' + esc(entry.id) + '"' +
       ' data-name="' + esc(entry.name) + '"' +
@@ -268,7 +280,25 @@
       "</div></div>";
   }
 
-  function versions(blocks, hidden) {
+  /* The same button the tiles and cards carry, bound to one release.
+   *
+   * `owner` is the record's own mark entry -- id, name, link, sources and
+   * dependencies -- so pinning a version pulls the same dependencies that
+   * adding the mod would; a version of a mod is still not installable without
+   * them. A version the archive cannot name is not offerable: there is nothing
+   * to pin to. */
+  function versionMark(owner, block) {
+    if (!owner || !block.version || block.version === "—") return "";
+    var pin = {};
+    for (var key in owner) {
+      if (Object.prototype.hasOwnProperty.call(owner, key)) pin[key] = owner[key];
+    }
+    pin.version = block.version;
+    pin.download = block.download || "";
+    return mark(pin, false);
+  }
+
+  function versions(blocks, hidden, owner) {
     if (!blocks || !blocks.length) return "";
     var out = blocks.map(function (v) {
       var download = v.download
@@ -278,6 +308,7 @@
           DOWNLOAD_ICON + "</a>"
         : "";
       return '<div class="version"><div class="vhead">' +
+        versionMark(owner, v) +
         '<span class="num">' + esc(v.version) + "</span>" +
         (v.spt ? badge(v.spt, "spt") : "") +
         (v.fika ? badge(v.fika[0], v.fika[1]) : "") +

@@ -715,6 +715,17 @@ button.badge:hover { border-color: var(--faint); filter: brightness(1.25); }
   color: var(--text);
 }
 .version .when { color: var(--faint); font-size: 12.5px; margin-left: auto; }
+
+/* The + that pins one release, first in the title bar so a column of versions
+   offers its buttons in one line down the left edge. A size smaller than the
+   same button on a card: it sits in a title bar rather than a tile's gutter,
+   and next to 15.5px type a 28px control reads as the loudest thing there. */
+.version .vhead .mark {
+  width: 24px;
+  min-width: 24px;
+  height: 24px;
+  font-size: 14px;
+}
 .version .notes { color: var(--muted); font-size: 13.5px; }
 
 /* --- per-version source tabs -------------------------------------------- */
@@ -1029,6 +1040,23 @@ a.dl:hover { opacity: 1; transform: translateY(1px); text-decoration: none; }
 @media (prefers-reduced-motion: reduce) { .dl { transition: none; } }
 
 .collection-list li > a:not(.dl) { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+
+/* The release a row means. Monospace because it is a version number, and set
+   apart from the name because it is doing a job: it says which build the
+   download beside it is.
+
+   Accented when it was pinned, faint when the row is simply following the
+   latest. Same shape, because both answer "which version"; different weight,
+   because only one of them is a decision -- a pinned 1.4.2 stays 1.4.2, while
+   a floating one is today's answer and will change without asking. Rows in a
+   long collection are scanned, not read, so the colour is what carries that. */
+.collection-list .pin {
+  flex: none;
+  font-family: var(--mono);
+  font-size: 11.5px;
+  color: var(--accent);
+}
+.collection-list .pin.floating { color: var(--faint); }
 .collection-remove {
   flex: none;
   background: none;

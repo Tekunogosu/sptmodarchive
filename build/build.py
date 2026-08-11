@@ -506,6 +506,44 @@ def facets(mods):
     return sorted(categories.values(), key=lambda c: -c["count"]), spt_facets
 
 
+def latest_releases(mods, addons, repos):
+    """What each record's newest release is, and where its file is.
+
+    This is the answer to "what would I be installing if I took this today",
+    for every record at once, keyed the way a collection keys them. The
+    collection drawer is the only thing that asks: a row there is unpinned by
+    default, meaning whatever ships now, so both halves of that -- the version
+    number it shows and the file it links -- have to be read fresh rather than
+    remembered from whenever the mod was marked.
+
+    `url` is the same reduction `emit.mod_detail` already makes for the download
+    button on a mod page -- asset where the host names one, releases page where
+    it does not -- deliberately reusing those two helpers rather than repeating
+    the rule, because a copied URL that disagrees with the button on the page
+    it came from is worse than either answer alone. That fallback is why a URL
+    here is never a bare repository root: 172 of the 1,355 records that have
+    one name no release asset, and for those the releases page is the honest
+    end of the trail.
+
+    A record with a version but no repository at all still belongs here. It
+    cannot offer a download, but "1.4.2" is worth saying on its own.
+
+    Addon ids are prefixed "a", as everywhere else the collection touches:
+    mod 102 and addon 102 are unrelated things.
+    """
+    records = ([(str(m["id"]), m["source_links"], m["latest_version"])
+                for m in mods] +
+               [(f"a{a['id']}", a["source_links"], a["latest_version"])
+                for a in addons])
+    found = {}
+    for key, links, version in records:
+        url = (templates.latest_download(links, repos)[0]
+               or templates.releases_url(links, repos))
+        if url or version:
+            found[key] = {"version": version or "", "url": url}
+    return found
+
+
 # --- crawler files -------------------------------------------------------
 
 def write_sitemap_and_robots(base_url, pages):
@@ -678,6 +716,15 @@ def build(limit=None, base_url=BASE_URL):
     emit_json("facets.json", {"categories": categories, "spt": spt_lines,
                               "mod_count": len(mods),
                               "generated_at": archive.get("generated_at", "")})
+
+    # Fetched only when the collection drawer opens, which is the only place
+    # that asks for it -- so it is its own file rather than a field on every
+    # index tile, and costs nothing to the readers who never open the drawer.
+    latest = latest_releases(mods, addons, repos)
+    emit_json("latest.json", latest)
+    downloadable = sum(1 for row in latest.values() if row["url"])
+    print(f"  {len(latest)} records carry a latest release, "
+          f"{downloadable} with a download", file=sys.stderr)
 
     # --- addons ----------------------------------------------------------
 

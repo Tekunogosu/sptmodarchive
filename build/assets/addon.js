@@ -24,7 +24,7 @@
     }
     if (addon.versions && addon.versions.length) {
       sections.push(["versions", "Versions", addon.version_count,
-                     R.versions(addon.versions, addon.versions_hidden)]);
+                     R.versions(addon.versions, addon.versions_hidden, addon.mark)]);
     }
 
     return R.head(addon, parent) + R.splitcols(addon) + R.sectionTabs(sections);
