@@ -35,17 +35,21 @@ on:
     # of somebody else's server to do it.
     #
     # Read this as the earliest a run may start, not when it will. schedule: is
-    # best-effort and minute 0 is the most contended slot on GitHub's scheduler:
-    # on the earlier two-hourly cron every run landed 32-52 minutes late and the
-    # 00:00 UTC slot was dropped entirely. Expect the same here -- roughly
-    # three-hourly with drift, and an occasional slot missed outright.
+    # best-effort, and GitHub queues everyone's cron together: on minute 0 --
+    # far and away the most popular choice, and where this used to sit -- the
+    # two-hourly runs landed 32-52 minutes late and the 00:00 UTC slot was
+    # dropped entirely. Minute 17 asks for a quieter queue. Not 15 or 30, which
+    # are the next places people round to.
+    #
+    # It buys less lateness, not none. Expect drift still, and an occasional
+    # slot missed outright.
     #
     # That is survivable only because the run is idempotent. Each one rebuilds
     # from the committed fetch cache and republishes, so a skipped slot costs
     # nothing a later run does not recover. If a refresh ever has to land at a
     # specific time, it needs a trigger off GitHub's scheduler -- a
     # workflow_dispatch POST from somewhere with its own clock.
-    - cron: "0 */3 * * *"
+    - cron: "17 */3 * * *"
   workflow_dispatch:            # and on demand from the Actions tab
 
 # Build and deploy happen in this one workflow rather than by pushing and
