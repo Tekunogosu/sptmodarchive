@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-08-12T07:58:32Z",
+ "generated_at": "2026-08-12T10:32:07Z",
  "source": "https://sp-mod.com",
  "filter": "all",
- "mod_count": 1842,
+ "mod_count": 1845,
  "categories": [
   {
    "id": 12,
@@ -134044,7 +134044,7 @@
    "description_html": "<h2>\ud83d\udcdc Description</h2>\n<p><strong>Black Exfil Revision</strong> is a mod for <em>Single Player Tarkov</em> that lets you equip compatible face shields on the Black Exfil helmet once again.</p>\n<hr />\n<h2>\ud83d\udcc1 Installation</h2>\n<ul>\n<li>Download the latest release</li>\n<li>Copy the <code>SPT_Runtime</code> folder into your SPT installation</li>\n<li>Start the game</li>\n</ul>\n<hr />\n<h2>\ud83d\udcf7 Preview</h2>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/Tosox/SPT-BlackExfilRevision/blob/master/readme-res/black_exfil.png?raw=true\" alt=\"\" /></p>\n<hr />\n<h2>\ud83d\udcc4 License</h2>\n<p>Distributed under the MIT License. See <code>LICENSE</code> for more information.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/14zFbwic0yrkpXD0Ce1Jf86qdEvwyfnjoXZCcJBH.png",
    "forge_url": "https://sp-mod.com/mod/2380/black-exfil-revision",
-   "downloads": 12353,
+   "downloads": 12377,
    "favourites": 43,
    "featured": false,
    "fika": true,
@@ -134073,12 +134073,24 @@
    ],
    "versions": [
     {
+     "id": 14668,
+     "version": "1.1.0",
+     "description": "<ul>\n<li>Compatibility update for SPT 4.1</li>\n</ul>\n",
+     "spt_constraint": "~4.1.0",
+     "fika": "compatible",
+     "downloads": 13,
+     "size": 8035,
+     "link": "https://sp-mod.com/mod/download/2380/black-exfil-revision/1.1.0",
+     "published_at": "2026-08-12T09:55:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 12087,
      "version": "1.0.0+spt3.9",
      "description": "<ul>\n<li>Backport release for SPT 3.11</li>\n</ul>\n",
      "spt_constraint": "~3.11.0",
      "fika": "compatible",
-     "downloads": 557,
+     "downloads": 558,
      "size": 2993,
      "link": "https://sp-mod.com/mod/download/2380/black-exfil-revision/1.0.0+spt3.9",
      "published_at": "2025-10-30T21:22:00.000000Z",
@@ -134090,23 +134102,24 @@
      "description": "<ul>\n<li>Initial release</li>\n</ul>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 11796,
+     "downloads": 11806,
      "size": 7714,
      "link": "https://sp-mod.com/mod/download/2380/black-exfil-revision/1.0.0",
      "published_at": "2025-10-18T22:13:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.0.0+spt3.9",
-   "spt_constraint": "~3.11.0",
+   "latest_version": "1.1.0",
+   "spt_constraint": "~4.1.0",
    "all_spt_constraints": [
     "~3.11.0",
-    "~4.0.0"
+    "~4.0.0",
+    "~4.1.0"
    ],
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2025-10-18T22:50:00.000000Z",
-   "updated_at": "2026-08-10T17:26:21.000000Z",
+   "updated_at": "2026-08-12T09:56:12.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -143624,11 +143637,11 @@
    "name": "Boxes At Ref (BARF) - NG",
    "slug": "boxes-at-ref-barf-ng",
    "teaser": "Missed this mod? Well, I did too, so it's back! This mod adds lootboxes and other items from EFT:Arena to the new trader Ref.",
-   "description_html": "<p>Updated version of Boxes At Ref (BARF) mod.</p>\n<p>Original mod link: <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1560/boxes-at-ref-barf\" rel=\"noreferrer noopener\">https://sp-mod.com/mod/1560/boxes-at-ref-barf</a>\n3.11 version link: <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2128/boxes-at-ref-barf-again\" rel=\"noreferrer noopener\">https://sp-mod.com/mod/2128/boxes-at-ref-barf-again</a></p>\n<p>Licensing: The original author has been inactive for a very long time and with the mod has MIT License I will maintain this mod for 4.0 until the author returns and take over should they wish to.</p>\n<h2>\ud83d\udcc2 Installation</h2>\n<h3>Requirements</h3>\n<ul>\n<li><strong>SPT 4.0.x</strong></li>\n<li>Server mod only \u2014 <em>no BepInEx plugin required</em></li>\n</ul>\n<h3>Steps</h3>\n<ol>\n<li>Download the latest release</li>\n<li>Extract it into your SPT installation</li>\n<li>You should see:</li>\n</ol>\n<pre><code>SPT/user/mods/BoxesAtRef/\n    BoxesAtRef.dll\n    database/\n</code></pre>\n<p>Restart your server and enjoy.</p>\n<h2>\u2699\ufe0f Configuration</h2>\n<p>Configuration lives here:</p>\n<pre><code>SPT/user/mods/BoxesAtRef/database/itemsToAdd.json\nSPT/user/mods/BoxesAtRef/database/crateContents.json\n</code></pre>\n<p>Editing the items:</p>\n<h3><strong>1) Indivdual item</strong></h3>\n<pre><code>{\n  \"items\": [\n    {\n      \"_id\": \"crate_unique_id\", // Don't touch\n      \"_tpl\": \"template_id\", // Don't touch\n      \"openID\": \"open_animation_id\", // Don't touch\n      \"price\": 50,\n      \"buyRestrictionMax\": 1,\n      \"loyaltyLevel\": 1\n    }\n  ]\n}\n</code></pre>\n<h3><strong>2) Crate contents</strong></h3>\n<pre><code>{\n  \"66573310a1657263d816a139\": {\n    \"rewardCount\": 3,\n    \"foundInRaid\": true,\n    \"rewardTplPool\": [] // Add MongoIds here\n  }\n}\n</code></pre>\n",
+   "description_html": "<p>Updated version of Boxes At Ref (BARF) mod.</p>\n<p>Original mod link: <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1560/boxes-at-ref-barf\" rel=\"noreferrer noopener\">https://sp-mod.com/mod/1560/boxes-at-ref-barf</a>\n3.11 version link: <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2128/boxes-at-ref-barf-again\" rel=\"noreferrer noopener\">https://sp-mod.com/mod/2128/boxes-at-ref-barf-again</a></p>\n<p>Licensing: The original author has been inactive for a very long time and with the mod has MIT License I will maintain this mod for 4.0 until the author returns and take over should they wish to.</p>\n<h2>\ud83d\udcc2 Installation</h2>\n<h3>Requirements</h3>\n<ul>\n<li><strong>SPT 4.1.2++</strong></li>\n<li>Server mod only \u2014 <em>no BepInEx plugin required</em></li>\n</ul>\n<h3>Steps</h3>\n<ol>\n<li>Download the latest release</li>\n<li>Extract it into your SPT installation</li>\n<li>You should see:</li>\n</ol>\n<pre><code>SPT_Runtime/user/mods/BoxesAtRef/\n    BoxesAtRef.dll\n    database/\n</code></pre>\n<p>Restart your server and enjoy.</p>\n<h2>\u2699\ufe0f Configuration</h2>\n<p>Configuration lives here:</p>\n<pre><code>SPT_Runtime/user/mods/BoxesAtRef/database/itemsToAdd.json\nSPT_Runtime/user/mods/BoxesAtRef/database/crateContents.json\n</code></pre>\n<p>Editing the items:</p>\n<h3><strong>1) Indivdual item</strong></h3>\n<pre><code>{\n  \"items\": [\n    {\n      \"_id\": \"crate_unique_id\", // Don't touch\n      \"_tpl\": \"template_id\", // Don't touch\n      \"openID\": \"open_animation_id\", // Don't touch\n      \"price\": 50,\n      \"buyRestrictionMax\": 1,\n      \"loyaltyLevel\": 1\n    }\n  ]\n}\n</code></pre>\n<h3><strong>2) Crate contents</strong></h3>\n<pre><code>{\n  \"66573310a1657263d816a139\": {\n    \"rewardCount\": 3,\n    \"foundInRaid\": true,\n    \"rewardTplPool\": [] // Add MongoIds here\n  }\n}\n</code></pre>\n",
    "thumbnail": "https://files.sp-mod.com/mods/QMBkx2dNQ1SvOfLaHfXBF4zpDoZqLJf9oGFNv7ov.jpg",
    "forge_url": "https://sp-mod.com/mod/2483/boxes-at-ref-barf-ng",
-   "downloads": 16776,
-   "favourites": 48,
+   "downloads": 16829,
+   "favourites": 49,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -143645,7 +143658,7 @@
     {
      "id": 78428,
      "name": "kobethuy",
-     "avatar": "https://files.sp-mod.com/profile-photos/xwnzuK5gF0ndmEIlazGfekomSx7oeNGvTE7UQckP_128w.webp"
+     "avatar": "https://files.sp-mod.com/profile-photos/UVgJBc40uviDBfSUm1MP91ktdwR8Dvm7casIG95Y_128w.webp"
     },
     {
      "id": 57635,
@@ -143661,27 +143674,40 @@
    ],
    "versions": [
     {
+     "id": 14666,
+     "version": "3.0.0",
+     "description": "<h3><strong>Changelogs</strong></h3>\n<ul>\n<li>Updated to SPT 4.1</li>\n</ul>\n",
+     "spt_constraint": "~4.1.2",
+     "fika": "compatible",
+     "downloads": 42,
+     "size": 8787,
+     "link": "https://sp-mod.com/mod/download/2483/boxes-at-ref-barf-ng/3.0.0",
+     "published_at": "2026-08-12T08:27:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 12508,
      "version": "2.0.0",
      "description": "<h3><strong>Changelogs</strong></h3>\n<ul>\n<li>Updated to 4.0</li>\n</ul>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 16776,
+     "downloads": 16787,
      "size": 8589,
      "link": "https://sp-mod.com/mod/download/2483/boxes-at-ref-barf-ng/2.0.0",
      "published_at": "2025-12-03T18:31:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "2.0.0",
-   "spt_constraint": "~4.0.0",
+   "latest_version": "3.0.0",
+   "spt_constraint": "~4.1.2",
    "all_spt_constraints": [
-    "~4.0.0"
+    "~4.0.0",
+    "~4.1.2"
    ],
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2025-12-03T18:28:00.000000Z",
-   "updated_at": "2026-07-28T06:59:29.000000Z",
+   "updated_at": "2026-08-12T08:29:22.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -171643,11 +171669,11 @@
    "name": "SALCO's ARMORY",
    "slug": "salcos-armory",
    "teaser": "SALCO's ARMORY is a content-focused SPT mod, adding custom items (real and fictional).",
-   "description_html": "<p><a target=\"_blank\" class=\"external-link\" href=\"https://postimg.cc/JD3ZFcRT\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.postimg.cc/cH2hrX2N/3-2-SA.jpg\" alt=\"3-2-SA.jpg\" /></a></p>\n<p>ABOUT THE MOD</p>\n<p><strong>SALCO\u2019s ARMORY</strong> is a modular equipment and gameplay expansion for SPT, adding both real-world and fictional items.</p>\n<p><strong>Features</strong></p>\n<ul>\n<li>Improved compatibility between weapons, attachments, and supported mods</li>\n<li>Combining of partially used medical items</li>\n<li>Configurable gameplay systems</li>\n<li>Compatibility with popular bot mods such as <strong>SAIN</strong>, <strong>ABPS</strong>, and <strong>ORBIT</strong></li>\n<li>A merchant named \u201cWayland\u201d.</li>\n</ul>\n<p><strong>Countermeasure Protocol</strong></p>\n<p>The <strong>Countermeasure Protocol</strong> analyzes your recent PMC raids and identifies recurring tactics. Depending on your playstyle, a limited number of enemy PMCs may receive suitable equipment to counter night raids, headshots, long-range combat, suppressed weapons, or heavy armor.</p>\n<p>SALCO\u2019s ARMORY does not control AI behavior or bot spawning. Its systems can be configured or disabled to suit your preferred experience.</p>\n<p>INSTALLATION</p>\n<ol>\n<li>Backup your profile before every update!!!</li>\n<li>Delete every previous version <strong>completely</strong>!!!</li>\n<li>Clear your caches!!!</li>\n<li>Download the mod!!!</li>\n<li>Extract the ZIP!!!</li>\n<li>Copy the <strong>contents</strong> of the ZIP into your <strong>SPT root folder</strong>!!!</li>\n</ol>\n<p>This mod is <strong>NOT</strong> compatible with SALCO\u2019s ARMORY (the old version), SALCO\u2019s ARSENAL, COMBAT ARSENAL and COMBAT ARSENAL: Legacy.</p>\n<p>Only use this mod if:</p>\n<ul>\n<li>you are starting a completely new save file.</li>\n<li>you have deleted the old mod and all its items from your profile.</li>\n<li>Do not mix versions.</li>\n</ul>\n<p>UNINSTALLATION</p>\n<ol>\n<li>Delete all items from the mod from your profile. You can recognise them by the fact that they begin with \u201cSALCO\u2019s ARMORY:\u201d. Then close the game and the server.</li>\n<li>Locate the file <code>core.json</code> in <code>...SPT\\SPT_Data\\configs\\</code> and open it with a text editor of your choice.</li>\n<li>Once you have opened the file, find the entry <code>\"removeModItemsFromProfile\": false,</code> and set the value to <code>true</code>. Then save the file.</li>\n<li>Start the server and wait until the server has deleted all files that are part of the mod.</li>\n<li>You can now close the server and change the value back from <code>true</code> to <code>false</code>.</li>\n</ol>\n<p>CONTENT</p>\n<p><strong>AMMO</strong></p>\n<ul>\n<li>SALCO\u2019s ARMORY: 7.62x35mm (.300 Blackout) - Spartans</li>\n<li>SALCO\u2019s ARMORY: 6.8x51mm - Blutadler</li>\n<li>SALCO\u2019s ARMORY: 5.45x39mm - 7N39M</li>\n<li>SALCO\u2019s ARMORY: 5.56x45mm - M995A1</li>\n<li>SALCO\u2019s ARMORY: 7.62x39mm - 7N23M</li>\n<li>SALCO\u2019s ARMORY: 1143x23mm (.45 APC) - Warden</li>\n</ul>\n<p><strong>MEDICALS</strong></p>\n<ul>\n<li>SALCO\u2019s ARMORY: pTG-change regenerative stimulant injector</li>\n<li>SALCO\u2019s ARMORY: MSJ6 carry and escape stimulant injector</li>\n<li>SALCO\u2019s ARMORY: D.I.N.N.E.R-41 stimulant injector</li>\n<li>SALCO\u2019s ARMORY: B.O.N.E. stimulant injector</li>\n<li>SALCO\u2019s ARMORY: \u201cI\u2019m okay\u201d mental health awareness stimulant</li>\n<li>SALCO\u2019s ARMORY: UFAK first aid kit</li>\n<li>SALCO\u2019s ARMORY: Surv12 field surgical kit</li>\n</ul>\n<p><strong>MAGAZINES</strong></p>\n<ul>\n<li>SALCO\u2019s ARMORY: AK-300 .300 Blackout 30-Round Magazine</li>\n<li>SALCO\u2019s ARMORY: AK 6L31 60-round multi-caliber Magazine</li>\n<li>SALCO\u2019s ARMORY: Unit-12 multi-caliber 20-round Magazine</li>\n<li>SALCO\u2019s ARMORY: Unit-12 multi-caliber 30-round Magazine</li>\n</ul>\n<p><strong>CONTAINERS</strong></p>\n<ul>\n<li>SALCO\u2019s ARMORY: Ammo Pouch</li>\n<li>SALCO\u2019s ARMORY: Item Pouch</li>\n<li>SALCO\u2019s ARMORY: Medic Pouch</li>\n<li>SALCO\u2019s ARMORY: Secure Container DELTA</li>\n</ul>\n<p><strong>WEAPONS</strong></p>\n<ul>\n<li>SALCO\u2019s ARMORY: M85 Revenant 7.62x35 (.300 Blackout) assault rifle</li>\n<li>SALCO\u2019s ARMORY: Kalashnikov AK-9 9x39 assault rifle</li>\n<li>SALCO\u2019s ARMORY: AK-300 .300 Blackout assault rifle</li>\n<li>SALCO\u2019s ARMORY: SCAR-68 6.8x51 assault rifle</li>\n<li>SALCO\u2019s ARMORY: UNIT-12 multi-caliber assault rifle</li>\n<li>SALCO\u2019s ARMORY: SCAR-300 7.62x35 (.300 Blackout) assault rifle</li>\n<li>SALCO\u2019s ARMORY: M67 hand grenade (Reduced delay)</li>\n</ul>\n<p><strong>GEAR</strong></p>\n<ul>\n<li>SALCO\u2019s ARMORY: Atomic Defense ballistic mask</li>\n<li>SALCO\u2019s ARMORY: Armband (B***) medical container</li>\n<li>SALCO\u2019s ARMORY: CENS ProFlex DX5 tactical earplug</li>\n<li>SALCO\u2019s ARMORY: Armband (U***) medical container</li>\n</ul>\n<p><strong>ATTACHMENTS</strong></p>\n<ul>\n<li>AR-15 FAB Defense GL Cheekriser buttstock (blk/fde/od)</li>\n<li>IMI Defense frontgrip (blk/fde/od)</li>\n<li>Handguard KPYK CRC1U020 (blk/fde/od)</li>\n<li>Handguard KPYK CRC1U004B (blk/fde/od)</li>\n<li>Opticmount KPYK CRC2U073 (blk/fde/od)</li>\n</ul>\n<p><strong>ARMOR</strong></p>\n<ul>\n<li>SOON</li>\n</ul>\n<p>REPORT BUGS</p>\n<p>There are two ways to report bugs:</p>\n<ol>\n<li>My own thread on Discord: <a target=\"_blank\" class=\"external-link\" href=\"https://discord.com/channels/875684761291599922/1521957836928848032\" rel=\"noreferrer noopener\">https://discord.com/channels/875684761291599922/1521957836928848032</a></li>\n<li>In the \u2018Issue\u2019 tab on GitHub: <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/S4LCO/SalcosArmory/issues\" rel=\"noreferrer noopener\">https://github.com/S4LCO/SalcosArmory/issues</a></li>\n</ol>\n<p><strong>IMPORTANT:</strong></p>\n<ol>\n<li>I need a clean log.</li>\n<li>A list of your installed mods.</li>\n</ol>\n<p><strong>Bug reports without logs will be ignored.</strong></p>\n<p>SUPPORT ME</p>\n<p>If you like the mod, feel free to send some donation. \ud83e\udef6\ud83c\udffc</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/salco1\" rel=\"noreferrer noopener\">https://ko-fi.com/salco1</a></p>\n<p>FAQ</p>\n<p><strong>Q</strong>: Is this mod compatible with other versions such as <em>SALCO\u2019s ARSENAL</em>, <em>COMBAT ARSENAL</em> or <em>COMBAT ARSENAL: Legacy</em>?\n<strong>A</strong>: Technically speaking, yes. However, I strongly advise you <strong>NOT</strong> to use these mods together. Choose one version. Support is only available for this one, though.</p>\n<p><strong>Q</strong>: Could you please add item XY to the game?\n<strong>A</strong>: No! I design the mod the way I want to. Adding new content to the game takes time and, in some cases, money as well. Please b*** this in mind.</p>\n<p><strong>Q</strong>: Why do you keep deleting the mods and uploading them under a new name?\n<strong>A</strong>: I can see why it might look that way, and to be honest, I\u2019m sorry that it gives that impression, as there\u2019s not much I can do about it. But please understand that I won\u2019t be commenting on this any further.</p>\n<p><strong>Q</strong>: Will there be new assets in the future?\n<strong>A</strong>: Yes! Handguards, buttstocks, foregrips and so on will be making a comeback in the mod. But I still need a bit more time.</p>\n<p><strong>Q</strong>: Is SALCO\u2019s ARMORY related to WTT?\n<strong>A</strong>: Not a single bit.\n{.endtabset}</p>\n",
-   "thumbnail": "https://files.sp-mod.com/mods/dY9kck2m3gmF4KZYsfXevNv4SWLYNDjgLWJXdWvA.jpg",
+   "description_html": "<p><a target=\"_blank\" class=\"external-link\" href=\"https://postimg.cc/rRKV7wmn\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.postimg.cc/1XK8ngZQ/SA-transparent.png\" alt=\"SA-transparent.png\" /></a></p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">ABOUT THE MOD</div>\n<div class=\"tab-content\"><p><strong>SALCO\u2019s ARMORY</strong> is a modular equipment and gameplay expansion for SPT, adding both real-world and fictional items.\n<br />\n</p>\n<hr />\n<p><strong>CONFIGURATOR.EXE</strong><br />\nA configurator where you can switch on and off most of the functions and easily access the Json-files.<br />\n<br />\n</p>\n<p><strong>COUNTERMEASURE PROTOCOL</strong><br />\nThe <strong>Countermeasure Protocol</strong> analyzes your recent PMC raids and identifies recurring tactics. Depending on your playstyle, a limited number of enemy PMCs may receive suitable equipment to counter night raids, headshots, long-range combat, suppressed weapons, or heavy armor.</p>\n<p>SALCO\u2019s ARMORY does not control AI behavior or bot spawning. Its systems can be configured or disabled to suit your preferred experience.<br />\n<br />\n</p>\n<p><strong>FARK</strong><br />\nA compact armor maintenance kit prepared by Wayland for emergency field repairs. It can repair body armor and ballistic plates during a raid, but carries fewer supplies than a full workshop kit. Drag the kit onto damaged armor or a damaged plate to use it.<br />\n<br />\n</p>\n<p><strong>3 EXTRA SPECIAL SLOTS</strong><br />\nYou now have three additional special slots that are fully functional and can hold everything that the regular slots can hold.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">CONFIGURATOR</div>\n<div class=\"tab-content\"><p><a target=\"_blank\" class=\"external-link\" href=\"https://postimg.cc/rRCmbbp7\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.postimg.cc/PJ0wLnnf/SAC.jpg\" alt=\"SAC.jpg\" /></a></p>\n<p>Optional Windows configuration utility for SALCO\u2019s ARMORY. The mod itself does\nnot depend on this application.</p>\n<p>Place <code>SALCOs ARMORY Configurator.exe</code> in the SPT installation folder and run it\nwhile the SPT server and game are closed. The Configurator automatically finds:</p>\n<pre><code>SPT_Runtime/user/mods/SalcosArmory/config\n</code></pre>\n<p>The application can also be started from another location. Use <strong>Browse</strong> to\nselect the SPT folder, <code>SPT_Runtime</code>, the <code>SalcosArmory</code> mod folder, or its\n<code>config</code> folder.</p>\n<p>Before every save or profile import, all JSON and JSONC files below the active\nconfig folder are archived to:</p>\n<pre><code>SalcosArmory/configurator-backups\n</code></pre>\n<p>Normal form edits preserve JSONC comments. Additional compatibility files and\nfuture config files remain available through the <strong>Advanced JSONC</strong> tab.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">INSTALLATION</div>\n<div class=\"tab-content\"><ol>\n<li>Backup your profile before every update!!!</li>\n<li>Delete every previous version <strong>completely</strong>!!!</li>\n<li>Clear your caches!!!</li>\n<li>Download the mod!!!</li>\n<li>Extract the ZIP!!!</li>\n<li>Copy the <strong>contents</strong> of the ZIP into your <strong>SPT root folder</strong>!!!<br />\n<br />\n</li>\n</ol>\n<p>This mod is <strong>NOT</strong> compatible with SALCO\u2019s ARMORY (the old version), SALCO\u2019s ARSENAL, COMBAT ARSENAL and COMBAT ARSENAL: Legacy.</p>\n<p>Only use this mod if:</p>\n<ul>\n<li>you are starting a completely new save file.</li>\n<li>you have deleted the old mod and all its items from your profile.</li>\n<li>Do not mix versions.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">UNINSTALLATION</div>\n<div class=\"tab-content\"><ol>\n<li>Delete all items from the mod from your profile.\nYou can recognise them by the fact that they begin with \u201cSALCO\u2019s ARMORY:\u201d.\nThen close the game and the server.</li>\n<li>Locate the file <code>core.json</code> in <code>...SPT\\SPT_Data\\configs\\</code> and open it with a text editor of your choice.</li>\n<li>Once you have opened the file, find the entry <code>\"removeModItemsFromProfile\": false,</code> and set the value to <code>true</code>. Then save the file.</li>\n<li>Start the server and wait until the server has deleted all files that are part of the mod.</li>\n<li>You can now close the server and change the value back from <code>true</code> to <code>false</code>.</li>\n</ol></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">CONTENT</div>\n<div class=\"tab-content\"><p><strong>AMMO</strong></p>\n<ul>\n<li>SALCO\u2019s ARMORY: 7.62x35mm (.300 Blackout) - Spartans</li>\n<li>SALCO\u2019s ARMORY: 6.8x51mm - Blutadler</li>\n<li>SALCO\u2019s ARMORY: 5.45x39mm - 7N39M</li>\n<li>SALCO\u2019s ARMORY: 5.56x45mm - M995A1</li>\n<li>SALCO\u2019s ARMORY: 7.62x39mm - 7N23M</li>\n<li>SALCO\u2019s ARMORY: 1143x23mm (.45 APC) - Warden<br />\n<br />\n</li>\n</ul>\n<p><strong>MEDICALS</strong></p>\n<ul>\n<li>SALCO\u2019s ARMORY: pTG-change regenerative stimulant injector</li>\n<li>SALCO\u2019s ARMORY: MSJ6 carry and escape stimulant injector</li>\n<li>SALCO\u2019s ARMORY: D.I.N.N.E.R-41 stimulant injector</li>\n<li>SALCO\u2019s ARMORY: B.O.N.E. stimulant injector</li>\n<li>SALCO\u2019s ARMORY: \u201cI\u2019m okay\u201d mental health awareness stimulant</li>\n<li>SALCO\u2019s ARMORY: UFAK first aid kit</li>\n<li>SALCO\u2019s ARMORY: Surv12 field surgical kit</li>\n<li>SALCO\u2019s ARMORY: E.F.-1 \u201cREDLINE\u201d combat stimulant injector<br />\n<br />\n</li>\n</ul>\n<p><strong>MAGAZINES</strong></p>\n<ul>\n<li>SALCO\u2019s ARMORY: AK-300 .300 Blackout 30-Round Magazine</li>\n<li>SALCO\u2019s ARMORY: AK 6L31 60-round multi-caliber Magazine</li>\n<li>SALCO\u2019s ARMORY: Unit-12 multi-caliber 20-round Magazine</li>\n<li>SALCO\u2019s ARMORY: Unit-12 multi-caliber 30-round Magazine<br />\n<br />\n</li>\n</ul>\n<p><strong>CONTAINERS</strong></p>\n<ul>\n<li>SALCO\u2019s ARMORY: Ammo Pouch</li>\n<li>SALCO\u2019s ARMORY: Item Pouch</li>\n<li>SALCO\u2019s ARMORY: Medic Pouch</li>\n<li>SALCO\u2019s ARMORY: Secure Container DELTA<br />\n<br />\n</li>\n</ul>\n<p><strong>WEAPONS</strong></p>\n<ul>\n<li>SALCO\u2019s ARMORY: M85 Revenant 7.62x35 (.300 Blackout) assault rifle</li>\n<li>SALCO\u2019s ARMORY: Kalashnikov AK-9 9x39 assault rifle</li>\n<li>SALCO\u2019s ARMORY: AK-300 .300 Blackout assault rifle</li>\n<li>SALCO\u2019s ARMORY: SCAR-68 6.8x51 assault rifle</li>\n<li>SALCO\u2019s ARMORY: UNIT-12 multi-caliber assault rifle</li>\n<li>SALCO\u2019s ARMORY: SCAR-300 7.62x35 (.300 Blackout) assault rifle</li>\n<li>SALCO\u2019s ARMORY: M67 hand grenade (Reduced delay)<br />\n<br />\n</li>\n</ul>\n<p><strong>GEAR</strong></p>\n<ul>\n<li>SALCO\u2019s ARMORY: Atomic Defense ballistic mask</li>\n<li>SALCO\u2019s ARMORY: Armband (B***) medical container</li>\n<li>SALCO\u2019s ARMORY: CENS ProFlex DX5 tactical earplug</li>\n<li>SALCO\u2019s ARMORY: Armband (U***) medical container<br />\n<br />\n</li>\n</ul>\n<p><strong>ATTACHMENTS</strong></p>\n<ul>\n<li>AR-15 FAB Defense GL Cheekriser buttstock (blk/fde/od)</li>\n<li>IMI Defense frontgrip (blk/fde/od)</li>\n<li>Handguard KPYK CRC1U020 (blk/fde/od)</li>\n<li>Handguard KPYK CRC1U004B (blk/fde/od)</li>\n<li>Opticmount KPYK CRC2U073 (blk/fde/od)</li>\n<li>Strike Industries Oppressor muzzle brake</li>\n<li>Added Strike Industries Oppressor muzzle brake for AK\u2019s</li>\n<li>Added APW Raptor 4 port muzzle brake<br />\n<br />\n</li>\n</ul>\n<p><strong>ARMOR</strong></p>\n<ul>\n<li>Replaceable soft armor from Level 3 to Level 6<br />\n<br />\n</li>\n</ul>\n<p><strong>MISC</strong></p>\n<ul>\n<li>SALCO\u2019s ARMORY: Field Armor Repair Kit<br />\n<br />\n</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">REPORT BUGS</div>\n<div class=\"tab-content\"><p>There are two ways to report bugs:</p>\n<ol>\n<li>My own thread on Discord: <a target=\"_blank\" class=\"external-link\" href=\"https://discord.com/channels/875684761291599922/1521957836928848032\" rel=\"noreferrer noopener\">https://discord.com/channels/875684761291599922/1521957836928848032</a></li>\n<li>In the \u2018Issue\u2019 tab on GitHub: <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/S4LCO/SalcosArmory/issues\" rel=\"noreferrer noopener\">https://github.com/S4LCO/SalcosArmory/issues</a></li>\n</ol>\n<p><strong>IMPORTANT:</strong></p>\n<ol>\n<li>I need a clean log.</li>\n<li>A list of your installed mods.</li>\n</ol>\n<p><strong>Bug reports without logs will be ignored.</strong></p></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">SUPPORT ME</div>\n<div class=\"tab-content\"><p>If you like the mod, feel free to send some donation. \ud83e\udef6\ud83c\udffc</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/salco1\" rel=\"noreferrer noopener\">https://ko-fi.com/salco1</a></p></div></div>\n<div id=\"tabset-1-panel-8\" class=\"tab-panel\"><div class=\"tab-title\">FAQ</div>\n<div class=\"tab-content\"><p><strong>Q</strong>: Is this mod compatible with other versions such as <em>SALCO\u2019s ARSENAL</em>, <em>COMBAT ARSENAL</em> or <em>COMBAT ARSENAL: Legacy</em>?<br />\n<strong>A</strong>: Technically speaking, yes. However, I strongly advise you <strong>NOT</strong> to use these mods together.\nChoose one version.\nSupport is only available for this one, though.<br />\n<br />\n</p>\n<p><strong>Q</strong>: Could you please add item XY to the game?<br />\n<strong>A</strong>: No! I design the mod the way I want to.\nAdding new content to the game takes time and, in some cases, money as well.\nPlease b*** this in mind.<br />\n<br />\n</p>\n<p><strong>Q</strong>: Why do you keep deleting the mods and uploading them under a new name?<br />\n<strong>A</strong>: I can see why it might look that way, and to be honest, I\u2019m sorry that it gives that impression, as there\u2019s not much I can do about it.\nBut please understand that I won\u2019t be commenting on this any further.<br />\n<br />\n</p>\n<p><strong>Q</strong>: Will there be new assets in the future?<br />\n<strong>A</strong>: Yes! Handguards, buttstocks, foregrips and so on will be making a comeback in the mod. But I still need a bit more time.<br />\n<br />\n</p>\n<p><strong>Q</strong>: Is SALCO\u2019s ARMORY related to WTT?<br />\n<strong>A</strong>: Not a single bit.<br />\n{.endtabset}</p></div></div></div>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/souioS6b9h9LHYjg5qEGkiqy0o0P9HrplizkqRdN.jpg",
    "forge_url": "https://sp-mod.com/mod/2794/salcos-armory",
-   "downloads": 10238,
-   "favourites": 65,
+   "downloads": 9573,
+   "favourites": 69,
    "featured": false,
    "fika": true,
    "fika_latest": "unknown",
@@ -171662,9 +171688,9 @@
    },
    "authors": [
     {
-     "id": "117343-arch",
+     "id": 117343,
      "name": "S4LCO",
-     "avatar": "https://forge-static.sp-tarkov.com/profile-photos/IttrQXatb7F4PtUs86bYUUfWpxDAwnR8rf3piU33_256w.webp"
+     "avatar": "https://files.sp-mod.com/profile-photos/rgc3DHTiErae0JpWwjUVXGzGTO2I7el1yTGI59mr_128w.webp"
     }
    ],
    "source_links": [
@@ -171675,52 +171701,85 @@
    ],
    "versions": [
     {
-     "id": 14587,
-     "version": "0.6.2",
-     "description": "<p><strong>IMPORTANT NOTE</strong>As long as WTT - Content Backport has not yet been updated to SPT 4.1.x, the following items are missing from this version. They will be readded in the future.</p>\n<ul>\n<li>UNIT-12 and its magazines are missing</li>\n<li>CENS ProFlex DX5 tactical earplug is missing</li>\n<li>6B45 Body Armor</li>\n</ul>\n<p><strong>Added</strong></p>\n<ul>\n<li>E.F.-1 REDLINE combat stimulant (Thanks to Vultify for making the bundle)\n<ul>\n<li>A combat stim which raise maximal health across all body parts for 45 seconds.</li>\n</ul>\n</li>\n<li>FARK (Field Armor Repair Kit)\n<ul>\n<li>A smaller Body Armor Repair Kit which can be place into special slots to repair your body armor in raid.</li>\n</ul>\n</li>\n</ul>\n<p><strong>Changes</strong></p>\n<ul>\n<li>Rebalanced the soft inserts</li>\n</ul>\n<p><strong>New Feature</strong></p>\n<ul>\n<li>In-Raid Body Armor Repair allows you to repair your damaged armor plates during a raid.</li>\n<li>Three extra special slots</li>\n</ul>\n",
-     "spt_constraint": "~4.1.2",
-     "fika": "unknown",
-     "downloads": 1539,
-     "size": 217635057,
-     "link": "https://sp-mod.com/mod/download/2794/salcos-armory/0.6.2",
-     "published_at": "2026-08-09T10:16:00.000000Z",
-     "dependencies": []
-    },
-    {
      "id": 14311,
      "version": "0.4.1",
-     "description": "<p><strong>Added</strong></p>\n<ul>\n<li>AR-15 FAB Defense GL Cheekriser buttstock (blk/fde/od)</li>\n<li>IMI Defense frontgrip (blk/fde/od)</li>\n<li>Handguard KPYK CRC1U020 (blk/fde/od)</li>\n<li>Handguard KPYK CRC1U004B (blk/fde/od)</li>\n<li>Opticmount KPYK CRC2U073 (blk/fde/od)</li>\n<li>Prefabs for B.O.N.E., D.I.N.N.E.R-41, pTG-Change and MSJ6 stimulant (thanks to Vultify for making them)</li>\n<li>\u201cI\u2019m okay\u201d mental health awareness stimulant</li>\n<li>A new merchant named \u201cWayland\u201d (currently no quests. He just sells SALCO\u2019s ARMORY stuff).</li>\n</ul>\n<p><strong>Changes</strong></p>\n<ul>\n<li>B.O.N.E: Replaced its excessive and potentially lethal side effects with predictable fatigue, resource loss, and a longer application time.</li>\n<li>pTG-change: Rebalanced its powerful combat regeneration and a more manageable delayed crash.</li>\n</ul>\n<p><strong>New Feature</strong></p>\n<ul>\n<li>B.O.N.E. stimulant brings now back blacked torso and head.</li>\n</ul>\n",
+     "description": "<p><strong>Added</strong></p>\n<ul>\n<li>AR-15 FAB Defense GL Cheekriser buttstock (blk/fde/od)</li>\n<li>IMI Defense frontgrip (blk/fde/od)</li>\n<li>Handguard KPYK CRC1U020 (blk/fde/od)</li>\n<li>Handguard KPYK CRC1U004B (blk/fde/od)</li>\n<li>Opticmount KPYK CRC2U073 (blk/fde/od)</li>\n<li>Prefabs for B.O.N.E., D.I.N.N.E.R-41, pTG-Change and MSJ6 stimulant (thanks to Vultify for making them)</li>\n<li>\u201cI\u2019m okay\u201d mental health awareness stimulant</li>\n<li>A new merchant named \u201cWayland\u201d (currently no quests. He just sells SALCO\u2019s ARMORY stuff).<br />\n<br />\n</li>\n</ul>\n<p><strong>Changes</strong></p>\n<ul>\n<li>B.O.N.E: Replaced its excessive and potentially lethal side effects with predictable fatigue, resource loss, and a longer application time.</li>\n<li>pTG-change: Rebalanced its powerful combat regeneration and a more manageable delayed crash.<br />\n<br />\n</li>\n</ul>\n<p><strong>New Feature</strong></p>\n<ul>\n<li>B.O.N.E. stimulant brings now back blacked torso and head.</li>\n</ul>\n",
      "spt_constraint": "~4.0.13",
      "fika": "unknown",
-     "downloads": 2117,
+     "downloads": 2847,
      "size": 215840042,
      "link": "https://sp-mod.com/mod/download/2794/salcos-armory/0.4.1",
      "published_at": "2026-07-31T15:58:00.000000Z",
-     "dependencies": []
+     "dependencies": [
+      {
+       "id": 2310,
+       "name": "WTT - CommonLib",
+       "slug": "wtt-commonlib",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
+      },
+      {
+       "id": 2512,
+       "name": "WTT - Content Backport",
+       "slug": "wtt-content-backport",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2512/wtt-content-backport"
+      }
+     ]
     },
     {
      "id": 14241,
      "version": "0.3.1",
-     "description": "<p>Sorry for kept you waiting. Im sick right now.\nUpdate WTT dependency compatibility.\nNo other changes.</p>\n",
+     "description": "<p>Sorry for kept you waiting. Im sick right now.<br />\nUpdate WTT dependency compatibility.<br />\nNo other changes.</p>\n",
      "spt_constraint": "~4.0.13",
      "fika": "unknown",
-     "downloads": 1968,
+     "downloads": 2014,
      "size": 173746,
      "link": "https://sp-mod.com/mod/download/2794/salcos-armory/0.3.1",
      "published_at": "2026-07-26T17:53:00.000000Z",
-     "dependencies": []
+     "dependencies": [
+      {
+       "id": 2310,
+       "name": "WTT - CommonLib",
+       "slug": "wtt-commonlib",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
+      },
+      {
+       "id": 2512,
+       "name": "WTT - Content Backport",
+       "slug": "wtt-content-backport",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2512/wtt-content-backport"
+      }
+     ]
     },
     {
      "id": 14104,
      "version": "0.3.0",
-     "description": "<p><strong>Note</strong></p>\n<ul>\n<li>This version <em>might</em> no longer compatible with FIKA. If you tried, let me know pls.</li>\n</ul>\n<p><strong>Added</strong></p>\n<ul>\n<li>AVS plate carrier (green &amp; multicam)</li>\n<li>6B45 amored rig</li>\n<li>Soft armor from Lv. 3 - Lv. 6</li>\n</ul>\n<p><strong>Changes</strong></p>\n<ul>\n<li>Unit-12 slightly nerfed and fixed the magazine bug</li>\n<li>DINNER41 stim gives now EnergyRate from the first second</li>\n<li>pTG and BONE stim has now less contussion effect, but both have a small chance of instant death.</li>\n</ul>\n<p><strong>New Feature</strong>\nCountermeasure Protocol (CP) is a new adaptive gameplay system that learns from your recent PMC raids and allows enemy PMCs to prepare countermeasures against your preferred tactics. For example, frequent night raids may lead to more night-vision equipment, accurate headshots may result in additional face protection, and repeated long-range engagements may cause enemies to equip suitable optics. Other possible responses include improved hearing protection and more effective ammunition. The system begins analyzing your performance after three completed PMC raids. Only 25\u201335% of eligible PMC bots receive countermeasures, with a maximum of two per bot. This keeps encounters dynamic without turning every enemy into a perfectly equipped counter to the player. Countermeasure Protocol only adjusts completed bot loadouts. It does not control spawning, movement, combat behavior, personalities, looting, or extraction logic, helping it remain compatible with popular bot mods such as SAIN, ABPS, and ORBIT. It is fully configurable unter countermeasure_protocol.jsonc.</p>\n",
+     "description": "<p><strong>Note</strong></p>\n<ul>\n<li>This version <em>might</em> no longer compatible with FIKA. If you tried, let me know pls.</li>\n</ul>\n<p><strong>Added</strong></p>\n<ul>\n<li>AVS plate carrier (green &amp; multicam)</li>\n<li>6B45 amored rig</li>\n<li>Soft armor from Lv. 3 - Lv. 6</li>\n</ul>\n<p><strong>Changes</strong></p>\n<ul>\n<li>Unit-12 slightly nerfed and fixed the magazine bug</li>\n<li>DINNER41 stim gives now EnergyRate from the first second</li>\n<li>pTG and BONE stim has now less contussion effect, but both have a small chance of instant death.</li>\n</ul>\n<p><strong>New Feature</strong><br />\nCountermeasure Protocol (CP) is a new adaptive gameplay system that learns from your recent PMC raids and allows enemy PMCs to prepare countermeasures against your preferred tactics.\nFor example, frequent night raids may lead to more night-vision equipment, accurate headshots may result in additional face protection, and repeated long-range engagements may cause enemies to equip suitable optics.\nOther possible responses include improved hearing protection and more effective ammunition.\nThe system begins analyzing your performance after three completed PMC raids.\nOnly 25\u201335% of eligible PMC bots receive countermeasures, with a maximum of two per bot.\nThis keeps encounters dynamic without turning every enemy into a perfectly equipped counter to the player.\nCountermeasure Protocol only adjusts completed bot loadouts.\nIt does not control spawning, movement, combat behavior, personalities, looting, or extraction logic, helping it remain compatible with popular bot mods such as SAIN, ABPS, and ORBIT.\nIt is fully configurable unter countermeasure_protocol.jsonc.</p>\n",
      "spt_constraint": "~4.0.13",
      "fika": "unknown",
-     "downloads": 2168,
+     "downloads": 2216,
      "size": 173763,
      "link": "https://sp-mod.com/mod/download/2794/salcos-armory/0.3.0",
      "published_at": "2026-07-17T08:59:00.000000Z",
-     "dependencies": []
+     "dependencies": [
+      {
+       "id": 2310,
+       "name": "WTT - CommonLib",
+       "slug": "wtt-commonlib",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
+      },
+      {
+       "id": 2512,
+       "name": "WTT - Content Backport",
+       "slug": "wtt-content-backport",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2512/wtt-content-backport"
+      }
+     ]
     },
     {
      "id": 13977,
@@ -171728,18 +171787,32 @@
      "description": "<p>Re-Re-Re-Re\u2026 lease. \ud83e\udd21</p>\n",
      "spt_constraint": "~4.0.13",
      "fika": "compatible",
-     "downloads": 2446,
+     "downloads": 2496,
      "size": 86357,
      "link": "https://sp-mod.com/mod/download/2794/salcos-armory/0.1.2",
      "published_at": "2026-07-03T20:45:00.000000Z",
-     "dependencies": []
+     "dependencies": [
+      {
+       "id": 2310,
+       "name": "WTT - CommonLib",
+       "slug": "wtt-commonlib",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
+      },
+      {
+       "id": 2512,
+       "name": "WTT - Content Backport",
+       "slug": "wtt-content-backport",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2512/wtt-content-backport"
+      }
+     ]
     }
    ],
-   "latest_version": "0.6.2",
-   "spt_constraint": "~4.1.2",
+   "latest_version": "0.4.1",
+   "spt_constraint": "~4.0.13",
    "all_spt_constraints": [
-    "~4.0.13",
-    "~4.1.2"
+    "~4.0.13"
    ],
    "dependencies": [
     {
@@ -171747,7 +171820,14 @@
      "name": "WTT - CommonLib",
      "slug": "wtt-commonlib",
      "constraint": "",
-     "url": "https://forge.sp-tarkov.com/mod/2310/wtt-commonlib"
+     "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
+    },
+    {
+     "id": 2512,
+     "name": "WTT - Content Backport",
+     "slug": "wtt-content-backport",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/2512/wtt-content-backport"
     }
    ],
    "all_dependencies": [
@@ -171756,27 +171836,27 @@
      "name": "WTT - CommonLib",
      "slug": "wtt-commonlib",
      "constraint": "",
-     "url": "https://forge.sp-tarkov.com/mod/2310/wtt-commonlib"
+     "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
     },
     {
      "id": 2512,
      "name": "WTT - Content Backport",
      "slug": "wtt-content-backport",
      "constraint": "",
-     "url": "https://forge.sp-tarkov.com/mod/2512/wtt-content-backport"
+     "url": "https://sp-mod.com/mod/2512/wtt-content-backport"
     }
    ],
-   "published_at": "2026-07-20T17:24:00.000000Z",
-   "updated_at": "2026-08-07T23:47:47.000000Z",
+   "published_at": "2026-08-12T09:53:00.000000Z",
+   "updated_at": "2026-08-12T10:15:25.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
-    "ai_disclosure": "",
+    "ai_disclosure": "<p>AI was used as a <em>coding assistant</em> during the rewrite of this project. It helped with <em>structure</em>, <em>debugging</em>, <em>cleanup work</em> and some <em>documentation wording</em>.</p>\n<p>The actual mod direction, content, balancing, IDs, testing and final decisions are handled by Salco and his relatives. <strong>Nothing was added blindly without review or testing</strong>.</p>\n",
     "cheat_notice": false,
-    "profile_binding_notice": false
+    "profile_binding_notice": true
    },
    "origin": "forge",
-   "delisted": true
+   "delisted": false
   },
   {
    "id": 2795,
@@ -177396,8 +177476,8 @@
    "guid": "com.hj.customuisounds",
    "name": "Custom UI Sounds",
    "slug": "custom-ui-sounds",
-   "teaser": "Swap the in-game UI Audio to a custom soundpack",
-   "description_html": "<h1>Custom UI Sounds</h1>\n<p><strong>Replace Escape From Tarkov\u2019s Vanilla UI sounds with a custom soundpack</strong></p>\n<div class=\"youtube-lite\" data-video-id=\"ca23Cgp-ry4\" data-embed-url=\"https://www.youtube-nocookie.com/embed/ca23Cgp-ry4?autoplay=1\"><img src=\"https://i.ytimg.com/vi/ca23Cgp-ry4/hqdefault.jpg\" alt=\"YouTube video thumbnail\" loading=\"lazy\" decoding=\"async\" /></div>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Known Bugs</div>\n<div class=\"tab-content\"><ul>\n<li><strong>Audio Inconsistencies:</strong> Handpicking these files was a massive task that took me hours, so some packs might not be 100% perfect. Please report any audio \u201cissues\u201d.</li>\n<li><strong>Vanilla Audio:</strong> Certain packs rely on vanilla sounds in places where there weren\u2019t enough source files available to replace them.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Features</div>\n<div class=\"tab-content\"><ul>\n<li><strong>Change your UI soundpack instantly from the F12 menu</strong></li>\n<li><strong>Includes a growing library of custom UI soundpacks</strong></li>\n<li><strong>Keeps vanilla sounds available as a fallback</strong></li>\n<li><strong>Import your own custom soundpacks</strong> <em><strong>(Add-Ons)</strong></em></li>\n</ul></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Planned Features</div>\n<div class=\"tab-content\"><ul>\n<li><strong>Addtional Soundpacks</strong>, please request some :3</li>\n<li><strong>QoL Features</strong>, please request if you have a suggestion</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Credits</div>\n<div class=\"tab-content\"><p><strong>Special thanks to:</strong></p>\n<ul>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/116307/saga\" rel=\"noreferrer noopener\">Saga</a> <strong>for fine-tuning code and helping with questions</strong></li>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/4843/terkoiz\" rel=\"noreferrer noopener\">Terkoiz</a> <strong>for Thumbnail &amp; Mentoring</strong></li>\n</ul></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Included Soundpacks</div>\n<div class=\"tab-content\"><p><strong>Version 1.0 includes the following soundpacks:</strong></p>\n<ul>\n<li><strong>Bloodborne</strong></li>\n<li><strong>Call of Duty Advanced Warfare</strong></li>\n<li><strong>Call of Duty Black Ops 1</strong></li>\n<li><strong>Call of Duty Black Ops 2</strong></li>\n<li><strong>Call of Duty Black Ops 3</strong></li>\n<li><strong>Call of Duty Black Ops Cold War</strong></li>\n<li><strong>Call of Duty Ghosts</strong></li>\n<li><strong>Call of Duty Modern Warfare (2019)</strong></li>\n<li><strong>Call of Duty Modern Warfare 2 (2009)</strong></li>\n<li><strong>Call of Duty Modern Warfare 2 (Campaign Remastered)</strong></li>\n<li><strong>Call of Duty Vanguard</strong></li>\n<li><strong>Cyberpunk 2077</strong></li>\n<li><strong>Dark Souls 3</strong></li>\n<li><strong>Dying Light</strong></li>\n<li><strong>Dying Light 2 Stay Human</strong></li>\n<li><strong>Elden Ring</strong></li>\n<li><strong>Fallout New Vegas</strong></li>\n<li><strong>Insurgency Sandstorm</strong></li>\n<li><strong>LEGO Marvel Super Heroes</strong></li>\n<li><strong>Metro Exodus</strong></li>\n<li><strong>Minecraft (PS3)</strong></li>\n<li><strong>PlayStation 4</strong></li>\n<li><strong>Resident Evil 2 (2019)</strong></li>\n<li><strong>Resident Evil 2 (2019) Retro</strong></li>\n<li><strong>SEGA Dreamcast</strong> (Requested by <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/33963/cj\" rel=\"noreferrer noopener\">Cj</a>)</li>\n<li><strong>Slime Rancher</strong></li>\n<li><strong>Stardew Valley</strong></li>\n<li><strong>The Division 1</strong></li>\n</ul></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">For Add-ons</div>\n<div class=\"tab-content\"><p><strong>For mod authors who would like to create their own soundpacks as a Add-On:</strong></p>\n<ul>\n<li>Create a folder in the /Sounds where all the other soundpacks are located.</li>\n<li>Put in your soundfiles into that folder.</li>\n<li>Rename your soundfile to have a specific name from the Soundtype list below.</li>\n<li>You MUST have the exact same name as the Soundtype for your soundfile to even trigger.</li>\n<li>A \u201cAvailable UISounds.txt\u201d is also provided in the /Sounds folder on launch</li>\n<li>The File structure MUST look like this: \u201c\\BepInEx\\plugins\\CustomUISounds\\Sounds\\XYZ\u201d</li>\n<li>Supported fileformats: .mp3 \u2503 .wav \u2503 .ogg</li>\n<li>Please do NOT include the .dll file in your AddOn.</li>\n</ul>\n<p><strong>Soundtypes:</strong></p>\n<ul>\n<li>\n<p><strong>AchievementCompleted</strong></p>\n</li>\n<li>\n<p><strong>BackpackClose</strong></p>\n</li>\n<li>\n<p><strong>BackpackOpen</strong></p>\n</li>\n<li>\n<p><strong>ButtonBottomBarClick</strong></p>\n</li>\n<li>\n<p><strong>ButtonClick</strong></p>\n</li>\n<li>\n<p><strong>ButtonOver</strong></p>\n</li>\n<li>\n<p><strong>ChatSelect</strong></p>\n</li>\n<li>\n<p><strong>DialogButtonClick</strong></p>\n</li>\n<li>\n<p><strong>DialogButtonHover</strong></p>\n</li>\n<li>\n<p><strong>ErrorMessage</strong></p>\n</li>\n<li>\n<p><strong>GeneratorTurnOff</strong></p>\n</li>\n<li>\n<p><strong>GeneratorTurnOn</strong></p>\n</li>\n<li>\n<p><strong>InsuranceInsured</strong></p>\n</li>\n<li>\n<p><strong>InsuranceItemOnInsure</strong></p>\n</li>\n<li>\n<p><strong>MalfunctionExamined</strong></p>\n</li>\n<li>\n<p><strong>MenuCheckBox</strong></p>\n</li>\n<li>\n<p><strong>MenuContextMenu</strong></p>\n</li>\n<li>\n<p><strong>MenuDropdown</strong></p>\n</li>\n<li>\n<p><strong>MenuDropdownSelect</strong></p>\n</li>\n<li>\n<p><strong>MenuEscape</strong></p>\n</li>\n<li>\n<p><strong>MenuInspectorWindowClose</strong></p>\n</li>\n<li>\n<p><strong>MenuInspectorWindowOpen</strong></p>\n</li>\n<li>\n<p><strong>MenuInstallMag</strong></p>\n</li>\n<li>\n<p><strong>MenuInstallModFunc</strong></p>\n</li>\n<li>\n<p><strong>MenuInstallModGear</strong></p>\n</li>\n<li>\n<p><strong>MenuInstallModVital</strong></p>\n</li>\n<li>\n<p><strong>MenuMapTag</strong></p>\n</li>\n<li>\n<p><strong>MenuModdingClose</strong></p>\n</li>\n<li>\n<p><strong>MenuModdingOpen</strong></p>\n</li>\n<li>\n<p><strong>MenuOpenContainer</strong></p>\n</li>\n<li>\n<p><strong>MenuStock</strong></p>\n</li>\n<li>\n<p><strong>MenuTraderPress</strong></p>\n</li>\n<li>\n<p><strong>MenuWeaponAssemble</strong></p>\n</li>\n<li>\n<p><strong>MenuWeaponDisassemble</strong></p>\n</li>\n<li>\n<p><strong>PlayerIsDead</strong></p>\n</li>\n<li>\n<p><strong>QuestCompleted</strong></p>\n</li>\n<li>\n<p><strong>QuestFailed</strong></p>\n</li>\n<li>\n<p><strong>QuestFinished</strong></p>\n</li>\n<li>\n<p><strong>QuestStarted</strong></p>\n</li>\n<li>\n<p><strong>QuestSubTrackComplete</strong></p>\n</li>\n<li>\n<p><strong>RepairComplete</strong></p>\n</li>\n<li>\n<p><strong>TacticalClothingApply</strong></p>\n</li>\n<li>\n<p><strong>TacticalClothingBuy</strong></p>\n</li>\n<li>\n<p><strong>TradeOperationComplete</strong></p>\n</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Support/Requests</div>\n<div class=\"tab-content\"><p><strong>Found a bug or have a soundpack request?</strong></p>\n<ul>\n<li><strong>Bug Reports:</strong> Please open an issue on the <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/hjal-dev/Custom-UI-Sounds/issues\" rel=\"noreferrer noopener\">GitHub Issues</a> page.</li>\n<li><strong>Feature Requests:</strong> Feel free to suggest new features or request soundpacks in the comments.</li>\n<li><strong>Please avoid posting log files in Forge comments.</strong> GitHub makes it much easier to troubleshoot problems.</li>\n</ul></div></div></div>\n",
+   "teaser": "Swapping the in-game UI Audio to a custom soundpack",
+   "description_html": "<h1>Custom UI Sounds</h1>\n<p><strong>Replace The Vanilla UI sounds with a custom soundpack</strong></p>\n<div class=\"youtube-lite\" data-video-id=\"ca23Cgp-ry4\" data-embed-url=\"https://www.youtube-nocookie.com/embed/ca23Cgp-ry4?autoplay=1\"><img src=\"https://i.ytimg.com/vi/ca23Cgp-ry4/hqdefault.jpg\" alt=\"YouTube video thumbnail\" loading=\"lazy\" decoding=\"async\" /></div>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Known Bugs</div>\n<div class=\"tab-content\"><ul>\n<li><strong>Audio Inconsistencies:</strong> Handpicking these files was a massive task that took me hours, so some packs might not be 100% perfect. Please report any audio \u201cissues\u201d.</li>\n<li><strong>Vanilla Audio:</strong> Certain packs rely on vanilla sounds in places where there weren\u2019t enough source files available to replace them.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Features</div>\n<div class=\"tab-content\"><ul>\n<li><strong>Change your UI soundpack instantly from the F12 menu</strong></li>\n<li><strong>Includes a growing library of custom UI soundpacks</strong></li>\n<li><strong>Keeps vanilla sounds available as a fallback</strong></li>\n<li><strong>Import your own custom soundpacks</strong> <em><strong>(Add-Ons)</strong></em></li>\n</ul></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Planned Features</div>\n<div class=\"tab-content\"><ul>\n<li><strong>Addtional Soundpacks</strong>, please request some :3</li>\n<li><strong>QoL Features</strong>, please request if you have a suggestion</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Credits</div>\n<div class=\"tab-content\"><p><strong>Special thanks to:</strong></p>\n<ul>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/116307/saga\" rel=\"noreferrer noopener\">Saga</a> <strong>for fine-tuning code and helping with questions</strong></li>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/4843/terkoiz\" rel=\"noreferrer noopener\">Terkoiz</a> <strong>for Thumbnail &amp; Mentoring</strong></li>\n</ul></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Included Soundpacks</div>\n<div class=\"tab-content\"><p><strong>Version 1.0 includes the following soundpacks:</strong></p>\n<ul>\n<li><strong>Bloodborne</strong></li>\n<li><strong>Call of Duty Advanced Warfare</strong></li>\n<li><strong>Call of Duty Black Ops 1</strong></li>\n<li><strong>Call of Duty Black Ops 2</strong></li>\n<li><strong>Call of Duty Black Ops 3</strong></li>\n<li><strong>Call of Duty Black Ops Cold War</strong></li>\n<li><strong>Call of Duty Ghosts</strong></li>\n<li><strong>Call of Duty Modern Warfare (2019)</strong></li>\n<li><strong>Call of Duty Modern Warfare 2 (2009)</strong></li>\n<li><strong>Call of Duty Modern Warfare 2 (Campaign Remastered)</strong></li>\n<li><strong>Call of Duty Vanguard</strong></li>\n<li><strong>Cyberpunk 2077</strong></li>\n<li><strong>Dark Souls 3</strong></li>\n<li><strong>Dying Light</strong></li>\n<li><strong>Dying Light 2 Stay Human</strong></li>\n<li><strong>Elden Ring</strong></li>\n<li><strong>Fallout New Vegas</strong></li>\n<li><strong>Insurgency Sandstorm</strong></li>\n<li><strong>LEGO Marvel Super Heroes</strong></li>\n<li><strong>Metro Exodus</strong></li>\n<li><strong>Minecraft (PS3)</strong></li>\n<li><strong>PlayStation 4</strong></li>\n<li><strong>Resident Evil 2 (2019)</strong></li>\n<li><strong>Resident Evil 2 (2019) Retro</strong></li>\n<li><strong>SEGA Dreamcast</strong> (Requested by <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/33963/cj\" rel=\"noreferrer noopener\">Cj</a>)</li>\n<li><strong>Slime Rancher</strong></li>\n<li><strong>Stardew Valley</strong></li>\n<li><strong>The Division 1</strong></li>\n</ul></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">For Add-ons</div>\n<div class=\"tab-content\"><p><strong>For mod authors who would like to create their own soundpacks as a Add-On:</strong></p>\n<ul>\n<li>Create a folder in the /Sounds where all the other soundpacks are located.</li>\n<li>Put in your soundfiles into that folder.</li>\n<li>Rename your soundfile to have a specific name from the Soundtype list below.</li>\n<li>You MUST have the exact same name as the Soundtype for your soundfile to even trigger.</li>\n<li>A \u201cAvailable UISounds.txt\u201d is also provided in the /Sounds folder on launch</li>\n<li>The File structure MUST look like this: \u201c\\BepInEx\\plugins\\CustomUISounds\\Sounds\\XYZ\u201d</li>\n<li>Supported fileformats: .mp3 \u2503 .wav \u2503 .ogg</li>\n<li>Please do NOT include the .dll file in your AddOn.</li>\n</ul>\n<p><strong>Soundtypes:</strong></p>\n<ul>\n<li>\n<p><strong>AchievementCompleted</strong></p>\n</li>\n<li>\n<p><strong>BackpackClose</strong></p>\n</li>\n<li>\n<p><strong>BackpackOpen</strong></p>\n</li>\n<li>\n<p><strong>ButtonBottomBarClick</strong></p>\n</li>\n<li>\n<p><strong>ButtonClick</strong></p>\n</li>\n<li>\n<p><strong>ButtonOver</strong></p>\n</li>\n<li>\n<p><strong>ChatSelect</strong></p>\n</li>\n<li>\n<p><strong>DialogButtonClick</strong></p>\n</li>\n<li>\n<p><strong>DialogButtonHover</strong></p>\n</li>\n<li>\n<p><strong>ErrorMessage</strong></p>\n</li>\n<li>\n<p><strong>GeneratorTurnOff</strong></p>\n</li>\n<li>\n<p><strong>GeneratorTurnOn</strong></p>\n</li>\n<li>\n<p><strong>InsuranceInsured</strong></p>\n</li>\n<li>\n<p><strong>InsuranceItemOnInsure</strong></p>\n</li>\n<li>\n<p><strong>MalfunctionExamined</strong></p>\n</li>\n<li>\n<p><strong>MenuCheckBox</strong></p>\n</li>\n<li>\n<p><strong>MenuContextMenu</strong></p>\n</li>\n<li>\n<p><strong>MenuDropdown</strong></p>\n</li>\n<li>\n<p><strong>MenuDropdownSelect</strong></p>\n</li>\n<li>\n<p><strong>MenuEscape</strong></p>\n</li>\n<li>\n<p><strong>MenuInspectorWindowClose</strong></p>\n</li>\n<li>\n<p><strong>MenuInspectorWindowOpen</strong></p>\n</li>\n<li>\n<p><strong>MenuInstallMag</strong></p>\n</li>\n<li>\n<p><strong>MenuInstallModFunc</strong></p>\n</li>\n<li>\n<p><strong>MenuInstallModGear</strong></p>\n</li>\n<li>\n<p><strong>MenuInstallModVital</strong></p>\n</li>\n<li>\n<p><strong>MenuMapTag</strong></p>\n</li>\n<li>\n<p><strong>MenuModdingClose</strong></p>\n</li>\n<li>\n<p><strong>MenuModdingOpen</strong></p>\n</li>\n<li>\n<p><strong>MenuOpenContainer</strong></p>\n</li>\n<li>\n<p><strong>MenuStock</strong></p>\n</li>\n<li>\n<p><strong>MenuTraderPress</strong></p>\n</li>\n<li>\n<p><strong>MenuWeaponAssemble</strong></p>\n</li>\n<li>\n<p><strong>MenuWeaponDisassemble</strong></p>\n</li>\n<li>\n<p><strong>PlayerIsDead</strong></p>\n</li>\n<li>\n<p><strong>QuestCompleted</strong></p>\n</li>\n<li>\n<p><strong>QuestFailed</strong></p>\n</li>\n<li>\n<p><strong>QuestFinished</strong></p>\n</li>\n<li>\n<p><strong>QuestStarted</strong></p>\n</li>\n<li>\n<p><strong>QuestSubTrackComplete</strong></p>\n</li>\n<li>\n<p><strong>RepairComplete</strong></p>\n</li>\n<li>\n<p><strong>TacticalClothingApply</strong></p>\n</li>\n<li>\n<p><strong>TacticalClothingBuy</strong></p>\n</li>\n<li>\n<p><strong>TradeOperationComplete</strong></p>\n</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Support/Requests</div>\n<div class=\"tab-content\"><p><strong>Found a bug or have a soundpack request?</strong></p>\n<ul>\n<li><strong>Bug Reports:</strong> Please open an issue on the <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/hjal-dev/Custom-UI-Sounds/issues\" rel=\"noreferrer noopener\">GitHub Issues</a> page.</li>\n<li><strong>Feature Requests:</strong> Feel free to suggest new features or request soundpacks in the comments.</li>\n<li><strong>Please avoid posting log files in Forge comments.</strong> GitHub makes it much easier to troubleshoot problems.</li>\n</ul></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/8t2iK43YnxUpUlt6BHKOZ49P2PIBc8QnqPofbpV8.png",
    "forge_url": "https://sp-mod.com/mod/2845/custom-ui-sounds",
    "downloads": 512,
@@ -177448,8 +177528,8 @@
    ],
    "dependencies": [],
    "all_dependencies": [],
-   "published_at": "2026-07-26T13:16:10.000000Z",
-   "updated_at": "2026-08-01T16:25:22.000000Z",
+   "published_at": "2026-07-26T13:16:00.000000Z",
+   "updated_at": "2026-08-12T08:59:23.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -182149,28 +182229,33 @@
   {
    "id": 2897,
    "hub_id": null,
-   "guid": "com.bensburnedwaffles.hitmarkers",
-   "name": "Simple Hit Markers",
-   "slug": "simple-hit-markers",
-   "teaser": "Customizable hit markers for SPT 4.1.2 with normal, armor/ricochet, and kill indicators.",
-   "description_html": "<p>A lightweight customizable hit marker system for SPT.</p>\n<p>Hit markers are displayed at the actual point where your bullet hits the target rather than being permanently locked to the center of the screen.</p>\n<h2>Features</h2>\n<ul>\n<li>Normal damage hit markers</li>\n<li>Armor / ricochet hit markers</li>\n<li>Kill hit markers</li>\n<li>Marker positioning at the actual impact point</li>\n<li>Individual scale setting for every marker type</li>\n<li>Individual RGB customization</li>\n<li>Live color previews in the F12 menu</li>\n<li>PMC support</li>\n<li>Player Scav support</li>\n<li>No server mod required</li>\n</ul>\n<h2>Marker Types</h2>\n<p><strong>Normal Hit</strong>\nAppears when an enemy takes normal damage.</p>\n<p><strong>Armor Hit</strong>\nAppears when armor interacts with the shot or the projectile ricochets.</p>\n<p><strong>Kill</strong>\nAppears when the target is killed.</p>\n<h2>Configuration</h2>\n<p>Press <strong>F12</strong> in-game.</p>\n<p>Each marker has its own:</p>\n<ul>\n<li>Scale</li>\n<li>Color</li>\n<li>R / B / G controls</li>\n</ul>\n<p>Changes can be made from the configuration menu.</p>\n<h2>Installation</h2>\n<ol>\n<li>Download the archive.</li>\n<li>Extract it.</li>\n<li>Merge the <code>BepInEx</code> folder.</li>\n<li>Launch SPT.</li>\n</ol>\n<p>The DLL should end up at:</p>\n<p><code>BepInEx/plugins/SimpleHitMarkers/HitMarkers.Client</code></p>\n<h2>Uninstallation</h2>\n<p>Delete:</p>\n<p><code>BepInEx/plugins/SimpleHitMarkers/</code></p>\n<h2>Compatibility</h2>\n<p>Tested on <strong>SPT 4.1.2</strong>.</p>\n<p>Fika compatibility has not been tested.</p>\n",
-   "thumbnail": "https://forge-static.sp-tarkov.com/mods/P5d4oXHCFnfnErxYeTO7pZYK2j9zbnzxgwTMzHJQ.png",
-   "forge_url": "https://forge.sp-tarkov.com/mod/2897/simple-hit-markers",
-   "downloads": 140,
-   "favourites": 0,
+   "guid": "eu.thescrewcollab.equipmentiseternal",
+   "name": "Equipment Is Eternal",
+   "slug": "equipment-is-eternal",
+   "teaser": "TL;DR: Do not lose equipment, specific slots configurable",
+   "description_html": "<h2>Overview</h2>\n<p>EquipmentIsEternal is a server-side mod for SPT 4.1.2 that brings your gear back after death. The mod takes a snapshot of your equipped loadout before each raid. If you die, it restores your pre-raid equipment automatically.</p>\n<p>Lost a fully modded M4 to a scav headshot? Not anymore.</p>\n<h2>How It Works</h2>\n<ol>\n<li><strong>Before raid</strong>: The mod snapshots all your equipped items, including attachments and container contents</li>\n<li><strong>On death</strong>: After SPT runs its normal death processing, the mod puts your pre-raid equipment back</li>\n<li><strong>On survival</strong>: Nothing happens. You keep whatever you extracted with</li>\n</ol>\n<h2>Features</h2>\n<h3>Tier 1 - Always Restored (hardcoded)</h3>\n<p>These equipment slots are always restored to their pre-raid state on death:</p>\n<ul>\n<li><strong>Weapons</strong>: Primary weapon (sling), secondary weapon (back), holster</li>\n<li><strong>Protection</strong>: Body armor, tactical rig, headwear, earpiece, eyewear, face cover</li>\n<li><strong>Storage</strong>: Pockets and their contents</li>\n</ul>\n<h3>Tier 2 - Optionally Restored (configurable, off by default)</h3>\n<p>These slots can be restored to their pre-raid state. When disabled (default), you keep whatever you had in these slots at the end of the raid:</p>\n<ul>\n<li>Armband</li>\n<li>Special slots</li>\n<li>Sheath (melee weapon)</li>\n<li>Secured container (pouch)</li>\n</ul>\n<h3>Tier 3 - Insurance Gate (configurable, off by default)</h3>\n<p>When enabled, Tier 1 items are only restored if they were insured before the raid. Uninsured equipment is lost normally. Does not affect Tier 2 slots.</p>\n<h3>Tier 4 - Quest Item Preservation (configurable, off by default)</h3>\n<p>When enabled, quest items collected during the raid survive death instead of being lost. These are items in the separate quest item inventory, not regular loot.</p>\n<h2>Configuration</h2>\n<p>Edit <code>config.jsonc</code> in the mod folder:</p>\n<pre><code>{\n  // Tier 2: Optionally restore these slots on death (default: keep raid version)\n  \"RestoreArmBand\": false,\n  \"RestoreSpecialSlots\": false,\n  \"RestoreScabbard\": false,\n  \"RestoreSecuredContainer\": false,\n\n  // Tier 3: Only restore Tier 1 equipment that was insured before raid\n  \"OnlyRestoreInsured\": false,\n\n  // Tier 4: Preserve quest items collected during raid on death\n  \"KeepQuestItems\": false\n}\n</code></pre>\n<h2>Installation</h2>\n<p>Extract the <code>EquipmentIsEternal</code> folder into <code>SPT_Runtime/user/mods/</code> and start the server. You should see \u201cEquipmentIsEternal loaded\u201d in the console.</p>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/bR0eZKL5GUCzylfKszPlcCMCE75GaaIR2LJeSZB2.jpg",
+   "forge_url": "https://sp-mod.com/mod/2897/equipment-is-eternal",
+   "downloads": 12,
+   "favourites": 1,
    "featured": false,
-   "fika": false,
-   "fika_latest": "unknown",
+   "fika": true,
+   "fika_latest": "compatible",
    "category": {
-    "id": 13,
-    "title": "Weapons",
-    "slug": "weapons"
+    "id": 15,
+    "title": "Equipment",
+    "slug": "equipment"
    },
    "license": {
-    "name": "MIT License",
-    "link": "https://choosealicense.com/licenses/mit/"
+    "name": "GNU GPLv3",
+    "link": "https://choosealicense.com/licenses/gpl-3.0/"
    },
    "authors": [
+    {
+     "id": 34185,
+     "name": "ScrewTSW",
+     "avatar": "https://files.sp-mod.com/profile-photos/9ee56920d18c92a8ce8c1438a2df49cd628cd405_128w.webp"
+    },
     {
      "id": "119850-arch",
      "name": "BensBurnedWaffles",
@@ -182179,42 +182264,262 @@
    ],
    "source_links": [
     {
-     "url": "https://github.com/benux33/SimpleHitmarker",
+     "url": "https://github.com/ScrewTSW/EquipmentIsEternal",
      "label": ""
     }
    ],
    "versions": [
     {
-     "id": 14637,
+     "id": 14663,
      "version": "1.0.0",
-     "description": "<p>First realease that includes:</p>\n<ul>\n<li>Normal hit markers</li>\n<li>Armor / ricochet hit markers</li>\n<li>Kill hit markers</li>\n<li>World-space impact positioning</li>\n<li>Individual marker scaling</li>\n<li>Individual RGB color customization</li>\n<li>Live color preview in the F12 menu</li>\n<li>PMC support</li>\n<li>Player Scav support</li>\n</ul>\n",
-     "spt_constraint": "~4.1",
-     "fika": "unknown",
-     "downloads": 140,
-     "size": 7864,
-     "link": "https://forge.sp-tarkov.com/mod/download/2897/simple-hit-markers/1.0.0",
-     "published_at": "2026-08-10T22:07:26.000000Z",
+     "description": "<p>Initial build.</p>\n<p>May still be buggy</p>\n",
+     "spt_constraint": "~4.1.0",
+     "fika": "compatible",
+     "downloads": 12,
+     "size": 11291,
+     "link": "https://sp-mod.com/mod/download/2897/equipment-is-eternal/1.0.0",
+     "published_at": "2026-08-12T08:00:00.000000Z",
      "dependencies": []
     }
    ],
    "latest_version": "1.0.0",
-   "spt_constraint": "~4.1",
+   "spt_constraint": "~4.1.0",
    "all_spt_constraints": [
-    "~4.1"
+    "~4.1.0"
    ],
    "dependencies": [],
    "all_dependencies": [],
-   "published_at": "2026-08-10T22:07:00.000000Z",
-   "updated_at": "2026-08-10T22:46:37.000000Z",
+   "published_at": "2026-08-12T08:00:00.000000Z",
+   "updated_at": "2026-08-12T10:24:49.000000Z",
    "flags": {
     "contains_ads": false,
-    "contains_ai_content": false,
-    "ai_disclosure": "",
+    "contains_ai_content": true,
+    "ai_disclosure": "<p>AI was used for assistance and static analysis of classes and dependencies</p>\n",
+    "cheat_notice": false,
+    "profile_binding_notice": true
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 2898,
+   "hub_id": null,
+   "guid": "eu.thescrewcollab.firmeansfir",
+   "name": "FIR Means FIR",
+   "slug": "fir-means-fir",
+   "teaser": "TL;DR: This mod allows your items to keep FIR status, if it spawned in the raid, it's FIR",
+   "description_html": "<h2>Overview</h2>\n<p>FIR_MEANS_FIR is a server + client mod for SPT 4.1.2 that stops Found in Raid status from being stripped. In vanilla SPT, items lose their FIR checkmark when you die, when the client loads them into a raid, or when they sit in your secure container during death. This mod prevents all of that.</p>\n<p>Bring FIR items into raid for your friends in Fika. Die with FIR loot and keep the checkmark. Secure container items stay FIR too.</p>\n<h2>How It Works</h2>\n<p>The mod has two parts:</p>\n<h3>Server Component</h3>\n<ul>\n<li>Patches <code>InRaidHelper.RemoveFiRStatusFromItems</code> to skip the FIR removal pass on death</li>\n<li>Patches <code>ItemExtensions.RemoveFiRStatusFromItemsInContainer</code> to stop the separate FIR strip targeting secure container items</li>\n<li>Snapshots which items have FIR before the raid and re-applies FIR after the raid ends as a safety net</li>\n</ul>\n<h3>Client Component (BepInEx plugin)</h3>\n<ul>\n<li>The EFT client calls <code>Profile.SetSpawnedInSession(false)</code> when entering a raid, which strips FIR from every item you bring. The client plugin blocks this call so items stay FIR throughout the raid</li>\n<li>Without this, items dropped for friends during a Fika raid would lose FIR status</li>\n</ul>\n<h2>Features</h2>\n<table>\n<thead>\n<tr>\n<th>Feature</th>\n<th>Config Key</th>\n<th>Default</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Items keep FIR on death</td>\n<td><code>KeepFirOnDeath</code></td>\n<td><code>true</code></td>\n</tr>\n<tr>\n<td>Items brought into raid keep FIR</td>\n<td><code>KeepFirOnBroughtItems</code></td>\n<td><code>true</code></td>\n</tr>\n<tr>\n<td>Secure container, special slots, armband, sheath keep FIR on death</td>\n<td><code>KeepFirInProtectedSlots</code></td>\n<td><code>true</code></td>\n</tr>\n</tbody>\n</table>\n<p>All features are independently configurable and on by default.</p>\n<h2>Configuration</h2>\n<p>Edit <code>config.jsonc</code> in the server mod folder:</p>\n<pre><code>{\n  // Prevent FIR from being stripped on death for all items\n  \"KeepFirOnDeath\": true,\n\n  // Keep FIR on items brought into raid (survives death too)\n  \"KeepFirOnBroughtItems\": true,\n\n  // Keep FIR in secure container, special slots, armband, sheath on death\n  // Works even if KeepFirOnDeath is off\n  \"KeepFirInProtectedSlots\": true\n}\n</code></pre>\n<h2>Installation</h2>\n<p>This mod has two parts, both required for full coverage:</p>\n<p>Server mod - extract <code>server/</code> contents into <code>SPT_Runtime/user/mods/FIR_MEANS_FIR/</code>:</p>\n<pre><code>SPT_Runtime/user/mods/FIR_MEANS_FIR/\n  FIR_MEANS_FIR.dll\n  config.jsonc\n</code></pre>\n<p>Client plugin - copy <code>client/FIR_MEANS_FIR.Client.dll</code> into <code>BepInEx/plugins/</code></p>\n<h3>Why Both Parts?</h3>\n<p>The server mod alone stops FIR stripping during death processing on the server. But the EFT client independently strips FIR from items when entering a raid, before the server sees the post-raid inventory. Without the client plugin, items you bring into raid for friends show up as non-FIR when dropped.</p>\n<p>The client plugin alone keeps FIR during the raid, but on death the server would still strip FIR from your inventory before saving.</p>\n<p>Together they cover the full lifecycle.</p>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/hmVn7DqjNxBveQwDPGcnapO70LzoVvOIu04YPaci.jpg",
+   "forge_url": "https://sp-mod.com/mod/2898/fir-means-fir",
+   "downloads": 15,
+   "favourites": 0,
+   "featured": false,
+   "fika": true,
+   "fika_latest": "compatible",
+   "category": {
+    "id": 4,
+    "title": "Items",
+    "slug": "items"
+   },
+   "license": {
+    "name": "GNU GPLv3",
+    "link": "https://choosealicense.com/licenses/gpl-3.0/"
+   },
+   "authors": [
+    {
+     "id": 34185,
+     "name": "ScrewTSW",
+     "avatar": "https://files.sp-mod.com/profile-photos/9ee56920d18c92a8ce8c1438a2df49cd628cd405_128w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/ScrewTSW/FIR_MEANS_FIR",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 14664,
+     "version": "1.0.0",
+     "description": "<p>Initial release.</p>\n<p>Tested on death, on raid start, has BepInEx component to set FIR status on raid join so that you can share that juicy saleva with your friend</p>\n",
+     "spt_constraint": "~4.1.0",
+     "fika": "compatible",
+     "downloads": 15,
+     "size": 11318,
+     "link": "https://sp-mod.com/mod/download/2898/fir-means-fir/1.0.0",
+     "published_at": "2026-08-12T08:00:00.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "1.0.0",
+   "spt_constraint": "~4.1.0",
+   "all_spt_constraints": [
+    "~4.1.0"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-08-12T08:00:00.000000Z",
+   "updated_at": "2026-08-12T08:59:38.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": true,
+    "ai_disclosure": "<p>AI was used for assistance and static analysis of classes and dependencies</p>\n",
+    "cheat_notice": false,
+    "profile_binding_notice": true
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 2899,
+   "hub_id": null,
+   "guid": "com.mattdokn.startcollectorearly-4.1-port",
+   "name": "Start Collector Early",
+   "slug": "start-collector-early",
+   "teaser": "TL;DR: Port of Mattdokn's StartCollectorEarly to SPT 4.1.2.",
+   "description_html": "<h2>Overview</h2>\n<p>Port of Mattdokn\u2019s StartCollectorEarly to SPT 4.1.2. Start the Collector quest from level 1 (configurable) and turn in items as you find them, instead of waiting until all prerequisite quests are done.</p>\n<p>Stop hoarding Collector items in your stash for dozens of levels. Hand them over as you go.</p>\n<h2>Features</h2>\n<ul>\n<li><strong>Start at any level</strong>: The Collector quest becomes available at level 1 (configurable)</li>\n<li><strong>Early item turn-in</strong>: Hand over Collector items as you find them throughout your progression</li>\n<li><strong>Prerequisite quest completion</strong>: Optionally keeps the requirement to complete prerequisite quests before the Collector quest can be finished (not started)</li>\n<li><strong>Progressive task visibility</strong>: Prerequisite quest completion tasks are revealed one at a time instead of showing the full list</li>\n<li><strong>Hide FindItem tasks</strong>: Cleans up the task list by removing the \u201cfind item\u201d conditions</li>\n<li><strong>FIR requirement toggle</strong>: Optionally remove the Found in Raid requirement from hand-over tasks</li>\n</ul>\n<h2>Configuration</h2>\n<p>Edit <code>config.jsonc</code> in the mod folder:</p>\n<pre><code>{\n    // Level to start quest at\n    \"StartingLevel\": 1,\n    // Hide the Find Item tasks (cleans up the list a LOT)\n    \"HideFindItemTasks\": true,\n    // Remove found in raid requirement from Hand Over Item tasks\n    \"RemoveFoundInRaidRequirement\": false,\n    // Keep the requirement for required quests to be completed before collector can be completed\n    \"PrerequisiteQuestCompletionRequired\": true,\n    // If enabled, will hide quest completion tasks and show them one at a time\n    // Requires PrerequisiteQuestCompletionRequired: true\n    \"PrerequisiteQuestCompletionVisibility\": true\n}\n</code></pre>\n<h2>Installation</h2>\n<p>Extract the <code>StartCollectorEarly</code> folder into <code>SPT_Runtime/user/mods/</code> and start the server. You should see \u201c[Start Collector Early] Loaded\u201d in the console.</p>\n<h3>Changes from v1.4.0</h3>\n<ul>\n<li>Ported to SPT 4.1.2 C# server mod API</li>\n<li><code>RemoveFoundInRaidRequirement</code> default changed to false</li>\n<li>Config format changed to JSONC (with comments)</li>\n</ul>\n",
+   "thumbnail": "",
+   "forge_url": "https://sp-mod.com/mod/2899/start-collector-early",
+   "downloads": 29,
+   "favourites": 0,
+   "featured": false,
+   "fika": true,
+   "fika_latest": "compatible",
+   "category": {
+    "id": 7,
+    "title": "Quests",
+    "slug": "quests"
+   },
+   "license": {
+    "name": "The Unlicense",
+    "link": "https://choosealicense.com/licenses/unlicense/"
+   },
+   "authors": [
+    {
+     "id": 34185,
+     "name": "ScrewTSW",
+     "avatar": "https://files.sp-mod.com/profile-photos/9ee56920d18c92a8ce8c1438a2df49cd628cd405_128w.webp"
+    },
+    {
+     "id": 15330,
+     "name": "nader",
+     "avatar": "https://ui-avatars.com/api/?name=n&color=7F9CF5&background=EBF4FF"
+    },
+    {
+     "id": 41131,
+     "name": "Mattdokn",
+     "avatar": "https://files.sp-mod.com/profile-photos/89604c57f05fe3a50ae9cee0fb450fe70fa1a8c1_128w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/ScrewTSW/StartCollectorEarly",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 14665,
+     "version": "1.5.0",
+     "description": "<p>Version ported to SPT 4.1.2</p>\n",
+     "spt_constraint": "~4.1.0",
+     "fika": "compatible",
+     "downloads": 29,
+     "size": 8718,
+     "link": "https://sp-mod.com/mod/download/2899/start-collector-early/1.5.0",
+     "published_at": "2026-08-12T08:00:00.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "1.5.0",
+   "spt_constraint": "~4.1.0",
+   "all_spt_constraints": [
+    "~4.1.0"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-08-12T08:00:00.000000Z",
+   "updated_at": "2026-08-12T08:48:02.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": true,
+    "ai_disclosure": "<p>AI was used for assistance and static analysis of classes and dependencies</p>\n",
+    "cheat_notice": false,
+    "profile_binding_notice": true
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 2900,
+   "hub_id": null,
+   "guid": "com.thecrimsonfuckr.taskitemindicator",
+   "name": "Task Item Indicator Backport For 4.0.13",
+   "slug": "task-item-indicator-backport-for-4013",
+   "teaser": "Find where to do things easier, a small ring fades in when you're near a task, works with multiple trigger types like placing picking up etc...",
+   "description_html": "<h1>Task Item Indicator</h1>\n<p>Live T***** got a thing in 1.0.5.0 where a small segmented ring shows up in the middle of your screen when you\u2019re near a task item you still need, and the part of the ring facing the item lights up. SPT\u2019s client is older than that patch so it never shows up. This puts it back.</p>\n<h2>How it works</h2>\n<p>Get within range of a task item you still need and a faint ring fades in at the centre of your screen. The arcs facing the item light up brighter, so an item behind you lights the bottom of the ring and you know to turn around. Walk toward it while looking at it and the whole ring goes bright as you arrive.</p>\n<p>It only fires on <strong>task items</strong> - the ones that go in your task items tab. A quest that wants three Salewas won\u2019t light up every Salewa on the map. Mark and place-beacon objectives light up the same way, pointing at the zone you need to reach instead of a loot pickup.</p>\n<p>Turn away while you\u2019re standing near it and the direction comes straight back, because that\u2019s exactly when you still need it.</p>\n<h2>Where the ring came from</h2>\n<p>The ring is generated procedurally at startup from measurements taken off B**\u2019s own reveal footage:</p>\n<ul>\n<li>four arcs, roughly 70 degrees each, centred on the diagonals</li>\n<li>gaps of about 20 degrees on the cardinals, which is why \u201cbehind you\u201d lights two arcs rather than one</li>\n<li>outer radius 7px, inner 4px at 720p, scaled to your screen height</li>\n<li>each arc brightest in its middle, tapering to about 72% at the ends</li>\n</ul>\n<p>Three frames across two different scenes agreed on all of it to within a few percent.</p>\n<h2>Settings</h2>\n<p>F12 in game.</p>\n<table>\n<thead>\n<tr>\n<th>Setting</th>\n<th>Default</th>\n<th>What it does</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Enable Mod</td>\n<td>on</td>\n<td>master toggle</td>\n</tr>\n<tr>\n<td>Ring Scale</td>\n<td>1.0</td>\n<td>size multiplier. 1.0 matches live, which is small</td>\n</tr>\n<tr>\n<td>Ring Thickness</td>\n<td>0.43</td>\n<td>band width as a fraction of the ring\u2019s radius. higher is thicker, 1.0 is a solid disc</td>\n</tr>\n<tr>\n<td>Ring Opacity</td>\n<td>1.0</td>\n<td>maximum opacity the ring reaches when fully lit</td>\n</tr>\n<tr>\n<td>Ring Color</td>\n<td>white</td>\n<td>tint applied to the ring</td>\n</tr>\n<tr>\n<td>Converge Distance</td>\n<td>1.5 m</td>\n<td>how close before the whole ring lights up instead of pointing. you have to be looking at it too</td>\n</tr>\n<tr>\n<td>Scan Interval</td>\n<td>0.25 s</td>\n<td>how often it looks for items. direction still updates every frame</td>\n</tr>\n</tbody>\n</table>\n<p>Distances are measured from your eyes, not your feet, so an item on a shelf and one on the floor read the same.</p>\n<p>Client-only BepInEx plugin. Built for SPT 4.0.13. See <code>BUILD.md</code> for the full\nsetup/build/test guide.</p>\n<h2>Install</h2>\n<p>Extract the archive and drop the <code>BepInEx</code> folder into your SPT root. Needs SPT 4.0.13.</p>\n<h2>Credits</h2>\n<p>Original mod by Vultify - the initial ring measurements, the Shared/plugin split, and the whole idea of this feature were their work.</p>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/qWiHkcbwjXi1YqFdqnTYTHu3ffUMtxQYBj3rgUOu.png",
+   "forge_url": "https://sp-mod.com/mod/2900/task-item-indicator-backport-for-4013",
+   "downloads": 49,
+   "favourites": 1,
+   "featured": false,
+   "fika": true,
+   "fika_latest": "compatible",
+   "category": {
+    "id": 3,
+    "title": "Scripting",
+    "slug": "scripting"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 96898,
+     "name": "the.crimson.fuckr",
+     "avatar": "https://files.sp-mod.com/profile-photos/q6W4ELDHFO4coicwMm4IWNhUClQ4AB5ecquG30AK_128w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/TheCrimsonFckr/TCFTaskItemIndicatorBackport",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 14667,
+     "version": "1.0.0",
+     "description": "<p>Initial Release</p>\n",
+     "spt_constraint": "4.0.13",
+     "fika": "compatible",
+     "downloads": 49,
+     "size": 26440,
+     "link": "https://sp-mod.com/mod/download/2900/task-item-indicator-backport-for-4013/1.0.0",
+     "published_at": "2026-08-12T08:37:00.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "1.0.0",
+   "spt_constraint": "4.0.13",
+   "all_spt_constraints": [
+    "4.0.13"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-08-12T08:42:00.000000Z",
+   "updated_at": "2026-08-12T09:12:33.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": true,
+    "ai_disclosure": "<p>Parts of this project were written with AI assistance (Claude Opus 5) - cleaning up, improving code quality and code comments for clarity. All changes were reviewed confirmed and tested in-game before release.</p>\n",
     "cheat_notice": false,
     "profile_binding_notice": false
    },
    "origin": "forge",
-   "delisted": true
+   "delisted": false
   }
  ]
 }
