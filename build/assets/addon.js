@@ -12,7 +12,7 @@
 
   function render(addon) {
     var parent = addon.parent
-      ? '<p class="addonparent">Extends <a href="' + R.esc(addon.parent.href) +
+      ? '<p class="addonparent">Extends <a href="' + R.esc(R.url(addon.parent.href)) +
         '">' + R.esc(addon.parent.name) + "</a></p>"
       : '<p class="addonparent">The mod this addon extends is not in the ' +
         "archive.</p>";

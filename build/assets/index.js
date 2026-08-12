@@ -276,7 +276,10 @@
     var links = mod.author_links || [];
     if (!links.length) return esc(mod.authors);
     return links.map(function (author) {
-      return '<a class="authorlink" href="user/' + esc(author[2]) +
+      // author[2] is already the root-relative "user/<slug>.html" that
+      // build.user_url() produced -- the same convention every other href on
+      // this page follows. Prefixing "user/" here made it user/user/….
+      return '<a class="authorlink" href="' + esc(author[2]) +
         '" title="Everything by this author">' + esc(author[1]) + "</a>";
     }).join(", ");
   }

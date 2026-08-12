@@ -112,7 +112,8 @@
     var links = addon.author_links || [];
     if (!links.length) return esc(addon.authors);
     return links.map(function (author) {
-      return '<a class="authorlink" href="user/' + esc(author[2]) +
+      // Already root-relative "user/<slug>.html" -- see index.js authorLinks().
+      return '<a class="authorlink" href="' + esc(author[2]) +
         '" title="Everything by this author">' + esc(author[1]) + "</a>";
     }).join(", ");
   }
