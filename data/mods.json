@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-08-12T05:11:25Z",
+ "generated_at": "2026-08-12T07:58:32Z",
  "source": "https://sp-mod.com",
  "filter": "all",
- "mod_count": 1841,
+ "mod_count": 1842,
  "categories": [
   {
    "id": 12,
@@ -102970,6 +102970,72 @@
    "delisted": false
   },
   {
+   "id": 1981,
+   "hub_id": 2661,
+   "guid": "com.deadwolf.spt.readablekeys",
+   "name": "READABLE KEYS by DeadW0Lf",
+   "slug": "readable-keys-by-deadw0lf",
+   "teaser": "Improved descriptions, tooltip and short names for Keys and Keycards. Also modifiable usage count in config.",
+   "description_html": "<p>Feel Free to edit and upgrade the Mod, I am busy IRL so do not have time to moding.</p>\n<p>Configurable properties for Key and Keycard usage have been added.</p>\n<p>Keys and keycards will now have a map-specific prefix, making it easier to distinguish keys belonging to different maps. Each map will have a corresponding prefix for the short name:</p>\n<p>RENAMED to READABLE KEYS - Please delete older folder **<code>deadw0lf-betterkeys**</code> from mod folder and install the latest version</p>\n<ul>\n<li>\u201cFACTORY\u201d: \u201cFC\u201d</li>\n<li>\u201cCUSTOMS\u201d: \u201cCS\u201d</li>\n<li>\u201cSHORELINE\u201d: \u201cSL\u201d</li>\n<li>\u201cWOODS\u201d: \u201cWD\u201d</li>\n<li>\u201cINTERCHANGE\u201d: \u201cIC\u201d</li>\n<li>\u201cLIGHTHOUSE\u201d: \u201cLH\u201d</li>\n<li>\u201cRESERVE\u201d: \u201cRB\u201d</li>\n<li>\u201cLAB\u201d: \u201cLB\u201d</li>\n<li>\u201cSTREETS\u201d: \u201cFC\u201d</li>\n<li>\u201cGROUNDZERO\u201d: \u201cFC\u201d</li>\n</ul>\n<p>Additionally, the map name has been included in the key description.</p>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/2661.jpg",
+   "forge_url": "https://sp-mod.com/mod/1981/readable-keys-by-deadw0lf",
+   "downloads": 4655,
+   "favourites": 1,
+   "featured": false,
+   "fika": false,
+   "fika_latest": "unknown",
+   "category": null,
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 5571,
+     "name": "DeadW0Lf",
+     "avatar": "https://files.sp-mod.com/profile-photos/8cd99d706c98328dc5354eb7e5b798660ebd84e2_128w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/Niharkanta1/TarkovMods",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 14660,
+     "version": "4.1.2",
+     "description": "<p>Easy to read and remember Key names.</p>\n<ul>\n<li>added new keys</li>\n<li>configurations for max number of usage</li>\n</ul>\n",
+     "spt_constraint": "4.1.2",
+     "fika": "unknown",
+     "downloads": 19,
+     "size": 32697,
+     "link": "https://sp-mod.com/mod/download/1981/readable-keys-by-deadw0lf/4.1.2",
+     "published_at": "2026-08-12T06:22:00.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "4.1.2",
+   "spt_constraint": "4.1.2",
+   "all_spt_constraints": [
+    "4.1.2"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2025-01-25T08:53:35.000000Z",
+   "updated_at": "2026-08-12T06:22:31.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
    "id": 1982,
    "hub_id": 2662,
    "guid": null,
@@ -181471,11 +181537,11 @@
    "name": "SRB - SALCO's ROAMING BOTS",
    "slug": "srb-salcos-roaming-bots",
    "teaser": "Let bots leave their comfort zones.",
-   "description_html": "<p><a target=\"_blank\" class=\"external-link\" href=\"https://postimg.cc/zbf8RGnZ\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.postimg.cc/k4Q4zVG4/SRB-transparent.png\" alt=\"SRB-transparent.png\" /></a></p>\n<p>Overview</p>\n<p>Bots in SPT often remain close to their spawn areas, repeating the same short patrols and leaving large parts of the map feeling empty.</p>\n<p><strong>SRB \u2013 Salco\u2019s Roaming Bots</strong> encourages eligible bots to leave those familiar areas and travel across the map. When a bot has nothing more important to do, SRB selects a distant, reachable destination and sends it there. After a short pause, the bot can continue toward another area.</p>\n<p>This creates less predictable encounters and gives bots a reason to appear along connecting routes, inside distant locations, and in areas that would otherwise remain quiet.</p>\n<p>SRB does not replace combat AI. Combat, danger, healing, and other important actions always take priority. When a bot encounters an enemy or comes under fire, SRB gives control back to the bot\u2019s normal combat behavior.</p>\n<p>The mod is deliberately focused on one task: <strong>making idle bots move around the map.</strong></p>\n<p>Features</p>\n<ul>\n<li>Sends eligible bots toward distant locations across the map</li>\n<li>Uses dynamically selected destinations instead of fixed patrol points</li>\n<li>Only accepts destinations with a complete NavMesh route</li>\n<li>Automatically yields to combat, danger, healing, and higher-priority AI</li>\n<li>Keeps groups together by assigning distant targets to group leaders by default</li>\n<li>Avoids recently visited destinations</li>\n<li>Discourages multiple roaming bots from selecting the same area</li>\n<li>Detects bots that are no longer making progress and assigns a new destination</li>\n<li>Distributes path calculations over multiple frames</li>\n<li>Includes configurable limits to keep resource usage low</li>\n<li>Provides a compact activity report at the end of each raid</li>\n<li>Includes an optional debug free camera for observing bots across the map</li>\n<li>Can be configured through the BepInEx F12 menu</li>\n</ul>\n<p>SRB does <strong>not</strong>:</p>\n<ul>\n<li>Change bot equipment or progression</li>\n<li>Change bot spawn numbers</li>\n<li>Replace combat behavior</li>\n<li>Simulate quests</li>\n<li>Make bots loot containers or corpses</li>\n<li>Force bots to extract</li>\n<li>Teleport stuck bots</li>\n<li>Unlock inaccessible doors</li>\n</ul>\n<p>How It Works</p>\n<p>While a supported bot is idle and safe, SRB searches for a distant location on the expanded Waypoints NavMesh.</p>\n<p>Several possible destinations are evaluated, but only complete routes are accepted. The bot then travels toward the selected destination using normal EFT movement.</p>\n<p>SRB stops controlling the bot whenever a more important behavior takes over. This includes:</p>\n<ul>\n<li>Combat</li>\n<li>Recent gunfire or danger</li>\n<li>Medical treatment</li>\n<li>Higher-priority BigBrain layers</li>\n<li>Group-following behavior</li>\n<li>Other supported objective systems</li>\n</ul>\n<p>After the situation is safe again, SRB waits for the configured post-combat cooldown before selecting another destination.</p>\n<p>By default, only solo bots and group leaders receive SRB destinations. Other group members remain under their usual follower behavior.</p>\n<p>Comparison</p>\n<p>ModMain PurposeDifference from SRB<strong>SRB</strong>Map-wide idle roamingSends otherwise idle bots toward dynamically selected, distant destinations without assigning quests, loot objectives, or extraction goals.<strong>Looting Bots</strong>Bot looting behaviorAllows bots to search containers, corpses, loose items, and airdrops. Movement happens because the bot wants to loot something. SRB does not interact with loot.<strong>Questing Bots</strong>Simulated quests and objectivesSends bots to real quest locations and can simulate planting items, holding areas, boss hunting, spawn rushing, and other objectives. SRB provides simpler, objective-free roaming.<strong>ORBIT</strong>Full bot lifecycle and squad objectivesControls squad goals, looting, PvP hotspots, quest routing, coordination, and extraction. SRB is intentionally smaller and only controls idle roaming.<strong>ABPS</strong>Bot spawning and placementControls when, where, and how many bots, waves, PMCs, or bosses spawn. It does not determine where those bots travel after spawning.<strong>APBS</strong>Bot progression and equipmentAdjusts bot levels, weapons, ammunition, equipment, and progression tiers. It does not control bot navigation or roaming.A simple way to separate these mods:</p>\n<ul>\n<li><strong>ABPS:</strong> Who spawns, where, and when?</li>\n<li><strong>APBS:</strong> What level and equipment does the bot have?</li>\n<li><strong>Looting Bots:</strong> What does the bot pick up?</li>\n<li><strong>Questing Bots:</strong> Which simulated quest does the bot perform?</li>\n<li><strong>ORBIT:</strong> What full raid lifecycle does the squad follow?</li>\n<li><strong>SRB:</strong> Where does an otherwise idle bot go next?</li>\n</ul>\n<p>Compatibility</p>\n<h4>BigBrain and Waypoints</h4>\n<p>BigBrain and Waypoints are required dependencies.</p>\n<ul>\n<li><strong>BigBrain</strong> provides the AI-layer system used by SRB.</li>\n<li><strong>Waypoints</strong> provides the expanded NavMesh that allows bots to reach more areas.</li>\n</ul>\n<h4>SAIN</h4>\n<p>SRB is designed to leave combat behavior to SAIN or vanilla EFT.</p>\n<p>SAIN controls how bots fight, react, take cover, and make combat decisions. SRB controls where eligible bots travel while they are not fighting.</p>\n<p>Compatibility with the eventual SPT 4.1.x release of SAIN still requires real in-raid testing.</p>\n<h4>Looting Bots</h4>\n<p>Looting Bots and SRB are functionally complementary:</p>\n<ul>\n<li>SRB provides general roaming.</li>\n<li>Looting Bots provides loot-driven behavior.</li>\n</ul>\n<p>Both use bot brain layers, so their final SPT 4.1.x versions must be tested together to confirm that layer priorities and handoffs work correctly.</p>\n<h4>Questing Bots</h4>\n<p>Questing Bots and SRB both want to assign long-distance destinations to bots.</p>\n<p>To avoid two objective systems competing for control, SRB\u2019s safe default behavior is to suspend roaming when Questing Bots is detected.</p>\n<p>An experimental priority-based compatibility mode can be selected in the F12 menu.</p>\n<h4>ORBIT</h4>\n<p>ORBIT already controls squad movement, objectives, looting, quest routing, and extraction.</p>\n<p>Running SRB and ORBIT simultaneously would duplicate destination control. SRB therefore suspends roaming by default when ORBIT is detected.</p>\n<h4>ABPS</h4>\n<p>ABPS controls bot spawning and placement, while SRB controls post-spawn roaming.</p>\n<p>The two systems have very little functional overlap and are expected to work together. Version-specific testing will still be performed when an SPT 4.1.x release of ABPS becomes available.</p>\n<h4>APBS</h4>\n<p>APBS controls bot progression, levels, weapons, ammunition, and equipment.</p>\n<p>It does not control bot movement, so it should not conflict with SRB\u2019s roaming behavior. Version-specific testing will still be required for SPT 4.1.x.</p>\n<p>Performance</p>\n<p>SRB is designed to remain lightweight even when many bots are active.</p>\n<ul>\n<li>Path searches are distributed over multiple frames</li>\n<li>A global calculation budget is shared by every SRB bot</li>\n<li>Expensive eligibility checks run at configurable intervals</li>\n<li>Only a limited number of route candidates are evaluated</li>\n<li>Completed targets are remembered to reduce repetitive movement</li>\n<li>Detailed per-bot logging is disabled by default</li>\n<li>Raid statistics use lightweight counters</li>\n</ul>\n<p>During testing on Shoreline, SRB handled map-wide roaming with a very small pathfinding workload and without producing SRB, BigBrain, or Waypoints exceptions.</p>\n<p>Debug Tools</p>\n<p>SRB includes an optional observation camera for testing bot movement.</p>\n<p>The free camera does not move the player entity. The player\u2019s body remains at its original position and can still be seen, injured, or killed.</p>\n<p>Default controls:</p>\n<ul>\n<li><code>F9</code>: Toggle the free camera</li>\n<li><code>WASD</code>: Move</li>\n<li><code>Q</code> / <code>E</code>: Move down or up</li>\n<li><code>Left Shift</code>: Speed boost</li>\n<li><code>Esc</code>: Release the mouse</li>\n<li><code>Left Mouse Button</code>: Capture the mouse again</li>\n</ul>\n<p>The toggle key and movement speeds can be changed through the F12 menu.</p>\n<p>Requirements</p>\n<ul>\n<li>SPT 4.1.x</li>\n<li>BigBrain</li>\n<li>Waypoints</li>\n<li>BepInEx</li>\n</ul>\n<p>SRB is a client-side BepInEx plugin.</p>\n<p>Install the DLL into:</p>\n<p><code>BepInEx/plugins/SalcosRoamingBots/</code></p>\n<p>Configuration</p>\n<p>Settings are available through the BepInEx F12 configuration menu.</p>\n<p>Most settings take effect immediately or during the next destination search.</p>\n<p>Changing the BigBrain layer priority requires a game restart.</p>\n<p>REPORT BUGS</p>\n<p>There are two ways to report bugs:</p>\n<ol>\n<li>My own thread on Discord: <a target=\"_blank\" class=\"external-link\" href=\"https://discord.com/channels/875684761291599922/1521957836928848032\" rel=\"noreferrer noopener\">https://discord.com/channels/875684761291599922/1521957836928848032</a></li>\n<li>In the \u2018Issue\u2019 tab on GitHub: <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/S4LCO/SalcosRoamingBots/issues\" rel=\"noreferrer noopener\">https://github.com/S4LCO/SalcosRoamingBots/issues</a></li>\n</ol>\n<p><strong>IMPORTANT:</strong></p>\n<ol>\n<li>I need a clean log.</li>\n<li>A list of your installed mods.</li>\n</ol>\n<p><strong>Bug reports without logs will be ignored.</strong></p>\n<p>SUPPORT ME</p>\n<p>If you like the mod, feel free to send some donation. \ud83e\udef6\ud83c\udffc</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/salco1\" rel=\"noreferrer noopener\">https://ko-fi.com/salco1</a></p>\n<p>The default configuration is intended to provide long-distance roaming while remaining conservative about performance and compatibility.</p>\n",
-   "thumbnail": "https://files.sp-mod.com/mods/UkVVjNrJSeAUkv6JPoyDmJKluOrKBm8zt7LSSKzx.jpg",
+   "description_html": "<p><a target=\"_blank\" class=\"external-link\" href=\"https://postimg.cc/zbf8RGnZ\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.postimg.cc/k4Q4zVG4/SRB-transparent.png\" alt=\"SRB-transparent.png\" /></a></p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Overview</div>\n<div class=\"tab-content\"><p>Bots in SPT often remain close to their spawn areas, repeating the same short patrols and leaving large parts of the map feeling empty.</p>\n<p><strong>SRB \u2013 Salco\u2019s Roaming Bots</strong> encourages eligible bots to leave those familiar areas and travel across the map. When a bot has nothing more important to do, SRB selects a distant, reachable destination and sends it there. After a short pause, the bot can continue toward another area.</p>\n<p>This creates less predictable encounters and gives bots a reason to appear along connecting routes, inside distant locations, and in areas that would otherwise remain quiet.</p>\n<p>SRB does not replace combat AI. Combat, danger, healing, and other important actions always take priority. When a bot encounters an enemy or comes under fire, SRB gives control back to the bot\u2019s normal combat behavior.</p>\n<p>The mod is deliberately focused on one task: <strong>making idle bots move around the map.</strong></p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Features</div>\n<div class=\"tab-content\"><ul>\n<li>Sends eligible bots toward distant locations across the map</li>\n<li>Uses dynamically selected destinations instead of fixed patrol points</li>\n<li>Only accepts destinations with a complete NavMesh route</li>\n<li>Automatically yields to combat, danger, healing, and higher-priority AI</li>\n<li>Keeps groups together by assigning distant targets to group leaders by default</li>\n<li>Avoids recently visited destinations</li>\n<li>Discourages multiple roaming bots from selecting the same area</li>\n<li>Detects bots that are no longer making progress and assigns a new destination</li>\n<li>Distributes path calculations over multiple frames</li>\n<li>Includes configurable limits to keep resource usage low</li>\n<li>Provides a compact activity report at the end of each raid</li>\n<li>Includes an optional debug free camera for observing bots across the map</li>\n<li>Can be configured through the BepInEx F12 menu</li>\n</ul>\n<p>SRB does <strong>not</strong>:</p>\n<ul>\n<li>Change bot equipment or progression</li>\n<li>Change bot spawn numbers</li>\n<li>Replace combat behavior</li>\n<li>Simulate quests</li>\n<li>Make bots loot containers or corpses</li>\n<li>Force bots to extract</li>\n<li>Teleport stuck bots</li>\n<li>Unlock inaccessible doors</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">How It Works</div>\n<div class=\"tab-content\"><p>While a supported bot is idle and safe, SRB searches for a distant location on the expanded Waypoints NavMesh.</p>\n<p>Several possible destinations are evaluated, but only complete routes are accepted. The bot then travels toward the selected destination using normal EFT movement.</p>\n<p>SRB stops controlling the bot whenever a more important behavior takes over. This includes:</p>\n<ul>\n<li>Combat</li>\n<li>Recent gunfire or danger</li>\n<li>Medical treatment</li>\n<li>Higher-priority BigBrain layers</li>\n<li>Group-following behavior</li>\n<li>Other supported objective systems</li>\n</ul>\n<p>After the situation is safe again, SRB waits for the configured post-combat cooldown before selecting another destination.</p>\n<p>By default, only solo bots and group leaders receive SRB destinations. Other group members remain under their usual follower behavior.</p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Comparison</div>\n<div class=\"tab-content\"><table>\n<thead>\n<tr>\n<th>Mod</th>\n<th>Main Purpose</th>\n<th>Difference from SRB</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>SRB</strong></td>\n<td>Map-wide idle roaming</td>\n<td>Sends otherwise idle bots toward dynamically selected, distant destinations without assigning quests, loot objectives, or extraction goals.</td>\n</tr>\n<tr>\n<td><strong>Looting Bots</strong></td>\n<td>Bot looting behavior</td>\n<td>Allows bots to search containers, corpses, loose items, and airdrops. Movement happens because the bot wants to loot something. SRB does not interact with loot.</td>\n</tr>\n<tr>\n<td><strong>Questing Bots</strong></td>\n<td>Simulated quests and objectives</td>\n<td>Sends bots to real quest locations and can simulate planting items, holding areas, boss hunting, spawn rushing, and other objectives. SRB provides simpler, objective-free roaming.</td>\n</tr>\n<tr>\n<td><strong>ORBIT</strong></td>\n<td>Full bot lifecycle and squad objectives</td>\n<td>Controls squad goals, looting, PvP hotspots, quest routing, coordination, and extraction. SRB is intentionally smaller and only controls idle roaming.</td>\n</tr>\n<tr>\n<td><strong>ABPS</strong></td>\n<td>Bot spawning and placement</td>\n<td>Controls when, where, and how many bots, waves, PMCs, or bosses spawn. It does not determine where those bots travel after spawning.</td>\n</tr>\n<tr>\n<td><strong>APBS</strong></td>\n<td>Bot progression and equipment</td>\n<td>Adjusts bot levels, weapons, ammunition, equipment, and progression tiers. It does not control bot navigation or roaming.</td>\n</tr>\n</tbody>\n</table>\n<p>A simple way to separate these mods:</p>\n<ul>\n<li><strong>ABPS:</strong> Who spawns, where, and when?</li>\n<li><strong>APBS:</strong> What level and equipment does the bot have?</li>\n<li><strong>Looting Bots:</strong> What does the bot pick up?</li>\n<li><strong>Questing Bots:</strong> Which simulated quest does the bot perform?</li>\n<li><strong>ORBIT:</strong> What full raid lifecycle does the squad follow?</li>\n<li><strong>SRB:</strong> Where does an otherwise idle bot go next?</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Compatibility</div>\n<div class=\"tab-content\"><h4>BigBrain and Waypoints</h4>\n<p>BigBrain and Waypoints are required dependencies.</p>\n<ul>\n<li><strong>BigBrain</strong> provides the AI-layer system used by SRB.</li>\n<li><strong>Waypoints</strong> provides the expanded NavMesh that allows bots to reach more areas.</li>\n</ul>\n<h4>SAIN</h4>\n<p>SRB is designed to leave combat behavior to SAIN or vanilla EFT.</p>\n<p>SAIN controls how bots fight, react, take cover, and make combat decisions. SRB controls where eligible bots travel while they are not fighting.</p>\n<p>Compatibility with the eventual SPT 4.1.x release of SAIN still requires real in-raid testing.</p>\n<h4>Looting Bots</h4>\n<p>Looting Bots and SRB are functionally complementary:</p>\n<ul>\n<li>SRB provides general roaming.</li>\n<li>Looting Bots provides loot-driven behavior.</li>\n</ul>\n<p>Both use bot brain layers, so their final SPT 4.1.x versions must be tested together to confirm that layer priorities and handoffs work correctly.</p>\n<h4>Questing Bots</h4>\n<p>Questing Bots and SRB both want to assign long-distance destinations to bots.</p>\n<p>To avoid two objective systems competing for control, SRB\u2019s safe default behavior is to suspend roaming when Questing Bots is detected.</p>\n<p>An experimental priority-based compatibility mode can be selected in the F12 menu.</p>\n<h4>ORBIT</h4>\n<p>ORBIT already controls squad movement, objectives, looting, quest routing, and extraction.</p>\n<p>Running SRB and ORBIT simultaneously would duplicate destination control. SRB therefore suspends roaming by default when ORBIT is detected.</p>\n<h4>ABPS</h4>\n<p>ABPS controls bot spawning and placement, while SRB controls post-spawn roaming.</p>\n<p>The two systems have very little functional overlap and are expected to work together. Version-specific testing will still be performed when an SPT 4.1.x release of ABPS becomes available.</p>\n<h4>APBS</h4>\n<p>APBS controls bot progression, levels, weapons, ammunition, and equipment.</p>\n<p>It does not control bot movement, so it should not conflict with SRB\u2019s roaming behavior. Version-specific testing will still be required for SPT 4.1.x.</p></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Performance</div>\n<div class=\"tab-content\"><p>SRB is designed to remain lightweight even when many bots are active.</p>\n<ul>\n<li>Path searches are distributed over multiple frames</li>\n<li>A global calculation budget is shared by every SRB bot</li>\n<li>Expensive eligibility checks run at configurable intervals</li>\n<li>Only a limited number of route candidates are evaluated</li>\n<li>Completed targets are remembered to reduce repetitive movement</li>\n<li>Detailed per-bot logging is disabled by default</li>\n<li>Raid statistics use lightweight counters</li>\n</ul>\n<p>During testing on Shoreline, SRB handled map-wide roaming with a very small pathfinding workload and without producing SRB, BigBrain, or Waypoints exceptions.</p></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Debug Tools</div>\n<div class=\"tab-content\"><p>SRB includes an optional observation camera for testing bot movement.</p>\n<p>The free camera does not move the player entity. The player\u2019s body remains at its original position and can still be seen, injured, or killed.</p>\n<p>Default controls:</p>\n<ul>\n<li><code>F9</code>: Toggle the free camera</li>\n<li><code>WASD</code>: Move</li>\n<li><code>Q</code> / <code>E</code>: Move down or up</li>\n<li><code>Left Shift</code>: Speed boost</li>\n<li><code>Esc</code>: Release the mouse</li>\n<li><code>Left Mouse Button</code>: Capture the mouse again</li>\n</ul>\n<p>The toggle key and movement speeds can be changed through the F12 menu.</p></div></div>\n<div id=\"tabset-1-panel-8\" class=\"tab-panel\"><div class=\"tab-title\">Requirements</div>\n<div class=\"tab-content\"><ul>\n<li>SPT 4.1.x</li>\n<li>BigBrain</li>\n<li>Waypoints</li>\n<li>BepInEx</li>\n</ul>\n<p>SRB is a client-side BepInEx plugin.</p>\n<p>Install the DLL into:</p>\n<p><code>BepInEx/plugins/SalcosRoamingBots/</code></p></div></div>\n<div id=\"tabset-1-panel-9\" class=\"tab-panel\"><div class=\"tab-title\">Configuration</div>\n<div class=\"tab-content\"><p>Settings are available through the BepInEx F12 configuration menu.</p>\n<p>Most settings take effect immediately or during the next destination search.</p>\n<p>Changing the BigBrain layer priority requires a game restart.</p></div></div>\n<div id=\"tabset-1-panel-10\" class=\"tab-panel\"><div class=\"tab-title\">REPORT BUGS</div>\n<div class=\"tab-content\"><p>There are two ways to report bugs:</p>\n<ol>\n<li>My own thread on Discord: <a target=\"_blank\" class=\"external-link\" href=\"https://discord.com/channels/875684761291599922/1521957836928848032\" rel=\"noreferrer noopener\">https://discord.com/channels/875684761291599922/1521957836928848032</a></li>\n<li>In the \u2018Issue\u2019 tab on GitHub: <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/S4LCO/SalcosRoamingBots/issues\" rel=\"noreferrer noopener\">https://github.com/S4LCO/SalcosRoamingBots/issues</a></li>\n</ol>\n<p><strong>IMPORTANT:</strong></p>\n<ol>\n<li>I need a clean log.</li>\n<li>A list of your installed mods.</li>\n</ol>\n<p><strong>Bug reports without logs will be ignored.</strong></p></div></div>\n<div id=\"tabset-1-panel-11\" class=\"tab-panel\"><div class=\"tab-title\">SUPPORT ME</div>\n<div class=\"tab-content\"><p>If you like the mod, feel free to send some donation. \ud83e\udef6\ud83c\udffc</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/salco1\" rel=\"noreferrer noopener\">https://ko-fi.com/salco1</a></p>\n<p>The default configuration is intended to provide long-distance roaming while remaining conservative about performance and compatibility.</p></div></div></div>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/iAJN4oBKLjaGLzrxIs3KvvGyu6Z6WzmwHWoZj6D5.jpg",
    "forge_url": "https://sp-mod.com/mod/2890/srb-salcos-roaming-bots",
-   "downloads": 1687,
-   "favourites": 2,
+   "downloads": 1707,
+   "favourites": 12,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -181490,9 +181556,9 @@
    },
    "authors": [
     {
-     "id": "117343-arch",
+     "id": 117343,
      "name": "S4LCO",
-     "avatar": "https://forge-static.sp-tarkov.com/profile-photos/IttrQXatb7F4PtUs86bYUUfWpxDAwnR8rf3piU33_256w.webp"
+     "avatar": "https://files.sp-mod.com/profile-photos/rgc3DHTiErae0JpWwjUVXGzGTO2I7el1yTGI59mr_128w.webp"
     }
    ],
    "source_links": [
@@ -181503,66 +181569,108 @@
    ],
    "versions": [
     {
+     "id": 14661,
+     "version": "0.4.1",
+     "description": "<h1>SRB 0.4.1 \u2013 Coverage &amp; Navigation Update</h1>\n<h2>New Features</h2>\n<ul>\n<li>Added coverage-aware roaming. Bots now prefer less frequently visited areas of the map.</li>\n<li>Added individual adaptive destination ranges for bots located in difficult navigation areas.</li>\n<li>Added temporary avoidance of areas where bots became stuck.</li>\n<li>Bots can now resume an interrupted destination after combat if a new complete route is available.</li>\n<li>Added progressive navigation backoff to reduce repeated pathfinding attempts.</li>\n</ul>\n<h2>Improvements</h2>\n<ul>\n<li>Improved destination scoring to avoid excessive detours, crowded targets, problematic areas, and NavMesh edges.</li>\n<li>Improved handoffs to combat, danger, medical treatment, and higher-priority AI.</li>\n<li>Expanded raid statistics with map coverage, handoff reasons, resumed routes, and problematic bots.</li>\n<li>Reduced unnecessary NavMesh calculations while preserving long-distance roaming.</li>\n</ul>\n<h2>Fixes</h2>\n<ul>\n<li>Fixed individual bots reducing the roaming range of every bot in the raid.</li>\n<li>Fixed repeated failed searches causing unnecessary pathfinding work.</li>\n<li>Improved combat interruption detection and destination recovery.</li>\n<li>Improved handling of difficult NavMesh areas.</li>\n</ul>\n",
+     "spt_constraint": "~4.1.2",
+     "fika": "unknown",
+     "downloads": 49,
+     "size": 29735,
+     "link": "https://sp-mod.com/mod/download/2890/srb-salcos-roaming-bots/0.4.1",
+     "published_at": "2026-08-12T06:24:00.000000Z",
+     "dependencies": [
+      {
+       "id": 827,
+       "name": "Waypoints - Expanded Navmesh",
+       "slug": "waypoints-expanded-navmesh",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/827/waypoints-expanded-navmesh"
+      },
+      {
+       "id": 902,
+       "name": "BigBrain",
+       "slug": "bigbrain",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/902/bigbrain"
+      }
+     ]
+    },
+    {
      "id": 14570,
      "version": "0.3.2",
      "description": "<p>Initial release</p>\n",
      "spt_constraint": "~4.1.2",
      "fika": "unknown",
-     "downloads": 1687,
+     "downloads": 1658,
      "size": 20568,
      "link": "https://sp-mod.com/mod/download/2890/srb-salcos-roaming-bots/0.3.2",
      "published_at": "2026-08-08T17:30:00.000000Z",
-     "dependencies": []
+     "dependencies": [
+      {
+       "id": 902,
+       "name": "BigBrain",
+       "slug": "bigbrain",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/902/bigbrain"
+      },
+      {
+       "id": 827,
+       "name": "Waypoints - Expanded Navmesh",
+       "slug": "waypoints-expanded-navmesh",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/827/waypoints-expanded-navmesh"
+      }
+     ]
     }
    ],
-   "latest_version": "0.3.2",
+   "latest_version": "0.4.1",
    "spt_constraint": "~4.1.2",
    "all_spt_constraints": [
     "~4.1.2"
    ],
    "dependencies": [
     {
-     "id": 902,
-     "name": "BigBrain",
-     "slug": "bigbrain",
-     "constraint": "",
-     "url": "https://forge.sp-tarkov.com/mod/902/bigbrain"
-    },
-    {
      "id": 827,
      "name": "Waypoints - Expanded Navmesh",
      "slug": "waypoints-expanded-navmesh",
      "constraint": "",
-     "url": "https://forge.sp-tarkov.com/mod/827/waypoints-expanded-navmesh"
+     "url": "https://sp-mod.com/mod/827/waypoints-expanded-navmesh"
+    },
+    {
+     "id": 902,
+     "name": "BigBrain",
+     "slug": "bigbrain",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/902/bigbrain"
     }
    ],
    "all_dependencies": [
     {
-     "id": 902,
-     "name": "BigBrain",
-     "slug": "bigbrain",
-     "constraint": "",
-     "url": "https://forge.sp-tarkov.com/mod/902/bigbrain"
-    },
-    {
      "id": 827,
      "name": "Waypoints - Expanded Navmesh",
      "slug": "waypoints-expanded-navmesh",
      "constraint": "",
-     "url": "https://forge.sp-tarkov.com/mod/827/waypoints-expanded-navmesh"
+     "url": "https://sp-mod.com/mod/827/waypoints-expanded-navmesh"
+    },
+    {
+     "id": 902,
+     "name": "BigBrain",
+     "slug": "bigbrain",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/902/bigbrain"
     }
    ],
-   "published_at": "2026-08-08T16:56:00.000000Z",
-   "updated_at": "2026-08-10T19:36:32.000000Z",
+   "published_at": "2026-08-12T06:10:00.000000Z",
+   "updated_at": "2026-08-12T06:25:33.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
-    "ai_disclosure": "",
+    "ai_disclosure": "<p>Grok, please make me a Single Player Tushonka Mod. Make no mistakes.</p>\n",
     "cheat_notice": false,
     "profile_binding_notice": false
    },
    "origin": "forge",
-   "delisted": true
+   "delisted": false
   },
   {
    "id": 2891,
@@ -181571,11 +181679,11 @@
    "name": "SCK - SALCO's COMFORT KIT",
    "slug": "sck-salcos-comfort-kit",
    "teaser": "SCK brings several quality-of-life features together in one convenient package.",
-   "description_html": "<p><a target=\"_blank\" class=\"external-link\" href=\"https://postimg.cc/1fjBMHYm\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.postimg.cc/qvkFJDs3/SCK-transparent.png\" alt=\"SCK-transparent.png\" /></a></p>\n<p>About This Mod</p>\n<p>First and foremost, I\u2019d like to thank the following mod developers.\nWithout their ideas and hard work, this mod wouldn\u2019t exist.\nIf a mod author doesn\u2019t like that I\u2019ve included their idea in a mod pack, please contact me directly via Discord.\nI will remove the feature immediately.\nI had no malicious intent. I just wanted to do this for the community.\nSo all credit goes to these people:</p>\n<ul>\n<li>SamSwat, dirtbikerCJ, and flir\u2019s <em>Time &amp; Weather Changer</em></li>\n<li>Terkoiz\u2019s <em>Skipper</em></li>\n<li>Boogles\u2019 <em>Old T</em>**** Movement (no inertia)*</li>\n<li>netVnum\u2019s <em>PAUSE</em></li>\n<li>Fiodor\u2019s <em>Environment Volume Control</em></li>\n<li>Cj\u2019s <em>Use Items Anywhere</em></li>\n<li>CWX and Kaeno\u2019s <em>Trader Scrolling</em></li>\n</ul>\n<p>No code was copied and is fully rewritten. Additionally, this is a lighter version.</p>\n<p>FUNCTIONALITY</p>\n<p>Most features can be configured via the F12 menu.\nThe three special slots can be enabled or disabled in SPT_Runtime/user/mods/SalcosComfortKit/config.json.\nA server restart is required after making changes.</p>\n<ul>\n<li>You can change the weather and time during a raid.</li>\n<li>You can skip quests you don\u2019t like.</li>\n<li>You can pause during a raid.</li>\n<li>You can enable the old T***** movement (no inertia).</li>\n<li>You can set it so that bushes no longer slow you down.</li>\n<li>You can quickslot items from anywhere.</li>\n<li>You can adjust the volume of the BTR, airdrop, and rain.</li>\n<li>You can now scroll through the vendor bar.</li>\n<li>You can add three extra special slots.</li>\n<li>You can set the magazine to land in your inventory after quick-loading instead of on the ground.</li>\n</ul>\n<p>INSTALLATION</p>\n<ol>\n<li>Download the archive.</li>\n<li>Extract its contents directly into your main SPT folder.</li>\n<li>Allow the included folders to merge.</li>\n<li>Start SPT as usual.</li>\n</ol>\n<p>Open the <strong>F12 menu</strong> in-game to adjust the Comfort Kit to your liking.</p>\n<p>REPORT BUGS</p>\n<p>There are two ways to report bugs:</p>\n<ol>\n<li>My own thread on Discord: <a target=\"_blank\" class=\"external-link\" href=\"https://discord.com/channels/875684761291599922/1521957836928848032\" rel=\"noreferrer noopener\">https://discord.com/channels/875684761291599922/1521957836928848032</a></li>\n<li>The Issues tab on GitHub: <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/S4LCO/SalcosComfortKit/issues\" rel=\"noreferrer noopener\">https://github.com/S4LCO/SalcosComfortKit/issues</a></li>\n</ol>\n<p><strong>IMPORTANT:</strong></p>\n<ol>\n<li>I need a clean log.</li>\n<li>I need a list of your installed mods.</li>\n</ol>\n<p><strong>Bug reports without logs will be ignored.</strong></p>\n<p>SUPPORT ME</p>\n<p>If you like the mod, feel free to send a donation. \ud83e\udef6\ud83c\udffc</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/salco1\" rel=\"noreferrer noopener\">https://ko-fi.com/salco1</a></p>\n",
-   "thumbnail": "https://files.sp-mod.com/mods/guOr3mnPSrevdQwx0dm9AGnwlKRNow5iXYiAH0gD.jpg",
+   "description_html": "<p><a target=\"_blank\" class=\"external-link\" href=\"https://postimg.cc/1fjBMHYm\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.postimg.cc/qvkFJDs3/SCK-transparent.png\" alt=\"SCK-transparent.png\" /></a></p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">About This Mod</div>\n<div class=\"tab-content\"><p>First and foremost, I\u2019d like to thank the following mod developers.<br />\nWithout their ideas and hard work, this mod wouldn\u2019t exist.<br />\nIf a mod author doesn\u2019t like that I\u2019ve included their idea in a mod pack, please contact me directly via Discord.<br />\nI will remove the feature immediately.<br />\nI had no malicious intent. I just wanted to do this for the community.<br />\nSo all credit goes to these people:</p>\n<ul>\n<li>SamSwat, dirtbikerCJ, and flir\u2019s <em>Time &amp; Weather Changer</em></li>\n<li>Terkoiz\u2019s <em>Skipper</em></li>\n<li>Boogles\u2019 <em>Old T</em>**** Movement (no inertia)*</li>\n<li>netVnum\u2019s <em>PAUSE</em></li>\n<li>Fiodor\u2019s <em>Environment Volume Control</em></li>\n<li>Cj\u2019s <em>Use Items Anywhere</em></li>\n<li>CWX and Kaeno\u2019s <em>Trader Scrolling</em></li>\n</ul>\n<p>No code was copied and is fully rewritten.\nAdditionally, this is a lighter version.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">FUNCTIONALITY</div>\n<div class=\"tab-content\"><p>Most features can be configured via the F12 menu.<br />\nThe three special slots can be enabled or disabled in SPT_Runtime/user/mods/SalcosComfortKit/config.json.<br />\nA server restart is required after making changes.</p>\n<ul>\n<li>You can change the weather and time during a raid.</li>\n<li>You can skip quests you don\u2019t like.</li>\n<li>You can pause during a raid.</li>\n<li>You can enable the old T***** movement (no inertia).</li>\n<li>You can set it so that bushes no longer slow you down.</li>\n<li>You can quickslot items from anywhere.</li>\n<li>You can adjust the volume of the BTR, airdrop, and rain.</li>\n<li>You can now scroll through the vendor bar.</li>\n<li>You can add three extra special slots.</li>\n<li>You can set the magazine to land in your inventory after quick-loading instead of on the ground.</li>\n<li>You can now breach any locked door with a shotgun.</li>\n<li>You can pin up to three quests into your hud during raid.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">INSTALLATION</div>\n<div class=\"tab-content\"><ol>\n<li>Download the archive.</li>\n<li>Extract its contents directly into your main SPT folder.</li>\n<li>Allow the included folders to merge.</li>\n<li>Start SPT as usual.</li>\n</ol>\n<p>Open the <strong>F12 menu</strong> in-game to adjust the Comfort Kit to your liking.</p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">REPORT BUGS</div>\n<div class=\"tab-content\"><p>There are two ways to report bugs:</p>\n<ol>\n<li>My own thread on Discord: <a target=\"_blank\" class=\"external-link\" href=\"https://discord.com/channels/875684761291599922/1521957836928848032\" rel=\"noreferrer noopener\">https://discord.com/channels/875684761291599922/1521957836928848032</a></li>\n<li>The Issues tab on GitHub: <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/S4LCO/SalcosComfortKit/issues\" rel=\"noreferrer noopener\">https://github.com/S4LCO/SalcosComfortKit/issues</a></li>\n</ol>\n<p><strong>IMPORTANT:</strong></p>\n<ol>\n<li>I need a clean log.</li>\n<li>I need a list of your installed mods.</li>\n</ol>\n<p><strong>Bug reports without logs will be ignored.</strong></p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">SUPPORT ME</div>\n<div class=\"tab-content\"><p>If you like the mod, feel free to send a donation. \ud83e\udef6\ud83c\udffc</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/salco1\" rel=\"noreferrer noopener\">https://ko-fi.com/salco1</a></p></div></div></div>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/v32IyYG6jilU6BUKsahsIGpO3No5RpXBI6XtcW9a.png",
    "forge_url": "https://sp-mod.com/mod/2891/sck-salcos-comfort-kit",
    "downloads": 1984,
-   "favourites": 15,
+   "favourites": 16,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -181590,9 +181698,9 @@
    },
    "authors": [
     {
-     "id": "117343-arch",
+     "id": 117343,
      "name": "S4LCO",
-     "avatar": "https://forge-static.sp-tarkov.com/profile-photos/IttrQXatb7F4PtUs86bYUUfWpxDAwnR8rf3piU33_256w.webp"
+     "avatar": "https://files.sp-mod.com/profile-photos/rgc3DHTiErae0JpWwjUVXGzGTO2I7el1yTGI59mr_128w.webp"
     }
    ],
    "source_links": [
@@ -181603,12 +181711,24 @@
    ],
    "versions": [
     {
-     "id": 14626,
-     "version": "0.2.5",
-     "description": "<p><strong>NOTE</strong>\nIf you have an error where quickslots not working, try redownload. I fixed it silently.</p>\n<hr />\n<p>Function added: Keeps magazines after quick reload</p>\n",
+     "id": 14662,
+     "version": "0.3.1",
+     "description": "<h1>New features</h1>\n<ul>\n<li>You can now breach locked doors with a shotgun</li>\n<li>You can now pin up to three quests into your hud during raid</li>\n</ul>\n<h1>Bug fixes</h1>\n<ul>\n<li>Skipper and Pause should now work like they should</li>\n</ul>\n",
      "spt_constraint": "~4.1.2",
      "fika": "unknown",
-     "downloads": 424,
+     "downloads": 53,
+     "size": 41939,
+     "link": "https://sp-mod.com/mod/download/2891/sck-salcos-comfort-kit/0.3.1",
+     "published_at": "2026-08-12T07:04:00.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 14626,
+     "version": "0.2.5",
+     "description": "<p><strong>NOTE</strong><br />\nIf you have an error where quickslots not working, try redownload. I fixed it silently.</p>\n<hr />\n<p>Function added: Keeps magazines after quick reload</p>\n",
+     "spt_constraint": "~4.1.2",
+     "fika": "unknown",
+     "downloads": 372,
      "size": 36512,
      "link": "https://sp-mod.com/mod/download/2891/sck-salcos-comfort-kit/0.2.5",
      "published_at": "2026-08-10T13:09:00.000000Z",
@@ -181629,7 +181749,7 @@
     {
      "id": 14598,
      "version": "0.2.1",
-     "description": "<ul>\n<li>Added item usage and quick-slot binding from backpacks, Secure Containers and nested containers.</li>\n<li>Added mouse-wheel scrolling for the trader list, including adjustable scroll speed.</li>\n<li>Added F12 settings for both new client features.</li>\n<li>Added an option to disable SCK\u2019s additional Special Slots. A server restart is required after changing this setting.</li>\n</ul>\n<hr />\n<p><strong>NOTE 3</strong>\nTrader Scrolling also broken. Fix will be coming soon.</p>\n<p><strong>NOTE 2</strong>\nI found the problem and working on a solution. Hotfix coming soon.</p>\n<p><strong>NOTE</strong>\nThere might be a problem with Tyfons UI-fix. Im currently checking. For now, disabling \u201cUseItemsAnywhere\u201d can solve the problem.</p>\n",
+     "description": "<ul>\n<li>Added item usage and quick-slot binding from backpacks, Secure Containers and nested containers.</li>\n<li>Added mouse-wheel scrolling for the trader list, including adjustable scroll speed.</li>\n<li>Added F12 settings for both new client features.</li>\n<li>Added an option to disable SCK\u2019s additional Special Slots. A server restart is required after changing this setting.</li>\n</ul>\n<hr />\n<p><strong>NOTE 3</strong><br />\nTrader Scrolling also broken. Fix will be coming soon.</p>\n<p><strong>NOTE 2</strong><br />\nI found the problem and working on a solution. Hotfix coming soon.</p>\n<p><strong>NOTE</strong><br />\nThere might be a problem with Tyfons UI-fix. Im currently checking. For now, disabling \u201cUseItemsAnywhere\u201d can solve the problem.</p>\n",
      "spt_constraint": "~4.1.2",
      "fika": "unknown",
      "downloads": 323,
@@ -181644,14 +181764,14 @@
      "description": "<p>Initial release</p>\n",
      "spt_constraint": "~4.1.0",
      "fika": "unknown",
-     "downloads": 616,
+     "downloads": 615,
      "size": 28739,
      "link": "https://sp-mod.com/mod/download/2891/sck-salcos-comfort-kit/0.1.3",
      "published_at": "2026-08-09T09:52:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "0.2.5",
+   "latest_version": "0.3.1",
    "spt_constraint": "~4.1.2",
    "all_spt_constraints": [
     "~4.1.0",
@@ -181659,17 +181779,17 @@
    ],
    "dependencies": [],
    "all_dependencies": [],
-   "published_at": "2026-08-10T10:21:00.000000Z",
-   "updated_at": "2026-08-10T19:36:32.000000Z",
+   "published_at": "2026-08-12T06:40:00.000000Z",
+   "updated_at": "2026-08-12T07:04:56.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
-    "ai_disclosure": "",
+    "ai_disclosure": "<p>Grok, make me a super duper Tushonka mod and please, no mistakes.</p>\n",
     "cheat_notice": false,
     "profile_binding_notice": false
    },
    "origin": "forge",
-   "delisted": true
+   "delisted": false
   },
   {
    "id": 2892,
