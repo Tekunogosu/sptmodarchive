@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-12T13:56:03Z",
+ "generated_at": "2026-08-12T16:14:44Z",
  "source": "https://sp-mod.com",
  "filter": "all",
  "mod_count": 1846,
@@ -89701,7 +89701,7 @@
    "name": "Disable Seasonal Events",
    "slug": "disable-seasonal-events",
    "teaser": "Simple mod to disable seasonal event detection. Affects New Years, Christmas, Halloween events.",
-   "description_html": "<p>- Install Instructions</p>\n<p>Drag and drop the user folder into your SPT game folder</p>\n<p>This a simple mod so it shouldn\u2019t conflict with anything (hopefully)</p>\n<p>For reference, these are the Vanilla SPT 3.11.4 dates for seasonal events (based on your computer\u2019s clock)</p>\n<p>In SPT 3.11.4, the ending dates are inclusive, rather than exclusive. So the event will end the day after the end date.</p>\n<pre><code>+------------------------+--------------+--------------+\n|                        | Start Date   | End Date     |\n+------------------------+--------------+--------------+\n| Halloween              | 28 October   | 9 November   |\n| Christmas              | 12 December  | 31 December  |\n| New Years              | 1 January    | 1 January    |\n| Christmas January      | 2 January    | 14 January   |\n| April Fools            | 1 April      | 2 April      |\n+------------------------+--------------+--------------+\n</code></pre>\n<h3>NOTE: This does not affect seasons (snow on the ground/raining), I suggest <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1548/simple-season-selector\" rel=\"noreferrer noopener\">Simple Season Selector</a> for that.</h3>\n",
+   "description_html": "<h1>Install Instructions</h1>\n<ul>\n<li>Drag and drop the user folder into your SPT game folder</li>\n</ul>\n<hr />\n<p>This is a simple mod so it shouldn\u2019t conflict with anything (hopefully)</p>\n<p>For reference, these are the Vanilla SPT 3.11.4 dates for seasonal events (based on your computer\u2019s clock)</p>\n<h3>In SPT 3.11.4, the ending dates are inclusive, rather than exclusive. So the event will end the day after the end date.</h3>\n<pre><code>+------------------------+--------------+--------------+\n|                        | Start Date   | End Date     |\n+------------------------+--------------+--------------+\n| Halloween              | 28 October   | 9 November   |\n| Christmas              | 12 December  | 31 December  |\n| New Years              | 1 January    | 1 January    |\n| Christmas January      | 2 January    | 14 January   |\n| April Fools            | 1 April      | 2 April      |\n+------------------------+--------------+--------------+\n</code></pre>\n<h4>NOTE: This does not affect seasons (snow on the ground/raining), I suggest <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1548/simple-season-selector\" rel=\"noreferrer noopener\">Simple Season Selector</a> for that.</h4>\n",
    "thumbnail": "https://files.sp-mod.com/mods/2440.png",
    "forge_url": "https://sp-mod.com/mod/1799/disable-seasonal-events",
    "downloads": 15685,
@@ -89815,7 +89815,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2024-10-27T13:27:00.000000Z",
-   "updated_at": "2026-08-12T00:20:23.000000Z",
+   "updated_at": "2026-08-12T16:01:57.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -136351,10 +136351,10 @@
    "name": "Canted Aiming",
    "slug": "canted-aiming",
    "teaser": "Allow the player to point shoot without a backup sight mount.",
-   "description_html": "<p>Adds an item named Canted Aim, can be found on the flea for extremely cheap. Goes in place of your scope, and any other scope you want to use gets attached to it.</p>\n<p>The bundle comes from Pluto\u2019s old Echoes of Tarkov project, thank you Pluto for allowing me to use it.</p>\n",
+   "description_html": "<p>Adds an item named Canted Aim, can be found on the flea for extremely cheap. Goes in place of your scope, and any other scope you want to use gets attached to it.</p>\n<p>The bundle comes from Pluto\u2019s old Echoes of T***** project, thank you Pluto for allowing me to use it.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/gi9iw2VlhJrw0TGjw67s2wpjoUH8MUFZWjWkwuyb.png",
    "forge_url": "https://sp-mod.com/mod/2415/canted-aiming",
-   "downloads": 16376,
+   "downloads": 16400,
    "favourites": 34,
    "featured": false,
    "fika": true,
@@ -136388,12 +136388,32 @@
    ],
    "versions": [
     {
+     "id": 14681,
+     "version": "2.0.0",
+     "description": "<p>for 4.1, fixed item \u201cicon\u201d</p>\n",
+     "spt_constraint": "~4.1.0",
+     "fika": "compatible",
+     "downloads": 9,
+     "size": 11208,
+     "link": "https://sp-mod.com/mod/download/2415/canted-aiming/2.0.0",
+     "published_at": "2026-08-12T15:53:00.000000Z",
+     "dependencies": [
+      {
+       "id": 2310,
+       "name": "WTT - CommonLib",
+       "slug": "wtt-commonlib",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
+      }
+     ]
+    },
+    {
      "id": 14060,
      "version": "1.2.0",
      "description": "<p>WTT CommonLib Rewrite</p>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 2473,
+     "downloads": 2488,
      "size": 10269,
      "link": "https://sp-mod.com/mod/download/2415/canted-aiming/1.2.0",
      "published_at": "2026-07-12T17:52:00.000000Z",
@@ -136432,10 +136452,11 @@
      "dependencies": []
     }
    ],
-   "latest_version": "1.2.0",
-   "spt_constraint": "~4.0.0",
+   "latest_version": "2.0.0",
+   "spt_constraint": "~4.1.0",
    "all_spt_constraints": [
-    "~4.0.0"
+    "~4.0.0",
+    "~4.1.0"
    ],
    "dependencies": [
     {
@@ -136456,7 +136477,7 @@
     }
    ],
    "published_at": "2025-11-02T02:55:00.000000Z",
-   "updated_at": "2026-07-28T09:37:26.000000Z",
+   "updated_at": "2026-08-12T15:54:04.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -137846,7 +137867,7 @@
    "description_html": "<p>This mods adds new Rear Iron Sights with anime art at the back, so you can fulfill your dream to raid with your Waifu.</p>\n<h2>Features</h2>\n<ul>\n<li>Adds 24 rear sights with anime girls on them. 8 for MCX and 16 for MBUS weapons.</li>\n<li>Rear sights are sold by the Mechanic and on the Flea Market</li>\n<li>Easily add new and edit current iron sights by editing JSON files (guide below)</li>\n</ul>\n<h2>Installation</h2>\n<ol>\n<li>Download the latest versions on the Releases page</li>\n<li>Extract the downloaded ZIP file on the root of your SPT Installation</li>\n<li>Start up the server</li>\n</ol>\n<h2>How to add new sights or edit them</h2>\n<p>This mod has a small JSON interpreter that allows you to add and edit new back iron sights into the game.</p>\n<h3>items.jsonc</h3>\n<p>All you have to do is open <code>db/items.jsonc</code> with your preferred text editor and add the follow structure for your iron sight:</p>\n<pre><code>{\n  \"id\": \"YOUR_ITEM_MONGOID\",\n  \"clone_from_tpl\": \"ITEM_TO_CLONE_FROM_MONGOID\",\n  \"bundle_path\": \"path/to/your/bundle.bundle\",\n  \"price\": 4000, // Item price. This will be used on Handbook and Mechanic\n  \"ergonomics\": 3 // Ergo boost. You can set this to any value, but play nice ;) (or dont, I'm not the SPT police)\n}\n</code></pre>\n<h3>Locales</h3>\n<p>Then, you need to add the Name, ShortName and Description of your item, otherwise it will have a weird name.\nTo do that, open <code>db/locales/en.json</code> with your preferred text editor and add the follow structure:</p>\n<pre><code>\"YOUR_ITEM_MONGOID\": {\n    \"name\": \"Your beautiful item name\",\n    \"short_name\": \"Short name\",\n    \"description\": \"Very detailed and incredible item description that will give the player a lot of information and totally not be useless\"\n}\n</code></pre>\n<h2>Credits</h2>\n<ul>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/38525/rexana\" rel=\"noreferrer noopener\"><strong>Rexana</strong></a> - For giving the idea.</li>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/30890/grooveypenguinx\" rel=\"noreferrer noopener\"><strong>GrooveyPenguinX</strong></a> - For making <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/GrooveypenguinX/WTT-BundleMaster\" rel=\"noreferrer noopener\">WTT-BundleMaster</a>, used to fix the original bundles</li>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/200/samswat\" rel=\"noreferrer noopener\"><strong>SamSWAT</strong></a> - For making the <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/316/anime-rear-sights\" rel=\"noreferrer noopener\">original mod and bundles</a></li>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://steamcommunity.com/profiles/76561198224517144\" rel=\"noreferrer noopener\"><strong>ApertureAwesome</strong></a> - <a target=\"_blank\" class=\"external-link\" href=\"https://steamcommunity.com/sharedfiles/filedetails/?id=1628771637\" rel=\"noreferrer noopener\">Girls Frontline M4 SOPMOD II</a>.</li>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://steamcommunity.com/profiles/76561198224517144\" rel=\"noreferrer noopener\"><strong>ApertureAwesome</strong></a> - <a target=\"_blank\" class=\"external-link\" href=\"https://steamcommunity.com/sharedfiles/filedetails/?id=1636845240\" rel=\"noreferrer noopener\">Ram &amp; Rem</a></li>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://steamcommunity.com/profiles/76561198020115276\" rel=\"noreferrer noopener\"><strong>Farengar</strong></a>, <a target=\"_blank\" class=\"external-link\" href=\"https://steamcommunity.com/profiles/76561198057580968\" rel=\"noreferrer noopener\"><strong>tac.error</strong></a>, <a target=\"_blank\" class=\"external-link\" href=\"https://steamcommunity.com/profiles/76561198104088584\" rel=\"noreferrer noopener\"><strong>Rymd</strong></a> - <a target=\"_blank\" class=\"external-link\" href=\"https://steamcommunity.com/sharedfiles/filedetails/?id=1484273642\" rel=\"noreferrer noopener\">Ai Fuyuumi</a></li>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://www.reddit.com/user/SUMERIKAN/\" rel=\"noreferrer noopener\"><strong>Sumerikan</strong></a> - <a target=\"_blank\" class=\"external-link\" href=\"https://www.reddit.com/r/PhantomForces/comments/cenaum/animu_sight_anti/\" rel=\"noreferrer noopener\">Art for Anti 1 &amp; 2</a></li>\n<li>And one more unknown artist\u2026</li>\n</ul>\n",
    "thumbnail": "https://files.sp-mod.com/mods/6sbXhHOEfQDVdiXXe0Ztgyed0hM22m3mZeB4m2DE.png",
    "forge_url": "https://sp-mod.com/mod/2425/samswats-anime-rear-sights-40-port",
-   "downloads": 8566,
+   "downloads": 8594,
    "favourites": 8,
    "featured": false,
    "fika": true,
@@ -137880,12 +137901,24 @@
    ],
    "versions": [
     {
+     "id": 14678,
+     "version": "1.4.1",
+     "description": "<p>This version fixes the profile load error due to incorrect load order</p>\n",
+     "spt_constraint": "~4.1.0",
+     "fika": "compatible",
+     "downloads": 12,
+     "size": 4015053,
+     "link": "https://sp-mod.com/mod/download/2425/samswats-anime-rear-sights-40-port/1.4.1",
+     "published_at": "2026-08-12T15:10:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 14503,
      "version": "1.4.0",
      "description": "<ul>\n<li>4.1.0 Compatibility Patch</li>\n</ul>\n",
      "spt_constraint": "~4.1.0",
      "fika": "compatible",
-     "downloads": 605,
+     "downloads": 613,
      "size": 4017355,
      "link": "https://sp-mod.com/mod/download/2425/samswats-anime-rear-sights-40-port/1.4.0",
      "published_at": "2026-08-06T19:22:00.000000Z",
@@ -137897,7 +137930,7 @@
      "description": "<h1>Changelog</h1>\n<ul>\n<li>General optimizations (Mod loads in ~100ms)</li>\n<li>Fixed Epic\u2019s All in One incompatibility.\n<ul>\n<li>Epic AIO was overwriting my filters, so I decided to load the filters last.</li>\n</ul>\n</li>\n<li>Sight names/description now applies to all locales, even if one isn\u2019t really configured.</li>\n<li>Added sights to static loot pool.\n<ul>\n<li>Didn\u2019t have time to test this. Let me know if there\u2019s a need to increase spawn chance.</li>\n</ul>\n</li>\n<li>Added missing Anti sight (It had locale, but no item registered)</li>\n</ul>\n<p><strong>Full Changelog</strong>: <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/yuyuimoe/SamSwat-AnimeSights-4.0/compare/1.0.0...1.3.0\" rel=\"noreferrer noopener\">https://github.com/yuyuimoe/SamSwat-AnimeSights-4.0/compare/1.0.0...1.3.0</a></p>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 1095,
+     "downloads": 1103,
      "size": 4015614,
      "link": "https://sp-mod.com/mod/download/2425/samswats-anime-rear-sights-40-port/1.3.0",
      "published_at": "2026-07-17T22:03:00.000000Z",
@@ -137916,7 +137949,7 @@
      "dependencies": []
     }
    ],
-   "latest_version": "1.4.0",
+   "latest_version": "1.4.1",
    "spt_constraint": "~4.1.0",
    "all_spt_constraints": [
     "~4.0.0",
@@ -137925,7 +137958,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2025-11-05T21:00:00.000000Z",
-   "updated_at": "2026-08-07T06:02:14.000000Z",
+   "updated_at": "2026-08-12T15:11:10.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -148143,8 +148176,8 @@
    "description_html": "<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/5hdp9fyP/Screenshot-2026-01-03-102156.png\" alt=\"screenshot\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/tpp2rPNp/Screenshot-2026-01-05-042150.png\" alt=\"screenshot\" /></p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/gjcap917z9lackUaqg0C57HzpPU2QeJTzL2HWhso.png",
    "forge_url": "https://sp-mod.com/mod/2530/vertical-hideout",
-   "downloads": 25253,
-   "favourites": 121,
+   "downloads": 25416,
+   "favourites": 124,
    "featured": true,
    "fika": true,
    "fika_latest": "unknown",
@@ -148172,12 +148205,24 @@
    ],
    "versions": [
     {
+     "id": 14675,
+     "version": "1.1.1",
+     "description": "<ul>\n<li>optional stick to edge for ultrawide screens (need restart to apply)</li>\n</ul>\n",
+     "spt_constraint": "~4.1.0",
+     "fika": "unknown",
+     "downloads": 57,
+     "size": 8326,
+     "link": "https://sp-mod.com/mod/download/2530/vertical-hideout/1.1.1",
+     "published_at": "2026-08-12T14:38:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 14631,
      "version": "1.1.0",
      "description": "<ul>\n<li>updated to SPT 4.1</li>\n</ul>\n",
      "spt_constraint": "~4.1.0",
      "fika": "unknown",
-     "downloads": 376,
+     "downloads": 445,
      "size": 8241,
      "link": "https://sp-mod.com/mod/download/2530/vertical-hideout/1.1.0",
      "published_at": "2026-08-10T12:38:00.000000Z",
@@ -148189,14 +148234,14 @@
      "description": "<p>release</p>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 24877,
+     "downloads": 24914,
      "size": 9190,
      "link": "https://sp-mod.com/mod/download/2530/vertical-hideout/1.0.0",
      "published_at": "2026-01-03T08:11:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.1.0",
+   "latest_version": "1.1.1",
    "spt_constraint": "~4.1.0",
    "all_spt_constraints": [
     "~4.0.0",
@@ -148205,7 +148250,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-01-03T08:08:00.000000Z",
-   "updated_at": "2026-08-10T12:40:05.000000Z",
+   "updated_at": "2026-08-12T14:41:06.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -182237,7 +182282,7 @@
    "description_html": "<p>Run the mod once to generate the config, then you can edit to your heart\u2019s content. This mod allows you to add item ids to the Hall of Fame shelves\u2019 whitelists so you can display more than just what B** says you can.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/xX35DbLRotl2BwM4q2xGa3ZJJiAFqlerfvdsSO4k.png",
    "forge_url": "https://sp-mod.com/mod/2896/shelf-whitelist-editor",
-   "downloads": 20,
+   "downloads": 22,
    "favourites": 0,
    "featured": false,
    "fika": true,
@@ -182271,32 +182316,32 @@
    ],
    "versions": [
     {
+     "id": 14677,
+     "version": "1.0.1",
+     "description": "<p>4.0 fixed</p>\n",
+     "spt_constraint": "~4.0.0",
+     "fika": "compatible",
+     "downloads": 3,
+     "size": 8061,
+     "link": "https://sp-mod.com/mod/download/2896/shelf-whitelist-editor/1.0.1",
+     "published_at": "2026-08-12T15:05:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 14658,
      "version": "2.0.0",
      "description": "<p>4.1.0</p>\n",
      "spt_constraint": "~4.1.0",
      "fika": "compatible",
-     "downloads": 14,
+     "downloads": 19,
      "size": 8390,
      "link": "https://sp-mod.com/mod/download/2896/shelf-whitelist-editor/2.0.0",
      "published_at": "2026-08-12T04:28:00.000000Z",
      "dependencies": []
-    },
-    {
-     "id": 14657,
-     "version": "1.0.1",
-     "description": "<p>4.0.0</p>\n",
-     "spt_constraint": "~4.0.0",
-     "fika": "compatible",
-     "downloads": 6,
-     "size": 8097,
-     "link": "https://sp-mod.com/mod/download/2896/shelf-whitelist-editor/1.0.1",
-     "published_at": "2026-08-12T04:26:00.000000Z",
-     "dependencies": []
     }
    ],
-   "latest_version": "2.0.0",
-   "spt_constraint": "~4.1.0",
+   "latest_version": "1.0.1",
+   "spt_constraint": "~4.0.0",
    "all_spt_constraints": [
     "~4.0.0",
     "~4.1.0"
@@ -182304,7 +182349,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-08-12T04:25:00.000000Z",
-   "updated_at": "2026-08-12T11:44:05.000000Z",
+   "updated_at": "2026-08-12T15:07:07.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -182412,8 +182457,8 @@
    "description_html": "<h2>Overview</h2>\n<p>FIR_MEANS_FIR is a server + client mod for SPT 4.1.2 that stops Found in Raid status from being stripped. In vanilla SPT, items lose their FIR checkmark when you die, when the client loads them into a raid, or when they sit in your secure container during death. This mod prevents all of that.</p>\n<p>Bring FIR items into raid for your friends in Fika. Die with FIR loot and keep the checkmark. Secure container items stay FIR too.</p>\n<h2>How It Works</h2>\n<p>The mod has two parts:</p>\n<h3>Server Component</h3>\n<ul>\n<li>Patches <code>InRaidHelper.RemoveFiRStatusFromItems</code> to skip the FIR removal pass on death</li>\n<li>Patches <code>ItemExtensions.RemoveFiRStatusFromItemsInContainer</code> to stop the separate FIR strip targeting secure container items</li>\n<li>Snapshots which items have FIR before the raid and re-applies FIR after the raid ends as a safety net</li>\n</ul>\n<h3>Client Component (BepInEx plugin)</h3>\n<ul>\n<li>The EFT client calls <code>Profile.SetSpawnedInSession(false)</code> when entering a raid, which strips FIR from every item you bring. The client plugin blocks this call so items stay FIR throughout the raid</li>\n<li>Without this, items dropped for friends during a Fika raid would lose FIR status</li>\n</ul>\n<h2>Features</h2>\n<table>\n<thead>\n<tr>\n<th>Feature</th>\n<th>Config Key</th>\n<th>Default</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Items keep FIR on death</td>\n<td><code>KeepFirOnDeath</code></td>\n<td><code>true</code></td>\n</tr>\n<tr>\n<td>Items brought into raid keep FIR</td>\n<td><code>KeepFirOnBroughtItems</code></td>\n<td><code>true</code></td>\n</tr>\n<tr>\n<td>Secure container, special slots, armband, sheath keep FIR on death</td>\n<td><code>KeepFirInProtectedSlots</code></td>\n<td><code>true</code></td>\n</tr>\n</tbody>\n</table>\n<p>All features are independently configurable and on by default.</p>\n<h2>Configuration</h2>\n<p>Edit <code>config.jsonc</code> in the server mod folder:</p>\n<pre><code>{\n  // Prevent FIR from being stripped on death for all items\n  \"KeepFirOnDeath\": true,\n\n  // Keep FIR on items brought into raid (survives death too)\n  \"KeepFirOnBroughtItems\": true,\n\n  // Keep FIR in secure container, special slots, armband, sheath on death\n  // Works even if KeepFirOnDeath is off\n  \"KeepFirInProtectedSlots\": true\n}\n</code></pre>\n<h2>Installation</h2>\n<p>Standard drag and drop installation</p>\n<h3>Why Server + BepInEx?</h3>\n<p>The server mod alone stops FIR stripping during death processing on the server. But the EFT client independently strips FIR from items when entering a raid, before the server sees the post-raid inventory. Without the client plugin, items you bring into raid for friends show up as non-FIR when dropped.</p>\n<p>The client plugin alone keeps FIR during the raid, but on death the server would still strip FIR from your inventory before saving.</p>\n<p>Together they cover the full lifecycle.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/hmVn7DqjNxBveQwDPGcnapO70LzoVvOIu04YPaci.jpg",
    "forge_url": "https://sp-mod.com/mod/2898/fir-means-fir",
-   "downloads": 42,
-   "favourites": 2,
+   "downloads": 82,
+   "favourites": 3,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -182441,12 +182486,36 @@
    ],
    "versions": [
     {
+     "id": 14680,
+     "version": "1.1.0",
+     "description": "<ul>\n<li><code>BotItemsAreFir</code> (default: true) - marks all bot-generated equipment as Found in Raid. Previously, PMC bot gear had no FIR status when looted.</li>\n</ul>\n",
+     "spt_constraint": "~4.1",
+     "fika": "compatible",
+     "downloads": 10,
+     "size": 12581,
+     "link": "https://sp-mod.com/mod/download/2898/fir-means-fir/1.1.0",
+     "published_at": "2026-08-12T15:48:00.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 14679,
+     "version": "1.1.0+spt4.0",
+     "description": "<p>Untested backport of 1.1.0</p>\n",
+     "spt_constraint": "~4.0.13",
+     "fika": "compatible",
+     "downloads": 5,
+     "size": 9374,
+     "link": "https://sp-mod.com/mod/download/2898/fir-means-fir/1.1.0+spt4.0",
+     "published_at": "2026-08-12T15:47:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 14671,
      "version": "1.0.1",
      "description": "<ul>\n<li>Standardized release zip structure</li>\n</ul>\n",
      "spt_constraint": "~4.1.0",
      "fika": "compatible",
-     "downloads": 20,
+     "downloads": 43,
      "size": 12043,
      "link": "https://sp-mod.com/mod/download/2898/fir-means-fir/1.0.1",
      "published_at": "2026-08-12T11:15:00.000000Z",
@@ -182458,22 +182527,24 @@
      "description": "<p>Initial release.</p>\n<p>Tested on death, on raid start, has BepInEx component to set FIR status on raid join so that you can share that juicy saleva with your friend</p>\n",
      "spt_constraint": "~4.1.0",
      "fika": "compatible",
-     "downloads": 22,
+     "downloads": 24,
      "size": 11318,
      "link": "https://sp-mod.com/mod/download/2898/fir-means-fir/1.0.0",
      "published_at": "2026-08-12T08:00:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.0.1",
-   "spt_constraint": "~4.1.0",
+   "latest_version": "1.1.0",
+   "spt_constraint": "~4.1",
    "all_spt_constraints": [
+    "~4.0.13",
+    "~4.1",
     "~4.1.0"
    ],
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-08-12T08:00:00.000000Z",
-   "updated_at": "2026-08-12T11:44:07.000000Z",
+   "updated_at": "2026-08-12T15:50:10.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
@@ -182656,8 +182727,8 @@
    "description_html": "<h2>Overview</h2>\n<p>When you open a locked case, crate, or airdrop container, you get the equivalent usable storage case as a bonus reward on top of the normal loot. Weapon crates give a Weapon case, valuables crates give a Money case, equipment crates give an Item case, and supply crates give a Medicine case.</p>\n<p>No more one-time-use containers. Open the crate, get the loot, keep the case.</p>\n<h2>Supported Containers</h2>\n<table>\n<thead>\n<tr>\n<th>Container Type</th>\n<th>Bonus Case</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Opened case</td>\n<td>Money case</td>\n</tr>\n<tr>\n<td>Opened box</td>\n<td>Lucky Scav Junk box</td>\n</tr>\n<tr>\n<td>Weapon crate (Common/Rare/Epic)</td>\n<td>Weapon case</td>\n</tr>\n<tr>\n<td>Valuables crate (Common/Rare/Epic)</td>\n<td>Money case</td>\n</tr>\n<tr>\n<td>Equipment crate (Common/Rare/Epic/BattlePass)</td>\n<td>Item case</td>\n</tr>\n<tr>\n<td>Supply crate (Common/Rare/Epic)</td>\n<td>Medicine case</td>\n</tr>\n<tr>\n<td>Airdrop containers, Arena weapon crates</td>\n<td>Weapon case</td>\n</tr>\n</tbody>\n</table>\n<h2>How It Works</h2>\n<p>The mod intercepts the container unpacking process. When you open a supported container, the normal loot is generated as usual, then the matching usable case is added as an extra reward. The original container is consumed normally.</p>\n<p>Unsupported containers fall through to default SPT behavior.</p>\n<h2>Installation</h2>\n<p>Standard drag and drop installation.</p>\n<h3>Changes from 4.0.x (never published, private testing)</h3>\n<ul>\n<li>Ported to SPT 4.1.2 C# server mod API</li>\n<li>Switched from DI controller override to Harmony prefix patching (OpenRandomLootContainer is no longer virtual in 4.1.2)</li>\n<li>Changed GUID to <code>eu.thescrewcollab.keeplockedcases</code></li>\n</ul>\n",
    "thumbnail": "https://files.sp-mod.com/mods/aR3vjIQsuOrayYk5nOZOcQKeHm0biSEkkM0GuZdY.jpg",
    "forge_url": "https://sp-mod.com/mod/2901/keeplockedcases",
-   "downloads": 26,
-   "favourites": 0,
+   "downloads": 64,
+   "favourites": 1,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -182685,27 +182756,52 @@
    ],
    "versions": [
     {
+     "id": 14676,
+     "version": "1.0.1",
+     "description": "<ul>\n<li>Fixed arena weapon crates not giving cases \u2014 case-sensitive string comparison (\u201carena_weaponcrate\u201d vs \u201cArena_weaponcrate_blue_open\u201d) prevented Unlocked Weapon Crate (Rare/Epic/Common) from being recognized, resulting in no loot and no bonus case</li>\n<li>Added explicit ignore list for event containers (pumpkin, new year gifts, Twitch drops) so they pass through to SPT cleanly</li>\n</ul>\n",
+     "spt_constraint": "~4.1.0",
+     "fika": "compatible",
+     "downloads": 27,
+     "size": 8139,
+     "link": "https://sp-mod.com/mod/download/2901/keeplockedcases/1.0.1",
+     "published_at": "2026-08-12T14:41:00.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 14682,
+     "version": "1.0.1+spt4.0",
+     "description": "<p>Untested backport</p>\n",
+     "spt_constraint": "~4.0.10",
+     "fika": "compatible",
+     "downloads": 4,
+     "size": 7763,
+     "link": "https://sp-mod.com/mod/download/2901/keeplockedcases/1.0.1+spt4.0",
+     "published_at": "2026-08-12T14:30:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 14673,
      "version": "1.0.0",
      "description": "<p>Initial release for 4.1.2</p>\n",
      "spt_constraint": "~4.1.0",
      "fika": "compatible",
-     "downloads": 26,
+     "downloads": 33,
      "size": 7848,
      "link": "https://sp-mod.com/mod/download/2901/keeplockedcases/1.0.0",
      "published_at": "2026-08-12T11:25:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.0.0",
+   "latest_version": "1.0.1",
    "spt_constraint": "~4.1.0",
    "all_spt_constraints": [
+    "~4.0.10",
     "~4.1.0"
    ],
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-08-12T11:23:00.000000Z",
-   "updated_at": "2026-08-12T11:44:07.000000Z",
+   "updated_at": "2026-08-12T16:01:07.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
