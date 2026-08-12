@@ -753,8 +753,15 @@ def build(limit=None, base_url=BASE_URL):
         for entry in mod_lists:
             emit_json(f"list/{entry['id']}.json", emit.list_detail(entry, lookup))
             sitemap_pages.append((list_url(entry), entry.get("updated_at", "")))
+        # `href` is what the card on lists.html links to. Emitted here rather
+        # than rebuilt in the browser from id and slug, because list_url() is
+        # the one place that decides what a list's URL is -- and because
+        # without it every card linked to "", which is not a broken link a
+        # reader can see: an empty href reloads the page you are already on,
+        # so the lists index looked like it refreshed and went nowhere.
         emit_json("lists.json",
                   [{"id": e["id"], "title": e["title"],
+                    "href": list_url(e),
                     "owner": (e.get("owner") or {}).get("name") or "unknown",
                     "mod_count": e["mod_count"],
                     "spt": e.get("spt_version", "")} for e in mod_lists])
