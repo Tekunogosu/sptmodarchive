@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-08-13T10:33:23Z",
+ "generated_at": "2026-08-13T13:54:14Z",
  "source": "https://sp-mod.com",
  "filter": "all",
- "mod_count": 1849,
+ "mod_count": 1850,
  "categories": [
   {
    "id": 12,
@@ -171951,7 +171951,7 @@
    },
    "authors": [
     {
-     "id": 117343,
+     "id": "117343-arch",
      "name": "S4LCO",
      "avatar": "https://files.sp-mod.com/profile-photos/rgc3DHTiErae0JpWwjUVXGzGTO2I7el1yTGI59mr_128w.webp"
     }
@@ -172059,7 +172059,7 @@
     "profile_binding_notice": true
    },
    "origin": "forge",
-   "delisted": false
+   "delisted": true
   },
   {
    "id": 2795,
@@ -174010,7 +174010,7 @@
    },
    "authors": [
     {
-     "id": 117343,
+     "id": "117343-arch",
      "name": "S4LCO",
      "avatar": "https://files.sp-mod.com/profile-photos/rgc3DHTiErae0JpWwjUVXGzGTO2I7el1yTGI59mr_128w.webp"
     }
@@ -174180,7 +174180,7 @@
     "profile_binding_notice": false
    },
    "origin": "forge",
-   "delisted": false
+   "delisted": true
   },
   {
    "id": 2816,
@@ -181942,7 +181942,7 @@
    },
    "authors": [
     {
-     "id": 117343,
+     "id": "117343-arch",
      "name": "S4LCO",
      "avatar": "https://files.sp-mod.com/profile-photos/rgc3DHTiErae0JpWwjUVXGzGTO2I7el1yTGI59mr_128w.webp"
     }
@@ -182056,7 +182056,7 @@
     "profile_binding_notice": false
    },
    "origin": "forge",
-   "delisted": false
+   "delisted": true
   },
   {
    "id": 2891,
@@ -182270,8 +182270,8 @@
    "description_html": "<h1>TraumaCore</h1>\n<hr />\n<p>TraumaCore is a damage and armor overhaul for SPT that makes shot placement, bleeding, bones, and repeated armor hits more important.</p>\n<blockquote>\n<p><strong>Warning:</strong> TraumaCore makes combat much more lethal. Penetrating hits cause wounds and blood loss instead of normal direct damage, meaning you can win a fight and still bleed out seconds later.</p>\n<p>Stims quickly stop treatable bleeding and reduce new bleed damage by 50% while active. Medical items are now valued by their ability to control bleeding, not just restore health. Heart wounds cannot be treated normally.</p>\n<p>Head-on gunfights can easily leave both sides dead. Using cover, avoiding hits, and ending fights quickly are now essential.</p>\n<p>TraumaCore is my own take on a more hardcore/semi-realistic damage and bleeding system.</p>\n</blockquote>\n<p>Instead of bullets simply removing health from a body part, most damage becomes wounds that drain health over time. The amount of bleeding depends on where the bullet hits and how much damage it causes. Wounds can stack, so surviving a gunfight does not mean you are safe, you may still bleed out without quick treatment.</p>\n<p>Bullets can also strike the brain, heart, spine, and major bones. These hits can cause instant death, permanent heart bleeding, spinal injuries, or broken limbs. Armor penetration and repeated hits are also reworked, making ammunition, armor condition, and shot placement more important.</p>\n<p>The default settings are balanced for PvE. AI and Scavs receive the full system, while players use more forgiving organ settings for a vanilla+ experience. Vital and center-mass shots are highly effective, while limb shots usually take more time or ammunition to become fatal.</p>\n<h2><strong>Features</strong> <em>(Yes, this is the full list\u2013everything else emerges naturally from these systems.)</em></h2>\n<hr />\n<ul>\n<li>Blood-loss-focused damage with stacking, location-dependent wounds</li>\n<li>Hand placed brain, heart, spine, and major limb-bone hitboxes</li>\n<li>Fatal brain and cervical-spine hits</li>\n<li>Permanent, rapidly fatal heart hemorrhage</li>\n<li>Spinal and deterministic limb-bone fractures</li>\n<li>More simplistic armor penetration and localized armor weakening from repeated hits</li>\n<li>Bruising, movement penalties, and reduced stamina recovery from stopped rounds</li>\n<li>Reworked treatment and blood-loss-blocking stim behavior</li>\n<li>Custom Damage transfer through injured and blacked body parts to reduce leg and arm meta</li>\n<li>Custom trauma icons, wound blood effects, corpse bleeding, and bleed-out voices</li>\n<li>Separate configurable balance for players and AI</li>\n</ul>\n<h3>New Hitboxes</h3>\n<hr />\n<ul>\n<li>Brain</li>\n<li>Lower brain</li>\n<li>Cervical spine</li>\n<li>Lower spine</li>\n<li>Heart</li>\n<li>Arm bones</li>\n<li>Leg bones</li>\n</ul>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://i.ibb.co/Gvk4vCQM/35-CF4136-0-EEA-4990-972-D-80-F669923048.png\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/Gvk4vCQM/35-CF4136-0-EEA-4990-972-D-80-F669923048.png\" alt=\"Anatomical hitbox debug view\" /></a></p>\n<p>Brain and cervical-spine hits are fatal. Heart hits cause extremely fast bleeding. Lower-spine hits cause a spinal fracture, while hits to limb bones can fracture the affected arm or leg.</p>\n<p>The hitboxes follow the character\u2019s movement and animations to the limitations of the native bone system. They do not make the entire head or chest count as an organ hit, the bullet must pass through the smaller internal area. this makes for more accurate gunplay but can make it feel more unforgiving as if you miss the brain and hit the face its not a instant kill</p>\n<h3>Wounds and Bleeding</h3>\n<hr />\n<h2><img loading=\"lazy\" decoding=\"async\" src=\"https://media.giphy.com/media/PEmY1wBijtF0fUGcyJ/giphy.gif\" alt=\"TraumaCore gameplay\" /></h2>\n<p>Most bullet damage causes bleeding instead of instant health damage.</p>\n<ul>\n<li>Repeated chest hits cause more bleeding</li>\n<li>Heart wounds cause severe bleeding that cannot be treated</li>\n<li>Bleeding varies by body part</li>\n<li>Normal bleeding slows down over time</li>\n<li>Blacked body parts transfer damage to nearby healthy parts</li>\n<li>Arm shots transfer less damage than stomach or leg shots</li>\n<li>Vital-area shots kill faster than limb shots</li>\n</ul>\n<p>This makes center-mass hits reliable without making every chest shot an instant kill. Limb shots can still be lethal, but generally require more hits or time than vital-area damage.</p>\n<h3>Armor</h3>\n<hr />\n<ul>\n<li>Armor either blocks a shot or lets it penetrate</li>\n<li>Penetration depends on the ammo and the armor\u2019s class, material, condition, and coverage</li>\n<li>Repeated hits to the same area damage the armor up to 5\u00d7 faster</li>\n<li>Blocked shots can cause bruising</li>\n<li>Bruising temporarily reduces movement speed and stamina recovery</li>\n</ul>\n<h3>Hit Feedback</h3>\n<hr />\n<ul>\n<li>Custom icons for bruises, heart wounds, and spinal fractures</li>\n<li>Blood sprays from the wound location</li>\n<li>Recently killed bodies bleed when shot</li>\n<li>Characters make death or agony sounds when bleeding out</li>\n<li>Optional hitbox viewer for testing</li>\n</ul>\n<h2>Default Balance</h2>\n<hr />\n<p>TraumaCore is enabled for players, AI, and scavs by default.</p>\n<p>AI and scavs use the complete organ system. Players begin with brain and lower-spine hitboxes enabled, while player heart and cervical-spine hitboxes are disabled to reduce sudden deaths from AI fire.</p>\n<h2>Usage</h2>\n<hr />\n<p>Press F12 to open the BepInEx Configuration Manager and select <strong>TraumaCore</strong>.</p>\n<p>The menu includes separate controls for player and AI hitboxes, bleeding, damage linkage, armor behavior, blood effects, logging, and effect-testing buttons.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/jmXNvUYj2Mh7dlpoDw8nQLCQS6PEzr9RkKLeLvDH.png",
    "forge_url": "https://sp-mod.com/mod/2893/traumacore",
-   "downloads": 477,
-   "favourites": 4,
+   "downloads": 603,
+   "favourites": 7,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -182288,7 +182288,7 @@
     {
      "id": 118937,
      "name": "Hysocs",
-     "avatar": "https://files.sp-mod.com/profile-photos/nzRNNHJ0dChzp4dd20Hbhv4q1JkTkMiLNAjIdSbJ_256w.webp"
+     "avatar": "https://files.sp-mod.com/profile-photos/2kp7OvMk67Cdf5VvO12p9sOk7mAuqgBAaLv0SQSM_256w.webp"
     }
    ],
    "source_links": [
@@ -182299,19 +182299,31 @@
    ],
    "versions": [
     {
+     "id": 14702,
+     "version": "1.2.0",
+     "description": "<ul>\n<li>Fixed an unnecessary synchronous settings load during startup that could cause CPU spikes.</li>\n</ul>\n",
+     "spt_constraint": "~4.1.0 ",
+     "fika": "unknown",
+     "downloads": 34,
+     "size": 52116,
+     "link": "https://sp-mod.com/mod/download/2893/traumacore/1.2.0",
+     "published_at": "2026-08-13T11:04:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 14614,
      "version": "1.1.0",
      "description": "<ul>\n<li>Fixed custom injury effects persisting after raids and preventing affected profiles from loading.</li>\n</ul>\n",
      "spt_constraint": "~4.1.0 ",
      "fika": "unknown",
-     "downloads": 425,
+     "downloads": 517,
      "size": 49171,
      "link": "https://sp-mod.com/mod/download/2893/traumacore/1.1.0",
      "published_at": "2026-08-10T02:24:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.1.0",
+   "latest_version": "1.2.0",
    "spt_constraint": "~4.1.0 ",
    "all_spt_constraints": [
     "~4.1.0 "
@@ -182319,7 +182331,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-08-10T01:25:00.000000Z",
-   "updated_at": "2026-08-10T06:27:14.000000Z",
+   "updated_at": "2026-08-13T11:06:05.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
@@ -182542,7 +182554,7 @@
    "description_html": "<h2>Overview</h2>\n<p>EquipmentIsEternal is a server-side mod for SPT 4.1.2 that brings your gear back after death. The mod takes a snapshot of your equipped loadout before each raid. If you die, it restores your pre-raid equipment automatically.</p>\n<p>Lost a fully modded M4 to a scav headshot? Not anymore.</p>\n<h2>How It Works</h2>\n<ol>\n<li><strong>Before raid</strong>: The mod snapshots all your equipped items, including attachments and container contents</li>\n<li><strong>On death</strong>: After SPT runs its normal death processing, the mod puts your pre-raid equipment back</li>\n<li><strong>On survival</strong>: Nothing happens. You keep whatever you extracted with</li>\n</ol>\n<h2>Features</h2>\n<h3>Tier 1 - Always Restored (hardcoded)</h3>\n<p>These equipment slots are always restored to their pre-raid state on death:</p>\n<ul>\n<li><strong>Weapons</strong>: Primary weapon (sling), secondary weapon (back), holster</li>\n<li><strong>Protection</strong>: Body armor, tactical rig, headwear, earpiece, eyewear, face cover</li>\n<li><strong>Storage</strong>: Pockets and their contents</li>\n</ul>\n<h3>Tier 2 - Optionally Restored (configurable, off by default)</h3>\n<p>These slots can be restored to their pre-raid state. When disabled (default), you keep whatever you had in these slots at the end of the raid:</p>\n<ul>\n<li>Armband</li>\n<li>Special slots</li>\n<li>Sheath (melee weapon)</li>\n<li>Secured container (pouch)</li>\n</ul>\n<h3>Tier 3 - Insurance Gate (configurable, off by default)</h3>\n<p>When enabled, Tier 1 items are only restored if they were insured before the raid. Uninsured equipment is lost normally. Does not affect Tier 2 slots.</p>\n<h3>Tier 4 - Quest Item Preservation (configurable, off by default)</h3>\n<p>When enabled, quest items collected during the raid survive death instead of being lost. These are items in the separate quest item inventory, not regular loot.</p>\n<h2>Profile Backups</h2>\n<ul>\n<li>profile backups at <code>mods/EquipmentIsEternal/backups/{sessionId}_{timestamp}_profile.json</code> -&gt; copy-paste restorable to <code>user/profiles/</code> (manual task) . Make sure you match the profile name correctly.</li>\n</ul>\n<h2>Configuration</h2>\n<p>Edit <code>config.jsonc</code> in the mod folder:</p>\n<pre><code>{\n  // Tier 2: Optionally restore these slots on death (default: keep raid version)\n  \"RestoreArmBand\": false,\n  \"RestoreSpecialSlots\": false,\n  \"RestoreScabbard\": false,\n  \"RestoreSecuredContainer\": false,\n\n  // Tier 3: Only restore Tier 1 equipment that was insured before raid\n  \"OnlyRestoreInsured\": false,\n\n  // Tier 4: Preserve quest items collected during raid on death\n  \"KeepQuestItems\": false\n}\n</code></pre>\n<h2>Installation</h2>\n<p>Standard drag and drop installation</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/bR0eZKL5GUCzylfKszPlcCMCE75GaaIR2LJeSZB2.jpg",
    "forge_url": "https://sp-mod.com/mod/2897/equipment-is-eternal",
-   "downloads": 74,
+   "downloads": 149,
    "favourites": 1,
    "featured": false,
    "fika": true,
@@ -182576,19 +182588,31 @@
    ],
    "versions": [
     {
+     "id": 14705,
+     "version": "1.1.1",
+     "description": "<ul>\n<li>Forgot to add Backpack to Tier 1 items, sorry everyone</li>\n</ul>\n",
+     "spt_constraint": "~4.1",
+     "fika": "compatible",
+     "downloads": 5,
+     "size": 13890,
+     "link": "https://sp-mod.com/mod/download/2897/equipment-is-eternal/1.1.1",
+     "published_at": "2026-08-13T13:19:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 14684,
      "version": "1.1.0",
      "description": "<h1>IMPORTANT BUGFIX</h1>\n<ul>\n<li>MongoDB serialization could cause corruption of profiles - fixed</li>\n<li>Added full profile backup snapshots on death (manual restore possible)</li>\n</ul>\n",
      "spt_constraint": "~4.1",
      "fika": "compatible",
-     "downloads": 17,
+     "downloads": 85,
      "size": 13854,
      "link": "https://sp-mod.com/mod/download/2897/equipment-is-eternal/1.1.0",
      "published_at": "2026-08-12T17:47:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.1.0",
+   "latest_version": "1.1.1",
    "spt_constraint": "~4.1",
    "all_spt_constraints": [
     "~4.1"
@@ -182596,7 +182620,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-08-12T08:00:00.000000Z",
-   "updated_at": "2026-08-12T18:26:43.000000Z",
+   "updated_at": "2026-08-13T13:21:04.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
@@ -183155,6 +183179,88 @@
    },
    "origin": "forge",
    "delisted": true
+  },
+  {
+   "id": 2905,
+   "hub_id": null,
+   "guid": "com.hysocs.ragdollkinetics",
+   "name": "Ragdoll Kinetics",
+   "slug": "ragdoll-kinetics",
+   "teaser": "Ragdoll Kinetics attempts to deliver natural, animation-driven death physics with realistic momentum, joint movement, and muscle reactions.",
+   "description_html": "<h1>Ragdoll Kinetics</h1>\n<hr />\n<blockquote>\n<p>This mod is still considered in development. Some ragdolls, particularly from crouched or unusual animations, may occasionally jitter, spazz out, or behave unpredictably. Expect some random jank for now.</p>\n<p>The current settings are tuned for a Vanilla+ experience. In the next update, I plan to add presets for users who want a different ragdoll feel.</p>\n</blockquote>\n<p>EFTs default ragdolls switch abruptly from animation to loose physics when a character dies. Their final pose, limb movement, balance, and muscle tension are immediately lost, while the fatal shot can apply excessive force. This often results in overly limp collapses, unnatural joint movement, exaggerated launches, and bodies that stop reacting too quickly.</p>\n<p>Ragdoll Kinetics creates a smoother and more believable transition from movement to death. It captures the character\u2019s final pose, individual limb motion, direction, turning, and momentum, then carries them into the fall so moving, crouching, and off-balance characters collapse differently. Anatomically constrained joints reduce unnatural bending, while muscle tone fades gradually instead of disappearing instantly, giving the body weight and structure during the initial collapse.</p>\n<p>Reduced fatal-shot force prevents exaggerated launches while preserving the shot\u2019s physical impact. Random stiff-arm, stiff-leg, and stiff-hip reactions introduce natural variation, with leg reactions accounting for whether the limb is supported by the ground. Corpses also remain physically reactive for a configurable period, allowing impacts, collisions, and the environment to continue affecting them before Eft freezes their physics for performance. The result is heavier, more varied, and more convincing deaths without scripted death animations.</p>\n<p>This mod originally started as a new feature for TraumaCore. While trying to fix a simple ragdoll issue, I ended up reworking the system from the ground up and building an entirely new ragdoll framework. It eventually grew far beyond the scope of TraumaCore, so I split it off and released it as this standalone mod.</p>\n<h2><strong>Features</strong></h2>\n<hr />\n<ul>\n<li>Carries final animation and movement into death</li>\n<li>Anatomically constrained joint movement</li>\n<li>Gradual muscle-tone release</li>\n<li>Natural horizontal momentum and turning follow-through</li>\n<li>Random stiff-arm, stiff-leg, and stiff-hip reactions</li>\n<li>Ground-support-aware leg reactions</li>\n<li>Reduced exaggerated fatal-shot impulses</li>\n<li>Corpses remain physically reactive before freezing</li>\n<li>Optional AI hit-aim correction</li>\n<li>Fully configurable through BepInEx if you dont like the default feel</li>\n</ul>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/P6PIITVsZP58duQiQJvnGZn5Cm1IFxj1cGh2qjkO.png",
+   "forge_url": "https://sp-mod.com/mod/2905/ragdoll-kinetics",
+   "downloads": 122,
+   "favourites": 3,
+   "featured": false,
+   "fika": false,
+   "fika_latest": "unknown",
+   "category": {
+    "id": 2,
+    "title": "Overhauls",
+    "slug": "overhauls"
+   },
+   "license": {
+    "name": "Apache License 2.0",
+    "link": "https://choosealicense.com/licenses/apache-2.0/"
+   },
+   "authors": [
+    {
+     "id": 118937,
+     "name": "Hysocs",
+     "avatar": "https://files.sp-mod.com/profile-photos/2kp7OvMk67Cdf5VvO12p9sOk7mAuqgBAaLv0SQSM_256w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/Hysocs/ragdollkinetics-spt",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 14704,
+     "version": "1.1.0",
+     "description": "<ul>\n<li>Added three easy-to-use ragdoll presets: <strong>Vanilla+</strong>, <strong>Realistic Settle</strong>, and <strong>Realistic+</strong></li>\n<li>Added separate sliders for starting and ending body stiffness</li>\n<li>Added a slider to control how quickly the body becomes loose</li>\n<li>Added <strong>Linear</strong>, <strong>Slow Start</strong>, and <strong>Slow End</strong> stiffness options</li>\n</ul>\n",
+     "spt_constraint": "~4.1.0 ",
+     "fika": "unknown",
+     "downloads": 57,
+     "size": 21402,
+     "link": "https://sp-mod.com/mod/download/2905/ragdoll-kinetics/1.1.0",
+     "published_at": "2026-08-13T12:41:00.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 14703,
+     "version": "1.0.0",
+     "description": "<p>Release</p>\n",
+     "spt_constraint": "~4.1.0 ",
+     "fika": "unknown",
+     "downloads": 65,
+     "size": 18840,
+     "link": "https://sp-mod.com/mod/download/2905/ragdoll-kinetics/1.0.0",
+     "published_at": "2026-08-13T11:08:00.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "1.1.0",
+   "spt_constraint": "~4.1.0 ",
+   "all_spt_constraints": [
+    "~4.1.0 "
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-08-13T10:28:00.000000Z",
+   "updated_at": "2026-08-13T12:42:06.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": true,
+    "ai_disclosure": "<p>AI was used as a development aid to inspect decompiled DLLs, identify relevant classes and methods. Every feature was individually designed and implemented, then reviewed and manually tested in-game to ensure it functioned as intended and met my performance standards.</p>\n",
+    "cheat_notice": false,
+    "profile_binding_notice": true
+   },
+   "origin": "forge",
+   "delisted": false
   }
  ]
 }
