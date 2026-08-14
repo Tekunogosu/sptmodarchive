@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-08-14T07:56:01Z",
+ "generated_at": "2026-08-14T10:28:30Z",
  "source": "https://sp-mod.com",
  "filter": "all",
- "mod_count": 1857,
+ "mod_count": 1858,
  "categories": [
   {
    "id": 12,
@@ -182892,10 +182892,10 @@
    "slug": "task-item-indicator-backport-for-4013",
    "teaser": "Find where to do things easier, a small ring fades in when you're near a task, works with multiple trigger types like placing picking up etc...",
    "description_html": "<h1>Task Item Indicator</h1>\n<p>Live T***** got a thing in 1.0.5.0 where a small segmented ring shows up in the middle of your screen when you\u2019re near a task item you still need, and the part of the ring facing the item lights up. SPT\u2019s client is older than that patch so it never shows up. This puts it back.</p>\n<h3>How it works</h3>\n<p>Get within range of a task item you still need and a faint ring fades in at the centre of your screen. The arcs facing the item light up brighter, so an item behind you lights the bottom of the ring and you know to turn around. Walk toward it while looking at it and the whole ring goes bright as you arrive.</p>\n<p>It only fires on <strong>task items</strong> - the ones that go in your task items tab. A quest that wants three Salewas won\u2019t light up every Salewa on the map. Mark and place-beacon objectives light up the same way, pointing at the zone you need to reach instead of a loot pickup.</p>\n<p>Turn away while you\u2019re standing near it and the direction comes straight back, because that\u2019s exactly when you still need it.</p>\n<h3>Where the ring came from</h3>\n<p>The ring is generated procedurally at startup from measurements taken off B**\u2019s own reveal footage:</p>\n<ul>\n<li>four arcs, roughly 70 degrees each, centred on the diagonals</li>\n<li>gaps of about 20 degrees on the cardinals, which is why \u201cbehind you\u201d lights two arcs rather than one</li>\n<li>outer radius 7px, inner 4px at 720p, scaled to your screen height</li>\n<li>each arc brightest in its middle, tapering to about 72% at the ends</li>\n</ul>\n<p>Three frames across two different scenes agreed on all of it to within a few percent.</p>\n<h3>Settings</h3>\n<p>F12 in game.</p>\n<table>\n<thead>\n<tr>\n<th>Setting</th>\n<th>Default</th>\n<th>What it does</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Enable Mod</td>\n<td>on</td>\n<td>master toggle</td>\n</tr>\n<tr>\n<td>Ring Scale</td>\n<td>1.0</td>\n<td>size multiplier. 1.0 matches live, which is small</td>\n</tr>\n<tr>\n<td>Ring Thickness</td>\n<td>0.43</td>\n<td>band width as a fraction of the ring\u2019s radius. higher is thicker, 1.0 is a solid disc</td>\n</tr>\n<tr>\n<td>Ring Opacity</td>\n<td>1.0</td>\n<td>maximum opacity the ring reaches when fully lit</td>\n</tr>\n<tr>\n<td>Ring Color</td>\n<td>white</td>\n<td>tint applied to the ring</td>\n</tr>\n<tr>\n<td>Converge Distance</td>\n<td>1.5 m</td>\n<td>how close before the whole ring lights up instead of pointing. you have to be looking at it too</td>\n</tr>\n<tr>\n<td>Scan Interval</td>\n<td>0.25 s</td>\n<td>how often it looks for items. direction still updates every frame</td>\n</tr>\n</tbody>\n</table>\n<p>Distances are measured from your eyes, not your feet, so an item on a shelf and one on the floor read the same.</p>\n<p>Client-only BepInEx plugin. Built for SPT 4.0.13. See <code>BUILD.md</code> for the full\nsetup/build/test guide.</p>\n<h3>Install</h3>\n<p>Extract the archive and drop the <code>BepInEx</code> folder into your SPT root. Needs SPT 4.0.13.</p>\n<h3>Credits</h3>\n<p>Original mod by Vultify - the initial ring measurements, the Shared/plugin split, and the whole idea of this feature were their work.</p>\n",
-   "thumbnail": "https://files.sp-mod.com/mods/qWiHkcbwjXi1YqFdqnTYTHu3ffUMtxQYBj3rgUOu.png",
+   "thumbnail": "https://files.sp-mod.com/mods/OuikKR5G061SgedlOYgUocigb625uLBbwBqoIlJW.png",
    "forge_url": "https://sp-mod.com/mod/2900/task-item-indicator-backport-for-4013",
-   "downloads": 542,
-   "favourites": 11,
+   "downloads": 616,
+   "favourites": 12,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -182928,7 +182928,7 @@
      "description": "<p>Initial Release</p>\n",
      "spt_constraint": "4.0.13",
      "fika": "compatible",
-     "downloads": 542,
+     "downloads": 616,
      "size": 26440,
      "link": "https://sp-mod.com/mod/download/2900/task-item-indicator-backport-for-4013/1.0.0",
      "published_at": "2026-08-12T08:37:00.000000Z",
@@ -182943,7 +182943,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-08-12T08:42:00.000000Z",
-   "updated_at": "2026-08-13T21:57:16.000000Z",
+   "updated_at": "2026-08-14T10:16:10.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
@@ -183935,6 +183935,76 @@
     "contains_ads": false,
     "contains_ai_content": false,
     "ai_disclosure": "",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 2913,
+   "hub_id": null,
+   "guid": "com.thecrimsonfuckr.configurablesoftcore",
+   "name": "Configurable Softcore",
+   "slug": "configurable-softcore",
+   "teaser": "Sometimes you don't have time to loose it all.",
+   "description_html": "<h2>Why</h2>\n<p>A couple of my friends didn\u2019t really like loosing everything when they died (some were new to the game some were too busy to deal with the grind) I like loosing everything. So I made this, they can not loose everything how they see fit and I can feel my soul be crush as I die with a fat run of items on me.</p>\n<hr />\n<h3>Configuration</h3>\n<h4>Modes</h4>\n<table>\n<thead>\n<tr>\n<th>Mode</th>\n<th>Behaviour</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>Vanilla</code></td>\n<td>SPT default - lose all equipment on death</td>\n</tr>\n<tr>\n<td><code>KeepEverything</code></td>\n<td>Nothing is lost on death</td>\n</tr>\n<tr>\n<td><code>KeepGearOnly</code></td>\n<td>Keep the gear entered with (weapons, armor, pockets/rig/backpack as containers); contents of pockets/rig/backpack are always lost</td>\n</tr>\n<tr>\n<td><code>KeepEntryItems</code></td>\n<td>Keep everything entered with, including pockets/rig/backpack contents; only items picked up during the raid are lost</td>\n</tr>\n</tbody>\n</table>\n<p>(<code>config.jsonc</code>, written next to the mod DLL on first load)</p>\n<p><code>SecuredContainer</code> and <code>Scabbard</code> are always preserved, matching normal T***** rules, independent of mode.</p>\n<p><code>DefaultMode</code> applies to any profile not listed in <code>ProfileOverrides</code>, which maps a profile id (the filename, minus <code>.json</code>, under <code>user/profiles/</code> on the server) to a rule for that profile. Each rule\u2019s <code>Maps</code> is every SPT map id set to <code>true</code>/<code>false</code>: the rule\u2019s <code>Mode</code> only takes effect on maps listed <code>true</code> there; a map left out or set to <code>false</code> falls back to</p>\n<p><code>DefaultMode</code> - same as an unlisted profile. Leave <code>Maps</code> out entirely (or empty) to apply the rule on every map:</p>\n<pre><code>\"DefaultMode\": \"Vanilla\",\n\"ProfileOverrides\": {\n  \"68abf1e2c9c2a1f4b5d6e7f8\": {\n    \"Mode\": \"KeepEverything\",\n    \"Maps\": {\n      \"laboratory\": true,\n      \"factory4_night\": true,\n      \"shoreline\": false\n    }\n  }\n}\n</code></pre>\n<p>Map ids: <code>bigmap</code>, <code>woods</code>, <code>factory4_day</code>, <code>factory4_night</code>, <code>interchange</code>, <code>rezervbase</code>, <code>shoreline</code>, <code>laboratory</code>, <code>lighthouse</code>, <code>tarkovstreets</code>, <code>sandbox</code>, <code>sandbox_high</code>.</p>\n<p><code>PreserveFoundInRaid</code> (default <code>false</code>): SPT clears the Found in Raid flag from everything in the post-raid profile on death (<code>InRaidHelper.RemoveFiRStatusFromItems</code>), independent of what this mod protects from deletion - so without this, an item kept via <code>KeepEverything</code> / <code>KeepEntryItems</code> still loses its FiR tag. Set <code>true</code> to skip that stripping for raids this mod is actively restoring gear for, so kept items stay flea-sellable as if you\u2019d extracted with them.</p>\n<p><code>NotifyPlayer</code> (default <code>true</code>): sends an in-game system mail whenever this mod actively restores gear - shows up as the normal SPT mail notification (popup + sound), with text summarising the mode and how many items were kept. There\u2019s no client mod, so this - a mail message via <code>MailSendService.SendSystemMessageToPlayer</code> - is the closest thing to a toast notification a server-only mod can send. Set <code>false</code> to go back to silent.</p>\n<p><code>StripInsuranceForKeptItems</code> (default <code>true</code>): removes kept items from the profile\u2019s <code>InsuredItems</code> list so insurance doesn\u2019t also mail back a duplicate of anything this mod already restored. Applied both ahead of raid-end insurance processing (predicted keep-list, to avoid a noisy but harmless \u201cunable to find insurance details\u201d log per item) and again as a fallback when gear is actually restored. Set <code>false</code> to let insurance process kept items normally (risking a duplicate return).</p>\n<h4>How it works</h4>\n<p><code>ConfigurableInRaidHelper</code> (<code>src/ConfigurableSoftcore.Server/Services</code>) replaces SPT\u2019s <code>InRaidHelper</code> via DI. <code>SetInventory</code> compares the pre-raid server profile (still holding entry-state gear at that point) against the post-raid client profile, restores whatever the configured mode says should survive, and marks those item ids protected. <code>DeleteInventory</code> then only removes items that weren\u2019t marked protected.</p>\n<p>Neither of those receives the raid\u2019s map name, so <code>ConfigurableLocationLifecycleService</code> replaces SPT\u2019s <code>LocationLifecycleService</code> too, purely to capture it: <code>EndLocalRaid</code> parses the map out of <code>request.ServerId</code> (the same parsing SPT\u2019s own code does internally) before calling <code>base.EndLocalRaid</code>, and hands it to <code>ConfigurableInRaidHelper</code> via <code>RaidMapState</code> - a small singleton bridging the two, since they\u2019re DI-scoped differently and don\u2019t otherwise share state.</p>\n<h4>Install</h4>\n<p>Extract the archive and drop the <code>Mods</code> folder into your SPT root. Needs SPT 4.0.13.</p>\n<h4>Console logging</h4>\n<p>Every time this mod actively restores gear on death, it logs one line at Info level (visible in the server console by default, no config needed): session id, map, mode, and item count. Set <code>Debug: true</code> for a second, more detailed line per event (FiR-preservation and notification state) plus map-capture logging from <code>ConfigurableLocationLifecycleService</code>.</p>\n<hr />\n<h4>Known limitations (v1)</h4>\n<ul>\n<li>None currently tracked. Insurance interaction on kept items is handled by  <code>StripInsuranceForKeptItems</code> (default <code>true</code>) - see above.</li>\n</ul>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/LOoHwyEafbA0V36Tjv77e5yEWYBUWXHukEBYUd61.png",
+   "forge_url": "https://sp-mod.com/mod/2913/configurable-softcore",
+   "downloads": 4,
+   "favourites": 0,
+   "featured": false,
+   "fika": true,
+   "fika_latest": "compatible",
+   "category": {
+    "id": 3,
+    "title": "Scripting",
+    "slug": "scripting"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 96898,
+     "name": "the.crimson.fuckr",
+     "avatar": "https://files.sp-mod.com/profile-photos/q6W4ELDHFO4coicwMm4IWNhUClQ4AB5ecquG30AK_128w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/TheCrimsonFckr/TCFConfigurableSoftcore",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 14723,
+     "version": "1.0.0",
+     "description": "<p>Initial release</p>\n",
+     "spt_constraint": "4.0.13",
+     "fika": "compatible",
+     "downloads": 4,
+     "size": 31851,
+     "link": "https://sp-mod.com/mod/download/2913/configurable-softcore/1.0.0",
+     "published_at": "2026-08-14T09:43:08.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "1.0.0",
+   "spt_constraint": "4.0.13",
+   "all_spt_constraints": [
+    "4.0.13"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-08-14T09:43:16.000000Z",
+   "updated_at": "2026-08-14T09:44:04.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": true,
+    "ai_disclosure": "<p>Parts of this project were written with AI assistance (Claude Opus 5) - cleaning up, improving code quality and code comments for clarity. All changes were reviewed confirmed and tested in-game before release.</p>\n",
     "cheat_notice": false,
     "profile_binding_notice": false
    },
