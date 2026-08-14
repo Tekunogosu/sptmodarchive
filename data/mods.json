@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-08-13T22:08:10Z",
+ "generated_at": "2026-08-14T03:03:41Z",
  "source": "https://sp-mod.com",
  "filter": "all",
- "mod_count": 1854,
+ "mod_count": 1857,
  "categories": [
   {
    "id": 12,
@@ -1651,12 +1651,12 @@
    "guid": "com.rairaitheraichu.ammostats",
    "name": "Ammo Stats",
    "slug": "ammo-stats",
-   "teaser": "Now updated for 4.0.0+!",
-   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Mod Info</div>\n<div class=\"tab-content\"><p><strong>Ammo Stats In Description</strong></p>\n<p>HIGHLY recommend downloading the API that extends this mod even further! It was also written to be future-compatible with all new EFT and SPT versions. You can color the backgrounds of your icons using hex colors instead of the boring default ones!</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/1090/color-converter-api\" rel=\"noreferrer noopener\">Click here to view the page!</a></p>\n<h3>PLEASE READ: Officially deprecated by BSG!</h3>\n<p>Ammo stats are being shown in the effect info for each bullet now by default (same as where Bleed chance etc has been shown). That officially means that this mod is no longer required in any form.</p>\n<p>By default, this mod will no longer put the damage, penetration, and armor tier in the description of the bullet. You can turn that back on in the config.jsonc if you\u2019d like, but it\u2019s unnecessary.</p>\n<p>The mod still, however, will use color schemes for armor penetration tiers and change the background colors. The highest effective armor class is whichever tier the bullet can penetrate 50% of the time - directly between what BSG refers to as \u201cLow\u201d and \u201cMedium\u201d effectiveness.</p>\n<p><strong>Deprecated description:</strong></p>\n<p>Damage, penetration, and what level of armor the bullet is effective against can now be added to the ammo\u2019s description. No more memorizing which ammo type to load your mags with! No need to keep charts and apps up for reference - all you need to know is now contained in game.</p>\n<p>Two modes are available in the config/config.jsonc file, \u201cprepend\u201d and \u201cappend\u201d which will put the information at the beginning or the end of the ammo\u2019s description, respectively.</p>\n<p>Furthermore, you can change the mode to \u201cnewline\u201d and \u201coneline\u201d, which separates these stats on separate lines or | with | vertical | dividers! Check the attached screenshots for examples.</p>\n<p>Disabled by default, you can also now add the penetration tier to the name of the bullet, so you can see how effective it is at a glance during a magazine check.</p>\n<p>The mod fully supports ammo that was added by other mods, as well as changes made to the damage or penetration values or existing ammo types - just make sure this mod loads last!</p>\n<p>Currently, there are only three values (damage, penetration, and the best tier of armor the ammo is effective against) for you to enable/disable in the config, but more values are coming. If you have any suggestions, please leave them in the comments!</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Language Support</div>\n<div class=\"tab-content\"><p>Languages currently supported:</p>\n<ul>\n<li>English (\u201cen\u201d)</li>\n<li>Korean (\u201ckr\u201d) \u2013\u2013 (thanks, lua!)</li>\n<li>Russian (\u201cru\u201d) \u2013\u2013 (thanks, melody!)</li>\n<li>Chinese (\u201cch\u201d) \u2013\u2013 (thanks, egnbv!)</li>\n<li>French (\u201cfr\u201d) \u2013\u2013 (thanks, MasterAuger!)</li>\n<li>Japanese (\u201cjp\u201d) \u2013\u2013 (thanks, jackrippergame!)</li>\n<li>Czech (\u201ccz\u201d) \u2013\u2013 (thanks, lastocka!)</li>\n<li>Spanish (\u201ces\u201d) + Mexican Spanish (\u201ces-mx\u201d) \u2013\u2013 (thanks, javitecge!)</li>\n<li>German (\u201cge\u201d) \u2013\u2013 (thanks, MAEGE!)</li>\n<li>Polish (\u201cpl\u201d) \u2013\u2013 (thanks, RandomCitizen!)</li>\n<li>Traditional Chinese (\u201ctw\u201d) \u2013\u2013 (thanks, LisaMikA!)</li>\n<li>Italian (\u201cit\u201d) \u2013\u2013 (thanks, Octopussy!)</li>\n<li>Brazilian Portugese (pt/br) \u2013\u2013 (thanks, manodavis!)</li>\n</ul>\n<p>Languages left to translate:</p>\n<p>hu, sk, tu</p>\n<p>If you would like to contribute, you can copy the entry for \u201cen\u201d in the config, change \u201cen\u201d to the language key for your language (\u201cru\u201d, for example), and change the right-side values to the ones you\u2019d like to see. Make sure all values are there - don\u2019t skip any entries!</p>\n<p>Send a snippet for your language similar to the ones below over Discord (RaiRaiTheRaichu) so it can be included in the next update and your name can be credited!</p>\n<p>Example for English localization:</p>\n<pre><code>\"en\": {\n    \"Damage\": \"Damage\",\n    \"Penetration\": \"Penetration\",\n    \"TextEffectArmorLv\": \"Effective against armor level\",\n    \"EffectNone\": \"None\",\n    \"Pellets\": \"Pellets\"\n}, \n</code></pre>\n<p>Example for Russian localization:</p>\n<pre><code>\"ru\": {\n    \"Damage\": \"\u0423\u0440\u043e\u043d\",\n    \"Penetration\": \"\u0411\u0440\u043e\u043d\u0435\u043f\u0440\u043e\u0431\u0438\u0442\u0438\u0435\",\n    \"TextEffectArmorLv\": \"\u042d\u0444\u0444\u0435\u043a\u0442\u0438\u0432\u0435\u043d \u043f\u0440\u043e\u0442\u0438\u0432 \u0431\u0440\u043e\u043d\u0438 \u0443\u0440\u043e\u0432\u043d\u044f\",\n    \"EffectNone\": \"\u041d\u0435\u0442\",\n    \"Pellets\": \"\u0414\u0440\u043e\u0431\u0438\u043d\u043e\u043a\"\n},\n</code></pre></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Changelog</div>\n<div class=\"tab-content\"><ul>\n<li>\n<p>June 4th, 2026:</p>\n<ul>\n<li>Fixed an OS-dependent issue with loading database and config files.</li>\n</ul>\n</li>\n<li>\n<p>June 3rd, 2026:</p>\n<ul>\n<li>Complete rewrite for SPT 4.0 in C#, maintaining all of the features from previous versions.</li>\n</ul>\n</li>\n<li>\n<p>March 24th, 2025:</p>\n<ul>\n<li>Added background colors to ammo boxes.</li>\n<li>Refactored armor penetration tier calculation; the effective ammo tier is now the highest tier the bullet will penetrate at least 50% of the time, using BSG\u2019s calculations.</li>\n<li>Minor code cleanup and additional checks.</li>\n<li>Minor change to the version in the package.json, compatible with version 3.11.0+ of SPT.</li>\n</ul>\n</li>\n<li>\n<p>December 21st, 2024:</p>\n<ul>\n<li>Minor change to the version in the package.json, compatible with version 3.10.0+ of SPT.</li>\n</ul>\n</li>\n<li>\n<p>July 10th, 2024:</p>\n<ul>\n<li>Added Italian language support - thanks Octopussy!</li>\n<li>Added Brazilian Portugese language support - thanks manodavis!</li>\n<li>Stats are no longer shown in the description by default, thanks to BSG.</li>\n<li>Refactor to module changes for SPT 3.9.0+.</li>\n<li>Minor change to the version in the package.json, compatible with version 3.9.0+ of SPT.</li>\n</ul>\n</li>\n<li>\n<p>May 4th, 2024:</p>\n<ul>\n<li>Fixed an issue where background colors were being applied to ammunition when it was disabled in the config, for real this time.</li>\n<li>Added a config option to disable Realism compatibility, so people can use Realism with their Ballistics changes off and have the proper armor tier pen stats and colors.</li>\n<li>Added Traditional Chinese language support - thanks LisaMikA!</li>\n<li>Refactor of zip file structure - now installed by dragging and dropping the included \u201cuser/mods/\u201d folder into the root of your SPT directory.</li>\n</ul>\n</li>\n<li>\n<p>April 1st, 2024:</p>\n<ul>\n<li>Fixed an issue where background colors were being applied to ammunition when it was disabled in the config</li>\n<li>Revised SPT Realism mod compatibility, no additional config required, it\u2019s automatically detected</li>\n<li>Minor change to the version in the package.json, compatible with version 3.8.0+ of SPT.</li>\n</ul>\n</li>\n<li>\n<p>October 8th, 2023:</p>\n<ul>\n<li>Added support for the new Color Converter API client plugin.</li>\n<li>Added support for the SPT Realism mod.</li>\n<li>Added Polish language support - thanks RandomCitizen!</li>\n<li>Changed config to .jsonc, added proper comments to the options.</li>\n<li>Color profiles! Check the config.jsonc to view the new color profiles (including colorblind/grayscale mode).</li>\n<li>Minor change to the version in the package.json, compatible with version 3.7.0+ of SPT.\n<ul>\n<li>This version will NOT work for versions prior to 3.7.0 due to the change to .jsonc - please use the older release if you\u2019re playing on 3.6.1 or earlier!</li>\n</ul>\n</li>\n</ul>\n</li>\n<li>\n<p>February 12th, 2023:</p>\n<ul>\n<li>Minor change to the version in the package.json, compatible with version 3.5.0 of SPT.</li>\n</ul>\n</li>\n<li>\n<p>December 22nd, 2022:</p>\n<ul>\n<li>Added German language support - thanks MAEGE!</li>\n<li>Major refactor to localization to comply with new standards as of client version 20765.</li>\n<li>Minor change to the version in the package.json, compatible with version 3.4.0 of SPT.</li>\n</ul>\n</li>\n<li>\n<p>November 25th, 2022:</p>\n<ul>\n<li>Added Spanish/Mexican language support - thanks javitecge!</li>\n<li>Minor change to the version in the package.json, compatible with version 3.3.0 of SPT.</li>\n</ul>\n</li>\n<li>\n<p>October 4th, 2022:</p>\n<ul>\n<li>Added Czech language support - thanks lastocka!</li>\n<li>Minor change to the version in the package.json, compatible with version 3.2.4 of SPT.</li>\n</ul>\n</li>\n<li>\n<p>August 31st, 2022:</p>\n<ul>\n<li>Minor change to the version in the package.json, compatible with version 3.2.2 of SPT.</li>\n<li>Added option to suppress the debug logging to get rid of some warning text when modded ammo types don\u2019t have descriptions added for all languages.</li>\n</ul>\n</li>\n<li>\n<p>August 1st, 2022:</p>\n<ul>\n<li>Added the ability to show the penetration tier in the ammo name, so you can see it during magazine checks!</li>\n<li>Added the ability to change the background color of ammo icons based on the penetration tiers!</li>\n<li>Added Japanese language support - thanks jackrippergame!</li>\n</ul>\n</li>\n<li>\n<p>July 26th, 2022:</p>\n<ul>\n<li>Fixed bug that showed localized languages in English even though they are supported.</li>\n<li>Minor refactor to support SPT version 3.1.1.</li>\n</ul>\n</li>\n<li>\n<p>July 24th, 2022:</p>\n<ul>\n<li>Minor refactor to support SPT version 3.1.0.</li>\n</ul>\n</li>\n<li>\n<p>July 20th, 2022:</p>\n<ul>\n<li>Major refactor to support SPT version 3.0.0!</li>\n<li>Added French language support (thanks MasterAuger!)</li>\n<li>License update.</li>\n</ul>\n</li>\n<li>\n<p>June 16th, 2022:</p>\n<ul>\n<li>Added Chinese language support (thanks EGNBV!)</li>\n<li>Changed versioning to 2.3.1 of SPT to eliminate warning message.</li>\n</ul>\n</li>\n<li>\n<p>March 4th, 2022:</p>\n<ul>\n<li>Added Russian language support (thanks Melody!)</li>\n<li>Changed versioning to 2.2.3 of SPT to eliminate warning message.</li>\n</ul>\n</li>\n<li>\n<p>February 22, 2022:</p>\n<ul>\n<li>Minor change to the version in the package.json, compatible with version 2.2.2+ of SPT.</li>\n</ul>\n</li>\n<li>\n<p>December 12th, 2021:</p>\n<ul>\n<li>Mod has been fully updated and heavily rewritten and refactored, now compatible with version 2.1.2 of SPT! (Thanks for the help, lua!)</li>\n<li>Language file support, an additional method of displaying information all on one line, error handling for mods with no proper description entry, and configurable information (only see what you want to see!).</li>\n<li>Soon, more information will be available, as the framework is done and more details and stats can be easily added.</li>\n</ul>\n</li>\n<li>\n<p>July 17th, 2021:</p>\n<ul>\n<li>Mod confirmed working with 2.0.0 R6 SPT. Once 2.0.0 becomes stable, I\u2019ll give this mod a small update with Senko\u2019s modapi support and a few bugfixes and new optional features.</li>\n</ul>\n</li>\n<li>\n<p>July 1st, 2021:</p>\n<ul>\n<li>Mod confirmed working with 1.5.1 SPT!</li>\n</ul>\n</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Bug Reports</div>\n<div class=\"tab-content\"><p>If you encounter any issues, please feel free to contact me on Discord (RaiRaiTheRaichu) (This includes incompatibilities you may find with other mods!)</p>\n<p>You can leave a comment here, as well, but response time may be significantly longer as I do not usually check my inbox here often.</p>\n<p><strong>Please include any logs generated from the console as well to help me narrow down the issue.</strong></p></div></div></div>\n",
+   "teaser": "Now updated for 4.1.0+!",
+   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Mod Info</div>\n<div class=\"tab-content\"><p><strong>Ammo Stats In Description</strong></p>\n<p>HIGHLY recommend downloading the API that extends this mod even further! It was also written to be future-compatible with all new EFT and SPT versions. You can color the backgrounds of your icons using hex colors instead of the boring default ones!</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1090/color-converter-api\" rel=\"noreferrer noopener\">Click here to view the page!</a></p>\n<h3>PLEASE READ: Officially deprecated by B**!</h3>\n<p>Ammo stats are being shown in the effect info for each bullet now by default (same as where Bleed chance etc has been shown). That officially means that this mod is no longer required in any form.</p>\n<p>By default, this mod will no longer put the damage, penetration, and armor tier in the description of the bullet. You can turn that back on in the config.jsonc if you\u2019d like, but it\u2019s unnecessary.</p>\n<p>The mod still, however, will use color schemes for armor penetration tiers and change the background colors. The highest effective armor class is whichever tier the bullet can penetrate 50% of the time - directly between what B** refers to as \u201cLow\u201d and \u201cMedium\u201d effectiveness.</p>\n<p><strong>Deprecated description:</strong></p>\n<p>Damage, penetration, and what level of armor the bullet is effective against can now be added to the ammo\u2019s description. No more memorizing which ammo type to load your mags with! No need to keep charts and apps up for reference - all you need to know is now contained in game.</p>\n<p>Two modes are available in the config/config.jsonc file, \u201cprepend\u201d and \u201cappend\u201d which will put the information at the beginning or the end of the ammo\u2019s description, respectively.</p>\n<p>Furthermore, you can change the mode to \u201cnewline\u201d and \u201coneline\u201d, which separates these stats on separate lines or | with | vertical | dividers! Check the attached screenshots for examples.</p>\n<p>Disabled by default, you can also now add the penetration tier to the name of the bullet, so you can see how effective it is at a glance during a magazine check.</p>\n<p>The mod fully supports ammo that was added by other mods, as well as changes made to the damage or penetration values or existing ammo types - just make sure this mod loads last!</p>\n<p>Currently, there are only three values (damage, penetration, and the best tier of armor the ammo is effective against) for you to enable/disable in the config, but more values are coming. If you have any suggestions, please leave them in the comments!</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Language Support</div>\n<div class=\"tab-content\"><p>Languages currently supported:</p>\n<ul>\n<li>English (\u201cen\u201d)</li>\n<li>Korean (\u201ckr\u201d) \u2013\u2013 (thanks, lua!)</li>\n<li>Russian (\u201cru\u201d) \u2013\u2013 (thanks, melody!)</li>\n<li>Chinese (\u201cch\u201d) \u2013\u2013 (thanks, egnbv!)</li>\n<li>French (\u201cfr\u201d) \u2013\u2013 (thanks, MasterAuger!)</li>\n<li>Japanese (\u201cjp\u201d) \u2013\u2013 (thanks, jackrippergame!)</li>\n<li>Czech (\u201ccz\u201d) \u2013\u2013 (thanks, lastocka!)</li>\n<li>Spanish (\u201ces\u201d) + Mexican Spanish (\u201ces-mx\u201d) \u2013\u2013 (thanks, javitecge!)</li>\n<li>German (\u201cge\u201d) \u2013\u2013 (thanks, MAEGE!)</li>\n<li>Polish (\u201cpl\u201d) \u2013\u2013 (thanks, RandomCitizen!)</li>\n<li>Traditional Chinese (\u201ctw\u201d) \u2013\u2013 (thanks, LisaMikA!)</li>\n<li>Italian (\u201cit\u201d) \u2013\u2013 (thanks, Octopussy!)</li>\n<li>Brazilian Portugese (pt/br) \u2013\u2013 (thanks, manodavis!)</li>\n</ul>\n<p>Languages left to translate:</p>\n<p>hu, sk, tu</p>\n<p>If you would like to contribute, you can copy the entry for \u201cen\u201d in the config, change \u201cen\u201d to the language key for your language (\u201cru\u201d, for example), and change the right-side values to the ones you\u2019d like to see. Make sure all values are there - don\u2019t skip any entries!</p>\n<p>Send a snippet for your language similar to the ones below over Discord (RaiRaiTheRaichu) so it can be included in the next update and your name can be credited!</p>\n<p>Example for English localization:</p>\n<pre><code>\"en\": {\n    \"Damage\": \"Damage\",\n    \"Penetration\": \"Penetration\",\n    \"TextEffectArmorLv\": \"Effective against armor level\",\n    \"EffectNone\": \"None\",\n    \"Pellets\": \"Pellets\"\n}, \n</code></pre>\n<p>Example for Russian localization:</p>\n<pre><code>\"ru\": {\n    \"Damage\": \"\u0423\u0440\u043e\u043d\",\n    \"Penetration\": \"\u0411\u0440\u043e\u043d\u0435\u043f\u0440\u043e\u0431\u0438\u0442\u0438\u0435\",\n    \"TextEffectArmorLv\": \"\u042d\u0444\u0444\u0435\u043a\u0442\u0438\u0432\u0435\u043d \u043f\u0440\u043e\u0442\u0438\u0432 \u0431\u0440\u043e\u043d\u0438 \u0443\u0440\u043e\u0432\u043d\u044f\",\n    \"EffectNone\": \"\u041d\u0435\u0442\",\n    \"Pellets\": \"\u0414\u0440\u043e\u0431\u0438\u043d\u043e\u043a\"\n},\n</code></pre></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Changelog</div>\n<div class=\"tab-content\"><ul>\n<li>\n<p>August 12th, 2026:</p>\n<ul>\n<li>Update for compatibility with SPT 4.1.0+</li>\n</ul>\n</li>\n<li>\n<p>June 4th, 2026:</p>\n<ul>\n<li>Fixed an OS-dependent issue with loading database and config files.</li>\n</ul>\n</li>\n<li>\n<p>June 3rd, 2026:</p>\n<ul>\n<li>Complete rewrite for SPT 4.0 in C#, maintaining all of the features from previous versions.</li>\n</ul>\n</li>\n<li>\n<p>March 24th, 2025:</p>\n<ul>\n<li>Added background colors to ammo boxes.</li>\n<li>Refactored armor penetration tier calculation; the effective ammo tier is now the highest tier the bullet will penetrate at least 50% of the time, using B**\u2019s calculations.</li>\n<li>Minor code cleanup and additional checks.</li>\n<li>Minor change to the version in the package.json, compatible with version 3.11.0+ of SPT.</li>\n</ul>\n</li>\n<li>\n<p>December 21st, 2024:</p>\n<ul>\n<li>Minor change to the version in the package.json, compatible with version 3.10.0+ of SPT.</li>\n</ul>\n</li>\n<li>\n<p>July 10th, 2024:</p>\n<ul>\n<li>Added Italian language support - thanks Octopussy!</li>\n<li>Added Brazilian Portugese language support - thanks manodavis!</li>\n<li>Stats are no longer shown in the description by default, thanks to B**.</li>\n<li>Refactor to module changes for SPT 3.9.0+.</li>\n<li>Minor change to the version in the package.json, compatible with version 3.9.0+ of SPT.</li>\n</ul>\n</li>\n<li>\n<p>May 4th, 2024:</p>\n<ul>\n<li>Fixed an issue where background colors were being applied to ammunition when it was disabled in the config, for real this time.</li>\n<li>Added a config option to disable Realism compatibility, so people can use Realism with their Ballistics changes off and have the proper armor tier pen stats and colors.</li>\n<li>Added Traditional Chinese language support - thanks LisaMikA!</li>\n<li>Refactor of zip file structure - now installed by dragging and dropping the included \u201cuser/mods/\u201d folder into the root of your SPT directory.</li>\n</ul>\n</li>\n<li>\n<p>April 1st, 2024:</p>\n<ul>\n<li>Fixed an issue where background colors were being applied to ammunition when it was disabled in the config</li>\n<li>Revised SPT Realism mod compatibility, no additional config required, it\u2019s automatically detected</li>\n<li>Minor change to the version in the package.json, compatible with version 3.8.0+ of SPT.</li>\n</ul>\n</li>\n<li>\n<p>October 8th, 2023:</p>\n<ul>\n<li>Added support for the new Color Converter API client plugin.</li>\n<li>Added support for the SPT Realism mod.</li>\n<li>Added Polish language support - thanks RandomCitizen!</li>\n<li>Changed config to .jsonc, added proper comments to the options.</li>\n<li>Color profiles! Check the config.jsonc to view the new color profiles (including colorblind/grayscale mode).</li>\n<li>Minor change to the version in the package.json, compatible with version 3.7.0+ of SPT.\n<ul>\n<li>This version will NOT work for versions prior to 3.7.0 due to the change to .jsonc - please use the older release if you\u2019re playing on 3.6.1 or earlier!</li>\n</ul>\n</li>\n</ul>\n</li>\n<li>\n<p>February 12th, 2023:</p>\n<ul>\n<li>Minor change to the version in the package.json, compatible with version 3.5.0 of SPT.</li>\n</ul>\n</li>\n<li>\n<p>December 22nd, 2022:</p>\n<ul>\n<li>Added German language support - thanks MAEGE!</li>\n<li>Major refactor to localization to comply with new standards as of client version 20765.</li>\n<li>Minor change to the version in the package.json, compatible with version 3.4.0 of SPT.</li>\n</ul>\n</li>\n<li>\n<p>November 25th, 2022:</p>\n<ul>\n<li>Added Spanish/Mexican language support - thanks javitecge!</li>\n<li>Minor change to the version in the package.json, compatible with version 3.3.0 of SPT.</li>\n</ul>\n</li>\n<li>\n<p>October 4th, 2022:</p>\n<ul>\n<li>Added Czech language support - thanks lastocka!</li>\n<li>Minor change to the version in the package.json, compatible with version 3.2.4 of SPT.</li>\n</ul>\n</li>\n<li>\n<p>August 31st, 2022:</p>\n<ul>\n<li>Minor change to the version in the package.json, compatible with version 3.2.2 of SPT.</li>\n<li>Added option to suppress the debug logging to get rid of some warning text when modded ammo types don\u2019t have descriptions added for all languages.</li>\n</ul>\n</li>\n<li>\n<p>August 1st, 2022:</p>\n<ul>\n<li>Added the ability to show the penetration tier in the ammo name, so you can see it during magazine checks!</li>\n<li>Added the ability to change the background color of ammo icons based on the penetration tiers!</li>\n<li>Added Japanese language support - thanks jackrippergame!</li>\n</ul>\n</li>\n<li>\n<p>July 26th, 2022:</p>\n<ul>\n<li>Fixed bug that showed localized languages in English even though they are supported.</li>\n<li>Minor refactor to support SPT version 3.1.1.</li>\n</ul>\n</li>\n<li>\n<p>July 24th, 2022:</p>\n<ul>\n<li>Minor refactor to support SPT version 3.1.0.</li>\n</ul>\n</li>\n<li>\n<p>July 20th, 2022:</p>\n<ul>\n<li>Major refactor to support SPT version 3.0.0!</li>\n<li>Added French language support (thanks MasterAuger!)</li>\n<li>License update.</li>\n</ul>\n</li>\n<li>\n<p>June 16th, 2022:</p>\n<ul>\n<li>Added Chinese language support (thanks EGNBV!)</li>\n<li>Changed versioning to 2.3.1 of SPT to eliminate warning message.</li>\n</ul>\n</li>\n<li>\n<p>March 4th, 2022:</p>\n<ul>\n<li>Added Russian language support (thanks Melody!)</li>\n<li>Changed versioning to 2.2.3 of SPT to eliminate warning message.</li>\n</ul>\n</li>\n<li>\n<p>February 22, 2022:</p>\n<ul>\n<li>Minor change to the version in the package.json, compatible with version 2.2.2+ of SPT.</li>\n</ul>\n</li>\n<li>\n<p>December 12th, 2021:</p>\n<ul>\n<li>Mod has been fully updated and heavily rewritten and refactored, now compatible with version 2.1.2 of SPT! (Thanks for the help, lua!)</li>\n<li>Language file support, an additional method of displaying information all on one line, error handling for mods with no proper description entry, and configurable information (only see what you want to see!).</li>\n<li>Soon, more information will be available, as the framework is done and more details and stats can be easily added.</li>\n</ul>\n</li>\n<li>\n<p>July 17th, 2021:</p>\n<ul>\n<li>Mod confirmed working with 2.0.0 R6 SPT. Once 2.0.0 becomes stable, I\u2019ll give this mod a small update with Senko\u2019s modapi support and a few bugfixes and new optional features.</li>\n</ul>\n</li>\n<li>\n<p>July 1st, 2021:</p>\n<ul>\n<li>Mod confirmed working with 1.5.1 SPT!</li>\n</ul>\n</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Bug Reports</div>\n<div class=\"tab-content\"><p>If you encounter any issues, please feel free to contact me on Discord (RaiRaiTheRaichu) (This includes incompatibilities you may find with other mods!)</p>\n<p>You can leave a comment here, as well, but response time may be significantly longer as I do not usually check my inbox here often.</p>\n<p><strong>Please include any logs generated from the console as well to help me narrow down the issue.</strong></p></div></div></div>\n",
    "thumbnail": "",
-   "forge_url": "https://forge.sp-tarkov.com/mod/167/ammo-stats",
-   "downloads": 204501,
-   "favourites": 48,
+   "forge_url": "https://sp-mod.com/mod/167/ammo-stats",
+   "downloads": 205079,
+   "favourites": 50,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -1673,7 +1673,7 @@
     {
      "id": 3576,
      "name": "RaiRaiTheRaichu",
-     "avatar": "https://forge-static.sp-tarkov.com/profile-photos/b7b8eb01816280f8cac17bf8bcafd05c6ed66378_128w.webp"
+     "avatar": "https://files.sp-mod.com/profile-photos/b7b8eb01816280f8cac17bf8bcafd05c6ed66378_128w.webp"
     }
    ],
    "source_links": [
@@ -1684,14 +1684,26 @@
    ],
    "versions": [
     {
+     "id": 14716,
+     "version": "4.1.0",
+     "description": "<p>Changelog:</p>\n<ul>\n<li>Update for compatibility with SPT 4.1.0+</li>\n</ul>\n<p>Hey! Thanks for downloading, if you\u2019d like to support my work, you\u2019re more than welcome to support me at the link below or follow along at my Ko-Fi page here:</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/rairaitheraichu\" rel=\"noreferrer noopener\">https://ko-fi.com/rairaitheraichu</a></p>\n",
+     "spt_constraint": "~4.1.0",
+     "fika": "compatible",
+     "downloads": 59,
+     "size": 35044,
+     "link": "https://sp-mod.com/mod/download/167/ammo-stats/4.1.0",
+     "published_at": "2026-08-14T00:19:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 13702,
      "version": "4.0.1",
      "description": "<p>Changelog:</p>\n<ul>\n<li>Fixed an OS-dependent issue with loading database and config files</li>\n</ul>\n<p>Hey! Thanks for downloading, if you\u2019d like to support my work, you\u2019re more than welcome to support me at the link below or follow along at my Ko-Fi page here:</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/rairaitheraichu\" rel=\"noreferrer noopener\">https://ko-fi.com/rairaitheraichu</a></p>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 5431,
+     "downloads": 5678,
      "size": 34177,
-     "link": "https://forge.sp-tarkov.com/mod/download/167/ammo-stats/4.0.1",
+     "link": "https://sp-mod.com/mod/download/167/ammo-stats/4.0.1",
      "published_at": "2026-06-04T20:26:00.000000Z",
      "dependencies": []
     },
@@ -1701,9 +1713,9 @@
      "description": "<p>Changelog:</p>\n<ul>\n<li>Complete rewrite for SPT 4.0 in C#, maintaining all of the features from previous versions.</li>\n</ul>\n<p>Hey! Thanks for downloading, if you\u2019d like to support my work, you\u2019re more than welcome to support me at the link below or follow along at my Ko-Fi page here:</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/rairaitheraichu\" rel=\"noreferrer noopener\">https://ko-fi.com/rairaitheraichu</a></p>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 262,
+     "downloads": 293,
      "size": 19940,
-     "link": "https://forge.sp-tarkov.com/mod/download/167/ammo-stats/4.0.0",
+     "link": "https://sp-mod.com/mod/download/167/ammo-stats/4.0.0",
      "published_at": "2026-06-03T20:47:00.000000Z",
      "dependencies": []
     },
@@ -1713,9 +1725,9 @@
      "description": "<p>Changelog:</p>\n<p>Added background colors to ammo boxes.<br />\nRefactored armor penetration tier calculation; the effective ammo tier is now the highest tier the bullet will penetrate at least 50% of the time, using BSG\u2019s calculations.<br />\nMinor code cleanup and additional checks.<br />\nMinor change to the version in the package.json, compatible with version 3.11.0+ of SPT.</p>\n<p>Hey! Thanks for downloading, if you\u2019d like to support my work, you\u2019re more than welcome to support me at the link below or follow along at my Ko-Fi page here:</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/rairaitheraichu\" rel=\"noreferrer noopener\">https://ko-fi.com/rairaitheraichu</a></p>\n",
      "spt_constraint": "~3.11.0",
      "fika": "unknown",
-     "downloads": 20813,
+     "downloads": 20854,
      "size": null,
-     "link": "https://forge.sp-tarkov.com/mod/download/167/ammo-stats/3.2.0",
+     "link": "https://sp-mod.com/mod/download/167/ammo-stats/3.2.0",
      "published_at": "2025-03-25T02:28:36.000000Z",
      "dependencies": []
     },
@@ -1725,9 +1737,9 @@
      "description": "<p>Changelog:</p>\n<p>Minor change to the version in the package.json, compatible with version 3.10.0+ of SPT.</p>\n<p>Hey! Thanks for downloading, if you\u2019d like to support my work, you\u2019re more than welcome to support me at the link below or follow along at my Ko-Fi page here:</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/rairaitheraichu\" rel=\"noreferrer noopener\">https://ko-fi.com/rairaitheraichu</a></p>\n",
      "spt_constraint": "3.10.0",
      "fika": "unknown",
-     "downloads": 11657,
+     "downloads": 11694,
      "size": null,
-     "link": "https://forge.sp-tarkov.com/mod/download/167/ammo-stats/3.1.3",
+     "link": "https://sp-mod.com/mod/download/167/ammo-stats/3.1.3",
      "published_at": "2024-12-21T06:10:10.000000Z",
      "dependencies": []
     },
@@ -1737,9 +1749,9 @@
      "description": "<p>Changelog:</p>\n<p>Added Italian language support - thanks Octopussy!</p>\n<p>Added Brazilian Portugese language support - thanks manodavis!</p>\n<p>Stats are no longer shown in the description by default, thanks to BSG.</p>\n<p>Refactor to module changes for SPT 3.9.0+.</p>\n<p>Minor change to the version in the package.json, compatible with version 3.9.0+ of SPT.</p>\n<p>Hey! Thanks for downloading, if you\u2019d like to support my work, you\u2019re more than welcome to support me at the link below or follow along at my Ko-Fi page here:</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/rairaitheraichu\" rel=\"noreferrer noopener\">https://ko-fi.com/rairaitheraichu</a></p>\n",
      "spt_constraint": "3.9.0",
      "fika": "unknown",
-     "downloads": 26846,
+     "downloads": 26884,
      "size": null,
-     "link": "https://forge.sp-tarkov.com/mod/download/167/ammo-stats/3.1.2",
+     "link": "https://sp-mod.com/mod/download/167/ammo-stats/3.1.2",
      "published_at": "2024-07-10T20:42:31.000000Z",
      "dependencies": []
     },
@@ -1749,26 +1761,27 @@
      "description": "<p>Changelog:</p>\n<p>Fixed an issue where background colors were being applied to ammunition when it was disabled in the config<br />\nRevised SPT Realism mod compatibility, no additional config required, it\u2019s automatically detected<br />\nMinor change to the version in the package.json, compatible with version 3.8.0+ of AKI.</p>\n<p>Hey! Thanks for downloading, if you\u2019d like to support my work, you\u2019re more than welcome to support me at the link below or follow along at my Ko-Fi page here:</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/rairaitheraichu\" rel=\"noreferrer noopener\">https://ko-fi.com/rairaitheraichu</a></p>\n",
      "spt_constraint": "3.8.0",
      "fika": "unknown",
-     "downloads": 24582,
+     "downloads": 24621,
      "size": null,
-     "link": "https://forge.sp-tarkov.com/mod/download/167/ammo-stats/3.1.0",
+     "link": "https://sp-mod.com/mod/download/167/ammo-stats/3.1.0",
      "published_at": "2024-04-01T22:08:46.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "4.0.1",
-   "spt_constraint": "~4.0.0",
+   "latest_version": "4.1.0",
+   "spt_constraint": "~4.1.0",
    "all_spt_constraints": [
     "3.10.0",
     "3.8.0",
     "3.9.0",
     "~3.11.0",
-    "~4.0.0"
+    "~4.0.0",
+    "~4.1.0"
    ],
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2021-06-14T15:54:00.000000Z",
-   "updated_at": "2026-07-28T09:05:43.000000Z",
+   "updated_at": "2026-08-14T00:21:04.000000Z",
    "flags": {
     "contains_ads": true,
     "contains_ai_content": false,
@@ -6901,12 +6914,12 @@
    "guid": "com.rairaitheraichu.alltheclothes",
    "name": "All The Clothes",
    "slug": "all-the-clothes",
-   "teaser": "SPT 4.0+ rewrite IS OUT. The clothes are BACK.",
-   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Mod Info</div>\n<div class=\"tab-content\"><h4>All The Clothes</h4>\n<p><strong>NEW CLOTHES ARE ADDED TO FENCE, IN THE SERVICES TAB AT THE TOP.</strong></p>\n<p>RAGMAN WILL HAVE THE PMC CLOTHING AS USUAL.</p>\n<p>Want to support my work? Consider clicking the link below!</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/rairaitheraichu\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://storage.ko-fi.com/cdn/kofi2.png?v=3\" alt=\"kofi2.png?v=3\" /></a></p>\n<p>Written from the ground up for SPT 4.0+, All The Clothes is back with more options than ever.\nIncluded out of the box are all Arena and Battlepass-only clothing, integrated into the trader services menu.\nAll scav and boss clothing by default can be found on Fence\u2019s new Services tab*, all PMC clothing can be found on Ragman as usual.</p>\n<p>Clothing, voices, and heads are all able to be unlocked and equipped regardless of faction, with their own unique unlock requirements.\nCheck out the file <code>config.jsonc</code> for all options, including making all the clothing, modded and vanilla, free to be worn without any requirements at all.</p>\n<p>*On SPT version 4.0.0 and 4.0.1, scav and boss clothing will always be found on Ragman. Please upgrade your  version of SPT in order to use Service menus from other traders, including Fence.</p>\n<p>You can:</p>\n<ul>\n<li>Choose scav and boss voices for your PMC!</li>\n<li>Choose scav and boss faces for your PMC! (Normally only available at profile creation - see \u201cSwapping Heads\u201d to change head models on existing profiles.)</li>\n<li>Choose any faction voice for your PMC! Play as a USEC with a Bear voice or vice versa!</li>\n<li>Choose any faction clothing for your PMC! Dress in your favorite Bear clothing as a USEC, or dress up as a USEC as a Bear!</li>\n<li>Disable the unlock requirements for all these new Scav/Boss clothes! Wear whatever you want right at the start for maximum roleplay!</li>\n<li>Come up with your own unlocks and rebalance them however you\u2019d like!</li>\n</ul>\n<p>If you\u2019d like to rename some of the new clothing/head/voices, the localization can be found within the \u201cdb/locale/\u201d folder.\nRemember, you can change your voice at any time in the game\u2019s Settings, in the Audio tab.</p>\n<p>Feel free to leave a comment or contact me using Discord if you have any suggestions or have any issues!</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Swapping Heads</div>\n<div class=\"tab-content\"><p>Note: An easier option than editing your profile by hand below is using the following mod:\n<a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1277/wtt-head-and-voice-selector\" rel=\"noreferrer noopener\">https://sp-mod.com/mod/1277/wtt-head-and-voice-selector</a></p>\n<p>If you still want to manually edit your profile.json file, continue reading below.</p>\n<p>Make sure your server is shut down!</p>\n<p>Open your profile\u2019s .json located within <code>user/profiles</code> with any text editor (preferably Notepad ++).</p>\n<p>Look for a line starting with <code>\"Head\": </code>, which should be near the top, right below <code>\"Customization\": {</code>.</p>\n<p>Swap the ID for the head for any of the following, and save your profile:</p>\n<p><code>\"5cc084dd14c02e000b0550a3\"</code> for: Bear - Vasilyev</p>\n<p><code>\"5fdb7571e4ed5b5ea251e529\"</code> for: Bear - Volkov</p>\n<p><code>\"60a6aaad42fd2735e4589978\"</code> for: Bear - Gavrilov</p>\n<p><code>\"619f94f5b90286142b59d45f\"</code> for: Bear - Kolesnikov</p>\n<p><code>\"62a9e7d15ea3b87d6f642a28\"</code> for: Bear - Danilov</p>\n<p><code>\"5cde96047d6c8b20b577f016\"</code> for: USEC - Taylor</p>\n<p><code>\"5fdb5950f5264a66150d1c6e\"</code> for: USEC - Foreman</p>\n<p><code>\"5fdb4139e4ed5b5ea251e4ed\"</code> for: USEC - Hudson</p>\n<p><code>\"60a6aa8fd559ae040d0d951f\"</code> for: USEC - Mullen</p>\n<p><code>\"619f9e338858a474c8685cc9\"</code> for: USEC - Grant</p>\n<p><code>\"5fc614290b735e7b024c76e5\"</code> for: SCAV - Drozd</p>\n<p><code>\"5f68c4a7c174a17c0f4c8945\"</code> for: SCAV - Kot</p>\n<p><code>\"5fc614390b735e7b024c76e6\"</code> for: SCAV - Misha</p>\n<p><code>\"5f68c4c217d579077152a252\"</code> for: SCAV - Mozg</p>\n<p><code>\"5fc614130b735e7b024c76e4\"</code> for: SCAV - Sanya</p>\n<p><code>\"5cc2e4d014c02e000d0115f8\"</code> for: SCAV - Samogon</p>\n<p><code>\"5fc613e10b735e7b024c76e3\"</code> for: SCAV - Seva</p>\n<p><code>\"5fc6144b0b735e7b024c76e7\"</code> for: SCAV - Stasik</p>\n<p><code>\"5cde9ff17d6c8b0474535daa\"</code> for: SCAV - Tankist</p>\n<p><code>\"5fc613c80b735e7b024c76e2\"</code> for: SCAV - Yarik</p>\n<p><code>\"5d28afe786f774292668618d\"</code> for: Cig Scav</p>\n<p><code>\"5d28b01486f77429242fc898\"</code> for: Reshala</p>\n<p><code>\"5e99767c86f7741ac7399393\"</code> for: Sanitar</p>\n<p><code>\"5d28b03e86f7747f7e69ab8a\"</code> for: Killa</p>\n<p><code>\"5d5e805d86f77439eb4c2d0e\"</code> for: Glukhar</p>\n<p><code>\"6287b0d239d8207cb27d66c7\"</code> for: Big Pipe</p>\n<p><code>\"628b57d800f171376e7b2634\"</code> for: Birdeye</p>\n<p><code>\"62875ad50828252c7a28b95c\"</code> for: Knight</p>\n<p><code>\"5fb5297a0359a84b77066e56\"</code> for: Cultist Warrior 1</p>\n<p><code>\"5fb52a537b5d1342ee24bd57\"</code> for: Cultist Warrior 2</p>\n<p><code>\"5fb52a3a1c69e5198e234118\"</code> for: Cultist Priest</p>\n<p><code>\"66a25a47f878d663dbe9c302\"</code> for: Tagilla</p>\n<p><code>\"636129784aa74b8fe30ab418\"</code> for: Zryachiy</p>\n<p><code>\"64809e3077c11aeac5078e3c\"</code> for: Kaban</p>\n<p><code>\"654b5ed58558fd71f97254f4\"</code>for: Kollontay</p>\n<p><code>\"66aa5ca23d22c9416c010be0\"</code> for: Partisan</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Changelog</div>\n<div class=\"tab-content\"><hr />\n<ul>\n<li>\n<p>July 1st, 2026:</p>\n<ul>\n<li>Added trade entries for three missing Battlepass Season 0 clothing items</li>\n<li>Fixed an initialization error when loading into a raid wearing Knight\u2019s top</li>\n<li>Added new variant of Birdeye\u2019s top (without Comtacs)</li>\n<li>Fixed an issue where some clothing options were skipped when making all clothing free</li>\n</ul>\n</li>\n<li>\n<p>June 4th, 2026:</p>\n<ul>\n<li>Fixed an OS-dependent issue with loading database and config files</li>\n</ul>\n</li>\n<li>\n<p>June 3rd, 2026:</p>\n<ul>\n<li>Complete rewrite for SPT 4.0 in C#, fixing several issues and expanding the configuration\n<ul>\n<li>Please note that clothing can not be found on Fence on SPT version 4.0.0 and 4.0.1, the clothes will instead be found on Ragman on those versions regardless of config settings.</li>\n</ul>\n</li>\n<li>Updated typing for new EFT database requirements</li>\n<li>Recreated all arm mesh bundles from scratch, with correct shader parameters</li>\n<li>Recompressed bundles to maximize storage space (Filesize shrunk by roughly 60-80% per file)</li>\n<li>Added new custom Zryichiy\u2019s Ghillie Suit (Hood Down) variant</li>\n<li>Added all new clothing from EFT Arena Season 0 battlepass</li>\n<li>Removed trades for the initial Arena gear\n<ul>\n<li>Added config to replace the vanilla requirement of Ref loyalty levels with Ragman (on by default)</li>\n</ul>\n</li>\n<li>Added config option to add trades for the prestige-only clothing and allow selecting the prestige voices</li>\n<li>Locales updated to have a basic category for each clothing item</li>\n</ul>\n</li>\n<li>\n<p>December 21st, 2024:</p>\n<ul>\n<li>Properly fixed the Shturman (Hood Down) variant (for real this time!)</li>\n</ul>\n</li>\n<li>\n<p>December 20th, 2024:</p>\n<ul>\n<li>Workaround to mods that add customization entries lacking a \u2018_name\u2019 field</li>\n</ul>\n</li>\n<li>\n<p>December 19th, 2024:</p>\n<ul>\n<li>Refactor to allow clothing to be sold on Fence without any external dependencies</li>\n<li>Added Partisan\u2019s head, voice, and clothing</li>\n<li>Added Mannequin Head option, off by default (see config.json)</li>\n<li>Reverted shader for Shturman\u2019s Hood Down variant</li>\n<li>Added \u201cRequired Achievements\u201d as a possible unlock requirement for clothing</li>\n<li>Minor change to the version in the package.json, compatible with version 3.10.0 of SPT and above</li>\n</ul>\n</li>\n<li>\n<p>August 13th, 2024: (Hotfix)</p>\n<ul>\n<li>Hotfix for missing custom head entries + Cig Scav head mesh</li>\n</ul>\n</li>\n<li>\n<p>August 13th, 2024:</p>\n<ul>\n<li>Complete mod rewrite! Everything is refactored, so check out the new config.jsonc file for options</li>\n<li>Added new cultist jacket (replacing the old one, you can re-enable it in the config)</li>\n<li>Added six new tops/bottoms, three for each PMC faction, to Ragman by default</li>\n<li>Minor material improvements to custom-built bundles</li>\n<li>First pass of bundle compression, file size has been reduced substantially</li>\n<li>Fixed an issue where some clothing were set to be purchased with dollars/euros, and the UI showed roubles</li>\n<li>Minor change to the version in the package.json, compatible with version 3.9.0 of SPT and above</li>\n</ul>\n</li>\n<li>\n<p>April 1st, 2024:</p>\n<ul>\n<li>Minor code refactor</li>\n<li>Added all new clothing for the EFT 0.14.0 Patch</li>\n<li>Kollontay\u2019s clothing* and new Scav leather jackets</li>\n<li>Added hand meshes for the new clothing</li>\n<li>Added playable head model for Kollontay*</li>\n<li>Added new voices for Kollontay, Kaban, and Shturman</li>\n<li>New custom-made \u201cHood Down\u201d variant of Shturman\u2019s Parka by me, no more clipping with headgear or certain heads</li>\n<li>Removed \u201cEmpty\u201d head for player, this hasn\u2019t been needed for awhile after Shturman and Tagilla had custom top meshes</li>\n<li>Russian translation up to date once more (thanks JustNU!)</li>\n<li>Minor change to the version in the package.json, compatible with version 3.7.0 of AKI and above.</li>\n</ul>\n</li>\n</ul>\n<p>* Clipping issues currently exist for Kollontay due to his larger model. These issues will be rectified in a later patch, optional variants that better fit the standard playermodel will be included.</p>\n<ul>\n<li>October 8th, 2023:\n<ul>\n<li>Added new clothing with the EFT 0.13.5 Patch</li>\n<li>Kaban\u2019s clothing* and new Scav Feldparka</li>\n<li>Added hand mesh for Kaban\u2019s clothing</li>\n<li>Added playable head model for Kaban*</li>\n<li>Added two new voices for the Bloodhound characters</li>\n<li>Slight localization changes</li>\n<li>Russian translation now up to date (thanks JustNU!)</li>\n<li>Refactored the config to jsonc - comments are now being used for additional clarity</li>\n<li>Minor change to the version in the package.json, compatible with version 3.7.0 of AKI and above.</li>\n</ul>\n</li>\n</ul>\n<p>* Clipping issues currently exist for Kaban due to his larger model. These issues will be rectified in a later patch, optional variants that better fit the standard playermodel will be included.</p>\n<ul>\n<li>\n<p>February 12th, 2023:</p>\n<ul>\n<li>Added new clothing with the EFT 0.12.13 patch - \u201cVictory\u201d clothing set and \u201cZryachiy\u201d clothing set.</li>\n<li>Added hand mesh for Zryachiy\u2019s ghillie suit.</li>\n<li>Minor refactors to handle clothing/heads/voices not being added to the player customization list.</li>\n<li>Minor change to the version in the package.json, compatible with version 3.5.0 of AKI.</li>\n</ul>\n</li>\n<li>\n<p>December 22nd, 2022:</p>\n<ul>\n<li>Major refactor to localization to comply with new standards as of client version 20765.</li>\n<li>Minor change to the version in the package.json, compatible with version 3.4.0 of AKI.</li>\n</ul>\n</li>\n<li>\n<p>November 25th, 2022:</p>\n<ul>\n<li>Fixed issue where the save sanitizing feature would crash the server upon loading a newly created profile.</li>\n<li>Fixed issue where some SCAV clothing had the incorrect first person hand meshes.</li>\n<li>Minor refactors to the save sanitizing feature for compatibility with version 3.3.0 of AKI.</li>\n<li>Minor change to the version in the package.json, compatible with version 3.3.0 of AKI.</li>\n</ul>\n</li>\n<li>\n<p>October 4th, 2022:</p>\n<ul>\n<li>Fixed issue with Big Pipe and Sanitar tops causing loading issues.</li>\n<li>Fixed issue with Overview tab breaking if you updated from v1.0.0.</li>\n<li>Tying in to the previous change, clothing you previously unlocked in v1.0.0 are now carried over, assuming you haven\u2019t already repurchased them.</li>\n<li>Minor change to the version in the package.json, compatible with version 3.2.4 of AKI.</li>\n</ul>\n</li>\n<li>\n<p>September 24th, 2022:</p>\n<ul>\n<li>Added first person arms/hands to every clothing! Now you can see the proper hands for all clothing.</li>\n<li>Added Killa\u2019s pants to Ragman.</li>\n<li>Added config option to make all default clothing (clothes already on Ragman) free as well.</li>\n<li>Added config option to use Ragman for all new clothing instead of Fence.</li>\n<li>Added custom language file support.</li>\n<li>Added Russian language support (thanks Sk1p36!)</li>\n<li>Tagilla\u2019s/Shturman\u2019s head is no longer packaged with his top.</li>\n<li>Tagilla\u2019s head can now be selected at character creation on its own.</li>\n<li>Minor change to the version in the package.json, compatible with version 3.2.3 of AKI.</li>\n</ul>\n</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Bug Reports</div>\n<div class=\"tab-content\"><hr />\n<p>If you encounter any issues, please feel free to contact me on Discord (RaiRaiTheRaichu) (This includes incompatibilities you may find with other mods!)</p>\n<p>You can leave a comment here, as well, but response time may be significantly longer as I do not usually check my inbox here often.</p>\n<p><strong>Please include any logs generated from the console as well to help me narrow down the issue.</strong></p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Addtl. Credits</div>\n<div class=\"tab-content\"><hr />\n<p>JustNU, Senko, Ereshkigal, Baliston for the original code for SellScavSuits that this was built upon.</p></div></div></div>\n",
+   "teaser": "ALL THE CLOTHES FOREVER",
+   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Mod Info</div>\n<div class=\"tab-content\"><h4>All The Clothes</h4>\n<p><strong>NEW CLOTHES ARE ADDED TO FENCE, IN THE SERVICES TAB AT THE TOP.</strong></p>\n<p>RAGMAN WILL HAVE THE PMC CLOTHING AS USUAL.</p>\n<p>Want to support my work? Consider clicking the link below!</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/rairaitheraichu\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://storage.ko-fi.com/cdn/kofi2.png?v=3\" alt=\"kofi2.png?v=3\" /></a></p>\n<p>Written from the ground up for SPT 4.0+, All The Clothes is back with more options than ever.\nIncluded out of the box are all Arena and Battlepass-only clothing, integrated into the trader services menu.\nAll scav and boss clothing by default can be found on Fence\u2019s new Services tab*, all PMC clothing can be found on Ragman as usual.</p>\n<p>Clothing, voices, and heads are all able to be unlocked and equipped regardless of faction, with their own unique unlock requirements.\nCheck out the file <code>config.jsonc</code> for all options, including making all the clothing, modded and vanilla, free to be worn without any requirements at all.</p>\n<p>*On SPT version 4.0.0 and 4.0.1, scav and boss clothing will always be found on Ragman. Please upgrade your  version of SPT in order to use Service menus from other traders, including Fence.</p>\n<p>You can:</p>\n<ul>\n<li>Choose scav and boss voices for your PMC!</li>\n<li>Choose scav and boss faces for your PMC! (Normally only available at profile creation - see \u201cSwapping Heads\u201d to change head models on existing profiles.)</li>\n<li>Choose any faction voice for your PMC! Play as a U*** with a B*** voice or vice versa!</li>\n<li>Choose any faction clothing for your PMC! Dress in your favorite B*** clothing as a U***, or dress up as a U*** as a B***!</li>\n<li>Disable the unlock requirements for all these new Scav/Boss clothes! Wear whatever you want right at the start for maximum roleplay!</li>\n<li>Come up with your own unlocks and rebalance them however you\u2019d like!</li>\n</ul>\n<p>If you\u2019d like to rename some of the new clothing/head/voices, the localization can be found within the \u201cdb/locale/\u201d folder.\nRemember, you can change your voice at any time in the game\u2019s Settings, in the Audio tab.</p>\n<p>Feel free to leave a comment or contact me using Discord if you have any suggestions or have any issues!</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Swapping Heads</div>\n<div class=\"tab-content\"><p>Note: An easier option than editing your profile by hand below is using the following mod:\n<a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1277/wtt-head-and-voice-selector\" rel=\"noreferrer noopener\">https://sp-mod.com/mod/1277/wtt-head-and-voice-selector</a></p>\n<p>If you still want to manually edit your profile.json file, continue reading below.</p>\n<p>Make sure your server is shut down!</p>\n<p>Open your profile\u2019s .json located within <code>user/profiles</code> with any text editor (preferably Notepad ++).</p>\n<p>Look for a line starting with <code>\"Head\": </code>, which should be near the top, right below <code>\"Customization\": {</code>.</p>\n<p>Swap the ID for the head for any of the following, and save your profile:</p>\n<p><code>\"5cc084dd14c02e000b0550a3\"</code> for: B*** - Vasilyev</p>\n<p><code>\"5fdb7571e4ed5b5ea251e529\"</code> for: B*** - Volkov</p>\n<p><code>\"60a6aaad42fd2735e4589978\"</code> for: B*** - Gavrilov</p>\n<p><code>\"619f94f5b90286142b59d45f\"</code> for: B*** - Kolesnikov</p>\n<p><code>\"62a9e7d15ea3b87d6f642a28\"</code> for: B*** - Danilov</p>\n<p><code>\"5cde96047d6c8b20b577f016\"</code> for: U*** - Taylor</p>\n<p><code>\"5fdb5950f5264a66150d1c6e\"</code> for: U*** - Foreman</p>\n<p><code>\"5fdb4139e4ed5b5ea251e4ed\"</code> for: U*** - Hudson</p>\n<p><code>\"60a6aa8fd559ae040d0d951f\"</code> for: U*** - Mullen</p>\n<p><code>\"619f9e338858a474c8685cc9\"</code> for: U*** - Grant</p>\n<p><code>\"5fc614290b735e7b024c76e5\"</code> for: SCAV - Drozd</p>\n<p><code>\"5f68c4a7c174a17c0f4c8945\"</code> for: SCAV - Kot</p>\n<p><code>\"5fc614390b735e7b024c76e6\"</code> for: SCAV - Misha</p>\n<p><code>\"5f68c4c217d579077152a252\"</code> for: SCAV - Mozg</p>\n<p><code>\"5fc614130b735e7b024c76e4\"</code> for: SCAV - Sanya</p>\n<p><code>\"5cc2e4d014c02e000d0115f8\"</code> for: SCAV - Samogon</p>\n<p><code>\"5fc613e10b735e7b024c76e3\"</code> for: SCAV - Seva</p>\n<p><code>\"5fc6144b0b735e7b024c76e7\"</code> for: SCAV - Stasik</p>\n<p><code>\"5cde9ff17d6c8b0474535daa\"</code> for: SCAV - Tankist</p>\n<p><code>\"5fc613c80b735e7b024c76e2\"</code> for: SCAV - Yarik</p>\n<p><code>\"5d28afe786f774292668618d\"</code> for: Cig Scav</p>\n<p><code>\"5d28b01486f77429242fc898\"</code> for: Reshala</p>\n<p><code>\"5e99767c86f7741ac7399393\"</code> for: Sanitar</p>\n<p><code>\"5d28b03e86f7747f7e69ab8a\"</code> for: Killa</p>\n<p><code>\"5d5e805d86f77439eb4c2d0e\"</code> for: Glukhar</p>\n<p><code>\"6287b0d239d8207cb27d66c7\"</code> for: Big Pipe</p>\n<p><code>\"628b57d800f171376e7b2634\"</code> for: Birdeye</p>\n<p><code>\"62875ad50828252c7a28b95c\"</code> for: Knight</p>\n<p><code>\"5fb5297a0359a84b77066e56\"</code> for: Cultist Warrior 1</p>\n<p><code>\"5fb52a537b5d1342ee24bd57\"</code> for: Cultist Warrior 2</p>\n<p><code>\"5fb52a3a1c69e5198e234118\"</code> for: Cultist Priest</p>\n<p><code>\"66a25a47f878d663dbe9c302\"</code> for: Tagilla</p>\n<p><code>\"636129784aa74b8fe30ab418\"</code> for: Zryachiy</p>\n<p><code>\"64809e3077c11aeac5078e3c\"</code> for: Kaban</p>\n<p><code>\"654b5ed58558fd71f97254f4\"</code>for: Kollontay</p>\n<p><code>\"66aa5ca23d22c9416c010be0\"</code> for: Partisan</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Changelog</div>\n<div class=\"tab-content\"><hr />\n<ul>\n<li>\n<p>August 12th, 2026:\n-Update for compatibility with SPT 4.1.0+</p>\n</li>\n<li>\n<p>July 1st, 2026:</p>\n<ul>\n<li>Added trade entries for three missing Battlepass Season 0 clothing items</li>\n<li>Fixed an initialization error when loading into a raid wearing Knight\u2019s top</li>\n<li>Added new variant of Birdeye\u2019s top (without Comtacs)</li>\n<li>Fixed an issue where some clothing options were skipped when making all clothing free</li>\n</ul>\n</li>\n<li>\n<p>June 4th, 2026:</p>\n<ul>\n<li>Fixed an OS-dependent issue with loading database and config files</li>\n</ul>\n</li>\n<li>\n<p>June 3rd, 2026:</p>\n<ul>\n<li>Complete rewrite for SPT 4.0 in C#, fixing several issues and expanding the configuration\n<ul>\n<li>Please note that clothing can not be found on Fence on SPT version 4.0.0 and 4.0.1, the clothes will instead be found on Ragman on those versions regardless of config settings.</li>\n</ul>\n</li>\n<li>Updated typing for new EFT database requirements</li>\n<li>Recreated all arm mesh bundles from scratch, with correct shader parameters</li>\n<li>Recompressed bundles to maximize storage space (Filesize shrunk by roughly 60-80% per file)</li>\n<li>Added new custom Zryichiy\u2019s Ghillie Suit (Hood Down) variant</li>\n<li>Added all new clothing from EFT Arena Season 0 battlepass</li>\n<li>Removed trades for the initial Arena gear\n<ul>\n<li>Added config to replace the vanilla requirement of Ref loyalty levels with Ragman (on by default)</li>\n</ul>\n</li>\n<li>Added config option to add trades for the prestige-only clothing and allow selecting the prestige voices</li>\n<li>Locales updated to have a basic category for each clothing item</li>\n</ul>\n</li>\n<li>\n<p>December 21st, 2024:</p>\n<ul>\n<li>Properly fixed the Shturman (Hood Down) variant (for real this time!)</li>\n</ul>\n</li>\n<li>\n<p>December 20th, 2024:</p>\n<ul>\n<li>Workaround to mods that add customization entries lacking a \u2018_name\u2019 field</li>\n</ul>\n</li>\n<li>\n<p>December 19th, 2024:</p>\n<ul>\n<li>Refactor to allow clothing to be sold on Fence without any external dependencies</li>\n<li>Added Partisan\u2019s head, voice, and clothing</li>\n<li>Added Mannequin Head option, off by default (see config.json)</li>\n<li>Reverted shader for Shturman\u2019s Hood Down variant</li>\n<li>Added \u201cRequired Achievements\u201d as a possible unlock requirement for clothing</li>\n<li>Minor change to the version in the package.json, compatible with version 3.10.0 of SPT and above</li>\n</ul>\n</li>\n<li>\n<p>August 13th, 2024: (Hotfix)</p>\n<ul>\n<li>Hotfix for missing custom head entries + Cig Scav head mesh</li>\n</ul>\n</li>\n<li>\n<p>August 13th, 2024:</p>\n<ul>\n<li>Complete mod rewrite! Everything is refactored, so check out the new config.jsonc file for options</li>\n<li>Added new cultist jacket (replacing the old one, you can re-enable it in the config)</li>\n<li>Added six new tops/bottoms, three for each PMC faction, to Ragman by default</li>\n<li>Minor material improvements to custom-built bundles</li>\n<li>First pass of bundle compression, file size has been reduced substantially</li>\n<li>Fixed an issue where some clothing were set to be purchased with dollars/euros, and the UI showed roubles</li>\n<li>Minor change to the version in the package.json, compatible with version 3.9.0 of SPT and above</li>\n</ul>\n</li>\n<li>\n<p>April 1st, 2024:</p>\n<ul>\n<li>Minor code refactor</li>\n<li>Added all new clothing for the EFT 0.14.0 Patch</li>\n<li>Kollontay\u2019s clothing* and new Scav leather jackets</li>\n<li>Added hand meshes for the new clothing</li>\n<li>Added playable head model for Kollontay*</li>\n<li>Added new voices for Kollontay, Kaban, and Shturman</li>\n<li>New custom-made \u201cHood Down\u201d variant of Shturman\u2019s Parka by me, no more clipping with headgear or certain heads</li>\n<li>Removed \u201cEmpty\u201d head for player, this hasn\u2019t been needed for awhile after Shturman and Tagilla had custom top meshes</li>\n<li>Russian translation up to date once more (thanks JustNU!)</li>\n<li>Minor change to the version in the package.json, compatible with version 3.7.0 of AKI and above.</li>\n</ul>\n</li>\n</ul>\n<p>* Clipping issues currently exist for Kollontay due to his larger model. These issues will be rectified in a later patch, optional variants that better fit the standard playermodel will be included.</p>\n<ul>\n<li>October 8th, 2023:\n<ul>\n<li>Added new clothing with the EFT 0.13.5 Patch</li>\n<li>Kaban\u2019s clothing* and new Scav Feldparka</li>\n<li>Added hand mesh for Kaban\u2019s clothing</li>\n<li>Added playable head model for Kaban*</li>\n<li>Added two new voices for the Bloodhound characters</li>\n<li>Slight localization changes</li>\n<li>Russian translation now up to date (thanks JustNU!)</li>\n<li>Refactored the config to jsonc - comments are now being used for additional clarity</li>\n<li>Minor change to the version in the package.json, compatible with version 3.7.0 of AKI and above.</li>\n</ul>\n</li>\n</ul>\n<p>* Clipping issues currently exist for Kaban due to his larger model. These issues will be rectified in a later patch, optional variants that better fit the standard playermodel will be included.</p>\n<ul>\n<li>\n<p>February 12th, 2023:</p>\n<ul>\n<li>Added new clothing with the EFT 0.12.13 patch - \u201cVictory\u201d clothing set and \u201cZryachiy\u201d clothing set.</li>\n<li>Added hand mesh for Zryachiy\u2019s ghillie suit.</li>\n<li>Minor refactors to handle clothing/heads/voices not being added to the player customization list.</li>\n<li>Minor change to the version in the package.json, compatible with version 3.5.0 of AKI.</li>\n</ul>\n</li>\n<li>\n<p>December 22nd, 2022:</p>\n<ul>\n<li>Major refactor to localization to comply with new standards as of client version 20765.</li>\n<li>Minor change to the version in the package.json, compatible with version 3.4.0 of AKI.</li>\n</ul>\n</li>\n<li>\n<p>November 25th, 2022:</p>\n<ul>\n<li>Fixed issue where the save sanitizing feature would crash the server upon loading a newly created profile.</li>\n<li>Fixed issue where some SCAV clothing had the incorrect first person hand meshes.</li>\n<li>Minor refactors to the save sanitizing feature for compatibility with version 3.3.0 of AKI.</li>\n<li>Minor change to the version in the package.json, compatible with version 3.3.0 of AKI.</li>\n</ul>\n</li>\n<li>\n<p>October 4th, 2022:</p>\n<ul>\n<li>Fixed issue with Big Pipe and Sanitar tops causing loading issues.</li>\n<li>Fixed issue with Overview tab breaking if you updated from v1.0.0.</li>\n<li>Tying in to the previous change, clothing you previously unlocked in v1.0.0 are now carried over, assuming you haven\u2019t already repurchased them.</li>\n<li>Minor change to the version in the package.json, compatible with version 3.2.4 of AKI.</li>\n</ul>\n</li>\n<li>\n<p>September 24th, 2022:</p>\n<ul>\n<li>Added first person arms/hands to every clothing! Now you can see the proper hands for all clothing.</li>\n<li>Added Killa\u2019s pants to Ragman.</li>\n<li>Added config option to make all default clothing (clothes already on Ragman) free as well.</li>\n<li>Added config option to use Ragman for all new clothing instead of Fence.</li>\n<li>Added custom language file support.</li>\n<li>Added Russian language support (thanks Sk1p36!)</li>\n<li>Tagilla\u2019s/Shturman\u2019s head is no longer packaged with his top.</li>\n<li>Tagilla\u2019s head can now be selected at character creation on its own.</li>\n<li>Minor change to the version in the package.json, compatible with version 3.2.3 of AKI.</li>\n</ul>\n</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Bug Reports</div>\n<div class=\"tab-content\"><hr />\n<p>If you encounter any issues, please feel free to contact me on Discord (RaiRaiTheRaichu) (This includes incompatibilities you may find with other mods!)</p>\n<p>You can leave a comment here, as well, but response time may be significantly longer as I do not usually check my inbox here often.</p>\n<p><strong>Please include any logs generated from the console as well to help me narrow down the issue.</strong></p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Addtl. Credits</div>\n<div class=\"tab-content\"><hr />\n<p>JustNU, Senko, Ereshkigal, Baliston for the original code for SellScavSuits that this was built upon.</p></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/740.png",
    "forge_url": "https://sp-mod.com/mod/526/all-the-clothes",
-   "downloads": 177938,
-   "favourites": 116,
+   "downloads": 178225,
+   "favourites": 120,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -6934,12 +6947,24 @@
    ],
    "versions": [
     {
+     "id": 14715,
+     "version": "3.2.0",
+     "description": "<p>Changelog:</p>\n<ul>\n<li>Update for compatibility with SPT 4.1.0+</li>\n</ul>\n<p>Hey! Thanks for downloading, if you\u2019d like to support my work, you\u2019re more than welcome to support me at the link below or follow along at my Ko-Fi page here:</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/rairaitheraichu\" rel=\"noreferrer noopener\">https://ko-fi.com/rairaitheraichu</a></p>\n",
+     "spt_constraint": "~4.1.0",
+     "fika": "compatible",
+     "downloads": 120,
+     "size": 110389261,
+     "link": "https://sp-mod.com/mod/download/526/all-the-clothes/3.2.0",
+     "published_at": "2026-08-13T23:59:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 13952,
      "version": "3.1.0",
      "description": "<p>Changelog:</p>\n<ul>\n<li>Added trade entries for three missing Battlepass Season 0 clothing items</li>\n<li>Fixed an initialization error when loading into a raid wearing Knight\u2019s top</li>\n<li>Added new variant of Birdeye\u2019s top (without Comtacs)</li>\n<li>Fixed an issue where some clothing options were skipped when making all clothing free</li>\n</ul>\n<p>Hey! Thanks for downloading, if you\u2019d like to support my work, you\u2019re more than welcome to support me at the link below or follow along at my Ko-Fi page here:</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/rairaitheraichu\" rel=\"noreferrer noopener\">https://ko-fi.com/rairaitheraichu</a></p>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 10490,
+     "downloads": 10646,
      "size": 110387937,
      "link": "https://sp-mod.com/mod/download/526/all-the-clothes/3.1.0",
      "published_at": "2026-07-01T16:56:00.000000Z",
@@ -6951,7 +6976,7 @@
      "description": "<p>Changelog:</p>\n<ul>\n<li>Fixed an OS-dependent issue with loading database and config files</li>\n</ul>\n<p>Hey! Thanks for downloading, if you\u2019d like to support my work, you\u2019re more than welcome to support me at the link below or follow along at my Ko-Fi page here:</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/rairaitheraichu\" rel=\"noreferrer noopener\">https://ko-fi.com/rairaitheraichu</a></p>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 6901,
+     "downloads": 6903,
      "size": 104897754,
      "link": "https://sp-mod.com/mod/download/526/all-the-clothes/3.0.1",
      "published_at": "2026-06-04T19:58:00.000000Z",
@@ -6963,7 +6988,7 @@
      "description": "<p>Changelog:</p>\n<ul>\n<li>Complete rewrite for SPT 4.0 in C#, fixing several issues and expanding the configuration\n<ul>\n<li>Please note that clothing can not be found on Fence on SPT version 4.0.0 and 4.0.1, the clothes will instead be found on Ragman on those versions regardless of config settings.</li>\n</ul>\n</li>\n<li>Updated typing for new EFT database requirements</li>\n<li>Recreated all arm mesh bundles from scratch, with correct shader parameters</li>\n<li>Recompressed bundles to maximize storage space (Filesize shrunk by roughly 60-80% per file)</li>\n<li>Added new custom Zryichiy\u2019s Ghillie Suit (Hood Down) variant</li>\n<li>Added all new clothing from EFT Arena Season 0 battlepass</li>\n<li>Removed trades for the initial Arena gear\n<ul>\n<li>Added config to replace the vanilla requirement of Ref loyalty levels with Ragman (on by default)</li>\n</ul>\n</li>\n<li>Added config option to add trades for the prestige-only clothing and allow selecting the prestige voices</li>\n<li>Locales updated to have a basic category for each clothing item</li>\n</ul>\n<p>Hey! Thanks for downloading, if you\u2019d like to support my work, you\u2019re more than welcome to support me at the link below or follow along at my Ko-Fi page here:</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/rairaitheraichu\" rel=\"noreferrer noopener\">https://ko-fi.com/rairaitheraichu</a></p>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 900,
+     "downloads": 901,
      "size": 104877130,
      "link": "https://sp-mod.com/mod/download/526/all-the-clothes/3.0.0",
      "published_at": "2026-06-03T19:53:00.000000Z",
@@ -6975,7 +7000,7 @@
      "description": "<p>Changelog:</p>\n<p>Properly fixed the Shturman (Hood Down) variant (for real this time!)</p>\n<p>Hey! Thanks for downloading, if you\u2019d like to support my work, you\u2019re more than welcome to support me at the link below or follow along at my Ko-Fi page here:</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/rairaitheraichu\" rel=\"noreferrer noopener\">https://ko-fi.com/rairaitheraichu</a></p>\n",
      "spt_constraint": "~3.10.0",
      "fika": "unknown",
-     "downloads": 28499,
+     "downloads": 28501,
      "size": null,
      "link": "https://sp-mod.com/mod/download/526/all-the-clothes/2.1.2",
      "published_at": "2024-12-22T02:41:38.000000Z",
@@ -6987,7 +7012,7 @@
      "description": "<p>Changelog:</p>\n<p>Refactor to allow clothing to be sold on Fence without any external dependencies</p>\n<p>Added Partisan\u2019s head, voice, and clothing</p>\n<p>Added Mannequin Head option, off by default (see config.json)</p>\n<p>Reverted shader for Shturman\u2019s Hood Down variant</p>\n<p>Added \u201cRequired Achievements\u201d as a possible unlock requirement for clothing</p>\n<p>Minor change to the version in the package.json, compatible with version 3.10.0 of SPT and above</p>\n<p>Hey! Thanks for downloading, if you\u2019d like to support my work, you\u2019re more than welcome to support me at the link below or follow along at my Ko-Fi page here:</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/rairaitheraichu\" rel=\"noreferrer noopener\">https://ko-fi.com/rairaitheraichu</a></p>\n",
      "spt_constraint": "3.10.0",
      "fika": "unknown",
-     "downloads": 1215,
+     "downloads": 1217,
      "size": null,
      "link": "https://sp-mod.com/mod/download/526/all-the-clothes/2.1.0",
      "published_at": "2024-12-20T04:00:11.000000Z",
@@ -6999,25 +7024,26 @@
      "description": "<p><strong>NEW DEPENDENCY REQUIRED!!!</strong></p>\n<p><strong><a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/2098-trader-service-fix/\" rel=\"noreferrer noopener\">Download and install Trader Service Fix HERE!</a></strong></p>\n<p>Changelog:</p>\n<p>Complete mod rewrite! Everything is refactored, so check out the new config.jsonc file for options<br />\nAdded new cultist jacket (replacing the old one, you can re-enable it in the config)<br />\nAdded six new tops/bottoms, three for each PMC faction, to Ragman by default<br />\nMinor material improvements to custom-built bundles<br />\nFirst pass of bundle compression, file size has been reduced substantially (you\u2019re welcome, Fika enjoyers)<br />\nMinor change to the version in the package.json, compatible with version 3.9.0 of SPT and above</p>\n<p>Hey! Thanks for downloading, if you\u2019d like to support my work, you\u2019re more than welcome to support me at the link below or follow along at my Ko-Fi page here:</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/rairaitheraichu\" rel=\"noreferrer noopener\">https://ko-fi.com/rairaitheraichu</a></p>\n",
      "spt_constraint": "3.9.0",
      "fika": "unknown",
-     "downloads": 1203,
+     "downloads": 1205,
      "size": null,
      "link": "https://sp-mod.com/mod/download/526/all-the-clothes/2.0.0",
      "published_at": "2024-08-13T20:49:44.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "3.1.0",
-   "spt_constraint": "~4.0.0",
+   "latest_version": "3.2.0",
+   "spt_constraint": "~4.1.0",
    "all_spt_constraints": [
     "3.10.0",
     "3.9.0",
     "~3.10.0",
-    "~4.0.0"
+    "~4.0.0",
+    "~4.1.0"
    ],
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-06-03T19:44:00.000000Z",
-   "updated_at": "2026-07-28T09:23:39.000000Z",
+   "updated_at": "2026-08-14T00:03:25.000000Z",
    "flags": {
     "contains_ads": true,
     "contains_ai_content": false,
@@ -7175,7 +7201,7 @@
    "description_html": "<p><strong>4641 quests</strong> are active out of the box, spread across 30 quest bundles, with another <strong>1734 quests</strong> shipped alongside them, sitting in reserve for you to swap in.</p>\n<p>This is Andrudis\u2019 original mod, ported to SPT 4.1 with his permission. Not a remake, not a re-balance \u2014 every quest and every line of text is his.</p>\n<hr />\n<h2>Requirements</h2>\n<ul>\n<li><strong>SPT 4.1.x</strong></li>\n<li><strong>WTT-CommonLib</strong> \u2014 required (listed in this mod\u2019s dependencies)</li>\n<li><strong>Kaeno-TraderScrolling</strong> \u2014 <em>strongly recommended</em></li>\n</ul>\n<p>This mod adds six traders to the six already in the game. Without <strong>Kaeno-TraderScrolling</strong>, the trader screen has no room for them and you\u2019ll struggle to reach them. It costs nothing to install and it makes the mod comfortable to use \u2014 please don\u2019t skip it.</p>\n<h2>Install</h2>\n<p>Extract the archive into your <strong>SPT folder</strong> \u2014 the one containing <code>EscapeFromTarkov.exe</code>. The mod lands in <code>SPT_Runtime/user/mods/AndrudisQuestManiac/</code> on its own. Nothing to move.</p>\n<p>New traders start with an empty inventory: their stock unlocks as you complete their quests.</p>\n<hr />\n<h2>The traders</h2>\n<p><strong>Yulbash</strong>, <strong>Colonel</strong>, <strong>Elder</strong>, <strong>Koval</strong>, <strong>LabRat</strong> and <strong>Warden</strong>.</p>\n<p>Two of them have been renamed for this release, at Andrudis\u2019 own request \u2014 the previous names could rub some players the wrong way, for reasons that have nothing to do with the mod:</p>\n<table>\n<thead>\n<tr>\n<th>Was</th>\n<th>Is now</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Bashkir</td>\n<td><strong>Yulbash</strong></td>\n</tr>\n<tr>\n<td>Khokhol</td>\n<td><strong>Koval</strong></td>\n</tr>\n</tbody>\n</table>\n<p>Same characters, same quests, same voice. Only the names changed, in every language the mod ships with. Quest titles are tagged with a short prefix per trader, so <code>[Bsh]</code> and <code>[Kho]</code> are now <code>[Yul]</code> and <code>[Kov]</code>.</p>\n<hr />\n<h2>Quest bundles</h2>\n<p>Quests come in <strong>bundles</strong> \u2014 families of related quests, like <em>Ammo Proficiency</em>, <em>Boss Hunt</em> or <em>Hideout Assistant</em>. Each bundle lives in its own folder:</p>\n<pre><code>SPT_Runtime/user/mods/AndrudisQuestManiac/db/CustomQuests/&lt;bundle&gt;/\n</code></pre>\n<p><strong>Don\u2019t want a bundle? Delete its folder.</strong> Nothing else breaks. That\u2019s the whole system, and it\u2019s how you tune the mod to the amount of content you actually want.</p>\n<p>The mod also ships two folders full of bundles that are <strong>not</strong> loaded, ready for you to pick from.</p>\n<h3>Legacy bundles \u2014 <code>_LegacyBundles/</code></h3>\n<p>Four older quest families that Andrudis later replaced with newer designs: <em>Gear Mastery</em>, <em>Honor Skills</em>, <em>Skills Guru</em> and <em>Weapon Expert</em> \u2014 <strong>803 quests</strong> in total.</p>\n<p>They still work, and they don\u2019t clash with anything: they cover roughly the same ground as their modern replacements, by different means. If you want even more to do, copy any of these folders into <code>db/CustomQuests/</code>.</p>\n<h3>Alternative bundles \u2014 <code>_AlternativeBundles/</code></h3>\n<p><strong>28 variants</strong> of the standard bundles, <strong>931 quests</strong>. Each one is a different take on a bundle you already have. Copy the folder inside it into <code>db/CustomQuests/</code> and it takes the place of the original.</p>\n<p>Three kinds:</p>\n<ul>\n<li><strong>Barter / Trade</strong> \u2014 the standard bundle asks you to both barter <em>and</em> trade. These split it: keep only the half you enjoy.</li>\n<li><strong>Lite / Strict</strong> \u2014 the same quests, with easier or harsher requirements.</li>\n<li><strong>Extras</strong> \u2014 a few bundles with no equivalent in the standard set, such as <em>Killboard</em>, which simply tracks your kills by enemy type and by weapon category. It\u2019s never meant to be completed and gives no reward \u2014 it\u2019s just a scoreboard.</li>\n</ul>\n<blockquote>\n<p><strong>Important \u2014 read before swapping</strong></p>\n<p>Swap bundles <strong>before starting a playthrough</strong>, not halfway through. Going from a standard bundle to a Barter/Trade variant (or back) on an existing profile will leave you with quests that no longer exist, and you\u2019ll need a wipe to clean it up.</p>\n<p>A \u201cBarter\u201d and a \u201cTrade\u201d variant of the same bundle can\u2019t be installed together \u2014 they replace the same folder. Pick one.</p>\n</blockquote>\n<hr />\n<h2>Languages</h2>\n<p>English, French, German, Japanese and Russian are translated. Other languages fall back to English automatically.</p>\n<hr />\n<h2>Notes on this port</h2>\n<ul>\n<li>Items that were removed from the game since 0.13 are filtered out, and quest prerequisites are re-chained around them so no progression tree gets cut in half. 8 legacy quests dropped out this way; none in the main set.</li>\n</ul>\n<hr />\n<h2>Credits</h2>\n<p>This mod has been kept alive by a long chain of people:</p>\n<table>\n<thead>\n<tr>\n<th></th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Andrudis</strong></td>\n<td>the original mod, and all the quest design</td>\n</tr>\n<tr>\n<td><strong>rgb192x3</strong></td>\n<td>3.0.0</td>\n</tr>\n<tr>\n<td><strong>LaurentMEKKA</strong></td>\n<td>3.2.2</td>\n</tr>\n<tr>\n<td><strong>Mighty_Condor</strong></td>\n<td>3.5.0 and 3.7.X</td>\n</tr>\n<tr>\n<td><strong>LaurentMEKKA</strong></td>\n<td>4.1</td>\n</tr>\n</tbody>\n</table>\n<p>Thanks also to TheDailyXPerience on Discord, whose push got the 3.7 update moving in the first place.</p>\n<hr />\n<h2>Feedback</h2>\n<p>This is a big mod with a lot of moving parts. If something looks wrong \u2014 a quest that can\u2019t be completed, an objective that makes no sense, a trader behaving oddly \u2014 please say so in the comments. It\u2019s the only way it gets fixed.</p>\n<p><strong>License:</strong> NCSA Open Source, as the original.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/QCvSJnhBYdUhW4kDq2ctoR5u9v4s4KfZ2r37ZLIn.jpg",
    "forge_url": "https://sp-mod.com/mod/535/andrudis-questmaniac",
-   "downloads": 7601,
+   "downloads": 7911,
    "favourites": 0,
    "featured": false,
    "fika": false,
@@ -7219,12 +7245,39 @@
    ],
    "versions": [
     {
+     "id": 14719,
+     "version": "3.0.1",
+     "description": "<ul>\n<li>Armour now comes with its plates. Forgot it, so armors bought from custom traders were useless.</li>\n<li>No reason to wipe but if you bought armors without plates, buy a fresh one :D</li>\n</ul>\n",
+     "spt_constraint": "~4.1",
+     "fika": "unknown",
+     "downloads": 52,
+     "size": 10754223,
+     "link": "https://sp-mod.com/mod/download/535/andrudis-questmaniac/3.0.1",
+     "published_at": "2026-08-14T01:06:00.000000Z",
+     "dependencies": [
+      {
+       "id": 1089,
+       "name": "Kaeno-TraderScrolling",
+       "slug": "kaeno-traderscrolling",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/1089/kaeno-traderscrolling"
+      },
+      {
+       "id": 2310,
+       "name": "WTT - CommonLib",
+       "slug": "wtt-commonlib",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
+      }
+     ]
+    },
+    {
      "id": 14694,
      "version": "3.0.0",
      "description": "<p>Updated for SPT 4.1.x</p>\n",
      "spt_constraint": "~4.1",
      "fika": "unknown",
-     "downloads": 29,
+     "downloads": 274,
      "size": 10750328,
      "link": "https://sp-mod.com/mod/download/535/andrudis-questmaniac/3.0.0",
      "published_at": "2026-08-13T02:22:00.000000Z",
@@ -7251,7 +7304,7 @@
      "description": "<p>Very small fix to get rid of the warning in the server. No need to update if you are ok with the warning.</p>\n<p>Changed invalid item in Elder\u2019s assort for the Strandhogg barter trade to get rid of server warning:</p>\n<p>\u201cUnable to find live-flea or handbook price for , defaulting to 1, if this is a modded item contact the mod author\u201d</p>\n",
      "spt_constraint": "~3.7.0",
      "fika": "unknown",
-     "downloads": 1711,
+     "downloads": 1717,
      "size": null,
      "link": "https://sp-mod.com/mod/download/535/andrudis-questmaniac/2.4.1",
      "published_at": "2023-11-06T05:05:16.000000Z",
@@ -7263,14 +7316,14 @@
      "description": "<p>Updated for 3.7.X compatibility. As always since this is a pretty complex mod, please let me know if you come across any errors.</p>\n",
      "spt_constraint": "~3.7.0",
      "fika": "unknown",
-     "downloads": 612,
+     "downloads": 613,
      "size": null,
      "link": "https://sp-mod.com/mod/download/535/andrudis-questmaniac/2.4.0",
      "published_at": "2023-10-23T02:56:35.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "3.0.0",
+   "latest_version": "3.0.1",
    "spt_constraint": "~4.1",
    "all_spt_constraints": [
     "~3.7.0",
@@ -7278,38 +7331,38 @@
    ],
    "dependencies": [
     {
-     "id": 2310,
-     "name": "WTT - CommonLib",
-     "slug": "wtt-commonlib",
-     "constraint": "",
-     "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
-    },
-    {
      "id": 1089,
      "name": "Kaeno-TraderScrolling",
      "slug": "kaeno-traderscrolling",
      "constraint": "",
      "url": "https://sp-mod.com/mod/1089/kaeno-traderscrolling"
+    },
+    {
+     "id": 2310,
+     "name": "WTT - CommonLib",
+     "slug": "wtt-commonlib",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
     }
    ],
    "all_dependencies": [
     {
-     "id": 2310,
-     "name": "WTT - CommonLib",
-     "slug": "wtt-commonlib",
-     "constraint": "",
-     "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
-    },
-    {
      "id": 1089,
      "name": "Kaeno-TraderScrolling",
      "slug": "kaeno-traderscrolling",
      "constraint": "",
      "url": "https://sp-mod.com/mod/1089/kaeno-traderscrolling"
+    },
+    {
+     "id": 2310,
+     "name": "WTT - CommonLib",
+     "slug": "wtt-commonlib",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
     }
    ],
    "published_at": "2022-08-07T12:30:00.000000Z",
-   "updated_at": "2026-08-13T02:31:28.000000Z",
+   "updated_at": "2026-08-14T01:08:06.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
@@ -30824,11 +30877,11 @@
    "name": "Color Converter API",
    "slug": "color-converter-api",
    "teaser": "Client-side mod to allow using hexcode colors for your items! Custom background colors for your items, or any color tracer you want!",
-   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Mod Info</div>\n<div class=\"tab-content\"><p><strong>Color Converter API</strong></p>\n<p>An SPT module mod that extends the functionality of the client, allowing the server to use raw hexcode color values for fields that ordinarily can only support BSG-created color enums.</p>\n<p>This mod should be forward-compatible with all new client releases for EFT (unless something very, very significant changes) and does NOT need to be updated.</p>\n<p><strong>Please note that on its own, this mod does nothing! It allows OTHER mods to use the full color spectrum where BSG uses the predefined color enums.</strong></p>\n<p><strong>License</strong></p>\n<p>Do not reupload or redistribute anywhere <em>without explicit permission</em> - please instead link to this mod page as part of your dependencies.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">How to install</div>\n<div class=\"tab-content\"><ol>\n<li>Simply extract the zip file contents into your root SPT folder (where EscapeFromTarkov.exe is).</li>\n<li>Your BepInEx/plugins folder should now contain the file <code>RaiRai.ColorConverterAPI.dll</code>  inside.</li>\n</ol></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Usage (for modders)</div>\n<div class=\"tab-content\"><p>You can check to see if the plugin exists in your server mod\u2019s source code any way you\u2019d like, but an easy copy-paste check is here:</p>\n<p>Typescript (SPT  &lt; 4.0)</p>\n<pre><code>private static IsPluginLoaded(): boolean { \n    const fs = require('fs'); const pluginName = \"rairai.colorconverterapi.dll\"; // Fails if there's no ./BepInEx/plugins/ folder \n    try { \n        const pluginList = fs.readdirSync(\"./BepInEx/plugins\").map(plugin =&amp;gt; plugin.toLowerCase()); \n        return pluginList.includes(pluginName); \n    } catch { \n        return false; \n    } \n} \n</code></pre>\n<p>Csharp (SPT &gt;= 4.0)</p>\n<pre><code>internal bool GetColorPlugin()\n{\n    var modPath = _modHelper.GetAbsolutePathToModFolder(Assembly.GetExecutingAssembly());\n    var bepinexPath = System.IO.Path.GetFullPath(System.IO.Path.Combine(modPath, @\"..\\..\\..\\..\\BepInEx\\\"));\n\n    var file = Directory.GetFiles(bepinexPath, \"RaiRai.ColorConverterAPI.dll\", SearchOption.AllDirectories);\n    return file.Any();\n}\n</code></pre>\n<p>You can handle the result of this function however you\u2019d like. Once you have validated that the plugin exists, you can proceed to fill in the fields for color in your item database with hexcodes in lieu of a color enum.</p>\n<p>For example:</p>\n<p>\u201cTracerColor\u201d: \u201c#FF00FF\u201d,</p>\n<p>\u201cBackgroundColor\u201d: \u201c#2A2AFF\u201d,</p>\n<p>Short 3-byte hexcode colors are also supported like so:</p>\n<p>\u201cBackgroundColor\u201d: \u201c#F90\u201d,</p>\n<p>Which will be interpreted as:</p>\n<p>\u201cBackgroundColor\u201d: \u201c#FF9900\u201d,</p>\n<p>As of version 1.1.0, you can optionally pass a fourth hex value for an Alpha (otherwise, it is treated as FF/255).</p>\n<p>\u201cBackgroundColor\u201d: \u201c#FF2AFF99\u201d,</p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Changelog</div>\n<div class=\"tab-content\"><ul>\n<li>July 10th, 2024:\n<ul>\n<li>Refactor to module changes for SPT 3.9.0+.</li>\n<li>Added support for alpha values for hex codes.</li>\n</ul>\n</li>\n</ul></div></div></div>\n",
+   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Mod Info</div>\n<div class=\"tab-content\"><p><strong>Color Converter API</strong></p>\n<p>An SPT module mod that extends the functionality of the client, allowing the server to use raw hexcode color values for fields that ordinarily can only support B**-created color enums.</p>\n<p>This mod should be forward-compatible with all new client releases for EFT (unless something very, very significant changes) and does NOT need to be updated.</p>\n<p><strong>Please note that on its own, this mod does nothing! It allows OTHER mods to use the full color spectrum where B</strong> uses the predefined color enums.**</p>\n<p><strong>License</strong></p>\n<p>Do not reupload or redistribute anywhere <em>without explicit permission</em> - please instead link to this mod page as part of your dependencies.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">How to install</div>\n<div class=\"tab-content\"><ol>\n<li>Simply extract the zip file contents into your root SPT folder (where EscapeFromTarkov.exe is).</li>\n<li>Your BepInEx/plugins folder should now contain the file <code>RaiRai.ColorConverterAPI.dll</code>  inside.</li>\n</ol></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Usage (for modders)</div>\n<div class=\"tab-content\"><p>You can check to see if the plugin exists in your server mod\u2019s source code any way you\u2019d like, but an easy copy-paste check is here:</p>\n<p>Typescript (SPT  &lt; 4.0)</p>\n<pre><code>private static IsPluginLoaded(): boolean { \n    const fs = require('fs'); const pluginName = \"rairai.colorconverterapi.dll\"; // Fails if there's no ./BepInEx/plugins/ folder \n    try { \n        const pluginList = fs.readdirSync(\"./BepInEx/plugins\").map(plugin =&amp;gt; plugin.toLowerCase()); \n        return pluginList.includes(pluginName); \n    } catch { \n        return false; \n    } \n} \n</code></pre>\n<p>Csharp (SPT &gt;= 4.0)</p>\n<pre><code>internal bool GetColorPlugin()\n{\n    var modPath = _modHelper.GetAbsolutePathToModFolder(Assembly.GetExecutingAssembly());\n    var bepinexPath = System.IO.Path.GetFullPath(System.IO.Path.Combine(modPath, @\"..\\..\\..\\..\\BepInEx\\\"));\n\n    var file = Directory.GetFiles(bepinexPath, \"RaiRai.ColorConverterAPI.dll\", SearchOption.AllDirectories);\n    return file.Any();\n}\n</code></pre>\n<p>You can handle the result of this function however you\u2019d like. Once you have validated that the plugin exists, you can proceed to fill in the fields for color in your item database with hexcodes in lieu of a color enum.</p>\n<p>For example:</p>\n<p>\u201cTracerColor\u201d: \u201c#FF00FF\u201d,</p>\n<p>\u201cBackgroundColor\u201d: \u201c#2A2AFF\u201d,</p>\n<p>Short 3-byte hexcode colors are also supported like so:</p>\n<p>\u201cBackgroundColor\u201d: \u201c#F90\u201d,</p>\n<p>Which will be interpreted as:</p>\n<p>\u201cBackgroundColor\u201d: \u201c#FF9900\u201d,</p>\n<p>As of version 1.1.0, you can optionally pass a fourth hex value for an Alpha (otherwise, it is treated as FF/255).</p>\n<p>\u201cBackgroundColor\u201d: \u201c#FF2AFF99\u201d,</p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Changelog</div>\n<div class=\"tab-content\"><ul>\n<li>July 10th, 2024:\n<ul>\n<li>Refactor to module changes for SPT 3.9.0+.</li>\n<li>Added support for alpha values for hex codes.</li>\n</ul>\n</li>\n</ul></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/1509.jpg",
    "forge_url": "https://sp-mod.com/mod/1090/color-converter-api",
-   "downloads": 98722,
-   "favourites": 146,
+   "downloads": 98995,
+   "favourites": 152,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -30864,9 +30917,9 @@
      "id": 3085,
      "version": "1.1.1",
      "description": "<p><strong>Confirmed working on SPT 4.0.0+.</strong></p>\n<p>Changelog:</p>\n<p>Fixed case-sensitive string parsing for color enum.\n(Error \u201cFailed to read JSON value for TaxonomyColor\u201d for certain mods.)</p>\n<p>Hey! Thanks for downloading, if you\u2019d like to support my work, you\u2019re more than welcome to support me at the link below or follow along at my Ko-Fi page here:</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/rairaitheraichu\" rel=\"noreferrer noopener\">https://ko-fi.com/rairaitheraichu</a></p>\n",
-     "spt_constraint": "~4.0.0",
+     "spt_constraint": "~4.1.0",
      "fika": "compatible",
-     "downloads": 81883,
+     "downloads": 82152,
      "size": 4836,
      "link": "https://sp-mod.com/mod/download/1090/color-converter-api/1.1.1",
      "published_at": "2024-08-13T23:31:00.000000Z",
@@ -30878,7 +30931,7 @@
      "description": "<p>Changelog:</p>\n<p>Refactor to module changes for SPT 3.9.0+.</p>\n<p>Added support for alpha values for hex codes.</p>\n<p>Hey! Thanks for downloading, if you\u2019d like to support my work, you\u2019re more than welcome to support me at the link below or follow along at my Ko-Fi page here:</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/rairaitheraichu\" rel=\"noreferrer noopener\">https://ko-fi.com/rairaitheraichu</a></p>\n",
      "spt_constraint": ">3.9.0 <4.0.0",
      "fika": "unknown",
-     "downloads": 3727,
+     "downloads": 3731,
      "size": null,
      "link": "https://sp-mod.com/mod/download/1090/color-converter-api/1.1.0",
      "published_at": "2024-07-10T20:44:00.000000Z",
@@ -30898,16 +30951,16 @@
     }
    ],
    "latest_version": "1.1.1",
-   "spt_constraint": "~4.0.0",
+   "spt_constraint": "~4.1.0",
    "all_spt_constraints": [
     ">3.7.0 <3.9.0",
     ">3.9.0 <4.0.0",
-    "~4.0.0"
+    "~4.1.0"
    ],
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2023-10-08T22:06:00.000000Z",
-   "updated_at": "2026-07-28T06:00:49.000000Z",
+   "updated_at": "2026-08-13T23:53:06.000000Z",
    "flags": {
     "contains_ads": true,
     "contains_ai_content": false,
@@ -47958,10 +48011,10 @@
    "name": "Warzone Cat Ears",
    "slug": "warzone-cat-ears",
    "teaser": "Nya Nya, Motherfuckers.",
-   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Mod Info</div>\n<div class=\"tab-content\"><h4>Warzone Cat Ears</h4>\n<p>Want to support my work? Consider clicking the link below!</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/rairaitheraichu\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://storage.ko-fi.com/cdn/kofi2.png?v=3\" alt=\"kofi2.png?v=3\" /></a></p>\n<p>We all know SPT needs more accessories. What\u2019s the point of all the killing if you aren\u2019t going to look good while you do it?</p>\n<p>I\u2019ve taken the same mesh for the Cat Ear headband from SamSWAT\u2019s \u201cCrye Precision Airframe Helmet From Warzone\u201d mod and edited the mesh to fit and look proper in the SLAAP plate slot of any helmet that can accept one. I\u2019ve also added a few alternate textures, in case blue isn\u2019t your thing.</p>\n<p>We\u2019ve got blue, pink, red, green, and yellow.</p>\n<p>Oh, and of course you don\u2019t have to forego protection just for style. Enabled by default, I have added a config option to copy the protection/hitbox of a normal SLAAP plate, so you don\u2019t have to lose out on your armor. Does it make sense? Probably not, but who cares? Cat ears, bro.</p>\n<p>\u041d\u044f.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Changelog</div>\n<div class=\"tab-content\"><ul>\n<li>\n<p>June 7th, 2026:</p>\n<ul>\n<li>Fixed an issue where assorts could fail to generate when using custom traders.</li>\n</ul>\n</li>\n<li>\n<p>June 5th, 2026:</p>\n<ul>\n<li>Fixed an OS-dependent issue with loading database and config files.</li>\n</ul>\n</li>\n<li>\n<p>June 4th, 2026:</p>\n<ul>\n<li>Rewrite for SPT version 4.0+.</li>\n<li>Added advanced trade offer customization in the config.</li>\n</ul>\n</li>\n<li>\n<p>December 21st, 2024:</p>\n<ul>\n<li>Minor change to the version in the package.json, compatible with version 3.10.0 of SPT and above.</li>\n</ul>\n</li>\n<li>\n<p>August 13th, 2024:</p>\n<ul>\n<li>Config for setting the ears to cosmetic-only will also lower the price.</li>\n<li>Refactor to module changes for SPT 3.9.0+.</li>\n<li>Minor change to the version in the package.json, compatible with version 3.9.0 of SPT and above.</li>\n</ul>\n</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Bug Reports</div>\n<div class=\"tab-content\"><p>If you encounter any issues, please feel free to contact me on Discord (RaiRaiTheRaichu) (This includes incompatibilities you may find with other mods!)</p>\n<p>You can leave a comment here, as well, but response time may be significantly longer as I do not usually check my inbox here often.</p>\n<p><strong>Please include any logs generated from the console as well to help me narrow down the issue.</strong></p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Addtl. Credits</div>\n<div class=\"tab-content\"><hr />\n<p>SamSWAT for the initial mod this is inherited from, \u201cCrye Precision Airframe Helmet From Warzone\u201d</p></div></div></div>\n",
+   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Mod Info</div>\n<div class=\"tab-content\"><h4>Warzone Cat Ears</h4>\n<p>Want to support my work? Consider clicking the link below!</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/rairaitheraichu\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://storage.ko-fi.com/cdn/kofi2.png?v=3\" alt=\"kofi2.png?v=3\" /></a></p>\n<p>We all know SPT needs more accessories. What\u2019s the point of all the killing if you aren\u2019t going to look good while you do it?</p>\n<p>I\u2019ve taken the same mesh for the Cat Ear headband from SamSWAT\u2019s \u201cCrye Precision Airframe Helmet From Warzone\u201d mod and edited the mesh to fit and look proper in the SLAAP plate slot of any helmet that can accept one. I\u2019ve also added a few alternate textures, in case blue isn\u2019t your thing.</p>\n<p>We\u2019ve got blue, pink, red, green, and yellow.</p>\n<p>Oh, and of course you don\u2019t have to forego protection just for style. Enabled by default, I have added a config option to copy the protection/hitbox of a normal SLAAP plate, so you don\u2019t have to lose out on your armor. Does it make sense? Probably not, but who cares? Cat ears, bro.</p>\n<p>\u041d\u044f.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Changelog</div>\n<div class=\"tab-content\"><ul>\n<li>\n<p>August 12th, 2026:</p>\n<ul>\n<li>Update for compatibility with SPT 4.1.0+</li>\n</ul>\n</li>\n<li>\n<p>June 7th, 2026:</p>\n<ul>\n<li>Fixed an issue where assorts could fail to generate when using custom traders.</li>\n</ul>\n</li>\n<li>\n<p>June 5th, 2026:</p>\n<ul>\n<li>Fixed an OS-dependent issue with loading database and config files.</li>\n</ul>\n</li>\n<li>\n<p>June 4th, 2026:</p>\n<ul>\n<li>Rewrite for SPT version 4.0+.</li>\n<li>Added advanced trade offer customization in the config.</li>\n</ul>\n</li>\n<li>\n<p>December 21st, 2024:</p>\n<ul>\n<li>Minor change to the version in the package.json, compatible with version 3.10.0 of SPT and above.</li>\n</ul>\n</li>\n<li>\n<p>August 13th, 2024:</p>\n<ul>\n<li>Config for setting the ears to cosmetic-only will also lower the price.</li>\n<li>Refactor to module changes for SPT 3.9.0+.</li>\n<li>Minor change to the version in the package.json, compatible with version 3.9.0 of SPT and above.</li>\n</ul>\n</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Bug Reports</div>\n<div class=\"tab-content\"><p>If you encounter any issues, please feel free to contact me on Discord (RaiRaiTheRaichu) (This includes incompatibilities you may find with other mods!)</p>\n<p>You can leave a comment here, as well, but response time may be significantly longer as I do not usually check my inbox here often.</p>\n<p><strong>Please include any logs generated from the console as well to help me narrow down the issue.</strong></p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Addtl. Credits</div>\n<div class=\"tab-content\"><hr />\n<p>SamSWAT for the initial mod this is inherited from, \u201cCrye Precision Airframe Helmet From Warzone\u201d</p></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/1792.png",
    "forge_url": "https://sp-mod.com/mod/1280/warzone-cat-ears",
-   "downloads": 5642,
+   "downloads": 5659,
    "favourites": 7,
    "featured": false,
    "fika": true,
@@ -47990,12 +48043,24 @@
    ],
    "versions": [
     {
+     "id": 14717,
+     "version": "2.1.0",
+     "description": "<p>Changelog:</p>\n<ul>\n<li>Update for compatibility with SPT 4.1.0+</li>\n</ul>\n<p>Hey! Thanks for downloading, if you\u2019d like to support my work, you\u2019re more than welcome to support me at the link below or follow along at my Ko-Fi page here:</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/rairaitheraichu\" rel=\"noreferrer noopener\">https://ko-fi.com/rairaitheraichu</a></p>\n",
+     "spt_constraint": "~4.1.0",
+     "fika": "compatible",
+     "downloads": 12,
+     "size": 42692532,
+     "link": "https://sp-mod.com/mod/download/1280/warzone-cat-ears/2.1.0",
+     "published_at": "2026-08-14T00:25:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 13720,
      "version": "2.0.2",
      "description": "<p>Changelog:</p>\n<ul>\n<li>Fixed an issue where assorts could fail to generate when using custom traders.</li>\n</ul>\n<p>Hey! Thanks for downloading, if you\u2019d like to support my work, you\u2019re more than welcome to support me at the link below or follow along at my Ko-Fi page here:</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/rairaitheraichu\" rel=\"noreferrer noopener\">https://ko-fi.com/rairaitheraichu</a></p>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 769,
+     "downloads": 774,
      "size": 42691187,
      "link": "https://sp-mod.com/mod/download/1280/warzone-cat-ears/2.0.2",
      "published_at": "2026-06-07T17:41:00.000000Z",
@@ -48062,18 +48127,19 @@
      "dependencies": []
     }
    ],
-   "latest_version": "2.0.2",
-   "spt_constraint": "~4.0.0",
+   "latest_version": "2.1.0",
+   "spt_constraint": "~4.1.0",
    "all_spt_constraints": [
     "3.8.0",
     "3.9.0",
     "~3.10.0",
-    "~4.0.0"
+    "~4.0.0",
+    "~4.1.0"
    ],
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-06-04T21:55:00.000000Z",
-   "updated_at": "2026-07-28T09:06:30.000000Z",
+   "updated_at": "2026-08-14T00:27:04.000000Z",
    "flags": {
     "contains_ads": true,
     "contains_ai_content": false,
@@ -69237,11 +69303,11 @@
    "name": "sgtlaggy's Quest Tweaks",
    "slug": "sgtlaggys-quest-tweaks",
    "teaser": "Some QoL quest changes.",
-   "description_html": "<p>\u26a0\ufe0f Removing this mod should be safe but there may be lingering effects applied to in-progress quests.</p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">QOL Settings</div>\n<div class=\"tab-content\"><h3>Reveal All Quest Objectives</h3>\n<p>\u26a0\ufe0f <strong>This may lead to completing objectives out of order, Survive and Extract can be completed before the normally prerequisite objectives. Any currently active quests will have their objectives still revealed if the setting is disabled or mod is removed.</strong></p>\n<p>Reveal all objectives that are hidden by default and only show up after completing other objectives.</p>\n<p>One example is <a target=\"_blank\" class=\"external-link\" href=\"https://escapefromtarkov.fandom.com/wiki/Broadcast_-_Part_1\" rel=\"noreferrer noopener\">Broadcast - Part 1</a>, the objective to place the Signal Jammer doesn\u2019t appear until you\u2019ve entered the room.</p>\n<h3>Reveal Unknown Quest Rewards</h3>\n<p>Replace all \u201cUnknown Reward\u201d quest rewards with the actual items.</p>\n<h3>Remove Time Gates</h3>\n<p>Remove waiting periods after some quests like Gunsmith.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Conditions</div>\n<div class=\"tab-content\"><h3>Remove Tedious Conditions</h3>\n<p>\u2139\ufe0f This is similar to <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/336/kiki-removetediousquestconditions\" rel=\"noreferrer noopener\">kiki-RemoveTediousQuestConditions</a>.</p>\n<p>The following objective conditions can be removed.\nAny marked with \ud83d\udd03 also will also apply to repeatable quests by default.</p>\n<ul>\n<li>\ud83d\udd03 Elimination target (PMC, scav, boss, etc)</li>\n<li>\ud83d\udd03 Weapon and mods</li>\n<li>Equipment</li>\n<li>Health/status effects (stun, dehydration)</li>\n<li>\ud83d\udd03 Body parts</li>\n<li>\ud83d\udd03 Distance</li>\n<li>Time</li>\n<li>Map/location</li>\n<li>Zone\n<ul>\n<li>Removing zone but not map conditions will expand it to the map.</li>\n</ul>\n</li>\n<li>\ud83d\udd03 Item found-in-raid status</li>\n</ul>\n<p>An additional setting toggles whether these also apply to repeatable quests.</p>\n<p>Each of these options can be overridden for individual quests using the <code>questOverrides</code> setting.\nIt should be in the format <code>{\"questId\": {\"option\": true, \"otherOption\": false}}</code>, using the option names in <code>removeConditions</code> for reference. These will always be handled regardless of <code>onlyQuests</code> and <code>exemptQuests</code>.</p>\n<p>As an example, to backport the expansion of <a target=\"_blank\" class=\"external-link\" href=\"https://escapefromtarkov.fandom.com/wiki/Forester%27s_Duty\" rel=\"noreferrer noopener\">Forester\u2019s Duty</a>, you could set <code>{\"66ab9da7eb102b9bcd08591c\": {\"zone\": true}}</code> and this would leave other zones like Capturing Outposts intact.</p>\n<p>The <code>onlyQuests</code> setting lets you specify an exclusive list of quests that will be modified.</p>\n<p>The <code>exemptQuests</code> setting lets you specify a list of quests that will be skipped entirely.</p>\n<p>Quest IDs for these settings can be found using <a target=\"_blank\" class=\"external-link\" href=\"https://tarkynator.com/quests?scope=global\" rel=\"noreferrer noopener\">Tarkynator</a>. For example, the ID of the dehydration quest \u201cThe Survivalist Path - Zhivchik\u201d is <code>5d25bfd086f77442734d3007</code>. This can be added to lists like <code>[\"5d25bfd086f77442734d3007\"]</code>. To add multiple quests, add a comma between IDs like <code>[\"...\", \"...\"]</code>.</p>\n<p>Modded quests can also be added. Their quest IDs can be found in some file in their own mod folder in <code>user/mods</code> or, if they use VCQL, <code>user/mods/Virtual's Custom Quest Loader/database/locales/en/THAT_MOD.json</code>.</p>\n<p>To set overrides for repeatable quests use <code>615ffc701c97c768137e719b</code> for PMC dailies, <code>618035d38012292db3081bf0</code> for weeklies, and <code>62825ef60e88d037dc1eb426</code> for scav dailies.</p>\n<h3>Set Number For Eliminations and Items to Hand Over</h3>\n<p>These options will set a percent of original value or flat value across the board for all quests to use when requiring kills or item turn-ins, respected by \u2018exemptQuests\u2018 list.</p>\n<p>The item setting does not apply to quest items like the Bronze Pocket Watch or keys/keycards.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Special Cases</div>\n<div class=\"tab-content\"><h3>Only Require Level to start Lightkeeper</h3>\n<p>\u2139\ufe0f This is the same feature provided by <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1521/lightkeeper-questline-patch\" rel=\"noreferrer noopener\">Lightkeeper Questline Patch</a>.</p>\n<p>This option will remove all the prerequisite quests to start <code>Network Provider - Part 1</code> and will only require a specific level. A value of <code>0</code> will disable this feature and leave the prerequisites in place.</p>\n<h3>Add Sako TRG M10 to Tarkov Shooter 1-6</h3>\n<p>BSG only added it to 7 and 8, this option makes it work for 1-6 as well.</p>\n<h3>Backport Collector Prerequisites from EFT 1.1.0.0</h3>\n<p>This will completely replace the prerequisites, so is incompatible with other mods such as <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1675/start-collector-early\" rel=\"noreferrer noopener\">Start Collector Early</a> but should be compatible with <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2615/updated-collector-quest-and-streamer-case-eft-10-backport\" rel=\"noreferrer noopener\">Updated collector quest and streamer case</a>.</p>\n<p>New prerequisites:</p>\n<ul>\n<li>Loyalty level 4\ud83d\udc51 Prapor</li>\n<li>Loyalty level 4\ud83d\udc51 Therapist</li>\n<li>Loyalty level 4\ud83d\udc51 Skier</li>\n<li>Loyalty level 4\ud83d\udc51 Peacekeeper</li>\n<li>Loyalty level 4\ud83d\udc51 Mechanic</li>\n<li>Loyalty level 4\ud83d\udc51 Ragman</li>\n<li>Loyalty level 4\ud83d\udc51 Jaeger</li>\n<li>Fence reputation 3+</li>\n<li>PMC Level 40</li>\n<li>A Shooter Born in Heaven</li>\n<li>The Tarkov Shooter - Part 4</li>\n<li>Sew It Good - Part 4</li>\n<li>Chemical - Part 4 OR Big Customer OR Out of Curiosity</li>\n</ul></div></div></div>\n",
+   "description_html": "<p>\u26a0\ufe0f Removing this mod should be safe but there may be lingering effects applied to in-progress quests.</p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">QOL Settings</div>\n<div class=\"tab-content\"><h3>Reveal All Quest Objectives</h3>\n<p>\u26a0\ufe0f <strong>This may lead to completing objectives out of order, Survive and Extract can be completed before the normally prerequisite objectives. Any currently active quests will have their objectives still revealed if the setting is disabled or mod is removed.</strong></p>\n<p>Reveal all objectives that are hidden by default and only show up after completing other objectives.</p>\n<p>One example is <a target=\"_blank\" class=\"external-link\" href=\"https://escapefromtarkov.fandom.com/wiki/Broadcast_-_Part_1\" rel=\"noreferrer noopener\">Broadcast - Part 1</a>, the objective to place the Signal Jammer doesn\u2019t appear until you\u2019ve entered the room.</p>\n<h3>Reveal Unknown Quest Rewards</h3>\n<p>Replace all \u201cUnknown Reward\u201d quest rewards with the actual items.</p>\n<h3>Remove Time Gates</h3>\n<p>Remove waiting periods after some quests like Gunsmith.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Conditions</div>\n<div class=\"tab-content\"><h3>Remove Tedious Conditions</h3>\n<p>\u2139\ufe0f This is similar to <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/336/kiki-removetediousquestconditions\" rel=\"noreferrer noopener\">kiki-RemoveTediousQuestConditions</a>.</p>\n<p>The following objective conditions can be removed.\nAny marked with \ud83d\udd03 also will also apply to repeatable quests by default.</p>\n<ul>\n<li>\ud83d\udd03 Elimination target (PMC, scav, boss, etc)</li>\n<li>\ud83d\udd03 Weapon and mods</li>\n<li>Equipment</li>\n<li>Health/status effects (stun, dehydration)</li>\n<li>\ud83d\udd03 Body parts</li>\n<li>\ud83d\udd03 Distance</li>\n<li>Time</li>\n<li>Map/location</li>\n<li>Zone\n<ul>\n<li>Removing zone but not map conditions will expand it to the map.</li>\n</ul>\n</li>\n<li>\ud83d\udd03 Item found-in-raid status</li>\n</ul>\n<p>An additional setting toggles whether these also apply to repeatable quests.</p>\n<p>Each of these options can be overridden for individual quests using the <code>questOverrides</code> setting.\nIt should be in the format <code>{\"questId\": {\"option\": true, \"otherOption\": false}}</code>, using the option names in <code>removeConditions</code> for reference. These will always be handled regardless of <code>onlyQuests</code> and <code>exemptQuests</code>.</p>\n<p>As an example, to backport the expansion of <a target=\"_blank\" class=\"external-link\" href=\"https://escapefromtarkov.fandom.com/wiki/Forester%27s_Duty\" rel=\"noreferrer noopener\">Forester\u2019s Duty</a>, you could set <code>{\"66ab9da7eb102b9bcd08591c\": {\"zone\": true}}</code> and this would leave other zones like Capturing Outposts intact.</p>\n<p>The <code>onlyQuests</code> setting lets you specify an exclusive list of quests that will be modified.</p>\n<p>The <code>exemptQuests</code> setting lets you specify a list of quests that will be skipped entirely.</p>\n<p>Quest IDs for these settings can be found using <a target=\"_blank\" class=\"external-link\" href=\"https://tarkynator.com/quests?scope=global\" rel=\"noreferrer noopener\">Tarkynator</a>. For example, the ID of the dehydration quest \u201cThe Survivalist Path - Zhivchik\u201d is <code>5d25bfd086f77442734d3007</code>. This can be added to lists like <code>[\"5d25bfd086f77442734d3007\"]</code>. To add multiple quests, add a comma between IDs like <code>[\"...\", \"...\"]</code>.</p>\n<p>Modded quests can also be added. Their quest IDs can be found in some file in their own mod folder in <code>user/mods</code> or, if they use VCQL, <code>user/mods/Virtual's Custom Quest Loader/database/locales/en/THAT_MOD.json</code>.</p>\n<p>To set overrides for repeatable quests use <code>615ffc701c97c768137e719b</code> for PMC dailies, <code>618035d38012292db3081bf0</code> for weeklies, and <code>62825ef60e88d037dc1eb426</code> for scav dailies.</p>\n<h3>Set Number For Eliminations and Items to Hand Over</h3>\n<p>These options will set a percent of original value or flat value across the board for all quests to use when requiring kills or item turn-ins, respected by \u2018exemptQuests\u2018 list.</p>\n<p>The item setting does not apply to quest items like the Bronze Pocket Watch or keys/keycards.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Special Cases</div>\n<div class=\"tab-content\"><h3>Only Require Level to start Lightkeeper</h3>\n<p>\u2139\ufe0f This is the same feature provided by <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1521/lightkeeper-questline-patch\" rel=\"noreferrer noopener\">Lightkeeper Questline Patch</a>.</p>\n<p>This option will remove all the prerequisite quests to start <code>Network Provider - Part 1</code> and will only require a specific level. A value of <code>0</code> will disable this feature and leave the prerequisites in place.</p>\n<h3>Add Sako TRG M10 to Tushonka Shooter 1-6</h3>\n<p>B** only added it to 7 and 8, this option makes it work for 1-6 as well.</p>\n<h3>Backport Collector Prerequisites from EFT 1.1.0.0</h3>\n<p>This will completely replace the prerequisites, so is incompatible with other mods such as <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1675/start-collector-early\" rel=\"noreferrer noopener\">Start Collector Early</a> but should be compatible with <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2615/updated-collector-quest-and-streamer-case-eft-10-backport\" rel=\"noreferrer noopener\">Updated collector quest and streamer case</a>.</p>\n<p>New prerequisites:</p>\n<ul>\n<li>Loyalty level 4\ud83d\udc51 Prapor</li>\n<li>Loyalty level 4\ud83d\udc51 Therapist</li>\n<li>Loyalty level 4\ud83d\udc51 Skier</li>\n<li>Loyalty level 4\ud83d\udc51 Peacekeeper</li>\n<li>Loyalty level 4\ud83d\udc51 Mechanic</li>\n<li>Loyalty level 4\ud83d\udc51 Ragman</li>\n<li>Loyalty level 4\ud83d\udc51 Jaeger</li>\n<li>Fence reputation 3+</li>\n<li>PMC Level 40</li>\n<li>A Shooter Born in Heaven</li>\n<li>The Tushonka Shooter - Part 4</li>\n<li>Sew It Good - Part 4</li>\n<li>Chemical - Part 4 OR Big Customer OR Out of Curiosity</li>\n</ul></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/2107.png",
    "forge_url": "https://sp-mod.com/mod/1537/sgtlaggys-quest-tweaks",
-   "downloads": 21376,
-   "favourites": 24,
+   "downloads": 21505,
+   "favourites": 25,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -69278,7 +69344,7 @@
      "description": "<p>Updated to SPT 4.1 with config available in SIC but server must be restarted for settings to take effect.</p>\n<p>Config has been reorganized, condition options have been changed from e.g. <code>zone</code> to <code>removeZone</code>, and overrides can now include handover item and elimination count/percent.</p>\n",
      "spt_constraint": "~4.1.0",
      "fika": "compatible",
-     "downloads": 1398,
+     "downloads": 1488,
      "size": 22908,
      "link": "https://sp-mod.com/mod/download/1537/sgtlaggys-quest-tweaks/4.8.0",
      "published_at": "2026-08-03T03:21:00.000000Z",
@@ -69290,7 +69356,7 @@
      "description": "<p>Added an option to backport the Kordbreach / EFT 1.1.0.0 Collector prerequisites based on <a target=\"_blank\" class=\"external-link\" href=\"https://x.com/tarkov/status/2077755562490581359\" rel=\"noreferrer noopener\">@tarkov\u2019s recent tweet</a>.</p>\n<p>Added a new setting <code>questOverrides</code> that allows overriding the settings from <code>removeConditions</code> for individual quests.</p>\n<p>Repeating the example in the description, Forester\u2019s Duty could be expanded from villages to the entire maps to match live by adding <code>{\"66ab9da7eb102b9bcd08591c\": {\"zone\": true}}</code> while leaving the zones for other quests like Capturing Outposts and Secured Perimeter in effect.</p>\n<p>When using the <code>onlyQuests</code> and <code>exemptQuests</code> settings, overrides will <em>always</em> take effect but will only fall back to the global/default settings in <code>removeConditions</code> depending on the quest\u2019s presence in those settings.</p>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 1531,
+     "downloads": 1570,
      "size": 16702,
      "link": "https://sp-mod.com/mod/download/1537/sgtlaggys-quest-tweaks/4.7.0",
      "published_at": "2026-07-18T04:43:00.000000Z",
@@ -69428,7 +69494,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2024-07-08T22:09:00.000000Z",
-   "updated_at": "2026-08-03T06:02:26.000000Z",
+   "updated_at": "2026-08-14T01:58:58.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -162099,14 +162165,14 @@
    "name": "Item Property Backport",
    "slug": "item-property-backport",
    "teaser": "Get live item stat/balance changes!",
-   "description_html": "<h2>Updated: July 16 2026</h2>\n<p>To update, delete <code>db/items.json</code> and it will be re-downloaded.</p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Properties</div>\n<div class=\"tab-content\"><h3>Generic</h3>\n<ul>\n<li>CanSellOnRagfair    (BSG flea blacklist)</li>\n<li>ConflictingItems    (item incompatibility)</li>\n</ul>\n<h3>Weapons, mods</h3>\n<ul>\n<li>Accuracy</li>\n<li>Ergonomics</li>\n<li>Loudness</li>\n<li>Recoil</li>\n<li>Velocity</li>\n<li>CameraSnap</li>\n<li>CenterOfImpact</li>\n<li>DeviationCurve</li>\n<li>DeviationMax</li>\n<li>RecoilAngle</li>\n<li>RecolDispersion   (not misspelled)</li>\n<li>RecoilForceBack</li>\n<li>RecoilForceUp</li>\n</ul>\n<h3>Magazines</h3>\n<ul>\n<li>CheckTimeModifier</li>\n<li>LoadUnloadModifier</li>\n<li>MalfunctionChance</li>\n</ul>\n<h3>Ammo</h3>\n<ul>\n<li>AmmoAccr        (accuracy)</li>\n<li>AmmoRec         (recoil)</li>\n<li>ArmorDamage</li>\n<li>BallisticCoeficient</li>\n<li>BulletMassGram</li>\n<li>Damage</li>\n<li>DurabilityBurnModificator</li>\n<li>FragmentationChance</li>\n<li>HeatFactor</li>\n<li>HeavyBleedingDelta</li>\n<li>InitialSpeed</li>\n<li>LightBleedingDelta</li>\n<li>MalfFeedChance</li>\n<li>MalfMisfireChance</li>\n<li>PenetrationChanceObstacle</li>\n<li>PenetrationPower</li>\n<li>PenetrationPowerDiviation  (not misspelled)</li>\n<li>StackMaxSize</li>\n</ul>\n<h3>Armor, rigs, helmets, glasses</h3>\n<ul>\n<li>ArmorClass</li>\n<li>ArmorColliders</li>\n<li>ArmorMaterial</li>\n<li>ArmorType</li>\n<li>BlindnessProtection</li>\n<li>BlocksEarpiece</li>\n<li>BluntThroughput</li>\n<li>DeafStrength</li>\n<li>Durability</li>\n<li>MousePenalty           (turn speed)</li>\n<li>RepairCost</li>\n<li>RicochetParams</li>\n<li>SpeedPenaltyPercent</li>\n<li>WeaponErgonomicPenalty</li>\n</ul>\n<h3>Headphones</h3>\n<ul>\n<li>AmbientVolume</li>\n<li>CompressorAttack</li>\n<li>CompressorGain</li>\n<li>CompressorRelease</li>\n<li>CompressorThreshold</li>\n<li>RolloffMultiplier</li>\n<li>Distortion</li>\n<li>DryVolume</li>\n</ul>\n<h3>Nightvision</h3>\n<ul>\n<li>DiffuseIntensity</li>\n<li>Intensity</li>\n<li>NoiseIntensity</li>\n<li>NoiseScale</li>\n</ul>\n<h3>Keys</h3>\n<ul>\n<li>MaximumNumberOfUsages</li>\n</ul>\n<h3>Meds</h3>\n<ul>\n<li>MedUseTime</li>\n<li>MaxHpResource</li>\n<li>EffectsDamage</li>\n</ul>\n<h3>Food</h3>\n<ul>\n<li>MaxResource</li>\n</ul>\n<h3>Meds, Food</h3>\n<ul>\n<li>EffectsHealth</li>\n<li>Buffs</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Config</div>\n<div class=\"tab-content\"><ul>\n<li><code>ExcludeProperties</code>: Each property can be individually excluded. See Properties tab or the included <code>properties.md</code> file for a list of property names.</li>\n<li><code>IncludeItems</code>: Apply changes only to specified items. Ignores <code>ExcludeItems</code>.</li>\n<li><code>ExcludeItems</code>: Apply changes to all items except specified.</li>\n<li><code>AllPrices</code>: Update prices for all items</li>\n<li><code>UnblacklistedPrices</code>: Update prices only for items that are newly available on the flea market</li>\n<li><code>UpdateGunsmith</code>: Apply changes to Gunsmith tasks</li>\n</ul>\n<p>Use the <a target=\"_blank\" class=\"external-link\" href=\"https://db.sp-tarkov.com/search\" rel=\"noreferrer noopener\">SPT Item Finder</a> to find item IDs for lists.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Compatibility</div>\n<div class=\"tab-content\"><ul>\n<li>Fully compatible with <a target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/2512/wtt-content-backport\" rel=\"noreferrer noopener\">WTT Content Backport</a></li>\n<li>Supercedes <a target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/2668/attachmentbackport\" rel=\"noreferrer noopener\">RuKira\u2019s AttachmentBackport</a></li>\n</ul></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Recommended Mods</div>\n<div class=\"tab-content\"><ul>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/1131/live-flea-prices\" rel=\"noreferrer noopener\">Live Flea Prices</a> can keep item prices up to date with live.</li>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/1343/skipper\" rel=\"noreferrer noopener\">Skipper</a> <em>may</em> be required to complete some Gunsmith or similar tasks.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Data Source</div>\n<div class=\"tab-content\"><p>Data is sourced from <a target=\"_blank\" class=\"external-link\" href=\"https://tarkov.dev/\" rel=\"noreferrer noopener\">tarkov.dev</a>. I\u2019ll do my best to keep the data up to date with notable changes, keep an eye on the date above. Feel free to comment if I\u2019m over a week late to an update.</p></div></div></div>\n",
+   "description_html": "<h2>Updated: July 16 2026</h2>\n<p>To update, delete <code>db/items.json</code> and it will be re-downloaded.</p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Properties</div>\n<div class=\"tab-content\"><h3>Generic</h3>\n<ul>\n<li>CanSellOnRagfair    (B** flea blacklist)</li>\n<li>ConflictingItems    (item incompatibility)</li>\n</ul>\n<h3>Weapons, mods</h3>\n<ul>\n<li>Accuracy</li>\n<li>Ergonomics</li>\n<li>Loudness</li>\n<li>Recoil</li>\n<li>Velocity</li>\n<li>CameraSnap</li>\n<li>CenterOfImpact</li>\n<li>DeviationCurve</li>\n<li>DeviationMax</li>\n<li>RecoilAngle</li>\n<li>RecolDispersion   (not misspelled)</li>\n<li>RecoilForceBack</li>\n<li>RecoilForceUp</li>\n</ul>\n<h3>Magazines</h3>\n<ul>\n<li>CheckTimeModifier</li>\n<li>LoadUnloadModifier</li>\n<li>MalfunctionChance</li>\n</ul>\n<h3>Ammo</h3>\n<ul>\n<li>AmmoAccr        (accuracy)</li>\n<li>AmmoRec         (recoil)</li>\n<li>ArmorDamage</li>\n<li>BallisticCoeficient</li>\n<li>BulletMassGram</li>\n<li>Damage</li>\n<li>DurabilityBurnModificator</li>\n<li>FragmentationChance</li>\n<li>HeatFactor</li>\n<li>HeavyBleedingDelta</li>\n<li>InitialSpeed</li>\n<li>LightBleedingDelta</li>\n<li>MalfFeedChance</li>\n<li>MalfMisfireChance</li>\n<li>PenetrationChanceObstacle</li>\n<li>PenetrationPower</li>\n<li>PenetrationPowerDiviation  (not misspelled)</li>\n<li>StackMaxSize</li>\n</ul>\n<h3>Armor, rigs, helmets, glasses</h3>\n<ul>\n<li>ArmorClass</li>\n<li>ArmorColliders</li>\n<li>ArmorMaterial</li>\n<li>ArmorType</li>\n<li>BlindnessProtection</li>\n<li>BlocksEarpiece</li>\n<li>BluntThroughput</li>\n<li>DeafStrength</li>\n<li>Durability</li>\n<li>MousePenalty           (turn speed)</li>\n<li>RepairCost</li>\n<li>RicochetParams</li>\n<li>SpeedPenaltyPercent</li>\n<li>WeaponErgonomicPenalty</li>\n</ul>\n<h3>Headphones</h3>\n<ul>\n<li>AmbientVolume</li>\n<li>CompressorAttack</li>\n<li>CompressorGain</li>\n<li>CompressorRelease</li>\n<li>CompressorThreshold</li>\n<li>RolloffMultiplier</li>\n<li>Distortion</li>\n<li>DryVolume</li>\n</ul>\n<h3>Nightvision</h3>\n<ul>\n<li>DiffuseIntensity</li>\n<li>Intensity</li>\n<li>NoiseIntensity</li>\n<li>NoiseScale</li>\n</ul>\n<h3>Keys</h3>\n<ul>\n<li>MaximumNumberOfUsages</li>\n</ul>\n<h3>Meds</h3>\n<ul>\n<li>MedUseTime</li>\n<li>MaxHpResource</li>\n<li>EffectsDamage</li>\n</ul>\n<h3>Food</h3>\n<ul>\n<li>MaxResource</li>\n</ul>\n<h3>Meds, Food</h3>\n<ul>\n<li>EffectsHealth</li>\n<li>Buffs</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Config</div>\n<div class=\"tab-content\"><ul>\n<li><code>ExcludeProperties</code>: Each property can be individually excluded. See Properties tab or the included <code>properties.md</code> file for a list of property names.</li>\n<li><code>IncludeItems</code>: Apply changes only to specified items. Ignores <code>ExcludeItems</code>.</li>\n<li><code>ExcludeItems</code>: Apply changes to all items except specified.</li>\n<li><code>AllPrices</code>: Update prices for all items</li>\n<li><code>UnblacklistedPrices</code>: Update prices only for items that are newly available on the flea market</li>\n<li><code>UpdateGunsmith</code>: Apply changes to Gunsmith tasks</li>\n</ul>\n<p>Use the <a target=\"_blank\" class=\"external-link\" href=\"https://db.sp-tarkov.com/search\" rel=\"noreferrer noopener\">SPT Item Finder</a> to find item IDs for lists.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Compatibility</div>\n<div class=\"tab-content\"><ul>\n<li>Fully compatible with <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2512/wtt-content-backport\" rel=\"noreferrer noopener\">WTT Content Backport</a></li>\n<li>Supercedes <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2668/attachmentbackport\" rel=\"noreferrer noopener\">RuKira\u2019s AttachmentBackport</a></li>\n</ul></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Recommended Mods</div>\n<div class=\"tab-content\"><ul>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1131/live-flea-prices\" rel=\"noreferrer noopener\">Live Flea Prices</a> can keep item prices up to date with live.</li>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1343/skipper\" rel=\"noreferrer noopener\">Skipper</a> <em>may</em> be required to complete some Gunsmith or similar tasks.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Data Source</div>\n<div class=\"tab-content\"><p>Data is sourced from <a target=\"_blank\" class=\"external-link\" href=\"https://tarkov.dev/\" rel=\"noreferrer noopener\">tarkov.dev</a>. I\u2019ll do my best to keep the data up to date with notable changes, keep an eye on the date above. Feel free to comment if I\u2019m over a week late to an update.</p></div></div></div>\n",
    "thumbnail": "",
-   "forge_url": "https://forge.sp-tarkov.com/mod/2689/item-property-backport",
-   "downloads": 7153,
-   "favourites": 49,
+   "forge_url": "https://sp-mod.com/mod/2689/item-property-backport",
+   "downloads": 7877,
+   "favourites": 57,
    "featured": false,
    "fika": true,
-   "fika_latest": "compatible",
+   "fika_latest": "unknown",
    "category": {
     "id": 17,
     "title": "Other",
@@ -162120,7 +162186,7 @@
     {
      "id": 50076,
      "name": "sgtlaggy",
-     "avatar": "https://forge-static.sp-tarkov.com/profile-photos/S7wTCtKyPp2VJq7EYaE6x5KjtGrn3DEwK1gmB5iu_256w.webp"
+     "avatar": "https://files.sp-mod.com/profile-photos/S7wTCtKyPp2VJq7EYaE6x5KjtGrn3DEwK1gmB5iu_256w.webp"
     }
    ],
    "source_links": [
@@ -162131,14 +162197,26 @@
    ],
    "versions": [
     {
+     "id": 14718,
+     "version": "1.5.1",
+     "description": "<p>Fixed an off-by-one error when updating buffs and catch other potential errors.</p>\n",
+     "spt_constraint": "~4.1.0",
+     "fika": "unknown",
+     "downloads": 43,
+     "size": 130649,
+     "link": "https://sp-mod.com/mod/download/2689/item-property-backport/1.5.1",
+     "published_at": "2026-08-14T00:58:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 14408,
      "version": "1.5.0",
      "description": "<p>Updated to SPT 4.1 with config available in SIC but server must be restarted for settings to take effect.</p>\n",
      "spt_constraint": "~4.1.0",
      "fika": "compatible",
-     "downloads": 979,
+     "downloads": 1360,
      "size": 130542,
-     "link": "https://forge.sp-tarkov.com/mod/download/2689/item-property-backport/1.5.0",
+     "link": "https://sp-mod.com/mod/download/2689/item-property-backport/1.5.0",
      "published_at": "2026-08-03T03:27:00.000000Z",
      "dependencies": []
     },
@@ -162148,9 +162226,9 @@
      "description": "<p>Changed item file format, new data is no longer compatible with older mod versions.</p>\n<p>Added <code>RemoveAmmoboxFleaLimit</code> config setting. SPT limits ammo boxes to 0-3 offers while all other items are 7-30. Setting this option will remove the override so they match other items.</p>\n<p>Added support for food, meds, and armor properties:\nMedUseTime\nEffectsDamage\nEffectsHealth\nBuffs\nMaxHpResource (meds)\nMaxResource (food)\nArmorClass\nArmorColliders\nArmorMaterial\nArmorType\nDurability\nRepairCost\nRicochetParams</p>\n<p>Fixed <code>properties.md</code> typo (<code>WeaponErgonomicPenalty</code>) and missing properties (<code>DeafStrength</code>, <code>BlocksEarpiece</code>).</p>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 1526,
+     "downloads": 1725,
      "size": 128665,
-     "link": "https://forge.sp-tarkov.com/mod/download/2689/item-property-backport/1.4.0",
+     "link": "https://sp-mod.com/mod/download/2689/item-property-backport/1.4.0",
      "published_at": "2026-07-16T21:11:00.000000Z",
      "dependencies": []
     },
@@ -162160,9 +162238,9 @@
      "description": "<p>Added config options to update item base (handbook) and flea prices.</p>\n<p>By default this is limited only to items that were unblacklisted but can be expanded to all items.</p>\n<p>LiveFleaPrices will take priority if installed.</p>\n<p>Updated data as usual.</p>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 2370,
+     "downloads": 2397,
      "size": 121119,
-     "link": "https://forge.sp-tarkov.com/mod/download/2689/item-property-backport/1.3.0",
+     "link": "https://sp-mod.com/mod/download/2689/item-property-backport/1.3.0",
      "published_at": "2026-06-02T07:28:00.000000Z",
      "dependencies": []
     },
@@ -162172,21 +162250,21 @@
      "description": "<p>Add a config option to modify Gunsmith quests to latest values so Skipper is not necessary, enabled by default.</p>\n<p>This also makes an attempt to change the values listed in the quest description by simple replacement, only tested English. Some text may be misleading or confusing depending on value changed like \u201cmust weigh no more than 0 kg,\u201d just ignore that condition.</p>\n<p>Requires the new config file or just the new config value:</p>\n<pre><code>\"UpdateGunsmith\": true\n</code></pre>\n<p>Note: Quest data included at time of upload was written by hand using the Fandom wiki for reference as tarkov.dev quests have not been updated with the April 20th ergo/recoil rebalance.</p>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 776,
+     "downloads": 803,
      "size": 56983,
-     "link": "https://forge.sp-tarkov.com/mod/download/2689/item-property-backport/1.2.0",
+     "link": "https://sp-mod.com/mod/download/2689/item-property-backport/1.2.0",
      "published_at": "2026-05-27T01:44:00.000000Z",
      "dependencies": []
     },
     {
      "id": 13609,
      "version": "1.1.0",
-     "description": "<p>Refactored to support many new properties. See the mod description for a list of all currently known/supported properties.</p>\n<p>The config file has been changed with renamed keys that work largely the same, though excluding specific properties is now a list instead of simple toggles.</p>\n<p>A <code>properties.md</code> file is also now present in the mod folder for offline reference of properties if you wish to exclude them. This is the same list that is in the mod description and also includes short JSON examples for anyone not familiar.</p>\n<p>As the new properties include magazine check time and load/unload modifiers, it now provides all properties from <a target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/2668/attachmentbackport\" rel=\"noreferrer noopener\">AttachmentBackport</a>.</p>\n",
+     "description": "<p>Refactored to support many new properties. See the mod description for a list of all currently known/supported properties.</p>\n<p>The config file has been changed with renamed keys that work largely the same, though excluding specific properties is now a list instead of simple toggles.</p>\n<p>A <code>properties.md</code> file is also now present in the mod folder for offline reference of properties if you wish to exclude them. This is the same list that is in the mod description and also includes short JSON examples for anyone not familiar.</p>\n<p>As the new properties include magazine check time and load/unload modifiers, it now provides all properties from <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2668/attachmentbackport\" rel=\"noreferrer noopener\">AttachmentBackport</a>.</p>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 811,
+     "downloads": 836,
      "size": 52161,
-     "link": "https://forge.sp-tarkov.com/mod/download/2689/item-property-backport/1.1.0",
+     "link": "https://sp-mod.com/mod/download/2689/item-property-backport/1.1.0",
      "published_at": "2026-05-18T00:47:00.000000Z",
      "dependencies": []
     },
@@ -162196,14 +162274,14 @@
      "description": "<p>Includes data from May 8th update.</p>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 691,
+     "downloads": 713,
      "size": 52743,
-     "link": "https://forge.sp-tarkov.com/mod/download/2689/item-property-backport/1.0.0",
+     "link": "https://sp-mod.com/mod/download/2689/item-property-backport/1.0.0",
      "published_at": "2026-05-12T23:51:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.5.0",
+   "latest_version": "1.5.1",
    "spt_constraint": "~4.1.0",
    "all_spt_constraints": [
     "~4.0.0",
@@ -162212,7 +162290,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-05-12T23:50:00.000000Z",
-   "updated_at": "2026-08-03T06:02:26.000000Z",
+   "updated_at": "2026-08-14T01:04:03.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -182980,7 +183058,7 @@
    "description_html": "<p>Volna-R is loaded with a heavy rubber projectile designed to cause severe blunt trauma and temporary incapacitation while having very low armor penetration. It uses T*****\u2019s original 23x75mm Barrikada cartridge model, with the projectile section recolored military green.</p>\n<p>!!IF YOU DECIDE TO REMOVE THE MOD DISCARD ALL AMMUNITION BEFORE REMOVING IT!!</p>\n<h2>Cartridge statistics</h2>\n<ul>\n<li>Damage: 55</li>\n<li>Penetration: 1</li>\n<li>Projectile mass: 9.8 g</li>\n<li>Projectile diameter: 24.2 mm</li>\n<li>Muzzle velocity: 180 m/s</li>\n<li>Projectile count: 1</li>\n<li>No fragmentation</li>\n<li>Very low armor penetration</li>\n</ul>\n<h2>Impact effects</h2>\n<ul>\n<li>Fracture when an arm or leg is struck</li>\n<li>Concussion for 20 seconds</li>\n<li>Pain for 18 seconds</li>\n<li>Tremor for 14 seconds\n-Thorax/stomach hits cause five seconds of asphyxiation</li>\n</ul>\n<h2>Availability</h2>\n<ul>\n<li>Sold by Jaeger at Loyalty Level 1</li>\n<li>Available on the flea market</li>\n<li>Compatible with weapons, magazines, and chambers that accept Barrikada ammunition</li>\n</ul>\n",
    "thumbnail": "https://files.sp-mod.com/mods/NWXJeODSTnEx73wcPDg256dleiBBOIff3NNS1Rmt.png",
    "forge_url": "https://sp-mod.com/mod/2902/23x75mm-volnar-cartridge",
-   "downloads": 1,
+   "downloads": 46,
    "favourites": 0,
    "featured": false,
    "fika": false,
@@ -183014,11 +183092,19 @@
      "description": "<p>The first release for this cartridge</p>\n",
      "spt_constraint": "~4.1",
      "fika": "unknown",
-     "downloads": 1,
+     "downloads": 46,
      "size": 17512,
      "link": "https://sp-mod.com/mod/download/2902/23x75mm-volnar-cartridge/1.0.0",
-     "published_at": "2026-08-12T19:15:03.000000Z",
-     "dependencies": []
+     "published_at": "2026-08-12T19:15:00.000000Z",
+     "dependencies": [
+      {
+       "id": 2911,
+       "name": "Scavs Use Custom Cartridges",
+       "slug": "scavs-use-custom-cartridges",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2911/scavs-use-custom-cartridges"
+      }
+     ]
     }
    ],
    "latest_version": "1.0.0",
@@ -183026,10 +183112,26 @@
    "all_spt_constraints": [
     "~4.1"
    ],
-   "dependencies": [],
-   "all_dependencies": [],
+   "dependencies": [
+    {
+     "id": 2911,
+     "name": "Scavs Use Custom Cartridges",
+     "slug": "scavs-use-custom-cartridges",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/2911/scavs-use-custom-cartridges"
+    }
+   ],
+   "all_dependencies": [
+    {
+     "id": 2911,
+     "name": "Scavs Use Custom Cartridges",
+     "slug": "scavs-use-custom-cartridges",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/2911/scavs-use-custom-cartridges"
+    }
+   ],
    "published_at": "2026-08-12T19:14:00.000000Z",
-   "updated_at": "2026-08-12T19:15:06.000000Z",
+   "updated_at": "2026-08-13T22:19:07.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -183412,8 +183514,8 @@
    "description_html": "<p>It\u2019s the end of the line for major releases of SPT, and since 4.1 will be our forever-version, I\u2019ve decided to give Hideout Cat a forever-home.</p>\n<p>Tarkin was nice enough to allow me to update and publish this mod, and for that I thank him.</p>\n<p>The mod is identical to it\u2019s 3.11 counterpart, with a roaming cat walking around your hideout, making it just feel a hell of a lot more comfortable than it did before.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/fns8qFbEJIWaw6dY8NvHatwS8QOUfA14D7zWPv8l.png",
    "forge_url": "https://sp-mod.com/mod/2908/tarkins-hideout-cat",
-   "downloads": 108,
-   "favourites": 3,
+   "downloads": 248,
+   "favourites": 7,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -183446,19 +183548,31 @@
    ],
    "versions": [
     {
+     "id": 14720,
+     "version": "1.1.1",
+     "description": "<p>This version fixes a bug where the client cannot re-find the player\u2019s camera after exiting and re-entering the hideout</p>\n",
+     "spt_constraint": "~4.1.0",
+     "fika": "compatible",
+     "downloads": 61,
+     "size": 20818452,
+     "link": "https://sp-mod.com/mod/download/2908/tarkins-hideout-cat/1.1.1",
+     "published_at": "2026-08-14T01:19:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 14708,
      "version": "1.1.0",
      "description": "<p>It\u2019s 4.1 time! Who knows, maybe I\u2019ll add more coats later?</p>\n<p>I was just happy to get the client mod working. Referencing back and forth between a 3.11 source and a 4.1 source SUCKED</p>\n",
      "spt_constraint": "~4.1.0",
      "fika": "compatible",
-     "downloads": 108,
+     "downloads": 187,
      "size": 20817791,
      "link": "https://sp-mod.com/mod/download/2908/tarkins-hideout-cat/1.1.0",
      "published_at": "2026-08-13T20:08:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.1.0",
+   "latest_version": "1.1.1",
    "spt_constraint": "~4.1.0",
    "all_spt_constraints": [
     "~4.1.0"
@@ -183466,7 +183580,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-08-13T20:02:00.000000Z",
-   "updated_at": "2026-08-13T20:18:44.000000Z",
+   "updated_at": "2026-08-14T01:21:05.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -183550,6 +183664,285 @@
    "all_dependencies": [],
    "published_at": "2026-08-13T21:14:30.000000Z",
    "updated_at": "2026-08-13T21:16:02.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 2910,
+   "hub_id": null,
+   "guid": "com.bensburnedwaffles.pmcspawntoggle",
+   "name": "PMC Spawn Toggle",
+   "slug": "pmc-spawn-toggle",
+   "teaser": "Adds an F12 option to disable U*** and B*** AI spawns before entering a raid, while keeping Scavs, bosses, Rogues and Raiders active.",
+   "description_html": "<p>PMC Spawn Toggle adds a simple F12 menu option that allows you to disable AI-controlled U*** and B*** spawns before entering a raid.\nWhen enabled, the mod removes both existing PMC waves and the custom PMC waves that SPT normally generates for each raid. Other AI remains unaffected, including regular and sniper Scavs, bosses and their followers, Rogues, Raiders, Cultists, and other special enemies. Your own PMC character is also unaffected.\nThe setting can only be changed outside a raid. Once a raid begins, the option is locked until you return to the main menu, preventing unsafe changes during active gameplay. The selected value is synchronized directly with the SPT server and checked again during raid generation to ensure the correct mode is applied.\nThis mod is useful for players who want Scav-focused raids, quieter exploration, testing environments, survival challenges without AI PMCs, or greater control over SPT\u2019s enemy population without manually editing server configuration files.</p>\n<p>##Features:</p>\n<p>-Enables or disables AI PMC spawning through the F12 menu.\n-Removes both U*** and B*** AI.\n-Preserves Scavs, bosses, followers, Rogues, Raiders and special AI.\n-Prevents SPT\u2019s per-raid PMC generator from adding PMCs back.\n-Locks the option while a raid is active.\n-Restores normal PMC spawning when disabled.</p>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/pScV7bKM2LsKXC7An61H29NFYz80GjGTRsOYIe23.png",
+   "forge_url": "https://sp-mod.com/mod/2910/pmc-spawn-toggle",
+   "downloads": 27,
+   "favourites": 0,
+   "featured": false,
+   "fika": false,
+   "fika_latest": "unknown",
+   "category": {
+    "id": 5,
+    "title": "Bots",
+    "slug": "bots"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 120002,
+     "name": "BensBurnedWaffles",
+     "avatar": "https://files.sp-mod.com/profile-photos/9ujqxi6gQPxJ04LNwEbrd5Nidp0h7iLX5tEjMIYv_256w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/benux33/PMC-Spawn-Toggle",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 14712,
+     "version": "1.0.1",
+     "description": "<p>-Fixed in v1.0.1. The old version missed SPT\u2019s per-raid PMC wave regeneration</p>\n",
+     "spt_constraint": "~4.1",
+     "fika": "unknown",
+     "downloads": 27,
+     "size": 14690,
+     "link": "https://sp-mod.com/mod/download/2910/pmc-spawn-toggle/1.0.1",
+     "published_at": "2026-08-13T22:23:45.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "1.0.1",
+   "spt_constraint": "~4.1",
+   "all_spt_constraints": [
+    "~4.1"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-08-13T22:23:34.000000Z",
+   "updated_at": "2026-08-13T22:24:03.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 2911,
+   "hub_id": null,
+   "guid": "com.bensburnedwaffles.specialcartridgescavs",
+   "name": "Scavs Use Custom Cartridges",
+   "slug": "scavs-use-custom-cartridges",
+   "teaser": "Special Cartridge Scavs automatically gives Scavs compatible custom ammunition and weapons, allowing them to use my installed special cartridges during raids. Includes an optional F12 mode that forces all eligible Scavs to use special ammunition.",
+   "description_html": "<p>!!THIS ONLY WORKS WITH MY AMMO MODS AND IT DOESNT DO ANYTHING BY ITSELF!!</p>\n<p>Scavs use special cartridges integrates my custom ammunition mods into SPT\u2019s Scav loadouts. It scans for installed special cartridges when the server starts and adds the rounds it finds to suitable Scav weapon and ammunition pools.\nDuring normal gameplay, only some Scavs receive special cartridges (The chances are 10% if a scav spawns with a compatible weapon), keeping encounters unpredictable without completely replacing standard ammunition. You may encounter an ordinary Scav in one raid and a much more dangerous\u2014or unusually equipped\u2014Scav in the next.\nThe F12 menu includes an All Scavs Use Special Cartridges option. When enabled before entering a raid, every eligible Scav is given a compatible special cartridge whenever possible. The setting becomes locked after the raid starts and cannot be changed again until you return to the menu, helping prevent loadout errors or crashes during an active raid.\nThe mod can also allow Scavs to spawn with the KS-23 when compatible 23x75mm custom ammunition is detected. If no supported 23x75mm cartridge is installed, the KS-23 is not added to their loadouts, preventing Scavs from receiving an unusable weapon.</p>\n<p>Features:\n-Adds special ammunition to suitable Scav loadouts.\n-Gives special cartridges to only some Scavs during normal mode.\n-Includes an optional F12 mode for forcing special ammunition on all eligible Scavs.\n-Locks the F12 option while a raid is active.\n-Supports appropriate weapons for the detected ammunition.\n-Preserves normal Scav loadouts when forced special-cartridge mode is disabled.</p>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/zDaHDPIsw6Kg8IVOkNRWxSB9JbCwOk8llZfWA1Wr.png",
+   "forge_url": "https://sp-mod.com/mod/2911/scavs-use-custom-cartridges",
+   "downloads": 14,
+   "favourites": 0,
+   "featured": false,
+   "fika": false,
+   "fika_latest": "unknown",
+   "category": {
+    "id": 1,
+    "title": "Tools",
+    "slug": "tools"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 120002,
+     "name": "BensBurnedWaffles",
+     "avatar": "https://files.sp-mod.com/profile-photos/9ujqxi6gQPxJ04LNwEbrd5Nidp0h7iLX5tEjMIYv_256w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/benux33/Scavs-Use-Custom-Cartridges",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 14713,
+     "version": "1.0.2",
+     "description": "<p>-Fixed the F12 setting not reaching the server.\n-Fixed forced mode checking the wrong weapon-caliber field.</p>\n",
+     "spt_constraint": "~4.1",
+     "fika": "unknown",
+     "downloads": 14,
+     "size": 14856,
+     "link": "https://sp-mod.com/mod/download/2911/scavs-use-custom-cartridges/1.0.2",
+     "published_at": "2026-08-13T22:22:00.000000Z",
+     "dependencies": [
+      {
+       "id": 2902,
+       "name": "23x75mm Volna\u2011R Cartridge",
+       "slug": "23x75mm-volnar-cartridge",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2902/23x75mm-volnar-cartridge"
+      },
+      {
+       "id": 2912,
+       "name": "Shock12 12/70 Cartridge",
+       "slug": "shock12-1270-cartridge",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2912/shock12-1270-cartridge"
+      }
+     ]
+    }
+   ],
+   "latest_version": "1.0.2",
+   "spt_constraint": "~4.1",
+   "all_spt_constraints": [
+    "~4.1"
+   ],
+   "dependencies": [
+    {
+     "id": 2902,
+     "name": "23x75mm Volna\u2011R Cartridge",
+     "slug": "23x75mm-volnar-cartridge",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/2902/23x75mm-volnar-cartridge"
+    },
+    {
+     "id": 2912,
+     "name": "Shock12 12/70 Cartridge",
+     "slug": "shock12-1270-cartridge",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/2912/shock12-1270-cartridge"
+    }
+   ],
+   "all_dependencies": [
+    {
+     "id": 2902,
+     "name": "23x75mm Volna\u2011R Cartridge",
+     "slug": "23x75mm-volnar-cartridge",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/2902/23x75mm-volnar-cartridge"
+    },
+    {
+     "id": 2912,
+     "name": "Shock12 12/70 Cartridge",
+     "slug": "shock12-1270-cartridge",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/2912/shock12-1270-cartridge"
+    }
+   ],
+   "published_at": "2026-08-13T22:22:00.000000Z",
+   "updated_at": "2026-08-14T02:12:19.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 2912,
+   "hub_id": null,
+   "guid": "com.bensburnedwaffles.shock12",
+   "name": "Shock12 12/70 Cartridge",
+   "slug": "shock12-1270-cartridge",
+   "teaser": "Adds the fictional 12/70 Shock-12 less-lethal cartridge, delivering intense pain, severe weapon tremors, concussion, stamina damage and a brief panic-induced weapon jam without causing bleeding.",
+   "description_html": "<p>The 12/70 Shock-12 is a fictional less-lethal shotgun cartridge designed to incapacitate targets through overwhelming blunt force instead of penetration or bleeding.\nA successful hit deals 25 direct damage and applies several powerful temporary effects. The target experiences extreme hand tremors that make accurate aiming extremely difficult, prolonged pain, concussion and heavy stamina damage. A brief panic attack also forces the target\u2019s currently equipped weapon to jam, creating an opportunity to retreat, reposition or finish the engagement.\nDespite its strong incapacitating effects, Shock-12 has only 1 penetration power and cannot cause fragmentation, light bleeding or heavy bleeding. It is intended for disabling unarmoured targets and disrupting enemies rather than penetrating protective equipment or inflicting lethal wounds.\nThe cartridge uses a distinctive dark-blue 12-gauge shell, making it easy to identify in inventories, magazines and ammunition containers.\nThe Shock-12 cartridge can be purchased from traders and is also available through the Flea Market.</p>\n<p>Cartridge statistics:\n25 damage\n1 penetration\n0% fragmentation chance\n0% light bleeding chance\n0% heavy bleeding chance\nVery high stamina damage\nExtreme hand tremor for 15 seconds\nPain for 60 seconds\nConcussion for 30 seconds\nPanic-induced weapon jam for 5 seconds\nDark-blue 12/70 shell</p>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/O1yGFDqdG7d3KoxGqW89YMJ5BvHM28WHFwIQqTWw.png",
+   "forge_url": "https://sp-mod.com/mod/2912/shock12-1270-cartridge",
+   "downloads": 14,
+   "favourites": 0,
+   "featured": false,
+   "fika": false,
+   "fika_latest": "unknown",
+   "category": {
+    "id": 13,
+    "title": "Weapons",
+    "slug": "weapons"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 120002,
+     "name": "BensBurnedWaffles",
+     "avatar": "https://files.sp-mod.com/profile-photos/9ujqxi6gQPxJ04LNwEbrd5Nidp0h7iLX5tEjMIYv_256w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/benux33/Shock12-Cartridge",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 14714,
+     "version": "1.0.2",
+     "description": "<p>-Fixed panic attack effect</p>\n",
+     "spt_constraint": "~4.1",
+     "fika": "unknown",
+     "downloads": 14,
+     "size": 16238,
+     "link": "https://sp-mod.com/mod/download/2912/shock12-1270-cartridge/1.0.2",
+     "published_at": "2026-08-13T22:22:14.000000Z",
+     "dependencies": [
+      {
+       "id": 2911,
+       "name": "Scavs Use Custom Cartridges",
+       "slug": "scavs-use-custom-cartridges",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2911/scavs-use-custom-cartridges"
+      }
+     ]
+    }
+   ],
+   "latest_version": "1.0.2",
+   "spt_constraint": "~4.1",
+   "all_spt_constraints": [
+    "~4.1"
+   ],
+   "dependencies": [
+    {
+     "id": 2911,
+     "name": "Scavs Use Custom Cartridges",
+     "slug": "scavs-use-custom-cartridges",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/2911/scavs-use-custom-cartridges"
+    }
+   ],
+   "all_dependencies": [
+    {
+     "id": 2911,
+     "name": "Scavs Use Custom Cartridges",
+     "slug": "scavs-use-custom-cartridges",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/2911/scavs-use-custom-cartridges"
+    }
+   ],
+   "published_at": "2026-08-13T22:22:00.000000Z",
+   "updated_at": "2026-08-13T22:23:18.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
