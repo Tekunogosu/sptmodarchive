@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-08-15T07:02:47Z",
+ "generated_at": "2026-08-15T09:46:20Z",
  "source": "https://sp-mod.com",
  "filter": "all",
- "mod_count": 1865,
+ "mod_count": 1867,
  "categories": [
   {
    "id": 12,
@@ -138962,11 +138962,11 @@
    "name": "ODT's Item Info - SPT 4.0",
    "slug": "odts-item-info-spt-40",
    "teaser": "Massive QOL Item Info mod for SPTarkov",
-   "description_html": "<h1>ODT-ItemInfo</h1>\n<p>Massive QOL Item Info mod for SPTarkov.\nEnglish only (for now).</p>\n<h1>Features:</h1>\n<h2>Rarity Recolor</h2>\n<p>This BETA feature clears and changes background color on EVERY item in the game based on MMO style rarity tier-list with colors that make actual sense.\nTiers are based on trader level you can purchase or barter the item.\nBarters are considered +1 rarity level.\nBanned on flea market items are given highest rarity - overpowered.\nThe tier list:</p>\n<ul>\n<li>Common (grey background, bought with level 1 traders)</li>\n<li>Rare (blue, level 2 trades for currency and level 1 barters)</li>\n<li>Epic (purple, level 3 and level 2 barters)</li>\n<li>Legendary (dim yellow, level 4 and level 3 barters)</li>\n<li>Uber (bright yellow, level 4 barters only)</li>\n<li>UNOBTAINIUM (bright green, super rare spawns, not 100% accurate to actual in-game spawns, especially for keys, but good enough)</li>\n<li>OP (bright red, banned on flea market)</li>\n<li>CUSTOM (dim red, not used by default).</li>\n</ul>\n<p>Works for 95% of items well enough to be very much usable. Can add tier name to Prices Info module. Add custom item rarities in config.\n<img loading=\"lazy\" decoding=\"async\" src=\"https://user-images.githubusercontent.com/33424002/215009820-772c0b0a-3659-4923-8b63-266ce0d05bd5.png\" alt=\"image\" /></p>\n<h2>Mark Valueable Items</h2>\n<p>Marks most valuable items by adding symbols \u2605 and \u2606 to item names and inventory icons based on item per-slot value (configured by thresholds in config) when sold to traders OR fleamarket AVG price.</p>\n<h2>Bullet Stats In Name</h2>\n<p>Adds bullet stats to bullet name (damage / armor penetration). Calculates total damage for buckshot rounds. VERY usefull in raid, because bullet name is shown when check magazine action is used.</p>\n<blockquote>\n<p>5.45x39mm PP gs (44/36)</p>\n</blockquote>\n<h1>Description modules:</h1>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://user-images.githubusercontent.com/33424002/215010036-daafcc4c-760a-4750-91ad-372e3206ee97.png\" alt=\"image\" /></p>\n<h2>Prices Info</h2>\n<p>Basic module that adds prices information to item description, includes avarage flea price and best trader to sell to.</p>\n<blockquote>\n<p>Flea price: 61703\u20bd | Ragman\u2019s valuation: 37386\u20bd</p>\n</blockquote>\n<h2>Barter Info</h2>\n<p>Adds information about how you can buy the item from traders, their levels, price or resources (barter resources short names are used and total sum is based on AVG flea prices)</p>\n<blockquote>\n<p>[T H I C C item case] Bought @ Therapist lv.4 &lt; \u2605Defibrillator \u00d715 + \u2605LEDX \u00d715 + Ibuprofen \u00d715 + \u2605Toothpaste \u00d715 | \u03a3 \u2248 12877545\u20bd</p>\n</blockquote>\n<h2>Production Info</h2>\n<p>If item can be crafted, adds information on resources and total crafting sum per item based on flea prices.</p>\n<blockquote>\n<p>[9x19mm AP 6.3] Crafted \u00d7150 @ Workbench lv.2 &lt; \u2606Hawk \u00d72 + \u2606Pst \u00d7400 | \u03a3 per item \u2248 1686\u20bd</p>\n</blockquote>\n<h2>Crafting Material Info</h2>\n<p>Shows if item is used in crafts along with other materials and profit delta based on flea prices only (this messes up calculation on some crafts that can be done insanely cheap using trader materials or items obtained from other crafts). This is a guideline for crafting profits, not a rule.</p>\n<blockquote>\n<p>[SSD drive] Part \u00d71 &gt; Secure Flash drive \u00d73 @ Intelligence Center lv.2 &lt; \u2026 + \u2605GPX \u00d71 + \u2606GPhone \u00d71 | \u0394 \u2248 16234\u20bd</p>\n</blockquote>\n<h2>Barter Resource Info</h2>\n<p>Shows info if an item can be traded for something with traders along with other resources. Calculates total sum of all resourses (based on flea prices) and delta between buying the final item directly on flea or from trader. Positive delta = profit, negative = don\u2019t bother, buy it directly if you can.</p>\n<blockquote>\n<p>[Ibuprofen painkillers] Traded \u00d715 @ Therapist lv.4 &gt; T H I C C item case &lt; \u2026 + \u2605Defibrillator \u00d715 + \u2605LEDX \u00d715 + \u2605Toothpaste \u00d715 | \u0394 \u2248 -9777545\u20bd</p>\n</blockquote>\n<h2>Quest Info</h2>\n<p>Adds information if the item needs to be handed in for a quest. Marks find in raid quest condition with a checkmark with an option to add this checkmark to an item name.</p>\n<blockquote>\n<p>[CMS surgical kit] Found (\u2714) \u00d72 &gt; Ambulance @ Jaeger</p>\n</blockquote>\n<h2>Hideout Info</h2>\n<p>Shows if item is needed for hideout construcion.</p>\n<blockquote>\n<p>[Secure Flash drive] Need \u00d73 &gt; Intelligence Center lv.2</p>\n</blockquote>\n<h2>Armor Info</h2>\n<p>Adds armor stats for armor level (usefull for Realism mod), effective durability calculation, material quality and per repair degradation.</p>\n<blockquote>\n<p>[BNTI Zhuk-6a body armor] Armor class: 6 | Effective durability: 94 (Max: 75 x Ceramic: 1.3) | Repair degradation: 17% - 22%</p>\n</blockquote>\n<h2>Container Info</h2>\n<p>Adds slot effeciency calculation for rigs, backpacks and containers (number of internal slots / item size)</p>\n<blockquote>\n<p>[WARTECH TV-110 plate carrier rig] Slot effeciency: \u00d71.92 (23/12)</p>\n</blockquote>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://user-images.githubusercontent.com/33424002/215010328-c6fe2241-6e35-4c2c-908f-c59c4b523d32.png\" alt=\"image\" /></p>\n<h2>Headset Info</h2>\n<p>Adds headset actual audio stats with pseudo compression boost calculation. In theory, more compression  and lower ambient volume = better (BSG headset rarity tiering supports this theory), but it seems for me, in practice, it\u2019s not always the case in-game. Higher resonance means harsher sound and boost at filter frequency.</p>\n<blockquote>\n<p>[Peltor ComTac 2 headset] Ambient Volume: -5dB | Compressor: Gain 10dB \u00d7 Treshold -25dB \u2248 \u00d72.5 Boost | Resonance &amp; Filter: 2.47@245Hz | Distortion: 28%</p>\n</blockquote>\n",
+   "description_html": "<h1>ODT-ItemInfo</h1>\n<p>Massive QOL Item Info mod for SPTarkov.\nEnglish only (for now).</p>\n<h1>Features:</h1>\n<h2>Rarity Recolor</h2>\n<p>This BETA feature clears and changes background color on EVERY item in the game based on MMO style rarity tier-list with colors that make actual sense.\nTiers are based on trader level you can purchase or barter the item.\nBarters are considered +1 rarity level.\nBanned on flea market items are given highest rarity - overpowered.\nThe tier list:</p>\n<ul>\n<li>Common (grey background, bought with level 1 traders)</li>\n<li>Rare (blue, level 2 trades for currency and level 1 barters)</li>\n<li>Epic (purple, level 3 and level 2 barters)</li>\n<li>Legendary (dim yellow, level 4 and level 3 barters)</li>\n<li>Uber (bright yellow, level 4 barters only)</li>\n<li>UNOBTAINIUM (bright green, super rare spawns, not 100% accurate to actual in-game spawns, especially for keys, but good enough)</li>\n<li>OP (bright red, banned on flea market)</li>\n<li>CUSTOM (dim red, not used by default).</li>\n</ul>\n<p>Works for 95% of items well enough to be very much usable. Can add tier name to Prices Info module. Add custom item rarities in config.\n<img loading=\"lazy\" decoding=\"async\" src=\"https://user-images.githubusercontent.com/33424002/215009820-772c0b0a-3659-4923-8b63-266ce0d05bd5.png\" alt=\"image\" /></p>\n<h2>Mark Valueable Items</h2>\n<p>Marks most valuable items by adding symbols \u2605 and \u2606 to item names and inventory icons based on item per-slot value (configured by thresholds in config) when sold to traders OR fleamarket AVG price.</p>\n<h2>Bullet Stats In Name</h2>\n<p>Adds bullet stats to bullet name (damage / armor penetration). Calculates total damage for buckshot rounds. VERY usefull in raid, because bullet name is shown when check magazine action is used.</p>\n<blockquote>\n<p>5.45x39mm PP gs (44/36)</p>\n</blockquote>\n<h1>Description modules:</h1>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://user-images.githubusercontent.com/33424002/215010036-daafcc4c-760a-4750-91ad-372e3206ee97.png\" alt=\"image\" /></p>\n<h2>Prices Info</h2>\n<p>Basic module that adds prices information to item description, includes avarage flea price and best trader to sell to.</p>\n<blockquote>\n<p>Flea price: 61703\u20bd | Ragman\u2019s valuation: 37386\u20bd</p>\n</blockquote>\n<h2>Barter Info</h2>\n<p>Adds information about how you can buy the item from traders, their levels, price or resources (barter resources short names are used and total sum is based on AVG flea prices)</p>\n<blockquote>\n<p>[T H I C C item case] Bought @ Therapist lv.4 &lt; \u2605Defibrillator \u00d715 + \u2605LEDX \u00d715 + Ibuprofen \u00d715 + \u2605Toothpaste \u00d715 | \u03a3 \u2248 12877545\u20bd</p>\n</blockquote>\n<h2>Production Info</h2>\n<p>If item can be crafted, adds information on resources and total crafting sum per item based on flea prices.</p>\n<blockquote>\n<p>[9x19mm AP 6.3] Crafted \u00d7150 @ Workbench lv.2 &lt; \u2606Hawk \u00d72 + \u2606Pst \u00d7400 | \u03a3 per item \u2248 1686\u20bd</p>\n</blockquote>\n<h2>Crafting Material Info</h2>\n<p>Shows if item is used in crafts along with other materials and profit delta based on flea prices only (this messes up calculation on some crafts that can be done insanely cheap using trader materials or items obtained from other crafts). This is a guideline for crafting profits, not a rule.</p>\n<blockquote>\n<p>[SSD drive] Part \u00d71 &gt; Secure Flash drive \u00d73 @ Intelligence Center lv.2 &lt; \u2026 + \u2605GPX \u00d71 + \u2606GPhone \u00d71 | \u0394 \u2248 16234\u20bd</p>\n</blockquote>\n<h2>Barter Resource Info</h2>\n<p>Shows info if an item can be traded for something with traders along with other resources. Calculates total sum of all resourses (based on flea prices) and delta between buying the final item directly on flea or from trader. Positive delta = profit, negative = don\u2019t bother, buy it directly if you can.</p>\n<blockquote>\n<p>[Ibuprofen painkillers] Traded \u00d715 @ Therapist lv.4 &gt; T H I C C item case &lt; \u2026 + \u2605Defibrillator \u00d715 + \u2605LEDX \u00d715 + \u2605Toothpaste \u00d715 | \u0394 \u2248 -9777545\u20bd</p>\n</blockquote>\n<h2>Quest Info</h2>\n<p>Adds information if the item needs to be handed in for a quest. Marks find in raid quest condition with a checkmark with an option to add this checkmark to an item name.</p>\n<blockquote>\n<p>[CMS surgical kit] Found (\u2714) \u00d72 &gt; Ambulance @ Jaeger</p>\n</blockquote>\n<h2>Hideout Info</h2>\n<p>Shows if item is needed for hideout construcion.</p>\n<blockquote>\n<p>[Secure Flash drive] Need \u00d73 &gt; Intelligence Center lv.2</p>\n</blockquote>\n<h2>Armor Info</h2>\n<p>Adds armor stats for armor level (usefull for Realism mod), effective durability calculation, material quality and per repair degradation.</p>\n<blockquote>\n<p>[BNTI Zhuk-6a body armor] Armor class: 6 | Effective durability: 94 (Max: 75 x Ceramic: 1.3) | Repair degradation: 17% - 22%</p>\n</blockquote>\n<h2>Container Info</h2>\n<p>Adds slot effeciency calculation for rigs, backpacks and containers (number of internal slots / item size)</p>\n<blockquote>\n<p>[WARTECH TV-110 plate carrier rig] Slot effeciency: \u00d71.92 (23/12)</p>\n</blockquote>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://user-images.githubusercontent.com/33424002/215010328-c6fe2241-6e35-4c2c-908f-c59c4b523d32.png\" alt=\"image\" /></p>\n<h2>Headset Info</h2>\n<p>Adds headset actual audio stats with pseudo compression boost calculation. In theory, more compression  and lower ambient volume = better (B** headset rarity tiering supports this theory), but it seems for me, in practice, it\u2019s not always the case in-game. Higher resonance means harsher sound and boost at filter frequency.</p>\n<blockquote>\n<p>[Peltor ComTac 2 headset] Ambient Volume: -5dB | Compressor: Gain 10dB \u00d7 Treshold -25dB \u2248 \u00d72.5 Boost | Resonance &amp; Filter: 2.47@245Hz | Distortion: 28%</p>\n</blockquote>\n",
    "thumbnail": "https://files.sp-mod.com/mods/h7JeQcfahQUpTPD8Jbvj7SXD78uWgpqYetXpwgOC.png",
    "forge_url": "https://sp-mod.com/mod/2430/odts-item-info-spt-40",
-   "downloads": 44864,
-   "favourites": 61,
+   "downloads": 45118,
+   "favourites": 66,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -138983,7 +138983,7 @@
     {
      "id": 78428,
      "name": "kobethuy",
-     "avatar": "https://files.sp-mod.com/profile-photos/xwnzuK5gF0ndmEIlazGfekomSx7oeNGvTE7UQckP_128w.webp"
+     "avatar": "https://files.sp-mod.com/profile-photos/UVgJBc40uviDBfSUm1MP91ktdwR8Dvm7casIG95Y_128w.webp"
     },
     {
      "id": 5975,
@@ -138999,12 +138999,52 @@
    ],
    "versions": [
     {
+     "id": 14750,
+     "version": "2.0.15",
+     "description": "<h3><strong>Changelogs</strong></h3>\n<ul>\n<li>Update BSG Blacklist</li>\n<li>Added try-catch to <code>GetFleaPrice()</code> to get around <code>BD Dogtag</code> from WTT-Content Backport 1.1.4</li>\n</ul>\n",
+     "spt_constraint": "~4.0.13",
+     "fika": "compatible",
+     "downloads": 29,
+     "size": 42510,
+     "link": "https://sp-mod.com/mod/download/2430/odts-item-info-spt-40/2.0.15",
+     "published_at": "2026-08-15T08:32:00.000000Z",
+     "dependencies": [
+      {
+       "id": 1090,
+       "name": "Color Converter API",
+       "slug": "color-converter-api",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/1090/color-converter-api"
+      }
+     ]
+    },
+    {
+     "id": 14751,
+     "version": "2.0.15",
+     "description": "<h3><strong>Changelogs</strong></h3>\n<ul>\n<li>Update BSG Blacklist</li>\n<li>Added try-catch to <code>GetFleaPrice()</code> to get around <code>BD Dogtag</code> from WTT-Content Backport 1.1.4</li>\n</ul>\n",
+     "spt_constraint": "~4.0.13",
+     "fika": "compatible",
+     "downloads": 0,
+     "size": 42510,
+     "link": "https://sp-mod.com/mod/download/2430/odts-item-info-spt-40/2.0.15",
+     "published_at": "2026-08-15T08:32:00.000000Z",
+     "dependencies": [
+      {
+       "id": 1090,
+       "name": "Color Converter API",
+       "slug": "color-converter-api",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/1090/color-converter-api"
+      }
+     ]
+    },
+    {
      "id": 13155,
      "version": "2.0.14",
      "description": "<h3><strong>Changelogs</strong></h3>\n<ul>\n<li>Further fixes to Ammo Pack price calculation.</li>\n<li>Added custom tier to items that are both Flea-banned and not sold by traders. Those now use <code>Custom2</code> tier (you can change tier name in <code>config/translation.json</code>).</li>\n<li>Updated and refactored <code>BsgBlackList</code> into <code>bsgblacklist.json</code>. It should now in line with Live EFT\u2019s blacklist for the most part.</li>\n<li>Corrected semantic version.</li>\n</ul>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 17150,
+     "downloads": 17346,
      "size": 39545,
      "link": "https://sp-mod.com/mod/download/2430/odts-item-info-spt-40/2.0.14",
      "published_at": "2026-02-24T18:18:00.000000Z",
@@ -139024,7 +139064,7 @@
      "description": "<h3><strong>Changelogs</strong></h3>\n<ul>\n<li>Corrected Ammo Pack <code>itemRarity</code> calculation. It previously used the contained ammo\u2019s rarity, causing misclassification when the pack wasn\u2019t sold by any trader and when <code>fallbackValueBasedRecolor</code> is <code>false</code>.</li>\n<li>Corrected Ammo Pack price, using Ammo <code>price * count</code>.</li>\n</ul>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 325,
+     "downloads": 327,
      "size": 36328,
      "link": "https://sp-mod.com/mod/download/2430/odts-item-info-spt-40/2.0.13",
      "published_at": "2026-02-24T07:01:00.000000Z",
@@ -139044,7 +139084,7 @@
      "description": "<h3><strong>Changelogs</strong></h3>\n<ul>\n<li>Fixed <code>UseBSGStaticBanList</code> option not working. Mods that modify Flea items should work now (Geko\u2019s Progression, etc\u2026).</li>\n</ul>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 735,
+     "downloads": 737,
      "size": 36354,
      "link": "https://sp-mod.com/mod/download/2430/odts-item-info-spt-40/2.0.12",
      "published_at": "2026-02-21T11:24:00.000000Z",
@@ -139064,7 +139104,7 @@
      "description": "<h3><strong>Changelogs</strong></h3>\n<ul>\n<li>Fixed BarterResourceInfo not working</li>\n</ul>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 7293,
+     "downloads": 7295,
      "size": 36351,
      "link": "https://sp-mod.com/mod/download/2430/odts-item-info-spt-40/2.0.11",
      "published_at": "2025-12-26T04:40:00.000000Z",
@@ -139084,7 +139124,7 @@
      "description": "<h3><strong>Changelogs</strong></h3>\n<ul>\n<li>Item names (full name) are colored in descriptions</li>\n</ul>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 516,
+     "downloads": 518,
      "size": 36367,
      "link": "https://sp-mod.com/mod/download/2430/odts-item-info-spt-40/2.0.10",
      "published_at": "2025-12-25T10:48:00.000000Z",
@@ -139104,7 +139144,7 @@
      "description": "<h3><strong>Changelogs</strong></h3>\n<ul>\n<li>Fixed other locales not working</li>\n<li>Fixed Production and Crafting Material Info not working correctly</li>\n<li>Fixed incorrect target barter item name</li>\n</ul>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 1515,
+     "downloads": 1517,
      "size": 36231,
      "link": "https://sp-mod.com/mod/download/2430/odts-item-info-spt-40/2.0.9",
      "published_at": "2025-12-19T20:04:00.000000Z",
@@ -139124,7 +139164,7 @@
      "description": "<p>DOWNLOAD THIS VERSION NOW</p>\n<h3><strong>Changelogs</strong></h3>\n<ul>\n<li>Hotfix for color tag looping in item names</li>\n<li>For those that have inflated profile\u2019s size, go in game and delete dialogs in message.</li>\n</ul>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 2319,
+     "downloads": 2321,
      "size": 45018,
      "link": "https://sp-mod.com/mod/download/2430/odts-item-info-spt-40/2.0.8",
      "published_at": "2025-12-10T04:58:00.000000Z",
@@ -139144,7 +139184,7 @@
      "description": "<h3><strong>Changelogs</strong></h3>\n<ul>\n<li>Added option to enable/disable AddColorToName</li>\n<li>Added a brighter white color to ShortName</li>\n</ul>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 1695,
+     "downloads": 1697,
      "size": 36091,
      "link": "https://sp-mod.com/mod/download/2430/odts-item-info-spt-40/2.0.7",
      "published_at": "2025-12-04T20:11:00.000000Z",
@@ -139164,7 +139204,7 @@
      "description": "<h3><strong>Changelogs</strong></h3>\n<ul>\n<li>Removed Easy Ammo Name module from Forge release as McDewgle (author) will update the mod.</li>\n</ul>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 1297,
+     "downloads": 1299,
      "size": 36104,
      "link": "https://sp-mod.com/mod/download/2430/odts-item-info-spt-40/2.0.6",
      "published_at": "2025-12-02T11:07:00.000000Z",
@@ -139184,7 +139224,7 @@
      "description": "<h3><strong>Changelogs</strong></h3>\n<ul>\n<li>Added trader blacklisting from Rarity Calculation for Trader Mods Compatibility. Add the trader\u2019s ID into config to use.</li>\n</ul>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 1884,
+     "downloads": 1886,
      "size": 46007,
      "link": "https://sp-mod.com/mod/download/2430/odts-item-info-spt-40/2.0.5",
      "published_at": "2025-11-28T18:11:00.000000Z",
@@ -139204,7 +139244,7 @@
      "description": "<h3><strong>Changelogs</strong></h3>\n<ul>\n<li>Fixed Semantic versioning</li>\n<li>Added <code>BulletStatsInName</code> for ammo boxes</li>\n</ul>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 3930,
+     "downloads": 3932,
      "size": 45836,
      "link": "https://sp-mod.com/mod/download/2430/odts-item-info-spt-40/2.0.4",
      "published_at": "2025-11-19T14:08:00.000000Z",
@@ -139224,7 +139264,7 @@
      "description": "<h3><strong>Changelogs</strong></h3>\n<ul>\n<li>Fixed typo in config that caused MarkValuableItems to not work</li>\n</ul>\n",
      "spt_constraint": "4.0.4",
      "fika": "compatible",
-     "downloads": 1343,
+     "downloads": 1345,
      "size": 45783,
      "link": "https://sp-mod.com/mod/download/2430/odts-item-info-spt-40/2.0.3",
      "published_at": "2025-11-17T11:18:00.000000Z",
@@ -139244,7 +139284,7 @@
      "description": "<h3><strong>REQUIRES SPT 4.0.4+</strong></h3>\n<p>ItemInfo\u2019s rarity recolor is not compatible with AIO Trader mod.</p>\n<p>###<strong>Known bugs</strong></p>\n<ul>\n<li>QuestInfo entries are duplicate. Will be fixed in 2.0.3</li>\n</ul>\n<h3><strong>Bugfixes</strong></h3>\n<ul>\n<li>Fixed QuestInfo not working</li>\n<li>Fixed Trader\u2019s valuation not working properly</li>\n<li>Fixed BulletStatsInName not working</li>\n<li>Formatted some strings</li>\n</ul>\n<h3><strong>Installation</strong></h3>\n<ul>\n<li>Drag and drop into SPT installation folder</li>\n</ul>\n",
      "spt_constraint": "4.0.4",
      "fika": "unknown",
-     "downloads": 2622,
+     "downloads": 2624,
      "size": 36977,
      "link": "https://sp-mod.com/mod/download/2430/odts-item-info-spt-40/2.0.2",
      "published_at": "2025-11-10T10:58:00.000000Z",
@@ -139264,7 +139304,7 @@
      "description": "<h3><strong>Hotfix</strong></h3>\n<p>Please download this version ASAP</p>\n<ul>\n<li>Requires SPT 4.0.3</li>\n<li>Fixed nullref from modded items imcompatibility</li>\n<li>Compatible mods:</li>\n</ul>\n<ol>\n<li>Lacy\u2019s PVE Tweaks (addRecipe: true)</li>\n<li>Epic\u2019s AIO</li>\n<li>Arys - SamSwat Fire Support</li>\n<li>Gilded Key Storage</li>\n</ol>\n",
      "spt_constraint": "4.0.3",
      "fika": "unknown",
-     "downloads": 1460,
+     "downloads": 1462,
      "size": 36848,
      "link": "https://sp-mod.com/mod/download/2430/odts-item-info-spt-40/2.0.1",
      "published_at": "2025-11-08T19:03:00.000000Z",
@@ -139284,7 +139324,7 @@
      "description": "<p>Updated for SPT ~4.0.0</p>\n<h3><strong>Changes</strong></h3>\n<ul>\n<li>Fixed old bugs</li>\n<li>Optimize runtime performance</li>\n</ul>\n<h3><strong>Installation</strong></h3>\n<ul>\n<li>Drop the folder into SPT installation folder</li>\n</ul>\n",
      "spt_constraint": "4.0.0",
      "fika": "unknown",
-     "downloads": 780,
+     "downloads": 783,
      "size": 36894,
      "link": "https://sp-mod.com/mod/download/2430/odts-item-info-spt-40/2.0.0",
      "published_at": "2025-11-08T13:18:00.000000Z",
@@ -139299,13 +139339,14 @@
      ]
     }
    ],
-   "latest_version": "2.0.14",
-   "spt_constraint": "~4.0.0",
+   "latest_version": "2.0.15",
+   "spt_constraint": "~4.0.13",
    "all_spt_constraints": [
     "4.0.0",
     "4.0.3",
     "4.0.4",
-    "~4.0.0"
+    "~4.0.0",
+    "~4.0.13"
    ],
    "dependencies": [
     {
@@ -139326,7 +139367,7 @@
     }
    ],
    "published_at": "2025-11-08T13:09:00.000000Z",
-   "updated_at": "2026-07-28T08:06:13.000000Z",
+   "updated_at": "2026-08-15T08:34:04.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -178926,8 +178967,8 @@
    "description_html": "<h2>FieldKit</h2>\n<hr />\n<p>FieldKit is an in-raid toolkit for SPT players who want to fool around, test ideas, or develop mods without wasting time on repetitive setup.</p>\n<p>Mod development can be frustrating when you wait five minutes to load into a raid, spend another ten minutes crossing the map, and then discover that something needs to be changed and tested again. FieldKit is designed to remove as much of that friction as possible by giving you quick access to the tools you need directly inside a raid.</p>\n<h3>Usage</h3>\n<hr />\n<ul>\n<li>Press <code>Insert</code> while in game to open or close the FieldKit gui menu.</li>\n<li>Press <code>F12</code> to open the BepInEx configuration menu, where FieldKit settings\nand hotkeys can also be changed.</li>\n</ul>\n<h3>Features</h3>\n<hr />\n<ul>\n<li>ESP that also works in scopes and magnified optics</li>\n<li>Spawn items through a searchable loot catalog</li>\n<li>Unlock and interact with doors</li>\n<li>Pacify AI</li>\n<li>Access and loot living AI inventories</li>\n<li>Use noclip and other movement controls</li>\n<li>Teleport yourself, entities, and loot</li>\n<li>Modify health, stamina, hydration, energy, and other character values</li>\n<li>Control recoil, sway, ergonomics, fire rate, ammunition, and other weapon behavior</li>\n<li>Enable infinite ammo and adjust weapon restrictions</li>\n<li>Inspect players, AI, loot, and other raid entities</li>\n<li>Use chams, labels, tracers, and visualization tools</li>\n<li>Locate extracts, doors, containers, loot, and entities</li>\n<li>Access weapon and entity diagnostics</li>\n<li>Quickly reach locations and reproduce testing scenarios</li>\n<li>Use additional quality-of-life and debugging utilities</li>\n</ul>\n<h3>Menu</h3>\n<hr />\n<h2><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/wFyj6nSJ/Escape-From-Tarkov-sy0-BQWQ3oa.png\" alt=\"FieldKit GUI\" /></h2>\n<h2><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/84R8yTqL/Escape-From-Tarkov-i-Ow-Za-QG7-Gm.png\" alt=\"FieldKit GU2\" /></h2>\n<p>Whether you are developing a mod, investigating game behavior, setting up test scenarios, or simply experimenting, FieldKit aims to make in-raid testing faster, easier, and far less tedious.</p>\n<h2>Full Feature List</h2>\n<hr />\n<h3>Character \u2014 Player</h3>\n<ul>\n<li>\n<p>Player protection</p>\n<ul>\n<li>God mode</li>\n<li>No fall damage</li>\n<li>Fully restore all body parts</li>\n<li>Remove negative effects</li>\n<li>Health regeneration</li>\n<li>Adjustable visual hit-punch intensity</li>\n</ul>\n</li>\n<li>\n<p>Stamina and survival</p>\n<ul>\n<li>Infinite stamina</li>\n<li>Infinite energy</li>\n<li>Infinite hydration</li>\n<li>Adjustable energy drain</li>\n<li>Adjustable hydration drain</li>\n<li>No weight penalties</li>\n</ul>\n</li>\n<li>\n<p>Movement controls</p>\n<ul>\n<li>Walk-speed multiplier</li>\n<li>Sprint-speed multiplier</li>\n<li>Jump-height multiplier</li>\n<li>Acceleration multiplier</li>\n<li>Vault-speed multiplier</li>\n<li>Stance-transition speed multiplier</li>\n<li>No movement inertia</li>\n<li>Silent movement</li>\n<li>High-speed floor safety</li>\n</ul>\n</li>\n<li>\n<p>Collision-free movement</p>\n<ul>\n<li>Ground-based noclip</li>\n<li>Collision-free flying</li>\n<li>Adjustable flying speed</li>\n<li>Keep the world rendered while noclipping</li>\n<li>Move to the next floor above</li>\n<li>Move to the next floor below</li>\n<li>Configurable floor-navigation hotkeys</li>\n</ul>\n</li>\n<li>\n<p>Searching</p>\n<ul>\n<li>Fast container searching</li>\n<li>Concurrent container searches</li>\n</ul>\n</li>\n</ul>\n<h3>Character \u2014 Weapon</h3>\n<ul>\n<li>\n<p>Ammunition</p>\n<ul>\n<li>Infinite magazine ammunition</li>\n<li>Quick magazine packing and unpacking</li>\n</ul>\n</li>\n<li>\n<p>Weapon handling</p>\n<ul>\n<li>Adjustable recoil</li>\n<li>Adjustable weapon sway</li>\n<li>Ergonomics override</li>\n<li>No weapon-weight penalties</li>\n<li>Adjustable ADS speed</li>\n<li>Adjustable reload and weapon-action speed</li>\n</ul>\n</li>\n<li>\n<p>Weapon reliability</p>\n<ul>\n<li>Disable malfunctions</li>\n<li>Disable overheating</li>\n<li>Disable durability loss</li>\n</ul>\n</li>\n<li>\n<p>Firing controls</p>\n<ul>\n<li>Fire-rate multiplier</li>\n<li>Force full-auto fire</li>\n<li>Adjustable accuracy and spread</li>\n<li>Bullets pass through world objects</li>\n<li>Bullets bypass armor</li>\n<li>Explosions on bullet impact</li>\n</ul>\n</li>\n<li>\n<p>Diagnostics</p>\n<ul>\n<li>Live weapon information</li>\n<li>Magazine and chamber status</li>\n<li>Fire-mode information</li>\n<li>Weapon-stat monitoring</li>\n</ul>\n</li>\n</ul>\n<h3>Entities \u2014 Visuals</h3>\n<ul>\n<li>\n<p>Character ESP</p>\n<ul>\n<li>PMCs</li>\n<li>Scavs</li>\n<li>Bosses and special AI</li>\n<li>Box ESP</li>\n<li>Animated skeleton ESP</li>\n<li>Aim-direction lines</li>\n<li>Name, health, type, and distance labels</li>\n<li>Adjustable maximum distance</li>\n<li>Adjustable line thickness</li>\n<li>Adjustable font and text outline</li>\n</ul>\n</li>\n<li>\n<p>Visibility checking</p>\n<ul>\n<li>Visible and occluded detection</li>\n<li>Separate visible and occluded colors</li>\n<li>Individual PMC colors</li>\n<li>Individual Scav colors</li>\n<li>Individual boss and special-AI colors</li>\n</ul>\n</li>\n<li>\n<p>Extraction ESP</p>\n<ul>\n<li>Display every extraction point</li>\n<li>Separate color for usable extracts</li>\n<li>Separate color for unavailable extracts</li>\n</ul>\n</li>\n<li>\n<p>Character chams</p>\n<ul>\n<li>PMC chams</li>\n<li>Scav chams</li>\n<li>Boss and special-AI chams</li>\n<li>Per-limb visibility checking</li>\n<li>Limb visibility synchronized with skeleton checks</li>\n<li>Separate visible and occluded colors</li>\n<li>Adjustable maximum distance</li>\n<li>Adjustable opacity</li>\n<li>Scope brightness compensation</li>\n</ul>\n</li>\n<li>\n<p>World visuals</p>\n<ul>\n<li>Corpse chams</li>\n<li>Loose-loot chams</li>\n<li>Custom corpse color</li>\n<li>Custom loose-loot color</li>\n<li>Adjustable loot-render distance</li>\n<li>Grass culling</li>\n</ul>\n</li>\n</ul>\n<h3>Entities \u2014 Live Lists</h3>\n<ul>\n<li>\n<p>Live AI list</p>\n<ul>\n<li>Search by name or type</li>\n<li>View AI type and distance</li>\n<li>Teleport yourself to an AI</li>\n<li>Bring an AI to your position</li>\n</ul>\n</li>\n<li>\n<p>Live loose-loot list</p>\n<ul>\n<li>Search by name or template ID</li>\n<li>View item distance</li>\n<li>View item price</li>\n<li>View item template ID</li>\n<li>Teleport yourself to an item</li>\n<li>Bring an item to your position</li>\n</ul>\n</li>\n</ul>\n<h3>Loot</h3>\n<ul>\n<li>\n<p>Item browser</p>\n<ul>\n<li>Search the complete in-game item catalog</li>\n<li>Browse items by category</li>\n<li>Refresh localized item names</li>\n<li>Refresh cached prices</li>\n<li>Select individual items for Loot ESP</li>\n</ul>\n</li>\n<li>\n<p>Item spawning</p>\n<ul>\n<li>Select a quantity</li>\n<li>Spawn items at your feet</li>\n<li>Add items directly to your stash</li>\n<li>Add items directly to your inventory</li>\n<li>Send items through in-game mail</li>\n</ul>\n</li>\n<li>\n<p>Loose-item ESP</p>\n<ul>\n<li>Item boxes</li>\n<li>Item names</li>\n<li>Item distances</li>\n<li>Item prices</li>\n<li>Selected-item highlighting</li>\n<li>Quest-item highlighting</li>\n<li>Adjustable render distance</li>\n<li>Adjustable label size</li>\n</ul>\n</li>\n<li>\n<p>Container ESP</p>\n<ul>\n<li>Display containers containing matching items</li>\n<li>Display matching container contents</li>\n<li>Adjustable scan and render distance</li>\n<li>Adjustable label size</li>\n<li>Custom container color</li>\n</ul>\n</li>\n<li>\n<p>Price filtering</p>\n<ul>\n<li>Minimum price</li>\n<li>Maximum price</li>\n<li>Selected-items-only mode</li>\n<li>Custom price-match color</li>\n</ul>\n</li>\n<li>\n<p>Value visualization</p>\n<ul>\n<li>Value-based color gradient</li>\n<li>Low-value color</li>\n<li>Low-mid-value color</li>\n<li>Mid-value color</li>\n<li>High-mid-value color</li>\n<li>High-value color</li>\n</ul>\n</li>\n<li>\n<p>Proximity grouping</p>\n<ul>\n<li>Group nearby distant items</li>\n<li>Adjustable grouping start distance</li>\n<li>Adjustable group render distance</li>\n<li>Adjustable horizontal radius</li>\n<li>Adjustable vertical separation</li>\n<li>Adjustable group label size</li>\n</ul>\n</li>\n</ul>\n<h3>Other</h3>\n<ul>\n<li>\n<p>AI behavior</p>\n<ul>\n<li>Make all AI friendly</li>\n</ul>\n</li>\n<li>\n<p>Door tools</p>\n<ul>\n<li>Unlock all keyed doors</li>\n<li>Unlock all keycard doors</li>\n<li>Extraction doors remain unchanged</li>\n</ul>\n</li>\n<li>\n<p>Living AI looting</p>\n<ul>\n<li>Loot living AI</li>\n<li>Hold living AI still while looting</li>\n</ul>\n</li>\n<li>\n<p>Vision modes</p>\n<ul>\n<li>Force thermal vision</li>\n<li>Force night vision</li>\n<li>Clean thermal image</li>\n<li>Clean night-vision image</li>\n<li>Adjustable night-vision bloom</li>\n</ul>\n</li>\n<li>\n<p>Face-shield overlay</p>\n<ul>\n<li>Follow equipped face shield</li>\n<li>Force an overlay</li>\n<li>Remove the overlay</li>\n</ul>\n</li>\n<li>\n<p>Diagnostics</p>\n<ul>\n<li>FieldKit performance telemetry</li>\n<li>Live entity inspector</li>\n</ul>\n</li>\n<li>\n<p>Menu customization</p>\n<ul>\n<li>Custom primary color</li>\n<li>Configurable feature hotkeys</li>\n<li>Per-category reset buttons</li>\n</ul>\n</li>\n</ul>\n",
    "thumbnail": "https://files.sp-mod.com/mods/nv12wxkRpOcAE82wWgkeox3i5eTaM9VNlh8BXBpl.png",
    "forge_url": "https://sp-mod.com/mod/2856/fieldkit-dev-toolkit-weapon-control-lootentity-browser-spawning-esp",
-   "downloads": 4161,
-   "favourites": 17,
+   "downloads": 4504,
+   "favourites": 20,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -178944,7 +178985,7 @@
     {
      "id": 118937,
      "name": "Hysocs",
-     "avatar": "https://files.sp-mod.com/profile-photos/nzRNNHJ0dChzp4dd20Hbhv4q1JkTkMiLNAjIdSbJ_256w.webp"
+     "avatar": "https://files.sp-mod.com/profile-photos/2kp7OvMk67Cdf5VvO12p9sOk7mAuqgBAaLv0SQSM_256w.webp"
     }
    ],
    "source_links": [
@@ -178960,7 +179001,7 @@
      "description": "<h3>New Time &amp; Weather Controls</h3>\n<ul>\n<li>Added a new <strong>Time/Weather</strong> tab.</li>\n<li>Change the time of day and time speed during a raid.</li>\n<li>Change clouds, fog, rain, wind, temperature, and pressure.</li>\n<li>Named rain types and a custom rain-intensity option.</li>\n<li>Reset restores the original server-generated conditions.</li>\n</ul>\n<h3>ESP Improvements</h3>\n<ul>\n<li>Fixed ESP appearing in the wrong position when DLSS is enabled.</li>\n<li>Fixed duplicate ESP when using scopes.</li>\n<li>Loot and extraction ESP now render correctly through scopes.</li>\n<li>Added separate scope-culling options for loot and extraction ESP.</li>\n<li>Fixed Loot ESP stretching to center screen at certain viewing angles.</li>\n</ul>\n<h3>Input Improvements</h3>\n<ul>\n<li>Improved menu keybind detection.</li>\n<li>Keybinds should now toggle reliably while moving or holding other keys.</li>\n</ul>\n",
      "spt_constraint": "~4.1.0 ",
      "fika": "unknown",
-     "downloads": 1775,
+     "downloads": 2018,
      "size": 159164,
      "link": "https://sp-mod.com/mod/download/2856/fieldkit-dev-toolkit-weapon-control-lootentity-browser-spawning-esp/1.4.0",
      "published_at": "2026-08-03T20:36:00.000000Z",
@@ -178972,7 +179013,7 @@
      "description": "<ul>\n<li>Attempted to Improved ESP alignment across different resolutions and display setups.</li>\n<li>Fixed 3D ESP boxes drawing lines toward the center of the screen.</li>\n<li>Added a Legacy ESP Projection option under the Other tab.</li>\n<li>General stability improvements.</li>\n</ul>\n",
      "spt_constraint": "~4.1.0",
      "fika": "unknown",
-     "downloads": 183,
+     "downloads": 185,
      "size": 143405,
      "link": "https://sp-mod.com/mod/download/2856/fieldkit-dev-toolkit-weapon-control-lootentity-browser-spawning-esp/1.3.0",
      "published_at": "2026-08-03T16:35:00.000000Z",
@@ -178984,7 +179025,7 @@
      "description": "<ul>\n<li>Updated for 4.1.0, this version wont work on previous versions</li>\n<li>Added ui scale</li>\n<li>Added native eft font</li>\n<li>Fixed spawning items into the players inventory</li>\n<li>Improved chams performance</li>\n</ul>\n",
      "spt_constraint": "~4.1.0 ",
      "fika": "unknown",
-     "downloads": 906,
+     "downloads": 908,
      "size": 142702,
      "link": "https://sp-mod.com/mod/download/2856/fieldkit-dev-toolkit-weapon-control-lootentity-browser-spawning-esp/1.2.0",
      "published_at": "2026-08-01T21:58:00.000000Z",
@@ -178996,7 +179037,7 @@
      "description": "<h2>FieldKit 1.1.0</h2>\n<p>This update adds new tools for managing and spawning AI during a raid.</p>\n<h3>New features</h3>\n<ul>\n<li>Added a better live list of all AI in the raid.\n<ul>\n<li>Temporarily enable or disable individual AI.</li>\n<li>Make individual AI friendly.</li>\n<li>Kill individual AI or all AI at once.</li>\n<li>Spawn AI at the location you are aiming.</li>\n<li>Choose from supported SPT bot types.</li>\n<li>Spawn bots with their AI disabled.</li>\n</ul>\n</li>\n<li>Improved AI inspection so bots stop moving properly.</li>\n<li>Improved ESP classification for PMCs, bosses, and followers.</li>\n<li>Followers now appear as a separate subcategory.</li>\n<li>Added a custom menu cursor for better compatibility with other mods.</li>\n<li>Improved build and installation reliability.</li>\n</ul>\n<h3>Spawning entities</h3>\n<ul>\n<li>Spawned bots use natural SPT-generated equipment and loot.</li>\n<li>Bot assets are cached to make later spawns faster.</li>\n<li>Spawn lists now match the AI types available in your SPT installation.</li>\n<li>SPT PMCs no longer incorrectly appear as runtime bosses.</li>\n</ul>\n",
      "spt_constraint": "4.0.13",
      "fika": "unknown",
-     "downloads": 868,
+     "downloads": 962,
      "size": 140478,
      "link": "https://sp-mod.com/mod/download/2856/fieldkit-dev-toolkit-weapon-control-lootentity-browser-spawning-esp/1.1.0",
      "published_at": "2026-07-30T21:57:00.000000Z",
@@ -179008,7 +179049,7 @@
      "description": "<p>Release</p>\n",
      "spt_constraint": "4.0.13",
      "fika": "unknown",
-     "downloads": 429,
+     "downloads": 431,
      "size": 129918,
      "link": "https://sp-mod.com/mod/download/2856/fieldkit-dev-toolkit-weapon-control-lootentity-browser-spawning-esp/1.0.0",
      "published_at": "2026-07-28T23:02:00.000000Z",
@@ -179025,11 +179066,11 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-07-28T23:23:00.000000Z",
-   "updated_at": "2026-08-04T06:02:32.000000Z",
+   "updated_at": "2026-08-15T08:34:57.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
-    "ai_disclosure": "<p>AI was used as a development aid to inspect decompiled DLLs, identify relevant classes and methods, and assist with portions of the GUI and configuration system. Every feature was individually coded/designed, reviewed, and manually tested in-game to ensure it worked as intended and to the performance standards i hold myself to.</p>\n",
+    "ai_disclosure": "<p>AI was used strictly as an analysis and development-support tool. It assisted with processing ILSpy, ILDasm, and IDA output to map EFT\u2019s assemblies, classes, methods, and internal relationships, allowing me to reverse-engineer and understand the game more efficiently. It was also used for debugging assistance and occasional grammar correction. AI was not used to originate the mod\u2019s feature set, concepts, architecture, or systems. All features and systems were independently conceived, designed, tested, and iterated on by me from the ground up.</p>\n",
     "cheat_notice": true,
     "profile_binding_notice": false
    },
@@ -179173,11 +179214,11 @@
    "guid": "com.hysocs.cinekit",
    "name": "CineKit \u2014 Freecam, Cinematic Camera, Point Path Editor & Follower",
    "slug": "cinekit-freecam-cinematic-camera-point-path-editor-follower",
-   "teaser": "an in-raid cinematic Freecam toolkit for SPT players who want to record videos, create smooth camera movements, plan shots, or explore Tarkov from new perspectives.",
-   "description_html": "<h2>CineKit</h2>\n<hr />\n<p>CineKit is an in-raid cinematic camera toolkit for SPT players who want to record videos, create smooth camera movements, plan shots, or explore Tarkov from new perspectives.</p>\n<p>Ordinary freecam systems can struggle when the camera moves far away from the player or high above the map because EFT continues calculating visibility around the character. CineKit integrates with EFT\u2019s culling, environment, LOD, and vegetation systems so distant and high-altitude shots continue rendering without requiring the player to follow the camera.</p>\n<hr />\n<blockquote>\n<p>[WARNING]\nFreecam keeps distant terrain and objects rendered beyond EFT\u2019s normal culling range, which may reduce performance or cause stuttering. Lower the LOD and render-distance settings if needed. For static world shots, disabling AI can significantly improve performance. During recording, frame simulation can maintain the target output frame rate even when the game runs more slowly.</p>\n</blockquote>\n<hr />\n<div class=\"youtube-lite\" data-video-id=\"aVn0I_zFC1k\" data-embed-url=\"https://www.youtube-nocookie.com/embed/aVn0I_zFC1k?autoplay=1\"><img src=\"https://i.ytimg.com/vi/aVn0I_zFC1k/hqdefault.jpg\" alt=\"YouTube video thumbnail\" loading=\"lazy\" decoding=\"async\" /></div>\n<h3>Usage</h3>\n<hr />\n<p>Press Home while in a raid to open or close the CineKit GUI menu.</p>\n<p>Press F12 to open the BepInEx configuration menu, where CineKit settings and hotkeys can also be changed.</p>\n<h3>Features</h3>\n<hr />\n<p><strong>Freecam</strong></p>\n<ul>\n<li>Detached cinematic camera with smooth movement and rotation</li>\n<li>Adjustable speed, boost speed, and mouse sensitivity</li>\n<li>Optional player control while using the freecam</li>\n<li>Improved distant and high-altitude map rendering</li>\n<li>Integration with EFT\u2019s visibility and culling systems</li>\n</ul>\n<p><strong>Camera Paths</strong></p>\n<ul>\n<li>Create, edit, save, and reuse camera paths</li>\n<li>Smooth B\u00e9zier curves with editable points and tangents</li>\n<li>Per-point speed, acceleration, deceleration, and delays</li>\n<li>Connected, looping, and camera-relative path placement</li>\n<li>In-world path visualization and editing</li>\n</ul>\n<p><strong>Recording</strong></p>\n<ul>\n<li>Record video and game audio through FFmpeg</li>\n<li>Supports capture frame rates above the game\u2019s rendered frame rate</li>\n<li>Adjustable resolution, frame rate, and quality</li>\n</ul>\n<p><strong>Visuals and Controls</strong></p>\n<ul>\n<li>Adjustable antialiasing, grass distance, and object LOD</li>\n<li>Custom crosshair and interface options</li>\n<li>Configurable hotkeys</li>\n</ul>\n<h3>Camera Paths</h3>\n<hr />\n<p>Create camera points from the freecam\u2019s current position and combine them into smooth, cinematic routes.</p>\n<p>Path features include:</p>\n<ul>\n<li>Multiple path groups</li>\n<li>Smooth B\u00e9zier curves</li>\n<li>Editable incoming and outgoing tangents</li>\n<li>Per-point speed, acceleration, deceleration, and delays</li>\n<li>Connected and looping routes</li>\n<li>In-world editing and path visualization</li>\n<li>Reusable saved templates</li>\n</ul>\n<h3>Recording</h3>\n<hr />\n<p>CineKit can record camera-path playback with game audio through FFmpeg.</p>\n<p>Before recording, place <code>ffmpeg.exe</code> in the CineKit plugin folder or add FFmpeg to your system PATH.</p>\n<p>CineKit is designed for cinematic videos, map showcases, planned camera movements, environment exploration, and perspectives that are difficult to achieve with a basic freecam.</p>\n",
+   "teaser": "an in-raid cinematic Freecam toolkit for SPT players who want to record videos, create smooth camera movements, plan shots, or explore T***** from new perspectives.",
+   "description_html": "<h2>CineKit</h2>\n<hr />\n<p>CineKit is an in-raid cinematic camera toolkit for SPT players who want to record videos, create smooth camera movements, plan shots, or explore T***** from new perspectives.</p>\n<p>Ordinary freecam systems can struggle when the camera moves far away from the player or high above the map because EFT continues calculating visibility around the character. CineKit integrates with EFT\u2019s culling, environment, LOD, and vegetation systems so distant and high-altitude shots continue rendering without requiring the player to follow the camera.</p>\n<hr />\n<blockquote>\n<p>[WARNING]\nFreecam keeps distant terrain and objects rendered beyond EFT\u2019s normal culling range, which may reduce performance or cause stuttering. Lower the LOD and render-distance settings if needed. For static world shots, disabling AI can significantly improve performance. During recording, frame simulation can maintain the target output frame rate even when the game runs more slowly.</p>\n</blockquote>\n<hr />\n<div class=\"youtube-lite\" data-video-id=\"aVn0I_zFC1k\" data-embed-url=\"https://www.youtube-nocookie.com/embed/aVn0I_zFC1k?autoplay=1\"><img src=\"https://i.ytimg.com/vi/aVn0I_zFC1k/hqdefault.jpg\" alt=\"YouTube video thumbnail\" loading=\"lazy\" decoding=\"async\" /></div>\n<h3>Usage</h3>\n<hr />\n<p>Press Home while in a raid to open or close the CineKit GUI menu.</p>\n<p>Press F12 to open the BepInEx configuration menu, where CineKit settings and hotkeys can also be changed.</p>\n<h3>Features</h3>\n<hr />\n<p><strong>Freecam</strong></p>\n<ul>\n<li>Detached cinematic camera with smooth movement and rotation</li>\n<li>Adjustable speed, boost speed, and mouse sensitivity</li>\n<li>Optional player control while using the freecam</li>\n<li>Improved distant and high-altitude map rendering</li>\n<li>Integration with EFT\u2019s visibility and culling systems</li>\n</ul>\n<p><strong>Camera Paths</strong></p>\n<ul>\n<li>Create, edit, save, and reuse camera paths</li>\n<li>Smooth B\u00e9zier curves with editable points and tangents</li>\n<li>Per-point speed, acceleration, deceleration, and delays</li>\n<li>Connected, looping, and camera-relative path placement</li>\n<li>In-world path visualization and editing</li>\n</ul>\n<p><strong>Recording</strong></p>\n<ul>\n<li>Record video and game audio through FFmpeg</li>\n<li>Supports capture frame rates above the game\u2019s rendered frame rate</li>\n<li>Adjustable resolution, frame rate, and quality</li>\n</ul>\n<p><strong>Visuals and Controls</strong></p>\n<ul>\n<li>Adjustable antialiasing, grass distance, and object LOD</li>\n<li>Custom crosshair and interface options</li>\n<li>Configurable hotkeys</li>\n</ul>\n<h3>Camera Paths</h3>\n<hr />\n<p>Create camera points from the freecam\u2019s current position and combine them into smooth, cinematic routes.</p>\n<p>Path features include:</p>\n<ul>\n<li>Multiple path groups</li>\n<li>Smooth B\u00e9zier curves</li>\n<li>Editable incoming and outgoing tangents</li>\n<li>Per-point speed, acceleration, deceleration, and delays</li>\n<li>Connected and looping routes</li>\n<li>In-world editing and path visualization</li>\n<li>Reusable saved templates</li>\n</ul>\n<h3>Recording</h3>\n<hr />\n<p>CineKit can record camera-path playback with game audio through FFmpeg.</p>\n<p>Before recording, place <code>ffmpeg.exe</code> in the CineKit plugin folder or add FFmpeg to your system PATH.</p>\n<p>CineKit is designed for cinematic videos, map showcases, planned camera movements, environment exploration, and perspectives that are difficult to achieve with a basic freecam.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/grxtvlSssPpKHUhx6P81Qm7AVR7hNzS9Mh51JdtH.png",
    "forge_url": "https://sp-mod.com/mod/2858/cinekit-freecam-cinematic-camera-point-path-editor-follower",
-   "downloads": 948,
+   "downloads": 988,
    "favourites": 7,
    "featured": false,
    "fika": false,
@@ -179195,7 +179236,7 @@
     {
      "id": 118937,
      "name": "Hysocs",
-     "avatar": "https://files.sp-mod.com/profile-photos/nzRNNHJ0dChzp4dd20Hbhv4q1JkTkMiLNAjIdSbJ_256w.webp"
+     "avatar": "https://files.sp-mod.com/profile-photos/2kp7OvMk67Cdf5VvO12p9sOk7mAuqgBAaLv0SQSM_256w.webp"
     }
    ],
    "source_links": [
@@ -179211,7 +179252,7 @@
      "description": "<ul>\n<li>Added separate freecam FOV controls and wider FOV support.</li>\n<li>Added multiple FOV calculation modes.</li>\n<li>Increased EFT\u2019s normal maximum FOV to 120 while in freecam.</li>\n<li>Reorganized camera and point menus into clearer groups.</li>\n<li>Added freecam and camera-point entity anchoring.</li>\n<li>Added head and chest anchor options.</li>\n<li>Added options to follow an entity\u2019s eyes and eye pitch.</li>\n<li>Improved anchored camera movement and turning.</li>\n<li>Added separate player-control options for:\n<ul>\n<li>Traveling to a point</li>\n<li>Staying at a point</li>\n<li>Traveling to the next point</li>\n</ul>\n</li>\n<li>Added scroll-wheel freecam speed adjustment.</li>\n<li>Improved path preview and point-placement controls.</li>\n</ul>\n",
      "spt_constraint": "~4.1.0 ",
      "fika": "unknown",
-     "downloads": 98,
+     "downloads": 130,
      "size": 56901,
      "link": "https://sp-mod.com/mod/download/2858/cinekit-freecam-cinematic-camera-point-path-editor-follower/1.2.0",
      "published_at": "2026-08-10T04:22:00.000000Z",
@@ -179223,7 +179264,7 @@
      "description": "<p>Updated for 4.1.0, this version wont work on previous versions</p>\n<ul>\n<li>You can now set entities or self as anchor points for point pathing</li>\n<li>Fixed local player model having duplicated limbs</li>\n<li>Improved freecam performance</li>\n</ul>\n",
      "spt_constraint": "~4.1.0 ",
      "fika": "unknown",
-     "downloads": 547,
+     "downloads": 549,
      "size": 53027,
      "link": "https://sp-mod.com/mod/download/2858/cinekit-freecam-cinematic-camera-point-path-editor-follower/1.1.0",
      "published_at": "2026-08-01T21:51:00.000000Z",
@@ -179235,7 +179276,7 @@
      "description": "<p>Release</p>\n",
      "spt_constraint": "4.0.13",
      "fika": "unknown",
-     "downloads": 303,
+     "downloads": 309,
      "size": 47969,
      "link": "https://sp-mod.com/mod/download/2858/cinekit-freecam-cinematic-camera-point-path-editor-follower/1.0.0",
      "published_at": "2026-07-30T02:55:00.000000Z",
@@ -179251,11 +179292,11 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-07-30T02:59:00.000000Z",
-   "updated_at": "2026-08-10T06:02:26.000000Z",
+   "updated_at": "2026-08-15T08:34:41.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
-    "ai_disclosure": "<p>AI was used as a development aid to inspect decompiled DLLs, identify relevant classes and methods, and assist with portions of the GUI and configuration system. Every feature was individually coded/designed, reviewed, and manually tested in-game to ensure it worked as intended and to the performance standards i hold myself to.</p>\n",
+    "ai_disclosure": "<p>AI was used strictly as an analysis and development-support tool. It assisted with processing ILSpy, ILDasm, and IDA output to map EFT\u2019s assemblies, classes, methods, and internal relationships, allowing me to reverse-engineer and understand the game more efficiently. It was also used for debugging assistance and occasional grammar correction. AI was not used to originate the mod\u2019s feature set, concepts, architecture, or systems. All features and systems were independently conceived, designed, tested, and iterated on by me from the ground up.</p>\n",
     "cheat_notice": false,
     "profile_binding_notice": false
    },
@@ -180612,7 +180653,7 @@
    "description_html": "<h1>Adaptive Bot Culling \u2014 AI &amp; Animation Optimizer</h1>\n<hr />\n<p>This mod began with an investigation into SPT\u2019s CPU bottlenecks. Using ILSpy, I decompiled and traced EFT\u2019s more raw managed assemblies, gradually disabling parts of the AI, animation, and asset-processing systems to measure their impact. Removing active bots eliminated most of the CPU bottleneck, which led me to discover that distant and occluded bots continued running their AI brains, bone updates, and body animations at full capacity.</p>\n<blockquote>\n<p>Let me know in the comments the performance gains you get</p>\n</blockquote>\n<p>Adaptive Bot Culling extends EFT\u2019s existing culling system to pause this unnecessary processing when bots are hidden or occluded. This can provide meaningful performance improvements, especially on larger maps where many bots are spread across distant or obstructed areas.</p>\n<blockquote>\n<p><strong>Warning:</strong> These gains come at the cost of some immersion and normal AI behavior. Culled bots may stop roaming, reacting, or fighting other AI until you move close enough for them to become active again.</p>\n</blockquote>\n<blockquote>\n<p>Compatibility Notice: This mod has only been tested with SPT\u2019s default AI. Mods that modify AI behavior may conflict with it or behave unexpectedly.</p>\n</blockquote>\n<blockquote>\n<p>Performance Notice: Results will vary significantly depending on your hardware, map, bot count, and whether your game is CPU-limited. On my CPU-bottlenecked system, performance increased from approximately 40\u201355 FPS to 70\u201390 FPS. Systems limited by the GPU, or situations where most bots remain visible and active, may experience smaller gains or none at all.</p>\n</blockquote>\n<h2>Usage</h2>\n<hr />\n<p>Use the F12 menu to turn it on and off</p>\n<hr />\n<p>Performance gains depend on the situation. The mod provides little or no benefit when every bot is visible or otherwise not being culled. Generally, the larger the map and the more separated its bot population, the greater the potential improvement.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/U69LKHdaWZAKIa1emEfDp71yNMvUI0mNwVFz5CuS.png",
    "forge_url": "https://sp-mod.com/mod/2874/adaptive-bot-culling",
-   "downloads": 2565,
+   "downloads": 2882,
    "favourites": 16,
    "featured": false,
    "fika": false,
@@ -180630,7 +180671,7 @@
     {
      "id": 118937,
      "name": "Hysocs",
-     "avatar": "https://files.sp-mod.com/profile-photos/nzRNNHJ0dChzp4dd20Hbhv4q1JkTkMiLNAjIdSbJ_256w.webp"
+     "avatar": "https://files.sp-mod.com/profile-photos/2kp7OvMk67Cdf5VvO12p9sOk7mAuqgBAaLv0SQSM_256w.webp"
     }
    ],
    "source_links": [
@@ -180646,7 +180687,7 @@
      "description": "<h3>Version 1.1.0</h3>\n<ul>\n<li>Reworked bot detection to use Tarkov\u2019s native <code>Player.IsVisible</code> culling state.</li>\n<li>Removed supplemental visibility raycasts and repeated visibility polling.</li>\n<li>Added a 1.5-second delay before suppressing newly hidden bots to prevent rapid switching.</li>\n<li>Paused looping bot AudioSources while culled and safely resumed them afterward.</li>\n<li>Preserved essential movement and steering updates needed for safe state handling.</li>\n<li>Added safeguards so death poses and corpse creation complete correctly.</li>\n</ul>\n<p>This is for 4.1.0, 4.1.1+, this version wont work on previous versions</p>\n<h3>Adaptive Bot Culling 1.1.0 \u2014 Performance Results</h3>\n<p>Test system: i9-9900K, RTX 3060, 32 GB RAM, Windows 11, SPT 4.1.1.</p>\n<p>Test 1 \u2014 21 bots, 17 culled<br />\nMod disabled: 38.04 FPS<br />\nMod enabled: 61.24 FPS<br />\nGain: +60.99%</p>\n<p>Test 2 \u2014 10 bots, 8 culled<br />\nMod disabled: 61.76 FPS<br />\nMod enabled: 85.13 FPS<br />\nGain: +37.84%</p>\n<p>Test 3 \u2014 10 bots, 10 culled<br />\nMod disabled: 61.47 FPS<br />\nMod enabled: 101.61 FPS<br />\nGain: +65.30%</p>\n<p>Test 4 \u2014 10 bots, 10 culled<br />\nMod disabled: 59.71 FPS<br />\nMod enabled: 84.08 FPS<br />\nGain: +40.81%</p>\n<p>Test 5 \u2014 11 bots, 8 culled<br />\nMod disabled: 53.62 FPS<br />\nMod enabled: 73.29 FPS<br />\nGain: +36.68%</p>\n<p>Test 6 \u2014 53 bots, 42 culled<br />\nMod disabled: 25.97 FPS<br />\nMod enabled: 43.14 FPS<br />\nGain: +66.11%</p>\n<h3>Overall results</h3>\n<p>Average FPS: 50.10 \u2192 74.75 (+49.21%)<br />\nEMA FPS: 45.00 \u2192 67.57 (+50.18%)</p>\n<p>Average 1% low: 35.21 \u2192 50.23 (+42.67%)<br />\nEMA 1% low: 31.58 \u2192 44.95 (+42.30%)</p>\n<p>Performance gains depend on how many bots Tarkov considers culled. Results will vary by raid, location, bot count and visibility.</p>\n",
      "spt_constraint": "~4.1.0 ",
      "fika": "unknown",
-     "downloads": 1965,
+     "downloads": 2278,
      "size": 13897,
      "link": "https://sp-mod.com/mod/download/2874/adaptive-bot-culling/1.1.0",
      "published_at": "2026-08-03T00:51:00.000000Z",
@@ -180658,7 +180699,7 @@
      "description": "<p>Release</p>\n<p>This is for 4.1.0 only, previous versions wont work.\nif the community is slow to update to 4.1.0 i will make a new version backwards compatible</p>\n",
      "spt_constraint": "~4.1.0 ",
      "fika": "unknown",
-     "downloads": 600,
+     "downloads": 604,
      "size": 8924,
      "link": "https://sp-mod.com/mod/download/2874/adaptive-bot-culling/1.0.0",
      "published_at": "2026-08-02T00:10:00.000000Z",
@@ -180673,11 +180714,11 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-08-02T00:15:00.000000Z",
-   "updated_at": "2026-08-03T06:02:26.000000Z",
+   "updated_at": "2026-08-15T08:34:23.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
-    "ai_disclosure": "<p>AI was used as a development aid to inspect decompiled DLLs, identify relevant classes and methods, and assist with portions of the GUI and configuration system. Every feature was individually coded/designed, reviewed, and manually tested in-game to ensure it worked as intended and to the performance standards i hold myself to.</p>\n",
+    "ai_disclosure": "<p>AI was used strictly as an analysis and development-support tool. It assisted with processing ILSpy, ILDasm, and IDA output to map EFT\u2019s assemblies, classes, methods, and internal relationships, allowing me to reverse-engineer and understand the game more efficiently. It was also used for debugging assistance and occasional grammar correction. AI was not used to originate the mod\u2019s feature set, concepts, architecture, or systems. All features and systems were independently conceived, designed, tested, and iterated on by me from the ground up.</p>\n",
     "cheat_notice": false,
     "profile_binding_notice": false
    },
@@ -182052,11 +182093,11 @@
    "name": "Operator Traits",
    "slug": "operator-traits",
    "teaser": "Bring Project Zomboid\u2013style character building to SPT with positive and negative traits based on EFT\u2019s current season, making every profile play differently.",
-   "description_html": "<h1>Operator Traits</h1>\n<p>Operator Traits is a character-building mod for SPT that lets you shape your PMC with a mix of positive and negative traits.</p>\n<p>Choose useful benefits such as improved stamina, slower energy consumption, quieter movement, and stronger bones. Balance them with negative traits that make survival more difficult, including allergies, faster hydration loss, restricted secure-container access, or losing access to the Flea Market.</p>\n<p>Traits are selected from a native Traits tab added directly to Tarkov\u2019s character menu. Your choices are saved per profile and remain active until you pay 50 GP coins to reset them.</p>\n<blockquote>\n<p>Operator Traits is designed to avoid permanent profile changes. If the mod is removed, its traits and gameplay effects will stop applying, and your profile should return to standard SPT behavior. As a precaution, you can backup your profile</p>\n</blockquote>\n<h2>How It Works</h2>\n<p>Positive traits cost points, while negative traits grant points. Take enough negative traits to cover the positive traits you want.</p>\n<p>Once confirmed, your traits are locked to the profile. Resetting costs 50 GP coins and clears all selected traits and generated allergies.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/hxRcPPdZ/EBCA86-BC-CAAA-46-CE-9-E4-E-9-F84-AF76-AA71.png\" alt=\"Operator Traits\" /></p>\n<h2>Positive Traits</h2>\n<ul>\n<li>Street Tax \u2014 Receive a weekly protection payment from local Scavs</li>\n<li>Diet \u2014 Food and drinks consume 50% less resource</li>\n<li>Juice Time \u2014 Drinking juice grants Painkiller for 60 seconds</li>\n<li>Hypodipsia \u2014 Hydration drains 20% slower</li>\n<li>Sailor\u2019s Nostalgia \u2014 Canned fish grants temporary health regeneration</li>\n<li>Sprinter \u2014 Sprint 5% faster</li>\n<li>Polyphagia \u2014 Energy drains 20% slower</li>\n<li>Thrombophilia \u2014 Bleeding chance is reduced by 25%</li>\n<li>Marathon Runner \u2014 Arm and leg stamina drain 20% slower</li>\n<li>Youth \u2014 Gain additional stamina and slower energy drain</li>\n<li>Sturdy Bones \u2014 Reduce fracture chance and falling damage</li>\n<li>Bush Borne \u2014 Vegetation causes less noise and slowdown</li>\n<li>Safecracker \u2014 Mechanical keys have a chance to lose no durability</li>\n</ul>\n<h2>Negative Traits</h2>\n<ul>\n<li>Chronic Fatigue Syndrome \u2014 Energy drains 15% faster</li>\n<li>Third Leg \u2014 Move slightly slower in exchange for cheaper Therapist prices</li>\n<li>Polydipsia \u2014 Hydration drains 20% faster</li>\n<li>Dr. Jekyll \u2014 Fresh Wounds cannot be removed until the raid ends</li>\n<li>Hemophilia \u2014 Bleeding chance is increased by 25%</li>\n<li>Well That Hurt! \u2014 Medkits consume 25% more resources</li>\n<li>Allergic \u2014 Three random provisions or medications become allergens</li>\n<li>Osteoporosis \u2014 Fracture chance and falling damage are increased</li>\n<li>Broken Secure Container \u2014 Restricts which items can enter your secure container</li>\n<li>Exhaustion \u2014 Reduces stamina capacity and recovery</li>\n<li>No Flea Market \u2014 Disables player-to-player Flea Market trading</li>\n</ul>\n<h3>More traits coming soon</h3>\n<ul>\n<li>This is just the start and foundation, i plan to add way more traits in following updates that arent just copies of the current season</li>\n</ul>\n<h3>What\u2019s missing</h3>\n<ul>\n<li>Some seasonal EFT traits are intentionally excluded because they permanently modify profile data and cannot be safely removed through a normal trait reset.</li>\n</ul>\n<h2>[Warning] Allergies!!!</h2>\n<p>Taking Allergic assigns three random food, drink, or medication items as allergens for your profile. Using one during a raid triggers a temporary reaction using Tarkov\u2019s native intoxication, tremor, and tunnel-vision effects. This wont kill you but it will force you to use healing items</p>\n<p>Your allergens remain persistent until the trait is removed or your traits are reset.</p>\n",
+   "description_html": "<h1>Operator Traits</h1>\n<p>Operator Traits is a character-building mod for SPT that lets you shape your PMC with a mix of positive and negative traits.</p>\n<p>Choose useful benefits such as improved stamina, slower energy consumption, quieter movement, and stronger bones. Balance them with negative traits that make survival more difficult, including allergies, faster hydration loss, restricted secure-container access, or losing access to the Flea Market.</p>\n<p>Traits are selected from a native Traits tab added directly to T*****\u2019s character menu. Your choices are saved per profile and remain active until you pay 50 GP coins to reset them.</p>\n<blockquote>\n<p>Operator Traits is designed to avoid permanent profile changes. If the mod is removed, its traits and gameplay effects will stop applying, and your profile should return to standard SPT behavior. As a precaution, you can backup your profile</p>\n</blockquote>\n<h2>How It Works</h2>\n<p>Positive traits cost points, while negative traits grant points. Take enough negative traits to cover the positive traits you want.</p>\n<p>Once confirmed, your traits are locked to the profile. Resetting costs 50 GP coins and clears all selected traits and generated allergies.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/hxRcPPdZ/EBCA86-BC-CAAA-46-CE-9-E4-E-9-F84-AF76-AA71.png\" alt=\"Operator Traits\" /></p>\n<h2>Positive Traits</h2>\n<ul>\n<li>Street Tax \u2014 Receive a weekly protection payment from local Scavs</li>\n<li>Diet \u2014 Food and drinks consume 50% less resource</li>\n<li>Juice Time \u2014 Drinking juice grants Painkiller for 60 seconds</li>\n<li>Hypodipsia \u2014 Hydration drains 20% slower</li>\n<li>Sailor\u2019s Nostalgia \u2014 Canned fish grants temporary health regeneration</li>\n<li>Sprinter \u2014 Sprint 5% faster</li>\n<li>Polyphagia \u2014 Energy drains 20% slower</li>\n<li>Thrombophilia \u2014 Bleeding chance is reduced by 25%</li>\n<li>Marathon Runner \u2014 Arm and leg stamina drain 20% slower</li>\n<li>Youth \u2014 Gain additional stamina and slower energy drain</li>\n<li>Sturdy Bones \u2014 Reduce fracture chance and falling damage</li>\n<li>Bush Borne \u2014 Vegetation causes less noise and slowdown</li>\n<li>Safecracker \u2014 Mechanical keys have a chance to lose no durability</li>\n</ul>\n<h2>Negative Traits</h2>\n<ul>\n<li>Chronic Fatigue Syndrome \u2014 Energy drains 15% faster</li>\n<li>Third Leg \u2014 Move slightly slower in exchange for cheaper Therapist prices</li>\n<li>Polydipsia \u2014 Hydration drains 20% faster</li>\n<li>Dr. Jekyll \u2014 Fresh Wounds cannot be removed until the raid ends</li>\n<li>Hemophilia \u2014 Bleeding chance is increased by 25%</li>\n<li>Well That Hurt! \u2014 Medkits consume 25% more resources</li>\n<li>Allergic \u2014 Three random provisions or medications become allergens</li>\n<li>Osteoporosis \u2014 Fracture chance and falling damage are increased</li>\n<li>Broken Secure Container \u2014 Restricts which items can enter your secure container</li>\n<li>Exhaustion \u2014 Reduces stamina capacity and recovery</li>\n<li>No Flea Market \u2014 Disables player-to-player Flea Market trading</li>\n</ul>\n<h3>More traits coming soon</h3>\n<ul>\n<li>This is just the start and foundation, i plan to add way more traits in following updates that arent just copies of the current season</li>\n</ul>\n<h3>What\u2019s missing</h3>\n<ul>\n<li>Some seasonal EFT traits are intentionally excluded because they permanently modify profile data and cannot be safely removed through a normal trait reset.</li>\n</ul>\n<h2>[Warning] Allergies!!!</h2>\n<p>Taking Allergic assigns three random food, drink, or medication items as allergens for your profile. Using one during a raid triggers a temporary reaction using T*****\u2019s native intoxication, tremor, and tunnel-vision effects. This wont kill you but it will force you to use healing items</p>\n<p>Your allergens remain persistent until the trait is removed or your traits are reset.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/q7U3FFUJnXdkAQyyihqUtEIGjvKjMyWBuexZ0AYK.png",
    "forge_url": "https://sp-mod.com/mod/2886/operator-traits",
-   "downloads": 1584,
-   "favourites": 16,
+   "downloads": 1814,
+   "favourites": 18,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -182073,7 +182114,7 @@
     {
      "id": 118937,
      "name": "Hysocs",
-     "avatar": "https://files.sp-mod.com/profile-photos/nzRNNHJ0dChzp4dd20Hbhv4q1JkTkMiLNAjIdSbJ_256w.webp"
+     "avatar": "https://files.sp-mod.com/profile-photos/2kp7OvMk67Cdf5VvO12p9sOk7mAuqgBAaLv0SQSM_256w.webp"
     }
    ],
    "source_links": [
@@ -182089,7 +182130,7 @@
      "description": "<p>Release</p>\n",
      "spt_constraint": "~4.1.0 ",
      "fika": "unknown",
-     "downloads": 1584,
+     "downloads": 1814,
      "size": 74466,
      "link": "https://sp-mod.com/mod/download/2886/operator-traits/1.0.0",
      "published_at": "2026-08-06T01:42:00.000000Z",
@@ -182104,11 +182145,11 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-08-06T01:30:00.000000Z",
-   "updated_at": "2026-08-06T06:02:14.000000Z",
+   "updated_at": "2026-08-15T08:34:07.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
-    "ai_disclosure": "<p>AI was used as a development aid to inspect decompiled DLLs, identify relevant classes and methods, and assist with portions of the GUI and configuration system. Every feature was individually coded/designed, reviewed, and manually tested in-game to ensure it worked as intended and to the performance standards i hold myself to.</p>\n",
+    "ai_disclosure": "<p>AI was used strictly as an analysis and development-support tool. It assisted with processing ILSpy, ILDasm, and IDA output to map EFT\u2019s assemblies, classes, methods, and internal relationships, allowing me to reverse-engineer and understand the game more efficiently. It was also used for debugging assistance and occasional grammar correction. AI was not used to originate the mod\u2019s feature set, concepts, architecture, or systems. All features and systems were independently conceived, designed, tested, and iterated on by me from the ground up.</p>\n",
     "cheat_notice": false,
     "profile_binding_notice": false
    },
@@ -182691,8 +182732,8 @@
    "description_html": "<h1>TraumaCore</h1>\n<hr />\n<p>TraumaCore is a damage and armor overhaul for SPT that makes shot placement, bleeding, bones, and repeated armor hits more important.</p>\n<blockquote>\n<p><strong>Warning:</strong> TraumaCore makes combat much more lethal. Penetrating hits cause wounds and blood loss instead of normal direct damage, meaning you can win a fight and still bleed out seconds later.</p>\n<p>Stims quickly stop treatable bleeding and reduce new bleed damage by 50% while active. Medical items are now valued by their ability to control bleeding, not just restore health. Heart wounds cannot be treated normally.</p>\n<p>Head-on gunfights can easily leave both sides dead. Using cover, avoiding hits, and ending fights quickly are now essential.</p>\n<p>TraumaCore is my own take on a more hardcore/semi-realistic damage and bleeding system.</p>\n</blockquote>\n<p>Instead of bullets simply removing health from a body part, most damage becomes wounds that drain health over time. The amount of bleeding depends on where the bullet hits and how much damage it causes. Wounds can stack, so surviving a gunfight does not mean you are safe, you may still bleed out without quick treatment.</p>\n<p>Bullets can also strike the brain, heart, spine, and major bones. These hits can cause instant death, permanent heart bleeding, spinal injuries, or broken limbs. Armor penetration and repeated hits are also reworked, making ammunition, armor condition, and shot placement more important.</p>\n<p>The default settings are balanced for PvE. AI and Scavs receive the full system, while players use more forgiving organ settings for a vanilla+ experience. Vital and center-mass shots are highly effective, while limb shots usually take more time or ammunition to become fatal.</p>\n<h2><strong>Features</strong> <em>(Yes, this is the full list\u2013everything else emerges naturally from these systems.)</em></h2>\n<hr />\n<ul>\n<li>Blood-loss-focused damage with stacking, location-dependent wounds</li>\n<li>Hand placed brain, heart, spine, and major limb-bone hitboxes</li>\n<li>Fatal brain and cervical-spine hits</li>\n<li>Permanent, rapidly fatal heart hemorrhage</li>\n<li>Spinal and deterministic limb-bone fractures</li>\n<li>More simplistic armor penetration and localized armor weakening from repeated hits</li>\n<li>Bruising, movement penalties, and reduced stamina recovery from stopped rounds</li>\n<li>Reworked treatment and blood-loss-blocking stim behavior</li>\n<li>Custom Damage transfer through injured and blacked body parts to reduce leg and arm meta</li>\n<li>Custom trauma icons, wound blood effects, corpse bleeding, and bleed-out voices</li>\n<li>Separate configurable balance for players and AI</li>\n</ul>\n<h3>New Hitboxes</h3>\n<hr />\n<ul>\n<li>Brain</li>\n<li>Lower brain</li>\n<li>Cervical spine</li>\n<li>Lower spine</li>\n<li>Heart</li>\n<li>Arm bones</li>\n<li>Leg bones</li>\n</ul>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://i.ibb.co/Gvk4vCQM/35-CF4136-0-EEA-4990-972-D-80-F669923048.png\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/Gvk4vCQM/35-CF4136-0-EEA-4990-972-D-80-F669923048.png\" alt=\"Anatomical hitbox debug view\" /></a></p>\n<p>Brain and cervical-spine hits are fatal. Heart hits cause extremely fast bleeding. Lower-spine hits cause a spinal fracture, while hits to limb bones can fracture the affected arm or leg.</p>\n<p>The hitboxes follow the character\u2019s movement and animations to the limitations of the native bone system. They do not make the entire head or chest count as an organ hit, the bullet must pass through the smaller internal area. this makes for more accurate gunplay but can make it feel more unforgiving as if you miss the brain and hit the face its not a instant kill</p>\n<h3>Wounds and Bleeding</h3>\n<hr />\n<h2><img loading=\"lazy\" decoding=\"async\" src=\"https://media.giphy.com/media/PEmY1wBijtF0fUGcyJ/giphy.gif\" alt=\"TraumaCore gameplay\" /></h2>\n<p>Most bullet damage causes bleeding instead of instant health damage.</p>\n<ul>\n<li>Repeated chest hits cause more bleeding</li>\n<li>Heart wounds cause severe bleeding that cannot be treated</li>\n<li>Bleeding varies by body part</li>\n<li>Normal bleeding slows down over time</li>\n<li>Blacked body parts transfer damage to nearby healthy parts</li>\n<li>Arm shots transfer less damage than stomach or leg shots</li>\n<li>Vital-area shots kill faster than limb shots</li>\n</ul>\n<p>This makes center-mass hits reliable without making every chest shot an instant kill. Limb shots can still be lethal, but generally require more hits or time than vital-area damage.</p>\n<h3>Armor</h3>\n<hr />\n<ul>\n<li>Armor either blocks a shot or lets it penetrate</li>\n<li>Penetration depends on the ammo and the armor\u2019s class, material, condition, and coverage</li>\n<li>Repeated hits to the same area damage the armor up to 5\u00d7 faster</li>\n<li>Blocked shots can cause bruising</li>\n<li>Bruising temporarily reduces movement speed and stamina recovery</li>\n</ul>\n<h3>Hit Feedback</h3>\n<hr />\n<ul>\n<li>Custom icons for bruises, heart wounds, and spinal fractures</li>\n<li>Blood sprays from the wound location</li>\n<li>Recently killed bodies bleed when shot</li>\n<li>Characters make death or agony sounds when bleeding out</li>\n<li>Optional hitbox viewer for testing</li>\n</ul>\n<h2>Default Balance</h2>\n<hr />\n<p>TraumaCore is enabled for players, AI, and scavs by default.</p>\n<p>AI and scavs use the complete organ system. Players begin with brain and lower-spine hitboxes enabled, while player heart and cervical-spine hitboxes are disabled to reduce sudden deaths from AI fire.</p>\n<h2>Usage</h2>\n<hr />\n<p>Press F12 to open the BepInEx Configuration Manager and select <strong>TraumaCore</strong>.</p>\n<p>The menu includes separate controls for player and AI hitboxes, bleeding, damage linkage, armor behavior, blood effects, logging, and effect-testing buttons.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/jmXNvUYj2Mh7dlpoDw8nQLCQS6PEzr9RkKLeLvDH.png",
    "forge_url": "https://sp-mod.com/mod/2893/traumacore",
-   "downloads": 603,
-   "favourites": 7,
+   "downloads": 852,
+   "favourites": 8,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -182725,7 +182766,7 @@
      "description": "<ul>\n<li>Fixed an unnecessary synchronous settings load during startup that could cause CPU spikes.</li>\n</ul>\n",
      "spt_constraint": "~4.1.0 ",
      "fika": "unknown",
-     "downloads": 34,
+     "downloads": 278,
      "size": 52116,
      "link": "https://sp-mod.com/mod/download/2893/traumacore/1.2.0",
      "published_at": "2026-08-13T11:04:00.000000Z",
@@ -182737,7 +182778,7 @@
      "description": "<ul>\n<li>Fixed custom injury effects persisting after raids and preventing affected profiles from loading.</li>\n</ul>\n",
      "spt_constraint": "~4.1.0 ",
      "fika": "unknown",
-     "downloads": 517,
+     "downloads": 522,
      "size": 49171,
      "link": "https://sp-mod.com/mod/download/2893/traumacore/1.1.0",
      "published_at": "2026-08-10T02:24:00.000000Z",
@@ -182752,11 +182793,11 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-08-10T01:25:00.000000Z",
-   "updated_at": "2026-08-13T11:06:05.000000Z",
+   "updated_at": "2026-08-15T08:33:51.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
-    "ai_disclosure": "<p>AI was used as a development aid to inspect decompiled DLLs, identify relevant classes and methods, and assist with portions of the GUI and configuration system. Every feature was individually coded/designed, reviewed, and manually tested in-game to ensure it worked as intended and to the performance standards i hold myself to.</p>\n",
+    "ai_disclosure": "<p>AI was used strictly as an analysis and development-support tool. It assisted with processing ILSpy, ILDasm, and IDA output to map EFT\u2019s assemblies, classes, methods, and internal relationships, allowing me to reverse-engineer and understand the game more efficiently. It was also used for debugging assistance and occasional grammar correction. AI was not used to originate the mod\u2019s feature set, concepts, architecture, or systems. All features and systems were independently conceived, designed, tested, and iterated on by me from the ground up.</p>\n",
     "cheat_notice": false,
     "profile_binding_notice": true
    },
@@ -183635,8 +183676,8 @@
    "description_html": "<h1>Ragdoll Kinetics</h1>\n<hr />\n<blockquote>\n<p>This mod is still considered in development. Some ragdolls, particularly from crouched or unusual animations, may occasionally jitter, spazz out, or behave unpredictably. Expect some random jank for now.</p>\n<p>The current settings are tuned for a Vanilla+ experience. In the next update, I plan to add presets for users who want a different ragdoll feel.</p>\n</blockquote>\n<p>EFTs default ragdolls switch abruptly from animation to loose physics when a character dies. Their final pose, limb movement, balance, and muscle tension are immediately lost, while the fatal shot can apply excessive force. This often results in overly limp collapses, unnatural joint movement, exaggerated launches, and bodies that stop reacting too quickly.</p>\n<p>Ragdoll Kinetics creates a smoother and more believable transition from movement to death. It captures the character\u2019s final pose, individual limb motion, direction, turning, and momentum, then carries them into the fall so moving, crouching, and off-balance characters collapse differently. Anatomically constrained joints reduce unnatural bending, while muscle tone fades gradually instead of disappearing instantly, giving the body weight and structure during the initial collapse.</p>\n<p>Reduced fatal-shot force prevents exaggerated launches while preserving the shot\u2019s physical impact. Random stiff-arm, stiff-leg, and stiff-hip reactions introduce natural variation, with leg reactions accounting for whether the limb is supported by the ground. Corpses also remain physically reactive for a configurable period, allowing impacts, collisions, and the environment to continue affecting them before Eft freezes their physics for performance. The result is heavier, more varied, and more convincing deaths without scripted death animations.</p>\n<p>This mod originally started as a new feature for TraumaCore. While trying to fix a simple ragdoll issue, I ended up reworking the system from the ground up and building an entirely new ragdoll framework. It eventually grew far beyond the scope of TraumaCore, so I split it off and released it as this standalone mod.</p>\n<div class=\"youtube-lite\" data-video-id=\"kJ9c4XKkfqw\" data-embed-url=\"https://www.youtube-nocookie.com/embed/kJ9c4XKkfqw?autoplay=1\"><img src=\"https://i.ytimg.com/vi/kJ9c4XKkfqw/hqdefault.jpg\" alt=\"YouTube video thumbnail\" loading=\"lazy\" decoding=\"async\" /></div>\n<h2><strong>Features</strong></h2>\n<hr />\n<ul>\n<li>Carries final animation and movement into death</li>\n<li>Anatomically constrained joint movement</li>\n<li>Gradual muscle-tone release</li>\n<li>Natural horizontal momentum and turning follow-through</li>\n<li>Random stiff-arm, stiff-leg, and stiff-hip reactions</li>\n<li>Ground-support-aware leg reactions</li>\n<li>Reduced exaggerated fatal-shot impulses</li>\n<li>Corpses remain physically reactive before freezing</li>\n<li>Optional AI hit-aim correction</li>\n<li>Fully configurable through BepInEx if you dont like the default feel</li>\n</ul>\n",
    "thumbnail": "https://files.sp-mod.com/mods/P6PIITVsZP58duQiQJvnGZn5Cm1IFxj1cGh2qjkO.png",
    "forge_url": "https://sp-mod.com/mod/2905/ragdoll-kinetics",
-   "downloads": 669,
-   "favourites": 10,
+   "downloads": 935,
+   "favourites": 12,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -183669,7 +183710,7 @@
      "description": "<ul>\n<li>Rewrote the ragdoll system fully</li>\n</ul>\n",
      "spt_constraint": "~4.1.0 ",
      "fika": "unknown",
-     "downloads": 43,
+     "downloads": 300,
      "size": 45393,
      "link": "https://sp-mod.com/mod/download/2905/ragdoll-kinetics/1.2.0",
      "published_at": "2026-08-14T18:36:00.000000Z",
@@ -183681,7 +183722,7 @@
      "description": "<ul>\n<li>Added three easy-to-use ragdoll presets: <strong>Vanilla+</strong>, <strong>Realistic Settle</strong>, and <strong>Realistic+</strong></li>\n<li>Added separate sliders for starting and ending body stiffness</li>\n<li>Added a slider to control how quickly the body becomes loose</li>\n<li>Added <strong>Linear</strong>, <strong>Slow Start</strong>, and <strong>Slow End</strong> stiffness options</li>\n</ul>\n",
      "spt_constraint": "~4.1.0 ",
      "fika": "unknown",
-     "downloads": 551,
+     "downloads": 556,
      "size": 21402,
      "link": "https://sp-mod.com/mod/download/2905/ragdoll-kinetics/1.1.0",
      "published_at": "2026-08-13T12:41:00.000000Z",
@@ -183693,7 +183734,7 @@
      "description": "<p>Release</p>\n",
      "spt_constraint": "~4.1.0 ",
      "fika": "unknown",
-     "downloads": 75,
+     "downloads": 79,
      "size": 18840,
      "link": "https://sp-mod.com/mod/download/2905/ragdoll-kinetics/1.0.0",
      "published_at": "2026-08-13T11:08:00.000000Z",
@@ -183708,13 +183749,13 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-08-13T10:28:00.000000Z",
-   "updated_at": "2026-08-14T19:08:46.000000Z",
+   "updated_at": "2026-08-15T08:33:34.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
-    "ai_disclosure": "<p>AI was used as a development aid to inspect decompiled DLLs, identify relevant classes and methods. Every feature was individually designed and implemented, then reviewed and manually tested in-game to ensure it functioned as intended and met my performance standards.</p>\n",
+    "ai_disclosure": "<p>AI was used strictly as an analysis and development-support tool. It assisted with processing ILSpy, ILDasm, and IDA output to map EFT\u2019s assemblies, classes, methods, and internal relationships, allowing me to reverse-engineer and understand the game more efficiently. It was also used for debugging assistance and occasional grammar correction. AI was not used to originate the mod\u2019s feature set, concepts, architecture, or systems. All features and systems were independently conceived, designed, tested, and iterated on by me from the ground up.</p>\n",
     "cheat_notice": false,
-    "profile_binding_notice": true
+    "profile_binding_notice": false
    },
    "origin": "forge",
    "delisted": false
@@ -184946,6 +184987,146 @@
     "contains_ads": false,
     "contains_ai_content": true,
     "ai_disclosure": "<p>lowkey all of it, kinda against community standards</p>\n",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 2924,
+   "hub_id": null,
+   "guid": "com.slpf.advstashsorting",
+   "name": "Advanced Stash Sorting",
+   "slug": "advanced-stash-sorting",
+   "teaser": "Adds configurable rules and additional options to the standard stash sorting system.",
+   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Information</div>\n<div class=\"tab-content\"><p>Adds configurable rules and additional options to the standard stash sorting system. All settings are managed through an in-game interface. The configured rules also apply when sorting the contents of containers located in the stash.</p>\n<h4>Features</h4>\n<ul>\n<li>Sort by category, size, stack/resource amount, and rarity.</li>\n<li>Enable, disable, and reorder sorting criteria.</li>\n<li>Reorder categories and subcategories.</li>\n<li>Use an alternative, more compact sorting layout.</li>\n<li>Merge partial item stacks before sorting.</li>\n<li>Fold compatible items before sorting.</li>\n<li>Automatically move items into configured containers.</li>\n<li>Strictly separate items by category.</li>\n</ul>\n<h4>Sorting Settings Menu</h4>\n<ul>\n<li>Right-click the standard Sort button to open the sorting settings menu.</li>\n<li>Drag sorting criteria to change their priority. Click a criterion to enable or disable it. Configured criteria also work with the vanilla sorting layout.</li>\n<li>Drag categories to change their order. Subcategories can be reordered in the same way through their respective submenus.</li>\n<li>Alternative/Compact Layout aims to arrange items more compactly and efficiently. Disabling it restores the vanilla item layout.</li>\n<li>Folding, Stacking, and Nesting are performed before sorting. Nesting uses filters configured through container tag menus.</li>\n<li>Separate Categories places each new category on a new row, leaving unused space in previous rows empty. Subcategories are ignored. This option works only with Alternative Layout enabled.</li>\n<li>If all sorting criteria and modifiers are disabled, sorting remains completely vanilla.</li>\n</ul>\n<h4>Container Filter Menu</h4>\n<p>Nesting automatically moves items into containers according to their configured filters before sorting.\nOpen a container\u2019s tag menu to select which item categories it can receive. Container filter settings are available only for containers located inside the stash.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Screenshots</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/fVfygycG/settings.jpg\" alt=\"Sort settings menu\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/7tNfn2qK/filters.jpg\" alt=\"Container move filter\" /></p></div></div></div>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/kQrkN5xlwCDZN9OEBk5Cw8KUOfinv5fgInFaQYFT.png",
+   "forge_url": "https://sp-mod.com/mod/2924/advanced-stash-sorting",
+   "downloads": 41,
+   "favourites": 1,
+   "featured": false,
+   "fika": false,
+   "fika_latest": "unknown",
+   "category": {
+    "id": 4,
+    "title": "Items",
+    "slug": "items"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 92651,
+     "name": "xvotex",
+     "avatar": "https://ui-avatars.com/api/?name=x&color=7F9CF5&background=EBF4FF"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/slpf/AdvancedStashSorting",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 14749,
+     "version": "1.0.0",
+     "description": "<p>Initial release</p>\n",
+     "spt_constraint": "~4.1.0",
+     "fika": "unknown",
+     "downloads": 41,
+     "size": 95634,
+     "link": "https://sp-mod.com/mod/download/2924/advanced-stash-sorting/1.0.0",
+     "published_at": "2026-08-15T07:27:00.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "1.0.0",
+   "spt_constraint": "~4.1.0",
+   "all_spt_constraints": [
+    "~4.1.0"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-08-15T07:54:00.000000Z",
+   "updated_at": "2026-08-15T07:55:06.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": true,
+    "ai_disclosure": "<ul>\n<li>icon</li>\n<li>base ui layout</li>\n<li>sort order layout logic</li>\n<li>some code review</li>\n</ul>\n",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 2925,
+   "hub_id": null,
+   "guid": "com.username.modname",
+   "name": "Debug Extract Survived",
+   "slug": "debug-extract-survived",
+   "teaser": "Now you can safely evacuate without any worries",
+   "description_html": "<p>-This is a simple module suitable for SPT 4.1.2\n-It allows you to safely and quickly leave the battlefield by binding a shortcut key\n-You can configure it through the F12 module menu</p>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/vX9nzekbPZrTFnPmc8Ry2CMzEGt3yi6YGZvO9drF.jpg",
+   "forge_url": "https://sp-mod.com/mod/2925/debug-extract-survived",
+   "downloads": 12,
+   "favourites": 0,
+   "featured": false,
+   "fika": false,
+   "fika_latest": "unknown",
+   "category": {
+    "id": 1,
+    "title": "Tools",
+    "slug": "tools"
+   },
+   "license": {
+    "name": "Creative Commons BY 3.0",
+    "link": "http://creativecommons.org/licenses/by/3.0/legalcode"
+   },
+   "authors": [
+    {
+     "id": 119536,
+     "name": "Zombie-ghost",
+     "avatar": "https://ui-avatars.com/api/?name=Z&color=7F9CF5&background=EBF4FF"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/Zombie-Ghost/Debug-Extract-Survived-1.0.0/tree/main",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 14752,
+     "version": "1.0.0",
+     "description": "<p>This is a simple module suitable for SPT 4.1.2 It allows you to safely and quickly leave the battlefield by binding a shortcut key You can configure it through the F12 module menu</p>\n",
+     "spt_constraint": "4.1.2",
+     "fika": "unknown",
+     "downloads": 12,
+     "size": 5582,
+     "link": "https://sp-mod.com/mod/download/2925/debug-extract-survived/1.0.0",
+     "published_at": "2026-08-15T09:04:00.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "1.0.0",
+   "spt_constraint": "4.1.2",
+   "all_spt_constraints": [
+    "4.1.2"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-08-15T09:00:00.000000Z",
+   "updated_at": "2026-08-15T09:07:02.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
     "cheat_notice": false,
     "profile_binding_notice": false
    },
