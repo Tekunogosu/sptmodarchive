@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-17T07:27:49Z",
+ "generated_at": "2026-08-17T10:02:29Z",
  "source": "https://sp-mod.com",
  "filter": "all",
  "mod_count": 1876,
@@ -104038,7 +104038,7 @@
    },
    "authors": [
     {
-     "id": 71668,
+     "id": "71668-arch",
      "name": "SashaSwan",
      "avatar": "https://files.sp-mod.com/profile-photos/fe56884cdc4b107235a55bc53a35fc6683e61b45_128w.webp"
     }
@@ -104075,7 +104075,7 @@
     "profile_binding_notice": false
    },
    "origin": "forge",
-   "delisted": false
+   "delisted": true
   },
   {
    "id": 1992,
@@ -180959,11 +180959,11 @@
    "guid": "com.hysocs.adaptivebotculling",
    "name": "Adaptive Bot Culling",
    "slug": "adaptive-bot-culling",
-   "teaser": "Integrates AI brain and animation pausing into EFT\u2019s native asset-culling system, reducing CPU usage when bots are occluded.",
-   "description_html": "<h1>Adaptive Bot Culling - AI &amp; Animation Optimizer</h1>\n<hr />\n<p>This mod began with an investigation into SPT\u2019s CPU bottlenecks. Using ILSpy, I decompiled and traced EFT\u2019s more raw managed assemblies, gradually disabling parts of the AI, animation, and asset-processing systems to measure their impact. Removing active bots eliminated most of the CPU bottleneck, which led me to discover that distant and occluded bots continued running their AI brains, bone updates, and body animations at full capacity.</p>\n<p>Adaptive Bot Culling extends EFT\u2019s existing culling system to pause this unnecessary processing when bots are hidden or occluded. This can provide meaningful performance improvements, especially on larger maps where many bots are spread across distant or obstructed areas.</p>\n<blockquote>\n<p><strong>Warning:</strong> These performance gains come at the cost of immersion and normal AI behavior. Culled bots may stop roaming, reacting, or fighting other AI until they become visible or you move close enough for them to reactivate. This mode is recommended only for heavily CPU-bound systems that need the extra FPS to remain playable. Future updates will introduce less aggressive modes aimed at preserving more normal AI behavior while still improving performance.</p>\n</blockquote>\n<blockquote>\n<p>Compatibility Notice: This mod has only been tested with SPT\u2019s default AI. Mods that modify AI behavior may conflict with it or behave unexpectedly.</p>\n</blockquote>\n<blockquote>\n<p>Performance Notice: Results will vary significantly depending on your hardware, map, bot count, and whether your game is CPU-limited. On my CPU-bottlenecked system, performance increased from approximately 40\u201355 FPS to 70\u201390 FPS. Systems limited by the GPU, or situations where most bots remain visible and active, may experience smaller gains or none at all.</p>\n</blockquote>\n<h2>Usage</h2>\n<hr />\n<p>Use the F12 menu to turn it on and off</p>\n<hr />\n<p>Performance gains depend on the situation. The mod provides little or no benefit when every bot is visible or otherwise not being culled. Generally, the larger the map and the more separated its bot population, the greater the potential improvement.</p>\n",
+   "teaser": "Integrates AI brain and animation pausing into EFT\u2019s native asset-culling and LOD system, reducing CPU usage when bots are far away",
+   "description_html": "<h1>Adaptive Bot Culling - AI &amp; Animation Optimizer</h1>\n<hr />\n<blockquote>\n<p><strong>Warning:</strong> This mod trades some AI behavior for performance. Culled bots may stop roaming, reacting, or fighting until they become active again, and AI-overhaul mods may conflict or behave unexpectedly. Performance depends heavily on how CPU-bound your system is, but gains of roughly <strong>10\u201340%</strong> can be expected in favorable cases. GPU-bound systems or raids where most bots remain active or are all active within 200m may see little improvement.</p>\n</blockquote>\n<hr />\n<p>This mod started as me digging into SPT\u2019s CPU bottlenecks. I used ILSpy to trace EFT\u2019s default managed code and tested different AI, animation, and update systems to see what was actually eating performance. One of the biggest costs I found was the body Animator, which keeps doing work even for bots that are far away or otherwise not important to the player.</p>\n<p>Adaptive Bot Culling gets most of its performance gains by disabling those expensive animation updates while bots are culled, along with some other unnecessary AI processing. Instead of using a basic fixed-distance check, it hooks into EFT\u2019s existing LOD system, so the culling range can adjust with scopes, sights, FOV changes, and the game\u2019s own LOD settings. This means bots can stay active where they actually matter while distant or occluded bots are put to sleep.</p>\n<h2>Usage</h2>\n<hr />\n<p>Use the F12 menu to turn it on and off if needed (or to toggle the debug panel) - default settings are recommended</p>\n<hr />\n<p>Performance gains depend on the situation. The mod provides little or no benefit when every bot is visible or otherwise not being culled. Generally, the larger the map and the more separated its bot population, the greater the potential improvement.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/U69LKHdaWZAKIa1emEfDp71yNMvUI0mNwVFz5CuS.png",
    "forge_url": "https://sp-mod.com/mod/2874/adaptive-bot-culling",
-   "downloads": 3141,
+   "downloads": 3200,
    "favourites": 17,
    "featured": false,
    "fika": false,
@@ -180997,7 +180997,7 @@
      "description": "<ul>\n<li>Reworked AI culling to use <strong>LOD distance checks</strong> instead of <code>IsVisible</code> state.</li>\n<li>Fixed AI being incorrectly disabled simply for moving off-screen.</li>\n<li>Added <strong>scope-aware culling</strong>: aiming extends AI activity only in the direction of the optic</li>\n<li>Did some minor performance and cleanup improvements to audio and culling state handling.</li>\n</ul>\n<blockquote>\n<p>Performance gains are lower than in the previous version, but overall stability has improved significantly. In most cases, I\u2019d estimate around a 19% performance improvement. While i personally get 40% in standalone testing</p>\n</blockquote>\n",
      "spt_constraint": "~4.1.0 ",
      "fika": "unknown",
-     "downloads": 62,
+     "downloads": 121,
      "size": 17448,
      "link": "https://sp-mod.com/mod/download/2874/adaptive-bot-culling/1.2.0",
      "published_at": "2026-08-17T05:50:00.000000Z",
@@ -181036,7 +181036,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-08-02T00:15:00.000000Z",
-   "updated_at": "2026-08-17T06:47:48.000000Z",
+   "updated_at": "2026-08-17T09:40:01.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
