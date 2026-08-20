@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-20T13:16:41Z",
+ "generated_at": "2026-08-20T15:53:12Z",
  "source": "https://sp-mod.com",
  "filter": "all",
  "mod_count": 1881,
@@ -166891,8 +166891,8 @@
    "description_html": "<h2>Overview</h2>\n<p>Vanilla <strong>Linked Search</strong> only searches the flea market. This mod adds <strong>Linked Search in Stash</strong> - a new right-click option that searches your stash for compatible parts instead. The original flea market Linked Search is unchanged.</p>\n<h2>Features</h2>\n<ul>\n<li><strong>New context menu entry</strong> - \u201cLinked Search in Stash\u201d, placed between <em>Linked Search</em> and <em>Needed Search</em>, using the same icon as Linked Search</li>\n<li><strong>Stash-only search</strong> - opens the built-in stash search window with a compatibility filter applied</li>\n<li><strong>Mod / weapon support</strong> - search for attachments from a weapon, or for weapons/rigs that accept a mod</li>\n<li><strong>Bidirectional armor plate support</strong>\n<ul>\n<li>From a <strong>plate carrier</strong> \u2192 find compatible armor plates in your stash</li>\n<li>From an <strong>armor plate</strong> \u2192 find compatible carriers/vests in your stash</li>\n</ul>\n</li>\n<li><strong>Smart filtering</strong> - results are narrowed using:\n<ul>\n<li>A whitelist of relevant item types (mods, magazines, ammo, armor plates)</li>\n<li>Real slot compatibility checks (same logic as installing items), so barter junk is excluded</li>\n</ul>\n</li>\n<li><strong>Raid-aware</strong> - the stash search button is hidden while in raid</li>\n<li><strong>Non-invasive</strong> - does not replace or patch the vanilla Linked Search behavior</li>\n</ul>\n<h2>How to Use</h2>\n<ol>\n<li>Unzip into your SPT folder</li>\n<li>Outside of raid, right-click a compatible item (weapon, mod, plate carrier, armor plate, etc.)</li>\n<li>Select <strong>Linked Search in Stash</strong></li>\n<li>The stash search window opens showing only matching items you own</li>\n</ol>\n<h2>Notes</h2>\n<ul>\n<li>Only shown for compound items (weapons, armor, mods, plate carriers, etc.)</li>\n<li>Hidden on the flea market screen and during raids</li>\n<li>Filters to items in your stash - even if hundreds of templates are theoretically compatible, you only see what you actually have</li>\n</ul>\n",
    "thumbnail": "https://files.sp-mod.com/mods/NZO9yYI0xVs4YASttr7v4r8MxbfDig5c3idSyKfX.png",
    "forge_url": "https://sp-mod.com/mod/2731/linkedsearchinstash",
-   "downloads": 1898,
-   "favourites": 16,
+   "downloads": 2118,
+   "favourites": 18,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -166920,12 +166920,24 @@
    ],
    "versions": [
     {
+     "id": 14859,
+     "version": "2.0.1",
+     "description": "<ul>\n<li>Fixed: with Fika installed, the \u201cLinked Search in Stash\u201d entry showed up in\nthe right-click menu during raids. It stays hidden in raid again, as it\nalways did in single player.</li>\n<li>Fixed: starting a linked search while the stash search window was already\nopen returned your whole stash instead of the compatible items. It now\nfilters correctly no matter whether the window was open beforehand.</li>\n</ul>\n",
+     "spt_constraint": "~4.1.0",
+     "fika": "compatible",
+     "downloads": 36,
+     "size": 6401,
+     "link": "https://sp-mod.com/mod/download/2731/linkedsearchinstash/2.0.1",
+     "published_at": "2026-08-20T13:39:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 14564,
      "version": "2.0.0",
      "description": "<p>Port to SPT 4.1, no functional changes</p>\n",
      "spt_constraint": "~4.1.0",
      "fika": "compatible",
-     "downloads": 410,
+     "downloads": 560,
      "size": 6276,
      "link": "https://sp-mod.com/mod/download/2731/linkedsearchinstash/2.0.0",
      "published_at": "2026-08-08T17:13:00.000000Z",
@@ -166937,14 +166949,14 @@
      "description": "<p>Initial Release</p>\n",
      "spt_constraint": "~4.0.4",
      "fika": "compatible",
-     "downloads": 1488,
+     "downloads": 1522,
      "size": 6462,
      "link": "https://sp-mod.com/mod/download/2731/linkedsearchinstash/1.0.0",
      "published_at": "2026-06-10T18:29:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "2.0.0",
+   "latest_version": "2.0.1",
    "spt_constraint": "~4.1.0",
    "all_spt_constraints": [
     "~4.0.4",
@@ -166953,7 +166965,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-06-10T19:03:00.000000Z",
-   "updated_at": "2026-08-14T12:32:31.000000Z",
+   "updated_at": "2026-08-20T13:41:06.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
@@ -181939,10 +181951,10 @@
    "name": "WebOverlay",
    "slug": "weboverlay",
    "teaser": "Lets mods show HTML panels and click-through HUDs over the game",
-   "description_html": "<h1>Anvil-WebOverlay</h1>\n<p>A shared library that lets BepInEx mods show <strong>web pages in windows over Escape from Tushonka</strong> - interactive panels, and fully click-through transparent HUDs - written in plain HTML instead of an immediate-mode toolkit.</p>\n<p><strong>For players:</strong> you only need this installed when another mod lists it as a dependency. Extract the zip over your SPT folder, done. One installation serves every mod that uses it - a single shared browser, not one per mod.</p>\n<p><strong>For modders:</strong> reference <code>Anvil-WebOverlay.dll</code>, and a UI is this:</p>\n<pre><code>var overlay = WebOverlays.Create(\"My panel\");\nif (overlay == null) return;                   // known-unavailable: fall back\noverlay.Failed += () =&gt; { ... };               // async failure: dispose + fall back\noverlay.MessageReceived += text =&gt; { ... };    // page -&gt; mod\noverlay.LoadHtml(\"&lt;h1&gt;Hello&lt;/h1&gt;\");            // or Navigate(url)\noverlay.Post(\"live value\");                    // mod -&gt; page\n</code></pre>\n<h2>Features</h2>\n<ul>\n<li><strong>Panels</strong>: movable, resizable windows with a dark game-toned title bar (or frameless), closable by keys you choose.</li>\n<li><strong>Transparent HUDs</strong>: pixels your page does not paint show the game; the window ignores mouse and keyboard entirely, so the game stays fully playable.</li>\n<li><strong>Opacity</strong>: fade the whole window; combine with the HUD for a faded HUD.</li>\n<li><strong>Two-way messaging</strong> between page and mod, plus <code>ExecuteScript</code>, inline HTML without any web server, and optional DevTools while building a page.</li>\n<li><strong>A real browser engine</strong>: WebGL2 works, so Three.js scenes can run inside a HUD - the demo includes a 3D compass cube coupled to the player camera.</li>\n<li><strong>Safe by default</strong>: navigation is locked to origins the mod itself asked for, popups are suppressed, permission prompts denied, password saving and autofill disabled.</li>\n<li><strong>One shared browser</strong> for all mods, on its own thread - nothing blocks the game, and failures report through a <code>Failed</code> event instead of crashing anything.</li>\n</ul>\n<h2>Requirements</h2>\n<ul>\n<li>Microsoft WebView2 runtime - current Windows 10/11 installations already include it.</li>\n<li>Borderless windowed or windowed mode. Exclusive fullscreen cannot show a window over the game.</li>\n</ul>\n<h2>Demo</h2>\n<p>The optional demo plugin shows the modes in game: <strong>F10</strong> an interactive panel, <strong>F11</strong> a transparent click-through glass HUD with live values, <strong>F8</strong> an interactive glass panel with working buttons, <strong>F7</strong> a Three.js WebGL compass cube that follows the player camera. Source included - it is the reference for how to use the library.</p>\n<p>Full API documentation and the technical write-up (why raw COM vtables, why a chroma key) are in the README on GitHub.</p>\n<h2>About the name</h2>\n<p>Anvil is the library branding of <strong>maschine</strong> (the author of CraftQueue and other mods): shared infrastructure gets a neutral name that other mods can depend on without carrying one modder\u2019s personal tag. Same author, same source account, same support.</p>\n<h2>License</h2>\n<p>MIT. <code>WebView2Loader.dll</code> is part of the Microsoft WebView2 SDK, redistributed under BSD 3-Clause; the WebView2 runtime itself is not redistributed.</p>\n<h2>Demo</h2>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/maschine34675/WebOverlay/blob/main/assets/demo.gif?raw=true\" alt=\"example\" /></p>\n",
+   "description_html": "<h1>Anvil-WebOverlay</h1>\n<p>A shared library that lets BepInEx mods show <strong>web pages in windows over Escape From Tushonka</strong> - interactive panels, and fully click-through transparent HUDs - written in plain HTML instead of an immediate-mode toolkit.</p>\n<p><strong>For players:</strong> you only need this installed when another mod lists it as a dependency. Extract the zip over your SPT folder, done. One installation serves every mod that uses it - a single shared browser, not one per mod.</p>\n<p><strong>For modders:</strong> reference <code>Anvil-WebOverlay.dll</code>, and a UI is this:</p>\n<pre><code>var overlay = WebOverlays.Create(\"My panel\");\nif (overlay == null) return;                   // known-unavailable: fall back\noverlay.Failed += () =&gt; { ... };               // async failure: dispose + fall back\noverlay.MessageReceived += text =&gt; { ... };    // page -&gt; mod\noverlay.LoadHtml(\"&lt;h1&gt;Hello&lt;/h1&gt;\");            // or Navigate(url)\noverlay.Post(\"live value\");                    // mod -&gt; page\n</code></pre>\n<h2>Features</h2>\n<ul>\n<li><strong>Panels</strong>: movable, resizable windows with a dark game-toned title bar (or frameless), closable by keys you choose.</li>\n<li><strong>Transparent HUDs</strong>: pixels your page does not paint show the game, with true per-pixel alpha on Windows 8+ - and by default the window ignores mouse and keyboard entirely, so the game stays fully playable.</li>\n<li><strong>Clickable glass</strong>: a HUD can take mouse input instead, and can be cut down to the rectangles it actually draws in, so it covers the screen while the game stays clickable around it.</li>\n<li><strong>Opacity</strong>: fade the whole window; combine with the HUD for a faded HUD.</li>\n<li><strong>Two-way messaging</strong> between page and mod: plain strings, or named channels where either side can ask the other a question and await the answer. Plus <code>ExecuteScript</code> with its result, inline HTML without any web server, and optional DevTools while building a page.</li>\n<li><strong>Pages with real files</strong>: a mod can serve its own folder under its own host name, so scripts, fonts and images load normally and the page gets working browser storage.</li>\n<li><strong>A real browser engine</strong>: WebGL2 works, so Three.js scenes can run inside a HUD - the demo includes a 3D compass cube coupled to the player camera.</li>\n<li><strong>Safe by default</strong>: navigation is locked to origins the mod itself asked for, popups are suppressed, permission prompts denied, password saving and autofill disabled.</li>\n<li><strong>One shared browser</strong> for all mods, on its own thread - nothing blocks the game, and failures report through a <code>Failed</code> event instead of crashing anything.</li>\n</ul>\n<h2>Requirements</h2>\n<ul>\n<li>Microsoft WebView2 runtime - current Windows 10/11 installations already include it.</li>\n<li>Borderless windowed or windowed mode. Exclusive fullscreen cannot show a window over the game.</li>\n</ul>\n<h2>Demo</h2>\n<p>The optional demo plugin shows the modes in game: <strong>F10</strong> an interactive panel that reads a value back out of its page, <strong>F11</strong> a transparent click-through glass HUD with live values, <strong>F8</strong> an interactive glass panel whose buttons talk to the game over named channels and ask it for the current frame rate, <strong>F7</strong> a Three.js WebGL compass cube that follows the player camera. Source included - it is the reference for how to use the library.</p>\n<p>Full API documentation and the technical write-up (why raw COM vtables, why a composed visual instead of a child window) are in the README on GitHub.</p>\n<h2>About the name</h2>\n<p>Anvil is the library branding of <strong>maschine</strong> (the author of CraftQueue and other mods): shared infrastructure gets a neutral name that other mods can depend on without carrying one modder\u2019s personal tag. Same author, same source account, same support.</p>\n<h2>License</h2>\n<p>MIT. <code>WebView2Loader.dll</code> is part of the Microsoft WebView2 SDK, redistributed under BSD 3-Clause; the WebView2 runtime itself is not redistributed.</p>\n<h2>Demo</h2>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/maschine34675/WebOverlay/blob/main/assets/demo.gif?raw=true\" alt=\"example\" /></p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/km76RfiQDmlPoFjuOjMwaS4ZTe5u8NZDDOz8OAlp.png",
    "forge_url": "https://sp-mod.com/mod/2879/weboverlay",
-   "downloads": 1407,
+   "downloads": 1437,
    "favourites": 12,
    "featured": false,
    "fika": true,
@@ -181976,12 +181988,24 @@
    ],
    "versions": [
     {
-     "id": 14701,
-     "version": "1.3.0",
-     "description": "<p>NOTE: WebOverlay works with <strong>any</strong> version of SPT, including 4.0.x and 4.1.x</p>\n<h3>1.3.0</h3>\n<ul>\n<li>Demo: F7 shows a Three.js WebGL compass cube coupled to the player camera - overlays run full WebGL2, so 3D HUDs are possible. The library itself is unchanged.</li>\n</ul>\n<h3>1.2.0</h3>\n<ul>\n<li>HUDs are now composition hosted (Windows 8+, 2021+ WebView2): true per-pixel alpha - rgba() glass, soft shadows and clean antialiasing blend with the game. Older systems keep the chroma-key fallback.</li>\n<li>New Interactive option: a transparent HUD can receive mouse input - HTML buttons, hovers and wheel scrolling work while the game keeps the keyboard.</li>\n<li>Demo: F11 shows the glass HUD, F8 an interactive glass panel.</li>\n</ul>\n",
+     "id": 14856,
+     "version": "1.6.0",
+     "description": "<p>NOTE: WebOverlay works with <strong>any</strong> version of SPT, including 4.0.x and 4.1.x</p>\n<h4>Covers v1.4.0 to v1.6.0:</h4>\n<p>Nothing changes for players - this release is for the mods that use the library.</p>\n<ul>\n<li>Pages can be built like ordinary web apps: a mod can serve its own folder as <a target=\"_blank\" class=\"external-link\" href=\"https://yourmod.assets/\" rel=\"noreferrer noopener\">https://yourmod.assets/</a>, so scripts, fonts and images load normally and the page gets working storage.</li>\n<li>Named channels with request/reply: page and mod can ask each other a question and await the answer, instead of every mod inventing its own convention. A question is always answered, so neither side can leave the other hanging.</li>\n<li>A mod can read values back out of its page, and gets events for \u201cmy page is live\u201d and for real visibility changes, plus the option to receive everything on the game\u2019s main thread.</li>\n<li>Interactive HUDs can be cut down to the rectangles they actually use, so a HUD can cover the screen while the game stays clickable everywhere else; windows can also be moved and resized at runtime.</li>\n</ul>\n",
      "spt_constraint": "^4.0.0",
      "fika": "compatible",
-     "downloads": 396,
+     "downloads": 26,
+     "size": 133121,
+     "link": "https://sp-mod.com/mod/download/2879/weboverlay/1.6.0",
+     "published_at": "2026-08-20T13:57:00.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 14701,
+     "version": "1.3.0",
+     "description": "<h3>1.3.0</h3>\n<ul>\n<li>Demo: F7 shows a Three.js WebGL compass cube coupled to the player camera - overlays run full WebGL2, so 3D HUDs are possible. The library itself is unchanged.</li>\n</ul>\n<h3>1.2.0</h3>\n<ul>\n<li>HUDs are now composition hosted (Windows 8+, 2021+ WebView2): true per-pixel alpha - rgba() glass, soft shadows and clean antialiasing blend with the game. Older systems keep the chroma-key fallback.</li>\n<li>New Interactive option: a transparent HUD can receive mouse input - HTML buttons, hovers and wheel scrolling work while the game keeps the keyboard.</li>\n<li>Demo: F11 shows the glass HUD, F8 an interactive glass panel.</li>\n</ul>\n",
+     "spt_constraint": "^4.0.0",
+     "fika": "compatible",
+     "downloads": 400,
      "size": 118259,
      "link": "https://sp-mod.com/mod/download/2879/weboverlay/1.3.0",
      "published_at": "2026-08-13T08:47:00.000000Z",
@@ -182012,7 +182036,7 @@
      "dependencies": []
     }
    ],
-   "latest_version": "1.3.0",
+   "latest_version": "1.6.0",
    "spt_constraint": "^4.0.0",
    "all_spt_constraints": [
     "^4.0.0"
@@ -182020,7 +182044,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-08-02T13:23:00.000000Z",
-   "updated_at": "2026-08-20T12:11:13.000000Z",
+   "updated_at": "2026-08-20T14:04:06.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
@@ -187067,11 +187091,11 @@
    "name": "Tushonka Territories",
    "slug": "tushonka-territories",
    "teaser": "Adds territory warfare to the land of Tushonka where factions fight each other for control over each map.",
-   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Overview</div>\n<div class=\"tab-content\"><p>Tushonka Territories adds faction warfare and a dynamically changing world map. PMC relations remain unchanged and may continue infighting. But now Raiders, Rogues and Scavs will vie for control over Tushonka and can even ally with the player as they attempt to cover the map in their team colors.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/FHAVdQ9.png\" alt=\"ttmap\" /></p>\n<hr />\n<h3>List Of Features</h3>\n<ul>\n<li>Factions</li>\n<li>Simulated battles</li>\n<li>Reputation system</li>\n<li>Player can affect the outcome</li>\n<li>Full customization</li>\n</ul>\n<hr />\n<h3>Detailed Overview</h3>\n<h4>FACTIONS</h4>\n<p>Scavs (dark green), Rogues (light green) and Raiders (orange) are the default factions included with this mod but they can be swapped out in the config. From the outset, each faction will attack the player on sight with a few exceptions; Rogues will not attack United States Evil Corporation characters and Scavs will not attack player Scavs. Factions will not attack their own members.</p>\n<p>Factions will also bring their side\u2019s boss into the raid with them for added support. Tagilla and Killa for the Scavs, Kolontay for Raiders and the Goons for Rogues.</p>\n<p>With this mod installed you will see Scavs, Rogues and Raiders spawning on maps they normally wouldn\u2019t. Should not cause issues with spawn mods like ABPS other than overriding the spawn settings of those three specific bot types and their bosses. Once dead, they will not respawn.</p>\n<h4>SIMULATED BATTLES</h4>\n<p>After the player exfiltrates from a raid, calculations are run on the backend to decide the outcome of the faction battle that took place. A hidden value called \u201cfaction strength\u201d determines the final winner of each battle. Put simply, each bot killed costs that faction some of their strength. Each boss killed costs them even more. A territory may require more than one battle to flip it\u2019s control to a different faction.</p>\n<p>By default, the mod will simulate several battles after each raid. But this can be changed in the config to simulate battles (X) amount of minutes. This timed setting only functions while the game is running.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/AvwpwU1.gif\" alt=\"ttexample\" /></p>\n<h4>REPUTATION SYSTEM</h4>\n<p>It\u2019s possible to get on friendly terms with a faction to the point where they will not attack you and may even come to your aid if you are attacked. But getting there will be difficult. Avoid killing their members while only attacking their enemies. You\u2019ll have to choose your fights carefully as it may take several raids to get on their good side. Best to just avoid running into your preferred faction whenever possible until you\u2019re certain that you\u2019re not on their shit list anymore.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/92JKLLx.jpeg\" alt=\"nicebigpipe\" /></p>\n<h4>PLAYER AFFECTED OUTCOMES</h4>\n<p>Each bot that dies in raid affects the outcome of the battle. Bosses weaken a faction the most so target them whenever possible if you wish to truly take out the faction. Help your preferred faction conquer the entire map!</p>\n<p>Right now conquering the map will only make raids easier but check the <code>PROJECT GOALS</code> tab for planned features!</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Incompatible/Recommended Mods</div>\n<div class=\"tab-content\"><p><strong>Recommended</strong><br />\n<a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement\" rel=\"noreferrer noopener\">SAIN</a> (once its released)<br />\nAny mod to make bots move around</p>\n<p><strong>Compatible</strong><br />\n<a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1594/apbs-acids-progressive-bot-system\" rel=\"noreferrer noopener\">APBS</a></p>\n<p><strong>Untested</strong><br />\nAny bot adding and spawning mods</p>\n<p><strong>Incompatible</strong><br />\n<a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2097/abps-acids-bot-placement-system\" rel=\"noreferrer noopener\">ABPS</a> - From brief tests it <em>works</em> but there\u2019s too much conflicting functionality to mark it compatible. Use if you will with caution.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Installation &amp; Quick Start</div>\n<div class=\"tab-content\"><ol>\n<li>Download the latest TushonkaTerritories zip</li>\n<li>Extract the SPT and BepInEx folder from it into your SPT folder (the one with the folders SPT_Runtime and BepinEx in it)</li>\n<li>Start the server</li>\n<li>Edit the config, comments and guides in the included example</li>\n<li>Restart the server</li>\n<li>Run a few raids so the factions start fighting</li>\n<li>Have fun</li>\n</ol></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Configuration</div>\n<div class=\"tab-content\"><p>To configure Tushonka Territories, enter the Config folder in the server (SPT_Runtime/user/mods) install and if you ran the server there is a file called config.jsonc. A file comes included with the mod, configExample.jsonc which includes comments for what each value does.</p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Modding</div>\n<div class=\"tab-content\"><p>You can mod the data of the mod by adding data_override.json to the Data folder. The mod will load this json file instead and won\u2019t be overridden by updates.</p>\n<p>This allows you to completely change the factions, which bots belong to which factions, and the default state of the map.</p>\n<p>Modding the data file comes with zero safeguards so mod carefully and ask questions if needed in my mods-development thread.</p>\n<p>I tried to make the mods data easily editable but there might be some things such as location names which had to be unfortunately hard coded. I will write in anything if needed to the official mod to support other modders.</p></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Known Issues</div>\n<div class=\"tab-content\"><ul>\n<li>Some bot types will shoot you if you get close even as allies.</li>\n<li>There\u2019s a hitch when opening up the map screen. This only happens when the territory map is updated.</li>\n<li>Interval simulated battles might not appear on the client without leaving and re-entering the map multiple times.</li>\n<li>Extending your raid time by a large number will cause ram to spike. Decrease it to normal ranges until a cap is added next update.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Project Goals</div>\n<div class=\"tab-content\"><ul>\n<li>Reputation screen</li>\n<li>More advanced battle simulation calculations for smarter factions.</li>\n<li>A companion mod that includes more bots and factions to make the map more interesting.</li>\n<li>Trader faction connections.</li>\n<li>Secret faction functionality.</li>\n<li>Boss kills deal more strength damage.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-8\" class=\"tab-panel\"><div class=\"tab-title\">Special Thanks</div>\n<div class=\"tab-content\"><p><strong>Acidphantasm</strong> - For paving the way with their bot spawning knowledge, especially for ABPS which I referenced greatly.<br />\n<strong>SPT Team</strong> - For making 4.1 which has made modding way easier.<br />\n<strong>BorisTheBrave</strong> - For making <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/BorisTheBrave/voronator-sharp\" rel=\"noreferrer noopener\">Voronator-Sharp</a> so I don\u2019t have to learn and write an complex algorithm.</p>\n<p><em><strong>And and extra special thanks to:</strong></em><br />\n<strong>Mcdewgle</strong> - For writing a better description for the mod.</p>\n<p>Without all of you, this wouldn\u2019t be possible</p></div></div></div>\n",
+   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Overview</div>\n<div class=\"tab-content\"><p>Tushonka Territories adds faction warfare and a dynamically changing world map. PMC relations remain unchanged and may continue infighting. But now Raiders, Rogues and Scavs will vie for control over Tushonka and can even ally with the player as they attempt to cover the map in their team colors.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/FHAVdQ9.png\" alt=\"ttmap\" /></p>\n<hr />\n<h3>List Of Features</h3>\n<ul>\n<li>Factions</li>\n<li>Simulated battles</li>\n<li>Reputation system</li>\n<li>Player can affect the outcome</li>\n<li>Full customization</li>\n</ul>\n<hr />\n<h3>Detailed Overview</h3>\n<h4>FACTIONS</h4>\n<p>Scavs (dark green), Rogues (light green) and Raiders (orange) are the default factions included with this mod but they can be swapped out in the config. From the outset, each faction will attack the player on sight with a few exceptions; Rogues will not attack United States Evil Corporation characters and Scavs will not attack player Scavs. Factions will not attack their own members.</p>\n<p>Factions will also bring their side\u2019s boss into the raid with them for added support. Tagilla and Killa for the Scavs, Kolontay for Raiders and the Goons for Rogues.</p>\n<p>With this mod installed you will see Scavs, Rogues and Raiders spawning on maps they normally wouldn\u2019t. Should not cause issues with spawn mods like ABPS other than overriding the spawn settings of those three specific bot types and their bosses. Once dead, they will not respawn.</p>\n<h4>SIMULATED BATTLES</h4>\n<p>After the player exfiltrates from a raid, calculations are run on the backend to decide the outcome of the faction battle that took place. A hidden value called \u201cfaction strength\u201d determines the final winner of each battle. Put simply, each bot killed costs that faction some of their strength. Each boss killed costs them even more. A territory may require more than one battle to flip it\u2019s control to a different faction.</p>\n<p>By default, the mod will simulate several battles after each raid. But this can be changed in the config to simulate battles (X) amount of minutes. This timed setting only functions while the game is running.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/AvwpwU1.gif\" alt=\"ttexample\" /></p>\n<h4>REPUTATION SYSTEM</h4>\n<p>It\u2019s possible to get on friendly terms with a faction to the point where they will not attack you and may even come to your aid if you are attacked. But getting there will be difficult. Avoid killing their members while only attacking their enemies. You\u2019ll have to choose your fights carefully as it may take several raids to get on their good side. Best to just avoid running into your preferred faction whenever possible until you\u2019re certain that you\u2019re not on their shit list anymore.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/92JKLLx.jpeg\" alt=\"nicebigpipe\" /></p>\n<h4>PLAYER AFFECTED OUTCOMES</h4>\n<p>Each bot that dies in raid affects the outcome of the battle. Bosses weaken a faction the most so target them whenever possible if you wish to truly take out the faction. Help your preferred faction conquer the entire map!</p>\n<p>Right now conquering the map will only make raids easier but check the <code>PROJECT GOALS</code> tab for planned features!</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Incompatible/Recommended Mods</div>\n<div class=\"tab-content\"><p><strong>Recommended</strong><br />\n<a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement\" rel=\"noreferrer noopener\">SAIN</a> (once its released)<br />\nAny mod to make bots move around</p>\n<p><strong>Compatible</strong><br />\n<a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1594/apbs-acids-progressive-bot-system\" rel=\"noreferrer noopener\">APBS</a></p>\n<p><strong>Untested</strong><br />\nAny bot adding and spawning mods</p>\n<p><strong>Incompatible</strong><br />\n<a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2097/abps-acids-bot-placement-system\" rel=\"noreferrer noopener\">ABPS</a> - From brief tests it <em>works</em> but there\u2019s too much conflicting functionality to mark it compatible. Use if you will with caution.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Installation &amp; Quick Start</div>\n<div class=\"tab-content\"><ol>\n<li>Download the latest TushonkaTerritories zip</li>\n<li>Extract the SPT and BepInEx folder from it into your SPT folder (the one with the folders SPT_Runtime and BepinEx in it)</li>\n<li>Start the server</li>\n<li>Edit the config, comments and guides in the included example</li>\n<li>Restart the server</li>\n<li>Run a few raids so the factions start fighting</li>\n<li>Have fun</li>\n</ol></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Configuration</div>\n<div class=\"tab-content\"><p>To configure Tushonka Territories, enter the Config folder in the server (SPT_Runtime/user/mods) install and if you ran the server there is a file called config.jsonc. A file comes included with the mod, configExample.jsonc which includes comments for what each value does.</p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Modding</div>\n<div class=\"tab-content\"><p>You can mod the data of the mod by adding data_override.json to the Data folder. The mod will load this json file instead and won\u2019t be overridden by updates.</p>\n<p>This allows you to completely change the factions, which bots belong to which factions, and the default state of the map. The only exception is the none faction which must be present at all times but any of its details are free to be changed.</p>\n<p>Modding the data file comes with zero safeguards so mod carefully and ask questions if needed in my mods-development thread.</p>\n<p>I tried to make the mods data easily editable but there might be some things such as location names which had to be unfortunately hard coded. I will write in anything if needed to the official mod to support other modders.</p></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Known Issues</div>\n<div class=\"tab-content\"><ul>\n<li>Some bot types will shoot you if you get close even as allies.</li>\n<li>There\u2019s a hitch when opening up the map screen. This only happens when the territory map is updated.</li>\n<li>Interval simulated battles might not appear on the client without leaving and re-entering the map multiple times.</li>\n<li>Extending your raid time by a large number will cause ram to spike. Decrease it to normal ranges until a cap is added next update.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Project Goals</div>\n<div class=\"tab-content\"><ul>\n<li>Reputation screen</li>\n<li>More advanced battle simulation calculations for smarter factions.</li>\n<li>A companion mod that includes more bots and factions to make the map more interesting.</li>\n<li>Trader faction connections.</li>\n<li>Secret faction functionality.</li>\n<li>Boss kills deal more strength damage.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-8\" class=\"tab-panel\"><div class=\"tab-title\">Special Thanks</div>\n<div class=\"tab-content\"><p><strong>Acidphantasm</strong> - For paving the way with their bot spawning knowledge, especially for ABPS which I referenced greatly.<br />\n<strong>SPT Team</strong> - For making 4.1 which has made modding way easier.<br />\n<strong>BorisTheBrave</strong> - For making <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/BorisTheBrave/voronator-sharp\" rel=\"noreferrer noopener\">Voronator-Sharp</a> so I don\u2019t have to learn and write an complex algorithm.</p>\n<p><em><strong>And and extra special thanks to:</strong></em><br />\n<strong>Mcdewgle</strong> - For writing a better description for the mod.</p>\n<p>Without all of you, this wouldn\u2019t be possible</p></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/W9mUCfsXleBft1bjBIirZljxI5IczjSnAoNwTD7c.png",
    "forge_url": "https://sp-mod.com/mod/2942/tushonka-territories",
-   "downloads": 225,
-   "favourites": 4,
+   "downloads": 350,
+   "favourites": 7,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -187099,12 +187123,24 @@
    ],
    "versions": [
     {
+     "id": 14860,
+     "version": "1.0.3",
+     "description": "<p>Fixed issue where using a profile created during a game session would cause bots to spawn without bodies.<br />\nAdded max wave cap configuration to avoid massive ram usage with extending raid times.</p>\n",
+     "spt_constraint": "~4.1.2",
+     "fika": "unknown",
+     "downloads": 13,
+     "size": 380844,
+     "link": "https://sp-mod.com/mod/download/2942/tushonka-territories/1.0.3",
+     "published_at": "2026-08-20T15:11:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 14844,
      "version": "1.0.2",
      "description": "<p>Massively nerfed default bot spawn configuration for a more performance lite experience.</p>\n",
      "spt_constraint": "~4.1.2",
      "fika": "unknown",
-     "downloads": 43,
+     "downloads": 152,
      "size": 380191,
      "link": "https://sp-mod.com/mod/download/2942/tushonka-territories/1.0.2",
      "published_at": "2026-08-19T19:33:00.000000Z",
@@ -187128,14 +187164,14 @@
      "description": "<p>Initial release</p>\n",
      "spt_constraint": "~4.1.2",
      "fika": "unknown",
-     "downloads": 159,
+     "downloads": 162,
      "size": 379535,
      "link": "https://sp-mod.com/mod/download/2942/tushonka-territories/1.0.0",
      "published_at": "2026-08-19T05:08:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.0.2",
+   "latest_version": "1.0.3",
    "spt_constraint": "~4.1.2",
    "all_spt_constraints": [
     "~4.1.2"
@@ -187143,7 +187179,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-08-19T05:12:00.000000Z",
-   "updated_at": "2026-08-19T21:33:34.000000Z",
+   "updated_at": "2026-08-20T15:12:04.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
