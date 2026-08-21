@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-08-21T09:56:10Z",
+ "generated_at": "2026-08-21T13:16:17Z",
  "source": "https://sp-mod.com",
  "filter": "all",
- "mod_count": 1882,
+ "mod_count": 1883,
  "categories": [
   {
    "id": 12,
@@ -143789,8 +143789,8 @@
    "description_html": "<p>Restores the old number of uses of medicine, namely:</p>\n<ol>\n<li>CMS surgical kit (3 -&gt; 5).</li>\n<li>Surv12 field surgical kit (9 -&gt; 15).</li>\n<li>Ibuprofen painkillers (8 -&gt; 15).</li>\n<li>Vaseline balm (3 -&gt; 6).</li>\n<li>Golden Star balm (5 -&gt; 10).</li>\n<li>Aluminum splint (3 -&gt; 5).</li>\n</ol>\n",
    "thumbnail": "https://files.sp-mod.com/mods/iNMuN3lUCDWZ8j6EuLu1Nl0wVjZSLCkb9Wy0SE6T.jpg",
    "forge_url": "https://sp-mod.com/mod/2475/restore-the-old-number-of-medical-uses",
-   "downloads": 8134,
-   "favourites": 17,
+   "downloads": 8240,
+   "favourites": 16,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -143818,27 +143818,40 @@
    ],
    "versions": [
     {
+     "id": 14886,
+     "version": "1.1.0",
+     "description": "<p>Updated to 4.1.3</p>\n",
+     "spt_constraint": "~4.1",
+     "fika": "unknown",
+     "downloads": 21,
+     "size": 6376,
+     "link": "https://sp-mod.com/mod/download/2475/restore-the-old-number-of-medical-uses/1.1.0",
+     "published_at": "2026-08-21T12:12:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 12467,
      "version": "1.0.0",
      "description": "<p>Version 1.0.0 for SPT 4.0</p>\n",
      "spt_constraint": "~4.0.0",
      "fika": "unknown",
-     "downloads": 8134,
+     "downloads": 8219,
      "size": 5755,
      "link": "https://sp-mod.com/mod/download/2475/restore-the-old-number-of-medical-uses/1.0.0",
      "published_at": "2025-11-28T11:43:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.0.0",
-   "spt_constraint": "~4.0.0",
+   "latest_version": "1.1.0",
+   "spt_constraint": "~4.1",
    "all_spt_constraints": [
-    "~4.0.0"
+    "~4.0.0",
+    "~4.1"
    ],
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2025-11-28T11:32:00.000000Z",
-   "updated_at": "2026-07-28T06:58:26.000000Z",
+   "updated_at": "2026-08-21T12:13:04.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -183758,11 +183771,11 @@
    "name": "TraumaCore",
    "slug": "traumacore",
    "teaser": "TraumaCore is a damage and armor overhaul for SPT that makes shot placement, bleeding, bones, and repeated armor hits more important. by adding more hitboxes and changing how damage works",
-   "description_html": "<h1>TraumaCore</h1>\n<hr />\n<p>TraumaCore is a damage and armor overhaul for SPT that makes shot placement, bleeding, bones, and repeated armor hits more important.</p>\n<blockquote>\n<p><strong>Warning:</strong> TraumaCore makes combat much more lethal. Penetrating hits cause wounds and blood loss instead of normal direct damage, meaning you can win a fight and still bleed out seconds later.</p>\n<p>Stims quickly stop treatable bleeding and reduce new bleed damage by 50% while active. Medical items are now valued by their ability to control bleeding, not just restore health. Heart wounds cannot be treated normally.</p>\n<p>Head-on gunfights can easily leave both sides dead. Using cover, avoiding hits, and ending fights quickly are now essential.</p>\n<p>TraumaCore is my own take on a more hardcore/semi-realistic damage and bleeding system.</p>\n</blockquote>\n<p>Instead of bullets simply removing health from a body part, most damage becomes wounds that drain health over time. The amount of bleeding depends on where the bullet hits and how much damage it causes. Wounds can stack, so surviving a gunfight does not mean you are safe, you may still bleed out without quick treatment.</p>\n<p>Bullets can also strike the brain, heart, spine, and major bones. These hits can cause instant death, permanent heart bleeding, spinal injuries, or broken limbs. Armor penetration and repeated hits are also reworked, making ammunition, armor condition, and shot placement more important.</p>\n<p>The default settings are balanced for PvE. AI and Scavs receive the full system, while players use more forgiving organ settings for a vanilla+ experience. Vital and center-mass shots are highly effective, while limb shots usually take more time or ammunition to become fatal.</p>\n<h2><strong>Features</strong> <em>(Yes, this is the full list\u2013everything else emerges naturally from these systems.)</em></h2>\n<hr />\n<ul>\n<li>Blood-loss-focused damage with stacking, location-dependent wounds</li>\n<li>Hand placed brain, heart, spine, and major limb-bone hitboxes</li>\n<li>Fatal brain and cervical-spine hits</li>\n<li>Permanent, rapidly fatal heart hemorrhage</li>\n<li>Spinal and deterministic limb-bone fractures</li>\n<li>More simplistic armor penetration and localized armor weakening from repeated hits</li>\n<li>Bruising, movement penalties, and reduced stamina recovery from stopped rounds</li>\n<li>Reworked treatment and blood-loss-blocking stim behavior</li>\n<li>Custom Damage transfer through injured and blacked body parts to reduce leg and arm meta</li>\n<li>Custom trauma icons, wound blood effects, corpse bleeding, and bleed-out voices</li>\n<li>Separate configurable balance for players and AI</li>\n</ul>\n<h3>New Hitboxes</h3>\n<hr />\n<ul>\n<li>Brain</li>\n<li>Lower brain</li>\n<li>Cervical spine</li>\n<li>Lower spine</li>\n<li>Heart</li>\n<li>Arm bones</li>\n<li>Leg bones</li>\n</ul>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://i.ibb.co/Gvk4vCQM/35-CF4136-0-EEA-4990-972-D-80-F669923048.png\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/Gvk4vCQM/35-CF4136-0-EEA-4990-972-D-80-F669923048.png\" alt=\"Anatomical hitbox debug view\" /></a></p>\n<p>Brain and cervical-spine hits are fatal. Heart hits cause extremely fast bleeding. Lower-spine hits cause a spinal fracture, while hits to limb bones can fracture the affected arm or leg.</p>\n<p>The hitboxes follow the character\u2019s movement and animations to the limitations of the native bone system. They do not make the entire head or chest count as an organ hit, the bullet must pass through the smaller internal area. this makes for more accurate gunplay but can make it feel more unforgiving as if you miss the brain and hit the face its not a instant kill</p>\n<h3>Wounds and Bleeding</h3>\n<hr />\n<h2><img loading=\"lazy\" decoding=\"async\" src=\"https://media.giphy.com/media/PEmY1wBijtF0fUGcyJ/giphy.gif\" alt=\"TraumaCore gameplay\" /></h2>\n<p>Most bullet damage causes bleeding instead of instant health damage.</p>\n<ul>\n<li>Repeated chest hits cause more bleeding</li>\n<li>Heart wounds cause severe bleeding that cannot be treated</li>\n<li>Bleeding varies by body part</li>\n<li>Normal bleeding slows down over time</li>\n<li>Blacked body parts transfer damage to nearby healthy parts</li>\n<li>Arm shots transfer less damage than stomach or leg shots</li>\n<li>Vital-area shots kill faster than limb shots</li>\n</ul>\n<p>This makes center-mass hits reliable without making every chest shot an instant kill. Limb shots can still be lethal, but generally require more hits or time than vital-area damage.</p>\n<h3>Armor</h3>\n<hr />\n<ul>\n<li>Armor either blocks a shot or lets it penetrate</li>\n<li>Penetration depends on the ammo and the armor\u2019s class, material, condition, and coverage</li>\n<li>Repeated hits to the same area damage the armor up to 5\u00d7 faster</li>\n<li>Blocked shots can cause bruising</li>\n<li>Bruising temporarily reduces movement speed and stamina recovery</li>\n</ul>\n<h3>Hit Feedback</h3>\n<hr />\n<ul>\n<li>Custom icons for bruises, heart wounds, and spinal fractures</li>\n<li>Blood sprays from the wound location</li>\n<li>Recently killed bodies bleed when shot</li>\n<li>Characters make death or agony sounds when bleeding out</li>\n<li>Optional hitbox viewer for testing</li>\n</ul>\n<h2>Default Balance</h2>\n<hr />\n<p>TraumaCore is enabled for players, AI, and scavs by default.</p>\n<p>AI and scavs use the complete organ system. Players begin with brain and lower-spine hitboxes enabled, while player heart and cervical-spine hitboxes are disabled to reduce sudden deaths from AI fire.</p>\n<h2>Usage</h2>\n<hr />\n<p>Press F12 to open the BepInEx Configuration Manager and select <strong>TraumaCore</strong>.</p>\n<p>The menu includes separate controls for player and AI hitboxes, bleeding, damage linkage, armor behavior, blood effects, logging, and effect-testing buttons.</p>\n",
+   "description_html": "<h1>TraumaCore</h1>\n<hr />\n<p>TraumaCore is a damage and armor overhaul for SPT that makes shot placement, bleeding, bones, and repeated armor hits more important.</p>\n<blockquote>\n<p><strong>Warning:</strong> TraumaCore makes combat much more lethal. Penetrating hits cause wounds and blood loss instead of normal direct damage, meaning you can win a fight and still bleed out seconds later.</p>\n<p>Stims quickly stop treatable bleeding and reduce new bleed damage by 50% while active. Medical items are now valued by their ability to control bleeding, not just restore health. Heart wounds cannot be treated normally.</p>\n<p>Head-on gunfights can easily leave both sides dead. Using cover, avoiding hits, and ending fights quickly are now essential.</p>\n<p>TraumaCore is my own take on a more hardcore/semi-realistic damage and bleeding system.</p>\n</blockquote>\n<p>Instead of bullets simply removing health from a body part, most damage becomes wounds that drain health over time. The amount of bleeding depends on where the bullet hits and how much damage it causes. Wounds can stack, so surviving a gunfight does not mean you are safe, you may still bleed out without quick treatment.</p>\n<p>Bullets can also strike the brain, heart, spine, and major bones. These hits can cause instant death, permanent heart bleeding, spinal injuries, or broken limbs. Armor penetration and repeated hits are also reworked, making ammunition, armor condition, and shot placement more important.</p>\n<p>The default settings are balanced for PvE. AI and Scavs receive the full system, while players use more forgiving organ settings for a vanilla+ experience. Vital and center-mass shots are highly effective, while limb shots usually take more time or ammunition to become fatal.</p>\n<h2><strong>Features</strong> <em>(Yes, this is the full list\u2013everything else emerges naturally from these systems.)</em></h2>\n<hr />\n<ul>\n<li>Blood-loss-focused damage with stacking, location-dependent wounds</li>\n<li>Configurable direct bullet damage alongside TraumaCore wounds</li>\n<li>Hand placed brain, heart, spine, and major limb-bone hitboxes</li>\n<li>Fatal brain and cervical-spine hits</li>\n<li>Permanent, rapidly fatal heart hemorrhage</li>\n<li>Spinal and deterministic limb-bone fractures</li>\n<li>More simplistic armor penetration and localized armor weakening from repeated hits</li>\n<li>Bruising, movement penalties, and reduced stamina recovery from stopped rounds</li>\n<li>Reworked treatment and blood-loss-blocking stim behavior</li>\n<li>Custom damage transfer through injured and blacked body parts to reduce leg and arm meta</li>\n<li>Impact Shock that builds peripheral-vision distortion as damage is taken</li>\n<li>Enhanced death screen showing damage, bleeding, and bullet-impact locations by body part</li>\n<li>Custom trauma icons, wound blood effects, longer-lasting blood decals, corpse bleeding, and bleed-out voices</li>\n<li>Separate configurable balance for players and AI</li>\n</ul>\n<h3>New Hitboxes</h3>\n<hr />\n<ul>\n<li>Brain</li>\n<li>Lower brain</li>\n<li>Cervical spine</li>\n<li>Lower spine</li>\n<li>Heart</li>\n<li>Arm bones</li>\n<li>Leg bones</li>\n</ul>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://i.ibb.co/Gvk4vCQM/35-CF4136-0-EEA-4990-972-D-80-F669923048.png\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/Gvk4vCQM/35-CF4136-0-EEA-4990-972-D-80-F669923048.png\" alt=\"Anatomical hitbox debug view\" /></a></p>\n<p>Brain and cervical-spine hits are fatal. Heart hits cause extremely fast bleeding. Lower-spine hits cause a spinal fracture, while hits to limb bones can fracture the affected arm or leg.</p>\n<p>The hitboxes follow the character\u2019s movement and animations to the limitations of the native bone system. They do not make the entire head or chest count as an organ hit, the bullet must pass through the smaller internal area. this makes for more accurate gunplay but can make it feel more unforgiving as if you miss the brain and hit the face its not a instant kill</p>\n<h3>Wounds and Bleeding</h3>\n<hr />\n<h2><img loading=\"lazy\" decoding=\"async\" src=\"https://media.giphy.com/media/PEmY1wBijtF0fUGcyJ/giphy.gif\" alt=\"TraumaCore gameplay\" /></h2>\n<p>Most bullet damage causes bleeding instead of instant health damage.</p>\n<ul>\n<li>Repeated chest hits cause more bleeding</li>\n<li>Heart wounds cause severe bleeding that cannot be treated</li>\n<li>Bleeding varies by body part</li>\n<li>Normal bleeding slows down over time</li>\n<li>Blacked body parts transfer damage to nearby healthy parts</li>\n<li>Arm shots transfer less damage than stomach or leg shots</li>\n<li>Vital-area shots kill faster than limb shots</li>\n<li>Bleeding tooltips show damage, duration, and damage rate after death</li>\n</ul>\n<p>This makes center-mass hits reliable without making every chest shot an instant kill. Limb shots can still be lethal, but generally require more hits or time than vital-area damage.</p>\n<h3>Armor</h3>\n<hr />\n<ul>\n<li>Armor either blocks a shot or lets it penetrate</li>\n<li>Penetration depends on the ammo and the armor\u2019s class, material, condition, and coverage</li>\n<li>Repeated hits to the same area damage the armor up to 5\u00d7 faster</li>\n<li>Blocked shots can cause bruising</li>\n<li>Bruising temporarily reduces movement speed and stamina recovery</li>\n</ul>\n<h3>Hit Feedback</h3>\n<hr />\n<ul>\n<li>Custom icons for bruises, heart wounds, and spinal fractures</li>\n<li>Blood sprays from the wound location</li>\n<li>Recently killed bodies bleed when shot</li>\n<li>Characters make death or agony sounds when bleeding out</li>\n<li>Optional hitbox viewer for testing</li>\n<li>Blood decals remain longer, making wounded targets easier to track</li>\n<li>Impact Shock builds peripheral-vision distortion as damage is taken</li>\n</ul>\n<h2>Death Screen</h2>\n<hr />\n<p>TraumaCore expands the normal death screen with a preview of the damage that led to your death.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/S6ITGGP.png\" alt=\"TraumaCore death-screen preview\" /></p>\n<p>It displays bullet-impact locations on the body, damage received, and bleeding information for each affected body part. The goal is to make it easier to understand where you were hit, what wounds were caused, and why you ultimately died.</p>\n<h2>Default Balance</h2>\n<hr />\n<p>TraumaCore is enabled for players, AI, and scavs by default.</p>\n<p>AI and scavs use the complete organ system. Players begin with brain and lower-spine hitboxes enabled, while player heart and cervical-spine hitboxes are disabled to reduce sudden deaths from AI fire.</p>\n<h2>Usage</h2>\n<hr />\n<p>Press F12 to open the BepInEx Configuration Manager and select <strong>TraumaCore</strong>.</p>\n<p>The menu includes separate controls for player and AI hitboxes, bleeding, damage linkage, armor behavior, blood effects, logging, and effect-testing buttons.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/jmXNvUYj2Mh7dlpoDw8nQLCQS6PEzr9RkKLeLvDH.png",
    "forge_url": "https://sp-mod.com/mod/2893/traumacore",
-   "downloads": 852,
-   "favourites": 8,
+   "downloads": 1425,
+   "favourites": 19,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -183790,12 +183803,24 @@
    ],
    "versions": [
     {
+     "id": 14883,
+     "version": "1.3.0",
+     "description": "<h3>New features</h3>\n<ul>\n<li>Added an enhanced death screen showing damage, bleeding, and bullet-impact locations for each body part. (im hoping this helps people understand how and why they died)\n<img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/S6ITGGP.png\" alt=\"TraumaCore death-screen preview\" /></li>\n<li>Added detailed bleeding tooltips with light/heavy bleed damage, duration, and damage rate.</li>\n<li>Added Impact Shock, a stacking peripheral-vision effect when the player takes damage.</li>\n<li>Changed blood decals to last longer for easier tracking</li>\n<li>Added additional F12 testing controls</li>\n<li>Expanded Direct Bullet Damage configuration to 0\u2013100%, with a new default of 35%.</li>\n</ul>\n<h3>Fixes</h3>\n<ul>\n<li>Bleeding deaths now correctly credit the attacker who caused the wound.</li>\n<li>Fixed reduced direct damage unintentionally weakening EFT\u2019s normal hit punch and effects.</li>\n<li>Fixed custom health effects causing profiles or menus to load indefinitely in rare cases.</li>\n<li>Custom effects now persist safely where appropriate and restore correctly between raids.</li>\n<li>Improved some performance during raids.</li>\n</ul>\n",
+     "spt_constraint": "~4.1.0 ",
+     "fika": "unknown",
+     "downloads": 80,
+     "size": 68903,
+     "link": "https://sp-mod.com/mod/download/2893/traumacore/1.3.0",
+     "published_at": "2026-08-21T10:39:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 14702,
      "version": "1.2.0",
      "description": "<ul>\n<li>Fixed an unnecessary synchronous settings load during startup that could cause CPU spikes.</li>\n</ul>\n",
      "spt_constraint": "~4.1.0 ",
      "fika": "unknown",
-     "downloads": 278,
+     "downloads": 767,
      "size": 52116,
      "link": "https://sp-mod.com/mod/download/2893/traumacore/1.2.0",
      "published_at": "2026-08-13T11:04:00.000000Z",
@@ -183807,14 +183832,14 @@
      "description": "<ul>\n<li>Fixed custom injury effects persisting after raids and preventing affected profiles from loading.</li>\n</ul>\n",
      "spt_constraint": "~4.1.0 ",
      "fika": "unknown",
-     "downloads": 522,
+     "downloads": 526,
      "size": 49171,
      "link": "https://sp-mod.com/mod/download/2893/traumacore/1.1.0",
      "published_at": "2026-08-10T02:24:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.2.0",
+   "latest_version": "1.3.0",
    "spt_constraint": "~4.1.0 ",
    "all_spt_constraints": [
     "~4.1.0 "
@@ -183822,7 +183847,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-08-10T01:25:00.000000Z",
-   "updated_at": "2026-08-15T08:33:51.000000Z",
+   "updated_at": "2026-08-21T11:13:56.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
@@ -187676,10 +187701,10 @@
    "name": "More Cases Updated",
    "slug": "more-cases-updated",
    "teaser": "Expand your organizational possibilities with more cases added to your stash!",
-   "description_html": "<p>Update of <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1794/more-cases\" rel=\"noreferrer noopener\">https://sp-mod.com/mod/1794/more-cases</a></p>\n<p>Changes I made include the removal of the old versions of cases, adjustments to all prices/barters to make them more balanced, and swapped the size/price/barters of the Equipment Cabinet and Equipment Chair.</p>\n<p>Original description below:</p>\n<p>Adds new cases and containers to your stash, each with its own item filters!\nAll of them are available from various traders, with both barter and money offers.</p>\n<p>Keep in mind that most of them are intended to be difficult to obtain.</p>\n",
+   "description_html": "<p>Update of <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1794/more-cases\" rel=\"noreferrer noopener\">https://sp-mod.com/mod/1794/more-cases</a></p>\n<h3>List of items:</h3>\n<ol>\n<li>Weapon Mods Case ( and a THICC version)</li>\n<li>Equipment Chair and Cabinet (armor/backpacks/helmets/etc)</li>\n<li>Safe (money/jewelry)</li>\n<li>Fridge (food)</li>\n<li>THICC Ammo case</li>\n<li>THICC  Grenade case</li>\n<li>THICC  Medcase</li>\n<li>Weapon Rack (bigger than THICC weapon case)</li>\n<li>Toolbox (for tools)</li>\n</ol>\n<p>Changes I made include the removal of the old versions of cases, adjustments to all prices/barters to make them more balanced, and swapped the size/price/barters of the Equipment Cabinet and Equipment Chair.</p>\n<p>Original description below:</p>\n<p>Adds new cases and containers to your stash, each with its own item filters!\nAll of them are available from various traders, with both barter and money offers.</p>\n<p>Keep in mind that most of them are intended to be difficult to obtain.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/AWB1vl83RI8QBQDWI4uApNOqlutqv7KLamkE3vgO.png",
    "forge_url": "https://sp-mod.com/mod/2946/more-cases-updated",
-   "downloads": 23,
+   "downloads": 154,
    "favourites": 1,
    "featured": false,
    "fika": false,
@@ -187713,12 +187738,32 @@
    ],
    "versions": [
     {
+     "id": 14884,
+     "version": "3.0.0",
+     "description": "<p>Update to SPT 4.1</p>\n",
+     "spt_constraint": "4.1",
+     "fika": "unknown",
+     "downloads": 76,
+     "size": 16495620,
+     "link": "https://sp-mod.com/mod/download/2946/more-cases-updated/3.0.0",
+     "published_at": "2026-08-21T10:59:00.000000Z",
+     "dependencies": [
+      {
+       "id": 2310,
+       "name": "WTT - CommonLib",
+       "slug": "wtt-commonlib",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
+      }
+     ]
+    },
+    {
      "id": 14878,
      "version": "2.0.0",
      "description": "<p>Port to SPT 4.0</p>\n",
      "spt_constraint": "4.0.13",
      "fika": "unknown",
-     "downloads": 23,
+     "downloads": 78,
      "size": 16494808,
      "link": "https://sp-mod.com/mod/download/2946/more-cases-updated/2.0.0",
      "published_at": "2026-08-21T05:15:00.000000Z",
@@ -187733,10 +187778,11 @@
      ]
     }
    ],
-   "latest_version": "2.0.0",
-   "spt_constraint": "4.0.13",
+   "latest_version": "3.0.0",
+   "spt_constraint": "4.1",
    "all_spt_constraints": [
-    "4.0.13"
+    "4.0.13",
+    "4.1"
    ],
    "dependencies": [
     {
@@ -187757,13 +187803,83 @@
     }
    ],
    "published_at": "2026-08-21T05:07:00.000000Z",
-   "updated_at": "2026-08-21T07:08:10.000000Z",
+   "updated_at": "2026-08-21T12:10:00.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
     "ai_disclosure": "",
     "cheat_notice": false,
     "profile_binding_notice": true
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 2947,
+   "hub_id": null,
+   "guid": "com.dragonx86.bring-back-containers",
+   "name": "BringBackContainers",
+   "slug": "bringbackcontainers",
+   "teaser": "Restores the abundance of Loot Containers from older versions of SPT.",
+   "description_html": "<p>Once upon a time, when I was playing SPT 3.10, I liked that there were a lot of containers with various loot in the locations. In SPT 4, there are far fewer containers in the locations, and this mod fixes that.</p>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/Q1YhD2AWYl9sPRH4LX1snNTyaFzZiycerVVosf6C.png",
+   "forge_url": "https://sp-mod.com/mod/2947/bringbackcontainers",
+   "downloads": 58,
+   "favourites": 0,
+   "featured": false,
+   "fika": false,
+   "fika_latest": "unknown",
+   "category": {
+    "id": 17,
+    "title": "Other",
+    "slug": "other"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 78370,
+     "name": "DragonX86",
+     "avatar": "https://files.sp-mod.com/profile-photos/0Uuj02TCHDzkqVxqVRF3plazX5SDlSgwtuoPYsit_256w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/dragonx86dev/SPT-BringBackContainers",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 14885,
+     "version": "1.1.0",
+     "description": "<p>Release for SPT 4.1.x</p>\n",
+     "spt_constraint": "~4.1",
+     "fika": "unknown",
+     "downloads": 58,
+     "size": 6772,
+     "link": "https://sp-mod.com/mod/download/2947/bringbackcontainers/1.1.0",
+     "published_at": "2026-08-21T11:27:00.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "1.1.0",
+   "spt_constraint": "~4.1",
+   "all_spt_constraints": [
+    "~4.1"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-08-21T11:23:00.000000Z",
+   "updated_at": "2026-08-21T11:29:04.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
+    "cheat_notice": false,
+    "profile_binding_notice": false
    },
    "origin": "forge",
    "delisted": false
