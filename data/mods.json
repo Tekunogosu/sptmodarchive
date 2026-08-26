@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-08-26T02:02:45Z",
+ "generated_at": "2026-08-26T04:07:10Z",
  "source": "https://sp-mod.com",
  "filter": "all",
- "mod_count": 1892,
+ "mod_count": 1893,
  "categories": [
   {
    "id": 12,
@@ -189821,8 +189821,8 @@
    "description_html": "<p><strong>SPT 4.1.3 port of QuickSell. All credit goes to the original author.</strong></p>\n<p>Original mod: <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/TadMaj/Tarkov-QuickSell\" rel=\"noreferrer noopener\">TadMaj</a>\nMultiselect interop: Tyfon (UI Fixes)\nPrice tooltip approach inspired by: SwiftXP (Show Me The Money)\nLicense: MIT (unchanged)</p>\n<p>This port was uploaded to keep the mod available on SPT 4.1.3. If TadMaj asks\nme to take it down, I will remove it immediately, no questions asked. Same goes\nif they would rather publish their own 4.1 version \u2014 this page exists only\nuntil then.</p>\n<hr />\n<h2>What it does</h2>\n<ul>\n<li>Right-click any stash item for <strong>QuickSell (Flea)</strong> and <strong>QuickSell (Trader)</strong></li>\n<li>Keybinds: <code>N</code> flea, <code>M</code> traders</li>\n<li><strong>Price tooltips</strong> \u2014 best trader price and flea price on hover, colour-coded by value</li>\n<li><strong>Multi-select</strong> \u2014 with UI Fixes, sell many items in one confirmation</li>\n</ul>\n<p>Traders are chosen automatically by best offer. Flea listings use the average market price.</p>\n<h2>Installation</h2>\n<ol>\n<li>Extract the archive into your <strong>SPT root folder</strong> (the one containing <code>BepInEx\\</code> and <code>EscapeFromTarkov_Data\\</code>)</li>\n<li>Client files land in <code>BepInEx\\plugins\\QuickSell\\</code></li>\n<li>Server files land in <code>SPT_Runtime\\user\\mods\\QuickSell\\</code></li>\n<li>Start SPT</li>\n</ol>\n<p>Requires <strong>SPT 4.1.3</strong>. Will not work on 4.0.x.</p>\n<p><strong>Optional:</strong> UI Fixes 6.0.0+ for multi-select selling.\n<strong>Server component:</strong> optional but recommended \u2014 without it, flea prices are unavailable in raid.</p>\n<h2>Configuration</h2>\n<p>Settings are in the <strong>F12 menu</strong> under QuickSell, split into Selling, Tooltips, and Colors.\nTier colours are edited in <code>BepInEx\\plugins\\QuickSell\\config.json</code>.</p>\n<h2>Uninstalling</h2>\n<p>Delete <code>BepInEx\\plugins\\QuickSell\\</code> and <code>SPT_Runtime\\user\\mods\\QuickSell\\</code>. Nothing is written to your profile.</p>\n<h2>Network activity</h2>\n<p>The client fetches the flea price table once at startup from <strong>your own local SPT server</strong> (<code>/quicksell/getFleaPrices</code>).</p>\n<h2>Fika</h2>\n<p>Works on client and server. Detects headless clients and disables itself there. Prices are fetched once per session, never polled, so shared servers aren\u2019t hammered.</p>\n<hr />\n<p>If you\u2019d like to support my work, you can <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/its_blackhawk\" rel=\"noreferrer noopener\">buy me a coffee</a> \u2615</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/P8JYEKM0WTs5E2UWUw5fEoAhGmKBveXpK9tDtTcu.png",
    "forge_url": "https://sp-mod.com/mod/2955/quicksell",
-   "downloads": 221,
-   "favourites": 1,
+   "downloads": 426,
+   "favourites": 2,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -189850,19 +189850,31 @@
    ],
    "versions": [
     {
+     "id": 14988,
+     "version": "3.2.1",
+     "description": "<h2>Fixed</h2>\n<ul>\n<li><strong>Selling stopped working after a raid</strong> \u2014 the mod cached the trader list, but\nthe game rebuilds its trader objects after every raid. It was holding the old\nones, so all prices came back empty and you\u2019d get \u201cNo items can be sold to\ntraders\u201d until restarting the game.</li>\n</ul>\n<p>Thanks to <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/78923/fxh3d\" rel=\"noreferrer noopener\">fxh3d</a> for the report.</p>\n",
+     "spt_constraint": "4.1.3",
+     "fika": "compatible",
+     "downloads": 89,
+     "size": 32674,
+     "link": "https://sp-mod.com/mod/download/2955/quicksell/3.2.1",
+     "published_at": "2026-08-26T02:28:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 14984,
      "version": "3.2.0",
      "description": "<p>SPT 4.1.3 port. All credit to the original author, <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/TadMaj/Tarkov-QuickSell\" rel=\"noreferrer noopener\">TadMaj</a>.</p>\n<h2>Features</h2>\n<ul>\n<li>Right-click any stash item for <strong>QuickSell (Flea)</strong> and <strong>QuickSell (Trader)</strong></li>\n<li>Keybinds: <code>N</code> flea, <code>M</code> traders</li>\n<li><strong>Price tooltips</strong> \u2014 best trader price and flea price on hover, colour-coded by value</li>\n<li><strong>Multi-select</strong> \u2014 with UI Fixes, sell many items in one confirmation</li>\n<li>Flea prices work in raid (needs the included server mod)</li>\n</ul>\n<h2>Installation</h2>\n<p>Extract into your <strong>SPT root folder</strong> (the one containing <code>BepInEx\\</code> and <code>EscapeFromTarkov_Data\\</code>).\nClient goes to <code>BepInEx\\plugins\\QuickSell\\</code>, server to <code>SPT_Runtime\\user\\mods\\QuickSell\\</code>.</p>\n<p>The server mod is optional \u2014 without it, flea prices aren\u2019t available in raid.</p>\n<h2>Configuration</h2>\n<p>F12 menu under QuickSell. Tier colours in <code>BepInEx\\plugins\\QuickSell\\config.json</code>.</p>\n<hr />\n<p>If you\u2019d like to support my work, you can <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/its_blackhawk\" rel=\"noreferrer noopener\">buy me a coffee</a> \u2615</p>\n",
      "spt_constraint": "4.1.3",
      "fika": "compatible",
-     "downloads": 221,
+     "downloads": 337,
      "size": 32363,
      "link": "https://sp-mod.com/mod/download/2955/quicksell/3.2.0",
      "published_at": "2026-08-25T16:10:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "3.2.0",
+   "latest_version": "3.2.1",
    "spt_constraint": "4.1.3",
    "all_spt_constraints": [
     "4.1.3"
@@ -189870,11 +189882,153 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-08-25T16:13:00.000000Z",
-   "updated_at": "2026-08-25T21:22:29.000000Z",
+   "updated_at": "2026-08-26T02:29:06.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
     "ai_disclosure": "<p>This port was written with substantial AI assistance (Claude).</p>\n<p><strong>What AI was used for:</strong> updating the 4.0 code for SPT 4.1\u2019s deobfuscated\nclient, and writing the new tooltip, price-cache and server-mod code.</p>\n<p><strong>How the names were resolved:</strong> type renames came from SPT\u2019s official Client\nClass Name Mappings table, not from guesswork. Member names that aren\u2019t in that\ntable (<code>iEftSession</code>, <code>_trading</code>, <code>_supplyData</code>, <code>_dynamicInteractions</code>,\n<code>_dragItemContext</code>, <code>CurrentItemContext</code>) were read directly out of the\ninstalled <code>Assembly-CSharp.dll</code> by reflection and verified against this\ninstall. The server API (<code>IHttpListener</code>, <code>IModMetadata</code>,\n<code>RagfairPriceService.GetAllFleaPrices</code>) was checked the same way against\n<code>SPTarkov.Server.Core.dll</code>.</p>\n<p><strong>Testing:</strong> every feature was tested in game on SPT 4.1.3 \u2014 context menu,\nkeybinds, multi-select selling to both traders and flea, tooltips in and out\nof raid, and the F12 settings.</p>\n<p>Full source is on GitHub and the code is commented throughout, includin</p>\n",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 2956,
+   "hub_id": null,
+   "guid": "com.dynamicmapsinicebreaker",
+   "name": "DynamicMapsInIceBreaker",
+   "slug": "dynamicmapsinicebreaker",
+   "teaser": "the DynamicMaps map in Manimal Icebreaker",
+   "description_html": "<h1>DynamicMapsInIceBreaker</h1>\n<p>Integrates the <strong>Manimal Icebreaker</strong> map into <strong>DynamicMaps</strong>\nwith high-resolution PNG layers, live door status, and full diagnostic logging.</p>\n<ul>\n<li><strong>14 full-resolution deck layers</strong> (Ice Deck -3 up to top Deck 10) rendered from the\nre3mr panel art as direct PNG textures \u2014 crisp, not blurry vector outlines. Layers\nswitch automatically as you climb or descend, with hysteresis so jumping, crouching\nor lying down never flickers between floors.</li>\n<li><strong>22 special door markers</strong> \u2014 11 keycard doors, 9 keypad doors, 1 explosive door and\n1 frozen hatch \u2014 each with a <strong>live red \u2192 green status</strong>:\n<ul>\n<li><strong>Keycard doors</strong> turn green the moment the matching keycard is in your inventory\n(refreshed in-raid, no need to reopen the map)</li>\n<li><strong>Keypad doors</strong> turn green as soon as the correct code is entered</li>\n<li><strong>Explosive doors</strong> turn green when the door is destroyed (detected when the door\nobject disappears from the scene)</li>\n<li><strong>Frozen hatch</strong> turns green when the blowtorch melt completes (reads Manimal\u2019s\nHatchMeltDriver)</li>\n</ul>\n</li>\n<li><strong>Door text labels</strong> shown directly on the map (Keycard / Keypad / Explosive / Frozen)</li>\n<li><strong>Zoom optimization</strong> tuned for the long, narrow icebreaker layout \u2014 both the minimap\nand the main map open at a comfortable viewing range</li>\n<li><strong>PNG direct-loading patch</strong>: the plugin loads the high-res PNG layers straight into\nthe map, bypassing DynamicMaps\u2019 SVG tessellation pipeline, with DXT5 compression and\nmipmaps for performance</li>\n<li><strong>Strictly icebreaker-only</strong>: every patch is gated on the \u201csuburbs\u201d map ID plus\nManimal\u2019s IceGate \u2014 other maps run DynamicMaps completely untouched, and the mod\ncosts nothing outside the icebreaker</li>\n<li><strong>Complete diagnostic logging</strong>: startup, patch mounting, PNG loading, per-layer file\ninventory, door monitoring and a periodic performance sampler are all written to\n<code>BepInEx\\LogOutput.log</code> under the <code>DynamicMapsInIceBreaker</code> tag, so any problem is\neasy to diagnose</li>\n</ul>\n<p>What\u2019s sad is that the image calibration, which uses a mapping between the actual in-game coordinates and the coordinates displayed in the image,  i can only achieve visual intuitiveness, not visual precision.</p>\n<p>Due to limitations in the source of the images, the pictures can only show walls and floor levels, not miscellaneous objects, nor the path blocking caused by them. So sometimes the map looks passable, but in reality you can\u2019t get through because of the clutter.</p>\n<h2>Installation</h2>\n<ol>\n<li>Install the prerequisites: <strong>DynamicMaps 1.1.3+</strong> and <strong>Manimal Icebreaker 0.2.3\u20130.3.1</strong></li>\n<li>Extract the archive into your SPT root folder (it yields a <code>BepInEx\\plugins\\...</code> tree)</li>\n<li>Delete any old plugin DLLs left in <code>BepInEx\\plugins\\</code> from previous versions</li>\n<li>Restart the game. Verify in <code>BepInEx\\LogOutput.log</code>:\n<ul>\n<li><code>==== DynamicMapsInIceBreaker v2.1.1 ====</code></li>\n<li><code>[Doors] \u5df2\u627e\u5230 MapView \u5e76\u7f13\u5b58</code> (map view cached \u2014 door monitoring ready)</li>\n</ul>\n</li>\n</ol>\n<h2>Compatibility</h2>\n<ul>\n<li>SPT 4.0.13, DynamicMaps 1.1.3+, Manimal Icebreaker 0.2.3\u20130.3.1</li>\n<li>Works in <strong>Fika</strong> coop \u2014 all logic is local (reads local door state, local UI only,\nno network traffic)</li>\n<li>No conflicts with other maps or map mods</li>\n</ul>\n<h2>License</h2>\n<p>MIT License</p>\n<p>Thanks to the creators of Dynamic Maps and Icebreaker mods; without their efforts, this mod would not exist.</p>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/zxfzJE0AgbNjGatkis2tdUXB3k16zYiKOtq9UPpr.png",
+   "forge_url": "https://sp-mod.com/mod/2956/dynamicmapsinicebreaker",
+   "downloads": 37,
+   "favourites": 1,
+   "featured": false,
+   "fika": true,
+   "fika_latest": "compatible",
+   "category": {
+    "id": 3,
+    "title": "Scripting",
+    "slug": "scripting"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 117806,
+     "name": "VoidEco",
+     "avatar": "https://ui-avatars.com/api/?name=V&color=7F9CF5&background=EBF4FF"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/VoidEco/DynamicMaps-In-IceBreaker",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 14990,
+     "version": "2.2.0",
+     "description": "<p><strong>\u201cA set of \u2018external language file + automatic language detection\u2019 mechanism (I18n.cs):</strong></p>\n<ul>\n<li>\n<p><strong>Automatic language detection:</strong>\u00a0reads the system language (<code>Application.systemLanguage</code>) on startup \u2192 converts it to a language code (e.g.,\u00a0<code>zh-cn</code>,\u00a0<code>zh-tw</code>,\u00a0<code>ru</code>,\u00a0<code>en</code>,\u00a0<code>fr</code>,\u00a0<code>de</code>,\u00a0<code>es</code>,\u00a0<code>ja</code>,\u00a0<code>ko</code>,\u00a0<code>uk</code>,\u00a0<code>pt</code>,\u00a0<code>pl</code>,\u00a0<code>cs</code>,\u00a0<code>tr</code>, \u2026)</p>\n</li>\n<li>\n<p><strong>Loads the external language file</strong>\u00a0<code>lang.json</code>\u00a0(placed next to the DLL)</p>\n</li>\n<li>\n<p><strong>Lookup/fallback order:</strong>\u00a0<code>T(key)</code>\u00a0\u2192 exact code \u2192 two\u2011letter code \u2192 Chinese \u2192 Russian \u2192 English \u2192 built\u2011in fallback</p>\n</li>\n<li>\n<p><strong>Log report:</strong>\u00a0<code>[i18n] lang.json loaded (4 entries) - language: zh-cn</code>\u201c</p>\n</li>\n</ul>\n",
+     "spt_constraint": "4.0.13",
+     "fika": "compatible",
+     "downloads": 0,
+     "size": 3612751,
+     "link": "https://sp-mod.com/mod/download/2956/dynamicmapsinicebreaker/2.2.0",
+     "published_at": "2026-08-26T04:03:00.000000Z",
+     "dependencies": [
+      {
+       "id": 1431,
+       "name": "Dynamic Maps",
+       "slug": "dynamic-maps",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/1431/dynamic-maps"
+      },
+      {
+       "id": 2866,
+       "name": "MANIMAL'S ICEBREAKER BACKPORT[BETA]",
+       "slug": "manimals-icebreaker-backportbeta",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2866/manimals-icebreaker-backportbeta"
+      }
+     ]
+    },
+    {
+     "id": 14989,
+     "version": "2.1.1",
+     "description": "<p><strong>DynamicMapsInIceBreaker v2.1.1 \u2014 First public release</strong></p>\n<p>Full integration of the Manimal Icebreaker map into DynamicMaps:</p>\n<ul>\n<li><strong>14 high-resolution deck layers</strong>\u00a0(Ice Deck -3 \u2192 top Deck 10) as direct PNG textures \u2014 the re3mr panel art, not blurry vector outlines, with DXT5 compression + mipmaps for performance</li>\n<li><strong>Automatic layer switching</strong>\u00a0with hysteresis \u2014 climbing/descending switches floors seamlessly; jumping, crouching or lying down never flickers between layers</li>\n<li><strong>22 special door markers</strong>\u00a0with live red \u2192 green unlock status:\n<ul>\n<li>11 keycard doors (green when the keycard is in your inventory, refreshed in-raid)</li>\n<li>9 keypad doors (green once the correct code is entered)</li>\n<li>1 explosive door (green when destroyed)</li>\n<li>1 frozen hatch (green when the blowtorch melt completes)</li>\n</ul>\n</li>\n<li><strong>Door text labels</strong>\u00a0on the map for every special door</li>\n<li><strong>Zoom optimization</strong>\u00a0tuned for the long, narrow icebreaker layout (minimap + main map)</li>\n<li><strong>Strictly icebreaker-only</strong>: all patches gated on the \u201csuburbs\u201d map ID + Manimal\u2019s IceGate \u2014 zero impact on any other map</li>\n<li><strong>Complete diagnostic logging</strong>\u00a0in BepInEx\\LogOutput.log (<code>DynamicMapsInIceBreaker</code>\u00a0tag): startup, patch mounting, PNG loading, per-layer file inventory, door monitoring, performance sampling</li>\n<li><strong>Version-tolerant patching</strong>: patches mount individually by string reflection \u2014 if your DynamicMaps version lacks a type, that feature is skipped with a warning instead of crashing the plugin</li>\n<li><strong>Performance-safe</strong>: cached map view, throttled scans, short-circuited checks \u2014 negligible cost outside the icebreaker</li>\n<li>Works in\u00a0<strong>Fika</strong>\u00a0coop (all local logic, no network)</li>\n</ul>\n",
+     "spt_constraint": "4.0.13",
+     "fika": "compatible",
+     "downloads": 37,
+     "size": 3610122,
+     "link": "https://sp-mod.com/mod/download/2956/dynamicmapsinicebreaker/2.1.1",
+     "published_at": "2026-08-26T03:00:00.000000Z",
+     "dependencies": [
+      {
+       "id": 1431,
+       "name": "Dynamic Maps",
+       "slug": "dynamic-maps",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/1431/dynamic-maps"
+      },
+      {
+       "id": 2866,
+       "name": "MANIMAL'S ICEBREAKER BACKPORT[BETA]",
+       "slug": "manimals-icebreaker-backportbeta",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2866/manimals-icebreaker-backportbeta"
+      }
+     ]
+    }
+   ],
+   "latest_version": "2.2.0",
+   "spt_constraint": "4.0.13",
+   "all_spt_constraints": [
+    "4.0.13"
+   ],
+   "dependencies": [
+    {
+     "id": 1431,
+     "name": "Dynamic Maps",
+     "slug": "dynamic-maps",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/1431/dynamic-maps"
+    },
+    {
+     "id": 2866,
+     "name": "MANIMAL'S ICEBREAKER BACKPORT[BETA]",
+     "slug": "manimals-icebreaker-backportbeta",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/2866/manimals-icebreaker-backportbeta"
+    }
+   ],
+   "all_dependencies": [
+    {
+     "id": 1431,
+     "name": "Dynamic Maps",
+     "slug": "dynamic-maps",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/1431/dynamic-maps"
+    },
+    {
+     "id": 2866,
+     "name": "MANIMAL'S ICEBREAKER BACKPORT[BETA]",
+     "slug": "manimals-icebreaker-backportbeta",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/2866/manimals-icebreaker-backportbeta"
+    }
+   ],
+   "published_at": "2026-08-26T02:51:00.000000Z",
+   "updated_at": "2026-08-26T04:07:01.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": true,
+    "ai_disclosure": "<p>AI usage: The plugin\u2019s source code was developed with assistance from an AI coding assistant.Thumbnails are generated using AI.</p>\n",
     "cheat_notice": false,
     "profile_binding_notice": false
    },
