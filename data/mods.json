@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-26T13:27:21Z",
+ "generated_at": "2026-08-26T16:36:46Z",
  "source": "https://sp-mod.com",
  "filter": "all",
  "mod_count": 1894,
@@ -189133,8 +189133,8 @@
    "description_html": "<p>Two experimental 40x46mm grenades that beat cover instead of hitting it.<br />\nThe <strong>XM1166 HEAB</strong> detonates mid-flight at a range you set - lase the cover, lob the round over it, and it bursts right above whoever hides behind.<br />\nThe <strong>M397A1 Jump-Up</strong> is the classic bounding grenade: on impact it kicks its charge about 1.5 m off the surface before exploding, catching anyone prone or crouched nearby.</p>\n<h2>Features</h2>\n<ul>\n<li><strong>Range lock:</strong> aim at the cover, press the lock hotkey (<code>J</code> by default), then fire with elevation. An in-game toast confirms the locked range and suggests the matching sight zeroing step. Press from the hip to clear the lock.</li>\n<li><strong>XM1166 HEAB:</strong> full HE round with a red tracer; bursts at the locked range, at the sight zeroing when no lock is set, and explodes normally on direct hits. Refuses to arm below 20 m for your own safety.</li>\n<li><strong>M397A1 Jump-Up:</strong> green tracer; jumps visibly off the surface it hits - ground hits pop straight up, wall hits pop into the room. Arms after ~14 m of flight; closer impacts are duds, like the real one.</li>\n<li>Both rounds fit all 40x46 launchers (MSGL drum, M203, FN40GL) and are sold by Skier at loyalty level 2 (21,250 \u20bd, 18 per restock).</li>\n</ul>\n<h2>Installation and first use</h2>\n<ul>\n<li>Extract the release ZIP into your SPT installation directory.</li>\n<li>Client files go to <code>BepInEx/plugins/</code>, server files to <code>SPT_Runtime/user/mods/Airburst/</code>.</li>\n<li>Buy the rounds from Skier and try the XM1166 on a target behind sandbags: lock the sandbags with <code>J</code>, aim a little higher, fire.</li>\n</ul>\n<h2>Requirements and compatibility</h2>\n<ul>\n<li>SPT: 4.1.x, built and tested on 4.1.3.</li>\n<li>Dependencies: <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2310/wtt-commonlib\" rel=\"noreferrer noopener\">WTT-ServerCommonLib</a> is required. <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2735/scoperangefinder\" rel=\"noreferrer noopener\">ScopeRangefinder</a> is optional - with it installed, locks and bursts use its meter-exact live measurement and zeroing instead of the 50 m sight zeroing steps.</li>\n<li><strong>Fika (co-op): experimental.</strong> Tested with a headless host and one client: the XM1166 burst point is synchronised between peers. Raids with several clients are not tested yet. Every player and the headless host need the identical Airburst build, and the host should add <code>com.maschine.Airburst</code> to Fika\u2019s <code>client.mods.required</code>.</li>\n</ul>\n<h2>Example video is coming soon\u2122</h2>\n",
    "thumbnail": "https://files.sp-mod.com/mods/UMMWubkHrDdUnfyrYGeuorbXKkeiJxuRB5TB1HqS.png",
    "forge_url": "https://sp-mod.com/mod/2948/airburst",
-   "downloads": 321,
-   "favourites": 5,
+   "downloads": 415,
+   "favourites": 6,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -189162,12 +189162,52 @@
    ],
    "versions": [
     {
+     "id": 14997,
+     "version": "1.1.2",
+     "description": "<ul>\n<li>The range-lock hotkey is now tied to the round in the weapon, not just to the weapon: it only responds when the round that would be fired next really is an airburst round. With an underbarrel launcher that means after you switch to the launcher and it holds one; with the MSGL, when the cylinder chamber that comes up next holds one</li>\n</ul>\n",
+     "spt_constraint": "~4.1.0",
+     "fika": "compatible",
+     "downloads": 1,
+     "size": 29496,
+     "link": "https://sp-mod.com/mod/download/2948/airburst/1.1.2",
+     "published_at": "2026-08-26T15:51:00.000000Z",
+     "dependencies": [
+      {
+       "id": 2310,
+       "name": "WTT - CommonLib",
+       "slug": "wtt-commonlib",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
+      }
+     ]
+    },
+    {
+     "id": 14996,
+     "version": "0.9.2",
+     "description": "<p>Backport to SPT 4.0, no functional changes, based on v1.1.2</p>\n",
+     "spt_constraint": "4.0.13",
+     "fika": "compatible",
+     "downloads": 3,
+     "size": 29419,
+     "link": "https://sp-mod.com/mod/download/2948/airburst/0.9.2",
+     "published_at": "2026-08-26T15:49:00.000000Z",
+     "dependencies": [
+      {
+       "id": 2310,
+       "name": "WTT - CommonLib",
+       "slug": "wtt-commonlib",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
+      }
+     ]
+    },
+    {
      "id": 14977,
      "version": "0.9.1",
      "description": "<p>Backport to SPT 4.0, no functional changes. Based on v1.1.0</p>\n",
      "spt_constraint": "4.0.13",
      "fika": "compatible",
-     "downloads": 10,
+     "downloads": 47,
      "size": 29519,
      "link": "https://sp-mod.com/mod/download/2948/airburst/0.9.1",
      "published_at": "2026-08-25T12:54:00.000000Z",
@@ -189187,7 +189227,7 @@
      "description": "<ul>\n<li>Fika co-op support (experimental; tested with a headless host and one client): the shooter\u2019s burst solution is sent to every peer, so XM1166 rounds detonate at the same point on all machines; the M397A1 fuze no longer depends on a game hook that Fika replaces. Every player and the headless host must run the identical Airburst build.<br />\nAll Fika-typed code lives in the new satellite <code>maschine-Airburst.Client.Fika.dll</code>, which is only loaded when Fika 2.4.x is present - without Fika nothing changes.</li>\n<li>Fixed: The range-lock hotkey now only reacts (lock, clear, toast) when the weapon in hand - or its underbarrel launcher - can actually fire an airburst round.</li>\n</ul>\n",
      "spt_constraint": "~4.1.0",
      "fika": "compatible",
-     "downloads": 180,
+     "downloads": 232,
      "size": 29212,
      "link": "https://sp-mod.com/mod/download/2948/airburst/1.1.0",
      "published_at": "2026-08-22T16:46:00.000000Z",
@@ -189207,7 +189247,7 @@
      "description": "<p>Initial Release</p>\n",
      "spt_constraint": "~4.1.0",
      "fika": "incompatible",
-     "downloads": 131,
+     "downloads": 132,
      "size": 22512,
      "link": "https://sp-mod.com/mod/download/2948/airburst/1.0.0",
      "published_at": "2026-08-21T16:32:00.000000Z",
@@ -189222,8 +189262,8 @@
      ]
     }
    ],
-   "latest_version": "0.9.1",
-   "spt_constraint": "4.0.13",
+   "latest_version": "1.1.2",
+   "spt_constraint": "~4.1.0",
    "all_spt_constraints": [
     "4.0.13",
     "~4.1.0"
@@ -189247,7 +189287,7 @@
     }
    ],
    "published_at": "2026-08-21T19:40:00.000000Z",
-   "updated_at": "2026-08-25T13:35:05.000000Z",
+   "updated_at": "2026-08-26T15:54:05.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
