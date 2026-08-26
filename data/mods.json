@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-08-26T16:36:46Z",
+ "generated_at": "2026-08-26T20:10:58Z",
  "source": "https://sp-mod.com",
  "filter": "all",
- "mod_count": 1894,
+ "mod_count": 1895,
  "categories": [
   {
    "id": 12,
@@ -169013,8 +169013,8 @@
    "description_html": "<h2>Overview</h2>\n<p>Originally, this was part of my debugging tools, but I found it so useful during normal gameplay that I spun it off from it.<br />\nIt adds a simple button that unloads all magazines in stash, including those loaded in weapons.<br />\nThe ammo gets dumped in the same way as the regular unload action -&gt; same container the magazine is in, if not possible (because it\u2019s in a magcase) the parent container.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/maschine34675/UnloadAllMagazines/refs/heads/main/button.png\" alt=\"Example Picture\" /></p>\n<h2>Installation</h2>\n<p>As usual, unzip to your SPT folder</p>\n<hr />\n<p>Let me know if you run into any problems or have suggestions for improvement.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/LPGdS3eHh4aAv8NvbvrZ2awmkM2HxMYf20NPEm5Y.png",
    "forge_url": "https://sp-mod.com/mod/2739/unloadallmagazines",
-   "downloads": 2969,
-   "favourites": 33,
+   "downloads": 3158,
+   "favourites": 34,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -169042,12 +169042,24 @@
    ],
    "versions": [
     {
-     "id": 14980,
-     "version": "2.1.0",
-     "description": "<p>Added: UnpackAmmoPacks (default: off)</p>\n",
+     "id": 14999,
+     "version": "2.2.0",
+     "description": "<p>Added: Unload Chambered Rounds (default: on)</p>\n",
      "spt_constraint": "~4.1.0",
      "fika": "compatible",
-     "downloads": 31,
+     "downloads": 5,
+     "size": 11279,
+     "link": "https://sp-mod.com/mod/download/2739/unloadallmagazines/2.2.0",
+     "published_at": "2026-08-26T19:56:00.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 14980,
+     "version": "2.1.0",
+     "description": "<p>Added: Unpack Ammo Packs (default: off)</p>\n",
+     "spt_constraint": "~4.1.0",
+     "fika": "compatible",
+     "downloads": 191,
      "size": 9417,
      "link": "https://sp-mod.com/mod/download/2739/unloadallmagazines/2.1.0",
      "published_at": "2026-08-25T14:41:00.000000Z",
@@ -169071,14 +169083,14 @@
      "description": "<p>Initial Release</p>\n",
      "spt_constraint": "~4.0.4",
      "fika": "compatible",
-     "downloads": 1945,
+     "downloads": 1969,
      "size": 6400,
      "link": "https://sp-mod.com/mod/download/2739/unloadallmagazines/1.0.0",
      "published_at": "2026-06-12T15:12:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "2.1.0",
+   "latest_version": "2.2.0",
    "spt_constraint": "~4.1.0",
    "all_spt_constraints": [
     "~4.0.4",
@@ -169087,7 +169099,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-06-12T15:23:00.000000Z",
-   "updated_at": "2026-08-25T14:42:06.000000Z",
+   "updated_at": "2026-08-26T20:01:23.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
@@ -190176,6 +190188,76 @@
     "contains_ads": false,
     "contains_ai_content": true,
     "ai_disclosure": "<p>AI was used for making the UI and designing the minigames</p>\n",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 2959,
+   "hub_id": null,
+   "guid": "com.luna.copyconfig",
+   "name": "Copy Config",
+   "slug": "copy-config",
+   "teaser": "This script will copy all the folders, configs and presets while retaining folder structure into a new directory with only the configs and presets for SPTushonka mods.",
+   "description_html": "<h1>THIS IS NOT A MOD. THIS IS A PYTHON SCRIPT FOR UTILITY PURPOSES</h1>\n<h2>If this is not allowed I apologize.</h2>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Overview</div>\n<div class=\"tab-content\"><p>This will quickly copy all the config and preset .json/.jsonc files into 1 directory for you to do with as you please while retaining folder structure as it is on your drive.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Reasons this exists</div>\n<div class=\"tab-content\"><ul>\n<li>Sending configs to someone without having to dig through a bajillion different folders and paths</li>\n<li>Updating SPT while retaining custom/tweaked configs</li>\n<li>backing up configs if you have to delete mods for any reason, all without keeping the bulk of the mod downloaded thus saving on disk space (It\u2019s 2026 storage is expensive)</li>\n</ul>\n<p>I made this because a friend wanted to get my configs for the fika server we were playing on. I uploaded it here because if I had a use case for it maybe someone else will too.</p>\n<p>I Briefly looked around for this specific functionality with different mod managers and none of them (from what I saw) backed up configs and preset files this way so I made this script.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Prerequisites</div>\n<div class=\"tab-content\"><p>A decently up to date python install and basic command line usage (or just follow along with the video guide)</p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Usage</div>\n<div class=\"tab-content\"><p>Place the script into the SPTushonka Root folder and run it, the output will be under the directory<br />\n<code>/!Config_Copy_Output</code></p>\n<p>This should work on ANY SPT version that uses config files and presets, I know it says 4.1.3 but that\u2019s cause I don\u2019t know how to list it for all of them.</p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Step by Step Example</div>\n<div class=\"tab-content\"><ol>\n<li>Move \u201cConfig_Copy.py\u201d into your SPT root directory and open command prompt in the address bar at the top by typing <code>cmd</code></li>\n<li>Copy Paste or type the below snippet into your command prompt (Ctrl + Shift + V sometimes)\n<code>py .\\Config_Copy.py</code> Yes it is case sensitive</li>\n<li>Profit? The newly created <code>/!Config_Copy_Output</code>  folder will have all your configs and presets</li>\n</ol>\n<p>(Technically it will work as long as it\u2019s ran in any folder that is a parent of the mods you\u2019re trying to copy/backup from including <code>/user/mods/</code>)</p></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Video Guide</div>\n<div class=\"tab-content\"><p>Here is a step by step video on how to use on my working SPT 4.1.3.<br />\nProbably want to open the full video, the resolution is small in the auto-embed</p>\n<div class=\"youtube-lite\" data-video-id=\"phP0_Xx96XE\" data-embed-url=\"https://www.youtube-nocookie.com/embed/phP0_Xx96XE?autoplay=1\"><img src=\"https://i.ytimg.com/vi/phP0_Xx96XE/hqdefault.jpg\" alt=\"YouTube video thumbnail\" loading=\"lazy\" decoding=\"async\" /></div></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Support</div>\n<div class=\"tab-content\"><p>This script is provided as-is but if it doesn\u2019t work for you leave a comment so I can try and figure out why.</p>\n<p>I\u2019m not sure if this works on linux as it uses pathlib\u2019s Path but not PurePath and have no way of testing currently.</p></div></div>\n<div id=\"tabset-1-panel-8\" class=\"tab-panel\"><div class=\"tab-title\">Credits</div>\n<div class=\"tab-content\"><ul>\n<li>Me for being too lazy to go through hundreds of files</li>\n<li>Stack overflow for hard carrying</li>\n<li>pathlib for being so damn useful</li>\n</ul></div></div></div>\n",
+   "thumbnail": "",
+   "forge_url": "https://sp-mod.com/mod/2959/copy-config",
+   "downloads": 6,
+   "favourites": 0,
+   "featured": false,
+   "fika": true,
+   "fika_latest": "compatible",
+   "category": {
+    "id": 1,
+    "title": "Tools",
+    "slug": "tools"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 122411,
+     "name": "Luna",
+     "avatar": "https://files.sp-mod.com/profile-photos/RgJvScLHxUdL8TuKwbmVIZKM1VBm09GDvYg4XOWq_256w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/LunasLight/Config_Copy",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 14998,
+     "version": "1.3.0",
+     "description": "<p>Initial Release</p>\n",
+     "spt_constraint": "~4",
+     "fika": "compatible",
+     "downloads": 6,
+     "size": 1229,
+     "link": "https://sp-mod.com/mod/download/2959/copy-config/1.3.0",
+     "published_at": "2026-08-26T18:24:00.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "1.3.0",
+   "spt_constraint": "~4",
+   "all_spt_constraints": [
+    "~4"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-08-26T18:11:00.000000Z",
+   "updated_at": "2026-08-26T19:43:38.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
     "cheat_notice": false,
     "profile_binding_notice": false
    },
