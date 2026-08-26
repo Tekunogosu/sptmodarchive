@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-08-26T10:01:36Z",
+ "generated_at": "2026-08-26T13:27:21Z",
  "source": "https://sp-mod.com",
  "filter": "all",
- "mod_count": 1893,
+ "mod_count": 1894,
  "categories": [
   {
    "id": 12,
@@ -189821,8 +189821,8 @@
    "description_html": "<p><strong>SPT 4.1.3 port of QuickSell. All credit goes to the original author.</strong></p>\n<p>Original mod: <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/TadMaj/Tarkov-QuickSell\" rel=\"noreferrer noopener\">TadMaj</a>\nMultiselect interop: Tyfon (UI Fixes)\nPrice tooltip approach inspired by: SwiftXP (Show Me The Money)\nLicense: MIT (unchanged)</p>\n<p>This port was uploaded to keep the mod available on SPT 4.1.3. If TadMaj asks\nme to take it down, I will remove it immediately, no questions asked. Same goes\nif they would rather publish their own 4.1 version \u2014 this page exists only\nuntil then.</p>\n<hr />\n<h2>What it does</h2>\n<ul>\n<li>Right-click any stash item for <strong>QuickSell (Flea)</strong> and <strong>QuickSell (Trader)</strong></li>\n<li>Keybinds: <code>N</code> flea, <code>M</code> traders</li>\n<li><strong>Price tooltips</strong> \u2014 best trader price and flea price on hover, colour-coded by value</li>\n<li><strong>Multi-select</strong> \u2014 with UI Fixes, sell many items in one confirmation</li>\n</ul>\n<p>Traders are chosen automatically by best offer. Flea listings use the average market price.</p>\n<h2>Installation</h2>\n<ol>\n<li>Extract the archive into your <strong>SPT root folder</strong> (the one containing <code>BepInEx\\</code> and <code>EscapeFromTarkov_Data\\</code>)</li>\n<li>Client files land in <code>BepInEx\\plugins\\QuickSell\\</code></li>\n<li>Server files land in <code>SPT_Runtime\\user\\mods\\QuickSell\\</code></li>\n<li>Start SPT</li>\n</ol>\n<p>Requires <strong>SPT 4.1.3</strong>. Will not work on 4.0.x.</p>\n<p><strong>Optional:</strong> UI Fixes 6.0.0+ for multi-select selling.\n<strong>Server component:</strong> optional but recommended \u2014 without it, flea prices are unavailable in raid.</p>\n<h2>Configuration</h2>\n<p>Settings are in the <strong>F12 menu</strong> under QuickSell, split into Selling, Tooltips, and Colors.\nTier colours are edited in <code>BepInEx\\plugins\\QuickSell\\config.json</code>.</p>\n<h2>Uninstalling</h2>\n<p>Delete <code>BepInEx\\plugins\\QuickSell\\</code> and <code>SPT_Runtime\\user\\mods\\QuickSell\\</code>. Nothing is written to your profile.</p>\n<h2>Network activity</h2>\n<p>The client fetches the flea price table once at startup from <strong>your own local SPT server</strong> (<code>/quicksell/getFleaPrices</code>).</p>\n<h2>Fika</h2>\n<p>Works on client and server. Detects headless clients and disables itself there. Prices are fetched once per session, never polled, so shared servers aren\u2019t hammered.</p>\n<hr />\n<p>If you\u2019d like to support my work, you can <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/its_blackhawk\" rel=\"noreferrer noopener\">buy me a coffee</a> \u2615</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/P8JYEKM0WTs5E2UWUw5fEoAhGmKBveXpK9tDtTcu.png",
    "forge_url": "https://sp-mod.com/mod/2955/quicksell",
-   "downloads": 509,
-   "favourites": 5,
+   "downloads": 673,
+   "favourites": 6,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -189850,12 +189850,24 @@
    ],
    "versions": [
     {
+     "id": 14995,
+     "version": "3.2.3",
+     "description": "<h2>Fixed</h2>\n<ul>\n<li><strong>\u201cItem not found in inventory\u201d when listing on the flea</strong> \u2014 the confirmation\nflow ran twice once flea prices were cached, so the second pass tried to list\nitems the first had already listed. The offer went up, but you got an error.\nFixed by <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/925316\" rel=\"noreferrer noopener\">925316</a> in #1.</li>\n<li><strong>Sale could silently do nothing</strong> if a price lookup for the same item was\nalready in progress (started by a tooltip). The confirmation window never\nappeared. Callbacks now queue behind an in-flight request instead of being\ndropped.</li>\n</ul>\n",
+     "spt_constraint": "4.1.3",
+     "fika": "compatible",
+     "downloads": 48,
+     "size": 33200,
+     "link": "https://sp-mod.com/mod/download/2955/quicksell/3.2.3",
+     "published_at": "2026-08-26T12:26:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 14991,
      "version": "3.2.2",
      "description": "<h2>Fixed</h2>\n<ul>\n<li><strong>Trader price sometimes missing from tooltips</strong> \u2014 the first tooltip after\ntraders loaded asked for prices before the game had finished fetching them\nfrom the server, got nothing back, and cached that empty result. It stayed\nmissing until something cleared the cache, which is why the \u201cRefresh flea\nprices\u201d button appeared to fix it. Incomplete results are no longer cached,\nso the next hover fills them in.</li>\n</ul>\n",
      "spt_constraint": "4.1.3",
      "fika": "compatible",
-     "downloads": 80,
+     "downloads": 194,
      "size": 32789,
      "link": "https://sp-mod.com/mod/download/2955/quicksell/3.2.2",
      "published_at": "2026-08-26T04:11:00.000000Z",
@@ -189879,14 +189891,14 @@
      "description": "<p>SPT 4.1.3 port. All credit to the original author, <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/TadMaj/Tarkov-QuickSell\" rel=\"noreferrer noopener\">TadMaj</a>.</p>\n<h2>Features</h2>\n<ul>\n<li>Right-click any stash item for <strong>QuickSell (Flea)</strong> and <strong>QuickSell (Trader)</strong></li>\n<li>Keybinds: <code>N</code> flea, <code>M</code> traders</li>\n<li><strong>Price tooltips</strong> \u2014 best trader price and flea price on hover, colour-coded by value</li>\n<li><strong>Multi-select</strong> \u2014 with UI Fixes, sell many items in one confirmation</li>\n<li>Flea prices work in raid (needs the included server mod)</li>\n</ul>\n<h2>Installation</h2>\n<p>Extract into your <strong>SPT root folder</strong> (the one containing <code>BepInEx\\</code> and <code>EscapeFromTarkov_Data\\</code>).\nClient goes to <code>BepInEx\\plugins\\QuickSell\\</code>, server to <code>SPT_Runtime\\user\\mods\\QuickSell\\</code>.</p>\n<p>The server mod is optional \u2014 without it, flea prices aren\u2019t available in raid.</p>\n<h2>Configuration</h2>\n<p>F12 menu under QuickSell. Tier colours in <code>BepInEx\\plugins\\QuickSell\\config.json</code>.</p>\n<hr />\n<p>If you\u2019d like to support my work, you can <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/its_blackhawk\" rel=\"noreferrer noopener\">buy me a coffee</a> \u2615</p>\n",
      "spt_constraint": "4.1.3",
      "fika": "compatible",
-     "downloads": 337,
+     "downloads": 339,
      "size": 32363,
      "link": "https://sp-mod.com/mod/download/2955/quicksell/3.2.0",
      "published_at": "2026-08-25T16:10:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "3.2.2",
+   "latest_version": "3.2.3",
    "spt_constraint": "4.1.3",
    "all_spt_constraints": [
     "4.1.3"
@@ -189894,7 +189906,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-08-25T16:13:00.000000Z",
-   "updated_at": "2026-08-26T04:12:05.000000Z",
+   "updated_at": "2026-08-26T12:27:05.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
@@ -190046,6 +190058,89 @@
    },
    "origin": "forge",
    "delisted": true
+  },
+  {
+   "id": 2957,
+   "hub_id": null,
+   "guid": "com.20fpsguy.mialounge",
+   "name": "MIA-Lounge",
+   "slug": "mia-lounge",
+   "teaser": "adding minigames to play while spectating your friend inraid or waiting in the main menu for them",
+   "description_html": "<h1>MIA Lounge</h1>\n<p><strong>your friend died and is blasting Tiktok on full volume through his headset after dying? well then this mod is for you!</strong></p>\n<p>MIA Lounge puts a small arcade on your SPT server. Open a page in a browser, pick your\nprofile, and play something against a bot or against whoever else is dead right now.\nWinnings are real: XP and roubles, paid into your profile through your in-game messages.</p>\n<p>It is a server mod only. Only the server needs it, the same as a headless. Nobody else installs anything</p>\n<hr />\n<h2>How it works</h2>\n<ol>\n<li>You die. You back out to the menu like normal.</li>\n<li>On a second monitor, a phone, or an alt-tab, you open <code>https://&lt;your server ip&gt;:6969/mia</code>.</li>\n<li>You pick your profile from the list and play.</li>\n<li>When you are back in the menu, you press <strong>pay it out</strong> and everything you won arrives\nas a single in-game message.</li>\n</ol>\n<hr />\n<h2>The games</h2>\n<h3>Kit Duel</h3>\n<p>The headline game, and the one built on real data. Both players get <strong>250,000 roubles</strong>,\nthe <strong>same caliber</strong>, and the <strong>same four offers per slot</strong> drawn from the actual item\ndatabase: weapon, ammo, chest plate, head armor, with real ergonomics, penetration, armor\nclass, durability and handbook prices.</p>\n<p>You build a kit. They build a kit. Neither of you sees the other\u2019s until both are locked.\nThen the fight plays out shot by shot in a log: who shoots first on ergonomics, what\npenetrated what, armor durability coming off plate by plate, damage by hit location.</p>\n<p>There is no dice roll to hide behind. If your ammo could not get through their plate, you\nwatch it fail to get through their plate.</p>\n<h3>Ballistics</h3>\n<p>Ammo top trumps on the real ballistics table. Twelve rounds. Both players turn a cartridge,\nthe caller names a stat penetration, damage, armor damage, fragmentation, price and the\nhigher card takes the round. Take the round and you call the next one.</p>\n<p>Cards are never captured and never come back around, so a round is only ever about the two\nin front of you. Most rounds after twelve wins it.</p>\n<p>It is a knowledge game wearing a card game\u2019s clothes, which is why the arguing about\nwhether 5.45 BT beats M855A1 works so well.</p>\n<h3>Tic-tac-toe</h3>\n<p>do i really need to explain this?</p>\n<hr />\n<h2>Winnings</h2>\n<p>Every win and draw is <strong>banked</strong>, not mailed. Nothing lands in your inbox on its own.</p>\n<p>That is deliberate. One message per win turns your inbox into spam, and a payout that\narrives the instant you win quietly tells everyone whether you are in a raid or in the\nmenu. Instead, wins pile up on your dashboard and you send the whole lot to yourself in one\nmessage when you are ready.</p>\n<table>\n<thead>\n<tr>\n<th></th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Win</td>\n<td>400 XP + 25,000 R</td>\n</tr>\n<tr>\n<td>Draw</td>\n<td>150 XP + 8,000 R</td>\n</tr>\n<tr>\n<td>Per-raid ceiling</td>\n<td>1,200 XP + 75,000 R</td>\n</tr>\n</tbody>\n</table>\n<p>::: warning\nCashing out is refused while you are in a raid. XP written to your profile mid-raid gets\noverwritten by the profile your client saves when the raid ends, so the button waits until\nyou are back in the menu. Your balance is safe in the meantime and survives a server\nrestart.\n:::</p>\n<p>Because dying on purpose should not be a business plan, there is a <strong>cap per raid</strong>. Play\nall you like; the payout stops at the ceiling. Every number above is configurable, and\nserver owners who think games played from the main menu should pay nothing can set that\ntoo.</p>\n<hr />\n<h2>Other things it does</h2>\n<ul>\n<li><strong>Rematch without leaving.</strong> One button against a bot. Against a person it is a vote, and\npressing it again takes your vote back.</li>\n<li><strong>Knows who is looking.</strong> If someone has an open table waiting for an opponent, you see it\nfrom anywhere in the lounge, and the game they are waiting at lights up.</li>\n<li><strong>Remembers.</strong> Wins, draws, losses and your last cash-out, plus a table of everyone on the\nserver.</li>\n<li><strong>English and German</strong>, switchable per person, remembered per browser.</li>\n<li><strong>Sensible profile list.</strong> Your Fika headless and characters that have never been in a\nraid are filtered out, so the picker is the handful of people who could actually be sitting\ndead right now.</li>\n<li><strong>Works on a phone.</strong> because why not lol nothing special but cant wait for that to be stolen from my repo and a new mod adding something mobile exclusive or some shit</li>\n</ul>\n<h2>Configuration</h2>\n<p><code>config/config.json</code>, written on first run.</p>\n<table>\n<thead>\n<tr>\n<th>Setting</th>\n<th>Default</th>\n<th>What it does</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>winXp</code> / <code>winRoubles</code></td>\n<td>400 / 25000</td>\n<td>Paid for a win, before the cap</td>\n</tr>\n<tr>\n<td><code>drawXp</code> / <code>drawRoubles</code></td>\n<td>150 / 8000</td>\n<td>Paid for a draw</td>\n</tr>\n<tr>\n<td><code>perRaidXpCap</code></td>\n<td>1200</td>\n<td>Most XP one raid can produce. <code>0</code> removes the cap</td>\n</tr>\n<tr>\n<td><code>perRaidRoubleCap</code></td>\n<td>75000</td>\n<td>Most roubles one raid can produce. <code>0</code> removes the cap</td>\n</tr>\n<tr>\n<td><code>payForMenuPlay</code></td>\n<td><code>true</code></td>\n<td>Whether games played from the main menu pay at all</td>\n</tr>\n<tr>\n<td><code>autoCashOut</code></td>\n<td><code>false</code></td>\n<td>Pay the balance out on its own once you leave the raid</td>\n</tr>\n<tr>\n<td><code>bankMaxAgeDays</code></td>\n<td>14</td>\n<td>Drop unclaimed winnings older than this. <code>0</code> keeps them forever</td>\n</tr>\n<tr>\n<td><code>showAllProfiles</code></td>\n<td><code>false</code></td>\n<td>List every profile, headless and never-played included</td>\n</tr>\n<tr>\n<td><code>hiddenProfiles</code></td>\n<td><code>[]</code></td>\n<td>Nicknames to keep out of the picker</td>\n</tr>\n</tbody>\n</table>\n<p>Set the payouts to zero and it is a free arcade. Set the caps to zero and it is a very\ngenerous one.</p>\n<p>::: information\nItem stats, prices and names come from your own server\u2019s database,\nso whatever content mods you run show up in the offers.\n:::</p>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/jLDV4IdSXVpiY5twiGkqDVgCb9EeXlQxBnDlHsSX.png",
+   "forge_url": "https://sp-mod.com/mod/2957/mia-lounge",
+   "downloads": 7,
+   "favourites": 0,
+   "featured": false,
+   "fika": true,
+   "fika_latest": "compatible",
+   "category": {
+    "id": 17,
+    "title": "Other",
+    "slug": "other"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 43600,
+     "name": "20fpsguy",
+     "avatar": "https://files.sp-mod.com/profile-photos/K5dcn99iSoBK3zKI9TdB8wljTr67c8Jrk2Ikd3bW_256w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/diemitze/MIA-Lounge",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 14993,
+     "version": "1.0.0",
+     "description": "<p>release</p>\n",
+     "spt_constraint": "4.1.3",
+     "fika": "compatible",
+     "downloads": 7,
+     "size": 68322,
+     "link": "https://sp-mod.com/mod/download/2957/mia-lounge/1.0.0",
+     "published_at": "2026-08-26T11:25:00.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 14994,
+     "version": "1.0.0",
+     "description": "<p>Release</p>\n",
+     "spt_constraint": "4.0.13",
+     "fika": "compatible",
+     "downloads": 0,
+     "size": 67398,
+     "link": "https://sp-mod.com/mod/download/2957/mia-lounge/1.0.0",
+     "published_at": "2026-08-26T11:25:00.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "1.0.0",
+   "spt_constraint": "4.1.3",
+   "all_spt_constraints": [
+    "4.0.13",
+    "4.1.3"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-08-26T11:25:00.000000Z",
+   "updated_at": "2026-08-26T11:37:44.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": true,
+    "ai_disclosure": "<p>AI was used for making the UI and designing the minigames</p>\n",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge",
+   "delisted": false
   }
  ]
 }
