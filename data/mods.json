@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-29T10:13:33Z",
+ "generated_at": "2026-08-29T16:47:53Z",
  "source": "https://sp-mod.com",
  "filter": "all",
  "mod_count": 1907,
@@ -92778,12 +92778,12 @@
    "teaser": "Client mod that allows bots to play additional voice lines upon dying.",
    "description_html": "<p><strong>Overview</strong></p>\n<p>This mod adds a chance for characters to play OnAgony sound effects when they die.</p>\n<p><strong>Background</strong></p>\n<p>Currently live EFT, characters play either OnAgony or OnDeath sound effects upon dying, regardless of the type of damage received. However, in SPT, OnAgony effects only trigger from specific damage types like grenade or bleedout. This mod adjusts that behavior, giving OnAgony a configurable chance (Default at 50%) to play upon death, regardless of damage type, to better mimic live EFT.</p>\n<p><strong>Specifics</strong> For weapon-induced damage types like bullets and melee, the mod will roll a chance to decide whether to play OnDeath or OnAgony sounds. The chance is adjustable via the in-game F12 menu.</p>\n<p>For non-weapon-induced damage types, status effects such as light/heavy bleeding, exhaustion, or explosion will cause OnAgony to always play.</p>\n<p><strong>Install</strong></p>\n<p>Extract directly into SPT folder.</p>\n",
    "thumbnail": "",
-   "forge_url": "https://forge.sp-tarkov.com/mod/1831/agony-sfx",
-   "downloads": 30680,
-   "favourites": 39,
+   "forge_url": "https://sp-mod.com/mod/1831/agony-sfx",
+   "downloads": 31566,
+   "favourites": 45,
    "featured": false,
-   "fika": false,
-   "fika_latest": "unknown",
+   "fika": true,
+   "fika_latest": "compatible",
    "category": {
     "id": 12,
     "title": "Audio",
@@ -92797,7 +92797,7 @@
     {
      "id": 67028,
      "name": "inory",
-     "avatar": "https://forge-static.sp-tarkov.com/profile-photos/5407cc95b3e4237efbe7b7abfa1ec891482e0f92_128w.webp"
+     "avatar": "https://files.sp-mod.com/profile-photos/5407cc95b3e4237efbe7b7abfa1ec891482e0f92_128w.webp"
     }
    ],
    "source_links": [
@@ -92808,14 +92808,26 @@
    ],
    "versions": [
     {
+     "id": 15060,
+     "version": "1.2.0",
+     "description": "<h1>Changelogs</h1>\n<ul>\n<li>Updated for SPT 4.1</li>\n</ul>\n",
+     "spt_constraint": "~4.1.0",
+     "fika": "compatible",
+     "downloads": 183,
+     "size": 4120,
+     "link": "https://sp-mod.com/mod/download/1831/agony-sfx/1.2.0",
+     "published_at": "2026-08-29T11:44:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 12098,
      "version": "1.1.5",
      "description": "<h1>Changelogs</h1>\n<ul>\n<li>Updated for SPT 4.0.2</li>\n</ul>\n",
      "spt_constraint": "~4.0.0",
      "fika": "unknown",
-     "downloads": 13469,
+     "downloads": 14009,
      "size": 3503,
-     "link": "https://forge.sp-tarkov.com/mod/download/1831/agony-sfx/1.1.5",
+     "link": "https://sp-mod.com/mod/download/1831/agony-sfx/1.1.5",
      "published_at": "2025-10-31T18:44:52.000000Z",
      "dependencies": []
     },
@@ -92825,9 +92837,9 @@
      "description": "<h1>Changelogs</h1>\n<ul>\n<li>Updated for SPT 3.11.1</li>\n</ul>\n",
      "spt_constraint": "~3.11.0",
      "fika": "unknown",
-     "downloads": 8344,
+     "downloads": 8422,
      "size": null,
-     "link": "https://forge.sp-tarkov.com/mod/download/1831/agony-sfx/1.1.4",
+     "link": "https://sp-mod.com/mod/download/1831/agony-sfx/1.1.4",
      "published_at": "2025-03-28T10:00:33.000000Z",
      "dependencies": []
     },
@@ -92837,24 +92849,25 @@
      "description": "<h1>Changelogs</h1>\n<ul>\n<li>Updated for SPT 3.10</li>\n<li>Debug logging have been disabled by default to avoid flooding the output logs. If you encounter issues or need to troubleshoot, you can enable them through the advanced options in the BepInEx menu.</li>\n</ul>\n<h1>Fika Compatibility</h1>\n<ul>\n<li>For Fika users, you still need to enable the optional patches to ensure compatibility if you\u2019re using this mod with Fika.</li>\n<li>I will update the mod to remove the optional patches once they are no longer needed. Until then, please keep them enabled as they are necessary.</li>\n</ul>\n<h1>Note:</h1>\n<p>I\u2019ve come to notice that in 3.10 the bot voice lines, particularly death sounds, have become <strong>significantly quieter</strong> compared to previous versions. Unfortunately, this is not something I have the ability to modify. As the cause could potentially be due to BSG\u2019s audio rework in patch 0.15.</p>\n",
      "spt_constraint": "~3.10.0",
      "fika": "unknown",
-     "downloads": 2115,
+     "downloads": 2143,
      "size": null,
-     "link": "https://forge.sp-tarkov.com/mod/download/1831/agony-sfx/1.1.2",
+     "link": "https://sp-mod.com/mod/download/1831/agony-sfx/1.1.2",
      "published_at": "2024-11-28T12:08:02.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.1.5",
-   "spt_constraint": "~4.0.0",
+   "latest_version": "1.2.0",
+   "spt_constraint": "~4.1.0",
    "all_spt_constraints": [
     "~3.10.0",
     "~3.11.0",
-    "~4.0.0"
+    "~4.0.0",
+    "~4.1.0"
    ],
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2024-11-09T16:58:00.000000Z",
-   "updated_at": "2026-07-28T06:12:03.000000Z",
+   "updated_at": "2026-08-29T11:45:07.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -115846,10 +115859,10 @@
    "name": "Air Filter Warning",
    "slug": "air-filter-warning",
    "teaser": "Tired of forgetting about air filter when you exit the game? Maybe this mod will help you save your precious FP-100 filters.",
-   "description_html": "<h3>Air Filter Warning</h3>\n<p>A simple mod that adds warning message before exiting the game when air filter is still working in your hideout.</p>\n<p>SPT 3.10.5 version is available on <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/danx91/AirFilterWarning/releases/tag/v1.0.0-3.10.5\" rel=\"noreferrer noopener\">GitHub</a></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/danx91/AirFilterWarning/refs/heads/main/images/showcase.png\" alt=\"showcase.png\" /></p>\n<h3>Installation</h3>\n<ol>\n<li>Make sure that SPT Client is not running</li>\n<li>Press download button on top of this page or head to <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/danx91/AirFilterWarning/releases\" rel=\"noreferrer noopener\">releases page</a> on GitHub</li>\n<li>Download correct version for your SPT</li>\n<li>Open zip file</li>\n<li>Drag and drop BepInEx directory to your SPT directory</li>\n<li>Start game and make sure that mod is working</li>\n</ol>\n<h3>Old Versions</h3>\n<p>You can download other versions of this mod (3.10.5, 3.11) on <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/danx91/AirFilterWarning/releases/\" rel=\"noreferrer noopener\">GitHub</a></p>\n<h3>License</h3>\n<p><strong>Copyright \u00a9 2025 danx91 (aka ZGFueDkx)</strong>\nThis software is distributed under GNU GPLv3 license</p>\n<p><em>If you believe that this software infringes yours or someone else\u2019s copyrights, please contact me via Discord to resolve this issue: <strong>danx91</strong></em></p>\n",
+   "description_html": "<h3>Air Filter Warning</h3>\n<p>A simple mod that adds warning message before exiting the game when air filter is still working in your hideout.</p>\n<p>SPT 3.10.5 and 4.0 version is available on <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/danx91/AirFilterWarning/releases/\" rel=\"noreferrer noopener\">GitHub</a></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/danx91/AirFilterWarning/refs/heads/main/images/showcase.png\" alt=\"showcase.png\" /></p>\n<h3>Installation</h3>\n<ol>\n<li>Make sure that SPT Client is not running</li>\n<li>Press download button on top of this page or head to <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/danx91/AirFilterWarning/releases\" rel=\"noreferrer noopener\">releases page</a> on GitHub</li>\n<li>Download correct version for your SPT</li>\n<li>Open zip file</li>\n<li>Drag and drop BepInEx directory to your SPT directory</li>\n<li>Start game and make sure that mod is working</li>\n</ol>\n<h3>Old Versions</h3>\n<p>You can download other versions of this mod (3.10.5, 3.11) on <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/danx91/AirFilterWarning/releases/\" rel=\"noreferrer noopener\">GitHub</a></p>\n<h3>License</h3>\n<p><strong>Copyright \u00a9 2026 danx91 (aka ZGFueDkx)</strong>\nThis software is distributed under GNU GPLv3 license</p>\n<p><em>If you believe that this software infringes yours or someone else\u2019s copyrights, please contact me via Discord to resolve this issue: <strong>danx91</strong></em></p>\n<p>If you enjoy my work, you can <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/zgfuedkx\" rel=\"noreferrer noopener\">support me on ko-fi</a>.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/2820.png",
    "forge_url": "https://sp-mod.com/mod/2129/air-filter-warning",
-   "downloads": 2663,
+   "downloads": 2730,
    "favourites": 10,
    "featured": false,
    "fika": true,
@@ -115867,7 +115880,7 @@
     {
      "id": 73890,
      "name": "ZGFueDkx",
-     "avatar": "https://files.sp-mod.com/profile-photos/352c8281e470cbedd79fc9c25ddd2fc08ad5b0f3_128w.webp"
+     "avatar": "https://files.sp-mod.com/profile-photos/shFV6dfE8m11qwxD5J6PxOHSA7UmZSVBRTyrvJzQ_256w.webp"
     }
    ],
    "source_links": [
@@ -115878,12 +115891,24 @@
    ],
    "versions": [
     {
+     "id": 15064,
+     "version": "1.2.0",
+     "description": "<ul>\n<li>Updated to work with SPT 4.1</li>\n</ul>\n",
+     "spt_constraint": "~4.1",
+     "fika": "compatible",
+     "downloads": 14,
+     "size": 3954,
+     "link": "https://sp-mod.com/mod/download/2129/air-filter-warning/1.2.0",
+     "published_at": "2026-08-29T15:52:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 12504,
      "version": "1.1.0",
      "description": "<p>Updated for SPT 4.0</p>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 1271,
+     "downloads": 1317,
      "size": 3927,
      "link": "https://sp-mod.com/mod/download/2129/air-filter-warning/1.1.0",
      "published_at": "2025-12-02T22:56:47.000000Z",
@@ -115895,23 +115920,24 @@
      "description": "<p>Initial version</p>\n",
      "spt_constraint": "~3.11.0",
      "fika": "compatible",
-     "downloads": 1392,
+     "downloads": 1399,
      "size": null,
      "link": "https://sp-mod.com/mod/download/2129/air-filter-warning/1.0.0",
      "published_at": "2025-05-07T19:54:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.1.0",
-   "spt_constraint": "~4.0.0",
+   "latest_version": "1.2.0",
+   "spt_constraint": "~4.1",
    "all_spt_constraints": [
     "~3.11.0",
-    "~4.0.0"
+    "~4.0.0",
+    "~4.1"
    ],
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2025-05-07T19:54:00.000000Z",
-   "updated_at": "2026-07-28T06:59:24.000000Z",
+   "updated_at": "2026-08-29T16:33:37.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -145005,11 +145031,11 @@
    "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Description</div>\n<div class=\"tab-content\"><blockquote>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/TVSWn06.jpeg\" alt=\"ISBAishi\" /></p>\n</blockquote>\n<hr />\n<blockquote class=\"is-warning\">\n<p>\u26a0\ufe0fAishi is locked by default. To unlock her, you must complete the Jaeger questline \u201cOutsourcing Labor.\u201d</p>\n</blockquote>\n<hr />\n<blockquote>\n<p>\ud83d\udea8 <strong>Advice for Lore Enthusiasts</strong>: The ISB is an original faction and has no connection to the canonical events of E***************** or Contract Wars. However, references to past events and canonical elements, as well as those mentioned after 1.0, have been added to the faction\u2019s history and quests, in addition to original stories.</p>\n<p>The idea behind the ISB is to provide some external support to the U*** faction, as if there were an internal agency responsible for taking on high-risk cases. Since the B**** were created by a secret decree of the Russian Federation Government, operate in their own country and have the <del>support</del> of the RUAF, UNTAR has plans that do not involve either side, T********* is weakened in T*****, and Black Division is trying to clean up the evidence from both sides. U*** needed help.</p>\n</blockquote>\n<hr />\n<p><strong>Aishi is the Deputy Director and the Field Commander of the Intelligence Support Bureau (ISB), a special forces division of U</strong>* that provides tactical and operational support for the corporation\u2019s high-risk operations.**</p>\n<p><strong>After T</strong>*******\u2019s substantial betrayal, in addition to U***\u2019s high command neglecting the PMCs in the field and the entire operation, Aishi sent her own ISB task force to investigate.**</p>\n<p><strong>The results caused a major change in her current perspective on the conflict, on the PMCs, and on T</strong>*******.**</p>\n<hr />\n<ol>\n<li>Ensure that you have <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/sp-tarkov/build/releases#:~:text=Compare-,SPT%204.0.1%20(40087),-Requires%20EFT%200.16.9\" rel=\"noreferrer noopener\">SPT 4.0.3</a> or <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/installer\" rel=\"noreferrer noopener\">higher</a> installed.</li>\n<li>Ensure you have the dependency <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2310/wtt-commonlib\" rel=\"noreferrer noopener\">WTT - CommonLib</a>  2.0.23 or higher installed.</li>\n<li>Ensure you have the dependency <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2512/wtt-content-backport\" rel=\"noreferrer noopener\">WTT - Content Backport</a> 1.1.0 or higher installed.</li>\n<li>Download the latest version of <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2478/testing\" rel=\"noreferrer noopener\">Aishi</a>.</li>\n<li>Unzip the file and move the files to your SPT installation as shown in the GIF below.\n<img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/wByb5Ln.gif\" alt=\"Install\" /></li>\n</ol></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Languages</div>\n<div class=\"tab-content\"><p>Initially, Aishi does not have many languages available. I have a good knowledge of English, but as it is not my native language, there may be some inconsistencies.</p>\n<p>I made an effort to include this language in the first version anyway. I asked some friends to review it and used translators for some words, so any reports of errors in this localization are much appreciated.</p>\n<blockquote>\n<p>The 1.0 <strong>Aishi</strong> version currently supports the following languages.</p>\n<ul>\n<li>English</li>\n<li>Portuguese</li>\n<li>Chinese (By <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/21463/hiddencirno\" rel=\"noreferrer noopener\">HiddenCirno</a>)</li>\n</ul>\n</blockquote></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">What to expect</div>\n<div class=\"tab-content\"><ul>\n<li>New Faction</li>\n</ul>\n<p>The Intelligence Support Bureau (ISB) is a U*** division operating as a private military intelligence agency, offering field support, advanced protection services, counterintelligence, and strategic planning.</p>\n<p>Aishi\u2019s purpose is to serve as the hub for the ISB faction in SPT. Connected to her, the first companion mod \u201cISB Special Forces\u201d is already functional (which is what I am waiting for), and new content is expected to be integrated into it.</p>\n<hr />\n<ul>\n<li>Deep Lore Based Quests</li>\n</ul>\n<p>Aishi offers several questlines that work in a linear fashion where you can explore the history of the faction as well as stories from other related factions during a campaign that explores events prior to the widespread evacuation of Terminal.</p>\n<hr />\n<ul>\n<li>Progressive Quest lines.</li>\n</ul>\n<p>In addition to linear stories, you can explore various progressive missions that simulate complex ISB team operations, as well as missions to upgrade combat skills, healing, and mastery of specific weapons to unlock powerful items in the assortment, crafts, and unique equipment.</p>\n<hr />\n<ul>\n<li>Customized and modified items.</li>\n</ul>\n<p>Some quests or ISB Special Forces Operators may provide some customized and personalized equipment or ammunition. The ISB specializes in night operations, so you can find many variants of Body Armors, Chest Rigs, or Backpacks in black or night camouflage, as well as special items such as ammunition or keys.</p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Unique Features</div>\n<div class=\"tab-content\"><p><strong>ADVANCED INSURANCE</strong>\n<em>Aishi offers a special item insurance system. It sends its best agents on patrols across the maps, ensuring fast service with a response time of 1 to 6 hours. The insurance price starts out high and decreases as your loyalty level with Aishi rises.</em></p>\n<hr />\n<p><strong>ADVANCED REPAIR</strong>\n<em>ISB\u2019s specialized engineers contribute to a highly efficient item repair service with an extremely low rate of permanent damage to the item.</em></p>\n<hr />\n<p><strong>CUSTOMIZATION</strong>\n<em>ISB has several operators from different factions who had to undergo visual adjustments to meet the standards. You can purchase various customizations from the Aishi store directly with dollars or after earning achievements or completing missions.</em></p>\n<hr />\n<p><strong>NEW EQUIPMENT FOR BOTS</strong></p>\n<ul>\n<li>Rogues and Goons: <em>The Rogues maintain a lucrative alliance with the ISB. They provide intelligence and act as intermediaries with the Lightkeeper in exchange for cutting-edge equipment and ammunition. Once you install Aishi, you\u2019ll be able to find Rogues\u2014or even Goons\u2014using exclusive ISB equipment.</em></li>\n<li>RUAF (Remnants): <em>The ISB faced many problems with corrupt UNTAR officers in getting through specific roadblocks around T</em>****; after completely breaking ties with the U***, they approached the RUAF because they shared a common interest: ending the war once and for all. As part of this mutual collaboration, the RUAF assists with the passage of ISB cargo and personnel through roadblocks, while the ISB provides modern equipment and ammunition.*</li>\n</ul>\n<hr />\n<p><strong>COLLABORATIVE STORY QUESTLINES</strong>\n<em>If you have installed <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1232/lotus\" rel=\"noreferrer noopener\">Lotus</a> you\u2019ll see exclusive related questlines.</em></p>\n<hr /></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Recommended mods</div>\n<div class=\"tab-content\"><ul>\n<li>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2485/isb-special-forces\" rel=\"noreferrer noopener\">ISB Special Forces</a> - My mod that adds Custom Bots is highly recommended for use with Aishi. In addition to providing greater immersion in the ISB operator level, it also provides greater access to the customized equipment made available by Aishi.</p>\n</li>\n<li>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/7768/tacticaltoaster#mods\" rel=\"noreferrer noopener\">TacticalToaster Bot Mods</a> - The three TacticalToaster mods that add custom bots are highly recommended for a better experience with Aishi and the Faction missions. . <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2342/untar-go-home\" rel=\"noreferrer noopener\">UNTAR Go Home!</a>, <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2427/ruaf-come-home\" rel=\"noreferrer noopener\">RUAF Come Home!</a>, and the latest <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2511/wtt-black-division-redacted-home\" rel=\"noreferrer noopener\">WTT - Black Division [REDACTED] Home.</a> Some quests from both Aishi and other Traders involve these custom bots, and although it is possible to complete them without them, it is highly recommended for the best experience.</p>\n</li>\n<li>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2686/quest-presence-detector\" rel=\"noreferrer noopener\">Quest Presence Detector</a> - No description needed bro, just download it. Its perfect.</p>\n</li>\n<li>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2239/couturier-gear-and-clothing-pack\" rel=\"noreferrer noopener\">Couturier</a> - Couturier is highly recommended, not because it works with Aishi, but because it has really cool content. As I mentioned in the credits, turbodestroyer helped me immensely with the retextures, and if you want items in other colors, Couturier is the best option.</p>\n</li>\n<li>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1431/dynamic-maps\" rel=\"noreferrer noopener\">Dynamic Maps</a> - Aishi has many different quests and objectives. For better guidance and to understand exactly where each location is, Dynamic Maps is a highly recommended choice.</p>\n</li>\n<li>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2025/all-quests-checkmarks\" rel=\"noreferrer noopener\">All Quests Checkmarks</a> - This mod is one of my favorites when I play SPT with other Custom Traders, and since Aishi requires a lot of specific items in some missions. It can be a great option if you want to plan ahead to save FIR items.</p>\n</li>\n<li>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/861/morecheckmarks\" rel=\"noreferrer noopener\">MoreCheckmarks</a> - The same goal as All Quests Checkmarks. I always use one of the two with the same purpose, since both are extremely efficient at it.</p>\n</li>\n<li>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2430/odts-item-info-spt-40\" rel=\"noreferrer noopener\">ODT\u2019s Item Info</a> - Following the same premise as before. Planning certain items to save space in Stash is very efficient, and ODT\u2019s Item Info can greatly optimize this space and information to facilitate the delivery of items to Aishi.</p>\n</li>\n<li>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2480/barteritemsstacks\" rel=\"noreferrer noopener\">BarterItemsStacks</a> - Still talking about items. Lack of space is something that always bothers me, and even when I fill up my Stash with boxes, it still seems to happen. Combining barter items is great, and I also recommend it for a better experience with Aishi.</p>\n</li>\n<li>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1343/skipper\" rel=\"noreferrer noopener\">Skipper</a> - I can\u2019t exactly say that I recommend Skipper because that would technically be encouraging people not to do my quests, or am I overthinking this? Hahaha. Anyway, every player has the right to skip a quest, so if you find one too boring, feel free to use Skipper!</p>\n</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Planned/Not Planned features and content</div>\n<div class=\"tab-content\"><blockquote class=\"is-info\">\n<p>Unfortunately, my routine is a bit exhausting, so much so that this mod took about 9 months to complete. Honestly, I don\u2019t know if that\u2019s a lot, but I think so. If I had more time, it would have been faster -_-</p>\n<p>Anyway, whenever I have the opportunity to dedicate myself to building and developing the mod, I will. I\u2019ll also leave here some future plans and also what won\u2019t be done (maybe until I change my mind).</p>\n</blockquote>\n<hr />\n<p><strong>Planned:</strong></p>\n<ul>\n<li>More quests and items.</li>\n</ul>\n<p><em>Working on Aishi\u2019s quests was fun, and I intend to eventually create new quest lines, new content, customized items, and continue developing the ISB story in T</em>****.*</p>\n<ul>\n<li>Updating Existing Quests.</li>\n</ul>\n<p><em>I created most of the quests with some specific ideas in mind, and it\u2019s possible that as time goes by, some may prove to be too simple or challenging in a bad way, so I plan to rebalance some if they prove to be inconsistent.</em></p>\n<ul>\n<li>Improve the texture of some of the custom items.</li>\n</ul>\n<p><em>Some of Aishi\u2019s custom items, such as ISB Body Armor or Chest Rigs, have unique textures and colors. I am still figuring out the best tools I can use to customize them in the best way possible (I am currently using PS), but I intend to improve the textures and come up with cooler designs.</em></p>\n<hr />\n<p><strong>Unplanned:</strong></p>\n<ul>\n<li>Backport to SPT 3.x</li>\n</ul>\n<p><em>I thought about this at the beginning, and I know that many players still play this version of SPT, but it would take a lot of effort that I am not willing to put in at the moment. I made this mod after playing <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1232/lotus\" rel=\"noreferrer noopener\">Lotus</a> for a long time, and it served as the biggest inspiration for making Aishi. This mod was by far the mod I had the most fun with since I discovered SPT, so if you play SPT 3.x and don\u2019t know or haven\u2019t tried this mod, I highly recommend you give it a shot.</em></p>\n<ul>\n<li>Bringing new locales on my own.</li>\n</ul>\n<p><em>My native language is Portuguese, but I do have some knowledge of English <del>(C2 in the latest tests \ud83d\ude2d)</del>. Bringing the English version of the mod was quite complicated due to the amount of dialogue and text, and although I could have just put all the text through a common translator or AI, I believe that this would not have created a positive experience, as I would not have been able to review possible mistakes. If anyone would like to translate the mod into a specific language, I would greatly appreciate it. Just contact me and I can instruct you on how to do it. ^^</em></p></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">KNOWN ISSUES</div>\n<div class=\"tab-content\"><blockquote>\n<p>I\u2019m just getting started with mods for now, which means that some issues (hopefully minor ones) may arise.</p>\n<p>This tab will list some known issues. I always encourage reports of any issues found, and I will look into how to fix them and release a patch as soon as possible.</p>\n</blockquote>\n<ul>\n<li>\n<p><strong>Unable to access her assort or quests</strong> - If you have many Custom Traders, Aishi\u2019s interactive panel in the traders tab may be hidden behind other game interfaces, preventing you from clicking on it. You can enable the \u201cTrading intermediate screen\u201d option in the \u201cGame\u201d tab of your settings or install the <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1089/kaeno-traderscrolling\" rel=\"noreferrer noopener\">Kaeno-TraderScrolling</a> mod to solve this problem.</p>\n</li>\n<li>\n<p><strong>No access to Labs</strong> - Aishi adds several keycards that can be used to access Labs; however, if you are using <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/236/server-value-modifier-svm\" rel=\"noreferrer noopener\">SVM</a> with the <strong>\u201cRemove the Laboratory access keycard requirement\u201d</strong> feature, it completely overwrites the map\u2019s keycards access list, which can cause an issue that prevents access to Labs without a keycard or even with the Vanilla Keycard. Disable this feature or obtain one of the modified keycards to restore access to Labs.</p>\n</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-8\" class=\"tab-panel\"><div class=\"tab-title\">FAQ</div>\n<div class=\"tab-content\"><blockquote class=\"is-info\">\n<p>I spent some time thinking about questions that most people might have when they first try out the mod, and I want to list them here to make things easier for you.</p>\n</blockquote>\n<p><strong>What is ISB? Does it appear in EFT?</strong></p>\n<p><em>I\u2019ve included some additional details in the \u201cDescription\u201d tab, but to summarize: It\u2019s an original \u201cfaction\u201d that doesn\u2019t exist in the vanilla game or story. It\u2019s simply a reimagining of a special internal agency within U</em>**.*</p>\n<hr />\n<p><strong>I\u2019m having trouble with a quest / I can\u2019t find the objective.</strong></p>\n<p><em>I\u2019ve set up a channel on Discord with guides for all the quests that involve finding items or assembling weapons. You can access it via the \u201cDiscord for Quest Guides\u201d tab. If you don\u2019t have Discord and don\u2019t want to create an account, leave a comment and I\u2019ll reply as soon as possible.</em></p>\n<hr />\n<p><strong>I found a localization error in English!</strong></p>\n<p><em>Yeah\u2026 I figured that might happen. You can report it on Discord or in the comments, and I\u2019ll look into it as soon as possible.</em></p>\n<hr />\n<p><strong>I didn\u2019t like the style of the Aishi icon; it\u2019s too anime-like for my taste.</strong></p>\n<p><em>Everyone has different tastes, and that\u2019s perfectly fine. You can change her icon in \u201cSPT\\user\\mods\\ISB-Aishi\\db\u201d by replacing the file named \u201cAishi.png\u201d with any other image that is 235x235 pixels. I just ask that you <strong>under no circumstances modify the current image of Aishi using AI</strong>, since it was actually created by an artist who does not approve of the use of AI.</em></p></div></div>\n<div id=\"tabset-1-panel-9\" class=\"tab-panel\"><div class=\"tab-title\">Discord for Quest Guides</div>\n<div class=\"tab-content\"><p>At first, I thought about just answering questions about quests or feedback in the Forge comments, but I knew I\u2019d end up forgetting about them, so I decided to create a Discord server to centralize feedback, bug reports, questions, and anything else you\u2019d like to share.</p>\n<p>Here\u2019s the link to join \u2013&gt; <a target=\"_blank\" class=\"external-link\" href=\"https://discord.com/invite/AajQ7bH5A7\" rel=\"noreferrer noopener\">ISB Headquarters</a></p></div></div>\n<div id=\"tabset-1-panel-10\" class=\"tab-panel\"><div class=\"tab-title\">For the Beta Testers</div>\n<div class=\"tab-content\"><p><strong>Everyone involved in this project is new to modding, so all the feedback we received during both the closed and public testing phases was extremely important from start to finish, and I want to express my immense gratitude to everyone for their participation. We had over 100 people during the tests, most of whom were very engaged and contributed a great deal. Below, so that you testers don\u2019t get too lost and can see everything that\u2019s changed, I\u2019ll include some (extensive) update notes from both Aishi and ISB SOF</strong></p>\n<p><strong>As a token of our appreciation, all test participants\u2014whether they actively contributed or simply played\u2014have had their Discord and other platform usernames added to the ISB Operators\u2019 name pool. In addition, Aishi will be giving out a special reward to those who have completed the \u201cISB Testing\u201d mission on their current profile. (If you participated in the tests and reset your profile, I can guide you on how to claim the reward.)</strong></p>\n<hr />\n<p><strong>ISB Aishi Changes</strong></p>\n<blockquote>\n<p><strong>Services:</strong></p>\n<p><strong>Advanced Insurance:</strong> Aishi now offers the option to insure items with a fast turnaround (1\u20136 hours) for a higher fee. Modified ISB items remain ineligible for insurance.</p>\n<p><strong>Advanced Repair:</strong> Repair efficiency has been slightly reduced and the price slightly increased for better balance.</p>\n<p><strong>Customization:</strong> Many new outfits have been added, including variants of the ISB Daytime bots and White Tusks.</p>\n<p><strong>Assort:</strong> All prices have been adjusted, and more cool items have been added without quest restrictions\u2014such as backpacks, special ammunition, and medical supplies\u2014though some are still unlocked through quests.</p>\n</blockquote>\n<hr />\n<blockquote>\n<p><strong>Quests:</strong></p>\n<p><strong>Initial Storylines:</strong> Various quality-of-life adjustments to rewards and objective display.</p>\n<p><strong>New Questlines:</strong> The entire continuation of the \u201cSanitary Investigation\u201d questline is available, along with all follow-ups to the progression stories and the UNTAR story arc.</p>\n</blockquote>\n<hr />\n<blockquote>\n<p><strong>Items:</strong></p>\n<p><strong>Chest Armor &amp; Chest Rigs:</strong> Several new rigs and armor sets have been added, mainly heavy models like the Black Zabralo, as well as more helmets and rigs for daytime play</p>\n<p><strong>Cosmetics:</strong> For those who liked the gas masks and don\u2019t want to spend time hunting down ISB bots or spawns on other bots, an unarmored option has been added and is available at the Flea Market</p>\n<p><strong>Keycards:</strong> The ISB technically has a much higher access level than U*** agents during the T********* Contract, so all ISB keycards now open many more locations than just the Labs entrance turnstile : )</p>\n<p><strong>Ammo:</strong> All ammo types have been slightly rebalanced, and their models have also been updated for better visuals.</p>\n</blockquote>\n<hr />\n<blockquote>\n<p><strong>Systems</strong></p>\n<p><strong>Faction Banners:</strong> Think T***** has too many factions? Aishi will give you a free lesson. While the map is loading, several banners with descriptions and some fun facts about the various factions in the game will be visible, including the original ISB faction.</p>\n<p><strong>Bot Loadouts:</strong> Rogues, Goons, and RUAF (if installed) may spawn with ISB-exclusive gear\u2014after all, they value their partners.</p>\n</blockquote>\n<hr />\n<p><strong>ISB SOF Changes</strong></p>\n<blockquote>\n<p><strong>Balance:</strong> ISB Operators shouldn\u2019t be quite that\u2026 powerful, so they\u2019ve undergone some adjustments to better fit the new squad composition, where they are the weakest members.</p>\n<p><strong>Operator Health Points:</strong>\nHead: 65 \u2013&gt; 60</p>\n<p>Chest: 250 \u2013&gt; 225</p>\n<p>Stomach: 235 \u2013&gt; 190</p>\n<p>Arms: 115 \u2013&gt; 110</p>\n<p>Legs: 105 \u2013&gt; 105 (Same)</p>\n</blockquote>\n<hr />\n<blockquote>\n<p><strong>Operator Ammo:</strong>\nAll ammo with a high spawn probability has been replaced with a tier lower version. It will be more common to find ISB operators with slightly weaker ammo, although all the most powerful types will still remain in their active pool (but with a lower chance)</p>\n<p><strong>Most Common Ammunition by Caliber</strong>:</p>\n<p>556x45NATO: M995 \u2013&gt; M855A1</p>\n<p>762x51NATO: M993 \u2013&gt; M61</p>\n<p>46x30mm: AP SX \u2013&gt; FMJ SX</p>\n<p>762x35mm: .300 AP \u2013&gt; .300 CBJ</p>\n<p>762x39mm: MAI AP \u2013&gt; BP</p>\n<p>545x39: BS \u2013&gt; 7N40/BP</p>\n<p><strong>New Types of Bots:</strong>\nHaving just the operator was too simple; now ISB squads will be a bit more coordinated with 3 types of bots.</p>\n<p>ISB Team Leader: Always equipped with the best gear and ammunition, he prefers to stay at a distance while the rest of the team does the work.</p>\n<p>ISB Specialist: The team\u2019s heavyweight Breacher; armed with shotguns or LMGs, he provides suppressive fire while regular operators advance.</p>\n<p>March Five (\u201cThe Chosen One\u201d): A special secret boss that appears when certain conditions are met.</p>\n<p>March Six (\u201cThe Dark Lord\u201d): A special secret boss that appears when certain conditions are met.</p>\n<p><strong>New Events and Systems:</strong></p>\n<p>Blackout: A 50% base chance that all the lights in the Labs will go out if the ISB is present. Bring NVGs : )</p>\n<p>Conditional Truce: If you\u2019re at LL4 with Aishi, ISB bots won\u2019t be hostile toward you unless you eliminate one of them; if you do, they\u2019ll remain hostile for 6 raids.</p>\n<p>New radios and an exclusive voice line from Aishi\u2014after all, she coordinates her team from HQ, so you can hear her voice too. Everything is configurable via F12 (and we\u2019re also testing the radio effect).</p>\n</blockquote></div></div>\n<div id=\"tabset-1-panel-11\" class=\"tab-panel\"><div class=\"tab-title\">Special Thanks and Credits</div>\n<div class=\"tab-content\"><p><strong>Working on this mod was my first experience dealing with this language, methods, and SPT itself, as well as the way T</strong>*** works, which made it quite challenging. along with the development of <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2485/isb-special-forces\" rel=\"noreferrer noopener\">ISB Special Forces</a>. We checked out so many mods and asked so many people to understand how everything worked, and many experienced modders from the SPT community helped us immensely.**</p>\n<ul>\n<li>\n<p>Many thanks to <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/29460/lunnayaluna\" rel=\"noreferrer noopener\">Lunnayaluna</a>! It may be a bit random, but even though she didn\u2019t participate directly in this development, without <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1232/lotus\" rel=\"noreferrer noopener\">Lotus</a> this mod wouldn\u2019t exist. After playing with Lotus for many, many hours, I really felt how much care she put into developing the quests and everything around the Trader, and that inspired me to create my own Custom Trader. I wish Luna all the best and hope she is doing well.</p>\n</li>\n<li>\n<p>Many, many thanks to <a target=\"_blank\" class=\"external-link\" href=\"https://x.com/jukojin_\" rel=\"noreferrer noopener\">Juko</a> for the incredible artwork, perfectly reproduced the ideas for this respected and beautiful officer.</p>\n</li>\n<li>\n<p>A big thank you also to <a target=\"_blank\" class=\"external-link\" href=\"https://x.com/gkamikaze_d\" rel=\"noreferrer noopener\">DGkamikaze</a> for the incredible artwork featuring this awesome look of Aishi at Labs\u2014it\u2019s perfectly done.</p>\n</li>\n<li>\n<p>Many thanks to the <a target=\"_blank\" class=\"external-link\" href=\"https://www.welcometotarkov.com\" rel=\"noreferrer noopener\">WTT Team</a>, especially <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/30890/grooveypenguinx\" rel=\"noreferrer noopener\">GrooveypenguinX</a>. They helped with many specific questions on <a target=\"_blank\" class=\"external-link\" href=\"https://discord.com/invite/welcometotarkov\" rel=\"noreferrer noopener\">Discord</a> that were very important. I would also like to take this opportunity to thank the team once again for the <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2512/wtt-content-backport\" rel=\"noreferrer noopener\">Content Backport of 1.0</a>, which came much sooner than I had imagined. I was trying to backport some items from the <strong>Black Division</strong> to integrate into this mod, and it was very exhausting to learn, but their work greatly sped up the development of this mod. Furthermore, without <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2310/wtt-commonlib\" rel=\"noreferrer noopener\">WTT - CommonLib</a>, this mod would be completely impossible.</p>\n</li>\n<li>\n<p>Many thanks to <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/52282/archangelwtf\" rel=\"noreferrer noopener\">ArchangelWTF</a> for the <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/sp-tarkov/server-mod-examples\" rel=\"noreferrer noopener\">server mod examples</a> that were absolutely essential to get this one started.</p>\n</li>\n<li>\n<p>Many thanks to <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/9668/cwx\" rel=\"noreferrer noopener\">CWX</a> for allowing us to modify his <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/401/cwx-masterkey\" rel=\"noreferrer noopener\">Masterkey</a> code. It made the work much easier in this mod with the extremely functional code he developed.</p>\n</li>\n<li>\n<p>Many thanks to <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/71742/turbodestroyer\" rel=\"noreferrer noopener\">turbodestroyer</a> for teaching me how to retexture items. Originally, the plan for the <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2485/isb-special-forces\" rel=\"noreferrer noopener\">ISB Special Forces</a> mod was to integrate it with <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2239/couturier-gear-and-clothing-pack\" rel=\"noreferrer noopener\">Couturier\u2019s</a> items, but since he was already using <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2478/ISB-Aishi\" rel=\"noreferrer noopener\">Aishi\u2019s</a> resources, I couldn\u2019t find a way to do that, but it\u2019s still in the plans.</p>\n</li>\n<li>\n<p>Many thanks to <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/48110/acidphantasm\" rel=\"noreferrer noopener\">AcidPhantasm</a>, <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/13652/arys\" rel=\"noreferrer noopener\">Arys</a>, <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/33963/cj\" rel=\"noreferrer noopener\">Cj</a>, <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/27605/drakiaxyz\" rel=\"noreferrer noopener\">DrakiaXYZ</a>, <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/21463/hiddencirno\" rel=\"noreferrer noopener\">HiddenCirno</a>, <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/36153/epicrangetime\" rel=\"noreferrer noopener\">EpicRangeTime</a>, <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/28568/dsnyder\" rel=\"noreferrer noopener\">Dsnyder</a>, <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/29457/jehree\" rel=\"noreferrer noopener\">Jehree</a>, <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/63875/lycorisoni\" rel=\"noreferrer noopener\">LycorisOni</a> and many others who also answered many questions about key elements for the development of this mod. I sincerely apologize if I forgot anyone; every bit of help was greatly appreciated.  \ud83d\udc9c</p>\n</li>\n<li>\n<p>Many thanks to Vipperexe and Loghan for contributing to the testing of this mod, <strong>new ideas</strong> and providing feedback that drove improvements during development.</p>\n</li>\n</ul>\n<hr />\n<p><strong>To give Aishi a greater immersion in quests and objectives, some unique assets created by very talented people were used.</strong></p>\n<p>Assets that were used in this mod:</p>\n<ul>\n<li>\n<p>Unix 5000 Gas Mask by <a target=\"_blank\" class=\"external-link\" href=\"https://www.linkedin.com/in/eugen-vahrushin-60b671195\" rel=\"noreferrer noopener\">Eugen Vahrushin</a></p>\n</li>\n<li>\n<p>MSA G1 SCBA Chemical Mask by <a target=\"_blank\" class=\"external-link\" href=\"https://x.com/DPMArtisan\" rel=\"noreferrer noopener\">Dan</a></p>\n</li>\n<li>\n<p>KW12 Military Radio by <a target=\"_blank\" class=\"external-link\" href=\"https://sketchfab.com/ChanaChoochatt\" rel=\"noreferrer noopener\">ChanaChoochatt</a></p>\n</li>\n<li>\n<p>Baofeng UV-5R Radio by <a target=\"_blank\" class=\"external-link\" href=\"https://x.com/abg_3d\" rel=\"noreferrer noopener\">Andrzej</a></p>\n</li>\n<li>\n<p>H4n Pro Audio Recorder by <a target=\"_blank\" class=\"external-link\" href=\"https://sketchfab.com/Lillya\" rel=\"noreferrer noopener\">Lillya</a></p>\n</li>\n<li>\n<p>RF Broadcaster by <a target=\"_blank\" class=\"external-link\" href=\"https://www.linkedin.com/in/konstantsin\" rel=\"noreferrer noopener\">Konstantsin</a></p>\n</li>\n<li>\n<p>Keycard Model used for Black Division Keycard and USB Stick by <a target=\"_blank\" class=\"external-link\" href=\"https://sketchfab.com/hyrsh\" rel=\"noreferrer noopener\">hyrsh</a></p>\n</li>\n<li>\n<p>Tablet by <a target=\"_blank\" class=\"external-link\" href=\"https://sketchfab.com/TatariN_174\" rel=\"noreferrer noopener\">TatariN_174</a></p>\n</li>\n<li>\n<p>Keycard Model used for Aishi\u2019s Keycard and Pelican Case by <a target=\"_blank\" class=\"external-link\" href=\"https://sketchfab.com/suspensy\" rel=\"noreferrer noopener\">suspensy</a></p>\n</li>\n<li>\n<p>Unknown Device by <a target=\"_blank\" class=\"external-link\" href=\"https://sketchfab.com/Diamonddogkz\" rel=\"noreferrer noopener\">Diamonddogkz</a></p>\n</li>\n<li>\n<p>Sci Fi Military Badge by <a target=\"_blank\" class=\"external-link\" href=\"https://sketchfab.com/Timrockk\" rel=\"noreferrer noopener\">Trockk</a></p>\n</li>\n<li>\n<p>Nuclear Block by <a target=\"_blank\" class=\"external-link\" href=\"https://sketchfab.com/Mark-kon\" rel=\"noreferrer noopener\">Mapk</a></p>\n</li>\n<li>\n<p>KGB Badge by <a target=\"_blank\" class=\"external-link\" href=\"https://sketchfab.com/solitudevibes_\" rel=\"noreferrer noopener\">solitudevibes_</a></p>\n</li>\n<li>\n<p>Battery by <a target=\"_blank\" class=\"external-link\" href=\"https://sketchfab.com/Multipainkiller_Studio\" rel=\"noreferrer noopener\">Multipainkiller Studio</a></p>\n</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-12\" class=\"tab-panel\"><div class=\"tab-title\">Support Me \ud83d\udc9c</div>\n<div class=\"tab-content\"><p><em>Did you like ISB\u2019s content? Consider supporting me on <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/samc137\" rel=\"noreferrer noopener\">Ko-Fi</a>\u2014it helps me buy Monster so I can keep setting up bots and assots without sleep.</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/hNvoOiM.png\" alt=\"Kofi\" /></p></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/6XuVe1Kt3K9gkapoZ0IBI2hVtt8CLGAhK46vQgLb.png",
    "forge_url": "https://sp-mod.com/mod/2478/isb-aishi",
-   "downloads": 18502,
-   "favourites": 82,
+   "downloads": 19793,
+   "favourites": 92,
    "featured": false,
    "fika": true,
-   "fika_latest": "unknown",
+   "fika_latest": "compatible",
    "category": {
     "id": 16,
     "title": "Traders",
@@ -145038,8 +145064,8 @@
      "version": "2.0.2",
      "description": "<h3><strong>[THIS IS A SPT 4.1X BUILD]</strong></h3>\n<p>Hi, everyone! I hope you\u2019re having a great day. Here\u2019s another small routine update for Aishi, featuring fixes and some cool new features.</p>\n<h3>New Outfits:</h3>\n<ul>\n<li><em>The Black Division Scorpion outfit has been added to the Aishi</em> store_</li>\n<li><em>The Black Division Nocturnal outfit has been added to the Aishi store</em></li>\n</ul>\n<h3>New Banner:</h3>\n<ul>\n<li><em>Partisan is cool, isn\u2019t it? Now it has a loading banner too on the respective maps where it appears (naturally)</em></li>\n</ul>\n<h3>New Valuables:</h3>\n<ul>\n<li><em>Added the ISB Briefcase with TerraGroup Documents</em></li>\n<li><em>Added the Briefcase containing ISB materials.</em></li>\n</ul>\n<blockquote>\n<p>Dev Note: The ISB is expanding its operations and continues to work against TerraGroup. You\u2019ll be able to find this material on Rogues; when opened, it will yield very valuable items. Will you sell them? Or save them for the final blow in the future? You decide.</p>\n</blockquote>\n<p><strong>QoL Changes:</strong>\n-<em>All Black Division outfits sold by Aishi now require the \u201cSanctioned Lies\u201d achievement to unlock, making it possible to obtain them even before Chapter 2 begins.</em></p>\n<p><strong>Balancing:</strong></p>\n<ul>\n<li><em>All skill levels required for the \u201cWestern Weapons Specialist\u201d missions have been reduced by 1/3</em></li>\n<li><em>The SMG skill level requirement for the MP7\u2019s \u201cWeapons Mastery\u201d mission has been reduced from 20 to 12.</em></li>\n<li><em>The number of eliminations required for the \u201cRebuilding Trust \u2013 Part 2\u201d mission has been reduced from 10 to 5 across all three locations.</em></li>\n</ul>\n<p><strong>Bug Fixes:</strong></p>\n<ul>\n<li>Fixed an issue where Aishi\u2019s custom weapons were not counting toward Weapon Mastery XP</li>\n<li>Fixed an issue where Aishi\u2019s custom weapons were not counted toward elimination missions using Western weapons</li>\n<li>Fixed an issue where the \u201cSanitary Investigation - Part 5\u201d mission would fail on any map if you were killed during the raid (Now it only fails on Shoreline).</li>\n<li>Fixed an issue where it was not possible to delete the remaining \u201cMilitary Flash\u201d items from the \u201cSanitary Investigation - Part 5\u201d mission (Thanks, Wis\u2019adel)</li>\n<li>Fixed an issue where Aishi\u2019s \u201cMasterkey\u201d was eligible for insurance. (Thanks again, Wis\u2019adel)</li>\n<li>Fixed an issue where the Metabolism debuff on the SJE3 injector wasn\u2019t being applied correctly (that typo was funny). (Thanks, VIPE7)</li>\n<li>Fixed an issue where, in the \u201cISB Level Physical and Medical Preparation - Part 2\u201d mission, a visual (and sometimes non-visual) bug caused Aishi\u2019s reputation reward to be 9000.0 (lol) (Thanks, DJScully)</li>\n<li>Fixed an issue with the softplates on the ISB Trooper models (Thanks, Difi)</li>\n<li>Fixed an issue where the new textures for the SJE3 and ETG-V2 weren\u2019t loading. (Thanks, Vultify)</li>\n<li>Fixed an issue in Aishi\u2019s insurance locale stating that the ISB doesn\u2019t operate at Labs lol, (Thanks, Navelator)</li>\n</ul>\n",
      "spt_constraint": "~4.1.0",
-     "fika": "unknown",
-     "downloads": 495,
+     "fika": "compatible",
+     "downloads": 1320,
      "size": 1230249869,
      "link": "https://sp-mod.com/mod/download/2478/isb-aishi/2.0.2",
      "published_at": "2026-08-27T01:55:00.000000Z",
@@ -145066,7 +145092,7 @@
      "description": "<p>Hi, everyone! I hope you\u2019re having a great day. Here\u2019s another small routine update for Aishi, featuring fixes and some cool new features.</p>\n<h3>New Outfits:</h3>\n<ul>\n<li><em>The Black Division Scorpion outfit has been added to the Aishi</em> store_</li>\n<li><em>The Black Division Nocturnal outfit has been added to the Aishi store</em></li>\n</ul>\n<h3>New Banner:</h3>\n<ul>\n<li><em>Partisan is cool, isn\u2019t it? Now it has a loading banner too on the respective maps where it appears (naturally)</em></li>\n</ul>\n<h3>New Valuables:</h3>\n<ul>\n<li><em>Added the ISB Briefcase with TerraGroup Documents</em></li>\n<li><em>Added the Briefcase containing ISB materials.</em></li>\n</ul>\n<blockquote>\n<p>Dev Note: The ISB is expanding its operations and continues to work against TerraGroup. You\u2019ll be able to find this material on Rogues; when opened, it will yield very valuable items. Will you sell them? Or save them for the final blow in the future? You decide.</p>\n</blockquote>\n<p><strong>QoL Changes:</strong></p>\n<ul>\n<li><em>All Black Division outfits sold by Aishi now require the \u201cSanctioned Lies\u201d achievement to unlock, making it possible to obtain them even before Chapter 2 begins.</em></li>\n</ul>\n<p><strong>Balancing:</strong></p>\n<ul>\n<li><em>All skill levels required for the \u201cWestern Weapons Specialist\u201d missions have been reduced by 1/3</em></li>\n<li><em>The SMG skill level requirement for the MP7\u2019s \u201cWeapons Mastery\u201d mission has been reduced from 20 to 12.</em></li>\n<li><em>The number of eliminations required for the \u201cRebuilding Trust \u2013 Part 2\u201d mission has been reduced from 10 to 5 across all three locations.</em></li>\n</ul>\n<p><strong>Bug Fixes:</strong></p>\n<ul>\n<li>Fixed an issue where Aishi\u2019s custom weapons were not counting toward Weapon Mastery XP</li>\n<li>Fixed an issue where Aishi\u2019s custom weapons were not counted toward elimination missions using Western weapons</li>\n<li>Fixed an issue where the \u201cSanitary Investigation - Part 5\u201d mission would fail on any map if you were killed during the raid (Now it only fails on Shoreline).</li>\n<li>Fixed an issue where it was not possible to delete the remaining \u201cMilitary Flash\u201d items from the \u201cSanitary Investigation - Part 5\u201d mission (Thanks, Wis\u2019adel)</li>\n<li>Fixed an issue where Aishi\u2019s \u201cMasterkey\u201d was eligible for insurance. (Thanks again, Wis\u2019adel)</li>\n<li>Fixed an issue where the Metabolism debuff on the SJE3 injector wasn\u2019t being applied correctly (that typo was funny). (Thanks, VIPE7)</li>\n<li>Fixed an issue where, in the \u201cISB Level Physical and Medical Preparation - Part 2\u201d mission, a visual (and sometimes non-visual) bug caused Aishi\u2019s reputation reward to be 9000.0 (lol) (Thanks, DJScully)</li>\n<li>Fixed an issue with the softplates on the ISB Trooper models (Thanks, Difi)</li>\n<li>Fixed an issue where the new textures for the SJE3 and ETG-V2 weren\u2019t loading. (Thanks, Vultify)</li>\n<li>Fixed an issue in Aishi\u2019s insurance locale stating that the ISB doesn\u2019t operate at Labs lol, (Thanks, Navelator)</li>\n</ul>\n",
      "spt_constraint": "4.0.13",
      "fika": "compatible",
-     "downloads": 307,
+     "downloads": 764,
      "size": 1230244190,
      "link": "https://sp-mod.com/mod/download/2478/isb-aishi/1.0.4",
      "published_at": "2026-08-27T01:54:00.000000Z",
@@ -145093,7 +145119,7 @@
      "description": "<p><strong>[SPT 4.1X BUILD ONLY]</strong></p>\n<ul>\n<li>Fixed an issue during mod startup that caused profiles to break because custom items weren\u2019t loading.</li>\n</ul>\n",
      "spt_constraint": "~4.1.0",
      "fika": "compatible",
-     "downloads": 3076,
+     "downloads": 3081,
      "size": 1224113852,
      "link": "https://sp-mod.com/mod/download/2478/isb-aishi/2.0.1",
      "published_at": "2026-08-16T23:24:00.000000Z",
@@ -145120,7 +145146,7 @@
      "description": "<p><strong>[THIS IS A SPT 4.1X VERSION - CAREFUL SPT 4.0.13 USERS]</strong></p>\n<blockquote>\n<p>Initial Release Build</p>\n<p>Please Report any issue in the <a target=\"_blank\" class=\"external-link\" href=\"https://discord.com/invite/AajQ7bH5A7\" rel=\"noreferrer noopener\">ISB Discord</a></p>\n</blockquote>\n",
      "spt_constraint": "~4.1.0",
      "fika": "compatible",
-     "downloads": 3065,
+     "downloads": 3066,
      "size": 1224113060,
      "link": "https://sp-mod.com/mod/download/2478/isb-aishi/2.0.0",
      "published_at": "2026-08-15T03:25:00.000000Z",
@@ -145147,7 +145173,7 @@
      "description": "<p>Hi, everyone! I hope you\u2019re all doing well and that Tarkov is treating you right. It\u2019s a small patch with a few changes and several fixes\u2014I recommend reading the entire patch notes c:</p>\n<blockquote>\n<p><em><strong>First Notice</strong>: If you\u2019ve encountered any issues with Aishi quests or are a Linux user, please completely delete the \u201cCustomQuests\u201d folder before installing this update. The path is (YourSPTFolder)SPT\\user\\mods\\ISB-Aishi\\db\\CustomQuests. Thank you! ^-^</em></p>\n</blockquote>\n<p><strong>New Content:</strong></p>\n<ul>\n<li>\n<p>Added some new gear to Aishi\u2019s Assort</p>\n<ol>\n<li>HK 416A5 (RAL 8000) has been added to LL3</li>\n<li>Norinco QBZ-191 5.8x42 has been added to LL4</li>\n<li>Howa Type 20 5.56x45 has been added to LL2</li>\n<li>5.8x42mm DVC12 has been added to LL4</li>\n<li>5.8x42mm DVX12 has been added to LL3</li>\n<li>QBZ-191 5.8x42 30-round magazine has been added to LL2</li>\n</ol>\n</li>\n<li>\n<p>A pool of weekly and daily missions for Aishi has been added</p>\n</li>\n</ul>\n<blockquote>\n<p><em><strong>Dev Note</strong>: These missions will naturally be more challenging than the standard daily/weekly missions from other Traders, but they will offer more impressive rewards.</em></p>\n</blockquote>\n<ul>\n<li>\n<p>Added the ISB Gear Crate and the Black Division Gear Crate, which will drop items from their respective factions. They can be obtained by defeating ISB Team Leaders or by completing weekly or daily missions.</p>\n</li>\n<li>\n<p>Added the Chinese Localization by HiddenCirno</p>\n</li>\n</ul>\n<p><strong>QoL Changes:</strong></p>\n<ul>\n<li>Jaeger\u2019s \u201cOutsourcing Labor\u201d mission no longer requires completion of the \u201cEvery Hunter Knows This\u201d mission and will be available as soon as Jaeger is unlocked.</li>\n<li>After betraying Aishi (even if accidentally) in the \u201cScouting\u201d mission, another mission will appear providing further guidance on how to proceed with her story.</li>\n<li>In Mechanic\u2019s \u201cReconciliation Part 3\u201d mission, the requirement to deliver SureFire suppressors found in a raid has been removed.</li>\n<li>In the \u201cISB Level Physical and Medical Preparation - Part 4\u201d mission, the requirement to deliver painkillers has been expanded to include any CONSUMABLE painkiller.</li>\n</ul>\n<p><strong>Fixes:</strong></p>\n<ul>\n<li>Fixed an issue where ISB ammo crates were spawning on stationary Scav corpses on the map where they shouldn\u2019t have been.</li>\n<li>Fixed an issue with the \u201cEvernight II\u201d preset for Model 1 where it was generated incorrectly.</li>\n<li>Fixed an issue with the ISB \u201cFerro Concepts FCPC V5 Plate Carrier\u201d chest rig preset where it was generated incorrectly.</li>\n<li>Fixed an issue where, in several elimination mission locales, the number announced did not match the objective.</li>\n<li>Fixed an issue where the Comtac VII did not conflict with other helmet-mounted headsets such as EXFIL.</li>\n<li>Fixed an issue with mission logging for players using Linux.</li>\n<li>Fixed an issue where the ISB \u201cArs Arma A18 Skanda plate carrier\u201d was not eligible for insurance when it should have been.</li>\n<li>Fixed an issue where, in the mission \u201cISB Level Physical and Medical Preparation - Conclusion,\u201d the requirement to turn in M.U.L.E. injectors was duplicated.</li>\n<li>Fixed an issue where, if the mission \u201cHealth Investigation - Part 5\u201d was failed, it would not restart, blocking progression.</li>\n<li>Fixed an issue where, in the \u201cPreparation - Part 2\u201d mission, the objective text required 10 Scav eliminations when it should have been only 5.</li>\n<li>Fixed an issue where, in the \u201cBetrayal of Trust - Part 2\u201d mission, eliminations made with the FN SCAR-L 5.56x45 assault rifle were not counted.</li>\n</ul>\n",
      "spt_constraint": "4.0.13",
      "fika": "compatible",
-     "downloads": 1957,
+     "downloads": 1960,
      "size": 1224108129,
      "link": "https://sp-mod.com/mod/download/2478/isb-aishi/1.0.3",
      "published_at": "2026-08-15T03:17:00.000000Z",
@@ -145289,7 +145315,7 @@
     }
    ],
    "published_at": "2026-08-01T06:23:00.000000Z",
-   "updated_at": "2026-08-27T02:03:25.000000Z",
+   "updated_at": "2026-08-29T11:33:45.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -151566,15 +151592,15 @@
    "guid": "mattexe.bossnotifier",
    "name": "BossNotifier ",
    "slug": "bossnotifier",
-   "teaser": "v1.1.1 out now! Know which bosses spawned in your raid! Get notifications at spawn with locations.",
-   "description_html": "<h1>BossNotifier</h1>\n<p>Know your enemies before they know you! BossNotifier alerts you to boss spawns at raid start and displays real-time 3D markers above their heads.</p>\n<p><strong>Supported Bosses:</strong> Reshala, Tagilla, Killa, Glukhar, Shturman, Sanitar, Zryachiy, Kaban, Kollontay, Partisan, Goons, Cultists, Rogues, Blood Hounds, Santa Claus, Punisher, Legion</p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">\ud83d\udcd6 Description</div>\n<div class=\"tab-content\"><p><strong>Notifications</strong></p>\n<ul>\n<li>Get notified which bosses spawned when the raid begins</li>\n<li>See where bosses spawned (e.g., \u201cReshala has been located near Dormitory\u201d)</li>\n<li>Get alerted when you enter a boss\u2019s vicinity (\u2713 checkmark)</li>\n<li>Press <strong>O</strong> anytime to see current boss locations</li>\n<li>Lock features behind Intel Center levels for progression</li>\n</ul>\n<p><strong>3D Markers</strong></p>\n<ul>\n<li>Floating markers above boss heads that update in real-time</li>\n<li>Show/hide distance and boss name</li>\n<li>Full RGB color customization</li>\n<li>Option to only show markers when you can see the boss</li>\n<li>Press <strong>P</strong> to toggle markers on/off</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">\u2699\ufe0f Configuration</div>\n<div class=\"tab-content\"><p>All settings configurable via <strong>F12</strong> menu:</p>\n<p><strong>General</strong></p>\n<ul>\n<li>Keyboard Shortcut (default: O)</li>\n<li>Show Bosses on Raid Start</li>\n</ul>\n<hr />\n<p><strong>Intel Center Unlocks</strong> <em>(set to 4 to disable)</em></p>\n<ul>\n<li>Notification unlock level</li>\n<li>Location unlock level</li>\n<li>Detection unlock level</li>\n</ul>\n<hr />\n<p><strong>Boss Markers</strong></p>\n<ul>\n<li>Enable/Disable markers</li>\n<li>Toggle markers key (default: P)</li>\n<li>Show through walls</li>\n<li>Customizable marker: \u25bc \u25bd \u2193 \u25cf \u25c6 \u2605 \u26a0 \u2620 \u25c9 \u25b2</li>\n<li>Show boss name</li>\n<li>Show distance</li>\n<li>Font size</li>\n<li>Base/Max scale</li>\n<li>Visibility distance</li>\n<li>Marker color</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">\ud83d\udce5 Installation</div>\n<div class=\"tab-content\"><ol>\n<li>Download the latest release</li>\n<li>Extract the archive</li>\n<li>Copy <code>BepInEx</code> folder to your SPT directory</li>\n<li>Start the game and configure via <strong>F12</strong></li>\n</ol>\n<pre><code>SPT/\n\u2514\u2500\u2500 BepInEx/\n    \u2514\u2500\u2500 plugins/\n        \u2514\u2500\u2500 BossNotifier.dll\n</code></pre></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">\ud83c\udfae Fika Sync</div>\n<div class=\"tab-content\"><p><strong>Playing with Fika?</strong> Install the <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/addon/27/bossnotifier-fika-sync-addon\" rel=\"noreferrer noopener\">BossNotifier - Fika Sync Addon</a> for multiplayer support!</p>\n<p><strong>Features:</strong></p>\n<ul>\n<li>Boss locations sync from host to all clients</li>\n<li>Boss death status syncs to all players</li>\n<li>Press <strong>O</strong> on any client to see boss notifications</li>\n</ul>\n<p><strong>Requirements:</strong></p>\n<ul>\n<li>Both <strong>host AND clients</strong> need:\n<ul>\n<li>BossNotifier  v1.1.1+ (this mod)</li>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/addon/27/bossnotifier-fika-sync-addon\" rel=\"noreferrer noopener\">BossNotifier - Fika Sync Addon</a></li>\n<li>Fika 2.1.0+</li>\n</ul>\n</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">\u26a0\ufe0f Known Issues</div>\n<div class=\"tab-content\"><p>None so far</p>\n<hr />\n<p><em>Found a bug? Report it in the comments!</em></p></div></div></div>\n<hr />\n<p>If you enjoy what I do buy me a coffee <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/dr3vik\" rel=\"noreferrer noopener\">ko-fi.com/dr3vik</a></p>\n<hr />\n<p><strong>PLEASE NOTE THAT I AM NOT THE ORIGINAL AUTHOR OF THIS MOD. ALL CREDITS GOES TO <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/41131/mattdokn\" rel=\"noreferrer noopener\">Mattdokn</a> - THE ORIGINAL CREATOR OF THIS MOD</strong></p>\n",
+   "teaser": "v1.2.1 out now! Know which bosses spawned in your raid! Get notifications at spawn with locations.",
+   "description_html": "<h1>BossNotifier</h1>\n<p>Know your enemies before they know you! BossNotifier alerts you to boss spawns at raid start and displays real-time 3D markers above their heads.</p>\n<p><strong>Supported Bosses:</strong> Reshala, Tagilla, Killa, Glukhar, Shturman, Sanitar, Zryachiy, Kaban, Kollontay, Partisan, Goons, Cultists, Rogues, Blood Hounds, Santa Claus, Punisher, Legion</p>\n<p><strong>Custom Boss Mod Support:</strong> Automatically detects and adds notifications/markers for RUAF Comehome, UNTAR, and Black Division Tactical Toaster bosses if you have those mods installed - no extra setup needed.</p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">\ud83d\udcd6 Description</div>\n<div class=\"tab-content\"><p><strong>Notifications</strong></p>\n<ul>\n<li>Get notified which bosses spawned when the raid begins</li>\n<li>See where bosses spawned (e.g., \u201cReshala has been located near Dormitory\u201d)</li>\n<li>Get alerted when you enter a boss\u2019s vicinity (\u2713 checkmark)</li>\n<li>Press <strong>O</strong> anytime to see current boss locations</li>\n<li>Lock features behind Intel Center levels f</li>\n</ul>\n<p><strong>3D Markers</strong></p>\n<ul>\n<li>Floating markers above boss heads that update in real-time</li>\n<li>Show/hide distance and boss name</li>\n<li>Full RGB color customization</li>\n<li>Option to only show markers when you can see the boss</li>\n<li>Press <strong>P</strong> to toggle markers on/off</li>\n</ul>\n<p><strong>Custom Boss Mods</strong></p>\n<ul>\n<li>Automatically detects RUAF Comehome, UNTAR Toaster if installed</li>\n<li>Each group gets its own notifications, 3D markers, and configurable marker color/character</li>\n<li>Nothing to configure - just install the boss mod and BossNotifier picks it up</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">\u2699\ufe0f Configuration</div>\n<div class=\"tab-content\"><p>All settings configurable via <strong>F12</strong> menu:</p>\n<p><strong>General</strong></p>\n<ul>\n<li>Keyboard Shortcut (default: O)</li>\n<li>Show Bosses on Raid Start</li>\n</ul>\n<hr />\n<p><strong>Intel Center Unlocks</strong> *(set to 4 to disab</p>\n<ul>\n<li>Notification unlock level</li>\n<li>Location unlock level</li>\n<li>Detection unlock level</li>\n</ul>\n<hr />\n<p><strong>Boss Markers</strong></p>\n<ul>\n<li>Enable/Disable markers</li>\n<li>Toggle markers key (default: P)</li>\n<li>Show through walls</li>\n<li>Customizable marker: \u25bc \u25bd \u2193 \u25cf \u25c6 \u2605 \u26a0 \u2620 \u25c9 \u25b2</li>\n<li>Show boss name</li>\n<li>Show distance</li>\n<li>Font size</li>\n<li>Base/Max scale</li>\n<li>Visibility distance</li>\n<li>Marker color</li>\n<li>Each custom boss group (RUAF, UNTAR, Black Division) gets its own marker character/color settings</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">\ud83d\udce5 Installation</div>\n<div class=\"tab-content\"><ol>\n<li>Download the latest release</li>\n<li>Extract the archive</li>\n<li>Copy <code>BepInEx</code> folder to your SPT directory</li>\n<li>Start the game and configure via <strong>F12</strong>\nSPT/\n\u2514\u2500\u2500 BepInEx/\n\u2514\u2500\u2500 plugins/\n\u2514\u2500\u2500 BossNotifier.dll</li>\n</ol></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">\u26a0\ufe0f Known Issues</div>\n<div class=\"tab-content\"><ul>\n<li>Multiplayer (Fika) sync is not currently supported - the previous sync addon has been pulled due to reliability issues (host extract problems, unreliable Headless sync). Singleplayer is fully functional. Will revisit multiplayer support once it can be properly tested.</li>\n</ul>\n<hr />\n<p><em>Found a bug? Report it in the comments!</em></p></div></div></div>\n<hr />\n<p>If you enjoy what I do buy me a coffee <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/dr3vik\" rel=\"noreferrer noopener\">ko-fi.com/dr3vik</a></p>\n<hr />\n<p><strong>PLEASE NOTE THAT I AM NOT THE ORIGINAL AUTGOES TO[Mattdokn](<a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/41131/mat\" rel=\"noreferrer noopener\">https://sp-mod.com/user/41131/mat</a> OF THIS MOD</strong></p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/e9MHWhhcpEeyeajgVdlihQ8vjniqjtoCGYonfUCk.png",
    "forge_url": "https://sp-mod.com/mod/2543/bossnotifier",
-   "downloads": 43483,
-   "favourites": 122,
+   "downloads": 45364,
+   "favourites": 138,
    "featured": false,
    "fika": true,
-   "fika_latest": "compatible",
+   "fika_latest": "unknown",
    "category": {
     "id": 1,
     "title": "Tools",
@@ -151588,7 +151614,7 @@
     {
      "id": 55394,
      "name": "Dr3vik",
-     "avatar": "https://files.sp-mod.com/profile-photos/4UnzyRJtMlHx3PBRk8eDNUMCkWW7evQ8OvtIpHej_128w.webp"
+     "avatar": "https://files.sp-mod.com/profile-photos/2rP7C0576jxkWRqpiUfwYS6PFChZcilpRKXJzUEY_128w.webp"
     }
    ],
    "source_links": [
@@ -151599,12 +151625,24 @@
    ],
    "versions": [
     {
+     "id": 15061,
+     "version": "1.2.1",
+     "description": "<p>\u26a0\ufe0f SPT 4.1.3 COMPATIBILITY FIX</p>\n<p>\u2728 New</p>\n<ul>\n<li>Added support for custom boss groups (RUAF, UNTAR, Black Division) \u2014 auto-detected when the corresponding mod is installed, with their own notifications, 3D markers, and configurable marker color/character</li>\n</ul>\n<p>\ud83d\udc1b Fixed</p>\n<ul>\n<li>Fixed the mod failing to work at all on current SPT \u2014 <code>NotificationManagerClass</code> was renamed to <code>NotificationManager</code> in the SPT 4.1.3 client, which broke all boss notifications</li>\n</ul>\n<p>\ud83d\udccb Requirements</p>\n<ul>\n<li>SPT 4.1.3</li>\n</ul>\n",
+     "spt_constraint": "4.1.3",
+     "fika": "unknown",
+     "downloads": 289,
+     "size": 17073,
+     "link": "https://sp-mod.com/mod/download/2543/bossnotifier/1.2.1",
+     "published_at": "2026-08-29T13:44:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 12857,
      "version": "1.1.1",
      "description": "<h2>\u26a0\ufe0f HOTFIX</h2>\n<p>Fixed crash for non-Fika users.</p>\n<h3>\ud83d\udc1b Fixed</h3>\n<ul>\n<li>Removed Fika code that was causing SPT to fail loading for users without Fika installed</li>\n<li><strong>Goons markers</strong>: Big Pipe and Birdeye now display 3D markers correctly (previously only Knight had a marker)</li>\n<li><strong>Dead boss notification</strong>: Pressing O after killing a boss now shows \u201celiminated \u2620\u201d instead of \u201clocated\u201d</li>\n</ul>\n<h3>\u2728 New</h3>\n<ul>\n<li><strong>Fika Sync Addon</strong>: Multiplayer support is now available as a separate addon! <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/addon/27/bossnotifier-fika-sync-addon\" rel=\"noreferrer noopener\">Download here</a>\n<ul>\n<li>Syncs boss locations from host to all clients</li>\n<li>Syncs boss death status to all players</li>\n<li>Both host and clients need the addon installed</li>\n</ul>\n</li>\n</ul>\n<h3>\ud83d\udccb Requirements</h3>\n<ul>\n<li>SPT 4.0.x</li>\n<li>Fika 2.1.0+ (only if using the Fika Sync Addon)</li>\n</ul>\n",
      "spt_constraint": "~4.0.11",
      "fika": "compatible",
-     "downloads": 39413,
+     "downloads": 40995,
      "size": 14595,
      "link": "https://sp-mod.com/mod/download/2543/bossnotifier/1.1.1",
      "published_at": "2026-01-14T18:49:00.000000Z",
@@ -151616,7 +151654,7 @@
      "description": "<h2>What\u2019s New</h2>\n<h3>\u2728 3D Boss Markers</h3>\n<ul>\n<li>Real-time floating markers above boss heads</li>\n<li>Customizable symbol: \u25bc \u25bd \u2193 \u25cf \u25c6 \u2605 \u26a0 \u2620 \u25c9 \u25b2</li>\n<li>Show/hide boss name and distance</li>\n<li>Full RGB color customization</li>\n<li>Press <strong>P</strong> to toggle markers on/off</li>\n</ul>\n<h3>\ud83d\udc41\ufe0f Line of Sight Option</h3>\n<ul>\n<li>New \u201cShow Through Walls\u201d setting</li>\n<li>When OFF, markers only appear with direct vision</li>\n</ul>\n<h3>\ud83d\udc1b Bug Fixes</h3>\n<ul>\n<li>Fixed Intel Center API for SPT 4.0.11</li>\n</ul>\n",
      "spt_constraint": "~4.0.11",
      "fika": "compatible",
-     "downloads": 3347,
+     "downloads": 3354,
      "size": 12520,
      "link": "https://sp-mod.com/mod/download/2543/bossnotifier/1.1.0",
      "published_at": "2026-01-10T14:52:00.000000Z",
@@ -151628,27 +151666,28 @@
      "description": "<ul>\n<li>Updated for SPT 4.0.11 compatibility</li>\n<li>Fixed Singleton/GameWorld API changes</li>\n<li>Fixed day/night detection for Cultists</li>\n<li>Code refactored and cleaned up</li>\n</ul>\n",
      "spt_constraint": "~4.0.8",
      "fika": "compatible",
-     "downloads": 723,
+     "downloads": 726,
      "size": 8264,
      "link": "https://sp-mod.com/mod/download/2543/bossnotifier/1.0.0",
      "published_at": "2026-01-09T18:50:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.1.1",
-   "spt_constraint": "~4.0.11",
+   "latest_version": "1.2.1",
+   "spt_constraint": "4.1.3",
    "all_spt_constraints": [
+    "4.1.3",
     "~4.0.11",
     "~4.0.8"
    ],
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-01-14T04:52:00.000000Z",
-   "updated_at": "2026-07-28T07:51:45.000000Z",
+   "updated_at": "2026-08-29T13:57:12.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
-    "ai_disclosure": "",
+    "ai_disclosure": "<p>This project used AI (Claude / Claude Code) to\u2026</p>\n<ul>\n<li>Write and review C# code for the BepInEx plugin (Harmony patches, boss detection logic, 3D marker rendering, configuration handling)</li>\n<li>Diagnose compatibility breaks against new SPT client versions by comparing decompiled game assemblies and researching upstream API changes</li>\n<li>Investigate and fix multiplayer (Fika) integration issues, including cross-referencing the Fika-Plugin source code for API/namespace changes</li>\n<li>Assist with debugging user-reported issues and validating fixes through live in-game testing</li>\n<li>Draft documentation, changelogs, and this mod page description</li>\n</ul>\n<p>All AI-assisted code and changes were reviewed, tested in-game, and approved by me before release. I remain responsible for the mod\u2019s functionality and support.</p>\n",
     "cheat_notice": false,
     "profile_binding_notice": false
    },
@@ -174006,19 +174045,19 @@
    "guid": "com.sora.visitapi",
    "name": "VisitAPI Framework",
    "slug": "visitapi-framework",
-   "teaser": "Recreating the dialog function from the official game to SPT and esay to apply to any custom or native trader with a single dialog file.",
-   "description_html": "<h1>VisitAPI Framework</h1>\n<p><strong>Bring EFT native NPC dialogue system to SPT.</strong></p>\n<p>An open-source framework for authoring branching trader conversations and dialogue-driven quests \u2014 rendered in the game\u2019s <strong>own</strong> trader dialogue screen, not a fake overlay. No coding: you write everything in plain-text <code>.dlg</code> files. Full guide on the GitHub page.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/TricolourSky/VisitAPI/blob/main/docs/Showcase.png?raw=true\" alt=\"VisitAPI showcase\" /></p>\n<h2>\u2728 Features</h2>\n<ul>\n<li><strong>Visit button</strong> \u2014 a 1.0-style \u201cVisit\u201d tab on the trader screen that opens a 3D scene conversation</li>\n<li><strong>.dlg scripts</strong> \u2014 nodes, options, condition gates, one-shot options (once/always/first), image/video/3D-scene backgrounds, voice + BGM, standing rewards, quest state transitions.</li>\n<li><strong>Native Narrate pipeline</strong> \u2014 vanilla traders run on EFT\u2019s dormant built-in visit system with retail dialogue playback.</li>\n<li><strong>Quest system</strong> \u2014 custom quest JSON with fully native network transactions (accept / handover / complete) plus quest image routing</li>\n<li><strong>In-raid &amp; hideout triggers</strong> \u2014 place dialogue points at map coordinates via <code>trigger:</code> syntax (distance + view cone + quest gating)</li>\n<li><strong>Progress persistence</strong> \u2014 dialogue variables are replayed server-side into the profile and survive across sessions</li>\n</ul>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/TricolourSky/VisitAPI-Editor/refs/heads/main/docs/showcase.png\" alt=\"VisitAPI Editor showcase\" /></p>\n<h2>\ud83d\uddd2\ufe0fScript Editor</h2>\n<ul>\n<li><strong><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/TricolourSky/VisitAPI-Editor\" rel=\"noreferrer noopener\">VisitAPI Editor</a></strong> is the official companion tool \u2014 a local web-based visual editor for writing <code>.dlg</code> dialogue scripts. If you plan to author your own trader dialogues, start there instead of writing scripts by hand.</li>\n</ul>\n<h2>\ud83d\udce6 Downloads</h2>\n<ol>\n<li><strong>VisitAPI</strong> <em>(required)</em></li>\n<li><strong>VisitAPI Scenes</strong> <em>(optional)</em> \u2014 the 3D vendor-room pack. @Github</li>\n</ol>\n<h2>\ud83e\uddf0 Install</h2>\n<ol>\n<li>Extract the release into your SPT root.</li>\n<li><em>(Optional)</em> Extract the <strong>Scenes</strong> pack the same way for 3D visits.</li>\n<li>Add your <code>.dlg</code> scripts to <code>BepInEx/config/VisitAPI/</code> (file name = trader ID).</li>\n</ol>\n<p>Ships <strong>empty</strong> \u2014 it does nothing until you add content.</p>\n<h2>\ud83d\ude4f Credits</h2>\n<p><strong>VisitAPI</strong> \u2014 MIT. <strong>Scenes</strong> assets from <strong>bmpq / spt-tradermod</strong> (MIT), bundled with credit.\nBug or contribution? Leave an Issue on GitHub.</p>\n",
+   "teaser": "Recreating Storyline and Dialog feature from the Offcial to SPT. Easy to apply to native or custom Trader with a sign file.",
+   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">DESCRIPTION</div>\n<div class=\"tab-content\"><blockquote class=\"is-warning\">\n<p>\u26a0\ufe0f 1.0 STORYLINE AND QUEST NOT INCLUDED.</p>\n</blockquote>\n<h3>What is this?</h3>\n<p><strong>VisitAPI</strong> is a Frameworks that brings EFT 1.0-Style Storyline and Trader Dialog featrue to SPT.\nWrite a simple <code>.DLG</code> script and apply the script to the trader that you want to have  <code>STORYLINE</code>, <code>DIALOG</code> features.</p>\n<p><strong>Trader</strong> that apply with the script will have the same perform as EFT 1.0-Style with custom made <code>3D Scence</code>/ <code>Picture</code>/ <code>Video</code>/ <code>BGM</code>/ <code>Vocal</code> as the background elements with custom made  <code>StoryChatper</code>. All these can be config or edit with the <strong>VisitAPI Editor</strong></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/TricolourSky/VisitAPI/blob/main/docs/Showcase.png?raw=ture\" alt=\"VisitAPI showcase\" /></p>\n<h3>How to use?</h3>\n<p>The API doesn\u2019t ship with any content. You will need to create your own <code>.DLG</code> script either by hand or stop surffing yourself with looking the doc example in Github wondering why is not working. instead using the <strong>VisitAPI Editor</strong> for Dialog, Quest, Storyline design.</p>\n<p>Once the <code>.DLG</code> file is place in the <code>BepInEx\\config\\VisitAPI</code> folder. The Trader will appear a <strong>VISIT</strong> Button and <strong>Story Chapter</strong> like official did.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/TricolourSky/VisitAPI/blob/main/docs/showcase.png?raw=ture\" alt=\"VisitAPI showcase\" />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/TricolourSky/VisitAPI-Editor/refs/heads/main/docs/showcase.png\" alt=\"VisitAPI Editor showcase\" /></p>\n<h3>How to Install?</h3>\n<ol>\n<li>\n<p>Extract the archive into your <strong>SPT root</strong> (the folder with <code>SPT.Server.exe</code>).</p>\n</li>\n<li>\n<p>Put your scripts in <code>BepInEx\\config\\VisitAPI</code>.</p>\n<p>Backgrounds go in <code>BepInEx\\config\\VisitAPI\\backgrounds\\</code></p>\n<p>Vocal and music go in <code>BepInEx\\config\\VisitAPI\\audio\\</code>.</p>\n</li>\n<li>\n<p>Double-click <code>VisitAPI.Editor.exe</code> in the SPT root \u2014 it opens a web base app that allow you to edit your dlg file.</p>\n</li>\n<li>\n<p>Optional: <code>VisitAPI-Scenes.zip</code> adds some official Trader dialog and 3D scences.</p>\n</li>\n</ol>\n<p>3D Scences, examples and the full <code>.DLG</code> reference can be found at <strong><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/TricolourSky/VisitAPI\" rel=\"noreferrer noopener\">https://github.com/TricolourSky/VisitAPI</a></strong></p>\n<h3>\ud83d\ude4f Credits</h3>\n<p><strong>VisitAPI</strong> and <strong>VisitAPI Editor</strong> \u2014 MIT licensed. <strong>Scenes</strong> assets from <strong>bmpq / spt-tradermod</strong> (MIT), bundled with credit.\nBug or contribution? Leave an Issue on GitHub.</p></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/2PQExVPAvuRn0NYYR0EKCfKZAJ60kuWusaitdleN.png",
    "forge_url": "https://sp-mod.com/mod/2788/visitapi-framework",
-   "downloads": 684,
+   "downloads": 754,
    "favourites": 19,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
    "category": {
-    "id": 17,
-    "title": "Other",
-    "slug": "other"
+    "id": 2,
+    "title": "Overhauls",
+    "slug": "overhauls"
    },
    "license": {
     "name": "MIT License",
@@ -174039,12 +174078,24 @@
    ],
    "versions": [
     {
+     "id": 15065,
+     "version": "1.2.0",
+     "description": "<p>New:</p>\n<ul>\n<li>Added Storyline feature with custom made Story chapter page.</li>\n<li>Added Chatper Quest type with sub quest type. all base on SPT quest type.</li>\n<li>Added Custom Chatper quest status notification banner like Official.</li>\n<li>Added Quest switches: chapter, autoStart, autoFinish, dialogOnly, items, anyOf, unlockTraderOnReady.</li>\n<li>Added New Trigger points: <code>enter &lt;seconds&gt;</code> fires N seconds after you spawn (no coordinates needed),\nplus <code>accept</code>, <code>finish</code> and <code>fail</code> \u2014 walk somewhere and a quest starts, completes or is written off.</li>\n</ul>\n<p>Fixed:</p>\n<ul>\n<li>Fixed a case where Trigger doesn\u2019t auto accpet or starting a quest.</li>\n<li>Fixed a case where Dialog option doesn\u2019t push quest into success or waiting to finish status.</li>\n</ul>\n",
+     "spt_constraint": "~4.1",
+     "fika": "compatible",
+     "downloads": 12,
+     "size": 3220201,
+     "link": "https://sp-mod.com/mod/download/2788/visitapi-framework/1.2.0",
+     "published_at": "2026-08-29T16:09:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 15015,
      "version": "1.1.0",
      "description": "<p>New</p>\n<ul>\n<li>trigger: \u2026 auto accept  \u2014 walking onto the spot accepts the quest silently, with no dialogue popup.</li>\n<li>trigger: raid  enter  accept  \u2014 timer trigger that needs no coordinates and fires a few seconds after you gain control.</li>\n<li>Narration (&gt; lines) now plays in the game\u2019s own subtitle bar instead of the trader dialogue window \u2014 click or press Space to advance.</li>\n<li>Quest banner for started / ready to hand in / completed / failed, riding the vanilla notification pipeline so the slide-in, sound and queueing are all native.</li>\n<li>Narration can be written after the trader\u2019s line, and it plays back in the order you wrote it.</li>\n</ul>\n<p>Fixed</p>\n<ul>\n<li>In-raid trigger points no longer require looking down \u2014 the view cone now compares horizontal direction only (F11 prints your feet, ~1.6 m below the camera).</li>\n</ul>\n<p>Changed</p>\n<ul>\n<li>Fixed the .dlg quick start in the README, which showed a syntax that never existed.</li>\n</ul>\n",
      "spt_constraint": "~4.1",
      "fika": "compatible",
-     "downloads": 23,
+     "downloads": 67,
      "size": 1825998,
      "link": "https://sp-mod.com/mod/download/2788/visitapi-framework/1.1.0",
      "published_at": "2026-08-27T03:01:00.000000Z",
@@ -174068,14 +174119,14 @@
      "description": "<p>Fixed a bug where crafting recipes for one or more set as favorites would revert to the default after leaving a session or restarting the game.</p>\n<ul>\n<li>Add option for looping video or not in DLG file</li>\n<li>Removed unused or outdated code</li>\n</ul>\n",
      "spt_constraint": "4.0.13",
      "fika": "compatible",
-     "downloads": 479,
+     "downloads": 493,
      "size": 66309,
      "link": "https://sp-mod.com/mod/download/2788/visitapi-framework/0.9.0",
      "published_at": "2026-07-10T09:45:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.1.0",
+   "latest_version": "1.2.0",
    "spt_constraint": "~4.1",
    "all_spt_constraints": [
     "4.0.13",
@@ -174084,13 +174135,13 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-08-14T07:04:00.000000Z",
-   "updated_at": "2026-08-27T03:04:06.000000Z",
+   "updated_at": "2026-08-29T16:13:57.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
     "ai_disclosure": "<p>This project used AI to dnspy GClass element to call or reference native EFT function.</p>\n",
     "cheat_notice": false,
-    "profile_binding_notice": false
+    "profile_binding_notice": true
    },
    "origin": "forge",
    "delisted": false
@@ -191670,12 +191721,12 @@
    "guid": "com.sp.bela.presettrader",
    "name": "PresetTrader",
    "slug": "presettrader",
-   "teaser": "A trader selling your saved weapon builds and ready-made gear presets",
-   "description_html": "<h1>A trader that sells your own weapon builds along with ready-made gear and armor presets.</h1>\n<ul>\n<li>Save a weapon build in-game and it will usually appear at the trader within ~30 seconds</li>\n<li>Unlimited stock on all items</li>\n<li>Prices are calculated automatically from the items included in each preset</li>\n<li>Gear and armor presets can be pre-configured and sold directly by the trader</li>\n</ul>\n",
+   "teaser": "A trader selling your saved weapon builds and pre-configured gear, armor, and gunsmith weapon presets",
+   "description_html": "<h1>A trader for your saved weapon builds, pre-configured gear/armor presets, and optional weapon presets</h1>\n<ul>\n<li>Weapon builds sync to the trader within ~30 seconds - added, edited, or deleted.</li>\n<li>Prices are calculated automatically from the items in each preset</li>\n<li>Gear and armor presets are defined in db/*.json and sold directly</li>\n</ul>\n<blockquote>\n<p>Weapon presets (gunsmith/quest builds) are bundled but OFF by default - enable them in db/config.json</p>\n</blockquote>\n",
    "thumbnail": "https://files.sp-mod.com/mods/SZuOAxgy10McbJUkOmBRSBQwJL4mUno8WUvW2Csw.jpg",
    "forge_url": "https://sp-mod.com/mod/2966/presettrader",
-   "downloads": 296,
-   "favourites": 2,
+   "downloads": 446,
+   "favourites": 7,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -191703,27 +191754,52 @@
    ],
    "versions": [
     {
+     "id": 15063,
+     "version": "0.1.0",
+     "description": "<h2>Support SPT 4.0.13</h2>\n<blockquote>\n<p>No further updates supported.</p>\n</blockquote>\n",
+     "spt_constraint": "~4.0.0",
+     "fika": "unknown",
+     "downloads": 6,
+     "size": 1354494,
+     "link": "https://sp-mod.com/mod/download/2966/presettrader/0.1.0",
+     "published_at": "2026-08-29T15:23:00.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 15062,
+     "version": "1.1.0",
+     "description": "<p><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/925316/SPTarkov.PresetTrader/commit/4eaf982e3496ee98bab924ba6ed44a18a53c77db\" rel=\"noreferrer noopener\">feat: add gunsmith weapon presets behind an opt-in config switch</a></p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/925316/SPTarkov.PresetTrader/commit/4bebd4e79c155a58b46347d11ba37a49309ac52b\" rel=\"noreferrer noopener\">fix: sync trader assorts when a weapon build is edited or deleted</a></p>\n",
+     "spt_constraint": "~4.1.2",
+     "fika": "unknown",
+     "downloads": 84,
+     "size": 1356045,
+     "link": "https://sp-mod.com/mod/download/2966/presettrader/1.1.0",
+     "published_at": "2026-08-29T13:52:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 15048,
      "version": "1.0.0",
      "description": "<p><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/925316/SPTarkov.PresetTrader/commit/72ded7162fc39547c74b50196e3c977743f2c7f9\" rel=\"noreferrer noopener\">fix</a>: repair live build refresh and add preset load-time validation</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/925316/SPTarkov.PresetTrader/commit/76ddfbb7557769c4c1154a3cd920ece7a90d3531\" rel=\"noreferrer noopener\">fix</a>: price presets using the higher of handbook and ragfair baseline prices</p>\n",
      "spt_constraint": "~4.1.2",
      "fika": "unknown",
-     "downloads": 296,
+     "downloads": 356,
      "size": 1341987,
      "link": "https://sp-mod.com/mod/download/2966/presettrader/1.0.0",
      "published_at": "2026-08-28T18:31:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.0.0",
-   "spt_constraint": "~4.1.2",
+   "latest_version": "0.1.0",
+   "spt_constraint": "~4.0.0",
    "all_spt_constraints": [
+    "~4.0.0",
     "~4.1.2"
    ],
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-08-28T18:30:00.000000Z",
-   "updated_at": "2026-08-29T04:48:55.000000Z",
+   "updated_at": "2026-08-29T15:33:10.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
