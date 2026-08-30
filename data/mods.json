@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-08-30T21:13:55Z",
+ "generated_at": "2026-08-30T23:36:01Z",
  "source": "https://sp-mod.com",
  "filter": "all",
- "mod_count": 1909,
+ "mod_count": 1911,
  "categories": [
   {
    "id": 12,
@@ -116950,8 +116950,8 @@
    "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Overview</div>\n<div class=\"tab-content\"><h3>Overview</h3>\n<p>A highly customizable mod for SPT that adds new functionalities to skill progression. Once you hit elite level on any skill, you can still earn XP in this category. Doing so distributes experience that you would gain to other non-elite skills according to your settings. Works with gym. Works with Fika.\n<br />\n<br />\n<strong>Make sure to read Configuration tab!</strong>\n<br />\n<br />\nOlder versions are available to download in <strong>Versions</strong> tab or on <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/danx91/SkillDistribution/releases\" rel=\"noreferrer noopener\">GitHub</a></p>\n<h3>Showcase</h3>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/danx91/SkillDistribution/refs/heads/master/images/showcase1.webp\" alt=\"showcase1.webp\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/danx91/SkillDistribution/raw/refs/heads/master/images/showcase2.webp\" alt=\"showcase2.webp\" /></p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Configuration</div>\n<div class=\"tab-content\"><h3>Server settings</h3>\n<p>You can change the server config in <code>SPT/user/mods/zgfuedkx-skilldistribution/config/config.jsonc</code>. Open and edit it with text editor of your choice. All configuration options are explained in comments in the config file.</p>\n<h3>Client settings</h3>\n<p>Press <code>F12</code> while in game to edit mod settings (you won\u2019t be able to change these settings if <strong>allow_override</strong> is set to <strong>false</strong> on the server).</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/danx91/SkillDistribution/refs/heads/master/images/settings.png\" alt=\"settings.png\" /></p>\n<p>A more in-depth explanation of these options is available in the server config file.</p>\n<h3>Available options:</h3>\n<ul>\n<li><strong>Experience distribution mode</strong> - Determines how skill experience is distributed. (<em>listed below</em>)</li>\n<li><strong>Skills count</strong> - Number of skills to distribute experience to.</li>\n<li><strong>Allow gym</strong> - Whether or not XP from gym should be also distributed if strength and endurance is maxed.</li>\n<li><strong>Use bonuses</strong> - Whether or not distributed XP uses target skill bonuses.</li>\n<li><strong>Use effectiveness</strong> - Whether or not distributed XP uses and causes target skill fatigue.</li>\n<li><strong>Cause fatigue</strong> - Whether or not distributed XP cause target skill fatigue when <strong>use_effectiveness</strong> is <strong>false</strong>. This option has no effect if use effectiveness is enabled.</li>\n<li><strong>Experience multiplier</strong> - Experience multiplier of distributed XP. Use it to increase or decrease XP that is distributed. Cumulates with per-skill multipliers.</li>\n<li><strong>Experience multiplier (gym)</strong> - Experience multiplier of distributed XP from workout.</li>\n<li><strong>Enable multipliers</strong> - Whether to apply per-skill multipliers (doesn\u2019t work with workout)</li>\n<li><strong>[skill] multiplier</strong> - Distributed XP multiplier when [skill] is source of the XP. Cumulates with global experience multiplier</li>\n<li><strong>Reset to server values</strong> - Pull settings from server and apply them.</li>\n</ul>\n<h3>Distribution modes</h3>\n<ul>\n<li>Equal - All experience is equally distributed to all skills (if there is not enough XP, random will be used instead)</li>\n<li>RoundRobin - Distribute XP to one skill after another in a cyclic manner</li>\n<li>Random - Distribute XP to random skill(s)</li>\n<li>WeightedRandomMin - Distribute XP to random skill(s), skills with lower level have higher chance</li>\n<li>WeightedRandomMax - Distribute XP to random skill(s), skills with higher level have higher chance</li>\n<li>Min - Distribute XP to skill(s) with lowest level</li>\n<li>Max - Distribute XP to skill(s) with highest level</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Installation</div>\n<div class=\"tab-content\"><h3>Fresh install</h3>\n<ol>\n<li>Make sure that both client and server are closed.</li>\n<li>Download mod by pressing <em><strong>Download</strong></em> button at the top of this page or visit <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/danx91/SkillDistribution/releases\" rel=\"noreferrer noopener\">releases page on GitHub</a>.</li>\n<li>Make sure that mod version matches your game version.</li>\n<li>Open or extract zip file.</li>\n<li>Drag and drop <code>BepInEx</code> and <code>SPT</code> directories to the root of your SPT directory.</li>\n<li>Start server and client to make sure that mod is working.</li>\n</ol>\n<p><strong>If you are using Fika, DON\u2019T install this mod on headless client - it will cause crashes!</strong></p>\n<h3>Updating</h3>\n<p><em>Most</em> of updates don\u2019t break anything so follow the same steps as in <strong>Fresh install</strong>. However this mod don\u2019t have any kind of config protection, so before updating make sure to backup config file and apply your changes again after updating.</p>\n<p><strong>Don\u2019t overwrite new config with old one - something might have changed! Use your old config only as a reference and make all changes manually in a new config file.</strong></p>\n<h3>Fixing broken installs (e.g broken config file)</h3>\n<p>Follow <strong>Fresh install</strong> steps and choose to overwrite all files when asked. After that you can apply you config changes once again.</p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Compatibility</div>\n<div class=\"tab-content\"><p><strong>If you found some incompatible mod, please let me know in the comments.</strong></p>\n<h3>General rules</h3>\n<ul>\n<li>This mod should work with almost all mods - it does its job by not-so-aggressive patching and usage of API provided EFT/SPT.</li>\n<li>Mods that overhaul skill system are most likely <strong>incompatible</strong>.</li>\n<li>Mods that overhaul workout are most likely <strong>incompatible</strong>.</li>\n</ul>\n<h3>Compatible mods</h3>\n<ul>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2383/skills-extended\" rel=\"noreferrer noopener\">Skills Extended</a> by <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/33963/cj\" rel=\"noreferrer noopener\">Cj</a></li>\n</ul>\n<h3>Incompatible mods</h3>\n<ul>\n<li><em>No known incompatible mods</em></li>\n</ul></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">License</div>\n<div class=\"tab-content\"><h3>License</h3>\n<p><strong>Copyright \u00a9 2025 danx91 (aka ZGFueDkx)</strong></p>\n<p>This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</p>\n<p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>\n<p><em>If you believe that this mod infringes yours or someone else\u2019s copyrights, please contact me via Discord to resolve this issue: <strong>danx91</strong>.</em></p></div></div></div>\n<p>If you enjoy my work, you can <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/zgfuedkx\" rel=\"noreferrer noopener\">support me on ko-fi</a>.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/2843.png",
    "forge_url": "https://sp-mod.com/mod/2144/skill-distribution",
-   "downloads": 32195,
-   "favourites": 87,
+   "downloads": 33062,
+   "favourites": 93,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -116968,7 +116968,7 @@
     {
      "id": 73890,
      "name": "ZGFueDkx",
-     "avatar": "https://files.sp-mod.com/profile-photos/352c8281e470cbedd79fc9c25ddd2fc08ad5b0f3_128w.webp"
+     "avatar": "https://files.sp-mod.com/profile-photos/shFV6dfE8m11qwxD5J6PxOHSA7UmZSVBRTyrvJzQ_256w.webp"
     }
    ],
    "source_links": [
@@ -116979,12 +116979,24 @@
    ],
    "versions": [
     {
+     "id": 15099,
+     "version": "1.3.0",
+     "description": "<ul>\n<li>Updated to work with SPT 4.1</li>\n</ul>\n",
+     "spt_constraint": "~4.1",
+     "fika": "compatible",
+     "downloads": 1,
+     "size": 27990,
+     "link": "https://sp-mod.com/mod/download/2144/skill-distribution/1.3.0",
+     "published_at": "2026-08-30T23:33:20.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 12557,
      "version": "1.2.2",
      "description": "<h2>Changes</h2>\n<ul>\n<li>Added per skill multipliers</li>\n<li>Improved data parsing</li>\n</ul>\n<h2>Installation</h2>\n<p>New entries have been added to <code>config.jsonc</code> file - make sure to update it as well.</p>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 22097,
+     "downloads": 22932,
      "size": 26643,
      "link": "https://sp-mod.com/mod/download/2144/skill-distribution/1.2.2",
      "published_at": "2025-12-09T00:47:08.000000Z",
@@ -116996,7 +117008,7 @@
      "description": "<ul>\n<li>Fixed server crash caused by using fractions in <code>xp_multiplier</code> or <code>gym_multiplier</code></li>\n</ul>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 1205,
+     "downloads": 1208,
      "size": 21290,
      "link": "https://sp-mod.com/mod/download/2144/skill-distribution/1.2.1",
      "published_at": "2025-12-05T09:03:00.000000Z",
@@ -117008,7 +117020,7 @@
      "description": "<p>Updated to SPT 4.0</p>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 237,
+     "downloads": 239,
      "size": 21274,
      "link": "https://sp-mod.com/mod/download/2144/skill-distribution/1.2.0",
      "published_at": "2025-12-05T03:18:46.000000Z",
@@ -117020,23 +117032,24 @@
      "description": "<h3>Changes</h3>\n<ul>\n<li>Added <strong>Experience Multiplier</strong> option</li>\n<li>Added <strong>Experience Multiplier (gym)</strong> option</li>\n</ul>\n",
      "spt_constraint": "~3.11.0",
      "fika": "unknown",
-     "downloads": 8009,
+     "downloads": 8029,
      "size": null,
      "link": "https://sp-mod.com/mod/download/2144/skill-distribution/1.1.0",
      "published_at": "2025-05-22T19:50:45.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.2.2",
-   "spt_constraint": "~4.0.0",
+   "latest_version": "1.3.0",
+   "spt_constraint": "~4.1",
    "all_spt_constraints": [
     "~3.11.0",
-    "~4.0.0"
+    "~4.0.0",
+    "~4.1"
    ],
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2025-05-21T16:51:00.000000Z",
-   "updated_at": "2026-07-28T07:02:57.000000Z",
+   "updated_at": "2026-08-30T23:34:06.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -117573,19 +117586,23 @@
   {
    "id": 2153,
    "hub_id": 2853,
-   "guid": null,
+   "guid": "com.friedengineer.ett",
    "name": "Expanded Task Text (ETT)",
    "slug": "expanded-task-text-ett",
    "teaser": "Knowledge is power, unfortunately Nikita doesn't see it that way.",
-   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Features and Usage</div>\n<div class=\"tab-content\"><h3>Features</h3>\n<p>Adds extra information to tasks.</p>\n<ul>\n<li>Shows key(s) required for the task if applicable.</li>\n<li>If the task is required for collector.</li>\n<li>If the task is required for lightkeeper.</li>\n<li>Shows the next quest(s) in the chain</li>\n<li>Gunsmith tasks list all required parts and what trader(s) sell those parts</li>\n<li>If applicable shows the time gate until next gunsmith task unlocks.</li>\n</ul>\n<h3><img loading=\"lazy\" decoding=\"async\" src=\"https://hub.sp-tarkov.com/attachment/6062-pasted-from-clipboard-png/\" alt=\"6062-pasted-from-clipboard-png\" /></h3>\n<h3>Usage</h3>\n<p>Just install it!</p>\n<h3>Additional Details</h3>\n<p>If you find any issues, open a Github issue <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/robpneu/SPT-Expanded-Task-Text/issues\" rel=\"noreferrer noopener\">here</a> and I\u2019ll see what I can do.</p>\n<p>This is a re-release with permission of the original author, Dirtbikercj</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Installation</div>\n<div class=\"tab-content\"><p>Extract zip and drop user folder inside of your SPTarkov folder</p>\n<p>Demonstration Video (this is for SAIN, but the same concept applies to all of my mods). Credit to Drakia for the video</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/vKRw58b.gif\" alt=\"vKRw58b.gif\" /></p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Credits</div>\n<div class=\"tab-content\"><p>Original Mod by Dirtbikercj. Re-posted with permission.</p>\n<p>Please show him lots of love. I\u2019ve agreed to handle maintenance going forward but he\u2019s the real creator. He\u2019s given a lot to this community and deserves all the credit and praise, and none of the grief that\u2019s been shown him in the past. I hope he makes his way back to modding but I wish him the best regardless.</p></div></div></div>\n",
+   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Features and Usage</div>\n<div class=\"tab-content\"><h3>Features</h3>\n<p>Adds extra information to tasks.</p>\n<ul>\n<li>Shows key(s) required for the task if applicable.</li>\n<li>If the task is required for collector.</li>\n<li>If the task is required for lightkeeper.</li>\n<li>Shows the next quest(s) in the chain</li>\n<li>Gunsmith tasks list all required parts and what trader(s) sell those parts</li>\n</ul>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/robpneu/SPT-ExpandedTaskText/blob/master/.github/images/showcase.png?raw=true\" alt=\"showcase\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/robpneu/SPT-ExpandedTaskText/blob/master/.github/images/showcase_2.png?raw=true\" alt=\"Showcase2\" /></p>\n<h3>Usage</h3>\n<p>Just install it!</p>\n<h3>Additional Details</h3>\n<p>If you find any issues, open a Github issue <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/robpneu/SPT-Expanded-Task-Text/issues\" rel=\"noreferrer noopener\">here</a> and I\u2019ll see what I can do.</p>\n<p>v1.6.4 was just a re-release with permission of the original author, Dirtbikercj.\nv2.1.0 is an update for 4.1 and marks my taking over maintenance of this mod, with permission from Cj</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Installation</div>\n<div class=\"tab-content\"><p>Extract zip and drop user folder inside of your SPTarkov folder</p>\n<p>Demonstration Video (this is for SAIN, but the same concept applies to all of my mods). Credit to Drakia for the video</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/vKRw58b.gif\" alt=\"vKRw58b.gif\" /></p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Credits</div>\n<div class=\"tab-content\"><p>Original Mod by Dirtbikercj, aka Cj. Re-posted/updated with permission.</p>\n<p>I\u2019ve agreed to handle maintenance going forward but he\u2019s the real creator. He\u2019s given a lot to this community and deserves all the credit for this mod.</p></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/2853.png",
    "forge_url": "https://sp-mod.com/mod/2153/expanded-task-text-ett",
-   "downloads": 14302,
-   "favourites": 1,
+   "downloads": 14450,
+   "favourites": 2,
    "featured": false,
-   "fika": false,
-   "fika_latest": "unknown",
-   "category": null,
+   "fika": true,
+   "fika_latest": "compatible",
+   "category": {
+    "id": 9,
+    "title": "Locales",
+    "slug": "locales"
+   },
    "license": {
     "name": "Creative Commons BY-NC-ND 4.0",
     "link": "https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode"
@@ -117600,32 +117617,49 @@
    "source_links": [
     {
      "url": "https://github.com/robpneu/SPT-Expanded-Task-Text",
-     "label": ""
+     "label": "3.11"
+    },
+    {
+     "url": "https://github.com/robpneu/SPT-ExpandedTaskText",
+     "label": "4.1"
     }
    ],
    "versions": [
+    {
+     "id": 15095,
+     "version": "2.1.0",
+     "description": "<p>Update for 4.1.\nNo functionality changes from 4.0 (<a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2389/expanded-task-text\" rel=\"noreferrer noopener\">https://sp-mod.com/mod/2389/expanded-task-text</a>).</p>\n<p>Note: I\u2019ll be handling maintenance of this mod going forward, with permission from Cj.</p>\n",
+     "spt_constraint": "~4.1",
+     "fika": "compatible",
+     "downloads": 92,
+     "size": 51118,
+     "link": "https://sp-mod.com/mod/download/2153/expanded-task-text-ett/2.1.0",
+     "published_at": "2026-08-30T22:10:00.000000Z",
+     "dependencies": []
+    },
     {
      "id": 520,
      "version": "1.6.4",
      "description": "<p>For SPT 3.11</p>\n<p>Re-release of v1.6.3.</p>\n",
      "spt_constraint": "~3.11.0",
-     "fika": "unknown",
-     "downloads": 14302,
-     "size": null,
+     "fika": "compatible",
+     "downloads": 14358,
+     "size": 38626,
      "link": "https://sp-mod.com/mod/download/2153/expanded-task-text-ett/1.6.4",
-     "published_at": "2025-05-26T02:00:14.000000Z",
+     "published_at": "2025-05-26T02:00:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.6.4",
-   "spt_constraint": "~3.11.0",
+   "latest_version": "2.1.0",
+   "spt_constraint": "~4.1",
    "all_spt_constraints": [
-    "~3.11.0"
+    "~3.11.0",
+    "~4.1"
    ],
    "dependencies": [],
    "all_dependencies": [],
-   "published_at": "2025-05-26T02:00:14.000000Z",
-   "updated_at": "2026-07-07T16:59:08.000000Z",
+   "published_at": "2025-05-26T02:00:00.000000Z",
+   "updated_at": "2026-08-30T22:35:31.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -125310,11 +125344,11 @@
    "name": "Separate Hostility",
    "slug": "separate-hostility",
    "teaser": "Completely fixes the hostility issue in EFT 0.16 / SPT 3.11 where bots don't fight others as they should.",
-   "description_html": "<p>This mod ensures that squads will shoot other squads on sight. USEC will shoot USEC, BEAR will shoot BEAR, PMCs will shoot Scavs and so forth.</p>\n<p>With vanilla SPT, PMCs do not shoot Scavs on sight, But will shoot them once the Scav actually lands a hit. This leads to PMCs almost always aggroing onto the player, but not Scavs.</p>\n<p>Spawn mods either don\u2019t fix this, or in some cases, introduce even more hostility issues, such as bosses not being hostile to other PMCs, but still being hostile to you.</p>\n<p>NOTE: This mods makes Rogues hostile to USEC. I am unable to fix this. And it makes sense anyway. Rogues are their own gang of USEC, and just like how one squad of USEC will be hostile to another, so are Rogues.</p>\n<h3><strong>Original Description Below:</strong></h3>\n<p>Originally made as an update to Please Just Fight, however it faces a core limitation in 0.16: same-faction PMC groups won\u2019t fight each other, only engaging opposing factions. Everyone lives in a big happy family.</p>\n<p>To fix this, the mod was fully rewritten with patches that:</p>\n<p>Split PMC mega groups into individual ones (per bot and per spawn group setting).</p>\n<p>Remove faction-based hostility restrictions.</p>\n<p>Result: PMCs now engage any hostile target, including former allies, enabling true free-for-all combat, while keeping their spawn group settings.</p>\n<p>Do note that I tend to kill everyone so there\u2019s no distinguishing for USEC player and rogues. Kill em all.</p>\n<p>Details: Hostility is group based. Bots are spawned into same role group, regardless of their spawn group setting (duo, trio, solo, quad\u2026). For example, the game spawned a duo USEC squad, a trio USEC squad, and 2 solo USEC. The result is they are all added into one big USEC group that they won\u2019t fight each other. You can set bots as enemy even within their own big group, but that would break any spawn group settings and is practically bad.</p>\n<p>This mod was made back in June when I was still playing SPT.</p>\n",
+   "description_html": "<p>This mod ensures that squads will shoot other squads on sight. U*** will shoot U***, B*** will shoot B***, PMCs will shoot Scavs and so forth.</p>\n<p>With vanilla SPT, PMCs do not shoot Scavs on sight, But will shoot them once the Scav actually lands a hit. This leads to PMCs almost always aggroing onto the player, but not Scavs.</p>\n<p>Spawn mods either don\u2019t fix this, or in some cases, introduce even more hostility issues, such as bosses not being hostile to other PMCs, but still being hostile to you.</p>\n<p>NOTE: This mods makes Rogues hostile to U***. I am unable to fix this. And it makes sense anyway. Rogues are their own gang of U***, and just like how one squad of U*** will be hostile to another, so are Rogues.</p>\n<h3><strong>Original Description Below:</strong></h3>\n<p>Originally made as an update to Please Just Fight, however it faces a core limitation in 0.16: same-faction PMC groups won\u2019t fight each other, only engaging opposing factions. Everyone lives in a big happy family.</p>\n<p>To fix this, the mod was fully rewritten with patches that:</p>\n<p>Split PMC mega groups into individual ones (per bot and per spawn group setting).</p>\n<p>Remove faction-based hostility restrictions.</p>\n<p>Result: PMCs now engage any hostile target, including former allies, enabling true free-for-all combat, while keeping their spawn group settings.</p>\n<p>Do note that I tend to kill everyone so there\u2019s no distinguishing for U*** player and rogues. Kill em all.</p>\n<p>Details: Hostility is group based. Bots are spawned into same role group, regardless of their spawn group setting (duo, trio, solo, quad\u2026). For example, the game spawned a duo U*** squad, a trio U*** squad, and 2 solo U***. The result is they are all added into one big U*** group that they won\u2019t fight each other. You can set bots as enemy even within their own big group, but that would break any spawn group settings and is practically bad.</p>\n<p>This mod was made back in June when I was still playing SPT.</p>\n",
    "thumbnail": "",
-   "forge_url": "https://forge.sp-tarkov.com/mod/2248/separate-hostility",
-   "downloads": 8117,
-   "favourites": 21,
+   "forge_url": "https://sp-mod.com/mod/2248/separate-hostility",
+   "downloads": 8573,
+   "favourites": 24,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -125341,7 +125375,7 @@
     {
      "id": 41848,
      "name": "Shibdib",
-     "avatar": "https://forge-static.sp-tarkov.com/profile-photos/VoavEH1BdPgTFow3b8JpqArCg4ZglvVVI2HjKUgI_128w.webp"
+     "avatar": "https://files.sp-mod.com/profile-photos/VoavEH1BdPgTFow3b8JpqArCg4ZglvVVI2HjKUgI_128w.webp"
     }
    ],
    "source_links": [
@@ -125356,14 +125390,26 @@
    ],
    "versions": [
     {
+     "id": 15097,
+     "version": "3.0.0",
+     "description": "<p>Update to 4.1.3</p>\n",
+     "spt_constraint": "4.1.3",
+     "fika": "unknown",
+     "downloads": 20,
+     "size": 6789,
+     "link": "https://sp-mod.com/mod/download/2248/separate-hostility/3.0.0",
+     "published_at": "2026-08-30T23:07:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 13711,
      "version": "2.0.0",
      "description": "<p>Update to SPT 4.0.13</p>\n",
      "spt_constraint": "4.0.13",
      "fika": "unknown",
-     "downloads": 3714,
+     "downloads": 4106,
      "size": 6204,
-     "link": "https://forge.sp-tarkov.com/mod/download/2248/separate-hostility/2.0.0",
+     "link": "https://sp-mod.com/mod/download/2248/separate-hostility/2.0.0",
      "published_at": "2026-06-06T04:02:00.000000Z",
      "dependencies": []
     },
@@ -125373,23 +125419,24 @@
      "description": "<p>Linked to github release on June 16.</p>\n<p>Download the Separate Hostility package.</p>\n<p>Install like any other client side mods.</p>\n",
      "spt_constraint": "~3.11.0",
      "fika": "unknown",
-     "downloads": 4403,
+     "downloads": 4447,
      "size": null,
-     "link": "https://forge.sp-tarkov.com/mod/download/2248/separate-hostility/1.0.0",
+     "link": "https://sp-mod.com/mod/download/2248/separate-hostility/1.0.0",
      "published_at": "2025-08-09T02:57:30.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "2.0.0",
-   "spt_constraint": "4.0.13",
+   "latest_version": "3.0.0",
+   "spt_constraint": "4.1.3",
    "all_spt_constraints": [
     "4.0.13",
+    "4.1.3",
     "~3.11.0"
    ],
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2025-08-09T02:57:00.000000Z",
-   "updated_at": "2026-07-28T09:06:13.000000Z",
+   "updated_at": "2026-08-30T23:08:03.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -185850,11 +185897,11 @@
    "guid": "com.hysocs.traumacore",
    "name": "TraumaCore",
    "slug": "traumacore",
-   "teaser": "TraumaCore is a damage and armor overhaul for SPT that makes shot placement, bleeding, bones, and repeated armor hits more important. by adding more hitboxes and changing how damage works",
+   "teaser": "TraumaCore is a configurable damage and injury overhaul for SPT",
    "description_html": "<h1>TraumaCore</h1>\n<p>TraumaCore is a configurable damage and injury overhaul for SPT. It makes the path a bullet takes through the body matter: armor, penetration, wound depth, bullet size, bones, organs, fragmentation, bleeding, and treatment all contribute to the result.</p>\n<blockquote>\n<p>TraumaCore can make combat more lethal even though penetrating shots deal less damage immediately. A survivor may leave the fight with several wounds and continue losing health until those wounds clot or are treated.</p>\n</blockquote>\n<p>The default setup is intended to remain understandable and playable. AI uses the complete anatomical system, while the most sudden player organ deaths are disabled by default. Player and AI behavior can be configured separately in F12.</p>\n<h2>Core features</h2>\n<ul>\n<li>Wound depth determines immediate damage and delayed blood loss.</li>\n<li>Bullet size, speed, mass, penetration, and travel through the body affect wound severity.</li>\n<li>Light and heavy wounds stack, display live HP loss per second, and naturally clot over time.</li>\n<li>Internal brain, heart, spine, skull, rib, and limb-bone anatomy makes precise shot placement matter.</li>\n<li>Brain and upper-spine hits can be fatal; heart hits cause severe permanent hemorrhaging.</li>\n<li>Bullets can stop inside the body, exit through it, strike bones, or fragment into multiple wound paths.</li>\n<li>Blocked rounds can cause bruising, movement penalties, reduced stamina recovery, and impact shock.</li>\n<li>Wound-driven blood sprays, corpse bleeding, custom blood decals, and throttled pain feedback.</li>\n<li>The death screen shows impact locations, wound paths, direct damage, bleeding, and blood-loss statistics.</li>\n<li>Corpses can be inspected for wounds and dragged using ragdoll physics.</li>\n</ul>\n<h2>How a shot is resolved</h2>\n<p>TraumaCore keeps EFT\u2019s armor decision. EFT still determines whether the armor blocks or penetrates the round using its normal ammunition, armor class, material, coverage, durability, and penetration rules.</p>\n<p>If the shot penetrates, TraumaCore uses EFT\u2019s post-armor damage and builds a wound from the actual hit direction and body-part geometry. It considers:</p>\n<ul>\n<li>How far the projectile can penetrate into tissue</li>\n<li>How much of the body part it actually crosses</li>\n<li>Bullet diameter, speed, mass, and penetration power</li>\n<li>Whether it hits ribs, the skull, the spine, or a limb bone</li>\n<li>Whether it stops inside the body or creates an exit wound</li>\n<li>Whether the projectile fragments and creates additional wound paths</li>\n</ul>\n<p>Wound depth controls both immediate damage and delayed bleeding. A shallow edge hit still deals meaningful damage, but a deeper center hit reaches full wound strength. Full strength is reached after crossing roughly 75% of the body part\u2019s center-line depth, so shots near the edge do not need to cross the entire model to count properly.</p>\n<p>The formula used for these calculations are simple and not made to simulate real ballistics but should make rounds feel more impactful depending on shot placement</p>\n<h2>Direct damage and total wound damage</h2>\n<p>A penetrating hit is divided into two parts:</p>\n<ul>\n<li><strong>Direct damage</strong> is applied immediately.</li>\n<li><strong>Wound damage</strong> is delivered gradually through bleeding.</li>\n</ul>\n<p>Direct damage scales with wound depth and has a minimum floor, so even a graze matters. Deeper wounds move toward the configured full direct-damage value.</p>\n<p>The remaining damage is assigned to the wound\u2019s bleed budget. With the recommended defaults, a complete wound is intended to deal slightly more total damage than the equivalent EFT hit, but much of that damage is delayed. This gives the victim time to react, retreat, or use medical supplies.</p>\n<p>Both the immediate-damage fraction and full-wound total damage can be adjusted in F12.</p>\n<h2>Wounds and bleeding</h2>\n<p>Every penetrating wound is evaluated as either light or heavy using its depth, projectile diameter, and impact velocity.</p>\n<ul>\n<li>Multiple wounds stack independently.</li>\n<li>Larger and deeper wounds begin with a higher damage rate.</li>\n<li>Exit wounds and fragmentation can increase wound severity.</li>\n<li>Normal wounds lose strength over time and eventually clot naturally.</li>\n<li>The first few seconds reduce bleed damage quickly, followed by a slower decline.</li>\n<li>Each body part displays a native EFT Light Bleeding or Heavy Bleeding effect that shows bleed per second and time remaining on hover.</li>\n</ul>\n<h2>Treatment</h2>\n<p>Normal EFT medical items treat TraumaCore wounds through new timer reductions instead of instant removals.</p>\n<ul>\n<li>Treating a light bleed advances that wound about 90% toward clotting.</li>\n<li>Treating a heavy bleed advances it about 99% toward clotting.</li>\n<li>Blood-loss-blocking stims clear existing non-heart bleeding.</li>\n<li>While a blood-loss blocker is active, applicable treatable bleed damage is reduced by 50%.</li>\n</ul>\n<h2>Anatomical hitboxes</h2>\n<p>TraumaCore adds smaller internal targets that follow the character\u2019s animated body:</p>\n<ul>\n<li>Upper and lower brain</li>\n<li>Heart</li>\n<li>Cervical or upper spine</li>\n<li>Thoracic or lower spine</li>\n<li>Ribcage and skull resistance</li>\n<li>arm and leg bones</li>\n</ul>\n<p>These are internal targets, not replacements for the entire head or chest. A face hit that misses the brain is not automatically a brain hit, and a chest hit must physically reach the heart before it can damage it.</p>\n<h2>Fragmentation</h2>\n<p>TraumaCore can replace EFT\u2019s single abstract fragmentation result with visible wound paths.</p>\n<p>When a round fragments inside tissue, it splits into two or three paths within a limited cone. Each path has less remaining penetration than the original projectile, but the combined wound receives additional damage and may create multiple exits. Armor performance can influence the fragmentation chance after penetration.</p>\n<p>Custom fragmentation can be disabled separately in F12 if you would not like ammo to randomly do more damage than you could expect</p>\n<h2>Bruising</h2>\n<p>Rounds stopped by armor can apply a temporary bruise. Stronger blocked hits create a stronger penalty, and repeated impacts can stack it.</p>\n<p>Bruising lasts about 15 seconds and gradually fades. At maximum strength it can reduce movement speed by up to 15% and stamina recovery by up to 30%.</p>\n<h2>Impact shock</h2>\n<p>Taking bullet damage can apply a short <strong>Impact shock</strong> effect. Repeated hits build a peripheral-vision vignette and refresh a brief native Pain marker. This represents the immediate pressure and disorientation of being hit without creating a custom saved health effect.</p>\n<h2>Blood, audio, and hit presentation</h2>\n\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://media.giphy.com/media/OHvEqw3iLvlMceCW48/giphy.gif\" alt=\"GIF\" /></p>\n<ul>\n<li>Blood originates from wound entry and exit locations visible in-raid.</li>\n<li>Fragment paths can create blood from more than one opening.</li>\n<li>Wound blood output weakens as the wound clots.</li>\n<li>EFT blood decals remain available longer so you can track blood on the ground.</li>\n<li>Bleed-out deaths can use agony or death voice lines appropriate to the wound.</li>\n</ul>\n<p>Procedural blood, expanded decals, and trauma audio/screen effects each have their own F12 toggle.</p>\n<h2>Death-screen wound report</h2>\n<p>TraumaCore expands the raid-end damage screen to explain what happened rather than showing only a damage total.</p>\n\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/nvuuNAD.png\" alt=\"Image\" /></p>\n<p>The report can show:</p>\n<ul>\n<li>Entry, stopping, exit, and fragment locations on each body part</li>\n<li>The final hit and the sequence of earlier impacts</li>\n<li>Direct damage and light/heavy bleed damage</li>\n<li>Total bleed drain, observed bleed duration, and average HP lost per second</li>\n<li>Wound depth, penetration, impacted anatomy, and projectile-path details</li>\n</ul>\n<h2>Corpse wound inspection</h2>\n<p>corpses receive an <strong>INSPECT WOUNDS</strong> interaction. Inspection opens a dedicated view of the actual EFT corpse ragdoll and allows the body to be examined more closely.</p>\n\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://media.giphy.com/media/JnQKUdCpzUiIV9EZcJ/giphy.gif\" alt=\"GIF\" /></p>\n<p>Optional overlays show:</p>\n<ul>\n<li>Recorded projectile trajectories</li>\n<li>TraumaCore organ locations</li>\n<li>Ragdoll and body anchors used to understand the hit location</li>\n</ul>\n<h2>Corpse dragging</h2>\n<p>corpses also receive a <strong>DRAG BODY</strong> interaction.</p>\n\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://media.giphy.com/media/HZYLlXbrYgNmd7RGzk/giphy.gif\" alt=\"GIF\" /></p>\n<p>Dragging:</p>\n<ul>\n<li>prevents sprinting, and reduces movement speed while active.</li>\n</ul>\n<h2>Default balance</h2>\n<p>Anatomical trauma is enabled for both players and AI by default.</p>\n<p>For AI and Scavs, the brain, heart, cervical spine, and thoracic spine are all enabled.</p>\n<p>For players:</p>\n<ul>\n<li>Thoracic-spine fractures are enabled.</li>\n<li>Fatal brain hits are disabled.</li>\n<li>Heart hemorrhage is disabled.</li>\n<li>Fatal cervical-spine hits are disabled.</li>\n</ul>\n<p>This gives AI the complete anatomical system while reducing unavoidable instant or delayed player deaths from incoming fire. All player and AI organ settings can be changed independently.</p>\n<h2>Configuration</h2>\n<p>Press <strong>F12</strong> and select <strong>TraumaCore</strong> to configure the mod.</p>\n<p>The menu contains:</p>\n<ul>\n<li>A <strong>Restore Recommended Defaults</strong> button at the top</li>\n<li>Main feature toggles</li>\n<li>Direct and total-damage balance</li>\n<li>Separate player and AI anatomical systems</li>\n<li>Natural clot time</li>\n<li>Damage linkage and blacked-part retention</li>\n<li>Blood and presentation options</li>\n<li>Debug visualization and effect-testing tools</li>\n</ul>\n<p>After updating or experimenting with settings, use <strong>Restore Recommended Defaults</strong> to return every active setting to the balance shipped with the current version.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/jmXNvUYj2Mh7dlpoDw8nQLCQS6PEzr9RkKLeLvDH.png",
    "forge_url": "https://sp-mod.com/mod/2893/traumacore",
-   "downloads": 2789,
+   "downloads": 2831,
    "favourites": 37,
    "featured": false,
    "fika": false,
@@ -185888,7 +185935,7 @@
      "description": "<ul>\n<li>Fixed stimulants not properly stopping bleeds. On initial use, stims now reduce the remaining bleed duration by 90% and reduce bleed damage per second by 50% for the duration of the stimulant.</li>\n<li>Multiple light bleeds on the same limb will now combine into a heavy bleed.</li>\n</ul>\n",
      "spt_constraint": "~4.1.0 ",
      "fika": "unknown",
-     "downloads": 108,
+     "downloads": 148,
      "size": 95243,
      "link": "https://sp-mod.com/mod/download/2893/traumacore/1.6.0",
      "published_at": "2026-08-30T17:34:00.000000Z",
@@ -185948,7 +185995,7 @@
      "description": "<ul>\n<li>Fixed custom injury effects persisting after raids and preventing affected profiles from loading.</li>\n</ul>\n",
      "spt_constraint": "~4.1.0 ",
      "fika": "unknown",
-     "downloads": 535,
+     "downloads": 537,
      "size": 49171,
      "link": "https://sp-mod.com/mod/download/2893/traumacore/1.1.0",
      "published_at": "2026-08-10T02:24:00.000000Z",
@@ -185963,7 +186010,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-08-10T01:25:00.000000Z",
-   "updated_at": "2026-08-30T17:35:32.000000Z",
+   "updated_at": "2026-08-30T21:35:47.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
@@ -188279,8 +188326,8 @@
    "description_html": "<h2>SPTChecker</h2>\n<p>A lightweight Windows desktop app that watches the <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mods\" rel=\"noreferrer noopener\">SPT Forge</a> for new and updated mods \u2014 and, optionally, checks your own installed mods against it.</p>\n<blockquote>\n<p><strong>The Forge moved to sp-mod.com.</strong> The Forge changed hands and now lives at <strong>sp-mod.com</strong>; the old <code>forge.sp-tarkov.com</code> is fully offline. <strong>Update to 3.4.0</strong> \u2014 anything before 3.3.0 points at the dead domain and cannot reach anything at all. Your saved history carries over automatically on first launch: mod ids were preserved across the move, so already-seen mods aren\u2019t re-reported and your tracked count stays intact.</p>\n</blockquote>\n<blockquote>\n<p><strong>Note on antivirus flags:</strong> A small number of vendors may flag this exe as malicious. Most of them (ALYac, Arcabit, Emsisoft, eScan, GData, VIPRE) all run BitDefender\u2019s engine under the hood and are triggering off the same single false positive detection. These are not real threats. Source code is open on GitHub.</p>\n</blockquote>\n<hr />\n<h3>What it does</h3>\n<p>SPTChecker runs quietly in your system tray and checks the Forge every 15 minutes for changes. When it finds something, it sends a Windows toast notification and updates the UI \u2014 no need to manually browse the Forge to stay up to date.</p>\n<p>It can also do the reverse: point it at your SPT install folder and it\u2019ll scan your actually-installed mods and tell you which ones have updates waiting (see <strong>Local mod scanning</strong> below) \u2014 entirely opt-in, off by default.</p>\n<hr />\n<h3>How it works</h3>\n<ol>\n<li>On first launch, the app populates both columns \u2014 <strong>New Mods</strong> and <strong>Recently Updated</strong>, mirroring the website\u2019s own tabs.</li>\n<li>Both columns are built from the Forge\u2019s RSS feeds and public API \u2014 <strong>no HTML scraping</strong>.</li>\n<li>Every 15 minutes it re-fetches and compares against stored state \u2014 matching the shortest cache window sp-mod.com serves, since checking more often can\u2019t surface anything newer.</li>\n<li>Newly seen mods are flagged <strong>New</strong>. The Recently Updated column tracks fresh releases of existing mods.</li>\n<li>If a mod author unpublishes their mod, it\u2019s automatically removed from the display.</li>\n<li>Results persist across checks and restarts \u2014 new findings push older entries down in a rolling history (up to 7 per column).</li>\n<li>If a check fails (site unreachable, network hiccup, rate limiting), the app doesn\u2019t crash \u2014 it shows the error in the status bar and quietly retries on the next cycle.</li>\n</ol>\n<p>A full check completes in roughly two seconds. Requests are paced and automatically back off if the Forge rate-limits, so the app stays a good citizen even when a check and a local scan overlap.</p>\n<hr />\n<h3>UI</h3>\n<ul>\n<li><strong>Two-panel layout</strong> \u2014 New mods on the left, recently updated mods on the right (up to 7 per column), each heading showing a live count of what\u2019s in it</li>\n<li><strong>Mod cards</strong> \u2014 Each card shows the thumbnail, title, author, version, category and description on a rounded surface outlined in its category colour, with a bolder rail down the left edge so a full column reads as a list rather than a grid of boxes</li>\n<li><strong>Version diff</strong> \u2014 Updated mods show the version change as a chip (e.g. <code>1.2.3 \u2192 1.3.0</code>)</li>\n<li><strong>View Change Notes</strong> \u2014 A small icon on updated mod cards opens a popup with that version\u2019s changelog, anchored to the card it belongs to; click the same icon again (or press Escape) to close it. Rendered as actual markdown (bold, italic, inline code, headers, bullet lists, and clickable links that open in your browser) rather than a plain text dump, plus a direct \u201cOpen on Forge\u201d button</li>\n<li><strong>NEW badge</strong> \u2014 Freshly detected mods are marked with a green NEW badge so you can spot changes at a glance</li>\n<li><strong>NEW AUTHOR badge</strong> \u2014 Mods from accounts created in the last 60 days are flagged so you can spot new community members</li>\n<li><strong>Timestamps</strong> \u2014 Each card shows how long ago the mod was published or updated (e.g. \u201c2h ago\u201d, \u201cyesterday\u201d), pinned to the top right where a long title can\u2019t push it off the card</li>\n<li><strong>Readable at any width</strong> \u2014 Long titles and descriptions are trimmed with an ellipsis rather than cut mid-word; hover a card to smoothly scroll them and read the full text</li>\n<li><strong>Click to open</strong> \u2014 Click any card to open the mod page directly on the Forge</li>\n<li><strong>Right-click menu</strong> \u2014 Right-click any card for quick options to view change notes, open on Forge, or copy the link</li>\n<li><strong>Category legend</strong> \u2014 Hover the info icon in the header for a color key to every mod category</li>\n<li><strong>Stats window</strong> \u2014 Click <strong>Stats</strong> for headline tiles (total tracked, added in the last 7 days, average per day), a 30-day daily-activity chart (hover any point for the exact date/count), and the top 5 authors/categories by activity in the last 30 days, each row drawing a proportional bar so the shape of the ranking reads at a glance. Rolls forward automatically, no manual reset. Author names are clickable and open their Forge profile</li>\n<li><strong>Right-sized on first launch</strong> \u2014 The window opens sized to show every mod without scrolling, measured against your actual display scaling rather than assumed. After that it remembers and restores whatever size you chose; shrink it and both columns scroll</li>\n<li><strong>Dark theme</strong> \u2014 Custom-drawn controls throughout, styled to match the SPT aesthetic</li>\n</ul>\n<hr />\n<h3>Local mod scanning (opt-in)</h3>\n<p>Click <strong>Local Mods</strong> to check your own installed mods against the Forge \u2014 entirely optional and off by default. If you run into anything odd, please report it.</p>\n<ol>\n<li>Point it at your SPT install folder (validated automatically \u2014 it checks for <code>BepInEx/plugins</code>, or the server mods folder under either <code>SPT_Runtime/</code> (SPT 4.1+) or <code>SPT/</code> (SPT 4.0)).</li>\n<li>Click <strong>Scan Now</strong>. Rather than guessing a mod\u2019s identity from its filename or code shape, the app reads each mod\u2019s <em>real</em> declared metadata via actual .NET reflection, so it works no matter how a mod author structured their code. A progress bar tracks each mod as it\u2019s checked.</li>\n<li>Each mod is matched against the Forge \u2014 exact ID lookup first, falling back to a smarter name search that handles camelCase/dotted internal names, author-prefixed names, and a full-text search, then conservative fuzzy ranking. Results lead with a summary line and colour-coded counts, then break down into sections:\n<ul>\n<li><strong>Updates Available</strong> (orange) \u2014 full mod cards (thumbnail, version diff, changelog, right-click menu \u2014 same as the main feed), with an <strong>Open All</strong> button to launch every one of those mod pages at once</li>\n<li><strong>Up to Date</strong> (green) \u2014 a simple clickable list linking to each mod\u2019s Forge page</li>\n<li><strong>Not Found on Forge</strong> (grey) \u2014 mods that couldn\u2019t be confidently matched (see below for why)</li>\n<li><strong>Couldn\u2019t Check</strong> (red) \u2014 only appears if the Forge rate-limited the scan partway through. These mods are almost certainly fine; the app just didn\u2019t manage to ask about them, and says so rather than reporting them as missing</li>\n</ul>\n</li>\n<li>Every match is then confirmed against the Forge\u2019s own update service, using <strong>your actual installed SPT version</strong> (read directly from <code>SPT.Server.exe</code>). This catches things a plain version comparison can\u2019t:\n<ul>\n<li>A newer release that isn\u2019t compatible with your SPT build is <strong>not</strong> offered as an update</li>\n<li>A newer release blocked by another mod\u2019s dependency requirements is <strong>not</strong> offered as an update</li>\n</ul>\n</li>\n<li>Mods that ship both a client-side plugin and a separate server-side file (common for larger mods) are recognized as one logical mod and shown as a single result, not two duplicate entries. If the two halves are at different versions, both are labelled (e.g. <code>client 1.4.0, server 1.5.0</code>).</li>\n<li>A toast notification fires if any installed mods have updates available.</li>\n<li>Your folder path and last scan results are remembered across restarts and shown again next time you open <strong>Local Mods</strong> \u2014 but a scan only ever runs when you click <strong>Scan Now</strong>. It never runs automatically, on startup or otherwise.</li>\n</ol>\n<p><strong>Why a mod might show up as \u201cNot Found on Forge\u201d:</strong> its internal name may not closely resemble its actual Forge listing title, it may be part of a bundled mod pack rather than listed individually, it may have been removed or renamed on the Forge, or it may be a core SPT/framework component rather than an actual mod (filtered out on purpose). SPTChecker would rather report \u201cnot found\u201d than risk flagging the wrong mod as needing an update.</p>\n<p><strong>A note on version numbers:</strong> the app reports what a mod\u2019s own files declare. If an author bumps their Forge listing but forgets to update the version compiled into the mod itself, it can still read as out of date after updating. That\u2019s a mismatch in the mod\u2019s own metadata, and it has to be fixed by its author.</p>\n<hr />\n<h3>System tray</h3>\n<ul>\n<li>Closing the window minimizes to tray instead of quitting</li>\n<li>Double-click the tray icon to restore the window</li>\n<li>Right-click for <strong>Show</strong>, <strong>Check Now</strong>, or <strong>Quit</strong></li>\n<li><strong>Tray badge</strong> \u2014 A red dot appears on the tray icon when there are unread changes while the app is minimized, with an unread count in the tooltip. Clears automatically when you open the window</li>\n<li>Toast notifications work even while minimized</li>\n</ul>\n<hr />\n<h3>Status bar</h3>\n<ul>\n<li><strong>Forge status indicator</strong> \u2014 A dot shows whether the last check reached the Forge OK (green) or failed (red); hover for details</li>\n<li><strong>Errors you can\u2019t miss</strong> \u2014 A failed check is called out in red rather than blending into normal status text</li>\n<li><strong>Update available</strong> \u2014 A green chip appears when a newer SPTChecker has been posted to the Forge; click it to open the mod page. Invisible when you\u2019re up to date, and it only ever tells you \u2014 nothing installs itself</li>\n<li><strong>Live countdown</strong> \u2014 Shows time remaining until the next automatic check</li>\n<li><strong>Running summary</strong> \u2014 Shows the baseline mod count on first run, or how many new/updated mods were found (and total tracked) on each subsequent check</li>\n</ul>\n<hr />\n<h3>Additional features</h3>\n<ul>\n<li><strong>Run on Startup</strong> \u2014 One-click toggle to launch silently in the background when Windows starts</li>\n<li><strong>Thumbnail caching</strong> \u2014 Mod thumbnails are cached to disk and auto-purged after 3 days; mods with no uploaded thumbnail get the same wireframe placeholder icon shown on the Forge itself, instead of a blank box</li>\n<li><strong>Unpublished mod detection</strong> \u2014 Mods removed from the Forge are automatically cleared from the display, verified in a single batched lookup rather than one request per mod</li>\n<li><strong>Fails safe, never guesses</strong> \u2014 Ambiguous matches are reported as unmatched rather than guessed at, and any network failure leaves the display untouched instead of hiding mods</li>\n<li><strong>Low resource usage</strong> \u2014 Connection pooling, shared fonts, a smart timer that sleeps when the window is hidden, and state writes skipped when nothing changed</li>\n<li><strong>Standalone .exe</strong> \u2014 No Python installation required, just download and run</li>\n</ul>\n<hr />\n<h3>Credits</h3>\n<p>Huge thanks to <strong>AlexTushonka</strong> for taking on the Forge, keeping it running at sp-mod.com, and being genuinely great to deal with.</p>\n<p>Local mod scanning was inspired by Refringe\u2019s <strong>Check Mods</strong> CLI.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/dlxodBvplKowpsw2hxZWJ28kMlLiuNytqGm8ft5y.png",
    "forge_url": "https://sp-mod.com/mod/2921/sptchecker",
-   "downloads": 1236,
-   "favourites": 17,
+   "downloads": 1514,
+   "favourites": 21,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -188308,12 +188355,24 @@
    ],
    "versions": [
     {
+     "id": 15098,
+     "version": "3.4.2",
+     "description": "<h2>v3.4.2</h2>\n<h3>Fixed \u2014 new mods reported themselves twice</h3>\n<p>A mod that had just been published to the Forge appeared in <strong>both</strong> the New Mods\nand Recently Updated columns at once, and sent <strong>two</strong> notifications for it: one\nsaying it was new, one saying it had been updated.</p>\n<p>The cause is that a brand new mod is simultaneously the newest thing <em>created</em>\nand the newest thing <em>updated</em> on the Forge, so it genuinely shows up in both\nfeeds. It now counts only as new. This was happening constantly rather than\noccasionally \u2014 in a live check while fixing it, 2 of the 7 slots in Recently\nUpdated were duplicates of the New column.</p>\n<p>Recently Updated also backfills properly now, so the slot a duplicate used to\noccupy shows a real update instead of being wasted.</p>\n<h3>Fixed \u2014 some genuine updates were never announced</h3>\n<p>Fixing the above turned up the opposite problem. Update notifications fired when\na mod <em>entered</em> the Recently Updated column, which is not the same event as a mod\nbeing updated. If a mod was already sitting in that column and then released a new\nversion, you were never told.</p>\n<p>Updates are now announced when a mod\u2019s version actually changes.</p>\n<h3>Changed \u2014 activity chart label</h3>\n<p>The stats chart\u2019s \u201cAdded per day\u201d is now \u201cNew mods per day\u201d. It only ever counted\nmods newly published to the Forge and never counted updates, but the old wording\nsuggested otherwise \u2014 which made a correct zero on a day with updates but no new\nreleases look like the chart had stopped working.</p>\n<h3>Updating</h3>\n<p>Replace your existing exe. Saved history carries over; already-seen mods are not\nre-reported.</p>\n",
+     "spt_constraint": "~4.1.0",
+     "fika": "compatible",
+     "downloads": 6,
+     "size": 59850246,
+     "link": "https://sp-mod.com/mod/download/2921/sptchecker/3.4.2",
+     "published_at": "2026-08-30T23:24:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 14964,
      "version": "3.4.1",
      "description": "<h1>v3.4.1 \u2014 Bug fixes</h1>\n<p>Two fixes for issues introduced by the 3.4.0 visual overhaul, both reported\nfrom real use.</p>\n<ul>\n<li>\n<p><strong>Closing a popup no longer opens another one.</strong> Clicking the <strong>X</strong> on the\nStats window could trigger the <strong>Local Mods</strong> button sitting underneath it,\nleaving you with a second window to dismiss before getting back to the app.\nThe popup was closing on mouse-<em>down</em>, which handed the mouse-<em>up</em> to\nwhatever was behind it.</p>\n</li>\n<li>\n<p><strong>Change notes no longer cut off their last lines.</strong> A changelog longer than\nthe popup but shorter than about 24 lines would simply stop partway, with no\nscrollbar and no response to the mouse wheel \u2014 the remaining lines were\nrendered below the visible area with no way to reach them. Scrolling now\nstarts as soon as the content actually overflows.</p>\n</li>\n</ul>\n<p>Both fixes are on the shared components, so they apply to every popup and\nevery button in the app rather than just the two cases that surfaced them.</p>\n",
      "spt_constraint": "~4.1",
      "fika": "compatible",
-     "downloads": 51,
+     "downloads": 319,
      "size": 64901065,
      "link": "https://sp-mod.com/mod/download/2921/sptchecker/3.4.1",
      "published_at": "2026-08-24T18:48:00.000000Z",
@@ -188361,24 +188420,25 @@
      "description": "<h2>SPTChecker v3.3.1</h2>\n<p><strong>Recommended update for everyone on 3.3.0.</strong> No breaking changes \u2014 your saved history and settings carry over untouched.</p>\n<h3>Checks now run every 15 minutes instead of every 5</h3>\n<p>I talked to <strong>AlexTushonka</strong>, who maintains sp-mod.com, and they confirmed the site\u2019s endpoints serve at least 15 minutes of cached data. That means the old 5-minute cycle was re-downloading identical data two times out of every three \u2014 it could never surface anything new. Checking every 15 minutes gets you exactly the same mods at the same time, while cutting the app\u2019s traffic to the site by about two-thirds.</p>\n<p>If you don\u2019t want to wait, <strong>Check Now</strong> in the tray menu still works whenever you like.</p>\n<h3>The app handles site outages honestly now</h3>\n<p>On August 12 sp-mod.com turned on bot protection that blocked the app entirely. On 3.3.0 that surfaced as a bare <code>403 Client Error</code> in the status bar next to a completely empty window \u2014 which looks exactly like the app breaking, rather than the site refusing it.</p>\n<p>Three fixes:</p>\n<ul>\n<li><strong>The status bar now names the real cause</strong> when the site blocks or refuses the app, instead of a raw HTTP error code.</li>\n<li><strong>A failed check no longer leaves you staring at a blank window.</strong> Your last known mods stay on screen, with the reason the refresh failed shown alongside them.</li>\n<li><strong>The New Mods column no longer empties out over a minor feed hiccup.</strong> It used to depend on the RSS feed alone, so any feed problem blanked it even when the app already had perfectly good data from the API. It now falls back to that data.</li>\n</ul>\n<p>That block has since been lifted \u2014 thanks to AlexTushonka for sorting it out quickly \u2014 and the app reaches the site fine again. These changes are so the next hiccup is handled gracefully instead of looking like a crash.</p>\n<h3>Mod thumbnails with transparent backgrounds render correctly</h3>\n<p>Some mods upload a thumbnail with a transparent background. The app was throwing that transparency away, which exposed leftover image data hidden underneath it \u2014 one mod had an entire unrelated landscape photo back there, showing up as a garbled mess behind its logo. Those thumbnails looked fine on the Forge itself, because a browser handles the transparency properly.</p>\n<p>They now blend into the mod card the way they were meant to. Affected thumbnails refresh themselves; you don\u2019t need to clear anything.</p>\n<h3>Local mod scans are gentler on the Forge \u2014 and more honest when they aren\u2019t</h3>\n<p>I got sp-mod.com\u2019s actual rate limits from AlexTushonka and paced the app to match them properly, with room to spare. Scanning a large mod folder now stays comfortably inside what the site is happy to serve.</p>\n<p>If a scan does ever get throttled, it now says so. Previously those mods would land under <strong>Not Found on Forge</strong>, which was misleading \u2014 they were on the Forge, the app just hadn\u2019t managed to ask. They now appear under <strong>Couldn\u2019t Check</strong>, so you know to simply scan again rather than go hunting for mods that were never missing.</p>\n<h3>New logo</h3>\n<p>SPTChecker has a new icon, used everywhere \u2014 the app window, the system tray, toast notifications, and the .exe itself.</p>\n<h3>Also</h3>\n<ul>\n<li>RSS requests now correctly ask for the feed itself; previously the server could hand back a web page instead.</li>\n</ul>\n",
      "spt_constraint": "4.1.2",
      "fika": "compatible",
-     "downloads": 322,
+     "downloads": 326,
      "size": 62351772,
      "link": "https://sp-mod.com/mod/download/2921/sptchecker/3.3.1",
      "published_at": "2026-08-15T13:13:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "3.4.1",
-   "spt_constraint": "~4.1",
+   "latest_version": "3.4.2",
+   "spt_constraint": "~4.1.0",
    "all_spt_constraints": [
     "4.1.2",
     "4.1.3",
-    "~4.1"
+    "~4.1",
+    "~4.1.0"
    ],
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-08-15T13:14:00.000000Z",
-   "updated_at": "2026-08-24T21:44:35.000000Z",
+   "updated_at": "2026-08-30T23:31:32.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
@@ -192620,6 +192680,146 @@
     "ai_disclosure": "<p>AI was used as a little development helper for parts of the code, identifying relevant classes and APIs, digging into DLL files, interpreting telemetry logs, and debugging.</p>\n",
     "cheat_notice": false,
     "profile_binding_notice": false
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 2972,
+   "hub_id": null,
+   "guid": "com.mybutthasarash.blackjack",
+   "name": "Blackjack",
+   "slug": "blackjack",
+   "teaser": "Bet bitcoin like it means nothing.",
+   "description_html": "<p>A blackjack table on your main menu. Six decks, a server-dealt shoe, and your own money on the felt.</p>\n<p>There is no unlock, no hideout requirement and no quest. Install it, and a <strong>BLACKJACK</strong> entry appears under EXIT on the main menu \u2014 on a profile five minutes old or one with a thousand raids behind it.</p>\n<p>You can stake roubles, dollars, euros, GP coins, physical bitcoin or Lega medals. They come out of your inventory and a hand you lose is gone. <strong>Your gear is never at stake</strong> \u2014 weapons, armour and rigs cannot be bet.</p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Playing</div>\n<div class=\"tab-content\"><p>Click <strong>BLACKJACK</strong> on the main menu. Pick a currency, type an amount, press <strong>DEAL</strong>.</p>\n<p>From there it is blackjack: <strong>HIT</strong>, <strong>STAND</strong>, <strong>DOUBLE</strong> and <strong>SPLIT</strong> appear when they are legal. The dealer\u2019s second card stays face down until the hand is over.</p>\n<ul>\n<li>Six decks, reshuffled at three quarters</li>\n<li>Dealer stands on soft 17</li>\n<li>Blackjack pays <strong>3:2</strong> in currency, even money in valuables</li>\n<li>Double after split, up to four hands</li>\n</ul>\n<p>Escape leaves the table. You cannot walk away mid-hand \u2014 the stake is already down.</p>\n<p>Naturals pay even money on bitcoin, GP and Lega for a simple reason: one bitcoin at 3:2 settles on half a coin, and half a bitcoin does not exist.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Bet limits</div>\n<div class=\"tab-content\"><p>Each currency has its own minimum and maximum.</p>\n<table>\n<thead>\n<tr>\n<th>Currency</th>\n<th>Minimum</th>\n<th>Maximum</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Roubles</td>\n<td>1,000</td>\n<td>500,000</td>\n</tr>\n<tr>\n<td>Dollars</td>\n<td>10</td>\n<td>5,000</td>\n</tr>\n<tr>\n<td>Euros</td>\n<td>10</td>\n<td>5,000</td>\n</tr>\n<tr>\n<td>GP coins</td>\n<td>1</td>\n<td>50</td>\n</tr>\n<tr>\n<td>Bitcoin</td>\n<td>1</td>\n<td>10</td>\n</tr>\n<tr>\n<td>Lega medals</td>\n<td>1</td>\n<td>5</td>\n</tr>\n</tbody>\n</table>\n<blockquote>\n<p><strong>The maximum is the point, not an annoyance.</strong> The house edge on these rules is about half a percent, which is nothing across an evening. What stops you getting rich is being unable to cover a losing streak by doubling up \u2014 and a ceiling five hundred times the minimum caps that at nine doubles.</p>\n</blockquote>\n<p><strong>You can turn it off.</strong> Press F12 in game, find <strong>Blackjack \u2192 Table</strong>, and untick <em>Enforce maximum bet</em>. Then the only limit is what you are carrying. The minimum always applies.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Your record</div>\n<div class=\"tab-content\"><p><strong>STATS</strong> clears the table and lays out your lifetime figures: rounds and hands played, wins, losses and pushes, blackjacks, busts, current and best streak, and how much you have staked and won back in every currency you have played.</p>\n<p>It is only there between hands.</p>\n<p>The record is kept in the mod\u2019s own folder, <strong>not in your profile</strong>. Uninstalling costs you nothing but the statistics, and your profile is never modified.</p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Installing</div>\n<div class=\"tab-content\"><p>Stop the server, then extract the archive into your SPT folder \u2014 the one containing <code>SPT_Runtime</code>. Two files go in, and both are needed: the server deals and holds the money, the client draws the table.</p>\n<pre><code>SPT_Runtime\\user\\mods\\Blackjack\\\nBepInEx\\plugins\\Blackjack\\\n</code></pre>\n<p>Start the server. <strong>Blackjack</strong> should appear in the mod list, and <strong>BLACKJACK</strong> on the game\u2019s main menu.</p>\n<p>If the button is missing, check the folder went to <code>SPT_Runtime\\user\\mods\\</code> and not to a <code>user\\mods\\</code> beside it \u2014 that is the one mistake that leaves no trace in the log.</p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Compatibility</div>\n<div class=\"tab-content\"><p>Works with <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1775/wtt-menu-overhaul\" rel=\"noreferrer noopener\">WTT Menu Overhaul</a>.</p>\n<p>The button is not drawn from scratch \u2014 it is a copy of one of the menu\u2019s own, made after every other mod has finished with the menu. So whatever Menu Overhaul does to your buttons, this one inherits: the same styling, the same hover behaviour, the same position, sitting one row below the last of them.</p>\n<p>That is not special-cased for it, either. Any mod that restyles the main menu is picked up the same way.</p></div></div></div>\n<h2>Notes</h2>\n<p>The server deals every card, scores every hand and moves every rouble. The game running on your PC never receives the dealer\u2019s hidden card until the hand ends, so it could not show you the outcome early even if it wanted to.</p>\n<p>The card faces are Chris Aguilar\u2019s <em>Vectorized Playing Cards</em>. They sit as ordinary PNGs beside the plugin, one per card, alongside the table photograph \u2014 swap either for your own, or delete them and the mod draws its own instead.</p>\n<p>Requires <strong>SPT 4.1.3</strong> or later 4.1.x.</p>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/adPkcmhvQ8nxgZo8NSINHMshYVEx7xzx274Ez3xj.png",
+   "forge_url": "https://sp-mod.com/mod/2972/blackjack",
+   "downloads": 40,
+   "favourites": 1,
+   "featured": false,
+   "fika": false,
+   "fika_latest": "unknown",
+   "category": {
+    "id": 17,
+    "title": "Other",
+    "slug": "other"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 51018,
+     "name": "MyButtHasARash",
+     "avatar": "https://files.sp-mod.com/profile-photos/eSszQU6NfgJKTNe4maY9gdYnijH2W29cA3z0LDKd_256w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/JoelHauser/Blackjack",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 15094,
+     "version": "1.0.0",
+     "description": "<p>Release</p>\n",
+     "spt_constraint": "~4.1.0",
+     "fika": "unknown",
+     "downloads": 40,
+     "size": 5289479,
+     "link": "https://sp-mod.com/mod/download/2972/blackjack/1.0.0",
+     "published_at": "2026-08-30T22:03:00.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "1.0.0",
+   "spt_constraint": "~4.1.0",
+   "all_spt_constraints": [
+    "~4.1.0"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-08-30T21:56:00.000000Z",
+   "updated_at": "2026-08-30T22:11:14.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": true,
+    "ai_disclosure": "<p>Developed with assistance from Claude Opus.</p>\n",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 2973,
+   "hub_id": null,
+   "guid": "com.wade.restorearmorplates",
+   "name": "Restore Armor Plates",
+   "slug": "restore-armor-plates",
+   "teaser": "Restore fully repaired detachable armor plates to their original maximum durability with a dedicated refurbishment kit.",
+   "description_html": "<blockquote>\n<p><em>Repairing a plate slowly eating away at its maximum durability? Restore it to factory condition with one dedicated kit. Detachable plates only - carriers, helmets, and soft armor are untouched.</em></p>\n</blockquote>\n<hr />\n<p>This adds an <strong>Armor plate refurbishment kit</strong> that restores a fully repaired detachable plate to its original maximum durability. The value comes from the plate itself, so a plate repaired to <code>42/42</code> can return to its original <code>55/55</code>.</p>\n<h2>Installation</h2>\n<p>Extract the archive over your SPT installation folder. Both the client and server components are required:</p>\n<ul>\n<li><code>BepInEx/plugins/RestoreArmorPlatesClient.dll</code></li>\n<li><code>SPT_Runtime/user/mods/Wade-RestoreArmorPlates/RestoreArmorPlatesServer.dll</code></li>\n</ul>\n<h2>Usage</h2>\n<ol>\n<li>Repair the targeted plate to its current maximum durability.</li>\n<li>Drag the <strong>Armor plate refurbishment kit</strong> onto the plate.</li>\n<li>The plate returns to its original maximum durability and the kit loses one use.</li>\n</ol>\n<p><strong>Only the targeted plate must be fully repaired.</strong> The carrier and its other plates do not need to be repaired first.</p>\n<h3>Kit details</h3>\n<ul>\n<li><strong>Trader:</strong> Ragman</li>\n<li><strong>Required loyalty level:</strong> 2</li>\n<li><strong>Price:</strong> \u20bd100,000</li>\n<li><strong>Uses per kit:</strong> 5</li>\n</ul>\n<h2>Compatibility</h2>\n<p>Built for <strong>SPT 4.1.3</strong>.</p>\n<p>The kit only works on detachable armor plates. It rejects built-in soft armor, helmets, plate carriers, ordinary body armor, and plates that have not been repaired to their current maximum.</p>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/CUMohvUaQ1P4f1FBgLVAm2jXZySGCqefBLXyvSa7.png",
+   "forge_url": "https://sp-mod.com/mod/2973/restore-armor-plates",
+   "downloads": 7,
+   "favourites": 0,
+   "featured": false,
+   "fika": false,
+   "fika_latest": "unknown",
+   "category": {
+    "id": 15,
+    "title": "Equipment",
+    "slug": "equipment"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 122654,
+     "name": "wade",
+     "avatar": "https://files.sp-mod.com/profile-photos/IVFbrMVzGiETAVBzh6Xmq71cAoaVvOflCGkGjwBL_128w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/TheWadeSmith/Restore-Armor-Plates",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 15096,
+     "version": "1.0.0",
+     "description": "<h2>Initial Release</h2>\n<ul>\n<li>Added the <strong>Armor Plate Refurbishment Kit</strong>.</li>\n<li>Restores fully repaired detachable armor plates to their original maximum durability.</li>\n<li>Available from <strong>Ragman at Loyalty Level 2</strong> for <strong>\u20bd100,000</strong>.</li>\n<li>Each kit has <strong>5 uses</strong>.</li>\n<li>Built and tested on <strong>SPT 4.1.3</strong>.</li>\n</ul>\n",
+     "spt_constraint": "~4.1.0",
+     "fika": "unknown",
+     "downloads": 7,
+     "size": 26776,
+     "link": "https://sp-mod.com/mod/download/2973/restore-armor-plates/1.0.0",
+     "published_at": "2026-08-30T23:01:00.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "1.0.0",
+   "spt_constraint": "~4.1.0",
+   "all_spt_constraints": [
+    "~4.1.0"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-08-30T22:57:00.000000Z",
+   "updated_at": "2026-08-30T23:02:03.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": true,
+    "ai_disclosure": "<p>I built this with assistance from OpenAI Codex. Codex helped me with some of the C# work like finding SPT\u2019s armor-repair flow, finding the correct client drag-and-drop hook and server item-event route, and implementing the client/server restoration logic. I decided how the kit should behave, which items it should accept, its price and number of uses, and the release requirements.</p>\n",
+    "cheat_notice": false,
+    "profile_binding_notice": true
    },
    "origin": "forge",
    "delisted": false
