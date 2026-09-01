@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-08-31T20:53:47Z",
+ "generated_at": "2026-09-01T00:41:01Z",
  "source": "https://sp-mod.com",
  "filter": "all",
- "mod_count": 1913,
+ "mod_count": 1916,
  "categories": [
   {
    "id": 12,
@@ -95864,10 +95864,10 @@
    "name": "QCAdjustments",
    "slug": "qcadjustments",
    "teaser": "Customize quest requirements with adjustable item amounts and new Gunsmith options. Add kill objectives, skip weapon turn-ins, and tailor tasks to your gameplay style.",
-   "description_html": "<p>QCAdjustments</p>\n<p>Tired of grinding through quests? <strong>QCAdjustments</strong> lets you customize quest conditions for a smoother or more challenging experience. Adjust conditions for CounterCreator, FindItem, HandoverItem, LeaveItemAtLocation, and SellItemToTrader quests. The mod also offers tweaks for the <strong>Gunsmith</strong> quest line, allowing you to add kill requirements or replace the weapon turn-in condition with a kill task.</p>\n<p>This mod doesn\u2019t remove quest conditions entirely\u2014the minimum value is 1\u2014so you can fine-tune difficulty without breaking the game\u2019s progression.</p>\n<h3>Compatibility</h3>\n<ul>\n<li>Works with existing profiles, but creating a backup beforehand is recommended.</li>\n<li>Works with quests added and/or adjusted using <strong>Virtual\u2019s Custom Quest Loader</strong> (~3.11)</li>\n<li><strong>Gunsmith Tweaks</strong> is confirmed compatible. Other Gunsmith-related mods are untested.</li>\n</ul>\n<h3>Installation</h3>\n<ol>\n<li>Download the latest mod release.</li>\n<li>Extract the contents of the archive into your SPT directory or manually drag the user folder into the SPT directory.</li>\n<li>Edit the config found in <code>SPT/user/mods/qcadjustments/config.json</code> to your preferences.</li>\n</ol>\n<h3>Updating</h3>\n<ul>\n<li>See release notes for version specific updating instructions.</li>\n</ul>\n<h3>Issues</h3>\n<p>While extensively tested, bugs may still occur. If you encounter any issues, please leave a comment or <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/ScidaJ/QCAdjustments/issues\" rel=\"noreferrer noopener\">open an issue on GitHub.</a></p>\n<h3>Configuration</h3>\n<p>All values in the config file must be greater than 0. If set to 0, the defaults will be used.</p>\n<p>Kill Targets</p>\n<p>This section allows you to change the targets for kill quests. It will not target any quests involving Rogues, Raiders, or Scav Bosses. The default values will retain vanilla kill targets on quests. Note: This will <em><strong>NOT</strong></em> change the task text. If you change all RU quests to Any, the task will still say the original Faction PMCs, but any kill will count.</p>\n<h4>Task Multipliers</h4>\n<p>Adjust the total amounts for quest conditions. Lower values mean easier tasks.</p>\n<ul>\n<li><strong>counter</strong> (Default: 0.5)<br />\nProgress tracked by actions (e.g., kills, shots on specific body parts, etc.).</li>\n<li><strong>find_handover</strong> (Default: 0.5)<br />\nTasks requiring you to find items in raid and hand them over.</li>\n<li><strong>leave_at</strong> (Default: 0.5)<br />\nTasks where you must stash an item at a specific location.</li>\n<li><strong>sell</strong> (Default: 0.5)<br />\nTasks that require selling items to traders.</li>\n<li><strong>timer</strong> (Default: 0.5)<br />\nThe time spent placing or stashing an item at a location.</li>\n<li><strong>xp</strong> (Default: 1.0)<br />\nThe experience rewarded by quests.</li>\n</ul>\n<h4>Gunsmith Adjustments</h4>\n<p>Customize the Gunsmith quest line with new conditions:</p>\n<ul>\n<li><strong>enabled</strong> (Default: false)<br />\nEnables Gunsmith adjustments, adding a kill requirement.</li>\n<li><strong>replace_task</strong> (Default: false)<br />\nReplaces the handover condition with a kill requirement.</li>\n<li><strong>kills</strong> (Default: 10)<br />\nNumber of kills required. This value is not affected by Task Multipliers.</li>\n</ul>\n<h4>Quest Blacklist(Optional)</h4>\n<ul>\n<li><strong>quest_blacklist</strong> (Default: [])<br />\nA list of quest names to skip when applying changes. Example: [\u201cRegulated Materials\u201d, \u201cGunsmith - Part 6\u201d]</li>\n</ul>\n",
+   "description_html": "<p>QCAdjustments</p>\n<p>Tired of grinding through quests? <strong>QCAdjustments</strong> lets you customize quest conditions for a smoother or more challenging experience. Adjust conditions for CounterCreator, FindItem, HandoverItem, LeaveItemAtLocation, and SellItemToTrader quests. The mod also offers tweaks for the <strong>Gunsmith</strong> quest line, allowing you to add kill requirements or replace the weapon turn-in condition with a kill task.</p>\n<p>This mod doesn\u2019t remove quest conditions entirely, the minimum value is 1, so you can fine-tune difficulty without breaking the game\u2019s progression.</p>\n<h3>Compatibility</h3>\n<ul>\n<li>Works with existing profiles, but creating a backup beforehand is recommended.</li>\n<li>Works with quests added and/or adjusted using <strong>Virtual\u2019s Custom Quest Loader</strong> (~3.11)</li>\n<li><strong>Gunsmith Tweaks</strong> is confirmed compatible. Other Gunsmith-related mods are untested.</li>\n</ul>\n<h3>Installation</h3>\n<ol>\n<li>Download the latest mod release.</li>\n<li>Extract the contents of the archive into your SPT directory or manually drag the user folder into the SPT directory.</li>\n<li>Edit the config found in <code>SPT_Runtime/user/mods/qcadjustments/Config.json</code> to your preferences.</li>\n</ol>\n<h3>Updating</h3>\n<ul>\n<li>See release notes for version specific updating instructions.</li>\n</ul>\n<h3>Issues</h3>\n<p>While extensively tested, bugs may still occur. If you encounter any issues, please leave a comment or <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/ScidaJ/QCAdjustments/issues\" rel=\"noreferrer noopener\">open an issue on GitHub.</a></p>\n<h3>Configuration</h3>\n<p>All values in the config file must be greater than 0. If set to 0, the defaults will be used.</p>\n<p>Kill Targets</p>\n<p>This section allows you to change the targets for kill quests. It will not target any quests involving Rogues, Raiders, or Scav Bosses. The default values will retain vanilla kill targets on quests. Note: This will <em><strong>NOT</strong></em> change the task text. If you change all RU/US quests to Any or AnyPmc, the task will still say the original Faction PMCs, but any kill will count.</p>\n<h4>Task Multipliers</h4>\n<p>Adjust the total amounts for quest conditions. Lower values mean easier tasks.</p>\n<ul>\n<li><strong>counter</strong> (Default: 0.5)<br />\nProgress tracked by actions (e.g., kills, shots on specific body parts, etc.).</li>\n<li><strong>find_handover</strong> (Default: 0.5)<br />\nTasks requiring you to find items in raid and hand them over.</li>\n<li><strong>leave_at</strong> (Default: 0.5)<br />\nTasks where you must stash an item at a specific location.</li>\n<li><strong>sell</strong> (Default: 0.5)<br />\nTasks that require selling items to traders.</li>\n<li><strong>timer</strong> (Default: 0.5)<br />\nThe time spent placing or stashing an item at a location.</li>\n<li><strong>xp</strong> (Default: 1.0)<br />\nThe experience rewarded by quests.</li>\n</ul>\n<h4>Gunsmith Adjustments</h4>\n<p>Customize the Gunsmith quest line with new conditions:</p>\n<ul>\n<li><strong>enabled</strong> (Default: false)<br />\nEnables Gunsmith adjustments, adding a kill requirement.</li>\n<li><strong>replace_task</strong> (Default: false)<br />\nReplaces the handover condition with a kill requirement.</li>\n<li><strong>kills</strong> (Default: 10)<br />\nNumber of kills required. This value is not affected by Task Multipliers.</li>\n</ul>\n<h4>Quest Blacklist(Optional)</h4>\n<ul>\n<li><strong>quest_blacklist</strong> (Default: [])<br />\nA list of quest names to skip when applying changes. Example: [\u201cRegulated Materials\u201d, \u201cGunsmith - Part 6\u201d]</li>\n</ul>\n",
    "thumbnail": "https://files.sp-mod.com/mods/2521.png",
    "forge_url": "https://sp-mod.com/mod/1867/qcadjustments",
-   "downloads": 5535,
+   "downloads": 5549,
    "favourites": 4,
    "featured": false,
    "fika": true,
@@ -95878,8 +95878,8 @@
     "slug": "quests"
    },
    "license": {
-    "name": "MIT License",
-    "link": "https://choosealicense.com/licenses/mit/"
+    "name": "Creative Commons BY-NC-SA 4.0",
+    "link": "http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode"
    },
    "authors": [
     {
@@ -95898,10 +95898,10 @@
     {
      "id": 15116,
      "version": "4.1.0",
-     "description": "<p>Update for SPT ~4.1. Despite commit message it is tested. Code cleanup and other features to be added later, but this is MVP for now.</p>\n<p><strong>Full Changelog</strong>: <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/ScidaJ/QCAdjustments/compare/4.0.0...4.1.0\" rel=\"noreferrer noopener\">https://github.com/ScidaJ/QCAdjustments/compare/4.0.0...4.1.0</a></p>\n",
+     "description": "<p>Update for SPT ~4.1. Despite commit message it is tested. Code cleanup and other features to be added later, but this is MVP for now.</p>\n<p><strong>Full Changelog</strong>: <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/ScidaJ/QCAdjustments/compare/4.0.0...4.1.0\" rel=\"noreferrer noopener\">https://github.com/ScidaJ/QCAdjustments/compare/4.0.0...4.1.0</a></p>\n<h1>Updating from an older version?</h1>\n<p>Simply download and unzip into the root directory of your SPT installation. All installations come with a <code>Config.json</code> that could be overwritten on future updates! It is recommended to backup your config before updating.</p>\n",
      "spt_constraint": "~4.1",
      "fika": "compatible",
-     "downloads": 16,
+     "downloads": 27,
      "size": 32884,
      "link": "https://sp-mod.com/mod/download/1867/qcadjustments/4.1.0",
      "published_at": "2026-08-31T16:44:00.000000Z",
@@ -95913,7 +95913,7 @@
      "description": "<p><strong>Full Changelog</strong>: <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/ScidaJ/QCAdjustments/compare/3.0.1...4.0.0\" rel=\"noreferrer noopener\">https://github.com/ScidaJ/QCAdjustments/compare/3.0.1...4.0.0</a></p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/ScidaJ/QCAdjustments/commit/9b7913bd297dd388a936ff3c89d2bddf501649b2\" rel=\"noreferrer noopener\">4.0. Complete rewite in C# for SPT4.0. Config.json is almost exactly \u2026</a></p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/ScidaJ/QCAdjustments/commit/2de2f6fd7015c0d5e274dcb9c5f58c75341b9c00\" rel=\"noreferrer noopener\">Compliance with coding standards for SPT.</a></p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/ScidaJ/QCAdjustments/commit/ebe2e1c9a89f2788889587515108a9552364ed7e\" rel=\"noreferrer noopener\">kill_target changes working.</a></p>\n<h2>Updating from an older version?</h2>\n<p>Simply download and unzip into the root directory of your SPT installation. All installations come with a <code>Config.json</code> that could be overwritten on future updates! It is recommended to backup your config before updating.</p>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 1948,
+     "downloads": 1949,
      "size": 30767,
      "link": "https://sp-mod.com/mod/download/1867/qcadjustments/4.0.0",
      "published_at": "2025-10-14T18:28:00.000000Z",
@@ -95954,13 +95954,13 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2024-12-03T21:40:00.000000Z",
-   "updated_at": "2026-08-31T16:49:52.000000Z",
+   "updated_at": "2026-08-31T23:31:08.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
     "ai_disclosure": "",
     "cheat_notice": false,
-    "profile_binding_notice": true
+    "profile_binding_notice": false
    },
    "origin": "forge",
    "delisted": false
@@ -170620,11 +170620,11 @@
    "name": "Weekend Drops",
    "slug": "weekend-drops",
    "teaser": "Rotating weekend and daily challenges that give crates with loot and pay out GP coins",
-   "description_html": "<h1>Weekend Drops</h1>\n<p>Weekend Drops gives you a set of challenges to work through each weekend, daily quests for\nthe rest of the week, to earn  (GP)  and spend in the shop.</p>\n<p>I made it because twitch drops in live EFT are kinda neat but since you cant get them in SPT i though this could be a version of gaining twitch drops in SPT</p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Daily challenges</div>\n<div class=\"tab-content\"><p>Five quests a day, every day, each one pays GP. These run all the time, not just on\nweekends, so there\u2019s always something small to do. Finish all five for a bonus.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">GP and the shop</div>\n<div class=\"tab-content\"><p>GP is a virtual balance, you earn it from challenges, and you can also deposit GP coins you find in raid\nstraight into your balance (there\u2019s a slider so you can bank some and keep the rest for REF).</p>\n<p>The shop sells storage cases, Arena crates and a few rarer barter items. Things go on a\ncooldown after you buy them so you can\u2019t just spam-buy.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">The  Weekly challenges</div>\n<div class=\"tab-content\"><ul>\n<li>PMC, Scav and boss kills</li>\n<li>Headshots and grenade kills</li>\n<li>Surviving X minutes, extracting, extracting from a specific map</li>\n<li>Play-as-Scav quests (extract as a Scav, finish Scav runs, kills across Scav raids)</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">these are not final will add more and ad</div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Rewards</div>\n<div class=\"tab-content\"><p>The drop crates are gear-focused and tuned per tier, so an Epic crate won\u2019t hand you a\nstack of junk. Guns come with attachments already on them instead of the bare default\npreset. also</p>\n<p>-WTT backport is included in the loot pool but its optional</p></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">The UI</div>\n<div class=\"tab-content\"><ul>\n<li>to access the mod there is a panel you can open from the Inventory tab on the main menu there is a tutorial explaining the mod incase someone doesn\u2019t read this who reads this anyway i m i right?</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">LootNET</div>\n<div class=\"tab-content\"><p>if LootNET is installed it will show the earned GP coins earned that raid still WIP bugs can happend i didn test it enough but it worked almost every raid so far</p></div></div>\n<div id=\"tabset-1-panel-8\" class=\"tab-panel\"><div class=\"tab-title\">Contracts</div>\n<div class=\"tab-content\"><ul>\n<li>Contracts a new menu tab (in drops menu). Each board offers a few sealed contracts; you pick one. Its target spawns on your next raid of that map, and clearing the objective pays GP, Two kinds of Bounties exist so far: (hunt a specific crew or boss) and Supply Runs (wipe the crew to call in an airdrop on their position). Accepting or abandoning spends your pick, and a fresh board rolls in after a few days.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-9\" class=\"tab-panel\"><div class=\"tab-title\">Translating Weekend Drops</div>\n<div class=\"tab-content\"><p>Everything the mod shows you lives in <code>en.json</code>. To add a language, copy that file,\nrename it, and translate the values. No code, no build, no rebuild of the mod.</p>\n<p>Adding a language</p>\n<ol>\n<li>\n<p>Copy <code>en.json</code> to <code>&lt;code&gt;.json</code> using <strong>the game\u2019s own language code</strong>:</p>\n<table>\n<thead>\n<tr>\n<th>Code</th>\n<th>Language</th>\n<th>Code</th>\n<th>Language</th>\n<th>Code</th>\n<th>Language</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>en</code></td>\n<td>English</td>\n<td><code>ge</code></td>\n<td>German</td>\n<td><code>jp</code></td>\n<td>Japanese</td>\n</tr>\n<tr>\n<td><code>ru</code></td>\n<td>Russian</td>\n<td><code>fr</code></td>\n<td>French</td>\n<td><code>kr</code></td>\n<td>Korean</td>\n</tr>\n<tr>\n<td><code>ch</code></td>\n<td>Chinese</td>\n<td><code>es</code></td>\n<td>Spanish</td>\n<td><code>pl</code></td>\n<td>Polish</td>\n</tr>\n<tr>\n<td><code>cz</code></td>\n<td>Czech</td>\n<td><code>it</code></td>\n<td>Italian</td>\n<td><code>po</code></td>\n<td>Portuguese</td>\n</tr>\n<tr>\n<td><code>hu</code></td>\n<td>Hungarian</td>\n<td><code>ro</code></td>\n<td>Romanian</td>\n<td><code>sk</code></td>\n<td>Slovak</td>\n</tr>\n<tr>\n<td><code>tu</code></td>\n<td>Turkish</td>\n<td><code>es-mx</code></td>\n<td>Spanish (LatAm)</td>\n<td></td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<p>Note these are B**\u2019s codes, not ISO: German is <code>ge</code> (not <code>de</code>), Chinese is <code>ch</code>,\nJapanese <code>jp</code>, Korean <code>kr</code>.</p>\n</li>\n<li>\n<p>Translate the <strong>values</strong> on the right. Never touch the keys on the left.</p>\n</li>\n<li>\n<p>Drop the file in <code>BepInEx/plugins/WeekendDrops/locales/</code> and restart the game.\nIt is picked automatically when the game is set to that language.</p>\n</li>\n</ol>\n<p>Anything you leave untranslated (or delete) falls back to English, so a partial\ntranslation is perfectly usable. You can ship 50 lines and add more later.</p>\n<p>Rules</p>\n<p><strong>Keep <code>{0}</code>, <code>{1}</code> exactly as they are.</strong> They are filled in at runtime:</p>\n<pre><code>\"ui.notif.claimBoth\": \"{0} daily and {1} weekly waiting to claim\"\n</code></pre>\n<p>You may reorder them if your language needs a different word order\n(<code>\"{1} weekly and {0} daily ...\"</code>), but you may not invent new ones or drop the\nexisting ones. A mismatch shows the wrong number on screen.</p>\n<p><strong>Keep the colour tags.</strong> The tutorial text contains markup like\n<code>&lt;color=#CD8532&gt;&lt;b&gt;GP&lt;/b&gt;&lt;/color&gt;</code>. Translate the words between the tags, leave the\ntags themselves alone.</p>\n<p><strong>Keep it short.</strong> Most strings sit in fixed-width buttons and chips. German and\nRussian run roughly 30% longer than English, and long text gets clipped rather than\nwrapped. If a line does not fit, prefer a shorter phrasing over an exact translation.</p>\n<p><strong>ALL CAPS is intentional</strong> on headers and buttons. Match it where your script has\ncapitals; ignore it where it does not (Chinese, Japanese, Korean).</p>\n<p>Fonts (important for Chinese, Japanese, Korean)</p>\n<p>The panel is drawn with Unity\u2019s built-in font, which has Latin and Cyrillic but\n<strong>no CJK glyphs</strong> - they render as empty boxes. Fix it by naming a system font in\nyour locale\u2019s <code>_meta</code> block:</p>\n<pre><code>\"_meta\": {\n  \"name\": \"\u7b80\u4f53\u4e2d\u6587\",\n  \"credit\": \"your name here\",\n  \"font\": \"Microsoft YaHei, SimHei\"\n}\n</code></pre>\n<p>Comma-separated, tried in order, so you can list a fallback for older Windows\ninstalls. Leave <code>font</code> empty for Latin and Cyrillic languages - the default is fine.</p>\n<p>Changing the font needs a game restart. Changing text does not.\nTesting your file</p>\n<p>Set <code>Language</code> in the F12 config to your code (instead of <code>auto</code>) to force it on\nwithout changing the whole game\u2019s language.</p>\n<p>if you got python  installed you Then can check if the file is well-formed useing:</p>\n<pre><code>python tools/check-locale.py\n</code></pre>\n<p>It reports missing keys, keys that no longer exist, and broken <code>{0}</code> placeholders.</p>\n<p>What the key prefixes mean</p>\n<table>\n<thead>\n<tr>\n<th>Prefix</th>\n<th>What it is</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>ui.*</code></td>\n<td>Menu, buttons, notifications, the tutorial</td>\n</tr>\n<tr>\n<td><code>challenge.*</code></td>\n<td>Weekly and daily challenge descriptions</td>\n</tr>\n<tr>\n<td><code>shop.*</code></td>\n<td>Shop item names and descriptions</td>\n</tr>\n<tr>\n<td><code>contract.*</code></td>\n<td>Bounty names, objectives, and radio chatter</td>\n</tr>\n<tr>\n<td><code>ui.map.*</code>, <code>ui.zone.*</code></td>\n<td>Map and landmark names - use the game\u2019s own wording</td>\n</tr>\n</tbody>\n</table>\n<p>For map and location names, copy whatever E***************** itself calls them in\nyour language rather than translating the English literally.</p></div></div></div>\n",
+   "description_html": "<h1>Weekend Drops</h1>\n<p>Weekend Drops gives you a set of challenges to work through each weekend, daily quests for\nthe rest of the week, to earn  (GP)  and spend in the shop.</p>\n<p>I made it because twitch drops in live EFT are kinda neat but since you cant get them in SPT i though this could be a version of gaining twitch drops in SPT</p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Daily challenges</div>\n<div class=\"tab-content\"><p>Five quests a day, every day, each one pays GP. These run all the time, not just on\nweekends, so there\u2019s always something small to do. Finish all five for a bonus.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">GP and the shop</div>\n<div class=\"tab-content\"><p>GP is a virtual balance, you earn it from challenges, and you can also deposit GP coins you find in raid\nstraight into your balance (there\u2019s a slider so you can bank some and keep the rest for REF).</p>\n<p>The shop sells storage cases, Arena crates and a few rarer barter items. Things go on a\ncooldown after you buy them so you can\u2019t just spam-buy.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">The  Weekly challenges</div>\n<div class=\"tab-content\"><ul>\n<li>PMC, Scav and boss kills</li>\n<li>Headshots and grenade kills</li>\n<li>Surviving X minutes, extracting, extracting from a specific map</li>\n<li>Play-as-Scav quests (extract as a Scav, finish Scav runs, kills across Scav raids)</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">these are not final will add more and ad</div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Rewards</div>\n<div class=\"tab-content\"><p>The drop crates are gear-focused and tuned per tier, so an Epic crate won\u2019t hand you a\nstack of junk. Guns come with attachments already on them instead of the bare default\npreset. also</p>\n<p>-WTT backport is included in the loot pool but its optional</p></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">The UI</div>\n<div class=\"tab-content\"><ul>\n<li>to access the mod there is a panel you can open from the Inventory tab on the main menu there is a tutorial explaining the mod incase someone doesn\u2019t read this who reads this anyway i m i right?</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">LootNET</div>\n<div class=\"tab-content\"><p>if LootNET is installed it will show the earned GP coins earned that raid still WIP bugs can happend i didn test it enough but it worked almost every raid so far</p></div></div>\n<div id=\"tabset-1-panel-8\" class=\"tab-panel\"><div class=\"tab-title\">Contracts</div>\n<div class=\"tab-content\"><ul>\n<li>Contracts a new menu tab (in drops menu). Each board offers a few sealed contracts; you pick one. Its target spawns on your next raid of that map, and clearing the objective pays GP, Two kinds of Bounties exist so far: (hunt a specific crew or boss) and Supply Runs (wipe the crew to call in an airdrop on their position). Accepting or abandoning spends your pick, and a fresh board rolls in after a few days.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-9\" class=\"tab-panel\"><div class=\"tab-title\">Languages</div>\n<div class=\"tab-content\"><p>Weekend Drops ships in English plus these community translations, picked up\nautomatically when your game is set to that language:</p>\n<table>\n<thead>\n<tr>\n<th>Language</th>\n<th>Code</th>\n<th>Translated by</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>\u0420\u0443\u0441\u0441\u043a\u0438\u0439 (Russian)</td>\n<td><code>ru</code></td>\n<td><strong>djanbolt</strong></td>\n</tr>\n<tr>\n<td>Portuguese</td>\n<td><code>po</code></td>\n<td><strong>DarkEsteves</strong></td>\n</tr>\n</tbody>\n</table>\n<p>Huge thanks to both of them. Their name shows in the panel footer while their\nlanguage is active.</p>\n<p>Anything a translation does not cover falls back to English, so a partial file is\nperfectly usable and a translation never holds up an update. New text just shows in\nEnglish until someone gets to it.</p></div></div>\n<div id=\"tabset-1-panel-10\" class=\"tab-panel\"><div class=\"tab-title\">Translating Weekend Drops</div>\n<div class=\"tab-content\"><p>Everything the mod shows you lives in <code>en.json</code>. To add a language, copy that file,\nrename it, and translate the values. No code, no build, no rebuild of the mod.</p>\n<p>Adding a language</p>\n<ol>\n<li>\n<p>Copy <code>en.json</code> to <code>&lt;code&gt;.json</code> using <strong>the game\u2019s own language code</strong>:</p>\n<table>\n<thead>\n<tr>\n<th>Code</th>\n<th>Language</th>\n<th>Code</th>\n<th>Language</th>\n<th>Code</th>\n<th>Language</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>en</code></td>\n<td>English</td>\n<td><code>ge</code></td>\n<td>German</td>\n<td><code>jp</code></td>\n<td>Japanese</td>\n</tr>\n<tr>\n<td><code>ru</code></td>\n<td>Russian</td>\n<td><code>fr</code></td>\n<td>French</td>\n<td><code>kr</code></td>\n<td>Korean</td>\n</tr>\n<tr>\n<td><code>ch</code></td>\n<td>Chinese</td>\n<td><code>es</code></td>\n<td>Spanish</td>\n<td><code>pl</code></td>\n<td>Polish</td>\n</tr>\n<tr>\n<td><code>cz</code></td>\n<td>Czech</td>\n<td><code>it</code></td>\n<td>Italian</td>\n<td><code>po</code></td>\n<td>Portuguese</td>\n</tr>\n<tr>\n<td><code>hu</code></td>\n<td>Hungarian</td>\n<td><code>ro</code></td>\n<td>Romanian</td>\n<td><code>sk</code></td>\n<td>Slovak</td>\n</tr>\n<tr>\n<td><code>tu</code></td>\n<td>Turkish</td>\n<td><code>es-mx</code></td>\n<td>Spanish (LatAm)</td>\n<td></td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<p>Note these are the game\u2019s own codes, not ISO: German is <code>ge</code> (not <code>de</code>), Chinese is <code>ch</code>,\nJapanese <code>jp</code>, Korean <code>kr</code>.</p>\n</li>\n<li>\n<p>Translate the <strong>values</strong> on the right. Never touch the keys on the left.</p>\n</li>\n<li>\n<p>Drop the file in <code>BepInEx/plugins/WeekendDrops/locales/</code> and restart the game.\nIt is picked automatically when the game is set to that language.</p>\n</li>\n</ol>\n<p>Anything you leave untranslated (or delete) falls back to English, so a partial\ntranslation is perfectly usable. You can ship 50 lines and add more later.</p>\n<p>Rules</p>\n<p><strong>Keep <code>{0}</code>, <code>{1}</code> exactly as they are.</strong> They are filled in at runtime:</p>\n<pre><code>\"ui.notif.claimBoth\": \"{0} daily and {1} weekly waiting to claim\"\n</code></pre>\n<p>You may reorder them if your language needs a different word order\n(<code>\"{1} weekly and {0} daily ...\"</code>), but you may not invent new ones or drop the\nexisting ones. A mismatch shows the wrong number on screen.</p>\n<p><strong>Keep the colour tags.</strong> The tutorial text contains markup like\n<code>&lt;color=#CD8532&gt;&lt;b&gt;GP&lt;/b&gt;&lt;/color&gt;</code>. Translate the words between the tags, leave the\ntags themselves alone.</p>\n<p><strong>Keep it short.</strong> Most strings sit in fixed-width buttons and chips. German and\nRussian run roughly 30% longer than English, and long text gets clipped rather than\nwrapped. If a line does not fit, prefer a shorter phrasing over an exact translation.</p>\n<p><strong>ALL CAPS is intentional</strong> on headers and buttons. Match it where your script has\ncapitals; ignore it where it does not (Chinese, Japanese, Korean).</p>\n<p>Fonts (important for Chinese, Japanese, Korean)</p>\n<p>The panel is drawn with Unity\u2019s built-in font, which has Latin and Cyrillic but\n<strong>no CJK glyphs</strong> - they render as empty boxes. Fix it by naming a system font in\nyour locale\u2019s <code>_meta</code> block:</p>\n<pre><code>\"_meta\": {\n  \"name\": \"\u7b80\u4f53\u4e2d\u6587\",\n  \"credit\": \"your name here\",\n  \"font\": \"Microsoft YaHei, SimHei\"\n}\n</code></pre>\n<p>Comma-separated, tried in order, so you can list a fallback for older Windows\ninstalls. Leave <code>font</code> empty for Latin and Cyrillic languages - the default is fine.</p>\n<p>Changing the font needs a game restart. Changing text does not.\nTesting your file</p>\n<p>Set <code>Language</code> in the F12 config to your code (instead of <code>auto</code>) to force it on\nwithout changing the whole game\u2019s language.</p>\n<p>if you got python  installed you Then can check if the file is well-formed useing:</p>\n<pre><code>python tools/check-locale.py\n</code></pre>\n<p>It reports missing keys, keys that no longer exist, and broken <code>{0}</code> placeholders.</p>\n<p>Already translated the mod? Updating is the same file, and you only need the new\nlines. This writes out just the keys you have not done yet, English text intact:</p>\n<pre><code>python tools/check-locale.py ru --stub\n</code></pre>\n<p>You get a <code>ru.missing.json</code> with only the outstanding keys. Translate those, paste\nthem into your <code>ru.json</code>, delete the stub. Nothing you already did is touched, and\nthere is no rush.</p>\n<p>What the key prefixes mean</p>\n<table>\n<thead>\n<tr>\n<th>Prefix</th>\n<th>What it is</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>ui.*</code></td>\n<td>Menu, buttons, notifications, the tutorial</td>\n</tr>\n<tr>\n<td><code>challenge.*</code></td>\n<td>Weekly and daily challenge descriptions</td>\n</tr>\n<tr>\n<td><code>shop.*</code></td>\n<td>Shop item names and descriptions</td>\n</tr>\n<tr>\n<td><code>contract.*</code></td>\n<td>Bounty names, objectives, and radio chatter</td>\n</tr>\n<tr>\n<td><code>market.*</code></td>\n<td>Night market card names and descriptions</td>\n</tr>\n<tr>\n<td><code>ui.map.*</code>, <code>ui.zone.*</code></td>\n<td>Map and landmark names - use the game\u2019s own wording</td>\n</tr>\n</tbody>\n</table>\n<p>For map and location names, copy whatever the game itself calls them in\nyour language rather than translating the English literally.</p></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/a7n7YT3Vnizy5JsMIhzP3OBJRr9bmobnEsicYmuh.jpg",
    "forge_url": "https://sp-mod.com/mod/2747/weekend-drops",
-   "downloads": 6640,
-   "favourites": 45,
+   "downloads": 7746,
+   "favourites": 57,
    "featured": false,
    "fika": true,
    "fika_latest": "unknown",
@@ -170657,7 +170657,7 @@
      "description": "<h3>New</h3>\n<ul>\n<li><strong>Personal bests, and a Stats tab to keep them in.</strong> Six records: longest kill, most kills in a raid, most headshots in a raid, most PMC kills in a raid, richest extract, and longest extract streak.</li>\n</ul>\n<p>Beating a record pays GP, and the rule is that it pays for the <em>improvement</em>, never the number. Going from 300m to 301m and then 301m to 302m earns exactly what one jump from 300m to 302m earns, because the improvements add up to the same distance either way. why? so you cant farm for infinite GP</p>\n<ul>\n<li>\n<p><strong>Airdrops fix attempted.</strong> Off by default, under <code>Keep airdrops reachable</code> in F12, its experemental if you turn it on and it dosnt land somewhere reachable pls send me the logs in my mod thread also\nThis covers vanilla airdrops as well as contract Supply Runs.</p>\n</li>\n<li>\n<p><strong>Challenges that care which gun you brought.</strong> 28 new ones covering all eight weapon classes: assault rifles, carbines, SMGs, shotguns, pistols, bolt-actions, marksman rifles and machine guns.</p>\n</li>\n<li>\n<p><strong>Bosses by name.</strong> 19 challenges naming a specific boss rather than any boss: Killa, Reshala, Glukhar, Sanitar, Tagilla, Shturman, Zryachiy, Kaban, Kolontay, Partisan and the Knight. Only six of them appear as dailies, and deliberately so</p>\n</li>\n<li>\n<p><strong>Long shots that have to land in the same raid.</strong> 8 challenges for several kills past 100m, 150m, 200m, 250m or 300m without leaving. The distance challenges up to now counted across the whole day or weekend, which a patient player clears two raids at a time. None of these ask for a single kill, because at a target of one there would be no difference between the two.</p>\n</li>\n<li>\n<p><strong>81 more challenges across the existing types</strong>, filling gaps rather than padding numbers. Extracts from The Lab and the Labyrinth, which were valid maps the pools had never once named. Ground Zero as a Scav. Kills at 150m, 250m and 400m. Missing rungs throughout the suppressed, optic, iron-sight, limb-damage, melee, headshots-in-a-raid and raids-completed ladders, on both the daily and the weekend side.</p>\n</li>\n</ul>\n<h3>Changes</h3>\n<ul>\n<li>\n<p><strong>Crates hand you a set of things instead of a handful of things.</strong> Every tier now fills a fixed recipe rather than drawing its items independently from one big bag. A Common crate is one piece of gear, one ammo box, one med and two pieces of barter. A Rare is four or five pieces of gear, a med, some barter, and a gun when it rolls one. An Epic is the same with ammo and a second piece of barter. The old way made each item an unrelated lottery pull across 20 odd categories, which is why a crate could read as a good gun and six pieces of nothing.</p>\n</li>\n<li>\n<p><strong>Loose attachments are gone from every crate pool.</strong> They were noise</p>\n</li>\n<li>\n<p><strong>The attachments fitted to a dropped gun now match the crate\u2019s tier.</strong> They were being picked at random from every compatible mod in the slot, which is how an Epic rifle turned up wearing the cheapest foregrip in the game while the correctly-tiered loose optic sat beside it doing nothing. Common guns now draw from the bottom of the price range, Rare from the middle, Epic from the top.</p>\n</li>\n<li>\n<p><strong>Common crates were cleared out.</strong></p>\n</li>\n<li>\n<p><strong>Epic crates carry real ammo.</strong> Their pool had no ammunition in it at all, so the ammo slot had nothing to draw from. Nine top-tier boxes added: SSA AP and M995, 7N39 and BS, MAI AP, M61, 7.62x54R BS, 9x39 BP and AP-20.</p>\n</li>\n<li>\n<p>** duplicate challenges retired.** If you are holding one of the retired challenges, that set is regenerated once when you next reach the main menu.</p>\n</li>\n<li>\n<p><strong>The plain Unity UI notification renderer is gone.</strong></p>\n</li>\n<li>\n<p><strong>The F9 debug key is gone.</strong> has been shipping quietly sorry!</p>\n</li>\n</ul>\n<h3>Fixes</h3>\n<ul>\n<li>\n<p><strong>Fixed shop icons staying blank until you restarted the game.</strong></p>\n</li>\n<li>\n<p><strong>Failing to save no longer happens in silence.</strong> GP balances, pending gifts and personal bests all threw their write errors away without a word. A locked file, a full disk or an antivirus holding the file open meant a you would have lost currency, gifts or records with nothing in the log to say what had happened or that anything had. All three now log what was lost. Read failures too: a corrupted records or balances file used to reset itself quietly, and now says so.</p>\n</li>\n</ul>\n",
      "spt_constraint": "4.1.3",
      "fika": "unknown",
-     "downloads": 35,
+     "downloads": 977,
      "size": 495455,
      "link": "https://sp-mod.com/mod/download/2747/weekend-drops/1.0.6",
      "published_at": "2026-08-25T12:00:00.000000Z",
@@ -170677,7 +170677,7 @@
      "description": "<h1>this is a Beta! there maybe some bugs or issues</h1>\n<h1>Changelog</h1>\n<h3>New</h3>\n<ul>\n<li>\n<p><strong>Weekend modifiers.</strong> Each weekend rolls one modifier, or none at all. Roughly one weekend in five is a plain one, which is the point: if every weekend is special then none of them are. The pick is the same for everyone on the server, holds until the weekend closes, and shows as a banner above the reward track. Fifteen of them, in three families:</p>\n<ul>\n<li><strong>A featured weapon class.</strong> Kills with it pay 12 GP each, up to 15 kills a raid. Seven rotate: shotguns, pistols, SMGs, bolt-actions, marksman rifles, carbines and machine guns. Assault rifles are deliberately left out. A modifier should change what you take into a raid, and paying you for the gun you were already carrying is just free GP.</li>\n<li><strong>A featured way to kill.</strong> These leave your loadout alone and change how you fight: Precision Weekend (20 GP a headshot), Cold Steel (60 GP a melee kill), Frag Out (45 GP a grenade kill), Quiet Professional (18 GP with a suppressor) and Long Shot (30 GP past 150m). Each has its own rate and per-raid cap, because a melee kill is not worth the same as a rifle kill.</li>\n<li><strong>Multipliers.</strong> Hazard Pay (1.5x GP), Double Pay (2x) and Payday (3x) apply to every GP reward: weekly tiers, dailies, contracts. Deposits and gifts are untouched, so nobody can farm this by converting coins or passing GP round a Fika group. Field Training (1.5x XP) and Double XP do the same for raid XP, which is worth real time if you are grinding level 55 for a prestige. Quest turn-ins and hideout XP are left alone. The extremes are weighted rare.</li>\n</ul>\n<p><code>noneWeight</code> went from 4 to 8 to go with them. The pool nearly doubled, and left alone a plain weekend would have quietly gone from one in five to one in nine. Rotation, weights, rates and the odds of a plain weekend all live in <code>config/modifiers.json</code>. A card announces the weekend\u2019s modifier once, when you next reach the main menu, and the first time you ever see one a three-step tutorial explains what you are looking at.</p>\n</li>\n<li>\n<p><strong>new Challenges.</strong> Four new types: kills past a distance (100m/150m/200m/300m ladders), kills with a suppressor fitted, kills with an optic mounted, and kills on iron sights. Distance is muzzle to impact, so it is the shot that counts, not where the body finished rolling. Optics and irons share a single weekend slot so a board can never ask for both at once. The suppressor check counts integrally suppressed weapons, and \u201coptic\u201d means any magnifying or reflex sight.</p>\n<p>Quiet Professional and Long Shot ride on the same measurements. Thresholds are per-challenge via <code>minDistanceMeters</code>, so the ladder is yours to set.</p>\n</li>\n<li>\n<p><strong>Longest shot.</strong> Every firearm kill was already being measured for the distance challenges, so the furthest one is now kept. Beat your own record with a kill past 100m and a card tells you the moment it lands, with the old number to compare against. Stored per install, survives a wipe.</p>\n</li>\n<li>\n<p><strong>More challenges.</strong> 39 of them, weekend and daily: total kills across the whole weekend rather than one raid, headshots in a single raid, raids finished whether you walked out or got carried out, and kills in a single Scav run. Plus more rungs on the ladders that only had one or two, for melee, cumulative loot hauls, big single-raid kill counts and arm kills. Each new type gets its own weekend slot so a board cannot stack them.</p>\n</li>\n<li>\n<p><strong>Limb kill challenges.</strong> Kills through the legs, arms and stomach, weekend and daily. They share one slot between them so a weekend never fills up with them. Worth knowing these are rarer than headshots by nature: in Tarkov only the head and thorax actually kill, so a limb kill means blacking the limb and letting the spill-over carry into the thorax. The targets are set with that in mind.</p>\n</li>\n<li>\n<p><strong>The Collection.</strong> A new tab, and a reason to stop vendoring the pretty rubbish. Donate found-in-raid collectibles onto permanent display: boss and operative figurines, antiques, faction posters, and a shelf of things nobody can explain keeping. Every piece pays GP on the spot, and finishing a set grants a permanent GP bonus that never resets with the weekend. Six sets, 24 pieces, +25% GP on everything you earn if you fill the museum.</p>\n<p>The sets are deliberately a ladder rather than six of the same thing. ANTIQUES is three common pieces you will trip over in a couple of raids. THE OPERATIVES, ODDITIES and THE BOSSES sit in the middle. PROPAGANDA wants three faction posters. THE GALLERY wants three of the rare posters, which measured about thirty times rarer than an antique vase, and is priced to match at 1,200 GP a piece: it is a wipe-long project, not a weekend one.</p>\n<p>Donations are one-way. The piece is gone, it cannot be sold afterwards, and the confirm screen says so before every single one.</p>\n<p>Two kinds of item can never be donated no matter what a config file says: anything the Collector quest wants, because Kappa is one-shot per wipe, and anything a hideout upgrade needs. Both lists are read from the live database at startup rather than hardcoded, so they stay right across wipes and when other mods add quests. Items an ordinary trader quest wants are allowed but flagged on the confirm screen, since you can always find another one. If a mod on your install claims a collectible, that piece is withheld and the startup log names it and says why.</p>\n<p>The museum belongs to your character, so it clears when your profile does. Prestige clears it too, but pays out first: 150 GP a piece plus 1,000 GP a completed set, credited to the fresh character. A full museum is 9,600 GP to start the new run with, and the payout gets its own little ceremony the next time you open the tab.</p>\n</li>\n<li>\n<p><strong>Reroll a weekend challenge you can\u2019t do.</strong> Some challenges are simply out of reach on a given profile: the cultist Priest at level 5, a map you never run, a stunt you have no gear for. Any unfinished weekend challenge can be swapped for another, paid in GP. The replacement is always worth the same difficulty points, so a reroll can never put a tier reward out of reach. First one costs 40 GP and each after that costs 20 more, three a weekend, all tunable in <code>config.json</code> (<code>weekendRerollCost</code>, <code>weekendRerollCostStep</code>, <code>weekendRerollMaxPerWeekend</code>, or <code>enableWeekendReroll: false</code> to switch it off).</p>\n</li>\n<li>\n<p><strong>Reroll a daily too.</strong> Same idea, its own budget: 25 GP for the first, 25 more each time, two a day, reset with the daily roll. The replacement avoids the categories already on your board, and rerolling re-arms the complete-all bonus, since swapping a challenge changes what the day is worth. <code>enableDailyReroll</code>, <code>dailyRerollCost</code>, <code>dailyRerollCostStep</code>, <code>dailyRerollMaxPerDay</code>.</p>\n</li>\n<li>\n<p><strong>A config page in the launcher.</strong> Weekend Drops now shows up under Mod Pages with the other 4.1 mods, so the server settings can be changed from a real interface instead of by hand-editing JSON: when the weekend opens and closes, how many challenges and at what difficulty budget, the reroll prices, shop restock timers and price multiplier, crate expiry, the Fika bounty cap, and the debug switch. The page explains what each setting does instead of just naming it, and does the arithmetic for you (what a difficulty budget actually splits into, what the reroll ladder comes to). Saving writes <code>config/config.json</code> and <code>config/contracts.json</code>, which the server reads at startup, so the page tells you plainly that a restart is needed. Challenge lists, crate pools, shop stock and bounty definitions are still separate files and are not edited here.</p>\n</li>\n</ul>\n<h3>Changes</h3>\n<ul>\n<li>\n<p><strong>Deposit any amount of GP coins again, down to a single coin.</strong> 1.0.4 had to restrict deposits to whole stacks because there was no way to hand in part of one without the server losing the rest. There is one: the game\u2019s own stack-split, which puts the coins you are handing in into a real stash slot the server agrees exists, and only then removes them. The slider is a free 0-to-all slider again and the \u201cwhole stacks only\u201d note is gone. Trade-ins consume partial stacks the same way, so handing in 3 of a stack of 12 no longer risks the other 9.</p>\n</li>\n<li>\n<p><strong>Bundles say what\u2019s in them.</strong> A shop card that delivers several items used to show a \u201c+4\u201d badge and nothing else, so the only way to find out what you were buying was to buy it. Hovering a bundle now pops its full contents: icon, name and quantity per item. Repeated entries are merged, so a kit listing two 60-round boxes reads as one stack of 120, which is what actually lands in your stash.</p>\n</li>\n<li>\n<p><strong>The loading-screen panel can be moved.</strong> Its default position lands on top of the vanilla tip text at some resolutions, which made both unreadable. Two new F12 settings, <code>Loading panel X</code> and <code>Loading panel Y</code>, put its centre anywhere on screen as a fraction of width and height, and the old spot is still the default. You can also just drag it on the loading screen while the cursor is up, which writes the new position back to the config. Either way it is clamped to stay fully on screen, including as its height changes between a four-row challenge list and a one-line tip.</p>\n</li>\n<li>\n<p><strong>The Weekly tab is laid out around your progress now.</strong> The reward track had the top of the tab and the \u201chow close is the next crate\u201d card was pinned to the bottom, which was backwards: the track changes twice a weekend, the next-reward number is the reason you opened the tab. Next reward is the banner at the top now, with the tier track compacted alongside it (a ready tier is still claimed from there), and the challenge list gets the full width with its own columns for difficulty, progress and reroll. The separate tier-rewards column is gone and everything it showed lives in the banner or the track.</p>\n</li>\n<li>\n<p><strong>Notification cards are back to the detailed ones by default.</strong> The Unity UI renderer is cheaper per frame, but its cards are plain, they lose the progress bars and reward styling, and a full-screen menu can draw over them. It is still there under <code>Unity UI notifications</code> in F12 if you want it, now described honestly. If you turned it on in an earlier version you are still on it: flip it off to get the detailed cards back.</p>\n</li>\n<li>\n<p>The GP line on LootNET\u2019s post-raid summary reads \u201cGP EARNED\u201d rather than \u201cGP FROM CHALLENGES\u201d, because the total can also include a weekend modifier\u2019s per-kill bounty.</p>\n</li>\n</ul>\n<h3>Fixes</h3>\n<ul>\n<li>\n<p><strong>A crew contract no longer strands you when something else lands the last kill.</strong> Crew deaths that were not yours have counted toward a multi-target contract for a while, but the \u201cobjective met\u201d check only ever ran when <em>you</em> killed something, so the counter could sit on its target with nothing happening. Kill nine of a ten-man crew, let a Rogue take the tenth, and the contract stayed unfinished with the count already full. The check now runs on any crew death. Single-target bounties are unchanged and still want your own kill.</p>\n</li>\n<li>\n<p><strong>Fixed the GP deposit not seeing any coins in your stash.</strong> The client looks the inventory controller up by field name and SPT 4.1\u2019s de-obfuscation pass renamed it, so the lookup came back empty and the deposit screen reported a stash with no coins in it. It now matches the new name, falls back to the old one, and failing both finds the field by type, so the next rename degrades into a log line instead of a feature that quietly does nothing.</p>\n</li>\n<li>\n<p><strong>Fixed the mod loading but doing nothing on Linux.</strong> Config and player data were looked up at a hardcoded <code>user/mods/WeekendDrops</code> path. Linux filesystems are case-sensitive, so an install whose folder name differed even in capitalisation found no config at all and every service silently fell back to built-in defaults: no challenges, no contracts, no shop, and nothing in the log to explain it. Paths now resolve from where the mod\u2019s own dll actually sits, so the folder can be called anything. The same bug hid the LootNET and Fika installs from detection, which are matched case-insensitively now, and startup prints the resolved mod folder and raises a real error when a config file is missing.</p>\n</li>\n<li>\n<p><strong>Fixed Fika contracts breaking when two players took a bounty on the same map.</strong> Only the first player\u2019s contract was ever injected, so the second player\u2019s crew never spawned, and if it was the second player holding the Supply Run then no plane was armed and clearing the crew produced no airdrop. Every participant\u2019s contract is injected now (up to <code>maxContractsPerRaid</code>, default 3), and the raid arms one airdrop per Supply Run rather than one in total. Three related bugs went with it: two contracts sharing a boss cancelled each other\u2019s spawn outright, two bounties on the same zone had the second wipe the first\u2019s spawn points, and the whole Fika path was gated behind a folder check that could not match on Linux.</p>\n</li>\n<li>\n<p><strong>Fixed the trophy ceremony showing its own source code.</strong> The celebration that plays when you buy a trophy item referenced thirteen text keys that were never written, so it displayed literal <code>ui.trophy.obtained</code> and <code>ui.trophy.quip.4</code> on screen. Written now.</p>\n</li>\n<li>\n<p><strong>Fixed notification cards truncating mid-sentence.</strong> The compact card packed the body and its second line into one string that did not fit the box, so it cut off wherever it ran out of room and left a dangling separator behind. The second line gets its own line now.</p>\n</li>\n<li>\n<p>The in-game debug strip is laid out as a wrapping grid instead of one long row that ran off the side of the screen. Debug builds only.</p>\n</li>\n</ul>\n",
      "spt_constraint": "4.1.2",
      "fika": "unknown",
-     "downloads": 609,
+     "downloads": 620,
      "size": 477359,
      "link": "https://sp-mod.com/mod/download/2747/weekend-drops/1.0.5",
      "published_at": "2026-08-12T01:19:00.000000Z",
@@ -170697,7 +170697,7 @@
      "description": "<h3>New</h3>\n<ul>\n<li><strong>language</strong> i added a new sub folder directory named locales feel free to translate it to your language if there is a error in your translated locales it will load all the texts in English thats not a bug thats just a safe guard to not break anything</li>\n<li><strong>65 new challenges</strong> across the weekend and daily pools - easier opening rungs for the categories that only ever offered hard ones (a single grenade kill, 2 headshots, one clean extract, a first Raider or Rogue), more per-map extracts, and fuller ladders for the survive-a-raid, loot and single-raid-spike categories that used to have one entry each. The melee-kill stunt stays a one-off oddity and now shows up less often than before, not more.</li>\n</ul>\n<h3>Changes</h3>\n<ul>\n<li><strong>shop</strong> got a lil overhaul you can now buy a few new thing and barter for some supplys</li>\n<li><strong>Marksman rifles added to the Cleanup Crew\u2019s arsenal</strong> - the M1A, HK G28 and RSASS in 7.62x51, plus the SVDS in 7.62x54R. Roughly one crew member in eight now carries a DMR, so expect to be reached from further out.</li>\n<li><strong>Cultist challenges are no longer a wall on a fresh profile.</strong> Hunting cultists needs a night raid and night vision, but the challenge picker treated them as an everyday category, so one landed on roughly 45% of weekends - a slot a new player simply could not finish. They now share a slot with the other rare-target hunts instead of holding one of their own, which drops them to about 26% of weekends, and the entry rung is a single cultist rather than three. The 8- and 12-kill versions are gone. The same rebalance spreads every other category more evenly, so weekends repeat themselves less.</li>\n</ul>\n<h3>Fixes</h3>\n<ul>\n<li><strong>Depositing GP coins no longer destroys the ones you kept.</strong> Handing in 50 coins out of a stack of 200 credited the 50 correctly, but the leftover 150 disappeared: the deposit removed the whole stack and put a copy of the remainder back, and while your client showed those coins, the server had never agreed they existed, so they were gone at the next sync. Deposits now move whole stacks only, and the amount selector offers stack-sized amounts to match (two stacks of 100 offer 100 or 200). It is a coarser choice than before, but nothing can be lost. A smaller partial deposit would need the game to split a stack in a way that actually sticks, which i have not found a reliable route to yet.</li>\n<li>Fixed three \u201ckill X enemies in a single raid\u201d challenges whose titles, ids and actual targets disagreed (two both read \u201cKill 12\u201d, and one titled 18 only wanted 8). They are now a clean 6 / 10 / 15 / 20 ladder.</li>\n<li><strong>Supply Run crews now spawn on the drop instead of hiking to it.</strong> They were spawning anywhere in a zone that spans several hundred metres and walking in as a group, which is where they ran into trouble. They now start posted around the crate.</li>\n<li><strong>Fixed the Supply Run crew being sent to the wrong place entirely.</strong> The crew\u2019s hideout was rolled from the map\u2019s hideout list with no regard for where the crate was coming down, so you could get a Broken Village drop guarded from USEC Base. Worse, the crew could split, half holding the hideout while the rest walked off to the crate. Their posts are now always built around the rolled landing site. A Supply Run you already accepted repairs itself on the spot, so you don\u2019t have to abandon it (and burn your board pick) to get the fix.\nalso sorry for does who ran around the map trying to find them i did a terrible job adding the crew it should be now much better i hope at least\u2026</li>\n</ul>\n",
      "spt_constraint": "4.0.13",
      "fika": "compatible",
-     "downloads": 1599,
+     "downloads": 1745,
      "size": 411945,
      "link": "https://sp-mod.com/mod/download/2747/weekend-drops/1.0.4",
      "published_at": "2026-07-28T04:06:00.000000Z",
@@ -170717,7 +170717,7 @@
      "description": "<h3>New</h3>\n<ul>\n<li><strong>Send GP to a friend</strong> - gift GP from your balance to any other player (built for Fika). Open the deposit screen and hit \u201cSend to a friend\u201d, pick a recipient, choose an amount, and send. No fee and the recipient gets a gold \u201cGP gift received\u201d popup the next time they open the menu, whether or not they were online when you sent it also works with no fika installed incase you want to send GP to you other profile.</li>\n<li><strong>Team standings (Fika)</strong> - the Weekly tab now shows a team board of everyone on the server, ranked by GP earned this weekend. Only appears when Fika is installed.</li>\n<li><strong>New challenges</strong> - hunt Cultists and the Cultist Priest, take on Raiders and Rogues, chase single-raid feats (kill a pile of enemies in one raid, or survive 15 minutes in one). The weekly and daily pools also got a wider spread of the existing kill, extract, and survival targets.</li>\n<li><strong>Reward reminder you won\u2019t miss</strong> - when you have rewards waiting to claim, the main-menu nudge now pops as a bright, pulsing card with a sound, and it lands once you are actually back on the menu instead of behind the raid-end screen.</li>\n<li><strong>inRaid</strong> contract Toast it now tells you the location of the cleanup crew</li>\n<li><strong>Fika</strong> added Compatibility i tested a few raids it should work but there could be issues with the air drop not getting called after the crew gets killed</li>\n<li><strong>challenges on loading screen</strong> added a option to the F12 menu to toggle it on or off</li>\n</ul>\n<h3>Changes.</h3>\n<ul>\n<li>Menu readability pass: brighter, higher-contrast action buttons (Buy, Claim, Confirm) and cleaner text alignment across the panels.</li>\n<li>shop got rebalanced a bit rised prices a bit</li>\n<li>cleanup crew got buffed better gear like guns and chances to spawn with helmets and body armor they also now got some meds/stims so they can heal in fights</li>\n</ul>\n<h3>Fixes</h3>\n<ul>\n<li>menu should now no longer lag after a few raids and stay smooth without weird animation delay</li>\n</ul>\n",
      "spt_constraint": "4.0.13",
      "fika": "compatible",
-     "downloads": 1688,
+     "downloads": 1689,
      "size": 377342,
      "link": "https://sp-mod.com/mod/download/2747/weekend-drops/1.0.3",
      "published_at": "2026-07-10T20:24:00.000000Z",
@@ -170757,7 +170757,7 @@
      "description": "<h3>Fixes</h3>\n<ul>\n<li>The daily \u201ccomplete all challenges\u201d bonus now actually pays out. Before, clicking Claim did nothing.</li>\n<li>Crate ammo boxes are no longer empty. They now come filled with their rounds.</li>\n<li>Crates no longer hand out duplicate bulky gear. Backpacks, body armor, rigs, and headwear are capped at one per crate.</li>\n<li>a game crash no longer breaks the mod.</li>\n</ul>\n<h3>New</h3>\n<ul>\n<li>Option to turn off Scav challenges, for players who run Scav raids disabled. Toggle it in the F12 menu under Challenges, or set <code>enableScavChallenges</code> in config.json. Any Scav challenge already in your set is swapped for a different quest. Takes effect after a game restart.</li>\n</ul>\n<h3>Removed</h3>\n<ul>\n<li>The leftover \u201cTest Notification\u201d button. not sure how i didn notice that earlier i left that in ups</li>\n</ul>\n",
      "spt_constraint": "4.0.13",
      "fika": "unknown",
-     "downloads": 1060,
+     "downloads": 1062,
      "size": 299944,
      "link": "https://sp-mod.com/mod/download/2747/weekend-drops/1.0.1",
      "published_at": "2026-06-20T12:43:00.000000Z",
@@ -170769,7 +170769,7 @@
      "description": "<p>realase!</p>\n",
      "spt_constraint": "4.0.13",
      "fika": "unknown",
-     "downloads": 399,
+     "downloads": 403,
      "size": 289571,
      "link": "https://sp-mod.com/mod/download/2747/weekend-drops/1.0.0",
      "published_at": "2026-06-19T16:00:00.000000Z",
@@ -170802,7 +170802,7 @@
     }
    ],
    "published_at": "2026-08-25T12:07:00.000000Z",
-   "updated_at": "2026-08-25T12:08:03.000000Z",
+   "updated_at": "2026-08-31T21:18:16.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
@@ -192899,6 +192899,76 @@
    "delisted": false
   },
   {
+   "id": 2971,
+   "hub_id": null,
+   "guid": "com.minesettimi.coopexfil",
+   "name": "Universal Co-op Exfil",
+   "slug": "universal-co-op-exfil",
+   "teaser": "Removes the Scav and PMC requirement from co-op exfils, allowing any group of at least 2 to extract",
+   "description_html": "<p>This mod converts the co-op extracts to only require at minimum 2 of any player or bot. This is mainly aimed at allowing Fika players to use co-op exfils to escape if they have one of their friends alive with them but there is no dependency requirement if this mod is useful anywhere else.</p>\n<p>The mod also changes the co-op extracts to permanently unlock if the conditions are met the first time. This was added to deal with the weird issue where the extract would get stuck as un-usable. This can be disabled in the F12 config menu.</p>\n<p><strong>NOTE:</strong> This mod does not disable Fence rep and rewards for using the co-op extract. Use a mod like <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/236/server-value-modifier-svm\" rel=\"noreferrer noopener\">SVM</a> to do that.</p>\n<p><em>This mod is untested with Fika headless</em><br />\nSpecial thanks to my friend who I dragged into debugging for hours.</p>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/64cj4eFAbZ70a0sFCkthnZL1Okt4j2of4ukRVCSZ.png",
+   "forge_url": "https://sp-mod.com/mod/2971/universal-co-op-exfil",
+   "downloads": 3,
+   "favourites": 0,
+   "featured": false,
+   "fika": true,
+   "fika_latest": "compatible",
+   "category": {
+    "id": 17,
+    "title": "Other",
+    "slug": "other"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 96972,
+     "name": "minesettimi",
+     "avatar": "https://files.sp-mod.com/profile-photos/NVbt5Ef6y2ziLJdZ78xyJENo1K2MTgucH4ebZZB0_128w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/minesettimi/UniversalCoopExtract",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 15129,
+     "version": "1.0.1",
+     "description": "<p>Actually working release</p>\n",
+     "spt_constraint": "~4.1.3",
+     "fika": "compatible",
+     "downloads": 3,
+     "size": 3508,
+     "link": "https://sp-mod.com/mod/download/2971/universal-co-op-exfil/1.0.1",
+     "published_at": "2026-09-01T00:08:00.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "1.0.1",
+   "spt_constraint": "~4.1.3",
+   "all_spt_constraints": [
+    "~4.1.3"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-08-30T04:27:00.000000Z",
+   "updated_at": "2026-09-01T00:09:17.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
    "id": 2972,
    "hub_id": null,
    "guid": "com.mybutthasarash.blackjack",
@@ -193221,6 +193291,170 @@
     "contains_ads": false,
     "contains_ai_content": true,
     "ai_disclosure": "<p>AI was used as a little development helper for parts of the code, identifying relevant classes and APIs, digging into DLL files, interpreting telemetry logs, and debugging.</p>\n",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 2978,
+   "hub_id": null,
+   "guid": "com.mybutthasarash.unlockallbackgrounds",
+   "name": "UnlockAllBackgrounds",
+   "slug": "unlockallbackgrounds",
+   "teaser": "For the people like myself who will never finish all of the endings.",
+   "description_html": "<h1>Unlock All Backgrounds</h1>\n<p>Unlocks every main menu background the moment you install it. No new profile,\nno config, nothing to grind.</p>\n<p>That covers the six vanilla backgrounds \u2014 including Cyber and The Unheard\nEdition, which a normal profile never gets granted.</p>\n<p><strong>It never touches your profile.</strong> The unlocks ride along on the shared template\nlist the server already sends to every profile, so nothing is written to your\nsave. Uninstall and they go back to locked, with nothing left behind to clean up.</p>\n<p>Server-side only. No client plugin.</p>\n<h2>Compatibility</h2>\n<p>Works with <a target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/2512/wtt-content-backport\" rel=\"noreferrer noopener\">WTT - Content Backport</a>\nby GrooveypenguinX. That mod adds five more backgrounds \u2014 <strong>Hotline T</strong>***** and\nthe four EFT 1.0 ending backgrounds \u2014 and ships them all locked. This mod\nunlocks those too.</p>\n<p>Nothing needs configuring for that to work. Backgrounds are read from the live\ndatabase at load time rather than from a hardcoded list, and the load order\nworks out on its own, so any background another mod adds gets unlocked the same\nway.</p>\n<p>Neither mod requires the other. Without the backport you get the vanilla six;\nwith it, eleven.</p>\n<h2>Install</h2>\n<p>Drop the folder into <code>SPT_Runtime\\user\\mods\\</code> and start the server.</p>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/Dtq2wLbMahdAG4iD6saVfQY9PiirBkJ2tdubij46.jpg",
+   "forge_url": "https://sp-mod.com/mod/2978/unlockallbackgrounds",
+   "downloads": 84,
+   "favourites": 0,
+   "featured": false,
+   "fika": false,
+   "fika_latest": "unknown",
+   "category": {
+    "id": 17,
+    "title": "Other",
+    "slug": "other"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 51018,
+     "name": "MyButtHasARash",
+     "avatar": "https://files.sp-mod.com/profile-photos/eSszQU6NfgJKTNe4maY9gdYnijH2W29cA3z0LDKd_256w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/JoelHauser/AllBackgrounds",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 15127,
+     "version": "1.0.0",
+     "description": "<p>release</p>\n",
+     "spt_constraint": "~4.1.0",
+     "fika": "unknown",
+     "downloads": 84,
+     "size": 7745,
+     "link": "https://sp-mod.com/mod/download/2978/unlockallbackgrounds/1.0.0",
+     "published_at": "2026-08-31T22:01:00.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "1.0.0",
+   "spt_constraint": "~4.1.0",
+   "all_spt_constraints": [
+    "~4.1.0"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-08-31T22:00:00.000000Z",
+   "updated_at": "2026-08-31T22:02:08.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": true,
+    "ai_disclosure": "<p>Opus was utilized</p>\n",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 2979,
+   "hub_id": null,
+   "guid": "com.harmonyzt.sixthsense",
+   "name": "Sixth Sense",
+   "slug": "sixth-sense",
+   "teaser": "You always know someone's looking, but not sure from where.",
+   "description_html": "<p>This mod will play a familiar sound (from World of Tanks) if you get spotted by the bot(s). This doesn\u2019t count if a bot hears, only when bot actually sees you and targets specifically <strong>you</strong>.</p>\n<h3>Mod Offers:</h3>\n<ul>\n<li>All above</li>\n<li>Customizable Icon, and Sound. Go to <code>BepInEx/plugins/SixthSense/</code> and replace the files of icon/sound with whatever you\u2019d like. Only <code>.png</code> and <code>.mp3</code> are supported.</li>\n<li>A BepInEx config. Turn on and off or adjust whatever you like.</li>\n</ul>\n<p>Enjoy x)</p>\n<p>This mod was heavily inspired by <strong>SamSWAT</strong>! Since his idea is the original, and I couldn\u2019t find any traces of the original mod left open-source, I decided to take matters in my own hands and remake it.</p>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/KRmJs2lnCyqLUBTFM2Q5GFoUD6YGokWaZqmUrPG9.png",
+   "forge_url": "https://sp-mod.com/mod/2979/sixth-sense",
+   "downloads": 16,
+   "favourites": 1,
+   "featured": false,
+   "fika": false,
+   "fika_latest": "unknown",
+   "category": {
+    "id": 17,
+    "title": "Other",
+    "slug": "other"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 30878,
+     "name": "harmony",
+     "avatar": "https://files.sp-mod.com/profile-photos/zCGf86MOlzlGlGoDlIYL3IgPnAyHSRRX82XKlfMB_256w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/harmonyzt/SixthSense",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 15128,
+     "version": "1.0.0",
+     "description": "<p>Initial Release</p>\n",
+     "spt_constraint": "~4.1.3",
+     "fika": "unknown",
+     "downloads": 16,
+     "size": 70873,
+     "link": "https://sp-mod.com/mod/download/2979/sixth-sense/1.0.0",
+     "published_at": "2026-08-31T22:41:00.000000Z",
+     "dependencies": [
+      {
+       "id": 791,
+       "name": "SAIN - Solarint's AI Modifications - Full AI Combat System Replacement",
+       "slug": "sain-solarints-ai-modifications-full-ai-combat-system-replacement",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement"
+      }
+     ]
+    }
+   ],
+   "latest_version": "1.0.0",
+   "spt_constraint": "~4.1.3",
+   "all_spt_constraints": [
+    "~4.1.3"
+   ],
+   "dependencies": [
+    {
+     "id": 791,
+     "name": "SAIN - Solarint's AI Modifications - Full AI Combat System Replacement",
+     "slug": "sain-solarints-ai-modifications-full-ai-combat-system-replacement",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement"
+    }
+   ],
+   "all_dependencies": [
+    {
+     "id": 791,
+     "name": "SAIN - Solarint's AI Modifications - Full AI Combat System Replacement",
+     "slug": "sain-solarints-ai-modifications-full-ai-combat-system-replacement",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement"
+    }
+   ],
+   "published_at": "2026-08-31T22:44:00.000000Z",
+   "updated_at": "2026-08-31T22:44:19.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
     "cheat_notice": false,
     "profile_binding_notice": false
    },
