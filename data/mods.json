@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-09-04T16:28:51Z",
+ "generated_at": "2026-09-04T20:50:56Z",
  "source": "https://sp-mod.com",
  "filter": "all",
- "mod_count": 1926,
+ "mod_count": 1927,
  "categories": [
   {
    "id": 12,
@@ -16547,8 +16547,8 @@
    "description_html": "<p><strong>Report issues or bugs to here: <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/ArchangelWTF/SAIN/issues\" rel=\"noreferrer noopener\">SAIN Github Issue Tracker</a></strong></p>\n<p><strong>Any issues must include a full list of your server and client mods, the version of SPT you are playing on, and either your Bepinex/LogOutput file or an exact description of the issue you are experiencing and the context of when it occurred. Just telling me \u201cits broken\u201d is not helpful what so ever.</strong></p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Features</div>\n<div class=\"tab-content\"><p><strong>SAIN 3.0: New Features:</strong></p>\n<ul>\n<li>\n<p><strong>New Combat AI</strong></p>\n<ul>\n<li>Fully replaced combat logic.</li>\n<li>AI Will Run for cover while reloading and using first aid.</li>\n<li>Entirely new decision system and framework.</li>\n<li>Bots will move outside their bot-zones to investigate gunfire or chase enemies.</li>\n</ul>\n</li>\n<li>\n<p>Full Bot Customization and Difficulty Modifications while in-game.</p>\n<ul>\n<li>\n<p>Press f6 (Default Key) to open new in-game GUI.</p>\n</li>\n<li>\n<p>Includes difficulty presets that modify SAIN config settings.</p>\n<ul>\n<li>These presets have no influence on other difficulty options in other mods or the selected difficulty when starting a raid. They are ONLY for quickly changing SAIN gui settings.</li>\n</ul>\n</li>\n</ul>\n</li>\n<li>\n<p>New Tracking of Last Known Position for bots.</p>\n<ul>\n<li>Bots will only use real sensory information to track where they last saw or heard you, and will remember that location for longer. Bots will share this info if they are in a group, and either using headsets, or close by to friendlies.</li>\n<li>When making lots of noise from 1 place, bots will get increasingly accurate information on where a sound came from, and be able to see their target from further away, and see them faster if they heard them from the same place that they currently are. Repositioning is key!</li>\n</ul>\n</li>\n<li>\n<p><strong>Bot Extracts</strong></p>\n<ul>\n<li>\n<p>PMCs and Scavs will move to extract at the end of raid, or if they are heavily injured and can\u2019t heal.</p>\n</li>\n<li>\n<p>If using Looting Bots, SAIN will track how much loot they\u2019ve gained during a raid (Net-Loot-Value) and can decide to leave if they are satisfied.</p>\n<ul>\n<li>Can be configured in \u201cLooting Bots\u201d tab in Global Settings.</li>\n</ul>\n</li>\n</ul>\n</li>\n<li>\n<p><strong>Bots React to you reloading, healing, pulling out grenades, pulling pins on grenades, using surgery, or looting.</strong></p>\n<ul>\n<li>Yes you can bait the AI now.</li>\n</ul>\n</li>\n<li>\n<p><strong>New Cover System for AI</strong></p>\n<ul>\n<li>Bots use objects around them in the real gameworld rather than preset static points.</li>\n<li>Anywhere there is NavMesh and objects, bots will take cover and fight properly.</li>\n</ul>\n</li>\n<li>\n<p><strong>New AI Personality System</strong></p>\n<ul>\n<li>Bots are assigned a personality preset that influences their decisions and talk behavior.</li>\n<li>Bots with excellent gear will be more aggressive, taunt their enemy, and wait for enemies to show up far less frequently.</li>\n<li>Currently Implemented: GigaChad, Snapping Turtle, Wreckless, Chad, Rat, Coward, Timmy, Normal.</li>\n</ul>\n</li>\n<li>\n<p>New Squad Personality System</p>\n<ul>\n<li>Groups of bots will have specific personalities that affects how vocal they are, their coordination, and their aggression level.</li>\n<li>Currently Implemented: GigaChads, Elite, TimmyTeam6, Rats, Normal</li>\n</ul>\n</li>\n<li>\n<p>**New Talk System</p>\n<ul>\n<li>\n<p>Solo bots are less talkative.</p>\n</li>\n<li>\n<p>Bot Groups now use a complex system to call out enemy locations, friendly status, their current actions, and requests to other group members in close proximity.</p>\n</li>\n<li>\n<p>Squad leaders will call out orders for bots based on the situation.</p>\n</li>\n<li>\n<p>Personality Specific Voice Behaviors</p>\n<ul>\n<li>Rats and Timmys may beg for their life and try to stop you from shooting them.</li>\n<li>Chads/GigaChads will taunt enemies.</li>\n<li>and a few secret rare events that I wont spoil.</li>\n</ul>\n</li>\n<li>\n<p>New AI Voice Response System</p>\n<ul>\n<li>AI of certain personalities will respond to voicelines from both the player, and other bots, so if you start talking shit, they might start talking back!</li>\n<li>Friendly bots will voice line back to you, so you can more easily tell when a friendly is nearby so you don\u2019t lose that scav karma.</li>\n</ul>\n</li>\n</ul>\n</li>\n<li>\n<p><strong>New Squad Tactics</strong></p>\n<ul>\n<li>\n<p>Squads will work together.</p>\n<ul>\n<li>Groups of scavs and especially PMCs are far more dangerous than before. Think carefully before engaging a group of well armed PMCs!</li>\n<li>Squads will try to help friendly members if they are in trouble</li>\n<li>Squads regroup around their squad leader if they drift too far.</li>\n<li>Squads will suppress enemies around a corner while a friendly is retreating to heal or reload.</li>\n</ul>\n</li>\n<li>\n<p>New Squad Leader System</p>\n<ul>\n<li>Each group of bots is assigned a squad leader who gives commands and behaves differently.</li>\n<li>Killing this squad leader will leave groups less combat effective by disabling Squad Specific bot actions.</li>\n<li>Try to ID a squad leader and kill them first to make a group easier to deal with!</li>\n</ul>\n</li>\n</ul>\n</li>\n<li>\n<p><strong>Bot Blind Fire</strong></p>\n<ul>\n<li>Bots will blindfire over objects in the direction of their enemy.</li>\n</ul>\n</li>\n<li>\n<p><strong>Advanced Search Behavior and Movement</strong></p>\n<ul>\n<li>Bots will try to peek corners and clear dangerous areas while searching for enemies.</li>\n</ul>\n</li>\n<li>\n<p><strong>Bots now make full use of stimulators and injectors in their inventory.</strong></p>\n</li>\n<li>\n<p><strong>Bots will use hand gestures to friendlies instead of voicelining if those friendlies are within line of sight.</strong></p>\n</li>\n<li>\n<p><strong>Certain equipment items provide buffs or debuffs to stealth against AI if further than 50 meters away. Will work on adding these to the description for items, and expanding on the system for easily adding new items or configuring these values in the future.</strong></p>\n<ul>\n<li><strong>Currently Implemented:</strong></li>\n<li><strong>Tan Ulach - 7.5% faster vision speed</strong></li>\n<li><strong>Blue Untar Helmet - 10% faster vision speed</strong></li>\n<li><strong>Boonie Hats - 20% slower vision speed</strong></li>\n<li><strong>Pilgrim Backpack - 10% faster vision speed</strong></li>\n<li><strong>RAID (couch) backpack - 7.5% faster vision speed.</strong></li>\n<li><strong>Any face cover - 5% slower vision speed.</strong></li>\n</ul>\n</li>\n<li>\n<p><strong>Revamped scatter system for bots based on their weapons recoil stats.</strong></p>\n<ul>\n<li>You can adjust this in the f12 menu. If a mod you are using lowers recoil for weapons, bots will also have reduced recoil!</li>\n<li>There are additional settings available if advanced settings are enabled in the f12 menu (Checkbox at the top) but I do not recommend messing with this without some fine tuning, or bots won\u2019t be able to hit anything.</li>\n</ul>\n</li>\n<li>\n<p><strong>Flashlight detection and blinding for bots.</strong></p>\n<ul>\n<li>Bots can detect your flashlight beam being shined around and will investigate, they estimate the position and the accuracy is based on distance to to the object being illuminated.</li>\n<li>Bots are blinded by flashlights at close range, they will have increased recoil and slower aim speed.</li>\n</ul>\n</li>\n<li>\n<p><strong>Dynamic Lean.</strong></p>\n<ul>\n<li>Bots will lean based on objects around them and their enemies position, and can do so while peeking corners.</li>\n</ul>\n</li>\n<li>\n<p><strong>Weather affects bot visibility.</strong></p>\n<ul>\n<li>Poor weather conditions will actually have an affect on how well bots can see and how fast they see you.</li>\n</ul>\n</li>\n<li>\n<p><strong>More accurate time-of-day vision.</strong></p>\n<ul>\n<li>Bot vision will gradually reduce as darkness falls or increase as the sun rises. in vanilla, it changes very rapidly, but only after the sun is completely set.</li>\n</ul>\n</li>\n<li>\n<p><strong>Sound occlusion for bot hearing.</strong></p>\n<ul>\n<li>The distance bots can hear sounds is affected by objects between them and the source. The more objects - the higher the occlusion.</li>\n</ul>\n</li>\n<li>\n<p><strong>Gunshot audible range based on weapon caliber.</strong></p>\n<ul>\n<li>In Vanilla, bots hear all unsuppressed weapons at the same range. Now this scales depending on the caliber properly.</li>\n</ul>\n</li>\n<li>\n<p><strong>Subsonic ammo is quieter for bots.</strong></p>\n<ul>\n<li>Using a suppressor + subsonic ammo will have a dramatic effect on the range bots can hear your gunshots.</li>\n</ul>\n</li>\n<li>\n<p><strong>Rain affects bot hearing.</strong></p>\n<ul>\n<li>Heavy rain will reduce the range bots can hear sounds.</li>\n</ul>\n</li>\n<li>\n<p><strong>Semi-auto firemode swap for bots firing at 40+ meters.</strong></p>\n<ul>\n<li>Bots will automatically swap to semi auto when engaging targets at range.</li>\n</ul>\n</li>\n<li>\n<p><strong>Recoil, Ergo, Ammo-Type based fire-rate and full auto burst length.</strong></p>\n<ul>\n<li>How fast bots shoot is affected by their weapon stats. So low recoil guns will be fired in semi auto at a faster rate at long range, and bots will fire longer burts at close range.</li>\n</ul>\n</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Install</div>\n<div class=\"tab-content\"><h3>Installation</h3>\n<p>1) Open the downloaded .7z file in <a target=\"_blank\" class=\"external-link\" href=\"https://www.7-zip.org/\" rel=\"noreferrer noopener\">7-zip</a></p>\n<p>2) Select the folders in the .7z file in <a target=\"_blank\" class=\"external-link\" href=\"https://www.7-zip.org/\" rel=\"noreferrer noopener\">7-zip</a></p>\n<p>3) Drag the selected folders from <a target=\"_blank\" class=\"external-link\" href=\"https://www.7-zip.org/\" rel=\"noreferrer noopener\">7-zip</a> into your SPT folder</p>\n<p>4) If you couldn\u2019t tell, you need <a target=\"_blank\" class=\"external-link\" href=\"https://www.7-zip.org/\" rel=\"noreferrer noopener\">7-zip</a> to extract this mod</p>\n<p>Demonstration Video:</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://i.imgur.com/3N6gTe2.gif\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/3N6gTe2.gif\" alt=\"3N6gTe2.gif\" /></a></p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">FAQ</div>\n<div class=\"tab-content\"><ul>\n<li>How do I install?\n<ul>\n<li>Just drag and drop the two folders in the downloaded zip into the folder you installed SPT to. Thats it.\n<ul>\n<li>If Installed correctly with BigBrain, you should see SAIN in the f12 menu while ingame, and SAIN being activated in the server when starting it.</li>\n</ul>\n</li>\n</ul>\n</li>\n<li>How do I configure the mod?\n<ul>\n<li>Press F6 while in-game.</li>\n</ul>\n</li>\n<li>Bots have wallhack!\n<ul>\n<li>They do not. Bots are hearing you.</li>\n<li>The intention is that if you can hear a bot, they can hear you.</li>\n<li>Stop sprinting everywhere, be aware that turning in place creates a skid noise and it can be heard by bots, just like a real player can hear it.</li>\n<li>If your character makes a noise, it can be heard with only a few exceptions.</li>\n<li>Bot hearing tries to simulate what a real player can hear to as close as possible, but I\u2019m always tweaking and adjusting things.</li>\n</ul>\n</li>\n<li>My Spawns are messed up!\n<ul>\n<li>SAIN does not touch bot spawns, loadouts, or anything else that isn\u2019t explicitly listed. SAIN is purely bot behavior and actions.</li>\n</ul>\n</li>\n<li>How do the difficulty presets work in the GUI?\n<ul>\n<li>The presets ONLY modify settings within the SAIN GUI. They have no impact on any other mod or what difficulty you select when starting a raid.</li>\n</ul>\n</li>\n<li>How do I make the bots smarter?\n<ul>\n<li>You can\u2019t. There is no magical button to make ai do smarter or new things, it has to be manually programmed and designed, this is a replacement AI, so anything the bots do has to be designed and built.</li>\n</ul>\n</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Mod Compatibilty + Known Issues</div>\n<div class=\"tab-content\"><p><strong>Incompatibilities:</strong></p>\n<ul>\n<li><strong>ANY mod that modifies AI brain types will cause issues.</strong></li>\n<li><strong>Better Spawns Plus - Incompatible - Modifies bot brain types for some reason.</strong></li>\n<li><strong>No Bush ESP - Incompatible - Already implemented into SAIN.</strong></li>\n<li><strong>No Grenade ESP - Incompatible - SAIN requires bots to see grenades or hear the pop from them to react.</strong></li>\n<li><strong>No AI ESP - Implemented into SAIN. Do not use.</strong></li>\n<li><strong>No Boss PMCs - Incompatible - SAIN requires different brain types than No Boss PMCs uses</strong></li>\n<li><strong>Separate Hostility - Incompatible - Causes exception spam. Do not use.</strong></li>\n</ul>\n<p><strong>Known Issues:</strong></p>\n<ol>\n<li>Bots will sometimes get stuck in healing animations</li>\n<li>Bots will sometimes vault into places they can\u2019t get down from. (Mostly resolved in recent versions, but can still happen sometimes)</li>\n<li>Sometimes random stuff in EFT code becomes null, and causes sain code to throw errors.</li>\n<li>Bots can do some stupid stuff sometimes, always working on it but creating code for every possible situation is difficult.</li>\n<li>Bots sometimes spin in place when trying to look to where they are trying to run, probably just need to adjust some distance thresholds to fix this.</li>\n<li>Bots like to crouch every time they start shooting a target that appears</li>\n<li>Bots hear gunshots/footsteps from way too far while in areas like the Reserve bunker</li>\n<li>Bots don\u2019t take into consideration bodies in the place they are trying to search (will take a lot of rework and a new system to fix this)</li>\n<li>T***** is cursed and made of spaghetti code.</li>\n</ol></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Support the Project</div>\n<div class=\"tab-content\"><p><strong>I have a Patreon if you want to support my work. I am unemployed and a student, but I am working on this project full time 12+ hours a day, every day, and have been for over 4 months now. Every dollar helps!</strong></p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://www.patreon.com/Solarint\" rel=\"noreferrer noopener\">Link to Solarint\u2019s Patreon</a></p></div></div></div>\n<p>**HUGE Thanks to everyone in the Discord who helped test the Alpha builds of 2.0. Ya\u2019ll are the only reason this mod works as well as it does!</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/1062.jpg",
    "forge_url": "https://sp-mod.com/mod/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement",
-   "downloads": 1258251,
-   "favourites": 536,
+   "downloads": 1279314,
+   "favourites": 687,
    "featured": true,
    "fika": true,
    "fika_latest": "compatible",
@@ -16570,7 +16570,7 @@
     {
      "id": 27605,
      "name": "DrakiaXYZ",
-     "avatar": "https://files.sp-mod.com/profile-photos/M9qMWlknCITEk33QXO07mJG0j8qP4xhz1QOsHUHD_128w.webp"
+     "avatar": "https://files.sp-mod.com/profile-photos/3QNnXtLVCemFEnHBPEbJlHUotMxBLgyZ69qLxgnZ_256w.webp"
     },
     {
      "id": 52282,
@@ -16590,12 +16590,39 @@
    ],
    "versions": [
     {
+     "id": 15192,
+     "version": "4.5.1",
+     "description": "<h1>This release is for SPT 4.1</h1>\n<ul>\n<li>Added a new interop that More Bots API can take advantage of in SAIN</li>\n<li>Removed bots shooting center mass for a new weighting system that should allow for better configuration of where bots might shoot</li>\n<li>Fixed bots cycling weapons infinitely if they are not usable (I hope)</li>\n<li>Attempted to improve how bots engage sniper scavs or other enemies that are in tricky positions</li>\n<li>Partially merged tactical device fixes</li>\n<li>Moved bullet impact hearing dispersion to linear</li>\n</ul>\n",
+     "spt_constraint": "~4.1.3",
+     "fika": "compatible",
+     "downloads": 272,
+     "size": 541623,
+     "link": "https://sp-mod.com/mod/download/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement/4.5.1",
+     "published_at": "2026-09-04T18:39:00.000000Z",
+     "dependencies": [
+      {
+       "id": 827,
+       "name": "Waypoints - Expanded Navmesh",
+       "slug": "waypoints-expanded-navmesh",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/827/waypoints-expanded-navmesh"
+      },
+      {
+       "id": 902,
+       "name": "BigBrain",
+       "slug": "bigbrain",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/902/bigbrain"
+      }
+     ]
+    },
+    {
      "id": 14862,
      "version": "4.5.0",
      "description": "<ul>\n<li>Updated to SPT 4.1</li>\n<li>Moved presets to the SPT server</li>\n<li>Added mod configuration pages on the Server</li>\n<li>Various vanilla AI Updates (Thanks @DanW)</li>\n<li>Small code cleanups</li>\n<li>Fixed behaviour when bots get a grenade thrown at them</li>\n<li>Fixed bot behaviour when flashed</li>\n</ul>\n",
      "spt_constraint": "~4.1.3",
      "fika": "compatible",
-     "downloads": 426,
+     "downloads": 17455,
      "size": 531189,
      "link": "https://sp-mod.com/mod/download/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement/4.5.0",
      "published_at": "2026-08-20T17:35:00.000000Z",
@@ -16622,7 +16649,7 @@
      "description": "<p>I did nothing this release edition, hope nothing\u2019s broken! That would be a shame.</p>\n<h2>What\u2019s Changed</h2>\n<ul>\n<li>fix: invalid location ID for Woods by @powerCasualUser</li>\n<li>Use RemoveFromMap method to extract bot by @ozen</li>\n<li>Revert removal of LootingBots Interop by @ozen</li>\n<li>Fixed Limitations of Interop Method for Ignoring Hearing by @DanW</li>\n<li>More Conditions to Wanting Patrol Stance by @ozen</li>\n<li>Grenades Toggle Fix by @ozen</li>\n</ul>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 102615,
+     "downloads": 106032,
      "size": 351166,
      "link": "https://sp-mod.com/mod/download/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement/4.4.3",
      "published_at": "2026-04-23T23:46:00.000000Z",
@@ -16649,7 +16676,7 @@
      "description": "<p>Changes:</p>\n<ul>\n<li>Removed funni (The AI vibe coded fixes didn\u2019t work out :( )</li>\n</ul>\n<p>Changes from V4.4.0:</p>\n<ul>\n<li>Fix hideout not loading properly when having night vision equipped</li>\n<li>Fix: weapon data not being updated properly by @powerCasualUser</li>\n<li>Fix: inverted difficulty modifier in recoil calculation by @powerCasualUser</li>\n</ul>\n",
      "spt_constraint": "~4.0 <4.1.0",
      "fika": "compatible",
-     "downloads": 17974,
+     "downloads": 18028,
      "size": 348490,
      "link": "https://sp-mod.com/mod/download/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement/4.4.2",
      "published_at": "2026-04-01T22:00:00.000000Z",
@@ -16676,7 +16703,7 @@
      "description": "<p>It is recommended to install the latest version of Fika along with this version of SAIN</p>\n<h2>What\u2019s Changed</h2>\n<ul>\n<li>Fixed up certain bots not doing damage when getting shot in the head</li>\n<li>Added an interop with Fika to prevent SAIN from loading components when the player is a client</li>\n<li>Added various fixes for bot hearing when players are using Fika, bots will now hear just as good as they would in base SPT</li>\n<li>Fixed IsPointInvisibleSector which stopped bots from seeing various things by @astron8t-voyagerx</li>\n<li>Fixed TimeSinceShotAtToSuppress which was getting an incorrect value by @astron8t-voyagerx</li>\n<li>Minor lights optimization by @ozen-m</li>\n<li>Replacement for <code>ToggleSoundPatch</code> by @ozen-m</li>\n<li>fix: bot cannot hit reliably when strafing by @powerCasualUser</li>\n<li>Added various fixes for teleportation when switching between layers (Thanks Janky)</li>\n<li>Added a server mod to allow preset modders to more easily define bot personalities</li>\n<li>Fixed up Deathwish to include harder pmc\u2019s</li>\n<li>Added a fix for uninstalling mods that contain custom WildSpawnTypes, this would previously cause SAIN to break</li>\n<li>Added some more grenade changes, these should be a bit more random now.. As well as fixing up a edge case that might still have allowed bots to throw grenades while BSG\u2019s layers were in control</li>\n<li>More code cleanup work</li>\n</ul>\n<p>This will give a warning about outdated presets due to one new variable being added, but older presets should work as intended with this version.</p>\n",
      "spt_constraint": "~4.0 <4.1.0",
      "fika": "compatible",
-     "downloads": 43656,
+     "downloads": 43687,
      "size": 348509,
      "link": "https://sp-mod.com/mod/download/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement/4.4.0",
      "published_at": "2026-01-28T13:00:00.000000Z",
@@ -16703,7 +16730,7 @@
      "description": "<p><strong>This version will require new presets!</strong></p>\n<p>This version wouldn\u2019t have been possible if it weren\u2019t for some community members actively contributing to SAIN\u2019s code base, thanks to each one of you!</p>\n<h2>What\u2019s Changed</h2>\n<ul>\n<li>Fix: Stops RemovePerson from being invoked repeatedly by @Arys</li>\n<li>Further fixes to log spam on bot extracting by @Arys</li>\n<li>QoL: Embed version, description, copyright into the assembly. by @yurikus</li>\n<li>Fix bot not sprint when seeking cover and invalid <code>IsSniper</code> check by @powerCasualUser</li>\n<li>Fix: add missing Blicky, 12.7x99mm, and rocket launcher to Shoot settings by @powerCasualUser</li>\n<li>Fix: Bots being able to see through certain objects and thus attempting to shoot through them</li>\n<li>Fix: Bots being forced to stop moving while asleep causing erratic behaviour</li>\n<li>Fix: Bots not entering BSG\u2019s sleep state correctly when a user has moved far enough away</li>\n<li>Removed: No Bush ESP (Comes with the latest client by default now)</li>\n<li>Added: Partisan\u2019s AI to be overridden by SAIN</li>\n<li>Added: Glukhar\u2019s AI to be overridden by SAIN</li>\n<li>Added: Santa\u2019s AI to be overridden by SAIN</li>\n<li>Added: Support for the AK-50, rocket launcher &amp; blicky</li>\n<li>Fix: Introduce global minimum aim time + fix crouch spamming by @Janky</li>\n<li>Fix: Various null references in Calcmodifier</li>\n</ul>\n",
      "spt_constraint": "~4.0 <4.1.0",
      "fika": "compatible",
-     "downloads": 37247,
+     "downloads": 37284,
      "size": 1705545,
      "link": "https://sp-mod.com/mod/download/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement/4.3.1",
      "published_at": "2025-12-24T15:00:00.000000Z",
@@ -16723,7 +16750,7 @@
      "description": "<p>Re-release of 4.2.0 (4.0.0) with the following changes:</p>\n<p><strong>This release will require new presets due to the Labyrinth bosses being added! Older presets will not work in Labyrinth!</strong></p>\n<ul>\n<li>Fixes Labyrinth being an invalid location</li>\n<li>Clears up logic in center of mass handling</li>\n<li>Adds new labyrinth bosses</li>\n</ul>\n<p>A huge thanks to <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/72916/jankytheclown\" rel=\"noreferrer noopener\">JankyTheClown</a> for most these fixes</p>\n",
      "spt_constraint": "~4.0 <4.1.0",
      "fika": "compatible",
-     "downloads": 46378,
+     "downloads": 46393,
      "size": 1640918,
      "link": "https://sp-mod.com/mod/download/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement/4.3.0",
      "published_at": "2025-11-21T16:01:00.000000Z",
@@ -16743,7 +16770,7 @@
      "description": "<p>Rebalanced default presets.</p>\n<p>Heavily nerfed scavs (disabled faster cqb reaction, reduced hearing range)</p>\n<p>Goons can now aim for your head (sometimes).</p>\n<p>Killa and tagilla hold down the trigger for longer and wait less between shots.</p>\n<p>Buffed most bosses and followers.</p>\n<p>Re-enabled \u201cAim Center Mass\u201d for PMCs on default difficulty, was a mistake.</p>\n<p>Slightly lowered \u201cAim Center Mass Point\u201d to reduce headshots, was raised quite a bit in 4.1.0, but accidental headshots are a bit too frequent now.</p>\n<p>Lots of small changes to bot configs, too many to list.</p>\n<p><strong>You\u2019ll need to create a new preset to get the new changes, but old presets are working fine.</strong></p>\n<p>Fixes:</p>\n<p>Fixed many boss followers being broken.</p>\n<p>Disabled smoothing or any modification to bot steering when a bot isn\u2019t in combat. Spinny bots should be fixed now. Will return to this in the future, but something is breaking when using the new smoothing solution.</p>\n<p>Fixed some bots getting stuck in a vanilla layer, making them unable to move or fight enemies (fairly sure I fixed this, its hard to test for, but I couldn\u2019t find any bots doing it after)</p>\n<p>Project Fika - Fixed error spam and broken bots when 1 player extracts, but the rest stay in raid.</p>\n<p>Project Fika - Fixed footstep sound from player being triggered when they weren\u2019t moving. (Oops)</p>\n",
      "spt_constraint": "~3.11.0",
      "fika": "unknown",
-     "downloads": 68069,
+     "downloads": 68160,
      "size": null,
      "link": "https://sp-mod.com/mod/download/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement/4.1.3",
      "published_at": "2025-08-02T03:59:00.000000Z",
@@ -16755,7 +16782,7 @@
      "description": "<p>for SPT 3.11.x</p>\n<p>Reworked Bot turning and smoothing calculations.</p>\n<p>Added new ballistics prediction for Bot Aim. They should account for distance and leading targets fairly accurately.</p>\n<p>Thank you Janky for the help in the math of all this.</p>\n<p>Improved performance, especially for large amounts of bots fighting across the map.</p>\n<p>Reworked Bot Cover Finder.</p>\n<p>Reworked Bot Suppression. A bot\u2019s personality now tells a bot how it should suppress enemies, some bots will be jumpy, some wont suppress at all.</p>\n<p>Improved Bot pathfinding and sprinting.</p>\n<p>Reduced how often bots will lean, and made their leans more accurate to how a person would lean into corners as they seek a target.</p>\n<p>Reworked how bots decide to seek and hold cover, or search for enemies.</p>\n<p>Improved bot group search behavior.</p>\n<p>Different Personality Types will search for enemies at different \u201cpaces\u201d, some will carefully peek corners, others will aggressively swing angles.</p>\n<p>Improved simulated arm injuries on bots.</p>\n<p>Improved bot simulated recoil.</p>\n<p>Reworked how bots select different enemies.</p>\n<p>Reduced the amount of situations where a bot could be stuck in a loop of searching, then going back to cover, then searching again without ever making progress.</p>\n<p>Known issues:</p>\n<p>Doors are 45% cursed.</p>\n<p>Infinite mag bug. It\u2019s a bug in the EFT build that SPT 3.11 is running on, it\u2019s already been fixed by BSG.</p>\n<p>Bot busy hands.</p>\n<p>Tagilla is bored of using his hammer for a little while.</p>\n<p>Bots are still not the most intelligent about ammo conservation in all situations.</p>\n<p>All presets are out of date, many old settings were setup incorrectly due to de-obfuscated eft code being difficult to understand, check tool tips!</p>\n",
      "spt_constraint": "~3.11.0",
      "fika": "unknown",
-     "downloads": 3129,
+     "downloads": 3139,
      "size": null,
      "link": "https://sp-mod.com/mod/download/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement/4.1.0",
      "published_at": "2025-07-28T04:26:06.000000Z",
@@ -16767,7 +16794,7 @@
      "description": "<p>SPT 3.11.x</p>\n<p>Fixed error spam when out of raid.<br />\nBots now use the same movement smoothing and inertia as players.<br />\nAdded more control over turn smoothing and corrected a few issues with it (can be edited from globalsettings .json file of your preset)<br />\nIncreased smoothing for better visual results, but it now changes depending on if a bot is aiming, at peace, sprinting, ect.<br />\nDecoupled bot character steering from movement direction, bot animations now look like players do.</p>\n",
      "spt_constraint": "~3.11.0",
      "fika": "unknown",
-     "downloads": 3861,
+     "downloads": 3875,
      "size": null,
      "link": "https://sp-mod.com/mod/download/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement/4.0.1",
      "published_at": "2025-07-08T03:47:56.000000Z",
@@ -16779,7 +16806,7 @@
      "description": "<p>SPT 3.11.3 Only.<br />\nNew:<br />\nSilky Smooth bot turning.</p>\n<p>Added smoothing to bot movement, leaning, speed changes, and posed changes.</p>\n<p>Added new path visibility system that is multi-threaded. Bots should no longer stare into walls if their enemy is on the other side of it, but rather will look to the place that enemy would appear. (still needs some work, but is mostly functional)</p>\n<p>Improved bot reactions to grenades, including their own grenades (not perfect but the entire system should be redone)</p>\n<p>Rewrote how audible distance of footstep sounds is calculated, should be more closely aligned with how it sounds to players.</p>\n<p>Fixed flashlight detection not working.</p>\n<p>Moved all bots in combat to use sain\u2019s pathfinder for walking instead of just sprinting.</p>\n<p>Greatly increased the amount of suppressing fire from bots. (Not configurable yet)</p>\n<p>Added \u201cStrafe Speed\u201d Config option for bot settings. Depending on bot type and difficulty bots will strafe faster or slower.</p>\n<p>Rewrote how bots are ticked and initialized.</p>\n<p>Fixed a vanilla behavior not being removed from scavs and overwriting sain behavior.</p>\n<p>Added new multithreaded functions.<br />\n- Enemy Place Job (for checking distance and visibility of last known positions)<br />\n- Path Visibility Job (Finds the place a bot should look at, based on where their enemies last know position)</p>\n<p>Optimized everything based on Unity Profiling data.</p>\n<p>Added new Hearing sensor that should both run better and expand functionality.</p>\n<p>Added Bot deafening system from gunfire. If a shot goes off close to a bot, they will be partially deaf to quieter sounds such as footsteps.</p>\n<p>Added audio masking system where bots will be unable to hear a sound if they heard something louder than that sound very recently.</p>\n<p>The intent is to allow players to use voice-lines to cover up the sounds of them healing.</p>\n<p>Added new system for bullet fly-by detection on bots that tracks each bullet\u2019s real position to see if it comes close to them.<br />\nMany small tweaks to bot decision making to resolve issues and improve behavior.</p>\n<p>Fixed:</p>\n<p>Everything.</p>\n<p>Multiple patches were targeting the wrong methods, and a few were entirely outdated.</p>\n<p>Fixed bots teleporting.</p>\n<p>Fixed integrated suppressors not counting as being suppressed for bot hearing.</p>\n<p>Simplified a bunch of systems that were not working correctly.</p>\n<p>And a lot more.</p>\n",
      "spt_constraint": "3.11.3",
      "fika": "unknown",
-     "downloads": 3214,
+     "downloads": 3216,
      "size": null,
      "link": "https://sp-mod.com/mod/download/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement/4.0.0",
      "published_at": "2025-07-07T07:00:51.000000Z",
@@ -16803,7 +16830,7 @@
      "description": "<p><strong>SPT 3.10.X ONLY</strong></p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://www.virustotal.com/gui/file-analysis/MGNlMmUxMDk4NTQ1ZmE2ZTY4NzViNTM2Mjk2ZmM4Zjg6MTczNDM5ODM2MA==\" rel=\"noreferrer noopener\">VirusTotal Results</a></p>\n<p>There is still 1 false positive and \u201cAntiy-AVL\u201d thinks SAIN is \u201cpornware\u201d.</p>\n<p><em><strong>Changes:</strong></em></p>\n<p><strong>Reworked Bot Suppression</strong>.</p>\n<ol>\n<li>Added New Tier System for how much bots are suppressed. Old: Suppressed / Heavy Suppressed. New: Light, Medium, Heavy, Extreme</li>\n<li>Bots get Light Suppression from almost any bullet flying by them.</li>\n<li>Increased the effect that suppression has on bot stats.</li>\n<li>Add Suppression Amp to boost suppression received when bullets are very close to a bot\u2019s head.</li>\n<li>Suppression now depends on the caliber of bullet being fired at the bot. Big Boolet = much more scary.</li>\n<li>Added extensive config options for suppression (Global Settings =&gt; Mind) Most are marked as Advanced Settings. All new settings have full tooltips to explain the system.</li>\n<li>Added Suppression Resistance for Personality and BotType configs. It is not yet pre-configured, so no bots will have resistance by default.</li>\n<li>Configuring each tier of suppression is possible by editing the GlobalSettings.json in a custom preset. No GUI for it yet.</li>\n<li>Added Hearing Distance Multiplier to Suppression Effects</li>\n</ol>\n<p><strong>Added Extensive New Config Options</strong></p>\n<ol>\n<li>Everything is configurable for bot hearing.</li>\n<li>Added Toggle in GlobalSettings =&gt; Shoot to force bots to only use semi auto if desired. (Defaults to off)</li>\n<li>Added toggles for each bot type and global toggles for different movement options for bots. So you can disable lean, vault, jump, pose adjustment, and prone globally or for specific bot types.</li>\n<li>Added Power Level Options to Global Settings, these control how different things about a bot affect their power level score, and in return what personality they are allowed to use.</li>\n<li>Added Time and Weather config options for vision and hearing.</li>\n<li>Added several new advanced config options for bot steering.</li>\n<li>Added config option to change what personality bosses are assigned. (Found in GlobalSettings.json in a custom preset, no GUI yet)</li>\n</ol>\n<p><strong>GUI Reworks</strong></p>\n<ol>\n<li>Settings menu is now more condensed to allow more options.</li>\n<li>Slight adjustments to the dimensions of everything to improve readability and consistency.</li>\n<li>Added Toggle on the top bar to enable/disable advanced settings.</li>\n<li>Added a ton of new descriptions and proper names for config values. Almost all global settings have explanations now.</li>\n</ol>\n<p><strong>General Improvements</strong></p>\n<ol>\n<li>Added .json file to match nicknames with specific personalities. (Generated on game launch when sain is installed)</li>\n<li>Enable Extract Global now swaps between SAIN extract and Vanilla extract systems. Defaults to Vanilla.</li>\n<li>Bots now have more difficulty hearing suppressed gunfire.</li>\n<li>Bots now sprint when possible when under fire by someone shooting from long range. (Can be toggled in Global Settings =&gt; Mind.</li>\n</ol>\n<p><strong>Fixes</strong></p>\n<ol>\n<li>Fixed some vanilla combat layers still being active for PMC AI.</li>\n<li>Fixed guns not firing if returning from a raid and entering the shooting range.</li>\n<li>Fixed Bot hearing not being affected by stun/flash grenades.</li>\n<li>Disabled several loggers from activating unless SAIN Debug Mode is enabled.</li>\n<li>Fixed SAIN Server mod showing incorrect version.</li>\n</ol>\n",
      "spt_constraint": "~3.10.0",
      "fika": "unknown",
-     "downloads": 119386,
+     "downloads": 119398,
      "size": null,
      "link": "https://sp-mod.com/mod/download/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement/3.2.1",
      "published_at": "2024-12-17T01:25:16.000000Z",
@@ -16815,7 +16842,7 @@
      "description": "<p><strong>SPT 3.10+ ONLY</strong></p>\n<p><strong>Full credit to <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Lacyway\" rel=\"noreferrer noopener\">@Lacyway</a> for getting SAIN working with SPT 310!<br />\nNote: Apparently Virus total thinks SAIN is \u201cPornware\u201d. So consider this the official porn update!<br />\n<a target=\"_blank\" class=\"external-link\" href=\"https://www.virustotal.com/gui/file/a3a9c563d2e1ea1dd204d7ae5b3c820c79476c7fb33fd031c2ccd4000ecbac59/detection\" rel=\"noreferrer noopener\">https://www.virustotal.com/gui/file/a3a9c563d2e1ea1dd204d7ae5b3c820c79476c7fb33fd031c2ccd4000ecbac59/detection</a><br />\nChangelog:</strong></p>\n<p><strong>Solarint:</strong></p>\n<ul>\n<li>Added new config options for customizing bot sound position estimation, or how accurate they are at locating the source of heard sounds. Found in Global Settings =&gt; Hearing</li>\n<li>Added new styling and design for some GUI visuals.</li>\n<li>Added categories to settings folders to improve organization (wip)</li>\n<li>Added toggle at the top of the SAIN GUI to enable/disable advanced settings.</li>\n</ul>\n<p><strong>Lacyway:</strong></p>\n<ul>\n<li>Updated for SPT 310.</li>\n<li>Zombies are now ignored by SAIN, and should be working properly.</li>\n<li>SAIN hit reactions are now off by default until Solar / new developer can take a look at them (they are known to cause issues)</li>\n<li>Fixes to improve Fika/SAIN compatibility.</li>\n<li>Add sandbox_high to locations (Fixes: <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Solarint/SAIN/issues/9\" rel=\"noreferrer noopener\">#9</a>) by <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/ArchangelWTF\" rel=\"noreferrer noopener\">@ArchangelWTF</a> in <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Solarint/SAIN/issues/10\" rel=\"noreferrer noopener\">#10</a></li>\n<li>Added new ammo calibers</li>\n<li>Added new missing guards for Kaban</li>\n<li>Added Partisan to bot types</li>\n<li>Merged PR from DanW fixing nullref (other one was skipped as it was causing side effects</li>\n</ul>\n<p><strong>Known Issues:</strong></p>\n<ul>\n<li>In some openable menus in the GUI, you cannot directly type a number into the box, and you have to use the slider.</li>\n</ul>\n",
      "spt_constraint": "~3.10.0",
      "fika": "unknown",
-     "downloads": 20863,
+     "downloads": 20866,
      "size": null,
      "link": "https://sp-mod.com/mod/download/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement/3.2.0",
      "published_at": "2024-12-06T02:30:13.000000Z",
@@ -16827,7 +16854,7 @@
      "description": "<p><strong>SPT 3.9 ONLY</strong></p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://docs.google.com/document/d/1-VTFkZ0qUKKzYWnEXY0LI1iS006dX2eVKBEQhI2Gt8s/edit\" rel=\"noreferrer noopener\">Changelog</a></p>\n",
      "spt_constraint": "~3.9.0",
      "fika": "unknown",
-     "downloads": 133092,
+     "downloads": 133111,
      "size": null,
      "link": "https://sp-mod.com/mod/download/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement/3.1.0",
      "published_at": "2024-08-04T19:02:11.000000Z",
@@ -16851,7 +16878,7 @@
      "description": "<p><strong>SPT 3.9.0-3.9.2 ONLY</strong></p>\n<p>Changelog: <a target=\"_blank\" class=\"external-link\" href=\"https://docs.google.com/document/d/1zkRKmSuWWRT99j_093FR6UfTLwYCerg-Ppojql8iENM/edit\" rel=\"noreferrer noopener\">https://docs.google.com/document/d/1zkRKmSuWWRT99j_093FR6UfTLwYCerg-Ppojql8iENM/edit</a></p>\n<p>Just a few bugfixes and difficulty preset changes mostly.</p>\n",
      "spt_constraint": "3.9.2",
      "fika": "unknown",
-     "downloads": 14455,
+     "downloads": 14456,
      "size": null,
      "link": "https://sp-mod.com/mod/download/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement/3.0.5",
      "published_at": "2024-07-14T22:49:39.000000Z",
@@ -16875,7 +16902,7 @@
      "description": "<p>Changelog: <a target=\"_blank\" class=\"external-link\" href=\"https://docs.google.com/document/d/1mdyDZD-1bid55qmYFA-1F0qQWJOGu7otE2VV0FJcbc4/edit\" rel=\"noreferrer noopener\">https://docs.google.com/document/d/1mdyDZD-1bid55qmYFA-1F0qQWJOGu7otE2VV0FJcbc4/edit</a></p>\n<p>SPT 3.8.3 build <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Solarint/SAIN/releases/download/v3.0.3-release/SAIN.3.0.3.for.SPT.3.8.3-Release.7z\" rel=\"noreferrer noopener\">HERE</a><br />\nThis will ACTUALLY be the last spt 3.8.3 release.<br />\nspt 3.8.3 build only includes bot fixes.</p>\n<p>Edit:<br />\nFixed version being linked here going to the spt 3.8.3 version.</p>\n",
      "spt_constraint": "3.8.3",
      "fika": "unknown",
-     "downloads": 6484,
+     "downloads": 6489,
      "size": null,
      "link": "https://sp-mod.com/mod/download/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement/3.0.3",
      "published_at": "2024-07-13T07:57:16.000000Z",
@@ -16887,7 +16914,7 @@
      "description": "<p>Changelog here:<br />\n<a target=\"_blank\" class=\"external-link\" href=\"https://docs.google.com/document/d/1y5-13J4iQ9Qo1nZuaIYLaLbduIRu6OkpUrxIb83k86w/edit\" rel=\"noreferrer noopener\">https://docs.google.com/document/d/1y5-13J4iQ9Qo1nZuaIYLaLbduIRu6OkpUrxIb83k86w/edit</a><br />\nZip includes a SPT 3.8.3 version and a 3.9.0 version.</p>\n<p>Install the correct one, please.<br />\nUnless there is something major I need to fix, this will be the last SPT 3.8.3 release for sain, porting stuff back and forth is incredibly tedious.<br />\nVirustotal results:<br />\n3.9.0 dll: <a target=\"_blank\" class=\"external-link\" href=\"https://www.virustotal.com/gui/file/02e9c7a4653a78f452268a4c6146b1742af909423b800e961d04c8a681427162?nocache=1\" rel=\"noreferrer noopener\">https://www.virustotal.com/gui/file/02e9c7a4653a78f452268a4c6146b1742af909423b800e961d04c8a681427162?nocache=1</a></p>\n<p>3.8.3 dll: <a target=\"_blank\" class=\"external-link\" href=\"https://www.virustotal.com/gui/file/083be674cb7c8d25df8108d2b43645c460b47b13e7b879f51082131c3a82eb64?nocache=1\" rel=\"noreferrer noopener\">https://www.virustotal.com/gui/file/083be674cb7c8d25df8108d2b43645c460b47b13e7b879f51082131c3a82eb64?nocache=1</a></p>\n",
      "spt_constraint": "3.9.0",
      "fika": "unknown",
-     "downloads": 9668,
+     "downloads": 9670,
      "size": null,
      "link": "https://sp-mod.com/mod/download/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement/3.0.1",
      "published_at": "2024-07-10T07:02:30.000000Z",
@@ -16899,7 +16926,7 @@
      "description": "<p>Only works on 3.9.0<br />\n<strong>OLD PRESETS ARE NOT COMPATIBLE.</strong></p>\n<p>Updated for SPT 3.9.0. Requires the latest BigBrain and Waypoints version!</p>\n<p>Updated download link to a version without extra files in the User Mod that can affect Linux users. Sorry!</p>\n<p>Note: I accidentally left some loose files in a folder called \u201c3.8.0\u201d in the rush to fix the above issue before anyone noticed, you can just ignore it, its just some zips of releases.</p>\n<p>special thanks to <a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/user/58175-phiveaces/\" rel=\"noreferrer noopener\">Phiveaces</a> for their help getting a few references updated to new EFT code!</p>\n<p>Change log here: <a target=\"_blank\" class=\"external-link\" href=\"https://docs.google.com/document/d/18aJ2QQQlhT_3OfoBT0EDxYu0AvHJ-9_CjrsIY0f5cz8/edit\" rel=\"noreferrer noopener\">3.0.0 Changelog  </a></p>\n",
      "spt_constraint": "3.9.0",
      "fika": "unknown",
-     "downloads": 9967,
+     "downloads": 9968,
      "size": null,
      "link": "https://sp-mod.com/mod/download/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement/3.0.0+390",
      "published_at": "2024-07-07T13:38:42.000000Z",
@@ -16947,7 +16974,7 @@
      "description": "<h3>This version will only work with SPT 3.8.0</h3>\n<p>Update for SPT 3.8.0</p>\n<ul>\n<li>Updates necessary to work with SPT 3.8.0</li>\n<li>Improved fallback behavior for bots</li>\n</ul>\n",
      "spt_constraint": "3.8.0",
      "fika": "unknown",
-     "downloads": 3828,
+     "downloads": 3829,
      "size": null,
      "link": "https://sp-mod.com/mod/download/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement/2.1.10",
      "published_at": "2024-04-01T21:24:52.000000Z",
@@ -16959,7 +16986,7 @@
      "description": "<h3>This version will only work with <strong>SPT 3.7.4 - 3.7.6</strong></h3>\n<p>REQUIRES Latest <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/902/bigbrain#versions\" rel=\"noreferrer noopener\">Big Brain</a> and <a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/1119-waypoints-expanded-bot-patrols-and-navmesh/\" rel=\"noreferrer noopener\">WayPoints</a> updates for 3.7.4 - 3.7.6 as well<br />\nThis mod REQUIRES 7-zip to extract: <a target=\"_blank\" class=\"external-link\" href=\"https://www.7-zip.org/\" rel=\"noreferrer noopener\">7-zip.org</a></p>\n<ul>\n<li>Allow disabling bot extracting globally</li>\n<li>Further improvements to bot extracting</li>\n</ul>\n<h3><strong>If updating from 2.1.6 or earlier you must delete SAIN-3.7.1.dll from BepInEx/Plugins/</strong></h3>\n",
      "spt_constraint": "3.7.6",
      "fika": "unknown",
-     "downloads": 18904,
+     "downloads": 18906,
      "size": null,
      "link": "https://sp-mod.com/mod/download/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement/2.1.9",
      "published_at": "2024-03-02T20:00:30.000000Z",
@@ -16995,7 +17022,7 @@
      "description": "<h3>This version will only work with SPT 3.7.3-3.7.4</h3>\n<p>REQUIRES Latest <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/902/bigbrain#versions\" rel=\"noreferrer noopener\">Big Brain</a> and <a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/1119-waypoints-expanded-bot-patrols-and-navmesh/\" rel=\"noreferrer noopener\">WayPoints</a> updates for 3.7.3-3.7.4 as well</p>\n<ul>\n<li>Fix squads not being created properly</li>\n<li>Tweak to Searching to help with the run/skid/run/skid behaviour (Thanks <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/y-saber\" rel=\"noreferrer noopener\">Saber</a>!)</li>\n<li>Resolve an issue that stopped SAIN from working when SPT was in debug mode</li>\n<li>Switch to 7-zip archives for releases</li>\n</ul>\n",
      "spt_constraint": "3.7.4",
      "fika": "unknown",
-     "downloads": 13367,
+     "downloads": 13368,
      "size": null,
      "link": "https://sp-mod.com/mod/download/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement/2.1.6",
      "published_at": "2023-11-27T06:37:21.000000Z",
@@ -17007,14 +17034,14 @@
      "description": "<h3>This version will only work with SPT 3.7.1, 3.7.2, 3.7.3 REQUIRES Latest <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/902/bigbrain#versions\" rel=\"noreferrer noopener\">Big Brain</a> and <a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/1119-waypoints-expanded-bot-patrols-and-navmesh/\" rel=\"noreferrer noopener\">WayPoints</a> updates for 3.7.1/3.7.2/3.7.3 as well</h3>\n<p>Updated for 3.7.1</p>\n<p>Also supports 3.7.2, 3.7.3</p>\n",
      "spt_constraint": "3.7.3",
      "fika": "unknown",
-     "downloads": 34719,
+     "downloads": 34722,
      "size": null,
      "link": "https://sp-mod.com/mod/download/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement/2.1.5",
      "published_at": "2023-10-23T02:03:15.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "4.5.0",
+   "latest_version": "4.5.1",
    "spt_constraint": "~4.1.3",
    "all_spt_constraints": [
     "3.11.3",
@@ -17066,7 +17093,7 @@
     }
    ],
    "published_at": "2023-03-09T02:46:00.000000Z",
-   "updated_at": "2026-08-20T17:36:45.000000Z",
+   "updated_at": "2026-09-04T18:41:43.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -31946,8 +31973,8 @@
    "description_html": "<h4>[Description]</h4>\n<p><strong>Tired of being shot but can\u2019t figure out where the enemy is?</strong></p>\n<p><strong>Want to know if the target is SCAV, PMC, or BOSS?</strong></p>\n<p><strong>Can\u2019t find the dead body in the bush?</strong></p>\n<p><strong>Don\u2019t want to miss a high-value loot in the marked room?</strong></p>\n<p>This mod provides accurate location indications of enemies and loots on the radar map to enable you to play a more casual gameplay style. Also, it can help you identify the side of enemies, like SCAV, U***, B***, and BOSS. For example, if you only want to see the SCAV, set the alpha of the other sides to zero. If you only want to see the corpse, just enable corpse detection and set the alpha of all the other sides to zero. The loot detection allows you to see high-value loot (value above the loot threshold in the settings) on the radar map and helps you find them easily.</p>\n<p>Use at your wish and enjoy the game! Join the <a target=\"_blank\" class=\"external-link\" href=\"https://discord.gg/K44Zgj5JHB\" rel=\"noreferrer noopener\">discord</a> if you want to help test the new features or give any feedback.</p>\n<h4>[Acknowledgments]</h4>\n<p>This mod is upgraded from Tyrian\u2019s ACCURATE CIRCULAR RADAR STANDALONE. Please give the credit to Tyrian.</p>\n<h4>[Installation]</h4>\n<p>Unzip the file and drag the BepInEx folder into your game folder, and make sure the DLL file is placed at gameFolder/BepInEx/plugins/Tyrian-Radar.dll. For better flea market prices used by the loot detection, please install <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1155/lootvalue\" rel=\"noreferrer noopener\">LootValue</a>.</p>\n<h4>[Features]</h4>\n<ul>\n<li>Show the enemy\u2019s location.</li>\n<li>Show different colors for different types of enemies.\n<ul>\n<li>You can disable the indication for a certain type of enemy by setting the alpha to zero.</li>\n</ul>\n</li>\n<li>Show the corpse\u2019s location.</li>\n<li>Show high-value loot.\n<ul>\n<li>Set the value threshold to filter the loot.</li>\n<li>Per-slot value option.</li>\n<li>Wishlist items regardless of value (only for the Others category).</li>\n</ul>\n</li>\n<li>Adjustable scan interval, you can increase the uncertainty of the enemy.</li>\n<li>Fire mode, where the enemy will show on the radar only after firing.</li>\n<li>Mine zone and claymore detection.</li>\n<li>Compass mode, where the radar panel will be part of the compass screen, and only works when you\u2019re holding a compass.</li>\n</ul>\n<p><strong>Normal Mode</strong></p>\n<p><strong>Compass Mode (Not work due to an issue with the game itself)</strong></p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/1522.png",
    "forge_url": "https://sp-mod.com/mod/1100/accurate-circular-radar",
-   "downloads": 303369,
-   "favourites": 113,
+   "downloads": 305386,
+   "favourites": 132,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -31975,12 +32002,24 @@
    ],
    "versions": [
     {
+     "id": 15193,
+     "version": "1.3.4",
+     "description": "<ul>\n<li>Fix display problem for minefields.</li>\n</ul>\n",
+     "spt_constraint": "4.1.3",
+     "fika": "unknown",
+     "downloads": 55,
+     "size": 191103,
+     "link": "https://sp-mod.com/mod/download/1100/accurate-circular-radar/1.3.4",
+     "published_at": "2026-09-04T19:00:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 15035,
      "version": "1.3.3",
      "description": "<p>Add support for SPT 4.1.3</p>\n",
      "spt_constraint": "4.1.3",
      "fika": "unknown",
-     "downloads": 404,
+     "downloads": 2165,
      "size": 190826,
      "link": "https://sp-mod.com/mod/download/1100/accurate-circular-radar/1.3.3",
      "published_at": "2026-08-28T03:30:00.000000Z",
@@ -31992,7 +32031,7 @@
      "description": "<p>Update for 4.1.0+</p>\n",
      "spt_constraint": "4.1.1",
      "fika": "unknown",
-     "downloads": 6403,
+     "downloads": 6418,
      "size": 190788,
      "link": "https://sp-mod.com/mod/download/1100/accurate-circular-radar/1.3.0",
      "published_at": "2026-08-03T19:32:00.000000Z",
@@ -32004,7 +32043,7 @@
      "description": "<ul>\n<li>Support 4.0.0</li>\n<li>Add wishlist item detection (only for Other category)</li>\n<li>Add config to enable/disable showing corpse type.</li>\n</ul>\n<p>PS: The loot detection price may not be accurate now. Wait for LootValue to be updated for a more accurate flea market price.</p>\n",
      "spt_constraint": "4.0.1",
      "fika": "unknown",
-     "downloads": 45624,
+     "downloads": 45789,
      "size": 183723,
      "link": "https://sp-mod.com/mod/download/1100/accurate-circular-radar/1.2.1",
      "published_at": "2025-10-16T01:43:00.000000Z",
@@ -32016,7 +32055,7 @@
      "description": "<ul>\n<li>Support <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1155/lootvalue\" rel=\"noreferrer noopener\">LootValue</a> for better flea market prices.</li>\n<li>Support mine zone and claymore detection.</li>\n<li>Remake icons for blips.</li>\n</ul>\n",
      "spt_constraint": "~3.11.0",
      "fika": "unknown",
-     "downloads": 7616,
+     "downloads": 7623,
      "size": null,
      "link": "https://sp-mod.com/mod/download/1100/accurate-circular-radar/1.2.0",
      "published_at": "2025-09-13T06:08:53.000000Z",
@@ -32028,7 +32067,7 @@
      "description": "<ul>\n<li>3.11</li>\n<li>Fix the crash caused by the flea price check.</li>\n</ul>\n",
      "spt_constraint": "~3.11.0",
      "fika": "unknown",
-     "downloads": 33615,
+     "downloads": 33617,
      "size": null,
      "link": "https://sp-mod.com/mod/download/1100/accurate-circular-radar/1.1.10",
      "published_at": "2025-03-29T01:20:38.000000Z",
@@ -32052,7 +32091,7 @@
      "description": "<ul>\n<li>Update for 3.11.0</li>\n<li>The native compass is still bugged (spt\u2019s problem, not this mod) so the compass mode won\u2019t work.</li>\n</ul>\n",
      "spt_constraint": "3.11.0",
      "fika": "unknown",
-     "downloads": 1137,
+     "downloads": 1142,
      "size": null,
      "link": "https://sp-mod.com/mod/download/1100/accurate-circular-radar/1.1.9",
      "published_at": "2025-03-16T01:31:06.000000Z",
@@ -32064,7 +32103,7 @@
      "description": "<ul>\n<li>Support 3.10.0</li>\n<li>Add a custom item list.\n<ul>\n<li>Add item id to the radar-list.json file which is next to the DLL file. The item id can be found at <a target=\"_blank\" class=\"external-link\" href=\"https://db.sp-tarkov.com/search\" rel=\"noreferrer noopener\">Item Finder</a>. For example, by default, the list contains Salty Dog beef sausage and Surv12 field surgical kit.</li>\n</ul>\n</li>\n</ul>\n",
      "spt_constraint": "3.10.0",
      "fika": "unknown",
-     "downloads": 5593,
+     "downloads": 5597,
      "size": null,
      "link": "https://sp-mod.com/mod/download/1100/accurate-circular-radar/1.1.7",
      "published_at": "2024-11-29T01:06:18.000000Z",
@@ -32076,7 +32115,7 @@
      "description": "<ul>\n<li>Update for 3.9.0</li>\n<li>Add Korean language support.</li>\n</ul>\n",
      "spt_constraint": "3.9.0",
      "fika": "unknown",
-     "downloads": 44720,
+     "downloads": 44721,
      "size": null,
      "link": "https://sp-mod.com/mod/download/1100/accurate-circular-radar/1.1.6",
      "published_at": "2024-07-08T03:43:20.000000Z",
@@ -32131,7 +32170,7 @@
      "dependencies": []
     }
    ],
-   "latest_version": "1.3.3",
+   "latest_version": "1.3.4",
    "spt_constraint": "4.1.3",
    "all_spt_constraints": [
     "3.10.0",
@@ -32148,7 +32187,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2023-10-12T17:24:00.000000Z",
-   "updated_at": "2026-08-28T03:31:05.000000Z",
+   "updated_at": "2026-09-04T19:03:04.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -97962,8 +98001,8 @@
    "description_html": "<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/harmonyzt/twitchplayers.github.io/e35307acc0fbe5d94bb2c4620db3ee9ad85707dd/media/twitchPlayers.gif\" alt=\"gif\" /></p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Introduction</div>\n<div class=\"tab-content\"><h3><em>You WILL die.</em></h3>\n<p>Does exactly what you\u2019re thinking. Adds PMCs and PSCAVs with the names of Twitch streamers into your raids with significantly harder AI overall.</p>\n<h3>Main differences between Death Wish Preset</h3>\n<ul>\n<li>SCAVs are as close as possible to live behavior, they no longer kill PMCs at the start of the raid, leaving your raid empty.</li>\n<li>Generally much harder PMCs, including Bosses and Rogues/Raiders.</li>\n<li>No constant head-eyes for both side of Project Fika and SPT players. AI always (mostly, but still <strong>will</strong> hit your head) aims center mass, and if you have no issues, you can turn off \u201cAlways Aim Center Mass\u201d inside Global Settings - all head aim chances are pre-configured for this scenario.</li>\n<li>Custom Per-Map configurations for Labs/Factory/Lighthouse due sizes of the map</li>\n<li>Personality-Focused Progression - early wipe you won\u2019t be able to meet hard PMCs or tell much difference, the game will be going just fine like with any other preset. Preset reaches full potential at PMC Level 30-40 due Personalities being locked behind much higher level requirement for AI.</li>\n<li>Twitch Players - AI PMCs with TTV/TV/YT or any other streaming platform inside their name will cause real trouble for you. They use reserved SAIN Personality made specifically for them to be able to act <strong>way</strong> faster. Their reaction time (based from tests) can range from ~100 to ~200ms (<em>slightly</em> less than average human being). Goons, and some bosses like Killa also inherit that personality by default.</li>\n</ul>\n<p>Enjoy.</p>\n<blockquote>\n<p>Disclaimer: Some of the settings won\u2019t correspond to what you\u2019re actually seeing in the game if you use Fika Project/Headless. Some might experience instant head-eyes, some won\u2019t. I have no fix for this. This Preset is heavily FPS dependent. The worse performance you get (looking at you, Headless Client hosters), the worse is your experience. This Mod&amp;Preset is not made for everyone. You perfectly know what you\u2019re subscribing for by installing this mod. Or about to.. Find out.</p>\n</blockquote></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Bots are too hard?</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://media1.tenor.com/m/QyJuBax5RG4AAAAC/suntzu-osu.gif\" alt=\"suntzu-osu.gif\" /></p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Showcase</div>\n<div class=\"tab-content\"><div class=\"youtube-lite\" data-video-id=\"wAKJav8bqq0\" data-embed-url=\"https://www.youtube-nocookie.com/embed/wAKJav8bqq0?autoplay=1\"><img src=\"https://i.ytimg.com/vi/wAKJav8bqq0/hqdefault.jpg\" alt=\"YouTube video thumbnail\" loading=\"lazy\" decoding=\"async\" /></div>\n<div class=\"youtube-lite\" data-video-id=\"88Cu_DiZ9YY\" data-embed-url=\"https://www.youtube-nocookie.com/embed/88Cu_DiZ9YY?autoplay=1\"><img src=\"https://i.ytimg.com/vi/88Cu_DiZ9YY/hqdefault.jpg\" alt=\"YouTube video thumbnail\" loading=\"lazy\" decoding=\"async\" /></div></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Installation</div>\n<div class=\"tab-content\"><p>Drag and drop 7z contents in your root directory of SPT game.</p></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/SPDckoZ7xbs2PSAd9MoYrfFZfRqveqTer2s1gJtE.png",
    "forge_url": "https://sp-mod.com/mod/1895/sain-twitch-players",
-   "downloads": 31970,
-   "favourites": 27,
+   "downloads": 33006,
+   "favourites": 32,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -97996,12 +98035,39 @@
    ],
    "versions": [
     {
+     "id": 15199,
+     "version": "3.1.0",
+     "description": "<h3>Small re-base towards new SAIN features</h3>\n<ul>\n<li>Updated preset and mod combability with SAIN 4.5.1</li>\n<li>Re-adjusted some per-map configurations due losing the original values on the way</li>\n<li>Enabled aiming for head on some bosses, BEER, and USEX, including SCAVs with a very small chance (1%)</li>\n<li>Small changes across global difficulties, and aiming for body parts</li>\n</ul>\n<p>A well structured feedback is always welcome.</p>\n",
+     "spt_constraint": "~4.1",
+     "fika": "compatible",
+     "downloads": 5,
+     "size": 28971,
+     "link": "https://sp-mod.com/mod/download/1895/sain-twitch-players/3.1.0",
+     "published_at": "2026-09-04T20:38:00.000000Z",
+     "dependencies": [
+      {
+       "id": 791,
+       "name": "SAIN - Solarint's AI Modifications - Full AI Combat System Replacement",
+       "slug": "sain-solarints-ai-modifications-full-ai-combat-system-replacement",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement"
+      },
+      {
+       "id": 1873,
+       "name": "Bot Callsigns - Reloaded",
+       "slug": "bot-callsigns-reloaded",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/1873/bot-callsigns-reloaded"
+      }
+     ]
+    },
+    {
      "id": 14899,
      "version": "3.0.9",
      "description": "<ul>\n<li>Updated to latest <code>SPT 4.1.3</code></li>\n<li>Updated preset and mod combability with SAIN <code>4.0.5</code></li>\n</ul>\n",
      "spt_constraint": "~4.1. > 4.1.1",
      "fika": "compatible",
-     "downloads": 292,
+     "downloads": 1118,
      "size": 28458,
      "link": "https://sp-mod.com/mod/download/1895/sain-twitch-players/3.0.9",
      "published_at": "2026-08-21T21:49:00.000000Z",
@@ -98028,7 +98094,7 @@
      "description": "<h3>Twitch Players - Rebalanced</h3>\n<ul>\n<li>Now uses SAIN server mod config service for its personalities and custom names assignment</li>\n<li>Now properly handles flag from Bot Callsigns and removes it</li>\n</ul>\n<h3>Preset Changes</h3>\n<ul>\n<li>Global difficulty values are now mostly default, now only bot types/personalities will have a major effect on bots</li>\n<li>Disabled all talking, with a small chance they\u2019ll still sneak in a couple of shouts, but not as much as before</li>\n<li>Nerfed SCAVs by a lot</li>\n<li>Disabled aiming for head for impossible bot types (scavs on impossible will always aim center mass)</li>\n<li>Disabled global center mass aiming</li>\n<li>Disabled grenades in AIvsAI scenarios to eliminate chances of them killing themselves with the grenades somewhere on the map in a forgotten place</li>\n<li>Enabled aim center mass aiming with height value changed - for those who have no issues with bots aimbotting your head, feel free to disable it back</li>\n<li>Increased convergence boost</li>\n<li>Enabled aiming for head for all bot types back so you don\u2019t have to manually edit all bot types and now just use global center mass aiming option</li>\n<li>Disabled random sway for bots</li>\n<li>Slightly tuned down smoothing for bots when in combat/aiming</li>\n<li>Disabled rushing for some personalities</li>\n<li>Gigachads and chads now jump shot you</li>\n</ul>\n",
      "spt_constraint": "4.0.11",
      "fika": "compatible",
-     "downloads": 7123,
+     "downloads": 7267,
      "size": 102027,
      "link": "https://sp-mod.com/mod/download/1895/sain-twitch-players/3.0.8",
      "published_at": "2026-01-28T13:38:00.000000Z",
@@ -98055,7 +98121,7 @@
      "description": "<h3>Back, now even more deadly.</h3>\n<ul>\n<li>Black Division is now the deadliest faction out of all</li>\n<li>Global precision values has been increased</li>\n<li>Minimized min aiming times and increased CQB reaction distances</li>\n<li>Updated TTV names to match with the latest Bot Callsigns version</li>\n</ul>\n",
      "spt_constraint": "~4.0 <4.1.0",
      "fika": "compatible",
-     "downloads": 1704,
+     "downloads": 1750,
      "size": 102107,
      "link": "https://sp-mod.com/mod/download/1895/sain-twitch-players/3.0.7",
      "published_at": "2026-01-09T01:15:00.000000Z",
@@ -98163,7 +98229,7 @@
      "description": "<h3>Latest SAIN Compatibility Update</h3>\n<ul>\n<li>Updated SAIN Preset structure to match the latest version.</li>\n<li>Reduced chance of responses for non-friendly bots.</li>\n<li>Increased Accuracy and Precision global values.</li>\n<li>Updated Boss personalities to only have Chad/Gigachad/Wreckless/SnappingTurtle assigned.</li>\n<li>Updated BaseSAINDifficulty inside preset to match the \u201cdeathwish\u201d SAIN difficulty.</li>\n</ul>\n",
      "spt_constraint": "~4.0 <4.1.0",
      "fika": "compatible",
-     "downloads": 2077,
+     "downloads": 2078,
      "size": 92740,
      "link": "https://sp-mod.com/mod/download/1895/sain-twitch-players/3.0.3",
      "published_at": "2025-11-22T14:24:00.000000Z",
@@ -98230,7 +98296,7 @@
      "description": "<h2>They\u2019re back.</h2>\n<ul>\n<li>Initial update to SPT 4.0</li>\n<li>Uses Bot Callsigns 2.0.1</li>\n<li>Preset update to SAIN 4.2.0</li>\n<li>Most of the functionality except base nickname personalities update was removed. I\u2019m learning I swear x)</li>\n</ul>\n<p>Have fun.</p>\n",
      "spt_constraint": "~4.0 <4.1.0",
      "fika": "unknown",
-     "downloads": 426,
+     "downloads": 428,
      "size": 23313,
      "link": "https://sp-mod.com/mod/download/1895/sain-twitch-players/3.0.0",
      "published_at": "2025-10-23T15:44:00.000000Z",
@@ -98250,7 +98316,7 @@
      "description": "<p>- Nerfed general accuracy speed and aggression.</p>\n<p>- Debuffed Normal, Rat, Coward personalities in terms of hearing, accuracy speed and aggression due to overwhelmingly high skill ceiling.</p>\n<p>- Now USEC/BEAR react as fast as they can be in CQB.</p>\n<p>- Scavs no longer can aim for head except Impossible difficulties.</p>\n",
      "spt_constraint": "~3.11.0",
      "fika": "unknown",
-     "downloads": 1320,
+     "downloads": 1321,
      "size": null,
      "link": "https://sp-mod.com/mod/download/1895/sain-twitch-players/2.0.5",
      "published_at": "2025-09-09T08:39:03.000000Z",
@@ -98413,12 +98479,13 @@
      "dependencies": []
     }
    ],
-   "latest_version": "3.0.9",
-   "spt_constraint": "~4.1. > 4.1.1",
+   "latest_version": "3.1.0",
+   "spt_constraint": "~4.1",
    "all_spt_constraints": [
     "4.0.11",
     "~3.11.0",
     "~4.0 <4.1.0",
+    "~4.1",
     "~4.1. > 4.1.1"
    ],
    "dependencies": [
@@ -98454,7 +98521,7 @@
     }
    ],
    "published_at": "2026-01-09T01:09:00.000000Z",
-   "updated_at": "2026-08-22T16:26:00.000000Z",
+   "updated_at": "2026-09-04T20:39:05.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -152534,7 +152601,7 @@
    "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Introduction</div>\n<div class=\"tab-content\"><p>This mod aims to bring a few features with a bit of sprinkles on top EFT has lost over time, including:</p>\n<ul>\n<li>Death from headshot sound effect</li>\n<li>Death sound effect when screen goes black with a bit of Live EFT simulation - yes, that iconic fading heartbeat sound once you die!</li>\n<li>Concussion and tinnitus effect upon getting head damage if the damage was blocked</li>\n<li>Grenades can blind you for a small duration of time (must have concussion enabled for grenades!), simulating a loss of consciousness due the fracture</li>\n<li>Headshots can blind you for a small duration of time, also simulating a loss of consciousness due the fracture</li>\n<li>Option to make grenades always concuss you when they hit you. Current B**\u2018s implementation concusses you only when you\u2019re too close to the explosion</li>\n</ul>\n<blockquote>\n<p>Everything is optional and can be configured in F12 BepInEx menu!</p>\n</blockquote>\n<h3>Q: The game.. Already has all of this?</h3>\n<p>A: Technically, it does. In terms of execution - it does not. Not only it no longer plays the Death UI sound, it also no longer triggers concussion upon receiving headshot (under some, or less conditions). This mod fixes BSGs original implementations and adds a few new niche along misc features. I suggest reading the above!</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Recommended mods</div>\n<div class=\"tab-content\"><p>Here are mods that would fit just <em>right</em> with this mod:</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1582/headshot-darkness\" rel=\"noreferrer noopener\">Headshot Darkness</a> - Makes your screen instantly black if you die from a headshot<br />\n<a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2489/headshot-damage-redirection\" rel=\"noreferrer noopener\">Headshot Damage Redirection</a> - Just so you can tank a couple more of these sweet sweet helmet hits :kek:</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Previews!</div>\n<div class=\"tab-content\"><p><strong>General Overview</strong></p>\n<div class=\"youtube-lite\" data-video-id=\"mzHZLB7QJxE\" data-embed-url=\"https://www.youtube-nocookie.com/embed/mzHZLB7QJxE?autoplay=1\"><img src=\"https://i.ytimg.com/vi/mzHZLB7QJxE/hqdefault.jpg\" alt=\"YouTube video thumbnail\" loading=\"lazy\" decoding=\"async\" /></div>\n<p><strong>Grenade blindness</strong></p>\n<div class=\"youtube-lite\" data-video-id=\"UnDFBs8KD_s\" data-embed-url=\"https://www.youtube-nocookie.com/embed/UnDFBs8KD_s?autoplay=1\"><img src=\"https://i.ytimg.com/vi/UnDFBs8KD_s/hqdefault.jpg\" alt=\"YouTube video thumbnail\" loading=\"lazy\" decoding=\"async\" /></div>\n<p><strong>Blindness from headshot</strong></p>\n<div class=\"youtube-lite\" data-video-id=\"Q9j5zl2wxjE\" data-embed-url=\"https://www.youtube-nocookie.com/embed/Q9j5zl2wxjE?autoplay=1\"><img src=\"https://i.ytimg.com/vi/Q9j5zl2wxjE/hqdefault.jpg\" alt=\"YouTube video thumbnail\" loading=\"lazy\" decoding=\"async\" /></div></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Installation</div>\n<div class=\"tab-content\"><p>Drag and drop 7z contents in your root directory of SPT game.</p></div></div></div>\n<p>Note: Some of the code was inherited from previous mod known as Get Concussed for SPT 3.10.5 by no longer active penguingreentea</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/sFGMEeN9ASdoQ3nrcWjp0apSZPeNndO4vnJma3hP.png",
    "forge_url": "https://sp-mod.com/mod/2550/bring-back-concussion",
-   "downloads": 8152,
+   "downloads": 8230,
    "favourites": 44,
    "featured": false,
    "fika": true,
@@ -152563,12 +152630,24 @@
    ],
    "versions": [
     {
+     "id": 15198,
+     "version": "1.1.0",
+     "description": "<ul>\n<li>Added little Panic mechanic into concussion logic. It\u2019ll roll for a chance based off your Stress Resistance level to set you in panic once you get hit in the head/get explosion damage, causing you to fumble and misfire.</li>\n</ul>\n",
+     "spt_constraint": "~4.1",
+     "fika": "compatible",
+     "downloads": 11,
+     "size": 7461,
+     "link": "https://sp-mod.com/mod/download/2550/bring-back-concussion/1.1.0",
+     "published_at": "2026-09-04T20:21:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 15000,
      "version": "1.0.5",
      "description": "<ul>\n<li>Fix for a new function added in 1.0.4 allowing original tinnitus method to fire</li>\n</ul>\n",
      "spt_constraint": "~4.1",
      "fika": "compatible",
-     "downloads": 408,
+     "downloads": 458,
      "size": 6893,
      "link": "https://sp-mod.com/mod/download/2550/bring-back-concussion/1.0.5",
      "published_at": "2026-08-26T20:11:00.000000Z",
@@ -152592,7 +152671,7 @@
      "description": "<ul>\n<li>Fixed an edge case where tinnitus effect is enabled along blindness effects, causing blindness to never appear</li>\n</ul>\n",
      "spt_constraint": "~4.0 <4.1.0",
      "fika": "compatible",
-     "downloads": 6116,
+     "downloads": 6127,
      "size": 6658,
      "link": "https://sp-mod.com/mod/download/2550/bring-back-concussion/1.0.3",
      "published_at": "2026-01-18T02:04:00.000000Z",
@@ -152616,7 +152695,7 @@
      "description": "<ul>\n<li>Now using real head hit sounds, for even more immersive head-eyes experience!</li>\n<li>Same goes to helmet hit sound effects if your helmet tanked a shot!</li>\n<li>Small adjustments to the Death UI sound delay</li>\n<li>Mark ups to the configuration descriptions</li>\n</ul>\n",
      "spt_constraint": "~4.0 <4.1.0",
      "fika": "compatible",
-     "downloads": 345,
+     "downloads": 349,
      "size": 6104,
      "link": "https://sp-mod.com/mod/download/2550/bring-back-concussion/1.0.1",
      "published_at": "2026-01-14T16:12:00.000000Z",
@@ -152628,14 +152707,14 @@
      "description": "<h3>Initial release!</h3>\n",
      "spt_constraint": "~4.0 <4.1.0",
      "fika": "unknown",
-     "downloads": 255,
+     "downloads": 257,
      "size": 5886,
      "link": "https://sp-mod.com/mod/download/2550/bring-back-concussion/1.0.0",
      "published_at": "2026-01-14T04:42:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.0.5",
+   "latest_version": "1.1.0",
    "spt_constraint": "~4.1",
    "all_spt_constraints": [
     "~4.0 <4.1.0",
@@ -152644,7 +152723,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-01-14T04:33:00.000000Z",
-   "updated_at": "2026-09-02T19:34:34.000000Z",
+   "updated_at": "2026-09-04T20:22:03.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -189311,7 +189390,7 @@
    "description_html": "<h2>Description</h2>\n<p>A clip-on thermal imager for SPT. I modelled it on the Safran DSI AN/PAS-29B (purchased the\n3D model from 3DMA). It clamps to the objective of a night vision device and injects a thermal\noverlay <strong>into the tube\u2019s circle</strong> the way a real fused clip-on works, rather than switching\nyour view to thermal. All inspiration came from the game Operator.</p>\n<div class=\"tabset\"><div id=\"tabset-2-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Imager on</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/thermal-on.jpg\" alt=\"Imager on\" /></p></div></div>\n<div id=\"tabset-2-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Outline mode</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/thermal-outline.jpg\" alt=\"Outline mode\" /></p></div></div>\n<div id=\"tabset-2-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Imager off</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/thermal-off.jpg\" alt=\"Imager off\" /></p></div></div></div>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">What it does</div>\n<div class=\"tab-content\"><ul>\n<li>Renders a second camera confined to a smaller objective circle than the main nvg, so the heat\nsits inside the tube rather than replacing your view.</li>\n<li>Heat renders as <strong>contours</strong> by default rather than filled shapes. <code>Outline Mix</code> is the dial\nbetween the two.</li>\n<li>Optional <strong>magnified optic</strong> mode. The imager is an offset sensor looking downrange on its own\naxis, so at 1x its heat does not line up with what a magnified scope shows. Turn\n<code>Magnify With Optic</code> on and a second thermal pass is matched to the scope and drawn into the\nscope\u2019s own picture. Off by default; non-magnified sights are unaffected either way.</li>\n<li>Supports <strong>PVS-14, N-15, GPNVG-18, PNV-10T and PNV-57E</strong> out of the box, and <strong>any other night\nvision goggle from a small JSON file</strong> - no mod update needed. See the Addons tab.</li>\n<li><strong>Tune it in game.</strong> Both the mount pose and the thermal circle are adjusted live and saved to\nthe server, so a goggle that sits wrong can be corrected without editing anything by hand.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Requirements</div>\n<div class=\"tab-content\"><ul>\n<li><strong>SPT 4.0 or SPT 4.1.</strong> There is a separate download for each - <code>2.x</code> is 4.0, <code>3.x</code> is 4.1.\nThey are not interchangeable; the two SPT versions run different .NET runtimes and expose\ndifferent mod contracts, so one build cannot serve both.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Installing</div>\n<div class=\"tab-content\"><p>Open the archive with 7-Zip and drag <strong>all</strong> of its contents into your SPT folder:</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/3N6gTe2.gif\" alt=\"mod install\" /></p>\n<blockquote>\n<p>\u26a0\ufe0f This mod adds a new item, so it <strong>cannot be cleanly removed from a profile</strong> once one has\nspawned or been bought.</p>\n</blockquote></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Addons</div>\n<div class=\"tab-content\"><p>The imager mounts to a goggle using a small JSON file that says where it sits. Those files live in\n<code>nvghostcompat/</code> inside the mod folder, one per device, and adding one needs no mod update.</p>\n<p>Goggles from <strong>other mods</strong> ship as separate downloads, so a stock install carries nothing it\ncannot use. Each is a drag-over like the mod itself, and there is one per SPT version:</p>\n<p>Official Addons:</p>\n<table>\n<thead>\n<tr>\n<th>Addon</th>\n<th>Needs</th>\n<th>Adds</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>LennoxP90-COTI-addon-C11-TrueNorth</code></td>\n<td>C11 - True North</td>\n<td>Argus Chimera (three variants), ITT AN/PVS-5A, ACTinBlack DTNVS</td>\n</tr>\n<tr>\n<td><code>LennoxP90-COTI-addon-WTT-CAG</code></td>\n<td>WTT - CAG</td>\n<td>ACTinBlack DTNVS, white and green phosphor</td>\n</tr>\n<tr>\n<td><code>LennoxP90-COTI-addon-WTT-ContentBackport</code></td>\n<td>WTT - ContentBackport</td>\n<td>AN/PVS-31A</td>\n</tr>\n</tbody>\n</table>\n<p>Download them from the addons section on forge for your appropriate SPT version</p>\n<p><strong>A goggle with no file still works.</strong> Anything the game classes as night vision gets a file\nwritten for it automatically, seeded from the closest device already known, so it is mountable\nstraight away with a pose to correct rather than nothing at all.</p>\n<p><strong>Writing your own</strong> is a text file and an afternoon with the in-game editors. The format, every\nfield, and how to find a goggle\u2019s ids are documented in\n<a target=\"_blank\" class=\"external-link\" href=\"https://github.com/LennoxP90/SPT-COTI/blob/main/ADDONS.md\" rel=\"noreferrer noopener\">ADDONS.md</a>.</p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Tuning</div>\n<div class=\"tab-content\"><p>Two editors, both saving to the server so nothing is lost on the next launch.</p>\n<p><strong>Pose</strong> - inspect a goggle with the imager attached and press <strong>COTI Pose</strong>. Position, rotation,\nscale and the anchor bone, over a lit 3D preview you can orbit and zoom. The flip test confirms the\nimager travels with the tube when the goggle flips up.</p>\n<p><strong>Thermal circle</strong> - <strong>F12 -&gt; Mask Editor -&gt; Open</strong>. The window stays open after the F12 menu\ncloses, so the circle can be moved, resized and softened in a raid while looking through the\ngoggles. Driven from the numeric keypad, because the cursor is locked in a raid, and it saves itself\nas you adjust.</p></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Client Settings</div>\n<div class=\"tab-content\"><p>Image and controls are on the <strong>F12</strong> page. Less common image settings are under <strong>Advanced</strong>.</p>\n<p><strong>Image</strong></p>\n<ul>\n<li><strong>Enabled</strong> - master switch for the overlay. Safe to toggle any time, including mid-raid.</li>\n<li><strong>Heat Threshold</strong> - how hot something must be before it shows. Anything cooler contributes\nnothing, which is what lets the night vision image show through. Raise it if the overlay washes\nthe picture out; lower it to pick up cooler things.</li>\n<li><strong>Overlay Intensity</strong> - brightness of the heat that does show. Lower it if bodies read as solid\nblobs rather than shapes.</li>\n<li><strong>Outline Mix</strong> - 0% is solid hot shapes, 100% is edge-only contours. This is a mix further to 0% the fuller the thermal fills to solid.</li>\n<li><strong>Magnify With Optic</strong> - off by default. Renders a second thermal pass matched to a magnified\nscope, and stands the 1x overlay down while it draws, so the scope shows the magnified image\nalone. Costs a second scene render while aiming. Non-magnified sights are unaffected.</li>\n<li><strong>Magnified Intensity Scale</strong> - fraction of Overlay Intensity used inside a magnified scope. The\nmagnified view has no faint disc glow beneath it, so it needs less brightness than the 1x view to\nread the same. Lower it if hot edges in a scope read as a solid mass.</li>\n<li><strong>Sensor Resolution (rows)</strong> - resolution of the thermal render. Higher holds distant contacts\ntogether; lower trades that back for frames.</li>\n</ul>\n<p>Image settings apply to every goggle rather than per device.</p>\n<p><strong>Mask Editor</strong></p>\n<ul>\n<li><strong>Open</strong> - opens the thermal circle editor. See the Tuning tab.</li>\n</ul>\n<p><strong>Controls</strong></p>\n<ul>\n<li><strong>Power Toggle</strong> - default <code>Ctrl+N</code>. Switches the imager without touching the night vision. Keep\na modifier: EFT does not demand an exact match on its own binds, so a bare <code>N</code> would toggle the\ngoggles too.</li>\n</ul>\n<p><strong>Debug</strong></p>\n<ul>\n<li><strong>Verbose Logging</strong> - off for normal play. Writes detailed diagnostics to the BepInEx log if you\nare reporting a problem.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Server Settings</div>\n<div class=\"tab-content\"><p>Price, loyalty level and spawn rate are server-side, in\n<code>SPT_Runtime/user/mods/LennoxP90-COTI/config/config.json</code> on 4.1, or\n<code>SPT/user/mods/LennoxP90-COTI/config/config.json</code> on 4.0. A server restart applies them.</p>\n<ul>\n<li><strong><code>trader.loyaltyLevel</code></strong> - Peacekeeper loyalty level required. Default <code>4</code>.</li>\n<li><strong><code>trader.priceUsd</code></strong> - price in dollars. Default <code>2000</code>.</li>\n<li><strong><code>trader.buyLimit</code></strong> - purchases allowed per profile. Default <code>3</code>.</li>\n<li><strong><code>loot.enabled</code></strong> - set <code>false</code> to make the trader the only source.</li>\n<li><strong><code>loot.weightFraction</code></strong> - spawn weight relative to the night vision already at each spot.\n<code>0.25</code> makes it a quarter as likely as the goggles themselves.</li>\n<li><strong><code>hostEditor.autoDiscover</code></strong> - default <code>true</code>. Writes a starter file for any night vision device\nthat has none. Set <code>false</code> to support only the devices you have files for.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-8\" class=\"tab-panel\"><div class=\"tab-title\">Recommended Mods</div>\n<div class=\"tab-content\"><p><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/954/borkels-realistic-night-vision-goggles-nvgs-and-t-7\" rel=\"noreferrer noopener\">Borkel\u2019s Realistic NVGs</a></p></div></div>\n<div id=\"tabset-1-panel-9\" class=\"tab-panel\"><div class=\"tab-title\">Credits</div>\n<div class=\"tab-content\"><p>3D model by <a target=\"_blank\" class=\"external-link\" href=\"https://www.3dmilitaryassets.com/\" rel=\"noreferrer noopener\">3D Military Assets</a>, used under\ntheir Extended Licence.</p></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/ijWMPl9joF9lupiB0kwCX4Wa3MbDOJ8GPHlxIV27.jpg",
    "forge_url": "https://sp-mod.com/mod/2930/ecoti-enhanced-clip-on-thermal-imager",
-   "downloads": 5150,
+   "downloads": 5534,
    "favourites": 45,
    "featured": false,
    "fika": true,
@@ -189345,7 +189424,7 @@
      "description": "<h3>Newly Fixed</h3>\n<ul>\n<li>The ECOTI appears in linked search off a supported goggle. Its Peacekeeper offer was being registered after SPT had already built the flea, so the flea never saw it. It registers before that now, and the item is findable by name and beside the other night vision gear.</li>\n</ul>\n<h3>Brought over from 3.0.1 -&gt; 2.0.2</h3>\n<ul>\n<li>Fixed colour issue with latest Borkel\u2019s Realistic NVGs (3.0.0)</li>\n<li>Fixed overlay inside magnified scopes (removed the coti circle, intensity bloom lessened in magnified scopes)</li>\n<li>Fixed timing of when thermal image turns on and off with nvg toggling</li>\n</ul>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 8,
+     "downloads": 76,
      "size": 2098002,
      "link": "https://sp-mod.com/mod/download/2930/ecoti-enhanced-clip-on-thermal-imager/2.0.2",
      "published_at": "2026-09-03T22:30:00.000000Z",
@@ -189355,9 +189434,9 @@
      "id": 15180,
      "version": "3.0.2",
      "description": "<h3>Fixed</h3>\n<ul>\n<li>The ECOTI appears in linked search off a supported goggle. Its Peacekeeper offer was being registered after SPT had already built the flea, so the flea never saw it. It registers before that now, and the item is findable by name and beside the other night vision gear.</li>\n<li>The N-15 and PNV-10T sit correctly on the head. Both poses were retuned in the new editor.</li>\n</ul>\n<h3>Added</h3>\n<ul>\n<li>A web interface, on SPT 4.1. Under MOD PAGES on the server\u2019s landing page.\nSettings are editable there and apply to the running server. Anything that still needs a restart says so on the page.</li>\n<li>A 3D mount editor draws the ECOTI on its host, with a Blender-style view cube, position, rotation and scale controls, and a flip animation on the goggles that have one. Changes push to a running game immediately, so a pose can be tuned without going into a raid.</li>\n<li>Goggles added by other mods appear beside the vanilla ones, discovered from the server rather than a fixed list.</li>\n<li>Addon export. A tuned pose for another mod\u2019s goggle downloads as a ready-to-upload archive.</li>\n<li>Player-sellable flea listing, off by default. Turn it on and the ECOTI can be sold on the flea as well as bought from Peacekeeper.</li>\n</ul>\n",
-     "spt_constraint": "4.1.3",
+     "spt_constraint": "~4.1.3",
      "fika": "compatible",
-     "downloads": 29,
+     "downloads": 331,
      "size": 3649474,
      "link": "https://sp-mod.com/mod/download/2930/ecoti-enhanced-clip-on-thermal-imager/3.0.2",
      "published_at": "2026-09-03T22:30:00.000000Z",
@@ -189369,7 +189448,7 @@
      "description": "<p>Fixed colour issue with latest Borkel\u2019s Realistic NVGs (3.0.0)\nFixed overlay inside magnified scopes (removed the coti circle, intensity bloom lessened in magnified scopes)\nFixed timing of when thermal image turns on and off with nvg toggling</p>\n",
      "spt_constraint": "4.1.3",
      "fika": "compatible",
-     "downloads": 626,
+     "downloads": 628,
      "size": 2092942,
      "link": "https://sp-mod.com/mod/download/2930/ecoti-enhanced-clip-on-thermal-imager/3.0.1",
      "published_at": "2026-08-31T15:08:00.000000Z",
@@ -189393,7 +189472,7 @@
      "description": "<h2>Added</h2>\n<ul>\n<li><strong>Support for any night vision goggle, from a file.</strong> Each device is one JSON file in\n<code>nvghostcompat/</code>, so a new goggle needs no mod update. A file survives its host mod renumbering\nitems, and declares which mod it needs so it is skipped cleanly when that mod is absent.</li>\n<li><strong>Automatic discovery.</strong> Any night vision item with no file gets one written for it, seeded from\nthe closest device COTI already knows. A new goggle is mountable immediately, with a pose to\ncorrect rather than nothing at all.</li>\n<li><strong>2 more goggles supported:</strong> PNV-10T and PNV-57E</li>\n<li><strong>In-game pose editor.</strong> A <strong>COTI Pose</strong> button on a goggle\u2019s inspect window opens position,\nrotation, scale and anchor-bone controls over a lit 3D preview, with a flip test to confirm the\ndevice travels with the tube. Publishing writes it to the server, so it is not lost on the next\nlaunch.</li>\n<li><strong>In-game mask editor.</strong> <strong>F12 -&gt; Mask Editor</strong> opens a window that survives closing the menu, so\nthe thermal circle can be moved, resized and softened in a raid while looking through the\ngoggles. It saves itself as you adjust.</li>\n<li><strong>Three official addons</strong>, one per host mod, for goggles that come from another mod.</li>\n</ul>\n<h2>Changed</h2>\n<ul>\n<li><strong>Image settings are global</strong> rather than per goggle, and all of them are on F12 under Advanced.</li>\n<li><strong>DTNVS and AN/PVS-31A support now ships as addons</strong> rather than inside the mod. If you use\nWTT-CAG or WTT-ContentBackport, download the matching addon.</li>\n</ul>\n",
      "spt_constraint": "~4.1",
      "fika": "compatible",
-     "downloads": 1704,
+     "downloads": 1712,
      "size": 2092486,
      "link": "https://sp-mod.com/mod/download/2930/ecoti-enhanced-clip-on-thermal-imager/3.0.0",
      "published_at": "2026-08-22T01:30:00.000000Z",
@@ -189405,7 +189484,7 @@
      "description": "<p><strong>First release for SPT 4.0</strong>, at feature parity with the 4.1 line.</p>\n<p>The major version encodes the SPT generation: <code>0.x</code> is SPT 4.0, <code>1.x</code> is SPT 4.1. They are not\ninterchangeable, and cannot be - the two SPT versions run different .NET runtimes and expose\nmutually incompatible mod contracts, so one build serving both is impossible rather than merely\nawkward.</p>\n<h3>Everything the 4.1 line has</h3>\n<ul>\n<li>Mounts to the <strong>PVS-14, N-15, GPNVG-18, PVS-31A and DTNVS</strong> (white and green phosphor).</li>\n<li>Sold by Peacekeeper at LL4, and found wherever night vision is found.</li>\n<li><strong>Magnified optic thermal</strong>, off by default. At 1x the imager\u2019s heat disagrees with a magnified\nsight by between 1.3x and 7.9x depending on zoom; turn <strong>Magnify With Optic</strong> on and a second\nthermal pass is matched to the scope and drawn into the scope\u2019s own picture, with the 1x heat kept\noff the lens. Non-magnified sights are unaffected either way.</li>\n<li><strong>Heat renders as contours by default.</strong> Outline Mix is the dial: 0% is solid hot shapes, 100% is\nedge-only.</li>\n<li><strong>Sensor Resolution</strong> on F12, if you would rather trade resolution for frames or push it further.</li>\n</ul>\n",
      "spt_constraint": "4.0.13",
      "fika": "compatible",
-     "downloads": 445,
+     "downloads": 447,
      "size": 2055984,
      "link": "https://sp-mod.com/mod/download/2930/ecoti-enhanced-clip-on-thermal-imager/0.1.0",
      "published_at": "2026-08-18T23:00:00.000000Z",
@@ -189429,7 +189508,7 @@
      "description": "<p>First release</p>\n",
      "spt_constraint": "4.1.2",
      "fika": "compatible",
-     "downloads": 861,
+     "downloads": 863,
      "size": 2045722,
      "link": "https://sp-mod.com/mod/download/2930/ecoti-enhanced-clip-on-thermal-imager/1.0.0",
      "published_at": "2026-08-16T05:05:00.000000Z",
@@ -189443,12 +189522,13 @@
     "4.1.2",
     "4.1.3",
     "~4.0.0",
-    "~4.1"
+    "~4.1",
+    "~4.1.3"
    ],
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-08-16T05:00:00.000000Z",
-   "updated_at": "2026-09-03T22:30:16.000000Z",
+   "updated_at": "2026-09-04T16:43:54.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
@@ -192288,7 +192368,7 @@
    "description_html": "<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/HiBan-ops/vanguard/main/docs/media/spmod/vanguard-banner.png\" alt=\"Vanguard\" /></p>\n<h1>Vanguard | Operator</h1>\n<blockquote>\n<p><strong>Vanguard is not a faction. It is a network.</strong></p>\n</blockquote>\n<p>In SPT terms, Vanguard introduces a persistent PMC Operator faction.</p>\n<p>In Vanguard\u2019s world, however, U*** or B*** no longer matters. Vanguard is a discreet network of experienced Operators working under contracts of their own choosing.</p>\n<p>You don\u2019t recruit disposable followers.</p>\n<p>You build a roster of <strong>persistent Operators</strong> who raid with you, survive with you, recover and carry their history from one operation to the next.</p>\n<blockquote>\n<p><strong>Persistent Operators. Independent behavior. Shared survival.</strong></p>\n</blockquote>\n<p>Today, Vanguard lets you hire, equip, manage and deploy these Operators as a persistent squad. Over time, the project aims to make those relationships increasingly personal: loyalty, affinity, rivalries, unexpected events, independent encounters, assistance or betrayal.</p>\n<hr />\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Description</div>\n<div class=\"tab-content\"><h3>Operators, not minions</h3>\n<p>Vanguard Operators are designed as <strong>independent combat entities</strong>, not units to micromanage.</p>\n<blockquote>\n<p><strong>The player is part of the squad, not a puppeteer above it.</strong></p>\n</blockquote>\n<p>Operators move with the squad, but continue to perceive threats, engage, reposition, seek cover and assist the squad through their own combat logic.</p>\n<p>Learning how your Operators behave, and adapting to them, is part of the Vanguard experience.</p>\n<hr />\n<h3>Persistent squad</h3>\n<p>Operators retain their identity across operations, including:</p>\n<ul>\n<li>Equipment</li>\n<li>Medical state</li>\n<li>Behavioral persona</li>\n<li>Progression</li>\n</ul>\n<p>Vanguard also adds an <strong>Off-Raid management layer</strong> for recruitment, contracts, economy, equipment, recovery and deployment preparation.</p>\n<p>Survival matters. Losing an Operator is not the same as losing a disposable AI follower.</p>\n<hr />\n<h3>Squad behavior &amp; combat</h3>\n<p>Vanguard handles the higher-level behaviors that make Operators function as a squad:</p>\n<ul>\n<li>Following and regrouping</li>\n<li>Squad spacing and cohesion</li>\n<li>Tactical movement</li>\n<li>Player-issued orders (not yet implemented)</li>\n<li>Survival priorities</li>\n</ul>\n<p>Individual combat remains primarily handled by <strong>SAIN</strong>.</p>\n<p>Currently, each Operator starts from a private clone of the <strong>currently loaded SAIN <code>Normal</code> personality</strong>. Vanguard then applies that Operator\u2019s own Persona and Specialty adjustments, together with a small set of Vanguard safety invariants, on top of this baseline. As a result, changes you make to SAIN <code>Normal</code> also influence your Operators; Vanguard does <strong>not</strong> overwrite or modify SAIN\u2019s global <code>Normal</code> profile.</p>\n<p>Vanguard adds squad context and persistent Operator personas around the existing combat AI rather than replacing it.</p>\n<p><strong>Planned:</strong> a future Vanguard architecture will use a <strong>dedicated SAIN profile for Operators</strong> instead of deriving them from the standard <code>Normal</code> personality, so Vanguard will not need to rely on or repurpose SAIN\u2019s preconfigured personality profiles.</p>\n<hr />\n<h3>Opportunistic loot</h3>\n<p>Operators can perform <strong>bounded, need-aware opportunistic looting</strong> for useful weapons, ammunition, medical supplies and selected valuables.</p>\n<p>The goal is not to turn Operators into loot vacuum cleaners. Combat, medical urgency and squad cohesion remain higher priorities, while short loot windows give Operators a chance to sustain themselves during longer raids.</p>\n<p>See the <strong>OPPORTUNISTIC LOOT</strong> tab for the full player-facing explanation.</p>\n<hr />\n<h3>Tactical Editor</h3>\n<p>Vanguard includes an in-raid <strong>Tactical Editor</strong> for creating tactical zones and Operator positioning slots directly in the game world.</p>\n<p>Saved zones and slots are reused across raids. In multiplayer, active authored placement is owner-scoped so a player\u2019s tactical layout is assigned only to Operators attached to that player.</p>\n<hr />\n<h3>Standalone, Fika &amp; Headless</h3>\n<p>Vanguard has validated execution paths for <strong>standalone SPT</strong>, <strong>Fika Host</strong> and <strong>Fika dedicated Headless</strong>.</p>\n<p>Fika is required only for Fika topologies. Operator state and squad behavior use the appropriate authoritative execution path for the selected topology.</p>\n<hr />\n<blockquote>\n<p><strong>Vanguard is about turning AI companions into Operators whose survival actually matters.</strong></p>\n</blockquote></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">MUST READ</div>\n<div class=\"tab-content\"><h3>Alpha/Beta release</h3>\n<p>Vanguard is currently in an <strong>Alpha/Beta field-validation phase</strong>.</p>\n<p>Vanguard\u2019s major foundations have been exercised extensively in its development environment, but the public release is also intended to expose the mod to different machines, mod stacks, execution topologies and edge cases.</p>\n<p>The current stabilization cycle prioritizes:</p>\n<ul>\n<li>Reproducible bug fixes</li>\n<li>Compatibility triage</li>\n<li>Runtime stability</li>\n<li>Diagnostics and supportability</li>\n<li>Bounded Off-Raid quality-of-life improvements</li>\n</ul>\n<p>Major new gameplay systems are not the priority during this stabilization cycle.</p>\n<p><strong>Supported SPT versions are release-specific and follow the compatibility constraints of Vanguard\u2019s required dependency stack.</strong></p>\n<hr />\n<h3>Supported execution modes</h3>\n<p>Vanguard supports:</p>\n<ol>\n<li><strong>Standalone SPT</strong></li>\n<li><strong>Fika Host</strong></li>\n<li><strong>Fika dedicated Headless</strong></li>\n</ol>\n<p>Fika is required only for Fika topologies.</p>\n<p>The distributed Headless configuration has historically received the deepest validation.</p>\n<p>The release-specific dependency table defines the exact versions supported by the shipping build.</p>\n<hr />\n<h3>Diagnostics \u2014 F12</h3>\n<p>Vanguard exposes four diagnostic levels through the BepInEx Configuration Manager:</p>\n<p><strong>F12 \u2192 Vanguard - Diagnostics \u2192 Audit level</strong></p>\n<p><strong>- Operational \u2014 RECOMMENDED / DEFAULT</strong><br />\nNormal play and first-line support. Shows useful Vanguard events without excessive diagnostic traffic.</p>\n<p><strong>- Diagnostic</strong><br />\nAdds richer runtime state and decision information for reproducing issues.</p>\n<p><strong>- Trace</strong><br />\nDeep investigation mode intended for short targeted reproductions. It can generate a large amount of logging.</p>\n<p><strong>- Off</strong><br />\nKeeps Vanguard logging to a minimum.</p>\n<p>Changing the diagnostic level is intended to change observability, not gameplay behavior.</p>\n<p>For normal play and first contact with a bug, use <strong>Operational</strong>. Move to <strong>Diagnostic</strong> or <strong>Trace</strong> only when a reproduction needs more evidence.</p>\n<hr />\n<h3>Compatibility warning</h3>\n<p>Vanguard owns the persistent player-allied Operator squad domain.</p>\n<p>Mods that also command, persist, reposition, spawn or otherwise take authority over the same allied PMC entities may conflict even if both mods load without crashing.</p>\n<p>Read <strong>Requirements &amp; Compatibility</strong> before combining Vanguard with another follower, fireteam or squad-AI framework.</p>\n<hr />\n<h3>Current feature boundaries</h3>\n<ul>\n<li><strong>Player-issued squad orders are not currently implemented.</strong></li>\n<li>The broader <strong>Operator relationship system is still under development</strong>.</li>\n<li>Tactical Editor zones and slots can be saved and reused across raids.</li>\n<li>Runtime Tactical Editor assignment is owner-scoped: authored placement for one player is applied only to that player\u2019s Operators.</li>\n<li>The saved Tactical Editor map is currently local to the game installation/map rather than stored in a separate per-profile directory.</li>\n</ul>\n<h3>Known Issues</h3>\n<p>Vanguard does not yet cover every behavior or situation the project ultimately intends to handle. The points below are currently known and should be kept in mind during play.</p>\n<p><strong>Operators can pass through doors during Vanguard-directed movement</strong><br />\nDuring movement directly driven by Vanguard, an Operator may occasionally pass through a closed door instead of interacting with it normally. This is currently treated as a low-priority gameplay/pathing issue rather than a release blocker.</p>\n<p><strong>An Operator can sometimes appear to stop following the squad</strong><br />\nOn rare occasions, one Operator may seem to remain behind or stop following for a while. In most observed cases, the Operator eventually catches up on their own. Unless the behavior persists for an unusually long time or is accompanied by another serious issue, giving the Operator time to recover is usually sufficient.</p>\n<p><strong>Snipers can occasionally cause problems for the squad</strong><br />\nLong-range sniper threats can sometimes put Operators in difficult situations or interfere with normal squad movement and decision-making. For now, the player should treat hostile snipers as priority targets and deal with them quickly when possible.</p>\n<p><strong>Very rare NavMesh traps can leave an Operator stuck</strong><br />\nExtremely rarely \u2014 observed only twice across several hundred development tests \u2014 an Operator has entered an area from which the navigation system could no longer find a valid path. When this happens, the affected Operator can remain stuck.</p>\n<p>A known example exists on <strong>Customs</strong>, around the railway tracks near the breach/passage and the bridge fence next to <strong>Warehouse 4</strong>. An Operator can occasionally become trapped against an invisible navigation boundary in this specific area.</p>\n<p>For the moment, the only reliable workaround is to avoid routing the squad through that exact point when possible.</p>\n<p>These issues are known and do not currently block the public Alpha/Beta release. If you encounter a reproducible case \u2014 especially one outside the locations or situations described above \u2014 please report it with the logs requested in the <strong>Support</strong> tab.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Requirements &amp; Compatibility</div>\n<div class=\"tab-content\"><h3>Required core stack</h3>\n<p><strong>MoreBotsAPI \u2014 REQUIRED</strong><br />\nProvides the Operator-role integration used by Vanguard.</p>\n<p><strong>BigBrain \u2014 REQUIRED</strong><br />\nProvides behavior-layer infrastructure used by Vanguard.</p>\n<p><strong>Waypoints \u2014 REQUIRED</strong><br />\nPart of Vanguard\u2019s validated AI and navigation stack.</p>\n<p><strong>SAIN \u2014 REQUIRED</strong><br />\nProvides the primary individual combat intelligence used by Vanguard Operators. Vanguard derives each Operator from a private clone of the currently loaded SAIN <code>Normal</code> personality before applying Operator-specific Persona/Specialty adjustments.</p>\n<p><strong>Fika Core / Fika Server \u2014 SPECIFIC</strong><br />\nRequired when playing Vanguard through a Fika topology. It is not required for standalone SPT.</p>\n<p><strong>Fika Headless \u2014 SPECIFIC</strong><br />\nRequired only when using a dedicated Fika Headless instance.</p>\n<hr />\n<h3>MoreBotsAPI role allocation</h3>\n<p>Vanguard reserves:</p>\n<ul>\n<li><code>867100</code> \u2014 U*** Operator</li>\n<li><code>867101</code> \u2014 B*** Operator</li>\n</ul>\n<p>The public registry is rechecked immediately before release.</p>\n<hr />\n<h3>Recommended / tested</h3>\n<p><strong>Looting Bots \u2014 RECOMMENDED / TESTED</strong></p>\n<p>Vanguard contains an explicit Operator loot-authority boundary so Vanguard-owned actions and generic Looting Bots behavior do not intentionally compete for the same Operator at the same time.</p>\n<hr />\n<h3>Compatible / tested reference set</h3>\n<p>The following classifications come from Vanguard\u2019s development/reference environment. Exact versions are re-frozen against the shipping candidate before publication.</p>\n<ul>\n<li><strong>ORBIT</strong> \u2014 <code>COMPATIBLE / TESTED</code></li>\n<li><strong>Menu Overhaul</strong> \u2014 <code>COMPATIBLE / TESTED</code></li>\n<li><strong>ABPS</strong> \u2014 <code>COMPATIBLE / TESTED</code></li>\n<li><strong>NerfBotGrenades</strong> \u2014 <code>COMPATIBLE / TESTED</code></li>\n<li><strong>Raid Review</strong> \u2014 <code>COMPATIBLE / TESTED</code></li>\n<li><strong>DynamicMaps</strong> \u2014 <code>COMPATIBLE / TESTED</code></li>\n<li><strong>SmoothTalker</strong> \u2014 <code>COMPATIBLE / TESTED</code></li>\n<li><strong>Show Me The Money</strong> \u2014 <code>COMPATIBLE / TESTED</code></li>\n<li><strong>WTT-ClientCommonLib</strong> \u2014 <code>COMPATIBLE / TESTED</code></li>\n<li><strong>AllQuestsCheckmarks</strong> \u2014 <code>COMPATIBLE / TESTED</code></li>\n<li><strong>Configuration Manager</strong> \u2014 <code>COMPATIBLE / TESTED</code></li>\n</ul>\n<hr />\n<h3>Known authority conflicts / unqualified combinations</h3>\n<h4>Known authority conflicts</h4>\n<p>These combinations overlap directly with systems Vanguard must control for persistent Operators.</p>\n<p><strong>PIT Fireteam \u2014 LOGICALLY INCOMPATIBLE</strong><br />\nAlternative owner of allied-PMC squad, command and persistence authority.</p>\n<p><strong>BotMind \u2014 MedicBuddy enabled \u2014 LOGICALLY INCOMPATIBLE</strong><br />\nCreates and controls its own friendly medic/escort team, overlapping with Vanguard\u2019s Operator squad domain.</p>\n<p>Do not assume compatibility with another follower or fireteam framework unless the combination has been explicitly qualified. Overlapping allied-PMC authority can produce hostile or otherwise undefined behavior.</p>\n<hr />\n<h4>Not yet qualified</h4>\n<p>These combinations are not currently declared incompatible, but they have not been sufficiently validated with Vanguard Operators.</p>\n<p><strong>BotMind \u2014 MedicBuddy disabled \u2014 NOT TESTED</strong><br />\nRemaining global bot behaviors still require Operator-role qualification.</p>\n<p><strong>Questing Bots \u2014 NOT TESTED</strong><br />\nObjective, follow and regroup layers may affect Vanguard Operators.</p>\n<p><strong>AI Limit \u2014 NOT TESTED</strong><br />\nRequires dedicated Operator sleep/wake, telemetry and persistence qualification.</p>\n<hr />\n<h4>Compatible in principle, but unverified</h4>\n<p><strong>Other MoreBotsAPI custom factions \u2014 COMPATIBLE / UNVERIFIED</strong><br />\nExpected to coexist more safely when custom roles remain distinct and allied-command authority does not overlap.</p>\n<hr />\n<h4>SPT version scope</h4>\n<p>The supported SPT version is defined per Vanguard release and follows the compatibility constraints of required dependencies such as MoreBotsAPI.</p>\n<p>A mod merely loading without a crash is not sufficient compatibility evidence when it can affect the same Operator authority domain.</p>\n<hr /></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Handle Inventory</div>\n<div class=\"tab-content\"><p>Vanguard lets you manage an Operator\u2019s equipment through EFT\u2019s native inventory interface.</p>\n<p><em><strong>It needs a little explanation on how it works so far cause after hundreds of runtime tests i may be the only one thinking the current behavior is \u201cnormal behavior\u201d</strong></em></p>\n<h3>Recommended workflow</h3>\n<p>When preparing an Operator:</p>\n<ol>\n<li>Open Vanguard and select the Operator.</li>\n<li>Open the Operator\u2019s equipment/inventory.</li>\n<li>Equip the Operator manually from your stash, or use the Builds / Presets.</li>\n<li>When you are finished, use <strong>Back</strong> to leave the Operator inventory.</li>\n<li>Vanguard will save the changes, restore your normal PMC profile and refresh the menu UI.</li>\n</ol>\n<p>A short UI reload when leaving an Operator inventory is <strong>expected behavior in the current version</strong>.</p>\n<h3>Important navigation note</h3>\n<p>While an Operator inventory is open, Vanguard is temporarily using a specialized inventory session that combines the Operator\u2019s equipment with the player\u2019s stash.</p>\n<p>For this reason, avoid using the main menu navigation to open unrelated screens such as <strong>Traders, Flea Market, Hideout or other menu sections directly from the Operator inventory</strong>.</p>\n<p>Leaving the Operator inventory through one of these routes can be interpreted by EFT as closing the inventory screen. Vanguard will then immediately save and reconcile the Operator session and restore the player profile, which causes the menu UI to reload.</p>\n<p>This is not a crash or a lost inventory state, it is Vanguard safely closing the temporary Operator inventory session.</p>\n<p>Normal navigation inside the character/inventory interface remains available, and the native <strong>Equipment Builds / Presets</strong> workflow is supported.</p>\n<p>If you need to use Traders or the Flea Market outside the Equipment Builds workflow, first leave the Operator inventory normally, then open them from your regular PMC menu.</p>\n<p>This workflow may be made more seamless in future Vanguard updates as the Off-Raid inventory integration continues to evolve.</p>\n<hr /></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">OPPORTUNISTIC LOOT</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/HiBan-ops/vanguard/main/docs/media/spmod/opportunistic-loot.png\" alt=\"Vanguard Opportunistic Loot\" /></p>\n<h3>Survival support, not vacuum cleaning</h3>\n<p>Vanguard\u2019s Opportunistic Loot system is designed to help Operators <strong>stay effective during a raid</strong>, not to make them strip every corpse and container they can see.</p>\n<p>Operators look for items that can solve an actual need or improve their ability to continue operating. Combat, urgent medical needs and squad cohesion always remain more important than looting.</p>\n<blockquote>\n<p><strong>Loot is an opportunity, not the mission.</strong></p>\n</blockquote>\n<p>An Operator can abandon or skip a loot opportunity when the tactical situation changes, when the squad moves away, or when a higher-priority need takes over.</p>\n<hr />\n<h3>Give your Operators time to work</h3>\n<p>Loot sessions are deliberately <strong>short and bounded</strong>.</p>\n<p>Vanguard limits how long an Operator can remain in a loot session and how many item transactions can be completed during that session. Needs are re-evaluated between transactions instead of allowing an Operator to empty a source indefinitely.</p>\n<p>This is intentional: if the player immediately rushes away after every fight, Operators may not have enough time to finish useful looting before squad cohesion pulls them back.</p>\n<p>If you want your squad to resupply after an engagement, give them a brief opportunity to do so.</p>\n<hr />\n<h3>Choose what each Operator may loot</h3>\n<p>Each Operator has a persistent <strong>Opportunistic Loot</strong> policy in their Off-Raid dossier.</p>\n<p>Two target families can be allowed independently:</p>\n<ul>\n<li><strong>Corpses</strong> \u2014 the Operator may evaluate and loot eligible items from dead characters.</li>\n<li><strong>Containers</strong> \u2014 the Operator may evaluate and loot eligible world containers.</li>\n</ul>\n<p>Those two choices combine into four possible policies:</p>\n<ul>\n<li><strong>Disabled</strong></li>\n<li><strong>Corpses only</strong></li>\n<li><strong>Containers only</strong></li>\n<li><strong>Corpses + containers</strong></li>\n</ul>\n<p>The policy belongs to that individual Operator and persists with them.</p>\n<hr />\n<h3>What Operators prioritize</h3>\n<p>When a loot opportunity is allowed and the tactical situation permits it, Vanguard evaluates usefulness rather than simply grabbing the most items possible.</p>\n<p>Depending on the Operator\u2019s current needs and configuration, priorities can include:</p>\n<ul>\n<li>A backup long weapon when an appropriate weapon slot is empty</li>\n<li>A pistol when the holster is empty</li>\n<li>Filled magazines compatible with equipped or newly acquired weapons</li>\n<li>Compatible loose ammunition</li>\n<li>Medical supplies the Operator can actually use</li>\n<li>Grenades while the Operator is below Vanguard\u2019s bounded reserve target</li>\n<li>Eligible utility items and detachable weapon parts</li>\n<li>Items present on the <strong>player\u2019s native EFT wishlist</strong></li>\n</ul>\n<p>Existing equipped weapons are not replaced merely because another weapon is found. Opportunistic loot is intended to fill needs and sustain the Operator, not continuously rebuild their equipment during the raid.</p>\n<hr />\n<h3>Your EFT wishlist matters</h3>\n<p>Vanguard reads the player\u2019s native <strong>EFT wishlist</strong> and uses it as an explicit player-interest signal when evaluating eligible loot.</p>\n<p>A wishlisted item therefore receives additional priority when an Operator encounters it through an allowed loot source.</p>\n<p>Wishlist priority is not an unconditional order: combat, medical urgency, squad cohesion, inventory constraints and the bounded loot-session rules can still prevent or interrupt the pickup.</p>\n<p>This lets the player\u2019s normal T***** preparation influence the squad without turning the Operators into remote-controlled collectors.</p>\n<hr />\n<h3>Vanguard keeps the authority bounded</h3>\n<p>Vanguard uses its own Operator-specific loot workflow for discovery, allocation, approach and inventory transactions.</p>\n<p>Only one useful opportunity is pursued at a time, and needs are revalidated throughout the process. Higher-priority Vanguard authorities can interrupt the loot window cleanly when the situation changes.</p>\n<p>The intent is simple:</p>\n<blockquote>\n<p><strong>Operators should loot enough to stay useful and know when it is time to move.</strong></p>\n</blockquote>\n<hr /></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Tactical Editor</div>\n<div class=\"tab-content\"><p>Vanguard includes an in-raid <strong>Tactical Editor</strong> for creating tactical zones and Operator positioning slots directly inside EFT.</p>\n<p><strong>Works on Standalone SPT, Fika Host and Fika dedicated Headless.</strong></p>\n<h3>Quick start</h3>\n<ol>\n<li>Press <strong>Ctrl+F6</strong> to open the editor.</li>\n<li>Move to the center of the tactical area and press <strong>Ctrl+Home</strong>. (Radius can be changer via F12 vanguard menu)</li>\n<li>Type a zone name and press <strong>Enter</strong> to confirm it.</li>\n<li>Move to an Operator position, look in the direction you want that position to watch, and press <strong>Ctrl+Insert</strong>.</li>\n<li>Repeat <strong>Ctrl+Insert</strong> for the other positions in the zone.</li>\n<li>Press <strong>Ctrl+S</strong> to save.</li>\n<li>Press <strong>Ctrl+F6</strong> again when you are finished editing.</li>\n</ol>\n<p>That is enough to create a functional authored zone. The editor also records optional metadata, access information, slot types and constraints that can support richer tactical behavior, but those controls are not required for the basic workflow.</p>\n<hr />\n<h3>Persistence and per-player Operator ownership</h3>\n<p>Saved authoring layouts are reused across raids.</p>\n<p>When the editor is closed and <strong>automatic authored zone occupancy</strong> is enabled, Vanguard reloads the saved map in raid. When the player owner enters one of those zones, Vanguard activates that authored zone automatically.</p>\n<p>In a Fika dedicated-Headless topology, the authoring snapshot carries the player\u2019s <strong>profile ID</strong>. The Headless authority then resolves only the Operators attached to that owner profile before assigning authored slots.</p>\n<p>This keeps tactical placement owner-scoped in multiplayer: one player\u2019s active authored zone cannot steer another player\u2019s Operators.</p>\n<p>There is no separate manual Headless reconciliation command. Authoring changes are synchronized through the live transport while the editor is open, and saved-zone occupancy is republished automatically when the editor is closed and the owner enters an authored zone.</p>\n<h4>Storage note</h4>\n<p>Owner scoping describes <strong>runtime authority</strong>. The current saved authoring file itself remains local to each game installation and map under:</p>\n<p><code>BepInEx/config/Vanguard/TacticalAuthoring/Maps/&lt;map&gt;.json</code></p>\n<p>It is not currently stored in a separate on-disk <code>Profiles/&lt;profileId&gt;/...</code> directory. Players using separate client installations naturally keep separate local layouts; multiple EFT profiles sharing the exact same installation currently share that installation\u2019s saved map file.</p>\n<hr />\n<h3>What an authored slot means</h3>\n<p>A slot is a <strong>tactical assignment</strong>, not an RTS-style hard order.</p>\n<p>Vanguard can move an Operator toward an assigned slot and hold the intended position/orientation. Combat, grenade safety, medical needs and other higher-priority runtime authorities can temporarily take over. When the interruption ends and the slot remains valid, Vanguard can reacquire the authored assignment.</p>\n<blockquote>\n<p><strong>The player is part of the squad, not a puppeteer above it.</strong></p>\n</blockquote>\n<hr />\n<h3>Main controls</h3>\n<ul>\n<li><strong>Ctrl+F6</strong> \u2014 open/close the Tactical Editor.</li>\n<li><strong>Ctrl+Home</strong> \u2014 create a new zone at the player\u2019s position; enter a name and press <strong>Enter</strong>. <strong>Escape</strong> cancels the prompt.</li>\n<li><strong>Ctrl+Insert</strong> \u2014 place a tactical slot at the player\u2019s position and capture the current gaze as its watch direction.</li>\n<li><strong>Ctrl+S</strong> \u2014 save the current map layout.</li>\n<li><strong>Ctrl+R</strong> \u2014 reload the last saved map layout. While editing, the reloaded revision is automatically sent for Headless re-evaluation.</li>\n<li><strong>Ctrl+PageDown</strong> \u2014 select the next zone on the current map.</li>\n<li><strong>Ctrl+Shift+N</strong> \u2014 rename the selected zone.</li>\n<li><strong>Ctrl+P</strong> \u2014 reposition the nearest slot at the player\u2019s current position and recapture its watch direction.</li>\n<li><strong>Ctrl+Delete</strong> \u2014 disable/re-enable the nearest slot without deleting it.</li>\n<li><strong>Ctrl+Shift+Delete</strong> \u2014 hard-delete the nearest slot from the current in-memory layout. Use <strong>Ctrl+S</strong> to persist the deletion; use <strong>Ctrl+R</strong> before saving to restore the last saved version.</li>\n<li><strong>Ctrl+Shift+Backspace</strong> \u2014 hard-delete the selected zone and its contained slots/accesses. Use <strong>Ctrl+S</strong> to persist it or <strong>Ctrl+R</strong> before saving to undo it.</li>\n<li><strong>Ctrl+V</strong> \u2014 revalidate the selected zone.</li>\n</ul>\n<hr />\n<h3>Optional / advanced controls</h3>\n<p>These are available when you want to refine a zone beyond the basic workflow:</p>\n<ul>\n<li><strong>Ctrl+Shift+Home</strong> \u2014 deliberately create a nested/more-specific zone.</li>\n<li><strong>Ctrl+PageUp</strong> \u2014 cycle the slot type used by the next slot.</li>\n<li><strong>Ctrl+M</strong> \u2014 apply configured building/floor/radius metadata to the selected zone.</li>\n<li><strong>Ctrl+End</strong> \u2014 add an access marker.</li>\n<li><strong>Ctrl+Down</strong> \u2014 select the next access marker.</li>\n<li><strong>Ctrl+Up</strong> \u2014 reposition the selected access marker and recapture its approach direction.</li>\n<li><strong>Ctrl+L</strong> \u2014 link/unlink the nearest slot to the nearest access marker.</li>\n<li><strong>Ctrl+U</strong> \u2014 apply the current configured slot settings to the nearest slot.</li>\n<li><strong>Ctrl+I</strong> \u2014 export invalid/warning slot diagnostics.</li>\n</ul>\n<p>The public release does not require players to use these advanced controls to benefit from the normal zone/slot persistence path.</p></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Installation</div>\n<div class=\"tab-content\"><h3>Before installing</h3>\n<ol>\n<li>Use the SPT version listed for this Vanguard release.</li>\n<li>Install the exact required versions of MoreBotsAPI, BigBrain, Waypoints and SAIN.</li>\n<li>If you use Fika, install the Fika versions listed for the release.</li>\n<li>Stop SPT, EFT and any Fika Headless process before copying files.</li>\n</ol>\n<p>The public Vanguard archive is intended to be installed from the <strong>SPT root</strong> rather than by manually distributing individual Vanguard binaries.</p>\n<hr />\n<h3>Standalone SPT</h3>\n<ol>\n<li>Install the required SPT/AI dependency stack.</li>\n<li>Do <strong>not</strong> install Fika merely for Vanguard if you intend to play standalone.</li>\n<li>Extract the Vanguard release archive into the SPT root.</li>\n<li>Start SPT/EFT normally.</li>\n<li>Confirm Vanguard loads and the Off-Raid Operator interface is available.</li>\n</ol>\n<hr />\n<h3>Fika Host</h3>\n<ol>\n<li>Install the required SPT/AI dependency stack.</li>\n<li>Install the release-compatible Fika Core/Server stack.</li>\n<li>Extract Vanguard into the appropriate SPT installation(s) according to the release package instructions.</li>\n<li>Start the Fika host environment.</li>\n<li>Confirm Vanguard loads and Operator state is available before entering a raid.</li>\n</ol>\n<hr />\n<h3>Fika dedicated Headless</h3>\n<ol>\n<li>Install the required SPT/AI dependency stack.</li>\n<li>Install the release-compatible Fika Core/Server stack.</li>\n<li>Install the compatible Fika Headless package on the dedicated Headless instance.</li>\n<li>Deploy Vanguard to the server/client/Headless locations specified by the release package.</li>\n<li>Start the server and Headless environment, then join with the player client.</li>\n<li>Confirm Vanguard Operator runtime/HUD state is available in raid.</li>\n</ol></div></div>\n<div id=\"tabset-1-panel-8\" class=\"tab-panel\"><div class=\"tab-title\">Roadmap</div>\n<div class=\"tab-content\"><p>Vanguard\u2019s current public development cycle is primarily a <strong>stabilization and compatibility-validation cycle</strong>.</p>\n<p>Community bug reports, compatibility findings and reproducible runtime issues take priority over major new gameplay systems. Bounded Off-Raid quality-of-life improvements may continue where they do not destabilize the release line.</p>\n<h3>Post-release core iteration</h3>\n<p>Planned directions include:</p>\n<ul>\n<li><strong>Relationships and affinity</strong> \u2014 trust, loyalty, friendship, rivalry or hostility shaped by shared operations and outcomes.</li>\n<li><strong>Dynamic Operator events</strong> \u2014 personal situations and events between raids or during deployments.</li>\n<li><strong>Emergent encounters</strong> \u2014 meeting known Operators outside the player\u2019s immediate deployed squad context.</li>\n<li><strong>Assistance and conflict</strong> \u2014 Operators helping independently, requiring assistance, refusing decisions or potentially becoming adversaries.</li>\n<li><strong>Deeper career progression</strong> \u2014 experience, specialization, history and repeated behavior contributing to distinctive identities.</li>\n<li><strong>Expanded Off-Raid management</strong> \u2014 contracts, economy, hospital, personnel records and Operator management.</li>\n<li><strong>Tactical knowledge</strong> \u2014 expanding player-authored tactical knowledge, with features presented as shipping only after qualification.</li>\n<li><strong>Public API foundations</strong> \u2014 stable, controlled Vanguard contracts so future extensions do not depend on private implementation details.</li>\n</ul>\n<hr />\n<h3>Narrative &amp; Network Expansion \u2014 Future</h3>\n<p>Vanguard\u2019s longer-term goal is for persistent Operators to become more than squad members whose state survives between raids.</p>\n<p>Future work is planned around a narrative/extensibility layer that can connect <strong>real Operator history and raid events</strong> to conversations, personal stories, relationships, recruitment and assignments from the wider Vanguard network.</p>\n<p>The intended architecture is a provider-independent <strong>Vanguard Narrative API</strong>. Vanguard Core remains authoritative for Operator identity, persistence and gameplay truth; narrative systems consume that truth through controlled contracts rather than owning or reconstructing it.</p>\n<p><strong>VisitAPI</strong> is currently a technology of interest for an optional presentation provider/bridge for dialogue, quests and related interactions. It is <strong>not a current Vanguard dependency or compatibility guarantee</strong>.</p>\n<p>Two official future expansion concepts are currently identified:</p>\n<ul>\n<li><strong>Vanguard \u2014 Operator Stories</strong> \u2014 personal narratives and interactions driven by persistent Operators, their relationships and their actual raid history.</li>\n<li><strong>Vanguard \u2014 Network Assignments</strong> \u2014 optional contracts, objectives and mission chains originating from the wider Vanguard network.</li>\n</ul>\n<p>The same API direction may later support community-created story, recruitment and assignment packs without requiring direct patches to Vanguard Core.</p>\n<blockquote>\n<p><strong>Vanguard is not a faction. It is a network.</strong></p>\n</blockquote>\n<p>These are <strong>post-release directions</strong>, not current features. No delivery date or final API surface is committed. Any narrative-provider integration must be explicitly qualified for the supported standalone/Fika topologies before it is advertised as supported.</p>\n<blockquote>\n<p>The roadmap describes intended direction, not guaranteed dates or features. Stability, technical qualification and community evidence determine priority.</p>\n</blockquote></div></div>\n<div id=\"tabset-1-panel-9\" class=\"tab-panel\"><div class=\"tab-title\">Support</div>\n<div class=\"tab-content\"><p>Vanguard is currently in an Alpha/Beta field-validation phase. Good reports are especially valuable because they help distinguish Vanguard defects from dependency, topology and mod-authority conflicts.</p>\n<h3>Before reporting</h3>\n<ul>\n<li>Confirm that your Vanguard and required dependency versions match the release page.</li>\n<li>Check the published compatibility information and any player-visible Known Issues.</li>\n<li>Note whether you are using standalone SPT, Fika Host or Fika dedicated Headless.</li>\n<li>Identify other mods that can control allied PMCs, squads, spawning, navigation or AI behavior.</li>\n</ul>\n<hr />\n<h3>What to include</h3>\n<p>Please include:</p>\n<p>Vanguard version\nExecution topology\nConcise reproduction steps\nWhat you expected to happen\nWhat actually happened\nRelevant logs</p>\n<hr />\n<h3>Required logs \u2014 Standalone SPT</h3>\n<p>Attach:</p>\n<ol>\n<li><code>&lt;SPT&gt;\\BepInEx\\LogOutput.log</code> \u2014 the EFT/Vanguard client runtime log.</li>\n<li>The current <code>&lt;SPT Server&gt;\\user\\logs\\spt\\spt*.log</code> \u2014 the SPT server console log.</li>\n<li><code>&lt;SPT Server&gt;\\user\\vanguard\\operators\\vanguard-server.log</code> \u2014 Vanguard\u2019s server-side log.</li>\n</ol>\n<hr />\n<h3>Required logs \u2014 Fika Host</h3>\n<p>Attach:</p>\n<ol>\n<li>The host player\u2019s <code>&lt;SPT&gt;\\BepInEx\\LogOutput.log</code>.</li>\n<li>The current <code>&lt;SPT Server&gt;\\user\\logs\\spt\\spt*.log</code>.</li>\n<li><code>&lt;SPT Server&gt;\\user\\vanguard\\operators\\vanguard-server.log</code>.</li>\n</ol>\n<hr />\n<h3>Required logs \u2014 Fika dedicated Headless</h3>\n<p>Attach:</p>\n<ol>\n<li>The player client\u2019s <code>&lt;SPT&gt;\\BepInEx\\LogOutput.log</code>.</li>\n<li>The dedicated Headless instance\u2019s <code>&lt;Headless SPT&gt;\\BepInEx\\LogOutput.log</code>.</li>\n<li>The current <code>&lt;SPT Server&gt;\\user\\logs\\spt\\spt*.log</code>.</li>\n<li><code>&lt;SPT Server&gt;\\user\\vanguard\\operators\\vanguard-server.log</code>.</li>\n</ol>\n<p>Because the player-client and Headless files have the same filename, label the two <code>LogOutput.log</code> files clearly when attaching them.</p>\n<p>Controller-status files, Raid Review data and other extended diagnostics are <strong>not required for the initial report</strong> unless support specifically asks for them.</p>\n<hr />\n<h3>Diagnostic level for reproductions</h3>\n<p>Open the BepInEx Configuration Manager with <strong>F12</strong>, then use:</p>\n<p><code>Vanguard - Diagnostics</code> \u2192 <code>Audit level</code></p>\n<p>Start with <strong>Operational</strong>. If the issue can be reproduced reliably and more detail is required, use <strong>Diagnostic</strong>. Use <strong>Trace</strong> only for short targeted reproductions because it is intentionally very verbose.</p>\n<hr />\n<h3>Compatibility reports</h3>\n<p>When reporting a mod combination, include the exact other mod version and relevant settings.</p>\n<p>\u201cBoth mods load\u201d is not enough to prove compatibility when both can own the same allied PMC behavior. Vanguard distinguishes logical authority conflicts from concrete technical crashes.</p>\n<hr />\n<h3>Where to report</h3>\n<p>For the public release:</p>\n<ul>\n<li>Reproducible technical bugs and compatibility reports \u2192 <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/HiBan-ops/vanguard/issues\" rel=\"noreferrer noopener\"><strong>GitHub Issues</strong></a></li>\n<li>General questions and troubleshooting \u2192 <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/HiBan-ops/vanguard/discussions/categories/support-troubleshooting\" rel=\"noreferrer noopener\"><strong>GitHub Discussions \u2014 Support &amp; troubleshooting</strong></a></li>\n<li>Compatibility questions that are not yet confirmed bugs \u2192 <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/HiBan-ops/vanguard/discussions/categories/compatibility-questions\" rel=\"noreferrer noopener\"><strong>GitHub Discussions \u2014 Compatibility questions</strong></a></li>\n</ul></div></div>\n<div id=\"tabset-1-panel-10\" class=\"tab-panel\"><div class=\"tab-title\">Credits &amp; Source</div>\n<div class=\"tab-content\"><h3>Source</h3>\n<p>Vanguard\u2019s public source repository:</p>\n<p><code>https://github.com/HiBan-ops/vanguard</code></p>\n<p>The public repository tracks the source corresponding to published Vanguard releases.</p>\n<hr />\n<h3>External ecosystem</h3>\n<p>Vanguard builds on and integrates with the SPT modding ecosystem rather than claiming ownership of those projects.</p>\n<p>Its current architecture relies on external projects for areas including:</p>\n<ul>\n<li><strong>SAIN</strong> \u2014 primary individual combat intelligence</li>\n<li><strong>BigBrain</strong> \u2014 behavior-layer infrastructure</li>\n<li><strong>Waypoints</strong> \u2014 AI/navigation stack</li>\n<li><strong>MoreBotsAPI</strong> \u2014 custom Operator-role support</li>\n<li><strong>Fika</strong> \u2014 optional networking/topology support</li>\n</ul>\n<p>Additional compatible or optional integrations remain the work of their respective authors and projects.</p></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/tQqCGWLFpcZiMC2rKygkGdOamWEB9hEJxwe9iYXI.png",
    "forge_url": "https://sp-mod.com/mod/2958/vanguard",
-   "downloads": 213,
+   "downloads": 267,
    "favourites": 5,
    "featured": false,
    "fika": true,
@@ -192317,12 +192397,53 @@
    ],
    "versions": [
     {
+     "id": 15197,
+     "version": "0.7.8",
+     "description": "<h2>Vanguard 0.7.8</h2>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/HiBan-ops/vanguard/main/docs/media/spmod/vanguard077-changes.png\" alt=\"Vanguard 0.7.8 changes\" /></p>\n<h3>Off-Raid &amp; Operator sessions</h3>\n<ul>\n<li>Reworked the Vanguard Off-Raid interface and navigation.</li>\n<li>Operator inventory sessions now persist across supported contextual screens.</li>\n<li>Added clearer <code>SESSION ACTIVE</code> and player-session restoration indicators.</li>\n<li>Improved Flea Market, Weapon Modding and Main Menu return handling.</li>\n<li>Hardened Operator inventory commit and player-profile restoration.</li>\n</ul>\n<h3>Main Menu interoperability</h3>\n<ul>\n<li>Added a new extensible Vanguard button placement system.</li>\n<li>Built-in profiles for Menu Overhaul, Career Log, and both combined.</li>\n<li>Button position can be adjusted live through F12.</li>\n<li>Custom mod combinations can be added through <code>MainMenuPlacementProfiles.jsonc</code>.</li>\n<li>Vanguard no longer needs to move third-party menu buttons.</li>\n</ul>\n<h3>Other</h3>\n<ul>\n<li>UI readability and Operator presentation improvements.</li>\n<li>Multiple Off-Raid lifecycle and stability fixes.</li>\n<li>General runtime and source cleanup.</li>\n</ul>\n<p><strong>SPT 4.0.13</strong></p>\n",
+     "spt_constraint": "4.0.13",
+     "fika": "compatible",
+     "downloads": 2,
+     "size": 5771618,
+     "link": "https://sp-mod.com/mod/download/2958/vanguard/0.7.8",
+     "published_at": "2026-09-04T20:19:00.000000Z",
+     "dependencies": [
+      {
+       "id": 791,
+       "name": "SAIN - Solarint's AI Modifications - Full AI Combat System Replacement",
+       "slug": "sain-solarints-ai-modifications-full-ai-combat-system-replacement",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement"
+      },
+      {
+       "id": 827,
+       "name": "Waypoints - Expanded Navmesh",
+       "slug": "waypoints-expanded-navmesh",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/827/waypoints-expanded-navmesh"
+      },
+      {
+       "id": 902,
+       "name": "BigBrain",
+       "slug": "bigbrain",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/902/bigbrain"
+      },
+      {
+       "id": 2426,
+       "name": "MoreBotsAPI",
+       "slug": "morebotsapi",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2426/morebotsapi"
+      }
+     ]
+    },
+    {
      "id": 15159,
      "version": "0.7.6",
      "description": "<h2>Vanguard 0.7.6</h2>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/HiBan-ops/vanguard/main/docs/media/spmod/vanguard-contracts.jpg\" alt=\"Vanguard Contract Market\" /></p>\n<h3>Main changes</h3>\n<ul>\n<li>Fixed Contract Market generation for high-level PMC profiles.</li>\n<li>Operator contract levels are no longer capped and now follow the EFT/SPT experience curve dynamically.</li>\n<li>Existing Operators are preserved and do not require migration.</li>\n</ul>\n<h3>Optional clean reset</h3>\n<p>If you prefer to start with a completely fresh Vanguard Operator and Contract pool, stop the SPT server and delete:</p>\n<p><code>SPT/user/vanguard/operators</code></p>\n<p>Vanguard will recreate the storage automatically on the next start.</p>\n",
      "spt_constraint": "4.0.13",
      "fika": "compatible",
-     "downloads": 18,
+     "downloads": 66,
      "size": 2775414,
      "link": "https://sp-mod.com/mod/download/2958/vanguard/0.7.6",
      "published_at": "2026-09-02T10:48:00.000000Z",
@@ -192363,7 +192484,7 @@
      "description": "<h2>Vanguard 0.7.5</h2>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/HiBan-ops/vanguard/main/docs/media/spmod/vanguard-menuoverhaul.jpg\" alt=\"Vanguard Menu Overhaul\" /></p>\n<h3>Main changes</h3>\n<ul>\n<li>Added <strong>Menu Overhaul compatibility</strong>.</li>\n<li>Added a dedicated <strong>Vanguard main-menu icon</strong> and improved menu integration.</li>\n<li>Improved <strong>Career</strong> and <strong>Raid History</strong> readability.</li>\n<li>Fixed several <strong>Off-Raid Equipment and commerce issues</strong>, including Flea/trader progression authority and repeated purchase handling.</li>\n<li>Improved <strong>Off-Raid UI interoperability</strong> and recovery after problematic Equipment sessions.</li>\n<li>Extended <strong>Tactical Editor runtime support</strong> to standalone play, Fika direct host and Fika Headless.</li>\n<li>Hardened <strong>Vanguard Operator AI authority</strong> to preserve the intended Vanguard + SAIN behavior boundaries.</li>\n<li>Improved the intermittent <strong>cursor/input issue at raid spawn</strong> with a safer BattleUI lifecycle safeguard.</li>\n<li>Simplified the <strong>diagnostics system</strong> around the Audit Level setting.</li>\n<li>Added several <strong>performance, caching and runtime stability improvements</strong>.</li>\n</ul>\n",
      "spt_constraint": "4.0.13",
      "fika": "compatible",
-     "downloads": 35,
+     "downloads": 37,
      "size": 2775032,
      "link": "https://sp-mod.com/mod/download/2958/vanguard/0.7.5",
      "published_at": "2026-09-01T23:34:29.000000Z",
@@ -192404,7 +192525,7 @@
      "description": "<h2>Vanguard 0.7.0 \u2014 First Public Release</h2>\n<p>This is the first public Alpha/Beta release of Vanguard.</p>\n<p>Vanguard introduces persistent PMC Operators who can be recruited, equipped, deployed, injured, recovered and progressed across raids.</p>\n<h3>Included in 0.7.0</h3>\n<ul>\n<li>Persistent Operator roster and identities</li>\n<li>Off-Raid recruitment, contracts, equipment and recovery</li>\n<li>Persistent equipment, medical state and progression</li>\n<li>Squad cohesion and regrouping behavior</li>\n<li>Opportunistic looting and survival priorities</li>\n<li>SAIN-based individual combat behavior</li>\n<li>Tactical Editor with persistent authored zones and slots</li>\n<li>Fika Host support</li>\n<li>Fika dedicated Headless support</li>\n<li>Configurable runtime diagnostics and main vanguard settings through F12</li>\n</ul>\n<p>This initial public release targets <strong>SPT 4.0.13</strong>.</p>\n<p>Please read the main mod page for requirements, compatibility information, Known Issues and support instructions before installing.</p>\n",
      "spt_constraint": "4.0.13",
      "fika": "compatible",
-     "downloads": 160,
+     "downloads": 162,
      "size": 2750525,
      "link": "https://sp-mod.com/mod/download/2958/vanguard/0.7.0",
      "published_at": "2026-08-29T21:35:00.000000Z",
@@ -192440,7 +192561,7 @@
      ]
     }
    ],
-   "latest_version": "0.7.6",
+   "latest_version": "0.7.8",
    "spt_constraint": "4.0.13",
    "all_spt_constraints": [
     "4.0.13"
@@ -192506,7 +192627,7 @@
     }
    ],
    "published_at": "2026-08-29T21:36:00.000000Z",
-   "updated_at": "2026-09-02T16:21:22.000000Z",
+   "updated_at": "2026-09-04T20:20:05.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
@@ -193641,7 +193762,7 @@
    "description_html": "<p>A blackjack table in your menu. Six decks, a server-dealt shoe, and your own money on the felt.</p>\n<p>There is no unlock, no hideout requirement and no quest. Install it, and a <strong>BLACKJACK</strong> tab appears on the bar along the bottom of the menu, beside HIDEOUT \u2014 on a profile five minutes old or one with a thousand raids behind it.</p>\n<p>The bar is on every screen outside a raid, so the table opens from the hideout, the flea market or a trader screen without backing out of them first.</p>\n<p>You can stake roubles, dollars, euros, GP coins, physical bitcoin or Lega medals. They come out of your inventory and a hand you lose is gone. <strong>Your gear is never at stake</strong> \u2014 weapons, armour and rigs cannot be bet.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/v05YUz3.png\" alt=\"Blackjack\" /></p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Playing</div>\n<div class=\"tab-content\"><p>Click the <strong>BLACKJACK</strong> tab at the bottom of the screen. Pick a currency, type an amount, press <strong>DEAL</strong>.</p>\n<p>From there it is blackjack: <strong>HIT</strong>, <strong>STAND</strong>, <strong>DOUBLE</strong> and <strong>SPLIT</strong> appear when they are legal. The dealer\u2019s second card stays face down until the hand is over.</p>\n<ul>\n<li>Six decks, reshuffled at three quarters</li>\n<li>Dealer stands on soft 17</li>\n<li>Blackjack pays <strong>3:2</strong> in currency, even money in valuables</li>\n<li>Double after split, up to four hands</li>\n</ul>\n<p>Escape leaves the table and puts you back on the screen you opened it from. You cannot walk away mid-hand \u2014 the stake is already down.</p>\n<p>Naturals pay even money on bitcoin, GP and Lega for a simple reason: one bitcoin at 3:2 settles on half a coin, and half a bitcoin does not exist.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Bet limits</div>\n<div class=\"tab-content\"><p>Each currency has its own minimum and maximum.</p>\n<table>\n<thead>\n<tr>\n<th>Currency</th>\n<th>Minimum</th>\n<th>Maximum</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Roubles</td>\n<td>1,000</td>\n<td>500,000</td>\n</tr>\n<tr>\n<td>Dollars</td>\n<td>10</td>\n<td>5,000</td>\n</tr>\n<tr>\n<td>Euros</td>\n<td>10</td>\n<td>5,000</td>\n</tr>\n<tr>\n<td>GP coins</td>\n<td>1</td>\n<td>50</td>\n</tr>\n<tr>\n<td>Bitcoin</td>\n<td>1</td>\n<td>10</td>\n</tr>\n<tr>\n<td>Lega medals</td>\n<td>1</td>\n<td>5</td>\n</tr>\n</tbody>\n</table>\n<blockquote>\n<p><strong>The maximum is the point, not an annoyance.</strong> The house edge on these rules is about half a percent, which is nothing across an evening. What stops you getting rich is being unable to cover a losing streak by doubling up \u2014 and a ceiling five hundred times the minimum caps that at nine doubles.</p>\n</blockquote>\n<p><strong>You can turn it off.</strong> Press F12 in game, find <strong>Blackjack \u2192 Table</strong>, and untick <em>Enforce maximum bet</em>. Then the only limit is what you are carrying. The minimum always applies.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Your record</div>\n<div class=\"tab-content\"><p><strong>STATS</strong> clears the table and lays out your lifetime figures: rounds and hands played, wins, losses and pushes, blackjacks, busts, current and best streak, and how much you have staked and won back in every currency you have played.</p>\n<p>It is only there between hands.</p>\n<p>The record is kept in the mod\u2019s own folder, <strong>not in your profile</strong>. Uninstalling costs you nothing but the statistics, and your profile is never modified.</p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Installing</div>\n<div class=\"tab-content\"><p>Stop the server, then extract the archive into your SPT folder \u2014 the one containing <code>SPT_Runtime</code>. Two files go in, and both are needed: the server deals and holds the money, the client draws the table.</p>\n<pre><code>SPT_Runtime\\user\\mods\\Blackjack\\\nBepInEx\\plugins\\Blackjack\\\n</code></pre>\n<p>Start the server. <strong>Blackjack</strong> should appear in the mod list, and a <strong>BLACKJACK</strong> tab on the bar along the bottom of the game\u2019s menu.</p>\n<p>If the tab is missing, check the folder went to <code>SPT_Runtime\\user\\mods\\</code> and not to a <code>user\\mods\\</code> beside it \u2014 that is the one mistake that leaves no trace in the log.</p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Compatibility</div>\n<div class=\"tab-content\"><p><strong>The mod does not modify the main menu at all.</strong> Earlier versions added a BLACKJACK button to the menu\u2019s own list of entries; that is gone, and the tab replaced it.</p>\n<p>The tab is not drawn from scratch \u2014 it is a copy of one of the game\u2019s own tabs, taken from the bar it is joining. So it looks like whatever it sits next to: a mod that restyles the bar restyles ours with it, because ours is a copy of the result. It carries a diamond rather than a borrowed icon, dims and stops answering exactly when the rest of the row does, and the row reflows if another mod adds a tab of its own.</p>\n<p>That includes my own <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/JoelHauser/Poker-\" rel=\"noreferrer noopener\">Poker</a> mod, which adds a tab the same way. The two sit side by side, one diamond and one spade, and neither has to know about the other.</p></div></div></div>\n<h2>Notes</h2>\n<p>The server deals every card, scores every hand and moves every rouble. The game running on your PC never receives the dealer\u2019s hidden card until the hand ends, so it could not show you the outcome early even if it wanted to.</p>\n<p>The card faces are Chris Aguilar\u2019s <em>Vectorized Playing Cards</em>. They sit as ordinary PNGs beside the plugin, one per card, alongside the table photograph \u2014 swap either for your own, or delete them and the mod draws its own instead.</p>\n<p>Requires <strong>SPT 4.1.3</strong> or later 4.1.x.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/adPkcmhvQ8nxgZo8NSINHMshYVEx7xzx274Ez3xj.png",
    "forge_url": "https://sp-mod.com/mod/2972/blackjack",
-   "downloads": 796,
+   "downloads": 859,
    "favourites": 8,
    "featured": false,
    "fika": true,
@@ -193670,12 +193791,24 @@
    ],
    "versions": [
     {
+     "id": 15195,
+     "version": "1.1.4",
+     "description": "<h1>Blackjack 1.1.4</h1>\n<p><strong>One fix.</strong> The tab now gets out of the way when the bar along the bottom of the menu\nruns out of room. Nothing about the rules, the payouts or the money changed, and the\nserver half is untouched.</p>\n<h2>The bar was breaking every label in half</h2>\n<p>With enough mods installed, every tab on the bottom bar starts splitting its own name\nacross two lines \u2014 <code>HIDEOU/T</code>, <code>CHARACTE/R</code>, <code>BLACKJAC/K</code>. The bar sizes each tab from\nits label and then squeezes them all when there is no room left, and past a certain\nnumber of tabs the whole row becomes hard to read.</p>\n<p>It is not any one mod\u2019s doing. It took a handful of them together to get there: this\none, Poker, REDACTED, Raid Review\u2019s optional menu item and PIT Fireteam\u2019s slots. But\nBLACKJACK is one of the tabs on that row, so it is one of the reasons the row is full.</p>\n<p><strong>Now it gives way.</strong> When anything on the bar is breaking a word across lines, the tab\ndrops its label and keeps its diamond \u2014 about 112 units down to about 40 \u2014 and hands\nthe difference back to the tabs around it. When there is room again it takes its name\nback. Nothing to configure; it checks once a second and follows the bar as other mods\nadd and remove tabs, and as you change resolution.</p>\n<p><strong>This helps, and it is not a whole answer.</strong> One tab going compact frees perhaps 70\nunits of a 1920-wide row. If your bar is still crowded, the largest single thing you can\ndo is turn off Raid Review\u2019s menu item \u2014 it is <strong>off by default</strong> and adds a tab when\nswitched on, in <code>BepInEx\\config\\ekky.raidreview.cfg</code>:</p>\n<pre><code>Insert Menu Item = false\n</code></pre>\n<p>If you have Poker or REDACTED installed, they do the same thing now and for the same\nreason.</p>\n<h2>About the version number</h2>\n<p>There is no 1.1.3. It was built and it did not work: the check it used asked whether any\nlabel was narrower than it wanted to be, which sounds right and can never be true \u2014\nTextMeshPro does not overflow, it wraps, so a label is at its most broken at exactly the\nmoment it reports being the width it asked for. 1.1.4 asks the question you would ask\nlooking at the bar instead: is a single word split across two lines?</p>\n<h2>Upgrading</h2>\n<p>Drop it in over 1.1.2 and restart the game. No config changes. Your stats and any\nunsettled escrow are untouched \u2014 the server half is unchanged in this release.</p>\n",
+     "spt_constraint": "~4.1.0",
+     "fika": "unknown",
+     "downloads": 26,
+     "size": 5253183,
+     "link": "https://sp-mod.com/mod/download/2972/blackjack/1.1.4",
+     "published_at": "2026-09-04T19:44:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 15188,
      "version": "1.1.2",
      "description": "<h1>Blackjack 1.1.2</h1>\n<p><strong>One fix.</strong> The tab on the bottom bar now greys out while you are loading into a raid,\nthe way every other tab on that bar already did. Nothing about the rules, the payouts or\nthe money changed, and the server half is untouched.</p>\n<h2>The tab stayed lit on the deployment screen</h2>\n<p>Queue for a raid and the bar dims: MAIN MENU, HIDEOUT, TRADERS, FLEA MARKET and the rest\nall go grey, because none of them will take you anywhere from there. BLACKJACK stayed at\nfull brightness beside them, looking like the one thing still open for business.</p>\n<p>It was not. The table has always closed at the first sign of a raid and a click on the\ntab was already being refused \u2014 so this was never a way to lose money or to end up with\na card table on top of your raid. It was the tab telling you something that was not\ntrue, at exactly the moment you are watching a progress bar and looking for something to\ndo.</p>\n<p>Now it dims with its neighbours, to the same shade, and the hover highlight stops\nfollowing your cursor across it.</p>\n<h2>What was actually wrong</h2>\n<p>Worth writing down, because the tab had looked correct on every other screen.</p>\n<p>The tab is a copy of one of the game\u2019s own, and it takes its cue from a real tab so that\nit locks and unlocks at the same moments as the rest of the row without having to know\nwhy. It was watching the wrong half of that tab: the toggle\u2019s <code>interactable</code> flag, which\nis a value set once in the prefab and never touched again.</p>\n<p>The game dims a tab through the <code>CanvasGroup</code> on the tab\u2019s wrapper instead \u2014 that is\nwhere the alpha and the interactable flag it actually changes both live. So the tab it\nwas copying went grey and the flag being watched never moved, and the copy stayed bright\nthrough the whole loading screen.</p>\n<p>It reads that <code>CanvasGroup</code> now, and it also dims on its own account the moment a raid\nstarts loading, without waiting to be told by the bar.</p>\n",
      "spt_constraint": "~4.1.0",
      "fika": "unknown",
-     "downloads": 26,
+     "downloads": 61,
      "size": 5251980,
      "link": "https://sp-mod.com/mod/download/2972/blackjack/1.1.2",
      "published_at": "2026-09-04T13:59:00.000000Z",
@@ -193723,14 +193856,14 @@
      "description": "<p>Release</p>\n",
      "spt_constraint": "~4.1.0",
      "fika": "unknown",
-     "downloads": 196,
+     "downloads": 198,
      "size": 5289479,
      "link": "https://sp-mod.com/mod/download/2972/blackjack/1.0.0",
      "published_at": "2026-08-30T22:03:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.1.2",
+   "latest_version": "1.1.4",
    "spt_constraint": "~4.1.0",
    "all_spt_constraints": [
     "~4.1.0"
@@ -193738,7 +193871,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-08-30T21:56:00.000000Z",
-   "updated_at": "2026-09-04T14:00:46.000000Z",
+   "updated_at": "2026-09-04T19:49:22.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
@@ -194856,7 +194989,7 @@
    "description_html": "<h1>Poker 1.0.0</h1>\n<p><strong>First release.</strong> No-limit Texas Hold\u2019em against bots, at a table in your menu, played\nwith your own roubles.</p>\n<p>This is not a slot machine with cards on it. There is a pot, the bots bet into it, and\nyou win their chips or lose yours.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/D1Wx5wJ.png\" alt=\"Blackjack\" /></p>\n<h2>The game</h2>\n<p>Six-max minus one: <strong>up to five seats including you</strong>, small blind and big blind, a\nbutton that moves, and all four streets. Blinds are <strong>10,000 / 20,000</strong> and the buy-in\nis <strong>1,000,000</strong> \u2014 fifty big blinds, which is a real short-stacked cash game rather\nthan a novelty.</p>\n<p>The engine is the part that had the most work put into it. The hand evaluator is\nchecked against <strong>all 2,598,960 distinct five-card hands</strong> and their published category\ncounts, so it is not wrong about a hand anywhere in the deck. Side pots, uncalled bets\nand the odd chip on a split are all handled, and the table is fuzzed through hundreds\nof hands of random aggression checking after <strong>every single action</strong> that chips are\nneither created nor destroyed.</p>\n<h2>The opponents</h2>\n<p>The bots are the point, and they are not a lookup table with names on.</p>\n<p>Each seat estimates how often its hand wins by <strong>Monte Carlo rollout</strong> over the unseen\ncards \u2014 which means aces against one opponent and aces against four are different hands\nto them, the thing no starting chart can tell a bot. Against that they weigh the price\nin pot odds, their position, what is already in the pot, how deep they are, and how many\nplayers are still live.</p>\n<p>They bet from a <strong>discrete menu of sizes</strong> \u2014 about a third of the pot, two thirds, pot,\nall-in \u2014 because naive no-limit sizing is what gives a bot away instantly. You are not\nrestricted to the menu; it exists so their decisions are tractable.</p>\n<p>Seven characters sit behind one decision procedure, separated by five dials rather than\nby five different sets of code. Facing a bet, a Rock folds 78% of the time and a Gambler\n27%. They are also <strong>blended and improvised</strong>, so a table is filled with people who are\nmostly a grinder with a streak of gambler in them rather than with the seven originals,\nand <strong>they tilt</strong>: a seat that has been losing chases, a careful one shuts down, and how\nmuch any of it reaches them is itself one of the dials.</p>\n<p>They are named from the game\u2019s own PMC nickname list, so you are playing against people\ncalled things you would meet in a raid. A bot that busts leaves and somebody new sits\ndown.</p>\n<p><strong>A bot can only see what a player in that seat could see</strong> \u2014 its own two cards, the\nboard, the betting, the stacks. Never another seat\u2019s cards, never the deck. That is\nstructural rather than a promise: they are not handed the information, so they cannot\nuse it.</p>\n<h2>The money</h2>\n<p><strong>One chip is one rouble.</strong> You buy in for 1,000,000 out of your stash, and whatever is\nin front of you when you stand up goes back in. The difference is what you won or lost.</p>\n<ul>\n<li>Roubles only for now. One chip to the unit means a million-chip table needs a million\nof something, and nothing else is held in those numbers.</li>\n<li><strong>Your gear is never at stake.</strong> Weapons, armour and rigs cannot be bet.</li>\n<li>The server deals every card, scores every hand and moves every rouble. Your game\nnever receives a hidden card until the hand is over.</li>\n<li>If you close the game at the table, the chips in front of you are recorded. Open the\ntable again and they are handed straight back.</li>\n</ul>\n<p>There is <strong>no house edge</strong>, and that is worth being plain about: this is not a casino\ngame with a built-in rake. What the mod pays out is exactly how much better you are\nthan the bots. Beat them consistently and it is a source of roubles.</p>\n<h2>Where it lives</h2>\n<p>A <strong>POKER</strong> tab on the bar along the bottom of the menu, beside HIDEOUT. That bar is on\nevery screen outside a raid, so the table opens from the hideout, the flea market or a\ntrader screen without backing out of them first. The mod does not touch the main menu.</p>\n<p>Escape closes the table and leaves you on the screen you opened it from. The table\ncloses itself the moment a raid starts loading, and the tab greys out with the rest of\nthe row.</p>\n<p>If you also run my <strong>Blackjack</strong> mod, the two tabs sit side by side \u2014 one spade, one\ndiamond \u2014 and neither has to know about the other.</p>\n<h2>Installing</h2>\n<p>Stop the server, then extract the archive into your SPT folder \u2014 the one containing\n<code>SPT_Runtime</code>. Both halves are needed: the server deals and holds the money, the client\ndraws the table.</p>\n<pre><code>SPT_Runtime\\user\\mods\\Poker\\\nBepInEx\\plugins\\Poker\\\n</code></pre>\n<p>Start the server and look for a <strong>[Poker]</strong> block in the console. Silence means the\nversion gate \u2014 this needs <strong>SPT 4.1.3</strong> or later 4.1.x.</p>\n<p>If the tab is missing, check the folder went to <code>SPT_Runtime\\user\\mods\\</code> and not to a\n<code>user\\mods\\</code> beside it. That is the one mistake that leaves no trace in the log.</p>\n<h2>Known limits</h2>\n<ul>\n<li><strong>Roubles only.</strong> Dollars and euros are refused at these stakes.</li>\n<li><strong>Side pots are settled correctly but drawn as one pot.</strong> The money is right; the\npicture is simpler than the truth when somebody is all-in.</li>\n<li><strong>No statistics screen yet.</strong></li>\n<li>Seats, buy-in and blinds are fixed rather than chosen at the table.</li>\n</ul>\n<h2>Notes</h2>\n<p>The card faces are Chris Aguilar\u2019s <em>Vectorized Playing Cards</em>. They sit as ordinary\nPNGs beside the plugin, one per card, alongside the table photograph and the chips \u2014\nswap any of them for your own, or delete them and the mod draws its own instead.</p>\n<p>Verbose logging is on by default, so the server console narrates every hand and every\nbot decision. Turn it off in <code>config.json</code> once you are happy it works.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/j7LPrkWkAY3rFREnRLsM9JFjmGtg0KC8PvFTNkJ7.png",
    "forge_url": "https://sp-mod.com/mod/2991/poker",
-   "downloads": 21,
+   "downloads": 67,
    "favourites": 1,
    "featured": false,
    "fika": false,
@@ -194885,19 +195018,31 @@
    ],
    "versions": [
     {
+     "id": 15196,
+     "version": "1.0.2",
+     "description": "<h1>Poker 1.0.2</h1>\n<p><strong>One fix.</strong> The tab now gets out of the way when the bar along the bottom of the menu\nruns out of room. Nothing about the game, the bots, the payouts or the money changed,\nand the server half is untouched.</p>\n<h2>The bar was breaking every label in half</h2>\n<p>With enough mods installed, every tab on the bottom bar starts splitting its own name\nacross two lines \u2014 <code>HIDEOU/T</code>, <code>CHARACTE/R</code>, <code>POKE/R</code>. The bar sizes each tab from its\nlabel and then squeezes them all when there is no room left, and past a certain number\nof tabs the whole row becomes hard to read.</p>\n<p>It is not any one mod\u2019s doing. It took a handful of them together to get there: this\none, Blackjack, REDACTED, Raid Review\u2019s optional menu item and PIT Fireteam\u2019s slots. But\nPOKER is one of the tabs on that row, so it is one of the reasons the row is full.</p>\n<p><strong>Now it gives way.</strong> When anything on the bar is breaking a word across lines, the tab\ndrops its label and keeps its spade \u2014 about 112 units down to about 40 \u2014 and hands the\ndifference back to the tabs around it. When there is room again it takes its name back.\nNothing to configure; it checks once a second and follows the bar as other mods add and\nremove tabs, and as you change resolution.</p>\n<p><strong>This helps, and it is not a whole answer.</strong> One tab going compact frees perhaps 70\nunits of a 1920-wide row. If your bar is still crowded, the largest single thing you can\ndo is turn off Raid Review\u2019s menu item \u2014 it is <strong>off by default</strong> and adds a tab when\nswitched on, in <code>BepInEx\\config\\ekky.raidreview.cfg</code>:</p>\n<pre><code>Insert Menu Item = false\n</code></pre>\n<p>If you have Blackjack or REDACTED installed, they do the same thing now and for the same\nreason.</p>\n<h2>About the version number</h2>\n<p>There is no 1.0.1. It was built and it did not work: the check it used asked whether any\nlabel was narrower than it wanted to be, which sounds right and can never be true \u2014\nTextMeshPro does not overflow, it wraps, so a label is at its most broken at exactly the\nmoment it reports being the width it asked for. 1.0.2 asks the question you would ask\nlooking at the bar instead: is a single word split across two lines?</p>\n<h2>Upgrading</h2>\n<p>Drop it in over 1.0.0 and restart the game. No config changes. Your chips, your stats\nand any unsettled escrow are untouched \u2014 the server half is unchanged in this release.</p>\n",
+     "spt_constraint": "~4.1.0",
+     "fika": "unknown",
+     "downloads": 12,
+     "size": 6609451,
+     "link": "https://sp-mod.com/mod/download/2991/poker/1.0.2",
+     "published_at": "2026-09-04T19:47:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 15191,
      "version": "1.0.0",
      "description": "<p>Release</p>\n",
      "spt_constraint": "~4.1.0",
      "fika": "unknown",
-     "downloads": 21,
+     "downloads": 55,
      "size": 6608232,
      "link": "https://sp-mod.com/mod/download/2991/poker/1.0.0",
      "published_at": "2026-09-04T15:03:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.0.0",
+   "latest_version": "1.0.2",
    "spt_constraint": "~4.1.0",
    "all_spt_constraints": [
     "~4.1.0"
@@ -194905,11 +195050,86 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-09-04T15:01:00.000000Z",
-   "updated_at": "2026-09-04T15:13:03.000000Z",
+   "updated_at": "2026-09-04T19:49:46.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
     "ai_disclosure": "<p>Developed with assistance from Claude Opus.</p>\n",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 2992,
+   "hub_id": null,
+   "guid": "com.inku.inspectionlessmalfsreborn",
+   "name": "Inspectionless Malfunctions Reborn",
+   "slug": "inspectionless-malfunctions-reborn",
+   "teaser": "No more inspecting malfunctions before clearing them!",
+   "description_html": "<h3>Credit</h3>\n<hr />\n<p>Thank you to Fontaine for the original mod and letting me update the mod for 4.1.x!</p>\n<h3>About</h3>\n<hr />\n<p>No longer will you need to inspect your weapon prior to fixing a malfunction. When a malfunction occurs, press your Check Chamber/Fix Malfunction keybind to clear it instead of inspecting THEN clearing.</p>\n<p>That\u2019s it. Nothing more, nothing less. <em>Now for SPT 4.1.x</em>!</p>\n<h3>Installation</h3>\n<hr />\n<p>To install put the .dll file into your ./BepInEx/plugins directory</p>\n<h3>Known Issues</h3>\n<hr />\n<p>If you spam the keybind for clearing malfunctions while reloading while having a malfunction your hands will freeze. Just don\u2019t spam the clear malf keybind while reloading and you\u2019ll never encounter this.</p>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/bA31JYbxHViJ6K5mrGgL7STK7ITnehJnxQ8P3AUe.png",
+   "forge_url": "https://sp-mod.com/mod/2992/inspectionless-malfunctions-reborn",
+   "downloads": 42,
+   "favourites": 0,
+   "featured": false,
+   "fika": false,
+   "fika_latest": "unknown",
+   "category": {
+    "id": 17,
+    "title": "Other",
+    "slug": "other"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 11132,
+     "name": "INKU",
+     "avatar": "https://files.sp-mod.com/profile-photos/tHi3u7i8aGsyAEMjMKg0RS8GjAnpMhdArpLRsOiW_128w.webp"
+    },
+    {
+     "id": 6053,
+     "name": "Fontaine",
+     "avatar": "https://files.sp-mod.com/profile-photos/8006b0b5a2c55430260a5ee57ae5eb204508134d_128w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/lNKU/InspectionlessMalfsReborn",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 15194,
+     "version": "1.0.0",
+     "description": "<p>initial release</p>\n",
+     "spt_constraint": "~4.1.",
+     "fika": "unknown",
+     "downloads": 42,
+     "size": 4977,
+     "link": "https://sp-mod.com/mod/download/2992/inspectionless-malfunctions-reborn/1.0.0",
+     "published_at": "2026-09-04T19:42:00.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "1.0.0",
+   "spt_constraint": "~4.1.",
+   "all_spt_constraints": [
+    "~4.1."
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-09-04T18:33:00.000000Z",
+   "updated_at": "2026-09-04T19:44:06.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": true,
+    "ai_disclosure": "<p>AI was used to identify which struct forced malfunctions for debugging. Mod\u2019s base code is refactored by myself.</p>\n",
     "cheat_notice": false,
     "profile_binding_notice": false
    },
