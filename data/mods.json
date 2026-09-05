@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-09-05T04:38:30Z",
+ "generated_at": "2026-09-05T10:43:50Z",
  "source": "https://sp-mod.com",
  "filter": "all",
- "mod_count": 1927,
+ "mod_count": 1928,
  "categories": [
   {
    "id": 12,
@@ -4519,8 +4519,8 @@
    "description_html": "<h1>Installation</h1>\n<ul>\n<li>copy BlueheadsAIOTrader folder into [SPT_INSTALL_FOLDER]/SPT/user/mods</li>\n</ul>\n<h1>Usage</h1>\n<ul>\n<li>buy everything in game database from AIOTrader</li>\n<li>get AIOKeysCase, AIOAmmoCase, encoded DSP Transmitter by send message to Commando, see how to use Commando[https://wiki.sp-tarkov.com/en/SPT_and_Commando_Bots]</li>\n<li>send <code>aio give key</code> to get a case include all key</li>\n<li>send <code>aio give ammo</code> to get a case include all ammo with 99999 stacked</li>\n<li>send <code>aio give dsp</code> to get a encoded DSP Transmitter</li>\n</ul>\n<h1>Configuration</h1>\n<p>Edit BlueheadsAIOTrader/data/config.json</p>\n<pre><code>   enable_aiotrader: toggle trader\n   realistic_price.enable: toggle the realistic_price\n   custom_price: force aioTrader to sell specific items at the price you specify\n   hide_no_price_item: let aiotrader not sell items without realistic or custom price\n\n   hide_all_ammo_ammopacks: hide ammo &amp; ammopacks from aiotrader to make it load faster\n   hide_all_keys_cards: hide keys &amp; cards from aiotrader to make it load faster\n   hide_all_builtin_inserts: hide armor vest builtin inserts from aiotrader to make it load faster\n</code></pre>\n<h1>Changelog</h1>\n<h2>Version 5.0.0</h2>\n<ul>\n<li>update for spt 4.0.1</li>\n<li>BluheadTrader has been removed. The AIOKeyCase and AIOAmmoCase etc\u2026 are now provided via Commando commands for improved mod compatibility.</li>\n<li>get AIOKeysCase, AIOAmmoCase, encoded DSP Transmitter by send message to Commando, see how to use Commando[https://wiki.sp-tarkov.com/en/SPT_and_Commando_Bots]</li>\n<li>send <code>aio give key</code> to get a case include all key</li>\n<li>send <code>aio give ammo</code> to get a case include all ammo with 99999 stacked</li>\n<li>send <code>aio give dsp</code> to get a encoded DSP Transmitter</li>\n</ul>\n",
    "thumbnail": "https://files.sp-mod.com/mods/558.png",
    "forge_url": "https://sp-mod.com/mod/374/blueheads-aio-trader",
-   "downloads": 147179,
-   "favourites": 36,
+   "downloads": 150280,
+   "favourites": 56,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -4548,12 +4548,24 @@
    ],
    "versions": [
     {
+     "id": 15205,
+     "version": "5.2.4",
+     "description": "<p>\u26a0\ufe0f This release targets SPT 4.0.x (tested on 4.0.13) and is NOT compatible with SPT 4.1 or later. For SPT 4.1+, use v5.3.x instead.</p>\n<p>New Features</p>\n<p>Preset weapons: The trader now sells all default weapon presets as fully built, ready-to-use weapons.</p>\n<p>Improved ammo box (aio give ammo): Ammo is now delivered respecting each caliber\u2019s actual stack size limit instead of an oversized stack that caused item bugs. The command now sends multiple sub-boxes (default 10, up to 100 with aio give ammo [n]), each containing every ammo type at its correct stack limit. Grenade-launcher rounds (40mmRU, 40x46, 30x29) are included loose in the outer box at qty 1 each.</p>\n",
+     "spt_constraint": "~4.0.0",
+     "fika": "unknown",
+     "downloads": 1,
+     "size": 42119,
+     "link": "https://sp-mod.com/mod/download/374/blueheads-aio-trader/5.2.4",
+     "published_at": "2026-09-05T09:54:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 14744,
      "version": "5.3.1",
      "description": "<ul>\n<li>Fix the give command</li>\n<li>Because stacking ammunition beyond the limit can cause bugs, ammo boxes now provide ammunition according to the server\u2019s configured stack size limit. Therefore, a multiplier parameter has been added so that you can obtain a large amount of ammunition in one go.</li>\n<li>Use aio give ammo [positive integer] to obtain a positive integer multiple of ammunition; the default value is 10</li>\n</ul>\n",
      "spt_constraint": "~4.1.0",
      "fika": "unknown",
-     "downloads": 4,
+     "downloads": 2619,
      "size": 41700,
      "link": "https://sp-mod.com/mod/download/374/blueheads-aio-trader/5.3.1",
      "published_at": "2026-08-15T03:51:00.000000Z",
@@ -4565,7 +4577,7 @@
      "description": "<ul>\n<li>updated for SPT 4.1.x</li>\n<li>bluehead now sells fully functional guns</li>\n<li>Do NOT use the <code>aio give ammo</code> command \u2013 it\u2019s currently buggy (If you\u2019ve already used it, manually discard all abnormally stacked ammunition, then restart both the server and client. This should restore your profile to normal)</li>\n</ul>\n",
      "spt_constraint": "~4.1.0",
      "fika": "unknown",
-     "downloads": 226,
+     "downloads": 238,
      "size": 42704,
      "link": "https://sp-mod.com/mod/download/374/blueheads-aio-trader/5.3.0",
      "published_at": "2026-08-14T14:41:00.000000Z",
@@ -4577,7 +4589,7 @@
      "description": "<ul>\n<li>Remove the built-in container restriction filter modifier to be compatible with APBS mod. Use the SVM mod\u2019s container restriction removal feature if you encounter issues with it.</li>\n</ul>\n",
      "spt_constraint": "~4.0.7",
      "fika": "unknown",
-     "downloads": 14476,
+     "downloads": 14882,
      "size": 39551,
      "link": "https://sp-mod.com/mod/download/374/blueheads-aio-trader/5.2.3",
      "published_at": "2025-12-24T15:57:00.000000Z",
@@ -4589,7 +4601,7 @@
      "description": "<ul>\n<li>fix flea market bug</li>\n</ul>\n",
      "spt_constraint": "~4.0.1",
      "fika": "unknown",
-     "downloads": 2350,
+     "downloads": 2388,
      "size": 39572,
      "link": "https://sp-mod.com/mod/download/374/blueheads-aio-trader/5.2.2",
      "published_at": "2025-12-04T07:42:00.000000Z",
@@ -4601,7 +4613,7 @@
      "description": "<ul>\n<li>Update the file structure to meet the requirements</li>\n</ul>\n",
      "spt_constraint": "~4.0.1",
      "fika": "unknown",
-     "downloads": 1062,
+     "downloads": 1064,
      "size": 39556,
      "link": "https://sp-mod.com/mod/download/374/blueheads-aio-trader/5.2.1",
      "published_at": "2025-11-28T08:47:00.000000Z",
@@ -4613,7 +4625,7 @@
      "description": "<p>compatible with spt 3.11</p>\n<p>- expanded aiocase to store more keys</p>\n",
      "spt_constraint": "~3.11.0",
      "fika": "unknown",
-     "downloads": 14501,
+     "downloads": 14508,
      "size": null,
      "link": "https://sp-mod.com/mod/download/374/blueheads-aio-trader/4.0.6",
      "published_at": "2025-03-29T15:51:08.000000Z",
@@ -4625,7 +4637,7 @@
      "description": "<p>compatible with spt 3.11.1</p>\n<p>- fix the typo of new config</p>\n<p>- fix repair of trader</p>\n",
      "spt_constraint": "3.11.1",
      "fika": "unknown",
-     "downloads": 1861,
+     "downloads": 1862,
      "size": null,
      "link": "https://sp-mod.com/mod/download/374/blueheads-aio-trader/4.0.5",
      "published_at": "2025-03-20T11:49:29.000000Z",
@@ -4637,7 +4649,7 @@
      "description": "<p>update for spt 3.11.1</p>\n<p>Add aio_injector_default_price config to adjust aiotrader\u2019s selling price<br />\nAdd aio_injector_price_multiplier config to adjust aiotrader\u2019s selling price<br />\nAdd aio_trader_sell_blacklist config to control the type of items aiotrader sells.</p>\n",
      "spt_constraint": "3.11.1",
      "fika": "unknown",
-     "downloads": 724,
+     "downloads": 725,
      "size": null,
      "link": "https://sp-mod.com/mod/download/374/blueheads-aio-trader/4.0.4",
      "published_at": "2025-03-19T14:48:47.000000Z",
@@ -4649,7 +4661,7 @@
      "description": "<p>update for spt 3.10</p>\n<p>- set split _mod_part_to_aiotrader2 to false by default in case TraderScrolling is not updated yet</p>\n<p>- user profile used in 3.9.x is not compatible</p>\n",
      "spt_constraint": "~3.10.0",
      "fika": "unknown",
-     "downloads": 9515,
+     "downloads": 9516,
      "size": null,
      "link": "https://sp-mod.com/mod/download/374/blueheads-aio-trader/4.0.3",
      "published_at": "2024-11-29T13:59:02.000000Z",
@@ -4661,7 +4673,7 @@
      "description": "<p>update for apt 3.9.8</p>\n<p>Since Tarkov has more and more items, AIOTrader is loading slower and slower, so I optimized trader loading speed by:</p>\n<p>1. Remove all keys &amp; cards from AIOTrader since you can buy them from bluehead trader</p>\n<p>2. Remove all ammo &amp; ammo packs from AIOTrader since you can buy all ammo from bluehead trader</p>\n<p>3. Remove all built-in plates of armor vest from AIOTrader since you can not customize them anyway.</p>\n<p>4. Sell all mod parts separately in AIOTraderPart2</p>\n<p>5. All these features can be toggled via the config</p>\n<p>Let me know your thoughts on these changes by leaving a comment, good luck : )</p>\n",
      "spt_constraint": "3.9.8",
      "fika": "unknown",
-     "downloads": 4696,
+     "downloads": 4701,
      "size": null,
      "link": "https://sp-mod.com/mod/download/374/blueheads-aio-trader/4.0.2",
      "published_at": "2024-09-23T13:27:30.000000Z",
@@ -4673,7 +4685,7 @@
      "description": "<p>update for spt 3.9.4</p>\n",
      "spt_constraint": "3.9.4",
      "fika": "unknown",
-     "downloads": 5490,
+     "downloads": 5492,
      "size": null,
      "link": "https://sp-mod.com/mod/download/374/blueheads-aio-trader/4.0.1",
      "published_at": "2024-08-03T01:57:52.000000Z",
@@ -4685,7 +4697,7 @@
      "description": "<p>update for spt 3.9.0</p>\n",
      "spt_constraint": "3.9.0",
      "fika": "unknown",
-     "downloads": 3928,
+     "downloads": 3931,
      "size": null,
      "link": "https://sp-mod.com/mod/download/374/blueheads-aio-trader/4.0.0",
      "published_at": "2024-07-10T02:18:50.000000Z",
@@ -4697,7 +4709,7 @@
      "description": "<p>- update for aki 3.8.0, should also be compatible with 3.8.1 I guess, since no one has commented on the bugs for now</p>\n<p>- now armor &amp; rig &amp; helmet are sold with locked plates correctly</p>\n<p>- The rusted bloody key has now been taken out from the AIO key case, which let you can put the case into secure container directly</p>\n",
      "spt_constraint": "3.8.1",
      "fika": "unknown",
-     "downloads": 12303,
+     "downloads": 12305,
      "size": null,
      "link": "https://sp-mod.com/mod/download/374/blueheads-aio-trader/3.1.1",
      "published_at": "2024-04-04T03:00:08.000000Z",
@@ -4709,7 +4721,7 @@
      "description": "<p>update for aki 3.8.0\uff0c fix bug of beta 2</p>\n<p>- you can now hide no real price item by setting hide_no_price_item to true</p>\n",
      "spt_constraint": "3.8.0",
      "fika": "unknown",
-     "downloads": 1673,
+     "downloads": 1676,
      "size": null,
      "link": "https://sp-mod.com/mod/download/374/blueheads-aio-trader/3.1.0+beta-3",
      "published_at": "2024-04-02T03:15:38.000000Z",
@@ -4721,15 +4733,15 @@
      "description": "<p>update for aki 3.7.0, bug fix</p>\n<p>compatible with aki 3.7.1, and maybe 3.7.2 &amp; 3.7.3</p>\n",
      "spt_constraint": "3.7.3",
      "fika": "unknown",
-     "downloads": 12812,
+     "downloads": 12813,
      "size": null,
      "link": "https://sp-mod.com/mod/download/374/blueheads-aio-trader/3.0.2",
      "published_at": "2023-10-13T04:50:16.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "5.3.1",
-   "spt_constraint": "~4.1.0",
+   "latest_version": "5.2.4",
+   "spt_constraint": "~4.0.0",
    "all_spt_constraints": [
     "3.11.1",
     "3.7.3",
@@ -4740,6 +4752,7 @@
     "3.9.8",
     "~3.10.0",
     "~3.11.0",
+    "~4.0.0",
     "~4.0.1",
     "~4.0.7",
     "~4.1.0"
@@ -4747,7 +4760,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2022-02-16T05:21:00.000000Z",
-   "updated_at": "2026-08-15T03:53:03.000000Z",
+   "updated_at": "2026-09-05T09:56:04.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -167070,7 +167083,7 @@
    "description_html": "<p>This mod will check for updates online.</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/himesamanoyume\" rel=\"noreferrer noopener\">Ko-Fi</a> | <a target=\"_blank\" class=\"external-link\" href=\"https://ifdian.net/a/himesamanoyume\" rel=\"noreferrer noopener\">Ifdian</a></p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Description</div>\n<div class=\"tab-content\"><p>This document will use Mcs as the abbreviation for Miyako Carry Service; you will be referred to as <code>McsLeadPlayer</code>, and the AI teammates generated by Mcs will be referred to as <code>McsBotPlayer</code>.</p>\n<p>Supports full customization of <code>McsBotPlayer</code> equipment through Mcs Inventory Mode, supports generating any type of AI as a <code>McsBotPlayer</code>, even AI types provided by other mods, supports <code>McsBotPlayers</code> picking up specified loot, supports commanding <code>McsBotPlayers</code> through the command system, compatible with SAIN, compatible with Fika.</p>\n<hr />\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/himesamanoyume/MiyakoCarryService/refs/heads/main/Preview/fika.webp\" alt=\"Fika\" title=\"Fika\" /></p>\n<p>In Fika multiplayer, each player can have their own <code>McsBotPlayer</code> squad.</p>\n<hr />\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/himesamanoyume/MiyakoCarryService/refs/heads/main/Preview/custombottype.webp\" alt=\"custombottype\" title=\"CustomBotType\" /></p>\n<p>Allows any type of AI to become your teammate, even Bosses</p>\n<p>You can even generate AI types provided by third-party mods such as <a target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/2511/wtt-black-division-redacted-home\" rel=\"noreferrer noopener\">Black Division Home</a>, <a target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/2342/untar-go-home\" rel=\"noreferrer noopener\">UNTAR Go Home!</a>, <a target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/2427/ruaf-come-home\" rel=\"noreferrer noopener\">RUAF Come Home!</a>, as long as your configuration file is correct.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/himesamanoyume/MiyakoCarryService/refs/heads/main/Preview/customspawntype.webp\" alt=\"customspawntype\" title=\"CustomSpawnType\" /></p>\n<hr />\n<h3>What Can Mcs Offer You?</h3>\n<p>The answer: the ultimate comfortable service experience.</p>\n<h4>A Powerful and Flexible Command System</h4>\n<p>Beyond a handful of basic movement commands, and built upon EFT\u2019s own Action Menu, Mcs injects limitless possibilities into its command system.</p>\n<p>This lets you assign a <code>McsBotPlayer</code> to lead you to all kinds of destinations \u2014 quest locations, exfil points, transit points, switches, and especially those areas you want to reach but whose location you don\u2019t know. In that case you can simply have them lead the way in front of you; just follow their steps and you\u2019ll arrive at your destination (provided, of course, that the location itself allows AI to go there).</p>\n<p>You can even delegate certain actions to them to complete independently in your stead, so you don\u2019t have to handle everything personally. For example, Mcs allows proxy actions under supported quest conditions \u2014 at a single command, they can head to a quest location on their own to perform operations such as repairing, visiting quest position, or installing items. You can complete the quest without ever going to the site yourself.</p>\n<p>Or perhaps you want to flip a switch that opens an exfil. You can order them to go operate it themselves while you head straight for the exfil; once the switch is turned on, you can simply extract, instead of having to go open the switch yourself first and then move to the exfil to extract as before.</p>\n<p>And besides keeping you safe, if you\u2019re in a complex area with enemies potentially lurking around, you can order them to thoroughly search every corner of a specified location.</p>\n<h4>Make Every Gain Entirely Yours</h4>\n<p>As a mod that delivers the perfect service experience, your <code>McsBotPlayer</code> should naturally be able to actively scavenge loot according to your settings. You can set blocked item types, a loot value threshold, whether to loot items containing specific keywords, and more. They will also nest looted items to a certain degree, plundering as much of the loot you need as possible. However, in the end these gains still need to be collected by you personally before they can be carried out of the raid.</p>\n<h4>The Final Piece to Accomplishing Great Deeds</h4>\n<p><strong>The Formation System</strong></p>\n<p>This system lets you configure a 7\u00d77 formation matrix in which you can set your own position and those of your teammates, along with the spacing between them. Now you have a well-trained, powerful squad that maintains its formation at all times. You can also save the current formation as a preset via hotkey and give it a custom name, then quickly apply formation presets through the command system to handle any scenario.</p>\n<h4>Configurations That Take Effect Independently for Each Player</h4>\n<p>As is well known, Mcs supports installing the Fika Addon to work in a Fika multiplayer environment. And as we also know, in a Fika multiplayer environment almost all of a raid\u2019s computation is performed on the host. For that reason, we would not want every <code>McsBotPlayer</code> behavior to be dictated solely by the host. Not to worry \u2014 Mcs also supports syncing some of the configuration items, so a user acting as the host can have different squads compute using their own respective configurations, including loot scavenging configuration, formation positioning configuration, and more. I guarantee you can get the same experience as when using Mcs in your own local raid.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Tutorial</div>\n<div class=\"tab-content\"><h3>Installation</h3>\n<ol>\n<li>Place the folder located in the downloaded zip into your main SPT folder.</li>\n<li>Mod will be activated by default.</li>\n</ol>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/afNPjAw.gif\" alt=\"Installation\" /></p>\n<hr />\n<h3>How To Generate <code>McsBotPlayer</code></h3>\n<p>Mcs mimics a carry service in the gaming industry. In this process, you need to select the desired service, place an order and pay, and play together with the player who comes to serve you. Therefore, Mcs provides a trader <code>Tsukiyuki Miyako</code> to handle all these actions</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/himesamanoyume/MiyakoCarryService/refs/heads/main/Preview/tutorial.webp\" alt=\"tutorial\" title=\"How To Generate McsBotPlayer\" /></p>\n<p>If you cannot see the Group Panel, please check whether you have UI Fixes installed, then open Advanced Settings in the Configuration Manager, navigate to Interface -&gt; Show Group Panel, and enable it.</p>\n<hr />\n<h3>How to Customize <code>McsBotPlayer</code> Equipment</h3>\n<ol>\n<li>You need to have a <code>McsBotPlayer</code> that has been added as a friend.</li>\n<li>Open the <code>Invite to group</code> interface from the bottom left corner of the bottom bar.</li>\n<li>Right-click on the <code>McsBotPlayer</code> to bring up the right-click menu, select <code>OPEN INVENTORY</code>.</li>\n<li>At this point, you will enter Mcs Inventory Mode.</li>\n<li>In Mcs Inventory Mode, you can customize the <code>McsBotPlayer</code>\u2019s equipment through operations exactly the same as normal gameplay.</li>\n<li>When entering Mcs Inventory Mode, the Miyako trader will provide all items for purchase at 1 ruble</li>\n<li>To return to the main character, there are two ways: one is to right-click on the <code>McsBotPlayer</code> through the <code>Invite to group</code> interface again and select <code>RETURN TO MAIN CHARACTER</code>; the other is to directly click the green Mcs Inventory Mode button on the bottom bar, which can also return to the main character.</li>\n</ol>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/himesamanoyume/MiyakoCarryService/refs/heads/main/Preview/mcsinventorymode.webp\" alt=\"McsInventoryMode\" /></p>\n<p><em>1. Mcs Inventory Mode modifies the <code>McsBotPlayer</code>\u2018s equipment only in PMC mode. As is well known, PMC mode and SCAV mode are two different characters. According to game settings, you cannot control the SCAV character\u2019s equipment, so Mcs will also maintain this setting.</em></p>\n<p><em>2. The <code>McsBotPlayer</code>\u2019s friend slot will become unavailable upon expiration. You may choose to settle or renew the order. Only upon successful settlement will all data of the expired <code>McsBotPlayer</code> be permanently deleted, whereas renewing will issue a new order of the same duration; once the renewal task is completed, the service expiration time will be extended.</em></p>\n<h3>How to Renew and Settle</h3>\n<ol>\n<li>Likewise, open the <code>Invite to group</code> interface at the bottom-left of the bottom bar.</li>\n<li>Likewise, right-click on the <code>McsBotPlayer</code> to bring up the right-click menu, select <code>RENEW ORDER</code>.</li>\n<li>A new quest of the same duration will then be issued; completing it finishes the renewal.</li>\n<li>For an already-expired <code>McsBotPlayer</code>, selecting <code>SETTLE ORDER</code> will permanently delete all data of every <code>McsBotPlayer</code> under that order.</li>\n<li>The data of an expired <code>McsBotPlayer</code> is retained indefinitely until you settle it. You can renew any <code>McsBotPlayer</code> at any time to make an expired <code>McsBotPlayer</code> available again, or to extend the expiration time of a <code>McsBotPlayer</code> that has not yet expired.</li>\n</ol>\n<hr />\n<h3>How to Get Loot Picked Up by <code>McsBotPlayers</code> in Raid</h3>\n<p>When a <code>McsBotPlayer</code> picks up target loot, to get items from the <code>McsBotPlayer</code> besides looting the body after the <code>McsBotPlayer</code> dies, you can also use the <code>OPEN INVENTORY</code> command on a single <code>McsBotPlayer</code> through the Mcs command menu to remotely open the <code>McsBotPlayer</code>\u2019s backpack while the <code>McsBotPlayer</code> is still alive, or use the <code>DROP TARGET LOOT</code> command to have them drop the items they have currently picked up during the raid right in front of you.</p>\n<p>According to game settings, <code>McsBotPlayer</code> mimics a real player, so after they pick up loot, if you don\u2019t personally take it, everything will not belong to you after the raid ends.</p>\n<blockquote>\n<p>If you want it, then you\u2019ll have to take it, as you have already known.</p>\n</blockquote>\n<hr />\n<h3>How to Customize <code>McsBotPlayer</code> Types</h3>\n<ol>\n<li>Start the server once first, and <code>spawntype.json</code> will be generated under <code>MiyakoCarryServiceServer/configs</code>.</li>\n<li>If you don\u2019t understand the following content, it\u2019s recommended not to mess around with it yourself. Incorrect modifications will cause errors. If you really want to change it, read on. You can also leave it to AI to do it. If it\u2019s still changed incorrectly, just delete <code>spawntype.json</code> and restart the server, and a new file will be generated again.</li>\n<li>First, you need to know the JSON format rules. It\u2019s best to use an editor like VS Code that can check JSON format.</li>\n<li>Then you need to know the <code>WildSpawnType</code> names of AI provided by third-party mods or built-in to the original game.</li>\n<li>Take <a target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/2511/wtt-black-division-redacted-home\" rel=\"noreferrer noopener\">Black Division Home</a> as an example. It provides a Black Division WildSpawnType: <code>blackDivAssault</code>.</li>\n<li>Now you need to add another type in the correct format in <code>spawntype.json</code>.</li>\n</ol>\n<pre><code>{\n    \"WildSpawnType\": \"sectantOni\",\n    \"IsBoss\": true,\n    \"DisplayName\": \"Oni\"\n}, \n    // The above is the EFT native WildSpawnType. When adding new types later, \n    // you need to bring `,` after `}`.\n{\n    \"WildSpawnType\": \"blackDivAssault\", \n    // Write the WildSpawnType name here.\n    \"IsBoss\": false, \n    // Whether to serve as a Boss type. \n    // When using the help command, a `[Boss]` prefix will be added for this type.\n    \"DisplayName\": \"Black Division Assault\" \n    // Display name. When using the help command, \n    // only this name will be displayed, not the WildSpawnType name.\n} \n    // The last `}` should not have `,`.\n</code></pre>\n<ol start=\"7\">\n<li>After ensuring the JSON format is correct and the data is filled in correctly, restart the server. At this time, use the help command in the MESSENGER interface with the Miyako trader, and all types will be displayed in the list of available types.</li>\n<li>If an exception occurs when generating the customized type, you will receive an error reminder in server log and it will change to generate the default pmc type <code>McsBotPlayer</code>. At this time, you need to check whether the customized type you filled in is incorrect.</li>\n</ol></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Server Config</div>\n<div class=\"tab-content\"><table>\n<thead>\n<tr>\n<th>Option</th>\n<th>Description</th>\n<th>Default</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>BalanceRestriction</td>\n<td>When enabled, the <code>OPEN INVENTORY</code> command for <code>McsBotPlayer</code> becomes unavailable, and all items brought into the raid receive the <code>Curse of Vanishing</code> enchantment. If the <code>McsBotPlayer</code> dies, those items vanish immediately regardless of position.</td>\n<td><code>false</code></td>\n</tr>\n<tr>\n<td>CheckUpdate</td>\n<td>Whether to check for version updates online.</td>\n<td><code>true</code></td>\n</tr>\n<tr>\n<td>CheckIfdian</td>\n<td>Whether to check for sponsor list updates.</td>\n<td><code>true</code></td>\n</tr>\n<tr>\n<td>TicketPricePerPercent</td>\n<td>Per-percent ticket price used to calculate the fine paid to remove the price-increase penalty, in roubles per percent.</td>\n<td><code>300000</code> roubles per percent</td>\n</tr>\n<tr>\n<td>PunishmentMultiMax</td>\n<td>Maximum price-increase penalty multiplier.</td>\n<td><code>1</code> (i.e. <code>100%</code>)</td>\n</tr>\n<tr>\n<td>OrderPendingPaymentTime</td>\n<td>The pending duration of the action task provided by the Miyako trader when ordering a <code>McsBotPlayer</code> or issuing a ticket, in seconds.</td>\n<td><code>900</code> seconds (15 minutes)</td>\n</tr>\n<tr>\n<td>CompensationPrice</td>\n<td>Compensation paid when a <code>McsBotPlayer</code> accidentally kills the <code>McsLeadPlayer</code>, in roubles.</td>\n<td><code>300000</code> roubles</td>\n</tr>\n<tr>\n<td>CarryServiceLevelPrice</td>\n<td>Base carry-service pricing for 5 levels, with minimum and maximum bounds for each level.</td>\n<td>Determined by level range</td>\n</tr>\n<tr>\n<td>TraderLlmEnabled</td>\n<td>Whether to enable the Miyako trader\u2019s AI chat (LLM). When enabled, chatting with the Miyako trader supports natural-language ordering, tickets and small talk.</td>\n<td><code>false</code></td>\n</tr>\n<tr>\n<td>TraderLlmStartupTest</td>\n<td>Whether to run one LLM connectivity test on server startup; set to <code>false</code> after the setup is confirmed to avoid repeated cost.</td>\n<td><code>true</code></td>\n</tr>\n<tr>\n<td>TraderLlmProvider</td>\n<td>AI provider for the Miyako trader: <code>OpenAICompatible</code> (covers OpenAI / DeepSeek / Moonshot / Ollama / vLLM etc.), <code>Anthropic</code>, <code>GoogleGemini</code>, <code>DashScope</code>, <code>Zhipu</code>, <code>Qianfan</code>, <code>Spark</code>, <code>MiniMax</code>.</td>\n<td><code>OpenAICompatible</code></td>\n</tr>\n<tr>\n<td>TraderLlmApiKey</td>\n<td>API key for the Miyako trader\u2019s AI provider.</td>\n<td>empty</td>\n</tr>\n<tr>\n<td>TraderLlmApiSecret</td>\n<td>Secondary key (Secret/Token) of the Miyako trader\u2019s AI provider. Required by two-key providers such as Zhipu (ApiKey=id + ApiSecret=secret) and Spark (ApiKey:ApiSecret); leave empty when using an all-in-one ApiKey.</td>\n<td>empty</td>\n</tr>\n<tr>\n<td>TraderLlmBaseUrl</td>\n<td>Optional custom base URL for the Miyako trader\u2019s AI (overrides the provider default).</td>\n<td>empty</td>\n</tr>\n<tr>\n<td>TraderLlmModelId</td>\n<td>Model name for the Miyako trader\u2019s AI, provider-specific.</td>\n<td><code>deepseek-v4-flash</code></td>\n</tr>\n<tr>\n<td>TraderLlmSystemPrompt</td>\n<td>Optional custom system prompt prepended to the default prompt.</td>\n<td>empty</td>\n</tr>\n<tr>\n<td>TraderLlmTemperature</td>\n<td>Sampling temperature for the Miyako trader\u2019s AI, 0..2; lower is more deterministic.</td>\n<td><code>0.2</code></td>\n</tr>\n<tr>\n<td>TraderLlmMaxTokens</td>\n<td>Maximum tokens per reply of the Miyako trader\u2019s AI; affects reply length and cost.</td>\n<td><code>3000</code></td>\n</tr>\n<tr>\n<td>TraderLlmTimeoutSec</td>\n<td>Per-request timeout in seconds for the Miyako trader\u2019s AI.</td>\n<td><code>15</code></td>\n</tr>\n<tr>\n<td>TraderLlmReasoningEffort</td>\n<td>Reasoning/thinking mode of the Miyako trader\u2019s AI: none / default / low / medium / high / max. none disables thinking (fast mode); default leaves the model default; low/medium/high/max enable thinking with increasing effort. Mapped per provider (OpenAI-compatible thinking/reasoning_effort, Claude thinking, Gemini thinkingConfig, Qwen enable_thinking). Unsupported thinking params report an error directly.</td>\n<td><code>none</code></td>\n</tr>\n<tr>\n<td>TraderLlmMaxMessagesPerMinute</td>\n<td>Maximum replies per minute from the Miyako trader\u2019s AI (rate limit).</td>\n<td><code>10</code></td>\n</tr>\n<tr>\n<td>TraderLlmMaxHistoryMessages</td>\n<td>Number of recent chat messages carried as context for the Miyako trader\u2019s AI; set <code>0</code> to disable.</td>\n<td><code>20</code></td>\n</tr>\n<tr>\n<td>TraderLlmMaxConcurrent</td>\n<td>Global concurrency limit for the Miyako trader\u2019s LLM requests. Excess requests queue up and are released as slots free up, protecting upstream APIs and proxies.</td>\n<td><code>16</code></td>\n</tr>\n<tr>\n<td>HttpProxyHost</td>\n<td>HTTP proxy host used when routing cloud requests (LLM/STT etc.) through a proxy.</td>\n<td>empty</td>\n</tr>\n<tr>\n<td>HttpProxyPort</td>\n<td>HTTP proxy port (paired with <code>HttpProxyHost</code>).</td>\n<td>empty</td>\n</tr>\n</tbody>\n</table></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Features</div>\n<div class=\"tab-content\"><h3>A. Basic</h3>\n<table>\n<thead>\n<tr>\n<th>Feature</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Enable Looting</td>\n<td>Whether <code>McsBotPlayer</code> will attempt to loot items while not currently in combat.</td>\n</tr>\n<tr>\n<td>Price Threshold</td>\n<td>Loot below this price will be ignored.</td>\n</tr>\n<tr>\n<td>Loot Name Keyword</td>\n<td>Keywords are substrings contained in an item\u2019s full or abbreviated name. Multiple keywords may be separated by <code>||</code>\uff0c<code>,</code>\uff0c<code>\uff0c</code>.</td>\n</tr>\n<tr>\n<td>Loot Keyword Items</td>\n<td>Whether <code>McsBotPlayer</code> will attempt to loot keyword-matched items.</td>\n</tr>\n<tr>\n<td>Blocked Item Types</td>\n<td>Supports select all / deselect all: <code>Ammo</code>, <code>Barter</code>, <code>Info</code>, <code>Container</code>, <code>Food</code>, <code>Backpack</code>, <code>Goggles</code>, <code>Pocket</code>, <code>Tactical Vest</code>, <code>Armor</code>, <code>Grenade</code>, <code>Headphone</code>, <code>Keys</code>, <code>Knife</code>, <code>Magazine</code>, <code>Meds</code>, <code>Mod</code>, <code>Special</code>, <code>Weapon</code>, <code>Other</code>.</td>\n</tr>\n<tr>\n<td>Enable Keep Formation</td>\n<td>Whether to determine <code>McsBotPlayer</code> positions based on the formation matrix configuration.</td>\n</tr>\n<tr>\n<td>Formation Matrix</td>\n<td>Used to configure the position of each <code>McsBotPlayer</code>. <code>\u2605</code> represents your position, and the area above <code>\u2605</code> indicates your facing direction.</td>\n</tr>\n<tr>\n<td>Formation Spacing</td>\n<td>The spacing between formation members.</td>\n</tr>\n<tr>\n<td>Formation Sequential Fill</td>\n<td>When enabled, if a <code>McsBotPlayer</code> dies in formation, the next squad member fills the empty slot in brevity-code order.</td>\n</tr>\n<tr>\n<td>Save Formation Preset Hotkey</td>\n<td>Saves the current formation preset and binds a hotkey.</td>\n</tr>\n</tbody>\n</table>\n<blockquote>\n<p>When Fika is installed, in-raid setting changes are synced to the host automatically, but this requires the <strong>MiyakoCarryServiceFika</strong> addon to be installed first.</p>\n</blockquote>\n<h3>B. Command</h3>\n<table>\n<thead>\n<tr>\n<th>Feature</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Command HotKey</td>\n<td>Command Menu Hotkey.</td>\n</tr>\n</tbody>\n</table>\n<h4>MemberCommand</h4>\n<table>\n<thead>\n<tr>\n<th>Command</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Report Enemy Position</td>\n<td>If <code>McsBotPlayer</code> is currently in combat, command it to report known enemy positions.</td>\n</tr>\n<tr>\n<td>Report Self Status</td>\n<td>Command <code>McsBotPlayer</code> to report its own health and supply status.</td>\n</tr>\n<tr>\n<td>On Your Own</td>\n<td>Command <code>McsBotPlayer</code> to act independently.</td>\n</tr>\n<tr>\n<td>Regroup</td>\n<td>Command <code>McsBotPlayer</code> to stop all actions and regroup.</td>\n</tr>\n<tr>\n<td>Follow Me</td>\n<td>Command <code>McsBotPlayer</code> to follow the <code>McsLeadPlayer</code>. In this state, it will not proactively attack enemies or loot.</td>\n</tr>\n<tr>\n<td>Exclude / Takeover</td>\n<td><code>Exclude</code> prevents <code>McsBotPlayer</code> from receiving team commands, while <code>Take Over</code> restores team-command control.</td>\n</tr>\n<tr>\n<td>Go To</td>\n<td>If <code>McsBotPlayer</code> is not currently in combat, command it to go to a specified location.</td>\n</tr>\n<tr>\n<td>Hold Position</td>\n<td>If <code>McsBotPlayer</code> is not currently in combat, command it to stay in place.</td>\n</tr>\n<tr>\n<td>Force Teleport</td>\n<td>Clears <code>McsBotPlayer</code> aggro and attempts to teleport it to the current location.</td>\n</tr>\n<tr>\n<td>Open Inventory</td>\n<td>Remotely opens the <code>McsBotPlayer</code> inventory to transfer picked-up loot.</td>\n</tr>\n<tr>\n<td>Change Aiming Body Part Type</td>\n<td>Commands <code>McsBotPlayer</code> to change its preferred combat aiming body part.</td>\n</tr>\n<tr>\n<td>Escort</td>\n<td>If <code>McsBotPlayer</code> is not currently in combat, command it to escort to the designated location. Sub-items include <code>Quest Escort</code>, <code>Exfil Escort</code>, <code>Transit Escort</code>, <code>Switch Escort</code>, <code>Stationary Weapon Escort</code>, <code>BTR Escort</code>, and <code>Airdrop Escort</code>.</td>\n</tr>\n<tr>\n<td>Proxy Action</td>\n<td>If <code>McsBotPlayer</code> is not currently in combat, command it to proxy-execute the related action. Sub-items include <code>Quest Proxy Action</code>, <code>Door Proxy Action</code>, <code>Loot Proxy Action</code>, and <code>Switch Proxy Action</code>.</td>\n</tr>\n<tr>\n<td>Drop Target Loot</td>\n<td>If <code>McsBotPlayer</code> is not currently in combat, command it to drop the target loot picked up during the raid.</td>\n</tr>\n<tr>\n<td>Clear Area</td>\n<td>If <code>McsBotPlayer</code> is not currently in combat, command it to clear the surrounding area of a specified location.</td>\n</tr>\n</tbody>\n</table>\n<h4>TeamCommand</h4>\n<table>\n<thead>\n<tr>\n<th>Command</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Team Report Enemy Position</td>\n<td>If there are <code>McsBotPlayers</code> in the team currently in combat, command them to report known enemy positions.</td>\n</tr>\n<tr>\n<td>Team Report Self Status</td>\n<td>Command <code>McsBotPlayers</code> to report their own health and supply status.</td>\n</tr>\n<tr>\n<td>Team On Your Own</td>\n<td>Command <code>McsBotPlayers</code> to act independently.</td>\n</tr>\n<tr>\n<td>Team Regroup</td>\n<td>Command all <code>McsBotPlayers</code> to stop all actions and regroup.</td>\n</tr>\n<tr>\n<td>Team Follow Me</td>\n<td>Command all <code>McsBotPlayers</code> to follow the <code>McsLeadPlayer</code>. In this state, they will not proactively attack enemies or loot.</td>\n</tr>\n<tr>\n<td>Team Go To</td>\n<td>If there are <code>McsBotPlayers</code> in the team not currently in combat, command them to go to a specified location.</td>\n</tr>\n<tr>\n<td>Team Hold Position</td>\n<td>If there are <code>McsBotPlayers</code> in the team not currently in combat, command them to stay in place.</td>\n</tr>\n<tr>\n<td>Team Force Teleport</td>\n<td>Clears aggro for all team <code>McsBotPlayers</code> and attempts to teleport them to the current location.</td>\n</tr>\n<tr>\n<td>Team Change Aiming Body Part Type</td>\n<td>Command <code>McsBotPlayers</code> to change their preferred combat aiming body part.</td>\n</tr>\n<tr>\n<td>Team Escort</td>\n<td>If there are <code>McsBotPlayers</code> in the team not currently in combat, command them to escort to the designated location. Sub-items include <code>Team Quest Escort</code>, <code>Team Exfil Escort</code>, <code>Team Transit Escort</code>, <code>Team Switch Escort</code>, <code>Team Stationary Weapon Escort</code>, <code>Team BTR Escort</code>, and <code>Team Airdrop Escort</code>.</td>\n</tr>\n<tr>\n<td>Team Drop Target Loot</td>\n<td>If there are <code>McsBotPlayers</code> in the team not currently in combat, command them to drop the target loot picked up during the raid.</td>\n</tr>\n<tr>\n<td>Team Clear Area</td>\n<td>If there are <code>McsBotPlayers</code> in the team not currently in combat, command them to clear the surrounding area of a specified location.</td>\n</tr>\n<tr>\n<td>Change Formation</td>\n<td>Apply the saved formation preset immediately.</td>\n</tr>\n</tbody>\n</table>\n<blockquote>\n<p>The command system also works normally during Fika multiplayer, but this requires the <strong>MiyakoCarryServiceFika</strong> addon to be installed first.</p>\n</blockquote>\n<h3>C. Player</h3>\n<table>\n<thead>\n<tr>\n<th>Setting</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Teammate Highlight</td>\n<td>Whether to highlight all <code>McsBotPlayer</code> characters in raid.</td>\n</tr>\n<tr>\n<td>Teammate Highlight Hotkey</td>\n<td>Hotkey configuration for teammate highlighting.</td>\n</tr>\n<tr>\n<td>Teammate Highlight Color</td>\n<td>Highlight color configuration.</td>\n</tr>\n<tr>\n<td>Enable Mcs Subtitles</td>\n<td>Whether to use subtitles to display <code>McsBotPlayer</code> reports.</td>\n</tr>\n<tr>\n<td>Show Brevity Code</td>\n<td>Use brevity codes to replace the original nicknames for display.</td>\n</tr>\n</tbody>\n</table></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Language</div>\n<div class=\"tab-content\"><ul>\n<li>English (AI Translate)</li>\n<li>\u7b80\u4f53\u4e2d\u6587</li>\n<li>\u0440\u0443\u0441\u0441\u043a\u0438\u0439 \u044f\u0437\u044b\u043a (Contributed by NotDifficult)</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">WildSpawnType</div>\n<div class=\"tab-content\"><h3>EFT Native</h3>\n<ul>\n<li>marksman</li>\n<li>assault</li>\n<li>bossTest</li>\n<li>bossBully (Mcs default support)</li>\n<li>followerTest</li>\n<li>followerBully</li>\n<li>bossKilla (Mcs default support)</li>\n<li>bossKojaniy (Mcs default support)</li>\n<li>followerKojaniy</li>\n<li>pmcBot (Mcs default support)</li>\n<li>cursedAssault</li>\n<li>bossGluhar (Mcs default support)</li>\n<li>followerGluharAssault</li>\n<li>followerGluharSecurity</li>\n<li>followerGluharScout</li>\n<li>followerGluharSnipe</li>\n<li>followerSanitar</li>\n<li>bossSanitar (Mcs default support)</li>\n<li>test</li>\n<li>assaultGroup</li>\n<li>sectantWarrior</li>\n<li>sectantPriest</li>\n<li>bossTagilla (Mcs default support)</li>\n<li>followerTagilla</li>\n<li>exUsec (Mcs default support)</li>\n<li>gifter</li>\n<li>bossKnight (Mcs default support)</li>\n<li>followerBigPipe (Mcs default support)</li>\n<li>followerBirdEye (Mcs default support)</li>\n<li>bossZryachiy (Mcs default support)</li>\n<li>followerZryachiy</li>\n<li>bossBoar (Mcs default support)</li>\n<li>followerBoar</li>\n<li>arenaFighter</li>\n<li>arenaFighterEvent</li>\n<li>bossBoarSniper</li>\n<li>crazyAssaultEvent</li>\n<li>peacefullZryachiyEvent</li>\n<li>sectactPriestEvent</li>\n<li>ravangeZryachiyEvent</li>\n<li>followerBoarClose1</li>\n<li>followerBoarClose2</li>\n<li>bossKolontay (Mcs default support)</li>\n<li>followerKolontayAssault</li>\n<li>followerKolontaySecurity</li>\n<li>shooterBTR</li>\n<li>bossPartisan (Mcs default support)</li>\n<li>spiritWinter</li>\n<li>spiritSpring</li>\n<li>peacemaker</li>\n<li>pmcBEAR (Mcs default support)</li>\n<li>pmcUSEC (Mcs default support)</li>\n<li>skier</li>\n<li>sectantPredvestnik (Mcs default support)</li>\n<li>sectantPrizrak (Mcs default support)</li>\n<li>sectantOni (Mcs default support)</li>\n<li>infectedAssault (Mcs default support)</li>\n<li>infectedPmc (Mcs default support)</li>\n<li>infectedCivil</li>\n<li>infectedLaborant</li>\n<li>infectedTagilla (Mcs default support)</li>\n<li>bossTagillaAgro (Mcs default support)</li>\n<li>bossKillaAgro (Mcs default support)</li>\n<li>tagillaHelperAgro</li>\n</ul>\n<h3><a target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/2511/wtt-black-division-redacted-home\" rel=\"noreferrer noopener\">Black Division Home</a></h3>\n<p>Just as an example, please refer to the latest actual version for details.</p>\n<ul>\n<li>blackDivLead</li>\n<li>blackDivAssault</li>\n<li>blackDivBreacher</li>\n<li>blackDivSupport</li>\n</ul>\n<h3><a target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/2342/untar-go-home\" rel=\"noreferrer noopener\">UNTAR Go Home!</a></h3>\n<p>Just as an example, please refer to the latest actual version for details.</p>\n<ul>\n<li>followeruntar</li>\n<li>bossuntarlead</li>\n<li>followeruntarmarksman</li>\n<li>bossuntaroffice</li>\n</ul>\n<h3><a target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/2427/ruaf-come-home\" rel=\"noreferrer noopener\">RUAF Come Home!</a></h3>\n<p>Just as an example, please refer to the latest actual version for details.</p>\n<ul>\n<li>ruafRifleman</li>\n<li>ruafRiflemanSenior</li>\n<li>ruafAutorifleman</li>\n<li>ruafGrenadier</li>\n<li>ruafMarksman</li>\n<li>ruafMachinegunner</li>\n</ul></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/YsN4dkG0emHuWLR671Ur5ZX1mgpEOSvRiB7msMix.jpg",
    "forge_url": "https://sp-mod.com/mod/2709/miyako-carry-service",
-   "downloads": 11027,
+   "downloads": 11088,
    "favourites": 64,
    "featured": false,
    "fika": true,
@@ -167099,12 +167112,39 @@
    ],
    "versions": [
     {
+     "id": 15200,
+     "version": "1.1.3+1",
+     "description": "<div class=\"tabset\"><div id=\"tabset-3-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">English</div>\n<div class=\"tab-content\"><p>Miyako is my waifu.</p>\n<hr />\n<ul>\n<li>Added a toggle to silence McsBotPlayer phrases</li>\n<li>McsBotPlayer level now noticeably affects the McsBotPlayer\u2019s combat ability</li>\n<li>Improved the logic for McsBotPlayer avoiding traps</li>\n<li>Players can now pass through a McsBotPlayer\u2019s body, so you will no longer be hindered by them taking up your space</li>\n<li>Fixed compatibility issues with SAIN</li>\n<li>Fixed some other issues</li>\n</ul></div></div>\n<div id=\"tabset-3-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">\u4e2d\u6587</div>\n<div class=\"tab-content\"><p>\u5bab\u5b50\u662f\u6211\u8001\u5a46</p>\n<hr />\n<ul>\n<li>\u65b0\u589e\u62a4\u822a\u77ed\u8bed\u6c89\u9ed8\u5f00\u5173</li>\n<li>\u73b0\u5728\u62a4\u822a\u7ea7\u522b\u4f1a\u660e\u663e\u5f71\u54cd\u62a4\u822a\u7684\u6218\u6597\u80fd\u529b</li>\n<li>\u4f18\u5316\u62a4\u822a\u907f\u5f00\u9677\u9631\u7684\u903b\u8f91</li>\n<li>\u73b0\u5728\u73a9\u5bb6\u53ef\u4ee5\u7a7f\u8fc7\u62a4\u822a\u7684\u8eab\u4f53\uff0c\u4f60\u4e0d\u518d\u4f1a\u56e0\u4e3a\u88ab\u4ed6\u4eec\u6324\u5360\u7a7a\u95f4\u800c\u884c\u52a8\u4e0d\u4fbf</li>\n<li>\u4fee\u590d\u4e0eSAIN\u7684\u517c\u5bb9\u6027\u95ee\u9898</li>\n<li>\u4fee\u590d\u4e86\u4e00\u4e9b\u5176\u4ed6\u95ee\u9898</li>\n</ul></div></div></div>\n",
+     "spt_constraint": "~4.1.2",
+     "fika": "compatible",
+     "downloads": 102,
+     "size": 499286,
+     "link": "https://sp-mod.com/mod/download/2709/miyako-carry-service/1.1.3+1",
+     "published_at": "2026-09-05T00:00:00.000000Z",
+     "dependencies": [
+      {
+       "id": 827,
+       "name": "Waypoints - Expanded Navmesh",
+       "slug": "waypoints-expanded-navmesh",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/827/waypoints-expanded-navmesh"
+      },
+      {
+       "id": 902,
+       "name": "BigBrain",
+       "slug": "bigbrain",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/902/bigbrain"
+      }
+     ]
+    },
+    {
      "id": 15049,
      "version": "1.1.2",
      "description": "<div class=\"tabset\"><div id=\"tabset-2-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">English</div>\n<div class=\"tab-content\"><p>Miyako is my waifu.</p>\n<hr />\n<ul>\n<li>Fixed compatibility issues with SAIN</li>\n<li>Rewrote McsBotPlayer\u2019s brain layers</li>\n<li>Configuration files can now be edited via the SIC web page</li>\n</ul></div></div>\n<div id=\"tabset-2-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">\u4e2d\u6587</div>\n<div class=\"tab-content\"><p>\u5bab\u5b50\u662f\u6211\u8001\u5a46</p>\n<hr />\n<ul>\n<li>\u4fee\u590d\u4e0eSAIN\u7684\u517c\u5bb9\u6027\u95ee\u9898</li>\n<li>\u91cd\u5199\u4e86\u62a4\u822a\u7684\u5927\u8111\u5c42</li>\n<li>\u914d\u7f6e\u6587\u4ef6\u652f\u6301SIC\u7f51\u9875\u4fee\u6539</li>\n</ul></div></div></div>\n",
      "spt_constraint": "~4.1.2",
      "fika": "compatible",
-     "downloads": 426,
+     "downloads": 428,
      "size": 493637,
      "link": "https://sp-mod.com/mod/download/2709/miyako-carry-service/1.1.2",
      "published_at": "2026-08-28T19:33:00.000000Z",
@@ -167131,7 +167171,7 @@
      "description": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">English</div>\n<div class=\"tab-content\"><p>Miyako is my waifu.</p>\n<hr />\n<ul>\n<li>Added configuration options for the Miyako trader to integrate a LLM. Once configured, you can now order McsBotPlayers, issue tickets, settle orders, and renew orders through natural language</li>\n<li>Expanded the full item supply range under McsBotPlayer inventory mode</li>\n<li>Fixed an issue where expired data on the server was not being cleaned up</li>\n<li>Fixed an issue where equipment presets were not saved as expected</li>\n<li>Fixed an issue where opening a container could cause the panel to freeze in certain cases</li>\n<li>Fixed some other issues</li>\n<li>\n<ul>\n<li>A new voice-command addon is available: <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/addon/114/miyako-carry-service-assistant-addon\" rel=\"noreferrer noopener\">MiyakoCarryServiceAssistantAddon</a></li>\n</ul>\n</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">\u4e2d\u6587</div>\n<div class=\"tab-content\"><p>\u5bab\u5b50\u662f\u6211\u8001\u5a46</p>\n<hr />\n<ul>\n<li>\u5bab\u5b50\u5546\u4eba\u65b0\u589e\u63a5\u5165\u5927\u8bed\u8a00\u6a21\u578b\u7684\u914d\u7f6e\u9879\uff0c\u73b0\u5728\u5f53\u4f60\u5b8c\u6210\u914d\u7f6e\u540e\uff0c\u5c06\u53ef\u4ee5\u901a\u8fc7\u81ea\u7136\u8bed\u8a00\u8fdb\u884c\u62a4\u822a\u4e0b\u5355\u3001\u4e0b\u53d1\u7f5a\u5355\u3001\u7ed3\u7b97\u8ba2\u5355\u3001\u7eed\u8ba2\u8ba2\u5355\u64cd\u4f5c</li>\n<li>\u5b8c\u5584\u62a4\u822a\u5e93\u5b58\u6a21\u5f0f\u4e0b\u7684\u5168\u7269\u54c1\u4f9b\u8d27\u8303\u56f4</li>\n<li>\u4fee\u590d\u670d\u52a1\u7aef\u7684\u8fc7\u671f\u6570\u636e\u672a\u6e05\u7406\u7684\u95ee\u9898</li>\n<li>\u4fee\u590d\u88c5\u5907\u9884\u8bbe\u672a\u6309\u9884\u671f\u4fdd\u5b58\u7684\u95ee\u9898</li>\n<li>\u4fee\u590d\u67d0\u4e9b\u60c5\u51b5\u4e0b\u6253\u5f00\u5bb9\u5668\u65f6\u5bfc\u81f4\u9762\u677f\u5361\u4f4f\u7684\u95ee\u9898</li>\n<li>\u4fee\u590d\u4e86\u4e00\u4e9b\u5176\u4ed6\u95ee\u9898</li>\n<li>\n<ul>\n<li>\u4e00\u6b3e\u65b0\u7684\u8bed\u97f3\u6307\u6325\u62a4\u822a\u7684\u63d2\u4ef6\u53ef\u7528: <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/addon/114/miyako-carry-service-assistant-addon\" rel=\"noreferrer noopener\">MiyakoCarryServiceAssistantAddon</a></li>\n</ul>\n</li>\n</ul></div></div></div>\n",
      "spt_constraint": "~4.1.0",
      "fika": "compatible",
-     "downloads": 388,
+     "downloads": 389,
      "size": 488268,
      "link": "https://sp-mod.com/mod/download/2709/miyako-carry-service/1.1.1",
      "published_at": "2026-08-23T22:18:00.000000Z",
@@ -167450,7 +167490,7 @@
      ]
     }
    ],
-   "latest_version": "1.1.2",
+   "latest_version": "1.1.3+1",
    "spt_constraint": "~4.1.2",
    "all_spt_constraints": [
     "~4.0.0",
@@ -167490,7 +167530,7 @@
     }
    ],
    "published_at": "2026-06-01T00:00:00.000000Z",
-   "updated_at": "2026-09-05T04:05:27.000000Z",
+   "updated_at": "2026-09-05T04:39:17.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -191548,8 +191588,8 @@
    "description_html": "<h2>Overview</h2>\n<p>The cooking\u2011grenade mechanic originates from the <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2090/cooking-grenades\" rel=\"noreferrer noopener\">CookingGrenades</a> mod developed by November75 for SPT 3.11.4, and I have added some new features myself.This mod adds a <strong>grenade cooking</strong> mechanic to SPT . Just like in real combat, you can pull the pin and hold the grenade in hand to time your throw, then release at the exact right moment so the enemy is caught by the blast in mid-air or the instant it lands \u2014 with no reaction time.</p>\n<p>The mod also includes <strong>trajectory prediction</strong>, a <strong>cooking indicator</strong>, a <strong>grenade wheel</strong>, and a <strong>medicine wheel</strong> to help you control every grenade and medical item in the heat of a fight.</p>\n<hr />\n<h2>Compatibility</h2>\n<ul>\n<li><strong>Fika Co-op</strong> \u2014 Fully supported (cooking times are synced across multiplayer clients).</li>\n<li><strong><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2783/fast-grenade-throw\" rel=\"noreferrer noopener\">Fast Grenade Throw</a></strong> \u2014 Potentially incompatible. If you use this mod together with Fast Grenade Throw, the grenade cooking and throw behavior may conflict.</li>\n</ul>\n<hr />\n<h2>Key Features</h2>\n<h3>1. Cooking (Core Mechanic)</h3>\n<ul>\n<li>Hold <strong>LMB</strong> (overhand) or <strong>RMB</strong> (underhand) to start cooking a grenade.</li>\n<li>Cooking only begins <strong>after the pin-pull animation completes</strong>, preventing false timing.</li>\n<li>When the cook time approaches the fuse time, the grenade is <strong>auto-thrown</strong> to prevent explosion in hand.</li>\n<li>Swapping weapons, opening doors, picking up items, etc. are <strong>disabled</strong> during cooking to ensure the process is never interrupted.</li>\n<li>The <strong>auto-throw lead time</strong> is configurable (default 0.8s before detonation).</li>\n</ul>\n<h3>2. Realistic Fuse Time (Optional)</h3>\n<ul>\n<li>Introduces <strong>random variation</strong> to grenade fuse times \u2014 no two grenades are identical, simulating real manufacturing tolerances.</li>\n<li>Variation is generated via a <strong>Gaussian (Box-Muller) distribution</strong>, so most grenades cluster near the average with a few outliers.</li>\n<li>Spread factor is configurable (0.001 ~ 0.6). Default is <strong>disabled</strong>.</li>\n<li>A built-in <strong>fuse time simulator</strong> lets you preview the distribution by sampling up to 100,000 grenades and logging statistics to <code>BepInEx/LogOutput.log</code>.</li>\n</ul>\n<h3>3. Trajectory Prediction</h3>\n<p>While holding a grenade ready to throw, a <strong>trajectory line</strong> and <strong>landing marker</strong> are drawn:</p>\n<ul>\n<li>Two display modes: always-on, or only while aiming.</li>\n<li>Physics model uses an <strong>analytic ballistic solution with linear drag</strong>, factoring in:\n<ul>\n<li>Grenade mass (read dynamically from the Rigidbody)</li>\n<li>Player movement speed</li>\n<li>Strength skill level and hand stamina</li>\n<li>Overhand/underhand throw multiplier</li>\n</ul>\n</li>\n<li>The line <strong>collides with the scene</strong>; the marker shows the actual impact point.</li>\n<li>Configurable colors, line width, sampling resolution, step size, and a <strong>throw force multiplier</strong> for calibrating prediction vs. actual landing point.</li>\n<li>Trajectory <strong>recalculates every frame while moving</strong> for smooth tracking, and throttles when stationary to save CPU.</li>\n</ul>\n<h3>4. Cook Indicator</h3>\n<p>A screen-space blinking icon while cooking, so you can sense the remaining time without staring at the grenade:</p>\n<ul>\n<li><strong>Time remaining &gt; 2s</strong>: yellow slow blink, accelerating as cooking progresses.</li>\n<li><strong>Time remaining \u2264 2s</strong>: red fast blink, warning of imminent explosion.</li>\n<li>On release, the icon <strong>rotates 45\u00b0 counter-clockwise</strong> and fades out.</li>\n<li>Configurable icon size, height, and screen X/Y offset.</li>\n</ul>\n<h3>5. Grenade Wheel</h3>\n<p>Hold <strong>G</strong> (configurable) to open a radial <strong>grenade selector</strong> at screen center:</p>\n<ul>\n<li>Scans <strong>tactical rigs</strong> and <strong>pockets</strong> for grenades.</li>\n<li>Move mouse to select, release key to equip \u2014 no menu navigation needed.</li>\n<li>Auto-releases the mouse cursor for precise selection; re-locks on close.</li>\n<li>Prevents firing, aiming, and weapon switching while open.</li>\n<li>Item names are pulled from the game\u2019s <strong>native localization</strong>, supporting all languages automatically.</li>\n</ul>\n<h3>6. Medicine Wheel</h3>\n<p>Hold <strong>H</strong> (configurable) to open a radial <strong>medicine selector</strong>, reusing the wheel UI:</p>\n<ul>\n<li>Scans <strong>tactical rigs</strong> and <strong>pockets</strong> for medical items. Secure container scanning is <strong>off by default</strong>; backpack scanning is off by default.</li>\n<li>Food and drinks are <strong>included by default</strong> (can be disabled).</li>\n<li>Items are <strong>color-coded by category</strong>: medkits = green, stimulants/painkillers = purple, food/water = orange, other medical items = blue.</li>\n<li>Selecting an item triggers the game\u2019s native <code>Proceed</code> usage flow.</li>\n<li>Mutually exclusive with the Grenade Wheel \u2014 only one can open at a time.</li>\n</ul>\n",
    "thumbnail": "https://files.sp-mod.com/mods/wtM6epg1OtrMKIA0mSgK9GScSa6Xgbaxf9DSo6qH.png",
    "forge_url": "https://sp-mod.com/mod/2951/cookinggrenades-41",
-   "downloads": 305,
-   "favourites": 10,
+   "downloads": 1038,
+   "favourites": 22,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -191577,12 +191617,24 @@
    ],
    "versions": [
     {
+     "id": 15202,
+     "version": "1.4.3",
+     "description": "<p>Fixed some bugs and some performance issues, now the cookinggrenades feature works properly on Fika headless mode.</p>\n",
+     "spt_constraint": "~4.1.2",
+     "fika": "compatible",
+     "downloads": 52,
+     "size": 1800611,
+     "link": "https://sp-mod.com/mod/download/2951/cookinggrenades-41/1.4.3",
+     "published_at": "2026-09-05T07:13:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 14965,
      "version": "1.4.2",
      "description": "<p>Added mouse wheel selection, optimized parabolic effects and grenade throwing mechanics, some minor bug fixes</p>\n",
      "spt_constraint": "~4.1.2",
      "fika": "compatible",
-     "downloads": 7,
+     "downloads": 682,
      "size": 1799591,
      "link": "https://sp-mod.com/mod/download/2951/cookinggrenades-41/1.4.2",
      "published_at": "2026-08-24T21:31:00.000000Z",
@@ -191594,14 +191646,14 @@
      "description": "<p>This version of the mod has gone through multiple iterations in the Chinese community, so there should be few or no bugs.</p>\n",
      "spt_constraint": "~4.1.2",
      "fika": "compatible",
-     "downloads": 298,
+     "downloads": 304,
      "size": 1797382,
      "link": "https://sp-mod.com/mod/download/2951/cookinggrenades-41/1.4.1",
      "published_at": "2026-08-23T12:00:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.4.2",
+   "latest_version": "1.4.3",
    "spt_constraint": "~4.1.2",
    "all_spt_constraints": [
     "~4.1.2"
@@ -191609,7 +191661,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-08-23T12:00:00.000000Z",
-   "updated_at": "2026-08-24T21:32:05.000000Z",
+   "updated_at": "2026-09-05T07:17:15.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
@@ -195143,6 +195195,94 @@
     "contains_ads": false,
     "contains_ai_content": true,
     "ai_disclosure": "<p>AI was used to identify which struct forced malfunctions for debugging. Mod\u2019s base code is refactored by myself.</p>\n",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 2993,
+   "hub_id": null,
+   "guid": "com.manimal.harryhead",
+   "name": "Hispanic PMC (Harry) - Custom Head",
+   "slug": "hispanic-pmc-harry-custom-head",
+   "teaser": "New Custom PMC Head for 4.1.X.",
+   "description_html": "<p>Adds a new custom Hispanic PMC Head for the USUCK Faction - Harry [REDACTED]</p>\n<p>Harry is a disgraced GWOT veteran whose military career ended after a battery charge following a violent altercation. With nowhere else to go, he joined USUCK as a contractor, hoping to escape his past and make enough money to get to his son.</p>\n<p>When the Norvinsk conflict erupted, Harry became trapped in Tushonka.</p>\n<p>Now cut off from the outside world, he must fight his way through the region with one goal: survive long enough to get home to his family.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://cdn.discordapp.com/attachments/1525366528432668723/1545681746308235334/Un2123titled.png?ex=6a9d07cd&amp;is=6a9bb64d&amp;hm=cd0c7b38ecfe68a12718b7ac88987f3dbb5612fa20de117103206ac15a0c1afc&amp;\" alt=\"Harry\" />\nHarry, The Survivor</p>\n<p>Mostly created by Manimal1920 (thanks for doing this for me man) <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/119111/manimal1920\" rel=\"noreferrer noopener\">https://sp-mod.com/user/119111/manimal1920</a></p>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/lNpxSVfvgRWeIuufVQsvD3NBNnWvW7ZZT8EGjVgM.png",
+   "forge_url": "https://sp-mod.com/mod/2993/hispanic-pmc-harry-custom-head",
+   "downloads": 81,
+   "favourites": 0,
+   "featured": false,
+   "fika": true,
+   "fika_latest": "compatible",
+   "category": {
+    "id": 11,
+    "title": "Models",
+    "slug": "models"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 123311,
+     "name": "HeartAndSoul",
+     "avatar": "https://files.sp-mod.com/profile-photos/wBzvxemNeWvAaVkbtsdXrrdUZrB2hUw23dubUrbM_256w.webp"
+    },
+    {
+     "id": 119111,
+     "name": "Manimal1920",
+     "avatar": "https://files.sp-mod.com/profile-photos/GqCEb1x0m8HH6UEQ1R4C7YtvyMxSO5TWVMUzSYUQ_256w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/danauraborealis/HarryHead/releases/tag/1.0.1",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 15204,
+     "version": "1.0.0",
+     "description": "<p>4.0.13 Build</p>\n<p>Hispanic PMC Head</p>\n",
+     "spt_constraint": "~4.0.13",
+     "fika": "compatible",
+     "downloads": 2,
+     "size": 2968891,
+     "link": "https://sp-mod.com/mod/download/2993/hispanic-pmc-harry-custom-head/1.0.0",
+     "published_at": "2026-09-05T09:24:00.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 15203,
+     "version": "1.0.1",
+     "description": "<p>Hispanic PMC (Harry) Head</p>\n<p>4.1.4.</p>\n",
+     "spt_constraint": "~4.1.4",
+     "fika": "compatible",
+     "downloads": 79,
+     "size": 2969157,
+     "link": "https://sp-mod.com/mod/download/2993/hispanic-pmc-harry-custom-head/1.0.1",
+     "published_at": "2026-09-05T07:35:00.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "1.0.0",
+   "spt_constraint": "~4.0.13",
+   "all_spt_constraints": [
+    "~4.0.13",
+    "~4.1.4"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-09-05T07:36:00.000000Z",
+   "updated_at": "2026-09-05T09:28:17.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
     "cheat_notice": false,
     "profile_binding_notice": false
    },
