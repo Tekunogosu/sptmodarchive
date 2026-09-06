@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-09-05T22:59:20Z",
+ "generated_at": "2026-09-06T04:48:46Z",
  "source": "https://sp-mod.com",
  "filter": "all",
- "mod_count": 1929,
+ "mod_count": 1930,
  "categories": [
   {
    "id": 12,
@@ -164549,11 +164549,11 @@
    "description_html": "<h3>UI label style inspired by ShowLootValueInRaid by HiddenCirno</h3>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Features</div>\n<div class=\"tab-content\"><h3>Loot value while you play</h3>\n<p>There\u2019s a counter in your inventory screen that adds up the flea value of everything you\u2019re carrying. It updates as you pick things up. If an item isn\u2019t on the flea, it uses the handbook price instead.</p>\n<h3>Summary when you extract</h3>\n<p>When you make it out, you get a full screen breakdown of the raid: total value, your 5 best finds, how many items you grabbed, your kills, and the XP you earned. It closes on its own after a few seconds, or you can click to skip it. You can change that in the F12 menu.</p>\n<h3>Raid history</h3>\n<p>There\u2019s a HISTORY button added to the main menu. It opens a panel with a card for each raid you\u2019ve done this session, showing the map, whether it was a PMC or Scav run, the loot value, and your kills. It keeps the last 15.</p>\n<h3>PMC and Scav runs</h3>\n<p>On PMC raids it only counts the stuff you found, not your starting gear. On Scav raids it includes your spawn loadout,</p>\n<h3>Pricing</h3>\n<p>Prices are pulled from flea market, so they match what you\u2019d actually see. If something isn\u2019t listed there, it falls back to the handbook price. By default it counts everything, but there\u2019s an option to only include items that cant really be sold on the flea, so the total reflects what you\u2019d actually make rather than what stuff is theoretically worth.</p>\n<h3>PIT Fireteam</h3>\n<p>If you have PIT Fireteam installed, LootNet picks up on it automatically. Your teammates show up in the summary with their kill counts, and squad kills are included in the history panel.</p>\n<h3>Preview</h3>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/uM87vUZ.jpeg\" alt=\"LootNet Preview\" /></p></div></div></div>\n<h1>Fika preview</h1>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://imgur.com/0ABBZKJ.png\" alt=\"LootNet Preview\" /></p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/TwjsGlZRtCLqYVNjHSwsJBGG2qbvFeBPThrlgccS.jpg",
    "forge_url": "https://sp-mod.com/mod/2679/lootnet",
-   "downloads": 20621,
-   "favourites": 88,
+   "downloads": 23973,
+   "favourites": 101,
    "featured": false,
    "fika": true,
-   "fika_latest": "compatible",
+   "fika_latest": "unknown",
    "category": {
     "id": 17,
     "title": "Other",
@@ -164578,12 +164578,24 @@
    ],
    "versions": [
     {
+     "id": 15222,
+     "version": "1.1.2",
+     "description": "<h3>Fixed</h3>\n<ul>\n<li><strong><code>/lootnet/prices</code> returned nothing.</strong> If the server\u2019s flea price table held a <code>NaN</code> or infinite value for any single item, <code>System.Text.Json</code> refused to write the response and the whole request failed, so the client silently fell back to handbook prices and the server log filled with <code>.NET number values such as positive and negative infinity cannot be written as valid JSON</code>. Non-finite prices are now skipped, per item, in all three places they can enter: the static price table, a live offer\u2019s requirement cost, and the averaged live-offer price</li>\n</ul>\n<p>thats all folks cya!</p>\n",
+     "spt_constraint": "4.1.5",
+     "fika": "unknown",
+     "downloads": 116,
+     "size": 959205,
+     "link": "https://sp-mod.com/mod/download/2679/lootnet/1.1.2",
+     "published_at": "2026-09-05T23:47:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 14954,
      "version": "1.1.1",
      "description": "<h3>Added</h3>\n<ul>\n<li><strong>Top find</strong>: the raid\u2019s most valuable item shown with its real in-game icon, Falls back to text alone when the icon does not resolve</li>\n<li><strong>Fika support</strong> added back Fika support still in the old summary UI not sure if i m gone change it</li>\n</ul>\n<h3>Changed</h3>\n<ul>\n<li><strong>Raid summary slight reworked</strong></li>\n</ul>\n",
      "spt_constraint": "4.1.3",
      "fika": "compatible",
-     "downloads": 452,
+     "downloads": 3205,
      "size": 962684,
      "link": "https://sp-mod.com/mod/download/2679/lootnet/1.1.1",
      "published_at": "2026-08-24T14:16:00.000000Z",
@@ -164595,7 +164607,7 @@
      "description": "<h2>get it while its hot!</h2>\n<h1>added</h1>\n<ul>\n<li>\n<p>redesigned the summary screen</p>\n</li>\n<li>\n<p>updated to 4.1</p>\n</li>\n</ul>\n",
      "spt_constraint": "~4.1",
      "fika": "incompatible",
-     "downloads": 5106,
+     "downloads": 5170,
      "size": 946998,
      "link": "https://sp-mod.com/mod/download/2679/lootnet/1.1.0",
      "published_at": "2026-08-01T20:34:00.000000Z",
@@ -164607,7 +164619,7 @@
      "description": "<h1>changes</h1>\n<ul>\n<li><strong>Loot values</strong> now come from live flea market offers instead of the base price table, so custom or inflated flea prices (e.g. an SVM x10 flea) are reflected in raid value. Items with no live offer fall back to the base price</li>\n</ul>\n<h1>added</h1>\n<ul>\n<li><strong>Team &amp; personal high scores (Fika)</strong> the coop scoreboard now remembers records across raids. Each player\u2019s loot bar fills toward their personal best, with a marker showing the record to beat, and the combined team haul tracks the squad\u2019s all-time best under the hero total</li>\n<li>Records persist to disk on the server (survive restarts) and are shared across the Team, so everyone sees the same marks and celebrates together; personal bests count team raids only</li>\n</ul>\n<h1>hotfix</h1>\n<ul>\n<li>\n<p>fixed items counting as more as they are in the summary</p>\n</li>\n<li>\n<p>thats all have a good day! :D</p>\n</li>\n</ul>\n",
      "spt_constraint": "4.0.13",
      "fika": "compatible",
-     "downloads": 4634,
+     "downloads": 5043,
      "size": 954172,
      "link": "https://sp-mod.com/mod/download/2679/lootnet/1.0.9",
      "published_at": "2026-07-14T17:25:00.000000Z",
@@ -164619,7 +164631,7 @@
      "description": "<h1>Fika</h1>\n<ul>\n<li>redesigned the summary</li>\n</ul>\n<h1>fixes</h1>\n<ul>\n<li>hopefully fixed the weird value dropping or increasing when loading / unloading mags</li>\n</ul>\n",
      "spt_constraint": "4.0.13",
      "fika": "compatible",
-     "downloads": 1298,
+     "downloads": 1302,
      "size": 948346,
      "link": "https://sp-mod.com/mod/download/2679/lootnet/1.0.8",
      "published_at": "2026-07-06T17:02:00.000000Z",
@@ -164631,7 +164643,7 @@
      "description": "<h1>Fika update!</h1>\n<ul>\n<li>added Fika support</li>\n<li>new summary UI when useing with Fika (WIP will change in the future)</li>\n<li>team haul shows the total value of everyones loots in one big pool</li>\n<li>Fika headless should work i hope but i didn test it i m to lazy to setup a headless client</li>\n</ul>\n<h1>Hotfix</h1>\n<ul>\n<li>fixed fika Dependency issue</li>\n</ul>\n",
      "spt_constraint": "4.0.13",
      "fika": "compatible",
-     "downloads": 1315,
+     "downloads": 1316,
      "size": 949582,
      "link": "https://sp-mod.com/mod/download/2679/lootnet/1.0.7",
      "published_at": "2026-06-29T15:22:00.000000Z",
@@ -164655,7 +164667,7 @@
      "description": "<h3>Added</h3>\n<ul>\n<li><strong>Raid History panel</strong> new <code>HISTORY</code> button in the main menu opens a side drawer with a full log of raids from the current session restarting the sever WIPES the history!\n<ul>\n<li>Each card shows map name, raid type (PMC / SCAV), time since the raid, total loot value, and kill summary</li>\n<li>PIT Fireteam squad kills are included in the kill line when the mod is present</li>\n<li>History is capped at 15 entries; a notice appears at the bottom of the list when the cap is reached and older entries start being dropped</li>\n</ul>\n</li>\n<li>Manual dismiss raid summary screen can now be set to require a click to close instead of auto-dismissing (toggle in F12 BepInEx config)</li>\n</ul>\n",
      "spt_constraint": "4.0",
      "fika": "unknown",
-     "downloads": 1237,
+     "downloads": 1239,
      "size": 920191,
      "link": "https://sp-mod.com/mod/download/2679/lootnet/1.0.5",
      "published_at": "2026-05-14T07:52:00.000000Z",
@@ -164691,7 +164703,7 @@
      "description": "<p>Fixed loot value inflating when shifting items around in inventory\nbug report by @GoldChimera</p>\n",
      "spt_constraint": "4.0",
      "fika": "unknown",
-     "downloads": 411,
+     "downloads": 413,
      "size": 913169,
      "link": "https://sp-mod.com/mod/download/2679/lootnet/1.0.2",
      "published_at": "2026-05-06T12:12:00.000000Z",
@@ -164715,25 +164727,26 @@
      "description": "<p>release!</p>\n",
      "spt_constraint": "4.0",
      "fika": "unknown",
-     "downloads": 485,
+     "downloads": 486,
      "size": 903352,
      "link": "https://sp-mod.com/mod/download/2679/lootnet/1.0.0",
      "published_at": "2026-05-04T21:16:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.1.1",
-   "spt_constraint": "4.1.3",
+   "latest_version": "1.1.2",
+   "spt_constraint": "4.1.5",
    "all_spt_constraints": [
     "4.0",
     "4.0.13",
     "4.1.3",
+    "4.1.5",
     "~4.1"
    ],
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-08-19T00:35:59.000000Z",
-   "updated_at": "2026-08-25T09:55:12.000000Z",
+   "updated_at": "2026-09-05T23:56:27.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
@@ -175182,11 +175195,11 @@
    "name": "Tylevo's Tactical Service Control",
    "slug": "tylevos-tactical-service-control",
    "teaser": "Adds a TSC phone and Fika-ready Fire Support options, including UAV recon, A-10 strikes, Black Hawk extraction, stash payments, and host-controlled pricing.",
-   "description_html": "<h1>Tylevo\u2019s Tactical Services Control</h1>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Features</div>\n<div class=\"tab-content\"><ul>\n<li><strong>A-10 Strafe</strong> and <strong>A-10 Double Pass</strong> with aircraft, GAU-8 audio, tracers, and impact effects.</li>\n<li><strong>UH-60 Black Hawk Extraction</strong> and <strong>Priority Exfil</strong>.</li>\n<li><strong>UAV Recon</strong> and <strong>Focused Sweep</strong> with a requester-only radar display.</li>\n<li>Purchase and deploy services from the animated <strong>T</strong>******* TSC Uplink**.</li>\n<li>Carried roubles, stash roubles, and configurable hybrid payment behavior.</li>\n<li>Persistent service authorizations with separate counts for every standard and upgraded option.</li>\n<li>Configurable prices, limits, payment rules, support settings, and Fika/headless behavior.</li>\n<li>Optional Project Fika support with host-authoritative requests and synchronized raid visuals.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">How To Use</div>\n<div class=\"tab-content\"><ol>\n<li>Bring the <strong>T</strong>******* TSC Uplink** into the raid.</li>\n<li>Press <code>U</code> to open the phone in purchase mode.</li>\n<li>Press <code>1</code>, <code>2</code>, or <code>3</code> to open Extraction, Fire Support, or UAV Recon.</li>\n<li>Inside a category, press <code>1</code> for the standard service or <code>2</code> for the upgraded option when available.</li>\n<li>Press <code>Enter</code> on the confirmation screen to purchase the selected authorization.</li>\n<li>When you are ready to use it, press <code>K</code> to open the phone in deployment mode.</li>\n<li>Press <code>1</code>-<code>6</code> to choose one of your owned services, then press <code>LMB</code> or <code>Enter</code> to deploy it.</li>\n</ol>\n<p>The deploy phone only lists authorizations you currently own. Closing it with <code>RMB</code>, <code>Backspace</code>, or <code>Escape</code> does not consume anything.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Targeting And Controls</div>\n<div class=\"tab-content\"><ul>\n<li><code>U</code>: Open the Uplink in purchase mode.</li>\n<li><code>K</code>: Open the Uplink in deployment mode.</li>\n<li><code>1</code>-<code>6</code>: Navigate phone menus and select owned services.</li>\n<li><code>Enter</code>: Confirm a purchase, deployment, or targeting step.</li>\n<li><code>LMB</code>: Deploy the selected authorization from the phone.</li>\n<li><code>Mouse 2</code> / middle mouse: Confirm A-10 and UH-60 targeting steps.</li>\n<li><code>RMB</code>: Return to the previous phone screen.</li>\n<li><code>Alt + RMB</code> or <code>Backspace</code>: Cancel active target designation.</li>\n<li><code>Escape</code>: Close or stow the phone.</li>\n</ul>\n<p>A-10 and UH-60 targeting uses the player camera. <strong>A rangefinder is not required.</strong> UAV Recon and Focused Sweep start immediately after deployment.</p>\n<p>The purchase, deploy, and spotter-confirm keys can all be changed in <code>F12</code>. Phone zoom, FOV, and horizontal/vertical framing can also be adjusted there.</p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Configuration</div>\n<div class=\"tab-content\"><p>Local controls and phone presentation settings are available through the <code>F12</code> BepInEx configuration manager.</p>\n<p>Server and gameplay settings are managed from the TSC Dashboard:</p>\n<p><code>https://127.0.0.1:6969/tsc/admin</code></p>\n<p>The dashboard controls prices, payment sources, authorization limits, support behavior, and Fika/headless settings. It is localhost-only by default. Do not expose or port-forward it to the public internet.</p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Fika</div>\n<div class=\"tab-content\"><p>Project Fika is optional. Solo SPT does not require it.</p>\n<p>For Fika, install the same TSC version on the human host, every client, and the dedicated headless host when one is used. The raid host\u2019s settings are authoritative while connected.</p>\n<ul>\n<li>Human-hosted Fika raids retain the original Arys A-10 runtime and damage path.</li>\n<li>Fika clients render synchronized support visuals and do not execute authoritative A-10 damage.</li>\n<li>Dedicated-headless A-10 damage is separately gated and remains <strong>experimental</strong>. Results can vary by map and mod combination.</li>\n<li>UAV radar is displayed only to the player who requested it and is never created on the headless host.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Installation</div>\n<div class=\"tab-content\"><ol>\n<li>Install <strong>UnityToolkit v2.0.1</strong> and <strong>WTT CommonLib</strong>.</li>\n<li>Install Project Fika only when using multiplayer.</li>\n<li>Extract the TSC release ZIP directly into the SPT root.</li>\n<li>Start SPT normally.</li>\n</ol>\n<p>After extraction, these folders should exist:</p>\n<p><code>BepInEx/plugins/Tylevo.TacticalServicesControl/</code></p>\n<p><code>SPT/user/mods/Tylevo.TacticalServicesControl/</code></p>\n<p>Do not install SamSWAT Fire Support or Arys Reloaded alongside TSC. TSC is a derivative replacement and the packages conflict.</p></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Compatibility And Known Issues</div>\n<div class=\"tab-content\"><ul>\n<li>Built for <strong>SPT 4.0.13</strong>.</li>\n<li>Project Fika is supported but optional.</li>\n<li>Dedicated-headless Fika A-10 damage is experimental and is not claimed to match the original human-host ballistic path in every setup.</li>\n<li>Remote third-person phone animation sync is not currently included.</li>\n<li>The phone\u2019s inventory inspect presentation may still need polish.</li>\n<li>Back up profiles before testing new payment configurations.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-8\" class=\"tab-panel\"><div class=\"tab-title\">Credits</div>\n<div class=\"tab-content\"><p>TSC is derived from <strong>SamSWAT\u2019s Fire Support</strong> and <strong>SamSWAT\u2019s Fire Support - Arys Reloaded by Arys</strong>, with permission and attribution retained.</p>\n<p>Additional credit goes to Tyrian for radar work, danauraborealis for Manimal Hacker Mod material used under the MIT license, and the SPT and Project Fika teams for their platforms and APIs.</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Tylevo/Tylevo.TacticalServicesControl\" rel=\"noreferrer noopener\">Source code and full notices</a></p>\n<p>Optional support: <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/tylevo\" rel=\"noreferrer noopener\">Ko-fi</a>. Tips are voluntary and do not unlock downloads, features, early access, or support priority.</p></div></div></div>\n<h2>Description</h2>\n<p>Bring battlefield support into the raid with the <strong>T</strong>******* TSC Uplink**. Purchase an authorization from the phone, save it until you need it, then call in an A-10 strike, Black Hawk extraction, or UAV sweep without leaving the raid.</p>\n<p>TSC is a full rework and expansion of SamSWAT\u2019s Fire Support and Arys Reloaded. It replaces the old rangefinder-and-radial workflow with a purpose-built tactical phone, adds an in-raid economy, and supports both solo SPT and Project Fika.</p>\n<div class=\"youtube-lite\" data-video-id=\"dKZQxQjVVQQ\" data-embed-url=\"https://www.youtube-nocookie.com/embed/dKZQxQjVVQQ?autoplay=1\"><img src=\"https://i.ytimg.com/vi/dKZQxQjVVQQ/hqdefault.jpg\" alt=\"YouTube video thumbnail\" loading=\"lazy\" decoding=\"async\" /></div>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/qgsfulX.png\" alt=\"TSC In Game\" /></p>\n",
+   "description_html": "<h1>Tylevo\u2019s Tactical Services Control</h1>\n<p>Call in an A-10 strike, get a Black Hawk pickup, or send a UAV to look for nearby contacts. The <strong>T</strong>******* TSC Uplink** lets you buy support, choose a target, and call it in during a raid. You can also send loot home by helicopter and keep playing.</p>\n<p><strong>TSC v1.3.10 is built for SPT 4.1.5.</strong> UnityToolkit is included in the download. You\u2019ll need <strong>WTT CommonLib 3.0.6</strong> separately.</p>\n<p><strong>I haven\u2019t tested multiplayer on the current SPT and Fika versions yet. Fika is optional.</strong></p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">What\u2019s New</div>\n<div class=\"tab-content\"><p>This update brings together the features and fixes added since the last Forge release for <strong>SPT 4.0.13</strong>. The builds in between were only released on GitHub.</p>\n<ul>\n<li><strong>Send cargo home.</strong> UH-60 Cargo Transfer replaces Priority Exfil. Load your items onto the helicopter and receive them through Pilot\u2019s mail after the raid, without extracting your PMC.</li>\n<li><strong>Buy support before a raid.</strong> The <strong>TSC UPLINK</strong> button now sits beside <strong>Character</strong> on the main menu\u2019s bottom bar. Open it to browse services, check your stash balance, and buy authorizations.</li>\n<li><strong>Use the phone with your mouse.</strong> Hold <strong>Left Alt</strong> and left-click to make selections. The purchase screens have been rebuilt with live prices, new icons, and a horizontal layout until the final swipe. Zoom now eases in and out, with timing and framing settings in F12.</li>\n<li><strong>Get your Uplink from Pilot.</strong> UH-60 Pilot has a new portrait and sells the phone instead of Jaeger. He\u2019s unlocked for now, with no quest requirement. The Uplink also has its own fourth special slot.</li>\n<li><strong>Choose how you view recon.</strong> Hold <strong>J</strong> to check the radar on your phone, or use the optional HUD scanner in a screen corner.</li>\n<li><strong>Set support prices in RUB, USD, or EUR.</strong> Payment recovery and authorization handling have also been improved.</li>\n<li><strong>More accurate A-10 targeting.</strong> Shot origins and trajectory compensation have been corrected to address rounds landing short of the marker.</li>\n<li><strong>Open the dashboard from SIC.</strong> The launcher now provides access to the themed TSC dashboard and a native config editor. Both check your settings and protect against conflicting saves.</li>\n<li><strong>One less dependency to install.</strong> The compatible UnityToolkit rebuild is bundled with Arys\u2019s permission.</li>\n</ul>\n<p>Phone deployment, camera targeting, A-10 Double Pass, and both UAV services were already in the 4.0.13 release. They\u2019re still here, alongside the additions above.</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Tylevo/Tylevo.TacticalServicesControl/blob/main/docs/release-notes-v1.3.10.md\" rel=\"noreferrer noopener\">Full release notes</a></p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Services</div>\n<div class=\"tab-content\"><ul>\n<li><strong>A-10 Strafe:</strong> one autocannon pass over your marked target, with GAU-8 audio, tracers, and impact effects.</li>\n<li><strong>A-10 Double Pass:</strong> two passes over the target, with an adjustable delay between them.</li>\n<li><strong>UH-60 Extraction:</strong> mark a landing zone and get a helicopter pickup that extracts your PMC.</li>\n<li><strong>UH-60 Cargo Transfer:</strong> send items home while you stay in the raid.</li>\n<li><strong>UAV Recon:</strong> scan for contacts and view them on the phone or HUD.</li>\n<li><strong>UAV Focused Sweep:</strong> the alternate focused recon service.</li>\n</ul>\n<p>Each service has its own authorization count. Prices, limits, cooldowns, payment sources, and service timing can be adjusted in the dashboard.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Getting Started</div>\n<div class=\"tab-content\"><p>Buy the <strong>T</strong>******* TSC Uplink** from <strong>UH-60 Pilot</strong> for <strong>\u20bd50,000</strong> at loyalty level 1. Put it in the dedicated fourth special slot, or carry it in your inventory.</p>\n<p>To buy before a raid, open <strong>TSC UPLINK</strong> beside <strong>Character</strong> on the main-menu bottom bar. Pick a service, review the price, and confirm. These purchases use your PMC\u2019s stash money.</p>\n<p>To buy during a raid, press <strong>U</strong> to raise the phone. Hold <strong>Left Alt</strong>, open <strong>Tactical Services</strong>, and left-click your way through the category and service screens. Check the price, then confirm. The phone turns upright and plays the final swipe automatically.</p>\n<p>Prefer the keyboard? Left-click from the home screen, then press <strong>1</strong>, <strong>2</strong>, or <strong>3</strong> for UH-60 Services, Fire Support, or UAV Recon. Use <strong>1</strong> or <strong>2</strong> to choose the service within that category, then <strong>Enter</strong> on the review screen to buy it.</p>\n<p>When you\u2019re ready to call in support, press <strong>K</strong>. Select an owned service with Alt and the mouse, or with <strong>1\u20136</strong>, then click <strong>Deploy</strong> or press <strong>LMB / Enter</strong>. Closing the deployment screen before dispatch doesn\u2019t spend an authorization.</p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Controls</div>\n<div class=\"tab-content\"><table>\n<thead>\n<tr>\n<th>Control</th>\n<th>Action</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>U</strong></td>\n<td>Open the purchase phone.</td>\n</tr>\n<tr>\n<td><strong>K</strong></td>\n<td>Open deployment for services you own.</td>\n</tr>\n<tr>\n<td><strong>Hold Left Alt + left-click</strong></td>\n<td>Browse and select with the phone cursor. Release Alt to look around again.</td>\n</tr>\n<tr>\n<td><strong>1 / 2 / 3</strong></td>\n<td>Choose a category on the purchase phone.</td>\n</tr>\n<tr>\n<td><strong>1 / 2</strong></td>\n<td>Choose a service within that category.</td>\n</tr>\n<tr>\n<td><strong>1\u20136</strong></td>\n<td>Select an owned service in deployment mode.</td>\n</tr>\n<tr>\n<td><strong>Enter</strong></td>\n<td>Confirm a reviewed purchase, deployment, or targeting step.</td>\n</tr>\n<tr>\n<td><strong>LMB</strong></td>\n<td>Open Tactical Services from the home screen, or deploy the selected authorization in deployment mode.</td>\n</tr>\n<tr>\n<td><strong>Middle mouse</strong></td>\n<td>Confirm an A-10 or UH-60 targeting step.</td>\n</tr>\n<tr>\n<td><strong>Alt + RMB / Backspace</strong></td>\n<td>Cancel camera targeting.</td>\n</tr>\n<tr>\n<td><strong>RMB</strong></td>\n<td>Go back on the purchase phone, or stow the deployment phone.</td>\n</tr>\n<tr>\n<td><strong>Escape</strong></td>\n<td>Close or stow the phone.</td>\n</tr>\n<tr>\n<td><strong>Hold J</strong></td>\n<td>View active recon in Phone display mode.</td>\n</tr>\n<tr>\n<td><strong>F12</strong></td>\n<td>Adjust keybinds, phone zoom, radar display, and other client settings.</td>\n</tr>\n</tbody>\n</table>\n<p>For A-10 and UH-60 services, aim with your camera and confirm each targeting step. UAV Recon and Focused Sweep start when deployed.</p>\n<p>Only the player who requested recon sees its radar. The recon timer keeps running while the phone is stowed.</p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Cargo Transfer</div>\n<div class=\"tab-content\"><p>Call <strong>UH-60 Cargo Transfer</strong>, mark a loading zone, and use <strong>SEND ITEMS VIA UH-60</strong> when it lands.</p>\n<p>The authorization pays for the helicopter dispatch. Sending items has a <strong>separate handling fee in roubles</strong>. In <strong>F12 &gt; Helicopter Cargo &gt; Transfer fee source</strong>, choose <strong>Carried</strong> to use money on your PMC or <strong>Stash</strong> to pay from your stash.</p>\n<p>The helicopter leaves after a successful paid transfer. If you cancel or payment fails, you can try again while it\u2019s still waiting. Your cargo arrives through <strong>UH-60 Pilot</strong> mail after the raid.</p>\n<p>Cargo Transfer is available in solo play and is implemented for a human Fika host sending their own items. Non-host clients and dedicated-headless requesters can\u2019t use it yet. Current Fika multiplayer remains untested.</p></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Configuration</div>\n<div class=\"tab-content\"><p>With the SPT server running, open <strong>SIC</strong> from the launcher and choose <strong>Tactical Services Control</strong> under <strong>Mod pages</strong>. This opens the themed TSC dashboard. The in-game store\u2019s <strong>Dashboard</strong> button opens the same page.</p>\n<p>For SIC\u2019s native editor, go to <strong>Config Editor &gt; Mods &gt; Tactical Services Control</strong>.</p>\n<p>Use these pages to adjust prices, currencies, availability, limits, cooldowns, and service timing. In SIC\u2019s native editor, <strong>Apply to Runtime</strong> changes the running server; <strong>Save to Disk</strong> keeps those settings for the next start. Use both when you want the change to take effect now and persist.</p>\n<p>Personal phone, keybind, and radar settings stay in <strong>F12</strong>.</p>\n<p>Changing currency doesn\u2019t convert your existing price numbers, so check the prices before saving. Cargo\u2019s separate handling fee is always in RUB.</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Tylevo/Tylevo.TacticalServicesControl/blob/main/docs/dashboard.md\" rel=\"noreferrer noopener\">Dashboard guide</a></p></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Installation</div>\n<div class=\"tab-content\"><p><strong>Required:</strong> SPT 4.1.5 and <strong><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/WelcomeToThursday/WTT-CommonLib/releases/tag/v3.0.6\" rel=\"noreferrer noopener\">WTT CommonLib 3.0.6</a></strong>, including WTT\u2019s client, server, and serialization prepatcher components.</p>\n<p><strong>Included:</strong> UnityToolkit 2.0.1 rebuilt for SPT 4.1, its companion libraries, and license notices. You don\u2019t need another Toolkit or compatibility-overlay download.</p>\n<ol>\n<li>Close the game, launcher, and SPT server.</li>\n<li>Install WTT CommonLib and all its required components.</li>\n<li>Extract the <strong>full TSC release ZIP</strong> into your SPT 4.1.5 folder.</li>\n<li>Merge the <strong>BepInEx</strong> and <strong>SPT_Runtime</strong> folders and replace old mod files when prompted.</li>\n<li>Start the server, then the launcher and game.</li>\n</ol>\n<p>These folders should be directly inside your SPT installation:</p>\n<pre><code>BepInEx/plugins/Tylevo.TacticalServicesControl/\nSPT_Runtime/user/mods/Tylevo.TacticalServicesControl/\nBepInEx/plugins/UnityToolkit/\nBepInEx/patchers/UnityToolkit/\n</code></pre>\n<p>If Toolkit is already installed, replace its files in the standard folders and keep one installation. Don\u2019t install SamSWAT Fire Support or Arys Reloaded alongside TSC; TSC replaces them.</p>\n<p><strong>Updating from SPT 4.0.13:</strong> install SPT 4.1.5 in a new folder and start a fresh profile. Keep your old installation as a backup. Let TSC create fresh storage rather than copying over old mods or authorization records.</p>\n<p><strong>Updating an existing SPT 4.1.x setup:</strong> follow SPT\u2019s patch-update instructions. Back up your profiles and TSC\u2019s complete <strong>config/</strong> and <strong>storage/</strong> directories first. The TSC ZIP doesn\u2019t overwrite those directories.</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Tylevo/Tylevo.TacticalServicesControl/blob/main/docs/dependencies.md\" rel=\"noreferrer noopener\">Full installation guide</a> \u00b7 <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Tylevo/Tylevo.TacticalServicesControl/releases/tag/v1.3.10\" rel=\"noreferrer noopener\">GitHub release</a></p></div></div>\n<div id=\"tabset-1-panel-8\" class=\"tab-panel\"><div class=\"tab-title\">Fika and Known Issues</div>\n<div class=\"tab-content\"><p><strong>I haven\u2019t tested Fika on the current SPT and Fika versions yet.</strong> Integration is included, and multiplayer compatibility still needs checking. Solo SPT doesn\u2019t need Fika.</p>\n<p>If you\u2019re testing multiplayer, use a matching Fika client/server setup and install the same TSC version on every participating machine. The raid host controls support requests and shared service settings.</p>\n<ul>\n<li>Cargo Transfer is currently limited to solo players and a human host requesting their own transfer.</li>\n<li>Dedicated-headless A-10 damage is experimental.</li>\n<li>Remote third-person phone animations aren\u2019t included.</li>\n<li>The phone\u2019s inventory inspect model still needs some polish.</li>\n<li>Support behavior and UI layouts need broader testing across maps, resolutions, and multiplayer setups.</li>\n</ul>\n<p>It\u2019s working in my local SPT 4.1.5 setup, and the automated checks have passed. This is still a public beta.</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Tylevo/Tylevo.TacticalServicesControl/blob/main/docs/known-issues.md\" rel=\"noreferrer noopener\">Known issues</a></p></div></div>\n<div id=\"tabset-1-panel-9\" class=\"tab-panel\"><div class=\"tab-title\">Credits</div>\n<div class=\"tab-content\"><p>TSC builds on <strong>SamSWAT\u2019s Fire Support</strong> and <strong>SamSWAT\u2019s Fire Support \u2013 Arys Reloaded by Arys</strong>, with permission and credit retained.</p>\n<p>Thanks to <strong>Arys</strong> for UnityToolkit and permission to bundle its compatible rebuild, <strong>Tyrian</strong> for radar work, and <strong>danauraborealis</strong> for Manimal Hacker Mod material used under the MIT license. Thanks also to the <strong>SPT</strong> and <strong>Project Fika</strong> teams for their platforms and APIs.</p>\n<p>TSC is licensed under <strong>CC BY-NC 4.0</strong>. UnityToolkit remains under MIT, and its companion libraries keep their own licenses.</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Tylevo/Tylevo.TacticalServicesControl\" rel=\"noreferrer noopener\">Source code and full notices</a></p>\n<p>If you\u2019d like to support development, you can leave a tip on <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/tylevo\" rel=\"noreferrer noopener\">Ko-fi</a>. Tips are optional and don\u2019t unlock downloads, features, early access, or priority support.</p></div></div>\n<div id=\"tabset-1-panel-10\" class=\"tab-panel\"><div class=\"tab-title\">Earlier Gameplay</div>\n<div class=\"tab-content\"><p>These links are carried over from the previous Forge description. Some screens and controls have changed since then; use the guide above for this release.</p>\n<div class=\"youtube-lite\" data-video-id=\"dKZQxQjVVQQ\" data-embed-url=\"https://www.youtube-nocookie.com/embed/dKZQxQjVVQQ?autoplay=1\"><img src=\"https://i.ytimg.com/vi/dKZQxQjVVQQ/hqdefault.jpg\" alt=\"YouTube video thumbnail\" loading=\"lazy\" decoding=\"async\" /></div>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/qgsfulX.png\" alt=\"TSC in game \u2014 earlier version\" /></p></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/6VdJ6nRTQO58JeKWjsdsaRJw1KFC9tCdnSZAu9Fk.png",
    "forge_url": "https://sp-mod.com/mod/2791/tylevos-tactical-service-control",
-   "downloads": 6211,
-   "favourites": 47,
+   "downloads": 6247,
+   "favourites": 48,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -175234,7 +175247,7 @@
      "description": "<h1>Tylevo\u2019s Tactical Services Control v1.0.8 Public Beta</h1>\n<p>Install-ready beta package for SPT 4.0.13. Extract it into the SPT root while the game and server are closed.</p>\n<p>This update follows the published v1.0.7 build and contains the changes below.</p>\n<h2>Highlights</h2>\n<ul>\n<li>Support deployment now happens from the TSC Uplink phone. Buy an authorization, press the configurable deploy key, select the exact service you purchased, and designate the target without carrying the rangefinder.</li>\n<li>The phone can automatically zoom and reframe itself while raised. Its default zoom FOV is now 45 for a slightly wider view; FOV and horizontal/vertical framing remain configurable in F12 and restore cleanly when the phone is stowed. Existing custom FOV values are preserved.</li>\n<li>Purchase, deploy, and spotter-confirm keybinds are now visible in F12.</li>\n<li>A-10 single and double passes stay separate from purchase through deployment, so selecting one no longer spends or launches the other.</li>\n</ul>\n<h2>Controls And Workflow</h2>\n<ul>\n<li><code>U</code> (configurable in F12 as <strong>Open uplink key</strong>) opens the TSC Uplink in purchase mode.</li>\n<li>On the purchase phone, press <code>1</code>, <code>2</code>, or <code>3</code> to open Extraction, Fire Support, or UAV Recon. Inside a category, <code>1</code> selects the standard service and <code>2</code> selects the upgraded variant when enabled. Press Enter on the confirmation screen to authorize payment. RMB returns to the previous screen; Escape closes the phone.</li>\n<li><code>K</code> (configurable in F12 as <strong>Open deploy key</strong>) opens the Uplink in deployment mode after you own an authorization. Only services you currently own are listed. Press <code>1</code>-<code>6</code> to select one, then LMB or Enter to deploy it. RMB, Backspace, or Escape stows the phone without spending anything.</li>\n<li>A-10 and UH-60 use camera-based target designation after deployment; the rangefinder is no longer required. Press <code>Mouse 2</code>/middle mouse (configurable in F12 as <strong>Spotter confirm key</strong>) or Enter to confirm each targeting step. Alt+RMB or Backspace cancels targeting.</li>\n<li>UAV Recon and Focused Sweep start directly after deployment and display the radar overlay only for the requesting player.</li>\n</ul>\n<h2>Payment And Authorizations</h2>\n<ul>\n<li>Fixed authorizations being duplicated, not consumed, or restored with the wrong service type.</li>\n<li>Stash purchases are serialized and transactional. TSC restores the inventory if profile saving or authorization persistence fails, preventing lost roubles without a matching authorization.</li>\n<li><code>PreferStashThenCarried</code> now falls back to carried roubles when stash payment is unavailable.</li>\n<li>The purchase endpoint accepts plain, zlib, and deflate request bodies and returns a controlled failure instead of crashing on malformed or unexpected input.</li>\n<li>The authorization ledger now uses atomic saves, backups, corrupt-file preservation, and mutation rollback.</li>\n</ul>\n<h2>Fika And A-10</h2>\n<ul>\n<li>Exactly one raid-world authority executes an A-10 strike. Single-player and human Fika hosts retain the original Arys runtime/ballistic behavior; clients are visual-only.</li>\n<li>Every support request carries a unique ID. In-flight and completed request gates prevent duplicate network packets from firing projectiles or consuming authorizations twice.</li>\n<li>Fika clients wait for the host/headless acceptance broadcast before starting A-10 visuals.</li>\n<li>Tracers and impact effects are aligned to the visible aircraft firing pass and keyed to the request, seed, and pass.</li>\n<li>Dedicated-headless A-10 damage is available through the experimental headless executor and Fika damage packets. This remains intentionally gated and experimental.</li>\n<li>UAV radar overlays are requester-local and are not created on a dedicated headless host.</li>\n<li>Fika integration startup/shutdown and duplicate-request retention are bounded and safe across repeated raid initialization.</li>\n</ul>\n<h2>Stability And Compatibility</h2>\n<ul>\n<li>Fixed concurrent AssetBundle loading, including the UAV radar HUD double-load race.</li>\n<li>Added compatibility with Manimal\u2019s HackerMod phone assets by reusing its complete phone bundle set when present.</li>\n<li>Fixed null-reference teardown paths in <code>SimpleSpinBlur</code>, the fire-support pool, UI/controller cleanup, and phone camera restoration.</li>\n<li>Hardened UH-60 extraction trigger cleanup and Fika extraction routing to reduce stuck black-screen exits.</li>\n<li>Restored the loud A-10 strike flyover while keeping UAV loiter audio quiet and non-looping.</li>\n</ul>\n<h2>Updating</h2>\n<p>Extract over the existing installation. Back up <code>SPT/user/mods/Tylevo.TacticalServicesControl/config/tsc-config.json</code> first if it contains custom dashboard settings.</p>\n<p>Required dependencies are not bundled: UnityToolkit v2.0.1, WTT Client Common Lib, and WTT Server Common Lib. Project Fika is optional and only required for multiplayer.</p>\n<h2>Known Issues</h2>\n<ul>\n<li>Remote third-person phone animation sync is not included.</li>\n<li>Phone inventory inspect presentation may still need polish.</li>\n</ul>\n",
      "spt_constraint": "4.0.13",
      "fika": "compatible",
-     "downloads": 2916,
+     "downloads": 2919,
      "size": 41236560,
      "link": "https://sp-mod.com/mod/download/2791/tylevos-tactical-service-control/1.0.8",
      "published_at": "2026-07-13T04:10:08.000000Z",
@@ -175483,7 +175496,7 @@
     }
    ],
    "published_at": "2026-07-01T22:42:00.000000Z",
-   "updated_at": "2026-09-05T22:57:17.000000Z",
+   "updated_at": "2026-09-06T00:16:50.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
@@ -180510,8 +180523,8 @@
    "description_html": "<h2>Ultimate Trader Assort Editor</h2>\n<p>Ultimate Trader Assort Editor is an in game trader assortment editor for SPT. It lets you add, remove, and edit trader listings directly from the trader screen.</p>\n<p>The editor is built from cloned EFT UI elements and keeps its appearance and behavior close to the original in game UI.</p>\n<h2>Features</h2>\n<ul>\n<li>Add items and weapon presets to trader assortments.</li>\n<li>Modify existing trader listings.</li>\n<li>Remove listings and restore previously removed listings.</li>\n<li>Change loyalty level requirements.</li>\n<li>Configure currency prices, multi-currency prices, and item barters.</li>\n<li>Change trader stock and per-profile purchase limits, including unlimited values.</li>\n<li>Edit supported weapons, armor, helmets, and their attachments.</li>\n<li>Supports modded items and custom traders.</li>\n<li>Refreshes trader stock and instantly shows offers on the flea market.</li>\n<li>Player created weapon presets can now be searched for and added to trader assortments.</li>\n<li>Weapon builds are identified as <code>BUILD</code> in the ADD search results.</li>\n<li>Saves changes as JSON files that can be shared or manually edited.</li>\n<li>Loads multiple <code>add.json</code> and <code>remove.json</code> edit packs for each trader to allow users to share their changes.</li>\n<li>Allows the <code>EDIT ASSORTS</code> button to be hidden through the F12 menu.</li>\n</ul>\n<h2>Installation</h2>\n<p>Drag the BepInEx and SPT folders directly into your SPT root install.</p>\n<h2>Showcase</h2>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://i.imgur.com/lQrdNP8.png\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/lQrdNP8.png\" alt=\"UTAE Showcase 1\" /></a>\n<a target=\"_blank\" class=\"external-link\" href=\"https://i.imgur.com/IuyVUbw.png\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/IuyVUbw.png\" alt=\"UTAE Showcase 2\" /></a>\n<a target=\"_blank\" class=\"external-link\" href=\"https://i.imgur.com/Yl13aov.png\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/Yl13aov.png\" alt=\"UTAE Showcase 3\" /></a>\n<a target=\"_blank\" class=\"external-link\" href=\"https://i.imgur.com/OErGzVE.png\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/OErGzVE.png\" alt=\"UTAE Showcase 4\" /></a>\n<a target=\"_blank\" class=\"external-link\" href=\"https://i.imgur.com/M8YCAbY.png\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/M8YCAbY.png\" alt=\"UTAE Showcase 5\" /></a></p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/JfyAASJee50kwkWHKklXe8ykRwLuCUOw73R8znVv.png",
    "forge_url": "https://sp-mod.com/mod/2834/ultimate-trader-assort-editor",
-   "downloads": 1160,
-   "favourites": 14,
+   "downloads": 1287,
+   "favourites": 15,
    "featured": false,
    "fika": true,
    "fika_latest": "unknown",
@@ -180539,12 +180552,36 @@
    ],
    "versions": [
     {
+     "id": 15226,
+     "version": "2.1.1",
+     "description": "<h2>Fixed</h2>\n<ul>\n<li>Fixed saved trader edits not loading on startup when using JSON files generated by older versions of UTAE.</li>\n</ul>\n",
+     "spt_constraint": "4.1.0",
+     "fika": "unknown",
+     "downloads": 5,
+     "size": 162635,
+     "link": "https://sp-mod.com/mod/download/2834/ultimate-trader-assort-editor/2.1.1",
+     "published_at": "2026-09-06T04:14:49.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 15224,
+     "version": "2.1.0",
+     "description": "<h2>New</h2>\n<ul>\n<li>Added quest unlocks for trader offers, with options for quest accept or completion.</li>\n<li>Quest locked items now show while in edit assorts mode.</li>\n<li>Added a Hidden option for items added as quest rewards.</li>\n<li>Added assort exports, enabled through the F12 settings.</li>\n</ul>\n<h2>Fixes</h2>\n<ul>\n<li>Fixed partial saves and prevented outdated edits from overwriting newer changes.</li>\n<li>Fixed editing, reverting, restoring, and deleting removed offers.</li>\n<li>Fixed duplicate quest rewards and quest locked offers appearing in normal trading.</li>\n<li>Fixed added offers missing from the flea after restarting the server.</li>\n<li>Fixed edited offers bypassing purchase limits when refreshing the flea.</li>\n<li>Fixed an issue with items added ignoring the purchase limit.</li>\n<li>Reduced editor stuttering.</li>\n<li>Fixed UI spacing.</li>\n</ul>\n",
+     "spt_constraint": "4.1.0",
+     "fika": "unknown",
+     "downloads": 26,
+     "size": 162419,
+     "link": "https://sp-mod.com/mod/download/2834/ultimate-trader-assort-editor/2.1.0",
+     "published_at": "2026-09-06T00:58:20.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 15166,
      "version": "2.0.0",
      "description": "<h3>Added</h3>\n<ul>\n<li>Updated to 4.1.x</li>\n<li>Player created weapon presets can now be searched for and added to trader assortments.</li>\n<li>Weapon builds are identified as <code>BUILD</code> in the ADD search results.</li>\n</ul>\n",
      "spt_constraint": "4.1.0",
      "fika": "unknown",
-     "downloads": 19,
+     "downloads": 102,
      "size": 140413,
      "link": "https://sp-mod.com/mod/download/2834/ultimate-trader-assort-editor/2.0.0",
      "published_at": "2026-09-03T01:16:58.000000Z",
@@ -180556,7 +180593,7 @@
      "description": "<h2>Fixed</h2>\n<ul>\n<li>Fixed ammo boxes purchased from edited trader offers being empty when opened.</li>\n<li>Weapon durability max is no longer 100 if value is changed, such as min <code>60</code> max <code>80</code>, result <code>78.5/78.5</code>.</li>\n</ul>\n",
      "spt_constraint": "4.0.13",
      "fika": "compatible",
-     "downloads": 585,
+     "downloads": 596,
      "size": 136715,
      "link": "https://sp-mod.com/mod/download/2834/ultimate-trader-assort-editor/1.0.3",
      "published_at": "2026-07-25T04:29:00.000000Z",
@@ -180592,14 +180629,14 @@
      "description": "<p>Initial release, please let me know if you run into any issues.</p>\n",
      "spt_constraint": "4.0.13",
      "fika": "unknown",
-     "downloads": 116,
+     "downloads": 118,
      "size": 132532,
      "link": "https://sp-mod.com/mod/download/2834/ultimate-trader-assort-editor/1.0.0",
      "published_at": "2026-07-20T23:30:19.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "2.0.0",
+   "latest_version": "2.1.1",
    "spt_constraint": "4.1.0",
    "all_spt_constraints": [
     "4.0.13",
@@ -180608,7 +180645,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-07-20T23:30:00.000000Z",
-   "updated_at": "2026-09-03T01:17:57.000000Z",
+   "updated_at": "2026-09-06T04:15:05.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
@@ -190551,11 +190588,11 @@
    "name": "Tushonka Territories",
    "slug": "tushonka-territories",
    "teaser": "Adds territory warfare to the land of Tushonka where factions fight each other for control over each map.",
-   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Overview</div>\n<div class=\"tab-content\"><p>Tushonka Territories adds faction warfare and a dynamically changing world map. PMC relations remain unchanged and may continue infighting. But now Raiders, Rogues and Scavs will vie for control over Tushonka and can even ally with the player as they attempt to cover the map in their team colors.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/FHAVdQ9.png\" alt=\"ttmap\" /></p>\n<hr />\n<h3>List Of Features</h3>\n<ul>\n<li>Factions</li>\n<li>Simulated battles</li>\n<li>Reputation system</li>\n<li>Player can affect the outcome</li>\n<li>Full customization</li>\n</ul>\n<hr />\n<h3>Detailed Overview</h3>\n<h4>FACTIONS</h4>\n<p>Scavs (dark green), Rogues (light green) and Raiders (orange) are the default factions included with this mod but they can be swapped out in the config. From the outset, each faction will attack the player on sight with a few exceptions; Rogues will not attack United States Evil Corporation characters and Scavs will not attack player Scavs. Factions will not attack their own members.</p>\n<p>Factions will also bring their side\u2019s boss into the raid with them for added support. Tagilla and Killa for the Scavs, Kolontay for Raiders and the Goons for Rogues.</p>\n<p>With this mod installed you will see Scavs, Rogues and Raiders spawning on maps they normally wouldn\u2019t. Should not cause issues with spawn mods like ABPS other than overriding the spawn settings of those three specific bot types and their bosses. Once dead, they will not respawn.</p>\n<h4>SIMULATED BATTLES</h4>\n<p>After the player exfiltrates from a raid, calculations are run on the backend to decide the outcome of the faction battle that took place. A hidden value called \u201cfaction strength\u201d determines the final winner of each battle. Put simply, each bot killed costs that faction some of their strength. Each boss killed costs them even more. A territory may require more than one battle to flip it\u2019s control to a different faction.</p>\n<p>By default, the mod will simulate several battles after each raid. But this can be changed in the config to simulate battles (X) amount of minutes. This timed setting only functions while the game is running.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/AvwpwU1.gif\" alt=\"ttexample\" /></p>\n<h4>REPUTATION SYSTEM</h4>\n<p>It\u2019s possible to get on friendly terms with a faction to the point where they will not attack you and may even come to your aid if you are attacked. But getting there will be difficult. Avoid killing their members while only attacking their enemies. You\u2019ll have to choose your fights carefully as it may take several raids to get on their good side. Best to just avoid running into your preferred faction whenever possible until you\u2019re certain that you\u2019re not on their shit list anymore.</p>\n<p>Additionally, disabled by default, the mod has support for overriding the standing with traders by using the associated faction\u2019s reputation instead. Currently, the mod only connects the Scavs to Fence but more can come and it allows 3rd party extensions to connect it to traders of their choosing.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/92JKLLx.jpeg\" alt=\"nicebigpipe\" /></p>\n<h4>PLAYER AFFECTED OUTCOMES</h4>\n<p>Each bot that dies in raid affects the outcome of the battle. Bosses weaken a faction the most so target them whenever possible if you wish to truly take out the faction. Help your preferred faction conquer the entire map!</p>\n<p>Right now conquering the map will only make raids easier but check the <code>PROJECT GOALS</code> tab for planned features!</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Incompatible/Recommended Mods</div>\n<div class=\"tab-content\"><p><strong>Recommended</strong><br />\n<a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement\" rel=\"noreferrer noopener\">SAIN</a> (once its released)<br />\nAny mod to make bots move around</p>\n<p><strong>Compatible</strong><br />\n<a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1594/apbs-acids-progressive-bot-system\" rel=\"noreferrer noopener\">APBS</a></p>\n<p><strong>Untested</strong><br />\nAny bot adding and spawning mods</p>\n<p><strong>Issues</strong><br />\n<a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2642/vagabond\" rel=\"noreferrer noopener\">Vagabond</a> - The location select menu shows only one faction. This issue is cosmetic, internally the factions are still there.</p>\n<p><strong>Incompatible</strong><br />\n<a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2097/abps-acids-bot-placement-system\" rel=\"noreferrer noopener\">ABPS</a> - Causes too many PMCs to spawn by default which takes away bot slots from this mod\u2019s spawns.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Installation &amp; Quick Start</div>\n<div class=\"tab-content\"><ol>\n<li>Download the latest TushonkaTerritories zip</li>\n<li>Extract the SPT and BepInEx folder from it into your SPT folder (the one with the folders SPT_Runtime and BepinEx in it)</li>\n<li>Start the server</li>\n<li>Edit the config, comments and guides in the included example</li>\n<li>Restart the server</li>\n<li>Run a few raids so the factions start fighting</li>\n<li>Have fun</li>\n</ol></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Configuration</div>\n<div class=\"tab-content\"><p>To configure Tushonka Territories, enter the Config folder in the server (SPT_Runtime/user/mods) install and if you ran the server there is a file called config.jsonc. A file comes included with the mod, configExample.jsonc which includes comments for what each value does.</p>\n<p>The mod is also now editable through the SIC (accessible through the launcher). This will allow you to have a more visual editing of the config, although there are no descriptions still.<br />\n<strong>Note:</strong> A lot of config options require an restart to properly change, if you decide to update the config through the SIC page, keep this in mind.</p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Modding</div>\n<div class=\"tab-content\"><p>You can mod the data of the mod by adding data_override.json to the Data folder. The mod will load this json file instead and won\u2019t be overridden by updates.</p>\n<p>This allows you to completely change the factions, which bots belong to which factions, and the default state of the map. The only exception is the none faction which must be present at all times but any of its details are free to be changed.</p>\n<p>Modding the data file comes with zero safeguards so mod carefully and ask questions if needed in my <strong>#mods-development</strong> thread.</p>\n<p>The mod also comes with quest/achievement conditions and rewards for external mods.<br />\nIf you use the \u201creputation\u201d condition with the target set to the faction\u2019s data key and the value to the desired reputation, it will create a condition that will unlock after reaching the desired reputation with that faction.<br />\nThe \u201creputation\u201d reward is available which will add \u201cvalue\u201d reputation to the \u201ctarget\u201d faction. This ignores reputation locks.<br />\nThe \u201cfactionUnlock\u201d reward is also available which will unlock the reputation gaining for the \u201ctarget\u201d faction.</p>\n<p>I tried to make the mods data easily editable but there might be some things such as location names which had to be unfortunately hard coded. I will write in anything if needed to the official mod to support other modders.</p></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Known Issues</div>\n<div class=\"tab-content\"><ul>\n<li>Some bot types will shoot you if you get close even as allies. This is an issue with the bot logic which I will not touch.</li>\n<li>There\u2019s a hitch when opening up the map screen. This only happens when the territory map is updated and I don\u2019t know a way to fix it currently.</li>\n<li>Fika players will experience more extreme simulations and reputation loss.</li>\n<li>Sometimes bots won\u2019t spawn. There can be numerous things causing this such as the config being too light or the game\u2019s weird spawning system misbehaving. Try messing with the enforcing and other bot settings in the config.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Project Goals</div>\n<div class=\"tab-content\"><ul>\n<li>More advanced battle simulation calculations for smarter factions.</li>\n<li>A companion mod that includes more bots and factions to make the map more interesting.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-8\" class=\"tab-panel\"><div class=\"tab-title\">Special Thanks</div>\n<div class=\"tab-content\"><p><strong>Acidphantasm</strong> - For paving the way with their bot spawning knowledge, especially for ABPS which I referenced greatly.<br />\n<strong>SPT Team</strong> - For making 4.1 which has made modding way easier.<br />\n<strong>BorisTheBrave</strong> - For making <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/BorisTheBrave/voronator-sharp\" rel=\"noreferrer noopener\">Voronator-Sharp</a> so I don\u2019t have to learn and write an complex algorithm.</p>\n<p><em><strong>And and extra special thanks to:</strong></em><br />\n<strong>Mcdewgle</strong> - For writing a better description for the mod.</p>\n<p>Without all of you, this wouldn\u2019t be possible</p></div></div></div>\n",
+   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Overview</div>\n<div class=\"tab-content\"><p>Tushonka Territories adds faction warfare and a dynamically changing world map. PMC relations remain unchanged and may continue infighting. But now Raiders, Rogues and Scavs will vie for control over Tushonka and can even ally with the player as they attempt to cover the map in their team colors.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/FHAVdQ9.png\" alt=\"ttmap\" /></p>\n<hr />\n<h3>List Of Features</h3>\n<ul>\n<li>Factions</li>\n<li>Simulated battles</li>\n<li>Reputation system</li>\n<li>Player can affect the outcome</li>\n<li>Full customization</li>\n</ul>\n<hr />\n<h3>Detailed Overview</h3>\n<h4>FACTIONS</h4>\n<p>Scavs (dark green), Rogues (light green) and Raiders (orange) are the default factions included with this mod but they can be swapped out in the config. From the outset, each faction will attack the player on sight with a few exceptions; Rogues will not attack United States Evil Corporation characters and Scavs will not attack player Scavs. Factions will not attack their own members.</p>\n<p>Factions will also bring their side\u2019s boss into the raid with them for added support. Tagilla and Killa for the Scavs, Kolontay for Raiders and the Goons for Rogues.</p>\n<p>With this mod installed you will see Scavs, Rogues and Raiders spawning on maps they normally wouldn\u2019t. Should not cause issues with spawn mods like ABPS other than overriding the spawn settings of those three specific bot types and their bosses. Once dead, they will not respawn.</p>\n<h4>SIMULATED BATTLES</h4>\n<p>After the player exfiltrates from a raid, calculations are run on the backend to decide the outcome of the faction battle that took place. A hidden value called \u201cfaction strength\u201d determines the final winner of each battle. Put simply, each bot killed costs that faction some of their strength. Each boss killed costs them even more. A territory may require more than one battle to flip it\u2019s control to a different faction.</p>\n<p>By default, the mod will simulate several battles after each raid. But this can be changed in the config to simulate battles (X) amount of minutes. This timed setting only functions while the game is running.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/AvwpwU1.gif\" alt=\"ttexample\" /></p>\n<h4>REPUTATION SYSTEM</h4>\n<p>It\u2019s possible to get on friendly terms with a faction to the point where they will not attack you and may even come to your aid if you are attacked. But getting there will be difficult. Avoid killing their members while only attacking their enemies. You\u2019ll have to choose your fights carefully as it may take several raids to get on their good side. Best to just avoid running into your preferred faction whenever possible until you\u2019re certain that you\u2019re not on their shit list anymore.</p>\n<p>Additionally, disabled by default, the mod has support for overriding the standing with traders by using the associated faction\u2019s reputation instead. Currently, the mod only connects the Scavs to Fence but more can come and it allows 3rd party extensions to connect it to traders of their choosing.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/92JKLLx.jpeg\" alt=\"nicebigpipe\" /></p>\n<h4>PLAYER AFFECTED OUTCOMES</h4>\n<p>Each bot that dies in raid affects the outcome of the battle. Bosses weaken a faction the most so target them whenever possible if you wish to truly take out the faction. Help your preferred faction conquer the entire map!</p>\n<p>Right now conquering the map will only make raids easier but check the <code>PROJECT GOALS</code> tab for planned features!</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Incompatible/Recommended Mods</div>\n<div class=\"tab-content\"><p><strong>Recommended</strong><br />\n<a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement\" rel=\"noreferrer noopener\">SAIN</a> (once its released)<br />\nAny mod to make bots move around</p>\n<p><strong>Compatible</strong><br />\n<a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1594/apbs-acids-progressive-bot-system\" rel=\"noreferrer noopener\">APBS</a></p>\n<p><strong>Untested</strong><br />\nAny bot adding and spawning mods</p>\n<p><strong>Issues</strong><br />\n<a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2642/vagabond\" rel=\"noreferrer noopener\">Vagabond</a> - The location select menu shows only one faction. This issue is cosmetic, internally the factions are still there.</p>\n<p><strong>Incompatible</strong><br />\n<a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2097/abps-acids-bot-placement-system\" rel=\"noreferrer noopener\">ABPS</a> - Causes too many PMCs to spawn by default which takes away bot slots from this mod\u2019s spawns.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Installation &amp; Quick Start</div>\n<div class=\"tab-content\"><ol>\n<li>Download the latest TushonkaTerritories zip</li>\n<li>Extract the SPT and BepInEx folder from it into your SPT folder (the one with the folders SPT_Runtime and BepinEx in it)</li>\n<li>Start the server</li>\n<li>Edit the config, comments and guides in the included example</li>\n<li>Restart the server</li>\n<li>Run a few raids so the factions start fighting</li>\n<li>Have fun</li>\n</ol></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Configuration</div>\n<div class=\"tab-content\"><p>To configure Tushonka Territories, enter the Config folder in the server (SPT_Runtime/user/mods) install and if you ran the server there is a file called config.jsonc. A file comes included with the mod, configExample.jsonc which includes comments for what each value does.</p>\n<p>The mod is also now editable through the SIC (accessible through the launcher). This will allow you to have a more visual editing of the config, although there are no descriptions still.<br />\n<strong>Note:</strong> A lot of config options require an restart to properly change, if you decide to update the config through the SIC page, keep this in mind.</p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Modding</div>\n<div class=\"tab-content\"><p>You can mod the data of the mod by adding data_override.json to the Data folder. The mod will load this json file instead and won\u2019t be overridden by updates.</p>\n<p>This allows you to completely change the factions, which bots belong to which factions, and the default state of the map. The only exception is the none faction which must be present at all times but any of its details are free to be changed.</p>\n<p>Modding the data file comes with zero safeguards so mod carefully and ask questions if needed in my <strong>#mods-development</strong> thread.</p>\n<p>The mod also comes with quest/achievement conditions and rewards for external mods.<br />\nIf you use the \u201creputation\u201d condition with the target set to the faction\u2019s data key and the value to the desired reputation, it will create a condition that will unlock after reaching the desired reputation with that faction.<br />\nThe \u201creputation\u201d reward is available which will add \u201cvalue\u201d reputation to the \u201ctarget\u201d faction. This ignores reputation locks.<br />\nThe \u201cfactionUnlock\u201d reward is also available which will unlock the reputation gaining for the \u201ctarget\u201d faction.</p>\n<p>I tried to make the mods data easily editable but there might be some things such as location names which had to be unfortunately hard coded. I will write in anything if needed to the official mod to support other modders.</p></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Known Issues</div>\n<div class=\"tab-content\"><ul>\n<li>Some bot types will shoot you if you get close even as allies. This is an issue with the bot logic which I will not touch.</li>\n<li>There\u2019s a hitch when opening up the map screen. This only happens when the territory map is updated and I don\u2019t know a way to fix it currently.</li>\n<li>Fika players will experience more extreme simulations and reputation loss.</li>\n<li>Sometimes bots won\u2019t spawn. There can be numerous things causing this such as the config being too light or the game\u2019s weird spawning system misbehaving. Try messing with the enforcing and other bot settings in the config.</li>\n<li>PMCs don\u2019t spawn on ground zero (level &lt; 20). This is because vanilla SPT has no PMC spawns on ground zero below level 20. If you\u2019re expecting them it\u2019s because ABPS puts them there.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Project Goals</div>\n<div class=\"tab-content\"><ul>\n<li>More advanced battle simulation calculations for smarter factions.</li>\n<li>A companion mod that includes more bots and factions to make the map more interesting.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-8\" class=\"tab-panel\"><div class=\"tab-title\">Special Thanks</div>\n<div class=\"tab-content\"><p><strong>Acidphantasm</strong> - For paving the way with their bot spawning knowledge, especially for ABPS which I referenced greatly.<br />\n<strong>SPT Team</strong> - For making 4.1 which has made modding way easier.<br />\n<strong>BorisTheBrave</strong> - For making <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/BorisTheBrave/voronator-sharp\" rel=\"noreferrer noopener\">Voronator-Sharp</a> so I don\u2019t have to learn and write an complex algorithm.</p>\n<p><em><strong>And and extra special thanks to:</strong></em><br />\n<strong>Mcdewgle</strong> - For writing a better description for the mod.</p>\n<p>Without all of you, this wouldn\u2019t be possible</p></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/W9mUCfsXleBft1bjBIirZljxI5IczjSnAoNwTD7c.png",
    "forge_url": "https://sp-mod.com/mod/2942/tushonka-territories",
-   "downloads": 1773,
-   "favourites": 22,
+   "downloads": 1838,
+   "favourites": 23,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -190588,7 +190625,7 @@
      "description": "<p>Default config rebalance pass to make the mod much easier by default.</p>\n<p>Delete your config file and restart to receive all updated values or look at the example config file for the latest values.<br />\nThis update adds no new features or changes so if you\u2019re fine with your config, you don\u2019t need to update.</p>\n",
      "spt_constraint": "~4.1.2",
      "fika": "unknown",
-     "downloads": 360,
+     "downloads": 422,
      "size": 662823,
      "link": "https://sp-mod.com/mod/download/2942/tushonka-territories/1.3.2",
      "published_at": "2026-08-28T20:27:00.000000Z",
@@ -190684,7 +190721,7 @@
      "description": "<p>Initial release</p>\n",
      "spt_constraint": "~4.1.2",
      "fika": "unknown",
-     "downloads": 196,
+     "downloads": 199,
      "size": 379535,
      "link": "https://sp-mod.com/mod/download/2942/tushonka-territories/1.0.0",
      "published_at": "2026-08-19T05:08:00.000000Z",
@@ -190699,7 +190736,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-08-19T05:12:00.000000Z",
-   "updated_at": "2026-09-04T06:10:43.000000Z",
+   "updated_at": "2026-09-06T04:33:33.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -193105,7 +193142,7 @@
    },
    "authors": [
     {
-     "id": 30878,
+     "id": "30878-arch",
      "name": "harmony",
      "avatar": "https://files.sp-mod.com/profile-photos/zCGf86MOlzlGlGoDlIYL3IgPnAyHSRRX82XKlfMB_256w.webp"
     }
@@ -193184,7 +193221,7 @@
     "profile_binding_notice": false
    },
    "origin": "forge",
-   "delisted": false
+   "delisted": true
   },
   {
    "id": 2963,
@@ -195540,6 +195577,76 @@
     "ai_disclosure": "<p>Claude Opus was utilized</p>\n",
     "cheat_notice": false,
     "profile_binding_notice": false
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 2996,
+   "hub_id": null,
+   "guid": "io.ragingbeardo.backpackresizer",
+   "name": "Backpack Resizer",
+   "slug": "backpack-resizer",
+   "teaser": "Change the height and width of backpacks without a split pocket grid.",
+   "description_html": "<h1>Backpack Resizer</h1>\n<p>A config based mod that allows you to modify how large or small backpacks are.</p>\n<p>Backpacks that come from mods will be automatically detected assuming they have been loaded before this mod. So let me know\nif you find a backpack not being discovered by the mod itself and I will look into it.</p>\n<h2>Features</h2>\n<ul>\n<li>Change the width and height of backpacks that don\u2019t have a split inventory grid</li>\n<li>Save and Load presets for backpack sizes</li>\n</ul>\n<h2>Presets Included</h2>\n<ul>\n<li>Original Values - this preset will have the original found values for each backpack as it\u2019s found by the mod</li>\n<li>Better Backpacks - this sizes of this preset follow the sizes of the Better Backpacks mod with the inclusion of WTT Content Backport.\n<ul>\n<li>content backport not required. any backpack in the preset but not found in the game will be ignored</li>\n</ul>\n</li>\n</ul>\n<h2>Limitations</h2>\n<p>Due to how backpacks are handled by the game itself, any backpack that has more than one \u201cpocket\u201d will not be touched by this mod.\nA \u201cpocket\u201d meaning any backpack that has a split inventory in its container view.</p>\n<h2>Installation</h2>\n<ol>\n<li>Extract the content of the archive</li>\n<li>Copy the contents into your SPT installation folder</li>\n</ol>\n<h2>Uninstall</h2>\n<ol>\n<li>Delete the RagingBeardo-BackpackResizer folder from your server mod directory</li>\n</ol>\n<h2>Configuration</h2>\n<p>Config file will generate after the server is started.</p>\n<p>You can technically manage the config.jsonc directly, but\nit will be infinitely easier to use the UI based configuration via the following link:</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://127.0.0.1:6969/backpackresizer\" rel=\"noreferrer noopener\">https://127.0.0.1:6969/backpackresizer</a></p>\n<p>You should definitely opt for the UI though.</p>\n<p>UI contains a dropdown for each backpack found by the mod grouped by resizable and not resizable.</p>\n<p>Available configuration options:</p>\n<ul>\n<li>Mod Enabled: checkbox</li>\n<li>Debug Logging: checkbox</li>\n<li>Override Backpack Size Limits: checkbox</li>\n<li>Per backpack dropdown to customize width and height</li>\n<li>Save/Load presets for the per backpack values</li>\n</ul>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/IRUUVKvgrmPULJA0AWZy7nORYDl0perceivvQGzg.png",
+   "forge_url": "https://sp-mod.com/mod/2996/backpack-resizer",
+   "downloads": 44,
+   "favourites": 0,
+   "featured": false,
+   "fika": false,
+   "fika_latest": "unknown",
+   "category": {
+    "id": 15,
+    "title": "Equipment",
+    "slug": "equipment"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 19435,
+     "name": "RagingBeardo",
+     "avatar": "https://files.sp-mod.com/profile-photos/0cf6c081cf876b93983cac81b5cd3be2859069df_128w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/ragingbeardo/backpack-resizer",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 15225,
+     "version": "1.0.0",
+     "description": "<p>manage backpack sizes</p>\n",
+     "spt_constraint": "~4.1.0",
+     "fika": "unknown",
+     "downloads": 44,
+     "size": 33075,
+     "link": "https://sp-mod.com/mod/download/2996/backpack-resizer/1.0.0",
+     "published_at": "2026-09-06T03:22:00.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "1.0.0",
+   "spt_constraint": "~4.1.0",
+   "all_spt_constraints": [
+    "~4.1.0"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-09-06T03:13:00.000000Z",
+   "updated_at": "2026-09-06T04:01:03.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": true,
+    "ai_disclosure": "<p>Claude code was used along the way as I picked things up since I\u2019m newer to the language as well some of the \u201cfrontend\u201d ui design. I\u2019m a software dev by profession, so I\u2019m not ignorant of what I\u2019m building but it is still being used.</p>\n",
+    "cheat_notice": false,
+    "profile_binding_notice": true
    },
    "origin": "forge",
    "delisted": false
