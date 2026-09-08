@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-09-08T04:48:16Z",
+ "generated_at": "2026-09-08T11:28:51Z",
  "source": "https://sp-mod.com",
  "filter": "all",
- "mod_count": 1937,
+ "mod_count": 1938,
  "categories": [
   {
    "id": 12,
@@ -166010,8 +166010,8 @@
    "description_html": "<h1>FoldThatStock 2.1.0 (SPT 4.1.3)</h1>\n<p>FoldThatStock adds functional folding and collapsing behavior to weapons and stocks that do not support it in vanilla SPT.</p>\n<p>Version 2.1.0 expands weapon and stock coverage, refines donor-animation routing, corrects folded inventory sizing, and adds configurable UZI PRO adapter collision handling. The mod retargets compatible animations from existing EFT weapons and synchronizes the weapon, stock, arms, wrists, hands, and fingers during folding.</p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Features</div>\n<div class=\"tab-content\"><ul>\n<li>Folding and collapsing animations.</li>\n<li>Protection against repeated fold input while an animation is active.</li>\n<li>Instant fold-state updates in inventory and inspection windows.</li>\n<li>Corrected folded inventory sizing for supported weapons and stocks.</li>\n<li>Configurable UZI PRO adapter fold suppression to prevent visual clipping.</li>\n<li>Configurable server-side weapon and stock template patches.</li>\n<li>Safe instant-fold fallback when an animation cannot be loaded.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Supported Stocks</div>\n<div class=\"tab-content\"><ul>\n<li>SIG Sauer Thin Side-Folding Stock</li>\n<li>SIG Sauer Folding Knuckle Stock Adapter</li>\n<li>MPX/MCX PMM ULSS stock</li>\n<li>SIG Sauer Telescoping/Folding Stock</li>\n<li>SIG Sauer Collapsing/Telescoping Stock</li>\n<li>SB Tactical MPX Pistol Stabilizing Brace</li>\n<li>SIG Sauer Locking Stock Hinge Assembly</li>\n<li>UZI PRO A3 Tactical Modular Folding Brace</li>\n<li>UZI PRO Stabilizing Brace</li>\n<li>UZI PRO SBR buttstock</li>\n<li>UZI PRO A3 Tactical Rear Stock Adapter</li>\n<li>UZI PRO CSM stock adapter</li>\n<li>AKM/AK-74 ME4 buffer tube adapter</li>\n<li>AKM/AK-74 Magpul Zhukov-S stock</li>\n<li>FAB Defense UAS AK stock</li>\n<li>FAB Defense UAS SKS stock</li>\n<li>HK MP5 A3 old model stock</li>\n<li>M700 AI AT AICS polymer chassis</li>\n<li>M700 Magpul Pro 700 folding stock</li>\n<li>SA-58 BRS stock</li>\n<li>SA-58 folding stock</li>\n<li>SA-58 SPR stock</li>\n<li>SA-58 buffer tube adapter</li>\n<li>KRISS Vector non-folding stock adapter</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Supported Weapons</div>\n<div class=\"tab-content\"><ul>\n<li>SIG MCX .300 Blackout</li>\n<li>SIG MPX 9x19</li>\n<li>SIG MCX-SPEAR 6.8x51</li>\n<li>IWI UZI PRO pistol 9x19</li>\n<li>IWI UZI PRO SMG 9x19</li>\n<li>Kalashnikov AK-74N 5.45x39</li>\n<li>Kalashnikov AK-74 5.45x39</li>\n<li>Kalashnikov AKM 7.62x39</li>\n<li>Kalashnikov AKMN 7.62x39</li>\n<li>Molot Arms VPO-136 Vepr-KM 7.62x39</li>\n<li>Molot Arms VPO-209 .366 TKM</li>\n<li>Rifle Dynamics RD-704 7.62x39</li>\n<li>Aklys Defense Velociraptor .300 Blackout</li>\n<li>HK MP5 Navy 3 9x19</li>\n<li>Remington Model 700 7.62x51</li>\n<li>Accuracy International AXMC .338 LM</li>\n<li>Simonov SKS 7.62x39</li>\n<li>Molot Arms Simonov OP-SKS 7.62x39</li>\n<li>DS Arms SA-58 7.62x51</li>\n<li>KRISS Vector Gen.2 .45 ACP</li>\n<li>KRISS Vector Gen.2 9x19</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Customization</div>\n<div class=\"tab-content\"><p>The server configuration is located at:</p>\n<p><code>SPT_Runtime/user/mods/FoldThatStock/config.json</code></p>\n<ul>\n<li>Set the top-level <code>\"Enabled\"</code> value to <code>false</code> to disable all FoldThatStock server template patches.</li>\n<li>Set <code>\"Enabled\": false</code> on an individual weapon or stock entry to skip that entry\u2019s direct server patch.</li>\n<li>Individual server settings can change folded slots, inventory-size reductions, compatible stocks, and other supported behavior.</li>\n<li>Remove a stock bundle from <code>BepInEx/plugins/FoldThatStock</code> to stop using that custom visual override. The original EFT bundle will load instead, while enabled server behavior remains active.</li>\n<li>Restart the server and game after changing the configuration or installed bundles.</li>\n</ul>\n<h4>UZI PRO Adapter Fold Suppression</h4>\n<p>These settings prevent adapter-mounted SIG stocks from folding into the UZI PRO\u2019s receiver or charging handle and causing visual clipping:</p>\n<pre><code>\"UziAdapterFoldSuppression\": {\n  \"SuppressLeftFoldingStocks\": true,\n  \"SuppressCollapsingStocks\": true\n}\n</code></pre>\n<ul>\n<li>An empty UZI PRO adapter cannot fold because no stock is installed.</li>\n<li>The A3 brace and direct UZI PRO SB/SBR stocks remain unaffected.</li>\n<li>Each option suppresses its corresponding adapter-mounted stock category when set to <code>true</code>.</li>\n<li>Set either option to <code>false</code> to permit that category to fold, accepting possible visual clipping.</li>\n<li>Suppression applies only when these stocks are mounted on UZI PRO weapons.</li>\n<li>The same stocks retain their normal folding behavior on SIG weapons.</li>\n<li>Unfolding is always allowed.</li>\n<li>No attachment compatibility filters are removed.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Install/Update</div>\n<div class=\"tab-content\"><ol>\n<li>If you previously customized <code>SPT_Runtime/user/mods/FoldThatStock/config.json</code>, back it up as a reference.</li>\n<li>Download the release archive.</li>\n<li>Extract it directly into your SPT installation folder.</li>\n<li>Replace all existing FoldThatStock files, including <code>config.json</code>.</li>\n<li>Reapply any desired custom settings to the newly installed config.</li>\n<li>Start SPT normally.</li>\n</ol>\n<p>FoldThatStock does not currently version its config schema. Updates may add settings or change existing values such as <code>FoldedSlot</code>, <code>SizeReduceRight</code>, and <code>AdditionalCompatibleStockTemplateIds</code>.</p>\n<p>Replacing every file ensures that the installed configuration matches the current release. Retaining an older <code>config.json</code> is not a supported update method.</p></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Uninstall</div>\n<div class=\"tab-content\"><p>Delete:</p>\n<ul>\n<li><code>SPT_Runtime/user/mods/FoldThatStock</code></li>\n<li><code>BepInEx/plugins/FoldThatStock</code></li>\n</ul>\n<p>Weapons already saved in a folded state may retain that state in the profile until the game updates them again.</p></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Troubleshooting</div>\n<div class=\"tab-content\"><p>If a supported weapon folds logically but the donor hand animation does not play:</p>\n<ol>\n<li>Exit the game.</li>\n<li>Open the SPT Launcher settings.</li>\n<li>Select <strong>Clear Temp Files</strong>.</li>\n<li>Restart the game and test again.</li>\n</ol>\n<p>This resolved an observed stale-cache issue during testing. It is not yet known whether this was an isolated cache condition or a reproducible loading issue.</p></div></div>\n<div id=\"tabset-1-panel-8\" class=\"tab-panel\"><div class=\"tab-title\">Known Limitations</div>\n<div class=\"tab-content\"><p>All currently identified vanilla weapons and stocks requiring folding corrections are covered. Remaining limitations include:</p>\n<ul>\n<li>Donor hand contact is retargeted at runtime, so the exact palm-to-stock contact point can vary between stock models.</li>\n<li>Stocks introduced by other mods are not currently supported.</li>\n<li>New items introduced in future EFT updates will be added in subsequent mod updates.</li>\n</ul></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/dVUFAOTQxK6gK765H1ltCHwulSFYzi7dhEchhOPm.png",
    "forge_url": "https://sp-mod.com/mod/2691/fold-that-stock",
-   "downloads": 2557,
-   "favourites": 33,
+   "downloads": 3103,
+   "favourites": 39,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -166041,13 +166041,13 @@
     {
      "id": 15138,
      "version": "2.1.0",
-     "description": "<h1>FoldThatStock 2.1.0</h1>\n<p>FoldThatStock 2.1.0 expands support for all weapons and stocks that do not fold correctly in vanilla SPT. It also improves script-driven animations, fixes inventory sizing, configurable UZI PRO adapter behavior, and several visual and material fixes.</p>\n<h2>Highlights</h2>\n<ul>\n<li>Expanded support for M700, AXMC, SA-58, KRISS Vector, UZI PRO, UAS AK/SKS, Velociraptor, and supported AK-family platforms.</li>\n<li>Added first-person donor animations with synchronized arms, wrists, hands, and fingers.</li>\n<li>Added configurable UZI PRO adapter handling to prevent stocks from folding into the receiver or charging handle.</li>\n<li>Corrected folded inventory sizing, stock orientation, donor materials, and bundle deployment behavior.</li>\n</ul>\n<h2>Newly supported item</h2>\n<h3>Weapons</h3>\n<ul>\n<li>Accuracy International AXMC .338 LM</li>\n<li>Remington Model 700</li>\n<li>IWI UZI PRO pistol and SMG</li>\n<li>DS Arms SA-58</li>\n<li>Rifle Dynamics RD-704</li>\n<li>Aklys Defense Velociraptor</li>\n<li>Simonov SKS and OP-SKS</li>\n<li>KRISS Vector Gen.2 .45 ACP and 9x19</li>\n<li>Additional supported stock for AK, VPO, MCX, MPX, and MCX-SPEAR</li>\n</ul>\n<h3>Stocks and adapters</h3>\n<ul>\n<li>UZI PRO A3, SB, and SBR stocks</li>\n<li>UZI PRO A3 and CSM rail adapters</li>\n<li>FAB Defense UAS AK and UAS SKS stocks</li>\n<li>M700 AI AT AICS and Magpul Pro 700 stocks</li>\n<li>SA-58 BRS, folding, SPR, and buffer-tube stocks/adapters</li>\n<li>KRISS Vector non-folding stock adapter</li>\n<li>Additional supported SIG and AK stocks</li>\n</ul>\n<h2>Animation behavior</h2>\n<p>FoldThatStock selects an animation based on the weapon and installed stock:</p>\n<ul>\n<li>UZI PRO right-fold for supported right-folding AK and UAS configurations.</li>\n<li>UMP right-fold for SA-58 stocks.</li>\n<li>AKS-74U left-fold for supported left-folding stocks.</li>\n<li>MP5 collapse for supported telescoping and collapsing stocks.</li>\n<li>Native folding for KRISS Vector, AXMC, and direct UZI PRO configurations.</li>\n</ul>\n<p>The non-folding hand remains anchored to its normal weapon grip, and repeated folding input is ignored until the active animation finishes.</p>\n<h2>AXMC sizing fix</h2>\n<p>FoldThatStock now applies the correct folded inventory reduction directly to the AXMC.</p>\n<h2>UZI PRO adapter customization</h2>\n<p>Optional settings suppress folding for adapter-mounted stocks that would visually clip into the UZI PRO receiver or charging handle. Empty adapters cannot fold, and unfolding is always permitted.</p>\n<h2>Fixes and improvements</h2>\n<ul>\n<li>Fixed donor material unloading that could produce broken UMP and AKS-74U textures.</li>\n<li>Fixed folded sizing for AXMC, MP5, RD-704, SA-58, UZI PRO, and supported stocks.</li>\n<li>Corrected the Magpul M700 stock preview orientation.</li>\n<li>Updated documentation and GPLv3 license metadata.</li>\n</ul>\n<h2>Important update instructions</h2>\n<p>FoldThatStock does not currently version its <code>config.json</code> schema. Existing entries may gain or change fields such as:</p>\n<ul>\n<li><code>FoldedSlot</code></li>\n<li><code>SizeReduceRight</code></li>\n<li><code>BlocksFolding</code></li>\n<li><code>AdditionalCompatibleStockTemplateIds</code></li>\n</ul>\n<p>When updating:</p>\n<ol>\n<li>Back up custom config values as a reference.</li>\n<li>Extract the release into the SPT installation folder.</li>\n<li>Replace all existing FoldThatStock files, including <code>config.json</code>.</li>\n<li>Reapply any desired custom settings to the new config.</li>\n</ol>\n<p>Retaining an older config is not the supported update path.</p>\n<h2>Compatibility</h2>\n<ul>\n<li>Built and tested for SPT 4.1.3.</li>\n<li>Licensed under the GNU General Public License v3.0.</li>\n</ul>\n<h2>Known limitation</h2>\n<p>Donor hand contact is retargeted at runtime. Exact palm-to-stock contact may vary slightly depending on the installed stock\u2019s geometry.</p>\n<h2>Release verification</h2>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://www.virustotal.com/gui/file/25bcf5754055706a626c898802f555cfca3365221a581f26b2725fbe9282ba03?nocache=1\" rel=\"noreferrer noopener\">View the VirusTotal scan</a></p>\n",
+     "description": "<h1>FoldThatStock 2.1.0</h1>\n<p>FoldThatStock 2.1.0 expands support for all weapons and stocks that do not fold correctly in vanilla SPT. It also improves script-driven animations, fixes inventory sizing, configurable UZI PRO adapter behavior, and several visual and material fixes.</p>\n<h2>Highlights</h2>\n<ul>\n<li>Expanded support for M700, AXMC, SA-58, KRISS Vector, UZI PRO, UAS AK/SKS, Velociraptor, and supported AK-family platforms.</li>\n<li>Added first-person donor animations with synchronized arms, wrists, hands, and fingers.</li>\n<li>Added configurable UZI PRO adapter handling to prevent stocks from folding into the receiver or charging handle.</li>\n<li>Corrected folded inventory sizing, stock orientation, donor materials, and bundle deployment behavior.</li>\n</ul>\n<h2>Important update instructions</h2>\n<p>FoldThatStock does not currently version its <code>config.json</code> schema, when updating:</p>\n<ol>\n<li>Back up custom config values as a reference.</li>\n<li>Extract the release into the SPT installation folder.</li>\n<li>Replace all existing FoldThatStock files, including <code>config.json</code>.</li>\n<li>Reapply any desired custom settings to the new config.</li>\n</ol>\n<p>Retaining an older config is not the supported update path.</p>\n<h2>Known limitation</h2>\n<p>Donor hand contact is retargeted at runtime. Exact palm-to-stock contact may vary slightly depending on the installed stock\u2019s geometry.</p>\n<h2>Release verification</h2>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://www.virustotal.com/gui/file/25bcf5754055706a626c898802f555cfca3365221a581f26b2725fbe9282ba03?nocache=1\" rel=\"noreferrer noopener\">View the VirusTotal scan</a></p>\n",
      "spt_constraint": "~4.1.0",
      "fika": "unknown",
-     "downloads": 83,
+     "downloads": 550,
      "size": 59009192,
      "link": "https://sp-mod.com/mod/download/2691/fold-that-stock/2.1.0",
-     "published_at": "2026-09-01T09:45:42.000000Z",
+     "published_at": "2026-09-01T09:45:00.000000Z",
      "dependencies": []
     },
     {
@@ -166056,7 +166056,7 @@
      "description": "<h1>FoldThatStock v1.1.0 for SPT 4.0.13</h1>\n<p>This release backports the major folding-animation system introduced in FoldThatStock v2.0.0, together with the expanded weapon and stock support from v2.1.0, to SPT 4.0.13.</p>\n<h2>Compatibility</h2>\n<ul>\n<li>This release targets SPT 4.0.13.</li>\n<li>FoldThatStock v1.x releases support SPT 4.0.x.</li>\n<li>SPT 4.1.3 users should continue using FoldThatStock v2.1.0.</li>\n</ul>\n<h2>Highlights</h2>\n<ul>\n<li>Adds first-person fold and unfold animations to supported weapons and stocks.</li>\n<li>Retargets compatible EFT donor animations.</li>\n<li>Synchronizes the weapon, stock, arms, wrists, hands, and fingers.</li>\n<li>Expands support for UZI PRO, AK/UAS, MP5, M700, AXMC, SA-58, KRISS Vector, and supported SIG-platform configurations.</li>\n<li>Adds host-aware UZI PRO adapter fold suppression.</li>\n<li>Prevents repeated fold input during animation handoff.</li>\n<li>Preserves native folding behavior where EFT already provides a suitable operation.</li>\n</ul>\n<h2>Installation</h2>\n<ol>\n<li>Back up any customized <code>SPT\\user\\mods\\FoldThatStock\\config.json</code>.</li>\n<li>Extract the release archive into the SPT 4.0.13 installation directory.</li>\n<li>Replace the existing FoldThatStock files.</li>\n<li>Reapply any desired custom configuration.</li>\n<li>Restart the SPT server and game.</li>\n</ol>\n<h2>Release verification</h2>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://www.virustotal.com/gui/file/96e8d408da1fb63eb8762ab6240e5866b80694f91c66d152649beb62a3452bbc?nocache=1\" rel=\"noreferrer noopener\">View the VirusTotal scan</a></p>\n",
      "spt_constraint": "~4.0.13",
      "fika": "unknown",
-     "downloads": 9,
+     "downloads": 83,
      "size": 59008726,
      "link": "https://sp-mod.com/mod/download/2691/fold-that-stock/1.1.0",
      "published_at": "2026-09-01T09:42:46.000000Z",
@@ -166068,7 +166068,7 @@
      "description": "<h1>v2.0.0</h1>\n<p>FoldThatStock v2.0.0 is a major update for SPT 4.1.3.</p>\n<p>This release replaces the previous script-only visual folding effect with first-person folding and collapsing animations retargeted from compatible EFT weapons.</p>\n<h3>Highlights</h3>\n<ul>\n<li>Updated for SPT 4.1.3.</li>\n<li>Added animated folding for supported AK, SIG, and MP5 configurations.</li>\n<li>Added UMP right-fold, AKS-74U left-fold, and MP5 collapsing donor animations.</li>\n<li>Added synchronized weapon, stock, arm, wrist, hand, and finger movement.</li>\n<li>Added a smooth 0.3-second transition into the final weapon pose.</li>\n<li>Fixed repeated fold input during the final animation handoff.</li>\n<li>Fixed reversed inventory and inspection previews for affected folding stocks.</li>\n<li>Added SIG MCX, MPX, MCX-SPEAR, AK-platform, RD-704, VPO, and MP5 support.</li>\n<li>Added the remodeled and functional HK MP5 A3 collapsing stock.</li>\n<li>Existing server configurations are migrated automatically while preserving disabled entries.</li>\n<li>Inventory and inspection screens continue to update the fold state instantly.</li>\n</ul>\n<h3>Installation</h3>\n<p>Extract the archive directly into your SPT 4.1.3 installation folder. When updating, allow Windows to replace the existing files.</p>\n<h3>Important troubleshooting note</h3>\n<p>If a supported weapon folds but the hand animation does not play:</p>\n<ol>\n<li>Exit the game.</li>\n<li>Open the SPT Launcher settings.</li>\n<li>Select <strong>Clear Temp Files</strong>.</li>\n<li>Restart the game and test again.</li>\n</ol>\n<p>This resolved an observed stale-cache issue during testing.</p>\n<h3>Known limitation</h3>\n<p>Because donor hand movement is retargeted at runtime, exact palm contact with the stock may vary slightly depending on the stock\u2019s geometry.</p>\n",
      "spt_constraint": "~4.1.0",
      "fika": "unknown",
-     "downloads": 527,
+     "downloads": 528,
      "size": 35019304,
      "link": "https://sp-mod.com/mod/download/2691/fold-that-stock/2.0.0",
      "published_at": "2026-08-25T11:37:54.000000Z",
@@ -166080,7 +166080,7 @@
      "description": "<h1>FoldThatStock 1.0.0</h1>\n<p>FoldThatStock 1.0.0 expands the supported folding stock list and moves the mod out of its initial soft-launch version range.</p>\n<h2>Highlights</h2>\n<ul>\n<li>Added support for the full current FoldThatStock stock set:\n<ul>\n<li>SIG Sauer Thin Side-Folding Stock</li>\n<li>SIG folding knuckle</li>\n<li>PMM ULSS stock</li>\n<li>SIG telescoping stock</li>\n<li>SIG MPX/MCX early type stock</li>\n<li>SIG MPX brace</li>\n<li>SIG stock locking hinge assembly</li>\n<li>UTG SFS AK adapter</li>\n<li>Magpul Zhukov-S AK stock</li>\n</ul>\n</li>\n<li>Added supported AK-platform weapon patches for ME4 buffer tube adapter setups:\n<ul>\n<li>AK-74N 5.45x39</li>\n<li>AK-74 5.45x39</li>\n<li>AKM 7.62x39</li>\n<li>AKMN 7.62x39</li>\n<li>VPO-136 Vepr-KM 7.62x39</li>\n<li>VPO-209 .366 TKM</li>\n<li>RD-704 7.62x39</li>\n</ul>\n</li>\n<li>Applies server-side template patches for foldable behavior, folded slot handling, folded inventory size, and supported stock fold compatibility.</li>\n<li>Uses client-side visual handling and bundle overrides for supported stock visuals where custom bundles are included.</li>\n</ul>\n<h2>Notes</h2>\n<ul>\n<li>Built for SPT 4.0.13.</li>\n<li>Player fold/unfold animation is not implemented yet.</li>\n<li>Support is intentionally limited to the configured weapon and stock list.</li>\n<li>Edit <code>SPT/user/mods/FoldThatStock/config.json</code> to customize server-side template patches. Bundle files in <code>BepInEx/plugins/FoldThatStock</code> only control client-side visual overrides.</li>\n</ul>\n<h2>Installation</h2>\n<p>Extract the release archive into your SPT installation folder, replace all existing files if Windows asks, then start SPT normally.</p>\n<p>The release includes the current <code>SPT/user/mods/FoldThatStock/config.json</code>; choosing replace all updates it. If you intentionally skip replacing that file, new default stock and weapon entries are not merged automatically.</p>\n",
      "spt_constraint": "~4.0.13",
      "fika": "unknown",
-     "downloads": 1848,
+     "downloads": 1850,
      "size": 32606726,
      "link": "https://sp-mod.com/mod/download/2691/fold-that-stock/1.0.0",
      "published_at": "2026-06-10T00:00:00.000000Z",
@@ -166092,7 +166092,7 @@
      "description": "<p>This is a soft-launch release: the core system is working, but player folding animation is not implemented yet, and some vanilla stocks that are foldable in real life are yet to be supported.</p>\n",
      "spt_constraint": "~4.0.13",
      "fika": "unknown",
-     "downloads": 90,
+     "downloads": 92,
      "size": 29869816,
      "link": "https://sp-mod.com/mod/download/2691/fold-that-stock/0.3.0",
      "published_at": "2026-05-14T00:00:00.000000Z",
@@ -166108,7 +166108,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-05-14T16:10:00.000000Z",
-   "updated_at": "2026-09-01T09:55:38.000000Z",
+   "updated_at": "2026-09-08T06:39:32.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -167307,11 +167307,11 @@
    "name": "ORBIT 2.0",
    "slug": "orbit-20",
    "teaser": "Bots play the raid like you do, and a \"Ghost Mode\" to run it all at high fps",
-   "description_html": "<blockquote>\n<p>\u26a0\ufe0f <strong>Heads up:</strong> ORBIT is built on <strong>Phobos</strong>\u2019s foundation (MIT-licensed, with <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/72916/jankytheclown\" rel=\"noreferrer noopener\">Janky\u2019s</a> blessing).\nFull credits at the bottom \ud83d\ude4f</p>\n</blockquote>\n<blockquote>\n<p><strong>ORBIT</strong> - Objective-driven Raid Bot Intelligence Tactics</p>\n<p>Smarter bots. Real objectives. Raids that feel alive.</p>\n</blockquote>\n<p>Every bot squad in your raid spawns with a plan: a rich area to strip, a\nPvP hotspot to hunt, a quest spot to visit. They work it as a team, loot\nlike players, upgrade their gear along the way, and head for extract when\nthey\u2019re done. Kill one late in the raid and his backpack tells the story\nof where he\u2019s been.</p>\n<p><strong>2.0\u2019s headliner is \ud83d\udc7b Ghost Mode</strong>: far-away bots go dormant to free\nyour CPU while ORBIT keeps playing them. The fps gains are massive\n(+45% average in my heavy-population benchmark, testers report +50 to\n+100%) and the world stays alive instead of freezing. 2.0 also adds\na server <strong>web UI</strong> for every setting and a visual <strong>zone editor</strong> to\ndraw your own hotspots on the map.</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://i.imgur.com/WSWqb8d.png\" rel=\"noreferrer noopener\">\ud83d\udcf7 Screenshot</a></p>\n<p>Pair it with the latest <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1479/raid-review\" rel=\"noreferrer noopener\">Raid Review</a> to replay it all on the post-raid map.</p>\n<p>Questions, bug reports, feedback: <strong><a target=\"_blank\" class=\"external-link\" href=\"https://discord.com/channels/875684761291599922/1509314495019745451\" rel=\"noreferrer noopener\">ORBIT Discord thread</a></strong>.</p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">What A Raid Looks Like</div>\n<div class=\"tab-content\"><ul>\n<li>A 4-man squad rolls \u201cclean out Resort\u201d, splits the rooms, opens a\nlocked door or two, and extracts once the bags are worth it.</li>\n<li>The squad\u2019s Rat grabs the 5k mag his Chad walked past: personalities\ndecide everything.</li>\n<li>Scavs hold their turf; a lucky few roam the whole map.</li>\n<li>Gunfire behind a hill: two ghost squads settling it off-screen. Push\nthe sound and the fight turns real.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">The Pillars</div>\n<div class=\"tab-content\"><p><strong>\ud83c\udfaf Objectives and extraction</strong></p>\n<p>Squads roll 1-5 goals at spawn: high-value loot zones, kill hunts\nanchored on PvP hotspots, real EFT quest triggers. The leader takes the\nanchor, the others splinter to nearby loot and cover. They extract for\nreal reasons - enough roubles, goals completed, or the raid clock - and\nthey coordinate on shared exfils like the car.</p>\n<p><strong>\ud83c\udf92 Looting that feels human</strong></p>\n<p>A custom loot engine built on B**\u2019s own pickup APIs. Per-personality\nvalue thresholds (a GigaChad ignores what a Rat treasures), realistic\nsearch timings and animations, inside-out container draining, and\nmid-raid <strong>gear upgrades</strong>: a bot that finds a better rifle swaps to it,\nstrips the good mods off his old one, and leaves it on the corpse for\nyou to find. Money, nades and dogtags are always taken; secured\ncontainers never; coverage rolls make squads miss a few items per room,\nlike real players do.</p>\n<p><strong>\ud83e\udde0 Personalities run the show</strong></p>\n<p>Everything above bends to each bot\u2019s SAIN personality: what\u2019s worth\npicking up, how much of a room gets covered, who hunts and who rats, how\nearly they extract, whether they force locked doors, even how strong a\nghost squad fights off-screen. Two squads never play the same raid.</p>\n<p><strong>\ud83d\uddfa\ufe0f Your raid, your rules (2.0)</strong></p>\n<p>Every behaviour setting lives in a <strong>web UI</strong> on your SPT server\n(<code>/orbit</code>, one button away from the F12 menu). It applies at the next\nraid and works headless. Full-config export/import included, to back\nup or share your tuning.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">\ud83d\udc7b Ghost Mode</div>\n<div class=\"tab-content\"><p><strong>The fps game changer of 2.0.</strong> +45% average fps in my\nheavy-population benchmark, <strong>+50 to +100%</strong> reported by RC testers.\nShips <strong>ON by default</strong> - one switch in the web UI turns it off.</p>\n<p>Classic limiters freeze distant bots and kill the living world.\nGhost Mode puts only the <strong>body</strong> to sleep while ORBIT keeps thinking:\nghost squads keep walking their routes and looting in real time, and\nwhen two hostile ghosts meet, the fight is simulated with audible\ndistant gunfire matching each side\u2019s real weapons (suppressors\nincluded), real casualties and lootable corpses. Get close while\nit\u2019s going and it becomes an actual firefight.</p>\n<p>Waking is seamless: proximity, damage, or aiming through a scope (the\nwake range scales with your magnification). Everything is tunable:\nwhich bot types sleep, fight frequency, lethality\u2026</p>\n<p><strong>Bots ORBIT doesn\u2019t drive</strong> (vanilla raiders and rogues,\nbosses and followers, faction mods) sleep frozen in place; ghost\nmovement for them comes in 2.1. Until then, for faction bots: enable\ntheir <strong>Take over</strong> toggle, or turn OFF their <strong>Dormant</strong> toggle (they\nstay awake, wake any ghost they meet, and those fights play out for\nreal).</p>\n<p><em>Fika: an optional <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/addon/123/orbit-fika-addon\" rel=\"noreferrer noopener\">Orbit.Fika addon</a> syncs the fight sounds to every\nclient. Positive reports during the RC, but still lightly tested.</em></p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">\ud83d\uddfa\ufe0f Zone Editor</div>\n<div class=\"tab-content\"><p>Draw the hotspots that steer squad routing, straight on a real render\nof each map: drag, resize, attract or repel, tune the game\u2019s own\nzones, mark kill-hunt anchors, preview the pull with live arrows, set\nper-map player convergence.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://imgur.com/8zGYnfK.png\" alt=\"SCREENSHOT_ZONE_EDITOR_PLACEHOLDER\" /></p>\n<p><strong>How zones work</strong>: they never override the AI, they tilt it.\nEvery time a squad picks its next destination it blends several pulls\n(its momentum, its main objective, some randomness, and every zone\u2019s\nforce within reach), so a strong positive <strong>Force</strong> makes an area win\nthose rolls way more often, a negative Force pushes squads away, and\n<strong>Radius</strong> is how far the influence reaches. Once they arrive, the\nnormal behaviour (looting, guarding, questing, fighting) takes over.\nYou can\u2019t hard-force \u201c8 PMCs go to Dorms\u201d, but a big Force on Dorms\nmeans most squads passing nearby will swing through sooner or later.</p>\n<p>Export your setup as a <strong>zone pack</strong> and publish it here as an ORBIT\naddon, or import someone else\u2019s. (Map renders courtesy of\n<a target=\"_blank\" class=\"external-link\" href=\"https://tarkov.dev\" rel=\"noreferrer noopener\">tarkov.dev</a>.)</p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Install &amp; Setup</div>\n<div class=\"tab-content\"><ol>\n<li>Install the dependencies: <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/902/bigbrain\" rel=\"noreferrer noopener\">BigBrain</a> \u00b7 <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/827/waypoints-expanded-navmesh\" rel=\"noreferrer noopener\">Waypoints</a> \u00b7 <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement\" rel=\"noreferrer noopener\">SAIN</a></li>\n<li>Extract the zip into your SPT root folder (client plugin + server mod).</li>\n<li>Configure from the web UI: F12 \u2192 <strong>Open web config UI</strong> (or browse to\n<code>https://127.0.0.1:6969/orbit</code>).</li>\n</ol>\n<p><strong>Recommended SAIN setup (2 tweaks)</strong></p>\n<p><strong>1. Personality spread</strong> - ORBIT was tuned around this distribution.\nSAIN\u2019s config is a web UI too since 4.1: browse to\n<code>https://127.0.0.1:6969/sain/presets</code> (your server address), open the\n<strong>Personalities</strong> tab, and for each personality below set\n<strong>Can Be Randomly Assigned = On</strong> with its <strong>Randomly Assigned Chance</strong>:</p>\n<table>\n<thead>\n<tr>\n<th>Personality</th>\n<th>Chance</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Rat</td>\n<td>10</td>\n</tr>\n<tr>\n<td>Wreckless</td>\n<td>5</td>\n</tr>\n<tr>\n<td>SnappingTurtle</td>\n<td>5</td>\n</tr>\n<tr>\n<td>Coward</td>\n<td>5</td>\n</tr>\n<tr>\n<td>Chad</td>\n<td>5</td>\n</tr>\n<tr>\n<td>Timmy</td>\n<td>3</td>\n</tr>\n<tr>\n<td>GigaChad</td>\n<td>3</td>\n</tr>\n</tbody>\n</table>\n<p>(Heads up for <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1895/sain-twitch-players\" rel=\"noreferrer noopener\">Twitch Player</a> users: it zeroes several of these by default.)</p>\n<p><strong>2. Extract layer</strong> - let ORBIT own extraction. Same UI,\n<strong>Global Settings \u2192 General \u2192 Extract</strong>: turn <strong>SAIN Extract Behavior</strong> Off, then\nSave (editing a built-in preset creates an editable copy).</p></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Compatibility</div>\n<div class=\"tab-content\"><p><strong>Required</strong>: <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement\" rel=\"noreferrer noopener\">SAIN</a> - ORBIT plugs into its personality system.</p>\n<p><strong>Recommended</strong>: spawn and loadout mods shape <em>who</em> spawns with <em>what\ngear</em>; ORBIT decides <em>where they go and what they do</em>. The layers don\u2019t\nfight. <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1594/apbs-acids-progressive-bot-system\" rel=\"noreferrer noopener\">APBS</a>, <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2097/abps-acids-bot-placement-system\" rel=\"noreferrer noopener\">ABPS</a>, <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1479/raid-review\" rel=\"noreferrer noopener\">Raid Review</a>.</p>\n<p><strong>Do not combine with</strong>: any other mod that moves, quests, loots or\nculls bots. That includes <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1109/questing-bots\" rel=\"noreferrer noopener\">QuestingBots</a>, <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/812/looting-bots\" rel=\"noreferrer noopener\">LootingBots</a>, Phobos itself, and AI limiter / culling\nmods (AILimit, Adaptive Bot Culling\u2026) - ORBIT ships its own limiter.\nIf a mod replaces bot brains or dispatches bots somewhere, assume it\nconflicts.</p></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Troubleshooting</div>\n<div class=\"tab-content\"><p>Bots frozen or acting weird? In order:</p>\n<ol>\n<li>Check for the unsupported mods above.</li>\n<li>Test with vanilla raid times (extended raids are a known trouble source).</li>\n<li>If you run ABPS, try regenerating its config from defaults.</li>\n<li>Still broken: the <a target=\"_blank\" class=\"external-link\" href=\"https://wiki.sp-tarkov.com/en/5050-method\" rel=\"noreferrer noopener\">50/50 method</a>.</li>\n</ol>\n<p>Before reporting, please reproduce with just\n<strong>ORBIT + SAIN + BigBrain + Waypoints + ABPS</strong> on default configs (per\nShynd\u2019s classic advice: everyone\u2019s modpack is unique, shrink yours\nfirst). Then drop by the <a target=\"_blank\" class=\"external-link\" href=\"https://discord.com/channels/875684761291599922/1509314495019745451\" rel=\"noreferrer noopener\">ORBIT thread</a> or the <a target=\"_blank\" class=\"external-link\" href=\"https://discord.com/channels/875684761291599922/1424142649027199148\" rel=\"noreferrer noopener\">SPT support</a> channel.</p></div></div>\n<div id=\"tabset-1-panel-8\" class=\"tab-panel\"><div class=\"tab-title\">Roadmap &amp; Known Issues</div>\n<div class=\"tab-content\"><p><strong>Next (2.1)</strong>: Ghost Mode moves the bots ORBIT doesn\u2019t drive (vanilla\nscavs, raiders, rogues, bosses and followers, UNTAR / RUAF and other\nfaction mods), so nothing on the map sleeps frozen anymore. Also for\nthe zone editor: zones filtered by faction or bot type, per-floor\nzones (Reserve bunkers, Techlight\u2026), and names on custom zones.\nPer-map Ghost Mode settings are on the maybe list.</p>\n<p><strong>On the list</strong> (no ETA, no promises): camp &amp; ambush decisions,\npost-combat self-heal, squad splitting with radio comms, boss hunting\nand faction rivalries (Firefly\u2019s idea), airdrop ambushes, a \u201crally\nflare\u201d item that pulls the whole map onto a point, multi-step\nobjectives (Kiba alarm, ULTRA power, Reserve D-2\u2026), switch-gated and\nRed-Rebel-style exfils, cross-raid player heatmaps feeding bot routing\n(Fiodor\u2019s idea), per-map ORBIT toggle. Suggestions land on the Discord\nthread.</p>\n<p><strong>Known issues</strong></p>\n<ul>\n<li>Ghost Mode and the zone editor are brand new in 2.0: expect tuning\npasses.</li>\n<li>Bots ORBIT doesn\u2019t drive (vanilla scavs, raiders/rogues, bosses and\nfollowers, faction mods) sleep FROZEN in place under Ghost Mode\n(ghost movement for them comes in 2.1). Workarounds for faction\nbots: enable their \u201cTake over\u201d toggle, or turn OFF the Dormant\ntoggle for their bot type.</li>\n<li>Most Reserve exfils need switches ORBIT can\u2019t operate yet.</li>\n<li>Faction-mod takeover (RUAF / UNTAR / Black Division) can misbehave;\nleave those toggles OFF if it does. ISB takeover works.</li>\n<li>Labs security gates can trap bots (pathing quirk, checkpoint tuning\nplanned).</li>\n<li>Possible clash with CactusPie\u2019s auto-transfer-loot mod (bot pickups\nmay land in YOUR tagged containers). Investigating.</li>\n<li>Rare stuck bots; they usually free themselves within a minute.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-9\" class=\"tab-panel\"><div class=\"tab-title\">About AI</div>\n<div class=\"tab-content\"><p>Full transparency: I build ORBIT with <strong>Claude</strong>.</p>\n<p>I\u2019ll be honest, I barely open an IDE these days, at work or at home:\nClaude writes most of this code. I still read it, question it, and own\nevery design decision in it.</p>\n<p>The ideas don\u2019t come from the AI. Neither do the evenings spent in test\nraids watching bots live, digging through logs and replays, and\nfinetuning values until a raid finally feels right. This project eats a\nLOT of personal time, and that\u2019s the part no assistant can do for me.</p>\n<p>Without the AI, ORBIT simply wouldn\u2019t exist: a project this size doesn\u2019t\nfit in one person\u2019s free time otherwise.</p>\n<p>If that\u2019s a dealbreaker for you, no hard feelings. If you judge a mod on\nwhat it does, give it a try.</p></div></div>\n<div id=\"tabset-1-panel-10\" class=\"tab-panel\"><div class=\"tab-title\">Credits</div>\n<div class=\"tab-content\"><ul>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://discord.com/channels/875684761291599922/1337131427803955200\" rel=\"noreferrer noopener\">Phobos</a> by <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/72916/jankytheclown\" rel=\"noreferrer noopener\">janky</a> - the advection-field cell dispatch ORBIT is built around (MIT, used with explicit permission, see below)</li>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1109/questing-bots\" rel=\"noreferrer noopener\">QuestingBot</a> by <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/27632/danw\" rel=\"noreferrer noopener\">danW</a> - inspired the quest routing concept, no code reused</li>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/812/looting-bots\" rel=\"noreferrer noopener\">LootingBots</a> by <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/28069/skwizzy\" rel=\"noreferrer noopener\">Skwizzy</a> &amp; <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/52282/archangelwtf\" rel=\"noreferrer noopener\">ArchangelWTF</a> - ORBIT began as a Phobos + LB merge; the loot layer has since been rewritten from scratch</li>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement\" rel=\"noreferrer noopener\">SAIN</a> by <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/27463/solarint\" rel=\"noreferrer noopener\">Solarint</a>, <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/52282/archangelwtf\" rel=\"noreferrer noopener\">ArchangelWTF</a> &amp; <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/27605/drakiaxyz\" rel=\"noreferrer noopener\">DrakiaXYZ</a> - the personality system everything plugs into</li>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/902/bigbrain\" rel=\"noreferrer noopener\">BigBrain</a> by <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/27605/drakiaxyz\" rel=\"noreferrer noopener\">DrakiaXYZ</a></li>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Andrewgdewar\" rel=\"noreferrer noopener\">Andrewgdewar</a> - per-faction area-roaming percentages (community PR)</li>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://tarkov.dev\" rel=\"noreferrer noopener\">tarkov.dev</a> - the zone editor\u2019s map renders</li>\n<li>The <strong>SPT team</strong>, the <strong>SPT Discord</strong>, and <strong>you</strong> for trying the mod</li>\n</ul>\n<p><strong>Phobos authorization from Janky:</strong></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/ifGx54S.png\" alt=\"Phobos authorization from Janky\" /></p></div></div>\n<div id=\"tabset-1-panel-11\" class=\"tab-panel\"><div class=\"tab-title\">Support</div>\n<div class=\"tab-content\"><p>If ORBIT made your raids more interesting, feel free to buy me a coffee!</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/chazut\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://ko-fi.com/img/githubbutton_sm.svg\" alt=\"ko-fi\" /></a></p>\n<p>All my mods are free and open source. Your support keeps me motivated to create more!</p></div></div></div>\n",
+   "description_html": "<blockquote>\n<p>\u26a0\ufe0f <strong>Heads up:</strong> ORBIT is built on <strong>Phobos</strong>\u2019s foundation (MIT-licensed, with <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/72916/jankytheclown\" rel=\"noreferrer noopener\">Janky\u2019s</a> blessing).\nFull credits at the bottom \ud83d\ude4f</p>\n</blockquote>\n<blockquote>\n<p><strong>ORBIT</strong> - Objective-driven Raid Bot Intelligence Tactics</p>\n<p>Smarter bots. Real objectives. Raids that feel alive.</p>\n</blockquote>\n<p>Every bot squad in your raid spawns with a plan: a rich area to strip, a\nPvP hotspot to hunt, a quest spot to visit. They work it as a team, loot\nlike players, upgrade their gear along the way, and head for extract when\nthey\u2019re done. Kill one late in the raid and his backpack tells the story\nof where he\u2019s been.</p>\n<p><strong>2.0\u2019s headliner is \ud83d\udc7b Ghost Mode</strong>: far-away bots go dormant to free\nyour CPU while ORBIT keeps playing them. The fps gains are massive\n(+45% average in my heavy-population benchmark, testers report +50 to\n+100%) and the world stays alive instead of freezing. 2.0 also adds\na server <strong>web UI</strong> for every setting and a visual <strong>zone editor</strong> to\ndraw your own hotspots on the map.</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://i.imgur.com/WSWqb8d.png\" rel=\"noreferrer noopener\">\ud83d\udcf7 Screenshot</a></p>\n<p>Pair it with the latest <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1479/raid-review\" rel=\"noreferrer noopener\">Raid Review</a> to replay it all on the post-raid map.</p>\n<p>Questions, bug reports, feedback: <strong><a target=\"_blank\" class=\"external-link\" href=\"https://discord.com/channels/875684761291599922/1509314495019745451\" rel=\"noreferrer noopener\">ORBIT Discord thread</a></strong>.</p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">What A Raid Looks Like</div>\n<div class=\"tab-content\"><ul>\n<li>A 4-man squad rolls \u201cclean out Resort\u201d, splits the rooms, opens a\nlocked door or two, and extracts once the bags are worth it.</li>\n<li>The squad\u2019s Rat grabs the 5k mag his Chad walked past: personalities\ndecide everything.</li>\n<li>Scavs hold their turf; a lucky few roam the whole map.</li>\n<li>Gunfire behind a hill: two ghost squads settling it off-screen. Push\nthe sound and the fight turns real.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">The Pillars</div>\n<div class=\"tab-content\"><p><strong>\ud83c\udfaf Objectives and extraction</strong></p>\n<p>Squads roll 1-5 goals at spawn: high-value loot zones, kill hunts\nanchored on PvP hotspots, real EFT quest triggers. The leader takes the\nanchor, the others splinter to nearby loot and cover. They extract for\nreal reasons - enough roubles, goals completed, or the raid clock - and\nthey coordinate on shared exfils like the car.</p>\n<p><strong>\ud83c\udf92 Looting that feels human</strong></p>\n<p>A custom loot engine built on B**\u2019s own pickup APIs. Per-personality\nvalue thresholds (a GigaChad ignores what a Rat treasures), realistic\nsearch timings and animations, inside-out container draining, and\nmid-raid <strong>gear upgrades</strong>: a bot that finds a better rifle swaps to it,\nstrips the good mods off his old one, and leaves it on the corpse for\nyou to find. Money, nades and dogtags are always taken; secured\ncontainers never; coverage rolls make squads miss a few items per room,\nlike real players do.</p>\n<p><strong>\ud83e\udde0 Personalities run the show</strong></p>\n<p>Everything above bends to each bot\u2019s SAIN personality: what\u2019s worth\npicking up, how much of a room gets covered, who hunts and who rats, how\nearly they extract, whether they force locked doors, even how strong a\nghost squad fights off-screen. Two squads never play the same raid.</p>\n<p><strong>\ud83d\uddfa\ufe0f Your raid, your rules (2.0)</strong></p>\n<p>Every behaviour setting lives in a <strong>web UI</strong> on your SPT server\n(<code>/orbit</code>, one button away from the F12 menu). It applies at the next\nraid and works headless. Full-config export/import included, to back\nup or share your tuning.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">\ud83d\udc7b Ghost Mode</div>\n<div class=\"tab-content\"><p><strong>The fps game changer of 2.0.</strong> +45% average fps in my\nheavy-population benchmark, <strong>+50 to +100%</strong> reported by RC testers.\nShips <strong>ON by default</strong> - one switch in the web UI turns it off.</p>\n<p>Classic limiters freeze distant bots and kill the living world.\nGhost Mode puts only the <strong>body</strong> to sleep while ORBIT keeps thinking:\nghost squads keep walking their routes and looting in real time, and\nwhen two hostile ghosts meet, the fight is simulated with audible\ndistant gunfire matching each side\u2019s real weapons (suppressors\nincluded), real casualties and lootable corpses. Get close while\nit\u2019s going and it becomes an actual firefight.</p>\n<p>Waking is seamless: proximity, damage, or aiming through a scope (the\nwake range scales with your magnification). Everything is tunable:\nwhich bot types sleep, fight frequency, lethality\u2026</p>\n<p><strong>Bots ORBIT doesn\u2019t drive</strong> (vanilla raiders and rogues,\nbosses and followers, faction mods) sleep frozen in place; ghost\nmovement for them comes in 2.1. Until then, for faction bots: enable\ntheir <strong>Take over</strong> toggle, or turn OFF their <strong>Dormant</strong> toggle (they\nstay awake, wake any ghost they meet, and those fights play out for\nreal).</p>\n<p><em>Fika: an optional <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/addon/123/orbit-fika-addon\" rel=\"noreferrer noopener\">Orbit.Fika addon</a> syncs the fight sounds to every\nclient. Positive reports during the RC, but still lightly tested.</em></p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">\ud83d\uddfa\ufe0f Zone Editor</div>\n<div class=\"tab-content\"><p>Draw the hotspots that steer squad routing, straight on a real render\nof each map: drag, resize, attract or repel, tune the game\u2019s own\nzones, mark kill-hunt anchors, preview the pull with live arrows, set\nper-map player convergence.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://imgur.com/8zGYnfK.png\" alt=\"SCREENSHOT_ZONE_EDITOR_PLACEHOLDER\" /></p>\n<p><strong>How zones work</strong>: they never override the AI, they tilt it.\nEvery time a squad picks its next destination it blends several pulls\n(its momentum, its main objective, some randomness, and every zone\u2019s\nforce within reach), so a strong positive <strong>Force</strong> makes an area win\nthose rolls way more often, a negative Force pushes squads away, and\n<strong>Radius</strong> is how far the influence reaches. Once they arrive, the\nnormal behaviour (looting, guarding, questing, fighting) takes over.\nYou can\u2019t hard-force \u201c8 PMCs go to Dorms\u201d, but a big Force on Dorms\nmeans most squads passing nearby will swing through sooner or later.</p>\n<p>Export your setup as a <strong>zone pack</strong> and publish it here as an ORBIT\naddon, or import someone else\u2019s. (Map renders courtesy of\n<a target=\"_blank\" class=\"external-link\" href=\"https://tarkov.dev\" rel=\"noreferrer noopener\">tarkov.dev</a>.)</p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Install &amp; Setup</div>\n<div class=\"tab-content\"><ol>\n<li>Install the dependencies: <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/902/bigbrain\" rel=\"noreferrer noopener\">BigBrain</a> \u00b7 <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/827/waypoints-expanded-navmesh\" rel=\"noreferrer noopener\">Waypoints</a> \u00b7 <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement\" rel=\"noreferrer noopener\">SAIN</a></li>\n<li>Extract the zip into your SPT root folder (client plugin + server mod).</li>\n<li>Configure from the web UI: F12 \u2192 <strong>Open web config UI</strong> (or browse to\n<code>https://127.0.0.1:6969/orbit</code>).</li>\n</ol>\n<p><strong>Recommended SAIN setup (2 tweaks)</strong></p>\n<p><strong>1. Personality spread</strong> - ORBIT was tuned around this distribution.\nSAIN\u2019s config is a web UI too since 4.1: browse to\n<code>https://127.0.0.1:6969/sain/presets</code> (your server address), open the\n<strong>Personalities</strong> tab, and for each personality below set\n<strong>Can Be Randomly Assigned = On</strong> with its <strong>Randomly Assigned Chance</strong>:</p>\n<table>\n<thead>\n<tr>\n<th>Personality</th>\n<th>Chance</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Rat</td>\n<td>10</td>\n</tr>\n<tr>\n<td>Wreckless</td>\n<td>5</td>\n</tr>\n<tr>\n<td>SnappingTurtle</td>\n<td>5</td>\n</tr>\n<tr>\n<td>Coward</td>\n<td>5</td>\n</tr>\n<tr>\n<td>Chad</td>\n<td>5</td>\n</tr>\n<tr>\n<td>Timmy</td>\n<td>3</td>\n</tr>\n<tr>\n<td>GigaChad</td>\n<td>3</td>\n</tr>\n</tbody>\n</table>\n<p>(Heads up for <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1895/sain-twitch-players\" rel=\"noreferrer noopener\">Twitch Player</a> users: it zeroes several of these by default.)</p>\n<p><strong>2. Extract layer</strong> - let ORBIT own extraction. Same UI,\n<strong>Global Settings \u2192 General \u2192 Extract</strong>: turn <strong>SAIN Extract Behavior</strong> Off, then\nSave (editing a built-in preset creates an editable copy).</p></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Compatibility</div>\n<div class=\"tab-content\"><p><strong>Required</strong>: <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement\" rel=\"noreferrer noopener\">SAIN</a> - ORBIT plugs into its personality system.</p>\n<p><strong>Recommended</strong>: spawn and loadout mods shape <em>who</em> spawns with <em>what\ngear</em>; ORBIT decides <em>where they go and what they do</em>. The layers don\u2019t\nfight. <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1594/apbs-acids-progressive-bot-system\" rel=\"noreferrer noopener\">APBS</a>, <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2097/abps-acids-bot-placement-system\" rel=\"noreferrer noopener\">ABPS</a>, <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1479/raid-review\" rel=\"noreferrer noopener\">Raid Review</a>.</p>\n<p><strong>Do not combine with</strong>: any other mod that moves, quests, loots or\nculls bots. That includes <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1109/questing-bots\" rel=\"noreferrer noopener\">QuestingBots</a>, <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/812/looting-bots\" rel=\"noreferrer noopener\">LootingBots</a>, Phobos itself, and AI limiter / culling\nmods (AILimit, Adaptive Bot Culling\u2026) - ORBIT ships its own limiter.\nIf a mod replaces bot brains or dispatches bots somewhere, assume it\nconflicts.</p></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Troubleshooting</div>\n<div class=\"tab-content\"><p>Bots frozen or acting weird? In order:</p>\n<ol>\n<li>Check for the unsupported mods above.</li>\n<li>Test with vanilla raid times (extended raids are a known trouble source).</li>\n<li>If you run ABPS, try regenerating its config from defaults.</li>\n<li>Still broken: the <a target=\"_blank\" class=\"external-link\" href=\"https://wiki.sp-tarkov.com/en/5050-method\" rel=\"noreferrer noopener\">50/50 method</a>.</li>\n</ol>\n<p>Before reporting, please reproduce with just\n<strong>ORBIT + SAIN + BigBrain + Waypoints + ABPS</strong> on default configs (per\nShynd\u2019s classic advice: everyone\u2019s modpack is unique, shrink yours\nfirst). Then drop by the <a target=\"_blank\" class=\"external-link\" href=\"https://discord.com/channels/875684761291599922/1509314495019745451\" rel=\"noreferrer noopener\">ORBIT thread</a> or the <a target=\"_blank\" class=\"external-link\" href=\"https://discord.com/channels/875684761291599922/1424142649027199148\" rel=\"noreferrer noopener\">SPT support</a> channel.</p></div></div>\n<div id=\"tabset-1-panel-8\" class=\"tab-panel\"><div class=\"tab-title\">Roadmap &amp; Known Issues</div>\n<div class=\"tab-content\"><p><strong>Next (2.1)</strong>: Ghost Mode moves the bots ORBIT doesn\u2019t drive (vanilla\nscavs, raiders, rogues, bosses and followers, UNTAR / RUAF and other\nfaction mods), so nothing on the map sleeps frozen anymore. Also for\nthe zone editor: zones filtered by faction or bot type, per-floor\nzones (Reserve bunkers, Techlight\u2026), and names on custom zones.\nPer-map Ghost Mode settings are on the maybe list.</p>\n<p><strong>On the list</strong> (no ETA, no promises): camp &amp; ambush decisions,\npost-combat self-heal, squad splitting with radio comms, boss hunting\nand faction rivalries (Firefly\u2019s idea), airdrop ambushes, a \u201crally\nflare\u201d item that pulls the whole map onto a point, multi-step\nobjectives (Kiba alarm, ULTRA power, Reserve D-2\u2026), switch-gated and\nRed-Rebel-style exfils, cross-raid player heatmaps feeding bot routing\n(Fiodor\u2019s idea), per-map ORBIT toggle. Suggestions land on the Discord\nthread.</p>\n<p><strong>Known issues</strong></p>\n<ul>\n<li>Ghost Mode and the zone editor are brand new in 2.0: expect tuning\npasses.</li>\n<li>Bots ORBIT doesn\u2019t drive (vanilla raiders/rogues, bosses and\nfollowers, faction mods) sleep FROZEN in place under Ghost Mode\n(ghost movement for them comes in 2.1). Workarounds for faction\nbots: enable their \u201cTake over\u201d toggle, or turn OFF the Dormant\ntoggle for their bot type.</li>\n<li>Most Reserve exfils need switches ORBIT can\u2019t operate yet.</li>\n<li>Faction-mod takeover (RUAF / UNTAR / Black Division) can misbehave;\nleave those toggles OFF if it does. ISB takeover works.</li>\n<li>Labs security gates can trap bots (pathing quirk, checkpoint tuning\nplanned).</li>\n<li>Possible clash with CactusPie\u2019s auto-transfer-loot mod (bot pickups\nmay land in YOUR tagged containers). Investigating.</li>\n<li>Rare stuck bots; they usually free themselves within a minute.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-9\" class=\"tab-panel\"><div class=\"tab-title\">About AI</div>\n<div class=\"tab-content\"><p>Full transparency: I build ORBIT with <strong>Claude</strong>.</p>\n<p>I\u2019ll be honest, I barely open an IDE these days, at work or at home:\nClaude writes most of this code. I still read it, question it, and own\nevery design decision in it.</p>\n<p>The ideas don\u2019t come from the AI. Neither do the evenings spent in test\nraids watching bots live, digging through logs and replays, and\nfinetuning values until a raid finally feels right. This project eats a\nLOT of personal time, and that\u2019s the part no assistant can do for me.</p>\n<p>Without the AI, ORBIT simply wouldn\u2019t exist: a project this size doesn\u2019t\nfit in one person\u2019s free time otherwise.</p>\n<p>If that\u2019s a dealbreaker for you, no hard feelings. If you judge a mod on\nwhat it does, give it a try.</p></div></div>\n<div id=\"tabset-1-panel-10\" class=\"tab-panel\"><div class=\"tab-title\">Credits</div>\n<div class=\"tab-content\"><ul>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://discord.com/channels/875684761291599922/1337131427803955200\" rel=\"noreferrer noopener\">Phobos</a> by <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/72916/jankytheclown\" rel=\"noreferrer noopener\">janky</a> - the advection-field cell dispatch ORBIT is built around (MIT, used with explicit permission, see below)</li>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1109/questing-bots\" rel=\"noreferrer noopener\">QuestingBot</a> by <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/27632/danw\" rel=\"noreferrer noopener\">danW</a> - inspired the quest routing concept, no code reused</li>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/812/looting-bots\" rel=\"noreferrer noopener\">LootingBots</a> by <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/28069/skwizzy\" rel=\"noreferrer noopener\">Skwizzy</a> &amp; <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/52282/archangelwtf\" rel=\"noreferrer noopener\">ArchangelWTF</a> - ORBIT began as a Phobos + LB merge; the loot layer has since been rewritten from scratch</li>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement\" rel=\"noreferrer noopener\">SAIN</a> by <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/27463/solarint\" rel=\"noreferrer noopener\">Solarint</a>, <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/52282/archangelwtf\" rel=\"noreferrer noopener\">ArchangelWTF</a> &amp; <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/27605/drakiaxyz\" rel=\"noreferrer noopener\">DrakiaXYZ</a> - the personality system everything plugs into</li>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/902/bigbrain\" rel=\"noreferrer noopener\">BigBrain</a> by <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/27605/drakiaxyz\" rel=\"noreferrer noopener\">DrakiaXYZ</a></li>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Andrewgdewar\" rel=\"noreferrer noopener\">Andrewgdewar</a> - per-faction area-roaming percentages (community PR)</li>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://tarkov.dev\" rel=\"noreferrer noopener\">tarkov.dev</a> - the zone editor\u2019s map renders</li>\n<li>The <strong>SPT team</strong>, the <strong>SPT Discord</strong>, and <strong>you</strong> for trying the mod</li>\n</ul>\n<p><strong>Phobos authorization from Janky:</strong></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/ifGx54S.png\" alt=\"Phobos authorization from Janky\" /></p></div></div>\n<div id=\"tabset-1-panel-11\" class=\"tab-panel\"><div class=\"tab-title\">Support</div>\n<div class=\"tab-content\"><p>If ORBIT made your raids more interesting, feel free to buy me a coffee!</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/chazut\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://ko-fi.com/img/githubbutton_sm.svg\" alt=\"ko-fi\" /></a></p>\n<p>All my mods are free and open source. Your support keeps me motivated to create more!</p></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/w89gQSkin8QjBiHXrORLfx6nwinio5bmxNJnZ77U.png",
    "forge_url": "https://sp-mod.com/mod/2706/orbit-20",
-   "downloads": 37987,
-   "favourites": 332,
+   "downloads": 38581,
+   "favourites": 338,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -167344,7 +167344,7 @@
      "description": "<h1>ORBIT 2.0.0</h1>\n<blockquote>\n<p>\u26a0\ufe0f <strong>BREAKING CHANGES - CLEAN INSTALL REQUIRED</strong> (coming from 1.3.x)\nDelete <code>BepInEx/plugins/ORBIT</code> first, then extract the zip at your SPT root.\nComing from a 2.0 RC: just extract over, your config is kept.</p>\n</blockquote>\n<p>The biggest update since the first release \u2764\ufe0f shaped by everyone who tested the RC.</p>\n<ul>\n<li>\n<p><strong>\ud83d\udc7b Ghost Mode (new)</strong>: far-away bots go dormant to free your CPU, but keep living their raid: moving, looting, and fighting simulated battles you can hear (real casualties, lootable corpses). Get close and the fight turns real. +45% average fps in my benchmark, testers report +50 to +100%. ON by default.</p>\n</li>\n<li>\n<p><strong>Web config UI (new)</strong>: every setting on your SPT server at <code>https://127.0.0.1:6969/orbit</code> (or F12 -&gt; Open web config UI). Works headless, config export/import included.</p>\n</li>\n<li>\n<p><strong>Zone editor (new)</strong>: draw and tune the hotspots that steer squads on a real map render, then share your setup as a zone pack addon.</p>\n</li>\n<li>\n<p><strong>Also</strong>: per-faction area roaming sliders (thanks Andrewgdewar), bots avoid minefields</p>\n</li>\n</ul>\n<h3><strong>Fika users</strong></h3>\n<p>Install the separate <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/addon/123/orbit-fika-addon\" rel=\"noreferrer noopener\">ORBIT-Fika-Addon</a> on every machine (lightly tested, feedback welcome).</p>\n<h3>Note</h3>\n<p>Bots ORBIT doesn\u2019t drive (bosses, vanilla scavs, faction mods) sleep frozen in place for now, ghost movement for them comes in 2.1. Workarounds on the mod page.</p>\n",
      "spt_constraint": "~4.1.5",
      "fika": "compatible",
-     "downloads": 1298,
+     "downloads": 1850,
      "size": 244026,
      "link": "https://sp-mod.com/mod/download/2706/orbit-20/2.0.0",
      "published_at": "2026-09-07T12:29:00.000000Z",
@@ -167378,7 +167378,7 @@
      "description": "<h2>SPT 4.1.X support</h2>\n<p>ORBIT now runs on SPT 4.1.X.</p>\n<p>Requirements on 4.1: SAIN 4.5.0 (or newer), BigBrain 1.5.0, Waypoints 1.9.0.</p>\n<h2>Changelog</h2>\n<ul>\n<li><strong>Version banner removed</strong>: ORBIT no longer adds itself to the corner version label next to SPT/SAIN</li>\n<li><strong>Fika door fix</strong>: bots opening locked doors are now visible to clients. They breach the door instead of appearing to walk through it. Solo behavior is unchanged.</li>\n<li><strong>Corpse fixes</strong>: squads no longer freeze in place around a corpse that has already been looted, and bots no longer loot corpses through walls.</li>\n<li><strong>Smarter extractions</strong>: a bot heading to an exit now commits to the trip even if part of the path looks blocked, retries an exit a few times before writing it off, and only despawns when it actually reaches the exit area. No more vanishing mid-map.</li>\n<li><strong>Spawn rescue rework</strong>: squads that spawn on a broken map spot get teleported to safety like before, but now properly re-plan their raid afterwards. Fixes squads that would stand still for the rest of the raid after a rescue.</li>\n<li><strong>New option</strong>: \u201cbots keep their spawn weapons\u201d stops bots from swapping their guns for looted ones, if you prefer loadouts to stay as your spawn mods made them.</li>\n<li><strong>White Tusk</strong>: ISB\u2019s White Tusk commanders are never taken over by ORBIT, so their always-on hunt behavior stays intact.</li>\n</ul>\n<h2>Notes</h2>\n<p>The bigger roadmap items (built-in AI limiter, extended raids, and friends) are still in the works and will land in later releases.</p>\n",
      "spt_constraint": "~4.1.2",
      "fika": "compatible",
-     "downloads": 7437,
+     "downloads": 7446,
      "size": 208401,
      "link": "https://sp-mod.com/mod/download/2706/orbit-20/1.3.0",
      "published_at": "2026-08-20T19:56:00.000000Z",
@@ -167412,7 +167412,7 @@
      "description": "<p>Patch release: fixes the <strong>performance issues</strong> introduced by 1.2.0, bots <strong>walking through doors</strong>, and a batch small issues. Huge thanks to everyone who reported and tested the RC builds!</p>\n<h2>\u26a1 Performance</h2>\n<p>1.2.0 could tank your fps (especially on Streets, or near bosses and rogues). Several causes were found and fixed, it should now run at least as smoothly as 1.1.0 did.</p>\n<h2>\ud83d\udeaa Doors</h2>\n<ul>\n<li>Bots no longer walk through closed or locked doors (Labs keycard rooms included). They stop, open the door, then walk through.</li>\n<li>Doors opened by bots now stay open instead of closing again on their own.</li>\n</ul>\n<h2>\ud83c\udf92 Looting</h2>\n<ul>\n<li>Bots now go back and loot their own kills after a fight.</li>\n<li>The rest of the squad keeps moving and looting nearby instead of standing frozen while one member loots.</li>\n</ul>\n<h2>\ud83d\ude91 Extraction</h2>\n<ul>\n<li>\u201cExtract allowed for = None\u201d now blocks <strong>all</strong> extract types, including emergency and loot extracts.</li>\n<li>Squads no longer walk toward exits they can\u2019t actually reach.</li>\n</ul>\n<hr />\n<p>Enjoy \ud83d\ude42</p>\n<p>and thanks again to the reporters and RC testers \ud83d\ude42</p>\n",
      "spt_constraint": "~4.0.13",
      "fika": "compatible",
-     "downloads": 17016,
+     "downloads": 17049,
      "size": 206097,
      "link": "https://sp-mod.com/mod/download/2706/orbit-20/1.2.1",
      "published_at": "2026-07-02T20:39:00.000000Z",
@@ -167597,7 +167597,7 @@
     }
    ],
    "published_at": "2026-06-04T06:56:00.000000Z",
-   "updated_at": "2026-09-07T20:11:44.000000Z",
+   "updated_at": "2026-09-08T08:32:56.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
@@ -169759,11 +169759,11 @@
    "name": "AutoCorpseSearch",
    "slug": "autocorpsesearch",
    "teaser": "Automatically starts searching a corpse's equipment slots when you open the loot screen - no more clicking Search on each slot individually",
-   "description_html": "<h2>Features</h2>\n<ul>\n<li><strong>Auto-search on open</strong> - the moment you open a corpse\u2019s inventory, searching begins automatically on all equipped containers (Chest Rig, Pockets, Backpack)</li>\n<li><strong>Configurable search order</strong> - set the priority of each slot via the BepInEx F12 config menu (default: Chest Rig \u2192 Pockets \u2192 Backpack)</li>\n<li><strong>Resume partial searches</strong> - optionally re-start searching slots that were interrupted and still have hidden items (on by default, also available for regular containers)</li>\n<li><strong>Manual cancel is respected</strong> - cancelling a search mid-slot stops the entire chain; no slot is searched without your input</li>\n<li><strong>Inventory-close safe</strong> - closing the inventory immediately stops any pending searches; nothing runs in the background</li>\n<li><strong>Skills Extended compatible</strong> - works correctly with the double-search elite skill</li>\n</ul>\n<h2>Recommended mods</h2>\n<ul>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2405/letmerightclick\" rel=\"noreferrer noopener\">LetMeRightClick by Lacyway</a> to save even more time</li>\n</ul>\n<h2>Installation</h2>\n<p>As usual, unzip to SPT folder.</p>\n<hr />\n<p>Let me know if you run into any problems or have suggestions for improvement.</p>\n",
+   "description_html": "<h2>Features</h2>\n<ul>\n<li><strong>Auto-search on open</strong> - the moment you open a corpse\u2019s inventory, searching begins automatically on all equipped containers (Chest Rig, Pockets, Backpack)</li>\n<li><strong>Configurable search order</strong> - set the priority of each slot via the BepInEx F12 config menu (default: Chest Rig \u2192 Pockets \u2192 Backpack)</li>\n<li><strong>Resume partial searches</strong> - optionally re-start searching slots that were interrupted and still have hidden items (on by default, also available for regular containers)</li>\n<li><strong>Manual cancel is respected</strong> - cancelling a search mid-container stops the rest of that chain</li>\n<li><strong>Inventory-close safe</strong> - closing the loot screen drops everything queued for it; nothing keeps searching\na corpse in the background</li>\n<li><strong>Double-search elite skill</strong> - handled correctly. The mod deliberately never claims the second search slot\nthe Attention elite buff unlocks; that one stays yours</li>\n<li><strong>New: Search picked-up rigs and backpacks</strong> - a rig or backpack you equip is searched right away, including\nwhen you grab one off the ground with the use key and never open the inventory at all. Opening one in\nits own window searches it too, and an unsearched one you are already wearing is picked up the next\ntime you open your inventory.</li>\n</ul>\n<h2>Recommended mods</h2>\n<ul>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2405/letmerightclick\" rel=\"noreferrer noopener\">LetMeRightClick by Lacyway</a> to save even more time</li>\n</ul>\n<h2>Installation</h2>\n<p>As usual, unzip to SPT folder.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/OqOPGhksSncbpj2jMtkxukXV0C5CLrRXAspuzgjy.png",
    "forge_url": "https://sp-mod.com/mod/2730/autocorpsesearch",
-   "downloads": 6639,
-   "favourites": 43,
+   "downloads": 9599,
+   "favourites": 76,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -169796,7 +169796,7 @@
      "description": "<p>Port to SPT 4.1, no functional changes</p>\n",
      "spt_constraint": "~4.1.0",
      "fika": "compatible",
-     "downloads": 1067,
+     "downloads": 3502,
      "size": 5766,
      "link": "https://sp-mod.com/mod/download/2730/autocorpsesearch/2.0.0",
      "published_at": "2026-08-08T08:52:00.000000Z",
@@ -169808,7 +169808,7 @@
      "description": "<p>added new feature \u201cResume Container Searches\u201d (default: on)</p>\n",
      "spt_constraint": "~4.0.4",
      "fika": "compatible",
-     "downloads": 4679,
+     "downloads": 5192,
      "size": 5873,
      "link": "https://sp-mod.com/mod/download/2730/autocorpsesearch/1.1.0",
      "published_at": "2026-06-14T19:37:00.000000Z",
@@ -169820,7 +169820,7 @@
      "description": "<p>Initial Release</p>\n",
      "spt_constraint": "~4.0.4",
      "fika": "compatible",
-     "downloads": 893,
+     "downloads": 905,
      "size": 5705,
      "link": "https://sp-mod.com/mod/download/2730/autocorpsesearch/1.0.0",
      "published_at": "2026-06-10T17:39:00.000000Z",
@@ -169836,7 +169836,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-06-10T19:03:00.000000Z",
-   "updated_at": "2026-08-13T14:00:05.000000Z",
+   "updated_at": "2026-09-08T08:58:12.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
@@ -185715,8 +185715,8 @@
    "description_html": "<h1>Anvil-WebOverlay</h1>\n<p>A shared library that lets BepInEx mods show <strong>web pages in windows over Escape From Tushonka</strong> - interactive panels, and fully click-through transparent HUDs - written in plain HTML instead of an immediate-mode toolkit.</p>\n<p><strong>For players:</strong> you only need this installed when another mod lists it as a dependency. Extract the zip over your SPT folder, done. One installation serves every mod that uses it - a single shared browser, not one per mod.</p>\n<p><strong>For modders:</strong> reference <code>Anvil-WebOverlay.dll</code>, and a UI is this:</p>\n<pre><code>var overlay = WebOverlays.Create(\"My panel\");\nif (overlay == null) return;                   // known-unavailable: fall back\noverlay.Failed += () =&gt; { ... };               // async failure: dispose + fall back\noverlay.MessageReceived += text =&gt; { ... };    // page -&gt; mod\noverlay.LoadHtml(\"&lt;h1&gt;Hello&lt;/h1&gt;\");            // or Navigate(url)\noverlay.Post(\"live value\");                    // mod -&gt; page\n</code></pre>\n<h2>Features</h2>\n<ul>\n<li><strong>Panels</strong>: movable, resizable windows with a dark game-toned title bar (or frameless), closable by keys you choose.</li>\n<li><strong>Transparent HUDs</strong>: pixels your page does not paint show the game, with true per-pixel alpha on Windows 8+ - and by default the window ignores mouse and keyboard entirely, so the game stays fully playable.</li>\n<li><strong>Clickable glass</strong>: a HUD can take mouse input instead, and can be cut down to the rectangles it actually draws in, so it covers the screen while the game stays clickable around it.</li>\n<li><strong>Opacity</strong>: fade the whole window; combine with the HUD for a faded HUD.</li>\n<li><strong>Two-way messaging</strong> between page and mod: plain strings, or named channels where either side can ask the other a question and await the answer. Plus <code>ExecuteScript</code> with its result, inline HTML without any web server, and optional DevTools while building a page.</li>\n<li><strong>Pages with real files</strong>: a mod can serve its own folder under its own host name, so scripts, fonts and images load normally and the page gets working browser storage.</li>\n<li><strong>A real browser engine</strong>: WebGL2 works, so Three.js scenes can run inside a HUD - the demo includes a 3D compass cube coupled to the player camera.</li>\n<li><strong>Safe by default</strong>: navigation is locked to origins the mod itself asked for, popups are suppressed, permission prompts denied, password saving and autofill disabled.</li>\n<li><strong>One shared browser</strong> for all mods, on its own thread - nothing blocks the game, and failures report through a <code>Failed</code> event instead of crashing anything.</li>\n</ul>\n<h2>Requirements</h2>\n<ul>\n<li>Microsoft WebView2 runtime - current Windows 10/11 installations already include it.</li>\n<li>Borderless windowed or windowed mode. Exclusive fullscreen cannot show a window over the game.</li>\n</ul>\n<h2>Demo</h2>\n<p>The optional demo plugin shows the modes in game: <strong>F10</strong> an interactive panel that reads a value back out of its page, <strong>F11</strong> a transparent click-through glass HUD with live values, <strong>F8</strong> an interactive glass panel whose buttons talk to the game over named channels and ask it for the current frame rate, <strong>F7</strong> a Three.js WebGL compass cube that follows the player camera. Source included - it is the reference for how to use the library.</p>\n<p>Full API documentation and the technical write-up (why raw COM vtables, why a composed visual instead of a child window) are in the README on GitHub.</p>\n<h2>About the name</h2>\n<p>Anvil is the library branding of <strong>maschine</strong> (the author of CraftQueue and other mods): shared infrastructure gets a neutral name that other mods can depend on without carrying one modder\u2019s personal tag. Same author, same source account, same support.</p>\n<h2>License</h2>\n<p>MIT. <code>WebView2Loader.dll</code> is part of the Microsoft WebView2 SDK, redistributed under BSD 3-Clause; the WebView2 runtime itself is not redistributed.</p>\n<h2>Demo</h2>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/maschine34675/WebOverlay/blob/main/assets/demo.gif?raw=true\" alt=\"example\" /></p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/km76RfiQDmlPoFjuOjMwaS4ZTe5u8NZDDOz8OAlp.png",
    "forge_url": "https://sp-mod.com/mod/2879/weboverlay",
-   "downloads": 3408,
-   "favourites": 37,
+   "downloads": 5619,
+   "favourites": 56,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -185749,12 +185749,24 @@
    ],
    "versions": [
     {
+     "id": 15284,
+     "version": "1.11.0",
+     "description": "<ul>\n<li>No player facing changes - this release is for the mods that use the library.</li>\n</ul>\n<p>Modders can find further information here: <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/maschine34675/WebOverlay/blob/main/CHANGELOG.md\" rel=\"noreferrer noopener\">CHANGELOG.md</a></p>\n",
+     "spt_constraint": "^4.0.0",
+     "fika": "compatible",
+     "downloads": 56,
+     "size": 174334,
+     "link": "https://sp-mod.com/mod/download/2879/weboverlay/1.11.0",
+     "published_at": "2026-09-08T09:02:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 15042,
      "version": "1.10.0",
      "description": "<ul>\n<li>Hardening release: Downloads are now blocked by default (a page over a game has no business writing files), a mod can finally tell when its channels are dead, and several ways a misbehaving page or mod could confuse the library are closed. Nothing changes for a well-behaved mod.</li>\n</ul>\n<p>Modders can find further information here: <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/maschine34675/WebOverlay/blob/main/CHANGELOG.md\" rel=\"noreferrer noopener\">CHANGELOG.md</a></p>\n",
      "spt_constraint": "^4.0.0",
      "fika": "compatible",
-     "downloads": 39,
+     "downloads": 2133,
      "size": 168421,
      "link": "https://sp-mod.com/mod/download/2879/weboverlay/1.10.0",
      "published_at": "2026-08-28T14:42:00.000000Z",
@@ -185778,7 +185790,7 @@
      "description": "<h4>Covers v1.8.4 to v1.8.8:</h4>\n<ul>\n<li>Fixed: with a panel open, a menu that shows the mouse pointer made the library rewrite the window twice per frame for as long as the menu was up.</li>\n<li>Fixed: a panel that lets the mouse through could not be clicked again afterwards. It now only does so while the game has the mouse, so in menus it behaves like any other window.</li>\n<li>Fixed: a mod\u2019s panel covering the middle of the screen could stop the mouse from turning the player, with no way to tell why. Mods can now let the mouse through to the game while the game is in front.</li>\n<li>Fixed: with a mod\u2019s panel open the mouse could stop working - no cursor, and the game would not turn with it either - until the panel was closed again.</li>\n<li>Fixed: after closing an overlay, the mouse could be left invisible without the game taking it back, so looking around stopped working until the game was refocused.</li>\n</ul>\n<p>Modders can find further information here: <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/maschine34675/WebOverlay/blob/main/CHANGELOG.md\" rel=\"noreferrer noopener\">CHANGELOG.md</a></p>\n",
      "spt_constraint": "^4.0.0",
      "fika": "compatible",
-     "downloads": 717,
+     "downloads": 746,
      "size": 147224,
      "link": "https://sp-mod.com/mod/download/2879/weboverlay/1.8.8",
      "published_at": "2026-08-25T07:01:00.000000Z",
@@ -185802,7 +185814,7 @@
      "description": "<h4>Covers v1.6.0 to v1.8.2:</h4>\n<ul>\n<li>\n<p>Nothing changes for players - this release is for the mods that use the library.</p>\n</li>\n<li>\n<p>Modders can find further information here: <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/maschine34675/WebOverlay/blob/main/CHANGELOG.md\" rel=\"noreferrer noopener\">CHANGELOG.md</a></p>\n</li>\n</ul>\n",
      "spt_constraint": "^4.0.0",
      "fika": "compatible",
-     "downloads": 269,
+     "downloads": 278,
      "size": 142806,
      "link": "https://sp-mod.com/mod/download/2879/weboverlay/1.8.2",
      "published_at": "2026-08-23T11:32:00.000000Z",
@@ -185814,7 +185826,7 @@
      "description": "<h4>Covers v1.4.0 to v1.6.0:</h4>\n<p>Nothing changes for players - this release is for the mods that use the library.</p>\n<ul>\n<li>Pages can be built like ordinary web apps: a mod can serve its own folder as <a target=\"_blank\" class=\"external-link\" href=\"https://yourmod.assets/\" rel=\"noreferrer noopener\">https://yourmod.assets/</a>, so scripts, fonts and images load normally and the page gets working storage.</li>\n<li>Named channels with request/reply: page and mod can ask each other a question and await the answer, instead of every mod inventing its own convention. A question is always answered, so neither side can leave the other hanging.</li>\n<li>A mod can read values back out of its page, and gets events for \u201cmy page is live\u201d and for real visibility changes, plus the option to receive everything on the game\u2019s main thread.</li>\n<li>Interactive HUDs can be cut down to the rectangles they actually use, so a HUD can cover the screen while the game stays clickable everywhere else; windows can also be moved and resized at runtime.</li>\n</ul>\n",
      "spt_constraint": "^4.0.0",
      "fika": "compatible",
-     "downloads": 280,
+     "downloads": 283,
      "size": 133121,
      "link": "https://sp-mod.com/mod/download/2879/weboverlay/1.6.0",
      "published_at": "2026-08-20T13:57:00.000000Z",
@@ -185826,7 +185838,7 @@
      "description": "<h3>1.3.0</h3>\n<ul>\n<li>Demo: F7 shows a Three.js WebGL compass cube coupled to the player camera - overlays run full WebGL2, so 3D HUDs are possible. The library itself is unchanged.</li>\n</ul>\n<h3>1.2.0</h3>\n<ul>\n<li>HUDs are now composition hosted (Windows 8+, 2021+ WebView2): true per-pixel alpha - rgba() glass, soft shadows and clean antialiasing blend with the game. Older systems keep the chroma-key fallback.</li>\n<li>New Interactive option: a transparent HUD can receive mouse input - HTML buttons, hovers and wheel scrolling work while the game keeps the keyboard.</li>\n<li>Demo: F11 shows the glass HUD, F8 an interactive glass panel.</li>\n</ul>\n",
      "spt_constraint": "^4.0.0",
      "fika": "compatible",
-     "downloads": 423,
+     "downloads": 427,
      "size": 118259,
      "link": "https://sp-mod.com/mod/download/2879/weboverlay/1.3.0",
      "published_at": "2026-08-13T08:47:00.000000Z",
@@ -185838,7 +185850,7 @@
      "description": "<ul>\n<li>Windows now remember their position and size: toggling no longer recenters, and the spot survives restarts. A spot that ends up off-screen (monitor changes) falls back to the centered default. Mods can opt out or set their own storage key (RememberBounds / PersistenceKey).</li>\n</ul>\n",
      "spt_constraint": "^4.0.0",
      "fika": "compatible",
-     "downloads": 794,
+     "downloads": 803,
      "size": 114660,
      "link": "https://sp-mod.com/mod/download/2879/weboverlay/1.1.0",
      "published_at": "2026-08-03T18:46:00.000000Z",
@@ -185850,14 +185862,14 @@
      "description": "<h3>1.0.1</h3>\n<ul>\n<li>Packaging and logging polish, no functional changes.</li>\n</ul>\n<h3>1.0.0</h3>\n<ul>\n<li>Initial release.</li>\n</ul>\n",
      "spt_constraint": "^4.0.0",
      "fika": "compatible",
-     "downloads": 244,
+     "downloads": 251,
      "size": 112275,
      "link": "https://sp-mod.com/mod/download/2879/weboverlay/1.0.1",
      "published_at": "2026-08-02T12:57:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.10.0",
+   "latest_version": "1.11.0",
    "spt_constraint": "^4.0.0",
    "all_spt_constraints": [
     "^4.0.0"
@@ -185865,7 +185877,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-08-02T13:23:00.000000Z",
-   "updated_at": "2026-08-28T14:47:05.000000Z",
+   "updated_at": "2026-09-08T09:05:06.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
@@ -192616,11 +192628,11 @@
    "name": "ModProfiler",
    "slug": "modprofiler",
    "teaser": "Find the mod eating your frames: live CPU time per installed mod, without disabling any",
-   "description_html": "<p>When the game stutters, the usual answer is to disable half your mods and bisect. This\none answers directly: it stopwatches every mod\u2019s own code - Harmony patches, frame\nmethods, coroutines - and shows live what each costs per frame. Like <strong>Dubs Performance\nAnalyzer</strong> in RimWorld, the numbers rank your mods usefully; they are not a frame-exact\ntruth.</p>\n<h2>Features</h2>\n<ul>\n<li><strong>One row per mod:</strong> average and peak ms, calls per frame, share of the frame, total.\nSort by any column, expand a mod for its priciest methods.</li>\n<li>Pause, rescan and <strong>CSV export</strong>.</li>\n<li>With the <strong>Anvil-WebOverlay</strong> library it opens as its own window and adds\n<strong>\u00b5s per call</strong> (which exposes rows that are mostly measurement overhead), a <strong>spike\nlog</strong> for stuttering frames, the <strong>GC rate</strong> on the frame graph, trend graphs, a\nfilter and tooltips.</li>\n</ul>\n<h2>Installation and first use</h2>\n<p>Extract the ZIP into your SPT folder and press <strong>F11</strong> in game. The first activation\ninstruments all mod code and freezes the game for a few seconds - normal, once per\nsession. In a raid press <strong>Rescan</strong> once: some mods only patch at raid start.</p>\n<h2>Requirements</h2>\n<ul>\n<li>SPT 4.1.x, built and tested there. Client-side only, no server component.</li>\n<li>Required: <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2879/weboverlay\" rel=\"noreferrer noopener\">Anvil-WebOverlay</a> 1.8.0+ for the window. Without it a built-in overlay shows the core table.</li>\n</ul>\n<h2>Limits</h2>\n<ul>\n<li>Measuring costs ~1 \u00b5s per call, so values are slightly inflated - for a very\nfrequently called mod that can be most of its row (<code>\u00b5s/Call</code> shows where).</li>\n<li>Times are inclusive, so the percentages can add up past 100.</li>\n<li>Indirect load is invisible: a mod that spawns more bots costs time inside the engine,\nnot in its own code.</li>\n</ul>\n<h2>Support</h2>\n<p>Open a GitHub issue with your ModProfiler and SPT versions, short repro steps and your\ncomplete <code>BepInEx/LogOutput.log</code> - plus a CSV export if it is about the numbers.</p>\n<h2>Demo</h2>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/maschine34675/ModProfiler/blob/main/assets/preview.png?raw=true\" alt=\"example\" /></p>\n",
+   "description_html": "<p>When the game stutters, the usual answer is to disable half your mods and bisect. This\none answers directly: it stopwatches every mod\u2019s own code - Harmony patches, frame\nmethods, coroutines - and shows live what each costs per frame. Like <strong>Dubs Performance\nAnalyzer</strong> in RimWorld, the numbers rank your mods usefully; they are not a frame-exact\ntruth.</p>\n<h2>Features</h2>\n<ul>\n<li><strong>One row per mod:</strong> average and peak ms, calls per frame, share of the frame, total.\nSort by any column, expand a mod for its priciest methods.</li>\n<li>Pause, rescan and <strong>CSV export</strong>.</li>\n<li>With the <strong>Anvil-WebOverlay</strong> library it opens as its own window and adds\n<strong>\u00b5s per call</strong> (which exposes rows that are mostly measurement overhead), a <strong>spike\nlog</strong> for stuttering frames, the <strong>GC rate</strong> on the frame graph, trend graphs, a\nfilter and tooltips.</li>\n</ul>\n<h2>Installation and first use</h2>\n<p>Extract the ZIP into your SPT folder and press <strong>F11</strong> in game. The first activation\ninstruments all mod code and freezes the game for a few seconds - normal, once per\nsession. In a raid press <strong>Rescan</strong> once: some mods only patch at raid start.</p>\n<h2>Requirements</h2>\n<ul>\n<li>SPT 4.1.x, built and tested there. Client-side only, no server component.</li>\n<li>Required: <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2879/weboverlay\" rel=\"noreferrer noopener\">Anvil-WebOverlay</a> 1.8.8+ for the window (needs the WebView2 runtime and windowed/borderless mode). Without it a built-in overlay shows the core table.</li>\n</ul>\n<h2>Limits</h2>\n<ul>\n<li>Measuring costs ~1 \u00b5s per call, so values are slightly inflated - for a very\nfrequently called mod that can be most of its row (<code>\u00b5s/Call</code> shows where).</li>\n<li>Times are inclusive, so the percentages can add up past 100.</li>\n<li>Indirect load is invisible: a mod that spawns more bots costs time inside the engine,\nnot in its own code.</li>\n</ul>\n<h2>Support</h2>\n<p>Open a GitHub issue with your ModProfiler and SPT versions, short repro steps and your\ncomplete <code>BepInEx/LogOutput.log</code> - plus a CSV export if it is about the numbers.</p>\n<h2>Demo</h2>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/maschine34675/ModProfiler/blob/main/assets/preview.png?raw=true\" alt=\"example\" /></p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/NswC7HXG3q8kT6lY5WSqfhg0Rp3SwCEVfWNzFr1j.png",
    "forge_url": "https://sp-mod.com/mod/2952/modprofiler",
-   "downloads": 531,
-   "favourites": 14,
+   "downloads": 911,
+   "favourites": 20,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -192653,7 +192665,7 @@
      "description": "<p>Backport to SPT 4.0, no functional changes, based on v1.0.1</p>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 10,
+     "downloads": 93,
      "size": 35357,
      "link": "https://sp-mod.com/mod/download/2952/modprofiler/0.9.0",
      "published_at": "2026-09-01T09:26:00.000000Z",
@@ -192673,7 +192685,7 @@
      "description": "<ul>\n<li>Fixed: with the profiler window open you can look around again.</li>\n</ul>\n",
      "spt_constraint": "~4.1.0",
      "fika": "compatible",
-     "downloads": 47,
+     "downloads": 343,
      "size": 35340,
      "link": "https://sp-mod.com/mod/download/2952/modprofiler/1.0.1",
      "published_at": "2026-09-01T09:24:00.000000Z",
@@ -192693,7 +192705,7 @@
      "description": "<p>Initial Release</p>\n",
      "spt_constraint": "~4.1.0",
      "fika": "compatible",
-     "downloads": 474,
+     "downloads": 475,
      "size": 34208,
      "link": "https://sp-mod.com/mod/download/2952/modprofiler/1.0.0",
      "published_at": "2026-08-23T12:01:00.000000Z",
@@ -192733,7 +192745,7 @@
     }
    ],
    "published_at": "2026-08-23T12:03:00.000000Z",
-   "updated_at": "2026-09-01T09:29:04.000000Z",
+   "updated_at": "2026-09-08T09:14:25.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
@@ -193790,8 +193802,8 @@
    "description_html": "<p>This Mod makes it so with every level all item weights go down by 1% progressively</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/UlFUCsrDuilJeWEdxmrwUdy4FHzdrPV290NSQWaM.jpg",
    "forge_url": "https://sp-mod.com/mod/2961/weight-leveling",
-   "downloads": 54,
-   "favourites": 0,
+   "downloads": 1785,
+   "favourites": 13,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -193819,40 +193831,40 @@
    ],
    "versions": [
     {
-     "id": 15005,
-     "version": "4.1.3",
-     "description": "<p>For 4.1.3</p>\n",
-     "spt_constraint": "~4.1.0",
-     "fika": "compatible",
-     "downloads": 41,
-     "size": 2797,
-     "link": "https://sp-mod.com/mod/download/2961/weight-leveling/4.1.3",
-     "published_at": "2026-08-26T22:24:23.000000Z",
-     "dependencies": []
-    },
-    {
      "id": 15004,
      "version": "4.0.13",
      "description": "<p>For 4.0.13</p>\n",
-     "spt_constraint": "~4.0.0",
+     "spt_constraint": "~4.0.13",
      "fika": "compatible",
-     "downloads": 13,
+     "downloads": 325,
      "size": 2806,
      "link": "https://sp-mod.com/mod/download/2961/weight-leveling/4.0.13",
-     "published_at": "2026-08-26T22:24:21.000000Z",
+     "published_at": "2026-08-26T22:24:00.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 15005,
+     "version": "4.1.3",
+     "description": "<p>For 4.1.3</p>\n",
+     "spt_constraint": "^4.1.3",
+     "fika": "compatible",
+     "downloads": 1460,
+     "size": 2797,
+     "link": "https://sp-mod.com/mod/download/2961/weight-leveling/4.1.3",
+     "published_at": "2026-08-26T22:24:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "4.1.3",
-   "spt_constraint": "~4.1.0",
+   "latest_version": "4.0.13",
+   "spt_constraint": "~4.0.13",
    "all_spt_constraints": [
-    "~4.0.0",
-    "~4.1.0"
+    "^4.1.3",
+    "~4.0.13"
    ],
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-08-26T22:24:30.000000Z",
-   "updated_at": "2026-08-26T22:25:06.000000Z",
+   "updated_at": "2026-09-08T05:03:13.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -195742,10 +195754,10 @@
    "name": "No Gear?",
    "slug": "no-gear",
    "teaser": "Remove weapons and gear offers from traders (configurable).",
-   "description_html": "<h2>If you want it, you gotta find it in a raid!</h2>\n<p>Removes weapons and gear offers from traders, including firearms, body armor, backpacks etc.</p>\n<p>By default, keeps pistols and shotguns so you at least have that available as a last resort.</p>\n<p>See the configuration section below to tune things to your liking; each item category can be enabled independently.</p>\n<p>Safe to add or remove on an existing profile \u2013 expect assorts to return to expected the next time the server starts.</p>\n<h2>Why?</h2>\n<p>Makes me use weapons and gear I wouldn\u2019t if I can just buy a better alternative from a levelled-up trader!\nIncluding the low durability stuff you\u2019d never touch that makes you <em>experience</em> malfunctions.</p>\n<p>Inspired by GAMMA\u2019s own restriction on traders.</p>\n<h2>Recommendations</h2>\n<h3>Obtaining modded items</h3>\n<p>If you install mods that add things this mod removes and you want to actually use them, I recommend using <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1594/apbs-acids-progressive-bot-system\" rel=\"noreferrer noopener\">APBS (Acid\u2019s Progressive Bot System)</a>, and configure it to allow bots to spawn with modded weapons and gear, so that you have a chance to loot it off them.</p>\n<p>And of course, the flea, if you use it.</p>\n<h3>Upping the stakes</h3>\n<p><em>No Gear?</em> works well with <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2965/ironman\" rel=\"noreferrer noopener\">Acid\u2019s Ironman</a> mod.</p>\n<hr />\n<h2>Configuration</h2>\n<p>Edit <code>SPT_Runtime/user/mods/liquidwarp-nogear/config.json</code> to select which categories of weapons and gear you want to remove from the traders.</p>\n<p>The mod release bundles the default config; don\u2019t forget to restore your changes after updating.</p>\n<ul>\n<li><code>weaponsOthers</code> is all firearms other than pistols, shotguns and revolvers.</li>\n<li>Note that the <code>weaponRevolvers</code> category also includes the MTs-255 revolver shotgun, and the M32A1 revolver grenade launcher; that\u2019s just how the game categorizes it.</li>\n</ul>\n<pre><code>{\n  \"enabled\": true,\n  \"remove\": {\n    \"weaponsPistols\": false,\n    \"weaponsShotguns\": false,\n    \"weaponsRevolvers\": true,\n    \"weaponsOthers\": true,\n    \"weaponsMelee\": true,\n    \"bodyArmor\": true,\n    \"armorPlates\": true,\n    \"helmets\": true,\n    \"faceCovers\": true,\n    \"eyewear\": true,\n    \"headsets\": true,\n    \"armbands\": true,\n    \"tacticalRigs\": true,\n    \"backpacks\": true,\n    \"throwables\": false,\n    \"weaponMods\": false,\n    \"magazines\": false,\n    \"secureContainers\": false,\n    \"ammo\": false\n  },\n  \"applyToFence\": true,\n  \"verboseLogging\": false\n}\n\n</code></pre>\n<hr />\n<h3>Compatibility</h3>\n<p>Should remove modded addition to existing trader assorts, as well as custom traders.</p>\n<hr />\n<h3>Support</h3>\n<p>Ideally open up a GitHub issue, or reach out to <code>liquidwarp</code> on the SPT or WTT Discord servers!</p>\n<hr />\n<h2>Installation</h2>\n<ol>\n<li>\n<p>Open the downloaded zip file.</p>\n</li>\n<li>\n<p>Drag the <code>SPT_Runtime</code> folder from the zip file into your SPT folder.</p>\n</li>\n</ol>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/34vXXDj.gif\" alt=\"\" /></p>\n",
+   "description_html": "<h2>If you want it, you gotta find it in a raid!</h2>\n<p>Removes weapons and gear offers from traders, including firearms, body armor, backpacks etc.</p>\n<p>By default, keeps pistols and shotguns so you at least have that available as a last resort.</p>\n<p>See the configuration section below to tune things to your liking; each item category can be enabled independently.</p>\n<p>Safe to add or remove on an existing profile \u2013 expect assorts to return to expected the next time the server starts.</p>\n<h2>Why?</h2>\n<p>Makes me use weapons and gear I wouldn\u2019t if I can just buy a better alternative from a levelled-up trader!\nIncluding the low durability stuff you\u2019d never touch that makes you <em>experience</em> malfunctions.</p>\n<p>Inspired by GAMMA\u2019s own restriction on traders.</p>\n<h2>Recommendations</h2>\n<h3>Obtaining modded items</h3>\n<p>If you install mods that add things this mod removes and you want to actually use them, I recommend using <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1594/apbs-acids-progressive-bot-system\" rel=\"noreferrer noopener\">APBS (Acid\u2019s Progressive Bot System)</a>, and configure it to allow bots to spawn with modded weapons and gear, so that you have a chance to loot it off them.</p>\n<p>And of course, the flea, if you use it.</p>\n<h3>Upping the stakes</h3>\n<p><em>No Gear?</em> works well with <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2965/ironman\" rel=\"noreferrer noopener\">Acid\u2019s Ironman</a> mod.</p>\n<hr />\n<h2>Configuration</h2>\n<p>Edit <code>SPT_Runtime/user/mods/liquidwarp-nogear/config.json</code> to select which categories of weapons and gear you want to remove from the traders.</p>\n<p>The mod release bundles the default config; don\u2019t forget to restore your changes after updating.</p>\n<ul>\n<li><code>weaponsOthers</code> is all firearms other than pistols, shotguns and revolvers.</li>\n<li>Note that the <code>weaponRevolvers</code> category also includes the MTs-255 revolver shotgun, and the M32A1 revolver grenade launcher; that\u2019s just how the game categorizes it.</li>\n</ul>\n<pre><code>{\n  \"enabled\": true,\n  \"remove\": {\n    \"weaponsPistols\": false,\n    \"weaponsShotguns\": false,\n    \"weaponsRevolvers\": true,\n    \"weaponsOthers\": true,\n    \"weaponsMelee\": true,\n    \"bodyArmor\": true,\n    \"armorPlates\": true,\n    \"helmets\": true,\n    \"faceCovers\": true,\n    \"eyewear\": true,\n    \"headsets\": true,\n    \"armbands\": true,\n    \"tacticalRigs\": true,\n    \"backpacks\": true,\n    \"throwables\": false,\n    \"weaponMods\": false,\n    \"magazines\": false,\n    \"secureContainers\": false,\n    \"ammo\": false\n  },\n  \"applyToFence\": true,\n  \"verboseLogging\": false\n}\n\n</code></pre>\n<hr />\n<h2>Compatibility</h2>\n<p>Should remove modded addition to existing trader assorts, as well as custom traders.</p>\n<hr />\n<h2>Support</h2>\n<p>Ideally open up a GitHub issue, or reach out to <code>liquidwarp</code> on the SPT or WTT Discord servers!</p>\n<hr />\n<h2>Installation</h2>\n<ol>\n<li>\n<p>Open the downloaded zip file.</p>\n</li>\n<li>\n<p>Drag the <code>SPT_Runtime</code> folder from the zip file into your SPT folder.</p>\n</li>\n</ol>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/34vXXDj.gif\" alt=\"\" /></p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/2O7cGvI73uxFhA3vq0xkzheZssKCa12bTQn0OsO5.jpg",
    "forge_url": "https://sp-mod.com/mod/2987/no-gear",
-   "downloads": 24,
+   "downloads": 63,
    "favourites": 1,
    "featured": false,
    "fika": false,
@@ -195779,7 +195791,7 @@
      "description": "<p>Initial release.</p>\n",
      "spt_constraint": "~4.1",
      "fika": "unknown",
-     "downloads": 24,
+     "downloads": 63,
      "size": 19243,
      "link": "https://sp-mod.com/mod/download/2987/no-gear/0.1.0",
      "published_at": "2026-09-03T13:58:00.000000Z",
@@ -195794,7 +195806,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-09-03T13:55:00.000000Z",
-   "updated_at": "2026-09-04T00:47:21.000000Z",
+   "updated_at": "2026-09-08T11:15:12.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
@@ -196557,8 +196569,8 @@
    "description_html": "<p>This mod creates a story line through a series of quests.</p>\n<p>You can unlock traders during <strong>Journey to T</strong>*** and obtain tickets after <strong>Fallen Stars</strong>.</p>\n<p>This mod also adds a new trader who provides the Story Quests. After completing the <strong>Final</strong>, you will receive the corresponding ending reward. Because of this, the <code>ibeatthegameiswear</code> code will be banned.</p>\n<p>After completing the <strong>Final</strong>, you can convert the mod\u2019s ticket items into the vanilla <strong>WTT-ContentBackPort</strong> items. If we get a Terminal mod in the future, these items may become useful.</p>\n<p>All quest have not any require for level or llr, but maybe you will wait for many hours to unlock next quest, this designed by B*G.</p>\n<h3>\u26a0\ufe0f About the Story</h3>\n<p><strong>This story is not a 1:1 recreation of the live version. It is my own adaptation and contains significant changes to the original story, settings, and events.</strong></p>\n<p>Please <strong>do not treat the story or lore presented in this mod as canon to the live version</strong>, and do not use this mod as a reference when discussing or interpreting the original story.</p>\n<p>The changes are intentional. This mod tells its own version of the story.</p>\n<p>for usage:</p>\n<p>unzip file and enter folder until you see <code>BepInEx</code> or <code>SPT_Runtime</code> or both of them, copy them into your game path(which include <code>EscapeFromTarkov.exe</code>)</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/M2mg3LLSxOOfmA0dYjW9jp08QCodcSTLylYuaibw.png",
    "forge_url": "https://sp-mod.com/mod/2998/original-story",
-   "downloads": 384,
-   "favourites": 5,
+   "downloads": 1030,
+   "favourites": 17,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -196586,12 +196598,80 @@
    ],
    "versions": [
     {
+     "id": 15286,
+     "version": "1.4.7",
+     "description": "<p>fixed a vanilla issues about handbook tag</p>\n<p>changed \u201cticket items\u201d \u2019s handbook tag</p>\n<p>no data change.</p>\n",
+     "spt_constraint": "~4.1.1",
+     "fika": "compatible",
+     "downloads": 4,
+     "size": 58458141,
+     "link": "https://sp-mod.com/mod/download/2998/original-story/1.4.7",
+     "published_at": "2026-09-08T11:19:00.000000Z",
+     "dependencies": [
+      {
+       "id": 2512,
+       "name": "WTT - Content Backport",
+       "slug": "wtt-content-backport",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2512/wtt-content-backport"
+      },
+      {
+       "id": 2937,
+       "name": "Manimal's 1.0 Labs Office Backport",
+       "slug": "manimals-10-labs-office-backport",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2937/manimals-10-labs-office-backport"
+      },
+      {
+       "id": 2997,
+       "name": "EternalCycle",
+       "slug": "eternalcycle",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2997/eternalcycle"
+      }
+     ]
+    },
+    {
+     "id": 15282,
+     "version": "1.4.6",
+     "description": "<p>fixed exit status issues make some quest cannot complete(knew Batya - 2 and Interlude - They Are Already Here)</p>\n<p>rework all exit status, make sure they are correct now</p>\n",
+     "spt_constraint": "~4.1.1",
+     "fika": "compatible",
+     "downloads": 90,
+     "size": 58457784,
+     "link": "https://sp-mod.com/mod/download/2998/original-story/1.4.6",
+     "published_at": "2026-09-08T08:31:00.000000Z",
+     "dependencies": [
+      {
+       "id": 2512,
+       "name": "WTT - Content Backport",
+       "slug": "wtt-content-backport",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2512/wtt-content-backport"
+      },
+      {
+       "id": 2937,
+       "name": "Manimal's 1.0 Labs Office Backport",
+       "slug": "manimals-10-labs-office-backport",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2937/manimals-10-labs-office-backport"
+      },
+      {
+       "id": 2997,
+       "name": "EternalCycle",
+       "slug": "eternalcycle",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2997/eternalcycle"
+      }
+     ]
+    },
+    {
      "id": 15265,
      "version": "1.4.5",
      "description": "<p>fixed a reward count display issues</p>\n<p>add Russian translate(AIGC)</p>\n",
      "spt_constraint": "~4.1.1",
      "fika": "compatible",
-     "downloads": 0,
+     "downloads": 545,
      "size": 58457792,
      "link": "https://sp-mod.com/mod/download/2998/original-story/1.4.5",
      "published_at": "2026-09-07T04:49:00.000000Z",
@@ -196625,7 +196705,7 @@
      "description": "<p>release on forge</p>\n",
      "spt_constraint": "~4.1.1",
      "fika": "compatible",
-     "downloads": 384,
+     "downloads": 391,
      "size": 58410826,
      "link": "https://sp-mod.com/mod/download/2998/original-story/1.4.4",
      "published_at": "2026-09-06T05:51:00.000000Z",
@@ -196654,7 +196734,7 @@
      ]
     }
    ],
-   "latest_version": "1.4.5",
+   "latest_version": "1.4.7",
    "spt_constraint": "~4.1.1",
    "all_spt_constraints": [
     "~4.1.1"
@@ -196706,7 +196786,7 @@
     }
    ],
    "published_at": "2026-09-06T05:49:00.000000Z",
-   "updated_at": "2026-09-07T04:51:04.000000Z",
+   "updated_at": "2026-09-08T11:21:04.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
@@ -197080,8 +197160,8 @@
    "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">SPT ESSENTIALS</div>\n<div class=\"tab-content\"><p>I built SPT Essentials as a modular collection of small quality-of-life improvements that are hard to give up once you have used them. It combines my own gameplay tweaks with carefully credited adaptations of two open-source mods and an independently made compact status display.</p>\n<p>I made every module optional. You can enable or disable each one in the <code>F12</code> configuration menu and keep only the parts that suit your game.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">WHAT IS INCLUDED</div>\n<div class=\"tab-content\"><ul>\n<li><strong>Field Repair</strong> adds the Field Armor Repair Kit. During a raid, drag it onto compatible damaged armor to repair it immediately. Outside raids, the normal repair screen is left alone.</li>\n<li><strong>Quickload Mag Saver</strong> tries to place the old magazine in a free rig, pocket or inventory grid during a quick reload. When there is no room, the magazine still drops as usual.</li>\n<li><strong>Raid Pause</strong> freezes a solo raid, including the raid timer and time of day. The default key is <code>Down Arrow</code>.</li>\n<li><strong>Smart Air Filter</strong> makes the Hideout air filter consume resources only while your PMC is in a raid.</li>\n<li><strong>Expanded Special Slots</strong> adds three more Special Slots and arranges all six in a compact grid. Active SVM custom pocket layouts are supported.</li>\n<li><strong>Compatibility Rules</strong> lets you extend item, container, Special Slot, weapon and attachment filters through one readable JSONC file.</li>\n<li><strong>Compact HUD</strong> shows total health, energy, hydration and grenades that are ready in your rig or pockets. It can be moved, scaled and arranged horizontally or vertically.\n<a target=\"_blank\" class=\"external-link\" href=\"https://postimg.cc/tn767QFQ\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.postimg.cc/SRffTmss/CHUD.png\" alt=\"CHUD.png\" /></a></li>\n</ul></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">INSTALLATION AND SETTINGS</div>\n<div class=\"tab-content\"><p>Copy the contents of the release into your main SPT folder and allow Windows to merge the folders.</p>\n<p>Press <code>F12</code> in game to enable or disable individual modules and adjust Raid Pause or Compact HUD. Compact HUD uses <code>F10</code> for edit mode and <code>F9</code> to restore its default position.</p>\n<p>Field Repair, Smart Air Filter, Expanded Special Slots and Compatibility Rules also change server-side behavior. Restart both the SPT server and the game after changing one of those switches.</p>\n<p>Compatibility rules live here:</p>\n<pre><code>SPT_Runtime/user/mods/SPTEssentials/config/compat/compatibility.jsonc\n</code></pre>\n<p>The file contains commented examples. Add your template IDs, keep <code>REPLACE</code> set to <code>false</code> unless you intentionally want to clear an existing filter, then restart SPT.</p>\n<p>If you previously installed my standalone Compact HUD, remove it before using SPT Essentials. I have included that functionality here, so running both versions would load it twice.</p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">LICENSE</div>\n<div class=\"tab-content\"><p>I release my contributions to SPT Essentials under the <a href=\"LICENSE\">MIT License</a>. You may use, modify and redistribute them as long as you keep the applicable copyright and license notices.</p>\n<p>Raid Pause and Smart Air Filter include adaptations of separately copyrighted MIT-licensed work. I preserve those original notices in <code>THIRD-PARTY-NOTICES.md</code> and the <code>licenses</code> folder. The permissions I received from netVnum and Utjan are also recorded there.</p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">CREDITS</div>\n<div class=\"tab-content\"><p>I adapted and reimplemented <strong>Raid Pause</strong> for SPT 4.1.5 based on the MIT-licensed <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/netvnum/Pause\" rel=\"noreferrer noopener\">Pause</a>, currently maintained by <strong>netVnum</strong> and originally created by <strong>swaffordm</strong>. My implementation uses the same underlying pause and timer-correction ideas, but I restructured it for SPT Essentials and the current game version. I also received explicit permission from <strong>netVnum</strong> to adapt and include Pause in SPT Essentials.</p>\n<p>I adapted and reimplemented <strong>Smart Air Filter</strong> for SPT 4.1.5 based on the MIT-licensed <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Utjan/AirFilterQOL\" rel=\"noreferrer noopener\">AirFilterQOL</a> and <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Utjan/SPTAirFilterQOLClientMod\" rel=\"noreferrer noopener\">SPTAirFilterQOLClientMod</a> by <strong>Utjan</strong>. My implementation follows their core approach of stopping air-filter drain outside a PMC raid and adds its own client-side safeguard. I also received explicit permission from <strong>Utjan</strong> to adapt and include this functionality in SPT Essentials. The AirFilterQOL license names <strong>Jehree</strong> as its copyright holder.</p>\n<p>I wrote <strong>Compact HUD</strong> independently as a lightweight take on the general HUD concept popularized by <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/kmyuhkyuk/GamePanelHUD\" rel=\"noreferrer noopener\">Game Panel HUD</a> by <strong>kmyuhkyuk</strong>. I did not copy, modify or distribute any Game Panel HUD code, assets, localization or dependencies.</p>\n<p>I include the applicable MIT notices for Pause and AirFilterQOL in <code>THIRD-PARTY-NOTICES.md</code> and the <code>licenses</code> folder. Field Repair, Quickload Mag Saver and the remaining SPT Essentials modules are my own implementations.</p>\n<blockquote>\n<p>INFO: I originally made Compact HUD primarily for my own use and never really intended to publish it. However, after seeing how popular <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/456/game-panel-hud\" rel=\"noreferrer noopener\">Game Panel HUD</a> by <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/4974/kmyuhkyuk\" rel=\"noreferrer noopener\">kmyuhkyuk</a> had become, I decided to share my smaller take on the idea. So there will be no new features in the future. Please no suggestions.</p>\n</blockquote>\n<blockquote>\n<p>Full credit for the original concept and inspiration goes to <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/4974/kmyuhkyuk\" rel=\"noreferrer noopener\">kmyuhkyuk</a>. Compact HUD is an independent implementation and contains no code or assets from Game Panel HUD. If development of the original mod resumes, I will discontinue active development of Compact HUD.</p>\n</blockquote></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">AI TRANSPARENCY</div>\n<div class=\"tab-content\"><p>Just to be completely open about it: I\u2019m not a trained software developer, and I don\u2019t understand every single part of the code yet. I\u2019m learning as I go.</p>\n<p>A large part of the code was implemented with the help of Codex. It also helps me find the right classes and APIs, read telemetry logs, track down bugs and work on the documentation.</p>\n<p>The idea behind the mod, its features, balancing, design decisions and the final say on what gets released all come from me. I don\u2019t simply take generated code and throw it into a release.</p>\n<p>New features are tested in-game, checked through logs and, whenever something is unclear, compared against the public SPT source code. If something cannot be properly verified or tested, it gets put aside for later.</p>\n<p>That doesn\u2019t mean mistakes can\u2019t happen, especially while I\u2019m still learning. At the end of the day, though, I\u2019m responsible for the mod I publish and for the decisions made along the way, not the tool I used to help build it.</p>\n<p>I know that AI-assisted mods are a touchy subject in parts of the community, and I understand why. That\u2019s exactly why I want to be honest about how AI was used here.</p>\n<p>The source code is publicly available, and constructive code reviews, specific suggestions and reproducible bug reports are always welcome.</p></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">SUPPORT ME</div>\n<div class=\"tab-content\"><p>If you enjoy my work and want to support it, you can find me on <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/not_senze\" rel=\"noreferrer noopener\">Ko-fi</a>.</p></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/HQalCx2O3zcFADx0X4O15WvqGVnGv8aGJiJK5Q5t.png",
    "forge_url": "https://sp-mod.com/mod/3003/spt-essentials",
-   "downloads": 95,
-   "favourites": 2,
+   "downloads": 273,
+   "favourites": 3,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -197109,19 +197189,31 @@
    ],
    "versions": [
     {
+     "id": 15285,
+     "version": "1.0.1",
+     "description": "<p>Fixed transit bug</p>\n",
+     "spt_constraint": "~4.1.5",
+     "fika": "unknown",
+     "downloads": 49,
+     "size": 47334,
+     "link": "https://sp-mod.com/mod/download/3003/spt-essentials/1.0.1",
+     "published_at": "2026-09-08T09:06:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 15271,
      "version": "1.0.0",
      "description": "<p>Initial release</p>\n",
      "spt_constraint": "~4.1.5",
      "fika": "unknown",
-     "downloads": 95,
+     "downloads": 224,
      "size": 46410,
      "link": "https://sp-mod.com/mod/download/3003/spt-essentials/1.0.0",
      "published_at": "2026-09-07T18:18:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.0.0",
+   "latest_version": "1.0.1",
    "spt_constraint": "~4.1.5",
    "all_spt_constraints": [
     "~4.1.5"
@@ -197129,11 +197221,81 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-09-07T18:25:00.000000Z",
-   "updated_at": "2026-09-07T20:08:39.000000Z",
+   "updated_at": "2026-09-08T09:08:04.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
     "ai_disclosure": "<p>Read more in the mod description.</p>\n",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 3005,
+   "hub_id": null,
+   "guid": "wozzy.spt.traderlevelrequirementseditor",
+   "name": "Trader Level Requirements Editor",
+   "slug": "trader-level-requirements-editor",
+   "teaser": "Let's you alter the level requirements for SPT's traders",
+   "description_html": "<p>A very small mod I created to customize trader loyalty level requirements since you\u2019re no longer able to play with modified SPT data files. I feel leveling traders in SPT happens too quickly with how minimal the requirements are and how easy it is to make shmoney.</p>\n<p>The config consists of three properties: \u201cminLevel\u201d, \u201cminSalesSum\u201d, and \u201cminStanding\u201d. They\u2019re currently set to vanilla SPT\u2019s values. I excluded ones like \u201cbuy_price_coef\u201d, and \u201cheal_price_coef\u201d due to these of obviously not being relevant as well as such things being modifiable via SVM.</p>\n<p>I didn\u2019t encounter any issues during my little bit of testing with my mod list of 59 mods. While I don\u2019t see how this could cause any issues, please let me know if you run into any.</p>\n<p>Also: don\u2019t add modded traders to the config. You can but It\u2019s just unnecessary\u2014just make your changes directly in whatever trader mod(s) you\u2019re using.</p>\n<p>Installing is the same as every other server mod: extract the \u201cTraderLevelRequirementsEditor\u201d folder into  SPT_Runtime/user/mods</p>\n<p>I need to learn formatting\u2026</p>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/b22isnT7w8cYrk7O0AiC0WTGsNWd30gHjC43ixux.png",
+   "forge_url": "https://sp-mod.com/mod/3005/trader-level-requirements-editor",
+   "downloads": 1,
+   "favourites": 0,
+   "featured": false,
+   "fika": false,
+   "fika_latest": "unknown",
+   "category": {
+    "id": 16,
+    "title": "Traders",
+    "slug": "traders"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 76747,
+     "name": "wozzy",
+     "avatar": "https://files.sp-mod.com/profile-photos/rkOLoTaBjhvNSDlvTEmuvwIoCwiylyZokhguywPo_256w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/wozzypozzy/TraderLevelRequirementsEditor",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 15287,
+     "version": "1.0.0",
+     "description": "<p>Initial release</p>\n",
+     "spt_constraint": "~4.1",
+     "fika": "unknown",
+     "downloads": 1,
+     "size": 6264,
+     "link": "https://sp-mod.com/mod/download/3005/trader-level-requirements-editor/1.0.0",
+     "published_at": "2026-09-08T11:27:00.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "1.0.0",
+   "spt_constraint": "~4.1",
+   "all_spt_constraints": [
+    "~4.1"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-09-08T11:27:00.000000Z",
+   "updated_at": "2026-09-08T11:28:04.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
     "cheat_notice": false,
     "profile_binding_notice": false
    },
