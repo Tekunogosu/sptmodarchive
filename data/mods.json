@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-09T23:20:23Z",
+ "generated_at": "2026-09-10T04:52:52Z",
  "source": "https://sp-mod.com",
  "filter": "all",
  "mod_count": 1941,
@@ -17726,8 +17726,8 @@
    "description_html": "<h2>Mod Compatibility</h2>\n<p><strong>REQUIRES:</strong></p>\n<ul>\n<li><strong><a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/1119-waypoints-expanded-bot-patrols-and-navmesh/\" rel=\"noreferrer noopener\">Waypoints</a> (1.9.0 or later)</strong></li>\n<li>If you use <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2326/project-fika\" rel=\"noreferrer noopener\">Fika</a>, an additional plugin is required: <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/addon/102/late-to-the-party-fika-sync-add-on\" rel=\"noreferrer noopener\">Late to the Party - Fika Sync Add-on</a></li>\n</ul>\n<p><strong>Partially compatible with:</strong></p>\n<ul>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1923/lockable-doors\" rel=\"noreferrer noopener\">Lockable Doors</a> (loot may despawn behind doors you lock during the raid)</li>\n</ul>\n<p>If you use both <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1109/questing-bots\" rel=\"noreferrer noopener\">Questing Bots</a> and <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/812/looting-bots\" rel=\"noreferrer noopener\">Looting Bots</a>, setting <code>only\\_make\\_changes\\_just\\_after\\_spawning.enabled=true</code> in <em>config.json</em> is highly recommended. This change is also recommended if you use <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2706/orbit\" rel=\"noreferrer noopener\">ORBIT</a>.</p>\n<h2>Mod Overview</h2>\n<p>This mod makes the the following changes to your SPT experience:</p>\n<ul>\n<li>Loot (including on dead bots) will be gradually removed throughout the raid to simulate other players taking it.</li>\n<li>Doors will randomly open and close throughout the raid to simulate players moving through the map (thanks to help from <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/27605/drakiaxyz\" rel=\"noreferrer noopener\">DrakiaXYZ</a>!). If you\u2019re lucky, locked doors may be opened for you\u2026</li>\n<li>Switches will be toggled throughout the raid to simulate players turning on power switches, using extracts, etc.</li>\n<li>The car extract may leave at some point during the raid</li>\n<li>If you spawn into the map late as a Scav, bosses are less likely to spawn.</li>\n</ul>\n<h2>Mod Configuration Options</h2>\n<p>This mod is highly customizable by modifying the <em>config.json</em> file. Please see descriptions of all configuration options here: <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/dwesterwick/SPTLateToTheParty\" rel=\"noreferrer noopener\">Late to the Party Github Repo</a></p>\n<p>If you\u2019re using this mod along with <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/642/immersive-raids\" rel=\"noreferrer noopener\">Kobrakon\u2019s Immersive Raids</a> or similar mods that significantly increase raid times, please change the following in <em>config.json</em>:</p>\n<ul>\n<li><code>destroy\\_loot\\_during\\_raid.max\\_time\\_without\\_destroying\\_any\\_loot</code> to any value you want. This is the frequency (in seconds) at which an item is removed from the map. If this value is small and you stay in the raid for a long time, you\u2019ll eventually have no more loot on the map.</li>\n</ul>\n<h2>Known Issues</h2>\n<ul>\n<li>Any locked door on the map is equally likely to be opened, including those locked with rare keys and those nobody ever really opens/closes in live T*****.</li>\n<li>Some doors and switches will be toggled in an illogical (or impossible) order, especially in the starting areas on Labyrinth.</li>\n<li>If <code>destroy\\_loot\\_during\\_raid.check\\_loot\\_accessibility.enabled=false</code>, loot can be despawned behind locked doors or in locked containers. If <code>destroy\\_loot\\_during\\_raid.check\\_loot\\_accessibility.enabled=true</code>, some loot is falsely considered inaccessible and will never be despawned.</li>\n<li>If you approach the car extract without taking it and this mod instructs it to leave later in the raid, you\u2019ll see the countdown timer when you check your extracts.</li>\n</ul>\n",
    "thumbnail": "https://files.sp-mod.com/mods/1099.jpg",
    "forge_url": "https://sp-mod.com/mod/814/late-to-the-party",
-   "downloads": 45864,
-   "favourites": 6,
+   "downloads": 46555,
+   "favourites": 18,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -17755,12 +17755,32 @@
    ],
    "versions": [
     {
+     "id": 15312,
+     "version": "3.1.1",
+     "description": "<ul>\n<li>Bug fix for some loot occasionally despawning at the start of the raid when <code>only_make_changes_just_after_spawning.enabled=true</code></li>\n<li>Show number of loot items despawned in \u201cInitial loot has been destroyed\u201d console logging message</li>\n</ul>\n<p><em>config.json</em> files from previous releases cannot be reused for this bug fix to work.</p>\n",
+     "spt_constraint": "~4.1.0",
+     "fika": "compatible",
+     "downloads": 4,
+     "size": 80028,
+     "link": "https://sp-mod.com/mod/download/814/late-to-the-party/3.1.1",
+     "published_at": "2026-09-10T04:26:00.000000Z",
+     "dependencies": [
+      {
+       "id": 827,
+       "name": "Waypoints - Expanded Navmesh",
+       "slug": "waypoints-expanded-navmesh",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/827/waypoints-expanded-navmesh"
+      }
+     ]
+    },
+    {
      "id": 14942,
      "version": "3.1.0",
      "description": "<ul>\n<li>Updated to SPT 4.1</li>\n<li>Increased required version of <a target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/827/waypoints-expanded-navmesh\" rel=\"noreferrer noopener\">Waypoints</a> to 1.9.0</li>\n<li>Added option in <em>config.json</em> to disable parallel processing when generating loot-ranking data for debugging (~5X slower on my PC)</li>\n<li>Improved mod version compatibility checks</li>\n</ul>\n<p><em>config.json</em> files from the 3.0.0 and newer releases are compatible, but <code>destroy_loot_during_raid.loot_ranking.use_parallel_processing</code> will always be <code>true</code>.</p>\n",
      "spt_constraint": "~4.1.0",
      "fika": "compatible",
-     "downloads": 14,
+     "downloads": 595,
      "size": 79939,
      "link": "https://sp-mod.com/mod/download/814/late-to-the-party/3.1.0",
      "published_at": "2026-08-24T02:40:00.000000Z",
@@ -17780,7 +17800,7 @@
      "description": "<p>Compatible with SPT 4.0.x.</p>\n<p>Changes from the 3.0.0 release:</p>\n<ul>\n<li>Made Fika sync plugin compatible with all builds within the same minor version (i.e. 3.0.0 through 3.0.999)</li>\n<li>Bug fix for infinite loop when generating loot-ranking data while using certain mods</li>\n<li>Bug fix for redundant attachments being added to new presets when incompatibilities are found during loot-ranking data generation</li>\n</ul>\n<p><em>config.json</em> files from the 3.0.0 release are compatible.</p>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 147,
+     "downloads": 251,
      "size": 80056,
      "link": "https://sp-mod.com/mod/download/814/late-to-the-party/3.0.1",
      "published_at": "2026-08-16T03:49:00.000000Z",
@@ -17820,7 +17840,7 @@
      "description": "<ul>\n<li>Bug fix for infinite exceptions when trying to find compatible attachments for weapons/mods that have invalid template ID\u2019s (added by other mods)</li>\n</ul>\n<p><em>config.json</em> files from the 2.3.1 through 2.9.1 releases are compatible, but several options no longer do anything and toggle_switches_during_raid.exclusion_radius will be too high</p>\n",
      "spt_constraint": "~3.11.0",
      "fika": "unknown",
-     "downloads": 4690,
+     "downloads": 4691,
      "size": null,
      "link": "https://sp-mod.com/mod/download/814/late-to-the-party/2.9.2",
      "published_at": "2025-06-25T14:52:12.000000Z",
@@ -17856,7 +17876,7 @@
      "description": "<ul>\n<li>Updated to SPT 3.9.0</li>\n</ul>\n<p><em>config.json</em> files from the 2.3.1 through 2.5.1 releases are compatible, but you\u2019ll receive warning messages in the server console about trader-inventory changes being disabled.</p>\n",
      "spt_constraint": "3.9.0",
      "fika": "unknown",
-     "downloads": 4304,
+     "downloads": 4305,
      "size": null,
      "link": "https://sp-mod.com/mod/download/814/late-to-the-party/2.6.0",
      "published_at": "2024-07-08T17:21:22.000000Z",
@@ -17959,7 +17979,7 @@
      "dependencies": []
     }
    ],
-   "latest_version": "3.1.0",
+   "latest_version": "3.1.1",
    "spt_constraint": "~4.1.0",
    "all_spt_constraints": [
     "3.11.2",
@@ -17991,7 +18011,7 @@
     }
    ],
    "published_at": "2023-03-27T02:30:00.000000Z",
-   "updated_at": "2026-08-24T02:42:05.000000Z",
+   "updated_at": "2026-09-10T04:28:06.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -197647,11 +197667,11 @@
    "name": "Breakout Outlines",
    "slug": "breakout-outlines",
    "teaser": "Highlight any loot, containers and dead bodies with Breakout-Like style.",
-   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Overview</div>\n<div class=\"tab-content\"><p>Inspired by ABI (Arena Breakout Infinite), Breakout Outlines highlight any loot in vicinity, including dead bodies, and containers, or dropped items.</p>\n<p>It is highly configurable and offers color configuration, distance to start rendering outlines, vis checks and much more (See BepInEx config). <strong>Before writing about issues, please look at \u201cKnown Issues\u201d tab.</strong></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/harmonyzt/BreakoutOutline/blob/master/Media/3.gif?raw=true\" alt=\"Outlines\" /></p>\n<h3>Props and thanks to <strong>20fpsguy</strong> for letting me to take over!</h3></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Known Issues</div>\n<div class=\"tab-content\"><ul>\n<li>On rare occasions due geometry, the containers/body or loot might not outline, even if it\u2019s in line of sight.</li>\n<li>In very dense areas of loot/containers/bodies AND specific system hardware, there might be a noticeable FPS drop/stutter. Always use mods configuration to set limits on how much objects you want to draw outlines at once.</li>\n<li>Supersampling is not supported and there are no plans for it.</li>\n<li><del>If you get too close to the item/container/body, the outline might disappear.</del></li>\n<li><del>Outlines with NVGs equipped will bleed on the edges (have very big glow/bloom effect).</del></li>\n</ul>\n<p>PRs are welcome!</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">More Previews</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/harmonyzt/BreakoutOutline/blob/master/Media/2.png?raw=true\" alt=\"Outlines\" />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/harmonyzt/BreakoutOutline/blob/master/Media/1.png?raw=true\" alt=\"Outlines\" />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/harmonyzt/BreakoutOutline/blob/master/Media/3.jpg?raw=true\" alt=\"Outlines\" /></p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Installation</div>\n<div class=\"tab-content\"><p>Drag and drop 7z contents in your root directory of SPT game.</p></div></div></div>\n",
+   "description_html": "<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/harmonyzt/BreakoutOutline/blob/master/Media/preview2.png?raw=true\" alt=\"Outlines\" /></p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Overview</div>\n<div class=\"tab-content\"><p>Inspired by ABI (Arena Breakout Infinite), Breakout Outlines highlight any loot in vicinity, including dead bodies, and containers, or dropped items.</p>\n<p>It is highly configurable and offers color configuration, distance to start rendering outlines, vis checks and much more (See BepInEx config). <strong>Before writing about issues, please look at \u201cKnown Issues\u201d tab.</strong></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/harmonyzt/BreakoutOutline/blob/master/Media/3.gif?raw=true\" alt=\"Outlines\" /></p>\n<h3>Props and thanks to <strong>20fpsguy</strong> for letting me to take over!</h3></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Config</div>\n<div class=\"tab-content\"><h3>Breakout Outlines offers:</h3>\n<ul>\n<li>Global switch for a mod: simple as is. Also comes with a hotkey for toggling it on and off. Default is <strong>F6</strong>.</li>\n<li><strong>\u201cOutline Loose Items\u201d</strong>: Also does what it says. Will outline loose loot such as items or dropped items. <strong>Enabled</strong> by default.</li>\n<li><strong>\u201cOutline Containers\u201d</strong>: Will outline any containers it can. Bags, boxes, safes, drawers. <strong>Enabled</strong> by default.</li>\n<li><strong>\u201cOutline Empty Containers\u201d</strong>: Tells the mod to outline all containers, regardless of the loot inside. <strong>Disabled</strong> by default.</li>\n<li><strong>\u201cDraw Dead Bodies\u201d</strong>: Will outline dead bodies, if enabled. <strong>Enabled</strong> by default.</li>\n<li><strong>Item and Container Colors, Outline Width</strong>: Lets you customize both loose loot and container outline colors, as well as thickness of an outline. Supports alpha channel. Can be interrupted by <strong>\u201cLimit Opacity With Night Vision\u201d</strong></li>\n<li><strong>\u201cHide Searched Containers\u201d</strong>: Once container is searched (regardless of you discovering items), the outline will disappear for that container. <strong>Enabled</strong> by default.</li>\n<li><strong>\u201cLimit Opacity With Night Vision\u201d</strong>: A safe guard that will prevent bleeding edges of outlines (bloom, intense glowing/flicker of outline) whenever having NVGs equipped. If user alpha value of loot/container is higher than 0.5, it will fall back to 0.5 respectively. Works only with NVGs active and favors the config values. <strong>Enabled</strong> by default.</li>\n<li><strong>\u201cDraw Range\u201d</strong>: At which distance you want outlines to start rendering. Containers and items will always slowly fade from the distance while you approach it. Set to <strong>5.5 meters</strong> by default.</li>\n<li><strong>\u201cLine of Sight Check\u201d</strong>: Enable to hide outlines for items, containers and bodies so outlines don\u2019t bleed through floors and walls. Turn OFF to see every outline through everything. <strong>Enabled</strong> by default.</li>\n<li><strong>\u201cMax Outlined Objects\u201d</strong>: Determines how many objects will be outlined at once - the nearest N (items, containers and bodies combined). 0 = unlimited. Set to <strong>25 outlines</strong> by default.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Known Issues</div>\n<div class=\"tab-content\"><ul>\n<li>On rare occasions due geometry, the containers/body or loot might not outline, even if it\u2019s in line of sight.</li>\n<li>In very dense areas of loot/containers/bodies AND specific system hardware, there might be a noticeable FPS drop/stutter. Always use mods configuration to set limits on how much objects you want to draw outlines at once.</li>\n<li>Supersampling is not supported and there are no plans for it.</li>\n<li><del>If you get too close to the item/container/body, the outline might disappear.</del></li>\n<li><del>Outlines with NVGs equipped will bleed on the edges (have very big glow/bloom effect).</del></li>\n</ul>\n<p>PRs are welcome!</p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">More Previews</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/harmonyzt/BreakoutOutline/blob/master/Media/2.png?raw=true\" alt=\"Outlines\" />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/harmonyzt/BreakoutOutline/blob/master/Media/1.png?raw=true\" alt=\"Outlines\" />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/harmonyzt/BreakoutOutline/blob/master/Media/3.jpg?raw=true\" alt=\"Outlines\" /></p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Installation</div>\n<div class=\"tab-content\"><p>Drag and drop 7z contents in your root directory of SPT game.</p></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/QquHtvVuXXvRCBch61Gi9UlvOUOB3KVc6uZCfVzl.png",
    "forge_url": "https://sp-mod.com/mod/3007/breakout-outlines",
-   "downloads": 705,
-   "favourites": 13,
+   "downloads": 810,
+   "favourites": 15,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -197689,7 +197709,7 @@
      "description": "<h3>This version <strong>REQUIRES</strong> a full reinstall (Read below).</h3>\n<ul>\n<li>Added option to hide outlines of already looted containers, on by default.</li>\n<li>Added option to hard cap alpha of loose loot/containers if player has NVGs on.</li>\n<li>Added a global toggle for outlines to show, or hide.</li>\n<li>Added option to outline containers with no loot.</li>\n<li>Improved/Added caching in some places.</li>\n<li>Fixed outlines disappearing if player gets too close to the container/loose loot.</li>\n<li>Fixed outlines disappearing if using DLSS/FSR/Downsampling (supersampling is not supported).</li>\n<li>Many other niche fixes.</li>\n</ul>\n<h3>How to reinstall?</h3>\n<ol>\n<li>Navigate to <code>BepInEx/plugins/</code></li>\n<li>Find <code>BreakoutOutline</code></li>\n<li>Delete it</li>\n<li>Install the new version</li>\n</ol>\n",
      "spt_constraint": "~4.1.5",
      "fika": "compatible",
-     "downloads": 79,
+     "downloads": 183,
      "size": 39479,
      "link": "https://sp-mod.com/mod/download/3007/breakout-outlines/1.1.0",
      "published_at": "2026-09-09T20:50:00.000000Z",
@@ -197701,7 +197721,7 @@
      "description": "<ul>\n<li>Initial release</li>\n</ul>\n",
      "spt_constraint": "~4.1.5",
      "fika": "compatible",
-     "downloads": 626,
+     "downloads": 627,
      "size": 37615,
      "link": "https://sp-mod.com/mod/download/3007/breakout-outlines/1.0.0",
      "published_at": "2026-09-08T17:24:00.000000Z",
@@ -197716,7 +197736,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-09-08T17:24:00.000000Z",
-   "updated_at": "2026-09-09T22:22:39.000000Z",
+   "updated_at": "2026-09-10T02:18:19.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
