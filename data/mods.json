@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-09-10T23:14:25Z",
+ "generated_at": "2026-09-11T04:49:46Z",
  "source": "https://sp-mod.com",
  "filter": "all",
- "mod_count": 1945,
+ "mod_count": 1946,
  "categories": [
   {
    "id": 12,
@@ -70138,11 +70138,11 @@
    "name": "sgtlaggy's Quest Tweaks",
    "slug": "sgtlaggys-quest-tweaks",
    "teaser": "Some QoL quest changes.",
-   "description_html": "<p>\u26a0\ufe0f Removing this mod should be safe but there may be lingering effects applied to in-progress quests.</p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">QOL Settings</div>\n<div class=\"tab-content\"><h3>Reveal All Quest Objectives</h3>\n<p>\u26a0\ufe0f <strong>This may lead to completing objectives out of order, Survive and Extract can be completed before the normally prerequisite objectives. Any currently active quests will have their objectives still revealed if the setting is disabled or mod is removed.</strong></p>\n<p>Reveal all objectives that are hidden by default and only show up after completing other objectives.</p>\n<p>One example is <a target=\"_blank\" class=\"external-link\" href=\"https://escapefromtarkov.fandom.com/wiki/Broadcast_-_Part_1\" rel=\"noreferrer noopener\">Broadcast - Part 1</a>, the objective to place the Signal Jammer doesn\u2019t appear until you\u2019ve entered the room.</p>\n<h3>Reveal Unknown Quest Rewards</h3>\n<p>Replace all \u201cUnknown Reward\u201d quest rewards with the actual items.</p>\n<h3>Remove Time Gates</h3>\n<p>Remove waiting periods after some quests like Gunsmith.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Conditions</div>\n<div class=\"tab-content\"><h3>Remove Tedious Conditions</h3>\n<p>\u2139\ufe0f This is similar to <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/336/kiki-removetediousquestconditions\" rel=\"noreferrer noopener\">kiki-RemoveTediousQuestConditions</a>.</p>\n<p>The following objective conditions can be removed.\nAny marked with \ud83d\udd03 also will also apply to repeatable quests by default.</p>\n<ul>\n<li>\ud83d\udd03 Elimination target (PMC, scav, boss, etc)</li>\n<li>\ud83d\udd03 Weapon and mods</li>\n<li>Equipment</li>\n<li>Health/status effects (stun, dehydration)</li>\n<li>\ud83d\udd03 Body parts</li>\n<li>\ud83d\udd03 Distance</li>\n<li>Time</li>\n<li>Map/location</li>\n<li>Zone\n<ul>\n<li>Removing zone but not map conditions will expand it to the map.</li>\n</ul>\n</li>\n<li>\ud83d\udd03 Item found-in-raid status</li>\n</ul>\n<p>An additional setting toggles whether these also apply to repeatable quests.</p>\n<p>Each of these options can be overridden for individual quests using the <code>questOverrides</code> setting.\nIt should be in the format <code>{\"questId\": {\"option\": true, \"otherOption\": false}}</code>, using the option names in <code>removeConditions</code> for reference. These will always be handled regardless of <code>onlyQuests</code> and <code>exemptQuests</code>.</p>\n<p>As an example, to backport the expansion of <a target=\"_blank\" class=\"external-link\" href=\"https://escapefromtarkov.fandom.com/wiki/Forester%27s_Duty\" rel=\"noreferrer noopener\">Forester\u2019s Duty</a>, you could set <code>{\"66ab9da7eb102b9bcd08591c\": {\"zone\": true}}</code> and this would leave other zones like Capturing Outposts intact.</p>\n<p>The <code>onlyQuests</code> setting lets you specify an exclusive list of quests that will be modified.</p>\n<p>The <code>exemptQuests</code> setting lets you specify a list of quests that will be skipped entirely.</p>\n<p>Quest IDs for these settings can be found using <a target=\"_blank\" class=\"external-link\" href=\"https://tarkynator.com/quests?scope=global\" rel=\"noreferrer noopener\">Tarkynator</a>. For example, the ID of the dehydration quest \u201cThe Survivalist Path - Zhivchik\u201d is <code>5d25bfd086f77442734d3007</code>. This can be added to lists like <code>[\"5d25bfd086f77442734d3007\"]</code>. To add multiple quests, add a comma between IDs like <code>[\"...\", \"...\"]</code>.</p>\n<p>Modded quests can also be added. Their quest IDs can be found in some file in their own mod folder in <code>user/mods</code> or, if they use VCQL, <code>user/mods/Virtual's Custom Quest Loader/database/locales/en/THAT_MOD.json</code>.</p>\n<p>To set overrides for repeatable quests use <code>615ffc701c97c768137e719b</code> for PMC dailies, <code>618035d38012292db3081bf0</code> for weeklies, and <code>62825ef60e88d037dc1eb426</code> for scav dailies.</p>\n<h3>Set Number For Eliminations and Items to Hand Over</h3>\n<p>These options will set a percent of original value or flat value across the board for all quests to use when requiring kills or item turn-ins, respected by \u2018exemptQuests\u2018 list.</p>\n<p>The item setting does not apply to quest items like the Bronze Pocket Watch or keys/keycards.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Special Cases</div>\n<div class=\"tab-content\"><h3>Only Require Level to start Lightkeeper</h3>\n<p>\u2139\ufe0f This is the same feature provided by <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1521/lightkeeper-questline-patch\" rel=\"noreferrer noopener\">Lightkeeper Questline Patch</a>.</p>\n<p>This option will remove all the prerequisite quests to start <code>Network Provider - Part 1</code> and will only require a specific level. A value of <code>0</code> will disable this feature and leave the prerequisites in place.</p>\n<h3>Add Sako TRG M10 to Tushonka Shooter 1-6</h3>\n<p>B** only added it to 7 and 8, this option makes it work for 1-6 as well.</p>\n<h3>Backport Collector Prerequisites from EFT 1.1.0.0</h3>\n<p>This will completely replace the prerequisites, so is incompatible with other mods such as <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1675/start-collector-early\" rel=\"noreferrer noopener\">Start Collector Early</a> but should be compatible with <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2615/updated-collector-quest-and-streamer-case-eft-10-backport\" rel=\"noreferrer noopener\">Updated collector quest and streamer case</a>.</p>\n<p>New prerequisites:</p>\n<ul>\n<li>Loyalty level 4\ud83d\udc51 Prapor</li>\n<li>Loyalty level 4\ud83d\udc51 Therapist</li>\n<li>Loyalty level 4\ud83d\udc51 Skier</li>\n<li>Loyalty level 4\ud83d\udc51 Peacekeeper</li>\n<li>Loyalty level 4\ud83d\udc51 Mechanic</li>\n<li>Loyalty level 4\ud83d\udc51 Ragman</li>\n<li>Loyalty level 4\ud83d\udc51 Jaeger</li>\n<li>Fence reputation 3+</li>\n<li>PMC Level 40</li>\n<li>A Shooter Born in Heaven</li>\n<li>The Tushonka Shooter - Part 4</li>\n<li>Sew It Good - Part 4</li>\n<li>Chemical - Part 4 OR Big Customer OR Out of Curiosity</li>\n</ul></div></div></div>\n",
+   "description_html": "<p>\u26a0\ufe0f Removing this mod should be safe but there may be lingering effects applied to in-progress quests.</p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">QOL Settings</div>\n<div class=\"tab-content\"><h3>Reveal All Quest Objectives</h3>\n<p>\u26a0\ufe0f <strong>This may lead to completing objectives out of order, Survive and Extract can be completed before the normally prerequisite objectives. Any currently active quests will have their objectives still revealed if the setting is disabled or mod is removed.</strong></p>\n<p>Reveal all objectives that are hidden by default and only show up after completing other objectives.</p>\n<p>One example is <a target=\"_blank\" class=\"external-link\" href=\"https://escapefromtarkov.fandom.com/wiki/Broadcast_-_Part_1\" rel=\"noreferrer noopener\">Broadcast - Part 1</a>, the objective to place the Signal Jammer doesn\u2019t appear until you\u2019ve entered the room.</p>\n<h3>Reveal Unknown Quest Rewards</h3>\n<p>Replace all \u201cUnknown Reward\u201d quest rewards with the actual items.</p>\n<h3>Remove Time Gates</h3>\n<p>Remove waiting periods after some quests like Gunsmith.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Conditions</div>\n<div class=\"tab-content\"><h3>Remove Tedious Conditions</h3>\n<p>\u2139\ufe0f This is similar to <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/336/kiki-removetediousquestconditions\" rel=\"noreferrer noopener\">kiki-RemoveTediousQuestConditions</a>.</p>\n<p>The following objective conditions can be removed.\nAny marked with \ud83d\udd03 also will also apply to repeatable quests by default.</p>\n<ul>\n<li>\ud83d\udd03 Elimination target (PMC, scav, boss, etc)</li>\n<li>\ud83d\udd03 Weapon and mods</li>\n<li>Equipment</li>\n<li>Health/status effects (stun, dehydration)</li>\n<li>\ud83d\udd03 Body parts</li>\n<li>\ud83d\udd03 Distance</li>\n<li>Time</li>\n<li>Map/location</li>\n<li>Zone\n<ul>\n<li>Removing zone but not map conditions will expand it to the map.</li>\n</ul>\n</li>\n<li>\ud83d\udd03 Item found-in-raid status</li>\n</ul>\n<p>An additional setting toggles whether these also apply to repeatable quests.</p>\n<p>Each of these options can be overridden for individual quests using the <code>questOverrides</code> setting.\nIt should be in the format <code>{\"questId\": {\"option\": true, \"otherOption\": false}}</code>, using the option names in <code>removeConditions</code> for reference. These will always be handled regardless of <code>onlyQuests</code> and <code>exemptQuests</code>.</p>\n<p>As an example, to backport the expansion of <a target=\"_blank\" class=\"external-link\" href=\"https://escapefromtarkov.fandom.com/wiki/Forester%27s_Duty\" rel=\"noreferrer noopener\">Forester\u2019s Duty</a>, you could set <code>{\"66ab9da7eb102b9bcd08591c\": {\"removeZone\": true}}</code> and this would leave other zones like Capturing Outposts intact.</p>\n<p>The <code>onlyQuests</code> setting lets you specify an exclusive list of quests that will be modified.</p>\n<p>The <code>exemptQuests</code> setting lets you specify a list of quests that will be skipped entirely.</p>\n<p>Quest IDs for these settings can be found using <a target=\"_blank\" class=\"external-link\" href=\"https://tarkynator.com/quests?scope=global\" rel=\"noreferrer noopener\">Tarkynator</a>. For example, the ID of the dehydration quest \u201cThe Survivalist Path - Zhivchik\u201d is <code>5d25bfd086f77442734d3007</code>. This can be added to lists like <code>[\"5d25bfd086f77442734d3007\"]</code>. To add multiple quests, add a comma between IDs like <code>[\"...\", \"...\"]</code>.</p>\n<p>Modded quests can also be added. Their quest IDs can be found in some file in their own mod folder in <code>user/mods</code> or, if they use VCQL, <code>user/mods/Virtual's Custom Quest Loader/database/locales/en/THAT_MOD.json</code>.</p>\n<p>To set overrides for repeatable quests use <code>615ffc701c97c768137e719b</code> for PMC dailies, <code>618035d38012292db3081bf0</code> for weeklies, and <code>62825ef60e88d037dc1eb426</code> for scav dailies.</p>\n<h3>Set Number For Eliminations and Items to Hand Over</h3>\n<p>These options will set a percent of original value or flat value across the board for all quests to use when requiring kills or item turn-ins, respected by \u2018exemptQuests\u2018 list.</p>\n<p>The item setting does not apply to quest items like the Bronze Pocket Watch or keys/keycards.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Special Cases</div>\n<div class=\"tab-content\"><h3>Only Require Level to start Lightkeeper</h3>\n<p>\u2139\ufe0f This is the same feature provided by <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1521/lightkeeper-questline-patch\" rel=\"noreferrer noopener\">Lightkeeper Questline Patch</a>.</p>\n<p>This option will remove all the prerequisite quests to start <code>Network Provider - Part 1</code> and will only require a specific level. A value of <code>0</code> will disable this feature and leave the prerequisites in place.</p>\n<h3>Add Sako TRG M10 to Tushonka Shooter 1-6</h3>\n<p>B** only added it to 7 and 8, this option makes it work for 1-6 as well.</p>\n<h3>Backport Collector Prerequisites from EFT 1.1.0.0</h3>\n<p>This will completely replace the prerequisites, so is incompatible with other mods such as <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1675/start-collector-early\" rel=\"noreferrer noopener\">Start Collector Early</a> but should be compatible with <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2615/updated-collector-quest-and-streamer-case-eft-10-backport\" rel=\"noreferrer noopener\">Updated collector quest and streamer case</a>.</p>\n<p>New prerequisites:</p>\n<ul>\n<li>Loyalty level 4\ud83d\udc51 Prapor</li>\n<li>Loyalty level 4\ud83d\udc51 Therapist</li>\n<li>Loyalty level 4\ud83d\udc51 Skier</li>\n<li>Loyalty level 4\ud83d\udc51 Peacekeeper</li>\n<li>Loyalty level 4\ud83d\udc51 Mechanic</li>\n<li>Loyalty level 4\ud83d\udc51 Ragman</li>\n<li>Loyalty level 4\ud83d\udc51 Jaeger</li>\n<li>Fence reputation 3+</li>\n<li>PMC Level 40</li>\n<li>A Shooter Born in Heaven</li>\n<li>The Tushonka Shooter - Part 4</li>\n<li>Sew It Good - Part 4</li>\n<li>Chemical - Part 4 OR Big Customer OR Out of Curiosity</li>\n</ul></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/2107.png",
    "forge_url": "https://sp-mod.com/mod/1537/sgtlaggys-quest-tweaks",
-   "downloads": 21505,
-   "favourites": 25,
+   "downloads": 23084,
+   "favourites": 36,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -70179,7 +70179,7 @@
      "description": "<p>Updated to SPT 4.1 with config available in SIC but server must be restarted for settings to take effect.</p>\n<p>Config has been reorganized, condition options have been changed from e.g. <code>zone</code> to <code>removeZone</code>, and overrides can now include handover item and elimination count/percent.</p>\n",
      "spt_constraint": "~4.1.0",
      "fika": "compatible",
-     "downloads": 1488,
+     "downloads": 2671,
      "size": 22908,
      "link": "https://sp-mod.com/mod/download/1537/sgtlaggys-quest-tweaks/4.8.0",
      "published_at": "2026-08-03T03:21:00.000000Z",
@@ -70191,7 +70191,7 @@
      "description": "<p>Added an option to backport the Kordbreach / EFT 1.1.0.0 Collector prerequisites based on <a target=\"_blank\" class=\"external-link\" href=\"https://x.com/tarkov/status/2077755562490581359\" rel=\"noreferrer noopener\">@tarkov\u2019s recent tweet</a>.</p>\n<p>Added a new setting <code>questOverrides</code> that allows overriding the settings from <code>removeConditions</code> for individual quests.</p>\n<p>Repeating the example in the description, Forester\u2019s Duty could be expanded from villages to the entire maps to match live by adding <code>{\"66ab9da7eb102b9bcd08591c\": {\"zone\": true}}</code> while leaving the zones for other quests like Capturing Outposts and Secured Perimeter in effect.</p>\n<p>When using the <code>onlyQuests</code> and <code>exemptQuests</code> settings, overrides will <em>always</em> take effect but will only fall back to the global/default settings in <code>removeConditions</code> depending on the quest\u2019s presence in those settings.</p>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 1570,
+     "downloads": 1937,
      "size": 16702,
      "link": "https://sp-mod.com/mod/download/1537/sgtlaggys-quest-tweaks/4.7.0",
      "published_at": "2026-07-18T04:43:00.000000Z",
@@ -70203,7 +70203,7 @@
      "description": "<p>Added a new config option <code>OnlyQuests</code> to limit modifications to only a specific few quests.</p>\n<p>Fixed a potential conflict with <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2615/updated-collector-quest-and-streamer-case-eft-10-backport\" rel=\"noreferrer noopener\">Collector Backport</a>.</p>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 1897,
+     "downloads": 1899,
      "size": 15414,
      "link": "https://sp-mod.com/mod/download/1537/sgtlaggys-quest-tweaks/4.6.0",
      "published_at": "2026-06-10T05:01:00.000000Z",
@@ -70215,7 +70215,7 @@
      "description": "<p>Change load priority to load after mods that add quests, so it can actually affect them.\nAlso fixed a couple bugs that would have excluded night Factory and high-level Ground Zero when removing quest zones but not map.</p>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 2698,
+     "downloads": 2701,
      "size": 14987,
      "link": "https://sp-mod.com/mod/download/1537/sgtlaggys-quest-tweaks/4.5.1",
      "published_at": "2026-02-10T09:54:00.000000Z",
@@ -70227,7 +70227,7 @@
      "description": "<p>Added options to set item handover counts and eliminations by percent of original value instead of flat value across the board.</p>\n",
      "spt_constraint": "~4.0.0",
      "fika": "unknown",
-     "downloads": 527,
+     "downloads": 529,
      "size": 15213,
      "link": "https://sp-mod.com/mod/download/1537/sgtlaggys-quest-tweaks/4.5.0",
      "published_at": "2026-01-30T04:38:00.000000Z",
@@ -70239,7 +70239,7 @@
      "description": "<p>Fixed an error that could seemingly brick profiles by no longer removing Map conditions from repeatable quests.</p>\n",
      "spt_constraint": "~4.0.0",
      "fika": "unknown",
-     "downloads": 3717,
+     "downloads": 3719,
      "size": 14811,
      "link": "https://sp-mod.com/mod/download/1537/sgtlaggys-quest-tweaks/4.4.2",
      "published_at": "2025-10-16T06:14:00.000000Z",
@@ -70251,7 +70251,7 @@
      "description": "<p>Fixed an error when enabling the option to remove Zone conditions.</p>\n",
      "spt_constraint": "~4.0.0",
      "fika": "unknown",
-     "downloads": 534,
+     "downloads": 536,
      "size": 14998,
      "link": "https://sp-mod.com/mod/download/1537/sgtlaggys-quest-tweaks/4.4.1",
      "published_at": "2025-10-13T15:29:00.000000Z",
@@ -70263,7 +70263,7 @@
      "description": "<p>Nothing new, just updated to 4.0.0.</p>\n",
      "spt_constraint": "~4.0.0",
      "fika": "unknown",
-     "downloads": 436,
+     "downloads": 438,
      "size": 14925,
      "link": "https://sp-mod.com/mod/download/1537/sgtlaggys-quest-tweaks/4.4.0",
      "published_at": "2025-10-11T21:13:00.000000Z",
@@ -70275,7 +70275,7 @@
      "description": "<p>Add options handoverItemCount and eliminationCount to set a universal number of kills/items required for quests, respected by exemptQuests.</p>\n<p>Set them to -1 (default) to leave them at original values.</p>\n<p>The item setting does not apply to keys or quest items like the Bronze Pocket Watch for Background Check.</p>\n",
      "spt_constraint": "~3.11.0",
      "fika": "unknown",
-     "downloads": 2096,
+     "downloads": 2103,
      "size": null,
      "link": "https://sp-mod.com/mod/download/1537/sgtlaggys-quest-tweaks/4.3.0",
      "published_at": "2025-05-23T22:48:04.000000Z",
@@ -70287,7 +70287,7 @@
      "description": "<p>Updated to 3.11</p>\n<ul>\n<li>Removed Claustrophobia AA12 option</li>\n<li>Removed Grenadier option, as I didn\u2019t read the quest text. I was just running off memory (and unimplemented launchers being in the data), pretty sure at some point it didn\u2019t specify \u201chand grenades.\u201d</li>\n<li>Added option for adding the new Sako TRG M10 to Tarkov Shooter 1-6</li>\n</ul>\n",
      "spt_constraint": "~3.11.0",
      "fika": "unknown",
-     "downloads": 1027,
+     "downloads": 1029,
      "size": null,
      "link": "https://sp-mod.com/mod/download/1537/sgtlaggys-quest-tweaks/4.0.0",
      "published_at": "2025-03-15T22:28:47.000000Z",
@@ -70299,7 +70299,7 @@
      "description": "<ul>\n<li>Added option to make AA12s count toward <a target=\"_blank\" class=\"external-link\" href=\"https://escapefromtarkov.fandom.com/wiki/Claustrophobia\" rel=\"noreferrer noopener\">Claustrophobia</a></li>\n<li>Removed option to add MP18 and MP43 Sawed-off to Setup, it was already done in SPT 3.10</li>\n</ul>\n",
      "spt_constraint": "~3.10.0",
      "fika": "unknown",
-     "downloads": 415,
+     "downloads": 417,
      "size": null,
      "link": "https://sp-mod.com/mod/download/1537/sgtlaggys-quest-tweaks/3.3.0",
      "published_at": "2025-02-06T05:32:56.000000Z",
@@ -70311,7 +70311,7 @@
      "description": "<p>Update to SPT 3.10<br />\nThe Gunsmith Challenge setting has been removed because of some technical changes in 3.10. Anyone who wants to pick it up is more than welcome to.</p>\n<p>The Collector level setting has been removed, use <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1339/start-collector-early\" rel=\"noreferrer noopener\">Start Collector Early</a> instead.</p>\n",
      "spt_constraint": "~3.10.0",
      "fika": "unknown",
-     "downloads": 288,
+     "downloads": 290,
      "size": null,
      "link": "https://sp-mod.com/mod/download/1537/sgtlaggys-quest-tweaks/3.0.0",
      "published_at": "2024-11-26T19:01:24.000000Z",
@@ -70329,7 +70329,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2024-07-08T22:09:00.000000Z",
-   "updated_at": "2026-08-14T01:58:58.000000Z",
+   "updated_at": "2026-09-10T23:58:50.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -161215,8 +161215,8 @@
    "description_html": "<p><strong>Mag Check Interrupt</strong> allows you to interrupt a magazine check mid-animation and transition into a reload.</p>\n<hr />\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Features</div>\n<div class=\"tab-content\"><h4>Features</h4>\n<ul>\n<li>Interrupt directly into a reload, no need to wait for the magazine check animation to finish</li>\n<li>Finish the magazine check animation if no action is taken</li>\n<li>Floating ammo details, ammo count panel follows the magazine making it easier to see on the screen</li>\n<li>Slow down animation during the reload window, to give you ample time to decide if you need to reload</li>\n<li>Configuration is available client side</li>\n</ul>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/ozen-m/SPT-MagCheckInterrupt/refs/heads/main/Assets/showcase.gif\" alt=\"Showcase gif\" /></p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Installation</div>\n<div class=\"tab-content\"><h4>Installation</h4>\n<ul>\n<li>Extract the contents of the .zip archive into your SPT folder.</li>\n</ul>\n<h4>Note to Fika users:</h4>\n<ul>\n<li>Must be installed on the <strong>host</strong> and <strong>all clients</strong></li>\n<li>Configuration is set by the host</li>\n</ul>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/3N6gTe2.gif\" alt=\"Installation\" />\nThank you <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/27605/drakiaxyz\" rel=\"noreferrer noopener\">DrakiaXYZ</a> for the gif</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Configuration</div>\n<div class=\"tab-content\"><h4>Configuration</h4>\n<h4>Server Side</h4>\n<p>In the BepInEx configuration manager <code>F12</code></p>\n<ul>\n<li><code>Enable Slow Animation</code> - Slow down the magazine check animation for a brief moment. Default is <code>true</code></li>\n</ul>\n<p>Advanced Configuration</p>\n<ul>\n<li><code>Reload Mode</code> - Special case for when reload and mag check keybinds are conflicting</li>\n<li><code>Ammo Details Follows Magazine</code> - Ammo details follow the magazine</li>\n<li><code>Reload Window Start</code> - How early you can reload during the magazine check animation, in normalized time</li>\n<li><code>Reload Window End</code> - How late you can reload during the magazine check animation, in normalized time</li>\n<li><code>Slow Percentage</code> - Multiplier for the magazine check animation speed when Slow Animation is enabled</li>\n<li><code>Slow Animation Start</code> - When to start slowing down the magazine check animation, in normalized time</li>\n<li><code>Slow Animation End</code> - When to restore speed of the magazine check animation, in normalized time</li>\n<li><code>Smoothing Max Delta</code> - Max delta for the smoothing of the slow animation. A higher value slows/restores the animation faster</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Compatibility</div>\n<div class=\"tab-content\"><h4>Compatibility</h4>\n<ul>\n<li>Compatible with <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2326/project-fika\" rel=\"noreferrer noopener\">Project Fika</a>. Must be installed on the <strong>host</strong> and <strong>all clients</strong></li>\n<li>Compatible with <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1342/ui-fixes\" rel=\"noreferrer noopener\">UI Fixes</a>\u2019 Reload in Place feature</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Support</div>\n<div class=\"tab-content\"><h4>Known Issues</h4>\n<ul>\n<li>Animation events involving sounds may still fire on reload, resulting in duplicated sounds</li>\n<li>Timings may vary slightly depending on the weapon/magazine animation</li>\n</ul>\n<h4>Support</h4>\n<p>If you find any issues or have feature suggestions, feel free to post them under my thread in the <a target=\"_blank\" class=\"external-link\" href=\"https://discord.com/channels/875684761291599922/1374428464999829555\" rel=\"noreferrer noopener\">SPT Discord</a>. Attach logs for issues found.</p></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Credits</div>\n<div class=\"tab-content\"><h4>Credits</h4>\n<ul>\n<li>Thanks to <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/46005/tyfon\" rel=\"noreferrer noopener\">Tyfon</a> for lending me his Fika config sync code!</li>\n</ul></div></div></div>\n<hr />\n<p>If you enjoy my work, you can <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/ozenm\" rel=\"noreferrer noopener\">buy me a coffee</a> \u2615</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/K6k2gHXRlaOCGFfCheE5OOvPSLQpj1JdvZ2COTiT.png",
    "forge_url": "https://sp-mod.com/mod/2643/magazine-check-interrupt",
-   "downloads": 14743,
-   "favourites": 112,
+   "downloads": 14899,
+   "favourites": 114,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -161226,8 +161226,8 @@
     "slug": "scripting"
    },
    "license": {
-    "name": "MIT License",
-    "link": "https://choosealicense.com/licenses/mit/"
+    "name": "GNU GPLv3",
+    "link": "https://choosealicense.com/licenses/gpl-3.0/"
    },
    "authors": [
     {
@@ -161249,7 +161249,7 @@
      "description": "<p>Added:</p>\n<ul>\n<li>Restore normal speed on trigger press when SlowAnimation is enabled</li>\n<li>Support FN Evolys from WTT-Armory</li>\n</ul>\n<p>Fixed:</p>\n<ul>\n<li>Not receiving config packet on Fika transits</li>\n<li>Some weapons skips showing ammo details or shows only for a split second</li>\n<li>Operation running on Fika observed AIs</li>\n<li>Rare case where operation ends early</li>\n<li>NRE caused by the floating ammo panel</li>\n</ul>\n<p>Modified:</p>\n<ul>\n<li>Ammo details are hidden earlier only when using the floating ammo panel (Ammo details follows magazine)</li>\n<li>More logging when weapon is unrecognized/unsupported</li>\n</ul>\n",
      "spt_constraint": "~4.1.2",
      "fika": "compatible",
-     "downloads": 131,
+     "downloads": 277,
      "size": 46808,
      "link": "https://sp-mod.com/mod/download/2643/magazine-check-interrupt/1.1.1",
      "published_at": "2026-09-10T18:23:00.000000Z",
@@ -161261,7 +161261,7 @@
      "description": "<p>Added:</p>\n<ul>\n<li>Floating ammo details, ammo count panel follows the magazine</li>\n</ul>\n<p>Fixed:</p>\n<ul>\n<li>Missing ammo details for stationary weapons</li>\n<li>Synced configs not properly set for next game</li>\n</ul>\n<p>Modified:</p>\n<ul>\n<li>Update to 4.1.2</li>\n<li>Fika config synced configs more apparent</li>\n</ul>\n",
      "spt_constraint": "~4.1.2",
      "fika": "compatible",
-     "downloads": 2924,
+     "downloads": 2927,
      "size": 33216,
      "link": "https://sp-mod.com/mod/download/2643/magazine-check-interrupt/1.1.0",
      "published_at": "2026-08-15T20:14:00.000000Z",
@@ -161273,7 +161273,7 @@
      "description": "<p>Added:</p>\n<ul>\n<li>Reload mode options for keybind conflict</li>\n</ul>\n<p>Modified:</p>\n<ul>\n<li>Recompile for Fika 2.2.4 and up</li>\n</ul>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 8838,
+     "downloads": 8844,
      "size": 18852,
      "link": "https://sp-mod.com/mod/download/2643/magazine-check-interrupt/1.0.2",
      "published_at": "2026-04-24T19:02:00.000000Z",
@@ -161297,7 +161297,7 @@
      "description": "<p>Initial release</p>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 928,
+     "downloads": 929,
      "size": 14251,
      "link": "https://sp-mod.com/mod/download/2643/magazine-check-interrupt/1.0.0",
      "published_at": "2026-03-28T18:47:00.000000Z",
@@ -161313,7 +161313,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-03-28T18:45:00.000000Z",
-   "updated_at": "2026-09-10T18:26:23.000000Z",
+   "updated_at": "2026-09-11T01:43:47.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -171771,8 +171771,8 @@
    "description_html": "<h2>Ultimate Loot Editor</h2>\n<p>Ultimate Loot Editor is an in raid loose loot editor. It lets you visualize loose loot spawn points, inspect what can spawn there, adjust spawn chances and item weights, and add or remove items.</p>\n<h2>Features</h2>\n<ul>\n<li>View loose loot spawn points in raid as spheres.</li>\n<li>Open a spawn point editor while standing and looking at a sphere.</li>\n<li>Edit spawn chance.</li>\n<li>Add or remove possible loot items.</li>\n<li>Change individual item weights.</li>\n<li>Compare edited loot against vanilla loot.</li>\n<li>Revert a spawn point back to vanilla.</li>\n<li>Edit supported items such as weapons, armor, and helmets.</li>\n<li>Automatically handles compatible ammo for magazines/weapons.</li>\n<li>Saves map edits as JSON files that can be shared or manually edited.</li>\n<li>Supports modded items, weapons, armor, and helmets.</li>\n</ul>\n<h2>How to use</h2>\n<p>I recommend you configure the raid to disable AI first. Once in raid, the default bind is F9 to enable the visualization of spawn points. Find a spawn point you want to edit, and press Mouse button 4 by default to open the editor. The binds and the UI can be changed in the F12 menu. Once you have made the changes that you want to spawn points, you can extract and requeue into the map, there is no need to close the game for the spawn changes to take effect.</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://imgur.com/nYuxqdy\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/nYuxqdy.png\" alt=\"ULE Showcase 1\" /></a></p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/cxop5TNmzvyj0cqhBoYIhjzBIIDxkJwdyqX1sp5V.png",
    "forge_url": "https://sp-mod.com/mod/2746/ultimate-loot-editor",
-   "downloads": 1180,
-   "favourites": 18,
+   "downloads": 1544,
+   "favourites": 20,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -171800,12 +171800,36 @@
    ],
    "versions": [
     {
+     "id": 15328,
+     "version": "2.1.1",
+     "description": "<h2>Fixed</h2>\n<ul>\n<li>Fixed an issue with loot changes not applying to <code>Manimal's Icebreaker Backport</code>.</li>\n</ul>\n",
+     "spt_constraint": "~4.1",
+     "fika": "unknown",
+     "downloads": 8,
+     "size": 236931,
+     "link": "https://sp-mod.com/mod/download/2746/ultimate-loot-editor/2.1.1",
+     "published_at": "2026-09-11T02:40:19.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 15327,
+     "version": "2.1.0",
+     "description": "<h2>Fixed</h2>\n<ul>\n<li>Improved editor opening speed, including the initial open.</li>\n<li>Smoothed out editing, saving, and removing items.</li>\n<li>Improved spawn visualization and map data loading.</li>\n<li>Added support for <code>Manimal's Icebreaker Backport</code> when installed.</li>\n<li>Improved save reliability.</li>\n<li>Fixed old edits overriding current changes.</li>\n<li>Fixed item preview cleanup and shortcut handling.</li>\n</ul>\n",
+     "spt_constraint": "~4.1",
+     "fika": "unknown",
+     "downloads": 4,
+     "size": 236605,
+     "link": "https://sp-mod.com/mod/download/2746/ultimate-loot-editor/2.1.0",
+     "published_at": "2026-09-11T02:11:05.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 14609,
      "version": "2.0.0",
      "description": "<h3>Added</h3>\n<ul>\n<li>Added support for creating new loose loot spawn points in raid.</li>\n<li>Added spawn point naming for newly created spawn points.</li>\n<li>Added position and rotation fields for custom spawn placement and fine tuning.</li>\n<li>Added in world item previewing at a spawn point.</li>\n<li>Added a gravity toggle for spawn points, useful for specific item placement.</li>\n<li>Added copy, paste, and replace actions for spawn point loot data.</li>\n<li>Added keyboard shortcuts for save, copy, paste, undo, and redo while the editor is open.</li>\n<li>Added native EFT notifications for copy, paste, replace, save, undo, and redo.</li>\n<li>Added F12 options for editor notifications and click/drag numeric value editing.</li>\n</ul>\n<h3>Changed</h3>\n<ul>\n<li>Removed the IMGUI version of the editor.</li>\n</ul>\n<h3>Fixed</h3>\n<ul>\n<li>Fixed created spawn points not reopening correctly before saving.</li>\n<li>Fixed newly added loot sometimes not spawning correctly.</li>\n<li>Fixed several placement UI alignment issues.</li>\n<li>Fixed save stutter when saving repeatedly.</li>\n<li>Improved editor save performance.</li>\n<li>Improved spawn placement controls.</li>\n<li>Improved item preview behavior.</li>\n</ul>\n",
      "spt_constraint": "4.1.2",
      "fika": "unknown",
-     "downloads": 161,
+     "downloads": 432,
      "size": 241175,
      "link": "https://sp-mod.com/mod/download/2746/ultimate-loot-editor/2.0.0",
      "published_at": "2026-08-10T00:28:00.000000Z",
@@ -171817,7 +171841,7 @@
      "description": "<h3>Fixed</h3>\n<ul>\n<li>Fixed sphere visualization name tags appearing over EFT UI, including the pause menu and editor UI.</li>\n<li>Fixed item sorting across multiple pages. Spawn entries now sort by weight correctly across the full list, not separately per page.</li>\n<li>Fixed some item names/TPL text drawing outside the middle content area while scrolling large spawn point lists.</li>\n<li>Fixed some icons randomly not appearing in large spawn point lists.</li>\n</ul>\n<h3>Improved</h3>\n<ul>\n<li>Reduced the stutter when opening the spawn editor for the first time.</li>\n<li>Reduced stutter when opening different spawn points.</li>\n<li>Improved scrolling performance for spawn points with large item lists.</li>\n<li>Improved row virtualization so large spawn tables use fewer active UI rows.</li>\n<li>Improved editor resize performance.</li>\n<li>Updated spawn point navigation text from <code>1/2</code> to <code>Spawn 1/2</code>.</li>\n</ul>\n",
      "spt_constraint": "4.0.13",
      "fika": "unknown",
-     "downloads": 389,
+     "downloads": 462,
      "size": 222835,
      "link": "https://sp-mod.com/mod/download/2746/ultimate-loot-editor/1.1.0",
      "published_at": "2026-07-20T22:45:58.000000Z",
@@ -171829,23 +171853,24 @@
      "description": "<p>Initial release, please let me know if you run into any issues.</p>\n",
      "spt_constraint": "4.0.13",
      "fika": "unknown",
-     "downloads": 630,
+     "downloads": 638,
      "size": 203544,
      "link": "https://sp-mod.com/mod/download/2746/ultimate-loot-editor/1.0.0",
      "published_at": "2026-06-16T07:00:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "2.0.0",
-   "spt_constraint": "4.1.2",
+   "latest_version": "2.1.1",
+   "spt_constraint": "~4.1",
    "all_spt_constraints": [
     "4.0.13",
-    "4.1.2"
+    "4.1.2",
+    "~4.1"
    ],
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-06-16T07:00:00.000000Z",
-   "updated_at": "2026-08-12T22:10:53.000000Z",
+   "updated_at": "2026-09-11T02:41:06.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
@@ -181312,8 +181337,8 @@
    "description_html": "<h2>Ultimate Trader Assort Editor</h2>\n<p>Ultimate Trader Assort Editor is an in game trader assortment editor for SPT. It lets you add, remove, and edit trader listings directly from the trader screen.</p>\n<p>The editor is built from cloned EFT UI elements and keeps its appearance and behavior close to the original in game UI.</p>\n<h2>Features</h2>\n<ul>\n<li>Add items and weapon presets to trader assortments.</li>\n<li>Modify existing trader listings.</li>\n<li>Remove listings and restore previously removed listings.</li>\n<li>Change loyalty level requirements.</li>\n<li>Configure currency prices, multi-currency prices, and item barters.</li>\n<li>Change trader stock and per-profile purchase limits, including unlimited values.</li>\n<li>Edit supported weapons, armor, helmets, and their attachments.</li>\n<li>Supports modded items and custom traders.</li>\n<li>Refreshes trader stock and instantly shows offers on the flea market.</li>\n<li>Player created weapon presets can now be searched for and added to trader assortments.</li>\n<li>Weapon builds are identified as <code>BUILD</code> in the ADD search results.</li>\n<li>Saves changes as JSON files that can be shared or manually edited.</li>\n<li>Loads multiple <code>add.json</code> and <code>remove.json</code> edit packs for each trader to allow users to share their changes.</li>\n<li>Allows the <code>EDIT ASSORTS</code> button to be hidden through the F12 menu.</li>\n</ul>\n<h2>Installation</h2>\n<p>Drag the BepInEx and SPT folders directly into your SPT root install.</p>\n<h2>Showcase</h2>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://i.imgur.com/lQrdNP8.png\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/lQrdNP8.png\" alt=\"UTAE Showcase 1\" /></a>\n<a target=\"_blank\" class=\"external-link\" href=\"https://i.imgur.com/IuyVUbw.png\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/IuyVUbw.png\" alt=\"UTAE Showcase 2\" /></a>\n<a target=\"_blank\" class=\"external-link\" href=\"https://i.imgur.com/Yl13aov.png\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/Yl13aov.png\" alt=\"UTAE Showcase 3\" /></a>\n<a target=\"_blank\" class=\"external-link\" href=\"https://i.imgur.com/OErGzVE.png\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/OErGzVE.png\" alt=\"UTAE Showcase 4\" /></a>\n<a target=\"_blank\" class=\"external-link\" href=\"https://i.imgur.com/M8YCAbY.png\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/M8YCAbY.png\" alt=\"UTAE Showcase 5\" /></a></p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/JfyAASJee50kwkWHKklXe8ykRwLuCUOw73R8znVv.png",
    "forge_url": "https://sp-mod.com/mod/2834/ultimate-trader-assort-editor",
-   "downloads": 1287,
-   "favourites": 15,
+   "downloads": 1479,
+   "favourites": 17,
    "featured": false,
    "fika": true,
    "fika_latest": "unknown",
@@ -181344,12 +181369,12 @@
      "id": 15226,
      "version": "2.1.1",
      "description": "<h2>Fixed</h2>\n<ul>\n<li>Fixed saved trader edits not loading on startup when using JSON files generated by older versions of UTAE.</li>\n</ul>\n",
-     "spt_constraint": "4.1.0",
+     "spt_constraint": "~4.1",
      "fika": "unknown",
-     "downloads": 5,
+     "downloads": 174,
      "size": 162635,
      "link": "https://sp-mod.com/mod/download/2834/ultimate-trader-assort-editor/2.1.1",
-     "published_at": "2026-09-06T04:14:49.000000Z",
+     "published_at": "2026-09-06T04:14:00.000000Z",
      "dependencies": []
     },
     {
@@ -181370,7 +181395,7 @@
      "description": "<h3>Added</h3>\n<ul>\n<li>Updated to 4.1.x</li>\n<li>Player created weapon presets can now be searched for and added to trader assortments.</li>\n<li>Weapon builds are identified as <code>BUILD</code> in the ADD search results.</li>\n</ul>\n",
      "spt_constraint": "4.1.0",
      "fika": "unknown",
-     "downloads": 102,
+     "downloads": 103,
      "size": 140413,
      "link": "https://sp-mod.com/mod/download/2834/ultimate-trader-assort-editor/2.0.0",
      "published_at": "2026-09-03T01:16:58.000000Z",
@@ -181382,7 +181407,7 @@
      "description": "<h2>Fixed</h2>\n<ul>\n<li>Fixed ammo boxes purchased from edited trader offers being empty when opened.</li>\n<li>Weapon durability max is no longer 100 if value is changed, such as min <code>60</code> max <code>80</code>, result <code>78.5/78.5</code>.</li>\n</ul>\n",
      "spt_constraint": "4.0.13",
      "fika": "compatible",
-     "downloads": 596,
+     "downloads": 614,
      "size": 136715,
      "link": "https://sp-mod.com/mod/download/2834/ultimate-trader-assort-editor/1.0.3",
      "published_at": "2026-07-25T04:29:00.000000Z",
@@ -181418,7 +181443,7 @@
      "description": "<p>Initial release, please let me know if you run into any issues.</p>\n",
      "spt_constraint": "4.0.13",
      "fika": "unknown",
-     "downloads": 118,
+     "downloads": 122,
      "size": 132532,
      "link": "https://sp-mod.com/mod/download/2834/ultimate-trader-assort-editor/1.0.0",
      "published_at": "2026-07-20T23:30:19.000000Z",
@@ -181426,15 +181451,16 @@
     }
    ],
    "latest_version": "2.1.1",
-   "spt_constraint": "4.1.0",
+   "spt_constraint": "~4.1",
    "all_spt_constraints": [
     "4.0.13",
-    "4.1.0"
+    "4.1.0",
+    "~4.1"
    ],
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-07-20T23:30:00.000000Z",
-   "updated_at": "2026-09-06T04:15:05.000000Z",
+   "updated_at": "2026-09-11T02:10:42.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
@@ -191634,10 +191660,10 @@
    "name": "Tushonka Territories",
    "slug": "tushonka-territories",
    "teaser": "Adds territory warfare to the land of Tushonka where factions fight each other for control over each map.",
-   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Overview</div>\n<div class=\"tab-content\"><p>Tushonka Territories adds faction warfare and a dynamically changing world map. PMC relations remain unchanged and may continue infighting. But now Raiders, Rogues and Scavs will vie for control over Tushonka and can even ally with the player as they attempt to cover the map in their team colors.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/FHAVdQ9.png\" alt=\"ttmap\" /></p>\n<hr />\n<h3>List Of Features</h3>\n<ul>\n<li>Factions</li>\n<li>Simulated battles</li>\n<li>Reputation system</li>\n<li>Player can affect the outcome</li>\n<li>Full customization</li>\n</ul>\n<hr />\n<h3>Detailed Overview</h3>\n<h4>FACTIONS</h4>\n<p>Scavs (dark green), Rogues (light green) and Raiders (orange) are the default factions included with this mod but they can be swapped out in the config. From the outset, each faction will attack the player on sight with a few exceptions; Rogues will not attack United States Evil Corporation characters and Scavs will not attack player Scavs. Factions will not attack their own members.</p>\n<p>Factions will also bring their side\u2019s boss into the raid with them for added support. Tagilla and Killa for the Scavs, Kolontay for Raiders and the Goons for Rogues.</p>\n<p>With this mod installed you will see Scavs, Rogues and Raiders spawning on maps they normally wouldn\u2019t. Should not cause issues with spawn mods like ABPS other than overriding the spawn settings of those three specific bot types and their bosses. Once dead, they will not respawn.</p>\n<h4>SIMULATED BATTLES</h4>\n<p>After the player exfiltrates from a raid, calculations are run on the backend to decide the outcome of the faction battle that took place. A hidden value called \u201cfaction strength\u201d determines the final winner of each battle. Put simply, each bot killed costs that faction some of their strength. Each boss killed costs them even more. A territory may require more than one battle to flip it\u2019s control to a different faction.</p>\n<p>By default, the mod will simulate several battles after each raid. But this can be changed in the config to simulate battles (X) amount of minutes. This timed setting only functions while the game is running.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/AvwpwU1.gif\" alt=\"ttexample\" /></p>\n<h4>REPUTATION SYSTEM</h4>\n<p>It\u2019s possible to get on friendly terms with a faction to the point where they will not attack you and may even come to your aid if you are attacked. But getting there will be difficult. Avoid killing their members while only attacking their enemies. You\u2019ll have to choose your fights carefully as it may take several raids to get on their good side. Best to just avoid running into your preferred faction whenever possible until you\u2019re certain that you\u2019re not on their shit list anymore.</p>\n<p>Additionally, disabled by default, the mod has support for overriding the standing with traders by using the associated faction\u2019s reputation instead. Currently, the mod only connects the Scavs to Fence but more can come and it allows 3rd party extensions to connect it to traders of their choosing.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/92JKLLx.jpeg\" alt=\"nicebigpipe\" /></p>\n<h4>PLAYER AFFECTED OUTCOMES</h4>\n<p>Each bot that dies in raid affects the outcome of the battle. Bosses weaken a faction the most so target them whenever possible if you wish to truly take out the faction. Help your preferred faction conquer the entire map!</p>\n<p>Right now conquering the map will only make raids easier but check the <code>PROJECT GOALS</code> tab for planned features!</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Incompatible/Recommended Mods</div>\n<div class=\"tab-content\"><p><strong>Recommended</strong><br />\n<a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement\" rel=\"noreferrer noopener\">SAIN</a> (once its released)<br />\nAny mod to make bots move around</p>\n<p><strong>Compatible</strong><br />\n<a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1594/apbs-acids-progressive-bot-system\" rel=\"noreferrer noopener\">APBS</a></p>\n<p><strong>Untested</strong><br />\nAny bot adding and spawning mods</p>\n<p><strong>Issues</strong><br />\n<a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2642/vagabond\" rel=\"noreferrer noopener\">Vagabond</a> - The location select menu shows only one faction. This issue is cosmetic, internally the factions are still there.</p>\n<p><strong>Incompatible</strong><br />\n<a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2097/abps-acids-bot-placement-system\" rel=\"noreferrer noopener\">ABPS</a> - Causes too many PMCs to spawn by default which takes away bot slots from this mod\u2019s spawns.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Installation &amp; Quick Start</div>\n<div class=\"tab-content\"><ol>\n<li>Download the latest TushonkaTerritories zip</li>\n<li>Extract the SPT and BepInEx folder from it into your SPT folder (the one with the folders SPT_Runtime and BepinEx in it)</li>\n<li>Start the server</li>\n<li>Edit the config, comments and guides in the included example</li>\n<li>Restart the server</li>\n<li>Run a few raids so the factions start fighting</li>\n<li>Have fun</li>\n</ol></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Configuration</div>\n<div class=\"tab-content\"><p>To configure Tushonka Territories, enter the Config folder in the server (SPT_Runtime/user/mods) install and if you ran the server there is a file called config.jsonc. A file comes included with the mod, configExample.jsonc which includes comments for what each value does.</p>\n<p>The mod is also now editable through the SIC (accessible through the launcher). This will allow you to have a more visual editing of the config, although there are no descriptions still.<br />\n<strong>Note:</strong> A lot of config options require an restart to properly change, if you decide to update the config through the SIC page, keep this in mind.</p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Modding</div>\n<div class=\"tab-content\"><p>You can mod the data of the mod by adding data_override.json to the Data folder. The mod will load this json file instead and won\u2019t be overridden by updates.</p>\n<p>This allows you to completely change the factions, which bots belong to which factions, and the default state of the map. The only exception is the none faction which must be present at all times but any of its details are free to be changed.</p>\n<p>Modding the data file comes with zero safeguards so mod carefully and ask questions if needed in my <strong>#mods-development</strong> thread.</p>\n<p>The mod also comes with quest/achievement conditions and rewards for external mods.<br />\nIf you use the \u201creputation\u201d condition with the target set to the faction\u2019s data key and the value to the desired reputation, it will create a condition that will unlock after reaching the desired reputation with that faction.<br />\nThe \u201creputation\u201d reward is available which will add \u201cvalue\u201d reputation to the \u201ctarget\u201d faction. This ignores reputation locks.<br />\nThe \u201cfactionUnlock\u201d reward is also available which will unlock the reputation gaining for the \u201ctarget\u201d faction.</p>\n<p>I tried to make the mods data easily editable but there might be some things such as location names which had to be unfortunately hard coded. I will write in anything if needed to the official mod to support other modders.</p></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Known Issues</div>\n<div class=\"tab-content\"><ul>\n<li>Some bot types will shoot you if you get close even as allies. This is an issue with the bot logic which I will not touch.</li>\n<li>There\u2019s a hitch when opening up the map screen. This only happens when the territory map is updated and I don\u2019t know a way to fix it currently.</li>\n<li>Fika players will experience more extreme simulations and reputation loss.</li>\n<li>Sometimes bots won\u2019t spawn. There can be numerous things causing this such as the config being too light or the game\u2019s weird spawning system misbehaving. Try messing with the enforcing and other bot settings in the config.</li>\n<li>PMCs don\u2019t spawn on ground zero (level &lt; 20). This is because vanilla SPT has no PMC spawns on ground zero below level 20. If you\u2019re expecting them it\u2019s because ABPS puts them there.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Project Goals</div>\n<div class=\"tab-content\"><ul>\n<li>More advanced battle simulation calculations for smarter factions.</li>\n<li>A companion mod that includes more bots and factions to make the map more interesting.</li>\n<li>Translations for more languages.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-8\" class=\"tab-panel\"><div class=\"tab-title\">Special Thanks</div>\n<div class=\"tab-content\"><p><strong>Acidphantasm</strong> - For paving the way with their bot spawning knowledge, especially for ABPS which I referenced greatly.<br />\n<strong>SPT Team</strong> - For making 4.1 which has made modding way easier.<br />\n<strong>BorisTheBrave</strong> - For making <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/BorisTheBrave/voronator-sharp\" rel=\"noreferrer noopener\">Voronator-Sharp</a> so I don\u2019t have to learn and write an complex algorithm.</p>\n<p><em><strong>And and extra special thanks to:</strong></em><br />\n<strong>Mcdewgle</strong> - For writing a better description for the mod.</p>\n<p>Without all of you, this wouldn\u2019t be possible</p></div></div></div>\n",
+   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Overview</div>\n<div class=\"tab-content\"><p>Tushonka Territories adds faction warfare and a dynamically changing world map. PMC relations remain unchanged and may continue infighting. But now Raiders, Rogues and Scavs will vie for control over Tushonka and can even ally with the player as they attempt to cover the map in their team colors.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/FHAVdQ9.png\" alt=\"ttmap\" /></p>\n<hr />\n<h3>List Of Features</h3>\n<ul>\n<li>Factions</li>\n<li>Simulated battles</li>\n<li>Reputation system</li>\n<li>Player can affect the outcome</li>\n<li>Full customization</li>\n</ul>\n<hr />\n<h3>Detailed Overview</h3>\n<h4>FACTIONS</h4>\n<p>Scavs (dark green), Rogues (light green) and Raiders (orange) are the default factions included with this mod but they can be swapped out in the config. From the outset, each faction will attack the player on sight with a few exceptions; Rogues will not attack United States Evil Corporation characters and Scavs will not attack player Scavs. Factions will not attack their own members.</p>\n<p>Factions will also bring their side\u2019s boss into the raid with them for added support. Tagilla and Killa for the Scavs, Kolontay for Raiders and the Goons for Rogues.</p>\n<p>With this mod installed you will see Scavs, Rogues and Raiders spawning on maps they normally wouldn\u2019t. Should not cause issues with spawn mods like ABPS other than overriding the spawn settings of those three specific bot types and their bosses. Once dead, they will not respawn.</p>\n<h4>SIMULATED BATTLES</h4>\n<p>After the player exfiltrates from a raid, calculations are run on the backend to decide the outcome of the faction battle that took place. A hidden value called \u201cfaction strength\u201d determines the final winner of each battle. Put simply, each bot killed costs that faction some of their strength. Each boss killed costs them even more. A territory may require more than one battle to flip it\u2019s control to a different faction.</p>\n<p>By default, the mod will simulate several battles after each raid. But this can be changed in the config to simulate battles (X) amount of minutes. This timed setting only functions while the game is running.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/AvwpwU1.gif\" alt=\"ttexample\" /></p>\n<h4>REPUTATION SYSTEM</h4>\n<p>It\u2019s possible to get on friendly terms with a faction to the point where they will not attack you and may even come to your aid if you are attacked. But getting there will be difficult. Avoid killing their members while only attacking their enemies. You\u2019ll have to choose your fights carefully as it may take several raids to get on their good side. Best to just avoid running into your preferred faction whenever possible until you\u2019re certain that you\u2019re not on their shit list anymore.</p>\n<p>Additionally, disabled by default, the mod has support for overriding the standing with traders by using the associated faction\u2019s reputation instead. Currently, the mod only connects the Scavs to Fence but more can come and it allows 3rd party extensions to connect it to traders of their choosing.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/92JKLLx.jpeg\" alt=\"nicebigpipe\" /></p>\n<h4>PLAYER AFFECTED OUTCOMES</h4>\n<p>Each bot that dies in raid affects the outcome of the battle. Bosses weaken a faction the most so target them whenever possible if you wish to truly take out the faction. Help your preferred faction conquer the entire map!</p>\n<p>Right now conquering the map will only make raids easier but check the <code>PROJECT GOALS</code> tab for planned features!</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Incompatible/Recommended Mods</div>\n<div class=\"tab-content\"><p><strong>Recommended</strong><br />\n<a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement\" rel=\"noreferrer noopener\">SAIN</a> (once its released)<br />\nAny mod to make bots move around</p>\n<p><strong>Compatible</strong><br />\n<a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1594/apbs-acids-progressive-bot-system\" rel=\"noreferrer noopener\">APBS</a></p>\n<p><strong>Untested</strong><br />\nAny bot adding and spawning mods</p>\n<p><strong>Issues</strong><br />\n<a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2642/vagabond\" rel=\"noreferrer noopener\">Vagabond</a> - The location select menu shows only one faction. This issue is cosmetic, internally the factions are still there.</p>\n<p><strong>Incompatible</strong><br />\n<a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2097/abps-acids-bot-placement-system\" rel=\"noreferrer noopener\">ABPS</a> - Causes too many PMCs to spawn by default which takes away bot slots from this mod\u2019s spawns.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Installation &amp; Quick Start</div>\n<div class=\"tab-content\"><ol>\n<li>Download the latest TushonkaTerritories zip</li>\n<li>Extract the SPT and BepInEx folder from it into your SPT folder (the one with the folders SPT_Runtime and BepinEx in it)</li>\n<li>Start the server</li>\n<li>Edit the config, comments and guides in the included example</li>\n<li>Restart the server</li>\n<li>Run a few raids so the factions start fighting</li>\n<li>Have fun</li>\n</ol></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Configuration</div>\n<div class=\"tab-content\"><p>To configure Tushonka Territories, enter the Config folder in the server (SPT_Runtime/user/mods) install and if you ran the server there is a file called config.jsonc. A file comes included with the mod, configExample.jsonc which includes comments for what each value does.</p>\n<p>The mod is also now editable through the SIC (accessible through the launcher). This will allow you to have a more visual editing of the config, although there are no descriptions still.<br />\n<strong>Note:</strong> A lot of config options require an restart to properly change, if you decide to update the config through the SIC page, keep this in mind.</p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Modding</div>\n<div class=\"tab-content\"><p>You can mod the data of the mod by adding data_override.json to the Data folder. The mod will load this json file instead and won\u2019t be overridden by updates.</p>\n<p>This allows you to completely change the factions, which bots belong to which factions, and the default state of the map. The only exception is the none faction which must be present at all times but any of its details are free to be changed.</p>\n<p>Modding the data file comes with zero safeguards so mod carefully and ask questions if needed in my <strong>#mods-development</strong> thread.</p>\n<p>The mod also comes with quest/achievement conditions and rewards for external mods.<br />\nIf you use the \u201creputation\u201d condition with the target set to the faction\u2019s data key and the value to the desired reputation, it will create a condition that will unlock after reaching the desired reputation with that faction.<br />\nThe \u201creputation\u201d reward is available which will add \u201cvalue\u201d reputation to the \u201ctarget\u201d faction. This ignores reputation locks.<br />\nThe \u201cfactionUnlock\u201d reward is also available which will unlock the reputation gaining for the \u201ctarget\u201d faction.</p>\n<p>I tried to make the mods data easily editable but there might be some things such as location names which had to be unfortunately hard coded. I will write in anything if needed to the official mod to support other modders.</p></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Known Issues</div>\n<div class=\"tab-content\"><ul>\n<li>Some bot types will shoot you if you get close even as allies. This is an issue with the bot logic which I will not touch.</li>\n<li>Fika players will experience more extreme simulations and reputation loss.</li>\n<li>Sometimes bots won\u2019t spawn. There can be numerous things causing this such as the config being too light or the game\u2019s weird spawning system misbehaving. Try messing with the enforcing and other bot settings in the config.</li>\n<li>PMCs don\u2019t spawn on ground zero (level &lt; 20). This is because vanilla SPT has no PMC spawns on ground zero below level 20. If you\u2019re expecting them it\u2019s because ABPS puts them there.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Project Goals</div>\n<div class=\"tab-content\"><ul>\n<li>More advanced battle simulation calculations for smarter factions.</li>\n<li>A companion mod that includes more bots and factions to make the map more interesting.</li>\n<li>Translations for more languages.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-8\" class=\"tab-panel\"><div class=\"tab-title\">Special Thanks</div>\n<div class=\"tab-content\"><p><strong>Acidphantasm</strong> - For paving the way with their bot spawning knowledge, especially for ABPS which I referenced greatly.<br />\n<strong>SPT Team</strong> - For making 4.1 which has made modding way easier.<br />\n<strong>BorisTheBrave</strong> - For making <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/BorisTheBrave/voronator-sharp\" rel=\"noreferrer noopener\">Voronator-Sharp</a> so I don\u2019t have to learn and write an complex algorithm.</p>\n<p>Languages:<br />\n<strong>operator_lucas</strong> - Russian translation</p>\n<p><em><strong>And and extra special thanks to:</strong></em><br />\n<strong>Mcdewgle</strong> - For writing a better description for the mod.</p>\n<p>Without all of you, this wouldn\u2019t be possible</p></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/W9mUCfsXleBft1bjBIirZljxI5IczjSnAoNwTD7c.png",
    "forge_url": "https://sp-mod.com/mod/2942/tushonka-territories",
-   "downloads": 2031,
+   "downloads": 2064,
    "favourites": 24,
    "featured": false,
    "fika": false,
@@ -191666,12 +191692,24 @@
    ],
    "versions": [
     {
+     "id": 15326,
+     "version": "1.3.3",
+     "description": "<p>Fixed map screen loading pause<br />\nRussian language file (thanks operator_lucas)<br />\nSetup for a future fika fix addon</p>\n",
+     "spt_constraint": "~4.1.2",
+     "fika": "unknown",
+     "downloads": 25,
+     "size": 663454,
+     "link": "https://sp-mod.com/mod/download/2942/tushonka-territories/1.3.3",
+     "published_at": "2026-09-11T01:49:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 15050,
      "version": "1.3.2",
      "description": "<p>Default config rebalance pass to make the mod much easier by default.</p>\n<p>Delete your config file and restart to receive all updated values or look at the example config file for the latest values.<br />\nThis update adds no new features or changes so if you\u2019re fine with your config, you don\u2019t need to update.</p>\n",
      "spt_constraint": "~4.1.2",
      "fika": "unknown",
-     "downloads": 612,
+     "downloads": 619,
      "size": 662823,
      "link": "https://sp-mod.com/mod/download/2942/tushonka-territories/1.3.2",
      "published_at": "2026-08-28T20:27:00.000000Z",
@@ -191767,14 +191805,14 @@
      "description": "<p>Initial release</p>\n",
      "spt_constraint": "~4.1.2",
      "fika": "unknown",
-     "downloads": 202,
+     "downloads": 203,
      "size": 379535,
      "link": "https://sp-mod.com/mod/download/2942/tushonka-territories/1.0.0",
      "published_at": "2026-08-19T05:08:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.3.2",
+   "latest_version": "1.3.3",
    "spt_constraint": "~4.1.2",
    "all_spt_constraints": [
     "~4.1.2"
@@ -191782,7 +191820,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-08-19T05:12:00.000000Z",
-   "updated_at": "2026-09-10T17:30:29.000000Z",
+   "updated_at": "2026-09-11T01:52:14.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -196695,11 +196733,11 @@
    "description_html": "<blockquote>\n<h3>Your stash is the bankroll</h3>\n<p>No chips, no separate wallet, nothing to cash out. What you bet is what\u2019s already in your stash, and what you win lands back in it before the panel even closes. Lose, and it\u2019s gone the same as anything you didn\u2019t make it out of a raid with.</p>\n</blockquote>\n<p>A casino in your menu. One tab, a lobby, and tables that play for the roubles in your stash.</p>\n<p>There is no unlock, no hideout requirement and no quest. Install it, and a <strong>CASINO</strong> tab appears on the bar along the bottom of the menu \u2014 on a profile five minutes old or one with a thousand raids behind it.</p>\n<p>The bar is on every screen outside a raid, so the tables open from the hideout, the flea market or a trader screen without backing out of them first.</p>\n<p><strong>This is a place, not a feature.</strong> The lobby is built to grow: each table is a tile, and new games get added as tiles rather than as new mods with new tabs. Blackjack, hold\u2019em, a single-zero wheel and a slot machine are open so far, and more will arrive in this mod rather than beside it.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/HPJ7e19.png\" alt=\"SPT Casino\" /></p>\n<h2>The money is real</h2>\n<p>A stake leaves your stash the moment you commit it. Winnings are paid straight back in. There is no chip balance, no separate wallet and nothing to cash out \u2014 what you see in your stash is what you have.</p>\n<p>If your stash is too full to take a payout, it arrives in the post instead. Nothing is ever lost to a full container.</p>\n<p><strong>Your gear is never at stake.</strong> Weapons, armour and rigs cannot be bet.</p>\n<p>The house edge is real too, and it does not get tired. Roulette keeps 2.70% of everything staked on it, forever; the slot machine gives back 92.51% and keeps the rest. Blackjack and poker are not charity either. Play with what you could lose in a raid.</p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Blackjack</div>\n<div class=\"tab-content\"><p>Six decks, a server-dealt shoe, and the dealer standing on soft 17.</p>\n<p><strong>HIT</strong>, <strong>STAND</strong>, <strong>DOUBLE</strong> and <strong>SPLIT</strong> appear when they are legal. The dealer\u2019s second card stays face down until the hand is over.</p>\n<ul>\n<li>Six decks, reshuffled at three quarters</li>\n<li>Blackjack pays <strong>3:2</strong> in currency, even money in valuables</li>\n<li>Double after split, up to four hands</li>\n</ul>\n<p>Stake roubles, dollars, euros, GP coins, physical bitcoin or Lega medals.</p>\n<table>\n<thead>\n<tr>\n<th>Currency</th>\n<th>Minimum</th>\n<th>Maximum</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Roubles</td>\n<td>1,000</td>\n<td>500,000</td>\n</tr>\n<tr>\n<td>Dollars</td>\n<td>10</td>\n<td>5,000</td>\n</tr>\n<tr>\n<td>Euros</td>\n<td>10</td>\n<td>5,000</td>\n</tr>\n<tr>\n<td>GP coins</td>\n<td>1</td>\n<td>50</td>\n</tr>\n<tr>\n<td>Bitcoin</td>\n<td>1</td>\n<td>10</td>\n</tr>\n<tr>\n<td>Lega medals</td>\n<td>1</td>\n<td>5</td>\n</tr>\n</tbody>\n</table>\n<p>Naturals pay even money on bitcoin, GP and Lega for a simple reason: one bitcoin at 3:2 settles on half a coin, and half a bitcoin does not exist.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Poker</div>\n<div class=\"tab-content\"><p>No-limit Texas hold\u2019em, five handed \u2014 you and four of the house\u2019s regulars.</p>\n<p>The bots are named out of the game\u2019s own PMC nickname list, so the seat that just three-bet you is called something you have seen on a killboard. They play their own game: position, pot odds, and personalities that bluff at different rates.</p>\n<ul>\n<li>Blinds 10,000 / 20,000</li>\n<li>Buy in for 1,000,000 by default \u2014 <strong>set it yourself in the F12 menu</strong>, anywhere from 200,000 to 5,000,000</li>\n<li>Roubles only</li>\n</ul>\n<p>The blinds stay put whatever you set, so a smaller buy-in is a shorter stack and a livelier game rather than a cheaper one. 200,000 is ten big blinds; 5,000,000 is two hundred and fifty.</p>\n<p>Your stack is yours. Stand up whenever you like and it goes back to your stash \u2014 and if the server dies mid-session, it is given back the next time you sit down.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Roulette</div>\n<div class=\"tab-content\"><p>A European single-zero wheel, and it actually spins. Thirty-seven pockets, one of them green, 2.70% to the house on every bet on the cloth.</p>\n<p>The wheel is drawn from the server\u2019s own pocket list, so the numbers around the rim are the numbers it settles against. Every spin rolls its own duration, direction and friction, and the ball runs against the wheel and drops into a pocket rather than snapping to one.</p>\n<p>The cloth is the full layout, not a row of buttons:</p>\n<ul>\n<li>Straight up, splits, streets, corners and six lines</li>\n<li>Columns and dozens</li>\n<li>Red, black, odd, even, 1\u201318 and 19\u201336</li>\n</ul>\n<p>Pick a chip from the tray and click a spot. <strong>Right-click takes one back off.</strong> Chips on the cloth cost nothing until you press spin.</p>\n<ul>\n<li>Chips of 10k, 25k, 50k, 100k, 500k and 1M</li>\n<li>Minimum bet 10,000</li>\n<li><strong>No house maximum.</strong> A million on a single number pays 36,000,000</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Slots</div>\n<div class=\"tab-content\"><p>Five reels, three rows, and <strong>243 ways to win</strong> instead of paylines \u2014 any symbol landing on three or more reels running left to right pays, and landing more than once on a reel multiplies the win instead of counting it once. Every icon on the reels is the game\u2019s own, drawn from your own installation the way the stash renders yours.</p>\n<p>There is nothing to sit down at. No seat, no hand to hold, no chips to build up: walk up, spin, walk away.</p>\n<ul>\n<li><strong>92.510% back, 7.490% to the house</strong> \u2014 computed from the reel strips and the paytable, not measured by spinning it a lot</li>\n<li><strong>AUTO</strong> keeps it pulling on its own until you stop it; <strong>SPEED</strong> cycles 1X/2X/4X/6X, and shortens a manual spin too, not only AUTO\u2019s</li>\n<li>Wins climb from WIN through BIG WIN, HUGE WIN and JACKPOT as the multiple grows</li>\n<li>A STATS button keeps a lifetime record \u2014 pulls, hit rate, your best multiple, your current and best streak, staked and returned per currency</li>\n</ul>\n<p>Stake roubles, dollars or euros.</p>\n<table>\n<thead>\n<tr>\n<th>Currency</th>\n<th>Minimum</th>\n<th>Maximum</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Roubles</td>\n<td>5,000</td>\n<td>50,000</td>\n</tr>\n<tr>\n<td>Dollars</td>\n<td>50</td>\n<td>500</td>\n</tr>\n<tr>\n<td>Euros</td>\n<td>50</td>\n<td>500</td>\n</tr>\n</tbody>\n</table>\n<p>The machine pays up to a thousand times the stake by default. <strong>F12 \u2192 Slots \u2192 No maximum stake</strong> lifts that ceiling entirely, the same way Blackjack\u2019s table maximum works \u2014 the cap is the house being careful on your behalf, and you can tell it not to be.</p></div></div></div>\n<h2>Installing</h2>\n<p>Extract into your SPT folder \u2014 the one that holds <code>SPT_Runtime</code> \u2014 and start the server. It installs as one folder on each side: <code>BepInEx/plugins/Casino</code> and <code>SPT_Runtime/user/mods/Casino</code>.</p>\n<p>The first time an account walks in, a card explains what the money does. Read it once and it never comes back.</p>\n<h2>Getting around</h2>\n<p><strong>CASINO</strong> on the bar opens the lobby. Click a tile to sit down.</p>\n<p>Escape leaves a table and brings you back to the lobby. Escape again closes the casino \u2014 and only the casino. The screen you opened it from is still there underneath.</p>\n<h2>What is coming</h2>\n<p>More tables. Slots just proved the lobby means it: a tile and a panel, not another mod and another tab. If there is a game you want at it, say so.</p>\n<h2>Requirements</h2>\n<p>SPT 4.1.x. No other mods required.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/TE8Kkm1QpdfMyrqmoqpoat5QXS3dU2ZqMuUZzxzG.png",
    "forge_url": "https://sp-mod.com/mod/2994/spt-casino",
-   "downloads": 1147,
-   "favourites": 7,
+   "downloads": 1528,
+   "favourites": 8,
    "featured": false,
    "fika": true,
-   "fika_latest": "unknown",
+   "fika_latest": "compatible",
    "category": {
     "id": 17,
     "title": "Other",
@@ -196724,12 +196762,24 @@
    ],
    "versions": [
     {
+     "id": 15323,
+     "version": "1.2.61",
+     "description": "<h1>SPT Casino 1.2.61</h1>\n<p><strong>Small one.</strong> Slots now shows what you\u2019re holding.</p>\n<p>The panel covers the stash counter while it\u2019s open, so there was no way to see your balance mid-session \u2014 a player pointed this out. There\u2019s now a readout beside STATS and CLOSE showing what you\u2019re holding, in whichever currency you\u2019re staking.</p>\n<p>It updates the moment you open the machine, right after every spin, and instantly when you switch currency.</p>\n<p>No change to odds, payouts, or anything else about the tables.</p>\n",
+     "spt_constraint": "~4.1.0",
+     "fika": "compatible",
+     "downloads": 71,
+     "size": 7597450,
+     "link": "https://sp-mod.com/mod/download/2994/spt-casino/1.2.61",
+     "published_at": "2026-09-10T23:15:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 15311,
      "version": "1.2.6",
      "description": "<h1>1.2.6 \u2014 sorry, and a million roubles</h1>\n<p><strong>First: sorry for pulling the mod off the hub.</strong></p>\n<p>SPT Casino was unlisted for a day with no warning and not much of an explanation. The slot machine shipped in a bad state, the problems turned out to run deeper than the first fix, and taking it down seemed better than leaving people to install something that did not work. If you grabbed it before that, you got a casino whose newest table was broken \u2014 and no way to know that was not your fault.</p>\n<p>Sorry for the disruption, short as it was.</p>\n<h2>A million roubles, on the house</h2>\n<p><strong>The first time you open the casino on 1.2.6, it hands you 1,000,000 roubles.</strong> No condition, no quest, nothing to click through \u2014 it is in your stash before you have finished reading the note that comes with it.</p>\n<p>Once per profile. Reinstalling the mod does not earn a second one; a second profile on the same install gets its own. If your stash is too full to take it, it arrives in the post like any other payout.</p>\n<p>No table\u2019s odds changed to pay for it. The house is covering it.</p>\n<h2>A massive shoutout to ABlindGuy</h2>\n<p>Most of the list below was found that way. Chasing a bug you cannot reproduce yourself is close to impossible, and ABlindGuy is the reason it stopped being guesswork. Thank you \u2014 genuinely.</p>\n<h2>What was actually wrong</h2>\n<p>It was not one bug. It was five, and each one hid the next \u2014 which is why this took a few passes to get to the bottom of.</p>\n<ul>\n<li><strong>The reels were blank.</strong> The slot machine draws its symbols from your own game\u2019s item icons, and the code that asks for them broke after an EFT update. Every reel fell back to a plain dark tile and stayed there.</li>\n<li><strong>One stubborn symbol blanked the whole machine.</strong> A single icon that could not be drawn stopped the other eight from even being tried.</li>\n<li><strong>A spin could finish and never settle.</strong> The SPIN button stuck on <code>...</code> and every press after that went nowhere. It read exactly like \u201cyou can spin it, but nothing happens.\u201d</li>\n<li><strong>Your stash never moved.</strong> Bets left and winnings arrived on the server correctly, but the game was never told to go and look, so the rouble counter on screen sat there unchanged. Every table did this, not just slots \u2014 which is what made it look like the whole casino was playing for pretend money.</li>\n<li><strong>The machine greeted you with a win it could never pay.</strong> The board sitting there before your first spin was the same winning board for every player, every launch. You would open it, see a paying line, press SPIN, watch it turn into a loss, and quite reasonably conclude something had just been taken off you.</li>\n</ul>\n<p>And one more, found after all of the above were fixed: <strong>the tables paid out and then drew nothing.</strong> The reels stopped, the money moved, and no win lines, no banner and no result text ever appeared \u2014 and it left every table dead until you reopened it. That one turned out to be a single line of code looking for a part of the game by a name that changes when the game updates.</p>\n<h2>Nothing was ever lost</h2>\n<p>Worth saying plainly, because \u201cthe stash never moved\u201d reads like money going missing: <strong>it never did.</strong> Every bet and every payout was settled correctly on the server and written to disk the whole time. The only thing that was wrong was the number on your screen, and it corrected itself the moment anything reloaded your profile.</p>\n<h2>Updating</h2>\n<p>Extract over your SPT folder \u2014 the one that holds <code>SPT_Runtime</code> \u2014 and let it overwrite. It is one folder on each side, <code>BepInEx/plugins/Casino</code> and <code>SPT_Runtime/user/mods/Casino</code>.</p>\n<p><strong>Coming from any 1.x casino release, that is the whole job.</strong> 1.2.6 replaces every file the older versions installed, so there is nothing left over to clean up.</p>\n<p><strong>Coming from the old separate Blackjack, Poker or Roulette mods?</strong> Delete those first. They were folded into this one mod back in 1.0, and extracting over them does not remove them \u2014 leave them in place and you get a duplicate tab per old mod and two copies of the same server routes. Remove these if you have them, from both sides:</p>\n<pre><code>BepInEx/plugins/Blackjack        SPT_Runtime/user/mods/Blackjack\nBepInEx/plugins/Poker            SPT_Runtime/user/mods/Poker\nBepInEx/plugins/Roulette         SPT_Runtime/user/mods/Roulette\n</code></pre>\n<p>Nothing is lost by deleting them. If the house owed you money on an interrupted hand, 1.2.6 finds that record in the old folder and pays it either way.</p>\n<p><strong>If you downloaded 1.2.6 before this post went up, replace it.</strong> The first archive under that version number had the last bug on the list above. To check which one you have, right-click <code>BepInEx/plugins/Casino/Casino.Client.dll</code> \u2192 Properties \u2192 Details: if the product version ends in <code>dca357a</code>, that is the old one.</p>\n<p>Nothing else changed. Same odds, same payouts, same buy-ins \u2014 the slot machine still returns 92.51%.</p>\n",
      "spt_constraint": "~4.1.0",
      "fika": "unknown",
-     "downloads": 12,
+     "downloads": 316,
      "size": 7596749,
      "link": "https://sp-mod.com/mod/download/2994/spt-casino/1.2.6",
      "published_at": "2026-09-09T22:48:00.000000Z",
@@ -196741,7 +196791,7 @@
      "description": "<h1>SPT Casino 1.2.0</h1>\n<p>One real money bug, cards that move like cards, and the first sound cues \u2013 silent for\nnow, but every table is already calling them.</p>\n<h2>A bug: bets could reach into your gear, not just your stash</h2>\n<p><strong>Placing a bet could pull roubles, dollars or euros from your pockets, secure\ncontainer, backpack or rig</strong> \u2013 anywhere in your inventory holding that currency, not\njust the stash. Which stack it drew from depended on inventory order, which the game\ndoes not guarantee, so a bet could quietly empty gear you were about to carry into a\nraid.</p>\n<p>Every table\u2019s Bank now checks that a stack actually resolves to your stash before\ncounting it. Winnings already paid back into the stash correctly; only what a bet could\nspend was affected. Blackjack, Poker, Roulette and Slots all get the fix.</p>\n<h2>Cards deal in and flip, instead of popping into existence</h2>\n<p>Blackjack and Poker\u2019s cards now slide in from a shared point above the table \u2013 the\ndealer\u2019s own row for Blackjack, a marker above the felt for Poker \u2013 landing one after\nanother the way a dealer actually works a table, not all at once. Poker\u2019s hole cards go\nout left to right by seat position, a card to every seat and then a second pass for the\nnext one.</p>\n<p><strong>A card resolving from face-down to face-up flips instead of dealing back in.</strong>\nBlackjack\u2019s dealer turning over their hole card, and Poker\u2019s showdown, used to look like\na brand new card sliding onto a spot that was already occupied. It shrinks edge-on and\ngrows back out face up instead \u2013 a turn, not an arrival.</p>\n<h2>The result waits for the cards to finish moving</h2>\n<p>Blackjack\u2019s WIN/LOSE and Poker\u2019s showdown headline (\u201cYou win 4,820 with a flush\u201d) used\nto appear the instant the server replied, which could be before the card that decided\nthe hand had actually finished turning over. Both now hold back until every card still\nin motion has landed, so the table never tells you the result before you can see it for\nyourself.</p>\n<h2>Sound is wired in, but silent for now</h2>\n<p>Dealing, chips landing, the wheel and the reels spinning, the win banner \u2013 every one of\nthose already fires its own cue, on every table. No audio files ship with this release,\nso nothing plays yet. Once they do, dropping a file into the plugin\u2019s <code>sounds</code> folder,\nnamed for the cue, is the entire remaining step \u2013 no rebuild required.</p>\n<hr />\n<p>Everything else is identical to 1.1.0. No change to any table\u2019s odds, payouts, or\nbuy-in.</p>\n",
      "spt_constraint": "~4.1.0",
      "fika": "compatible",
-     "downloads": 58,
+     "downloads": 61,
      "size": 7580431,
      "link": "https://sp-mod.com/mod/download/2994/spt-casino/1.2.0",
      "published_at": "2026-09-08T22:15:00.000000Z",
@@ -196753,7 +196803,7 @@
      "description": "<h1>SPT Casino 1.1.0</h1>\n<h2>A fourth table: the slot machine</h2>\n<p>Five reels, three rows, and <strong>243 ways to win</strong> instead of paylines \u2014 any symbol\nlanding on three or more reels running left to right pays, and landing more than once\non a reel multiplies that win instead of just counting once. All nine symbols can pay\non the same pull.</p>\n<p>The reels actually spin: they snap up to speed, hold flat out, and ease into their\nstop with a little overshoot, the way a real reel settles rather than a wheel winding\ndown.</p>\n<p><strong>92.510% back, 7.490% to the house</strong> \u2014 computed from the strips and the paytable\nrather than measured by spinning it a lot, and checked against two million pulls to be\nsure the two agree.</p>\n<table>\n<thead>\n<tr>\n<th>Symbol</th>\n<th>3</th>\n<th>4</th>\n<th>5</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Can of TarCola</td>\n<td>1x</td>\n<td>1x</td>\n<td>1x</td>\n</tr>\n<tr>\n<td>Salewa first aid kit</td>\n<td>1x</td>\n<td>1x</td>\n<td>2x</td>\n</tr>\n<tr>\n<td>Fierce Hatchling moonshine</td>\n<td>1x</td>\n<td>2x</td>\n<td>2x</td>\n</tr>\n<tr>\n<td>Tetriz portable game console</td>\n<td>1x</td>\n<td>2x</td>\n<td>5x</td>\n</tr>\n<tr>\n<td>Roler gold watch</td>\n<td>1x</td>\n<td>2x</td>\n<td>5x</td>\n</tr>\n<tr>\n<td>Golden rooster figurine</td>\n<td>2x</td>\n<td>4x</td>\n<td>12x</td>\n</tr>\n<tr>\n<td>Graphics card</td>\n<td>5x</td>\n<td>20x</td>\n<td>80x</td>\n</tr>\n<tr>\n<td>Physical Bitcoin</td>\n<td>10x</td>\n<td>50x</td>\n<td>250x</td>\n</tr>\n<tr>\n<td>TerraGroup Labs keycard (red)</td>\n<td>25x</td>\n<td>150x</td>\n<td>1000x</td>\n</tr>\n</tbody>\n</table>\n<p>Every icon on the reels is the game\u2019s own, rendered from your own installation the\nsame way the stash renders yours \u2014 not shipped art.</p>\n<p>There is nothing to sit down at. No seat, no hand to hold, no chips to build up: walk\nup, spin, walk away.</p>\n<p><strong>Roubles, dollars or euros</strong> \u2014 the first table here that isn\u2019t roubles-only.</p>\n<table>\n<thead>\n<tr>\n<th>Wallet</th>\n<th>Minimum</th>\n<th>Maximum</th>\n<th>Step</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Roubles</td>\n<td>5,000</td>\n<td>50,000</td>\n<td>5,000</td>\n</tr>\n<tr>\n<td>Dollars</td>\n<td>50</td>\n<td>500</td>\n<td>50</td>\n</tr>\n<tr>\n<td>Euros</td>\n<td>50</td>\n<td>500</td>\n<td>50</td>\n</tr>\n</tbody>\n</table>\n<p>The stake is typed, not just stepped \u2014 click the box and enter any amount between the\ntwo ends. <strong>F12 \u2192 Slots \u2192 No maximum stake</strong> lifts the ceiling entirely, the same way\nBlackjack\u2019s table maximum works: the machine pays up to a thousand times the stake, so\na capped win is already 50,000,000, and the cap is the house being careful on your\nbehalf. You can tell it not to be.</p>\n<p>Win it back and the banner says how big by how it looks \u2014 WIN, BIG WIN, HUGE WIN,\nJACKPOT, growing from 36pt to 64pt with the multiple. From twenty times the stake up,\nthe letters run their own band of colour.</p>\n<p><strong>Slots gets a lifetime record, the same way Blackjack already has one.</strong> A STATS\nbutton next to CLOSE covers the reels with pulls, win/loss, hit rate, the best\nmultiple you\u2019ve ever hit, how many pulls cleared JACKPOT, your current and best\nstreak, and staked/returned/net per currency.</p>\n<h2>AUTO, and a SPEED switch that isn\u2019t only for it</h2>\n<p><strong>AUTO</strong>, under SPIN \u2014 click it and the machine keeps pulling on its own, pausing a\nbeat after each spin so the result actually sits on screen, until you click it again.\nClosing the machine stops it too, and so does a pull that comes back with an error: it\nwill not sit there quietly retrying against a wallet that cannot cover the stake.</p>\n<p><strong>SPEED</strong>, under AUTO \u2014 one button, cycling 1X, 2X, 4X, 6X. It is not a blur dialled\nup: the belt still scrolls at the same rate either way, a faster setting just runs the\nspin for less time, so it travels fewer cells before landing rather than the same\ncells faster. And it is not only AUTO\u2019s \u2014 turn it up and a manual SPIN is quick too.\nAUTO\u2019s own pause between pulls shortens by the same amount, so a 6X run actually moves.</p>\n<p>Both buttons are green throughout. STOP is AUTO clicked again, not a second button,\nthe same way getting back to 1X is SPEED clicked around to it rather than a switch of\nits own.</p>\n<h2>One money box, shared with Blackjack</h2>\n<p>Blackjack\u2019s wager box and the slot machine\u2019s stake box are the same control now.\nBlackjack gains the separators the stake box already had \u2014 1,250,000 instead of\n1250000 \u2014 and the stake box gains a caret you can actually see, which Blackjack\u2019s box\nalready had. Neither table had both before.</p>\n<p>That also caught a smaller bug: the caret used to be invisible the <em>first</em> time you\nopened either box in a session \u2014 closing the panel and reopening it was what actually\nfixed it, by accident. It shows straight away now, in both places.</p>\n<h2>The server console, quieter still</h2>\n<p>1.0.1 cut the startup block down to one line naming every table:</p>\n<pre><code>[Casino] v1.0.1 ready -- blackjack, hold'em and a single-zero wheel, playing for real roubles.\n</code></pre>\n<p>It says less now:</p>\n<pre><code>[Casino] v1.1.0\n</code></pre>\n<p>The version was always the part worth having at a glance \u2014 SPT logs the rest itself \u2014\nand it\u2019s still in colour.</p>\n<hr />\n<p>Everything else is identical to 1.0.1. No change to Blackjack, Poker or Roulette\u2019s\nmoney, odds or rules.</p>\n",
      "spt_constraint": "~4.1.0",
      "fika": "unknown",
-     "downloads": 383,
+     "downloads": 385,
      "size": 7572328,
      "link": "https://sp-mod.com/mod/download/2994/spt-casino/1.1.0",
      "published_at": "2026-09-07T13:00:00.000000Z",
@@ -196777,14 +196827,14 @@
      "description": "<p>release</p>\n",
      "spt_constraint": "~4.1.0",
      "fika": "unknown",
-     "downloads": 325,
+     "downloads": 326,
      "size": 7340391,
      "link": "https://sp-mod.com/mod/download/2994/spt-casino/1.0.0",
      "published_at": "2026-09-05T20:51:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.2.6",
+   "latest_version": "1.2.61",
    "spt_constraint": "~4.1.0",
    "all_spt_constraints": [
     "~4.1.0"
@@ -196792,7 +196842,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-09-09T22:48:00.000000Z",
-   "updated_at": "2026-09-09T22:55:35.000000Z",
+   "updated_at": "2026-09-10T23:16:03.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
@@ -197260,14 +197310,14 @@
    "id": 2999,
    "hub_id": null,
    "guid": "com.mizmii.terminalcommander",
-   "name": "Terminal Commander [WIP]",
-   "slug": "terminal-commander-wip",
+   "name": "Terminal Commander",
+   "slug": "terminal-commander",
    "teaser": "Adds a new trader with an in-raid storyline with voice acting, chapters, and a large variety of equipment. Great for people who want a lot of story and trader content similar to vanilla EFT.",
    "description_html": "<blockquote>\n<p>This mod is ONLY for SPT 4.1, and CANNOT be backported. DO NOT ASK!</p>\n</blockquote>\n<hr />\n<h2>This mod adds a large amount of new content to SPT, including 2 new chapters that unlock a new trader, Yuri.</h2>\n<blockquote>\n<p>Yuri is the commander of the port, who oversees the supply and general tasks of the RUAF stationed there.\nHe doesn\u2019t just trade with anyone, he expects his partners to be well-trained and willing to do anything for him.</p>\n</blockquote>\n<hr />\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">PREVIEWS</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/user-attachments/assets/f91c3d40-6a2f-4950-a791-e34bb4b1cffd\" alt=\"Kerman\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/user-attachments/assets/400f832d-1412-4cf5-8230-0dde55505243\" alt=\"RUAF\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/ReplayDEVYT/TerminalCommander/blob/main/pictures/quest.png?raw=true\" alt=\"Image1\" /></p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">INSTALLING</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://wiki.sp-tushonka.com/mod-install-v1.gif\" alt=\"Installation\" /></p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">UNINSTALLING</div>\n<div class=\"tab-content\"><p><em>Uninstalling this mod is a bit different from other mods!</em>\nTo delete every single file:</p>\n<ul>\n<li>Clear the associated mod files from BepInEx/config/VisitAPI</li>\n<li>Delete the TerminalCommander mod folder from user/mods</li>\n<li>Delete the kerman.json and terminal_quests2.json files from user/mods/VisitAPI</li>\n</ul>\n<p>This may change in the future. For now, VisitAPI is the primary quest loader for this mod.</p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">ACCESS QUEST GUIDE</div>\n<div class=\"tab-content\"><div class=\"youtube-lite\" data-video-id=\"xq2No9S95p0\" data-embed-url=\"https://www.youtube-nocookie.com/embed/xq2No9S95p0?autoplay=1\"><img src=\"https://i.ytimg.com/vi/xq2No9S95p0/hqdefault.jpg\" alt=\"YouTube video thumbnail\" loading=\"lazy\" decoding=\"async\" /></div></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">KNOWN ISSUES</div>\n<div class=\"tab-content\"><ul>\n<li>In-raid trading seems to currently have an issue where the entire stock will have extremely strange loading behavior. This seems to mostly affect weapons, and doesn\u2019t have any affect if sorting by LL3. For now, just scroll through the stock and sort by category to fix this bug.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">AI USAGE INFO</div>\n<div class=\"tab-content\"><p>No AI was used to write any of the code in this project, nor any of the dialogue/quests/chapters. All of this was written by me, by hand.</p>\n<p>If any AI is used, it will ONLY be used to translate locales to other languages.</p>\n<p>I am a game developer, I know how to code. I don\u2019t need a robot to help me do my job.</p></div></div></div>\n<hr />\n<h1>Contributors:</h1>\n<ul>\n<li>GoatBoy for making <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2834/ultimate-trader-assort-editor\" rel=\"noreferrer noopener\">UTAE</a> and adding the requested \u201cExport Assort\u201d feature. Absolute livesaver</li>\n<li>TricolourLM7 for making <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2788/visitapi-framework\" rel=\"noreferrer noopener\">VisitAPI</a>. This mod would not exist without VisitAPI being a thing. Thank you for the support with the editor aswell!</li>\n<li>WTT team for WTT-CommonLib</li>\n<li>A few people from the SPT community for balancing feedback</li>\n<li>My friend Emils for voice acting Yuri (thank you bro!)</li>\n</ul>\n",
    "thumbnail": "https://files.sp-mod.com/mods/9MQffKyb7qGKy6CcBm0zNAS4BNLWthoB4IUS2ni9.png",
-   "forge_url": "https://sp-mod.com/mod/2999/terminal-commander-wip",
-   "downloads": 893,
-   "favourites": 9,
+   "forge_url": "https://sp-mod.com/mod/2999/terminal-commander",
+   "downloads": 1414,
+   "favourites": 13,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -197295,14 +197345,41 @@
    ],
    "versions": [
     {
+     "id": 15325,
+     "version": "1.2.0",
+     "description": "<h2>Stable enough to be out of WIP!</h2>\n<h1>Additions</h1>\n<ul>\n<li><strong>Added a new storyline chapter, Chemical Leak.</strong></li>\n</ul>\n<blockquote>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/ReplayDEVYT/TerminalCommander/blob/main/pictures/chemicalleak.png?raw=true\" alt=\"Image1\" />\nThis questline is not finished but gives you skill/XP rewards as compensation.</p>\n</blockquote>\n<ul>\n<li>Added a new quest-related item: Liquid Analysis Device\n<img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/ReplayDEVYT/TerminalCommander/blob/main/pictures/lad.png?raw=true\" alt=\"LAD\" /></li>\n<li>Reward details have been added to story quests and important side quests\n<img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/ReplayDEVYT/TerminalCommander/blob/main/pictures/details.png?raw=true\" alt=\"Details\" /></li>\n</ul>\n<h1>Changes</h1>\n<ul>\n<li>Added the LAD to Yuri\u2019s assort.</li>\n<li>Made quests in \u201cGaining Trust\u201d auto-complete. You no longer have to go back to the port every time you finish a task for the chapter.</li>\n<li><strong>Completely changed the way Yuri functions.</strong></li>\n</ul>\n<blockquote>\n<p>Unlocking Yuri now unlocks him in the menu. Completing Radio Communications lets you accept and continue story quests from him by pressing a VISIT button.\n<img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/ReplayDEVYT/TerminalCommander/blob/main/pictures/visit.png?raw=true\" alt=\"Visit\" /></p>\n</blockquote>\n<h1>Fixes</h1>\n<ul>\n<li>Fixed a few dialogue issues</li>\n<li>Fixed certain locales (RU, CH) showing blank IDs by adding non-translated locales to files. More to come later, no translation yet.</li>\n</ul>\n",
+     "spt_constraint": "~4.1",
+     "fika": "unknown",
+     "downloads": 65,
+     "size": 162955462,
+     "link": "https://sp-mod.com/mod/download/2999/terminal-commander/1.2.0",
+     "published_at": "2026-09-11T01:34:00.000000Z",
+     "dependencies": [
+      {
+       "id": 2310,
+       "name": "WTT - CommonLib",
+       "slug": "wtt-commonlib",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
+      },
+      {
+       "id": 2788,
+       "name": "VisitAPI Framework",
+       "slug": "visitapi-framework",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2788/visitapi-framework"
+      }
+     ]
+    },
+    {
      "id": 15261,
      "version": "1.1.0",
      "description": "<h1>Additions</h1>\n<ul>\n<li>Added a new multi-part questline to Yuri.</li>\n</ul>\n<blockquote>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/ReplayDEVYT/TerminalCommander/blob/main/pictures/quest.png?raw=true\" alt=\"Image1\" />\nThe end of this questline is difficult but gives you amazing rewards.</p>\n</blockquote>\n<ul>\n<li>Added a bunch of new weapons and gear to Yuri\u2019s assort</li>\n</ul>\n<blockquote>\n<p>Yuri\u2019s new assort now has \u201cgambling\u201d weapons for extremely low prices, with a limited supply. These weapons have random durability from 0-100.\n<img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/ReplayDEVYT/TerminalCommander/blob/main/pictures/stock.png?raw=true\" alt=\"Image2\" /></p>\n</blockquote>\n<h1>Changes</h1>\n<ul>\n<li>Rebalanced many quest rewards</li>\n<li>Rebalanced Yuri\u2019s assortment</li>\n<li>Loyalty level 3 can now be unlocked</li>\n</ul>\n<h1>Fixes</h1>\n<ul>\n<li>Fixed a few quest dialogue issues</li>\n<li>Fixed Kerman appearing too early in hideout</li>\n</ul>\n<blockquote>\n<p>In-raid trading seems to currently have an issue where the entire stock will have extremely strange loading behavior. This seems to mostly affect weapons, and doesn\u2019t have any affect if sorting by LL3. For now, just scroll through the stock and sort by category to fix this bug.</p>\n</blockquote>\n",
      "spt_constraint": "~4.1",
      "fika": "unknown",
-     "downloads": 377,
+     "downloads": 830,
      "size": 160967483,
-     "link": "https://sp-mod.com/mod/download/2999/terminal-commander-wip/1.1.0",
+     "link": "https://sp-mod.com/mod/download/2999/terminal-commander/1.1.0",
      "published_at": "2026-09-07T02:41:00.000000Z",
      "dependencies": [
       {
@@ -197327,9 +197404,9 @@
      "description": "<p>Initial Release</p>\n<p>Includes multiple sidequests and a large assortment of items. Level 3 may not be obtainable yet.</p>\n",
      "spt_constraint": "4.1.x",
      "fika": "unknown",
-     "downloads": 516,
+     "downloads": 519,
      "size": 160957639,
-     "link": "https://sp-mod.com/mod/download/2999/terminal-commander-wip/1.0.0",
+     "link": "https://sp-mod.com/mod/download/2999/terminal-commander/1.0.0",
      "published_at": "2026-09-06T07:00:38.000000Z",
      "dependencies": [
       {
@@ -197349,7 +197426,7 @@
      ]
     }
    ],
-   "latest_version": "1.1.0",
+   "latest_version": "1.2.0",
    "spt_constraint": "~4.1",
    "all_spt_constraints": [
     "4.1.x",
@@ -197388,7 +197465,7 @@
     }
    ],
    "published_at": "2026-09-06T06:46:00.000000Z",
-   "updated_at": "2026-09-07T22:47:48.000000Z",
+   "updated_at": "2026-09-11T01:38:40.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -198225,6 +198302,76 @@
     "contains_ads": false,
     "contains_ai_content": true,
     "ai_disclosure": "<p>Sonnet was utilized.</p>\n",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 3014,
+   "hub_id": null,
+   "guid": "com.elmerglue.refrework",
+   "name": "Ref Rework",
+   "slug": "ref-rework",
+   "teaser": "Sell dogtags to Ref for GP coins!",
+   "description_html": "<p>NOTE: The vast majority of this mod is from Geko\u2019s Better Progression (sp-mod.com/mod/2088/gekos-better-progression) by DrunkGeko, with permission. Go check out their mod, this is just a small part of it ripped out and ported to SPT 4.1.x</p>\n<p>This mod lets you sell dogtags to Ref, in exchange for GP. Higher level dogtags are worth more GP.</p>\n<p>Config includes:</p>\n<p>-Fine tune how much dogtags are worth in GP, with default values, they increase in value by 1 GP for every 7 levels, capping at 10 GP</p>\n<p>-Blocks dogtag sales to other traders, can turn off</p>\n<p>-Lega Medal barter at Ref 1, costs 100 GP, adjustable</p>\n<p>-Lega Medals can no longer be sold, only used in barters</p>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/WOnv7zlsBJ9OSWNGbdIK9Qfp5aeNRiBFUASFHULT.png",
+   "forge_url": "https://sp-mod.com/mod/3014/ref-rework",
+   "downloads": 107,
+   "favourites": 2,
+   "featured": false,
+   "fika": false,
+   "fika_latest": "unknown",
+   "category": {
+    "id": 2,
+    "title": "Overhauls",
+    "slug": "overhauls"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 12091,
+     "name": "Elmer Glue",
+     "avatar": "https://ui-avatars.com/api/?name=E+G&color=7F9CF5&background=EBF4FF"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/Elmer-Glue/RefRework",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 15324,
+     "version": "1.0.0",
+     "description": "<p>SPT 4.1.x</p>\n",
+     "spt_constraint": "4.1.x",
+     "fika": "unknown",
+     "downloads": 107,
+     "size": 17428,
+     "link": "https://sp-mod.com/mod/download/3014/ref-rework/1.0.0",
+     "published_at": "2026-09-11T00:30:00.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "1.0.0",
+   "spt_constraint": "4.1.x",
+   "all_spt_constraints": [
+    "4.1.x"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-09-11T00:10:00.000000Z",
+   "updated_at": "2026-09-11T00:31:05.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": true,
+    "ai_disclosure": "<p>AI was used to assist in porting code to 4.1.x</p>\n",
     "cheat_notice": false,
     "profile_binding_notice": false
    },
