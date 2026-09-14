@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-09-14T13:00:11Z",
+ "generated_at": "2026-09-14T19:53:01Z",
  "source": "https://sp-mod.com",
  "filter": "all",
- "mod_count": 1954,
+ "mod_count": 1957,
  "categories": [
   {
    "id": 12,
@@ -71797,8 +71797,8 @@
    "description_html": "<p>This is an updated version of the \u201c<a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1234/all-ammo-trader\" rel=\"noreferrer noopener\">All ammo trader</a>\u201d mod by VAFELZ, compatible with SPT 4.0+</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/2127.jpg",
    "forge_url": "https://sp-mod.com/mod/1554/all-ammo-trader-updated-by-tiltushkin",
-   "downloads": 52399,
-   "favourites": 26,
+   "downloads": 52994,
+   "favourites": 34,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -71815,7 +71815,7 @@
     {
      "id": 57474,
      "name": "Tiltushkin",
-     "avatar": "https://files.sp-mod.com/profile-photos/0a8JioCGPDGYI1IphKcykE7JIZXoL2gdi4oTPU6Y_256w.webp"
+     "avatar": "https://files.sp-mod.com/profile-photos/hrUytaVNu34lsiyfcwJssARt4ajoBI0KR7ghxesh_256w.webp"
     }
    ],
    "source_links": [
@@ -71825,17 +71825,29 @@
     },
     {
      "url": "https://github.com/Tiltushkin/Tiltushkin-AllAmmo-CSharp",
-     "label": "4.0"
+     "label": "4.0 - 4.1"
     }
    ],
    "versions": [
+    {
+     "id": 15398,
+     "version": "1.5.0",
+     "description": "<h1>Updated for SPT 4.1.x</h1>\n",
+     "spt_constraint": "~4.1.3",
+     "fika": "compatible",
+     "downloads": 35,
+     "size": 2898664,
+     "link": "https://sp-mod.com/mod/download/1554/all-ammo-trader-updated-by-tiltushkin/1.5.0",
+     "published_at": "2026-09-14T17:56:00.000000Z",
+     "dependencies": []
+    },
     {
      "id": 12938,
      "version": "1.3.0",
      "description": "<h2>In this update, trader received error logs and, at your request, its own assortment configuration settings!</h2>\n<h3>Now you can understand exactly what error the mod encountered (e.g., mod conflict or other errors). All logs are recorded in the server console (as well as in the .log file at SPT/user/logs/spt).</h3>\n<h3>Now, about the config. It gives you convenient control over the merchant\u2019s assortment. Before you begin, you should understand that this config is server-side, which means it will be applied the next time the server is started. The config is created automatically when the server is first started in the directory SPT/user/mods/Tiltushkin-AllAmmo/config/.</h3>\n<h3>You don\u2019t need to add anything to this config yourself. Each time the merchant\u2019s assortment changes, new items will be automatically added to the config. And if you suddenly add an item to the config that is not in the assortment, the mod will tell you about it and remove it from the config itself.</h3>\n<h3>Next, about the configuration structure and possible settings:</h3>\n<pre><code>\u201cID from assort (not tpl)\u201d:\n{\n     \u201cItemName\u201d: \u201cstring\u201d,\n     \u201cPriceMultiplier\u201d: 0.01 - infinity,\n     \u201cStockCount\u201d: -1/0/your number\n}\n</code></pre>\n<ul>\n<li>\n<h3>ID from assort - is the ID of the item from the merchant\u2019s assortment</h3>\n</li>\n<li>\n<h3>ItemName - is the name of the item in the game (in English), you can change it to anything you want, it is done for convenience to understand what the item is</h3>\n</li>\n<li>\n<h3>PriceMultiplier - is the multiplier of the base price of the item</h3>\n</li>\n<li>\n<h3>StockCount - the number of item the merchant has. If you specify -1, the item will disappear from the merchant\u2019s assortment; if you specify 0, the standard number of items from the assortment will be used</h3>\n</li>\n</ul>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 11579,
+     "downloads": 12104,
      "size": 2897132,
      "link": "https://sp-mod.com/mod/download/1554/all-ammo-trader-updated-by-tiltushkin/1.3.0",
      "published_at": "2026-01-29T09:42:00.000000Z",
@@ -71847,7 +71859,7 @@
      "description": "<h1>The trader has been completely rewritten in C#, now working with SPT 4.0+</h1>\n<h1>Four new cartridges and two grenade launcher rounds have been added:</h1>\n<ul>\n<li>.50 BMG HP (1156 \u20bd)</li>\n<li>.50 BMG M21 (1292 \u20bd)</li>\n<li>.50 BMG M33 (1700 \u20bd)</li>\n<li>.50 BMG M903 SLAP (3145 \u20bd)</li>\n<li>40mm VOG-25 grenade (6000 \u20bd)</li>\n<li>40x46mm M386 (HE) grenade (8363 \u20bd)</li>\n</ul>\n",
      "spt_constraint": "~4.0 <4.1.0",
      "fika": "compatible",
-     "downloads": 12412,
+     "downloads": 12421,
      "size": 2894551,
      "link": "https://sp-mod.com/mod/download/1554/all-ammo-trader-updated-by-tiltushkin/1.2.0",
      "published_at": "2025-10-16T13:22:00.000000Z",
@@ -71859,7 +71871,7 @@
      "description": "<p>1. The folder name no longer includes the version (the folder has been renamed to <strong>FLATCULT-ALLAMMO</strong>).</p>\n<p>2. A new cartridge \u201c7.62x51mm M80A1\u201d, has been added.</p>\n<p>**Before updating, make sure to delete the old \u201cKENTOZE-ALLAMMO-x.x.x\u201d folder.</p>\n<p>SPT 3.11.x**</p>\n",
      "spt_constraint": "~3.11.0",
      "fika": "unknown",
-     "downloads": 8403,
+     "downloads": 8415,
      "size": null,
      "link": "https://sp-mod.com/mod/download/1554/all-ammo-trader-updated-by-tiltushkin/1.1.7",
      "published_at": "2025-04-23T06:13:34.000000Z",
@@ -71871,7 +71883,7 @@
      "description": "<p>Updated for SPT 3.11</p>\n",
      "spt_constraint": "~3.11.0",
      "fika": "unknown",
-     "downloads": 1529,
+     "downloads": 1531,
      "size": null,
      "link": "https://sp-mod.com/mod/download/1554/all-ammo-trader-updated-by-tiltushkin/1.1.6",
      "published_at": "2025-04-11T10:35:21.000000Z",
@@ -71883,7 +71895,7 @@
      "description": "<p>The trader has been updated to version SPT 3.10.</p>\n<p>4 new ammo types have been added:</p>\n<ul>\n<li><strong>.50 AE JHP</strong></li>\n<li><strong>.50 AE HAWK JSP</strong></li>\n<li><strong>.50 AE COPPER SOLID</strong></li>\n<li><strong>.50 AE FMJ</strong></li>\n</ul>\n<p><strong>FOR SPT 3.10+</strong></p>\n<p>Have a great raid!</p>\n",
      "spt_constraint": "~3.10.0",
      "fika": "unknown",
-     "downloads": 8071,
+     "downloads": 8073,
      "size": null,
      "link": "https://sp-mod.com/mod/download/1554/all-ammo-trader-updated-by-tiltushkin/1.1.5",
      "published_at": "2024-11-28T17:37:58.000000Z",
@@ -71895,26 +71907,27 @@
      "description": "<p>Fixed Barter\u2019s image<br />\n<strong>FOR SPT 3.9.0 - 3.9.8</strong></p>\n",
      "spt_constraint": "3.9.8",
      "fika": "unknown",
-     "downloads": 10024,
+     "downloads": 10029,
      "size": null,
      "link": "https://sp-mod.com/mod/download/1554/all-ammo-trader-updated-by-tiltushkin/1.1.4",
      "published_at": "2024-07-13T09:27:03.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.3.0",
-   "spt_constraint": "~4.0.0",
+   "latest_version": "1.5.0",
+   "spt_constraint": "~4.1.3",
    "all_spt_constraints": [
     "3.9.8",
     "~3.10.0",
     "~3.11.0",
     "~4.0 <4.1.0",
-    "~4.0.0"
+    "~4.0.0",
+    "~4.1.3"
    ],
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2024-07-13T07:11:00.000000Z",
-   "updated_at": "2026-07-28T07:57:50.000000Z",
+   "updated_at": "2026-09-14T17:57:03.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -199315,11 +199328,11 @@
    "name": "Interchange Rework",
    "slug": "interchange-rework",
    "teaser": "The reworked Interchange from EFT 1.0, on SPT 4.1. Pick which mall you raid, every raid.",
-   "description_html": "<p>This is the Interchange that shipped with EFT 1.0, rebuilt from a retail install and\nrunning on SPT 4.1.</p>\n<p>The original SPT Interchange is still accessible from a map selection screen.  Both variants share a location id, so quests, insurance and your stats only ever see one Interchange.</p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">What you get</div>\n<div class=\"tab-content\"><p>EFT 1.0 Interchange scenes are rebuilt into one bundle and swapped in as the raid loads. Loot\nspawns, static containers, keys, extracts and transits come from the map\u2019s own data.</p>\n<p>Select Interchange on the map screen and you get asked which one to load. Both are the same location\nid, so a quest that wants Interchange counts on either.</p>\n<p>Bots can actually use the new ground. The navmesh is baked over the whole playable area instead of\ninherited from the old map, with the minefields and sniper zones carved out, so scavs and PMCs\npatrol everywhere rather than stopping where the old boundary used to be.</p>\n<p>Audio is retail\u2019s too, including the room-routing table the spatial audio was baked against. Without\nthat table, gunfire two rooms away comes through a wall as if the wall were not there.</p>\n<p>Fika works, hosted from a client or from a headless. The headless follows whatever the players\npicked, raid by raid.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Compatibility</div>\n<div class=\"tab-content\"><ul>\n<li>Fika Headless</li>\n<li>Waypoints own Interchange navmesh gets declined on the reworked map, because its bake predates\nthese areas and it replaces the whole mesh rather than adding to it. Every other map still gets it.</li>\n<li>ABPS</li>\n</ul>\n<p>all work and were running through all of my testing.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Installing</div>\n<div class=\"tab-content\"><p>Open the archive with 7-Zip and drag <strong>all</strong> of its contents into your SPT folder:</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/3N6gTe2.gif\" alt=\"mod install\" /></p>\n<p>Both halves need to be on every machine that runs a raid, headless included.</p>\n<p>The map is added, not replaced, so you can take it out again. Nothing is written into your game\ninstall and stock Interchange is untouched either way.</p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Settings</div>\n<div class=\"tab-content\"><p>Plugin config is <code>BepInEx\\config\\com.lennoxp90.interchangerework.cfg</code>, or the F12 page.</p>\n<ul>\n<li><strong>Enabled</strong> - off means every raid is stock Interchange.</li>\n<li><strong>Ask Which Interchange</strong> - the map screen prompt. Off, and every raid uses whichever version is\nconfigured, without asking.</li>\n<li><strong>Perfect Culling</strong> - retail\u2019s own occlusion culling, on by default. It is what makes a map this\nsize affordable, and it uses the packed grid in the archive.</li>\n<li><strong>Disable Occlusion Culling</strong> - fallback if your culling data is missing or does not match.</li>\n<li><strong>Builtin Terrain Tiles</strong> - terrain shading. Leave it unless the ground looks wrong.</li>\n</ul>\n<p>Server side, <code>SPT_Runtime\\user\\mods\\LennoxP90-InterchangeRework\\config\\</code> has loose loot density,\nwhere 1.0 is the same proportion of loot points as stock Interchange. Restart to apply.</p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">For mod authors</div>\n<div class=\"tab-content\"><p>If you add items, keys, extracts, zones or spawns to this map: register at <code>Preload</code> and subscribe\nto <code>VariantRegistry.Installing</code>, and your content gets mirrored into the reworked dataset. Writing\ninto the location table directly lands it on whichever variant happens to be installed at the time,\nwhich is not what you want.</p>\n<p>Every id this map defines is in <code>manifest.json</code> beside the server mod and in\n<a target=\"_blank\" class=\"external-link\" href=\"https://github.com/LennoxP90/SPT-InterchangeRework/blob/main/docs/IDS.md\" rel=\"noreferrer noopener\">IDS.md</a>.\n<a target=\"_blank\" class=\"external-link\" href=\"https://github.com/LennoxP90/SPT-InterchangeRework/blob/main/docs/EXTENDING.md\" rel=\"noreferrer noopener\">EXTENDING.md</a> has\nthe rest.</p></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Credits</div>\n<div class=\"tab-content\"><p><strong>Manimal</strong>, whose Icebreaker and Labs backports worked out how a retail map gets from a rip to a\nrunning SPT raid: the scene swap, the sidecar restore, the StreamingAssets redirect. I followed that\nmethod the whole way through.</p>\n<p><strong>DrakiaXYZ</strong>, whose Waypoints showed where in the raid lifecycle a navmesh can be swapped.</p></div></div></div>\n",
+   "description_html": "<p>This is the Interchange that shipped with EFT 1.0, rebuilt from a retail install and\nrunning on SPT 4.1.</p>\n<p>The original SPT Interchange is still accessible from a map selection screen.  Both variants share a location id, so quests, insurance and your stats only ever see one Interchange.</p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">What you get</div>\n<div class=\"tab-content\"><p>EFT 1.0 Interchange scenes are rebuilt into one bundle and swapped in as the raid loads. Loot\nspawns, static containers, keys, extracts and transits come from the map\u2019s own data.</p>\n<p>Select Interchange on the map screen and you get asked which one to load. Both are the same location\nid, so a quest that wants Interchange counts on either.</p>\n<p>Bots can actually use the new ground. The navmesh is baked over the whole playable area instead of\ninherited from the old map, with the minefields and sniper zones carved out, so scavs and PMCs\npatrol everywhere rather than stopping where the old boundary used to be.</p>\n<p>Audio is retail\u2019s too, including the room-routing table the spatial audio was baked against. Without\nthat table, gunfire two rooms away comes through a wall as if the wall were not there.</p>\n<p>Fika works, hosted from a client or from a headless. The headless follows whatever the players\npicked, raid by raid.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Compatibility</div>\n<div class=\"tab-content\"><ul>\n<li>Fika Headless</li>\n<li>Waypoints own Interchange navmesh gets declined on the reworked map, because its bake predates\nthese areas and it replaces the whole mesh rather than adding to it. Every other map still gets it.</li>\n<li>ABPS</li>\n</ul>\n<p>all work and were running through all of my testing.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Installing</div>\n<div class=\"tab-content\"><p>Open the archive with 7-Zip and drag <strong>all</strong> of its contents into your SPT folder:</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/3N6gTe2.gif\" alt=\"mod install\" /></p>\n<p><strong>Upgrading from 1.0.0:</strong> delete <code>BepInEx\\plugins\\LennoxP90-InterchangeRework</code> and\n<code>SPT_Runtime\\user\\mods\\LennoxP90-InterchangeRework</code> before you extract. The culling grid is named\nafter its own content, so extracting over the old install leaves a 441 MB file behind that nothing\nreads.</p>\n<p>Both halves need to be on every machine that runs a raid, headless included.</p>\n<p>The map is added, not replaced, so you can take it out again. Nothing is written into your game\ninstall and stock Interchange is untouched either way.</p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Settings</div>\n<div class=\"tab-content\"><p>Plugin config is <code>BepInEx\\config\\com.lennoxp90.interchangerework.cfg</code>, or the F12 page.</p>\n<ul>\n<li><strong>PromptSelection</strong> - ask which Interchange to load when you pick Interchange on the map screen.\nThe answer applies to that raid only. Off means every Interchange raid loads DefaultSelection\nwithout asking.</li>\n<li><strong>DefaultSelection</strong> - which Interchange to load when PromptSelection is off. Rework is the\nreworked map, Vanilla is the original SPT one. It is also the fallback for anyone who never\nanswers the prompt, a headless included.</li>\n</ul>\n<p>Those two are the whole F12 page. The culling and diagnostic keys are still in the file but are\ndeliberately not shown: they are not preferences, and their defaults are the measured right answer.\nSet one only if a bug report asks you to.</p>\n<p>Upgrading from 1.0.0, your old <code>Enabled</code> and <code>AskWhichInterchange</code> keys are migrated for you.\n<code>Enabled</code> chose which map to load rather than switching the mod off, which is why it is now called\n<code>DefaultSelection</code>.</p>\n<p>Server side, <code>SPT_Runtime\\user\\mods\\LennoxP90-InterchangeRework\\config\\</code> has <code>LooseLootDensity</code>,\nwhere 1.0 is the same proportion of loot points as stock Interchange. Restart to apply.</p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">For mod authors</div>\n<div class=\"tab-content\"><p><strong>Asking which Interchange a raid is.</strong> Both variants share a location id, so nothing in the game\ntells them apart. Read it by reflection, with no compile-time reference to this mod:</p>\n<pre><code>var api = AccessTools.TypeByName(\"InterchangeRework.Client.Api.Interchange\");\nvar variant = (string)AccessTools.Property(api, \"CurrentVariant\").GetValue(null);\n// \"rework\", \"original\", or null\n</code></pre>\n<p><code>null</code> means \u201cnot yet\u201d, never \u201coriginal\u201d: the answer arrives with the raid-start payload, so a\nconsumer that reads it earlier and treats null as vanilla will pick the wrong map. It is resolved\nper raid and is correct on a headless host. There is a <code>VariantResolved</code> event if you would rather\nbe told than poll.</p>\n<p><strong>Adding content.</strong> You can register quest zones against the reworked variant, from a JSON file or\na call, and exits and boss spawns server-side.</p>\n<p>If you add items, keys, extracts, zones or spawns to this map the ordinary way: register at\n<code>Preload</code> and subscribe to <code>VariantRegistry.Installing</code>, and your content gets mirrored into the\nreworked dataset. Writing into the location table directly lands it on whichever variant happens to\nbe installed at the time, which is not what you want.</p>\n<p>Every id this map defines is in <code>manifest.json</code> beside the server mod and in\n<a target=\"_blank\" class=\"external-link\" href=\"https://github.com/LennoxP90/SPT-InterchangeRework/blob/main/docs/IDS.md\" rel=\"noreferrer noopener\">IDS.md</a>.\n<a target=\"_blank\" class=\"external-link\" href=\"https://github.com/LennoxP90/SPT-InterchangeRework/blob/main/docs/EXTENDING.md\" rel=\"noreferrer noopener\">EXTENDING.md</a> has\nthe rest.</p></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Credits</div>\n<div class=\"tab-content\"><p><strong>Manimal</strong>, whose Icebreaker and Labs backports worked out how a retail map gets from a rip to a\nrunning SPT raid: the scene swap, the sidecar restore, the StreamingAssets redirect. I followed that\nmethod the whole way through. Pointing a rebuilt map at the player\u2019s own assets is theirs as well,\nand it is what took 1.1.0 from a 3.45 GB download to 0.97 GB.</p>\n<p><strong>DrakiaXYZ</strong>, whose Waypoints showed where in the raid lifecycle a navmesh can be swapped.</p></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/xgRne1CQxnvnRLt8gRXHvJp0Kns7K83k1hjm4euP.png",
    "forge_url": "https://sp-mod.com/mod/3020/interchange-rework",
-   "downloads": 845,
-   "favourites": 19,
+   "downloads": 2872,
+   "favourites": 41,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -199347,19 +199360,31 @@
    ],
    "versions": [
     {
+     "id": 15395,
+     "version": "1.1.0",
+     "description": "<p><strong>The download is 0.97 GB, down from 3.45 GB.</strong></p>\n<p>The map bundle no longer ships copies of textures your game already has, and points at your own\ninstall instead. Nothing is missing from the map, and there is no load-time cost. Credit for the\napproach goes to Manimal, whose retail map backports are where it comes from.</p>\n<p><strong>Other mods can now ask which Interchange a raid is.</strong> Both variants report the same location id\non purpose, so quests and stats cannot tell them apart, and neither could anyone else. There is now\na small API for it, along with registration for quest zones, exits and boss spawns on the reworked\ntile. The integration guide ships in the repository.</p>\n<p><strong>Fixed</strong></p>\n<ul>\n<li>A Fika headless host could die at raid start. The same fault caused falling through the\npowerstation basement stairs, and invisible walls at the IDEA front doors.</li>\n<li>Quest zones on the reworked map did nothing. Six quests were affected: Chumming, Hot Delivery,\nMinibus, Informed Means Armed, The Blood of War Part 1 and Provocation.</li>\n<li>Ground loot thinned out over a session, falling from 1438 items to 186 over five raids until the\nserver was restarted.</li>\n<li>The client could hang on a black screen when leaving a raid.</li>\n<li>Ambient sound players could throw every frame.</li>\n<li>The loading screen now reads <code>Interchange - Vanilla</code> on the original tile, as well as\n<code>Interchange - Rework</code> on the reworked one.</li>\n</ul>\n<p><strong>Upgrading from 1.0.0</strong></p>\n<p>Delete your existing <code>BepInEx\\plugins\\LennoxP90-InterchangeRework</code> and\n<code>SPT_Runtime\\user\\mods\\LennoxP90-InterchangeRework</code> folders before extracting. The culling grid is\nnamed after its own content, so upgrading in place leaves the old 441 MB one behind.</p>\n",
+     "spt_constraint": "~4.1.3",
+     "fika": "compatible",
+     "downloads": 426,
+     "size": 1041705578,
+     "link": "https://sp-mod.com/mod/download/3020/interchange-rework/1.1.0",
+     "published_at": "2026-09-14T13:42:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 15360,
      "version": "1.0.0",
      "description": "<p>First release</p>\n",
      "spt_constraint": "~4.1.3",
      "fika": "compatible",
-     "downloads": 845,
+     "downloads": 2446,
      "size": 3707152766,
      "link": "https://sp-mod.com/mod/download/3020/interchange-rework/1.0.0",
      "published_at": "2026-09-12T07:15:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.0.0",
+   "latest_version": "1.1.0",
    "spt_constraint": "~4.1.3",
    "all_spt_constraints": [
     "~4.1.3"
@@ -199367,7 +199392,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-09-12T07:15:00.000000Z",
-   "updated_at": "2026-09-12T15:06:07.000000Z",
+   "updated_at": "2026-09-14T16:52:38.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
@@ -199844,6 +199869,261 @@
     "contains_ads": false,
     "contains_ai_content": true,
     "ai_disclosure": "<p>AI was used to assist in writing the client and server code for the mod. All AI assisted code was reviewed, tested, and adjusted by human developers.</p>\n",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 3026,
+   "hub_id": null,
+   "guid": "com.viper.sptquestlive",
+   "name": "SPTQuestLive",
+   "slug": "sptquestlive",
+   "teaser": "Rebuilding and porting select quests from the official EFT release for compatibility with SPT.",
+   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Purpose</div>\n<div class=\"tab-content\"><p>Overrides quests to match the latest version of EFT, on top of SPT.</p>\n<p>Since EFT has drastically changed quest structure, quest chains, and the trader reputation system, this mod does not apply EFT\u2019s EXP/roubles/reputation reward balance, as it no longer fits SPT v4.1.x \u2014 start conditions and quest-chain requirements are mostly kept as-is from SPT. Instead, it mainly changes kill conditions, map conditions, issued gear, turn-in items, and some rewards across approximately 264 quests. This includes certain quests that require custom zones (e.g., Golden Swag, Pest Control, Spa Tour - Part 7).</p>\n<p>You can check the quest changes for each trader in the README.</p>\n<p>Unimplemented quests will be updated and added in future releases.</p>\n<blockquote>\n<p><strong>Note:</strong> While developing this mod, I heard the news about SPT 5.0. However, I stayed committed to finishing it for everyone playing on version 4.1.x. Although this mod won\u2019t be needed once 5.0 drops, think of it as a way to get a sneak peek at the new quest structure early on 4.1.x!</p>\n</blockquote></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Requirements</div>\n<div class=\"tab-content\"><ul>\n<li>SPT server <code>~4.1.5</code></li>\n<li>.NET 10 SDK (only if building from source)</li>\n<li>[WTT-CommonLib] <code>&gt;=3.0.6</code> \u2014 <strong>(Required)</strong></li>\n<li>[WTT-ContentBackport] <code>2.0.1</code> \u2014 <strong>(Required)</strong></li>\n</ul></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Installation</div>\n<div class=\"tab-content\"><ol>\n<li>Download <code>sptQuestLive.zip</code> for the version you want from <a href=\"../../releases\">Releases</a>.</li>\n<li>Extract it and overwrite the resulting <code>SPT_Runtime</code> and <code>BepInEx</code> folders into your SPT install root (e.g. <code>C:\\SPT</code>, the parent folder of the <code>SPT_Runtime</code> folder containing <code>SPT.Server.exe</code>). (<code>SPT_Runtime/user/mods/sptQuestLive/...</code> and <code>BepInEx/plugins/SptQuestLive.Client/...</code> structure)\n<ul>\n<li>The <code>BepInEx</code> folder is the client plugin that handles the UI side of the <a href=\"#config-flags-dbconfigjson\">config flags</a> below. Just install it alongside the rest \u2014 it doesn\u2019t affect anything else.</li>\n<li>If your server root <em>is</em> the <code>SPT_Runtime</code> folder itself (older SPT layout), you can instead copy just the <code>SPT_Runtime\\user\\mods\\sptQuestLive</code> folder from the zip into your server root\u2019s <code>user\\mods\\</code>.</li>\n</ul>\n</li>\n<li>Restart the server.</li>\n</ol></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Compatibility</div>\n<div class=\"tab-content\"><p>Compatible with mods that read quest data dynamically, such as Dynamic Maps and MoreChecks.</p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Excluded from scope</div>\n<div class=\"tab-content\"><p>Lightkeeper, Ref, and BTR trader quests are excluded from changes. Ref\u2019s quests are mostly tied to Arena and don\u2019t need touching, and Lightkeeper\u2019s quests are end-game content that will be reviewed separately later.</p></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Config flags</div>\n<div class=\"tab-content\"><p>Mod behavior can be adjusted through the <code>db/Config.json</code> file.</p>\n<ul>\n<li><code>questContentEnabled</code> (default <code>true</code>): toggles all of this mod\u2019s quest/reward content (quest overrides, quest removals, alternative conditions, trader assort unlocks/removals, bot/static loot additions, hideout fixes, locale changes, etc.) as a whole. Set to <code>false</code> to disable all of it and fall back to vanilla SPT behavior.</li>\n<li><code>disableSalesVolumeRequirement</code> (default <code>true</code>, experimental): removes the sales-volume requirement from trader loyalty level-ups. Set to <code>true</code> and level-ups depend only on level and reputation, with the sales-volume display also hidden in the trade UI. This always works independently of <code>questContentEnabled</code>.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Bug Reports</div>\n<div class=\"tab-content\"><p>Please report bugs on GitHub Issues with detailed information.</p></div></div>\n<div id=\"tabset-1-panel-8\" class=\"tab-panel\"><div class=\"tab-title\">Credits</div>\n<div class=\"tab-content\"><p>Special thanks to the <strong>Korean SPT Community</strong> and the <strong>WTT Team</strong> for kindly answering my questions and providing great support!</p></div></div></div>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/gtxZ1YaxMXIo5WptWhWTdbI9UU5CyL84bdZrDVJf.png",
+   "forge_url": "https://sp-mod.com/mod/3026/sptquestlive",
+   "downloads": 142,
+   "favourites": 2,
+   "featured": false,
+   "fika": false,
+   "fika_latest": "unknown",
+   "category": {
+    "id": 7,
+    "title": "Quests",
+    "slug": "quests"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 120895,
+     "name": "arizona_eva",
+     "avatar": "https://files.sp-mod.com/profile-photos/DL6BM09JXStu7oSk05hFWOOTHt76Y4JRotBPpElR_128w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/Viper-9/SptQeustLive",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 15397,
+     "version": "1.0.0",
+     "description": "<p>1.0.0 for SPT 4.1.5+\nTrader Quest Overrides</p>\n<p>Updated and modified ~264 quests across the following traders:</p>\n<ul>\n<li>Prapor</li>\n<li>Therapist</li>\n<li>Skier</li>\n<li>Peacekeeper</li>\n<li>Mechanic</li>\n<li>Ragman</li>\n<li>Jaeger</li>\n<li>Fence</li>\n</ul>\n<p>Key Changes &amp; Fixes</p>\n<p>Included updates for Fence\u2019s Collector quest.</p>\n<p>Added loot spawn locations for select required turn-in items introduced by the Content Backport mod.</p>\n",
+     "spt_constraint": "4.1.5",
+     "fika": "unknown",
+     "downloads": 142,
+     "size": 646846,
+     "link": "https://sp-mod.com/mod/download/3026/sptquestlive/1.0.0",
+     "published_at": "2026-09-14T16:27:00.000000Z",
+     "dependencies": [
+      {
+       "id": 2512,
+       "name": "WTT - Content Backport",
+       "slug": "wtt-content-backport",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2512/wtt-content-backport"
+      },
+      {
+       "id": 2310,
+       "name": "WTT - CommonLib",
+       "slug": "wtt-commonlib",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
+      }
+     ]
+    }
+   ],
+   "latest_version": "1.0.0",
+   "spt_constraint": "4.1.5",
+   "all_spt_constraints": [
+    "4.1.5"
+   ],
+   "dependencies": [
+    {
+     "id": 2512,
+     "name": "WTT - Content Backport",
+     "slug": "wtt-content-backport",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/2512/wtt-content-backport"
+    },
+    {
+     "id": 2310,
+     "name": "WTT - CommonLib",
+     "slug": "wtt-commonlib",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
+    }
+   ],
+   "all_dependencies": [
+    {
+     "id": 2512,
+     "name": "WTT - Content Backport",
+     "slug": "wtt-content-backport",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/2512/wtt-content-backport"
+    },
+    {
+     "id": 2310,
+     "name": "WTT - CommonLib",
+     "slug": "wtt-commonlib",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
+    }
+   ],
+   "published_at": "2026-09-14T15:18:00.000000Z",
+   "updated_at": "2026-09-14T16:28:04.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": true,
+    "ai_disclosure": "<p>This mod was developed with the assistance of Claude.</p>\n<p>All quest data from EFT was organized, analyzed, and mapped to SPT. Based on that analysis, we determined how to adjust and implement the quests, and the actual modifications were processed by AI.</p>\n<p>While it wasn\u2019t feasible to test every single quest, a representative selection was manually tested. Since the rest share identical or similar structures, they work without issues.</p>\n",
+    "cheat_notice": false,
+    "profile_binding_notice": true
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 3027,
+   "hub_id": null,
+   "guid": "com.froze.exfilrewards",
+   "name": "Exfil Rewards",
+   "slug": "exfil-rewards",
+   "teaser": "Earn bonus money for extracting from raids.",
+   "description_html": "<h1>Exfil Rewards</h1>\n<p>Exfil Rewards gives you bonus money for successfully getting out of a raid.</p>\n<p>Works for both PMC and Scav raids. Rewards are based on the raid result, kills, and survival time.</p>\n<h2>Features</h2>\n<ul>\n<li>PMC rewards</li>\n<li>Scav rewards</li>\n<li>Kill rewards</li>\n<li>Survival time bonus</li>\n<li>Run-through rewards</li>\n<li>Post-raid reward popup</li>\n<li>Rewards delivered through in-game mail</li>\n</ul>\n<h2>Screenshots</h2>\n<h3>PMC Reward Popup</h3>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/V-E-I-N/ExfilRewards/raw/main/PMC%20Reward%20Popup.png\" alt=\"PMC Reward Popup\" /></p>\n<h3>Scav Reward Popup</h3>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/V-E-I-N/ExfilRewards/raw/main/Scav%20Reward%20Popup.png\" alt=\"Scav Reward Popup\" /></p>\n<h3>In-Game Mail</h3>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/V-E-I-N/ExfilRewards/raw/main/In-Game%20Mail.png\" alt=\"In-Game Mail\" /></p>\n<h2>Rewards</h2>\n<h3>PMC</h3>\n<ul>\n<li>Base extraction: \u20bd100,000 / $800 / \u20ac600</li>\n<li>Per kill: \u20bd25,000 / $200 / \u20ac150</li>\n</ul>\n<h3>Scav</h3>\n<ul>\n<li>Base extraction: \u20bd55,000 / $400 / \u20ac275</li>\n<li>Per kill: \u20bd12,000 / $150 / \u20ac100</li>\n</ul>\n<h3>Survival bonus</h3>\n<p>You get an additional 0.5% of the base extraction reward for every minute survived.</p>\n<h3>Run-through</h3>\n<p>A run-through gives 50% of the normal base reward.</p>\n<p>Kill rewards and the survival bonus still apply.</p>\n<h2>No reward for</h2>\n<p>No reward is given for:</p>\n<ul>\n<li>Killed</li>\n<li>Left</li>\n<li>Missing in Action</li>\n<li>Transit</li>\n</ul>\n<h2>Requirements</h2>\n<ul>\n<li>SPT v4.1.x</li>\n</ul>\n<h2>Installation</h2>\n<p>Download the latest release which is also available on GitHub:</p>\n<p>Download <code>ExfilRewards_1.0.zip</code>, extract it, and place both <code>BepInEx</code> and <code>SPT_Runtime</code> directly into your main SPT game directory.</p>\n<h2>Source</h2>\n<p>Source code is available on GitHub:</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/V-E-I-N/ExfilRewards\" rel=\"noreferrer noopener\">https://github.com/V-E-I-N/ExfilRewards</a></p>\n<h2>License</h2>\n<p>All rights reserved.</p>\n<p>Personal use is allowed. Redistribution, re-uploading, mirroring, repackaging, modifying and redistributing requires permission from froze (V-E-I-N).</p>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/CR1k1Iyrj5VLTojr2SYsHNv3m1Xkm4IGGCVNs4LW.png",
+   "forge_url": "https://sp-mod.com/mod/3027/exfil-rewards",
+   "downloads": 76,
+   "favourites": 2,
+   "featured": false,
+   "fika": false,
+   "fika_latest": "unknown",
+   "category": {
+    "id": 3,
+    "title": "Scripting",
+    "slug": "scripting"
+   },
+   "license": {
+    "name": "Custom License",
+    "link": ""
+   },
+   "authors": [
+    {
+     "id": 124173,
+     "name": "V-E-I-N",
+     "avatar": "https://files.sp-mod.com/profile-photos/2CO6aqYcEuecefiuRyIWbduxS7gYOXNSQB4qxpZk_256w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/V-E-I-N/ExfilRewards",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 15396,
+     "version": "1.0.0",
+     "description": "<p>First release of Exfil Rewards.</p>\n<ul>\n<li>PMC and Scav rewards</li>\n<li>Kill rewards</li>\n<li>Survival time bonus</li>\n<li>Run-through rewards</li>\n<li>Post-raid reward popup</li>\n<li>Rewards delivered through in-game mail</li>\n</ul>\n",
+     "spt_constraint": "~4.1.4",
+     "fika": "unknown",
+     "downloads": 76,
+     "size": 28687985,
+     "link": "https://sp-mod.com/mod/download/3027/exfil-rewards/1.0.0",
+     "published_at": "2026-09-14T16:21:00.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "1.0.0",
+   "spt_constraint": "~4.1.4",
+   "all_spt_constraints": [
+    "~4.1.4"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-09-14T16:09:00.000000Z",
+   "updated_at": "2026-09-14T18:30:48.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": true,
+    "ai_disclosure": "<p>Some of the images used in this project were AI-generated. I also used AI to help optimize parts of the code, since doing some of the optimizations manually would have taken quite a bit of time.</p>\n",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 3028,
+   "hub_id": null,
+   "guid": "com.tiltushkin.firfleaonly",
+   "name": "FIR Flea only",
+   "slug": "fir-flea-only",
+   "teaser": "Is the flea market a breeze? Install this mod.",
+   "description_html": "<h2>This mod prevents players from listing items in the flea market that haven\u2019t been looted from a raid.</h2>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/dc9YfHMwJcbpA9zzTUkaIinjW87BMKtDGHqfDoXc.png",
+   "forge_url": "https://sp-mod.com/mod/3028/fir-flea-only",
+   "downloads": 7,
+   "favourites": 0,
+   "featured": false,
+   "fika": true,
+   "fika_latest": "compatible",
+   "category": {
+    "id": 3,
+    "title": "Scripting",
+    "slug": "scripting"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 57474,
+     "name": "Tiltushkin",
+     "avatar": "https://files.sp-mod.com/profile-photos/hrUytaVNu34lsiyfcwJssARt4ajoBI0KR7ghxesh_256w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/Tiltushkin/Tiltushkin-NoFIRFlea",
+     "label": "1.0.0"
+    }
+   ],
+   "versions": [
+    {
+     "id": 15399,
+     "version": "1.0.0",
+     "description": "<h1>v1.0.0 version, compatible with SPT ~4.1.3</h1>\n",
+     "spt_constraint": "~4.1.3",
+     "fika": "compatible",
+     "downloads": 7,
+     "size": 5538,
+     "link": "https://sp-mod.com/mod/download/3028/fir-flea-only/1.0.0",
+     "published_at": "2026-09-14T18:35:00.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "1.0.0",
+   "spt_constraint": "~4.1.3",
+   "all_spt_constraints": [
+    "~4.1.3"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-09-14T18:31:00.000000Z",
+   "updated_at": "2026-09-14T18:37:05.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
     "cheat_notice": false,
     "profile_binding_notice": false
    },
