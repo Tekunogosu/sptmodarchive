@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-14T23:54:40Z",
+ "generated_at": "2026-09-15T05:02:00Z",
  "source": "https://sp-mod.com",
  "filter": "all",
  "mod_count": 1959,
@@ -39366,8 +39366,8 @@
    "description_html": "<p>This mod will add a new action called \u201cOpen Sesame\u201d to context menus to allow you to open things without requiring the key:</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://hub.sp-tarkov.com/attachment/7178-lockeddoor-png/\" alt=\"7178-lockeddoor-png\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://hub.sp-tarkov.com/attachment/7176-cashregister-png/\" alt=\"7176-cashregister-png\" /></p>\n<p>It also adds a \u201cTurn On Power\u201d action to doors that require the map\u2019s power switch to be turned on before they can be unlocked:</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://hub.sp-tarkov.com/attachment/7177-doorwithoutpower-png/\" alt=\"7177-doorwithoutpower-png\" /></p>\n<p>To prevent you from accidentally unlocking things, a \u201cDo Nothing\u201d action is added first (so it\u2019s the default action). This can be disabled in the Configuration Manager.</p>\n<p>You can also enable options in the Configuration Manager to write debug messages when the context menu opens or when you select the \u201cOpen Sesame\u201d or \u201cTurn on Power\u201d actions. Enabling these will allow you to see the door ID (when the context menu opens), key ID (when you unlock a door via the \u201cOpen Sesame\u201d action), or switch ID (when you turn on the power switch):</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://hub.sp-tarkov.com/attachment/7175-configurationoptions-jpg/\" alt=\"7175-configurationoptions-jpg\" /></p>\n<p>You can also prevent this mod from adding actions to context menus via a Configuration Manager option.</p>\n<p>I wrote this to be agnostic of the SPT/EFT version, so you should rarely (if ever) have to update it.</p>\n<p>Translations for the new context-menu actions exist for:</p>\n<ul>\n<li>English</li>\n<li>Chinese</li>\n<li>French</li>\n<li>German</li>\n<li>Japanese</li>\n<li>Korean</li>\n<li>Portuguese</li>\n<li>Russian</li>\n<li>Spanish</li>\n</ul>\n<p>If you would like to help me include other languages, please post a comment with the locale ID in <em>Aki_Data\\Server\\database\\locales\\global</em> and translations for:</p>\n<ul>\n<li>\u201cDo Nothing\u201d</li>\n<li>\u201cOpen Sesame\u201d</li>\n<li>\u201cTurn On Power\u201d</li>\n</ul>\n<p>Known Issues:</p>\n<ul>\n<li>Cannot directly open the saferoom door in Interchange. You can only open it via the keypad in the Burger Spot restroom.</li>\n</ul>\n",
    "thumbnail": "https://files.sp-mod.com/mods/1660.jpg",
    "forge_url": "https://sp-mod.com/mod/1184/open-sesame",
-   "downloads": 62823,
-   "favourites": 34,
+   "downloads": 66036,
+   "favourites": 60,
    "featured": false,
    "fika": false,
    "fika_latest": "incompatible",
@@ -39395,12 +39395,24 @@
    ],
    "versions": [
     {
+     "id": 15412,
+     "version": "3.0.1",
+     "description": "<p>Bug fix for error when EFT locales collection is modified while this mod is adding new translations</p>\n",
+     "spt_constraint": "~4.1.0",
+     "fika": "incompatible",
+     "downloads": 39,
+     "size": 10809,
+     "link": "https://sp-mod.com/mod/download/1184/open-sesame/3.0.1",
+     "published_at": "2026-09-15T03:25:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 14771,
      "version": "3.0.0",
      "description": "<ul>\n<li>Updated for SPT 4.1</li>\n<li>Allow the D2 extract switch to be toggled on Reserve</li>\n<li>Allow locked switches on Labyrinth to be toggled</li>\n<li>Lots of refactoring</li>\n</ul>\n",
      "spt_constraint": "~4.1.0",
      "fika": "incompatible",
-     "downloads": 369,
+     "downloads": 3023,
      "size": 10154,
      "link": "https://sp-mod.com/mod/download/1184/open-sesame/3.0.0",
      "published_at": "2026-08-16T03:59:00.000000Z",
@@ -39412,7 +39424,7 @@
      "description": "<ul>\n<li>Updated for SPT 4.0</li>\n<li>Updated GUID to be all lowercase</li>\n<li>Updating logging messages now that all translations are loaded when the game starts</li>\n<li>Moved all project files one level higher in SPT install folder hierarchy</li>\n</ul>\n",
      "spt_constraint": "~4.0.0",
      "fika": "unknown",
-     "downloads": 21488,
+     "downloads": 21994,
      "size": 10312,
      "link": "https://sp-mod.com/mod/download/1184/open-sesame/2.5.0",
      "published_at": "2025-10-19T17:20:00.000000Z",
@@ -39424,7 +39436,7 @@
      "description": "<p>Added translations for Japanese locale</p>\n",
      "spt_constraint": "~3.11.0",
      "fika": "unknown",
-     "downloads": 5585,
+     "downloads": 5595,
      "size": null,
      "link": "https://sp-mod.com/mod/download/1184/open-sesame/2.4.4",
      "published_at": "2025-06-16T01:04:50.000000Z",
@@ -39448,7 +39460,7 @@
      "description": "<ul>\n<li>Updated for SPT 3.10.0</li>\n<li>Made all Unity methods protected instead of private because the recent Visual Studio update is dumb and forces them to be faded out</li>\n</ul>\n",
      "spt_constraint": "3.10.0",
      "fika": "unknown",
-     "downloads": 6968,
+     "downloads": 6969,
      "size": null,
      "link": "https://sp-mod.com/mod/download/1184/open-sesame/2.4.2",
      "published_at": "2024-12-02T02:23:21.000000Z",
@@ -39479,7 +39491,7 @@
      "dependencies": []
     }
    ],
-   "latest_version": "3.0.0",
+   "latest_version": "3.0.1",
    "spt_constraint": "~4.1.0",
    "all_spt_constraints": [
     "3.10.0",
@@ -39492,7 +39504,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2023-12-10T01:39:00.000000Z",
-   "updated_at": "2026-08-16T20:29:05.000000Z",
+   "updated_at": "2026-09-15T03:27:02.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -185311,11 +185323,11 @@
    "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">The Mod</div>\n<div class=\"tab-content\"><p>After a month of blood, sweat, and tears, I am finally releasing this.</p>\n<p>This mod backports the ENTIRE Icebreaker map from 1.0 start to finish, including loot, enemies, and the quests to unlock it. I have painstakingly recreated the map, as well as added some personal details that I thought would make the experience more immersive/enjoyable.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/peEDhkP.jpeg\" alt=\"alt text\" /></p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">GALLERY:</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/QxQNoUi.jpeg\" alt=\"alt text\" />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/yJ1xOdc.jpeg\" alt=\"alt text\" /></p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">DISCLAIMER AND WARNINGS:</div>\n<div class=\"tab-content\"><ul>\n<li>THIS MOD IS A FANMADE RECREATION BASED HEAVILY ON THE OFFICIAL CONTENT. I HAVE ENSURED IT IS AS CLOSE AS I AM WILLING/ABLE, BUT DO NOT EXPECT IT TO MATCH EXACTLY WITH RETAIL.</li>\n<li>PLEASE ENSURE ANY AND ALL FEEDBACK IS CONSTRUCTIVE AND REPRESENTS YOUR PROBLEM CLEARLY. IF NOT, I WILL IGNORE IT.</li>\n<li>THIS PROJECT COULD NOT HAVE BEEN COMPLETED WITHOUT THE HELP AND RESOURCES OF BOTH THE WTT  AND SPT COMMUNITIES. THANK YOU ALL VERY MUCH.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Installation</div>\n<div class=\"tab-content\"><ul>\n<li>\n<p>Ensure that you have SPT 4.0.13 or higher installed.</p>\n</li>\n<li>\n<p>Ensure you have all of the dependencies listed installed at their most recent versions.</p>\n</li>\n</ul>\n<p><strong>IF USING FIKA:</strong></p>\n<ul>\n<li>Ensure that you have the ICEBREAKER FIKA SYNC addon installed. INSTALL IT EVERYWHERE. Client, server, headless, etc.</li>\n</ul>\n<p>Move the zipped files to your SPT installation as shown in the GIF below.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://imgur.com/34vXXDj.gif\" alt=\"alt text\" /></p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Where to find me</div>\n<div class=\"tab-content\"><ul>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://manimal1920.soy/\" rel=\"noreferrer noopener\">My Website</a></li>\n<li>Here <a target=\"_blank\" class=\"external-link\" href=\"https://discord.com/channels/478334515488751617/1496355574579859556\" rel=\"noreferrer noopener\">(WTT Discord Channel)</a></li>\n<li>And here <a target=\"_blank\" class=\"external-link\" href=\"https://discord.gg/z8g9VC2W2c\" rel=\"noreferrer noopener\">(My EVIL Discord Server\u2026.)</a></li>\n</ul></div></div></div>\n<p>If you like my work and wish to support me, you can do so <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/manimal1920\" rel=\"noreferrer noopener\">here.</a></p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/L4Zw8DewaTC3S12nA9PrYql4TYkISvE4G1gpdKjy.png",
    "forge_url": "https://sp-mod.com/mod/2866/manimals-icebreaker-backport",
-   "downloads": 47325,
-   "favourites": 193,
+   "downloads": 51297,
+   "favourites": 205,
    "featured": false,
    "fika": true,
-   "fika_latest": "unknown",
+   "fika_latest": "compatible",
    "category": {
     "id": 8,
     "title": "Locations",
@@ -185340,12 +185352,88 @@
    ],
    "versions": [
     {
+     "id": 15410,
+     "version": "1.1.3",
+     "description": "<ul>\n<li>add peaceful atom and wiring the vessel quests</li>\n<li>add door blizzard</li>\n<li>update boreas quests to use new interchange quest zones</li>\n<li>goonguard fix</li>\n<li>full Chinese translation</li>\n<li>full Russian localization</li>\n<li>fix blowtorch</li>\n<li>add actual flame to blowtorch</li>\n<li>improve/remove some earlygame stutters</li>\n</ul>\n",
+     "spt_constraint": "~4.1.5",
+     "fika": "compatible",
+     "downloads": 412,
+     "size": 1672250789,
+     "link": "https://sp-mod.com/mod/download/2866/manimals-icebreaker-backport/1.1.3",
+     "published_at": "2026-09-15T01:12:00.000000Z",
+     "dependencies": [
+      {
+       "id": 902,
+       "name": "BigBrain",
+       "slug": "bigbrain",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/902/bigbrain"
+      },
+      {
+       "id": 2310,
+       "name": "WTT - CommonLib",
+       "slug": "wtt-commonlib",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
+      },
+      {
+       "id": 2426,
+       "name": "MoreBotsAPI",
+       "slug": "morebotsapi",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2426/morebotsapi"
+      },
+      {
+       "id": 2511,
+       "name": "WTT - Black Division [REDACTED] Home",
+       "slug": "wtt-black-division-redacted-home",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2511/wtt-black-division-redacted-home"
+      },
+      {
+       "id": 2512,
+       "name": "WTT - Content Backport",
+       "slug": "wtt-content-backport",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2512/wtt-content-backport"
+      },
+      {
+       "id": 2649,
+       "name": "Climbable Ladders",
+       "slug": "climbable-ladders",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2649/climbable-ladders"
+      },
+      {
+       "id": 2864,
+       "name": "Manimal's CS Gas",
+       "slug": "manimals-cs-gas",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2864/manimals-cs-gas"
+      },
+      {
+       "id": 3025,
+       "name": "Manimal's 1.0 Interchange Expansion Backport ",
+       "slug": "manimals-10-interchange-expansion-backport",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/3025/manimals-10-interchange-expansion-backport"
+      },
+      {
+       "id": 1426,
+       "name": "UnityToolkit",
+       "slug": "unitytoolkit",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/1426/unitytoolkit"
+      }
+     ]
+    },
+    {
      "id": 15361,
      "version": "1.1.0",
      "description": "<ul>\n<li>UPDATE MECHANIC\u2019S BOREAS QUEST UNLOCK METHOD (NOW UNLOCKED BY FINDING THE POSTER LIKE LIVE)</li>\n<li>give icebreaker a new unique location ID instead of stealing suburbs</li>\n<li>remove redundant quests</li>\n<li>potential fix for fika loading issue on headless and MP.</li>\n<li>loose loot duplicate key fix</li>\n<li>icebreaker maplock fix</li>\n<li>icebreaker map visit fix</li>\n</ul>\n",
      "spt_constraint": "~4.1.5",
      "fika": "unknown",
-     "downloads": 456,
+     "downloads": 3749,
      "size": 1667101276,
      "link": "https://sp-mod.com/mod/download/2866/manimals-icebreaker-backport/1.1.0",
      "published_at": "2026-09-12T07:57:00.000000Z",
@@ -185407,7 +185495,7 @@
      "description": "<ul>\n<li>fix for fika headless loading crashes</li>\n<li>fix for duplicate loot entries causing loot generation to fail with Lots of Loot</li>\n<li>fix for boreas part 3 not unlocking Icebreaker in map selection</li>\n<li>fix for icebreaker trader quests appearing before visiting the map</li>\n<li>fix for later btr quests bypassing required return visits</li>\n<li>improved map visit tracking and prevented duplicate raid ends from counting twice</li>\n</ul>\n",
      "spt_constraint": "~4.1.5",
      "fika": "unknown",
-     "downloads": 4517,
+     "downloads": 4542,
      "size": 1667251803,
      "link": "https://sp-mod.com/mod/download/2866/manimals-icebreaker-backport/1.0.1",
      "published_at": "2026-09-07T21:38:00.000000Z",
@@ -185469,7 +185557,7 @@
      "description": "<ul>\n<li>Add Paradigm Shipping Poster Spawn Points</li>\n<li>removed wedge brain layers</li>\n<li>add new splash screen images</li>\n<li>fix for t4 spawn</li>\n<li>fix for camera effects not on scope</li>\n<li>chain door explosion is a real explosion (not fake)</li>\n</ul>\n",
      "spt_constraint": "~4.1.5",
      "fika": "compatible",
-     "downloads": 2744,
+     "downloads": 2750,
      "size": 1667285141,
      "link": "https://sp-mod.com/mod/download/2866/manimals-icebreaker-backport/1.0.0",
      "published_at": "2026-09-06T20:37:00.000000Z",
@@ -185531,7 +185619,7 @@
      "description": "<ul>\n<li>reduce requirements for boreas questline to mechanic level 2 and player level 20</li>\n<li>removed transit and all mentions of transit</li>\n<li>increased base entry fee to 500k</li>\n<li>btr questline now rewards reduced entry fee to 250k</li>\n<li>removed entry fee config</li>\n<li>attempt to fix conflicts with questing bots</li>\n<li>reset lod bias when not on icebreaker</li>\n<li>change quest gate to \u201cvisit\u201d icebreaker from \u201csurvive\u201d icebreaker</li>\n<li>custom ai behaviors for wedge based on 1.0</li>\n<li>raise enginehide layer priority</li>\n<li>potential fix for weird transparency rendering bug</li>\n</ul>\n",
      "spt_constraint": "~4.0.13",
      "fika": "compatible",
-     "downloads": 9871,
+     "downloads": 10100,
      "size": 1666066220,
      "link": "https://sp-mod.com/mod/download/2866/manimals-icebreaker-backport/0.3.1",
      "published_at": "2026-08-20T06:27:00.000000Z",
@@ -185593,7 +185681,7 @@
      "description": "<p><strong>FIKA USERS, UPDATE TO THE LATEST VERSION OF ICEBREAKER FIKA SYNC</strong></p>\n<p><strong>UPDATE YOUR CONTENT BACKPORT TO 1.1.4</strong></p>\n<ul>\n<li>engine room bd open doors before pushing</li>\n<li>added bd dogtags to bd</li>\n<li>removed custom spawn system entirely for vanilla waves</li>\n<li>changed dogtag barters to bd tags</li>\n<li>goon guard</li>\n<li>updated dependencies to latest backport</li>\n<li>cleaned up unused debug files</li>\n<li>stop important items from being culled at low distance</li>\n<li>expose volumetric fog toggle outside of advanced settings</li>\n<li>fixed the sealed doors so that they work with rebound interact key</li>\n<li>prevent player movement during seal/unseal/bomb plant</li>\n<li>fix occasional blue sky on powered optics</li>\n<li>patch for lockable doors</li>\n<li>(fika) first person to finish or skip cutscene unlocks the door globally</li>\n<li>(fika) fixed cutscene trigger point</li>\n<li>isplayerenemy group construction firewall patch (thanks mojo)</li>\n<li>new quest for peacekeeper</li>\n<li>added bd gear crate</li>\n<li>attempt to fix transit for fika</li>\n<li>add icebreaker images and info to base.json (thanks to sam)</li>\n<li>change time limit to 50 minutes</li>\n</ul>\n",
      "spt_constraint": "~4.0.13",
      "fika": "unknown",
-     "downloads": 5647,
+     "downloads": 5650,
      "size": 1678091335,
      "link": "https://sp-mod.com/mod/download/2866/manimals-icebreaker-backport/0.3.0",
      "published_at": "2026-08-15T03:10:00.000000Z",
@@ -185655,7 +185743,7 @@
      "description": "<ul>\n<li>made wedge only spawn with euros</li>\n<li>potential fix for hollywood fx battle blur</li>\n<li>lod culling radius for fps increase</li>\n<li>fixed stutters introduced in 0.2.2</li>\n<li>another potential fix for bots not spawning with abps</li>\n<li>diagnostic logging for fps and stutters</li>\n</ul>\n",
      "spt_constraint": "~4.0.13",
      "fika": "compatible",
-     "downloads": 5292,
+     "downloads": 5293,
      "size": 1677612954,
      "link": "https://sp-mod.com/mod/download/2866/manimals-icebreaker-backport/0.2.3",
      "published_at": "2026-08-09T04:48:00.000000Z",
@@ -185779,7 +185867,7 @@
      "description": "<ul>\n<li>fix transit for fika once and for all</li>\n<li>fix insane amount of rogues spawning for no reason. should now be consistent</li>\n<li>cleaned up now unnecessary crew culler (didnt work anyway)</li>\n<li>fixed BD engine room patrol, hide and assault layers</li>\n<li>updated loose loot standard deviation</li>\n</ul>\n",
      "spt_constraint": "~4.0.13",
      "fika": "unknown",
-     "downloads": 4949,
+     "downloads": 4950,
      "size": 1677225756,
      "link": "https://sp-mod.com/mod/download/2866/manimals-icebreaker-backport/0.2.1",
      "published_at": "2026-08-05T18:46:00.000000Z",
@@ -185903,7 +185991,7 @@
      "description": "<ul>\n<li>Updated the unlock conditions and objectives for Boreas quest part 1 to be more clear and straightforward</li>\n<li>Removed unused custom parent service.</li>\n</ul>\n",
      "spt_constraint": "~4.0.13",
      "fika": "compatible",
-     "downloads": 4609,
+     "downloads": 4610,
      "size": 1673112737,
      "link": "https://sp-mod.com/mod/download/2866/manimals-icebreaker-backport/0.1.1",
      "published_at": "2026-08-01T20:03:00.000000Z",
@@ -185965,7 +186053,7 @@
      "description": "<ul>\n<li>Initial Beta Release</li>\n</ul>\n",
      "spt_constraint": "~4.0.13",
      "fika": "compatible",
-     "downloads": 2663,
+     "downloads": 2664,
      "size": 1673113061,
      "link": "https://sp-mod.com/mod/download/2866/manimals-icebreaker-backport/0.1.0",
      "published_at": "2026-08-01T08:29:00.000000Z",
@@ -186022,7 +186110,7 @@
      ]
     }
    ],
-   "latest_version": "1.1.0",
+   "latest_version": "1.1.3",
    "spt_constraint": "~4.1.5",
    "all_spt_constraints": [
     "~4.0.13",
@@ -186077,6 +186165,20 @@
      "slug": "manimals-cs-gas",
      "constraint": "",
      "url": "https://sp-mod.com/mod/2864/manimals-cs-gas"
+    },
+    {
+     "id": 3025,
+     "name": "Manimal's 1.0 Interchange Expansion Backport ",
+     "slug": "manimals-10-interchange-expansion-backport",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/3025/manimals-10-interchange-expansion-backport"
+    },
+    {
+     "id": 1426,
+     "name": "UnityToolkit",
+     "slug": "unitytoolkit",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/1426/unitytoolkit"
     }
    ],
    "all_dependencies": [
@@ -186128,10 +186230,24 @@
      "slug": "manimals-cs-gas",
      "constraint": "",
      "url": "https://sp-mod.com/mod/2864/manimals-cs-gas"
+    },
+    {
+     "id": 3025,
+     "name": "Manimal's 1.0 Interchange Expansion Backport ",
+     "slug": "manimals-10-interchange-expansion-backport",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/3025/manimals-10-interchange-expansion-backport"
+    },
+    {
+     "id": 1426,
+     "name": "UnityToolkit",
+     "slug": "unitytoolkit",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/1426/unitytoolkit"
     }
    ],
    "published_at": "2026-08-01T08:36:00.000000Z",
-   "updated_at": "2026-09-12T08:00:05.000000Z",
+   "updated_at": "2026-09-15T01:14:04.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
@@ -199663,8 +199779,8 @@
    "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">The Mod</div>\n<div class=\"tab-content\"><p>This mod backports and implements the new Lighthouse rework and changes that were released recently.\nIt contains all loot and the new marked room. It also includes the BTR with his new routes and Taxi Services.</p>\n<div class=\"youtube-lite\" data-video-id=\"y153xV6Rde8\" data-embed-url=\"https://www.youtube-nocookie.com/embed/y153xV6Rde8?autoplay=1\"><img src=\"https://i.ytimg.com/vi/y153xV6Rde8/hqdefault.jpg\" alt=\"YouTube video thumbnail\" loading=\"lazy\" decoding=\"async\" /></div></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Installation</div>\n<div class=\"tab-content\"><p>Drag it into the folder baby.\n<img loading=\"lazy\" decoding=\"async\" src=\"https://imgur.com/34vXXDj.gif\" alt=\"alt text\" /></p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Where to find me</div>\n<div class=\"tab-content\"><ul>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://manimal1920.soy/\" rel=\"noreferrer noopener\">My Website</a></li>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://discord.com/channels/478334515488751617/1496355574579859556\" rel=\"noreferrer noopener\">WTT Discord Channel</a></li>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://discord.gg/z8g9VC2W2c\" rel=\"noreferrer noopener\">My EVIL Discord Server\u2026.</a></li>\n</ul></div></div></div>\n<p>If you like my work and wish to support me, you can do so <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/manimal1920\" rel=\"noreferrer noopener\">here.</a></p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/lCWau1yawUYcCaf73LpT5SWWHf3GIGuQl8cDTzZ4.png",
    "forge_url": "https://sp-mod.com/mod/3022/manimals-10-lighthouse-rework-backport",
-   "downloads": 2219,
-   "favourites": 43,
+   "downloads": 3334,
+   "favourites": 49,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -199692,16 +199808,23 @@
    ],
    "versions": [
     {
-     "id": 15392,
-     "version": "1.0.2",
-     "description": "<ul>\n<li>fixed enablelabyrinth causing scav extracts to be gone</li>\n<li>fixed map loading hanging at zero</li>\n<li>fix for ABPS spawns</li>\n<li>fix for lightkeeper</li>\n<li>fix for sniper scav post</li>\n</ul>\n",
+     "id": 15408,
+     "version": "1.0.4",
+     "description": "<ul>\n<li>reduced filesize</li>\n<li>improved file verification to decrease load times</li>\n<li>waypoints compat</li>\n</ul>\n",
      "spt_constraint": "~4.1.5",
      "fika": "unknown",
-     "downloads": 350,
-     "size": 4384299882,
-     "link": "https://sp-mod.com/mod/download/3022/manimals-10-lighthouse-rework-backport/1.0.2",
-     "published_at": "2026-09-14T09:06:00.000000Z",
+     "downloads": 400,
+     "size": 2455477160,
+     "link": "https://sp-mod.com/mod/download/3022/manimals-10-lighthouse-rework-backport/1.0.4",
+     "published_at": "2026-09-15T00:13:00.000000Z",
      "dependencies": [
+      {
+       "id": 1426,
+       "name": "UnityToolkit",
+       "slug": "unitytoolkit",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/1426/unitytoolkit"
+      },
       {
        "id": 2310,
        "name": "WTT - CommonLib",
@@ -199719,12 +199842,46 @@
      ]
     },
     {
+     "id": 15392,
+     "version": "1.0.2",
+     "description": "<ul>\n<li>fixed enablelabyrinth causing scav extracts to be gone</li>\n<li>fixed map loading hanging at zero</li>\n<li>fix for ABPS spawns</li>\n<li>fix for lightkeeper</li>\n<li>fix for sniper scav post</li>\n</ul>\n",
+     "spt_constraint": "~4.1.5",
+     "fika": "unknown",
+     "downloads": 1048,
+     "size": 4384299882,
+     "link": "https://sp-mod.com/mod/download/3022/manimals-10-lighthouse-rework-backport/1.0.2",
+     "published_at": "2026-09-14T09:06:00.000000Z",
+     "dependencies": [
+      {
+       "id": 2310,
+       "name": "WTT - CommonLib",
+       "slug": "wtt-commonlib",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
+      },
+      {
+       "id": 2512,
+       "name": "WTT - Content Backport",
+       "slug": "wtt-content-backport",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2512/wtt-content-backport"
+      },
+      {
+       "id": 1426,
+       "name": "UnityToolkit",
+       "slug": "unitytoolkit",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/1426/unitytoolkit"
+      }
+     ]
+    },
+    {
      "id": 15375,
      "version": "1.0.0",
      "description": "<ul>\n<li>Initial Release</li>\n</ul>\n",
      "spt_constraint": "~4.1.5",
      "fika": "unknown",
-     "downloads": 1869,
+     "downloads": 1886,
      "size": 4384274221,
      "link": "https://sp-mod.com/mod/download/3022/manimals-10-lighthouse-rework-backport/1.0.0",
      "published_at": "2026-09-13T04:00:00.000000Z",
@@ -199746,12 +199903,19 @@
      ]
     }
    ],
-   "latest_version": "1.0.2",
+   "latest_version": "1.0.4",
    "spt_constraint": "~4.1.5",
    "all_spt_constraints": [
     "~4.1.5"
    ],
    "dependencies": [
+    {
+     "id": 1426,
+     "name": "UnityToolkit",
+     "slug": "unitytoolkit",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/1426/unitytoolkit"
+    },
     {
      "id": 2310,
      "name": "WTT - CommonLib",
@@ -199769,6 +199933,13 @@
    ],
    "all_dependencies": [
     {
+     "id": 1426,
+     "name": "UnityToolkit",
+     "slug": "unitytoolkit",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/1426/unitytoolkit"
+    },
+    {
      "id": 2310,
      "name": "WTT - CommonLib",
      "slug": "wtt-commonlib",
@@ -199784,7 +199955,7 @@
     }
    ],
    "published_at": "2026-09-13T04:08:00.000000Z",
-   "updated_at": "2026-09-14T09:30:05.000000Z",
+   "updated_at": "2026-09-15T01:13:36.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
@@ -200422,8 +200593,8 @@
    "description_html": "<h1>ImpactCue-UI-MOD</h1>\n<p>A customizable combat feedback UI for SPT.</p>\n<h2>Showcase</h2>\n<div class=\"youtube-lite\" data-video-id=\"5wjlEEKLqlM\" data-embed-url=\"https://www.youtube-nocookie.com/embed/5wjlEEKLqlM?autoplay=1\"><img src=\"https://i.ytimg.com/vi/5wjlEEKLqlM/hqdefault.jpg\" alt=\"YouTube video thumbnail\" loading=\"lazy\" decoding=\"async\" /></div>\n<h2>Features</h2>\n<ul>\n<li>Customizable hit markers</li>\n<li>Floating damage numbers</li>\n<li>Kill feed with multiple animation presets</li>\n<li>Victim highlight effects</li>\n<li>HUD position editor</li>\n<li>Configurable colors, sizes, layout, and behavior</li>\n<li>Localized weapon names with modded weapon support</li>\n<li>F12 configuration menu</li>\n</ul>\n<h2>Installation</h2>\n<p>Extract the archive directly into your SPT installation folder.</p>\n<p>The plugin will be installed to:</p>\n<p><code>BepInEx/plugins/ImpactCue-UI-MOD/</code></p>\n<p>Open the F12 configuration menu in-game to customize ImpactCue.</p>\n<h2>Compatibility</h2>\n<ul>\n<li>SPT 4.1.5</li>\n<li>Client-side BepInEx plugin</li>\n</ul>\n<h2>Future Updates</h2>\n<p>More updates, improvements, and new features are planned for future versions of ImpactCue-UI-MOD.</p>\n<p>Feedback, suggestions, and feature ideas are always welcome.\nIf you have any ideas for improvements, feel free to share them.</p>\n<h2>License</h2>\n<p>ImpactCue-UI-MOD is licensed under the MIT License.</p>\n<p>Copyright (c) 2026 Dizzlow</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/DOgMXAbTrdzlLa7mrC8mKWzIkx06nXyFIQxfWrsl.png",
    "forge_url": "https://sp-mod.com/mod/3029/impactcue-ui-mod",
-   "downloads": 178,
-   "favourites": 4,
+   "downloads": 393,
+   "favourites": 6,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -200451,19 +200622,55 @@
    ],
    "versions": [
     {
+     "id": 15413,
+     "version": "1.5.5",
+     "description": "<h1>ImpactCue v1.5.5 - Optimization Update</h1>\n<h2>Major Improvement</h2>\n<p>Improved the performance issue that could cause lag or stuttering after killing an enemy.</p>\n<h3>Other Changes</h3>\n<ul>\n<li>Improved overall performance.</li>\n<li>Reduced unnecessary processing during raids.</li>\n<li>Optimized memory usage.</li>\n<li>Improved FPS stability.</li>\n<li>Optimized UI and hit marker processing.</li>\n<li>Improved sound system performance.</li>\n<li>Reduced unnecessary resource usage.</li>\n<li>Various internal optimizations and minor fixes.</li>\n</ul>\n<p>This update mainly focuses on making ImpactCue lighter and more stable during gameplay.</p>\n",
+     "spt_constraint": "4.1.5",
+     "fika": "unknown",
+     "downloads": 51,
+     "size": 3309841,
+     "link": "https://sp-mod.com/mod/download/3029/impactcue-ui-mod/1.5.5",
+     "published_at": "2026-09-15T03:45:00.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 15411,
+     "version": "1.5.1",
+     "description": "<h1>ImpactCue v1.5.1 - Sound Update</h1>\n<p>This update introduces the first sound system for ImpactCue.</p>\n<h2>Preview</h2>\n<p>Sound System Preview:</p>\n<div class=\"youtube-lite\" data-video-id=\"ZcmlK5Xavbg\" data-embed-url=\"https://www.youtube-nocookie.com/embed/ZcmlK5Xavbg?autoplay=1\"><img src=\"https://i.ytimg.com/vi/ZcmlK5Xavbg/hqdefault.jpg\" alt=\"YouTube video thumbnail\" loading=\"lazy\" decoding=\"async\" /></div>\n<h3>New Features</h3>\n<ul>\n<li>Added kill sounds.</li>\n<li>Added separate sound settings for:\n<ul>\n<li>Normal kills</li>\n<li>Headshot kills</li>\n<li>Boss kills</li>\n</ul>\n</li>\n<li>Each event can use its own sound preset.</li>\n<li>Added multiple selectable sound presets.</li>\n<li>Added independent volume controls for sound effects.</li>\n<li>Added sound previews directly from the settings menu.</li>\n<li>Sound presets can be previewed before entering a raid.</li>\n<li>Improved volume consistency between different sound presets.</li>\n<li>Added additional sound-related customization options through the F12 menu.</li>\n</ul>\n<p>More sound options, kill effects, and HUD features are planned for future updates.</p>\n",
+     "spt_constraint": "4.1.5",
+     "fika": "unknown",
+     "downloads": 48,
+     "size": 3309114,
+     "link": "https://sp-mod.com/mod/download/3029/impactcue-ui-mod/1.5.1",
+     "published_at": "2026-09-15T02:29:00.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 15407,
+     "version": "1.5.0",
+     "description": "<h2>ImpactCue 1.5.0 \u2013 Identity UI Update</h2>\n<p>This update focuses on improving faction and enemy identification while keeping the UI clean and unobtrusive.</p>\n<h2>Preview</h2>\n<div class=\"youtube-lite\" data-video-id=\"EQLjwW8kk38\" data-embed-url=\"https://www.youtube-nocookie.com/embed/EQLjwW8kk38?autoplay=1\"><img src=\"https://i.ytimg.com/vi/EQLjwW8kk38/hqdefault.jpg\" alt=\"YouTube video thumbnail\" loading=\"lazy\" decoding=\"async\" /></div>\n<h3>What\u2019s New</h3>\n<ul>\n<li>Simplified identity icons for USEC, BEAR, SCAV, and BOSS enemies.</li>\n<li>Added a dedicated red star icon for BOSS targets.</li>\n<li>Fixed incorrect/broken star rendering.</li>\n<li>Adjusted the BOSS icon size to better match the other identity markers.</li>\n<li>Added a subtle red glow to the BOSS icon for improved visibility without excessive brightness.</li>\n<li>Improved overall icon readability and visual consistency.</li>\n<li>Existing ImpactCue functionality remains unchanged.</li>\n</ul>\n<h1>\u26a0\ufe0f1.5.0 RE-UPLOADED VERSION</h1>\n<p>The version uploaded earlier had an issue with image rendering, so it has been re-uploaded.</p>\n<p>I noticed the issue shortly after uploading and removed the affected version immediately. If you downloaded the bugged version, please download this version again.</p>\n<h3>Coming Next</h3>\n<p>Kill sounds and kill effects are currently planned for a future update.</p>\n<p>More features and customization options are also planned.</p>\n<p>Feedback and suggestions are welcome.</p>\n",
+     "spt_constraint": "4.1.5",
+     "fika": "unknown",
+     "downloads": 111,
+     "size": 39047,
+     "link": "https://sp-mod.com/mod/download/3029/impactcue-ui-mod/1.5.0",
+     "published_at": "2026-09-14T23:55:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 15400,
      "version": "1.4.8",
      "description": "<p>Initial release of ImpactCue-UI-MOD for SPT 4.1.5.</p>\n<h3>Features</h3>\n<ul>\n<li>Customizable hit markers</li>\n<li>Floating damage numbers</li>\n<li>Kill feed with animation presets</li>\n<li>Victim highlight effects</li>\n<li>HUD position editor</li>\n<li>Configurable colors and layout</li>\n<li>F12 configuration menu</li>\n<li>Localized weapon names with category fallback</li>\n</ul>\n",
      "spt_constraint": "4.1.5",
      "fika": "unknown",
-     "downloads": 178,
+     "downloads": 183,
      "size": 27560,
      "link": "https://sp-mod.com/mod/download/3029/impactcue-ui-mod/1.4.8",
      "published_at": "2026-09-14T20:04:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.4.8",
+   "latest_version": "1.5.5",
    "spt_constraint": "4.1.5",
    "all_spt_constraints": [
     "4.1.5"
@@ -200471,7 +200678,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-09-14T20:03:00.000000Z",
-   "updated_at": "2026-09-14T23:46:53.000000Z",
+   "updated_at": "2026-09-15T03:51:05.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
