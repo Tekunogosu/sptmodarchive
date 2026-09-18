@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-18T16:32:04Z",
+ "generated_at": "2026-09-18T20:59:20Z",
  "source": "https://sp-mod.com",
  "filter": "all",
  "mod_count": 1967,
@@ -17367,12 +17367,12 @@
    "guid": "me.skwizzy.lootingbots",
    "name": "Looting Bots",
    "slug": "looting-bots",
-   "teaser": "This mod aims to add more life to the bots by enhancing some EFT looting behaviors letting bots loot items, containers, and corpses during patrols. More features to come!",
-   "description_html": "<p>If you enjoy my work, support me at <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/skwizzy\" rel=\"noreferrer noopener\">Ko-Fi!</a></p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Description</div>\n<div class=\"tab-content\"><h3><strong>REQUIRED DEPENDENCY: <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/902/bigbrain\" rel=\"noreferrer noopener\">BigBrain</a> This mod will not work unless the BigBrain mod is also installed!</strong></h3>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Skwizzy/SPT-LootingBots/blob/master/README.md\" rel=\"noreferrer noopener\">View readme</a> for more details. Please report any issues in the comments section here or feel free to open an issue on the github. Having debug enabled in the mod menu is recommended when reporting issues.</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Skwizzy/SPT-LootingBots/issues?q=is%3Aopen+-label%3A%22resolution%3A+fixed+%28in+beta%29%22+label%3Abug%2C%22performance+issue%22+\" rel=\"noreferrer noopener\"> <img loading=\"lazy\" decoding=\"async\" src=\"https://img.shields.io/github/issues-search/Skwizzy/SPT-LootingBots?label=Open%20issues&amp;query=is%3Aopen%20-label%3A%22resolution%3A%20fixed%20%28in%20beta%29%22%20label%3Abug%2C%22performance%20issue%22\" alt=\"GitHub issue custom search in repo\" /></a> - Check here for an existing issue before reporting a bug</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Skwizzy/SPT-LootingBots/issues?q=is%3Aissue+is%3Aopen+label%3A%22resolution%3A+fixed+%28in+beta%29%22%2C%22resolution%3A+implemented+%28in+beta%29%22+\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://img.shields.io/github/issues-search/skwizzy/spt-lootingbots?label=Resolved%20in%20beta&amp;query=is%3Aissue%20is%3Aopen%20label%3A%22resolution%3A%20fixed%20%28in%20beta%29%22%2C%22resolution%3A%20implemented%20%28in%20beta%29%22\" alt=\"GitHub issue custom search in repo\" /></a></p>\n<h3><strong>Base game behavior:</strong></h3>\n<ul>\n<li>Scavs start a raid on patrol, when they finish a combat engagement they will return to patrol mode after the amount of seconds specified in the Mind.TIME_TO_FORGOR_ABOUT_ENEMY_SEC bot config property</li>\n<li>When scavs are on patrol, they have a chance to inspect a nearby corpse and loot simple things such as weapons and</li>\n<li>When scavs are on patrol, sometimes they stop in front of a lootable container and pretend to loot it</li>\n<li>PMCs and Scavs in SPT spawn with some potentially valuable loot already in their inventory</li>\n</ul>\n<h3><strong>Modded behavior:</strong></h3>\n<ul>\n<li>New bot brain layer (LootingLayer) added for looting that replaces the base game logic responsible for \u201clooting\u201d</li>\n<li>LootingLayer will activate every 10 seconds (by default) during a patrol causing the bots to scan for the closest lootable item, container, or corpse. Scan distance configured by the \u201cDetect Loot Distance\u201d setting (75m by default)</li>\n<li>Once a lootable object has been found, bots will attempt to navigate to the object and commence looting</li>\n<li>Bots will attempt to loot everything from within corpse and a container</li>\n<li>Bots will examine each item for about 1 second before looting it (simulates discovering items when searcing containers/corpses)</li>\n<li>If a bot cannot equip a piece of gear, they will attempt to place it in their inventory</li>\n<li>Not all loot is navigable, relies heavily on the availability of a nearby NavMesh that bots can use to navigate\n<ul>\n<li>If a container is behind a door, bots will open the door if unlocked.</li>\n<li>If a bot is stuck in place or if the bot spends too much time moving, the loot will be ignored</li>\n</ul>\n</li>\n<li>Once looting has finished, bots will wait the amount of time specified<br />\nin the \u201cDelay between looting\u201d setting before the next loot scan occurs (15s by default)</li>\n</ul>\n<p><strong>Gear Swap Criteria</strong></p>\n<ul>\n<li>Bot will always swap to gear that has higher armor rating (helmets, armor vests, armored rigs)</li>\n<li>Backpack will be swapped if backpack being looted has more slots</li>\n<li>When looting larger rigs, bots will swap if currently equipped rig is of equal or lower armor class</li>\n<li>When throwing old backpacks/tactical rigs, bots try to take all the loot from the container thrown</li>\n<li>When looting weapons, bots will compare the item\u2019s Handbook(default) or Flea market price in rubles to the value of the weapons currently equipped.\n<ul>\n<li>Looted weapons with higher value will replace an equipped weapon with the lowest value</li>\n<li>Bots prefer to use the highest value weapon as their primary (if they have ammo)</li>\n</ul>\n</li>\n</ul>\n<h3>Package Contents</h3>\n<ul>\n<li>BepInEx/plugins/skwizzy.LootingBots.dll - Client plugin responsible for all the new corpse looting logic</li>\n<li>user/mods/Skwizzy-LootingBots-ServerMod - Server mod responsible for:\n<ol>\n<li>Marks all items with DiscardLimits as InsuranceDisabled. It then disables the DiscardLimit settings for the server via the EnableDiscardLimits option in Server/database/globals.json. SPT PMC bots by default spawn with loot already in their backpacks, this loot is not marked Found In Raid and thus is subject to BSG\u2019s RMT protection logic. With discard limits enabled, when a bot drops their backback to swap to a new one any loot with discard limits in their bag will be deleted immediately when the bag is dropped. To avoid this we set the EnableDiscardLimits to false, and also make sure to flag all items with a DiscardLimit &gt;= 0 as InsuranceDisabled to prevent items suchs as keys and cases to be insured.</li>\n<li>Provides the option to clear out the loot that PMC/Scav bots start with<br />\nin their backpacks. This does not include meds, ammo, grenades ect. These options can be found in the Skwizzy-LootingBots-ServerMod/config/config.json.</li>\n</ol>\n</li>\n</ul>\n<h3><strong>Install</strong></h3>\n<ul>\n<li>Extract the contents of the .zip file into your SPT directory</li>\n<li>Recommended to have LootingBots-ServerMod loaded last in the mod order to make sure discard limits arent enabled by another server mod</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Mod Settings (F12)</div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Loot Finder</div>\n<div class=\"tab-content\"><ul>\n<li>Enable corpse looting - Enables corpse looting for the selected bot types</li>\n<li>Enable corpse line of sight check - When scanning for loot, corpses will be ignored if they are not visible by the bot</li>\n<li>Detect corpse distance - Distance (in meters) a bot is able to detect a corpse</li>\n<li>Enable container looting - Enables container looting for the selected bot types</li>\n<li>Enable container line of sight check - When scanning for loot, containers will be ignored if they are not visible by the bot</li>\n<li>Detect container distance - Distance (in meters) a bot is able to detect a container</li>\n<li>Enable loose item looting - Enables loose item looting for the selected bot types</li>\n<li>Enable item line of sight check - When scanning for loot, loose items will be ignored if they are not visible by the bot</li>\n<li>Detect item distance - Distance (in meters) a bot is able to detect an item</li>\n<li>Debug: Log Levels - Enable different levels of log messages to show in the logs</li>\n<li>Debug: Show navigation points - Renders spheres where bots are trying to navigate when container looting. (Red): Container position. (Green): Calculated bot destination. (Blue): NavMesh corrected destination (where the bot will move).</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Loot Finder (Timing)</div>\n<div class=\"tab-content\"><ul>\n<li>Delay after spawn - Amount of seconds a bot will wait to start their first loot scan after spawning into raid.</li>\n<li>Delay after taking an item (ms) - Amount of milliseconds a bot will wait after taking an item into their inventory before attempting to loot another item. Simulates the amount of time it takes for a player to look through loot decide to take something.</li>\n<li>Enable examine time - Adds a delay before looting an item to simulate the time it takes for a bot to \u201cuncover (examine)\u201d an item when searching containers, items and corpses. The delay is calculated using the ExamineTime of an object and the AttentionExamineTime of the bot.</li>\n<li>Loot scan interval - The amount of seconds the bot will wait until triggering another loot scan</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Weapon Loot Settings</div>\n<div class=\"tab-content\"><ul>\n<li>Use flea market prices- Bots will query more accurate ragfair prices to do item value checks. Will make a query to get ragfair prices when the client is first started. May affect initial client start times.</li>\n<li>Calculate value from attachments- Calculate weapon value by looking up each attachment. More accurate than just looking at the base weapon template but a slightly more expensive check</li>\n<li>Allow weapon attachment stripping - Allows bots to take the attachments off of a weapon if they are not able to pick the weapon up into their inventory</li>\n<li>PMC: Min loot value threshold - PMC bots will only loot items that exceed the specified value in roubles. When set to 0, bots will ignore the minimum value threshold</li>\n<li>PMC: Max loot value threshold - PMC bots will NOT loot items that exceed the specified value in roubles. When set to 0, bots will ignore the maximum value threshold</li>\n<li>PMC: Allowed gear to equip - The equipment a PMC bot is able to equip during raid</li>\n<li>PMC: Allowed gear in bags - The equipment a PMC bot is able to place in their backpack/rig</li>\n<li>Scav: Min loot value threshold - All non-PMC bots will only loot items that exceed the specified value in roubles. When set to 0, bots will ignore the minimum value threshold</li>\n<li>Scav: Max value threshold - All non-PMC bots will NOT loot items that exceed the specified value in roubles. When set to 0, bots will ignore the maximum value threshold</li>\n<li>Scav: Allowed gear to equip - The equipment a non-PMC bot is able to equip during raid</li>\n<li>Scav: Allowed gear in bags - The equipment a non-PMC bot is able to place in their backpack/rig</li>\n<li>Log Levels - Enable different levels of log messages to show in the logs</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">LootingBots-ServerMod Settings</div>\n<div class=\"tab-content\"><p><strong>Settings for LootingBots-ServerMod can be found in user/Skwizzy-LootingBots-ServerMod/config/config.json</strong></p>\n<ul>\n<li>pmcSpawnWithLoot - When set to true, PMCs will spawn with loot in their bags/pockets (default SPT behavior)</li>\n<li>scavSpawnWithLoot - When set to true, Scavs will spawn with loot in the bags/pockets (default SPT behavior)</li>\n</ul>\n<h3><strong>Default config:</strong></h3>\n<p>{ \u201cpmcSpawnWithLoot\u201d: false, \u201cscavSpawnWithLoot\u201d: true }</p></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Recommended Mods</div>\n<div class=\"tab-content\"><ul>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/1119-waypoints-expanded-bot-patrols/\" rel=\"noreferrer noopener\">Waypoints - Expanded Bot Patrols</a> - Adds expanded NavMeshes to all maps allowing bots to be able to navigate to almost every part of the map. When playing with larger Loot Detection Distances, this will allow bots to travel freely to extremely far away loot</li>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/934/search-open-containers?highlight=search\" rel=\"noreferrer noopener\">Search Open Containers</a> - Allows you to search an opened container without having to close them. Nice QOL when encountering containers that have been looted by a bot and left open</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-8\" class=\"tab-panel\"><div class=\"tab-title\">Mod Conflicts</div>\n<div class=\"tab-content\"><p>This mod will conflict with any mod that sets theglobals.config.DiscardLimitsEnabled to true. PMC bots will throw exceptions when attempting to discard gear with DiscardLimits set. This needs to be false for the mod to function properly with pmc looting.</p></div></div></div>\n",
+   "teaser": "Add more life to the bots by enhancing looting behaviors letting them loot items, containers, and corpses!",
+   "description_html": "<p>If you enjoy my work, support me at <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/skwizzy\" rel=\"noreferrer noopener\">Ko-Fi!</a></p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Description</div>\n<div class=\"tab-content\"><h3><strong>REQUIRED DEPENDENCY: <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/902/bigbrain\" rel=\"noreferrer noopener\">BigBrain</a> This mod will not work unless the BigBrain mod is also installed!</strong></h3>\n<p>View <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/ozen-m/SPT-LootingBots?tab=readme-ov-file\" rel=\"noreferrer noopener\">README</a> for more details. Please report any issues in the <a target=\"_blank\" class=\"external-link\" href=\"https://discord.com/channels/875684761291599922/1238748638822535168\" rel=\"noreferrer noopener\">SPT Discord server</a> or feel free to <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/ozen-m/SPT-LootingBots/issues/new\" rel=\"noreferrer noopener\">open an issue</a> on GitHub. Having debug enabled in the mod menu and attaching log files is recommended when reporting issues.</p>\n<h3><strong>Base Game Behavior:</strong></h3>\n<ul>\n<li>Scavs start a raid on patrol, when they finish a combat engagement they will return to patrol mode after the amount of seconds specified in the Mind.TIME_TO_FORGOR_ABOUT_ENEMY_SEC bot config property</li>\n<li>When scavs are on patrol, they have a chance to inspect a nearby corpse and loot simple things such as weapons and</li>\n<li>When scavs are on patrol, sometimes they stop in front of a lootable container and pretend to loot it</li>\n<li>PMCs and Scavs in SPT spawn with some potentially valuable loot already in their inventory</li>\n</ul>\n<h3><strong>Modded Behavior:</strong></h3>\n<ul>\n<li>New bot brain layer (LootingLayer) added for looting that replaces the base game logic responsible for \u201clooting\u201d</li>\n<li>LootingLayer will activate every 5 seconds (by default) during a patrol causing the bots to scan for the closest lootable item, container, or corpse. Scan distance configured by the \u201cDetect Loot Distance\u201d setting (80m by default)</li>\n<li>Once a lootable object has been found, bots will attempt to navigate to the object and commence looting</li>\n<li>Bots will attempt to loot everything from within a corpse and a container</li>\n<li>Bots will examine each item for about 1 second before looting it (simulates discovering items when searcing containers/corpses)</li>\n<li>If a bot cannot equip a piece of gear, they will attempt to place it in their inventory</li>\n<li>Not all loot is navigable, relies heavily on the availability of a nearby NavMesh that bots can use to navigate\n<ul>\n<li>If a container is behind a door, bots will open the door if unlocked.</li>\n<li>If a bot is stuck in place or if the bot spends too much time moving, the loot will be ignored</li>\n</ul>\n</li>\n<li>Once looting has finished, bots will wait the amount of time specified<br />\nin the \u201cDelay between looting\u201d setting before the next loot scan occurs (5s by default)</li>\n</ul>\n<p><strong>Gear Swap Criteria</strong></p>\n<ul>\n<li>Bot will always swap to gear that has higher armor rating (helmets, armor vests, armored rigs)</li>\n<li>Backpack will be swapped if backpack being looted has more slots</li>\n<li>When looting larger rigs, bots will swap if currently equipped rig is of equal or lower armor class</li>\n<li>When throwing old backpacks/tactical rigs, bots try to take all the loot from the container thrown</li>\n<li>When looting weapons, bots will compare the penetration power of its ammo and/or the item\u2019s Handbook(default) or Flea market price to the weapons currently equipped.\n<ul>\n<li>Potential weapons with higher ammo penetration power will replace an equipped weapon with the lowest power</li>\n<li>If a possible loot weapon is in the same ammo penetration power tier, the value of the weapon will be used for comparison</li>\n<li>Bots prefer to use the best weapon as their primary</li>\n</ul>\n</li>\n</ul>\n<h3>Package Contents</h3>\n<ul>\n<li>BepInEx/plugins/Skwizzy.LootingBots/Skwizzy.LootingBots.dll - Client plugin responsible for all the new looting logic</li>\n<li>SPT_Runtime/user/mods/Skwizzy.LootingBots/Skwizzy.LootingBots.dll - Server mod responsible for:\n<ol>\n<li>Marks all items with DiscardLimits as InsuranceDisabled. It then disables the DiscardLimit settings for the server via the EnableDiscardLimits option in Server/database/globals.json. SPT PMC bots by default spawn with loot already in their backpacks, this loot is not marked Found In Raid and thus is subject to B**\u2019s RMT protection logic. With discard limits enabled, when a bot drops their backback to swap to a new one any loot with discard limits in their bag will be deleted immediately when the bag is dropped. To avoid this we set the EnableDiscardLimits to false, and also make sure to flag all items with a DiscardLimit &gt;= 0 as InsuranceDisabled to prevent items suchs as keys and cases to be insured.</li>\n<li>Provides the option to clear out the loot that PMC/Scav bots start with<br />\nin their backpacks. This does not include meds, ammo, grenades ect. These options can be found in the Skwizzy.LootingBots/Config/config.json.</li>\n</ol>\n</li>\n</ul>\n<h3><strong>Install</strong></h3>\n<ul>\n<li>Extract the contents of the .7z file into your SPT directory</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Mod Settings (F12)</div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Loot Finder</div>\n<div class=\"tab-content\"><ul>\n<li>Enable corpse looting - Enables corpse looting for the selected bot types</li>\n<li>Enable corpse line of sight check - When scanning for loot, corpses will be ignored if they are not visible by the bot</li>\n<li>Detect corpse distance - Distance (in meters) a bot is able to detect a corpse</li>\n<li>Enable container looting - Enables container looting for the selected bot types</li>\n<li>Enable container line of sight check - When scanning for loot, containers will be ignored if they are not visible by the bot</li>\n<li>Detect container distance - Distance (in meters) a bot is able to detect a container</li>\n<li>Enable loose item looting - Enables loose item looting for the selected bot types</li>\n<li>Enable item line of sight check - When scanning for loot, loose items will be ignored if they are not visible by the bot</li>\n<li>Detect item distance - Distance (in meters) a bot is able to detect an item</li>\n<li>Debug: Log Levels - Enable different levels of log messages to show in the logs</li>\n<li>Debug: Show navigation points - Renders spheres where bots are trying to navigate when container looting. (Red): Container position. (Green): Calculated bot destination. (Blue): NavMesh corrected destination (where the bot will move)</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Loot Finder (Timing)</div>\n<div class=\"tab-content\"><ul>\n<li>Delay after spawn - Amount of seconds a bot will wait to start their first loot scan after spawning into raid</li>\n<li>Loot scan interval - The amount of seconds the bot will wait until triggering another loot scan</li>\n<li>Delay after taking an item (ms) - Amount of milliseconds a bot will wait after taking an item into their inventory before attempting to loot another item. Simulates the amount of time it takes for a player to look through loot decide to take something</li>\n<li>Enable examine time - Adds a delay before looting an item to simulate the time it takes for a bot to \u201cuncover (examine)\u201d an item when searching containers, items and corpses. The delay is calculated using the ExamineTime of an object and the AttentionExamineTime of the bot</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Weapon Loot Settings</div>\n<div class=\"tab-content\"><ul>\n<li>Use flea market prices- Bots will query more accurate ragfair prices to do item value checks. Will make a query to get ragfair prices when the client is first started. May affect initial client start times</li>\n<li>Calculate weapon value from attachments- Calculate weapon value by looking up each attachment. More accurate than just looking at the base weapon template but a slightly more expensive check</li>\n<li>Calculate armor value from slotted items - Calculate armor value by looking up each slot containing plates/faceshields etc. More accurate than just looking at the base armor template but a slightly more expensive check</li>\n<li>Allow weapon attachment stripping - Allows bots to take the attachments off of a weapon if they are not able to pick the weapon up into their inventory</li>\n<li>PMC: Min loot value threshold - PMC bots will only loot items that exceed the specified value in roubles. When set to 0, bots will ignore the minimum value threshold</li>\n<li>PMC: Max loot value threshold - PMC bots will NOT loot items that exceed the specified value in roubles. When set to 0, bots will ignore the maximum value threshold</li>\n<li>PMC: Allowed gear to equip - The equipment a PMC bot is able to equip during raid</li>\n<li>PMC: Allowed gear in bags - The equipment a PMC bot is able to place in their backpack/rig</li>\n<li>Scav: Min loot value threshold - All non-PMC bots will only loot items that exceed the specified value in roubles. When set to 0, bots will ignore the minimum value threshold</li>\n<li>Scav: Max value threshold - All non-PMC bots will NOT loot items that exceed the specified value in roubles. When set to 0, bots will ignore the maximum value threshold</li>\n<li>Scav: Allowed gear to equip - The equipment a non-PMC bot is able to equip during raid</li>\n<li>Scav: Allowed gear in bags - The equipment a non-PMC bot is able to place in their backpack/rig</li>\n<li>Loot Timeout - Time in seconds before a looting bot is timed out and stops looting</li>\n<li>Log Levels - Enable different levels of log messages to show in the logs</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Server Settings</div>\n<div class=\"tab-content\"><p><strong>Settings for LootingBots-ServerMod can be found in user/Skwizzy-LootingBots-ServerMod/config/config.json</strong></p>\n<ul>\n<li>pmcSpawnWithLoot - When set to true, PMCs will spawn with loot in their bags/pockets (default SPT behavior)</li>\n<li>scavSpawnWithLoot - When set to true, Scavs will spawn with loot in the bags/pockets (default SPT behavior)</li>\n</ul>\n<h3><strong>Default config:</strong></h3>\n<p>{ \u201cpmcSpawnWithLoot\u201d: false, \u201cscavSpawnWithLoot\u201d: true }</p></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Recommended Mods</div>\n<div class=\"tab-content\"><ul>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/827/waypoints-expanded-navmesh\" rel=\"noreferrer noopener\">Waypoints - Expanded Navmesh</a> - Adds expanded NavMeshes to all maps allowing bots to be able to navigate to almost every part of the map. When playing with larger Loot Detection Distances, this will allow bots to travel freely to extremely far away loot</li>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/934/search-open-containers\" rel=\"noreferrer noopener\">Search Open Containers</a> - Allows you to search an opened container without having to close them. Nice QOL when encountering containers that have been looted by a bot and left open</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-8\" class=\"tab-panel\"><div class=\"tab-title\">Mod Conflicts</div>\n<div class=\"tab-content\"><p>This mod will conflict with any mod that sets the globals.config.DiscardLimitsEnabled to true. PMC bots will throw exceptions when attempting to discard gear with DiscardLimits set. This needs to be false for the mod to function properly with pmc looting.</p></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/1096.png",
    "forge_url": "https://sp-mod.com/mod/812/looting-bots",
-   "downloads": 736814,
-   "favourites": 191,
+   "downloads": 741229,
+   "favourites": 226,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -17395,22 +17395,58 @@
      "id": 52282,
      "name": "ArchangelWTF",
      "avatar": "https://files.sp-mod.com/profile-photos/bc678ae6a663d65b719827be994414a484a8e356_128w.webp"
+    },
+    {
+     "id": 77756,
+     "name": "ozen",
+     "avatar": "https://files.sp-mod.com/profile-photos/1aglmhPJvrzyi93w0EuTd1OMEZeGAtUt15niHWWU_128w.webp"
     }
    ],
    "source_links": [
     {
      "url": "https://github.com/Skwizzy/SPT-LootingBots",
-     "label": ""
+     "label": "<=4.0"
+    },
+    {
+     "url": "https://github.com/ozen-m/SPT-LootingBots",
+     "label": "~4.1"
     }
    ],
    "versions": [
+    {
+     "id": 15472,
+     "version": "1.8.0",
+     "description": "<p><strong>Changes</strong>:</p>\n<ul>\n<li>Added bot looting animations (opening containers, inventory opened)</li>\n<li>Added config for max number of empty scan attempts before taking a short break</li>\n<li>Fixed infinite looting loop caused by components not being destroyed when bot was extracted by SAIN. (Thanks <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/dwesterwick\" rel=\"noreferrer noopener\">@dwesterwick</a>! <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/ozen-m/SPT-LootingBots/pull/1\" rel=\"noreferrer noopener\">#1</a>, <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/ArchangelWTF/SAIN/pull/42\" rel=\"noreferrer noopener\">SAIN#42</a>)</li>\n<li>Fixed bots opening doors outside the looting layer</li>\n<li>Fixed bots being able to loot items already in your inventory, or anyone elses</li>\n<li>Fixed armor class calculation</li>\n<li>Fixed interop ForceScan not actually forcing a scan</li>\n<li>Fixed bots never disabling when at capacity (<code>Maximum looting bots</code>)</li>\n<li>Fixed available grid spaces and total grid spaces</li>\n<li>Fixed weapon stripping not checking all mods</li>\n<li>Fixed useless magazines in the backpack not being thrown away</li>\n<li>Exclude stripping magazines from weapons, the game does not like it and throws up</li>\n<li>Swap out equipped armored rig if the corpse\u2019s chest armor is better, or the same armor class and the corpse\u2019s tac vest is larger</li>\n<li>Allow multiple bots to loot the same container, only if the bot has no other friendlies looting the same</li>\n<li>Bots can no longer pick up an item when it does not have enough space</li>\n<li>Changing looting settings in-raid applies immediately instead of next raid</li>\n<li>Enqueue priority corpse when looting was unsuccessful</li>\n<li>Enqueue prioritized loot only if reachable</li>\n<li>Calculate armor item price from its plates with config</li>\n<li>Include in net worth calculation a container\u2019s grid items value when swapping, picking up, equipping backpacks, rigs, etc.</li>\n<li>Include ammo penetration power in deciding if weapon is better</li>\n<li>Try to transfer item to corpse\u2019s inventory instead of throwing on the ground</li>\n<li>Do not throw dogtags when throwing undervalued items</li>\n<li>Reworked weapon equip decider, this always equips the best weapon in the primary slot</li>\n<li>Reworked stuck and distance checks</li>\n<li>Reworked LootingBrain enabling so that it respects the <code>Maximum looting bots</code> config</li>\n<li>Re-enabled AddExtraAmmo for bots when looting weapons, with Fika compatibility (Thanks <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Lacyway/\" rel=\"noreferrer noopener\">Lacyway</a>!)</li>\n<li>Reverted activeloot persistence, this improves interop with Questing Bots</li>\n<li>Refactored throw undervalued items, and throw unusable mag regardless of price</li>\n<li>Workaround for successful network transaction but running indefinitely</li>\n<li>Finish interacting with container before looting</li>\n<li>Marked incompatible with Orbit, it has its own looting system</li>\n<li>Updated dependency for DrakiaXYZ\u2019s BigBrain to 1.5.0</li>\n<li>Updated interop file</li>\n<li>Distribute license</li>\n<li>Inline exception handling</li>\n<li>Reduced various allocations</li>\n<li>Removed various redundant calls</li>\n<li>Config defaults</li>\n<li>Debug: Reuse debug spheres</li>\n<li>Debug: Fixed initial net worth calculation</li>\n</ul>\n",
+     "spt_constraint": "~4.1.3",
+     "fika": "compatible",
+     "downloads": 213,
+     "size": 85484,
+     "link": "https://sp-mod.com/mod/download/812/looting-bots/1.8.0",
+     "published_at": "2026-09-18T16:43:00.000000Z",
+     "dependencies": [
+      {
+       "id": 902,
+       "name": "BigBrain",
+       "slug": "bigbrain",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/902/bigbrain"
+      },
+      {
+       "id": 827,
+       "name": "Waypoints - Expanded Navmesh",
+       "slug": "waypoints-expanded-navmesh",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/827/waypoints-expanded-navmesh"
+      }
+     ]
+    },
     {
      "id": 13344,
      "version": "1.7.0",
      "description": "<p><strong>Added</strong>:</p>\n<ul>\n<li>Looting priority, currently implemented for corpses (Bots should prioritize looting their own kills) and airdrops</li>\n<li>Extend gear swapping to include other gear (e.g. headphones, eyewear, facecover etc)</li>\n<li>Flea price poll every 30 minutes</li>\n<li>Scan Limiter, limit concurrent loot scans with config</li>\n<li>Empty scan attempts cooldown</li>\n<li>Looting action timeout, in case bots get stuck (shouldn\u2019t probably happen now)</li>\n<li>Total bot networth (only seen in debug)</li>\n<li>Transaction fail checks</li>\n<li>Add missing equipment slots</li>\n</ul>\n<p><strong>Fixed</strong>:</p>\n<ul>\n<li>Moving a bot\u2019s active weapon can cause the bot to get stuck (more of a workaround, the cause is hard to track and is not from LB)</li>\n<li>GetPrioritySlots using corpse equipment instead of own equipment</li>\n<li>Add is used in SubtractNetValue</li>\n<li>Use of interop which forces a bot\u2019s brain to be enabled is never reverted</li>\n<li>Destroy LootFinder when BotOwner is disposed</li>\n<li>Error merging into magazines/weapon chambers</li>\n</ul>\n<p><strong>Modified</strong>:</p>\n<ul>\n<li>Unify ActiveItem ActiveCorpse ActiveContainer into ActiveLoot</li>\n<li>Get loot type from InteractableObject instead of using GetComponentInParent for each type</li>\n<li>Checks per type of loot instead of checking for all loot types</li>\n<li>Refactor ShouldSwapGear, early returns for less checks, monetary check</li>\n<li>Update GetArmorDifference to check plates inside armor slots</li>\n<li>Better flow when swapping gear, after equipping - throw undervalued items, useless mags, then loot/strip attachments of thrown/swapped out gear</li>\n<li>Try to swap if possible instead of throwing items on the ground</li>\n<li>Blocking item check for ShouldSwapGear</li>\n<li>Cleanup ThrowUselessMags</li>\n<li>Refactor locked/unlootable slot/item checks</li>\n<li>Select best available weapon after looting (Almost always primary weapon)</li>\n<li>Refactor distance checks, early exit when current path length exceeds range</li>\n<li>Per slot item pricing</li>\n<li>Try continue moving bot with partial path</li>\n<li>Reuse GearValue weapon pairs instead of allocating new ones when weapons are updated</li>\n<li>Use pooling where possible to minimize allocations (arrays and objects)</li>\n<li>Use bot\u2019s BotLog in ItemAppraiser calls</li>\n<li>InteractContainer helper Fika compat</li>\n<li>Clear lists instead of assigning new ones when resetting (Caches)</li>\n<li>Early return 0 when getting avail grid slots when grid is null</li>\n<li>Store LayerMask as int to avoid conversions</li>\n<li>Do not clear active loot if unsuccesful in looting (usually interrupted by combat) for less loot scans</li>\n<li>Config: Increase delays for more realistic loot time</li>\n<li>Avoid some more repeated property access</li>\n<li>Various reductions in allocations</li>\n</ul>\n<p>A huge thanks to @ozen-m Who practically did most of these changes himself, I only added airdrops to his priority system</p>\n",
      "spt_constraint": "~4.0 <4.1.0",
      "fika": "compatible",
-     "downloads": 54576,
+     "downloads": 58524,
      "size": 54685,
      "link": "https://sp-mod.com/mod/download/812/looting-bots/1.7.0",
      "published_at": "2026-04-01T22:00:00.000000Z",
@@ -17437,7 +17473,7 @@
      "description": "<p><strong>Users that use SAIN are recommended to update to this version</strong></p>\n<ul>\n<li>Fixed an issue that caused bots to stop working after they tried to loot a container with SAIN enabled</li>\n</ul>\n<p><strong>Support for this release will be very limited to non-existent, I may come back to fix critical issues if they arise</strong></p>\n",
      "spt_constraint": "~4.0 <4.1.0",
      "fika": "compatible",
-     "downloads": 18523,
+     "downloads": 18535,
      "size": 48101,
      "link": "https://sp-mod.com/mod/download/812/looting-bots/1.6.3",
      "published_at": "2026-02-13T16:34:00.000000Z",
@@ -17464,7 +17500,7 @@
      "description": "<ul>\n<li>Updated to SPT 4.0</li>\n<li>Disabled a few things related to BSG\u201cs loot layers</li>\n</ul>\n<p><strong>Support for this release will be very limited to non-existent, I may come back to fix critical issues if they arise</strong></p>\n",
      "spt_constraint": "~4.0 <4.1.0",
      "fika": "compatible",
-     "downloads": 3149,
+     "downloads": 3156,
      "size": 48083,
      "link": "https://sp-mod.com/mod/download/812/looting-bots/1.6.2",
      "published_at": "2026-02-09T16:19:00.000000Z",
@@ -17484,7 +17520,7 @@
      "description": "<ul>\n<li>Bug Fix for Infinite Looting Loop by DanW</li>\n</ul>\n",
      "spt_constraint": "~3.11.0",
      "fika": "compatible",
-     "downloads": 17073,
+     "downloads": 17213,
      "size": null,
      "link": "https://sp-mod.com/mod/download/812/looting-bots/1.6.1",
      "published_at": "2025-11-20T20:01:00.000000Z",
@@ -17496,7 +17532,7 @@
      "description": "<p>Changes:</p>\n<p>* Fix Player Scav Detection [SPT 3.11] by DanW</p>\n<p>* Change Log Level of \u201cclose enough to loot\u201d Message to Debug by DanW</p>\n<p>* Removed various unnecessary allocations which should lead to better performance</p>\n<p>* Added better Fika compatibility for checking nearby players, no longer base this off of just the main player.</p>\n<p>* Cleaned up the code base in a lot of places</p>\n",
      "spt_constraint": "~3.11.0",
      "fika": "unknown",
-     "downloads": 45420,
+     "downloads": 45424,
      "size": null,
      "link": "https://sp-mod.com/mod/download/812/looting-bots/1.6.0+spt-311",
      "published_at": "2025-08-01T14:24:50.000000Z",
@@ -17508,7 +17544,7 @@
      "description": "<p>- Updated to SPT 3.11</p>\n<p>- Adds a new patch to completely turn off BSG\u2019s looting layer</p>\n<p>- Slightly increased looting bot range (From 75 to 80)</p>\n",
      "spt_constraint": "~3.11.0",
      "fika": "unknown",
-     "downloads": 1651,
+     "downloads": 1654,
      "size": null,
      "link": "https://sp-mod.com/mod/download/812/looting-bots/1.5.0+spt-311",
      "published_at": "2025-03-15T20:00:43.000000Z",
@@ -17520,7 +17556,7 @@
      "description": "<p>Thank you very much ArchangelWTF for making the upgrade to 3.10!</p>\n<p>Update references and removed some deprecated logic</p>\n",
      "spt_constraint": "~3.10.0",
      "fika": "unknown",
-     "downloads": 9708,
+     "downloads": 9723,
      "size": null,
      "link": "https://sp-mod.com/mod/download/812/looting-bots/1.4.0+spt-310",
      "published_at": "2024-12-14T02:31:12.000000Z",
@@ -17532,7 +17568,7 @@
      "description": "<p>Thanks @hel0t for the update!</p>\n<p>Update references to work with SPT 3.9.0.</p>\n<p>VirusTotal is showing one of the vendors reporting as malicious (Anity-AVL). This is a false positive, a rescan of version 1.3.4 which had the vendor as passing is now also reporting as malicious</p>\n",
      "spt_constraint": "3.9.0",
      "fika": "unknown",
-     "downloads": 126115,
+     "downloads": 126137,
      "size": null,
      "link": "https://sp-mod.com/mod/download/812/looting-bots/1.3.5+spt-390",
      "published_at": "2024-07-09T03:13:44.000000Z",
@@ -17544,7 +17580,7 @@
      "description": "<h3>New Features</h3>\n<p>Thanks to Solarint for the following new features:</p>\n<ul>\n<li>\n<p>Added 3 new methods to the Mod Interop support. GetItemPrice, GetNetLootValue, CheckIfInventoryFull. More info can be found in the <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Skwizzy/SPT-LootingBots/blob/3.8.0/using_looting_bots_interop.md\" rel=\"noreferrer noopener\">interop docs</a></p>\n</li>\n<li>\n<p>Added 3 new options to the Loot Finder settings. These settings will cause bots to ignore loot during loot scans if the loot is not visible by the bot. All disabled by default</p>\n<ul>\n<li>Enable corpse line of sight check</li>\n<li>Enable container line of sight check</li>\n<li>Enable item line of sight check.</li>\n</ul>\n</li>\n</ul>\n<h3>Changes</h3>\n<ul>\n<li>Added a new patch to the BotOwner.Dispose method that will remove the BotOwner from the ActiveLootCache when a bot is killed while looting. Should be the root cause of the null reference exceptions seen in the ActiveLootCache</li>\n</ul>\n",
      "spt_constraint": "3.8.0",
      "fika": "unknown",
-     "downloads": 24503,
+     "downloads": 24508,
      "size": null,
      "link": "https://sp-mod.com/mod/download/812/looting-bots/1.3.1+aki-380",
      "published_at": "2024-04-25T04:31:09.000000Z",
@@ -17556,7 +17592,7 @@
      "description": "<p>Update GClasses to support AKI 3.8.0</p>\n",
      "spt_constraint": "3.8.0",
      "fika": "unknown",
-     "downloads": 31631,
+     "downloads": 31635,
      "size": null,
      "link": "https://sp-mod.com/mod/download/812/looting-bots/1.3.0+aki-380",
      "published_at": "2024-04-01T23:11:23.000000Z",
@@ -17568,7 +17604,7 @@
      "description": "<h2>Compatible with AKI 3.7.1 - 3.7.6</h2>\n<h2>Changes</h2>\n<ul>\n<li>Prevent caching and finding loot if the BotOwner.name is empty. Should prevent exceptions from being thrown by the ActiveLootCache</li>\n</ul>\n",
      "spt_constraint": "3.7.6",
      "fika": "unknown",
-     "downloads": 824,
+     "downloads": 830,
      "size": null,
      "link": "https://sp-mod.com/mod/download/812/looting-bots/1.2.2+aki-376",
      "published_at": "2024-04-01T23:09:07.000000Z",
@@ -17580,7 +17616,7 @@
      "description": "<h3>Compatible with AKI 3.7.1 - 3.7.6</h3>\n<h2>Changes</h2>\n<ul>\n<li>Prevent scavs from looting memory \ud83e\udd16 . Fixed a memory leak due to excessive regex calls and log message concatenation</li>\n</ul>\n",
      "spt_constraint": "3.7.6",
      "fika": "unknown",
-     "downloads": 19531,
+     "downloads": 19534,
      "size": null,
      "link": "https://sp-mod.com/mod/download/812/looting-bots/1.2.1+aki-376",
      "published_at": "2024-02-16T23:14:34.000000Z",
@@ -17592,7 +17628,7 @@
      "description": "<p>There is a known memory leak in this version, working on a fix!</p>\n<h3>Compatible with AKI 3.7.1 - 3.7.6</h3>\n<h3>For Modders</h3>\n<p>Thanks to DanW!</p>\n<p>Adds support for external commands without requiring LootingBots as a dependency for mods.</p>\n<p>Currently the two external commands are:</p>\n<ul>\n<li>Force a loot scan: Forces a bot to scan for loot the next time it is able to do so</li>\n<li>Inhibit looting: Stops a bot from looting and prevents them from scanning for loot for a specified amount of seconds</li>\n</ul>\n<p>For more details view the <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Skwizzy/SPT-LootingBots/blob/master/using_looting_bots_interop.md\" rel=\"noreferrer noopener\">Full documentation</a></p>\n<h3>New Features</h3>\n<ul>\n<li>New Setting Loot Finder (Timing): Enable examine time - Adds a delay before looting an item to simulate the time it takes for a bot to \u201cuncover (examine)\u201d an item when searching containers, items and corpses. The delay is calculated using the ExamineTime of an object and the AttentionExamineTime of the bot. Without any mods changing these values, it seems like the average examine time is 1 second. Looting should take a bit more time now depending on the amount of items in the container/corpse</li>\n<li>Added a checkbox for PlayerScav to all the Loot Finder settings. Now you can enable/disable looting for player scavs separately from normal scavs</li>\n</ul>\n<h3>Changes</h3>\n<ul>\n<li>\n<p>Lowered delay at the beginning of container/corpse looting to 2500 ms (simulates UI opening and waiting for the search process to start)</p>\n</li>\n<li>\n<p>Renamed Transaction Delay to Delay after taking item and clarified the behavior in the description</p>\n</li>\n<li>\n<p>Allow bots to try and loot \u201csearchable\u201d items even if they do not have room to pick them up. Was preventing loose items like backpacks and rigs from being considered as valid loot</p>\n</li>\n<li>\n<p>Prevent friendly bots from looting things the player is looting. Enemies can still try to loot the same object as the player</p>\n</li>\n<li>\n<p>Hide debugging F12 settings under the \u201cadvanced settings\u201d checkbox at the top of the menu</p>\n</li>\n<li>\n<p>A bot will now end exit the loot finding logic if the first three items found are not within the acceptable looting range. This is to prevent bots from performing the expensive path distance calculation multiple times unnecessarily as its usually the case that if the first 3 items are not in range then none of the following items will be in range.</p>\n</li>\n<li>\n<p>Only show top level items in looting results when searching containers/equipment</p>\n</li>\n<li>\n<p>Fixed issue with debug spheres not working</p>\n</li>\n</ul>\n",
      "spt_constraint": "3.7.6",
      "fika": "unknown",
-     "downloads": 3208,
+     "downloads": 3212,
      "size": null,
      "link": "https://sp-mod.com/mod/download/812/looting-bots/1.2.0",
      "published_at": "2024-02-11T21:03:38.000000Z",
@@ -17604,15 +17640,15 @@
      "description": "<p>Finally updated GClasses and NoDiscardLimit implementation to work with AKI 3.7.1! Thank you everyone for your patience!</p>\n<h3>Changes</h3>\n<ul>\n<li>Added LootingLayer to the following new bot brains: <strong>BossBoar</strong>, <strong>BoarSniper</strong>, <strong>FlBoar</strong>, <strong>Obdolbs</strong> and <strong>ArenaFighter</strong></li>\n<li>Fix issue where bots were not picking up usable magazines after equipping a new weapon</li>\n<li>Fix issue where PMCs/scavs with boss brains were being treated as bosses and not allowed to swap gear</li>\n<li>Fix issue where helmets were not recognized as equippable</li>\n<li>Fix mistake in distance math where shortest distance was not being updated resulting in horribly incorrect loot finding.</li>\n</ul>\n",
      "spt_constraint": "3.7.1",
      "fika": "unknown",
-     "downloads": 24950,
+     "downloads": 24953,
      "size": null,
      "link": "https://sp-mod.com/mod/download/812/looting-bots/1.1.4+aki-371",
      "published_at": "2023-10-26T03:15:35.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.7.0",
-   "spt_constraint": "~4.0 <4.1.0",
+   "latest_version": "1.8.0",
+   "spt_constraint": "~4.1.3",
    "all_spt_constraints": [
     "3.7.1",
     "3.7.6",
@@ -17620,42 +17656,43 @@
     "3.9.0",
     "~3.10.0",
     "~3.11.0",
-    "~4.0 <4.1.0"
+    "~4.0 <4.1.0",
+    "~4.1.3"
    ],
    "dependencies": [
-    {
-     "id": 827,
-     "name": "Waypoints - Expanded Navmesh",
-     "slug": "waypoints-expanded-navmesh",
-     "constraint": "",
-     "url": "https://sp-mod.com/mod/827/waypoints-expanded-navmesh"
-    },
     {
      "id": 902,
      "name": "BigBrain",
      "slug": "bigbrain",
      "constraint": "",
      "url": "https://sp-mod.com/mod/902/bigbrain"
+    },
+    {
+     "id": 827,
+     "name": "Waypoints - Expanded Navmesh",
+     "slug": "waypoints-expanded-navmesh",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/827/waypoints-expanded-navmesh"
     }
    ],
    "all_dependencies": [
     {
-     "id": 827,
-     "name": "Waypoints - Expanded Navmesh",
-     "slug": "waypoints-expanded-navmesh",
-     "constraint": "",
-     "url": "https://sp-mod.com/mod/827/waypoints-expanded-navmesh"
-    },
-    {
      "id": 902,
      "name": "BigBrain",
      "slug": "bigbrain",
      "constraint": "",
      "url": "https://sp-mod.com/mod/902/bigbrain"
+    },
+    {
+     "id": 827,
+     "name": "Waypoints - Expanded Navmesh",
+     "slug": "waypoints-expanded-navmesh",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/827/waypoints-expanded-navmesh"
     }
    ],
    "published_at": "2023-03-22T04:38:00.000000Z",
-   "updated_at": "2026-07-28T08:17:17.000000Z",
+   "updated_at": "2026-09-18T17:04:49.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -148599,11 +148636,11 @@
    "name": "Impractical Tactical",
    "slug": "impractical-tactical",
    "teaser": "A scavs idea of what tactical is, along with old surplus gear",
-   "description_html": "<p>The scavs in the Tarkov area have recently bought a 3d printer off of fence and have been going mad with thingiverse models of Halo helmets. They\u2019re out to make a quick rouble and look sleek doing it.</p>\n<p>Ragman has agreed to sell their wares for them, along with some surplus gear from the Cold War and older. Did it come from a museum? It certainly belongs in one</p>\n<p>Thanks to EpicRangeTime for the shaders!</p>\n",
+   "description_html": "<p>The scavs in the T***** area have recently bought a 3d printer off of fence and have been going mad with thingiverse models of Halo helmets. They\u2019re out to make a quick rouble and look sleek doing it.</p>\n<p>Ragman has agreed to sell their wares for them, along with some surplus gear from the Cold War and older. Did it come from a museum? It certainly belongs in one</p>\n<p>Thanks to EpicRangeTime for the shaders!</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/38C1lYxOZvGDyAos42U7gCbbnK7Upf0dJ9SrM4oB.png",
    "forge_url": "https://sp-mod.com/mod/2495/impractical-tactical",
-   "downloads": 4064,
-   "favourites": 10,
+   "downloads": 4212,
+   "favourites": 12,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -148631,12 +148668,32 @@
    ],
    "versions": [
     {
+     "id": 15473,
+     "version": "1.9.0",
+     "description": "<p>Final 4.0 Release</p>\n<p>Added a few new helmets (F35!)</p>\n<p>Added bot loadouts</p>\n<p>Fixed incorrect Epic shader dependencies.</p>\n<p>various bug fixes</p>\n",
+     "spt_constraint": "~4.0.13",
+     "fika": "unknown",
+     "downloads": 4,
+     "size": 205827251,
+     "link": "https://sp-mod.com/mod/download/2495/impractical-tactical/1.9.0",
+     "published_at": "2026-09-18T18:08:00.000000Z",
+     "dependencies": [
+      {
+       "id": 2310,
+       "name": "WTT - CommonLib",
+       "slug": "wtt-commonlib",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
+      }
+     ]
+    },
+    {
      "id": 13748,
      "version": "1.5.0",
      "description": "<p>Added some freakin\u2019 swords!\nAdded many new helmets\nRetextured everything, now has it\u2019s own shaders\nAdded new armor</p>\n",
      "spt_constraint": "~4.0.13",
      "fika": "unknown",
-     "downloads": 1279,
+     "downloads": 1407,
      "size": 199791273,
      "link": "https://sp-mod.com/mod/download/2495/impractical-tactical/1.5.0",
      "published_at": "2026-06-11T21:35:00.000000Z",
@@ -148663,7 +148720,7 @@
      "description": "<p>Added LaRue Tactical C-Note</p>\n<p>Added LaRue Tactical Accarizer</p>\n<p>Added Rohirrim Helmet</p>\n<p>Added Scout Trooper Helmet</p>\n<p>Added Mandolorian Helmet</p>\n<p>Fixed bugs with durability of helmets that were causing errors with Show Me the Money</p>\n<p>If they are still happening, please send me the log snippet and i\u2019ll see what i can do</p>\n",
      "spt_constraint": "~4.0.11",
      "fika": "unknown",
-     "downloads": 1566,
+     "downloads": 1574,
      "size": 175728065,
      "link": "https://sp-mod.com/mod/download/2495/impractical-tactical/1.2.0",
      "published_at": "2026-01-17T18:06:00.000000Z",
@@ -148690,7 +148747,7 @@
      "description": "<p>New items added:</p>\n<ul>\n<li>\n<p>Elysium-Pattern Hybrid Optic</p>\n<p>Huge thanks to Dastush for making the model and textures completely from scratch!</p>\n</li>\n<li>\n<p>Gentex HGU-56/P Rotary Wing Helmet (160th SOAR Variant)</p>\n</li>\n<li>\n<p>Gentex CEP Integrated Communications System</p>\n</li>\n<li>\n<p>Halo Infinite Pilot Helmet</p>\n</li>\n<li>\n<p>Custom UNSC Pilot LBV (Armored Rig)</p>\n</li>\n<li>\n<p>M17 Gas Mask</p>\n</li>\n<li>\n<p>Fox V1 Motocross Helmet and Supreme goggles</p>\n</li>\n<li>\n<p>Rus Spectacle Helmet (Viking Helmet)</p>\n</li>\n</ul>\n",
      "spt_constraint": "~4.0.8",
      "fika": "unknown",
-     "downloads": 462,
+     "downloads": 465,
      "size": 86040797,
      "link": "https://sp-mod.com/mod/download/2495/impractical-tactical/1.1.0",
      "published_at": "2026-01-03T18:13:00.000000Z",
@@ -148710,7 +148767,7 @@
      "description": "<p>Adds the following items:</p>\n<p>SAS MP5 flashlight mount\nSAS Maglight flashlight</p>\n<p>Halo ODST helmet</p>\n<p>Halo Scout Helmet</p>\n<p>Vietnam era CVC helmet with integrated headset</p>\n",
      "spt_constraint": "~4.0.6",
      "fika": "unknown",
-     "downloads": 757,
+     "downloads": 762,
      "size": 27719502,
      "link": "https://sp-mod.com/mod/download/2495/impractical-tactical/1.0.0",
      "published_at": "2025-12-12T00:42:00.000000Z",
@@ -148725,7 +148782,7 @@
      ]
     }
    ],
-   "latest_version": "1.5.0",
+   "latest_version": "1.9.0",
    "spt_constraint": "~4.0.13",
    "all_spt_constraints": [
     "~4.0.11",
@@ -148740,13 +148797,6 @@
      "slug": "wtt-commonlib",
      "constraint": "",
      "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
-    },
-    {
-     "id": 2522,
-     "name": "EpicShaderTime",
-     "slug": "epicshadertime",
-     "constraint": "",
-     "url": "https://sp-mod.com/mod/2522/epicshadertime"
     }
    ],
    "all_dependencies": [
@@ -148766,7 +148816,7 @@
     }
    ],
    "published_at": "2025-12-12T00:32:00.000000Z",
-   "updated_at": "2026-07-28T09:08:20.000000Z",
+   "updated_at": "2026-09-18T18:09:03.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -198125,10 +198175,10 @@
    "name": "Hispanic PMC (Harry) - Custom Head",
    "slug": "hispanic-pmc-harry-custom-head",
    "teaser": "New Custom PMC Head for 4.1.X.",
-   "description_html": "<p>Adds a new custom Hispanic PMC Head for the USUCK Faction - Harry [REDACTED]</p>\n<p>Harry is a disgraced GWOT veteran whose military career ended after a battery charge following a violent altercation. With nowhere else to go, he joined USUCK as a contractor, hoping to escape his past and make enough money to get to his son.</p>\n<p>When the Norvinsk conflict erupted, Harry became trapped in Tushonka.</p>\n<p>Now cut off from the outside world, he must fight his way through the region with one goal: survive long enough to get home to his family.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://cdn.discordapp.com/attachments/1525366528432668723/1545681746308235334/Un2123titled.png?ex=6aa6424d&amp;is=6aa4f0cd&amp;hm=d9095c83e392412b5a0f02c3a131bba5e03f15d3a360be8d97a0926c4ac2aaae&amp;\" alt=\"Harry\" />\nHarry, The Survivor</p>\n<p>Mostly created by Manimal1920 (thanks for doing this for me man) <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/119111/manimal1920\" rel=\"noreferrer noopener\">https://sp-mod.com/user/119111/manimal1920</a></p>\n",
+   "description_html": "<p>Adds a new custom Hispanic PMC Head for the USUCK Faction - Harry [REDACTED]</p>\n<p>Harry is a disgraced GWOT veteran whose military career ended after a battery charge following a violent altercation. With nowhere else to go, he joined USUCK as a contractor, hoping to escape his past and make enough money to get to his son.</p>\n<p>When the Norvinsk conflict erupted, Harry became trapped in Tushonka.</p>\n<p>Now cut off from the outside world, he must fight his way through the region with one goal: survive long enough to get home to his family.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://drive.google.com/uc?export=view&amp;id=1P0mdobRDFRdihvHpIviTyNXepHPBeQhT\" alt=\"Harry\" />\nHarry, The Survivor</p>\n<p>Mostly created by Manimal1920 (thanks for doing this for me man) <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/119111/manimal1920\" rel=\"noreferrer noopener\">https://sp-mod.com/user/119111/manimal1920</a></p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/lNpxSVfvgRWeIuufVQsvD3NBNnWvW7ZZT8EGjVgM.png",
    "forge_url": "https://sp-mod.com/mod/2993/hispanic-pmc-harry-custom-head",
-   "downloads": 314,
+   "downloads": 369,
    "favourites": 1,
    "featured": false,
    "fika": true,
@@ -198167,7 +198217,7 @@
      "description": "<p>4.0.13 Build</p>\n<p>Hispanic PMC Head</p>\n",
      "spt_constraint": "~4.0.13",
      "fika": "compatible",
-     "downloads": 43,
+     "downloads": 55,
      "size": 2968891,
      "link": "https://sp-mod.com/mod/download/2993/hispanic-pmc-harry-custom-head/1.0.0",
      "published_at": "2026-09-05T09:24:00.000000Z",
@@ -198179,7 +198229,7 @@
      "description": "<p>Hispanic PMC (Harry) Head</p>\n<p>4.1.4.</p>\n",
      "spt_constraint": "~4.1.4",
      "fika": "compatible",
-     "downloads": 271,
+     "downloads": 314,
      "size": 2969157,
      "link": "https://sp-mod.com/mod/download/2993/hispanic-pmc-harry-custom-head/1.0.1",
      "published_at": "2026-09-05T07:35:00.000000Z",
@@ -198195,7 +198245,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-09-05T07:36:00.000000Z",
-   "updated_at": "2026-09-12T17:45:41.000000Z",
+   "updated_at": "2026-09-18T20:20:44.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -201252,7 +201302,7 @@
    "description_html": "<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Dizzlow1/png/main/ImpactCue_horizontal_orange.png\" alt=\"ImpactCue Logo\" /></p>\n<hr />\n<h1>SHOWCASE</h1>\n<h2>HUD Customization Screen</h2>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/Dizzlow1/png/releases/download/gif/My.Project_2.GIF\" alt=\"1.7.0UI\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/Dizzlow1/png/releases/download/1.7.5png/Newhudv2.GIF\" alt=\"1.7.5SETTING\" /></p>\n<h2>1.6.0</h2>\n<div class=\"youtube-lite\" data-video-id=\"XstFtQDX-gs\" data-embed-url=\"https://www.youtube-nocookie.com/embed/XstFtQDX-gs?autoplay=1\"><img src=\"https://i.ytimg.com/vi/XstFtQDX-gs/hqdefault.jpg\" alt=\"YouTube video thumbnail\" loading=\"lazy\" decoding=\"async\" /></div>\n<hr />\n<h1>FEATURES</h1>\n<hr />\n<h1>INSTALLATION</h1>\n<p>Extract the archive directly into your SPT installation folder.</p>\n<p>The plugin will be installed to:</p>\n<p><code>BepInEx/plugins/ImpactCue-UI-MOD/</code></p>\n<h2>After launching SPT, press F10 to open the configuration menu and customize its settings.</h2>\n<h1>FEEDBACK</h1>\n<p>Suggestions, feedback, bug reports, and feature ideas are always welcome.</p>\n<p>If there is anything you would like to see added or improved, feel free to leave a comment.</p>\n<hr />\n<h1>LICENSE</h1>\n<p>ImpactCue-UI-MOD is licensed under the MIT License.</p>\n<p>Copyright (c) 2026 Dizzlow</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/WekOwpXp2ORu8OFUFxi3x64h86XyOZTqtks4OCKL.png",
    "forge_url": "https://sp-mod.com/mod/3029/impactcue-ui-mod",
-   "downloads": 2500,
+   "downloads": 2603,
    "favourites": 25,
    "featured": false,
    "fika": true,
@@ -201284,9 +201334,9 @@
      "id": 15469,
      "version": "1.8.0",
      "description": "<h2>ImpactCue 1.8.0 \u2014 New Features &amp; Improvements</h2>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/Dizzlow1/png/releases/download/1.8.0png/1.8.0.GIF\" alt=\"ImpactCue 1.8.0\" /></p>\n<ul>\n<li>\n<p><strong>HUD Scaling</strong></p>\n<ul>\n<li>HUD elements can now be resized with the mouse wheel while in HUD Edit Mode.</li>\n<li>Supported elements include the Kill Feed, Hit Marker, Floating Damage, Compact HUD, and Raid Compass.</li>\n</ul>\n</li>\n<li>\n<p><strong>Individual HUD Element Editing</strong></p>\n<ul>\n<li>Individual elements of the Kill Feed and Tactical HUD can now be moved and resized separately.</li>\n<li>The following Kill Feed elements can be edited individually:\n<ul>\n<li>Killer Icon</li>\n<li>Killer Name</li>\n<li>Weapon</li>\n<li>Victim Icon</li>\n<li>Victim Name</li>\n<li>Distance</li>\n<li>Headshot Marker</li>\n</ul>\n</li>\n<li><code>Separate Kill Feed Elements</code> and <code>Separate Tactical HUD Elements</code> can each be toggled ON or OFF.</li>\n</ul>\n</li>\n<li>\n<p><strong>Faction-Based Victim Colors</strong></p>\n<ul>\n<li>Victim Name colors can now change based on faction.</li>\n<li>This feature is disabled by default.</li>\n</ul>\n</li>\n<li>\n<p><strong>Killer Display Bug Fix</strong></p>\n<ul>\n<li>Fixed an issue where the Killer Icon could remain visible when the Killer Name was disabled.</li>\n</ul>\n</li>\n<li>\n<p><strong>New Faction / Boss Icons</strong></p>\n<ul>\n<li>Added new icons for:\n<ul>\n<li>Killa</li>\n<li>Tagilla</li>\n<li>Black Division</li>\n</ul>\n</li>\n</ul>\n</li>\n<li>\n<p><strong>F10 Menu Improvements &amp; Optimization</strong></p>\n<ul>\n<li>Improved Dropdown and Popup behavior.</li>\n<li>Improved window movement and resizing.</li>\n<li>Refined the UI layout and various buttons.</li>\n<li>Optimized the overall performance and rendering of the F10 Menu.</li>\n</ul>\n</li>\n<li>\n<p><strong>Future Plans</strong></p>\n<ul>\n<li>More HUD presets will be added, with further improvements focused on readability and usability.</li>\n<li>More customization options and improvements are planned for the HUD, Kill Feed, F10 Menu, and other parts of ImpactCue.</li>\n</ul>\n</li>\n</ul>\n",
-     "spt_constraint": "4.1.5",
+     "spt_constraint": "4.1.x",
      "fika": "compatible",
-     "downloads": 157,
+     "downloads": 255,
      "size": 6147042,
      "link": "https://sp-mod.com/mod/download/3029/impactcue-ui-mod/1.8.0",
      "published_at": "2026-09-18T12:35:00.000000Z",
@@ -201298,7 +201348,7 @@
      "description": "<h1>ImpactCue 1.7.5 \u2014 Added Features</h1>\n<ul>\n<li>\n<p><strong>New Standalone Settings UI</strong></p>\n<ul>\n<li>Dedicated ImpactCue settings menu opened with <code>F10</code></li>\n<li>Reduced dependency on F12 / ConfigurationManager</li>\n<li>Settings search</li>\n</ul>\n</li>\n</ul>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/Dizzlow1/png/releases/download/1.7.5png/Newhudv2.GIF\" alt=\"New HUD Settings\" /></p>\n<ul>\n<li>\n<p><strong>Crosshair System</strong></p>\n<ul>\n<li>Crosshair Preset Gallery</li>\n<li>Procedural / Manual Crosshair</li>\n<li>Shape customization</li>\n<li>ADS visibility settings</li>\n<li>Scope visibility settings</li>\n<li>Enemy hover color change</li>\n<li>Custom crosshair images can be added to the folder and loaded <strong>during a raid without restarting the game</strong></li>\n</ul>\n</li>\n<li>\n<p><strong>HSV Color Picker</strong></p>\n<ul>\n<li>More precise HUD color customization</li>\n</ul>\n</li>\n<li>\n<p><strong>New Preview System</strong></p>\n<ul>\n<li>\u25b6 Preview buttons next to supported settings</li>\n<li>Kill Effect Preview</li>\n<li>Kill Feed Preview</li>\n<li>Preview supported HUD features directly from the settings menu</li>\n</ul>\n</li>\n<li>\n<p><strong>HUD Live Settings</strong></p>\n<ul>\n<li>Dedicated settings panel available while HUD Edit Mode is active</li>\n</ul>\n</li>\n<li>\n<p><strong>Settings UI Improvements</strong></p>\n<ul>\n<li>Direct numeric input</li>\n<li>Keyboard input support</li>\n<li>Selected-state highlighting</li>\n<li>Improved click handling while editing HUD elements</li>\n</ul>\n</li>\n<li>\n<p><strong>Fika Spectator Support</strong></p>\n<ul>\n<li>ImpactCue HUD is automatically hidden after full death when entering spectator mode</li>\n<li>State is automatically reset when starting the next raid</li>\n<li><strong>Note:</strong> This feature may still need further testing. If you encounter the issue again or notice any related problems, please let me know.</li>\n</ul>\n</li>\n</ul>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/Dizzlow1/png/releases/download/1.7.5png/Fika.fix.GIF\" alt=\"Fika Spectator Fix\" /></p>\n",
      "spt_constraint": "4.1.5",
      "fika": "compatible",
-     "downloads": 493,
+     "downloads": 496,
      "size": 3729644,
      "link": "https://sp-mod.com/mod/download/3029/impactcue-ui-mod/1.7.5",
      "published_at": "2026-09-17T16:47:00.000000Z",
@@ -201370,7 +201420,7 @@
      "description": "<p>Initial release of ImpactCue-UI-MOD for SPT 4.1.5.</p>\n<h3>Features</h3>\n<ul>\n<li>Customizable hit markers</li>\n<li>Floating damage numbers</li>\n<li>Kill feed with animation presets</li>\n<li>Victim highlight effects</li>\n<li>HUD position editor</li>\n<li>Configurable colors and layout</li>\n<li>F12 configuration menu</li>\n<li>Localized weapon names with category fallback</li>\n</ul>\n",
      "spt_constraint": "4.1.5",
      "fika": "unknown",
-     "downloads": 203,
+     "downloads": 205,
      "size": 27560,
      "link": "https://sp-mod.com/mod/download/3029/impactcue-ui-mod/1.4.8",
      "published_at": "2026-09-14T20:04:00.000000Z",
@@ -201378,14 +201428,15 @@
     }
    ],
    "latest_version": "1.8.0",
-   "spt_constraint": "4.1.5",
+   "spt_constraint": "4.1.x",
    "all_spt_constraints": [
-    "4.1.5"
+    "4.1.5",
+    "4.1.x"
    ],
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-09-14T20:03:00.000000Z",
-   "updated_at": "2026-09-18T12:36:03.000000Z",
+   "updated_at": "2026-09-18T19:01:19.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
@@ -201782,11 +201833,11 @@
    "name": "Russian Special Forces Pack",
    "slug": "russian-special-forces-pack",
    "teaser": "Compilation of guns from the russian federation",
-   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">DESCRIPTION</div>\n<div class=\"tab-content\"><p>Various guns used by the russian special forces and the general army</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/vQbYJb1.jpeg\" alt=\"Alt Text\" /></p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">CONTENT</div>\n<div class=\"tab-content\"><p>-AM-17 5.45 Assault rifle</p>\n<p>-AMB-17 9x39 Assault rifle</p>\n<p>-AK-205 5.45 Assault rifle</p>\n<p>-AK-200 5.45 Assault rifle</p>\n<p>-ADS 5.45 Assault rifle</p>\n<p>-A762 7.62x39 Assault rifle</p>\n<p>-PP-2000 9x19 smg</p>\n<p>-SVCH 7.62x54r DMR</p>\n<p>-SVDM 7.62x54r DMR</p>\n<p>-VEPR-12 12ga semi-auto shotgun</p>\n<p>-PLK 9x19 Pistol</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">SHOWCASE</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/qMiPVx6.png\" alt=\"Alt Text\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/rHKNvg1.png\" alt=\"Alt Text\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/EeQTatw.png\" alt=\"Alt Text\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/HApnB3D.png\" alt=\"Alt Text\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/7H3IfAJ.png\" alt=\"Alt Text\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/QuXsmpk.png\" alt=\"Alt Text\" /></p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">CREDITS</div>\n<div class=\"tab-content\"><p>ProbablyEukyre for the weapon renders</p>\n<p>Grooveypeinguinx for the codebase</p>\n<p>many thanks to the various authors who shared their models</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://www.artstation.com/rockpaper\" rel=\"noreferrer noopener\">https://www.artstation.com/rockpaper</a> - PLK Pistol</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://www.artstation.com/aetenae\" rel=\"noreferrer noopener\">https://www.artstation.com/aetenae</a> - AMB17</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://sketchfab.com/yarogor\" rel=\"noreferrer noopener\">https://sketchfab.com/yarogor</a> - VEPR-12</p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">LINKS</div>\n<div class=\"tab-content\"><p>you can find me in the WTT Discord\n<a target=\"_blank\" class=\"external-link\" href=\"https://discord.gg/rgA7SBzGj\" rel=\"noreferrer noopener\">https://discord.gg/rgA7SBzGj</a></p></div></div></div>\n",
+   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">DESCRIPTION</div>\n<div class=\"tab-content\"><p>Various guns used by the russian special forces and the general army</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/vQbYJb1.jpeg\" alt=\"Alt Text\" /></p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">CONTENT</div>\n<div class=\"tab-content\"><p>-AM-17 5.45 Assault rifle</p>\n<p>-AMB-17 9x39 Assault rifle</p>\n<p>-AK-205 5.45 Assault rifle</p>\n<p>-AK-200 5.45 Assault rifle</p>\n<p>-ADS 5.45 Assault rifle</p>\n<p>-A762 7.62x39 Assault rifle</p>\n<p>-PP-2000 9x19 smg</p>\n<p>-SVCH 7.62x54r DMR</p>\n<p>-SVDM 7.62x54r DMR</p>\n<p>-VEPR-12 12ga semi-auto shotgun</p>\n<p>-PLK 9x19 Pistol</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">SHOWCASE</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/qMiPVx6.png\" alt=\"Alt Text\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/rHKNvg1.png\" alt=\"Alt Text\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/EeQTatw.png\" alt=\"Alt Text\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/HApnB3D.png\" alt=\"Alt Text\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/7H3IfAJ.png\" alt=\"Alt Text\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/QuXsmpk.png\" alt=\"Alt Text\" /></p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">CREDITS</div>\n<div class=\"tab-content\"><p>ProbablyEukyre for the weapon renders</p>\n<p>Grooveypeinguinx for the codebase</p>\n<p>many thanks to the various authors who shared their models</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://www.artstation.com/rockpaper\" rel=\"noreferrer noopener\">https://www.artstation.com/rockpaper</a> - PLK Pistol</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://www.artstation.com/aetenae\" rel=\"noreferrer noopener\">https://www.artstation.com/aetenae</a> - AMB17</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://sketchfab.com/yarogor\" rel=\"noreferrer noopener\">https://sketchfab.com/yarogor</a> - VEPR-12</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://boosty.to/suspensy\" rel=\"noreferrer noopener\">https://boosty.to/suspensy</a> - AK200</p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">LINKS</div>\n<div class=\"tab-content\"><p>you can find me in the WTT Discord\n<a target=\"_blank\" class=\"external-link\" href=\"https://discord.gg/rgA7SBzGj\" rel=\"noreferrer noopener\">https://discord.gg/rgA7SBzGj</a></p></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/BvnB5VOPk9Zwk7vfrMY8ebgynOYejJQt5Zqip3zv.png",
    "forge_url": "https://sp-mod.com/mod/3035/russian-special-forces-pack",
-   "downloads": 775,
-   "favourites": 12,
+   "downloads": 1535,
+   "favourites": 18,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -201824,7 +201875,7 @@
      "description": "<p>first release for 4.1</p>\n",
      "spt_constraint": "4.1.5",
      "fika": "compatible",
-     "downloads": 657,
+     "downloads": 1255,
      "size": 533346849,
      "link": "https://sp-mod.com/mod/download/3035/russian-special-forces-pack/2.0.0",
      "published_at": "2026-09-17T12:52:00.000000Z",
@@ -201844,7 +201895,7 @@
      "description": "<p>first release for 4.0.13</p>\n",
      "spt_constraint": "4.0.13",
      "fika": "compatible",
-     "downloads": 119,
+     "downloads": 280,
      "size": 533347040,
      "link": "https://sp-mod.com/mod/download/3035/russian-special-forces-pack/1.0.0",
      "published_at": "2026-09-17T12:44:00.000000Z",
@@ -201884,7 +201935,7 @@
     }
    ],
    "published_at": "2026-09-16T23:22:00.000000Z",
-   "updated_at": "2026-09-17T18:50:53.000000Z",
+   "updated_at": "2026-09-18T18:27:56.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
