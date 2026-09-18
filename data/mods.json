@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-09-18T04:52:44Z",
+ "generated_at": "2026-09-18T11:26:25Z",
  "source": "https://sp-mod.com",
  "filter": "all",
- "mod_count": 1966,
+ "mod_count": 1967,
  "categories": [
   {
    "id": 12,
@@ -198334,8 +198334,8 @@
    "description_html": "<h1>Backpack Resizer</h1>\n<p>A config based mod that allows you to modify how large or small backpacks are.</p>\n<p>Backpacks that come from mods will be automatically detected assuming they have been loaded before this mod. So let me know\nif you find a backpack not being discovered by the mod itself and I will look into it.</p>\n<h2>Features</h2>\n<ul>\n<li>Change the width and height of backpacks that don\u2019t have a split inventory grid</li>\n<li>Save and Load presets for backpack sizes</li>\n</ul>\n<h2>Presets Included</h2>\n<ul>\n<li>Original Values - this preset will have the original found values for each backpack as it\u2019s found by the mod</li>\n<li>Better Backpacks - this sizes of this preset follow the sizes of the Better Backpacks mod with the inclusion of WTT Content Backport.\n<ul>\n<li>content backport not required. any backpack in the preset but not found in the game will be ignored</li>\n</ul>\n</li>\n</ul>\n<h2>Limitations</h2>\n<p>Due to how backpacks are handled by the game itself, any backpack that has more than one \u201cpocket\u201d will not be touched by this mod.\nA \u201cpocket\u201d meaning any backpack that has a split inventory in its container view.</p>\n<h2>Installation</h2>\n<ol>\n<li>Extract the content of the archive</li>\n<li>Copy the contents into your SPT installation folder</li>\n</ol>\n<h2>Uninstall</h2>\n<ol>\n<li>Delete the RagingBeardo-BackpackResizer folder from your server mod directory</li>\n</ol>\n<h2>Configuration</h2>\n<p>Config file will generate after the server is started.</p>\n<p>You can technically manage the config.jsonc directly, but\nit will be infinitely easier to use the UI based configuration via the following link:</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://127.0.0.1:6969/backpackresizer\" rel=\"noreferrer noopener\">https://127.0.0.1:6969/backpackresizer</a></p>\n<p>You should definitely opt for the UI though.</p>\n<p>UI contains a dropdown for each backpack found by the mod grouped by resizable and not resizable.</p>\n<p>Available configuration options:</p>\n<ul>\n<li>Mod Enabled: checkbox</li>\n<li>Debug Logging: checkbox</li>\n<li>Override Backpack Size Limits: checkbox</li>\n<li>Per backpack dropdown to customize width and height</li>\n<li>Save/Load presets for the per backpack values</li>\n</ul>\n",
    "thumbnail": "https://files.sp-mod.com/mods/IRUUVKvgrmPULJA0AWZy7nORYDl0perceivvQGzg.png",
    "forge_url": "https://sp-mod.com/mod/2996/backpack-resizer",
-   "downloads": 389,
-   "favourites": 3,
+   "downloads": 1365,
+   "favourites": 14,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -198363,12 +198363,24 @@
    ],
    "versions": [
     {
+     "id": 15466,
+     "version": "1.0.3",
+     "description": "<h3>Compatibility Fix</h3>\n<p>Backpacks from mods that are an existing backpack but alter the container size will end up under its own configuration key. Grouping is now done by name only and ignores grid size to prevent this from occurring.</p>\n<p><strong>The mod will handle cleaning up the duplicate config entries on its own when the server starts. The only thing you will need to do is re-load whatever preset you were using before and save the config values again.</strong></p>\n",
+     "spt_constraint": "~4.1.3",
+     "fika": "unknown",
+     "downloads": 32,
+     "size": 34285,
+     "link": "https://sp-mod.com/mod/download/2996/backpack-resizer/1.0.3",
+     "published_at": "2026-09-18T09:31:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 15244,
      "version": "1.0.2",
      "description": "<p>BUGFIX</p>\n<ul>\n<li>Better Backpacks preset now properly persists across server restarts</li>\n</ul>\n<hr />\n<p>Would work fine on a server start without any existing config file, but ability to persist the preset values for Better Backpacks was broken on restart if the config file already existed due to a missing setter.</p>\n",
      "spt_constraint": "~4.1.3",
      "fika": "unknown",
-     "downloads": 72,
+     "downloads": 998,
      "size": 33464,
      "link": "https://sp-mod.com/mod/download/2996/backpack-resizer/1.0.2",
      "published_at": "2026-09-06T17:41:00.000000Z",
@@ -198380,7 +198392,7 @@
      "description": "<p>version support fixed. previously locked to 4.1.5 but should now support 4.1.3+</p>\n",
      "spt_constraint": "~4.1.3",
      "fika": "unknown",
-     "downloads": 53,
+     "downloads": 60,
      "size": 33081,
      "link": "https://sp-mod.com/mod/download/2996/backpack-resizer/1.0.1",
      "published_at": "2026-09-06T15:22:00.000000Z",
@@ -198392,14 +198404,14 @@
      "description": "<p>manage backpack sizes</p>\n<p>4.1.5 required for this version</p>\n",
      "spt_constraint": "~4.1.5",
      "fika": "unknown",
-     "downloads": 264,
+     "downloads": 276,
      "size": 33075,
      "link": "https://sp-mod.com/mod/download/2996/backpack-resizer/1.0.0",
      "published_at": "2026-09-06T03:22:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.0.2",
+   "latest_version": "1.0.3",
    "spt_constraint": "~4.1.3",
    "all_spt_constraints": [
     "~4.1.3",
@@ -198408,7 +198420,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-09-06T03:13:00.000000Z",
-   "updated_at": "2026-09-06T17:45:06.000000Z",
+   "updated_at": "2026-09-18T09:36:05.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
@@ -198527,8 +198539,8 @@
    "description_html": "<p>This mod creates a story line through a series of quests.</p>\n<p>You can unlock traders during <strong>Journey to T</strong>*** and obtain tickets after <strong>Fallen Stars</strong>.</p>\n<p>This mod also adds a new trader who provides the Story Quests. After completing the <strong>Final</strong>, you will receive the corresponding ending reward. Because of this, the <code>ibeatthegameiswear</code> code will be banned.</p>\n<p>After completing the <strong>Final</strong>, you can convert the mod\u2019s ticket items into the vanilla <strong>WTT-ContentBackPort</strong> items. If we get a Terminal mod in the future, these items may become useful.</p>\n<p>All quest have not any require for level or llr, but maybe you will wait for many hours to unlock next quest, this designed by B*G.</p>\n<h3>\u26a0\ufe0f About the Story</h3>\n<p><strong>This story is not a 1:1 recreation of the live version. It is my own adaptation and contains significant changes to the original story, settings, and events.</strong></p>\n<p>Please <strong>do not treat the story or lore presented in this mod as canon to the live version</strong>, and do not use this mod as a reference when discussing or interpreting the original story.</p>\n<p>The changes are intentional. This mod tells its own version of the story.</p>\n<p>for usage:</p>\n<p>unzip file and enter folder until you see <code>BepInEx</code> or <code>SPT_Runtime</code> or both of them, copy them into your game path(which include <code>EscapeFromTarkov.exe</code>)</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/M2mg3LLSxOOfmA0dYjW9jp08QCodcSTLylYuaibw.png",
    "forge_url": "https://sp-mod.com/mod/2998/original-story",
-   "downloads": 2477,
-   "favourites": 31,
+   "downloads": 2756,
+   "favourites": 33,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -198556,12 +198568,46 @@
    ],
    "versions": [
     {
+     "id": 15464,
+     "version": "1.5.1",
+     "description": "<p>fix quest item spawn issues</p>\n",
+     "spt_constraint": "~4.1.1",
+     "fika": "compatible",
+     "downloads": 113,
+     "size": 58458155,
+     "link": "https://sp-mod.com/mod/download/2998/original-story/1.5.1",
+     "published_at": "2026-09-18T05:05:00.000000Z",
+     "dependencies": [
+      {
+       "id": 2512,
+       "name": "WTT - Content Backport",
+       "slug": "wtt-content-backport",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2512/wtt-content-backport"
+      },
+      {
+       "id": 2937,
+       "name": "Manimal's 1.0 Labs Office Backport",
+       "slug": "manimals-10-labs-office-backport",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2937/manimals-10-labs-office-backport"
+      },
+      {
+       "id": 2997,
+       "name": "EternalCycle",
+       "slug": "eternalcycle",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2997/eternalcycle"
+      }
+     ]
+    },
+    {
      "id": 15456,
      "version": "1.5.0",
      "description": "<p>update ru tranaslate</p>\n<p>fix bugs.</p>\n",
      "spt_constraint": "~4.1.1",
      "fika": "compatible",
-     "downloads": 44,
+     "downloads": 206,
      "size": 58457487,
      "link": "https://sp-mod.com/mod/download/2998/original-story/1.5.0",
      "published_at": "2026-09-17T16:06:00.000000Z",
@@ -198595,7 +198641,7 @@
      "description": "<p>Therapist is unlock by default now</p>\n<p>before update this version for old profile, make sure you have completed A Journey to T***** - Part 1</p>\n",
      "spt_constraint": "~4.1.1",
      "fika": "compatible",
-     "downloads": 1110,
+     "downloads": 1112,
      "size": 58458087,
      "link": "https://sp-mod.com/mod/download/2998/original-story/1.4.8",
      "published_at": "2026-09-09T03:18:00.000000Z",
@@ -198731,7 +198777,7 @@
      "description": "<p>release on forge</p>\n",
      "spt_constraint": "~4.1.1",
      "fika": "compatible",
-     "downloads": 398,
+     "downloads": 400,
      "size": 58410826,
      "link": "https://sp-mod.com/mod/download/2998/original-story/1.4.4",
      "published_at": "2026-09-06T05:51:00.000000Z",
@@ -198760,7 +198806,7 @@
      ]
     }
    ],
-   "latest_version": "1.5.0",
+   "latest_version": "1.5.1",
    "spt_constraint": "~4.1.1",
    "all_spt_constraints": [
     "~4.1.1"
@@ -198812,7 +198858,7 @@
     }
    ],
    "published_at": "2026-09-06T05:49:00.000000Z",
-   "updated_at": "2026-09-17T16:07:03.000000Z",
+   "updated_at": "2026-09-18T05:06:04.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
@@ -201144,11 +201190,11 @@
    "name": "ImpactCue-UI-MOD",
    "slug": "impactcue-ui-mod",
    "teaser": "Customizable hit markers, kill feed effects, and combat HUD for SPT.",
-   "description_html": "<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Dizzlow1/png/main/ImpactCue_horizontal_orange.png\" alt=\"ImpactCue Logo\" /></p>\n<hr />\n<h1>SHOWCASE</h1>\n<h2>HUD Customization Screen</h2>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/Dizzlow1/png/releases/download/gif/My.Project_2.GIF\" alt=\"1.7.0UI\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/Dizzlow1/png/releases/download/1.7.5png/Newhudv2.GIF\" alt=\"1.7.5SETTING\" /></p>\n<h2>1.6.0</h2>\n<div class=\"youtube-lite\" data-video-id=\"XstFtQDX-gs\" data-embed-url=\"https://www.youtube-nocookie.com/embed/XstFtQDX-gs?autoplay=1\"><img src=\"https://i.ytimg.com/vi/XstFtQDX-gs/hqdefault.jpg\" alt=\"YouTube video thumbnail\" loading=\"lazy\" decoding=\"async\" /></div>\n<hr />\n<h1>FEATURES</h1>\n<h2>Combat Feedback</h2>\n<ul>\n<li>Customizable hit markers</li>\n<li>Floating damage numbers</li>\n<li>Kill feed with multiple animation presets</li>\n<li>Victim highlight effects</li>\n</ul>\n<h2>Tactical HUD</h2>\n<ul>\n<li>Health, Energy, Hydration, and Weight display</li>\n<li>Ammo, Magazine, Fire Mode, and Grenade HUD</li>\n<li>Tactical Compass</li>\n<li>Extract, Transit, and Quest markers</li>\n</ul>\n<h2>Custom Sounds</h2>\n<ul>\n<li>Support for custom sound files</li>\n<li>Supports WAV, MP3, and OGG</li>\n<li>Custom sounds can be used for ImpactCue sound events</li>\n</ul>\n<h2>Customization</h2>\n<ul>\n<li>HUD position editor</li>\n<li>Configurable colors</li>\n<li>Configurable sizes</li>\n<li>Adjustable layout and behavior</li>\n<li>Individual HUD elements can be enabled or disabled</li>\n<li>F12 configuration menu</li>\n</ul>\n<h2>Support</h2>\n<ul>\n<li>Localized weapon names</li>\n<li>Modded weapon support</li>\n<li>External locale JSON support</li>\n<li>Client-side implementation</li>\n</ul>\n<hr />\n<h1>BUG</h1>\n<p>The Kill Effect names are currently mixed up with the Sound names, and some of them use unrelated names like Apex.</p>\n<h1>INSTALLATION</h1>\n<p>Extract the archive directly into your SPT installation folder.</p>\n<p>The plugin will be installed to:</p>\n<p><code>BepInEx/plugins/ImpactCue-UI-MOD/</code></p>\n<h2>After launching SPT, press F10 to open the configuration menu and customize its settings.</h2>\n<h1>FEEDBACK</h1>\n<p>Suggestions, feedback, bug reports, and feature ideas are always welcome.</p>\n<p>If there is anything you would like to see added or improved, feel free to leave a comment.</p>\n<hr />\n<h1>LICENSE</h1>\n<p>ImpactCue-UI-MOD is licensed under the MIT License.</p>\n<p>Copyright (c) 2026 Dizzlow</p>\n",
+   "description_html": "<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Dizzlow1/png/main/ImpactCue_horizontal_orange.png\" alt=\"ImpactCue Logo\" /></p>\n<hr />\n<h1>SHOWCASE</h1>\n<h2>HUD Customization Screen</h2>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/Dizzlow1/png/releases/download/gif/My.Project_2.GIF\" alt=\"1.7.0UI\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/Dizzlow1/png/releases/download/1.7.5png/Newhudv2.GIF\" alt=\"1.7.5SETTING\" /></p>\n<h2>1.6.0</h2>\n<div class=\"youtube-lite\" data-video-id=\"XstFtQDX-gs\" data-embed-url=\"https://www.youtube-nocookie.com/embed/XstFtQDX-gs?autoplay=1\"><img src=\"https://i.ytimg.com/vi/XstFtQDX-gs/hqdefault.jpg\" alt=\"YouTube video thumbnail\" loading=\"lazy\" decoding=\"async\" /></div>\n<hr />\n<h1>FEATURES</h1>\n<h2>Combat Feedback</h2>\n<ul>\n<li>Customizable hit markers</li>\n<li>Floating damage numbers</li>\n<li>Kill feed with multiple animation presets</li>\n<li>Victim highlight effects</li>\n</ul>\n<h2>Tactical HUD</h2>\n<ul>\n<li>Health, Energy, Hydration, and Weight display</li>\n<li>Ammo, Magazine, Fire Mode, and Grenade HUD</li>\n<li>Tactical Compass</li>\n<li>Extract, Transit, and Quest markers</li>\n</ul>\n<h2>Custom Sounds</h2>\n<ul>\n<li>Support for custom sound files</li>\n<li>Supports WAV, MP3, and OGG</li>\n<li>Custom sounds can be used for ImpactCue sound events</li>\n</ul>\n<h2>Customization</h2>\n<ul>\n<li>HUD position editor</li>\n<li>Configurable colors</li>\n<li>Configurable sizes</li>\n<li>Adjustable layout and behavior</li>\n<li>Individual HUD elements can be enabled or disabled</li>\n<li>F10 configuration menu</li>\n</ul>\n<h2>Support</h2>\n<ul>\n<li>Localized weapon names</li>\n<li>Modded weapon support</li>\n<li>External locale JSON support</li>\n<li>Client-side implementation</li>\n</ul>\n<hr />\n<h1>INSTALLATION</h1>\n<p>Extract the archive directly into your SPT installation folder.</p>\n<p>The plugin will be installed to:</p>\n<p><code>BepInEx/plugins/ImpactCue-UI-MOD/</code></p>\n<h2>After launching SPT, press F10 to open the configuration menu and customize its settings.</h2>\n<h1>FEEDBACK</h1>\n<p>Suggestions, feedback, bug reports, and feature ideas are always welcome.</p>\n<p>If there is anything you would like to see added or improved, feel free to leave a comment.</p>\n<hr />\n<h1>LICENSE</h1>\n<p>ImpactCue-UI-MOD is licensed under the MIT License.</p>\n<p>Copyright (c) 2026 Dizzlow</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/WekOwpXp2ORu8OFUFxi3x64h86XyOZTqtks4OCKL.png",
    "forge_url": "https://sp-mod.com/mod/3029/impactcue-ui-mod",
-   "downloads": 2189,
-   "favourites": 23,
+   "downloads": 2322,
+   "favourites": 24,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -201181,7 +201227,7 @@
      "description": "<h1>ImpactCue 1.7.5 \u2014 Added Features</h1>\n<ul>\n<li>\n<p><strong>New Standalone Settings UI</strong></p>\n<ul>\n<li>Dedicated ImpactCue settings menu opened with <code>F10</code></li>\n<li>Reduced dependency on F12 / ConfigurationManager</li>\n<li>Settings search</li>\n</ul>\n</li>\n</ul>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/Dizzlow1/png/releases/download/1.7.5png/Newhudv2.GIF\" alt=\"New HUD Settings\" /></p>\n<ul>\n<li>\n<p><strong>Crosshair System</strong></p>\n<ul>\n<li>Crosshair Preset Gallery</li>\n<li>Procedural / Manual Crosshair</li>\n<li>Shape customization</li>\n<li>ADS visibility settings</li>\n<li>Scope visibility settings</li>\n<li>Enemy hover color change</li>\n<li>Custom crosshair images can be added to the folder and loaded <strong>during a raid without restarting the game</strong></li>\n</ul>\n</li>\n<li>\n<p><strong>HSV Color Picker</strong></p>\n<ul>\n<li>More precise HUD color customization</li>\n</ul>\n</li>\n<li>\n<p><strong>New Preview System</strong></p>\n<ul>\n<li>\u25b6 Preview buttons next to supported settings</li>\n<li>Kill Effect Preview</li>\n<li>Kill Feed Preview</li>\n<li>Preview supported HUD features directly from the settings menu</li>\n</ul>\n</li>\n<li>\n<p><strong>HUD Live Settings</strong></p>\n<ul>\n<li>Dedicated settings panel available while HUD Edit Mode is active</li>\n</ul>\n</li>\n<li>\n<p><strong>Settings UI Improvements</strong></p>\n<ul>\n<li>Direct numeric input</li>\n<li>Keyboard input support</li>\n<li>Selected-state highlighting</li>\n<li>Improved click handling while editing HUD elements</li>\n</ul>\n</li>\n<li>\n<p><strong>Fika Spectator Support</strong></p>\n<ul>\n<li>ImpactCue HUD is automatically hidden after full death when entering spectator mode</li>\n<li>State is automatically reset when starting the next raid</li>\n<li><strong>Note:</strong> This feature may still need further testing. If you encounter the issue again or notice any related problems, please let me know.</li>\n</ul>\n</li>\n</ul>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/Dizzlow1/png/releases/download/1.7.5png/Fika.fix.GIF\" alt=\"Fika Spectator Fix\" /></p>\n",
      "spt_constraint": "4.1.5",
      "fika": "compatible",
-     "downloads": 345,
+     "downloads": 475,
      "size": 3729644,
      "link": "https://sp-mod.com/mod/download/3029/impactcue-ui-mod/1.7.5",
      "published_at": "2026-09-17T16:47:00.000000Z",
@@ -201193,7 +201239,7 @@
      "description": "<h1>v1.7.0 - MAJOR UPDATE</h1>\n<p>This update introduces major improvements to Fika support, the Compass system, HUD customization, localization, sound handling, and overall performance.</p>\n<hr />\n<h1>Fika / Fika Headless Support</h1>\n<h1>\u26a0\ufe0f IMPORTANT - PLEASE READ</h1>\n<p>Fika and Fika Headless support has been tested, but it may still be unstable in some situations.</p>\n<p>If you encounter any bugs, unexpected behavior, or compatibility issues, please feel free to leave a comment and report them.</p>\n<ul>\n<li>Improved Fika support for Hit Marker, Kill Feed, HUD, and Compass features</li>\n<li>Added additional handling for Fika Headless environments</li>\n<li>Improved compatibility between normal Fika hosting and Headless hosting</li>\n</ul>\n<hr />\n<h2>Compass Expansion</h2>\n<ul>\n<li>Added <strong>2 new Compass presets</strong></li>\n<li>Improved Extract / Transit / Quest marker detection and display</li>\n<li>Extract / Transit / Quest markers can now be available from the beginning of the raid</li>\n<li>Added support for quests added by other mods</li>\n<li>Improved overall Compass detection and display behavior</li>\n<li>Added new dynamic markers for:\n<ul>\n<li>Airdrop</li>\n<li>BTR</li>\n<li>Train Extract</li>\n</ul>\n</li>\n</ul>\n<hr />\n<h2>HUD Improvements</h2>\n<ul>\n<li>Improved Hydration and Energy indicators</li>\n<li>Hydration / Energy icons can now change dynamically depending on their current state, similar to the Weight indicator</li>\n<li>Improved general HUD display behavior</li>\n</ul>\n<hr />\n<h2>HUD Editing Improvements</h2>\n<ul>\n<li>Expanded HUD positioning and editing features</li>\n<li>Selecting a HUD element while editing now previews the settings for that specific HUD</li>\n<li>Added and reorganized HUD-related options in the F12 menu</li>\n<li>Improved the overall HUD editing workflow</li>\n<li>Added adaptive information positioning:\n<ul>\n<li>When a HUD element is placed near the bottom of the screen, its information automatically moves above it</li>\n<li>When placed near the top, the information can display below it</li>\n</ul>\n</li>\n<li>Added <strong>Click HUD to Settings</strong>\n<ul>\n<li>Click a HUD element while editing to quickly open its related settings</li>\n</ul>\n</li>\n</ul>\n<hr />\n<h2>Localization</h2>\n<p>Added support for the following languages:</p>\n<table>\n<thead>\n<tr>\n<th>Code</th>\n<th>Language</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>en</code></td>\n<td>English</td>\n</tr>\n<tr>\n<td><code>ja</code></td>\n<td>\u65e5\u672c\u8a9e</td>\n</tr>\n<tr>\n<td><code>ru</code></td>\n<td>\u0420\u0443\u0441\u0441\u043a\u0438\u0439</td>\n</tr>\n<tr>\n<td><code>zh-CN</code></td>\n<td>\u7b80\u4f53\u4e2d\u6587</td>\n</tr>\n<tr>\n<td><code>zh-TW</code></td>\n<td>\u7e41\u9ad4\u4e2d\u6587</td>\n</tr>\n<tr>\n<td><code>ko</code></td>\n<td>\ud55c\uad6d\uc5b4</td>\n</tr>\n<tr>\n<td><code>de</code></td>\n<td>Deutsch</td>\n</tr>\n<tr>\n<td><code>fr</code></td>\n<td>Fran\u00e7ais</td>\n</tr>\n<tr>\n<td><code>es</code></td>\n<td>Espa\u00f1ol</td>\n</tr>\n<tr>\n<td><code>pt-BR</code></td>\n<td>Portugu\u00eas (Brasil)</td>\n</tr>\n<tr>\n<td><code>pl</code></td>\n<td>Polski</td>\n</tr>\n<tr>\n<td><code>uk</code></td>\n<td>\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430</td>\n</tr>\n<tr>\n<td><code>tr</code></td>\n<td>T\u00fcrk\u00e7e</td>\n</tr>\n<tr>\n<td><code>cs</code></td>\n<td>\u010ce\u0161tina</td>\n</tr>\n<tr>\n<td><code>it</code></td>\n<td>Italiano</td>\n</tr>\n</tbody>\n</table>\n<p>If you are using a custom translation file, please update it for this version as new localization strings have been added.</p>\n<hr />\n<h2>Sound Improvements</h2>\n<ul>\n<li>Improved Hit Sound handling for Body Hits and Headshots</li>\n</ul>\n<hr />\n<h2>Performance Improvements</h2>\n<ul>\n<li>Optimized Compass / Quest scanning</li>\n<li>Improved caching</li>\n<li>Reduced unnecessary processing during raids</li>\n<li>Reduced stuttering and temporary frame drops</li>\n<li>Improved overall stability</li>\n</ul>\n<hr />\n<h1>SHOWCASE</h1>\n<h2>New Dynamic Compass Markers</h2>\n<p>New markers for <strong>Airdrop, BTR, and Train Extract</strong>.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/Dizzlow1/png/releases/download/1.7.0png/9e56ef37-a5f3-442b-a282-7739767a9c83.png\" alt=\"Airdrop BTR Train Markers\" /></p>\n<hr />\n<h2>New Compass Presets</h2>\n<p>Two new customizable Compass presets have been added.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/Dizzlow1/png/releases/download/1.7.0png/ImpactCue_Compass_3_Presets_Original_Screenshots.png\" alt=\"New Compass Presets\" /></p>\n<hr />\n<h2>Adaptive HUD Information Positioning</h2>\n<p>HUD information automatically adjusts its position depending on where the HUD element is placed on the screen.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/Dizzlow1/png/releases/download/1.7.0png/Adaptive.GIF\" alt=\"Adaptive HUD\" /></p>\n<hr />\n<h2>Click HUD to Settings</h2>\n<p>While using HUD Edit Mode, clicking a HUD element can take you directly to the settings for that HUD.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/Dizzlow1/png/releases/download/1.7.0png/ClickHUD.GIF\" alt=\"Click HUD to Settings\" /></p>\n",
      "spt_constraint": "4.1.5",
      "fika": "compatible",
-     "downloads": 517,
+     "downloads": 519,
      "size": 3610121,
      "link": "https://sp-mod.com/mod/download/3029/impactcue-ui-mod/1.7.0",
      "published_at": "2026-09-16T16:23:00.000000Z",
@@ -201253,7 +201299,7 @@
      "description": "<p>Initial release of ImpactCue-UI-MOD for SPT 4.1.5.</p>\n<h3>Features</h3>\n<ul>\n<li>Customizable hit markers</li>\n<li>Floating damage numbers</li>\n<li>Kill feed with animation presets</li>\n<li>Victim highlight effects</li>\n<li>HUD position editor</li>\n<li>Configurable colors and layout</li>\n<li>F12 configuration menu</li>\n<li>Localized weapon names with category fallback</li>\n</ul>\n",
      "spt_constraint": "4.1.5",
      "fika": "unknown",
-     "downloads": 200,
+     "downloads": 201,
      "size": 27560,
      "link": "https://sp-mod.com/mod/download/3029/impactcue-ui-mod/1.4.8",
      "published_at": "2026-09-14T20:04:00.000000Z",
@@ -201268,7 +201314,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-09-14T20:03:00.000000Z",
-   "updated_at": "2026-09-18T03:18:45.000000Z",
+   "updated_at": "2026-09-18T09:15:41.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": true,
@@ -201912,6 +201958,76 @@
     "contains_ads": false,
     "contains_ai_content": false,
     "ai_disclosure": "",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 3038,
+   "hub_id": null,
+   "guid": "com.blacksite.modmanager",
+   "name": "Blacksite Mod Manager",
+   "slug": "blacksite-mod-manager",
+   "teaser": "Blacksite Mod Manager is an ultra-fast desktop app for Single Player T***** (SPT). Features 1-click mod installs, auto dependency resolution, parallel archive extraction, an in-app config editor, conflict detection, and an integrated launcher.",
+   "description_html": "<p><strong>Welcome to Blacksite Mod Manager (v1.8.0)</strong>\nThe ultimate, modern desktop client designed to streamline your Single Player T***** (SPT) experience. Built from the ground up in C# .NET 8.0, Blacksite Mod Manager connects directly to The Forge API to bring you a seamless, one-click modding ecosystem.</p>\n<p>Whether you are downloading a simple weapon tweak or a massive overhaul, Blacksite handles the heavy lifting. We\u2019ve custom-built an aggressively optimized extraction engine specifically designed to chew through the thousands of tiny JSON files typical of SPT mods\u2014completely bypassing the UI freezes and Windows Defender bottlenecks that plague other managers.</p>\n<p><strong>\u2728 Key Features</strong></p>\n<ul>\n<li><strong>Sleek, Responsive UI:</strong> A custom dark-themed interface featuring a clean 3-column grid, compact mod cards, and clear badges so you instantly know if a mod is <strong>Fika Compatible</strong> or matches your SPT version.</li>\n<li><strong>Smart Dependency Resolution:</strong> Never guess what a mod needs to work. Blacksite automatically detects required libraries (like <em>WTT - CommonLib</em> or <em>BigBrain</em>) and offers to queue them up alongside your main install.</li>\n<li><strong>Integrated SPT Launcher:</strong> Start your game directly from the manager. Blacksite will boot up your server in the background, monitor the console for the \u201cServer is ready\u201d signal, and automatically launch your game client.</li>\n<li><strong>In-App Config Editor:</strong> Tired of hunting down configuration files? Click \u201cEdit Configs\u201d on any installed mod to open a built-in text editor and tweak <code>.json</code>, <code>.cfg</code>, and <code>.yaml</code> files directly inside the app.</li>\n<li><strong>Conflict &amp; Duplicate Detector:</strong> Keep your loadout stable. The manager actively scans your <code>BepInEx/plugins</code> and <code>user/mods</code> folders to warn you about duplicate <code>.dll</code> files or conflicting server package IDs before you even launch the game.</li>\n<li><strong>One-Click Toggles:</strong> Easily enable or disable mods on the fly without deleting them (automatically manages the <code>.disabled</code> folder suffix).</li>\n</ul>\n<p><strong>\u26a1 Under the Hood (Performance Engine)</strong>\nSPT mods can be incredibly heavy on file counts. Blacksite uses a highly optimized, multi-threaded extraction engine to ensure downloads and unzipping are lightning-fast.</p>\n<ul>\n<li><strong>Concurrent Extraction:</strong> Utilizes parallel thread processing for tiny config files while handling large media bundles sequentially to protect your RAM.</li>\n<li><strong>Atomic Folder Moves:</strong> Downloads and extracts to a secure temporary folder first, then performs a single atomic move to your SPT directory\u2014drastically reducing the time Windows Defender spends scanning live game folders.</li>\n<li><strong>No UI Freezing:</strong> Extreme progress-dispatch throttling ensures your app stays buttery-smooth, even when extracting archives with 10,000+ files.</li>\n</ul>\n<p><strong>Compatibility</strong></p>\n<ul>\n<li>Fully supports SPT versions <strong>4.0.0 through 4.1.x+</strong>.</li>\n<li>Standalone single-file <code>.exe</code> \u2014 no bloat, no complex installations. Just drop it in and run.</li>\n</ul>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/8Tizzrnaf31eOvwPbU0CBDYfYe6HYa6XgZDECuvF.jpg",
+   "forge_url": "https://sp-mod.com/mod/3038/blacksite-mod-manager",
+   "downloads": 63,
+   "favourites": 2,
+   "featured": false,
+   "fika": false,
+   "fika_latest": "unknown",
+   "category": {
+    "id": 1,
+    "title": "Tools",
+    "slug": "tools"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 55880,
+     "name": "Manpig03",
+     "avatar": "https://files.sp-mod.com/profile-photos/lSatWwDKOJMz8GPYns9OdI7IDmEaQDmD7KXRFLGb_128w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/Manpig01/Blacksite_Mod_Manager",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 15465,
+     "version": "1.8.0",
+     "description": "<p>Release</p>\n",
+     "spt_constraint": "4.1.5",
+     "fika": "unknown",
+     "downloads": 63,
+     "size": 63596670,
+     "link": "https://sp-mod.com/mod/download/3038/blacksite-mod-manager/1.8.0",
+     "published_at": "2026-09-18T07:29:33.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "1.8.0",
+   "spt_constraint": "4.1.5",
+   "all_spt_constraints": [
+    "4.1.5"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-09-18T07:29:00.000000Z",
+   "updated_at": "2026-09-18T07:30:33.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": true,
+    "ai_disclosure": "<p>AI was leveraged as a development assistant throughout the creation of Blacksite Mod Manager.</p>\n<p><strong>How AI was used:</strong></p>\n<ul>\n<li>Assisting with C# .NET 8 / WPF layout code and XAML structure.</li>\n<li>Optimizing background file extraction streams, buffer sizes, and concurrent thread logic.</li>\n<li>Drafting initial rate-limiting and API integration handlers.</li>\n</ul>\n<p>All generated code was manually reviewed, debugged, and tested to ensure stability and performance.</p>\n",
     "cheat_notice": false,
     "profile_binding_notice": false
    },
