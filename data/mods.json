@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-09-21T12:59:24Z",
+ "generated_at": "2026-09-21T20:02:29Z",
  "source": "https://sp-mod.com",
  "filter": "all",
- "mod_count": 1976,
+ "mod_count": 1979,
  "categories": [
   {
    "id": 12,
@@ -167865,8 +167865,8 @@
    "description_html": "<h1>Loot In Vicinity</h1>\n<p><strong>Loot In Vicinity</strong> adds a <strong>Nearby Items</strong> column when you open your <strong>inventory in a raid</strong>. It lists loose loot around you so you can drag items, use quick moves, or see what is close without having to pin point that Veritas Guitar Pick everytime.</p>\n<p><strong>Github:</strong> <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/FallegaHQ\" rel=\"noreferrer noopener\">FallegaHQ</a></p>\n<hr />\n<h2>Support the author</h2>\n<p>Maintenance and compatibility work takes time. If this mod saves you frustration in raids, consider\n<strong><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/sponsors/FallegaHQ\" rel=\"noreferrer noopener\">supporting on GitHub Sponsors</a></strong>. There is no paywall\u2013everything stays free\nunder the licence below.</p>\n<hr />\n<h2>Thanks</h2>\n<p>People across the <strong>SPT</strong> and <strong>modding</strong> scenes shared ideas, repros, and \u201cwhat if you tried\u2026\u201d moments that shaped\nthis plugin. That help mattered.</p>\n<p>Bits of implementation are the usual mix: inspiration from forum threads, other public mods, and long sessions with\ndnSpy. If something looks <strong>suspiciously familiar</strong>, assume I <strong>borrowed the good parts</strong> on purpose, thank you for\nputting it out there.</p>\n<hr />\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Install</div>\n<div class=\"tab-content\"><h4>What you need</h4>\n<ul>\n<li>A working <strong>SPT</strong> already set up.</li>\n<li>This mod.</li>\n<li>The mod is turned <strong>on</strong> in its config (see below).</li>\n</ul>\n<p>If other inventory or loot mods are installed, list them when you report a problem; they sometimes interact in odd ways.</p>\n<hr />\n<h4>Install</h4>\n<ol>\n<li>Download the release ZIP \u2013 the filename looks like <strong><code>Softwyx-LootInVicinity-2.14.40.zip</code></strong> (the version number\nchanges each release).</li>\n<li><strong>Extract</strong> it so that your game folder contains:\n<ul>\n<li><code>BepInEx\\plugins\\Softwyx-LootInVicinity\\Softwyx-LootInVicinity.dll</code></li>\n</ul>\n</li>\n<li>Start the game.</li>\n</ol>\n<p><strong>First launch</strong> may create a config file:</p>\n<ul>\n<li><code>BepInEx\\config\\com.softwyx.lootinvicinity.cfg</code></li>\n</ul>\n<p>You can edit that file when the game is <strong>closed</strong>, or use <strong>Configuration Manager</strong> in-game.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Usage</div>\n<div class=\"tab-content\"><h4>How to use in-game</h4>\n<ol>\n<li>Enter a <strong>raid</strong>.</li>\n<li>Open <strong>inventory</strong> (usually <strong>Tab</strong>) <strong>without</strong> opening a world container (body, crate, etc.).</li>\n<li>On the <strong>right</strong>, you should see the <strong>Nearby Items</strong> panel (title may differ if you changed it in config).</li>\n<li><strong>Drag</strong> or <strong>quick move</strong> loot like any other stash.</li>\n</ol>\n<p>Which items appear is set under <strong>3. Scanning</strong> in the config (see below).</p>\n<hr />\n<h4>Settings</h4>\n<p>Open <strong>Configuration Manager</strong> in-game, or edit <code>BepInEx\\config\\com.softwyx.lootinvicinity.cfg</code> while the game is **\nclosed**.</p>\n<p><strong>1. General</strong></p>\n<ul>\n<li><strong>Enabled</strong> \u2013 master switch.</li>\n</ul>\n<p><strong>2. Inventory panel</strong></p>\n<ul>\n<li><strong>Panel title</strong>, <strong>Hide panel when empty</strong>, <strong>Append item count to title</strong> \u2013 how the right column looks.</li>\n</ul>\n<p><strong>3. Scanning</strong></p>\n<ul>\n<li><strong>Scan radius (m)</strong> \u2013 how far around you the list reaches (3 to 6 m). There is always a <strong>1 m</strong> wide zone at your\nfeet where items can show up even when they are under other loot or even under the ground.</li>\n<li><strong>Main scan requires line of sight</strong> \u2013 when on, loot farther out in that radius must be in clear view (walls still\nblock). Other loot piles and bodies on the ground do <strong>not</strong> count as blocking. The <strong>1 m</strong> zone at your feet ignores\nthis setting.</li>\n<li><strong>Max items in panel</strong> \u2013 cap on how many rows show each time you open Tab inventory.</li>\n</ul>\n<p><strong>4. Quest items</strong></p>\n<ul>\n<li><strong>Show quest items in vicinity</strong> \u2013 whether quest loot appears in the nearby list.</li>\n<li><strong>Route quest items to task stash</strong> \u2013 when on, moving quest loot from the panel sends it to the quest stash instead\nof your pockets.</li>\n</ul>\n<p>Delete the config file with the game <strong>closed</strong> to reset all defaults (or reset manually in-game).</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Support</div>\n<div class=\"tab-content\"><h4>Known issues / quirks</h4>\n<p>These are behaviours players have reported; they may vary with game version or other mods.</p>\n<ol>\n<li>\n<p><strong>Quest items in the Nearby list</strong> \u2013 Drag previews (green/red outlines) sometimes <strong>do not match</strong> where a quest\nitem can actually go (for example armour vs backpack). <strong>Quick move</strong> (e.g. <strong>Ctrl + click</strong>, depending on your\nsetup) is often more reliable than drag for those items.</p>\n</li>\n<li>\n<p><strong>Mods that change inventory, stash, quick move, or loot</strong> \u2013 Compatibility is <strong>best effort</strong>. If something breaks\nafter adding another mod, try with only Loot In Vicinity + SPT essentials to narrow it down.</p>\n</li>\n</ol>\n<p>The mod is updated when issues are reproduced and fixed; the list above may shrink or grow in newer versions.</p>\n<hr />\n<h4>How to report a bug or ask for help</h4>\n<p>You get faster help if you include detail. <strong>Copy/paste this checklist</strong> and fill what you can:</p>\n<ol>\n<li>\n<p><strong>Mod version</strong> \u2013 From BepInEx <code>LogOutput.log</code>: the line where <strong>Loot In Vicinity</strong> loads (it shows <strong>v\u2026</strong>).</p>\n</li>\n<li>\n<p><strong>Game / SPT</strong> \u2013 Roughly what you use (example: \u201cSPT 4.0.13, EFT client build \u2026\u201d). Exact numbers help.</p>\n</li>\n<li>\n<p><strong>What happened</strong> \u2013 One short sentence (e.g. \u201cTab in raid, panel empty\u201d / \u201cthe game froze after I \u2026\u201d).</p>\n</li>\n<li>\n<p><strong>Steps</strong> \u2013 Numbered list: what you clicked, map, single player or group (FIKA), etc.</p>\n</li>\n<li>\n<p><strong>Other mods</strong> \u2013 Names of other BepInEx plugins that touch <strong>inventory, loot, UI, or progression</strong>.</p>\n</li>\n<li>\n<p><strong>Logs</strong> \u2013 With the game <strong>closed</strong>:</p>\n<ul>\n<li><code>BepInEx\\LogOutput.log</code> (and <code>FullLogOutput.log</code> if someone asks for it)</li>\n</ul>\n</li>\n</ol>\n<p><strong>Where to send it</strong> \u2013 Use the <strong>comments section, or issue tracker of the repo</strong> which should be listed where you\n<strong>downloaded</strong> the mod. Never email me about mods.</p>\n<p>Do <strong>not</strong> send passwords, full Windows usernames, or unrelated personal files. I will try my best to remove any\npersonal data whenever I see it but my availability is not guaranteed!</p></div></div></div>\n<hr />\n<h2>Licence</h2>\n<p>This project is licensed under the <strong>Mozilla Public License 2.0</strong> (MPL-2.0). See the <a href=\"LICENSE\"><code>LICENSE</code></a> file for the\nfull text.</p>\n<p>SPDX: <code>MPL-2.0</code></p>\n<hr />\n<h2>Disclaimer</h2>\n<p><em>E</em>***************** is a trademark of Battlestate Games. This mod is an independent, community-made add-on. Use at your\nown risk. The author is not responsible for lost progress, banned accounts on other services, or damage from third-party tools.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/P7nrH1FXCnxCX0XReZEqTNpdg4ZQRi3Pnnn2FO1Z.jpg",
    "forge_url": "https://sp-mod.com/mod/2698/loot-in-vicinity",
-   "downloads": 12769,
-   "favourites": 88,
+   "downloads": 13267,
+   "favourites": 96,
    "featured": false,
    "fika": false,
    "fika_latest": "incompatible",
@@ -167894,12 +167894,24 @@
    ],
    "versions": [
     {
+     "id": 15521,
+     "version": "3.0.6",
+     "description": "<blockquote>\n<h3>Version 3.0.6</h3>\n</blockquote>\n<blockquote>\n<p><strong>\u2728 Added</strong></p>\n<ul>\n<li>Changed the default scan radius to 1m as it felt cheesy to some players</li>\n</ul>\n<p><strong>\ud83d\udc1b Fixed</strong></p>\n<ul>\n<li>Fixed a bug that cause the scanner to include items from inside locked rooms</li>\n<li>Fixed a regression that came with 3.0.0 which cause ctrl+click and ctrl+hover not to work correctly</li>\n</ul>\n</blockquote>\n",
+     "spt_constraint": ">=4.1 <4.2.0",
+     "fika": "incompatible",
+     "downloads": 240,
+     "size": 46233,
+     "link": "https://sp-mod.com/mod/download/2698/loot-in-vicinity/3.0.6",
+     "published_at": "2026-09-21T13:55:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 15503,
      "version": "3.0.0",
      "description": "<blockquote>\n<h3>Version 3.0.0</h3>\n</blockquote>\n<blockquote>\n<p><strong>\u2728 Added</strong></p>\n<ul>\n<li>SPT 4.1.x support</li>\n</ul>\n</blockquote>\n",
      "spt_constraint": ">=4.1 <4.2.0",
      "fika": "incompatible",
-     "downloads": 211,
+     "downloads": 462,
      "size": 46169,
      "link": "https://sp-mod.com/mod/download/2698/loot-in-vicinity/3.0.0",
      "published_at": "2026-09-20T16:57:00.000000Z",
@@ -167911,7 +167923,7 @@
      "description": "<blockquote>\n<h3>Version 2.15.632</h3>\n</blockquote>\n<blockquote>\n<p><strong>\u2728 Added</strong></p>\n<ul>\n<li>Imporved internal logic and items tracking</li>\n</ul>\n<p><strong>\ud83d\udc1b Fixed</strong></p>\n<ul>\n<li>Stop empty magazines vanishing in vicinity staging area</li>\n</ul>\n</blockquote>\n",
      "spt_constraint": ">=4.0 <4.1.0",
      "fika": "incompatible",
-     "downloads": 5507,
+     "downloads": 5514,
      "size": 46754,
      "link": "https://sp-mod.com/mod/download/2698/loot-in-vicinity/2.15.632",
      "published_at": "2026-06-25T15:50:00.000000Z",
@@ -168002,7 +168014,7 @@
      "dependencies": []
     }
    ],
-   "latest_version": "3.0.0",
+   "latest_version": "3.0.6",
    "spt_constraint": ">=4.1 <4.2.0",
    "all_spt_constraints": [
     ">=4.0 <4.1.0",
@@ -168011,7 +168023,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-05-20T10:30:00.000000Z",
-   "updated_at": "2026-09-20T17:19:02.000000Z",
+   "updated_at": "2026-09-21T14:02:04.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -201890,11 +201902,11 @@
    "name": "NATO Quartermaster \u2014 Western Gear Trader, Presets & Quest Unlocks",
    "slug": "nato-quartermaster-western-gear-trader-presets-quest-unlocks",
    "teaser": "A custom NATO-themed trader offering premium Western weapons, armor, ammo, presets, supplies, and quest-gated high-end gear.",
-   "description_html": "<h1>\ud83e\ude96 NATO Quartermaster</h1>\n<blockquote>\n<p><strong>Premium Western gear. No loyalty grind. Just bring roubles  and prove you\u2019re worth supplying.</strong></p>\n</blockquote>\n<p><strong>NATO Quartermaster</strong> adds a custom trader focused on high quality Western weapons, armor, ammunition, complete weapon builds, and field supplies.</p>\n<p>Quartermaster is meant to give you easier access to good gear without becoming a cheat trader.</p>\n<p>You get the convenience.</p>\n<p>You pay the premium.</p>\n<hr />\n<h2>\ud83d\udd25 Features</h2>\n<ul>\n<li>\ud83e\uddd4 Custom trader with <strong>unique lore and portrait</strong></li>\n<li>\ud83d\udd2b Western / NATO focused weapons</li>\n<li>\ud83d\udee0\ufe0f Complete weapon presets</li>\n<li>\ud83d\udca5 High quality ammunition</li>\n<li>\ud83e\uddba Armor, plate carriers, rigs, and helmets</li>\n<li>\ud83c\udf92 Backpacks and headsets</li>\n<li>\ud83e\udd6b MREs and water</li>\n<li>\u20bd All purchases use <strong>roubles</strong></li>\n<li>\ud83d\udeab No loyalty-level locks on normal stock</li>\n<li>\ud83d\udd12 High-end gear unlocked through quests</li>\n<li>\ud83d\udcb0 Premium pricing for balance</li>\n<li>\ud83d\udce6 Limited stock on stronger equipment</li>\n<li>\ud83c\udff7\ufe0f Primarily buys <strong>PMC dogtags</strong></li>\n</ul>\n<hr />\n<h2>\ud83d\udccb Quest Progression</h2>\n<p>Quartermaster includes a small quest chain that unlocks his restricted inventory.</p>\n<p>Complete assignments for Elias to gain access to:</p>\n<ul>\n<li>Premium armor</li>\n<li>High end weapon builds</li>\n<li>Better helmets</li>\n<li>Restricted ammunition</li>\n</ul>\n<p>The strongest gear isn\u2019t simply handed to you.</p>\n<p>You earn access to it.</p>\n<hr />\n<h2>\u2696\ufe0f Balance</h2>\n<p>Quartermaster is designed around <strong>convenience at a cost</strong>.</p>\n<p>His equipment is generally more expensive than buying the same gear from standard traders, and stronger items have limited stock.</p>\n<p>He also isn\u2019t designed to be a loot dumping trader.</p>\n<p>If you want to do business with him, <strong>PMC dogtags are what get his attention.</strong></p>\n<hr />\n<h1>\ud83d\udcd6 Lore</h1>\n<p><strong>Elias Ward</strong>, known simply as <strong>Quartermaster</strong>, worked military logistics and procurement before the T***** region collapsed into chaos.</p>\n<p>When evacuation orders came down, Ward stayed behind.</p>\n<p>What he kept was more valuable than a rifle:</p>\n<p><strong>contacts, manifests, storage locations, and knowledge of shipments that never reached their intended destination.</strong></p>\n<p>Some equipment was abandoned.</p>\n<p>Some disappeared.</p>\n<p>Some was never officially there.</p>\n<p>Ward doesn\u2019t care much about heroics.</p>\n<p>He cares about inventory, contracts, logistics, and whether you\u2019ve proven yourself useful enough to access the equipment he keeps off the books.</p>\n<blockquote>\n<p><strong>\u201cGood equipment exists. Reliable supply doesn\u2019t.\u201d</strong></p>\n</blockquote>\n<hr />\n<h2>\ud83d\udea7 Future Plans</h2>\n<p>The current version uses vanilla EFT equipment.</p>\n<p>Future updates may include:</p>\n<ul>\n<li>More quests</li>\n<li>More custom weapon presets</li>\n<li>Additional restricted gear</li>\n<li>New trader dialogue</li>\n<li>Custom items</li>\n<li>Further balance improvements</li>\n</ul>\n<hr />\n<h1>\ud83d\udcac SEND FEEDBACK</h1>\n<p>Found a bug?</p>\n<p>Think something is too expensive?</p>\n<p>Want to suggest gear, presets, quests, or future content?</p>\n<p><strong>Leave a comment.</strong></p>\n<p>Feedback will help shape future updates.</p>\n",
+   "description_html": "<h1><strong>READ UPDATE NOTES</strong></h1>\n<h1>\ud83e\ude96 NATO Quartermaster</h1>\n<blockquote>\n<p><strong>Premium Western gear. No loyalty grind. Just bring roubles  and prove you\u2019re worth supplying.</strong></p>\n</blockquote>\n<p><strong>NATO Quartermaster</strong> adds a custom trader focused on high quality Western weapons, armor, ammunition, complete weapon builds, and field supplies.</p>\n<p>Quartermaster is meant to give you easier access to good gear without becoming a cheat trader.</p>\n<p>You get the convenience.</p>\n<p>You pay the premium.</p>\n<hr />\n<h2>\ud83d\udd25 Features</h2>\n<ul>\n<li>\ud83e\uddd4 Custom trader with <strong>unique lore and portrait</strong></li>\n<li>\ud83d\udd2b Western / NATO focused weapons</li>\n<li>\ud83d\udee0\ufe0f Complete weapon presets</li>\n<li>\ud83d\udca5 High quality ammunition</li>\n<li>\ud83e\uddba Armor, plate carriers, rigs, and helmets</li>\n<li>\ud83c\udf92 Backpacks and headsets</li>\n<li>\ud83e\udd6b MREs and water</li>\n<li>\u20bd All purchases use <strong>roubles</strong></li>\n<li>\ud83d\udeab No loyalty-level locks on normal stock</li>\n<li>\ud83d\udd12 High-end gear unlocked through quests</li>\n<li>\ud83d\udcb0 Premium pricing for balance</li>\n<li>\ud83d\udce6 Limited stock on stronger equipment</li>\n<li>\ud83c\udff7\ufe0f Primarily buys <strong>PMC dogtags</strong></li>\n</ul>\n<hr />\n<h2>\ud83d\udccb Quest Progression</h2>\n<p>Quartermaster includes a small quest chain that unlocks his restricted inventory.</p>\n<p>Complete assignments for Elias to gain access to:</p>\n<ul>\n<li>Premium armor</li>\n<li>High end weapon builds</li>\n<li>Better helmets</li>\n<li>Restricted ammunition</li>\n</ul>\n<p>The strongest gear isn\u2019t simply handed to you.</p>\n<p>You earn access to it.</p>\n<hr />\n<h2>\u2696\ufe0f Balance</h2>\n<p>Quartermaster is designed around <strong>convenience at a cost</strong>.</p>\n<p>His equipment is generally more expensive than buying the same gear from standard traders, and stronger items have limited stock.</p>\n<p>He also isn\u2019t designed to be a loot dumping trader.</p>\n<p>If you want to do business with him, <strong>PMC dogtags are what get his attention.</strong></p>\n<hr />\n<h1>\ud83d\udcd6 Lore</h1>\n<p><strong>Elias Ward</strong>, known simply as <strong>Quartermaster</strong>, worked military logistics and procurement before the T***** region collapsed into chaos.</p>\n<p>When evacuation orders came down, Ward stayed behind.</p>\n<p>What he kept was more valuable than a rifle:</p>\n<p><strong>contacts, manifests, storage locations, and knowledge of shipments that never reached their intended destination.</strong></p>\n<p>Some equipment was abandoned.</p>\n<p>Some disappeared.</p>\n<p>Some was never officially there.</p>\n<p>Ward doesn\u2019t care much about heroics.</p>\n<p>He cares about inventory, contracts, logistics, and whether you\u2019ve proven yourself useful enough to access the equipment he keeps off the books.</p>\n<blockquote>\n<p><strong>\u201cGood equipment exists. Reliable supply doesn\u2019t.\u201d</strong></p>\n</blockquote>\n<hr />\n<h2>\ud83d\udea7 Future Plans</h2>\n<p>The current version uses vanilla EFT equipment.</p>\n<p>Future updates may include:</p>\n<ul>\n<li>More quests</li>\n<li>More custom weapon presets</li>\n<li>Additional restricted gear</li>\n<li>New trader dialogue</li>\n<li>Custom items</li>\n<li>Further balance improvements</li>\n</ul>\n<hr />\n<h1>\ud83d\udcac SEND FEEDBACK</h1>\n<p>Found a bug?</p>\n<p>Think something is too expensive?</p>\n<p>Want to suggest gear, presets, quests, or future content?</p>\n<p><strong>Leave a comment.</strong></p>\n<p>Feedback will help shape future updates.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/vjJ4yGR257CjnDnbGYux8wNTqolwQZhE5FmTcXGT.png",
    "forge_url": "https://sp-mod.com/mod/3030/nato-quartermaster-western-gear-trader-presets-quest-unlocks",
-   "downloads": 470,
-   "favourites": 6,
+   "downloads": 632,
+   "favourites": 8,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -201922,12 +201934,24 @@
    ],
    "versions": [
     {
+     "id": 15522,
+     "version": "1.1.3",
+     "description": "<h1>\ud83e\ude96 <strong>NATO Quartermaster v1.1.3</strong></h1>\n<p>NATO Quartermaster just got a pretty big progression update.</p>\n<p>Ward now has a full <strong>6 quest chain</strong>, with the newer contracts getting harder and rewarding access to some of his best equipment.</p>\n<h2>\ud83d\udd25 <strong>What\u2019s New</strong></h2>\n<p>Three new quests have been added:</p>\n<h3>\ud83d\udce6 <strong>Supply Interruption</strong></h3>\n<p>Clear Scavs from Ward\u2019s supply route on Customs and unlock more premium armor and head protection.</p>\n<h3>\ud83d\udcd3 <strong>Black Ledger</strong></h3>\n<p>Bring Ward dogtags from experienced PMCs to gain access to another premium Western rifle and more restricted ammunition.</p>\n<h3>\ud83d\udd12 <strong>Priority Shipment</strong></h3>\n<p>Complete Ward\u2019s final contract to unlock the <strong>Black Rack</strong>, containing some of the best weapons, armor, helmets, and ammunition he can source.</p>\n<p>Quest rewards are now much more meaningful, with later quests unlocking genuinely powerful equipment.</p>\n<h2>\ud83d\udd27 <strong>Fixes and Improvements</strong></h2>\n<p>Quest images should now load properly instead of getting stuck loading forever.</p>\n<p>Restricted inventory and quest unlocks have been cleaned up and corrected.</p>\n<p>Additional logging has been added to make trader and quest issues easier to track down.</p>\n<p>The mod and source files are now fully updated to <strong>v1.1.3</strong>.</p>\n<h2>\u26a0\ufe0f <strong>Updating From an Older Version</strong></h2>\n<p>Close SPT completely before updating.</p>\n<p>Delete your old:</p>\n<p><code>SPT_Runtime\\user\\mods\\Michael-NATOQuartermaster</code></p>\n<p>folder, then install the new version normally.</p>\n<p>Do not keep multiple versions of NATO Quartermaster installed at the same time.</p>\n<p>The existing trader and original quest IDs are unchanged, so previous progression should continue working. A profile backup before updating is still recommended.</p>\n<h2>\ud83d\ude80 <strong>What\u2019s Next</strong></h2>\n<p>The plan is to keep expanding Ward without turning him into a trader that simply sells everything in Tarkov.</p>\n<p>Future updates will focus on <strong>more interesting quests</strong>, <strong>better progression</strong>, <strong>new premium equipment</strong>, <strong>more complete weapon builds</strong>, and improvements based on player feedback.</p>\n<p>The goal is for NATO Quartermaster to feel like a trader you actually progress through, with each contract slowly opening access to better and more exclusive Western equipment.</p>\n<p>Thanks to everyone downloading, testing, and reporting issues.</p>\n<p><strong>More is coming. \ud83e\udee1</strong></p>\n",
+     "spt_constraint": "4.1.6",
+     "fika": "compatible",
+     "downloads": 101,
+     "size": 362069,
+     "link": "https://sp-mod.com/mod/download/3030/nato-quartermaster-western-gear-trader-presets-quest-unlocks/1.1.3",
+     "published_at": "2026-09-21T17:24:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 15433,
      "version": "1.1.2",
      "description": "<p>*Trader image fix</p>\n",
      "spt_constraint": "4.1.5",
      "fika": "compatible",
-     "downloads": 399,
+     "downloads": 460,
      "size": 359645,
      "link": "https://sp-mod.com/mod/download/3030/nato-quartermaster-western-gear-trader-presets-quest-unlocks/1.1.2",
      "published_at": "2026-09-16T04:00:00.000000Z",
@@ -201946,15 +201970,16 @@
      "dependencies": []
     }
    ],
-   "latest_version": "1.1.2",
-   "spt_constraint": "4.1.5",
+   "latest_version": "1.1.3",
+   "spt_constraint": "4.1.6",
    "all_spt_constraints": [
-    "4.1.5"
+    "4.1.5",
+    "4.1.6"
    ],
    "dependencies": [],
    "all_dependencies": [],
-   "published_at": "2026-09-16T00:00:00.000000Z",
-   "updated_at": "2026-09-21T10:40:11.000000Z",
+   "published_at": "2026-09-21T16:11:00.000000Z",
+   "updated_at": "2026-09-21T17:26:26.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -202173,8 +202198,8 @@
    "description_html": "<h1>\ud83c\udfb0 Bookie</h1>\n<p>Inspired by SPT Casino by MyButtHasARash</p>\n<p><strong>A new gambling trader for SPT where you can risk roubles, Bitcoins, and your better judgment.</strong></p>\n<p>Bookie is a new mod I\u2019m actively working on, so this first version is just the start. I\u2019d love suggestions for new bets, rewards, balance changes, or anything else that could make the trader more fun.</p>\n<h2>\ud83c\udfb2 What You Can Do</h2>\n<p><strong>Double or Nothing</strong></p>\n<p>Risk anywhere from \u20bd50,000 up to \u20bd1,000,000.</p>\n<p>Win and double your money.</p>\n<p>Lose and you get a BUST slip.</p>\n<p><strong>Let It Ride</strong></p>\n<p>Start with \u20bd100,000 and keep pushing your luck.</p>\n<p>\u20bd100k \u2192 \u20bd200k \u2192 \u20bd400k \u2192 \u20bd800k \u2192 \u20bd1.6M</p>\n<p>Cash out whenever you want, or keep gambling until Bookie takes it all.</p>\n<p><strong>Bitcoin Gambling</strong></p>\n<p>Risk physical Bitcoins for a chance to double them.</p>\n<p>Because apparently selling them normally is too boring.</p>\n<p><strong>Lucky 7 and High Roller</strong></p>\n<p>Randomized bets with bigger possible payouts and plenty of ways to lose.</p>\n<h2>\ud83d\udcb0 Cash Out Or Keep Going</h2>\n<p>Some wins give you a chip representing your payout.</p>\n<p>You can sell it back to Bookie for the money, or use it to keep the streak going.</p>\n<p>Your choice.</p>\n<h2>\ud83d\udd2e This Is Just The Beginning</h2>\n<p>I\u2019m planning to keep expanding Bookie with more wagers, more reward pools, larger bets, and eventually casino style games such as Blackjack with a custom UI.</p>\n<p>If you have ideas for bets or features, <strong>leave a suggestion.</strong> I want this mod to grow around what people actually want to gamble on.</p>\n<p>Built for <strong>SPT 4.1.x</strong></p>\n<blockquote>\n<p><em>\u201cEverybody knows when to walk away. They just never do.\u201d</em></p>\n</blockquote>\n",
    "thumbnail": "https://files.sp-mod.com/mods/YX14hQXDRiwnYoxlJUlbcb55lNHngIPJApD1DrDs.jpg",
    "forge_url": "https://sp-mod.com/mod/3032/bookie-casino-trader",
-   "downloads": 17,
-   "favourites": 0,
+   "downloads": 60,
+   "favourites": 4,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -202189,14 +202214,14 @@
    },
    "authors": [
     {
-     "id": "124276-arch",
+     "id": 124276,
      "name": "5strmichael",
      "avatar": "https://files.sp-mod.com/profile-photos/S1nbf324SUSsZ5W9sgKeoGMPtgclglfqTceESfgy_128w.webp"
     }
    ],
    "source_links": [
     {
-     "url": "https://github.com/5strmichael/NATO-Quartermaster-/releases/download/release/Michael-BookieTrader-1.0.0.zip",
+     "url": "https://github.com/5strmichael/casino-mod",
      "label": ""
     }
    ],
@@ -202207,7 +202232,7 @@
      "description": "<p>Mod Release</p>\n",
      "spt_constraint": "4.1.5",
      "fika": "compatible",
-     "downloads": 17,
+     "downloads": 60,
      "size": 170785,
      "link": "https://sp-mod.com/mod/download/3032/bookie-casino-trader/1.0.0",
      "published_at": "2026-09-16T09:09:00.000000Z",
@@ -202221,8 +202246,8 @@
    ],
    "dependencies": [],
    "all_dependencies": [],
-   "published_at": "2026-09-16T08:56:00.000000Z",
-   "updated_at": "2026-09-16T09:11:03.000000Z",
+   "published_at": "2026-09-21T16:04:00.000000Z",
+   "updated_at": "2026-09-21T16:21:21.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -202231,7 +202256,7 @@
     "profile_binding_notice": true
    },
    "origin": "forge",
-   "delisted": true
+   "delisted": false
   },
   {
    "id": 3033,
@@ -203338,6 +203363,80 @@
    "delisted": false
   },
   {
+   "id": 3048,
+   "hub_id": null,
+   "guid": "com.anotherbudgetgamer.moarsupplies",
+   "name": "Moar Supplies",
+   "slug": "moar-supplies",
+   "teaser": "Configurable stimulants that are simple to understand and easy to control. View what each stim does, then add, remove, and tune effects without being locked into someone else\u2019s preset.",
+   "description_html": "<h1><strong>Custom Stims - Your Way</strong></h1>\n<ul>\n<li>Start with a base stim model (i.e. Propital or Morphine)</li>\n<li>Add a name, short name, and description</li>\n<li>Add the effect(s) and tune them the way you want</li>\n<li>Place them in world loot or also make them purchasable at the trader</li>\n</ul>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/AnotherBudgetGamer/moar-supplies/blob/main/wwwroot/assets/stim-basics.png\" rel=\"noreferrer noopener\">Stim Basics</a></p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/AnotherBudgetGamer/moar-supplies/blob/main/wwwroot/assets/stim-effects.png\" rel=\"noreferrer noopener\">Stim Effects</a></p>\n<p>The goal of this mod is to give everyday users with little to no modding experience, the ability to easily create their own stims to take into raid. The web UI workshop makes it simple to create and modify stims without having to look at JSON (or any other file format).</p>\n<p>Each stim saves to its own JSON file so removing stims are as easy as deleting them from your stash, then removing the stim from the web UI editor or removing that specific JSON file.</p>\n<p><em>** <em>ALL CHANGES REQUIRE A SERVER RESTART TO REGISTER STIMS</em> **</em></p>\n<h2>Current Traders (will expand later):</h2>\n<p>[x] - Prapor</p>\n<p>[x] - Therapist</p>\n<p>[x] - Skier</p>\n<p>[ ] - Fence</p>\n<p>[ ] - Peacekeeper</p>\n<p>[ ] - Mechanic</p>\n<p>[ ] - Ragman</p>\n<p>[ ] - Ref</p>\n<p>[ ] - Modded Trader(s)</p>\n<h2>This project will expand to all types of consumables including:</h2>\n<p>[ ] - Food</p>\n<p>[ ] - Drinks</p>\n<p>[ ] - Medical Items</p>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/ioI3YyhPveXhz8uzDD2yZfgg77gddUiMa0PZIKEB.png",
+   "forge_url": "https://sp-mod.com/mod/3048/moar-supplies",
+   "downloads": 22,
+   "favourites": 1,
+   "featured": false,
+   "fika": true,
+   "fika_latest": "compatible",
+   "category": {
+    "id": 4,
+    "title": "Items",
+    "slug": "items"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 124572,
+     "name": "AnotherBudgetGamer",
+     "avatar": "https://files.sp-mod.com/profile-photos/11Tm61Z18QQNnICDk4PI06XyUduoE4exk8PDmzEg_256w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/AnotherBudgetGamer/moar-supplies/releases",
+     "label": "Releases"
+    },
+    {
+     "url": "https://github.com/AnotherBudgetGamer/moar-supplies",
+     "label": "Source"
+    }
+   ],
+   "versions": [
+    {
+     "id": 15510,
+     "version": "0.5.1",
+     "description": "<p>Beta Launch Version v0.5.1</p>\n<ul>\n<li>6 starter stims</li>\n<li>Web UI to add/modify/delete stims</li>\n<li>Descriptors for each effect and value</li>\n</ul>\n",
+     "spt_constraint": "~4.1",
+     "fika": "compatible",
+     "downloads": 22,
+     "size": 2495702,
+     "link": "https://sp-mod.com/mod/download/3048/moar-supplies/0.5.1",
+     "published_at": "2026-09-21T13:00:00.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "0.5.1",
+   "spt_constraint": "~4.1",
+   "all_spt_constraints": [
+    "~4.1"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-09-21T13:00:00.000000Z",
+   "updated_at": "2026-09-21T13:00:07.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
+    "cheat_notice": false,
+    "profile_binding_notice": true
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
    "id": 3049,
    "hub_id": null,
    "guid": "com.faruk.armorinfoplus",
@@ -203397,6 +203496,159 @@
    "all_dependencies": [],
    "published_at": "2026-09-21T08:32:00.000000Z",
    "updated_at": "2026-09-21T09:35:21.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 3050,
+   "hub_id": null,
+   "guid": "lcw.lacyway.dt",
+   "name": "DebugTools",
+   "slug": "debugtools",
+   "teaser": "The mods add an in-game database viewer that can be used whilst in raid to spawn items. It also features a debug menu that has several utilities, as well as developer commands for the console and the freecam from Fika.",
+   "description_html": "<h2>Set of debugging tools to make developing and testing mods easier.</h2>\n<h3><strong>What does the mod do?</strong></h3>\n<p>The mods add an in-game database viewer that can be used whilst in raid to spawn items. It also features a debug menu that has several utilities, as well as developer commands for the console and the freecam from Fika.\nThis is not meant to be installed on a normal installation as it might directly affect performance.</p>\n<h3><strong>Features</strong></h3>\n<ul>\n<li>Free cam (<strong>F9</strong> in raid by default)</li>\n<li>Database Viewer (<strong>F10</strong> by default)\n<ul>\n<li>High performance</li>\n<li>Does not lock the game while searching</li>\n<li>Supports modded items</li>\n<li>Can only spawn items in raid</li>\n<li>Search by name or ID</li>\n</ul>\n</li>\n<li>Debug menu (F11 by default)\n<ul>\n<li>God mode</li>\n<li>Heal</li>\n<li>Suicide</li>\n<li>Spawn Airdrop</li>\n<li>Go to BTR</li>\n<li>Spawn AI</li>\n<li>Destroy limb</li>\n<li>Bring all AI</li>\n<li>Despawn all AI</li>\n</ul>\n</li>\n<li>Console commands\n<ul>\n<li>All of the debug menu tools included as commands</li>\n<li>RecreateBackend (reloads the backend in the main menu)</li>\n<li>StopTimer (stops the in-raid timer from counting down)</li>\n<li>Clear (clears console output)</li>\n</ul>\n</li>\n<li>Options to show all <strong>Unity.Debug</strong> logs</li>\n</ul>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/qa4mTM4.gif\" alt=\"Preview1\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/0BWvZ4s.gif\" alt=\"Preview2\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/85y4CEo.gif\" alt=\"Preview3\" /></p>\n<h3><strong>Requests</strong></h3>\n<p>You are free to make requests of features to be added, and I might consider doing so.</p>\n<h3>Support me</h3>\n<p>You can support me on Ko-Fi</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/lacyway\" rel=\"noreferrer noopener\">Click</a></p>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/KKsJuzsPERWRXLGPDwIbJ5HfclVxdjLh3XmN2tHB.png",
+   "forge_url": "https://sp-mod.com/mod/3050/debugtools",
+   "downloads": 65,
+   "favourites": 4,
+   "featured": false,
+   "fika": false,
+   "fika_latest": "incompatible",
+   "category": {
+    "id": 1,
+    "title": "Tools",
+    "slug": "tools"
+   },
+   "license": {
+    "name": "Custom License",
+    "link": ""
+   },
+   "authors": [
+    {
+     "id": 47969,
+     "name": "Lacyway",
+     "avatar": "https://files.sp-mod.com/profile-photos/95a5b3e7532938e8baff549cb4defc29e382f4ac_128w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/Lacyway/DebugTools",
+     "label": "Client"
+    }
+   ],
+   "versions": [
+    {
+     "id": 15518,
+     "version": "1.0.0",
+     "description": "<ul>\n<li>Initial release</li>\n</ul>\n",
+     "spt_constraint": ">=4.1.3",
+     "fika": "incompatible",
+     "downloads": 65,
+     "size": 557215,
+     "link": "https://sp-mod.com/mod/download/3050/debugtools/1.0.0",
+     "published_at": "2026-09-21T13:01:00.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "1.0.0",
+   "spt_constraint": ">=4.1.3",
+   "all_spt_constraints": [
+    ">=4.1.3"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-09-21T12:56:00.000000Z",
+   "updated_at": "2026-09-21T13:05:33.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 3051,
+   "hub_id": null,
+   "guid": "com.hj.achievementskipper",
+   "name": "Achievement Skipper",
+   "slug": "achievement-skipper",
+   "teaser": "Skip any achievement and receive the reward",
+   "description_html": "<h1>Achievement Skipper</h1>\n<p><strong>Complete any achievement instantly and receive the reward</strong>\n<img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/IuJYZYq.gif\" alt=\"gif\" /></p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Features</div>\n<div class=\"tab-content\"><ul>\n<li>Hold <strong>L-CTRL</strong> while on the Achievements screen to reveal a SKIP button on each hexagon</li>\n<li>SKIP text and the hexagon border fade in and out smoothly</li>\n<li><strong>Optional toggle</strong> to reveal hidden achievements</li>\n<li>Compatible with Modded Achievements</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Planned Features</div>\n<div class=\"tab-content\"><ul>\n<li>Open to suggestions, please request some :3</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Settings (F12):</div>\n<div class=\"tab-content\"><table>\n<thead>\n<tr>\n<th>Setting</th>\n<th>Default</th>\n<th>What it does</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Enabled</td>\n<td><code>true</code></td>\n<td>Turns the skip buttons on or off</td>\n</tr>\n<tr>\n<td>Ask Before Skipping</td>\n<td><code>true</code></td>\n<td>Shows a yes/no window first</td>\n</tr>\n<tr>\n<td>Always Show Button</td>\n<td><code>false</code></td>\n<td>Keeps buttons visible instead of only while the key is held</td>\n</tr>\n<tr>\n<td>Show Button Key</td>\n<td><code>LCtrl</code></td>\n<td>Hold this to reveal the skip buttons</td>\n</tr>\n<tr>\n<td>Show Hidden Achievements</td>\n<td><code>false</code></td>\n<td>Reveals the achievements the game hides until you unlock them</td>\n</tr>\n</tbody>\n</table></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Credits</div>\n<div class=\"tab-content\"><p><strong>Special thanks to:</strong></p>\n<ul>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/4843/terkoiz\" rel=\"noreferrer noopener\">Terkoiz</a> for His Skipper Mod &amp; Thumbnail</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Support/Requests</div>\n<div class=\"tab-content\"><p>Found a bug or have a feature request?</p>\n<ul>\n<li><strong>Bug Reports:</strong> Please open an issue on the <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/hjal-dev/Achievement-Skipper/issues\" rel=\"noreferrer noopener\">GitHub Issues</a> page or Forge\u2019s own Issue Tracker</li>\n<li><strong>Feature Requests:</strong> Feel free to suggest new features</li>\n<li><strong>Please avoid posting log files in Forge comments.</strong> GitHub Issues and Forge\u2019s Issues Tracker make it much easier to troubleshoot problems</li>\n</ul></div></div></div>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/1htwn5w9DgREKlaJvNcXSfvqewpBO6hVA6TybR2V.png",
+   "forge_url": "https://sp-mod.com/mod/3051/achievement-skipper",
+   "downloads": 214,
+   "favourites": 3,
+   "featured": false,
+   "fika": true,
+   "fika_latest": "compatible",
+   "category": {
+    "id": 17,
+    "title": "Other",
+    "slug": "other"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 2059,
+     "name": "Hj",
+     "avatar": "https://files.sp-mod.com/profile-photos/R7T9Uom9mp9FnxyIGz44xarnoLa15G4Bvi68xk82_256w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/hjal-dev/Achievement-Skipper",
+     "label": "4.0 + 4.1"
+    }
+   ],
+   "versions": [
+    {
+     "id": 15520,
+     "version": "1.1.0",
+     "description": "<p>4.1x Version</p>\n",
+     "spt_constraint": "~4.1",
+     "fika": "compatible",
+     "downloads": 192,
+     "size": 16375,
+     "link": "https://sp-mod.com/mod/download/3051/achievement-skipper/1.1.0",
+     "published_at": "2026-09-21T13:30:16.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 15519,
+     "version": "1.0.0",
+     "description": "<p>4.0x Version</p>\n",
+     "spt_constraint": "~4.0.0",
+     "fika": "compatible",
+     "downloads": 22,
+     "size": 16681,
+     "link": "https://sp-mod.com/mod/download/3051/achievement-skipper/1.0.0",
+     "published_at": "2026-09-21T13:29:21.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "1.1.0",
+   "spt_constraint": "~4.1",
+   "all_spt_constraints": [
+    "~4.0.0",
+    "~4.1"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-09-21T13:29:00.000000Z",
+   "updated_at": "2026-09-21T13:31:03.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
