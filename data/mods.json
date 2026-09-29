@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-09-29T18:08:52Z",
+ "generated_at": "2026-09-29T22:23:20Z",
  "source": "https://sp-mod.com",
  "filter": "all",
- "mod_count": 2009,
+ "mod_count": 2011,
  "categories": [
   {
    "id": 12,
@@ -53932,11 +53932,11 @@
    "name": "UI Fixes",
    "slug": "ui-fixes",
    "teaser": "Quality of life improvements and fixes for SPT",
-   "description_html": "<p>UI Fixes</p>\n<p>T*****\u2018s interface is full of annoyances, but it doesn\u2019t have to be. This mod aims to fix at least some of them.</p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Features</div>\n<div class=\"tab-content\"><p>\u2728 Recently added</p>\n<h3>Added features</h3>\n<p>New UI features enabled by this mod</p>\n<ul>\n<li>Multiselect - select multiple items at once with shift-click or dragging a selection box\n<ul>\n<li>Move items around as a group, drop them into containers, place them in grids</li>\n<li>Ctrl-click and Alt-click to quick move or equip them all. Compatible with Quick Move to Containers!</li>\n<li>Context menu to insure, equip, unequip, load/unload ammo, install/uninstall, pin, and lock all at once</li>\n</ul>\n</li>\n<li>Swap items in place - drag one item over another to swap their locations!</li>\n<li>Flea market history - press the new back button to go back to the previous search</li>\n<li>Linked flea search from empty slots - find mods that fit that specific slot</li>\n<li>Keybinds for most context menu actions</li>\n<li>Toggle/Hold input - tap a key for \u201cPress\u201d mechanics, hold the key for \u201cContinuous\u201d mechanics\n<ul>\n<li>Can be set for aiming, sprinting, tactical devices, headlights, and goggles/faceshields, and interact/place quest item</li>\n</ul>\n</li>\n<li>Highlight quick-move and quick-equip destination</li>\n<li>Window manager remembers the status and location of open containers and inspect windows</li>\n</ul>\n<h3>Improved features</h3>\n<p>Existing SPT features made better</p>\n<h4>Inventory</h4>\n<ul>\n<li>Modify equipped weapons</li>\n<li>Rebind Home/End, PageUp/PageDown to work like you would expect</li>\n<li>Customizable mouse scrolling speed</li>\n<li>Moving stacks into containers always moves entire stack</li>\n<li>Items made stackable by other mods follow normal stacking behavior</li>\n<li>Synchronize stash scroll position everywhere your stash is visible</li>\n<li>Insure and repair items directly from the context menu</li>\n<li>Load ammo via context menu <em>in raid</em></li>\n<li>Load ammo preset will pull ammo from inventory, not just stash</li>\n<li>Multi-grid vest and backpack grids reordered to be left to right, top to bottom</li>\n<li>Vests and backpacks are taggable</li>\n<li>Sorting will stack and combine stacks of items</li>\n<li>Open-&gt;All context flyout that will recursively open nested containers to get at that innermost bag</li>\n<li>Improve modding/preset dropdown usability</li>\n<li>Enable context menu while searching (off by default)</li>\n<li>Search In Stash - add item context menu to open the search window for that item</li>\n<li>Rebind rotate key</li>\n</ul>\n<h4>Inspect windows</h4>\n<ul>\n<li>Show the total stats (including sub-mods) when inspecting mods (optional, toggleable <em>in</em> the inspect pane with a new button)</li>\n<li>See stats change as you add/remove mods, with color-coded deltas</li>\n<li>Highlight empty slots when you drag items that can be attached there</li>\n<li>Remember last window size when you change it, with restore button to resize to default</li>\n<li>Move left and move right buttons + keybinds to quickly snap inspect windows to the left or right half of the screen, for easy comparisons</li>\n<li>Auto-expand descriptions when possible (great for showing extra text from mods like Item Info)</li>\n<li>Quickbinds will not be removed from items you keep when you die</li>\n<li>Compatible slots are now outlined in green, like the paper doll already does</li>\n<li>Resize fonts for stats and description</li>\n</ul>\n<h4>Traders</h4>\n<ul>\n<li>Autoswitch between buy and sell when you click trader items or control-click your own items</li>\n<li>Autoselect quest items when turning in</li>\n<li>Repair window remembers last used repairer, and actually updates the repair amount when you switch repairers</li>\n<li>More icons on trader avatars - when their only new quests are operational (dailies/weeklies) and when you have items you could turn in</li>\n<li>Trader window remembers which tab you had open, and can optionally remember which trader you last looked at even when you completely close the trading screen</li>\n</ul>\n<h4>Flea market</h4>\n<ul>\n<li>Auto-expand categories when there\u2019s space to do so</li>\n<li>Locked trader item tooltip reveals which specific quest will unlock it</li>\n<li>Option to keep the Add Offer window open after placing your offer</li>\n<li>Set prices in the Add Offer window by clicking the min/avg/max market prices (multiplies for bulk orders)</li>\n<li>Autoselect Similar checkbox is remembered across sessions and application restarts</li>\n<li>Replace barter offers icons with actual item images, plus owned/required counts on expansion, \u2728 color-coded if you own the items needed</li>\n<li>Clears filters for you when you type in search bar and there\u2019s no match</li>\n</ul>\n<h4>Weapon modding/presets</h4>\n<ul>\n<li>Weapons can grow left or up, not just right and down</li>\n<li>Enable zooming with mousewheel</li>\n<li>Skip needless unsaved changes warnings when not actually closing the screen</li>\n<li>Saving the current preset is now one-click; you don\u2019t have to confirm the name. That\u2019s what Save As\u2026 is for.</li>\n<li>Open build window can filter out stock presets so you only see yours</li>\n</ul>\n<h4>Hideout</h4>\n<ul>\n<li>Remember window state when you leave hideout without closing (e.g. when searching for a recipe item on flea)</li>\n<li>Tools used in crafting will be returned to the container they were in</li>\n</ul>\n<h4>In raid</h4>\n<ul>\n<li>Quickbind tactical devices to control them individually</li>\n<li>Option to make unequipped weapons moddable in raid, optionally with multitool</li>\n<li>Reloading will swap magazines in-place, instead of dropping them on the ground when there\u2019s no room</li>\n<li>Grenade (and consumable) quickbinds will transfer to the next grenade of the same type after throwing</li>\n<li>Queued input\n<ul>\n<li>Holding sprint before forward will work (you will sprint)</li>\n<li>Holding certain actions (aim, reload, hold breath) during some other action will cause you to immediately do it when the current action is complete</li>\n</ul>\n</li>\n</ul>\n<h4>Mail</h4>\n<ul>\n<li>The messages window stays open when you return from transfering items</li>\n<li>Attachment icon now tracks attachments, not just <em>new</em> attachments.</li>\n</ul>\n<h4>Misc</h4>\n<ul>\n<li>Confirm dialogs with Return/Enter/Space instead of just Y</li>\n<li>Close modal dialogs by clicking outside of them</li>\n<li>Sensible autofocus of textboxes in various dialogs</li>\n<li>Unlock cursor in windowed/borderless modes when in a menu</li>\n<li>Many little UI tweaks to tighten up the graphics</li>\n</ul>\n<h3>Fixes</h3>\n<p>Fixing bugs that B** won\u2019t or can\u2019t</p>\n<h4>Inventory</h4>\n<ul>\n<li>Fix item tooltips disapparing if your mouse goes through the Quest/FoundInRaid icon (great for MoreCheckmarks)</li>\n<li>Fix windows appearing partially offscreen</li>\n<li>Fix modding/preset UI breaking when you click not allowed (red outlined) items</li>\n<li>Fix trader items not showing \u201cCompatible with Available\u201d with your items</li>\n<li>Fix selected barter items not being highlighted correctly</li>\n<li>Disassemble weapon actually works</li>\n<li>Debounce duplicate quest notifications and their ear-splitting sounds</li>\n<li>Fix Revolvers/Multibarrel guns not handling most ammo interactions</li>\n<li>Block alphanumeric keybinds when you\u2019re typing in a textbox</li>\n</ul>\n<h4>Weapon Modding</h4>\n<ul>\n<li>Fix Edit Build -&gt; Assemble not handling duplicate mods or putting mods in the wrong slot</li>\n</ul>\n<h4>Hideout</h4>\n<ul>\n<li>Fix top-down camera panning around when you\u2019re in a menu</li>\n</ul>\n<h4>In raid</h4>\n<ul>\n<li>Remove the unimplemented door actions like \u201cBang &amp; clear\u201d that are never going to happen</li>\n<li>Fix the keybind for weapons always showing up as 1, 2, and 3. Now shows your actual keybind like every other slot</li>\n<li>Fix issue where clicking the eye at the wrong time during raid load would break your equipment UI for the rest of the raid</li>\n<li>Fix not being able to pay the BTR man with money from your backpack or secure container if you happened to be carrying grenades</li>\n<li>Fix not putting your compass away when swapping weapons</li>\n</ul>\n<h4>Mail</h4>\n<ul>\n<li>Skips \u201cYou can return to this later\u201d warnings when not transferring all items</li>\n<li>\u201cReceive All\u201d button no longer shows up when there is nothing to receive</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Installation</div>\n<div class=\"tab-content\"><p>Like almost every mod here, extract the zip archive into your SPT directory.</p>\n<p>Recommend using <a target=\"_blank\" class=\"external-link\" href=\"https://www.7-zip.org/\" rel=\"noreferrer noopener\">7zip</a> to extract and install this mod.</p>\n<p>Example (thanks DrakiaXYZ for the gif)</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/3N6gTe2.gif\" alt=\"3N6gTe2.gif\" /></p>\n<h3><strong>Important Note for Fika users</strong></h3>\n<p>Several of the features of UI Fixes make changes to inventory operations that are sent between multiple clients. You <strong>MUST</strong> install the same version of UI Fixes on all clients, including the dedicated client if you\u2019re using that. At raid start, certain settings that must be in sync will be synced from the host client to all other clients, and only the host can change those settings (and they can at any time during raid).</p>\n<p>If you don\u2019t use Fika or don\u2019t know what that is, don\u2019t worry about it.</p>\n<h3>Uninstallation</h3>\n<p>To uninstall, simply delete <strong>Tyfon.UIFixes.dll</strong> and <strong>Tyfon.UIFixes.Net.dll</strong> from <strong>&lt;your SPT folder&gt;/BepInEx/plugins,</strong> and the <strong>Tyfon.UIFixes.Server</strong> folder from <strong>&lt;your SPT folder&gt;/SPT_Runtime/user/mods</strong></p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Configuration</div>\n<div class=\"tab-content\"><p>Configuration is available through the in-game F12 menu. Settings should be self-explanatory, be sure to mouse-over the name to see a more detailed tooltip if you\u2019re confused.</p>\n<p>There are some feature toggles that only show up if you select \u201cAdvanced Settings\u201d at the top of the F12 menu. Check these if you don\u2019t see a toggle you want, but most people won\u2019t need those.</p>\n<p>Default client settings are show below:</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/TvzyOED.png\" alt=\"TvzyOED.png\" /></p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Interop</div>\n<div class=\"tab-content\"><p>Other mods can interop with UI Fixes\u2019 multi-select functionality! See the <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/tyfon7/UIFixes\" rel=\"noreferrer noopener\">readme</a> for details.</p>\n<p>Other addon authors - UI Fixes touches a <em>lot</em> of code in the client. If you think there\u2019s a conflict with your mod and UIFixes, please feel free to reach out. I\u2019m happy to help our mods work together!</p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Troubleshooting</div>\n<div class=\"tab-content\"><p><strong>Q: Keybinds won\u2019t work, or typing in textboxes won\u2019t work</strong></p>\n<p>A: When your focus is in a textbox and your mouse is over an item, I have to pick which one to handle the keypress. Currently it will prefer keybinds, so textboxes won\u2019t work if your mouse is over an item. If you\u2019d prefer the opposite, where keybinds won\u2019t work if any textbox has focus, enabled \u201cAdvanced Settings\u201d at the top of the F12 menu and toggle \u201cBlock Text Inputs on Item Mouseover\u201d\n<br />\n<br />\n<br />\n<strong>Q: When I start a raid with Fika, there\u2019s a warning about a missing sync?</strong></p>\n<p>A: You didn\u2019t install UIFixes on your host. UIFixes is required on ALL clients, including the dedicated host if you\u2019re using that.\n<br />\n<br />\n<br />\n<strong>Q: Some of the settings in F12 menu aren\u2019t changing! Nothing happens when I click them</strong></p>\n<p>A: Some settings depend on others - read the tooltips. Some settings are forced off if you\u2019re using Fika, and if you\u2019re in a Fika raid, some settings are locked to the host\u2019s value.\n<br />\n<br />\n<br />\n<strong>Q: I found a bug !</strong></p>\n<p>A: Open an <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/tyfon7/UIFixes/issues\" rel=\"noreferrer noopener\">issue</a> or make a comment here. Please include logs if possible!</p></div></div></div>\n<p>If you\u2019d like to support my work, you can <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/tyfon\" rel=\"noreferrer noopener\">buy me a coffee</a> \u2615</p>\n",
+   "description_html": "<p>UI Fixes</p>\n<p>T*****\u2018s interface is full of annoyances, but it doesn\u2019t have to be. This mod aims to fix at least some of them.</p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Features</div>\n<div class=\"tab-content\"><p>\u2728 Recently added</p>\n<h3>Added features</h3>\n<p>New UI features enabled by this mod</p>\n<ul>\n<li>Multiselect - select multiple items at once with shift-click or dragging a selection box\n<ul>\n<li>Move items around as a group, drop them into containers, place them in grids</li>\n<li>Ctrl-click and Alt-click to quick move or equip them all. Compatible with Quick Move to Containers!</li>\n<li>Context menu to insure, equip, unequip, load/unload ammo, install/uninstall, pin, and lock all at once</li>\n</ul>\n</li>\n<li>Swap items in place - drag one item over another to swap their locations!</li>\n<li>Flea market history - press the new back button to go back to the previous search</li>\n<li>Linked flea search from empty slots - find mods that fit that specific slot</li>\n<li>Keybinds for most context menu actions</li>\n<li>Toggle/Hold input - tap a key for \u201cPress\u201d mechanics, hold the key for \u201cContinuous\u201d mechanics\n<ul>\n<li>Can be set for aiming, sprinting, tactical devices, headlights, and goggles/faceshields, and interact/place quest item</li>\n</ul>\n</li>\n<li>Highlight quick-move and quick-equip destination</li>\n<li>Window manager remembers the status and location of open containers and inspect windows</li>\n</ul>\n<h3>Improved features</h3>\n<p>Existing SPT features made better</p>\n<h4>Inventory</h4>\n<ul>\n<li>Modify equipped weapons</li>\n<li>Rebind Home/End, PageUp/PageDown to work like you would expect</li>\n<li>Customizable mouse scrolling speed</li>\n<li>Moving stacks into containers always moves entire stack</li>\n<li>Items made stackable by other mods follow normal stacking behavior</li>\n<li>Synchronize stash scroll position everywhere your stash is visible</li>\n<li>Insure and repair items directly from the context menu</li>\n<li>Load ammo via context menu <em>in raid</em></li>\n<li>Load ammo preset will pull ammo from inventory, not just stash</li>\n<li>Multi-grid vest and backpack grids reordered to be left to right, top to bottom</li>\n<li>Vests and backpacks are taggable</li>\n<li>Sorting will stack and combine stacks of items</li>\n<li>Open-&gt;All context flyout that will recursively open nested containers to get at that innermost bag</li>\n<li>Improve modding/preset dropdown usability</li>\n<li>Enable context menu while searching (off by default)</li>\n<li>Search In Stash - add item context menu to open the search window for that item</li>\n<li>Rebind rotate key</li>\n</ul>\n<h4>Inspect windows</h4>\n<ul>\n<li>Show the total stats (including sub-mods) when inspecting mods (optional, toggleable <em>in</em> the inspect pane with a new button)</li>\n<li>See stats change as you add/remove mods, with color-coded deltas</li>\n<li>Highlight empty slots when you drag items that can be attached there</li>\n<li>Remember last window size when you change it, with restore button to resize to default</li>\n<li>Move left and move right buttons + keybinds to quickly snap inspect windows to the left or right half of the screen, for easy comparisons</li>\n<li>Auto-expand descriptions when possible (great for showing extra text from mods like Item Info)</li>\n<li>Quickbinds will not be removed from items you keep when you die</li>\n<li>Compatible slots are now outlined in green, like the paper doll already does</li>\n<li>Resize fonts for stats and description</li>\n</ul>\n<h4>Traders</h4>\n<ul>\n<li>Autoswitch between buy and sell when you click trader items or control-click your own items</li>\n<li>Autoselect quest items when turning in</li>\n<li>Repair window remembers last used repairer, and actually updates the repair amount when you switch repairers</li>\n<li>More icons on trader avatars - when their only new quests are operational (dailies/weeklies) and when you have items you could turn in</li>\n<li>Trader window remembers which tab you had open, and can optionally remember which trader you last looked at even when you completely close the trading screen</li>\n</ul>\n<h4>Flea market</h4>\n<ul>\n<li>Auto-expand categories when there\u2019s space to do so</li>\n<li>Locked trader item tooltip reveals which specific quest will unlock it</li>\n<li>Option to keep the Add Offer window open after placing your offer</li>\n<li>Set prices in the Add Offer window by clicking the min/avg/max market prices (multiplies for bulk orders)</li>\n<li>Autoselect Similar checkbox is remembered across sessions and application restarts</li>\n<li>Replace barter offers icons with actual item images, plus owned/required counts on expansion, \u2728 color-coded if you own the items needed</li>\n<li>Clears filters for you when you type in search bar and there\u2019s no match</li>\n</ul>\n<h4>Weapon modding/presets</h4>\n<ul>\n<li>Weapons can grow left or up, not just right and down</li>\n<li>Enable zooming with mousewheel</li>\n<li>Skip needless unsaved changes warnings when not actually closing the screen</li>\n<li>Saving the current preset is now one-click; you don\u2019t have to confirm the name. That\u2019s what Save As\u2026 is for.</li>\n<li>Open build window can filter out stock presets so you only see yours</li>\n</ul>\n<h4>Hideout</h4>\n<ul>\n<li>Remember window state when you leave hideout without closing (e.g. when searching for a recipe item on flea)</li>\n<li>Tools used in crafting will be returned to the container they were in</li>\n</ul>\n<h4>In raid</h4>\n<ul>\n<li>Quickbind tactical devices to control them individually</li>\n<li>Option to make unequipped weapons moddable in raid, optionally with multitool</li>\n<li>Reloading will swap magazines in-place, instead of dropping them on the ground when there\u2019s no room</li>\n<li>Grenade (and consumable) quickbinds will transfer to the next grenade of the same type after throwing</li>\n<li>Queued input\n<ul>\n<li>Holding sprint before forward will work (you will sprint)</li>\n<li>Holding certain actions (aim, reload, hold breath) during some other action will cause you to immediately do it when the current action is complete</li>\n</ul>\n</li>\n</ul>\n<h4>Mail</h4>\n<ul>\n<li>The messages window stays open when you return from transfering items</li>\n<li>Attachment icon now tracks attachments, not just <em>new</em> attachments.</li>\n</ul>\n<h4>Misc</h4>\n<ul>\n<li>Confirm dialogs with Return/Enter/Space instead of just Y</li>\n<li>Close modal dialogs by clicking outside of them</li>\n<li>Sensible autofocus of textboxes in various dialogs</li>\n<li>Unlock cursor in windowed/borderless modes when in a menu</li>\n<li>Many little UI tweaks to tighten up the graphics</li>\n</ul>\n<h3>Fixes</h3>\n<p>Fixing bugs that B** won\u2019t or can\u2019t</p>\n<h4>Inventory</h4>\n<ul>\n<li>Fix item tooltips disapparing if your mouse goes through the Quest/FoundInRaid icon (great for MoreCheckmarks)</li>\n<li>Fix windows appearing partially offscreen</li>\n<li>Fix modding/preset UI breaking when you click not allowed (red outlined) items</li>\n<li>Fix trader items not showing \u201cCompatible with Available\u201d with your items</li>\n<li>Fix selected barter items not being highlighted correctly</li>\n<li>Disassemble weapon actually works</li>\n<li>Debounce duplicate quest notifications and their ear-splitting sounds</li>\n<li>Fix Revolvers/Multibarrel guns not handling most ammo interactions</li>\n<li>Block alphanumeric keybinds when you\u2019re typing in a textbox</li>\n<li>\u2728 Fix Edit Build screen not allowing you to select a weapon</li>\n</ul>\n<h4>Weapon Modding</h4>\n<ul>\n<li>Fix Edit Build -&gt; Assemble not handling duplicate mods or putting mods in the wrong slot</li>\n</ul>\n<h4>Hideout</h4>\n<ul>\n<li>Fix top-down camera panning around when you\u2019re in a menu</li>\n</ul>\n<h4>In raid</h4>\n<ul>\n<li>Remove the unimplemented door actions like \u201cBang &amp; clear\u201d that are never going to happen</li>\n<li>Fix the keybind for weapons always showing up as 1, 2, and 3. Now shows your actual keybind like every other slot</li>\n<li>Fix issue where clicking the eye at the wrong time during raid load would break your equipment UI for the rest of the raid</li>\n<li>Fix not being able to pay the BTR man with money from your backpack or secure container if you happened to be carrying grenades</li>\n<li>Fix not putting your compass away when swapping weapons</li>\n</ul>\n<h4>Mail</h4>\n<ul>\n<li>Skips \u201cYou can return to this later\u201d warnings when not transferring all items</li>\n<li>\u201cReceive All\u201d button no longer shows up when there is nothing to receive</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Installation</div>\n<div class=\"tab-content\"><p>Like almost every mod here, extract the zip archive into your SPT directory.</p>\n<p>Recommend using <a target=\"_blank\" class=\"external-link\" href=\"https://www.7-zip.org/\" rel=\"noreferrer noopener\">7zip</a> to extract and install this mod.</p>\n<p>Example (thanks DrakiaXYZ for the gif)</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/3N6gTe2.gif\" alt=\"3N6gTe2.gif\" /></p>\n<h3><strong>Important Note for Fika users</strong></h3>\n<p>Several of the features of UI Fixes make changes to inventory operations that are sent between multiple clients. You <strong>MUST</strong> install the same version of UI Fixes on all clients, including the dedicated client if you\u2019re using that. At raid start, certain settings that must be in sync will be synced from the host client to all other clients, and only the host can change those settings (and they can at any time during raid).</p>\n<p>If you don\u2019t use Fika or don\u2019t know what that is, don\u2019t worry about it.</p>\n<h3>Uninstallation</h3>\n<p>To uninstall, simply delete <strong>Tyfon.UIFixes.dll</strong> and <strong>Tyfon.UIFixes.Net.dll</strong> from <strong>&lt;your SPT folder&gt;/BepInEx/plugins,</strong> and the <strong>Tyfon.UIFixes.Server</strong> folder from <strong>&lt;your SPT folder&gt;/SPT_Runtime/user/mods</strong></p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Configuration</div>\n<div class=\"tab-content\"><p>Configuration is available through the in-game F12 menu. Settings should be self-explanatory, be sure to mouse-over the name to see a more detailed tooltip if you\u2019re confused.</p>\n<p>There are some feature toggles that only show up if you select \u201cAdvanced Settings\u201d at the top of the F12 menu. Check these if you don\u2019t see a toggle you want, but most people won\u2019t need those.</p>\n<p>Default client settings are show below:</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/TvzyOED.png\" alt=\"TvzyOED.png\" /></p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Interop</div>\n<div class=\"tab-content\"><p>Other mods can interop with UI Fixes\u2019 multi-select functionality! See the <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/tyfon7/UIFixes\" rel=\"noreferrer noopener\">readme</a> for details.</p>\n<p>Other addon authors - UI Fixes touches a <em>lot</em> of code in the client. If you think there\u2019s a conflict with your mod and UIFixes, please feel free to reach out. I\u2019m happy to help our mods work together!</p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Troubleshooting</div>\n<div class=\"tab-content\"><p><strong>Q: Keybinds won\u2019t work, or typing in textboxes won\u2019t work</strong></p>\n<p>A: When your focus is in a textbox and your mouse is over an item, I have to pick which one to handle the keypress. Currently it will prefer keybinds, so textboxes won\u2019t work if your mouse is over an item. If you\u2019d prefer the opposite, where keybinds won\u2019t work if any textbox has focus, enabled \u201cAdvanced Settings\u201d at the top of the F12 menu and toggle \u201cBlock Text Inputs on Item Mouseover\u201d\n<br />\n<br />\n<br />\n<strong>Q: When I start a raid with Fika, there\u2019s a warning about a missing sync?</strong></p>\n<p>A: You didn\u2019t install UIFixes on your host. UIFixes is required on ALL clients, including the dedicated host if you\u2019re using that.\n<br />\n<br />\n<br />\n<strong>Q: Some of the settings in F12 menu aren\u2019t changing! Nothing happens when I click them</strong></p>\n<p>A: Some settings depend on others - read the tooltips. Some settings are forced off if you\u2019re using Fika, and if you\u2019re in a Fika raid, some settings are locked to the host\u2019s value.\n<br />\n<br />\n<br />\n<strong>Q: I found a bug !</strong></p>\n<p>A: Open an <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/tyfon7/UIFixes/issues\" rel=\"noreferrer noopener\">issue</a> or make a comment here. Please include logs if possible!</p></div></div></div>\n<p>If you\u2019d like to support my work, you can <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/tyfon\" rel=\"noreferrer noopener\">buy me a coffee</a> \u2615</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/1860.png",
    "forge_url": "https://sp-mod.com/mod/1342/ui-fixes",
-   "downloads": 445300,
-   "favourites": 591,
+   "downloads": 447777,
+   "favourites": 612,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -53964,12 +53964,24 @@
    ],
    "versions": [
     {
+     "id": 15676,
+     "version": "6.0.4",
+     "description": "<p>Fixed you-know-who\u2019s bug where the Edit Build screen never finds weapon bodies or enables the \u201cSelect Weapon\u201d button.</p>\n",
+     "spt_constraint": "~4.1",
+     "fika": "compatible",
+     "downloads": 104,
+     "size": 184465,
+     "link": "https://sp-mod.com/mod/download/1342/ui-fixes/6.0.4",
+     "published_at": "2026-09-29T21:37:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 15632,
      "version": "6.0.3",
      "description": "<ul>\n<li>Fixed multiselect drag handling of containers with asymmetric grids. These only occurred in modded containers.</li>\n<li>Quick moving (ctrl-clicking) multiselections will now stack items, consistent with dragging them onto a container. If you don\u2019t like this, disable \u201cMerge stacks on quick move\u201d</li>\n</ul>\n",
      "spt_constraint": "~4.1",
      "fika": "compatible",
-     "downloads": 455,
+     "downloads": 2701,
      "size": 184090,
      "link": "https://sp-mod.com/mod/download/1342/ui-fixes/6.0.3",
      "published_at": "2026-09-27T17:46:00.000000Z",
@@ -53981,7 +53993,7 @@
      "description": "<ul>\n<li>Fixed \u201cAssemble Weapon\u201d not actually installing some top level attachments.</li>\n<li>Fixed BSG bug where Edit Build couldn\u2019t tell a weapon was already built if it contained two copies of any attachment.</li>\n</ul>\n",
      "spt_constraint": "~4.1",
      "fika": "compatible",
-     "downloads": 18743,
+     "downloads": 18791,
      "size": 184024,
      "link": "https://sp-mod.com/mod/download/1342/ui-fixes/6.0.2",
      "published_at": "2026-08-27T23:18:00.000000Z",
@@ -53993,7 +54005,7 @@
      "description": "<ul>\n<li>Fixed queued input reload not working</li>\n<li>Fixed BSG bug where switching between two traders with services, and the service tab active, would show a blank page</li>\n</ul>\n",
      "spt_constraint": "~4.1",
      "fika": "compatible",
-     "downloads": 10019,
+     "downloads": 10023,
      "size": 183678,
      "link": "https://sp-mod.com/mod/download/1342/ui-fixes/6.0.1",
      "published_at": "2026-08-10T01:22:00.000000Z",
@@ -54017,7 +54029,7 @@
      "description": "<ul>\n<li>Fix cursor getting stuck \u201clocked\u201d in the weapon modding screen</li>\n<li>Fix player model panning/rotating at silly speeds when you change clothing many times</li>\n</ul>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 22365,
+     "downloads": 22423,
      "size": 191499,
      "link": "https://sp-mod.com/mod/download/1342/ui-fixes/5.3.11",
      "published_at": "2026-07-11T17:01:00.000000Z",
@@ -54077,7 +54089,7 @@
      "description": "<p>Rough day. Hotfix 2 - fix unnecessary rollback code breaking modding selector</p>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 8258,
+     "downloads": 8260,
      "size": 187356,
      "link": "https://sp-mod.com/mod/download/1342/ui-fixes/5.3.6",
      "published_at": "2026-02-23T07:04:00.000000Z",
@@ -54089,7 +54101,7 @@
      "description": "<p>Hotfix null reference in add offer window</p>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 577,
+     "downloads": 578,
      "size": 187496,
      "link": "https://sp-mod.com/mod/download/1342/ui-fixes/5.3.5",
      "published_at": "2026-02-22T22:10:00.000000Z",
@@ -54161,7 +54173,7 @@
      "description": "<h3>New stuff \ud83d\ude80</h3>\n<ul>\n<li>Backported some 1.0 input changes.\n<ul>\n<li>Holding sprint before pressing forward will make you start sprinting</li>\n<li>Holding aim while performing another action will start aiming as soon as the action is complete</li>\n<li>Holding reload while performing another action will start the reload as soon as the action is complete</li>\n<li>The above will only work if the keybind is set to \u201cPress\u201d or \u201cContinuous\u201d. Reload is \u201cRelease\u201d by default (to allow mag selection UI). Works with UI Fixes\u2019 \u201cToggle/Hold\u201d as well.</li>\n<li>In settings as \u201cQueue Held Inputs\u201d, if you want to disable it for some reason</li>\n</ul>\n</li>\n<li>Block hideout overhead camera zoom when mouse is on another monitor</li>\n</ul>\n<h3>Bug fixes \ud83e\udeb3</h3>\n<ul>\n<li>Fixed empty slot context menu randomly getting extra buttons</li>\n<li>Fixed BSG bug: Assembling builds didn\u2019t properly handle duplicate items (e.g. multiple rails of the same name)</li>\n<li>Fixed BSG bug: Toggling goggles with a compass in your hand will now properly put the compass away</li>\n<li>Fixed BSG bug: Blocked duplicate quest status notifications within a single second</li>\n<li>Fixed some erroneous log spam</li>\n<li>Fixed \u201cgrow up/left\u201d corner case (literally in the corner) that caused items to temporarily disappear</li>\n</ul>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 3295,
+     "downloads": 3297,
      "size": 176597,
      "link": "https://sp-mod.com/mod/download/1342/ui-fixes/5.2.0",
      "published_at": "2026-01-13T21:05:00.000000Z",
@@ -54209,7 +54221,7 @@
      "description": "<ul>\n<li>Fixed dragging multiple stacks of ammo into a magazine <em>in raid</em> stopping after the first stack is loaded.</li>\n<li>Fixed a class of bugs around long-running multiselect operations (like the one above). Generally speaking, doing other actions will now cancel the remaining operations, since bugs and weirdness happened otherwise.</li>\n</ul>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 13142,
+     "downloads": 13143,
      "size": 159567,
      "link": "https://sp-mod.com/mod/download/1342/ui-fixes/5.0.6",
      "published_at": "2025-11-16T19:46:00.000000Z",
@@ -54293,7 +54305,7 @@
      "description": "<p>New stuff:</p>\n<ul>\n<li>Change the behavior of hideout upgrade auto-wishlisting, with 3 options:</li>\n</ul>\n<ol>\n<li>Normal: This is vanilla EFT behavior, and items will not be wishlisted if there are ANY other requirements missing, like rep, or skills, or other hideout areas</li>\n<li>Visible upgrades: The UI Fixes default. If you can see the upgrade, the item is listed. This means the area has an icon in the hideout, and items will be listed even if you lack rep or skill or something like that.</li>\n<li>All upgrades: Items will be wishlisted even for areas that you can\u2019t see yet and can only navigate to using the area selector on the bottom of the hideout screen.</li>\n</ol>\n<p>Bug fixes:</p>\n<ul>\n<li>Multi-select selection box will no longer select the player\u2019s dogtag</li>\n</ul>\n",
      "spt_constraint": "~3.11.0",
      "fika": "unknown",
-     "downloads": 10081,
+     "downloads": 10084,
      "size": null,
      "link": "https://sp-mod.com/mod/download/1342/ui-fixes/4.2.3",
      "published_at": "2025-10-02T08:33:00.000000Z",
@@ -54329,7 +54341,7 @@
      "description": "<p>New stuff \ud83d\udca5</p>\n<p>- Changing attachments through modding screen will use swap (the old item will go where the new item was), if possible</p>\n<p>- Out of Stock checkbox will persist through game restarts</p>\n<p>- Add hot-key to multi-select all items of the type under your mouse, defaults to ctrl-A</p>\n<p>- Prevent BSG\u2019s mousewheel zoom affecting your gun\u2019s scope while you are scrolling your inventory</p>\n<p>Bug fixes \ud83e\udeb3</p>\n<p>- Prevent item hotkeys from affecting the item under your cursor while you are dragging a different item around</p>\n<p>- Error messages around in-raid modding should show correct (more descriptive) error</p>\n<p>- Fika multitool check for in-raid modding should now work properly when the gun is on a dead body.</p>\n<p>Note: This is the last version that works with SPT 3.10.x</p>\n",
      "spt_constraint": "~3.10.0",
      "fika": "unknown",
-     "downloads": 12081,
+     "downloads": 12082,
      "size": null,
      "link": "https://sp-mod.com/mod/download/1342/ui-fixes/3.1.3",
      "published_at": "2025-02-21T17:34:06.000000Z",
@@ -54444,7 +54456,7 @@
      "dependencies": []
     }
    ],
-   "latest_version": "6.0.3",
+   "latest_version": "6.0.4",
    "spt_constraint": "~4.1",
    "all_spt_constraints": [
     "3.8.0",
@@ -54461,7 +54473,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2024-04-19T07:23:00.000000Z",
-   "updated_at": "2026-09-27T18:13:00.000000Z",
+   "updated_at": "2026-09-29T21:45:15.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -172245,8 +172257,8 @@
    "description_html": "<p>Adds a compact rangefinder readout to magnified optic scopes. The display is rendered inside the scope view, follows the optic while aiming, and can be adjusted per scope.</p>\n<p>Also adds auto zero: zero the optic to the measured distance, to the meter, with no distance limit, and accounting for the loaded ammo, weapon accuracy, and every other dynamic factor the game itself uses for calibration. No more picking the nearest fixed dial step.</p>\n<p>The mod includes layout presets for vanilla scopes and an in-game editor (F8) for fine tuning. The look of the readout is fully styleable - game, system, and custom fonts (several display fonts included), glow, colors, and a second zeroing row - with one-click style presets (globally or per scope) and a live preview, all in that one editor window.</p>\n<h2>Features</h2>\n<ul>\n<li>Range readout while aiming through magnified optics</li>\n<li>Scope-bound display that moves with the optic view</li>\n<li>Works with all optic scopes, including thermal and night vision, plus configurable non-magnified sights (the Milkor M2A1 reflex by default, for grenade launchers)</li>\n<li>Included vanilla scope layout presets</li>\n<li>Per-scope user layout overrides with <code>OffsetX</code>, <code>OffsetY</code>, and <code>Scale</code></li>\n<li>In-game rangefinder editor (F8): per-scope layout with live editing, the style preset browser, and every style option in one window</li>\n<li>Optional Wilcox RAPTAR ES requirement</li>\n<li>Optional requirement for the attached RAPTAR to be switched on</li>\n<li>RAPTAR-style <code>0123</code> or decimal <code>045.0</code> readout format</li>\n<li>Meters/yards unit toggle with optional unit suffix, like on real rangefinders</li>\n<li>Optional zeroing line: a second readout row showing the currently effective zero (<code>RNG</code>/<code>ZRO</code> prefixes configurable); the game\u2019s corner zeroing panel stays hidden while it is visible</li>\n<li>Style presets: shipped looks applied with one click - to all scopes or to a single scope - own looks saved and managed from the same list</li>\n<li>Renders with the game\u2019s own Bender font (the RAPTAR display font) by default; system and custom fonts selectable</li>\n<li>Ships a curated set of display fonts (7-/14-/16-segment, cockpit, tactical/HUD, VCR, terminal; licensed under SIL OFL 1.1 or CC0 1.0), selectable from a font picker with live preview in the editor</li>\n<li>Crisp SDF text at any magnification with adjustable thickness, spacing, and a layered soft glow</li>\n<li>All characters are rendered monospaced, so the readout width never wobbles while digits change</li>\n<li>Configurable text and background color, transparency, and size</li>\n<li>Optional background plate behind the readout</li>\n<li>Auto zero: precise, meter-accurate zeroing to the measured distance, per hotkey or continuously, instead of the nearest fixed dial step</li>\n<li>Optional predicted bullet trajectory and impact dispersion ring, a great way to build a feel for Tushonka\u2019s ballistics</li>\n<li>Makes BetterZeroing, ExtendedZeroRanges, and AutoRanging unnecessary; compatible with all three if installed anyway (see Notes)</li>\n<li>Fallback screen overlay mode for PiP-Disabler compatibility</li>\n</ul>\n<h2>Installation</h2>\n<p>As usual, unzip to your SPT directory.</p>\n<p>All configuration options explained in <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/maschine34675/ScopeRangefinder/blob/main/README.md\" rel=\"noreferrer noopener\">README.md</a></p>\n<h2><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/maschine34675/ScopeRangefinder/refs/heads/main/examplepictures/sr7.png\" alt=\"example\" /></h2>\n",
    "thumbnail": "https://files.sp-mod.com/mods/Nt8bULEEfs4nKB1cM6sFAsRN5YMPtnLxu1kcwdtX.png",
    "forge_url": "https://sp-mod.com/mod/2735/scoperangefinder",
-   "downloads": 11253,
-   "favourites": 87,
+   "downloads": 13378,
+   "favourites": 102,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -172274,12 +172286,24 @@
    ],
    "versions": [
     {
+     "id": 15675,
+     "version": "3.5.0",
+     "description": "<ul>\n<li>Added: Increased maximum vanilla zeroing distance to 1000m (Default: off)</li>\n<li>Added: Make vanilla zeroing use the currently chambered round instead of the default ammo (Default: off)</li>\n\n</ul>\n<p>See full <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/maschine34675/ScopeRangefinder/blob/main/CHANGELOG.md\" rel=\"noreferrer noopener\">CHANGELOG.md</a></p>\n",
+     "spt_constraint": "~4.1.0",
+     "fika": "compatible",
+     "downloads": 130,
+     "size": 549247,
+     "link": "https://sp-mod.com/mod/download/2735/scoperangefinder/3.5.0",
+     "published_at": "2026-09-29T18:52:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 15314,
      "version": "3.4.0",
      "description": "<ul>\n<li>Added: The readout can now be placed by dragging it with the mouse</li>\n<li>Added: The ballistics row\u2019s prefixes are now configurable like the others</li>\n<li>Added: Web Style Studio - an optional, comfortable second view of the style editor, opened from the F8 window\u2019s Open Style Studio button when the <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2879/weboverlay\" rel=\"noreferrer noopener\">Anvil-WebOverlay</a> mod (1.11.0 or newer) is installed. A real browser window with: a preset gallery that shows every shipped and saved preset as a rendered thumbnail of the actual readout, one click to apply it to all scopes or to the scope you are aiming through; a live preview; every Readout, Text, and Background option as proper controls with a real color picker, hex field, and sliders; a font gallery rendered in the actual font files from the fonts/ folder; and sharing with a paste box that validates and previews a shared style before importing it</li>\n</ul>\n<p>See full <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/maschine34675/ScopeRangefinder/blob/main/CHANGELOG.md\" rel=\"noreferrer noopener\">CHANGELOG.md</a></p>\n",
      "spt_constraint": "~4.1.0",
      "fika": "compatible",
-     "downloads": 88,
+     "downloads": 1894,
      "size": 544568,
      "link": "https://sp-mod.com/mod/download/2735/scoperangefinder/3.4.0",
      "published_at": "2026-09-10T08:31:00.000000Z",
@@ -172291,7 +172315,7 @@
      "description": "<ul>\n<li><strong>Added:</strong> measurement robustness: a hold time that bridges brief dropouts, NEAR/FAR scan modes like real rangefinders, and a freeze hotkey for single-shot readings - all off by default.</li>\n<li><strong>Added:</strong> Layouts can now anchor the readout to a corner or edge, so it grows away from the screen edge when rows are added; all shipped presets are pre-anchored.</li>\n<li><strong>Changed:</strong> The DIAL ballistics row is much narrower, HLD shows its mil unit, and hotkeys work while moving.</li>\n</ul>\n<p>See full <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/maschine34675/ScopeRangefinder/blob/main/CHANGELOG.md\" rel=\"noreferrer noopener\">CHANGELOG.md</a></p>\n",
      "spt_constraint": "~4.1.0",
      "fika": "compatible",
-     "downloads": 1856,
+     "downloads": 1863,
      "size": 520889,
      "link": "https://sp-mod.com/mod/download/2735/scoperangefinder/3.3.0",
      "published_at": "2026-08-23T17:33:00.000000Z",
@@ -172303,7 +172327,7 @@
      "description": "<ul>\n<li>\n<p><strong>Styling now lives in one place:</strong> press F8 to open the editor. It holds the preset browser (apply a look to all scopes or just the one you\u2019re aiming through), a live preview, the font picker and every style option. The F12 menu keeps only the non-style settings - your config and presets carry over unchanged.</p>\n</li>\n<li>\n<p><strong>New in the editor:</strong> assign style presets per scope (e.g. an mrad hold preset for the PM II, cm elsewhere) and share presets via clipboard (Copy / Paste Shared Preset).</p>\n</li>\n<li>\n<p>Every magnified optic now ships with a tuned layout preset (46 scopes, up from 31).</p>\n</li>\n<li>\n<p>The Milkor M2A1 reflex sight gets the readout too (screen overlay, configurable under Activation), and a small public API lets other mods read the measured distance.</p>\n</li>\n<li>\n<p>Fixes: the auto zero hotkey works while moving; the readout no longer twitches on segment fonts; the background plate shows in the preview.</p>\n</li>\n</ul>\n<p>See full <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/maschine34675/ScopeRangefinder/blob/main/CHANGELOG.md\" rel=\"noreferrer noopener\">CHANGELOG.md</a></p>\n",
      "spt_constraint": "~4.1.0",
      "fika": "compatible",
-     "downloads": 659,
+     "downloads": 662,
      "size": 516483,
      "link": "https://sp-mod.com/mod/download/2735/scoperangefinder/3.2.0",
      "published_at": "2026-08-21T15:24:00.000000Z",
@@ -172315,7 +172339,7 @@
      "description": "<ul>\n<li><strong>Added a ballistics line</strong> (off by default): a third readout row with a firing solution for the loaded round at the measured distance, computed with the game\u2019s own ballistics.<br />\n<code>Hold</code> shows the vertical hold versus the sight line the game currently applies (positive = hold above the target, mil-turret convention; units: milliradians, MOA, or centimeters at the measured distance via <code>Hold Unit</code>).<br />\n<code>Dial</code> recommends the best zeroing stop of the active sight plus the residual hold at that stop - picked in the angular domain, so it stays correct when the loaded round differs from the ammo the dial was calibrated with.<br />\nWhile auto zero drives the calibration, the dial recommendation gives way to the (then near-zero) hold readout.</li>\n</ul>\n<p>See full <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/maschine34675/ScopeRangefinder/blob/main/CHANGELOG.md\" rel=\"noreferrer noopener\">CHANGELOG.md</a></p>\n",
      "spt_constraint": "~4.1.0",
      "fika": "compatible",
-     "downloads": 653,
+     "downloads": 654,
      "size": 508000,
      "link": "https://sp-mod.com/mod/download/2735/scoperangefinder/3.1.0",
      "published_at": "2026-08-19T07:44:00.000000Z",
@@ -172327,7 +172351,7 @@
      "description": "<p>Port to SPT 4.1, no functional changes</p>\n",
      "spt_constraint": "~4.1.0",
      "fika": "compatible",
-     "downloads": 1522,
+     "downloads": 1525,
      "size": 502778,
      "link": "https://sp-mod.com/mod/download/2735/scoperangefinder/3.0.0",
      "published_at": "2026-08-08T09:57:00.000000Z",
@@ -172339,7 +172363,7 @@
      "description": "<ul>\n<li>Improved compatibility with PiP-Disabler</li>\n</ul>\n<p>See full <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/maschine34675/ScopeRangefinder/blob/main/CHANGELOG.md\" rel=\"noreferrer noopener\">CHANGELOG.md</a></p>\n",
      "spt_constraint": "~4.0.4",
      "fika": "compatible",
-     "downloads": 963,
+     "downloads": 1114,
      "size": 505404,
      "link": "https://sp-mod.com/mod/download/2735/scoperangefinder/2.3.1",
      "published_at": "2026-08-08T08:57:00.000000Z",
@@ -172351,7 +172375,7 @@
      "description": "<p><strong>Major visual update \u2013 now you can truly make the readout your own \ud83d\ude0e</strong></p>\n<ul>\n<li><strong>Fully styleable readout</strong> - the display now uses the game\u2019s own Bender font by default, razor-sharp at any magnification, with adjustable thickness, letter spacing, soft glow, black outline, and even chromatic aberration.</li>\n<li><strong>Style presets</strong> - 15 ready-made looks (authentic RAPTAR, LED segment displays, terminal green, cockpit HUDs\u2026) applied with one click in the F12 menu. Save and manage your own looks too, with a live preview while you tune.</li>\n<li><strong>More fonts</strong> - a curated set of display fonts ships with the mod; drop your own .ttf/.otf into the fonts folder and pick it from a dropdown.</li>\n<li><strong>Zeroing line</strong> - the readout can show your current zero as a second row (<code>RNG 0245</code> / <code>ZRO 0300</code>) right in the scope, replacing the corner panel.</li>\n<li><strong>Meters/yards toggle</strong> with optional unit suffix, like on real rangefinders.</li>\n<li><strong>Quality of life</strong> - readout now shows at any zoom level by default, and the layout editor got proper arrow buttons.</li>\n</ul>\n<p><strong>Note:</strong> on first launch after updating, your previous look is automatically saved as the preset <code>My Settings (pre-2.3.0)</code> and a showcase preset is applied - your old style is one click away in the Style Preset dropdown.</p>\n<p>See full <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/maschine34675/ScopeRangefinder/blob/main/CHANGELOG.md\" rel=\"noreferrer noopener\">CHANGELOG.md</a></p>\n",
      "spt_constraint": "~4.0.4",
      "fika": "compatible",
-     "downloads": 653,
+     "downloads": 668,
      "size": 504802,
      "link": "https://sp-mod.com/mod/download/2735/scoperangefinder/2.3.0",
      "published_at": "2026-08-02T17:10:00.000000Z",
@@ -172363,7 +172387,7 @@
      "description": "<ul>\n<li>Added auto zero: precise, meter-accurate zeroing to the measured distance, per hotkey or continuously, instead of the nearest fixed dial step</li>\n<li>Added optional predicted bullet trajectory and impact dispersion ring, a great way to build a feel for Tarkov\u2019s ballistics</li>\n</ul>\n<p>See full <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/maschine34675/ScopeRangefinder/blob/main/CHANGELOG.md\" rel=\"noreferrer noopener\">CHANGELOG.md</a></p>\n",
      "spt_constraint": "~4.0.4",
      "fika": "compatible",
-     "downloads": 2008,
+     "downloads": 2009,
      "size": 27980,
      "link": "https://sp-mod.com/mod/download/2735/scoperangefinder/2.1.0",
      "published_at": "2026-07-07T19:40:00.000000Z",
@@ -172387,7 +172411,7 @@
      "description": "<ul>\n<li>Added a new <code>ProjectedOverlay</code> render mode that can move with the optic view.</li>\n<li>Added per-scope layout presets for vanilla magnified scopes.</li>\n<li>Added an in-game layout editor for adjusting offset and scale while playing.</li>\n<li>Added optional Wilcox RAPTAR ES requirements, including active-state detection.</li>\n<li>Added configurable text color, background color, transparency, size, and font.</li>\n<li>Added experimental <code>InScopeCamera</code> render mode that actually renders inside the scope.</li>\n<li>Added compatibility handling for PiP-Disabler fallback behavior.</li>\n</ul>\n<p>See full <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/maschine34675/ScopeRangefinder/blob/main/CHANGELOG.md\" rel=\"noreferrer noopener\">CHANGELOG.md</a></p>\n",
      "spt_constraint": "~4.0.4",
      "fika": "compatible",
-     "downloads": 625,
+     "downloads": 631,
      "size": 21774,
      "link": "https://sp-mod.com/mod/download/2735/scoperangefinder/1.1.0",
      "published_at": "2026-06-27T20:02:00.000000Z",
@@ -172399,7 +172423,7 @@
      "description": "<p>Added compatibility for <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2667/picture-in-picture-disabler\" rel=\"noreferrer noopener\">Picture in Picture Disabler by Fiodor</a></p>\n",
      "spt_constraint": "~4.0.4",
      "fika": "compatible",
-     "downloads": 1183,
+     "downloads": 1184,
      "size": 9242,
      "link": "https://sp-mod.com/mod/download/2735/scoperangefinder/1.0.1",
      "published_at": "2026-06-13T14:57:00.000000Z",
@@ -172411,14 +172435,14 @@
      "description": "<p>Initial Release</p>\n",
      "spt_constraint": "~4.0.4",
      "fika": "compatible",
-     "downloads": 694,
+     "downloads": 695,
      "size": 7512,
      "link": "https://sp-mod.com/mod/download/2735/scoperangefinder/1.0.0",
      "published_at": "2026-06-11T14:02:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "3.4.0",
+   "latest_version": "3.5.0",
    "spt_constraint": "~4.1.0",
    "all_spt_constraints": [
     "~4.0.4",
@@ -172427,11 +172451,11 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-06-11T14:14:00.000000Z",
-   "updated_at": "2026-09-10T08:38:06.000000Z",
+   "updated_at": "2026-09-29T18:57:03.000000Z",
    "flags": {
     "contains_ads": false,
-    "contains_ai_content": true,
-    "ai_disclosure": "<p>AI was used to find the correct classes/methods to patch in the game\u2019s source code. The thumbnail is AI generated.</p>\n",
+    "contains_ai_content": false,
+    "ai_disclosure": "",
     "cheat_notice": false,
     "profile_binding_notice": false
    },
@@ -200954,8 +200978,8 @@
    "description_html": "<h1>Overview</h1>\n<p>A very small mod I created to customize trader loyalty level requirements since you\u2019re no longer able to play with modified SPT data files as of SPT 4.1. I feel leveling traders in SPT happens too quickly with how minimal the requirements are and how easy it can be to make shmoney, gain rep, and complete tasks.</p>\n<h2>Configuration</h2>\n<p>The config consists of three main properties: <code>\"minLevel\"</code>, <code>\"minSalesSum\"</code>, and <code>\"minStanding\"</code>. They\u2019re currently set to vanilla SPT values. These values can be changed in <code>config/traders.json</code>.</p>\n<ul>\n<li><code>\"minLevel\"</code> minimum account/player level required to level up with a trader</li>\n<li><code>\"minSalesSum\"</code> minimum amount of currency spent with a trader to level them up</li>\n<li><code>\"minStanding\"</code> minimum reputation/standing required with a trader to level them up</li>\n</ul>\n<p>Each trader is identified by their trader ID and in-game name. Loyalty levels are represented with numbers <code>\"1\"</code>, <code>\"2\"</code>, <code>\"3\"</code>, and <code>\"4\"</code>.</p>\n<blockquote>\n<p>don\u2019t add modded traders to the config. You can but It\u2019s just unnecessary\u2014just make your changes directly in whatever trader mod(s) you\u2019re using.</p>\n</blockquote>\n<h2>Installation</h2>\n<p>Installing is the same as every other server mod: extract the <code>\"TraderLevelRequirementsEditor\"</code> folder into <code>SPT_Runtime/user/mods</code></p>\n<h2>Compatibility and known issues</h2>\n<p>I didn\u2019t encounter any issues during my little bit of testing with my mod list of 59 mods. While I don\u2019t see how this could cause any issues considering the mod\u2019s simplicity and what it does, please let me know if you do run into any.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/b22isnT7w8cYrk7O0AiC0WTGsNWd30gHjC43ixux.png",
    "forge_url": "https://sp-mod.com/mod/3005/trader-level-requirements-editor",
-   "downloads": 138,
-   "favourites": 1,
+   "downloads": 281,
+   "favourites": 2,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -200988,7 +201012,7 @@
      "description": "<p>Initial release</p>\n",
      "spt_constraint": "~4.1",
      "fika": "unknown",
-     "downloads": 138,
+     "downloads": 281,
      "size": 6264,
      "link": "https://sp-mod.com/mod/download/3005/trader-level-requirements-editor/1.0.0",
      "published_at": "2026-09-08T11:27:00.000000Z",
@@ -201003,7 +201027,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-09-08T11:27:00.000000Z",
-   "updated_at": "2026-09-15T07:04:31.000000Z",
+   "updated_at": "2026-09-29T21:40:54.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -206578,8 +206602,8 @@
    "description_html": "<p>I missed it, so I pumped some of it through chatgpt. Don\u2019t ask much of me, but I hope this works for you because it works for me and the boys.</p>\n<p>Due to sound being messed up and my time constraints I\u2019ve replaced the unsuppressed shot audio with the M1A shot sounds. This will be corrected at a later time.</p>\n<p>I\u2019ll update for 4.1 when I get around to it. I\u2019ll probably update commonlib dependency for 4.0.13 to 2.0.24, or maybe it\u2019ll just work, idk, try it and let me know.</p>\n<p>Anyone can modify it or rewrite it, whatever, just give Choccy his dues.</p>\n<p>Anyways, this is what Mr. GPT put out for a description:</p>\n<h1>Walther WA 2000 Sniper Rifle Continued</h1>\n<p>A complete SPT 4.0.13 migration of Choccy Milk\u2019s Walther WA 2000 weapon mod.</p>\n<p>This release restores the rifle, 19 attachments, four cartridges, two presets, mastery, Peacekeeper and Jaeger offers, inventory compatibility, static-loot integration, boss loadouts, and PMC generation.</p>\n<h2>Native unsuppressed audio</h2>\n<p>The original Unity audio containers remain unchanged. Because their legacy unsuppressed outdoor playback is incompatible with the current EFT audio lifecycle, this package includes the <strong>WA2000 Native Audio</strong> client plugin.</p>\n<p>The plugin automatically loads the native M1A regular firing banks and replaces only:</p>\n<ul>\n<li><code>Body</code></li>\n<li><code>Tail</code></li>\n<li><code>Doublet</code></li>\n</ul>\n<p>The WA2000\u2019s original suppressed banks, mechanical sounds, animations, model, attachments, and gameplay behavior remain unchanged. You do not need to own, inspect, preview, or equip an M1A.</p>\n<h2>Installation</h2>\n<p>Extract the archive once into the root of your SPT 4.0.13 installation.</p>\n<p>Confirm that these files exist:</p>\n<ul>\n<li><code>user/mods/WA2000/WA2000.dll</code></li>\n<li><code>BepInEx/plugins/WA2000NativeAudio/WA2000NativeAudio.dll</code></li>\n</ul>\n<p>Do not install multiple copies of the client plugin.</p>\n<h2>Requirements</h2>\n<ul>\n<li>SPT <code>4.0.13</code></li>\n<li>WTT Server CommonLib <code>~2.0.23</code></li>\n</ul>\n<h2>Fika</h2>\n<p>Fika is not a code dependency. Every participant should install the same version of the WA2000 Native Audio DLL and use matching configuration.</p>\n<p>Full multi-participant Fika compatibility has not yet been formally verified.</p>\n<h2>Known limitation</h2>\n<p>The standalone WA 2000 TAC preset may not save correctly, although its parts and trader build remain available. Core weapon, attachment, trader, bot, loot, profile, and raid behavior are functional.</p>\n<h2>Removal</h2>\n<p>Remove:</p>\n<ul>\n<li><code>user/mods/WA2000</code></li>\n<li><code>BepInEx/plugins/WA2000NativeAudio</code></li>\n</ul>\n<p>You may also remove:</p>\n<ul>\n<li><code>BepInEx/config/com.zincropes.wa2000.nativeaudio.cfg</code></li>\n</ul>\n<p>No profile migration is required to remove the client plugin.</p>\n<h2>Credits</h2>\n<ul>\n<li><strong>Choccy Milk</strong> \u2014 original WA2000 mod and public migration/reupload permission</li>\n<li><strong>RaiRaiTheRaichu</strong></li>\n<li><strong>Activision</strong></li>\n<li><strong>Acer\u2019s Awesome Weapon Rigs</strong></li>\n<li><strong>RealMo3</strong> \u2014 Realism and ammunition update reference</li>\n<li><strong>zincropes</strong> \u2014 SPT 4.0.13 migration and native-audio integration</li>\n</ul>\n<p>Released under <strong>CC BY 3.0</strong>, retaining the original permissions, attribution, and applicable RealMo3 terms.</p>\n<h2>Source and downloads</h2>\n<ul>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://codeberg.org/zincropes/WA-Migration\" rel=\"noreferrer noopener\">Source code</a></li>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://codeberg.org/zincropes/WA-Migration/releases/tag/v1.0.0\" rel=\"noreferrer noopener\">Codeberg release</a></li>\n</ul>\n",
    "thumbnail": "https://files.sp-mod.com/mods/Y07vzJtlJu2SHbPZp1s3tJ3PIFturSrfc5oG1f9Z.png",
    "forge_url": "https://sp-mod.com/mod/3063/walther-wa-2000-sniper-rifle-continued",
-   "downloads": 192,
-   "favourites": 5,
+   "downloads": 503,
+   "favourites": 9,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -206612,16 +206636,40 @@
     {
      "url": "https://codeberg.org/zincropes/WA-Migration/src/tag/v1.1.0",
      "label": "Source Code 1.1.0"
+    },
+    {
+     "url": "https://codeberg.org/zincropes/WA-Migration/src/tag/v1.1.1",
+     "label": "Source Code 1.1.1"
     }
    ],
    "versions": [
+    {
+     "id": 15672,
+     "version": "1.1.1",
+     "description": "<h2>WA2000 v1.1.1 \u2014 SPT 4.1.6</h2>\n<p>This update improves ammunition compatibility while preserving the validated native-audio implementation from v1.1.0.</p>\n<h3>Changes</h3>\n<ul>\n<li>Added dynamic compatibility with SVM ammunition stack-size settings.</li>\n<li>WA2000 ammunition now follows the active SVM marksman-rifle ammunition stack limit.</li>\n<li>Added optional support for the three reviewed WTT Armory .300 Winchester Magnum cartridges.</li>\n<li>WTT ammunition can now be loaded, chambered, and fired from the WA2000 and its 6-, 10-, and 15-round magazines.</li>\n<li>WTT Armory ammunition retains its own stack-size settings and other provider-owned properties.</li>\n<li>SVM and WTT Armory remain optional and are not required dependencies.</li>\n<li>Preserved Native Audio 0.3.0 and its automatic M1A donor system.</li>\n<li>Preserved suppressed audio, mechanical sounds, trader offers, flea-market listings, mastery, presets, and existing profiles.</li>\n<li>All 27 original Unity bundles remain unchanged.</li>\n</ul>\n<h3>Requirements</h3>\n<ul>\n<li>SPT 4.1.6</li>\n<li>WTT Server CommonLib 3.0.6</li>\n</ul>\n<h3>Installation</h3>\n<p>Extract the archive directly into the root of your SPT installation.</p>\n<p>The archive installs both:</p>\n<ul>\n<li><code>user/mods/WA2000</code></li>\n<li><code>BepInEx/plugins/WA2000NativeAudio/WA2000NativeAudio.dll</code></li>\n</ul>\n<p>Do not manually install SVM or WTT Armory unless you want their optional compatibility features.</p>\n<h3>Multiplayer note</h3>\n<p>When using Fika, every participant should install the same WA2000 client DLL and configuration.</p>\n<h3>SHA-256</h3>\n<p><code>AECD8026F3D178F032EF68C312D52E9CC1381F243C947F846CE208461F02FDF8</code></p>\n",
+     "spt_constraint": "4.1.6",
+     "fika": "unknown",
+     "downloads": 83,
+     "size": 95333925,
+     "link": "https://sp-mod.com/mod/download/3063/walther-wa-2000-sniper-rifle-continued/1.1.1",
+     "published_at": "2026-09-29T18:18:00.000000Z",
+     "dependencies": [
+      {
+       "id": 2310,
+       "name": "WTT - CommonLib",
+       "slug": "wtt-commonlib",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
+      }
+     ]
+    },
     {
      "id": 15653,
      "version": "1.1.0",
      "description": "<h1>WA2000 v1.1.0 \u2014 SPT 4.1.6</h1>\n<p>This release ports the Walther WA 2000 and its associated content to <strong>SPT 4.1.6</strong> and <strong>WTT CommonLib 3.0.6</strong>.</p>\n<h2>Included</h2>\n<ul>\n<li>Walther WA 2000 rifle</li>\n<li>Original attachments, magazines and ammunition</li>\n<li>Stock and TAC presets</li>\n<li>Peacekeeper and Jaeger trader offers</li>\n<li>Flea-market support</li>\n<li>Mastery integration</li>\n<li>PMC, Shturman and Birdeye integration</li>\n<li>Static weapon-container loot integration</li>\n<li>Automatic native M1A audio replacement for unsuppressed firing</li>\n</ul>\n<h2>Native audio</h2>\n<p>The included <code>WA2000 Native Audio 0.3.0</code> client plugin automatically loads the native M1A firing sound and applies it to unsuppressed WA2000 instances.</p>\n<p>You do not need to purchase, inspect or equip an M1A first.</p>\n<p>Only the regular <code>Body</code>, <code>Tail</code> and <code>Doublet</code> sound banks are replaced. The following remain unchanged:</p>\n<ul>\n<li>Integrated-suppressor audio</li>\n<li>Mechanical sounds</li>\n<li><code>AdditionalSounds</code></li>\n<li><code>Non_auto</code></li>\n<li>Models and animations</li>\n<li>Weapon statistics and gameplay data</li>\n</ul>\n<p>All 27 original WA2000 bundles remain byte-identical and were not rebuilt or modified.</p>\n<h2>Installation</h2>\n<p>Extract the archive directly into your SPT installation folder.</p>\n<p>The archive installs:</p>\n<ul>\n<li><code>SPT_Runtime/user/mods/WA2000</code></li>\n<li><code>BepInEx/plugins/WA2000NativeAudio/WA2000NativeAudio.dll</code></li>\n</ul>\n<p>Remove older WA2000 installations and duplicate <code>WA2000NativeAudio.dll</code> files before installing.</p>\n<h2>Requirements</h2>\n<ul>\n<li>SPT <code>4.1.6</code></li>\n<li>WTT CommonLib <code>3.0.6</code></li>\n</ul>\n<h2>Fika</h2>\n<p>The native-audio plugin is client-side. Every Fika participant should install the same release and use matching plugin configuration.</p>\n<p>Full multiplayer compatibility has not yet been formally certified, so the SP-Mod compatibility field remains <strong>Unknown</strong>.</p>\n<h2>Known limitations</h2>\n<ul>\n<li>SVM\u2019s marksman-rifle ammunition stack-size override does not currently affect the custom WA2000 cartridges. They retain their default stack size of 40. A compatibility correction is planned for a subsequent patch.</li>\n<li>The existing standalone TAC-preset save limitation remains.</li>\n<li>Reconstruction of the original WA2000 audio containers remains possible future work. This release uses the validated native M1A runtime solution.</li>\n</ul>\n<h2>Integrity</h2>\n<p>Archive SHA-256:</p>\n<p><code>980AB040FA1F1833FB36063EFE2E800B4A90518708AF9DB8F10C4DFC73365763</code></p>\n<p>Source, release notes and checksum files are available from the Codeberg release page.</p>\n",
      "spt_constraint": "4.1.6",
      "fika": "unknown",
-     "downloads": 21,
+     "downloads": 233,
      "size": 95332117,
      "link": "https://sp-mod.com/mod/download/3063/walther-wa-2000-sniper-rifle-continued/1.1.0",
      "published_at": "2026-09-29T00:32:00.000000Z",
@@ -206641,7 +206689,7 @@
      "description": "<h1>WA2000 1.0.0 for SPT 4.0.13</h1>\n<ul>\n<li>Migrates the complete Walther WA 2000 package to SPT 4.0.13.</li>\n<li>Restores 19 attachments and four .300 Winchester Magnum cartridges.</li>\n<li>Restores the Stock and TAC presets.</li>\n<li>Restores mastery and 28 Peacekeeper and Jaeger offers.</li>\n<li>Restores inventory filters and three static-loot weapon-box integrations.</li>\n<li>Restores Shturman, Birdeye, USEC, and BEAR loadout integration.</li>\n<li>Includes WA2000 Native Audio 0.2.8.</li>\n<li>Automatically substitutes native M1A regular firing banks for reliable unsuppressed audio.</li>\n<li>Preserves the original WA2000 suppressed and mechanical audio.</li>\n<li>Requires no manual M1A interaction.</li>\n<li>Retains all 27 original Unity bundles unchanged.</li>\n<li>Adds persistent menu-to-raid audio ownership and exact-once shutdown cleanup.</li>\n<li>Requires WTT Server CommonLib <code>~2.0.23</code>.</li>\n</ul>\n<h2>Known limitation</h2>\n<p>The standalone WA 2000 TAC preset may not save correctly, although its parts and trader build remain available.</p>\n<h2>Installation</h2>\n<p>Extract the archive once into the root of your SPT 4.0.13 installation.</p>\n<p>Every Fika participant should install the same client DLL and use matching configuration. Full multi-participant Fika compatibility has not yet been formally verified.</p>\n",
      "spt_constraint": "4.0.13",
      "fika": "unknown",
-     "downloads": 171,
+     "downloads": 187,
      "size": 95330114,
      "link": "https://sp-mod.com/mod/download/3063/walther-wa-2000-sniper-rifle-continued/1.0.0",
      "published_at": "2026-09-25T03:32:00.000000Z",
@@ -206656,7 +206704,7 @@
      ]
     }
    ],
-   "latest_version": "1.1.0",
+   "latest_version": "1.1.1",
    "spt_constraint": "4.1.6",
    "all_spt_constraints": [
     "4.0.13",
@@ -206681,7 +206729,7 @@
     }
    ],
    "published_at": "2026-09-25T03:31:00.000000Z",
-   "updated_at": "2026-09-29T00:38:41.000000Z",
+   "updated_at": "2026-09-29T18:19:03.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -206699,10 +206747,10 @@
    "name": "Realistic PMC Names",
    "slug": "realistic-pmc-names",
    "teaser": "8,000 realistic PMC identities. Unique callsigns. Living Flea Market. Make every encounter personal.",
-   "description_html": "<h1>Realistic PMC Names</h1>\n<p><em><strong>What\u2019s in a name?</strong></em></p>\n<p>There are some fantastic mods for SPT that add new factions, characters and encounters to the game. I wanted something that would complement them while making the wider SPT world feel just a little more believable.</p>\n<p>In live Tushonka, PMC gamer tags make perfect sense. They\u2019re other players. In SPT, though, every PMC we encounter is ultimately another character inhabiting our single-player world.</p>\n<p><strong>Realistic PMC Names replaces those gamer-style names with thousands of believable, faction-appropriate human identities.</strong></p>\n<h2>\u201cIt\u2019s just a name. So what?\u201d</h2>\n<p>More than I expected.A difficult fight feels surprisingly different when you finally check the dogtag and discover that the person who nearly killed you was Daniel Mercer rather than <em>xX_Sniper69_Xx</em>. No offence if your name is Sniper69!</p>\n<p>Add a callsign and something else happens. Maybe it was Daniel \u201cBob\u201d Mercer.</p>\n<p>Now Bob isn\u2019t just another bot. He\u2019s the bloke who blacked your arm, chased you through a building and nearly ended your raid. And because callsigns are unique within each faction, if you ever meet Bob again\u2026</p>\n<p><strong>It\u2019s Bob.</strong></p>\n<p>No biographies. No scripted characters. No artificial persistence system. The mod supplies the identity. The game supplies what happens to them. <strong>You supply the story.</strong></p>\n<h2>8,000 PMC identities</h2>\n<p>Version 1.1 contains:</p>\n<ul>\n<li><strong>4,000 U-side PMC identities</strong>, drawn from a broad multinational pool based on NATO inspired nationalities</li>\n<li><strong>4,000 B-side PMC identities</strong>, predominantly Russian with wider former-Soviet and regional influence</li>\n<li>Carefully selected rare callsigns mixed naturally into both populations</li>\n<li>Callsigns are unique within each side</li>\n</ul>\n<p>Names range from completely ordinary people to the occasional memorable identity.</p>\n<p>And, of course, there is:</p>\n<p><strong>Giulio \u201cDuke\u201d Leone.</strong></p>\n<p>Who is Duke? Who indeed.</p>\n<h2>The Flea Market has people now, too</h2>\n<p>Version 1.1 extends the same idea beyond raids.</p>\n<p>The Flea Market now has its own separate population of <strong>300 recurring identities</strong>, used by simulated buyers and sellers.</p>\n<p>These aren\u2019t PMCs. They\u2019re traders, scavengers, dealers, civilians and assorted inhabitants of the wider world.</p>\n<p>You might buy ammunition from Tinman today. Scrapper might buy your balaclava tomorrow. A few days later, you may recognise one of them again.</p>\n<p>Because the population is deliberately much smaller than the PMC roster, familiar names naturally begin to appear, turning what was previously a stream of random usernames into something resembling a little marketplace community.</p>\n<p>This feature can be switched on or off in the config.</p>\n<h2>What does it change?</h2>\n<p>Names. That\u2019s it.</p>\n<p>Realistic PMC Names does <strong>not</strong> alter AI behaviour, spawning, progression, equipment, difficulty, health, factions or PMC levels.</p>\n<p>It is designed to sit quietly alongside the excellent mods that already handle those things.</p>\n<p>Server-side only. No client plugin required.</p>\n<h2>Compatibility</h2>\n<p>Designed for the <strong>SPT 4.1.x</strong> branch.</p>\n<p>Version 1.1.0 was developed and tested on <strong>SPT 4.1.5</strong>.</p>\n<p>Mods that replace the same PMC name pools may conflict or overwrite identities depending on load order.</p>\n<hr />\n<blockquote>\n<p><em>\u201cBefore Realistic PMC Names, I didn\u2019t even exist. Now I\u2019m Giulio \u2018Duke\u2019 Leone. Frankly, &gt;that\u2019s an improvement.\u201d</em></p>\n<p>\u2014 <strong>Giulio \u201cDuke\u201d Leone, U-side PMC</strong></p>\n</blockquote>\n<hr />\n<p>If you enjoy my mods and would like to help me stay caffeinated so I can keep tinkering, please consider doing so here:</p>\n<blockquote>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://buymeacoffee.com/zantetsukenar3\" rel=\"noreferrer noopener\">https://buymeacoffee.com/zantetsukenar3</a>.</p>\n</blockquote>\n<p><strong><em>Thanks!</em></strong></p>\n",
+   "description_html": "<h1>Realistic PMC Names</h1>\n<p><em><strong>What\u2019s in a name?</strong></em></p>\n<p>There are some fantastic mods for SPT that add new factions, characters and encounters to the game. I wanted something that would complement them while making the wider SPT world feel just a little more believable.</p>\n<p>In live Tushonka, PMC gamer tags make perfect sense. They\u2019re other players. In SPT, though, every PMC we encounter is ultimately another character inhabiting our single-player world.</p>\n<p><strong>Realistic PMC Names replaces those gamer-style names with thousands of believable, faction-appropriate human identities.</strong></p>\n<h2>\u201cIt\u2019s just a name. So what?\u201d</h2>\n<p>More than I expected.A difficult fight feels surprisingly different when you finally check the dogtag and discover that the person who nearly killed you was Daniel Mercer rather than <em>xX_Sniper69_Xx</em>. No offence if your name is Sniper69!</p>\n<p>Add a callsign and something else happens. Maybe it was Daniel \u201cBob\u201d Mercer.</p>\n<p>Now Bob isn\u2019t just another bot. He\u2019s the bloke who blacked your arm, chased you through a building and nearly ended your raid. And because callsigns are unique within each faction, if you ever meet Bob again\u2026</p>\n<p><strong>It\u2019s Bob.</strong></p>\n<p>No biographies. No scripted characters. No artificial persistence system. The mod supplies the identity. The game supplies what happens to them. <strong>You supply the story.</strong></p>\n<h2>8,000 PMC identities</h2>\n<p>Version 1.1 contains:</p>\n<ul>\n<li><strong>4,000 U-side PMC identities</strong>, drawn from a broad multinational pool based on NATO inspired nationalities</li>\n<li><strong>4,000 B-side PMC identities</strong>, predominantly Russian with wider former-Soviet and regional influence</li>\n<li>Carefully selected rare callsigns mixed naturally into both populations</li>\n<li>Callsigns are unique within each side</li>\n</ul>\n<p>Names range from completely ordinary people to the occasional memorable identity.</p>\n<p>And, of course, there is:</p>\n<p><strong>Giulio \u201cDuke\u201d Leone.</strong></p>\n<p>Who is Duke? Who indeed.</p>\n<h2>The Flea Market has people now, too</h2>\n<p>Version 1.1 extends the same idea beyond raids.</p>\n<p>The Flea Market now has its own separate population of <strong>300 recurring identities</strong>, used by simulated buyers and sellers.</p>\n<p>These aren\u2019t PMCs. They\u2019re traders, scavengers, dealers, civilians and assorted inhabitants of the wider world.</p>\n<p>You might buy ammunition from Tinman today. Scrapper might buy your balaclava tomorrow. A few days later, you may recognise one of them again.</p>\n<p>Because the population is deliberately much smaller than the PMC roster, familiar names naturally begin to appear, turning what was previously a stream of random usernames into something resembling a little marketplace community.</p>\n<p>This feature can be switched on or off in the config.</p>\n<h2>What does it change?</h2>\n<p>Names. That\u2019s it.</p>\n<p>Realistic PMC Names does <strong>not</strong> alter AI behaviour, spawning, progression, equipment, difficulty, health, factions or PMC levels.</p>\n<p>It is designed to sit quietly alongside the excellent mods that already handle those things.</p>\n<p>Server-side only. No client plugin required.</p>\n<h2>Compatibility</h2>\n<p>Designed for the <strong>SPT 4.1.x</strong> branch.</p>\n<p>Version 1.1.0 was developed and tested on <strong>SPT 4.1.5</strong>.</p>\n<p>Mods that replace the same PMC name pools may conflict or overwrite identities depending on load order.</p>\n<hr />\n<blockquote>\n<p><em>\u201cBefore Realistic PMC Names, I didn\u2019t even exist. Now I\u2019m Giulio \u2018Duke\u2019 Leone. Frankly, &gt;that\u2019s an improvement.\u201d</em></p>\n<p><strong>- Giulio \u201cDuke\u201d Leone, U-side PMC</strong></p>\n</blockquote>\n<hr />\n<p>If you enjoy my mods and would like to help me stay caffeinated so I can keep tinkering, please consider doing so here:</p>\n<blockquote>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://buymeacoffee.com/zantetsukenar3\" rel=\"noreferrer noopener\">https://buymeacoffee.com/zantetsukenar3</a>.</p>\n</blockquote>\n<p><strong><em>Thanks!</em></strong></p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/XXCqOOobM1aV7Aej3JjfX239gsaWMCJXyx7MDKX5.png",
    "forge_url": "https://sp-mod.com/mod/3064/realistic-pmc-names",
-   "downloads": 983,
+   "downloads": 999,
    "favourites": 18,
    "featured": false,
    "fika": false,
@@ -206736,7 +206784,7 @@
      "description": "<h2>Version 1.1.0</h2>\n<p>A major expansion of Realistic PMC Names, with a much larger PMC population and a new dedicated identity system for the Flea Market.</p>\n<ul>\n<li>Expanded from 4,000 to <strong>8,000 unique PMC identities</strong>\n<ul>\n<li>4,000 U-side</li>\n<li>4,000 B-side</li>\n</ul>\n</li>\n<li>Reworked callsigns, with callsigns unique within each side and less frequent</li>\n<li>Added <strong>300 dedicated Flea Market identities</strong></li>\n<li>Flea identities are used by simulated <strong>buyers and sellers</strong></li>\n<li>Flea identities are deliberately separate from PMC identities, creating a small recurring marketplace population</li>\n<li>Added configuration for Flea naming ON/OFF (ON by default - OFF will result in Flea being populated by the PMC pool)</li>\n<li>Further refinement of regional naming across both PMC pools</li>\n</ul>\n<p>The result is substantially more variety in raids while also bringing the same sense of identity to the Flea Market. You may start recognising familiar buyers and sellers over time.</p>\n<p>Developed and tested on <strong>SPT 4.1.6</strong>.</p>\n",
      "spt_constraint": "~4.1.0",
      "fika": "unknown",
-     "downloads": 480,
+     "downloads": 496,
      "size": 61727,
      "link": "https://sp-mod.com/mod/download/3064/realistic-pmc-names/1.1.0",
      "published_at": "2026-09-26T21:28:00.000000Z",
@@ -206764,7 +206812,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-09-25T07:56:00.000000Z",
-   "updated_at": "2026-09-29T16:03:04.000000Z",
+   "updated_at": "2026-09-29T20:19:53.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -207519,11 +207567,11 @@
    "name": "BodyCamera",
    "slug": "bodycamera",
    "teaser": "A more immersive camera experience with natural movement, realistic inertia and dynamic camera shake.",
-   "description_html": "<h1>BodyCamera</h1>\n<p>BodyCamera adds natural camera movement to SPT 4.1.6.\nIt adds camera sway, inertia and shake that respond to player movement, turning, running and aiming. The camera has a slight delay when changing direction, making movement feel less static while keeping the original gameplay unchanged.</p>\n<h2>Features</h2>\n<ul>\n<li>Immersive body-mounted camera movement</li>\n<li>Natural camera sway while walking and running</li>\n<li>Realistic camera inertia when turning and changing direction</li>\n<li>Camera inertia while aiming</li>\n</ul>\n<h2>Known Issues</h2>\n<p>This is an early public release, so some aspects of the camera behaviour are still being tuned.</p>\n<h2>Usage</h2>\n<p>Press <strong>F10</strong> to enable the camera effects.</p>\n<p>All camera effects can be configured to your preference</p>\n<h2>Compatibility</h2>\n<p>Designed and tested for <strong>SPT 4.1.6</strong>.</p>\n<p>Compatibility with other SPT versions is not guaranteed.</p>\n<h2>Video</h2>\n<div class=\"youtube-lite\" data-video-id=\"LoM8dT151nM\" data-embed-url=\"https://www.youtube-nocookie.com/embed/LoM8dT151nM?autoplay=1\"><a href=\"https://www.youtube.com/watch?v=LoM8dT151nM\" target=\"_blank\" rel=\"noreferrer noopener\">Play YouTube video</a></div>\n<h2>Installation</h2>\n<p>Extract the contents of the archive into your SPT installation folder.</p>\n",
-   "thumbnail": "https://files.sp-mod.com/mods/Jk2hWagNiJjFoJKZyqZyAYDob3pvjxy2OtprM6LX.png",
+   "description_html": "<h1>BodyCamera</h1>\n<p>BodyCamera adds natural camera movement to SPT 4.1.6.\nIt adds camera sway, inertia and shake that respond to player movement, turning, running and aiming. The camera has a slight delay when changing direction, making movement feel less static while keeping the original gameplay unchanged.</p>\n<h2>Features</h2>\n<ul>\n<li>Immersive body-mounted camera movement</li>\n<li>Natural camera sway while walking and running</li>\n<li>Realistic camera inertia when turning and changing direction</li>\n<li>Camera inertia while aiming</li>\n</ul>\n<p>The mod does not add visual effects.</p>\n<h2>Usage</h2>\n<p>Press <strong>F10</strong> to enable the camera effects.</p>\n<p>Open the menu using the F12 key, select the mod, and configure it to your liking.</p>\n<h2>Compatibility</h2>\n<p>Designed and tested for <strong>SPT 4.1.6</strong>.</p>\n<p>Compatibility with other SPT versions is not guaranteed.</p>\n<h2>Video</h2>\n<div class=\"youtube-lite\" data-video-id=\"LoM8dT151nM\" data-embed-url=\"https://www.youtube-nocookie.com/embed/LoM8dT151nM?autoplay=1\"><a href=\"https://www.youtube.com/watch?v=LoM8dT151nM\" target=\"_blank\" rel=\"noreferrer noopener\">Play YouTube video</a></div>\n<div class=\"youtube-lite\" data-video-id=\"E-76qNDmDlI\" data-embed-url=\"https://www.youtube-nocookie.com/embed/E-76qNDmDlI?autoplay=1\"><a href=\"https://www.youtube.com/watch?v=E-76qNDmDlI\" target=\"_blank\" rel=\"noreferrer noopener\">Play YouTube video</a></div>\n<h2>Installation</h2>\n<p>Extract the contents of the archive into your SPT installation folder.</p>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/kkjKpzIm96i342pLUGgtkaLGZvDnwtf4IyZnuszy.png",
    "forge_url": "https://sp-mod.com/mod/3075/bodycamera",
-   "downloads": 32,
-   "favourites": 0,
+   "downloads": 278,
+   "favourites": 10,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -207551,19 +207599,31 @@
    ],
    "versions": [
     {
+     "id": 15674,
+     "version": "0.2.9",
+     "description": "<h2>BodyCamera 0.2.9</h2>\n<h3>Fixed</h3>\n<ul>\n<li>Fixed ADS camera issues when entering and exiting aiming.</li>\n<li>Fixed the camera getting pulled backward when leaving ADS while moving.</li>\n<li>Fixed camera position issues when switching between different sights/optics.</li>\n<li>Fixed ADS camera problems after changing weapons.</li>\n<li>Fixed camera snapping or jumping when ADS state changes.</li>\n<li>Improved camera stability while aiming and moving at the same time.</li>\n<li>Improved camera synchronization with Tarkov\u2019s aiming and optic system.</li>\n</ul>\n",
+     "spt_constraint": "4.1.6",
+     "fika": "unknown",
+     "downloads": 68,
+     "size": 9141,
+     "link": "https://sp-mod.com/mod/download/3075/bodycamera/0.2.9",
+     "published_at": "2026-09-29T18:38:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 15647,
      "version": "0.2.8",
      "description": "<h2>BodyCamera 0.2.8</h2>\n<p>Initial public release for SPT 4.1.6.</p>\n<h3>Features</h3>\n<ul>\n<li>\n<p>Immersive body-mounted camera movement</p>\n</li>\n<li>\n<p>Natural camera sway while walking and running</p>\n</li>\n<li>\n<p>Realistic camera inertia when turning and changing direction</p>\n</li>\n<li>\n<p>Camera inertia while aiming</p>\n</li>\n</ul>\n<h3>Known Issues</h3>\n<p>This is an early public release, so some aspects of the camera behaviour are still being tuned.</p>\n",
      "spt_constraint": "4.1.6",
      "fika": "unknown",
-     "downloads": 32,
+     "downloads": 210,
      "size": 8813,
      "link": "https://sp-mod.com/mod/download/3075/bodycamera/0.2.8",
      "published_at": "2026-09-28T19:45:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "0.2.8",
+   "latest_version": "0.2.9",
    "spt_constraint": "4.1.6",
    "all_spt_constraints": [
     "4.1.6"
@@ -207571,7 +207631,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-09-28T18:00:00.000000Z",
-   "updated_at": "2026-09-28T19:58:59.000000Z",
+   "updated_at": "2026-09-29T22:13:18.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -207908,11 +207968,11 @@
    "description_html": "<h2>What it does</h2>\n<p>SPT doesn\u2019t save anything until the raid ends. If the game crashes or freezes halfway through, the raid never happened: the loot you found, your kills and your quest progress are gone.</p>\n<p>With this mod, the next time you reach the main menu after a crash, you get the same \u201cReturn to raid\u201d screen as on the L.I.V.E version.</p>\n<ul>\n<li><strong>Reconnect</strong> puts you back in the raid, where you were</li>\n<li><strong>Confirm leave</strong> gives you back the profile you had before the raid, gear included</li>\n</ul>\n<p>There\u2019s no penalty for leaving.</p>\n<h2>What comes back</h2>\n<p>Pretty much everything.</p>\n<p><strong>Your character.</strong> Inventory, health, position, stance, stamina and whatever you were holding. Skills, trader rep, quest progress, quest items, examined items, kills and XP.</p>\n<p><strong>The raid.</strong> Same time left, same time of day, same weather. Doors you opened are open, switches you used are used, containers you searched are searched, and your extracts are the same.</p>\n<p><strong>The loot.</strong> It\u2019s the loot you had before the crash, not a new roll. Stuff you took is gone, stuff you dropped is where you dropped it.</p>\n<p><strong>The bots.</strong> The ones that were alive come back with their gear and health, at the spot they were standing. Bosses still lead their guards and squads stay together. Dead bodies are still there with their loot.</p>\n<p>Scav raids work too.</p>\n<h2>How it works</h2>\n<p>The mod saves the raid every 30 seconds while you play. Only the latest save is kept. When the raid ends normally (you extract, you die, you leave), the save is deleted. If the game crashes, the save stays, and that\u2019s what you get offered at the menu.</p>\n<p>A resumed raid can be resumed again. If you crash a second time, even during the loading screen, the raid is still there.</p>\n<h2>Install</h2>\n<p>Drop the archive in your SPT folder, the one with <code>BepInEx</code> and <code>SPT_Runtime</code> in it. You need both parts:</p>\n<pre><code>BepInEx/plugins/RaidRecovery/\nSPT_Runtime/user/mods/RaidRecovery/\n</code></pre>\n<p>To uninstall, delete those two folders.</p>\n<h2>Settings</h2>\n<p>Press F12 in game and look for Raid Recovery.</p>\n<table>\n<thead>\n<tr>\n<th>Setting</th>\n<th>Default</th>\n<th>What it does</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Enabled</td>\n<td>on</td>\n<td>Turns the saves on or off</td>\n</tr>\n<tr>\n<td>Interval (seconds)</td>\n<td>30</td>\n<td>Time between two saves, from 15 to 120</td>\n</tr>\n<tr>\n<td>Save now</td>\n<td></td>\n<td>Saves right away. Handy before a fight</td>\n</tr>\n<tr>\n<td>Save now (shortcut)</td>\n<td>none</td>\n<td>Same thing on a key</td>\n</tr>\n<tr>\n<td>Relaunch the raid automatically</td>\n<td>on</td>\n<td>Off: you start the raid yourself after reconnecting</td>\n</tr>\n<tr>\n<td>Use the return-to-raid screen of the game</td>\n<td>on</td>\n<td>Off: you get a plain window instead</td>\n</tr>\n<tr>\n<td>Keep the loot as the game sees it</td>\n<td>on</td>\n<td>Off: only what you carry is removed from the loot</td>\n</tr>\n<tr>\n<td>Keep bots and bodies</td>\n<td>on</td>\n<td>Off: the resumed raid spawns new bots</td>\n</tr>\n<tr>\n<td>Bots that were after you still are</td>\n<td>on</td>\n<td>Off: bots come back unaware of you</td>\n</tr>\n<tr>\n<td>Log measurements</td>\n<td>on</td>\n<td>Writes the cost of each save to the log</td>\n</tr>\n</tbody>\n</table>\n<p>If a resumed raid acts weird, turn off \u201cKeep bots and bodies\u201d or \u201cKeep the loot as the game sees it\u201d. The rest of the mod keeps working.</p>\n<p>There are also a few server side settings in <code>SPT_Runtime/user/mods/RaidRecovery/config.json</code>, like how long a save stays valid (24 hours by default).</p>\n<h2>Not tested yet</h2>\n<ul>\n<li>Fika (never digged into it so i don\u2019t know how it works but will eventually come out)</li>\n<li>Big mod lists. All my testing was on a clean install</li>\n</ul>\n<p>Back up your profile first, just in case.</p>\n<h2>Found a bug?</h2>\n<p>Send me your <code>BepInEx/LogOutput.log</code> and tell me what map you were on. The lines that start with <code>Raid Recovery</code> say what was saved and what was put back.</p>\n<p>Source: <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/VeKTyS/spt-raidrecovery\" rel=\"noreferrer noopener\">https://github.com/VeKTyS/spt-raidrecovery</a></p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/W8YSrL60WMYqoGV3UIc4Gifo4dn6InkMESSgXV6V.png",
    "forge_url": "https://sp-mod.com/mod/3080/raid-recovery",
-   "downloads": 99,
+   "downloads": 144,
    "favourites": 7,
    "featured": false,
-   "fika": false,
-   "fika_latest": "incompatible",
+   "fika": true,
+   "fika_latest": "compatible",
    "category": {
     "id": 17,
     "title": "Other",
@@ -207937,19 +207997,31 @@
    ],
    "versions": [
     {
+     "id": 15678,
+     "version": "1.2.2",
+     "description": "<h2>1.2.2</h2>\n<p>This version adds what the new Fika add-on needs to plug into the mod. The add-on is a separate download.</p>\n<p><strong>Playing solo?</strong> Nothing changes for you.</p>\n<h3>Changed</h3>\n<ul>\n<li>With Fika installed and no add-on, the mod turns itself off in Fika raids</li>\n</ul>\n<h3>Fixed</h3>\n<ul>\n<li>A scav could come back with broken gear after a resume</li>\n</ul>\n<p>Requires SPT 4.1.</p>\n",
+     "spt_constraint": "4.1.6",
+     "fika": "compatible",
+     "downloads": 5,
+     "size": 86593,
+     "link": "https://sp-mod.com/mod/download/3080/raid-recovery/1.2.2",
+     "published_at": "2026-09-29T22:16:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 15665,
      "version": "1.0.0",
      "description": "<p>1.0.0 public release</p>\n<p>Changes since the github beta :</p>\n<ul>\n<li>Bosses come back as actual bosses, with their guards following them. Squads stay squads</li>\n<li>The save is kept until the raid is really over (extract, death or leaving). Before, crashing while the resumed raid was loading meant the raid was gone for good</li>\n<li>Stance, stamina and the item in your hands are restored</li>\n<li>Bots that were chasing you keep chasing you. If you\u2019d rather get a quiet restart, untick \u201cBots that were after you still are\u201d in F12</li>\n<li>Tested item pickup quests and doors in game, both fine</li>\n</ul>\n<p>Not tested yet :</p>\n<ul>\n<li>Fika (never digged into it so i don\u2019t know how it works)</li>\n<li>Big mod lists. All my testing was on a clean install</li>\n</ul>\n",
      "spt_constraint": "4.1.6",
      "fika": "incompatible",
-     "downloads": 99,
+     "downloads": 139,
      "size": 83299,
      "link": "https://sp-mod.com/mod/download/3080/raid-recovery/1.0.0",
      "published_at": "2026-09-29T12:25:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.0.0",
+   "latest_version": "1.2.2",
    "spt_constraint": "4.1.6",
    "all_spt_constraints": [
     "4.1.6"
@@ -207957,7 +208029,152 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-09-29T11:53:00.000000Z",
-   "updated_at": "2026-09-29T16:32:05.000000Z",
+   "updated_at": "2026-09-29T22:18:04.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 3081,
+   "hub_id": null,
+   "guid": "moxopixel.advanced.modding.lights",
+   "name": "Advanced Modding Lights",
+   "slug": "advanced-modding-lights",
+   "teaser": "Enhance the lighting in weapon modding and build screens for better visibility and aesthetics",
+   "description_html": "<blockquote>\n<h1>Updated <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2203/advanced-modding-lights\" rel=\"noreferrer noopener\">MoxoPixel\u2019s AML Mod</a> to 4.1x by <strong>Hj</strong></h1>\n</blockquote>\n<h3>Enhance the lighting in weapon modding and build screens for better realism and control. It\u2019s good for controlling the lighting when taking screenshots. It activates a directional light which creates more reflections on the angles you choose.</h3>\n<div class=\"youtube-lite\" data-video-id=\"LYPTjbPlVvA\" data-embed-url=\"https://www.youtube-nocookie.com/embed/LYPTjbPlVvA?autoplay=1\"><a href=\"https://www.youtube.com/watch?v=LYPTjbPlVvA\" target=\"_blank\" rel=\"noreferrer noopener\">Play YouTube video</a></div>\n<h3><strong>Features</strong></h3>\n<ul>\n<li>Enhanced Lighting: Improves lighting in weapon modding and build screens</li>\n<li>Configurable Settings: Adjust directional light brightness and rotation</li>\n<li>Real-time Updates: Settings apply immediately without restart</li>\n<li>Performance Optimized: Efficient light caching and management</li>\n</ul>\n<h3><strong>Installation</strong></h3>\n<ul>\n<li>Download the latest release</li>\n<li>Extract to your SPT folder</li>\n<li>Configure settings via F12 (Config Manager)</li>\n</ul>\n<h3><strong>Configuration Options</strong></h3>\n<ul>\n<li>Enable Custom Lighting: Toggle enhanced lighting on/off</li>\n<li>Brightness: Control directional light intensity (0.1 - 5.0)</li>\n<li>Rotation X/Y: Adjust light direction (-180\u00b0 to 180\u00b0)</li>\n</ul>\n<p>For feature requests and reporting bugs, please use the <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/hjal-dev/AdvancedModdingLights\" rel=\"noreferrer noopener\">GitHub repo</a> for this mod</p>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/LT32yx2pZ84ndn1ZTbsOl01enfXNVtmXYZ5j1qOD.jpg",
+   "forge_url": "https://sp-mod.com/mod/3081/advanced-modding-lights",
+   "downloads": 98,
+   "favourites": 2,
+   "featured": false,
+   "fika": true,
+   "fika_latest": "compatible",
+   "category": {
+    "id": 2,
+    "title": "Overhauls",
+    "slug": "overhauls"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 2059,
+     "name": "Hj",
+     "avatar": "https://files.sp-mod.com/profile-photos/R7T9Uom9mp9FnxyIGz44xarnoLa15G4Bvi68xk82_256w.webp"
+    },
+    {
+     "id": 29835,
+     "name": "MoxoPixel",
+     "avatar": "https://files.sp-mod.com/profile-photos/464072aceb40281611921f5b148200b2fbf86664_128w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/hjal-dev/AdvancedModdingLights",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 15673,
+     "version": "2.0.0",
+     "description": "<p>4.1x Version</p>\n",
+     "spt_constraint": "~4.1",
+     "fika": "compatible",
+     "downloads": 98,
+     "size": 7504,
+     "link": "https://sp-mod.com/mod/download/3081/advanced-modding-lights/2.0.0",
+     "published_at": "2026-09-29T18:26:03.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "2.0.0",
+   "spt_constraint": "~4.1",
+   "all_spt_constraints": [
+    "~4.1"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-09-29T18:26:00.000000Z",
+   "updated_at": "2026-09-29T18:26:04.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 3082,
+   "hub_id": null,
+   "guid": "com.hj.taskitemindicator",
+   "name": "Hj's Task Item Indicator",
+   "slug": "hjs-task-item-indicator",
+   "teaser": "1:1 Task Item Indicator Ring from EFT 1.0.5",
+   "description_html": "<h1>Hj\u2019s Task Item Indicator</h1>\n<p><strong>Brings EFT 1.0.5\u2019s Task Item Indicator to SPT</strong></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/v10P5Wz.gif\" alt=\"gif\" /></p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Features</div>\n<div class=\"tab-content\"><p><strong>The Indicator</strong></p>\n<ul>\n<li>A small <strong>four-segment ring</strong> appears at your crosshair when you\u2019re near a <strong>task item you still need</strong></li>\n<li>The segments facing the item <strong>light up</strong>, so you know which way to turn</li>\n<li>Look at the item up close and <strong>the whole ring lights up YAY</strong></li>\n<li><strong>Fades in</strong> as you get closer and <strong>fades out</strong> as you walk away or pick the item up</li>\n</ul>\n<p><strong>Works exactly like EFT 1.0.5</strong></p>\n<ul>\n<li>Uses <strong>EFT 1.0\u2019s own ring sprite</strong>, size, position and animation</li>\n<li>Same <strong>range (~4.5 m)</strong>, brightness curve and fade speed as EFT 1.0, taken from the 1.0.5 client itself</li>\n<li>Only reacts to <strong>task items</strong> (the ones that go in your task items tab) for <strong>quests you\u2019ve started and not finished</strong></li>\n<li>Ofcourse ordinary items a quest asks for (like Salewas) <strong>don\u2019t trigger it</strong></li>\n<li>Items you already carry and quests you\u2019ve completed <strong>don\u2019t trigger it</strong></li>\n<li>Scales with your <strong>HUD</strong>, so it looks the same at 1080p, 1440p and 4K, (i hope it works on ultrawide and 4k, i can\u2019t try 4k or ultrawide as i don\u2019t have it)</li>\n<li>Stays visible while <strong>aiming</strong>, just like EFT 1.0.5</li>\n</ul>\n<p><strong>Incompatibility</strong></p>\n<ul>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2888/task-item-indicator\" rel=\"noreferrer noopener\">Vultify\u2019s Task Item Indicator</a></li>\n</ul>\n<p><strong>Config (F12)</strong></p>\n<ul>\n<li>Turn the indicator on or off lol</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Known \u201cBugs\u201d</div>\n<div class=\"tab-content\"><blockquote>\n<p>VirusTotal shows 1 detection (SecureAge)</p>\n</blockquote>\n<ul>\n<li>This is a <strong>false positive</strong>. SecureAge\u2019s heuristics often flag small, unsigned mod DLLs; every other engine reports it clean.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Credits</div>\n<div class=\"tab-content\"><p><strong>Special thanks to:</strong></p>\n<ul>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/52241/vultify\" rel=\"noreferrer noopener\">Vultify</a> for the first 4.1 take on this feature, which was a great reference + Giving me permission to release a 1:1 version</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Support/Requests</div>\n<div class=\"tab-content\"><p>HEY DID YOU JUST FIND A BUG AND WANNA REPORT IT?</p>\n<ul>\n<li><strong>Bug Reports:</strong> Please open an issue on the <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/hjal-dev/Task-Item-Indicator/issues\" rel=\"noreferrer noopener\">GitHub Issues</a> page or Forge\u2019s own Issue Tracker</li>\n<li><strong>Compatibility Issues:</strong> If another HUD or quest mod conflicts with Task Item Indicator, mention the other mod when reporting the issue</li>\n<li><strong>Please avoid posting log files in Forge comments.</strong> GitHub Issues and Forge\u2019s Issue Tracker make it much easier to troubleshoot problems</li>\n</ul></div></div></div>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/1946QM5zEatL3eVE0Pp3nPGvasEUXQa12XGzf1xy.png",
+   "forge_url": "https://sp-mod.com/mod/3082/hjs-task-item-indicator",
+   "downloads": 4,
+   "favourites": 0,
+   "featured": false,
+   "fika": true,
+   "fika_latest": "compatible",
+   "category": {
+    "id": 3,
+    "title": "Scripting",
+    "slug": "scripting"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 2059,
+     "name": "Hj",
+     "avatar": "https://files.sp-mod.com/profile-photos/R7T9Uom9mp9FnxyIGz44xarnoLa15G4Bvi68xk82_256w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/hjal-dev/Task-Item-Indicator",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 15677,
+     "version": "1.0.0",
+     "description": "<p>4.1x Version</p>\n",
+     "spt_constraint": "~4.1",
+     "fika": "compatible",
+     "downloads": 4,
+     "size": 8944,
+     "link": "https://sp-mod.com/mod/download/3082/hjs-task-item-indicator/1.0.0",
+     "published_at": "2026-09-29T22:16:56.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "1.0.0",
+   "spt_constraint": "~4.1",
+   "all_spt_constraints": [
+    "~4.1"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-09-29T22:16:00.000000Z",
+   "updated_at": "2026-09-29T22:19:16.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
