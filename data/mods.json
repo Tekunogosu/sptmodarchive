@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-28T21:17:33Z",
+ "generated_at": "2026-09-29T01:04:52Z",
  "source": "https://sp-mod.com",
  "filter": "all",
  "mod_count": 2007,
@@ -205540,8 +205540,8 @@
    "description_html": "<p>I missed it, so I pumped some of it through chatgpt. Don\u2019t ask much of me, but I hope this works for you because it works for me and the boys.</p>\n<p>I\u2019ll probably update commonlib dependency for 4.0.13 to 2.0.24, or maybe it\u2019ll just work, idk, try it and let me know.</p>\n<p>Anyone can modify it or rewrite it, whatever, just give Choccy his dues.</p>\n<p>Anyways, this is what Mr. GPT put out for a description:</p>\n<h1>China Lake Grenade Launcher Continued</h1>\n<p>An independent SPT 4.0.13 compatibility migration of Choccy Milk\u2019s China Lake pump-action grenade launcher.</p>\n<h2>Requirements</h2>\n<ul>\n<li>SPT 4.0.13</li>\n<li>WTT ServerCommonLib 2.0.23</li>\n</ul>\n<h2>Features</h2>\n<ul>\n<li>Original China Lake weapon, models, textures, animations, and audio</li>\n<li>Three-round magazine tube</li>\n<li>Leaf sight</li>\n<li>Compatible 40\u00d746 mm ammunition</li>\n<li>Flea Market visibility</li>\n<li>First and second primary weapon-slot compatibility</li>\n<li>Functional equipping, firing, cycling, and reloading</li>\n<li>Stock weapon preset</li>\n<li>Weapon mastery</li>\n<li>Peacekeeper LL3 barter</li>\n<li>Original probabilistic Customs loose-loot spawn</li>\n<li>Assault Scav loadout distribution</li>\n<li>U*** and B*** loadout distribution</li>\n</ul>\n<h2>Installation</h2>\n<ol>\n<li>Download the release archive.</li>\n<li>Extract it into your SPT installation root.</li>\n<li>Confirm that the resulting directory is:</li>\n</ol>\n<p><code>user/mods/ChinaLake/</code></p>\n<p>Do not install it inside an additional nested folder.</p>\n<h2>Compatibility notes</h2>\n<p>The weapon\u2019s models, animations, reload behavior, firing behavior, and audio have passed available solo testing.</p>\n<p>The following remain deferred compatibility observations rather than known defects:</p>\n<ul>\n<li>Fika remote-listener audio behavior</li>\n<li>Generated-bot firing, chambering, and reload behavior</li>\n<li>Frequency of the probabilistic Customs loose-loot spawn</li>\n<li>Frequency of Scav, U***, and B*** loadout generation</li>\n</ul>\n<p>Bosses, followers, Raiders, Rogues, Cultists, and Cultist Circle rewards are not modified.</p>\n<h2>Credits and attribution</h2>\n<p>The original China Lake mod was created by <strong>Choccy Milk</strong>.</p>\n<p>This SPT 4.0.13 compatibility migration was prepared and maintained by <strong>zincropes</strong>.</p>\n<p>The original work is used under the <strong>Creative Commons Attribution 3.0 Unported</strong> license.</p>\n<h2>Source code</h2>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://codeberg.org/zincropes/CL-Migration\" rel=\"noreferrer noopener\">https://codeberg.org/zincropes/CL-Migration</a></p>\n<h2>Release</h2>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://codeberg.org/zincropes/CL-Migration/releases/tag/v1.0.0\" rel=\"noreferrer noopener\">https://codeberg.org/zincropes/CL-Migration/releases/tag/v1.0.0</a></p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/kUZsZTyfCaV7rxhdTgY5URJCXheLUiYGrN5rZOt3.png",
    "forge_url": "https://sp-mod.com/mod/3056/china-lake-grenade-launcher-continued",
-   "downloads": 445,
-   "favourites": 7,
+   "downloads": 724,
+   "favourites": 9,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -205574,16 +205574,40 @@
     {
      "url": "https://codeberg.org/zincropes/CL-Migration/src/tag/v1.1.0",
      "label": "Source Code 1.1.0"
+    },
+    {
+     "url": "https://codeberg.org/zincropes/CL-Migration/src/tag/v1.1.1",
+     "label": "Source Code 1.1.1"
     }
    ],
    "versions": [
+    {
+     "id": 15651,
+     "version": "1.1.1",
+     "description": "<h2>Primary weapon slot hotfix</h2>\n<p>This update fixes the China Lake\u2019s player-equipment compatibility in SPT 4.1.6.</p>\n<h3>Fixed</h3>\n<ul>\n<li>Added support for the <strong>On Sling</strong> primary weapon slot.</li>\n<li>Added support for the <strong>On Back</strong> primary weapon slot.</li>\n<li>The magazine tube and leaf sight remain attachment-only.</li>\n<li>All existing weapon, trader, preset, loot, bot, model, animation, and audio behavior remains unchanged.</li>\n</ul>\n<h3>Requirements</h3>\n<ul>\n<li>SPT 4.1.6</li>\n<li>WTT ServerCommonLib 3.0.6</li>\n</ul>\n<h3>Installation</h3>\n<p>Extract the archive into the SPT installation root.</p>\n<p>The resulting directory must be:</p>\n<p><code>SPT_Runtime/user/mods/ChinaLake</code></p>\n<p>Replace any existing ChinaLake installation rather than creating a nested folder.</p>\n",
+     "spt_constraint": "4.1.6",
+     "fika": "unknown",
+     "downloads": 61,
+     "size": 11784846,
+     "link": "https://sp-mod.com/mod/download/3056/china-lake-grenade-launcher-continued/1.1.1",
+     "published_at": "2026-09-28T21:26:00.000000Z",
+     "dependencies": [
+      {
+       "id": 2310,
+       "name": "WTT - CommonLib",
+       "slug": "wtt-commonlib",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
+      }
+     ]
+    },
     {
      "id": 15609,
      "version": "1.1.0",
      "description": "<h2>China Lake for SPT 4.1.6</h2>\n<p>This release ports Choccy Milk\u2019s China Lake grenade launcher to SPT 4.1.6.</p>\n<h3>Changes</h3>\n<ul>\n<li>Ported the server mod to SPT 4.1.6 and .NET 10</li>\n<li>Updated integration for WTT CommonLib 3.0.6</li>\n<li>Restored the complete China Lake Stock preset</li>\n<li>Restored the complete Peacekeeper LL3 barter</li>\n<li>Peacekeeper\u2019s weapon now includes:\n<ul>\n<li>China Lake three-round magazine tube</li>\n<li>China Lake leaf sight</li>\n</ul>\n</li>\n<li>Preserved weapon mastery</li>\n<li>Preserved Scav and PMC loadout integration</li>\n<li>Preserved compatible 40x46 mm ammunition</li>\n<li>Preserved the Customs loose-loot spawn</li>\n<li>Preserved flea-market visibility</li>\n<li>Preserved the original models, bundles, animations, and audio</li>\n<li>Corrected template, preset, Ragfair, and trader registration timing for SPT 4.1.6</li>\n</ul>\n<h3>Installation</h3>\n<p>Extract the archive into your SPT installation root.</p>\n<p>The completed installation must be located at:</p>\n<p><code>SPT_Runtime/user/mods/ChinaLake/</code></p>\n<p>Do not install it into the older <code>user/mods</code> location used by previous SPT versions.</p>\n<h3>Requirements</h3>\n<ul>\n<li>SPT 4.1.6</li>\n<li>WTT CommonLib 3.0.6</li>\n</ul>\n<h3>Verification</h3>\n<p>Release archive SHA-256:</p>\n<p><code>77E4C90279E7E5AC2B5FB0844E6E18E6795EAD437E73F3637411AEDB9C89E336</code></p>\n<h3>Credits</h3>\n<ul>\n<li>Original China Lake mod: Choccy Milk</li>\n<li>SPT 4.x migration and maintenance: zincropes</li>\n<li>WTT CommonLib: Welcome to Tarkov</li>\n</ul>\n<h3>Compatibility Notes</h3>\n<p>Single-player weapon models, attachments, firing, reloading, animations, and audio have been tested successfully.</p>\n<p>Fika remote-player audio behavior has not been independently tested, so Fika compatibility is currently listed as unknown.</p>\n",
      "spt_constraint": "4.1.6",
      "fika": "unknown",
-     "downloads": 279,
+     "downloads": 459,
      "size": 11784789,
      "link": "https://sp-mod.com/mod/download/3056/china-lake-grenade-launcher-continued/1.1.0",
      "published_at": "2026-09-26T00:40:00.000000Z",
@@ -205603,158 +205627,10 @@
      "description": "<h1>Initial SPT 4.0.13 Release</h1>\n<p>Restores Choccy Milk\u2019s China Lake pump-action grenade launcher for SPT 4.0.13.</p>\n<h2>Included functionality</h2>\n<ul>\n<li>China Lake weapon registration</li>\n<li>Original models, textures, animations, and audio</li>\n<li>Three-round magazine tube</li>\n<li>Leaf sight</li>\n<li>Compatible 40\u00d746 mm ammunition</li>\n<li>Flea Market visibility</li>\n<li>First and second primary weapon-slot compatibility</li>\n<li>Functional inspection, equipping, firing, cycling, and reloading</li>\n<li>Stock weapon preset</li>\n<li>Weapon mastery</li>\n<li>Peacekeeper LL3 barter</li>\n<li>Original probabilistic Customs loose-loot spawn</li>\n<li>Assault Scav loadout distribution</li>\n<li>USEC and BEAR loadout distribution</li>\n</ul>\n<h2>Requirements</h2>\n<ul>\n<li>SPT 4.0.13</li>\n<li>WTT ServerCommonLib 2.0.23</li>\n</ul>\n<h2>Deferred compatibility testing</h2>\n<p>Fika remote-listener audio and live generated-bot behavior have not been fully tested. Solo weapon audio and core player functionality are working.</p>\n<h2>Archive integrity</h2>\n<p>SHA-256:</p>\n<p><code>3ec0b5ea2887d2fef4f93e66c663f403b54f911e31c4222075039e5300437351</code></p>\n",
      "spt_constraint": "4.0.13",
      "fika": "unknown",
-     "downloads": 166,
+     "downloads": 204,
      "size": 11672586,
      "link": "https://sp-mod.com/mod/download/3056/china-lake-grenade-launcher-continued/1.0.0",
      "published_at": "2026-09-22T23:36:00.000000Z",
-     "dependencies": [
-      {
-       "id": 2310,
-       "name": "WTT - CommonLib",
-       "slug": "wtt-commonlib",
-       "constraint": "",
-       "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
-      }
-     ]
-    }
-   ],
-   "latest_version": "1.1.0",
-   "spt_constraint": "4.1.6",
-   "all_spt_constraints": [
-    "4.0.13",
-    "4.1.6"
-   ],
-   "dependencies": [
-    {
-     "id": 2310,
-     "name": "WTT - CommonLib",
-     "slug": "wtt-commonlib",
-     "constraint": "",
-     "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
-    }
-   ],
-   "all_dependencies": [
-    {
-     "id": 2310,
-     "name": "WTT - CommonLib",
-     "slug": "wtt-commonlib",
-     "constraint": "",
-     "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
-    }
-   ],
-   "published_at": "2026-09-22T23:24:00.000000Z",
-   "updated_at": "2026-09-26T17:04:33.000000Z",
-   "flags": {
-    "contains_ads": false,
-    "contains_ai_content": false,
-    "ai_disclosure": "",
-    "cheat_notice": false,
-    "profile_binding_notice": true
-   },
-   "origin": "forge",
-   "delisted": false
-  },
-  {
-   "id": 3057,
-   "hub_id": null,
-   "guid": "com.zincropes.beretta93r",
-   "name": "Beretta 93R Raffica Continued",
-   "slug": "beretta-93r-raffica-continued",
-   "teaser": "Choccy Milk's Beretta 93R Raffica, migrated and updated for SPT 4.0.13 and 4.1.6.",
-   "description_html": "<p>I missed it, so I pumped some of it through chatgpt. Don\u2019t ask much of me, but I hope this works for you because it works for me and the boys.</p>\n<p>I\u2019ll probably update commonlib dependency for 4.0.13 to 2.0.24, or maybe it\u2019ll just work, idk, try it and let me know.</p>\n<p>Anyone can modify it or rewrite it, whatever, just give Choccy his dues.</p>\n<p>Anyways, this is what Mr. GPT put out for a description:</p>\n<h1>Beretta 93R Raffica Continued</h1>\n<p>An SPT 4.0.13 migration of Choccy Milk\u2019s Beretta 93R Raffica, preserving the original weapon, attachments, models, textures, animations, sounds, presets, mastery, trader integration, Gunsmith compatibility, and PMC integration wherever compatible with the current SPT runtime.</p>\n<h2>Features</h2>\n<ul>\n<li>Beretta 93R with single and burst fire</li>\n<li>Original custom weapon models, textures, animations, and audio</li>\n<li>Seven original custom attachments</li>\n<li>Original magazine and 9x19mm ammunition compatibility</li>\n<li>M93R Auto 9 and M93R Stock presets</li>\n<li>Peacekeeper trader integration</li>\n<li>Mastery integration</li>\n<li>Gunsmith compatibility</li>\n<li>U*** and B*** PMC Holster integration</li>\n<li>Original bundle and prefab relationships preserved</li>\n</ul>\n<h2>Requirements</h2>\n<ul>\n<li>SPT 4.0.13</li>\n<li>WTT ServerCommonLib 2.0.23</li>\n</ul>\n<h2>Installation</h2>\n<p>Download the release ZIP and extract it into your SPT installation root.</p>\n<p>The resulting mod should be located at:</p>\n<p><code>user/mods/Beretta93R/</code></p>\n<h2>Known Issue</h2>\n<p>The custom animated foregrip can cause a small cosmetic arm/hand animation reset after a magazine reload and around some fire-mode transitions.</p>\n<p>This is cosmetic only. Firing, reloading, and fire-mode switching remain functional.</p>\n<h2>Credits</h2>\n<ul>\n<li><strong>Choccy Milk / Choccy</strong> \u2014 original SPT mod author and EFT porter</li>\n<li><strong>RaiRaiTheRaichu</strong> \u2014 weapon requester and model provider</li>\n<li><strong>Paul Yakushev / Rifleman</strong> \u2014 Beretta 93R / Auto 9 model creator</li>\n<li><strong>zincropes</strong> \u2014 SPT 4.0.13 migration and maintenance</li>\n</ul>\n<p>Additional original attribution and licensing information is preserved in the repository and release package.</p>\n<p>This migration does not claim ownership of Choccy Milk\u2019s or any third-party assets.</p>\n",
-   "thumbnail": "https://files.sp-mod.com/mods/IUQot4e6nWdrT5Ui2kv2RoFIaxLr4lqJCEXfO2De.png",
-   "forge_url": "https://sp-mod.com/mod/3057/beretta-93r-raffica-continued",
-   "downloads": 441,
-   "favourites": 6,
-   "featured": false,
-   "fika": false,
-   "fika_latest": "unknown",
-   "category": {
-    "id": 13,
-    "title": "Weapons",
-    "slug": "weapons"
-   },
-   "license": {
-    "name": "Creative Commons BY-NC 3.0",
-    "link": "http://creativecommons.org/licenses/by-nc/3.0/legalcode"
-   },
-   "authors": [
-    {
-     "id": 117891,
-     "name": "zincropes",
-     "avatar": "https://files.sp-mod.com/profile-photos/Rif0A8yS8IiGl7tLStuYnGhijtP0EchvxkP25rqw_128w.webp"
-    },
-    {
-     "id": 44,
-     "name": "Choccy Milk",
-     "avatar": "https://files.sp-mod.com/profile-photos/385222d64fa85020e601547d6e3f90cd761236d0_128w.webp"
-    }
-   ],
-   "source_links": [
-    {
-     "url": "https://codeberg.org/zincropes/93R-Migration/src/tag/v1.0.0",
-     "label": "Source Code 1.0.0"
-    },
-    {
-     "url": "https://codeberg.org/zincropes/93R-Migration/src/tag/v1.1.0",
-     "label": "Source Code 1.1.0"
-    },
-    {
-     "url": "https://codeberg.org/zincropes/93R-Migration/src/tag/v1.1.1",
-     "label": "Source Code v1.1.1 "
-    }
-   ],
-   "versions": [
-    {
-     "id": 15619,
-     "version": "1.1.1",
-     "description": "<h2>SPT 4.1.6 Compatibility Hotfix</h2>\n<p>This release improves compatibility with modded SPT 4.1.6 setups that extend M9/93R-compatible magazine, ammunition, or PMC runtime data.</p>\n<h3>Changes</h3>\n<ul>\n<li>Allows additional runtime-compatible M9/93R magazines.</li>\n<li>Supports compatible custom ammunition relationships in extended magazines.</li>\n<li>Optional malformed or incompatible third-party magazine entries now produce warnings instead of fatal startup errors when another usable 93R magazine/ammunition path remains.</li>\n<li>Allows additive PMC runtime pools.</li>\n<li>Runtime validation now focuses on whether at least one usable 93R magazine \u2192 ammunition \u2192 chamber path remains.</li>\n<li>Preserves the original weapon data, presets, Peacekeeper integration, mastery, Gunsmith compatibility, flea-market behavior, Unity bundles, audio, animations, and balance.</li>\n<li>No RMR/ACRO sight-development content is included.</li>\n</ul>\n<h3>Tested</h3>\n<p>Verified with:</p>\n<ul>\n<li>SPT 4.1.6</li>\n<li>WTT ServerCommonLib 3.0.6</li>\n<li>Full validator suite</li>\n<li>Compiled magazine/ammunition compatibility regression matrix</li>\n<li>Two clean server startup gates</li>\n<li>Successful external compatibility testing</li>\n</ul>\n<h3>Known Issue</h3>\n<p>The folding foregrip may still show a small cosmetic hand/arm reset after some reloads or fire-mode transitions. Weapon functionality is unaffected.</p>\n<p>Full Gunsmith quest turn-in and naturally generated PMC usage remain non-blocking and were not required for this hotfix.</p>\n",
-     "spt_constraint": "4.1.6",
-     "fika": "unknown",
-     "downloads": 63,
-     "size": 28599171,
-     "link": "https://sp-mod.com/mod/download/3057/beretta-93r-raffica-continued/1.1.1",
-     "published_at": "2026-09-26T17:42:00.000000Z",
-     "dependencies": [
-      {
-       "id": 2310,
-       "name": "WTT - CommonLib",
-       "slug": "wtt-commonlib",
-       "constraint": "",
-       "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
-      }
-     ]
-    },
-    {
-     "id": 15608,
-     "version": "1.1.0",
-     "description": "<h2>SPT 4.1.6 Update</h2>\n<p>This release ports the Beretta 93R Raffica to SPT 4.1.6.</p>\n<h3>Changes</h3>\n<ul>\n<li>Migrated the server mod to .NET 10.</li>\n<li>Updated compatibility for SPT 4.1.6.</li>\n<li>Updated WTT ServerCommonLib dependency to 3.0.6.</li>\n<li>Added the SPT 4.1.6 preload lifecycle required for custom item registration.</li>\n<li>Added early preset registration for native preset and flea-market compatibility.</li>\n<li>Updated the legacy rear-sight slot identifier for CommonLib 3.0.6 ObjectId requirements.</li>\n<li>Preserved both original 93R presets.</li>\n<li>Preserved Peacekeeper trader integration.</li>\n<li>Preserved weapon mastery integration.</li>\n<li>Preserved Gunsmith compatibility.</li>\n<li>Preserved USEC and BEAR sidearm integration.</li>\n<li>Preserved all original Unity bundles, models, textures, animations, and audio.</li>\n<li>Flea-market offers now use the assembled M93R Stock configuration instead of a bare receiver.</li>\n</ul>\n<h3>Tested</h3>\n<p>Verified in SPT 4.1.6:</p>\n<ul>\n<li>Weapon rendering</li>\n<li>Semi-automatic fire</li>\n<li>Three-round burst fire</li>\n<li>Reloading</li>\n<li>Fire-mode switching</li>\n<li>Magazines</li>\n<li>Stock and attachment configurations</li>\n<li>Suppressed and unsuppressed audio</li>\n<li>Animations</li>\n<li>Peacekeeper inventory</li>\n<li>Mastery</li>\n<li>Flea-market assembled weapon offers</li>\n</ul>\n<h3>Known Issue</h3>\n<p>The folding foregrip may show a small cosmetic hand/arm reset after some reloads or fire-mode transitions. Weapon functionality is unaffected.</p>\n<p>Full Gunsmith quest turn-in and naturally generated PMC usage were not required as release blockers.</p>\n<p>Fika compatibility has not been tested.</p>\n",
-     "spt_constraint": "4.1.6",
-     "fika": "unknown",
-     "downloads": 238,
-     "size": 28597360,
-     "link": "https://sp-mod.com/mod/download/3057/beretta-93r-raffica-continued/1.1.0",
-     "published_at": "2026-09-26T00:33:00.000000Z",
-     "dependencies": [
-      {
-       "id": 2310,
-       "name": "WTT - CommonLib",
-       "slug": "wtt-commonlib",
-       "constraint": "",
-       "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
-      }
-     ]
-    },
-    {
-     "id": 15551,
-     "version": "1.0.0",
-     "description": "<p>Initial SPT 4.0.13 release of the Beretta 93R Raffica migration.</p>\n<h3>Migrated and preserved</h3>\n<ul>\n<li>Beretta 93R weapon and seven original custom attachments</li>\n<li>Single and burst fire</li>\n<li>Original models, textures, animations, and audio</li>\n<li>Original magazine and 9x19mm ammunition compatibility</li>\n<li>M93R Auto 9 and M93R Stock presets</li>\n<li>Mastery integration</li>\n<li>Eight Peacekeeper LL1 offers</li>\n<li>Gunsmith compatibility</li>\n<li>USEC and BEAR PMC Holster integration</li>\n</ul>\n<h3>Runtime testing</h3>\n<p>Verified in SPT 4.0.13:</p>\n<ul>\n<li>Server startup</li>\n<li>Weapon loading and equipping</li>\n<li>Single and burst fire</li>\n<li>Fire-mode switching</li>\n<li>Reloading and magazine interaction</li>\n<li>Stock configuration</li>\n<li>Suppressed and unsuppressed operation</li>\n<li>Audio</li>\n<li>Peacekeeper integration</li>\n<li>M93R Stock preset</li>\n<li>Mastery</li>\n</ul>\n<h3>Known issue</h3>\n<p>The custom animated foregrip can cause a small cosmetic arm/hand reset after reloads and around some fire-mode transitions. Weapon functionality is unaffected.</p>\n<h3>Requirements</h3>\n<ul>\n<li>SPT 4.0.13</li>\n<li>WTT ServerCommonLib 2.0.23</li>\n</ul>\n<p>Full migration history, source, credits, validation, and known limitations are available in the Codeberg repository.</p>\n",
-     "spt_constraint": "4.0.13",
-     "fika": "unknown",
-     "downloads": 140,
-     "size": 28728655,
-     "link": "https://sp-mod.com/mod/download/3057/beretta-93r-raffica-continued/1.0.0",
-     "published_at": "2026-09-23T00:15:00.000000Z",
      "dependencies": [
       {
        "id": 2310,
@@ -205790,8 +205666,180 @@
      "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
     }
    ],
+   "published_at": "2026-09-22T23:24:00.000000Z",
+   "updated_at": "2026-09-28T21:29:04.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
+    "cheat_notice": false,
+    "profile_binding_notice": true
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 3057,
+   "hub_id": null,
+   "guid": "com.zincropes.beretta93r",
+   "name": "Beretta 93R Raffica Continued",
+   "slug": "beretta-93r-raffica-continued",
+   "teaser": "Choccy Milk's Beretta 93R Raffica, migrated and updated for SPT 4.0.13 and 4.1.6.",
+   "description_html": "<p>I missed it, so I pumped some of it through chatgpt. Don\u2019t ask much of me, but I hope this works for you because it works for me and the boys.</p>\n<p>I\u2019ll probably update commonlib dependency for 4.0.13 to 2.0.24, or maybe it\u2019ll just work, idk, try it and let me know.</p>\n<p>Anyone can modify it or rewrite it, whatever, just give Choccy his dues.</p>\n<p>Anyways, this is what Mr. GPT put out for a description:</p>\n<h1>Beretta 93R Raffica Continued</h1>\n<p>An SPT 4.0.13 migration of Choccy Milk\u2019s Beretta 93R Raffica, preserving the original weapon, attachments, models, textures, animations, sounds, presets, mastery, trader integration, Gunsmith compatibility, and PMC integration wherever compatible with the current SPT runtime.</p>\n<h2>Features</h2>\n<ul>\n<li>Beretta 93R with single and burst fire</li>\n<li>Original custom weapon models, textures, animations, and audio</li>\n<li>Seven original custom attachments</li>\n<li>Original magazine and 9x19mm ammunition compatibility</li>\n<li>M93R Auto 9 and M93R Stock presets</li>\n<li>Peacekeeper trader integration</li>\n<li>Mastery integration</li>\n<li>Gunsmith compatibility</li>\n<li>U*** and B*** PMC Holster integration</li>\n<li>Original bundle and prefab relationships preserved</li>\n</ul>\n<h2>Requirements</h2>\n<ul>\n<li>SPT 4.0.13</li>\n<li>WTT ServerCommonLib 2.0.23</li>\n</ul>\n<h2>Installation</h2>\n<p>Download the release ZIP and extract it into your SPT installation root.</p>\n<p>The resulting mod should be located at:</p>\n<p><code>user/mods/Beretta93R/</code></p>\n<h2>Known Issue</h2>\n<p>The custom animated foregrip can cause a small cosmetic arm/hand animation reset after a magazine reload and around some fire-mode transitions.</p>\n<p>This is cosmetic only. Firing, reloading, and fire-mode switching remain functional.</p>\n<h2>Credits</h2>\n<ul>\n<li><strong>Choccy Milk / Choccy</strong> \u2014 original SPT mod author and EFT porter</li>\n<li><strong>RaiRaiTheRaichu</strong> \u2014 weapon requester and model provider</li>\n<li><strong>Paul Yakushev / Rifleman</strong> \u2014 Beretta 93R / Auto 9 model creator</li>\n<li><strong>zincropes</strong> \u2014 SPT 4.0.13 migration and maintenance</li>\n</ul>\n<p>Additional original attribution and licensing information is preserved in the repository and release package.</p>\n<p>This migration does not claim ownership of Choccy Milk\u2019s or any third-party assets.</p>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/IUQot4e6nWdrT5Ui2kv2RoFIaxLr4lqJCEXfO2De.png",
+   "forge_url": "https://sp-mod.com/mod/3057/beretta-93r-raffica-continued",
+   "downloads": 707,
+   "favourites": 8,
+   "featured": false,
+   "fika": false,
+   "fika_latest": "unknown",
+   "category": {
+    "id": 13,
+    "title": "Weapons",
+    "slug": "weapons"
+   },
+   "license": {
+    "name": "Creative Commons BY-NC 3.0",
+    "link": "http://creativecommons.org/licenses/by-nc/3.0/legalcode"
+   },
+   "authors": [
+    {
+     "id": 117891,
+     "name": "zincropes",
+     "avatar": "https://files.sp-mod.com/profile-photos/Rif0A8yS8IiGl7tLStuYnGhijtP0EchvxkP25rqw_128w.webp"
+    },
+    {
+     "id": 44,
+     "name": "Choccy Milk",
+     "avatar": "https://files.sp-mod.com/profile-photos/385222d64fa85020e601547d6e3f90cd761236d0_128w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://codeberg.org/zincropes/93R-Migration/src/tag/v1.0.0",
+     "label": "Source Code 1.0.0"
+    },
+    {
+     "url": "https://codeberg.org/zincropes/93R-Migration/src/tag/v1.1.0",
+     "label": "Source Code 1.1.0"
+    },
+    {
+     "url": "https://codeberg.org/zincropes/93R-Migration/src/tag/v1.1.1",
+     "label": "Source Code 1.1.1 "
+    },
+    {
+     "url": "https://codeberg.org/zincropes/93R-Migration/src/tag/v1.1.2",
+     "label": "Source Code 1.1.2"
+    }
+   ],
+   "versions": [
+    {
+     "id": 15652,
+     "version": "1.1.2",
+     "description": "<h2>SPT 4.1.6 Compatibility Update</h2>\n<p>This release improves compatibility with heavily modded SPT 4.1.6 installations.</p>\n<h3>Changes</h3>\n<ul>\n<li>Runtime weapon-property changes made by other mods no longer cause fatal startup errors when the 93R remains structurally usable.</li>\n<li>Runtime changes to values such as weight, heat, malfunction chance, recoil, fire rate, accuracy, durability, and similar balance properties are now treated as compatibility drift rather than source corruption.</li>\n<li>Runtime property differences are reported diagnostically without restoring or overwriting another mod\u2019s values.</li>\n<li>Additional compatible magazines remain supported.</li>\n<li>Compatible custom ammunition relationships remain supported.</li>\n<li>Optional malformed or incompatible third-party magazine entries remain non-fatal when another usable 93R magazine/ammunition path exists.</li>\n<li>Additive PMC runtime pools remain supported.</li>\n<li>Fatal validation is reserved for genuinely unusable or structurally invalid 93R runtime state.</li>\n<li>No weapon balance, model, audio, animation, preset, trader, flea, or sight-development content is intentionally changed by this update.</li>\n</ul>\n<h3>Validation</h3>\n<p>Verified with:</p>\n<ul>\n<li>SPT 4.1.6</li>\n<li>WTT ServerCommonLib 3.0.6</li>\n<li>Full validator suite</li>\n<li>Compiled magazine/ammunition compatibility tests</li>\n<li>Compiled runtime core-property compatibility tests</li>\n<li>A heavily modded 62-server-mod test environment</li>\n<li>Two clean server startup gates</li>\n<li>Successful in-game testing</li>\n</ul>\n<h3>Known Issue</h3>\n<p>The folding foregrip may still show a small cosmetic hand/arm reset after some reloads or fire-mode transitions. Weapon functionality is unaffected.</p>\n<p>Full Gunsmith quest turn-in and naturally generated PMC usage remain non-blocking and were not required for this update.</p>\n",
+     "spt_constraint": "4.1.6",
+     "fika": "unknown",
+     "downloads": 51,
+     "size": 28602256,
+     "link": "https://sp-mod.com/mod/download/3057/beretta-93r-raffica-continued/1.1.2",
+     "published_at": "2026-09-28T21:38:00.000000Z",
+     "dependencies": [
+      {
+       "id": 2310,
+       "name": "WTT - CommonLib",
+       "slug": "wtt-commonlib",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
+      }
+     ]
+    },
+    {
+     "id": 15619,
+     "version": "1.1.1",
+     "description": "<h2>SPT 4.1.6 Compatibility Hotfix</h2>\n<p>This release improves compatibility with modded SPT 4.1.6 setups that extend M9/93R-compatible magazine, ammunition, or PMC runtime data.</p>\n<h3>Changes</h3>\n<ul>\n<li>Allows additional runtime-compatible M9/93R magazines.</li>\n<li>Supports compatible custom ammunition relationships in extended magazines.</li>\n<li>Optional malformed or incompatible third-party magazine entries now produce warnings instead of fatal startup errors when another usable 93R magazine/ammunition path remains.</li>\n<li>Allows additive PMC runtime pools.</li>\n<li>Runtime validation now focuses on whether at least one usable 93R magazine \u2192 ammunition \u2192 chamber path remains.</li>\n<li>Preserves the original weapon data, presets, Peacekeeper integration, mastery, Gunsmith compatibility, flea-market behavior, Unity bundles, audio, animations, and balance.</li>\n<li>No RMR/ACRO sight-development content is included.</li>\n</ul>\n<h3>Tested</h3>\n<p>Verified with:</p>\n<ul>\n<li>SPT 4.1.6</li>\n<li>WTT ServerCommonLib 3.0.6</li>\n<li>Full validator suite</li>\n<li>Compiled magazine/ammunition compatibility regression matrix</li>\n<li>Two clean server startup gates</li>\n<li>Successful external compatibility testing</li>\n</ul>\n<h3>Known Issue</h3>\n<p>The folding foregrip may still show a small cosmetic hand/arm reset after some reloads or fire-mode transitions. Weapon functionality is unaffected.</p>\n<p>Full Gunsmith quest turn-in and naturally generated PMC usage remain non-blocking and were not required for this hotfix.</p>\n",
+     "spt_constraint": "4.1.6",
+     "fika": "unknown",
+     "downloads": 246,
+     "size": 28599171,
+     "link": "https://sp-mod.com/mod/download/3057/beretta-93r-raffica-continued/1.1.1",
+     "published_at": "2026-09-26T17:42:00.000000Z",
+     "dependencies": [
+      {
+       "id": 2310,
+       "name": "WTT - CommonLib",
+       "slug": "wtt-commonlib",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
+      }
+     ]
+    },
+    {
+     "id": 15608,
+     "version": "1.1.0",
+     "description": "<h2>SPT 4.1.6 Update</h2>\n<p>This release ports the Beretta 93R Raffica to SPT 4.1.6.</p>\n<h3>Changes</h3>\n<ul>\n<li>Migrated the server mod to .NET 10.</li>\n<li>Updated compatibility for SPT 4.1.6.</li>\n<li>Updated WTT ServerCommonLib dependency to 3.0.6.</li>\n<li>Added the SPT 4.1.6 preload lifecycle required for custom item registration.</li>\n<li>Added early preset registration for native preset and flea-market compatibility.</li>\n<li>Updated the legacy rear-sight slot identifier for CommonLib 3.0.6 ObjectId requirements.</li>\n<li>Preserved both original 93R presets.</li>\n<li>Preserved Peacekeeper trader integration.</li>\n<li>Preserved weapon mastery integration.</li>\n<li>Preserved Gunsmith compatibility.</li>\n<li>Preserved USEC and BEAR sidearm integration.</li>\n<li>Preserved all original Unity bundles, models, textures, animations, and audio.</li>\n<li>Flea-market offers now use the assembled M93R Stock configuration instead of a bare receiver.</li>\n</ul>\n<h3>Tested</h3>\n<p>Verified in SPT 4.1.6:</p>\n<ul>\n<li>Weapon rendering</li>\n<li>Semi-automatic fire</li>\n<li>Three-round burst fire</li>\n<li>Reloading</li>\n<li>Fire-mode switching</li>\n<li>Magazines</li>\n<li>Stock and attachment configurations</li>\n<li>Suppressed and unsuppressed audio</li>\n<li>Animations</li>\n<li>Peacekeeper inventory</li>\n<li>Mastery</li>\n<li>Flea-market assembled weapon offers</li>\n</ul>\n<h3>Known Issue</h3>\n<p>The folding foregrip may show a small cosmetic hand/arm reset after some reloads or fire-mode transitions. Weapon functionality is unaffected.</p>\n<p>Full Gunsmith quest turn-in and naturally generated PMC usage were not required as release blockers.</p>\n<p>Fika compatibility has not been tested.</p>\n",
+     "spt_constraint": "4.1.6",
+     "fika": "unknown",
+     "downloads": 239,
+     "size": 28597360,
+     "link": "https://sp-mod.com/mod/download/3057/beretta-93r-raffica-continued/1.1.0",
+     "published_at": "2026-09-26T00:33:00.000000Z",
+     "dependencies": [
+      {
+       "id": 2310,
+       "name": "WTT - CommonLib",
+       "slug": "wtt-commonlib",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
+      }
+     ]
+    },
+    {
+     "id": 15551,
+     "version": "1.0.0",
+     "description": "<p>Initial SPT 4.0.13 release of the Beretta 93R Raffica migration.</p>\n<h3>Migrated and preserved</h3>\n<ul>\n<li>Beretta 93R weapon and seven original custom attachments</li>\n<li>Single and burst fire</li>\n<li>Original models, textures, animations, and audio</li>\n<li>Original magazine and 9x19mm ammunition compatibility</li>\n<li>M93R Auto 9 and M93R Stock presets</li>\n<li>Mastery integration</li>\n<li>Eight Peacekeeper LL1 offers</li>\n<li>Gunsmith compatibility</li>\n<li>USEC and BEAR PMC Holster integration</li>\n</ul>\n<h3>Runtime testing</h3>\n<p>Verified in SPT 4.0.13:</p>\n<ul>\n<li>Server startup</li>\n<li>Weapon loading and equipping</li>\n<li>Single and burst fire</li>\n<li>Fire-mode switching</li>\n<li>Reloading and magazine interaction</li>\n<li>Stock configuration</li>\n<li>Suppressed and unsuppressed operation</li>\n<li>Audio</li>\n<li>Peacekeeper integration</li>\n<li>M93R Stock preset</li>\n<li>Mastery</li>\n</ul>\n<h3>Known issue</h3>\n<p>The custom animated foregrip can cause a small cosmetic arm/hand reset after reloads and around some fire-mode transitions. Weapon functionality is unaffected.</p>\n<h3>Requirements</h3>\n<ul>\n<li>SPT 4.0.13</li>\n<li>WTT ServerCommonLib 2.0.23</li>\n</ul>\n<p>Full migration history, source, credits, validation, and known limitations are available in the Codeberg repository.</p>\n",
+     "spt_constraint": "4.0.13",
+     "fika": "unknown",
+     "downloads": 171,
+     "size": 28728655,
+     "link": "https://sp-mod.com/mod/download/3057/beretta-93r-raffica-continued/1.0.0",
+     "published_at": "2026-09-23T00:15:00.000000Z",
+     "dependencies": [
+      {
+       "id": 2310,
+       "name": "WTT - CommonLib",
+       "slug": "wtt-commonlib",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
+      }
+     ]
+    }
+   ],
+   "latest_version": "1.1.2",
+   "spt_constraint": "4.1.6",
+   "all_spt_constraints": [
+    "4.0.13",
+    "4.1.6"
+   ],
+   "dependencies": [
+    {
+     "id": 2310,
+     "name": "WTT - CommonLib",
+     "slug": "wtt-commonlib",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
+    }
+   ],
+   "all_dependencies": [
+    {
+     "id": 2310,
+     "name": "WTT - CommonLib",
+     "slug": "wtt-commonlib",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
+    }
+   ],
    "published_at": "2026-09-23T00:10:00.000000Z",
-   "updated_at": "2026-09-26T17:50:05.000000Z",
+   "updated_at": "2026-09-29T00:34:51.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -206342,12 +206390,12 @@
    "guid": "com.zincropes.wa2000.nativeaudio",
    "name": "Walther WA 2000 Sniper Rifle Continued",
    "slug": "walther-wa-2000-sniper-rifle-continued",
-   "teaser": "Restores Choccy Milk\u2019s Walther WA 2000 for SPT 4.0.13 with its attachments, ammunition, presets, traders, bot integration, and corrected unsuppressed audio.",
+   "teaser": "Restores Choccy Milk\u2019s Walther WA 2000 for SPT 4.0.13 and 4.1.6 with its attachments, ammunition, presets, traders, bot integration. Sound rework to be done soon.",
    "description_html": "<p>I missed it, so I pumped some of it through chatgpt. Don\u2019t ask much of me, but I hope this works for you because it works for me and the boys.</p>\n<p>Due to sound being messed up and my time constraints I\u2019ve replaced the unsuppressed shot audio with the M1A shot sounds. This will be corrected at a later time.</p>\n<p>I\u2019ll update for 4.1 when I get around to it. I\u2019ll probably update commonlib dependency for 4.0.13 to 2.0.24, or maybe it\u2019ll just work, idk, try it and let me know.</p>\n<p>Anyone can modify it or rewrite it, whatever, just give Choccy his dues.</p>\n<p>Anyways, this is what Mr. GPT put out for a description:</p>\n<h1>Walther WA 2000 Sniper Rifle Continued</h1>\n<p>A complete SPT 4.0.13 migration of Choccy Milk\u2019s Walther WA 2000 weapon mod.</p>\n<p>This release restores the rifle, 19 attachments, four cartridges, two presets, mastery, Peacekeeper and Jaeger offers, inventory compatibility, static-loot integration, boss loadouts, and PMC generation.</p>\n<h2>Native unsuppressed audio</h2>\n<p>The original Unity audio containers remain unchanged. Because their legacy unsuppressed outdoor playback is incompatible with the current EFT audio lifecycle, this package includes the <strong>WA2000 Native Audio</strong> client plugin.</p>\n<p>The plugin automatically loads the native M1A regular firing banks and replaces only:</p>\n<ul>\n<li><code>Body</code></li>\n<li><code>Tail</code></li>\n<li><code>Doublet</code></li>\n</ul>\n<p>The WA2000\u2019s original suppressed banks, mechanical sounds, animations, model, attachments, and gameplay behavior remain unchanged. You do not need to own, inspect, preview, or equip an M1A.</p>\n<h2>Installation</h2>\n<p>Extract the archive once into the root of your SPT 4.0.13 installation.</p>\n<p>Confirm that these files exist:</p>\n<ul>\n<li><code>user/mods/WA2000/WA2000.dll</code></li>\n<li><code>BepInEx/plugins/WA2000NativeAudio/WA2000NativeAudio.dll</code></li>\n</ul>\n<p>Do not install multiple copies of the client plugin.</p>\n<h2>Requirements</h2>\n<ul>\n<li>SPT <code>4.0.13</code></li>\n<li>WTT Server CommonLib <code>~2.0.23</code></li>\n</ul>\n<h2>Fika</h2>\n<p>Fika is not a code dependency. Every participant should install the same version of the WA2000 Native Audio DLL and use matching configuration.</p>\n<p>Full multi-participant Fika compatibility has not yet been formally verified.</p>\n<h2>Known limitation</h2>\n<p>The standalone WA 2000 TAC preset may not save correctly, although its parts and trader build remain available. Core weapon, attachment, trader, bot, loot, profile, and raid behavior are functional.</p>\n<h2>Removal</h2>\n<p>Remove:</p>\n<ul>\n<li><code>user/mods/WA2000</code></li>\n<li><code>BepInEx/plugins/WA2000NativeAudio</code></li>\n</ul>\n<p>You may also remove:</p>\n<ul>\n<li><code>BepInEx/config/com.zincropes.wa2000.nativeaudio.cfg</code></li>\n</ul>\n<p>No profile migration is required to remove the client plugin.</p>\n<h2>Credits</h2>\n<ul>\n<li><strong>Choccy Milk</strong> \u2014 original WA2000 mod and public migration/reupload permission</li>\n<li><strong>RaiRaiTheRaichu</strong></li>\n<li><strong>Activision</strong></li>\n<li><strong>Acer\u2019s Awesome Weapon Rigs</strong></li>\n<li><strong>RealMo3</strong> \u2014 Realism and ammunition update reference</li>\n<li><strong>zincropes</strong> \u2014 SPT 4.0.13 migration and native-audio integration</li>\n</ul>\n<p>Released under <strong>CC BY 3.0</strong>, retaining the original permissions, attribution, and applicable RealMo3 terms.</p>\n<h2>Source and downloads</h2>\n<ul>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://codeberg.org/zincropes/WA-Migration\" rel=\"noreferrer noopener\">Source code</a></li>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://codeberg.org/zincropes/WA-Migration/releases/tag/v1.0.0\" rel=\"noreferrer noopener\">Codeberg release</a></li>\n</ul>\n",
    "thumbnail": "https://files.sp-mod.com/mods/Y07vzJtlJu2SHbPZp1s3tJ3PIFturSrfc5oG1f9Z.png",
    "forge_url": "https://sp-mod.com/mod/3063/walther-wa-2000-sniper-rifle-continued",
-   "downloads": 129,
-   "favourites": 3,
+   "downloads": 192,
+   "favourites": 5,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -206376,16 +206424,40 @@
     {
      "url": "https://codeberg.org/zincropes/WA-Migration/src/tag/v1.0.0",
      "label": "Source Code 1.0.0"
+    },
+    {
+     "url": "https://codeberg.org/zincropes/WA-Migration/src/tag/v1.1.0",
+     "label": "Source Code 1.1.0"
     }
    ],
    "versions": [
+    {
+     "id": 15653,
+     "version": "1.1.0",
+     "description": "<h1>WA2000 v1.1.0 \u2014 SPT 4.1.6</h1>\n<p>This release ports the Walther WA 2000 and its associated content to <strong>SPT 4.1.6</strong> and <strong>WTT CommonLib 3.0.6</strong>.</p>\n<h2>Included</h2>\n<ul>\n<li>Walther WA 2000 rifle</li>\n<li>Original attachments, magazines and ammunition</li>\n<li>Stock and TAC presets</li>\n<li>Peacekeeper and Jaeger trader offers</li>\n<li>Flea-market support</li>\n<li>Mastery integration</li>\n<li>PMC, Shturman and Birdeye integration</li>\n<li>Static weapon-container loot integration</li>\n<li>Automatic native M1A audio replacement for unsuppressed firing</li>\n</ul>\n<h2>Native audio</h2>\n<p>The included <code>WA2000 Native Audio 0.3.0</code> client plugin automatically loads the native M1A firing sound and applies it to unsuppressed WA2000 instances.</p>\n<p>You do not need to purchase, inspect or equip an M1A first.</p>\n<p>Only the regular <code>Body</code>, <code>Tail</code> and <code>Doublet</code> sound banks are replaced. The following remain unchanged:</p>\n<ul>\n<li>Integrated-suppressor audio</li>\n<li>Mechanical sounds</li>\n<li><code>AdditionalSounds</code></li>\n<li><code>Non_auto</code></li>\n<li>Models and animations</li>\n<li>Weapon statistics and gameplay data</li>\n</ul>\n<p>All 27 original WA2000 bundles remain byte-identical and were not rebuilt or modified.</p>\n<h2>Installation</h2>\n<p>Extract the archive directly into your SPT installation folder.</p>\n<p>The archive installs:</p>\n<ul>\n<li><code>SPT_Runtime/user/mods/WA2000</code></li>\n<li><code>BepInEx/plugins/WA2000NativeAudio/WA2000NativeAudio.dll</code></li>\n</ul>\n<p>Remove older WA2000 installations and duplicate <code>WA2000NativeAudio.dll</code> files before installing.</p>\n<h2>Requirements</h2>\n<ul>\n<li>SPT <code>4.1.6</code></li>\n<li>WTT CommonLib <code>3.0.6</code></li>\n</ul>\n<h2>Fika</h2>\n<p>The native-audio plugin is client-side. Every Fika participant should install the same release and use matching plugin configuration.</p>\n<p>Full multiplayer compatibility has not yet been formally certified, so the SP-Mod compatibility field remains <strong>Unknown</strong>.</p>\n<h2>Known limitations</h2>\n<ul>\n<li>SVM\u2019s marksman-rifle ammunition stack-size override does not currently affect the custom WA2000 cartridges. They retain their default stack size of 40. A compatibility correction is planned for a subsequent patch.</li>\n<li>The existing standalone TAC-preset save limitation remains.</li>\n<li>Reconstruction of the original WA2000 audio containers remains possible future work. This release uses the validated native M1A runtime solution.</li>\n</ul>\n<h2>Integrity</h2>\n<p>Archive SHA-256:</p>\n<p><code>980AB040FA1F1833FB36063EFE2E800B4A90518708AF9DB8F10C4DFC73365763</code></p>\n<p>Source, release notes and checksum files are available from the Codeberg release page.</p>\n",
+     "spt_constraint": "4.1.6",
+     "fika": "unknown",
+     "downloads": 21,
+     "size": 95332117,
+     "link": "https://sp-mod.com/mod/download/3063/walther-wa-2000-sniper-rifle-continued/1.1.0",
+     "published_at": "2026-09-29T00:32:00.000000Z",
+     "dependencies": [
+      {
+       "id": 2310,
+       "name": "WTT - CommonLib",
+       "slug": "wtt-commonlib",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
+      }
+     ]
+    },
     {
      "id": 15591,
      "version": "1.0.0",
      "description": "<h1>WA2000 1.0.0 for SPT 4.0.13</h1>\n<ul>\n<li>Migrates the complete Walther WA 2000 package to SPT 4.0.13.</li>\n<li>Restores 19 attachments and four .300 Winchester Magnum cartridges.</li>\n<li>Restores the Stock and TAC presets.</li>\n<li>Restores mastery and 28 Peacekeeper and Jaeger offers.</li>\n<li>Restores inventory filters and three static-loot weapon-box integrations.</li>\n<li>Restores Shturman, Birdeye, USEC, and BEAR loadout integration.</li>\n<li>Includes WA2000 Native Audio 0.2.8.</li>\n<li>Automatically substitutes native M1A regular firing banks for reliable unsuppressed audio.</li>\n<li>Preserves the original WA2000 suppressed and mechanical audio.</li>\n<li>Requires no manual M1A interaction.</li>\n<li>Retains all 27 original Unity bundles unchanged.</li>\n<li>Adds persistent menu-to-raid audio ownership and exact-once shutdown cleanup.</li>\n<li>Requires WTT Server CommonLib <code>~2.0.23</code>.</li>\n</ul>\n<h2>Known limitation</h2>\n<p>The standalone WA 2000 TAC preset may not save correctly, although its parts and trader build remain available.</p>\n<h2>Installation</h2>\n<p>Extract the archive once into the root of your SPT 4.0.13 installation.</p>\n<p>Every Fika participant should install the same client DLL and use matching configuration. Full multi-participant Fika compatibility has not yet been formally verified.</p>\n",
      "spt_constraint": "4.0.13",
      "fika": "unknown",
-     "downloads": 129,
+     "downloads": 171,
      "size": 95330114,
      "link": "https://sp-mod.com/mod/download/3063/walther-wa-2000-sniper-rifle-continued/1.0.0",
      "published_at": "2026-09-25T03:32:00.000000Z",
@@ -206400,10 +206472,11 @@
      ]
     }
    ],
-   "latest_version": "1.0.0",
-   "spt_constraint": "4.0.13",
+   "latest_version": "1.1.0",
+   "spt_constraint": "4.1.6",
    "all_spt_constraints": [
-    "4.0.13"
+    "4.0.13",
+    "4.1.6"
    ],
    "dependencies": [
     {
@@ -206424,7 +206497,7 @@
     }
    ],
    "published_at": "2026-09-25T03:31:00.000000Z",
-   "updated_at": "2026-09-26T17:04:30.000000Z",
+   "updated_at": "2026-09-29T00:38:41.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
