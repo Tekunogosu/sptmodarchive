@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-09-30T20:07:10Z",
+ "generated_at": "2026-10-01T00:36:55Z",
  "source": "https://sp-mod.com",
  "filter": "all",
- "mod_count": 2014,
+ "mod_count": 2016,
  "categories": [
   {
    "id": 12,
@@ -119590,11 +119590,11 @@
    "name": "Skill Multiplier",
    "slug": "skill-multiplier",
    "teaser": "Adds sliders for individual skill EXP multipliers.",
-   "description_html": "<h2>Features</h2>\n<ul>\n<li>Per-skill XP multipliers (configurable via f12)</li>\n<li>Global XP multiplier</li>\n<li>Option to disable skill fatigue (always gain full XP, enabled by default)</li>\n<li>Automatically generates config entries for all available skills (Should, in theory, work with any mod that adds custom skills)</li>\n</ul>\n<p>Default multipliers are 1x, which effectively means disabled. must be configured in f12 to take effect!</p>\n<p>Installation instructions shamelessly stolen from <a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/user/30839-drakiaxyz/\" rel=\"noreferrer noopener\">DrakiaXYZ</a></p>\n<h3>Installation</h3>\n<p>1) Open the downloaded zip file in <a target=\"_blank\" class=\"external-link\" href=\"https://www.7-zip.org/\" rel=\"noreferrer noopener\">7-zip</a></p>\n<p>2) Select the folder in the zip file in <a target=\"_blank\" class=\"external-link\" href=\"https://www.7-zip.org/\" rel=\"noreferrer noopener\">7-zip</a></p>\n<p>3) Drag the selected folder from <a target=\"_blank\" class=\"external-link\" href=\"https://www.7-zip.org/\" rel=\"noreferrer noopener\">7-zip</a> into your SPT folder</p>\n<p>Demonstration Video (Yes, it\u2019s Quest Tracker, but the same concept applies to most mods. No, you don\u2019t need to drop it onto LICENSE-Launcher.txt, just drop it into your SPT folder):</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/mZ1aLrW.gif\" alt=\"mZ1aLrW.gif\" /></p>\n",
+   "description_html": "<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Dazzuh/SkillMultiplier/refs/heads/main/docs/ui.png\" alt=\"ui\" /></p>\n<h2>Features</h2>\n<ul>\n<li>Per-skill XP multipliers (configurable via web, access it via your launcher)</li>\n<li>Global XP multiplier</li>\n<li>Option to disable skill fatigue (always gain full XP, enabled by default)</li>\n<li>Automatically generates config entries for all available skills (Should, in theory, work with any mod that adds custom skills)</li>\n<li>Compatible with Fika, Does not need to be installed on headless.</li>\n</ul>\n<p>Default multipliers are 1x, which effectively means disabled. must be configured in the web config to take effect!</p>\n<p>Installation instructions shamelessly stolen from <a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/user/30839-drakiaxyz/\" rel=\"noreferrer noopener\">DrakiaXYZ</a></p>\n<h3>Installation</h3>\n<p>1) Open the downloaded zip file in <a target=\"_blank\" class=\"external-link\" href=\"https://www.7-zip.org/\" rel=\"noreferrer noopener\">7-zip</a></p>\n<p>2) Select the folder in the zip file in <a target=\"_blank\" class=\"external-link\" href=\"https://www.7-zip.org/\" rel=\"noreferrer noopener\">7-zip</a></p>\n<p>3) Drag the selected folder from <a target=\"_blank\" class=\"external-link\" href=\"https://www.7-zip.org/\" rel=\"noreferrer noopener\">7-zip</a> into your SPT folder</p>\n<p>Demonstration Video (Yes, it\u2019s Quest Tracker, but the same concept applies to most mods. No, you don\u2019t need to drop it onto LICENSE-Launcher.txt, just drop it into your SPT folder):</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/mZ1aLrW.gif\" alt=\"mZ1aLrW.gif\" /></p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/2863.png",
    "forge_url": "https://sp-mod.com/mod/2162/skill-multiplier",
-   "downloads": 13041,
-   "favourites": 11,
+   "downloads": 13878,
+   "favourites": 18,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -119622,12 +119622,24 @@
    ],
    "versions": [
     {
+     "id": 15702,
+     "version": "2.1.0",
+     "description": "<h2>What\u2019s Changed</h2>\n<h1>Full mod rewrite</h1>\n<p>Server-side web config, sent to all clients and applied in real time.</p>\n<p>The math behind the multipliers have changed a bit - I recommend playing with your multipliers again.</p>\n<p>After installing and launching the spt.server, launch your client too. The client sends skills to the server before they can be adjusted.</p>\n<p>The mod is now baked into Tarkov\u2019s exp system on nearly every level, every skill and action is configurable and should apply the exp multipliers wherever tarkov needs them. This also fixes an issue with the old version where the green bars on the skills page weren\u2019t accurate to the amount of exp you actually got, and the gym didn\u2019t scale exp even with the multipliers. ALL Skill experience sources should now be covered.</p>\n<p>A migration from the previous config is included, when you launch a server or client with the old mod config the new config page will prompt you to migrate over your old settings or delete them.</p>\n<p>Disclaimer: Most of this update was done with the help of an LLM.</p>\n<p><strong>Full Changelog</strong>: <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Dazzuh/SkillMultiplier/compare/2.0.0...2.1.0\" rel=\"noreferrer noopener\">https://github.com/Dazzuh/SkillMultiplier/compare/2.0.0...2.1.0</a></p>\n",
+     "spt_constraint": "~4.1.5",
+     "fika": "compatible",
+     "downloads": 57,
+     "size": 79823,
+     "link": "https://sp-mod.com/mod/download/2162/skill-multiplier/2.1.0",
+     "published_at": "2026-09-30T22:18:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 15371,
      "version": "2.0.0",
      "description": "<p>Updated to SPT 4.1.5\nServer mod rewritten in C#, setup is the same. edit config.json in server mod folder to adjust the multiplier values of hideout management and crafting skills.</p>\n",
      "spt_constraint": "~4.1.5",
      "fika": "compatible",
-     "downloads": 824,
+     "downloads": 1551,
      "size": 13398,
      "link": "https://sp-mod.com/mod/download/2162/skill-multiplier/2.0.0",
      "published_at": "2026-09-18T11:56:00.000000Z",
@@ -119639,7 +119651,7 @@
      "description": "<p>2.0.0 Backported to SPT 4.0.13</p>\n<p>Source for this version can be found here: <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Dazzuh/SkillMultiplier/tree/backport/4.0.13\" rel=\"noreferrer noopener\">https://github.com/Dazzuh/SkillMultiplier/tree/backport/4.0.13</a></p>\n",
      "spt_constraint": "~4.0.13",
      "fika": "compatible",
-     "downloads": 23,
+     "downloads": 74,
      "size": 11442,
      "link": "https://sp-mod.com/mod/download/2162/skill-multiplier/2.0.0+4.0.13",
      "published_at": "2026-09-18T11:56:00.000000Z",
@@ -119651,14 +119663,14 @@
      "description": "<p>Fixed issue with build script causing an error when launching the server, Apologies.</p>\n<p><em>Full Changelog</em>: <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Dazzuh/SkillMultiplier/compare/1.1.0...1.1.1\" rel=\"noreferrer noopener\">1.1.0\u20261.1.1</a></p>\n",
      "spt_constraint": "~3.11.0",
      "fika": "unknown",
-     "downloads": 8842,
+     "downloads": 8844,
      "size": null,
      "link": "https://sp-mod.com/mod/download/2162/skill-multiplier/1.1.1",
      "published_at": "2025-06-16T11:20:50.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "2.0.0",
+   "latest_version": "2.1.0",
    "spt_constraint": "~4.1.5",
    "all_spt_constraints": [
     "~3.11.0",
@@ -119668,7 +119680,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2025-05-26T11:37:00.000000Z",
-   "updated_at": "2026-09-19T20:04:56.000000Z",
+   "updated_at": "2026-09-30T22:26:30.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -122059,8 +122071,8 @@
    "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Overview</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/user-attachments/assets/ce0694c6-9151-4d1a-a499-39c8f5e1f07c\" alt=\"ce0694c6-9151-4d1a-a499-39c8f5e1f07c\" /></p>\n<p>ECOT (or, Eukyre\u2019s Consortium of Things) is an all-in-one mod in which I will be adding most of my future content that isn\u2019t set-up for Echoes of T*****, or my other standalone mods; as such, you can expect to find a wide variety of items in this mod, from Glocks to specific Shark Plushies (Yes, they\u2019re back.)</p>\n<p><strong><a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/1764-epic-s-all-in-one/#tab_5f6a777203e5c6a88eeb2098e02807e37cb87237\" rel=\"noreferrer noopener\">THIS MOD REQUIRES EPIC\u2019S ALL IN ONE TO WORK.</a></strong></p>\n<p><strong>You have alerted the shork.</strong></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/HqK12Vf.gif\" alt=\"HqK12Vf.gif\" /></p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Contents</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/user-attachments/assets/412742b5-a034-4d61-be9b-af5407298605\" alt=\"412742b5-a034-4d61-be9b-af5407298605\" /></p>\n<p>Currently, this mod contains the following items:</p>\n<ul>\n<li>.338 Lapua Magnum RIP</li>\n<li>.338 Lapua Magnum Raufoss</li>\n<li>.338 Lapua Magnum Raufoss ammo pack (10 pcs)</li>\n<li>.40 S&amp;W +P</li>\n<li>.40 S&amp;W +P ammo pack (50 pcs)</li>\n<li>.40 S&amp;W FMJ</li>\n<li>.40 S&amp;W FMJ ammo pack (50 pcs)</li>\n<li>.40 S&amp;W JHP</li>\n<li>.40 S&amp;W JHP ammo pack {50 pcs)</li>\n<li>.40 S&amp;W RIP</li>\n<li>.40 S&amp;W Red Tracer</li>\n<li>.40 S&amp;W Tracer ammo pack (50 pcs)</li>\n<li>.40 S&amp;W Woodsman</li>\n<li>.40 S&amp;W Xtreme Penetrator</li>\n<li>5.56x45 HK PM Gen.3 MR556 STANAG 30-round magazine</li>\n<li>A-TEC A-Flow .300 BLK birdcage flash hider</li>\n<li>A-TEC A-Flow .300 BLK sound suppressor</li>\n<li>AAC Ti-RANT 45S .45 ACP sound suppressor</li>\n<li>AAC Ti-RANT 45S .45 ACP sound suppressor (FDE)</li>\n<li>AK 7.62x39 Hungarian \u201cTanker\u201d 20-round magazine</li>\n<li>AK 7.62x39 modified windowed 30-round magazine (issued \u201955 or later)</li>\n<li>AK KRUK CRC 1U020-MIL M-LOK handguard</li>\n<li>AK KRUK CRC 1U020-MIL M-LOK handguard (Anodized Red)</li>\n<li>AK KRUK CRC 1U020-MIL M-LOK handguard (FDE)</li>\n<li>AK KRUK CRC 1U020-MIL M-LOK handguard (Olive Drab)</li>\n<li>AK Molot Arms RPK/VEPR-12 polymer handguard</li>\n<li>AK Zenit B-11 handguard with B-19 upper mount</li>\n<li>AK-74 5.45x39 6L23 modified windowed 30-round magazine</li>\n<li>AK-74 5.45x39 6L23 modified windowed 30-round magazine (Plum)</li>\n<li>AR-10 7.62x51 Magpul PMAG 25 SR-LR GEN M3 25-round magazine</li>\n<li>AR-15 5.56x45 HEXMAG Series 2 PMAG 30-round magazine</li>\n<li>AR-15 5.56x45 HEXMAG Series 2 PMAG 30-round magazine (FDE)</li>\n<li>AR-15 5.56x45 Magpul PMAG 30 GEN M3 TTI \u201cBase Pad +5/6\u201d 35-round magazine</li>\n<li>AR-15 5.56x45 Magpul PMAG 30 GEN M3 TTI \u201cBase Pad +5/6\u201d 35-round magazine (FDE)</li>\n<li>AR-15 5.56x45 Magpul PMAG 40 GEN M3 TTI \u201cBase Pad +5/6\u201d 46-round magazine</li>\n<li>AR-15 5.56x45 Magpul PMAG 40 GEN M3 TTI \u201cBase Pad +5/6\u201d 46-round magazine (FDE)</li>\n<li>AR-15 5.56x45 Strike Industries PMAG 33-round magazine</li>\n<li>AR-15 5.56x45 Strike Industries PMAG 33-round magazine (FDE)</li>\n<li>AR-15 AB Arms SBR P*Grip pistol grip</li>\n<li>AR-15 AB Arms USS-X stock (FDE)</li>\n<li>AR-15 Adaptiv Defense URR RAHG handguard</li>\n<li>AR-15 Adaptiv Defense URR RAHG handguard (Anodized FDE)</li>\n<li>AR-15 Adaptiv Defense URR RAHG handguard (Prototype)</li>\n<li>AR-15 Aero Precision Gen.2 Enhanced 12.7 inch M-LOK handguard</li>\n<li>AR-15 Aero Precision Gen.2 Enhanced 15 inch M-LOK handguard</li>\n<li>AR-15 Aero Precision Gen.2 Enhanced 7.3 inch M-LOK handguard</li>\n<li>AR-15 Aero Precision Gen.2 Enhanced 9.3 inch M-LOK handguard</li>\n<li>AR-15 BCM GUNFIGHTER MOD 0 pistol grip</li>\n<li>AR-15 BCM GUNFIGHTER MOD 0 pistol grip (FDE)</li>\n<li>AR-15 BCM GUNFIGHTER MOD 2 SOPMOD buttstock</li>\n<li>AR-15 BCM GUNFIGHTER MOD 2 SOPMOD buttstock (FDE)</li>\n<li>AR-15 BCM KMR13 KeyMod 13 inch handguard</li>\n<li>AR-15 BCM KMR13 KeyMod 13 inch handguard (FDE)</li>\n<li>AR-15 BCM Mk.2 5.56x45 upper receiver</li>\n<li>AR-15 BCM Mk.2 5.56x45 upper receiver (FDE)</li>\n<li>AR-15 BCM Raider M10 10 inch M-LOK handguard</li>\n<li>AR-15 Daniel Defense Fixed front sight</li>\n<li>AR-15 Daniel Defense Fixed rear sight</li>\n<li>AR-15 Geissele A22 pistol grip</li>\n<li>AR-15 Geissele A22 pistol grip (DDC)</li>\n<li>AR-15 Magpul MIAD pistol grip</li>\n<li>AR-15 Magpul MOE SL-S buttstock</li>\n<li>AR-15 Magpul MOE SL-S buttstock (FDE)</li>\n<li>AR-15 Magpul MOE-K2 pistol grip</li>\n<li>AR-15 Magpul MOE-K2 pistol grip (FDE)</li>\n<li>AR-15 Reptilia CQG pistol grip</li>\n<li>AR-15 Reptilia CQG pistol grip (FDE)</li>\n<li>AR-15 Strike Industries Advanced Receiver Extension buffer tube (Anodized Blue)</li>\n<li>AR-15 Strike Industries Advanced Receiver Extension buffer tube (FDE)</li>\n<li>AR-15 Strike Industries Advanced Receiver Extension buffer tube (Olive Drab)</li>\n<li>AR-15 TangoDown BG-18 pistol grip</li>\n<li>B5 Systems M-LOK reversed vertical grip</li>\n<li>B5 Systems M-LOK reversed vertical grip (Coyote Tan)</li>\n<li>B5 Systems M-LOK reversed vertical grip (Wraith Grey)</li>\n<li>B5 Systems M-LOK vertical grip</li>\n<li>B5 Systems M-LOK vertical grip (Coyote Tan)</li>\n<li>B5 Systems M-LOK vertical grip (Wraith Grey)</li>\n<li>BLAHAJ soft shark toy</li>\n<li>BLAHAJ soft shark toy (Small)</li>\n<li>Daniel Defence Enhanced Picatinny vertical foregrip</li>\n<li>Daniel Defence Enhanced Picatinny vertical foregrip (Coyote Brown)</li>\n<li>Daniel Defence Enhanced Picatinny vertical foregrip (Slate Gray)</li>\n<li>Dead Air Sandman-S 7.62x51 sound suppressor</li>\n<li>EOTech EXPS3 holographic sight cover (ECOT Splinter)</li>\n<li>FN FNX slide cover (FDE)</li>\n<li>FN FNX-45 .45 ACP 5.1 inch threaded barrel</li>\n<li>FN FNX-45 Leupold DeltaPoint slide mount</li>\n<li>FN FNX-45 Tactical .45 ACP pistol</li>\n<li>FN FNX-45 Trijicon RMR slide-mount</li>\n<li>FN FNX-45 pistol slide</li>\n<li>FN FNX-45 tritium front sight</li>\n<li>FN FNX-45 tritium rear sight</li>\n<li>FN FNX/FNP .45 ACP 15-round magazine</li>\n<li>FN SCAR 20 SSR enhanced marksman stock (FDE)</li>\n<li>FN SCAR-20S Extended bottom rail</li>\n<li>FN SCAR-20S Multi-Caliber upper receiver (FDE)</li>\n<li>Glock .40 S&amp;W 15-round magazine</li>\n<li>Glock .40 S&amp;W KRISS G22 MagEx 31-round magazine</li>\n<li>Glock .40 S&amp;W Lone Wolf AlphaWolf threaded barrel</li>\n<li>Glock 17L 9x19 6 inch barrel</li>\n<li>Glock 17L MOS pistol slide</li>\n<li>Glock 22 .40 S&amp;W 114mm barrel</li>\n<li>Glock 22 .40 S&amp;W pistol</li>\n<li>Glock 22 MOS pistol slide</li>\n<li>Glock MOS Trijicon RMR mount base</li>\n<li>Glock Strike Industries ARK pistol slide</li>\n<li>Glock Zaffiri Precision ZPS.4 pistol slide</li>\n<li>HK 416A8/G95KA1 KeyMod extended handguard</li>\n<li>HK 416A8/G95KA1 KeyMod handguard</li>\n<li>HK MP5/40 .40 S&amp;W 30-round magazine</li>\n<li>HK MP5/40 .40 S&amp;W submachine gun</li>\n<li>HK MP5/40 .40 S&amp;W upper receiver</li>\n<li>HK MP5/40 3-lug suppressor adapter</li>\n<li>HK MP5/40SD .40 S&amp;W sound suppressor</li>\n<li>HK MP5/40SD .40 S&amp;W upper receiver</li>\n<li>HK UMP .40 S&amp;W 30-round magazine</li>\n<li>HK UMP .40 S&amp;W 8 inch threaded barrel</li>\n<li>HK UMP .40 S&amp;W submachine gun</li>\n<li>HK UMP custom AR buffer tube stock</li>\n<li>HK UMP modified Zhukov-U handguard</li>\n<li>HRF Skiff rail mount</li>\n<li>Holosun HE509T low profile mount</li>\n<li>Irregular Defense OMM optic mount</li>\n<li>Irregular Defense OMM optic mount (FDE)</li>\n<li>KAC DSR300 .300 BLK sound suppressor</li>\n<li>Kalashnikov AKS-74UN 5.56x45 assault rifle</li>\n<li>Kastle Group FRT 226 scope mount</li>\n<li>Kastle Group FRT 226 scope mount (FDE)</li>\n<li>Kastle Group FRT 226 scope mount (Sand)</li>\n<li>KeyMod to M-LOK adapter plate</li>\n<li>M4A1 FSB chopped gas block</li>\n<li>M700 Remington wooden stock</li>\n<li>Ops-Core AMP headset (Black Camo)</li>\n<li>Ops-Core AMP headset (Coyote Tan Camo)</li>\n<li>Ops-Core AMP headset (Coyote Tan)</li>\n<li>Peltor ComTac VI headset</li>\n<li>Rugged Obsidian9 9x19 sound suppressor</li>\n<li>Rugged Obsidian9 9x19 sound suppressor (FDE)</li>\n<li>Rugged Obsidian9-S 9x19 sound suppressor</li>\n<li>Rugged Obsidian9-S 9x19 sound suppressor (FDE)</li>\n<li>SilencerCo Osprey 45 2.0 .45 ACP sound suppressor</li>\n<li>SilencerCo Osprey 45 2.0 .45 ACP sound suppressor (FDE)</li>\n<li>SilencerCo Osprey 9 2.0 9x19 sound suppressor</li>\n<li>SilencerCo Osprey 9 2.0 9x19 sound suppressor (FDE)</li>\n<li>Troy Battlesight offset front sight</li>\n<li>Troy Battlesight offset rear sight</li>\n<li>Tungsten Cube (217mm)</li>\n<li>Unity Tactical FAST COG sight mount</li>\n<li>Unity Tactical FAST COG sight mount (FDE)</li>\n<li>Unity Tactical FAST COMP-series scope mount</li>\n<li>Unity Tactical FAST COMP-series scope mount (Bronze)</li>\n<li>Unity Tactical FAST COMP-series scope mount (FDE)</li>\n<li>Unity Tactical FAST COMP-series scope mount (Green)</li>\n<li>Unity Tactical FAST COMP-series scope mount (White)</li>\n<li>Unity Tactical FAST LPVO 30mm ring scope mount</li>\n<li>Unity Tactical FAST LPVO 30mm ring scope mount (FDE)</li>\n<li>Unity Tactical FAST LPVO canted optic mount</li>\n<li>Unity Tactical FAST MRDS 509T baseplate</li>\n<li>Unity Tactical FAST MRDS ACRO baseplate</li>\n<li>Unity Tactical FAST MRDS DeltaPoint baseplate</li>\n<li>Unity Tactical FAST MRDS RMR baseplate</li>\n<li>Unity Tactical FAST MRDS sight mount</li>\n<li>Unity Tactical FAST MRDS sight mount (FDE)</li>\n<li>Unity Tactical FAST MRO sight mount</li>\n<li>Unity Tactical FAST MRO sight mount (FDE)</li>\n<li>Unity Tactical FAST Micro sight mount (Bronze)</li>\n<li>Unity Tactical FAST Micro sight mount (Green)</li>\n<li>Unity Tactical FAST Micro sight mount (White)</li>\n<li>Unity Tactical RAXIS mount</li>\n<li>Unity Tactical RAXIS mount (FDE)</li>\n<li>Walker\u2019s Razor Digital headset (Coyote Brown)</li>\n<li>Walker\u2019s Razor Digital headset (Multicam)</li>\n<li>Walker\u2019s Razor Digital headset (Special)</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Balance Changes</div>\n<div class=\"tab-content\"><p>This mod features a handful of vanilla item rebalances, mostly to do with items added alongside them, those being:</p>\n<ul>\n<li>Re-adding .336 TKM AP-M to Mechanic LL3</li>\n<li>Removing the proprietary stats from the Red SI ARE Buffer Tube</li>\n</ul>\n<p><strong>Once more balance changes are made, I will be adding a config with an option to disable the rebalances.</strong></p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Install</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://imgur.com/vKRw58b.gif\" alt=\"vKRw58b.gif\" /></p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Planned</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/user-attachments/assets/8b8bcfa9-e1c4-417a-b931-125a5eb74503\" alt=\"8b8bcfa9-e1c4-417a-b931-125a5eb74503\" /></p>\n<p>Currently, the following items are planned additions:<br />\n- AR-15 STC Tactical \u201cValentine\u201d muzzle brake<br />\n- Rugged Obsidian 9x19 suppressor<br />\n- MPR45 Offset BUIS mount (Specifically for Canted Iron Sights)</p>\n<p>- Browning Hi-Power 9x19 pistol</p>\n<p>- Smith &amp; Wesson M&amp;P 9x19 pistol</p></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Gallery</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/user-attachments/assets/1d9f87bb-9eca-432d-bbba-8fc2d6452479\" alt=\"1d9f87bb-9eca-432d-bbba-8fc2d6452479\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/HqK12Vf.gif\" alt=\"HqK12Vf.gif\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/user-attachments/assets/f97a61a6-4c07-4da6-90ab-b0448ede262c\" alt=\"f97a61a6-4c07-4da6-90ab-b0448ede262c\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/user-attachments/assets/d38fc0ce-86cb-4d68-84f2-f70265c838d6\" alt=\"d38fc0ce-86cb-4d68-84f2-f70265c838d6\" /><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/user-attachments/assets/d13c094f-d61c-4a35-9e9f-765c39f390e5\" alt=\"d13c094f-d61c-4a35-9e9f-765c39f390e5\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/UOTojpD.png\" alt=\"UOTojpD.png\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/pw9rXG8.png\" alt=\"pw9rXG8.png\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/UqCcfq1.png\" alt=\"UqCcfq1.png\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/ydfLb3Y.png\" alt=\"ydfLb3Y.png\" /></p></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Credits</div>\n<div class=\"tab-content\"><p>Massive thank you to the amazing team I\u2019m glad to now be a part of, WTT; particularly EpicRangeTime, for teaching me how to make assets and texture; Tron for the SP Smart Materials and other texture assistance; and Groovey for making the codebase that this mod runs on. Thank you, guys!</p>\n<p>Check out the WTT Discord server <a target=\"_blank\" class=\"external-link\" href=\"https://discord.gg/hKRbR6yvf2\" rel=\"noreferrer noopener\">here.</a></p>\n<p>If you want to, you can support my work on my Ko-Fi page, found <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/mapledesigns\" rel=\"noreferrer noopener\">here.</a></p></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/0qwE9Z9oW2nxCHC9KfobyHvEYedAa9E9p8EwuE2i.png",
    "forge_url": "https://sp-mod.com/mod/2195/ecot-eukyres-consortium-of-things",
-   "downloads": 26284,
-   "favourites": 62,
+   "downloads": 28100,
+   "favourites": 82,
    "featured": false,
    "fika": true,
    "fika_latest": "unknown",
@@ -122088,12 +122100,39 @@
    ],
    "versions": [
     {
+     "id": 15704,
+     "version": "2.0.1",
+     "description": "<ul>\n<li>Fixes the M157 FCU Fika Bug (Thanks Arch!)</li>\n</ul>\n",
+     "spt_constraint": "~4.1.3",
+     "fika": "unknown",
+     "downloads": 47,
+     "size": 1217404252,
+     "link": "https://sp-mod.com/mod/download/2195/ecot-eukyres-consortium-of-things/2.0.1",
+     "published_at": "2026-09-30T23:43:00.000000Z",
+     "dependencies": [
+      {
+       "id": 1263,
+       "name": "Epic's All in One",
+       "slug": "epics-all-in-one",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/1263/epics-all-in-one"
+      },
+      {
+       "id": 2310,
+       "name": "WTT - CommonLib",
+       "slug": "wtt-commonlib",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
+      }
+     ]
+    },
+    {
      "id": 15549,
      "version": "2.0.0",
      "description": "<h1>For SPT version 4.1.3 and onward.</h1>\n<p>y\u2019all eating good today</p>\n",
      "spt_constraint": "^4.1.3",
      "fika": "unknown",
-     "downloads": 269,
+     "downloads": 1897,
      "size": 1217588883,
      "link": "https://sp-mod.com/mod/download/2195/ecot-eukyres-consortium-of-things/2.0.0",
      "published_at": "2026-09-23T00:01:00.000000Z",
@@ -122120,7 +122159,7 @@
      "description": "<p><strong>Still SPT 4.0 for now, goobs.</strong>\nFixed versioning clashes with newer CommonLib and Armory Content\nRemoved the Strike ARE buffers (Replacement only, will not return for 4.0.X)</p>\n",
      "spt_constraint": "~4.0.10",
      "fika": "unknown",
-     "downloads": 33,
+     "downloads": 153,
      "size": 1217590208,
      "link": "https://sp-mod.com/mod/download/2195/ecot-eukyres-consortium-of-things/1.3.6",
      "published_at": "2026-09-22T22:30:00.000000Z",
@@ -122147,7 +122186,7 @@
      "description": "<h2>What\u2019s Changed</h2>\n<ul>\n<li>RU locale added by @Evgencheg in <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/eukyre/Eukyre-Consortium/pull/7\" rel=\"noreferrer noopener\">https://github.com/eukyre/Eukyre-Consortium/pull/7</a></li>\n<li>Fixed M157 smooth-zoom issues</li>\n</ul>\n<p><strong>Full Changelog</strong>: <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/eukyre/Eukyre-Consortium/compare/v1.3.4...v1.3.5\" rel=\"noreferrer noopener\">https://github.com/eukyre/Eukyre-Consortium/compare/v1.3.4...v1.3.5</a></p>\n",
      "spt_constraint": "~4.0.10",
      "fika": "unknown",
-     "downloads": 3072,
+     "downloads": 3077,
      "size": 1230036692,
      "link": "https://sp-mod.com/mod/download/2195/ecot-eukyres-consortium-of-things/1.3.5",
      "published_at": "2026-07-30T00:18:00.000000Z",
@@ -122174,7 +122213,7 @@
      "description": "<ul>\n<li>Fixed M157 Scope locales (Thanks Dandy!)</li>\n</ul>\n",
      "spt_constraint": "~4.0.10",
      "fika": "unknown",
-     "downloads": 1587,
+     "downloads": 1588,
      "size": 1230022003,
      "link": "https://sp-mod.com/mod/download/2195/ecot-eukyres-consortium-of-things/1.3.4",
      "published_at": "2026-07-23T18:02:00.000000Z",
@@ -122275,21 +122314,22 @@
      "description": "<h2><strong>DELETE ANY OLD VERSION OF ECOT BEFORE UPDATING AS OVERLAPS MAY OCCUR.</strong></h2>\n<h2><strong>The Modifications Update</strong></h2>\n<h2>This update adds a metric tonne of new weapon attachments, ranging from handguards to foregrips to scopes, with the aim of increasing the individual customisability of a lot of the weapons in the game, including some new ones added by yours truly.</h2>\n<h2><strong>This Update Adds the following Items:</strong></h2>\n<ul>\n<li>.338 Lapua Magnum Raufoss</li>\n<li>FN FNX-45 .45 ACP pistol</li>\n<li>Strike Industries ARE Buffer Tube Remasters (Adding ODG, FDE and Blue colours)</li>\n<li>Daniel Defense Picatinny Vertical Foregrips (Black, FDE and Slate Grey)</li>\n<li>KRUK CRC 1U020 AK Handguards (Black, FDE, ODG, Anodized Red)</li>\n<li>AK Molot Arms VEPR-12/RPK style polymer handguard AKS-74U Zenit B11 + B19 combo handguard</li>\n<li>AK 6L23 modified windowed magazines (Black, Plum)</li>\n<li>AKM Hungarian \u201cTanker\u201d 20-round modified window mag</li>\n<li>AKM AK55 30-round modified window magazine</li>\n<li>AR15 HEXMAG 30-rounders (Black, FDE)</li>\n<li>AR15 HK PM Gen.3 Windowed Magazines (Black, FDE, Sand)</li>\n<li>AR15 Strike Industries 33-round magazine (Black, FDE)</li>\n<li>SIG Sauer ROMEO7 reflex sight (Black, FDE)</li>\n<li>SIG ROMEO7 rubber lens caps</li>\n<li>SIG Sauer BRAVO5 5x30 scope</li>\n<li>Holosun 509T reflex sight (Black, FDE)</li>\n<li>Tasco ProPoint 1x42 reflex sight</li>\n<li>EOTech 553 holographic sight (Tan)</li>\n<li>EOTech EXPS3-1 Holographic Sight (Black)</li>\n<li>EOTech EXPS3 optic cover (ECOT Splinter)</li>\n<li>Unity Tactical FAST Micro optic mount (Green, White, Bronze)</li>\n<li>Unity Tactical FAST MRO optic mount (Black, FDE)</li>\n<li>Unity Tactical FAST LPVO scope mount (Black, FDE, ODG)</li>\n<li>Unity Tactical FAST LPVO Canted Aimpoint optic mount</li>\n<li>Unity Tactical FAST COMP series optic mount (Black, FDE, ODG, Bronze, White)</li>\n<li>Unity Tactical FAST MRDS optic mount (Black, FDE)</li>\n<li>Unity Tactical FAST MRDS optic baseplates (ACRO, Deltapoint, RMR, 509T)</li>\n<li>Kastle Group FRT 226 optic mount (Black, FDE, Sand)</li>\n<li>AAC Ti-RANT .45 ACP sound suppressor (Black, FDE)</li>\n</ul>\n<h2>This Update also rebalances some existing items within Tarkov; those being:</h2>\n<ul>\n<li>Nerfed the SI ARE Buffer Tubes to all be equal; no more Red Supremacy.</li>\n<li>Re-Added .336 TKM AP-M to Mechanic LL3.</li>\n<li>Added some new Barters for existing weapons with custom attachments at various trader Loyalty Levels.</li>\n</ul>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/UOTojpD.png\" alt=\"UOTojpD.png\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/pw9rXG8.png\" alt=\"pw9rXG8.png\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/UqCcfq1.png\" alt=\"UqCcfq1.png\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/ydfLb3Y.png\" alt=\"ydfLb3Y.png\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/DrnKNiB.png\" alt=\"DrnKNiB.png\" /></p>\n",
      "spt_constraint": "~3.11.0",
      "fika": "unknown",
-     "downloads": 7752,
+     "downloads": 7766,
      "size": null,
      "link": "https://sp-mod.com/mod/download/2195/ecot-eukyres-consortium-of-things/1.1.0",
      "published_at": "2025-07-07T02:52:17.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "2.0.0",
-   "spt_constraint": "^4.1.3",
+   "latest_version": "2.0.1",
+   "spt_constraint": "~4.1.3",
    "all_spt_constraints": [
     "4.0.11",
     "^4.1.3",
     "~3.11.0",
     "~4.0.1",
-    "~4.0.10"
+    "~4.0.10",
+    "~4.1.3"
    ],
    "dependencies": [
     {
@@ -122324,7 +122364,7 @@
     }
    ],
    "published_at": "2025-06-22T05:47:00.000000Z",
-   "updated_at": "2026-09-23T00:10:21.000000Z",
+   "updated_at": "2026-09-30T23:46:03.000000Z",
    "flags": {
     "contains_ads": true,
     "contains_ai_content": false,
@@ -205533,7 +205573,7 @@
    "description_html": "\n<h1>\u26a0\ufe0f ULTRAWIDE MONITORS ONLY</h1>\n<p><strong>On a 16:9 monitor this does nothing.</strong> EFT scales its menu by height, so 1080p,\n1440p and 4K all get the same width to work with and none of it is spare. 16:10 too.\nYou need a screen wider than 16:9 for there to be any room to fill.</p>\n<hr />\n<p>Your stash is 10 columns wide, and on an ultrawide there are a few hundred pixels sitting\nempty beside it. This widens the stash panel and fills them. On 3440x1440 that\u2019s\n<strong>10x68 \u2192 19x36</strong> \u2014 same capacity, half the scrolling.</p>\n\n<p><strong>What you get:</strong></p>\n<ul>\n<li><strong>16:9</strong> (1920x1080, 2560x1440, 3840x2160) \u2014 10 columns, nothing changes</li>\n<li><strong>21:9</strong> (2560x1080, 3440x1440) \u2014 19 columns</li>\n<li><strong>32:9</strong> (5120x1440) \u2014 39 columns</li>\n</ul>\n<h2>\u26a0\ufe0f Back up your profile first</h2>\n<p>Changing the shape of your stash means moving items, so <strong>this mod rewrites your profile\nfile</strong>. It takes a backup before every change (your original plus the two most recent,\nkept in <code>%LOCALAPPDATA%\\UltrawideStash\\backups</code> so they stay out of your profiles folder)\nand hands the result to SPT to save \u2014 but it\u2019s a young mod, and anything that rewrites a profile\ncan damage one. <strong>Copy <code>SPT_Runtime/user/profiles</code> somewhere safe before your first\nstart.</strong></p>\n<p>Nothing in the mod deletes an item, so the expected worst case is a misplaced item rather\nthan a missing one. Expected, not guaranteed.</p>\n<h2>Install</h2>\n<p>Unzip over your SPT folder. No setup, no config needed. <strong>Start the server before the\ngame</strong>, as usual.</p>\n<p>Removing it later takes one extra step \u2014 see <a href=\"#uninstalling\">Uninstalling</a>.</p>\n<h2>Good to know</h2>\n<ul>\n<li><strong>Same capacity by default</strong> \u2014 wider and shorter, not extra storage. Set\n<code>compensateRows: false</code> in the config to keep every row.</li>\n<li><strong>Every edition</strong>, hideout stash upgrades included.</li>\n<li>Items that no longer fit get packed back in; items that already fit are never shuffled\n\u2014 including anything in extra rows from a stash-rows bonus.</li>\n<li>Sizes itself to your screen. You can set <code>columns</code> by hand in\n<code>ultrawidestash.config.json</code>, capped at what your monitor can show.</li>\n<li><strong>Wide on the transfer screens too</strong> \u2014 the scav loot transfer after a raid, receiving\nitems from mail, and putting items into a hideout area. The stash grows into the empty\nspace beside the screen and <strong>never covers the buttons</strong> (Next, Sell All, Receive All\nand the rest). Turn it off with <code>WidenTransferScreens</code> in the BepInEx config.</li>\n<li><strong>Menu only \u2014 never in raid.</strong> Your inventory in raid looks exactly like vanilla:\ncrates, bodies and loot panels are left alone. The stash widens again when you\u2019re back\nin the menu.</li>\n<li><strong>Stuck at 10 columns?</strong> Look in the <strong>server</strong> log. If the game couldn\u2019t widen the\nstash, it says why there. The usual cause is EFT itself set to a 16:9 resolution on a\nwider monitor. Set EFT\u2019s resolution in <em>Settings \u2192 Graphics</em> to your monitor\u2019s own.</li>\n<li><strong>Stash narrower than your screen, or scrolling sideways?</strong> Check <code>GearPanelReserve</code>\nin <code>BepInEx/config/com.mybutthasarash.ultrawidestash.cfg</code> is <strong>620</strong>. A higher number\nleaves the stash less room: at 1000 a 32:9 screen gets 27 columns instead of 39. The\nserver log warns you when it\u2019s changed.</li>\n</ul>\n<h1>Uninstalling \u2014 set <code>columns</code> to 10 first</h1>\n<ol>\n<li>In <code>ultrawidestash.config.json</code>, set <code>\"columns\": 10</code> \u2014 the number, not <code>\"auto\"</code>.</li>\n<li><strong>Start the server once</strong> and let it finish loading. It packs everything back into a\nvanilla stash, backing up your profile first.</li>\n<li>Delete the files \u2014 and, once you\u2019re happy with your stash, the backups folder at\n<code>%LOCALAPPDATA%\\UltrawideStash</code>.</li>\n</ol>\n<p><strong>If you just delete it instead</strong>, your stash snaps back to 10 columns and the game moves\nanything in columns 11+ to your <strong>sorting table</strong> \u2014 check there first. Anything it misses\nis still in your profile at its old coordinates; SPT never prunes out-of-bounds items.\nReinstall and follow the three steps, or run the included <code>repair-stash.ps1</code> (plain\nPowerShell, no mod needed, shows you what it would do before writing).</p>\n<h2>Compatibility</h2>\n<p>Fine with auto-sort, <strong>UI Fixes</strong>, <strong>Advanced Stash Sorting</strong> and <strong>Loot In Vicinity</strong>\n(the mod stays out of raid, so its Nearby Items panel is untouched).</p>\n<p><strong>SVM (Server Value Modifier)</strong> works too. If you\u2019ve given your stash more rows with SVM,\nthose rows are kept. With the default settings your stash gets wider and shorter but\nholds the same number of cells SVM gave it. Set <code>compensateRows: false</code> to keep SVM\u2019s\nrows and get the extra width as well.</p>\n<p><strong>UIScale.Reloaded</strong> works too, but you no longer need it. Before 1.0.5 this mod only\nwidened the stash if UIScale.Reloaded was installed as well. Without it, EFT keeps the\ninventory screen as a 16:9 block in the middle of the monitor, and the stash stayed at\n10 columns. 1.0.5 widens that block to the full screen itself.</p>\n<p>For <strong>SPT 4.1.x</strong>. Tested on 4.1.6 at 3440x1440, with UIScale.Reloaded and without it,\nand <strong>by a player on a real 5120x1440 (32:9) monitor</strong>, where the stash filled the\nscreen. 2560x1080 hasn\u2019t been reported yet. If you play at it, please say how it looks.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/2xbx5p8RzWAY6gR725igRF3bTntUFFhRI3xbf7Sb.png",
    "forge_url": "https://sp-mod.com/mod/3053/ultrawide-stash",
-   "downloads": 405,
+   "downloads": 463,
    "favourites": 4,
    "featured": false,
    "fika": false,
@@ -205562,12 +205602,24 @@
    ],
    "versions": [
     {
+     "id": 15705,
+     "version": "1.1.0",
+     "description": "<h2>New: wide at the traders</h2>\n<p>The trader screen used to keep the old 10-column stash, so you had to scroll sideways to see your stash while buying and selling. Now the stash grows to the left and the Buy / Sell column moves over to make room.</p>\n<p>It\u2019s all laid out before the screen appears, so nothing jumps around when you open a trader, click between traders, switch between Buy and Sell, or come back from your character screen.</p>\n<h2>New: wide on the flea market</h2>\n<p>When you listed an item, the Offer creation window cut your stash off at 10 columns. It now gets wider so your whole stash fits. It stays on screen even if you\u2019ve dragged it to one side.</p>\n<h2>Turning it off</h2>\n<p>Both are part of the existing <code>WidenTransferScreens</code> setting in the BepInEx config, along with the scav, mail and hideout transfer screens. It\u2019s on by default.</p>\n<h2>Updating from 1.0.5</h2>\n<p>Unzip over your SPT folder, replacing the old files. Only the client plugin changed. The server part is the same apart from its version number, so your stash and your config are left as they are.</p>\n<h2>Notes</h2>\n<p>For SPT 4.1.x. Tested in game on 4.1.6 at 3440x1440. At 5120x1440 the trader screen and the flea window should fit all 39 columns, but nobody has tried it yet. If you play at 32:9 (or 2560x1080), please open a trader and the flea market\u2019s Add offer, and say how it looks. Your <code>BepInEx/LogOutput.log</code> helps.</p>\n<p>270 logic tests, 19 database checks.</p>\n<p>Compatible with auto-sort, UI Fixes, Advanced Stash Sorting, Loot In Vicinity, SVM and UIScale.Reloaded.</p>\n",
+     "spt_constraint": "~4.1.0",
+     "fika": "unknown",
+     "downloads": 3,
+     "size": 68846,
+     "link": "https://sp-mod.com/mod/download/3053/ultrawide-stash/1.1.0",
+     "published_at": "2026-10-01T00:15:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 15667,
      "version": "1.0.5",
      "description": "<h2>Fixed: the stash didn\u2019t widen unless you also had UIScale.Reloaded</h2>\n<p>If your stash stayed at <strong>10 columns</strong>, or you had to <strong>scroll sideways</strong> to see all of it, this is the fix.</p>\n<p>On its own, EFT draws the inventory screen as a <strong>16:9 block in the middle of your monitor</strong>, whatever your monitor\u2019s shape, so there was no room to widen the stash into. The mod was built and tested on a PC that also runs <strong>UIScale.Reloaded</strong>, which stretches that screen to the full width. That\u2019s why it worked there and nowhere else. Sorry about that.</p>\n<p>1.0.5 stretches the inventory screen to the full width itself, the same way UIScale.Reloaded does. It then widens the stash as before. In raid, everything goes back to normal.</p>\n<p><strong>If you use UIScale.Reloaded,</strong> nothing changes for you. The two work together.</p>\n<h2>Now working on a real 32:9 monitor</h2>\n<p>A player has run 1.0.5 on a physical <strong>5120x1440</strong> monitor: the inventory stretched to the full width, and the stash filled it at 39 columns. Thanks for testing!</p>\n<h2>New: the server checks your BepInEx settings</h2>\n<p>The client plugin\u2019s <code>GearPanelReserve</code> setting decides how much width the gear side keeps. <strong>Leave it at 620.</strong> A higher number takes width away from the stash: at 1000, a 5120x1440 screen gets 27 columns instead of 39. The first 32:9 tester had it at 1000 from trying settings, which gave a sideways scrollbar until it went back to 620.</p>\n<p>The server now reads that setting from <code>BepInEx/config/com.mybutthasarash.ultrawidestash.cfg</code>, so it sizes your stash to match what the game will actually draw. If <code>GearPanelReserve</code> isn\u2019t 620, or <code>WidenStashPanel</code> is off, the server log warns you and says how many columns it\u2019s costing you.</p>\n<h2>Fixed: the server log\u2019s advice was wrong</h2>\n<p>1.0.4\u2019s server warning said your menus were 1920 px wide and told you to change EFT\u2019s resolution, even on a 3440x1440 or 5120x1440 screen. It was measuring the 16:9 block, not your screen. It measures the full screen now.</p>\n<h2>If your items got moved around</h2>\n<p>Nothing was lost. With 1.0.4, the first server start widened your stash and repacked it, then the next start narrowed it back to 10 columns and repacked it again. Your items were moved into free space, and anything that didn\u2019t fit went to the <strong>Sorting Table</strong>. Check there if something seems to be missing. Your original profile is also backed up in <code>%LOCALAPPDATA%\\UltrawideStash\\backups</code>.</p>\n<h2>Updating from 1.0.4</h2>\n<ol>\n<li><strong>Back up <code>SPT_Runtime/user/profiles</code>.</strong></li>\n<li><strong>Set <code>GearPanelReserve</code> back to <code>620</code></strong> in <code>BepInEx/config/com.mybutthasarash.ultrawidestash.cfg</code> if you changed it.</li>\n<li>Leave <code>columns</code> on <code>\"auto\"</code> and <code>ignoreMeasurement</code> on <code>false</code> in <code>ultrawidestash.config.json</code>, unless you set them on purpose.</li>\n<li>Unzip over your SPT folder, start the server, then the game, and open your character screen.</li>\n</ol>\n<p>The server ignores the 10-column measurement older versions saved, and sizes your stash from your screen resolution straight away.</p>\n<p><strong>If you downloaded the 1.0.5 pre-release,</strong> grab this one too. It adds the settings check above. The server log tells them apart: only this one mentions the probe config on its <code>Width:</code> line.</p>\n<h2>Install</h2>\n<p>Unzip over your SPT folder, replacing the old files. Start the server before the game.</p>\n<h2>Uninstalling</h2>\n<p>Same as before: set <code>\"columns\": 10</code>, start the server once, then delete the files. Then delete the backups folder in <code>%LOCALAPPDATA%\\UltrawideStash</code> once you\u2019re happy with your stash.</p>\n<h2>Notes</h2>\n<p>For SPT 4.1.x. Tested in game on 4.1.6 at 3440x1440, with UIScale.Reloaded switched off and with it on, and by a player on a real 5120x1440 monitor. 2560x1080 hasn\u2019t been reported yet. If you play at it, please say how it looks.</p>\n<p>265 logic tests, 19 database checks.</p>\n<p>Compatible with auto-sort, UI Fixes, Advanced Stash Sorting, Loot In Vicinity, SVM and UIScale.Reloaded.</p>\n",
      "spt_constraint": "~4.1.0",
      "fika": "unknown",
-     "downloads": 47,
+     "downloads": 102,
      "size": 63633,
      "link": "https://sp-mod.com/mod/download/3053/ultrawide-stash/1.0.5",
      "published_at": "2026-09-29T14:46:00.000000Z",
@@ -205634,7 +205686,7 @@
      "dependencies": []
     }
    ],
-   "latest_version": "1.0.5",
+   "latest_version": "1.1.0",
    "spt_constraint": "~4.1.0",
    "all_spt_constraints": [
     "~4.1.0"
@@ -205642,7 +205694,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-09-22T22:39:00.000000Z",
-   "updated_at": "2026-09-29T14:55:00.000000Z",
+   "updated_at": "2026-10-01T00:18:44.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -205758,11 +205810,11 @@
    "description_html": "<h2>Background</h2>\n<p>Rook was not always Rook.</p>\n<p>During the Contract Wars, he worked as a low-profile contractor around some of T*********\u2019s most sensitive facilities and assets in Norvinsk. His work mostly involved site security, classified material, personnel transfers, and assignments where discretion mattered more than recognition.</p>\n<p>His reliability eventually brought him into Black Division, where the same kind of work continued under much tighter compartmentalization and with far less room for failure.</p>\n<p>That career came to an end during a sanitization operation at Laboratory No.14. The facility was compromised, personnel were lost, and the operation collapsed before everything could be recovered or destroyed.</p>\n<p>Rook and the rest of his team were subsequently listed as presumed KIA.</p>\n<p>He survived.</p>\n<p>Rather than return and explain how, he chose to remain dead. His former identity disappeared with No.14, and the name Rook appeared later through a network of suppliers, technicians, fixers, and intermediaries built over years of contract work.</p>\n<p>Today, Rook deals in carefully selected weapons and equipment, but information remains his most valuable commodity.</p>\n<h2>Features</h2>\n<p>-Four loyalty levels with increasingly strong equipment</p>\n<p>-Curated weapons, ammunition, armor, attachments, and tactical gear</p>\n<p>-A large selection of custom weapon presets</p>\n<p>-Intelligence-focused item buying</p>\n<p>-Premium repair service</p>\n<p>-Higher-tier gear unlocked through continued trading with Rook</p>\n<h2>Installation</h2>\n<p>Extract the archive directly into your SPT root folder, where SPT.Server.exe is located.</p>\n<h2>Compatibility</h2>\n<p>Supported SPT versions:</p>\n<p>-SPT 4.1.6</p>\n<p>-SPT 4.0.13</p>\n<p>Download and install the release that matches your SPT version.</p>\n<p>No dependencies are required for the initial release.</p>\n<blockquote>\n<p><strong>Initial Release Note</strong></p>\n<p>Rook 1.0.0 is intentionally built around vanilla SPT content. The goal of the initial release is to make strong use of the existing item pool while remaining lightweight and dependency-free. Future updates are planned to add quests, Black Division equipment, and support for additional backported content.</p>\n</blockquote>\n<h2>Future Plans</h2>\n<p>-Custom quests and progression</p>\n<p>-Black Division equipment integration</p>\n<p>-Support for WTT Content Backport equipment and items</p>\n<p>-Multi-language localization support, I plan to build the localization system into Rook, and community translations will be welcome for languages I cannot translate myself.</p>\n<p>-Further expansion and redesignation of Rook\u2019s inventory and progression</p>\n<p>Upcoming Trader \u2014 Zhao Jianwei</p>\n<p>Zhao Jianwei is a former procurement and operations specialist for Zhenyu Industrial Supply, a Shenyang-based company that once supplied Norvinsk\u2019s growing industrial sector. When the region collapsed, Jianwei adapted his remaining network of warehouses, suppliers, drivers, and technical contacts to keep essential goods moving through the region.\nUnlike a conventional arms dealer, Zhao focuses on industrial supplies, technical components, tools, maintenance equipment, storage solutions, and practical field logistics. Across four loyalty levels, his inventory expands from common utility goods and basic technical supplies to more valuable components, specialized equipment, and harder-to-source logistical items.\nHis established professional connection with Mechanic comes from years of technical procurement and repeated business dealings before and during the collapse of Norvinsk.\nUpcoming in a future update.</p>\n<h2>Credits &amp; Permissions</h2>\n<p>Author: YDLonewolf</p>\n<p>License: MIT License</p>\n<p>Rook may be modified, updated, ported, redistributed, or used as a base for other projects in accordance with the MIT License.</p>\n<p>Please keep the original copyright and license notice included with the mod.</p>\n<p>If you release a modified, updated, or ported version, please:</p>\n<p>-Credit YDLonewolf as the original author of Rook</p>\n<p>-Clearly state that your release is a modified or unofficial version</p>\n<p>-Describe the changes you made and the SPT version it supports</p>\n<p>-Link back to the original Rook page when possible</p>\n<p>Unofficial ports, forks, and modified versions are supported by their respective maintainers, not by the original author.</p>\n<blockquote>\n<p><strong>Developer Note</strong></p>\n<p>Rook is my first SPT mod. The initial release has been tested carefully, but feedback and bug reports are always welcome as I continue improving the mod.</p>\n</blockquote>\n<h2>Known Issues</h2>\n<p>No known issues at this time.</p>\n<p>If you encounter a bug, please report it with your SPT version and any relevant server errors or logs.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/oiHFjQuxVLw1tCUDKEoK1xy9urEljKqk447M6jAS.png",
    "forge_url": "https://sp-mod.com/mod/3055/rook",
-   "downloads": 2431,
-   "favourites": 28,
+   "downloads": 2503,
+   "favourites": 29,
    "featured": false,
-   "fika": false,
-   "fika_latest": "unknown",
+   "fika": true,
+   "fika_latest": "compatible",
    "category": {
     "id": 16,
     "title": "Traders",
@@ -205791,8 +205843,8 @@
      "version": "1.1.0",
      "description": "<p>Big Update</p>\n<p>-Added some new and unique presets such as Colt Model 727 , 653 , 733 and more</p>\n<p>-Added WTT Content Backport and WTT CommonLib compatibility</p>\n",
      "spt_constraint": "4.1.6",
-     "fika": "unknown",
-     "downloads": 158,
+     "fika": "compatible",
+     "downloads": 228,
      "size": 661185,
      "link": "https://sp-mod.com/mod/download/3055/rook/1.1.0",
      "published_at": "2026-09-30T14:54:00.000000Z",
@@ -205819,7 +205871,7 @@
      "description": "<p>Rook v1.0.1 - SPT 4.0.13</p>\n<p>Small Update</p>\n<ul>\n<li>Added 7.62x51mm M61 ammunition.</li>\n<li>Adjusted several ammunition prices for better balance.</li>\n<li>Minor pricing corrections.</li>\n<li>Updated specifically for SPT 4.0.13.</li>\n<li>Preserves the existing 4.0.13 compatibility adjustments.</li>\n</ul>\n",
      "spt_constraint": "~4.0.13",
      "fika": "unknown",
-     "downloads": 139,
+     "downloads": 140,
      "size": 604977,
      "link": "https://sp-mod.com/mod/download/3055/rook/1.0.1+compat.4.0.13",
      "published_at": "2026-09-26T11:46:48.000000Z",
@@ -205831,7 +205883,7 @@
      "description": "<p>Small Update</p>\n<ul>\n<li>Added 7.62x51mm M61 ammunition.</li>\n<li>Adjusted some prices.</li>\n<li>Minor pricing corrections.</li>\n</ul>\n",
      "spt_constraint": "~4.1.6",
      "fika": "unknown",
-     "downloads": 1146,
+     "downloads": 1147,
      "size": 606381,
      "link": "https://sp-mod.com/mod/download/3055/rook/1.0.1",
      "published_at": "2026-09-25T23:37:10.000000Z",
@@ -205890,7 +205942,7 @@
     }
    ],
    "published_at": "2026-09-23T11:16:00.000000Z",
-   "updated_at": "2026-09-30T15:07:59.000000Z",
+   "updated_at": "2026-09-30T21:20:27.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -208182,15 +208234,15 @@
   {
    "id": 3080,
    "hub_id": null,
-   "guid": "com.vek.raidrecovery",
+   "guid": "com.vektys.raidrecovery",
    "name": "Raid Recovery",
    "slug": "raid-recovery",
    "teaser": "Resume your raid after a crash.",
    "description_html": "<h1>Raid Recovery</h1>\n<p>A mod for SPT 4.1 that lets you resume a raid after the game crashes.</p>\n<blockquote>\n<p><strong>Tested on</strong> an installation without other mods. It has not been tried yet next to a large mod list. Back up your profile first.</p>\n</blockquote>\n<h2>What it does</h2>\n<p>SPT saves nothing until the raid ends. If the game crashes or freezes during a raid, the raid is lost: the\nloot you found, your kills and your quest progress are gone.</p>\n<p>With this mod, the next time you reach the main menu after a crash, the game shows its \u201cReturn to raid\u201d\nscreen, the same as the live version:</p>\n<ul>\n<li><strong>Reconnect</strong> puts you back in the raid, where you were</li>\n<li><strong>Confirm leave</strong> gives you back the profile you had before the raid, gear included</li>\n</ul>\n<p>There is no penalty for leaving.</p>\n<h2>Installation</h2>\n<p>Extract the archive into your SPT 4.1 folder, the one with <code>BepInEx</code> and <code>SPT_Runtime</code>. It adds two folders:</p>\n<pre><code>BepInEx/plugins/RaidRecovery/          the plugin of the game\nSPT_Runtime/user/mods/RaidRecovery/    the mod of the server\n</code></pre>\n<p>Both are needed. To remove the mod, delete those two folders.</p>\n<h2>How it works</h2>\n<p>The mod saves the raid every 30 seconds while you play. Only the latest save is kept, plus the one before\nas a spare. When the raid ends normally (you extract, you die, you leave), the save is deleted. If the game\ncrashes, the save stays. You get it back at the menu.</p>\n<p>A resumed raid can be resumed again. If the game crashes a second time, even during the loading screen,\nthe raid is still there.</p>\n<p>A save older than 24 hours is deleted.</p>\n<p>Everything comes back as it was: your character, the raid, the loot, the bots and the bodies. Scav raids\nwork too. The few things that do not come back are listed in \u201cKnown limits\u201d below.</p>\n<h2>Settings in the game</h2>\n<p>Press F12 in the game and look for Raid Recovery.</p>\n<table>\n<thead>\n<tr>\n<th>Setting</th>\n<th>Default</th>\n<th>Meaning</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Enabled</td>\n<td>on</td>\n<td>Turns the saves on or off</td>\n</tr>\n<tr>\n<td>Interval (seconds)</td>\n<td>30</td>\n<td>Time between two saves, from 15 to 120</td>\n</tr>\n<tr>\n<td>Save now</td>\n<td></td>\n<td>Saves right away, and shows the time of the last save</td>\n</tr>\n<tr>\n<td>Save now (shortcut)</td>\n<td>none</td>\n<td>A key that does the same</td>\n</tr>\n<tr>\n<td>Relaunch the raid automatically</td>\n<td>on</td>\n<td>Off: you start the raid yourself after reconnecting</td>\n</tr>\n<tr>\n<td>Use the return-to-raid screen of the game</td>\n<td>on</td>\n<td>Off: you get a plain window instead</td>\n</tr>\n<tr>\n<td>Keep the loot as the game sees it</td>\n<td>on</td>\n<td>Off: only the items you carry are removed from the loot</td>\n</tr>\n<tr>\n<td>Keep bots and bodies</td>\n<td>on</td>\n<td>Off: the resumed raid spawns new bots</td>\n</tr>\n<tr>\n<td>Bots that were after you still are</td>\n<td>on</td>\n<td>Off: bots come back unaware of you</td>\n</tr>\n<tr>\n<td>Log measurements</td>\n<td>on</td>\n<td>Writes the cost and size of each save to the log</td>\n</tr>\n</tbody>\n</table>\n<p>If a resumed raid does something wrong, turn off one of the last four settings to find which part is the\ncause. The rest of the mod keeps working.</p>\n<h2>Settings of the server</h2>\n<p>In <code>SPT_Runtime/user/mods/RaidRecovery/config.json</code>:</p>\n<table>\n<thead>\n<tr>\n<th>Setting</th>\n<th>Default</th>\n<th>Meaning</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>maxAgeHours</code></td>\n<td>24</td>\n<td>A save older than this is deleted</td>\n</tr>\n<tr>\n<td><code>maxResumesPerRaid</code></td>\n<td>0</td>\n<td>How many times one raid can be resumed. 0: no limit</td>\n</tr>\n<tr>\n<td><code>blockResumeUnderVitalHealthPercent</code></td>\n<td>0</td>\n<td>A raid cannot be resumed if your head or thorax was under this percent of health. 0: never blocked</td>\n</tr>\n</tbody>\n</table>\n<p>A raid refused by one of these rules ends like a raid you chose to leave: you go back to the profile you\nhad before it.</p>\n<h2>Files and log</h2>\n<p>Saves are written by the server in <code>SPT_Runtime/user/raid-recovery/</code>. They are deleted when the raid ends.\nNothing is sent anywhere else.</p>\n<p>The log is <code>BepInEx/LogOutput.log</code>. The lines that start with <code>Raid Recovery</code> say what was saved and what\nwas put back.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/W8YSrL60WMYqoGV3UIc4Gifo4dn6InkMESSgXV6V.png",
    "forge_url": "https://sp-mod.com/mod/3080/raid-recovery",
-   "downloads": 327,
-   "favourites": 13,
+   "downloads": 351,
+   "favourites": 15,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -208223,7 +208275,7 @@
      "description": "<p>1.2.2</p>\n<p>This version adds what the new Fika add-on needs to plug into the mod. The add-on is a separate download.</p>\n<p><strong>Playing solo?</strong> Nothing changes for you for now.</p>\n<h3>Changed</h3>\n<ul>\n<li>With Fika installed and no add-on, the mod turns itself off in Fika raids</li>\n</ul>\n<h3>Fixed</h3>\n<ul>\n<li>A scav could come back with broken gear after a resume</li>\n</ul>\n<p>Requires SPT 4.1.</p>\n",
      "spt_constraint": "4.1.6",
      "fika": "compatible",
-     "downloads": 185,
+     "downloads": 209,
      "size": 86593,
      "link": "https://sp-mod.com/mod/download/3080/raid-recovery/1.2.2",
      "published_at": "2026-09-29T22:16:00.000000Z",
@@ -208250,7 +208302,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-09-29T11:53:00.000000Z",
-   "updated_at": "2026-09-30T15:29:12.000000Z",
+   "updated_at": "2026-09-30T21:28:46.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -208590,11 +208642,11 @@
    "name": "Ledger",
    "slug": "ledger",
    "teaser": "A trader and 40+ quest storyline built around dogtags, names, rewards, and the people behind them.",
-   "description_html": "<h1>Ledger</h1>\n<p><strong>A story-driven custom trader with a 40+ quest storyline built around PMC dogtags, names, and the people who owned them. Companion mod to my Realistic PMC Names mod.</strong></p>\n<p>Ledger is a quiet, methodical trader with a habit of keeping records.</p>\n<p>His requests begin simply enough. Dogtags, factions, levels, occasional specific requirements. As time goes on, those requests become more varied, and the more time you invest in them, the more you begin to realise there may be more to Ledger than first appeared.</p>\n<p>Ledger is not really a shop.</p>\n<p>He does sell a small selection of useful items, and he will buy from you, but his stock is deliberately limited. Think of it less as a trader inventory and more as whatever useful equipment happens to be lying around in the room. His purpose is the questline, not retail.</p>\n<p>His loyalty is earned <strong>only through his own quests</strong> and is completely independent of your PMC level. That means Ledger works just as well on a brand-new profile as he does when added to an established or high-level character.</p>\n<p>The only way to progress with him is to do the work.</p>\n<h2>Companion to <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/3064/realistic-pmc-names\" rel=\"noreferrer noopener\">Realistic PMC Names</a></h2>\n<p>Ledger was created as a natural companion to <strong><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/3064/realistic-pmc-names\" rel=\"noreferrer noopener\">Realistic PMC Names</a></strong>.</p>\n<p>The two mods are completely independent and neither requires the other, but they complement each other extremely well. Realistic PMC Names makes PMCs feel more like actual players and less like disposable AI. Ledger gives those names and dogtags a little more weight.</p>\n<p>There are no hidden dependencies, scripted encounters, or required cross-mod events. They simply work well together.</p>\n<h2>What Ledger Includes</h2>\n<ul>\n<li>A completely custom trader</li>\n<li>Original portrait, dialogue and personality</li>\n<li>Independent loyalty progression</li>\n<li>A deliberately small specialist shop</li>\n<li>A 40+ quest storyline</li>\n<li>Progression that works on both fresh and existing profiles</li>\n</ul>\n<p>That is really all you need to know.</p>\n<h2>Strongly Recommended Setup</h2>\n<p>Ledger can be played perfectly well on its own, but if immersion is your priority, I <strong>strongly</strong> recommend using it alongside:</p>\n<ul>\n<li><strong><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/3064/realistic-pmc-names\" rel=\"noreferrer noopener\">Realistic PMC Names</a></strong></li>\n<li><strong><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement\" rel=\"noreferrer noopener\">SAIN</a></strong></li>\n<li><strong><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1594/apbs-acids-progressive-bot-system\" rel=\"noreferrer noopener\">Acid\u2019s Progressive Bot System</a></strong></li>\n<li><strong><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2706/orbit-20\" rel=\"noreferrer noopener\">Orbit</a></strong></li>\n</ul>\n<p>Together, these mods can transform the feel of SPT.</p>\n<p>SAIN gives PMCs much more convincing combat behaviour. Progressive Bot System makes their progression feel more natural. Orbit helps them move through the maps more like actual players instead of simply occupying familiar scav locations. Realistic PMC Names gives them believable identities.</p>\n<p>Add Ledger on top of that, and PMC encounters start to feel much less disposable.</p>\n<blockquote>\n<p>Huge credit to the authors of SAIN, Progressive Bot System and Orbit. They are genuinely transformative mods and a huge part of what makes heavily-modded SPT feel so alive. Absolute game-changers. Mega kudos.</p>\n</blockquote>\n<h2>How to Play Ledger</h2>\n<p>Ledger works especially well if you enjoy PMC hunting, but he does not demand that you build your entire playthrough around him.</p>\n<p>You can focus on his quests deliberately, or simply let them run alongside your normal progression as you collect tags and return to him over time.</p>\n<p>Some tasks are easy. Some are not. Some rewards may seem underwhelming at first. Stick with it.</p>\n<p><strong>Read the tags. Remember the names. See where the story takes you.</strong></p>\n<blockquote>\n<p>Profile note: Ledger adds trader, quest and reputation data to your profile. If you decide not to continue with the mod, you can simply leave it installed and ignore the questline; it does not alter unrelated gameplay systems.</p>\n</blockquote>\n",
+   "description_html": "<h1>Ledger</h1>\n<p><strong>A story-driven custom trader with a 40+ quest storyline built around PMC dogtags, names, and the people who owned them. Companion mod to my Realistic PMC Names mod.</strong></p>\n<p>Ledger is a quiet, methodical trader with a habit of keeping records.</p>\n<p>His requests begin simply enough. Dogtags, factions, levels, occasional specific requirements. As time goes on, those requests become more varied, and the more time you invest in them, the more you begin to realise there may be more to Ledger than first appeared.</p>\n<p>Ledger is not really a shop.</p>\n<p>He does sell a small selection of useful items, and he will buy from you, but his stock is deliberately limited. Think of it less as a trader inventory and more as whatever useful equipment happens to be lying around in the room. His purpose is the questline, not retail.</p>\n<p>His loyalty is earned <strong>only through his own quests</strong> and is completely independent of your PMC level. That means Ledger works just as well on a brand-new profile as he does when added to an established or high-level character.</p>\n<p>The only way to progress with him is to do the work.</p>\n<h2>Companion to <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/3064/realistic-pmc-names\" rel=\"noreferrer noopener\">Realistic PMC Names</a></h2>\n<p>Ledger was created as a natural companion to <strong><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/3064/realistic-pmc-names\" rel=\"noreferrer noopener\">Realistic PMC Names</a></strong>.</p>\n<p>The two mods are completely independent and neither requires the other, but they complement each other extremely well. Realistic PMC Names makes PMCs feel more like actual players and less like disposable AI. Ledger gives those names and dogtags a little more weight.</p>\n<p>There are no hidden dependencies, scripted encounters, or required cross-mod events. They simply work well together.</p>\n<h2>What Ledger Includes</h2>\n<ul>\n<li>A completely custom trader</li>\n<li>Original portrait, dialogue and personality</li>\n<li>Independent loyalty progression</li>\n<li>A deliberately small specialist shop</li>\n<li>A 40+ quest storyline</li>\n<li>Progression that works on both fresh and existing profiles</li>\n</ul>\n<p>That is really all you need to know.</p>\n<h2>Strongly Recommended Setup</h2>\n<p>Ledger can be played perfectly well on its own, but if immersion is your priority, I <strong>strongly</strong> recommend using it alongside:</p>\n<ul>\n<li><strong><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/3064/realistic-pmc-names\" rel=\"noreferrer noopener\">Realistic PMC Names</a></strong></li>\n<li><strong><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement\" rel=\"noreferrer noopener\">SAIN</a></strong></li>\n<li><strong><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1594/apbs-acids-progressive-bot-system\" rel=\"noreferrer noopener\">Acid\u2019s Progressive Bot System</a></strong></li>\n<li><strong><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2706/orbit-20\" rel=\"noreferrer noopener\">Orbit</a></strong></li>\n</ul>\n<p>Together, these mods can transform the feel of SPT.</p>\n<p>SAIN gives PMCs much more convincing combat behaviour. Progressive Bot System makes their progression feel more natural. Orbit helps them move through the maps more like actual players instead of simply occupying familiar scav locations. Realistic PMC Names gives them believable identities.</p>\n<p>Add Ledger on top of that, and PMC encounters start to feel much less disposable.</p>\n<blockquote>\n<p>Huge credit to the authors of SAIN, Progressive Bot System and Orbit. They are genuinely transformative mods and a huge part of what makes heavily-modded SPT feel so alive. Absolute game-changers. Mega kudos.</p>\n</blockquote>\n<h2>How to Play Ledger</h2>\n<p>Ledger works especially well if you enjoy PMC hunting, but he does not demand that you build your entire playthrough around him.</p>\n<p>You can focus on his quests deliberately, or simply let them run alongside your normal progression as you collect tags and return to him over time.</p>\n<p>Some tasks are easy. Some are not. Some rewards may seem underwhelming at first. Stick with it.</p>\n<p><strong>Read the tags. Remember the names. See where the story takes you.</strong></p>\n<blockquote>\n<p>Profile note: Ledger adds trader, quest and reputation data to your profile. If you decide not to continue with the mod, you can simply leave it installed and ignore the questline; it does not alter unrelated gameplay systems.</p>\n</blockquote>\n<blockquote>\n<p>TraderID:68d85e2a7c4f1b03a9e61001</p>\n</blockquote>\n",
    "thumbnail": "https://files.sp-mod.com/mods/a8D2dmwailra4oxB5sugaQs5kz6xO3Plgaz3vH4o.png",
    "forge_url": "https://sp-mod.com/mod/3085/ledger",
-   "downloads": 83,
-   "favourites": 3,
+   "downloads": 160,
+   "favourites": 7,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -208627,7 +208679,7 @@
      "description": "<p>Initial release of Ledger: a story-driven custom trader with a 40+ quest storyline, independent loyalty progression, and a deliberately small specialist shop.</p>\n<p><strong><em>Please comment with any errors, issues, bugs, and likewise - suggestions. Thanks!</em></strong></p>\n<p><strong>Built &amp; Tested on v4.1.6</strong></p>\n",
      "spt_constraint": "~4.1.6",
      "fika": "unknown",
-     "downloads": 83,
+     "downloads": 160,
      "size": 505134,
      "link": "https://sp-mod.com/mod/download/3085/ledger/1.0.0",
      "published_at": "2026-09-30T16:35:00.000000Z",
@@ -208642,7 +208694,147 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-09-30T16:34:00.000000Z",
-   "updated_at": "2026-09-30T17:41:37.000000Z",
+   "updated_at": "2026-09-30T20:10:29.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
+    "cheat_notice": false,
+    "profile_binding_notice": true
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 3088,
+   "hub_id": null,
+   "guid": "com.tarkovacola.server",
+   "name": "Tarkova-cola",
+   "slug": "tarkova-cola",
+   "teaser": "Black ops zombies perks on raid?...SIGN ME UP!",
+   "description_html": "<p>Tarkova-Cola brings Call of Duty Zombies perks to Tushonka!</p>\n<p>Level up each perk with the XP you earn in raid, complete challenges to unlock augments, and pair them with drawbacks. The combination you equip changes what you pursue in raid and which playstyle fits you.</p>\n<p><strong>How to use:</strong></p>\n<ul>\n<li>Buy Speed Cola from therapist (8000 Ruobles)</li>\n<li>Drink in raid</li>\n<li>Level up to unlock and equip augments</li>\n<li>Enjoy!\nAs of right now, there is only speed cola, stay tuned for new perks!</li>\n</ul>\n<p>MIT License (code). 3D model \u201cSpeedcola CoD Zombies\u201d by albertjuli (<a target=\"_blank\" class=\"external-link\" href=\"https://skfb.ly/6VRDU\" rel=\"noreferrer noopener\">https://skfb.ly/6VRDU</a>), CC BY 4.0, modified. Call of Duty icons and jingle belong to their owners.</p>\n<p><em><strong>Important: About the Use of AI</strong></em>\nYou are free to check the github, where you will se ai has assisted in the development of the mod, Stuff like the models, Mechanics, and Icons have all been made by hand, As well as thoroughly tested, i claim full responsability for any inconsistencies in the Mod.</p>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/IC1AGBdnpzIrEDM9pgHerSa0C8OmGoi1K9ppgzaQ.png",
+   "forge_url": "https://sp-mod.com/mod/3088/tarkova-cola",
+   "downloads": 2,
+   "favourites": 0,
+   "featured": false,
+   "fika": false,
+   "fika_latest": "unknown",
+   "category": {
+    "id": 4,
+    "title": "Items",
+    "slug": "items"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 113558,
+     "name": "ily_theillustration.",
+     "avatar": "https://files.sp-mod.com/profile-photos/64U3cSGKFnNJRC8mNSjDdAk2F0Ba53dPmQBp4PHt_128w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/Yendaxddd/TarkovaCola",
+     "label": "Official GitHub"
+    }
+   ],
+   "versions": [
+    {
+     "id": 15701,
+     "version": "1.0.0",
+     "description": "<p>Initial release!</p>\n<p><strong>Speed Cola:</strong> reloads are 1.5x faster for the rest of the raid once you drink it.</p>\n<h2>Levels (max level 5)</h2>\n<p>XP comes from the raid\u2019s session experience, and only counts while Speed Cola is active (drunk in that raid), with a +25% bonus.</p>\n<ul>\n<li><strong>Level 1 to 2:</strong> 4,050 XP (total 4,050)</li>\n<li><strong>Level 2 to 3:</strong> 5,400 XP (total 9,450)</li>\n<li><strong>Level 3 to 4:</strong> 6,750 XP (total 16,200)</li>\n<li><strong>Level 4 to 5:</strong> 8,100 XP (total 24,300)</li>\n</ul>\n<h2>Augments, challenges and drawbacks</h2>\n<p>Completing a challenge unlocks the augment and its linked drawback. Challenges appear at the level shown.</p>\n<h3>Level 1</h3>\n<ul>\n<li><strong>Quick Hands</strong> (Major): drawing and swapping weapons is 50% faster.\n<ul>\n<li>Challenge: kill 3 enemies shortly after swapping weapons, with Speed Cola active.</li>\n<li>Drawback, <strong>Jittery Hands</strong> (Major): +25% weapon sway if an arm has an unhealthy effect (fracture, destroyed, bleed).</li>\n</ul>\n</li>\n<li><strong>Steady Fingers</strong> (Minor): your arms take 30% less damage.\n<ul>\n<li>Challenge: get your arms broken 4 times with Speed Cola active.</li>\n<li>Drawback, <strong>Dry Mouth</strong> (Minor): hydration drains 20% faster.</li>\n</ul>\n</li>\n</ul>\n<h3>Level 2</h3>\n<ul>\n<li><strong>Bolt Runner</strong> (Major): a jammed weapon clears itself when you put it away.\n<ul>\n<li>Challenge: clear a weapon jam 5 times with Speed Cola active.</li>\n<li>Drawback, <strong>Overpressure</strong> (Major): every 4th magazine loses all its rounds when reloaded (they return to your inventory).</li>\n</ul>\n</li>\n<li><strong>Mag Juggler</strong> (Minor): primary weapon magazines load 50% faster in your inventory.\n<ul>\n<li>Challenge: load 20 magazines in raid with Speed Cola active.</li>\n<li>Drawback, <strong>Sticky Mags</strong> (Minor): +10% jam chance.</li>\n</ul>\n</li>\n</ul>\n<h3>Level 3</h3>\n<ul>\n<li><strong>Chamber Check</strong> (Minor): checking magazines in your inventory is 75% faster.\n<ul>\n<li>Challenge: check your weapon\u2019s magazine 20 times in raid.</li>\n<li>Drawback, <strong>Loud Slurp</strong> (Minor): drinking makes noise (30 m) that bots can hear.</li>\n</ul>\n</li>\n<li><strong>Round Counter</strong> (Minor): magazines show their exact ammo count.\n<ul>\n<li>Challenge: check magazines in your inventory 15 times.</li>\n<li>Drawback, <strong>Sweet Tooth</strong> (Minor): eating or drinking anything else takes twice as long.</li>\n</ul>\n</li>\n</ul>\n<h3>Level 4</h3>\n<ul>\n<li><strong>Sugar Rush</strong> (Major): the reload bonus rises from x1.5 to x2.0.\n<ul>\n<li>Challenge: kill 4 PMCs.</li>\n<li>Drawback, <strong>Sugar Crash</strong> (Major): every 2 minutes without a kill, your thirst rate rises (max x2). A kill resets it.</li>\n</ul>\n</li>\n</ul>\n<h3>Level 5</h3>\n<ul>\n<li><strong>Extra Slot</strong> (Special): carry 2 minor augments instead of 1.\n<ul>\n<li>Challenge: kill 1 boss with Speed Cola active.</li>\n</ul>\n</li>\n</ul>\n<h2>Loadout rules</h2>\n<ul>\n<li>1 major + 1 minor augment (2 minors with Extra Slot).</li>\n<li>1 major + 1 minor drawback.</li>\n<li>You can\u2019t equip a major augment without a major drawback.</li>\n<li>Sold by Therapist (loyalty level 1, 8,000 RUB).</li>\n</ul>\n",
+     "spt_constraint": "4.1.6",
+     "fika": "unknown",
+     "downloads": 0,
+     "size": 15858686,
+     "link": "https://sp-mod.com/mod/download/3088/tarkova-cola/1.0.0",
+     "published_at": "2026-09-30T22:00:00.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "1.0.0",
+   "spt_constraint": "4.1.6",
+   "all_spt_constraints": [
+    "4.1.6"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-09-30T21:39:00.000000Z",
+   "updated_at": "2026-10-01T00:19:53.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
+    "cheat_notice": false,
+    "profile_binding_notice": true
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 3089,
+   "hub_id": null,
+   "guid": "com.vinihns.roulettespt",
+   "name": "Roulette SPT",
+   "slug": "roulette-spt",
+   "teaser": "Open cases CS2-style in SPT! Unpack a case and watch the roulette spin to your prize. Create your own cases with a simple JSON file.",
+   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">What is this?</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExODFoYXY5ZWJrYXViMm9heGptNWQzcmNjNXhnMDZsNDRvMHU3Mmw2MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2OQ31vp8FqrNW8l96o/giphy.gif\" alt=\"roulette\" /></p>\n<p>A <strong>CS2-style case roulette</strong>. Buy a case from a trader, right-click it and choose <strong>Unpack</strong>, and instead of the item just appearing in your stash, a roulette opens: a strip of items spins, ticks on every item that passes the marker, and slows down until it lands on your prize.</p>\n<p>Every card shows the item\u2019s icon, name and rarity color, with weapons shown fully assembled, exactly as you receive them. When the roulette stops, the winning item is highlighted with its full name and rarity.</p>\n<p>The mod ships with three ready-to-use cases, and adding your own is as simple as dropping a JSON file into a folder.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Features</div>\n<div class=\"tab-content\"><ul>\n<li><strong>CS2-style roulette</strong> when you unpack a case, with a tick sound for every item that passes the marker.</li>\n<li><strong>Item preview</strong> on every card: icon, short name and rarity color. Weapons are shown with their default preset.</li>\n<li><strong>Five rarity tiers</strong> like CS2: Mil-Spec, Restricted, Classified, Covert and Rare Special, each with its own drop chance.</li>\n<li><strong>Server-side rolls</strong>: the server picks the prize and adds it to your stash before the roulette starts, so skipping or closing the roulette never loses the item.</li>\n<li>Everything you win is <strong>Found in Raid</strong>.</li>\n<li><strong>Three balanced cases</strong> included: weapons, rare items and storage containers.</li>\n<li><strong>Drop-in custom cases</strong>: one JSON file per case. Add a file, restart the server, and the case is in the game.</li>\n<li><strong>Any trader, any currency</strong>: each case chooses its trader (including traders from other mods), price, currency, loyalty level, stock and buy limit.</li>\n<li><strong>Skip</strong> straight to the result with the <code>SKIP</code> button or <code>Esc</code>.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Included Cases</div>\n<div class=\"tab-content\"><p>All three are sold by <strong>Peacekeeper</strong> at loyalty level 1, with unlimited stock.</p>\n<ul>\n<li><strong>Roulette weapon case</strong> \u2014 <strong>$660</strong>. 22 weapons, from a Makarov to an M60E6, given with their default preset.</li>\n<li><strong>Roulette rare items case</strong> \u2014 <strong>$925</strong>. 21 valuables: figurines, GPU, LEDX, Bitcoin and Labs keycards up to Red.</li>\n<li><strong>Roulette storage containers case</strong> \u2014 <strong>$2,550</strong>. 21 storage containers, from wallets to the T H I C C item case.</li>\n</ul>\n<p>Prices are balanced <strong>slightly in the house\u2019s favor</strong>: about <strong>40%</strong> of openings give an item worth more than the case, and the average prize is worth about 95% of the price, based on the flea prices in the SPT database.</p>\n<p><strong>Drop chances per tier:</strong></p>\n<ul>\n<li><strong>Mil-Spec</strong> \u2014 79.92%</li>\n<li><strong>Restricted</strong> \u2014 15.98%</li>\n<li><strong>Classified</strong> \u2014 3.2%</li>\n<li><strong>Covert</strong> \u2014 0.64%</li>\n<li><strong>Rare Special</strong> \u2014 0.26%</li>\n</ul>\n<p>A tier\u2019s chance is split evenly between the case\u2019s items in that tier.</p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Custom Cases</div>\n<div class=\"tab-content\"><p>Each case is its own JSON file in <code>SPT_Runtime/user/mods/rouletteSPT/cases/</code>. To add one, drop a new <code>.json</code> file in that folder and restart the server. A broken file is reported in the server log and skipped, without affecting the other cases.</p>\n<pre><code>{\n  \"id\": \"6abc5a3f2257651f5af5d5d8\",\n  \"cloneFrom\": \"64897ffc3656831810043165\",\n  \"backgroundColor\": \"violet\",\n  \"handbookPriceRoubles\": 79860,\n  \"locales\": {\n    \"en\": { \"name\": \"My case\", \"shortName\": \"MyCase\", \"description\": \"Open it to spin the roulette.\" }\n  },\n  \"trader\": { \"traderId\": \"5935c25fb3acc3127c3d8cd9\", \"price\": 660, \"currency\": \"USD\", \"loyaltyLevel\": 1, \"stock\": -1, \"buyRestriction\": 0 },\n  \"items\": [\n    { \"tpl\": \"5448bd6b4bdc2dfc2f8b4569\", \"tier\": \"milspec\" },\n    { \"tpl\": \"627e14b21713922ded6f2c15\", \"tier\": \"gold\" }\n  ]\n}\n</code></pre>\n<p><strong>Fields:</strong></p>\n<ul>\n<li><code>id</code> \u2014 id of the new case item: a unique 24-character hex MongoId. <strong>Never change it</strong> once players own the case.</li>\n<li><code>cloneFrom</code> \u2014 item whose model, icon and size the case copies.</li>\n<li><code>backgroundColor</code> \u2014 inventory background: <code>blue</code>, <code>yellow</code>, <code>green</code>, <code>red</code>, <code>black</code>, <code>grey</code>, <code>violet</code>, <code>orange</code> or <code>default</code>.</li>\n<li><code>handbookPriceRoubles</code> \u2014 handbook and flea base price, in roubles.</li>\n<li><code>locales</code> \u2014 name, short name and description per game language. Missing languages use the first one.</li>\n<li><code>trader</code> \u2014 where the case is sold:\n<ul>\n<li><code>traderId</code> \u2014 the trader\u2019s id (see below).</li>\n<li><code>price</code> and <code>currency</code> \u2014 <code>USD</code>, <code>RUB</code>, <code>EUR</code> or <code>GP</code>.</li>\n<li><code>loyaltyLevel</code> \u2014 loyalty level needed to buy it.</li>\n<li><code>stock</code> \u2014 stock per restock; <code>-1</code> is unlimited.</li>\n<li><code>buyRestriction</code> \u2014 max purchases per restock; <code>0</code> is no limit.</li>\n</ul>\n</li>\n<li><code>items</code> \u2014 what the case can give, one item per opening. <code>tier</code> is one of <code>milspec</code>, <code>restricted</code>, <code>classified</code>, <code>covert</code> or <code>gold</code>.</li>\n</ul>\n<p><strong>Trader ids:</strong></p>\n<ul>\n<li><strong>Prapor</strong> \u2014 <code>54cb50c76803fa8b248b4571</code></li>\n<li><strong>Therapist</strong> \u2014 <code>54cb57776803fa99248b456e</code></li>\n<li><strong>Skier</strong> \u2014 <code>58330581ace78e27b8b10cee</code></li>\n<li><strong>Peacekeeper</strong> \u2014 <code>5935c25fb3acc3127c3d8cd9</code></li>\n<li><strong>Mechanic</strong> \u2014 <code>5a7c2eca46aef81a7ca2145d</code></li>\n<li><strong>Ragman</strong> \u2014 <code>5ac3b934156ae10c4430e83c</code></li>\n<li><strong>Jaeger</strong> \u2014 <code>5c0647fdd443bc2504c2d371</code></li>\n</ul>\n<p>Traders added by other mods work too. Fence isn\u2019t supported, since his stock is generated by the server.</p>\n<p>The rarity tiers (names, colors and chances) are in <code>config.json</code> and shared by every case.</p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Installation</div>\n<div class=\"tab-content\"><ol>\n<li>Download the latest release from the <strong>Files</strong> tab.</li>\n<li>Extract <code>rouletteSPT.zip</code> into your SPT game folder. It places:\n<ul>\n<li>the server mod in <code>SPT_Runtime/user/mods/rouletteSPT/</code></li>\n<li>the client plugin in <code>BepInEx/plugins/rouletteSPT.dll</code></li>\n</ul>\n</li>\n<li>Start the server and the game, buy a case from Peacekeeper, right-click it and choose <strong>Unpack</strong>.</li>\n</ol>\n<p><strong>Client settings</strong> (<code>F12</code> menu):</p>\n<ul>\n<li><strong>Enable Roulette</strong> (default <code>true</code>) \u2014 when off, cases open like a normal container.</li>\n<li><strong>Spin Duration</strong> (default <code>6.5</code>) \u2014 how long the roulette spins, in seconds (2\u201315).</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Requirements</div>\n<div class=\"tab-content\"><ul>\n<li><strong>SPT 4.1.6</strong>.</li>\n<li><strong>Both parts of the mod</strong> (server and client). The client reads the cases from the server when the game starts; without the server mod, the roulette stays off.</li>\n<li>Enough free space in your stash for the prize. If there isn\u2019t enough space, the case stays unopened.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Issues</div>\n<div class=\"tab-content\"><p>Found a problem? Open an <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/viniHNS/rouletteSPT/issues\" rel=\"noreferrer noopener\">issue on GitHub</a>.</p></div></div></div>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/IxSIVJSsvW6HvZsGloqLr5hKICav9PbfnDv7REyo.png",
+   "forge_url": "https://sp-mod.com/mod/3089/roulette-spt",
+   "downloads": 22,
+   "favourites": 0,
+   "featured": false,
+   "fika": false,
+   "fika_latest": "unknown",
+   "category": {
+    "id": 4,
+    "title": "Items",
+    "slug": "items"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 24845,
+     "name": "viniHNS",
+     "avatar": "https://files.sp-mod.com/profile-photos/84101c224775f3cd8ee04dcdc31158d6280cc336_128w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/viniHNS/rouletteSPT",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 15703,
+     "version": "1.0.0",
+     "description": "<p>Initial release</p>\n",
+     "spt_constraint": "~4.1.6",
+     "fika": "unknown",
+     "downloads": 22,
+     "size": 31933,
+     "link": "https://sp-mod.com/mod/download/3089/roulette-spt/1.0.0",
+     "published_at": "2026-09-30T23:33:00.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "1.0.0",
+   "spt_constraint": "~4.1.6",
+   "all_spt_constraints": [
+    "~4.1.6"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-09-30T23:16:00.000000Z",
+   "updated_at": "2026-09-30T23:35:05.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
