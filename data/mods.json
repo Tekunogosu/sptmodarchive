@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-10-02T17:55:29Z",
+ "generated_at": "2026-10-02T22:20:47Z",
  "source": "https://sp-mod.com",
  "filter": "all",
- "mod_count": 2024,
+ "mod_count": 2025,
  "categories": [
   {
    "id": 12,
@@ -186001,7 +186001,7 @@
    },
    "authors": [
     {
-     "id": 118937,
+     "id": "118937-arch",
      "name": "Hysocs",
      "avatar": "https://files.sp-mod.com/profile-photos/2kp7OvMk67Cdf5VvO12p9sOk7mAuqgBAaLv0SQSM_256w.webp"
     }
@@ -186093,7 +186093,7 @@
     "profile_binding_notice": false
    },
    "origin": "forge",
-   "delisted": false
+   "delisted": true
   },
   {
    "id": 2857,
@@ -196540,8 +196540,8 @@
    "description_html": "<p><strong>SPT 4.1.3 port of QuickSell. All credit goes to the original author.</strong></p>\n<p>Original mod: <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/TadMaj/Tarkov-QuickSell\" rel=\"noreferrer noopener\">TadMaj</a><br />\nMultiselect interop: Tyfon (UI Fixes)<br />\nPrice tooltip approach inspired by: SwiftXP (Show Me The Money)<br />\nLicense: MIT (unchanged)</p>\n<p>This port keeps QuickSell available on SPT 4.1.3. If TadMaj asks me to remove it or publishes their own 4.1 version, I will take this page down.</p>\n<hr />\n<h2>What it does</h2>\n<ul>\n<li>Right-click a stash item to sell it to the best paying trader or list it on the flea.</li>\n<li>Use the <code>N</code> flea and <code>M</code> trader keybinds.</li>\n<li>See trader and flea prices when hovering over items.</li>\n<li>Sell multiple selected items with UI Fixes.</li>\n</ul>\n<h2>Installation</h2>\n<p>Extract the ZIP into your <strong>SPT root folder</strong>. Client files go in <code>BepInEx\\plugins\\QuickSell\\</code>; server files go in <code>SPT_Runtime\\user\\mods\\QuickSell\\</code>.</p>\n<p>Requires <strong>SPT 4.1.3</strong>. UI Fixes 6.0.0+ is optional for multi-select selling. The server component is recommended for flea prices in raid.</p>\n<h2>Fika Headless</h2>\n<p>Install the QuickSell client plugin on <strong>playing PCs only</strong>. <strong>Do not install <code>QuickSell.dll</code> in <code>BepInEx\\plugins</code> on the headless PC.</strong> If your SPT server runs on that PC, keep the server component in <code>SPT_Runtime\\user\\mods\\QuickSell\\</code>.</p>\n<h2>Configuration</h2>\n<p>QuickSell settings are in the <strong>F12 menu</strong>. Tier colours are in <code>BepInEx\\plugins\\QuickSell\\config.json</code>.</p>\n<h2>Uninstalling</h2>\n<p>Delete <code>BepInEx\\plugins\\QuickSell\\</code> and <code>SPT_Runtime\\user\\mods\\QuickSell\\</code>. Nothing is written to your profile.</p>\n<p>If you\u2019d like to support my work, you can <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/its_blackhawk\" rel=\"noreferrer noopener\">buy me a coffee</a> \u2615</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/SP6nNkpHFOBcnMSVUwqmXEWMyOpl5gyrMM2doinW.jpg",
    "forge_url": "https://sp-mod.com/mod/2955/quick-sell",
-   "downloads": 5681,
-   "favourites": 45,
+   "downloads": 6795,
+   "favourites": 53,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -196569,12 +196569,24 @@
    ],
    "versions": [
     {
+     "id": 15745,
+     "version": "4.2.0",
+     "description": "<h2>QuickSell v4.2.0</h2>\n<ul>\n<li>Optimized price tooltips to eliminate lag and stutter.</li>\n<li>Improved performance for backpacks, containers and nested items.</li>\n<li>Improved price cache updates when moving items.</li>\n<li>Added extra stability fixes.</li>\n</ul>\n",
+     "spt_constraint": ">=4.1.5",
+     "fika": "compatible",
+     "downloads": 8,
+     "size": 48175,
+     "link": "https://sp-mod.com/mod/download/2955/quick-sell/4.2.0",
+     "published_at": "2026-10-02T22:00:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 15578,
      "version": "4.0.1",
      "description": "<h2>QuickSell v4.0.1 \u2014 changes since v3.4.0</h2>\n<ul>\n<li><strong>Trader prices include attachments.</strong> QuickSell\u2019s trader tooltip and sale confirmation now account for attached weapon parts. Prices recalculate when attachments or stack counts change.</li>\n<li><strong>Flea prices include attachments</strong>, including nested parts, in tooltips and sale confirmations.</li>\n<li><strong>New F12 setting: Allow flea market selling.</strong> Turning it off blocks both QuickSell flea sales and listings from the normal flea page. Flea buying remains available.</li>\n<li><strong>New flea price refresh hotkey.</strong> You can assign a key in F12 to trigger the existing manual refresh.</li>\n<li><strong>New sell sound option.</strong> Choose whether the sound plays once per batch or once for each item sold.</li>\n<li>Fixed QuickSell price tooltips appearing on trader-owned items and causing console overflow errors.</li>\n</ul>\n<p><strong>Installation:</strong> Extract the ZIP into your SPT root folder.</p>\n<p>Requires <strong>SPT 4.1.3</strong>.</p>\n",
      "spt_constraint": ">4.1.3",
      "fika": "compatible",
-     "downloads": 349,
+     "downloads": 1425,
      "size": 41640,
      "link": "https://sp-mod.com/mod/download/2955/quick-sell/4.0.1",
      "published_at": "2026-09-24T02:15:00.000000Z",
@@ -196586,7 +196598,7 @@
      "description": "<h2>Changed</h2>\n<ul>\n<li><strong>One sell sound per batch.</strong> Selling many items at once played the confirmation\nsound for every item. It now plays once for the whole sale.</li>\n</ul>\n<p>Thanks to <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Elmer-Glue\" rel=\"noreferrer noopener\">Elmer-Glue</a> for the fix in #2.</p>\n",
      "spt_constraint": ">=4.1.3 <4.2.0",
      "fika": "compatible",
-     "downloads": 2748,
+     "downloads": 2772,
      "size": 33915,
      "link": "https://sp-mod.com/mod/download/2955/quick-sell/3.4.0",
      "published_at": "2026-09-03T06:13:00.000000Z",
@@ -196610,7 +196622,7 @@
      "description": "<h2>Fixed</h2>\n<ul>\n<li><strong>\u201cItem not found in inventory\u201d when listing on the flea</strong> \u2014 the confirmation\nflow ran twice once flea prices were cached, so the second pass tried to list\nitems the first had already listed. The offer went up, but you got an error.\nFixed by <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/925316\" rel=\"noreferrer noopener\">925316</a> in #1.</li>\n<li><strong>Sale could silently do nothing</strong> if a price lookup for the same item was\nalready in progress (started by a tooltip). The confirmation window never\nappeared. Callbacks now queue behind an in-flight request instead of being\ndropped.</li>\n</ul>\n",
      "spt_constraint": "4.1.3",
      "fika": "compatible",
-     "downloads": 771,
+     "downloads": 774,
      "size": 33200,
      "link": "https://sp-mod.com/mod/download/2955/quick-sell/3.2.3",
      "published_at": "2026-08-26T12:26:00.000000Z",
@@ -196634,7 +196646,7 @@
      "description": "<h2>Fixed</h2>\n<ul>\n<li><strong>Selling stopped working after a raid</strong> \u2014 the mod cached the trader list, but\nthe game rebuilds its trader objects after every raid. It was holding the old\nones, so all prices came back empty and you\u2019d get \u201cNo items can be sold to\ntraders\u201d until restarting the game.</li>\n</ul>\n<p>Thanks to <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/78923/fxh3d\" rel=\"noreferrer noopener\">fxh3d</a> for the report.</p>\n",
      "spt_constraint": "4.1.3",
      "fika": "compatible",
-     "downloads": 94,
+     "downloads": 95,
      "size": 32674,
      "link": "https://sp-mod.com/mod/download/2955/quick-sell/3.2.1",
      "published_at": "2026-08-26T02:28:00.000000Z",
@@ -196646,24 +196658,25 @@
      "description": "<p>SPT 4.1.3 port. All credit to the original author, <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/TadMaj/Tarkov-QuickSell\" rel=\"noreferrer noopener\">TadMaj</a>.</p>\n<h2>Features</h2>\n<ul>\n<li>Right-click any stash item for <strong>QuickSell (Flea)</strong> and <strong>QuickSell (Trader)</strong></li>\n<li>Keybinds: <code>N</code> flea, <code>M</code> traders</li>\n<li><strong>Price tooltips</strong> \u2014 best trader price and flea price on hover, colour-coded by value</li>\n<li><strong>Multi-select</strong> \u2014 with UI Fixes, sell many items in one confirmation</li>\n<li>Flea prices work in raid (needs the included server mod)</li>\n</ul>\n<h2>Installation</h2>\n<p>Extract into your <strong>SPT root folder</strong> (the one containing <code>BepInEx\\</code> and <code>EscapeFromTarkov_Data\\</code>).\nClient goes to <code>BepInEx\\plugins\\QuickSell\\</code>, server to <code>SPT_Runtime\\user\\mods\\QuickSell\\</code>.</p>\n<p>The server mod is optional \u2014 without it, flea prices aren\u2019t available in raid.</p>\n<h2>Configuration</h2>\n<p>F12 menu under QuickSell. Tier colours in <code>BepInEx\\plugins\\QuickSell\\config.json</code>.</p>\n<hr />\n<p>If you\u2019d like to support my work, you can <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/its_blackhawk\" rel=\"noreferrer noopener\">buy me a coffee</a> \u2615</p>\n",
      "spt_constraint": "4.1.3",
      "fika": "compatible",
-     "downloads": 372,
+     "downloads": 374,
      "size": 32363,
      "link": "https://sp-mod.com/mod/download/2955/quick-sell/3.2.0",
      "published_at": "2026-08-25T16:10:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "4.0.1",
-   "spt_constraint": ">4.1.3",
+   "latest_version": "4.2.0",
+   "spt_constraint": ">=4.1.5",
    "all_spt_constraints": [
     "4.1.3",
     ">4.1.3",
-    ">=4.1.3 <4.2.0"
+    ">=4.1.3 <4.2.0",
+    ">=4.1.5"
    ],
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-08-25T16:13:00.000000Z",
-   "updated_at": "2026-09-24T20:01:59.000000Z",
+   "updated_at": "2026-10-02T22:03:05.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -206063,11 +206076,11 @@
    "name": "Rook ",
    "slug": "rook",
    "teaser": "Rook is a lore-friendly custom trader offering curated weapons, equipment, custom presets, and intelligence-focused trading.",
-   "description_html": "<h2>Background</h2>\n<p>Rook was not always Rook.</p>\n<p>During the Contract Wars, he worked as a low-profile U*** contractor around some of T*********\u2019s most sensitive facilities and assets in Norvinsk. His work mostly involved site security, classified material, personnel transfers, and assignments where discretion mattered more than recognition.</p>\n<p>His reliability eventually brought him into Black Division, where the same kind of work continued under much tighter compartmentalization and with far less room for failure.</p>\n<p>That career came to an end during a sanitization operation at Laboratory No.14. The facility was compromised, personnel were lost, and the operation collapsed when FSB Spetsnaz team arrived in the facility after Rook\u2019s team about to finish operation when cleaning was ended</p>\n<p>Rook and the rest of his team were subsequently listed as presumed KIA.</p>\n<p>He survived.</p>\n<p>Rather than return and explain how, he chose to remain dead. His former identity disappeared with No.14, and the name Rook appeared later through a network of suppliers, technicians, fixers, and intermediaries built over years of contract work.</p>\n<p>Now, Rook deals in carefully selected weapons and equipment, but information remains his most valuable commodity.</p>\n<h2>Features</h2>\n<p>-Four loyalty levels with increasingly strong equipment</p>\n<p>-Curated weapons, ammunition, armor, attachments, and tactical gear</p>\n<p>-A large selection of custom weapon presets</p>\n<p>-Intelligence-focused item buying (In the next update)</p>\n<p>-Premium repair service</p>\n<p>-Higher-tier gear unlocked through continued trading with Rook</p>\n<h2>Installation</h2>\n<p>Extract the archive directly into your SPT root folder, where SPT.Server.exe is located.</p>\n<h2>Compatibility</h2>\n<p>Supported SPT versions:</p>\n<p>-SPT 4.1.6</p>\n<p>-SPT 4.0.13</p>\n<p>Download and install the release that matches your SPT version.</p>\n<p>No dependencies are required for the initial release.</p>\n<blockquote>\n<p><strong>Initial Release Note</strong></p>\n<p>Rook 1.0.0 is intentionally built around vanilla SPT content. The goal of the initial release is to make strong use of the existing item pool while remaining lightweight and dependency-free. Future updates are planned to add quests, Black Division equipment.</p>\n</blockquote>\n<h2>Future Plans</h2>\n<p>-Custom quests and progression</p>\n<p>-Black Division equipment integration</p>\n<p>-Unique presets for Rook</p>\n<p>-Multi-language localization support, I plan to build the localization system into Rook, and community translations will be welcome for languages I cannot translate myself.</p>\n<p>-Further expansion and redesignation of Rook\u2019s inventory and progression</p>\n<p>Upcoming Trader \u2014 Zhao Jianwei</p>\n<p>Zhao Jianwei is a former procurement and operations specialist for Zhenyu Industrial Supply, a Shenyang-based company that once supplied Norvinsk\u2019s growing industrial sector. When the region collapsed, Jianwei adapted his remaining network of warehouses, suppliers, drivers, and technical contacts to keep essential goods moving through the region.\nUnlike a conventional arms dealer, Zhao focuses on industrial supplies, technical components, tools, maintenance equipment, storage solutions, and practical field logistics. Across four loyalty levels, his inventory expands from common utility goods and basic technical supplies to more valuable components, specialized equipment, and harder-to-source logistical items.\nHis established professional connection with Mechanic comes from years of technical procurement and repeated business dealings before and during the collapse of Norvinsk.\nUpcoming in a future update.</p>\n<h2>Credits &amp; Permissions</h2>\n<p>Author: YDLonewolf</p>\n<p>License: MIT License</p>\n<p>Rook may be modified, updated, ported, redistributed, or used as a base for other projects in accordance with the MIT License.</p>\n<p>Please keep the original copyright and license notice included with the mod.</p>\n<p>If you release a modified, updated, or ported version, please:</p>\n<p>-Credit YDLonewolf as the original author of Rook</p>\n<p>-Clearly state that your release is a modified or unofficial version</p>\n<p>-Describe the changes you made and the SPT version it supports</p>\n<p>-Link back to the original Rook page when possible</p>\n<p>Unofficial ports, forks, and modified versions are supported by their respective maintainers, not by the original author.</p>\n<blockquote>\n<p><strong>Developer Note</strong></p>\n<p>Rook is my first SPT mod. The initial release has been tested carefully, but feedback and bug reports are always welcome as I continue improving the mod.</p>\n</blockquote>\n<h2>Known Issues</h2>\n<p>No known issues at this time.</p>\n<p>If you encounter a bug, please report it with your SPT version and any relevant server errors or logs.</p>\n",
+   "description_html": "<h2>Background</h2>\n<p>Rook was not always Rook.</p>\n<p>During the Contract Wars, he worked as a low-profile U*** contractor around some of T*********\u2019s most sensitive facilities and assets in Norvinsk. His work mostly involved site security, classified material, personnel transfers, and assignments where discretion mattered more than recognition.</p>\n<p>His reliability eventually brought him into Black Division, where the same kind of work continued under much tighter compartmentalization and with far less room for failure.</p>\n<p>That career came to an end during a sanitization operation at Laboratory No.14. The facility was compromised, personnel were lost, and the operation collapsed when FSB Spetsnaz team arrived in the facility after Rook\u2019s team about to finish operation when cleaning was ended</p>\n<p>Rook and the rest of his team were subsequently listed as presumed KIA.</p>\n<p>He survived.</p>\n<p>Rather than return and explain how, he chose to remain dead. His former identity disappeared with No.14, and the name Rook appeared later through a network of suppliers, technicians, fixers, and intermediaries built over years of contract work.</p>\n<p>Now, Rook deals in carefully selected weapons and equipment, but information remains his most valuable commodity.</p>\n<h2>Features</h2>\n<p>-Four loyalty levels with increasingly strong equipment</p>\n<p>-Curated weapons, ammunition, armor, attachments, and tactical gear</p>\n<p>-A large selection of custom weapon presets</p>\n<p>-Intelligence-focused item buying</p>\n<p>-Premium repair service</p>\n<p>-Higher-tier gear unlocked through continued trading with Rook</p>\n<h2>Installation</h2>\n<p>Extract the archive directly into your SPT root folder, where SPT.Server.exe is located.</p>\n<h2>Compatibility</h2>\n<p>Supported SPT versions:</p>\n<p>-SPT 4.1.6</p>\n<p>-SPT 4.0.13</p>\n<p>Download and install the release that matches your SPT version.</p>\n<p>No dependencies are required for the initial release.</p>\n<h2>Future Plans</h2>\n<p>-Custom quests and progression</p>\n<p>-Unique presets for Rook</p>\n<p>-Multi-language localization support, I plan to build the localization system into Rook, and community translations will be welcome for languages I cannot translate myself. And im planning for quests so\u2026 I cant say no for Russian , Chinese , Japanese , French , Turkish , German language etc.</p>\n<p>-Further expansion and redesignation of Rook\u2019s inventory and progression</p>\n<p>Upcoming Trader \u2014 Zhao Jianwei</p>\n<p>Zhao Jianwei is a former procurement and operations specialist for Zhenyu Industrial Supply, a Shenyang-based company that once supplied Norvinsk\u2019s growing industrial sector. When the region collapsed, Jianwei adapted his remaining network of warehouses, suppliers, drivers, and technical contacts to keep essential goods moving through the region.\nUnlike a conventional arms dealer, Zhao focuses on industrial supplies, technical components, tools, maintenance equipment, storage solutions, and practical field logistics. Across four loyalty levels, his inventory expands from common utility goods and basic technical supplies to more valuable components, specialized equipment, and harder-to-source logistical items.\nHis established professional connection with Mechanic comes from years of technical procurement and repeated business dealings before and during the collapse of Norvinsk.\nUpcoming in a future update.</p>\n<h2>Credits &amp; Permissions</h2>\n<p>Author: YDLonewolf</p>\n<p>License: MIT License</p>\n<p>Rook may be modified, updated, ported, redistributed, or used as a base for other projects in accordance with the MIT License.</p>\n<p>Please keep the original copyright and license notice included with the mod.</p>\n<p>If you release a modified, updated, or ported version, please:</p>\n<p>-Credit YDLonewolf as the original author of Rook</p>\n<p>-Clearly state that your release is a modified or unofficial version</p>\n<p>-Describe the changes you made and the SPT version it supports</p>\n<p>-Link back to the original Rook page when possible</p>\n<p>Unofficial ports, forks, and modified versions are supported by their respective maintainers, not by the original author.</p>\n<blockquote>\n<p><strong>Developer Note</strong></p>\n<p>Rook is my first SPT mod. The initial release has been tested carefully, but feedback and bug reports are always welcome as I continue improving the mod.</p>\n</blockquote>\n<h2>Known Issues</h2>\n<p>No known issues at this time.</p>\n<p>If you encounter a bug, please report it with your SPT version and any relevant server errors or logs.</p>\n<p>Big Credit goes for EpicRangeTime , Eco , Tron and Eukyre for their unique mods</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/oiHFjQuxVLw1tCUDKEoK1xy9urEljKqk447M6jAS.png",
    "forge_url": "https://sp-mod.com/mod/3055/rook",
-   "downloads": 2669,
-   "favourites": 31,
+   "downloads": 2941,
+   "favourites": 33,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -206095,12 +206108,67 @@
    ],
    "versions": [
     {
+     "id": 15744,
+     "version": "1.2.0",
+     "description": "<p>Major Update</p>\n<p>-Added some new unique presets such as SCAR HAMR IAR , HK 243 , M27 IAR , MK11 Mod 0, SIG MCX LVAW and more</p>\n<p>-Added some attachments and items from Content Backport even Black Division Armor and Backpack to LL4</p>\n<p>-Added M4-2000 Supressor from Epic\u2019s All in One (Credit goes for EpicRangeTime for his mod)</p>\n<p>-Added Epic\u2019s All in One , Eco\u2019s Attachment Emporium , WTT Armory and ECOT compatibility for my presets ( Credit goes for EpicRangeTime ,Eco , Tron and Eukyre for their unique mods)</p>\n<p>-Removed Weapon , Meds , Ammo sell items and replaced it with intelligence oriented sell items</p>\n",
+     "spt_constraint": "4.1.6",
+     "fika": "compatible",
+     "downloads": 84,
+     "size": 707883,
+     "link": "https://sp-mod.com/mod/download/3055/rook/1.2.0",
+     "published_at": "2026-10-02T19:53:47.000000Z",
+     "dependencies": [
+      {
+       "id": 1263,
+       "name": "Epic's All in One",
+       "slug": "epics-all-in-one",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/1263/epics-all-in-one"
+      },
+      {
+       "id": 2195,
+       "name": "ECOT - Eukyre's Consortium of Things",
+       "slug": "ecot-eukyres-consortium-of-things",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2195/ecot-eukyres-consortium-of-things"
+      },
+      {
+       "id": 2246,
+       "name": "WTT- Armory",
+       "slug": "wtt-armory",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2246/wtt-armory"
+      },
+      {
+       "id": 2310,
+       "name": "WTT - CommonLib",
+       "slug": "wtt-commonlib",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
+      },
+      {
+       "id": 2512,
+       "name": "WTT - Content Backport",
+       "slug": "wtt-content-backport",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2512/wtt-content-backport"
+      },
+      {
+       "id": 2882,
+       "name": "Eco's Attachment Emporium",
+       "slug": "ecos-attachment-emporium",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2882/ecos-attachment-emporium"
+      }
+     ]
+    },
+    {
      "id": 15689,
      "version": "1.1.0",
      "description": "<p>Big Update</p>\n<p>-Added some new and unique presets such as Colt Model 727 , 653 , 733 and more</p>\n<p>-Added WTT Content Backport and WTT CommonLib compatibility</p>\n",
      "spt_constraint": "4.1.6",
      "fika": "compatible",
-     "downloads": 381,
+     "downloads": 554,
      "size": 661185,
      "link": "https://sp-mod.com/mod/download/3055/rook/1.1.0",
      "published_at": "2026-09-30T14:54:00.000000Z",
@@ -206127,7 +206195,7 @@
      "description": "<p>Rook v1.0.1 - SPT 4.0.13</p>\n<p>Small Update</p>\n<ul>\n<li>Added 7.62x51mm M61 ammunition.</li>\n<li>Adjusted several ammunition prices for better balance.</li>\n<li>Minor pricing corrections.</li>\n<li>Updated specifically for SPT 4.0.13.</li>\n<li>Preserves the existing 4.0.13 compatibility adjustments.</li>\n</ul>\n",
      "spt_constraint": "~4.0.13",
      "fika": "unknown",
-     "downloads": 149,
+     "downloads": 164,
      "size": 604977,
      "link": "https://sp-mod.com/mod/download/3055/rook/1.0.1+compat.4.0.13",
      "published_at": "2026-09-26T11:46:48.000000Z",
@@ -206158,7 +206226,7 @@
      "dependencies": []
     }
    ],
-   "latest_version": "1.1.0",
+   "latest_version": "1.2.0",
    "spt_constraint": "4.1.6",
    "all_spt_constraints": [
     "4.1.6",
@@ -206167,6 +206235,27 @@
    ],
    "dependencies": [
     {
+     "id": 1263,
+     "name": "Epic's All in One",
+     "slug": "epics-all-in-one",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/1263/epics-all-in-one"
+    },
+    {
+     "id": 2195,
+     "name": "ECOT - Eukyre's Consortium of Things",
+     "slug": "ecot-eukyres-consortium-of-things",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/2195/ecot-eukyres-consortium-of-things"
+    },
+    {
+     "id": 2246,
+     "name": "WTT- Armory",
+     "slug": "wtt-armory",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/2246/wtt-armory"
+    },
+    {
      "id": 2310,
      "name": "WTT - CommonLib",
      "slug": "wtt-commonlib",
@@ -206179,10 +206268,38 @@
      "slug": "wtt-content-backport",
      "constraint": "",
      "url": "https://sp-mod.com/mod/2512/wtt-content-backport"
+    },
+    {
+     "id": 2882,
+     "name": "Eco's Attachment Emporium",
+     "slug": "ecos-attachment-emporium",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/2882/ecos-attachment-emporium"
     }
    ],
    "all_dependencies": [
     {
+     "id": 1263,
+     "name": "Epic's All in One",
+     "slug": "epics-all-in-one",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/1263/epics-all-in-one"
+    },
+    {
+     "id": 2195,
+     "name": "ECOT - Eukyre's Consortium of Things",
+     "slug": "ecot-eukyres-consortium-of-things",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/2195/ecot-eukyres-consortium-of-things"
+    },
+    {
+     "id": 2246,
+     "name": "WTT- Armory",
+     "slug": "wtt-armory",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/2246/wtt-armory"
+    },
+    {
      "id": 2310,
      "name": "WTT - CommonLib",
      "slug": "wtt-commonlib",
@@ -206195,10 +206312,17 @@
      "slug": "wtt-content-backport",
      "constraint": "",
      "url": "https://sp-mod.com/mod/2512/wtt-content-backport"
+    },
+    {
+     "id": 2882,
+     "name": "Eco's Attachment Emporium",
+     "slug": "ecos-attachment-emporium",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/2882/ecos-attachment-emporium"
     }
    ],
    "published_at": "2026-09-23T11:16:00.000000Z",
-   "updated_at": "2026-10-01T17:41:45.000000Z",
+   "updated_at": "2026-10-02T20:57:23.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -206367,7 +206491,7 @@
    "description_html": "<p>I missed it, so I pumped some of it through chatgpt. Don\u2019t ask much of me, but I hope this works for you because it works for me and the boys.</p>\n<p>I\u2019ll probably update commonlib dependency for 4.0.13 to 2.0.24, or maybe it\u2019ll just work, idk, try it and let me know.</p>\n<p>Anyone can modify it or rewrite it, whatever, just give Choccy his dues.</p>\n<p>Anyways, this is what Mr. GPT put out for a description:</p>\n<h1>Beretta 93R Raffica Continued</h1>\n<p>An SPT 4.0.13 migration of Choccy Milk\u2019s Beretta 93R Raffica, preserving the original weapon, attachments, models, textures, animations, sounds, presets, mastery, trader integration, Gunsmith compatibility, and PMC integration wherever compatible with the current SPT runtime.</p>\n<h2>Features</h2>\n<ul>\n<li>Beretta 93R with single and burst fire</li>\n<li>Original custom weapon models, textures, animations, and audio</li>\n<li>Seven original custom attachments</li>\n<li>Original magazine and 9x19mm ammunition compatibility</li>\n<li>M93R Auto 9 and M93R Stock presets</li>\n<li>Peacekeeper trader integration</li>\n<li>Mastery integration</li>\n<li>Gunsmith compatibility</li>\n<li>U*** and B*** PMC Holster integration</li>\n<li>Original bundle and prefab relationships preserved</li>\n</ul>\n<h2>Requirements</h2>\n<ul>\n<li>SPT 4.0.13</li>\n<li>WTT ServerCommonLib 2.0.23</li>\n</ul>\n<h2>Installation</h2>\n<p>Download the release ZIP and extract it into your SPT installation root.</p>\n<p>The resulting mod should be located at:</p>\n<p><code>user/mods/Beretta93R/</code></p>\n<h2>Known Issue</h2>\n<p>The custom animated foregrip can cause a small cosmetic arm/hand animation reset after a magazine reload and around some fire-mode transitions.</p>\n<p>This is cosmetic only. Firing, reloading, and fire-mode switching remain functional.</p>\n<h2>Credits</h2>\n<ul>\n<li><strong>Choccy Milk / Choccy</strong> \u2014 original SPT mod author and EFT porter</li>\n<li><strong>RaiRaiTheRaichu</strong> \u2014 weapon requester and model provider</li>\n<li><strong>Paul Yakushev / Rifleman</strong> \u2014 Beretta 93R / Auto 9 model creator</li>\n<li><strong>zincropes</strong> \u2014 SPT 4.0.13 migration and maintenance</li>\n</ul>\n<p>Additional original attribution and licensing information is preserved in the repository and release package.</p>\n<p>This migration does not claim ownership of Choccy Milk\u2019s or any third-party assets.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/IUQot4e6nWdrT5Ui2kv2RoFIaxLr4lqJCEXfO2De.png",
    "forge_url": "https://sp-mod.com/mod/3057/beretta-93r-raffica-continued",
-   "downloads": 984,
+   "downloads": 1050,
    "favourites": 10,
    "featured": false,
    "fika": false,
@@ -206405,12 +206529,32 @@
    ],
    "versions": [
     {
+     "id": 15743,
+     "version": "1.1.3",
+     "description": "<p>added sights for 4.1.6</p>\n",
+     "spt_constraint": "4.1.6",
+     "fika": "unknown",
+     "downloads": 48,
+     "size": 28658548,
+     "link": "https://sp-mod.com/mod/download/3057/beretta-93r-raffica-continued/1.1.3",
+     "published_at": "2026-10-02T18:56:00.000000Z",
+     "dependencies": [
+      {
+       "id": 2310,
+       "name": "WTT - CommonLib",
+       "slug": "wtt-commonlib",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
+      }
+     ]
+    },
+    {
      "id": 15741,
      "version": "1.0.1",
      "description": "<p>Adds sights</p>\n",
      "spt_constraint": "4.0.13",
      "fika": "unknown",
-     "downloads": 2,
+     "downloads": 8,
      "size": 28670500,
      "link": "https://sp-mod.com/mod/download/3057/beretta-93r-raffica-continued/1.0.1",
      "published_at": "2026-10-02T16:26:00.000000Z",
@@ -206430,7 +206574,7 @@
      "description": "<h2>SPT 4.1.6 Compatibility Update</h2>\n<p>This release improves compatibility with heavily modded SPT 4.1.6 installations.</p>\n<h3>Changes</h3>\n<ul>\n<li>Runtime weapon-property changes made by other mods no longer cause fatal startup errors when the 93R remains structurally usable.</li>\n<li>Runtime changes to values such as weight, heat, malfunction chance, recoil, fire rate, accuracy, durability, and similar balance properties are now treated as compatibility drift rather than source corruption.</li>\n<li>Runtime property differences are reported diagnostically without restoring or overwriting another mod\u2019s values.</li>\n<li>Additional compatible magazines remain supported.</li>\n<li>Compatible custom ammunition relationships remain supported.</li>\n<li>Optional malformed or incompatible third-party magazine entries remain non-fatal when another usable 93R magazine/ammunition path exists.</li>\n<li>Additive PMC runtime pools remain supported.</li>\n<li>Fatal validation is reserved for genuinely unusable or structurally invalid 93R runtime state.</li>\n<li>No weapon balance, model, audio, animation, preset, trader, flea, or sight-development content is intentionally changed by this update.</li>\n</ul>\n<h3>Validation</h3>\n<p>Verified with:</p>\n<ul>\n<li>SPT 4.1.6</li>\n<li>WTT ServerCommonLib 3.0.6</li>\n<li>Full validator suite</li>\n<li>Compiled magazine/ammunition compatibility tests</li>\n<li>Compiled runtime core-property compatibility tests</li>\n<li>A heavily modded 62-server-mod test environment</li>\n<li>Two clean server startup gates</li>\n<li>Successful in-game testing</li>\n</ul>\n<h3>Known Issue</h3>\n<p>The folding foregrip may still show a small cosmetic hand/arm reset after some reloads or fire-mode transitions. Weapon functionality is unaffected.</p>\n<p>Full Gunsmith quest turn-in and naturally generated PMC usage remain non-blocking and were not required for this update.</p>\n",
      "spt_constraint": "4.1.6",
      "fika": "unknown",
-     "downloads": 303,
+     "downloads": 315,
      "size": 28602256,
      "link": "https://sp-mod.com/mod/download/3057/beretta-93r-raffica-continued/1.1.2",
      "published_at": "2026-09-28T21:38:00.000000Z",
@@ -206505,8 +206649,8 @@
      ]
     }
    ],
-   "latest_version": "1.0.1",
-   "spt_constraint": "4.0.13",
+   "latest_version": "1.1.3",
+   "spt_constraint": "4.1.6",
    "all_spt_constraints": [
     "4.0.13",
     "4.1.6"
@@ -206530,7 +206674,7 @@
     }
    ],
    "published_at": "2026-09-23T00:10:00.000000Z",
-   "updated_at": "2026-10-02T17:04:03.000000Z",
+   "updated_at": "2026-10-02T19:03:03.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -208840,11 +208984,11 @@
    "name": "Better Flashlights",
    "slug": "better-flashlights",
    "teaser": "A lightweight, tactical flashlight overhaul for players and bots with custom Kelvin temperature and procedural beams",
-   "description_html": "<p>A lightweight, client-side mod that completely overhauls tactical weapon flashlights for both the player and bots, bringing a modern tactical aesthetic to your raids.</p>\n<h2>\ud83c\udf1f Features</h2>\n<ul>\n<li><strong>Modern LED Overhaul:</strong> Automatically converts real Kelvin temperatures into accurate light spectrum profiles. Experience everything from realistic warm halogens to ultra-cool white LED beams (inspired by Arena Breakout Infinite).</li>\n<li><strong>Procedural Beam Textures:</strong> Replaces generic and blurry default Unity light profiles with a dynamically generated, high-resolution beam cookie featuring smooth edge fading.</li>\n<li><strong>Flickering Simulation:</strong> Optional configuration to enable a smooth-wave voltage fluctuation simulation to mimic battery drain or unstable power grids without harsh performance drops.</li>\n<li><strong>Dynamic In-Raid Bot Toggle:</strong> Features a dedicated BepInEx configuration button ( <code>Apply to Bots</code> ). Toggle it On/Off in real-time mid-raid to decide whether bots should carry your custom cool LED flashlights or keep the vanilla default look.</li>\n</ul>\n<h2>\ud83d\udcf8 Visual Comparison (Before &amp; After)</h2>\n<blockquote>\n<p>(<a target=\"_blank\" class=\"external-link\" href=\"https://imgur.com/a/MsmgPkA\" rel=\"noreferrer noopener\">https://imgur.com/a/MsmgPkA</a>)</p>\n</blockquote>\n<h2>\ud83d\udee0\ufe0f Configuration Settings (F12)</h2>\n<p>Press F12 inside the game to open the BepInEx configuration menu and customize:</p>\n<ol>\n<li><strong>General:</strong> Toggle the entire mod or instantly enable/disable bot modifications.</li>\n<li><strong>Flashlight Settings:</strong> Manually dial in Flashlight Intensity, Beam Range (Meters), and Spot Cone Angles.</li>\n<li><strong>LED Temperature:</strong> Pick your exact preferred Color Temperature via Kelvin numbers (e.g., 6500K for pure modern tactical white).</li>\n<li><strong>Flickering Simulation:</strong> Fine-tune Flicker Speed and Intensity to your personal preference.</li>\n</ol>\n<h2>\ud83d\udce6 Installation</h2>\n<ol>\n<li>Compile the provided clean source file into your final <code>BetterFlashlights.dll</code>.</li>\n<li>Drop the <code>BetterFlashlights.dll</code> file directly into your SPT directory under: <code>BepInEx/plugins/</code></li>\n<li>Launch the game and enjoy your tactical night raids!</li>\n</ol>\n",
+   "description_html": "<p>A lightweight, client-side mod that completely overhauls tactical weapon flashlights for both the player and bots, bringing a modern tactical aesthetic to your raids.</p>\n<h2>\ud83c\udf1f Features</h2>\n<ul>\n<li><strong>Modern LED Overhaul:</strong> Automatically converts real Kelvin temperatures into accurate light spectrum profiles. Experience everything from realistic warm halogens to ultra-cool white LED beams (<code>inspired by Arena Breakout Infinite</code>).</li>\n\n<li><strong>Procedural Beam Textures:</strong> Replaces generic and blurry default Unity light profiles with a dynamically generated, high-resolution beam cookie featuring smooth edge fading.</li>\n\n<li><strong>Flickering Simulation:</strong> Optional configuration to enable a smooth-wave voltage fluctuation simulation to mimic battery drain or unstable power grids.</li>\n\n<li><strong>Dynamic In-Raid Bot Toggle:</strong> Features a dedicated BepInEx configuration button (<code>Apply to Bots</code>).\nToggle it <code>On</code>/<code>Off</code> in real-time mid-raid to decide whether bots should carry your custom cool LED flashlights or keep the vanilla default look.</li>\n</ul>\n<h2>\ud83d\udcf8 Visual Comparison (Before &amp; After)</h2>\n<blockquote>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://imgur.com/a/MsmgPkA\" rel=\"noreferrer noopener\">imgur.com</a></p>\n</blockquote>\n<h2>\ud83d\udee0\ufe0f Configuration Settings (F12)</h2>\n<p>Press <code>F12</code> inside the game to open the BepInEx configuration menu and customize:</p>\n<ol>\n<li><strong>General:</strong> Toggle the entire mod or instantly <code>enable</code>/<code>disable</code> bot modifications.</li>\n<li><strong>Flashlight Settings:</strong> Manually dial in Flashlight <strong>Intensity</strong>, <strong>Beam Range</strong> (<code>Meters</code>), and <strong>Spot Cone Angles</strong>.</li>\n<li><strong>LED Temperature:</strong> Pick your exact preferred Color Temperature via Kelvin numbers (<code>e.g., 6500K for pure modern tactical white</code>).</li>\n<li><strong>Flickering Simulation:</strong> Fine-tune Flicker Speed and Intensity to your personal preference.</li>\n</ol>\n<h2>\ud83d\udce6 Installation</h2>\n<ol>\n<li>Compile the provided clean source file into your final <code>BetterFlashlights.dll</code>.</li>\n<li>Drop the <code>BetterFlashlights.dll</code> file directly into your SPT directory under: <code>BepInEx/plugins/</code></li>\n<li>Launch the game and enjoy your tactical night raids!</li>\n</ol>\n",
    "thumbnail": "https://files.sp-mod.com/mods/QZiC1tunsf7P5tSiRfunb6JnKMUtp5PtKv7OVgwl.png",
    "forge_url": "https://sp-mod.com/mod/3084/better-flashlights",
-   "downloads": 443,
-   "favourites": 12,
+   "downloads": 1036,
+   "favourites": 19,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -208877,7 +209021,7 @@
      "description": "<p><strong>- Hotfix for laser designator visual glitches and multi-mode device flashlight</strong></p>\n",
      "spt_constraint": "~4.1.1",
      "fika": "unknown",
-     "downloads": 35,
+     "downloads": 614,
      "size": 7516,
      "link": "https://sp-mod.com/mod/download/3084/better-flashlights/1.0.1",
      "published_at": "2026-09-30T19:07:19.000000Z",
@@ -208889,7 +209033,7 @@
      "description": "<p><em><strong>Initial release of Better Flashlights for SPT 4.1.x. Includes modern LED temperature overhaul, procedural high-res beam textures, flickering option.</strong></em></p>\n",
      "spt_constraint": "~4.1.1",
      "fika": "unknown",
-     "downloads": 408,
+     "downloads": 422,
      "size": 6762,
      "link": "https://sp-mod.com/mod/download/3084/better-flashlights/1.0.0",
      "published_at": "2026-09-30T01:37:00.000000Z",
@@ -208904,7 +209048,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-09-30T19:06:00.000000Z",
-   "updated_at": "2026-09-30T19:19:45.000000Z",
+   "updated_at": "2026-10-02T20:31:44.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -209936,6 +210080,76 @@
     "ai_disclosure": "",
     "cheat_notice": false,
     "profile_binding_notice": true
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 3097,
+   "hub_id": null,
+   "guid": "com.blackhawk.dynamicmapsextended",
+   "name": "DynamicMaps Extended",
+   "slug": "dynamicmaps-extended",
+   "teaser": "Extends DynamicMaps with additional maps, backport support, and switchable Abstract / Satellite artwork.",
+   "description_html": "<p>An extension for <strong>DynamicMaps</strong> that adds support for additional and backported maps and allows switching between <strong>Abstract</strong> and <strong>Satellite</strong> map artwork.</p>\n<h3>Features</h3>\n<ul>\n<li>Factory Classic support</li>\n<li>Icebreaker support</li>\n<li>Manimal Interchange support</li>\n<li>Manimal Labs support</li>\n<li>Abstract / Satellite artwork selection</li>\n<li>Per-map style overrides</li>\n<li>Change map artwork during a raid</li>\n<li>Automatic per-floor artwork fallback</li>\n<li>Keeps DynamicMaps player tracking, quests, extracts, floors, minimap and markers intact</li>\n</ul>\n<h3>Requirements</h3>\n<ul>\n<li>DynamicMaps</li>\n<li>MapVariants</li>\n</ul>\n<p>The related backport/map mods are only required for the maps you want to use.</p>\n<h3>Limitations / Notes</h3>\n<p>Not every map or floor has both <strong>Abstract</strong> and <strong>Satellite</strong> versions available.</p>\n<p>If the style you selected is missing, the mod will simply use the version that is available. This means some maps can have a mix of Satellite and Abstract floors.</p>\n<p>The mod does <strong>not</strong> create fake or generated map artwork.</p>\n<ul>\n<li>Manimal Lighthouse currently uses the normal DynamicMaps Lighthouse map.</li>\n<li>Terminal is not supported yet.</li>\n<li>Backported maps need their matching map mod installed.</li>\n<li>Building from source needs an internet connection to download some map files.</li>\n</ul>\n<h3>Installation</h3>\n<p>Extract the archive into your SPT folder.</p>\n<p><code>BepInEx/plugins/DynamicMaps-Extended/</code></p>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/J42WOGbdAUES6c1f9NZW8KqVkzqByjkGC8I4rnmI.png",
+   "forge_url": "https://sp-mod.com/mod/3097/dynamicmaps-extended",
+   "downloads": 7,
+   "favourites": 0,
+   "featured": false,
+   "fika": true,
+   "fika_latest": "compatible",
+   "category": {
+    "id": 1,
+    "title": "Tools",
+    "slug": "tools"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 85915,
+     "name": "BLACK HAWK",
+     "avatar": "https://files.sp-mod.com/profile-photos/nhL30RWS9AcT5J4gcosWsoKk6dZ8UaPTQxtQYYU3_256w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/black-hawk95/DynamicMaps-Extended",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 15746,
+     "version": "1.0.0",
+     "description": "<p>Initial release</p>\n",
+     "spt_constraint": ">=4.1.6",
+     "fika": "compatible",
+     "downloads": 7,
+     "size": 62937575,
+     "link": "https://sp-mod.com/mod/download/3097/dynamicmaps-extended/1.0.0",
+     "published_at": "2026-10-02T22:00:00.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "1.0.0",
+   "spt_constraint": ">=4.1.6",
+   "all_spt_constraints": [
+    ">=4.1.6"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-10-02T22:06:00.000000Z",
+   "updated_at": "2026-10-02T22:17:10.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
+    "cheat_notice": false,
+    "profile_binding_notice": false
    },
    "origin": "forge",
    "delisted": false
