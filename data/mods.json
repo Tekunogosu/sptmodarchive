@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-10-05T22:04:45Z",
+ "generated_at": "2026-10-06T06:31:26Z",
  "source": "https://sp-mod.com",
  "filter": "all",
- "mod_count": 2037,
+ "mod_count": 2039,
  "categories": [
   {
    "id": 12,
@@ -137732,8 +137732,8 @@
    "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">About</div>\n<div class=\"tab-content\"><p>Skills Extended is back from its eternal nap\u2014with more ways to put your skills to work.</p>\n<p>Pick mechanical locks, hack electronic doors, and track hidden supply caches with a Modified PDA. Build your proficiency with weapons, medicine, stealth, and faction trading as you play.</p>\n<p>Skills Extended adds or expands <strong>12 skills</strong>, with three playable minigames and a web editor for customizing progression and bonuses across both extended and built-in skills.</p>\n<ul>\n<li><strong>Lock Picking:</strong> work individual pins and manage tension to open supported mechanical locks.</li>\n<li><strong>Hacking:</strong> explore a security network and defeat its defenses to bypass supported electronic doors.</li>\n<li><strong>Signals Intelligence:</strong> tune transmissions, collect bearings, and hunt down hidden supply caches.</li>\n<li><strong>Practice modes:</strong> learn all three activities outside a raid without spending equipment or changing your character\u2019s progression.</li>\n<li><strong>Configuration:</strong> adjust bonuses, leveling speed, door difficulty, weapon lists, and signal cache content through your browser.</li>\n<li><strong>Fika integration:</strong> play together using the matching Skills Extended Fika addon.</li>\n</ul>\n<p><strong>Bonus values listed are the supplied defaults. Your server\u2019s settings may change them.</strong></p>\n<p>Please report bugs through <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2383/skills-extended#issues\" rel=\"noreferrer noopener\">Mod Issues</a>, rather than in the comments. Include your mod and SPT versions, whether you use Fika, relevant logs, and steps to reproduce the problem.</p>\n<p>Want to support development? <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/dirtbikercj\" rel=\"noreferrer noopener\">Buy me a coffee</a> or visit my <a target=\"_blank\" class=\"external-link\" href=\"https://www.youtube.com/@CJ-SPT\" rel=\"noreferrer noopener\">YouTube channel</a>.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Installation</div>\n<div class=\"tab-content\"><ol>\n<li>Download the core package for your SPT version.</li>\n<li>Close the game and server before installing or updating.</li>\n<li>Extract the complete archive into your <strong>SPT installation folder</strong>, merging its <code>BepInEx</code> and <code>SPT_Runtime</code> folders with yours.</li>\n<li>Start the server, then launch the game normally.</li>\n</ol>\n<p>Install the whole package: Skills Extended includes both client and server components.</p>\n<p><strong>Using Fika?</strong> Install the core package and matching <strong>Fika integration addon</strong> on the host and every player, including your headless host if you use one. Keep everyone\u2019s core and addon versions matched, and update them together. Check the release requirements for the required SPT and Fika versions.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Config Editor</div>\n<div class=\"tab-content\"><p>While your SPT server is running, open:</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://127.0.0.1:6969/skills-extended/\" rel=\"noreferrer noopener\">Skills Extended configuration editor</a></p>\n<p>Use your server\u2019s address and port if they differ from the default above. Sign in with an <strong>SPT administrator account</strong> to make changes.</p>\n<p>The editor lets you:</p>\n<ul>\n<li>Configure extended skills and supported built-in skill bonuses.</li>\n<li>Adjust leveling speed globally or for individual skills, with a separate weapon mastery multiplier.</li>\n<li>Edit weapon proficiency lists, mechanical lock settings, and hacking door difficulty.</li>\n<li>Configure signal cache placements and rewards.</li>\n<li>Edit profile skill levels.</li>\n<li>Authorize individual Fika profiles to use the in-game placement editor.</li>\n</ul>\n<p>Built-in bonus settings show their defaults and include <strong>Reset to default</strong> controls. Simply viewing a setting does not override it.</p>\n<p><strong>Leveling example:</strong> a global multiplier of 2\u00d7 and an Endurance multiplier of 1.5\u00d7 give 3\u00d7 incoming Endurance gameplay XP. Weapon mastery has its own multiplier. Quest skill rewards and manual profile edits retain their stated values.</p>\n<p>Save changes, then restart your game client to load updated client settings. In Fika, restart all connected game clients, including the headless host when used.</p>\n<p>Use the <strong>F12 menu</strong> for local preferences such as minigame volume, lock-picking sensitivity, controls, and reduced motion.</p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Guides and Practice</div>\n<div class=\"tab-content\"><p>New to the minigames? Open the <a target=\"_blank\" class=\"external-link\" href=\"https://127.0.0.1:6969/skills-extended/guides\" rel=\"noreferrer noopener\">illustrated guides</a> while your server is running. No sign-in is required; substitute your server\u2019s address and port if needed.</p>\n<p>You can also open <strong>Character \u2192 Skills</strong> outside a raid and select <strong>Practice</strong> for Lock Picking, Hacking, or Signals Intelligence. Practice is available from the hideout\u2019s Skills screen too.</p>\n<p>Practice needs no equipment, consumes no items, and awards no XP. It defaults to your displayed skill level, with an option to try a different level inside the simulation. Disabled or locked skills have no practice button.</p>\n<p>Lock-picking practice includes optional coaching, target gauges, and pin guidance. Turn coaching off to practice with normal raid-style feedback.</p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Lock Picking</div>\n<div class=\"tab-content\"><p>Forgot the key? Craft a <strong>Lockpick set at Workbench level 1</strong> and take it to a supported locked mechanical door.</p>\n<p>The minigame uses individual pins and adjustable tension. Move the pick to a pin, lift it into position, and use controlled pressure to set it. Security pins introduce false sets and misleading clicks, so brute force is rarely the answer.</p>\n<p><strong>Default controls</strong></p>\n<ul>\n<li>Move the mouse left or right to change depth while the pick is lowered.</li>\n<li>Move the mouse up or down to lift or lower the pick.</li>\n<li>Hold <strong>A</strong> to apply tension.</li>\n<li>While applying tension, use the mouse wheel or <strong>E / Q</strong> to adjust pressure.</li>\n<li>Release tension to reset the pins, or press <strong>Escape</strong> to leave.</li>\n</ul>\n<p>Bindings and a toggle-tension option are available in F12.</p>\n<p>Every configured lock tier can be attempted at any skill level. Higher skill improves pin control and pick resilience. Learn through inspecting locks and attempting to pick them; failed attempts can also award XP.</p>\n<p>Each set has <strong>five uses</strong>. Breaking a pick consumes one use. Excess force wears the pick during the raid, and cancelling does not repair that wear. <strong>Breaking a pick does not permanently break the door or stop its key from working.</strong> There is no countdown timer.</p>\n<p><strong>Default bonuses</strong></p>\n<ul>\n<li>Pin control improves by <strong>0.5% per level</strong>.</li>\n<li>Pick resilience improves by <strong>0.75% per level</strong>.</li>\n<li><strong>Elite:</strong> an additional <strong>10%</strong> expert control and resilience bonus.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Hacking</div>\n<div class=\"tab-content\"><p>Craft a <strong>Modified PDA at Workbench level 2</strong> and carry it to a supported electronic or keycard door to access the hacking interaction.</p>\n<p>Explore the network, collect useful utilities, and overcome security defenses to complete the hack. Your coherence is your remaining endurance inside the minigame; losing it ends the attempt.</p>\n<p>The PDA is reusable and also serves as your Signals Intelligence receiver.</p>\n<p><strong>Default settings</strong></p>\n<ul>\n<li><strong>Three failed attempts</strong> allowed per door.</li>\n<li><strong>60 starting coherence</strong>, plus <strong>1 per skill level</strong>.</li>\n<li><strong>20 starting attack strength</strong>, plus <strong>1 for every five skill levels</strong>.</li>\n<li><strong>Three utility slots</strong>, increasing to <strong>four at elite</strong>.</li>\n</ul>\n<p>Door availability, difficulty, and attempt limits are configurable. Use the Hacking practice mode to learn the mechanics before risking a raid attempt.</p></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Signals Intelligence</div>\n<div class=\"tab-content\"><p>Turn your <strong>Modified PDA</strong> into a receiver and follow transmissions to hidden supply caches.</p>\n<ol>\n<li>Carry the PDA into a raid and use its <strong>Open receiver</strong> inventory action.</li>\n<li>Tune a transmission and record a bearing.</li>\n<li>Move to another position and take further readings to narrow down the search area.</li>\n<li>Once you have a valid fix and enter the search area, use the receiver\u2019s proximity audio to help locate the cache.</li>\n<li>Pair the PDA with the cache to unlock it and claim the contents.</li>\n</ol>\n<p>The receiver\u2019s beep cadence helps judge distance, while its pitch provides facing-direction guidance. Higher Signals Intelligence improves bearing accuracy and tuning tolerance. Collecting bearings and completing cache hunts awards skill XP.</p>\n<p>Cache availability depends on the server\u2019s enabled placements for the map you are playing. <strong>Factory is excluded</strong>, and maps without enabled placements do not generate caches. Administrators can customize placements and reward pools through the editor.</p>\n<p>Try the Signals practice mode for a simulated receiver and pairing exercise without entering a raid.</p></div></div>\n<div id=\"tabset-1-panel-8\" class=\"tab-panel\"><div class=\"tab-title\">NATO Weapon Proficiency</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/m5NL1jM2/image.png\" alt=\"NATO Weapon Proficiency\" /></p>\n<p>Improve your handling of weapons assigned to the NATO proficiency list by landing shots with them. Weapon assignments and XP sharing are configurable.</p>\n<p><strong>Default bonuses</strong></p>\n<ul>\n<li>Increases weapon ergonomics by <strong>0.6% per level</strong>.</li>\n<li>Reduces recoil by <strong>0.4% per level</strong>.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-9\" class=\"tab-panel\"><div class=\"tab-title\">Eastern Weapon Proficiency</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/JjLVxrWV/image.png\" alt=\"Eastern Weapon Proficiency\" /></p>\n<p>Improve your handling of weapons assigned to the Eastern proficiency list by landing shots with them. Weapon assignments and XP sharing are configurable.</p>\n<p><strong>Default bonuses</strong></p>\n<ul>\n<li>Increases weapon ergonomics by <strong>0.4% per level</strong>.</li>\n<li>Reduces recoil by <strong>0.3% per level</strong>.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-10\" class=\"tab-panel\"><div class=\"tab-title\">Prone Movement</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/jkVqzc4c/image.png\" alt=\"Prone Movement\" /></p>\n<p>Move faster and more quietly while prone. Level this skill by moving while prone.</p>\n<p><strong>Default bonuses</strong></p>\n<ul>\n<li>Increases prone movement speed by <strong>0.6% per level</strong>.</li>\n<li>Reduces prone movement volume by <strong>0.8% per level</strong>.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-11\" class=\"tab-panel\"><div class=\"tab-title\">Silent Ops</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/chCyZLw0/image.png\" alt=\"Silent Ops\" /></p>\n<p>Improve your quiet approach with faster melee attacks, quieter door actions, and cheaper suppressors. Progress through suppressed and melee kills.</p>\n<p><strong>Default bonuses</strong></p>\n<ul>\n<li>Increases melee speed by <strong>0.5% per level</strong>.</li>\n<li>Reduces door action volume by <strong>1% per level</strong>.</li>\n<li>Reduces trader suppressor prices by <strong>0.5% per level</strong>.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-12\" class=\"tab-panel\"><div class=\"tab-title\">First Aid</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/BKYDzMjm/image.png\" alt=\"First Aid\" /></p>\n<p>Get more out of your medkits. Level First Aid by treating wounds with them.</p>\n<p><strong>Default bonuses</strong></p>\n<ul>\n<li>Reduces medkit resource costs by <strong>0.5% per level</strong>.</li>\n<li>Increases medkit use speed by <strong>0.6% per level</strong>.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-13\" class=\"tab-panel\"><div class=\"tab-title\">Field Medicine</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/XxBdRmbD/image.png\" alt=\"Field Medicine\" /></p>\n<p>Improve your proficiency with injectors by using them.</p>\n<p><strong>Default bonuses</strong></p>\n<ul>\n<li>Raises the injector skill-bonus cap from its base of 60 by <strong>0.5% per level</strong>.</li>\n<li>Increases positive injector effect duration by <strong>1% per level</strong>.</li>\n<li>Improves the chance of positive injector effects by <strong>0.5% per level</strong>.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-14\" class=\"tab-panel\"><div class=\"tab-title\">Shadow Connections</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/39wQWT46/image.png\" alt=\"Shadow Connections\" /></p>\n<p>There are shadowy figures all over T*****. Dealing with them has its benefits\u2014if you survive.</p>\n<p>Level Shadow Connections by killing cultists.</p>\n<p><strong>Default bonuses</strong></p>\n<ul>\n<li>Reduces Cultist Circle return time by <strong>1% per level</strong>.</li>\n<li>Reduces Scav cooldown by <strong>1% per level</strong>.</li>\n<li>Increases your chance of spawning as a Cultist Scav by <strong>0.5% per level</strong>.</li>\n<li><strong>Elite:</strong> removes your Scav cooldown.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-15\" class=\"tab-panel\"><div class=\"tab-title\">B*** Raw Power</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/hJ2ZTRh6/image.png\" alt=\"B*** Raw Power\" /></p>\n<p>Build on your B*** connections with better Prapor prices and increased quest XP rewards. Restricted to <strong>B</strong>* by default**; administrators can change the faction restriction.</p>\n<p><strong>Default bonuses</strong></p>\n<ul>\n<li>Reduces Prapor trading costs by <strong>0.5% per level</strong>.</li>\n<li>Increases quest XP rewards by <strong>0.5% per level</strong>.</li>\n<li><strong>Elite:</strong> a <strong>7%</strong> discount with all traders.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-16\" class=\"tab-panel\"><div class=\"tab-title\">U*** Negotiations</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/1h9JNp9/image.png\" alt=\"U*** Negotiations\" /></p>\n<p>Put your negotiating skills to work with better Peacekeeper prices and increased quest cash rewards. Restricted to <strong>U</strong>* by default**; administrators can change the faction restriction.</p>\n<p><strong>Default bonuses</strong></p>\n<ul>\n<li>Reduces Peacekeeper trading costs by <strong>0.5% per level</strong>.</li>\n<li>Increases quest money rewards by <strong>0.5% per level</strong>.</li>\n<li><strong>Elite:</strong> a <strong>7%</strong> discount with all traders.</li>\n</ul></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/vZ9rU0OUgvAY9yI8PA7GficoQHCECfylvWOq5rkA.png",
    "forge_url": "https://sp-mod.com/mod/2383/skills-extended",
-   "downloads": 54369,
-   "favourites": 255,
+   "downloads": 55808,
+   "favourites": 267,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -137761,12 +137761,24 @@
    ],
    "versions": [
     {
+     "id": 15800,
+     "version": "3.1.4",
+     "description": "<p>Fika requires sync version 1.2.5.</p>\n<h3>Lock Picking</h3>\n<ul>\n<li>Removed the 0.30-second hold requirement. Pins now set upon reaching the correct position after clearing catches. Continued lifting can still over set them.</li>\n<li>Added a rebindable fine-control key, defaulting to <strong>Left Shift</strong>, for quarter-speed lifting and 1% tension adjustments instead of 5%.</li>\n<li>Improved lowering responsiveness by clearing excess upward input when reversing the mouse.</li>\n<li>Reworked the cutaway visuals, including pin movement, spring compression, retained driver positions, cylinder rotation, and pressure/input gauges.</li>\n<li>Added green <strong>SET</strong> badges and a true-set count in practice and raids, including with coaching disabled. Indicators clear when pins drop or become over set.</li>\n<li>Added clearer feedback for false sets, over sets, catches, counter-rotation, recovery, and dropped pins. Damage text now appears only when pick condition decreases.</li>\n<li>Improved audio cues for catches, seating, counter-rotation, and tension adjustments. Prioritized important sounds and filtered stale cues.</li>\n<li>Added selected-pin identification and handling tips.</li>\n<li>Added the lock seed, mod version, and effective skill level to the header to help reproduce reported issues.</li>\n</ul>\n<p>And before anyone cries and says its not possible, see video below. I cleared lock levels 1-4 back to back in 2 minutes and 22 seconds.</p>\n<div class=\"youtube-lite\" data-video-id=\"H2R6jPQ2ahg\" data-embed-url=\"https://www.youtube-nocookie.com/embed/H2R6jPQ2ahg?autoplay=1\"><a href=\"https://www.youtube.com/watch?v=H2R6jPQ2ahg\" target=\"_blank\" rel=\"noreferrer noopener\">Play YouTube video</a></div>\n<h3>Configuration</h3>\n<ul>\n<li>Added <strong>Enable in-raid coaching</strong> to the server configuration. Disabling it hides raid target guidance and pin-type tips while retaining mechanical feedback and confirmed-set indicators. Enabled by default.</li>\n<li>Added <strong>Show blue cache arrow</strong> to the Signals Intelligence configuration. Disabling it hides the arrow while retaining the cache, receiver, and proximity audio. Enabled by default.</li>\n</ul>\n<h3>Signals Intelligence</h3>\n<ul>\n<li>Added <strong>14 cache placements</strong> to the high-level Ground Zero map (<code>sandbox_high</code>), matching the existing Ground Zero placements.</li>\n</ul>\n<h3>Localization</h3>\n<ul>\n<li>Moved practice, Lock Picking, Hacking, Signals, and developer-editor text into server locale files.</li>\n<li>Added English fallback for missing translations.</li>\n<li>Multiplayer messages resolve in each player\u2019s selected language.</li>\n</ul>\n",
+     "spt_constraint": "~4.1",
+     "fika": "compatible",
+     "downloads": 102,
+     "size": 114966637,
+     "link": "https://sp-mod.com/mod/download/2383/skills-extended/3.1.4",
+     "published_at": "2026-10-06T04:43:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 15768,
      "version": "3.1.3",
      "description": "<p>I understand that some of you are not happy with the changes to lock picking, mainly the security pins. Tushonka is a hardcore game and requires hardcore mechanics. That said, I do understand the frustration of not understanding how something works. So I\u2019m aiming to hopefully improve that with the following changes. Fika requires sync version 1.2.4.</p>\n<h1>Practice Modes</h1>\n<ul>\n<li>Mini-game practices are now available to access from the skill panel while not in-raid.</li>\n<li>It includes practice modes for all 3 mini-games.</li>\n<li>They were previously available, but hidden behind obscure console commands.</li>\n<li>They have buttons next to their respective skills to enter practice mode.</li>\n<li>You don\u2019t need the prerequisite items to use practice mode.</li>\n</ul>\n<h1>Lock picking</h1>\n<ul>\n<li>Lock picking practice coaching will now show you a fully interactive guide including;\n<ul>\n<li>What pin to work on</li>\n<li>Tension ranges</li>\n<li>Lift range</li>\n<li>Hold duration in lift range</li>\n</ul>\n</li>\n<li>Coaching mode is now available in-raid from lock picking levels 1-10, on lock levels up to and including level 3.\n<ul>\n<li>Once you are lock picking level 11, you will no longer have access to in-raid coaching.</li>\n</ul>\n</li>\n<li>Fixes Lock Picking having no audio after the first raid</li>\n</ul>\n",
      "spt_constraint": "~4.1",
      "fika": "compatible",
-     "downloads": 86,
+     "downloads": 1369,
      "size": 114911151,
      "link": "https://sp-mod.com/mod/download/2383/skills-extended/3.1.3",
      "published_at": "2026-10-04T05:01:00.000000Z",
@@ -137778,7 +137790,7 @@
      "description": "<p>Fika requires sync version 1.2.2</p>\n<h1>Lock Picking</h1>\n<ul>\n<li>New mouse wheel tension mechanic.\n<ul>\n<li>Adjust the mouse wheel up and down to increase or decrease tension.</li>\n</ul>\n</li>\n<li>2 new security pins.\n<ul>\n<li>Spool: These pins have a waist that can create a false set, requiring you to ease tension to allow counter rotation.</li>\n<li>Serrated: These have grooves that can have multiple \u201cclicks\u201d that can create a false set.</li>\n</ul>\n</li>\n<li>Over set: Lifting a pin too far can spoil an already set pin by allowing the cylinder to move unexpectedly.</li>\n<li>Too little tension or counter rotation can drop pins that have already been set</li>\n</ul>\n<p>Higher tier locks have more security pins. Remember, slow is smooth and smooth is fast.</p>\n<h1>New</h1>\n<ul>\n<li>Mini-game guides on the mods web page.</li>\n<li>Config pages for the rest of the games skills to adjust their bonuses.\n<ul>\n<li>No guard rails here, if something breaks from cranking it to some stupid amount let me know so I can cap it.</li>\n</ul>\n</li>\n<li>Skill leveling speed config, a global modifier and a per skill modifier.\n<ul>\n<li>They are multiplicative allowing you to set an overall higher leveling speed while also decreasing metabolism leveling speed.</li>\n<li>Only edit leveling speed with one mod. Do not use multiple mods to do this, it can and will lead to undesirable behavior. Example is SVM or similar mods.</li>\n</ul>\n</li>\n</ul>\n<h1>Improvements</h1>\n<ul>\n<li>Added ~50 signal cache locations to reserve.</li>\n<li>Added F12 option to use toggle/hold behavior for lock pick tension key bind.</li>\n<li>Forgot to mention in previous patch notes that WTT Armory weapons are now included and categorized by nation in the default mod config. Adding almost 100 usable weapons(with variants) to the respective skills if you have WTT Armory.</li>\n</ul>\n",
      "spt_constraint": "~4.1",
      "fika": "compatible",
-     "downloads": 975,
+     "downloads": 982,
      "size": 114900611,
      "link": "https://sp-mod.com/mod/download/2383/skills-extended/3.1.2",
      "published_at": "2026-10-03T05:45:00.000000Z",
@@ -137790,7 +137802,7 @@
      "description": "<h1>New</h1>\n<ul>\n<li>In raid config companion interface for doors and signal caches.\n<ul>\n<li>Check the F12 menu to enable it and see the key bind to open it.</li>\n<li>Modify door levels in raid.</li>\n<li>Create signal cache locations in raid.\n<ul>\n<li>I recommend using a search distance of 0 for placement, this forces the cache to use the placed location and rotation, search randomization can sometimes fail still.</li>\n</ul>\n</li>\n<li>Saved changes take effect on your next raid, no need to restart the client.</li>\n<li>Fika servers must explicitly allow editor use to a profile via the web config.</li>\n</ul>\n</li>\n</ul>\n<h1>Improvements</h1>\n<ul>\n<li>Signal caches are now enabled on all maps except factory.</li>\n<li>Replaced all existing caches on woods and customs with better accuracy with the use of the editor.</li>\n<li>Placed caches on Ground Zero.</li>\n<li>Placed caches on Interchange.</li>\n<li>Placed caches on Shoreline.</li>\n<li>Reserve, Lighthouse and Streets still have no placed caches.</li>\n</ul>\n<h1>Fixes</h1>\n<ul>\n<li>Fixed excessive raid loading times when using the headless client, caused by the new signals skill. (With addon update)</li>\n<li>Fixed exception spam when using the headless client, caused by invalid access to the players skills. (With addon update)</li>\n<li>Misc config page layout fixes.</li>\n</ul>\n",
      "spt_constraint": "~4.1",
      "fika": "compatible",
-     "downloads": 896,
+     "downloads": 902,
      "size": 109594837,
      "link": "https://sp-mod.com/mod/download/2383/skills-extended/3.1.1",
      "published_at": "2026-10-02T08:05:00.000000Z",
@@ -137802,7 +137814,7 @@
      "description": "<p>3.1.0 Needs Sync version ~1.2.0 for Fika. Open issues with feedback on the new skill or any issues that you come across for this version. Do not open issues unless you\u2019re on the most recent version, thank you</p>\n<h1>New Skill: Signals Intelligence</h1>\n<ul>\n<li>Use your <code>Modified PDA</code> to hunt down signal caches in raid. (Right click it from your inventory, or <code>left alt+p</code> by default)</li>\n<li>Signal caches contain anywhere from 250-500K Roubles worth of loot.</li>\n<li>You can only find 1 per raid.</li>\n<li>They\u2019re currently only available on Woods and Customs.</li>\n<li>You cannot find them naturally, they do not spawn until tracked down.</li>\n<li>Take signal recordings at positions on the map to triangulate the position of the cache.</li>\n<li>You must have at least 2 intersecting points in order to mark the circle. The uncertainty bands count, while decreasing accuracy. More intersections decrease the circle size, giving it more accuracy. Recordings can be taken, not closer than 125 meters from each other.</li>\n<li>Once you triangulate a rough position that will be marked with a yellow circle, you will hear a continuous beeping sound when in the zone. It increases in pitch when you\u2019re facing the cache, and occurs faster the closer you get. You can use these to search for and locate the cache.</li>\n<li>Unlocking the cache requires you to match the oscillation phase of the container in order to upload the password to it and unlock it.</li>\n</ul>\n<p>Some tuning may be required in future releases if it turns out its too easy or hard.</p>\n<div class=\"youtube-lite\" data-video-id=\"3XpkocvH4dg\" data-embed-url=\"https://www.youtube-nocookie.com/embed/3XpkocvH4dg?autoplay=1\"><a href=\"https://www.youtube.com/watch?v=3XpkocvH4dg\" target=\"_blank\" rel=\"noreferrer noopener\">Play YouTube video</a></div>\n<h1>Revamped Skill: Lock Picking (2.0)</h1>\n<p>The end of an era. The mini-game while simple, was often times confusing for people because of lack of visual feedback or cues. It didn\u2019t scale well with difficulty and was often times able to be cheesed with ease. This never sat right with me and broke balance in a lot of situations. This new game provides a skill based (not guess based) way to unlock doors and can\u2019t be brute forced with luck because of randomization. It provides you with the information needed on screen to unlock the lock, check out the attached video to see me picking a lock with the new system.  The same lock pick kit that has always existed is the same one you need to carry. Go unlock some doors.</p>\n<p>Some tuning may be required in future releases if it turns out its too easy or hard.</p>\n<div class=\"youtube-lite\" data-video-id=\"U0NbbG17g10\" data-embed-url=\"https://www.youtube-nocookie.com/embed/U0NbbG17g10?autoplay=1\"><a href=\"https://www.youtube.com/watch?v=U0NbbG17g10\" target=\"_blank\" rel=\"noreferrer noopener\">Play YouTube video</a></div>\n<h1>Improvements</h1>\n<ul>\n<li>New shared border for all PDA related activities.</li>\n<li>Added supported doors from Manimals interchange backport and Vultify\u2019s Blackout mods to lock picking. - Thanks PRXPHET</li>\n<li>Hacking config page layout improvements.</li>\n<li>Max configurable hacking attempts are now much higher.</li>\n</ul>\n<h1>Fixes</h1>\n<ul>\n<li>Fixed \u201cSkill Manager is null\u201d spam on the Fika headless.</li>\n<li>Maybe fixed ultra-wide scaling issues. (untested)</li>\n<li>Russian and English localization fixes - Thanks PRXPHET</li>\n</ul>\n",
      "spt_constraint": "~4.1",
      "fika": "compatible",
-     "downloads": 1034,
+     "downloads": 1036,
      "size": 109231453,
      "link": "https://sp-mod.com/mod/download/2383/skills-extended/3.1.0",
      "published_at": "2026-09-30T17:10:00.000000Z",
@@ -137814,7 +137826,7 @@
      "description": "<ul>\n<li>Add server side Enum patcher</li>\n<li>Fix compatibility with mods like Give-Ui\n<ul>\n<li>As a result of this fix, you may/will lose progress you had in <code>Hacking</code>, I recommend taking a note of your current skill level before updating. You can use the mods web page to get back any progress lost with the profile skill editor. This is the first skill that didn\u2019t piggy back off of existing unused skills so there were some problems. I apologize for the inconvenience.</li>\n</ul>\n</li>\n</ul>\n",
      "spt_constraint": "~4.1",
      "fika": "compatible",
-     "downloads": 1041,
+     "downloads": 1047,
      "size": 30636972,
      "link": "https://sp-mod.com/mod/download/2383/skills-extended/3.0.3",
      "published_at": "2026-09-29T03:12:00.000000Z",
@@ -137826,7 +137838,7 @@
      "description": "<ul>\n<li>Fix end of raid json error</li>\n</ul>\n",
      "spt_constraint": "~4.1",
      "fika": "compatible",
-     "downloads": 528,
+     "downloads": 530,
      "size": 30640915,
      "link": "https://sp-mod.com/mod/download/2383/skills-extended/3.0.2",
      "published_at": "2026-09-28T17:09:00.000000Z",
@@ -137838,7 +137850,7 @@
      "description": "<ul>\n<li>New Skill and mini-game: Hacking (Wasn\u2019t quite done for the initial 4.1.x version and wanted some bug reports from testers before turning it on)\n<ul>\n<li>Hack your way into any key card door</li>\n<li>Craft the device at workbench level 2</li>\n<li>Volume knob in the F12 panel if needed</li>\n</ul>\n</li>\n<li>Fixed lock picking /bonk (Forge issue 1)</li>\n<li>Added auth to web pages (Forge issue 2)</li>\n</ul>\n<div class=\"youtube-lite\" data-video-id=\"71C2lFuWYRQ\" data-embed-url=\"https://www.youtube-nocookie.com/embed/71C2lFuWYRQ?autoplay=1\"><a href=\"https://www.youtube.com/watch?v=71C2lFuWYRQ\" target=\"_blank\" rel=\"noreferrer noopener\">Play YouTube video</a></div>\n",
      "spt_constraint": "~4.1",
      "fika": "compatible",
-     "downloads": 508,
+     "downloads": 509,
      "size": 30624292,
      "link": "https://sp-mod.com/mod/download/2383/skills-extended/3.0.1",
      "published_at": "2026-09-28T08:48:00.000000Z",
@@ -137862,7 +137874,7 @@
      "description": "<ul>\n<li>Fixes quest money reward for USEC Negotiations rewarding substantially more than the tooltip says it does</li>\n</ul>\n",
      "spt_constraint": "~4.0.2",
      "fika": "compatible",
-     "downloads": 13361,
+     "downloads": 13389,
      "size": 5066056,
      "link": "https://sp-mod.com/mod/download/2383/skills-extended/2.2.2",
      "published_at": "2026-05-19T06:06:00.000000Z",
@@ -137874,7 +137886,7 @@
      "description": "<ul>\n<li>Fixes incompatibility with medical attention (Infinite hideout loading)</li>\n<li>Fixes bots being stuck on doors when hosting a raid using the Fika headless</li>\n</ul>\n",
      "spt_constraint": "~4.0.2",
      "fika": "compatible",
-     "downloads": 18735,
+     "downloads": 18737,
      "size": 5066228,
      "link": "https://sp-mod.com/mod/download/2383/skills-extended/2.2.1",
      "published_at": "2025-12-17T10:28:00.000000Z",
@@ -137965,7 +137977,7 @@
      "dependencies": []
     }
    ],
-   "latest_version": "3.1.3",
+   "latest_version": "3.1.4",
    "spt_constraint": "~4.1",
    "all_spt_constraints": [
     ">4.0.0 <4.1.0",
@@ -137977,7 +137989,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-08-28T15:57:00.000000Z",
-   "updated_at": "2026-10-04T05:31:35.000000Z",
+   "updated_at": "2026-10-06T04:45:08.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -145772,11 +145784,11 @@
    "name": "Bela.s.Speedloader",
    "slug": "belasspeedloader",
    "teaser": "Faster ammo loading speed. Extended raid time. Larger ammo stacks.",
-   "description_html": "<blockquote>\n<p><strong>Note:</strong> If you need more modifications, I strongly recommend <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/236/server-value-modifier-svm\" rel=\"noreferrer noopener\">SVM</a>. It\u2019s better than mine.</p>\n</blockquote>\n<h2>Configuration</h2>\n<pre><code>{\n  \"RaidTweaks\": {\n    \"Enabled\": true,          // Enable tweaks for raid time\n    \"RaidTimeMinutes\": 120    // Time limit per raid (minutes)\n  },\n  \"AmmoTweaks\": {\n    \"Enabled\": true,          // Enable tweaks for ammo loading/unloading speed\n    \"BaseLoadTime\": 0.05,     // Default 0.85; smaller = faster loading\n    \"BaseUnLoadTime\": 0.05,   // Default 0.3; smaller = faster unloading\n    \"AmmoStackMultiplier\": 6  // 6 means 30 rounds/slot -&gt; 180 rounds\n  }\n}\n</code></pre>\n<h2>Why</h2>\n<p>Starting from a very early version (around 0.12.9.0.19428), every time I updated the game, I had to manually change these options and files, which was a real headache. Since I don\u2019t often use mods, I only needed a few simple adjustments. Fortunately, after following the official tutorial, I learned how to make the modifications I wanted. With this script, the console no longer reports verification errors, and I can keep my preferred settings without repeating the same manual work after each update.</p>\n",
+   "description_html": "<blockquote>\n<p><strong>Note:</strong> If you need more modifications, I strongly recommend <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/236/server-value-modifier-svm\" rel=\"noreferrer noopener\">SVM</a>. It\u2019s better than mine.</p>\n</blockquote>\n<h2>Configuration</h2>\n<pre><code>{\n  \"RaidTweaks\": {\n    \"Enabled\": true,          // Enable tweaks for raid time\n    \"RaidTimeMinutes\": 120    // Time limit per raid (minutes)\n  },\n  \"AmmoTweaks\": {\n    \"Enabled\": true,          // Enable tweaks for ammo loading/unloading speed\n    \"BaseLoadTime\": 0.05,     // Default 0.85; smaller = faster loading\n    \"BaseUnLoadTime\": 0.05,   // Default 0.3; smaller = faster unloading\n    \"AmmoStackMultiplier\": 6  // 6 means 30 rounds/slot -&gt; 180 rounds\n  }\n}\n</code></pre>\n<h2>Why</h2>\n<p>Starting from a very early version (around 0.12.9.0.19428), every time I updated the game, I had to manually change these options and files, which was a real headache. Since I don\u2019t often use mods, I only needed a few simple adjustments. Fortunately, after following the official tutorial, I learned how to make the modifications I wanted. With this script, the console no longer reports verification errors, and I can keep my preferred settings without repeating the same manual work after each update.</p>\n<p>Tags\uff1a\n<code>QoL, Raid, Raid Time, Timer, Escape Time, Ammo, Reload, Loading, Unloading, Stack, Stack Size</code></p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/UQUohBjpe7lyg8cG1btRpDvyvHM6Q4TJ9nTnqH7L.jpg",
    "forge_url": "https://sp-mod.com/mod/2458/belasspeedloader",
-   "downloads": 9184,
-   "favourites": 24,
+   "downloads": 9606,
+   "favourites": 29,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -145793,7 +145805,7 @@
     {
      "id": 90441,
      "name": "Bela",
-     "avatar": "https://ui-avatars.com/api/?name=B&color=7F9CF5&background=EBF4FF"
+     "avatar": "https://sp-mod.com/avatars/B.svg"
     }
    ],
    "source_links": [
@@ -145809,7 +145821,7 @@
      "description": "<p>Support: Client.0.16.9.5.40743, SPT-4.1.2</p>\n",
      "spt_constraint": "~4.1.2",
      "fika": "unknown",
-     "downloads": 1774,
+     "downloads": 2163,
      "size": 23781,
      "link": "https://sp-mod.com/mod/download/2458/belasspeedloader/1.2.4",
      "published_at": "2026-08-14T18:30:00.000000Z",
@@ -145821,7 +145833,7 @@
      "description": "<p>Support: Client.0.16.9.0.40087, SPT-4.0.x</p>\n",
      "spt_constraint": "~4.0.0",
      "fika": "unknown",
-     "downloads": 7000,
+     "downloads": 7029,
      "size": 22624,
      "link": "https://sp-mod.com/mod/download/2458/belasspeedloader/1.2.3",
      "published_at": "2025-11-22T14:59:00.000000Z",
@@ -145833,7 +145845,7 @@
      "description": "<p>add exception handling\nadd more adjustable variables</p>\n",
      "spt_constraint": "~4.0.0",
      "fika": "unknown",
-     "downloads": 410,
+     "downloads": 414,
      "size": 22624,
      "link": "https://sp-mod.com/mod/download/2458/belasspeedloader/1.2.1",
      "published_at": "2025-11-21T08:36:00.000000Z",
@@ -145849,7 +145861,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2025-11-20T10:41:00.000000Z",
-   "updated_at": "2026-09-23T14:42:45.000000Z",
+   "updated_at": "2026-10-06T06:12:24.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -174575,8 +174587,8 @@
    "description_html": "<h1>Weekend Drops</h1>\n<p>Weekend Drops gives you a set of challenges to work through each weekend, daily quests for\nthe rest of the week, to earn  (GP)  and spend in the shop.</p>\n<p>I made it because twitch drops in live EFT are kinda neat but since you cant get them in SPT i though this could be a version of gaining twitch drops in SPT</p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Daily challenges</div>\n<div class=\"tab-content\"><p>Five quests a day, every day, each one pays GP. These run all the time, not just on\nweekends, so there\u2019s always something small to do. Finish all five for a bonus.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">GP and the shop</div>\n<div class=\"tab-content\"><p>GP is a virtual balance, you earn it from challenges, and you can also deposit GP coins you find in raid\nstraight into your balance (there\u2019s a slider so you can bank some and keep the rest for REF).</p>\n<p>The shop sells storage cases, Arena crates and a few rarer barter items. Things go on a\ncooldown after you buy them so you can\u2019t just spam-buy.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">The  Weekly challenges</div>\n<div class=\"tab-content\"><ul>\n<li>PMC, Scav and boss kills</li>\n<li>Headshots and grenade kills</li>\n<li>Surviving X minutes, extracting, extracting from a specific map</li>\n<li>Play-as-Scav quests (extract as a Scav, finish Scav runs, kills across Scav raids)</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">these are not final will add more and ad</div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Rewards</div>\n<div class=\"tab-content\"><p>The drop crates are gear-focused and tuned per tier, so an Epic crate won\u2019t hand you a\nstack of junk. Guns come with attachments already on them instead of the bare default\npreset. also</p>\n<p>-WTT backport is included in the loot pool but its optional</p></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">The UI</div>\n<div class=\"tab-content\"><ul>\n<li>to access the mod there is a panel you can open from the Inventory tab on the main menu there is a tutorial explaining the mod incase someone doesn\u2019t read this who reads this anyway i m i right?</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">LootNET</div>\n<div class=\"tab-content\"><p>if LootNET is installed it will show the earned GP coins earned that raid still WIP bugs can happend i didn test it enough but it worked almost every raid so far</p></div></div>\n<div id=\"tabset-1-panel-8\" class=\"tab-panel\"><div class=\"tab-title\">Contracts</div>\n<div class=\"tab-content\"><ul>\n<li>Contracts a new menu tab (in drops menu). Each board offers a few sealed contracts; you pick one. Its target spawns on your next raid of that map, and clearing the objective pays GP, Two kinds of Bounties exist so far: (hunt a specific crew or boss) and Supply Runs (wipe the crew to call in an airdrop on their position). Accepting or abandoning spends your pick, and a fresh board rolls in after a few days.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-9\" class=\"tab-panel\"><div class=\"tab-title\">Languages</div>\n<div class=\"tab-content\"><p>Weekend Drops ships in English plus these community translations, picked up\nautomatically when your game is set to that language:</p>\n<table>\n<thead>\n<tr>\n<th>Language</th>\n<th>Code</th>\n<th>Translated by</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>\u0420\u0443\u0441\u0441\u043a\u0438\u0439 (Russian)</td>\n<td><code>ru</code></td>\n<td><strong>djanbolt</strong></td>\n</tr>\n<tr>\n<td>Portuguese</td>\n<td><code>po</code></td>\n<td><strong>DarkEsteves</strong></td>\n</tr>\n</tbody>\n</table>\n<p>Huge thanks to both of them. Their name shows in the panel footer while their\nlanguage is active.</p>\n<p>Anything a translation does not cover falls back to English, so a partial file is\nperfectly usable and a translation never holds up an update. New text just shows in\nEnglish until someone gets to it.</p></div></div>\n<div id=\"tabset-1-panel-10\" class=\"tab-panel\"><div class=\"tab-title\">Translating Weekend Drops</div>\n<div class=\"tab-content\"><p>Everything the mod shows you lives in <code>en.json</code>. To add a language, copy that file,\nrename it, and translate the values. No code, no build, no rebuild of the mod.</p>\n<p>Adding a language</p>\n<ol>\n<li>\n<p>Copy <code>en.json</code> to <code>&lt;code&gt;.json</code> using <strong>the game\u2019s own language code</strong>:</p>\n<table>\n<thead>\n<tr>\n<th>Code</th>\n<th>Language</th>\n<th>Code</th>\n<th>Language</th>\n<th>Code</th>\n<th>Language</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>en</code></td>\n<td>English</td>\n<td><code>ge</code></td>\n<td>German</td>\n<td><code>jp</code></td>\n<td>Japanese</td>\n</tr>\n<tr>\n<td><code>ru</code></td>\n<td>Russian</td>\n<td><code>fr</code></td>\n<td>French</td>\n<td><code>kr</code></td>\n<td>Korean</td>\n</tr>\n<tr>\n<td><code>ch</code></td>\n<td>Chinese</td>\n<td><code>es</code></td>\n<td>Spanish</td>\n<td><code>pl</code></td>\n<td>Polish</td>\n</tr>\n<tr>\n<td><code>cz</code></td>\n<td>Czech</td>\n<td><code>it</code></td>\n<td>Italian</td>\n<td><code>po</code></td>\n<td>Portuguese</td>\n</tr>\n<tr>\n<td><code>hu</code></td>\n<td>Hungarian</td>\n<td><code>ro</code></td>\n<td>Romanian</td>\n<td><code>sk</code></td>\n<td>Slovak</td>\n</tr>\n<tr>\n<td><code>tu</code></td>\n<td>Turkish</td>\n<td><code>es-mx</code></td>\n<td>Spanish (LatAm)</td>\n<td></td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<p>Note these are the game\u2019s own codes, not ISO: German is <code>ge</code> (not <code>de</code>), Chinese is <code>ch</code>,\nJapanese <code>jp</code>, Korean <code>kr</code>.</p>\n</li>\n<li>\n<p>Translate the <strong>values</strong> on the right. Never touch the keys on the left.</p>\n</li>\n<li>\n<p>Drop the file in <code>BepInEx/plugins/WeekendDrops/locales/</code> and restart the game.\nIt is picked automatically when the game is set to that language.</p>\n</li>\n</ol>\n<p>Anything you leave untranslated (or delete) falls back to English, so a partial\ntranslation is perfectly usable. You can ship 50 lines and add more later.</p>\n<p>Rules</p>\n<p><strong>Keep <code>{0}</code>, <code>{1}</code> exactly as they are.</strong> They are filled in at runtime:</p>\n<pre><code>\"ui.notif.claimBoth\": \"{0} daily and {1} weekly waiting to claim\"\n</code></pre>\n<p>You may reorder them if your language needs a different word order\n(<code>\"{1} weekly and {0} daily ...\"</code>), but you may not invent new ones or drop the\nexisting ones. A mismatch shows the wrong number on screen.</p>\n<p><strong>Keep the colour tags.</strong> The tutorial text contains markup like\n<code>&lt;color=#CD8532&gt;&lt;b&gt;GP&lt;/b&gt;&lt;/color&gt;</code>. Translate the words between the tags, leave the\ntags themselves alone.</p>\n<p><strong>Keep it short.</strong> Most strings sit in fixed-width buttons and chips. German and\nRussian run roughly 30% longer than English, and long text gets clipped rather than\nwrapped. If a line does not fit, prefer a shorter phrasing over an exact translation.</p>\n<p><strong>ALL CAPS is intentional</strong> on headers and buttons. Match it where your script has\ncapitals; ignore it where it does not (Chinese, Japanese, Korean).</p>\n<p>Fonts (important for Chinese, Japanese, Korean)</p>\n<p>The panel is drawn with Unity\u2019s built-in font, which has Latin and Cyrillic but\n<strong>no CJK glyphs</strong> - they render as empty boxes. Fix it by naming a system font in\nyour locale\u2019s <code>_meta</code> block:</p>\n<pre><code>\"_meta\": {\n  \"name\": \"\u7b80\u4f53\u4e2d\u6587\",\n  \"credit\": \"your name here\",\n  \"font\": \"Microsoft YaHei, SimHei\"\n}\n</code></pre>\n<p>Comma-separated, tried in order, so you can list a fallback for older Windows\ninstalls. Leave <code>font</code> empty for Latin and Cyrillic languages - the default is fine.</p>\n<p>Changing the font needs a game restart. Changing text does not.\nTesting your file</p>\n<p>Set <code>Language</code> in the F12 config to your code (instead of <code>auto</code>) to force it on\nwithout changing the whole game\u2019s language.</p>\n<p>if you got python  installed you Then can check if the file is well-formed useing:</p>\n<pre><code>python tools/check-locale.py\n</code></pre>\n<p>It reports missing keys, keys that no longer exist, and broken <code>{0}</code> placeholders.</p>\n<p>Already translated the mod? Updating is the same file, and you only need the new\nlines. This writes out just the keys you have not done yet, English text intact:</p>\n<pre><code>python tools/check-locale.py ru --stub\n</code></pre>\n<p>You get a <code>ru.missing.json</code> with only the outstanding keys. Translate those, paste\nthem into your <code>ru.json</code>, delete the stub. Nothing you already did is touched, and\nthere is no rush.</p>\n<p>What the key prefixes mean</p>\n<table>\n<thead>\n<tr>\n<th>Prefix</th>\n<th>What it is</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>ui.*</code></td>\n<td>Menu, buttons, notifications, the tutorial</td>\n</tr>\n<tr>\n<td><code>challenge.*</code></td>\n<td>Weekly and daily challenge descriptions</td>\n</tr>\n<tr>\n<td><code>shop.*</code></td>\n<td>Shop item names and descriptions</td>\n</tr>\n<tr>\n<td><code>contract.*</code></td>\n<td>Bounty names, objectives, and radio chatter</td>\n</tr>\n<tr>\n<td><code>market.*</code></td>\n<td>Night market card names and descriptions</td>\n</tr>\n<tr>\n<td><code>ui.map.*</code>, <code>ui.zone.*</code></td>\n<td>Map and landmark names - use the game\u2019s own wording</td>\n</tr>\n</tbody>\n</table>\n<p>For map and location names, copy whatever the game itself calls them in\nyour language rather than translating the English literally.</p></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/a7n7YT3Vnizy5JsMIhzP3OBJRr9bmobnEsicYmuh.jpg",
    "forge_url": "https://sp-mod.com/mod/2747/weekend-drops",
-   "downloads": 9085,
-   "favourites": 63,
+   "downloads": 9920,
+   "favourites": 75,
    "featured": false,
    "fika": true,
    "fika_latest": "unknown",
@@ -174604,12 +174616,32 @@
    ],
    "versions": [
     {
+     "id": 15796,
+     "version": "1.0.7",
+     "description": "<h3>Fixes</h3>\n<ul>\n<li><strong>fix for Actually Found In Raid.</strong> Weekend Drops was removing AFIR\u2019s bot patch to protect against a bug in its old 1.0.4 build,</li>\n</ul>\n<h2>WARNING THE NEW CHANGES ARE UNTESTED I HAVENT TOUCH ANY OF MY MODS IN A LONG TIME I GOT NO IDEA IF THERE IS BUGS OR BALANCING ISSUES IF THERE IS ANYTHING GAME BREAKING LET ME KNOW I WILL REMOVE THE MOD FOR THE TIME BEING!</h2>\n<h3>New</h3>\n<ul>\n<li><strong>TarCoin.</strong> A premium currency with its own balance, separate from GP and never convertible to it. Claiming a challenge tier pays 200 TC and completing a contract pays 100 TC. Physical TarCoins can turn up in safes and can be deposited for 100 TC each. Needs WTT-ContentBackport installed; without it TarCoin is simply off.</li>\n<li><strong>Night market.</strong> Opens nightly from 22:00 for six hours (server time) and sells six cards for TarCoin, mostly fully built guns. The stock rerolls weekly. Schedule and pool are in <code>config/night_market.json</code>, TarCoin settings in <code>config/tarcoin.json</code>.</li>\n</ul>\n",
+     "spt_constraint": "4.1.6",
+     "fika": "unknown",
+     "downloads": 135,
+     "size": 543266,
+     "link": "https://sp-mod.com/mod/download/2747/weekend-drops/1.0.7",
+     "published_at": "2026-10-05T22:44:00.000000Z",
+     "dependencies": [
+      {
+       "id": 902,
+       "name": "BigBrain",
+       "slug": "bigbrain",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/902/bigbrain"
+      }
+     ]
+    },
+    {
      "id": 14976,
      "version": "1.0.6",
      "description": "<h3>New</h3>\n<ul>\n<li><strong>Personal bests, and a Stats tab to keep them in.</strong> Six records: longest kill, most kills in a raid, most headshots in a raid, most PMC kills in a raid, richest extract, and longest extract streak.</li>\n</ul>\n<p>Beating a record pays GP, and the rule is that it pays for the <em>improvement</em>, never the number. Going from 300m to 301m and then 301m to 302m earns exactly what one jump from 300m to 302m earns, because the improvements add up to the same distance either way. why? so you cant farm for infinite GP</p>\n<ul>\n<li>\n<p><strong>Airdrops fix attempted.</strong> Off by default, under <code>Keep airdrops reachable</code> in F12, its experemental if you turn it on and it dosnt land somewhere reachable pls send me the logs in my mod thread also\nThis covers vanilla airdrops as well as contract Supply Runs.</p>\n</li>\n<li>\n<p><strong>Challenges that care which gun you brought.</strong> 28 new ones covering all eight weapon classes: assault rifles, carbines, SMGs, shotguns, pistols, bolt-actions, marksman rifles and machine guns.</p>\n</li>\n<li>\n<p><strong>Bosses by name.</strong> 19 challenges naming a specific boss rather than any boss: Killa, Reshala, Glukhar, Sanitar, Tagilla, Shturman, Zryachiy, Kaban, Kolontay, Partisan and the Knight. Only six of them appear as dailies, and deliberately so</p>\n</li>\n<li>\n<p><strong>Long shots that have to land in the same raid.</strong> 8 challenges for several kills past 100m, 150m, 200m, 250m or 300m without leaving. The distance challenges up to now counted across the whole day or weekend, which a patient player clears two raids at a time. None of these ask for a single kill, because at a target of one there would be no difference between the two.</p>\n</li>\n<li>\n<p><strong>81 more challenges across the existing types</strong>, filling gaps rather than padding numbers. Extracts from The Lab and the Labyrinth, which were valid maps the pools had never once named. Ground Zero as a Scav. Kills at 150m, 250m and 400m. Missing rungs throughout the suppressed, optic, iron-sight, limb-damage, melee, headshots-in-a-raid and raids-completed ladders, on both the daily and the weekend side.</p>\n</li>\n</ul>\n<h3>Changes</h3>\n<ul>\n<li>\n<p><strong>Crates hand you a set of things instead of a handful of things.</strong> Every tier now fills a fixed recipe rather than drawing its items independently from one big bag. A Common crate is one piece of gear, one ammo box, one med and two pieces of barter. A Rare is four or five pieces of gear, a med, some barter, and a gun when it rolls one. An Epic is the same with ammo and a second piece of barter. The old way made each item an unrelated lottery pull across 20 odd categories, which is why a crate could read as a good gun and six pieces of nothing.</p>\n</li>\n<li>\n<p><strong>Loose attachments are gone from every crate pool.</strong> They were noise</p>\n</li>\n<li>\n<p><strong>The attachments fitted to a dropped gun now match the crate\u2019s tier.</strong> They were being picked at random from every compatible mod in the slot, which is how an Epic rifle turned up wearing the cheapest foregrip in the game while the correctly-tiered loose optic sat beside it doing nothing. Common guns now draw from the bottom of the price range, Rare from the middle, Epic from the top.</p>\n</li>\n<li>\n<p><strong>Common crates were cleared out.</strong></p>\n</li>\n<li>\n<p><strong>Epic crates carry real ammo.</strong> Their pool had no ammunition in it at all, so the ammo slot had nothing to draw from. Nine top-tier boxes added: SSA AP and M995, 7N39 and BS, MAI AP, M61, 7.62x54R BS, 9x39 BP and AP-20.</p>\n</li>\n<li>\n<p>** duplicate challenges retired.** If you are holding one of the retired challenges, that set is regenerated once when you next reach the main menu.</p>\n</li>\n<li>\n<p><strong>The plain Unity UI notification renderer is gone.</strong></p>\n</li>\n<li>\n<p><strong>The F9 debug key is gone.</strong> has been shipping quietly sorry!</p>\n</li>\n</ul>\n<h3>Fixes</h3>\n<ul>\n<li>\n<p><strong>Fixed shop icons staying blank until you restarted the game.</strong></p>\n</li>\n<li>\n<p><strong>Failing to save no longer happens in silence.</strong> GP balances, pending gifts and personal bests all threw their write errors away without a word. A locked file, a full disk or an antivirus holding the file open meant a you would have lost currency, gifts or records with nothing in the log to say what had happened or that anything had. All three now log what was lost. Read failures too: a corrupted records or balances file used to reset itself quietly, and now says so.</p>\n</li>\n</ul>\n",
      "spt_constraint": "4.1.3",
      "fika": "unknown",
-     "downloads": 2158,
+     "downloads": 2803,
      "size": 495455,
      "link": "https://sp-mod.com/mod/download/2747/weekend-drops/1.0.6",
      "published_at": "2026-08-25T12:00:00.000000Z",
@@ -174629,7 +174661,7 @@
      "description": "<h1>this is a Beta! there maybe some bugs or issues</h1>\n<h1>Changelog</h1>\n<h3>New</h3>\n<ul>\n<li>\n<p><strong>Weekend modifiers.</strong> Each weekend rolls one modifier, or none at all. Roughly one weekend in five is a plain one, which is the point: if every weekend is special then none of them are. The pick is the same for everyone on the server, holds until the weekend closes, and shows as a banner above the reward track. Fifteen of them, in three families:</p>\n<ul>\n<li><strong>A featured weapon class.</strong> Kills with it pay 12 GP each, up to 15 kills a raid. Seven rotate: shotguns, pistols, SMGs, bolt-actions, marksman rifles, carbines and machine guns. Assault rifles are deliberately left out. A modifier should change what you take into a raid, and paying you for the gun you were already carrying is just free GP.</li>\n<li><strong>A featured way to kill.</strong> These leave your loadout alone and change how you fight: Precision Weekend (20 GP a headshot), Cold Steel (60 GP a melee kill), Frag Out (45 GP a grenade kill), Quiet Professional (18 GP with a suppressor) and Long Shot (30 GP past 150m). Each has its own rate and per-raid cap, because a melee kill is not worth the same as a rifle kill.</li>\n<li><strong>Multipliers.</strong> Hazard Pay (1.5x GP), Double Pay (2x) and Payday (3x) apply to every GP reward: weekly tiers, dailies, contracts. Deposits and gifts are untouched, so nobody can farm this by converting coins or passing GP round a Fika group. Field Training (1.5x XP) and Double XP do the same for raid XP, which is worth real time if you are grinding level 55 for a prestige. Quest turn-ins and hideout XP are left alone. The extremes are weighted rare.</li>\n</ul>\n<p><code>noneWeight</code> went from 4 to 8 to go with them. The pool nearly doubled, and left alone a plain weekend would have quietly gone from one in five to one in nine. Rotation, weights, rates and the odds of a plain weekend all live in <code>config/modifiers.json</code>. A card announces the weekend\u2019s modifier once, when you next reach the main menu, and the first time you ever see one a three-step tutorial explains what you are looking at.</p>\n</li>\n<li>\n<p><strong>new Challenges.</strong> Four new types: kills past a distance (100m/150m/200m/300m ladders), kills with a suppressor fitted, kills with an optic mounted, and kills on iron sights. Distance is muzzle to impact, so it is the shot that counts, not where the body finished rolling. Optics and irons share a single weekend slot so a board can never ask for both at once. The suppressor check counts integrally suppressed weapons, and \u201coptic\u201d means any magnifying or reflex sight.</p>\n<p>Quiet Professional and Long Shot ride on the same measurements. Thresholds are per-challenge via <code>minDistanceMeters</code>, so the ladder is yours to set.</p>\n</li>\n<li>\n<p><strong>Longest shot.</strong> Every firearm kill was already being measured for the distance challenges, so the furthest one is now kept. Beat your own record with a kill past 100m and a card tells you the moment it lands, with the old number to compare against. Stored per install, survives a wipe.</p>\n</li>\n<li>\n<p><strong>More challenges.</strong> 39 of them, weekend and daily: total kills across the whole weekend rather than one raid, headshots in a single raid, raids finished whether you walked out or got carried out, and kills in a single Scav run. Plus more rungs on the ladders that only had one or two, for melee, cumulative loot hauls, big single-raid kill counts and arm kills. Each new type gets its own weekend slot so a board cannot stack them.</p>\n</li>\n<li>\n<p><strong>Limb kill challenges.</strong> Kills through the legs, arms and stomach, weekend and daily. They share one slot between them so a weekend never fills up with them. Worth knowing these are rarer than headshots by nature: in Tarkov only the head and thorax actually kill, so a limb kill means blacking the limb and letting the spill-over carry into the thorax. The targets are set with that in mind.</p>\n</li>\n<li>\n<p><strong>The Collection.</strong> A new tab, and a reason to stop vendoring the pretty rubbish. Donate found-in-raid collectibles onto permanent display: boss and operative figurines, antiques, faction posters, and a shelf of things nobody can explain keeping. Every piece pays GP on the spot, and finishing a set grants a permanent GP bonus that never resets with the weekend. Six sets, 24 pieces, +25% GP on everything you earn if you fill the museum.</p>\n<p>The sets are deliberately a ladder rather than six of the same thing. ANTIQUES is three common pieces you will trip over in a couple of raids. THE OPERATIVES, ODDITIES and THE BOSSES sit in the middle. PROPAGANDA wants three faction posters. THE GALLERY wants three of the rare posters, which measured about thirty times rarer than an antique vase, and is priced to match at 1,200 GP a piece: it is a wipe-long project, not a weekend one.</p>\n<p>Donations are one-way. The piece is gone, it cannot be sold afterwards, and the confirm screen says so before every single one.</p>\n<p>Two kinds of item can never be donated no matter what a config file says: anything the Collector quest wants, because Kappa is one-shot per wipe, and anything a hideout upgrade needs. Both lists are read from the live database at startup rather than hardcoded, so they stay right across wipes and when other mods add quests. Items an ordinary trader quest wants are allowed but flagged on the confirm screen, since you can always find another one. If a mod on your install claims a collectible, that piece is withheld and the startup log names it and says why.</p>\n<p>The museum belongs to your character, so it clears when your profile does. Prestige clears it too, but pays out first: 150 GP a piece plus 1,000 GP a completed set, credited to the fresh character. A full museum is 9,600 GP to start the new run with, and the payout gets its own little ceremony the next time you open the tab.</p>\n</li>\n<li>\n<p><strong>Reroll a weekend challenge you can\u2019t do.</strong> Some challenges are simply out of reach on a given profile: the cultist Priest at level 5, a map you never run, a stunt you have no gear for. Any unfinished weekend challenge can be swapped for another, paid in GP. The replacement is always worth the same difficulty points, so a reroll can never put a tier reward out of reach. First one costs 40 GP and each after that costs 20 more, three a weekend, all tunable in <code>config.json</code> (<code>weekendRerollCost</code>, <code>weekendRerollCostStep</code>, <code>weekendRerollMaxPerWeekend</code>, or <code>enableWeekendReroll: false</code> to switch it off).</p>\n</li>\n<li>\n<p><strong>Reroll a daily too.</strong> Same idea, its own budget: 25 GP for the first, 25 more each time, two a day, reset with the daily roll. The replacement avoids the categories already on your board, and rerolling re-arms the complete-all bonus, since swapping a challenge changes what the day is worth. <code>enableDailyReroll</code>, <code>dailyRerollCost</code>, <code>dailyRerollCostStep</code>, <code>dailyRerollMaxPerDay</code>.</p>\n</li>\n<li>\n<p><strong>A config page in the launcher.</strong> Weekend Drops now shows up under Mod Pages with the other 4.1 mods, so the server settings can be changed from a real interface instead of by hand-editing JSON: when the weekend opens and closes, how many challenges and at what difficulty budget, the reroll prices, shop restock timers and price multiplier, crate expiry, the Fika bounty cap, and the debug switch. The page explains what each setting does instead of just naming it, and does the arithmetic for you (what a difficulty budget actually splits into, what the reroll ladder comes to). Saving writes <code>config/config.json</code> and <code>config/contracts.json</code>, which the server reads at startup, so the page tells you plainly that a restart is needed. Challenge lists, crate pools, shop stock and bounty definitions are still separate files and are not edited here.</p>\n</li>\n</ul>\n<h3>Changes</h3>\n<ul>\n<li>\n<p><strong>Deposit any amount of GP coins again, down to a single coin.</strong> 1.0.4 had to restrict deposits to whole stacks because there was no way to hand in part of one without the server losing the rest. There is one: the game\u2019s own stack-split, which puts the coins you are handing in into a real stash slot the server agrees exists, and only then removes them. The slider is a free 0-to-all slider again and the \u201cwhole stacks only\u201d note is gone. Trade-ins consume partial stacks the same way, so handing in 3 of a stack of 12 no longer risks the other 9.</p>\n</li>\n<li>\n<p><strong>Bundles say what\u2019s in them.</strong> A shop card that delivers several items used to show a \u201c+4\u201d badge and nothing else, so the only way to find out what you were buying was to buy it. Hovering a bundle now pops its full contents: icon, name and quantity per item. Repeated entries are merged, so a kit listing two 60-round boxes reads as one stack of 120, which is what actually lands in your stash.</p>\n</li>\n<li>\n<p><strong>The loading-screen panel can be moved.</strong> Its default position lands on top of the vanilla tip text at some resolutions, which made both unreadable. Two new F12 settings, <code>Loading panel X</code> and <code>Loading panel Y</code>, put its centre anywhere on screen as a fraction of width and height, and the old spot is still the default. You can also just drag it on the loading screen while the cursor is up, which writes the new position back to the config. Either way it is clamped to stay fully on screen, including as its height changes between a four-row challenge list and a one-line tip.</p>\n</li>\n<li>\n<p><strong>The Weekly tab is laid out around your progress now.</strong> The reward track had the top of the tab and the \u201chow close is the next crate\u201d card was pinned to the bottom, which was backwards: the track changes twice a weekend, the next-reward number is the reason you opened the tab. Next reward is the banner at the top now, with the tier track compacted alongside it (a ready tier is still claimed from there), and the challenge list gets the full width with its own columns for difficulty, progress and reroll. The separate tier-rewards column is gone and everything it showed lives in the banner or the track.</p>\n</li>\n<li>\n<p><strong>Notification cards are back to the detailed ones by default.</strong> The Unity UI renderer is cheaper per frame, but its cards are plain, they lose the progress bars and reward styling, and a full-screen menu can draw over them. It is still there under <code>Unity UI notifications</code> in F12 if you want it, now described honestly. If you turned it on in an earlier version you are still on it: flip it off to get the detailed cards back.</p>\n</li>\n<li>\n<p>The GP line on LootNET\u2019s post-raid summary reads \u201cGP EARNED\u201d rather than \u201cGP FROM CHALLENGES\u201d, because the total can also include a weekend modifier\u2019s per-kill bounty.</p>\n</li>\n</ul>\n<h3>Fixes</h3>\n<ul>\n<li>\n<p><strong>A crew contract no longer strands you when something else lands the last kill.</strong> Crew deaths that were not yours have counted toward a multi-target contract for a while, but the \u201cobjective met\u201d check only ever ran when <em>you</em> killed something, so the counter could sit on its target with nothing happening. Kill nine of a ten-man crew, let a Rogue take the tenth, and the contract stayed unfinished with the count already full. The check now runs on any crew death. Single-target bounties are unchanged and still want your own kill.</p>\n</li>\n<li>\n<p><strong>Fixed the GP deposit not seeing any coins in your stash.</strong> The client looks the inventory controller up by field name and SPT 4.1\u2019s de-obfuscation pass renamed it, so the lookup came back empty and the deposit screen reported a stash with no coins in it. It now matches the new name, falls back to the old one, and failing both finds the field by type, so the next rename degrades into a log line instead of a feature that quietly does nothing.</p>\n</li>\n<li>\n<p><strong>Fixed the mod loading but doing nothing on Linux.</strong> Config and player data were looked up at a hardcoded <code>user/mods/WeekendDrops</code> path. Linux filesystems are case-sensitive, so an install whose folder name differed even in capitalisation found no config at all and every service silently fell back to built-in defaults: no challenges, no contracts, no shop, and nothing in the log to explain it. Paths now resolve from where the mod\u2019s own dll actually sits, so the folder can be called anything. The same bug hid the LootNET and Fika installs from detection, which are matched case-insensitively now, and startup prints the resolved mod folder and raises a real error when a config file is missing.</p>\n</li>\n<li>\n<p><strong>Fixed Fika contracts breaking when two players took a bounty on the same map.</strong> Only the first player\u2019s contract was ever injected, so the second player\u2019s crew never spawned, and if it was the second player holding the Supply Run then no plane was armed and clearing the crew produced no airdrop. Every participant\u2019s contract is injected now (up to <code>maxContractsPerRaid</code>, default 3), and the raid arms one airdrop per Supply Run rather than one in total. Three related bugs went with it: two contracts sharing a boss cancelled each other\u2019s spawn outright, two bounties on the same zone had the second wipe the first\u2019s spawn points, and the whole Fika path was gated behind a folder check that could not match on Linux.</p>\n</li>\n<li>\n<p><strong>Fixed the trophy ceremony showing its own source code.</strong> The celebration that plays when you buy a trophy item referenced thirteen text keys that were never written, so it displayed literal <code>ui.trophy.obtained</code> and <code>ui.trophy.quip.4</code> on screen. Written now.</p>\n</li>\n<li>\n<p><strong>Fixed notification cards truncating mid-sentence.</strong> The compact card packed the body and its second line into one string that did not fit the box, so it cut off wherever it ran out of room and left a dangling separator behind. The second line gets its own line now.</p>\n</li>\n<li>\n<p>The in-game debug strip is laid out as a wrapping grid instead of one long row that ran off the side of the screen. Debug builds only.</p>\n</li>\n</ul>\n",
      "spt_constraint": "4.1.2",
      "fika": "unknown",
-     "downloads": 634,
+     "downloads": 637,
      "size": 477359,
      "link": "https://sp-mod.com/mod/download/2747/weekend-drops/1.0.5",
      "published_at": "2026-08-12T01:19:00.000000Z",
@@ -174649,7 +174681,7 @@
      "description": "<h3>New</h3>\n<ul>\n<li><strong>language</strong> i added a new sub folder directory named locales feel free to translate it to your language if there is a error in your translated locales it will load all the texts in English thats not a bug thats just a safe guard to not break anything</li>\n<li><strong>65 new challenges</strong> across the weekend and daily pools - easier opening rungs for the categories that only ever offered hard ones (a single grenade kill, 2 headshots, one clean extract, a first Raider or Rogue), more per-map extracts, and fuller ladders for the survive-a-raid, loot and single-raid-spike categories that used to have one entry each. The melee-kill stunt stays a one-off oddity and now shows up less often than before, not more.</li>\n</ul>\n<h3>Changes</h3>\n<ul>\n<li><strong>shop</strong> got a lil overhaul you can now buy a few new thing and barter for some supplys</li>\n<li><strong>Marksman rifles added to the Cleanup Crew\u2019s arsenal</strong> - the M1A, HK G28 and RSASS in 7.62x51, plus the SVDS in 7.62x54R. Roughly one crew member in eight now carries a DMR, so expect to be reached from further out.</li>\n<li><strong>Cultist challenges are no longer a wall on a fresh profile.</strong> Hunting cultists needs a night raid and night vision, but the challenge picker treated them as an everyday category, so one landed on roughly 45% of weekends - a slot a new player simply could not finish. They now share a slot with the other rare-target hunts instead of holding one of their own, which drops them to about 26% of weekends, and the entry rung is a single cultist rather than three. The 8- and 12-kill versions are gone. The same rebalance spreads every other category more evenly, so weekends repeat themselves less.</li>\n</ul>\n<h3>Fixes</h3>\n<ul>\n<li><strong>Depositing GP coins no longer destroys the ones you kept.</strong> Handing in 50 coins out of a stack of 200 credited the 50 correctly, but the leftover 150 disappeared: the deposit removed the whole stack and put a copy of the remainder back, and while your client showed those coins, the server had never agreed they existed, so they were gone at the next sync. Deposits now move whole stacks only, and the amount selector offers stack-sized amounts to match (two stacks of 100 offer 100 or 200). It is a coarser choice than before, but nothing can be lost. A smaller partial deposit would need the game to split a stack in a way that actually sticks, which i have not found a reliable route to yet.</li>\n<li>Fixed three \u201ckill X enemies in a single raid\u201d challenges whose titles, ids and actual targets disagreed (two both read \u201cKill 12\u201d, and one titled 18 only wanted 8). They are now a clean 6 / 10 / 15 / 20 ladder.</li>\n<li><strong>Supply Run crews now spawn on the drop instead of hiking to it.</strong> They were spawning anywhere in a zone that spans several hundred metres and walking in as a group, which is where they ran into trouble. They now start posted around the crate.</li>\n<li><strong>Fixed the Supply Run crew being sent to the wrong place entirely.</strong> The crew\u2019s hideout was rolled from the map\u2019s hideout list with no regard for where the crate was coming down, so you could get a Broken Village drop guarded from USEC Base. Worse, the crew could split, half holding the hideout while the rest walked off to the crate. Their posts are now always built around the rolled landing site. A Supply Run you already accepted repairs itself on the spot, so you don\u2019t have to abandon it (and burn your board pick) to get the fix.\nalso sorry for does who ran around the map trying to find them i did a terrible job adding the crew it should be now much better i hope at least\u2026</li>\n</ul>\n",
      "spt_constraint": "4.0.13",
      "fika": "compatible",
-     "downloads": 1874,
+     "downloads": 1922,
      "size": 411945,
      "link": "https://sp-mod.com/mod/download/2747/weekend-drops/1.0.4",
      "published_at": "2026-07-28T04:06:00.000000Z",
@@ -174669,7 +174701,7 @@
      "description": "<h3>New</h3>\n<ul>\n<li><strong>Send GP to a friend</strong> - gift GP from your balance to any other player (built for Fika). Open the deposit screen and hit \u201cSend to a friend\u201d, pick a recipient, choose an amount, and send. No fee and the recipient gets a gold \u201cGP gift received\u201d popup the next time they open the menu, whether or not they were online when you sent it also works with no fika installed incase you want to send GP to you other profile.</li>\n<li><strong>Team standings (Fika)</strong> - the Weekly tab now shows a team board of everyone on the server, ranked by GP earned this weekend. Only appears when Fika is installed.</li>\n<li><strong>New challenges</strong> - hunt Cultists and the Cultist Priest, take on Raiders and Rogues, chase single-raid feats (kill a pile of enemies in one raid, or survive 15 minutes in one). The weekly and daily pools also got a wider spread of the existing kill, extract, and survival targets.</li>\n<li><strong>Reward reminder you won\u2019t miss</strong> - when you have rewards waiting to claim, the main-menu nudge now pops as a bright, pulsing card with a sound, and it lands once you are actually back on the menu instead of behind the raid-end screen.</li>\n<li><strong>inRaid</strong> contract Toast it now tells you the location of the cleanup crew</li>\n<li><strong>Fika</strong> added Compatibility i tested a few raids it should work but there could be issues with the air drop not getting called after the crew gets killed</li>\n<li><strong>challenges on loading screen</strong> added a option to the F12 menu to toggle it on or off</li>\n</ul>\n<h3>Changes.</h3>\n<ul>\n<li>Menu readability pass: brighter, higher-contrast action buttons (Buy, Claim, Confirm) and cleaner text alignment across the panels.</li>\n<li>shop got rebalanced a bit rised prices a bit</li>\n<li>cleanup crew got buffed better gear like guns and chances to spawn with helmets and body armor they also now got some meds/stims so they can heal in fights</li>\n</ul>\n<h3>Fixes</h3>\n<ul>\n<li>menu should now no longer lag after a few raids and stay smooth without weird animation delay</li>\n</ul>\n",
      "spt_constraint": "4.0.13",
      "fika": "compatible",
-     "downloads": 1692,
+     "downloads": 1696,
      "size": 377342,
      "link": "https://sp-mod.com/mod/download/2747/weekend-drops/1.0.3",
      "published_at": "2026-07-10T20:24:00.000000Z",
@@ -174728,12 +174760,13 @@
      "dependencies": []
     }
    ],
-   "latest_version": "1.0.6",
-   "spt_constraint": "4.1.3",
+   "latest_version": "1.0.7",
+   "spt_constraint": "4.1.6",
    "all_spt_constraints": [
     "4.0.13",
     "4.1.2",
-    "4.1.3"
+    "4.1.3",
+    "4.1.6"
    ],
    "dependencies": [
     {
@@ -174754,7 +174787,7 @@
     }
    ],
    "published_at": "2026-08-25T12:07:00.000000Z",
-   "updated_at": "2026-09-19T20:35:10.000000Z",
+   "updated_at": "2026-10-05T22:46:04.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -209671,8 +209704,8 @@
    "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Description</div>\n<div class=\"tab-content\"><p><strong>Tarkova-Cola brings Call of Duty Zombies perks to Tushonka!</strong> (SPT 4.1.x, single player)</p>\n<p>Level up each perk with the XP you earn in raid, complete challenges to unlock augments, and pair them with drawbacks. The combination you equip changes what you pursue in raid and which playstyle fits you.</p>\n<p><strong>Currently available:</strong> Speed Cola. Reloads are <strong>1.5x faster</strong> for the rest of the raid, or <strong>2.0x</strong> with the Sugar Rush augment. More perks are coming, stay tuned!</p>\n<p><strong>How to use</strong></p>\n<ol>\n<li>Buy Speed Cola from Therapist (loyalty level 1, <strong>7 GP Coin</strong>), or find it in raid: ammo crates, safes, and on Rogues and Killa.</li>\n<li>Drink it in raid. The perk stays active until the raid ends.</li>\n<li>Earn XP in raid (+25% while the perk is active) to level up (max level 5).</li>\n<li>Open <strong>RESEARCH</strong> in the main menu (bottom bar, next to Handbook, or press F9) to see your progress and equip augments and drawbacks.</li>\n<li>Enjoy! Open the pause menu (ESC) in raid to see your level and pending challenges.</li>\n</ol>\n<p><strong>Achievements:</strong> 6 native EFT achievements (one is secret) under Profile &gt; Achievements. Each one mails its reward once.</p>\n<p><strong>About the use of AI.</strong> The code of this mod was written with the help of an AI assistant, directed, tested and published by me. You can check the GitHub repository. The 3D model is <strong>not</strong> mine (see the License &amp; Credits tab), and the Call of Duty icons and jingle belong to their owners. I take full responsibility for any inconsistency or bug in the mod.</p>\n<p>information\n<strong>Fika:</strong> progress is saved on each player\u2019s own SPT server. If you play with Fika, every server involved needs the server part of the mod installed.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">License &amp; Credits</div>\n<div class=\"tab-content\"><p><strong>Code: MIT License</strong></p>\n<p>Copyright (c) 2026 yendaxddd</p>\n<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \u201cSoftware\u201d), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, subject to the conditions of the MIT License. The full text is in the LICENSE file of the GitHub repository.</p>\n<p><strong>Third-party material (NOT covered by the MIT license)</strong></p>\n<ul>\n<li><strong>3D model:</strong> \u201cSpeedcola CoD Zombies\u201d by <strong>albertjuli</strong> (<a target=\"_blank\" class=\"external-link\" href=\"https://skfb.ly/6VRDU\" rel=\"noreferrer noopener\">Sketchfab</a>), licensed under <a target=\"_blank\" class=\"external-link\" href=\"https://creativecommons.org/licenses/by/4.0/\" rel=\"noreferrer noopener\">CC BY 4.0</a>. Changes: converted to a Unity asset bundle, textures re-prepared (metal/smoothness adjusted), rescaled and rotated for in-game use.</li>\n<li><strong>Icons and jingle:</strong> Call of Duty, property of their respective owners.</li>\n</ul>\n<p>If you are the owner of any of this material and want it removed, please open an issue on GitHub and it will be taken down.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Challenges, Augments &amp; Drawbacks</div>\n<div class=\"tab-content\"><p>Complete a challenge to unlock an <strong>augment</strong> and its linked <strong>drawback</strong>. You can equip 1 major + 1 minor augment (2 minors with Extra Slot) and <strong>1 major + 1 minor drawback</strong>. You can\u2019t equip a major augment without a major drawback.</p>\n<p><strong>Levels (max 5)</strong></p>\n<table>\n<thead>\n<tr>\n<th>Level</th>\n<th>XP to next level</th>\n<th>Total XP</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1 to 2</td>\n<td>4,050</td>\n<td>4,050</td>\n</tr>\n<tr>\n<td>2 to 3</td>\n<td>5,400</td>\n<td>9,450</td>\n</tr>\n<tr>\n<td>3 to 4</td>\n<td>6,750</td>\n<td>16,200</td>\n</tr>\n<tr>\n<td>4 to 5</td>\n<td>8,100</td>\n<td>24,300</td>\n</tr>\n</tbody>\n</table>\n<p><strong>Level 1</strong></p>\n<table>\n<thead>\n<tr>\n<th>Augment</th>\n<th>Challenge</th>\n<th>Linked drawback</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Quick Hands</strong> (Major): drawing and swapping weapons 50% faster</td>\n<td>Kill 3 enemies shortly after swapping weapons, with Speed Cola active</td>\n<td><strong>Jittery Hands</strong> (Major): +25% weapon sway if an arm has an unhealthy effect (fracture, destroyed, bleed)</td>\n</tr>\n<tr>\n<td><strong>Steady Fingers</strong> (Minor): arms take 30% less damage</td>\n<td>Get your arms broken 4 times with Speed Cola active</td>\n<td><strong>Dry Mouth</strong> (Minor): hydration drains 20% faster</td>\n</tr>\n</tbody>\n</table>\n<p><strong>Level 2</strong></p>\n<table>\n<thead>\n<tr>\n<th>Augment</th>\n<th>Challenge</th>\n<th>Linked drawback</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Bolt Runner</strong> (Major): a jammed weapon clears itself when you put it away</td>\n<td>Clear a weapon jam 5 times with Speed Cola active</td>\n<td><strong>Overpressure</strong> (Major): every 4th magazine loses all its rounds when reloaded (they return to your inventory)</td>\n</tr>\n<tr>\n<td><strong>Mag Juggler</strong> (Minor): primary weapon magazines load 50% faster in inventory</td>\n<td>Load 20 magazines in raid with Speed Cola active</td>\n<td><strong>Sticky Mags</strong> (Minor): +10% jam chance</td>\n</tr>\n</tbody>\n</table>\n<p><strong>Level 3</strong></p>\n<table>\n<thead>\n<tr>\n<th>Augment</th>\n<th>Challenge</th>\n<th>Linked drawback</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Chamber Check</strong> (Minor): checking magazines in inventory 75% faster</td>\n<td>Check your weapon\u2019s magazine 20 times in raid</td>\n<td><strong>Loud Slurp</strong> (Minor): drinking makes noise (30 m) that bots can hear</td>\n</tr>\n<tr>\n<td><strong>Round Counter</strong> (Minor): magazines show their exact ammo count</td>\n<td>Check magazines in your inventory 15 times</td>\n<td><strong>Sweet Tooth</strong> (Minor): eating or drinking anything else takes twice as long</td>\n</tr>\n</tbody>\n</table>\n<p><strong>Level 4</strong></p>\n<table>\n<thead>\n<tr>\n<th>Augment</th>\n<th>Challenge</th>\n<th>Linked drawback</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Sugar Rush</strong> (Major): reload bonus rises from x1.5 to x2.0</td>\n<td>Kill 4 PMCs</td>\n<td><strong>Sugar Crash</strong> (Major): every 2 minutes without a kill, thirst rate rises (max x2); a kill resets it</td>\n</tr>\n</tbody>\n</table>\n<p><strong>Level 5</strong></p>\n<table>\n<thead>\n<tr>\n<th>Augment</th>\n<th>Challenge</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Extra Slot</strong> (Special): carry 2 minor augments instead of 1</td>\n<td>Kill 1 boss with Speed Cola active</td>\n</tr>\n</tbody>\n</table></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Gallery</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/rGoP6Qe.png\" alt=\"Speed Cola in the trader\" /> Speed cola in the trader screen</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/oEexJnv.png\" alt=\"Speed Cola in hand\" /> Speed cola model in hand (Will be improved)</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/m58EOf0.png\" alt=\"Research Button\" /> Augments button</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/qdO1B1d.png\" alt=\"Research screen\" /> Augments screen</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/VVfT3pG.png\" alt=\"Challenges tracker\" /> Challenges tracker</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/CMonIIe.png\" alt=\"Achievements\" /> Achievements</p></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/IC1AGBdnpzIrEDM9pgHerSa0C8OmGoi1K9ppgzaQ.png",
    "forge_url": "https://sp-mod.com/mod/3088/tarkova-cola",
-   "downloads": 53,
-   "favourites": 2,
+   "downloads": 266,
+   "favourites": 3,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -209700,12 +209733,24 @@
    ],
    "versions": [
     {
+     "id": 15797,
+     "version": "1.2.0",
+     "description": "<p>v1.2.0</p>\n<ul>\n<li>NEW PERK: Stamin-Up (7 GP Coin at Therapist, also found in ammo crates, safes, Rogues and Killa).\nLeg stamina x1.5 for the rest of the raid, with 7 augments and 6 drawbacks.\nIncludes a new bottle model, the in-game jingle and its own progression.</li>\n<li>6 new native achievements (12 in total, 2 secret).</li>\n</ul>\n",
+     "spt_constraint": "4.1.6",
+     "fika": "unknown",
+     "downloads": 48,
+     "size": 19729250,
+     "link": "https://sp-mod.com/mod/download/3088/tarkova-cola/1.2.0",
+     "published_at": "2026-10-05T23:29:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 15724,
      "version": "1.1.1",
      "description": "<p>Bugfixes:</p>\n<ul>\n<li>Fixed a bug in which Research XP Could potentially not get saved correctly by exiting the raid in specific cases</li>\n</ul>\n",
      "spt_constraint": "4.1.6",
      "fika": "unknown",
-     "downloads": 10,
+     "downloads": 172,
      "size": 16099299,
      "link": "https://sp-mod.com/mod/download/3088/tarkova-cola/1.1.1",
      "published_at": "2026-10-01T23:17:00.000000Z",
@@ -209717,7 +209762,7 @@
      "description": "<p>What\u2019s new:</p>\n<ul>\n<li>Speed cola now costs 7 GP coins</li>\n<li>Can now be found in ammo boxes, Safes, And 2 bosses (Rogues, Killa)</li>\n<li>5 new achievements</li>\n</ul>\n<p>Bug fixes:</p>\n<ul>\n<li>Fixed a bug that broke the raid audio after drinking speed cola\nHave fun!</li>\n</ul>\n",
      "spt_constraint": "4.1.6",
      "fika": "unknown",
-     "downloads": 41,
+     "downloads": 44,
      "size": 16099153,
      "link": "https://sp-mod.com/mod/download/3088/tarkova-cola/1.1.0",
      "published_at": "2026-10-01T16:40:00.000000Z",
@@ -209736,7 +209781,7 @@
      "dependencies": []
     }
    ],
-   "latest_version": "1.1.1",
+   "latest_version": "1.2.0",
    "spt_constraint": "4.1.6",
    "all_spt_constraints": [
     "4.1.6"
@@ -209744,7 +209789,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-09-30T21:39:00.000000Z",
-   "updated_at": "2026-10-01T23:36:57.000000Z",
+   "updated_at": "2026-10-05T23:32:05.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -210510,12 +210555,12 @@
    "guid": "com.blackhawk.dynamicmapsextended",
    "name": "DynamicMaps Extended",
    "slug": "dynamicmaps-extended",
-   "teaser": "Adds new/backported maps and Abstract/Satellite map styles to DynamicMaps.",
-   "description_html": "<p>An extension for <strong>DynamicMaps</strong> that adds support for additional and backported maps and allows switching between <strong>Abstract</strong> and <strong>Satellite</strong> map artwork.</p>\n<h3>Features</h3>\n<ul>\n<li>Factory Classic support</li>\n<li>Icebreaker support</li>\n<li>Manimal Interchange support</li>\n<li>Manimal Labs support</li>\n<li>Abstract / Satellite artwork selection</li>\n<li>Per-map style overrides</li>\n<li>Change map artwork during a raid</li>\n<li>Automatic per-floor artwork fallback</li>\n<li>Keeps DynamicMaps player tracking, quests, extracts, floors, minimap and markers intact</li>\n</ul>\n<h3>Requirements</h3>\n<ul>\n<li>DynamicMaps</li>\n<li>MapVariants</li>\n</ul>\n<p>The related backport/map mods are only required for the maps you want to use.</p>\n<h3>Limitations / Notes</h3>\n<p>Not every map or floor has both <strong>Abstract</strong> and <strong>Satellite</strong> versions available.</p>\n<p>If the style you selected is missing, the mod will simply use the version that is available. This means some maps can have a mix of Satellite and Abstract floors.</p>\n<p>The mod does <strong>not</strong> create fake or generated map artwork.</p>\n<ul>\n<li>Manimal Lighthouse currently uses the normal DynamicMaps Lighthouse map.</li>\n<li>Terminal is not supported yet.</li>\n<li>Backported maps need their matching map mod installed.</li>\n<li>Building from source needs an internet connection to download some map files.</li>\n</ul>\n<h3>Installation</h3>\n<p>Extract the archive into your SPT folder.</p>\n<p><code>BepInEx/plugins/DynamicMaps-Extended/</code></p>\n<hr />\n<h3>Support / Donations</h3>\n<p>If you\u2019d like to support my work, you can <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/its_blackhawk\" rel=\"noreferrer noopener\">buy me a coffee</a> \u2615</p>\n<p><strong>Solana (SOL)</strong><br />\n<code>RtkZyhpCD7rAmcsocf3RWPizCCzEdGNuUAX7sBcD1pF</code></p>\n<p><strong>Bitcoin (BTC)</strong><br />\n<code>bc1qj983ved6kp4uz6r6t285j0r5tyf5h6jph9eajl</code></p>\n<p><strong>Ethereum (ETH)</strong><br />\n<code>0xEaA910a5A779C85Fb9F07CA22bd2d2847a5969A5</code></p>\n<p>Please double-check the address and network before sending.</p>\n",
+   "teaser": "Expands DynamicMaps with new maps, backports, and more visual options.",
+   "description_html": "<p>An extension for <strong>DynamicMaps</strong> that adds support for additional and backported maps, high-resolution map artwork, and switching between <strong>Abstract</strong> and <strong>Satellite</strong> styles.</p>\n<h3>Features</h3>\n<ul>\n<li>Factory Classic support</li>\n<li>Icebreaker support</li>\n<li>Manimal Interchange support</li>\n<li>Manimal Labs support</li>\n<li>Abstract / Satellite artwork selection</li>\n<li>Per-map style overrides</li>\n<li>Change map artwork during a raid</li>\n<li>Automatic per-floor artwork fallback</li>\n<li>Built-in map artwork downloader</li>\n<li>High-resolution map tiles</li>\n<li>Persistent downloaded map cache</li>\n<li>Automatic migration of existing downloaded maps where possible</li>\n<li>Keeps DynamicMaps player tracking, quests, extracts, floors, minimap and markers intact</li>\n<li>Fika Headless safety protection</li>\n</ul>\n<h3>Requirements</h3>\n<ul>\n<li>DynamicMaps</li>\n<li>MapVariants</li>\n</ul>\n<p>The related backport/map mods are only required for the maps you want to use.</p>\n<h3>Limitations / Notes</h3>\n<p>Not every map or floor has both <strong>Abstract</strong> and <strong>Satellite</strong> versions available.</p>\n<p>If the selected style is unavailable, DynamicMaps Extended automatically uses the artwork that is available. This means some maps may use a mix of <strong>Satellite</strong> and <strong>Abstract</strong> floors.</p>\n<p>extract the archive into your <strong>SPT folder</strong>.</p>\n<p>The mod will be installed to:</p>\n<p><code>BepInEx\\plugins\\DynamicMaps-Extended\\</code></p>\n<hr />\n<h3>Support / Donations</h3>\n<p>If you\u2019d like to support my work, you can <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/its_blackhawk\" rel=\"noreferrer noopener\">buy me a coffee</a> \u2615</p>\n<p><strong>Solana (SOL)</strong><br />\n<code>RtkZyhpCD7rAmcsocf3RWPizCCzEdGNuUAX7sBcD1pF</code></p>\n<p><strong>Bitcoin (BTC)</strong><br />\n<code>bc1qj983ved6kp4uz6r6t285j0r5tyf5h6jph9eajl</code></p>\n<p><strong>Ethereum (ETH)</strong><br />\n<code>0xEaA910a5A779C85Fb9F07CA22bd2d2847a5969A5</code></p>\n<p>Please double-check the address and network before sending.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/J42WOGbdAUES6c1f9NZW8KqVkzqByjkGC8I4rnmI.png",
    "forge_url": "https://sp-mod.com/mod/3097/dynamicmaps-extended",
-   "downloads": 1452,
-   "favourites": 29,
+   "downloads": 1874,
+   "favourites": 33,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -210530,7 +210575,7 @@
    },
    "authors": [
     {
-     "id": "85915-arch",
+     "id": 85915,
      "name": "BLACK HAWK",
      "avatar": "https://files.sp-mod.com/profile-photos/nhL30RWS9AcT5J4gcosWsoKk6dZ8UaPTQxtQYYU3_256w.webp"
     }
@@ -210543,12 +210588,39 @@
    ],
    "versions": [
     {
-     "id": 15746,
-     "version": "1.0.0",
-     "description": "<p>Initial release</p>\n",
+     "id": 15798,
+     "version": "2.0.0",
+     "description": "<h1>DynamicMaps Extended v2.0.0</h1>\n<p>A major update focused on <strong>higher-quality maps, easier installation, automatic artwork handling, and stability fixes</strong>.</p>\n<h2>\u2728 What\u2019s New</h2>\n<ul>\n<li>Added a <strong>built-in map downloader</strong></li>\n<li>Added <strong>high-resolution map tiles</strong></li>\n<li>Added support for <strong>Satellite map artwork</strong></li>\n<li>Improved <strong>Abstract / Satellite / Vanilla map handling</strong></li>\n<li>Added a <strong>persistent map cache</strong></li>\n<li>Existing downloaded maps can now be <strong>migrated automatically</strong></li>\n<li>Improved map sharpening and high-resolution loading while zooming</li>\n<li>Added a <strong>Fika Headless safety guard</strong></li>\n</ul>\n<h2>\ud83d\udee0 Fixes</h2>\n<ul>\n<li>Fixed <strong>Icebreaker left-side slider</strong> issues</li>\n<li>Fixed several map artwork / variant selection problems</li>\n<li>Fixed map tile <strong>seams</strong></li>\n<li>Improved cache stability and migration</li>\n<li>Improved handling of maps with different available artwork types</li>\n<li>General stability and compatibility improvements</li>\n</ul>\n<h2>\u26a0\ufe0f Installation \u2014 CLEAN INSTALL REQUIRED</h2>\n<blockquote>\n<p>[!IMPORTANT]\n<strong>A clean installation is REQUIRED for v2.0.0.</strong></p>\n<p>Before installing this version, <strong>DELETE the old DynamicMaps Extended folder completely:</strong></p>\n<p><code>BepInEx\\plugins\\DynamicMaps-Extended</code></p>\n<p><strong>Do NOT install v2.0.0 over the old version.</strong></p>\n<p>Leaving files from an older version may cause broken maps, incorrect variants, UI issues, or other unexpected behavior.</p>\n</blockquote>\n<p>After removing the old folder, extract the new release into your <strong>SPT 4.1.x</strong> installation folder.</p>\n<h2>\u26a0\ufe0f Fika Headless</h2>\n<p>Do <strong>not</strong> install the client plugin on a Fika Headless server.</p>\n<p>The mod includes protection against accidental Headless loading, but the client-side files should remain on the game player client.</p>\n",
      "spt_constraint": ">=4.1.6",
      "fika": "compatible",
-     "downloads": 1452,
+     "downloads": 188,
+     "size": 3784575,
+     "link": "https://sp-mod.com/mod/download/3097/dynamicmaps-extended/2.0.0",
+     "published_at": "2026-10-06T04:30:00.000000Z",
+     "dependencies": [
+      {
+       "id": 1431,
+       "name": "Dynamic Maps",
+       "slug": "dynamic-maps",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/1431/dynamic-maps"
+      },
+      {
+       "id": 3040,
+       "name": "Map Variants",
+       "slug": "map-variants",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/3040/map-variants"
+      }
+     ]
+    },
+    {
+     "id": 15746,
+     "version": "1.0.0",
+     "description": "<p>Initial release (broken)</p>\n",
+     "spt_constraint": ">=4.1.6",
+     "fika": "compatible",
+     "downloads": 1686,
      "size": 62937575,
      "link": "https://sp-mod.com/mod/download/3097/dynamicmaps-extended/1.0.0",
      "published_at": "2026-10-02T22:00:00.000000Z",
@@ -210570,7 +210642,7 @@
      ]
     }
    ],
-   "latest_version": "1.0.0",
+   "latest_version": "2.0.0",
    "spt_constraint": ">=4.1.6",
    "all_spt_constraints": [
     ">=4.1.6"
@@ -210607,8 +210679,8 @@
      "url": "https://sp-mod.com/mod/3040/map-variants"
     }
    ],
-   "published_at": "2026-10-02T22:06:00.000000Z",
-   "updated_at": "2026-10-04T00:27:40.000000Z",
+   "published_at": "2026-10-06T04:05:00.000000Z",
+   "updated_at": "2026-10-06T04:42:09.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -210617,7 +210689,7 @@
     "profile_binding_notice": false
    },
    "origin": "forge",
-   "delisted": true
+   "delisted": false
   },
   {
    "id": 3098,
@@ -211534,6 +211606,100 @@
    "delisted": false
   },
   {
+   "id": 3113,
+   "hub_id": null,
+   "guid": "com.sage.incendiarygrenade",
+   "name": "Sage's Incendiary Grenade",
+   "slug": "sages-incendiary-grenade",
+   "teaser": "Introducing \"Incendiary Grenade\"",
+   "description_html": "<h1>Incendiary Grenade</h1>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/tinG7oe.gif\" alt=\"gif\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/Fs2RPzN.png\" alt=\"embed\" /></p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Information</div>\n<div class=\"tab-content\"><p><strong>The Grenade</strong></p>\n<ul>\n<li>A new item, the <strong>SAGA-6</strong>.</li>\n<li>Sold by <strong>Prapor at Loyalty Level 2</strong></li>\n<li>It\u2019ll kill you if you\u2019re standing inside of the fire <strong>duh</strong></li>\n</ul></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Bug Reports</div>\n<div class=\"tab-content\"><ul>\n<li><em>Those goes to \u201cIssues\u201d</em></li>\n</ul></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Does it work?</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://media1.tenor.com/m/rkI1a8s2Z6QAAAAd/todd-howard-it-just-works.gif\" alt=\"gif\" /></p></div></div></div>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/RLIPNU6CR6s1s5lpO5hfJQr5iJx6amD0fXF8hZbF.png",
+   "forge_url": "https://sp-mod.com/mod/3113/sages-incendiary-grenade",
+   "downloads": 195,
+   "favourites": 2,
+   "featured": false,
+   "fika": false,
+   "fika_latest": "unknown",
+   "category": {
+    "id": 13,
+    "title": "Weapons",
+    "slug": "weapons"
+   },
+   "license": {
+    "name": "Creative Commons BY-NC-ND 4.0",
+    "link": "https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode"
+   },
+   "authors": [
+    {
+     "id": 116307,
+     "name": "Sage",
+     "avatar": "https://files.sp-mod.com/profile-photos/YiBIxvVDFwjvzFCuCsXgvpSMpLw0iwJdHmwd2eez_256w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/SageSPT/Incendiary-Grenade",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 15795,
+     "version": "1.0.0",
+     "description": "<p>v1.0.0</p>\n",
+     "spt_constraint": "4.1.*",
+     "fika": "unknown",
+     "downloads": 195,
+     "size": 19513973,
+     "link": "https://sp-mod.com/mod/download/3113/sages-incendiary-grenade/1.0.0",
+     "published_at": "2026-10-05T22:16:24.000000Z",
+     "dependencies": [
+      {
+       "id": 902,
+       "name": "BigBrain",
+       "slug": "bigbrain",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/902/bigbrain"
+      }
+     ]
+    }
+   ],
+   "latest_version": "1.0.0",
+   "spt_constraint": "4.1.*",
+   "all_spt_constraints": [
+    "4.1.*"
+   ],
+   "dependencies": [
+    {
+     "id": 902,
+     "name": "BigBrain",
+     "slug": "bigbrain",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/902/bigbrain"
+    }
+   ],
+   "all_dependencies": [
+    {
+     "id": 902,
+     "name": "BigBrain",
+     "slug": "bigbrain",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/902/bigbrain"
+    }
+   ],
+   "published_at": "2026-10-05T22:16:22.000000Z",
+   "updated_at": "2026-10-05T22:17:10.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
+    "cheat_notice": false,
+    "profile_binding_notice": true
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
    "id": 3114,
    "hub_id": null,
    "guid": "com.ell1psis.zerotoherounheard",
@@ -211559,7 +211725,7 @@
    },
    "authors": [
     {
-     "id": 125863,
+     "id": "125863-arch",
      "name": ".ell1psis",
      "avatar": "https://files.sp-mod.com/profile-photos/u0x1djMIq4TKdF8ygT1ghaFFvExiKVJuDuvIZD9P_128w.webp"
     }
@@ -211593,6 +211759,81 @@
    "all_dependencies": [],
    "published_at": "2026-10-05T16:30:00.000000Z",
    "updated_at": "2026-10-05T22:01:04.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge",
+   "delisted": true
+  },
+  {
+   "id": 3115,
+   "hub_id": null,
+   "guid": "com.ell1psis.zerotoherounheard",
+   "name": "Zero to Hero + Unheard Edition",
+   "slug": "zero-to-hero-unheard-edition",
+   "teaser": "Zero to Hero",
+   "description_html": "<p>*** Zero to Hero Unheard Edition brought up to 4.1.6 from <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1677/zero2hero-unheard-edition\" rel=\"noreferrer noopener\">https://sp-mod.com/mod/1677/zero2hero-unheard-edition</a> *****</p>\n<p>****Original Credit goes to TheDevilsrevenge for the original files ******</p>\n",
+   "thumbnail": "",
+   "forge_url": "https://sp-mod.com/mod/3115/zero-to-hero-unheard-edition",
+   "downloads": 24,
+   "favourites": 1,
+   "featured": false,
+   "fika": false,
+   "fika_latest": "unknown",
+   "category": {
+    "id": 17,
+    "title": "Other",
+    "slug": "other"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 125863,
+     "name": ".ell1psis",
+     "avatar": "https://files.sp-mod.com/profile-photos/u0x1djMIq4TKdF8ygT1ghaFFvExiKVJuDuvIZD9P_128w.webp"
+    },
+    {
+     "id": 52761,
+     "name": "TheDevilsrevenge",
+     "avatar": "https://files.sp-mod.com/profile-photos/dsVMMTDYApczZYpqBr14d5o7518YLJ1rZ6O6auB3_128w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://drive.google.com/uc?export=download&id=1QLfhk2QHdAswM1uh25ViK2IO0tZzVUtF",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 15799,
+     "version": "4.1.6",
+     "description": "<p>This Version is brought up to 4.1.6 from <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1677/zero2hero-unheard-edition\" rel=\"noreferrer noopener\">https://sp-mod.com/mod/1677/zero2hero-unheard-edition</a> which was on 4.0.3.</p>\n",
+     "spt_constraint": "4.1.6",
+     "fika": "unknown",
+     "downloads": 24,
+     "size": 9268,
+     "link": "https://sp-mod.com/mod/download/3115/zero-to-hero-unheard-edition/4.1.6",
+     "published_at": "2026-10-06T04:08:00.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "4.1.6",
+   "spt_constraint": "4.1.6",
+   "all_spt_constraints": [
+    "4.1.6"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-10-06T04:08:58.000000Z",
+   "updated_at": "2026-10-06T04:53:34.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
