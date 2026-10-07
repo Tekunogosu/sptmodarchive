@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-10-07T06:10:10Z",
+ "generated_at": "2026-10-07T13:35:38Z",
  "source": "https://sp-mod.com",
  "filter": "all",
- "mod_count": 2039,
+ "mod_count": 2042,
  "categories": [
   {
    "id": 12,
@@ -195425,8 +195425,8 @@
    "description_html": "<p><strong>TCF Mod Manager</strong> is a Windows desktop app for finding, installing and keeping track of your SPT mods, built directly against the sp-mod catalog you\u2019re reading this on. Browse the full mod list, filter it down to what actually works on your SPT version, install with dependencies resolved for you, turn mods on and off without deleting anything, and see at a glance what\u2019s out of date.</p>\n<p>It also keeps <strong>mod lists</strong> - save the set you run, switch between sets, send one to a friend, or follow the list a server publishes and know what you are missing before you launch. Plus a config editor, a start button for the server and the launcher, and an optional page that reads what each installed mod actually ships.</p>\n<h2>The full guide is on the wiki</h2>\n<p><strong><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/TheCrimsonFckr/TCFModManager/wiki\" rel=\"noreferrer noopener\">github.com/TheCrimsonFckr/TCFModManager/wiki</a></strong> - every page of the app, mod lists, configs, Monitor mode, update notifications, the Server Map, limitations and troubleshooting. This page only covers getting it installed.</p>\n<p>Inside the app, the <strong>Help</strong> page in the sidebar has short step-by-step answers for every page, in your language. Press <strong>?</strong> in the title bar or <strong>F1</strong> to open it at the page you\u2019re on, and <strong>Open the full guide</strong> takes you to the wiki.</p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Install</div>\n<div class=\"tab-content\"><p><strong>You need</strong></p>\n<ul>\n<li>Windows</li>\n<li>An SPT install</li>\n</ul>\n<p>The released build is entirely self-contained - nothing else to install.</p>\n<p><strong>Steps</strong></p>\n<ol>\n<li>Download <code>TCF-ModManager-&lt;version&gt;.zip</code> from this page.</li>\n<li>Extract it into your SPT folder as <code>&lt;SPT root&gt;\\TCFModManager\\</code> - a sibling of <code>BepInEx\\</code> and <code>user\\</code>.</li>\n<li>Run <code>TCFModManager.exe</code>.</li>\n<li>Open <strong>Options</strong>, point it at your SPT install folder - the top one, with <code>EscapeFromTarkov.exe</code> and <code>BepInEx\\</code> in it - and hit Save. The detected server version appears underneath - everything else keys off that.</li>\n</ol>\n<h4>warning</h4>\n<p>This is <strong>not</strong> a mod. Don\u2019t extract it into <code>BepInEx\\plugins</code> or <code>user\\mods</code>. It\u2019s a standalone application that manages that folder for you. Anywhere on disk works, really - it just needs to be told where SPT lives. Keep it out of <code>Program Files</code>, where Windows won\u2019t let it update itself.</p>\n<h4>If the SPT version doesn\u2019t detect</h4>\n<p>The version is read from the server executable - <code>SPT.Server.exe</code>, or the older <code>Aki.Server.exe</code> - at the install root or under <code>SPT\\</code> / <code>SPT_Runtime\\</code>. Point Options at the install root, the folder with <code>EscapeFromTarkov.exe</code> in it, not at the server folder or any other subfolder. If you do pick <code>SPT\\</code> or <code>SPT_Runtime\\</code> itself, the app moves the setting up to the folder above it.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Updating</div>\n<div class=\"tab-content\"><p>Once it\u2019s set up, the app keeps itself up to date from this page. On launch it checks for a newer release and shows a banner and a badge on <strong>App update</strong> in the sidebar; you\u2019re asked to open this page before anything is downloaded. Your settings, install history and kept configs survive an update.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Planning</div>\n<div class=\"tab-content\"><p>Coming next, in no particular order - the <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/TheCrimsonFckr/TCFModManager/wiki/Planning\" rel=\"noreferrer noopener\">Planning page</a> on the wiki has the full list, including everything already done.</p>\n<ul>\n<li>Never left half-installed - an install that is interrupted is finished or undone the next time the app runs - <em>Planned</em></li>\n<li>Profile backups - your SPT profiles are backed up before any install, update, remove or list apply - <em>Planned</em></li>\n<li>Held-back updates - an update that would break another mod is flagged and left out of updating everything - <em>Planned</em></li>\n<li>Fika warnings - a version not marked for Fika on a Fika install, and a remove that may change your profile - <em>Planned</em></li>\n<li>Faster downloads - up to three at once, with retry and resume - <em>Planned</em></li>\n<li>Diagnose logs - reads the server, BepInEx and game logs, names the mod at fault, and builds a report with private details taken out - <em>Planned</em></li>\n<li>SPT upgrade check - pick a newer SPT and see which of your mods are ready for it - <em>Planned</em></li>\n<li>Mod tools - launch the programs a mod ships from the Play page - <em>Planned</em></li>\n<li>Server without its window - the server log live on the Play page, and the server closed along with the game - <em>Planned</em></li>\n<li>Direct launch - start the game from the Play page without SPT\u2019s launcher (experimental, off by default) - <em>Planned</em></li>\n<li>Mod descriptions shown in full - tabs, tables and GIFs as sp-mod shows them - <em>Planned</em></li>\n<li>Filter by date, and search mod descriptions as well as titles - <em>Planned</em></li>\n<li>Select several mods on Installed and update, enable, disable or remove them together - <em>Planned</em></li>\n<li>An Update button on each card - <em>Planned</em></li>\n<li>A Versions tab with Switch to this version - <em>Planned</em></li>\n<li>Author pages, and following an author - <em>Planned</em></li>\n<li>A right-click menu on every mod - <em>Planned</em></li>\n<li>Quick view - hover a mod for a preview - <em>Planned</em></li>\n<li>A downloads bar - <em>Planned</em></li>\n<li>Page size options, including endless scrolling - <em>Planned</em></li>\n<li>Mod comments in the app - <em>Planned</em></li>\n</ul></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Reporting a problem</div>\n<div class=\"tab-content\"><p>Use the <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2945/tcf-mod-manager#issues\" rel=\"noreferrer noopener\">Issues tab</a> - bugs, wording, translations, feature requests or questions. Attach <code>Data\\logs\\tcfmm-&lt;date&gt;.log</code>, ideally after adding the <code>verbose</code> marker file and reproducing the problem. The <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/TheCrimsonFckr/TCFModManager/wiki/Troubleshooting\" rel=\"noreferrer noopener\">wiki</a> covers the common ones first.</p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Disclaimer</div>\n<div class=\"tab-content\"><p>I use AI to help write this mod, everything is initially written by myself (I\u2019m a developer by profession), then passed though Claude (Fable model) for refinements and to highlight any additional changes the LLM thinks are worth making. Absolutely everything is reviewed and tested by myself before I commit anything. This is done because I simply do not have enough time in day to make full refinements and multiple passes myself. If you are not comfortable using an application that uses AI as a tool then please do not download it.</p></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/0qEVyA4TX4PiPAZFcbH1Rt4jBzJCscp8CL6xOztx.png",
    "forge_url": "https://sp-mod.com/mod/2945/tcf-mod-manager",
-   "downloads": 6086,
-   "favourites": 38,
+   "downloads": 6369,
+   "favourites": 41,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -195454,12 +195454,24 @@
    ],
    "versions": [
     {
+     "id": 15817,
+     "version": "1.21.0-beta",
+     "description": "<p>Safer installs and updates - interrupted installs are tracked, SPT profiles are backed up, updates that would break another mod are withheld, Fika and profile warnings - plus multiple downloads at once and a downloads bar. On Installed, pick several mods at once in any view, update a mod from its card and right-click any mod; Installed and Browse get a new filters panel with filter pills, and disabled mods you can read. Mod descriptions shown in full, date filters, author pages you can follow, and an SPT upgrade check.</p>\n<div class=\"tabset\"><div id=\"tabset-9-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">New features</div>\n<div class=\"tab-content\"><h4>Profile backups.</h4>\n<p>Your SPT profiles are copied before the app installs, updates, removes, disables or enables mods, or applies a mod list - only when they have changed since the last copy. If a removed mod leaves a profile that won\u2019t load, <strong>Options, SPT profile backups</strong> puts an earlier copy back. The last 10 are kept, and <strong>Back up now</strong> takes one any time.</p>\n<h4>Withhold updates.</h4>\n<p>An update that would break another installed mod is no longer offered. CommonLib 3.0.6, say, while Black and Blue needs a 2.0.x. The card says what it would break, and the update filter, <strong>Update selected</strong> and notifications leave it out. If an older release that works with everything is still newer than yours, that one is offered instead.</p>\n<h4>Fika and profile warnings.</h4>\n<p>On an install that runs Fika, a version sp-mod marks as not working with Fika is asked about before it downloads. Removing a mod that sp-mod says may permanently change your profile now warns you first.</p>\n<h4>Downloads bar.</h4>\n<p>While anything is downloading or installing, a bar along the bottom of the window shows what and how far the queue has got. Click it to open Downloads. It goes away a few seconds after the queue finishes.</p>\n<h4>Update from the card.</h4>\n<p>A mod with an update has an Update button on its card and its List row - one click queues it.</p>\n<h4>Right-click menu.</h4>\n<p>Every mod has one with its card\u2019s own actions: details and versions, update, enable or disable, pin, its folders, its sp-mod page, and remove. On one of several ticked mods it acts on all of them.</p>\n<h4>Filter pills.</h4>\n<p>Every filter narrowing the list shows as a pill above the results - \u201cCategory: Bots\u201d, \u201cShow only: Has addons\u201d. Its X drops just that filter; Clear filters drops them all, putting every filter and view option back to the app\u2019s own settings even if you\u2019ve saved defaults for the page. <strong>Restore my defaults</strong>, beside it in the panel, puts back what you saved with Save as default instead. A changed SPT version gets a pill too.</p>\n<h4>Full mod descriptions.</h4>\n<p>A mod\u2019s details now show its whole description as sp-mod lays it out - tabs, tables, pictures and playing GIFs - instead of just the one-line teaser. Changelogs get the same treatment. Links, pictures and videos open in your browser. The details window stays one size whichever mod you open.</p>\n<h4>Date filters and search scope.</h4>\n<p>Browse\u2019s filters panel has <strong>Published</strong> and <strong>Updated</strong> - any time, the last 7, 30 or 90 days, the last year, or your own dates - and <strong>Search in</strong>: title and teaser, or title only. Each shows as a pill like the other filters.</p>\n<h4>Author pages.</h4>\n<p>Click an author\u2019s name anywhere - a Browse card, Installed, a mod\u2019s details - for their page: all their mods and addons, newest first, with the ones you have marked. <strong>Follow</strong> them there or from the right-click menu on Installed, and their new mods come with your update notifications. Browse can show only <strong>By authors you follow</strong>, and <strong>Options - Authors you follow</strong> lists everyone with Unfollow.</p>\n<h4>SPT upgrade check.</h4>\n<p>The Dependencies page has <strong>Moving to a newer SPT</strong> at the top: pick a release and every installed mod is listed as ready, update first, not ready yet, or check by hand - before you change anything.</p></div></div>\n<div id=\"tabset-9-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Adjusted features</div>\n<div class=\"tab-content\"><h4>Faster downloads.</h4>\n<p>Up to three mods now download at once while the ones already downloaded install, one at a time and in order - a mod list no longer waits for each install before starting the next download. A download that breaks off is tried again and carries on from where it stopped.</p>\n<h4>Select several mods.</h4>\n<p>Ctrl-click, Shift-click and Ctrl+A now pick mods in Cards, Groups and List alike, and switch Multi select on; Esc clears it. Ticked mods carry an accent edge, and the bar above the list updates, enables, disables or - new - removes them all. <strong>Remove selected</strong> asks once for the lot and keeps their config files.</p>\n<h4>Installed keeps up.</h4>\n<p>When a queued install or update finishes, Installed rescans by itself - once the run of a mod and its dependencies has finished - so it shows what you now have without pressing Rescan. Mods you\u2019d ticked stay ticked.</p>\n<h4>Filters and view options.</h4>\n<p>Installed and Browse have a <strong>Filters and view options</strong> panel down the left, opened from the button by the search box - it shows how many filters are set - and closed with its X or the button again. Each filter is a section you open like a group, with every choice listed. On a wide window the panel takes its own column and the mods slide over; on a narrow one it lies over them. Every section starts closed. Installed\u2019s update status and enabled filters, Groups view\u2019s group order, and Browse\u2019s SPT version and sort live in there now too, leaving just the search box and Refresh cache in Browse\u2019s top row.</p>\n<h4>Disabled mods you can read.</h4>\n<p>Disabled mods are no longer faded out. A red <strong>DISABLED</strong> tag marks them instead, in Cards, Groups and List alike.</p>\n<h4>Help for the new features.</h4>\n<p>Help has new topics for the filters panel and pills, date filters and search scope, following authors, full descriptions and the SPT upgrade check.</p></div></div>\n<div id=\"tabset-9-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Fixes</div>\n<div class=\"tab-content\"><h4>Half-installed mod fixes.</h4>\n<p>If the app is closed or the PC loses power part way through an install or update, the mod is shown as partly installed the next time the app runs, so a reinstall puts it right. Before, the files that had landed could be left with nothing tracking them.</p>\n<h4>Duplicate SPT versions.</h4>\n<p>sp-mod\u2019s list of SPT releases currently carries 4.1.6 twice, so it showed twice wherever the app lists SPT versions. Each version is now listed once.</p></div></div></div>\n<p>Drop-in over v1.20.0-beta. The Server Map mod does not need updating.</p>\n",
+     "spt_constraint": ">=4.0.13",
+     "fika": "compatible",
+     "downloads": 64,
+     "size": 68839261,
+     "link": "https://sp-mod.com/mod/download/2945/tcf-mod-manager/1.21.0-beta",
+     "published_at": "2026-10-07T08:53:19.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 15792,
      "version": "1.20.0-beta",
      "description": "<p>Import Mod Lists straight from sp-mod, a Stop button for the server, smoother page changes, and a batch of install and update fixes.</p>\n<h3>Import from sp-mod.</h3>\n<p>Mod lists, paste the address of any Mod List on sp-mod and see everything on it before it\u2019s saved: its mods and addons, parent mods an addon is missing, and dependencies the list doesn\u2019t name. Problems are grouped into sections you can search, sort and fold. A list made for another SPT can be moved to the versions for yours with one switch, and <strong>Refresh from sp-mod</strong> picks up later changes. Built on brunolz13\u2019s TCF File Generator - thank you.</p>\n<h3>Mod lists.</h3>\n<p>Preview and Apply are now one button that steps from one to the other. Every list shows its mods as cards with thumbnail, author, downloads and SPT version. An imported list learns which machines each mod is for from its files the first time it\u2019s applied, and says \u201cNot checked yet\u201d until then.</p>\n<h3>Stop the server.</h3>\n<p>The Play page has a Stop button beside Restart. It asks first and only touches this install\u2019s server.</p>\n<h3>Credits.</h3>\n<p>A Credits window, opened from Options and Help, lists everyone who has contributed. Thanks to WUVGAWORE for finding the woods through the tree and a lot of the fixes below.</p>\n<h3>Smoother pages.</h3>\n<p>Installed and Mod footprint no longer rescan in the middle of the slide-in, and only rescan when the install has changed. Long lists are built a few rows at a time instead of freezing the window, Installed cards fade in as a full page, Browse is ready when its loading screen lifts, and Mod footprint keeps its sort and open rows.</p>\n<h3>Fixes</h3>\n<ul>\n<li>An update no longer replaces your tuned BepInEx settings (<code>BepInEx\\config</code>) with the mod\u2019s defaults.</li>\n<li>Empty folders a mod ships are created - SVM\u2019s Greed no longer says \u201ccouldn\u2019t find Preset folder\u201d.</li>\n<li>Server patchers in <code>user\\patchers</code> are installed, updated, disabled and removed with their mod (Skills Extended).</li>\n<li>Read-me files, licences and pictures at the top of an archive no longer land in your SPT folder, and archives with <code>plugins\\</code> but no <code>BepInEx\\</code> folder install correctly.</li>\n<li>1.2.0-beta to 1.2.0 now counts as an update, and so do -hotfix, -fix and -patch releases.</li>\n<li>A mod list entry with no version gets the newest release for your SPT, not the first one sp-mod lists.</li>\n<li>Required mods are offered again after you remove them and reinstall the mod that needs them.</li>\n<li>A dependency installed past the version that fits now shows as too new.</li>\n<li>Install dates show when the app last installed or updated the mod, not the folder\u2019s date.</li>\n<li>Another SPT install\u2019s server running no longer makes this one\u2019s Play page think it\u2019s running.</li>\n<li>A failed catalog load is retried instead of leaving pages empty, and offline with no saved catalog Installed still lists your mods.</li>\n<li>A setting whose type changed in an update isn\u2019t carried over, and <code>.json5</code> configs save in the editor.</li>\n<li>\u201cHide mods with AI content\u201d is gone - sp-mod no longer provides it, so it never hid anything.</li>\n<li>Failed downloads and installs are written to the log.</li>\n</ul>\n<p>Drop-in over v1.19.1-beta. The Server Map mod does not need updating.</p>\n",
      "spt_constraint": "~4.",
      "fika": "compatible",
-     "downloads": 26,
+     "downloads": 242,
      "size": 66482577,
      "link": "https://sp-mod.com/mod/download/2945/tcf-mod-manager/1.20.0-beta",
      "published_at": "2026-10-05T20:37:31.000000Z",
@@ -195471,7 +195483,7 @@
      "description": "<p>A fix for installing with the app in the SPT folder itself, and a small change to the Installed page.</p>\n<p><strong>Installs work again with the app in the SPT root.</strong> If you run TCFModManager.exe straight from your SPT folder rather than its own TCFModManager folder, v1.19.0-beta refused every file of every mod as belonging to SPT, BepInEx or the game, so nothing was installed, updated or removed. Nothing was deleted. Only the app\u2019s own exe and its Data, Staging and update folders are now off limits there.</p>\n<p><strong>An install that places nothing now fails.</strong> When every file in a mod would replace SPT\u2019s, BepInEx\u2019s, the game\u2019s or the app\u2019s own, the install stops with a message and leaves everything as it was, instead of showing Completed. Before, an update like that also lost track of the version already installed.</p>\n<p><strong>Sort by install date again.</strong> <strong>Sort by</strong> has <strong>Last installed (newest)</strong> and <strong>Last installed (oldest)</strong> back, alongside the A-Z options.</p>\n<p><strong>Installed in the last 7 days is now under Show.</strong> It has moved out of the update status dropdown and is a tick box with the other filters, so you can combine it with an update status and any sort.</p>\n<p>A page default saved with the old option opens the same way it did.</p>\n<p>Drop-in over v1.19.0-beta. The Server Map mod does not need updating.</p>\n",
      "spt_constraint": "~4.",
      "fika": "compatible",
-     "downloads": 344,
+     "downloads": 346,
      "size": 68167312,
      "link": "https://sp-mod.com/mod/download/2945/tcf-mod-manager/1.19.1-beta",
      "published_at": "2026-10-03T14:57:10.000000Z",
@@ -195483,7 +195495,7 @@
      "description": "<h3>This release is about resilience.</h3>\n<p><strong>Removing a mod can be undone.</strong> Remove no longer deletes anything straight away. The mod is kept in a hidden folder in your SPT install, and <strong>Undo</strong> on the Installed page puts it back.</p>\n<p><strong>Removing only takes what is the mod\u2019s.</strong> Your edits, files another mod uses, and SPT\u2019s, BepInEx\u2019s and the game\u2019s own files are left where they are, and the result says so.</p>\n<p><strong>Installing never replaces what it shouldn\u2019t</strong>, and a file a mod replaces that you put there yourself is kept and put back when the mod is removed.</p>\n<p><strong>Conflicts are found for you.</strong> The Dependencies page is now <strong>Dependencies and Conflicts</strong>, and lists mods that will clash when the game loads.</p>\n<p><strong>Fixed: some RAR archives wouldn\u2019t install.</strong></p>\n<p>Mods installed before this version are fully protected after their next update or reinstall.</p>\n<div class=\"tabset\"><div id=\"tabset-8-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Removing and Undo</div>\n<div class=\"tab-content\"><ul>\n<li><strong>Nothing is deleted straight away.</strong> A removed mod\u2019s files move to <code>.tcfmm-removed\\</code> inside your SPT install. Updating a mod keeps the previous version there too.</li>\n<li><strong>Undo</strong> appears on the Installed page while a removal is kept. With several kept, it lists them - <em>PityLoot - removed 01/10/2026 17:36</em> - so you can pick which comes back, in any order.</li>\n<li><strong>Undo never overwrites.</strong> If something has taken a file\u2019s place since, that file stays kept and the result says where.</li>\n<li><strong>Options - Keep removed mods</strong> sets how long: delete straight away, 1, 7, <strong>14 (default)</strong> or 30 days, or until you clear them. <strong>Clear removed mods</strong> shows how much space they take and frees it now. Old ones are cleared when the app starts.</li>\n<li>The removal confirmation says how long the files will be kept, and mods you installed by hand are moved whole, the same way.</li>\n</ul></div></div>\n<div id=\"tabset-8-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">What Remove leaves alone</div>\n<div class=\"tab-content\"><p>A removal now checks every file before it touches it, and leaves:</p>\n<ul>\n<li><strong>a file you changed</strong> since it was installed</li>\n<li><strong>a file another installed mod also uses</strong> - if two mods ship the same file, removing either leaves it for the other</li>\n<li><strong>SPT\u2019s, BepInEx\u2019s and the game\u2019s own files</strong>, and anything outside the mod</li>\n<li><strong>a mod folder holding files the mod didn\u2019t install</strong>, such as a note you added. The result says so, and the leftover\u2019s card is marked <em>Left behind when  was removed</em>.</li>\n</ul>\n<p>Files the mod replaced when it went in are <strong>put back</strong>. The result line lists each of these with a count.</p>\n<p>A mod recorded in a different SPT install is refused, and a mod recorded before this version names the install it will be removed from before you confirm.</p></div></div>\n<div id=\"tabset-8-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Installing</div>\n<div class=\"tab-content\"><ul>\n<li><strong>SPT\u2019s, BepInEx\u2019s and the game\u2019s own files are never replaced.</strong> An archive that carries them has them left out, and the Downloads line says how many, with the files in its tooltip.</li>\n<li><strong>New files only</strong> in the game\u2019s <code>EscapeFromTarkov_Data\\Managed</code> folder and loose in the install folder. Mods like Dynamic Maps and SVM still install their files there, but never over one that\u2019s already there.</li>\n<li><strong>A file you put there yourself</strong> that a mod replaces is kept first and put back if the mod is removed. If it can\u2019t be kept, the install stops before anything changes.</li>\n<li><strong>Links are refused.</strong> An install that would write through a linked folder, or an archive that contains a link, stops instead.</li>\n</ul></div></div>\n<div id=\"tabset-8-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Records</div>\n<div class=\"tab-content\"><ul>\n<li><strong>Every file the app keeps is saved whole or not at all.</strong> An interrupted save can\u2019t leave a half-written install list, settings or mod list.</li>\n<li><strong>A damaged file is set aside</strong> as <code>&lt;name&gt;.damaged-&lt;time&gt;</code> instead of being replaced by an empty one, and the last five good copies of each are kept in <code>Data\\backups\\</code>.</li>\n<li>Install records now remember each file\u2019s fingerprint and which SPT install they belong to, which is what lets Remove tell your edits from the mod\u2019s own files.</li>\n</ul></div></div>\n<div id=\"tabset-8-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Conflicts</div>\n<div class=\"tab-content\"><p>The <strong>Dependencies and Conflicts</strong> page now opens on a <strong>Conflicts</strong> section. It works from your install alone, offline and for hand-installed mods, and checks again every time you open it.</p>\n<ul>\n<li><strong>The same plugin installed twice</strong> - two folders registering one plugin. BepInEx loads only one, and you don\u2019t choose which.</li>\n<li><strong>The same server mod installed twice</strong> - SPT skips a server mod it finds twice, so <strong>neither copy loads</strong>.</li>\n<li><strong>Different copies of one file</strong> - two mods each shipping a different copy of a library. Only one copy loads. Identical copies aren\u2019t listed.</li>\n</ul>\n<p>Each conflict names every mod involved, with its folder and a button to open it. For a mod installed twice, <strong>Keep this one</strong> removes the other copies - both the client and server halves of a mod in one go - and <strong>Undo</strong> on the Installed page puts them back. It isn\u2019t offered when removing a copy would also take files that aren\u2019t duplicated; Remove on the Installed page handles that case.</p>\n<p>On the Installed page those mods show a red status, <strong>Show - Has conflicts</strong> lists just them, and the status line says how many there are, with a link to the page. The Play page warns as well, but never stops you launching.</p></div></div>\n<div id=\"tabset-8-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Smaller changes</div>\n<div class=\"tab-content\"><ul>\n<li><strong>Fixed: mods built for a newer SPT patch showed as compatible and installed without a word.</strong> A mod for SPT 4.1.6 counted as fine on 4.1.5, but SPT can\u2019t load a server mod built against a newer patch than yours. The patch number is now respected: a mod for 4.1.6 shows red on 4.1.5 and green on 4.1.6 or later, while one for the whole line (~4.1) stays green on every 4.1. Installing a version that doesn\u2019t support your SPT - from Browse, Update or a mod list - now asks first.</li>\n<li><strong>Fixed: removing a hand-made copy of a mod this app installed removed the original instead.</strong> The copy matched the same sp-mod listing and was treated as the installed one, so Remove - or Keep this one on the original - went by the original\u2019s install record. A copy now counts as installed by hand, and removing it takes only its own folders.</li>\n<li><strong>Help covers Dependencies and Conflicts</strong> - finding conflicts and what each kind means, Keep this one, and a new <em>A mod doesn\u2019t load</em> entry under Something\u2019s wrong.</li>\n<li><strong>Recently installed is now a filter.</strong> It has moved from the sort dropdown to the update status dropdown as <strong>Installed in the last 7 days</strong>, newest first.</li>\n<li><strong>Fixed: non-solid RAR archives, and tar archives, failed to install.</strong> They now extract.</li>\n<li><strong>Fixed: a <code>verbose</code> file next to the exe didn\u2019t turn on Debug logging.</strong> It now works there, as the guide says, as well as in <code>Data\\logs</code>.</li>\n</ul></div></div></div>\n",
      "spt_constraint": "~4.",
      "fika": "compatible",
-     "downloads": 185,
+     "downloads": 186,
      "size": 68164280,
      "link": "https://sp-mod.com/mod/download/2945/tcf-mod-manager/1.19.0-beta",
      "published_at": "2026-10-02T15:20:00.000000Z",
@@ -195802,9 +195814,10 @@
      "dependencies": []
     }
    ],
-   "latest_version": "1.20.0-beta",
-   "spt_constraint": "~4.",
+   "latest_version": "1.21.0-beta",
+   "spt_constraint": ">=4.0.13",
    "all_spt_constraints": [
+    ">=4.0.13",
     "~4",
     "~4.",
     "~4.1"
@@ -195812,7 +195825,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-08-21T16:52:00.000000Z",
-   "updated_at": "2026-10-05T20:42:03.000000Z",
+   "updated_at": "2026-10-07T08:54:04.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -212069,6 +212082,216 @@
     "ai_disclosure": "",
     "cheat_notice": false,
     "profile_binding_notice": false
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 3117,
+   "hub_id": null,
+   "guid": "com.tasowy.sptsilentspeed",
+   "name": "SPT Silent Speed",
+   "slug": "spt-silent-speed",
+   "teaser": "A simple mod for a new hotkey that sets your walking speed to the maximum silent limit, configurable in F12",
+   "description_html": "<p>A simple mod for a new hotkey that sets your walking speed to the maximum silent limit, configurable in F12</p>\n<h1>Why ?</h1>\n<p>If you are ratting like me but would like to walk in the \u201cmaximum\u201d silent walking speed and noticed how wonky the ingame mwheelup/down setting to get it exactly right, then this mods for you. Vanilla silent speed matching with mouse wheel is so shit you can see it yourself comparing going lower from the maximum speed and going higher from the minimum speed sets you at different silent limits.</p>\n<p>This mod also takes into account your \u201cCovert Movement\u201d skill bonuses so you always end up with the maximum silent walking speed. If your legs are broken/dead or you are proning, so to say you are unable to reach a silent movement level at your current situation, the button does nothing.</p>\n<h1>AI Disclaimer</h1>\n<p>This mod was FULLY vibecoded by AI, because DrakiaXYZ refused to add this simple request of mine to his own mod, and me not being a modmaker, so there we go. Also shoutout to him and a good mod of his : <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/994/set-speed-set-player-speed-with-hotkeys\" rel=\"noreferrer noopener\">https://sp-mod.com/mod/994/set-speed-set-player-speed-with-hotkeys</a></p>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/QMky0sKAfRquiuu6kNwJbEklXX3CnJgF9DjOlDtk.png",
+   "forge_url": "https://sp-mod.com/mod/3117/spt-silent-speed",
+   "downloads": 16,
+   "favourites": 0,
+   "featured": false,
+   "fika": false,
+   "fika_latest": "unknown",
+   "category": {
+    "id": 17,
+    "title": "Other",
+    "slug": "other"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 125998,
+     "name": "tasowy",
+     "avatar": "https://sp-mod.com/avatars/T.svg"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/tasowy/SPT_silent_speed",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 15816,
+     "version": "1.0.0",
+     "description": "<p>first version</p>\n",
+     "spt_constraint": "~4.1",
+     "fika": "unknown",
+     "downloads": 16,
+     "size": 3471,
+     "link": "https://sp-mod.com/mod/download/3117/spt-silent-speed/1.0.0",
+     "published_at": "2026-10-07T07:31:51.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "1.0.0",
+   "spt_constraint": "~4.1",
+   "all_spt_constraints": [
+    "~4.1"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-10-07T07:31:00.000000Z",
+   "updated_at": "2026-10-07T09:29:11.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 3118,
+   "hub_id": null,
+   "guid": "com.iieuphoria.shrapnelfix",
+   "name": "ShrapnelFix",
+   "slug": "shrapnelfix",
+   "teaser": "Grenade fragments now fly at body height. Deadly, configurable and FIKA-ready.",
+   "description_html": "<h2>ShrapnelFix \u2014 grenades that actually fragment</h2>\n<p>In vanilla, grenades are much weaker past a few metres than they should be. This mod changes how fragments are spawned so they fly at body height, where people actually stand.</p>\n<h3>What\u2019s wrong in vanilla</h3>\n<ul>\n<li><strong>Only 30 fragments are ever created</strong>, whatever the grenade\u2019s stats say. The F-1 is listed with 90 and the VOG-17 with 100, but both get 30.</li>\n<li><strong>Fragments spread over a whole half-sphere</strong>, so most fly over people\u2019s heads.</li>\n<li><strong>Fragments start about 4 cm off the floor</strong>, so a kerb, step or crate blocks them.</li>\n<li><strong>Grenades on upper floors or catwalks are often treated as mid-air bursts</strong>, which sends most of the fragments straight into the floor.</li>\n<li><strong>Aimed fragments miss prone players.</strong> The game fires a few fragments straight at each nearby player, but it aims them 0.8 m above the feet.</li>\n</ul>\n<h3>What this mod does</h3>\n<ul>\n<li><strong>Raises where fragments start</strong> to about knee height. It never pushes them through a table or ceiling.</li>\n<li><strong>Concentrates fragments at body height</strong>, mostly between \u22125\u00b0 and +25\u00b0 from horizontal.</li>\n<li><strong>Uses each grenade\u2019s full fragment count</strong> instead of capping it at 30.</li>\n<li><strong>Detects floors correctly</strong>, so a grenade on a floor isn\u2019t treated as a mid-air burst.</li>\n<li><strong>Sends more fragments straight at nearby players</strong>, aimed anywhere from the feet to the head, so crouched and prone players can be hit too.</li>\n<li><strong>Leaves cover working.</strong> By default the blast damage still starts from the grenade\u2019s real position, so ducking behind low cover still protects you.</li>\n<li><strong>Sends real airbursts mostly downward</strong>, so they work against people in trenches.</li>\n</ul>\n<p>Every fragment is still a normal in-game projectile. Armor, cover penetration and damage mods such as TraumaCore apply to them automatically. Landmines and artillery are not changed.</p>\n<h3>Fully configurable (F12)</h3>\n<ul>\n<li>Global lethality multiplier, plus one multiplier per grenade (F-1, RGD-5, M67, RGN, RGO, VOG-17, VOG-25, V40 and launcher rounds)</li>\n<li>Fragment start height, angle range, fragment count and speed</li>\n<li>A list of maps where the mod does nothing, and a toggle for 40mm/30mm launcher rounds</li>\n<li>Performance limits on how many fragments are fired per frame</li>\n<li>Debug mode that draws each fragment\u2019s path and logs every hit</li>\n</ul>\n<h3>Compatibility</h3>\n<ul>\n<li><strong>SPT 4.1.6.</strong> This is a client plugin only, with no server mod.</li>\n<li><strong>FIKA: supported, with no extra network traffic.</strong> Every player, the host and the headless client need the same version and the same config file.</li>\n<li>Works alongside SAIN, CookingGrenades, Airburst, and TraumaCore</li>\n</ul>\n<h3>Install</h3>\n<p>Extract the zip into your SPT folder (the one with EscapeFromTarkov.exe).\nEvery FIKA player, the host and the headless client need it.</p>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/NMarL67d56dP1z30FMtK1Akzg4TI7EikY0YA7h8V.png",
+   "forge_url": "https://sp-mod.com/mod/3118/shrapnelfix",
+   "downloads": 47,
+   "favourites": 1,
+   "featured": false,
+   "fika": false,
+   "fika_latest": "unknown",
+   "category": {
+    "id": 13,
+    "title": "Weapons",
+    "slug": "weapons"
+   },
+   "license": {
+    "name": "Creative Commons BY 3.0",
+    "link": "http://creativecommons.org/licenses/by/3.0/legalcode"
+   },
+   "authors": [
+    {
+     "id": 79718,
+     "name": "Euphoria",
+     "avatar": "https://files.sp-mod.com/profile-photos/pjGRZ2Xdl68U5YniwwjpceLG2HAzion6rYCuQZYS_128w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/iiieuphoria/ShrapnelFix/upload",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 15818,
+     "version": "1.0.0",
+     "description": "<h2>v1.0.0 \u2014 Initial Release</h2>\n<p>First public release. Grenade fragments now fly at body height instead of mostly over heads and into the floor.</p>\n<p><strong>Features</strong></p>\n<ul>\n<li>Each grenade now uses its full fragment count. Vanilla caps every grenade at 30.</li>\n<li>Fragments start about knee height instead of 4 cm off the floor. They never start inside a table or ceiling.</li>\n<li>Most fragments fly in a body-height band, between \u22125\u00b0 and +25\u00b0 from horizontal.</li>\n<li>Grenades on upper floors and catwalks are no longer treated as mid-air bursts, which used to send their fragments into the floor.</li>\n<li>More fragments are sent straight at nearby players, aimed anywhere from feet to head, so crouched and prone players can be hit.</li>\n<li>Real airbursts send most fragments downward.</li>\n<li>Blast damage still starts from the grenade\u2019s real position by default, so low cover still protects you.</li>\n<li>Everything is adjustable in F12: a global multiplier and one per grenade, fragment angles, count and speed, maps to skip, and a toggle for launcher rounds.</li>\n<li>Performance limits on fragments fired per frame.</li>\n<li>Debug mode that draws each fragment\u2019s path and logs every hit.</li>\n</ul>\n<p><strong>Compatibility</strong></p>\n<ul>\n<li>SPT 4.1.6. This is a client plugin only, with no server mod needed.</li>\n<li>FIKA supported, with no extra network traffic. The host, the headless client and every player need the same version and config.</li>\n<li>Works with SAIN, CookingGrenades, Airburst, and TraumaCore</li>\n</ul>\n<p><strong>Notes</strong></p>\n<ul>\n<li>The default settings are a starting point. If grenades feel too strong or too weak, start with <strong>Aimed fragment multiplier</strong> or the per-grenade multipliers.</li>\n<li>Please report issues with your <code>BepInEx/LogOutput.log</code>, ideally with <strong>Log explosions and fragment hits</strong> turned on in F12.</li>\n</ul>\n",
+     "spt_constraint": "4.1.6",
+     "fika": "unknown",
+     "downloads": 47,
+     "size": 14378,
+     "link": "https://sp-mod.com/mod/download/3118/shrapnelfix/1.0.0",
+     "published_at": "2026-10-07T12:12:00.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "1.0.0",
+   "spt_constraint": "4.1.6",
+   "all_spt_constraints": [
+    "4.1.6"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-10-07T12:10:00.000000Z",
+   "updated_at": "2026-10-07T13:06:17.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
+    "cheat_notice": false,
+    "profile_binding_notice": true
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 3120,
+   "hub_id": null,
+   "guid": "com.iieuphoria.truehardcorerules",
+   "name": "TrueHardcoreRules",
+   "slug": "truehardcorerules",
+   "teaser": "No flea. No insurance. No mercy. Hardcore economy.",
+   "description_html": "<h1>True Hardcore Rules</h1>\n<p><strong>One mod, one config, a complete hardcore economy for SPT 4.1.6.</strong></p>\n<p>True Hardcore Rules makes every raid count by changing the economy and services around them: no flea market, no insurance, expensive and scarce traders, and a small secure container. Raids themselves stay exactly as they are. Bot AI, bot spawns, bosses, loot spawns and extracts aren\u2019t touched, so it works alongside SAIN, BSP or any other AI/spawn mod.</p>\n<h2>Features (default \u201cHardcore Classic\u201d ruleset)</h2>\n<ul>\n<li><strong>Flea market locked.</strong> Gear comes from raids, traders and barters.</li>\n<li><strong>No insurance.</strong> When you lose a kit, it\u2019s gone.</li>\n<li><strong>Harsher traders.</strong> Cash prices \u00d71.5, stock and buy limits halved, restocks take twice as long. Barter prices are unchanged.</li>\n<li><strong>Fence is a junk dealer.</strong> He pays half what he normally does and doesn\u2019t sell weapons, armor, rigs, backpacks or ammo.</li>\n<li><strong>Smaller secure container.</strong> At most 2\u00d72, and it only holds keys, info items, meds and ammo.</li>\n<li><strong>No post-raid treatment.</strong> You heal with the meds you brought home.</li>\n<li><strong>Repair kits only.</strong> No trader repairs.</li>\n<li><strong>No free starting gifts</strong> from Prapor or Mechanic.</li>\n<li><strong>Longer scav cooldown.</strong> 45 minutes, so scav runs are a way to recover from losses rather than a money farm.</li>\n<li><strong>Stash upgrades still work</strong> in the hideout.</li>\n</ul>\n<h2>Built to be safe</h2>\n<ul>\n<li><strong>Server-only.</strong> No client plugin, and it works with Fika without changes.</li>\n<li><strong>Everything can be toggled</strong> in one commented <code>config.json</code>: multipliers, categories, cooldowns and excluded traders.</li>\n<li><strong>Protects your items.</strong> If shrinking a secure container would cut off items inside it, that container keeps its size and the log tells you what to move.</li>\n<li><strong>Bots are left alone.</strong> Bots use the Boss container, which is excluded from the secure container rule.</li>\n<li><strong>Applies to modded traders too.</strong> Any trader can be excluded in the config.</li>\n<li><strong>Warns about overlapping mods</strong> in the server log, such as HardcoreRules, SVM, fleasimulator and item valuation mods.</li>\n</ul>\n<h2>Install</h2>\n<ol>\n<li>Extract the archive to <code>SPT\\user\\mods\\TrueHardcoreRules\\</code>.</li>\n<li>Remove HardcoreRules if you have it. This mod replaces it.</li>\n<li>Empty your secure container, or move anything outside its top-left 2\u00d72, before the first launch.</li>\n</ol>\n<p><strong>Requires:</strong> SPT 4.1.6</p>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/S0WyyDNty1gdKfacvz8410fPosIvu5CC8z6FInXM.png",
+   "forge_url": "https://sp-mod.com/mod/3120/truehardcorerules",
+   "downloads": 5,
+   "favourites": 0,
+   "featured": false,
+   "fika": false,
+   "fika_latest": "unknown",
+   "category": {
+    "id": 2,
+    "title": "Overhauls",
+    "slug": "overhauls"
+   },
+   "license": {
+    "name": "Creative Commons BY 3.0",
+    "link": "http://creativecommons.org/licenses/by/3.0/legalcode"
+   },
+   "authors": [
+    {
+     "id": 79718,
+     "name": "Euphoria",
+     "avatar": "https://files.sp-mod.com/profile-photos/pjGRZ2Xdl68U5YniwwjpceLG2HAzion6rYCuQZYS_128w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/iiieuphoria/TrueHardcoreRules/",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 15819,
+     "version": "1.0.0",
+     "description": "<h2>v1.0.0: Initial release</h2>\n<p>Built for SPT 4.1.6. Server-only, and works with Fika.</p>\n<ul>\n<li>Flea market locked.</li>\n<li>Insurance disabled for all traders.</li>\n<li>Trader cash prices \u00d71.5, stock halved, restocks take twice as long.</li>\n<li>Fence pays half and sells junk only.</li>\n<li>Secure containers limited to 2\u00d72, holding only keys, info items, meds and ammo.</li>\n<li>No post-raid Therapist healing and no trader repairs.</li>\n<li>No starting gifts.</li>\n<li>Scav cooldown raised to 45 minutes.</li>\n<li>Every rule can be toggled in <code>config.json</code>.</li>\n<li>Replaces HardcoreRules. Remove it before installing.</li>\n</ul>\n",
+     "spt_constraint": "4.1.6",
+     "fika": "unknown",
+     "downloads": 5,
+     "size": 20890,
+     "link": "https://sp-mod.com/mod/download/3120/truehardcorerules/1.0.0",
+     "published_at": "2026-10-07T12:50:00.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "1.0.0",
+   "spt_constraint": "4.1.6",
+   "all_spt_constraints": [
+    "4.1.6"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-10-07T12:49:00.000000Z",
+   "updated_at": "2026-10-07T12:53:03.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
+    "cheat_notice": false,
+    "profile_binding_notice": true
    },
    "origin": "forge",
    "delisted": false
