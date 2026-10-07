@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-10-07T13:35:38Z",
+ "generated_at": "2026-10-07T20:40:48Z",
  "source": "https://sp-mod.com",
  "filter": "all",
- "mod_count": 2042,
+ "mod_count": 2044,
  "categories": [
   {
    "id": 12,
@@ -135692,11 +135692,11 @@
    "name": "Dynamic Item Weights",
    "slug": "dynamic-item-weights",
    "teaser": "Say bye to the empty 9kg jerry can! This mod adjusts the weight of items based on their current usage.",
-   "description_html": "<h2>\ud83d\udcdc Description</h2>\n<p><strong>Dynamic Item Weights</strong> is a mod for <em>Single Player T</em>***** that adjusts the weight of items based on their current usage.</p>\n<hr />\n<h2>\ud83d\udcc1 Installation</h2>\n<ul>\n<li>Download the latest release</li>\n<li>Copy the <code>BepInEx</code> folder into your SPT folder</li>\n<li>Start the game</li>\n</ul>\n<hr />\n<h2>\ud83d\udcf7 Preview</h2>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/Tosox/SPT-DynamicItemWeights/blob/master/readme-res/fuel_full.png?raw=true\" alt=\"\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/Tosox/SPT-DynamicItemWeights/blob/master/readme-res/fuel_used.png?raw=true\" alt=\"\" /></p>\n<hr />\n<h2>\ud83d\udee0\ufe0f Configuration</h2>\n<h3>In-game menu</h3>\n<ul>\n<li><strong>Enabled</strong>: Toggle dynamic item weights on/off</li>\n<li><strong>Default Tare Fraction</strong>: Fallback tare weight as a fraction of the full item weight</li>\n<li><strong>Verbose Logging</strong>: Log every single weight adjustment (troubleshooting only)</li>\n</ul>\n<h3>tareweights.jsonc</h3>\n<p>A JSONC file mapping the item template ID to the tare weight in kilograms, that is, what the\nitem still weighs once it is fully used up</p>\n<pre><code>{\n    \"57513f07245977207e26a311\": 0.030, // Pack of apple juice\n    \"5d1b36a186f7742523398433\": 2.500  // Metal fuel tank\n}\n</code></pre>\n<blockquote>\n<p>If an item is missing, the plugin uses <code>Default Tare Fraction</code> of the original weight</p>\n</blockquote>\n<hr />\n<h2>\ud83d\udcc4 License</h2>\n<p>Distributed under the MIT License. See <code>LICENSE</code> for more information.</p>\n",
+   "description_html": "<h2>\ud83d\udcdc Description</h2>\n<p><strong>Dynamic Item Weights</strong> is a mod for <em>Single Player T</em>***** that adjusts the weight of items based on their current usage.</p>\n<hr />\n<h2>\ud83d\udcc1 Installation</h2>\n<ul>\n<li>Download the latest release</li>\n<li>Copy the <code>BepInEx</code> folder into your SPT folder</li>\n<li>Start the game</li>\n</ul>\n<hr />\n<h2>\ud83d\udcf7 Preview</h2>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://gitlab.com/Tosox/SPT-DynamicItemWeights/-/raw/master/readme-res/fuel_full.png\" alt=\"\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://gitlab.com/Tosox/SPT-DynamicItemWeights/-/raw/master/readme-res/fuel_used.png\" alt=\"\" /></p>\n<hr />\n<h2>\ud83d\udee0\ufe0f Configuration</h2>\n<h3>In-game menu</h3>\n<ul>\n<li><strong>Enabled</strong>: Toggle dynamic item weights on/off</li>\n<li><strong>Default Tare Fraction</strong>: Fallback tare weight as a fraction of the full item weight</li>\n<li><strong>Verbose Logging</strong>: Log every single weight adjustment (troubleshooting only)</li>\n</ul>\n<h3>tareweights.jsonc</h3>\n<p>A JSONC file mapping the item template ID to the tare weight in kilograms, that is, what the\nitem still weighs once it is fully used up</p>\n<pre><code>{\n    \"57513f07245977207e26a311\": 0.030, // Pack of apple juice\n    \"5d1b36a186f7742523398433\": 2.500  // Metal fuel tank\n}\n</code></pre>\n<blockquote>\n<p>If an item is missing, the plugin uses <code>Default Tare Fraction</code> of the original weight</p>\n</blockquote>\n<hr />\n<h2>\u2615 Support</h2>\n<p>This mod is free and always will be. If it made your raids a little better, a coffee is a nice way to say thanks.</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/tosox\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://ko-fi.com/img/githubbutton_sm.svg\" alt=\"ko-fi\" /></a></p>\n<hr />\n<h2>\ud83d\udcc4 License</h2>\n<p>Distributed under the MIT License. See <code>LICENSE</code> for more information.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/PLjwUyUmevBYgQMwXLisG0tVuMgjDLR2xXjkoYTN.png",
    "forge_url": "https://sp-mod.com/mod/2344/dynamic-item-weights",
-   "downloads": 14095,
-   "favourites": 73,
+   "downloads": 14309,
+   "favourites": 68,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -135711,14 +135711,14 @@
    },
    "authors": [
     {
-     "id": "79394-arch",
+     "id": 79394,
      "name": "Tosox",
      "avatar": "https://files.sp-mod.com/profile-photos/tAww2g8u6oEwIXCe2oIEv40ZD1KOqdY5JV03LVbl_256w.webp"
     }
    ],
    "source_links": [
     {
-     "url": "https://github.com/Tosox/SPT-DynamicItemWeights",
+     "url": "https://gitlab.com/Tosox/SPT-DynamicItemWeights",
      "label": ""
     }
    ],
@@ -135729,8 +135729,8 @@
      "description": "<ul>\n<li>Compatibility update for SPT 4.1</li>\n<li>Fixed player weight updates when item resources change</li>\n<li>Renamed empty weights to tare weights</li>\n</ul>\n",
      "spt_constraint": "~4.1.0",
      "fika": "compatible",
-     "downloads": 3186,
-     "size": 6977,
+     "downloads": 3389,
+     "size": 6828,
      "link": "https://sp-mod.com/mod/download/2344/dynamic-item-weights/1.2.0",
      "published_at": "2026-08-10T09:05:00.000000Z",
      "dependencies": []
@@ -135741,8 +135741,8 @@
      "description": "<ul>\n<li>Compatibility update for SPT 4.0</li>\n</ul>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 10056,
-     "size": 5807,
+     "downloads": 10066,
+     "size": 5656,
      "link": "https://sp-mod.com/mod/download/2344/dynamic-item-weights/1.1.0",
      "published_at": "2025-10-14T22:18:00.000000Z",
      "dependencies": []
@@ -135753,8 +135753,8 @@
      "description": "<ul>\n<li>Initial release</li>\n</ul>\n",
      "spt_constraint": "~3.11.0",
      "fika": "compatible",
-     "downloads": 853,
-     "size": null,
+     "downloads": 854,
+     "size": 5664,
      "link": "https://sp-mod.com/mod/download/2344/dynamic-item-weights/1.0.0",
      "published_at": "2025-10-08T20:01:00.000000Z",
      "dependencies": []
@@ -135769,8 +135769,8 @@
    ],
    "dependencies": [],
    "all_dependencies": [],
-   "published_at": "2025-10-08T20:06:00.000000Z",
-   "updated_at": "2026-09-24T07:19:55.000000Z",
+   "published_at": "2026-10-07T16:39:00.000000Z",
+   "updated_at": "2026-10-07T17:38:36.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -135779,7 +135779,7 @@
     "profile_binding_notice": false
    },
    "origin": "forge",
-   "delisted": true
+   "delisted": false
   },
   {
    "id": 2347,
@@ -137183,11 +137183,11 @@
    "name": "FIR Fence Purchases",
    "slug": "fir-fence-purchases",
    "teaser": "Give Fence\u2019s stock a boost! This mod ensures that every item you buy from Fence is marked as Found in Raid.",
-   "description_html": "<h2>\ud83d\udcdc Description</h2>\n<p><strong>FIR Fence Purchases</strong> is a mod for <em>Single Player T</em>***** that marks every bought item from Fence as Found in Raid.</p>\n<hr />\n<h2>\ud83d\udcc1 Installation</h2>\n<ul>\n<li>Download the latest release</li>\n<li>Copy the <code>SPT_Runtime</code> folder into your SPT installation folder</li>\n<li>Start the game</li>\n</ul>\n<hr />\n<h2>\ud83d\udcf7 Preview</h2>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/Tosox/SPT-FIRFencePurchases/blob/master/readme-res/fence_assort.png?raw=true\" alt=\"\" /></p>\n<hr />\n<h2>\ud83d\udcc4 License</h2>\n<p>Distributed under the MIT License. See <code>LICENSE</code> for more information.</p>\n",
+   "description_html": "<h2>\ud83d\udcdc Description</h2>\n<p><strong>FIR Fence Purchases</strong> is a mod for <em>Single Player T</em>***** that marks every bought item from Fence as Found in Raid.</p>\n<hr />\n<h2>\ud83d\udcc1 Installation</h2>\n<ul>\n<li>Download the latest release</li>\n<li>Copy the <code>SPT_Runtime</code> folder into your SPT installation folder</li>\n<li>Start the game</li>\n</ul>\n<hr />\n<h2>\ud83d\udcf7 Preview</h2>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://gitlab.com/Tosox/SPT-FIRFencePurchases/-/raw/master/readme-res/fence_assort.png\" alt=\"\" /></p>\n<hr />\n<h2>\u2615 Support</h2>\n<p>This mod is free and always will be. If it made your raids a little better, a coffee is a nice way to say thanks.</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/tosox\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://ko-fi.com/img/githubbutton_sm.svg\" alt=\"ko-fi\" /></a></p>\n<hr />\n<h2>\ud83d\udcc4 License</h2>\n<p>Distributed under the MIT License. See <code>LICENSE</code> for more information.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/TDO94P3WaJ2xSw8QudPZPYINLY1rkUQShE8LAIjk.png",
    "forge_url": "https://sp-mod.com/mod/2371/fir-fence-purchases",
-   "downloads": 11350,
-   "favourites": 52,
+   "downloads": 11478,
+   "favourites": 49,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -137202,14 +137202,14 @@
    },
    "authors": [
     {
-     "id": "79394-arch",
+     "id": 79394,
      "name": "Tosox",
      "avatar": "https://files.sp-mod.com/profile-photos/tAww2g8u6oEwIXCe2oIEv40ZD1KOqdY5JV03LVbl_256w.webp"
     }
    ],
    "source_links": [
     {
-     "url": "https://github.com/Tosox/SPT-FIRFencePurchases",
+     "url": "https://gitlab.com/Tosox/SPT-FIRFencePurchases",
      "label": ""
     }
    ],
@@ -137220,8 +137220,8 @@
      "description": "<ul>\n<li>Compatibility update for SPT 4.1</li>\n</ul>\n",
      "spt_constraint": "~4.1.0",
      "fika": "compatible",
-     "downloads": 2384,
-     "size": 6421,
+     "downloads": 2499,
+     "size": 6252,
      "link": "https://sp-mod.com/mod/download/2371/fir-fence-purchases/1.1.0",
      "published_at": "2026-08-10T17:23:00.000000Z",
      "dependencies": []
@@ -137232,36 +137232,23 @@
      "description": "<ul>\n<li>Initial release</li>\n</ul>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 8453,
-     "size": 6037,
+     "downloads": 8466,
+     "size": 5871,
      "link": "https://sp-mod.com/mod/download/2371/fir-fence-purchases/1.0.0",
      "published_at": "2025-10-15T15:26:00.000000Z",
-     "dependencies": []
-    },
-    {
-     "id": 11851,
-     "version": "1.0.0+spt3.9",
-     "description": "<ul>\n<li>Backport release for SPT 3.11</li>\n</ul>\n",
-     "spt_constraint": "~3.11.0",
-     "fika": "compatible",
-     "downloads": 513,
-     "size": 972946,
-     "link": "https://sp-mod.com/mod/download/2371/fir-fence-purchases/1.0.0+spt3.9",
-     "published_at": "2025-10-15T09:49:00.000000Z",
      "dependencies": []
     }
    ],
    "latest_version": "1.1.0",
    "spt_constraint": "~4.1.0",
    "all_spt_constraints": [
-    "~3.11.0",
     "~4.0.0",
     "~4.1.0"
    ],
    "dependencies": [],
    "all_dependencies": [],
-   "published_at": "2025-10-15T15:34:00.000000Z",
-   "updated_at": "2026-09-24T07:19:33.000000Z",
+   "published_at": "2026-10-07T16:44:00.000000Z",
+   "updated_at": "2026-10-07T17:38:20.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -137270,7 +137257,7 @@
     "profile_binding_notice": false
    },
    "origin": "forge",
-   "delisted": true
+   "delisted": false
   },
   {
    "id": 2373,
@@ -137645,11 +137632,11 @@
    "name": "Black Exfil Revision",
    "slug": "black-exfil-revision",
    "teaser": "Bring back full protection! This mod lets you equip compatible face shields on the Black Exfil helmet once again, just like in the old days.",
-   "description_html": "<h2>\ud83d\udcdc Description</h2>\n<p><strong>Black Exfil Revision</strong> is a mod for <em>Single Player T</em>***** that lets you equip compatible face shields on the Black Exfil helmet once again.</p>\n<hr />\n<h2>\ud83d\udcc1 Installation</h2>\n<ul>\n<li>Download the latest release</li>\n<li>Copy the <code>SPT_Runtime</code> folder into your SPT installation</li>\n<li>Start the game</li>\n</ul>\n<hr />\n<h2>\ud83d\udcf7 Preview</h2>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/Tosox/SPT-BlackExfilRevision/blob/master/readme-res/black_exfil.png?raw=true\" alt=\"\" /></p>\n<hr />\n<h2>\ud83d\udcc4 License</h2>\n<p>Distributed under the MIT License. See <code>LICENSE</code> for more information.</p>\n",
+   "description_html": "<h2>\ud83d\udcdc Description</h2>\n<p><strong>Black Exfil Revision</strong> is a mod for <em>Single Player T</em>***** that lets you equip compatible face shields on the Black Exfil helmet once again.</p>\n<hr />\n<h2>\ud83d\udcc1 Installation</h2>\n<ul>\n<li>Download the latest release</li>\n<li>Copy the <code>SPT_Runtime</code> folder into your SPT installation</li>\n<li>Start the game</li>\n</ul>\n<hr />\n<h2>\ud83d\udcf7 Preview</h2>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://gitlab.com/Tosox/SPT-BlackExfilRevision/-/raw/master/readme-res/black_exfil.png\" alt=\"\" /></p>\n<hr />\n<h2>\u2615 Support</h2>\n<p>This mod is free and always will be. If it made your raids a little better, a coffee is a nice way to say thanks.</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/tosox\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://ko-fi.com/img/githubbutton_sm.svg\" alt=\"ko-fi\" /></a></p>\n<hr />\n<h2>\ud83d\udcc4 License</h2>\n<p>Distributed under the MIT License. See <code>LICENSE</code> for more information.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/14zFbwic0yrkpXD0Ce1Jf86qdEvwyfnjoXZCcJBH.png",
    "forge_url": "https://sp-mod.com/mod/2380/black-exfil-revision",
-   "downloads": 15882,
-   "favourites": 79,
+   "downloads": 16035,
+   "favourites": 75,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -137664,14 +137651,14 @@
    },
    "authors": [
     {
-     "id": "79394-arch",
+     "id": 79394,
      "name": "Tosox",
      "avatar": "https://files.sp-mod.com/profile-photos/tAww2g8u6oEwIXCe2oIEv40ZD1KOqdY5JV03LVbl_256w.webp"
     }
    ],
    "source_links": [
     {
-     "url": "https://github.com/Tosox/SPT-BlackExfilRevision",
+     "url": "https://gitlab.com/Tosox/SPT-BlackExfilRevision",
      "label": ""
     }
    ],
@@ -137682,22 +137669,10 @@
      "description": "<ul>\n<li>Compatibility update for SPT 4.1</li>\n</ul>\n",
      "spt_constraint": "~4.1.0",
      "fika": "compatible",
-     "downloads": 2974,
-     "size": 8035,
+     "downloads": 3117,
+     "size": 7873,
      "link": "https://sp-mod.com/mod/download/2380/black-exfil-revision/1.1.0",
      "published_at": "2026-08-12T09:55:00.000000Z",
-     "dependencies": []
-    },
-    {
-     "id": 12087,
-     "version": "1.0.0+spt3.9",
-     "description": "<ul>\n<li>Backport release for SPT 3.11</li>\n</ul>\n",
-     "spt_constraint": "~3.11.0",
-     "fika": "compatible",
-     "downloads": 581,
-     "size": 2993,
-     "link": "https://sp-mod.com/mod/download/2380/black-exfil-revision/1.0.0+spt3.9",
-     "published_at": "2025-10-30T21:22:00.000000Z",
      "dependencies": []
     },
     {
@@ -137706,8 +137681,8 @@
      "description": "<ul>\n<li>Initial release</li>\n</ul>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 12327,
-     "size": 7714,
+     "downloads": 12337,
+     "size": 7515,
      "link": "https://sp-mod.com/mod/download/2380/black-exfil-revision/1.0.0",
      "published_at": "2025-10-18T22:13:00.000000Z",
      "dependencies": []
@@ -137716,14 +137691,13 @@
    "latest_version": "1.1.0",
    "spt_constraint": "~4.1.0",
    "all_spt_constraints": [
-    "~3.11.0",
     "~4.0.0",
     "~4.1.0"
    ],
    "dependencies": [],
    "all_dependencies": [],
-   "published_at": "2025-10-18T22:50:00.000000Z",
-   "updated_at": "2026-09-24T07:19:10.000000Z",
+   "published_at": "2026-10-07T16:21:00.000000Z",
+   "updated_at": "2026-10-07T17:00:48.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -137732,7 +137706,7 @@
     "profile_binding_notice": true
    },
    "origin": "forge",
-   "delisted": true
+   "delisted": false
   },
   {
    "id": 2383,
@@ -155345,11 +155319,11 @@
    "name": "Chamber Ammo Info",
    "slug": "chamber-ammo-info",
    "teaser": "Know your next shot! This mod displays the ammo type loaded in your chamber when checking it.",
-   "description_html": "<h2>\ud83d\udcdc Description</h2>\n<p><strong>Chamber Ammo Info</strong> is a mod for <em>Single Player T</em>***** that shows the ammo type loaded in the chamber when performing a chamber check.</p>\n<hr />\n<h2>\u2728 Features</h2>\n<ul>\n<li>Displays the ammo type when performing a chamber check</li>\n<li>Supports multi-chamber, no-chamber weapons and underbarrel grenade launchers</li>\n<li>Integrates seamlessly into T*****\u2019s existing UI</li>\n</ul>\n<hr />\n<h2>\ud83d\udcc1 Installation</h2>\n<ul>\n<li>Download the latest release</li>\n<li>Copy the <code>BepInEx</code> folder into your SPT installation</li>\n<li>Start the game</li>\n</ul>\n<hr />\n<h2>\ud83d\udcf7 Preview</h2>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/Tosox/SPT-ChamberAmmoInfo/blob/master/readme-res/ak.png?raw=true\" alt=\"\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/Tosox/SPT-ChamberAmmoInfo/blob/master/readme-res/double_barrel.png?raw=true\" alt=\"\" /></p>\n<hr />\n<h2>\ud83d\udcc4 License</h2>\n<p>Distributed under the MIT License. See <code>LICENSE</code> for more information.</p>\n",
+   "description_html": "<h2>\ud83d\udcdc Description</h2>\n<p><strong>Chamber Ammo Info</strong> is a mod for <em>Single Player T</em>***** that shows the ammo type loaded in the chamber when performing a chamber check.</p>\n<hr />\n<h2>\u2728 Features</h2>\n<ul>\n<li>Displays the ammo type when performing a chamber check</li>\n<li>Supports multi-chamber, no-chamber weapons and underbarrel grenade launchers</li>\n<li>Integrates seamlessly into T*****\u2019s existing UI</li>\n</ul>\n<hr />\n<h2>\ud83d\udcc1 Installation</h2>\n<ul>\n<li>Download the latest release</li>\n<li>Copy the <code>BepInEx</code> folder into your SPT installation</li>\n<li>Start the game</li>\n</ul>\n<hr />\n<h2>\ud83d\udcf7 Preview</h2>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://gitlab.com/Tosox/SPT-ChamberAmmoInfo/-/raw/master/readme-res/ak.png\" alt=\"\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://gitlab.com/Tosox/SPT-ChamberAmmoInfo/-/raw/master/readme-res/double_barrel.png\" alt=\"\" /></p>\n<hr />\n<h2>\u2615 Support</h2>\n<p>This mod is free and always will be. If it made your raids a little better, a coffee is a nice way to say thanks.</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/tosox\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://ko-fi.com/img/githubbutton_sm.svg\" alt=\"ko-fi\" /></a></p>\n<hr />\n<h2>\ud83d\udcc4 License</h2>\n<p>Distributed under the MIT License. See <code>LICENSE</code> for more information.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/f2tk9Blhbhl8ffcvnoIznlyn6eaXOwDCFj6y42zV.png",
    "forge_url": "https://sp-mod.com/mod/2553/chamber-ammo-info",
-   "downloads": 6383,
-   "favourites": 38,
+   "downloads": 6491,
+   "favourites": 34,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -155364,14 +155338,14 @@
    },
    "authors": [
     {
-     "id": "79394-arch",
+     "id": 79394,
      "name": "Tosox",
      "avatar": "https://files.sp-mod.com/profile-photos/tAww2g8u6oEwIXCe2oIEv40ZD1KOqdY5JV03LVbl_256w.webp"
     }
    ],
    "source_links": [
     {
-     "url": "https://github.com/Tosox/SPT-ChamberAmmoInfo",
+     "url": "https://gitlab.com/Tosox/SPT-ChamberAmmoInfo",
      "label": ""
     }
    ],
@@ -155382,8 +155356,8 @@
      "description": "<ul>\n<li>Compatibility update for SPT 4.1</li>\n<li>Show \u201cEmpty\u201d for chamberless weapons with an empty magazine</li>\n</ul>\n",
      "spt_constraint": "~4.1.0",
      "fika": "compatible",
-     "downloads": 1409,
-     "size": 4051,
+     "downloads": 1506,
+     "size": 3984,
      "link": "https://sp-mod.com/mod/download/2553/chamber-ammo-info/1.1.0",
      "published_at": "2026-08-10T11:48:00.000000Z",
      "dependencies": []
@@ -155394,8 +155368,8 @@
      "description": "<ul>\n<li>Fixed an issue where the ammo info could be triggered by other players and bots</li>\n</ul>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 4580,
-     "size": 4050,
+     "downloads": 4590,
+     "size": 3981,
      "link": "https://sp-mod.com/mod/download/2553/chamber-ammo-info/1.0.1",
      "published_at": "2026-01-15T20:52:00.000000Z",
      "dependencies": []
@@ -155406,8 +155380,8 @@
      "description": "<ul>\n<li>Initial release</li>\n</ul>\n",
      "spt_constraint": "~4.0.0",
      "fika": "incompatible",
-     "downloads": 394,
-     "size": 4061,
+     "downloads": 395,
+     "size": 4000,
      "link": "https://sp-mod.com/mod/download/2553/chamber-ammo-info/1.0.0",
      "published_at": "2026-01-14T17:53:00.000000Z",
      "dependencies": []
@@ -155421,8 +155395,8 @@
    ],
    "dependencies": [],
    "all_dependencies": [],
-   "published_at": "2026-01-14T18:03:00.000000Z",
-   "updated_at": "2026-09-24T07:18:52.000000Z",
+   "published_at": "2026-10-07T16:34:00.000000Z",
+   "updated_at": "2026-10-07T16:58:45.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -155431,7 +155405,7 @@
     "profile_binding_notice": false
    },
    "origin": "forge",
-   "delisted": true
+   "delisted": false
   },
   {
    "id": 2554,
@@ -158337,11 +158311,11 @@
    "name": "Mag Retention Reload",
    "slug": "mag-retention-reload",
    "teaser": "No more feeding the floor with magazines! This mod makes every reload a proper mag-retention reload.",
-   "description_html": "<blockquote>\n<h6><strong>UI Fixes</strong> by <strong>Tyfon</strong> has a mag retention feature as well. This mod keeps it simple and adds no reload time penalty.</h6>\n</blockquote>\n<blockquote>\n<h6>\u26a0\ufe0f If you run both, this one takes over. Unticking <code>Enabled</code> hands the feature straight back to <strong>UI Fixes</strong> \u26a0\ufe0f</h6>\n</blockquote>\n<h2>\ud83d\udcdc Description</h2>\n<p><strong>Mag Retention Reload</strong> is a mod for <em>Single Player T</em>***** that adds proper magazine retention to weapon reloads by automatically stowing the old magazine back into the rig if possible instead of dropping it.</p>\n<hr />\n<h2>\u2728 Features</h2>\n<ul>\n<li>Swaps the old magazine into the slot the new magazine was taken from</li>\n<li>Prevents unnecessary magazine drops during normal reloads if the magazine fits in the rig</li>\n<li>Works with both the reload hotkey and the inventory context menu</li>\n<li>Notifies you when you lose a magazine during reload</li>\n<li>Optionally ties the feature to maxed-out weapon mastering</li>\n</ul>\n<hr />\n<h2>\ud83d\udcc1 Installation</h2>\n<ul>\n<li>Download the latest release</li>\n<li>Copy the <code>BepInEx</code> folder into your SPT folder</li>\n<li>Start the game</li>\n</ul>\n<hr />\n<h2>\u2699\ufe0f Configuration</h2>\n<table>\n<thead>\n<tr>\n<th>Setting</th>\n<th>Default</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>Enabled</code></td>\n<td><code>true</code></td>\n<td>Untick to stop retaining your magazines</td>\n</tr>\n<tr>\n<td><code>Require Max Weapon Mastering</code></td>\n<td><code>false</code></td>\n<td>Only retain magazines once the weapon\u2019s mastering is maxed-out</td>\n</tr>\n<tr>\n<td><code>Notify on Dropped Magazine</code></td>\n<td><code>true</code></td>\n<td>Display a notification when a magazine is dropped during a reload</td>\n</tr>\n</tbody>\n</table>\n<hr />\n<h2>\ud83e\udd1d Fika</h2>\n<p>When playing with <strong>Fika</strong>, every client in the raid, <strong>including the headless client</strong>, should run the same version of this mod, otherwise you will run into syncing issues.\nHosts can enforce this by adding the plugin GUID to <code>client.mods.required</code> in the Fika server config, so mismatched clients are rejected when joining instead of silently desyncing:</p>\n<pre><code>\"required\": [ \"de.tosox.magretentionreload\" ]\n</code></pre>\n<hr />\n<h2>\ud83d\udcf7 Preview</h2>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/Tosox/SPT-MagRetentionReload/blob/master/readme-res/reload.gif?raw=true\" alt=\"\" /></p>\n<hr />\n<h2>\ud83d\ude4f Acknowledgements</h2>\n<ul>\n<li>Thanks to <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Lacyway\" rel=\"noreferrer noopener\"><strong>Lacyway</strong></a> for putting up with all my questions</li>\n<li>Thanks to <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/tyfon7\" rel=\"noreferrer noopener\"><strong>Tyfon</strong></a> for the Fika sync code that inspired this one</li>\n</ul>\n<hr />\n<h2>\ud83d\udcc4 License</h2>\n<p>Distributed under the MIT License. See <code>LICENSE</code> for more information.</p>\n",
+   "description_html": "<blockquote>\n<h6><strong>UI Fixes</strong> by <strong>Tyfon</strong> has a mag retention feature as well. This mod keeps it simple and adds no reload time penalty.</h6>\n</blockquote>\n<blockquote>\n<h6>\u26a0\ufe0f If you run both, this one takes over. Unticking <code>Enabled</code> hands the feature straight back to <strong>UI Fixes</strong> \u26a0\ufe0f</h6>\n</blockquote>\n<h2>\ud83d\udcdc Description</h2>\n<p><strong>Mag Retention Reload</strong> is a mod for <em>Single Player T</em>***** that adds proper magazine retention to weapon reloads by automatically stowing the old magazine back into the rig if possible instead of dropping it.</p>\n<hr />\n<h2>\u2728 Features</h2>\n<ul>\n<li>Swaps the old magazine into the slot the new magazine was taken from</li>\n<li>Prevents unnecessary magazine drops during normal reloads if the magazine fits in the rig</li>\n<li>Works with both the reload hotkey and the inventory context menu</li>\n<li>Notifies you when you lose a magazine during reload</li>\n<li>Optionally ties the feature to maxed-out weapon mastering</li>\n</ul>\n<hr />\n<h2>\ud83d\udcc1 Installation</h2>\n<ul>\n<li>Download the latest release</li>\n<li>Copy the <code>BepInEx</code> folder into your SPT folder</li>\n<li>Start the game</li>\n</ul>\n<hr />\n<h2>\u2699\ufe0f Configuration</h2>\n<table>\n<thead>\n<tr>\n<th>Setting</th>\n<th>Default</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>Enabled</code></td>\n<td><code>true</code></td>\n<td>Untick to stop retaining your magazines</td>\n</tr>\n<tr>\n<td><code>Require Max Weapon Mastering</code></td>\n<td><code>false</code></td>\n<td>Only retain magazines once the weapon\u2019s mastering is maxed-out</td>\n</tr>\n<tr>\n<td><code>Notify on Dropped Magazine</code></td>\n<td><code>true</code></td>\n<td>Display a notification when a magazine is dropped during a reload</td>\n</tr>\n</tbody>\n</table>\n<hr />\n<h2>\ud83e\udd1d Fika</h2>\n<p>When playing with <strong>Fika</strong>, every client in the raid, <strong>including the headless client</strong>, should run the same version of this mod, otherwise you will run into syncing issues.\nHosts can enforce this by adding the plugin GUID to <code>client.mods.required</code> in the Fika server config, so mismatched clients are rejected when joining instead of silently desyncing:</p>\n<pre><code>\"required\": [ \"de.tosox.magretentionreload\" ]\n</code></pre>\n<hr />\n<h2>\ud83d\udcf7 Preview</h2>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://gitlab.com/Tosox/SPT-MagRetentionReload/-/raw/master/readme-res/reload.gif\" alt=\"\" /></p>\n<hr />\n<h2>\ud83d\ude4f Acknowledgements</h2>\n<ul>\n<li>Thanks to <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Lacyway\" rel=\"noreferrer noopener\"><strong>Lacyway</strong></a> for putting up with all my questions</li>\n<li>Thanks to <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/tyfon7\" rel=\"noreferrer noopener\"><strong>Tyfon</strong></a> for the Fika sync code that inspired this one</li>\n</ul>\n<hr />\n<h2>\u2615 Support</h2>\n<p>This mod is free and always will be. If it made your raids a little better, a coffee is a nice way to say thanks.</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/tosox\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://ko-fi.com/img/githubbutton_sm.svg\" alt=\"ko-fi\" /></a></p>\n<hr />\n<h2>\ud83d\udcc4 License</h2>\n<p>Distributed under the MIT License. See <code>LICENSE</code> for more information.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/A1QV32OOejU2SrtWijVASx6BLNViQ41s4VP47bu1.png",
    "forge_url": "https://sp-mod.com/mod/2589/mag-retention-reload",
-   "downloads": 5953,
-   "favourites": 48,
+   "downloads": 6173,
+   "favourites": 45,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -158356,14 +158330,14 @@
    },
    "authors": [
     {
-     "id": "79394-arch",
+     "id": 79394,
      "name": "Tosox",
      "avatar": "https://files.sp-mod.com/profile-photos/tAww2g8u6oEwIXCe2oIEv40ZD1KOqdY5JV03LVbl_256w.webp"
     }
    ],
    "source_links": [
     {
-     "url": "https://github.com/Tosox/SPT-MagRetentionReload",
+     "url": "https://gitlab.com/Tosox/SPT-MagRetentionReload",
      "label": ""
     }
    ],
@@ -158374,8 +158348,8 @@
      "description": "<ul>\n<li>Automatically suppresses UI Fixes\u2019 magazine retention reload feature</li>\n<li>Added a notification when you lose a magazine during reload</li>\n<li>Added a setting to disable this notification</li>\n<li>Added a setting to only retain magazines if the weapon\u2019s mastering is maxed-out</li>\n<li>Added a setting to disable this mod\u2019s functionality entirely</li>\n<li>Fixed magazines dropping when they no longer fit the slot the new magazine came from</li>\n</ul>\n",
      "spt_constraint": "~4.1.0",
      "fika": "compatible",
-     "downloads": 953,
-     "size": 14505,
+     "downloads": 1157,
+     "size": 14481,
      "link": "https://sp-mod.com/mod/download/2589/mag-retention-reload/1.3.0",
      "published_at": "2026-09-15T18:31:00.000000Z",
      "dependencies": []
@@ -158386,8 +158360,8 @@
      "description": "<ul>\n<li>Compatibility update for SPT 4.1</li>\n<li>Fixed bots losing their magazine on reload</li>\n</ul>\n",
      "spt_constraint": "~4.1.0",
      "fika": "compatible",
-     "downloads": 2736,
-     "size": 4980,
+     "downloads": 2742,
+     "size": 4914,
      "link": "https://sp-mod.com/mod/download/2589/mag-retention-reload/1.2.0",
      "published_at": "2026-08-10T13:39:00.000000Z",
      "dependencies": []
@@ -158398,8 +158372,8 @@
      "description": "<ul>\n<li>Fixed compatibility with FIKA</li>\n<li>Fixed losing insurance on gear due to de-syncs</li>\n<li>Fixed mag-retention reloads when triggered via the context menu</li>\n</ul>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 1460,
-     "size": 5030,
+     "downloads": 1469,
+     "size": 4963,
      "link": "https://sp-mod.com/mod/download/2589/mag-retention-reload/1.1.0",
      "published_at": "2026-07-31T15:12:00.000000Z",
      "dependencies": []
@@ -158410,8 +158384,8 @@
      "description": "<ul>\n<li>Initial release</li>\n</ul>\n",
      "spt_constraint": "~4.0.0",
      "fika": "incompatible",
-     "downloads": 804,
-     "size": 4912,
+     "downloads": 805,
+     "size": 4850,
      "link": "https://sp-mod.com/mod/download/2589/mag-retention-reload/1.0.0",
      "published_at": "2026-02-13T17:16:00.000000Z",
      "dependencies": []
@@ -158425,8 +158399,8 @@
    ],
    "dependencies": [],
    "all_dependencies": [],
-   "published_at": "2026-07-31T15:38:00.000000Z",
-   "updated_at": "2026-09-24T07:18:19.000000Z",
+   "published_at": "2026-10-07T16:52:00.000000Z",
+   "updated_at": "2026-10-07T17:39:41.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -158435,7 +158409,7 @@
     "profile_binding_notice": false
    },
    "origin": "forge",
-   "delisted": true
+   "delisted": false
   },
   {
    "id": 2590,
@@ -165616,10 +165590,10 @@
    "name": "Picture in Picture Disabler",
    "slug": "picture-in-picture-disabler",
    "teaser": "FPS maxxxing and PiP scopes begone",
-   "description_html": "<p>Tired of losing 20 FPS when aiming with optic scopes ? Boy do I have some good news for you.<br />\nBe prepared for some jank, if the performance gain is worth it is up to you !</p>\n<hr />\n<h1>What does it do ?:</h1>\n<p>When aiming with an optic scope this mod disables the optic camera, zooms the whole screen, scales the models and cuts through the meshes.<br />\nDepending on the scenarios I gain between 15 to 50 FPS.<br />\nWorks with mod scopes, reverts to vanilla PiP system with NVG and thermal scopes.</p>\n<hr />\n<h1>F12 menu:</h1>\n<h2>General:</h2>\n<ul>\n<li>Depth of Field</li>\n<li>Near blur when using NVGs aka real life fixed focal distance</li>\n<li>FOV fix like behaviour (1x is your base game settings FOV)</li>\n<li>Global scope and reticle scaling multiplier</li>\n<li>FOV transition duration</li>\n</ul>\n<h2>Whitelist and blacklist system:</h2>\n<p>Select a key for the system you want to use.<br />\nWhile ADS, press the key to add that scope to the corresponding list.<br />\nTo remove a scope, press the key while ADS.</p>\n<ul>\n<li>Whitelist = Only use the scopes in the list.</li>\n<li>Blacklist = Let the scopes added to the list use the vanilla PiP system.</li>\n</ul>\n<h2>Jank:</h2>\n<ul>\n<li>Multiple hacks to alleviate the jankiness.</li>\n</ul>\n<h2>Graphics:</h2>\n<ul>\n<li>Auto Lodbias changes when aiming, multiplies the magnification level by a value you can choose.</li>\n<li>Manual LODbias, will override the auto if set to anything else than zero.</li>\n<li>There\u2019s an option to keep the LODbias until you open your inventory/search a container. It helps alleviate the tree crossfade but has a performance cost.</li>\n</ul>\n<h2>Per scope settings:</h2>\n<ul>\n<li>Vignette settings, those only work if vignette is enabled globally.</li>\n</ul>\n<p><strong>The following settings only take effect once you\u2019ve saved them by pressing the dedicated key while ADS:</strong></p>\n<ul>\n<li>Per scope reticle size.</li>\n<li>For variable reticles you can set the minimum and maximum size.</li>\n<li>Scaling multipliers if you think that a specific scope is too big or too small for you.</li>\n</ul>\n<hr />\n<h1>Illustrations:</h1>\n<h2>Streets of T*****:</h2>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/Fiodorwellfme/PiP-Disabler/blob/main/images/Streets_Off.png?raw=true\" alt=\"\" />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/Fiodorwellfme/PiP-Disabler/blob/main/images/Streets_On.png?raw=true\" alt=\"\" /></p>\n<h2>Shoreline:</h2>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/Fiodorwellfme/PiP-Disabler/blob/main/images/Vanilla.png?raw=true\" alt=\"\" />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/Fiodorwellfme/PiP-Disabler/blob/main/images/Mod.png?raw=true\" alt=\"\" /></p>\n<p>My specs: 9800x3D, 7900XTX, 96 GB DDR5.</p>\n<hr />\n<h1>Installation:</h1>\n<ol>\n<li>\n<p>Open the downloaded zip file.</p>\n</li>\n<li>\n<p>Drag the BepInEx folder from the zip file into your SPT folder.</p>\n</li>\n</ol>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/afNPjAw.gif\" alt=\"\" /></p>\n<hr />\n<h1>Support:</h1>\n<p>Discord thread in the SPT discord : <a target=\"_blank\" class=\"external-link\" href=\"https://discord.com/channels/875684761291599922/1482076311903146054\" rel=\"noreferrer noopener\">https://discord.com/channels/875684761291599922/1482076311903146054</a></p>\n<h3>Epic\u2019s All in One is supported up to 4.0.7, 4.0.8 breaks the modded scopes so be sure to blacklist them.</h3>\n<h3>If something looks wrong and you have Fontaine\u2019s FOVfix, make sure you\u2019ve updated it to 4.0.1.</h3>\n<h3>ScopeUpdateBackport is not supported, you\u2019ll have to mess with the per-scope settings if you want to use it.</h3>\n<hr />\n<h1>Thanks:</h1>\n<p>The whole SPT and Fika teams for making this awesome project.<br />\nDrakia for the original gif and his config order automatizer.<br />\n7bpencil for his initial attempt.<br />\nFontaine for his work on the FOV and the ribcage scaling.</p>\n<hr />\n<h1>Disclaimer:</h1>\n<p>After having thought about it for a while I\u2019m going to retire from modding for the time being.</p>\n<p>I\u2019m relying way too much on AI to do most of the heavy work. Whenever I see AI art I can\u2019t stop myself from being disgusted by it and I\u2019ve come to feel the same way about AI mods.\nHence why I\u2019ve decided to stop modding altogether and dedicate the free time I have to learn C# and Unity.</p>\n<p>The only thing I\u2019ll keep updated will be the per-scope config for PiP-Disabler.</p>\n<p>If anyone wants to maintain my mods they\u2019re free to do so !\nAlthough PiP-Disabler is an absolute mess and would probably need to be rewritten from the ground up to be maintainable\u2026</p>\n",
+   "description_html": "<p>Tired of losing 20 FPS when aiming with optic scopes ? Boy do I have some good news for you.<br />\nBe prepared for some jank, if the performance gain is worth it is up to you !</p>\n<hr />\n<h1>What does it do ?:</h1>\n<p>When aiming with an optic scope this mod disables the optic camera, zooms the whole screen, scales the models and cuts through the meshes.<br />\nDepending on the scenarios I gain between 15 to 50 FPS.<br />\nWorks with mod scopes, reverts to vanilla PiP system with NVG and thermal scopes.</p>\n<hr />\n<h1>F12 menu:</h1>\n<h2>General:</h2>\n<ul>\n<li>Depth of Field</li>\n<li>Near blur when using NVGs aka real life fixed focal distance</li>\n<li>FOV fix like behaviour (1x is your base game settings FOV)</li>\n<li>Global scope and reticle scaling multiplier</li>\n<li>FOV transition duration</li>\n</ul>\n<h2>Whitelist and blacklist system:</h2>\n<p>Select a key for the system you want to use.<br />\nWhile ADS, press the key to add that scope to the corresponding list.<br />\nTo remove a scope, press the key while ADS.</p>\n<ul>\n<li>Whitelist = Only use the scopes in the list.</li>\n<li>Blacklist = Let the scopes added to the list use the vanilla PiP system.</li>\n</ul>\n<h2>Jank:</h2>\n<ul>\n<li>Multiple hacks to alleviate the jankiness.</li>\n</ul>\n<h2>Graphics:</h2>\n<ul>\n<li>Auto Lodbias changes when aiming, multiplies the magnification level by a value you can choose.</li>\n<li>Manual LODbias, will override the auto if set to anything else than zero.</li>\n<li>There\u2019s an option to keep the LODbias until you open your inventory/search a container. It helps alleviate the tree crossfade but has a performance cost.</li>\n</ul>\n<h2>Per scope settings:</h2>\n<ul>\n<li>Vignette settings, those only work if vignette is enabled globally.</li>\n</ul>\n<p><strong>The following settings only take effect once you\u2019ve saved them by pressing the dedicated key while ADS:</strong></p>\n<ul>\n<li>Per scope reticle size.</li>\n<li>For variable reticles you can set the minimum and maximum size.</li>\n<li>Scaling multipliers if you think that a specific scope is too big or too small for you.</li>\n</ul>\n<hr />\n<h1>Illustrations:</h1>\n<h2>Streets of T*****:</h2>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/Fiodorwellfme/PiP-Disabler/blob/main/images/Streets_Off.png?raw=true\" alt=\"\" />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/Fiodorwellfme/PiP-Disabler/blob/main/images/Streets_On.png?raw=true\" alt=\"\" /></p>\n<h2>Shoreline:</h2>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/Fiodorwellfme/PiP-Disabler/blob/main/images/Vanilla.png?raw=true\" alt=\"\" />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/Fiodorwellfme/PiP-Disabler/blob/main/images/Mod.png?raw=true\" alt=\"\" /></p>\n<p>My specs: 9800x3D, 7900XTX, 96 GB DDR5.</p>\n<hr />\n<h1>Installation:</h1>\n<ol>\n<li>\n<p>Open the downloaded zip file.</p>\n</li>\n<li>\n<p>Drag the BepInEx folder from the zip file into your SPT folder.</p>\n</li>\n</ol>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/afNPjAw.gif\" alt=\"\" /></p>\n<hr />\n<h1>Support:</h1>\n<p>Discord thread in the SPT discord : <a target=\"_blank\" class=\"external-link\" href=\"https://discord.com/channels/875684761291599922/1482076311903146054\" rel=\"noreferrer noopener\">https://discord.com/channels/875684761291599922/1482076311903146054</a></p>\n<h3>Epic\u2019s All in One is not supported anymore due to variable scopes having scaling issues.</h3>\n<hr />\n<h1>Thanks:</h1>\n<p>The whole SPT and Fika teams for making this awesome project.<br />\nDrakia for the original gif and his config order automatizer.<br />\n7bpencil for his initial attempt.<br />\nFontaine for his work on the FOV and the ribcage scaling.</p>\n<hr />\n<h1>Disclaimer:</h1>\n<p>After having thought about it for a while I\u2019m going to retire from modding for the time being.</p>\n<p>I\u2019m relying way too much on AI to do most of the heavy work. Whenever I see AI art I can\u2019t stop myself from being disgusted by it and I\u2019ve come to feel the same way about AI mods.\nHence why I\u2019ve decided to stop modding altogether and dedicate the free time I have to learn C# and Unity.</p>\n<p>The only thing I\u2019ll keep updated will be the per-scope config for PiP-Disabler.</p>\n<p>If anyone wants to maintain my mods they\u2019re free to do so !\nAlthough PiP-Disabler is an absolute mess and would probably need to be rewritten from the ground up to be maintainable\u2026</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/3VfNC0kP1YGZy8X01VrVgJfL3lF0Tfk8Ck41kScY.png",
    "forge_url": "https://sp-mod.com/mod/2667/picture-in-picture-disabler",
-   "downloads": 27172,
+   "downloads": 27438,
    "favourites": 116,
    "featured": false,
    "fika": true,
@@ -165653,7 +165627,7 @@
      "description": "<h1>4.1 compatibility update.</h1>\n<p>Scaling should happen closer to the FOV changes, less laggy feeling.\nHopefully there\u2019s more to it than pure placebo.</p>\n<p>Mod enabling or disabling should work better than before.</p>\n<p>When using the hotkey to disable the mod you need to un-ADS and re-ADS for it to apply.</p>\n<p>Tested and compatible with most mods except for Epic\u2019s AiO, his variable reticles don\u2019t render in the right aspect ratio and I don\u2019t know why, if someone wants to take a stab at it hit me with a PR.</p>\n<h3>THANKS:</h3>\n<p>Thanks to the 2 nice testers, notcoffin and CTPAX.<br />\nA round of applause!</p>\n",
      "spt_constraint": "~4.1",
      "fika": "compatible",
-     "downloads": 492,
+     "downloads": 745,
      "size": 85851,
      "link": "https://sp-mod.com/mod/download/2667/picture-in-picture-disabler/2.0.0",
      "published_at": "2026-10-04T17:25:00.000000Z",
@@ -165665,7 +165639,7 @@
      "description": "<h2>Added</h2>\n<ul>\n<li>\n<p>New toggle in config for FOV Fix Behaviour aka 1x FOV is Equal to player settings FOV.<br />\n2 global weapon/reticle multipliers so users can set the scaling they feel comfortable with.<br />\nAdded at the behest of tooobles and ms. r3mains</p>\n</li>\n<li>\n<p>Added dual Kawase blur to mimic DOF and NVG focal distance<br />\nThanks to Borkel for giving me the idea via his NVG mod (go download it it\u2019s awesome).\n<img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/Fiodorwellfme/PiP-Disabler/blob/main/images/Blur.png?raw=true\" alt=\"alt text\" /></p>\n</li>\n<li>\n<p>Changing per scope vignette settings now applies them instantly.</p>\n</li>\n</ul>\n<h2>Fixed</h2>\n<ul>\n<li>Fixed reticle/scope effects display when using supersampling.\nThanks to Piirakka and bruh1045(ADOOO) for reporting it</li>\n</ul>\n",
      "spt_constraint": "~4 <4.1.0",
      "fika": "compatible",
-     "downloads": 11212,
+     "downloads": 11225,
      "size": 90511,
      "link": "https://sp-mod.com/mod/download/2667/picture-in-picture-disabler/1.5.0",
      "published_at": "2026-06-11T09:02:00.000000Z",
@@ -165837,7 +165811,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-04-19T09:22:00.000000Z",
-   "updated_at": "2026-10-05T15:44:58.000000Z",
+   "updated_at": "2026-10-07T19:00:08.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -167706,7 +167680,7 @@
    "description_html": "<p>FoodStampZ313\u2019s Old School Labs Reborn</p>\n<p>Brings back the glory days of Labs by restoring unlimited-use colored access cards, rebalancing old-school keycard values, and offering optional configurable Labs economy tweaks.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/ev5nirJ.png\" alt=\"Screenshot 1\" /></p>\n<p>FEATURES</p>\n<hr />\n<hr />\n<p><em>This mod specializes in restoring the old-school Labs experience.</em></p>\n<hr />\n<p>\u2022 Unlimited Use Colored Labs Keycards</p>\n<ul>\n<li>Red Keycard</li>\n<li>Black Keycard</li>\n<li>Green Keycard</li>\n<li>Blue Keycard</li>\n<li>Yellow Keycard</li>\n<li>Violet Keycard</li>\n</ul>\n<hr />\n<p>\u2022 Restored Old-School Keycard Economy</p>\n<p>Each colored keycard has configurable handbook/flea values to bring back that rare and prestigious Labs loot feeling.</p>\n<hr />\n<p>\u2022 Fully Configurable</p>\n<p>Every major feature can be adjusted inside:\nconfig/config.json</p>\n<p>INSTALLATION</p>\n<ol>\n<li>Download the mod.</li>\n<li>Extract the folder.</li>\n<li>Place the folder inside:\nSPT/user/mods/</li>\n<li>Start your SPT server.</li>\n</ol>\n<hr />\n<p>COMPATIBILITY</p>\n<p>Built for SPT 4.0.13\nServer-side only.</p>\n<p>Should work with most mods unless another mod directly overwrites the same keycard item values or prices.</p>\n<hr />\n<p>Issues:</p>\n<p>1.) UI issue FIXED</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/BtHnFbU.png\" alt=\"Screenshot\" /></p>\n<p>2.) Spawn buff functionality is currently being reworked for a future update.</p>\n<p>3.) Therapist sales functionality is planned for a future update. See the roadmap below for more information.</p>\n<p>Inspired by the original Old Colored Keycards concept by MrFums.<br />\nRebuilt and expanded for modern SPT.</p>\n<hr />\n<hr />\n<h2>Feedback</h2>\n<p>This is my first public SPT mod release, so all feedback, bug reports, balancing suggestions, compatibility reports, and feature ideas are greatly appreciated!</p>\n<hr />\n<h2>Roadmap</h2>\n<h3>v1.1.0 \u2014 Labs Keycard Room Buffs</h3>\n<ul>\n<li>Optional buffs focused around colored Labs keycard rooms</li>\n<li>Configurable high-value item weighting</li>\n<li>Optional rare loot tuning for Labs-specific rewards</li>\n<li>Designed to avoid replacing general loot mods like SVM</li>\n</ul>\n<h3>v1.2.0 \u2014 Optional Therapist Sales</h3>\n<ul>\n<li>Optional config setting for Therapist to sell Labs keycards</li>\n<li>Configurable prices and stock limits</li>\n<li>Possible barter trade support</li>\n<li>Designed to support configurable prestige economy balancing</li>\n</ul>\n<h3>v2.0.0 \u2014 Dynamic Labs Event Mode</h3>\n<ul>\n<li>Optional high-risk/high-reward Labs event mode</li>\n<li>Possible Raider/boss spawn tuning</li>\n<li>Possible rotating Labs event presets</li>\n<li>Long-term goal: cleaner use-counter handling</li>\n</ul>\n<hr />\n<hr />\n",
    "thumbnail": "https://files.sp-mod.com/mods/UqaTUjdmQdxRNYdaryXNhUmJYQghJZkiiVtd73o8.png",
    "forge_url": "https://sp-mod.com/mod/2683/foodstampz313s-old-school-labs-reborn",
-   "downloads": 3523,
+   "downloads": 3528,
    "favourites": 15,
    "featured": false,
    "fika": false,
@@ -167740,7 +167714,7 @@
      "description": "<p>path correction</p>\n",
      "spt_constraint": "4.0.13",
      "fika": "unknown",
-     "downloads": 3033,
+     "downloads": 3036,
      "size": 11023,
      "link": "https://sp-mod.com/mod/download/2683/foodstampz313s-old-school-labs-reborn/1.0.6",
      "published_at": "2026-05-07T23:06:00.000000Z",
@@ -167752,7 +167726,7 @@
      "description": "<p>ui number fix (999999) to 0 removing the use count item ui</p>\n<p>added line of code</p>\n<p>\u2018UnlimitedUsesValue\u201c: 0,\u2019</p>\n",
      "spt_constraint": "4.0.13",
      "fika": "unknown",
-     "downloads": 220,
+     "downloads": 222,
      "size": null,
      "link": "https://sp-mod.com/mod/download/2683/foodstampz313s-old-school-labs-reborn/1.0.5",
      "published_at": "2026-05-07T05:49:00.000000Z",
@@ -167767,7 +167741,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-05-06T23:00:00.000000Z",
-   "updated_at": "2026-10-01T08:44:42.000000Z",
+   "updated_at": "2026-10-07T18:26:29.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -194006,11 +193980,11 @@
    "name": "ECOTI - Enhanced Clip-On Thermal Imager",
    "slug": "ecoti-enhanced-clip-on-thermal-imager",
    "teaser": "A clip-on thermal imager for your night vision. It clamps to the objective and fuses heat into the tube's circle, so hot shapes stand out while the night vision image still shows through - rather than replacing your view with a thermal one.",
-   "description_html": "<p>A clip-on thermal imager for SPT, modelled on the Safran DSI AN/PAS-29B (3D model purchased from\n3DMA). It clamps to a night vision device and fuses thermal <strong>into the tube\u2019s circle</strong>, like a real\nclip-on, instead of switching your view to thermal. Inspired by the game Operator.</p>\n<div class=\"tabset\"><div id=\"tabset-2-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Outline mode</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/thermal-outline.jpg\" alt=\"Outline mode\" /></p></div></div>\n<div id=\"tabset-2-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Full mode</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/thermal-on.jpg\" alt=\"Full mode\" /></p></div></div>\n<div id=\"tabset-2-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Through a scope</div>\n<div class=\"tab-content\"><p>Requires <strong>Magnify With Optic</strong> turned on in F12.\n<img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/thermal-scope-outline.jpg\" alt=\"Through a scope at 6x\" /></p></div></div>\n<div id=\"tabset-2-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Scope, Full mode</div>\n<div class=\"tab-content\"><p>Requires <strong>Magnify With Optic</strong> turned on in F12.\n<img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/thermal-scope-full.jpg\" alt=\"Through a scope at 6x, Full mode\" /></p></div></div>\n<div id=\"tabset-2-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Imager off</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/thermal-off.jpg\" alt=\"Imager off\" /></p></div></div></div>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">What it does</div>\n<div class=\"tab-content\"><ul>\n<li>Draws thermal inside a circle within the night vision tube, so heat sits in the tube instead of\nreplacing your view.</li>\n<li><strong>Two modes.</strong> Outline draws the edges of hot things, Full fills them in. <code>Alt+N</code> switches\nbetween them and the display names the new mode.</li>\n<li><strong>Accurate heat.</strong> Heat comes from the game\u2019s own heat value for each material, so people, fires\nand a barrel or suppressor hot from firing show, while cold metal and glossy surfaces stay dark.</li>\n<li><strong>Powers up like the real device.</strong> <code>Ctrl+N</code> shows <code>Initializing...</code>, then the thermal comes in\nwith a calibration click; powering down shows <code>Power Off...</code>.</li>\n<li>Optional <strong>magnified optic</strong> mode draws the heat through a magnified scope\u2019s own lens at the\nscope\u2019s zoom. Off by default. Behind a thermal sight such as the REAP-IR or RS-32 the imager\nstands down.</li>\n<li><strong>Light on frames.</strong> Since 3.2.0 its own cost is nothing measurable at 1x and about 0.05 ms a\nframe through a scope (0.4 to 0.6 ms in 3.1.0). The README has the full numbers.</li>\n<li>Supports <strong>PVS-14, N-15, GPNVG-18, PNV-10T and PNV-57E</strong>, and any other night vision goggle\nthrough a small JSON file. See Addons.</li>\n<li><strong>Tune it in game.</strong> Mount pose and thermal circle are adjusted live and saved to the server.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Requirements</div>\n<div class=\"tab-content\"><ul>\n<li><strong>SPT 4.0 or 4.1</strong>, separate downloads: <code>2.x</code> for 4.0, <code>3.x</code> for 4.1. One build cannot serve\nboth.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Installing</div>\n<div class=\"tab-content\"><p>Open the archive with 7-Zip and drag <strong>all</strong> of its contents into your SPT folder:</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/3N6gTe2.gif\" alt=\"mod install\" /></p>\n<blockquote>\n<p>\u26a0\ufe0f This mod adds an item, so it <strong>cannot be cleanly removed from a profile</strong> once one has spawned\nor been bought.</p>\n</blockquote></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Addons</div>\n<div class=\"tab-content\"><p>Each goggle has a small JSON file in <code>nvghostcompat/</code> that says where the imager mounts. Adding one\nneeds no mod update.</p>\n<p>Goggles from <strong>other mods</strong> are separate downloads, one per SPT version, installed the same way as\nthe mod:</p>\n<p>Official Addons:</p>\n<table>\n<thead>\n<tr>\n<th>Addon</th>\n<th>Needs</th>\n<th>Adds</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>LennoxP90-COTI-addon-C11-TrueNorth</code></td>\n<td>C11 - True North</td>\n<td>Argus Chimera (three variants), ITT AN/PVS-5A, ACTinBlack DTNVS</td>\n</tr>\n<tr>\n<td><code>LennoxP90-COTI-addon-WTT-CAG</code></td>\n<td>WTT - CAG</td>\n<td>ACTinBlack DTNVS, white and green phosphor</td>\n</tr>\n<tr>\n<td><code>LennoxP90-COTI-addon-WTT-ContentBackport</code></td>\n<td>WTT - ContentBackport</td>\n<td>AN/PVS-31A</td>\n</tr>\n</tbody>\n</table>\n<p>Download them from the addons section on Forge for your SPT version.</p>\n<p><strong>A goggle without a file still works:</strong> one is written automatically from the closest known\ndevice, ready to fine-tune.</p>\n<p><strong>To write your own</strong>, see\n<a target=\"_blank\" class=\"external-link\" href=\"https://github.com/LennoxP90/SPT-COTI/blob/main/ADDONS.md\" rel=\"noreferrer noopener\">ADDONS.md</a>.</p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Tuning</div>\n<div class=\"tab-content\"><p>All editors save to the server, so nothing is lost on the next launch.</p>\n<p><strong>Mount editor (SPT 4.1, 3.0.3 and later)</strong> - open SIC and pick <strong>ECOTI -&gt; Mount editor</strong>. Choose a\ngoggle and its variant, then position the imager over a 3D view you can orbit and zoom, and pick the\nthermal overlay by tube count. <strong>Save and push</strong> re-poses a running game straight away, no restart.\n<strong>Export addon</strong> packages a goggle from another mod as a drag-over addon.</p>\n<p><strong>In game</strong> - inspect a goggle with the imager attached and press <strong>COTI Pose</strong>. Position, rotation,\nscale and anchor bone over a 3D preview. The flip test checks the imager moves with the tube.</p>\n<p><strong>Thermal circle</strong> - <strong>F12 -&gt; Mask Editor -&gt; Open</strong>. Stays open after F12 closes, so you can adjust\nthe circle in a raid while looking through the goggles, using the numeric keypad. Saves as you go.</p></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Client Settings</div>\n<div class=\"tab-content\"><p>On the <strong>F12</strong> page. Less common image settings are under <strong>Advanced</strong>.</p>\n<p><strong>Image</strong> (applies to every goggle)</p>\n<ul>\n<li><strong>Enabled</strong> - master switch. Safe to toggle mid-raid.</li>\n<li><strong>Heat Threshold</strong> - how hot something must be to show. Raise it if the overlay washes the\npicture out, lower it to pick up cooler things.</li>\n<li><strong>Overlay Intensity</strong> - brightness of the heat. Lower it if bodies read as solid blobs.</li>\n<li><strong>Full Mode Fill (%)</strong> - how bright Full mode fills a hot shape. 100 is solid.</li>\n<li><strong>Magnify With Optic</strong> - off by default. Draws the heat through a magnified scope\u2019s lens at its\nzoom, at the cost of a second render while aiming.</li>\n<li><strong>Magnified Intensity Scale</strong> - brightness inside a magnified scope, as a fraction of Overlay\nIntensity.</li>\n<li><strong>Sensor Resolution (rows)</strong> - higher keeps distant contacts visible, lower saves frames.</li>\n<li><strong>Sensor Refresh (Hz)</strong> - the thermal updates at this rate and holds in between, as a real\nlow-refresh core does. Default 60; 0 updates every frame.</li>\n<li><strong>Thermal Range (m)</strong> (Advanced) - how far the thermal draws. 0, the default, is as far as you can\nsee.</li>\n</ul>\n<p><strong>Mask Editor</strong></p>\n<ul>\n<li><strong>Open</strong> - opens the thermal circle editor.</li>\n</ul>\n<p><strong>Controls</strong></p>\n<ul>\n<li><strong>Power Toggle</strong> - default <code>Ctrl+N</code>. Switches the imager without touching the night vision. Keep\na modifier: a bare <code>N</code> would toggle the goggles too.</li>\n<li><strong>Mode Toggle</strong> - default <code>Alt+N</code>. Switches Outline and Full.</li>\n<li><strong>Thermal Mode</strong> - the mode the imager powers up in.</li>\n</ul>\n<p><strong>Power Sequence</strong></p>\n<ul>\n<li><strong>Enabled</strong> - on by default. Off makes <code>Ctrl+N</code> instant, with no messages or click.</li>\n<li><strong>Initializing / Warm-up Gap / Power Off Seconds</strong> - stage lengths. Defaults 1.2, 0.3 and 1.5.</li>\n<li><strong>Click Volume</strong> - on top of the game\u2019s own volume. 0 mutes it.</li>\n</ul>\n<p><strong>Debug</strong></p>\n<ul>\n<li><strong>Verbose Logging</strong> - off for normal play. Turn on when reporting a problem.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Server Settings</div>\n<div class=\"tab-content\"><p><strong>SPT 4.1:</strong> open SIC and pick <strong>ECOTI</strong>. Each section says when it applies: trader changes reach\nthe running server on save (relaunch the game to see them), loot applies at the next raid, and the\nhost editor needs a server restart. The same settings are in SIC\u2019s Config Editor.</p>\n<p><strong>SPT 4.0:</strong> edit <code>SPT/user/mods/LennoxP90-COTI/config/config.json</code> and restart the server. On 4.1\nthe file is <code>SPT_Runtime/user/mods/LennoxP90-COTI/config/config.json</code>, which SIC writes for you.</p>\n<ul>\n<li><strong><code>trader.loyaltyLevel</code></strong> - Peacekeeper loyalty level. Default <code>4</code>.</li>\n<li><strong><code>trader.priceUsd</code></strong> - price in dollars. Default <code>2000</code>.</li>\n<li><strong><code>trader.buyLimit</code></strong> - purchases per profile. Default <code>3</code>.</li>\n<li><strong><code>loot.enabled</code></strong> - <code>false</code> makes the trader the only source.</li>\n<li><strong><code>loot.weightFraction</code></strong> - spawn weight relative to the night vision at each spot. Default\n<code>0.25</code>.</li>\n<li><strong><code>hostEditor.autoDiscover</code></strong> - default <code>true</code>. Writes a starter file for any night vision without\none.</li>\n<li><strong><code>flea.playerSellable</code></strong> - default <code>false</code>, so the only flea listing is Peacekeeper\u2019s. <code>true</code> adds\nplayer listings, which SPT prices at roughly two to three times Peacekeeper\u2019s price.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-8\" class=\"tab-panel\"><div class=\"tab-title\">Recommended Mods</div>\n<div class=\"tab-content\"><p><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/954/borkels-realistic-night-vision-goggles-nvgs-and-t-7\" rel=\"noreferrer noopener\">Borkel\u2019s Realistic NVGs</a></p></div></div>\n<div id=\"tabset-1-panel-9\" class=\"tab-panel\"><div class=\"tab-title\">Credits</div>\n<div class=\"tab-content\"><p>3D model by <a target=\"_blank\" class=\"external-link\" href=\"https://www.3dmilitaryassets.com/\" rel=\"noreferrer noopener\">3D Military Assets</a>, used under their Extended\nLicence.</p></div></div></div>\n",
+   "description_html": "<p>A clip-on thermal imager for SPT, modelled on the Safran DSI AN/PAS-29B (3D model purchased from\n3DMA). It clamps to a night vision device and fuses thermal <strong>into the tube\u2019s circle</strong>, like a real\nclip-on, instead of switching your view to thermal. Inspired by the game Operator.</p>\n<div class=\"tabset\"><div id=\"tabset-3-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Outline mode</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/thermal-outline.jpg\" alt=\"Outline mode\" /></p></div></div>\n<div id=\"tabset-3-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Full mode</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/thermal-on.jpg\" alt=\"Full mode\" /></p></div></div>\n<div id=\"tabset-3-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Through a scope</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/thermal-scope-outline.jpg\" alt=\"Through a scope at 6x\" /></p></div></div>\n<div id=\"tabset-3-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Scope, Full mode</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/thermal-scope-full.jpg\" alt=\"Through a scope at 6x, Full mode\" /></p></div></div>\n<div id=\"tabset-3-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Imager off</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/thermal-off.jpg\" alt=\"Imager off\" /></p></div></div></div>\n<div class=\"tabset\"><div id=\"tabset-2-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Window reflections</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/330-window-reflection.jpg\" alt=\"A window at night: Reflections beside Plain\" /></p></div></div>\n<div id=\"tabset-2-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Scope eyepiece</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/330-scope-eyepiece.jpg\" alt=\"A scope eyepiece reflecting the shooter, Reflections against Plain\" /></p></div></div>\n<div id=\"tabset-2-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Scope glass toggle</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/330-scope-toggle.jpg\" alt=\"Scope Glass Reflections on, off, on\" /></p></div></div>\n<div id=\"tabset-2-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">A COTI on every tube</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/330-multitube-view.jpg\" alt=\"Four COTIs on a GPNVG-18, first person\" /></p></div></div>\n<div id=\"tabset-2-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Four on a GPNVG-18</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/330-multitube-hardware.jpg\" alt=\"A GPNVG-18 with a COTI under each tube\" /></p></div></div>\n<div id=\"tabset-2-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Slots by position</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/330-slot-labels.jpg\" alt=\"The four slots in the inspect window\" /></p></div></div></div>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">What it does</div>\n<div class=\"tab-content\"><ul>\n<li>Draws thermal inside a circle within the night vision tube, so heat sits in the tube instead of\nreplacing your view.</li>\n<li><strong>Two modes.</strong> Outline draws the edges of hot things, Full fills them in. <code>Alt+N</code> switches\nbetween them and the display names the new mode.</li>\n<li><strong>Heat from what is actually happening, read against the air.</strong> People read at their body\ntemperature, burning fires read hot, and a barrel or suppressor heats only from firing. Hotter\nreads brighter, so people stand out most on a cold night and less on a hot day. Cold metal, glossy\nsurfaces, unlit lamps and grenades stay dark, and corpses keep the heat they had at death.</li>\n<li><strong>Glass blocks heat, and reflects it.</strong> A window hides anything warm behind it. With Glass on\nReflections (the default) the pane also mirrors the people in front of it, you included, faint\nface-on and strong at a shallow angle. A magnified scope\u2019s own glass does the same, so your\neyepiece seen from outside shows your head and shoulders.</li>\n<li><strong>Lit searchlights read hot, lit flashlights faintly warm.</strong> Every other lamp stays cold, and\nlasers and infrared illuminators stay cold too. Each has its own switch in F12.</li>\n<li><strong>Powers up like the real device.</strong> <code>Ctrl+N</code> shows <code>Initializing...</code>, then the thermal comes in\nwith a calibration click; powering down shows <code>Power Off...</code>.</li>\n<li>Optional <strong>magnified optic</strong> mode draws the heat through a magnified scope\u2019s own lens at the\nscope\u2019s zoom. Off by default. Behind a thermal sight such as the REAP-IR or RS-32 the imager\nstands down.</li>\n<li><strong>Light on frames.</strong> Measured on SPT 4.1 against 3.1.0 on an empty test range, COTI\u2019s own cost\nwent from about 0.5 ms a frame to under 0.1 ms at 1x, and from about 0.6 ms to about 0.13 ms\nthrough a magnified scope, with no measurable GPU cost. Reflections, scope glass and searchlight\nheat measured free. The README has the full numbers.</li>\n<li><strong>One per tube</strong> (SPT 4.1, 3.3.0 and later). Every tube of a goggle takes its own imager, in any\ncombination from one to four, each drawing its own circle centred in the tube. <code>Ctrl+N</code> and\n<code>Alt+N</code> drive them all together.</li>\n<li><strong>Slots named by position</strong>, left to right: ECOTI OL, ECOTI L, ECOTI R, ECOTI OR on a quad such as\nthe GPNVG-18, ECOTI L and ECOTI R on a dual or the AN/PVS-5A, and ECOTI on a mono. A COTI you\nalready had fitted stays put, in ECOTI R.</li>\n<li>Supports <strong>PVS-14, N-15, GPNVG-18, PNV-10T and PNV-57E</strong>, and any other night vision goggle\nthrough a small JSON file. See Addons.</li>\n<li><strong>Posed in a 3D editor.</strong> Each tube\u2019s mount is set in the server\u2019s web UI and saved to the\nserver. The circles are measured from Borkel\u2019s masks at their default size, with nothing to tune\nin COTI.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Requirements</div>\n<div class=\"tab-content\"><ul>\n<li><strong>SPT 4.0 or 4.1</strong>, separate downloads: <code>2.x</code> for 4.0, <code>3.x</code> for 4.1. One build cannot serve\nboth. SPT 4.0 stays on 2.0.2; everything new from 3.3.0 is SPT 4.1 only.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Installing</div>\n<div class=\"tab-content\"><p>Open the archive with 7-Zip and drag <strong>all</strong> of its contents into your SPT folder:</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/3N6gTe2.gif\" alt=\"mod install\" /></p>\n<blockquote>\n<p>\u26a0\ufe0f This mod adds an item, so it <strong>cannot be cleanly removed from a profile</strong> once one has spawned\nor been bought.</p>\n</blockquote></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Addons</div>\n<div class=\"tab-content\"><p>Each goggle has a small JSON file in <code>nvghostcompat/</code> that says where the imager mounts. Adding one\nneeds no mod update.</p>\n<p>Goggles from <strong>other mods</strong> are separate downloads, one per SPT version, installed the same way as\nthe mod:</p>\n<p>Official Addons:</p>\n<table>\n<thead>\n<tr>\n<th>Addon</th>\n<th>Needs</th>\n<th>Adds</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>LennoxP90-COTI-addon-C11-TrueNorth</code></td>\n<td>C11 - True North</td>\n<td>Argus Chimera (three variants), ITT AN/PVS-5A, ACTinBlack DTNVS</td>\n</tr>\n<tr>\n<td><code>LennoxP90-COTI-addon-WTT-CAG</code></td>\n<td>WTT - CAG</td>\n<td>ACTinBlack DTNVS, white and green phosphor</td>\n</tr>\n<tr>\n<td><code>LennoxP90-COTI-addon-WTT-ContentBackport</code></td>\n<td>WTT - ContentBackport</td>\n<td>AN/PVS-31A</td>\n</tr>\n<tr>\n<td><code>LennoxP90-COTI-addon-ISB-Aishi</code></td>\n<td>ISB Aishi</td>\n<td>L3Harris GPNVG-18, L3Harris PVS-31A</td>\n</tr>\n<tr>\n<td><code>LennoxP90-COTI-addon-WTT-Artem</code> (new)</td>\n<td>WTT - Artem</td>\n<td>GPNVG-18 (White, OD, Black), PVS-31, PVS-31 (Wide)</td>\n</tr>\n</tbody>\n</table>\n<p>Every addon has a pose for each tube, so with COTI 3.3.0 a quad takes four COTIs and a dual two. On\nan older COTI the same files give one COTI on the home tube.</p>\n<blockquote>\n<p>\u26a0\ufe0f Take the extra COTIs off before going back to a COTI older than 3.3.0, or to an older addon\nfile. COTIs in ECOTI L, OR or OL are lost after one saved raid, with no error.</p>\n</blockquote>\n<p>Download them from the addons section on Forge for your SPT version.</p>\n<p><strong>A goggle without a file still works:</strong> one is written automatically from the closest known\ndevice, ready to fine-tune.</p>\n<p><strong>To write your own</strong>, see\n<a target=\"_blank\" class=\"external-link\" href=\"https://github.com/LennoxP90/SPT-COTI/blob/main/ADDONS.md\" rel=\"noreferrer noopener\">ADDONS.md</a>.</p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Tuning</div>\n<div class=\"tab-content\"><p><strong>Mount editor (SPT 4.1)</strong> - open SIC and pick <strong>ECOTI -&gt; Mount editor</strong>. Choose a goggle and its\nvariant, then pose the imager on each tube over a 3D view you can orbit and zoom. There is one tab\nper tube, <strong>Mirror from partner</strong> fills a tube from the one opposite, and <strong>Type</strong> shows the goggle file\u2019s\nlayout and can change it, which is how a file that still has one tube gets its others. A game-sized screen shows every tube\u2019s circle and the boot\ntext, and dragging a tube\u2019s text moves it if a goggle\u2019s housing hides it. <strong>Save and push</strong> saves to the server\nand re-poses a running game straight away, no restart. <strong>Export addon</strong> packages a goggle from\nanother mod as a drag-over addon.</p>\n<p>The thermal circles are measured from Borkel\u2019s masks and fixed per goggle type, so there is nothing\nto tune in COTI. The circles assume BorkelRNVG\u2019s default mask size. A player who changes Borkel\u2019s F12 Mask size multiplier moves Borkel\u2019s holes and not COTI\u2019s circles, most on the outer quad tubes.</p></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Client Settings</div>\n<div class=\"tab-content\"><p>On the <strong>F12</strong> page. Less common image settings are under <strong>Advanced</strong>.</p>\n<p><strong>Image</strong> (applies to every goggle)</p>\n<ul>\n<li><strong>Enabled</strong> - master switch. Safe to toggle mid-raid.</li>\n<li><strong>Heat Threshold</strong> - how hot something must be to show. Raise it if the overlay washes the\npicture out, lower it to pick up cooler things.</li>\n<li><strong>Overlay Intensity</strong> - brightness of the heat. Lower it if bodies read as solid blobs.</li>\n<li><strong>Full Mode Fill (%)</strong> - how bright Full mode fills a hot shape. Default 45; 100 is solid.</li>\n<li><strong>Glass</strong> - default <code>Reflections</code>. Glass blocks heat either way; <code>Plain</code> draws the pane blank,\n<code>Reflections</code> also mirrors bodies in front of it. Measured free, so pick by taste.</li>\n<li><strong>Scope Glass Reflections</strong> - on by default. Lets a magnified scope\u2019s glass reflect like a window\nwhile Glass is on Reflections. Measured free.</li>\n<li><strong>Heat Brightness</strong> - default 1, from 0.25 to 2. Dims or brightens how heat draws without changing\nwhat is detected.</li>\n<li><strong>Render Flashlight Heat</strong> - on by default. Off, every flashlight reads cold.</li>\n<li><strong>Render Searchlight Heat</strong> - on by default. Off, searchlights read cold too. Measured free.</li>\n<li><strong>Magnify With Optic</strong> - off by default. Draws the heat through a magnified scope\u2019s lens at its\nzoom, at the cost of a second render while aiming. <strong>Potential FPS improvement:</strong> leave it off.</li>\n<li><strong>Magnified Intensity Scale</strong> - brightness inside a magnified scope, as a fraction of Overlay\nIntensity.</li>\n<li><strong>Sensor Resolution (rows)</strong> - higher keeps distant contacts visible.</li>\n<li><strong>Sensor Refresh (Hz)</strong> - the thermal updates at this rate and holds in between, as a real\nlow-refresh core does. Default 60; 0 updates every frame. <strong>Potential FPS improvement:</strong> keep it at\n60 or lower.</li>\n<li><strong>Thermal Range (m)</strong> (Advanced) - how far the thermal draws. 0, the default, is as far as you can\nsee.</li>\n</ul>\n<p><strong>Controls</strong></p>\n<ul>\n<li><strong>Power Toggle</strong> - default <code>Ctrl+N</code>. Switches the imager without touching the night vision. Keep\na modifier: a bare <code>N</code> would toggle the goggles too.</li>\n<li><strong>Mode Toggle</strong> - default <code>Alt+N</code>. Switches Outline and Full.</li>\n<li><strong>Thermal Mode</strong> - the mode the imager powers up in.</li>\n</ul>\n<p><strong>Power Sequence</strong></p>\n<ul>\n<li><strong>Enabled</strong> - on by default. Off makes <code>Ctrl+N</code> instant, with no messages or click.</li>\n<li><strong>Initializing / Warm-up Gap / Power Off Seconds</strong> - stage lengths. Defaults 1.2, 0.3 and 1.5.</li>\n<li><strong>Click Volume</strong> - on top of the game\u2019s own volume. 0 mutes it.</li>\n</ul>\n<p><strong>Debug</strong></p>\n<ul>\n<li><strong>Verbose Logging</strong> - off for normal play. Turn on when reporting a problem.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Server Settings</div>\n<div class=\"tab-content\"><p><strong>SPT 4.1:</strong> open SIC and pick <strong>ECOTI</strong>. Each section says when it applies: trader changes reach\nthe running server on save (relaunch the game to see them), loot applies at the next raid, and the\nhost editor needs a server restart. The same settings are in SIC\u2019s Config Editor.</p>\n<p><strong>SPT 4.0:</strong> edit <code>SPT/user/mods/LennoxP90-COTI/config/config.json</code> and restart the server. On 4.1\nthe file is <code>SPT_Runtime/user/mods/LennoxP90-COTI/config/config.json</code>, which SIC writes for you.</p>\n<ul>\n<li><strong><code>trader.loyaltyLevel</code></strong> - Peacekeeper loyalty level. Default <code>4</code>.</li>\n<li><strong><code>trader.priceUsd</code></strong> - price in dollars. Default <code>2000</code>.</li>\n<li><strong><code>trader.buyLimit</code></strong> - purchases per profile. Default <code>3</code>.</li>\n<li><strong><code>loot.enabled</code></strong> - <code>false</code> makes the trader the only source.</li>\n<li><strong><code>loot.weightFraction</code></strong> - spawn weight relative to the night vision at each spot. Default\n<code>0.25</code>.</li>\n<li><strong><code>hostEditor.autoDiscover</code></strong> - default <code>true</code>. Writes a starter file for any night vision without\none.</li>\n<li><strong><code>flea.playerSellable</code></strong> - default <code>false</code>, so the only flea listing is Peacekeeper\u2019s. <code>true</code> adds\nplayer listings, which SPT prices at roughly two to three times Peacekeeper\u2019s price.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-8\" class=\"tab-panel\"><div class=\"tab-title\">Recommended Mods</div>\n<div class=\"tab-content\"><p><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/954/borkels-realistic-night-vision-goggles-nvgs-and-t-7\" rel=\"noreferrer noopener\">Borkel\u2019s Realistic NVGs</a></p></div></div>\n<div id=\"tabset-1-panel-9\" class=\"tab-panel\"><div class=\"tab-title\">Credits</div>\n<div class=\"tab-content\"><p>3D model by <a target=\"_blank\" class=\"external-link\" href=\"https://www.3dmilitaryassets.com/\" rel=\"noreferrer noopener\">3D Military Assets</a>, used under their Extended\nLicence.</p></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/uBqPS3CMP3xWfcAq0nXd3U5LjD1WDk8vyRTRViO8.jpg",
    "forge_url": "https://sp-mod.com/mod/2930/ecoti-enhanced-clip-on-thermal-imager",
-   "downloads": 10237,
-   "favourites": 84,
+   "downloads": 10837,
+   "favourites": 86,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -194038,12 +194012,24 @@
    ],
    "versions": [
     {
+     "id": 15823,
+     "version": "3.3.0",
+     "description": "<h2>Reflections</h2>\n<p>Glass now blocks heat like it does on a real thermal. You can\u2019t see a warm body through a window\nany more, and by default the window reflects whoever is standing in front of it, you included.\nSet F12 &gt; Image &gt; Glass to Plain if you\u2019d rather have a blank pane.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/330-window-reflection.jpg\" alt=\"A window at night: Reflections beside Plain\" /></p>\n<p>Magnified scopes do the same: look at your scope from the outside and the eyepiece shows your\nreflection. Aiming through it is unchanged. Red dots and holos don\u2019t reflect. Scope Glass\nReflections in F12 turns this off on its own.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/330-scope-eyepiece.jpg\" alt=\"A scope eyepiece reflecting the shooter\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/330-scope-toggle.jpg\" alt=\"Scope Glass Reflections on, off, on\" /></p>\n<h2>A COTI on every tube</h2>\n<p>You can now fit a COTI to each tube of your goggles, in any combination: up to four on the GPNVG-18,\ntwo on the N-15 and PNV-57E, one on the PVS-14 and PNV-10T. Each tube only shows thermal if it has a\nCOTI on it, and Ctrl+N / Alt+N work them all at once.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/330-multitube-view.jpg\" alt=\"Four COTIs on a GPNVG-18\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/330-multitube-hardware.jpg\" alt=\"A GPNVG-18 with a COTI under each tube\" /></p>\n<p>The slots are named by where they sit (ECOTI OL, ECOTI L, ECOTI R, ECOTI OR) and listed left to\nright. A COTI you already have fitted stays put, and dropping one onto the goggles still puts it on\nthe same tube as before.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/330-slot-labels.jpg\" alt=\"The four slots in the inspect window\" /></p>\n<p>The circles are placed to match BorkelRNVG\u2019s Realistic NVGs (based on 3.0.4), which is the\nrecommended way to run COTI.</p>\n<h2>Added</h2>\n<ul>\n<li>Lit searchlights read hot and lit flashlights read slightly warm. Both can be switched off in F12\n(Render Searchlight Heat, Render Flashlight Heat).</li>\n<li>Heat Brightness in F12 to dim or brighten the heat image.</li>\n<li>The mount editor supports the new per-tube format.</li>\n<li>The empty COTI slot icon now matches the game\u2019s own empty slots.</li>\n</ul>\n<h2>Changed</h2>\n<ul>\n<li>Heat is now based on what is actually warm in the raid, compared to the air temperature. People\nstand out most on a cold night, cultists only barely, and guns only get hot when fired.</li>\n<li>Full mode fill defaults to 45% (was 55%).</li>\n<li>Posing on SPT 4.1 is done in the web mount editor; the in-game pose tools are gone from the 4.1\nbuild.</li>\n</ul>\n<h2>Fixed</h2>\n<ul>\n<li>Thermal breaking after the first raid of a session.</li>\n<li>Heat showing through hills.</li>\n<li>Bots visible through some walls, like Factory\u2019s admin office.</li>\n<li>See-through bridges on Customs.</li>\n<li>Suppressors, unlit lamps, grenades, blood and tritium sights reading hot.</li>\n<li>Outline drawing too thick through a magnified scope.</li>\n<li>Hitches when first flipping the goggles down, and every 10 and 30 seconds after.</li>\n</ul>\n<h2>Performance</h2>\n<ul>\n<li>Glass reflections, scope glass reflections and searchlight or flashlight heat: next to no cost\neither way, so set them by taste.</li>\n<li>Each extra COTI on the goggles: a small hit, around a tenth of a millisecond or less.</li>\n<li>Magnify With Optic: a small hit when on, since it renders the thermal again while aiming.</li>\n<li>Sensor Refresh: lower is cheaper, 0 (every frame) costs the most.</li>\n</ul>\n",
+     "spt_constraint": "~4.1.3",
+     "fika": "compatible",
+     "downloads": 133,
+     "size": 4110846,
+     "link": "https://sp-mod.com/mod/download/2930/ecoti-enhanced-clip-on-thermal-imager/3.3.0",
+     "published_at": "2026-10-07T17:49:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 15748,
      "version": "3.1.0",
      "description": "<h2>Added</h2>\n<ul>\n<li><strong>Realistic power-up.</strong> <code>Ctrl+N</code> shows <code>Initializing...</code>, then the thermal comes in with a\ncalibration click. Powering down shows <code>Power Off...</code>.</li>\n<li><strong>F12 &gt; Power Sequence</strong> to turn it off or change its timing and click volume.</li>\n</ul>\n<h2>Changed</h2>\n<ul>\n<li><strong>Better performance.</strong> Less work done every frame.</li>\n</ul>\n",
      "spt_constraint": "~4.1.3",
      "fika": "compatible",
-     "downloads": 607,
+     "downloads": 1029,
      "size": 4051903,
      "link": "https://sp-mod.com/mod/download/2930/ecoti-enhanced-clip-on-thermal-imager/3.1.0",
      "published_at": "2026-10-02T23:30:00.000000Z",
@@ -194055,7 +194041,7 @@
      "description": "<p>There is no functional changes to the mod just changes to the new web based model pose editor.</p>\n<h3>Fixed</h3>\n<ul>\n<li>Modded night vision goggles now load in the model viewer. There was no model to pose against, so an addon built from one could not be trusted. Their models come from the host mod\u2019s own bundle now.</li>\n<li>Revert takes back the thermal overlay choice, not just the mount.</li>\n</ul>\n<h3>Added</h3>\n<ul>\n<li>Thermal overlay by tube count. Single, dual or quad, matched to the model on screen. Saving stores it.</li>\n</ul>\n<h3>Changed</h3>\n<ul>\n<li>Addons extract onto an install rather than needing files copied into nvghostcompat/ by hand.</li>\n<li>One entry per goggle, with a variant switcher for colourways to verify device doesnt change.</li>\n</ul>\n",
      "spt_constraint": "~4.1.3",
      "fika": "compatible",
-     "downloads": 3205,
+     "downloads": 3225,
      "size": 4012838,
      "link": "https://sp-mod.com/mod/download/2930/ecoti-enhanced-clip-on-thermal-imager/3.0.3",
      "published_at": "2026-09-05T02:00:00.000000Z",
@@ -194067,7 +194053,7 @@
      "description": "<h3>Newly Fixed</h3>\n<ul>\n<li>The ECOTI appears in linked search off a supported goggle. Its Peacekeeper offer was being registered after SPT had already built the flea, so the flea never saw it. It registers before that now, and the item is findable by name and beside the other night vision gear.</li>\n</ul>\n<h3>Brought over from 3.0.1 -&gt; 2.0.2</h3>\n<ul>\n<li>Fixed colour issue with latest Borkel\u2019s Realistic NVGs (3.0.0)</li>\n<li>Fixed overlay inside magnified scopes (removed the coti circle, intensity bloom lessened in magnified scopes)</li>\n<li>Fixed timing of when thermal image turns on and off with nvg toggling</li>\n</ul>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 481,
+     "downloads": 499,
      "size": 2098002,
      "link": "https://sp-mod.com/mod/download/2930/ecoti-enhanced-clip-on-thermal-imager/2.0.2",
      "published_at": "2026-09-03T22:30:00.000000Z",
@@ -194079,7 +194065,7 @@
      "description": "<h3>Fixed</h3>\n<ul>\n<li>The ECOTI appears in linked search off a supported goggle. Its Peacekeeper offer was being registered after SPT had already built the flea, so the flea never saw it. It registers before that now, and the item is findable by name and beside the other night vision gear.</li>\n<li>The N-15 and PNV-10T sit correctly on the head. Both poses were retuned in the new editor.</li>\n</ul>\n<h3>Added</h3>\n<ul>\n<li>A web interface, on SPT 4.1. Under MOD PAGES on the server\u2019s landing page.\nSettings are editable there and apply to the running server. Anything that still needs a restart says so on the page.</li>\n<li>A 3D mount editor draws the ECOTI on its host, with a Blender-style view cube, position, rotation and scale controls, and a flip animation on the goggles that have one. Changes push to a running game immediately, so a pose can be tuned without going into a raid.</li>\n<li>Goggles added by other mods appear beside the vanilla ones, discovered from the server rather than a fixed list.</li>\n<li>Addon export. A tuned pose for another mod\u2019s goggle downloads as a ready-to-upload archive.</li>\n<li>Player-sellable flea listing, off by default. Turn it on and the ECOTI can be sold on the flea as well as bought from Peacekeeper.</li>\n</ul>\n",
      "spt_constraint": "~4.1.3",
      "fika": "compatible",
-     "downloads": 363,
+     "downloads": 366,
      "size": 3649474,
      "link": "https://sp-mod.com/mod/download/2930/ecoti-enhanced-clip-on-thermal-imager/3.0.2",
      "published_at": "2026-09-03T22:30:00.000000Z",
@@ -194091,7 +194077,7 @@
      "description": "<p>Fixed colour issue with latest Borkel\u2019s Realistic NVGs (3.0.0)\nFixed overlay inside magnified scopes (removed the coti circle, intensity bloom lessened in magnified scopes)\nFixed timing of when thermal image turns on and off with nvg toggling</p>\n",
      "spt_constraint": "4.1.3",
      "fika": "compatible",
-     "downloads": 638,
+     "downloads": 639,
      "size": 2092942,
      "link": "https://sp-mod.com/mod/download/2930/ecoti-enhanced-clip-on-thermal-imager/3.0.1",
      "published_at": "2026-08-31T15:08:00.000000Z",
@@ -194127,7 +194113,7 @@
      "description": "<p><strong>First release for SPT 4.0</strong>, at feature parity with the 4.1 line.</p>\n<p>The major version encodes the SPT generation: <code>0.x</code> is SPT 4.0, <code>1.x</code> is SPT 4.1. They are not\ninterchangeable, and cannot be - the two SPT versions run different .NET runtimes and expose\nmutually incompatible mod contracts, so one build serving both is impossible rather than merely\nawkward.</p>\n<h3>Everything the 4.1 line has</h3>\n<ul>\n<li>Mounts to the <strong>PVS-14, N-15, GPNVG-18, PVS-31A and DTNVS</strong> (white and green phosphor).</li>\n<li>Sold by Peacekeeper at LL4, and found wherever night vision is found.</li>\n<li><strong>Magnified optic thermal</strong>, off by default. At 1x the imager\u2019s heat disagrees with a magnified\nsight by between 1.3x and 7.9x depending on zoom; turn <strong>Magnify With Optic</strong> on and a second\nthermal pass is matched to the scope and drawn into the scope\u2019s own picture, with the 1x heat kept\noff the lens. Non-magnified sights are unaffected either way.</li>\n<li><strong>Heat renders as contours by default.</strong> Outline Mix is the dial: 0% is solid hot shapes, 100% is\nedge-only.</li>\n<li><strong>Sensor Resolution</strong> on F12, if you would rather trade resolution for frames or push it further.</li>\n</ul>\n",
      "spt_constraint": "4.0.13",
      "fika": "compatible",
-     "downloads": 457,
+     "downloads": 458,
      "size": 2055984,
      "link": "https://sp-mod.com/mod/download/2930/ecoti-enhanced-clip-on-thermal-imager/0.1.0",
      "published_at": "2026-08-18T23:00:00.000000Z",
@@ -194151,14 +194137,14 @@
      "description": "<p>First release</p>\n",
      "spt_constraint": "4.1.2",
      "fika": "compatible",
-     "downloads": 888,
+     "downloads": 890,
      "size": 2045722,
      "link": "https://sp-mod.com/mod/download/2930/ecoti-enhanced-clip-on-thermal-imager/1.0.0",
      "published_at": "2026-08-16T05:05:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "3.1.0",
+   "latest_version": "3.3.0",
    "spt_constraint": "~4.1.3",
    "all_spt_constraints": [
     "4.0.13",
@@ -194171,7 +194157,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-10-04T03:35:00.000000Z",
-   "updated_at": "2026-10-04T14:29:22.000000Z",
+   "updated_at": "2026-10-07T17:49:06.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -195425,7 +195411,7 @@
    "description_html": "<p><strong>TCF Mod Manager</strong> is a Windows desktop app for finding, installing and keeping track of your SPT mods, built directly against the sp-mod catalog you\u2019re reading this on. Browse the full mod list, filter it down to what actually works on your SPT version, install with dependencies resolved for you, turn mods on and off without deleting anything, and see at a glance what\u2019s out of date.</p>\n<p>It also keeps <strong>mod lists</strong> - save the set you run, switch between sets, send one to a friend, or follow the list a server publishes and know what you are missing before you launch. Plus a config editor, a start button for the server and the launcher, and an optional page that reads what each installed mod actually ships.</p>\n<h2>The full guide is on the wiki</h2>\n<p><strong><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/TheCrimsonFckr/TCFModManager/wiki\" rel=\"noreferrer noopener\">github.com/TheCrimsonFckr/TCFModManager/wiki</a></strong> - every page of the app, mod lists, configs, Monitor mode, update notifications, the Server Map, limitations and troubleshooting. This page only covers getting it installed.</p>\n<p>Inside the app, the <strong>Help</strong> page in the sidebar has short step-by-step answers for every page, in your language. Press <strong>?</strong> in the title bar or <strong>F1</strong> to open it at the page you\u2019re on, and <strong>Open the full guide</strong> takes you to the wiki.</p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Install</div>\n<div class=\"tab-content\"><p><strong>You need</strong></p>\n<ul>\n<li>Windows</li>\n<li>An SPT install</li>\n</ul>\n<p>The released build is entirely self-contained - nothing else to install.</p>\n<p><strong>Steps</strong></p>\n<ol>\n<li>Download <code>TCF-ModManager-&lt;version&gt;.zip</code> from this page.</li>\n<li>Extract it into your SPT folder as <code>&lt;SPT root&gt;\\TCFModManager\\</code> - a sibling of <code>BepInEx\\</code> and <code>user\\</code>.</li>\n<li>Run <code>TCFModManager.exe</code>.</li>\n<li>Open <strong>Options</strong>, point it at your SPT install folder - the top one, with <code>EscapeFromTarkov.exe</code> and <code>BepInEx\\</code> in it - and hit Save. The detected server version appears underneath - everything else keys off that.</li>\n</ol>\n<h4>warning</h4>\n<p>This is <strong>not</strong> a mod. Don\u2019t extract it into <code>BepInEx\\plugins</code> or <code>user\\mods</code>. It\u2019s a standalone application that manages that folder for you. Anywhere on disk works, really - it just needs to be told where SPT lives. Keep it out of <code>Program Files</code>, where Windows won\u2019t let it update itself.</p>\n<h4>If the SPT version doesn\u2019t detect</h4>\n<p>The version is read from the server executable - <code>SPT.Server.exe</code>, or the older <code>Aki.Server.exe</code> - at the install root or under <code>SPT\\</code> / <code>SPT_Runtime\\</code>. Point Options at the install root, the folder with <code>EscapeFromTarkov.exe</code> in it, not at the server folder or any other subfolder. If you do pick <code>SPT\\</code> or <code>SPT_Runtime\\</code> itself, the app moves the setting up to the folder above it.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Updating</div>\n<div class=\"tab-content\"><p>Once it\u2019s set up, the app keeps itself up to date from this page. On launch it checks for a newer release and shows a banner and a badge on <strong>App update</strong> in the sidebar; you\u2019re asked to open this page before anything is downloaded. Your settings, install history and kept configs survive an update.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Planning</div>\n<div class=\"tab-content\"><p>Coming next, in no particular order - the <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/TheCrimsonFckr/TCFModManager/wiki/Planning\" rel=\"noreferrer noopener\">Planning page</a> on the wiki has the full list, including everything already done.</p>\n<ul>\n<li>Never left half-installed - an install that is interrupted is finished or undone the next time the app runs - <em>Planned</em></li>\n<li>Profile backups - your SPT profiles are backed up before any install, update, remove or list apply - <em>Planned</em></li>\n<li>Held-back updates - an update that would break another mod is flagged and left out of updating everything - <em>Planned</em></li>\n<li>Fika warnings - a version not marked for Fika on a Fika install, and a remove that may change your profile - <em>Planned</em></li>\n<li>Faster downloads - up to three at once, with retry and resume - <em>Planned</em></li>\n<li>Diagnose logs - reads the server, BepInEx and game logs, names the mod at fault, and builds a report with private details taken out - <em>Planned</em></li>\n<li>SPT upgrade check - pick a newer SPT and see which of your mods are ready for it - <em>Planned</em></li>\n<li>Mod tools - launch the programs a mod ships from the Play page - <em>Planned</em></li>\n<li>Server without its window - the server log live on the Play page, and the server closed along with the game - <em>Planned</em></li>\n<li>Direct launch - start the game from the Play page without SPT\u2019s launcher (experimental, off by default) - <em>Planned</em></li>\n<li>Mod descriptions shown in full - tabs, tables and GIFs as sp-mod shows them - <em>Planned</em></li>\n<li>Filter by date, and search mod descriptions as well as titles - <em>Planned</em></li>\n<li>Select several mods on Installed and update, enable, disable or remove them together - <em>Planned</em></li>\n<li>An Update button on each card - <em>Planned</em></li>\n<li>A Versions tab with Switch to this version - <em>Planned</em></li>\n<li>Author pages, and following an author - <em>Planned</em></li>\n<li>A right-click menu on every mod - <em>Planned</em></li>\n<li>Quick view - hover a mod for a preview - <em>Planned</em></li>\n<li>A downloads bar - <em>Planned</em></li>\n<li>Page size options, including endless scrolling - <em>Planned</em></li>\n<li>Mod comments in the app - <em>Planned</em></li>\n</ul></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Reporting a problem</div>\n<div class=\"tab-content\"><p>Use the <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2945/tcf-mod-manager#issues\" rel=\"noreferrer noopener\">Issues tab</a> - bugs, wording, translations, feature requests or questions. Attach <code>Data\\logs\\tcfmm-&lt;date&gt;.log</code>, ideally after adding the <code>verbose</code> marker file and reproducing the problem. The <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/TheCrimsonFckr/TCFModManager/wiki/Troubleshooting\" rel=\"noreferrer noopener\">wiki</a> covers the common ones first.</p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Disclaimer</div>\n<div class=\"tab-content\"><p>I use AI to help write this mod, everything is initially written by myself (I\u2019m a developer by profession), then passed though Claude (Fable model) for refinements and to highlight any additional changes the LLM thinks are worth making. Absolutely everything is reviewed and tested by myself before I commit anything. This is done because I simply do not have enough time in day to make full refinements and multiple passes myself. If you are not comfortable using an application that uses AI as a tool then please do not download it.</p></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/0qEVyA4TX4PiPAZFcbH1Rt4jBzJCscp8CL6xOztx.png",
    "forge_url": "https://sp-mod.com/mod/2945/tcf-mod-manager",
-   "downloads": 6369,
+   "downloads": 6456,
    "favourites": 41,
    "featured": false,
    "fika": true,
@@ -195454,12 +195440,24 @@
    ],
    "versions": [
     {
+     "id": 15824,
+     "version": "1.21.1-beta",
+     "description": "<p>Clearer Dependencies and Conflicts now checks versions give a clear answer when a mod won\u2019t load.</p>\n<div class=\"tabset\"><div id=\"tabset-10-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">New features</div>\n<div class=\"tab-content\"><h4>Version conflicts.</h4>\n<p>A new block on Dependencies and Conflicts lists every dependency your mods disagree about, with what each mod asks for. It\u2019s worked out from the mods\u2019 own files - the check SPT and BepInEx make - across the whole install at once. <strong>Switch to</strong> installs the one version that suits every mod, when there is one; <strong>Update to</strong> installs the asking mod\u2019s own update.</p>\n<h4>No server mods? You\u2019ll know.</h4>\n<p>If a server mod\u2019s dependency is missing or the wrong version, SPT loads no server mods at all. A red banner on Dependencies and Conflicts names the mod, and the Play page warns before you start the server.</p>\n<h4>Won\u2019t load on Installed.</h4>\n<p>A mod whose dependency doesn\u2019t fit shows red on the Installed page, says why on hover, and is included in <strong>Show - Has conflicts</strong>.</p>\n<h4>Asked before breaking a mod.</h4>\n<p>Installing or updating a mod that would stop another one loading now asks first. No is the default.</p>\n<h4>Accept a warning.</h4>\n<p>An amber warning that only comes from sp-mod\u2019s listing can be accepted. It comes back if either version changes.</p></div></div>\n<div id=\"tabset-10-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Fixes</div>\n<div class=\"tab-content\"><h4>No more false \u201ctoo new\u201d.</h4>\n<p>A dependency newer than sp-mod suggests is no longer flagged - CommonLib 3.0.6 under Canted Aiming loads fine.</p>\n<h4>\u201cConflict\u201d means it won\u2019t load.</h4>\n<p>Red only when a mod\u2019s own files refuse the installed version. Before, it depended on which mods were checked together.</p>\n<h4>Held-back updates explained.</h4>\n<p>A dependency whose update sp-mod is holding back says which mod is holding it.</p>\n<h4>Scrollbar.</h4>\n<p>On Dependencies and Conflicts, Mod footprint and the Installed Groups and List views, the scrollbar no longer sits over the buttons and expand arrows on the right.</p></div></div></div>\n<p>Drop-in over v1.21.0-beta. The Server Map mod does not need updating.</p>\n",
+     "spt_constraint": ">=4.0.13",
+     "fika": "compatible",
+     "downloads": 20,
+     "size": 66719865,
+     "link": "https://sp-mod.com/mod/download/2945/tcf-mod-manager/1.21.1-beta",
+     "published_at": "2026-10-07T19:17:18.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 15817,
      "version": "1.21.0-beta",
      "description": "<p>Safer installs and updates - interrupted installs are tracked, SPT profiles are backed up, updates that would break another mod are withheld, Fika and profile warnings - plus multiple downloads at once and a downloads bar. On Installed, pick several mods at once in any view, update a mod from its card and right-click any mod; Installed and Browse get a new filters panel with filter pills, and disabled mods you can read. Mod descriptions shown in full, date filters, author pages you can follow, and an SPT upgrade check.</p>\n<div class=\"tabset\"><div id=\"tabset-9-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">New features</div>\n<div class=\"tab-content\"><h4>Profile backups.</h4>\n<p>Your SPT profiles are copied before the app installs, updates, removes, disables or enables mods, or applies a mod list - only when they have changed since the last copy. If a removed mod leaves a profile that won\u2019t load, <strong>Options, SPT profile backups</strong> puts an earlier copy back. The last 10 are kept, and <strong>Back up now</strong> takes one any time.</p>\n<h4>Withhold updates.</h4>\n<p>An update that would break another installed mod is no longer offered. CommonLib 3.0.6, say, while Black and Blue needs a 2.0.x. The card says what it would break, and the update filter, <strong>Update selected</strong> and notifications leave it out. If an older release that works with everything is still newer than yours, that one is offered instead.</p>\n<h4>Fika and profile warnings.</h4>\n<p>On an install that runs Fika, a version sp-mod marks as not working with Fika is asked about before it downloads. Removing a mod that sp-mod says may permanently change your profile now warns you first.</p>\n<h4>Downloads bar.</h4>\n<p>While anything is downloading or installing, a bar along the bottom of the window shows what and how far the queue has got. Click it to open Downloads. It goes away a few seconds after the queue finishes.</p>\n<h4>Update from the card.</h4>\n<p>A mod with an update has an Update button on its card and its List row - one click queues it.</p>\n<h4>Right-click menu.</h4>\n<p>Every mod has one with its card\u2019s own actions: details and versions, update, enable or disable, pin, its folders, its sp-mod page, and remove. On one of several ticked mods it acts on all of them.</p>\n<h4>Filter pills.</h4>\n<p>Every filter narrowing the list shows as a pill above the results - \u201cCategory: Bots\u201d, \u201cShow only: Has addons\u201d. Its X drops just that filter; Clear filters drops them all, putting every filter and view option back to the app\u2019s own settings even if you\u2019ve saved defaults for the page. <strong>Restore my defaults</strong>, beside it in the panel, puts back what you saved with Save as default instead. A changed SPT version gets a pill too.</p>\n<h4>Full mod descriptions.</h4>\n<p>A mod\u2019s details now show its whole description as sp-mod lays it out - tabs, tables, pictures and playing GIFs - instead of just the one-line teaser. Changelogs get the same treatment. Links, pictures and videos open in your browser. The details window stays one size whichever mod you open.</p>\n<h4>Date filters and search scope.</h4>\n<p>Browse\u2019s filters panel has <strong>Published</strong> and <strong>Updated</strong> - any time, the last 7, 30 or 90 days, the last year, or your own dates - and <strong>Search in</strong>: title and teaser, or title only. Each shows as a pill like the other filters.</p>\n<h4>Author pages.</h4>\n<p>Click an author\u2019s name anywhere - a Browse card, Installed, a mod\u2019s details - for their page: all their mods and addons, newest first, with the ones you have marked. <strong>Follow</strong> them there or from the right-click menu on Installed, and their new mods come with your update notifications. Browse can show only <strong>By authors you follow</strong>, and <strong>Options - Authors you follow</strong> lists everyone with Unfollow.</p>\n<h4>SPT upgrade check.</h4>\n<p>The Dependencies page has <strong>Moving to a newer SPT</strong> at the top: pick a release and every installed mod is listed as ready, update first, not ready yet, or check by hand - before you change anything.</p></div></div>\n<div id=\"tabset-9-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Adjusted features</div>\n<div class=\"tab-content\"><h4>Faster downloads.</h4>\n<p>Up to three mods now download at once while the ones already downloaded install, one at a time and in order - a mod list no longer waits for each install before starting the next download. A download that breaks off is tried again and carries on from where it stopped.</p>\n<h4>Select several mods.</h4>\n<p>Ctrl-click, Shift-click and Ctrl+A now pick mods in Cards, Groups and List alike, and switch Multi select on; Esc clears it. Ticked mods carry an accent edge, and the bar above the list updates, enables, disables or - new - removes them all. <strong>Remove selected</strong> asks once for the lot and keeps their config files.</p>\n<h4>Installed keeps up.</h4>\n<p>When a queued install or update finishes, Installed rescans by itself - once the run of a mod and its dependencies has finished - so it shows what you now have without pressing Rescan. Mods you\u2019d ticked stay ticked.</p>\n<h4>Filters and view options.</h4>\n<p>Installed and Browse have a <strong>Filters and view options</strong> panel down the left, opened from the button by the search box - it shows how many filters are set - and closed with its X or the button again. Each filter is a section you open like a group, with every choice listed. On a wide window the panel takes its own column and the mods slide over; on a narrow one it lies over them. Every section starts closed. Installed\u2019s update status and enabled filters, Groups view\u2019s group order, and Browse\u2019s SPT version and sort live in there now too, leaving just the search box and Refresh cache in Browse\u2019s top row.</p>\n<h4>Disabled mods you can read.</h4>\n<p>Disabled mods are no longer faded out. A red <strong>DISABLED</strong> tag marks them instead, in Cards, Groups and List alike.</p>\n<h4>Help for the new features.</h4>\n<p>Help has new topics for the filters panel and pills, date filters and search scope, following authors, full descriptions and the SPT upgrade check.</p></div></div>\n<div id=\"tabset-9-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Fixes</div>\n<div class=\"tab-content\"><h4>Half-installed mod fixes.</h4>\n<p>If the app is closed or the PC loses power part way through an install or update, the mod is shown as partly installed the next time the app runs, so a reinstall puts it right. Before, the files that had landed could be left with nothing tracking them.</p>\n<h4>Duplicate SPT versions.</h4>\n<p>sp-mod\u2019s list of SPT releases currently carries 4.1.6 twice, so it showed twice wherever the app lists SPT versions. Each version is now listed once.</p></div></div></div>\n<p>Drop-in over v1.20.0-beta. The Server Map mod does not need updating.</p>\n",
      "spt_constraint": ">=4.0.13",
      "fika": "compatible",
-     "downloads": 64,
+     "downloads": 131,
      "size": 68839261,
      "link": "https://sp-mod.com/mod/download/2945/tcf-mod-manager/1.21.0-beta",
      "published_at": "2026-10-07T08:53:19.000000Z",
@@ -195814,7 +195812,7 @@
      "dependencies": []
     }
    ],
-   "latest_version": "1.21.0-beta",
+   "latest_version": "1.21.1-beta",
    "spt_constraint": ">=4.0.13",
    "all_spt_constraints": [
     ">=4.0.13",
@@ -195825,7 +195823,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-08-21T16:52:00.000000Z",
-   "updated_at": "2026-10-07T08:54:04.000000Z",
+   "updated_at": "2026-10-07T19:18:03.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -203561,15 +203559,15 @@
   {
    "id": 3026,
    "hub_id": null,
-   "guid": "com.viper.sptquestlive",
-   "name": "SPTQuestLive",
-   "slug": "sptquestlive",
+   "guid": "com.viper.questbackport",
+   "name": "Quest Backport",
+   "slug": "quest-backport",
    "teaser": "Rebuilding and porting select quests from the official EFT release for compatibility with SPT.",
-   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Purpose</div>\n<div class=\"tab-content\"><p>Overrides quests to match the latest version of EFT, on top of SPT.</p>\n<p>EFT has drastically changed its quest structure, quest chains, and trader reputation system since SPT 4.1.x was branched. Because of that, this mod does <strong>not</strong> apply EFT\u2019s current EXP/rouble/reputation reward balance  it simply no longer fits SPT 4.1.x. Start conditions and quest-chain requirements are also mostly kept as-is from SPT.</p>\n<p>What it does change are the kill conditions, map conditions, issued gear, turn-in items, and some rewards across approximately 264 quests  including a few that need custom zones (e.g., Golden Swag, Pest Control, Spa Tour - Part 7).</p>\n<p>You can check the per-trader quest changes in the README. Quests not yet covered will be added in future releases.</p>\n<p>As a bonus, this mod can also remove the sales-volume requirement from trader loyalty level-ups, just like live EFT. See the <strong>Config flags</strong> tab for details.</p>\n<blockquote>\n<p><strong>Note:</strong> While developing this mod, I heard the news about SPT 5.0. Still, I stayed committed to finishing it for everyone playing on 4.1.x. This mod won\u2019t be needed once 5.0 drops, but until then, think of it as an early sneak peek at the new quests on 4.1.x!</p>\n</blockquote></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Requirements</div>\n<div class=\"tab-content\"><ul>\n<li>[WTT-CommonLib] <code>&gt;=3.0.6</code>  <strong>required</strong></li>\n<li>[WTT-ContentBackport] <code>2.0.1</code> <strong>required</strong></li>\n</ul></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Installation</div>\n<div class=\"tab-content\"><ol>\n<li>Download <code>sptQuestLive.zip</code> for the version you want from <a href=\"../../releases\">Releases</a>.</li>\n<li>Extract it and copy the <code>SPT_Runtime</code> and <code>BepInEx</code> folders into your SPT install root, overwriting when asked. The install root is the folder that <em>contains</em> <code>SPT_Runtime</code> (e.g. <code>C:\\SPT</code>), not <code>SPT_Runtime</code> itself.\n<ul>\n<li>Resulting layout: <code>SPT_Runtime/user/mods/sptQuestLive/...</code> and <code>BepInEx/plugins/SptQuestLive.Client/...</code></li>\n<li>The <code>BepInEx</code> folder is the client plugin that handles the UI side of the config flags. Just install it alongside the rest \u2014 it doesn\u2019t affect anything else.</li>\n<li>If your server root <em>is</em> the <code>SPT_Runtime</code> folder (older SPT layout), copy just <code>SPT_Runtime\\user\\mods\\sptQuestLive</code> from the zip into your server\u2019s <code>user\\mods\\</code> instead.</li>\n</ul>\n</li>\n<li>Restart the server.</li>\n</ol></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Compatibility</div>\n<div class=\"tab-content\"><p>Works with mods that read quest data dynamically, such as Dynamic Maps and MoreChecks.</p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Localization</div>\n<div class=\"tab-content\"><p>This mod ships with English (<code>en</code>), Korean (<code>kr</code>), and Russian (<code>ru</code>) locales. If your game language is anything else, the mod\u2019s quest text falls back to English. Everything still works, just not in your language.</p>\n<p>Want to see it in your language? Contributions are welcome! Copy <code>db/locales/en.json</code>, translate the values (keep the keys as-is), save it as <code>db/locales/&lt;your-lang&gt;.json</code>, and open a pull request. The locale code must match the ones SPT uses (e.g. <code>fr</code>, <code>de</code>, <code>ch</code>).</p></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Scope</div>\n<div class=\"tab-content\"><p>Lightkeeper, Ref, and BTR trader quests are left untouched. Ref\u2019s quests are mostly tied to Arena and don\u2019t need changes, and Lightkeeper\u2019s quests are end-game content that will be reviewed separately later.</p></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Config flags</div>\n<div class=\"tab-content\"><p>Mod behavior can be adjusted in <code>db/Config.json</code>.</p>\n<ul>\n<li><code>questContentEnabled</code> (default <code>true</code>): toggles all of this mod\u2019s quest/reward content as a whole quest overrides and removals, alternative conditions, trader assort unlocks/removals, bot/static loot additions, hideout fixes, locale changes, etc. Set to <code>false</code> to fall back to vanilla SPT behavior entirely.</li>\n<li><code>disableSalesVolumeRequirement</code> (default <code>true</code>, experimental): removes the sales-volume requirement from trader loyalty level-ups, so leveling up depends only on level and reputation. The sales-volume counter is also hidden from the trade UI. This works independently of <code>questContentEnabled</code>.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-8\" class=\"tab-panel\"><div class=\"tab-title\">Bug Reports</div>\n<div class=\"tab-content\"><p>Please report bugs on GitHub Issues with as much detail as possible (SPT version, other mods installed, server log).</p></div></div>\n<div id=\"tabset-1-panel-9\" class=\"tab-panel\"><div class=\"tab-title\">Credits</div>\n<div class=\"tab-content\"><p>Special thanks to the <strong>Korean SPT Community</strong> and the <strong>WTT Team</strong> for kindly answering my questions and providing great support!</p></div></div></div>\n",
-   "thumbnail": "https://files.sp-mod.com/mods/gtxZ1YaxMXIo5WptWhWTdbI9UU5CyL84bdZrDVJf.png",
-   "forge_url": "https://sp-mod.com/mod/3026/sptquestlive",
-   "downloads": 3132,
-   "favourites": 41,
+   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Purpose</div>\n<div class=\"tab-content\"><p>Overrides quests to match the latest version of EFT, on top of SPT.</p>\n<p>EFT has drastically changed its quest structure, quest chains, and trader reputation system since SPT 4.1.x was branched. Because of that, this mod does <strong>not</strong> apply EFT\u2019s current EXP/rouble/reputation reward balance  it simply no longer fits SPT 4.1.x. Start conditions and quest-chain requirements are also mostly kept as-is from SPT.</p>\n<p>What it does change are the kill conditions, map conditions, issued gear, turn-in items, and some rewards across approximately 272 quests  including a few that need custom zones (e.g., Golden Swag, Pest Control, Spa Tour - Part 7).</p>\n<p>You can check the per-trader quest changes in the README. Quests not yet covered will be added in future releases.</p>\n<p>As a bonus, this mod can also remove the sales-volume requirement from trader loyalty level-ups, just like live EFT. See the <strong>Config flags</strong> tab for details.</p>\n<blockquote>\n<p><strong>Note:</strong> While developing this mod, I heard the news about SPT 5.0. Still, I stayed committed to finishing it for everyone playing on 4.1.x. This mod won\u2019t be needed once 5.0 drops, but until then, think of it as an early sneak peek at the new quests on 4.1.x!</p>\n</blockquote></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Requirements</div>\n<div class=\"tab-content\"><ul>\n<li>[WTT-CommonLib] <code>&gt;=3.0.6</code>  <strong>required</strong></li>\n<li>[WTT-ContentBackport] <code>2.0.1</code> <strong>required</strong></li>\n</ul></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Installation</div>\n<div class=\"tab-content\"><ol>\n<li>Download <code>QuestBackport.zip</code> for the version you want from <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Viper-9/QuestBackport/releases\" rel=\"noreferrer noopener\">Releases</a>.</li>\n<li>Extract it and copy the <code>SPT_Runtime</code> and <code>BepInEx</code> folders into your SPT install root, overwriting when asked. The install root is the folder that <em>contains</em> <code>SPT_Runtime</code> (e.g. <code>C:\\SPT</code>), not <code>SPT_Runtime</code> itself.\n<ul>\n<li>Resulting layout: <code>SPT_Runtime/user/mods/QuestBackport/...</code> and <code>BepInEx/plugins/QuestBackport.Client/...</code></li>\n<li>The <code>BepInEx</code> folder is the client plugin that handles the UI side of the config flags. Just install it alongside the rest \u2014 it doesn\u2019t affect anything else.</li>\n<li>If your server root <em>is</em> the <code>SPT_Runtime</code> folder (older SPT layout), copy just <code>SPT_Runtime\\user\\mods\\QuestBackport</code> from the zip into your server\u2019s <code>user\\mods\\</code> instead.</li>\n</ul>\n</li>\n<li>Restart the server.</li>\n</ol>\n<blockquote>\n<p><strong>Upgrading from SptQuestLive (v1.0.4 or earlier):</strong> this mod was previously named SptQuestLive. Delete the <code>SPT_Runtime/user/mods/sptQuestLive</code> and <code>BepInEx/plugins/SptQuestLive.Client</code> folders before installing, otherwise both versions will load at the same time. If you changed any config flags, set them again in the new <code>QuestBackport</code> folder.</p>\n</blockquote></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Compatibility</div>\n<div class=\"tab-content\"><p>Works with mods that read quest data dynamically, such as Dynamic Maps and MoreChecks.</p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Localization</div>\n<div class=\"tab-content\"><p>This mod ships with English (<code>en</code>), Korean (<code>kr</code>), and Russian (<code>ru</code>) locales. If your game language is anything else, the mod\u2019s quest text falls back to English. Everything still works, just not in your language.</p>\n<p>Want to see it in your language? Contributions are welcome! Copy <code>db/locales/en.json</code>, translate the values (keep the keys as-is), save it as <code>db/locales/&lt;your-lang&gt;.json</code>, and open a pull request. The locale code must match the ones SPT uses (e.g. <code>fr</code>, <code>de</code>, <code>ch</code>).</p></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Scope</div>\n<div class=\"tab-content\"><p>Lightkeeper, Ref, and BTR trader quests are left untouched. Ref\u2019s quests are mostly tied to Arena and don\u2019t need changes, and Lightkeeper\u2019s quests are end-game content that will be reviewed separately later.</p></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Config flags</div>\n<div class=\"tab-content\"><p>Mod behavior can be adjusted in <code>db/Config.json</code>.</p>\n<ul>\n<li><code>questContentEnabled</code> (default <code>true</code>): toggles all of this mod\u2019s quest/reward content as a whole quest overrides and removals, alternative conditions, trader assort unlocks/removals, bot/static loot additions, hideout fixes, locale changes, etc. Set to <code>false</code> to fall back to vanilla SPT behavior entirely.</li>\n<li><code>disableSalesVolumeRequirement</code> (default <code>true</code>, experimental): removes the sales-volume requirement from trader loyalty level-ups, so leveling up depends only on level and reputation. The sales-volume counter is also hidden from the trade UI. This works independently of <code>questContentEnabled</code>.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-8\" class=\"tab-panel\"><div class=\"tab-title\">Bug Reports</div>\n<div class=\"tab-content\"><p>Please report bugs on <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Viper-9/QuestBackport/issues\" rel=\"noreferrer noopener\">GitHub Issues</a> with as much detail as possible (SPT version, other mods installed, server log).</p></div></div>\n<div id=\"tabset-1-panel-9\" class=\"tab-panel\"><div class=\"tab-title\">Credits</div>\n<div class=\"tab-content\"><p>Special thanks to the <strong>Korean SPT Community</strong> and the <strong>WTT Team</strong> for kindly answering my questions and providing great support!</p></div></div></div>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/YMcME7vDCnd5xuEH1lxiWZyeQJ9vmHksCwOnyaCr.png",
+   "forge_url": "https://sp-mod.com/mod/3026/quest-backport",
+   "downloads": 4157,
+   "favourites": 55,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -203596,20 +203594,47 @@
    ],
    "source_links": [
     {
-     "url": "https://github.com/Viper-9/SptQeustLive",
+     "url": "https://github.com/Viper-9/QuestBackport",
      "label": ""
     }
    ],
    "versions": [
+    {
+     "id": 15821,
+     "version": "1.0.5",
+     "description": "<h2>v1.0.5</h2>\n<h3>Mod renamed: SptQuestLive \u2192 QuestBackport</h3>\n<ul>\n<li><strong>Upgrading</strong>: the mod is now called <strong>QuestBackport</strong>. Before installing, delete the old <code>SPT_Runtime/user/mods/sptQuestLive</code> and <code>BepInEx/plugins/SptQuestLive.Client</code> folders \u2014 the mod IDs changed, so otherwise both versions load at the same time. If you changed any config flags, set them again in the new <code>QuestBackport</code> folder.</li>\n</ul>\n<h3>Fixes</h3>\n<ul>\n<li><strong>Capturing Outposts</strong>: the reward screen listed a 9x39mm SP-6 gs unlock that did nothing. The ammo was already unlocked by <strong>The Punisher - Part 4</strong>, and live EFT no longer gives it here, so the duplicate reward was removed.</li>\n</ul>\n<h3>Quest changes</h3>\n<ul>\n<li><strong>New quests from live EFT</strong>: 7 quests that SPT doesn\u2019t have are now added, with conditions, rewards and texts taken from live EFT (Korean included):\n<ul>\n<li><strong>Special Order</strong> (Prapor): unlocks the TKPD and 9.3x64mm FMJ ammo at Prapor. The TKPD needs <strong>WTT-ContentBackport</strong>.</li>\n<li><strong>Goals and Means</strong> (Mechanic): unlocks the AS VAL MOD.4 at Mechanic. Needs <strong>WTT-ContentBackport</strong> for the weapon.</li>\n<li><strong>Setting Priorities</strong> (Mechanic): now unlocks the Ballistic plate case, like in live EFT.</li>\n<li><strong>Secret Message</strong> and <strong>Demonstration Model</strong> (Peacekeeper)</li>\n<li><strong>Fall Ailment</strong> (Therapist)</li>\n<li><strong>The Huntsman Path - Control</strong> (Jaeger): unlocks the fully built M700 at Jaeger.</li>\n</ul>\n</li>\n<li><strong>M700 unlocks moved</strong>: following live EFT, <strong>The Huntsman Path - Woods Keeper</strong> no longer unlocks the M700. The unlocks are now spread across <strong>The Huntsman Path - Controller</strong>, <strong>The Tarkov Shooter - Part 7</strong> and <strong>The Huntsman Path - Control</strong>.</li>\n<li><strong>Gunsmith - Old Friend\u2019s Request</strong>: no longer unlocks the Ballistic plate case (moved to <strong>Setting Priorities</strong>).</li>\n</ul>\n",
+     "spt_constraint": "4.1.6",
+     "fika": "unknown",
+     "downloads": 230,
+     "size": 703504,
+     "link": "https://sp-mod.com/mod/download/3026/quest-backport/1.0.5",
+     "published_at": "2026-10-07T15:53:00.000000Z",
+     "dependencies": [
+      {
+       "id": 2310,
+       "name": "WTT - CommonLib",
+       "slug": "wtt-commonlib",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
+      },
+      {
+       "id": 2512,
+       "name": "WTT - Content Backport",
+       "slug": "wtt-content-backport",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2512/wtt-content-backport"
+      }
+     ]
+    },
     {
      "id": 15664,
      "version": "1.0.4",
      "description": "<h2>v1.0.4</h2>\n<h3>Fixes</h3>\n<ul>\n<li><strong>Sales volume display on custom traders</strong>: after viewing a vanilla trader, the sales volume rows stayed hidden for custom traders from other mods (e.g. <strong>Painter</strong>, <strong>Artem</strong>, <strong>Lotus</strong>), so it looked like you had met every loyalty requirement while the sales requirement still applied. The rows now switch correctly every time you change traders: hidden for vanilla traders, shown for custom traders.</li>\n</ul>\n",
      "spt_constraint": "4.1.6",
      "fika": "unknown",
-     "downloads": 206,
+     "downloads": 994,
      "size": 675844,
-     "link": "https://sp-mod.com/mod/download/3026/sptquestlive/1.0.4",
+     "link": "https://sp-mod.com/mod/download/3026/quest-backport/1.0.4",
      "published_at": "2026-09-29T11:33:00.000000Z",
      "dependencies": [
       {
@@ -203634,9 +203659,9 @@
      "description": "<h2>v1.0.3</h2>\n<h3>Fixes</h3>\n<ul>\n<li><strong>Trader screen freeze</strong>: opening a trader\u2019s task screen, selecting <strong>Scavenger</strong> (Ragman) or handing over items could freeze the game for several seconds on large stashes. The quest checks a very long item list, and the game re-matched every found-in-raid item against it from scratch each time. Matching results are now cached: the freeze drops from ~5\u20136 s to a few hundredths of a second, and other quests with long item lists get faster too. Thanks to the user who reported it!</li>\n<li><strong>Sales volume display</strong>: with the sales volume requirement disabled, the sales volume rows are now hidden only for vanilla traders. Custom traders from other mods (e.g. <strong>Painter</strong>) show them again, since their requirement still applies.</li>\n</ul>\n<h3>Quest changes</h3>\n<ul>\n<li><strong>Setup</strong>: now accepts every outfit combination from live EFT (Scav Vest / Tac-Kek JayPC Black / JayPC OD Green with Ushanka / Domontovich ushanka / New Year ushanka), and Saiga-12K (Redline) kills count. The extra gear and weapon need <strong>WTT-ContentBackport</strong>; without it the quest works as before.</li>\n</ul>\n",
      "spt_constraint": "4.1.6",
      "fika": "unknown",
-     "downloads": 630,
+     "downloads": 632,
      "size": 675834,
-     "link": "https://sp-mod.com/mod/download/3026/sptquestlive/1.0.3",
+     "link": "https://sp-mod.com/mod/download/3026/quest-backport/1.0.3",
      "published_at": "2026-09-26T13:02:00.000000Z",
      "dependencies": [
       {
@@ -203663,7 +203688,7 @@
      "fika": "unknown",
      "downloads": 499,
      "size": 674831,
-     "link": "https://sp-mod.com/mod/download/3026/sptquestlive/1.0.2",
+     "link": "https://sp-mod.com/mod/download/3026/quest-backport/1.0.2",
      "published_at": "2026-09-24T17:00:00.000000Z",
      "dependencies": [
       {
@@ -203688,9 +203713,9 @@
      "description": "<p>Fixed quest text showing as raw IDs in languages other than en/kr</p>\n",
      "spt_constraint": "4.1.5",
      "fika": "unknown",
-     "downloads": 1380,
+     "downloads": 1385,
      "size": 647074,
-     "link": "https://sp-mod.com/mod/download/3026/sptquestlive/1.0.1",
+     "link": "https://sp-mod.com/mod/download/3026/quest-backport/1.0.1",
      "published_at": "2026-09-15T10:51:00.000000Z",
      "dependencies": [
       {
@@ -203717,7 +203742,7 @@
      "fika": "unknown",
      "downloads": 417,
      "size": 646846,
-     "link": "https://sp-mod.com/mod/download/3026/sptquestlive/1.0.0",
+     "link": "https://sp-mod.com/mod/download/3026/quest-backport/1.0.0",
      "published_at": "2026-09-14T16:27:00.000000Z",
      "dependencies": [
       {
@@ -203737,7 +203762,7 @@
      ]
     }
    ],
-   "latest_version": "1.0.4",
+   "latest_version": "1.0.5",
    "spt_constraint": "4.1.6",
    "all_spt_constraints": [
     "4.1.5",
@@ -203776,7 +203801,7 @@
     }
    ],
    "published_at": "2026-09-14T15:18:00.000000Z",
-   "updated_at": "2026-09-29T11:34:05.000000Z",
+   "updated_at": "2026-10-07T15:55:29.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -206489,14 +206514,14 @@
    "id": 3054,
    "hub_id": null,
    "guid": "com.viper.questcodex",
-   "name": "QuestCodex",
-   "slug": "questcodex",
-   "teaser": "Quest wiki that includes custom quest & trader mods. Maps, raid prep and unlock paths too.",
-   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Purpose</div>\n<div class=\"tab-content\"><p><strong>Installed a quest mod and found no wiki for it? Now there is one.</strong></p>\n<p>QuestCodex is a browser quest wiki built from <strong>the quests your own server actually loaded</strong>. It also\nhas a quest map that shows where each objective is and where to extract, and a progress page that shows\nwhere your profile stands, what your next raid needs, and which quests unlock trader offers and crafts.</p>\n<p>External wiki sites track live EFT, which is not what your server runs. QuestCodex reads the quest\ntables the server holds in memory instead, so if a mod changed a condition or a reward, you see the\nchanged value, and quests a mod added sit in the same list as the vanilla ones, labeled with where\nthey came from.</p>\n<blockquote>\n<p><strong>Note:</strong> Read-only. It never writes to quests, profiles or traders, so uninstalling it leaves your\ndata untouched.</p>\n</blockquote>\n<p>\ud83d\udcd6 <strong>Full guide with screenshots (English / \ud55c\uad6d\uc5b4 / \u0420\u0443\u0441\u0441\u043a\u0438\u0439): <a target=\"_blank\" class=\"external-link\" href=\"https://viper-9.github.io/QuestCodex/\" rel=\"noreferrer noopener\">https://viper-9.github.io/QuestCodex/</a></strong></p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Screenshots</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/wiki-full.png\" alt=\"Quest wiki\" />\n<em>Every quest on your server in one list. Pick a trader, search, filter by <code>Vanilla</code>, <code>Mod</code> or faction, and sort by chain, level or name.</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/wiki-mod-list.png\" alt=\"Mod quests labeled with their source mod\" />\n<em>Each mod quest is tagged with the mod it came from, and each mod gets its own color.</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/wiki-mod-filter.png\" alt=\"Source mod filter\" />\n<em>Pick one or more source mods to see only the quests they added.</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/wiki-quest-detail.png\" alt=\"Quest details\" />\n<em>Click a row to open objectives, requirements, rewards and linked quests in place.</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/wiki-quest-map.png\" alt=\"Quest locations map\" />\n<em>Open the map from any quest to see item spots, kill zones and flare zones, with locked doors and extracts marked.</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/wiki-quest-map-icebreaker.png\" alt=\"Icebreaker map\" />\n<em>The Icebreaker, deck by deck, with keypad codes, explosive doors and frozen hatches. Ready ahead of SPT v5.</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/wiki-guide-weapons.png\" alt=\"Quest guide\" />\n<em>Hit <code>Guide</code> to see what to bring before a raid, including every gun that counts, mod guns too.</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/progress-overview-full.png\" alt=\"Progress overview\" />\n<em>Progress: trader progress, what to turn in or accept now, and every quest by status. Updates live as the game saves.</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/progress-raid-full.png\" alt=\"Raid prep\" />\n<em>Raid prep: pick a map and see its objectives, items to bring and loot, and gear rules.</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/progress-raid-map-window.png\" alt=\"Raid prep map\" />\n<em>Every quest location and extract on the map you picked, in a larger floating window.</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/progress-items-full.png\" alt=\"Needed items\" />\n<em>Needed items: everything your remaining quests ask for, against what\u2019s in your stash (FIR included).</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/progress-unlocks-full.png\" alt=\"Unlock paths\" />\n<em>Unlock paths: every trader offer and craft a quest unlocks, sorted by how many quests you have left.</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/progress-unlocks-path.png\" alt=\"Unlock path window\" />\n<em>Open the full path step by step, grouped by trader, and click a quest to focus on what leads to it.</em></p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Installation</div>\n<div class=\"tab-content\"><ol>\n<li>Download <code>QuestCodex-&lt;version&gt;.zip</code> from <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Viper-9/QuestCodex/releases\" rel=\"noreferrer noopener\">Releases</a>.</li>\n<li>Extract it and copy the <code>SPT_Runtime</code> folder into your SPT install root, overwriting when asked. The install root is the folder that <em>contains</em> <code>SPT_Runtime</code> (e.g. <code>C:\\SPT</code>).\n<ul>\n<li>If your server root <em>is</em> the <code>SPT_Runtime</code> folder (older SPT layout), copy just <code>SPT_Runtime\\user\\mods\\QuestCodex</code> into your server\u2019s <code>user\\mods\\</code> instead.</li>\n</ul>\n</li>\n<li>Restart the server.</li>\n</ol></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Opening it</div>\n<div class=\"tab-content\"><p>Start the server, then open <strong><code>https://127.0.0.1:6969/questcodex</code></strong> in your browser, or use the mod card on the SPT server web page (<code>https://127.0.0.1:6969</code>).</p>\n<ul>\n<li>If you get a certificate warning, proceed. It\u2019s the same self-signed certificate the SPT server web page uses.</li>\n<li>It opens <strong>only on the machine running the server</strong> (the server binds to <code>127.0.0.1</code>).</li>\n<li>Keep it open on a second monitor while you play. It doesn\u2019t touch the game.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Features</div>\n<div class=\"tab-content\"><ul>\n<li><strong>Wiki</strong>: trader filter, search, <code>Vanilla</code> / <code>Mod</code> / <code>B*** only</code> / <code>U*** only</code> chips, source mod filter, chain-aware sorting, inline quest details, chain jumps and deep links</li>\n<li><strong>Mod attribution</strong>: every mod quest labeled with its source mod, color-coded</li>\n<li><strong>Branch warnings</strong>: tags and warnings on mutually exclusive quests, so you know what you\u2019d lock out</li>\n<li><strong>Quest guide</strong>: maps, allowed weapons, required or banned gear, items to hand over or plant, and raid rules</li>\n<li><strong>Quest map</strong>: item spots, kill zones and flare zones for each quest, with locked doors and extracts (PMC, scav, shared, transits) marked</li>\n<li><strong>Mod maps</strong>: the Icebreaker and the expanded Interchange, ready ahead of SPT v5</li>\n<li><strong>Progress</strong>: overview with full quest details, raid prep per map with its own quest map, and a needed-items list, updated live from your profile</li>\n<li><strong>Unlock paths</strong>: the quests left to unlock each trader offer and craft, with the closest path, a step-by-step path window and unreachable sources flagged</li>\n<li><strong>Language and theme</strong>: <code>en</code> / <code>kr</code> / <code>ru</code> interface, <code>System</code> / <code>Light</code> / <code>Dark</code> themes, collapsible side menu</li>\n</ul>\n<p>See the <strong><a target=\"_blank\" class=\"external-link\" href=\"https://viper-9.github.io/QuestCodex/\" rel=\"noreferrer noopener\">docs</a></strong> for details and screenshots of each page.</p></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Compatibility</div>\n<div class=\"tab-content\"><p>Works well with custom trader quest mods such as <strong>Lotus</strong> and <strong>Artem</strong>: their quests and traders show up next to the vanilla ones, labeled with the mod they came from.</p>\n<p>Also works with <strong><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2866/manimals-icebreaker-backport\" rel=\"noreferrer noopener\">Manimal\u2019s Icebreaker Backport</a></strong> and the <strong>ManimalInterchange</strong> expanded map: QuestCodex picks up the Icebreaker and switches to the expanded Interchange map on its own when they\u2019re loaded.</p>\n<p>Some quest-easing or quest-filtering mods may <strong>not</strong> be compatible. Those rewrite quest responses at request time instead of editing the quest tables, and QuestCodex reads the tables. See <strong>Known limitations</strong>.</p></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Localization</div>\n<div class=\"tab-content\"><p>The interface and the <a target=\"_blank\" class=\"external-link\" href=\"https://viper-9.github.io/QuestCodex/\" rel=\"noreferrer noopener\">docs</a> come in <strong>English, Korean and Russian</strong>. Quest and item names come straight from your server\u2019s locale tables, so they appear in whatever language your SPT install provides.</p>\n<p>Want the interface in your language? Copy <code>web/src/i18n/en.json</code>, translate the values (keep the keys), save it under your language code, and open a pull request.</p>\n<p>Want the docs in your language? Copy <code>docs/_i18n/en.json</code> to <code>docs/_i18n/&lt;language code&gt;.json</code>, translate the values (keep the keys), and open a pull request. I\u2019ll generate the pages and take care of the site config.</p></div></div>\n<div id=\"tabset-1-panel-8\" class=\"tab-panel\"><div class=\"tab-title\">Known limitations</div>\n<div class=\"tab-content\"><p><strong>Mods that hook responses at runtime are invisible here.</strong> QuestCodex reads the quest tables the server merged into memory, so every mod that adds or edits quest JSON is reflected exactly. A mod that rewrites <code>/client/quest/list</code> responses on each request never touches those tables, so you\u2019d see its change in game but not here. If the page and the game disagree, suspect this first.</p>\n<p>Quests a mod injects <strong>from C# code</strong> (<code>CustomQuestService.CreateQuest()</code>) leave no file trace, so they get a generic <code>mod</code> label instead of a mod name.</p>\n<p><strong>Quest map coverage.</strong> A few quests have no location data, so their objectives don\u2019t appear on the map. Mod quests show on the map only when the mod defines its zones in data the server can read, or when QuestCodex already ships their positions (the Icebreaker quests do). Maps a mod adds are drawn only when QuestCodex ships a map for them (currently the Icebreaker and the expanded Interchange). Extract positions come from bundled data, so an extract a mod adds or moves may be missing or misplaced. QuestCodex doesn\u2019t track which keys you own, so lock icons only tell you which key a door needs.</p>\n<p><strong>Unlock paths.</strong> The path summary checks the required level against your profile, but trader loyalty and standing are only listed, not checked.</p></div></div>\n<div id=\"tabset-1-panel-9\" class=\"tab-panel\"><div class=\"tab-title\">Bug Reports</div>\n<div class=\"tab-content\"><p>Report bugs on <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Viper-9/QuestCodex/issues\" rel=\"noreferrer noopener\">GitHub Issues</a> or the <strong>Issues</strong> tab on this page. Helpful details:</p>\n<ul>\n<li>SPT server version and QuestCodex version</li>\n<li>Your other mods, especially quest-related ones</li>\n<li>The server log from startup</li>\n<li>What you expected versus what the page showed (a screenshot next to the in-game quest helps a lot)</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-10\" class=\"tab-panel\"><div class=\"tab-title\">Credits</div>\n<div class=\"tab-content\"><p>Special thanks to the <strong>Korean SPT Community</strong> for kindly answering my questions and providing great support!</p>\n<p>And to the <strong>WTT team</strong>: their quest mods (Artem, Armory) were what QuestCodex was built and tested against, and tracing those quests back to their source mod shaped the mod attribution feature.</p>\n<p>Thanks as well to <strong>Lunnayaluna</strong> for Lotus, another custom trader mod QuestCodex was checked against.</p>\n<p>Big thanks to <strong>Manimal1920</strong>, developer of <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2866/manimals-icebreaker-backport\" rel=\"noreferrer noopener\">Manimal\u2019s Icebreaker Backport</a>, for generously letting QuestCodex build full compatibility with the mod, which is what brought the Icebreaker map to life.</p>\n<p>The quest map wouldn\u2019t exist without these people:</p>\n<ul>\n<li><strong>acidphantasm</strong>, developer of <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1431/dynamic-maps\" rel=\"noreferrer noopener\">Dynamic Maps</a>, for permission to use its map calibration data and the Labyrinth map</li>\n<li><strong>DrakiaXYZ</strong>, for very helpful advice while building the map</li>\n<li><strong>Shebuka</strong> of <a target=\"_blank\" class=\"external-link\" href=\"https://tarkov.dev/\" rel=\"noreferrer noopener\">tarkov.dev</a>, for permission to use the SVG maps, including the expanded Interchange</li>\n<li><strong><a target=\"_blank\" class=\"external-link\" href=\"https://tarkov.dev/\" rel=\"noreferrer noopener\">tarkov.dev</a></strong>, for the extract data and icons and the expanded Interchange calibration (MIT)</li>\n<li><strong>re3mr</strong>, for the 2D Icebreaker map the Icebreaker decks were traced from (CC BY-NC-SA 4.0)</li>\n</ul>\n<p>And thanks to <strong>Praxideke</strong> for the Russian translation!</p></div></div></div>\n",
+   "name": "Quest Codex",
+   "slug": "quest-codex",
+   "teaser": "Quest wiki that includes custom quest & trader mods. Maps, raid prep and unlock paths, kappa tracker too.",
+   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Purpose</div>\n<div class=\"tab-content\"><p><strong>Installed a quest mod and found no wiki for it? Now there is one.</strong></p>\n<p>QuestCodex is a browser quest wiki built from <strong>the quests your server actually loaded</strong>, so mod quests and mod changes show up as they are in your game. It also has quest maps, raid prep, unlock paths and a Kappa tracker for your profile.</p>\n<blockquote>\n<p><strong>Note:</strong> Read-only. It never changes your quests, profiles or traders.</p>\n</blockquote>\n<p>\ud83d\udcd6 <strong>Full guide (English / \ud55c\uad6d\uc5b4 / \u0420\u0443\u0441\u0441\u043a\u0438\u0439): <a target=\"_blank\" class=\"external-link\" href=\"https://viper-9.github.io/QuestCodex/\" rel=\"noreferrer noopener\">https://viper-9.github.io/QuestCodex/</a></strong></p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Screenshots</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/wiki-full.png\" alt=\"Quest wiki\" />\n<em>Every quest on your server in one list. Pick a trader, search, filter by <code>Vanilla</code>, <code>Mod</code> or faction, and sort by chain, level or name.</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/wiki-mod-list.png\" alt=\"Mod quests labeled with their source mod\" />\n<em>Each mod quest is tagged with the mod it came from, and each mod gets its own color.</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/wiki-mod-filter.png\" alt=\"Source mod filter\" />\n<em>Pick one or more source mods to see only the quests they added.</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/wiki-quest-detail.png\" alt=\"Quest details\" />\n<em>Click a row to open objectives, requirements, rewards and linked quests in place.</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/wiki-quest-map.png\" alt=\"Quest locations map\" />\n<em>Open the map from any quest to see item spots, kill zones and flare zones, with locked doors and extracts marked.</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/wiki-quest-map-icebreaker.png\" alt=\"Icebreaker map\" />\n<em>The Icebreaker, deck by deck, with keypad codes, explosive doors and frozen hatches. Ready ahead of SPT v5.</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/wiki-guide-weapons.png\" alt=\"Quest guide\" />\n<em>Hit <code>Guide</code> to see what to bring before a raid, including every gun that counts, mod guns too.</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/progress-overview-full.png\" alt=\"Progress overview\" />\n<em>Progress: trader progress, what to turn in or accept now, and every quest by status. Updates live as the game saves.</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/progress-raid-full.png\" alt=\"Raid prep\" />\n<em>Raid prep: pick a map and see its objectives, items to bring and loot, and gear rules.</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/progress-raid-map-window.png\" alt=\"Raid prep map\" />\n<em>Every quest location and extract on the map you picked, in a larger floating window.</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/progress-items-full.png\" alt=\"Needed items\" />\n<em>Needed items: everything your remaining quests ask for, against what\u2019s in your stash (FIR included).</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/progress-unlocks-full.png\" alt=\"Unlock paths\" />\n<em>Unlock paths: every trader offer and craft a quest unlocks, sorted by how many quests you have left.</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/progress-unlocks-path.png\" alt=\"Unlock path window\" />\n<em>Open the full path step by step, grouped by trader, and click a quest to focus on what leads to it.</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/progress-kappa-full.png\" alt=\"Kappa tracker\" />\n<em>Kappa tracker: what\u2019s left before Kappa, read from your server\u2019s Collector requirements, so quest mods that change them work too.</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/progress-kappa-tree.png\" alt=\"Kappa tree view\" />\n<em>See each trader\u2019s Kappa quests as a tree. Drag to move around, and click a quest to see what comes before and after it.</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/progress-kappa-items.png\" alt=\"Collector items\" />\n<em>Collector items: what you still need to hand in, with the containers they spawn in and the bots that carry them.</em></p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Installation</div>\n<div class=\"tab-content\"><ol>\n<li>Download <code>QuestCodex-&lt;version&gt;.zip</code> from <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Viper-9/QuestCodex/releases\" rel=\"noreferrer noopener\">Releases</a>.</li>\n<li>Extract it and copy the <code>SPT_Runtime</code> folder into your SPT install root, overwriting when asked. The install root is the folder that <em>contains</em> <code>SPT_Runtime</code> (e.g. <code>C:\\SPT</code>).\n<ul>\n<li>If your server root <em>is</em> the <code>SPT_Runtime</code> folder (older SPT layout), copy just <code>SPT_Runtime\\user\\mods\\QuestCodex</code> into your server\u2019s <code>user\\mods\\</code> instead.</li>\n</ul>\n</li>\n<li>Restart the server.</li>\n</ol></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Opening it</div>\n<div class=\"tab-content\"><p>Start the server, then open <strong><code>https://127.0.0.1:6969/questcodex</code></strong> in your browser, or use the mod card on the SPT server web page (<code>https://127.0.0.1:6969</code>).</p>\n<ul>\n<li>If you get a certificate warning, proceed. It\u2019s the same self-signed certificate the SPT server web page uses.</li>\n<li>It opens <strong>only on the machine running the server</strong> (the server binds to <code>127.0.0.1</code>).</li>\n<li>Keep it open on a second monitor while you play. It doesn\u2019t touch the game.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Features</div>\n<div class=\"tab-content\"><ul>\n<li><strong>Wiki</strong>: trader filter, search, <code>Vanilla</code> / <code>Mod</code> / <code>B*** only</code> / <code>U*** only</code> chips, source mod filter, chain-aware sorting, inline quest details, chain jumps and deep links</li>\n<li><strong>Mod attribution</strong>: every mod quest labeled with its source mod, color-coded, and vanilla quests a mod overrides marked with that mod\u2019s name</li>\n<li><strong>Branch warnings</strong>: tags and warnings on mutually exclusive quests, so you know what you\u2019d lock out</li>\n<li><strong>Quest guide</strong>: maps, allowed weapons, required or banned gear, items to hand over or plant, and raid rules</li>\n<li><strong>Quest map</strong>: item spots, kill zones and flare zones for each quest, with locked doors and extracts (PMC, scav, shared, transits) marked</li>\n<li><strong>Mod maps</strong>: the Icebreaker and the expanded Interchange, ready ahead of SPT v5</li>\n<li><strong>Progress</strong>: overview with full quest details, raid prep per map with its own quest map, and a needed-items list, updated live from your profile</li>\n<li><strong>Unlock paths</strong>: the quests left to unlock each trader offer and craft, with the closest path, a step-by-step path window and unreachable sources flagged</li>\n<li><strong>Kappa tracker</strong>: what\u2019s left before Kappa, as a list or a tree per trader, with Collector items and where they spawn</li>\n<li><strong>Fast startup</strong>: loot data is cached on disk after the first build, and a <code>Refresh data</code> button rebuilds it without restarting the server</li>\n<li><strong>Language and theme</strong>: <code>en</code> / <code>kr</code> / <code>ru</code> interface, <code>System</code> / <code>Light</code> / <code>Dark</code> themes, collapsible side menu</li>\n</ul>\n<p>See the <strong><a target=\"_blank\" class=\"external-link\" href=\"https://viper-9.github.io/QuestCodex/\" rel=\"noreferrer noopener\">docs</a></strong> for details and screenshots of each page.</p></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Compatibility</div>\n<div class=\"tab-content\"><p>Works well with:</p>\n<ul>\n<li><strong>Lotus</strong> and <strong>Artem</strong>: their quests and traders appear next to the vanilla ones, tagged with the mod name</li>\n<li><strong><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Viper-9/SptQeustLive\" rel=\"noreferrer noopener\">sptQuestLive</a></strong>: the vanilla quests it updates are marked as overridden by sptQuestLive and show the new conditions</li>\n<li><strong><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2866/manimals-icebreaker-backport\" rel=\"noreferrer noopener\">Manimal\u2019s Icebreaker Backport</a></strong> and <strong>ManimalInterchange</strong>: the Icebreaker and expanded Interchange maps turn on by themselves</li>\n</ul>\n<p>Some quest-easing or quest-filtering mods may <strong>not</strong> be compatible. See <strong>Known limitations</strong>.</p></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Localization</div>\n<div class=\"tab-content\"><p>The interface and the <a target=\"_blank\" class=\"external-link\" href=\"https://viper-9.github.io/QuestCodex/\" rel=\"noreferrer noopener\">docs</a> come in <strong>English, Korean and Russian</strong>. Quest and item names come straight from your server\u2019s locale tables, so they appear in whatever language your SPT install provides.</p>\n<p>Want the interface in your language? Copy <code>web/src/i18n/en.json</code>, translate the values (keep the keys), save it under your language code, and open a pull request.</p>\n<p>Want the docs in your language? Copy <code>docs/_i18n/en.json</code> to <code>docs/_i18n/&lt;language code&gt;.json</code>, translate the values (keep the keys), and open a pull request. I\u2019ll generate the pages and take care of the site config.</p></div></div>\n<div id=\"tabset-1-panel-8\" class=\"tab-panel\"><div class=\"tab-title\">Known limitations</div>\n<div class=\"tab-content\"><p><strong>Mods that hook responses at runtime are invisible here.</strong> QuestCodex reads the quest tables the server merged into memory, so every mod that adds or edits quest JSON is reflected exactly. A mod that rewrites <code>/client/quest/list</code> responses on each request never touches those tables, so you\u2019d see its change in game but not here. If the page and the game disagree, suspect this first.</p>\n<p>Quests a mod injects <strong>from C# code</strong> (<code>CustomQuestService.CreateQuest()</code>) leave no file trace, so they get a generic <code>mod</code> label instead of a mod name.</p>\n<p><strong>Overridden vanilla quests.</strong> A vanilla quest is marked as overridden when a mod ships a file that replaces it. QuestCodex doesn\u2019t check whether the mod actually changed anything in it.</p>\n<p><strong>Quest map coverage.</strong> A few quests have no location data, so their objectives don\u2019t appear on the map. Mod quests show on the map only when the mod defines its zones in data the server can read, or when QuestCodex already ships their positions (the Icebreaker quests do). Maps a mod adds are drawn only when QuestCodex ships a map for them (currently the Icebreaker and the expanded Interchange). Extract positions come from bundled data, so an extract a mod adds or moves may be missing or misplaced. QuestCodex doesn\u2019t track which keys you own, so lock icons only tell you which key a door needs.</p>\n<p><strong>Unlock paths.</strong> The path summary checks the required level against your profile, but trader loyalty and standing are only listed, not checked.</p>\n<p><strong>Kappa tracker.</strong> Container chances for Collector items are estimates worked out from your server\u2019s loot tables and averaged over the maps, not drop rates you\u2019ll see in every raid. Only the Collector hand-in items get loot sources.</p></div></div>\n<div id=\"tabset-1-panel-9\" class=\"tab-panel\"><div class=\"tab-title\">Bug Reports</div>\n<div class=\"tab-content\"><p>Report bugs on <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Viper-9/QuestCodex/issues\" rel=\"noreferrer noopener\">GitHub Issues</a> or the <strong>Issues</strong> tab on this page. Helpful details:</p>\n<ul>\n<li>SPT server version and QuestCodex version</li>\n<li>Your other mods, especially quest-related ones</li>\n<li>The server log from startup</li>\n<li>What you expected versus what the page showed (a screenshot next to the in-game quest helps a lot)</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-10\" class=\"tab-panel\"><div class=\"tab-title\">Credits</div>\n<div class=\"tab-content\"><ul>\n<li><strong>Korean SPT Community</strong>, for answering my questions and all the support</li>\n<li><strong>WTT team</strong> (Artem, Armory) and <strong>Lunnayaluna</strong> (Lotus), whose quest mods QuestCodex was tested against</li>\n<li><strong>Manimal1920</strong>, for allowing full compatibility with <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2866/manimals-icebreaker-backport\" rel=\"noreferrer noopener\">Manimal\u2019s Icebreaker Backport</a></li>\n<li><strong>acidphantasm</strong> (<a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1431/dynamic-maps\" rel=\"noreferrer noopener\">Dynamic Maps</a>), for the map calibration data and the Labyrinth map</li>\n<li><strong>DrakiaXYZ</strong>, for advice on the quest map</li>\n<li><strong>Shebuka</strong> and <strong><a target=\"_blank\" class=\"external-link\" href=\"https://tarkov.dev/\" rel=\"noreferrer noopener\">tarkov.dev</a></strong>, for the SVG maps, extract data and icons (MIT)</li>\n<li><strong>re3mr</strong>, for the 2D Icebreaker map (CC BY-NC-SA 4.0)</li>\n<li><strong>Praxideke</strong>, for the Russian translation</li>\n</ul></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/EMcAnj2YIde22lAZJFACJMjsC50ieuyPwR4WI5Rn.png",
-   "forge_url": "https://sp-mod.com/mod/3054/questcodex",
-   "downloads": 907,
-   "favourites": 14,
+   "forge_url": "https://sp-mod.com/mod/3054/quest-codex",
+   "downloads": 1328,
+   "favourites": 20,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -206524,14 +206549,26 @@
    ],
    "versions": [
     {
+     "id": 15820,
+     "version": "1.6.0",
+     "description": "<p><strong>\u26a0\ufe0f If the web page doesn\u2019t load properly after updating, delete the mod and reinstall it.</strong></p>\n<p><strong>\u2139\ufe0f After a clean install, or when your installed mods or mod preset change, the first web page load can take about 10 seconds again.</strong></p>\n<h1>QuestCodex v1.6.0</h1>\n<h2>Kappa Tracker Update!</h2>\n<hr />\n<p>A new page under Progress that shows everything you still need for Kappa. It reads the Collector requirements straight from your server, so it also works with quest mods that change them.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/progress-kappa-full.png\" alt=\"Kappa tracker\" /></p>\n<ul>\n<li><strong>What to do next</strong>: Kappa quests you can do right now, plus what each one unlocks</li>\n<li><strong>Tree view</strong>: each trader\u2019s Kappa quests as a tree you can drag around</li>\n</ul>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/progress-kappa-tree.png\" alt=\"Kappa tree view\" /></p>\n<ul>\n<li><strong>Collector items</strong>: which items you still need, and which containers and bots they drop from</li>\n</ul>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/progress-kappa-items.png\" alt=\"Collector items\" /></p>\n<h2>Also in this update</h2>\n<ul>\n<li><strong>Mod-overridden quests</strong>: Vanilla quests that a mod replaces are tagged with the mod\u2019s name</li>\n<li><strong>Refresh data button</strong>: Reload quest and loot data without restarting the server</li>\n<li><strong>Faster loading</strong>: Loot data is cached, so the first page load after a restart is much faster</li>\n</ul>\n<p>\ud83d\udcd6 <strong>Full guide to the Kappa tracker: <a target=\"_blank\" class=\"external-link\" href=\"https://viper-9.github.io/QuestCodex/progress/kappa-tracker.html\" rel=\"noreferrer noopener\">https://viper-9.github.io/QuestCodex/progress/kappa-tracker.html</a></strong></p>\n",
+     "spt_constraint": "4.1.6",
+     "fika": "unknown",
+     "downloads": 111,
+     "size": 2993069,
+     "link": "https://sp-mod.com/mod/download/3054/quest-codex/1.6.0",
+     "published_at": "2026-10-07T13:37:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 15758,
      "version": "1.5.0",
      "description": "<h1>QuestCodex v1.5.0</h1>\n<h2>Maps &amp; Extracts Update!</h2>\n<hr />\n<p>Getting ready for <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2866/manimals-icebreaker-backport\" rel=\"noreferrer noopener\">Manimal\u2019s Icebreaker Backport</a> and SPT 5! QuestCodex now has the Icebreaker and the expanded Interchange, and every map can show its extracts.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/wiki-quest-map-icebreaker.png\" alt=\"Icebreaker map\" /></p>\n<ul>\n<li><strong>Icebreaker map</strong>: Deck-by-deck map with quest zones, repair spots and keyless doors (with keypad codes).</li>\n<li><strong>Expanded Interchange</strong>: Switches to the bigger Interchange map on its own when the mod is installed.</li>\n<li><strong>Extracts toggle</strong>: See every PMC, scav, shared and transit exit. Hover one for its requirement and chance.</li>\n</ul>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/wiki-quest-map.png\" alt=\"Extracts on the quest map\" /></p>\n<h2>Also in this update</h2>\n<ul>\n<li><strong>Source mod filter</strong>: Show or hide quests by the mod that added them, in the wiki and the overview.</li>\n</ul>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/wiki-mod-filter.png\" alt=\"Source mod filter\" /></p>\n<ul>\n<li><strong>Raid prep tabs for mod maps</strong>: Every map on your server gets its own tab.</li>\n<li><strong>Small fixes</strong>: Better names on some start conditions, and a tidier map toolbar.</li>\n</ul>\n<p>\ud83d\udcd6 <strong>New docs site with every feature explained: <a target=\"_blank\" class=\"external-link\" href=\"https://viper-9.github.io/QuestCodex/\" rel=\"noreferrer noopener\">https://viper-9.github.io/QuestCodex/</a></strong></p>\n",
      "spt_constraint": "4.1.6",
      "fika": "unknown",
-     "downloads": 62,
+     "downloads": 368,
      "size": 2963247,
-     "link": "https://sp-mod.com/mod/download/3054/questcodex/1.5.0",
+     "link": "https://sp-mod.com/mod/download/3054/quest-codex/1.5.0",
      "published_at": "2026-10-03T08:51:00.000000Z",
      "dependencies": []
     },
@@ -206541,9 +206578,9 @@
      "description": "<h1>QuestCodex v1.4.0</h1>\n<h2>Unlock Paths Update!</h2>\n<hr />\n<p>Ever wondered which quests stand between you and that trader offer or hideout craft? The new <strong>Unlock Paths</strong> page in Progress shows it item by item, sorted by how close you are.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/progress-unlocks-full.png\" alt=\"Unlock paths list\" /></p>\n<ul>\n<li><strong>Closest path</strong>: Expand an item to see the quickest route to unlocking it, and flip between its traders and crafts.</li>\n</ul>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/progress-unlocks-detail.png\" alt=\"Closest path card\" /></p>\n<ul>\n<li><strong>Full path window</strong>: Every step laid out and grouped by trader, with level requirements and branch notes.</li>\n</ul>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/progress-unlocks-path.png\" alt=\"Full path window\" /></p>\n<ul>\n<li><strong>Focus on a quest</strong>: Click any quest in the path to see only what leads to it and what comes after it.</li>\n</ul>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/progress-unlocks-focus.png\" alt=\"Focusing on a quest\" /></p>\n<ul>\n<li><strong>Unreachable sources</strong>: Offers locked by a failed quest, a branch you already took or the other faction are flagged.</li>\n</ul>\n<h2>Also in this update</h2>\n<ul>\n<li><strong>Better item categories</strong>: Items you only get as unlock rewards now show up under the right category.</li>\n<li><strong>Cleaner badges</strong>: Numbers in the map list and raid prep badges are centered and aligned.</li>\n<li><strong>Russian docs</strong>: The docs site now comes in Russian, too.</li>\n</ul>\n<p>\ud83d\udcd6 <strong>Docs site with every feature explained: <a target=\"_blank\" class=\"external-link\" href=\"https://viper-9.github.io/QuestCodex/\" rel=\"noreferrer noopener\">https://viper-9.github.io/QuestCodex/</a></strong></p>\n",
      "spt_constraint": "4.1.6",
      "fika": "unknown",
-     "downloads": 137,
+     "downloads": 140,
      "size": 2816086,
-     "link": "https://sp-mod.com/mod/download/3054/questcodex/1.4.0",
+     "link": "https://sp-mod.com/mod/download/3054/quest-codex/1.4.0",
      "published_at": "2026-10-02T12:41:00.000000Z",
      "dependencies": []
     },
@@ -206555,7 +206592,7 @@
      "fika": "unknown",
      "downloads": 139,
      "size": 2806843,
-     "link": "https://sp-mod.com/mod/download/3054/questcodex/1.3.0",
+     "link": "https://sp-mod.com/mod/download/3054/quest-codex/1.3.0",
      "published_at": "2026-10-01T13:00:00.000000Z",
      "dependencies": []
     },
@@ -206567,7 +206604,7 @@
      "fika": "unknown",
      "downloads": 180,
      "size": 2223139,
-     "link": "https://sp-mod.com/mod/download/3054/questcodex/1.2.0",
+     "link": "https://sp-mod.com/mod/download/3054/quest-codex/1.2.0",
      "published_at": "2026-09-29T17:06:00.000000Z",
      "dependencies": []
     },
@@ -206577,9 +206614,9 @@
      "description": "<h1>QuestCodex v1.1.0</h1>\n<h2>Quest Guide Update!</h2>\n<hr />\n<p>Every quest on the Wiki page now has a <strong>Guide button</strong>. Hit it to see everything you need before a raid.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/media/codexpopup1.png\" alt=\"Quest guide popup\" /></p>\n<ul>\n<li><strong>Weapon kill quests</strong>: see every weapon that counts at a glance</li>\n<li><strong>Maps</strong>: where the quest takes place</li>\n<li><strong>Gear</strong>: allowed weapons and mods, plus required or banned equipment</li>\n<li><strong>Items</strong>: what to hand over or plant, with FIR marked</li>\n<li><strong>Rules</strong>: conditions like finishing in a single raid or using a specific exit</li>\n</ul>\n<p>Popups can now be <strong>moved and resized</strong> too, and they remember your layout.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/media/codexpopup3.png\" alt=\"Quest guide popup\" /></p>\n",
      "spt_constraint": "4.1.6",
      "fika": "unknown",
-     "downloads": 231,
+     "downloads": 232,
      "size": 2202261,
-     "link": "https://sp-mod.com/mod/download/3054/questcodex/1.1.0",
+     "link": "https://sp-mod.com/mod/download/3054/quest-codex/1.1.0",
      "published_at": "2026-09-24T19:08:00.000000Z",
      "dependencies": []
     },
@@ -206591,12 +206628,12 @@
      "fika": "unknown",
      "downloads": 158,
      "size": 2193482,
-     "link": "https://sp-mod.com/mod/download/3054/questcodex/1.0.0",
+     "link": "https://sp-mod.com/mod/download/3054/quest-codex/1.0.0",
      "published_at": "2026-09-22T19:04:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.5.0",
+   "latest_version": "1.6.0",
    "spt_constraint": "4.1.6",
    "all_spt_constraints": [
     "4.1.6",
@@ -206605,7 +206642,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-09-22T18:36:00.000000Z",
-   "updated_at": "2026-10-03T09:19:32.000000Z",
+   "updated_at": "2026-10-07T15:21:07.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -212163,11 +212200,11 @@
    "name": "ShrapnelFix",
    "slug": "shrapnelfix",
    "teaser": "Grenade fragments now fly at body height. Deadly, configurable and FIKA-ready.",
-   "description_html": "<h2>ShrapnelFix \u2014 grenades that actually fragment</h2>\n<p>In vanilla, grenades are much weaker past a few metres than they should be. This mod changes how fragments are spawned so they fly at body height, where people actually stand.</p>\n<h3>What\u2019s wrong in vanilla</h3>\n<ul>\n<li><strong>Only 30 fragments are ever created</strong>, whatever the grenade\u2019s stats say. The F-1 is listed with 90 and the VOG-17 with 100, but both get 30.</li>\n<li><strong>Fragments spread over a whole half-sphere</strong>, so most fly over people\u2019s heads.</li>\n<li><strong>Fragments start about 4 cm off the floor</strong>, so a kerb, step or crate blocks them.</li>\n<li><strong>Grenades on upper floors or catwalks are often treated as mid-air bursts</strong>, which sends most of the fragments straight into the floor.</li>\n<li><strong>Aimed fragments miss prone players.</strong> The game fires a few fragments straight at each nearby player, but it aims them 0.8 m above the feet.</li>\n</ul>\n<h3>What this mod does</h3>\n<ul>\n<li><strong>Raises where fragments start</strong> to about knee height. It never pushes them through a table or ceiling.</li>\n<li><strong>Concentrates fragments at body height</strong>, mostly between \u22125\u00b0 and +25\u00b0 from horizontal.</li>\n<li><strong>Uses each grenade\u2019s full fragment count</strong> instead of capping it at 30.</li>\n<li><strong>Detects floors correctly</strong>, so a grenade on a floor isn\u2019t treated as a mid-air burst.</li>\n<li><strong>Sends more fragments straight at nearby players</strong>, aimed anywhere from the feet to the head, so crouched and prone players can be hit too.</li>\n<li><strong>Leaves cover working.</strong> By default the blast damage still starts from the grenade\u2019s real position, so ducking behind low cover still protects you.</li>\n<li><strong>Sends real airbursts mostly downward</strong>, so they work against people in trenches.</li>\n</ul>\n<p>Every fragment is still a normal in-game projectile. Armor, cover penetration and damage mods such as TraumaCore apply to them automatically. Landmines and artillery are not changed.</p>\n<h3>Fully configurable (F12)</h3>\n<ul>\n<li>Global lethality multiplier, plus one multiplier per grenade (F-1, RGD-5, M67, RGN, RGO, VOG-17, VOG-25, V40 and launcher rounds)</li>\n<li>Fragment start height, angle range, fragment count and speed</li>\n<li>A list of maps where the mod does nothing, and a toggle for 40mm/30mm launcher rounds</li>\n<li>Performance limits on how many fragments are fired per frame</li>\n<li>Debug mode that draws each fragment\u2019s path and logs every hit</li>\n</ul>\n<h3>Compatibility</h3>\n<ul>\n<li><strong>SPT 4.1.6.</strong> This is a client plugin only, with no server mod.</li>\n<li><strong>FIKA: supported, with no extra network traffic.</strong> Every player, the host and the headless client need the same version and the same config file.</li>\n<li>Works alongside SAIN, CookingGrenades, Airburst, and TraumaCore</li>\n</ul>\n<h3>Install</h3>\n<p>Extract the zip into your SPT folder (the one with EscapeFromTarkov.exe).\nEvery FIKA player, the host and the headless client need it.</p>\n",
+   "description_html": "<h2>ShrapnelFix \u2014 grenades that actually fragment</h2>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/Uh4YBFp.gif\" alt=\"Demo\" />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/AESMMK2.gif\" alt=\"Demo2\" /></p>\n<p>In vanilla, grenades are much weaker past a few metres than they should be. This mod changes how fragments are spawned so they fly at body height, where people actually stand.</p>\n<h3>What\u2019s wrong in vanilla</h3>\n<ul>\n<li><strong>Only 30 fragments are ever created</strong>, whatever the grenade\u2019s stats say. The F-1 is listed with 90 and the VOG-17 with 100, but both get 30.</li>\n<li><strong>Fragments spread over a whole half-sphere</strong>, so most fly over people\u2019s heads.</li>\n<li><strong>Fragments start about 4 cm off the floor</strong>, so a kerb, step or crate blocks them.</li>\n<li><strong>Grenades on upper floors or catwalks are often treated as mid-air bursts</strong>, which sends most of the fragments straight into the floor.</li>\n<li><strong>Aimed fragments miss prone players.</strong> The game fires a few fragments straight at each nearby player, but it aims them 0.8 m above the feet.</li>\n</ul>\n<h3>What this mod does</h3>\n<ul>\n<li><strong>Raises where fragments start</strong> to about knee height. It never pushes them through a table or ceiling.</li>\n<li><strong>Concentrates fragments at body height</strong>, mostly between \u22125\u00b0 and +25\u00b0 from horizontal.</li>\n<li><strong>Uses each grenade\u2019s full fragment count</strong> instead of capping it at 30.</li>\n<li><strong>Detects floors correctly</strong>, so a grenade on a floor isn\u2019t treated as a mid-air burst.</li>\n<li><strong>Sends more fragments straight at nearby players</strong>, aimed anywhere from the feet to the head, so crouched and prone players can be hit too.</li>\n<li><strong>Leaves cover working.</strong> By default the blast damage still starts from the grenade\u2019s real position, so ducking behind low cover still protects you.</li>\n<li><strong>Sends real airbursts mostly downward</strong>, so they work against people in trenches.</li>\n</ul>\n<p>Every fragment is still a normal in-game projectile. Armor, cover penetration and damage mods such as TraumaCore apply to them automatically. Landmines and artillery are not changed.</p>\n<h3>Fully configurable (F12)</h3>\n<ul>\n<li>Global lethality multiplier, plus one multiplier per grenade (F-1, RGD-5, M67, RGN, RGO, VOG-17, VOG-25, V40 and launcher rounds)</li>\n<li>Fragment start height, angle range, fragment count and speed</li>\n<li>A list of maps where the mod does nothing, and a toggle for 40mm/30mm launcher rounds</li>\n<li>Performance limits on how many fragments are fired per frame</li>\n<li>Debug mode that draws each fragment\u2019s path and logs every hit</li>\n</ul>\n<h3>Compatibility</h3>\n<ul>\n<li><strong>SPT 4.1.6.</strong> This is a client plugin only, with no server mod.</li>\n<li><strong>FIKA: supported, with no extra network traffic.</strong> Every player, the host and the headless client need the same version and the same config file.</li>\n<li>Works alongside SAIN, CookingGrenades, Airburst, and TraumaCore</li>\n</ul>\n<h3>Install</h3>\n<p>Extract the zip into your SPT folder (the one with EscapeFromTarkov.exe).\nEvery FIKA player, the host and the headless client need it.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/NMarL67d56dP1z30FMtK1Akzg4TI7EikY0YA7h8V.png",
    "forge_url": "https://sp-mod.com/mod/3118/shrapnelfix",
-   "downloads": 47,
-   "favourites": 1,
+   "downloads": 248,
+   "favourites": 6,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -212200,7 +212237,7 @@
      "description": "<h2>v1.0.0 \u2014 Initial Release</h2>\n<p>First public release. Grenade fragments now fly at body height instead of mostly over heads and into the floor.</p>\n<p><strong>Features</strong></p>\n<ul>\n<li>Each grenade now uses its full fragment count. Vanilla caps every grenade at 30.</li>\n<li>Fragments start about knee height instead of 4 cm off the floor. They never start inside a table or ceiling.</li>\n<li>Most fragments fly in a body-height band, between \u22125\u00b0 and +25\u00b0 from horizontal.</li>\n<li>Grenades on upper floors and catwalks are no longer treated as mid-air bursts, which used to send their fragments into the floor.</li>\n<li>More fragments are sent straight at nearby players, aimed anywhere from feet to head, so crouched and prone players can be hit.</li>\n<li>Real airbursts send most fragments downward.</li>\n<li>Blast damage still starts from the grenade\u2019s real position by default, so low cover still protects you.</li>\n<li>Everything is adjustable in F12: a global multiplier and one per grenade, fragment angles, count and speed, maps to skip, and a toggle for launcher rounds.</li>\n<li>Performance limits on fragments fired per frame.</li>\n<li>Debug mode that draws each fragment\u2019s path and logs every hit.</li>\n</ul>\n<p><strong>Compatibility</strong></p>\n<ul>\n<li>SPT 4.1.6. This is a client plugin only, with no server mod needed.</li>\n<li>FIKA supported, with no extra network traffic. The host, the headless client and every player need the same version and config.</li>\n<li>Works with SAIN, CookingGrenades, Airburst, and TraumaCore</li>\n</ul>\n<p><strong>Notes</strong></p>\n<ul>\n<li>The default settings are a starting point. If grenades feel too strong or too weak, start with <strong>Aimed fragment multiplier</strong> or the per-grenade multipliers.</li>\n<li>Please report issues with your <code>BepInEx/LogOutput.log</code>, ideally with <strong>Log explosions and fragment hits</strong> turned on in F12.</li>\n</ul>\n",
      "spt_constraint": "4.1.6",
      "fika": "unknown",
-     "downloads": 47,
+     "downloads": 248,
      "size": 14378,
      "link": "https://sp-mod.com/mod/download/3118/shrapnelfix/1.0.0",
      "published_at": "2026-10-07T12:12:00.000000Z",
@@ -212215,7 +212252,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-10-07T12:10:00.000000Z",
-   "updated_at": "2026-10-07T13:06:17.000000Z",
+   "updated_at": "2026-10-07T16:30:50.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -212292,6 +212329,146 @@
     "ai_disclosure": "",
     "cheat_notice": false,
     "profile_binding_notice": true
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 3121,
+   "hub_id": null,
+   "guid": "com.harmonyzt.brokenlimbsdontheal",
+   "name": "Broken Limbs Don't Heal",
+   "slug": "broken-limbs-dont-heal",
+   "teaser": "Broken limbs aren't supposed to heal instantly. This mod introduces a new health effect for that.",
+   "description_html": "<h3>Introduction</h3>\n<p>This mod implements a new effect for broken limbs - once you heal it with any of your meds, your broken bone will turn into <strong>Healed Fracture</strong> - a state of it which is going to apply debuffs on your PMC character.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/harmonyzt/BrokenLimbsDontHeal/blob/main/Preview/1.png?raw=true\" alt=\"\" /></p>\n<h3>Debuffs it Gives (configurable)</h3>\n<ul>\n<li>Sprint/Walk/Crouch Penalty: If any of your legs having a healed fracture, those penalties will be applied (18% by default). Two healed fractures will add up to that effect (ie you\u2019d get 36% debuff).</li>\n<li>Ergonomics Penalty: If any of your arms having a healed fracture, those penalties will be applied (10% by default). Two healed fractures will add up to that effect (ie you\u2019d get 20% debuff).</li>\n</ul>\n<h3>Potential of this</h3>\n<p>In near future, this mod will also introduce an API (or a tool kit, however you wanna call it) for creating your own health effects and their custom logic. Stay tuned!</p>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/iUoZOploCqBLXn7UzcLjkCyZF2RGgIOJJHFEUOi6.png",
+   "forge_url": "https://sp-mod.com/mod/3121/broken-limbs-dont-heal",
+   "downloads": 29,
+   "favourites": 0,
+   "featured": false,
+   "fika": false,
+   "fika_latest": "unknown",
+   "category": {
+    "id": 2,
+    "title": "Overhauls",
+    "slug": "overhauls"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 30878,
+     "name": "harmony",
+     "avatar": "https://files.sp-mod.com/profile-photos/zCGf86MOlzlGlGoDlIYL3IgPnAyHSRRX82XKlfMB_256w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/harmonyzt/BrokenLimbsDontHeal",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 15822,
+     "version": "1.0.0",
+     "description": "<p>Initial Release</p>\n",
+     "spt_constraint": "~4.1",
+     "fika": "unknown",
+     "downloads": 29,
+     "size": 12505,
+     "link": "https://sp-mod.com/mod/download/3121/broken-limbs-dont-heal/1.0.0",
+     "published_at": "2026-10-07T15:56:00.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "1.0.0",
+   "spt_constraint": "~4.1",
+   "all_spt_constraints": [
+    "~4.1"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-10-07T15:56:00.000000Z",
+   "updated_at": "2026-10-07T16:00:15.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 3122,
+   "hub_id": null,
+   "guid": "com.zephyros.fikadownedspectator",
+   "name": "Fika Downed Spectator",
+   "slug": "fika-downed-spectator",
+   "teaser": "Spectate your teammates while downed in Fika with a clean, native T***** tactical HUD banner.",
+   "description_html": "<h1>Fika Downed Spectator</h1>\n<p>A quality-of-life client plugin for <strong>Fika</strong> that allows players to spectate their teammates in first-person while in the <strong>Downed (bleedout)</strong> state, instead of staring at a black screen waiting for a revive or timer expiry.</p>\n<hr />\n<h3>\u2728 Features</h3>\n<ul>\n<li><strong>Seamless Spectating while Downed:</strong> Press <strong><code>[ V ]</code></strong> whenever you are knocked down to switch cameras and watch your teammates fight in real-time.</li>\n<li><strong>Return to Body Anytime:</strong> Press <strong><code>[ V ]</code></strong> again to immediately return to your downed body and monitor your bleedout timer or prepare for a teammate\u2019s revive.</li>\n<li><strong>Switch Between Players:</strong> Use <strong>Left Click (LMB) / Right Click (RMB)</strong> to cycle through all alive teammates.</li>\n<li><strong>Native T</strong>*** HUD Banner:** Features a clean, tactical top-center banner styled with T*****\u2019s authentic <strong>Bender</strong> font and color palette (fully scaled for 1080p, 1440p, and 4K displays).</li>\n<li><strong>Zero Conflicts:</strong> Seamlessly co-exists with Fika without modifying any core multiplayer netcode.</li>\n</ul>\n<hr />\n<h3>\ud83c\udfae Controls (Configurable)</h3>\n<ul>\n<li><strong><code>V</code></strong> : Toggle Spectate / Return to Downed Body</li>\n<li><strong><code>LMB / RMB</code></strong> : Cycle Teammates</li>\n<li><em>(All keybinds and banner positions can be customized in the BepInEx Configuration Manager or in <code>BepInEx/config/com.zephyros.fikadownedspectator.cfg</code>)</em></li>\n</ul>\n<hr />\n<h3>\ud83d\udce6 Requirements</h3>\n<ul>\n<li><strong>SPT:</strong> 4.0.0+ (Tested on SPT 4.1.x)</li>\n<li><strong>Fika:</strong> 2.4.0+</li>\n</ul>\n<hr />\n<h3>\ud83d\udce5 Installation</h3>\n<ol>\n<li>Extract the <code>.zip</code> archive.</li>\n<li>Drag and drop the <code>BepInEx</code> folder directly into your SPT root directory.</li>\n<li>Enjoy!</li>\n</ol>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/yKzDalvLtTyFe2DrcXtPTczOw2iQJdEO934YwkaF.jpg",
+   "forge_url": "https://sp-mod.com/mod/3122/fika-downed-spectator",
+   "downloads": 5,
+   "favourites": 0,
+   "featured": false,
+   "fika": true,
+   "fika_latest": "compatible",
+   "category": {
+    "id": 17,
+    "title": "Other",
+    "slug": "other"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 125822,
+     "name": "zephyrosthedwarf",
+     "avatar": "https://files.sp-mod.com/profile-photos/WDIDsxv5daICyW6jcDQcwkALQTf2lfb8neZQDmbS_128w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/HolyZephyros/FikaDownedSpectator",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 15825,
+     "version": "1.0.0",
+     "description": "<p>Initial release of <strong>Fika Downed Spectator v1.0.0</strong>.</p>\n<ul>\n<li>Allows first-person spectating of teammates while in the Downed state by pressing <strong><code>[ V ]</code></strong>.</li>\n<li>Return to body anytime with <strong><code>[ V ]</code></strong> to monitor bleedout or prepare for revives.</li>\n<li>Switch between teammates using <strong>LMB / RMB</strong>.</li>\n<li>Native tactical HUD banner styled with Tarkov\u2019s authentic <strong>Bender</strong> font and color scheme.</li>\n<li>Fully scaled for 1080p, 1440p, and 4K displays.</li>\n</ul>\n",
+     "spt_constraint": "~4.1.0",
+     "fika": "compatible",
+     "downloads": 5,
+     "size": 8003,
+     "link": "https://sp-mod.com/mod/download/3122/fika-downed-spectator/1.0.0",
+     "published_at": "2026-10-07T20:10:00.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "1.0.0",
+   "spt_constraint": "~4.1.0",
+   "all_spt_constraints": [
+    "~4.1.0"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-10-07T20:22:00.000000Z",
+   "updated_at": "2026-10-07T20:23:04.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
+    "cheat_notice": false,
+    "profile_binding_notice": false
    },
    "origin": "forge",
    "delisted": false
