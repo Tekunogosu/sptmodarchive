@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-10-09T10:43:19Z",
+ "generated_at": "2026-10-09T18:25:42Z",
  "source": "https://sp-mod.com",
  "filter": "all",
- "mod_count": 2050,
+ "mod_count": 2051,
  "categories": [
   {
    "id": 12,
@@ -195501,11 +195501,11 @@
    "name": "TCF Mod Manager",
    "slug": "tcf-mod-manager",
    "teaser": "Sometimes you don't want to think about mods at all. Sometimes that's all you want to do... Manage them, share them, serve them to others.",
-   "description_html": "<p><strong>TCF Mod Manager</strong> is a Windows desktop app for finding, installing and keeping track of your SPT mods, built directly against the sp-mod catalog you\u2019re reading this on. Browse the full mod list, filter it down to what actually works on your SPT version, install with dependencies resolved for you, turn mods on and off without deleting anything, and see at a glance what\u2019s out of date.</p>\n<p>It also keeps <strong>mod lists</strong> - save the set you run, switch between sets, send one to a friend, or follow the list a server publishes and know what you are missing before you launch. Plus a config editor, a start button for the server and the launcher, and an optional page that reads what each installed mod actually ships.</p>\n<h2>The full guide is on the wiki</h2>\n<p><strong><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/TheCrimsonFckr/TCFModManager/wiki\" rel=\"noreferrer noopener\">github.com/TheCrimsonFckr/TCFModManager/wiki</a></strong> - every page of the app, mod lists, configs, Monitor mode, update notifications, the Server Map, limitations and troubleshooting. This page only covers getting it installed.</p>\n<p>Inside the app, the <strong>Help</strong> page in the sidebar has short step-by-step answers for every page, in your language. Press <strong>?</strong> in the title bar or <strong>F1</strong> to open it at the page you\u2019re on, and <strong>Open the full guide</strong> takes you to the wiki.</p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Install</div>\n<div class=\"tab-content\"><p><strong>You need</strong></p>\n<ul>\n<li>Windows</li>\n<li>An SPT install</li>\n</ul>\n<p>The released build is entirely self-contained - nothing else to install.</p>\n<p><strong>Steps</strong></p>\n<ol>\n<li>Download <code>TCF-ModManager-&lt;version&gt;.zip</code> from this page.</li>\n<li>Extract it into your SPT folder as <code>&lt;SPT root&gt;\\TCFModManager\\</code> - a sibling of <code>BepInEx\\</code> and <code>user\\</code>.</li>\n<li>Run <code>TCFModManager.exe</code>.</li>\n<li>Open <strong>Options</strong>, point it at your SPT install folder - the top one, with <code>EscapeFromTarkov.exe</code> and <code>BepInEx\\</code> in it - and hit Save. The detected server version appears underneath - everything else keys off that.</li>\n</ol>\n<h4>warning</h4>\n<p>This is <strong>not</strong> a mod. Don\u2019t extract it into <code>BepInEx\\plugins</code> or <code>user\\mods</code>. It\u2019s a standalone application that manages that folder for you. Anywhere on disk works, really - it just needs to be told where SPT lives. Keep it out of <code>Program Files</code>, where Windows won\u2019t let it update itself.</p>\n<h4>If the SPT version doesn\u2019t detect</h4>\n<p>The version is read from the server executable - <code>SPT.Server.exe</code>, or the older <code>Aki.Server.exe</code> - at the install root or under <code>SPT\\</code> / <code>SPT_Runtime\\</code>. Point Options at the install root, the folder with <code>EscapeFromTarkov.exe</code> in it, not at the server folder or any other subfolder. If you do pick <code>SPT\\</code> or <code>SPT_Runtime\\</code> itself, the app moves the setting up to the folder above it.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Updating</div>\n<div class=\"tab-content\"><p>Once it\u2019s set up, the app keeps itself up to date from this page. On launch it checks for a newer release and shows a banner and a badge on <strong>App update</strong> in the sidebar; you\u2019re asked to open this page before anything is downloaded. Your settings, install history and kept configs survive an update.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Planning</div>\n<div class=\"tab-content\"><p>Coming next, in no particular order - the <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/TheCrimsonFckr/TCFModManager/wiki/Planning\" rel=\"noreferrer noopener\">Planning page</a> on the wiki has the full list, including everything already done.</p>\n<ul>\n<li>Never left half-installed - an install that is interrupted is finished or undone the next time the app runs - <em>Planned</em></li>\n<li>Profile backups - your SPT profiles are backed up before any install, update, remove or list apply - <em>Planned</em></li>\n<li>Held-back updates - an update that would break another mod is flagged and left out of updating everything - <em>Planned</em></li>\n<li>Fika warnings - a version not marked for Fika on a Fika install, and a remove that may change your profile - <em>Planned</em></li>\n<li>Faster downloads - up to three at once, with retry and resume - <em>Planned</em></li>\n<li>Diagnose logs - reads the server, BepInEx and game logs, names the mod at fault, and builds a report with private details taken out - <em>Planned</em></li>\n<li>SPT upgrade check - pick a newer SPT and see which of your mods are ready for it - <em>Planned</em></li>\n<li>Mod tools - launch the programs a mod ships from the Play page - <em>Planned</em></li>\n<li>Server without its window - the server log live on the Play page, and the server closed along with the game - <em>Planned</em></li>\n<li>Direct launch - start the game from the Play page without SPT\u2019s launcher (experimental, off by default) - <em>Planned</em></li>\n<li>Mod descriptions shown in full - tabs, tables and GIFs as sp-mod shows them - <em>Planned</em></li>\n<li>Filter by date, and search mod descriptions as well as titles - <em>Planned</em></li>\n<li>Select several mods on Installed and update, enable, disable or remove them together - <em>Planned</em></li>\n<li>An Update button on each card - <em>Planned</em></li>\n<li>A Versions tab with Switch to this version - <em>Planned</em></li>\n<li>Author pages, and following an author - <em>Planned</em></li>\n<li>A right-click menu on every mod - <em>Planned</em></li>\n<li>Quick view - hover a mod for a preview - <em>Planned</em></li>\n<li>A downloads bar - <em>Planned</em></li>\n<li>Page size options, including endless scrolling - <em>Planned</em></li>\n<li>Mod comments in the app - <em>Planned</em></li>\n</ul></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Reporting a problem</div>\n<div class=\"tab-content\"><p>Use the <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2945/tcf-mod-manager#issues\" rel=\"noreferrer noopener\">Issues tab</a> - bugs, wording, translations, feature requests or questions. Attach <code>Data\\logs\\tcfmm-&lt;date&gt;.log</code>, ideally after adding the <code>verbose</code> marker file and reproducing the problem. The <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/TheCrimsonFckr/TCFModManager/wiki/Troubleshooting\" rel=\"noreferrer noopener\">wiki</a> covers the common ones first.</p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Disclaimer</div>\n<div class=\"tab-content\"><p>I use AI to help write this mod, everything is initially written by myself (I\u2019m a developer by profession), then passed though Claude (Fable model) for refinements and to highlight any additional changes the LLM thinks are worth making. Absolutely everything is reviewed and tested by myself before I commit anything. This is done because I simply do not have enough time in day to make full refinements and multiple passes myself. If you are not comfortable using an application that uses AI as a tool then please do not download it.</p></div></div></div>\n",
+   "description_html": "<p><strong>TCF Mod Manager</strong> is a Windows desktop app for finding, installing and keeping track of your SPT mods, built directly against the sp-mod catalog you\u2019re reading this on. Browse the full mod list, filter it down to what actually works on your SPT version, install with dependencies resolved for you, turn mods on and off without deleting anything, and see at a glance what\u2019s out of date.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/TheCrimsonFckr/TCFModManager/refs/heads/main/assets/browse.png\" alt=\"Browse screen\" /></p>\n<p>It also keeps <strong>mod lists</strong> - save the set you run, switch between sets, send one to a friend, or follow the list a server publishes and know what you are missing before you launch. Plus a config editor, a start button for the server and the launcher, and an optional page that reads what each installed mod actually ships.</p>\n<h2>The full guide is on the wiki</h2>\n<p><strong><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/TheCrimsonFckr/TCFModManager/wiki\" rel=\"noreferrer noopener\">github.com/TheCrimsonFckr/TCFModManager/wiki</a></strong> - every page of the app, mod lists, configs, Monitor mode, update notifications, the Server Map, limitations and troubleshooting. This page only covers getting it installed.</p>\n<p>Inside the app, the <strong>Help</strong> page in the sidebar has short step-by-step answers for every page, in your language. Press <strong>?</strong> in the title bar or <strong>F1</strong> to open it at the page you\u2019re on, and <strong>Open the full guide</strong> takes you to the wiki.</p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Install</div>\n<div class=\"tab-content\"><p><strong>You need</strong></p>\n<ul>\n<li>Windows</li>\n<li>An SPT install</li>\n</ul>\n<p>The released build is entirely self-contained - nothing else to install.</p>\n<p><strong>Steps</strong></p>\n<ol>\n<li>Download <code>TCF-ModManager-&lt;version&gt;.zip</code> from this page.</li>\n<li>Extract it into your SPT folder as <code>&lt;SPT root&gt;\\TCFModManager\\</code> - a sibling of <code>BepInEx\\</code> and <code>user\\</code>.</li>\n<li>Run <code>TCFModManager.exe</code>.</li>\n<li>Open <strong>Options</strong>, point it at your SPT install folder - the top one, with <code>EscapeFromTarkov.exe</code> and <code>BepInEx\\</code> in it - and hit Save. The detected server version appears underneath - everything else keys off that.</li>\n</ol>\n<h4>warning</h4>\n<p>This is <strong>not</strong> a mod. Don\u2019t extract it into <code>BepInEx\\plugins</code> or <code>user\\mods</code>. It\u2019s a standalone application that manages that folder for you. Anywhere on disk works, really - it just needs to be told where SPT lives. Keep it out of <code>Program Files</code>, where Windows won\u2019t let it update itself.</p>\n<h4>If the SPT version doesn\u2019t detect</h4>\n<p>The version is read from the server executable - <code>SPT.Server.exe</code>, or the older <code>Aki.Server.exe</code> - at the install root or under <code>SPT\\</code> / <code>SPT_Runtime\\</code>. Point Options at the install root, the folder with <code>EscapeFromTarkov.exe</code> in it, not at the server folder or any other subfolder. If you do pick <code>SPT\\</code> or <code>SPT_Runtime\\</code> itself, the app moves the setting up to the folder above it.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Updating</div>\n<div class=\"tab-content\"><p>Once it\u2019s set up, the app keeps itself up to date from this page. On launch it checks for a newer release and shows a banner and a badge on <strong>App update</strong> in the sidebar; you\u2019re asked to open this page before anything is downloaded. Your settings, install history and kept configs survive an update.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Planning</div>\n<div class=\"tab-content\"><p>Coming next, in no particular order - the <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/TheCrimsonFckr/TCFModManager/wiki/Planning\" rel=\"noreferrer noopener\">Planning page</a> on the wiki has the full list, including everything already done.</p>\n<ul>\n<li>Never left half-installed - an install that is interrupted is finished or undone the next time the app runs - <em>Planned</em></li>\n<li>Profile backups - your SPT profiles are backed up before any install, update, remove or list apply - <em>Planned</em></li>\n<li>Held-back updates - an update that would break another mod is flagged and left out of updating everything - <em>Planned</em></li>\n<li>Fika warnings - a version not marked for Fika on a Fika install, and a remove that may change your profile - <em>Planned</em></li>\n<li>Faster downloads - up to three at once, with retry and resume - <em>Planned</em></li>\n<li>Diagnose logs - reads the server, BepInEx and game logs, names the mod at fault, and builds a report with private details taken out - <em>Planned</em></li>\n<li>SPT upgrade check - pick a newer SPT and see which of your mods are ready for it - <em>Planned</em></li>\n<li>Mod tools - launch the programs a mod ships from the Play page - <em>Planned</em></li>\n<li>Server without its window - the server log live on the Play page, and the server closed along with the game - <em>Planned</em></li>\n<li>Direct launch - start the game from the Play page without SPT\u2019s launcher (experimental, off by default) - <em>Planned</em></li>\n<li>Mod descriptions shown in full - tabs, tables and GIFs as sp-mod shows them - <em>Planned</em></li>\n<li>Filter by date, and search mod descriptions as well as titles - <em>Planned</em></li>\n<li>Select several mods on Installed and update, enable, disable or remove them together - <em>Planned</em></li>\n<li>An Update button on each card - <em>Planned</em></li>\n<li>A Versions tab with Switch to this version - <em>Planned</em></li>\n<li>Author pages, and following an author - <em>Planned</em></li>\n<li>A right-click menu on every mod - <em>Planned</em></li>\n<li>Quick view - hover a mod for a preview - <em>Planned</em></li>\n<li>A downloads bar - <em>Planned</em></li>\n<li>Page size options, including endless scrolling - <em>Planned</em></li>\n<li>Mod comments in the app - <em>Planned</em></li>\n</ul></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Reporting a problem</div>\n<div class=\"tab-content\"><p>Use the <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2945/tcf-mod-manager#issues\" rel=\"noreferrer noopener\">Issues tab</a> - bugs, wording, translations, feature requests or questions. Attach <code>Data\\logs\\tcfmm-&lt;date&gt;.log</code>, ideally after adding the <code>verbose</code> marker file and reproducing the problem. The <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/TheCrimsonFckr/TCFModManager/wiki/Troubleshooting\" rel=\"noreferrer noopener\">wiki</a> covers the common ones first.</p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Disclaimer</div>\n<div class=\"tab-content\"><p>I use AI to help write this mod, everything is initially written by myself (I\u2019m a developer by profession), then passed though Claude (Fable model) for refinements and to highlight any additional changes the LLM thinks are worth making. Absolutely everything is reviewed and tested by myself before I commit anything. This is done because I simply do not have enough time in day to make full refinements and multiple passes myself. If you are not comfortable using an application that uses AI as a tool then please do not download it.</p></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/0qEVyA4TX4PiPAZFcbH1Rt4jBzJCscp8CL6xOztx.png",
    "forge_url": "https://sp-mod.com/mod/2945/tcf-mod-manager",
-   "downloads": 6577,
-   "favourites": 42,
+   "downloads": 6787,
+   "favourites": 43,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -195538,7 +195538,7 @@
      "description": "<p>Pin the filters you use most under the search bar.</p>\n<div class=\"tabset\"><div id=\"tabset-11-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">New features</div>\n<div class=\"tab-content\"><h4>Pinned filters.</h4>\n<p>On Browse and Installed, the pin at the right of a section\u2019s name in <strong>Filters and view options</strong> puts that filter in a row under the search bar as a dropdown, so you can change it without opening the panel. The dropdown reads what the filter is set to and holds all its choices. Pin as many as you like; they stay pinned between launches. Press the pin again, or right-click the dropdown, to unpin.</p></div></div></div>\n<p>Drop-in over v1.21.1-beta. The Server Map mod does not need updating.</p>\n",
      "spt_constraint": ">=4.0.13",
      "fika": "compatible",
-     "downloads": 27,
+     "downloads": 237,
      "size": 68995139,
      "link": "https://sp-mod.com/mod/download/2945/tcf-mod-manager/1.21.2-beta",
      "published_at": "2026-10-08T08:52:54.000000Z",
@@ -195928,7 +195928,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-08-21T16:52:00.000000Z",
-   "updated_at": "2026-10-08T08:53:04.000000Z",
+   "updated_at": "2026-10-09T14:54:01.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -203680,11 +203680,11 @@
    "name": "Quest Backport",
    "slug": "quest-backport",
    "teaser": "Rebuilding and porting select quests from the official EFT release for compatibility with SPT.",
-   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Purpose</div>\n<div class=\"tab-content\"><p>Overrides quests to match the latest version of EFT, on top of SPT.</p>\n<p>EFT has drastically changed its quest structure, quest chains, and trader reputation system since SPT 4.1.x was branched. Because of that, this mod does <strong>not</strong> apply EFT\u2019s current EXP/rouble/reputation reward balance  it simply no longer fits SPT 4.1.x. Start conditions and quest-chain requirements are also mostly kept as-is from SPT.</p>\n<p>What it does change are the kill conditions, map conditions, issued gear, turn-in items, and some rewards across approximately 272 quests  including a few that need custom zones (e.g., Golden Swag, Pest Control, Spa Tour - Part 7).</p>\n<p>You can check the per-trader quest changes in the README. Quests not yet covered will be added in future releases.</p>\n<p>As a bonus, this mod can also remove the sales-volume requirement from trader loyalty level-ups, just like live EFT. See the <strong>Config flags</strong> tab for details.</p>\n<blockquote>\n<p><strong>Note:</strong> While developing this mod, I heard the news about SPT 5.0. Still, I stayed committed to finishing it for everyone playing on 4.1.x. This mod won\u2019t be needed once 5.0 drops, but until then, think of it as an early sneak peek at the new quests on 4.1.x!</p>\n</blockquote></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Requirements</div>\n<div class=\"tab-content\"><ul>\n<li>[WTT-CommonLib] <code>&gt;=3.0.6</code>  <strong>required</strong></li>\n<li>[WTT-ContentBackport] <code>2.0.1</code> <strong>required</strong></li>\n</ul></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Installation</div>\n<div class=\"tab-content\"><ol>\n<li>Download <code>QuestBackport.zip</code> for the version you want from <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Viper-9/QuestBackport/releases\" rel=\"noreferrer noopener\">Releases</a>.</li>\n<li>Extract it and copy the <code>SPT_Runtime</code> and <code>BepInEx</code> folders into your SPT install root, overwriting when asked. The install root is the folder that <em>contains</em> <code>SPT_Runtime</code> (e.g. <code>C:\\SPT</code>), not <code>SPT_Runtime</code> itself.\n<ul>\n<li>Resulting layout: <code>SPT_Runtime/user/mods/QuestBackport/...</code> and <code>BepInEx/plugins/QuestBackport.Client/...</code></li>\n<li>The <code>BepInEx</code> folder is the client plugin that handles the UI side of the config flags. Just install it alongside the rest \u2014 it doesn\u2019t affect anything else.</li>\n<li>If your server root <em>is</em> the <code>SPT_Runtime</code> folder (older SPT layout), copy just <code>SPT_Runtime\\user\\mods\\QuestBackport</code> from the zip into your server\u2019s <code>user\\mods\\</code> instead.</li>\n</ul>\n</li>\n<li>Restart the server.</li>\n</ol>\n<blockquote>\n<p><strong>Upgrading from SptQuestLive (v1.0.4 or earlier):</strong> this mod was previously named SptQuestLive. Delete the <code>SPT_Runtime/user/mods/sptQuestLive</code> and <code>BepInEx/plugins/SptQuestLive.Client</code> folders before installing, otherwise both versions will load at the same time. If you changed any config flags, set them again in the new <code>QuestBackport</code> folder.</p>\n</blockquote></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Compatibility</div>\n<div class=\"tab-content\"><p>Works with mods that read quest data dynamically, such as Dynamic Maps and MoreChecks.</p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Localization</div>\n<div class=\"tab-content\"><p>This mod ships with English (<code>en</code>), Korean (<code>kr</code>), and Russian (<code>ru</code>) locales. If your game language is anything else, the mod\u2019s quest text falls back to English. Everything still works, just not in your language.</p>\n<p>Want to see it in your language? Contributions are welcome! Copy <code>db/locales/en.json</code>, translate the values (keep the keys as-is), save it as <code>db/locales/&lt;your-lang&gt;.json</code>, and open a pull request. The locale code must match the ones SPT uses (e.g. <code>fr</code>, <code>de</code>, <code>ch</code>).</p></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Scope</div>\n<div class=\"tab-content\"><p>Lightkeeper, Ref, and BTR trader quests are left untouched. Ref\u2019s quests are mostly tied to Arena and don\u2019t need changes, and Lightkeeper\u2019s quests are end-game content that will be reviewed separately later.</p></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Config flags</div>\n<div class=\"tab-content\"><p>Mod behavior can be adjusted in <code>db/Config.json</code>.</p>\n<ul>\n<li><code>questContentEnabled</code> (default <code>true</code>): toggles all of this mod\u2019s quest/reward content as a whole quest overrides and removals, alternative conditions, trader assort unlocks/removals, bot/static loot additions, hideout fixes, locale changes, etc. Set to <code>false</code> to fall back to vanilla SPT behavior entirely.</li>\n<li><code>disableSalesVolumeRequirement</code> (default <code>true</code>, experimental): removes the sales-volume requirement from trader loyalty level-ups, so leveling up depends only on level and reputation. The sales-volume counter is also hidden from the trade UI. This works independently of <code>questContentEnabled</code>.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-8\" class=\"tab-panel\"><div class=\"tab-title\">Bug Reports</div>\n<div class=\"tab-content\"><p>Please report bugs on <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Viper-9/QuestBackport/issues\" rel=\"noreferrer noopener\">GitHub Issues</a> with as much detail as possible (SPT version, other mods installed, server log).</p></div></div>\n<div id=\"tabset-1-panel-9\" class=\"tab-panel\"><div class=\"tab-title\">Credits</div>\n<div class=\"tab-content\"><p>Special thanks to the <strong>Korean SPT Community</strong> and the <strong>WTT Team</strong> for kindly answering my questions and providing great support!</p></div></div></div>\n",
+   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Purpose</div>\n<div class=\"tab-content\"><p>Overrides quests to match the latest version of EFT, on top of SPT.</p>\n<p>EFT has drastically changed its quest structure, quest chains, and trader reputation system since SPT 4.1.x was branched. Because of that, this mod does <strong>not</strong> apply EFT\u2019s current EXP/rouble/reputation reward balance  it simply no longer fits SPT 4.1.x. Start conditions and quest-chain requirements are also mostly kept as-is from SPT.</p>\n<p>What it does change are the kill conditions, map conditions, issued gear, turn-in items, and some rewards across approximately 272 quests  including a few that need custom zones (e.g., Golden Swag, Pest Control, Spa Tour - Part 7).</p>\n<p>You can check the per-trader quest changes in the README. Quests not yet covered will be added in future releases.</p>\n<p>As a bonus, this mod can also remove the sales-volume requirement from trader loyalty level-ups, just like live EFT. See the <strong>Config flags</strong> tab for details.</p>\n<blockquote>\n<p><strong>Note:</strong> While developing this mod, I heard the news about SPT 5.0. Still, I stayed committed to finishing it for everyone playing on 4.1.x. This mod won\u2019t be needed once 5.0 drops, but until then, think of it as an early sneak peek at the new quests on 4.1.x!</p>\n</blockquote></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Requirements</div>\n<div class=\"tab-content\"><ul>\n<li>[WTT-CommonLib] <code>&gt;=3.0.6</code>  <strong>required</strong></li>\n<li>[WTT-ContentBackport] <code>2.0.1</code> <strong>required</strong></li>\n</ul></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Installation</div>\n<div class=\"tab-content\"><ol>\n<li>Download <code>QuestBackport.zip</code> for the version you want from <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Viper-9/QuestBackport/releases\" rel=\"noreferrer noopener\">Releases</a>.</li>\n<li>Extract it and copy the <code>SPT_Runtime</code> and <code>BepInEx</code> folders into your SPT install root, overwriting when asked. The install root is the folder that <em>contains</em> <code>SPT_Runtime</code> (e.g. <code>C:\\SPT</code>), not <code>SPT_Runtime</code> itself.\n<ul>\n<li>Resulting layout: <code>SPT_Runtime/user/mods/QuestBackport/...</code> and <code>BepInEx/plugins/QuestBackport.Client/...</code></li>\n<li>The <code>BepInEx</code> folder is the client plugin that handles the UI side of the config flags. Just install it alongside the rest \u2014 it doesn\u2019t affect anything else.</li>\n<li>If your server root <em>is</em> the <code>SPT_Runtime</code> folder (older SPT layout), copy just <code>SPT_Runtime\\user\\mods\\QuestBackport</code> from the zip into your server\u2019s <code>user\\mods\\</code> instead.</li>\n</ul>\n</li>\n<li>Restart the server.</li>\n</ol>\n<blockquote>\n<p><strong>Upgrading from SptQuestLive (v1.0.4 or earlier):</strong> this mod was previously named SptQuestLive. Delete the <code>SPT_Runtime/user/mods/sptQuestLive</code> and <code>BepInEx/plugins/SptQuestLive.Client</code> folders before installing, otherwise both versions will load at the same time. If you changed any config flags, set them again in the new <code>QuestBackport</code> folder.</p>\n</blockquote></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Compatibility</div>\n<div class=\"tab-content\"><p>Works with mods that read quest data dynamically, such as Dynamic Maps and MoreChecks.</p>\n<p>With <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/3054/quest-codex\" rel=\"noreferrer noopener\">Quest Codex</a> installed, you can check the updated Kappa quest (<strong>Collector</strong>) details, including where to find each item and its drop chances, on its Kappa Tracker page.</p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Localization</div>\n<div class=\"tab-content\"><p>This mod ships with English (<code>en</code>), Korean (<code>kr</code>), and Russian (<code>ru</code>) locales. If your game language is anything else, the mod\u2019s quest text falls back to English. Everything still works, just not in your language.</p>\n<p>Want to see it in your language? Contributions are welcome! Copy <code>db/locales/en.json</code>, translate the values (keep the keys as-is), save it as <code>db/locales/&lt;your-lang&gt;.json</code>, and open a pull request. The locale code must match the ones SPT uses (e.g. <code>fr</code>, <code>de</code>, <code>ch</code>).</p></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Scope</div>\n<div class=\"tab-content\"><p>Lightkeeper, Ref, and BTR trader quests are left untouched. Ref\u2019s quests are mostly tied to Arena and don\u2019t need changes, and Lightkeeper\u2019s quests are end-game content that will be reviewed separately later.</p></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Config flags</div>\n<div class=\"tab-content\"><p>Mod behavior can be adjusted in <code>db/Config.json</code>.</p>\n<ul>\n<li><code>questContentEnabled</code> (default <code>true</code>): toggles all of this mod\u2019s quest/reward content as a whole quest overrides and removals, alternative conditions, trader assort unlocks/removals, bot/static loot additions, hideout fixes, locale changes, etc. Set to <code>false</code> to fall back to vanilla SPT behavior entirely.</li>\n<li><code>disableSalesVolumeRequirement</code> (default <code>true</code>, experimental): removes the sales-volume requirement from trader loyalty level-ups, so leveling up depends only on level and reputation. The sales-volume counter is also hidden from the trade UI. This works independently of <code>questContentEnabled</code>.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-8\" class=\"tab-panel\"><div class=\"tab-title\">Bug Reports</div>\n<div class=\"tab-content\"><p>Please report bugs on <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Viper-9/QuestBackport/issues\" rel=\"noreferrer noopener\">GitHub Issues</a> with as much detail as possible (SPT version, other mods installed, server log).</p></div></div>\n<div id=\"tabset-1-panel-9\" class=\"tab-panel\"><div class=\"tab-title\">Credits</div>\n<div class=\"tab-content\"><p>Special thanks to the <strong>Korean SPT Community</strong> and the <strong>WTT Team</strong> for kindly answering my questions and providing great support!</p></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/YMcME7vDCnd5xuEH1lxiWZyeQJ9vmHksCwOnyaCr.png",
    "forge_url": "https://sp-mod.com/mod/3026/quest-backport",
-   "downloads": 4157,
-   "favourites": 55,
+   "downloads": 4935,
+   "favourites": 62,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -203717,12 +203717,39 @@
    ],
    "versions": [
     {
+     "id": 15845,
+     "version": "1.0.6",
+     "description": "<h2>v1.0.6</h2>\n<h3>Fixes</h3>\n<ul>\n<li><strong>Missing translations in non-English languages</strong>: in languages other than English or Korean (e.g. Russian), the newest quests (<strong>Goals and Means</strong>, <strong>Special Order</strong>, <strong>Setting Priorities</strong>, <strong>The Huntsman Path - Control</strong>, <strong>Fall Ailment</strong>, <strong>Secret Message</strong>, <strong>Demonstration Model</strong>) showed raw text IDs instead of their names and descriptions. Any text missing from a translation now falls back to English. Thanks to the users who reported it!</li>\n</ul>\n<h3>Loot changes</h3>\n<ul>\n<li><strong>Collector items</strong>: the <strong>WTT-ContentBackport</strong> Collector items (Mazoni dumbbell, Domontovich ushanka, Nut Sack balaclava, Dunduk floppy, DesmondPilak CD, SheefGG piggy bank) and the LM KC-130 now spawn about 1.8x more often in containers. The dumbbell, floppy, CD and piggy bank can now also be found in safes.</li>\n<li><strong>GigaBeef, baguette and YXMC water</strong>: container spawn chance roughly halved, since they were showing up in about 1 in 7 containers.</li>\n</ul>\n<p>Tip: you can check where to find each item for the Kappa quest (<strong>Collector</strong>) and its drop chances on the Kappa Tracker page of <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/3054/quest-codex\" rel=\"noreferrer noopener\">Quest Codex</a>.</p>\n",
+     "spt_constraint": "4.1.6",
+     "fika": "unknown",
+     "downloads": 266,
+     "size": 704216,
+     "link": "https://sp-mod.com/mod/download/3026/quest-backport/1.0.6",
+     "published_at": "2026-10-09T12:51:00.000000Z",
+     "dependencies": [
+      {
+       "id": 2310,
+       "name": "WTT - CommonLib",
+       "slug": "wtt-commonlib",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
+      },
+      {
+       "id": 2512,
+       "name": "WTT - Content Backport",
+       "slug": "wtt-content-backport",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2512/wtt-content-backport"
+      }
+     ]
+    },
+    {
      "id": 15821,
      "version": "1.0.5",
      "description": "<h2>v1.0.5</h2>\n<h3>Mod renamed: SptQuestLive \u2192 QuestBackport</h3>\n<ul>\n<li><strong>Upgrading</strong>: the mod is now called <strong>QuestBackport</strong>. Before installing, delete the old <code>SPT_Runtime/user/mods/sptQuestLive</code> and <code>BepInEx/plugins/SptQuestLive.Client</code> folders \u2014 the mod IDs changed, so otherwise both versions load at the same time. If you changed any config flags, set them again in the new <code>QuestBackport</code> folder.</li>\n</ul>\n<h3>Fixes</h3>\n<ul>\n<li><strong>Capturing Outposts</strong>: the reward screen listed a 9x39mm SP-6 gs unlock that did nothing. The ammo was already unlocked by <strong>The Punisher - Part 4</strong>, and live EFT no longer gives it here, so the duplicate reward was removed.</li>\n</ul>\n<h3>Quest changes</h3>\n<ul>\n<li><strong>New quests from live EFT</strong>: 7 quests that SPT doesn\u2019t have are now added, with conditions, rewards and texts taken from live EFT (Korean included):\n<ul>\n<li><strong>Special Order</strong> (Prapor): unlocks the TKPD and 9.3x64mm FMJ ammo at Prapor. The TKPD needs <strong>WTT-ContentBackport</strong>.</li>\n<li><strong>Goals and Means</strong> (Mechanic): unlocks the AS VAL MOD.4 at Mechanic. Needs <strong>WTT-ContentBackport</strong> for the weapon.</li>\n<li><strong>Setting Priorities</strong> (Mechanic): now unlocks the Ballistic plate case, like in live EFT.</li>\n<li><strong>Secret Message</strong> and <strong>Demonstration Model</strong> (Peacekeeper)</li>\n<li><strong>Fall Ailment</strong> (Therapist)</li>\n<li><strong>The Huntsman Path - Control</strong> (Jaeger): unlocks the fully built M700 at Jaeger.</li>\n</ul>\n</li>\n<li><strong>M700 unlocks moved</strong>: following live EFT, <strong>The Huntsman Path - Woods Keeper</strong> no longer unlocks the M700. The unlocks are now spread across <strong>The Huntsman Path - Controller</strong>, <strong>The Tarkov Shooter - Part 7</strong> and <strong>The Huntsman Path - Control</strong>.</li>\n<li><strong>Gunsmith - Old Friend\u2019s Request</strong>: no longer unlocks the Ballistic plate case (moved to <strong>Setting Priorities</strong>).</li>\n</ul>\n",
      "spt_constraint": "4.1.6",
      "fika": "unknown",
-     "downloads": 230,
+     "downloads": 737,
      "size": 703504,
      "link": "https://sp-mod.com/mod/download/3026/quest-backport/1.0.5",
      "published_at": "2026-10-07T15:53:00.000000Z",
@@ -203749,7 +203776,7 @@
      "description": "<h2>v1.0.4</h2>\n<h3>Fixes</h3>\n<ul>\n<li><strong>Sales volume display on custom traders</strong>: after viewing a vanilla trader, the sales volume rows stayed hidden for custom traders from other mods (e.g. <strong>Painter</strong>, <strong>Artem</strong>, <strong>Lotus</strong>), so it looked like you had met every loyalty requirement while the sales requirement still applied. The rows now switch correctly every time you change traders: hidden for vanilla traders, shown for custom traders.</li>\n</ul>\n",
      "spt_constraint": "4.1.6",
      "fika": "unknown",
-     "downloads": 994,
+     "downloads": 998,
      "size": 675844,
      "link": "https://sp-mod.com/mod/download/3026/quest-backport/1.0.4",
      "published_at": "2026-09-29T11:33:00.000000Z",
@@ -203830,7 +203857,7 @@
      "description": "<p>Fixed quest text showing as raw IDs in languages other than en/kr</p>\n",
      "spt_constraint": "4.1.5",
      "fika": "unknown",
-     "downloads": 1385,
+     "downloads": 1386,
      "size": 647074,
      "link": "https://sp-mod.com/mod/download/3026/quest-backport/1.0.1",
      "published_at": "2026-09-15T10:51:00.000000Z",
@@ -203879,7 +203906,7 @@
      ]
     }
    ],
-   "latest_version": "1.0.5",
+   "latest_version": "1.0.6",
    "spt_constraint": "4.1.6",
    "all_spt_constraints": [
     "4.1.5",
@@ -203918,7 +203945,7 @@
     }
    ],
    "published_at": "2026-09-14T15:18:00.000000Z",
-   "updated_at": "2026-10-07T15:55:29.000000Z",
+   "updated_at": "2026-10-09T12:58:32.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -208976,11 +209003,11 @@
    "name": "BodyCamera",
    "slug": "bodycamera",
    "teaser": "A more immersive camera experience with natural movement, realistic inertia and dynamic camera shake.",
-   "description_html": "<h1>BodyCamera</h1>\n<p>BodyCamera adds natural camera movement to SPT 4.1.6.\nIt adds camera sway, inertia and shake that respond to player movement, turning, running and aiming. The camera has a slight delay when changing direction, making movement feel less static while keeping the original gameplay unchanged.</p>\n<h2>Features</h2>\n<ul>\n<li>Immersive body-mounted camera movement</li>\n<li>Natural camera sway while walking and running</li>\n<li>Realistic camera inertia when turning and changing direction</li>\n<li>Camera inertia while aiming</li>\n</ul>\n<p>The mod does not add visual effects.</p>\n<h2>Usage</h2>\n<p>Press <strong>F10</strong> to enable mod</p>\n<p>Open the menu using the F12 key, select the mod, and configure it to your liking:</p>\n<ul>\n<li><em>You can adjust the camera position (X/Y/Z), inertia (for both hip-fire and aiming modes), field of view (FOV) while aiming, aiming speed, and sway intensity.</em></li>\n</ul>\n<h2>Compatibility</h2>\n<p>Designed and tested for <strong>SPT 4.1.6</strong>.</p>\n<p>Compatibility with other SPT versions is not guaranteed.</p>\n<h2>Video</h2>\n<div class=\"youtube-lite\" data-video-id=\"LoM8dT151nM\" data-embed-url=\"https://www.youtube-nocookie.com/embed/LoM8dT151nM?autoplay=1\"><a href=\"https://www.youtube.com/watch?v=LoM8dT151nM\" target=\"_blank\" rel=\"noreferrer noopener\">Play YouTube video</a></div>\n<div class=\"youtube-lite\" data-video-id=\"E-76qNDmDlI\" data-embed-url=\"https://www.youtube-nocookie.com/embed/E-76qNDmDlI?autoplay=1\"><a href=\"https://www.youtube.com/watch?v=E-76qNDmDlI\" target=\"_blank\" rel=\"noreferrer noopener\">Play YouTube video</a></div>\n<h2>Installation</h2>\n<p>Extract the contents of the archive into your SPT installation folder.</p>\n",
+   "description_html": "<h1>BodyCamera</h1>\n<p>BodyCamera adds natural camera movement to SPT 4.1.6.\nIt adds camera sway, inertia and shake that respond to player movement, turning, running and aiming. The camera has a slight delay when changing direction, making movement feel less static while keeping the original gameplay unchanged.</p>\n<h2>Features</h2>\n<ul>\n<li>Immersive body-mounted camera movement</li>\n<li>Natural camera sway while walking and running</li>\n<li>Realistic camera inertia when turning and changing direction</li>\n<li>Camera inertia while aiming</li>\n</ul>\n<p>The mod does not add visual effects.</p>\n<h2>Usage</h2>\n<h2>1. General Settings</h2>\n<ul>\n<li><strong>Enabled</strong> \u2014 Enables or disables the body camera.</li>\n<li><strong>Toggle Key</strong> \u2014 Sets the key used to toggle the body camera during gameplay. Default: <code>F10</code>.</li>\n</ul>\n<h2>2. Camera Position</h2>\n<ul>\n<li><strong>OffsetX</strong> \u2014 Adjusts the camera\u2019s horizontal position, moving it left or right.</li>\n<li><strong>OffsetY</strong> \u2014 Adjusts the camera\u2019s vertical position, moving it up or down.</li>\n<li><strong>OffsetZ</strong> \u2014 Adjusts the camera\u2019s forward or backward position relative to its default position.</li>\n</ul>\n<h2>3. Camera Rotation and Inertia</h2>\n<ul>\n<li><strong>Keep Camera Rotation</strong> \u2014 Determines whether the camera maintains its viewing direction when its position is adjusted relative to the character\u2019s body.</li>\n<li><strong>Rotation Inertia</strong> \u2014 Controls the smoothness and inertia of camera rotation when changing the viewing direction.</li>\n<li><strong>Ads Inertia</strong> \u2014 Controls camera inertia when transitioning into Aim Down Sights (ADS) mode.</li>\n<li><strong>Ads Camera Distance</strong> \u2014 Adjusts the camera distance while aiming down sights.</li>\n<li><strong>Ads Exit Inertia</strong> \u2014 Controls how smoothly the camera moves when exiting ADS mode.</li>\n</ul>\n<h2>4. Camera Shake and Recoil</h2>\n<ul>\n<li><strong>Camera Shake Multiplier</strong> \u2014 Controls the intensity of camera shake associated with character movement.</li>\n<li><strong>Shot Kick Strength</strong> \u2014 Controls the overall intensity of the additional camera recoil effect when firing. <code>0</code> disables the effect, <code>1</code> represents the default intensity, and higher values produce stronger camera movement.</li>\n<li><strong>Shot Kick Pitch Strength</strong> \u2014 Controls the vertical camera kick when firing, affecting the upward or downward rotation.</li>\n<li><strong>Shot Kick Yaw Strength</strong> \u2014 Controls the horizontal camera kick when firing. The direction is randomized within the configured range.</li>\n</ul>\n<p>The overall effect depends on all three values, as the vertical and horizontal strengths are multiplied by the overall Shot Kick Strength.</p>\n<p><strong>Note:</strong> The shot kick effect adds camera-only movement and does not directly modify the weapon\u2019s recoil. Camera kick recovery is smoothed for a more natural return to the original view.</p>\n<h2>Compatibility</h2>\n<p>Designed and tested for <strong>SPT 4.1.6</strong>.</p>\n<p>Compatibility with other SPT versions is not guaranteed.</p>\n<h2>Video</h2>\n<div class=\"youtube-lite\" data-video-id=\"LoM8dT151nM\" data-embed-url=\"https://www.youtube-nocookie.com/embed/LoM8dT151nM?autoplay=1\"><a href=\"https://www.youtube.com/watch?v=LoM8dT151nM\" target=\"_blank\" rel=\"noreferrer noopener\">Play YouTube video</a></div>\n<div class=\"youtube-lite\" data-video-id=\"E-76qNDmDlI\" data-embed-url=\"https://www.youtube-nocookie.com/embed/E-76qNDmDlI?autoplay=1\"><a href=\"https://www.youtube.com/watch?v=E-76qNDmDlI\" target=\"_blank\" rel=\"noreferrer noopener\">Play YouTube video</a></div>\n<h2>Installation</h2>\n<p>Extract the contents of the archive into your SPT installation folder.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/kkjKpzIm96i342pLUGgtkaLGZvDnwtf4IyZnuszy.png",
    "forge_url": "https://sp-mod.com/mod/3075/bodycamera",
-   "downloads": 338,
-   "favourites": 11,
+   "downloads": 858,
+   "favourites": 18,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -208997,7 +209024,7 @@
     {
      "id": 124874,
      "name": "RedSparrow",
-     "avatar": "https://files.sp-mod.com/profile-photos/ThaYhTkf5IsQ1q1hhvauZBAPeDqVNR1jwGTg0qJD_256w.webp"
+     "avatar": "https://files.sp-mod.com/profile-photos/XcbmpTOuaDUzxlIOFjUWDH2G6rUFew7Q3fmEk2DD_256w.webp"
     }
    ],
    "source_links": [
@@ -209008,12 +209035,24 @@
    ],
    "versions": [
     {
+     "id": 15851,
+     "version": "0.3.0",
+     "description": "<h2>Added  <strong>Recoil</strong></h2>\n<p>Added an adjustable recoil effect when firing a weapon.</p>\n<h3>New Settings</h3>\n<ul>\n<li><strong>Shot Kick Strength</strong> \u2014 controls the overall intensity of the recoil. <code>0</code> disables the effect, <code>1</code> is the default intensity, and higher values produce stronger camera movement.</li>\n<li><strong>Shot Kick Pitch Strength</strong> \u2014 controls the vertical recoil.</li>\n<li><strong>Shot Kick Yaw Strength</strong> \u2014 controls the horizontal recoil.</li>\n</ul>\n<p>All three settings can be adjusted independently to customize the camera response to gunfire.</p>\n<div class=\"youtube-lite\" data-video-id=\"1d_EDcbdLL0\" data-embed-url=\"https://www.youtube-nocookie.com/embed/1d_EDcbdLL0?autoplay=1\"><a href=\"https://www.youtube.com/watch?v=1d_EDcbdLL0\" target=\"_blank\" rel=\"noreferrer noopener\">Play YouTube video</a></div>\n",
+     "spt_constraint": "4.1.6",
+     "fika": "unknown",
+     "downloads": 2,
+     "size": 9724,
+     "link": "https://sp-mod.com/mod/download/3075/bodycamera/0.3.0",
+     "published_at": "2026-10-09T18:09:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 15674,
      "version": "0.2.9",
      "description": "<h2>BodyCamera 0.2.9</h2>\n<h3>Fixed</h3>\n<ul>\n<li>Fixed ADS camera issues when entering and exiting aiming.</li>\n<li>Fixed the camera getting pulled backward when leaving ADS while moving.</li>\n<li>Fixed camera position issues when switching between different sights/optics.</li>\n<li>Fixed ADS camera problems after changing weapons.</li>\n<li>Fixed camera snapping or jumping when ADS state changes.</li>\n<li>Improved camera stability while aiming and moving at the same time.</li>\n<li>Improved camera synchronization with Tarkov\u2019s aiming and optic system.</li>\n</ul>\n",
      "spt_constraint": "4.1.6",
      "fika": "unknown",
-     "downloads": 126,
+     "downloads": 643,
      "size": 9141,
      "link": "https://sp-mod.com/mod/download/3075/bodycamera/0.2.9",
      "published_at": "2026-09-29T18:38:00.000000Z",
@@ -209025,14 +209064,14 @@
      "description": "<h2>BodyCamera 0.2.8</h2>\n<p>Initial public release for SPT 4.1.6.</p>\n<h3>Features</h3>\n<ul>\n<li>\n<p>Immersive body-mounted camera movement</p>\n</li>\n<li>\n<p>Natural camera sway while walking and running</p>\n</li>\n<li>\n<p>Realistic camera inertia when turning and changing direction</p>\n</li>\n<li>\n<p>Camera inertia while aiming</p>\n</li>\n</ul>\n<h3>Known Issues</h3>\n<p>This is an early public release, so some aspects of the camera behaviour are still being tuned.</p>\n",
      "spt_constraint": "4.1.6",
      "fika": "unknown",
-     "downloads": 212,
+     "downloads": 213,
      "size": 8813,
      "link": "https://sp-mod.com/mod/download/3075/bodycamera/0.2.8",
      "published_at": "2026-09-28T19:45:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "0.2.9",
+   "latest_version": "0.3.0",
    "spt_constraint": "4.1.6",
    "all_spt_constraints": [
     "4.1.6"
@@ -209040,7 +209079,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-09-28T18:00:00.000000Z",
-   "updated_at": "2026-09-29T23:00:32.000000Z",
+   "updated_at": "2026-10-09T18:20:23.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -209559,8 +209598,8 @@
    "description_html": "<h1>Hj\u2019s Task Item Indicator</h1>\n<p><strong>Brings EFT 1.0.5\u2019s Task Item Indicator to SPT</strong></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/v10P5Wz.gif\" alt=\"gif\" /></p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Features</div>\n<div class=\"tab-content\"><p><strong>The Indicator</strong></p>\n<ul>\n<li>A small <strong>four-segment ring</strong> appears at your crosshair when you\u2019re near a <strong>task item you still need</strong></li>\n<li>The segments facing the item <strong>light up</strong>, so you know which way to turn</li>\n<li>Look at the item up close and <strong>the whole ring lights up YAY</strong></li>\n<li><strong>Fades in</strong> as you get closer and <strong>fades out</strong> as you walk away or pick the item up</li>\n</ul>\n<p><strong>Works exactly like EFT 1.0.5</strong></p>\n<ul>\n<li>Uses <strong>EFT 1.0\u2019s own ring sprite</strong>, size, position and animation</li>\n<li>Same <strong>range (~4.5 m)</strong>, brightness curve and fade speed as EFT 1.0, taken from the 1.0.5 client itself</li>\n<li>Only reacts to <strong>task items</strong> (the ones that go in your task items tab) for <strong>quests you\u2019ve started and not finished</strong></li>\n<li>Ofcourse ordinary items a quest asks for (like Salewas) <strong>don\u2019t trigger it</strong></li>\n<li>Items you already carry and quests you\u2019ve completed <strong>don\u2019t trigger it</strong></li>\n<li>Scales with your <strong>HUD</strong>, so it looks the same at 1080p, 1440p and 4K, (i hope it works on ultrawide and 4k, i can\u2019t try 4k or ultrawide as i don\u2019t have it)</li>\n<li>Stays visible while <strong>aiming</strong>, just like EFT 1.0.5</li>\n</ul>\n<p><strong>Incompatibility</strong></p>\n<ul>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2888/task-item-indicator\" rel=\"noreferrer noopener\">Vultify\u2019s Task Item Indicator</a></li>\n</ul>\n<p><strong>Config (F12)</strong></p>\n<ul>\n<li>Turn the indicator on or off lol</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Known \u201cBugs\u201d</div>\n<div class=\"tab-content\"><blockquote>\n<p>VirusTotal shows 1 detection (SecureAge)</p>\n</blockquote>\n<ul>\n<li>This is a <strong>false positive</strong>. SecureAge\u2019s heuristics often flag small, unsigned mod DLLs; every other engine reports it clean.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Credits</div>\n<div class=\"tab-content\"><p><strong>Special thanks to:</strong></p>\n<ul>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/52241/vultify\" rel=\"noreferrer noopener\">Vultify</a> for the first 4.1 take on this feature, which was a great reference + Giving me permission to release a 1:1 version</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Support/Requests</div>\n<div class=\"tab-content\"><p>HEY DID YOU JUST FIND A BUG AND WANNA REPORT IT?</p>\n<ul>\n<li><strong>Bug Reports:</strong> Please open an issue on the <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/hjal-dev/Task-Item-Indicator/issues\" rel=\"noreferrer noopener\">GitHub Issues</a> page or Forge\u2019s own Issue Tracker</li>\n<li><strong>Compatibility Issues:</strong> If another HUD or quest mod conflicts with Task Item Indicator, mention the other mod when reporting the issue</li>\n<li><strong>Please avoid posting log files in Forge comments.</strong> GitHub Issues and Forge\u2019s Issue Tracker make it much easier to troubleshoot problems</li>\n</ul></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/1946QM5zEatL3eVE0Pp3nPGvasEUXQa12XGzf1xy.png",
    "forge_url": "https://sp-mod.com/mod/3082/hjs-task-item-indicator",
-   "downloads": 4,
-   "favourites": 0,
+   "downloads": 1599,
+   "favourites": 30,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -209588,19 +209627,31 @@
    ],
    "versions": [
     {
+     "id": 15847,
+     "version": "1.0.1",
+     "description": "<h1>4.1x Version | 1.0.1</h1>\n<hr />\n<h3>Added</h3>\n<ul>\n<li>Added \u201cPoint at standalone quest items\u201d (no task needed, such as <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/3129/sages-tutorial-backport\" rel=\"noreferrer noopener\">Tutorial Backport</a>)</li>\n</ul>\n",
+     "spt_constraint": "~4.1",
+     "fika": "compatible",
+     "downloads": 127,
+     "size": 9251,
+     "link": "https://sp-mod.com/mod/download/3082/hjs-task-item-indicator/1.0.1",
+     "published_at": "2026-10-09T15:00:02.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 15677,
      "version": "1.0.0",
      "description": "<p>4.1x Version</p>\n",
      "spt_constraint": "~4.1",
      "fika": "compatible",
-     "downloads": 4,
+     "downloads": 1472,
      "size": 8944,
      "link": "https://sp-mod.com/mod/download/3082/hjs-task-item-indicator/1.0.0",
      "published_at": "2026-09-29T22:16:56.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.0.0",
+   "latest_version": "1.0.1",
    "spt_constraint": "~4.1",
    "all_spt_constraints": [
     "~4.1"
@@ -209608,7 +209659,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-09-29T22:16:00.000000Z",
-   "updated_at": "2026-09-29T22:19:16.000000Z",
+   "updated_at": "2026-10-09T15:00:09.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -210267,11 +210318,11 @@
    "name": "Astral Divide",
    "slug": "astral-divide",
    "teaser": "Custom Trader with story chapter and unique mechanic and custom outfits with physics system.",
-   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">DESCRIPTION</div>\n<div class=\"tab-content\"><blockquote class=\"is-warning\">\n<p>\u26a0\ufe0f This mod contains AI generated image. If you see something is off that is normal.</p>\n</blockquote>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/TricolourSky/AstralDivide/blob/main/res/BinaryDimension.png?raw=true\" alt=\"Thumbnail showcase\" /></p>\n<h3>What is this?</h3>\n<p>AstralDivide is a custom trader mod with a companion storyline that runs alongside the EFT 1.1 main story. EFT1.1 Storyline is not needed but highly recommend to pair with EFT1.1 Storyline backport will have better experience.</p>\n<p>It adds two custom traders; for now only SORA can be interacted with. Her level 1 shelf is re-rolled on every restock: six complete weapons, picked at random from the more expensive half of weapon list, one of each, and gone until the next restock once they are sold. She also sells outfits of Girls\u2019 Frontline 2 characters, and the matching heads can be picked for your character without buying them. Every head and outfit comes with a purpose-built shader and cloth physics: hair, skirts and coats are simulated in real time from the physics data of the original MMD models.</p>\n<p>Put plainly, it is also a showcase from me as the author of VisitAPI: a working example of what VisitAPI and VisitAPI Editor can bring to a custom trader of your own.</p>\n<p>What is released now is the first chapter (16 quests), not the whole mod. This is a long-term project. Three long chapters and four endings are planned, and which ending you reach depends on the choices you make and the standing with the trader.</p>\n<h3>Overall Progress</h3>\n<p>Me and my mate is working hard as possible on the storyline. Art and Vocal we have to achieve with AI. The character is complete OC and upscale by AI.</p>\n<h3>Installation</h3>\n<ol>\n<li>Install the dependencies first.</li>\n<li>Download the Mod.</li>\n<li>Extract the archive into your SPT folder, the one that contains <code>EscapeFromTarkov.exe</code>.</li>\n<li>Start the game.</li>\n</ol>\n<h3>Before you uninstall</h3>\n<p>A profile that has bought any of SORA\u2019s clothing needs this mod. On a server without it, SPT treats the clothing as invalid and sets the profile aside. Back up <code>SPT_Runtime\\user\\profiles\\</code> before you install if you want a way back.</p>\n<h3>License and credits</h3>\n<ul>\n<li><strong>Code:</strong> GNU General Public License v3.0.</li>\n<li><strong>Images and story made by the author</strong>  \u00a9 TricolourSky, licensed under CC BY-NC-ND 4.0.</li>\n<li><strong>Character models and clothing thumbnails:</strong> from Girls\u2019 Frontline 2: Exilium. They belong to Sunborn and are covered by neither license.</li>\n</ul>\n<p>AstralDivide is a non-commercial fan work. It is not affiliated with or endorsed by Sunborn, Battlestate Games or the SPT team.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Getting started</div>\n<div class=\"tab-content\"><ol>\n<li>SORA is locked on a new profile, so her shop is not available at first. This is expected.</li>\n<li>Play a raid on Ground Zero. Fifteen seconds in, the story chapter \u201cFirst Contact\u201d starts by itself and appears on the STORY tab.</li>\n<li>Follow the chapter. SORA unlocks when the objectives is finished.</li>\n<li>Use Dynamic Map to help you go through the Storyline.\n<img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/TricolourSky/AstralDivide/blob/main/res/Quick%20Start.png?raw=true\" alt=\"QuickStart\" /></li>\n</ol></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">KNOWING ISSUE</div>\n<div class=\"tab-content\"><h3>Localization may sound off.</h3>\n<h3>Most of the conversation is missing picture or video.</h3>\n<h3>Some quest after completion is missing log of the journal.</h3>\n<h3>My FPS low and CPU Usage are High as F</h3>\n<ul>\n<li>All the GF2 Cloth or Heads contain real time physics. Turn them off on the plugin menu if you are playing with your mates. You can turn only render physic for yourself on the plugin menu.</li>\n</ul></div></div></div>\n",
+   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">DESCRIPTION</div>\n<div class=\"tab-content\"><blockquote class=\"is-warning\">\n<p>\u26a0\ufe0f This mod contains AI generated image. If you see something is off that is normal.</p>\n</blockquote>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/TricolourSky/AstralDivide/blob/main/res/BinaryDimension.png?raw=true\" alt=\"Thumbnail showcase\" /></p>\n<h3>What is this?</h3>\n<p>AstralDivide is a custom trader mod with a companion storyline that runs alongside the EFT 1.1 main story. EFT1.1 Storyline is not needed but highly recommend to pair with EFT1.1 Storyline backport will have better experience.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/TricolourSky/AstralDivide/blob/main/res/Ots14.png?raw=true\" alt=\"Ots14 showcase\" /></p>\n<p>It adds two custom traders; for now only SORA can be interacted with. Her level 1 shelf is re-rolled on every restock: six complete weapons, picked at random from the more expensive half of weapon list, one of each, and gone until the next restock once they are sold. She also sells outfits of Girls\u2019 Frontline 2 characters, and the matching heads can be picked for your character without buying them. Every head and outfit comes with a purpose-built shader and cloth physics: hair, skirts and coats are simulated in real time from the physics data of the original MMD models.</p>\n<p>Put plainly, it is also a showcase from me as the author of VisitAPI: a working example of what VisitAPI and VisitAPI Editor can bring to a custom trader of your own.</p>\n<p>What is released now is the first chapter (16 quests), not the whole mod. This is a long-term project. Three long chapters and four endings are planned, and which ending you reach depends on the choices you make and the standing with the trader.</p>\n<h3>Overall Progress</h3>\n<p>Me and my mate is working hard as possible on the storyline. Art and Vocal we have to achieve with AI. The character is complete OC and upscale by AI.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/TricolourSky/AstralDivide/blob/main/res/Clukay.png?raw=true\" alt=\"Clukay showcase\" /></p>\n<h3>Installation</h3>\n<ol>\n<li>Install the dependencies first.</li>\n<li>Download the Mod.</li>\n<li>Extract the archive into your SPT folder, the one that contains <code>EscapeFromTarkov.exe</code>.</li>\n<li>Start the game.</li>\n</ol>\n<h3>Before you uninstall</h3>\n<p>A profile that has bought any of SORA\u2019s clothing needs this mod. On a server without it, SPT treats the clothing as invalid and sets the profile aside. Back up <code>SPT_Runtime\\user\\profiles\\</code> before you install if you want a way back.</p>\n<h3>License and credits</h3>\n<ul>\n<li><strong>Code:</strong> GNU General Public License v3.0.</li>\n<li><strong>Images and story made by the author</strong>  \u00a9 TricolourSky, licensed under CC BY-NC-ND 4.0.</li>\n<li><strong>Character models and clothing thumbnails:</strong> from Girls\u2019 Frontline 2: Exilium. They belong to Sunborn and are covered by neither license.</li>\n</ul>\n<p>AstralDivide is a non-commercial fan work. It is not affiliated with or endorsed by Sunborn, Battlestate Games or the SPT team.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Getting started</div>\n<div class=\"tab-content\"><ol>\n<li>SORA is locked on a new profile, so her shop is not available at first. This is expected.</li>\n<li>Play a raid on Ground Zero. Fifteen seconds in, the story chapter \u201cFirst Contact\u201d starts by itself and appears on the STORY tab.</li>\n<li>Follow the chapter. SORA unlocks when the objectives is finished.</li>\n<li>Use Dynamic Map to help you go through the Storyline.\n<img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/TricolourSky/AstralDivide/blob/main/res/Quick%20Start.png?raw=true\" alt=\"QuickStart\" /></li>\n</ol></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">KNOWING ISSUE</div>\n<div class=\"tab-content\"><h3>Localization may sound off.</h3>\n<h3>Most of the conversation is missing picture or video.</h3>\n<h3>Some quest after completion is missing log of the journal.</h3>\n<h3>My FPS low and CPU Usage are High as F</h3>\n<ul>\n<li>All the GF2 Cloth or Heads contain real time physics. Turn them off on the plugin menu if you are playing with your mates. You can turn only render physic for yourself on the plugin menu.</li>\n</ul></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/uXZ6dHhUoQYrY9s9ZRrYsGFPn6kUJUsBWeBiwOUQ.png",
    "forge_url": "https://sp-mod.com/mod/3091/astral-divide",
-   "downloads": 399,
-   "favourites": 9,
+   "downloads": 1570,
+   "favourites": 22,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -210299,12 +210350,46 @@
    ],
    "versions": [
     {
+     "id": 15846,
+     "version": "0.2.0",
+     "description": "<p>Before you install this please remove the old version if you have.</p>\n<p>What\u2019s New?</p>\n<ul>\n<li>Rework Physic engine and GF2 Shader and reduce physic engine performance issue by 50%</li>\n<li>Added Animations system. eg. Facial Idle animation with WTT - MenuOverhaul. dying or hurt Facial animation.</li>\n<li>Added Notes for Visit Location and guide where to go.</li>\n<li>Added Dynamic Map coordinates to guide players on where to go.</li>\n<li>Fixed Objects name not display correct.</li>\n<li>Fixed Shoreline object will not able to see the dialogue where on the visit spot.</li>\n</ul>\n<p>Knowing issue.</p>\n<ul>\n<li>Basti and SOP do not blink or react to damage yet.</li>\n<li>Basti\u2019s knees can pinch when crouching.</li>\n</ul>\n",
+     "spt_constraint": "~4.1.0",
+     "fika": "compatible",
+     "downloads": 127,
+     "size": 667685640,
+     "link": "https://sp-mod.com/mod/download/3091/astral-divide/0.2.0",
+     "published_at": "2026-10-09T14:14:00.000000Z",
+     "dependencies": [
+      {
+       "id": 2310,
+       "name": "WTT - CommonLib",
+       "slug": "wtt-commonlib",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
+      },
+      {
+       "id": 2511,
+       "name": "WTT - Black Division [REDACTED] Home",
+       "slug": "wtt-black-division-redacted-home",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2511/wtt-black-division-redacted-home"
+      },
+      {
+       "id": 2788,
+       "name": "VisitAPI Framework",
+       "slug": "visitapi-framework",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2788/visitapi-framework"
+      }
+     ]
+    },
+    {
      "id": 15714,
      "version": "0.1.0",
      "description": "<p>First Release</p>\n",
      "spt_constraint": "~4.1",
      "fika": "compatible",
-     "downloads": 399,
+     "downloads": 1443,
      "size": 480371911,
      "link": "https://sp-mod.com/mod/download/3091/astral-divide/0.1.0",
      "published_at": "2026-10-01T16:41:00.000000Z",
@@ -210333,19 +210418,13 @@
      ]
     }
    ],
-   "latest_version": "0.1.0",
-   "spt_constraint": "~4.1",
+   "latest_version": "0.2.0",
+   "spt_constraint": "~4.1.0",
    "all_spt_constraints": [
-    "~4.1"
+    "~4.1",
+    "~4.1.0"
    ],
    "dependencies": [
-    {
-     "id": 2788,
-     "name": "VisitAPI Framework",
-     "slug": "visitapi-framework",
-     "constraint": "",
-     "url": "https://sp-mod.com/mod/2788/visitapi-framework"
-    },
     {
      "id": 2310,
      "name": "WTT - CommonLib",
@@ -210359,17 +210438,17 @@
      "slug": "wtt-black-division-redacted-home",
      "constraint": "",
      "url": "https://sp-mod.com/mod/2511/wtt-black-division-redacted-home"
+    },
+    {
+     "id": 2788,
+     "name": "VisitAPI Framework",
+     "slug": "visitapi-framework",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/2788/visitapi-framework"
     }
    ],
    "all_dependencies": [
     {
-     "id": 2788,
-     "name": "VisitAPI Framework",
-     "slug": "visitapi-framework",
-     "constraint": "",
-     "url": "https://sp-mod.com/mod/2788/visitapi-framework"
-    },
-    {
      "id": 2310,
      "name": "WTT - CommonLib",
      "slug": "wtt-commonlib",
@@ -210382,10 +210461,17 @@
      "slug": "wtt-black-division-redacted-home",
      "constraint": "",
      "url": "https://sp-mod.com/mod/2511/wtt-black-division-redacted-home"
+    },
+    {
+     "id": 2788,
+     "name": "VisitAPI Framework",
+     "slug": "visitapi-framework",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/2788/visitapi-framework"
     }
    ],
    "published_at": "2026-10-01T11:02:00.000000Z",
-   "updated_at": "2026-10-02T01:47:47.000000Z",
+   "updated_at": "2026-10-09T14:28:14.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -211806,8 +211892,8 @@
    "description_html": "<p><strong>Infinite Everything</strong> All I want is to be able to reload WHILE having infinite ammo. Didn\u2019t test it with FIKA so let me know how it goes in the comments!</p>\n<h2>Options</h2>\n<h3>Weapons</h3>\n<p><strong>Infinite ammo</strong> (on by default)</p>\n<ul>\n<li>You still reload, but reloading never costs anything. Your magazine goes back into your rig, pockets or backpack, refilled, even on a double-tap quick reload.</li>\n<li>R and double-tap R always reload, also on a full gun and with only the magazine that is in the gun.</li>\n<li>Nothing is dropped when your inventory is full: the old magazine is kept aside and comes back when there is room.</li>\n<li>Shotguns, bolt-actions, revolvers, break-actions, grenade launchers and flare guns load to full, even with no rounds on you.</li>\n<li>R puts a new rocket in an empty RShG-2.</li>\n</ul>\n<p><strong>Infinite Magazine Options (Hold-R Scroll Menu)</strong> (on by default)</p>\n<ul>\n<li>The hold-R reload menu lists every magazine that fits your gun and every round type it takes, even ones you don\u2019t carry.</li>\n<li>Magazines you don\u2019t own are borrowed, and that needs no free inventory space. Your own magazine is kept aside, comes back when the borrowed one leaves the gun, and is back in the gun at raid end.</li>\n<li>Whatever you pick sticks for later reloads.</li>\n</ul>\n<p><strong>Other weapon options</strong></p>\n<ul>\n<li><strong>Infinite magazine</strong>: firing never uses rounds. The RShG-2 gets a new rocket after every shot.</li>\n<li><strong>Infinite weapon durability</strong>.</li>\n<li><strong>Weapon reliability</strong>: no malfunctions and no overheating.</li>\n</ul>\n<h3>Grenades, items and money</h3>\n<ul>\n<li><strong>Infinite grenades</strong>: you get the same type back in the same slot, and it stays selected.</li>\n<li><strong>Infinite item usage</strong>: meds, food, drinks and stims.</li>\n<li><strong>Infinite key usage</strong>: keys, keycards and the Labs card.</li>\n<li><strong>Infinite money, including GP coins</strong>: traders, the flea market, repairs, insurance, healing, hideout upgrades and the scav case. In raid, paid exfils and BTR services give your money back.</li>\n</ul>\n<p>Infinite money is non-destructive: no money is ever added to or removed from your stash. Turn it off and you have exactly what you had before.</p>\n<h3>Player</h3>\n<ul>\n<li>God mode.</li>\n<li>Infinite energy and hydration.</li>\n<li>Infinite stamina.</li>\n<li>Infinite armor durability.</li>\n<li>Infinite carry weight.</li>\n<li>Infinite raid time.</li>\n</ul>\n<h3>Turrets</h3>\n<ul>\n<li><strong>Turret ammo</strong>: the belt refills when empty.</li>\n<li><strong>Turret magazine</strong>: rounds are never used.</li>\n</ul>\n<h3>Hideout</h3>\n<ul>\n<li>Infinite generator fuel, water filters and air filters.</li>\n</ul>\n<h2>Install</h2>\n<ol>\n<li>Download the zip.</li>\n<li>Extract it into your SPT folder, the one that contains <code>EscapeFromTarkov.exe</code>.</li>\n<li>Start the SPT server. The log shows <code>[Infinite Everything] server part 2.5.0 loaded</code>.</li>\n<li>Start the game, press <strong>F12</strong> and open <strong>trappuss-InfiniteEverything</strong>.</li>\n</ol>\n<p>The zip adds two folders: <code>BepInEx\\plugins\\InfiniteEverything\\</code> and <code>SPT_Runtime\\user\\mods\\InfiniteEverything\\</code>.</p>\n<p>If you used the old <em>InfiniteAmmo</em> plugin, delete its folder first. The two are marked incompatible.</p>\n<h2>Usage</h2>\n<ul>\n<li>Every option is off by default except Infinite ammo and Infinite Magazine Options (Hold-R Scroll Menu).</li>\n<li>Turning an option, or the whole mod, off undoes it right away.</li>\n<li>Infinite money and the hideout option need the server part. Without it, those two options do nothing.</li>\n</ul>\n",
    "thumbnail": "https://files.sp-mod.com/mods/9xK0JNrcG600chLbjtNmMVEkfJkWq9oPsMKSW8q3.png",
    "forge_url": "https://sp-mod.com/mod/3108/infinite-everything",
-   "downloads": 844,
-   "favourites": 10,
+   "downloads": 960,
+   "favourites": 11,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -211835,12 +211921,24 @@
    ],
    "versions": [
     {
+     "id": 15848,
+     "version": "2.5.1",
+     "description": "<h2>Infinite Everything 2.5.1</h2>\n<p>For SPT 4.1.x (not 4.0.x). Extract the zip into your SPT folder (the one with <code>EscapeFromTarkov.exe</code>), start the server, then in game press F12 &gt; <strong>trappuss-InfiniteEverything</strong>.</p>\n<p>A fix release for 2.5.0. Everyone on 2.5.0 should update.</p>\n<h3>Fixed</h3>\n<ul>\n<li>In a raid, R on a pistol with no spare magazine refilled the magazine but played no reload. Double-tap was not affected.</li>\n<li>Looting experience was paid for magazines and grenades the mod creates (every double-tap reload, every replacement grenade).</li>\n<li>Infinite energy and hydration paid experience and Metabolism skill for doing nothing.</li>\n<li>A reload in the last second of a raid could leave a borrowed magazine in the gun instead of your own.</li>\n<li>Unloading a borrowed magazine with a full inventory threw it on the ground and could leave the hands stuck. It is now refused with a notice.</li>\n<li>Shotguns, revolvers and break-action guns loaded with rounds you have not examined got the wrong rounds or none in a raid.</li>\n<li>The hold-R menu no longer offers magazines the game refuses to change in a raid.</li>\n<li>A paid exfil refund could double your money stack in a rare case.</li>\n<li>Replacement grenades keep their found-in-raid status and their quick-slot key after a G-key throw.</li>\n<li>Turning god mode off after a BTR ride no longer leaves you invincible.</li>\n</ul>\n<h3>In the zip</h3>\n<ul>\n<li><code>BepInEx\\plugins\\InfiniteEverything\\</code> - client plugin</li>\n<li><code>SPT_Runtime\\user\\mods\\InfiniteEverything\\</code> - server part (needed for infinite money and hideout fuel/filters)</li>\n</ul>\n<h1>2.5.0 Bugs</h1>\n<p>I apologize I just found some pretty obnoxious bugs in the latest version! I gotta stop  using hideout to test lol.</p>\n<ul>\n<li>Pistols are unable to R-Reload with infinite magazine on</li>\n<li>Pistols award loot experience upon RR-Reload with infinite magazine on</li>\n</ul>\n<p>I\u2019m testing different side-effects of the settings in new raid environments and will update soon, I hate spamming updates and I know it\u2019s probably very annoying seeing an update almost every 12 hours since release. That\u2019s my fault for rushing it in-between projects; this was originally more for testing my other mods without having to get ammo but I wanted to release it since It seemed like a hole in the mod base right now.</p>\n<p>I\u2019ll do better &lt;3</p>\n",
+     "spt_constraint": "~4.1",
+     "fika": "unknown",
+     "downloads": 35,
+     "size": 53673,
+     "link": "https://sp-mod.com/mod/download/3108/infinite-everything/2.5.1",
+     "published_at": "2026-10-09T15:27:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 15837,
      "version": "2.5.0",
-     "description": "<h3>New</h3>\n<ul>\n<li>The hold-R reload menu lists every magazine that fits your gun and every round type it takes, not only what you carry (mods\u2019 items included). It needs Infinite ammo.</li>\n<li>Magazines you do not own are borrowed, with no free inventory space needed. Your own magazine is kept aside while the borrowed one is in the gun, comes back when the borrowed one leaves the gun, and is put back in the gun at raid end.</li>\n<li>Your pick sticks: R reloads the magazine or round type you picked again, also after holstering or switching guns.</li>\n<li>F12 option: \u201cInfinite Magazine Options (Hold-R Scroll Menu)\u201d, on by default.</li>\n</ul>\n<h3>Changed</h3>\n<ul>\n<li>\u201cLauncher and flare ammo\u201d is gone as a separate option. Grenade launchers and flare guns now follow Infinite ammo.</li>\n<li>RShG-2: with Infinite magazine it gets a new rocket after every shot. With Infinite ammo alone, press R after a shot to put a new rocket in.</li>\n<li>Double-tap R plays the fast reload also when the gun only has the magazine that is in it.</li>\n<li>R now reloads a gun that is already full.</li>\n<li>A reload with a completely full inventory no longer throws the old magazine on the ground. It is kept aside and comes back when there is room.</li>\n</ul>\n<h3>Fixed</h3>\n<ul>\n<li>RShG-2: it used to stay an empty tube after one shot.</li>\n<li>Revolvers: a reload with rounds you do not carry could loop forever without loading anything.</li>\n</ul>\n",
+     "description": "<h2>Infinite Everything 2.5.0</h2>\n<p>For SPT 4.1.x (not 4.0.x). Extract the zip into your SPT folder (the one with <code>EscapeFromTarkov.exe</code>), start the server, then in game press F12 &gt; <strong>trappuss-InfiniteEverything</strong>.</p>\n<p><strong>New: any magazine / round type from the hold-R menu</strong></p>\n<ul>\n<li>With Infinite ammo on, the hold-R reload menu lists every magazine that fits your gun and every round type it takes, not only what you carry (mods\u2019 items included). Shotguns, bolt-actions with internal magazines, revolvers, break-actions and underbarrel launchers list round types.</li>\n<li>Magazines you do not own are borrowed, with no free inventory space needed: your own magazine is kept aside while the borrowed one is in the gun, comes back when the borrowed one leaves the gun, and is put back in the gun at raid end. Your inventory ends exactly as it started.</li>\n<li>Your pick sticks: R reloads the magazine / round type you picked again instead of switching back, also after holstering or switching guns.</li>\n<li>Can be turned off in F12: \u201cInfinite Magazine Options (Hold-R Scroll Menu)\u201d.</li>\n</ul>\n<p><strong>Changed</strong></p>\n<ul>\n<li>\u201cLauncher and flare ammo\u201d is gone as a separate option. Grenade launchers and flare guns now follow <strong>Infinite ammo</strong>.</li>\n<li>RShG-2: with <strong>Infinite magazine</strong> it gets a new rocket after every shot. With <strong>Infinite ammo</strong> alone, press R after a shot to put a new rocket in.</li>\n<li>Double-tap R plays the fast reload also when the gun only has the magazine that is in it.</li>\n<li>A reload with a completely full inventory no longer throws the old magazine on the ground: it is kept aside and comes back when there is room.</li>\n</ul>\n<p><strong>Fixes</strong></p>\n<ul>\n<li>RShG-2: it used to stay an empty tube after one shot.</li>\n<li>Revolvers: a reload with rounds you do not carry could loop forever without loading anything.</li>\n</ul>\n<p><strong>In the zip</strong></p>\n<ul>\n<li><code>BepInEx\\plugins\\InfiniteEverything\\</code> - client plugin</li>\n<li><code>SPT_Runtime\\user\\mods\\InfiniteEverything\\</code> - server part (needed for infinite money and hideout fuel/filters)</li>\n</ul>\n",
      "spt_constraint": "~4",
      "fika": "unknown",
-     "downloads": 61,
+     "downloads": 133,
      "size": 50861,
      "link": "https://sp-mod.com/mod/download/3108/infinite-everything/2.5.0",
      "published_at": "2026-10-09T03:18:00.000000Z",
@@ -211849,10 +211947,10 @@
     {
      "id": 15788,
      "version": "2.4.0",
-     "description": "<ul>\n<li><strong>Fix:</strong> with Infinite ammo, empty spare magazines in your rig/pockets were never refilled (an error was thrown and the normal reload ran instead).</li>\n<li><strong>Loose-round guns load to full:</strong> pump/tube shotguns, bolt-actions with internal magazines, revolvers, break-action and single-shot guns. Previously a reload stopped at the number of rounds you carried.</li>\n<li><strong>No matching rounds on you?</strong> Those guns still reload, with the normal animation: temporary rounds are used for the reload and removed right after (needs one free rig/pocket spot; tubes and internal magazines are filled directly without one).</li>\n<li><strong>Single round into the chamber</strong> (R on a gun without a usable magazine) no longer uses up the round.</li>\n<li>In F12 the mod is now listed as <strong>trappuss-InfiniteEverything</strong> (naming rule of the SPT Forge). Your settings are kept.</li>\n</ul>\n",
+     "description": "<h2>Infinite Everything 2.4.0</h2>\n<p>Extract the zip into your SPT folder (the one with <code>EscapeFromTarkov.exe</code>), start the server, then in game press F12 &gt; <strong>trappuss-InfiniteEverything</strong>.</p>\n<p><strong>Changes since 2.3.0</strong></p>\n<ul>\n<li><strong>Fix:</strong> with Infinite ammo, empty spare magazines in your rig/pockets were never refilled (an error was thrown and the normal reload ran instead).</li>\n<li><strong>Loose-round guns load to full:</strong> pump/tube shotguns, bolt-actions with internal magazines, revolvers, break-action and single-shot guns. Previously a reload stopped at the number of rounds you carried.</li>\n<li><strong>No matching rounds on you?</strong> Those guns still reload, with the normal animation: temporary rounds are used for the reload and removed right after (needs one free rig/pocket spot; tubes and internal magazines are filled directly without one).</li>\n<li><strong>Single round into the chamber</strong> (R on a gun without a usable magazine) no longer uses up the round.</li>\n<li>In F12 the mod is now listed as <strong>trappuss-InfiniteEverything</strong> (naming rule of the SPT Forge). Your settings are kept.</li>\n</ul>\n<p><strong>In the zip</strong></p>\n<ul>\n<li><code>BepInEx\\plugins\\InfiniteEverything\\InfiniteEverything.dll</code> - client plugin</li>\n<li><code>SPT_Runtime\\user\\mods\\InfiniteEverything\\InfiniteEverythingServer.dll</code> - server part (needed for infinite money and hideout fuel/filters)</li>\n</ul>\n",
      "spt_constraint": "~4",
      "fika": "unknown",
-     "downloads": 577,
+     "downloads": 579,
      "size": 40386,
      "link": "https://sp-mod.com/mod/download/3108/infinite-everything/2.4.0",
      "published_at": "2026-10-05T15:30:00.000000Z",
@@ -211864,23 +211962,24 @@
      "description": "<p>What\u2019s in the zip:</p>\n<p>BepInEx\\plugins\\InfiniteEverything\\InfiniteEverything.dll: the client plugin.\nSPT_Runtime\\user\\mods\\InfiniteEverything\\InfiniteEverythingServer.dll: the server part. It is needed for infinite money and hideout fuel/filters.</p>\n",
      "spt_constraint": "4.1",
      "fika": "unknown",
-     "downloads": 206,
+     "downloads": 213,
      "size": 34786,
      "link": "https://sp-mod.com/mod/download/3108/infinite-everything/2.3.0",
      "published_at": "2026-10-04T22:58:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "2.5.0",
-   "spt_constraint": "~4",
+   "latest_version": "2.5.1",
+   "spt_constraint": "~4.1",
    "all_spt_constraints": [
     "4.1",
-    "~4"
+    "~4",
+    "~4.1"
    ],
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-10-04T23:09:00.000000Z",
-   "updated_at": "2026-10-09T03:29:30.000000Z",
+   "updated_at": "2026-10-09T15:30:07.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -212051,8 +212150,8 @@
    "description_html": "<h1>Incendiary Grenade</h1>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/tinG7oe.gif\" alt=\"gif\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/Fs2RPzN.png\" alt=\"embed\" /></p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Information</div>\n<div class=\"tab-content\"><p><strong>The Grenade</strong></p>\n<ul>\n<li>A new item, the <strong>SAGA-6</strong>.</li>\n<li>Sold by <strong>Prapor at Loyalty Level 2</strong></li>\n<li>It\u2019ll kill you if you\u2019re standing inside of the fire <strong>duh</strong></li>\n</ul></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Bug Reports</div>\n<div class=\"tab-content\"><ul>\n<li><em>Those goes to \u201cIssues\u201d</em></li>\n</ul></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Does it work?</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://media1.tenor.com/m/rkI1a8s2Z6QAAAAd/todd-howard-it-just-works.gif\" alt=\"gif\" /></p></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/RLIPNU6CR6s1s5lpO5hfJQr5iJx6amD0fXF8hZbF.png",
    "forge_url": "https://sp-mod.com/mod/3113/sages-incendiary-grenade",
-   "downloads": 458,
-   "favourites": 5,
+   "downloads": 1099,
+   "favourites": 10,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -212080,12 +212179,32 @@
    ],
    "versions": [
     {
+     "id": 15844,
+     "version": "1.0.2",
+     "description": "<p>v1.0.2</p>\n<ul>\n<li>Added a volume slider</li>\n</ul>\n",
+     "spt_constraint": "4.1.*",
+     "fika": "unknown",
+     "downloads": 189,
+     "size": 19516009,
+     "link": "https://sp-mod.com/mod/download/3113/sages-incendiary-grenade/1.0.2",
+     "published_at": "2026-10-09T10:44:50.000000Z",
+     "dependencies": [
+      {
+       "id": 902,
+       "name": "BigBrain",
+       "slug": "bigbrain",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/902/bigbrain"
+      }
+     ]
+    },
+    {
      "id": 15802,
      "version": "1.0.1",
      "description": "<p>v1.0.1</p>\n<ul>\n<li>Added \u201cSAGA-6\u201d to the Grenade Crate Loot [<strong>6% Spawn Chance</strong>]</li>\n</ul>\n",
      "spt_constraint": "4.1.*",
      "fika": "unknown",
-     "downloads": 200,
+     "downloads": 651,
      "size": 19515192,
      "link": "https://sp-mod.com/mod/download/3113/sages-incendiary-grenade/1.0.1",
      "published_at": "2026-10-06T09:02:13.000000Z",
@@ -212105,7 +212224,7 @@
      "description": "<p>v1.0.0</p>\n",
      "spt_constraint": "4.1.*",
      "fika": "unknown",
-     "downloads": 258,
+     "downloads": 259,
      "size": 19513973,
      "link": "https://sp-mod.com/mod/download/3113/sages-incendiary-grenade/1.0.0",
      "published_at": "2026-10-05T22:16:24.000000Z",
@@ -212120,7 +212239,7 @@
      ]
     }
    ],
-   "latest_version": "1.0.1",
+   "latest_version": "1.0.2",
    "spt_constraint": "4.1.*",
    "all_spt_constraints": [
     "4.1.*"
@@ -212144,7 +212263,7 @@
     }
    ],
    "published_at": "2026-10-05T22:16:22.000000Z",
-   "updated_at": "2026-10-06T09:03:03.000000Z",
+   "updated_at": "2026-10-09T10:45:07.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -212736,11 +212855,11 @@
    "name": "Tylevo's Field Attachments",
    "slug": "tylevos-field-attachments",
    "teaser": "Allows for change of optics, muzzle devices, tactical devices and foregrips without opening your inventory in a 3d weapon card view.",
-   "description_html": "<h1>Tylevo\u2019s Field Attachments</h1>\n<p>Change optics, muzzle devices, tactical devices and foregrips without opening your inventory. Hold <strong>Left Alt</strong> to bring up attachment cards around your weapon and use the mouse to choose a part.</p>\n<p><strong>Version 1.0.0 \u00b7 SPT 4.1.5 / 4.1.6</strong></p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">FEATURES</div>\n<div class=\"tab-content\"><ul>\n<li>Attachment cards sit around your weapon and follow its movement, with item thumbnails where available.</li>\n<li>Install a part into an empty slot, remove an attachment or replace it with something you\u2019re carrying.</li>\n<li>Browse compatible, examined parts from your pockets, rig, backpack or secure container. The game\u2019s restrictions on changing parts in raid still apply.</li>\n<li>Cycle between mounting points, including different handguard positions. The slot count and connection line show which point you\u2019ve selected.</li>\n<li>Move an assembled <strong>optic and mount together</strong>, keeping the sight attached.</li>\n<li>Hold your weapon at an angle to see its attachments. Normal weapon inspection still works separately.</li>\n</ul>\n<p><strong>Attachment changes are off on a fresh install.</strong> You can browse straight away. To install, replace or remove parts, enable <strong>F12 \u2192 General \u2192 Allow attachment changes</strong>.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Tylevo/Tylevo.FieldAttachments/main/docs/images/hk416-attachment-menu.png\" alt=\"HK416 Attachment Guide\" /></p>\n<p><em>Original HK416 gameplay showing the angled attachment cards.</em></p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">GETTING STARTED</div>\n<div class=\"tab-content\"><ol>\n<li>Enter the hideout shooting range or a local raid with a supported weapon.</li>\n<li>Hold <strong>Left Alt</strong> to open the attachment menu and control the mouse.</li>\n<li>Click <strong>LIST</strong> on a card to see compatible parts you\u2019re carrying.</li>\n<li>Click a part\u2019s thumbnail to install it. Enable <strong>Allow attachment changes</strong> in F12 first if you haven\u2019t already.</li>\n<li>Release <strong>Left Alt</strong> to close the menu. Prefer a toggle? Change <strong>Menu activation</strong> in F12.</li>\n</ol>\n<p>Your character lowers the weapon to make a change. After a successful change, the weapon returns to the attachment view if the menu is still open.</p>\n<p>Leave room in your gear for anything you remove. When replacing a part, the old one goes into your inventory before the new one is fitted. If the new part fails to install, the old one stays in your inventory and the weapon\u2019s slot may be empty.</p>\n<p>The menu uses parts you\u2019re carrying, not your stash. A sight on its own won\u2019t appear if the weapon is missing its required mount.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">CONTROLS</div>\n<div class=\"tab-content\"><p><strong>Left Alt</strong> opens the menu and gives you mouse control in both Hold and Toggle modes. Choose your preferred mode in <strong>F12 \u2192 Controls \u2192 Menu activation</strong>. Hold is the default.</p>\n<ul>\n<li>\n<p><strong>Left Alt:</strong> Open the menu and control the mouse. Hold the key in Hold mode, or press it in Toggle mode.</p>\n</li>\n<li>\n<p><strong>Cancel attachment mode:</strong> Release Alt in Hold mode, tap it again in Toggle mode, or perform an action such as sprinting.</p>\n</li>\n<li>\n<p><strong>LIST:</strong> Show compatible parts you\u2019re carrying for that card.</p>\n</li>\n<li>\n<p><strong>Click a thumbnail:</strong> Install or replace a part from the open list.</p>\n</li>\n<li>\n<p><strong>REMOVE / NONE:</strong> Remove the current part using REMOVE on its card or NONE in the list.</p>\n</li>\n<li>\n<p><strong>Alt + R:</strong> Cycle mounting points while the cursor is active.</p>\n</li>\n<li>\n<p><strong>Right-click:</strong> Close the open list while the cursor is active.</p>\n</li>\n<li>\n<p><strong>F12:</strong> Open mod settings.</p>\n</li>\n</ul>\n<p>In Toggle mode, you can let go of Alt and keep using the mouse. Using Alt+R or clicking while Alt is held keeps the menu open; tap Alt on its own to close it.</p>\n<p>Alt+R changes the mounting point for the open list or the card under your cursor. It won\u2019t swap a part until you choose one.</p>\n<p>Mouse clicks stay in the menu, so selecting a part won\u2019t fire your weapon. Closing the menu stops changes that haven\u2019t started yet, but it can\u2019t undo an item move already underway.</p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">CONFIGURATION</div>\n<div class=\"tab-content\"><p>Press <strong>F12</strong> to adjust the mod\u2019s settings.</p>\n<p><strong>Allow attachment changes</strong></p>\n<p>Enable this to install, replace or remove parts. It\u2019s off on a fresh install; browsing still works.</p>\n<p><strong>Attachment menu key</strong></p>\n<p>Choose the key that opens the menu and gives you mouse control. Defaults to <strong>Left Alt</strong>.</p>\n<p><strong>Menu activation</strong></p>\n<p>Choose <strong>Hold</strong> to keep the menu open while holding the key, or <strong>Toggle</strong> to open it with one press and close it with another. Hold is the default.</p>\n<p><strong>Cycle mounting position</strong></p>\n<p>Choose the shortcut for changing the selected mounting point. Defaults to <strong>Left Alt + R</strong>.</p>\n<p><strong>Cursor speed</strong></p>\n<p>Adjust how quickly the menu cursor moves.</p>\n<p><strong>Attachment animation speed</strong></p>\n<p>Adjust install and removal playback from <strong>1.0\u20131.15\u00d7</strong>. Defaults to <strong>1.12\u00d7</strong>. This leaves normal inspection, firing and reloading speeds alone.</p>\n<p><strong>Show attachment thumbnails</strong></p>\n<p>Show or hide item images on the cards.</p>\n<p><strong>Follow weapon movement</strong></p>\n<p>Let the cards move with the weapon.</p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">INSTALLATION</div>\n<div class=\"tab-content\"><p>Requires <strong>SPT 4.1.5 or 4.1.6 (EFT 40743)</strong>, <strong>BepInEx 5</strong>, and a compatible release of <strong><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/ArysWasTaken/UnityToolkit\" rel=\"noreferrer noopener\">UnityToolkit 2.0.2 or newer</a></strong>.</p>\n<ol>\n<li>Close the game. If you\u2019re updating, back up your existing <code>BepInEx/plugins/Tylevo.FieldAttachments/</code> folder and <code>BepInEx/config/com.tylevo.fieldattachments.cfg</code>.</li>\n<li>Extract the release ZIP and merge its <strong>BepInEx</strong> folder into your SPT game folder.</li>\n<li>Keep the plugin\u2019s <strong>Animation</strong> folder alongside its DLL. Keep only one copy of the Field Attachments DLL installed.</li>\n<li>Start the game and enter the hideout shooting range or a local raid. Hold <strong>Left Alt</strong> to open the menu.</li>\n<li>Enable <strong>F12 \u2192 General \u2192 Allow attachment changes</strong> when you\u2019re ready to install, replace or remove parts.</li>\n</ol>\n<p>Keep your existing configuration when updating if you want to preserve your settings. Older tester packages may include a preset that replaces them.</p>\n<p>The weapon packs listed under <strong>Compatibility</strong> are optional.</p></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">COMPATIBILITY</div>\n<div class=\"tab-content\"><p>Supports <strong>SPT 4.1.5 / 4.1.6 (EFT 40743)</strong> in local raids and the hideout shooting range.</p>\n<p>Weapon support covers <strong>159 SPT entries</strong> and <strong>35 entries from optional packs</strong>, for <strong>194 total</strong>. Support must be added for each weapon; unlisted weapons won\u2019t work automatically.</p>\n<h4>Optional weapon packs</h4>\n<p><strong>You don\u2019t need these packs to use Field Attachments with SPT\u2019s standard weapons.</strong> If you already use them, the following weapon entries are supported:</p>\n<p><strong><a target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/2512/wtt-content-backport\" rel=\"noreferrer noopener\">WTT - Content Backport</a></strong></p>\n<p><strong>13 supported entries</strong>, including the M16A1, M16A2 and Howa Type 20.</p>\n<p><strong><a target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/index.php/mod/1263/epics-all-in-one\" rel=\"noreferrer noopener\">Epic\u2019s All in One</a></strong></p>\n<p><strong>16 supported entries</strong>, including Mk47 Mutant 5.45/9\u00d739 variants, the MCX 5.56 and M700 .277 Fury.</p>\n<p><strong><a target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/2195/ecot-eukyres-consortium-of-things\" rel=\"noreferrer noopener\">ECOT - Eukyre\u2019s Consortium of Things</a></strong></p>\n<p><strong>6 supported entries</strong>, including the HK337, FNX-45 Tactical, Glock 22, MP5/40 and UMP .40.</p>\n<p>Use a pack release that matches your SPT version and install its listed dependencies. These counts cover the weapons currently supported; new additions to a pack won\u2019t automatically be supported.</p></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">FIKA AND KNOWN ISSUES</div>\n<div class=\"tab-content\"><ul>\n<li><strong>Fika:</strong> Attachment changes are not supported.</li>\n<li><strong>Missing choices:</strong> Parts need to be compatible, examined, carried in accessible storage and allowed to be changed in raid. Check that you\u2019ve selected the right mounting point and that the weapon has any required mount.</li>\n<li><strong>No room for a removed part:</strong> Leave compatible free space in your carried gear before removing or replacing an attachment. The mod won\u2019t rearrange your inventory to make room.</li>\n<li><strong>A replacement leaves an empty slot:</strong> The old part moves into your inventory before the new one is fitted. If fitting the new part fails, check your inventory for the old one.</li>\n<li><strong>Weapon coverage:</strong> Some supported weapons have no attachment slots to change. Not every weapon and clothing combination has been tested in game yet.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-8\" class=\"tab-panel\"><div class=\"tab-title\">GAMEPLAY</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Tylevo/Tylevo.FieldAttachments/main/docs/images/hk416-inspection.png\" alt=\"HK416 attachment pose in the hideout shooting range\" /></p>\n<p><em>Original HK416 gameplay showing the held weapon before the attachment cards appear.</em></p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://raw.githubusercontent.com/Tylevo/Tylevo.FieldAttachments/main/docs/images/hk416-attachment-menu.png\" rel=\"noreferrer noopener\">View the attachment menu screenshot</a> \u00b7 <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Tylevo/Tylevo.FieldAttachments\" rel=\"noreferrer noopener\">GitHub</a></p></div></div></div>\n",
+   "description_html": "<h1>Tylevo\u2019s Field Attachments</h1>\n<p>Change optics, muzzle devices, tactical devices and foregrips without opening your inventory. Hold <strong>Left Alt</strong> to bring up attachment cards around your weapon and use the mouse to choose a part.</p>\n<p><strong>Version 1.0.0 \u00b7 SPT 4.1.5 / 4.1.6</strong></p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">FEATURES</div>\n<div class=\"tab-content\"><ul>\n<li>Attachment cards sit around your weapon and follow its movement, with item thumbnails where available.</li>\n<li>Install a part into an empty slot, remove an attachment or replace it with something you\u2019re carrying.</li>\n<li>Browse compatible, examined parts from your pockets, rig, backpack or secure container. The game\u2019s restrictions on changing parts in raid still apply.</li>\n<li>Cycle between mounting points, including different handguard positions. The slot count and connection line show which point you\u2019ve selected.</li>\n<li>Move an assembled <strong>optic and mount together</strong>, keeping the sight attached.</li>\n<li>Hold your weapon at an angle to see its attachments. Normal weapon inspection still works separately.</li>\n</ul>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Tylevo/Tylevo.FieldAttachments/main/docs/images/hk416-attachment-menu.png\" alt=\"HK416 Attachment Guide\" /></p>\n<p><em>Original HK416 gameplay showing the angled attachment cards.</em></p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">GETTING STARTED</div>\n<div class=\"tab-content\"><ol>\n<li>Enter the hideout shooting range or a local raid with a supported weapon.</li>\n<li>Hold <strong>Left Alt</strong> to open the attachment menu and control the mouse.</li>\n<li>Click <strong>LIST</strong> on a card to see compatible parts you\u2019re carrying.</li>\n<li>Click a part\u2019s thumbnail to install it. Enable <strong>Allow attachment changes</strong> in F12 first if you haven\u2019t already.</li>\n<li>Release <strong>Left Alt</strong> to close the menu. Prefer a toggle? Change <strong>Menu activation</strong> in F12.</li>\n</ol>\n<p>Your character lowers the weapon to make a change. After a successful change, the weapon returns to the attachment view if the menu is still open.</p>\n<p>Leave room in your gear for anything you remove. When replacing a part, the old one goes into your inventory before the new one is fitted. If the new part fails to install, the old one stays in your inventory and the weapon\u2019s slot may be empty.</p>\n<p>The menu uses parts you\u2019re carrying, not your stash. A sight on its own won\u2019t appear if the weapon is missing its required mount.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">CONTROLS</div>\n<div class=\"tab-content\"><p><strong>Left Alt</strong> opens the menu and gives you mouse control in both Hold and Toggle modes. Choose your preferred mode in <strong>F12 \u2192 Controls \u2192 Menu activation</strong>. Hold is the default.</p>\n<ul>\n<li>\n<p><strong>Left Alt:</strong> Open the menu and control the mouse. Hold the key in Hold mode, or press it in Toggle mode.</p>\n</li>\n<li>\n<p><strong>Cancel attachment mode:</strong> Release Alt in Hold mode, tap it again in Toggle mode, or perform an action such as sprinting.</p>\n</li>\n<li>\n<p><strong>LIST:</strong> Show compatible parts you\u2019re carrying for that card.</p>\n</li>\n<li>\n<p><strong>Click a thumbnail:</strong> Install or replace a part from the open list.</p>\n</li>\n<li>\n<p><strong>REMOVE / NONE:</strong> Remove the current part using REMOVE on its card or NONE in the list.</p>\n</li>\n<li>\n<p><strong>Alt + R:</strong> Cycle mounting points while the cursor is active.</p>\n</li>\n<li>\n<p><strong>Right-click:</strong> Close the open list while the cursor is active.</p>\n</li>\n<li>\n<p><strong>F12:</strong> Open mod settings.</p>\n</li>\n</ul>\n<p>In Toggle mode, you can let go of Alt and keep using the mouse. Using Alt+R or clicking while Alt is held keeps the menu open; tap Alt on its own to close it.</p>\n<p>Alt+R changes the mounting point for the open list or the card under your cursor. It won\u2019t swap a part until you choose one.</p>\n<p>Mouse clicks stay in the menu, so selecting a part won\u2019t fire your weapon. Closing the menu stops changes that haven\u2019t started yet, but it can\u2019t undo an item move already underway.</p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">CONFIGURATION</div>\n<div class=\"tab-content\"><p>Press <strong>F12</strong> to adjust the mod\u2019s settings.</p>\n<p><strong>Allow attachment changes</strong></p>\n<p>Enable this to install, replace or remove parts. It\u2019s off on a fresh install; browsing still works.</p>\n<p><strong>Attachment menu key</strong></p>\n<p>Choose the key that opens the menu and gives you mouse control. Defaults to <strong>Left Alt</strong>.</p>\n<p><strong>Menu activation</strong></p>\n<p>Choose <strong>Hold</strong> to keep the menu open while holding the key, or <strong>Toggle</strong> to open it with one press and close it with another. Hold is the default.</p>\n<p><strong>Cycle mounting position</strong></p>\n<p>Choose the shortcut for changing the selected mounting point. Defaults to <strong>Left Alt + R</strong>.</p>\n<p><strong>Cursor speed</strong></p>\n<p>Adjust how quickly the menu cursor moves.</p>\n<p><strong>Attachment animation speed</strong></p>\n<p>Adjust install and removal playback from <strong>1.0\u20131.15\u00d7</strong>. Defaults to <strong>1.12\u00d7</strong>. This leaves normal inspection, firing and reloading speeds alone.</p>\n<p><strong>Show attachment thumbnails</strong></p>\n<p>Show or hide item images on the cards.</p>\n<p><strong>Follow weapon movement</strong></p>\n<p>Let the cards move with the weapon.</p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">INSTALLATION</div>\n<div class=\"tab-content\"><p>Requires <strong>SPT 4.1.5 or 4.1.6 (EFT 40743)</strong>, <strong>BepInEx 5</strong>, and a compatible release of <strong><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/ArysWasTaken/UnityToolkit\" rel=\"noreferrer noopener\">UnityToolkit 2.0.2 or newer</a></strong>.</p>\n<ol>\n<li>Close the game. If you\u2019re updating, back up your existing <code>BepInEx/plugins/Tylevo.FieldAttachments/</code> folder and <code>BepInEx/config/com.tylevo.fieldattachments.cfg</code>.</li>\n<li>Extract the release ZIP and merge its <strong>BepInEx</strong> folder into your SPT game folder.</li>\n<li>Keep the plugin\u2019s <strong>Animation</strong> folder alongside its DLL. Keep only one copy of the Field Attachments DLL installed.</li>\n<li>Start the game and enter the hideout shooting range or a local raid. Hold <strong>Left Alt</strong> to open the menu.</li>\n<li>Enable <strong>F12 \u2192 General \u2192 Allow attachment changes</strong> when you\u2019re ready to install, replace or remove parts.</li>\n</ol>\n<p>Keep your existing configuration when updating if you want to preserve your settings. Older tester packages may include a preset that replaces them.</p>\n<p>The weapon packs listed under <strong>Compatibility</strong> are optional.</p></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">COMPATIBILITY</div>\n<div class=\"tab-content\"><p>Supports <strong>SPT 4.1.5 / 4.1.6 (EFT 40743)</strong> in local raids and the hideout shooting range.</p>\n<p>Weapon support covers <strong>159 SPT entries</strong> and <strong>35 entries from optional packs</strong>, for <strong>194 total</strong>. Support must be added for each weapon; unlisted weapons won\u2019t work automatically.</p>\n<h4>Optional weapon packs</h4>\n<p><strong>You don\u2019t need these packs to use Field Attachments with SPT\u2019s standard weapons.</strong> If you already use them, the following weapon entries are supported:</p>\n<p><strong><a target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/2512/wtt-content-backport\" rel=\"noreferrer noopener\">WTT - Content Backport</a></strong></p>\n<p><strong>13 supported entries</strong>, including the M16A1, M16A2 and Howa Type 20.</p>\n<p><strong><a target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/index.php/mod/1263/epics-all-in-one\" rel=\"noreferrer noopener\">Epic\u2019s All in One</a></strong></p>\n<p><strong>16 supported entries</strong>, including Mk47 Mutant 5.45/9\u00d739 variants, the MCX 5.56 and M700 .277 Fury.</p>\n<p><strong><a target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/2195/ecot-eukyres-consortium-of-things\" rel=\"noreferrer noopener\">ECOT - Eukyre\u2019s Consortium of Things</a></strong></p>\n<p><strong>6 supported entries</strong>, including the HK337, FNX-45 Tactical, Glock 22, MP5/40 and UMP .40.</p>\n<p>Use a pack release that matches your SPT version and install its listed dependencies. These counts cover the weapons currently supported; new additions to a pack won\u2019t automatically be supported.</p></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">FIKA AND KNOWN ISSUES</div>\n<div class=\"tab-content\"><ul>\n<li><strong>Fika:</strong> Attachment changes are not supported.</li>\n<li><strong>Missing choices:</strong> Parts need to be compatible, examined, carried in accessible storage and allowed to be changed in raid. Check that you\u2019ve selected the right mounting point and that the weapon has any required mount.</li>\n<li><strong>No room for a removed part:</strong> Leave compatible free space in your carried gear before removing or replacing an attachment. The mod won\u2019t rearrange your inventory to make room.</li>\n<li><strong>A replacement leaves an empty slot:</strong> The old part moves into your inventory before the new one is fitted. If fitting the new part fails, check your inventory for the old one.</li>\n<li><strong>Weapon coverage:</strong> Some supported weapons have no attachment slots to change. Not every weapon and clothing combination has been tested in game yet.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-8\" class=\"tab-panel\"><div class=\"tab-title\">GAMEPLAY</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Tylevo/Tylevo.FieldAttachments/main/docs/images/hk416-inspection.png\" alt=\"HK416 attachment pose in the hideout shooting range\" /></p>\n<p><em>Original HK416 gameplay showing the held weapon before the attachment cards appear.</em></p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://raw.githubusercontent.com/Tylevo/Tylevo.FieldAttachments/main/docs/images/hk416-attachment-menu.png\" rel=\"noreferrer noopener\">View the attachment menu screenshot</a> \u00b7 <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Tylevo/Tylevo.FieldAttachments\" rel=\"noreferrer noopener\">GitHub</a></p></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/Wg2WvewgPAjTTuT7mvspICrZoNzu7MKprd7IvKgP.png",
    "forge_url": "https://sp-mod.com/mod/3125/tylevos-field-attachments",
-   "downloads": 10,
-   "favourites": 0,
+   "downloads": 148,
+   "favourites": 5,
    "featured": false,
    "fika": false,
    "fika_latest": "incompatible",
@@ -212755,7 +212874,7 @@
    },
    "authors": [
     {
-     "id": "116840-arch",
+     "id": 116840,
      "name": "tylevo",
      "avatar": "https://files.sp-mod.com/profile-photos/2FwZdmXyP7Hl0GmetDZvBvsWf5eaThlAdIpvP3wc_128w.webp"
     }
@@ -212773,7 +212892,7 @@
      "description": "<p>The first public release of Tylevo\u2019s Field Attachments for <strong>SPT 4.1.5 / 4.1.6</strong>.</p>\n<p>Change optics, muzzle devices, tactical devices and foregrips through attachment cards around your weapon.</p>\n<ul>\n<li>Hold <strong>Left Alt</strong> to open the menu and control the mouse. Release it to close, or choose <strong>Toggle</strong> in F12.</li>\n<li>Click <strong>LIST</strong> to browse compatible parts you\u2019re carrying, then click a thumbnail to install or replace a part.</li>\n<li>Use <strong>REMOVE</strong> on a card or <strong>NONE</strong> in the list to remove an attachment.</li>\n<li>Attachment changes are enabled by default on fresh installs. Updates preserve saved settings; turning changes off leaves browsing available.</li>\n<li>Press <strong>Alt+R</strong> to cycle mounting points.</li>\n<li>Includes support for <strong>159 SPT weapon entries</strong> and <strong>35 entries from optional weapon packs</strong>.</li>\n</ul>\n<h2>Installation</h2>\n<ol>\n<li>Download <strong>Tylevo.FieldAttachments-1.0.0.zip</strong> from the assets below.</li>\n<li>Close the game and merge the ZIP\u2019s <strong>BepInEx</strong> folder into your SPT game folder. Keep the <strong>Animation</strong> folder alongside the plugin DLL and remove duplicate copies of the DLL.</li>\n<li>Start the game. If you previously disabled attachment changes, your saved setting remains in effect; adjust <strong>F12 \u2192 General \u2192 Allow attachment changes</strong> if needed.</li>\n</ol>\n<p>Works in local raids and the hideout shooting range. <strong>Attachment changes are not supported with Fika.</strong> Leave room in your carried gear for removed parts.</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Tylevo/Tylevo.FieldAttachments/blob/main/README.md\" rel=\"noreferrer noopener\">Controls, settings and optional weapon packs</a></p>\n",
      "spt_constraint": "4.1.6",
      "fika": "incompatible",
-     "downloads": 10,
+     "downloads": 148,
      "size": 11944775,
      "link": "https://sp-mod.com/mod/download/3125/tylevos-field-attachments/1.0.0",
      "published_at": "2026-10-09T00:43:02.000000Z",
@@ -212811,8 +212930,8 @@
      "url": "https://sp-mod.com/mod/1426/unitytoolkit"
     }
    ],
-   "published_at": "2026-10-09T00:43:16.000000Z",
-   "updated_at": "2026-10-09T00:44:03.000000Z",
+   "published_at": "2026-10-09T00:43:00.000000Z",
+   "updated_at": "2026-10-09T11:49:57.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -212821,7 +212940,7 @@
     "profile_binding_notice": true
    },
    "origin": "forge",
-   "delisted": true
+   "delisted": false
   },
   {
    "id": 3126,
@@ -212833,8 +212952,8 @@
    "description_html": "<p>4.1.5 updates for <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2587/massivesoftcore\" rel=\"noreferrer noopener\">https://sp-mod.com/mod/2587/massivesoftcore</a></p>\n",
    "thumbnail": "",
    "forge_url": "https://sp-mod.com/mod/3126/massivesoftcore-update-415",
-   "downloads": 87,
-   "favourites": 1,
+   "downloads": 313,
+   "favourites": 4,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -212862,19 +212981,31 @@
    ],
    "versions": [
     {
+     "id": 15849,
+     "version": "2.0.1",
+     "description": "<p>Issue Fix</p>\n",
+     "spt_constraint": "4.1.5",
+     "fika": "unknown",
+     "downloads": 78,
+     "size": 44499,
+     "link": "https://sp-mod.com/mod/download/3126/massivesoftcore-update-415/2.0.1",
+     "published_at": "2026-10-09T16:23:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 15838,
-     "version": "4.1.5",
+     "version": "2.0.0",
      "description": "<p>Massivesoft Core for SPT 4.1.5</p>\n",
      "spt_constraint": "4.1.5",
      "fika": "unknown",
-     "downloads": 87,
+     "downloads": 235,
      "size": 24519,
-     "link": "https://sp-mod.com/mod/download/3126/massivesoftcore-update-415/4.1.5",
+     "link": "https://sp-mod.com/mod/download/3126/massivesoftcore-update-415/2.0.0",
      "published_at": "2026-10-09T07:00:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "4.1.5",
+   "latest_version": "2.0.1",
    "spt_constraint": "4.1.5",
    "all_spt_constraints": [
     "4.1.5"
@@ -212882,7 +213013,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-10-09T07:00:00.000000Z",
-   "updated_at": "2026-10-09T07:00:06.000000Z",
+   "updated_at": "2026-10-09T16:24:04.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -212903,8 +213034,8 @@
    "description_html": "<p>MassivesoftWeapons Updates for SPT 4.1.x</p>\n<p>Temporary Upgrade Patch to SPT 4.1.5\nInstallation Intructions:</p>\n<ol>\n<li>Backup your profile before any upgrade</li>\n<li>Install <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/3126/massivesoftcore-update-415\" rel=\"noreferrer noopener\">MassivesoftCore Update 4.1.5</a></li>\n<li>Download original <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2588/massivesoftweapons\" rel=\"noreferrer noopener\">massivesoftweapons v4.0.13</a></li>\n<li>Install Original MassivesoftWeapons as usual in your SPT 4.1.x folder, after that install my updates on top of it in your SPT 4.1.x folder.</li>\n<li>My Update does not contains the bundles files from the Original Author, this mod update depends on the Original MassivesoftWeapons files.</li>\n</ol>\n<p>Thank you <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/15672/massivesoft\" rel=\"noreferrer noopener\">massivesoft</a> to grant the permission to release the updates 4.1.5 for this beautiful Mod Massivesoft Weapons</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/LGSqMDwUXC5hQwQylM918JlEFUf9eXiqXcwqGQ2t.png",
    "forge_url": "https://sp-mod.com/mod/3127/massivesoftweapons-updates-for-spt-41x",
-   "downloads": 91,
-   "favourites": 0,
+   "downloads": 321,
+   "favourites": 3,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -212932,14 +213063,34 @@
    ],
    "versions": [
     {
+     "id": 15850,
+     "version": "2.0.1",
+     "description": "<p>issue fix</p>\n",
+     "spt_constraint": "4.1.5",
+     "fika": "unknown",
+     "downloads": 76,
+     "size": 26362,
+     "link": "https://sp-mod.com/mod/download/3127/massivesoftweapons-updates-for-spt-41x/2.0.1",
+     "published_at": "2026-10-09T16:25:00.000000Z",
+     "dependencies": [
+      {
+       "id": 3126,
+       "name": "MassivesoftCore Update 4.1.5",
+       "slug": "massivesoftcore-update-415",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/3126/massivesoftcore-update-415"
+      }
+     ]
+    },
+    {
      "id": 15839,
-     "version": "4.1.5",
+     "version": "2.0.0",
      "description": "<p>Temporary Upgrade Patch to SPT 4.1.5\nInstallation Intructions:</p>\n<ol>\n<li>Backup your profile before any upgrade</li>\n<li>Install <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/3126/massivesoftcore-update-415\" rel=\"noreferrer noopener\">MassivesoftCore Update 4.1.5</a> <strong>(Required)</strong></li>\n<li>Download original <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2588/massivesoftweapons\" rel=\"noreferrer noopener\">massivesoftweapons v4.0.13</a> <strong>(Required)</strong></li>\n<li>Install Original MassivesoftWeapons as usual in your SPT 4.1.x folder, after that install my updates on top of it in your SPT 4.1.x folder.</li>\n<li>My Update does not contains the bundles files from the Original Author, this mod update depends on the Original MassivesoftWeapons files.</li>\n</ol>\n<p>Thank you <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/15672/massivesoft\" rel=\"noreferrer noopener\">massivesoft</a> to grant the permission to release the updates 4.1.5 for this beautiful Mod Massivesoft Weapons</p>\n",
      "spt_constraint": "4.1.5",
      "fika": "unknown",
-     "downloads": 91,
+     "downloads": 245,
      "size": 8898,
-     "link": "https://sp-mod.com/mod/download/3127/massivesoftweapons-updates-for-spt-41x/4.1.5",
+     "link": "https://sp-mod.com/mod/download/3127/massivesoftweapons-updates-for-spt-41x/2.0.0",
      "published_at": "2026-10-09T07:00:00.000000Z",
      "dependencies": [
       {
@@ -212952,7 +213103,7 @@
      ]
     }
    ],
-   "latest_version": "4.1.5",
+   "latest_version": "2.0.1",
    "spt_constraint": "4.1.5",
    "all_spt_constraints": [
     "4.1.5"
@@ -212976,7 +213127,7 @@
     }
    ],
    "published_at": "2026-10-09T07:00:00.000000Z",
-   "updated_at": "2026-10-09T07:00:07.000000Z",
+   "updated_at": "2026-10-09T16:26:04.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -213117,6 +213268,81 @@
    "all_dependencies": [],
    "published_at": "2026-10-09T10:05:30.000000Z",
    "updated_at": "2026-10-09T10:06:03.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 3131,
+   "hub_id": null,
+   "guid": "com.mybutthasarash.nameplate",
+   "name": "Name Plate",
+   "slug": "name-plate",
+   "teaser": "Get flex'd on after head-eyes",
+   "description_html": "<h1>Name Plate</h1>\n<p>Make your name stand out in E***************** (SPT 4.1). Give your nickname colors, gradients,\nanimations, a glow and a clan tag. Pick any icon from the game, from a library of 107 extra icons\n(12 of them animated) or from a picture of your own. PMC bots get looks of their own too, so the\nnames on the death screen, the flea market and the dogtags you take aren\u2019t all plain gray.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/JoelHauser/EditionCustomizer/main/docs/names.png\" alt=\"PMC names in Name Plate looks\" /></p>\n<h2>What\u2019s in it</h2>\n<p><strong>Your name</strong></p>\n<ul>\n<li>One color, a gradient, or a color per letter.</li>\n<li>Animations: scroll, pulse, wave, sparkle, rainbow, glitch and bounce.</li>\n<li>Outline, glow, shadow and italic.</li>\n<li>A clan tag like <strong>[EZ] YourName</strong>.</li>\n</ul>\n<p><strong>Your icon</strong></p>\n<ul>\n<li>The game\u2019s own icons, 107 extra icons (12 animated), or your own PNG.</li>\n<li>Icon effects: pulse, glow, flip and float.</li>\n<li>Hide the prestige badge, or swap it for your own picture.</li>\n</ul>\n<p><strong>PMC bots</strong></p>\n<ul>\n<li>Bots get looks on the death screen, the kill list, flea sellers, \u201citem bought by\u201d messages and the dogtags you take.</li>\n<li>About a third wear one of 487 gamer-humor tags.</li>\n</ul>\n<p><strong>Editor (Name Plate.exe)</strong></p>\n<ul>\n<li>A live preview of your look.</li>\n<li>Presets of your own.</li>\n<li>Share codes: copy your look and paste a friend\u2019s.</li>\n<li>A Bots page for how many bots get a look and what they can use.</li>\n</ul>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/JoelHauser/EditionCustomizer/main/docs/editor-icons.png\" alt=\"The Name Plate editor\" /></p>\n<h2>Install</h2>\n<ol>\n<li>Unzip <code>NamePlate-1.0.0.zip</code> into your SPT folder (the one with <code>EscapeFromTarkov.exe</code>).</li>\n<li>Run <strong>Name Plate.exe</strong> from that folder.</li>\n</ol>\n<p>You need:</p>\n<ul>\n<li>SPT 4.1.x.</li>\n<li>For the editor only, the <a target=\"_blank\" class=\"external-link\" href=\"https://dotnet.microsoft.com/download/dotnet/10.0\" rel=\"noreferrer noopener\">.NET 10 Desktop Runtime</a>. Windows offers it if it\u2019s missing.</li>\n</ul>\n<h2>Fika</h2>\n<p>Built to run alongside Fika 2.4.4: real players never get bot looks, and the two mods never patch the same thing in conflicting ways. It hasn\u2019t been tested in a live co-op session yet. Other players see your look only if they also run Name Plate.</p>\n<p>Based on Evgencheg\u2019s <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Evgencheg/Tarkov-Change-Icons\" rel=\"noreferrer noopener\">T*****-Change-Icons</a>.</p>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/uxEh5VqaNsYzMnsYzUhbHls03kxP4XT5Ft0wAZp7.png",
+   "forge_url": "https://sp-mod.com/mod/3131/name-plate",
+   "downloads": 1,
+   "favourites": 0,
+   "featured": false,
+   "fika": true,
+   "fika_latest": "compatible",
+   "category": {
+    "id": 17,
+    "title": "Other",
+    "slug": "other"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 51018,
+     "name": "MyButtHasARash",
+     "avatar": "https://files.sp-mod.com/profile-photos/eSszQU6NfgJKTNe4maY9gdYnijH2W29cA3z0LDKd_256w.webp"
+    },
+    {
+     "id": 125181,
+     "name": "Evgencheg",
+     "avatar": "https://files.sp-mod.com/profile-photos/L5djCCYystIORccI2KH0OejXuJ649I7d4xKmQfss_256w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/JoelHauser/EditionCustomizer",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 15852,
+     "version": "1.0.0",
+     "description": "<p>release</p>\n",
+     "spt_constraint": "~4.1.0",
+     "fika": "compatible",
+     "downloads": 1,
+     "size": 1523969,
+     "link": "https://sp-mod.com/mod/download/3131/name-plate/1.0.0",
+     "published_at": "2026-10-09T18:18:00.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "1.0.0",
+   "spt_constraint": "~4.1.0",
+   "all_spt_constraints": [
+    "~4.1.0"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-10-09T18:19:00.000000Z",
+   "updated_at": "2026-10-09T18:20:05.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
