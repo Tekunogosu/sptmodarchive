@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-10-11T13:03:59Z",
+ "generated_at": "2026-10-11T19:36:38Z",
  "source": "https://sp-mod.com",
  "filter": "all",
- "mod_count": 2052,
+ "mod_count": 2053,
  "categories": [
   {
    "id": 12,
@@ -144466,8 +144466,8 @@
    "description_html": "<h3>Security Notice:</h3>\n<blockquote>\n<p>For those downloading mods from a server. Please read the listing of the files that are being downloaded. Practice good cybersecurity and read before accepting updates.</p>\n</blockquote>\n<h2>What is NarcoNet?</h2>\n<p>NarcoNet is a synchronization tool for SPT that automatically keeps all clients in sync with your server\u2019s mod setup. No more manual file copying, no more \u201cwhy isn\u2019t this working?\u201d, and no more mismatched versions causing mysterious bugs.</p>\n<p>When a player connects to your server, NarcoNet automatically:</p>\n<ul>\n<li><strong>Detects</strong> what mods and configs are missing or outdated</li>\n<li><strong>Downloads</strong> required files directly from the server</li>\n<li><strong>Removes</strong> mods the server does not know of (the client can opt out and keep them)</li>\n<li><strong>Restarts</strong> the game (if needed) to apply changes seamlessly</li>\n</ul>\n<h2>Native GUI client</h2>\n<p>Version 1.7.0 introduced a new GUI client found in <code>BepInEx/plugins/MadManBeavis-NarcoNet/NarcoNetGui.exe</code> which allows to see mods on your server, sync your client AND upload files to your server if you have the API key (generated on server and saved alongside the config.yaml file, server also shows it in the console when it is generated).</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://gitlab.com/flir063-spt/narconet/-/raw/main/resources/gui01.png?ref_type=heads&amp;inline=false\" alt=\"gui mods on server\" /></p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/addon/116/narconet-gui-linux\" rel=\"noreferrer noopener\">The native GUI for Linux is provided as a separate addon</a> (an AppImage), to avoid bloating the main mod zip.</p>\n<p>Version 1.3.0 introduced an optional companion found in <code>BepInEx/plugins/MadManBeavis-NarcoNet/NarcoNetSync.exe</code> which allows to pre-download all needed files before even launching the client. This avoids the internal Narconet client to find files that need a restart.</p>\n<p>This is completely optional and can be skipped. It is provided as a speedup feature for people who want to avoid the restart on update.</p>\n<p>A Linux build is also present. I use it as an entry point injection in my fika headless docker image to pre-sync the mods before the game runs. This avoids a restart of the headless when a client mod is synced.</p>\n<h2>Docker server</h2>\n<p>When using the docker server you MUST provide new volumes for NarcoNet to find some BepInEx folder to use:</p>\n<p>Here is an excerpt of my docker-compose.yml</p>\n<pre><code>    volumes:\n      - ./server/SPT_Runtime/user:/opt/spt/user\n      - ./server/EscapeFromTarkov_Data:/opt/EscapeFromTarkov_Data\n      - ./server/BepInEx:/opt/BepInEx\n</code></pre>\n<h1>KNOW ISSUES</h1>\n<p>I added support for the docker image path difference from what the clients expect. You now CAN sync the server files with NarcoNet (since release 1.4.2)</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/4NouoXA6ejwVZ8WpJra6nUljkYLdGCCVcHCHYUir.png",
    "forge_url": "https://sp-mod.com/mod/2441/narconet-mod-sync",
-   "downloads": 13820,
-   "favourites": 42,
+   "downloads": 14978,
+   "favourites": 48,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -144484,7 +144484,7 @@
     {
      "id": 63811,
      "name": "madmanbeavis",
-     "avatar": "https://ui-avatars.com/api/?name=m&color=7F9CF5&background=EBF4FF"
+     "avatar": "https://sp-mod.com/avatars/M.svg"
     },
     {
      "id": 69402,
@@ -144500,12 +144500,24 @@
    ],
    "versions": [
     {
+     "id": 15896,
+     "version": "1.9.2",
+     "description": "<p>Fix issues with the game GUI when updating a non-restart file or dismissing the sync dialog</p>\n",
+     "spt_constraint": "~4.1.0",
+     "fika": "compatible",
+     "downloads": 51,
+     "size": 19486133,
+     "link": "https://sp-mod.com/mod/download/2441/narconet-mod-sync/1.9.2",
+     "published_at": "2026-10-11T14:53:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 15425,
      "version": "1.9.1",
      "description": "<p>bugfix release to fix looooong filenames. No other change.</p>\n",
      "spt_constraint": "~4.1.3",
      "fika": "compatible",
-     "downloads": 39,
+     "downloads": 1022,
      "size": 18219527,
      "link": "https://sp-mod.com/mod/download/2441/narconet-mod-sync/1.9.1",
      "published_at": "2026-09-15T22:21:00.000000Z",
@@ -144517,7 +144529,7 @@
      "description": "<h1>Bugfixes</h1>\n<ul>\n<li>Files a mod keeps open for writing, such as Raid Review\u2019s raid database, are hashed and served instead of failing the request for the mod list.</li>\n<li>A file the server cannot read is advertised without a hash and left alone by clients, instead of emptying the mod list for everyone.</li>\n</ul>\n<h1>Improvements</h1>\n<ul>\n<li>Template config now excludes Raid Review\u2019s <code>data</code> folder, which contains the host\u2019s own raid history and changes on every raid.</li>\n</ul>\n",
      "spt_constraint": "~4.1.3",
      "fika": "compatible",
-     "downloads": 493,
+     "downloads": 505,
      "size": 18219131,
      "link": "https://sp-mod.com/mod/download/2441/narconet-mod-sync/1.9.0",
      "published_at": "2026-09-07T20:33:00.000000Z",
@@ -144529,7 +144541,7 @@
      "description": "<h1>New Features</h1>\n<ul>\n<li>GUI: The uploader warns when a mod needs a plugin which misses a dependency.</li>\n<li>GUI: now reopens the window where it was and keeps its geometry.</li>\n</ul>\n<h1>Fixes</h1>\n<ul>\n<li>An out-of-date client could empty the served file list for every other client in the same profile, which could make them delete their synced mods.</li>\n<li>GUI: The sync tab no longer says the game install is not found when the server is unreachable.</li>\n<li>GUI: Uploading several archives at once now works.</li>\n</ul>\n",
      "spt_constraint": "~4.1",
      "fika": "compatible",
-     "downloads": 422,
+     "downloads": 455,
      "size": 18218815,
      "link": "https://sp-mod.com/mod/download/2441/narconet-mod-sync/1.8.0",
      "published_at": "2026-09-01T08:35:00.000000Z",
@@ -144613,7 +144625,7 @@
      "description": "<h2>[1.0.16] - 2026/04/10</h2>\n<ul>\n<li>ADD: more exclusions for the headless client in the exclusion templates</li>\n<li>ADD: more server exclusions to avoid removing client generated files (those\nare added in the template and will be create in the config file if you start\nyour server without a config file)</li>\n</ul>\n<h2>[1.0.15] - 2026/04/06</h2>\n<ul>\n<li>FIX: a potential leak when some hashing errors occur because we did not\ncatch the errors</li>\n<li>FIX: a potential issue with reactivating UI elements \u201cblindly\u201d (each frame)\neven it the game was trying to perform a transition and thus hiding our UI\nelements.</li>\n<li>FIX: in case a hashing error occurs, report it to the game error system and\nsignal the plugin as \u201cfinished loading\u201d.</li>\n</ul>\n",
      "spt_constraint": "~4.0 <4.1.0",
      "fika": "compatible",
-     "downloads": 4425,
+     "downloads": 4502,
      "size": 210908,
      "link": "https://sp-mod.com/mod/download/2441/narconet-mod-sync/1.0.16",
      "published_at": "2026-04-10T13:30:00.000000Z",
@@ -144625,7 +144637,7 @@
      "description": "<p>fix config file unzerialization error (bad template)</p>\n<p>SKIP  v1.0.13 and directly use v1.0.14</p>\n",
      "spt_constraint": "~4.0 <4.1.0",
      "fika": "compatible",
-     "downloads": 560,
+     "downloads": 561,
      "size": 210830,
      "link": "https://sp-mod.com/mod/download/2441/narconet-mod-sync/1.0.14",
      "published_at": "2026-03-31T08:53:00.000000Z",
@@ -144661,30 +144673,31 @@
      "description": "<p>Initial Release</p>\n",
      "spt_constraint": "~4.0 <4.1.0",
      "fika": "compatible",
-     "downloads": 687,
+     "downloads": 688,
      "size": 989735,
      "link": "https://sp-mod.com/mod/download/2441/narconet-mod-sync/1.0.0",
      "published_at": "2025-11-12T13:24:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.9.1",
-   "spt_constraint": "~4.1.3",
+   "latest_version": "1.9.2",
+   "spt_constraint": "~4.1.0",
    "all_spt_constraints": [
     ">=4.1.3",
     "~4.0 <4.1.0",
     "~4.0.0",
     "~4.1",
+    "~4.1.0",
     "~4.1.3"
    ],
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2025-11-12T13:25:00.000000Z",
-   "updated_at": "2026-09-15T22:22:24.000000Z",
+   "updated_at": "2026-10-11T14:55:58.000000Z",
    "flags": {
     "contains_ads": false,
-    "contains_ai_content": true,
-    "ai_disclosure": "<p>An LLM was used to shape the source code of this mod so I took the liberty to add the \u201cContains AI Content\u201d.\nThe mod logo also seem like an AI image\u2026</p>\n",
+    "contains_ai_content": false,
+    "ai_disclosure": "",
     "cheat_notice": false,
     "profile_binding_notice": false
    },
@@ -175694,8 +175707,8 @@
    "description_html": "<p>Tushonka doors have opinions. Hinge side only. Swing into your face. Locked for no reason. This mod disagrees.</p>\n<p>Breach doors from <strong>either side</strong> and have them swing <strong>away from you</strong> instead of into your face. Works with the normal F-menu breach action and with <strong><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2214/doordash\" rel=\"noreferrer noopener\">DoorDash by tarkin</a></strong> sprint-ram breaching.</p>\n<p>Vanilla only lets you breach from the hinge side and always kicks the door open in a fixed direction. This mod removes that restriction for normal doors while keeping vanilla behaviour for special one-way breach doors.</p>\n<hr />\n<h2>Features</h2>\n<ul>\n<li><strong>Dual-side breaching</strong> - breach operable doors from the front or back (F-menu and DoorDash)</li>\n<li><strong>Smart swing direction</strong> - doors open away from the side you are breaching from</li>\n<li><strong>One-way breach doors preserved</strong> - factory-style breach-only doors, still only work from the correct side</li>\n<li><strong>Locked doors with keys</strong> - require the matching key in your inventory to breach locked doors, and consume a key charge on breach</li>\n<li><strong>DoorDash compatible</strong> - optional compatibility patches</li>\n<li><strong>Lightweight</strong> - logic only runs during door interaction, no map-wide scanning</li>\n</ul>\n<hr />\n<h2>Highly recommended mod</h2>\n<ul>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2214/doordash\" rel=\"noreferrer noopener\">DoorDash by tarkin</a> allows sprint-ram breaching of doors</li>\n</ul>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/maschine34675/DualSideDoorBreach/blob/main/example.gif?raw=true\" alt=\"example\" /></p>\n<h2>Installation</h2>\n<ul>\n<li>As usual, unzip to your SPT directory</li>\n</ul>\n<hr />\n<h2>Configuration</h2>\n<table>\n<thead>\n<tr>\n<th>Setting</th>\n<th>Section</th>\n<th>Default</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>Enabled</code></td>\n<td>General</td>\n<td><code>true</code></td>\n<td>Master toggle for dual-side breaching</td>\n</tr>\n<tr>\n<td><code>AdjustOpenDirection</code></td>\n<td>General</td>\n<td><code>true</code></td>\n<td>Swing the door away from the breaching player</td>\n</tr>\n<tr>\n<td><code>AllowNonBreachableDoors</code></td>\n<td>General</td>\n<td><code>true</code></td>\n<td>Also allow breaching doors flagged as non-breachable in map data</td>\n</tr>\n<tr>\n<td><code>RequireMatchingKey</code></td>\n<td>Locked Doors</td>\n<td><code>true</code></td>\n<td>Locked doors need the matching key in your inventory to breach</td>\n</tr>\n<tr>\n<td><code>ConsumeKeyOnBreach</code></td>\n<td>Locked Doors</td>\n<td><code>true</code></td>\n<td>Use one charge of the matching key when breaching a locked door</td>\n</tr>\n<tr>\n<td><code>DoorDash</code></td>\n<td>Compatibility</td>\n<td><code>true</code></td>\n<td>Allow DoorDash sprint-ram from both sides (requires DoorDash)</td>\n</tr>\n</tbody>\n</table>\n<hr />\n<h2>Potential quirks</h2>\n<ul>\n<li>I\u2019m pretty sure I\u2019ve covered all edge cases, but if you encounter any doors that behave strangely, let me know.</li>\n<li>Depending on map layout, doors can clip through the walls if opened in the \u201cunintended\u201d direction.</li>\n</ul>\n",
    "thumbnail": "https://files.sp-mod.com/mods/qImGorsDcCxQzKVtRlqHLhSftO1QCJZivRA03lWi.png",
    "forge_url": "https://sp-mod.com/mod/2752/dualsidedoorbreach",
-   "downloads": 4978,
-   "favourites": 52,
+   "downloads": 6177,
+   "favourites": 61,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -175723,12 +175736,24 @@
    ],
    "versions": [
     {
+     "id": 15900,
+     "version": "2.0.2",
+     "description": "<ul>\n<li><strong>Fixed:</strong> Compatibility with DoorDash 1.2.0 restored</li>\n</ul>\n",
+     "spt_constraint": "~4.1.0",
+     "fika": "compatible",
+     "downloads": 45,
+     "size": 12953,
+     "link": "https://sp-mod.com/mod/download/2752/dualsidedoorbreach/2.0.2",
+     "published_at": "2026-10-11T17:57:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 14927,
      "version": "2.0.1",
      "description": "<ul>\n<li><strong>Fixed:</strong> Bots behave like vanilla again. Until now AI bots also passed every kick roll and smashed open doors they would otherwise have opened by the handle.</li>\n<li><strong>Fixed:</strong> Key usage: an interrupted kick (e.g. dying mid-animation) can no longer cost you a key charge.</li>\n</ul>\n<p>See full <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/maschine34675/DualSideDoorBreach/blob/main/CHANGELOG.md\" rel=\"noreferrer noopener\">CHANGELOG.md</a></p>\n",
      "spt_constraint": "~4.1.0",
      "fika": "compatible",
-     "downloads": 992,
+     "downloads": 2005,
      "size": 11400,
      "link": "https://sp-mod.com/mod/download/2752/dualsidedoorbreach/2.0.1",
      "published_at": "2026-08-23T12:34:00.000000Z",
@@ -175752,7 +175777,7 @@
      "description": "<ul>\n<li><strong>Added wrong-side resistance</strong> - increase the amount of kicks it takes to breach a door against its swing direction (default off)</li>\n<li><strong>Added breach without key</strong> - key-locked doors can be breached without their key, chance increases on each failed attempt (default off)</li>\n<li><strong>Added Fika support</strong> - important: install the mod on every machine, including the headless host</li>\n</ul>\n<p>See full <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/maschine34675/DualSideDoorBreach/blob/main/CHANGELOG.md\" rel=\"noreferrer noopener\">CHANGELOG.md</a></p>\n",
      "spt_constraint": "~4.0.4",
      "fika": "compatible",
-     "downloads": 1766,
+     "downloads": 1906,
      "size": 10684,
      "link": "https://sp-mod.com/mod/download/2752/dualsidedoorbreach/1.1.0",
      "published_at": "2026-07-16T18:35:00.000000Z",
@@ -175764,14 +175789,14 @@
      "description": "<p>Initial Release</p>\n",
      "spt_constraint": "~4.0.4",
      "fika": "incompatible",
-     "downloads": 1338,
+     "downloads": 1339,
      "size": 9494,
      "link": "https://sp-mod.com/mod/download/2752/dualsidedoorbreach/1.0.0",
      "published_at": "2026-06-18T17:43:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "2.0.1",
+   "latest_version": "2.0.2",
    "spt_constraint": "~4.1.0",
    "all_spt_constraints": [
     "~4.0.4",
@@ -175780,11 +175805,11 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-06-18T17:51:00.000000Z",
-   "updated_at": "2026-09-09T18:34:20.000000Z",
+   "updated_at": "2026-10-11T18:01:33.000000Z",
    "flags": {
     "contains_ads": false,
-    "contains_ai_content": true,
-    "ai_disclosure": "<p>AI was used to find the correct classes/methods to patch in the game\u2019s source code. The thumbnail is AI generated.</p>\n",
+    "contains_ai_content": false,
+    "ai_disclosure": "",
     "cheat_notice": false,
     "profile_binding_notice": false
    },
@@ -194449,11 +194474,11 @@
    "name": "ECOTI - Enhanced Clip-On Thermal Imager",
    "slug": "ecoti-enhanced-clip-on-thermal-imager",
    "teaser": "A clip-on thermal imager for your night vision. It clamps to the objective and fuses heat into the tube's circle, so hot shapes stand out while the night vision image still shows through - rather than replacing your view with a thermal one.",
-   "description_html": "<p>A clip-on thermal imager for SPT, modelled on the Safran DSI AN/PAS-29B (3D model purchased from\n3DMA). It clamps to a night vision device and fuses thermal <strong>into the tube\u2019s circle</strong>, like a real\nclip-on, instead of switching your view to thermal. Inspired by the game Operator.</p>\n<div class=\"tabset\"><div id=\"tabset-3-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Outline mode</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/thermal-outline.jpg\" alt=\"Outline mode\" /></p></div></div>\n<div id=\"tabset-3-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Full mode</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/thermal-on.jpg\" alt=\"Full mode\" /></p></div></div>\n<div id=\"tabset-3-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Through a scope</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/thermal-scope-outline.jpg\" alt=\"Through a scope at 6x\" /></p></div></div>\n<div id=\"tabset-3-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Scope, Full mode</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/thermal-scope-full.jpg\" alt=\"Through a scope at 6x, Full mode\" /></p></div></div>\n<div id=\"tabset-3-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Imager off</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/thermal-off.jpg\" alt=\"Imager off\" /></p></div></div></div>\n<div class=\"tabset\"><div id=\"tabset-2-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Window reflections</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/330-window-reflection.jpg\" alt=\"A window at night: Reflections beside Plain\" /></p></div></div>\n<div id=\"tabset-2-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Scope eyepiece</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/330-scope-eyepiece.jpg\" alt=\"A scope eyepiece reflecting the shooter, Reflections against Plain\" /></p></div></div>\n<div id=\"tabset-2-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Scope glass toggle</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/330-scope-toggle.jpg\" alt=\"Scope Glass Reflections on, off, on\" /></p></div></div>\n<div id=\"tabset-2-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">A COTI on every tube</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/330-multitube-view.jpg\" alt=\"Four COTIs on a GPNVG-18, first person\" /></p></div></div>\n<div id=\"tabset-2-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Four on a GPNVG-18</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/330-multitube-hardware.jpg\" alt=\"A GPNVG-18 with a COTI under each tube\" /></p></div></div>\n<div id=\"tabset-2-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Slots by position</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/330-slot-labels.jpg\" alt=\"The four slots in the inspect window\" /></p></div></div></div>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">What it does</div>\n<div class=\"tab-content\"><ul>\n<li>Draws thermal inside a circle within the night vision tube, so heat sits in the tube instead of\nreplacing your view.</li>\n<li><strong>Two modes.</strong> Outline draws the edges of hot things, Full fills them in. <code>Alt+N</code> switches\nbetween them and the display names the new mode.</li>\n<li><strong>Heat from what is actually happening, read against the air.</strong> People read at their body\ntemperature, burning fires read hot, and a barrel or suppressor heats only from firing. Hotter\nreads brighter, so people stand out most on a cold night and less on a hot day. Cold metal, glossy\nsurfaces, unlit lamps and grenades stay dark, and corpses keep the heat they had at death.</li>\n<li><strong>Glass blocks heat, and reflects it.</strong> A window hides anything warm behind it. With Glass on\nReflections (the default) the pane also mirrors the people in front of it, you included, faint\nface-on and strong at a shallow angle. A magnified scope\u2019s own glass does the same, so your\neyepiece seen from outside shows your head and shoulders.</li>\n<li><strong>Lit searchlights read hot, lit flashlights faintly warm.</strong> Every other lamp stays cold, and\nlasers and infrared illuminators stay cold too. Each has its own switch in F12.</li>\n<li><strong>Powers up like the real device.</strong> <code>Ctrl+N</code> shows <code>Initializing...</code>, then the thermal comes in\nwith a calibration click; powering down shows <code>Power Off...</code>.</li>\n<li>Optional <strong>magnified optic</strong> mode draws the heat through a magnified scope\u2019s own lens at the\nscope\u2019s zoom. Off by default. Behind a thermal sight such as the REAP-IR or RS-32 the imager\nstands down.</li>\n<li><strong>Light on frames.</strong> Measured on SPT 4.1 against 3.1.0 on an empty test range, COTI\u2019s own cost\nwent from about 0.5 ms a frame to under 0.1 ms at 1x, and from about 0.6 ms to about 0.13 ms\nthrough a magnified scope, with no measurable GPU cost. Reflections, scope glass and searchlight\nheat measured free. The README has the full numbers.</li>\n<li><strong>One per tube</strong> (SPT 4.1, 3.3.0 and later). Every tube of a goggle takes its own imager, in any\ncombination from one to four, each drawing its own circle centred in the tube. <code>Ctrl+N</code> and\n<code>Alt+N</code> drive them all together.</li>\n<li><strong>Slots named by position</strong>, left to right: ECOTI OL, ECOTI L, ECOTI R, ECOTI OR on a quad such as\nthe GPNVG-18, ECOTI L and ECOTI R on a dual or the AN/PVS-5A, and ECOTI on a mono. A COTI you\nalready had fitted stays put, in ECOTI R.</li>\n<li>Supports <strong>PVS-14, N-15, GPNVG-18, PNV-10T and PNV-57E</strong>, and any other night vision goggle\nthrough a small JSON file. See Addons.</li>\n<li><strong>Posed in a 3D editor.</strong> Each tube\u2019s mount is set in the server\u2019s web UI and saved to the\nserver. The circles are measured from Borkel\u2019s masks at their default size, with nothing to tune\nin COTI.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Requirements</div>\n<div class=\"tab-content\"><ul>\n<li><strong>SPT 4.0 or 4.1</strong>, separate downloads: <code>2.x</code> for 4.0, <code>3.x</code> for 4.1. One build cannot serve\nboth. SPT 4.0 stays on 2.0.2; everything new from 3.3.0 is SPT 4.1 only.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Installing</div>\n<div class=\"tab-content\"><p>Open the archive with 7-Zip and drag <strong>all</strong> of its contents into your SPT folder:</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/3N6gTe2.gif\" alt=\"mod install\" /></p>\n<blockquote>\n<p>\u26a0\ufe0f This mod adds an item, so it <strong>cannot be cleanly removed from a profile</strong> once one has spawned\nor been bought.</p>\n</blockquote></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Addons</div>\n<div class=\"tab-content\"><p>Each goggle has a small JSON file in <code>nvghostcompat/</code> that says where the imager mounts. Adding one\nneeds no mod update.</p>\n<p>Goggles from <strong>other mods</strong> are separate downloads, one per SPT version, installed the same way as\nthe mod:</p>\n<p>Official Addons:</p>\n<table>\n<thead>\n<tr>\n<th>Addon</th>\n<th>Needs</th>\n<th>Adds</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>LennoxP90-COTI-addon-C11-TrueNorth</code></td>\n<td>C11 - True North</td>\n<td>Argus Chimera (three variants), ITT AN/PVS-5A, ACTinBlack DTNVS</td>\n</tr>\n<tr>\n<td><code>LennoxP90-COTI-addon-WTT-CAG</code></td>\n<td>WTT - CAG</td>\n<td>ACTinBlack DTNVS, white and green phosphor</td>\n</tr>\n<tr>\n<td><code>LennoxP90-COTI-addon-WTT-ContentBackport</code></td>\n<td>WTT - ContentBackport</td>\n<td>AN/PVS-31A</td>\n</tr>\n<tr>\n<td><code>LennoxP90-COTI-addon-ISB-Aishi</code></td>\n<td>ISB Aishi</td>\n<td>L3Harris GPNVG-18, L3Harris PVS-31A</td>\n</tr>\n<tr>\n<td><code>LennoxP90-COTI-addon-WTT-Artem</code> (new)</td>\n<td>WTT - Artem</td>\n<td>GPNVG-18 (White, OD, Black), PVS-31, PVS-31 (Wide)</td>\n</tr>\n</tbody>\n</table>\n<p>Every addon has a pose for each tube, so with COTI 3.3.0 a quad takes four COTIs and a dual two. On\nan older COTI the same files give one COTI on the home tube.</p>\n<blockquote>\n<p>\u26a0\ufe0f Take the extra COTIs off before going back to a COTI older than 3.3.0, or to an older addon\nfile. COTIs in ECOTI L, OR or OL are lost after one saved raid, with no error.</p>\n</blockquote>\n<p>Download them from the addons section on Forge for your SPT version.</p>\n<p><strong>A goggle without a file still works:</strong> one is written automatically from the closest known\ndevice, ready to fine-tune.</p>\n<p><strong>To write your own</strong>, see\n<a target=\"_blank\" class=\"external-link\" href=\"https://github.com/LennoxP90/SPT-COTI/blob/main/ADDONS.md\" rel=\"noreferrer noopener\">ADDONS.md</a>.</p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Tuning</div>\n<div class=\"tab-content\"><p><strong>Mount editor (SPT 4.1)</strong> - open SIC and pick <strong>ECOTI -&gt; Mount editor</strong>. Choose a goggle and its\nvariant, then pose the imager on each tube over a 3D view you can orbit and zoom. There is one tab\nper tube, <strong>Mirror from partner</strong> fills a tube from the one opposite, and <strong>Type</strong> shows the goggle file\u2019s\nlayout and can change it, which is how a file that still has one tube gets its others. A game-sized screen shows every tube\u2019s circle and the boot\ntext, and dragging a tube\u2019s text moves it if a goggle\u2019s housing hides it. <strong>Save and push</strong> saves to the server\nand re-poses a running game straight away, no restart. <strong>Export addon</strong> packages a goggle from\nanother mod as a drag-over addon.</p>\n<p>The thermal circles are measured from Borkel\u2019s masks and fixed per goggle type, so there is nothing\nto tune in COTI. The circles assume BorkelRNVG\u2019s default mask size. A player who changes Borkel\u2019s F12 Mask size multiplier moves Borkel\u2019s holes and not COTI\u2019s circles, most on the outer quad tubes.</p></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Client Settings</div>\n<div class=\"tab-content\"><p>On the <strong>F12</strong> page. Less common image settings are under <strong>Advanced</strong>.</p>\n<p><strong>Image</strong> (applies to every goggle)</p>\n<ul>\n<li><strong>Enabled</strong> - master switch. Safe to toggle mid-raid.</li>\n<li><strong>Heat Threshold</strong> - how hot something must be to show. Raise it if the overlay washes the\npicture out, lower it to pick up cooler things.</li>\n<li><strong>Overlay Intensity</strong> - brightness of the heat. Lower it if bodies read as solid blobs.</li>\n<li><strong>Full Mode Fill (%)</strong> - how bright Full mode fills a hot shape. Default 45; 100 is solid.</li>\n<li><strong>Glass</strong> - default <code>Reflections</code>. Glass blocks heat either way; <code>Plain</code> draws the pane blank,\n<code>Reflections</code> also mirrors bodies in front of it. Measured free, so pick by taste.</li>\n<li><strong>Scope Glass Reflections</strong> - on by default. Lets a magnified scope\u2019s glass reflect like a window\nwhile Glass is on Reflections. Measured free.</li>\n<li><strong>Heat Brightness</strong> - default 1, from 0.25 to 2. Dims or brightens how heat draws without changing\nwhat is detected.</li>\n<li><strong>Render Flashlight Heat</strong> - on by default. Off, every flashlight reads cold.</li>\n<li><strong>Render Searchlight Heat</strong> - on by default. Off, searchlights read cold too. Measured free.</li>\n<li><strong>Magnify With Optic</strong> - off by default. Draws the heat through a magnified scope\u2019s lens at its\nzoom, at the cost of a second render while aiming. <strong>Potential FPS improvement:</strong> leave it off.</li>\n<li><strong>Magnified Intensity Scale</strong> - brightness inside a magnified scope, as a fraction of Overlay\nIntensity.</li>\n<li><strong>Sensor Resolution (rows)</strong> - higher keeps distant contacts visible.</li>\n<li><strong>Sensor Refresh (Hz)</strong> - the thermal updates at this rate and holds in between, as a real\nlow-refresh core does. Default 60; 0 updates every frame. <strong>Potential FPS improvement:</strong> keep it at\n60 or lower.</li>\n<li><strong>Thermal Range (m)</strong> (Advanced) - how far the thermal draws. 0, the default, is as far as you can\nsee.</li>\n</ul>\n<p><strong>Controls</strong></p>\n<ul>\n<li><strong>Power Toggle</strong> - default <code>Ctrl+N</code>. Switches the imager without touching the night vision. Keep\na modifier: a bare <code>N</code> would toggle the goggles too.</li>\n<li><strong>Mode Toggle</strong> - default <code>Alt+N</code>. Switches Outline and Full.</li>\n<li><strong>Thermal Mode</strong> - the mode the imager powers up in.</li>\n</ul>\n<p><strong>Power Sequence</strong></p>\n<ul>\n<li><strong>Enabled</strong> - on by default. Off makes <code>Ctrl+N</code> instant, with no messages or click.</li>\n<li><strong>Initializing / Warm-up Gap / Power Off Seconds</strong> - stage lengths. Defaults 1.2, 0.3 and 1.5.</li>\n<li><strong>Click Volume</strong> - on top of the game\u2019s own volume. 0 mutes it.</li>\n</ul>\n<p><strong>Debug</strong></p>\n<ul>\n<li><strong>Verbose Logging</strong> - off for normal play. Turn on when reporting a problem.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Server Settings</div>\n<div class=\"tab-content\"><p><strong>SPT 4.1:</strong> open SIC and pick <strong>ECOTI</strong>. Each section says when it applies: trader changes reach\nthe running server on save (relaunch the game to see them), loot applies at the next raid, and the\nhost editor needs a server restart. The same settings are in SIC\u2019s Config Editor.</p>\n<p><strong>SPT 4.0:</strong> edit <code>SPT/user/mods/LennoxP90-COTI/config/config.json</code> and restart the server. On 4.1\nthe file is <code>SPT_Runtime/user/mods/LennoxP90-COTI/config/config.json</code>, which SIC writes for you.</p>\n<ul>\n<li><strong><code>trader.loyaltyLevel</code></strong> - Peacekeeper loyalty level. Default <code>4</code>.</li>\n<li><strong><code>trader.priceUsd</code></strong> - price in dollars. Default <code>2000</code>.</li>\n<li><strong><code>trader.buyLimit</code></strong> - purchases per profile. Default <code>3</code>.</li>\n<li><strong><code>loot.enabled</code></strong> - <code>false</code> makes the trader the only source.</li>\n<li><strong><code>loot.weightFraction</code></strong> - spawn weight relative to the night vision at each spot. Default\n<code>0.25</code>.</li>\n<li><strong><code>hostEditor.autoDiscover</code></strong> - default <code>true</code>. Writes a starter file for any night vision without\none.</li>\n<li><strong><code>flea.playerSellable</code></strong> - default <code>false</code>, so the only flea listing is Peacekeeper\u2019s. <code>true</code> adds\nplayer listings, which SPT prices at roughly two to three times Peacekeeper\u2019s price.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-8\" class=\"tab-panel\"><div class=\"tab-title\">Recommended Mods</div>\n<div class=\"tab-content\"><p><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/954/borkels-realistic-night-vision-goggles-nvgs-and-t-7\" rel=\"noreferrer noopener\">Borkel\u2019s Realistic NVGs</a></p></div></div>\n<div id=\"tabset-1-panel-9\" class=\"tab-panel\"><div class=\"tab-title\">Credits</div>\n<div class=\"tab-content\"><p>3D model by <a target=\"_blank\" class=\"external-link\" href=\"https://www.3dmilitaryassets.com/\" rel=\"noreferrer noopener\">3D Military Assets</a>, used under their Extended\nLicence.</p></div></div></div>\n",
+   "description_html": "<p>A clip-on thermal imager for SPT, modelled on the Safran DSI AN/PAS-29B (3D model purchased from\n3DMA). It clamps to a night vision device and fuses thermal <strong>into the tube\u2019s circle</strong>, like a real\nclip-on, instead of switching your view to thermal. Inspired by the game Operator.</p>\n<div class=\"tabset\"><div id=\"tabset-3-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Outline mode</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/thermal-outline.jpg\" alt=\"Outline mode\" /></p></div></div>\n<div id=\"tabset-3-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Full mode</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/thermal-on.jpg\" alt=\"Full mode\" /></p></div></div>\n<div id=\"tabset-3-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Through a scope</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/thermal-scope-outline.jpg\" alt=\"Through a scope at 6x\" /></p></div></div>\n<div id=\"tabset-3-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Scope, Full mode</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/thermal-scope-full.jpg\" alt=\"Through a scope at 6x, Full mode\" /></p></div></div>\n<div id=\"tabset-3-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Imager off</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/thermal-off.jpg\" alt=\"Imager off\" /></p></div></div></div>\n<div class=\"tabset\"><div id=\"tabset-2-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Window reflections</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/330-window-reflection.jpg\" alt=\"A window at night: Reflections beside Plain\" /></p></div></div>\n<div id=\"tabset-2-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Scope eyepiece</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/330-scope-eyepiece.jpg\" alt=\"A scope eyepiece reflecting the shooter, Reflections against Plain\" /></p></div></div>\n<div id=\"tabset-2-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Scope glass toggle</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/330-scope-toggle.jpg\" alt=\"Scope Glass Reflections on, off, on\" /></p></div></div>\n<div id=\"tabset-2-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">A COTI on every tube</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/330-multitube-view.jpg\" alt=\"Four COTIs on a GPNVG-18, first person\" /></p></div></div>\n<div id=\"tabset-2-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Four on a GPNVG-18</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/330-multitube-hardware.jpg\" alt=\"A GPNVG-18 with a COTI under each tube\" /></p></div></div>\n<div id=\"tabset-2-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Slots by position</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/330-slot-labels.jpg\" alt=\"The four slots in the inspect window\" /></p></div></div></div>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">What it does</div>\n<div class=\"tab-content\"><ul>\n<li>Draws thermal inside a circle within the night vision tube, so heat sits in the tube instead of\nreplacing your view.</li>\n<li><strong>Two modes.</strong> Outline draws the edges of hot things, Full fills them in. <code>Alt+N</code> switches\nbetween them and the display names the new mode.</li>\n<li><strong>Heat from what is actually happening, read against the air.</strong> People read at their body\ntemperature, burning fires read hot, and a barrel or suppressor heats only from firing. Hotter\nreads brighter, so people stand out most on a cold night and less on a hot day. Cold metal, glossy\nsurfaces, unlit lamps and grenades stay dark, and corpses keep the heat they had at death.</li>\n<li><strong>Glass blocks heat, and reflects it.</strong> A window hides anything warm behind it. With Glass on\nReflections (the default) the pane also mirrors the people in front of it, you included, faint\nface-on and strong at a shallow angle. A magnified scope\u2019s own glass does the same, so your\neyepiece seen from outside shows your head and shoulders.</li>\n<li><strong>Lit searchlights read hot, lit flashlights faintly warm.</strong> Every other lamp stays cold, and\nlasers and infrared illuminators stay cold too. Each has its own switch in F12.</li>\n<li><strong>Powers up like the real device.</strong> <code>Ctrl+N</code> shows <code>Initializing...</code>, then the thermal comes in\nwith a calibration click; powering down shows <code>Power Off...</code>.</li>\n<li>Optional <strong>magnified optic</strong> mode draws the heat through a magnified scope\u2019s own lens at the\nscope\u2019s zoom. Off by default. Behind a thermal sight such as the REAP-IR or RS-32 the imager\nstands down.</li>\n<li><strong>Light on frames.</strong> Measured on SPT 4.1 against 3.1.0 on an empty test range, COTI\u2019s own cost\nwent from about 0.5 ms a frame to under 0.1 ms at 1x, and from about 0.6 ms to about 0.13 ms\nthrough a magnified scope, with no measurable GPU cost. Reflections, scope glass and searchlight\nheat measured free. The README has the full numbers.</li>\n<li><strong>One per tube</strong> (SPT 4.1, 3.3.0 and later). Every tube of a goggle takes its own imager, in any\ncombination from one to four, each drawing its own circle centred in the tube. <code>Ctrl+N</code> and\n<code>Alt+N</code> drive them all together.</li>\n<li><strong>Slots named by position</strong>, left to right: ECOTI OL, ECOTI L, ECOTI R, ECOTI OR on a quad such as\nthe GPNVG-18, ECOTI L and ECOTI R on a dual or the AN/PVS-5A, and ECOTI on a mono. A COTI you\nalready had fitted stays put, in ECOTI R.</li>\n<li>Supports <strong>PVS-14, N-15, GPNVG-18, PNV-10T and PNV-57E</strong>, and any other night vision goggle\nthrough a small JSON file. See Addons.</li>\n<li><strong>Posed in a 3D editor.</strong> Each tube\u2019s mount is set in the server\u2019s web UI and saved to the\nserver. The circles are measured from Borkel\u2019s masks at their default size, with nothing to tune\nin COTI.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Requirements</div>\n<div class=\"tab-content\"><ul>\n<li><strong>SPT 4.0 or 4.1</strong>, separate downloads: <code>2.x</code> for 4.0, <code>3.x</code> for 4.1. One build cannot serve\nboth. 2.1.0 brings 4.0 up to date with 3.3.2 and is expected to be the last for 4.0.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Installing</div>\n<div class=\"tab-content\"><p>Open the archive with 7-Zip and drag <strong>all</strong> of its contents into your SPT folder:</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/3N6gTe2.gif\" alt=\"mod install\" /></p>\n<blockquote>\n<p>\u26a0\ufe0f This mod adds an item, so it <strong>cannot be cleanly removed from a profile</strong> once one has spawned\nor been bought.</p>\n</blockquote></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Addons</div>\n<div class=\"tab-content\"><p>Each goggle has a small JSON file in <code>nvghostcompat/</code> that says where the imager mounts. Adding one\nneeds no mod update.</p>\n<p>Goggles from <strong>other mods</strong> are separate downloads, one per SPT version, installed the same way as\nthe mod:</p>\n<p>Official Addons:</p>\n<table>\n<thead>\n<tr>\n<th>Addon</th>\n<th>Needs</th>\n<th>Adds</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>LennoxP90-COTI-addon-C11-TrueNorth</code></td>\n<td>C11 - True North</td>\n<td>Argus Chimera (three variants), ITT AN/PVS-5A, ACTinBlack DTNVS</td>\n</tr>\n<tr>\n<td><code>LennoxP90-COTI-addon-WTT-CAG</code></td>\n<td>WTT - CAG</td>\n<td>ACTinBlack DTNVS, white and green phosphor</td>\n</tr>\n<tr>\n<td><code>LennoxP90-COTI-addon-WTT-ContentBackport</code></td>\n<td>WTT - ContentBackport</td>\n<td>AN/PVS-31A</td>\n</tr>\n<tr>\n<td><code>LennoxP90-COTI-addon-ISB-Aishi</code></td>\n<td>ISB Aishi</td>\n<td>L3Harris GPNVG-18, L3Harris PVS-31A</td>\n</tr>\n<tr>\n<td><code>LennoxP90-COTI-addon-WTT-Artem</code> (new)</td>\n<td>WTT - Artem</td>\n<td>GPNVG-18 (White, OD, Black), PVS-31, PVS-31 (Wide)</td>\n</tr>\n</tbody>\n</table>\n<p>Every addon has a pose for each tube, so with COTI 3.3.0 a quad takes four COTIs and a dual two. On\nan older COTI the same files give one COTI on the home tube.</p>\n<blockquote>\n<p>\u26a0\ufe0f Take the extra COTIs off before going back to a COTI older than 3.3.0, or to an older addon\nfile. COTIs in ECOTI L, OR or OL are lost after one saved raid, with no error.</p>\n</blockquote>\n<p>Download them from the addons section on Forge for your SPT version.</p>\n<p><strong>A goggle without a file still works:</strong> one is written automatically from the closest known\ndevice, ready to fine-tune.</p>\n<p><strong>To write your own</strong>, see\n<a target=\"_blank\" class=\"external-link\" href=\"https://github.com/LennoxP90/SPT-COTI/blob/main/ADDONS.md\" rel=\"noreferrer noopener\">ADDONS.md</a>.</p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Tuning</div>\n<div class=\"tab-content\"><p><strong>Mount editor (SPT 4.1)</strong> - open SIC and pick <strong>ECOTI -&gt; Mount editor</strong>. Choose a goggle and its\nvariant, then pose the imager on each tube over a 3D view you can orbit and zoom. There is one tab\nper tube, <strong>Mirror from partner</strong> fills a tube from the one opposite, and <strong>Type</strong> shows the goggle file\u2019s\nlayout and can change it, which is how a file that still has one tube gets its others. A game-sized screen shows every tube\u2019s circle and the boot\ntext, and dragging a tube\u2019s text moves it if a goggle\u2019s housing hides it. <strong>Save and push</strong> saves to the server\nand re-poses a running game straight away, no restart. <strong>Export addon</strong> packages a goggle from\nanother mod as a drag-over addon.</p>\n<p>The thermal circles are measured from Borkel\u2019s masks and fixed per goggle type, so there is nothing\nto tune in COTI. The circles assume BorkelRNVG\u2019s default mask size. A player who changes Borkel\u2019s F12 Mask size multiplier moves Borkel\u2019s holes and not COTI\u2019s circles, most on the outer quad tubes.</p></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Client Settings</div>\n<div class=\"tab-content\"><p>On the <strong>F12</strong> page. Less common image settings are under <strong>Advanced</strong>.</p>\n<p><strong>Image</strong> (applies to every goggle)</p>\n<ul>\n<li><strong>Enabled</strong> - master switch. Safe to toggle mid-raid.</li>\n<li><strong>Heat Threshold</strong> - how hot something must be to show. Raise it if the overlay washes the\npicture out, lower it to pick up cooler things.</li>\n<li><strong>Overlay Intensity</strong> - brightness of the heat. Lower it if bodies read as solid blobs.</li>\n<li><strong>Full Mode Fill (%)</strong> - how bright Full mode fills a hot shape. Default 45; 100 is solid.</li>\n<li><strong>Glass</strong> - default <code>Reflections</code>. Glass blocks heat either way; <code>Plain</code> draws the pane blank,\n<code>Reflections</code> also mirrors bodies in front of it. Measured free, so pick by taste.</li>\n<li><strong>Scope Glass Reflections</strong> - on by default. Lets a magnified scope\u2019s glass reflect like a window\nwhile Glass is on Reflections. Measured free.</li>\n<li><strong>Heat Brightness</strong> - default 1, from 0.25 to 2. Dims or brightens how heat draws without changing\nwhat is detected.</li>\n<li><strong>Render Flashlight Heat</strong> - on by default. Off, every flashlight reads cold.</li>\n<li><strong>Render Searchlight Heat</strong> - on by default. Off, searchlights read cold too. Measured free.</li>\n<li><strong>Magnify With Optic</strong> - off by default. Draws the heat through a magnified scope\u2019s lens at its\nzoom, at the cost of a second render while aiming. <strong>Potential FPS improvement:</strong> leave it off.</li>\n<li><strong>Magnified Intensity Scale</strong> - brightness inside a magnified scope, as a fraction of Overlay\nIntensity.</li>\n<li><strong>Sensor Resolution (rows)</strong> - higher keeps distant contacts visible.</li>\n<li><strong>Sensor Refresh (Hz)</strong> - the thermal updates at this rate and holds in between, as a real\nlow-refresh core does. Default 60; 0 updates every frame. <strong>Potential FPS improvement:</strong> keep it at\n60 or lower.</li>\n<li><strong>Thermal Range (m)</strong> (Advanced) - how far the thermal draws. 0, the default, is as far as you can\nsee.</li>\n</ul>\n<p><strong>Controls</strong></p>\n<ul>\n<li><strong>Power Toggle</strong> - default <code>Ctrl+N</code>. Switches the imager without touching the night vision. Keep\na modifier: a bare <code>N</code> would toggle the goggles too.</li>\n<li><strong>Mode Toggle</strong> - default <code>Alt+N</code>. Switches Outline and Full.</li>\n<li><strong>Thermal Mode</strong> - the mode the imager powers up in.</li>\n</ul>\n<p><strong>Power Sequence</strong></p>\n<ul>\n<li><strong>Enabled</strong> - on by default. Off makes <code>Ctrl+N</code> instant, with no messages or click.</li>\n<li><strong>Initializing / Warm-up Gap / Power Off Seconds</strong> - stage lengths. Defaults 1.2, 0.3 and 1.5.</li>\n<li><strong>Click Volume</strong> - on top of the game\u2019s own volume. 0 mutes it.</li>\n</ul>\n<p><strong>Debug</strong></p>\n<ul>\n<li><strong>Verbose Logging</strong> - off for normal play. Turn on when reporting a problem.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Server Settings</div>\n<div class=\"tab-content\"><p><strong>SPT 4.1:</strong> open SIC and pick <strong>ECOTI</strong>. Each section says when it applies: trader changes reach\nthe running server on save (relaunch the game to see them), loot applies at the next raid, and the\nhost editor needs a server restart. The same settings are in SIC\u2019s Config Editor.</p>\n<p><strong>SPT 4.0:</strong> edit <code>SPT/user/mods/LennoxP90-COTI/config/config.json</code> and restart the server. On 4.1\nthe file is <code>SPT_Runtime/user/mods/LennoxP90-COTI/config/config.json</code>, which SIC writes for you.</p>\n<ul>\n<li><strong><code>trader.loyaltyLevel</code></strong> - Peacekeeper loyalty level. Default <code>4</code>.</li>\n<li><strong><code>trader.priceUsd</code></strong> - price in dollars. Default <code>2000</code>.</li>\n<li><strong><code>trader.buyLimit</code></strong> - purchases per profile. Default <code>3</code>.</li>\n<li><strong><code>loot.enabled</code></strong> - <code>false</code> makes the trader the only source.</li>\n<li><strong><code>loot.weightFraction</code></strong> - spawn weight relative to the night vision at each spot. Default\n<code>0.25</code>.</li>\n<li><strong><code>hostEditor.autoDiscover</code></strong> - default <code>true</code>. Writes a starter file for any night vision without\none.</li>\n<li><strong><code>flea.playerSellable</code></strong> - default <code>false</code>, so the only flea listing is Peacekeeper\u2019s. <code>true</code> adds\nplayer listings, which SPT prices at roughly two to three times Peacekeeper\u2019s price.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-8\" class=\"tab-panel\"><div class=\"tab-title\">Recommended Mods</div>\n<div class=\"tab-content\"><p><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/954/borkels-realistic-night-vision-goggles-nvgs-and-t-7\" rel=\"noreferrer noopener\">Borkel\u2019s Realistic NVGs</a></p></div></div>\n<div id=\"tabset-1-panel-9\" class=\"tab-panel\"><div class=\"tab-title\">Credits</div>\n<div class=\"tab-content\"><p>3D model by <a target=\"_blank\" class=\"external-link\" href=\"https://www.3dmilitaryassets.com/\" rel=\"noreferrer noopener\">3D Military Assets</a>, used under their Extended\nLicence.</p></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/uBqPS3CMP3xWfcAq0nXd3U5LjD1WDk8vyRTRViO8.jpg",
    "forge_url": "https://sp-mod.com/mod/2930/ecoti-enhanced-clip-on-thermal-imager",
-   "downloads": 11717,
-   "favourites": 88,
+   "downloads": 12366,
+   "favourites": 93,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -194481,12 +194506,36 @@
    ],
    "versions": [
     {
+     "id": 15895,
+     "version": "2.1.0",
+     "description": "<p>This version brings all the fancy features from 3.3.2 (SPT 4.1) into 2.0.x (SPT 4.0).</p>\n",
+     "spt_constraint": "~4.0.0",
+     "fika": "compatible",
+     "downloads": 4,
+     "size": 2197646,
+     "link": "https://sp-mod.com/mod/download/2930/ecoti-enhanced-clip-on-thermal-imager/2.1.0",
+     "published_at": "2026-10-11T14:03:00.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 15894,
+     "version": "3.3.2",
+     "description": "<p>No functional changes just config cleanup of unused F12 settings that were dropped when moved to new shader only heat rendering.</p>\n",
+     "spt_constraint": "~4.1.3",
+     "fika": "compatible",
+     "downloads": 217,
+     "size": 4109066,
+     "link": "https://sp-mod.com/mod/download/2930/ecoti-enhanced-clip-on-thermal-imager/3.3.2",
+     "published_at": "2026-10-11T14:00:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 15873,
      "version": "3.3.1",
      "description": "<h2>Changed</h2>\n<ul>\n<li>Bots no longer spawn with COTIs. With Acid\u2019s Progressive Bot System (APBS), every bot that spawned\nwith night vision at night also got a COTI on every tube slot. COTIs still spawn in loot and are sold by Peacekeeper, as before.</li>\n</ul>\n<h2>Added</h2>\n<ul>\n<li>New config option in the ECOTI page\u2019s Loot section (<code>loot.onBots</code> in <code>config.json</code>). Turn it on if you want bots to carry COTIs again. With APBS that means every night bot\nwith night vision has one on every tube. It applies at the next raid, with no restart.</li>\n</ul>\n",
      "spt_constraint": "~4.1.3",
      "fika": "compatible",
-     "downloads": 72,
+     "downloads": 488,
      "size": 4112157,
      "link": "https://sp-mod.com/mod/download/2930/ecoti-enhanced-clip-on-thermal-imager/3.3.1",
      "published_at": "2026-10-10T16:14:00.000000Z",
@@ -194498,7 +194547,7 @@
      "description": "<h2>Reflections</h2>\n<p>Glass now blocks heat like it does on a real thermal. You can\u2019t see a warm body through a window\nany more, and by default the window reflects whoever is standing in front of it, you included.\nSet F12 &gt; Image &gt; Glass to Plain if you\u2019d rather have a blank pane.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/330-window-reflection.jpg\" alt=\"A window at night: Reflections beside Plain\" /></p>\n<p>Magnified scopes do the same: look at your scope from the outside and the eyepiece shows your\nreflection. Aiming through it is unchanged. Red dots and holos don\u2019t reflect. Scope Glass\nReflections in F12 turns this off on its own.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/330-scope-eyepiece.jpg\" alt=\"A scope eyepiece reflecting the shooter\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/330-scope-toggle.jpg\" alt=\"Scope Glass Reflections on, off, on\" /></p>\n<h2>A COTI on every tube</h2>\n<p>You can now fit a COTI to each tube of your goggles, in any combination: up to four on the GPNVG-18,\ntwo on the N-15 and PNV-57E, one on the PVS-14 and PNV-10T. Each tube only shows thermal if it has a\nCOTI on it, and Ctrl+N / Alt+N work them all at once.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/330-multitube-view.jpg\" alt=\"Four COTIs on a GPNVG-18\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/330-multitube-hardware.jpg\" alt=\"A GPNVG-18 with a COTI under each tube\" /></p>\n<p>The slots are named by where they sit (ECOTI OL, ECOTI L, ECOTI R, ECOTI OR) and listed left to\nright. A COTI you already have fitted stays put, and dropping one onto the goggles still puts it on\nthe same tube as before.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/330-slot-labels.jpg\" alt=\"The four slots in the inspect window\" /></p>\n<p>The circles are placed to match BorkelRNVG\u2019s Realistic NVGs (based on 3.0.4), which is the\nrecommended way to run COTI.</p>\n<h2>Added</h2>\n<ul>\n<li>Lit searchlights read hot and lit flashlights read slightly warm. Both can be switched off in F12\n(Render Searchlight Heat, Render Flashlight Heat).</li>\n<li>Heat Brightness in F12 to dim or brighten the heat image.</li>\n<li>The mount editor supports the new per-tube format.</li>\n<li>The empty COTI slot icon now matches the game\u2019s own empty slots.</li>\n</ul>\n<h2>Changed</h2>\n<ul>\n<li>Heat is now based on what is actually warm in the raid, compared to the air temperature. People\nstand out most on a cold night, cultists only barely, and guns only get hot when fired.</li>\n<li>Full mode fill defaults to 45% (was 55%).</li>\n<li>Posing on SPT 4.1 is done in the web mount editor; the in-game pose tools are gone from the 4.1\nbuild.</li>\n</ul>\n<h2>Fixed</h2>\n<ul>\n<li>Thermal breaking after the first raid of a session.</li>\n<li>Heat showing through hills.</li>\n<li>Bots visible through some walls, like Factory\u2019s admin office.</li>\n<li>See-through bridges on Customs.</li>\n<li>Suppressors, unlit lamps, grenades, blood and tritium sights reading hot.</li>\n<li>Outline drawing too thick through a magnified scope.</li>\n<li>Hitches when first flipping the goggles down, and every 10 and 30 seconds after.</li>\n</ul>\n<h2>Performance</h2>\n<ul>\n<li>Glass reflections, scope glass reflections and searchlight or flashlight heat: next to no cost\neither way, so set them by taste.</li>\n<li>Each extra COTI on the goggles: a small hit, around a tenth of a millisecond or less.</li>\n<li>Magnify With Optic: a small hit when on, since it renders the thermal again while aiming.</li>\n<li>Sensor Refresh: lower is cheaper, 0 (every frame) costs the most.</li>\n</ul>\n",
      "spt_constraint": "~4.1.3",
      "fika": "compatible",
-     "downloads": 901,
+     "downloads": 905,
      "size": 4110846,
      "link": "https://sp-mod.com/mod/download/2930/ecoti-enhanced-clip-on-thermal-imager/3.3.0",
      "published_at": "2026-10-07T17:49:00.000000Z",
@@ -194534,7 +194583,7 @@
      "description": "<h3>Newly Fixed</h3>\n<ul>\n<li>The ECOTI appears in linked search off a supported goggle. Its Peacekeeper offer was being registered after SPT had already built the flea, so the flea never saw it. It registers before that now, and the item is findable by name and beside the other night vision gear.</li>\n</ul>\n<h3>Brought over from 3.0.1 -&gt; 2.0.2</h3>\n<ul>\n<li>Fixed colour issue with latest Borkel\u2019s Realistic NVGs (3.0.0)</li>\n<li>Fixed overlay inside magnified scopes (removed the coti circle, intensity bloom lessened in magnified scopes)</li>\n<li>Fixed timing of when thermal image turns on and off with nvg toggling</li>\n</ul>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 526,
+     "downloads": 532,
      "size": 2098002,
      "link": "https://sp-mod.com/mod/download/2930/ecoti-enhanced-clip-on-thermal-imager/2.0.2",
      "published_at": "2026-09-03T22:30:00.000000Z",
@@ -194606,7 +194655,7 @@
      "description": "<h2>SPT 4.1 - version 1.1.0</h2>\n<h3>\u26a0\ufe0f Updating from 1.0.0</h3>\n<p><strong>The device sits differently on every host, and is larger.</strong> Every mount pose was re-tuned so the\nclamp ring actually fits against the tube housing, and every host wanted the device between 16% and\n46% bigger. The PVS-14, N-15, GPNVG-18 and PVS-31A have all moved and grown. If it looks different\nafter updating, this is why - it is not a fault.</p>\n<h3>Added</h3>\n<ul>\n<li><strong>DTNVS support</strong>, both white and green phosphor variants.</li>\n<li><strong>Magnified optic thermal</strong>, off by default. The imager is an offset sensor looking downrange on\nits own axis, so at 1x its heat disagrees with a magnified sight by between 1.3x and 7.9x\ndepending on zoom. Turn <strong>Magnify With Optic</strong> on and a second thermal pass is matched to the\nscope and drawn into the scope\u2019s own picture, with the 1x heat kept off the lens so you can see\nit. Non-magnified sights are unaffected either way. Costs about 0.28 ms while aiming, which is\nless than the 1x overlay itself, and does not change with magnification.</li>\n<li><strong>Distant contacts hold together.</strong> A contact far enough away covered only a fraction of a sensor\ntexel, its heat averaged with the cold background behind it, and below roughly a quarter coverage\nit fell under the heat threshold and contributed nothing at all - so it dimmed, flickered as it\nmoved, and eventually vanished. A target at 300 m used to swing between a fifth of full brightness\nand full brightness depending purely on where it landed on the texel grid. It now holds steady, at\nno measurable cost.</li>\n<li><strong>Sensor Resolution</strong> on F12, if you would rather trade it back for frames or push it further.</li>\n<li><strong>Heat renders as contours by default</strong> rather than as filled shapes. Outline Mix is the dial:\n0% is the old solid look, 100% is edge-only. Contour thickness now follows the sensor resolution,\nso changing one does not silently change the other.</li>\n</ul>\n<h3>Fixed</h3>\n<ul>\n<li>The <strong>GPNVG-18 no longer stays down</strong> when the goggles are flipped up. Its mount is part of the\ntube mesh, so flipping rotates an internal transform while the root never moves; the device is now\nanchored to the transform that actually flips.</li>\n<li>Contours no longer straddle the edge of what they outline, so a distant target renders at its true\nsize rather than several times it.</li>\n<li>The thermal camera no longer carries scope components it has no use for.</li>\n</ul>\n",
      "spt_constraint": "4.1.2",
      "fika": "compatible",
-     "downloads": 687,
+     "downloads": 688,
      "size": 2053452,
      "link": "https://sp-mod.com/mod/download/2930/ecoti-enhanced-clip-on-thermal-imager/1.1.0",
      "published_at": "2026-08-18T23:00:00.000000Z",
@@ -194618,15 +194667,15 @@
      "description": "<p>First release</p>\n",
      "spt_constraint": "4.1.2",
      "fika": "compatible",
-     "downloads": 890,
+     "downloads": 891,
      "size": 2045722,
      "link": "https://sp-mod.com/mod/download/2930/ecoti-enhanced-clip-on-thermal-imager/1.0.0",
      "published_at": "2026-08-16T05:05:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "3.3.1",
-   "spt_constraint": "~4.1.3",
+   "latest_version": "2.1.0",
+   "spt_constraint": "~4.0.0",
    "all_spt_constraints": [
     "4.0.13",
     "4.1.2",
@@ -194638,7 +194687,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-10-04T03:35:00.000000Z",
-   "updated_at": "2026-10-10T16:22:05.000000Z",
+   "updated_at": "2026-10-11T14:04:37.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -195484,7 +195533,7 @@
    "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Overview</div>\n<div class=\"tab-content\"><p>Tushonka Territories adds faction warfare and a dynamically changing world map. PMC relations remain unchanged and may continue infighting. But now Raiders, Rogues and Scavs will vie for control over Tushonka and can even ally with the player as they attempt to cover the map in their team colors.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/FHAVdQ9.png\" alt=\"ttmap\" /></p>\n<hr />\n<h3>List Of Features</h3>\n<ul>\n<li>Factions</li>\n<li>Simulated battles</li>\n<li>Reputation system</li>\n<li>Player can affect the outcome</li>\n<li>Full customization</li>\n</ul>\n<hr />\n<h3>Detailed Overview</h3>\n<h4>FACTIONS</h4>\n<p>Scavs (dark green), Rogues (light green) and Raiders (orange) are the default factions included with this mod but they can be swapped out in the config. From the outset, each faction will attack the player on sight with a few exceptions; Rogues will not attack United States Evil Corporation characters and Scavs will not attack player Scavs. Factions will not attack their own members.</p>\n<p>Factions will also bring their side\u2019s boss into the raid with them for added support. Tagilla and Killa for the Scavs, Kolontay for Raiders and the Goons for Rogues.</p>\n<p>With this mod installed you will see Scavs, Rogues and Raiders spawning on maps they normally wouldn\u2019t. Should not cause issues with spawn mods like ABPS other than overriding the spawn settings of those three specific bot types and their bosses. Once dead, they will not respawn.</p>\n<h4>SIMULATED BATTLES</h4>\n<p>After the player exfiltrates from a raid, calculations are run on the backend to decide the outcome of the faction battle that took place. A hidden value called \u201cfaction strength\u201d determines the final winner of each battle. Put simply, each bot killed costs that faction some of their strength. Each boss killed costs them even more. A territory may require more than one battle to flip it\u2019s control to a different faction.</p>\n<p>By default, the mod will simulate several battles after each raid. But this can be changed in the config to simulate battles (X) amount of minutes. This timed setting only functions while the game is running.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/AvwpwU1.gif\" alt=\"ttexample\" /></p>\n<h4>REPUTATION SYSTEM</h4>\n<p>It\u2019s possible to get on friendly terms with a faction to the point where they will not attack you and may even come to your aid if you are attacked. But getting there will be difficult. Avoid killing their members while only attacking their enemies. You\u2019ll have to choose your fights carefully as it may take several raids to get on their good side. Best to just avoid running into your preferred faction whenever possible until you\u2019re certain that you\u2019re not on their shit list anymore.</p>\n<p>Additionally, disabled by default, the mod has support for overriding the standing with traders by using the associated faction\u2019s reputation instead. Currently, the mod only connects the Scavs to Fence but more can come and it allows 3rd party extensions to connect it to traders of their choosing.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/92JKLLx.jpeg\" alt=\"nicebigpipe\" /></p>\n<h4>PLAYER AFFECTED OUTCOMES</h4>\n<p>Each bot that dies in raid affects the outcome of the battle. Bosses weaken a faction the most so target them whenever possible if you wish to truly take out the faction. Help your preferred faction conquer the entire map!</p>\n<p>Right now conquering the map will only make raids easier but check the <code>PROJECT GOALS</code> tab for planned features!</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Incompatible/Recommended Mods</div>\n<div class=\"tab-content\"><p><strong>Recommended</strong><br />\n<a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement\" rel=\"noreferrer noopener\">SAIN</a> (once its released)<br />\nAny mod to make bots move around</p>\n<p><strong>Compatible</strong><br />\n<a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1594/apbs-acids-progressive-bot-system\" rel=\"noreferrer noopener\">APBS</a>\n<a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2426/morebotsapi\" rel=\"noreferrer noopener\">MoreBots</a> *and its dependent mods.</p>\n<p><strong>Issues</strong><br />\n<a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2642/vagabond\" rel=\"noreferrer noopener\">Vagabond</a> - The location select menu shows only one faction. This issue is cosmetic, internally the factions are still there.</p>\n<p><strong>Incompatible</strong><br />\n<a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2097/abps-acids-bot-placement-system\" rel=\"noreferrer noopener\">ABPS</a> - Causes too many PMCs to spawn by default which takes away bot slots from this mod\u2019s spawns.\n<a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2248/separate-hostility\" rel=\"noreferrer noopener\">Separate Hostility</a> - This mod makes its own hostilities which includes marking PMCs as enemies by default.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Installation &amp; Quick Start</div>\n<div class=\"tab-content\"><ol>\n<li>Download the latest TushonkaTerritories zip</li>\n<li>Extract the SPT and BepInEx folder from it into your SPT folder (the one with the folders SPT_Runtime and BepinEx in it)</li>\n<li>Start the server</li>\n<li>Edit the config, comments and guides in the included example</li>\n<li>Restart the server</li>\n<li>Run a few raids so the factions start fighting</li>\n<li>Have fun</li>\n</ol></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Configuration</div>\n<div class=\"tab-content\"><p>To configure Tushonka Territories, enter the Config folder in the server (SPT_Runtime/user/mods) install and if you ran the server there is a file called config.jsonc. A file comes included with the mod, configExample.jsonc which includes comments for what each value does.</p>\n<p>The mod is also now editable through the SIC (accessible through the launcher). This will allow you to have a more visual editing of the config, although there are no descriptions still.<br />\n<strong>Note:</strong> A lot of config options require an restart to properly change, if you decide to update the config through the SIC page, keep this in mind.</p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Modding</div>\n<div class=\"tab-content\"><p>You can mod the data of the mod by adding data_override.json to the Data folder. The mod will load this json file instead and won\u2019t be overridden by updates.</p>\n<p>This allows you to completely change the factions, which bots belong to which factions, and the default state of the map. The only exception is the none faction which must be present at all times but any of its details are free to be changed.</p>\n<p>Modding the data file comes with zero safeguards so mod carefully and ask questions if needed in my <strong>#mods-development</strong> thread.</p>\n<p>The mod also comes with quest/achievement conditions and rewards for external mods.<br />\nIf you use the \u201creputation\u201d condition with the target set to the faction\u2019s data key and the value to the desired reputation, it will create a condition that will unlock after reaching the desired reputation with that faction.<br />\nThe \u201creputation\u201d reward is available which will add \u201cvalue\u201d reputation to the \u201ctarget\u201d faction. This ignores reputation locks.<br />\nThe \u201cfactionUnlock\u201d reward is also available which will unlock the reputation gaining for the \u201ctarget\u201d faction.</p>\n<p>I tried to make the mods data easily editable but there might be some things such as location names which had to be unfortunately hard coded. I will write in anything if needed to the official mod to support other modders.</p></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Known Issues</div>\n<div class=\"tab-content\"><ul>\n<li>The new spawn system might be a bit laggy. Adjust the config values as needed.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Project Goals</div>\n<div class=\"tab-content\"><ul>\n<li>A companion mod that includes more bots and factions to make the map more interesting.</li>\n<li>Translations for more languages.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-8\" class=\"tab-panel\"><div class=\"tab-title\">Special Thanks</div>\n<div class=\"tab-content\"><p><strong>Acidphantasm</strong> - For paving the way with their bot spawning knowledge, especially for ABPS which I referenced greatly.<br />\n<strong>SPT Team</strong> - For making 4.1 which has made modding way easier.<br />\n<strong>BorisTheBrave</strong> - For making <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/BorisTheBrave/voronator-sharp\" rel=\"noreferrer noopener\">Voronator-Sharp</a> so I don\u2019t have to learn and write an complex algorithm.<br />\n<strong>Anyone who uses and talks to me about the mod</strong> - Seeing people enjoying my mods will never cease to make me happy.</p>\n<p>Languages:<br />\n<strong>operator_lucas</strong> - Russian translation</p>\n<p><em><strong>And and extra special thanks to:</strong></em><br />\n<strong>Mcdewgle</strong> - For writing a better description for the mod.</p>\n<p>Without all of you, this wouldn\u2019t be possible</p></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/W9mUCfsXleBft1bjBIirZljxI5IczjSnAoNwTD7c.png",
    "forge_url": "https://sp-mod.com/mod/2942/tushonka-territories",
-   "downloads": 3032,
+   "downloads": 3159,
    "favourites": 35,
    "featured": false,
    "fika": true,
@@ -195513,12 +195562,24 @@
    ],
    "versions": [
     {
+     "id": 15897,
+     "version": "2.0.2",
+     "description": "<p>Fixed bug that caused the mod to sometimes think that an every reward in a completed quest is its own reward type and removed them.<br />\nFixed bug that allowed trader reputation overriding to work despite the config value being disabled.</p>\n<p>If your profile was affected by these bugs, use the SIC profile to restore your quest and trader rep.</p>\n",
+     "spt_constraint": "~4.1.3",
+     "fika": "compatible",
+     "downloads": 46,
+     "size": 768329,
+     "link": "https://sp-mod.com/mod/download/2942/tushonka-territories/2.0.2",
+     "published_at": "2026-10-11T15:08:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 15888,
      "version": "2.0.1",
      "description": "<p>Hotfix for my last minute change of the assembly name causing all scripts to not have proper references. Whoops.</p>\n",
      "spt_constraint": "~4.1.3",
      "fika": "compatible",
-     "downloads": 13,
+     "downloads": 91,
      "size": 768344,
      "link": "https://sp-mod.com/mod/download/2942/tushonka-territories/2.0.1",
      "published_at": "2026-10-11T05:27:00.000000Z",
@@ -195530,7 +195591,7 @@
      "description": "<p><strong>DELETE THE MOD BEFORE UPDATING, INCLUDING SAVES AND CONFIGS</strong><br />\nImplements a new faction-conscious spawn system that maintains spawning throughout a raid.<br />\nAdds support for modded factions. Currently RUAF, UNTAR, and Black Division.<br />\nAdds a config for bosses which allow custom boss configurations to move with factions.<br />\nAdds more advanced faction simulations. Factions won\u2019t always attack locations.<br />\nAdds \u201cphantom\u201d faction support which will make certain factions (Cultists, Black Division) not take any territory but still cause havoc.<br />\nAdds a initial simulation config which will run a configured number of simulations at the start of a save file to jumble the start.<br />\nAdds more map connections on the base config which stops various choke points.<br />\nAdds server side caching which probably won\u2019t have a noticeable effect but it happened.<br />\nFixes hostility issues that made allied factions shoot at players when players got close.<br />\nFixes reputation screen scroll bar not working.<br />\nRemoved custom PMC wave override that blocked ground zero from having PMC spawns.<br />\nHeavily adjusted default config.<br />\nOther various fixes I lost track of.</p>\n",
      "spt_constraint": "~4.1.3",
      "fika": "compatible",
-     "downloads": 20,
+     "downloads": 21,
      "size": 768308,
      "link": "https://sp-mod.com/mod/download/2942/tushonka-territories/2.0.0",
      "published_at": "2026-10-11T02:59:00.000000Z",
@@ -195542,7 +195603,7 @@
      "description": "<p>Fixed error that would occur if the mod tries to spawn a boss that doesn\u2019t spawn elsewhere. Proper support soon.<br />\nFixed faction damage not applying from a raid if there is only one faction.<br />\nFika addon setup</p>\n",
      "spt_constraint": "~4.1.2",
      "fika": "compatible",
-     "downloads": 769,
+     "downloads": 770,
      "size": 663691,
      "link": "https://sp-mod.com/mod/download/2942/tushonka-territories/1.3.4",
      "published_at": "2026-09-13T04:30:00.000000Z",
@@ -195590,7 +195651,7 @@
      "description": "<p>Probably the last minor update for a while.</p>\n<p>Added basic faction images.<br />\nAdded icon to show reputation locked factions.<br />\nAdded list of contestants at location.<br />\nRegistered the mod config with the SIC in the launcher to allow web editing.<br />\nFixed issues with the spawning system such as one that could cause PMCs to be removed.\nAdded config option to disable vanilla cultist spawns.<br />\nEnhanced client updating which keeps the game updated with the latest territory info at all times.<br />\nAdjusted default config some more.<br />\nProbably some other stuff I forgot.</p>\n<p>Modding Changes\nAdded quest rewards for mod authors.<br />\nAdded un-lockable reputation gaining (no vanilla way of obtaining this).</p>\n",
      "spt_constraint": "~4.1.2",
      "fika": "unknown",
-     "downloads": 22,
+     "downloads": 23,
      "size": 662818,
      "link": "https://sp-mod.com/mod/download/2942/tushonka-territories/1.3.0",
      "published_at": "2026-08-28T03:31:00.000000Z",
@@ -195669,7 +195730,7 @@
      "dependencies": []
     }
    ],
-   "latest_version": "2.0.1",
+   "latest_version": "2.0.2",
    "spt_constraint": "~4.1.3",
    "all_spt_constraints": [
     "~4.1.2",
@@ -195678,7 +195739,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-08-19T05:12:00.000000Z",
-   "updated_at": "2026-10-11T05:29:20.000000Z",
+   "updated_at": "2026-10-11T15:26:29.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -207334,10 +207395,10 @@
    "slug": "rook",
    "teaser": "Rook is a lore-friendly custom trader offering curated weapons, equipment, custom presets, and intelligence-focused trading.",
    "description_html": "<h2>Background</h2>\n<p>Rook was not always Rook.</p>\n<p>During the Contract Wars, he worked as a low-profile U*** contractor around some of T*********\u2019s most sensitive facilities and assets in Norvinsk. His work mostly involved site security, classified material, personnel transfers, and assignments where discretion mattered more than recognition.</p>\n<p>His reliability eventually brought him into Black Division, where the same kind of work continued under much tighter compartmentalization and with far less room for failure.</p>\n<p>That career came to an end during a sanitization operation at Laboratory No.14. The facility was compromised, personnel were lost, and the operation collapsed when FSB Spetsnaz team arrived in the facility after Rook\u2019s team about to finish operation when cleaning was ended</p>\n<p>Rook and the rest of his team were subsequently listed as presumed KIA.</p>\n<p>He survived.</p>\n<p>Rather than return and explain how, he chose to remain dead. His former identity disappeared with No.14, and the name Rook appeared later through a network of suppliers, technicians, fixers, and intermediaries built over years of contract work.</p>\n<p>Now, Rook deals in carefully selected weapons and equipment, but information remains his most valuable commodity. And for Rook , PMC is just become his asset from now on.</p>\n<h2>Features</h2>\n<p>-Four loyalty levels with increasingly strong equipment</p>\n<p>-Curated weapons, ammunition, armor, attachments, and tactical gear</p>\n<p>-A large selection of custom weapon presets</p>\n<p>-Intelligence-focused item buying</p>\n<p>-Premium repair service</p>\n<p>-Higher-tier gear unlocked through continued trading with Rook</p>\n<h2>Installation</h2>\n<p>Extract the archive directly into your SPT root folder, where SPT.Server.exe is located.</p>\n<h2>Compatibility</h2>\n<p>Supported SPT versions:</p>\n<p>-SPT 4.1.6</p>\n<p>-SPT 4.0.13</p>\n<p>Download and install the release that matches your SPT version.</p>\n<p>No dependencies are required for the initial release.</p>\n<h2>Future Plans</h2>\n<p>-Custom quests and progression</p>\n<p>-Unique presets for Rook</p>\n<p>-Multi-language localization support, I plan to build the localization system into Rook, and community translations will be welcome for languages I cannot translate myself. And im planning for quests so\u2026 I cant say no for Russian , Chinese , Japanese , French , Turkish , German language etc.</p>\n<p>-Further expansion and redesignation of Rook\u2019s inventory and progression</p>\n<p>Upcoming Trader \u2014 Zhao Jianwei</p>\n<p>Zhao Jianwei is a former procurement and operations specialist for Zhenyu Industrial Supply, a Shenyang-based company that once supplied Norvinsk\u2019s growing industrial sector. When the region collapsed, Jianwei adapted his remaining network of warehouses, suppliers, drivers, and technical contacts to keep essential goods moving through the region.\nUnlike a conventional arms dealer, Zhao focuses on industrial supplies, technical components, tools, maintenance equipment, storage solutions, and practical field logistics. Across four loyalty levels, his inventory expands from common utility goods and basic technical supplies to more valuable components, specialized equipment, and harder-to-source logistical items.\nHis established professional connection with Mechanic comes from years of technical procurement and repeated business dealings before and during the collapse of Norvinsk.\nUpcoming in a future update.</p>\n<h2>Credits &amp; Permissions</h2>\n<p>Author: YDLonewolf</p>\n<p>License: MIT License</p>\n<p>Rook may be modified, updated, ported, redistributed, or used as a base for other projects in accordance with the MIT License.</p>\n<p>Please keep the original copyright and license notice included with the mod.</p>\n<p>If you release a modified, updated, or ported version, please:</p>\n<p>-Credit YDLonewolf as the original author of Rook</p>\n<p>-Clearly state that your release is a modified or unofficial version</p>\n<p>-Describe the changes you made and the SPT version it supports</p>\n<p>-Link back to the original Rook page when possible</p>\n<p>Unofficial ports, forks, and modified versions are supported by their respective maintainers, not by the original author.</p>\n<blockquote>\n<p><strong>Developer Note</strong></p>\n<p>Rook is my first SPT mod. The initial release has been tested carefully, but feedback and bug reports are always welcome as I continue improving the mod.</p>\n</blockquote>\n<h2>Known Issues</h2>\n<p>No known issues at this time.</p>\n<p>If you encounter a bug, please report it with your SPT version and any relevant server errors or logs.</p>\n<p>Big Credit goes for EpicRangeTime , Eco , Tron and Eukyre for their unique mods</p>\n",
-   "thumbnail": "https://files.sp-mod.com/mods/oiHFjQuxVLw1tCUDKEoK1xy9urEljKqk447M6jAS.png",
+   "thumbnail": "https://files.sp-mod.com/mods/E5L0URIIx9kyMverDE29IeULWHPOlY6M9J8pUnSb.jpg",
    "forge_url": "https://sp-mod.com/mod/3055/rook",
-   "downloads": 3215,
-   "favourites": 33,
+   "downloads": 4439,
+   "favourites": 45,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -207365,12 +207426,67 @@
    ],
    "versions": [
     {
+     "id": 15898,
+     "version": "1.2.1",
+     "description": "<p>Small Update</p>\n<p>-Added Blue Folder to intelligence sell items (Which i forgot to add)</p>\n<p>-Changed some prices of ammo , meds , cases and magazines</p>\n<p>Dont forget to share your feedbacks!</p>\n",
+     "spt_constraint": "4.1.6",
+     "fika": "compatible",
+     "downloads": 106,
+     "size": 764973,
+     "link": "https://sp-mod.com/mod/download/3055/rook/1.2.1",
+     "published_at": "2026-10-11T16:08:03.000000Z",
+     "dependencies": [
+      {
+       "id": 1263,
+       "name": "Epic's All in One",
+       "slug": "epics-all-in-one",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/1263/epics-all-in-one"
+      },
+      {
+       "id": 2195,
+       "name": "ECOT - Eukyre's Consortium of Things",
+       "slug": "ecot-eukyres-consortium-of-things",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2195/ecot-eukyres-consortium-of-things"
+      },
+      {
+       "id": 2246,
+       "name": "WTT- Armory",
+       "slug": "wtt-armory",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2246/wtt-armory"
+      },
+      {
+       "id": 2310,
+       "name": "WTT - CommonLib",
+       "slug": "wtt-commonlib",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
+      },
+      {
+       "id": 2512,
+       "name": "WTT - Content Backport",
+       "slug": "wtt-content-backport",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2512/wtt-content-backport"
+      },
+      {
+       "id": 2882,
+       "name": "Eco's Attachment Emporium",
+       "slug": "ecos-attachment-emporium",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2882/ecos-attachment-emporium"
+      }
+     ]
+    },
+    {
      "id": 15744,
      "version": "1.2.0",
      "description": "<p>Major Update</p>\n<p>-Added some new unique presets such as SCAR HAMR IAR , HK 243 , M27 IAR , MK11 Mod 0, SIG MCX LVAW and more</p>\n<p>-Added some attachments and items from Content Backport even Black Division Armor and Backpack to LL4</p>\n<p>-Added M4-2000 Supressor from Epic\u2019s All in One (Credit goes for EpicRangeTime for his mod)</p>\n<p>-Added Epic\u2019s All in One , Eco\u2019s Attachment Emporium , WTT Armory and ECOT compatibility for my presets ( Credit goes for EpicRangeTime ,Eco , Tron and Eukyre for their unique mods)</p>\n<p>-Removed Weapon , Meds , Ammo sell items and replaced it with intelligence oriented sell items</p>\n",
      "spt_constraint": "4.1.6",
      "fika": "compatible",
-     "downloads": 337,
+     "downloads": 1374,
      "size": 707883,
      "link": "https://sp-mod.com/mod/download/3055/rook/1.2.0",
      "published_at": "2026-10-02T19:53:47.000000Z",
@@ -207425,7 +207541,7 @@
      "description": "<p>Big Update</p>\n<p>-Added some new and unique presets such as Colt Model 727 , 653 , 733 and more</p>\n<p>-Added WTT Content Backport and WTT CommonLib compatibility</p>\n",
      "spt_constraint": "4.1.6",
      "fika": "compatible",
-     "downloads": 558,
+     "downloads": 567,
      "size": 661185,
      "link": "https://sp-mod.com/mod/download/3055/rook/1.1.0",
      "published_at": "2026-09-30T14:54:00.000000Z",
@@ -207452,7 +207568,7 @@
      "description": "<p>Rook v1.0.1 - SPT 4.0.13</p>\n<p>Small Update</p>\n<ul>\n<li>Added 7.62x51mm M61 ammunition.</li>\n<li>Adjusted several ammunition prices for better balance.</li>\n<li>Minor pricing corrections.</li>\n<li>Updated specifically for SPT 4.0.13.</li>\n<li>Preserves the existing 4.0.13 compatibility adjustments.</li>\n</ul>\n",
      "spt_constraint": "~4.0.13",
      "fika": "unknown",
-     "downloads": 178,
+     "downloads": 244,
      "size": 604977,
      "link": "https://sp-mod.com/mod/download/3055/rook/1.0.1+compat.4.0.13",
      "published_at": "2026-09-26T11:46:48.000000Z",
@@ -207464,7 +207580,7 @@
      "description": "<p>Small Update</p>\n<ul>\n<li>Added 7.62x51mm M61 ammunition.</li>\n<li>Adjusted some prices.</li>\n<li>Minor pricing corrections.</li>\n</ul>\n",
      "spt_constraint": "~4.1.6",
      "fika": "unknown",
-     "downloads": 1150,
+     "downloads": 1154,
      "size": 606381,
      "link": "https://sp-mod.com/mod/download/3055/rook/1.0.1",
      "published_at": "2026-09-25T23:37:10.000000Z",
@@ -207476,14 +207592,14 @@
      "description": "<p>In\u0131tial Release of Rook Trader Mod</p>\n",
      "spt_constraint": "~4.1.6",
      "fika": "unknown",
-     "downloads": 992,
+     "downloads": 994,
      "size": 606259,
      "link": "https://sp-mod.com/mod/download/3055/rook/1.0.0",
      "published_at": "2026-09-23T11:17:58.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.2.0",
+   "latest_version": "1.2.1",
    "spt_constraint": "4.1.6",
    "all_spt_constraints": [
     "4.1.6",
@@ -207579,7 +207695,7 @@
     }
    ],
    "published_at": "2026-09-23T11:16:00.000000Z",
-   "updated_at": "2026-10-03T15:47:23.000000Z",
+   "updated_at": "2026-10-11T16:10:43.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -212414,8 +212530,8 @@
    "description_html": "<p><strong>Infinite Everything</strong> All I want is to be able to reload WHILE having infinite ammo. Didn\u2019t test it with FIKA so let me know how it goes in the comments!</p>\n<h2>Options</h2>\n<h3>Weapons</h3>\n<p><strong>Infinite ammo</strong> (on by default)</p>\n<ul>\n<li>You still reload, but reloading never costs anything. Your magazine goes back into your rig, pockets or backpack, refilled, even on a double-tap quick reload.</li>\n<li>R and double-tap R always reload, also on a full gun and with only the magazine that is in the gun.</li>\n<li>Nothing is dropped when your inventory is full: the old magazine is kept aside and comes back when there is room.</li>\n<li>Shotguns, bolt-actions, revolvers, break-actions, grenade launchers and flare guns load to full, even with no rounds on you.</li>\n<li>R puts a new rocket in an empty RShG-2.</li>\n</ul>\n<p><strong>Infinite Magazine Options (Hold-R Scroll Menu)</strong> (on by default)</p>\n<ul>\n<li>The hold-R reload menu lists every magazine that fits your gun and every round type it takes, even ones you don\u2019t carry.</li>\n<li>Magazines you don\u2019t own are borrowed, and that needs no free inventory space. Your own magazine is kept aside, comes back when the borrowed one leaves the gun, and is back in the gun at raid end.</li>\n<li>Whatever you pick sticks for later reloads.</li>\n</ul>\n<p><strong>Other weapon options</strong></p>\n<ul>\n<li><strong>Infinite magazine</strong>: firing never uses rounds. The RShG-2 gets a new rocket after every shot.</li>\n<li><strong>Infinite weapon durability</strong>.</li>\n<li><strong>Weapon reliability</strong>: no malfunctions and no overheating.</li>\n</ul>\n<h3>Grenades, items and money</h3>\n<ul>\n<li><strong>Infinite grenades</strong>: you get the same type back in the same slot, and it stays selected.</li>\n<li><strong>Infinite item usage</strong>: meds, food, drinks and stims.</li>\n<li><strong>Infinite key usage</strong>: keys, keycards and the Labs card.</li>\n<li><strong>Infinite money, including GP coins</strong>: traders, the flea market, repairs, insurance, healing, hideout upgrades and the scav case. In raid, paid exfils and BTR services give your money back.</li>\n</ul>\n<p>Infinite money is non-destructive: no money is ever added to or removed from your stash. Turn it off and you have exactly what you had before.</p>\n<h3>Player</h3>\n<ul>\n<li>God mode.</li>\n<li>Infinite energy and hydration.</li>\n<li>Infinite stamina.</li>\n<li>Infinite armor durability.</li>\n<li>Infinite carry weight.</li>\n<li>Infinite raid time.</li>\n</ul>\n<h3>Turrets</h3>\n<ul>\n<li><strong>Turret ammo</strong>: the belt refills when empty.</li>\n<li><strong>Turret magazine</strong>: rounds are never used.</li>\n</ul>\n<h3>Hideout</h3>\n<ul>\n<li>Infinite generator fuel, water filters and air filters.</li>\n</ul>\n<h2>Install</h2>\n<ol>\n<li>Download the zip.</li>\n<li>Extract it into your SPT folder, the one that contains <code>EscapeFromTarkov.exe</code>.</li>\n<li>Start the SPT server. The log shows <code>[Infinite Everything] server part 2.5.0 loaded</code>.</li>\n<li>Start the game, press <strong>F12</strong> and open <strong>trappuss-InfiniteEverything</strong>.</li>\n</ol>\n<p>The zip adds two folders: <code>BepInEx\\plugins\\InfiniteEverything\\</code> and <code>SPT_Runtime\\user\\mods\\InfiniteEverything\\</code>.</p>\n<p>If you used the old <em>InfiniteAmmo</em> plugin, delete its folder first. The two are marked incompatible.</p>\n<h2>Usage</h2>\n<ul>\n<li>Every option is off by default except Infinite ammo and Infinite Magazine Options (Hold-R Scroll Menu).</li>\n<li>Turning an option, or the whole mod, off undoes it right away.</li>\n<li>Infinite money and the hideout option need the server part. Without it, those two options do nothing.</li>\n</ul>\n",
    "thumbnail": "https://files.sp-mod.com/mods/9xK0JNrcG600chLbjtNmMVEkfJkWq9oPsMKSW8q3.png",
    "forge_url": "https://sp-mod.com/mod/3108/infinite-everything",
-   "downloads": 1216,
-   "favourites": 12,
+   "downloads": 1364,
+   "favourites": 13,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -212437,7 +212553,7 @@
    ],
    "source_links": [
     {
-     "url": "https://github.com/trappuss/SPTMOD-Infinite-Everything",
+     "url": "https://github.com/trappuss/SPT-Mods-Release/tree/InfiniteEverything-v2.5.2",
      "label": ""
     }
    ],
@@ -212448,8 +212564,8 @@
      "description": "<h2>Infinite Everything 2.5.2</h2>\n<p>For SPT 4.1.x (not 4.0.x). Extract the zip into your SPT folder (the one with <code>EscapeFromTarkov.exe</code>), start the server, then in game press F12 &gt; <strong>trappuss-InfiniteEverything</strong>.</p>\n<p>A fix release. Everyone who uses Infinite raid time should update.</p>\n<h3>Fixed</h3>\n<ul>\n<li>Infinite raid time did not work with Fika installed: the raid ended the moment the timer reached zero.</li>\n<li>Without Fika, you could not extract once the raid time had run out: the extraction countdown never finished.</li>\n<li>Turning Infinite raid time off after the time is up now leaves 60 seconds to reach an exit instead of ending the raid at once.</li>\n<li>The hold-R menu showed no highlight on magazines with a light tile colour (seen on mod-added magazines).</li>\n</ul>\n<h3>In the zip</h3>\n<ul>\n<li><code>BepInEx\\plugins\\InfiniteEverything\\</code> - client plugin</li>\n<li><code>SPT_Runtime\\user\\mods\\InfiniteEverything\\</code> - server part (needed for infinite money and hideout fuel/filters)</li>\n</ul>\n",
      "spt_constraint": "~4.1",
      "fika": "unknown",
-     "downloads": 63,
-     "size": 55847,
+     "downloads": 206,
+     "size": 55849,
      "link": "https://sp-mod.com/mod/download/3108/infinite-everything/2.5.2",
      "published_at": "2026-10-10T23:27:00.000000Z",
      "dependencies": []
@@ -212460,7 +212576,7 @@
      "description": "<h2>Infinite Everything 2.5.1</h2>\n<p>For SPT 4.1.x (not 4.0.x). Extract the zip into your SPT folder (the one with <code>EscapeFromTarkov.exe</code>), start the server, then in game press F12 &gt; <strong>trappuss-InfiniteEverything</strong>.</p>\n<p>A fix release for 2.5.0. Everyone on 2.5.0 should update.</p>\n<h3>Fixed</h3>\n<ul>\n<li>In a raid, R on a pistol with no spare magazine refilled the magazine but played no reload. Double-tap was not affected.</li>\n<li>Looting experience was paid for magazines and grenades the mod creates (every double-tap reload, every replacement grenade).</li>\n<li>Infinite energy and hydration paid experience and Metabolism skill for doing nothing.</li>\n<li>A reload in the last second of a raid could leave a borrowed magazine in the gun instead of your own.</li>\n<li>Unloading a borrowed magazine with a full inventory threw it on the ground and could leave the hands stuck. It is now refused with a notice.</li>\n<li>Shotguns, revolvers and break-action guns loaded with rounds you have not examined got the wrong rounds or none in a raid.</li>\n<li>The hold-R menu no longer offers magazines the game refuses to change in a raid.</li>\n<li>A paid exfil refund could double your money stack in a rare case.</li>\n<li>Replacement grenades keep their found-in-raid status and their quick-slot key after a G-key throw.</li>\n<li>Turning god mode off after a BTR ride no longer leaves you invincible.</li>\n</ul>\n<h3>In the zip</h3>\n<ul>\n<li><code>BepInEx\\plugins\\InfiniteEverything\\</code> - client plugin</li>\n<li><code>SPT_Runtime\\user\\mods\\InfiniteEverything\\</code> - server part (needed for infinite money and hideout fuel/filters)</li>\n</ul>\n<h1>2.5.0 Bugs</h1>\n<p>I apologize I just found some pretty obnoxious bugs in the latest version! I gotta stop  using hideout to test lol.</p>\n<ul>\n<li>Pistols are unable to R-Reload with infinite magazine on</li>\n<li>Pistols award loot experience upon RR-Reload with infinite magazine on</li>\n</ul>\n<p>I\u2019m testing different side-effects of the settings in new raid environments and will update soon, I hate spamming updates and I know it\u2019s probably very annoying seeing an update almost every 12 hours since release. That\u2019s my fault for rushing it in-between projects; this was originally more for testing my other mods without having to get ammo but I wanted to release it since It seemed like a hole in the mod base right now.</p>\n<p>I\u2019ll do better &lt;3</p>\n",
      "spt_constraint": "~4.1",
      "fika": "unknown",
-     "downloads": 209,
+     "downloads": 210,
      "size": 53673,
      "link": "https://sp-mod.com/mod/download/3108/infinite-everything/2.5.1",
      "published_at": "2026-10-09T15:27:00.000000Z",
@@ -212472,7 +212588,7 @@
      "description": "<h2>Infinite Everything 2.5.0</h2>\n<p>For SPT 4.1.x (not 4.0.x). Extract the zip into your SPT folder (the one with <code>EscapeFromTarkov.exe</code>), start the server, then in game press F12 &gt; <strong>trappuss-InfiniteEverything</strong>.</p>\n<p><strong>New: any magazine / round type from the hold-R menu</strong></p>\n<ul>\n<li>With Infinite ammo on, the hold-R reload menu lists every magazine that fits your gun and every round type it takes, not only what you carry (mods\u2019 items included). Shotguns, bolt-actions with internal magazines, revolvers, break-actions and underbarrel launchers list round types.</li>\n<li>Magazines you do not own are borrowed, with no free inventory space needed: your own magazine is kept aside while the borrowed one is in the gun, comes back when the borrowed one leaves the gun, and is put back in the gun at raid end. Your inventory ends exactly as it started.</li>\n<li>Your pick sticks: R reloads the magazine / round type you picked again instead of switching back, also after holstering or switching guns.</li>\n<li>Can be turned off in F12: \u201cInfinite Magazine Options (Hold-R Scroll Menu)\u201d.</li>\n</ul>\n<p><strong>Changed</strong></p>\n<ul>\n<li>\u201cLauncher and flare ammo\u201d is gone as a separate option. Grenade launchers and flare guns now follow <strong>Infinite ammo</strong>.</li>\n<li>RShG-2: with <strong>Infinite magazine</strong> it gets a new rocket after every shot. With <strong>Infinite ammo</strong> alone, press R after a shot to put a new rocket in.</li>\n<li>Double-tap R plays the fast reload also when the gun only has the magazine that is in it.</li>\n<li>A reload with a completely full inventory no longer throws the old magazine on the ground: it is kept aside and comes back when there is room.</li>\n</ul>\n<p><strong>Fixes</strong></p>\n<ul>\n<li>RShG-2: it used to stay an empty tube after one shot.</li>\n<li>Revolvers: a reload with rounds you do not carry could loop forever without loading anything.</li>\n</ul>\n<p><strong>In the zip</strong></p>\n<ul>\n<li><code>BepInEx\\plugins\\InfiniteEverything\\</code> - client plugin</li>\n<li><code>SPT_Runtime\\user\\mods\\InfiniteEverything\\</code> - server part (needed for infinite money and hideout fuel/filters)</li>\n</ul>\n",
      "spt_constraint": "~4",
      "fika": "unknown",
-     "downloads": 143,
+     "downloads": 146,
      "size": 50861,
      "link": "https://sp-mod.com/mod/download/3108/infinite-everything/2.5.0",
      "published_at": "2026-10-09T03:18:00.000000Z",
@@ -212496,7 +212612,7 @@
      "description": "<p>What\u2019s in the zip:</p>\n<p>BepInEx\\plugins\\InfiniteEverything\\InfiniteEverything.dll: the client plugin.\nSPT_Runtime\\user\\mods\\InfiniteEverything\\InfiniteEverythingServer.dll: the server part. It is needed for infinite money and hideout fuel/filters.</p>\n",
      "spt_constraint": "4.1",
      "fika": "unknown",
-     "downloads": 215,
+     "downloads": 216,
      "size": 34786,
      "link": "https://sp-mod.com/mod/download/3108/infinite-everything/2.3.0",
      "published_at": "2026-10-04T22:58:00.000000Z",
@@ -212513,7 +212629,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-10-04T23:09:00.000000Z",
-   "updated_at": "2026-10-10T23:28:04.000000Z",
+   "updated_at": "2026-10-11T19:33:42.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -213354,11 +213470,11 @@
    "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Overview</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/harmonyzt/BrokenLimbsDontHeal/blob/main/Preview/alert_red.png?raw=true\" alt=\"\" />\n<strong>This is an API for modders, it doesn\u2019t add anything to the game by itself.</strong>\n<img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/harmonyzt/BrokenLimbsDontHeal/blob/main/Preview/alert_red.png?raw=true\" alt=\"\" /></p>\n<p>A library that takes care of all the <strong>plumbing</strong> required to add <strong>custom health effects</strong> to SPT mods, making it as easy as it possibly can be. For free.</p>\n<p>Navigate to <strong>API Docs</strong> to see how to work with it and make your own logic.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Setting Up</div>\n<div class=\"tab-content\"><p>You have to reference this API in your project by downloading the release and extracting .dll (or the project off GitHub) file whenever you like.</p>\n<p>Then reference it inside your .csproj file.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/harmonyzt/BrokenLimbsDontHeal/blob/main/Preview/icon_foundinraid_quest_small.png?raw=true\" alt=\"\" /> [<strong>Recommended</strong>] Example (With Project):</p>\n<pre><code>&lt;ItemGroup&gt;\n   &lt;ProjectReference Include=\"..\\EFTEffectManager\\EFTEffectManager.csproj\" /&gt;\n&lt;/ItemGroup&gt;\n</code></pre>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/harmonyzt/BrokenLimbsDontHeal/blob/main/Preview/icon_foundinraid_small.png?raw=true\" alt=\"\" /> Example (With .dll):</p>\n<pre><code>&lt;Reference Include=\"EFTEffectManager\"&gt;\n   &lt;HintPath&gt;..\\..\\dev\\ModFolder\\EFTEffectManager.dll&lt;/HintPath&gt;\n&lt;/Reference&gt;\n</code></pre>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/harmonyzt/BrokenLimbsDontHeal/blob/main/Preview/icon_foundinraid_small.png?raw=true\" alt=\"\" /> The mod and the project are well documented and will also provide you useful tooltips inside your IDE.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">API Docs and Examples</div>\n<div class=\"tab-content\"><h3><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/harmonyzt/BrokenLimbsDontHeal/blob/main/Preview/notification_icon_note.png?raw=true\" alt=\"\" /> Generic Calls</h3>\n<ul>\n<li><code>EffectsManager.Init()</code> - Installs all Harmony patches (idempotent). Should be called at the start before doing anything else inside your mod.</li>\n<li><code>EffectsManager.RegisterEffect&lt;T&gt;(EffectOptions options = null)</code> - Registers one effect class and its lifecycle in every EFT registry.<br />\nConstraint: <code>T : ActiveHealthController.Effect, new()</code>.<br />\nReturns an <code>EffectRegistration</code>.</li>\n<li><code>EffectsManager.RegisterEffect&lt;T&gt;(Assembly pluginAssembly, EffectOptions options = null)</code> - Same as above, but tells the API which assembly hosts your <code>IconFilePath</code> (pass <code>typeof(Plugin).Assembly</code>). This is the recommended to use if your mod is located in another folder inside Plugins dir.</li>\n<li><code>EffectsManager.RegisterEffectsFrom(Assembly, Func&lt;Type, EffectOptions&gt; optionsFactory = null)</code> - Registers every concrete effect type in an assembly (the scanned assembly is used as the icon host).\n<code>EffectsManager.MovementSpeedPenalties</code> - Registry of movement speed penalty providers (if there is any other mods providing movement speed penalties)</li>\n<li><code>EffectsManager.ErgonomicsPenalties</code> - Registry of ergonomics penalty providers (if there is any other mods providing ergonomics penalties).</li>\n<li><code>EffectsManager.IsLocalPlayer(Player)</code> - Helper. Does a bit more checks rather than just <code>IsYourPlayer</code> and backed by a <code>PlayerHealthController</code>.</li>\n<li><code>EffectsManager.IsLocalController(IHealthController)</code> - True for the local player\u2019s health controller.</li>\n<li><code>EffectsManager.RefreshPenalties(Player)</code> - Re-runs recalculations for a player that Effects Manager supports - <code>ErgonomicsPenalties</code> and <code>MovementSpeedPenalties</code> (done automatically, and is added just in case).</li>\n</ul>\n<h3><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/harmonyzt/BrokenLimbsDontHeal/blob/main/Preview/notification_icon_note.png?raw=true\" alt=\"\" /> Events You can Subscribe to</h3>\n<pre><code>\n// Works like strength update notification - useful in some cases.\nEffectsManager.LocalEffectUpdated     += (player, IHealthEffect) =&gt; { };\n\n// Fires when a chosen effect has been added, including delayed ones.\nEffectsManager.LocalEffectAdded       += (player, IHealthEffect) =&gt; { };\n\n// Fires when a chosen effect has started.\nEffectsManager.LocalEffectStarted     += (player, IHealthEffect) =&gt; { };\n\n// Native removal. ForceRemove can also produce residue first.\nEffectsManager.LocalEffectRemoved     += (player, IHealthEffect) =&gt; { };\n\n// Fires when a chosen effect has residued.\nEffectsManager.LocalEffectResidued    += (player, IHealthEffect) =&gt; { };\n\n// Fires when a chosen body part was destroyed.\n// Also includes optional damageType.\nEffectsManager.LocalBodyPartDestroyed += (player, bodyPart, damageType) =&gt; { };\n\n// This Event fires per cured effect (fracture, bleed, etc) after `MedHealTriggers` ran\n// A handler can already observe newly created effects.\n// Events run before the penalty refresh for registered effects.\n// Includes vanilla EFT effects!\nEffectsManager.MedCuredEffect         += (controller, effect) =&gt; { };\n\n// Stim cure only.\nEffectsManager.StimCuredEffect        += (ActiveHealthController, IHealthEffect) =&gt; { };\n\n// Accepted stim creates or refreshes a native effect.\nEffectsManager.StimDebuffedEffect     += (player, bodyPart, damageType) =&gt; { };\n\n// Accepted native activation/deactivation\nEffectsManager.StimBuffChanged        += (player, bodyPart, damageType) =&gt; { };\n\n</code></pre>\n<p>One-shot stim entries can be accepted with <code>buff.Active == false</code>. Observe StimBuffChanged for these.</p>\n<p>Set <code>EffectsManager.DiagnosticsEnabled = true</code> for API trace logs.</p>\n<p>For more, please see  <strong>\u201cCustom Logic Example\u201d</strong> down below.</p>\n<h3><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/harmonyzt/BrokenLimbsDontHeal/blob/main/Preview/notification_icon_note.png?raw=true\" alt=\"\" />EffectOptions</h3>\n<p>These options are used to register your effect.</p>\n<ul>\n<li><code>DisplayName</code> - Localized name shown in the health UI tooltip (raw type name otherwise).</li>\n<li><code>IconFilePath</code> - Path to the PNG icon - relative paths resolve next to the assembly hosting the icon (the plugin you passed to <code>RegisterEffect&lt;T&gt;(Assembly, ...)</code>, <code>IconAssembly</code>, or the effect type\u2019s own assembly). With a missing/broken image the effect stays hidden in the health UI and you\u2019ll get notified about it.</li>\n<li><code>IconAssembly</code> - Assembly that hosts <code>IconFilePath</code>. Usually <code>typeof(Plugin).Assembly</code>.</li>\n<li><code>IconSprite</code> - Existing sprite, takes priority over the file icon (<code>IconFilePath</code>).</li>\n<li><code>InvalidatedBy</code> - Removes the custom effect when a matching effect starts on the same part. Matches classes and marker interfaces. (For example <code>typeof(IFracture)</code> would invalidate whatever custom effect you\u2019ve had on a limb).</li>\n<li><code>MedHealTriggers</code> - Effect types whose cure creates this effect on the same body part. Fed by <strong>meds and stimulators</strong> alike (a stim that force-residues a fracture counts exactly like a medkit).</li>\n<li><code>StimHealTriggers</code> - Same idea, but only fires when the cure came from a stimulator - for mods that want to treat stims differently from medkits.</li>\n<li><code>StimDebuffTriggers</code> - Effect types that, when a stimulator <em>adds/refreshes</em> them (Fracture, HeavyBleeding, Pain, \u2026), create this effect on the same body part. Nothing fires when the stim\u2019s chance roll fails or immunity absorbs it.</li>\n<li><code>StimBuffTriggers</code> - <code>EStimulatorBuffType</code>s that, when a stimulator buffs with them (PainKiller, Stimulator, Adrenaline, \u2026), create this effect on <code>EBodyPart.Common</code>.</li>\n<li><code>EffectKind</code> - <code>0</code> = regen, <code>1</code> = health loss. Set it together with the three rates below and the toolkit both APPLIES them every frame (real <code>ChangeHealth</code> / <code>ChangeEnergy</code> / <code>ChangeHydration</code>, one random body part per tick for health - 1:1 EFT replica) and advertises them through the EFT\u2019s <code>SetHealthRatesPerSecond</code> plumbing so the health UI shows them.</li>\n<li><code>HealthRegenPerSecond</code> - Health per second. Positive = healing in REGEN mode; the sign flips in DEGRADATION mode (positive then means damage/sec). Body-wide (random part per tick), not limb specific.</li>\n<li><code>EnergyDrainPerSecond</code> / <code>HydrationDrainPerSecond</code>(0) - Drains per second: positive = draining in <strong>both</strong> modes, negative = a gain.</li>\n<li><code>Strength</code> - Effect strength passed to <code>AddEffect</code> (EFT\u2019s default <code>1</code>). Rate effects scale their pushed rates by it.</li>\n<li><code>DelayTime</code> / <code>WorkTime</code> / <code>ResidueTime</code> - Lifetime overrides passed to <code>AddEffect</code>. <code>null</code> means \u201cuse the effect class\u2019 <code>Default*</code> values\u201d.</li>\n<li><code>RemoveOnBodyPartDestroyed</code> - Cleanup when the limb is destroyed.</li>\n<li><code>PersistAcrossRaids</code> - Only works if the effect implements <code>IRestorable</code> (warning will be logged otherwise).</li>\n<li><code>OfflineEffectType</code> - <code>OfflineHealthController.Effect</code> counterpart - same class name and marker interface as the active effect. Required (together with <code>IRestorable</code>) for <code>PersistAcrossRaids = true</code>.</li>\n<li><code>NetworkEffectType</code> - <code>NetworkHealthController.Effect</code> counterpart - same class name and marker interface as the active effect. <strong>Required for Fika</strong>, see the \u201cFika\u201d section above.</li>\n</ul>\n<p>Every property in <strong>EffectOptions</strong> is optional because the default to either null, 0, or an empty list.</p>\n<h3><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/harmonyzt/BrokenLimbsDontHeal/blob/main/Preview/notification_icon_note.png?raw=true\" alt=\"\" /> Rate effects (regen / health loss)</h3>\n<p><strong>Q: How it works?</strong><br />\nA: Exactly like EFT\u2019s rate effects (Health Rate stims, Dehydration): API ticks <code>ChangeHealth</code> / <code>ChangeEnergy</code> / <code>ChangeHydration</code> calls every frame while the effect is <strong>Started</strong>, and also advertises the rates through the EFT\u2019s <code>SetHealthRatesPerSecond</code> so the effect shows in the health UI like a stim buff.</p>\n<ul>\n<li>Health lands on <strong>one random body part per tick</strong> and skips full / destroyed parts - the same pattern EFT\u2019s HealthRate buffs use. Rate effects are therefore body-wide, not limb specific.</li>\n<li>Energy / hydration are global.</li>\n<li>Everything is multiplied by the effect\u2019s Strength param.</li>\n<li>Sign rules: <code>HealthRegenPerSecond</code> positive = healing in REGEN (0) mode and damage/sec in DEGRADATION (1) mode, energy/hydration positive = drain in <strong>both</strong> modes (negative = a gain).</li>\n</ul>\n<h4><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/harmonyzt/BrokenLimbsDontHeal/blob/main/Preview/icon_requirement_fulfilled.png?raw=true\" alt=\"\" /> Example - Regeneration</h4>\n<p><strong>Effects/Regeneration.cs</strong> - The effect:</p>\n<pre><code>using EFT.HealthSystem;\n\npublic interface IRegeneration : IHealthEffect { }\n\npublic class Regeneration : ActiveHealthController.Effect, IRegeneration, IEffectTriggersUIPanel\n{\n    public override float DefaultDelayTime   =&gt; 0f;\n    public override float DefaultWorkTime    =&gt; 300f;   // 5 minutes\n    public override float DefaultResidueTime =&gt; 0f;\n}\n</code></pre>\n<p><strong>Plugin.cs</strong> - Registration (icon + rates in one place):</p>\n<pre><code>EffectRegistration regeneration = EffectsManager.RegisterEffect&lt;Regeneration&gt;(\n    typeof(Plugin).Assembly, new EffectOptions\n{\n    DisplayName             = \"Regeneration\",\n    IconFilePath            = \"Regeneration.png\",   // next to YOUR plugin dll or + folder\n    EffectKind              = 0,                     // regen\n    HealthRegenPerSecond    = 0.4f,                  // +0.4 hp/s\n    EnergyDrainPerSecond    = 0.15f,                 // the healing costs energy\n    HydrationDrainPerSecond = 0.1f,\n    PersistAcrossRaids      = false,                 // recovery belongs to this raid\n});\n\n// ...and grant it from your own logic\nregeneration.Add(myPlayer.HealthController, EBodyPart.Common);\n</code></pre>\n<h4><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/harmonyzt/BrokenLimbsDontHeal/blob/main/Preview/icon_requirement_fulfilled.png?raw=true\" alt=\"\" /> Example - Health Loss</h4>\n<p><strong>Effects/RadSickness.cs</strong>:</p>\n<pre><code>using EFT.HealthSystem;\n\npublic interface IRadSickness : IHealthEffect { }\n\npublic class RadSickness : ActiveHealthController.Effect, IRadSickness, IEffectTriggersUIPanel\n{\n    public override float DefaultWorkTime =&gt; 120f; // 2 minutes\n}\n</code></pre>\n<p><strong>Plugin.cs</strong>:</p>\n<pre><code>EffectsManager.RegisterEffect&lt;RadSickness&gt;(typeof(Plugin).Assembly, new EffectOptions\n{\n    DisplayName              = \"Radiation sickness\",\n    IconFilePath             = \"RadSickness.png\",\n    EffectKind               = 1,         // degradation - health sign flips so we lose health\n    HealthRegenPerSecond     = 0.3f,      // -&gt; 0.3 hp/s of DAMAGE to a random limb\n    EnergyDrainPerSecond     = 0.2f,      // drains stay drains in both modes\n    HydrationDrainPerSecond  = 0.2f,\n    PersistAcrossRaids       = false,\n});\n</code></pre>\n<h4><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/harmonyzt/BrokenLimbsDontHeal/blob/main/Preview/icon_requirement_fulfilled.png?raw=true\" alt=\"\" /> Example - Stim Buff Trigger + Rates altogether</h4>\n<p>Effects can be <strong>UI + rates + triggers at once</strong>.<br />\nLet\u2019s see how\u2019d we add, for example \u201cAdrenaline crash\u201d that the API would create when a stimulator buffs with <code>Adrenaline</code>, show our own icon, drains hydration while it lasts and disappears when painkiller effect starts. Should be easy?</p>\n<p><strong>Effects/AdrenalineCrash.cs</strong>:</p>\n<pre><code>using EFT.HealthSystem;\n\npublic interface IAdrenalineCrash : IHealthEffect { }\n\npublic class AdrenalineCrash : ActiveHealthController.Effect, IAdrenalineCrash, IEffectTriggersUIPanel\n{\n    // We don't need anything else here\n    public override float DefaultWorkTime =&gt; 60f;\n}\n</code></pre>\n<p><strong>Plugin.cs</strong>:</p>\n<pre><code>EffectsManager.RegisterEffect&lt;AdrenalineCrash&gt;(typeof(Plugin).Assembly, new EffectOptions\n{\n    DisplayName             = \"Adrenaline crash\",\n    IconFilePath            = \"AdrenalineCrash.png\",\n    StimBuffTriggers        = { EStimulatorBuffType.Adrenaline },  // stim buffed -&gt; create on Common\n    InvalidatedBy           = { typeof(IPainKiller) },             // painkiller starts -&gt; custom effect is gone\n    EffectKind              = 1,\n    HydrationDrainPerSecond = 0.5f,\n    PersistAcrossRaids      = false,\n});\n</code></pre>\n<h4><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/harmonyzt/BrokenLimbsDontHeal/blob/main/Preview/icon_requirement_fulfilled.png?raw=true\" alt=\"\" /> Example - Med Trigger + Regen altogether</h4>\n<p>Let\u2019s try making a slight heal when we heal a bleeding on one of our limbs:</p>\n<pre><code>EffectsManager.RegisterEffect&lt;BandageRegeneration&gt;(typeof(Plugin).Assembly, new EffectOptions\n{\n    DisplayName          = \"Bandaged\",\n    IconFilePath         = \"BandageRegeneration.png\",\n    MedHealTriggers      = { typeof(IBleeding) },   // a bleed was cured -&gt; create effect\n    EffectKind           = 0,\n    HealthRegenPerSecond = 0.2f,\n    Strength             = 1f,\n    PersistAcrossRaids   = false,\n});\n</code></pre>\n<p>The rates are applied while the effect is <strong>Started</strong> and stop by themselves when it\nleaves that state (your <code>DefaultWorkTime</code> / <code>WorkTime</code> decides how long) - so there\u2019s nothing to\nclean up on your side.</p>\n<h3><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/harmonyzt/BrokenLimbsDontHeal/blob/main/Preview/notification_icon_note.png?raw=true\" alt=\"\" /> Custom Logic Example</h3>\n<p><strong>MedHealTriggers</strong> and <strong>InvalidatedBy</strong> default to <strong>empty lists</strong>.</p>\n<p>An empty list simply means \u201cthe EffectsManager does nothing here\u201d.\nIf you want your own creation/removal rules, leave them out entirely and use the raw events - or skip events altogether and do with the returned registration handle yourself:</p>\n<pre><code>// Registration\nEffectRegistration reg = EffectsManager.RegisterEffect&lt;MyEffect&gt;(new EffectOptions\n{\n    DisplayName  = \"My effect\",\n    IconFilePath = \"MyEffect.png\",\n    // MedHealTriggers / InvalidatedBy intentionally omitted \n    RemoveOnBodyPartDestroyed = false,   // optional: handle this yourself too\n});\n\n// ...your own logic here\nEffectsManager.MedCuredEffect += (controller, effect) =&gt;\n{\n    // \"create it when a med stops a bleed\"\n    if (effect is IBleeding)\n        reg.Add(controller, effect.BodyPart);\n};\n\nEffectsManager.LocalEffectStarted += (player, effect) =&gt;\n{\n    // \"remove it when it happens again\"\n    if (effect is IHeavyBleeding)\n        reg.Remove(player.HealthController, effect.BodyPart);\n};\n\nEffectsManager.LocalBodyPartDestroyed += (player, bodyPart, damageType) =&gt;\n{\n    // \"remove it when the body part gets blacked out\"\n    reg.Remove(player.HealthController, bodyPart);\n};\n</code></pre>\n<p><strong>Things to know here:</strong></p>\n<ul>\n<li><code>reg.Add</code> / <code>reg.Remove</code> are idempotent, theyskip dead controllers and log their actions - prefer them over raw <code>AddEffect</code> / <code>ForceRemove</code> calls.</li>\n<li>Effects created or removed manually still raise the EFT\u2019s event chain, so <strong>registered effects get automatic penalty refresh exactly like declarative ones</strong> (the EffectsManager reacts to the effect\u2019s own start/residue and NOT to who caused it).</li>\n<li>Declarative and manual styles can be mixed freely per effect - for example if you wanna keep <code>MedHealTriggers</code> but write a custom removal logic.</li>\n</ul>\n<h3><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/harmonyzt/BrokenLimbsDontHeal/blob/main/Preview/notification_icon_note.png?raw=true\" alt=\"\" /> EffectRegistration (returned by RegisterEffect)</h3>\n<ul>\n<li><code>Find(controller, bodyPart)</code> - active instance or null</li>\n<li><code>Add(controller, bodyPart)</code> - creates it (idempotent)</li>\n<li><code>Remove(controller, bodyPart)</code> - force-removes it</li>\n<li><code>Options</code>, <code>EffectType</code> and <code>InterfaceType</code> expose the registration too.</li>\n</ul>\n<h3><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/harmonyzt/BrokenLimbsDontHeal/blob/main/Preview/notification_icon_note.png?raw=true\" alt=\"\" /> Penalty Providers</h3>\n<p><strong>Speed</strong> - <code>EffectsManager.MovementSpeedPenalties.Add(name, provider)</code></p>\n<pre><code>   // return speed fraction or null - no penalty\n   Func&lt;IHealthController, float?&gt;\n</code></pre>\n<p><strong>float?</strong> - <code>1f</code> = untouched, <code>0.3f</code> (for example) = one broken leg (the value is the fraction of normal max speed).</p>\n<p><strong>Ergonomics</strong> - <code>EffectsManager.ErgonomicsPenalties.Add(name, provider)</code></p>\n<pre><code>   // 0 = no penalty; (-0.1f = -10%)\n   Func&lt;IHealthController, float&gt;\n</code></pre>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/harmonyzt/BrokenLimbsDontHeal/blob/main/Preview/icon_foundinraid_small.png?raw=true\" alt=\"\" /> Values are clamped to <code>[0.01, 1]</code>, combined into one factor (strictest wins) and applied live by postfixing <code>MovementContext.ClampSpeed</code> (walk) and the <code>StateSprintSpeedLimit</code> getter (sprint) - only for the local raid player, so vanilla recalculation can never wipe them and bots are never touched.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/harmonyzt/BrokenLimbsDontHeal/blob/main/Preview/icon_foundinraid_small.png?raw=true\" alt=\"\" /> Values are summed inside <code>Player.ErgonomicsPenalty</code> getter - the sum is never written into EFTs own fields, so EFTs rebuilds cannot wipe it either.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/harmonyzt/BrokenLimbsDontHeal/blob/main/Preview/icon_foundinraid_small.png?raw=true\" alt=\"\" /> Both registries de-duplicate by name (re-Add replaces) and catch provider exceptions instead of letting them leak into game. So if you do anything wrong - don\u2019t worry!</p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">How to properly make icons</div>\n<div class=\"tab-content\"><p>If you\u2019re about to use this API to make a mod, please FOLLOW THESE RULES:</p>\n<ul>\n<li>Health icon dimensions should be 24x22. Otherwise, something can go wrong, and I won\u2019t be resposible for it</li>\n<li>Your image should have 1 pixel margin on the LEFT (1 pixel of transparency).</li>\n<li>Your image should have a 1 pixel border (to not break the EFT\u2019s vibe).</li>\n<li>Yes, you can reuse any image EFT already has, as long as it would not confuse players.</li>\n</ul>\n<p>Can\u2019t? You can pick an existing health UI icon and redraw anything on top of it, leaving a border untouched:\n<a href=\"\">Click Here</a></p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Working with Fika</div>\n<div class=\"tab-content\"><p>Fika replicates health effects between players through <code>NetworkHealthController</code>. On the receiving client the game rebuilds every incoming effect by its <strong>class name</strong> via <code>HealthHelper.EffectActivator&lt;NetworkHealthController&gt;.Create(...)</code>, which needs a registered <code>NetworkHealthController.Effect</code> class. Without it the lookup fails (the exception is caught and logged by the game) and the effect <strong>silently never appears on other players</strong> - your own client still works, which makes this very easy to miss.</p>\n<p>Every effect needs one extra class - same class name, same marker interface, different namespace, inheriting <code>NetworkHealthController.Effect</code>:</p>\n<pre><code>public interface IRegeneration : IHealthEffect { }\n\n// ActiveHealthController - this is what you register at all times\npublic class Regeneration : ActiveHealthController.Effect, IRegeneration, IEffectTriggersUIPanel\n{\n    public override float DefaultWorkTime =&gt; 300f;\n}\n\n// Fika - use SAME class name, SAME marker interface\nnamespace MyCoolMod.Network\n{\n    public class Regeneration : NetworkHealthController.Effect, IRegeneration\n    {\n    }\n}\n</code></pre>\n<p>Hand both to the API with one registration:</p>\n<pre><code>EffectsManager.RegisterEffect&lt;Regeneration&gt;(typeof(Plugin).Assembly, new EffectOptions\n{\n    DisplayName        = \"Regeneration\",\n    IconFilePath       = \"Regeneration.png\",\n    NetworkEffectType  = typeof(MyCoolMod.Network.Regeneration),\n});\n</code></pre>\n<h3><strong>Heads up!</strong></h3>\n<ul>\n<li>Every Fika player must run the same custom effect mods. Custom effect type codes are assigned in reg order, so a missing or different mod list shifts the codes and effects resolve to the wrong class (or not at all).</li>\n<li><code>PersistAcrossRaids = true</code> + <code>IRestorable</code> needs an <code>OfflineHealthController.Effect</code> counterpart via <code>OfflineEffectType</code> (same naming rules as above).</li>\n<li>The network class only mirrors state for the other players\u2019 clients - none of your local logic (events, penalties, rates) needs to be duplicated on it.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Limitations and Head-ups</div>\n<div class=\"tab-content\"><ul>\n<li>Supports Fika - if every effect provides its <code>NetworkEffectType</code> counterpart - see <strong>Working with Fika</strong> above.</li>\n<li><strong>Marker interface required.</strong> EFT UI identifies effects through their <code>IHealthEffect</code> interface - declare one per effect class (EffectsManager also warns if you don\u2019t).</li>\n<li><code>IRestorable</code> is only required for <code>PersistAcrossRaids = true</code> - local effects don\u2019t need it (a warning is logged otherwise). Keep names stable across mod versions or old versions of your mod might/will reference an unknown effect.</li>\n<li><strong>Icons are your responsibility</strong>. <code>DisplayName</code> is captured at plugin startup. If you don\u2019t know how to make icons, look into <strong>\u201cHow to properly make icons\u201d.</strong></li>\n<li><strong>Byte space</strong>: custom effect type codes are assigned by scanning <strong>down from 255</strong> for a code nobody uses yet (EFT or another mod), so registrations can never collide - up to 256 registrations. (for now)</li>\n<li><strong>Rate effects are body-wide</strong> - health lands on one random body part per tick (vanilla HealthRate stim pattern), so a regen/health loss effect cannot target a single limb Limb-specific rules (like healed-fracture penalties) belong in penalty providers or your own logic.</li>\n<li><strong>Provider/handler exceptions</strong> are caught and logged under the EffectManager so a broken provider cannot kill the game.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Example Setup</div>\n<div class=\"tab-content\"><h3>Broken Limbs Dont Heal</h3>\n<p>Everything that EFT related is declarative - we only keep the effect, its config, the penalty math and the re-break roll on bullet hits.</p>\n<p><strong>Effects/HealedFracture.cs</strong> - the effect itself:</p>\n<pre><code>public interface IHealedFracture : IHealthEffect { }\n\npublic class HealedFracture : ActiveHealthController.Effect, IHealedFracture, IEffectTriggersUIPanel\n{\n    // can also be custom plugin value, just like everything else\n    public override float DefaultWorkTime    =&gt; DurationSeconds;\n    public override float DefaultDelayTime   =&gt; 0f;\n    public override float DefaultResidueTime =&gt; 0f;\n}\n</code></pre>\n<p><strong>Effects/HealedFractureRules.cs</strong> - custom logic (shown only a part of the logic, not the entire file):</p>\n<pre><code>public static float? GetMovementSpeedFraction(IHealthController hc)\n{\n    if (!ModConfig.LegPenaltyEnabled.Value) return null;\n\n    int legs = CountHealed(hc, EBodyPart.LeftLeg) + CountHealed(hc, EBodyPart.RightLeg);\n    if (legs == 0) return null;\n\n    float percent = Mathf.Clamp(ModConfig.LegSpeedPenaltyPercent.Value, 0f, 95f);\n    return Mathf.Max(0.05f, 1f - percent / 100f * legs);   // 15% per healed leg\n}\n</code></pre>\n<p><strong>Plugin.cs</strong> - The core part where you register effect:</p>\n<pre><code>EffectsManager.RegisterEffect&lt;HealedFracture&gt;(typeof(Plugin).Assembly, new EffectOptions\n{\n    DisplayName     = \"Healed fracture\",\n    IconFilePath    = \"HealedFracture.png\",      // lives next to YOUR plugin dll\n    PersistAcrossRaids = false,                  // recovery belongs to this raid\n    MedHealTriggers = { typeof(IFracture) },     // med/stim cured a fracture -&gt; gain the effect\n    InvalidatedBy   = { typeof(IFracture) },     // bone re-breaks -&gt; lose it\n});\n\nEffectsManager.MovementSpeedPenalties.Add(\"HealedLegFracture\", HealedFractureRules.SpeedFraction);\nEffectsManager.ErgonomicsPenalties.Add(\"HealedArmFracture\",    HealedFractureRules.ErgonomicsPenalty);\n</code></pre>\n<p>Creation, invalidation, limb-destroy cleanup, icon, UI name and the penalty refresh all happen in API - the mod only keeps its own game rule (for example, the chance to re-break a healed bone when it gets shot).</p>\n<p>Easy as that. It can be as complicated as you\u2019d like, with custom events, logic and patches that trigger/set off effects.<br />\nYou can make it as simple as it can be, or go crazy. Do what you wish.</p>\n<p>And enjoy! &lt;3</p></div></div>\n<div id=\"tabset-1-panel-8\" class=\"tab-panel\"><div class=\"tab-title\">Installation</div>\n<div class=\"tab-content\"><p>Drag and drop the contents of 7z into your root game folder.</p></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/4O5FFJJelNL0WCIlJ99nugmL5FOmB7BPsscLE1hP.png",
    "forge_url": "https://sp-mod.com/mod/3123/eft-effects-manager",
-   "downloads": 80,
+   "downloads": 88,
    "favourites": 2,
    "featured": false,
-   "fika": false,
-   "fika_latest": "unknown",
+   "fika": true,
+   "fika_latest": "compatible",
    "category": {
     "id": 1,
     "title": "Tools",
@@ -213387,8 +213503,8 @@
      "version": "1.0.0",
      "description": "<p>Initial Release.</p>\n",
      "spt_constraint": "~4.1",
-     "fika": "unknown",
-     "downloads": 80,
+     "fika": "compatible",
+     "downloads": 88,
      "size": 22564,
      "link": "https://sp-mod.com/mod/download/3123/eft-effects-manager/1.0.0",
      "published_at": "2026-10-10T08:40:00.000000Z",
@@ -213403,7 +213519,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-10-10T07:54:00.000000Z",
-   "updated_at": "2026-10-11T12:02:33.000000Z",
+   "updated_at": "2026-10-11T16:56:44.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -214027,6 +214143,76 @@
    "all_dependencies": [],
    "published_at": "2026-10-09T18:19:00.000000Z",
    "updated_at": "2026-10-09T18:20:05.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 3134,
+   "hub_id": null,
+   "guid": "com.lennoxp90.keymaster",
+   "name": "Keymaster",
+   "slug": "keymaster",
+   "teaser": "Stop digging for keys. Keymaster case packs the right keys and cash for your map before every raid, and puts the spares away after.",
+   "description_html": "<p>I got tired of digging through a key tool before every raid, so I made the keys come to me.</p>\n<p>Keymaster adds two items. The <strong>KM Case</strong> rides in your secure container and is packed before each PMC raid with\nthe keys for the map you picked, plus the money you want to carry. When you get back, spare keys and excess money\ngo home on their own. The <strong>KM Vault</strong> sits in your stash and holds your whole key collection, sorted by map.</p>\n<p>Both open in a clean panel that shows only what they hold, so you can see at a glance what you are taking in. Keys\nare updated and learned each time the map is loaded, against a pre-seeded database, and it works with Fika.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-Keymaster/master/images/hero.png\" alt=\"KM Case and KM Vault\" /></p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Install</div>\n<div class=\"tab-content\"><p>Open the archive with 7-Zip and drag <strong>all</strong> of its contents into your SPT folder:</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/3N6gTe2.gif\" alt=\"mod install\" /></p>\n<p>That puts the server half in <code>SPT_Runtime/user/mods/LennoxP90-Keymaster</code> and the client half in\n<code>BepInEx/plugins/LennoxP90-Keymaster</code>. Restart the server, then launch the game.</p>\n<p><strong>Uninstalling</strong></p>\n<p>A profile that holds Keymaster items will not load once the server half is gone. Before removing the mod:</p>\n<ol>\n<li>Empty the KM Case and the KM Vault.</li>\n<li>Sell or discard both items.</li>\n<li>Delete both <code>LennoxP90-Keymaster</code> folders.</li>\n</ol></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Getting started</div>\n<div class=\"tab-content\"><p><strong>Requirements:</strong> SPT 4.1.3 or later.</p>\n<p><strong>Getting the items</strong></p>\n<ul>\n<li><strong>KM Case:</strong> Therapist sells it at loyalty level 1 for 2,000,000 roubles. Both can be changed on the server.</li>\n<li><strong>KM Vault:</strong> it arrives in your mail the first time you log in. Claim it into your stash.</li>\n<li>A profile can hold one of each. A second purchase or mail claim is refused, and neither item can be listed on\nthe flea.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">KM Vault</div>\n<div class=\"tab-content\"><ul>\n<li>Stash only: it cannot go into a backpack or rig.</li>\n<li>Put your keys and keycards in it. They are grouped under the map they belong to, access cards under their own\nmap, and keys with no known map under Other.</li>\n</ul>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-Keymaster/master/images/vault-window.png\" alt=\"Vault window\" /></p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">KM Case</div>\n<div class=\"tab-content\"><p>The case goes on your player I suggest your secure container. It has three sections:</p>\n<ul>\n<li><strong>Keys:</strong> the selected map\u2019s keys, plus any key you marked to bring on every map. Several copies of one key show\nas a single key with their uses added together.</li>\n<li><strong>Pickups:</strong> room for 10 other kinds of key, for what you find in raid.</li>\n<li><strong>Money:</strong> one cell each for roubles, dollars, euros and GP coins.</li>\n</ul>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-Keymaster/master/images/case-window.png\" alt=\"Case window\" /></p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Raid flow</div>\n<div class=\"tab-content\"><p><strong>Before the raid</strong></p>\n<ol>\n<li>Have the KM Case on your PMC.</li>\n<li>Pick a map and start a PMC raid. As it loads, the case is filled with that map\u2019s keys, from the vault first and\nthen from anywhere else in the stash, and topped up to your money targets. Keys from the last map that this one\ndoes not need go back into the KM Vault.</li>\n<li>When you own several copies of a key, the F12 setting <strong>Key copy</strong> picks which one goes in: the freshest (most\nuses left, the default) or the most worn.</li>\n</ol>\n<p><strong>Access cards:</strong> on a map that needs one (Labs), the card moves from your vault or stash into the case when you\npress Ready, so the game\u2019s own check passes. No need to remember it if you have any available in your stash.</p>\n<p><strong>After the raid:</strong> back at the menu, keys the case does not need go to the KM Vault, and money over your targets goes to the stash.</p>\n<p><strong>Right-click menu</strong></p>\n<ul>\n<li><strong>Set target</strong> on a money stack in the case, or a right click on an empty money cell: a slider for how much of\nthat currency to carry. 0 carries none.</li>\n<li><strong>Dump excess</strong> on the equipped case: sends spare keys and money home without playing a raid.</li>\n<li><strong>Bring on every map</strong> on a key: loads it for every raid. <strong>Stop bringing</strong> undoes it.</li>\n</ul>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-Keymaster/master/images/context-menu.png\" alt=\"Context menu\" /></p></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Money</div>\n<div class=\"tab-content\"><ul>\n<li>Ctrl+click a money stack, or drag it onto the case, to move it in.</li>\n<li>The game limits what you can take into a raid: 500,000 roubles, 8,000 dollars, 8,000 euros, 10 GP coins. Money\ncarried anywhere else in your gear counts toward that, so only what still fits moves in.</li>\n<li>Targets are capped the same way, and the pre-raid top-up never takes you past the limit.</li>\n</ul>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-Keymaster/master/images/set-target.png\" alt=\"Set target\" /></p></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Settings</div>\n<div class=\"tab-content\"><p>In SPT SIC, open the Keymaster card under MOD PAGES.</p>\n<ul>\n<li><strong>Settings:</strong> the Therapist price and loyalty level, whether the vault is mailed on first login, and whether it is\nmailed again if lost.</li>\n<li><strong>Vault holders:</strong> every profile, with its level, whether it holds a vault, and whether one is waiting in its mail.</li>\n<li><strong>Resend:</strong> mails a new vault to a profile that has none.</li>\n</ul>\n<p>Client settings are in F12: Key copy and verbose logging.</p></div></div>\n<div id=\"tabset-1-panel-8\" class=\"tab-panel\"><div class=\"tab-title\">Fika and compatibility</div>\n<div class=\"tab-content\"><ul>\n<li>Every player needs the client half.</li>\n<li>Headless safe.</li>\n<li>Map variants and backports: each learns its own key list, and uses the base map\u2019s list until it has one.</li>\n<li>Keys stored in slot-based keychains (one slot per key) are left where you put them; grid key tools and docs cases\nin the stash are searched.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-9\" class=\"tab-panel\"><div class=\"tab-title\">FAQ and known limits</div>\n<div class=\"tab-content\"><p><strong>A map loaded no keys.</strong> The first raid on a map learns its keys; from the next raid on they load. I have pre-seeded the list of keys as of <strong>October 10 2026</strong>.</p>\n<p><strong>A key was skipped.</strong> You do not own a copy of it. The client log line for the raid reports the shortfall.</p>\n<p><strong>\u201cYou can only hold one KM Case/KM Vault.\u201d</strong> Working as intended: one of each per profile.</p>\n<p><strong>I lost my vault.</strong> If resend is on, a new one is mailed once the old mail would have expired (30 days). The\nserver admin can resend one at once from the web page.</p>\n<p><strong>Known limits</strong></p>\n<ul>\n<li>Merging a stack onto money already in the case from another window goes through the game\u2019s own merge, without\nthe cap.</li>\n<li>Other mods that rewrite container filters late in mod loading can undo the case\u2019s and vault\u2019s filters.</li>\n<li>Items given by a profile editor or another mod\u2019s give command bypass the one of each check.</li>\n</ul></div></div></div>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/ejPLA2XZsMt3bmpor0ZmBqHluWGlKKg4falanBsF.png",
+   "forge_url": "https://sp-mod.com/mod/3134/keymaster",
+   "downloads": 28,
+   "favourites": 0,
+   "featured": false,
+   "fika": true,
+   "fika_latest": "compatible",
+   "category": {
+    "id": 17,
+    "title": "Other",
+    "slug": "other"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 114897,
+     "name": "LennoxP90",
+     "avatar": "https://files.sp-mod.com/profile-photos/DD0k9T6ZT75SEEcEQJLZ46Tve4SqPsH1gtSgJvR0_128w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/LennoxP90/SPT-Keymaster",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 15901,
+     "version": "1.0.0",
+     "description": "<p>First release</p>\n",
+     "spt_constraint": "~4.1.3",
+     "fika": "compatible",
+     "downloads": 28,
+     "size": 6907913,
+     "link": "https://sp-mod.com/mod/download/3134/keymaster/1.0.0",
+     "published_at": "2026-10-11T18:54:00.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "1.0.0",
+   "spt_constraint": "~4.1.3",
+   "all_spt_constraints": [
+    "~4.1.3"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-10-11T17:47:00.000000Z",
+   "updated_at": "2026-10-11T18:58:03.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
