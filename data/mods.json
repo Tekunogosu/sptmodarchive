@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-13T06:53:29Z",
+ "generated_at": "2026-10-13T17:01:05Z",
  "source": "https://sp-mod.com",
  "filter": "all",
  "mod_count": 2062,
@@ -158721,11 +158721,11 @@
    "name": "Mag Retention Reload",
    "slug": "mag-retention-reload",
    "teaser": "No more feeding the floor with magazines! This mod makes every reload a proper mag-retention reload.",
-   "description_html": "<blockquote>\n<h6><strong>UI Fixes</strong> by <strong>Tyfon</strong> has a mag retention feature as well. This mod keeps it simple and adds no reload time penalty.</h6>\n</blockquote>\n<blockquote>\n<h6>\u26a0\ufe0f If you run both, this one takes over. Unticking <code>Enabled</code> hands the feature straight back to <strong>UI Fixes</strong> \u26a0\ufe0f</h6>\n</blockquote>\n<h2>\ud83d\udcdc Description</h2>\n<p><strong>Mag Retention Reload</strong> is a mod for <em>Single Player Tushonka</em> that adds proper magazine retention to weapon reloads by automatically stowing the old magazine back into the rig if possible instead of dropping it.</p>\n<hr />\n<h2>\u2728 Features</h2>\n<ul>\n<li>Swaps the old magazine into the slot the new magazine was taken from</li>\n<li>Prevents unnecessary magazine drops during normal reloads if the magazine fits in the rig</li>\n<li>Works with both the reload hotkey and the inventory context menu</li>\n<li>Notifies you when you lose a magazine during reload</li>\n<li>Optionally ties the feature to maxed-out weapon mastering</li>\n</ul>\n<hr />\n<h2>\ud83d\udcc1 Installation</h2>\n<ul>\n<li>Download the latest release</li>\n<li>Copy the <code>BepInEx</code> folder into your SPT folder</li>\n<li>Start the game</li>\n</ul>\n<hr />\n<h2>\u2699\ufe0f Configuration</h2>\n<table>\n<thead>\n<tr>\n<th>Setting</th>\n<th>Default</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>Enabled</code></td>\n<td><code>true</code></td>\n<td>Untick to stop retaining your magazines</td>\n</tr>\n<tr>\n<td><code>Require Max Weapon Mastering</code></td>\n<td><code>false</code></td>\n<td>Only retain magazines once the weapon\u2019s mastering is maxed-out</td>\n</tr>\n<tr>\n<td><code>Notify on Dropped Magazine</code></td>\n<td><code>true</code></td>\n<td>Display a notification when a magazine is dropped during a reload</td>\n</tr>\n</tbody>\n</table>\n<hr />\n<h2>\ud83e\udd1d Fika</h2>\n<p>When playing with <strong>Fika</strong>, every client in the raid, <strong>including the headless client</strong>, should run the same version of this mod, otherwise you will run into syncing issues.\nHosts can enforce this by adding the plugin GUID to <code>client.mods.required</code> in the Fika server config, so mismatched clients are rejected when joining instead of silently desyncing:</p>\n<pre><code>\"required\": [ \"de.tosox.magretentionreload\" ]\n</code></pre>\n<hr />\n<h2>\ud83d\udcf7 Preview</h2>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://gitlab.com/Tosox/SPT-MagRetentionReload/-/raw/master/readme-res/reload.gif\" alt=\"\" /></p>\n<hr />\n<h2>\ud83d\ude4f Acknowledgements</h2>\n<ul>\n<li>Thanks to <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Lacyway\" rel=\"noreferrer noopener\"><strong>Lacyway</strong></a> for putting up with all my questions</li>\n<li>Thanks to <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/tyfon7\" rel=\"noreferrer noopener\"><strong>Tyfon</strong></a> for the Fika sync code that inspired this one</li>\n</ul>\n<hr />\n<h2>\u2615 Support</h2>\n<p>This mod is free and always will be. If it made your raids a little better, a coffee is a nice way to say thanks.</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/tosox\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://ko-fi.com/img/githubbutton_sm.svg\" alt=\"ko-fi\" /></a></p>\n<hr />\n<h2>\ud83d\udcc4 License</h2>\n<p>Distributed under the MIT License. See <code>LICENSE</code> for more information.</p>\n",
+   "description_html": "<blockquote>\n<h6><strong>UI Fixes</strong> by <strong>Tyfon</strong> has a mag retention feature as well. This mod keeps it simple and adds no reload time penalty.</h6>\n</blockquote>\n<blockquote>\n<h6>\u26a0\ufe0f If you run both, this one takes over. Unticking <code>Enabled</code> hands the feature straight back to <strong>UI Fixes</strong> \u26a0\ufe0f</h6>\n</blockquote>\n<h2>\ud83d\udcdc Description</h2>\n<p><strong>Mag Retention Reload</strong> is a mod for <em>Single Player Tushonka</em> that adds proper magazine retention to weapon reloads by automatically stowing the old magazine back into the rig if possible instead of dropping it when the rig is full.</p>\n<hr />\n<h2>\u2728 Features</h2>\n<ul>\n<li>Swaps the old magazine into the slot the new magazine was taken from</li>\n<li>Prevents unnecessary magazine drops during normal reloads if the magazine fits in the rig</li>\n<li>Works with both the reload hotkey and the inventory context menu</li>\n<li>Notifies you when you lose a magazine during reload</li>\n<li>Optionally ties the feature to maxed-out weapon mastering</li>\n</ul>\n<hr />\n<h2>\ud83d\udcc1 Installation</h2>\n<ul>\n<li>Download the latest release</li>\n<li>Copy the <code>BepInEx</code> folder into your SPT folder</li>\n<li>Start the game</li>\n</ul>\n<hr />\n<h2>\u2699\ufe0f Configuration</h2>\n<table>\n<thead>\n<tr>\n<th>Setting</th>\n<th>Default</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>Enabled</code></td>\n<td><code>true</code></td>\n<td>Untick to stop retaining your magazines</td>\n</tr>\n<tr>\n<td><code>Require Max Weapon Mastering</code></td>\n<td><code>false</code></td>\n<td>Only retain magazines once the weapon\u2019s mastering is maxed-out</td>\n</tr>\n<tr>\n<td><code>Notify on Dropped Magazine</code></td>\n<td><code>true</code></td>\n<td>Display a notification when a magazine is dropped during a reload</td>\n</tr>\n</tbody>\n</table>\n<hr />\n<h2>\ud83e\udd1d Fika</h2>\n<p>When playing with <strong>Fika</strong>, every client in the raid, <strong>including the headless client</strong>, should run the same version of this mod, otherwise you will run into syncing issues.\nHosts can enforce this by adding the plugin GUID to <code>client.mods.required</code> in the Fika server config, so mismatched clients are rejected when joining instead of silently desyncing:</p>\n<pre><code>\"required\": [ \"de.tosox.magretentionreload\" ]\n</code></pre>\n<hr />\n<h2>\ud83d\udcf7 Preview</h2>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://gitlab.com/Tosox/SPT-MagRetentionReload/-/raw/master/readme-res/reload.gif\" alt=\"\" /></p>\n<hr />\n<h2>\ud83d\ude4f Acknowledgements</h2>\n<ul>\n<li>Thanks to <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Lacyway\" rel=\"noreferrer noopener\"><strong>Lacyway</strong></a> for putting up with all my questions</li>\n<li>Thanks to <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/tyfon7\" rel=\"noreferrer noopener\"><strong>Tyfon</strong></a> for the Fika sync code that inspired this one</li>\n</ul>\n<hr />\n<h2>\u2615 Support</h2>\n<p>This mod is free and always will be. If it made your raids a little better, a coffee is a nice way to say thanks.</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/tosox\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://ko-fi.com/img/githubbutton_sm.svg\" alt=\"ko-fi\" /></a></p>\n<hr />\n<h2>\ud83d\udcc4 License</h2>\n<p>Distributed under the MIT License. See <code>LICENSE</code> for more information.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/A1QV32OOejU2SrtWijVASx6BLNViQ41s4VP47bu1.png",
    "forge_url": "https://sp-mod.com/mod/2589/mag-retention-reload",
-   "downloads": 6368,
-   "favourites": 47,
+   "downloads": 6554,
+   "favourites": 49,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -158758,7 +158758,7 @@
      "description": "<ul>\n<li>Automatically suppresses UI Fixes\u2019 magazine retention reload feature</li>\n<li>Added a notification when you lose a magazine during reload</li>\n<li>Added a setting to disable this notification</li>\n<li>Added a setting to only retain magazines if the weapon\u2019s mastering is maxed-out</li>\n<li>Added a setting to disable this mod\u2019s functionality entirely</li>\n<li>Fixed magazines dropping when they no longer fit the slot the new magazine came from</li>\n</ul>\n",
      "spt_constraint": "~4.1.0",
      "fika": "compatible",
-     "downloads": 1348,
+     "downloads": 1528,
      "size": 14481,
      "link": "https://sp-mod.com/mod/download/2589/mag-retention-reload/1.3.0",
      "published_at": "2026-09-15T18:31:00.000000Z",
@@ -158782,7 +158782,7 @@
      "description": "<ul>\n<li>Fixed compatibility with FIKA</li>\n<li>Fixed losing insurance on gear due to de-syncs</li>\n<li>Fixed mag-retention reloads when triggered via the context menu</li>\n</ul>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 1473,
+     "downloads": 1477,
      "size": 4963,
      "link": "https://sp-mod.com/mod/download/2589/mag-retention-reload/1.1.0",
      "published_at": "2026-07-31T15:12:00.000000Z",
@@ -158794,7 +158794,7 @@
      "description": "<ul>\n<li>Initial release</li>\n</ul>\n",
      "spt_constraint": "~4.0.0",
      "fika": "incompatible",
-     "downloads": 805,
+     "downloads": 807,
      "size": 4850,
      "link": "https://sp-mod.com/mod/download/2589/mag-retention-reload/1.0.0",
      "published_at": "2026-02-13T17:16:00.000000Z",
@@ -158810,7 +158810,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-10-07T16:52:00.000000Z",
-   "updated_at": "2026-10-10T15:11:07.000000Z",
+   "updated_at": "2026-10-13T09:08:47.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -171172,11 +171172,11 @@
    "description_html": "<h2>INFO</h2>\n<ul>\n<li>the voice is only available for U*** and alltheclothes dosnt allow you to use it on B***</li>\n</ul>\n<h2>features</h2>\n<ul>\n<li>\n<h3>651 voice lines! these are basically, to be honest, just the usec3 (josh) voice lines but female</h3>\n</li>\n</ul>\n<h3>voice by <strong>thelivingmythVA</strong></h3>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://www.castingcall.club/jessie-rogers\" rel=\"noreferrer noopener\">https://www.castingcall.club/jessie-rogers</a></p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://x.com/thelivingmyth1\" rel=\"noreferrer noopener\">https://x.com/thelivingmyth1</a></p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://www.youtube.com/@thelivingmythVA\" rel=\"noreferrer noopener\">https://www.youtube.com/@thelivingmythVA</a></p>\n<h2>requirements</h2>\n<ul>\n<li>WTT CommonLib (wont work without it)</li>\n</ul>\n<h2>mods recommended to be used with this mod</h2>\n<ul>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1519/wtt-waac-womens-advanced-assault-corps\" rel=\"noreferrer noopener\">https://sp-mod.com/mod/1519/wtt-waac-womens-advanced-assault-corps</a></li>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1994/dlc-vanilla-fem-clothing\" rel=\"noreferrer noopener\">https://sp-mod.com/mod/1994/dlc-vanilla-fem-clothing</a></li>\n</ul>\n<h1>voice lines preview</h1>\n<div class=\"youtube-lite\" data-video-id=\"87sJyGbUWHA\" data-embed-url=\"https://www.youtube-nocookie.com/embed/87sJyGbUWHA?autoplay=1\"><a href=\"https://www.youtube.com/watch?v=87sJyGbUWHA\" target=\"_blank\" rel=\"noreferrer noopener\">Play YouTube video</a></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/iK9OrNcfIPRBBaxSKj4ZeO6TdJkPMevhR7K1Lh9a.jpg",
    "forge_url": "https://sp-mod.com/mod/2710/female-pmc-voice-u",
-   "downloads": 6815,
+   "downloads": 6935,
    "favourites": 43,
    "featured": false,
    "fika": true,
-   "fika_latest": "unknown",
+   "fika_latest": "compatible",
    "category": {
     "id": 12,
     "title": "Audio",
@@ -171201,12 +171201,32 @@
    ],
    "versions": [
     {
+     "id": 15927,
+     "version": "1.0.5",
+     "description": "<p>Fixed</p>\n<ul>\n<li>Female appearance completion never ran. The server logged \u201cNeither W.A.A.C. nor DLC.FemaleClothes found\u201d even with both installed. It now detects them properly,</li>\n<li>Bots no longer get a male head on a female body. Appearance completion now requires W.A.A.C. (the only source of female heads). DLC.FemaleClothes is optional and adds extra random USEC outfits.</li>\n<li>A very low bot voice chance could round down to 0 so a bot with the voice would never spawn</li>\n<li>The config is now found even if the mod folder is renamed.</li>\n</ul>\n<p>Improved</p>\n<ul>\n<li>code clean up</li>\n<li>Better error logging on the server side.</li>\n</ul>\n",
+     "spt_constraint": "4.1.6",
+     "fika": "compatible",
+     "downloads": 20,
+     "size": 66360741,
+     "link": "https://sp-mod.com/mod/download/2710/female-pmc-voice-u/1.0.5",
+     "published_at": "2026-10-13T16:07:00.000000Z",
+     "dependencies": [
+      {
+       "id": 2310,
+       "name": "WTT - CommonLib",
+       "slug": "wtt-commonlib",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
+      }
+     ]
+    },
+    {
      "id": 15911,
      "version": "1.0.4",
      "description": "<p>Fixes</p>\n<ul>\n<li>\u201cNeed help\u201d callouts no longer play hunger lines. They now play\nwith the dehydrated/thirst lines, since the game has no hunger trigger.</li>\n</ul>\n<p>New</p>\n<ul>\n<li>Female USEC PMC appearance (thanks to wersal454): if a generated USEC PMC has\nany female part (head, voice or clothing), the rest of their look is completed\nto match, so no more mixed male/female bots.\n<ul>\n<li>Works with W.A.A.C. (heads, voices, outfit sets) and/or DLC.FemaleClothes\n(random USEC clothing). With both installed it\u2019s a 50/50 between a full\noutfit set and a random USEC mix.</li>\n<li>With neither mod installed this feature switches itself off. The voice mod\nworks as before.</li>\n</ul>\n</li>\n</ul>\n",
      "spt_constraint": "~4.1.6",
      "fika": "unknown",
-     "downloads": 142,
+     "downloads": 240,
      "size": 66360266,
      "link": "https://sp-mod.com/mod/download/2710/female-pmc-voice-u/1.0.4",
      "published_at": "2026-10-12T11:31:00.000000Z",
@@ -171246,7 +171266,7 @@
      "description": "<p>-adjusted all voice lines</p>\n<p>-hopefully fixed broken bot voice voice lines</p>\n<p>-fixed death sounds for player not always playing correctly</p>\n<h2>\u26a0\ufe0f Known issue: bots are still a bit of a mess they dont play hurt badly sound correctly i will fix another time or in SPT 4.1 maybe</h2>\n",
      "spt_constraint": "4.0.13",
      "fika": "compatible",
-     "downloads": 3122,
+     "downloads": 3124,
      "size": 66350378,
      "link": "https://sp-mod.com/mod/download/2710/female-pmc-voice-u/1.0.2",
      "published_at": "2026-06-11T17:02:00.000000Z",
@@ -171261,10 +171281,11 @@
      ]
     }
    ],
-   "latest_version": "1.0.4",
-   "spt_constraint": "~4.1.6",
+   "latest_version": "1.0.5",
+   "spt_constraint": "4.1.6",
    "all_spt_constraints": [
     "4.0.13",
+    "4.1.6",
     "~4.1",
     "~4.1.6"
    ],
@@ -171287,7 +171308,7 @@
     }
    ],
    "published_at": "2026-08-19T00:34:00.000000Z",
-   "updated_at": "2026-10-12T11:33:03.000000Z",
+   "updated_at": "2026-10-13T16:16:26.000000Z",
    "flags": {
     "contains_ads": true,
     "contains_ai_content": false,
@@ -206727,7 +206748,7 @@
    },
    "authors": [
     {
-     "id": 124572,
+     "id": "124572-arch",
      "name": "AnotherBudgetGamer",
      "avatar": "https://files.sp-mod.com/profile-photos/11Tm61Z18QQNnICDk4PI06XyUduoE4exk8PDmzEg_256w.webp"
     }
@@ -206834,7 +206855,7 @@
     "profile_binding_notice": true
    },
    "origin": "forge",
-   "delisted": false
+   "delisted": true
   },
   {
    "id": 3049,
@@ -214804,8 +214825,8 @@
    "description_html": "<h1>Backpack Gun Slot</h1>\n<p>Strap a gun to your backpack. Every backpack gets an <strong>ON PACK</strong> weapon slot that carries a\nweapon without eating grid space, and the bigger the pack, the bigger the gun it takes.</p>\n<h2>Features</h2>\n<ul>\n<li>An <strong>ON PACK</strong> slot on every backpack, right next to its grids in the inventory</li>\n<li><strong>Size-based tiers:</strong> a sling bag holds a pistol, a raid pack holds a rifle</li>\n<li><strong>The slot shows what fits.</strong> Pistol packs get a holster-sized slot, SMG packs a short one,\nshotgun and rifle packs a full-length one, each with a matching weapon outline</li>\n<li><strong>Hover an empty slot</strong> to see every weapon class it accepts</li>\n<li><strong>Never off screen:</strong> the slot sits beside the grids when there\u2019s room and moves under the\nbackpack picture on big packs</li>\n<li><strong>Fully configurable:</strong> your own tiers, per-backpack overrides, or <code>allowAnyGun</code> to let\nevery pack take everything</li>\n<li><strong>Fika ready:</strong> works with friends and headless,</li>\n</ul>\n<h2>Default tiers</h2>\n<table>\n<thead>\n<tr>\n<th>Backpack size</th>\n<th>Accepts</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>up to 12 cells</td>\n<td>Pistols</td>\n</tr>\n<tr>\n<td>13 to 18 cells</td>\n<td>Pistols, SMGs</td>\n</tr>\n<tr>\n<td>19 to 24 cells</td>\n<td>Pistols, SMGs, shotguns</td>\n</tr>\n<tr>\n<td>25 to 35 cells</td>\n<td>+ assault rifles, carbines, marksman rifles</td>\n</tr>\n<tr>\n<td>36+ cells</td>\n<td>+ sniper rifles</td>\n</tr>\n</tbody>\n</table>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Preview</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/NKml7y5.png\" alt=\"Preview\" />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/cwCvYAI.png\" alt=\"Preview\" />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/LQ1gOyR.png\" alt=\"Preview\" />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/cnCOttu.png\" alt=\"Preview\" />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/LOsIos5.png\" alt=\"Preview\" /></p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Installation</div>\n<div class=\"tab-content\"><ol>\n<li>Download the zip.</li>\n<li>Extract it into your SPT folder, the one containing <code>EscapeFromTarkov.exe</code>.</li>\n<li>Check these exist:\n<ul>\n<li><code>BepInEx\\plugins\\BackpackGunSlot\\BackpackGunSlot.dll</code></li>\n<li><code>SPT_Runtime\\user\\mods\\BackpackGunSlot\\BackpackGunSlot.dll</code></li>\n</ul>\n</li>\n<li>start the SPT server. Its console should print\n<code>[BackpackGunSlot] patched N backpack(s)</code>.\nwarning\n<strong>Uninstalling:</strong> take the guns out of every backpack slot first. A gun left in the slot ends\nup in a slot the game no longer knows about, and can be lost or cause profile errors.</li>\n</ol></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Configuration</div>\n<div class=\"tab-content\"><p><strong>Server:</strong> <code>SPT_Runtime\\user\\mods\\BackpackGunSlot\\config\\config.json</code>. Restart the server\nafter editing.</p>\n<table>\n<thead>\n<tr>\n<th>Setting</th>\n<th>What it does</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>tiers</code></td>\n<td>Backpacks go into the first tier whose <code>maxCells</code> is at least their total grid cells</td>\n</tr>\n<tr>\n<td><code>allowAnyGun</code></td>\n<td><code>true</code> lets every backpack take every weapon class</td>\n</tr>\n<tr>\n<td><code>overrides</code></td>\n<td>Per backpack template ID: a category list like <code>\"Pistol,SMG\"</code>, or <code>\"none\"</code> for no slot. Wins over tiers and <code>allowAnyGun</code></td>\n</tr>\n<tr>\n<td><code>slotName</code></td>\n<td>Internal slot name. Must match the client setting</td>\n</tr>\n</tbody>\n</table>\n<p>Categories: <code>Pistol</code>, <code>SMG</code>, <code>Shotgun</code>, <code>AssaultRifle</code>, <code>AssaultCarbine</code>, <code>MarksmanRifle</code>,\n<code>SniperRifle</code>, <code>MachineGun</code>, <code>GrenadeLauncher</code>, <code>SpecialWeapon</code>.</p>\n<pre><code>\"overrides\": {\n  \"5ab8ebf186f7742d8b372e80\": \"Pistol,SMG,Shotgun\",\n  \"56e335e4d2720b6c058b456d\": \"none\"\n}\n</code></pre>\n<p><strong>Client (F12):</strong> Enabled, Slot name, Slot caption (default <code>ON PACK</code>), Debug logging.</p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Death, Insurance &amp; Restore Mods</div>\n<div class=\"tab-content\"><ul>\n<li>A gun in the slot is part of the backpack. It is lost or kept together with the backpack and\nloses found-in-raid status like everything else in it.</li>\n<li><strong>Gear-restore mods</strong> (tested against Fair Equipment Restoration): a gun you brought in is\nrestored, a gun you found in raid is not. Dying can\u2019t smuggle loot out.</li>\n<li><strong>Insurance:</strong> SPT treats the slotted gun as an attachment of the backpack. An insured gun is\nlost if the backpack\u2019s own insurance roll fails, while guns in the grid roll on their own.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">FAQ</div>\n<div class=\"tab-content\"><p><strong>Can I put any gun in any backpack?</strong>\nYes, set <code>\"allowAnyGun\": true</code> in the server config.</p>\n<p><strong>Where are the logs?</strong>\nClient: <code>BepInEx\\LogOutput.log</code>. Server: the SPT server console, look for <code>[BackpackGunSlot]</code>.</p></div></div></div>\n<h2>Credits</h2>\n<ul>\n<li>The SMG and shotgun slot outlines were generated locally with FLUX.1 schnell (Apache 2.0) and\nconverted to the vanilla style. The pistol outline is the game\u2019s own holster icon.</li>\n</ul>\n",
    "thumbnail": "https://files.sp-mod.com/mods/pODZKOML94NjiHLsRWiwyh3vT4Fw90bctRUCKOeW.png",
    "forge_url": "https://sp-mod.com/mod/3141/backpackgunslot",
-   "downloads": 171,
-   "favourites": 3,
+   "downloads": 1043,
+   "favourites": 20,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -214833,19 +214854,31 @@
    ],
    "versions": [
     {
+     "id": 15926,
+     "version": "1.0.1",
+     "description": "<ul>\n<li>Fixed Mystery Ranch Terraframe backpacks (both versions) failing to open and breaking the inventory screen.</li>\n</ul>\n",
+     "spt_constraint": "4.1.6",
+     "fika": "compatible",
+     "downloads": 245,
+     "size": 50587,
+     "link": "https://sp-mod.com/mod/download/3141/backpackgunslot/1.0.1",
+     "published_at": "2026-10-13T13:42:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 15917,
      "version": "1.0.0",
      "description": "<p>release!</p>\n",
      "spt_constraint": "4.1.6",
      "fika": "compatible",
-     "downloads": 171,
+     "downloads": 798,
      "size": 50261,
      "link": "https://sp-mod.com/mod/download/3141/backpackgunslot/1.0.0",
      "published_at": "2026-10-12T18:30:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.0.0",
+   "latest_version": "1.0.1",
    "spt_constraint": "4.1.6",
    "all_spt_constraints": [
     "4.1.6"
@@ -214853,7 +214886,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-10-12T18:36:00.000000Z",
-   "updated_at": "2026-10-12T21:13:13.000000Z",
+   "updated_at": "2026-10-13T13:44:04.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
