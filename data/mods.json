@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-10-14T17:20:50Z",
+ "generated_at": "2026-10-14T21:48:06Z",
  "source": "https://sp-mod.com",
  "filter": "all",
- "mod_count": 2067,
+ "mod_count": 2068,
  "categories": [
   {
    "id": 12,
@@ -187482,8 +187482,8 @@
    "description_html": "<p><strong>CraftQueue</strong> moves hideout crafting into one local web page. Queue as many crafts as you like - every station works through its own list, all stations in parallel.</p>\n<h2>What it does</h2>\n<ul>\n<li><strong>Chains your crafts:</strong> finished items are collected and the next craft starts by itself - also <strong>during raids</strong>.</li>\n<li><strong>Scav case on repeat:</strong> queue the rouble, moonshine or intelligence folder case; it keeps running and the loot is collected.</li>\n<li><strong>Elite Crafting:</strong> every station runs two of your queued crafts at once.</li>\n<li><strong>Live overview</strong> of all running crafts with their remaining time - also while EFT loads, sits in a menu or is closed.</li>\n<li><strong>Recipe browser</strong> with search, showing only what your profile has unlocked, with material availability, cost, profit and profit per hour.</li>\n<li><strong>In-game overlay:</strong> with the free <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/maschine34675/WebOverlay\" rel=\"noreferrer noopener\">Anvil-WebOverlay</a> library, F9 or the CRAFT QUEUE button opens the page as a window over the game. Without it, the page opens in your browser.</li>\n<li><strong>Safe:</strong> entries are checked against your real stash and wait if materials are missing. Aborting a craft returns its tools (vanilla destroys them). The queue survives server restarts, and anything unclear becomes a visible <em>Needs Review</em> entry instead of a silent duplicate or loss.</li>\n</ul>\n<h2>Usage</h2>\n<ol>\n<li>Extract the archive into your SPT folder (<code>BepInEx</code> + <code>SPT_Runtime</code>). Optional, for the overlay: <strong>Anvil-WebOverlay</strong>.</li>\n<li>Start the server and EFT, then press <strong>F9</strong> or click <strong>CRAFT QUEUE</strong> in the menu bar. Left Shift+F9 forces the browser; all keys are configurable.</li>\n</ol>\n<p>The page runs on the server machine and is reachable over LAN. Every player gets a personal link that only sees their own profile; the host link in the server console manages all profiles.</p>\n<h2>Notes</h2>\n<ul>\n<li>Requires SPT 4.1.x. (For SPT 4.0.13, use version 1.2.2.)</li>\n<li><strong>Fika-compatible</strong> (tested): each player manages only their own queue, and the plugin is inert on a headless host.</li>\n<li>Compatible with <strong>Hideout In Progress</strong>. <strong>Not compatible with Hideout Automation\u2019s production stacking</strong> - a second craft queue fighting over the same starts. Run only one of the two.</li>\n<li>Outside raids the queue only advances while EFT is running: crafts go through the game\u2019s own transactions, which is what keeps stash and profile in sync. Crafts that finish with EFT closed are collected at the next start.</li>\n<li>The water collector, bitcoin farm and cultist circle are not queued. A running scav case cannot be aborted, as in the game.</li>\n</ul>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/maschine34675/CraftQueue/refs/heads/main/example.png\" alt=\"example\" /></p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/yuY0hMGUBDU2UCPQWXX1yKFLfmcVyUDpCMW4udgJ.png",
    "forge_url": "https://sp-mod.com/mod/2860/craftqueue",
-   "downloads": 4634,
-   "favourites": 34,
+   "downloads": 5087,
+   "favourites": 38,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -187511,12 +187511,32 @@
    ],
    "versions": [
     {
+     "id": 15939,
+     "version": "2.4.1",
+     "description": "<ul>\n<li>Fixed: the Scav Case runs and the booze generator\u2019s moonshine were offered before you had built that station, and a queued scav case run even started there. The recipe browser now only lists stations you have built.</li>\n</ul>\n",
+     "spt_constraint": "~4.1.0",
+     "fika": "compatible",
+     "downloads": 41,
+     "size": 146552,
+     "link": "https://sp-mod.com/mod/download/2860/craftqueue/2.4.1",
+     "published_at": "2026-10-14T18:57:00.000000Z",
+     "dependencies": [
+      {
+       "id": 2879,
+       "name": "WebOverlay",
+       "slug": "weboverlay",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2879/weboverlay"
+      }
+     ]
+    },
+    {
      "id": 15805,
      "version": "2.4.0",
      "description": "<ul>\n<li>Added: queueing of the scav case</li>\n</ul>\n",
      "spt_constraint": "~4.1.0",
      "fika": "compatible",
-     "downloads": 22,
+     "downloads": 425,
      "size": 145363,
      "link": "https://sp-mod.com/mod/download/2860/craftqueue/2.4.0",
      "published_at": "2026-10-06T15:04:00.000000Z",
@@ -187536,7 +187556,7 @@
      "description": "<ul>\n<li>Added: support for the second production slot per station that elite Crafting grants.</li>\n<li>Fixed: a station no longer start crafts during a raid while the generator is off.</li>\n<li>Fixed: a station without power no longer shows its queued craft as \u201cstill occupied\u201d.</li>\n</ul>\n",
      "spt_constraint": "~4.1.0",
      "fika": "compatible",
-     "downloads": 333,
+     "downloads": 334,
      "size": 140825,
      "link": "https://sp-mod.com/mod/download/2860/craftqueue/2.3.0",
      "published_at": "2026-09-30T09:44:00.000000Z",
@@ -187556,7 +187576,7 @@
      "description": "<ul>\n<li>Fixed: CraftQueue now notices when another mod changes a hideout recipe while the server is running. <strong>HideoutCraftModifier</strong> does exactly that, and until now its edits were invisible here.</li>\n</ul>\n",
      "spt_constraint": "~4.1.0",
      "fika": "compatible",
-     "downloads": 679,
+     "downloads": 683,
      "size": 134487,
      "link": "https://sp-mod.com/mod/download/2860/craftqueue/2.2.1",
      "published_at": "2026-09-10T17:54:00.000000Z",
@@ -187696,7 +187716,7 @@
      "description": "<ul>\n<li>Fixed: you can now queue several crafts that need the same tool (a Leatherman, for example) even while the first one is already running. The tool comes back when that craft finishes, so the queue no longer treats it as missing.</li>\n<li>Fixed a rare conflict with mods built on WTT-ClientCommonLib: if Anvil-WebOverlay was not installed, item stack sizes could display as 1 (magazines showing a single round). Purely visual, nothing was lost.</li>\n</ul>\n",
      "spt_constraint": "4.0.13",
      "fika": "compatible",
-     "downloads": 542,
+     "downloads": 545,
      "size": 124817,
      "link": "https://sp-mod.com/mod/download/2860/craftqueue/1.2.2",
      "published_at": "2026-08-06T15:42:00.000000Z",
@@ -187716,7 +187736,7 @@
      "description": "<ul>\n<li>Fixed: Eliminated the CPU spikes on heavily modded installs: the server no longer freezes for a moment whenever a craft starts or finishes. The web interface feels noticeably snappier, especially with a big stash.</li>\n<li>Added: The port can be changed now (\u201cwebPort\u201d in config/config.json) if you prefer something else than 38473.</li>\n</ul>\n",
      "spt_constraint": "4.0.13",
      "fika": "compatible",
-     "downloads": 163,
+     "downloads": 164,
      "size": 124708,
      "link": "https://sp-mod.com/mod/download/2860/craftqueue/1.2.1",
      "published_at": "2026-08-05T18:56:00.000000Z",
@@ -187775,7 +187795,7 @@
      "dependencies": []
     }
    ],
-   "latest_version": "2.4.0",
+   "latest_version": "2.4.1",
    "spt_constraint": "~4.1.0",
    "all_spt_constraints": [
     "4.0.13",
@@ -187800,7 +187820,7 @@
     }
    ],
    "published_at": "2026-07-31T14:48:00.000000Z",
-   "updated_at": "2026-10-06T15:13:21.000000Z",
+   "updated_at": "2026-10-14T18:59:04.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -215603,6 +215623,76 @@
    "all_dependencies": [],
    "published_at": "2026-10-14T10:00:00.000000Z",
    "updated_at": "2026-10-14T10:54:25.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 3149,
+   "hub_id": null,
+   "guid": "com.deadlauncher.usablecrafting",
+   "name": "Usable Crafting",
+   "slug": "usable-crafting",
+   "teaser": "Because endless scrolling isn't hardcore",
+   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Overview</div>\n<div class=\"tab-content\"><blockquote>\n<p>Inspired by tarkin\u2019s video: <a target=\"_blank\" class=\"external-link\" href=\"https://youtu.be/vTVP24wTSFE\" rel=\"noreferrer noopener\">https://youtu.be/vTVP24wTSFE</a></p>\n</blockquote>\n<p>This mod replaces the default crafting interface with a grid-based layout. Recipes are displayed in a compact grid, while ingredients, production time, output, and the start button are shown in a single panel for the selected recipe.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/JjgbV1tC/workbench.jpg\" alt=\"\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/8gQJqYgM/crafting.gif\" alt=\"\" /></p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Configuration</div>\n<div class=\"tab-content\"><p>The number of grid <strong>Rows</strong> and <strong>Columns</strong> can be configured. The column count determines the grid width, while the row count sets the maximum number of visible rows before scrolling is enabled.</p>\n<p><strong>Items Batch Size</strong> determines how many grid items are created per frame. In the vanilla interface, items are created every frame, increasing the total loading time. A higher batch size speeds up loading but may cause stutters when opening the panel.</p>\n<p>Settings take effect the next time the panel is opened.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Compatibility</div>\n<div class=\"tab-content\"><p><strong>UI Fixes</strong> and <strong>Vertical Hideout</strong> have been tested with this mod and are recommended for a more comfortable experience.</p>\n<p>Other UI mods may be incompatible. Feel free to open an issue if you encounter any problems.</p></div></div></div>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/F3KPwjsG6MHkwlwhLMKuaAWBRqopFy2YqCyhi3dJ.png",
+   "forge_url": "https://sp-mod.com/mod/3149/usable-crafting",
+   "downloads": 51,
+   "favourites": 1,
+   "featured": false,
+   "fika": true,
+   "fika_latest": "compatible",
+   "category": {
+    "id": 6,
+    "title": "Hideout",
+    "slug": "hideout"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 90214,
+     "name": "DeadLauncher",
+     "avatar": "https://files.sp-mod.com/profile-photos/AIdgwKrFf9XlUNlJP6R2IDldQJ0kZraW61tj2PkM_256w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://gitlab.com/DeadLauncher/spt-usable-crafting",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 15940,
+     "version": "1.0.0",
+     "description": "<p>Initial release</p>\n",
+     "spt_constraint": "~4.1",
+     "fika": "compatible",
+     "downloads": 51,
+     "size": 13393,
+     "link": "https://sp-mod.com/mod/download/3149/usable-crafting/1.0.0",
+     "published_at": "2026-10-14T20:50:00.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "1.0.0",
+   "spt_constraint": "~4.1",
+   "all_spt_constraints": [
+    "~4.1"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-10-14T20:51:00.000000Z",
+   "updated_at": "2026-10-14T21:22:16.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
