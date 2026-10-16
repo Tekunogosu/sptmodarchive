@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-10-16T04:41:30Z",
+ "generated_at": "2026-10-16T11:35:17Z",
  "source": "https://sp-mod.com",
  "filter": "all",
- "mod_count": 2073,
+ "mod_count": 2074,
  "categories": [
   {
    "id": 12,
@@ -196333,9 +196333,9 @@
    "slug": "tcf-mod-manager",
    "teaser": "Sometimes you don't want to think about mods at all. Sometimes that's all you want to do... Manage them, share them, serve them to others.",
    "description_html": "<p><strong>TCF Mod Manager</strong> is a Windows desktop app for finding, installing and keeping track of your SPT mods, built directly against the sp-mod catalog you\u2019re reading this on. Browse the full mod list, filter it down to what actually works on your SPT version, install with dependencies resolved for you, turn mods on and off without deleting anything, and see at a glance what\u2019s out of date.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/TheCrimsonFckr/TCFModManager/refs/heads/main/assets/browse.png\" alt=\"Browse screen\" /></p>\n<p>It also keeps <strong>mod lists</strong> - save the set you run, switch between sets, send one to a friend, or follow the list a server publishes and know what you are missing before you launch. Plus a config editor, a start button for the server and the launcher, and an optional page that reads what each installed mod actually ships.</p>\n<h2>The full guide is on the wiki</h2>\n<p><strong><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/TheCrimsonFckr/TCFModManager/wiki\" rel=\"noreferrer noopener\">github.com/TheCrimsonFckr/TCFModManager/wiki</a></strong> - every page of the app, mod lists, configs, Monitor mode, update notifications, the Server Map, limitations and troubleshooting. This page only covers getting it installed.</p>\n<p>Inside the app, the <strong>Help</strong> page in the sidebar has short step-by-step answers for every page, in your language. Press <strong>?</strong> in the title bar or <strong>F1</strong> to open it at the page you\u2019re on, and <strong>Open the full guide</strong> takes you to the wiki.</p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Install</div>\n<div class=\"tab-content\"><p><strong>You need</strong></p>\n<ul>\n<li>Windows</li>\n<li>An SPT install</li>\n</ul>\n<p>The released build is entirely self-contained - nothing else to install.</p>\n<p><strong>Steps</strong></p>\n<ol>\n<li>Download <code>TCF-ModManager-&lt;version&gt;.zip</code> from this page.</li>\n<li>Extract it into your SPT folder as <code>&lt;SPT root&gt;\\TCFModManager\\</code> - a sibling of <code>BepInEx\\</code> and <code>user\\</code>.</li>\n<li>Run <code>TCFModManager.exe</code>.</li>\n<li>Open <strong>Options</strong>, point it at your SPT install folder - the top one, with <code>EscapeFromTarkov.exe</code> and <code>BepInEx\\</code> in it - and hit Save. The detected server version appears underneath - everything else keys off that.</li>\n</ol>\n<h4>warning</h4>\n<p>This is <strong>not</strong> a mod. Don\u2019t extract it into <code>BepInEx\\plugins</code> or <code>user\\mods</code>. It\u2019s a standalone application that manages that folder for you. Anywhere on disk works, really - it just needs to be told where SPT lives. Keep it out of <code>Program Files</code>, where Windows won\u2019t let it update itself.</p>\n<h4>If the SPT version doesn\u2019t detect</h4>\n<p>The version is read from the server executable - <code>SPT.Server.exe</code>, or the older <code>Aki.Server.exe</code> - at the install root or under <code>SPT\\</code> / <code>SPT_Runtime\\</code>. Point Options at the install root, the folder with <code>EscapeFromTarkov.exe</code> in it, not at the server folder or any other subfolder. If you do pick <code>SPT\\</code> or <code>SPT_Runtime\\</code> itself, the app moves the setting up to the folder above it.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Features</div>\n<div class=\"tab-content\"><p><strong>Finding and installing</strong></p>\n<ul>\n<li><strong>Browse</strong> the whole sp-mod catalog - search by name, teaser or <code>@author</code>, filter by SPT version, category, Fika compatibility, publish or update date and authors you follow, and pin the filters you use most under the search bar</li>\n<li><strong>Install</strong> with dependencies resolved and queued for you - up to three downloads at once, with retry and resume, and a bar along the bottom of the window while the queue runs</li>\n<li><strong>Addons</strong> listed under their mod, checked against the version you actually have</li>\n<li><strong>Author pages</strong> - every mod by an author, and follow them to hear about their new releases</li>\n<li>Mod descriptions and changelogs shown as sp-mod shows them - tabs, tables and GIFs</li>\n</ul>\n<p><strong>Keeping track</strong></p>\n<ul>\n<li><strong>Installed</strong> - everything in your SPT folder matched back to sp-mod, in Cards, Groups or List view, with what\u2019s out of date at a glance</li>\n<li>An <strong>Update</strong> button on every card, a right-click menu on every mod, and multi-select to update, enable, disable or remove several at once</li>\n<li><strong>Switch to any version</strong> - update, downgrade or redownload from the version history</li>\n<li><strong>Disable</strong> a mod without deleting anything - its files and settings come back exactly as they were</li>\n<li><strong>Dependencies and Conflicts</strong> - missing or wrong-version dependencies, mods installed twice, and clashing copies of the same file</li>\n<li><strong>SPT upgrade check</strong> - pick a newer SPT and see which of your mods are ready for it</li>\n<li><strong>Held-back updates</strong> - an update that would break another installed mod isn\u2019t offered, and the card says why</li>\n</ul>\n<p><strong>Mod lists</strong></p>\n<ul>\n<li>Save the set you run, switch between sets, and send one to a friend</li>\n<li>Import a public sp-mod Mod List from its link</li>\n<li><strong>Pin</strong> the mods you always want on, so no list you apply sets them aside</li>\n<li>Preview exactly what applying a list will do before anything moves</li>\n</ul>\n<p><strong>Playing</strong></p>\n<ul>\n<li><strong>Play</strong> starts the server, the launcher and a Fika headless, with a check before launch</li>\n<li><strong>Configs</strong> - edit client, server and BepInEx settings in the app, with your settings kept when a mod updates</li>\n<li><strong>Server Map</strong> (optional, with the Server Map mod on the server) - see what a server runs and get on the same list before you join</li>\n</ul>\n<p><strong>Safety</strong></p>\n<ul>\n<li>An install that is interrupted is never left half-done - the app shows it as partly installed so a reinstall puts it right</li>\n<li>Your SPT profiles are backed up before any install, update, remove, disable or list apply, and can be put back from Options</li>\n<li>Warned before installing a version sp-mod marks as not working with Fika, and before removing a mod that may have changed your profile</li>\n<li>SPT\u2019s own files are never overwritten or removed</li>\n</ul>\n<p><strong>And</strong></p>\n<ul>\n<li><strong>Monitor mode</strong> - let the app download each mod for you to install by hand, and still keep track of what you have</li>\n<li><strong>Update notifications</strong> - told when a mod you have gets a new release, even from the tray</li>\n<li><strong>Mod footprint</strong> (optional) - what each installed mod\u2019s files contain, read from disk without running anything</li>\n<li><strong>Help</strong> built in, with step-by-step answers for every page</li>\n<li>English, Deutsch, Fran\u00e7ais, Italiano and \u0420\u0443\u0441\u0441\u043a\u0438\u0439</li>\n<li><strong>Self Updating</strong> - Once it\u2019s set up, the app keeps itself up to date from this page. On launch it checks for a newer release and shows a banner and a badge on <strong>App update</strong> in the sidebar; you\u2019re asked to open this page before anything is downloaded. Your settings, install history and kept configs survive an update.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Planning</div>\n<div class=\"tab-content\"><p>Coming next, in no particular order - the <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/TheCrimsonFckr/TCFModManager/wiki/Planning\" rel=\"noreferrer noopener\">Planning page</a> on the wiki has the full list, including everything already done.</p>\n<ul>\n<li>Filter presets - save the filters you use under a name and switch between them on Browse and Installed - <em>Planned</em></li>\n<li>Mod tools - launch the programs a mod ships from the Play page - <em>Planned</em></li>\n<li>Server without its window - the server log live on the Play page, and the server closed along with the game - <em>Planned</em></li>\n<li>Direct launch - start the game from the Play page without SPT\u2019s launcher (experimental, off by default) - <em>Planned</em></li>\n<li>Diagnose logs - reads the server, BepInEx and game logs, names the mod at fault, and builds a report with private details taken out - <em>Planned</em></li>\n<li>Quick view - hover a mod for a preview - <em>Planned</em></li>\n<li>Page size options, including endless scrolling - <em>Planned</em></li>\n<li>Mod comments in the app - <em>Planned</em></li>\n</ul></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Issues</div>\n<div class=\"tab-content\"><h3>I will not respond to issues raised in the comments.</h3>\n<p>Use the <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2945/tcf-mod-manager#issues\" rel=\"noreferrer noopener\">Issues tab</a> - bugs, wording, translations, feature requests or questions. Attach <code>Data\\logs\\tcfmm-&lt;date&gt;.log</code>, ideally after adding the <code>verbose</code> marker file and reproducing the problem. The <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/TheCrimsonFckr/TCFModManager/wiki/Troubleshooting\" rel=\"noreferrer noopener\">wiki</a> covers the common ones first.</p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Disclaimer</div>\n<div class=\"tab-content\"><p>I use AI to help write this mod, everything is initially written by myself (I\u2019m a developer by profession), then passed though Claude (Fable model) for refinements and to highlight any additional changes the LLM thinks are worth making. Absolutely everything is reviewed and tested by myself before I commit anything. This is done because I simply do not have enough time in day to make full refinements and multiple passes myself. If you are not comfortable using an application that uses AI as a tool then please do not download it.</p></div></div></div>\n",
-   "thumbnail": "https://files.sp-mod.com/mods/0qEVyA4TX4PiPAZFcbH1Rt4jBzJCscp8CL6xOztx.png",
+   "thumbnail": "https://files.sp-mod.com/mods/AKNPExTWC8N5eZZ8UcXDIsNnjt1KrYI4XKuKNRsJ.png",
    "forge_url": "https://sp-mod.com/mod/2945/tcf-mod-manager",
-   "downloads": 7353,
+   "downloads": 7509,
    "favourites": 45,
    "featured": false,
    "fika": true,
@@ -196369,7 +196369,7 @@
      "description": "<p>Smoother cards, Diagnose logs, a server log and mod tools on Play, Play straight from the app (experimental), hover previews, endless pages, mod comments, filter presets, dependencies when applying a mod list and mods not for your SPT.</p>\n<div class=\"tabset\"><div id=\"tabset-12-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">New</div>\n<div class=\"tab-content\"><h4>Diagnose logs.</h4>\n<p>A new page reads the server\u2019s last run and the last game session\u2019s logs, says what went wrong in plain words and which mod it came from, and copies a report for help with your user name, ids and other players\u2019 addresses taken out.</p>\n<h4>Play page.</h4>\n<p>A live <strong>Server log</strong> under the server card. <strong>Close game</strong>, and a tick box to close the game whenever the server stops. <strong>Mod tools</strong> lists the programs your mods installed (SVM\u2019s Greed, give-ui\u2026) to open from here. In Options, <strong>Starting SPT</strong> can open the launcher once the server is up and run the server without its window. Closing the app - or quitting from the tray - while the server is still up asks whether to stop it, and opening the app on a server that is already running says so.</p>\n<h4>Play from the app (experimental, off by default).</h4>\n<p>Switch on <strong>Start the game from this app</strong> in Options and a Play card starts the server and the game with the profile you pick - no SPT launcher window - and makes, wipes and deletes profiles. SPT 4.1.3 and later only, and not made or supported by the SPT team.</p>\n<h4>Browse and Installed.</h4>\n<p>Rest the mouse on a card for a preview. Per page goes up to 64, or <strong>Endless</strong>. A mod\u2019s details have a <strong>Comments</strong> tab with its sp-mod comments.</p>\n<h4>Dependencies when applying a mod list.</h4>\n<p>Preview now asks sp-mod what the mods on a list need, and offers any the list doesn\u2019t name under <strong>Also needed</strong> - installed, enabled or kept on with the list. Untick any you don\u2019t want, or tick <strong>Also add the ticked ones to this list</strong> on your own lists.</p>\n<h4>Not for this SPT.</h4>\n<p>Installed now checks the version you have against your SPT: \u201cYour version is for SPT 4.0.x, not 4.1.6. 3.0.6 runs on it.\u201d A newer release that runs shows as an update; none (or only an older one) shows as \u201cnothing fits\u201d, never as an update. Where Fika runs, mods sp-mod marks as not working with Fika say so too. <strong>Show - Not for this SPT</strong> lists them, and Play notes them before launch. Plenty of mods work anyway: <strong>Dismiss</strong> on a card, or <strong>Dismiss all</strong>, hides the warning until the mod or SPT changes.</p>\n<h4>Filter presets.</h4>\n<p>Save how Browse or Installed is set up - filters, sort, search, pinned filters and (Installed) the view - under a name with the save button at the top of the Filters panel, and click it to switch back. Right-click a preset to save the current filters over it, rename it or delete it. Pin <strong>Filter presets</strong> to switch from the row under the search bar.</p></div></div>\n<div id=\"tabset-12-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Improvements</div>\n<div class=\"tab-content\"><h4>Smoother transitions.</h4>\n<p>On Browse and Installed, cards slide to their new place when the column count changes, the Filters panel opens or closes, or a filter or sort moves them. Cards and rows grow and shrink as they open and close, new results fade in, and Installed\u2019s Cards, Groups and List views fade in as you switch. While you drag the window\u2019s edge, cards snap into place as before. Animations run at your display\u2019s refresh rate and are switched off by Windows\u2019 <strong>Animation effects</strong> setting.</p>\n<h4>Version conflicts.</h4>\n<p>On Dependencies and Conflicts, when no version of a dependency suits every mod, <strong>Switch to</strong> offers the one that suits the most, after naming the mods it would stop loading. A red row has a <strong>Disable</strong> button for the mod that is asking. Importing an sp-mod list now says which mod wants which version when they disagree.</p>\n<h4>Search in Options.</h4>\n<p>A search box at the top of Options shows only the settings that match what you type, and opens a section when the match is inside it. Esc clears it.</p>\n<h4>Clearer hover in the light theme.</h4>\n<p>Buttons now visibly darken when you point at them in the light theme.</p></div></div>\n<div id=\"tabset-12-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Fixes</div>\n<div class=\"tab-content\"><h4>Mod lists and a running SPT.</h4>\n<p>Preview no longer asks you to close SPT when it\u2019s already closed. While the game or server is running, Apply is greyed out and a warning says which one to close; it comes back once they\u2019re closed.</p></div></div></div>\n<p>Drop-in over v1.21.2-beta. The Server Map mod does not need updating.</p>\n",
      "spt_constraint": ">=4.0.13",
      "fika": "compatible",
-     "downloads": 308,
+     "downloads": 464,
      "size": 69882706,
      "link": "https://sp-mod.com/mod/download/2945/tcf-mod-manager/1.22.0-beta",
      "published_at": "2026-10-12T21:40:48.000000Z",
@@ -196771,7 +196771,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-08-21T16:52:00.000000Z",
-   "updated_at": "2026-10-14T07:17:17.000000Z",
+   "updated_at": "2026-10-16T10:25:23.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -215912,10 +215912,10 @@
    "name": "HUD Breakout",
    "slug": "hud-breakout",
    "teaser": "A cleaner, customizable tactical HUD - rebuilt with performance, flexibility, and your own style in mind.",
-   "description_html": "<h1>HudBreakout</h1>\n<p>HudBreakout is a clean, lightweight HUD for SPT 4.1.6. Out of the box, the <code>Minimal</code> theme gives you a 7-part health silhouette, compact vitals, active effect icons, weapon and ammo details, movement stats, a crisp hit marker, and an unboxed kill feed.</p>\n<h2>Game Hud Settings For Best Experience</h2>\n<p>Make sure to turn off these settings in SETTINGS &gt; GAME</p>\n<ul>\n<li>Stamina and Stance -&gt; Always Hidden</li>\n<li>Health Condition -&gt; Always Hidden</li>\n<li>Quick Slot -&gt; Auto Hide</li>\n</ul>\n<h2>Customize a Theme</h2>\n<p>Themes live in <code>BepInEx/plugins/HudBreakout/Themes/&lt;ThemeName&gt;/</code>. To make your own, copy the <code>Minimal</code> folder, tweak <code>theme.xml</code>, and select your new folder name in the BepInEx config. PSD Files are provided in the PROJECT Repo to create your own icons/hud-elements etc.</p>\n<p>If you prefer text over icons, we\u2019ve included a <code>TextOnly</code> theme that disables the silhouette and panel icons while keeping the PNG hit marker. To change the theme, press <strong>F12</strong> to open the menu, then select your desired theme from the dropdown under <strong>HUDBreakout</strong> settings.</p>\n<p>Press <strong>F9</strong> in-raid to hot-reload your XML and PNG artwork instantly without restarting the game.</p>\n<p><strong>Check github page for more customization options</strong></p>\n<h2>AI Disclosure</h2>\n<h3>Code Contributions</h3>\n<p>The codebase was primarily rewritten and developed by me, using the original DeadlyHUD repository (from which AlternateHUD was initially derived) as the starting point. I used AI tools such as ChatGPT and Gemini selectively to assist with refactoring, debugging, improving code quality, and identifying or correcting potential issues, including XML configuration handling errors.</p>\n<p>The architecture, implementation decisions, project-specific logic, and major functionalities were implemented by me.</p>\n<h3>Asset and UI Contributions</h3>\n<p>The UI design, theme concepts, layouts, and overall visual direction are my own work. AI tools were used to generate some initial sprites, which I subsequently retouched and modified in Adobe Photoshop to match the visual style I intended. The final assets and UI elements were refined to fit the project\u2019s design.</p>\n<h2>Screenshot</h2>\n<p>Minimal Theme\n<img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Niharkanta1/SPT.HudBreakout/refs/heads/main/assets/Screenshot_HudBreakout_Minimal2.jpg\" alt=\"Minimal Theme\" /></p>\n<p>Colorful Theme\n<img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Niharkanta1/SPT.HudBreakout/refs/heads/main/assets/Screenshot_HudBreakout_Colorful2.jpg\" alt=\"Colorful Theme\" /></p>\n<p>TextOnly Theme\n<img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Niharkanta1/SPT.HudBreakout/refs/heads/main/assets/Screenshot_HudBreakout_TextOnly.jpg\" alt=\"TextOnly\" /></p>\n<h3>ModProfiler Verdict:</h3>\n<p>HudBreakout maintains an average overhead of just 0.03 ms per frame, accounting for only 0.4% of profiled frame time. With a recorded maximum of 0.05 ms and a stable performance trend, it demonstrates minimal CPU overhead in the tested session.\n<img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Niharkanta1/SPT.HudBreakout/refs/heads/main/assets/Profiler.jpg\" alt=\"Profiler\" /></p>\n",
+   "description_html": "<h1>HudBreakout</h1>\n<p>HudBreakout is a clean, lightweight HUD for SPT 4.1.6. Out of the box, the <code>Minimal</code> theme gives you a 7-part health silhouette, compact vitals, active effect icons, weapon and ammo details, movement stats, a crisp hit marker, and an unboxed kill feed with nice impact sounds. Full Localization Supported.</p>\n<h2>Game Hud Settings For Best Experience</h2>\n<p>Make sure to turn off these settings in SETTINGS &gt; GAME</p>\n<ul>\n<li>Stamina and Stance -&gt; Always Hidden</li>\n<li>Health Condition -&gt; Always Hidden</li>\n<li>Quick Slot -&gt; Auto Hide</li>\n</ul>\n<h2>Customize a Theme</h2>\n<p>Themes live in <code>BepInEx/plugins/HudBreakout/Themes/&lt;ThemeName&gt;/</code>. To make your own, copy the <code>Minimal</code> folder, tweak <code>theme.xml</code>, and select your new folder name in the BepInEx config. PSD Files are provided in the PROJECT Repo to create your own icons/hud-elements etc.</p>\n<p>If you prefer text over icons, we\u2019ve included a <code>TextOnly</code> theme that disables the silhouette and panel icons while keeping the PNG hit marker. To change the theme, press <strong>F12</strong> to open the menu, then select your desired theme from the dropdown under <strong>HUDBreakout</strong> settings.</p>\n<p>Press <strong>F9</strong> in-raid to hot-reload your XML and PNG artwork instantly without restarting the game.</p>\n<p><strong>Check github page for more customization options</strong></p>\n<h2>AI Disclosure</h2>\n<h3>Code Contributions</h3>\n<p>The codebase was primarily rewritten and developed by me, using the original DeadlyHUD repository (from which AlternateHUD was initially derived) as the starting point. I used AI tools such as ChatGPT and Gemini selectively to assist with refactoring, debugging, improving code quality, and identifying or correcting potential issues, including XML configuration handling errors.</p>\n<p>The architecture, implementation decisions, project-specific logic, and major functionalities were implemented by me.</p>\n<h3>Asset and UI Contributions</h3>\n<p>The UI design, theme concepts, layouts, and overall visual direction are my own work. AI tools were used to generate some initial sprites, which I subsequently retouched and modified in Adobe Photoshop to match the visual style I intended. The final assets and UI elements were refined to fit the project\u2019s design.</p>\n<h2>Screenshot</h2>\n<p>Minimal Theme\n<img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Niharkanta1/SPT.HudBreakout/refs/heads/main/Assets/Screenshot_HudBreakout_Minimal2.jpg\" alt=\"Minimal Theme\" /></p>\n<p>Colorful Theme (Breakout Style)\n<img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Niharkanta1/SPT.HudBreakout/refs/heads/main/Assets/Screenshot_HudBreakout_Colorfu2.jpg\" alt=\"Colorful Theme\" /></p>\n<p>TextOnly Theme\n<img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Niharkanta1/SPT.HudBreakout/refs/heads/main/Assets/Screenshot_HudBreakout_TextOnly.jpg\" alt=\"TextOnly\" /></p>\n<h3>ModProfiler Verdict:</h3>\n<p>HudBreakout maintains an average overhead of just 0.03 ms per frame, accounting for only 0.4% of profiled frame time. With a recorded maximum of 0.05 ms and a stable performance trend, it demonstrates minimal CPU overhead in the tested session.\n<img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Niharkanta1/SPT.HudBreakout/refs/heads/main/Assets/Profiler.jpg\" alt=\"Profiler\" /></p>\n<div class=\"youtube-lite\" data-video-id=\"tgk1i1MXBjY\" data-embed-url=\"https://www.youtube-nocookie.com/embed/tgk1i1MXBjY?autoplay=1\"><a href=\"https://www.youtube.com/watch?v=tgk1i1MXBjY\" target=\"_blank\" rel=\"noreferrer noopener\">Play YouTube video</a></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/Cy06VGszrlTcYgdeIOeGN8wjTT5FKrLhEyhJpof9.jpg",
    "forge_url": "https://sp-mod.com/mod/3148/hud-breakout",
-   "downloads": 347,
+   "downloads": 398,
    "favourites": 6,
    "featured": false,
    "fika": false,
@@ -215944,19 +215944,31 @@
    ],
    "versions": [
     {
+     "id": 15975,
+     "version": "1.1.1",
+     "description": "<ul>\n<li>Localization Support</li>\n<li>Audio Impact Sound</li>\n<li>Colorful Theme tweaks to make it similar to Breakout Theme.</li>\n</ul>\n<h4>Localization</h4>\n<p>All BepInEx settings are saved to BepInEx/config/com.deadwolf.hudbreakout.cfg.</p>\n<p>Set Language to Auto or a specific language code, such as en. Available languages are discovered automatically from the catalog files in BepInEx/plugins/HudBreakout/Localization/.\nWhen set to Auto, the plugin uses the operating system\u2019s display language if a matching catalog is available. Otherwise, it falls back to English.\nChanging the language rebuilds the HUD views immediately. F12 setting names and descriptions will use the selected language after the plugin starts with that language configured.\nThe underlying configuration keys and section names remain in English to maintain compatibility with existing settings. Text owned by the mod is loaded from the localization catalogs, while Tarkov-owned text, such as item names, continues to use Tarkov\u2019s own localization system.\nTo add a language, simply place the corresponding localization file, such as en.xml, ru.xml, or zh.xml, in the BepInEx/plugins/HudBreakout/Localization/ directory. The plugin will automatically discover and use the catalog.</p>\n<h4>Sound Cue</h4>\n<p>The package also includes the <code>Audio</code> folder used for hit sounds. On a successful hit, HudBreakout plays <code>bullet-hit.wav</code>; headshots use <code>bullet-headshot.wav</code>, and lethal hits use <code>bullet-kill.wav</code> (which takes priority on a lethal headshot). Replace these sound files to customize it.</p>\n",
+     "spt_constraint": "4.1.6",
+     "fika": "unknown",
+     "downloads": 15,
+     "size": 9679016,
+     "link": "https://sp-mod.com/mod/download/3148/hud-breakout/1.1.1",
+     "published_at": "2026-10-16T09:51:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 15935,
      "version": "1.0.0",
      "description": "<p>Release 1.0.0</p>\n",
      "spt_constraint": "4.1.6",
      "fika": "unknown",
-     "downloads": 347,
+     "downloads": 383,
      "size": 9430804,
      "link": "https://sp-mod.com/mod/download/3148/hud-breakout/1.0.0",
      "published_at": "2026-10-14T09:49:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.0.0",
+   "latest_version": "1.1.1",
    "spt_constraint": "4.1.6",
    "all_spt_constraints": [
     "4.1.6"
@@ -215964,7 +215976,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-10-14T10:00:00.000000Z",
-   "updated_at": "2026-10-15T18:40:04.000000Z",
+   "updated_at": "2026-10-16T10:03:45.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -216135,10 +216147,10 @@
    "name": "Price Color Sync",
    "slug": "price-color-sync",
    "teaser": "Keep inventory background tiers and Show Me The Money's main tooltip valuation in sync, with FIR-aware pricing, case-only valuation and configurable flea-ban backgrounds.",
-   "description_html": "<p>Price Color Sync is a player-client compatibility plugin for SPT 4.1.6 and Show Me The Money 3.0.2. Inventory backgrounds and the main SMTM tooltip share a cached item valuation.</p>\n<h2>Features</h2>\n<ul>\n<li>Flea-eligible found-in-raid items use the higher valid SMTM flea estimate or best trader sell-to value. Comparison uses SMTM\u2019s rouble-per-slot value with configured currency/tax handling; ties keep flea. Missing quotes fall back to the valid source. Non-FIR and flea-banned items retain trader pricing by default.</li>\n<li>Filled storage cases are valued as empty cases, excluding contents.</li>\n<li>Ammunition and cartridge packs can retain SMTM penetration tiers.</li>\n<li>Flea-banned ordinary templates receive configurable red backgrounds; ammo and cartridge packs are exempt.</li>\n<li>Dark backgrounds and bright tooltip colors use independent palettes with shared tier thresholds.</li>\n<li>Version 1.1.0 prepares exact per-item colors before inventories open and reuses valid quotes when views reopen. Item changes and price refreshes schedule preparation; examined cold/stale items are priced before their first color draw. Advance work uses a bounded item/time queue. Startup and post-raid SMTM refreshes are retained.</li>\n</ul>\n<h2>Requirements</h2>\n<p>SPT 4.1.6 and Show Me The Money 3.0.2 with its documented dependencies. Designed alongside Item Valuation 2.1.0. Other SPT/SMTM versions and Fika multiplayer compatibility are unverified.</p>\n<h2>Installation</h2>\n<ol>\n<li>Close the player game client and back up any older plugin/configuration.</li>\n<li>Extract the release ZIP into the SPT game folder. The DLL must be at <code>BepInEx/plugins/SPT.Diagnostics.PriceColorSync.dll</code>.</li>\n<li>Keep one copy of this plugin. Install SMTM separately according to its instructions.</li>\n<li>Start the player client and inspect <code>BepInEx/LogOutput.log</code> for loading and initialization errors.</li>\n</ol>\n<p>Install only on player clients. No backend or Fika headless installation is required.</p>\n<h2>Configuration and removal</h2>\n<p><strong>For penetration-based ammunition colors, enable Show Me The Money\u2019s ammo penetration color setting (<code>UseCaliberPenetrationPower</code>).</strong> When disabled, ammunition backgrounds and tooltip colors use price tiers instead.\nEdit <code>BepInEx/config/local.sptdiagnostics.pricecolorsync.cfg</code> with the client closed, then restart. SMTM settings supply shared tier thresholds, penetration mode, tooltip colors and trader options. See the included README for defaults and limitations. To uninstall, close the client and remove this plugin DLL.</p>\n<h2>Network behavior</h2>\n<p>Automatic refresh calls SMTM\u2019s existing <code>/showMeTheMoney/getFleaPrices</code> endpoint on your configured SPT backend using SMTM/SPT session handling. No separate external server or telemetry is added. Backend caching may return unchanged prices. There is currently no separate toggle for the added refresh triggers; removing this plugin stops them.</p>\n<h2>Scope and validation</h2>\n<p>SMTM optional weapon/armor breakdowns and Item Valuation static descriptions retain their original calculations. Actual transactions, saves and sale eligibility are unchanged.</p>\n<p>On October 15, 2026, the user confirmed that items were already colored as soon as an inventory opened and reported no noticeable frame loss with the installed 1.1.0 build. The optimized release build passes 140 assertions. Release source differs from the tested development source only in the Forge-required author-prefixed plugin display name; this metadata adjustment was not independently runtime-tested. No profiler benchmark, exhaustive mutation/Fika coverage or fresh-install test of 1.1.0 was recorded. Compatibility with other SPT/SMTM versions is not established.</p>\n<p>Cold/stale pricing at first display is outside the advance-preparation budget and may still cause frame spikes. Missing price data and other mods that change items without observed notifications remain limitations. See the README for details.</p>\n<p>MIT licensed. Credits to Show Me The Money, Item Valuation, SPT, BepInEx and Harmony. No game or third-party assemblies are bundled. Developed and documented with OpenAI Codex assistance.</p>\n",
+   "description_html": "<p>Price Color Sync is a player-client plugin for <strong>SPT 4.1.6 + Show Me The Money 3.0.2</strong>. It makes inventory background tiers and the main SMTM tooltip use the same item valuation, with trader/flea comparison and optional ammo stats.</p>\n<h2>Choose your pricing rules \u2014 built-in configuration</h2>\n<p><strong>Price Color Sync includes its own configuration. The defaults are only one way to use it: these settings change which price drives item coloring and which prices appear in the tooltip.</strong></p>\n<p>After the first launch, close the game and edit <strong><code>BepInEx/config/local.sptdiagnostics.pricecolorsync.cfg</code></strong>, then restart the player client. Pricing and tooltip options are read at startup.</p>\n<table>\n<thead>\n<tr>\n<th>Setting in <code>[Pricing]</code></th>\n<th>Default</th>\n<th>What it does</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>Use flea estimates for FIR items</code></td>\n<td><code>true</code></td>\n<td>For found-in-raid items, show both available trader/flea prices and use the <strong>higher valid value</strong> for valuation and coloring. Set <code>false</code> for trader-only pricing and display.</td>\n</tr>\n<tr>\n<td><code>Use flea estimates for non-FIR items</code></td>\n<td><code>false</code></td>\n<td>By default, non-FIR items use and show the best trader price. Set <code>true</code> to show both available prices while using the <strong>flea estimate</strong> for valuation and coloring, even if the trader offer is higher.</td>\n</tr>\n<tr>\n<td><code>Use trader prices for flea-banned items</code></td>\n<td><code>true</code></td>\n<td>Overrides both rules above: flea-banned items use and show trader prices. Set <code>false</code> to allow cached flea estimates when the applicable FIR/non-FIR flea option is also enabled. Estimates may be unavailable.</td>\n</tr>\n</tbody>\n</table>\n<p><strong>Common setups:</strong></p>\n<ul>\n<li><strong>Default:</strong> FIR items use the higher trader/flea value; non-FIR and flea-banned items use trader prices.</li>\n<li><strong>Show flea estimates on non-FIR items:</strong> enable <code>Use flea estimates for non-FIR items</code>. Both available prices appear; the non-FIR color follows flea. FIR items still follow their separate higher-value rule.</li>\n<li><strong>Trader-only for everything:</strong> disable both <code>Use flea estimates for FIR items</code> and <code>Use flea estimates for non-FIR items</code>.</li>\n</ul>\n<p>These are estimates for display. Enabling a flea estimate does <strong>not</strong> make an item sellable or change transaction prices. In dual-price tooltips, SMTM highlights the higher offer; in optional non-FIR flea mode that highlight can differ from the flea value selected for coloring. Missing/invalid offers are omitted; equal offers retain SMTM\u2019s tie behavior.</p>\n<h2>More configuration options</h2>\n<table>\n<thead>\n<tr>\n<th>Section / setting</th>\n<th>Default</th>\n<th>Effect</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>[Tooltip] Show ammo damage and penetration</code></td>\n<td><code>true</code></td>\n<td>Adds labeled base damage and penetration above hover prices for ammo and populated cartridge packs. Set <code>false</code> to hide those numeric stats. Independent of penetration coloring; Item Valuation is not required.</td>\n</tr>\n<tr>\n<td><code>[Background palette] Tier 0</code> through <code>Tier 5</code></td>\n<td>Six dark RGB colors</td>\n<td>Customize inventory backgrounds from poor to legendary without changing SMTM\u2019s tooltip text palette.</td>\n</tr>\n<tr>\n<td><code>[Background palette] Flea banned</code></td>\n<td><code>#660415</code></td>\n<td>Customize the red background marker for flea-banned templates. This marker is independent of price tiers; ammo and cartridge packs are exempt.</td>\n</tr>\n<tr>\n<td><code>[Performance] Maximum items per frame</code></td>\n<td><code>12</code></td>\n<td>Caps advance quote preparation per frame; range 1\u201364.</td>\n</tr>\n<tr>\n<td><code>[Performance] Background work budget milliseconds</code></td>\n<td><code>2</code></td>\n<td>Time budget for advance preparation, checked between items; range 0.25\u201310 ms. One expensive item may exceed it, and cold first-display quotes run outside this budget.</td>\n</tr>\n</tbody>\n</table>\n<p><strong>Ammo colors are controlled by Show Me The Money:</strong> enable its <code>UseCaliberPenetrationPower</code> setting for penetration tiers; disable it for price tiers. SMTM\u2019s own config supplies shared tier thresholds, tooltip text colors, trader exclusions and currency/tax handling. Price Color Sync\u2019s pricing rules govern quote selection and comparison display; SMTM\u2019s own dual-price / Always show flea price options do not override them. Restart after editing Price Color Sync settings.</p>\n<h2>Features</h2>\n<ul>\n<li>Version 1.1.4 displays both available trader and flea offers in flea-enabled modes, including non-FIR items. SMTM\u2019s formatter highlights the better offer. The user confirmed non-FIR mode works with the option both enabled and disabled.</li>\n<li>Filled storage cases are valued as empty cases, excluding contents; tooltip rows are labeled <code>(case only)</code>. The live case and its contents are not changed.</li>\n<li>Ammo and populated cartridge packs can show <code>Damage: 35 | Penetration: 53</code> (example values). Damage is base per-projectile damage. Empty packs are skipped; matching name stats are not duplicated. SMTM\u2019s normal tooltip visibility requirements still apply.</li>\n<li>Exact per-item quotes are prepared before inventories open and reused when views reopen. Actual item changes and price refreshes schedule new work. Simulated inventory moves/swaps retain cached quotes, avoiding repeated repricing during drag previews.</li>\n<li>Startup and post-raid main-menu refreshes use SMTM\u2019s existing price updater.</li>\n</ul>\n<h2>Requirements and installation</h2>\n<p>Requires <strong>SPT 4.1.6</strong> and <strong>Show Me The Money 3.0.2</strong> with its documented dependencies. Designed alongside Item Valuation 2.1.0; Item Valuation is not required for this plugin\u2019s ammo stats. Other SPT/SMTM versions and Fika multiplayer compatibility are unverified.</p>\n<ol>\n<li>Close the player game client and back up the old plugin/configuration.</li>\n<li>Extract the release ZIP into the SPT game folder. The DLL must be at <code>BepInEx/plugins/SPT.Diagnostics.PriceColorSync.dll</code>.</li>\n<li>Keep one copy of this plugin. Install SMTM separately according to its instructions.</li>\n<li>Start the player client; configuration is generated automatically. Check <code>BepInEx/LogOutput.log</code> for loading and initialization errors.</li>\n<li>Choose your settings in the configuration file above with the game closed, then restart.</li>\n</ol>\n<p><strong>Install only on player clients. No Price Color Sync backend or Fika headless installation is required.</strong> To uninstall, close the client and remove this plugin DLL.</p>\n<h2>Scope, refresh and validation</h2>\n<p>Automatic refresh calls SMTM\u2019s existing <code>/showMeTheMoney/getFleaPrices</code> endpoint on your configured SPT backend. No separate external server or telemetry is added. Backend caching may return unchanged prices. There is no separate toggle for the added refresh triggers; removing this plugin stops them.</p>\n<p>SMTM optional weapon/armor breakdowns and Item Valuation static descriptions retain their original calculations. Actual transactions, saves and sale eligibility are unchanged. Missing trader/market data may prevent an offer. Cold/stale first-display pricing may still cause frame spikes; other mods that mutate items without observed notifications can leave quotes stale until refresh.</p>\n<p>On October 16, 2026, the user confirmed FIR dual-price display and tested non-FIR flea pricing both enabled and disabled successfully. The optimized build passes 166 existing assertions. This is not exhaustive mod-interaction, performance or Fika runtime coverage.</p>\n<p>MIT licensed. Credits to Show Me The Money, Item Valuation, SPT, BepInEx and Harmony. No game or third-party assemblies are bundled. Developed and documented with OpenAI Codex assistance. <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/GPTSol6-1/PriceColorSync\" rel=\"noreferrer noopener\">Source and support</a>.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/Z0xgsbAgcZHFD555zSLhDUvi6kchmyooHwDcxKDg.jpg",
    "forge_url": "https://sp-mod.com/mod/3151/price-color-sync",
-   "downloads": 72,
+   "downloads": 275,
    "favourites": 3,
    "featured": false,
    "fika": false,
@@ -216172,12 +216184,72 @@
    ],
    "versions": [
     {
+     "id": 15976,
+     "version": "1.1.4",
+     "description": "<h2>1.1.4 - 2026-10-16</h2>\n<ul>\n<li>Restore trader/flea comparison in SMTM hover tooltips: show each valid offer using SMTM\u2019s original formatting, better-offer highlighting and price colors. Includes the previously local-only 1.1.3 tooltip update.</li>\n<li>Fix the missing trader row when <code>Use flea estimates for non-FIR items</code> is enabled. Both available prices now appear, while non-FIR valuation/coloring still follow the configured flea estimate. FIR flea mode continues to select the higher valid offer.</li>\n<li>Keep default non-FIR and flea-banned behavior trader-only. Preserve case-only valuation, ammo damage/penetration, refresh scheduling and inventory drag-preview improvements.</li>\n<li>Expand the main description and included README with prominent pricing settings, defaults, mode examples, flea-ban precedence, ammo/color options and performance controls. Restart the client after changing Price Color Sync settings.</li>\n<li>User confirmed FIR dual-price tooltips and tested non-FIR flea pricing enabled and disabled successfully. Optimized build passes all 166 existing assertions; exhaustive mod-interaction and Fika coverage is not claimed.</li>\n</ul>\n",
+     "spt_constraint": "4.1.6",
+     "fika": "unknown",
+     "downloads": 18,
+     "size": 22096,
+     "link": "https://sp-mod.com/mod/download/3151/price-color-sync/1.1.4",
+     "published_at": "2026-10-16T10:22:00.000000Z",
+     "dependencies": [
+      {
+       "id": 3011,
+       "name": "Show Me The Money (Item Pricing) (4.1.x)",
+       "slug": "show-me-the-money-item-pricing-41x",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/3011/show-me-the-money-item-pricing-41x"
+      }
+     ]
+    },
+    {
+     "id": 15972,
+     "version": "1.1.2",
+     "description": "<h2>1.1.2 - 2026-10-16</h2>\n<ul>\n<li>Add labeled base damage and penetration above SMTM hover prices for ammunition and populated cartridge packs. No Item Valuation installation is required for these stats.</li>\n<li>Add a default-on <code>[Tooltip] Show ammo damage and penetration</code> setting in the Price Color Sync config. Numeric stats work independently of SMTM\u2019s penetration-color setting. Restart the player client after changing it.</li>\n<li>Skip empty packs and non-ammo items. Avoid duplicating matching <code>[damage/penetration]</code> name suffixes; outdated suffixes do not hide current stats. Repeated price refreshes replace the stats block without accumulating lines.</li>\n<li>Retain 1.1.1 drag-preview improvements and existing pricing, background, case and flea-ban policies. SMTM\u2019s existing tooltip visibility requirements still apply.</li>\n<li>User confirms the installed 1.1.2 works; supplied screenshot shows 4.6x30mm AP SX with Damage: 35, Penetration: 53 and the existing trader price. Optimized build passes 166 assertions, including 1,000 simulated tooltip refreshes. No exhaustive mod-interaction, cartridge-pack or Fika runtime coverage is claimed.</li>\n</ul>\n",
+     "spt_constraint": "4.1.6",
+     "fika": "unknown",
+     "downloads": 35,
+     "size": 22637,
+     "link": "https://sp-mod.com/mod/download/3151/price-color-sync/1.1.2",
+     "published_at": "2026-10-16T05:18:00.000000Z",
+     "dependencies": [
+      {
+       "id": 3011,
+       "name": "Show Me The Money (Item Pricing) (4.1.x)",
+       "slug": "show-me-the-money-item-pricing-41x",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/3011/show-me-the-money-item-pricing-41x"
+      }
+     ]
+    },
+    {
+     "id": 15971,
+     "version": "1.1.1",
+     "description": "<p>Fix repeated repricing during simulated inventory moves, swaps and drag previews, avoiding unnecessary work for unchanged assembled weapons and armor.</p>\n<ul>\n<li>Preserve immediate price/color updates for actual item changes and affected assembly parents.</li>\n<li>Restore mutation capture after nested previews and exceptions.</li>\n<li>Retain 1.1.0 advance preparation and existing FIR, case-only, ammo and flea-ban rules.</li>\n</ul>\n<p>User confirms the reported drag lag is gone and actual changes still update immediately. Optimized build passes 154 assertions; standalone Harmony checks resolve 33 targets and validate preview suppression, real mutations and exception recovery. No independent profiler benchmark, exhaustive mod-interaction/Fika coverage or fresh-install test of 1.1.1 is claimed.</p>\n<p>Player-client only. Requires SPT 4.1.6 and Show Me The Money 3.0.2.</p>\n",
+     "spt_constraint": "4.1.6",
+     "fika": "unknown",
+     "downloads": 10,
+     "size": 21156,
+     "link": "https://sp-mod.com/mod/download/3151/price-color-sync/1.1.1",
+     "published_at": "2026-10-16T04:53:00.000000Z",
+     "dependencies": [
+      {
+       "id": 3011,
+       "name": "Show Me The Money (Item Pricing) (4.1.x)",
+       "slug": "show-me-the-money-item-pricing-41x",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/3011/show-me-the-money-item-pricing-41x"
+      }
+     ]
+    },
+    {
      "id": 15955,
      "version": "1.1.0",
      "description": "<h2>1.1.0 - 2026-10-15</h2>\n<ul>\n<li>Prepare exact per-item valuations before inventories open, retaining condition, attachments and FIR status.</li>\n<li>Reuse valid cached quotes when views reopen; creation, movement, refresh and FIR changes schedule preparation. Market snapshots and startup/post-raid refreshes reschedule known items.</li>\n<li>Price an examined cold/stale item before its first color draw so it does not briefly display a provisional color.</li>\n<li>Keep advance preparation on the main thread with existing item/time limits; weak tracking allows unused items to be collected and excludes pricing clones, trader stock and virtual roots.</li>\n<li>Preserve higher-of-flea/trader FIR selection, case-only valuation, ammo penetration and flea-ban backgrounds.</li>\n<li>User reports items are already colored when an inventory opens and no noticeable frame loss. Optimized build passes 140 assertions. This is user-reported testing, not a profiler benchmark or proof of every mutation/Fika scenario.</li>\n</ul>\n",
      "spt_constraint": "4.1.6",
      "fika": "unknown",
-     "downloads": 25,
+     "downloads": 163,
      "size": 19623,
      "link": "https://sp-mod.com/mod/download/3151/price-color-sync/1.1.0",
      "published_at": "2026-10-15T09:33:00.000000Z",
@@ -216217,7 +216289,7 @@
      "description": "<p>First public release for SPT 4.1.6 and Show Me The Money 3.0.2. Player-client only.</p>\n<ul>\n<li>Synchronize inventory background tiers with the main SMTM tooltip valuation.</li>\n<li>Configure FIR/non-FIR pricing and trader pricing for flea-banned items.</li>\n<li>Value storage cases without contents; preserve ammunition penetration tiers.</li>\n<li>Mark flea-banned templates red, exempting ammo and cartridge packs.</li>\n<li>Bound background work with configurable limits (12 items/frame and 2 ms defaults).</li>\n<li>Request SMTM refresh at startup and after returning from an observed raid.</li>\n</ul>\n<p>For penetration-based ammunition colors, enable SMTM\u2019s UseCaliberPenetrationPower setting. Otherwise ammunition uses price tiers.</p>\n<p>Validation: optimized Release build and 97 policy assertions passed. The author reports successful testing on a fresh SPT installation with required dependencies, plus two clients connected to the same server. Individual test coverage and the tested hash were not independently recorded. Other SPT/SMTM versions and independent Fika certification remain unverified.</p>\n<p>Extract into the player SPT game directory. Install dependencies separately. MIT licensed; developed with OpenAI Codex assistance. See the included README for installation, configuration and limitations.</p>\n",
      "spt_constraint": "4.1.6",
      "fika": "unknown",
-     "downloads": 41,
+     "downloads": 43,
      "size": 16272,
      "link": "https://sp-mod.com/mod/download/3151/price-color-sync/1.0.7",
      "published_at": "2026-10-15T04:28:00.000000Z",
@@ -216232,7 +216304,7 @@
      ]
     }
    ],
-   "latest_version": "1.1.0",
+   "latest_version": "1.1.4",
    "spt_constraint": "4.1.6",
    "all_spt_constraints": [
     "4.1.6"
@@ -216256,7 +216328,7 @@
     }
    ],
    "published_at": "2026-10-15T04:29:00.000000Z",
-   "updated_at": "2026-10-15T09:35:21.000000Z",
+   "updated_at": "2026-10-16T10:23:05.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -216471,6 +216543,76 @@
    "all_dependencies": [],
    "published_at": "2026-10-15T22:00:00.000000Z",
    "updated_at": "2026-10-15T23:17:56.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 3155,
+   "hub_id": null,
+   "guid": "com.donkeybong.pinnedquesthud",
+   "name": "Pinned Quest HUD",
+   "slug": "pinned-quest-hud",
+   "teaser": "A minimal in-raid quest tracker. Star a quest in the Tasks screen and its objectives, with live progress, appear on the right side of your screen, filtered by the map you are on.",
+   "description_html": "<h2>Features</h2>\n<ul>\n<li>Uses the game\u2019s own quest star (favorite) as the pin. Nothing new to learn.</li>\n<li>Shows, for each pinned quest: a number, the localized title, the trader and every visible objective, with live counters like <code>3/8</code>.</li>\n<li>Map filter: only quests that have a pending objective on the current map are listed. If none apply, you see <code>No marked quests for this map.</code></li>\n<li>One toggle key (default <code>J</code>). It works while you move, and the list starts hidden in every raid.</li>\n<li>Hides itself while the inventory or any menu is open.</li>\n<li>Drawn with the game\u2019s own UI font and a dark outline, with no panel or background, so it stays readable and out of the way.</li>\n<li>Configurable in game with F12: size, opacity, width, position, outline, colors and number of quests.</li>\n<li>No network access. No bundled fonts, images or other assets. No other mod required.</li>\n</ul>\n<h2>Installation</h2>\n<ol>\n<li>Download <code>PinnedQuestHUD-1.0.0.zip</code>.</li>\n<li>Extract it into your SPT folder (the one with <code>EscapeFromTarkov.exe</code> and <code>BepInEx</code>). The files go to <code>BepInEx/plugins/donkeybong-PinnedQuestHUD/</code>.</li>\n<li>If you had an older build of this plugin, delete its old folder or DLL from <code>BepInEx/plugins/</code> so two copies are not loaded.</li>\n<li>Start the game. The config file <code>BepInEx/config/com.donkeybong.pinnedquesthud.cfg</code> is created on first launch.</li>\n</ol>\n<p>To uninstall, delete <code>BepInEx/plugins/donkeybong-PinnedQuestHUD/</code>.</p>\n<h2>Usage</h2>\n<ol>\n<li>In the Tasks screen, click the star on the quests you want to track. Only quests that are Started or Ready to hand in are shown.</li>\n<li>In raid, press <code>J</code> to show or hide the list. You can change the key in the F12 menu.</li>\n<li>Open the inventory or any menu and the list hides by itself.</li>\n<li>The list shows only quests with pending objectives on the map you are in. Quests with objectives on several maps appear on each of them.</li>\n</ol>\n<h2>Compatibility</h2>\n<ul>\n<li>SPT 4.1.6 (EFT 0.16.9.5.40743): tested.</li>\n<li>Fika: not tested.</li>\n<li>Client-side plugin only. BepInEx is included with SPT.</li>\n<li>Scav raids: the scav profile has no pinned quests, so the list shows <code>No marked quests for this map.</code></li>\n</ul>\n<h2>Support</h2>\n<p>If something does not work, check <code>BepInEx/LogOutput.log</code> for lines from <code>donkeybong-PinnedQuestHUD</code> and include them in your report. Source code (MIT): <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/dualcore-studio/PinnedQuestHUD\" rel=\"noreferrer noopener\">https://github.com/dualcore-studio/PinnedQuestHUD</a></p>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/sQAWzeI1tGIYPvvN3RJVzXBBzDxMDjjsaJbQfgnE.png",
+   "forge_url": "https://sp-mod.com/mod/3155/pinned-quest-hud",
+   "downloads": 33,
+   "favourites": 2,
+   "featured": false,
+   "fika": false,
+   "fika_latest": "incompatible",
+   "category": {
+    "id": 17,
+    "title": "Other",
+    "slug": "other"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 126992,
+     "name": "donkeybong__",
+     "avatar": "https://files.sp-mod.com/profile-photos/qUQMJPfkD3joX0A9ELWP63kSFp9MCkBfLnZsBr2r_128w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/dualcore-studio/PinnedQuestHUD",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 15973,
+     "version": "1.0.0",
+     "description": "<h2>Features</h2>\n<ul>\n<li>Uses the game\u2019s own quest star (favorite) as the pin. Nothing new to learn.</li>\n<li>Shows, for each pinned quest: a number, the localized title, the trader and every visible objective, with live counters like <code>3/8</code>.</li>\n<li>Map filter: only quests that have a pending objective on the current map are listed. If none apply, you see <code>No marked quests for this map.</code></li>\n<li>One toggle key (default <code>J</code>). It works while you move, and the list starts hidden in every raid.</li>\n<li>Hides itself while the inventory or any menu is open.</li>\n<li>Drawn with the game\u2019s own UI font and a dark outline, with no panel or background, so it stays readable and out of the way.</li>\n<li>Configurable in game with F12: size, opacity, width, position, outline, colors and number of quests.</li>\n<li>No network access. No bundled fonts, images or other assets. No other mod required.</li>\n</ul>\n<h2>Installation</h2>\n<ol>\n<li>Download <code>PinnedQuestHUD-1.0.0.zip</code>.</li>\n<li>Extract it into your SPT folder (the one with <code>EscapeFromTarkov.exe</code> and <code>BepInEx</code>). The files go to <code>BepInEx/plugins/donkeybong-PinnedQuestHUD/</code>.</li>\n<li>If you had an older build of this plugin, delete its old folder or DLL from <code>BepInEx/plugins/</code> so two copies are not loaded.</li>\n<li>Start the game. The config file <code>BepInEx/config/com.donkeybong.pinnedquesthud.cfg</code> is created on first launch.</li>\n</ol>\n<p>To uninstall, delete <code>BepInEx/plugins/donkeybong-PinnedQuestHUD/</code>.</p>\n<h2>Usage</h2>\n<ol>\n<li>In the Tasks screen, click the star on the quests you want to track. Only quests that are Started or Ready to hand in are shown.</li>\n<li>In raid, press <code>J</code> to show or hide the list. You can change the key in the F12 menu.</li>\n<li>Open the inventory or any menu and the list hides by itself.</li>\n<li>The list shows only quests with pending objectives on the map you are in. Quests with objectives on several maps appear on each of them.</li>\n</ol>\n<h2>Compatibility</h2>\n<ul>\n<li>SPT 4.1.6 (EFT 0.16.9.5.40743): tested.</li>\n<li>Fika: not tested.</li>\n<li>Client-side plugin only. BepInEx is included with SPT.</li>\n<li>Scav raids: the scav profile has no pinned quests, so the list shows <code>No marked quests for this map.</code></li>\n</ul>\n<h2>Support</h2>\n<p>If something does not work, check <code>BepInEx/LogOutput.log</code> for lines from <code>donkeybong-PinnedQuestHUD</code> and include them in your report. Source code (MIT): <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/dualcore-studio/PinnedQuestHUD\" rel=\"noreferrer noopener\">https://github.com/dualcore-studio/PinnedQuestHUD</a></p>\n",
+     "spt_constraint": "4.1.6",
+     "fika": "incompatible",
+     "downloads": 33,
+     "size": 19667,
+     "link": "https://sp-mod.com/mod/download/3155/pinned-quest-hud/1.0.0",
+     "published_at": "2026-10-16T09:05:00.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "1.0.0",
+   "spt_constraint": "4.1.6",
+   "all_spt_constraints": [
+    "4.1.6"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-10-16T09:28:00.000000Z",
+   "updated_at": "2026-10-16T09:40:03.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
