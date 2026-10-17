@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-10-17T04:38:35Z",
+ "generated_at": "2026-10-17T10:54:58Z",
  "source": "https://sp-mod.com",
  "filter": "all",
- "mod_count": 2082,
+ "mod_count": 2083,
  "categories": [
   {
    "id": 12,
@@ -217509,6 +217509,76 @@
    "all_dependencies": [],
    "published_at": "2026-10-17T03:32:00.000000Z",
    "updated_at": "2026-10-17T03:33:04.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 3165,
+   "hub_id": null,
+   "guid": "com.stompa.realtargets",
+   "name": "RealTargets",
+   "slug": "realtargets",
+   "teaser": "Realistic, ballistics-based blood, wounds and gore for every shot target.",
+   "description_html": "<p>Realistic blood, wounds and gore for SPT. Every bullet that enters a body leaves a mark that follows real ballistics: where it went in, where it came out, how much energy it carried and what was behind the target.</p>\n<p><strong>Purely visual.</strong> Damage, bleeding HP loss, death and AI stay vanilla EFT (and SAIN, if you use it).</p>\n<h3>Features</h3>\n<ul>\n<li><strong>Entry and exit wounds</strong> on clothing and skin, placed where each round actually went through. Exits are bigger and ragged, scaled by the bullet\u2019s energy.</li>\n<li><strong>Bleeding per wound</strong>: drips, blood running down the clothing, and arterial spurts when a big artery is hit (neck, groin, thigh, upper arm), paced by the heartbeat and fading over the last beats after death.</li>\n<li><strong>Exit spray, blood mist and wall spatter</strong> on whatever stands behind a through-shot.</li>\n<li><strong>Pools</strong> under bodies, sized by the blood that ran out and drying darker. <strong>Bloody footprints</strong> from anyone who walks through a wet pool.</li>\n<li><strong>Dismemberment</strong>, on kills and corpses only, never on a living bot:\n<ul>\n<li>heads come apart from close-range buckshot, slugs, 12.7 mm and grenades at very close range</li>\n<li>high-energy rifle rounds (7.62x51, 7.62x54R and others) burst the skull open at the exit</li>\n<li>repeated hits on a dead body\u2019s head add up</li>\n<li>limbs come off from 12.7 mm rifle/MG rounds and grenades</li>\n<li>gibs fly, stick to walls and slide down; helmets get thrown off</li>\n</ul>\n</li>\n<li><strong>Corpse impacts</strong>: bullets push dead bodies by their momentum; grenade blasts throw nearby corpses.</li>\n<li>No blood on doors, windows or other moving objects.</li>\n<li>Lit by the map\u2019s own lighting: dark in dark rooms, a wet sheen in the light.</li>\n</ul>\n<h3>Installation</h3>\n<ol>\n<li>Install SPT 4.1.6.</li>\n<li>Download <code>stompa-RealTargets-1.0.0.zip</code>.</li>\n<li>Extract it into your SPT folder (the one with <code>EscapeFromTarkov.exe</code>). You should end up with <code>BepInEx/plugins/RealTargets/RealTargets.dll</code>.</li>\n<li>Start the game. The config file <code>BepInEx/config/com.stompa.realtargets.cfg</code> is created on the first run.</li>\n</ol>\n<p><strong>Uninstall:</strong> delete the <code>BepInEx/plugins/RealTargets</code> folder (and the config file if you like).</p>\n<h3>Configuration</h3>\n<p>Press <strong>F12</strong> in game (SPT\u2019s Configuration Manager) and open <strong>stompa-RealTargets</strong>. Every effect can be switched off on its own:</p>\n<ul>\n<li><strong>General</strong>: master switch.</li>\n<li><strong>Blood</strong>: blood volume, bleed rate, arterial chance, last heartbeats after death, how long corpses keep draining.</li>\n<li><strong>Visuals</strong>: each blood effect on/off, decal shader, max distance (80 m).</li>\n<li><strong>Gore</strong>: dismemberment and gibs on/off, energy thresholds for heads, skull bursts and limbs, shotgun range and pellets needed for a head.</li>\n<li><strong>Impacts</strong>: corpse pushes and blast throws.</li>\n<li><strong>Hit model</strong>: armour stop threshold, energy thresholds, temporary cavity size.</li>\n<li><strong>Flinch</strong> (off by default): living bots flinch per limb through EFT\u2019s own hit-reaction rig.</li>\n<li><strong>Debug</strong>: log hits, blood and wound placement (all off; turn on for a bug report).</li>\n</ul>\n<h3>Compatibility</h3>\n<ul>\n<li>SPT 4.1.6, client-only (no server mod), no dependencies.</li>\n<li>Works alongside Ragdoll Kinetics and SAIN.</li>\n<li><strong>Fika is not supported.</strong></li>\n<li>Performance: the mod\u2019s own CPU time averages about 0.1 ms per frame in a busy raid. Blood marks, pools and gore pieces have fixed caps, so long raids don\u2019t pile them up.</li>\n</ul>\n<h3>Changelog</h3>\n<p><strong>1.0.0</strong>: first public release.</p>\n<h3>Source and support</h3>\n<p>Source code and build instructions: <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/St0mpa/RealTargets\" rel=\"noreferrer noopener\">github.com/St0mpa/RealTargets</a> (MIT).</p>\n<p>Bug reports: the comments on this page. Please include your <code>BepInEx/LogOutput.log</code>, with the Debug logs turned on if you can reproduce the problem.</p>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/hVAXixqvf973Rwj5csziYYVW8SE6xu3oQ6Zcw7ST.png",
+   "forge_url": "https://sp-mod.com/mod/3165/realtargets",
+   "downloads": 27,
+   "favourites": 0,
+   "featured": false,
+   "fika": false,
+   "fika_latest": "unknown",
+   "category": {
+    "id": 2,
+    "title": "Overhauls",
+    "slug": "overhauls"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 127043,
+     "name": "Stompa",
+     "avatar": "https://files.sp-mod.com/profile-photos/ToB1L3aqLmZf0TH0LgqjtU8ac6Pen5yLRyhUH4RS_256w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/St0mpa/RealTargets",
+     "label": "Github"
+    }
+   ],
+   "versions": [
+    {
+     "id": 16012,
+     "version": "1.0.0",
+     "description": "<p>First public release.</p>\n<ul>\n<li>Ballistics-based entry and exit wounds, per-wound bleeding, arterial spurts, exit spray, wall spatter, pools and bloody footprints</li>\n<li>Dismemberment on kills and corpses: heads, skull bursts, limbs, gibs, thrown helmets</li>\n<li>Bullets push corpses, grenade blasts throw them</li>\n<li>Every effect can be toggled and tuned in F12</li>\n</ul>\n",
+     "spt_constraint": "4.1.6",
+     "fika": "unknown",
+     "downloads": 27,
+     "size": 87946,
+     "link": "https://sp-mod.com/mod/download/3165/realtargets/1.0.0",
+     "published_at": "2026-10-17T10:32:00.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "1.0.0",
+   "spt_constraint": "4.1.6",
+   "all_spt_constraints": [
+    "4.1.6"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-10-17T09:00:00.000000Z",
+   "updated_at": "2026-10-17T10:33:03.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
