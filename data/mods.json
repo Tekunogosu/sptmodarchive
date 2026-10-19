@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-10-18T23:21:30Z",
+ "generated_at": "2026-10-19T04:52:11Z",
  "source": "https://sp-mod.com",
  "filter": "all",
- "mod_count": 2089,
+ "mod_count": 2091,
  "categories": [
   {
    "id": 12,
@@ -206686,8 +206686,8 @@
    "description_html": "<p>Some of the best maps in SPT now have backported versions, and picking one has always meant\ncommitting to it. Install the backport and that is the map, every raid, until you uninstall it.</p>\n<p><strong>MapVariants lets you choose per raid instead.</strong> Pick at the map screen and that raid loads what you\npicked. The next raid asks again.</p>\n<h3>What it works with</h3>\n<p>It ships knowing about two backports, <strong>Manimal\u2019s Lighthouse</strong> and <strong>Manimal\u2019s Interchange</strong>, and it\nrequires neither. Install one, both or neither. A map whose backport is not installed is left\ncompletely alone, with no prompt and nothing changed.</p>\n<p><strong>Neither backport is modified.</strong> On a raid where you pick the backported map, this mod does nothing\nat all, and that map runs exactly as it would if this mod were not installed.</p>\n<h3>Settings</h3>\n<p>One toggle under <code>General</code> decides whether you are asked at all. Turn it off and each map quietly\nloads its own default instead.</p>\n<p>Every map gets its own section with a default. That default is what loads when the prompt is off, and\nit is also what you offer everyone else when you are first into a transit heading to that map. Both\nmaps default to the backported version.</p>\n<h3>Co-op</h3>\n<p>Everyone in a raid loads the same map, including players who never see a map screen.</p>\n<ul>\n<li>Whoever starts the raid chooses, and the server records it.</li>\n<li>A <strong>Fika headless</strong> asks the server what it is serving, so a headless can host either version.</li>\n<li>A <strong>joining client</strong> does the same, so it follows the host rather than its own settings.</li>\n<li>A <strong>transit</strong> is decided by the first player into the zone, and everyone who joins is told what\nthey joined rather than being asked again. Only the map the transit actually leads to is offered.</li>\n</ul>\n<h3>Adding another map</h3>\n<p>A backport you do not control is added by one entry in <code>maps.json</code> naming its plugin id and the two\nvariant names. No code change and no server-side config. A mod author who wants their own mod to\noffer a choice can register with it directly instead, handing over both datasets and their own names,\nimages and callback, which is what <strong>Factory Classic</strong> does.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/K6nAAsQnuPQLOsbl2QiDq6TP4cNuizJMX8ED2roC.png",
    "forge_url": "https://sp-mod.com/mod/3040/map-variants",
-   "downloads": 4904,
-   "favourites": 74,
+   "downloads": 9056,
+   "favourites": 103,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -206715,12 +206715,24 @@
    ],
    "versions": [
     {
+     "id": 16042,
+     "version": "1.0.3",
+     "description": "<p>Fixed airdrops when selecting vanilla raids</p>\n",
+     "spt_constraint": "~4.1.3",
+     "fika": "compatible",
+     "downloads": 247,
+     "size": 4052672,
+     "link": "https://sp-mod.com/mod/download/3040/map-variants/1.0.3",
+     "published_at": "2026-10-18T23:32:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 15855,
      "version": "1.0.2",
      "description": "<h3>Factory night raids used the day choice</h3>\n<p><strong>The bug:</strong> a Factory night raid loads a few extra scene sets after the main one, and the game labels\none of them as day Factory. MapVariants took that label at face value: partway through a night load\nit dropped the night choice and handed the day choice to the map\u2019s provider. With day and night set\nto different variants, night raids broke. Factory - Vanilla at night was missing a scene, so\nHealth Care Privacy - Part 5 could not be completed, and Factory - Classic at night failed to load.</p>\n<p><strong>The fix:</strong> only the main scene set of a raid decides which map it is. The sets that load after it\nare ignored. Lighthouse and Interchange were never affected; each loads a single set.</p>\n<h3>Loading label</h3>\n<ul>\n<li>No backport name on the loading screen for a map whose backport is not installed, since no choice\nwas offered.</li>\n</ul>\n",
      "spt_constraint": "~4.1.3",
      "fika": "compatible",
-     "downloads": 65,
+     "downloads": 3600,
      "size": 4051881,
      "link": "https://sp-mod.com/mod/download/3040/map-variants/1.0.2",
      "published_at": "2026-10-09T23:28:00.000000Z",
@@ -206732,7 +206744,7 @@
      "description": "<p>Fixed issue where SVM settings were not applied to the vanilla map choice</p>\n",
      "spt_constraint": "~4.1.3",
      "fika": "compatible",
-     "downloads": 4277,
+     "downloads": 4641,
      "size": 4051946,
      "link": "https://sp-mod.com/mod/download/3040/map-variants/1.0.1",
      "published_at": "2026-09-20T20:16:00.000000Z",
@@ -206744,14 +206756,14 @@
      "description": "<p>first release</p>\n",
      "spt_constraint": "~4.1.3",
      "fika": "compatible",
-     "downloads": 562,
+     "downloads": 568,
      "size": 4045470,
      "link": "https://sp-mod.com/mod/download/3040/map-variants/1.0.0",
      "published_at": "2026-09-19T03:30:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.0.2",
+   "latest_version": "1.0.3",
    "spt_constraint": "~4.1.3",
    "all_spt_constraints": [
     "~4.1.3"
@@ -206759,7 +206771,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-09-19T03:30:00.000000Z",
-   "updated_at": "2026-10-09T23:34:04.000000Z",
+   "updated_at": "2026-10-18T23:44:03.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -218265,6 +218277,146 @@
    "all_dependencies": [],
    "published_at": "2026-10-18T13:19:00.000000Z",
    "updated_at": "2026-10-18T15:37:42.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 3176,
+   "hub_id": null,
+   "guid": "com.vinihns.itemupgrader",
+   "name": "Item Upgrader",
+   "slug": "item-upgrader",
+   "teaser": "Turn junk into loot, or lose it trying. Upgrade any stash item into a pricier one, with the chance set by the price difference.",
+   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">UPGRADE!!!</div>\n<div class=\"tab-content\"><p><strong><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/d7rK4aS.gif\" alt=\"item upgrader\" /></strong></p>\n<p>Right-click an item in your stash, pick <strong>Upgrade item</strong> and bet it on something more expensive. Win and the new item lands in your stash, found in raid. Lose and your item is gone.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">How it works</div>\n<div class=\"tab-content\"><ul>\n<li><strong>Chance = your item\u2019s value \u00f7 the result\u2019s value</strong>, minus a 5% house edge, kept between 0.5% and 95%.</li>\n<li>Values come from the flea, with the handbook as fallback. Attachments and condition count.</li>\n<li>Pick any result from a searchable list, with quick filters for ~70%, ~50%, ~30% and ~10% odds.</li>\n<li>Ammo, money and other stacks let you choose the amount.</li>\n<li>After a win, upgrade the new item again right away.</li>\n<li>If the result does not fit in your stash, you keep your item.</li>\n<li>Works alongside <strong>UI Fixes</strong>.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Configuration</div>\n<div class=\"tab-content\"><ul>\n<li><strong>F12:</strong> confirmation before upgrading, spin duration, sounds.</li>\n<li><strong>config.json</strong> (<code>SPT_Runtime/user/mods/itemUpgrader/</code>): house edge, min/max chance, price source, found in raid, money as base or result, equipped items, blacklists. Every option is explained in the file.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Installation</div>\n<div class=\"tab-content\"><p>Requires <strong>SPT 4.1.6</strong>.\n<img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/3N6gTe2.gif\" alt=\"isntall\" /></p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Issues</div>\n<div class=\"tab-content\"><p>Issues? Open one <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/viniHNS/itemUpgrader/issues\" rel=\"noreferrer noopener\">HERE</a></p></div></div></div>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/Q5Q116JYQN\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://ko-fi.com/img/githubbutton_sm.svg\" alt=\"ko-fi\" /></a></p>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/4zJWAjm6rGjy06Or1nbX7pPgsQEkiPxVu39R7LAs.png",
+   "forge_url": "https://sp-mod.com/mod/3176/item-upgrader",
+   "downloads": 55,
+   "favourites": 2,
+   "featured": false,
+   "fika": false,
+   "fika_latest": "unknown",
+   "category": {
+    "id": 4,
+    "title": "Items",
+    "slug": "items"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 24845,
+     "name": "viniHNS",
+     "avatar": "https://files.sp-mod.com/profile-photos/ogIqwBNq35KDCsVssWkVaGgzRn4mQqBe4PAcUa3B_128w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/viniHNS/Item-Upgrader",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 16039,
+     "version": "1.0.0",
+     "description": "<p>Initial release</p>\n",
+     "spt_constraint": "~4.1.6",
+     "fika": "unknown",
+     "downloads": 55,
+     "size": 62012,
+     "link": "https://sp-mod.com/mod/download/3176/item-upgrader/1.0.0",
+     "published_at": "2026-10-19T00:18:00.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "1.0.0",
+   "spt_constraint": "~4.1.6",
+   "all_spt_constraints": [
+    "~4.1.6"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-10-19T00:13:00.000000Z",
+   "updated_at": "2026-10-19T00:19:04.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
+    "cheat_notice": false,
+    "profile_binding_notice": true
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 3177,
+   "hub_id": null,
+   "guid": "com.fums.betterflea",
+   "name": "Better Flea",
+   "slug": "better-flea",
+   "teaser": "Makes the flea better (duh). More live-like, much more balanced, and highly configurable.",
+   "description_html": "<p>Better Flea makes the Flea Market in SPT better (yeah that\u2019s the best opening sentence I could come up with).</p>\n<p>All of the following is configurable in the config so disable what you don\u2019t want:</p>\n<ul>\n<li>Turn off whole groups of items on the Flea Market, with simple true/false toggles.</li>\n<li>Offers look more real: a normal number of items in each offer, more sellers for common items, and some keys, meds, food, fuel and repair kits that are partly used.</li>\n<li>Prices change a little over time. An offer is never cheaper than what a trader pays for the item.</li>\n<li>Options for player selling: a wait before your item sells, a longer wait if you buy items to resell them, and FIR flea.</li>\n<li>Items bought from traders (Fence too) can\u2019t be sold on the Flea Market. No more buying from Fence just to flip it. These items get an orange icon so you know it can\u2019t be sold. I don\u2019t expect you to remember if you bought it from Skier or not</li>\n</ul>\n<h3>Examples</h3>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/MrFums/BetterFlea/refs/heads/main/imageExamples/key.jpg\" alt=\"Key Example\" /></p>\n<p><em>Marked keys with uses left. Fewer uses = cheaper.</em></p>\n<blockquote>\n<p><strong>Roubles display</strong></p>\n<p>The Roubles conversion (the \u20bd amounts next to dollar and euro prices) is not included in Better Flea. To get it, install <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/3021/roubles-equivalent-for-dollars-and-euros\" rel=\"noreferrer noopener\">Roubles Equivalent for Dollars and Euros</a>.</p>\n</blockquote>\n<hr />\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/MrFums/BetterFlea/refs/heads/main/imageExamples/KnightMaskExample1.png\" alt=\"Flea Ban Example\" /> <img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/MrFums/BetterFlea/refs/heads/main/imageExamples/KnightMaskExample2.png\" alt=\"Flea Ban Example 2\" /></p>\n<p><em>Red icon = banned at the Flea Market.</em></p>\n<hr />\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/MrFums/BetterFlea/refs/heads/main/imageExamples/ItemCaseExample1.png\" alt=\"Trader to Flea Ban\" /></p>\n<p><em>Orange icon = bought from a trader, can\u2019t be sold at the Flea Market.</em></p>\n<hr />\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/MrFums/BetterFlea/refs/heads/main/imageExamples/ledx.jpg\" alt=\"LedX Example\" /></p>\n<p><em>LEDX Skin Transilluminator: usually 1 per offer, never more than 3.</em></p>\n<hr />\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/MrFums/BetterFlea/refs/heads/main/imageExamples/bulb.jpg\" alt=\"Bulb Example\" /></p>\n<p><em>A common item like bulbs remain basically untouched, usually people list in large quantity.</em></p>\n<hr />\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Install</div>\n<div class=\"tab-content\"><h3>What you need</h3>\n<ul>\n<li>Better Flea has 2 parts. <strong>The server needs part 1. Every real player needs part 2.</strong></li>\n</ul>\n<table>\n<thead>\n<tr>\n<th>Part</th>\n<th>Folder</th>\n<th>Who installs it</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1. Server mod</td>\n<td><code>SPT_Runtime\\user\\mods\\BetterFlea\\</code></td>\n<td>The server</td>\n</tr>\n<tr>\n<td>2. BepInEx plugin</td>\n<td><code>BepInEx\\plugins\\BetterFlea\\</code></td>\n<td>Every player</td>\n</tr>\n</tbody>\n</table>\n<p><strong>Fika headless client: do NOT install the BepInEx plugin on it.</strong> It only needs the server mod on the server.</p>\n<h3>How to install</h3>\n<ol>\n<li>Download <code>BetterFlea-1.0.0.zip</code>.</li>\n<li>Open your SPT install folder.</li>\n<li>Extract the zip into this folder. The 2 parts go to the correct folders by themselves.</li>\n<li>Only the server host needs the server component. Obviously. Every REAL player needs the BepInEx plugin.</li>\n</ol>\n<h3>How to uninstall</h3>\n<p>Delete these 2 folders:</p>\n<ul>\n<li><code>SPT_Runtime\\user\\mods\\BetterFlea\\</code></li>\n<li><code>BepInEx\\plugins\\BetterFlea\\</code></li>\n</ul>\n<p>Better Flea does not change player profiles. You do not need to clean anything else.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Settings</div>\n<div class=\"tab-content\"><p>All settings are in <code>SPT_Runtime\\user\\mods\\BetterFlea\\config.jsonc</code>. Each setting has a note next to it.</p>\n<ul>\n<li>Open the file with a text editor, Notepad++ or VSCode if you\u2019re a normal human.</li>\n<li>After you change a setting, restart the server.</li>\n<li>If the server log says \u201cUnknown setting\u201d, check the spelling of that setting.</li>\n<li>If you are stupid and change random settings in the config and want it back to default, just delete it and restart the server. It will regenerate.</li>\n</ul>\n<p>The file has 4 parts. Each part has its own tab: <strong>Flea</strong>, <strong>Offers</strong>, <strong>Prices</strong> and <strong>Selling</strong>.</p>\n<h3>Debug</h3>\n<p><code>debugLogging</code>: true = write a lot of extra lines in the server log. Use this only to test. Then set it back to false. Unless you are actively developing or wanting to contribute to my mod, just leave this disabled.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Flea</div>\n<div class=\"tab-content\"><h3>1. Flea: what players can buy</h3>\n<ul>\n<li><code>enableBsgBlacklist</code>: true = also use B\u2217\u2217\u2018s own list of banned items (for example M993 ammo or Knight\u2019s Mask - shameless plug go install my Knight Mask fix mod).</li>\n<li><code>bannedCategories</code>: true = remove that whole group of items from the Flea Market.</li>\n</ul>\n<p>[IMAGE 5: Death Knight, \u201cBanned at the Flea Market\u201d]</p>\n<p><em>A banned item. Move the mouse over the red icon to see why.</em></p>\n<table>\n<thead>\n<tr>\n<th>Group</th>\n<th>Switches</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>weapons</code></td>\n<td><code>guns</code>, <code>throwables</code>, <code>melee</code></td>\n</tr>\n<tr>\n<td><code>ammo</code></td>\n<td><code>rounds</code>, <code>ammoBoxes</code></td>\n</tr>\n<tr>\n<td><code>weaponParts</code></td>\n<td><code>magazines</code>, <code>sights</code>, <code>suppressors</code>, <code>otherParts</code></td>\n</tr>\n<tr>\n<td><code>gear</code></td>\n<td><code>bodyArmor</code>, <code>armoredRigs</code>, <code>chestRigs</code>, <code>backpacks</code>, <code>armorPlates</code>, <code>headwear</code>, <code>helmetAttachments</code>, <code>faceCovers</code>, <code>eyewear</code>, <code>headphones</code>, <code>armbands</code>, <code>containers</code></td>\n</tr>\n<tr>\n<td><code>keys</code></td>\n<td><code>mechanicalKeys</code>, <code>markedKeys</code>, <code>keycards</code></td>\n</tr>\n<tr>\n<td><code>medical</code></td>\n<td><code>medkits</code>, <code>bandagesAndSplints</code>, <code>painkillers</code>, <code>stimulants</code></td>\n</tr>\n<tr>\n<td><code>other</code></td>\n<td><code>foodAndDrink</code>, <code>barterItems</code>, <code>info</code>, <code>maps</code>, <code>posters</code>, <code>specialEquipment</code></td>\n</tr>\n</tbody>\n</table>\n<p>Each item is in only one group. For example, <code>mechanicalKeys</code> does not include marked keys, and <code>chestRigs</code> does not include armored rigs.</p>\n<p>For single items, use item IDs or category IDs:</p>\n<ul>\n<li><code>bannedItems</code>: these items are never on the Flea Market.</li>\n<li><code>allowedItems</code>: these items are always on the Flea Market, even if a group is banned.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Offers</div>\n<div class=\"tab-content\"><h3>2. Generated offers: the offers the server makes</h3>\n<p>These are the offers from the server, not offers from players.</p>\n<p><strong>How many offers (<code>listings</code>)</strong></p>\n<p>Base SPT feels too empty to me on the Flea, this pumps it up. Set this around 2 or 3 to fix this if you don\u2019t like it too. 2 by default.</p>\n<ul>\n<li>Normal SPT has around 7 to 30 offers for each item.</li>\n<li><code>multiplier</code>: 1 = normal, 2 = double, 0 = no offers (only traders). The highest is 10.</li>\n<li><code>categoryMultipliers</code>: a different number for one group, for example <code>\"keys.markedKeys\": 3.0</code>.</li>\n<li><code>rarityMultipliers</code>: more offers for common items, fewer for rare items.</li>\n<li>More offers use more server memory, it\u2019s not much but don\u2019t go stupid with it. I usually like it around the x2 or x3 mark and don\u2019t notice a change in resource usage.</li>\n</ul>\n<p><strong>Items in one offer (<code>itemsPerOffer</code>)</strong></p>\n<p>Makes offers more like the live flea - for example wires you will see a lot more of one type listed but something like Bulbex won\u2019t have 8 in one listing as they are much rarer, players usually don\u2019t have that many to flog.</p>\n<table>\n<thead>\n<tr>\n<th>Profile</th>\n<th>Which items</th>\n<th>Items in one offer</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>bulk</code></td>\n<td>Common small barter items: bulbs, wires, bolts, tape, cigarettes</td>\n<td>1 to 20. Usually small. 20 is rare.</td>\n</tr>\n<tr>\n<td><code>stock</code></td>\n<td>Rare small barter items. Common meds, food and weapon parts.</td>\n<td>1 to 6. Usually 1 or 2.</td>\n</tr>\n<tr>\n<td><code>few</code></td>\n<td>Very rare items, big items, and all gear: GPU, LEDX, rigs, helmets</td>\n<td>1 to 3. Usually 1.</td>\n</tr>\n</tbody>\n</table>\n<ul>\n<li><code>max</code>: the most items in one offer.</li>\n<li><code>falloff</code>: from 0 to 1. Lower = more offers with only 1 item.</li>\n<li><code>armoredRigsSingle</code>: true = armored rigs always have 1 per offer.</li>\n<li>Ammo remains untouched.</li>\n</ul>\n<p>[IMAGE 7: LEDX, 5 to 10 per offer]</p>\n<p><em>Base SPT: LEDX offers with 5 to 10 in one offer.</em></p>\n<p>[IMAGE 6: LEDX, 1 to 3 per offer]</p>\n<p><em>Better Flea: LEDX offers with 1 to 3 in one offer. Usually 1.</em></p>\n<p><strong>Partly used items (<code>usedItems</code>)</strong></p>\n<p>I personally hate seeing marked keys listed with full durability. I then also dislike having a 1/x use key being half the price of a 2/x. In live, players usually try and flog it for a bit more - it\u2019s annoying but more realistic :)</p>\n<ul>\n<li>Some offers have items that are partly used, for example a key with 3 uses left or fuel at 10/100.</li>\n<li>The price is lower when less is left.</li>\n<li><code>usedChance</code>: the chance that an offer is partly used. 0.6 = 60%.</li>\n<li>Keys: <code>usesLeftFalloff</code> from 0 to 1 (lower = more keys with only 1 use left). <code>oneUsePricePercent</code> = the price of a key with 1 use left, in % of a new key.</li>\n<li>Meds, food, fuel and repair kits: <code>lowAmountBias</code> (1 = any amount left, higher = more offers that are almost empty).</li>\n</ul>\n<p>[IMAGE 2: Dorm 314 keys, 1/10 to 7/10]</p>\n<p><em>Used marked keys. The price goes up with the uses left.</em></p>\n<p>[IMAGE 3: Dorm 314 keys, 10/10]</p>\n<p><em>New marked keys (10/10) cost the most.</em></p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Prices</div>\n<div class=\"tab-content\"><h3>3. Prices</h3>\n<p>I would personally recommend setting the markedKeyMultiplier to 1.5 as I feel marked keys a bit too cheap in base SPT. I\u2019ve left this untouched for the default.</p>\n<ul>\n<li><code>markedKeyMultiplier</code>: the Flea Market price of the 7 marked keys. 1 = normal, 1.5 = 50% more. Trader prices do not change.</li>\n<li><code>floor</code>: an offer is never cheaper than the most a trader pays for the item, plus <code>marginPercent</code>. This stops players buying on the Flea Market and selling to a trader for profit.</li>\n<li><code>logTraderProfitLoops</code>: true = at start, the server log shows items that one trader sells for less than another trader pays. Better Flea only shows these. It does not change them.</li>\n<li><code>drift</code>: prices go up and down a little over time, at most <code>maxDriftPercent</code>. Only new offers get the new price.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Selling</div>\n<div class=\"tab-content\"><h3>4. Player selling</h3>\n<p>I\u2019ve tried to balance flipping, it\u2019s far too overpowered and it\u2019s very easy to just buy from Fence and resell. I have left purchaseLock on by default - this makes it so any item bought from a trader cannot be sold on the flea; disable this if you don\u2019t like it.</p>\n<p>[IMAGE 1: case, \u201cTrader item\u201d]</p>\n<p><em>Bought from a trader. The orange icon means it can\u2019t be sold at the Flea Market.</em></p>\n<p>Well whats the difference between flipPenalty and purchaseLock?</p>\n<table>\n<thead>\n<tr>\n<th></th>\n<th><code>flipPenalty</code></th>\n<th><code>purchaseLock</code></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>What happens</strong></td>\n<td>The item <strong>can</strong> be sold. The player waits <strong>longer</strong> for a buyer.</td>\n<td>The item can <strong>never</strong> be sold on the Flea Market.</td>\n</tr>\n<tr>\n<td><strong>Which purchases</strong></td>\n<td>Traders, Fence and the Flea Market</td>\n<td>Traders and Fence</td>\n</tr>\n<tr>\n<td><strong>When it starts</strong></td>\n<td>After the player buys <strong>many</strong> of one item (more than 2). Fence counts 3 times.</td>\n<td>From the <strong>first</strong> item</td>\n</tr>\n<tr>\n<td><strong>How long</strong></td>\n<td>60 minutes. A server restart forgets it.</td>\n<td><strong>Forever</strong>, while the player has the item. It is saved.</td>\n</tr>\n<tr>\n<td><strong>Ammo and other stacks</strong></td>\n<td>Yes</td>\n<td>No</td>\n</tr>\n<tr>\n<td><strong>Needs</strong></td>\n<td><code>saleDelay</code> on</td>\n<td>Nothing</td>\n</tr>\n<tr>\n<td><strong>The player sees</strong></td>\n<td>Nothing. The item only sells slower.</td>\n<td>The orange icon, a grey item and a warning</td>\n</tr>\n</tbody>\n</table>\n<p><strong>In short:</strong> <code>purchaseLock</code> = \u201cyou cannot sell what you bought from a trader\u201d. <code>flipPenalty</code> = \u201cbuying lots of one item to resell is slow\u201d. Use both: <code>flipPenalty</code> also covers items bought on the Flea Market, and ammo.</p>\n<ul>\n<li><code>enabled</code>: false = players cannot sell on the Flea Market.</li>\n<li><code>foundInRaidOnly</code>: true = players can only sell items that are found in raid. Parts on a gun must also be found in raid.</li>\n<li><code>saleDelay</code>: players wait between <code>minMinutes</code> and <code>maxMinutes</code> before the first buyer comes. <code>noDelayChance</code> is the chance of no wait.</li>\n<li><code>flipPenalty</code>: if a player buys many of one item and then sells it on the Flea Market, they wait longer for a buyer.\n<ul>\n<li><code>freePurchases</code>: a player can buy this many with no extra wait.</li>\n<li><code>maxExtraMinutes</code>: the longest extra wait.</li>\n<li><code>fenceMultiplier</code>: 1 item from Fence counts as this many purchases.</li>\n<li>This only works when <code>saleDelay</code> is on. When the server restarts, it forgets old purchases.</li>\n</ul>\n</li>\n<li><code>purchaseLock</code> (on by default): true = items bought from a trader (also Fence) can never be sold on the Flea Market.\n<ul>\n<li>Players can still use these items, or sell them to a trader.</li>\n<li>Parts on a bought gun are also locked.</li>\n<li>Ammo, ammo boxes and other items that stack are not locked.</li>\n<li>The server saves the locks in <code>data\\purchase-locks.json</code>. It removes locks for items that a player does not have any more.</li>\n</ul>\n</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Client-Side Plugin</div>\n<div class=\"tab-content\"><h3>What the BepInEx plugin does</h3>\n<p>The server makes all the rules. The BepInEx plugin shows them to the player:</p>\n<ul>\n<li><strong>Flea Market icon on items.</strong> Red = banned on the Flea Market. Orange = bought from a trader (only when <code>purchaseLock</code> is on). Move the mouse over the icon to see why.</li>\n<li><strong>The same note in the item tooltip.</strong></li>\n<li><strong>These items are grey</strong> when you add an offer on the Flea Market.</li>\n<li><strong>Quick-sell mods</strong> sell these items to a trader. They do not try the Flea Market first.</li>\n</ul>\n<p>[IMAGE 5: Death Knight, \u201cBanned at the Flea Market\u201d]</p>\n<p><em>Red icon: banned at the Flea Market.</em></p>\n<p>[IMAGE 1: case, \u201cTrader item\u201d]</p>\n<p><em>Orange icon: bought from a trader.</em></p>\n<p>A player without the plugin also cannot sell these items on the Flea Market. But that player sees a big error message, not the small warning.</p>\n<p>The icon comes from the game files on each player\u2019s computer.</p></div></div>\n<div id=\"tabset-1-panel-8\" class=\"tab-panel\"><div class=\"tab-title\">Other Mods</div>\n<div class=\"tab-content\"><h3>Other mods</h3>\n<ul>\n<li><strong>Mods that show prices or colour banned items</strong> see Better Flea\u2019s bans correctly.</li>\n<li><strong>Quicksell mods</strong> should work with the BepInEx plugin. I have only tested with ShowMeTheMoney so please let me know of any issues for others.</li>\n<li><strong>All Quests Checkmarks</strong> will still work. Better Flea adds its own icon and does not change or mess with it\u2019s icon.</li>\n<li><strong>Other mods that change the Flea Market</strong> (number of offers, prices, items in one offer) can do the same thing as Better Flea. The mod that loads last usually wins. Turn off the same feature in one of the 2 mods.</li>\n</ul>\n<p>[IMAGE 4: Death Knight, red icon above the quest checkmark]</p>\n<p><em>Better Flea\u2019s icon sits above the All Quests Checkmarks icon. Both still show.</em></p></div></div>\n<div id=\"tabset-1-panel-9\" class=\"tab-panel\"><div class=\"tab-title\">AI Use</div>\n<div class=\"tab-content\"><h3>AI use</h3>\n<p>Claude / Gemini helped with Better Flea development. The original server aspects of the mod I had for myself on SPT 3.10 and 3.11 but did not release as I made changes directly to the database as I didn\u2019t have that included in the mod.</p>\n<p>The base of the server mod was written by hand and then passed over with an LLM to review and fix any of my syntax / logic issues as I am still learning C#.</p>\n<p>The absolutely fantastic and not definitely slop mod icon was also generated by AI. Shocker I know. I did try and make one in paint for the LOLZ but it was so horrendous I don\u2019t even want to upload it ironically. Have the slop.</p></div></div></div>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/9PryYBeFZZMtMKpk8sYSJcwAyijGa41JQ21PA1i2.png",
+   "forge_url": "https://sp-mod.com/mod/3177/better-flea",
+   "downloads": 38,
+   "favourites": 1,
+   "featured": false,
+   "fika": true,
+   "fika_latest": "compatible",
+   "category": {
+    "id": 16,
+    "title": "Traders",
+    "slug": "traders"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 70223,
+     "name": "Fums",
+     "avatar": "https://files.sp-mod.com/profile-photos/3989d352aff611adb499153d72909a0223390757_128w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/MrFums/BetterFlea",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 16043,
+     "version": "1.0.0",
+     "description": "<p>First release.</p>\n<h2>How to install</h2>\n<ol>\n<li>Download BetterFlea-1.0.0.zip above, below, sideways. However your screen is positioned.</li>\n<li>Open your SPT install folder.</li>\n<li>Extract the zip into this folder. The 2 parts go to the correct folders by themselves.</li>\n</ol>\n<h2>Additional info</h2>\n<ul>\n<li>The server needs the server mod (SPT_Runtime\\user\\mods\\BetterFlea).</li>\n<li>Every player needs the BepInEx plugin (BepInEx\\plugins\\BetterFlea).</li>\n<li>Fika headless client: do NOT install the BepInEx plugin on it.</li>\n</ul>\n<h2>Settings</h2>\n<p>All settings are in SPT_Runtime\\user\\mods\\BetterFlea\\config.jsonc. Each setting has a note next to it.\nRestart the server after you change a setting. Delete the file and restart to get the defaults back.</p>\n<p>See the mod page for what every setting does. There should also be (decent enough) comments in the actual config for you to have a gander into.</p>\n",
+     "spt_constraint": "~4.1.6",
+     "fika": "compatible",
+     "downloads": 38,
+     "size": 66615,
+     "link": "https://sp-mod.com/mod/download/3177/better-flea/1.0.0",
+     "published_at": "2026-10-19T00:31:00.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "1.0.0",
+   "spt_constraint": "~4.1.6",
+   "all_spt_constraints": [
+    "~4.1.6"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-10-19T00:31:00.000000Z",
+   "updated_at": "2026-10-19T01:24:54.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
