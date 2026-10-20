@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-10-20T08:41:34Z",
+ "generated_at": "2026-10-20T14:22:47Z",
  "source": "https://sp-mod.com",
  "filter": "all",
- "mod_count": 2102,
+ "mod_count": 2104,
  "categories": [
   {
    "id": 12,
@@ -203286,11 +203286,11 @@
    "name": "Trader Level Requirements Editor",
    "slug": "trader-level-requirements-editor",
    "teaser": "Let's you alter the level requirements for SPT's traders",
-   "description_html": "<h1>Overview</h1>\n<p>A very small mod I created to customize trader loyalty level requirements since you\u2019re no longer able to play with modified SPT data files as of SPT 4.1. I feel leveling traders in SPT happens too quickly with how minimal the requirements are and how easy it can be to make money, gain reputation, and complete tasks.</p>\n<h2>Configuration</h2>\n<p>The level requirements portion of the config consists of three main properties: <code>\"minLevel\"</code>, <code>\"minSalesSum\"</code>, and <code>\"minStanding\"</code>. Under <code>\"refreshSeconds\"</code>, you have <code>\"min\"</code> and <code>\"max\"</code> to modify a trader\u2019s stock refresh time. All of these are currently set to vanilla SPT values. These values can be changed in <code>config/traders.jsonc</code>.</p>\n<ul>\n<li><code>\"minLevel\"</code> minimum account/player level required to level up with a trader</li>\n<li><code>\"minSalesSum\"</code> minimum amount of currency spent with a trader to level them up</li>\n<li><code>\"minStanding\"</code> minimum reputation/standing required with a trader to level them up</li>\n<li><code>\"min\"</code> minimum time (in seconds) for a trader\u2019s stock to refresh</li>\n<li><code>\"max\"</code> maximum time for a trader\u2019s stock to refresh</li>\n</ul>\n<p>Each trader is identified by their trader ID and in-game name. Loyalty levels are represented with numbers <code>\"1\"</code>, <code>\"2\"</code>, <code>\"3\"</code>, and <code>\"4\"</code>.</p>\n<blockquote>\n<p>Avoid adding custom traders to the config. A custom trader\u2019s properties can be modified directly so do so there and not here; I haven\u2019t tried it myself but I imagine something will break.</p>\n</blockquote>\n<blockquote>\n<p>Refresh timer values must not be negative, and <code>min</code> must not exceed <code>max</code>. Use positive values, as zero can cause a trader to refresh immediately\u2014unless this is want you want, of course. Use the refresh store button at the top of a trader\u2019s inventory screen to actually reset a trader\u2019s stock if you do opt to use a min and max of zero. Avoid extremely long intervals, as excessively large timestamps may overflow and cause the timer to behave incorrectly.</p>\n</blockquote>\n<h2>Installation</h2>\n<p>Installing is the same as every other server mod: extract the <code>\"TraderLevelRequirementsEditor\"</code> folder into <code>SPT_Runtime/user/mods</code></p>\n<h2>Compatibility and known issues</h2>\n<p>I didn\u2019t encounter any issues during my little bit of testing with my mod list of 50+ mods. Other than adding modded traders to the config, I don\u2019t see how else this could cause any issues considering the mod\u2019s simplicity and what it does, but please let me know if you do run into any.</p>\n",
+   "description_html": "<h1>Overview</h1>\n<p>A very small mod I created to customize trader loyalty level requirements since you\u2019re no longer able to play with modified SPT data files as of SPT 4.1. I feel leveling traders in SPT happens too quickly with how minimal the requirements are and how easy it can be to make money, gain reputation, and complete tasks.</p>\n<h2>Configuration</h2>\n<p>The level requirements portion of the config consists of three main properties: <code>\"minLevel\"</code>, <code>\"minSalesSum\"</code>, and <code>\"minStanding\"</code>. Under <code>\"refreshSeconds\"</code>, you have <code>\"min\"</code> and <code>\"max\"</code> to modify a trader\u2019s stock refresh time. All of these are currently set to vanilla SPT values. These values can be changed in <code>config/traders.jsonc</code>.</p>\n<ul>\n<li><code>\"minLevel\"</code> minimum account/player level required to level up with a trader</li>\n<li><code>\"minSalesSum\"</code> minimum amount of currency spent with a trader to level them up</li>\n<li><code>\"minStanding\"</code> minimum reputation/standing required with a trader to level them up</li>\n<li><code>\"min\"</code> minimum time (in seconds) for a trader\u2019s stock to refresh</li>\n<li><code>\"max\"</code> maximum time for a trader\u2019s stock to refresh</li>\n</ul>\n<p>Each trader is identified by their trader ID and in-game name. Loyalty levels are represented with numbers <code>\"1\"</code>, <code>\"2\"</code>, <code>\"3\"</code>, and <code>\"4\"</code>.</p>\n<blockquote>\n<p>Avoid adding custom traders to the config. A custom trader\u2019s properties can (typically) be modified directly so do so there and not here; I haven\u2019t tried it myself but I imagine something will break.</p>\n</blockquote>\n<blockquote>\n<p>Refresh timer values must not be negative, and <code>min</code> must not exceed <code>max</code>. Use positive values, as zero can cause a trader to refresh immediately\u2014unless this is want you want, of course. Use the refresh store button at the top of a trader\u2019s inventory screen to actually reset a trader\u2019s stock if you do opt to use a min and max of zero. Avoid extremely long intervals, as excessively large timestamps may overflow and cause the timer to behave incorrectly.</p>\n</blockquote>\n<h2>Installation</h2>\n<p>Installing is the same as every other server mod: extract the <code>\"TraderLevelRequirementsEditor\"</code> folder into <code>SPT_Runtime/user/mods</code></p>\n<h2>Compatibility and known issues</h2>\n<p>I didn\u2019t encounter any issues during my little bit of testing with my mod list of 50+ mods. Other than adding modded traders to the config, I don\u2019t see how else this could cause any issues considering the mod\u2019s simplicity and what it does, but please let me know if you do run into any.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/b22isnT7w8cYrk7O0AiC0WTGsNWd30gHjC43ixux.png",
    "forge_url": "https://sp-mod.com/mod/3005/trader-level-requirements-editor",
-   "downloads": 449,
-   "favourites": 4,
+   "downloads": 471,
+   "favourites": 5,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -203323,7 +203323,7 @@
      "description": "<p>Added the ability to modify a trader\u2019s stock refresh timer</p>\n",
      "spt_constraint": "~4.1",
      "fika": "unknown",
-     "downloads": 2,
+     "downloads": 24,
      "size": 9886,
      "link": "https://sp-mod.com/mod/download/3005/trader-level-requirements-editor/1.1.0",
      "published_at": "2026-10-19T19:54:00.000000Z",
@@ -203350,7 +203350,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-10-19T19:56:00.000000Z",
-   "updated_at": "2026-10-19T19:57:03.000000Z",
+   "updated_at": "2026-10-20T12:31:12.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -208017,10 +208017,10 @@
    "name": "Ultrawide Stash",
    "slug": "ultrawide-stash",
    "teaser": "Stretch that stash baby.",
-   "description_html": "\n<h1>\u26a0\ufe0f ULTRAWIDE MONITORS ONLY</h1>\n<p><strong>On a 16:9 monitor this does nothing.</strong> EFT scales its menu by height, so 1080p,\n1440p and 4K all get the same width to work with and none of it is spare. 16:10 too.\nYou need a screen wider than 16:9 for there to be any room to fill.</p>\n<hr />\n<p>Your stash is 10 columns wide, and on an ultrawide there are a few hundred pixels sitting\nempty beside it. This widens the stash panel and fills them. On 3440x1440 that\u2019s\n<strong>10x68 \u2192 19x36</strong> \u2014 same capacity, half the scrolling.</p>\n\n<p><strong>What you get:</strong></p>\n<ul>\n<li><strong>16:9</strong> (1920x1080, 2560x1440, 3840x2160) \u2014 10 columns, nothing changes</li>\n<li><strong>21:9</strong> (2560x1080, 3440x1440) \u2014 19 columns</li>\n<li><strong>32:9</strong> (5120x1440) \u2014 39 columns</li>\n</ul>\n<h2>\u26a0\ufe0f Back up your profile first</h2>\n<p>Changing the shape of your stash means moving items, so <strong>this mod rewrites your profile\nfile</strong>. It takes a backup before every change (your original plus the two most recent,\nkept in <code>%LOCALAPPDATA%\\UltrawideStash\\backups</code> so they stay out of your profiles folder)\nand hands the result to SPT to save \u2014 but it\u2019s a young mod, and anything that rewrites a profile\ncan damage one. <strong>Copy <code>SPT_Runtime/user/profiles</code> somewhere safe before your first\nstart.</strong></p>\n<p>Nothing in the mod deletes an item, so the expected worst case is a misplaced item rather\nthan a missing one. Expected, not guaranteed.</p>\n<h2>Install</h2>\n<p>Unzip over your SPT folder. No setup, no config needed. <strong>Start the server before the\ngame</strong>, as usual.</p>\n<p>Removing it later takes one extra step \u2014 see <a href=\"#uninstalling\">Uninstalling</a>.</p>\n<h2>Good to know</h2>\n<ul>\n<li><strong>Same capacity by default</strong> \u2014 wider and shorter, not extra storage. Set\n<code>compensateRows: false</code> in the config to keep every row.</li>\n<li><strong>Every edition</strong>, hideout stash upgrades included.</li>\n<li>Items that no longer fit get packed back in; items that already fit are never shuffled\n\u2014 including anything in extra rows from a stash-rows bonus.</li>\n<li>Sizes itself to your screen. You can set <code>columns</code> by hand in\n<code>ultrawidestash.config.json</code>, capped at what your monitor can show.</li>\n<li><strong>Wide at the traders and on the flea market</strong> (new in 1.1.0) \u2014 on the trader screen\nthe stash grows left and the Buy / Sell column moves over to make room. When you list\nan item on the flea market, the add-offer window gets wider so your whole stash shows.</li>\n<li><strong>Wide on the transfer screens too</strong> \u2014 the scav loot transfer after a raid, receiving\nitems from mail, and putting items into a hideout area. The stash grows into the empty\nspace beside the screen and <strong>never covers the buttons</strong> (Next, Sell All, Receive All\nand the rest). Turn these, the traders and the flea window off with\n<code>WidenTransferScreens</code> in the BepInEx config.</li>\n<li><strong>Menu only \u2014 never in raid.</strong> Your inventory in raid looks exactly like vanilla:\ncrates, bodies and loot panels are left alone. The stash widens again when you\u2019re back\nin the menu.</li>\n<li><strong>Stuck at 10 columns?</strong> Look in the <strong>server</strong> log. If the game couldn\u2019t widen the\nstash, it says why there. The usual cause is EFT itself set to a 16:9 resolution on a\nwider monitor. Set EFT\u2019s resolution in <em>Settings \u2192 Graphics</em> to your monitor\u2019s own.</li>\n<li><strong>Stash narrower than your screen, or scrolling sideways?</strong> Check <code>GearPanelReserve</code>\nin <code>BepInEx/config/com.mybutthasarash.ultrawidestash.cfg</code> is <strong>620</strong>. A higher number\nleaves the stash less room: at 1000 a 32:9 screen gets 27 columns instead of 39. The\nserver log warns you when it\u2019s changed.</li>\n</ul>\n<h1>Uninstalling \u2014 set <code>columns</code> to 10 first</h1>\n<ol>\n<li>In <code>ultrawidestash.config.json</code>, set <code>\"columns\": 10</code> \u2014 the number, not <code>\"auto\"</code>.</li>\n<li><strong>Start the server once</strong> and let it finish loading. It packs everything back into a\nvanilla stash, backing up your profile first.</li>\n<li>Delete the files \u2014 and, once you\u2019re happy with your stash, the backups folder at\n<code>%LOCALAPPDATA%\\UltrawideStash</code>.</li>\n</ol>\n<p><strong>If you just delete it instead</strong>, your stash snaps back to 10 columns and the game moves\nanything in columns 11+ to your <strong>sorting table</strong> \u2014 check there first. Anything it misses\nis still in your profile at its old coordinates; SPT never prunes out-of-bounds items.\nReinstall and follow the three steps, or run the included <code>repair-stash.ps1</code> (plain\nPowerShell, no mod needed, shows you what it would do before writing).</p>\n<h2>Compatibility</h2>\n<p>Fine with auto-sort, <strong>UI Fixes</strong>, <strong>Advanced Stash Sorting</strong> and <strong>Loot In Vicinity</strong>\n(the mod stays out of raid, so its Nearby Items panel is untouched).</p>\n<p><strong>SVM (Server Value Modifier)</strong> works too. If you\u2019ve given your stash more rows with SVM,\nthose rows are kept. With the default settings your stash gets wider and shorter but\nholds the same number of cells SVM gave it. Set <code>compensateRows: false</code> to keep SVM\u2019s\nrows and get the extra width as well.</p>\n<p><strong>UIScale.Reloaded</strong> works too, but you no longer need it. Before 1.0.5 this mod only\nwidened the stash if UIScale.Reloaded was installed as well. Without it, EFT keeps the\ninventory screen as a 16:9 block in the middle of the monitor, and the stash stayed at\n10 columns. 1.0.5 widens that block to the full screen itself.</p>\n<p>For <strong>SPT 4.1.x</strong>. Tested on 4.1.6 at 3440x1440, with UIScale.Reloaded and without it,\nand <strong>by a player on a real 5120x1440 (32:9) monitor</strong>: the character screen, the\ntrader screen (fixed in 1.1.1; 1.1.0 only managed 11 of 39 columns there) and the flea\nwindow all show the full 39 columns. Works alongside Kaeno\u2019s Trader Scrolling.\n2560x1080 hasn\u2019t been reported yet. If you play at it, please say how it looks.</p>\n",
+   "description_html": "\n<h1>\u26a0\ufe0f ULTRAWIDE MONITORS ONLY</h1>\n<p>On a 16:9 monitor (1080p, 1440p, 4K) this does nothing. EFT\u2019s menu has no spare width\nthere to fill.</p>\n<hr />\n<p>Widens your stash to fill the empty space beside it on an ultrawide. Same capacity, less\nscrolling: on 3440x1440 a 10x68 stash becomes <strong>19x36</strong>.</p>\n\n<ul>\n<li><strong>21:9</strong> (2560x1080, 3440x1440): 19 columns</li>\n<li><strong>32:9</strong> (5120x1440): 39 columns</li>\n</ul>\n<h2>\u26a0\ufe0f Back up your profile first</h2>\n<p>The mod moves items to fit the new stash shape, so it rewrites your profile. It keeps\nits own backups in <code>%LOCALAPPDATA%\\UltrawideStash\\backups</code>, but copy\n<code>SPT_Runtime/user/profiles</code> somewhere safe before your first start anyway.</p>\n<h2>Install</h2>\n<p>Unzip over your SPT folder. No setup needed.</p>\n<h2>Features</h2>\n<ul>\n<li><strong>Wide everywhere in the menu:</strong> the character screen, traders, the flea market\u2019s\nadd-offer window, the scav loot transfer, mail and hideout transfers. Buttons are never\ncovered.</li>\n<li><strong>Never in raid:</strong> your inventory in raid stays vanilla.</li>\n<li><strong>Every edition</strong>, hideout stash upgrades included.</li>\n<li><strong>Fika:</strong> each player\u2019s stash fits their own screen, so 16:9 friends keep the normal\nstash. Every player needs the mod\u2019s client plugin.</li>\n<li><strong>Sizes itself to your screen.</strong> To set it by hand, change <code>columns</code> in\n<code>ultrawidestash.config.json</code>. Set <code>compensateRows: false</code> to keep every row and get\nextra storage instead of the same capacity.</li>\n</ul>\n<h2>Troubleshooting</h2>\n<ul>\n<li><strong>Stuck at 10 columns?</strong> The server log says why. Usually EFT is set to a 16:9\nresolution: set it to your monitor\u2019s own in <em>Settings \u2192 Graphics</em>.</li>\n<li><strong>Scrolling sideways?</strong> Check <code>GearPanelReserve</code> is <strong>620</strong> in\n<code>BepInEx/config/com.mybutthasarash.ultrawidestash.cfg</code>.</li>\n</ul>\n<h2>Uninstalling</h2>\n<ol>\n<li>Set <code>\"columns\": 10</code> in <code>ultrawidestash.config.json</code> (the number, not <code>\"auto\"</code>).</li>\n<li>Start the server once. It packs everything back into a vanilla stash.</li>\n<li>Delete the mod\u2019s files.</li>\n</ol>\n<p>If you deleted it without doing this, items past column 10 may be in your sorting\ntable. Reinstall and follow the steps, or run the included <code>repair-stash.ps1</code>.</p>\n<h2>Compatibility</h2>\n<p>For <strong>SPT 4.1.x</strong>. Works with auto-sort, UI Fixes, Advanced Stash Sorting, Loot In\nVicinity, SVM (your extra rows are kept), UIScale.Reloaded (not needed) and Kaeno\u2019s\nTrader Scrolling.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/2xbx5p8RzWAY6gR725igRF3bTntUFFhRI3xbf7Sb.png",
    "forge_url": "https://sp-mod.com/mod/3053/ultrawide-stash",
-   "downloads": 833,
+   "downloads": 927,
    "favourites": 5,
    "featured": false,
    "fika": true,
@@ -208049,12 +208049,24 @@
    ],
    "versions": [
     {
+     "id": 16080,
+     "version": "1.1.3",
+     "description": "<h2>Per-player stash width (Fika)</h2>\n<p>Up to 1.1.1 the whole server used the stash width for the host\u2019s screen, so on Fika a 16:9 friend of a 21:9 host got a sideways scrollbar (issue #4). Now each player\u2019s game tells the server its own screen, and each player gets a stash that fits it. Items the server adds (trader purchases, mail, rewards) land inside that player\u2019s columns.</p>\n<p>Every player needs the 1.1.3 client plugin. A player\u2019s stash changes the next time they start the game.</p>\n<h2>Fixes</h2>\n<ul>\n<li>Modded weapons are repacked at their full size, attachments included. Earlier versions could move one partly off the edge of the stash.</li>\n<li>The 32:9 scav loot transfer now reaches all 39 columns on paper (not yet tried on a real monitor).</li>\n</ul>\n<h2>Updating</h2>\n<p>Back up <code>SPT_Runtime/user/profiles</code>, then unzip over your SPT folder.</p>\n<p>Tested on an SPT 4.1.6 server, not yet in game or in a real Fika session. If something looks wrong, the <code>[UltrawideStash]</code> lines in the host\u2019s server log say what each player got and why.</p>\n",
+     "spt_constraint": "~4.1.0",
+     "fika": "compatible",
+     "downloads": 12,
+     "size": 85614,
+     "link": "https://sp-mod.com/mod/download/3053/ultrawide-stash/1.1.3",
+     "published_at": "2026-10-20T10:56:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 15725,
      "version": "1.1.1",
      "description": "<p>A fix release for the trader screen on 32:9 monitors. Only the client plugin changed.</p>\n<h2>The bug</h2>\n<p>Reported at 5120x1440 (Forge issue #3): on the trader screen the stash only widened part of the way, with a horizontal scrollbar, and about a quarter of the monitor on the left stayed empty. The log said <code>plan: room for 11 of 39 columns</code>.</p>\n<h2>Why</h2>\n<p>At 21:9 EFT draws the trader screen across the full width of the monitor. At 32:9 it draws it as a 16:9 block in the middle, with empty space either side. 1.1.0 assumed the 21:9 layout, so it could only find room for 11 columns inside that block.</p>\n<p>A second fault made it worse: because the stash didn\u2019t fit, the mod re-planned with the wrong numbers, and the panel jumped by a few pixels every time a trader was opened.</p>\n<h2>What changed</h2>\n<ul>\n<li>On a screen where the trader block is narrower than the monitor, the mod now widens it to the full width first, the same way 1.0.5 does for the character screen. The trader\u2019s goods move to the left edge, the stash to the right, and the Buy / Sell column moves over between them, as at 21:9.</li>\n<li>The panel no longer jumps when you open a trader.</li>\n</ul>\n<p>On 16:9 and 21:9 screens nothing changes. The trader screen already fills the screen there, so the new step does nothing.</p>\n<h2>Updating from 1.1.0</h2>\n<p>Unzip over your SPT folder, replacing the old files. The server part is the same apart from its version number, so your stash and config are left as they are.</p>\n<h2>Notes</h2>\n<p>Not yet tried in game at 32:9. The fix is worked out from the reporter\u2019s log and covered by tests built from it. If you play at 5120x1440, please open a trader and say how it looks. Your <code>BepInEx/LogOutput.log</code> helps: look for <code>stretched: the trader screen was a 1920 px frame</code> and a <code>CHECK ... fits</code> line.</p>\n<p>277 logic tests, 19 database checks.</p>\n",
      "spt_constraint": "~4.1.0",
      "fika": "compatible",
-     "downloads": 296,
+     "downloads": 378,
      "size": 69340,
      "link": "https://sp-mod.com/mod/download/3053/ultrawide-stash/1.1.1",
      "published_at": "2026-10-02T00:06:00.000000Z",
@@ -208145,7 +208157,7 @@
      "dependencies": []
     }
    ],
-   "latest_version": "1.1.1",
+   "latest_version": "1.1.3",
    "spt_constraint": "~4.1.0",
    "all_spt_constraints": [
     "~4.1.0"
@@ -208153,7 +208165,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-09-22T22:39:00.000000Z",
-   "updated_at": "2026-10-14T15:31:13.000000Z",
+   "updated_at": "2026-10-20T14:13:29.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -208174,8 +208186,8 @@
    "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Purpose</div>\n<div class=\"tab-content\"><p><strong>Installed a quest mod and found no wiki for it? Now there is one.</strong></p>\n<p>QuestCodex is a browser quest wiki built from <strong>the quests your server actually loaded</strong>, so mod quests and mod changes show up as they are in your game. It also has quest maps, raid prep, unlock paths and a Kappa tracker for your profile.</p>\n<blockquote>\n<p><strong>Note:</strong> Read-only. It never changes your quests, profiles or traders.</p>\n</blockquote>\n<p>\ud83d\udcd6 <strong>Full guide (English / \ud55c\uad6d\uc5b4 / \u0420\u0443\u0441\u0441\u043a\u0438\u0439): <a target=\"_blank\" class=\"external-link\" href=\"https://viper-9.github.io/QuestCodex/\" rel=\"noreferrer noopener\">https://viper-9.github.io/QuestCodex/</a></strong></p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Screenshots</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/wiki-full.png\" alt=\"Quest wiki\" />\n<em>Every quest on your server in one list. Pick a trader, search, filter by <code>Vanilla</code>, <code>Mod</code> or faction, and sort by chain, level or name.</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/wiki-mod-list.png\" alt=\"Mod quests labeled with their source mod\" />\n<em>Each mod quest is tagged with the mod it came from, and each mod gets its own color.</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/wiki-mod-filter.png\" alt=\"Source mod filter\" />\n<em>Pick one or more source mods to see only the quests they added.</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/wiki-compact-tags.png\" alt=\"Compact tags\" />\n<em>Lots of quest mods? Turn on <code>Compact tags</code> to shrink mod names into colored dots. Hover a dot to see the mod.</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/wiki-quest-detail.png\" alt=\"Quest details\" />\n<em>Click a row to open objectives, requirements, rewards and linked quests in place.</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/wiki-quest-map.png\" alt=\"Quest locations map\" />\n<em>Open the map from any quest to see item spots, kill zones and flare zones, with locked doors and extracts marked.</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/wiki-quest-map-icebreaker.png\" alt=\"Icebreaker map\" />\n<em>The Icebreaker, deck by deck, with keypad codes, explosive doors and frozen hatches. Ready ahead of SPT v5.</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/wiki-guide-weapons.png\" alt=\"Quest guide\" />\n<em>Hit <code>Guide</code> to see what to bring before a raid, including every gun that counts, mod guns too.</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/progress-overview-full.png\" alt=\"Progress overview\" />\n<em>Progress: trader progress, what to turn in or accept now, and every quest by status. Updates live as the game saves.</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/progress-overview-quests.png\" alt=\"Follow-up counts\" />\n<em>Each quest shows how many quests it still leads to. Sort by follow-ups to see what\u2019s holding back your progress.</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/progress-raid-full.png\" alt=\"Raid prep\" />\n<em>Raid prep: pick a map and see its objectives, items to bring and loot, and gear rules.</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/progress-raid-map-window.png\" alt=\"Raid prep map\" />\n<em>Every quest location and extract on the map you picked, in a larger floating window.</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/progress-items-full.png\" alt=\"Needed items\" />\n<em>Needed items: everything your remaining quests ask for, against what\u2019s in your stash (FIR included).</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/progress-unlocks-full.png\" alt=\"Unlock paths\" />\n<em>Unlock paths: every trader offer and craft a quest unlocks, sorted by how many quests you have left.</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/progress-unlocks-path.png\" alt=\"Unlock path window\" />\n<em>Open the full path step by step, grouped by trader, and click a quest to focus on what leads to it.</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/progress-kappa-full.png\" alt=\"Kappa tracker\" />\n<em>Kappa tracker: what\u2019s left before Kappa, read from your server\u2019s Collector requirements, so quest mods that change them work too.</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/progress-kappa-tree.png\" alt=\"Kappa tree view\" />\n<em>See each trader\u2019s Kappa quests as a tree. Drag to move around, and click a quest to see what comes before and after it.</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/progress-kappa-items.png\" alt=\"Collector items\" />\n<em>Collector items: what you still need to hand in, with the containers they spawn in and the bots that carry them.</em></p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Installation</div>\n<div class=\"tab-content\"><ol>\n<li>Download <code>QuestCodex-&lt;version&gt;.zip</code> from <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Viper-9/QuestCodex/releases\" rel=\"noreferrer noopener\">Releases</a>.</li>\n<li>Extract it and copy the <code>SPT_Runtime</code> folder into your SPT install root, overwriting when asked. The install root is the folder that <em>contains</em> <code>SPT_Runtime</code> (e.g. <code>C:\\SPT</code>).\n<ul>\n<li>If your server root <em>is</em> the <code>SPT_Runtime</code> folder (older SPT layout), copy just <code>SPT_Runtime\\user\\mods\\QuestCodex</code> into your server\u2019s <code>user\\mods\\</code> instead.</li>\n</ul>\n</li>\n<li>Restart the server.</li>\n</ol></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Opening it</div>\n<div class=\"tab-content\"><p>Start the server, then open <strong><code>https://127.0.0.1:6969/questcodex</code></strong> in your browser, or use the mod card on the SPT server web page (<code>https://127.0.0.1:6969</code>).</p>\n<ul>\n<li>If you get a certificate warning, proceed. It\u2019s the same self-signed certificate the SPT server web page uses.</li>\n<li>It opens <strong>only on the machine running the server</strong> (the server binds to <code>127.0.0.1</code>).</li>\n<li>Keep it open on a second monitor while you play. It doesn\u2019t touch the game.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Features</div>\n<div class=\"tab-content\"><ul>\n<li><strong>Wiki</strong>: trader filter, search, <code>Vanilla</code> / <code>Mod</code> / <code>B\u2217\u2217\u2217 only</code> / <code>U\u2217\u2217\u2217 only</code> chips, source mod filter, chain-aware sorting, inline quest details, chain jumps, deep links and a <code>Compact tags</code> toggle that shrinks mod tags to colored dots</li>\n<li><strong>Mod attribution</strong>: every mod quest labeled with its source mod, color-coded, and vanilla quests a mod overrides marked with that mod\u2019s name</li>\n<li><strong>Branch warnings</strong>: tags and warnings on mutually exclusive quests, so you know what you\u2019d lock out</li>\n<li><strong>Quest guide</strong>: maps, allowed weapons, required or banned gear, items to hand over or plant, and raid rules</li>\n<li><strong>Quest map</strong>: item spots, kill zones and flare zones for each quest, with locked doors and extracts (PMC, scav, shared, transits) marked</li>\n<li><strong>Mod maps</strong>: the Icebreaker and the expanded Interchange, ready ahead of SPT v5</li>\n<li><strong>Progress</strong>: overview with full quest details and follow-up counts (sort by how many quests a quest still leads to), raid prep per map with its own quest map, and a needed-items list, updated live from your profile</li>\n<li><strong>Unlock paths</strong>: the quests left to unlock each trader offer and craft, with the closest path, a step-by-step path window and unreachable sources flagged</li>\n<li><strong>Kappa tracker</strong>: what\u2019s left before Kappa, as a list or a tree per trader, with Collector items and where they spawn</li>\n<li><strong>Fast startup</strong>: loot data is cached on disk after the first build, and a <code>Refresh data</code> button rebuilds it without restarting the server</li>\n<li><strong>Language and theme</strong>: <code>en</code> / <code>kr</code> / <code>ru</code> interface, <code>System</code> / <code>Light</code> / <code>Dark</code> themes, collapsible side menu</li>\n</ul>\n<p>See the <strong><a target=\"_blank\" class=\"external-link\" href=\"https://viper-9.github.io/QuestCodex/\" rel=\"noreferrer noopener\">docs</a></strong> for details and screenshots of each page.</p></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Compatibility</div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Compatibility</div>\n<div class=\"tab-content\"><p>Works well with:</p>\n<ul>\n<li><strong><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/3158/briefing\" rel=\"noreferrer noopener\">Briefing</a></strong>: an in-game tab that reads its quest info from QuestCodex, so mod quests show up there too</li>\n<li><strong>Quest mods</strong>: compatible with <strong>Lotus</strong>, <strong>Painter</strong>, <strong>Artem</strong>, <strong>ISB Aishi</strong>, <strong>WTT-Armory</strong> and <strong><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/3026/quest-backport\" rel=\"noreferrer noopener\">Quest Backport</a></strong>. Their quests and traders appear next to the vanilla ones, tagged with the mod name, and the vanilla quests Quest Backport updates are marked as overridden and show the new conditions</li>\n<li><strong><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2866/manimals-icebreaker-backport\" rel=\"noreferrer noopener\">Manimal\u2019s Icebreaker Backport</a></strong> and <strong>ManimalInterchange</strong>: the Icebreaker and expanded Interchange maps turn on by themselves</li>\n</ul>\n<p>Some quest-easing or quest-filtering mods may <strong>not</strong> be compatible. See <strong>Known limitations</strong>.</p></div></div>\n<div id=\"tabset-1-panel-8\" class=\"tab-panel\"><div class=\"tab-title\">Localization</div>\n<div class=\"tab-content\"><p>The interface and the <a target=\"_blank\" class=\"external-link\" href=\"https://viper-9.github.io/QuestCodex/\" rel=\"noreferrer noopener\">docs</a> come in <strong>English, Korean and Russian</strong>. Quest and item names come straight from your server\u2019s locale tables, so they appear in whatever language your SPT install provides.</p>\n<p>Want the interface in your language? Copy <code>web/src/i18n/en.json</code>, translate the values (keep the keys), save it under your language code, and open a pull request.</p>\n<p>Want the docs in your language? Copy <code>docs/_i18n/en.json</code> to <code>docs/_i18n/&lt;language code&gt;.json</code>, translate the values (keep the keys), and open a pull request. I\u2019ll generate the pages and take care of the site config.</p></div></div>\n<div id=\"tabset-1-panel-9\" class=\"tab-panel\"><div class=\"tab-title\">Known limitations</div>\n<div class=\"tab-content\"><p><strong>Mods that hook responses at runtime are invisible here.</strong> QuestCodex reads the quest tables the server merged into memory, so every mod that adds or edits quest JSON is reflected exactly. A mod that rewrites <code>/client/quest/list</code> responses on each request never touches those tables, so you\u2019d see its change in game but not here. If the page and the game disagree, suspect this first.</p>\n<p>Quests a mod injects <strong>from C# code</strong> (<code>CustomQuestService.CreateQuest()</code>) leave no file trace, so they get a generic <code>mod</code> label instead of a mod name.</p>\n<p><strong>Overridden vanilla quests.</strong> A vanilla quest is marked as overridden when a mod ships a file that replaces it. QuestCodex doesn\u2019t check whether the mod actually changed anything in it.</p>\n<p><strong>Quest map coverage.</strong> A few quests have no location data, so their objectives don\u2019t appear on the map. Mod quests show on the map only when the mod defines its zones in data the server can read, or when QuestCodex already ships their positions (the Icebreaker quests do). Maps a mod adds are drawn only when QuestCodex ships a map for them (currently the Icebreaker and the expanded Interchange). Extract positions come from bundled data, so an extract a mod adds or moves may be missing or misplaced. QuestCodex doesn\u2019t track which keys you own, so lock icons only tell you which key a door needs.</p>\n<p><strong>Unlock paths.</strong> The path summary checks the required level against your profile, but trader loyalty and standing are only listed, not checked.</p>\n<p><strong>Kappa tracker.</strong> Container chances for Collector items are estimates worked out from your server\u2019s loot tables and averaged over the maps, not drop rates you\u2019ll see in every raid. Only the Collector hand-in items get loot sources.</p></div></div>\n<div id=\"tabset-1-panel-10\" class=\"tab-panel\"><div class=\"tab-title\">Bug Reports</div>\n<div class=\"tab-content\"><p>Report bugs on <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Viper-9/QuestCodex/issues\" rel=\"noreferrer noopener\">GitHub Issues</a> or the <strong>Issues</strong> tab on this page. Helpful details:</p>\n<ul>\n<li>SPT server version and QuestCodex version</li>\n<li>Your other mods, especially quest-related ones</li>\n<li>The server log from startup</li>\n<li>What you expected versus what the page showed (a screenshot next to the in-game quest helps a lot)</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-11\" class=\"tab-panel\"><div class=\"tab-title\">Credits</div>\n<div class=\"tab-content\"><ul>\n<li><strong>Korean SPT Community</strong>, for answering my questions and all the support</li>\n<li><strong>WTT team</strong> (Artem, Armory) and <strong>Lunnayaluna</strong> (Lotus), whose quest mods QuestCodex was tested against</li>\n<li><strong>Manimal1920</strong>, for allowing full compatibility with <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2866/manimals-icebreaker-backport\" rel=\"noreferrer noopener\">Manimal\u2019s Icebreaker Backport</a></li>\n<li><strong>acidphantasm</strong> (<a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1431/dynamic-maps\" rel=\"noreferrer noopener\">Dynamic Maps</a>), for the map calibration data and the Labyrinth map</li>\n<li><strong>DrakiaXYZ</strong>, for advice on the quest map</li>\n<li><strong>Shebuka</strong> and <strong><a target=\"_blank\" class=\"external-link\" href=\"https://tarkov.dev/\" rel=\"noreferrer noopener\">tarkov.dev</a></strong>, for the SVG maps, extract data and icons (MIT)</li>\n<li><strong>re3mr</strong>, for the 2D Icebreaker map (CC BY-NC-SA 4.0)</li>\n<li><strong>Praxideke</strong>, for the Russian translation</li>\n</ul></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/EMcAnj2YIde22lAZJFACJMjsC50ieuyPwR4WI5Rn.png",
    "forge_url": "https://sp-mod.com/mod/3054/quest-codex",
-   "downloads": 2463,
-   "favourites": 32,
+   "downloads": 3541,
+   "favourites": 45,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -208203,12 +208215,24 @@
    ],
    "versions": [
     {
+     "id": 16075,
+     "version": "1.10.0",
+     "description": "<h1>QuestCodex v1.10.0</h1>\n<h2>Raid Prep Update!</h2>\n<hr />\n<p>The raid prep page now tells you exactly what to grab on each map, and stops spoiling steps the game hasn\u2019t shown you yet.</p>\n<ul>\n<li><strong>Quest items on the map</strong>: Quest items with a fixed spawn now show up as objectives on the map where they spawn. Once you pick one up it disappears from the list, or moves to hand-ins if the quest still wants it</li>\n<li><strong>No more spoilers</strong>: Objectives the game is still hiding stay off the raid prep page and the Briefing tab until they unlock</li>\n</ul>\n<h2>Briefing users</h2>\n<ul>\n<li>This update goes with <strong>Briefing 1.0.1</strong>, so quest items and hidden objectives work the same in the in-game tab. Update both mods together!</li>\n</ul>\n<h2>Also in this update</h2>\n<ul>\n<li>Finding ordinary loot still shows only in the items to find, so the quest list stays clean</li>\n</ul>\n<p>\ud83d\udcd6 <strong>Every feature explained: <a target=\"_blank\" class=\"external-link\" href=\"https://viper-9.github.io/QuestCodex/\" rel=\"noreferrer noopener\">https://viper-9.github.io/QuestCodex/</a></strong></p>\n",
+     "spt_constraint": "4.1.6",
+     "fika": "unknown",
+     "downloads": 184,
+     "size": 3029102,
+     "link": "https://sp-mod.com/mod/download/3054/quest-codex/1.10.0",
+     "published_at": "2026-10-20T08:57:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 15986,
      "version": "1.9.0",
      "description": "<h1>QuestCodex v1.9.0</h1>\n<blockquote>\n<p>\ud83c\udfaf <strong>Briefing is now officially released!</strong> Pair it with QuestCodex to see your quest objectives, required gear and maps right in the game. Give it a try: <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/3158/briefing\" rel=\"noreferrer noopener\">Briefing</a></p>\n</blockquote>\n<h2>Faster Startup Update!</h2>\n<hr />\n<p>QuestCodex now gets the quest catalog ready in the background right after the server starts, so the wiki and the in-game Briefing tab open without the long first wait.</p>\n<ul>\n<li><strong>Background warm-up</strong>: Builds the catalog for the languages you used last time, at low priority so it won\u2019t affect your game.</li>\n</ul>\n<h2>Also in this update</h2>\n<ul>\n<li><strong>Weapon builds in Briefing</strong>: Tasks that need specific mods show the gun, caliber and mods together as one build.</li>\n<li><strong>More reliable loading</strong>: A failed data load is retried on the next request instead of staying broken until a rebuild.</li>\n</ul>\n<p>\ud83d\udcd6 <strong>Docs site with every feature explained: <a target=\"_blank\" class=\"external-link\" href=\"https://viper-9.github.io/QuestCodex/\" rel=\"noreferrer noopener\">https://viper-9.github.io/QuestCodex/</a></strong></p>\n",
      "spt_constraint": "4.1.6",
      "fika": "unknown",
-     "downloads": 109,
+     "downloads": 991,
      "size": 3028205,
      "link": "https://sp-mod.com/mod/download/3054/quest-codex/1.9.0",
      "published_at": "2026-10-16T14:33:00.000000Z",
@@ -208220,7 +208244,7 @@
      "description": "<h1>QuestCodex v1.8.1</h1>\n<h2>In-game Briefing Support Update!</h2>\n<hr />\n<blockquote>\n<p><strong>Note:</strong> After updating mods or changing your mod setup, QuestCodex and Briefing may take about 5\u20137 seconds to load the first time.</p>\n</blockquote>\n<p>QuestCodex now works with <strong>Briefing</strong>, a new in-game mod that brings the Raid prep page right into EFT as its own tab.\nBriefing is still in beta, so it isn\u2019t on Forge yet. If you\u2019d like to try it, read the README at <strong><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Viper-9/Briefing\" rel=\"noreferrer noopener\">https://github.com/Viper-9/Briefing</a></strong> and download it from there. Feedback is very welcome!</p>\n<p>Here\u2019s a quick sneak peek:\n<img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/Briefing/main/media/overview.png\" alt=\"Briefing tab\" /></p>\n<h2>Also in this update</h2>\n<ul>\n<li><strong>Fix: \u201cCouldn\u2019t load the briefing\u201d</strong>: Players using a language the server doesn\u2019t have (like <code>kr-en</code> from the Korean patch \u201cKorean Patch Fix\u201d) now get the closest language instead of an error. Anything unknown falls back to English.</li>\n</ul>\n<p>\ud83d\udcd6 <strong>Docs site with every feature explained: <a target=\"_blank\" class=\"external-link\" href=\"https://viper-9.github.io/QuestCodex/\" rel=\"noreferrer noopener\">https://viper-9.github.io/QuestCodex/</a></strong></p>\n",
      "spt_constraint": "4.1.6",
      "fika": "unknown",
-     "downloads": 293,
+     "downloads": 300,
      "size": 3022894,
      "link": "https://sp-mod.com/mod/download/3054/quest-codex/1.8.1",
      "published_at": "2026-10-15T07:02:00.000000Z",
@@ -208232,7 +208256,7 @@
      "description": "<h1>QuestCodex v1.7.0</h1>\n<h2>Follow-up Counts Update!</h2>\n<hr />\n<p>Not sure which quest to push next? Every quest now shows how many quests it opens up down the line, so you can see at a glance what\u2019s holding back your progress.\n<img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/progress-overview-quests.png\" alt=\"Follow-up counts\" /></p>\n<ul>\n<li><strong>N follow-ups</strong>: Every progress row shows how many quests you still have left after it</li>\n<li><strong>New sort</strong>: Sort by most or fewest follow-ups left</li>\n<li><strong>In the details</strong>: Each unlocked quest shows its own count too</li>\n</ul>\n<h2>Compact tags</h2>\n<p>Running lots of quest mods? Flip on <strong>Compact tags</strong> to turn long mod name tags into small colored dots. Hover a dot to see the mod.\n<img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/QuestCodex/main/docs/assets/images/wiki-compact-tags.png\" alt=\"Compact tags\" /></p>\n<h2>Also in this update</h2>\n<ul>\n<li><strong>More mod colors</strong>: 10 colors instead of 6</li>\n<li><strong>Ready to progress</strong>: The overview\u2019s trader card got a clearer name</li>\n<li><strong>Bigger text</strong>: Easier to read Items and Unlock Paths pages</li>\n</ul>\n",
      "spt_constraint": "4.1.6",
      "fika": "unknown",
-     "downloads": 486,
+     "downloads": 489,
      "size": 2994145,
      "link": "https://sp-mod.com/mod/download/3054/quest-codex/1.7.0",
      "published_at": "2026-10-10T13:46:00.000000Z",
@@ -208316,14 +208340,14 @@
      "description": "<h1>QuestCodex v1.0.0</h1>\n<h2>Public Release!</h2>\n<hr />\n<p>Right now <strong>only the Wiki page is live</strong> \u2014 browse every quest your server actually loaded, vanilla and modded alike.</p>\n<h3>What\u2019s coming</h3>\n<ul>\n<li><strong>Progress page</strong> \u2014 per-profile quest progress, with a Kappa tracker</li>\n<li><strong>Reverse reward lookup</strong> \u2014 pick an item and see every quest that rewards it</li>\n</ul>\n<p>\u2026and more. Stay tuned!</p>\n",
      "spt_constraint": "~4.1.6",
      "fika": "unknown",
-     "downloads": 162,
+     "downloads": 164,
      "size": 2193482,
      "link": "https://sp-mod.com/mod/download/3054/quest-codex/1.0.0",
      "published_at": "2026-09-22T19:04:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.9.0",
+   "latest_version": "1.10.0",
    "spt_constraint": "4.1.6",
    "all_spt_constraints": [
     "4.1.6",
@@ -208332,7 +208356,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-09-22T18:36:00.000000Z",
-   "updated_at": "2026-10-16T14:41:41.000000Z",
+   "updated_at": "2026-10-20T09:00:20.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -215288,11 +215312,11 @@
    "name": "Name Plate",
    "slug": "name-plate",
    "teaser": "Get flex'd on after head-eyes",
-   "description_html": "<h1>Name Plate</h1>\n<p>Make your name stand out in E***************** (SPT 4.1). Give your nickname colors, gradients,\nanimations, a glow and a clan tag. Pick any icon from the game, from a library of 107 extra icons\n(12 of them animated) or from a picture of your own. PMC bots get looks of their own too, so the\nnames on the death screen, the flea market and the dogtags you take aren\u2019t all plain gray.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/JoelHauser/EditionCustomizer/main/docs/names.png\" alt=\"PMC names in Name Plate looks\" /></p>\n<h2>What\u2019s in it</h2>\n<p><strong>Your name</strong></p>\n<ul>\n<li>One color, a gradient, or a color per letter.</li>\n<li>Animations: scroll, pulse, wave, sparkle, rainbow, glitch and bounce.</li>\n<li>Outline, glow, shadow and italic.</li>\n<li>A clan tag like <strong>[EZ] YourName</strong>.</li>\n</ul>\n<p><strong>Your icon</strong></p>\n<ul>\n<li>The game\u2019s own icons, 107 extra icons (12 animated), or your own PNG.</li>\n<li>Icon effects: pulse, glow, flip and float.</li>\n<li>Hide the prestige badge, or swap it for your own picture.</li>\n</ul>\n<p><strong>PMC bots</strong></p>\n<ul>\n<li>Bots get looks on the death screen, the kill list, flea sellers, \u201citem bought by\u201d messages and the dogtags you take.</li>\n<li>About a third wear one of 487 gamer-humor tags.</li>\n</ul>\n<p><strong>Editor (Name Plate.exe)</strong></p>\n<ul>\n<li>A live preview of your look.</li>\n<li>Presets of your own.</li>\n<li>Share codes: copy your look and paste a friend\u2019s.</li>\n<li>A Bots page for how many bots get a look and what they can use.</li>\n</ul>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/JoelHauser/EditionCustomizer/main/docs/editor-icons.png\" alt=\"The Name Plate editor\" /></p>\n<h2>Install</h2>\n<ol>\n<li>Unzip <code>NamePlate-1.0.0.zip</code> into your SPT folder (the one with <code>EscapeFromTarkov.exe</code>).</li>\n<li>Run <strong>Name Plate.exe</strong> from that folder.</li>\n</ol>\n<p>You need:</p>\n<ul>\n<li>SPT 4.1.x.</li>\n<li>For the editor only, the <a target=\"_blank\" class=\"external-link\" href=\"https://dotnet.microsoft.com/download/dotnet/10.0\" rel=\"noreferrer noopener\">.NET 10 Desktop Runtime</a>. Windows offers it if it\u2019s missing.</li>\n</ul>\n<h2>Fika</h2>\n<p>Built to run alongside Fika 2.4.4: real players never get bot looks, and the two mods never patch the same thing in conflicting ways. It hasn\u2019t been tested in a live co-op session yet. Other players see your look only if they also run Name Plate.</p>\n<p>Based on Evgencheg\u2019s <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Evgencheg/Tarkov-Change-Icons\" rel=\"noreferrer noopener\">T*****-Change-Icons</a>.</p>\n",
+   "description_html": "<h1>Name Plate</h1>\n<p>Make your name stand out in E\u2217\u2217\u2217\u2217\u2217\u2217\u2217\u2217\u2217\u2217\u2217\u2217\u2217\u2217\u2217\u2217\u2217 (SPT 4.1). Give your nickname colors, gradients,\nanimations, a glow and a clan tag. Pick any icon from the game, from a library of 107 extra icons\n(12 of them animated) or from a picture of your own. PMC bots get looks of their own too, so the\nnames on the death screen, the flea market and the dogtags you take aren\u2019t all plain gray.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/JoelHauser/EditionCustomizer/main/docs/names.png\" alt=\"PMC names in Name Plate looks\" /></p>\n<h2>What\u2019s in it</h2>\n<p><strong>Your name</strong></p>\n<ul>\n<li>One color, a gradient, or a color per letter.</li>\n<li>Animations: scroll, pulse, wave, sparkle, rainbow, glitch and bounce.</li>\n<li>Outline, glow, shadow and italic.</li>\n<li>A clan tag like <strong>[EZ] YourName</strong>.</li>\n</ul>\n<p><strong>Your icon</strong></p>\n<ul>\n<li>The game\u2019s own icons, 107 extra icons (12 animated), or your own PNG.</li>\n<li>Icon effects: pulse, glow, flip and float.</li>\n<li>Hide the prestige badge, or swap it for your own picture.</li>\n</ul>\n<p><strong>PMC bots</strong></p>\n<ul>\n<li>Bots get looks on the death screen, the kill list, flea sellers, \u201citem bought by\u201d messages and the dogtags you take.</li>\n<li>About a third wear one of 487 gamer-humor tags.</li>\n</ul>\n<p><strong>Editor (Name Plate.exe)</strong></p>\n<ul>\n<li>A live preview of your look.</li>\n<li>Presets of your own.</li>\n<li>Share codes: copy your look and paste a friend\u2019s.</li>\n<li>A Bots page for how many bots get a look and what they can use.</li>\n</ul>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/JoelHauser/EditionCustomizer/main/docs/editor-icons.png\" alt=\"The Name Plate editor\" /></p>\n<h2>Install</h2>\n<ol>\n<li>Unzip <code>NamePlate-1.0.0.zip</code> into your SPT folder (the one with <code>EscapeFromTarkov.exe</code>).</li>\n<li>Run <strong>Name Plate.exe</strong> from that folder.</li>\n</ol>\n<p>You need:</p>\n<ul>\n<li>SPT 4.1.x.</li>\n<li>For the editor only, the <a target=\"_blank\" class=\"external-link\" href=\"https://dotnet.microsoft.com/download/dotnet/10.0\" rel=\"noreferrer noopener\">.NET 10 Desktop Runtime</a>. Windows offers it if it\u2019s missing.</li>\n</ul>\n<h2>Fika</h2>\n<p>Built to run alongside Fika 2.4.4: real players never get bot looks, and the two mods never patch the same thing in conflicting ways. It hasn\u2019t been tested in a live co-op session yet. Other players see your look only if they also run Name Plate.</p>\n<p>Based on Evgencheg\u2019s <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Evgencheg/Tarkov-Change-Icons\" rel=\"noreferrer noopener\">T\u2217\u2217\u2217\u2217\u2217-Change-Icons</a>.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/uxEh5VqaNsYzMnsYzUhbHls03kxP4XT5Ft0wAZp7.png",
    "forge_url": "https://sp-mod.com/mod/3131/name-plate",
-   "downloads": 1,
-   "favourites": 0,
+   "downloads": 449,
+   "favourites": 6,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -215325,19 +215349,31 @@
    ],
    "versions": [
     {
+     "id": 16078,
+     "version": "1.0.1",
+     "description": "<h2>Fixes</h2>\n<ul>\n<li><strong>Server crash with ChangeIcons installed.</strong> Name Plate and the original ChangeIcons both had the <code>spt membercategory</code> chat command, which stopped the server at startup. They now run side by side: Name Plate\u2019s command becomes <code>spt nameplate</code>, and the server log says so. Name Plate does everything ChangeIcons does, so you can remove ChangeIcons.</li>\n<li><strong>Editor closing on its own.</strong> Some profiles and files made the editor close right after it opened, with no message. It now skips what it can\u2019t read and keeps going.</li>\n<li><strong>Editor errors are reported.</strong> If the editor hits an error, it shows a message and saves the details to <code>%APPDATA%\\Name Plate\\crash.log</code>. Attach that file to a bug report.</li>\n</ul>\n<h2>Install</h2>\n<p>Unzip <code>NamePlate-1.0.1.zip</code> into your SPT folder (the one with <code>EscapeFromTarkov.exe</code>), replacing the files. Your looks in <code>icons.json</code> are kept.</p>\n",
+     "spt_constraint": "~4.1.0",
+     "fika": "compatible",
+     "downloads": 21,
+     "size": 1528559,
+     "link": "https://sp-mod.com/mod/download/3131/name-plate/1.0.1",
+     "published_at": "2026-10-20T10:40:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 15852,
      "version": "1.0.0",
      "description": "<p>release</p>\n",
      "spt_constraint": "~4.1.0",
      "fika": "compatible",
-     "downloads": 1,
+     "downloads": 428,
      "size": 1523969,
      "link": "https://sp-mod.com/mod/download/3131/name-plate/1.0.0",
      "published_at": "2026-10-09T18:18:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.0.0",
+   "latest_version": "1.0.1",
    "spt_constraint": "~4.1.0",
    "all_spt_constraints": [
     "~4.1.0"
@@ -215345,7 +215381,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-10-09T18:19:00.000000Z",
-   "updated_at": "2026-10-09T18:20:05.000000Z",
+   "updated_at": "2026-10-20T10:42:07.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -215692,12 +215728,12 @@
    "guid": "com.fontaine.spt-stance-overhaul",
    "name": "SPT Stance Overhaul",
    "slug": "spt-stance-overhaul",
-   "teaser": "Standalone rewrite of Realism's stance overhaul. Includes high ready, low ready, canted aiming and more with buffs, debuffs and mechanics. Hand-crafted procedural animations with blending.",
+   "teaser": "Standalone rewrite of Realism's stance overhaul. Includes high ready, low ready, canted aiming and more with buffs, debuffs and mechanics. Hand-crafted procedural animations with blending. Highly configurable.",
    "description_html": "<h1>Stances</h1>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Intro</div>\n<div class=\"tab-content\"><blockquote>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/701/fontaines-fov-fix\" rel=\"noreferrer noopener\">FOV Fix</a> is a soft-dependency highly recommended to be used. It is not required to function, but aiming will be janky.</p>\n</blockquote>\n<blockquote>\n<p>This description is WIP!</p>\n</blockquote>\n<h3>Not a port</h3>\n<p>This is a complete rewrite of Realism\u2019s stances from the ground up, with much improved procedural animations, blending, aim system and more.</p>\n<p>This is the original SPT stances mod, improved in virtually every way, by the original author. Not a copy, not an AI-slopified jank version of the original mod.</p>\n<h3>Handcrafted procedural animations</h3>\n<p>Built on the game\u2019s existing procedural animation system, each stance has a distinct exit end enter animation using animation curves. Stances blend together seamlessly, making stances transitions much smoother than in the legacy version.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/VXQjVkY.gif\" alt=\"Blending\" /></p>\n<h3>Carefully designed gameplay systems</h3>\n<p>The stances aren\u2019t just for larping, they change how you interact with and manipulate your weapon. Stances affect walk speed, sprint speed, sprint acceleration, reload speed, chamber/malf-fix/ammo check speeds, hipfire accuracy, stamina regeneration and more.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Features</div>\n<div class=\"tab-content\"><h3>Aim overhaul</h3>\n<p>Instead of moving the player view to the weapon sights, the weapon moves to align the sights with the player view. This is industry standard and much smoother, but can be disabled.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/iLyTU1j.gif\" alt=\"Aiming\" /></p>\n<h3>Tactical sprint</h3>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/jNhkEiB.gif\" alt=\"Tactical sprint\" /></p>\n<p>When sprinting from the high ready, eligible weapons use the tactical sprint animation. This gives a boost to sprint acceleration speed and sprint speed overall by a configurable amount, at the cost of draining arm stamina. Weapon weight, length and ergo determine if you can do tactical sprint.</p>\n<h3>Reload speed bonuses</h3>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/rXPDzS1.gif\" alt=\"Reload speed\" /></p>\n<p>Different stances buff or debuff magazine/tube/internal mag reload, chambering, inspect, malf fix and ammo check speeds. Stance position and rotation reacts to these actions.</p>\n<h4>Pump/Bolt speed bonus</h4>\n<p>Active aim boosts the pump/bolt speed of shotguns and bolt action rifles.</p>\n<h3>Alternative weapon position</h3>\n<p>Configurable rifle and pistol offset. Default settings makes the weapon position look more natural and immersive.</p>\n<h3>Stamina drain</h3>\n<p>By default, when not using a stance your stamina will drain. Using a stance prevents this (except for left shoulder and active aim). Being prone or mounting allows stamina regeneration. While sprinting, stamina does not drain or regenerate, unless using tactical sprint which drains stamina.</p>\n<p>This feature can be turned off.</p>\n<h3>NVG and Faceshield constraints</h3>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/mAqT3HF.gif\" alt=\"NVG\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/5Jgy7Rl.gif\" alt=\"Faceshield\" /></p>\n<p>NVGs can\u2019t be used with optics IRL, this mod replicates that by forcing you into canted aim/active aim if using an optic and trying to aim. Faceshields block aiming down sights and reverts to active aiming, unless its a pistol or the stock is folded. To compliment this, lasers/lights got a buff to hipfire accuracy. Thermal goggles don\u2019t allow ADS, even with iron sights.</p>\n<p>This is an intentional nerf to thermals, faceshields and NVG, learn to play around it rather than these items having essentially no tangible downsides. Or be lame and disable it.</p>\n<h3>Light/Laser bonuses.</h3>\n<p>IR lasers and lights only give hipfire bonuses if using NVGs. White light give a debuff if using NVGs. Lights and lasers in general give different configurable bonuses to hipfire. Combined with Active Aim, this increased hipfire accuracy significantly.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Stances (Preview)</div>\n<div class=\"tab-content\"><h3>High ready:</h3>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/fRNI7pE.gif\" alt=\"High Ready\" /></p>\n<p>Enables tactical sprint. Gives a moderate boost to walk speed. Gives the highest bonus to magazine and shotgun reload speeds, chamber checking, chambering, and malfunction fixes. Prevents stamina drain and gives a moderate boost to arm stamina regeneration.</p>\n<h3>Active aim (canted aim):</h3>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/QH1mkdP.gif\" alt=\"Active aim\" /></p>\n<p>Boosts hipfire accuracy. Moderately reduces walk speed. Increases reload, chamber checking, chambering, and malfunction fixing speeds (less so than high ready). Increases the speed of pumping shotguns and using bolt actions. Drains stamina unless crouched or prone.</p>\n<h3>Low ready:</h3>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/meF4XQD.gif\" alt=\"Low ready\" /></p>\n<p>2nd highest walk speed and stamina regeneration. Gives a moderate boost to top-loading reload speed (SKS etc.), but reduction to all other reload or weapon manipulation. Slightly faster ADS than high ready.</p>\n<h3>Patrol stance:</h3>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/JopQiht.gif\" alt=\"Patrol stance\" /></p>\n<p>Highest walk speed and stamina regeneration bonuses. Slow animation and ADS makes it suitable for long treks, not for combat.</p>\n<h3>Short stock:</h3>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/xjRez6L.gif\" alt=\"Short stock\" /></p>\n<p>Brings the weapon\u2019s stock under the player\u2019s shoulder, shortening the rifle. Used in CQB to reduce weapon collision. Can fire from this stance, with a debuff to hipfire accuracy. Walk speed penalty. Regenerates stamina slower than other stances.</p>\n<h3>Left shoulder replacement</h3>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/Ok6Fpfv.gif\" alt=\"Left shoulder\" /></p>\n<p>Reanimated and reworked left shoulder stance, override B\u2217\u2217\u2019s (and predates it btw). Drains stamina slightly faster than no stance, and has a debuff to hipfire accuracy. Does not auto-cancel when colliding with objects.</p>\n<h3>Pistol compressed:</h3>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/yDa0Gk9.gif\" alt=\"Pistol compressed\" /></p>\n<p>The default pistol stance, always active. Keeps the pistol in a more natural, modern stance, compressed to the chest. Has small passive bonus to walk and reload speed. Has its own aim animation.</p>\n<h3>Pistol patrol stance:</h3>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/7uCFCoB.gif\" alt=\"Pistol patrol stance\" /></p>\n<p>Same bonuses as rifle patrol stance, the only stance available for pistols. Has a special animation where the left hand detaches from the pistol.</p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Fika</div>\n<div class=\"tab-content\"><p>Do not install Stance Overhaul on the headless/server, only install SO and the common lib on the player\u2019s machines.</p>\n<p>Official Fika syncing of stances will come later, in the meantime you can use<a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/addon/163/stance-overhaul-fika-sync\" rel=\"noreferrer noopener\"> Kube\u2019s addon</a>.</p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Past, present and future</div>\n<div class=\"tab-content\"><h3>Features implemented from legacy version (3.11):</h3>\n<ul>\n<li>Core stances; high, low, patrol, short stock (compressed), left shoulder replacement, active aiming (canted aiming), pistol compressed, pistol patrol stance</li>\n<li>Tac sprint when sprinting out of high ready</li>\n<li>Stance buffs/debuffs for hipfire, walk speed, sprint acceleration, and stamina recovery</li>\n<li>Idle stamina drain</li>\n<li>IR lasers and lights only give a bonus if NVGs are active. Different bonuses depending on device type (laser vs light)</li>\n<li>Aiming overhaul (WIP)</li>\n<li>Additional weapon rotation and position changes from gear and stances (WIP)</li>\n</ul>\n<h3>Old features to be implemented from 3.11</h3>\n<ul>\n<li>Third-person animations</li>\n<li>Melee</li>\n<li>Weapon collision changes</li>\n<li>Mounting system</li>\n<li>Weapon handling changes (may be its own module)</li>\n<li>Health and stamina affecting stance speed</li>\n<li>Health status blocking/forcing stances</li>\n<li>Bots using stances</li>\n<li>Fika compatiblity</li>\n<li>Lots of small features and details</li>\n<li>FOV Fix integration</li>\n<li>Specific stocks/facehields bypass faceshield aiming restriction</li>\n<li>Skills affect stance buffs and debuffs</li>\n</ul>\n<h3>New features to be implemented</h3>\n<ul>\n<li>Improvements and refactors of previous features</li>\n<li>Additional animation layers for stances and aiming</li>\n<li>Better handling of injury state</li>\n<li>Pistol specific stances (maybe)</li>\n<li>Improved, built-in Fika compatibility</li>\n<li>Shareable custom player stances</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Declarations</div>\n<div class=\"tab-content\"><h3>AI Declaration: No AI slop</h3>\n<p>All design, balancing and creativity decisions were mine alone. I use AI as a tool to help fix bugs, plan code patterns and architecture etc. in the same way we used to use StackOverflow or Google; as a tool. My creative process has and will always be AI-free. I decide what I want, and if I get stuck I use AI to help solve technical code-related problems. This is not slop, and I understand and share the hate for AI-slop content. However if responsibly using AI as a tool bothers you, feel free to not download any of my mods.</p>\n<h3>Originality</h3>\n<p>This is a complete rewrite of the stances from Realism mod, and a replacement for the old and discontinued standalone Combat Stances mod. I am the original author of both. This is not one of the many spin-offs that have cropped up.</p>\n<p>The original inspiration for this mod was Ground Branch, which had a high/low ready system. In addition the NVG mode and pistol handling from MW 2019 was a big inspiration too. The idea for faceshields blocking aiming, and using canted aim instead, came from a close friend.</p>\n<p>Everything else, the other stances, additional features, and player stance controller are all my invention. Some time after the initial release of stances, canted aiming and similar low/high ready stance systems have popped up in a lot of games. I like to think Realism mod and by extension this standalone version has had some small role to play.</p></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/zbpYNzqOE0pbf6I4gOxmpKQnr9KM9Zpa49QFiD4j.png",
    "forge_url": "https://sp-mod.com/mod/3136/spt-stance-overhaul",
-   "downloads": 2197,
-   "favourites": 36,
+   "downloads": 2252,
+   "favourites": 37,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -215730,7 +215766,7 @@
      "description": "<blockquote>\n<p>Very early alpha release, expect lots of issues and missing features and a lack of polish. Missing many features but does contain the core features.</p>\n</blockquote>\n<h2>Fixes (compared to test build 6)</h2>\n<ul>\n<li>Stances affecting mounted weapons</li>\n<li>Various issues with input system leading to stuck stances etc.</li>\n<li>Issues with elbow and shoulder dislocation when reloading or manipulating chamber while in stance with some weapons</li>\n<li>Fixed tac sprint animation resetting if spamming sprint</li>\n</ul>\n<h2>Changes  (compared to test build 6)</h2>\n<ul>\n<li><strong>Added aim overhaul</strong>:  aiming moves the sights to the player view, instead of moving player view to the sights. Makes aiming much smoother, especially from stances. FOV fix is highly recommended to be used alongside it, otherwise stance ADS will not be smooth or work as intended.</li>\n</ul>\n<h2>Known issues</h2>\n<ul>\n<li>There are no third-person animations. Stances can look strange in third person.</li>\n</ul>\n<h2>Features implemented from legacy version (3.11):</h2>\n<ul>\n<li>Core stances; high, low, patrol, short stock (compressed), left shoulder replacement, active aiming (canted aiming), pistol compressed, pistol patrol stance</li>\n<li>Tac sprint when sprinting out of high ready</li>\n<li>Stance buffs/debuffs for hipfire, walk speed, sprint acceleration, and stamina recovery</li>\n<li>Idle stamina drain</li>\n<li>IR lasers and lights only give a bonus if NVGs are active. Different bonuses depending on device type (laser vs light)</li>\n<li>Aiming overhaul (WIP)</li>\n<li>Additional weapon rotation and position changes from gear and stances (WIP)</li>\n</ul>\n<h2>Old features to be implemented from 3.11</h2>\n<ul>\n<li>Melee</li>\n<li>Weapon collision changes</li>\n<li>Mounting system</li>\n<li>Weapon handling changes (may be its own module)</li>\n<li>Health and stamina affecting stance speed</li>\n<li>Health status blocking/forcing stances</li>\n<li>Bots using stances</li>\n<li>Fika compatiblity</li>\n<li>Lots of small features and details</li>\n<li>FOV Fix integration</li>\n<li>Specific stocks/facehields bypass faceshield aiming restriction</li>\n</ul>\n<h2>New features to be implemented</h2>\n<ul>\n<li>Improvements and refactors of previous features</li>\n<li>Additional animation layers for stances and aiming</li>\n<li>Better handling of injury state</li>\n<li>Pistol specific stances (maybe)</li>\n<li>Improved, built-in Fika compatibility</li>\n<li>Shareable custom player stances</li>\n</ul>\n",
      "spt_constraint": "4.1.x",
      "fika": "unknown",
-     "downloads": 2197,
+     "downloads": 2252,
      "size": 64250,
      "link": "https://sp-mod.com/mod/download/3136/spt-stance-overhaul/0.0.2",
      "published_at": "2026-10-11T23:21:41.000000Z",
@@ -215790,7 +215826,7 @@
     }
    ],
    "published_at": "2026-10-11T23:21:00.000000Z",
-   "updated_at": "2026-10-19T22:50:19.000000Z",
+   "updated_at": "2026-10-20T08:50:39.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -216667,11 +216703,11 @@
    "name": "Usable Crafting",
    "slug": "usable-crafting",
    "teaser": "Because endless scrolling isn't hardcore",
-   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Overview</div>\n<div class=\"tab-content\"><blockquote>\n<p>Inspired by tarkin\u2019s video: <a target=\"_blank\" class=\"external-link\" href=\"https://youtu.be/vTVP24wTSFE\" rel=\"noreferrer noopener\">https://youtu.be/vTVP24wTSFE</a></p>\n</blockquote>\n<p>This mod replaces the default crafting interface with a grid-based layout. Recipes are displayed in a compact grid, while ingredients, production time, output, and the start button are shown in a single panel for the selected recipe.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/JjgbV1tC/workbench.jpg\" alt=\"\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/8gQJqYgM/crafting.gif\" alt=\"\" /></p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Configuration</div>\n<div class=\"tab-content\"><p>The number of grid <strong>Rows</strong> and <strong>Columns</strong> can be configured. The column count determines the grid width, while the row count sets the maximum number of visible rows before scrolling is enabled.</p>\n<p><strong>Items Batch Size</strong> determines how many grid items are created per frame. In the vanilla interface, items are created every frame, increasing the total loading time. A higher batch size speeds up loading but may cause stutters when opening the panel.</p>\n<p>Settings take effect the next time the panel is opened.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Compatibility</div>\n<div class=\"tab-content\"><p><strong>UI Fixes</strong> and <strong>Vertical Hideout</strong> have been tested with this mod and are recommended for a more comfortable experience.</p>\n<p>Other UI mods may be incompatible. Feel free to open an issue if you encounter any problems.</p></div></div></div>\n",
+   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Overview</div>\n<div class=\"tab-content\"><blockquote>\n<p>Inspired by tarkin\u2019s video: <a target=\"_blank\" class=\"external-link\" href=\"https://youtu.be/vTVP24wTSFE\" rel=\"noreferrer noopener\">https://youtu.be/vTVP24wTSFE</a></p>\n</blockquote>\n<p>This mod replaces the default crafting interface with a grid-based layout. Recipes are displayed in a compact grid, while ingredients, production time, output, and the start button are shown in a single panel for the selected recipe.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/JjgbV1tC/workbench.jpg\" alt=\"\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/8gQJqYgM/crafting.gif\" alt=\"\" /></p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Configuration</div>\n<div class=\"tab-content\"><p>The number of grid <strong>Rows</strong> and <strong>Columns</strong> can be configured. The column count determines the grid width, while the row count sets the maximum number of visible rows before scrolling is enabled.</p>\n<p><strong>Panels to Replace</strong> determines which crafting panels will be replaced by the new panel. You can disable specific panels, such as Intelligence Center Decryption and Booze Generator, to keep them displayed as in vanilla.</p>\n<p><strong>Items Batch Size</strong> determines how many craft recipes are created per frame. In the vanilla interface, recipes are created every frame, increasing the total loading time. A higher batch size speeds up loading but may cause stutters when opening the panel. This setting also applies to disabled (vanilla) panels.</p>\n<p><strong>Border and background colors</strong> can be customized.</p>\n<p><strong>Dimming</strong> for unfulfilled recipes can be disabled.</p>\n<p>Settings take effect the next time the panel is opened.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Compatibility</div>\n<div class=\"tab-content\"><p><strong>UI Fixes</strong> and <strong>Vertical Hideout</strong> have been tested with this mod and are recommended for a more comfortable experience.</p>\n<p>Other UI mods may be incompatible. Feel free to open an issue if you encounter any problems.</p></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/F3KPwjsG6MHkwlwhLMKuaAWBRqopFy2YqCyhi3dJ.png",
    "forge_url": "https://sp-mod.com/mod/3149/usable-crafting",
-   "downloads": 51,
-   "favourites": 1,
+   "downloads": 1079,
+   "favourites": 33,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -216699,19 +216735,31 @@
    ],
    "versions": [
     {
+     "id": 16077,
+     "version": "1.1.0",
+     "description": "<h3>Changes</h3>\n<ul>\n<li>\n<p>Add configurable <strong>item highlighting and dimming</strong>. Unfulfilled recipes are dimmed by default, fulfilled recipes have a border, and completed production has a green background. Border and background colors can be customized in the config. Dimming can be disabled.</p>\n</li>\n<li>\n<p>Add the ability to <strong>disable panel replacement</strong> for specific panel types. Uncheck panel types in the <code>Panels to Replace</code> config to use the vanilla panels instead. Note that the <code>Batch Size</code> setting also applies to vanilla panels.</p>\n</li>\n</ul>\n",
+     "spt_constraint": "~4.1",
+     "fika": "compatible",
+     "downloads": 120,
+     "size": 15389,
+     "link": "https://sp-mod.com/mod/download/3149/usable-crafting/1.1.0",
+     "published_at": "2026-10-20T10:03:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 15940,
      "version": "1.0.0",
      "description": "<p>Initial release</p>\n",
      "spt_constraint": "~4.1",
      "fika": "compatible",
-     "downloads": 51,
+     "downloads": 959,
      "size": 13393,
      "link": "https://sp-mod.com/mod/download/3149/usable-crafting/1.0.0",
      "published_at": "2026-10-14T20:50:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.0.0",
+   "latest_version": "1.1.0",
    "spt_constraint": "~4.1",
    "all_spt_constraints": [
     "~4.1"
@@ -216719,7 +216767,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-10-14T20:51:00.000000Z",
-   "updated_at": "2026-10-14T21:22:16.000000Z",
+   "updated_at": "2026-10-20T10:50:56.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -217554,8 +217602,8 @@
    "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Purpose</div>\n<div class=\"tab-content\"><p><strong>Stop alt-tabbing to a wiki before every raid.</strong></p>\n<p>Briefing adds a <strong>Briefing</strong> screen to the character screen. Pick a map and you get everything you\u2019d normally check before a raid on one page: <strong>the quests for that map, where the objectives are, the items to bring and the gear quests ask for</strong>.</p>\n<p>It\u2019s a quality-of-life mod. It doesn\u2019t add content or change balance. It saves you the clicks, the second monitor and the guessing.</p>\n<blockquote>\n<p><strong>Requires <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/3054/quest-codex\" rel=\"noreferrer noopener\">QuestCodex</a> 1.9.0 or later.</strong> Briefing is the in-game companion to QuestCodex\u2019s raid prep page. QuestCodex reads the quests your server actually loaded and sends them to Briefing, so <strong>mod quests and quest changes from other mods show up exactly as they are in your game</strong>.</p>\n</blockquote></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Screenshots</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/Briefing/main/media/overview.png\" alt=\"Briefing screen\" />\n<em>Pick a map at the top: quests on the left, the map in the middle, supplies, collect items and gear on the right.</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/Briefing/main/media/tab-dropdown.png\" alt=\"Tasks tab dropdown\" />\n<em>The TASKS tab becomes a dropdown. Pick Briefing to open it, or TASKS to go back.</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/Briefing/main/media/quest-list.png\" alt=\"Quest list\" />\n<em>Quests for this map, quests for any map, and what\u2019s ready to turn in or hand over, with progress bars.</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/Briefing/main/media/quest-handover.png\" alt=\"Hand-over\" />\n<em>Hand items over right from the briefing. No trip to the trader screen.</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/Briefing/main/media/map.png\" alt=\"Map\" />\n<em>Quest markers, quest zones, extracts and locked doors on one map, with floors, zoom and pan.</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/Briefing/main/media/right-supplies.png\" alt=\"Supplies\" />\n<em>Items to bring into the raid, checked against your stash. Red means you\u2019re short.</em></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Viper-9/Briefing/main/media/right-gear.png\" alt=\"Gear\" />\n<em>Weapons, calibers, mods and wearables quests ask for, marked as equipped, in stash or missing.</em></p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Requirements</div>\n<div class=\"tab-content\"><ul>\n<li><strong>SPT 4.1.6</strong> (<code>~4.1.6</code>)</li>\n<li><strong><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/3054/quest-codex\" rel=\"noreferrer noopener\">QuestCodex</a> 1.9.0 or later</strong> (server mod). This is a hard dependency. QuestCodex provides the quest data and the map files. Without it, the tab only shows a \u201cQuestCodex is required\u201d notice.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Installation</div>\n<div class=\"tab-content\"><ol>\n<li>Install <strong>QuestCodex 1.9.0 or later</strong> first.</li>\n<li>Download <code>Briefing-&lt;version&gt;.zip</code> from this page or from <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Viper-9/Briefing/releases\" rel=\"noreferrer noopener\">Releases</a>.</li>\n<li>Extract it and copy the <code>BepInEx</code> folder into your SPT install root (the folder with <code>EscapeFromTarkov.exe</code>), overwriting when asked.</li>\n<li>Restart the server and the game.</li>\n</ol></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Features</div>\n<div class=\"tab-content\"><p><strong>Everything for the map you\u2019re about to play, in one place</strong></p>\n<ul>\n<li><strong>Map bar</strong>: every map with the number of objectives you have there.</li>\n<li><strong>Quest list</strong>: quests for this map plus quests that work anywhere, with trader faces, objective summaries and progress bars.</li>\n<li><strong>Map</strong>: quest markers numbered to match the list, quest zones, PMC / scav / transit extracts and locked doors (hover to see the key). Floors, zoom and pan.</li>\n<li><strong>Supplies</strong>: quest items to bring (items to plant and so on), checked against your stash.</li>\n<li><strong>Collect</strong>: items to find in raid, with FIR marks and which quests need them.</li>\n<li><strong>Gear</strong>: weapons, calibers, weapon mods and wearables quests ask for (\u2713 equipped, \u25d0 in stash, \u26a0 missing), plus special conditions like \u201csurvive and extract\u201d.</li>\n</ul>\n<p><strong>Fewer clicks</strong></p>\n<ul>\n<li><strong>Hand items over</strong> from the briefing with <strong>TURN IN</strong>, the same way the game does it.</li>\n<li><strong>Ready to turn in</strong> quests open the right trader\u2019s task screen with the quest already selected.</li>\n<li><strong>SHOW IN TASKS</strong> jumps to the quest in the regular tasks tab.</li>\n<li>Expand a quest and the map and the right column narrow to that quest only.</li>\n</ul>\n<p><strong>Works in raid too</strong></p>\n<ul>\n<li>Opening the tab in raid selects the current map.</li>\n<li>Kill counts and other objectives update <strong>live</strong>, and finished ones grey out.</li>\n<li>The gear check uses what you have on you right now, so a weapon you just picked up counts.</li>\n<li>No server requests during a raid.</li>\n</ul>\n<p><strong>Your layout</strong></p>\n<ul>\n<li>Drag column borders to resize. Widths are kept across restarts.</li>\n<li>Margins are adjustable in the BepInEx config (<code>com.viper.briefing.cfg</code>).</li>\n<li>English, Korean and Russian, following your game language.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Compatibility</div>\n<div class=\"tab-content\"><p>Works well with:</p>\n<ul>\n<li><strong><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/3054/quest-codex\" rel=\"noreferrer noopener\">QuestCodex</a> 1.9.0 or later</strong> (required): Briefing reads all its quest data and maps from QuestCodex, so everything QuestCodex supports shows up in game too</li>\n<li><strong>Quest mods</strong>: compatible with <strong>Lotus</strong>, <strong>Painter</strong>, <strong>Artem</strong>, <strong>ISB Aishi</strong>, <strong>WTT-Armory</strong> and <strong><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/3026/quest-backport\" rel=\"noreferrer noopener\">Quest Backport</a></strong>. Their quests appear in the briefing next to the vanilla ones, and the vanilla quests Quest Backport updates show the new conditions</li>\n<li><strong><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2866/manimals-icebreaker-backport\" rel=\"noreferrer noopener\">Manimal\u2019s Icebreaker Backport</a></strong> and <strong>ManimalInterchange</strong>: the Icebreaker and expanded Interchange maps are drawn in game, with their quest markers and extracts</li>\n</ul>\n<p>Keep QuestCodex up to date. When it adds support for a mod or a map, Briefing picks it up. Mods QuestCodex can\u2019t read won\u2019t show up here either. See <strong>Known limitations</strong>.</p></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Known limitations</div>\n<div class=\"tab-content\"><ul>\n<li><strong>Progress outside a raid comes from the server.</strong> SPT saves raid progress when the raid ends, so menu numbers are as of your last raid. In raid they update live.</li>\n<li><strong>Extract names are in English</strong> in every language.</li>\n<li><strong>QuestCodex\u2019s limitations carry over.</strong> Quest mods that rewrite responses at runtime don\u2019t show up. See <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Viper-9/QuestCodex/blob/main/README.en.md#known-limitations\" rel=\"noreferrer noopener\">QuestCodex\u2019s known limitations</a>.</li>\n<li><strong>Not tested with Fika.</strong></li>\n</ul></div></div>\n<div id=\"tabset-1-panel-8\" class=\"tab-panel\"><div class=\"tab-title\">Bug Reports</div>\n<div class=\"tab-content\"><p>Report bugs on <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Viper-9/Briefing/issues\" rel=\"noreferrer noopener\">GitHub Issues</a> or the <strong>Issues</strong> tab on this page. Helpful details:</p>\n<ul>\n<li>SPT, QuestCodex and Briefing versions</li>\n<li>Your other mods, especially quest-related ones</li>\n<li><code>BepInEx/LogOutput.log</code> and the server log</li>\n<li>A screenshot of the briefing next to the in-game quest</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-9\" class=\"tab-panel\"><div class=\"tab-title\">Credits</div>\n<div class=\"tab-content\"><ul>\n<li><strong>The SPT team and moderators</strong>, for all the hard work they put in, every day</li>\n<li><strong>The many modders</strong> who answered every question I asked, always kindly</li>\n<li><strong>The Korean SPT Community</strong>, for all the support. Thank you so much!</li>\n</ul></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/nbcrKVslo1hNYaXv7NhT4t5YSysvJepjZlG3pMtN.png",
    "forge_url": "https://sp-mod.com/mod/3158/briefing",
-   "downloads": 97,
-   "favourites": 3,
+   "downloads": 925,
+   "favourites": 19,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -217583,12 +217631,32 @@
    ],
    "versions": [
     {
+     "id": 16076,
+     "version": "1.0.1",
+     "description": "<h1>Briefing v1.0.1</h1>\n<h2>Quest Items Now Show on the Map!</h2>\n<hr />\n<blockquote>\n<p><strong>Note:</strong> Please update <strong>QuestCodex to 1.10.0</strong> as well.\nWhen updating, replace the whole <code>BepInEx/plugins/Briefing</code> folder. This version adds a new <code>lib</code> folder inside it.</p>\n</blockquote>\n<p><strong>Quests where you bring back a quest item from a map now show up in that map\u2019s list, and the item\u2019s location is marked on the map.</strong></p>\n<ul>\n<li><strong>Database - Part 2</strong> \u2192 Interchange</li>\n<li><strong>Private Club</strong>, <strong>Chemical - Part 2</strong> \u2192 Customs</li>\n</ul>\n<p>After you extract with the item, the quest moves to <strong>Hand in</strong>, so you can turn it in right away.</p>\n<h2>Also in this update</h2>\n<ul>\n<li><strong>Fix: game stuck while loading items</strong>: This could happen with some item mods installed and no DynamicMaps. The map also works without DynamicMaps now.</li>\n<li><strong>Fix: missing quests</strong>: Quests like Chemical - Part 2 no longer disappear from the briefing before you find their item.</li>\n<li><strong>Locked objectives stay hidden</strong>: Objectives the game hasn\u2019t revealed yet no longer show up early.</li>\n</ul>\n",
+     "spt_constraint": "4.1.6",
+     "fika": "unknown",
+     "downloads": 150,
+     "size": 382028,
+     "link": "https://sp-mod.com/mod/download/3158/briefing/1.0.1",
+     "published_at": "2026-10-20T08:59:00.000000Z",
+     "dependencies": [
+      {
+       "id": 3054,
+       "name": "Quest Codex",
+       "slug": "quest-codex",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/3054/quest-codex"
+      }
+     ]
+    },
+    {
      "id": 15988,
      "version": "1.0.0",
      "description": "<h1>Briefing v1.0.0</h1>\n<h2>Official Release!</h2>\n<hr />\n<blockquote>\n<p><strong>Note:</strong> Requires <strong>QuestCodex 1.9.0 or later</strong>. Update QuestCodex first, or the Briefing tab will ask you to.</p>\n</blockquote>\n<p>Briefing is out of beta and now on Forge. It\u2019s a QoL mod that puts everything you check before a raid into one tab inside the character screen: <strong>the quests for the map you pick, where the objectives are, the items to bring and the gear quests ask for</strong>. No more alt-tabbing to a wiki.</p>\n<p>Open the <strong>TASKS</strong> tab dropdown and pick <strong>Briefing</strong> to get started.</p>\n<h2>Also in this update</h2>\n<ul>\n<li><strong>Smarter gear check</strong>: When a quest wants a kill with a specific mod on the gun (a suppressor, say), Briefing now checks that the mod is on the right weapon. If it isn\u2019t, it tells you why: it\u2019s on another gun, the fitted part isn\u2019t one the quest accepts, or none is fitted.</li>\n<li><strong>Fix: tasks tab cut off</strong>: The tab next to TASKS no longer covers its edge while the dropdown is open.</li>\n</ul>\n<p>\ud83d\udcd6 <strong>README with every feature explained: <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Viper-9/Briefing\" rel=\"noreferrer noopener\">https://github.com/Viper-9/Briefing</a></strong></p>\n",
      "spt_constraint": "4.1.6",
      "fika": "unknown",
-     "downloads": 97,
+     "downloads": 775,
      "size": 273831,
      "link": "https://sp-mod.com/mod/download/3158/briefing/1.0.0",
      "published_at": "2026-10-16T14:31:00.000000Z",
@@ -217603,7 +217671,7 @@
      ]
     }
    ],
-   "latest_version": "1.0.0",
+   "latest_version": "1.0.1",
    "spt_constraint": "4.1.6",
    "all_spt_constraints": [
     "4.1.6"
@@ -217627,7 +217695,7 @@
     }
    ],
    "published_at": "2026-10-16T14:18:00.000000Z",
-   "updated_at": "2026-10-16T16:18:53.000000Z",
+   "updated_at": "2026-10-20T09:00:14.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -218247,8 +218315,8 @@
    "description_html": "<h1>Hideout Uncensored</h1>\n<p>Walk around it with your weapons out, go prone, vault, throw grenades, fire a rocket launcher, use inventory, shop, and keep using every hideout area while you do.</p>\n\n<p><strong>PREVIEW VIDE SOON.TM</strong>\n<img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/7dvwN63.jpeg\" alt=\"tempimage\" /></p>\n<table>\n<thead>\n<tr>\n<th></th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>SPT</strong></td>\n<td>4.1.x only (built against SP-Tushonka 4.1.6, EFT 0.16.9.40743). Not for 4.0.x</td>\n</tr>\n<tr>\n<td><strong>Parts</strong></td>\n<td>client plugin (BepInEx) + small server part (needed only for \u201cdiscard sends items back by message\u201d)</td>\n</tr>\n<tr>\n<td><strong>Affects</strong></td>\n<td>the hideout only. Nothing runs in a raid</td>\n</tr>\n<tr>\n<td><strong>Your gear</strong></td>\n<td>never used up: you hold the game\u2019s shooting range copy of it</td>\n</tr>\n<tr>\n<td><strong>License</strong></td>\n<td>MIT</td>\n</tr>\n</tbody>\n</table>\n<h2>Why</h2>\n<p>I hate leaving the hideout over and over just to try guns or buy sht. Usuaully when I want to get in-game quick I go straight to Factory but why all the hastle when I can just go to my hideout; it\u2019s right there! Now you can do basically everything in it.</p>\n<h2>What you get</h2>\n<table>\n<thead>\n<tr>\n<th></th>\n<th>Default</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Weapons anywhere</strong> in first person: draw, aim, fire, reload, switch, inspect, fire modes, tactical devices, melee. No range prompt</td>\n<td>on</td>\n</tr>\n<tr>\n<td>Draw / holster with a key (<strong>J</strong>), or press a weapon slot key to draw that weapon. Escape holsters, as it does in the range</td>\n<td>on</td>\n</tr>\n<tr>\n<td>No \u201clook away from the targets and your gun drops\u201d restriction</td>\n<td>on</td>\n</tr>\n<tr>\n<td><strong>Rocket launchers</strong> fire (the game ignores their trigger in the hideout)</td>\n<td>on</td>\n</tr>\n<tr>\n<td><strong>Grenades</strong>: grenade key and throwing</td>\n<td>on</td>\n</tr>\n<tr>\n<td>Weapons and grenades stay on quick slots 4-0</td>\n<td>on</td>\n</tr>\n<tr>\n<td><strong>Hold reload + scroll magazine selector</strong>, with the selected magazine clearly marked</td>\n<td>on</td>\n</tr>\n<tr>\n<td><strong>Prone</strong></td>\n<td>on</td>\n</tr>\n<tr>\n<td><strong>Vaulting and climbing</strong></td>\n<td>on</td>\n</tr>\n<tr>\n<td><strong>Drop backpack</strong></td>\n<td>on</td>\n</tr>\n<tr>\n<td><strong>Inventory key while armed</strong>: holsters, opens the inventory, draws again when you close it</td>\n<td>on</td>\n</tr>\n<tr>\n<td><strong>Hideout interactions while armed</strong> (switch to area, transfer items, workout)</td>\n<td>on</td>\n</tr>\n<tr>\n<td>Area info icons key while armed</td>\n<td>on</td>\n</tr>\n<tr>\n<td><strong>Discard is not destructive in the hideout</strong>: the item is removed and sent back to you in a message (server part)</td>\n<td>on</td>\n</tr>\n<tr>\n<td><strong>Health HUD panel</strong></td>\n<td>on</td>\n</tr>\n<tr>\n<td>Hideout flashlight while armed (bind a key in F12)</td>\n<td>on, key unbound</td>\n</tr>\n<tr>\n<td>No hit reactions on you in the hideout</td>\n<td>on</td>\n</tr>\n<tr>\n<td>Draw automatically on entering first person</td>\n<td>off</td>\n</tr>\n<tr>\n<td>Remember drawn weapons between hideout visits</td>\n<td>off</td>\n</tr>\n<tr>\n<td>Skill and weapon mastery gain (XP farm; mastery needs a live target)</td>\n<td>off</td>\n</tr>\n</tbody>\n</table>\n<p>Everything is in <strong>F12 &gt; trappuss-HideoutUncensored</strong> and is read live. \u201cEnabled\u201d off gives back the vanilla hideout.</p>\n<h2>Install</h2>\n<p>Extract the release zip into your SPT folder (the one with <code>EscapeFromTarkov.exe</code>), with the game and server closed.</p>\n<ul>\n<li>Client: <code>BepInEx\\plugins\\HideoutUncensored\\HideoutUncensored.dll</code></li>\n<li>Server: <code>SPT_Runtime\\user\\mods\\HideoutUncensored\\HideoutUncensoredServer.dll</code></li>\n</ul>\n<p>On start the server console shows <code>[Hideout Uncensored] server part &lt;version&gt; loaded</code>.</p>\n<h2>Nothing of yours is used up</h2>\n<ul>\n<li>Everything you hold while armed is the game\u2019s shooting range <strong>copy</strong> of your gear. Firing, reloading, throwing,\nrockets and the dropped backpack all act on the copy, which the game deletes when you holster and rebuilds when you\ndraw. Your real inventory is never written to by this mod.</li>\n<li>Consumables (meds, food) are deliberately <strong>not</strong> usable from the copy: their use is a server request, and the\nserver would be asked to consume an item it does not have. Use them from the inventory screen as in vanilla.</li>\n<li>Discarding in the hideout inventory sends the item (with its contents) back to you in a message, kept for a year.\nIf the server part is missing or the message cannot be sent, the item is not discarded at all. Discarding from the\nmain menu stash is unchanged.</li>\n<li>Your stash is the right-hand panel of the hideout inventory, as in vanilla.</li>\n</ul>\n<h2>Works with</h2>\n<ul>\n<li><strong>MoxoPixel-HideoutShootout</strong> (optional). It patches some of the same methods; the two agree. Its scav is also the\nonly way to gain weapon mastery in the hideout, because the game only awards mastery for hitting a player or bot.</li>\n<li><strong>Infinite Everything</strong> (optional). All of its inventory work in the hideout happens on the copy of your gear.\nFrom Infinite Everything 2.5.0 its \u201cevery compatible magazine\u201d hold-reload list also applies in the hideout.</li>\n<li>Modded weapons. If a weapon ever fails to holster (the game can throw while returning it to its pool), the hideout\nplayer is reset to empty hands after a few seconds instead of staying stuck, with a notification.</li>\n</ul>\n<h2>Status</h2>\n<p>Everything in the table at the top has been run in game on SPT 4.1.6, except skill and mastery gain against a live\ntarget.</p>\n<p>If something misbehaves: F12 &gt; \u201cDebug log\u201d (tick \u201cAdvanced settings\u201d), reproduce, and look at\n<code>BepInEx\\LogOutput.log</code> for lines from <code>trappuss-HideoutUncensored</code>. Each option can be switched off on its own.</p>\n<h2>Build</h2>\n<pre><code>dotnet build HideoutUncensored.csproj -c Release -p:TarkovDir=\"&lt;SPT folder&gt;\"\ndotnet build Server\\HideoutUncensoredServer.csproj -c Release\n</code></pre>\n<p>The client plugin is staged in <code>dist\\BepInEx\\plugins\\HideoutUncensored\\</code>, the server part in\n<code>Server\\dist\\SPT_Runtime\\user\\mods\\HideoutUncensored\\</code>.</p>\n<h2>Credits</h2>\n<p>By trappuss. AI assisted. MIT licensed.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/gPYQ0w9YN8YjTCChHhnA7KhKJj1SBQ0m1A6fLA3o.png",
    "forge_url": "https://sp-mod.com/mod/3167/hideout-uncensored",
-   "downloads": 66,
-   "favourites": 1,
+   "downloads": 368,
+   "favourites": 5,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -218276,19 +218344,31 @@
    ],
    "versions": [
     {
+     "id": 16081,
+     "version": "1.3.0",
+     "description": "<h2>Changelog</h2>\n<ul>\n<li>New: \u201cWear your gear while holstered\u201d (on by default). With weapons away, your character now wears your helmet, armor, rig and backpack in the hideout, in first person and in photo cameras. Before, gear only showed while weapons were drawn.</li>\n<li>Backpacks and rigs are worn empty, so they weigh nothing and nothing in them can be used. Gear you change in the inventory is put on when the screen closes.</li>\n</ul>\n<h2>Compatibility</h2>\n<ul>\n<li>SPT: ~4.1.0 (built against 4.1.6)</li>\n<li>Dependencies: None</li>\n</ul>\n<h2>Install</h2>\n<p>Extract the archive into your SPT root folder.</p>\n<h2>Source</h2>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/trappuss/SPT-Mods-Release/tree/HideoutUncensored-v1.3.0\" rel=\"noreferrer noopener\">https://github.com/trappuss/SPT-Mods-Release/tree/HideoutUncensored-v1.3.0</a></p>\n<p>SHA256: 3ae6900d14e7143805106fd1f577c46a12821a8ea205d0500c4c3267d9532ecd</p>\n",
+     "spt_constraint": "~4.1",
+     "fika": "unknown",
+     "downloads": 33,
+     "size": 33939,
+     "link": "https://sp-mod.com/mod/download/3167/hideout-uncensored/1.3.0",
+     "published_at": "2026-10-20T10:58:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 16014,
      "version": "1.2.3",
      "description": "<h2>Compatibility</h2>\n<ul>\n<li>SPT: ~4.1.0 (built against 4.1.6)</li>\n<li>Dependencies: None</li>\n</ul>\n<h2>Install</h2>\n<p>Extract the archive into your SPT root folder.</p>\n<h2>Source</h2>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/trappuss/SPT-Mods-Release/tree/HideoutUncensored-v1.2.3\" rel=\"noreferrer noopener\">https://github.com/trappuss/SPT-Mods-Release/tree/HideoutUncensored-v1.2.3</a></p>\n<p>SHA256: 055ecb43c5f717b44389c2d2a11b2caf8b3f93c84282d1a92465b214dc12ae3c</p>\n",
      "spt_constraint": "~4.1",
      "fika": "unknown",
-     "downloads": 66,
+     "downloads": 335,
      "size": 31883,
      "link": "https://sp-mod.com/mod/download/3167/hideout-uncensored/1.2.3",
      "published_at": "2026-10-17T11:21:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.2.3",
+   "latest_version": "1.3.0",
    "spt_constraint": "~4.1",
    "all_spt_constraints": [
     "~4.1"
@@ -218296,7 +218376,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-10-17T11:08:00.000000Z",
-   "updated_at": "2026-10-17T11:27:57.000000Z",
+   "updated_at": "2026-10-20T11:00:07.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -218544,8 +218624,8 @@
    "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Overview</div>\n<div class=\"tab-content\"><p>That one company that starts with B and ends with G needs to balance suppressors to not make them just auto-use best-in-slot item most of the times.</p>\n<p>I don\u2019t care. IRL suppressors do not magically make you gun wear 1.5x times faster or reduce ergonomics into the shitter. Things are light and good. So we make them light and good in-game.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Changes and config</div>\n<div class=\"tab-content\"><ul>\n<li>Apply <code>durabilityBurnMultiplier</code> of 0.1 (I mean there\u2019s still some additional wear based on different factors and stuff, but now it\u2019s reasonable)</li>\n<li>Apply <code>ergonomicsMultiplier</code> of 0.5 (Yea -20 ergo is just stupid)</li>\n<li>Apply <code>recoilMultiplier</code> of 1.1 (Just slightly bit better)</li>\n<li>Apply <code>heatMultiplier</code> of 1.1 (they do like stacking up heat)</li>\n</ul>\n<p>All are adjustable in config. Works with content mods (running a bunch myself).</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Alternative mod(-s)</div>\n<div class=\"tab-content\"><p>There\u2019s <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/3033/better-suppressors\" rel=\"noreferrer noopener\">Better Suppressors</a>, but:</p>\n<ul>\n<li>It sets all values to flat numbers which i find boring (all suppressors are the same i guess??? whats the point of multiple suppressors then if they all have same stats?)</li>\n<li>Ppl reported it doesn\u2019t work with content mods (modded supressors)</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">My other mods</div>\n<div class=\"tab-content\"><p>Hey you! Yes, you. I got a bunch of other mods <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/31382/musicmaniac#mods\" rel=\"noreferrer noopener\">here</a>. You better check them out. Or else\u2026\n<img loading=\"lazy\" decoding=\"async\" src=\"https://media1.tenor.com/m/T9VwwxWHP04AAAAd/cat-cat-crazy.gif\" alt=\"\" /></p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Re-uploading / Updating policy</div>\n<div class=\"tab-content\"><p>Even thought SPT modding policy already imposes this, I\u2019ll write it down nonetheless: if I disappear from SPT again - do not re-upload fixes or forks of my mods. Ping me in SPT discord (<code>@musicmaniac</code>), I\u2019ll add you to authors so you can update original mod page.</p>\n<p>If I added you as author and later returned to modding SPT - please refrain from updating the mod, let me handle it. Or at least ask me on Discord.</p></div></div></div>\n<h2>Support or something</h2>\n<p>If you wanna be true homie or say thanks for time I\u2019ve spent modding the game, feel free to send me a coffee on kofi</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/musicmaniac\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://uploads-ssl.webflow.com/5c14e387dab576fe667689cf/61e11d5cf697cee7ca5b65d9_Button-p-500.png\" alt=\"61e11d5cf697cee7ca5b65d9_Button-p-500.png\" /></a></p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/ugNh6cQ0DrkrRNJzELMMPNChZpDTzup9xc4lgnV7.jpg",
    "forge_url": "https://sp-mod.com/mod/3171/realistic-suppressors",
-   "downloads": 484,
-   "favourites": 8,
+   "downloads": 637,
+   "favourites": 9,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -218578,7 +218658,7 @@
      "description": "<p>Install as usual</p>\n",
      "spt_constraint": "~4.1.0",
      "fika": "unknown",
-     "downloads": 484,
+     "downloads": 637,
      "size": 8095,
      "link": "https://sp-mod.com/mod/download/3171/realistic-suppressors/1.0.0",
      "published_at": "2026-10-18T12:32:00.000000Z",
@@ -218593,7 +218673,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-10-18T12:33:00.000000Z",
-   "updated_at": "2026-10-19T12:40:23.000000Z",
+   "updated_at": "2026-10-20T12:19:33.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -218821,11 +218901,11 @@
    "name": "Arena Mode",
    "slug": "arena-mode",
    "teaser": "Tushonka caught Unreal Tournament. Symptoms include double jumps and a complete lack of gear fear.",
-   "description_html": "<h2>\u2b07\ufe0f READ THIS OR NIKITA WILL COME AND CURSE YOU \u2b07\ufe0f</h2>\n<p><strong>Since this mod affects virtually every aspect of the game, there will be incompatibilities with other mods.</strong></p>\n<p>If you really want to be sure, create a second SPT installation with only the necessary mods.<br />\nExisting profile progress isn\u2019t used in Arena anyway.</p>\n<p>I\u2019m currently building a small, custom launcher for this, but it\u2019ll take a while yet.</p>\n<p>Known incompatible - ArenaMode will disable itself:</p>\n<ul>\n<li>ORBIT</li>\n<li>Questing Bots</li>\n</ul>\n<p>Made compatible on a best effort basis:</p>\n<ul>\n<li>Looting Bots 1.8.0+</li>\n<li>Remove The Dead 4.1.3+</li>\n<li>Smoothie 1.0.8+</li>\n<li>MoreBotsAPI 2.1.1+</li>\n<li>AI Limit 1.9.2+</li>\n</ul>\n<p>This is a prerelease and still heavily work in progress. Bugs may occur.</p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Overview</div>\n<div class=\"tab-content\"><p>ArenaMode adds arena matches against AI to SPT 4.1. Select <strong>ARENA</strong> next to PMC\nand Scav, then choose a mode, map, equipment and mutators in the raid setup menu.</p>\n<ul>\n<li>Five modes: Gun Game, Deathmatch, Team DM, Tactical and Zombies.</li>\n<li>Respawns or round/wave-based survival, depending on the mode.</li>\n<li>Arena kits, a weapon ladder and mode-specific own-gear options.</li>\n<li>Scoreboard, assists, killfeed, hitmarkers, health/armor and weapon panels.</li>\n<li>Profile restoration on exit: Arena loot, XP and quest changes are not kept.</li>\n<li>Single-player only. <strong>Fika is not supported.</strong></li>\n<li>Support for PIT Fireteam teammates.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Modes</div>\n<div class=\"tab-content\"><ul>\n<li><strong>Gun Game:</strong> each kill advances your weapon. Respawn at the current stage;\nthe ladder repeats after the final weapon.</li>\n<li><strong>Deathmatch:</strong> free-for-all or all bots against you. Choose rounds, a\nper-round kill/time limit, or continuous play without limits.</li>\n<li><strong>Team DM:</strong> U\u2217\u2217\u2217 against B\u2217\u2217\u2217, with respawns and team kill/time limits.\nDoes not require PitFireTeam.</li>\n<li><strong>Tactical (WIP):</strong> round-based elimination. Solo defaults to 1v5 with a kit\nbuy menu. With PitFireTeam, choose own gear or a supplied PMC kit and bring\n1\u20134 companions against five opponents. Companions keep their own gear.\nSpectate after death and return next round with the selected entry loadout.</li>\n<li><strong>Zombies (WIP):</strong> increasing waves, with ammunition replenished between\nwaves. Solo death ends the match. A PitFireTeam squad can keep fighting after\nyour death; fallen members return after the wave is cleared. A wipe ends the\nmatch. Entry gear is restored between waves, including the surviving player.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Maps and mutators</div>\n<div class=\"tab-content\"><h4>Maps</h4>\n<ul>\n<li>Factory, day and night; Labs; Labyrinth.</li>\n<li>Customs: Factory Center, Factory Side and Customs Yard. Only these bounded\nareas are available, in all five modes.</li>\n<li>With ArenaMapPort: Bay5 and Air Pit in all modes; Equator in Gun Game, Deathmatch, Team DM\nand solo Zombies. Equator does not support Tactical or PFT Zombies.</li>\n<li>Select participant totals in Deathmatch/Gun Game and team sizes in Team DM,\nwithin the chosen map/area\u2019s limits.</li>\n<li>Air Pit Team DM requires ArenaMapPort 0.2.2 or newer for its team-start boxes.</li>\n</ul>\n<h4>Mutators</h4>\n<ul>\n<li>Faster movement, double jump, bunnyhop, air control, sliding, airborne hip\nfire and vaulting. Less inertia/weight slowdown and shorter landing recovery.\nSlow walking with CMS/Surv12 and splints. A master switch disables the movement group.</li>\n<li>Faster drawing, holstering, reloading, magazine packing and medical use.\nSupported weapons select full-auto when drawn; manual changes remain possible.</li>\n<li>Backpack items and magazines, automatic medical quickslots, instant search.</li>\n<li>Arena HUD and announcer switches; separate announcer/hitmarker volume.\nKill skull, optional combined burst damage, detailed health/ammo/grenade\npanels and a scoreboard with damage-share assists.</li>\n<li>Team tracer/laser colors and friendly fire. Friendly fire defaults off for\nPFT Zombies, on for Team DM and PFT Tactical.</li>\n<li>Akimbo pistols (WIP), additional Molotov (WIP), bot movement options.</li>\n<li>Killcam replays with Killcam installed and DeathReplay enabled.\nPFT team spectating has a target-HP display and works without the replay mod.</li>\n<li>Pickups on every supported Arena map in Deathmatch and Team DM: health,\nshield, double damage, jump boots, unlimited ammo and an M60. Checked positions\nrotate during play, within the selected Customs area where applicable.</li>\n<li>Visible Team DM bot spawn protection in the fixed team boxes on Equator,\nBay5 and Air Pit, default four seconds; firing, throwing a grenade or dealing\ndamage ends it. Other maps retain player protection without bot spawn shields.</li>\n<li>Narrow colored body contours identify bot spawn protection, Shield and Double\nDamage. Opaque cover hides the contour; simultaneous effects share its colors.</li>\n</ul>\n<p>Molotov and deliberate bot pickup steering require BigBrain 1.5.0 or newer plus\nArenaMode\u2019s companion DLL. Molotov is unavailable in Zombies.</p>\n<p>Labyrinth entrance traps/toxic pool and its center alarm are handled separately\nfor Arena. Way Up uses a 10-second countdown. Round-state lighting is available\non every supported Arena map. Quest/achievement/XP notifications and the\nextraction list are suppressed; the misleading item-loss warning is hidden and\nthe post-raid XP page skipped.</p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Setup and controls</div>\n<div class=\"tab-content\"><ul>\n<li>Requires <strong>SPT 4.1.x</strong>; native testing has used 4.1.6.</li>\n<li>Close the game and server. Extract the release into the SPT folder containing\n<code>EscapeFromTarkov.exe</code>, keeping its directory structure.</li>\n<li>Both the client and server are required. The two Arena client DLLs, audio,\nassets and notices belong in <code>BepInEx/plugins/maschine-ArenaMode/</code>.\nThe server belongs in <code>SPT_Runtime/user/mods/ArenaMode/</code>.\nWhen updating, preserve custom files and remove duplicate old Arena DLLs.</li>\n<li>Use the supplied <code>maschine-Redeploy.Core.dll</code> (1.0.8); keep only one copy,\ndirectly in <code>BepInEx/plugins/</code>.\nArena requires at least this version and disables itself before initialization\nif Core is missing, unreadable or older. Restart after correcting the files.\nThe full Redeploy mod is not required.</li>\n<li>Install optional mods separately, with their own prerequisites.</li>\n<li>Start server and game, select ARENA, then configure and enter the match.\nInvite 1\u20134 PFT companions first if using a squad mode.</li>\n</ul>\n<p>Default controls:</p>\n<ul>\n<li><strong>F9:</strong> scoreboard and live Arena settings.</li>\n<li><strong>Backspace:</strong> give up the current life; ends solo Zombies.</li>\n<li><strong>Escape:</strong> raid menu / leave match.</li>\n<li><strong>Left/right mouse</strong> while team spectating: cycle living bots; Tactical also\nallows observing opponents.</li>\n<li><strong>F12:</strong> advanced settings, if a BepInEx configuration UI is installed.</li>\n</ul>\n<p>Most switches are in the map-screen Mutators panel. Server configuration is\nalso available at the SPT server\u2019s HTTPS address plus <code>/arenamode</code>. Preserve\ncustom settings when updating; restart the game/server after replacing DLLs.</p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Compatibility</div>\n<div class=\"tab-content\"><p>Optional integration targets:</p>\n<ul>\n<li><strong>PitFireTeam 0.10.3+</strong>, client and server: 1-4 companions in Tactical\nor Zombies. PFT 0.10.1 and 0.10.2 remain excluded.</li>\n<li><strong>SAIN 4.5.1+:</strong> personality, pursuit and movement adapters.</li>\n<li><strong>BigBrain 1.5.0+:</strong> Arena\u2019s bundled integration library handles bot actions; it has no separate plugin GUID and stays inactive without BigBrain.</li>\n<li><strong>APBS 2.4.1+:</strong> equipment/progression adapter.</li>\n<li><strong>ArenaMapPort:</strong> Bay5, Equator and Air Pit, with client/server and map assets.</li>\n<li><strong>Killcam 1.0.0:</strong> compatible API and enabled DeathReplay required. Team spectating does not require Killcam.</li>\n<li><strong>DynamicMaps 1.2.1+:</strong> corpse-marker cleanup integration.</li>\n</ul>\n<p>Newer versions of these four mods are attempted with a warning while keeping\nthe required API and protection checks. These targets are not a blanket guarantee for future versions or every mod\ncombination. Optional mods keep their own dependencies. Fika activation is\nexplicitly blocked.</p></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Notes and credits</div>\n<div class=\"tab-content\"><ul>\n<li>High bot counts depend on hardware, map and installed AI mods. Zombie defaults\nare not a performance guarantee.</li>\n<li>Report problems with the mode, map/area, versions and relevant client/server\nlogs. Remove private information before sharing; do not post full profiles.</li>\n<li>Original code/documentation: MIT. Media licenses are separate; keep the\nsupplied notices when redistributing.</li>\n<li>Adapted HUD behavior: Drexira\u2019s DragonDen.Hitmarker and DragonDen.Killfeed,\nMIT. Shared respawn library: Redeploy.Core by maschine, MIT.</li>\n<li>Icons: <a target=\"_blank\" class=\"external-link\" href=\"https://game-icons.net/\" rel=\"noreferrer noopener\">Lorc and Skoll / game-icons.net</a>, CC BY 3.0.</li>\n<li>Customs preview: <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/the-hideout/tarkov-dev-svg-maps\" rel=\"noreferrer noopener\">Shebuka / Tarkov.dev</a>,\nground layer via acidphantasm\u2019s DynamicMaps, adapted to grayscale by maschine;\nCC BY-NC-SA 4.0.</li>\n<li>Audio: <a target=\"_blank\" class=\"external-link\" href=\"https://freesound.org/people/IENBA/sounds/762911/\" rel=\"noreferrer noopener\">IENBA</a> and\n<a target=\"_blank\" class=\"external-link\" href=\"https://freesound.org/people/User391915396/sounds/570335/\" rel=\"noreferrer noopener\">User391915396</a>, CC0.\nAnnouncer recordings were supplied from an ElevenLabs Creator workflow for\nArenaMode; they are not a CC/MIT voice pack for separate reuse.</li>\n<li>Weapon-category pictures were generated with OpenAI; the remaining original\nsymbols and Molotov presentation are ArenaMode work. Full sources and terms\nare listed in <code>THIRD-PARTY-NOTICES.md</code> and the asset notices.</li>\n</ul>\n<p>Unofficial mod; not affiliated with or endorsed by Battlestate Games.</p></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Further information</div>\n<div class=\"tab-content\"><p><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/maschine34675/ArenaMode/blob/master/README.md\" rel=\"noreferrer noopener\">Detailed overview</a></p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/maschine34675/ArenaMode/blob/master/docs/FEATURES.md\" rel=\"noreferrer noopener\">Feature inventory</a></p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/maschine34675/ArenaMode/blob/master/THIRD-PARTY-NOTICES.md\" rel=\"noreferrer noopener\">Licensing</a></p></div></div></div>\n",
+   "description_html": "<h2>\u2b07\ufe0f READ THIS OR NIKITA WILL COME AND HAUNT YOU \u2b07\ufe0f</h2>\n<p><strong>Since this mod affects virtually every aspect of the game, there will be incompatibilities with other mods.</strong></p>\n<p>If you really want to be sure, create a second SPT installation with only the necessary mods.<br />\nExisting profile progress isn\u2019t used in Arena anyway.</p>\n<p>I\u2019m currently building a small, custom launcher for this, but it\u2019ll take a while yet.</p>\n<p>Known incompatible - ArenaMode will disable itself:</p>\n<ul>\n<li>ORBIT</li>\n<li>Questing Bots</li>\n<li>Adaptive Bot Culling</li>\n</ul>\n<p>Made compatible on a best effort basis:</p>\n<ul>\n<li>Looting Bots 1.8.0+</li>\n<li>Remove The Dead 4.1.3+</li>\n<li>Smoothie 1.0.8+</li>\n<li>MoreBotsAPI 2.1.1+</li>\n<li>AI Limit 1.9.2+</li>\n<li>Continuous Healing 1.6.3+</li>\n<li>Late To The Party 3.1.1+</li>\n<li>Classic Movement 1.1.3+</li>\n<li>StatTrack 2.1.1+</li>\n<li>Continuous Load Ammo 1.2.0+</li>\n<li>SVM 2.2.3+</li>\n<li>Deminvincibility 2.2.0+</li>\n</ul>\n<p>This is a prerelease and still heavily work in progress. Bugs may occur.</p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Overview</div>\n<div class=\"tab-content\"><p>ArenaMode adds arena matches against AI to SPT 4.1. Select <strong>ARENA</strong> next to PMC\nand Scav, then choose a mode, map, equipment and mutators in the raid setup menu.</p>\n<ul>\n<li>Five modes: Gun Game, Deathmatch, Team DM, Tactical and Zombies.</li>\n<li>Respawns or round/wave-based survival, depending on the mode.</li>\n<li>Arena kits, a weapon ladder and mode-specific own-gear options.</li>\n<li>Scoreboard, assists, killfeed, hitmarkers, health/armor and weapon panels.</li>\n<li>Profile restoration on exit: Arena loot, XP and quest changes are not kept.</li>\n<li>Single-player only. <strong>Fika is not supported.</strong></li>\n<li>Support for PIT Fireteam teammates.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Modes</div>\n<div class=\"tab-content\"><ul>\n<li><strong>Gun Game:</strong> each kill advances your weapon. Respawn at the current stage;\nthe ladder repeats after the final weapon.</li>\n<li><strong>Deathmatch:</strong> free-for-all or all bots against you. Choose rounds, a\nper-round kill/time limit, or continuous play without limits.</li>\n<li><strong>Team DM:</strong> U\u2217\u2217\u2217 against B\u2217\u2217\u2217, with respawns and team kill/time limits.\nDoes not require PitFireTeam.</li>\n<li><strong>Tactical (WIP):</strong> round-based elimination. Solo defaults to 1v5 with a kit\nbuy menu. With PitFireTeam, choose own gear or a supplied PMC kit and bring\n1\u20134 companions against five opponents. Companions keep their own gear.\nSpectate after death and return next round with the selected entry loadout.</li>\n<li><strong>Zombies (WIP):</strong> increasing waves, with ammunition replenished between\nwaves. Solo death ends the match. A PitFireTeam squad can keep fighting after\nyour death; fallen members return after the wave is cleared. A wipe ends the\nmatch. Entry gear is restored between waves, including the surviving player.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Maps and mutators</div>\n<div class=\"tab-content\"><h4>Maps</h4>\n<ul>\n<li>Factory, day and night; Labs; Labyrinth.</li>\n<li>Customs: Factory Center, Factory Side and Customs Yard. Only these bounded\nareas are available, in all five modes.</li>\n<li>With ArenaMapPort: Bay5 and Air Pit in all modes; Equator in Gun Game, Deathmatch, Team DM\nand solo Zombies. Equator does not support Tactical or PFT Zombies.</li>\n<li>Select participant totals in Deathmatch/Gun Game and team sizes in Team DM,\nwithin the chosen map/area\u2019s limits.</li>\n<li>Air Pit Team DM requires ArenaMapPort 0.2.2 or newer for its team-start boxes.</li>\n</ul>\n<h4>Mutators</h4>\n<ul>\n<li>Faster movement, double jump, bunnyhop, air control, sliding, airborne hip\nfire and vaulting. Less inertia/weight slowdown and shorter landing recovery.\nSlow walking with CMS/Surv12 and splints. A master switch disables the movement group.</li>\n<li>Faster drawing, holstering, reloading, magazine packing and medical use.\nSupported weapons select full-auto when drawn; manual changes remain possible.</li>\n<li>Backpack items and magazines, automatic medical quickslots, instant search.</li>\n<li>Arena HUD and announcer switches; separate announcer/hitmarker volume.\nKill skull, optional combined burst damage, detailed health/ammo/grenade\npanels and a scoreboard with damage-share assists.</li>\n<li>Team tracer/laser colors and friendly fire. Friendly fire defaults off for\nPFT Zombies, on for Team DM and PFT Tactical.</li>\n<li>Akimbo pistols (WIP), additional Molotov (WIP), bot movement options.</li>\n<li>Killcam replays with Killcam installed and DeathReplay enabled.\nPFT team spectating has a target-HP display and works without the replay mod.</li>\n<li>Pickups on every supported Arena map in Deathmatch and Team DM: health,\nshield, double damage, jump boots, unlimited ammo and an M60. Checked positions\nrotate during play, within the selected Customs area where applicable.</li>\n<li>Visible Team DM bot spawn protection in the fixed team boxes on Equator,\nBay5 and Air Pit, default four seconds; firing, throwing a grenade or dealing\ndamage ends it. Other maps retain player protection without bot spawn shields.</li>\n<li>Narrow colored body contours identify bot spawn protection, Shield and Double\nDamage. Opaque cover hides the contour; simultaneous effects share its colors.</li>\n</ul>\n<p>Molotov and deliberate bot pickup steering require BigBrain 1.5.0 or newer plus\nArenaMode\u2019s companion DLL. Molotov is unavailable in Zombies.</p>\n<p>Labyrinth entrance traps/toxic pool and its center alarm are handled separately\nfor Arena. Way Up uses a 10-second countdown. Round-state lighting is available\non every supported Arena map. Quest/achievement/XP notifications and the\nextraction list are suppressed; the misleading item-loss warning is hidden and\nthe post-raid XP page skipped.</p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Setup and controls</div>\n<div class=\"tab-content\"><ul>\n<li>Requires <strong>SPT 4.1.x</strong>; native testing has used 4.1.6.</li>\n<li>Close the game and server. Extract the release into the SPT folder containing\n<code>EscapeFromTarkov.exe</code>, keeping its directory structure.</li>\n<li>Both the client and server are required. The two Arena client DLLs, audio,\nassets and notices belong in <code>BepInEx/plugins/maschine-ArenaMode/</code>.\nThe server belongs in <code>SPT_Runtime/user/mods/ArenaMode/</code>.\nWhen updating, preserve custom files and remove duplicate old Arena DLLs.</li>\n<li>Use the supplied <code>maschine-Redeploy.Core.dll</code> (1.0.8); keep only one copy,\ndirectly in <code>BepInEx/plugins/</code>.\nArena requires at least this version and disables itself before initialization\nif Core is missing, unreadable or older. Restart after correcting the files.\nThe full Redeploy mod is not required.</li>\n<li>Install optional mods separately, with their own prerequisites.</li>\n<li>Start server and game, select ARENA, then configure and enter the match.\nInvite 1\u20134 PFT companions first if using a squad mode.</li>\n</ul>\n<p>Default controls:</p>\n<ul>\n<li><strong>F9:</strong> scoreboard and live Arena settings.</li>\n<li><strong>Backspace:</strong> give up the current life; ends solo Zombies.</li>\n<li><strong>Escape:</strong> raid menu / leave match.</li>\n<li><strong>Left/right mouse</strong> while team spectating: cycle living bots; Tactical also\nallows observing opponents.</li>\n<li><strong>F12:</strong> advanced settings, if a BepInEx configuration UI is installed.</li>\n</ul>\n<p>Most switches are in the map-screen Mutators panel. Server configuration is\nalso available at the SPT server\u2019s HTTPS address plus <code>/arenamode</code>. Preserve\ncustom settings when updating; restart the game/server after replacing DLLs.</p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Compatibility</div>\n<div class=\"tab-content\"><p>Optional integration targets:</p>\n<ul>\n<li><strong>PitFireTeam 0.10.3+</strong>, client and server: 1-4 companions in Tactical\nor Zombies. PFT 0.10.1 and 0.10.2 remain excluded.</li>\n<li><strong>SAIN 4.5.1+:</strong> personality, pursuit and movement adapters.</li>\n<li><strong>BigBrain 1.5.0+:</strong> Arena\u2019s bundled integration library handles bot actions; it has no separate plugin GUID and stays inactive without BigBrain.</li>\n<li><strong>APBS 2.4.1+:</strong> equipment/progression adapter.</li>\n<li><strong>ArenaMapPort:</strong> Bay5, Equator and Air Pit, with client/server and map assets.</li>\n<li><strong>Killcam 1.0.0:</strong> compatible API and enabled DeathReplay required. Team spectating does not require Killcam.</li>\n<li><strong>DynamicMaps 1.2.1+:</strong> corpse-marker cleanup integration.</li>\n</ul>\n<p>Newer versions of these four mods are attempted with a warning while keeping\nthe required API and protection checks. These targets are not a blanket guarantee for future versions or every mod\ncombination. Optional mods keep their own dependencies. Fika activation is\nexplicitly blocked.</p></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Notes and credits</div>\n<div class=\"tab-content\"><ul>\n<li>High bot counts depend on hardware, map and installed AI mods. Zombie defaults\nare not a performance guarantee.</li>\n<li>Report problems with the mode, map/area, versions and relevant client/server\nlogs. Remove private information before sharing; do not post full profiles.</li>\n<li>Original code/documentation: MIT. Media licenses are separate; keep the\nsupplied notices when redistributing.</li>\n<li>Adapted HUD behavior: Drexira\u2019s DragonDen.Hitmarker and DragonDen.Killfeed,\nMIT. Shared respawn library: Redeploy.Core by maschine, MIT.</li>\n<li>Icons: <a target=\"_blank\" class=\"external-link\" href=\"https://game-icons.net/\" rel=\"noreferrer noopener\">Lorc and Skoll / game-icons.net</a>, CC BY 3.0.</li>\n<li>Customs preview: <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/the-hideout/tarkov-dev-svg-maps\" rel=\"noreferrer noopener\">Shebuka / Tarkov.dev</a>,\nground layer via acidphantasm\u2019s DynamicMaps, adapted to grayscale by maschine;\nCC BY-NC-SA 4.0.</li>\n<li>Audio: <a target=\"_blank\" class=\"external-link\" href=\"https://freesound.org/people/IENBA/sounds/762911/\" rel=\"noreferrer noopener\">IENBA</a> and\n<a target=\"_blank\" class=\"external-link\" href=\"https://freesound.org/people/User391915396/sounds/570335/\" rel=\"noreferrer noopener\">User391915396</a>, CC0.\nAnnouncer recordings were supplied from an ElevenLabs Creator workflow for\nArenaMode; they are not a CC/MIT voice pack for separate reuse.</li>\n<li>Weapon-category pictures were generated with OpenAI; the remaining original\nsymbols and Molotov presentation are ArenaMode work. Full sources and terms\nare listed in <code>THIRD-PARTY-NOTICES.md</code> and the asset notices.</li>\n</ul>\n<p>Unofficial mod; not affiliated with or endorsed by Battlestate Games.</p></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Further information</div>\n<div class=\"tab-content\"><p><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/maschine34675/ArenaMode/blob/master/README.md\" rel=\"noreferrer noopener\">Detailed overview</a></p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/maschine34675/ArenaMode/blob/master/docs/FEATURES.md\" rel=\"noreferrer noopener\">Feature inventory</a></p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/maschine34675/ArenaMode/blob/master/docs/DEPENDENCIES.md\" rel=\"noreferrer noopener\">Mod compatibility</a></p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/maschine34675/ArenaMode/blob/master/THIRD-PARTY-NOTICES.md\" rel=\"noreferrer noopener\">Licensing</a></p></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/56LJgB0ly43i18NeVzE8H3olOcwZGKLS3WrHJwFM.png",
    "forge_url": "https://sp-mod.com/mod/3175/arena-mode",
-   "downloads": 315,
-   "favourites": 5,
+   "downloads": 375,
+   "favourites": 7,
    "featured": false,
    "fika": false,
    "fika_latest": "incompatible",
@@ -218853,12 +218933,46 @@
    ],
    "versions": [
     {
+     "id": 16079,
+     "version": "0.1.2",
+     "description": "<p>Further mod compatibility fixes</p>\n",
+     "spt_constraint": "~4.1.0",
+     "fika": "incompatible",
+     "downloads": 49,
+     "size": 3342485,
+     "link": "https://sp-mod.com/mod/download/3175/arena-mode/0.1.2",
+     "published_at": "2026-10-20T10:50:00.000000Z",
+     "dependencies": [
+      {
+       "id": 791,
+       "name": "SAIN - Solarint's AI Modifications - Full AI Combat System Replacement",
+       "slug": "sain-solarints-ai-modifications-full-ai-combat-system-replacement",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement"
+      },
+      {
+       "id": 1594,
+       "name": "APBS - Acid's Progressive Bot System",
+       "slug": "apbs-acids-progressive-bot-system",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/1594/apbs-acids-progressive-bot-system"
+      },
+      {
+       "id": 2097,
+       "name": "ABPS - Acid's Bot Placement System",
+       "slug": "abps-acids-bot-placement-system",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2097/abps-acids-bot-placement-system"
+      }
+     ]
+    },
+    {
      "id": 16058,
      "version": "0.1.1",
      "description": "<p>Added support for following mods:</p>\n<ul>\n<li>Looting Bots 1.8.0+</li>\n<li>Remove The Dead 4.1.3+</li>\n<li>Smoothie 1.0.8+</li>\n<li>MoreBotsAPI 2.1.1+</li>\n<li>AI Limit 1.9.2+</li>\n</ul>\n<p>ArenaMode disables itself if following mods are installed:</p>\n<ul>\n<li>Questing Bots</li>\n<li>ORBIT</li>\n</ul>\n",
      "spt_constraint": "~4.1.0",
      "fika": "incompatible",
-     "downloads": 191,
+     "downloads": 202,
      "size": 3310416,
      "link": "https://sp-mod.com/mod/download/3175/arena-mode/0.1.1",
      "published_at": "2026-10-19T19:03:00.000000Z",
@@ -218921,7 +219035,7 @@
      ]
     }
    ],
-   "latest_version": "0.1.1",
+   "latest_version": "0.1.2",
    "spt_constraint": "~4.1.0",
    "all_spt_constraints": [
     "~4.1.0"
@@ -218973,7 +219087,7 @@
     }
    ],
    "published_at": "2026-10-19T15:26:00.000000Z",
-   "updated_at": "2026-10-20T08:36:47.000000Z",
+   "updated_at": "2026-10-20T12:39:07.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -219501,14 +219615,14 @@
   {
    "id": 3184,
    "hub_id": null,
-   "guid": "com.zombieghost.extractsurvivedebugger",
+   "guid": "com.zombieghost.interfacebeautificationhidden",
    "name": "Interface Beautification Hidden",
    "slug": "interface-beautification-hidden",
    "teaser": "Now you can hidden those ugly things",
-   "description_html": "<p>Main Functions</p>\n<p>1.Hidden Bate version test warning</p>\n<p>2.Hide the game version number in the bottom left corner of the raid</p>\n<h2>\ud83d\udcf8</h2>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://raw.githubusercontent.com/Zombie-Ghost/SPT-Weight-Max/refs/heads/main/screenshots/a741a8847c9c270d12ab5ba8ba91cf46.png\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Zombie-Ghost/SPT-Weight-Max/refs/heads/main/screenshots/a741a8847c9c270d12ab5ba8ba91cf46.png\" alt=\"\u4e3b\u83dc\u5355\u6f14\u793a\" /></a>\n<a target=\"_blank\" class=\"external-link\" href=\"https://raw.githubusercontent.com/Zombie-Ghost/SPT-Weight-Max/refs/heads/main/screenshots/d0fb313a23b3ce4ccf74d1c00a39221d.png\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Zombie-Ghost/SPT-Weight-Max/refs/heads/main/screenshots/d0fb313a23b3ce4ccf74d1c00a39221d.png\" alt=\"\u6218\u5c40\u64a4\u79bb\u6f14\u793a\" /></a></p>\n",
+   "description_html": "<p>Main Functions</p>\n<p>1.Hidden Bate version test warning</p>\n<p>2.Hide the game version number in the bottom left corner of the raid</p>\n<h2>\ud83d\udcf8</h2>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://raw.githubusercontent.com/Zombie-Ghost/SPT-Weight-Max/refs/heads/main/screenshots/a741a8847c9c270d12ab5ba8ba91cf46.png\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Zombie-Ghost/SPT-Weight-Max/refs/heads/main/screenshots/a741a8847c9c270d12ab5ba8ba91cf46.png\" alt=\"1\" /></a>\n<a target=\"_blank\" class=\"external-link\" href=\"https://raw.githubusercontent.com/Zombie-Ghost/SPT-Weight-Max/refs/heads/main/screenshots/d0fb313a23b3ce4ccf74d1c00a39221d.png\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Zombie-Ghost/SPT-Weight-Max/refs/heads/main/screenshots/d0fb313a23b3ce4ccf74d1c00a39221d.png\" alt=\"2\" /></a></p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/qFUqALNX67E2iQhnqkD64ho7Cloq0oXuNTL9ddH7.jpg",
    "forge_url": "https://sp-mod.com/mod/3184/interface-beautification-hidden",
-   "downloads": 91,
+   "downloads": 120,
    "favourites": 3,
    "featured": false,
    "fika": true,
@@ -219542,8 +219656,8 @@
      "description": "<p>Main Functions</p>\n<p>1.Hide Bate version test warning</p>\n<p>2.Hide the game version number in the bottom left corner of the raid</p>\n",
      "spt_constraint": "4.1.X",
      "fika": "compatible",
-     "downloads": 91,
-     "size": 2401,
+     "downloads": 120,
+     "size": 2394,
      "link": "https://sp-mod.com/mod/download/3184/interface-beautification-hidden/1.0.0",
      "published_at": "2026-10-19T21:38:00.000000Z",
      "dependencies": []
@@ -219557,7 +219671,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-10-19T20:04:00.000000Z",
-   "updated_at": "2026-10-20T03:45:34.000000Z",
+   "updated_at": "2026-10-20T13:26:36.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -219638,6 +219752,170 @@
    "all_dependencies": [],
    "published_at": "2026-10-19T23:31:00.000000Z",
    "updated_at": "2026-10-19T23:36:17.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 3186,
+   "hub_id": null,
+   "guid": "com.musicmaniac.shortermagazines",
+   "name": "Shorter Magazines",
+   "slug": "shorter-magazines",
+   "teaser": "Makes 3x1 mags into 2x1 mags",
+   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Overview</div>\n<div class=\"tab-content\"><p>I want 3x1 mags be made into 2x1 mags.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Alternative mod(-s)</div>\n<div class=\"tab-content\"><p>There\u2019s <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2373/slimmer-magazines\" rel=\"noreferrer noopener\">Slimmer Magazines</a>, but:</p>\n<ul>\n<li>It also changes 2x2 magazines into 1x2. I don\u2019t like that.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">My other mods</div>\n<div class=\"tab-content\"><p>Hey you! Yes, you. I got a bunch of other mods <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/31382/musicmaniac#mods\" rel=\"noreferrer noopener\">here</a>. You better check them out. Or else\u2026\n<img loading=\"lazy\" decoding=\"async\" src=\"https://media1.tenor.com/m/T9VwwxWHP04AAAAd/cat-cat-crazy.gif\" alt=\"\" /></p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Re-uploading / Updating policy</div>\n<div class=\"tab-content\"><p>Even thought SPT modding policy already imposes this, I\u2019ll write it down nonetheless: if I disappear from SPT again - do not re-upload fixes or forks of my mods. Ping me in SPT discord (<code>@musicmaniac</code>), I\u2019ll add you to authors so you can update original mod page.</p>\n<p>If I added you as author and later returned to modding SPT - please refrain from updating the mod, let me handle it. Or at least ask me on Discord.</p></div></div></div>\n<h2>Support or something</h2>\n<p>If you wanna be true homie or say thanks for time I\u2019ve spent modding the game, feel free to send me a coffee on kofi</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/musicmaniac\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://uploads-ssl.webflow.com/5c14e387dab576fe667689cf/61e11d5cf697cee7ca5b65d9_Button-p-500.png\" alt=\"61e11d5cf697cee7ca5b65d9_Button-p-500.png\" /></a></p>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/VN9qGUYvg6ZvRLgbmDLeozN6KSEsvBLWCp1R8Q9z.png",
+   "forge_url": "https://sp-mod.com/mod/3186/shorter-magazines",
+   "downloads": 39,
+   "favourites": 0,
+   "featured": false,
+   "fika": false,
+   "fika_latest": "unknown",
+   "category": {
+    "id": 15,
+    "title": "Equipment",
+    "slug": "equipment"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 31382,
+     "name": "MusicManiac",
+     "avatar": "https://files.sp-mod.com/profile-photos/ca9efbb42b4e3190891e87b23f064c0faf5d31aa_128w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/MusicManiac/ShorterMagazines",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 16082,
+     "version": "1.0.0",
+     "description": "<p>Something something about installation</p>\n",
+     "spt_constraint": "~4.1.0",
+     "fika": "unknown",
+     "downloads": 39,
+     "size": 6177,
+     "link": "https://sp-mod.com/mod/download/3186/shorter-magazines/1.0.0",
+     "published_at": "2026-10-20T12:56:00.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "1.0.0",
+   "spt_constraint": "~4.1.0",
+   "all_spt_constraints": [
+    "~4.1.0"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-10-20T12:56:48.000000Z",
+   "updated_at": "2026-10-20T12:57:04.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
+    "cheat_notice": false,
+    "profile_binding_notice": true
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 3187,
+   "hub_id": null,
+   "guid": "com.kabansleash.spt",
+   "name": " Kaban's Leash",
+   "slug": "kabans-leash",
+   "teaser": "Tired of Kaban and his guards going on a sightseeing tour across T\u2217\u2217\u2217\u2217\u2217 instead of defending Lexos?",
+   "description_html": "<p>Kaban\u2019s Leash</p>\n<p>Fixes the issue where SAIN or Questing Bots can cause Kaban and his guards to abandon the Lexos dealership. This mod aims to keep Kaban\u2019s crew anchored to the Lexos area and get them using the mounted guns (WIP).</p>\n<p>The entire mod is a WIP. Features and behaviour are still being developed, and AI assistance was used during development.</p>\n<p>Because apparently, keeping a boss at his own damn dealership requires BIG BRAIN technology.</p>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/XjdlFVd4p4fcbc3WjTcGbwbPzknkL9p8Csd02EHi.png",
+   "forge_url": "https://sp-mod.com/mod/3187/kabans-leash",
+   "downloads": 1,
+   "favourites": 0,
+   "featured": false,
+   "fika": false,
+   "fika_latest": "incompatible",
+   "category": {
+    "id": 5,
+    "title": "Bots",
+    "slug": "bots"
+   },
+   "license": {
+    "name": "The Unlicense",
+    "link": "https://choosealicense.com/licenses/unlicense/"
+   },
+   "authors": [
+    {
+     "id": 127383,
+     "name": "strandedg",
+     "avatar": "https://files.sp-mod.com/profile-photos/zPlWhOjamFciQMLe2zwGc5DrwGAqgWcfXnF0DBmR_128w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/strandedg/Kabans-Leash.",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 16083,
+     "version": "2.0.0",
+     "description": "<p><strong>Kaban\u2019s Leash</strong></p>\n<p>A work-in-progress SPT mod designed to keep Kaban and his guards where they belong: Lexos!</p>\n<p>The mod aims to stop Kaban and his guards from wandering too far away from their intended area, particularly when using mods such as SAIN or Questing Bots. It also includes experimental behaviour to get guards using the mounted guns around Lexos.</p>\n<p><strong>Features</strong></p>\n<p>Keeps Kaban anchored to Lexos.</p>\n<p>Attempts to keep his guards close to the designated area.</p>\n<p>Includes mounted-gun behaviour for guards.</p>\n<p>Includes a fallback leash system.</p>\n<p>Configurable settings for those who want to experiment.</p>\n<p>Please remember that this mod is still a work in progress. Features may be unfinished, bugs are possible, and things may change as development continues.</p>\n<p>Important: Debugging Settings</p>\n<p>Please leave the debugging settings alone unless you know what you\u2019re doing!</p>\n<p>The debugging options are mainly intended for development and troubleshooting. Changing them unnecessarily may cause unexpected behaviour.</p>\n<p>The main exception is if you specifically want to make Kaban spawn at a custom location. The anchor-position debugging functionality can be used for that purpose.</p>\n<p>If you\u2019re just installing the mod and want it to work normally, leave the debugging settings at their defaults.</p>\n<p>Feedback and Suggestions</p>\n<p>This is my first mod, so I\u2019m still learning as I go. Any and all feedback, suggestions, bug reports, and constructive criticism are welcome!</p>\n<p>If something doesn\u2019t work, if you find a bug, or if you have an idea that could improve the mod, please let me know. I\u2019m happy to learn and improve it.</p>\n<p>Just please be nice \u2014 we\u2019re all starting somewhere!</p>\n<p>You can also add me on Discord: strandedg</p>\n<p>Disclaimer</p>\n<p>This mod is a work in progress and is provided as-is. Compatibility and behaviour may vary depending on your SPT version and installed mods.</p>\n<p>AI assistance was used during development.</p>\n<p>Thanks for giving my first mod a try, and happy raiding!</p>\n",
+     "spt_constraint": "4.1.6",
+     "fika": "incompatible",
+     "downloads": 1,
+     "size": 12429,
+     "link": "https://sp-mod.com/mod/download/3187/kabans-leash/2.0.0",
+     "published_at": "2026-10-20T13:31:00.000000Z",
+     "dependencies": [
+      {
+       "id": 902,
+       "name": "BigBrain",
+       "slug": "bigbrain",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/902/bigbrain"
+      }
+     ]
+    }
+   ],
+   "latest_version": "2.0.0",
+   "spt_constraint": "4.1.6",
+   "all_spt_constraints": [
+    "4.1.6"
+   ],
+   "dependencies": [
+    {
+     "id": 902,
+     "name": "BigBrain",
+     "slug": "bigbrain",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/902/bigbrain"
+    }
+   ],
+   "all_dependencies": [
+    {
+     "id": 902,
+     "name": "BigBrain",
+     "slug": "bigbrain",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/902/bigbrain"
+    }
+   ],
+   "published_at": "2026-10-20T13:13:00.000000Z",
+   "updated_at": "2026-10-20T13:36:25.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
