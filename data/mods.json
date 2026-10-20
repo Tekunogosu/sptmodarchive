@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-20T14:22:47Z",
+ "generated_at": "2026-10-20T19:22:21Z",
  "source": "https://sp-mod.com",
  "filter": "all",
  "mod_count": 2104,
@@ -119010,7 +119010,7 @@
    "description_html": "<p>This is a mod based on toaddsworth\u2019s <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1127/nosaveondeath?highlight=nosave\" rel=\"noreferrer noopener\">NoSaveOnDeath</a> mod. Earlier versions of the mod were more of an update, however with the release of SPT 4.0 the mod had to be completely rewritten and so only the general concept remains the same at this point. Here\u2019s a short snippet of the original description to explain what the mod does:</p>\n<p>\u201c<em>This mod makes it so that when you die in raid, your progress is not saved. This means that in the event that you die, go MIA, or quit the raid through the menu, everything including gear, experience, and quest progress is restored to how it was before you went on the raid.</em>\u201d</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/2850.png",
    "forge_url": "https://sp-mod.com/mod/2150/no-save-on-death-respawned",
-   "downloads": 4613,
+   "downloads": 4697,
    "favourites": 1,
    "featured": false,
    "fika": false,
@@ -119044,12 +119044,24 @@
    ],
    "versions": [
     {
+     "id": 16085,
+     "version": "2.1.0",
+     "description": "<p>Updated to 4.1 thanks to p_mot on Discord!</p>\n",
+     "spt_constraint": "~4.1.0",
+     "fika": "unknown",
+     "downloads": 6,
+     "size": 22680,
+     "link": "https://sp-mod.com/mod/download/2150/no-save-on-death-respawned/2.1.0",
+     "published_at": "2026-10-20T17:05:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 12726,
      "version": "2.0.0",
      "description": "<p>update to SPT 4.0</p>\n",
      "spt_constraint": "~4.0 <4.1.0",
      "fika": "unknown",
-     "downloads": 593,
+     "downloads": 658,
      "size": 19877,
      "link": "https://sp-mod.com/mod/download/2150/no-save-on-death-respawned/2.0.0",
      "published_at": "2026-06-21T21:36:00.000000Z",
@@ -119061,23 +119073,24 @@
      "description": "<p>just a bugfix patch to fix scav stuff from saving between raids</p>\n",
      "spt_constraint": "~3.11.0",
      "fika": "unknown",
-     "downloads": 2067,
+     "downloads": 2080,
      "size": null,
      "link": "https://sp-mod.com/mod/download/2150/no-save-on-death-respawned/1.1.1",
      "published_at": "2026-06-21T21:31:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "2.0.0",
-   "spt_constraint": "~4.0 <4.1.0",
+   "latest_version": "2.1.0",
+   "spt_constraint": "~4.1.0",
    "all_spt_constraints": [
     "~3.11.0",
-    "~4.0 <4.1.0"
+    "~4.0 <4.1.0",
+    "~4.1.0"
    ],
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-03-11T10:59:00.000000Z",
-   "updated_at": "2026-07-28T07:24:50.000000Z",
+   "updated_at": "2026-10-20T17:17:12.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -205393,11 +205406,11 @@
    "name": "Exfil Rewards",
    "slug": "exfil-rewards",
    "teaser": "Earn bonus money for extracting from raids.",
-   "description_html": "<h1>Exfil Rewards</h1>\n<p>Exfil Rewards gives you bonus money for successfully getting out of a raid.</p>\n<p>Works for both PMC and Scav raids. Rewards are based on the raid result, kills, and survival time.</p>\n<h2>Features</h2>\n<ul>\n<li>PMC rewards</li>\n<li>Scav rewards</li>\n<li>Kill rewards</li>\n<li>Survival time bonus</li>\n<li>Run-through rewards</li>\n<li>Post-raid reward popup</li>\n<li>Rewards delivered through in-game mail</li>\n</ul>\n<h2>Screenshots</h2>\n<h3>PMC Reward Popup</h3>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/V-E-I-N/ExfilRewards/raw/main/PMC%20Reward%20Popup.png\" alt=\"PMC Reward Popup\" /></p>\n<h3>Scav Reward Popup</h3>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/V-E-I-N/ExfilRewards/raw/main/Scav%20Reward%20Popup.png\" alt=\"Scav Reward Popup\" /></p>\n<h3>In-Game Mail</h3>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/V-E-I-N/ExfilRewards/raw/main/In-Game%20Mail.png\" alt=\"In-Game Mail\" /></p>\n<h2>Rewards</h2>\n<h3>PMC</h3>\n<ul>\n<li>Base extraction: \u20bd100,000 / $800 / \u20ac600</li>\n<li>Per kill: \u20bd25,000 / $200 / \u20ac150</li>\n</ul>\n<h3>Scav</h3>\n<ul>\n<li>Base extraction: \u20bd55,000 / $400 / \u20ac275</li>\n<li>Per kill: \u20bd12,000 / $150 / \u20ac100</li>\n</ul>\n<h3>Survival bonus</h3>\n<p>You get an additional 0.5% of the base extraction reward for every minute survived.</p>\n<h3>Run-through</h3>\n<p>A run-through gives 50% of the normal base reward.</p>\n<p>Kill rewards and the survival bonus still apply.</p>\n<h2>No reward for</h2>\n<p>No reward is given for:</p>\n<ul>\n<li>Killed</li>\n<li>Left</li>\n<li>Missing in Action</li>\n<li>Transit</li>\n</ul>\n<h2>Requirements</h2>\n<ul>\n<li>SPT v4.1.x</li>\n</ul>\n<h2>Installation</h2>\n<p>Download the latest release which is also available on GitHub:</p>\n<p>Download <code>ExfilRewards_1.0.zip</code>, extract it, and place both <code>BepInEx</code> and <code>SPT_Runtime</code> directly into your main SPT game directory.</p>\n<h2>Source</h2>\n<p>Source code is available on GitHub:</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/V-E-I-N/ExfilRewards\" rel=\"noreferrer noopener\">https://github.com/V-E-I-N/ExfilRewards</a></p>\n<h2>License</h2>\n<p>All rights reserved.</p>\n<p>Personal use is allowed. Redistribution, re-uploading, mirroring, repackaging, modifying and redistributing requires permission from froze (V-E-I-N).</p>\n",
+   "description_html": "<h1>Exfil Rewards</h1>\n<p>Exfil Rewards gives you bonus money for successfully getting out of a raid.</p>\n<p>Works for both PMC and Scav raids. Rewards are based on the raid result, kills, and survival time.</p>\n<h2>Features</h2>\n<ul>\n<li>PMC rewards</li>\n<li>Scav rewards</li>\n<li>Kill rewards</li>\n<li>Survival time bonus</li>\n<li>Run-through rewards</li>\n<li>Post-raid reward popup</li>\n<li>Rewards delivered through in-game mail</li>\n</ul>\n<h2>Screenshots</h2>\n<h3>PMC Reward Popup</h3>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/V-E-I-N/ExfilRewards/raw/main/PMC%20Reward%20Popup.png\" alt=\"PMC Reward Popup\" /></p>\n<h3>Scav Reward Popup</h3>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/V-E-I-N/ExfilRewards/raw/main/Scav%20Reward%20Popup.png\" alt=\"Scav Reward Popup\" /></p>\n<h3>In-Game Mail</h3>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/V-E-I-N/ExfilRewards/raw/main/In-Game%20Mail.png\" alt=\"In-Game Mail\" /></p>\n<h2>Rewards</h2>\n<h3>PMC</h3>\n<ul>\n<li>Base extraction: \u20bd100,000 / $800 / \u20ac600</li>\n<li>Per kill: \u20bd25,000 / $200 / \u20ac150</li>\n</ul>\n<h3>Scav</h3>\n<ul>\n<li>Base extraction: \u20bd55,000 / $400 / \u20ac275</li>\n<li>Per kill: \u20bd12,000 / $150 / \u20ac100</li>\n</ul>\n<h3>Survival bonus</h3>\n<p>You get an additional 0.5% of the base extraction reward for every minute survived.</p>\n<h3>Run-through</h3>\n<p>A run-through gives 50% of the normal base reward.</p>\n<p>Kill rewards and the survival bonus still apply.</p>\n<h2>No reward for</h2>\n<p>No reward is given for:</p>\n<ul>\n<li>Killed</li>\n<li>Left</li>\n<li>Missing in Action</li>\n<li>Transit</li>\n</ul>\n<h2>Requirements</h2>\n<ul>\n<li>SPT v4.1.x</li>\n</ul>\n<h2>Installation</h2>\n<p>Download the latest release which is also available on GitHub:</p>\n<p>Download <code>ExfilRewards_1.0.zip</code>, extract it, and place both <code>BepInEx</code> and <code>SPT_Runtime</code> directly into your main SPT game directory.</p>\n<h2>Source</h2>\n<p>Source code is available on GitHub:</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/V-E-I-N/ExfilRewards\" rel=\"noreferrer noopener\">https://github.com/V-E-I-N/ExfilRewards</a></p>\n<h2>License</h2>\n<p>MIT License</p>\n<p>Copyright (c) 2026 V-E-I-N</p>\n<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \u201cSoftware\u201d), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, subject to the following conditions:</p>\n<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>\n<p>THE SOFTWARE IS PROVIDED \u201cAS IS\u201d, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/CR1k1Iyrj5VLTojr2SYsHNv3m1Xkm4IGGCVNs4LW.png",
    "forge_url": "https://sp-mod.com/mod/3027/exfil-rewards",
-   "downloads": 76,
-   "favourites": 2,
+   "downloads": 1871,
+   "favourites": 20,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -205407,12 +205420,12 @@
     "slug": "scripting"
    },
    "license": {
-    "name": "Custom License",
-    "link": ""
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
    },
    "authors": [
     {
-     "id": "124173-arch",
+     "id": 124173,
      "name": "V-E-I-N",
      "avatar": "https://files.sp-mod.com/profile-photos/2CO6aqYcEuecefiuRyIWbduxS7gYOXNSQB4qxpZk_256w.webp"
     }
@@ -205425,36 +205438,84 @@
    ],
    "versions": [
     {
+     "id": 16089,
+     "version": "1.0.1",
+     "description": "<p>Updated the project license to the MIT License.</p>\n<ul>\n<li>Updated the GitHub repository license.</li>\n<li>No changes to the mod\u2019s functionality.</li>\n</ul>\n",
+     "spt_constraint": "~4.1.4",
+     "fika": "unknown",
+     "downloads": 0,
+     "size": 28687985,
+     "link": "https://sp-mod.com/mod/download/3027/exfil-rewards/1.0.1",
+     "published_at": "2026-10-20T19:05:00.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 16088,
+     "version": "1.0.1",
+     "description": "<p>Updated the project license to the MIT License.</p>\n<ul>\n<li>Updated the GitHub repository license.</li>\n<li>Renamed the license file to <code>LICENSE</code>.</li>\n<li>No changes to the mod\u2019s functionality.</li>\n</ul>\n",
+     "spt_constraint": "~4.1.4",
+     "fika": "unknown",
+     "downloads": 3,
+     "size": 28687985,
+     "link": "https://sp-mod.com/mod/download/3027/exfil-rewards/1.0.1",
+     "published_at": "2026-10-20T19:04:00.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 16087,
+     "version": "1.0.0",
+     "description": "<p>Updated the project license to the MIT License.</p>\n<ul>\n<li>Updated the GitHub repository license.</li>\n<li>Renamed the license file to <code>LICENSE</code>.</li>\n<li>No changes to the mod\u2019s functionality.</li>\n</ul>\n",
+     "spt_constraint": "~4.1.4",
+     "fika": "unknown",
+     "downloads": 0,
+     "size": 28687985,
+     "link": "https://sp-mod.com/mod/download/3027/exfil-rewards/1.0.0",
+     "published_at": "2026-10-20T19:02:00.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 16086,
+     "version": "1.0.0",
+     "description": "<p>Updated the project license to the MIT License.</p>\n<ul>\n<li>Updated the GitHub repository license.</li>\n<li>Renamed the license file to <code>LICENSE</code>.</li>\n<li>No changes to the mod\u2019s functionality.</li>\n</ul>\n",
+     "spt_constraint": "~4.1.4",
+     "fika": "unknown",
+     "downloads": 0,
+     "size": 28687985,
+     "link": "https://sp-mod.com/mod/download/3027/exfil-rewards/1.0.0",
+     "published_at": "2026-10-20T19:00:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 15396,
      "version": "1.0.0",
      "description": "<p>First release of Exfil Rewards.</p>\n<ul>\n<li>PMC and Scav rewards</li>\n<li>Kill rewards</li>\n<li>Survival time bonus</li>\n<li>Run-through rewards</li>\n<li>Post-raid reward popup</li>\n<li>Rewards delivered through in-game mail</li>\n</ul>\n",
      "spt_constraint": "~4.1.4",
      "fika": "unknown",
-     "downloads": 76,
+     "downloads": 1868,
      "size": 28687985,
      "link": "https://sp-mod.com/mod/download/3027/exfil-rewards/1.0.0",
      "published_at": "2026-09-14T16:21:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.0.0",
+   "latest_version": "1.0.1",
    "spt_constraint": "~4.1.4",
    "all_spt_constraints": [
     "~4.1.4"
    ],
    "dependencies": [],
    "all_dependencies": [],
-   "published_at": "2026-09-14T16:09:00.000000Z",
-   "updated_at": "2026-09-14T18:30:48.000000Z",
+   "published_at": "2026-10-20T19:06:00.000000Z",
+   "updated_at": "2026-10-20T19:07:05.000000Z",
    "flags": {
     "contains_ads": false,
-    "contains_ai_content": true,
-    "ai_disclosure": "<p>Some of the images used in this project were AI-generated. I also used AI to help optimize parts of the code, since doing some of the optimizations manually would have taken quite a bit of time.</p>\n",
+    "contains_ai_content": false,
+    "ai_disclosure": "",
     "cheat_notice": false,
     "profile_binding_notice": false
    },
    "origin": "forge",
-   "delisted": true
+   "delisted": false
   },
   {
    "id": 3028,
@@ -219245,11 +219306,11 @@
    "name": "Interface 1.1 Backport",
    "slug": "interface-11-backport",
    "teaser": "The interface of Escape from Tushonka 1.0\u20131.2 in SPT 4.1 \u2014 menus, settings, traders, character, raid screens.",
-   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Information</div>\n<div class=\"tab-content\"><p>The interface of Escape from Tushonka 1.0\u20131.2 in SPT 4.1.x (client 0.16.9). The screens are rebuilt from 1.0\u2019s and 1.2\u2019s own data \u2014 layouts, sizes, colours, icons and texts from their UI scenes \u2014 while 0.16\u2019s elements stay and work as before. Every part can be switched off on its own in F12 \u2192 Grifm0le-Interface11Backport.</p>\n<p><strong>Look</strong> \u2014 1.0\u2019s main menu (button column, logo without \u201cBETA TESTING\u201d, background choice, no beta banner), 1.0\u2019s buttons, 1.2\u2019s windows, item cells and redrawn icons, 1.2\u2019s loading pictures at the game\u2019s start.</p>\n<p><strong>Before and after a raid</strong> \u2014 side and location selection, key access, offline raid settings, insurance and the ready screen as in 1.2; 1.0\u2019s raid loading screen; 1.2\u2019s exits list, extraction messages and PostFX screen in the raid; 1.2\u2019s screens after the raid.</p>\n<p><strong>Character</strong> \u2014 1.2\u2019s CHARACTER tab (choose your face and voice), clothing in cells with pictures, 1.2\u2019s tasks tab, skills list and inventory windows.</p>\n<p><strong>Traders and flea market</strong> \u2014 trader tasks in groups (loyalty levels, key, operational), each reward in its own cell plus \u201cReward in the next tasks\u201d; Ragman\u2019s clothing with 1.2\u2019s header and filter, BOAR/USC toggles for the Unheard Edition; 1.2\u2019s flea market filter window and currency icons.</p>\n<p><strong>Other</strong> \u2014 1.2\u2019s one-column settings with 1.2\u2019s tooltips (what a setting does, its CPU/GPU/RAM cost), messenger tabs and dates, the \u201cNot for sale on the flea market\u201d line, VoIP in offline raids.</p>\n<p>All of the mod\u2019s texts are in the game\u2019s 17 languages.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Install</div>\n<div class=\"tab-content\"><p>Extract the archive into your SPT folder (the one with <code>BepInEx</code> and <code>SPT_Runtime</code>). It has two folders:</p>\n<ul>\n<li><code>BepInEx/plugins/Interface10</code> \u2014 the client part;</li>\n<li><code>SPT_Runtime/user/mods/Interface10</code> \u2014 the server part.</li>\n</ul>\n<blockquote class=\"is-info\">\n<p>The server part is needed for the face change, the clothing of both sides and \u201cReward in the next tasks\u201d; everything else works without it.</p>\n</blockquote>\n<p>To remove the mod, delete both folders.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Commando command</div>\n<div class=\"tab-content\"><p>Write to the <strong>Commando</strong> friend in Messenger:</p>\n<table>\n<thead>\n<tr>\n<th align=\"left\">Command</th>\n<th align=\"left\">What it does</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td align=\"left\"><code>spt clothing on</code></td>\n<td align=\"left\">Ragman shows clothing of both sides (B\u2217\u2217\u2217 and U\u2217\u2217\u2217)</td>\n</tr>\n<tr>\n<td align=\"left\"><code>spt clothing off</code></td>\n<td align=\"left\">only your side\u2019s clothing again</td>\n</tr>\n<tr>\n<td align=\"left\"><code>spt clothing</code></td>\n<td align=\"left\">shows the commands and whether it is on</td>\n</tr>\n</tbody>\n</table>\n<p>The Unheard Edition always has both sides, without the command.</p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Recommended mods</div>\n<div class=\"tab-content\"><p>These go well with the interface \u2014 they aren\u2019t needed for it to work.</p>\n<ul>\n<li><strong><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1131/live-flea-prices\" rel=\"noreferrer noopener\">Live Flea Prices</a></strong> by DrakiaXYZ \u2014 keeps the flea market\u2019s prices up to date with live market data.</li>\n<li><strong><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1342/ui-fixes\" rel=\"noreferrer noopener\">UI Fixes</a></strong> by Tyfon \u2014 quality of life improvements and fixes for the interface. Played together with this mod.</li>\n<li><strong><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2788/visitapi-framework\" rel=\"noreferrer noopener\">VisitAPI Framework</a></strong> by TricolourLM7 \u2014 the storyline and trader dialogues as in live.</li>\n<li><strong><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/addon/138/storyline-backport-wip\" rel=\"noreferrer noopener\">Storyline Backport (WIP)</a></strong> by TricolourLM7 \u2014 the story itself, an addon for VisitAPI Framework.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Not included</div>\n<div class=\"tab-content\"><p>Live-only things: seasons, the store, game modes, several characters, spectating, the prestige display, expansions, Area Light Instancing. The main story and trader dialogues come with VisitAPI and Storyline Backport (see <strong>Recommended mods</strong>).</p></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Compatibility</div>\n<div class=\"tab-content\"><p>Made and tested on a clean SPT 4.1.6. Works with VisitAPI and UI Fixes.</p>\n<p>Works with <strong>Fika</strong> 2.4.6: tested as the raid\u2019s host \u2014 the menus, Fika\u2019s raid list on the ready screen, the raid and the screens after it. Playing together with other players is not tested yet.</p>\n<p>Mods that change the same screens may clash \u2014 please report it in the <strong>Issues</strong> tab.</p></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Bug reports</div>\n<div class=\"tab-content\"><p>Report bugs in the <strong>Issues</strong> tab of this page (<strong>New issue</strong>). Please attach:</p>\n<ul>\n<li><code>BepInEx/LogOutput.log</code> \u2014 the client\u2019s log;</li>\n<li>the newest file from <code>SPT_Runtime/user/logs/spt</code> \u2014 the server\u2019s log;</li>\n<li>a screenshot of the screen that looks wrong.</li>\n</ul></div></div></div>\n",
+   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Information</div>\n<div class=\"tab-content\"><p>The interface of Escape from Tushonka 1.0\u20131.2 in SPT 4.1.x (client 0.16.9). The screens are rebuilt from 1.0\u2019s and 1.2\u2019s own data \u2014 layouts, sizes, colours, icons and texts from their UI scenes \u2014 while 0.16\u2019s elements stay and work as before. Every part can be switched off on its own in F12 \u2192 Grifm0le-Interface11Backport.</p>\n<p><strong>Look</strong> \u2014 1.0\u2019s main menu (button column, logo without \u201cBETA TESTING\u201d, background choice, no beta banner), 1.0\u2019s buttons, 1.2\u2019s windows, item cells and redrawn icons, 1.2\u2019s loading pictures at the game\u2019s start.</p>\n<p><strong>Before and after a raid</strong> \u2014 side and location selection, key access, offline raid settings, insurance and the ready screen as in 1.2; 1.0\u2019s raid loading screen; 1.2\u2019s exits list, extraction messages and PostFX screen in the raid; 1.2\u2019s screens after the raid.</p>\n<p><strong>Character</strong> \u2014 1.2\u2019s CHARACTER tab (choose your face and voice), clothing in cells with pictures, 1.2\u2019s tasks tab, skills list and inventory windows.</p>\n<p><strong>Traders and flea market</strong> \u2014 trader tasks in groups (loyalty levels, key, operational), each reward in its own cell plus \u201cReward in the next tasks\u201d; Ragman\u2019s clothing with 1.2\u2019s header and filter, BOAR/USC toggles for the Unheard Edition; 1.2\u2019s flea market filter window and currency icons.</p>\n<p><strong>Other</strong> \u2014 1.2\u2019s one-column settings with 1.2\u2019s tooltips (what a setting does, its CPU/GPU/RAM cost), messenger tabs and dates, the \u201cNot for sale on the flea market\u201d line, VoIP in offline raids.</p>\n<p>All of the mod\u2019s texts are in the game\u2019s 17 languages.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Install</div>\n<div class=\"tab-content\"><p>Extract the archive into your SPT folder (the one with <code>BepInEx</code> and <code>SPT_Runtime</code>). It has two folders:</p>\n<ul>\n<li><code>BepInEx/plugins/Interface10</code> \u2014 the client part;</li>\n<li><code>SPT_Runtime/user/mods/Interface10</code> \u2014 the server part.</li>\n</ul>\n<blockquote class=\"is-info\">\n<p>The server part is needed for the face change, the clothing of both sides and \u201cReward in the next tasks\u201d; everything else works without it.</p>\n</blockquote>\n<p>To remove the mod, delete both folders.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Commando command</div>\n<div class=\"tab-content\"><p>Write to the <strong>Commando</strong> friend in Messenger:</p>\n<table>\n<thead>\n<tr>\n<th align=\"left\">Command</th>\n<th align=\"left\">What it does</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td align=\"left\"><code>spt clothing on</code></td>\n<td align=\"left\">Ragman shows clothing of both sides (B\u2217\u2217\u2217 and U\u2217\u2217\u2217)</td>\n</tr>\n<tr>\n<td align=\"left\"><code>spt clothing off</code></td>\n<td align=\"left\">only your side\u2019s clothing again</td>\n</tr>\n<tr>\n<td align=\"left\"><code>spt clothing</code></td>\n<td align=\"left\">shows the commands and whether it is on</td>\n</tr>\n</tbody>\n</table>\n<p>The Unheard Edition always has both sides, without the command.</p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Recommended mods</div>\n<div class=\"tab-content\"><p>These go well with the interface \u2014 they aren\u2019t needed for it to work.</p>\n<ul>\n<li><strong><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1131/live-flea-prices\" rel=\"noreferrer noopener\">Live Flea Prices</a></strong> by DrakiaXYZ \u2014 keeps the flea market\u2019s prices up to date with live market data.</li>\n<li><strong><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1342/ui-fixes\" rel=\"noreferrer noopener\">UI Fixes</a></strong> by Tyfon \u2014 quality of life improvements and fixes for the interface. Played together with this mod.</li>\n<li><strong><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2788/visitapi-framework\" rel=\"noreferrer noopener\">VisitAPI Framework</a></strong> by TricolourLM7 \u2014 the storyline and trader dialogues as in live.</li>\n<li><strong><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/addon/138/storyline-backport-wip\" rel=\"noreferrer noopener\">Storyline Backport (WIP)</a></strong> by TricolourLM7 \u2014 the story itself, an addon for VisitAPI Framework.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Not included</div>\n<div class=\"tab-content\"><p>Live-only things: seasons, the store, game modes, several characters, spectating, the prestige display, expansions, Area Light Instancing. The main story and trader dialogues come with VisitAPI and Storyline Backport (see <strong>Recommended mods</strong>).</p></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Compatibility</div>\n<div class=\"tab-content\"><p>Made and tested on a clean SPT 4.1.6. Works with VisitAPI and UI Fixes.</p>\n<p>With <strong>Hj\u2019s Improved Customization UI</strong>, its CUSTOMIZATION tab and Ragman\u2019s B\u2217\u2217\u2217/U\u2217\u2217\u2217 toggles are used \u2014 this mod\u2019s CHARACTER tab and Ragman changes switch themselves off (since 1.0.1).</p>\n<p>With <strong>WTT - Head and Voice Selector</strong>, its head and voice drop-downs on the Overall tab work under this mod\u2019s clothing cells (since 1.0.2).</p>\n<p>With <strong>Skills Extended</strong>, First Aid, Field Medicine, Silent Ops and Shadow Connections stay in the skills list, as that mod gives them a use (since 1.0.2). If another mod brings other hidden skills back, switch off \u201c1.2 skills list\u201d (F12).</p>\n<p>Works with <strong>Fika</strong> 2.4.6: tested as the raid\u2019s host \u2014 the menus, Fika\u2019s raid list on the ready screen, the raid and the screens after it. Playing together with other players is not tested yet \u2014 if you play it with friends in Fika, please tell in the <strong>Issues</strong> tab whether everything works.</p>\n<p>Mods that change the same screens may clash \u2014 please report it in the <strong>Issues</strong> tab.</p></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Bug reports</div>\n<div class=\"tab-content\"><p>Report bugs in the <strong>Issues</strong> tab of this page (<strong>New issue</strong>). Please attach:</p>\n<ul>\n<li><code>BepInEx/LogOutput.log</code> \u2014 the client\u2019s log;</li>\n<li>the newest file from <code>SPT_Runtime/user/logs/spt</code> \u2014 the server\u2019s log;</li>\n<li>a screenshot of the screen that looks wrong.</li>\n</ul></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/pCuAOqJ3ImWOodVZ1E3oXyN75jgMVHF6ywI4mfuh.png",
    "forge_url": "https://sp-mod.com/mod/3179/interface-11-backport",
-   "downloads": 363,
-   "favourites": 10,
+   "downloads": 1033,
+   "favourites": 22,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -219277,12 +219338,24 @@
    ],
    "versions": [
     {
+     "id": 16084,
+     "version": "1.0.2",
+     "description": "<ul>\n<li>Skills Extended: First Aid, Field Medicine, Silent Ops and Shadow Connections stay in the skills list.</li>\n<li>WTT Head and Voice Selector: no more four boxes; its head and voice drop-downs show, in 1.2\u2019s look.</li>\n<li>Clothing name box: text placed as in 1.2; a click on the box opens the other suites too.</li>\n<li>In-raid quick bar: slot number plates inside the cells, as in 1.2.</li>\n<li>CHARACTER tab: no second character model in front of the face.</li>\n<li>Handbook: the READ button lights up on hover.</li>\n</ul>\n",
+     "spt_constraint": "~4.1.6",
+     "fika": "unknown",
+     "downloads": 227,
+     "size": 8381173,
+     "link": "https://sp-mod.com/mod/download/3179/interface-11-backport/1.0.2",
+     "published_at": "2026-10-20T15:39:54.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 16054,
      "version": "1.0.1",
      "description": "<ul>\n<li>Trader task groups keep the rows other mods hide: VisitAPI\u2019s story tasks no longer show in the traders\u2019 task lists.</li>\n<li>With Hj\u2019s Improved Customization UI installed, this mod\u2019s CHARACTER tab and Ragman changes switch themselves off and Hj\u2019s are used (two extra tabs broke the character screen\u2019s tab row).</li>\n<li>Server mod name with letters and digits only.</li>\n</ul>\n",
      "spt_constraint": "~4.1.6",
      "fika": "unknown",
-     "downloads": 194,
+     "downloads": 634,
      "size": 8379120,
      "link": "https://sp-mod.com/mod/download/3179/interface-11-backport/1.0.1",
      "published_at": "2026-10-19T17:17:44.000000Z",
@@ -219294,22 +219367,22 @@
      "description": "<p>First public release.</p>\n<ul>\n<li>1.0\u2019s main menu, buttons and raid loading screen; 1.2\u2019s windows, item cells and icons.</li>\n<li>1.2\u2019s raid preparation, in-raid and after-raid screens.</li>\n<li>1.2\u2019s CHARACTER tab (face and voice), clothing cells, tasks tab and skills list.</li>\n<li>Trader tasks in groups, rewards in cells and \u201cReward in the next tasks\u201d; Ragman\u2019s clothing as in 1.2.</li>\n<li>1.2\u2019s settings with tooltips, messenger tabs and the flea market filter window.</li>\n<li>Commando command <code>spt clothing on</code> / <code>spt clothing off</code>: Ragman\u2019s clothing of both sides.</li>\n<li>All texts in 17 languages.</li>\n</ul>\n",
      "spt_constraint": "~4.1.6",
      "fika": "unknown",
-     "downloads": 169,
+     "downloads": 172,
      "size": 8379434,
      "link": "https://sp-mod.com/mod/download/3179/interface-11-backport/1.0.0",
      "published_at": "2026-10-19T15:18:21.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.0.1",
+   "latest_version": "1.0.2",
    "spt_constraint": "~4.1.6",
    "all_spt_constraints": [
     "~4.1.6"
    ],
    "dependencies": [],
    "all_dependencies": [],
-   "published_at": "2026-10-19T15:02:06.000000Z",
-   "updated_at": "2026-10-19T17:18:03.000000Z",
+   "published_at": "2026-10-19T15:02:00.000000Z",
+   "updated_at": "2026-10-20T15:40:59.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -219842,8 +219915,8 @@
    "description_html": "<p>Kaban\u2019s Leash</p>\n<p>Fixes the issue where SAIN or Questing Bots can cause Kaban and his guards to abandon the Lexos dealership. This mod aims to keep Kaban\u2019s crew anchored to the Lexos area and get them using the mounted guns (WIP).</p>\n<p>The entire mod is a WIP. Features and behaviour are still being developed, and AI assistance was used during development.</p>\n<p>Because apparently, keeping a boss at his own damn dealership requires BIG BRAIN technology.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/XjdlFVd4p4fcbc3WjTcGbwbPzknkL9p8Csd02EHi.png",
    "forge_url": "https://sp-mod.com/mod/3187/kabans-leash",
-   "downloads": 1,
-   "favourites": 0,
+   "downloads": 34,
+   "favourites": 1,
    "featured": false,
    "fika": false,
    "fika_latest": "incompatible",
@@ -219871,12 +219944,32 @@
    ],
    "versions": [
     {
+     "id": 16090,
+     "version": "2.2.0",
+     "description": "<p>Hard border for Kaban:** he is never meant to go farther than 30 m from the anchor, even in a fight.</p>\n<ul>\n<li>Safe: he walks back to the anchor.</li>\n<li>In combat: he steps back inside and fights from the edge of the border.</li>\n<li><strong>Border buffer:</strong> he is pulled back 3 m before the limit, so he can\u2019t overshoot it.</li>\n<li><strong>Priority over SAIN:</strong> the behaviour runs as a BigBrain layer (priority 99, configurable).</li>\n<li><strong>Guards now use the mod\u2019s layer</strong> (fixed the missing <code>FlBoarSt</code> brain).</li>\n<li>Guards\u2019 leash is widened so they can reach their assigned gun.</li>\n</ul>\n",
+     "spt_constraint": "4.1.6",
+     "fika": "incompatible",
+     "downloads": 0,
+     "size": 14531,
+     "link": "https://sp-mod.com/mod/download/3187/kabans-leash/2.2.0",
+     "published_at": "2026-10-20T18:26:00.000000Z",
+     "dependencies": [
+      {
+       "id": 902,
+       "name": "BigBrain",
+       "slug": "bigbrain",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/902/bigbrain"
+      }
+     ]
+    },
+    {
      "id": 16083,
      "version": "2.0.0",
      "description": "<p><strong>Kaban\u2019s Leash</strong></p>\n<p>A work-in-progress SPT mod designed to keep Kaban and his guards where they belong: Lexos!</p>\n<p>The mod aims to stop Kaban and his guards from wandering too far away from their intended area, particularly when using mods such as SAIN or Questing Bots. It also includes experimental behaviour to get guards using the mounted guns around Lexos.</p>\n<p><strong>Features</strong></p>\n<p>Keeps Kaban anchored to Lexos.</p>\n<p>Attempts to keep his guards close to the designated area.</p>\n<p>Includes mounted-gun behaviour for guards.</p>\n<p>Includes a fallback leash system.</p>\n<p>Configurable settings for those who want to experiment.</p>\n<p>Please remember that this mod is still a work in progress. Features may be unfinished, bugs are possible, and things may change as development continues.</p>\n<p>Important: Debugging Settings</p>\n<p>Please leave the debugging settings alone unless you know what you\u2019re doing!</p>\n<p>The debugging options are mainly intended for development and troubleshooting. Changing them unnecessarily may cause unexpected behaviour.</p>\n<p>The main exception is if you specifically want to make Kaban spawn at a custom location. The anchor-position debugging functionality can be used for that purpose.</p>\n<p>If you\u2019re just installing the mod and want it to work normally, leave the debugging settings at their defaults.</p>\n<p>Feedback and Suggestions</p>\n<p>This is my first mod, so I\u2019m still learning as I go. Any and all feedback, suggestions, bug reports, and constructive criticism are welcome!</p>\n<p>If something doesn\u2019t work, if you find a bug, or if you have an idea that could improve the mod, please let me know. I\u2019m happy to learn and improve it.</p>\n<p>Just please be nice \u2014 we\u2019re all starting somewhere!</p>\n<p>You can also add me on Discord: strandedg</p>\n<p>Disclaimer</p>\n<p>This mod is a work in progress and is provided as-is. Compatibility and behaviour may vary depending on your SPT version and installed mods.</p>\n<p>AI assistance was used during development.</p>\n<p>Thanks for giving my first mod a try, and happy raiding!</p>\n",
      "spt_constraint": "4.1.6",
      "fika": "incompatible",
-     "downloads": 1,
+     "downloads": 34,
      "size": 12429,
      "link": "https://sp-mod.com/mod/download/3187/kabans-leash/2.0.0",
      "published_at": "2026-10-20T13:31:00.000000Z",
@@ -219891,7 +219984,7 @@
      ]
     }
    ],
-   "latest_version": "2.0.0",
+   "latest_version": "2.2.0",
    "spt_constraint": "4.1.6",
    "all_spt_constraints": [
     "4.1.6"
@@ -219915,7 +220008,7 @@
     }
    ],
    "published_at": "2026-10-20T13:13:00.000000Z",
-   "updated_at": "2026-10-20T13:36:25.000000Z",
+   "updated_at": "2026-10-20T19:14:04.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
