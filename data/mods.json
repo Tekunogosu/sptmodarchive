@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T05:02:12Z",
+ "generated_at": "2026-10-23T11:49:13Z",
  "source": "https://sp-mod.com",
  "filter": "all",
  "mod_count": 2114,
@@ -136060,11 +136060,11 @@
    "name": "Dynamic Item Weights",
    "slug": "dynamic-item-weights",
    "teaser": "Say bye to the empty 9kg jerry can! This mod adjusts the weight of items based on their current usage.",
-   "description_html": "<h2>\ud83d\udcdc Description</h2>\n<p><strong>Dynamic Item Weights</strong> is a mod for <em>Single Player Tushonka</em> that adjusts the weight of items based on their current usage.</p>\n<hr />\n<h2>\ud83d\udcc1 Installation</h2>\n<ul>\n<li>Download the latest release</li>\n<li>Copy the <code>BepInEx</code> folder into your SPT folder</li>\n<li>Start the game</li>\n</ul>\n<hr />\n<h2>\ud83d\udcf7 Preview</h2>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://gitlab.com/Tosox/SPT-DynamicItemWeights/-/raw/master/readme-res/fuel_full.png\" alt=\"\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://gitlab.com/Tosox/SPT-DynamicItemWeights/-/raw/master/readme-res/fuel_used.png\" alt=\"\" /></p>\n<hr />\n<h2>\ud83d\udee0\ufe0f Configuration</h2>\n<h3>In-game menu</h3>\n<ul>\n<li><strong>Enabled</strong>: Toggle dynamic item weights on/off</li>\n<li><strong>Default Tare Fraction</strong>: Fallback tare weight as a fraction of the full item weight</li>\n<li><strong>Verbose Logging</strong>: Log every single weight adjustment (troubleshooting only)</li>\n</ul>\n<h3>tareweights.jsonc</h3>\n<p>A JSONC file mapping the item template ID to the tare weight in kilograms, that is, what the\nitem still weighs once it is fully used up</p>\n<pre><code>{\n    \"57513f07245977207e26a311\": 0.030, // Pack of apple juice\n    \"5d1b36a186f7742523398433\": 2.500  // Metal fuel tank\n}\n</code></pre>\n<blockquote>\n<p>If an item is missing, the plugin uses <code>Default Tare Fraction</code> of the original weight</p>\n</blockquote>\n<hr />\n<h2>\u2615 Support</h2>\n<p>This mod is free and always will be. If it made your raids a little better, a coffee is a nice way to say thanks.</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/tosox\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://ko-fi.com/img/githubbutton_sm.svg\" alt=\"ko-fi\" /></a></p>\n<hr />\n<h2>\ud83d\udcc4 License</h2>\n<p>Distributed under the MIT License. See <code>LICENSE</code> for more information.</p>\n",
+   "description_html": "<h2>\ud83d\udcdc Description</h2>\n<p><strong>Dynamic Item Weights</strong> is a mod for <em>Single Player Tushonka</em> that adjusts the weight of items based on their current usage.</p>\n<hr />\n<h2>\ud83d\udcc1 Installation</h2>\n<ul>\n<li>Download the latest release</li>\n<li>Copy the <code>BepInEx</code> folder into your SPT folder</li>\n<li>Start the game</li>\n</ul>\n<hr />\n<h2>\ud83d\udcf7 Preview</h2>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/Tosox/SPT-DynamicItemWeights/blob/master/readme-res/fuel_full.png?raw=true\" alt=\"\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/Tosox/SPT-DynamicItemWeights/blob/master/readme-res/fuel_used.png?raw=true\" alt=\"\" /></p>\n<hr />\n<h2>\ud83d\udee0\ufe0f Configuration</h2>\n<h3>In-game menu</h3>\n<ul>\n<li><strong>Enabled</strong>: Toggle dynamic item weights on/off</li>\n<li><strong>Default Tare Fraction</strong>: Fallback tare weight as a fraction of the full item weight</li>\n<li><strong>Verbose Logging</strong>: Log every single weight adjustment (troubleshooting only)</li>\n</ul>\n<h3>tareweights.jsonc</h3>\n<p>A JSONC file mapping the item template ID to the tare weight in kilograms, that is, what the\nitem still weighs once it is fully used up</p>\n<pre><code>{\n    \"57513f07245977207e26a311\": 0.030, // Pack of apple juice\n    \"5d1b36a186f7742523398433\": 2.500  // Metal fuel tank\n}\n</code></pre>\n<blockquote>\n<p>If an item is missing, the plugin uses <code>Default Tare Fraction</code> of the original weight</p>\n</blockquote>\n<hr />\n<h2>\u2615 Support</h2>\n<p>This mod is free and always will be. If it made your raids a little better, a coffee is a nice way to say thanks.</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/tosox\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://ko-fi.com/img/githubbutton_sm.svg\" alt=\"ko-fi\" /></a></p>\n<hr />\n<h2>\ud83d\udcc4 License</h2>\n<p>Distributed under the MIT License. See <code>LICENSE</code> for more information.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/PLjwUyUmevBYgQMwXLisG0tVuMgjDLR2xXjkoYTN.png",
    "forge_url": "https://sp-mod.com/mod/2344/dynamic-item-weights",
-   "downloads": 14860,
-   "favourites": 74,
+   "downloads": 15852,
+   "favourites": 86,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -136086,7 +136086,7 @@
    ],
    "source_links": [
     {
-     "url": "https://gitlab.com/Tosox/SPT-DynamicItemWeights",
+     "url": "https://github.com/Tosox/SPT-DynamicItemWeights",
      "label": ""
     }
    ],
@@ -136097,7 +136097,7 @@
      "description": "<ul>\n<li>Fixed log spam when an item has no tare weight entry (Thanks <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/120411/liquidwarp\" rel=\"noreferrer noopener\">@Liquidwarp</a>)</li>\n<li>Added tare weights for Sanitar\u2019s health kits</li>\n<li>Changed default tare fraction from 0.125 to 0.12</li>\n</ul>\n",
      "spt_constraint": "~4.1.0",
      "fika": "compatible",
-     "downloads": 237,
+     "downloads": 1202,
      "size": 7126,
      "link": "https://sp-mod.com/mod/download/2344/dynamic-item-weights/1.2.1",
      "published_at": "2026-10-12T12:14:00.000000Z",
@@ -136109,8 +136109,8 @@
      "description": "<ul>\n<li>Compatibility update for SPT 4.1</li>\n<li>Fixed player weight updates when item resources change</li>\n<li>Renamed empty weights to tare weights</li>\n</ul>\n",
      "spt_constraint": "~4.1.0",
      "fika": "compatible",
-     "downloads": 3696,
-     "size": 6828,
+     "downloads": 3699,
+     "size": 6977,
      "link": "https://sp-mod.com/mod/download/2344/dynamic-item-weights/1.2.0",
      "published_at": "2026-08-10T09:05:00.000000Z",
      "dependencies": []
@@ -136121,8 +136121,8 @@
      "description": "<ul>\n<li>Compatibility update for SPT 4.0</li>\n</ul>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 10072,
-     "size": 5656,
+     "downloads": 10094,
+     "size": 5807,
      "link": "https://sp-mod.com/mod/download/2344/dynamic-item-weights/1.1.0",
      "published_at": "2025-10-14T22:18:00.000000Z",
      "dependencies": []
@@ -136133,8 +136133,8 @@
      "description": "<ul>\n<li>Initial release</li>\n</ul>\n",
      "spt_constraint": "~3.11.0",
      "fika": "compatible",
-     "downloads": 855,
-     "size": 5664,
+     "downloads": 857,
+     "size": 5816,
      "link": "https://sp-mod.com/mod/download/2344/dynamic-item-weights/1.0.0",
      "published_at": "2025-10-08T20:01:00.000000Z",
      "dependencies": []
@@ -136150,7 +136150,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-10-07T16:39:00.000000Z",
-   "updated_at": "2026-10-12T12:15:05.000000Z",
+   "updated_at": "2026-10-23T08:18:19.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -137600,11 +137600,11 @@
    "name": "FIR Fence Purchases",
    "slug": "fir-fence-purchases",
    "teaser": "Give Fence\u2019s stock a boost! This mod ensures that every item you buy from Fence is marked as Found in Raid.",
-   "description_html": "<h2>\ud83d\udcdc Description</h2>\n<p><strong>FIR Fence Purchases</strong> is a mod for <em>Single Player Tushonka</em> that marks every bought item from Fence as Found in Raid.</p>\n<hr />\n<h2>\ud83d\udcc1 Installation</h2>\n<ul>\n<li>Download the latest release</li>\n<li>Copy the <code>SPT_Runtime</code> folder into your SPT installation folder</li>\n<li>Start the game</li>\n</ul>\n<hr />\n<h2>\ud83d\udcf7 Preview</h2>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://gitlab.com/Tosox/SPT-FIRFencePurchases/-/raw/master/readme-res/fence_assort.png\" alt=\"\" /></p>\n<hr />\n<h2>\u2615 Support</h2>\n<p>This mod is free and always will be. If it made your raids a little better, a coffee is a nice way to say thanks.</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/tosox\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://ko-fi.com/img/githubbutton_sm.svg\" alt=\"ko-fi\" /></a></p>\n<hr />\n<h2>\ud83d\udcc4 License</h2>\n<p>Distributed under the MIT License. See <code>LICENSE</code> for more information.</p>\n",
+   "description_html": "<h2>\ud83d\udcdc Description</h2>\n<p><strong>FIR Fence Purchases</strong> is a mod for <em>Single Player Tushonka</em> that marks every bought item from Fence as Found in Raid.</p>\n<hr />\n<h2>\ud83d\udcc1 Installation</h2>\n<ul>\n<li>Download the latest release</li>\n<li>Copy the <code>SPT_Runtime</code> folder into your SPT installation folder</li>\n<li>Start the game</li>\n</ul>\n<hr />\n<h2>\ud83d\udcf7 Preview</h2>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/Tosox/SPT-FIRFencePurchases/blob/master/readme-res/fence_assort.png?raw=true\" alt=\"\" /></p>\n<hr />\n<h2>\u2615 Support</h2>\n<p>This mod is free and always will be. If it made your raids a little better, a coffee is a nice way to say thanks.</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/tosox\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://ko-fi.com/img/githubbutton_sm.svg\" alt=\"ko-fi\" /></a></p>\n<hr />\n<h2>\ud83d\udcc4 License</h2>\n<p>Distributed under the MIT License. See <code>LICENSE</code> for more information.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/TDO94P3WaJ2xSw8QudPZPYINLY1rkUQShE8LAIjk.png",
    "forge_url": "https://sp-mod.com/mod/2371/fir-fence-purchases",
-   "downloads": 11498,
-   "favourites": 49,
+   "downloads": 11968,
+   "favourites": 50,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -137626,19 +137626,31 @@
    ],
    "source_links": [
     {
-     "url": "https://gitlab.com/Tosox/SPT-FIRFencePurchases",
+     "url": "https://github.com/Tosox/SPT-FIRFencePurchases",
      "label": ""
     }
    ],
    "versions": [
+    {
+     "id": 11851,
+     "version": "1.0.0+spt3.9",
+     "description": "<ul>\n<li>Backport release for SPT 3.11</li>\n</ul>\n",
+     "spt_constraint": "~3.11.0",
+     "fika": "compatible",
+     "downloads": 514,
+     "size": 972946,
+     "link": "https://sp-mod.com/mod/download/2371/fir-fence-purchases/1.0.0+spt3.9",
+     "published_at": "2026-10-23T08:21:00.000000Z",
+     "dependencies": []
+    },
     {
      "id": 14633,
      "version": "1.1.0",
      "description": "<ul>\n<li>Compatibility update for SPT 4.1</li>\n</ul>\n",
      "spt_constraint": "~4.1.0",
      "fika": "compatible",
-     "downloads": 2518,
-     "size": 6252,
+     "downloads": 2966,
+     "size": 6421,
      "link": "https://sp-mod.com/mod/download/2371/fir-fence-purchases/1.1.0",
      "published_at": "2026-08-10T17:23:00.000000Z",
      "dependencies": []
@@ -137649,23 +137661,24 @@
      "description": "<ul>\n<li>Initial release</li>\n</ul>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 8467,
-     "size": 5871,
+     "downloads": 8488,
+     "size": 6037,
      "link": "https://sp-mod.com/mod/download/2371/fir-fence-purchases/1.0.0",
      "published_at": "2025-10-15T15:26:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.1.0",
-   "spt_constraint": "~4.1.0",
+   "latest_version": "1.0.0+spt3.9",
+   "spt_constraint": "~3.11.0",
    "all_spt_constraints": [
+    "~3.11.0",
     "~4.0.0",
     "~4.1.0"
    ],
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-10-07T16:44:00.000000Z",
-   "updated_at": "2026-10-08T09:09:58.000000Z",
+   "updated_at": "2026-10-23T08:21:20.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -138049,11 +138062,11 @@
    "name": "Black Exfil Revision",
    "slug": "black-exfil-revision",
    "teaser": "Bring back full protection! This mod lets you equip compatible face shields on the Black Exfil helmet once again, just like in the old days.",
-   "description_html": "<h2>\ud83d\udcdc Description</h2>\n<p><strong>Black Exfil Revision</strong> is a mod for <em>Single Player Tushonka</em> that lets you equip compatible face shields on the Black Exfil helmet once again.</p>\n<hr />\n<h2>\ud83d\udcc1 Installation</h2>\n<ul>\n<li>Download the latest release</li>\n<li>Copy the <code>SPT_Runtime</code> folder into your SPT installation</li>\n<li>Start the game</li>\n</ul>\n<hr />\n<h2>\ud83d\udcf7 Preview</h2>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://gitlab.com/Tosox/SPT-BlackExfilRevision/-/raw/master/readme-res/black_exfil.png\" alt=\"\" /></p>\n<hr />\n<h2>\u2615 Support</h2>\n<p>This mod is free and always will be. If it made your raids a little better, a coffee is a nice way to say thanks.</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/tosox\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://ko-fi.com/img/githubbutton_sm.svg\" alt=\"ko-fi\" /></a></p>\n<hr />\n<h2>\ud83d\udcc4 License</h2>\n<p>Distributed under the MIT License. See <code>LICENSE</code> for more information.</p>\n",
+   "description_html": "<h2>\ud83d\udcdc Description</h2>\n<p><strong>Black Exfil Revision</strong> is a mod for <em>Single Player Tushonka</em> that lets you equip compatible face shields on the Black Exfil helmet once again.</p>\n<hr />\n<h2>\ud83d\udcc1 Installation</h2>\n<ul>\n<li>Download the latest release</li>\n<li>Copy the <code>SPT_Runtime</code> folder into your SPT installation</li>\n<li>Start the game</li>\n</ul>\n<hr />\n<h2>\ud83d\udcf7 Preview</h2>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/Tosox/SPT-BlackExfilRevision/blob/master/readme-res/black_exfil.png?raw=true\" alt=\"\" /></p>\n<hr />\n<h2>\u2615 Support</h2>\n<p>This mod is free and always will be. If it made your raids a little better, a coffee is a nice way to say thanks.</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/tosox\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://ko-fi.com/img/githubbutton_sm.svg\" alt=\"ko-fi\" /></a></p>\n<hr />\n<h2>\ud83d\udcc4 License</h2>\n<p>Distributed under the MIT License. See <code>LICENSE</code> for more information.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/14zFbwic0yrkpXD0Ce1Jf86qdEvwyfnjoXZCcJBH.png",
    "forge_url": "https://sp-mod.com/mod/2380/black-exfil-revision",
-   "downloads": 16054,
-   "favourites": 75,
+   "downloads": 16784,
+   "favourites": 78,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -138075,19 +138088,31 @@
    ],
    "source_links": [
     {
-     "url": "https://gitlab.com/Tosox/SPT-BlackExfilRevision",
+     "url": "https://github.com/Tosox/SPT-BlackExfilRevision",
      "label": ""
     }
    ],
    "versions": [
+    {
+     "id": 12087,
+     "version": "1.0.0+spt3.9",
+     "description": "<ul>\n<li>Backport release for SPT 3.11</li>\n</ul>\n",
+     "spt_constraint": "~3.11.0",
+     "fika": "compatible",
+     "downloads": 583,
+     "size": 2993,
+     "link": "https://sp-mod.com/mod/download/2380/black-exfil-revision/1.0.0+spt3.9",
+     "published_at": "2026-10-23T08:17:00.000000Z",
+     "dependencies": []
+    },
     {
      "id": 14668,
      "version": "1.1.0",
      "description": "<ul>\n<li>Compatibility update for SPT 4.1</li>\n</ul>\n",
      "spt_constraint": "~4.1.0",
      "fika": "compatible",
-     "downloads": 3136,
-     "size": 7873,
+     "downloads": 3837,
+     "size": 8035,
      "link": "https://sp-mod.com/mod/download/2380/black-exfil-revision/1.1.0",
      "published_at": "2026-08-12T09:55:00.000000Z",
      "dependencies": []
@@ -138098,23 +138123,24 @@
      "description": "<ul>\n<li>Initial release</li>\n</ul>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 12337,
-     "size": 7515,
+     "downloads": 12364,
+     "size": 7714,
      "link": "https://sp-mod.com/mod/download/2380/black-exfil-revision/1.0.0",
      "published_at": "2025-10-18T22:13:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.1.0",
-   "spt_constraint": "~4.1.0",
+   "latest_version": "1.0.0+spt3.9",
+   "spt_constraint": "~3.11.0",
    "all_spt_constraints": [
+    "~3.11.0",
     "~4.0.0",
     "~4.1.0"
    ],
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-10-07T16:21:00.000000Z",
-   "updated_at": "2026-10-08T09:10:22.000000Z",
+   "updated_at": "2026-10-23T08:17:49.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -156197,11 +156223,11 @@
    "name": "Chamber Ammo Info",
    "slug": "chamber-ammo-info",
    "teaser": "Know your next shot! This mod displays the ammo type loaded in your chamber when checking it.",
-   "description_html": "<h2>\ud83d\udcdc Description</h2>\n<p><strong>Chamber Ammo Info</strong> is a mod for <em>Single Player Tushonka</em> that shows the ammo type loaded in the chamber when performing a chamber check.</p>\n<hr />\n<h2>\u2728 Features</h2>\n<ul>\n<li>Displays the ammo type when performing a chamber check</li>\n<li>Supports multi-chamber, no-chamber weapons and underbarrel grenade launchers</li>\n<li>Integrates seamlessly into Tushonka\u2019s existing UI</li>\n</ul>\n<hr />\n<h2>\ud83d\udcc1 Installation</h2>\n<ul>\n<li>Download the latest release</li>\n<li>Copy the <code>BepInEx</code> folder into your SPT installation</li>\n<li>Start the game</li>\n</ul>\n<hr />\n<h2>\ud83d\udcf7 Preview</h2>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://gitlab.com/Tosox/SPT-ChamberAmmoInfo/-/raw/master/readme-res/ak.png\" alt=\"\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://gitlab.com/Tosox/SPT-ChamberAmmoInfo/-/raw/master/readme-res/double_barrel.png\" alt=\"\" /></p>\n<hr />\n<h2>\u2615 Support</h2>\n<p>This mod is free and always will be. If it made your raids a little better, a coffee is a nice way to say thanks.</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/tosox\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://ko-fi.com/img/githubbutton_sm.svg\" alt=\"ko-fi\" /></a></p>\n<hr />\n<h2>\ud83d\udcc4 License</h2>\n<p>Distributed under the MIT License. See <code>LICENSE</code> for more information.</p>\n",
+   "description_html": "<h2>\ud83d\udcdc Description</h2>\n<p><strong>Chamber Ammo Info</strong> is a mod for <em>Single Player Tushonka</em> that shows the ammo type loaded in the chamber when performing a chamber check.</p>\n<hr />\n<h2>\u2728 Features</h2>\n<ul>\n<li>Displays the ammo type when performing a chamber check</li>\n<li>Supports multi-chamber, no-chamber weapons and underbarrel grenade launchers</li>\n<li>Integrates seamlessly into Tushonka\u2019s existing UI</li>\n</ul>\n<hr />\n<h2>\ud83d\udcc1 Installation</h2>\n<ul>\n<li>Download the latest release</li>\n<li>Copy the <code>BepInEx</code> folder into your SPT installation</li>\n<li>Start the game</li>\n</ul>\n<hr />\n<h2>\ud83d\udcf7 Preview</h2>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/Tosox/SPT-ChamberAmmoInfo/blob/master/readme-res/ak.png?raw=true\" alt=\"\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/Tosox/SPT-ChamberAmmoInfo/blob/master/readme-res/double_barrel.png?raw=true\" alt=\"\" /></p>\n<hr />\n<h2>\u2615 Support</h2>\n<p>This mod is free and always will be. If it made your raids a little better, a coffee is a nice way to say thanks.</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/tosox\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://ko-fi.com/img/githubbutton_sm.svg\" alt=\"ko-fi\" /></a></p>\n<hr />\n<h2>\ud83d\udcc4 License</h2>\n<p>Distributed under the MIT License. See <code>LICENSE</code> for more information.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/UTDSBj4MSUFfmo6wu48pYYDAseUoQReogxAv8qIx.png",
    "forge_url": "https://sp-mod.com/mod/2553/chamber-ammo-info",
-   "downloads": 6666,
-   "favourites": 35,
+   "downloads": 6924,
+   "favourites": 40,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -156223,7 +156249,7 @@
    ],
    "source_links": [
     {
-     "url": "https://gitlab.com/Tosox/SPT-ChamberAmmoInfo",
+     "url": "https://github.com/Tosox/SPT-ChamberAmmoInfo",
      "label": ""
     }
    ],
@@ -156234,8 +156260,8 @@
      "description": "<ul>\n<li>Compatibility update for SPT 4.1</li>\n<li>Show \u201cEmpty\u201d for chamberless weapons with an empty magazine</li>\n</ul>\n",
      "spt_constraint": "~4.1.0",
      "fika": "compatible",
-     "downloads": 1679,
-     "size": 3984,
+     "downloads": 1924,
+     "size": 4051,
      "link": "https://sp-mod.com/mod/download/2553/chamber-ammo-info/1.1.0",
      "published_at": "2026-08-10T11:48:00.000000Z",
      "dependencies": []
@@ -156246,8 +156272,8 @@
      "description": "<ul>\n<li>Fixed an issue where the ammo info could be triggered by other players and bots</li>\n</ul>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 4592,
-     "size": 3981,
+     "downloads": 4604,
+     "size": 4050,
      "link": "https://sp-mod.com/mod/download/2553/chamber-ammo-info/1.0.1",
      "published_at": "2026-01-15T20:52:00.000000Z",
      "dependencies": []
@@ -156258,8 +156284,8 @@
      "description": "<ul>\n<li>Initial release</li>\n</ul>\n",
      "spt_constraint": "~4.0.0",
      "fika": "incompatible",
-     "downloads": 395,
-     "size": 4000,
+     "downloads": 396,
+     "size": 4061,
      "link": "https://sp-mod.com/mod/download/2553/chamber-ammo-info/1.0.0",
      "published_at": "2026-01-14T17:53:00.000000Z",
      "dependencies": []
@@ -156274,7 +156300,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-10-07T16:34:00.000000Z",
-   "updated_at": "2026-10-13T18:24:57.000000Z",
+   "updated_at": "2026-10-23T08:18:00.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -159231,11 +159257,11 @@
    "name": "Mag Retention Reload",
    "slug": "mag-retention-reload",
    "teaser": "No more feeding the floor with magazines! This mod makes every reload a proper mag-retention reload.",
-   "description_html": "<blockquote>\n<h6><strong>UI Fixes</strong> by <strong>Tyfon</strong> has a mag retention feature as well. This mod keeps it simple and adds no reload time penalty.</h6>\n</blockquote>\n<blockquote>\n<h6>\u26a0\ufe0f If you run both, this one takes over. Unticking <code>Enabled</code> hands the feature straight back to <strong>UI Fixes</strong> \u26a0\ufe0f</h6>\n</blockquote>\n<h2>\ud83d\udcdc Description</h2>\n<p><strong>Mag Retention Reload</strong> is a mod for <em>Single Player Tushonka</em> that adds proper magazine retention to weapon reloads by automatically stowing the old magazine back into the rig if possible instead of dropping it when the rig is full.</p>\n<hr />\n<h2>\u2728 Features</h2>\n<ul>\n<li>Swaps the old magazine into the slot the new magazine was taken from</li>\n<li>Prevents unnecessary magazine drops during normal reloads if the magazine fits in the rig</li>\n<li>Works with both the reload hotkey and the inventory context menu</li>\n<li>Notifies you when you lose a magazine during reload</li>\n<li>Optionally ties the feature to maxed-out weapon mastering</li>\n</ul>\n<hr />\n<h2>\ud83d\udcc1 Installation</h2>\n<ul>\n<li>Download the latest release</li>\n<li>Copy the <code>BepInEx</code> folder into your SPT folder</li>\n<li>Start the game</li>\n</ul>\n<hr />\n<h2>\u2699\ufe0f Configuration</h2>\n<table>\n<thead>\n<tr>\n<th>Setting</th>\n<th>Default</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>Enabled</code></td>\n<td><code>true</code></td>\n<td>Untick to stop retaining your magazines</td>\n</tr>\n<tr>\n<td><code>Require Max Weapon Mastering</code></td>\n<td><code>false</code></td>\n<td>Only retain magazines once the weapon\u2019s mastering is maxed-out</td>\n</tr>\n<tr>\n<td><code>Notify on Dropped Magazine</code></td>\n<td><code>true</code></td>\n<td>Display a notification when a magazine is dropped during a reload</td>\n</tr>\n</tbody>\n</table>\n<hr />\n<h2>\ud83e\udd1d Fika</h2>\n<p>When playing with <strong>Fika</strong>, every client in the raid, <strong>including the headless client</strong>, should run the same version of this mod, otherwise you will run into syncing issues.\nHosts can enforce this by adding the plugin GUID to <code>client.mods.required</code> in the Fika server config, so mismatched clients are rejected when joining instead of silently desyncing:</p>\n<pre><code>\"required\": [ \"de.tosox.magretentionreload\" ]\n</code></pre>\n<hr />\n<h2>\ud83d\udcf7 Preview</h2>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://gitlab.com/Tosox/SPT-MagRetentionReload/-/raw/master/readme-res/reload.gif\" alt=\"\" /></p>\n<hr />\n<h2>\ud83d\ude4f Acknowledgements</h2>\n<ul>\n<li>Thanks to <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Lacyway\" rel=\"noreferrer noopener\"><strong>Lacyway</strong></a> for putting up with all my questions</li>\n<li>Thanks to <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/tyfon7\" rel=\"noreferrer noopener\"><strong>Tyfon</strong></a> for the Fika sync code that inspired this one</li>\n</ul>\n<hr />\n<h2>\u2615 Support</h2>\n<p>This mod is free and always will be. If it made your raids a little better, a coffee is a nice way to say thanks.</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/tosox\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://ko-fi.com/img/githubbutton_sm.svg\" alt=\"ko-fi\" /></a></p>\n<hr />\n<h2>\ud83d\udcc4 License</h2>\n<p>Distributed under the MIT License. See <code>LICENSE</code> for more information.</p>\n",
+   "description_html": "<blockquote>\n<h6><strong>UI Fixes</strong> by <strong>Tyfon</strong> has a mag retention feature as well. This mod keeps it simple and adds no reload time penalty.</h6>\n</blockquote>\n<blockquote>\n<h6>\u26a0\ufe0f If you run both, this one takes over. Unticking <code>Enabled</code> hands the feature straight back to <strong>UI Fixes</strong> \u26a0\ufe0f</h6>\n</blockquote>\n<h2>\ud83d\udcdc Description</h2>\n<p><strong>Mag Retention Reload</strong> is a mod for <em>Single Player Tushonka</em> that adds proper magazine retention to weapon reloads by automatically stowing the old magazine back into the rig if possible instead of dropping it when the rig is full.</p>\n<hr />\n<h2>\u2728 Features</h2>\n<ul>\n<li>Swaps the old magazine into the slot the new magazine was taken from</li>\n<li>Prevents unnecessary magazine drops during normal reloads if the magazine fits in the rig</li>\n<li>Works with both the reload hotkey and the inventory context menu</li>\n<li>Notifies you when you lose a magazine during reload</li>\n<li>Optionally ties the feature to maxed-out weapon mastering</li>\n</ul>\n<hr />\n<h2>\ud83d\udcc1 Installation</h2>\n<ul>\n<li>Download the latest release</li>\n<li>Copy the <code>BepInEx</code> folder into your SPT folder</li>\n<li>Start the game</li>\n</ul>\n<hr />\n<h2>\u2699\ufe0f Configuration</h2>\n<table>\n<thead>\n<tr>\n<th>Setting</th>\n<th>Default</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>Enabled</code></td>\n<td><code>true</code></td>\n<td>Untick to stop retaining your magazines</td>\n</tr>\n<tr>\n<td><code>Require Max Weapon Mastering</code></td>\n<td><code>false</code></td>\n<td>Only retain magazines once the weapon\u2019s mastering is maxed-out</td>\n</tr>\n<tr>\n<td><code>Notify on Dropped Magazine</code></td>\n<td><code>true</code></td>\n<td>Display a notification when a magazine is dropped during a reload</td>\n</tr>\n</tbody>\n</table>\n<hr />\n<h2>\ud83e\udd1d Fika</h2>\n<p>When playing with <strong>Fika</strong>, every client in the raid, <strong>including the headless client</strong>, should run the same version of this mod, otherwise you will run into syncing issues.\nHosts can enforce this by adding the plugin GUID to <code>client.mods.required</code> in the Fika server config, so mismatched clients are rejected when joining instead of silently desyncing:</p>\n<pre><code>\"required\": [ \"de.tosox.magretentionreload\" ]\n</code></pre>\n<hr />\n<h2>\ud83d\udcf7 Preview</h2>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/Tosox/SPT-MagRetentionReload/blob/master/readme-res/reload.gif?raw=true\" alt=\"\" /></p>\n<hr />\n<h2>\ud83d\ude4f Acknowledgements</h2>\n<ul>\n<li>Thanks to <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Lacyway\" rel=\"noreferrer noopener\"><strong>Lacyway</strong></a> for putting up with all my questions</li>\n<li>Thanks to <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/tyfon7\" rel=\"noreferrer noopener\"><strong>Tyfon</strong></a> for the Fika sync code that inspired this one</li>\n</ul>\n<hr />\n<h2>\u2615 Support</h2>\n<p>This mod is free and always will be. If it made your raids a little better, a coffee is a nice way to say thanks.</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/tosox\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://ko-fi.com/img/githubbutton_sm.svg\" alt=\"ko-fi\" /></a></p>\n<hr />\n<h2>\ud83d\udcc4 License</h2>\n<p>Distributed under the MIT License. See <code>LICENSE</code> for more information.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/A1QV32OOejU2SrtWijVASx6BLNViQ41s4VP47bu1.png",
    "forge_url": "https://sp-mod.com/mod/2589/mag-retention-reload",
-   "downloads": 6554,
-   "favourites": 49,
+   "downloads": 7085,
+   "favourites": 53,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -159257,7 +159283,7 @@
    ],
    "source_links": [
     {
-     "url": "https://gitlab.com/Tosox/SPT-MagRetentionReload",
+     "url": "https://github.com/Tosox/SPT-MagRetentionReload",
      "label": ""
     }
    ],
@@ -159268,8 +159294,8 @@
      "description": "<ul>\n<li>Automatically suppresses UI Fixes\u2019 magazine retention reload feature</li>\n<li>Added a notification when you lose a magazine during reload</li>\n<li>Added a setting to disable this notification</li>\n<li>Added a setting to only retain magazines if the weapon\u2019s mastering is maxed-out</li>\n<li>Added a setting to disable this mod\u2019s functionality entirely</li>\n<li>Fixed magazines dropping when they no longer fit the slot the new magazine came from</li>\n</ul>\n",
      "spt_constraint": "~4.1.0",
      "fika": "compatible",
-     "downloads": 1528,
-     "size": 14481,
+     "downloads": 2030,
+     "size": 14505,
      "link": "https://sp-mod.com/mod/download/2589/mag-retention-reload/1.3.0",
      "published_at": "2026-09-15T18:31:00.000000Z",
      "dependencies": []
@@ -159280,8 +159306,8 @@
      "description": "<ul>\n<li>Compatibility update for SPT 4.1</li>\n<li>Fixed bots losing their magazine on reload</li>\n</ul>\n",
      "spt_constraint": "~4.1.0",
      "fika": "compatible",
-     "downloads": 2742,
-     "size": 4914,
+     "downloads": 2744,
+     "size": 4980,
      "link": "https://sp-mod.com/mod/download/2589/mag-retention-reload/1.2.0",
      "published_at": "2026-08-10T13:39:00.000000Z",
      "dependencies": []
@@ -159292,8 +159318,8 @@
      "description": "<ul>\n<li>Fixed compatibility with FIKA</li>\n<li>Fixed losing insurance on gear due to de-syncs</li>\n<li>Fixed mag-retention reloads when triggered via the context menu</li>\n</ul>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 1477,
-     "size": 4963,
+     "downloads": 1501,
+     "size": 5030,
      "link": "https://sp-mod.com/mod/download/2589/mag-retention-reload/1.1.0",
      "published_at": "2026-07-31T15:12:00.000000Z",
      "dependencies": []
@@ -159304,8 +159330,8 @@
      "description": "<ul>\n<li>Initial release</li>\n</ul>\n",
      "spt_constraint": "~4.0.0",
      "fika": "incompatible",
-     "downloads": 807,
-     "size": 4850,
+     "downloads": 810,
+     "size": 4912,
      "link": "https://sp-mod.com/mod/download/2589/mag-retention-reload/1.0.0",
      "published_at": "2026-02-13T17:16:00.000000Z",
      "dependencies": []
@@ -159320,7 +159346,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-10-07T16:52:00.000000Z",
-   "updated_at": "2026-10-13T09:08:47.000000Z",
+   "updated_at": "2026-10-23T08:18:47.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -220780,8 +220806,8 @@
    "description_html": "<h1><strong>TUSHONKA MAPPING SDK</strong></h1>\n<blockquote>\n<p>Allows modders to make custom maps, simple! Also allows players to load custom maps from addons or code mods.\nFull support for most graphical mods. Any mod that changes location data (LotsOfLoot) will not work as of now.</p>\n</blockquote>\n<hr />\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">FOR PLAYERS</div>\n<div class=\"tab-content\"><p><strong>This mod will not do anything by itself!</strong> You have to download maps made by other creators.\n<strong>Interested in learning? Look at the FOR MODDERS tab! This really isn\u2019t hard once you get into it, I promise.</strong></p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">FOR MODDERS</div>\n<div class=\"tab-content\"><p>This download only includes the map loader. To get the SDK, visit the GitHub page linked to the right. You need:</p>\n<ul>\n<li>Unity 2022.3.43f1</li>\n<li>An SPT 4.1.6 install (Duh)</li>\n<li>Basic knowledge on how to use the Unity editor</li>\n<li>Basic knowledge on how Tushonka maps are laid out. (Though there are plenty of tools and examples provided)</li>\n</ul>\n<p>This SDK has a massive amount of menus, buttons, prefabs, etc. that can be used to make your map as polished and fleshed out as possible. The PREVIEWS tab has some screenshots of how the tools look in-editor.</p>\n<p>All docs can be found in the README.md on the main GitHub page, but they were automatically written by AI. Should be completely fine, though.</p>\n<p>The SDK will automatically provide an example map when selecting \u201cNew Map\u2026\u201d in the editor, but a ported version of gm_construct has been attached for those who want a more in-depth one.</p>\n<p>If you are making custom quests or whatever, just point them to your map\u2019s id.\n<a target=\"_blank\" class=\"external-link\" href=\"https://discord.com/channels/875684761291599922/1160821924281204746\" rel=\"noreferrer noopener\">More questions can be asked about this mod in the SPT Discord</a></p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">PREVIEWS (for modders)</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://media.githubusercontent.com/media/ReplayDEVYT/TushonkaMappingSDK/main/Screenshots/Tools.png\" alt=\"Tools\" />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://media.githubusercontent.com/media/ReplayDEVYT/TushonkaMappingSDK/main/Screenshots/Menus.png\" alt=\"Menus\" />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://media.githubusercontent.com/media/ReplayDEVYT/TushonkaMappingSDK/main/Screenshots/Gameobjects.png\" alt=\"Gameobjects\" /></p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">KNOWN ISSUES</div>\n<div class=\"tab-content\"><ul>\n<li>No spatial audio system yet! This will be implemented later.</li>\n</ul>\n<p>List any bugs in the Issues tab, please. You will be ignored otherwise.. or just told to go there anyways.</p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">AI USAGE INFO</div>\n<div class=\"tab-content\"><p>AI was used to prototype and help program the mod, <strong>but this is because I don\u2019t usually work in Tushonka modding.</strong> I do game development almost every day of my life, and only used AI to get started on this project as I don\u2019t have great knowledge of how Tushonka or Unity loads assets and maps. I work in Godot in my freetime, which is much much different than Unity.</p>\n<p>I also knew a bit of the foundation and how to do it, such as using code stubs and shader placeholders for the SDK. Every single feature in this mod was tested multiple times.</p></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Why?</div>\n<div class=\"tab-content\"><p>Well, back in ye olden days of SPT 3.5, there was an SDK for making custom maps. I had an amazing time with it, throwing random stuff together and sharpening my skills. I learned out how to use the Unity terrain editor, make button activated lights, extracts, doors, etc. The SDK sadly stopped working after SPT 3.7 due to a new AI node system update, and it was never touched again. I got determined to make this project to bring back custom maps, allowing people to make whatever their hearts desire again.</p></div></div></div>\n<hr />\n<p>I really hope you enjoy. I am extremely excited to see what people cook up with this.</p>\n<h2>Credits</h2>\n<ul>\n<li>manimal for giving me permission to look at and use some of his map loading code</li>\n</ul>\n",
    "thumbnail": "https://files.sp-mod.com/mods/Oz8qfk7zR6bg4HiXME2eQ0Z9nc5tgP70zN0oohQq.png",
    "forge_url": "https://sp-mod.com/mod/3193/tushonka-mapping-sdk",
-   "downloads": 69,
-   "favourites": 3,
+   "downloads": 99,
+   "favourites": 4,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -220814,12 +220840,24 @@
    ],
    "versions": [
     {
+     "id": 16135,
+     "version": "1.3.0",
+     "description": "<p>This update adds new functionality to the client, and needs to be updated for all users.</p>\n<h1>Changes (For players)</h1>\n<ul>\n<li>Fixed interactables not working (read mapping changes below)</li>\n<li>Added physics props!!! Yay!!! (read mapping changes below)</li>\n</ul>\n<h1>Added (For mappers)</h1>\n<ul>\n<li>Auto-generation tool for AI patrol points</li>\n<li>Breakable windows</li>\n<li>A better icon section in the data editor, so you can physically see where you are placing the map selection button (This MAY later be phased out with an upcoming custom map screen option)</li>\n<li>Physics props</li>\n</ul>\n<blockquote>\n<p>Physics props use BSG\u2019s code. Yes, BSG has had code for physics props ever since Streets of Tarkov was released, but only used the code in Arena for small props. Why? Dunno.\nAnyways, I put them into the mapping SDK but they do function strangely sometimes. May not react properly to hits, blah blah blah.. <strong>If you use the SDK tools and run \u201cFix Interactables\u201d your mass and m/s for all props should be correct.</strong></p>\n</blockquote>\n<blockquote>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://media.githubusercontent.com/media/ReplayDEVYT/TushonkaMappingSDK/main/Screenshots/HellYeahPhysics.png\" alt=\"Image\" /></p>\n</blockquote>\n<h1>Fixing Interactables</h1>\n<p>There is now a button to fix issues with interactables, located in <code>Tarkov SDK -&gt; Tools -&gt; Quick Fixes</code>. This also fixes mass and force with props (read above)</p>\n<h1>UPDATING (Mappers)</h1>\n<p>To update your Unity project, simply copy and replace the TarkovSDK folder with the new one.</p>\n",
+     "spt_constraint": "4.1.6",
+     "fika": "unknown",
+     "downloads": 25,
+     "size": 62442,
+     "link": "https://sp-mod.com/mod/download/3193/tushonka-mapping-sdk/1.3.0",
+     "published_at": "2026-10-23T06:05:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 16132,
      "version": "1.2.0",
      "description": "<p>This update adds new tools for mappers. It\u2019s generally advised you update, even if you aren\u2019t a mapper.</p>\n<h1>Added (For mappers)</h1>\n<ul>\n<li>Tools section in the Tarkov SDK topbar. Allows you to generate interactive objects and lamps by putting in required assets.</li>\n<li>Added a build option called \u201cAlways Indoors\u201d. Can you guess what it does? It\u2019s quite surprising.</li>\n</ul>\n<p>Also fixed version number :P</p>\n<h1>UPDATING (Mappers)</h1>\n<p>To update your Unity project, simply copy and replace the TarkovSDK folder with the new one.</p>\n",
      "spt_constraint": "4.1.6",
      "fika": "unknown",
-     "downloads": 7,
+     "downloads": 10,
      "size": 61828,
      "link": "https://sp-mod.com/mod/download/3193/tushonka-mapping-sdk/1.2.0",
      "published_at": "2026-10-23T01:48:00.000000Z",
@@ -220843,14 +220881,14 @@
      "description": "<p>Initial version. ONLY THE LOADER! Download the example map from the addons tab!</p>\n",
      "spt_constraint": "4.1.6",
      "fika": "unknown",
-     "downloads": 46,
+     "downloads": 48,
      "size": 56658,
      "link": "https://sp-mod.com/mod/download/3193/tushonka-mapping-sdk/1.0.0",
      "published_at": "2026-10-22T02:02:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.2.0",
+   "latest_version": "1.3.0",
    "spt_constraint": "4.1.6",
    "all_spt_constraints": [
     "4.1.6"
@@ -220858,7 +220896,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-10-22T01:58:00.000000Z",
-   "updated_at": "2026-10-23T01:50:06.000000Z",
+   "updated_at": "2026-10-23T06:09:55.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
