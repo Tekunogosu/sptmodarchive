@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-10-24T20:58:21Z",
+ "generated_at": "2026-10-24T23:22:34Z",
  "source": "https://sp-mod.com",
  "filter": "all",
- "mod_count": 2123,
+ "mod_count": 2125,
  "categories": [
   {
    "id": 12,
@@ -221842,7 +221842,7 @@
    "description_html": "<h2>Choose your spawn area</h2>\n<p><strong><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1431/dynamic-maps\" rel=\"noreferrer noopener\">DynamicMaps</a> is required!</strong></p>\n<p>Infil adds a screen after map selection where you can choose your general spawn area interactively.</p>\n<p>If you don\u2019t select anything, you will spawn as usual (randomly on the whole map).</p>\n<p>If you select an area, you will spawn on one of the possible spawn points in the selected area, chosen randomly.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/YpglbTB.jpeg\" alt=\"\" /></p>\n<hr />\n<h2>Requirements &amp; compatibility</h2>\n<ul>\n<li>\n<p><strong>Hard requirement on <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1431/dynamic-maps\" rel=\"noreferrer noopener\">DynamicMaps</a></strong>.</p>\n</li>\n<li>\n<p><strong>Compatible with map mods</strong> like Manimal\u2019s Icebreaker, though this mod won\u2019t do anything unless DynamicMaps has a map for it, you\u2019ll spawn as usual (randomly) otherwise.</p>\n</li>\n<li>\n<p><strong>Compatible with <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/3040/map-variants\" rel=\"noreferrer noopener\">Map Variants</a></strong>: choosing a non-vanilla map (that does not have a map in DynamicMaps) will skip this mod\u2019s new screen and you\u2019ll spawn as usual (randomly).</p>\n</li>\n<li>\n<p><strong>Compatible with FIKA (incl. headless)</strong>. Don\u2019t install on headless though, at best it won\u2019t do anything. Note: a client\u2019s choice will be ignored if the host chooses \u201cspawn together\u201d. I have not tested multiplayer myself; feel free to report bugs you encounter there!</p>\n</li>\n<li>\n<p><strong>Does NOT support DynamicMaps Extended</strong>. Maps may be missing or look weird, for vanilla and modded maps alike. It is not in my scope at the moment to fix bugs related to it.</p>\n</li>\n</ul>\n<hr />\n<h2>Internals for the curious</h2>\n<p>The mod clusters possible spawn points with a distance criteria, different by map to generate a reasonable but not overwhelming amount of choices (~10-15).</p>\n<p>It then leverages DynamicMaps to display them on the map.</p>\n<p>\u2019tis all.</p>\n<hr />\n<h2>Support</h2>\n<p>Ideally open up a GitHub issue, or reach out to <code>liquidwarp</code> on the SPT Discord server!</p>\n<hr />\n<h2>Installation</h2>\n<ol>\n<li>\n<p>Open the downloaded zip file.</p>\n</li>\n<li>\n<p>Drag the archive contents from the zip file into your SPT folder.</p>\n</li>\n</ol>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/34vXXDj.gif\" alt=\"\" /></p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/c5c6EoQuXelD9BmBxuL7j7FlpPIIiDRpQy82M7oY.jpg",
    "forge_url": "https://sp-mod.com/mod/3202/infil",
-   "downloads": 255,
+   "downloads": 286,
    "favourites": 4,
    "featured": false,
    "fika": true,
@@ -221876,30 +221876,10 @@
      "description": "<p><strong>IMPORTANT: update if you\u2019ve previously installed version 1.0.0</strong></p>\n<ul>\n<li>Fix crash/issue when loading Infil without Fika.</li>\n<li>Various under-the-hood fixes and improvements.</li>\n</ul>\n",
      "spt_constraint": "~4.1.6",
      "fika": "compatible",
-     "downloads": 81,
+     "downloads": 111,
      "size": 22954,
      "link": "https://sp-mod.com/mod/download/3202/infil/2.0.0",
      "published_at": "2026-10-24T11:42:00.000000Z",
-     "dependencies": [
-      {
-       "id": 1431,
-       "name": "Dynamic Maps",
-       "slug": "dynamic-maps",
-       "constraint": "",
-       "url": "https://sp-mod.com/mod/1431/dynamic-maps"
-      }
-     ]
-    },
-    {
-     "id": 16139,
-     "version": "1.0.0",
-     "description": "<p>Initial release.</p>\n",
-     "spt_constraint": "~4.1.6",
-     "fika": "compatible",
-     "downloads": 174,
-     "size": 24523,
-     "link": "https://sp-mod.com/mod/download/3202/infil/1.0.0",
-     "published_at": "2026-10-23T14:57:00.000000Z",
      "dependencies": [
       {
        "id": 1431,
@@ -221935,7 +221915,7 @@
     }
    ],
    "published_at": "2026-10-24T11:52:00.000000Z",
-   "updated_at": "2026-10-24T16:34:06.000000Z",
+   "updated_at": "2026-10-24T22:45:22.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -222356,6 +222336,215 @@
    "all_dependencies": [],
    "published_at": "2026-10-24T18:24:00.000000Z",
    "updated_at": "2026-10-24T18:51:49.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 3210,
+   "hub_id": null,
+   "guid": "com.boombah.coopquesttracker",
+   "name": "Coop Quest Tracker",
+   "slug": "coop-quest-tracker",
+   "teaser": "Shows a window comparing your accepted tasks and your teammates",
+   "description_html": "<h1>Coop Quest Tracker</h1>\n<p>SPT + Fika mod that shows a panel on the main menu comparing your active quests with every other player online on the server.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/9dFKWii.jpeg\" alt=\"\" />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/AIKsPBv.jpeg\" alt=\"\" /></p>\n<p>For each online player, each of your active quests is shown as:</p>\n<ul>\n<li><strong>Shared</strong>: they have it active too</li>\n<li><strong>Missing</strong>: they can accept it but haven\u2019t yet</li>\n<li><strong>Locked</strong>: they can\u2019t accept it yet (prerequisites, level, trader loyalty)</li>\n<li><strong>Completed</strong>: they\u2019ve already finished it</li>\n</ul>\n<h1>Installation</h1>\n<p><strong>REQUIRES FIKA</strong></p>\n<p>Every player needs the client plugin; the server mod goes on the machine running the SPT server, works with headless</p>\n<p>Just extract the zip in the game folder brah</p>\n<h1>Usage</h1>\n<p>The panel appears on the main menu and refreshes each time you return to it (or press <strong>Refresh</strong>). Drag it by the title bar. <strong>F7</strong> shows/hides it. In the <strong>F12</strong> menu you can change the key, turn the panel off, resize it with the <strong>Window scale</strong> slider (0.5\u00d7\u20132.5\u00d7), and make it taller with the <strong>Window height</strong> slider (150\u20131200 px) when many players are online.</p>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/FAFrKT2xe4EqphST1kSVQ7dJkND95KW5XHriOH4y.png",
+   "forge_url": "https://sp-mod.com/mod/3210/coop-quest-tracker",
+   "downloads": 10,
+   "favourites": 0,
+   "featured": false,
+   "fika": true,
+   "fika_latest": "compatible",
+   "category": {
+    "id": 18,
+    "title": "UI",
+    "slug": "ui"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 127465,
+     "name": "boombah",
+     "avatar": "https://files.sp-mod.com/profile-photos/AKGYEpLtJlijmzEYRvG9j6kInp01ZE3hVqqiRkf0_128w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/SattlerGabriel/Coop-Quest-Tracker",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 16164,
+     "version": "1.0.0",
+     "description": "<p>First upload, does as it says on the can 8)</p>\n",
+     "spt_constraint": "~4.1.6",
+     "fika": "compatible",
+     "downloads": 10,
+     "size": 16804,
+     "link": "https://sp-mod.com/mod/download/3210/coop-quest-tracker/1.0.0",
+     "published_at": "2026-10-24T21:56:00.000000Z",
+     "dependencies": [
+      {
+       "id": 2326,
+       "name": "Project Fika",
+       "slug": "project-fika",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2326/project-fika"
+      },
+      {
+       "id": 2357,
+       "name": "Project Fika - Server",
+       "slug": "project-fika-server",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2357/project-fika-server"
+      }
+     ]
+    }
+   ],
+   "latest_version": "1.0.0",
+   "spt_constraint": "~4.1.6",
+   "all_spt_constraints": [
+    "~4.1.6"
+   ],
+   "dependencies": [
+    {
+     "id": 2326,
+     "name": "Project Fika",
+     "slug": "project-fika",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/2326/project-fika"
+    },
+    {
+     "id": 2357,
+     "name": "Project Fika - Server",
+     "slug": "project-fika-server",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/2357/project-fika-server"
+    }
+   ],
+   "all_dependencies": [
+    {
+     "id": 2326,
+     "name": "Project Fika",
+     "slug": "project-fika",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/2326/project-fika"
+    },
+    {
+     "id": 2357,
+     "name": "Project Fika - Server",
+     "slug": "project-fika-server",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/2357/project-fika-server"
+    }
+   ],
+   "published_at": "2026-10-24T21:51:00.000000Z",
+   "updated_at": "2026-10-24T22:17:04.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 3211,
+   "hub_id": null,
+   "guid": "com.amos.serverroombackport",
+   "name": "Server Room Backport",
+   "slug": "server-room-backport",
+   "teaser": "Backports the server room background from Live into SPT.",
+   "description_html": "<p>just adds the server room from live as a background in SPT. seems to work perfectly fine so far, claude made this in like 25 minutes so if you dont like ai slop dont use it lmk if you find any issues GO GITHUB FOR MORE INFORMATION :aga: tested with all my mods ~ like 130 plus all of my friends mods and seems to work ok. i tested with WTT - Content Backport so im not sure if it needs it or not. if you dont have it. go get it what are you doing its so goated. :aga:\nif you wanna un-aiify this mod feel free too i just noticed it wasnt on spt. so i told claude to put it on spt.</p>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/29cfyTTUUooOVYRrJBvktoiC65l4ySovAvLpddKU.png",
+   "forge_url": "https://sp-mod.com/mod/3211/server-room-backport",
+   "downloads": 18,
+   "favourites": 0,
+   "featured": false,
+   "fika": true,
+   "fika_latest": "compatible",
+   "category": {
+    "id": 18,
+    "title": "UI",
+    "slug": "ui"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 122075,
+     "name": "amos",
+     "avatar": "https://files.sp-mod.com/profile-photos/obt3egIWUcbzE9qTN79Kffo6NYWFqNMIbvEJkpQ1_128w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/14amos/ServerRoomBackground",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 16165,
+     "version": "1.0.0",
+     "description": "<p>mod</p>\n",
+     "spt_constraint": "4.1.6",
+     "fika": "compatible",
+     "downloads": 18,
+     "size": 32984752,
+     "link": "https://sp-mod.com/mod/download/3211/server-room-backport/1.0.0",
+     "published_at": "2026-10-24T22:00:00.000000Z",
+     "dependencies": [
+      {
+       "id": 2512,
+       "name": "WTT - Content Backport",
+       "slug": "wtt-content-backport",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2512/wtt-content-backport"
+      }
+     ]
+    }
+   ],
+   "latest_version": "1.0.0",
+   "spt_constraint": "4.1.6",
+   "all_spt_constraints": [
+    "4.1.6"
+   ],
+   "dependencies": [
+    {
+     "id": 2512,
+     "name": "WTT - Content Backport",
+     "slug": "wtt-content-backport",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/2512/wtt-content-backport"
+    }
+   ],
+   "all_dependencies": [
+    {
+     "id": 2512,
+     "name": "WTT - Content Backport",
+     "slug": "wtt-content-backport",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/2512/wtt-content-backport"
+    }
+   ],
+   "published_at": "2026-10-24T22:00:00.000000Z",
+   "updated_at": "2026-10-24T23:20:52.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
