@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-10-24T04:47:17Z",
+ "generated_at": "2026-10-24T11:14:42Z",
  "source": "https://sp-mod.com",
  "filter": "all",
- "mod_count": 2119,
+ "mod_count": 2120,
  "categories": [
   {
    "id": 12,
@@ -105525,8 +105525,8 @@
    "description_html": "<p>Hate it when the raid ends with 1 second left to extract?</p>\n<p>Sick and tired of having to commit fully to a raid when something comes up?</p>\n<p>Look no further, this mod has got you covered.</p>\n<p>This is a simple mod that allows you to set whatever raid status you desire for each of the raid statuses in-game;</p>\n<p>You can set MIA will to survived (so you extract even when the timer runs out).</p>\n<p>You can make it out safely even when your character falls over from a grenade.</p>\n<p>Or you can even set survived status to left the action if you like to live on the edge</p>\n<p>The choices are yours.</p>\n<p>For the \u2018survived\u2019 option, there is a toggle to enable/disable it just incase.</p>\n<p>Installation is simple;</p>\n<p>Just open the zip and drag and drop the bepinex folder into your spt install</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/2657.png",
    "forge_url": "https://sp-mod.com/mod/1978/configurable-end-raid-status",
-   "downloads": 2217,
-   "favourites": 2,
+   "downloads": 2380,
+   "favourites": 3,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -105554,27 +105554,40 @@
    ],
    "versions": [
     {
+     "id": 16151,
+     "version": "1.0.1",
+     "description": "<p>Recompiled for 4.1.x to comply with version checking, otherwise no additions or code changes</p>\n",
+     "spt_constraint": "~4.1",
+     "fika": "unknown",
+     "downloads": 4,
+     "size": 3926,
+     "link": "https://sp-mod.com/mod/download/1978/configurable-end-raid-status/1.0.1",
+     "published_at": "2026-10-24T07:42:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 1552,
      "version": "1.0.0",
-     "description": "<p>Initial release.</p>\n<p>EDIT: Should be compatible with any version unless specified</p>\n",
-     "spt_constraint": "~4.0",
+     "description": "<p>Initial release.</p>\n<p>EDIT: Should be compatible with version 4.0 and below (4.1 will block due to version checking)</p>\n",
+     "spt_constraint": "~4.0.0 | 3.*",
      "fika": "unknown",
-     "downloads": 2217,
+     "downloads": 2376,
      "size": 3692,
      "link": "https://sp-mod.com/mod/download/1978/configurable-end-raid-status/1.0.0",
      "published_at": "2025-01-23T11:39:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.0.0",
-   "spt_constraint": "~4.0",
+   "latest_version": "1.0.1",
+   "spt_constraint": "~4.1",
    "all_spt_constraints": [
-    "~4.0"
+    "~4.0.0 | 3.*",
+    "~4.1"
    ],
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2025-01-23T11:39:00.000000Z",
-   "updated_at": "2026-08-31T14:08:32.000000Z",
+   "updated_at": "2026-10-24T07:52:44.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -217151,11 +217164,11 @@
    "name": "Usable Crafting",
    "slug": "usable-crafting",
    "teaser": "Because endless scrolling isn't hardcore",
-   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Overview</div>\n<div class=\"tab-content\"><blockquote>\n<p>Inspired by tarkin\u2019s video: <a target=\"_blank\" class=\"external-link\" href=\"https://youtu.be/vTVP24wTSFE\" rel=\"noreferrer noopener\">https://youtu.be/vTVP24wTSFE</a></p>\n</blockquote>\n<p>This mod replaces the default crafting interface with a grid-based layout. Recipes are displayed in a compact grid, while ingredients, production time, output, and the start button are shown in a single panel for the selected recipe.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/NgFQRpJ2/panel2.jpg\" alt=\"\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/n8n4nq46/crafting-2.gif\" alt=\"\" /></p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Configuration</div>\n<div class=\"tab-content\"><p>The number of grid <strong>Rows</strong> and <strong>Columns</strong> can be configured. The column count determines the grid width, while the row count sets the maximum number of visible rows before scrolling is enabled.</p>\n<p><strong>Panels to Replace</strong> determines which crafting panels will be replaced by the new panel. You can disable specific panels, such as Intelligence Center Decryption and Booze Generator, to keep them displayed as in vanilla.</p>\n<p><strong>Items Batch Size</strong> determines how many craft recipes are created per frame. In the vanilla interface, recipes are created every frame, increasing the total loading time. A higher batch size speeds up loading but may cause stutters when opening the panel. This setting also applies to disabled (vanilla) panels.</p>\n<p><strong>Border and background colors</strong> can be customized.</p>\n<p><strong>Dimming</strong> for unfulfilled recipes can be disabled.</p>\n<p>Settings take effect the next time the panel is opened.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Compatibility</div>\n<div class=\"tab-content\"><p><strong>UI Fixes</strong> and <strong>Vertical Hideout</strong> have been tested with this mod and are recommended for a more comfortable experience.</p>\n<p>Other UI mods may be incompatible. Feel free to open an issue if you encounter any problems.</p></div></div></div>\n",
+   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Overview</div>\n<div class=\"tab-content\"><blockquote>\n<p>Inspired by tarkin\u2019s video: <a target=\"_blank\" class=\"external-link\" href=\"https://youtu.be/vTVP24wTSFE\" rel=\"noreferrer noopener\">https://youtu.be/vTVP24wTSFE</a></p>\n</blockquote>\n<p>This mod replaces the default crafting interface with a grid-based layout. Recipes are displayed in a compact grid with filters, while ingredients, production time, output, and the start button are shown in a single panel for the selected recipe.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/NgFQRpJ2/panel2.jpg\" alt=\"\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/n8n4nq46/crafting-2.gif\" alt=\"\" /></p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Configuration</div>\n<div class=\"tab-content\"><p>The number of grid <strong>Rows</strong> and <strong>Columns</strong> can be configured. The column count determines the grid width, while the row count sets the maximum number of visible rows before scrolling is enabled.</p>\n<p><strong>Panels to Replace</strong> determines which crafting panels will be replaced by the new panel. You can disable specific panels, such as Intelligence Center Decryption and Booze Generator, to keep them displayed as in vanilla.</p>\n<p><strong>Items Batch Size</strong> determines how many craft recipes are created per frame. In the vanilla interface, recipes are created every frame, increasing the total loading time. A higher batch size speeds up loading but may cause stutters when opening the panel. This setting also applies to disabled (vanilla) panels.</p>\n<p><strong>Border and background colors</strong> can be customized.</p>\n<p><strong>Dimming</strong> for unfulfilled recipes can be disabled.</p>\n<p>Settings take effect the next time the panel is opened.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Compatibility</div>\n<div class=\"tab-content\"><p><strong>UI Fixes</strong> and <strong>Vertical Hideout</strong> have been tested with this mod and are recommended for a more comfortable experience.</p>\n<p>Other UI mods may be incompatible. Feel free to open an issue if you encounter any problems.</p></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/F3KPwjsG6MHkwlwhLMKuaAWBRqopFy2YqCyhi3dJ.png",
    "forge_url": "https://sp-mod.com/mod/3149/usable-crafting",
-   "downloads": 1554,
-   "favourites": 38,
+   "downloads": 1852,
+   "favourites": 40,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -217188,7 +217201,7 @@
      "description": "<h3>Changes</h3>\n<ul>\n<li>\n<p>Added <strong>filtering</strong>. Crafts can now be filtered using the filter panel on the left and the checkboxes at the top. You can filter by <em>category</em>, show <em>only favorite</em> crafts, or show only crafts for which <em>all requirements are fulfilled</em>.</p>\n</li>\n<li>\n<p>Added a <strong>production indicator</strong>. Crafts currently being produced are now marked with a <em>spinning gear icon</em> in the grid view.</p>\n</li>\n<li>\n<p>Added a <strong>favorite indicator</strong>. Favorite crafts are now marked with a <em>heart icon</em> in the grid view.</p>\n</li>\n<li>\n<p>Various fixes and improvements.</p>\n</li>\n</ul>\n",
      "spt_constraint": "~4.1",
      "fika": "compatible",
-     "downloads": 17,
+     "downloads": 309,
      "size": 17672,
      "link": "https://sp-mod.com/mod/download/3149/usable-crafting/1.2.0",
      "published_at": "2026-10-23T16:46:00.000000Z",
@@ -217200,7 +217213,7 @@
      "description": "<h3>Changes</h3>\n<ul>\n<li>\n<p>Added configurable <strong>item highlighting and dimming</strong>. Unfulfilled recipes are dimmed by default, fulfilled recipes have a border, and completed production has a green background. Border and background colors can be customized in the config. Dimming can be disabled.</p>\n</li>\n<li>\n<p>Added the ability to <strong>disable panel replacement</strong> for specific panel types. Uncheck panel types in the <code>Panels to Replace</code> config to use the vanilla panels instead. Note that the <code>Batch Size</code> setting also applies to vanilla panels.</p>\n</li>\n</ul>\n",
      "spt_constraint": "~4.1",
      "fika": "compatible",
-     "downloads": 569,
+     "downloads": 573,
      "size": 15389,
      "link": "https://sp-mod.com/mod/download/3149/usable-crafting/1.1.0",
      "published_at": "2026-10-20T10:03:00.000000Z",
@@ -217212,7 +217225,7 @@
      "description": "<p>Initial release</p>\n",
      "spt_constraint": "~4.1",
      "fika": "compatible",
-     "downloads": 968,
+     "downloads": 970,
      "size": 13393,
      "link": "https://sp-mod.com/mod/download/3149/usable-crafting/1.0.0",
      "published_at": "2026-10-14T20:50:00.000000Z",
@@ -217227,7 +217240,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-10-14T20:51:00.000000Z",
-   "updated_at": "2026-10-23T16:59:13.000000Z",
+   "updated_at": "2026-10-24T06:47:31.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -220938,14 +220951,14 @@
    "name": "Tushonka Mapping SDK",
    "slug": "tushonka-mapping-sdk",
    "teaser": "Adds a complete mapping SDK with support for almost everything normal Tushonka maps have. Opens up the gates for modders to make literally any map they want. Also includes a custom loader.",
-   "description_html": "<h1><strong>TUSHONKA MAPPING SDK</strong></h1>\n<blockquote>\n<p>Allows modders to make custom maps, simple! Also allows players to load custom maps from addons or code mods.\nFull support for most graphical mods. Any mod that changes location data (LotsOfLoot) will not work as of now.</p>\n</blockquote>\n<hr />\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">FOR PLAYERS</div>\n<div class=\"tab-content\"><p><strong>This mod will not do anything by itself!</strong> You have to download maps made by other creators.\n<strong>Interested in learning? Look at the FOR MODDERS tab! This really isn\u2019t hard once you get into it, I promise.</strong></p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">(New!) Map Packs</div>\n<div class=\"tab-content\"><p>Map packs allow mappers to have custom selection screens packaged along with their locations. They support custom icons, backgrounds, etc.\n<img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/ReplayDEVYT/TushonkaMappingSDK/blob/main/Screenshots/MapPacks.gif?raw=true\" alt=\"mappers\" /></p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">FOR MODDERS</div>\n<div class=\"tab-content\"><p>This download only includes the map loader. To get the SDK, visit the GitHub page linked to the right. You need:</p>\n<ul>\n<li>Unity 2022.3.43f1</li>\n<li>An SPT 4.1.6 install (Duh)</li>\n<li>Basic knowledge on how to use the Unity editor</li>\n<li>Basic knowledge on how Tushonka maps are laid out. (Though there are plenty of tools and examples provided)</li>\n</ul>\n<p>This SDK has a massive amount of menus, buttons, prefabs, etc. that can be used to make your map as polished and fleshed out as possible. The PREVIEWS tab has some screenshots of how the tools look in-editor.</p>\n<p>All docs can be found in the README.md on the main GitHub page, but they were automatically written by AI. Should be completely fine, though.</p>\n<p>The SDK will automatically provide an example map when selecting \u201cNew Map\u2026\u201d in the editor, but a ported version of gm_construct has been attached for those who want a more in-depth one.</p>\n<p>If you are making custom quests or whatever, just point them to your map\u2019s id.\n<a target=\"_blank\" class=\"external-link\" href=\"https://discord.com/channels/875684761291599922/1160821924281204746\" rel=\"noreferrer noopener\">More questions can be asked about this mod in the SPT Discord</a></p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">PREVIEWS (for modders)</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://media.githubusercontent.com/media/ReplayDEVYT/TushonkaMappingSDK/main/Screenshots/Tools.png\" alt=\"Tools\" />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://media.githubusercontent.com/media/ReplayDEVYT/TushonkaMappingSDK/main/Screenshots/Menus.png\" alt=\"Menus\" />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://media.githubusercontent.com/media/ReplayDEVYT/TushonkaMappingSDK/main/Screenshots/Gameobjects.png\" alt=\"Gameobjects\" /></p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">KNOWN ISSUES</div>\n<div class=\"tab-content\"><ul>\n<li>No spatial audio system yet! This will be implemented later.</li>\n</ul>\n<p>List any bugs in the Issues tab, please. You will be ignored otherwise.. or just told to go there anyways.</p></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">AI USAGE INFO</div>\n<div class=\"tab-content\"><p>AI was used to prototype and help program the mod, <strong>but this is because I don\u2019t usually work in Tushonka modding.</strong> I do game development almost every day of my life, and only used AI to get started on this project as I don\u2019t have great knowledge of how Tushonka or Unity loads assets and maps. I work in Godot in my freetime, which is much much different than Unity.</p>\n<p>I also knew a bit of the foundation and how to do it, such as using code stubs and shader placeholders for the SDK. Every single feature in this mod was tested multiple times.</p></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Why?</div>\n<div class=\"tab-content\"><p>Well, back in ye olden days of SPT 3.5, there was an SDK for making custom maps. I had an amazing time with it, throwing random stuff together and sharpening my skills. I learned out how to use the Unity terrain editor, make button activated lights, extracts, doors, etc. The SDK sadly stopped working after SPT 3.7 due to a new AI node system update, and it was never touched again. I got determined to make this project to bring back custom maps, allowing people to make whatever their hearts desire again.</p></div></div></div>\n<hr />\n<p>I really hope you enjoy. I am extremely excited to see what people cook up with this.</p>\n<h2>Credits</h2>\n<ul>\n<li>manimal for giving me permission to look at and use some of his map loading code</li>\n</ul>\n",
+   "description_html": "<h1><strong>TUSHONKA MAPPING SDK</strong></h1>\n<blockquote>\n<p>Allows modders to make custom maps, simple! Also allows players to load custom maps from addons or code mods.\nFull support for most graphical mods. Any mod that changes location data (LotsOfLoot) will not work as of now.</p>\n</blockquote>\n<hr />\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">FOR PLAYERS</div>\n<div class=\"tab-content\"><p><strong>This mod will not do anything by itself!</strong> You have to download maps made by other creators.\n<strong>Interested in learning? Look at the FOR MODDERS tab! This really isn\u2019t hard once you get into it, I promise.</strong></p>\n<blockquote>\n<p>Mod has full Fika support! Most maps should work just fine with it.</p>\n</blockquote>\n<blockquote>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/ReplayDEVYT/TushonkaMappingSDK/raw/main/Screenshots/Fika.gif?raw=true\" alt=\"Fika\" /></p>\n</blockquote></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">(New!) Map Packs</div>\n<div class=\"tab-content\"><p>Map packs allow mappers to have custom selection screens packaged along with their locations. They support custom icons, backgrounds, etc.\n<img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/ReplayDEVYT/TushonkaMappingSDK/blob/main/Screenshots/MapPacks.gif?raw=true\" alt=\"mappers\" /></p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">FOR MODDERS</div>\n<div class=\"tab-content\"><p>This download only includes the map loader. To get the SDK, visit the GitHub page linked to the right. You need:</p>\n<ul>\n<li>Unity 2022.3.43f1</li>\n<li>An SPT 4.1.6 install (Duh)</li>\n<li>Basic knowledge on how to use the Unity editor</li>\n<li>Basic knowledge on how Tushonka maps are laid out. (Though there are plenty of tools and examples provided)</li>\n</ul>\n<p>This SDK has a massive amount of menus, buttons, prefabs, etc. that can be used to make your map as polished and fleshed out as possible. The PREVIEWS tab has some screenshots of how the tools look in-editor.</p>\n<p>All docs can be found in the README.md on the main GitHub page, but they were automatically written by AI. Should be completely fine, though.</p>\n<p>The SDK will automatically provide an example map when selecting \u201cNew Map\u2026\u201d in the editor, but a ported version of gm_construct has been attached for those who want a more in-depth one.</p>\n<p>If you are making custom quests or whatever, just point them to your map\u2019s id.\n<a target=\"_blank\" class=\"external-link\" href=\"https://discord.com/channels/875684761291599922/1160821924281204746\" rel=\"noreferrer noopener\">More questions can be asked about this mod in the SPT Discord</a></p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">SDK PREVIEWS</div>\n<div class=\"tab-content\"><blockquote>\n<p>SDK Tools\n<img loading=\"lazy\" decoding=\"async\" src=\"https://media.githubusercontent.com/media/ReplayDEVYT/TushonkaMappingSDK/main/Screenshots/Tools.png\" alt=\"Tools\" /></p>\n</blockquote>\n<blockquote>\n<p>World Object Preview System\n<img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/ReplayDEVYT/TushonkaMappingSDK/raw/main/Screenshots/previews.gif?raw=true\" alt=\"Preview\" /></p>\n</blockquote>\n<blockquote>\n<p>SDK Menus\n<img loading=\"lazy\" decoding=\"async\" src=\"https://media.githubusercontent.com/media/ReplayDEVYT/TushonkaMappingSDK/main/Screenshots/Gameobjects.png\" alt=\"Gameobjects\" /></p>\n</blockquote></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">KNOWN ISSUES</div>\n<div class=\"tab-content\"><ul>\n<li>No spatial audio system yet! This will be implemented later.</li>\n</ul>\n<p>List any bugs in the Issues tab, please. You will be ignored otherwise.. or just told to go there anyways.</p></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">AI USAGE INFO</div>\n<div class=\"tab-content\"><p>AI was used to prototype and help program the mod, <strong>but this is because I don\u2019t usually work in Tushonka modding.</strong> I do game development almost every day of my life, and only used AI to get started on this project as I don\u2019t have great knowledge of how Tushonka or Unity loads assets and maps. I work in Godot in my freetime, which is much much different than Unity.</p>\n<p>I also knew a bit of the foundation and how to do it, such as using code stubs and shader placeholders for the SDK. Every single feature in this mod was tested multiple times.</p></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Why?</div>\n<div class=\"tab-content\"><p>Well, back in ye olden days of SPT 3.5, there was an SDK for making custom maps. I had an amazing time with it, throwing random stuff together and sharpening my skills. I learned out how to use the Unity terrain editor, make button activated lights, extracts, doors, etc. The SDK sadly stopped working after SPT 3.7 due to a new AI node system update, and it was never touched again. I got determined to make this project to bring back custom maps, allowing people to make whatever their hearts desire again.</p></div></div></div>\n<hr />\n<p>I really hope you enjoy. I am extremely excited to see what people cook up with this.</p>\n<h2>Credits</h2>\n<ul>\n<li>manimal for giving me permission to look at and use some of his map loading code</li>\n</ul>\n",
    "thumbnail": "https://files.sp-mod.com/mods/Oz8qfk7zR6bg4HiXME2eQ0Z9nc5tgP70zN0oohQq.png",
    "forge_url": "https://sp-mod.com/mod/3193/tushonka-mapping-sdk",
-   "downloads": 128,
-   "favourites": 4,
+   "downloads": 179,
+   "favourites": 5,
    "featured": false,
-   "fika": false,
-   "fika_latest": "unknown",
+   "fika": true,
+   "fika_latest": "compatible",
    "category": {
     "id": 8,
     "title": "Locations",
@@ -220975,12 +220988,24 @@
    ],
    "versions": [
     {
+     "id": 16150,
+     "version": "1.5.0",
+     "description": "<h1>HUGE UPDATE!</h1>\n<h2>Additions (For all)</h2>\n<ul>\n<li><strong>Full Fika support</strong></li>\n</ul>\n<blockquote>\n<p>All custom maps work with Fika AND the mid-raid join addon for it! No weird animation bugs or desync with interactables.\n<img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/ReplayDEVYT/TushonkaMappingSDK/blob/main/Screenshots/Fika.gif?raw=true\" alt=\"fika\" /></p>\n</blockquote>\n<h2>Additions (For mappers)</h2>\n<ul>\n<li>Support for a bunch of new components:</li>\n</ul>\n<ol>\n<li>Trigger points</li>\n<li>Elevator extracts</li>\n<li>Sound players</li>\n<li>PA system</li>\n<li>PA speakers</li>\n<li>Automatic doors</li>\n<li>Sliding/Animated doors</li>\n</ol>\n<ul>\n<li>Added a system to preview interactions with switches, lights, etc. in-editor. Includes sound and takes linked objects into account (Meaning you can preview things like switches turning on whole light grids)</li>\n</ul>\n<blockquote>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/ReplayDEVYT/TushonkaMappingSDK/blob/main/Screenshots/previews.gif?raw=true\" alt=\"previews\" /></p>\n</blockquote>\n<ul>\n<li>Added a new tool for making interactable object triggers/links</li>\n</ul>\n<blockquote>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://media.githubusercontent.com/media/ReplayDEVYT/TushonkaMappingSDK/main/Screenshots/Triggers.png\" alt=\"Tools\" /></p>\n</blockquote>\n<ul>\n<li>Sorted all SDK menus</li>\n<li>Fixed issues with lootable containers not working properly</li>\n</ul>\n<h1>UPDATING (Mappers)</h1>\n<p>To update your Unity project, simply copy and replace the TarkovSDK folder with the new one. It is recommended you run any Quick Fix scripts. <code>TarkovSDK -&gt; Tools -&gt; Interactables</code></p>\n",
+     "spt_constraint": "4.1.6",
+     "fika": "compatible",
+     "downloads": 15,
+     "size": 81540,
+     "link": "https://sp-mod.com/mod/download/3193/tushonka-mapping-sdk/1.5.0",
+     "published_at": "2026-10-24T07:30:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 16142,
      "version": "1.4.0",
      "description": "<p>Big updates for players and modders!</p>\n<h1>New (For all!)</h1>\n<ul>\n<li>Added map packs. Map packs allow players to switch through different menus of maps, with custom backgrounds and icons.</li>\n</ul>\n<blockquote>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/ReplayDEVYT/TushonkaMappingSDK/blob/main/Screenshots/MapPacks.gif?raw=true\" alt=\"Packs\" /></p>\n</blockquote>\n<h1>New (For mappers)</h1>\n<ul>\n<li>Added the ability to connect multiple maps together.</li>\n<li>Added an option to allow players to switch the map\u2019s time phase on the menu screen, like other maps in the game.</li>\n<li>Added the ability to make custom banners, icons, etc.</li>\n</ul>\n<blockquote>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://media.githubusercontent.com/media/ReplayDEVYT/TushonkaMappingSDK/main/Screenshots/Banners.png\" alt=\"Map Info\" /></p>\n</blockquote>\n",
      "spt_constraint": "4.1.6",
      "fika": "unknown",
-     "downloads": 13,
+     "downloads": 46,
      "size": 77476,
      "link": "https://sp-mod.com/mod/download/3193/tushonka-mapping-sdk/1.4.0",
      "published_at": "2026-10-23T19:22:00.000000Z",
@@ -220992,7 +221017,7 @@
      "description": "<p>This update adds new functionality to the client, and needs to be updated for all users.</p>\n<h1>Changes (For players)</h1>\n<ul>\n<li>Fixed interactables not working (read mapping changes below)</li>\n<li>Added physics props!!! Yay!!! (read mapping changes below)</li>\n</ul>\n<h1>Added (For mappers)</h1>\n<ul>\n<li>Auto-generation tool for AI patrol points</li>\n<li>Breakable windows</li>\n<li>A better icon section in the data editor, so you can physically see where you are placing the map selection button (This MAY later be phased out with an upcoming custom map screen option)</li>\n<li>Physics props</li>\n</ul>\n<blockquote>\n<p>Physics props use BSG\u2019s code. Yes, BSG has had code for physics props ever since Streets of Tarkov was released, but only used the code in Arena for small props. Why? Dunno.\nAnyways, I put them into the mapping SDK but they do function strangely sometimes. May not react properly to hits, blah blah blah.. <strong>If you use the SDK tools and run \u201cFix Interactables\u201d your mass and m/s for all props should be correct.</strong></p>\n</blockquote>\n<blockquote>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://media.githubusercontent.com/media/ReplayDEVYT/TushonkaMappingSDK/main/Screenshots/HellYeahPhysics.png\" alt=\"Image\" /></p>\n</blockquote>\n<h1>Fixing Interactables</h1>\n<p>There is now a button to fix issues with interactables, located in <code>Tarkov SDK -&gt; Tools -&gt; Quick Fixes</code>. This also fixes mass and force with props (read above)</p>\n<h1>UPDATING (Mappers)</h1>\n<p>To update your Unity project, simply copy and replace the TarkovSDK folder with the new one.</p>\n",
      "spt_constraint": "4.1.6",
      "fika": "unknown",
-     "downloads": 39,
+     "downloads": 40,
      "size": 62442,
      "link": "https://sp-mod.com/mod/download/3193/tushonka-mapping-sdk/1.3.0",
      "published_at": "2026-10-23T06:05:00.000000Z",
@@ -221028,14 +221053,14 @@
      "description": "<p>Initial version. ONLY THE LOADER! Download the example map from the addons tab!</p>\n",
      "spt_constraint": "4.1.6",
      "fika": "unknown",
-     "downloads": 50,
+     "downloads": 52,
      "size": 56658,
      "link": "https://sp-mod.com/mod/download/3193/tushonka-mapping-sdk/1.0.0",
      "published_at": "2026-10-22T02:02:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.4.0",
+   "latest_version": "1.5.0",
    "spt_constraint": "4.1.6",
    "all_spt_constraints": [
     "4.1.6"
@@ -221043,7 +221068,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-10-23T19:24:00.000000Z",
-   "updated_at": "2026-10-23T19:25:57.000000Z",
+   "updated_at": "2026-10-24T07:36:08.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -221909,6 +221934,76 @@
    "all_dependencies": [],
    "published_at": "2026-10-24T01:10:00.000000Z",
    "updated_at": "2026-10-24T01:24:33.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 3206,
+   "hub_id": null,
+   "guid": "com.mcreaper.noinsurance",
+   "name": "No Insurance Screen",
+   "slug": "no-insurance-screen",
+   "teaser": "Skips the insurance screen when queuing for a raid as a PMC.",
+   "description_html": "<p>Skips the insurance screen when you queue for a raid as a PMC. After the raid settings screen, you go straight to the Ready screen.</p>\n<p>Port of <a target=\"_blank\" class=\"external-link\" href=\"https://gitlab.com/vibrantrida/no-insurance\" rel=\"noreferrer noopener\">vibrantrida/no-insurance</a> to SPT 4.1.6.</p>\n<h2>Install</h2>\n<p>Drop <code>NoInsurance.dll</code> into <code>&lt;SPT&gt;/BepInEx/plugins/</code>.</p>\n<h2>Compatibility</h2>\n<ul>\n<li>Built for SPT 4.1.6.</li>\n<li>Raid mode is left untouched, so group/Fika logic is unaffected.</li>\n</ul>\n<h2>License</h2>\n<p>0BSD, same as the original.</p>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/Kqg9VfAfoou5LPWIAKOLrUV8893rAGHzJpYGaSSw.jpg",
+   "forge_url": "https://sp-mod.com/mod/3206/no-insurance-screen",
+   "downloads": 5,
+   "favourites": 0,
+   "featured": false,
+   "fika": true,
+   "fika_latest": "compatible",
+   "category": {
+    "id": 18,
+    "title": "UI",
+    "slug": "ui"
+   },
+   "license": {
+    "name": "The Unlicense",
+    "link": "https://choosealicense.com/licenses/unlicense/"
+   },
+   "authors": [
+    {
+     "id": 127693,
+     "name": "Reapy",
+     "avatar": "https://files.sp-mod.com/profile-photos/1LLqAIyNK8hUUrqRnKluRxsHzD6PNguVCUVTGVBG_128w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/McReaper/SPT.NoInsurance",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 16152,
+     "version": "2.0.0",
+     "description": "<p>First release</p>\n",
+     "spt_constraint": "4.1.6",
+     "fika": "compatible",
+     "downloads": 5,
+     "size": 2451,
+     "link": "https://sp-mod.com/mod/download/3206/no-insurance-screen/2.0.0",
+     "published_at": "2026-10-24T11:00:00.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "2.0.0",
+   "spt_constraint": "4.1.6",
+   "all_spt_constraints": [
+    "4.1.6"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-10-24T11:00:00.000000Z",
+   "updated_at": "2026-10-24T11:00:09.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
