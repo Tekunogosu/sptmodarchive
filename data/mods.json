@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T23:22:34Z",
+ "generated_at": "2026-10-25T04:54:06Z",
  "source": "https://sp-mod.com",
  "filter": "all",
  "mod_count": 2125,
@@ -213128,8 +213128,8 @@
    "description_html": "<p>An extension for <strong>DynamicMaps</strong> on <strong>SPT 4.1.x</strong> that adds support for additional and backported maps, alternate artwork, and custom colours for addon factions.</p>\n<p><strong>All map artwork is bundled\u2014no separate artwork downloads required.</strong></p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">FEATURES</div>\n<div class=\"tab-content\"><h4>Map artwork</h4>\n<ul>\n<li>Choose <strong>DynamicMaps Vanilla</strong>, <strong>Abstract</strong> or <strong>Satellite</strong> where available\u2014or use <strong>Recommended</strong>.</li>\n<li>Set a global artwork preference or choose a different style for each map in F12.</li>\n<li>Change artwork during a raid while preserving your floor, zoom, map position, markers and player trail.</li>\n<li>Automatic per-floor fallback when your selected artwork is unavailable.</li>\n<li>High-resolution Satellite detail and sharp SVG-based Abstract artwork on supported maps.</li>\n<li>Improved map clarity and reduced temporary blur when quickly peeking.</li>\n<li>Map and corner-minimap refresh improvements when changing styles.</li>\n</ul>\n<h4>Supported maps and variants</h4>\n<ul>\n<li><strong>Factory Classic</strong></li>\n<li><strong>Manimal Interchange</strong></li>\n<li><strong>Manimal Labs / LabsBoiler</strong></li>\n<li><strong>Icebreaker</strong>, including Original Satellite and RE3MR artwork options and a 16-floor selector</li>\n<li>Additional artwork for supported standard maps</li>\n</ul>\n<p>Artwork availability varies by map and floor. Related map mods must be installed separately.</p>\n<h4>DynamicMaps integration</h4>\n<p>DynamicMaps continues handling player and bot tracking, friendly-player markers, quests, extracts, transits, player trails, floor selection and minimap behaviour.</p>\n<p>Extended installs into its own folder and does not replace DynamicMaps files or Fika player synchronisation.</p>\n<p><strong>Fika Headless is detected, and the client/UI addon disables itself automatically.</strong></p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">FACTIONS</div>\n<div class=\"tab-content\"><p>Recognised addon factions receive custom marker colours:</p>\n<table>\n<thead>\n<tr>\n<th>Faction</th>\n<th>Default colour</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Black Division</td>\n<td>Grey \u2014 <code>#555555</code></td>\n</tr>\n<tr>\n<td>UNTAR</td>\n<td>Cyan-blue \u2014 <code>#00BFFF</code></td>\n</tr>\n<tr>\n<td>RUAF and Remnant</td>\n<td>Olive green \u2014 <code>#899B45</code></td>\n</tr>\n</tbody>\n</table>\n<ul>\n<li>Customise colours in <strong>F12 \u2192 DynamicMaps Extended \u2192 Faction Colours</strong>.</li>\n<li>Black Division markers have an adjustable light outline for visibility on dark maps.</li>\n<li><strong>UNTAR leaders and officers use boss stars.</strong> Followers keep arrows.</li>\n<li>Other factions retain their native marker shapes and classification.</li>\n<li>Unsupported roles keep their original colours.</li>\n<li>Existing custom colours are preserved when updating.</li>\n<li>Disabling faction colours restores native colours.</li>\n</ul>\n<p>Faction mods are optional and are <strong>not included</strong>.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/black-hawk95/DynamicMaps-Extended/main/docs/images/faction-colours.png\" alt=\"Faction colours on the Customs map\" /></p>\n<p><em>Example from an earlier build. Colours are customisable; current defaults are listed above.</em></p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">SETTINGS</div>\n<div class=\"tab-content\"><p>Open <strong>F12 \u2192 DynamicMaps Extended</strong>.</p>\n<h4>Map artwork</h4>\n<p>Choose your global artwork mode, then use per-map overrides for any maps where you want a different style.</p>\n<p>Missing styles automatically fall back to available artwork. Some maps may therefore use different styles across their floors.</p>\n<h4>Faction colours</h4>\n<p>Choose the colour for each supported faction and adjust the Black Division outline.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/black-hawk95/DynamicMaps-Extended/main/docs/images/f12-settings.png\" alt=\"DynamicMaps Extended artwork and faction settings\" /></p>\n<p><em>Settings shown from an earlier build. Version labels and default colours may differ.</em></p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">INSTALL</div>\n<div class=\"tab-content\"><h4>Requirements</h4>\n<ul>\n<li><strong>SPT 4.1.x</strong></li>\n<li><strong>DynamicMaps</strong></li>\n<li><strong>MapVariants</strong></li>\n</ul>\n<p>Related map/backport mods are required only for the maps you want to use. Icebreaker requires <strong>Manimal Icebreaker</strong>.</p>\n<p>Extended provides map-display support; it does not install playable locations.</p>\n<h4>Installation and updates</h4>\n<p><strong>A clean install is preferred when updating.</strong></p>\n<ol>\n<li>Close the game.</li>\n<li>Remove the old <code>BepInEx\\plugins\\DynamicMaps-Extended\\</code> folder if installed.</li>\n<li>Extract the release archive into your <strong>SPT folder</strong>.</li>\n<li>Configure artwork and faction colours in F12.</li>\n</ol>\n<p>The mod installs to:</p>\n<p><code>BepInEx\\plugins\\DynamicMaps-Extended\\</code></p>\n<p>Keep your dependency mods installed. Removing only the Extended plugin folder preserves your F12 configuration.</p>\n<h4>Uninstall</h4>\n<p>Delete:</p>\n<p><code>BepInEx\\plugins\\DynamicMaps-Extended\\</code></p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">SUPPORT</div>\n<div class=\"tab-content\"><h4>Limitations</h4>\n<ul>\n<li>Not every map or floor has every artwork style.</li>\n<li>Initial artwork loading or style switching may cause a brief hitch, depending on your hardware and installed mods.</li>\n<li>Only recognised addon factions receive custom colours.</li>\n</ul>\n<h4>Reporting bugs</h4>\n<p>Please include:</p>\n<ul>\n<li>Mod version</li>\n<li>Map, floor and selected artwork style</li>\n<li>Steps to reproduce the problem</li>\n<li>A screenshot</li>\n<li><code>BepInEx\\LogOutput.log</code></li>\n</ul>\n<p>Enable <strong>Debug \u2192 EnableDebugLogging</strong> in DynamicMaps Extended before reproducing the issue, then disable it again after testing.</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/black-hawk95/DynamicMaps-Extended/issues\" rel=\"noreferrer noopener\">Report an issue on GitHub</a></p></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">DONATIONS</div>\n<div class=\"tab-content\"><p>If you\u2019d like to support my work, you can <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/its_blackhawk\" rel=\"noreferrer noopener\">buy me a coffee</a> \u2615</p>\n<p><strong>Solana (SOL)</strong><br />\n<code>RtkZyhpCD7rAmcsocf3RWPizCCzEdGNuUAX7sBcD1pF</code></p>\n<p><strong>Bitcoin (BTC)</strong><br />\n<code>bc1qj983ved6kp4uz6r6t285j0r5tyf5h6jph9eajl</code></p>\n<p><strong>Ethereum (ETH)</strong><br />\n<code>0xEaA910a5A779C85Fb9F07CA22bd2d2847a5969A5</code></p>\n<p>Please double-check the address and network before sending.</p></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/J42WOGbdAUES6c1f9NZW8KqVkzqByjkGC8I4rnmI.png",
    "forge_url": "https://sp-mod.com/mod/3097/dynamicmaps-extended",
-   "downloads": 10154,
-   "favourites": 83,
+   "downloads": 12410,
+   "favourites": 91,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -213157,12 +213157,39 @@
    ],
    "versions": [
     {
+     "id": 16166,
+     "version": "2.5.2",
+     "description": "<h1>DynamicMaps Extended 2.5.2</h1>\n<p>Labyrinth Satellite alignment fix</p>\n",
+     "spt_constraint": ">=4.1.6",
+     "fika": "compatible",
+     "downloads": 87,
+     "size": 1823357646,
+     "link": "https://sp-mod.com/mod/download/3097/dynamicmaps-extended/2.5.2",
+     "published_at": "2026-10-25T03:28:00.000000Z",
+     "dependencies": [
+      {
+       "id": 1431,
+       "name": "Dynamic Maps",
+       "slug": "dynamic-maps",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/1431/dynamic-maps"
+      },
+      {
+       "id": 3040,
+       "name": "Map Variants",
+       "slug": "map-variants",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/3040/map-variants"
+      }
+     ]
+    },
+    {
      "id": 16096,
      "version": "2.5.1",
      "description": "<h2>Updated in 2.5.1</h2>\n<ul>\n<li>Fixed faction colours in Fika, including headless setups.</li>\n<li>Made Black Division markers brighter and removed the extra outline.</li>\n<li>Added ISB and White Tusks colours.</li>\n<li>Added automatic detection for custom bot roles through optional MoreBotsAPI support.</li>\n<li>Added colour grouping in F12\u2014leave it on <strong>Automatic</strong> unless you want to customise it.</li>\n</ul>\n",
      "spt_constraint": ">=4.1.6",
      "fika": "compatible",
-     "downloads": 482,
+     "downloads": 2626,
      "size": 1924230893,
      "link": "https://sp-mod.com/mod/download/3097/dynamicmaps-extended/2.5.1",
      "published_at": "2026-10-21T02:23:00.000000Z",
@@ -213189,7 +213216,7 @@
      "description": "<h2>What\u2019s new</h2>\n<ul>\n<li><strong>Faction colours:</strong> Black Division is grey, UNTAR is cyan-blue, and RUAF/Remnant are olive green. Customise them in F12.</li>\n<li><strong>UNTAR boss stars:</strong> Leaders and officers now use boss stars. Followers keep normal arrows.</li>\n<li><strong>Better visibility:</strong> Black Division markers have a light outline so they remain visible on dark maps.</li>\n<li><strong>Clearer maps:</strong> Improved Labs clarity and reduced temporary blur when quickly peeking at the map.</li>\n<li><strong>Artwork switching fixes:</strong> Improved map and corner minimap refresh when changing styles.</li>\n<li><strong>Icebreaker improvements:</strong> Updated artwork options, alignment and floor handling.</li>\n<li>Added debugging information to help investigate reported issues.</li>\n</ul>\n<h3>Faction colours in action</h3>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/black-hawk95/DynamicMaps-Extended/main/docs/images/faction-colours.png\" alt=\"Faction colours on the Customs map\" /></p>\n<h3>Artwork and colour settings</h3>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/black-hawk95/DynamicMaps-Extended/main/docs/images/f12-settings.png\" alt=\"DynamicMaps Extended F12 settings\" /></p>\n<p><em>Screenshots show an earlier build. Version labels, default colours and UNTAR boss icons may differ from 2.5.0.</em></p>\n<h2>Installation</h2>\n<p><strong>A clean install is preferred.</strong></p>\n<ol>\n<li>Close the game.</li>\n<li>Remove the old <code>BepInEx/plugins/DynamicMaps-Extended</code> folder.</li>\n<li>Extract the release ZIP into your SPT game folder.</li>\n</ol>\n<p>All map artwork is included\u2014no separate downloads needed.</p>\n<p><strong>Requires:</strong> DynamicMaps and MapVariants. Related map mods must be installed separately; Icebreaker requires Manimal Icebreaker.</p>\n<h2>Bug reports</h2>\n<p>Please include the map, floor, artwork style, steps to reproduce and a screenshot. Enable <strong>Debug \u2192 EnableDebugLogging</strong> in DynamicMaps Extended before reproducing the issue, then attach <code>BepInEx/LogOutput.log</code>.</p>\n",
      "spt_constraint": ">=4.1.6",
      "fika": "compatible",
-     "downloads": 1934,
+     "downloads": 1950,
      "size": 1924226449,
      "link": "https://sp-mod.com/mod/download/3097/dynamicmaps-extended/2.5.0",
      "published_at": "2026-10-17T23:18:00.000000Z",
@@ -213216,7 +213243,7 @@
      "description": "<h1>DynamicMaps Extended 2.1.0</h1>\n<ul>\n<li>Fixed the severe FPS drop reported when using the Abstract minimap.</li>\n<li>Fixed maps sometimes looking zoomed out, shifted or cropped after changing styles.</li>\n<li>Changing styles now keeps your map position, player marker and trail.</li>\n<li>Made Abstract maps sharper on Woods, Factory and Streets.</li>\n<li>Fixed switching back to the DynamicMaps Vanilla style.</li>\n<li>Improved map loading and memory use while keeping Satellite maps detailed.</li>\n<li>Maps are now included in the mod ZIP. No extra map downloads or first-launch map setup.</li>\n<li>Removed the old map download options from F12.</li>\n</ul>\n<p><strong>Installation:</strong> A clean install is recommended to remove leftover files from older versions. Close the game, remove only <code>BepInEx/plugins/DynamicMaps-Extended</code>, then extract the whole <code>DynamicMaps-Extended-2.1.0-SPT4.1.zip</code> into your SPT folder. Keep your configuration and the separate DynamicMaps and MapVariants mods.</p>\n<p>Updating v2 by extracting the whole ZIP over your existing installation and replacing files is also supported.</p>\n<p><strong>Please note:</strong> Loading a map style for the first time may still cause a brief hitch.</p>\n",
      "spt_constraint": ">=4.1.6",
      "fika": "compatible",
-     "downloads": 4971,
+     "downloads": 4976,
      "size": 1824292182,
      "link": "https://sp-mod.com/mod/download/3097/dynamicmaps-extended/2.1.0",
      "published_at": "2026-10-07T00:28:00.000000Z",
@@ -213243,7 +213270,7 @@
      "description": "<h1>DynamicMaps Extended v2.0.0</h1>\n<p>A major update focused on <strong>higher-quality maps, easier installation, automatic artwork handling, and stability fixes</strong>.</p>\n<h2>\u2728 What\u2019s New</h2>\n<ul>\n<li>Added a <strong>built-in map downloader</strong></li>\n<li>Added <strong>high-resolution map tiles</strong></li>\n<li>Added support for <strong>Satellite map artwork</strong></li>\n<li>Improved <strong>Abstract / Satellite / Vanilla map handling</strong></li>\n<li>Added a <strong>persistent map cache</strong></li>\n<li>Existing downloaded maps can now be <strong>migrated automatically</strong></li>\n<li>Improved map sharpening and high-resolution loading while zooming</li>\n<li>Added a <strong>Fika Headless safety guard</strong></li>\n</ul>\n<h2>\ud83d\udee0 Fixes</h2>\n<ul>\n<li>Fixed <strong>Icebreaker left-side slider</strong> issues</li>\n<li>Fixed several map artwork / variant selection problems</li>\n<li>Fixed map tile <strong>seams</strong></li>\n<li>Improved cache stability and migration</li>\n<li>Improved handling of maps with different available artwork types</li>\n<li>General stability and compatibility improvements</li>\n</ul>\n<h2>\u26a0\ufe0f Installation \u2014 CLEAN INSTALL REQUIRED</h2>\n<blockquote>\n<p>[!IMPORTANT]\n<strong>A clean installation is REQUIRED for v2.0.0.</strong></p>\n<p>Before installing this version, <strong>DELETE the old DynamicMaps Extended folder completely:</strong></p>\n<p><code>BepInEx\\plugins\\DynamicMaps-Extended</code></p>\n<p><strong>Do NOT install v2.0.0 over the old version.</strong></p>\n<p>Leaving files from an older version may cause broken maps, incorrect variants, UI issues, or other unexpected behavior.</p>\n</blockquote>\n<p>After removing the old folder, extract the new release into your <strong>SPT 4.1.x</strong> installation folder.</p>\n<h2>\u26a0\ufe0f Fika Headless</h2>\n<p>Do <strong>not</strong> install the client plugin on a Fika Headless server.</p>\n<p>The mod includes protection against accidental Headless loading, but the client-side files should remain on the game player client.</p>\n",
      "spt_constraint": ">=4.1.6",
      "fika": "compatible",
-     "downloads": 1058,
+     "downloads": 1060,
      "size": 3784575,
      "link": "https://sp-mod.com/mod/download/3097/dynamicmaps-extended/2.0.0",
      "published_at": "2026-10-06T04:30:00.000000Z",
@@ -213270,7 +213297,7 @@
      "description": "<p>Initial release (broken)</p>\n",
      "spt_constraint": ">=4.1.6",
      "fika": "compatible",
-     "downloads": 1709,
+     "downloads": 1711,
      "size": 62937575,
      "link": "https://sp-mod.com/mod/download/3097/dynamicmaps-extended/1.0.0",
      "published_at": "2026-10-02T22:00:00.000000Z",
@@ -213292,7 +213319,7 @@
      ]
     }
    ],
-   "latest_version": "2.5.1",
+   "latest_version": "2.5.2",
    "spt_constraint": ">=4.1.6",
    "all_spt_constraints": [
     ">=4.1.6"
@@ -213330,7 +213357,7 @@
     }
    ],
    "published_at": "2026-10-06T04:05:00.000000Z",
-   "updated_at": "2026-10-21T06:53:42.000000Z",
+   "updated_at": "2026-10-25T03:32:05.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -221347,12 +221374,12 @@
    "guid": "com.manimal.scourge",
    "name": "SCOURGE",
    "slug": "scourge",
-   "teaser": "Adds the Scourge boss from Tushonka's event to SPT 4.1",
+   "teaser": "Adds the Scourge boss from Tushonka's Incursion event to SPT 4.1",
    "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">The Mod</div>\n<div class=\"tab-content\"><p>This mod backports and implements the new boss on labs: Scourge. He has all of the same gear as live, as well as custom squad-based AI.</p>\n<p>Guards coordinate firing and paired flanks, seek cover when hit, and cover one another\u2019s reloads. Their movement is constrained around their assigned Scourge, with one viable guard maintaining close protection while the others engage nearby threats. Separated guards regroup, including between fights. Native grenade avoidance, medical treatment and weapon malfunctions take precedence over squad orders. After Scourge dies, surviving guards continue fighting without selecting a replacement protected boss.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://guided.news/wp-content/uploads/2026/10/tarkov-scourge-header.jpg\" alt=\"alt text\" /></p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Installation</div>\n<div class=\"tab-content\"><p>Drag it into the folder baby.\n<img loading=\"lazy\" decoding=\"async\" src=\"https://imgur.com/34vXXDj.gif\" alt=\"alt text\" /></p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Where to find me</div>\n<div class=\"tab-content\"><ul>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://manimal1920.soy/\" rel=\"noreferrer noopener\">My Website</a></li>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://discord.com/channels/478334515488751617/1496355574579859556\" rel=\"noreferrer noopener\">WTT Discord Channel</a></li>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://discord.gg/z8g9VC2W2c\" rel=\"noreferrer noopener\">My EVIL Discord Server\u2026.</a></li>\n</ul></div></div></div>\n<p>If you like my work and wish to support me, you can do so <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/manimal1920\" rel=\"noreferrer noopener\">here.</a></p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/SKqvbTYtec3oTCCChuL6NkTrXYtFyEqxcG5WlTdG.png",
    "forge_url": "https://sp-mod.com/mod/3196/scourge",
-   "downloads": 394,
-   "favourites": 11,
+   "downloads": 1653,
+   "favourites": 32,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -221385,7 +221412,7 @@
      "description": "<ul>\n<li>Initial Release</li>\n</ul>\n",
      "spt_constraint": "~4.1.6",
      "fika": "unknown",
-     "downloads": 394,
+     "downloads": 1653,
      "size": 112592,
      "link": "https://sp-mod.com/mod/download/3196/scourge/1.0.0",
      "published_at": "2026-10-22T21:27:00.000000Z",
@@ -221529,7 +221556,7 @@
     }
    ],
    "published_at": "2026-10-22T21:27:00.000000Z",
-   "updated_at": "2026-10-22T21:48:25.000000Z",
+   "updated_at": "2026-10-25T02:35:08.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -222353,11 +222380,11 @@
    "name": "Coop Quest Tracker",
    "slug": "coop-quest-tracker",
    "teaser": "Shows a window comparing your accepted tasks and your teammates",
-   "description_html": "<h1>Coop Quest Tracker</h1>\n<p>SPT + Fika mod that shows a panel on the main menu comparing your active quests with every other player online on the server.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/9dFKWii.jpeg\" alt=\"\" />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/AIKsPBv.jpeg\" alt=\"\" /></p>\n<p>For each online player, each of your active quests is shown as:</p>\n<ul>\n<li><strong>Shared</strong>: they have it active too</li>\n<li><strong>Missing</strong>: they can accept it but haven\u2019t yet</li>\n<li><strong>Locked</strong>: they can\u2019t accept it yet (prerequisites, level, trader loyalty)</li>\n<li><strong>Completed</strong>: they\u2019ve already finished it</li>\n</ul>\n<h1>Installation</h1>\n<p><strong>REQUIRES FIKA</strong></p>\n<p>Every player needs the client plugin; the server mod goes on the machine running the SPT server, works with headless</p>\n<p>Just extract the zip in the game folder brah</p>\n<h1>Usage</h1>\n<p>The panel appears on the main menu and refreshes each time you return to it (or press <strong>Refresh</strong>). Drag it by the title bar. <strong>F7</strong> shows/hides it. In the <strong>F12</strong> menu you can change the key, turn the panel off, resize it with the <strong>Window scale</strong> slider (0.5\u00d7\u20132.5\u00d7), and make it taller with the <strong>Window height</strong> slider (150\u20131200 px) when many players are online.</p>\n",
+   "description_html": "<h1>Coop Quest Tracker</h1>\n<p>SPT + Fika mod that shows a panel on the main menu comparing your active quests with every other player online on the server.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/SattlerGabriel/Coop-Quest-Tracker/blob/main/Screenshots/SS1.png?raw=true\" alt=\"\" />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/SattlerGabriel/Coop-Quest-Tracker/blob/main/Screenshots/SS2.png?raw=true\" alt=\"\" /></p>\n<p>For each online player, each of your active quests is shown as:</p>\n<ul>\n<li><strong>Shared</strong>: they have it active too</li>\n<li><strong>Missing</strong>: they can accept it but haven\u2019t yet</li>\n<li><strong>Locked</strong>: they can\u2019t accept it yet (prerequisites, level, trader loyalty)</li>\n<li><strong>Completed</strong>: they\u2019ve already finished it</li>\n</ul>\n<h1>Installation</h1>\n<p><strong>REQUIRES FIKA</strong></p>\n<p>Every player needs the client plugin; the server mod goes on the machine running the SPT server, works with headless</p>\n<p>Just extract the zip in the game folder brah</p>\n<h1>Usage</h1>\n<p>The panel appears on the main menu and refreshes each time you return to it (or press <strong>Refresh</strong>). Drag it by the title bar. <strong>F7</strong> shows/hides it. In the <strong>F12</strong> menu you can change the key, turn the panel off, resize it with the <strong>Window scale</strong> slider (0.5\u00d7\u20132.5\u00d7), and make it taller with the <strong>Window height</strong> slider (150\u20131200 px) when many players are online.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/FAFrKT2xe4EqphST1kSVQ7dJkND95KW5XHriOH4y.png",
    "forge_url": "https://sp-mod.com/mod/3210/coop-quest-tracker",
-   "downloads": 10,
-   "favourites": 0,
+   "downloads": 24,
+   "favourites": 1,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -222390,7 +222417,7 @@
      "description": "<p>First upload, does as it says on the can 8)</p>\n",
      "spt_constraint": "~4.1.6",
      "fika": "compatible",
-     "downloads": 10,
+     "downloads": 24,
      "size": 16804,
      "link": "https://sp-mod.com/mod/download/3210/coop-quest-tracker/1.0.0",
      "published_at": "2026-10-24T21:56:00.000000Z",
@@ -222450,7 +222477,7 @@
     }
    ],
    "published_at": "2026-10-24T21:51:00.000000Z",
-   "updated_at": "2026-10-24T22:17:04.000000Z",
+   "updated_at": "2026-10-25T04:38:53.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -222468,10 +222495,10 @@
    "name": "Server Room Backport",
    "slug": "server-room-backport",
    "teaser": "Backports the server room background from Live into SPT.",
-   "description_html": "<p>just adds the server room from live as a background in SPT. seems to work perfectly fine so far, claude made this in like 25 minutes so if you dont like ai slop dont use it lmk if you find any issues GO GITHUB FOR MORE INFORMATION :aga: tested with all my mods ~ like 130 plus all of my friends mods and seems to work ok. i tested with WTT - Content Backport so im not sure if it needs it or not. if you dont have it. go get it what are you doing its so goated. :aga:\nif you wanna un-aiify this mod feel free too i just noticed it wasnt on spt. so i told claude to put it on spt.</p>\n",
+   "description_html": "<p>tldr; ai slop but works :)</p>\n<p>just adds the server room from live as a background in SPT. seems to work perfectly fine. claude made this in like 25 minutes so if you dont like ai slop dont use it. lmk if you find any issues. GO GITHUB FOR MORE INFORMATION :aga: tested with all my mods ~ like 130 plus all of my friends mods and seems to work. if you wanna un-aiify this mod feel free to i just noticed it wasnt on spt. so i told claude to put it on spt.:aga:</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/29cfyTTUUooOVYRrJBvktoiC65l4ySovAvLpddKU.png",
    "forge_url": "https://sp-mod.com/mod/3211/server-room-backport",
-   "downloads": 18,
+   "downloads": 65,
    "favourites": 0,
    "featured": false,
    "fika": true,
@@ -222505,19 +222532,11 @@
      "description": "<p>mod</p>\n",
      "spt_constraint": "4.1.6",
      "fika": "compatible",
-     "downloads": 18,
+     "downloads": 65,
      "size": 32984752,
      "link": "https://sp-mod.com/mod/download/3211/server-room-backport/1.0.0",
      "published_at": "2026-10-24T22:00:00.000000Z",
-     "dependencies": [
-      {
-       "id": 2512,
-       "name": "WTT - Content Backport",
-       "slug": "wtt-content-backport",
-       "constraint": "",
-       "url": "https://sp-mod.com/mod/2512/wtt-content-backport"
-      }
-     ]
+     "dependencies": []
     }
    ],
    "latest_version": "1.0.0",
@@ -222525,26 +222544,10 @@
    "all_spt_constraints": [
     "4.1.6"
    ],
-   "dependencies": [
-    {
-     "id": 2512,
-     "name": "WTT - Content Backport",
-     "slug": "wtt-content-backport",
-     "constraint": "",
-     "url": "https://sp-mod.com/mod/2512/wtt-content-backport"
-    }
-   ],
-   "all_dependencies": [
-    {
-     "id": 2512,
-     "name": "WTT - Content Backport",
-     "slug": "wtt-content-backport",
-     "constraint": "",
-     "url": "https://sp-mod.com/mod/2512/wtt-content-backport"
-    }
-   ],
+   "dependencies": [],
+   "all_dependencies": [],
    "published_at": "2026-10-24T22:00:00.000000Z",
-   "updated_at": "2026-10-24T23:20:52.000000Z",
+   "updated_at": "2026-10-25T00:42:55.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
