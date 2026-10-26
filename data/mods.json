@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-10-25T23:20:59Z",
+ "generated_at": "2026-10-26T04:58:06Z",
  "source": "https://sp-mod.com",
  "filter": "all",
- "mod_count": 2127,
+ "mod_count": 2128,
  "categories": [
   {
    "id": 12,
@@ -40185,7 +40185,7 @@
    "description_html": "<p>This mod is inspired by <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/980/buma-bosses-use-meta-ammo\" rel=\"noreferrer noopener\">BUMA (Bosses Use Meta Ammo)</a> . Shredder didn\u2019t really see a point in adding config so I did. And also added things to make it mod-compatible. And better.</p>\n<p>What the mod does: makes bosses and their followers use one of the best ammo that\u2019s available for the caliber. What bosses and followers? By default, all bosses/followers/raiders/cultist/rogues. Adjustable in config:</p>\n<p>\u201cbotsToReplaceAmmoFor\u201d : [ \u201carenafighterevent\u201d, \u201cbossbully\u201d, \u201cbossgluhar\u201d, \u201cbosskilla\u201d, \u201cbossknight\u201d, \u201cbosskojaniy\u201d, \u201cbosskolontay\u201d, \u201cbosssanitar\u201d, \u201cbosstagilla\u201d, \u201cbosszryachiy\u201d, \u201cexusec\u201d, \u201cfollowerbigpipe\u201d, \u201cfollowerbirdeye\u201d, \u201cfollowerbully\u201d, \u201cfollowergluharassault\u201d, \u201cfollowergluharsecurity\u201d, \u201cfollowerkojaniy\u201d, \u201cfollowerkolontayassault\u201d, \u201cfollowerkolontaysecurity\u201d, \u201cfollowersanitar\u201d, \u201cfollowerzryachiy\u201d, \u201cpmcbot\u201d, \u201csectantpriest\u201d, \u201csectantwarrior\u201d, \u201cbossboar\u201d, \u201cbossboarsniper\u201d, \u201cfollowerboar\u201d ], What ammo they will be using now? Generally speaking best one. And it\u2019s also configurable in config. Here\u2019s the cool part: it supports modded calibers and ammo.<br />\nFor vanilla ammo you can use <a target=\"_blank\" class=\"external-link\" href=\"https://db.sp-tarkov.com/search\" rel=\"noreferrer noopener\">https://db.sp-tarkov.com/search</a> , for modded items you have to look inside mod that adds ammo. Innate support provided for <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/883/extra-ammo-for-everyone\" rel=\"noreferrer noopener\">Extra Ammo For Everyone</a> and <a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/1180-d-u-d-s/\" rel=\"noreferrer noopener\">D.U.D.S.</a> (They are not updated to 3.8.0 yet and simple package edit doesn\u2019t work and I cba updating them).</p>\n<p>\u201cammoToUse\u201d : { \u201cintentionallyIncorrectCaliberEntry\u201d : { }, \u201cCaliber9x19PARA\u201d: { \u201cintentionallyIncorrectCartridgeEntry\u201d: 1, \u201c5efb0da7a29a85116f6ea05f\u201d: 1, \u201c5c925fa22e221601da359b7b\u201d: 1, \u201cExtraAmmo_9x19_7n31M\u201d: 1, \u201cExtraAmmo_9x19_7n30\u201d: 1, \u201cExtraAmmo_9x19_VBR\u201d: 1 }, \u201cCaliber1143x23ACP\u201d: { \u201c5efb0cabfb3e451d70735af5\u201d: 1 }, \u201cCaliber762x35\u201d: { \u201c5fd20ff893a8961fc660a954\u201d: 1, \u201cExtraAmmo_762x35_Blackfang\u201d: 1, \u201cExtraAmmo_762x35_MAI_AP\u201d: 1 }, \u201cCaliber9x21\u201d: { \u201c5a26ac0ec4a28200741e1e18\u201d: 1, \u201cExtraAmmo_9x21_7n42\u201d: 1, \u201cExtraAmmo_9x21_7BT3_01\u201d: 1 }, \u2026 } You can add new calibers for your modded calibers and ammo in here. If a bot uses caliber, it\u2019ll be replaced with ammo from config. Example: if bot uses 5.45x39, it\u2019ll be updated with my mod, if bot does not have ammo entry for 9x21, mod won\u2019t do anything about it. This means that mod is very cross-mod and cross-version compatible. you most likely can run this on like 3.5.x if not even older versions of SPT.</p>\n<p>If you wanna be true homie or say thanks for time I\u2019ve spent modding the game, feel free to send me a coffee on kofi</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/musicmaniac\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://uploads-ssl.webflow.com/5c14e387dab576fe667689cf/61e11d5cf697cee7ca5b65d9_Button-p-500.png\" alt=\"61e11d5cf697cee7ca5b65d9_Button-p-500.png\" /></a></p>\n<p>Cool part: I made config validation. If you add non-existent bot type, caliber or cartridge itself, it\u2019ll just skip it and inform you about it.</p>\n<p>Do not repost updates of my mods without reaching me first on SPT discord.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/IqPLTOwN7qKx1cVbxeqgzpzyKliCn2rVhlsGrXNZ.png",
    "forge_url": "https://sp-mod.com/mod/1190/buma-revamped-bosses-use-meta-ammo",
-   "downloads": 8874,
+   "downloads": 8942,
    "favourites": 9,
    "featured": false,
    "fika": true,
@@ -40244,10 +40244,10 @@
     {
      "id": 16174,
      "version": "2.0.2",
-     "description": "<h1>updated for SPT v4.1</h1>\n<h1>changes</h1>\n<ul>\n<li>changed config from json to jsonc to make use of comments</li>\n</ul>\n<h1>fixes</h1>\n<ul>\n<li>corrected typo in one of the cultist bots</li>\n</ul>\n<h1>additions</h1>\n<ul>\n<li>added <code>bossgluhar</code> to the config as he was not present in the previous version</li>\n</ul>\n",
+     "description": "<p><strong>updated for SPT v4.1.X</strong></p>\n<p><strong>changes</strong></p>\n<ul>\n<li>changed config from json to jsonc to make use of comments</li>\n<li>added <code>bossgluhar</code> to the config as he was not present in the previous version</li>\n</ul>\n<p><strong>fixes</strong></p>\n<ul>\n<li>corrected typo in one of the cultist bots</li>\n</ul>\n",
      "spt_constraint": "~4.1",
      "fika": "compatible",
-     "downloads": 20,
+     "downloads": 86,
      "size": 8485,
      "link": "https://sp-mod.com/mod/download/1190/buma-revamped-bosses-use-meta-ammo/2.0.2",
      "published_at": "2026-10-25T14:38:00.000000Z",
@@ -40259,7 +40259,7 @@
      "description": "<p>Fixed bots not changing ammo type &amp;\nPotentially fixed modded ammo types not working</p>\n",
      "spt_constraint": "~4.0 <4.1.0",
      "fika": "compatible",
-     "downloads": 2184,
+     "downloads": 2186,
      "size": 6517,
      "link": "https://sp-mod.com/mod/download/1190/buma-revamped-bosses-use-meta-ammo/2.0.1",
      "published_at": "2026-01-09T10:48:00.000000Z",
@@ -40338,7 +40338,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2023-12-17T19:31:00.000000Z",
-   "updated_at": "2026-10-25T14:41:51.000000Z",
+   "updated_at": "2026-10-26T02:31:41.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -83097,8 +83097,8 @@
    "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Description</div>\n<div class=\"tab-content\"><h3>Mod Overview</h3>\n<p>This mod adds 40 unique energy drinks that have varying useful buff effects that your PMC can enjoy during raids. A small selection of energy drinks can be bought from Therapist that increase in usefulness with higher trader levels such as increased stamina generation, faster looting, combat enhancements, and increased weight capacity.</p>\n<p>Each energy drink has a rarity that can be: Common, Uncommon, Rare, and Ultra-Rare. Higher rarity drinks will offer more effective and longer lasting buffs with increasingly larger drawbacks of major energy depletion and skill de-buffs. Many high rarity drinks are flea-banned by default and can only be found in-raid in loose loot food spawns and food loot containers. This mod is highly configurable as most energy drink properties can be edited in the config file.</p>\n<h3>Available Energy Drinks</h3>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/wfIrPP9.jpeg\" alt=\"4.0AvailableMasks\" /></p>\n<h3>Screenshots</h3>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/YHZQfbS.jpeg\" alt=\"GhostStrawbango\" />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/YdK9sk5.jpeg\" alt=\"WhiteMonster\" />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/kApZ3ZI.jpeg\" alt=\"StrawberryShotMonster\" />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/DnixXBL.png\" alt=\"Common\" />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/Y6N1MdQ.png\" alt=\"Uncommon\" />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/l43PCfe.png\" alt=\"Rare\" />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/zsh6WY9.png\" alt=\"Ultra-Rare\" /></p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Energy Drink Effects</div>\n<div class=\"tab-content\"><h3>Energy Drink Buff Effect Details:</h3>\n<p>Each energy drink has their own unique buff effect with varying effectiveness depending on the drink rarity. Common drinks offer minimal stamina and skill gains while Ultra-Rare drinks can provide large stamina and skill buffs with some major drawbacks. A few powerful Ultra-Rare drinks can even cause death if your are unlucky.</p>\n<p>Energy drink properties can be edited in the EnergyDrinkBuffs.json file if you want to change any buffs, stamina generation, and debuffs.</p>\n<h4>Common Energy Drinks:</h4>\n<ul>\n<li>Arizona Green Tea (Sold By Therapist LL1)\n<ul>\n<li>+1 Health, +1 Metabolism, +3% Weight Reduction</li>\n</ul>\n</li>\n<li>Arizona Arnold Palmer\n<ul>\n<li>+1 Stress Resistance, +1 Aim Drills, +3% Weight Reduction</li>\n</ul>\n</li>\n<li>Arizona Watermelon\n<ul>\n<li>+1 Health, +1 Vitality, +3% Weight Reduction</li>\n</ul>\n</li>\n<li>Arizona Mucho Mango\n<ul>\n<li>+1 Charisma, +1 Search skill, +3% Weight Reduction</li>\n</ul>\n</li>\n<li>Monster Blue (Sold By Therapist LL1)\n<ul>\n<li>+1 Scavenging Skills, +5% Weight Reduction</li>\n</ul>\n</li>\n<li>Monster White (Sold By Therapist LL2)\n<ul>\n<li>+0.25 health regeneration, +1 Aim Drills &amp; Mag Drills</li>\n</ul>\n</li>\n<li>Monster Green (Sold By Therapist LL2)\n<ul>\n<li>+1 Strength &amp; Endurance, +5% Weight Reduction</li>\n</ul>\n</li>\n<li>Ghost Blue Raspberry (Sold By Therapist LL2)\n<ul>\n<li>+1 Covert Movement, +1 Search, +10% Weight Reduction</li>\n</ul>\n</li>\n<li>Ghost A&amp;W Root beer\n<ul>\n<li>+1 Covert Movement, +1 Strength &amp; Endurance, +10% Weight Reduction</li>\n</ul>\n</li>\n<li>Starbucks Double Shot\n<ul>\n<li>+1 Stress Resistance, +1 Strength &amp; Endurance</li>\n</ul>\n</li>\n<li>Bang Rainbow Unicorn\n<ul>\n<li>+1 Stress Resistance, +1 Health &amp; Vitality, +1 Aim Drills &amp; Mag Drills</li>\n</ul>\n</li>\n<li>S.T.A.L.K.E.R. Original\n<ul>\n<li>+1 Strength &amp; Endurance, +1 Scavenging Skills</li>\n</ul>\n</li>\n<li>S.T.A.L.K.E.R. Orange Original\n<ul>\n<li>+1 Strength &amp; Endurance, +1 Scavenging Skills</li>\n</ul>\n</li>\n</ul>\n<h4>Uncommon Energy Drinks:</h4>\n<ul>\n<li>Monster Strawberry (Sold By Therapist LL3)\n<ul>\n<li>+0.4 Health Regeneration, +1 Strength &amp; Endurance, +3 Vitality &amp; Surgery</li>\n</ul>\n</li>\n<li>Ghost Grape-Cran (Sold By Therapist LL3)\n<ul>\n<li>+3 Covert Movement, +3  Scavenging Skills, +15% Weight Reduction</li>\n</ul>\n</li>\n<li>NOS (Sold By Therapist LL3)\n<ul>\n<li>+3 Strength &amp; Endurance,  +10% weight reduction</li>\n</ul>\n</li>\n<li>Non Stop Stalker Red Limited Edition\n<ul>\n<li>+3 Stress Resistance, +3 Strength &amp; Endurance, +3 Aim &amp; Mag Drills, +10% weight reduction</li>\n</ul>\n</li>\n<li>Monster Orange Dreamsicle\n<ul>\n<li>+1 Strength &amp; Endurance, +3 Scavenging Skills, 15% Weight Reduction</li>\n</ul>\n</li>\n<li>Ghost 7-UP\n<ul>\n<li>+3 Covert Movement, +3 Aim Drills &amp; Mag Drills, +15% Weight Reduction</li>\n</ul>\n</li>\n<li>Ghost Bubblicious\n<ul>\n<li>+3 Covert Movement, +0.4 Health Regeneration, +15% Weight Reduction</li>\n</ul>\n</li>\n<li>Rip It Power\n<ul>\n<li>+3 Stress Resistance, +3 Strength &amp; Endurance, +3 Aim Drills &amp; Mag Drills</li>\n</ul>\n</li>\n<li>Bang Purple Haze\n<ul>\n<li>+3 Stress Resistance +3 Light &amp; Heavy Vests +10% Weight Reduction</li>\n</ul>\n</li>\n<li>Rockstar Sugar Free\n<ul>\n<li>0.4 Health Regeneration, +3 Strength &amp; Endurance, +3 Aim Drills &amp; Mag Drills</li>\n</ul>\n</li>\n</ul>\n<h4>Rare Energy Drinks:</h4>\n<ul>\n<li>S.T.A.L.K.E.R. Green (Sold By Therapist LL4)\n<ul>\n<li>+3 Strength &amp; Endurance, +3 Scavenging Skills, +15% Weight Reduction</li>\n</ul>\n</li>\n<li>Monster Ultra Vice Guava (Sold By Therapist LL4)\n<ul>\n<li>3% Reduced Damage Taken, +5 Aim Drills &amp; Mag Drills</li>\n</ul>\n</li>\n<li>Monster Strawberry Shot\n<ul>\n<li>+5 Strength &amp; Endurance,  +20% Weight Reduction</li>\n</ul>\n</li>\n<li>Monster Pipeline Punch\n<ul>\n<li>+0.4 Health Regeneration, +5 Aim Drills &amp; Mag Drills, +5 Light &amp; Heavy Vests</li>\n</ul>\n</li>\n<li>Ghost Peaches\n<ul>\n<li>+5 Covert Movement, +5 Scavenging Skills, +20% Weight Reduction</li>\n</ul>\n</li>\n<li>Ghost Strawbango\n<ul>\n<li>+5  Covert Movement, +5 Strength &amp; Endurance, +20% Weight Reduction</li>\n</ul>\n</li>\n<li>Rip It GForce\n<ul>\n<li>+5  Stress Resistance, +5 Strength &amp; Endurance, +5 Aim Drills &amp; Mag Drills</li>\n</ul>\n</li>\n<li>Rockstar\n<ul>\n<li>3% Reduced Damage Taken, +5 Strength &amp; Endurance</li>\n</ul>\n</li>\n<li>C4 Skittles\n<ul>\n<li>+10 Strength &amp; Endurance, +35% Weight Reduction</li>\n</ul>\n</li>\n</ul>\n<h4>Ultra-Rare Energy Drinks: (Flea-Market Banned. Can only be found in-raid)</h4>\n<ul>\n<li>Monster Pacific Punch\n<ul>\n<li>+10 Strength &amp; Endurance, -5% Reduced Damage Taken, +10 Aim Drills &amp; Mag Drills</li>\n</ul>\n</li>\n<li>Monster The Doctor\n<ul>\n<li>10 Strength &amp; Endurance, +0.8 Health Regeneration, +10 Vitality &amp; Health, &amp; Surgery</li>\n</ul>\n</li>\n<li>Monster Aussie-Lemonade\n<ul>\n<li>+20 Strength &amp; Endurance, +20 Scavenging Skills, 10% Reduced Damage Taken, 0.6 Health Regeneration, -35% Weight Reduction</li>\n</ul>\n</li>\n<li>Ghost Swedish Fish\n<ul>\n<li>+10 Covert Movement, +10 Strength &amp; Endurance, +10 Scavenging Skills, +35% Weight Reduction</li>\n</ul>\n</li>\n<li>Ghost Raspberry Cream\n<ul>\n<li>+10 Covert Movement, +10 Aim Drills &amp; Mag Drills, +10 Scavenging Skills, +35% Weight Reduction</li>\n</ul>\n</li>\n<li>Rip It Tribute\n<ul>\n<li>+10 Stress Resistance, +10 Strength &amp; Endurance, +10 Aim Drills &amp; Mag Drills, 5% Reduced Damage Taken</li>\n</ul>\n</li>\n<li>C4 Jolly Rancher\n<ul>\n<li>+0.6 Health Regeneration, 10% Reduced Damage Taken, +15 Aim Drills &amp; Mag Drills</li>\n</ul>\n</li>\n<li>C4 Starburst\n<ul>\n<li>+15 Strength &amp; Endurance, +15 Aim Drills &amp; Mag Drills, +35% Weight Reduction</li>\n</ul>\n</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Spawn Rates &amp; Locations</div>\n<div class=\"tab-content\"><p>All energy drinks can spawn in-raid in food loose loot spawns or in ration supply containers, duffel bags, jackets, dead scavs, and ground caches. All spawn rates can be edited in the config file.</p>\n<p>Spawn rates are calculated using the hot rod energy drinks spawn weight and multiplying it by a coefficient. The values below may seem low but keep in mind there are 38 drinks added.</p>\n<p>Spawn Rates: (latest values for version v1.3.1)</p>\n<ul>\n<li>Common 0.08</li>\n<li>Uncommon 0.05</li>\n<li>Rare 0.02</li>\n<li>Ultra-Rare 0.008</li>\n</ul>\n<p>In total with all 40 energy drink spawn weights combined you should see (with some luck) around ~1.8 new energy drinks per hot rod found. A little under double the spawn rate of finding hot rods in normal raids. My hope is that the spawn rates aren\u2019t too crazy like they used to be in older versions of this mod.</p>\n<p>This system makes them much more rare and (hopefully) more fun in trying to collect them all. Ultra-Rares offer powerful effects and should be harder to find now. Good Luck!</p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Config Options</div>\n<div class=\"tab-content\"><p>Be sure to check out the config file as most energy drink properties can be easily edited.</p>\n<h3>Available Config Options:</h3>\n<p>I added the alternative buffs feature for those who would rather have less overpowering and cheaper energy drinks that are more in line with regular T\u2217\u2217\u2217\u2217\u2217 energy drinks. If this option is set to true then the alternate prices will apply to all energy drinks as well</p>\n<ul>\n<li>\n<p>use alternate buffs</p>\n</li>\n<li>\n<p>alternate trader price</p>\n</li>\n<li>\n<p>alternate flea price</p>\n</li>\n<li>\n<p>alternate handbook price</p>\n</li>\n<li>\n<p>instant energy and hydration</p>\n</li>\n<li>\n<p>Per Drink Options:</p>\n<ul>\n<li>enable</li>\n<li>buff effect enable</li>\n<li>sold by trader</li>\n<li>trader price</li>\n<li>flea price</li>\n<li>flea-market banned</li>\n<li>handbook price</li>\n<li>trader stock</li>\n<li>loyalty level</li>\n<li>static loot multipliers</li>\n<li>loose loot multiplier</li>\n</ul>\n</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Credits</div>\n<div class=\"tab-content\"><p><a target=\"_blank\" class=\"external-link\" href=\"https://www.cgtrader.com/free-3d-models/food/miscellaneous/monster-energy-3d-monster-can\" rel=\"noreferrer noopener\">Can Model Used</a></p></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Help</div>\n<div class=\"tab-content\"><p>Please comment your feedback! I spend much more time working on SPT mods than actually playing so if you find any bugs or something that doesn\u2019t seem right don\u2019t be afraid to let me know in the comments. The best place to reach me is on Discord, I have the same username (hood). I check the mod page comments from time to time, but it may take a few days for a response.</p></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Future Updates</div>\n<div class=\"tab-content\"><ul>\n<li>Creating completely new buff effects in SPT 4.1</li>\n<li>Better balancing</li>\n<li>Adding localization</li>\n</ul></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/2305.png",
    "forge_url": "https://sp-mod.com/mod/1688/more-energy-drinks",
-   "downloads": 74938,
-   "favourites": 152,
+   "downloads": 76456,
+   "favourites": 157,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -83130,12 +83130,24 @@
    ],
    "versions": [
     {
+     "id": 16182,
+     "version": "1.3.2",
+     "description": "<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/7srWUrn.jpeg\" alt=\"1.3.2EnergyDrinks\" /></p>\n<ul>\n<li>Energy drinks can now be properly displayed in the hideout hall of fame shelves</li>\n<li>Fixed issue with energy drinks facing the wrong direction when displayed in hall of fame</li>\n<li>Removed chance of heart failure (death) on consumption from C4 and Monster The Doctor energy drinks.</li>\n</ul>\n",
+     "spt_constraint": "~4.1",
+     "fika": "compatible",
+     "downloads": 172,
+     "size": 126441915,
+     "link": "https://sp-mod.com/mod/download/1688/more-energy-drinks/1.3.2",
+     "published_at": "2026-10-25T23:55:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 16025,
      "version": "1.3.1",
      "description": "<h3>New Energy Drinks</h3>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/5km4BMp.jpeg\" alt=\"1.3.1EnergyDrinks\" /></p>\n<ul>\n<li>Added 2 new energy drinks: Ghost A&amp;W Root beer and Non Stop Stalker Red Limited Edition</li>\n<li>Added Russian and Chinese localization for all energy drinks</li>\n<li>Removed mod page from local server web page as it served no purpose</li>\n</ul>\n",
      "spt_constraint": "~4.1.0",
      "fika": "compatible",
-     "downloads": 352,
+     "downloads": 1649,
      "size": 128370824,
      "link": "https://sp-mod.com/mod/download/1688/more-energy-drinks/1.3.1",
      "published_at": "2026-10-18T00:16:00.000000Z",
@@ -83147,7 +83159,7 @@
      "description": "<p>Compatible with SPT versions 4.1.x Only</p>\n<ul>\n<li>Added ability to edit the config through the SPT web config editor</li>\n<li>Includes the latest changes from version 1.2.1</li>\n</ul>\n",
      "spt_constraint": "4.1.x",
      "fika": "compatible",
-     "downloads": 8871,
+     "downloads": 8884,
      "size": 117232656,
      "link": "https://sp-mod.com/mod/download/1688/more-energy-drinks/1.3.0",
      "published_at": "2026-08-10T02:25:00.000000Z",
@@ -83159,7 +83171,7 @@
      "description": "<p>Compatible with SPT versions 4.0.x Only\n(Probably the last 4.0.x version unless there is a mod breaking issue)</p>\n<ul>\n<li>Fixed issue with energy &amp; hydration gains not applying when energy drinks are consumed in hideout by making values instant instead of over time.</li>\n<li>Increased spawn rate of all energy drinks:\n<ul>\n<li>Common drinks: 0.04 (Old) -&gt; 0.08 (New)</li>\n<li>Uncommon Drinks: 0.03 (Old) -&gt; 0.05 (New)</li>\n<li>Rare Drinks: 0.012 (Old) -&gt; 0.02 (New)</li>\n<li>Ultra-Rare Drinks: 0.004 (Old) -&gt; 0.008 (New)</li>\n</ul>\n</li>\n</ul>\n",
      "spt_constraint": "4.0.x",
      "fika": "compatible",
-     "downloads": 1775,
+     "downloads": 1796,
      "size": 117228345,
      "link": "https://sp-mod.com/mod/download/1688/more-energy-drinks/1.2.1",
      "published_at": "2026-08-10T02:17:00.000000Z",
@@ -83171,7 +83183,7 @@
      "description": "<h3>New Energy Drinks</h3>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/mIOBpRS.png\" alt=\"1.2.0EnergyDrinks\" /></p>\n<ul>\n<li>Added 8 new energy drinks.</li>\n<li>Rebalanced stamina generation, skill buffs, debuffs, and prices for many energy drinks. The mod page has been updated to show the new updated changes.</li>\n<li>Heavily reduced poly count of energy drink model to reduce mod size and save fps.</li>\n<li>Added config option to enable alternative buff effects to all energy drinks so that they are more like regular Tarkov energy drinks with less powerful buffs and cheaper prices.</li>\n<li>Reduced spawn rate of all energy drinks (around 20% less)</li>\n<li>Increased \u2018hands tremor\u2019 debuff effect for rarer energy drinks.</li>\n<li>Fixed crash that occurred with Linux systems.</li>\n</ul>\n",
      "spt_constraint": "~4.0 <4.1.0",
      "fika": "compatible",
-     "downloads": 8859,
+     "downloads": 8860,
      "size": 117228379,
      "link": "https://sp-mod.com/mod/download/1688/more-energy-drinks/1.2.0",
      "published_at": "2026-06-05T23:54:00.000000Z",
@@ -83183,7 +83195,7 @@
      "description": "<p>I recommend using the \u2018clean temp files\u2019 option in the SPT Launcher settings to reset the cache so the energy drinks refresh.</p>\n<ul>\n<li>Updated all energy drink animation textures to look more realistic.\n<ul>\n<li>I mainly recolored the lids of most cans and made them less bright and slightly more metallic.</li>\n</ul>\n</li>\n<li>Added config option to make energy and hydration gains instant (like most vanilla tarkov consumables) instead of over 30 seconds.</li>\n</ul>\n",
      "spt_constraint": "~4.0 <4.1.0",
      "fika": "compatible",
-     "downloads": 11691,
+     "downloads": 11693,
      "size": 141791300,
      "link": "https://sp-mod.com/mod/download/1688/more-energy-drinks/1.1.1",
      "published_at": "2026-01-17T05:29:00.000000Z",
@@ -83207,7 +83219,7 @@
      "description": "<p>**SPT 3.11.x</p>\n<ul>\n<li>Fixed an error that occurred on startup with Fika headless clients</li>\n</ul>\n",
      "spt_constraint": "~3.11.0",
      "fika": "unknown",
-     "downloads": 10519,
+     "downloads": 10527,
      "size": null,
      "link": "https://sp-mod.com/mod/download/1688/more-energy-drinks/1.0.6",
      "published_at": "2025-07-03T01:26:00.000000Z",
@@ -83231,7 +83243,7 @@
      "description": "<p><strong>There is a slight bug where energy drinks are failing to spawn in loot containers, I\u2019m looking into the problem and will have a release out soon</strong></p>\n<p><strong>SPT 3.11.x</strong></p>\n<ul>\n<li>Updated to SPT 3.11.x</li>\n<li>Added 4 new energy drinks:</li>\n<li>Original S.T.A.L.K.E.R. Energy Drink, Monster Pacific Punch, Ghost Swedish Fish, Ghost Peaches</li>\n<li>Reworked buff effects, trader unlock progression, prices, and spawn rates of all energy drinks.</li>\n<li>Added enable_alternate_buffs config option which replaces all buffs and prices of all energy drinks with a less effective and much cheaper variant.</li>\n<li>Added config option to flea market ban energy drinks, some extremely rare and powerful energy drinks are now flea market banned by default.</li>\n<li>Removed both redbulls as I had problems porting the animations to 2022 unity. idk if they will come back.</li>\n<li>Replaced static loot container weights of each energy drink with a new multiplier system in the config file, this will help normalize energy drink spawns on all maps.</li>\n</ul>\n",
      "spt_constraint": "~3.11.0",
      "fika": "unknown",
-     "downloads": 738,
+     "downloads": 740,
      "size": null,
      "link": "https://sp-mod.com/mod/download/1688/more-energy-drinks/1.0.4",
      "published_at": "2025-05-21T05:28:12.000000Z",
@@ -83243,7 +83255,7 @@
      "description": "<p><strong>SPT 3.10.x</strong></p>\n<ul>\n<li>Added three new energy drinks\n<ul>\n<li>\n<p>Rockstar Original Energy Drink</p>\n</li>\n<li>\n<p>C4 Starburst Energy Drink</p>\n</li>\n<li>\n<p>Starbucks Double Shot Energy Drink</p>\n</li>\n</ul>\n</li>\n<li>Lowered carry weight of all energy drinks</li>\n<li>Lowered spawn chances of many energy drinks</li>\n<li>Slight balancing adjustments for a few drinks</li>\n<li>energy and hydration now increases overtime instead of all at once when drinking energy drinks</li>\n<li>Fixed label texture clipping that occured on the top and bottom edges of can labels</li>\n<li>Fixed incorrect can rotation during drinking animation</li>\n<li>Replaced red bull can model with a higher quality model</li>\n<li>Slightly slowed down animation speed when drinking energy drinks</li>\n</ul>\n",
      "spt_constraint": "~3.10.0",
      "fika": "unknown",
-     "downloads": 9900,
+     "downloads": 9901,
      "size": null,
      "link": "https://sp-mod.com/mod/download/1688/more-energy-drinks/1.0.3",
      "published_at": "2024-12-07T05:23:20.000000Z",
@@ -83255,15 +83267,15 @@
      "description": "<p><strong>SPT 3.9.x</strong></p>\n<ul>\n<li>Added ability to store energy drinks in hall of fame room\n<ul>\n<li>(they aren\u2019t currently facing the right direction, something I\u2019ll look into in the future)</li>\n</ul>\n</li>\n</ul>\n",
      "spt_constraint": "~3.9.0",
      "fika": "unknown",
-     "downloads": 12886,
+     "downloads": 12887,
      "size": null,
      "link": "https://sp-mod.com/mod/download/1688/more-energy-drinks/1.0.2",
      "published_at": "2024-08-28T21:43:55.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.3.1",
-   "spt_constraint": "~4.1.0",
+   "latest_version": "1.3.2",
+   "spt_constraint": "~4.1",
    "all_spt_constraints": [
     "4.0.x",
     "4.1.x",
@@ -83272,12 +83284,13 @@
     "~3.9.0",
     "~4.0 <4.1.0",
     "~4.0.0",
+    "~4.1",
     "~4.1.0"
    ],
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2024-08-27T00:01:00.000000Z",
-   "updated_at": "2026-10-18T07:05:30.000000Z",
+   "updated_at": "2026-10-25T23:59:03.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -99372,12 +99385,12 @@
    "guid": "com.twitchplayers",
    "name": "[SAIN] Twitch Players",
    "slug": "sain-twitch-players",
-   "teaser": "EFT was never forgiving. So are they.",
+   "teaser": "E\u2217\u2217 was never forgiving. So are they.",
    "description_html": "<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/harmonyzt/twitchplayers.github.io/e35307acc0fbe5d94bb2c4620db3ee9ad85707dd/media/twitchPlayers.gif\" alt=\"gif\" /></p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Introduction</div>\n<div class=\"tab-content\"><h3><em>You WILL die.</em></h3>\n<p>Does exactly what you\u2019re thinking. Adds PMCs and PSCAVs with the names of Twitch streamers into your raids with significantly harder AI overall.</p>\n<h3>Main differences between Death Wish Preset</h3>\n<ul>\n<li>SCAVs are as close as possible to live behavior, they no longer kill PMCs at the start of the raid, leaving your raid empty.</li>\n<li>Generally much harder PMCs, including Bosses and Rogues/Raiders.</li>\n<li>No constant head-eyes for both side of Project Fika and SPT players. AI always (mostly, but still <strong>will</strong> hit your head) aims center mass, and if you have no issues, you can turn off \u201cAlways Aim Center Mass\u201d inside Global Settings - all head aim chances are pre-configured for this scenario.</li>\n<li>Custom Per-Map configurations for Labs/Factory/Lighthouse due sizes of the map</li>\n<li>Personality-Focused Progression - early wipe you won\u2019t be able to meet hard PMCs or tell much difference, the game will be going just fine like with any other preset. Preset reaches full potential at PMC Level 30-40 due Personalities being locked behind much higher level requirement for AI.</li>\n<li>Twitch Players - AI PMCs with TTV/TV/YT or any other streaming platform inside their name will cause real trouble for you. They use reserved SAIN Personality made specifically for them to be able to act <strong>way</strong> faster. Their reaction time (based from tests) can range from ~100 to ~200ms (<em>slightly</em> less than average human being). Goons, and some bosses like Killa also inherit that personality by default.</li>\n</ul>\n<p>Enjoy.</p>\n<blockquote>\n<p>Disclaimer: Some of the settings won\u2019t correspond to what you\u2019re actually seeing in the game if you use Fika Project/Headless. Some might experience instant head-eyes, some won\u2019t. I have no fix for this. This Preset is heavily FPS dependent. The worse performance you get (looking at you, Headless Client hosters), the worse is your experience. This Mod&amp;Preset is not made for everyone. You perfectly know what you\u2019re subscribing for by installing this mod. Or about to.. Find out.</p>\n</blockquote></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Bots are too hard?</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://media1.tenor.com/m/QyJuBax5RG4AAAAC/suntzu-osu.gif\" alt=\"suntzu-osu.gif\" /></p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Showcase</div>\n<div class=\"tab-content\"><div class=\"youtube-lite\" data-video-id=\"wAKJav8bqq0\" data-embed-url=\"https://www.youtube-nocookie.com/embed/wAKJav8bqq0?autoplay=1\"><a href=\"https://www.youtube.com/watch?v=wAKJav8bqq0\" target=\"_blank\" rel=\"noreferrer noopener\">Play YouTube video</a></div>\n<div class=\"youtube-lite\" data-video-id=\"88Cu_DiZ9YY\" data-embed-url=\"https://www.youtube-nocookie.com/embed/88Cu_DiZ9YY?autoplay=1\"><a href=\"https://www.youtube.com/watch?v=88Cu_DiZ9YY\" target=\"_blank\" rel=\"noreferrer noopener\">Play YouTube video</a></div></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Installation</div>\n<div class=\"tab-content\"><p>Drag and drop 7z contents in your root directory of SPT game.</p></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/SPDckoZ7xbs2PSAd9MoYrfFZfRqveqTer2s1gJtE.png",
    "forge_url": "https://sp-mod.com/mod/1895/sain-twitch-players",
-   "downloads": 35272,
-   "favourites": 47,
+   "downloads": 36354,
+   "favourites": 57,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -99410,12 +99423,39 @@
    ],
    "versions": [
     {
+     "id": 16185,
+     "version": "3.1.2",
+     "description": "<p>Community Update.</p>\n<ul>\n<li>Fixed an issue where some personality modifiers were reversed, giving Normal bot personalities significantly faster aim than GigaChad and other personalities.</li>\n<li>Raised Max Aim Time for Goons and PMCs to 0.8.</li>\n<li>Experimental: Enabled prone for Scavs, PMCs, Shturman, Birdeye and Bloodhounds. Disabled for other bot types.</li>\n</ul>\n",
+     "spt_constraint": "~4.1",
+     "fika": "compatible",
+     "downloads": 41,
+     "size": 32072,
+     "link": "https://sp-mod.com/mod/download/1895/sain-twitch-players/3.1.2",
+     "published_at": "2026-10-26T02:33:00.000000Z",
+     "dependencies": [
+      {
+       "id": 791,
+       "name": "SAIN - Solarint's AI Modifications - Full AI Combat System Replacement",
+       "slug": "sain-solarints-ai-modifications-full-ai-combat-system-replacement",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement"
+      },
+      {
+       "id": 1873,
+       "name": "Bot Callsigns - Reloaded",
+       "slug": "bot-callsigns-reloaded",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/1873/bot-callsigns-reloaded"
+      }
+     ]
+    },
+    {
      "id": 15831,
      "version": "3.1.1",
      "description": "<h3>Native ISB Support &amp; Fixes</h3>\n<ul>\n<li>Accustomed ISB difficulties to fit custom personalities.</li>\n<li>Big Pipe, Knight and Bird Eye now differentiate in aggression, vision, accuracy and precision multipliers.</li>\n<li>Fixed Rogues having too much of vision distance and speed thus not letting anyone near the base on Lighthouse.</li>\n<li>Nerfed SCAVs. Not too much. But so that they don\u2019t become your main problem.</li>\n<li>Other fixes across the globe scope.</li>\n</ul>\n",
      "spt_constraint": "~4.1",
      "fika": "compatible",
-     "downloads": 105,
+     "downloads": 1089,
      "size": 32010,
      "link": "https://sp-mod.com/mod/download/1895/sain-twitch-players/3.1.1",
      "published_at": "2026-10-08T18:58:00.000000Z",
@@ -99442,7 +99482,7 @@
      "description": "<h3>Small re-base towards new SAIN features</h3>\n<ul>\n<li>Updated preset and mod combability with SAIN 4.5.1</li>\n<li>Re-adjusted some per-map configurations due losing the original values on the way</li>\n<li>Enabled aiming for head on some bosses, BEER, and USEX, including SCAVs with a very small chance (1%)</li>\n<li>Small changes across global difficulties, and aiming for body parts</li>\n</ul>\n<p>A well structured feedback is always welcome.</p>\n",
      "spt_constraint": "~4.1",
      "fika": "compatible",
-     "downloads": 1963,
+     "downloads": 1969,
      "size": 28971,
      "link": "https://sp-mod.com/mod/download/1895/sain-twitch-players/3.1.0",
      "published_at": "2026-09-04T20:38:00.000000Z",
@@ -99469,7 +99509,7 @@
      "description": "<ul>\n<li>Updated to latest <code>SPT 4.1.3</code></li>\n<li>Updated preset and mod combability with SAIN <code>4.0.5</code></li>\n</ul>\n",
      "spt_constraint": "~4.1. > 4.1.1",
      "fika": "compatible",
-     "downloads": 1135,
+     "downloads": 1138,
      "size": 28458,
      "link": "https://sp-mod.com/mod/download/1895/sain-twitch-players/3.0.9",
      "published_at": "2026-08-21T21:49:00.000000Z",
@@ -99496,7 +99536,7 @@
      "description": "<h3>Twitch Players - Rebalanced</h3>\n<ul>\n<li>Now uses SAIN server mod config service for its personalities and custom names assignment</li>\n<li>Now properly handles flag from Bot Callsigns and removes it</li>\n</ul>\n<h3>Preset Changes</h3>\n<ul>\n<li>Global difficulty values are now mostly default, now only bot types/personalities will have a major effect on bots</li>\n<li>Disabled all talking, with a small chance they\u2019ll still sneak in a couple of shouts, but not as much as before</li>\n<li>Nerfed SCAVs by a lot</li>\n<li>Disabled aiming for head for impossible bot types (scavs on impossible will always aim center mass)</li>\n<li>Disabled global center mass aiming</li>\n<li>Disabled grenades in AIvsAI scenarios to eliminate chances of them killing themselves with the grenades somewhere on the map in a forgotten place</li>\n<li>Enabled aim center mass aiming with height value changed - for those who have no issues with bots aimbotting your head, feel free to disable it back</li>\n<li>Increased convergence boost</li>\n<li>Enabled aiming for head for all bot types back so you don\u2019t have to manually edit all bot types and now just use global center mass aiming option</li>\n<li>Disabled random sway for bots</li>\n<li>Slightly tuned down smoothing for bots when in combat/aiming</li>\n<li>Disabled rushing for some personalities</li>\n<li>Gigachads and chads now jump shot you</li>\n</ul>\n",
      "spt_constraint": "4.0.11",
      "fika": "compatible",
-     "downloads": 7378,
+     "downloads": 7404,
      "size": 102027,
      "link": "https://sp-mod.com/mod/download/1895/sain-twitch-players/3.0.8",
      "published_at": "2026-01-28T13:38:00.000000Z",
@@ -99523,7 +99563,7 @@
      "description": "<h3>Back, now even more deadly.</h3>\n<ul>\n<li>Black Division is now the deadliest faction out of all</li>\n<li>Global precision values has been increased</li>\n<li>Minimized min aiming times and increased CQB reaction distances</li>\n<li>Updated TTV names to match with the latest Bot Callsigns version</li>\n</ul>\n",
      "spt_constraint": "~4.0 <4.1.0",
      "fika": "compatible",
-     "downloads": 1809,
+     "downloads": 1818,
      "size": 102107,
      "link": "https://sp-mod.com/mod/download/1895/sain-twitch-players/3.0.7",
      "published_at": "2026-01-09T01:15:00.000000Z",
@@ -99550,7 +99590,7 @@
      "description": "<h3>v3.0.6</h3>\n<ul>\n<li>Added Black Division and Santa Claus Bot files into Bot Settings.</li>\n<li>Enabled aiming for head for the following bots - Killa, Black Division, Shturman, Goons, Raider, Rogue.</li>\n<li>Updated Wreckless personality tooltip.</li>\n<li>Significantly decreased global maximum aiming time for USEC, BEAR, and Goons.</li>\n<li>Significantly increased global settings for accuracy and precision.</li>\n</ul>\n",
      "spt_constraint": "~4.0 <4.1.0",
      "fika": "compatible",
-     "downloads": 383,
+     "downloads": 384,
      "size": 104745,
      "link": "https://sp-mod.com/mod/download/1895/sain-twitch-players/3.0.6",
      "published_at": "2026-01-01T09:59:00.000000Z",
@@ -99577,7 +99617,7 @@
      "description": "<ul>\n<li>Updated SAIN preset structure to latest</li>\n<li>Small precision adjustments</li>\n</ul>\n",
      "spt_constraint": "~4.0 <4.1.0",
      "fika": "compatible",
-     "downloads": 770,
+     "downloads": 771,
      "size": 97266,
      "link": "https://sp-mod.com/mod/download/1895/sain-twitch-players/3.0.5",
      "published_at": "2025-12-24T17:11:00.000000Z",
@@ -99604,7 +99644,7 @@
      "description": "<p>Note to all of the Fika users - if you use Headless Client, with a very high chance (around ~95%) most of your deaths will be head-eyes. There is no known to me fix for this.</p>\n<p>Changes</p>\n<ul>\n<li>Disabled Coward, Timmy personalities</li>\n<li>Lowered global aggression</li>\n<li>Global aim time was reduced</li>\n<li>Lowered audible ranges for subsonic rounds and silenced weapons</li>\n<li>Set low chance to aim for head back <strong>only</strong> for PMCs.</li>\n<li>Disabled aim for center mass (globally)</li>\n<li>Reduced scatter multiplier down to the bottom when player is running, or moving in general.</li>\n<li>All bots will toggle their flashlight off or on when needed.</li>\n</ul>\n",
      "spt_constraint": "~4.0 <4.1.0",
      "fika": "compatible",
-     "downloads": 321,
+     "downloads": 322,
      "size": 97194,
      "link": "https://sp-mod.com/mod/download/1895/sain-twitch-players/3.0.4",
      "published_at": "2025-12-22T17:15:00.000000Z",
@@ -99631,7 +99671,7 @@
      "description": "<h3>Latest SAIN Compatibility Update</h3>\n<ul>\n<li>Updated SAIN Preset structure to match the latest version.</li>\n<li>Reduced chance of responses for non-friendly bots.</li>\n<li>Increased Accuracy and Precision global values.</li>\n<li>Updated Boss personalities to only have Chad/Gigachad/Wreckless/SnappingTurtle assigned.</li>\n<li>Updated BaseSAINDifficulty inside preset to match the \u201cdeathwish\u201d SAIN difficulty.</li>\n</ul>\n",
      "spt_constraint": "~4.0 <4.1.0",
      "fika": "compatible",
-     "downloads": 2078,
+     "downloads": 2079,
      "size": 92740,
      "link": "https://sp-mod.com/mod/download/1895/sain-twitch-players/3.0.3",
      "published_at": "2025-11-22T14:24:00.000000Z",
@@ -99658,7 +99698,7 @@
      "description": "<ul>\n<li>Due to mass <del>skill issue</del> head-eyes, I\u2019ve come to decision to disable any intentional aiming for head SAIN features provides.</li>\n<li>Increased Accuracy Speed</li>\n</ul>\n",
      "spt_constraint": "~4.0 <4.1.0",
      "fika": "compatible",
-     "downloads": 667,
+     "downloads": 669,
      "size": 92723,
      "link": "https://sp-mod.com/mod/download/1895/sain-twitch-players/3.0.2",
      "published_at": "2025-11-16T05:50:00.000000Z",
@@ -99678,7 +99718,7 @@
      "description": "<ul>\n<li>Fixed all bot types having incredibly high aim for head chances</li>\n<li>SCAVs should now react/aim way slower</li>\n</ul>\n",
      "spt_constraint": "~4.0 <4.1.0",
      "fika": "unknown",
-     "downloads": 1325,
+     "downloads": 1327,
      "size": 23698,
      "link": "https://sp-mod.com/mod/download/1895/sain-twitch-players/3.0.1",
      "published_at": "2025-10-26T11:37:00.000000Z",
@@ -99698,7 +99738,7 @@
      "description": "<h2>They\u2019re back.</h2>\n<ul>\n<li>Initial update to SPT 4.0</li>\n<li>Uses Bot Callsigns 2.0.1</li>\n<li>Preset update to SAIN 4.2.0</li>\n<li>Most of the functionality except base nickname personalities update was removed. I\u2019m learning I swear x)</li>\n</ul>\n<p>Have fun.</p>\n",
      "spt_constraint": "~4.0 <4.1.0",
      "fika": "unknown",
-     "downloads": 429,
+     "downloads": 430,
      "size": 23313,
      "link": "https://sp-mod.com/mod/download/1895/sain-twitch-players/3.0.0",
      "published_at": "2025-10-23T15:44:00.000000Z",
@@ -99718,7 +99758,7 @@
      "description": "<p>- Nerfed general accuracy speed and aggression.</p>\n<p>- Debuffed Normal, Rat, Coward personalities in terms of hearing, accuracy speed and aggression due to overwhelmingly high skill ceiling.</p>\n<p>- Now USEC/BEAR react as fast as they can be in CQB.</p>\n<p>- Scavs no longer can aim for head except Impossible difficulties.</p>\n",
      "spt_constraint": "~3.11.0",
      "fika": "unknown",
-     "downloads": 1327,
+     "downloads": 1330,
      "size": null,
      "link": "https://sp-mod.com/mod/download/1895/sain-twitch-players/2.0.5",
      "published_at": "2025-09-09T08:39:03.000000Z",
@@ -99881,7 +99921,7 @@
      "dependencies": []
     }
    ],
-   "latest_version": "3.1.1",
+   "latest_version": "3.1.2",
    "spt_constraint": "~4.1",
    "all_spt_constraints": [
     "4.0.11",
@@ -99923,7 +99963,7 @@
     }
    ],
    "published_at": "2026-01-09T01:09:00.000000Z",
-   "updated_at": "2026-10-08T19:00:07.000000Z",
+   "updated_at": "2026-10-26T02:35:08.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -195421,8 +195461,8 @@
    "description_html": "<p>A clip-on thermal imager for SPT, modelled on the Safran DSI AN/PAS-29B (3D model by 3DMA). It clamps to a night vision\ndevice and fuses thermal <strong>into the nvg tube\u2019s circle</strong>, like a real clip-on. Inspired by Operator.</p>\n<p>Starting with v3.4.0 two weapon-mounted devices add <strong>fusion sights</strong> has a separate activation key <code>Shift+N</code>, no night vision needed: the <strong>TR-1 (Thermal riser)</strong> riser puts heat\ninside your red dot\u2019s window, and the <strong>TSR (Thermal scope ring)</strong> scope rings put it inside your magnified scope.</p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">What it does</div>\n<div class=\"tab-content\"><ul>\n<li><strong>Two modes.</strong> Outline draws the edges of hot things, Full fills them in.</li>\n<li><strong>Heat from what is happening.</strong> People read at body temperature, fires hot, a barrel or suppressor only from firing.\nCold metal, unlit lamps and grenades stay dark; corpses keep the heat they had.</li>\n<li><strong>Glass blocks heat and reflects it</strong>, scope glass included. Searchlights read hot, flashlights faintly warm.</li>\n<li><strong>ECOTI per tube</strong> up to four on a quad, slots named left to right.</li>\n<li><strong>Performance in mind:</strong> under 0.1ms a frame at 1x on SPT 4.1. The README has the numbers.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Devices</div>\n<div class=\"tab-content\"><p>COTI has three thermal devices. Each has <strong>its own power key</strong>: turning on your night vision does <strong>not</strong> turn any of\nthem on.</p>\n<table>\n<thead>\n<tr>\n<th>Device</th>\n<th>What it does</th>\n<th>Where it goes</th>\n<th>Power</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>ECOTI</strong></td>\n<td>Heat in your night vision tube\u2019s circle, all around a scope but never inside it</td>\n<td>Under a night vision tube, one per tube</td>\n<td><strong><code>Ctrl+N</code></strong></td>\n</tr>\n<tr>\n<td><strong>TR-1</strong> sight riser</td>\n<td>Heat inside your red dot\u2019s or holographic sight\u2019s window</td>\n<td>Top rail, under the sight</td>\n<td><strong><code>Shift+N</code></strong></td>\n</tr>\n<tr>\n<td><strong>TSR-1 / TSR-2 / TSR-3</strong> scope rings</td>\n<td>Heat inside your magnified scope, zoomed with it</td>\n<td>As the scope\u2019s mount, 30 / 34 / 35 mm</td>\n<td><strong><code>Shift+N</code></strong></td>\n</tr>\n</tbody>\n</table>\n<ul>\n<li><strong><code>Alt+N</code></strong> switches Outline and Full on every device at once. Every key can be changed in F12, under Controls.</li>\n<li><code>Shift+N</code> works the TR-1 or TSR on the gun <strong>in your hands</strong>. It shows <code>Initializing...</code> in the sight\u2019s glass, then\nthe heat comes in with a click, and a green LED on the back lights up.</li>\n<li><strong>No heat in your scope?</strong> Press <code>Shift+N</code> and look for the boot text in the lens. The ECOTI on your goggles never\ndraws inside a scope.</li>\n</ul>\n<p><strong>ECOTI</strong> fits the PVS-14, N-15, GPNVG-18, PNV-10T and PNV-57E, and other goggles through addons.</p>\n<p><strong>TR-1 and TSR</strong> (3.4.0+ only, black and tan):</p>\n<ul>\n<li>The TR-1 takes most red dots and holographic sights, but not with a flip-up rear sight. Behind a magnifier such as the\nG33 its heat shows magnified.</li>\n<li>A TSR takes the same scopes as a one-piece mount of its size. Red dots on its top rails draw its heat too.</li>\n<li>Peacekeeper LL3: TR-1 $1,500, TSR $1,750, three each.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Previews</div>\n<div class=\"tab-content\"><p><strong>Outline mode</strong>, Customs at 2am, scavs from 8 to 300 m</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/thermal-outline.jpg\" alt=\"Outline mode\" /></p>\n<p><strong>Full mode</strong></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/thermal-on.jpg\" alt=\"Full mode\" /></p>\n<p><strong>Through a scope at 6x</strong>, with a TSR</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/thermal-scope-outline.jpg\" alt=\"Through a scope at 6x\" /></p>\n<p><strong>A COTI on every tube</strong> of a GPNVG-18</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/330-multitube-view.jpg\" alt=\"Four COTIs on a GPNVG-18, first person\" /></p>\n<p><strong>Window reflections</strong>: glass blocks heat and mirrors the people in front of it</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/LennoxP90/SPT-COTI/main/media/330-window-reflection.jpg\" alt=\"A window at night: Reflections beside Plain\" /></p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Install</div>\n<div class=\"tab-content\"><ul>\n<li><strong>SPT 4.0</strong> (<code>2.x</code>) or <strong>SPT 4.1</strong> (<code>3.x</code>), separate downloads. The TR-1 and TSR are 3.4.0+ only.</li>\n<li>Open the archive with 7-Zip and drag <strong>all</strong> of its contents into your SPT folder.</li>\n</ul>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/3N6gTe2.gif\" alt=\"mod install\" /></p>\n<blockquote>\n<p>\u26a0\ufe0f This mod adds items, so it cannot be cleanly removed from a profile once one has spawned or been bought.</p>\n</blockquote></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Addons</div>\n<div class=\"tab-content\"><p>Goggles from other mods are small separate downloads, one per SPT version:</p>\n<table>\n<thead>\n<tr>\n<th>Addon</th>\n<th>Needs</th>\n<th>Adds</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/addon/110/nvg-support-for-c11-truenorth\" rel=\"noreferrer noopener\">NVG support for C11 - True North</a></td>\n<td>C11 - True North</td>\n<td>Argus Chimera (three variants), ITT AN/PVS-5A, ACTinBlack DTNVS</td>\n</tr>\n<tr>\n<td><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/addon/111/nvg-support-for-wtt-cag\" rel=\"noreferrer noopener\">NVG support for WTT - CAG</a></td>\n<td>WTT - CAG</td>\n<td>ACTinBlack DTNVS, white and green phosphor</td>\n</tr>\n<tr>\n<td><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/addon/112/nvg-support-for-wtt-content-backport\" rel=\"noreferrer noopener\">NVG support for WTT - Content Backport</a></td>\n<td>WTT - ContentBackport</td>\n<td>AN/PVS-31A</td>\n</tr>\n<tr>\n<td><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/addon/125/nvg-support-for-isb-aishi\" rel=\"noreferrer noopener\">NVG support for ISB Aishi</a></td>\n<td>ISB Aishi</td>\n<td>L3Harris GPNVG-18, L3Harris PVS-31A</td>\n</tr>\n<tr>\n<td><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/addon/159/nvg-support-for-wtt-artem\" rel=\"noreferrer noopener\">NVG support for WTT - Artem</a></td>\n<td>WTT - Artem</td>\n<td>GPNVG-18 (White, OD, Black), PVS-31, PVS-31 (Wide)</td>\n</tr>\n</tbody>\n</table>\n<p>A goggle without a file still works: one is written from the closest known device. To write your own, see\n<a target=\"_blank\" class=\"external-link\" href=\"https://github.com/LennoxP90/SPT-COTI/blob/main/ADDONS.md\" rel=\"noreferrer noopener\">ADDONS.md</a>.</p></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Settings</div>\n<div class=\"tab-content\"><p>Client settings are on <strong>F12</strong>, server settings in <strong>SIC -&gt; ECOTI</strong> (4.1) or <code>config/config.json</code> (4.0). Every setting\nis described in the <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/LennoxP90/SPT-COTI#settings\" rel=\"noreferrer noopener\">README</a>.</p>\n<p>The ones people ask about:</p>\n<ul>\n<li><strong>Overlay Intensity</strong> / <strong>Heat Threshold</strong>: lower them if bodies read as solid white blobs.</li>\n<li><strong>Sensor Refresh (Hz)</strong>: default 60. <strong>Potential FPS improvement:</strong> keep it at 60 or lower.</li>\n<li><strong>Mount editor:</strong> SIC -&gt; ECOTI -&gt; Mount editor, to pose an imager on any goggle in 3D.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Credits</div>\n<div class=\"tab-content\"><ul>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/954/borkels-realistic-night-vision-goggles-nvgs-and-t-7\" rel=\"noreferrer noopener\">Borkel\u2019s Realistic NVGs</a> is\nrecommended. The thermal circles assume Borkel\u2019s default mask size.</li>\n<li>3D model by <a target=\"_blank\" class=\"external-link\" href=\"https://www.3dmilitaryassets.com/\" rel=\"noreferrer noopener\">3D Military Assets</a>, used under their Extended Licence.</li>\n</ul></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/uBqPS3CMP3xWfcAq0nXd3U5LjD1WDk8vyRTRViO8.jpg",
    "forge_url": "https://sp-mod.com/mod/2930/ecoti-enhanced-clip-on-thermal-imager",
-   "downloads": 15351,
-   "favourites": 100,
+   "downloads": 16260,
+   "favourites": 104,
    "featured": false,
    "fika": true,
    "fika_latest": "compatible",
@@ -195450,12 +195490,24 @@
    ],
    "versions": [
     {
+     "id": 16183,
+     "version": "3.4.3",
+     "description": "<ul>\n<li>More compatibility with PiP Disabler, more scopes should work properly I went through and tested a lot of them from various mods.</li>\n<li>Reduced the brightness of glass reflections, and added a brightness slider</li>\n</ul>\n",
+     "spt_constraint": "~4.1.3",
+     "fika": "compatible",
+     "downloads": 124,
+     "size": 33060628,
+     "link": "https://sp-mod.com/mod/download/2930/ecoti-enhanced-clip-on-thermal-imager/3.4.3",
+     "published_at": "2026-10-26T01:23:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 16125,
      "version": "3.4.2",
      "description": "<ul>\n<li>TSR heat with PiP-Disabler. With PiP-Disabler installed, a powered TSR drew no heat in its scope, and the goggle\nCOTI\u2019s heat showed inside the scope instead, clipped to its tube circle and off the targets.  The TSR now draws its\nheat across the whole lens, on the targets at every zoom and while turning, and the goggle COTI stays out of the\nscope as it does without PiP-Disabler. Nothing changes for players without it.</li>\n<li>\u201cno geometry\u201d warnings at server start for ISB Aishi\u2019s GPNVG-18 and PVS-31A (FDE and White). Their models now\nload into the NVG mount editor. This never affected the game itself.</li>\n</ul>\n",
      "spt_constraint": "~4.1.3",
      "fika": "compatible",
-     "downloads": 220,
+     "downloads": 980,
      "size": 33006918,
      "link": "https://sp-mod.com/mod/download/2930/ecoti-enhanced-clip-on-thermal-imager/3.4.2",
      "published_at": "2026-10-22T22:13:00.000000Z",
@@ -195467,7 +195519,7 @@
      "description": "<ul>\n<li><strong>Missing bots with Acid\u2019s Progressive Bot System.</strong> With APBS installed, every raid start lost around\n15 to 20 bots, bosses and their guards included, and the server log filled with\n<code>Failed to generate bot ... An item with the same key has already been added</code>. COTI now adds the TR-1\nand TSRs to APBS\u2019s bot gear in a way that is safe when the server builds many bots at once.</li>\n<li><strong>Mod riflescopes fit the TSR rings.</strong> Riflescopes from other mods (ISB Aishi\u2019s, for one) now go in a TSR\nof their tube size, as the game\u2019s own scopes already did. They go in the ring itself only, never on its\ntop rails.</li>\n</ul>\n",
      "spt_constraint": "~4.1.3",
      "fika": "compatible",
-     "downloads": 719,
+     "downloads": 725,
      "size": 33005499,
      "link": "https://sp-mod.com/mod/download/2930/ecoti-enhanced-clip-on-thermal-imager/3.4.1",
      "published_at": "2026-10-21T12:56:00.000000Z",
@@ -195479,7 +195531,7 @@
      "description": "<p>Added separate devices for supporting thermal in red dots and scopes. Removed the Magnify with scope option as that is now integrated into a new TSR item. The new devices are available to purchase from peacekeeper TR-1 1500$ LL3, TSR-1 TSR-2 TSR-3 1750$ LL3.</p>\n",
      "spt_constraint": "~4.1.3",
      "fika": "compatible",
-     "downloads": 717,
+     "downloads": 718,
      "size": 32993660,
      "link": "https://sp-mod.com/mod/download/2930/ecoti-enhanced-clip-on-thermal-imager/3.4.0",
      "published_at": "2026-10-19T21:47:00.000000Z",
@@ -195491,7 +195543,7 @@
      "description": "<p>This version brings all the fancy features from 3.3.2 (SPT 4.1) into 2.0.x (SPT 4.0).</p>\n",
      "spt_constraint": "~4.0.0",
      "fika": "compatible",
-     "downloads": 84,
+     "downloads": 98,
      "size": 2197646,
      "link": "https://sp-mod.com/mod/download/2930/ecoti-enhanced-clip-on-thermal-imager/2.1.0",
      "published_at": "2026-10-11T14:03:00.000000Z",
@@ -195503,7 +195555,7 @@
      "description": "<p>No functional changes just config cleanup of unused F12 settings that were dropped when moved to new shader only heat rendering.</p>\n",
      "spt_constraint": "~4.1.3",
      "fika": "compatible",
-     "downloads": 1415,
+     "downloads": 1417,
      "size": 4109066,
      "link": "https://sp-mod.com/mod/download/2930/ecoti-enhanced-clip-on-thermal-imager/3.3.2",
      "published_at": "2026-10-11T14:00:00.000000Z",
@@ -195587,7 +195639,7 @@
      "description": "<p>Fixed colour issue with latest Borkel\u2019s Realistic NVGs (3.0.0)\nFixed overlay inside magnified scopes (removed the coti circle, intensity bloom lessened in magnified scopes)\nFixed timing of when thermal image turns on and off with nvg toggling</p>\n",
      "spt_constraint": "4.1.3",
      "fika": "compatible",
-     "downloads": 640,
+     "downloads": 641,
      "size": 2092942,
      "link": "https://sp-mod.com/mod/download/2930/ecoti-enhanced-clip-on-thermal-imager/3.0.1",
      "published_at": "2026-08-31T15:08:00.000000Z",
@@ -195611,7 +195663,7 @@
      "description": "<h2>Added</h2>\n<ul>\n<li><strong>Support for any night vision goggle, from a file.</strong> Each device is one JSON file in\n<code>nvghostcompat/</code>, so a new goggle needs no mod update. A file survives its host mod renumbering\nitems, and declares which mod it needs so it is skipped cleanly when that mod is absent.</li>\n<li><strong>Automatic discovery.</strong> Any night vision item with no file gets one written for it, seeded from\nthe closest device COTI already knows. A new goggle is mountable immediately, with a pose to\ncorrect rather than nothing at all.</li>\n<li><strong>2 more goggles supported:</strong> PNV-10T and PNV-57E</li>\n<li><strong>In-game pose editor.</strong> A <strong>COTI Pose</strong> button on a goggle\u2019s inspect window opens position,\nrotation, scale and anchor-bone controls over a lit 3D preview, with a flip test to confirm the\ndevice travels with the tube. Publishing writes it to the server, so it is not lost on the next\nlaunch.</li>\n<li><strong>In-game mask editor.</strong> <strong>F12 -&gt; Mask Editor</strong> opens a window that survives closing the menu, so\nthe thermal circle can be moved, resized and softened in a raid while looking through the\ngoggles. It saves itself as you adjust.</li>\n<li><strong>Three official addons</strong>, one per host mod, for goggles that come from another mod.</li>\n</ul>\n<h2>Changed</h2>\n<ul>\n<li><strong>Image settings are global</strong> rather than per goggle, and all of them are on F12 under Advanced.</li>\n<li><strong>DTNVS and AN/PVS-31A support now ships as addons</strong> rather than inside the mod. If you use\nWTT-CAG or WTT-ContentBackport, download the matching addon.</li>\n</ul>\n",
      "spt_constraint": "~4.1",
      "fika": "compatible",
-     "downloads": 1753,
+     "downloads": 1754,
      "size": 2092486,
      "link": "https://sp-mod.com/mod/download/2930/ecoti-enhanced-clip-on-thermal-imager/3.0.0",
      "published_at": "2026-08-22T01:30:00.000000Z",
@@ -195654,7 +195706,7 @@
      "dependencies": []
     }
    ],
-   "latest_version": "3.4.2",
+   "latest_version": "3.4.3",
    "spt_constraint": "~4.1.3",
    "all_spt_constraints": [
     "4.0.13",
@@ -195667,7 +195719,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-10-04T03:35:00.000000Z",
-   "updated_at": "2026-10-22T22:16:05.000000Z",
+   "updated_at": "2026-10-26T01:30:09.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -207777,14 +207829,14 @@
    "name": "Deploy Screen Overhaul",
    "slug": "deploy-screen-overhaul",
    "teaser": "You\u2019ve spent enough time staring at the same loading screen. So have I.",
-   "description_html": "<h1>Deploy Screen Overhaul</h1>\n<p>Replaces the raid loading screen with the map you\u2019re actually loading into.</p>\n\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/I458nV0.jpeg\" alt=\"The deploy screen showing the map as a full-screen scene\" /></p>\n<p>Vanilla puts your PMC in the main menu room behind a strip of small banners. It\u2019s the same screen on every map, every time.</p>\n<p>This makes it a full-screen picture of where you\u2019re going, lit for the time of day and weather of your raid.</p>\n<hr />\n<h2>Features</h2>\n<ul>\n<li><strong>Map art.</strong> A full-screen picture of the map you picked, instead of the menu room.</li>\n<li><strong>Time of day.</strong> A 03:00 raid looks like night. Midday doesn\u2019t.</li>\n<li><strong>Weather.</strong> Fog, rain and cloud change the lighting.</li>\n<li><strong>Matching light on your PMC.</strong> He\u2019s lit to fit the scene instead of standing out from it.</li>\n<li><strong>Motion.</strong> The camera drifts slowly across the art instead of the screen sitting dead still.</li>\n<li><strong>Clean exit.</strong> Press Back and the art stays up until the menu is ready, then fades into it.</li>\n<li><strong>Countdown stays on the art.</strong> No cutting back to the menu room for the last few seconds.</li>\n</ul>\n<hr />\n<h2>Art is included</h2>\n<p>148 pictures ship with the mod \u2014 ten for most maps, from the E***************** wiki. Nothing to set up.</p>\n<p>Each time you load a map you get the next picture in its folder, so ten pictures means ten raids before one repeats.</p>\n<p><strong>Using your own:</strong> drop images into the map\u2019s folder.</p>\n<pre><code>BepInEx/plugins/DeployScreen/banners/bigmap/01 - Dorms.png\nBepInEx/plugins/DeployScreen/banners/woods/Sawmill.jpg\n</code></pre>\n<p>Any resolution, any aspect ratio \u2014 pictures are cropped to fit, never stretched. Updating the mod never overwrites or deletes your own images.</p>\n<hr />\n<h2>Install</h2>\n<p>Extract the zip into your SPT folder. You should end up with <code>BepInEx/plugins/DeployScreen/</code>.</p>\n<p>Requires <strong>SPT 4.1.x</strong>, tested on 4.1.6.</p>\n<p>To uninstall, delete that folder. Nothing is written to your profile.</p>\n<hr />\n<h2>Settings</h2>\n<p>Press <strong>F12</strong> and open <strong>Deploy Screen Overhaul</strong>. Thirteen settings, with about forty more under <strong>Advanced</strong> for anyone who wants to tune it.</p>\n<p>Set <strong>Grade strength</strong> to 0 to turn the whole look off without uninstalling.</p>\n<p><strong>Map briefing</strong> is off by default. Turn on <code>Intel under the map name</code> to show bosses, spawn chances, extract count and your active tasks under the location name.</p>\n<hr />\n<h2>Known issues</h2>\n<ul>\n<li>The included art is 1920x1080 and gets upscaled on bigger screens. Your own screenshots will look sharper.</li>\n<li>The map briefing counts extracts for the whole map, not for where you spawn.</li>\n<li>Briefing headings are English only.</li>\n</ul>\n<hr />\n<p>Map art is from the E***************** wiki.</p>\n",
+   "description_html": "<h1>Deploy Screen Overhaul</h1>\n<p>Replaces the raid loading screen with the map you\u2019re actually loading into.</p>\n\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/I458nV0.jpeg\" alt=\"The deploy screen showing the map as a full-screen scene\" /></p>\n<p>Vanilla puts your PMC in the main menu room behind a strip of small banners. It\u2019s the same screen on every map, every time.</p>\n<p>This makes it a full-screen picture of where you\u2019re going, lit for the time of day and weather of your raid.</p>\n<hr />\n<h2>Features</h2>\n<ul>\n<li><strong>Map art.</strong> A full-screen picture of the map you picked, instead of the menu room.</li>\n<li><strong>Time of day.</strong> A 03:00 raid looks like night. Midday doesn\u2019t.</li>\n<li><strong>Weather.</strong> Fog, rain and cloud change the lighting.</li>\n<li><strong>Matching light on your PMC.</strong> He\u2019s lit to fit the scene instead of standing out from it.</li>\n<li><strong>Motion.</strong> The camera drifts slowly across the art instead of the screen sitting dead still.</li>\n<li><strong>Clean exit.</strong> Press Back and the art stays up until the menu is ready, then fades into it.</li>\n<li><strong>Countdown stays on the art.</strong> No cutting back to the menu room for the last few seconds.</li>\n</ul>\n<hr />\n<h2>Art is included</h2>\n<p>148 pictures ship with the mod \u2014 ten for most maps, from the E\u2217\u2217\u2217\u2217\u2217\u2217\u2217\u2217\u2217\u2217\u2217\u2217\u2217\u2217\u2217\u2217\u2217 wiki. Nothing to set up.</p>\n<p>Each time you load a map you get the next picture in its folder, so ten pictures means ten raids before one repeats.</p>\n<p><strong>Using your own:</strong> drop images into the map\u2019s folder.</p>\n<pre><code>BepInEx/plugins/DeployScreen/banners/bigmap/01 - Dorms.png\nBepInEx/plugins/DeployScreen/banners/woods/Sawmill.jpg\n</code></pre>\n<p>Any resolution, any aspect ratio \u2014 pictures are cropped to fit, never stretched. Updating the mod never overwrites or deletes your own images.</p>\n<hr />\n<h2>Install</h2>\n<p>Extract the zip into your SPT folder. You should end up with <code>BepInEx/plugins/DeployScreen/</code>.</p>\n<p>Requires <strong>SPT 4.1.x</strong>, tested on 4.1.6.</p>\n<p>To uninstall, delete that folder. Nothing is written to your profile.</p>\n<hr />\n<h2>Settings</h2>\n<p>Press <strong>F12</strong> and open <strong>Deploy Screen Overhaul</strong>. Thirteen settings, with about forty more under <strong>Advanced</strong> for anyone who wants to tune it.</p>\n<p>Set <strong>Grade strength</strong> to 0 to turn the whole look off without uninstalling.</p>\n<p><strong>Map briefing</strong> is off by default. Turn on <code>Intel under the map name</code> to show bosses, spawn chances, extract count and your active tasks under the location name.</p>\n<hr />\n<h2>Known issues</h2>\n<ul>\n<li>The included art is 1920x1080 and gets upscaled on bigger screens. Your own screenshots will look sharper.</li>\n<li>The map briefing counts extracts for the whole map, not for where you spawn.</li>\n<li>Briefing headings are English only.</li>\n</ul>\n<hr />\n<p>Map art is from the E\u2217\u2217\u2217\u2217\u2217\u2217\u2217\u2217\u2217\u2217\u2217\u2217\u2217\u2217\u2217\u2217\u2217 wiki.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/WOcvcgHJuBCvnr7MCmli19kB5BVKQvapiKTbiWcU.png",
    "forge_url": "https://sp-mod.com/mod/3047/deploy-screen-overhaul",
-   "downloads": 45,
-   "favourites": 0,
+   "downloads": 2215,
+   "favourites": 21,
    "featured": false,
-   "fika": false,
-   "fika_latest": "unknown",
+   "fika": true,
+   "fika_latest": "compatible",
    "category": {
     "id": 2,
     "title": "Overhauls",
@@ -207809,19 +207861,31 @@
    ],
    "versions": [
     {
+     "id": 16184,
+     "version": "1.1.0",
+     "description": "<p>Your PMC looks more like he\u2019s standing in the map, not in front of a greenscreen.</p>\n<h2>What\u2019s new</h2>\n<ul>\n<li><strong>The background is no longer washed out.</strong> The menu was running its own camera effects over your picture and laying a dark overlay across it, which drained the colour and cut it to about a third of its brightness. Both are switched off while the art is up, so the picture shows with its real colour and contrast.</li>\n<li><strong>Your PMC is lit by the picture.</strong> A soft light from above takes the colour of the picture\u2019s sky, light bouncing up from below takes the colour of its ground, and how bright he is follows how bright the picture really is.</li>\n<li><strong>The weather shapes the light, not just its colour.</strong> Under a clear sky he gets one hard sun and a bright edge from behind. Under overcast or fog the light is soft and even from every side. The sun sits high at midday and low across him at dawn and dusk.</li>\n<li><strong>No icon beside the map name</strong> on the final countdown.</li>\n<li><strong>No README files in the zip.</strong> How to add your own pictures is on the GitHub page.</li>\n</ul>\n<p>Two new advanced settings under <strong>Staging area</strong>: <strong>Show the picture as it is</strong>, and <strong>Light your PMC in the picture colours</strong> (set it to 0 to light him from the time and weather alone).</p>\n<h2>Install or update</h2>\n<ol>\n<li>Download <code>DeployScreen_V1.1.0.zip</code> below.</li>\n<li>Extract it into your SPT folder, over the old version if you have one. Pictures you added under your own names are left alone.</li>\n</ol>\n<p>Requires SPT 4.1.x, tested on <strong>4.1.6</strong>.</p>\n<p>Not yet seen in game: the soft overcast/fog lighting and the low dawn/dusk sun. Clear day and night raids were.</p>\n",
+     "spt_constraint": "~4.1.0",
+     "fika": "compatible",
+     "downloads": 61,
+     "size": 64773384,
+     "link": "https://sp-mod.com/mod/download/3047/deploy-screen-overhaul/1.1.0",
+     "published_at": "2026-10-26T01:57:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 15506,
      "version": "1.0.0",
      "description": "<p>RELEASE</p>\n",
      "spt_constraint": "~4.1.0",
      "fika": "unknown",
-     "downloads": 45,
+     "downloads": 2154,
      "size": 64772764,
      "link": "https://sp-mod.com/mod/download/3047/deploy-screen-overhaul/1.0.0",
      "published_at": "2026-09-20T20:02:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.0.0",
+   "latest_version": "1.1.0",
    "spt_constraint": "~4.1.0",
    "all_spt_constraints": [
     "~4.1.0"
@@ -207829,7 +207893,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-09-20T19:57:00.000000Z",
-   "updated_at": "2026-09-20T20:47:36.000000Z",
+   "updated_at": "2026-10-26T01:58:22.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -222167,10 +222231,10 @@
    "name": "Breath FX",
    "slug": "breath-fx",
    "teaser": "Brings back hidden oxygen mechanic and makes it worth.",
-   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Introduction</div>\n<div class=\"tab-content\"><p>This mod re-introduces breathing and oxygen mechanics this game gatekeeped from us for who knows how long. It has FX for inhaling/exhaling, its own meter below your stances panel and custom mechanics.</p>\n<p>This mod came up to me because I got fed up with a bug from this mechanic where the weapon would constantly sway if you somehow held breath for too long. And since I love immersion, here it goes.</p>\n<h3>What it offers?</h3>\n<ul>\n<li>Configuration - how much air you can hold (for how long), how long you recover, inhaling/exhaling sounds, heartbeat sounds, vignette, custom weapon sway.</li>\n<li>Once you start holding breath for too long, you\u2019ll start hearing your own heartbeat rising.</li>\n<li>Vignette approaching if you hold breath for too long.</li>\n<li>Option for toggling automatic holding breath for some weapon types, like sniper rifles, or DMRs.</li>\n<li>Compatible with anything, including Fika Project. As long as nothing changes the way you breathe.</li>\n</ul>\n<h3>Small Preview</h3>\n<div class=\"youtube-lite\" data-video-id=\"WF5a_syL48E\" data-embed-url=\"https://www.youtube-nocookie.com/embed/WF5a_syL48E?autoplay=1\"><a href=\"https://www.youtube.com/watch?v=WF5a_syL48E\" target=\"_blank\" rel=\"noreferrer noopener\">Play YouTube video</a></div></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Installation</div>\n<div class=\"tab-content\"><p>Drag and drop 7z contents in your root directory of SPT game.</p></div></div></div>\n",
+   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Introduction</div>\n<div class=\"tab-content\"><p>This mod re-introduces breathing and oxygen mechanics this game gatekeeped from us for who knows how long. It has FX for inhaling/exhaling, its own meter below your stances panel and custom mechanics.</p>\n<p>This mod came up to me because I got fed up with a bug from this mechanic where the weapon would constantly sway if you somehow held breath for too long. And since I love immersion, here it goes.</p>\n<h3>What it offers?</h3>\n<ul>\n<li>Configuration - how much air you can hold (for how long), how long you recover, inhaling/exhaling sounds, heartbeat sounds, vignette, custom weapon sway.</li>\n<li>Once you start holding breath for too long, you\u2019ll start hearing your own heartbeat rising.</li>\n<li>Vignette approaching if you hold breath for too long.</li>\n<li>Option for toggling automatic holding breath for some weapon types, like sniper rifles, or DMRs.</li>\n<li>Compatible with anything, including Fika Project. As long as nothing changes the way you breathe.</li>\n</ul>\n<h3>Small Preview</h3>\n<div class=\"youtube-lite\" data-video-id=\"WF5a_syL48E\" data-embed-url=\"https://www.youtube-nocookie.com/embed/WF5a_syL48E?autoplay=1\"><a href=\"https://www.youtube.com/watch?v=WF5a_syL48E\" target=\"_blank\" rel=\"noreferrer noopener\">Play YouTube video</a></div></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Recommended mods</div>\n<div class=\"tab-content\"><p><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/701/fontaines-fov-fix\" rel=\"noreferrer noopener\">Fontaine\u2019s FOV Fix</a> - To make it DayZ-like style, you can bind the zoom in button for the same button for holding breath in game, to make it zoom in on holding breath once you\u2019re in scope. Fits extremely well together.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Installation</div>\n<div class=\"tab-content\"><p>Drag and drop 7z contents in your root directory of SPT game.</p></div></div></div>\n",
    "thumbnail": "https://files.sp-mod.com/mods/KqUkTOXCoY5IPnzCnJxBDCWZ2qoF2AFsij0HgJaw.png",
    "forge_url": "https://sp-mod.com/mod/3203/breath-fx",
-   "downloads": 296,
+   "downloads": 418,
    "favourites": 5,
    "featured": false,
    "fika": true,
@@ -222204,7 +222268,7 @@
      "description": "<p>Small update with a bug fix</p>\n<ul>\n<li>Fixed a bug where if PMC is on low stamina the breathing would not play</li>\n<li>Added new option: Minimum Breath To Hold</li>\n<li>Added new option: Audible Breath Threshold</li>\n<li>Added new option: Bar Color</li>\n<li>Added new option: Exhausted Bar Threshold</li>\n<li>Added new option: Vignette Color</li>\n<li>Added new option: Heartbeat Start Threshold</li>\n</ul>\n<p>Next up:</p>\n<ul>\n<li>Progression based on endurance skill.</li>\n</ul>\n",
      "spt_constraint": "~4.1.6",
      "fika": "compatible",
-     "downloads": 38,
+     "downloads": 158,
      "size": 372827,
      "link": "https://sp-mod.com/mod/download/3203/breath-fx/1.0.1",
      "published_at": "2026-10-25T09:57:00.000000Z",
@@ -222216,7 +222280,7 @@
      "description": "<p>Initial Release.</p>\n",
      "spt_constraint": "~4.1",
      "fika": "compatible",
-     "downloads": 258,
+     "downloads": 260,
      "size": 371945,
      "link": "https://sp-mod.com/mod/download/3203/breath-fx/1.0.0",
      "published_at": "2026-10-23T19:37:00.000000Z",
@@ -222232,7 +222296,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-10-23T19:37:00.000000Z",
-   "updated_at": "2026-10-25T09:59:05.000000Z",
+   "updated_at": "2026-10-26T02:25:22.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -222959,6 +223023,163 @@
     "ai_disclosure": "",
     "cheat_notice": false,
     "profile_binding_notice": false
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 3216,
+   "hub_id": null,
+   "guid": "com.alanyung-yl.makemagnifiergreatagain",
+   "name": "Make Magnifier Great Again",
+   "slug": "make-magnifier-great-again",
+   "teaser": "Make Magnifier Great Again lets you pair standalone G33 magnifiers and the SkeetIR thermal clip-on with your choice of compatible sights, scopes, and mounts in SPT. This is an experimental release.",
+   "description_html": "<h1>Make Magnifier Great Again</h1>\n<p>Make Magnifier Great Again lets you pair standalone G33 magnifiers and the SkeetIR thermal clip-on with your choice of compatible sights, scopes, and mounts in SPT.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/alanyung-yl/MakeMagnifierGreatAgain/main/screenshots/Screenshot%202026-10-25%20175746.png\" alt=\"Make Magnifier Great Again Screenshot\" /></p>\n<p>This is an experimental release.</p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Features</div>\n<div class=\"tab-content\"><ul>\n<li>Pair one of four standalone EOTech G33 magnifiers with compatible 1x sights and risers.</li>\n<li>Use JSOC\u2019s Trijicon SkeetIR-L as a thermal clip-on with compatible standalone sights and scopes.</li>\n<li>Flip the G33 between 1x and 3x and toggle thermal vision using the game\u2019s normal optic controls.</li>\n<li>Adjust compatible setups with WeaponCustomizer to help with placement and model clipping.</li>\n<li><strong>To equip both SkeetIR and G33, you must first equip SkeetIR, then pick G33, and finally a compatible 1x sight.</strong></li>\n</ul></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Available Optics</div>\n<div class=\"tab-content\"><p><strong>EOTech G33 magnifiers</strong></p>\n<ul>\n<li>EOTECH G33 Magnifier</li>\n<li>EOTECH G33 Magnifier (Tan)</li>\n<li>EOTECH G33 Magnifier w/ Unity FAST FTC OMNI (FDE)</li>\n<li>EOTECH G33 Magnifier w/ Unity FAST FTC OMNI</li>\n</ul>\n<p>All four accept compatible 1x sights and risers. Magnified scopes and incompatible mounts are excluded.</p>\n<p><strong>Trijicon SkeetIR-L thermal clip-on</strong></p>\n<p>MMGA upgrades JSOC\u2019s SkeetIR with a slot for compatible 1x sights and magnified scopes. It supports inline and folded modes, with thermal vision available through compatible attached optics. Night-vision optics, other thermal optics, offset mounts, and incompatible mounts are excluded.</p>\n<p>When SkeetIR is equipped on EpicAIO\u2019s black and FDE Unity FAST optic risers, MMGA also adjusts the attached sight\u2019s height to help align the setup.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Controls</div>\n<div class=\"tab-content\"><p>Use your configured E\u2217\u2217 keybinds:</p>\n<table>\n<thead>\n<tr>\n<th>Control</th>\n<th>Action</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Switch Between Sights</td>\n<td>Switch the active sight or toggle SkeetIR thermal vision, depending on the setup</td>\n</tr>\n<tr>\n<td>Change Scope Magnification</td>\n<td>Flip the G33 between 1x and 3x, or change the active optic\u2019s mode</td>\n</tr>\n</tbody>\n</table>\n<p>The exact behavior depends on the sights attached to your weapon.</p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Compatibility and Known Issues</div>\n<div class=\"tab-content\"><ul>\n<li><strong>G33 aiming alignment:</strong> Testing suggests that point of aim (POA) and point of impact (POI) are slightly off with certain combinations when an MMGA G33 is in use. The cause is still being investigated.</li>\n<li><strong>SkeetIR with a standalone sight or scope:</strong> Testing has shown no POA/POI issue with these setups.</li>\n<li><strong>Wilcox BOSS:</strong> BOSS is not yet supported with MMGA G33. It can be used with SkeetIR.</li>\n<li><strong>Sight alignment:</strong> A 1x sight needs to line up with the clip-on or magnifier for a centered view. SkeetIR has no reticle of its own, so you still aim using the attached sight.</li>\n<li><strong>Clipping and placement:</strong> Some combinations may overlap visually. WeaponCustomizer is recommended for adjusting compatible setups.</li>\n<li><strong>Other optics:</strong> Some sights, mounts, or unusual combinations may display an incorrect scope image or behave unexpectedly.</li>\n</ul>\n<p>MMGA is experimental. If you encounter a problem, please include the sights, mounts, risers, and mod versions used, along with a screenshot of the setup.</p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Customization</div>\n<div class=\"tab-content\"><p>Most players can leave the default settings unchanged. To allow an additional custom sight or riser, add its item template ID to <code>additionalWhitelistIds</code> in:</p>\n<pre><code>SPT_Runtime/user/mods/MakeMagnifierGreatAgain/config.json\n</code></pre>\n<pre><code>{\n  \"additionalWhitelistIds\": [\n    \"example_item_template_id\"\n  ]\n}\n</code></pre>\n<p>Restart the server after editing. Adding an item to this list does not guarantee that its model or attachment layout will work correctly.</p></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Installation and Updates</div>\n<div class=\"tab-content\"><ol>\n<li>Install the dependencies.</li>\n<li>If you previously customized <code>SPT_Runtime\\user\\mods\\MakeMagnifierGreatAgain\\config.json</code>, back it up as a reference.</li>\n<li>Extract the release archive directly into your SPT installation folder.</li>\n<li>Replace all existing MakeMagnifierGreatAgain files, including <code>config.json</code>.</li>\n<li>Reapply any desired custom settings by replacing <code>config.json</code> with the backed up <code>config.json</code>, then start SPT normally.</li>\n</ol></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Uninstall</div>\n<div class=\"tab-content\"><p>Remove MMGA custom items from your weapons and inventory first, then remove both folders:</p>\n<ul>\n<li><code>BepInEx/plugins/MakeMagnifierGreatAgain</code></li>\n<li><code>SPT_Runtime/user/mods/MakeMagnifierGreatAgain</code></li>\n</ul></div></div>\n<div id=\"tabset-1-panel-8\" class=\"tab-panel\"><div class=\"tab-title\">Credits</div>\n<div class=\"tab-content\"><ul>\n<li><strong>EpicAIO author <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/36153/epicrangetime\" rel=\"noreferrer noopener\">EpicRangeTime</a></strong> \u2014 Thank you for permission to use the EOTech G33, EXPS3, UH-1, and Unity FAST assets from <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/EpicRangeTime/EpicRangeTime-Weapons\" rel=\"noreferrer noopener\">Epic\u2019s All In One</a>.</li>\n<li><strong>JSOC author <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/c11gunworks-lab/JSOC\" rel=\"noreferrer noopener\">bobinstien</a></strong> \u2014 Thank you for permission to use and modify the SkeetIR assets. See <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/c11gunworks-lab/JSOC\" rel=\"noreferrer noopener\">JSOC</a> and <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/SpyPilotEFT/Spys-JSOC-SWR\" rel=\"noreferrer noopener\">Spy\u2019s JSOC-SWR</a> for the original projects.</li>\n<li>Thanks to the original authors and contributors for creating and maintaining these assets.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-9\" class=\"tab-panel\"><div class=\"tab-title\">Screenshots</div>\n<div class=\"tab-content\"><p><strong>M4A1: SkeetIR, EXPS3, and G33</strong></p>\n<p>SkeetIR sits ahead of an EOTech EXPS3 and an FDE G33 on a Unity FAST FTC mount. The build view shows the separate optics and risers arranged along the rail.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/alanyung-yl/MakeMagnifierGreatAgain/main/screenshots/Screenshot%202026-10-25%20175746.png\" alt=\"M4A1 build with SkeetIR, EXPS3, Unity FAST risers, and an FDE G33 FTC assembly\" /></p>\n<p><strong>M4A1: Aimpoint CompM5 and G33</strong></p>\n<p>An Aimpoint CompM5 on a Unity FAST Micro mount is paired with a black G33 FTC assembly. This example shows a magnifier setup without a thermal clip-on.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/alanyung-yl/MakeMagnifierGreatAgain/main/screenshots/Screenshot%202026-10-25%20181145.png\" alt=\"M4A1 build with an Aimpoint CompM5 on a FAST Micro mount and a black G33 FTC assembly\" /></p>\n<p><strong>AXMC: SkeetIR and a magnified scope</strong></p>\n<p>SkeetIR is mounted ahead of a Nightforce ATACR F1 4\u201316\u00d742 scope on the AXMC.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/alanyung-yl/MakeMagnifierGreatAgain/main/screenshots/Screenshot%202026-10-25%20181846.png\" alt=\"AXMC build with SkeetIR ahead of an ATACR F1 scope and a RAPTAR above the scope\" /></p>\n<p><strong>Thermal sight pictures</strong></p>\n<p>The thermal image is visible through the holographic sight, with the G33 folded aside. The sight supplies the aiming reticle.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/alanyung-yl/MakeMagnifierGreatAgain/main/screenshots/Screenshot%202026-10-25%20182307.png\" alt=\"One-power thermal sight picture through an EOTech holographic sight with the G33 folded aside\" /></p>\n<p><strong>3\u00d7 view through the G33</strong></p>\n<p>With the G33 inline, the magnifier displays the thermal image and the attached sight\u2019s reticle.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/alanyung-yl/MakeMagnifierGreatAgain/main/screenshots/Screenshot%202026-10-25%20182327.png\" alt=\"Three-power thermal sight picture through the G33 showing the holographic reticle\" /></p>\n<p><strong>Magnified scope view</strong></p>\n<p>The attached scope retains its own reticle over the thermal image.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/alanyung-yl/MakeMagnifierGreatAgain/main/screenshots/Screenshot%202026-10-25%20182424.png\" alt=\"Thermal sight picture through a magnified scope with its native crosshair\" /></p>\n<p>Placement and clipping can vary with the chosen optics and mounts. WeaponCustomizer can help position compatible assemblies.</p></div></div>\n<div id=\"tabset-1-panel-10\" class=\"tab-panel\"><div class=\"tab-title\">License</div>\n<div class=\"tab-content\"><p>MakeMagnifierGreatAgain is licensed under the <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/alanyung-yl/MakeMagnifierGreatAgain/blob/main/LICENSE\" rel=\"noreferrer noopener\">GNU General Public License v3.0</a>.</p></div></div></div>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/8T9vzOCSt4jJhX9wv4qBaRouwC3wUDK1t3D2B6LM.png",
+   "forge_url": "https://sp-mod.com/mod/3216/make-magnifier-great-again",
+   "downloads": 15,
+   "favourites": 0,
+   "featured": false,
+   "fika": false,
+   "fika_latest": "unknown",
+   "category": {
+    "id": 13,
+    "title": "Weapons",
+    "slug": "weapons"
+   },
+   "license": {
+    "name": "GNU GPLv3",
+    "link": "https://choosealicense.com/licenses/gpl-3.0/"
+   },
+   "authors": [
+    {
+     "id": 89944,
+     "name": "yung_.",
+     "avatar": "https://files.sp-mod.com/profile-photos/UtkcVq4JelncqrC6cI5CZ0cUE6Gk1nGQHf80UJ1q_128w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/alanyung-yl/MakeMagnifierGreatAgain",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 16186,
+     "version": "0.7.0",
+     "description": "<h1>Make Magnifier Great Again 0.7.0</h1>\n<p>Make Magnifier Great Again lets you pair standalone G33 magnifiers and the SkeetIR thermal clip-on with your choice of compatible sights, scopes, and mounts in SPT.</p>\n<h2>Highlights</h2>\n<ul>\n<li>Four standalone EOTech G33 magnifiers for compatible 1x sights and risers:\n<ul>\n<li>EOTECH G33 Magnifier</li>\n<li>EOTECH G33 Magnifier (Tan)</li>\n<li>EOTECH G33 Magnifier w/ Unity FAST FTC OMNI (FDE)</li>\n<li>EOTECH G33 Magnifier w/ Unity FAST FTC OMNI</li>\n</ul>\n</li>\n<li>Upgrades JSOC\u2019s Trijicon SkeetIR-L with a slot for compatible 1x sights and magnified scopes, with inline and folded modes and thermal vision through compatible attached optics.</li>\n<li>Adjusts the attached sight\u2019s height when SkeetIR is equipped on EpicAIO\u2019s black and FDE Unity FAST optic risers.</li>\n<li>Uses the game\u2019s normal optic controls to flip the G33 between 1x and 3x and toggle thermal vision.</li>\n<li>Compatible setups can be adjusted with WeaponCustomizer to help with placement and model clipping.</li>\n</ul>\n<h2>Notes</h2>\n<ul>\n<li>This release is experimental.</li>\n<li>G33 magnifiers accept compatible 1x sights and risers; magnified scopes and incompatible mounts are excluded.</li>\n<li>SkeetIR excludes night-vision optics, other thermal optics, offset mounts, and incompatible mounts.</li>\n<li>Testing suggests slight G33 POA/POI offsets with certain combinations. The cause is still being investigated.</li>\n<li>Testing has shown no POA/POI issue with SkeetIR paired with a standalone sight or scope.</li>\n<li>Wilcox BOSS is not yet supported with MMGA G33. It can be used with SkeetIR.</li>\n<li>A 1x sight needs to line up with the clip-on or magnifier for a centered view. SkeetIR has no reticle of its own, so aiming uses the attached sight.</li>\n<li>Some combinations may overlap visually or display an incorrect scope image. WeaponCustomizer is recommended for adjusting compatible setups.</li>\n<li>Add custom sight or riser template IDs to <code>additionalWhitelistIds</code> in <code>SPT_Runtime/user/mods/MakeMagnifierGreatAgain/config.json</code>, then restart the server. Adding an item does not guarantee its model or attachment layout will work correctly.</li>\n<li>When reporting a problem, include the sights, mounts, risers, and mod versions used, along with a screenshot of the setup.</li>\n</ul>\n<h2>Installation</h2>\n<p>Install the dependencies, then extract the release archive directly into your SPT installation folder and replace all existing MakeMagnifierGreatAgain files, including <code>config.json</code>.</p>\n<p>If you previously customized <code>SPT_Runtime\\user\\mods\\MakeMagnifierGreatAgain\\config.json</code>, back it up as a reference before updating. Reapply any desired custom settings by replacing <code>config.json</code> with the backed up <code>config.json</code>, then start SPT normally.</p>\n",
+     "spt_constraint": "~4.1.6",
+     "fika": "unknown",
+     "downloads": 15,
+     "size": 10320453,
+     "link": "https://sp-mod.com/mod/download/3216/make-magnifier-great-again/0.7.0",
+     "published_at": "2026-10-26T03:58:43.000000Z",
+     "dependencies": [
+      {
+       "id": 1263,
+       "name": "Epic's All in One",
+       "slug": "epics-all-in-one",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/1263/epics-all-in-one"
+      },
+      {
+       "id": 2737,
+       "name": "JSOC Service Weapon Replacment Program",
+       "slug": "jsoc-service-weapon-replacment-program",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2737/jsoc-service-weapon-replacment-program"
+      },
+      {
+       "id": 2310,
+       "name": "WTT - CommonLib",
+       "slug": "wtt-commonlib",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
+      },
+      {
+       "id": 1950,
+       "name": "Weapon Customizer",
+       "slug": "weapon-customizer",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/1950/weapon-customizer"
+      }
+     ]
+    }
+   ],
+   "latest_version": "0.7.0",
+   "spt_constraint": "~4.1.6",
+   "all_spt_constraints": [
+    "~4.1.6"
+   ],
+   "dependencies": [
+    {
+     "id": 1263,
+     "name": "Epic's All in One",
+     "slug": "epics-all-in-one",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/1263/epics-all-in-one"
+    },
+    {
+     "id": 2737,
+     "name": "JSOC Service Weapon Replacment Program",
+     "slug": "jsoc-service-weapon-replacment-program",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/2737/jsoc-service-weapon-replacment-program"
+    },
+    {
+     "id": 2310,
+     "name": "WTT - CommonLib",
+     "slug": "wtt-commonlib",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
+    },
+    {
+     "id": 1950,
+     "name": "Weapon Customizer",
+     "slug": "weapon-customizer",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/1950/weapon-customizer"
+    }
+   ],
+   "all_dependencies": [
+    {
+     "id": 1263,
+     "name": "Epic's All in One",
+     "slug": "epics-all-in-one",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/1263/epics-all-in-one"
+    },
+    {
+     "id": 2737,
+     "name": "JSOC Service Weapon Replacment Program",
+     "slug": "jsoc-service-weapon-replacment-program",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/2737/jsoc-service-weapon-replacment-program"
+    },
+    {
+     "id": 2310,
+     "name": "WTT - CommonLib",
+     "slug": "wtt-commonlib",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
+    },
+    {
+     "id": 1950,
+     "name": "Weapon Customizer",
+     "slug": "weapon-customizer",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/1950/weapon-customizer"
+    }
+   ],
+   "published_at": "2026-10-26T03:58:00.000000Z",
+   "updated_at": "2026-10-26T04:33:04.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
+    "cheat_notice": false,
+    "profile_binding_notice": true
    },
    "origin": "forge",
    "delisted": false
