@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-10-27T15:26:28Z",
+ "generated_at": "2026-10-27T22:24:00Z",
  "source": "https://sp-mod.com",
  "filter": "all",
- "mod_count": 2136,
+ "mod_count": 2138,
  "categories": [
   {
    "id": 12,
@@ -203745,7 +203745,7 @@
    "description_html": "<h1>Overview</h1>\n<p>A basic mod I whipped up to customize trader loyalty level requirements since you\u2019re no longer able to play with modified SPT data files as of SPT 4.1. I feel leveling traders in SPT happens too quickly with how minimal the requirements are and how easy it can be to make money, gain reputation, and complete tasks.</p>\n<h2>Configuration</h2>\n<p>The level requirements portion of the config consists of three main properties: <code>minLevel</code>, <code>minSalesSum</code>, and <code>minStanding</code>. Under <code>refreshSeconds</code>, you have <code>min</code> and <code>max</code> to modify a trader\u2019s stock refresh time. All of these are currently set to vanilla SPT values. These values can be changed in <code>config/traders.jsonc</code>.</p>\n<ul>\n<li><code>minLevel</code> minimum account/player level required to level up with a trader</li>\n<li><code>minSalesSum</code> minimum amount of currency spent with a trader to level them up</li>\n<li><code>minStanding</code> minimum reputation/standing required with a trader to level them up</li>\n<li><code>min</code> minimum time (in seconds) for a trader\u2019s stock to refresh</li>\n<li><code>max</code> maximum time for a trader\u2019s stock to refresh</li>\n</ul>\n<p>Each trader is identified by their trader ID and in-game name. Loyalty levels are represented with numbers <code>1</code>, <code>2</code>, <code>3</code>, and <code>4</code>.</p>\n<blockquote>\n<p>Avoid adding custom traders to the config. A custom trader\u2019s properties can (typically) be modified directly so do so in your respective trader mod(s) and not via TLRE; I haven\u2019t tried it myself but I imagine it\u2019ll cause some issues.</p>\n</blockquote>\n<blockquote>\n<p>Refresh timer values must not be negative, and <code>min</code> must not exceed <code>max</code>. Use positive values, as zero can cause a trader to refresh immediately\u2014unless this is want you want, of course. Use the refresh store button at the top of a trader\u2019s inventory screen to actually reset a trader\u2019s stock if you do opt to use a min and max of zero. Avoid extremely long intervals, as excessively large timestamps may overflow and cause the timer to behave incorrectly.</p>\n</blockquote>\n<h2>Installation</h2>\n<p>Installing is the same as every other server mod: extract the <code>TraderLevelRequirementsEditor</code> folder into <code>SPT_Runtime/user/mods</code></p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/RwtU8VKriNLiLiIBWazqi8RCwQpMVaTmSc8s4AZI.png",
    "forge_url": "https://sp-mod.com/mod/3005/trader-level-requirements-editor",
-   "downloads": 544,
+   "downloads": 109,
    "favourites": 6,
    "featured": false,
    "fika": false,
@@ -203779,7 +203779,7 @@
      "description": "<p><strong>additions</strong></p>\n<ul>\n<li>added the ability to modify a trader\u2019s stock refresh timer</li>\n</ul>\n<p><strong>note</strong></p>\n<p>A wee-bit beyond the original scope of the mod, but I wanted to be able to tweak stock timers so I slapped it in here. Putting together a standalone mod just for this function seemed a little dumb. I may continue to build on this in the future with more things to tweak trader-wise that can\u2019t be done via direct game file edits.</p>\n",
      "spt_constraint": "~4.1",
      "fika": "unknown",
-     "downloads": 91,
+     "downloads": 109,
      "size": 9886,
      "link": "https://sp-mod.com/mod/download/3005/trader-level-requirements-editor/1.1.0",
      "published_at": "2026-10-19T19:54:00.000000Z",
@@ -203794,7 +203794,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-10-19T19:56:00.000000Z",
-   "updated_at": "2026-10-26T19:29:35.000000Z",
+   "updated_at": "2026-10-27T21:43:48.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -218697,7 +218697,7 @@
    "description_html": "<p>Add <strong>any item</strong> to the map loot pools, both in <strong>containers</strong> (crates, jackets, drawers, safes\u2026) and as <strong>loose loot</strong> (floor / shelves), straight from a page in the server panel. No JSON editing needed.</p>\n<h2>Features</h2>\n<ul>\n<li><strong>Item search</strong> by name or ID, with item images.</li>\n<li><strong>Per item settings:</strong> maps, where it spawns (containers / loose loot) and the chance.</li>\n<li><strong>Similar items mode:</strong> the item only goes where items of the same category already spawn. The page shows the loot pool, example items already spawning there and the list of containers it reaches.</li>\n<li><strong>Simulate raids:</strong> runs the server\u2019s real loot generator a few times per map and shows how many of the item spawn per raid on average, even before saving.</li>\n<li><strong>Loot Atlas:</strong> open interactive Tarkov.dev maps with floors, landmark labels, zoom and pan. Compare eligible loose-loot spots with 25 or 100 simulated raids and see the densest areas. Maps are included, with no extra mod needed; containers without coordinates are shown as unmapped.</li>\n<li><strong>Airdrop types:</strong> choose which crate types can bring each item, or leave all types allowed.</li>\n<li><strong>Lots of Loot aware:</strong> detects changed loot multipliers, shows them per map and can compensate so the amount per raid stays close to vanilla.</li>\n<li><strong>No restart needed:</strong> changes apply from the next raid.</li>\n<li><strong>English and Portuguese</strong> UI.</li>\n</ul>\n<h2>How to use</h2>\n<ol>\n<li>Install the mod and start the server.</li>\n<li>Open <code>https://127.0.0.1:6969/customlootpool</code> (or the server panel at <code>https://127.0.0.1:6969</code> \u2192 Custom Loot Pool).</li>\n<li>Search an item, set maps / where / chance and click <strong>Save</strong>.</li>\n</ol>\n<h3>Chances</h3>\n<ul>\n<li><strong>Containers:</strong> chance that each item rolled inside a matching container is this item.</li>\n<li><strong>Loose loot:</strong> when a matching loot spot spawns, chance that it is this item.</li>\n</ul>\n<p>Everything is stored in <code>config.json</code> next to the DLL, so it can also be edited by hand.</p>\n<h2>Example: recreating the Smugglers event</h2>\n<p>Add <strong>Locked case</strong> (<code>6740987b89d5e1ddc603f4f0</code>) and <strong>Case key</strong> (<code>67449b6c89d5e1ddc603f504</code>).</p>\n<ul>\n<li>Locked case + Case key \u2192 Workbench \u2192 Opened case (4\u00d7 Sealed box)</li>\n<li>Sealed box + Multitool \u2192 Workbench \u2192 Opened box (6 random items)</li>\n</ul>\n<p>Both crafts are already unlocked by the server.</p>\n<h2>Compatibility</h2>\n<ul>\n<li>Server 4.1.x</li>\n<li>Works alongside Lots of Loot and other loot mods. No dependencies.</li>\n</ul>\n",
    "thumbnail": "https://files.sp-mod.com/mods/qG7ryXYTejebTAgFhbMzxwTwiGV94WdS9IWRxNJj.png",
    "forge_url": "https://sp-mod.com/mod/3161/custom-loot-pool",
-   "downloads": 329,
+   "downloads": 376,
    "favourites": 2,
    "featured": false,
    "fika": false,
@@ -218726,12 +218726,24 @@
    ],
    "versions": [
     {
+     "id": 16234,
+     "version": "1.5.1",
+     "description": "<h3>Fixes</h3>\n<ul>\n<li>Loot quality: keys (when left alone) and quest items got rarer in loose loot spots they share with boosted items, because the boost kept each pool\u2019s total. They now keep their exact chance, and only the other items share the rest.</li>\n</ul>\n",
+     "spt_constraint": "~4.1.6",
+     "fika": "unknown",
+     "downloads": 2,
+     "size": 1938041,
+     "link": "https://sp-mod.com/mod/download/3161/custom-loot-pool/1.5.1",
+     "published_at": "2026-10-27T21:16:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 16205,
      "version": "1.5.0",
      "description": "<h3>New</h3>\n<ul>\n<li>Loot quality: a new card makes valuable or rare items more common in containers and loose loot, without changing how many items spawn. Boost by price tier (flea, or handbook when the flea has none) or by the game\u2019s rarity, on all maps or only the ones you pick.</li>\n<li>Items on your list keep their exact chance: the boost is applied before them.</li>\n<li>A preview per map shows each tier\u2019s share and the average item value before and after. \u201cSimulate raids\u201d uses the card\u2019s settings, even before saving.</li>\n<li>Keys and keycards are left alone by default. The feature is off by default, so updating changes nothing until you turn it on.</li>\n</ul>\n<p>Updating: copy the DLL and the wwwroot folder and keep your config.json.</p>\n",
      "spt_constraint": "~4.1.6",
      "fika": "unknown",
-     "downloads": 7,
+     "downloads": 50,
      "size": 1937647,
      "link": "https://sp-mod.com/mod/download/3161/custom-loot-pool/1.5.0",
      "published_at": "2026-10-26T21:59:00.000000Z",
@@ -218815,14 +218827,14 @@
      "description": "<p>First release.</p>\n<ul>\n<li>Add any item to the map loot pools (containers and loose loot) from a page in the server panel</li>\n<li>Item search with images, per item maps / where / chance</li>\n<li>Similar items mode with loot pool preview</li>\n<li>Raid simulation using the server\u2019s real loot generator</li>\n<li>Lots of Loot aware, with optional compensation</li>\n<li>English and Portuguese UI</li>\n</ul>\n",
      "spt_constraint": "~4.1.0",
      "fika": "unknown",
-     "downloads": 15,
+     "downloads": 17,
      "size": 59413,
      "link": "https://sp-mod.com/mod/download/3161/custom-loot-pool/1.0.0",
      "published_at": "2026-10-16T19:20:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.5.0",
+   "latest_version": "1.5.1",
    "spt_constraint": "~4.1.6",
    "all_spt_constraints": [
     "~4.1.0",
@@ -218831,7 +218843,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-10-16T19:13:00.000000Z",
-   "updated_at": "2026-10-26T22:00:09.000000Z",
+   "updated_at": "2026-10-27T22:23:27.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -218946,8 +218958,8 @@
    "description_html": "<p>HideoutBackport updates your hideout to match the current live game.</p>\n<h2>What changes</h2>\n<ul>\n<li><strong>Upgrade requirements:</strong> live items and counts for 61 area levels</li>\n<li><strong>Found-in-raid:</strong> 201 requirements no longer need FIR, the 76 that still do match live</li>\n<li><strong>Construction times</strong> (14) and <strong>area bonuses</strong> (3)</li>\n<li><strong>Crafts:</strong> live times and recipes, 13 new crafts, 2 retired crafts removed</li>\n<li>New crafts that need items or quests your server does not have are skipped and listed in the log</li>\n</ul>\n<h2>Configuration</h2>\n<p>Every part can be switched on or off in <code>config.json</code>.</p>\n<h2>Compatibility</h2>\n<ul>\n<li><strong>SVM:</strong> works with its hideout options on, its multipliers apply on top of the live values</li>\n<li><strong>MoreCheckmarks</strong> and <strong>ItemInfo</strong> pick up the new requirements and crafts automatically</li>\n<li>Your hideout progress and running crafts are kept</li>\n</ul>\n<h2>Install</h2>\n<p>Extract the zip into your game folder and restart the server.</p>\n<p>Hideout data is from the open source server project and is shared under CC BY-NC-SA 4.0 (credits in the README).</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/KahRUIaihw43jfONNLWJcBdkROkUMMsb7RHz4mf8.png",
    "forge_url": "https://sp-mod.com/mod/3163/hideoutbackport",
-   "downloads": 1140,
-   "favourites": 20,
+   "downloads": 1854,
+   "favourites": 30,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -218975,12 +218987,36 @@
    ],
    "versions": [
     {
+     "id": 16233,
+     "version": "1.0.3",
+     "description": "<p><strong>Fixes</strong></p>\n<ul>\n<li>Quest rewards that unlock crafts work again. Five crafts could never be unlocked (from Wet Job - Part 6, Silent Caliber, Missing Informant, Return the Favor and Sew it Good - Part 4)\nQuest crafts now keep the unlock rules your server\u2019s quests expect, with live ingredients and times.</li>\n<li>If you already finished those quests, the crafts unlock on your next login.</li>\n</ul>\n",
+     "spt_constraint": "~4.1.6",
+     "fika": "unknown",
+     "downloads": 57,
+     "size": 46381,
+     "link": "https://sp-mod.com/mod/download/3163/hideoutbackport/1.0.3",
+     "published_at": "2026-10-27T20:57:00.000000Z",
+     "dependencies": []
+    },
+    {
+     "id": 16232,
+     "version": "1.0.2",
+     "description": "<p><strong>Fixes</strong></p>\n<ul>\n<li>7 crafts that are open in the base game disappeared when crafts were enabled, among them the 6L31 60-round magazine (tied to Ice Cream Cones). The live data puts them behind quests, but the quests on this server never unlock them. They are available again, with their live ingredients and times.</li>\n</ul>\n",
+     "spt_constraint": "~4.1.6",
+     "fika": "unknown",
+     "downloads": 8,
+     "size": 46218,
+     "link": "https://sp-mod.com/mod/download/3163/hideoutbackport/1.0.2",
+     "published_at": "2026-10-27T20:44:00.000000Z",
+     "dependencies": []
+    },
+    {
      "id": 16127,
      "version": "1.0.1",
      "description": "<p><strong>Fixes</strong></p>\n<ul>\n<li>Bigger water filters like the Everclear now keep their full 400 units. Before, a fresh one dropped to about 94 after the first raid, and the timer showed far less time than it should.</li>\n<li>Air filters get the same protection.</li>\n<li>Slot filters now skip items that no installed mod provides.</li>\n<li>3 crafts are no longer added: one belongs to an area this version doesn\u2019t have, and two had a broken quest requirement.</li>\n</ul>\n<p>A filter that already dropped can\u2019t be restored.</p>\n<p>Install: extract the zip into your SP-Mod folder and restart the server.</p>\n",
      "spt_constraint": "~4.1.6",
      "fika": "unknown",
-     "downloads": 118,
+     "downloads": 761,
      "size": 46109,
      "link": "https://sp-mod.com/mod/download/3163/hideoutbackport/1.0.1",
      "published_at": "2026-10-22T22:40:00.000000Z",
@@ -218992,14 +219028,14 @@
      "description": "<p>First release.</p>\n",
      "spt_constraint": "~4.1.6",
      "fika": "unknown",
-     "downloads": 1022,
+     "downloads": 1028,
      "size": 44092,
      "link": "https://sp-mod.com/mod/download/3163/hideoutbackport/1.0.0",
      "published_at": "2026-10-17T03:17:00.000000Z",
      "dependencies": []
     }
    ],
-   "latest_version": "1.0.1",
+   "latest_version": "1.0.3",
    "spt_constraint": "~4.1.6",
    "all_spt_constraints": [
     "~4.1.6"
@@ -219007,7 +219043,7 @@
    "dependencies": [],
    "all_dependencies": [],
    "published_at": "2026-10-17T03:11:00.000000Z",
-   "updated_at": "2026-10-22T22:42:05.000000Z",
+   "updated_at": "2026-10-27T20:58:10.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -223368,11 +223404,11 @@
    "name": "Custom Wishlist Categories",
    "slug": "custom-wishlist-categories",
    "teaser": "Why use only 5 wishlist categories when you can have more?",
-   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Overview</div>\n<div class=\"tab-content\"><p>Who said you can have only 5 categories? This mod adds a way for you to add new categories. By default comes prepackaged with 1 new category: crafting.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Adding new categories</div>\n<div class=\"tab-content\"><p>You can add your own wishlist categories by editing the included categories.json file. Each category requires a unique ID and name, while the icon and fallback group can also be customized. New categories appear in the item context menu and under Handbook -&gt; Wishlist.</p>\n<p>IDs need to start from 5 and go up, do not use ID of 4 or lower.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Screenshots</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/QFfaKQp.png\" alt=\"\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/hDzRGCD.png\" alt=\"\" /></p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">My other mods</div>\n<div class=\"tab-content\"><p>Hey you! Yes, you. I got a bunch of other mods <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/31382/musicmaniac#mods\" rel=\"noreferrer noopener\">here</a>. You better check them out. Or else\u2026\n<img loading=\"lazy\" decoding=\"async\" src=\"https://media1.tenor.com/m/T9VwwxWHP04AAAAd/cat-cat-crazy.gif\" alt=\"\" /></p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Re-uploading / Updating policy</div>\n<div class=\"tab-content\"><p>Even thought SPT modding policy already imposes this, I\u2019ll write it down nonetheless: if I disappear from SPT again - do not re-upload fixes or forks of my mods. Ping me in SPT discord (<code>@musicmaniac</code>), I\u2019ll add you to authors so you can update original mod page.</p>\n<p>If I added you as author and later returned to modding SPT - please refrain from updating the mod, let me handle it. Or at least ask me on Discord.</p></div></div></div>\n<h2>Support or something</h2>\n<p>If you wanna be true homie or say thanks for time I\u2019ve spent modding the game, feel free to send me a coffee on kofi</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/musicmaniac\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://uploads-ssl.webflow.com/5c14e387dab576fe667689cf/61e11d5cf697cee7ca5b65d9_Button-p-500.png\" alt=\"61e11d5cf697cee7ca5b65d9_Button-p-500.png\" /></a></p>\n",
+   "description_html": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Overview</div>\n<div class=\"tab-content\"><p>Who said you can have only 5 categories? This mod adds a way for you to add new categories. By default comes prepackaged with 1 new category: crafting.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Adding new categories</div>\n<div class=\"tab-content\"><p>You can add your own wishlist categories by editing the included categories.json file. Each category requires a unique ID and name, while the icon and fallback group can also be customized. New categories appear in the item context menu and under Handbook -&gt; Wishlist.</p>\n<p>IDs need to start from 5 and go up, do not use ID of 4 or lower.</p>\n<p>If you could share your added categories I could add them to base mod.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Screenshots</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/QFfaKQp.png\" alt=\"\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/hDzRGCD.png\" alt=\"\" /></p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">My other mods</div>\n<div class=\"tab-content\"><p>Hey you! Yes, you. I got a bunch of other mods <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/31382/musicmaniac#mods\" rel=\"noreferrer noopener\">here</a>. You better check them out. Or else\u2026\n<img loading=\"lazy\" decoding=\"async\" src=\"https://media1.tenor.com/m/T9VwwxWHP04AAAAd/cat-cat-crazy.gif\" alt=\"\" /></p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Re-uploading / Updating policy</div>\n<div class=\"tab-content\"><p>Even thought SPT modding policy already imposes this, I\u2019ll write it down nonetheless: if I disappear from SPT again - do not re-upload fixes or forks of my mods. Ping me in SPT discord (<code>@musicmaniac</code>), I\u2019ll add you to authors so you can update original mod page.</p>\n<p>If I added you as author and later returned to modding SPT - please refrain from updating the mod, let me handle it. Or at least ask me on Discord.</p></div></div></div>\n<h2>Support or something</h2>\n<p>If you wanna be true homie or say thanks for time I\u2019ve spent modding the game, feel free to send me a coffee on kofi</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/musicmaniac\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://uploads-ssl.webflow.com/5c14e387dab576fe667689cf/61e11d5cf697cee7ca5b65d9_Button-p-500.png\" alt=\"61e11d5cf697cee7ca5b65d9_Button-p-500.png\" /></a></p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/2s3kjku00hQUQzzIe2Wjw1vasUMDrrqNAJXBsEQG.png",
    "forge_url": "https://sp-mod.com/mod/3215/custom-wishlist-categories",
-   "downloads": 3,
-   "favourites": 0,
+   "downloads": 74,
+   "favourites": 4,
    "featured": false,
    "fika": false,
    "fika_latest": "unknown",
@@ -223405,7 +223441,7 @@
      "description": "<p>Install as usual</p>\n",
      "spt_constraint": "~4.1.0",
      "fika": "unknown",
-     "downloads": 3,
+     "downloads": 74,
      "size": 11819,
      "link": "https://sp-mod.com/mod/download/3215/custom-wishlist-categories/1.0.0",
      "published_at": "2026-10-26T19:56:00.000000Z",
@@ -223419,8 +223455,8 @@
    ],
    "dependencies": [],
    "all_dependencies": [],
-   "published_at": "2026-10-26T19:57:30.000000Z",
-   "updated_at": "2026-10-26T19:58:04.000000Z",
+   "published_at": "2026-10-26T19:57:00.000000Z",
+   "updated_at": "2026-10-27T16:29:55.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -223722,8 +223758,8 @@
    "description_html": "<h2>What this is</h2>\n<p>SPT ships with every official event, but most of them are locked to a real-world date\nwindow \u2014 you only see them if you happen to play that exact week. <strong>EventRotator turns them\ninto rotatable content.</strong></p>\n<p>It does three things:</p>\n<ol>\n<li><strong>Restores</strong> the official seasonal events with their real effects \u2014 boss spawns, loot\ntables, quests, trader offers, weather, hideout decorations.</li>\n<li><strong>Rotates</strong> non-seasonal events on a schedule (one active event every 7 days by default),\nso the 90+ official events actually get played.</li>\n<li><strong>Cycles the weather season</strong> (SPRING \u2192 SUMMER \u2192 AUTUMN \u2192 WINTER) and attaches the matching\nseasonal event to it.</li>\n</ol>\n<h2>At a glance</h2>\n<table>\n<thead>\n<tr>\n<th></th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Official events</td>\n<td>91</td>\n</tr>\n<tr>\n<td>Seasonal families</td>\n<td>Halloween \u00b7 Christmas \u00b7 New Year \u00b7 April Fools</td>\n</tr>\n<tr>\n<td>Rotation modes</td>\n<td>random / sequential</td>\n</tr>\n<tr>\n<td>Rotation interval</td>\n<td>configurable (default 7 days)</td>\n</tr>\n<tr>\n<td>Season length</td>\n<td>configurable (default 60 days)</td>\n</tr>\n<tr>\n<td>Panel language</td>\n<td>English / \u4e2d\u6587</td>\n</tr>\n<tr>\n<td>Co-op</td>\n<td>Fika compatible</td>\n</tr>\n</tbody>\n</table>\n<h2>The in-game panel</h2>\n<p>A configurable hotkey opens an overlay showing:</p>\n<ul>\n<li>active events, grouped into <strong>Seasonal / Timed / AI / Minor / Reward</strong></li>\n<li>the current weather season and which seasonal event is tied to it</li>\n<li>the current rotation slot and when the next one starts</li>\n<li>a clear \u201crestart the server\u201d banner when the active set has changed</li>\n</ul>\n<p>The panel is bilingual \u2014 switch between English and Chinese in the F12 menu.</p>\n<h2>Installation</h2>\n<p><strong>Three parts, all required.</strong> Copy the <code>SPT_Runtime</code> and <code>BepInEx</code> folders from the archive\ninto your game root and overwrite:</p>\n<h2>Credits</h2>\n<p>The <strong>Scourge Incursion</strong> event is built on top of, and adapted from,\n<strong><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/3196/scourge\" rel=\"noreferrer noopener\">SCOURGE</a> by Manimal1920</strong> \u2014 custom bot types, AI layer\nwiring, boss-wave injection approach and equipment layout all come from his work.</p>\n<p>If you (Manimal1920) feel this borrows more than you are comfortable with, contact us any way you\nlike \u2014 <strong>we will take this mod down or remove the related parts immediately, no argument.</strong></p>\n<p>Other credits are listed in <code>ACKNOWLEDGEMENTS.md</code> in the repository.</p>\n",
    "thumbnail": "https://files.sp-mod.com/mods/d9s2YBwJ5jMtzBvCvbPm14D7HhddAHrs7T8ZaZxm.png",
    "forge_url": "https://sp-mod.com/mod/3218/eventrotator",
-   "downloads": 489,
-   "favourites": 7,
+   "downloads": 668,
+   "favourites": 10,
    "featured": false,
    "fika": true,
    "fika_latest": "unknown",
@@ -223751,12 +223787,32 @@
    ],
    "versions": [
     {
+     "id": 16228,
+     "version": "1.3.9",
+     "description": "<h3>Bug-fix release for the 1.3.8 config panel</h3>\n<p>Nothing new to configure \u2014 if 1.3.8 worked for you, just update.</p>\n<p><strong>Fixed</strong></p>\n<ul>\n<li>Forcing several events at once only kept the last one: <code>force.txt</code> was written as one comma-separated line but read back line-by-line, so everything after the first id was treated as unknown and dropped. Both sides now accept commas, semicolons, pipes, whitespace and newlines.</li>\n<li>Multi-line <code>force.txt</code> written by older versions was silently ignored \u2014 the whole file was treated as a single unknown id, the server fell back to \u201cautomatic\u201d while the panel still claimed the events were forced. Normalised on read, and the panel now warns when the server is not actually honouring the force.</li>\n<li>\u201cUnknown ids\u201d false alarm when the panel was opened right after a server restart (it compared against an empty event table). It now re-reads <code>events.json</code> first, and stays silent while the table is loading.</li>\n<li>Startup race: hitting the config page before the mod finished loading left the mod directory unresolved.</li>\n<li><code>rotation.seed</code> was missing from the structure validator.</li>\n</ul>\n<p><strong>Guard rails added</strong></p>\n<ul>\n<li>Structure validation before saving: 31 type/range checks over the merged config; a broken config is refused before anything is written, with the offending keys named.</li>\n<li>Read-back verification after saving: the file is re-read and every saved key compared with what was sent; a mismatch aborts the hot-apply instead of pretending success.</li>\n<li>Force sentinel in the panel: red warning when <code>force.txt</code> has entries but the server still reports \u201cautomatic\u201d, or when an id does not exist in the event table.</li>\n</ul>\n<p>Requires SPT 4.1.x \u00b7 depends on WTT - Content Backport 2.0.5 \u00b7 full changelog on the GitHub release.</p>\n",
+     "spt_constraint": "~4.1.0",
+     "fika": "unknown",
+     "downloads": 160,
+     "size": 760558,
+     "link": "https://sp-mod.com/mod/download/3218/eventrotator/1.3.9",
+     "published_at": "2026-10-27T15:44:00.000000Z",
+     "dependencies": [
+      {
+       "id": 2512,
+       "name": "WTT - Content Backport",
+       "slug": "wtt-content-backport",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/2512/wtt-content-backport"
+      }
+     ]
+    },
+    {
      "id": 16226,
      "version": "1.3.8",
      "description": "<h3>EventRotator 1.3.8 \u2014 server-side config panel, exclusions, hot-apply</h3>\n<p><strong>Web config panel (new)</strong>\nA real page inside the SPT server UI: <code>https://127.0.0.1:6969/eventrotator</code> (also linked from the server\u2019s mod list). Left rail: Basics / Rotation / Seasons / Backups, plus event groups (AI, small, quest, reward, seasonal). Every option has a one-line hint and a longer explanation behind the info icon. Chinese / English toggle \u2014 all 91 event names and descriptions are translated.</p>\n<p><strong>Event exclusions (new)</strong>\n<code>rotation.exclude</code> blacklists events so the rotation never picks them and season phases never auto-open them. Manual force still works. Tick them in the panel \u2014 \u201cI never want the flea market closed or the ammo shortage\u201d is now one click.</p>\n<p><strong>Manual force from the panel (new)</strong>\nForce one event or several at once. If two forced events conflict (they rewrite the same boss spawns), the panel warns you and names the exact conflict, because the later one overwrites the earlier one. Forced effects apply on your next raid.</p>\n<p><strong>Hot-apply (new, first attempt \u2014 please report serious bugs)</strong>\nSaving writes a backup, reloads the config inside the running server and recomputes the active events, so rotation / seasons / rewards / exclusions / force take effect without restarting the server. The client overlay picks the change up within about two seconds.\nThis is a first pass: the panel never touches a raid that is already running \u2014 in-raid effects (bot tables, loot, weather) always land on your next raid. Items that genuinely need a restart (SAIN preset injection) are marked with a restart badge in the UI. If something looks wrong after saving, restart the server \u2014 that is always the safe fallback. Please report any serious bug on the issue tracker with your <code>SPT_Runtime/user/logs/spt</code> snippet.</p>\n<p><strong>Fixes</strong></p>\n<ul>\n<li>Hot reload kept stale <code>pool</code> / <code>exclude</code> lists after those keys were deleted from <code>config.json</code>.</li>\n<li>Restoring a backup did not re-read the config (panel said \u201crestored\u201d, running state kept the old values).</li>\n<li>\u201cReapply\u201d did not re-read <code>force.txt</code> written by the client, so F12 changes needed a raid or a restart.</li>\n</ul>\n<p>Requires SPT 4.1.x \u00b7 depends on WTT - Content Backport 2.0.5 \u00b7 full changelog on the GitHub release.</p>\n<h2>Advanced options (config.json only for now)</h2>\n<p>The panel covers the 20 settings most people touch. These still need a hand edit in <code>config.json</code> (defaults in brackets):</p>\n<table>\n<thead>\n<tr>\n<th>Key</th>\n<th>Default</th>\n<th>What it does</th>\n<th>When to touch it</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>rotation.avoidConflicts</code></td>\n<td><code>true</code></td>\n<td>Conflict check while rotating: only one event may rewrite the same boss spawn</td>\n<td>Turn off only if you want events stacking on the same spawn points</td>\n</tr>\n<tr>\n<td><code>rotation.durationDays</code></td>\n<td><code>0</code></td>\n<td>How many days a forced event lasts before ending by itself (0 = until you clear it)</td>\n<td>You forced an event but do not want to babysit it</td>\n</tr>\n<tr>\n<td><code>rotation.rewardCountMin</code> / <code>Max</code></td>\n<td><code>1</code> / <code>2</code></td>\n<td>How many reward events stack per raid</td>\n<td>Too many / too few reward events</td>\n</tr>\n<tr>\n<td><code>rotation.smallCountMax</code></td>\n<td><code>2</code></td>\n<td>Cap on \u201csmall events\u201d per slot</td>\n<td>Small events crowd out the main slot</td>\n</tr>\n<tr>\n<td><code>seasonAutoPick</code></td>\n<td><code>\"newest\"</code></td>\n<td>Which year variant of a family gets used: <code>newest</code> / <code>oldest</code> / <code>random</code> / <code>all</code></td>\n<td>Want older Halloween variants in the pool \u2192 <code>all</code></td>\n</tr>\n<tr>\n<td><code>seasonBagNoRepeat</code></td>\n<td><code>true</code></td>\n<td>Do not repeat the same family twice within one season</td>\n<td>Usually leave it</td>\n</tr>\n<tr>\n<td><code>seasonRotation.autoOpenSeasonalEvent</code></td>\n<td><code>false</code></td>\n<td>Auto-open the official seasonal event when its season arrives</td>\n<td>Keep false if you only want rotation</td>\n</tr>\n<tr>\n<td><code>seasonRotation.order</code> / <code>seasonalEventDurations</code></td>\n<td>SPRING\u2192WINTER / per-event days</td>\n<td>Season order and how long each official event runs</td>\n<td>Custom season pacing</td>\n</tr>\n<tr>\n<td><code>randomBossMapCount</code></td>\n<td><code>1</code></td>\n<td>For \u201crandom boss map\u201d events, how many maps get a boss</td>\n<td>Want random bosses on more maps</td>\n</tr>\n<tr>\n<td><code>randomBossMapChance</code></td>\n<td><code>100</code></td>\n<td>Spawn chance on those picked maps</td>\n<td>Want random bosses to be rarer</td>\n</tr>\n<tr>\n<td><code>mapFillersEnable</code> + <code>mapFillers</code></td>\n<td><code>false</code> + <code>{}</code></td>\n<td>Map fillers: extra bots / spawns for specific maps (list of event ids per map)</td>\n<td>You want a specific map busier; needs hand-written ids</td>\n</tr>\n<tr>\n<td><code>allowOnOverhaulMaps</code></td>\n<td><code>true</code></td>\n<td>Whether bosses are still injected on maps fully replaced by overhaul mods</td>\n<td>Turn off if spawns look wrong with a map-overhaul mod</td>\n</tr>\n</tbody>\n</table>\n<p>After editing these: hit \u201cReapply\u201d in the panel or restart the server (<code>randomBossMap*</code> is read at raid start, so it applies on your next raid).</p>\n",
      "spt_constraint": "~4.1.0",
      "fika": "unknown",
-     "downloads": 39,
+     "downloads": 55,
      "size": 758750,
      "link": "https://sp-mod.com/mod/download/3218/eventrotator/1.3.8",
      "published_at": "2026-10-27T14:22:00.000000Z",
@@ -223776,7 +223832,7 @@
      "description": "<h1>EventRotator 1.3.7</h1>\n<p>Fixes a bug that only showed up on some machines: even with the current WTT - Content Backport installed, the Scourge squad\u2019s primary weapon was being swapped for a vanilla one.</p>\n<h2>Cause</h2>\n<p>The Scourge primary (<code>FirstPrimaryWeapon</code>) is a WTT custom item, and WTT registers its items inside <strong>its own</strong> <code>OnLoadAsync</code>. Both mods run at the same <code>TypePriority</code>, so the order is not guaranteed:</p>\n<ul>\n<li>we checked too early -&gt; the item was not in the table yet -&gt; we concluded \u201cWTT missing\u201d and swapped to a vanilla gun</li>\n<li>WTT then registered the items a moment later</li>\n</ul>\n<p>So people who did have WTT still got vanilla weapons, and the log line (\u201cusually WTT is not installed\u201d) pointed them at the wrong cause.</p>\n<h2>What changed</h2>\n<ol>\n<li><strong>First pass only reports</strong>: on the first check we no longer replace anything if the tpl is missing and WTT is detected as installed.</li>\n<li><strong>Re-check after 8 seconds</strong>: by then every mod\u2019s OnLoad has finished. If the tpl is there, the original weapon stays and one <code>OK</code> line is logged; if it is still missing, that is when we swap.</li>\n<li><strong>Two different causes, two different messages</strong>: \u201cWTT not installed\u201d vs \u201cWTT installed but the tpl is still missing after the re-check\u201d (which means the weapon comes from a different WTT pack, or WTT is too old).</li>\n<li><strong>New switch</strong> <code>config.json -&gt; \"weaponFallback\": true</code> - set <code>false</code> to never auto-replace (default is <code>true</code>, so behaviour is unchanged).</li>\n<li><code>package.json</code> now declares <code>\"loadAfter\": [\"com.wtt.contentbackport\"]</code>.</li>\n</ol>\n<h2>Not changed</h2>\n<p>Event restoration, boss chances, hostility tables, seasons and rotation, equipment replacement - no logic changes. Config and saves are compatible; overwrite-install.</p>\n",
      "spt_constraint": "~4.1.0",
      "fika": "unknown",
-     "downloads": 144,
+     "downloads": 147,
      "size": 713504,
      "link": "https://sp-mod.com/mod/download/3218/eventrotator/1.3.7",
      "published_at": "2026-10-27T08:32:00.000000Z",
@@ -223851,7 +223907,7 @@
      ]
     }
    ],
-   "latest_version": "1.3.8",
+   "latest_version": "1.3.9",
    "spt_constraint": "~4.1.0",
    "all_spt_constraints": [
     "~4.1.0"
@@ -223875,7 +223931,7 @@
     }
    ],
    "published_at": "2026-10-26T17:01:00.000000Z",
-   "updated_at": "2026-10-27T14:51:08.000000Z",
+   "updated_at": "2026-10-27T15:48:11.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
@@ -224217,6 +224273,210 @@
    ],
    "published_at": "2026-10-27T11:50:00.000000Z",
    "updated_at": "2026-10-27T15:13:59.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 3225,
+   "hub_id": null,
+   "guid": "com.xraptor.rescue-noclip",
+   "name": "Rescue NoClip",
+   "slug": "rescue-noclip",
+   "teaser": "Got spawned out of bounds? Got stuck inbetween stuff? This mod will help you",
+   "description_html": "<p><strong>Rescue NoClip \u2014 SPT 4.1.6</strong></p>\n<p>Spawned outside Interchange or stuck somewhere you can\u2019t escape? Rescue NoClip lets you fly through obstacles and return to a playable area.</p>\n<p><strong>Controls</strong></p>\n<ul>\n<li><strong>F8:</strong> Toggle NoClip.</li>\n<li><strong>WASD:</strong> Move/Fly around.</li>\n<li><strong>Space / Left Ctrl:</strong> Move up / down.</li>\n<li><strong>Left Shift:</strong> Fly faster.</li>\n<li>Use the BepInEx menu (F12) Configure the toggle key and flight speed.</li>\n</ul>\n<p>Before disabling NoClip, move just above clear, solid ground.</p>\n<p><strong>Compatibility</strong>\nLightweight and designed to minimize conflicts with other SPT 4.1.6 mods. Compatibility with many different mods currently available for Tushonka 4.1.6 has been tested by me, however I didn\u2019t go through every single one of them.</p>\n<p><strong>Warning</strong>\nIntended only for recovering from out-of-bounds spawns or getting unstuck. Disable it once you reach a safe location. NoClip does not protect against kill zones or other damage.</p>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/gynNs4ls510zm4ItbzXGYJRr3QtaNda83Kcmj38V.png",
+   "forge_url": "https://sp-mod.com/mod/3225/rescue-noclip",
+   "downloads": 50,
+   "favourites": 1,
+   "featured": false,
+   "fika": false,
+   "fika_latest": "unknown",
+   "category": {
+    "id": 1,
+    "title": "Tools",
+    "slug": "tools"
+   },
+   "license": {
+    "name": "Apache License 2.0",
+    "link": "https://choosealicense.com/licenses/apache-2.0/"
+   },
+   "authors": [
+    {
+     "id": 11087,
+     "name": "xRaptor",
+     "avatar": "https://sp-mod.com/avatars/X.svg"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/IloveTuna/Rescue-NoClip---v1.0.1---SPT-4.1.6.git",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 16225,
+     "version": "1.0.1",
+     "description": "<p>Main file, first version</p>\n",
+     "spt_constraint": "~4.1.6",
+     "fika": "unknown",
+     "downloads": 50,
+     "size": 2456370,
+     "link": "https://sp-mod.com/mod/download/3225/rescue-noclip/1.0.1",
+     "published_at": "2026-10-27T14:02:00.000000Z",
+     "dependencies": []
+    }
+   ],
+   "latest_version": "1.0.1",
+   "spt_constraint": "~4.1.6",
+   "all_spt_constraints": [
+    "~4.1.6"
+   ],
+   "dependencies": [],
+   "all_dependencies": [],
+   "published_at": "2026-10-27T14:00:00.000000Z",
+   "updated_at": "2026-10-27T15:49:17.000000Z",
+   "flags": {
+    "contains_ads": false,
+    "contains_ai_content": false,
+    "ai_disclosure": "",
+    "cheat_notice": false,
+    "profile_binding_notice": false
+   },
+   "origin": "forge",
+   "delisted": false
+  },
+  {
+   "id": 3226,
+   "hub_id": null,
+   "guid": "com.kennerz.thundergun",
+   "name": "ZM_Thundergun",
+   "slug": "zm-thundergun",
+   "teaser": "Really.. in this game..?",
+   "description_html": "<p><strong>USE READ ME FOR ALL INFO PERTAINING TO THIS MOD</strong></p>\n<p><em>This mod is planned as part of multiple mods which are intended to add functionality when used together - make sure to check them out as they release! Or, just use them on their own too!</em></p>\n<p>After knocking down the wall in the hideout, and exploring the hidden spare room, you notice a strange, glowing chalked outline of a strange object\u2026</p>\n<p>Below it is an ammunitions box containing strange disc-like cartridges.. Are they related?\n<a href=\"url\"><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Kennerz77/ThunderGunSPT/refs/heads/main/assets/preview/purchase-thg.gif\" alt=\"Purchase\" /></a></p>\n<p>The Thundergun is here for you to use! Unlock the hideout compartment behind the wall to unlock this weapon. It will be on the wall for you to buy for 935,000 roubles. Expensive, but there is a reason for that-</p>\n<p>This weapon is based on the BO3 version of the Thundergun, one which fires unconventional ammo - air. This pressure wave is so strong, it sends anyone flying; even tagilla!</p>\n<p>Ammo is stored as cartridges you can buy from the small ammo box under the chalk outline for 10k roubles each.</p>\n<p>Cartridges work how they do in CODZ, you must empty the entire cartridge before dumping it and leaving it forever - they can not be replenished!</p>\n<p><em>There is one exception to the replenishment of the cartridges, but it involves using the pack-a-punch machine from the pap mod (found on my profile). Like in the game, regardless of how many blasts are spent, pack-a-punching this gun will replenish its charges in the current cartridge to 4!</em></p>\n<p><a href=\"url\"><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Kennerz77/ThunderGunSPT/refs/heads/main/assets/preview/plain.gif\" alt=\"Purchase\" /></a></p>\n<p><a href=\"url\"><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Kennerz77/ThunderGunSPT/refs/heads/main/assets/preview/pap-ver.gif\" alt=\"Purchase\" /></a></p>\n<p><strong>On its own, this mod comes with the Thundergun in all its glory, fully working and you can replenish ammo anytime at the ammo box, and buy a Thundergun once in the hideout per hideout reset (coming back from a raid replenishes it) HOWEVER, with the pap mod it unlocks the ability to get the Zeus Cannon.. it shoots further, harder, and shoots 4 shots instead of 2 per cartridge!</strong></p>\n<p>Gallery:</p>\n<p><a href=\"url\"><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Kennerz77/ThunderGunSPT/refs/heads/main/assets/preview/launcher.gif\" alt=\"Purchase\" /></a></p>\n<p><a href=\"url\"><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Kennerz77/ThunderGunSPT/refs/heads/main/assets/preview/tagillaflies.gif\" alt=\"Purchase\" /></a></p>\n<p><a href=\"url\"><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Kennerz77/ThunderGunSPT/refs/heads/main/assets/preview/chalk_outline.png\" alt=\"Purchase\" /></a></p>\n<p><strong>INFO FOR MOD CREATORS</strong>\n<em>This mod is designed to utilise pap api from the pap hideout module mod, this api allows you to make custom affects and behaviours for pack-a-punched weapons. If you are looking for an example of how it is called and used, see source code.</em></p>\n",
+   "thumbnail": "https://files.sp-mod.com/mods/PrLc7FaEqkqbLZP2yCFsdJqBKsZs9IogiImg4tob.jpg",
+   "forge_url": "https://sp-mod.com/mod/3226/zm-thundergun",
+   "downloads": 48,
+   "favourites": 1,
+   "featured": false,
+   "fika": false,
+   "fika_latest": "unknown",
+   "category": {
+    "id": 13,
+    "title": "Weapons",
+    "slug": "weapons"
+   },
+   "license": {
+    "name": "MIT License",
+    "link": "https://choosealicense.com/licenses/mit/"
+   },
+   "authors": [
+    {
+     "id": 127836,
+     "name": "Kenner",
+     "avatar": "https://files.sp-mod.com/profile-photos/t6ESl0lzghvijgA3UKt1UXcBvtDHjR5hvxkZQC4M_128w.webp"
+    }
+   ],
+   "source_links": [
+    {
+     "url": "https://github.com/Kennerz77/ThunderGunSPT/tree/main",
+     "label": ""
+    }
+   ],
+   "versions": [
+    {
+     "id": 16231,
+     "version": "1.0.2",
+     "description": "<p>Heard of busy hands issues which revealed some possible* causes, addressed in this patch.</p>\n<ul>\n<li>\n<p>Thundergun can no longer jam, misfeed, misfire, slide-jam or overheat. The charge\u2019s misfire and feed chances are 0 and the base malfunction chance is 0. A malfunction could have left the hands stuck: clearing one pulls the cartridge, and the cartridge is locked in until spent.</p>\n</li>\n<li>\n<p>Reload rules can\u2019t strand the hands: The three reload prefixes (ReloadMag, QuickReloadMag, ReloadWithAmmo) now catch errors. If one throws, it logs the error and lets the game\u2019s normal reload run, instead of leaving it half done. The rules themselves are unchanged: a reload with charges left is still refused, and the spent cartridge still drops.</p>\n</li>\n<li>\n<p>Trigger rule can\u2019t strand the hands: the trigger prefix has the same try/catch. On an error it fires normally.</p>\n</li>\n</ul>\n<p>Went into a raid and just spammed shoot, reload, change gun, run, with no issues produced.</p>\n<p><strong>Please contact me if you can repeat the busy hands issue.</strong></p>\n<p><em>This mod has not been tested with Fika,</em></p>\n",
+     "spt_constraint": "4.1.6",
+     "fika": "unknown",
+     "downloads": 13,
+     "size": 22579134,
+     "link": "https://sp-mod.com/mod/download/3226/zm-thundergun/1.0.2",
+     "published_at": "2026-10-27T20:15:00.000000Z",
+     "dependencies": [
+      {
+       "id": 3167,
+       "name": "Hideout Uncensored",
+       "slug": "hideout-uncensored",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/3167/hideout-uncensored"
+      }
+     ]
+    },
+    {
+     "id": 16230,
+     "version": "1.0.1",
+     "description": "<p>Hot patch for Thundergun V1.0.0</p>\n<ul>\n<li>Thundergun always sells for 935,000 RUB.</li>\n<li>Pack-a-Punched, it sells for 935,000 plus PaP\u2019s fee: +500,000, or +5,000 in looks-only mode.</li>\n<li>Stripping 115 removes the PaP bonus from the sale price.</li>\n<li>A full Pressure Cartridge sells for 10,000 RUB.</li>\n<li>Each spent charge takes 2,000 off a cartridge\u2019s price. An empty cartridge sells for 0.</li>\n<li>The Thundergun no longer loses durability.</li>\n</ul>\n",
+     "spt_constraint": "4.1.6",
+     "fika": "unknown",
+     "downloads": 23,
+     "size": 22578493,
+     "link": "https://sp-mod.com/mod/download/3226/zm-thundergun/1.0.1",
+     "published_at": "2026-10-27T17:22:00.000000Z",
+     "dependencies": [
+      {
+       "id": 3167,
+       "name": "Hideout Uncensored",
+       "slug": "hideout-uncensored",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/3167/hideout-uncensored"
+      }
+     ]
+    },
+    {
+     "id": 16229,
+     "version": "1.0.0",
+     "description": "<p>First version.</p>\n<p>Fully tested, no current known issues.</p>\n",
+     "spt_constraint": "4.1.6",
+     "fika": "unknown",
+     "downloads": 12,
+     "size": 22577281,
+     "link": "https://sp-mod.com/mod/download/3226/zm-thundergun/1.0.0",
+     "published_at": "2026-10-27T16:25:00.000000Z",
+     "dependencies": [
+      {
+       "id": 3167,
+       "name": "Hideout Uncensored",
+       "slug": "hideout-uncensored",
+       "constraint": "",
+       "url": "https://sp-mod.com/mod/3167/hideout-uncensored"
+      }
+     ]
+    }
+   ],
+   "latest_version": "1.0.2",
+   "spt_constraint": "4.1.6",
+   "all_spt_constraints": [
+    "4.1.6"
+   ],
+   "dependencies": [
+    {
+     "id": 3167,
+     "name": "Hideout Uncensored",
+     "slug": "hideout-uncensored",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/3167/hideout-uncensored"
+    }
+   ],
+   "all_dependencies": [
+    {
+     "id": 3167,
+     "name": "Hideout Uncensored",
+     "slug": "hideout-uncensored",
+     "constraint": "",
+     "url": "https://sp-mod.com/mod/3167/hideout-uncensored"
+    }
+   ],
+   "published_at": "2026-10-27T16:27:00.000000Z",
+   "updated_at": "2026-10-27T20:17:24.000000Z",
    "flags": {
     "contains_ads": false,
     "contains_ai_content": false,
